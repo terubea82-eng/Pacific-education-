@@ -67,6 +67,7 @@ button {
   color: white;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 button:hover {
@@ -75,6 +76,16 @@ button:hover {
 
 button.secondary {
   background: #0d4f5c;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  margin: 7px 0 12px;
+  border: 1px solid #b7c8cc;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 .activity {
@@ -123,15 +134,29 @@ button.secondary {
   transition: width .3s;
 }
 
+.day-number {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+.small {
+  font-size: 14px;
+  color: #60747a;
+}
+
 .hidden {
   display: none;
 }
 
-.correct {
+.success {
+  color: #08744d;
   font-weight: bold;
 }
 
-.wrong {
+.error {
+  color: #a52a2a;
   font-weight: bold;
 }
 
@@ -140,16 +165,6 @@ footer {
   padding: 25px;
   color: #60747a;
   font-size: 14px;
-}
-
-.small {
-  font-size: 14px;
-  color: #60747a;
-}
-
-.big-button {
-  font-size: 20px;
-  padding: 20px;
 }
 </style>
 </head>
@@ -163,36 +178,131 @@ footer {
 
 <main>
 
+<!-- STUDENT PROFILE -->
+
 <section class="section">
-  <h2>Welcome to Class 1 English</h2>
-  <p>
-    Learn letters, sounds, words, reading and spelling through
-    short activities.
-  </p>
+  <h2>👤 Student Profile</h2>
+
+  <label>Student Name</label>
+  <input id="studentName" type="text" placeholder="Enter student's name">
+
+  <label>Student ID</label>
+  <input id="studentId" type="text" placeholder="Enter student ID">
+
+  <label>Date of Birth</label>
+  <input id="studentDob" type="date">
+
+  <label>School</label>
+  <input id="studentSchool" type="text" placeholder="Enter school name">
+
+  <label>Class</label>
+  <select id="studentClass">
+    <option value="Class 1">Class 1</option>
+  </select>
+
+  <button onclick="saveProfile()">
+    💾 Save Student Profile
+  </button>
+
+  <div id="profileMessage" class="activity">
+    Student profile has not been saved yet.
+  </div>
+</section>
+
+
+<!-- DAILY LEARNING -->
+
+<section class="section">
+
+  <h2>📅 Daily Class 1 Learning</h2>
+
+  <div class="day-number">
+    Day <span id="currentDay">1</span> / 365
+  </div>
 
   <div class="activity">
-    <strong>Today's goal</strong>
-    <p>Learn, practise and complete a short English activity.</p>
-  </div>
-</section>
+    <strong id="dayTitle">Day 1 English</strong>
 
-<section class="section">
-  <h2>Choose an Activity</h2>
+    <p id="dayGoal">
+      Learn letters, sounds and simple English words.
+    </p>
+  </div>
 
   <div class="grid">
-    <button onclick="startAlphabet()">🔤 Alphabet</button>
-    <button onclick="startPhonics()">🔊 Phonics</button>
-    <button onclick="startWords()">📚 Words</button>
-    <button onclick="startMatching()">🧩 Word Match</button>
-    <button onclick="startReading()">📖 Reading</button>
-    <button onclick="startSpelling()">✏️ Spelling</button>
-    <button onclick="startQuiz()">🎯 Quiz</button>
-    <button onclick="startRecovery()">⏱️ 5-Minute Recovery</button>
+
+    <button onclick="previousDay()">
+      ← Previous Day
+    </button>
+
+    <button onclick="todayDay()">
+      📅 Today
+    </button>
+
+    <button onclick="nextDay()">
+      Next Day →
+    </button>
+
   </div>
+
+  <button class="secondary" onclick="startDailyLesson()">
+    ▶️ Start Today's Lesson
+  </button>
+
+  <div id="dailyResult" class="activity"></div>
+
 </section>
 
+
+<!-- ACTIVITIES -->
+
 <section class="section">
-  <h2>Your Progress</h2>
+
+  <h2>📚 Choose an Activity</h2>
+
+  <div class="grid">
+
+    <button onclick="startAlphabet()">
+      🔤 Alphabet
+    </button>
+
+    <button onclick="startPhonics()">
+      🔊 Phonics
+    </button>
+
+    <button onclick="startWords()">
+      📚 Words
+    </button>
+
+    <button onclick="startMatching()">
+      🧩 Word Match
+    </button>
+
+    <button onclick="startReading()">
+      📖 Reading
+    </button>
+
+    <button onclick="startSpelling()">
+      ✏️ Spelling
+    </button>
+
+    <button onclick="startQuiz()">
+      🎯 Quiz
+    </button>
+
+    <button onclick="startRecovery()">
+      ⏱️ 5-Minute Recovery
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PROGRESS -->
+
+<section class="section">
+
+  <h2>📊 Your Progress</h2>
 
   <p class="score">
     Score: <span id="score">0</span>
@@ -203,6 +313,11 @@ footer {
     <span id="completed">0</span>
   </p>
 
+  <p>
+    Daily lessons completed:
+    <span id="daysCompleted">0</span> / 365
+  </p>
+
   <div class="progress">
     <div id="progressBar" class="progress-bar"></div>
   </div>
@@ -210,576 +325,36 @@ footer {
   <p class="small">
     Progress is saved on this device.
   </p>
+
 </section>
+
+
+<!-- LESSON -->
 
 <section id="lesson" class="section hidden">
-  <h2 id="lessonTitle">Activity</h2>
+
+  <h2 id="lessonTitle">
+    Activity
+  </h2>
 
   <div id="lessonContent"></div>
+
 </section>
 
+
+<!-- PACIFIC EXAMPLE -->
+
 <section class="section">
-  <h2>Pacific Learning Example 🌴</h2>
+
+  <h2>🌴 Pacific Learning Example</h2>
 
   <p>
     <strong>Fish</strong> is a simple English word.
   </p>
 
   <p>
-    Sentence: <strong>The fish swims in the sea.</strong>
+    Sentence:
+    <strong>The fish swims in the sea.</strong>
   </p>
 
-  <button onclick="speakText('The fish swims in the sea.')">
-    🔊 Listen
-  </button>
-</section>
-
-</main>
-
-<footer>
-  Pacific Education — Class 1 English MVP
-</footer>
-
-<script>
-
-let score = Number(localStorage.getItem("peScore") || 0);
-let completed = Number(localStorage.getItem("peCompleted") || 0);
-
-function updateProgress() {
-
-  document.getElementById("score").textContent = score;
-  document.getElementById("completed").textContent = completed;
-
-  let percentage = Math.min(completed * 10, 100);
-
-  document.getElementById("progressBar").style.width =
-    percentage + "%";
-
-  localStorage.setItem("peScore", score);
-  localStorage.setItem("peCompleted", completed);
-}
-
-function openLesson(title, content) {
-
-  const lesson = document.getElementById("lesson");
-
-  lesson.classList.remove("hidden");
-
-  document.getElementById("lessonTitle").textContent = title;
-
-  document.getElementById("lessonContent").innerHTML = content;
-
-  window.scrollTo({
-    top: lesson.offsetTop - 10,
-    behavior: "smooth"
-  });
-}
-
-function addScore(points) {
-
-  score += points;
-  completed++;
-
-  updateProgress();
-}
-
-function speakText(text) {
-
-  if ("speechSynthesis" in window) {
-
-    const speech = new SpeechSynthesisUtterance(text);
-
-    speech.lang = "en-US";
-
-    window.speechSynthesis.cancel();
-
-    window.speechSynthesis.speak(speech);
-
-  } else {
-
-    alert("Voice support is not available on this device.");
-
-  }
-}
-
-function startAlphabet() {
-
-  openLesson(
-    "🔤 Alphabet A–Z",
-
-    `
-    <div class="letter" id="alphabetLetter">A</div>
-
-    <p style="text-align:center;">
-      Say the letter aloud.
-    </p>
-
-    <button onclick="speakCurrentLetter()">
-      🔊 Hear Letter
-    </button>
-
-    <button onclick="nextLetter()">
-      Next Letter →
-    </button>
-
-    <div id="alphabetMessage" class="activity"></div>
-    `
-  );
-
-  window.currentLetter = 0;
-}
-
-function speakCurrentLetter() {
-
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-  speakText(letters[window.currentLetter]);
-}
-
-function nextLetter() {
-
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-  window.currentLetter++;
-
-  if (window.currentLetter >= letters.length) {
-
-    window.currentLetter = 0;
-
-    addScore(1);
-
-    document.getElementById("alphabetMessage").innerHTML =
-      "✅ Alphabet practice completed!";
-
-  }
-
-  document.getElementById("alphabetLetter").textContent =
-    letters[window.currentLetter];
-}
-
-function startPhonics() {
-
-  const lessons = [
-    ["A", "apple"],
-    ["B", "ball"],
-    ["C", "cat"],
-    ["D", "dog"],
-    ["F", "fish"]
-  ];
-
-  window.phonicsIndex = 0;
-
-  showPhonicsQuestion(lessons);
-}
-
-function showPhonicsQuestion(lessons) {
-
-  const item = lessons[window.phonicsIndex];
-
-  openLesson(
-    "🔊 Phonics",
-
-    `
-    <div class="letter">${item[0]}</div>
-
-    <p style="text-align:center;">
-      ${item[0]} is for <strong>${item[1]}</strong>.
-    </p>
-
-    <button onclick="speakText('${item[1]}')">
-      🔊 Hear Word
-    </button>
-
-    <button onclick="nextPhonics()">
-      Next →
-    </button>
-
-    <div id="phonicsMessage" class="activity"></div>
-    `
-  );
-}
-
-function nextPhonics() {
-
-  window.phonicsIndex++;
-
-  const lessons = [
-    ["A", "apple"],
-    ["B", "ball"],
-    ["C", "cat"],
-    ["D", "dog"],
-    ["F", "fish"]
-  ];
-
-  if (window.phonicsIndex >= lessons.length) {
-
-    addScore(2);
-
-    document.getElementById("phonicsMessage").innerHTML =
-      "✅ Phonics practice completed!";
-
-    window.phonicsIndex = 0;
-
-  } else {
-
-    showPhonicsQuestion(lessons);
-  }
-}
-
-function startWords() {
-
-  const words = [
-    ["FISH", "An animal that lives in water."],
-    ["SUN", "The bright star we see in the daytime."],
-    ["HOME", "The place where we live."],
-    ["BOOK", "Something we read."],
-    ["TREE", "A tall plant with a trunk."]
-  ];
-
-  window.wordIndex = 0;
-
-  showWord(words);
-}
-
-function showWord(words) {
-
-  const item = words[window.wordIndex];
-
-  openLesson(
-    "📚 Simple Words",
-
-    `
-    <div class="word">${item[0]}</div>
-
-    <p style="text-align:center;">
-      ${item[1]}
-    </p>
-
-    <button onclick="speakText('${item[0]}')">
-      🔊 Say Word
-    </button>
-
-    <button onclick="nextWord()">
-      Next Word →
-    </button>
-    `
-  );
-}
-
-function nextWord() {
-
-  const words = [
-    ["FISH", "An animal that lives in water."],
-    ["SUN", "The bright star we see in the daytime."],
-    ["HOME", "The place where we live."],
-    ["BOOK", "Something we read."],
-    ["TREE", "A tall plant with a trunk."]
-  ];
-
-  window.wordIndex++;
-
-  if (window.wordIndex >= words.length) {
-
-    addScore(2);
-
-    alert("Great work! Words completed.");
-
-    window.wordIndex = 0;
-
-  } else {
-
-    showWord(words);
-  }
-}
-
-function startMatching() {
-
-  openLesson(
-    "🧩 Word Match",
-
-    `
-    <div class="question">
-      Which word means a place where we live?
-    </div>
-
-    <div class="grid">
-      <button onclick="matchAnswer('fish')">FISH</button>
-      <button onclick="matchAnswer('home')">HOME</button>
-      <button onclick="matchAnswer('sun')">SUN</button>
-    </div>
-
-    <div id="matchResult" class="activity"></div>
-    `
-  );
-}
-
-function matchAnswer(answer) {
-
-  const result = document.getElementById("matchResult");
-
-  if (answer === "home") {
-
-    result.innerHTML = "✅ Correct! HOME is where we live.";
-
-    addScore(2);
-
-  } else {
-
-    result.innerHTML =
-      "❌ Try again. Think about the place where you live.";
-
-  }
-}
-
-function startReading() {
-
-  openLesson(
-    "📖 Simple Reading",
-
-    `
-    <div class="activity">
-
-      <p>
-        <strong>Tom has a fish.</strong>
-      </p>
-
-      <p>
-        The fish can swim.
-      </p>
-
-      <p>
-        Tom likes his fish.
-      </p>
-
-    </div>
-
-    <button onclick="speakText(
-      'Tom has a fish. The fish can swim. Tom likes his fish.'
-    )">
-      🔊 Listen to Reading
-    </button>
-
-    <button onclick="readingQuestion()">
-      Answer Question
-    </button>
-
-    <div id="readingResult" class="activity"></div>
-    `
-  );
-}
-
-function readingQuestion() {
-
-  const result = document.getElementById("readingResult");
-
-  result.innerHTML = `
-    <p><strong>What does Tom have?</strong></p>
-
-    <button onclick="readingAnswer('fish')">
-      A fish
-    </button>
-
-    <button onclick="readingAnswer('dog')">
-      A dog
-    </button>
-  `;
-}
-
-function readingAnswer(answer) {
-
-  const result = document.getElementById("readingResult");
-
-  if (answer === "fish") {
-
-    result.innerHTML = "✅ Correct! Tom has a fish.";
-
-    addScore(2);
-
-  } else {
-
-    result.innerHTML = "❌ Try again. Read the first sentence.";
-
-  }
-}
-
-function startSpelling() {
-
-  openLesson(
-    "✏️ Spelling",
-
-    `
-    <div class="question">
-      Spell this word:
-    </div>
-
-    <div class="word">FISH</div>
-
-    <input
-      id="spellingInput"
-      type="text"
-      placeholder="Type the word"
-      style="
-        width:100%;
-        padding:14px;
-        font-size:18px;
-        border-radius:10px;
-        border:1px solid #aaa;
-        margin:12px 0;
-      "
-    >
-
-    <button onclick="checkSpelling()">
-      Check Spelling
-    </button>
-
-    <div id="spellingResult" class="activity"></div>
-    `
-  );
-}
-
-function checkSpelling() {
-
-  const input =
-    document.getElementById("spellingInput").value
-      .trim()
-      .toLowerCase();
-
-  const result =
-    document.getElementById("spellingResult");
-
-  if (input === "fish") {
-
-    result.innerHTML = "✅ Correct spelling!";
-
-    addScore(2);
-
-  } else {
-
-    result.innerHTML =
-      "❌ Try again. The word is FISH.";
-
-  }
-}
-
-function startQuiz() {
-
-  openLesson(
-    "🎯 Class 1 English Quiz",
-
-    `
-    <div class="question">
-      Which word begins with the letter B?
-    </div>
-
-    <button onclick="quizAnswer('ball')">
-      BALL
-    </button>
-
-    <button onclick="quizAnswer('cat')">
-      CAT
-    </button>
-
-    <button onclick="quizAnswer('fish')">
-      FISH
-    </button>
-
-    <div id="quizResult" class="activity"></div>
-    `
-  );
-}
-
-function quizAnswer(answer) {
-
-  const result = document.getElementById("quizResult");
-
-  if (answer === "ball") {
-
-    result.innerHTML =
-      "✅ Correct! BALL begins with B.";
-
-    addScore(3);
-
-  } else {
-
-    result.innerHTML =
-      "❌ Try again. Look for the word beginning with B.";
-
-  }
-}
-
-function startRecovery() {
-
-  openLesson(
-    "⏱️ 5-Minute Recovery Practice",
-
-    `
-    <p>
-      This short activity helps you remember today's English.
-    </p>
-
-    <div class="activity">
-
-      <strong>Step 1</strong>
-      <p>Say these letters:</p>
-
-      <p class="word">A B C D</p>
-
-      <button onclick="speakText('A B C D')">
-        🔊 Listen
-      </button>
-
-    </div>
-
-    <div class="activity">
-
-      <strong>Step 2</strong>
-
-      <p>
-        Read this sentence:
-      </p>
-
-      <p>
-        <strong>The fish swims in the sea.</strong>
-      </p>
-
-      <button onclick="speakText(
-        'The fish swims in the sea.'
-      )">
-        🔊 Listen
-      </button>
-
-    </div>
-
-    <div class="activity">
-
-      <strong>Step 3</strong>
-
-      <p>
-        Say one English word you learned today.
-      </p>
-
-      <button onclick="finishRecovery()">
-        I Finished
-      </button>
-
-    </div>
-
-    <div id="recoveryResult" class="activity"></div>
-    `
-  );
-}
-
-function finishRecovery() {
-
-  document.getElementById("recoveryResult").innerHTML =
-    "🌟 Well done! You completed your 5-minute recovery practice.";
-
-  addScore(3);
-}
-
-updateProgress();
-
-</script>
-
-</body>
-  </html>
+  <button onclick
