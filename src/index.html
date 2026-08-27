@@ -6,165 +6,161 @@
 <title>Pacific Education - Class 1 English</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f8f9;
+  color:#17343d;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f8f9;
-  color: #17343d;
+header{
+  background:#0d4f5c;
+  color:white;
+  padding:24px 16px;
+  text-align:center;
 }
 
-header {
-  background: #0d4f5c;
-  color: white;
-  padding: 24px 16px;
-  text-align: center;
+header h1{
+  margin:0 0 8px;
+  font-size:30px;
 }
 
-header h1 {
-  margin: 0 0 8px;
-  font-size: 30px;
+header p{
+  margin:0;
+  font-size:16px;
 }
 
-header p {
-  margin: 0;
-  font-size: 16px;
+main{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
 }
 
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+.section{
+  background:white;
+  border-radius:16px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-.section {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+h2{margin-top:0}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
 }
 
-h2 {
-  margin-top: 0;
+button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#147d70;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:8px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
+button:hover{opacity:.9}
+
+button.secondary{background:#0d4f5c}
+
+input,select{
+  width:100%;
+  padding:13px;
+  margin:7px 0 12px;
+  border:1px solid #b7c8cc;
+  border-radius:10px;
+  font-size:16px;
 }
 
-button {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 12px;
-  background: #147d70;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 8px;
+.activity{
+  padding:16px;
+  background:#eef6f7;
+  border-radius:12px;
+  margin-top:12px;
 }
 
-button:hover {
-  opacity: .9;
+.question{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:15px;
 }
 
-button.secondary {
-  background: #0d4f5c;
+.letter{
+  font-size:64px;
+  font-weight:bold;
+  text-align:center;
+  padding:15px;
 }
 
-input,
-select {
-  width: 100%;
-  padding: 13px;
-  margin: 7px 0 12px;
-  border: 1px solid #b7c8cc;
-  border-radius: 10px;
-  font-size: 16px;
+.word{
+  font-size:28px;
+  font-weight:bold;
+  text-align:center;
 }
 
-.activity {
-  padding: 16px;
-  background: #eef6f7;
-  border-radius: 12px;
-  margin-top: 12px;
+.score{
+  font-size:20px;
+  font-weight:bold;
 }
 
-.question {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
+.progress{
+  height:18px;
+  background:#d9e6e8;
+  border-radius:10px;
+  overflow:hidden;
+  margin-top:10px;
 }
 
-.letter {
-  font-size: 64px;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
+.progress-bar{
+  height:100%;
+  width:0%;
+  background:#147d70;
+  transition:width .3s;
 }
 
-.word {
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
+.day-number{
+  font-size:32px;
+  font-weight:bold;
+  text-align:center;
+  margin:10px;
 }
 
-.score {
-  font-size: 20px;
-  font-weight: bold;
+.small{
+  font-size:14px;
+  color:#60747a;
 }
 
-.progress {
-  height: 18px;
-  background: #d9e6e8;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 10px;
+.hidden{display:none}
+
+.success{
+  color:#08744d;
+  font-weight:bold;
 }
 
-.progress-bar {
-  height: 100%;
-  width: 0%;
-  background: #147d70;
-  transition: width .3s;
+.error{
+  color:#a52a2a;
+  font-weight:bold;
 }
 
-.day-number {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px;
+.timer{
+  font-size:42px;
+  font-weight:bold;
+  text-align:center;
+  margin:15px;
 }
 
-.small {
-  font-size: 14px;
-  color: #60747a;
-}
-
-.hidden {
-  display: none;
-}
-
-.success {
-  color: #08744d;
-  font-weight: bold;
-}
-
-.error {
-  color: #a52a2a;
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
-  color: #60747a;
-  font-size: 14px;
+footer{
+  text-align:center;
+  padding:25px;
+  color:#60747a;
+  font-size:14px;
 }
 </style>
 </head>
@@ -177,8 +173,6 @@ footer {
 </header>
 
 <main>
-
-<!-- STUDENT PROFILE -->
 
 <section class="section">
   <h2>👤 Student Profile</h2>
@@ -200,17 +194,13 @@ footer {
     <option value="Class 1">Class 1</option>
   </select>
 
-  <button onclick="saveProfile()">
-    💾 Save Student Profile
-  </button>
+  <button onclick="saveProfile()">💾 Save Student Profile</button>
 
   <div id="profileMessage" class="activity">
     Student profile has not been saved yet.
   </div>
 </section>
 
-
-<!-- DAILY LEARNING -->
 
 <section class="section">
 
@@ -230,17 +220,11 @@ footer {
 
   <div class="grid">
 
-    <button onclick="previousDay()">
-      ← Previous Day
-    </button>
+    <button onclick="previousDay()">← Previous Day</button>
 
-    <button onclick="todayDay()">
-      📅 Today
-    </button>
+    <button onclick="todayDay()">📅 Today</button>
 
-    <button onclick="nextDay()">
-      Next Day →
-    </button>
+    <button onclick="nextDay()">Next Day →</button>
 
   </div>
 
@@ -253,52 +237,32 @@ footer {
 </section>
 
 
-<!-- ACTIVITIES -->
-
 <section class="section">
 
   <h2>📚 Choose an Activity</h2>
 
   <div class="grid">
 
-    <button onclick="startAlphabet()">
-      🔤 Alphabet
-    </button>
+    <button onclick="startAlphabet()">🔤 Alphabet</button>
 
-    <button onclick="startPhonics()">
-      🔊 Phonics
-    </button>
+    <button onclick="startPhonics()">🔊 Phonics</button>
 
-    <button onclick="startWords()">
-      📚 Words
-    </button>
+    <button onclick="startWords()">📚 Words</button>
 
-    <button onclick="startMatching()">
-      🧩 Word Match
-    </button>
+    <button onclick="startMatching()">🧩 Word Match</button>
 
-    <button onclick="startReading()">
-      📖 Reading
-    </button>
+    <button onclick="startReading()">📖 Reading</button>
 
-    <button onclick="startSpelling()">
-      ✏️ Spelling
-    </button>
+    <button onclick="startSpelling()">✏️ Spelling</button>
 
-    <button onclick="startQuiz()">
-      🎯 Quiz
-    </button>
+    <button onclick="startQuiz()">🎯 Quiz</button>
 
-    <button onclick="startRecovery()">
-      ⏱️ 5-Minute Recovery
-    </button>
+    <button onclick="startRecovery()">⏱️ 5-Minute Recovery</button>
 
   </div>
 
 </section>
 
-
-<!-- PROGRESS -->
 
 <section class="section">
 
@@ -323,26 +287,20 @@ footer {
   </div>
 
   <p class="small">
-    Progress is saved on this device.
+    Prototype progress is saved on this device.
   </p>
 
 </section>
 
 
-<!-- LESSON -->
-
 <section id="lesson" class="section hidden">
 
-  <h2 id="lessonTitle">
-    Activity
-  </h2>
+  <h2 id="lessonTitle">Activity</h2>
 
   <div id="lessonContent"></div>
 
 </section>
 
-
-<!-- PACIFIC EXAMPLE -->
 
 <section class="section">
 
@@ -357,4 +315,628 @@ footer {
     <strong>The fish swims in the sea.</strong>
   </p>
 
-  <button onclick
+  <button onclick="speakText('The fish swims in the sea.')">
+    🔊 Hear the Sentence
+  </button>
+
+</section>
+
+</main>
+
+<footer>
+  Pacific Education • Class 1 English Prototype
+</footer>
+
+
+<script>
+
+let currentDay=1;
+
+let score=Number(localStorage.getItem("pe_score")||0);
+let completed=Number(localStorage.getItem("pe_completed")||0);
+let daysCompleted=Number(localStorage.getItem("pe_daysCompleted")||0);
+
+let recoveryTimer=null;
+let recoverySeconds=300;
+
+
+const dailyGoals=[
+  "Learn letters, sounds and simple English words.",
+  "Practise recognising uppercase letters.",
+  "Practise recognising lowercase letters.",
+  "Practise beginning sounds.",
+  "Learn simple three-letter words.",
+  "Read simple words aloud.",
+  "Practise a short English sentence."
+];
+
+
+function updateProgress(){
+
+  document.getElementById("score").textContent=score;
+
+  document.getElementById("completed").textContent=completed;
+
+  document.getElementById("daysCompleted").textContent=daysCompleted;
+
+  const percent=Math.min(
+    100,
+    Math.round((daysCompleted/365)*100)
+  );
+
+  document.getElementById("progressBar").style.width=percent+"%";
+
+  localStorage.setItem("pe_score",score);
+  localStorage.setItem("pe_completed",completed);
+  localStorage.setItem("pe_daysCompleted",daysCompleted);
+}
+
+
+function saveProfile(){
+
+  const profile={
+    name:document.getElementById("studentName").value.trim(),
+    id:document.getElementById("studentId").value.trim(),
+    dob:document.getElementById("studentDob").value,
+    school:document.getElementById("studentSchool").value.trim(),
+    className:document.getElementById("studentClass").value
+  };
+
+  localStorage.setItem(
+    "pe_student_profile",
+    JSON.stringify(profile)
+  );
+
+  document.getElementById("profileMessage").innerHTML=
+    "<span class='success'>✓ Student profile saved on this device.</span>";
+}
+
+
+function loadProfile(){
+
+  const saved=localStorage.getItem("pe_student_profile");
+
+  if(!saved)return;
+
+  try{
+
+    const profile=JSON.parse(saved);
+
+    document.getElementById("studentName").value=profile.name||"";
+    document.getElementById("studentId").value=profile.id||"";
+    document.getElementById("studentDob").value=profile.dob||"";
+    document.getElementById("studentSchool").value=profile.school||"";
+    document.getElementById("studentClass").value=profile.className||"Class 1";
+
+    document.getElementById("profileMessage").innerHTML=
+      "<span class='success'>✓ Saved student profile loaded.</span>";
+
+  }catch(error){
+
+    console.log("Profile could not be loaded.");
+
+  }
+}
+
+
+function updateDay(){
+
+  document.getElementById("currentDay").textContent=currentDay;
+
+  document.getElementById("dayTitle").textContent=
+    "Day "+currentDay+" English";
+
+  const goal=dailyGoals[(currentDay-1)%dailyGoals.length];
+
+  document.getElementById("dayGoal").textContent=goal;
+}
+
+
+function previousDay(){
+
+  if(currentDay>1){
+    currentDay--;
+    updateDay();
+  }
+
+}
+
+
+function nextDay(){
+
+  if(currentDay<365){
+    currentDay++;
+    updateDay();
+  }
+
+}
+
+
+function todayDay(){
+
+  const start=new Date(
+    new Date().getFullYear(),
+    0,
+    1
+  );
+
+  const now=new Date();
+
+  const difference=
+    Math.floor((now-start)/86400000)+1;
+
+  currentDay=Math.max(
+    1,
+    Math.min(365,difference)
+  );
+
+  updateDay();
+}
+
+
+function startDailyLesson(){
+
+  showLesson(
+    "Day "+currentDay+" English Lesson",
+    `
+    <div class="activity">
+      <div class="question">
+        Today's goal
+      </div>
+
+      <p>${dailyGoals[(currentDay-1)%dailyGoals.length]}</p>
+
+      <button onclick="completeDailyLesson()">
+        ✅ Complete Daily Lesson
+      </button>
+
+      <button onclick="speakText('${dailyGoals[(currentDay-1)%dailyGoals.length]}')">
+        🔊 Hear the Goal
+      </button>
+    </div>
+    `
+  );
+
+}
+
+
+function completeDailyLesson(){
+
+  daysCompleted++;
+
+  if(daysCompleted>365){
+    daysCompleted=365;
+  }
+
+  score+=10;
+
+  updateProgress();
+
+  document.getElementById("dailyResult").innerHTML=
+    "<span class='success'>✓ Day "+currentDay+" completed! +10 points.</span>";
+
+}
+
+
+function showLesson(title,content){
+
+  const lesson=document.getElementById("lesson");
+
+  lesson.classList.remove("hidden");
+
+  document.getElementById("lessonTitle").textContent=title;
+
+  document.getElementById("lessonContent").innerHTML=content;
+
+  lesson.scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+function finishActivity(points=5){
+
+  score+=points;
+
+  completed++;
+
+  updateProgress();
+
+}
+
+
+function startAlphabet(){
+
+  showLesson(
+    "🔤 Alphabet",
+    `
+    <div class="letter">A a</div>
+
+    <p class="question">
+      A is for Apple.
+    </p>
+
+    <button onclick="speakText('A is for Apple')">
+      🔊 Hear it
+    </button>
+
+    <button onclick="finishActivity(5);this.disabled=true;">
+      ✅ I practised A
+    </button>
+    `
+  );
+
+}
+
+
+function startPhonics(){
+
+  showLesson(
+    "🔊 Phonics",
+    `
+    <div class="letter">B b</div>
+
+    <p class="question">
+      B says /b/ as in <strong>ball</strong>.
+    </p>
+
+    <button onclick="speakText('B says buh as in ball')">
+      🔊 Hear the sound
+    </button>
+
+    <button onclick="finishActivity(5);this.disabled=true;">
+      ✅ I practised the sound
+    </button>
+    `
+  );
+
+}
+
+
+function startWords(){
+
+  showLesson(
+    "📚 Words",
+    `
+    <div class="word">FISH</div>
+
+    <p>
+      Fish is a living thing that swims in water.
+    </p>
+
+    <button onclick="speakText('Fish')">
+      🔊 Hear the word
+    </button>
+
+    <button onclick="finishActivity(5);this.disabled=true;">
+      ✅ I practised the word
+    </button>
+    `
+  );
+
+}
+
+
+function startMatching(){
+
+  showLesson(
+    "🧩 Word Match",
+    `
+    <div class="question">
+      Which word matches the picture idea?
+    </div>
+
+    <p class="word">🐟</p>
+
+    <div class="grid">
+
+      <button onclick="matchAnswer(true,this)">
+        Fish
+      </button>
+
+      <button onclick="matchAnswer(false,this)">
+        Bird
+      </button>
+
+      <button onclick="matchAnswer(false,this)">
+        Tree
+      </button>
+
+    </div>
+
+    <div id="matchResult" class="activity"></div>
+    `
+  );
+
+}
+
+
+function matchAnswer(correct,button){
+
+  if(button.disabled)return;
+
+  button.disabled=true;
+
+  const result=document.getElementById("matchResult");
+
+  if(correct){
+
+    result.innerHTML=
+      "<span class='success'>✓ Correct! Fish.</span>";
+
+    finishActivity(10);
+
+  }else{
+
+    result.innerHTML=
+      "<span class='error'>Try again. Look at the picture.</span>";
+
+  }
+
+}
+
+
+function startReading(){
+
+  showLesson(
+    "📖 Reading",
+    `
+    <div class="activity">
+
+      <p class="question">
+        Read this sentence:
+      </p>
+
+      <p class="word">
+        The fish swims in the sea.
+      </p>
+
+      <button onclick="speakText('The fish swims in the sea')">
+        🔊 Hear the sentence
+      </button>
+
+      <button onclick="finishActivity(10);this.disabled=true;">
+        ✅ I read the sentence
+      </button>
+
+    </div>
+    `
+  );
+
+}
+
+
+function startSpelling(){
+
+  showLesson(
+    "✏️ Spelling",
+    `
+    <div class="question">
+      Spell the word:
+    </div>
+
+    <div class="word">FISH</div>
+
+    <input id="spellingAnswer"
+           type="text"
+           placeholder="Type the word">
+
+    <button onclick="checkSpelling()">
+      ✅ Check Spelling
+    </button>
+
+    <div id="spellingResult"></div>
+    `
+  );
+
+}
+
+
+function checkSpelling(){
+
+  const answer=
+    document.getElementById("spellingAnswer").value
+    .trim()
+    .toLowerCase();
+
+  const result=
+    document.getElementById("spellingResult");
+
+  if(answer==="fish"){
+
+    result.innerHTML=
+      "<p class='success'>✓ Correct spelling!</p>";
+
+    finishActivity(10);
+
+  }else{
+
+    result.innerHTML=
+      "<p class='error'>Not yet. Try again.</p>";
+
+  }
+
+}
+
+
+function startQuiz(){
+
+  showLesson(
+    "🎯 Class 1 Quiz",
+    `
+    <div class="question">
+      Which sentence is correct?
+    </div>
+
+    <button onclick="quizAnswer(false,this)">
+      The fish fly in the sky.
+    </button>
+
+    <button onclick="quizAnswer(true,this)">
+      The fish swims in the sea.
+    </button>
+
+    <button onclick="quizAnswer(false,this)">
+      The fish runs on the road.
+    </button>
+
+    <div id="quizResult" class="activity"></div>
+    `
+  );
+
+}
+
+
+function quizAnswer(correct,button){
+
+  if(button.disabled)return;
+
+  button.disabled=true;
+
+  const result=document.getElementById("quizResult");
+
+  if(correct){
+
+    result.innerHTML=
+      "<span class='success'>✓ Excellent! Correct answer.</span>";
+
+    finishActivity(10);
+
+  }else{
+
+    result.innerHTML=
+      "<span class='error'>Try again and read the sentence carefully.</span>";
+
+  }
+
+}
+
+
+function startRecovery(){
+
+  recoverySeconds=300;
+
+  showLesson(
+    "⏱️ 5-Minute Recovery",
+    `
+    <p>
+      This activity gives the learner extra practice time.
+    </p>
+
+    <div id="recoveryTimer" class="timer">
+      05:00
+    </div>
+
+    <button onclick="beginRecovery()">
+      ▶️ Start Recovery
+    </button>
+
+    <button onclick="stopRecovery()">
+      ⏹️ Stop
+    </button>
+
+    <div id="recoveryMessage" class="activity">
+      Ready to begin.
+    </div>
+    `
+  );
+
+}
+
+
+function beginRecovery(){
+
+  stopRecovery();
+
+  recoverySeconds=300;
+
+  updateRecoveryDisplay();
+
+  recoveryTimer=setInterval(function(){
+
+    recoverySeconds--;
+
+    updateRecoveryDisplay();
+
+    if(recoverySeconds<=0){
+
+      stopRecovery();
+
+      document.getElementById("recoveryMessage").innerHTML=
+        "<span class='success'>✓ Recovery session completed.</span>";
+
+      finishActivity(10);
+
+    }
+
+  },1000);
+
+}
+
+
+function stopRecovery(){
+
+  if(recoveryTimer){
+
+    clearInterval(recoveryTimer);
+
+    recoveryTimer=null;
+
+  }
+
+}
+
+
+function updateRecoveryDisplay(){
+
+  const minutes=
+    Math.floor(recoverySeconds/60)
+    .toString()
+    .padStart(2,"0");
+
+  const seconds=
+    (recoverySeconds%60)
+    .toString()
+    .padStart(2,"0");
+
+  const display=
+    document.getElementById("recoveryTimer");
+
+  if(display){
+    display.textContent=minutes+":"+seconds;
+  }
+
+}
+
+
+function speakText(text){
+
+  if("speechSynthesis" in window){
+
+    const speech=
+      new SpeechSynthesisUtterance(text);
+
+    speech.lang="en-FJ";
+
+    window.speechSynthesis.cancel();
+
+    window.speechSynthesis.speak(speech);
+
+  }else{
+
+    alert("Speech is not supported on this device.");
+
+  }
+
+}
+
+
+loadProfile();
+updateDay();
+updateProgress();
+
+</script>
+
+</body>
+</html>
