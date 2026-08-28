@@ -4,17 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pacific Education - Class 1 English</title>
+<title>Pacific Education - Class 1 English V1.2</title>
 
 <style>
+*{box-sizing:border-box}
 
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
@@ -24,9 +19,7 @@ body{
   line-height:1.5;
 }
 
-body.large-text{
-  font-size:20px;
-}
+body.large-text{font-size:20px}
 
 header{
   background:#0d4f5c;
@@ -59,13 +52,9 @@ main{
   box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-h2{
-  margin-top:0;
-}
+h2{margin-top:0}
 
-h3{
-  margin-bottom:8px;
-}
+h3{margin-bottom:8px}
 
 .grid{
   display:grid;
@@ -85,29 +74,18 @@ button{
   margin-top:8px;
 }
 
-button:hover{
-  opacity:.9;
-}
+button:hover{opacity:.9}
 
 button:disabled{
   opacity:.55;
   cursor:not-allowed;
 }
 
-button.secondary{
-  background:#0d4f5c;
-}
+button.secondary{background:#0d4f5c}
 
-button.warning{
-  background:#8a6400;
-}
+button.warning{background:#8a6400}
 
-button.danger{
-  background:#9b3030;
-}
-
-input,
-select{
+input,select{
   width:100%;
   padding:13px;
   margin:7px 0 12px;
@@ -174,9 +152,7 @@ select{
   color:#60747a;
 }
 
-.hidden{
-  display:none;
-}
+.hidden{display:none}
 
 .success{
   color:#08744d;
@@ -244,71 +220,58 @@ footer{
   border:1px solid #eadc9a;
 }
 
-@media(max-width:600px){
-
-  main{
-    padding:12px;
-  }
-
-  .section{
-    padding:16px;
-  }
-
-  header h1{
-    font-size:25px;
-  }
-
-  .letter{
-    font-size:52px;
-  }
-
-  .word{
-    font-size:24px;
-  }
-
+.assessment{
+  background:#f8f1ff;
+  border:1px solid #d8c3ed;
+  padding:16px;
+  border-radius:12px;
+  margin-top:12px;
 }
 
+@media(max-width:600px){
+
+  main{padding:12px}
+
+  .section{padding:16px}
+
+  header h1{font-size:25px}
+
+  .letter{font-size:52px}
+
+  .word{font-size:24px}
+
+}
 </style>
 </head>
-
 
 <body>
 
 <header>
-
   <h1>Pacific Education</h1>
-
-  <p>
-    Class 1 English • Learn • Practise • Grow
-  </p>
-
+  <p>Class 1 English • Learn • Practise • Grow</p>
 </header>
 
-
 <main>
-
 
 <!-- ACCESSIBILITY -->
 
 <section class="section">
 
-  <h2>♿ Accessibility</h2>
+<h2>♿ Accessibility</h2>
 
-  <p>
-    Make learning easier for every child.
-  </p>
+<p>Make learning easier for every child.</p>
 
-  <div class="accessibility">
+<div class="accessibility">
 
-    <button onclick="toggleLargeText()">
-      🔎 Larger Text
-    </button>
+<button onclick="toggleLargeText()">
+🔎 Larger Text
+</button>
 
-    <button onclick="speakText('Welcome to Pacific Education Class 1 English')">
-      🔊 Hear Welcome
-    </button>
+<button onclick="speakText('Welcome to Pacific Education Class 1 English')">
+🔊 Hear Welcome
+</button>
 
-  </div>
+</div>
 
 </section>
 
@@ -317,133 +280,112 @@ footer{
 
 <section class="section">
 
-  <h2>👤 Student Profile</h2>
+<h2>👤 Student Profile</h2>
 
-  <label>Student Name</label>
+<label>Student Name</label>
 
-  <input
-    id="studentName"
-    type="text"
-    placeholder="Enter student's name"
-  >
+<input id="studentName"
+type="text"
+placeholder="Enter student's name">
 
+<label>Student ID</label>
 
-  <label>Student ID</label>
+<input id="studentId"
+type="text"
+placeholder="Enter student ID">
 
-  <input
-    id="studentId"
-    type="text"
-    placeholder="Enter student ID"
-  >
+<label>Date of Birth</label>
 
+<input id="studentDob"
+type="date">
 
-  <label>Date of Birth</label>
+<label>School</label>
 
-  <input
-    id="studentDob"
-    type="date"
-  >
+<input id="studentSchool"
+type="text"
+placeholder="Enter school name">
 
+<label>Class</label>
 
-  <label>School</label>
+<select id="studentClass">
+<option value="Class 1">Class 1</option>
+</select>
 
-  <input
-    id="studentSchool"
-    type="text"
-    placeholder="Enter school name"
-  >
+<button onclick="saveProfile()">
+💾 Save Student Profile
+</button>
 
-
-  <label>Class</label>
-
-  <select id="studentClass">
-
-    <option value="Class 1">
-      Class 1
-    </option>
-
-  </select>
-
-
-  <button onclick="saveProfile()">
-    💾 Save Student Profile
-  </button>
-
-
-  <div
-    id="profileMessage"
-    class="activity"
-  >
-    Student profile has not been saved yet.
-  </div>
+<div id="profileMessage" class="activity">
+Student profile has not been saved yet.
+</div>
 
 </section>
 
 
-<!-- DAILY LEARNING -->
+<!-- DAILY CURRICULUM -->
 
 <section class="section">
 
-  <h2>📅 Daily Class 1 Learning</h2>
+<h2>📅 Class 1 — 365-Day Learning Programme</h2>
+
+<div class="day-number">
+Day <span id="currentDay">1</span> / 365
+</div>
+
+<div class="activity">
+
+<strong id="dayTitle">
+Day 1 English
+</strong>
+
+<p id="dayGoal">
+Learn the letter A.
+</p>
+
+<div id="daySkill">
+Skill: Alphabet
+</div>
+
+</div>
+
+<div class="grid">
+
+<button onclick="previousDay()">
+← Previous Day
+</button>
+
+<button onclick="todayDay()">
+📅 Today
+</button>
+
+<button onclick="nextDay()">
+Next Day →
+</button>
+
+</div>
+
+<button class="secondary"
+onclick="startDailyLesson()">
+▶️ Start Today's Lesson
+</button>
+
+<div id="dailyResult" class="activity"></div>
+
+</section>
 
 
-  <div class="day-number">
+<!-- 30 DAY MODULE -->
 
-    Day
-    <span id="currentDay">
-      1
-    </span>
-    / 365
+<section class="section">
 
-  </div>
+<h2>🔤 Module 1: Alphabet — Days 1–30</h2>
 
+<p>
+The first 30 days build alphabet recognition,
+letter knowledge and early reading readiness.
+</p>
 
-  <div class="activity">
-
-    <strong id="dayTitle">
-      Day 1 English
-    </strong>
-
-    <p id="dayGoal">
-      Learn letters, sounds and simple English words.
-    </p>
-
-    <div id="daySkill">
-      Skill: Alphabet
-    </div>
-
-  </div>
-
-
-  <div class="grid">
-
-    <button onclick="previousDay()">
-      ← Previous Day
-    </button>
-
-    <button onclick="todayDay()">
-      📅 Today
-    </button>
-
-    <button onclick="nextDay()">
-      Next Day →
-    </button>
-
-  </div>
-
-
-  <button
-    class="secondary"
-    onclick="startDailyLesson()"
-  >
-    ▶️ Start Today's Lesson
-  </button>
-
-
-  <div
-    id="dailyResult"
-    class="activity"
-  ></div>
+<div id="moduleProgress"></div>
 
 </section>
 
@@ -452,44 +394,43 @@ footer{
 
 <section class="section">
 
-  <h2>📚 Choose an Activity</h2>
+<h2>📚 Choose an Activity</h2>
 
+<div class="grid">
 
-  <div class="grid">
+<button onclick="startAlphabet()">
+🔤 Alphabet
+</button>
 
-    <button onclick="startAlphabet()">
-      🔤 Alphabet
-    </button>
+<button onclick="startPhonics()">
+🔊 Phonics
+</button>
 
-    <button onclick="startPhonics()">
-      🔊 Phonics
-    </button>
+<button onclick="startWords()">
+📚 Words
+</button>
 
-    <button onclick="startWords()">
-      📚 Words
-    </button>
+<button onclick="startMatching()">
+🧩 Word Match
+</button>
 
-    <button onclick="startMatching()">
-      🧩 Word Match
-    </button>
+<button onclick="startReading()">
+📖 Reading
+</button>
 
-    <button onclick="startReading()">
-      📖 Reading
-    </button>
+<button onclick="startSpelling()">
+✏️ Spelling
+</button>
 
-    <button onclick="startSpelling()">
-      ✏️ Spelling
-    </button>
+<button onclick="startQuiz()">
+🎯 Quiz
+</button>
 
-    <button onclick="startQuiz()">
-      🎯 Quiz
-    </button>
+<button onclick="startRecovery()">
+⏱️ 5-Minute Recovery
+</button>
 
-    <button onclick="startRecovery()">
-      ⏱️ 5-Minute Recovery
-    </button>
-
-  </div>
+</div>
 
 </section>
 
@@ -498,176 +439,122 @@ footer{
 
 <section class="section">
 
-  <h2>📊 Your Progress</h2>
+<h2>📊 Your Progress</h2>
 
+<p class="score">
+Score: <span id="score">0</span>
+</p>
 
-  <p class="score">
+<p>
+Activities completed:
+<span id="completed">0</span>
+</p>
 
-    Score:
-    <span id="score">
-      0
-    </span>
+<p>
+Daily lessons completed:
+<span id="daysCompleted">0</span> / 365
+</p>
 
-  </p>
+<p>
+Current learning streak:
+<span id="streak">0</span> days
+</p>
 
+<div class="progress">
+<div id="progressBar"
+class="progress-bar"></div>
+</div>
 
-  <p>
-
-    Activities completed:
-    <span id="completed">
-      0
-    </span>
-
-  </p>
-
-
-  <p>
-
-    Daily lessons completed:
-    <span id="daysCompleted">
-      0
-    </span>
-    / 365
-
-  </p>
-
-
-  <p>
-
-    Current learning streak:
-    <span id="streak">
-      0
-    </span>
-    days
-
-  </p>
-
-
-  <div class="progress">
-
-    <div
-      id="progressBar"
-      class="progress-bar"
-    ></div>
-
-  </div>
-
-
-  <p class="small">
-
-    Prototype progress is saved on this device.
-
-  </p>
+<p class="small">
+Prototype progress is saved on this device.
+</p>
 
 </section>
 
 
 <!-- LESSON -->
 
-<section
-  id="lesson"
-  class="section hidden"
->
+<section id="lesson"
+class="section hidden">
 
-  <h2 id="lessonTitle">
-    Activity
-  </h2>
+<h2 id="lessonTitle">
+Activity
+</h2>
 
-  <div id="lessonContent"></div>
+<div id="lessonContent"></div>
 
 </section>
 
 
-<!-- TEACHER / PARENT MONITORING -->
+<!-- MONITORING -->
 
 <section class="section">
 
-  <h2>👩‍🏫 Teacher / Parent Monitoring</h2>
+<h2>👩‍🏫 Teacher / Parent Monitoring</h2>
 
+<div class="notice">
 
-  <div class="notice">
+This prototype provides local learning information.
+Future online versions can provide authorised
+teacher dashboards and secure school reporting.
 
-    This prototype provides local learning information.
-    Future online versions can provide authorised teacher
-    dashboards and secure school reporting.
+</div>
 
-  </div>
+<div class="monitor-card">
 
+<h3>Student</h3>
 
-  <div class="monitor-card">
+<div id="monitorStudent"
+class="stat">
+Not saved
+</div>
 
-    <h3>Student</h3>
+</div>
 
-    <div
-      id="monitorStudent"
-      class="stat"
-    >
-      Not saved
-    </div>
+<div class="monitor-card">
 
-  </div>
+<h3>Learning Progress</h3>
 
+<p>
+Score:
+<strong id="monitorScore">0</strong>
+</p>
 
-  <div class="monitor-card">
+<p>
+Activities:
+<strong id="monitorActivities">0</strong>
+</p>
 
-    <h3>Learning Progress</h3>
+<p>
+Days completed:
+<strong id="monitorDays">0</strong> / 365
+</p>
 
-    <p>
-      Score:
-      <strong id="monitorScore">
-        0
-      </strong>
-    </p>
+<p>
+Streak:
+<strong id="monitorStreak">0</strong> days
+</p>
 
-    <p>
-      Activities:
-      <strong id="monitorActivities">
-        0
-      </strong>
-    </p>
+</div>
 
-    <p>
-      Days completed:
-      <strong id="monitorDays">
-        0
-      </strong>
-      / 365
-    </p>
+<div class="monitor-card">
 
-    <p>
-      Streak:
-      <strong id="monitorStreak">
-        0
-      </strong>
-      days
-    </p>
+<h3>Skills Practised</h3>
 
-  </div>
+<div id="skillBadges">
+No activities completed yet.
+</div>
 
+</div>
 
-  <div class="monitor-card">
+<button class="secondary"
+onclick="generateProgressSummary()">
+📄 View Progress Summary
+</button>
 
-    <h3>Skills Practised</h3>
-
-    <div id="skillBadges">
-      No activities completed yet.
-    </div>
-
-  </div>
-
-
-  <button
-    class="secondary"
-    onclick="generateProgressSummary()"
-  >
-    📄 View Progress Summary
-  </button>
-
-
-  <div
-    id="progressSummary"
-    class="activity hidden"
-  ></div>
+<div id="progressSummary"
+class="activity hidden">
+</div>
 
 </section>
 
@@ -676,184 +563,116 @@ footer{
 
 <section class="section">
 
-  <h2>🌴 Pacific Learning</h2>
+<h2>🌴 Pacific Learning</h2>
 
+<div class="lesson-card">
 
-  <p>
+<strong>🐟 Fish</strong>
 
-    Pacific Education uses familiar examples
-    to help children connect English learning
-    with their everyday environment.
+<p>
+The fish swims in the sea.
+</p>
 
-  </p>
+<button onclick="speakText('The fish swims in the sea.')">
+🔊 Hear the Sentence
+</button>
 
+</div>
 
-  <div class="lesson-card">
+<div class="lesson-card">
 
-    <strong>🐟 Fish</strong>
+<strong>🌴 Coconut</strong>
 
-    <p>
-      The fish swims in the sea.
-    </p>
+<p>
+The coconut grows on a palm tree.
+</p>
 
-    <button
-      onclick="speakText('The fish swims in the sea.')"
-    >
-      🔊 Hear the Sentence
-    </button>
+<button onclick="speakText('The coconut grows on a palm tree.')">
+🔊 Hear the Sentence
+</button>
 
-  </div>
+</div>
 
+<div class="lesson-card">
 
-  <div class="lesson-card">
+<strong>☀️ Sun</strong>
 
-    <strong>🌴 Coconut</strong>
+<p>
+The sun is bright.
+</p>
 
-    <p>
-      The coconut grows on a palm tree.
-    </p>
+<button onclick="speakText('The sun is bright.')">
+🔊 Hear the Sentence
+</button>
 
-    <button
-      onclick="speakText('The coconut grows on a palm tree.')"
-    >
-      🔊 Hear the Sentence
-    </button>
-
-  </div>
-
-
-  <div class="lesson-card">
-
-    <strong>☀️ Sun</strong>
-
-    <p>
-      The sun is bright.
-    </p>
-
-    <button
-      onclick="speakText('The sun is bright.')"
-    >
-      🔊 Hear the Sentence
-    </button>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- FUTURE PLATFORM -->
+<!-- PLATFORM -->
 
 <section class="section">
 
-  <h2>🌐 Pacific Education Platform</h2>
+<h2>🌐 Pacific Education Platform</h2>
 
+<p>
+This Class 1 prototype is the foundation
+for the wider Pacific Education platform.
+</p>
 
-  <p>
-    This Class 1 prototype is designed as the
-    foundation for the wider Pacific Education
-    platform.
-  </p>
+<span class="badge">Class 1</span>
+<span class="badge">English</span>
+<span class="badge">365-Day Curriculum</span>
+<span class="badge">Assessment</span>
+<span class="badge">Teacher Support</span>
+<span class="badge">Parent Support</span>
+<span class="badge">Accessibility</span>
 
-
-  <div>
-
-    <span class="badge">
-      Class 1
-    </span>
-
-    <span class="badge">
-      English
-    </span>
-
-    <span class="badge">
-      Daily Learning
-    </span>
-
-    <span class="badge">
-      Assessment
-    </span>
-
-    <span class="badge">
-      Teacher Support
-    </span>
-
-    <span class="badge">
-      Parent Support
-    </span>
-
-    <span class="badge">
-      Accessibility
-    </span>
-
-  </div>
-
-
-  <p class="small">
-
-    Future versions can expand to additional
-    classes, secure online accounts, authorised
-    education-system integrations and wider
-    Pacific deployment.
-
-  </p>
+<p class="small">
+Future versions can expand to additional classes,
+secure online accounts, authorised education-system
+integrations and wider Pacific deployment.
+</p>
 
 </section>
 
-
 </main>
-
 
 <footer>
 
-  Pacific Education • Class 1 English V1.1 Prototype
+Pacific Education • Class 1 English V1.2
 
-  <br><br>
+<br><br>
 
-  Learn • Practise • Grow
+Learn • Practise • Grow
 
 </footer>
 
 
 <script>
 
-
 /* ================================
-   BASIC STORAGE
+   STORAGE
 ================================ */
 
 let currentDay =
-  Number(
-    localStorage.getItem("pe_currentDay") || 1
-  );
-
+Number(localStorage.getItem("pe_currentDay") || 1);
 
 let score =
-  Number(
-    localStorage.getItem("pe_score") || 0
-  );
-
+Number(localStorage.getItem("pe_score") || 0);
 
 let completed =
-  Number(
-    localStorage.getItem("pe_completed") || 0
-  );
-
+Number(localStorage.getItem("pe_completed") || 0);
 
 let daysCompleted =
-  Number(
-    localStorage.getItem("pe_daysCompleted") || 0
-  );
-
+Number(localStorage.getItem("pe_daysCompleted") || 0);
 
 let streak =
-  Number(
-    localStorage.getItem("pe_streak") || 0
-  );
-
+Number(localStorage.getItem("pe_streak") || 0);
 
 let lastLearningDate =
-  localStorage.getItem("pe_lastLearningDate") || "";
-
+localStorage.getItem("pe_lastLearningDate") || "";
 
 let recoveryTimer = null;
 
@@ -861,110 +680,275 @@ let recoverySeconds = 300;
 
 
 /* ================================
-   365-DAY CURRICULUM
+   DAYS 1–30
 ================================ */
 
-const curriculum = [
+const alphabetDays = [
 
-  {
-    skill:"Alphabet",
-    goal:"Learn the letter A.",
-    word:"Apple",
-    sentence:"A is for apple."
-  },
+{
+day:1,
+letter:"A a",
+word:"Apple",
+sound:"A says /a/ as in apple.",
+sentence:"A is for apple."
+},
 
-  {
-    skill:"Alphabet",
-    goal:"Learn the letter B.",
-    word:"Ball",
-    sentence:"B is for ball."
-  },
+{
+day:2,
+letter:"B b",
+word:"Ball",
+sound:"B says /b/ as in ball.",
+sentence:"B is for ball."
+},
 
-  {
-    skill:"Alphabet",
-    goal:"Learn the letter C.",
-    word:"Cat",
-    sentence:"C is for cat."
-  },
+{
+day:3,
+letter:"C c",
+word:"Cat",
+sound:"C says /k/ as in cat.",
+sentence:"C is for cat."
+},
 
-  {
-    skill:"Alphabet",
-    goal:"Learn the letter D.",
-    word:"Dog",
-    sentence:"D is for dog."
-  },
+{
+day:4,
+letter:"D d",
+word:"Dog",
+sound:"D says /d/ as in dog.",
+sentence:"D is for dog."
+},
 
-  {
-    skill:"Alphabet",
-    goal:"Learn the letter E.",
-    word:"Egg",
-    sentence:"E is for egg."
-  },
+{
+day:5,
+letter:"E e",
+word:"Egg",
+sound:"E says /e/ as in egg.",
+sentence:"E is for egg."
+},
 
-  {
-    skill:"Alphabet",
-    goal:"Learn the letter F.",
-    word:"Fish",
-    sentence:"F is for fish."
-  },
+{
+day:6,
+letter:"F f",
+word:"Fish",
+sound:"F says /f/ as in fish.",
+sentence:"F is for fish."
+},
 
-  {
-    skill:"Phonics",
-    goal:"Practise beginning sounds.",
-    word:"Fish",
-    sentence:"F says /f/ in fish."
-  },
+{
+day:7,
+letter:"G g",
+word:"Goat",
+sound:"G says /g/ as in goat.",
+sentence:"G is for goat."
+},
 
-  {
-    skill:"Words",
-    goal:"Learn simple everyday words.",
-    word:"Sun",
-    sentence:"The sun is bright."
-  },
+{
+day:8,
+letter:"H h",
+word:"House",
+sound:"H says /h/ as in house.",
+sentence:"H is for house."
+},
 
-  {
-    skill:"Reading",
-    goal:"Read a short sentence.",
-    word:"Fish",
-    sentence:"The fish swims in the sea."
-  },
+{
+day:9,
+letter:"I i",
+word:"Island",
+sound:"I says /i/ as in island.",
+sentence:"I is for island."
+},
 
-  {
-    skill:"Spelling",
-    goal:"Practise spelling a simple word.",
-    word:"Fish",
-    sentence:"Spell the word fish."
-  },
+{
+day:10,
+letter:"J j",
+word:"Juice",
+sound:"J says /j/ as in juice.",
+sentence:"J is for juice."
+},
 
-  {
-    skill:"Pacific English",
-    goal:"Learn English using a familiar Pacific example.",
-    word:"Coconut",
-    sentence:"The coconut grows on a palm tree."
-  },
+{
+day:11,
+letter:"K k",
+word:"Kite",
+sound:"K says /k/ as in kite.",
+sentence:"K is for kite."
+},
 
-  {
-    skill:"Reading",
-    goal:"Read a simple sentence.",
-    word:"Sun",
-    sentence:"The sun is bright."
-  },
+{
+day:12,
+letter:"L l",
+word:"Leaf",
+sound:"L says /l/ as in leaf.",
+sentence:"L is for leaf."
+},
 
-  {
-    skill:"Vocabulary",
-    goal:"Learn a word for an animal.",
-    word:"Bird",
-    sentence:"The bird can fly."
-  },
+{
+day:13,
+letter:"M m",
+word:"Moon",
+sound:"M says /m/ as in moon.",
+sentence:"M is for moon."
+},
 
-  {
-    skill:"Vocabulary",
-    goal:"Learn a word for nature.",
-    word:"Tree",
-    sentence:"The tree is tall."
-  }
+{
+day:14,
+letter:"N n",
+word:"Nest",
+sound:"N says /n/ as in nest.",
+sentence:"N is for nest."
+},
+
+{
+day:15,
+letter:"O o",
+word:"Orange",
+sound:"O says /o/ as in orange.",
+sentence:"O is for orange."
+},
+
+{
+day:16,
+letter:"P p",
+word:"Pineapple",
+sound:"P says /p/ as in pineapple.",
+sentence:"P is for pineapple."
+},
+
+{
+day:17,
+letter:"Q q",
+word:"Queen",
+sound:"Q says /kw/ as in queen.",
+sentence:"Q is for queen."
+},
+
+{
+day:18,
+letter:"R r",
+word:"Rain",
+sound:"R says /r/ as in rain.",
+sentence:"R is for rain."
+},
+
+{
+day:19,
+letter:"S s",
+word:"Sun",
+sound:"S says /s/ as in sun.",
+sentence:"S is for sun."
+},
+
+{
+day:20,
+letter:"T t",
+word:"Tree",
+sound:"T says /t/ as in tree.",
+sentence:"T is for tree."
+},
+
+{
+day:21,
+letter:"U u",
+word:"Umbrella",
+sound:"U says /u/ as in umbrella.",
+sentence:"U is for umbrella."
+},
+
+{
+day:22,
+letter:"V v",
+word:"Van",
+sound:"V says /v/ as in van.",
+sentence:"V is for van."
+},
+
+{
+day:23,
+letter:"W w",
+word:"Water",
+sound:"W says /w/ as in water.",
+sentence:"W is for water."
+},
+
+{
+day:24,
+letter:"X x",
+word:"X-ray",
+sound:"X says /x/ as in x-ray.",
+sentence:"X is for x-ray."
+},
+
+{
+day:25,
+letter:"Y y",
+word:"Yam",
+sound:"Y says /y/ as in yam.",
+sentence:"Y is for yam."
+},
+
+{
+day:26,
+letter:"Z z",
+word:"Zoo",
+sound:"Z says /z/ as in zoo.",
+sentence:"Z is for zoo."
+},
+
+{
+day:27,
+letter:"A–M",
+word:"Alphabet",
+sound:"Practise letters A to M.",
+sentence:"I can say letters A to M."
+},
+
+{
+day:28,
+letter:"N–Z",
+word:"Alphabet",
+sound:"Practise letters N to Z.",
+sentence:"I can say letters N to Z."
+},
+
+{
+day:29,
+letter:"A–Z",
+word:"Alphabet",
+sound:"Practise the alphabet in order.",
+sentence:"I can say the alphabet."
+},
+
+{
+day:30,
+letter:"A–Z",
+word:"Assessment",
+sound:"Show what you know.",
+sentence:"I am ready for my alphabet assessment."
+}
 
 ];
+
+
+/* ================================
+   GET DAY
+================================ */
+
+function getDayLesson(){
+
+if(currentDay<=30){
+
+return alphabetDays[currentDay-1];
+
+}
+
+return {
+day:currentDay,
+letter:"Next Module",
+word:"Phonics",
+sound:"Phonics module coming next.",
+sentence:"I am ready to learn phonics."
+};
+
+}
 
 
 /* ================================
@@ -973,67 +957,33 @@ const curriculum = [
 
 function updateProgress(){
 
-  document.getElementById("score").textContent =
-    score;
+document.getElementById("score").textContent=score;
 
+document.getElementById("completed").textContent=completed;
 
-  document.getElementById("completed").textContent =
-    completed;
+document.getElementById("daysCompleted").textContent=daysCompleted;
 
+document.getElementById("streak").textContent=streak;
 
-  document.getElementById("daysCompleted").textContent =
-    daysCompleted;
+const percent=Math.min(
+100,
+Math.round((daysCompleted/365)*100)
+);
 
+document.getElementById("progressBar")
+.style.width=percent+"%";
 
-  document.getElementById("streak").textContent =
-    streak;
+localStorage.setItem("pe_score",score);
 
+localStorage.setItem("pe_completed",completed);
 
-  const percent =
-    Math.min(
-      100,
-      Math.round(
-        (daysCompleted / 365) * 100
-      )
-    );
+localStorage.setItem("pe_daysCompleted",daysCompleted);
 
+localStorage.setItem("pe_streak",streak);
 
-  document.getElementById("progressBar")
-    .style.width =
-      percent + "%";
+localStorage.setItem("pe_currentDay",currentDay);
 
-
-  localStorage.setItem(
-    "pe_score",
-    score
-  );
-
-
-  localStorage.setItem(
-    "pe_completed",
-    completed
-  );
-
-
-  localStorage.setItem(
-    "pe_daysCompleted",
-    daysCompleted
-  );
-
-
-  localStorage.setItem(
-    "pe_streak",
-    streak
-  );
-
-
-  localStorage.setItem(
-    "pe_currentDay",
-    currentDay
-  );
-
-
-  updateMonitoring();
+updateMonitoring();
 
 }
 
@@ -1044,235 +994,171 @@ function updateProgress(){
 
 function saveProfile(){
 
-  const profile = {
+const profile={
 
-    name:
-      document.getElementById(
-        "studentName"
-      ).value.trim(),
+name:document.getElementById("studentName").value.trim(),
 
-    id:
-      document.getElementById(
-        "studentId"
-      ).value.trim(),
+id:document.getElementById("studentId").value.trim(),
 
-    dob:
-      document.getElementById(
-        "studentDob"
-      ).value,
+dob:document.getElementById("studentDob").value,
 
-    school:
-      document.getElementById(
-        "studentSchool"
-      ).value.trim(),
+school:document.getElementById("studentSchool").value.trim(),
 
-    className:
-      document.getElementById(
-        "studentClass"
-      ).value
+className:document.getElementById("studentClass").value
 
-  };
+};
 
+localStorage.setItem(
+"pe_student_profile",
+JSON.stringify(profile)
+);
 
-  localStorage.setItem(
-    "pe_student_profile",
-    JSON.stringify(profile)
-  );
+document.getElementById("profileMessage").innerHTML=
+"<span class='success'>✓ Student profile saved on this device.</span>";
 
-
-  document.getElementById(
-    "profileMessage"
-  ).innerHTML =
-
-    "<span class='success'>✓ Student profile saved on this device.</span>";
-
-
-  updateMonitoring();
+updateMonitoring();
 
 }
 
 
 function loadProfile(){
 
-  const saved =
-    localStorage.getItem(
-      "pe_student_profile"
-    );
+const saved=
+localStorage.getItem("pe_student_profile");
 
+if(!saved)return;
 
-  if(!saved){
-    return;
-  }
+try{
 
+const profile=JSON.parse(saved);
 
-  try{
+document.getElementById("studentName").value=profile.name||"";
 
-    const profile =
-      JSON.parse(saved);
+document.getElementById("studentId").value=profile.id||"";
 
+document.getElementById("studentDob").value=profile.dob||"";
 
-    document.getElementById(
-      "studentName"
-    ).value =
-      profile.name || "";
+document.getElementById("studentSchool").value=profile.school||"";
 
+document.getElementById("studentClass").value=
+profile.className||"Class 1";
 
-    document.getElementById(
-      "studentId"
-    ).value =
-      profile.id || "";
+document.getElementById("profileMessage").innerHTML=
+"<span class='success'>✓ Saved student profile loaded.</span>";
 
-
-    document.getElementById(
-      "studentDob"
-    ).value =
-      profile.dob || "";
-
-
-    document.getElementById(
-      "studentSchool"
-    ).value =
-      profile.school || "";
-
-
-    document.getElementById(
-      "studentClass"
-    ).value =
-      profile.className || "Class 1";
-
-
-    document.getElementById(
-      "profileMessage"
-    ).innerHTML =
-
-      "<span class='success'>✓ Saved student profile loaded.</span>";
-
-  }
-
-  catch(error){
-
-    console.log(
-      "Profile could not be loaded."
-    );
-
-  }
+}catch(error){}
 
 }
 
 
 /* ================================
-   DAY SYSTEM
+   DAY NAVIGATION
 ================================ */
-
-function getCurriculumDay(){
-
-  return curriculum[
-    (currentDay - 1) %
-    curriculum.length
-  ];
-
-}
-
 
 function updateDay(){
 
-  const lesson =
-    getCurriculumDay();
+const lesson=getDayLesson();
 
+document.getElementById("currentDay").textContent=currentDay;
 
-  document.getElementById(
-    "currentDay"
-  ).textContent =
-    currentDay;
+document.getElementById("dayTitle").textContent=
+"Day "+currentDay+" English";
 
+document.getElementById("dayGoal").textContent=
+lesson.sound;
 
-  document.getElementById(
-    "dayTitle"
-  ).textContent =
-    "Day " +
-    currentDay +
-    " English";
+document.getElementById("daySkill").textContent=
+"Skill: "+(
+currentDay<=30 ?
+"Alphabet" :
+"Future Curriculum Module"
+);
 
+updateModuleProgress();
 
-  document.getElementById(
-    "dayGoal"
-  ).textContent =
-    lesson.goal;
-
-
-  document.getElementById(
-    "daySkill"
-  ).textContent =
-    "Skill: " +
-    lesson.skill;
-
-
-  localStorage.setItem(
-    "pe_currentDay",
-    currentDay
-  );
+localStorage.setItem(
+"pe_currentDay",
+currentDay
+);
 
 }
 
 
 function previousDay(){
 
-  if(currentDay > 1){
+if(currentDay>1){
 
-    currentDay--;
+currentDay--;
 
-    updateDay();
+updateDay();
 
-  }
+}
 
 }
 
 
 function nextDay(){
 
-  if(currentDay < 365){
+if(currentDay<365){
 
-    currentDay++;
+currentDay++;
 
-    updateDay();
+updateDay();
 
-  }
+}
 
 }
 
 
 function todayDay(){
 
-  const now =
-    new Date();
+const now=new Date();
+
+const start=
+new Date(
+now.getFullYear(),
+0,
+1
+);
+
+const difference=
+Math.floor(
+(now-start)/86400000
+)+1;
+
+currentDay=
+Math.max(
+1,
+Math.min(365,difference)
+);
+
+updateDay();
+
+}
 
 
-  const start =
-    new Date(
-      now.getFullYear(),
-      0,
-      1
-    );
+/* ================================
+   MODULE PROGRESS
+================================ */
 
+function updateModuleProgress(){
 
-  const difference =
-    Math.floor(
-      (now - start) /
-      86400000
-    ) + 1;
+const completedAlphabet=
+Array.from(
+{length:30},
+(_,i)=>
+localStorage.getItem(
+"pe_completed_day_"+(i+1)
+)==="yes"
+).filter(Boolean).length;
 
+document.getElementById(
+"moduleProgress"
+).innerHTML=
 
-  currentDay =
-    Math.max(
-      1,
-      Math.min(
-        365,
-        difference
-      )
-    );
-
-
-  updateDay();
+"<strong>Alphabet Module:</strong> "+
+completedAlphabet+
+" / 30 days completed.";
 
 }
 
@@ -1283,61 +1169,75 @@ function todayDay(){
 
 function startDailyLesson(){
 
-  const lesson =
-    getCurriculumDay();
+const lesson=getDayLesson();
 
+if(currentDay<=30){
 
-  showLesson(
+showLesson(
 
-    "Day " +
-    currentDay +
-    " English Lesson",
+"Day "+currentDay+" — Alphabet",
 
-    `
+`
 
-    <div class="activity">
+<div class="activity">
 
-      <div class="question">
-        Today's Skill
-      </div>
+<div class="letter">
+${lesson.letter}
+</div>
 
-      <p>
-        <strong>
-          ${lesson.skill}
-        </strong>
-      </p>
+<div class="word">
+${lesson.word}
+</div>
 
-      <p>
-        ${lesson.goal}
-      </p>
+<p class="question">
+${lesson.sound}
+</p>
 
-      <div class="word">
-        ${lesson.word}
-      </div>
+<p>
+${lesson.sentence}
+</p>
 
-      <p>
-        ${lesson.sentence}
-      </p>
+<button onclick="speakText('${lesson.sound}')">
+🔊 Hear the Sound
+</button>
 
+<button onclick="speakText('${lesson.sentence}')">
+🔊 Hear the Sentence
+</button>
 
-      <button
-        onclick="speakText('${lesson.sentence}')"
-      >
-        🔊 Hear the Lesson
-      </button>
+${
+currentDay===30
+?
+'<button onclick="startAlphabetAssessment()">🎯 Start Day 30 Assessment</button>'
+:
+'<button onclick="completeDailyLesson()">✅ Complete Today's Lesson</button>'
+}
 
+</div>
 
-      <button
-        onclick="completeDailyLesson()"
-      >
-        ✅ Complete Daily Lesson
-      </button>
+`
 
-    </div>
+);
 
-    `
+}else{
 
-  );
+showLesson(
+"Day "+currentDay,
+`
+<div class="activity">
+<h3>📚 Future Curriculum Module</h3>
+<p>
+Days 31–60 will introduce the Phonics module.
+</p>
+<p>
+This section will be activated as the 365-day
+curriculum is developed.
+</p>
+</div>
+`
+);
+
+}
 
 }
 
@@ -1348,60 +1248,47 @@ function startDailyLesson(){
 
 function completeDailyLesson(){
 
-  const today =
-    new Date()
-      .toISOString()
-      .slice(0,10);
+const key=
+"pe_completed_day_"+currentDay;
 
+if(localStorage.getItem(key)==="yes"){
 
-  if(
-    localStorage.getItem(
-      "pe_completed_day_" +
-      currentDay
-    ) === "yes"
-  ){
+document.getElementById(
+"dailyResult"
+).innerHTML=
+"<span class='error'>This day's lesson has already been completed.</span>";
 
-    document.getElementById(
-      "dailyResult"
-    ).innerHTML =
+return;
 
-      "<span class='error'>This day's lesson has already been completed.</span>";
+}
 
-    return;
+localStorage.setItem(key,"yes");
 
-  }
+daysCompleted=Math.min(
+365,
+daysCompleted+1
+);
 
+score+=10;
 
-  localStorage.setItem(
-    "pe_completed_day_" +
-    currentDay,
-    "yes"
-  );
+const today=
+new Date()
+.toISOString()
+.slice(0,10);
 
+updateStreak(today);
 
-  daysCompleted =
-    Math.min(
-      365,
-      daysCompleted + 1
-    );
+updateProgress();
 
+updateModuleProgress();
 
-  score += 10;
+document.getElementById(
+"dailyResult"
+).innerHTML=
 
-
-  updateStreak(today);
-
-
-  updateProgress();
-
-
-  document.getElementById(
-    "dailyResult"
-  ).innerHTML =
-
-    "<span class='success'>✓ Day " +
-    currentDay +
-    " completed! +10 points.</span>";
+"<span class='success'>✓ Day "+
+currentDay+
+" completed! +10 points.</span>";
 
 }
 
@@ -1412,53 +1299,41 @@ function completeDailyLesson(){
 
 function updateStreak(today){
 
-  if(!lastLearningDate){
+if(!lastLearningDate){
 
-    streak = 1;
+streak=1;
 
-  }
+}else{
 
-  else{
+const previous=
+new Date(lastLearningDate);
 
-    const previous =
-      new Date(lastLearningDate);
+const current=
+new Date(today);
 
-    const current =
-      new Date(today);
+const difference=
+Math.round(
+(current-previous)/86400000
+);
 
+if(difference===1){
 
-    const difference =
-      Math.round(
-        (
-          current - previous
-        ) /
-        86400000
-      );
+streak++;
 
+}else if(difference>1){
 
-    if(difference === 1){
+streak=1;
 
-      streak++;
+}
 
-    }
+}
 
-    else if(difference > 1){
+lastLearningDate=today;
 
-      streak = 1;
-
-    }
-
-  }
-
-
-  lastLearningDate =
-    today;
-
-
-  localStorage.setItem(
-    "pe_lastLearningDate",
-    today
-  );
+localStorage.setItem(
+"pe_lastLearningDate",
+today
+);
 
 }
 
@@ -1467,705 +1342,516 @@ function updateStreak(today){
    LESSON DISPLAY
 ================================ */
 
-function showLesson(
-  title,
-  content
-){
+function showLesson(title,content){
 
-  const lesson =
-    document.getElementById(
-      "lesson"
-    );
+const lesson=
+document.getElementById("lesson");
 
+lesson.classList.remove("hidden");
 
-  lesson.classList.remove(
-    "hidden"
-  );
+document.getElementById("lessonTitle")
+.textContent=title;
 
+document.getElementById("lessonContent")
+.innerHTML=content;
 
-  document.getElementById(
-    "lessonTitle"
-  ).textContent =
-    title;
-
-
-  document.getElementById(
-    "lessonContent"
-  ).innerHTML =
-    content;
-
-
-  lesson.scrollIntoView({
-    behavior:"smooth"
-  });
+lesson.scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
 
 /* ================================
-   ACTIVITY COMPLETION
+   ALPHABET ASSESSMENT
 ================================ */
 
-function finishActivity(
-  points = 5,
-  skill = "General English"
-){
+function startAlphabetAssessment(){
 
-  score += points;
+showLesson(
 
-  completed++;
+"🎯 Day 30 Alphabet Assessment",
+
+`
+
+<div class="assessment">
+
+<div class="question">
+Which letter comes after A?
+</div>
+
+<button onclick="assessmentAnswer(false,this)">
+C
+</button>
+
+<button onclick="assessmentAnswer(true,this)">
+B
+</button>
+
+<button onclick="assessmentAnswer(false,this)">
+D
+</button>
+
+<div id="assessmentResult"
+class="activity">
+</div>
+
+</div>
+
+`
+
+);
+
+}
 
 
-  recordSkill(skill);
+function assessmentAnswer(correct,button){
 
+if(button.disabled)return;
 
-  updateProgress();
+if(correct){
+
+button.disabled=true;
+
+document.getElementById(
+"assessmentResult"
+).innerHTML=
+"<span class='success'>✓ Correct! Excellent alphabet knowledge.</span>";
+
+score+=20;
+
+completed++;
+
+recordSkill("Alphabet Assessment");
+
+updateProgress();
+
+}else{
+
+document.getElementById(
+"assessmentResult"
+).innerHTML=
+"<span class='error'>Try again. Think about the alphabet order.</span>";
+
+}
 
 }
 
 
 /* ================================
-   SKILLS
+   ACTIVITIES
 ================================ */
 
-function recordSkill(skill){
+function finishActivity(points=5,skill="General English"){
 
-  let skills =
-    JSON.parse(
-      localStorage.getItem(
-        "pe_skills"
-      ) || "[]"
-    );
+score+=points;
 
+completed++;
 
-  if(!skills.includes(skill)){
+recordSkill(skill);
 
-    skills.push(skill);
-
-  }
-
-
-  localStorage.setItem(
-    "pe_skills",
-    JSON.stringify(skills)
-  );
+updateProgress();
 
 }
 
-
-/* ================================
-   ALPHABET
-================================ */
 
 function startAlphabet(){
 
-  showLesson(
+const lesson=getDayLesson();
 
-    "🔤 Alphabet",
+showLesson(
 
-    `
+"🔤 Alphabet",
 
-    <div class="letter">
-      A a
-    </div>
+`
 
+<div class="letter">
+${lesson.letter}
+</div>
 
-    <p class="question">
-      A is for Apple.
-    </p>
+<p class="question">
+Practise recognising the letter.
+</p>
 
+<button onclick="speakText('${lesson.letter}')">
+🔊 Hear the Letter
+</button>
 
-    <button
-      onclick="speakText('A is for Apple')"
-    >
-      🔊 Hear it
-    </button>
+<button onclick="finishActivity(5,'Alphabet');this.disabled=true;">
+✅ I practised the letter
+</button>
 
+`
 
-    <button
-      onclick="finishActivity(5,'Alphabet');this.disabled=true;"
-    >
-      ✅ I practised A
-    </button>
-
-    `
-
-  );
+);
 
 }
 
-
-/* ================================
-   PHONICS
-================================ */
 
 function startPhonics(){
 
-  showLesson(
+showLesson(
+"🔊 Phonics",
+`
+<div class="letter">B b</div>
 
-    "🔊 Phonics",
+<p class="question">
+B says /b/ as in ball.
+</p>
 
-    `
+<button onclick="speakText('B says buh as in ball')">
+🔊 Hear the Sound
+</button>
 
-    <div class="letter">
-      B b
-    </div>
-
-
-    <p class="question">
-      B says /b/ as in
-      <strong>ball</strong>.
-    </p>
-
-
-    <button
-      onclick="speakText('B says buh as in ball')"
-    >
-      🔊 Hear the Sound
-    </button>
-
-
-    <button
-      onclick="finishActivity(5,'Phonics');this.disabled=true;"
-    >
-      ✅ I practised the sound
-    </button>
-
-    `
-
-  );
+<button onclick="finishActivity(5,'Phonics');this.disabled=true;">
+✅ I practised the sound
+</button>
+`
+);
 
 }
 
-
-/* ================================
-   WORDS
-================================ */
 
 function startWords(){
 
-  showLesson(
+showLesson(
+"📚 Words",
+`
+<div class="word">FISH</div>
 
-    "📚 Words",
+<p>
+Fish is a living thing that swims in water.
+</p>
 
-    `
+<button onclick="speakText('Fish')">
+🔊 Hear the Word
+</button>
 
-    <div class="word">
-      FISH
-    </div>
-
-
-    <p>
-      Fish is a living thing
-      that swims in water.
-    </p>
-
-
-    <button
-      onclick="speakText('Fish')"
-    >
-      🔊 Hear the Word
-    </button>
-
-
-    <button
-      onclick="finishActivity(5,'Vocabulary');this.disabled=true;"
-    >
-      ✅ I practised the word
-    </button>
-
-    `
-
-  );
+<button onclick="finishActivity(5,'Vocabulary');this.disabled=true;">
+✅ I practised the word
+</button>
+`
+);
 
 }
 
-
-/* ================================
-   MATCHING
-================================ */
 
 function startMatching(){
 
-  showLesson(
+showLesson(
+"🧩 Word Match",
+`
+<div class="question">
+Which word matches the picture?
+</div>
 
-    "🧩 Word Match",
+<p class="word">🐟</p>
 
-    `
+<div class="grid">
 
-    <div class="question">
-      Which word matches the picture?
-    </div>
+<button onclick="matchAnswer(true,this)">
+Fish
+</button>
 
+<button onclick="matchAnswer(false,this)">
+Bird
+</button>
 
-    <p class="word">
-      🐟
-    </p>
+<button onclick="matchAnswer(false,this)">
+Tree
+</button>
 
+</div>
 
-    <div class="grid">
-
-      <button
-        onclick="matchAnswer(true,this)"
-      >
-        Fish
-      </button>
-
-
-      <button
-        onclick="matchAnswer(false,this)"
-      >
-        Bird
-      </button>
-
-
-      <button
-        onclick="matchAnswer(false,this)"
-      >
-        Tree
-      </button>
-
-    </div>
-
-
-    <div
-      id="matchResult"
-      class="activity"
-    ></div>
-
-    `
-
-  );
+<div id="matchResult" class="activity"></div>
+`
+);
 
 }
 
 
-function matchAnswer(
-  correct,
-  button
-){
+function matchAnswer(correct,button){
 
-  if(button.disabled){
-    return;
-  }
+if(button.disabled)return;
 
+if(correct){
 
-  if(correct){
+button.disabled=true;
 
-    button.disabled =
-      true;
+document.getElementById(
+"matchResult"
+).innerHTML=
+"<span class='success'>✓ Correct! Fish.</span>";
 
+finishActivity(10,"Word Matching");
 
-    document.getElementById(
-      "matchResult"
-    ).innerHTML =
+}else{
 
-      "<span class='success'>✓ Correct! Fish.</span>";
-
-
-    finishActivity(
-      10,
-      "Word Matching"
-    );
-
-  }
-
-  else{
-
-    document.getElementById(
-      "matchResult"
-    ).innerHTML =
-
-      "<span class='error'>Try again. Look at the picture.</span>";
-
-  }
+document.getElementById(
+"matchResult"
+).innerHTML=
+"<span class='error'>Try again.</span>";
 
 }
 
+}
 
-/* ================================
-   READING
-================================ */
 
 function startReading(){
 
-  showLesson(
+showLesson(
+"📖 Reading",
+`
+<div class="activity">
 
-    "📖 Reading",
+<p class="question">
+Read this sentence:
+</p>
 
-    `
+<p class="word">
+The fish swims in the sea.
+</p>
 
-    <div class="activity">
+<button onclick="speakText('The fish swims in the sea')">
+🔊 Hear the Sentence
+</button>
 
-      <p class="question">
-        Read this sentence:
-      </p>
+<button onclick="finishActivity(10,'Reading');this.disabled=true;">
+✅ I read the sentence
+</button>
 
-
-      <p class="word">
-        The fish swims in the sea.
-      </p>
-
-
-      <button
-        onclick="speakText('The fish swims in the sea')"
-      >
-        🔊 Hear the Sentence
-      </button>
-
-
-      <button
-        onclick="finishActivity(10,'Reading');this.disabled=true;"
-      >
-        ✅ I read the sentence
-      </button>
-
-    </div>
-
-    `
-
-  );
+</div>
+`
+);
 
 }
 
 
-/* ================================
-   SPELLING
-================================ */
-
 function startSpelling(){
 
-  showLesson(
+showLesson(
+"✏️ Spelling",
+`
+<div class="question">
+Spell the word:
+</div>
 
-    "✏️ Spelling",
+<div class="word">
+FISH
+</div>
 
-    `
+<input id="spellingAnswer"
+type="text"
+placeholder="Type the word">
 
-    <div class="question">
-      Spell the word:
-    </div>
+<button onclick="checkSpelling()">
+✅ Check Spelling
+</button>
 
-
-    <div class="word">
-      FISH
-    </div>
-
-
-    <input
-      id="spellingAnswer"
-      type="text"
-      placeholder="Type the word"
-    >
-
-
-    <button
-      onclick="checkSpelling()"
-    >
-      ✅ Check Spelling
-    </button>
-
-
-    <div
-      id="spellingResult"
-    ></div>
-
-    `
-
-  );
+<div id="spellingResult"></div>
+`
+);
 
 }
 
 
 function checkSpelling(){
 
-  const answer =
-    document.getElementById(
-      "spellingAnswer"
-    ).value
-    .trim()
-    .toLowerCase();
+const answer=
+document.getElementById(
+"spellingAnswer"
+).value.trim().toLowerCase();
 
+const result=
+document.getElementById(
+"spellingResult"
+);
 
-  const result =
-    document.getElementById(
-      "spellingResult"
-    );
+if(answer==="fish"){
 
+result.innerHTML=
+"<p class='success'>✓ Correct spelling!</p>";
 
-  if(answer === "fish"){
+finishActivity(10,"Spelling");
 
-    result.innerHTML =
-      "<p class='success'>✓ Correct spelling!</p>";
+}else{
 
-
-    finishActivity(
-      10,
-      "Spelling"
-    );
-
-  }
-
-  else{
-
-    result.innerHTML =
-      "<p class='error'>Not yet. Try again.</p>";
-
-  }
+result.innerHTML=
+"<p class='error'>Not yet. Try again.</p>";
 
 }
 
+}
 
-/* ================================
-   QUIZ
-================================ */
 
 function startQuiz(){
 
-  showLesson(
+showLesson(
+"🎯 Class 1 Quiz",
+`
+<div class="question">
+Which sentence is correct?
+</div>
 
-    "🎯 Class 1 Quiz",
+<button onclick="quizAnswer(false,this)">
+The fish fly in the sky.
+</button>
 
-    `
+<button onclick="quizAnswer(true,this)">
+The fish swims in the sea.
+</button>
 
-    <div class="question">
-      Which sentence is correct?
-    </div>
+<button onclick="quizAnswer(false,this)">
+The fish runs on the road.
+</button>
 
-
-    <button
-      onclick="quizAnswer(false,this)"
-    >
-      The fish fly in the sky.
-    </button>
-
-
-    <button
-      onclick="quizAnswer(true,this)"
-    >
-      The fish swims in the sea.
-    </button>
-
-
-    <button
-      onclick="quizAnswer(false,this)"
-    >
-      The fish runs on the road.
-    </button>
-
-
-    <div
-      id="quizResult"
-      class="activity"
-    ></div>
-
-    `
-
-  );
+<div id="quizResult" class="activity"></div>
+`
+);
 
 }
 
 
-function quizAnswer(
-  correct,
-  button
-){
+function quizAnswer(correct,button){
 
-  if(button.disabled){
-    return;
-  }
+if(button.disabled)return;
 
+if(correct){
 
-  if(correct){
+button.disabled=true;
 
-    button.disabled =
-      true;
+document.getElementById(
+"quizResult"
+).innerHTML=
+"<span class='success'>✓ Excellent! Correct answer.</span>";
 
+finishActivity(10,"Quiz");
 
-    document.getElementById(
-      "quizResult"
-    ).innerHTML =
+}else{
 
-      "<span class='success'>✓ Excellent! Correct answer.</span>";
+document.getElementById(
+"quizResult"
+).innerHTML=
+"<span class='error'>Try again.</span>";
 
-
-    finishActivity(
-      10,
-      "Quiz"
-    );
-
-  }
-
-  else{
-
-    document.getElementById(
-      "quizResult"
-    ).innerHTML =
-
-      "<span class='error'>Try again and read the sentence carefully.</span>";
-
-  }
+}
 
 }
 
 
 /* ================================
-   5-MINUTE RECOVERY
+   RECOVERY
 ================================ */
 
 function startRecovery(){
 
-  recoverySeconds =
-    300;
+recoverySeconds=300;
 
+showLesson(
+"⏱️ 5-Minute Recovery",
+`
+<p>
+This activity gives the learner extra practice time.
+</p>
 
-  showLesson(
+<div id="recoveryTimer"
+class="timer">
+05:00
+</div>
 
-    "⏱️ 5-Minute Recovery",
+<button onclick="beginRecovery()">
+▶️ Start Recovery
+</button>
 
-    `
+<button onclick="stopRecovery()">
+⏹️ Stop
+</button>
 
-    <p>
-      This activity gives the learner
-      extra practice time.
-    </p>
-
-
-    <div
-      id="recoveryTimer"
-      class="timer"
-    >
-      05:00
-    </div>
-
-
-    <button
-      onclick="beginRecovery()"
-    >
-      ▶️ Start Recovery
-    </button>
-
-
-    <button
-      onclick="stopRecovery()"
-    >
-      ⏹️ Stop
-    </button>
-
-
-    <div
-      id="recoveryMessage"
-      class="activity"
-    >
-      Ready to begin.
-    </div>
-
-    `
-
-  );
+<div id="recoveryMessage"
+class="activity">
+Ready to begin.
+</div>
+`
+);
 
 }
 
 
 function beginRecovery(){
 
-  stopRecovery();
+stopRecovery();
 
+recoverySeconds=300;
 
-  recoverySeconds =
-    300;
+updateRecoveryDisplay();
 
+recoveryTimer=setInterval(
 
-  updateRecoveryDisplay();
+function(){
 
+recoverySeconds--;
 
-  recoveryTimer =
-    setInterval(
+updateRecoveryDisplay();
 
-      function(){
+if(recoverySeconds<=0){
 
-        recoverySeconds--;
+stopRecovery();
 
+document.getElementById(
+"recoveryMessage"
+).innerHTML=
+"<span class='success'>✓ Recovery session completed.</span>";
 
-        updateRecoveryDisplay();
+finishActivity(
+10,
+"Recovery Practice"
+);
 
+}
 
-        if(
-          recoverySeconds <= 0
-        ){
+},
 
-          stopRecovery();
+1000
 
-
-          document.getElementById(
-            "recoveryMessage"
-          ).innerHTML =
-
-            "<span class='success'>✓ Recovery session completed.</span>";
-
-
-          finishActivity(
-            10,
-            "Recovery Practice"
-          );
-
-        }
-
-      },
-
-      1000
-
-    );
+);
 
 }
 
 
 function stopRecovery(){
 
-  if(recoveryTimer){
+if(recoveryTimer){
 
-    clearInterval(
-      recoveryTimer
-    );
+clearInterval(recoveryTimer);
 
-    recoveryTimer = null;
+recoveryTimer=null;
 
-  }
+}
 
 }
 
 
 function updateRecoveryDisplay(){
 
-  const minutes =
-    Math.floor(
-      recoverySeconds / 60
-    )
-    .toString()
-    .padStart(2,"0");
+const minutes=
+Math.floor(recoverySeconds/60)
+.toString()
+.padStart(2,"0");
 
+const seconds=
+(recoverySeconds%60)
+.toString()
+.padStart(2,"0");
 
-  const seconds =
-    (
-      recoverySeconds % 60
-    )
-    .toString()
-    .padStart(2,"0");
+const display=
+document.getElementById("recoveryTimer");
 
+if(display){
 
-  const display =
-    document.getElementById(
-      "recoveryTimer"
-    );
+display.textContent=
+minutes+":"+seconds;
 
-
-  if(display){
-
-    display.textContent =
-      minutes +
-      ":" +
-      seconds;
-
-  }
+}
 
 }
 
@@ -2176,41 +1862,26 @@ function updateRecoveryDisplay(){
 
 function speakText(text){
 
-  if(
-    "speechSynthesis"
-    in window
-  ){
+if("speechSynthesis" in window){
 
-    const speech =
-      new SpeechSynthesisUtterance(
-        text
-      );
+const speech=
+new SpeechSynthesisUtterance(text);
 
+speech.lang="en-FJ";
 
-    speech.lang =
-      "en-FJ";
+speech.rate=.85;
 
+window.speechSynthesis.cancel();
 
-    speech.rate =
-      0.85;
+window.speechSynthesis.speak(speech);
 
+}else{
 
-    window.speechSynthesis.cancel();
+alert(
+"Speech is not supported on this device."
+);
 
-
-    window.speechSynthesis.speak(
-      speech
-    );
-
-  }
-
-  else{
-
-    alert(
-      "Speech is not supported on this device."
-    );
-
-  }
+}
 
 }
 
@@ -2221,21 +1892,44 @@ function speakText(text){
 
 function toggleLargeText(){
 
-  document.body.classList.toggle(
-    "large-text"
-  );
+document.body.classList.toggle(
+"large-text"
+);
+
+const enabled=
+document.body.classList.contains(
+"large-text"
+);
+
+localStorage.setItem(
+"pe_large_text",
+enabled?"yes":"no"
+);
+
+}
 
 
-  const enabled =
-    document.body.classList.contains(
-      "large-text"
-    );
+/* ================================
+   SKILLS
+================================ */
 
+function recordSkill(skill){
 
-  localStorage.setItem(
-    "pe_large_text",
-    enabled ? "yes" : "no"
-  );
+let skills=
+JSON.parse(
+localStorage.getItem("pe_skills")||"[]"
+);
+
+if(!skills.includes(skill)){
+
+skills.push(skill);
+
+}
+
+localStorage.setItem(
+"pe_skills",
+JSON.stringify(skills)
+);
 
 }
 
@@ -2246,252 +1940,228 @@ function toggleLargeText(){
 
 function updateMonitoring(){
 
-  const saved =
-    localStorage.getItem(
-      "pe_student_profile"
-    );
+const saved=
+localStorage.getItem(
+"pe_student_profile"
+);
 
+let studentName="Not saved";
 
-  let studentName =
-    "Not saved";
+if(saved){
 
+try{
 
-  if(saved){
+const profile=
+JSON.parse(saved);
 
-    try{
+studentName=
+profile.name||"Student";
 
-      const profile =
-        JSON.parse(saved);
+}catch(error){}
 
+}
 
-      studentName =
-        profile.name ||
-        "Student";
+document.getElementById(
+"monitorStudent"
+).textContent=
+studentName;
 
-    }
+document.getElementById(
+"monitorScore"
+).textContent=
+score;
 
-    catch(error){}
+document.getElementById(
+"monitorActivities"
+).textContent=
+completed;
 
-  }
+document.getElementById(
+"monitorDays"
+).textContent=
+daysCompleted;
 
+document.getElementById(
+"monitorStreak"
+).textContent=
+streak;
 
-  document.getElementById(
-    "monitorStudent"
-  ).textContent =
-    studentName;
-
-
-  document.getElementById(
-    "monitorScore"
-  ).textContent =
-    score;
-
-
-  document.getElementById(
-    "monitorActivities"
-  ).textContent =
-    completed;
-
-
-  document.getElementById(
-    "monitorDays"
-  ).textContent =
-    daysCompleted;
-
-
-  document.getElementById(
-    "monitorStreak"
-  ).textContent =
-    streak;
-
-
-  updateSkillBadges();
+updateSkillBadges();
 
 }
 
 
 function updateSkillBadges(){
 
-  const container =
-    document.getElementById(
-      "skillBadges"
-    );
+const container=
+document.getElementById(
+"skillBadges"
+);
 
+const skills=
+JSON.parse(
+localStorage.getItem(
+"pe_skills"
+)||"[]"
+);
 
-  const skills =
-    JSON.parse(
-      localStorage.getItem(
-        "pe_skills"
-      ) || "[]"
-    );
+if(skills.length===0){
 
+container.textContent=
+"No activities completed yet.";
 
-  if(
-    skills.length === 0
-  ){
+return;
 
-    container.textContent =
-      "No activities completed yet.";
+}
 
-    return;
-
-  }
-
-
-  container.innerHTML =
-    skills.map(
-      skill =>
-        "<span class='badge'>" +
-        skill +
-        "</span>"
-    ).join("");
+container.innerHTML=
+skills.map(
+skill =>
+"<span class='badge'>"+
+skill+
+"</span>"
+).join("");
 
 }
 
 
 /* ================================
-   PROGRESS SUMMARY
+   SUMMARY
 ================================ */
 
 function generateProgressSummary(){
 
-  const saved =
-    localStorage.getItem(
-      "pe_student_profile"
-    );
+const saved=
+localStorage.getItem(
+"pe_student_profile"
+);
 
+let profile={};
 
-  let profile = {};
+if(saved){
 
+try{
 
-  if(saved){
+profile=JSON.parse(saved);
 
-    try{
+}catch(error){}
 
-      profile =
-        JSON.parse(saved);
+}
 
-    }
+const summary=
+document.getElementById(
+"progressSummary"
+);
 
-    catch(error){}
+summary.classList.remove("hidden");
 
-  }
+summary.innerHTML=`
 
+<h3>📊 Pacific Education Progress Summary</h3>
 
-  const summary =
-    document.getElementById(
-      "progressSummary"
-    );
+<p>
+<strong>Student:</strong>
+${profile.name||"Not entered"}
+</p>
 
+<p>
+<strong>Student ID:</strong>
+${profile.id||"Not entered"}
+</p>
 
-  summary.classList.remove(
-    "hidden"
-  );
+<p>
+<strong>School:</strong>
+${profile.school||"Not entered"}
+</p>
 
+<p>
+<strong>Class:</strong>
+${profile.className||"Class 1"}
+</p>
 
-  summary.innerHTML = `
+<p>
+<strong>Current Day:</strong>
+${currentDay} / 365
+</p>
 
-    <h3>📊 Pacific Education Progress Summary</h3>
+<p>
+<strong>Score:</strong>
+${score}
+</p>
 
-    <p>
-      <strong>Student:</strong>
-      ${profile.name || "Not entered"}
-    </p>
+<p>
+<strong>Activities completed:</strong>
+${completed}
+</p>
 
-    <p>
-      <strong>Student ID:</strong>
-      ${profile.id || "Not entered"}
-    </p>
+<p>
+<strong>Daily lessons:</strong>
+${daysCompleted} / 365
+</p>
 
-    <p>
-      <strong>School:</strong>
-      ${profile.school || "Not entered"}
-    </p>
+<p>
+<strong>Learning streak:</strong>
+${streak} days
+</p>
 
-    <p>
-      <strong>Class:</strong>
-      ${profile.className || "Class 1"}
-    </p>
+<p>
+<strong>Report status:</strong>
+Local prototype report
+</p>
 
-    <p>
-      <strong>Score:</strong>
-      ${score}
-    </p>
+`;
 
-    <p>
-      <strong>Activities completed:</strong>
-      ${completed}
-    </p>
-
-    <p>
-      <strong>Daily lessons:</strong>
-      ${daysCompleted} / 365
-    </p>
-
-    <p>
-      <strong>Learning streak:</strong>
-      ${streak} days
-    </p>
-
-    <p>
-      <strong>Report status:</strong>
-      Local prototype report
-    </p>
-
-    <p class="small">
-      Future authorised online versions can
-      provide secure teacher and school reporting.
-    </p>
-
-  `;
-
-
-  summary.scrollIntoView({
-    behavior:"smooth"
-  });
+summary.scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
 
 /* ================================
-   LOAD SETTINGS
+   SETTINGS
 ================================ */
 
 function loadSettings(){
 
-  const largeText =
-    localStorage.getItem(
-      "pe_large_text"
-    );
+const largeText=
+localStorage.getItem(
+"pe_large_text"
+);
 
+if(largeText==="yes"){
 
-  if(
-    largeText === "yes"
-  ){
+document.body.classList.add(
+"large-text"
+);
 
-    document.body.classList.add(
-      "large-text"
-    );
-
-  }
+}
 
 }
 
 
 /* ================================
-   START APP
+   START
 ================================ */
 
 loadProfile();
 
 loadSettings();
 
+currentDay=
+Math.max(
+1,
+Math.min(
+365,
+currentDay
+)
+);
+
 updateDay();
 
 updateProgress();
 
 updateMonitoring();
-
 
 </script>
 
