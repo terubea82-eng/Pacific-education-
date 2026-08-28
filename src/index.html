@@ -3,16 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Pacific Education - Class 1 English</title>
 
 <style>
-*{box-sizing:border-box}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
   font-family:Arial,sans-serif;
   background:#f4f8f9;
   color:#17343d;
+  line-height:1.5;
+}
+
+body.large-text{
+  font-size:20px;
 }
 
 header{
@@ -33,7 +46,7 @@ header p{
 }
 
 main{
-  max-width:900px;
+  max-width:950px;
   margin:auto;
   padding:20px;
 }
@@ -46,7 +59,13 @@ main{
   box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-h2{margin-top:0}
+h2{
+  margin-top:0;
+}
+
+h3{
+  margin-bottom:8px;
+}
 
 .grid{
   display:grid;
@@ -66,11 +85,29 @@ button{
   margin-top:8px;
 }
 
-button:hover{opacity:.9}
+button:hover{
+  opacity:.9;
+}
 
-button.secondary{background:#0d4f5c}
+button:disabled{
+  opacity:.55;
+  cursor:not-allowed;
+}
 
-input,select{
+button.secondary{
+  background:#0d4f5c;
+}
+
+button.warning{
+  background:#8a6400;
+}
+
+button.danger{
+  background:#9b3030;
+}
+
+input,
+select{
   width:100%;
   padding:13px;
   margin:7px 0 12px;
@@ -137,7 +174,9 @@ input,select{
   color:#60747a;
 }
 
-.hidden{display:none}
+.hidden{
+  display:none;
+}
 
 .success{
   color:#08744d;
@@ -156,287 +195,1034 @@ input,select{
   margin:15px;
 }
 
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:20px;
+  background:#dcefee;
+  margin:4px;
+  font-size:14px;
+}
+
+.monitor-card{
+  background:#f7fafb;
+  border:1px solid #d8e4e6;
+  border-radius:12px;
+  padding:14px;
+  margin-top:10px;
+}
+
+.stat{
+  font-size:26px;
+  font-weight:bold;
+}
+
+.lesson-card{
+  border-left:5px solid #147d70;
+  padding:12px;
+  margin:10px 0;
+  background:#f7fafb;
+}
+
 footer{
   text-align:center;
   padding:25px;
   color:#60747a;
   font-size:14px;
 }
+
+.accessibility{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:10px;
+}
+
+.notice{
+  padding:14px;
+  background:#fff8df;
+  border-radius:12px;
+  border:1px solid #eadc9a;
+}
+
+@media(max-width:600px){
+
+  main{
+    padding:12px;
+  }
+
+  .section{
+    padding:16px;
+  }
+
+  header h1{
+    font-size:25px;
+  }
+
+  .letter{
+    font-size:52px;
+  }
+
+  .word{
+    font-size:24px;
+  }
+
+}
+
 </style>
 </head>
+
 
 <body>
 
 <header>
+
   <h1>Pacific Education</h1>
-  <p>Class 1 English • Learn • Practise • Grow</p>
+
+  <p>
+    Class 1 English • Learn • Practise • Grow
+  </p>
+
 </header>
+
 
 <main>
 
+
+<!-- ACCESSIBILITY -->
+
 <section class="section">
+
+  <h2>♿ Accessibility</h2>
+
+  <p>
+    Make learning easier for every child.
+  </p>
+
+  <div class="accessibility">
+
+    <button onclick="toggleLargeText()">
+      🔎 Larger Text
+    </button>
+
+    <button onclick="speakText('Welcome to Pacific Education Class 1 English')">
+      🔊 Hear Welcome
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- STUDENT PROFILE -->
+
+<section class="section">
+
   <h2>👤 Student Profile</h2>
 
   <label>Student Name</label>
-  <input id="studentName" type="text" placeholder="Enter student's name">
+
+  <input
+    id="studentName"
+    type="text"
+    placeholder="Enter student's name"
+  >
+
 
   <label>Student ID</label>
-  <input id="studentId" type="text" placeholder="Enter student ID">
+
+  <input
+    id="studentId"
+    type="text"
+    placeholder="Enter student ID"
+  >
+
 
   <label>Date of Birth</label>
-  <input id="studentDob" type="date">
+
+  <input
+    id="studentDob"
+    type="date"
+  >
+
 
   <label>School</label>
-  <input id="studentSchool" type="text" placeholder="Enter school name">
+
+  <input
+    id="studentSchool"
+    type="text"
+    placeholder="Enter school name"
+  >
+
 
   <label>Class</label>
+
   <select id="studentClass">
-    <option value="Class 1">Class 1</option>
+
+    <option value="Class 1">
+      Class 1
+    </option>
+
   </select>
 
-  <button onclick="saveProfile()">💾 Save Student Profile</button>
 
-  <div id="profileMessage" class="activity">
+  <button onclick="saveProfile()">
+    💾 Save Student Profile
+  </button>
+
+
+  <div
+    id="profileMessage"
+    class="activity"
+  >
     Student profile has not been saved yet.
   </div>
+
 </section>
 
+
+<!-- DAILY LEARNING -->
 
 <section class="section">
 
   <h2>📅 Daily Class 1 Learning</h2>
 
+
   <div class="day-number">
-    Day <span id="currentDay">1</span> / 365
+
+    Day
+    <span id="currentDay">
+      1
+    </span>
+    / 365
+
   </div>
 
+
   <div class="activity">
-    <strong id="dayTitle">Day 1 English</strong>
+
+    <strong id="dayTitle">
+      Day 1 English
+    </strong>
 
     <p id="dayGoal">
       Learn letters, sounds and simple English words.
     </p>
+
+    <div id="daySkill">
+      Skill: Alphabet
+    </div>
+
   </div>
+
 
   <div class="grid">
 
-    <button onclick="previousDay()">← Previous Day</button>
+    <button onclick="previousDay()">
+      ← Previous Day
+    </button>
 
-    <button onclick="todayDay()">📅 Today</button>
+    <button onclick="todayDay()">
+      📅 Today
+    </button>
 
-    <button onclick="nextDay()">Next Day →</button>
+    <button onclick="nextDay()">
+      Next Day →
+    </button>
 
   </div>
 
-  <button class="secondary" onclick="startDailyLesson()">
+
+  <button
+    class="secondary"
+    onclick="startDailyLesson()"
+  >
     ▶️ Start Today's Lesson
   </button>
 
-  <div id="dailyResult" class="activity"></div>
+
+  <div
+    id="dailyResult"
+    class="activity"
+  ></div>
 
 </section>
 
+
+<!-- ACTIVITIES -->
 
 <section class="section">
 
   <h2>📚 Choose an Activity</h2>
 
+
   <div class="grid">
 
-    <button onclick="startAlphabet()">🔤 Alphabet</button>
+    <button onclick="startAlphabet()">
+      🔤 Alphabet
+    </button>
 
-    <button onclick="startPhonics()">🔊 Phonics</button>
+    <button onclick="startPhonics()">
+      🔊 Phonics
+    </button>
 
-    <button onclick="startWords()">📚 Words</button>
+    <button onclick="startWords()">
+      📚 Words
+    </button>
 
-    <button onclick="startMatching()">🧩 Word Match</button>
+    <button onclick="startMatching()">
+      🧩 Word Match
+    </button>
 
-    <button onclick="startReading()">📖 Reading</button>
+    <button onclick="startReading()">
+      📖 Reading
+    </button>
 
-    <button onclick="startSpelling()">✏️ Spelling</button>
+    <button onclick="startSpelling()">
+      ✏️ Spelling
+    </button>
 
-    <button onclick="startQuiz()">🎯 Quiz</button>
+    <button onclick="startQuiz()">
+      🎯 Quiz
+    </button>
 
-    <button onclick="startRecovery()">⏱️ 5-Minute Recovery</button>
+    <button onclick="startRecovery()">
+      ⏱️ 5-Minute Recovery
+    </button>
 
   </div>
 
 </section>
 
+
+<!-- PROGRESS -->
 
 <section class="section">
 
   <h2>📊 Your Progress</h2>
 
+
   <p class="score">
-    Score: <span id="score">0</span>
+
+    Score:
+    <span id="score">
+      0
+    </span>
+
   </p>
 
+
   <p>
+
     Activities completed:
-    <span id="completed">0</span>
+    <span id="completed">
+      0
+    </span>
+
   </p>
 
+
   <p>
+
     Daily lessons completed:
-    <span id="daysCompleted">0</span> / 365
+    <span id="daysCompleted">
+      0
+    </span>
+    / 365
+
   </p>
+
+
+  <p>
+
+    Current learning streak:
+    <span id="streak">
+      0
+    </span>
+    days
+
+  </p>
+
 
   <div class="progress">
-    <div id="progressBar" class="progress-bar"></div>
+
+    <div
+      id="progressBar"
+      class="progress-bar"
+    ></div>
+
   </div>
 
+
   <p class="small">
+
     Prototype progress is saved on this device.
+
   </p>
 
 </section>
 
 
-<section id="lesson" class="section hidden">
+<!-- LESSON -->
 
-  <h2 id="lessonTitle">Activity</h2>
+<section
+  id="lesson"
+  class="section hidden"
+>
+
+  <h2 id="lessonTitle">
+    Activity
+  </h2>
 
   <div id="lessonContent"></div>
 
 </section>
 
 
+<!-- TEACHER / PARENT MONITORING -->
+
 <section class="section">
 
-  <h2>🌴 Pacific Learning Example</h2>
+  <h2>👩‍🏫 Teacher / Parent Monitoring</h2>
 
-  <p>
-    <strong>Fish</strong> is a simple English word.
-  </p>
 
-  <p>
-    Sentence:
-    <strong>The fish swims in the sea.</strong>
-  </p>
+  <div class="notice">
 
-  <button onclick="speakText('The fish swims in the sea.')">
-    🔊 Hear the Sentence
+    This prototype provides local learning information.
+    Future online versions can provide authorised teacher
+    dashboards and secure school reporting.
+
+  </div>
+
+
+  <div class="monitor-card">
+
+    <h3>Student</h3>
+
+    <div
+      id="monitorStudent"
+      class="stat"
+    >
+      Not saved
+    </div>
+
+  </div>
+
+
+  <div class="monitor-card">
+
+    <h3>Learning Progress</h3>
+
+    <p>
+      Score:
+      <strong id="monitorScore">
+        0
+      </strong>
+    </p>
+
+    <p>
+      Activities:
+      <strong id="monitorActivities">
+        0
+      </strong>
+    </p>
+
+    <p>
+      Days completed:
+      <strong id="monitorDays">
+        0
+      </strong>
+      / 365
+    </p>
+
+    <p>
+      Streak:
+      <strong id="monitorStreak">
+        0
+      </strong>
+      days
+    </p>
+
+  </div>
+
+
+  <div class="monitor-card">
+
+    <h3>Skills Practised</h3>
+
+    <div id="skillBadges">
+      No activities completed yet.
+    </div>
+
+  </div>
+
+
+  <button
+    class="secondary"
+    onclick="generateProgressSummary()"
+  >
+    📄 View Progress Summary
   </button>
+
+
+  <div
+    id="progressSummary"
+    class="activity hidden"
+  ></div>
 
 </section>
 
+
+<!-- PACIFIC LEARNING -->
+
+<section class="section">
+
+  <h2>🌴 Pacific Learning</h2>
+
+
+  <p>
+
+    Pacific Education uses familiar examples
+    to help children connect English learning
+    with their everyday environment.
+
+  </p>
+
+
+  <div class="lesson-card">
+
+    <strong>🐟 Fish</strong>
+
+    <p>
+      The fish swims in the sea.
+    </p>
+
+    <button
+      onclick="speakText('The fish swims in the sea.')"
+    >
+      🔊 Hear the Sentence
+    </button>
+
+  </div>
+
+
+  <div class="lesson-card">
+
+    <strong>🌴 Coconut</strong>
+
+    <p>
+      The coconut grows on a palm tree.
+    </p>
+
+    <button
+      onclick="speakText('The coconut grows on a palm tree.')"
+    >
+      🔊 Hear the Sentence
+    </button>
+
+  </div>
+
+
+  <div class="lesson-card">
+
+    <strong>☀️ Sun</strong>
+
+    <p>
+      The sun is bright.
+    </p>
+
+    <button
+      onclick="speakText('The sun is bright.')"
+    >
+      🔊 Hear the Sentence
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- FUTURE PLATFORM -->
+
+<section class="section">
+
+  <h2>🌐 Pacific Education Platform</h2>
+
+
+  <p>
+    This Class 1 prototype is designed as the
+    foundation for the wider Pacific Education
+    platform.
+  </p>
+
+
+  <div>
+
+    <span class="badge">
+      Class 1
+    </span>
+
+    <span class="badge">
+      English
+    </span>
+
+    <span class="badge">
+      Daily Learning
+    </span>
+
+    <span class="badge">
+      Assessment
+    </span>
+
+    <span class="badge">
+      Teacher Support
+    </span>
+
+    <span class="badge">
+      Parent Support
+    </span>
+
+    <span class="badge">
+      Accessibility
+    </span>
+
+  </div>
+
+
+  <p class="small">
+
+    Future versions can expand to additional
+    classes, secure online accounts, authorised
+    education-system integrations and wider
+    Pacific deployment.
+
+  </p>
+
+</section>
+
+
 </main>
 
+
 <footer>
-  Pacific Education • Class 1 English Prototype
+
+  Pacific Education • Class 1 English V1.1 Prototype
+
+  <br><br>
+
+  Learn • Practise • Grow
+
 </footer>
 
 
 <script>
 
-let currentDay=1;
 
-let score=Number(localStorage.getItem("pe_score")||0);
-let completed=Number(localStorage.getItem("pe_completed")||0);
-let daysCompleted=Number(localStorage.getItem("pe_daysCompleted")||0);
+/* ================================
+   BASIC STORAGE
+================================ */
 
-let recoveryTimer=null;
-let recoverySeconds=300;
+let currentDay =
+  Number(
+    localStorage.getItem("pe_currentDay") || 1
+  );
 
 
-const dailyGoals=[
-  "Learn letters, sounds and simple English words.",
-  "Practise recognising uppercase letters.",
-  "Practise recognising lowercase letters.",
-  "Practise beginning sounds.",
-  "Learn simple three-letter words.",
-  "Read simple words aloud.",
-  "Practise a short English sentence."
+let score =
+  Number(
+    localStorage.getItem("pe_score") || 0
+  );
+
+
+let completed =
+  Number(
+    localStorage.getItem("pe_completed") || 0
+  );
+
+
+let daysCompleted =
+  Number(
+    localStorage.getItem("pe_daysCompleted") || 0
+  );
+
+
+let streak =
+  Number(
+    localStorage.getItem("pe_streak") || 0
+  );
+
+
+let lastLearningDate =
+  localStorage.getItem("pe_lastLearningDate") || "";
+
+
+let recoveryTimer = null;
+
+let recoverySeconds = 300;
+
+
+/* ================================
+   365-DAY CURRICULUM
+================================ */
+
+const curriculum = [
+
+  {
+    skill:"Alphabet",
+    goal:"Learn the letter A.",
+    word:"Apple",
+    sentence:"A is for apple."
+  },
+
+  {
+    skill:"Alphabet",
+    goal:"Learn the letter B.",
+    word:"Ball",
+    sentence:"B is for ball."
+  },
+
+  {
+    skill:"Alphabet",
+    goal:"Learn the letter C.",
+    word:"Cat",
+    sentence:"C is for cat."
+  },
+
+  {
+    skill:"Alphabet",
+    goal:"Learn the letter D.",
+    word:"Dog",
+    sentence:"D is for dog."
+  },
+
+  {
+    skill:"Alphabet",
+    goal:"Learn the letter E.",
+    word:"Egg",
+    sentence:"E is for egg."
+  },
+
+  {
+    skill:"Alphabet",
+    goal:"Learn the letter F.",
+    word:"Fish",
+    sentence:"F is for fish."
+  },
+
+  {
+    skill:"Phonics",
+    goal:"Practise beginning sounds.",
+    word:"Fish",
+    sentence:"F says /f/ in fish."
+  },
+
+  {
+    skill:"Words",
+    goal:"Learn simple everyday words.",
+    word:"Sun",
+    sentence:"The sun is bright."
+  },
+
+  {
+    skill:"Reading",
+    goal:"Read a short sentence.",
+    word:"Fish",
+    sentence:"The fish swims in the sea."
+  },
+
+  {
+    skill:"Spelling",
+    goal:"Practise spelling a simple word.",
+    word:"Fish",
+    sentence:"Spell the word fish."
+  },
+
+  {
+    skill:"Pacific English",
+    goal:"Learn English using a familiar Pacific example.",
+    word:"Coconut",
+    sentence:"The coconut grows on a palm tree."
+  },
+
+  {
+    skill:"Reading",
+    goal:"Read a simple sentence.",
+    word:"Sun",
+    sentence:"The sun is bright."
+  },
+
+  {
+    skill:"Vocabulary",
+    goal:"Learn a word for an animal.",
+    word:"Bird",
+    sentence:"The bird can fly."
+  },
+
+  {
+    skill:"Vocabulary",
+    goal:"Learn a word for nature.",
+    word:"Tree",
+    sentence:"The tree is tall."
+  }
+
 ];
 
 
+/* ================================
+   PROGRESS
+================================ */
+
 function updateProgress(){
 
-  document.getElementById("score").textContent=score;
+  document.getElementById("score").textContent =
+    score;
 
-  document.getElementById("completed").textContent=completed;
 
-  document.getElementById("daysCompleted").textContent=daysCompleted;
+  document.getElementById("completed").textContent =
+    completed;
 
-  const percent=Math.min(
-    100,
-    Math.round((daysCompleted/365)*100)
+
+  document.getElementById("daysCompleted").textContent =
+    daysCompleted;
+
+
+  document.getElementById("streak").textContent =
+    streak;
+
+
+  const percent =
+    Math.min(
+      100,
+      Math.round(
+        (daysCompleted / 365) * 100
+      )
+    );
+
+
+  document.getElementById("progressBar")
+    .style.width =
+      percent + "%";
+
+
+  localStorage.setItem(
+    "pe_score",
+    score
   );
 
-  document.getElementById("progressBar").style.width=percent+"%";
 
-  localStorage.setItem("pe_score",score);
-  localStorage.setItem("pe_completed",completed);
-  localStorage.setItem("pe_daysCompleted",daysCompleted);
+  localStorage.setItem(
+    "pe_completed",
+    completed
+  );
+
+
+  localStorage.setItem(
+    "pe_daysCompleted",
+    daysCompleted
+  );
+
+
+  localStorage.setItem(
+    "pe_streak",
+    streak
+  );
+
+
+  localStorage.setItem(
+    "pe_currentDay",
+    currentDay
+  );
+
+
+  updateMonitoring();
+
 }
 
 
+/* ================================
+   PROFILE
+================================ */
+
 function saveProfile(){
 
-  const profile={
-    name:document.getElementById("studentName").value.trim(),
-    id:document.getElementById("studentId").value.trim(),
-    dob:document.getElementById("studentDob").value,
-    school:document.getElementById("studentSchool").value.trim(),
-    className:document.getElementById("studentClass").value
+  const profile = {
+
+    name:
+      document.getElementById(
+        "studentName"
+      ).value.trim(),
+
+    id:
+      document.getElementById(
+        "studentId"
+      ).value.trim(),
+
+    dob:
+      document.getElementById(
+        "studentDob"
+      ).value,
+
+    school:
+      document.getElementById(
+        "studentSchool"
+      ).value.trim(),
+
+    className:
+      document.getElementById(
+        "studentClass"
+      ).value
+
   };
+
 
   localStorage.setItem(
     "pe_student_profile",
     JSON.stringify(profile)
   );
 
-  document.getElementById("profileMessage").innerHTML=
+
+  document.getElementById(
+    "profileMessage"
+  ).innerHTML =
+
     "<span class='success'>✓ Student profile saved on this device.</span>";
+
+
+  updateMonitoring();
+
 }
 
 
 function loadProfile(){
 
-  const saved=localStorage.getItem("pe_student_profile");
+  const saved =
+    localStorage.getItem(
+      "pe_student_profile"
+    );
 
-  if(!saved)return;
+
+  if(!saved){
+    return;
+  }
+
 
   try{
 
-    const profile=JSON.parse(saved);
+    const profile =
+      JSON.parse(saved);
 
-    document.getElementById("studentName").value=profile.name||"";
-    document.getElementById("studentId").value=profile.id||"";
-    document.getElementById("studentDob").value=profile.dob||"";
-    document.getElementById("studentSchool").value=profile.school||"";
-    document.getElementById("studentClass").value=profile.className||"Class 1";
 
-    document.getElementById("profileMessage").innerHTML=
+    document.getElementById(
+      "studentName"
+    ).value =
+      profile.name || "";
+
+
+    document.getElementById(
+      "studentId"
+    ).value =
+      profile.id || "";
+
+
+    document.getElementById(
+      "studentDob"
+    ).value =
+      profile.dob || "";
+
+
+    document.getElementById(
+      "studentSchool"
+    ).value =
+      profile.school || "";
+
+
+    document.getElementById(
+      "studentClass"
+    ).value =
+      profile.className || "Class 1";
+
+
+    document.getElementById(
+      "profileMessage"
+    ).innerHTML =
+
       "<span class='success'>✓ Saved student profile loaded.</span>";
 
-  }catch(error){
+  }
 
-    console.log("Profile could not be loaded.");
+  catch(error){
+
+    console.log(
+      "Profile could not be loaded."
+    );
 
   }
+
+}
+
+
+/* ================================
+   DAY SYSTEM
+================================ */
+
+function getCurriculumDay(){
+
+  return curriculum[
+    (currentDay - 1) %
+    curriculum.length
+  ];
+
 }
 
 
 function updateDay(){
 
-  document.getElementById("currentDay").textContent=currentDay;
+  const lesson =
+    getCurriculumDay();
 
-  document.getElementById("dayTitle").textContent=
-    "Day "+currentDay+" English";
 
-  const goal=dailyGoals[(currentDay-1)%dailyGoals.length];
+  document.getElementById(
+    "currentDay"
+  ).textContent =
+    currentDay;
 
-  document.getElementById("dayGoal").textContent=goal;
+
+  document.getElementById(
+    "dayTitle"
+  ).textContent =
+    "Day " +
+    currentDay +
+    " English";
+
+
+  document.getElementById(
+    "dayGoal"
+  ).textContent =
+    lesson.goal;
+
+
+  document.getElementById(
+    "daySkill"
+  ).textContent =
+    "Skill: " +
+    lesson.skill;
+
+
+  localStorage.setItem(
+    "pe_currentDay",
+    currentDay
+  );
+
 }
 
 
 function previousDay(){
 
-  if(currentDay>1){
+  if(currentDay > 1){
+
     currentDay--;
+
     updateDay();
+
   }
 
 }
@@ -444,9 +1230,12 @@ function previousDay(){
 
 function nextDay(){
 
-  if(currentDay<365){
+  if(currentDay < 365){
+
     currentDay++;
+
     updateDay();
+
   }
 
 }
@@ -454,79 +1243,257 @@ function nextDay(){
 
 function todayDay(){
 
-  const start=new Date(
-    new Date().getFullYear(),
-    0,
-    1
-  );
+  const now =
+    new Date();
 
-  const now=new Date();
 
-  const difference=
-    Math.floor((now-start)/86400000)+1;
+  const start =
+    new Date(
+      now.getFullYear(),
+      0,
+      1
+    );
 
-  currentDay=Math.max(
-    1,
-    Math.min(365,difference)
-  );
+
+  const difference =
+    Math.floor(
+      (now - start) /
+      86400000
+    ) + 1;
+
+
+  currentDay =
+    Math.max(
+      1,
+      Math.min(
+        365,
+        difference
+      )
+    );
+
 
   updateDay();
+
 }
 
+
+/* ================================
+   DAILY LESSON
+================================ */
 
 function startDailyLesson(){
 
+  const lesson =
+    getCurriculumDay();
+
+
   showLesson(
-    "Day "+currentDay+" English Lesson",
+
+    "Day " +
+    currentDay +
+    " English Lesson",
+
     `
+
     <div class="activity">
+
       <div class="question">
-        Today's goal
+        Today's Skill
       </div>
 
-      <p>${dailyGoals[(currentDay-1)%dailyGoals.length]}</p>
+      <p>
+        <strong>
+          ${lesson.skill}
+        </strong>
+      </p>
 
-      <button onclick="completeDailyLesson()">
+      <p>
+        ${lesson.goal}
+      </p>
+
+      <div class="word">
+        ${lesson.word}
+      </div>
+
+      <p>
+        ${lesson.sentence}
+      </p>
+
+
+      <button
+        onclick="speakText('${lesson.sentence}')"
+      >
+        🔊 Hear the Lesson
+      </button>
+
+
+      <button
+        onclick="completeDailyLesson()"
+      >
         ✅ Complete Daily Lesson
       </button>
 
-      <button onclick="speakText('${dailyGoals[(currentDay-1)%dailyGoals.length]}')">
-        🔊 Hear the Goal
-      </button>
     </div>
+
     `
+
   );
 
 }
 
 
+/* ================================
+   DAILY COMPLETION
+================================ */
+
 function completeDailyLesson(){
 
-  daysCompleted++;
+  const today =
+    new Date()
+      .toISOString()
+      .slice(0,10);
 
-  if(daysCompleted>365){
-    daysCompleted=365;
+
+  if(
+    localStorage.getItem(
+      "pe_completed_day_" +
+      currentDay
+    ) === "yes"
+  ){
+
+    document.getElementById(
+      "dailyResult"
+    ).innerHTML =
+
+      "<span class='error'>This day's lesson has already been completed.</span>";
+
+    return;
+
   }
 
-  score+=10;
+
+  localStorage.setItem(
+    "pe_completed_day_" +
+    currentDay,
+    "yes"
+  );
+
+
+  daysCompleted =
+    Math.min(
+      365,
+      daysCompleted + 1
+    );
+
+
+  score += 10;
+
+
+  updateStreak(today);
+
 
   updateProgress();
 
-  document.getElementById("dailyResult").innerHTML=
-    "<span class='success'>✓ Day "+currentDay+" completed! +10 points.</span>";
+
+  document.getElementById(
+    "dailyResult"
+  ).innerHTML =
+
+    "<span class='success'>✓ Day " +
+    currentDay +
+    " completed! +10 points.</span>";
 
 }
 
 
-function showLesson(title,content){
+/* ================================
+   STREAK
+================================ */
 
-  const lesson=document.getElementById("lesson");
+function updateStreak(today){
 
-  lesson.classList.remove("hidden");
+  if(!lastLearningDate){
 
-  document.getElementById("lessonTitle").textContent=title;
+    streak = 1;
 
-  document.getElementById("lessonContent").innerHTML=content;
+  }
+
+  else{
+
+    const previous =
+      new Date(lastLearningDate);
+
+    const current =
+      new Date(today);
+
+
+    const difference =
+      Math.round(
+        (
+          current - previous
+        ) /
+        86400000
+      );
+
+
+    if(difference === 1){
+
+      streak++;
+
+    }
+
+    else if(difference > 1){
+
+      streak = 1;
+
+    }
+
+  }
+
+
+  lastLearningDate =
+    today;
+
+
+  localStorage.setItem(
+    "pe_lastLearningDate",
+    today
+  );
+
+}
+
+
+/* ================================
+   LESSON DISPLAY
+================================ */
+
+function showLesson(
+  title,
+  content
+){
+
+  const lesson =
+    document.getElementById(
+      "lesson"
+    );
+
+
+  lesson.classList.remove(
+    "hidden"
+  );
+
+
+  document.getElementById(
+    "lessonTitle"
+  ).textContent =
+    title;
+
+
+  document.getElementById(
+    "lessonContent"
+  ).innerHTML =
+    content;
+
 
   lesson.scrollIntoView({
     behavior:"smooth"
@@ -535,141 +1502,280 @@ function showLesson(title,content){
 }
 
 
-function finishActivity(points=5){
+/* ================================
+   ACTIVITY COMPLETION
+================================ */
 
-  score+=points;
+function finishActivity(
+  points = 5,
+  skill = "General English"
+){
+
+  score += points;
 
   completed++;
+
+
+  recordSkill(skill);
+
 
   updateProgress();
 
 }
 
 
+/* ================================
+   SKILLS
+================================ */
+
+function recordSkill(skill){
+
+  let skills =
+    JSON.parse(
+      localStorage.getItem(
+        "pe_skills"
+      ) || "[]"
+    );
+
+
+  if(!skills.includes(skill)){
+
+    skills.push(skill);
+
+  }
+
+
+  localStorage.setItem(
+    "pe_skills",
+    JSON.stringify(skills)
+  );
+
+}
+
+
+/* ================================
+   ALPHABET
+================================ */
+
 function startAlphabet(){
 
   showLesson(
+
     "🔤 Alphabet",
+
     `
-    <div class="letter">A a</div>
+
+    <div class="letter">
+      A a
+    </div>
+
 
     <p class="question">
       A is for Apple.
     </p>
 
-    <button onclick="speakText('A is for Apple')">
+
+    <button
+      onclick="speakText('A is for Apple')"
+    >
       🔊 Hear it
     </button>
 
-    <button onclick="finishActivity(5);this.disabled=true;">
+
+    <button
+      onclick="finishActivity(5,'Alphabet');this.disabled=true;"
+    >
       ✅ I practised A
     </button>
+
     `
+
   );
 
 }
 
+
+/* ================================
+   PHONICS
+================================ */
 
 function startPhonics(){
 
   showLesson(
+
     "🔊 Phonics",
+
     `
-    <div class="letter">B b</div>
+
+    <div class="letter">
+      B b
+    </div>
+
 
     <p class="question">
-      B says /b/ as in <strong>ball</strong>.
+      B says /b/ as in
+      <strong>ball</strong>.
     </p>
 
-    <button onclick="speakText('B says buh as in ball')">
-      🔊 Hear the sound
+
+    <button
+      onclick="speakText('B says buh as in ball')"
+    >
+      🔊 Hear the Sound
     </button>
 
-    <button onclick="finishActivity(5);this.disabled=true;">
+
+    <button
+      onclick="finishActivity(5,'Phonics');this.disabled=true;"
+    >
       ✅ I practised the sound
     </button>
+
     `
+
   );
 
 }
 
+
+/* ================================
+   WORDS
+================================ */
 
 function startWords(){
 
   showLesson(
+
     "📚 Words",
+
     `
-    <div class="word">FISH</div>
+
+    <div class="word">
+      FISH
+    </div>
+
 
     <p>
-      Fish is a living thing that swims in water.
+      Fish is a living thing
+      that swims in water.
     </p>
 
-    <button onclick="speakText('Fish')">
-      🔊 Hear the word
+
+    <button
+      onclick="speakText('Fish')"
+    >
+      🔊 Hear the Word
     </button>
 
-    <button onclick="finishActivity(5);this.disabled=true;">
+
+    <button
+      onclick="finishActivity(5,'Vocabulary');this.disabled=true;"
+    >
       ✅ I practised the word
     </button>
+
     `
+
   );
 
 }
 
 
+/* ================================
+   MATCHING
+================================ */
+
 function startMatching(){
 
   showLesson(
+
     "🧩 Word Match",
+
     `
+
     <div class="question">
-      Which word matches the picture idea?
+      Which word matches the picture?
     </div>
 
-    <p class="word">🐟</p>
+
+    <p class="word">
+      🐟
+    </p>
+
 
     <div class="grid">
 
-      <button onclick="matchAnswer(true,this)">
+      <button
+        onclick="matchAnswer(true,this)"
+      >
         Fish
       </button>
 
-      <button onclick="matchAnswer(false,this)">
+
+      <button
+        onclick="matchAnswer(false,this)"
+      >
         Bird
       </button>
 
-      <button onclick="matchAnswer(false,this)">
+
+      <button
+        onclick="matchAnswer(false,this)"
+      >
         Tree
       </button>
 
     </div>
 
-    <div id="matchResult" class="activity"></div>
+
+    <div
+      id="matchResult"
+      class="activity"
+    ></div>
+
     `
+
   );
 
 }
 
 
-function matchAnswer(correct,button){
+function matchAnswer(
+  correct,
+  button
+){
 
-  if(button.disabled)return;
+  if(button.disabled){
+    return;
+  }
 
-  button.disabled=true;
-
-  const result=document.getElementById("matchResult");
 
   if(correct){
 
-    result.innerHTML=
+    button.disabled =
+      true;
+
+
+    document.getElementById(
+      "matchResult"
+    ).innerHTML =
+
       "<span class='success'>✓ Correct! Fish.</span>";
 
-    finishActivity(10);
 
-  }else{
+    finishActivity(
+      10,
+      "Word Matching"
+    );
 
-    result.innerHTML=
+  }
+
+  else{
+
+    document.getElementById(
+      "matchResult"
+    ).innerHTML =
+
       "<span class='error'>Try again. Look at the picture.</span>";
 
   }
@@ -677,57 +1783,94 @@ function matchAnswer(correct,button){
 }
 
 
+/* ================================
+   READING
+================================ */
+
 function startReading(){
 
   showLesson(
+
     "📖 Reading",
+
     `
+
     <div class="activity">
 
       <p class="question">
         Read this sentence:
       </p>
 
+
       <p class="word">
         The fish swims in the sea.
       </p>
 
-      <button onclick="speakText('The fish swims in the sea')">
-        🔊 Hear the sentence
+
+      <button
+        onclick="speakText('The fish swims in the sea')"
+      >
+        🔊 Hear the Sentence
       </button>
 
-      <button onclick="finishActivity(10);this.disabled=true;">
+
+      <button
+        onclick="finishActivity(10,'Reading');this.disabled=true;"
+      >
         ✅ I read the sentence
       </button>
 
     </div>
+
     `
+
   );
 
 }
 
 
+/* ================================
+   SPELLING
+================================ */
+
 function startSpelling(){
 
   showLesson(
+
     "✏️ Spelling",
+
     `
+
     <div class="question">
       Spell the word:
     </div>
 
-    <div class="word">FISH</div>
 
-    <input id="spellingAnswer"
-           type="text"
-           placeholder="Type the word">
+    <div class="word">
+      FISH
+    </div>
 
-    <button onclick="checkSpelling()">
+
+    <input
+      id="spellingAnswer"
+      type="text"
+      placeholder="Type the word"
+    >
+
+
+    <button
+      onclick="checkSpelling()"
+    >
       ✅ Check Spelling
     </button>
 
-    <div id="spellingResult"></div>
+
+    <div
+      id="spellingResult"
+    ></div>
+
     `
+
   );
 
 }
@@ -735,24 +1878,36 @@ function startSpelling(){
 
 function checkSpelling(){
 
-  const answer=
-    document.getElementById("spellingAnswer").value
+  const answer =
+    document.getElementById(
+      "spellingAnswer"
+    ).value
     .trim()
     .toLowerCase();
 
-  const result=
-    document.getElementById("spellingResult");
 
-  if(answer==="fish"){
+  const result =
+    document.getElementById(
+      "spellingResult"
+    );
 
-    result.innerHTML=
+
+  if(answer === "fish"){
+
+    result.innerHTML =
       "<p class='success'>✓ Correct spelling!</p>";
 
-    finishActivity(10);
 
-  }else{
+    finishActivity(
+      10,
+      "Spelling"
+    );
 
-    result.innerHTML=
+  }
+
+  else{
+
+    result.innerHTML =
       "<p class='error'>Not yet. Try again.</p>";
 
   }
@@ -760,52 +1915,92 @@ function checkSpelling(){
 }
 
 
+/* ================================
+   QUIZ
+================================ */
+
 function startQuiz(){
 
   showLesson(
+
     "🎯 Class 1 Quiz",
+
     `
+
     <div class="question">
       Which sentence is correct?
     </div>
 
-    <button onclick="quizAnswer(false,this)">
+
+    <button
+      onclick="quizAnswer(false,this)"
+    >
       The fish fly in the sky.
     </button>
 
-    <button onclick="quizAnswer(true,this)">
+
+    <button
+      onclick="quizAnswer(true,this)"
+    >
       The fish swims in the sea.
     </button>
 
-    <button onclick="quizAnswer(false,this)">
+
+    <button
+      onclick="quizAnswer(false,this)"
+    >
       The fish runs on the road.
     </button>
 
-    <div id="quizResult" class="activity"></div>
+
+    <div
+      id="quizResult"
+      class="activity"
+    ></div>
+
     `
+
   );
 
 }
 
 
-function quizAnswer(correct,button){
+function quizAnswer(
+  correct,
+  button
+){
 
-  if(button.disabled)return;
+  if(button.disabled){
+    return;
+  }
 
-  button.disabled=true;
-
-  const result=document.getElementById("quizResult");
 
   if(correct){
 
-    result.innerHTML=
+    button.disabled =
+      true;
+
+
+    document.getElementById(
+      "quizResult"
+    ).innerHTML =
+
       "<span class='success'>✓ Excellent! Correct answer.</span>";
 
-    finishActivity(10);
 
-  }else{
+    finishActivity(
+      10,
+      "Quiz"
+    );
 
-    result.innerHTML=
+  }
+
+  else{
+
+    document.getElementById(
+      "quizResult"
+    ).innerHTML =
+
       "<span class='error'>Try again and read the sentence carefully.</span>";
 
   }
@@ -813,33 +2008,59 @@ function quizAnswer(correct,button){
 }
 
 
+/* ================================
+   5-MINUTE RECOVERY
+================================ */
+
 function startRecovery(){
 
-  recoverySeconds=300;
+  recoverySeconds =
+    300;
+
 
   showLesson(
+
     "⏱️ 5-Minute Recovery",
+
     `
+
     <p>
-      This activity gives the learner extra practice time.
+      This activity gives the learner
+      extra practice time.
     </p>
 
-    <div id="recoveryTimer" class="timer">
+
+    <div
+      id="recoveryTimer"
+      class="timer"
+    >
       05:00
     </div>
 
-    <button onclick="beginRecovery()">
+
+    <button
+      onclick="beginRecovery()"
+    >
       ▶️ Start Recovery
     </button>
 
-    <button onclick="stopRecovery()">
+
+    <button
+      onclick="stopRecovery()"
+    >
       ⏹️ Stop
     </button>
 
-    <div id="recoveryMessage" class="activity">
+
+    <div
+      id="recoveryMessage"
+      class="activity"
+    >
       Ready to begin.
     </div>
+
     `
+
   );
 
 }
@@ -849,28 +2070,51 @@ function beginRecovery(){
 
   stopRecovery();
 
-  recoverySeconds=300;
+
+  recoverySeconds =
+    300;
+
 
   updateRecoveryDisplay();
 
-  recoveryTimer=setInterval(function(){
 
-    recoverySeconds--;
+  recoveryTimer =
+    setInterval(
 
-    updateRecoveryDisplay();
+      function(){
 
-    if(recoverySeconds<=0){
+        recoverySeconds--;
 
-      stopRecovery();
 
-      document.getElementById("recoveryMessage").innerHTML=
-        "<span class='success'>✓ Recovery session completed.</span>";
+        updateRecoveryDisplay();
 
-      finishActivity(10);
 
-    }
+        if(
+          recoverySeconds <= 0
+        ){
 
-  },1000);
+          stopRecovery();
+
+
+          document.getElementById(
+            "recoveryMessage"
+          ).innerHTML =
+
+            "<span class='success'>✓ Recovery session completed.</span>";
+
+
+          finishActivity(
+            10,
+            "Recovery Practice"
+          );
+
+        }
+
+      },
+
+      1000
+
+    );
 
 }
 
@@ -879,9 +2123,11 @@ function stopRecovery(){
 
   if(recoveryTimer){
 
-    clearInterval(recoveryTimer);
+    clearInterval(
+      recoveryTimer
+    );
 
-    recoveryTimer=null;
+    recoveryTimer = null;
 
   }
 
@@ -890,51 +2136,362 @@ function stopRecovery(){
 
 function updateRecoveryDisplay(){
 
-  const minutes=
-    Math.floor(recoverySeconds/60)
+  const minutes =
+    Math.floor(
+      recoverySeconds / 60
+    )
     .toString()
     .padStart(2,"0");
 
-  const seconds=
-    (recoverySeconds%60)
+
+  const seconds =
+    (
+      recoverySeconds % 60
+    )
     .toString()
     .padStart(2,"0");
 
-  const display=
-    document.getElementById("recoveryTimer");
+
+  const display =
+    document.getElementById(
+      "recoveryTimer"
+    );
+
 
   if(display){
-    display.textContent=minutes+":"+seconds;
+
+    display.textContent =
+      minutes +
+      ":" +
+      seconds;
+
   }
 
 }
 
+
+/* ================================
+   VOICE
+================================ */
 
 function speakText(text){
 
-  if("speechSynthesis" in window){
+  if(
+    "speechSynthesis"
+    in window
+  ){
 
-    const speech=
-      new SpeechSynthesisUtterance(text);
+    const speech =
+      new SpeechSynthesisUtterance(
+        text
+      );
 
-    speech.lang="en-FJ";
+
+    speech.lang =
+      "en-FJ";
+
+
+    speech.rate =
+      0.85;
+
 
     window.speechSynthesis.cancel();
 
-    window.speechSynthesis.speak(speech);
 
-  }else{
+    window.speechSynthesis.speak(
+      speech
+    );
 
-    alert("Speech is not supported on this device.");
+  }
+
+  else{
+
+    alert(
+      "Speech is not supported on this device."
+    );
 
   }
 
 }
 
 
+/* ================================
+   ACCESSIBILITY
+================================ */
+
+function toggleLargeText(){
+
+  document.body.classList.toggle(
+    "large-text"
+  );
+
+
+  const enabled =
+    document.body.classList.contains(
+      "large-text"
+    );
+
+
+  localStorage.setItem(
+    "pe_large_text",
+    enabled ? "yes" : "no"
+  );
+
+}
+
+
+/* ================================
+   MONITORING
+================================ */
+
+function updateMonitoring(){
+
+  const saved =
+    localStorage.getItem(
+      "pe_student_profile"
+    );
+
+
+  let studentName =
+    "Not saved";
+
+
+  if(saved){
+
+    try{
+
+      const profile =
+        JSON.parse(saved);
+
+
+      studentName =
+        profile.name ||
+        "Student";
+
+    }
+
+    catch(error){}
+
+  }
+
+
+  document.getElementById(
+    "monitorStudent"
+  ).textContent =
+    studentName;
+
+
+  document.getElementById(
+    "monitorScore"
+  ).textContent =
+    score;
+
+
+  document.getElementById(
+    "monitorActivities"
+  ).textContent =
+    completed;
+
+
+  document.getElementById(
+    "monitorDays"
+  ).textContent =
+    daysCompleted;
+
+
+  document.getElementById(
+    "monitorStreak"
+  ).textContent =
+    streak;
+
+
+  updateSkillBadges();
+
+}
+
+
+function updateSkillBadges(){
+
+  const container =
+    document.getElementById(
+      "skillBadges"
+    );
+
+
+  const skills =
+    JSON.parse(
+      localStorage.getItem(
+        "pe_skills"
+      ) || "[]"
+    );
+
+
+  if(
+    skills.length === 0
+  ){
+
+    container.textContent =
+      "No activities completed yet.";
+
+    return;
+
+  }
+
+
+  container.innerHTML =
+    skills.map(
+      skill =>
+        "<span class='badge'>" +
+        skill +
+        "</span>"
+    ).join("");
+
+}
+
+
+/* ================================
+   PROGRESS SUMMARY
+================================ */
+
+function generateProgressSummary(){
+
+  const saved =
+    localStorage.getItem(
+      "pe_student_profile"
+    );
+
+
+  let profile = {};
+
+
+  if(saved){
+
+    try{
+
+      profile =
+        JSON.parse(saved);
+
+    }
+
+    catch(error){}
+
+  }
+
+
+  const summary =
+    document.getElementById(
+      "progressSummary"
+    );
+
+
+  summary.classList.remove(
+    "hidden"
+  );
+
+
+  summary.innerHTML = `
+
+    <h3>📊 Pacific Education Progress Summary</h3>
+
+    <p>
+      <strong>Student:</strong>
+      ${profile.name || "Not entered"}
+    </p>
+
+    <p>
+      <strong>Student ID:</strong>
+      ${profile.id || "Not entered"}
+    </p>
+
+    <p>
+      <strong>School:</strong>
+      ${profile.school || "Not entered"}
+    </p>
+
+    <p>
+      <strong>Class:</strong>
+      ${profile.className || "Class 1"}
+    </p>
+
+    <p>
+      <strong>Score:</strong>
+      ${score}
+    </p>
+
+    <p>
+      <strong>Activities completed:</strong>
+      ${completed}
+    </p>
+
+    <p>
+      <strong>Daily lessons:</strong>
+      ${daysCompleted} / 365
+    </p>
+
+    <p>
+      <strong>Learning streak:</strong>
+      ${streak} days
+    </p>
+
+    <p>
+      <strong>Report status:</strong>
+      Local prototype report
+    </p>
+
+    <p class="small">
+      Future authorised online versions can
+      provide secure teacher and school reporting.
+    </p>
+
+  `;
+
+
+  summary.scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+
+/* ================================
+   LOAD SETTINGS
+================================ */
+
+function loadSettings(){
+
+  const largeText =
+    localStorage.getItem(
+      "pe_large_text"
+    );
+
+
+  if(
+    largeText === "yes"
+  ){
+
+    document.body.classList.add(
+      "large-text"
+    );
+
+  }
+
+}
+
+
+/* ================================
+   START APP
+================================ */
+
 loadProfile();
+
+loadSettings();
+
 updateDay();
+
 updateProgress();
+
+updateMonitoring();
+
 
 </script>
 
