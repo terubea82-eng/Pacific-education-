@@ -186,3 +186,106 @@ function startAssessment(type){
     showQuestion();
 
 }
+/* =========================================
+   PACIFIC EDUCATION — ASSESSMENT RESULTS
+========================================= */
+
+function finishAssessment(
+    type,
+    score,
+    total
+){
+
+    const percentage =
+        Math.round(
+            (score / total) * 100
+        );
+
+    const results =
+        JSON.parse(
+            localStorage.getItem(
+                "pacificEducationAssessments"
+            ) || "[]"
+        );
+
+    results.push({
+
+        assessment: type,
+
+        score: score,
+
+        total: total,
+
+        percentage: percentage,
+
+        date:
+            new Date().toISOString()
+
+    });
+
+    localStorage.setItem(
+        "pacificEducationAssessments",
+        JSON.stringify(results)
+    );
+
+    showLesson(
+
+        "🎯 Assessment Result",
+
+        `
+
+        <div class="activity">
+
+        <h2>🎯 Assessment Complete</h2>
+
+        <h3>
+        Score:
+        ${score}/${total}
+        </h3>
+
+        <h3>
+        Result:
+        ${percentage}%
+        </h3>
+
+        ${
+            percentage >= 80
+
+            ?
+
+            `<p>🟢 Excellent work!</p>`
+
+            :
+
+            percentage >= 60
+
+            ?
+
+            `<p>🟡 Good effort. Keep practising.</p>`
+
+            :
+
+            `<p>🔴 Additional practice recommended.</p>`
+        }
+
+        <button
+        onclick="startAssessment('${type}')">
+
+        🔄 Try Again
+
+        </button>
+
+        <button
+        onclick="startDailyLesson()">
+
+        📚 Return to Lesson
+
+        </button>
+
+        </div>
+
+        `
+
+    );
+
+}
