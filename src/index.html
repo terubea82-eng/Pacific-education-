@@ -62,3 +62,127 @@ const assessmentData = {
     }
 
 };
+/* =========================================
+   PACIFIC EDUCATION — ASSESSMENT STARTER
+========================================= */
+
+function startAssessment(type){
+
+    const assessment =
+        assessmentData[type];
+
+    if(!assessment){
+
+        alert("Assessment not found.");
+
+        return;
+
+    }
+
+    let questionNumber = 0;
+    let score = 0;
+
+    function showQuestion(){
+
+        const question =
+            assessment.questions[questionNumber];
+
+        window.currentAssessmentQuestion =
+            question;
+
+        showLesson(
+
+            assessment.title,
+
+            `
+
+            <div class="activity">
+
+            <p>
+            Question
+            ${questionNumber + 1}
+            of
+            ${assessment.questions.length}
+            </p>
+
+            <h3>
+            ${question.question}
+            </h3>
+
+            <div>
+
+            ${
+                question.options.map(option => `
+
+                    <button
+                    onclick="answerAssessment(
+                        '${escapeHTML(option)}'
+                    )">
+
+                    ${option}
+
+                    </button>
+
+                `).join("")
+            }
+
+            </div>
+
+            </div>
+
+            `
+
+        );
+
+    }
+
+    window.answerAssessment =
+        function(answer){
+
+            const question =
+                window.currentAssessmentQuestion;
+
+            if(
+
+                String(answer).trim().toLowerCase()
+                ===
+                String(question.answer).trim().toLowerCase()
+
+            ){
+
+                score++;
+
+                speakText("Correct!");
+
+            }else{
+
+                speakText(
+                    "Let's keep practising."
+                );
+
+            }
+
+            questionNumber++;
+
+            if(
+                questionNumber <
+                assessment.questions.length
+            ){
+
+                showQuestion();
+
+            }else{
+
+                finishAssessment(
+                    type,
+                    score,
+                    assessment.questions.length
+                );
+
+            }
+
+        };
+
+    showQuestion();
+
+}
