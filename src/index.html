@@ -1,3 +1,547 @@
+/* =========================================
+DAYS 1–30 — ALPHABET
+KEEP YOUR EXISTING alphabetDays ARRAY HERE
+========================================= */
+
+const alphabetDays = [
+
+{
+day:1,
+letter:"A a",
+word:"Apple",
+sound:"A says /a/ as in apple.",
+sentence:"A is for apple."
+},
+
+{
+day:2,
+letter:"B b",
+word:"Ball",
+sound:"B says /b/ as in ball.",
+sentence:"B is for ball."
+},
+
+{
+day:3,
+letter:"C c",
+word:"Cat",
+sound:"C says /k/ as in cat.",
+sentence:"C is for cat."
+},
+
+{
+day:4,
+letter:"D d",
+word:"Dog",
+sound:"D says /d/ as in dog.",
+sentence:"D is for dog."
+},
+
+{
+day:5,
+letter:"E e",
+word:"Egg",
+sound:"E says /e/ as in egg.",
+sentence:"E is for egg."
+},
+
+{
+day:6,
+letter:"F f",
+word:"Fish",
+sound:"F says /f/ as in fish.",
+sentence:"F is for fish."
+},
+
+{
+day:7,
+letter:"G g",
+word:"Goat",
+sound:"G says /g/ as in goat.",
+sentence:"G is for goat."
+},
+
+{
+day:8,
+letter:"H h",
+word:"House",
+sound:"H says /h/ as in house.",
+sentence:"H is for house."
+},
+
+{
+day:9,
+letter:"I i",
+word:"Island",
+sound:"I says /i/ as in island.",
+sentence:"I is for island."
+},
+
+{
+day:10,
+letter:"J j",
+word:"Juice",
+sound:"J says /j/ as in juice.",
+sentence:"J is for juice."
+},
+
+{
+day:11,
+letter:"K k",
+word:"Kite",
+sound:"K says /k/ as in kite.",
+sentence:"K is for kite."
+},
+
+{
+day:12,
+letter:"L l",
+word:"Leaf",
+sound:"L says /l/ as in leaf.",
+sentence:"L is for leaf."
+},
+
+{
+day:13,
+letter:"M m",
+word:"Moon",
+sound:"M says /m/ as in moon.",
+sentence:"M is for moon."
+},
+
+{
+day:14,
+letter:"N n",
+word:"Nest",
+sound:"N says /n/ as in nest.",
+sentence:"N is for nest."
+},
+
+{
+day:15,
+letter:"O o",
+word:"Orange",
+sound:"O says /o/ as in orange.",
+sentence:"O is for orange."
+},
+
+{
+day:16,
+letter:"P p",
+word:"Pineapple",
+sound:"P says /p/ as in pineapple.",
+sentence:"P is for pineapple."
+},
+
+{
+day:17,
+letter:"Q q",
+word:"Queen",
+sound:"Q says /kw/ as in queen.",
+sentence:"Q is for queen."
+},
+
+{
+day:18,
+letter:"R r",
+word:"Rain",
+sound:"R says /r/ as in rain.",
+sentence:"R is for rain."
+},
+
+{
+day:19,
+letter:"S s",
+word:"Sun",
+sound:"S says /s/ as in sun.",
+sentence:"S is for sun."
+},
+
+{
+day:20,
+letter:"T t",
+word:"Tree",
+sound:"T says /t/ as in tree.",
+sentence:"T is for tree."
+},
+
+{
+day:21,
+letter:"U u",
+word:"Umbrella",
+sound:"U says /u/ as in umbrella.",
+sentence:"U is for umbrella."
+},
+
+{
+day:22,
+letter:"V v",
+word:"Van",
+sound:"V says /v/ as in van.",
+sentence:"V is for van."
+},
+
+{
+day:23,
+letter:"W w",
+word:"Water",
+sound:"W says /w/ as in water.",
+sentence:"W is for water."
+},
+
+{
+day:24,
+letter:"X x",
+word:"X-ray",
+sound:"X says /x/ as in x-ray.",
+sentence:"X is for x-ray."
+},
+
+{
+day:25,
+letter:"Y y",
+word:"Yam",
+sound:"Y says /y/ as in yam.",
+sentence:"Y is for yam."
+},
+
+{
+day:26,
+letter:"Z z",
+word:"Zoo",
+sound:"Z says /z/ as in zoo.",
+sentence:"Z is for zoo."
+},
+
+{
+day:27,
+letter:"A–M",
+word:"Alphabet",
+sound:"Practise letters A to M.",
+sentence:"I can say letters A to M."
+},
+
+{
+day:28,
+letter:"N–Z",
+word:"Alphabet",
+sound:"Practise letters N to Z.",
+sentence:"I can say letters N to Z."
+},
+
+{
+day:29,
+letter:"A–Z",
+word:"Alphabet",
+sound:"Practise the alphabet in order.",
+sentence:"I can say the alphabet."
+},
+
+{
+day:30,
+letter:"A–Z",
+word:"Assessment",
+sound:"Show what you know.",
+sentence:"I am ready for my alphabet assessment."
+}
+
+];
+
+
+/* =========================================
+DAYS 31–60 — PHONICS
+========================================= */
+
+const phonicsDays = [
+
+{
+day:31,
+letter:"M m",
+sound:"/m/",
+word:"mat",
+focus:"Hear and say the /m/ sound.",
+examples:["mat","man","map"]
+},
+
+{
+day:32,
+letter:"S s",
+sound:"/s/",
+word:"sun",
+focus:"Hear and say the /s/ sound.",
+examples:["sun","sit","sat"]
+},
+
+{
+day:33,
+letter:"A a",
+sound:"/a/",
+word:"ant",
+focus:"Hear the short /a/ sound.",
+examples:["ant","at","am"]
+},
+
+{
+day:34,
+letter:"T t",
+sound:"/t/",
+word:"tap",
+focus:"Hear and say the /t/ sound.",
+examples:["tap","top","ten"]
+},
+
+{
+day:35,
+letter:"P p",
+sound:"/p/",
+word:"pig",
+focus:"Hear and say the /p/ sound.",
+examples:["pig","pan","pin"]
+},
+
+{
+day:36,
+letter:"I i",
+sound:"/i/",
+word:"sit",
+focus:"Hear the short /i/ sound.",
+examples:["in","it","sit"]
+},
+
+{
+day:37,
+letter:"N n",
+sound:"/n/",
+word:"net",
+focus:"Hear and say the /n/ sound.",
+examples:["net","nap","not"]
+},
+
+{
+day:38,
+letter:"D d",
+sound:"/d/",
+word:"dog",
+focus:"Hear and say the /d/ sound.",
+examples:["dog","dig","dot"]
+},
+
+{
+day:39,
+letter:"C c",
+sound:"/k/",
+word:"cat",
+focus:"Hear the /k/ sound at the beginning of cat.",
+examples:["cat","can","cot"]
+},
+
+{
+day:40,
+letter:"K k",
+sound:"/k/",
+word:"kit",
+focus:"Hear and say the /k/ sound.",
+examples:["kit","kid","kite"]
+},
+
+{
+day:41,
+letter:"E e",
+sound:"/e/",
+word:"egg",
+focus:"Hear the short /e/ sound.",
+examples:["egg","bed","red"]
+},
+
+{
+day:42,
+letter:"H h",
+sound:"/h/",
+word:"hat",
+focus:"Hear and say the /h/ sound.",
+examples:["hat","hen","hut"]
+},
+
+{
+day:43,
+letter:"R r",
+sound:"/r/",
+word:"rat",
+focus:"Hear and say the /r/ sound.",
+examples:["rat","run","red"]
+},
+
+{
+day:44,
+letter:"B b",
+sound:"/b/",
+word:"ball",
+focus:"Hear and say the /b/ sound.",
+examples:["ball","bat","bag"]
+},
+
+{
+day:45,
+letter:"F f",
+sound:"/f/",
+word:"fish",
+focus:"Hear and say the /f/ sound.",
+examples:["fish","fan","fin"]
+},
+
+{
+day:46,
+letter:"O o",
+sound:"/o/",
+word:"hot",
+focus:"Hear the short /o/ sound.",
+examples:["ox","on","hot"]
+},
+
+{
+day:47,
+letter:"L l",
+sound:"/l/",
+word:"leg",
+focus:"Hear and say the /l/ sound.",
+examples:["leg","log","lip"]
+},
+
+{
+day:48,
+letter:"G g",
+sound:"/g/",
+word:"goat",
+focus:"Hear and say the /g/ sound.",
+examples:["goat","gap","gum"]
+},
+
+{
+day:49,
+letter:"U u",
+sound:"/u/",
+word:"sun",
+focus:"Hear the short /u/ sound.",
+examples:["up","sun","cup"]
+},
+
+{
+day:50,
+letter:"W w",
+sound:"/w/",
+word:"water",
+focus:"Hear and say the /w/ sound.",
+examples:["water","wet","win"]
+},
+
+{
+day:51,
+letter:"M A T",
+sound:"m-a-t",
+word:"mat",
+focus:"Blend /m/ /a/ /t/ to read mat.",
+examples:["m-a-t → mat"]
+},
+
+{
+day:52,
+letter:"S A T",
+sound:"s-a-t",
+word:"sat",
+focus:"Blend /s/ /a/ /t/ to read sat.",
+examples:["s-a-t → sat"]
+},
+
+{
+day:53,
+letter:"P I N",
+sound:"p-i-n",
+word:"pin",
+focus:"Blend /p/ /i/ /n/ to read pin.",
+examples:["p-i-n → pin"]
+},
+
+{
+day:54,
+letter:"F I N",
+sound:"f-i-n",
+word:"fin",
+focus:"Blend /f/ /i/ /n/ to read fin.",
+examples:["f-i-n → fin"]
+},
+
+{
+day:55,
+letter:"C A T",
+sound:"k-a-t",
+word:"cat",
+focus:"Blend /k/ /a/ /t/ to read cat.",
+examples:["k-a-t → cat"]
+},
+
+{
+day:56,
+letter:"D O G",
+sound:"d-o-g",
+word:"dog",
+focus:"Blend /d/ /o/ /g/ to read dog.",
+examples:["d-o-g → dog"]
+},
+
+{
+day:57,
+letter:"S U N",
+sound:"s-u-n",
+word:"sun",
+focus:"Blend /s/ /u/ /n/ to read sun.",
+examples:["s-u-n → sun"]
+},
+
+{
+day:58,
+letter:"F I S H",
+sound:"f-i-sh",
+word:"fish",
+focus:"Read and spell the word fish.",
+examples:["fish","The fish swims."]
+},
+
+{
+day:59,
+letter:"CVC",
+sound:"CVC words",
+word:"cat, dog, sun",
+focus:"Read simple CVC words and short sentences.",
+examples:[
+"cat",
+"dog",
+"sun",
+"The cat sat.",
+"The dog is big.",
+"The sun is hot."
+]
+},
+
+{
+day:60,
+letter:"PHONICS",
+sound:"Assessment",
+word:"Phonics",
+focus:"Show what you know.",
+examples:[
+"cat",
+"fish",
+"sun"
+]
+}
+
+];
+
+
+/* =========================================
+GET DAY LESSON
+========================================= */
+
 function getDayLesson(){
 
 if(currentDay<=30){
