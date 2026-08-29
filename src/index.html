@@ -1,166 +1,64 @@
-function startDailyLesson(){
+/* =========================================
+   PACIFIC EDUCATION — ASSESSMENT DATA
+========================================= */
 
-const lesson=getDayLesson();
+const assessmentData = {
 
-/* DAYS 1–30 — ALPHABET */
+    alphabet: {
 
-if(currentDay<=30){
+        title: "Day 30 — Alphabet Assessment",
 
-showLesson(
+        questions: [
 
-"Day "+currentDay+" — Alphabet",
+            {
+                question: "Which letter is this? A",
+                options: ["A", "B", "C"],
+                answer: "A"
+            },
 
-`
+            {
+                question: "Which letter comes after B?",
+                options: ["A", "C", "D"],
+                answer: "C"
+            },
 
-<div class="activity">
+            {
+                question: "Which word begins with A?",
+                options: ["Apple", "Dog", "Sun"],
+                answer: "Apple"
+            }
 
-<div class="letter">
-${lesson.letter}
-</div>
+        ]
 
-<div class="word">
-${lesson.word}
-</div>
+    },
 
-<p class="question">
-${lesson.sound}
-</p>
 
-<p>
-${lesson.sentence}
-</p>
+    phonics: {
 
-<button onclick="speakText('${lesson.sound}')">
-🔊 Hear the Sound
-</button>
+        title: "Day 60 — Phonics Assessment",
 
-<button onclick="speakText('${lesson.sentence}')">
-🔊 Hear the Sentence
-</button>
+        questions: [
 
-${
-currentDay===30
+            {
+                question: "Which word begins with the /b/ sound?",
+                options: ["Ball", "Cat", "Dog"],
+                answer: "Ball"
+            },
 
-?
+            {
+                question: "Which word begins with the /m/ sound?",
+                options: ["Sun", "Map", "Dog"],
+                answer: "Map"
+            },
 
-'<button onclick="startAlphabetAssessment()">🎯 Start Day 30 Assessment</button>'
+            {
+                question: "Blend /c/ /a/ /t/.",
+                options: ["Cat", "Dog", "Sun"],
+                answer: "Cat"
+            }
 
-:
+        ]
 
-'<button onclick="completeDailyLesson()">✅ Complete Today\'s Lesson</button>'
+    }
 
-}
-
-</div>
-
-`
-
-);
-
-return;
-
-}
-
-
-/* DAYS 31–60 — PHONICS */
-
-if(currentDay>=31 && currentDay<=60){
-
-const examples=lesson.examples || [];
-
-showLesson(
-
-"Day "+currentDay+" — Phonics",
-
-`
-
-<div class="activity">
-
-<div class="letter">
-${lesson.letter}
-</div>
-
-<div class="word">
-${lesson.word}
-</div>
-
-<p class="question">
-${lesson.sound}
-</p>
-
-<p>
-<strong>Today's Focus:</strong>
-${lesson.focus}
-</p>
-
-<h3>Practice Words</h3>
-
-<p class="word">
-${examples.join(" • ")}
-</p>
-
-<button onclick="speakText('${lesson.sound}')">
-🔊 Hear the Sound
-</button>
-
-<button onclick="speakText('${lesson.word}')">
-🔊 Hear the Word
-</button>
-
-<button onclick="speakText('${lesson.focus}')">
-🔊 Hear the Lesson
-</button>
-
-${
-currentDay===60
-
-?
-
-'<button onclick="startPhonicsAssessment()">🎯 Start Day 60 Phonics Assessment</button>'
-
-:
-
-'<button onclick="completePhonicsLesson()">✅ Complete Today\'s Phonics Lesson</button>'
-
-}
-
-</div>
-
-`
-
-);
-
-return;
-
-}
-
-
-/* DAYS 61–365 */
-
-showLesson(
-
-"Day "+currentDay,
-
-`
-
-<div class="activity">
-
-<h3>📚 Future Curriculum Module</h3>
-
-<p>
-Day ${currentDay} is reserved for the next
-Class 1 English curriculum module.
-</p>
-
-<p>
-This module will be activated as the
-365-day curriculum is developed.
-</p>
-
-</div>
-
-`
-
-);
-
-}
+};
