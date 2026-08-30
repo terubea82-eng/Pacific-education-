@@ -372,3 +372,74 @@ function startPhonicsAssessment(){
     startAssessment("phonics");
 
 }
+            /* =========================================
+   ASSESSMENT DASHBOARD
+========================================= */
+
+function updateAssessmentDashboard(){
+
+    const results =
+        JSON.parse(
+            localStorage.getItem(
+                "pacificEducationAssessments"
+            ) || "[]"
+        );
+
+
+    let alphabetResult = null;
+    let phonicsResult = null;
+
+
+    results.forEach(function(result){
+
+        if(result.assessment === "alphabet"){
+
+            alphabetResult = result;
+
+        }
+
+        if(result.assessment === "phonics"){
+
+            phonicsResult = result;
+
+        }
+
+    });
+
+
+    const alphabetBox =
+        document.getElementById(
+            "dashboardAlphabetAssessment"
+        );
+
+
+    const phonicsBox =
+        document.getElementById(
+            "dashboardPhonicsAssessment"
+        );
+
+
+    if(alphabetBox){
+
+        alphabetBox.textContent =
+            alphabetResult
+            ?
+            alphabetResult.percentage + "%"
+            :
+            "Not completed";
+
+    }
+
+
+    if(phonicsBox){
+
+        phonicsBox.textContent =
+            phonicsResult
+            ?
+            phonicsResult.percentage + "%"
+            :
+            "Not completed";
+
+    }
+
+}   
