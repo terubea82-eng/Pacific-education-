@@ -62,14 +62,15 @@ const assessmentData = {
     }
 
 };
+
+
 /* =========================================
    PACIFIC EDUCATION — ASSESSMENT STARTER
 ========================================= */
 
 function startAssessment(type){
 
-    const assessment =
-        assessmentData[type];
+    const assessment = assessmentData[type];
 
     if(!assessment){
 
@@ -80,7 +81,8 @@ function startAssessment(type){
     }
 
     let questionNumber = 0;
-    let score = 0;
+    let assessmentScore = 0;
+
 
     function showQuestion(){
 
@@ -89,6 +91,7 @@ function startAssessment(type){
 
         window.currentAssessmentQuestion =
             question;
+
 
         showLesson(
 
@@ -115,9 +118,8 @@ function startAssessment(type){
                 question.options.map(option => `
 
                     <button
-                    onclick="answerAssessment(
-                        '${escapeHTML(option)}'
-                    )">
+                    onclick="answerAssessment(this.dataset.answer)"
+                    data-answer="${escapeHTML(option)}">
 
                     ${option}
 
@@ -136,70 +138,84 @@ function startAssessment(type){
 
     }
 
-    window.answerAssessment =
-        function(answer){
 
-            const question =
-                window.currentAssessmentQuestion;
+    window.answerAssessment = function(answer){
 
-            if(
+        const question =
+            window.currentAssessmentQuestion;
 
-                String(answer).trim().toLowerCase()
-                ===
-                String(question.answer).trim().toLowerCase()
 
-            ){
+        if(!question){
 
-                score++;
+            return;
 
-                speakText("Correct!");
+        }
 
-            }else{
 
-                speakText(
-                    "Let's keep practising."
-                );
+        if(
 
-            }
+            String(answer).trim().toLowerCase()
+            ===
+            String(question.answer).trim().toLowerCase()
 
-            questionNumber++;
+        ){
 
-            if(
-                questionNumber <
+            assessmentScore++;
+
+            speakText("Correct!");
+
+        }else{
+
+            speakText(
+                "Let's keep practising."
+            );
+
+        }
+
+
+        questionNumber++;
+
+
+        if(
+            questionNumber <
+            assessment.questions.length
+        ){
+
+            showQuestion();
+
+        }else{
+
+            finishAssessment(
+                type,
+                assessmentScore,
                 assessment.questions.length
-            ){
+            );
 
-                showQuestion();
+        }
 
-            }else{
+    };
 
-                finishAssessment(
-                    type,
-                    score,
-                    assessment.questions.length
-                );
-
-            }
-
-        };
 
     showQuestion();
 
 }
+
+
 /* =========================================
    PACIFIC EDUCATION — ASSESSMENT RESULTS
 ========================================= */
 
 function finishAssessment(
     type,
-    score,
+    assessmentScore,
     total
 ){
 
     const percentage =
         Math.round(
-            (score / total) * 100
+            (assessmentScore / total) * 100
         );
+
 
     const results =
         JSON.parse(
@@ -208,11 +224,12 @@ function finishAssessment(
             ) || "[]"
         );
 
+
     results.push({
 
         assessment: type,
 
-        score: score,
+        score: assessmentScore,
 
         total: total,
 
@@ -223,10 +240,12 @@ function finishAssessment(
 
     });
 
+
     localStorage.setItem(
         "pacificEducationAssessments",
         JSON.stringify(results)
     );
+
 
     showLesson(
 
@@ -236,11 +255,13 @@ function finishAssessment(
 
         <div class="activity">
 
-        <h2>🎯 Assessment Complete</h2>
+        <h2>
+        🎯 Assessment Complete
+        </h2>
 
         <h3>
         Score:
-        ${score}/${total}
+        ${assessmentScore}/${total}
         </h3>
 
         <h3>
@@ -248,12 +269,15 @@ function finishAssessment(
         ${percentage}%
         </h3>
 
+
         ${
             percentage >= 80
 
             ?
 
-            `<p>🟢 Excellent work!</p>`
+            `<p class="success">
+            🟢 Excellent work!
+            </p>`
 
             :
 
@@ -261,12 +285,17 @@ function finishAssessment(
 
             ?
 
-            `<p>🟡 Good effort. Keep practising.</p>`
+            `<p>
+            🟡 Good effort. Keep practising.
+            </p>`
 
             :
 
-            `<p>🔴 Additional practice recommended.</p>`
+            `<p class="error">
+            🔴 Additional practice recommended.
+            </p>`
         }
+
 
         <button
         onclick="startAssessment('${type}')">
@@ -275,12 +304,14 @@ function finishAssessment(
 
         </button>
 
+
         <button
         onclick="startDailyLesson()">
 
         📚 Return to Lesson
 
         </button>
+
 
         </div>
 
@@ -289,25 +320,9 @@ function finishAssessment(
     );
 
 }
-                   /* =========================================
-   PACIFIC EDUCATION — DAY 30 ASSESSMENT
-========================================= */
 
-function startAlphabetAssessment(){
 
-    startAssessment("alphabet");
-                   /* =========================================
-   PACIFIC EDUCATION — DAY 60 ASSESSMENT
-========================================= */
-
-function startPhonicsAssessment(){
-
-    startAssessment("phonics");
-
-}
-
-}
-         /* =========================================
+/* =========================================
    PACIFIC EDUCATION — DAY 30 ASSESSMENT
 ========================================= */
 
@@ -326,4 +341,4 @@ function startPhonicsAssessment(){
 
     startAssessment("phonics");
 
-}          
+}
