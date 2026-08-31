@@ -1,3 +1,250 @@
 PACIFIC_EDUCATION_FINAL_MASTER.md
 README.md
 the src folder/files if available
+<!-- =========================================
+     PACIFIC EDUCATION — ASSESSMENT DASHBOARD
+========================================= -->
+
+<section id="assessmentDashboard"
+         class="dashboard-section">
+
+    <div class="activity">
+
+        <h2>📝 Assessment Progress</h2>
+
+        <div class="dashboard-box">
+
+            <div class="small">
+                Alphabet Assessment
+            </div>
+
+            <div id="dashboardAlphabetAssessment"
+                 class="dashboard-number">
+
+                Not completed
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-box">
+
+            <div class="small">
+                Phonics Assessment
+            </div>
+
+            <div id="dashboardPhonicsAssessment"
+                 class="dashboard-number">
+
+                Not completed
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     TEACHER DASHBOARD
+========================================= -->
+
+<section id="teacherDashboard"
+         class="dashboard-section">
+
+    <div class="activity">
+
+        <h2>👩‍🏫 Teacher Dashboard</h2>
+
+        <p>
+            Monitor student learning progress,
+            assessments and daily lesson completion.
+        </p>
+
+
+        <div class="dashboard-box">
+            <div class="small">Student</div>
+
+            <div id="teacherStudentName"
+                 class="dashboard-number">
+
+                Student
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Current Day</div>
+
+            <div id="teacherCurrentDay"
+                 class="dashboard-number">
+
+                Day 1
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Lessons Completed</div>
+
+            <div id="teacherLessonsCompleted"
+                 class="dashboard-number">
+
+                0
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Alphabet Assessment</div>
+
+            <div id="teacherAlphabetAssessment"
+                 class="dashboard-number">
+
+                Not completed
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Phonics Assessment</div>
+
+            <div id="teacherPhonicsAssessment"
+                 class="dashboard-number">
+
+                Not completed
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Learning Status</div>
+
+            <div id="teacherLearningStatus"
+                 class="dashboard-number">
+
+                Monitoring
+
+            </div>
+        </div>
+
+
+        <button type="button"
+                onclick="refreshTeacherDashboard()">
+
+            🔄 Refresh Student Progress
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PARENT DASHBOARD
+========================================= -->
+
+<section id="parentDashboard"
+         class="dashboard-section">
+
+    <div class="activity">
+
+        <h2>👨‍👩‍👧 Parent Dashboard</h2>
+
+        <p>
+            Follow your child's English learning
+            progress at home.
+        </p>
+
+
+        <div class="dashboard-box">
+            <div class="small">Child</div>
+
+            <div id="parentStudentName"
+                 class="dashboard-number">
+
+                Child
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Current Learning Day</div>
+
+            <div id="parentCurrentDay"
+                 class="dashboard-number">
+
+                Day 1
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Lessons Completed</div>
+
+            <div id="parentLessonsCompleted"
+                 class="dashboard-number">
+
+                0
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Alphabet Assessment</div>
+
+            <div id="parentAlphabetAssessment"
+                 class="dashboard-number">
+
+                Not completed
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Phonics Assessment</div>
+
+            <div id="parentPhonicsAssessment"
+                 class="dashboard-number">
+
+                Not completed
+
+            </div>
+        </div>
+
+
+        <div class="dashboard-box">
+            <div class="small">Home Learning Status</div>
+
+            <div id="parentLearningStatus"
+                 class="dashboard-number">
+
+                Keep practising
+
+            </div>
+        </div>
+
+
+        <button type="button"
+                onclick="refreshParentDashboard()">
+
+            🔄 Refresh Child Progress
+
+        </button>
+
+    </div>
+
+</section>
