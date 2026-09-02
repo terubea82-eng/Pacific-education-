@@ -26,7 +26,6 @@ const assessmentData = {
         ]
     },
 
-
     phonics: {
         title: "Day 60 — Phonics Assessment",
 
@@ -53,6 +52,22 @@ const assessmentData = {
 
 
 /* =========================================
+   HTML SAFETY
+========================================= */
+
+function escapeHTML(value) {
+
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+}
+
+
+/* =========================================
    START ASSESSMENT
 ========================================= */
 
@@ -61,11 +76,15 @@ function startAssessment(type) {
     const assessment = assessmentData[type];
 
     if (!assessment) {
+
         alert("Assessment not found.");
+
         return;
     }
 
+
     let questionNumber = 0;
+
     let assessmentScore = 0;
 
 
@@ -73,6 +92,7 @@ function startAssessment(type) {
 
         const question =
             assessment.questions[questionNumber];
+
 
         window.currentAssessmentQuestion = question;
 
@@ -94,30 +114,34 @@ function startAssessment(type) {
             }).join("");
 
 
-        showLesson(
+        if (typeof showLesson === "function") {
 
-            assessment.title,
+            showLesson(
 
-            `
-            <div class="activity">
+                assessment.title,
 
-                <p>
-                    Question ${questionNumber + 1}
-                    of ${assessment.questions.length}
-                </p>
+                `
+                <div class="activity">
 
-                <h3>
-                    ${escapeHTML(question.question)}
-                </h3>
+                    <p>
+                        Question ${questionNumber + 1}
+                        of ${assessment.questions.length}
+                    </p>
 
-                <div>
-                    ${buttons}
+                    <h3>
+                        ${escapeHTML(question.question)}
+                    </h3>
+
+                    <div>
+                        ${buttons}
+                    </div>
+
                 </div>
+                `
 
-            </div>
-            `
+            );
 
-        );
+        }
 
     }
 
@@ -127,7 +151,9 @@ function startAssessment(type) {
         const question =
             window.currentAssessmentQuestion;
 
+
         if (!question) {
+
             return;
         }
 
@@ -140,14 +166,19 @@ function startAssessment(type) {
 
             assessmentScore++;
 
+
             if (typeof speakText === "function") {
+
                 speakText("Correct!");
+
             }
 
         } else {
 
             if (typeof speakText === "function") {
+
                 speakText("Let's keep practising.");
+
             }
 
         }
@@ -166,9 +197,13 @@ function startAssessment(type) {
         } else {
 
             finishAssessment(
+
                 type,
+
                 assessmentScore,
+
                 assessment.questions.length
+
             );
 
         }
@@ -221,15 +256,91 @@ function finishAssessment(
 
 
     localStorage.setItem(
+
         "pacificEducationAssessments",
+
         JSON.stringify(results)
+
     );
 
 
-    if (typeof refreshAllDashboards === "function") {
-        refreshAllDashboards();
+    /* =========================================
+       SAVE CURRENT RESULT FOR DASHBOARDS
+    ========================================= */
+
+    if (type === "alphabet") {
+
+        localStorage.setItem(
+            "alphabetAssessment",
+            percentage + "%"
+        );
+
     }
 
+
+    if (type === "phonics") {
+
+        localStorage.setItem(
+            "phonicsAssessment",
+            percentage + "%"
+        );
+
+    }
+
+
+    /* =========================================
+       UPDATE LEARNING STATUS
+    ========================================= */
+
+    if (percentage >= 80) {
+
+        localStorage.setItem(
+            "learningStatus",
+            "Excellent progress"
+        );
+
+    } else if (percentage >= 60) {
+
+        localStorage.setItem(
+            "learningStatus",
+            "Good progress"
+        );
+
+    } else {
+
+        localStorage.setItem(
+            "learningStatus",
+            "Additional practice recommended"
+        );
+
+    }
+
+
+    /* =========================================
+       REFRESH TEACHER + PARENT DASHBOARDS
+    ========================================= */
+
+    if (
+        typeof refreshTeacherDashboard === "function"
+    ) {
+
+        refreshTeacherDashboard();
+
+    }
+
+
+    if (
+        typeof refreshParentDashboard === "function"
+    ) {
+
+        refreshParentDashboard();
+
+    }
+
+
+    /* =========================================
+       SHOW RESULT
+    ========================================= */
 
     showLesson(
 
