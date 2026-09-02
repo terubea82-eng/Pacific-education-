@@ -11,8 +11,7 @@ const assessmentData = {
         title: "Day 30 — Alphabet Assessment",
 
         questions: [
-            {
-                question: "Which letter is this? A",
+            
                 options: ["A", "B", "C"],
                 answer: "A"
             },
