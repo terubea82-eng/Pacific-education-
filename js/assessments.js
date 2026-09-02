@@ -31,7 +31,6 @@ alphabet: {
     ]
 },
 
-phonics: {
 
     
     phonics: {
