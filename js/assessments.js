@@ -434,9 +434,9 @@ function startAlphabetAssessment() {
 /* =========================================
    DAY 60 — PHONICS
 ========================================= */
-
 function startPhonicsAssessment() {
 
     startAssessment("phonics");
 
 }
+
