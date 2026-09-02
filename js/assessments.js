@@ -4,9 +4,9 @@
 
 
 
+    const assessmentData = {
+
     alphabet: {
-        title: "Day 30 — Alphabet Assessment",
-alphabet: {
         title: "Day 30 — Alphabet Assessment",
 
         questions: [
@@ -21,19 +21,6 @@ alphabet: {
                 answer: "C"
             },
             {
-                question: "Which word begins with A?",
-                options: ["Apple", "Dog", "Sun"],
-                answer: "Apple"
-            },
-            {
-                question: "Which letter comes before D?",
-                options: ["B", "C", "E"],
-                answer: "C"
-            }
-        ]
-    },
-        
-   
                 question: "Which word begins with A?",
                 options: ["Apple", "Dog", "Sun"],
                 answer: "Apple"
