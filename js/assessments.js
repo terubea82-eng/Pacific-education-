@@ -8,6 +8,10 @@
 
     alphabet: {
         title: "Day 30 — Alphabet Assessment",
+       alphabet: {
+title: "Day 30 — Alphabet Assessment",
+
+    questions: [
 
         questions: [
             {
