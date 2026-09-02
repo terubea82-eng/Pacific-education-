@@ -6,12 +6,12 @@
 
     alphabet: {
         title: "Day 30 — Alphabet Assessment",
-
-        alphabet: {
+alphabet: {
         title: "Day 30 — Alphabet Assessment",
 
         questions: [
-            
+            {
+                question: "Which letter is this? A",
                 options: ["A", "B", "C"],
                 answer: "A"
             },
@@ -21,6 +21,19 @@
                 answer: "C"
             },
             {
+                question: "Which word begins with A?",
+                options: ["Apple", "Dog", "Sun"],
+                answer: "Apple"
+            },
+            {
+                question: "Which letter comes before D?",
+                options: ["B", "C", "E"],
+                answer: "C"
+            }
+        ]
+    },
+        
+   
                 question: "Which word begins with A?",
                 options: ["Apple", "Dog", "Sun"],
                 answer: "Apple"
