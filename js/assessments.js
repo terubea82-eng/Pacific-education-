@@ -2,41 +2,38 @@
    PACIFIC EDUCATION — ASSESSMENTS
 ========================================= */
 
+const assessmentData = {
 
-
-    const assessmentData = {
-
-    alphabet: {
-        title: "Day 30 — Alphabet Assessment",
-       alphabet: {
-title: "Day 30 — Alphabet Assessment",
+alphabet: {
+    title: "Day 30 — Alphabet Assessment",
 
     questions: [
+        {
+            question: "Which letter is this? A",
+            options: ["A", "B", "C"],
+            answer: "A"
+        },
+        {
+            question: "Which letter comes after B?",
+            options: ["A", "C", "D"],
+            answer: "C"
+        },
+        {
+            question: "Which word begins with A?",
+            options: ["Apple", "Dog", "Sun"],
+            answer: "Apple"
+        },
+        {
+            question: "Which letter comes before D?",
+            options: ["B", "C", "E"],
+            answer: "C"
+        }
+    ]
+},
 
-        questions: [
-            {
-                question: "Which letter is this? A",
-                options: ["A", "B", "C"],
-                answer: "A"
-            },
-            {
-                question: "Which letter comes after B?",
-                options: ["A", "C", "D"],
-                answer: "C"
-            },
-            {
-                question: "Which word begins with A?",
-                options: ["Apple", "Dog", "Sun"],
-                answer: "Apple"
-            },
-            {
-                question: "Which letter comes before D?",
-                options: ["B", "C", "E"],
-                answer: "C"
-            }
-        ]
-    },
+phonics: {
 
+    
     phonics: {
         title: "Day 60 — Phonics Assessment",
 
