@@ -221,7 +221,7 @@ if (stage) {
         practice:
             stage.practice
 
-    
+    };
     }
 }
         
