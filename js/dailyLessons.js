@@ -61,13 +61,42 @@ const dailyLessons = {
     practice: "Say each sentence aloud and demonstrate the action."
 },
 
-
 63: {
     title: "Things I Can Do",
     activity: "Practise: I can sit, stand, walk, run and jump.",
     practice: "Make five sentences using: I can..."
+},
+
+365: {
+    title: "My English Learning Journey",
+    activity: "Review the English words, sentences, sounds and skills you have learned.",
+    practice: "Say what you can do in English and celebrate completing 365 days of learning."
 }
-   
+
+};
+
+
+/* =========================================
+   AUTOMATIC DAILY LESSONS
+   DAY 64 - DAY 364
+========================================= */
+
+for (let day = 64; day <= 364; day++) {
+
+    dailyLessons[day] = {
+
+        title: "Daily English Practice — Day " + day,
+
+        activity:
+            "Practise speaking, listening, reading and writing in English.",
+
+        practice:
+            "Say five English sentences aloud and practise them with a parent, teacher or friend."
+
+    };
+
+}
+
 };
 
 
