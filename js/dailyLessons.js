@@ -54,7 +54,14 @@ const dailyLessons = {
     activity: "Learn: walk, run, sit, stand and jump.",
     practice: "Say each action word and demonstrate the action."
 }
-};
+   
+},
+
+62: {
+    title: "Action Sentences",
+    activity: "Practise: I can walk. I can run. I can jump.",
+    practice: "Say each sentence aloud and demonstrate the action."
+}
 
    
 /* =========================================
