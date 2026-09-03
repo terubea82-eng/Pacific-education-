@@ -77,7 +77,7 @@ function getDailyLesson(dayNumber) {
 }
 /* =========================================
    DAY 60 PHONICS ASSESSMENT VISIBILITY
-========================================= */
+======================};=================== */
 
 function updateDay60AssessmentVisibility(dayNumber) {
 
