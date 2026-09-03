@@ -54,8 +54,9 @@ const dailyLessons = {
     activity: "Learn: walk, run, sit, stand and jump.",
     practice: "Say each action word and demonstrate the action."
 }
+};
 
-
+   
 /* =========================================
    GET CURRENT DAILY LESSON
 ========================================= */
