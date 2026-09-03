@@ -83,30 +83,6 @@ const dailyLessons = {
 
 const lessonStages = [
 
-    {{
-    start: 64,
-    end: 90,
-    title: "Vocabulary & Sentences",
-
-    topics: [
-        "Family",
-        "School",
-        "Home",
-        "Pacific Community",
-        "Food",
-        "Animals",
-        "Weather",
-        "Clothes",
-        "Transport",
-        "Feelings"
-    ],
-
-    activity: "Learn five new English words about today's topic and practise using them in simple sentences.",
-
-    practice: "Say the five new words aloud and make one sentence using each word."
-},
-        
-{
     start: 64,
     end: 90,
     title: "Vocabulary & Sentences",
