@@ -189,19 +189,41 @@ for (let day = 64; day <= 364; day++) {
 
         });
 
-    if (stage) {
+    
+if (stage) {
 
-        dailyLessons[day] = {
+    let topic = "";
 
-            title:
-                stage.title + " — Day " + day,
+    if (stage.topics) {
 
-            activity:
-                stage.activity,
+        const topicIndex =
+            (day - stage.start) %
+            stage.topics.length;
 
-            practice:
-                stage.practice
+        topic =
+            stage.topics[topicIndex];
 
+    }
+
+    dailyLessons[day] = {
+
+        title:
+            stage.title +
+            (topic ? " — " + topic : "") +
+            " — Day " + day,
+
+        activity:
+            stage.activity.replace(
+                "today's topic",
+                topic || "today's lesson"
+            ),
+
+        practice:
+            stage.practice
+
+    };
+
+}
         };
 
     }
