@@ -115,6 +115,7 @@ function displayDailyLesson() {
 
     const lesson =
         getDailyLesson(dayNumber);
+   updateDay60AssessmentVisibility(dayNumber);
 
     const day =
         document.getElementById("dailyLessonDay");
