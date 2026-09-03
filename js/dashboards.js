@@ -249,33 +249,3 @@ function completeLesson() {
 
     refreshAllDashboards();
 
-}
-
-
-/* =========================================
-   PAGE LOAD
-========================================= */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        refreshAllDashboards();
-
-    }
-);
-
-/* Refresh dashboards immediately */
-
-refreshAllDashboards();
-
-
-/* Refresh daily lesson */
-
-if (typeof displayDailyLesson === "function") {
-
-    displayDailyLesson();
-
-}
-
-}
