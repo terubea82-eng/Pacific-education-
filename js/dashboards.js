@@ -277,3 +277,28 @@ document.addEventListener(
 
     }
 );
+/* =========================================
+   OWNER TEST MODE
+========================================= */
+
+function setOwnerTestDay(dayNumber) {
+
+    localStorage.setItem(
+        "currentDayNumber",
+        dayNumber.toString()
+    );
+
+    localStorage.setItem(
+        "currentDay",
+        "Day " + dayNumber
+    );
+
+    refreshAllDashboards();
+
+    if (typeof displayDailyLesson === "function") {
+
+        displayDailyLesson();
+
+    }
+
+}
