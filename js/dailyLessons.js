@@ -44,12 +44,16 @@ const dailyLessons = {
     },
 
     7: {
-        title: "Review Week 1",
-        activity: "Review greetings, names, family, colours and numbers.",
-        practice: "Say five English words you learned this week."
-    }
+    title: "Review Week 1",
+    activity: "Review greetings, names, family, colours and numbers.",
+    practice: "Say five English words you learned this week."
+},
 
-};
+61: {
+    title: "Everyday Actions",
+    activity: "Learn: walk, run, sit, stand and jump.",
+    practice: "Say each action word and demonstrate the action."
+}
 
 
 /* =========================================
