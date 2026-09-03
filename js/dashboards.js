@@ -264,3 +264,16 @@ if (currentDayNumber !== 60) {
     }
 
 }
+
+/* =========================================
+   PAGE LOAD — REFRESH DASHBOARDS
+========================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        refreshAllDashboards();
+
+    }
+);
