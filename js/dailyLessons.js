@@ -73,7 +73,7 @@ const dailyLessons = {
     practice: "Say what you can do in English and celebrate completing 365 days of learning."
 }
 
-};
+
 
 
 /* =========================================
