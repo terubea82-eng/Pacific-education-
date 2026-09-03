@@ -265,10 +265,17 @@ document.addEventListener(
     }
 );
 
+/* Refresh dashboards immediately */
+
+refreshAllDashboards();
+
+
 /* Refresh daily lesson */
 
 if (typeof displayDailyLesson === "function") {
 
     displayDailyLesson();
+
+}
 
 }
