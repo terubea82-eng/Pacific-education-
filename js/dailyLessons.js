@@ -5,6 +5,7 @@
 ========================================= */
 
 const dailyLessons = {
+       updateDay60AssessmentVisibility(dayNumber);
 
     1: {
         title: "My First English Words",
