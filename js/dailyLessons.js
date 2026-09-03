@@ -61,14 +61,14 @@ const dailyLessons = {
     practice: "Say each sentence aloud and demonstrate the action."
 }
 
-};
+
 63: {
     title: "Things I Can Do",
     activity: "Practise: I can sit, stand, walk, run and jump.",
     practice: "Make five sentences using: I can..."
 }
 
-};
+
 
    
 /* =========================================
