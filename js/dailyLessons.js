@@ -66,7 +66,7 @@ const dailyLessons = {
     title: "Things I Can Do",
     activity: "Practise: I can sit, stand, walk, run and jump.",
     practice: "Make five sentences using: I can..."
-},
+}
    
 };
 
