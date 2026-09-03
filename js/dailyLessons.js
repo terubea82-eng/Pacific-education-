@@ -82,7 +82,7 @@ const dailyLessons = {
 ========================================= */
 
 const lessonStages = [
-
+{
     start: 64,
     end: 90,
     title: "Vocabulary & Sentences",
