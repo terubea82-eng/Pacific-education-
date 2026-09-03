@@ -70,3 +70,75 @@ function getDailyLesson(dayNumber) {
     };
 
 }
+
+/* =========================================
+   DISPLAY TODAY'S LESSON
+========================================= */
+
+function displayDailyLesson() {
+
+    let dayNumber =
+        parseInt(
+            localStorage.getItem("currentDayNumber") || "1",
+            10
+        );
+
+    if (isNaN(dayNumber) || dayNumber < 1) {
+        dayNumber = 1;
+    }
+
+    if (dayNumber > 365) {
+        dayNumber = 365;
+    }
+
+    const lesson =
+        getDailyLesson(dayNumber);
+
+    const day =
+        document.getElementById("dailyLessonDay");
+
+    const title =
+        document.getElementById("dailyLessonTitle");
+
+    const activity =
+        document.getElementById("dailyLessonActivity");
+
+    const practice =
+        document.getElementById("dailyLessonPractice");
+
+
+    if (day) {
+        day.textContent =
+            "Day " + dayNumber;
+    }
+
+    if (title) {
+        title.textContent =
+            lesson.title;
+    }
+
+    if (activity) {
+        activity.textContent =
+            lesson.activity;
+    }
+
+    if (practice) {
+        practice.textContent =
+            lesson.practice;
+    }
+
+}
+
+
+/* =========================================
+   PAGE LOAD
+========================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        displayDailyLesson();
+
+    }
+);
