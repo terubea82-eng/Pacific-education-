@@ -264,3 +264,11 @@ document.addEventListener(
 
     }
 );
+
+/* Refresh daily lesson */
+
+if (typeof displayDailyLesson === "function") {
+
+    displayDailyLesson();
+
+}
