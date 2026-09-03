@@ -71,6 +71,27 @@ function getDailyLesson(dayNumber) {
     };
 
 }
+/* =========================================
+   DAY 60 PHONICS ASSESSMENT VISIBILITY
+========================================= */
+
+function updateDay60AssessmentVisibility(dayNumber) {
+
+    const assessment =
+        document.getElementById("phonicsAssessmentDay60");
+
+    if (!assessment) {
+        return;
+    }
+
+    if (dayNumber === 60) {
+        assessment.style.display = "block";
+    } else {
+        assessment.style.display = "none";
+    }
+
+}
+
 
 /* =========================================
    DISPLAY TODAY'S LESSON
