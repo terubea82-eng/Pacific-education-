@@ -6,22 +6,29 @@
 function getPacificStudentData() {
 
     return {
-        name: localStorage.getItem("studentName") || "Student",
+        name:
+            localStorage.getItem("studentName") ||
+            "Student",
 
         currentDay:
-            localStorage.getItem("currentDay") || "Day 1",
+            localStorage.getItem("currentDay") ||
+            "Day 1",
 
         lessonsCompleted:
-            localStorage.getItem("lessonsCompleted") || "0",
+            localStorage.getItem("lessonsCompleted") ||
+            "0",
 
         alphabetAssessment:
-            localStorage.getItem("alphabetAssessment") || "Not completed",
+            localStorage.getItem("alphabetAssessment") ||
+            "Not completed",
 
         phonicsAssessment:
-            localStorage.getItem("phonicsAssessment") || "Not completed",
+            localStorage.getItem("phonicsAssessment") ||
+            "Not completed",
 
         learningStatus:
-            localStorage.getItem("learningStatus") || "Monitoring"
+            localStorage.getItem("learningStatus") ||
+            "Monitoring"
     };
 
 }
@@ -33,44 +40,63 @@ function getPacificStudentData() {
 
 function refreshTeacherDashboard() {
 
-    const student = getPacificStudentData();
+    const student =
+        getPacificStudentData();
 
     const name =
-        document.getElementById("teacherStudentName");
+        document.getElementById(
+            "teacherStudentName"
+        );
 
     const day =
-        document.getElementById("teacherCurrentDay");
+        document.getElementById(
+            "teacherCurrentDay"
+        );
 
     const lessons =
-        document.getElementById("teacherLessonsCompleted");
+        document.getElementById(
+            "teacherLessonsCompleted"
+        );
 
     const alphabet =
-        document.getElementById("teacherAlphabetAssessment");
+        document.getElementById(
+            "teacherAlphabetAssessment"
+        );
 
     const phonics =
-        document.getElementById("teacherPhonicsAssessment");
+        document.getElementById(
+            "teacherPhonicsAssessment"
+        );
 
     const status =
-        document.getElementById("teacherLearningStatus");
+        document.getElementById(
+            "teacherLearningStatus"
+        );
 
 
     if (name)
-        name.textContent = student.name;
+        name.textContent =
+            student.name;
 
     if (day)
-        day.textContent = student.currentDay;
+        day.textContent =
+            student.currentDay;
 
     if (lessons)
-        lessons.textContent = student.lessonsCompleted;
+        lessons.textContent =
+            student.lessonsCompleted;
 
     if (alphabet)
-        alphabet.textContent = student.alphabetAssessment;
+        alphabet.textContent =
+            student.alphabetAssessment;
 
     if (phonics)
-        phonics.textContent = student.phonicsAssessment;
+        phonics.textContent =
+            student.phonicsAssessment;
 
     if (status)
-        status.textContent = student.learningStatus;
+        status.textContent =
+            student.learningStatus;
 
 }
 
@@ -81,42 +107,59 @@ function refreshTeacherDashboard() {
 
 function refreshParentDashboard() {
 
-    const student = getPacificStudentData();
+    const student =
+        getPacificStudentData();
 
     const name =
-        document.getElementById("parentStudentName");
+        document.getElementById(
+            "parentStudentName"
+        );
 
     const day =
-        document.getElementById("parentCurrentDay");
+        document.getElementById(
+            "parentCurrentDay"
+        );
 
     const lessons =
-        document.getElementById("parentLessonsCompleted");
+        document.getElementById(
+            "parentLessonsCompleted"
+        );
 
     const alphabet =
-        document.getElementById("parentAlphabetAssessment");
+        document.getElementById(
+            "parentAlphabetAssessment"
+        );
 
     const phonics =
-        document.getElementById("parentPhonicsAssessment");
+        document.getElementById(
+            "parentPhonicsAssessment"
+        );
 
     const status =
-        document.getElementById("parentLearningStatus");
+        document.getElementById(
+            "parentLearningStatus"
+        );
 
 
     if (name)
-        name.textContent = student.name;
+        name.textContent =
+            student.name;
 
     if (day)
-        day.textContent = student.currentDay;
+        day.textContent =
+            student.currentDay;
 
     if (lessons)
-        lessons.textContent = student.lessonsCompleted;
+        lessons.textContent =
+            student.lessonsCompleted;
 
     if (alphabet)
-        alphabet.textContent = student.alphabetAssessment;
+        alphabet.textContent =
+            student.alphabetAssessment;
 
     if (phonics)
-        phonics.textContent = student.phonicsAssessment;
-
+        phonics.textContent =
+            student.phonicsAssessment;
 
     if (status) {
 
@@ -154,63 +197,37 @@ function refreshAllDashboards() {
 
 
 /* =========================================
-   PAGE LOAD
-========================================= */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        refreshAllDashboards();
-
-    }
-);
-Skip to content
-Pacific-education-
-Repository navigation
-Code
-Issues
-Pull requests
-Discussions
-Actions
-Projects
-Security and quality
-Pacific-education-/js
-/
-dashboards.js
-in
-main
-
-Edit
-
-Preview
- @@ -165,3 +165,42 @@ document.addEventListener(
- 
- 
-     }
-     }
- );
- );
-
-/* =========================================
    AUTOMATIC STUDENT PROGRESS
 ========================================= */
 
 function completeLesson() {
 
     let currentDay =
-        parseInt(localStorage.getItem("currentDayNumber") || "1");
+        parseInt(
+            localStorage.getItem(
+                "currentDayNumber"
+            ) || "1"
+        );
 
     let lessonsCompleted =
-        parseInt(localStorage.getItem("lessonsCompleted") || "0");
+        parseInt(
+            localStorage.getItem(
+                "lessonsCompleted"
+            ) || "0"
+        );
+
 
     lessonsCompleted++;
 
     currentDay++;
 
+
     if (currentDay > 365) {
+
         currentDay = 365;
+
     }
+
 
     localStorage.setItem(
         "currentDayNumber",
@@ -227,6 +244,21 @@ function completeLesson() {
         lessonsCompleted
     );
 
+
     refreshAllDashboards();
 
 }
+
+
+/* =========================================
+   PAGE LOAD
+========================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        refreshAllDashboards();
+
+    }
+);
