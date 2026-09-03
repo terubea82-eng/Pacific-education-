@@ -76,54 +76,91 @@ const dailyLessons = {
 };
 
 
-
-   /* =========================================
-   AUTOMATIC DAILY LESSONS
+/* =========================================
+   PROGRESSIVE DAILY LESSONS
    DAY 64 - DAY 364
 ========================================= */
 
-const automaticLessonTopics = [
+const lessonStages = [
 
     {
-        title: "English Vocabulary",
-        activity: "Learn five new English words and say each word aloud.",
-        practice: "Use the five words in simple sentences."
+        start: 64,
+        end: 90,
+        title: "Vocabulary & Sentences",
+        activity: "Learn new English words and practise using them in simple sentences.",
+        practice: "Choose five words and make a sentence with each one."
     },
 
     {
-        title: "Sentence Practice",
-        activity: "Practise making short English sentences.",
-        practice: "Say five complete sentences aloud."
+        start: 91,
+        end: 120,
+        title: "Reading & Understanding",
+        activity: "Read a short English passage and identify the main idea.",
+        practice: "Tell a parent or teacher what the passage was about."
     },
 
     {
-        title: "Reading Practice",
-        activity: "Read a short English passage slowly and clearly.",
-        practice: "Tell a parent or teacher what you read."
+        start: 121,
+        end: 150,
+        title: "Writing Skills",
+        activity: "Practise writing clear English sentences about familiar topics.",
+        practice: "Write five sentences and check your spelling."
     },
 
     {
-        title: "Writing Practice",
-        activity: "Write five simple English sentences.",
-        practice: "Read your sentences aloud and check your spelling."
+        start: 151,
+        end: 180,
+        title: "Grammar Practice",
+        activity: "Practise nouns, verbs, adjectives and correct sentence structure.",
+        practice: "Write five sentences using today's grammar skill."
     },
 
     {
-        title: "Listening Practice",
-        activity: "Listen carefully to English words and sentences.",
-        practice: "Repeat each sentence you hear."
+        start: 181,
+        end: 210,
+        title: "Speaking & Listening",
+        activity: "Practise listening carefully and responding in complete English sentences.",
+        practice: "Speak about your day for one minute."
     },
 
     {
-        title: "Speaking Practice",
-        activity: "Practise speaking English about yourself, your family and your community.",
-        practice: "Speak for one minute using complete sentences."
+        start: 211,
+        end: 240,
+        title: "Pacific Community English",
+        activity: "Practise English using topics about family, school, village, community and Pacific life.",
+        practice: "Describe something important in your community using five sentences."
     },
 
     {
-        title: "Weekly English Review",
-        activity: "Review the English words, sentences and skills you have learned.",
-        practice: "Say five things you remember from your recent lessons."
+        start: 241,
+        end: 270,
+        title: "Storytelling",
+        activity: "Read, understand and create short English stories.",
+        practice: "Tell a short story with a beginning, middle and ending."
+    },
+
+    {
+        start: 271,
+        end: 300,
+        title: "Practical English",
+        activity: "Practise English used in everyday situations such as shopping, travel, school and work.",
+        practice: "Create a short conversation for today's situation."
+    },
+
+    {
+        start: 301,
+        end: 330,
+        title: "English Review & Application",
+        activity: "Review vocabulary, grammar, reading, writing, listening and speaking skills.",
+        practice: "Complete a mixed English activity using several skills."
+    },
+
+    {
+        start: 331,
+        end: 364,
+        title: "Final English Preparation",
+        activity: "Strengthen your English skills through review, practice and independent learning.",
+        practice: "Complete today's English activity and explain what you learned."
     }
 
 ];
@@ -131,21 +168,30 @@ const automaticLessonTopics = [
 
 for (let day = 64; day <= 364; day++) {
 
-    const topic =
-        automaticLessonTopics[(day - 64) % automaticLessonTopics.length];
+    const stage =
+        lessonStages.find(function(stage) {
 
-    dailyLessons[day] = {
+            return day >= stage.start &&
+                   day <= stage.end;
 
-        title:
-            topic.title + " — Day " + day,
+        });
 
-        activity:
-            topic.activity,
+    if (stage) {
 
-        practice:
-            topic.practice
+        dailyLessons[day] = {
 
-    };
+            title:
+                stage.title + " — Day " + day,
+
+            activity:
+                stage.activity,
+
+            practice:
+                stage.practice
+
+        };
+
+    }
 
 }
 /* =========================================
