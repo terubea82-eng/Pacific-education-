@@ -284,6 +284,34 @@ function finishAssessment(
 
     );
 
+       /* DAY 60 — COMPLETE PHONICS ASSESSMENT */
+
+    if (type === "phonics") {
+
+        let currentDayNumber =
+            parseInt(
+                localStorage.getItem("currentDayNumber") || "1",
+                10
+            );
+
+        if (currentDayNumber === 60) {
+
+            currentDayNumber = 61;
+
+            localStorage.setItem(
+                "currentDayNumber",
+                currentDayNumber.toString()
+            );
+
+            localStorage.setItem(
+                "currentDay",
+                "Day " + currentDayNumber
+            );
+
+        }
+
+    }
+
 
     /* SAVE DASHBOARD RESULT */
 
