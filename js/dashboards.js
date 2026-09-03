@@ -213,10 +213,16 @@ function completeLesson() {
 
     /* Complete today's lesson */
 
-    lessonsCompleted++;
+    
+/* Complete today's lesson */
+
+lessonsCompleted++;
+
+if (currentDayNumber !== 60) {
 
     currentDayNumber++;
 
+}
 
     /* Maximum 365 days */
 
