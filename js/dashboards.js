@@ -165,3 +165,68 @@ document.addEventListener(
 
     }
 );
+Skip to content
+Pacific-education-
+Repository navigation
+Code
+Issues
+Pull requests
+Discussions
+Actions
+Projects
+Security and quality
+Pacific-education-/js
+/
+dashboards.js
+in
+main
+
+Edit
+
+Preview
+ @@ -165,3 +165,42 @@ document.addEventListener(
+ 
+ 
+     }
+     }
+ );
+ );
+
+/* =========================================
+   AUTOMATIC STUDENT PROGRESS
+========================================= */
+
+function completeLesson() {
+
+    let currentDay =
+        parseInt(localStorage.getItem("currentDayNumber") || "1");
+
+    let lessonsCompleted =
+        parseInt(localStorage.getItem("lessonsCompleted") || "0");
+
+    lessonsCompleted++;
+
+    currentDay++;
+
+    if (currentDay > 365) {
+        currentDay = 365;
+    }
+
+    localStorage.setItem(
+        "currentDayNumber",
+        currentDay
+    );
+
+    localStorage.setItem(
+        "currentDay",
+        "Day " + currentDay
+    );
+
+    localStorage.setItem(
+        "lessonsCompleted",
+        lessonsCompleted
+    );
+
+    refreshAllDashboards();
+
+}
