@@ -1,38 +1,37 @@
 /* =========================================
    PACIFIC EDUCATION — ASSESSMENTS
+   DAY 30 + DAY 60
 ========================================= */
 
 const assessmentData = {
 
-alphabet: {
-    title: "Day 30 — Alphabet Assessment",
+    alphabet: {
+        title: "Day 30 — Alphabet Assessment",
 
-    questions: [
-        {
-            question: "Which letter is this? A",
-            options: ["A", "B", "C"],
-            answer: "A"
-        },
-        {
-            question: "Which letter comes after B?",
-            options: ["A", "C", "D"],
-            answer: "C"
-        },
-        {
-            question: "Which word begins with A?",
-            options: ["Apple", "Dog", "Sun"],
-            answer: "Apple"
-        },
-        {
-            question: "Which letter comes before D?",
-            options: ["B", "C", "E"],
-            answer: "C"
-        }
-    ]
-},
+        questions: [
+            {
+                question: "Which letter is this? A",
+                options: ["A", "B", "C"],
+                answer: "A"
+            },
+            {
+                question: "Which letter comes after B?",
+                options: ["A", "C", "D"],
+                answer: "C"
+            },
+            {
+                question: "Which word begins with A?",
+                options: ["Apple", "Dog", "Sun"],
+                answer: "Apple"
+            },
+            {
+                question: "Which letter comes before D?",
+                options: ["B", "C", "E"],
+                answer: "C"
+            }
+        ]
+    },
 
-
-    
     phonics: {
         title: "Day 60 — Phonics Assessment",
 
@@ -75,6 +74,29 @@ function escapeHTML(value) {
 
 
 /* =========================================
+   ASSESSMENT DISPLAY
+========================================= */
+
+function displayAssessment(title, html) {
+
+    document.body.innerHTML = `
+        <main class="assessment-screen">
+
+            <div class="activity">
+
+                <h2>${escapeHTML(title)}</h2>
+
+                ${html}
+
+            </div>
+
+        </main>
+    `;
+
+}
+
+
+/* =========================================
    START ASSESSMENT
 ========================================= */
 
@@ -88,7 +110,6 @@ function startAssessment(type) {
 
         return;
     }
-
 
     let questionNumber = 0;
 
@@ -104,51 +125,44 @@ function startAssessment(type) {
         window.currentAssessmentQuestion = question;
 
 
-        const buttons =
-            question.options.map(function(option) {
+        let buttons = "";
 
-                return `
-                    <button
-                        type="button"
-                        onclick="answerAssessment(this.dataset.answer)"
-                        data-answer="${escapeHTML(option)}">
+        question.options.forEach(function(option) {
 
-                        ${escapeHTML(option)}
+            buttons += `
+                <button
+                    type="button"
+                    style="display:block; width:100%; margin:10px 0; padding:14px; font-size:18px;"
+                    onclick="answerAssessment('${escapeHTML(option)}')">
 
-                    </button>
-                `;
+                    ${escapeHTML(option)}
 
-            }).join("");
+                </button>
+            `;
+
+        });
 
 
-        if (typeof showLesson === "function") {
+        displayAssessment(
 
-            showLesson(
+            assessment.title,
 
-                assessment.title,
+            `
+            <p>
+                Question ${questionNumber + 1}
+                of ${assessment.questions.length}
+            </p>
 
-                `
-                <div class="activity">
+            <h3>
+                ${escapeHTML(question.question)}
+            </h3>
 
-                    <p>
-                        Question ${questionNumber + 1}
-                        of ${assessment.questions.length}
-                    </p>
+            <div>
+                ${buttons}
+            </div>
+            `
 
-                    <h3>
-                        ${escapeHTML(question.question)}
-                    </h3>
-
-                    <div>
-                        ${buttons}
-                    </div>
-
-                </div>
-                `
-
-            );
-
-        }
+        );
 
     }
 
@@ -271,9 +285,7 @@ function finishAssessment(
     );
 
 
-    /* =========================================
-       SAVE CURRENT RESULT FOR DASHBOARDS
-    ========================================= */
+    /* SAVE DASHBOARD RESULT */
 
     if (type === "alphabet") {
 
@@ -295,9 +307,7 @@ function finishAssessment(
     }
 
 
-    /* =========================================
-       UPDATE LEARNING STATUS
-    ========================================= */
+    /* LEARNING STATUS */
 
     if (percentage >= 80) {
 
@@ -323,9 +333,7 @@ function finishAssessment(
     }
 
 
-    /* =========================================
-       REFRESH TEACHER + PARENT DASHBOARDS
-    ========================================= */
+    /* REFRESH DASHBOARDS */
 
     if (
         typeof refreshTeacherDashboard === "function"
@@ -345,82 +353,67 @@ function finishAssessment(
     }
 
 
-    /* =========================================
-       SHOW RESULT
-    ========================================= */
+    /* SHOW RESULT */
 
-    showLesson(
+    displayAssessment(
 
         "🎯 Assessment Result",
 
         `
-        <div class="activity">
+        <h3>
+            Assessment Complete
+        </h3>
 
-            <h2>
-                🎯 Assessment Complete
-            </h2>
+        <h3>
+            Score: ${assessmentScore}/${total}
+        </h3>
 
-            <h3>
-                Score: ${assessmentScore}/${total}
-            </h3>
+        <h3>
+            Result: ${percentage}%
+        </h3>
 
-            <h3>
-                Result: ${percentage}%
-            </h3>
+        ${
+            percentage >= 80
 
+            ?
 
-            ${
-                percentage >= 80
+            `
+            <p>
+                🟢 Excellent work!
+            </p>
+            `
 
-                ?
+            :
 
-                `
-                <p class="success">
-                    🟢 Excellent work!
-                </p>
-                `
+            percentage >= 60
 
-                :
+            ?
 
-                percentage >= 60
+            `
+            <p>
+                🟡 Good effort. Keep practising.
+            </p>
+            `
 
-                ?
+            :
 
-                `
-                <p>
-                    🟡 Good effort. Keep practising.
-                </p>
-                `
-
-                :
-
-                `
-                <p class="error">
-                    🔴 Additional practice recommended.
-                </p>
-                `
-            }
+            `
+            <p>
+                🔴 Additional practice recommended.
+            </p>
+            `
+        }
 
 
-            <button
-                type="button"
-                onclick="startAssessment('${type}')">
+        <button
+            type="button"
+            onclick="startAssessment('${type}')">
 
-                🔄 Try Again
+            🔄 Try Again
 
-            </button>
+        </button>
 
-
-            <button
-                type="button"
-                onclick="startDailyLesson()">
-
-                📚 Return to Lesson
-
-            </button>
-
-        </div>
-        `
+    `
 
     );
 
@@ -441,9 +434,9 @@ function startAlphabetAssessment() {
 /* =========================================
    DAY 60 — PHONICS
 ========================================= */
+
 function startPhonicsAssessment() {
 
     startAssessment("phonics");
 
 }
-
