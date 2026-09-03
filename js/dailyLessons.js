@@ -76,28 +76,78 @@ const dailyLessons = {
 };
 
 
-/* =========================================
+
+   /* =========================================
    AUTOMATIC DAILY LESSONS
    DAY 64 - DAY 364
 ========================================= */
 
+const automaticLessonTopics = [
+
+    {
+        title: "English Vocabulary",
+        activity: "Learn five new English words and say each word aloud.",
+        practice: "Use the five words in simple sentences."
+    },
+
+    {
+        title: "Sentence Practice",
+        activity: "Practise making short English sentences.",
+        practice: "Say five complete sentences aloud."
+    },
+
+    {
+        title: "Reading Practice",
+        activity: "Read a short English passage slowly and clearly.",
+        practice: "Tell a parent or teacher what you read."
+    },
+
+    {
+        title: "Writing Practice",
+        activity: "Write five simple English sentences.",
+        practice: "Read your sentences aloud and check your spelling."
+    },
+
+    {
+        title: "Listening Practice",
+        activity: "Listen carefully to English words and sentences.",
+        practice: "Repeat each sentence you hear."
+    },
+
+    {
+        title: "Speaking Practice",
+        activity: "Practise speaking English about yourself, your family and your community.",
+        practice: "Speak for one minute using complete sentences."
+    },
+
+    {
+        title: "Weekly English Review",
+        activity: "Review the English words, sentences and skills you have learned.",
+        practice: "Say five things you remember from your recent lessons."
+    }
+
+];
+
+
 for (let day = 64; day <= 364; day++) {
+
+    const topic =
+        automaticLessonTopics[(day - 64) % automaticLessonTopics.length];
 
     dailyLessons[day] = {
 
-        title: "Daily English Practice — Day " + day,
+        title:
+            topic.title + " — Day " + day,
 
         activity:
-            "Practise speaking, listening, reading and writing in English.",
+            topic.activity,
 
         practice:
-            "Say five English sentences aloud and practise them with a parent, teacher or friend."
+            topic.practice
 
     };
 
 }
-
-   
 /* =========================================
    GET CURRENT DAILY LESSON
 ========================================= */
