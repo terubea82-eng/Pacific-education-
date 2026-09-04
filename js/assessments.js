@@ -1,13 +1,13 @@
 /* =========================================
    PACIFIC EDUCATION — ASSESSMENTS
-   DAY 30 + DAY 60
+   Day 60 Phonics Pass Mark: 80%
 ========================================= */
 
 const assessmentData = {
 
     alphabet: {
-        title: "Day 30 — Alphabet Assessment",
-
+        title: "Alphabet Assessment",
+        day: 30,
         questions: [
             {
                 question: "Which letter is this? A",
@@ -21,78 +21,47 @@ const assessmentData = {
             },
             {
                 question: "Which word begins with A?",
-                options: ["Apple", "Dog", "Sun"],
+                options: ["Apple", "Ball", "Cat"],
                 answer: "Apple"
-            },
-            {
-                question: "Which letter comes before D?",
-                options: ["B", "C", "E"],
-                answer: "C"
             }
         ]
     },
 
     phonics: {
-        title: "Day 60 — Phonics Assessment",
-
+        title: "Phonics Assessment",
+        day: 60,
         questions: [
             {
                 question: "Which word begins with the /b/ sound?",
-                options: ["Ball", "Cat", "Dog"],
+                options: ["Ball", "Cat", "Sun"],
                 answer: "Ball"
             },
             {
                 question: "Which word begins with the /m/ sound?",
-                options: ["Sun", "Map", "Dog"],
+                options: ["Map", "Dog", "Fish"],
                 answer: "Map"
             },
             {
-                question: "Blend /c/ /a/ /t/.",
+                question: "What word do these sounds make? /c/ /a/ /t/",
                 options: ["Cat", "Dog", "Sun"],
                 answer: "Cat"
             }
         ]
     }
-
 };
 
 
 /* =========================================
-   HTML SAFETY
+   SECURITY
 ========================================= */
 
 function escapeHTML(value) {
-
     return String(value)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
-
-}
-
-
-/* =========================================
-   ASSESSMENT DISPLAY
-========================================= */
-
-function displayAssessment(title, html) {
-
-    document.body.innerHTML = `
-        <main class="assessment-screen">
-
-            <div class="activity">
-
-                <h2>${escapeHTML(title)}</h2>
-
-                ${html}
-
-            </div>
-
-        </main>
-    `;
-
 }
 
 
@@ -105,366 +74,371 @@ function startAssessment(type) {
     const assessment = assessmentData[type];
 
     if (!assessment) {
-
-        alert("Assessment not found.");
-
+        console.error("Assessment not found:", type);
         return;
     }
 
-    let questionNumber = 0;
-
-    let assessmentScore = 0;
-
-
-    function showQuestion() {
-
-        const question =
-            assessment.questions[questionNumber];
-
-
-        window.currentAssessmentQuestion = question;
-
-
-        let buttons = "";
-
-        question.options.forEach(function(option) {
-
-            buttons += `
-                <button
-                    type="button"
-                    style="display:block; width:100%; margin:10px 0; padding:14px; font-size:18px;"
-                    onclick="answerAssessment('${escapeHTML(option)}')">
-
-                    ${escapeHTML(option)}
-
-                </button>
-            `;
-
-        });
-
-
-        displayAssessment(
-
-            assessment.title,
-
-            `
-            <p>
-                Question ${questionNumber + 1}
-                of ${assessment.questions.length}
-            </p>
-
-            <h3>
-                ${escapeHTML(question.question)}
-            </h3>
-
-            <div>
-                ${buttons}
-            </div>
-            `
-
-        );
-
-    }
-
-
-    window.answerAssessment = function(answer) {
-
-        const question =
-            window.currentAssessmentQuestion;
-
-
-        if (!question) {
-
-            return;
-        }
-
-
-        if (
-            String(answer).trim().toLowerCase()
-            ===
-            String(question.answer).trim().toLowerCase()
-        ) {
-
-            assessmentScore++;
-
-
-            if (typeof speakText === "function") {
-
-                speakText("Correct!");
-
-            }
-
-        } else {
-
-            if (typeof speakText === "function") {
-
-                speakText("Let's keep practising.");
-
-            }
-
-        }
-
-
-        questionNumber++;
-
-
-        if (
-            questionNumber <
-            assessment.questions.length
-        ) {
-
-            showQuestion();
-
-        } else {
-
-            finishAssessment(
-
-                type,
-
-                assessmentScore,
-
-                assessment.questions.length
-
-            );
-
-        }
-
+    window.currentAssessment = {
+        type: type,
+        questions: assessment.questions,
+        currentQuestion: 0,
+        score: 0
     };
 
-
-    showQuestion();
-
+    showAssessmentQuestion();
 }
 
 
 /* =========================================
-   SAVE ASSESSMENT RESULT
+   SHOW QUESTION
 ========================================= */
 
-function finishAssessment(
-    type,
-    assessmentScore,
-    total
-) {
+function showAssessmentQuestion() {
 
-    const percentage =
-        Math.round(
-            (assessmentScore / total) * 100
-        );
+    const assessment = window.currentAssessment;
+
+    if (!assessment) return;
+
+    const question =
+        assessment.questions[assessment.currentQuestion];
+
+    if (!question) {
+        finishAssessment();
+        return;
+    }
+
+    let html = `
+        <div class="activity">
+
+            <h2>📝 Assessment</h2>
+
+            <h3>
+                Question ${assessment.currentQuestion + 1}
+                of ${assessment.questions.length}
+            </h3>
+
+            <p>
+                ${escapeHTML(question.question)}
+            </p>
+    `;
+
+    question.options.forEach(option => {
+
+        html += `
+            <button
+                type="button"
+                onclick="answerAssessment('${escapeHTML(option)}')"
+                style="display:block;margin:10px 0;"
+            >
+                ${escapeHTML(option)}
+            </button>
+        `;
+    });
+
+    html += `</div>`;
+
+    showLesson(html);
+}
 
 
-    const results =
-        JSON.parse(
+/* =========================================
+   ANSWER QUESTION
+========================================= */
+
+function answerAssessment(answer) {
+
+    const assessment = window.currentAssessment;
+
+    if (!assessment) return;
+
+    const question =
+        assessment.questions[assessment.currentQuestion];
+
+    if (answer === question.answer) {
+        assessment.score++;
+    }
+
+    assessment.currentQuestion++;
+
+    if (
+        assessment.currentQuestion >=
+        assessment.questions.length
+    ) {
+        finishAssessment();
+    } else {
+        showAssessmentQuestion();
+    }
+}
+
+
+/* =========================================
+   FINISH ASSESSMENT
+========================================= */
+
+function finishAssessment() {
+
+    const assessment = window.currentAssessment;
+
+    if (!assessment) return;
+
+    const total = assessment.questions.length;
+
+    const percentage = Math.round(
+        (assessment.score / total) * 100
+    );
+
+    const passed = percentage >= 80;
+
+    const today = new Date().toISOString();
+
+    /* -----------------------------------------
+       SAVE ASSESSMENT HISTORY
+    ----------------------------------------- */
+
+    let history = [];
+
+    try {
+        history = JSON.parse(
             localStorage.getItem(
                 "pacificEducationAssessments"
             ) || "[]"
         );
 
+        if (!Array.isArray(history)) {
+            history = [];
+        }
 
-    results.push({
+    } catch (error) {
+        history = [];
+    }
 
-        assessment: type,
-
-        score: assessmentScore,
-
+    history.push({
+        type: assessment.type,
+        day: assessmentData[assessment.type].day,
+        score: assessment.score,
         total: total,
-
         percentage: percentage,
-
-        date: new Date().toISOString()
-
+        passed: passed,
+        date: today
     });
 
-
     localStorage.setItem(
-
         "pacificEducationAssessments",
-
-        JSON.stringify(results)
-
+        JSON.stringify(history)
     );
 
-       /* DAY 60 — COMPLETE PHONICS ASSESSMENT */
 
-    if (type === "phonics") {
+    /* -----------------------------------------
+       SAVE CURRENT RESULT
+    ----------------------------------------- */
 
-        let currentDayNumber =
-            parseInt(
-                localStorage.getItem("currentDayNumber") || "1",
-                10
+    localStorage.setItem(
+        assessment.type + "Assessment",
+        percentage + "%"
+    );
+
+
+    /* -----------------------------------------
+       DAY 60 PHONICS CHECKPOINT
+    ----------------------------------------- */
+
+    const currentDay = parseInt(
+        localStorage.getItem("currentDayNumber") || "1",
+        10
+    );
+
+
+    if (
+        assessment.type === "phonics" &&
+        currentDay === 60
+    ) {
+
+        if (passed) {
+
+            /* PASS → UNLOCK DAY 61 */
+
+            localStorage.setItem(
+                "phonicsAssessmentPassed",
+                "true"
             );
-
-        if (currentDayNumber === 60) {
-
-            currentDayNumber = 61;
 
             localStorage.setItem(
                 "currentDayNumber",
-                currentDayNumber.toString()
+                "61"
             );
 
             localStorage.setItem(
                 "currentDay",
-                "Day " + currentDayNumber
+                "Day 61"
             );
 
+            localStorage.setItem(
+                "learningStatus",
+                "Passed — Day 61 unlocked"
+            );
+
+        } else {
+
+            /* FAIL → REMAIN ON DAY 60 */
+
+            localStorage.setItem(
+                "phonicsAssessmentPassed",
+                "false"
+            );
+
+            localStorage.setItem(
+                "currentDayNumber",
+                "60"
+            );
+
+            localStorage.setItem(
+                "currentDay",
+                "Day 60"
+            );
+
+            localStorage.setItem(
+                "learningStatus",
+                "Additional practice recommended"
+            );
         }
-
     }
 
 
-    /* SAVE DASHBOARD RESULT */
+    /* -----------------------------------------
+       GENERAL LEARNING STATUS
+    ----------------------------------------- */
 
-    if (type === "alphabet") {
+    if (assessment.type !== "phonics") {
 
-        localStorage.setItem(
-            "alphabetAssessment",
-            percentage + "%"
-        );
+        if (percentage >= 80) {
 
+            localStorage.setItem(
+                "learningStatus",
+                "Excellent progress"
+            );
+
+        } else if (percentage >= 60) {
+
+            localStorage.setItem(
+                "learningStatus",
+                "Good progress"
+            );
+
+        } else {
+
+            localStorage.setItem(
+                "learningStatus",
+                "Additional practice recommended"
+            );
+        }
     }
 
 
-    if (type === "phonics") {
+    /* -----------------------------------------
+       REFRESH DASHBOARDS
+    ----------------------------------------- */
 
-        localStorage.setItem(
-            "phonicsAssessment",
-            percentage + "%"
-        );
-
+    if (typeof refreshAllDashboards === "function") {
+        refreshAllDashboards();
     }
 
 
-    /* LEARNING STATUS */
+    /* -----------------------------------------
+       RESULT SCREEN
+    ----------------------------------------- */
 
-    if (percentage >= 80) {
+    let resultMessage = "";
 
-        localStorage.setItem(
-            "learningStatus",
-            "Excellent progress"
-        );
+    if (assessment.type === "phonics") {
 
-    } else if (percentage >= 60) {
+        if (passed) {
 
-        localStorage.setItem(
-            "learningStatus",
-            "Good progress"
-        );
+            resultMessage = `
+                <p>🎉 <strong>Well done!</strong></p>
+
+                <p>
+                    You scored ${percentage}%.
+                </p>
+
+                <p>
+                    ✅ You passed the Day 60 Phonics Assessment.
+                </p>
+
+                <p>
+                    🔓 <strong>Day 61 is now unlocked.</strong>
+                </p>
+            `;
+
+        } else {
+
+            resultMessage = `
+                <p>
+                    You scored ${percentage}%.
+                </p>
+
+                <p>
+                    ❌ You need <strong>80%</strong> to pass.
+                </p>
+
+                <p>
+                    📚 Stay on Day 60 and practise your phonics
+                    before trying the assessment again.
+                </p>
+            `;
+        }
 
     } else {
 
-        localStorage.setItem(
-            "learningStatus",
-            "Additional practice recommended"
-        );
+        resultMessage = `
+            <p>
+                You scored ${percentage}%.
+            </p>
 
+            <p>
+                ${
+                    passed
+                    ? "🎉 Excellent progress!"
+                    : "📚 Additional practice is recommended."
+                }
+            </p>
+        `;
     }
 
 
-    /* REFRESH DASHBOARDS */
+    showLesson(`
+        <div class="activity">
 
-    if (
-        typeof refreshTeacherDashboard === "function"
-    ) {
+            <h2>📊 Assessment Result</h2>
 
-        refreshTeacherDashboard();
+            ${resultMessage}
 
-    }
+            <button
+                type="button"
+                onclick="startDailyLesson()"
+            >
+                📚 Continue Learning
+            </button>
 
+        </div>
+    `);
 
-    if (
-        typeof refreshParentDashboard === "function"
-    ) {
-
-        refreshParentDashboard();
-
-    }
-
-
-    /* SHOW RESULT */
-
-    displayAssessment(
-
-        "🎯 Assessment Result",
-
-        `
-        <h3>
-            Assessment Complete
-        </h3>
-
-        <h3>
-            Score: ${assessmentScore}/${total}
-        </h3>
-
-        <h3>
-            Result: ${percentage}%
-        </h3>
-
-        ${
-            percentage >= 80
-
-            ?
-
-            `
-            <p>
-                🟢 Excellent work!
-            </p>
-            `
-
-            :
-
-            percentage >= 60
-
-            ?
-
-            `
-            <p>
-                🟡 Good effort. Keep practising.
-            </p>
-            `
-
-            :
-
-            `
-            <p>
-                🔴 Additional practice recommended.
-            </p>
-            `
-        }
-
-
-        <button
-            type="button"
-            onclick="startAssessment('${type}')">
-
-            🔄 Try Again
-
-        </button>
-
-    `
-
-    );
-
+    window.currentAssessment = null;
 }
 
 
 /* =========================================
-   DAY 30 — ALPHABET
-========================================= */
-
-function startAlphabetAssessment() {
-
-    startAssessment("alphabet");
-
-}
-
-
-/* =========================================
-   DAY 60 — PHONICS
+   PHONICS ASSESSMENT BUTTON
 ========================================= */
 
 function startPhonicsAssessment() {
-
     startAssessment("phonics");
+}
 
+
+/* =========================================
+   ALPHABET ASSESSMENT BUTTON
+========================================= */
+
+function startAlphabetAssessment() {
+    startAssessment("alphabet");
 }
