@@ -23,6 +23,18 @@ function getPacificStudentData() {
             10
         );
 
+    if (isNaN(currentDayNumber) || currentDayNumber < 1) {
+        currentDayNumber = 1;
+    }
+
+    if (currentDayNumber > 365) {
+        currentDayNumber = 365;
+    }
+
+    if (isNaN(lessonsCompleted) || lessonsCompleted < 0) {
+        lessonsCompleted = 0;
+    }
+
     return {
 
         name:
@@ -199,41 +211,58 @@ function completeLesson() {
     /* Prevent invalid numbers */
 
     if (isNaN(currentDayNumber) || currentDayNumber < 1) {
-
         currentDayNumber = 1;
-
     }
 
     if (isNaN(lessonsCompleted) || lessonsCompleted < 0) {
-
         lessonsCompleted = 0;
-
     }
 
 
-    /* Complete today's lesson */
+    /* =========================================
+       PREVENT REPEATED COMPLETION AFTER DAY 365
+    ========================================= */
 
-    
-/* Complete today's lesson */
+    if (currentDayNumber >= 365) {
 
-lessonsCompleted++;
+        if (typeof displayDailyLesson === "function") {
+            displayDailyLesson();
+        }
 
-if (currentDayNumber !== 60) {
+        refreshAllDashboards();
 
-    currentDayNumber++;
+        return;
+    }
 
-}
+
+    /* =========================================
+       COMPLETE TODAY'S LESSON
+    ========================================= */
+
+    lessonsCompleted++;
+
+
+    /* =========================================
+       DAY 60 CHECKPOINT
+    ========================================= */
+
+    if (currentDayNumber !== 60) {
+
+        currentDayNumber++;
+
+    }
+
 
     /* Maximum 365 days */
 
     if (currentDayNumber > 365) {
-
         currentDayNumber = 365;
-
     }
 
 
-    /* Save progress */
+    /* =========================================
+       SAVE PROGRESS
+    ========================================= */
 
     localStorage.setItem(
         "currentDayNumber",
@@ -251,11 +280,16 @@ if (currentDayNumber !== 60) {
     );
 
 
-    /* Refresh dashboards immediately */
+    /* =========================================
+       REFRESH DASHBOARDS
+    ========================================= */
 
     refreshAllDashboards();
-   
-    /* Refresh daily lesson */
+
+
+    /* =========================================
+       REFRESH DAILY LESSON
+    ========================================= */
 
     if (typeof displayDailyLesson === "function") {
 
@@ -265,8 +299,9 @@ if (currentDayNumber !== 60) {
 
 }
 
+
 /* =========================================
-   PAGE LOAD — REFRESH DASHBOARDS
+   PAGE LOAD
 ========================================= */
 
 document.addEventListener(
@@ -277,23 +312,41 @@ document.addEventListener(
 
     }
 );
+
+
 /* =========================================
    OWNER TEST MODE
 ========================================= */
 
 function setOwnerTestDay(dayNumber) {
 
+    let testDay =
+        parseInt(dayNumber, 10);
+
+    if (
+        isNaN(testDay) ||
+        testDay < 1 ||
+        testDay > 365
+    ) {
+
+        return;
+
+    }
+
+
     localStorage.setItem(
         "currentDayNumber",
-        dayNumber.toString()
+        testDay.toString()
     );
 
     localStorage.setItem(
         "currentDay",
-        "Day " + dayNumber
+        "Day " + testDay
     );
 
+
     refreshAllDashboards();
+
 
     if (typeof displayDailyLesson === "function") {
 
