@@ -323,10 +323,24 @@ function displayDailyLesson() {
     }
 
     if (practice) {
+
+    if (
+        window.PacificEducationFiveMinutePractice
+    ) {
+
+        window.PacificEducationFiveMinutePractice.render(
+            practice,
+            dayNumber
+        );
+
+    } else {
+
         practice.textContent =
             lesson.practice;
+
     }
 
+}
 }
 
 
