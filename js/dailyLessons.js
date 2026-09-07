@@ -342,3 +342,29 @@ document.addEventListener(
 
     }
 );
+
+
+/* =========================================
+   SHARED LESSON / ASSESSMENT DISPLAY
+========================================= */
+
+function showLesson(html) {
+
+    const dailyLesson =
+        document.getElementById("dailyLesson");
+
+    if (!dailyLesson) {
+        console.warn(
+            "Pacific Education: dailyLesson container not found."
+        );
+        return;
+    }
+
+    /*
+       Safely replace the lesson display
+       with the supplied application-generated HTML.
+    */
+
+    dailyLesson.innerHTML = html;
+
+}
