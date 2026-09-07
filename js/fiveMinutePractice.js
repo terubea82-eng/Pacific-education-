@@ -1,188 +1,1208 @@
-
 /* =========================================
    PACIFIC EDUCATION
    5-MINUTE INDEPENDENT PRACTICE
-   VERSION 1.0.0
+   VERSION 2.0.0
+   365-DAY CURRICULUM
 ========================================= */
 
 /*
-   Purpose:
-   - Provides a short 5-minute practice activity
+   PURPOSE
+   - Provides a short independent practice activity
      after the main daily English lesson.
+   - Covers Days 1–365.
    - Supports learners who need additional practice.
    - Keeps practice progress separate from lesson progress.
    - Does NOT change the daily lesson day number.
-   - Suitable for parent, teacher and learner support.
-   - Designed for future audio, games, accessibility
-     and FEMIS integration.
+   - Supports learner, parent and teacher use.
+   - Designed for future audio, games, accessibility,
+     teacher monitoring and FEMIS integration.
 
-   SECURITY:
-   - Never store passwords.
-   - Never store authentication credentials.
-   - Never store payment information.
-   - Never store API keys or payment secrets.
-   - Do not expose confidential Pacific Education
-     information through copy/paste.
+   CURRICULUM PRINCIPLES
+   - Daily practice should normally take about 5 minutes.
+   - Activities progress from simple to more advanced.
+   - Activities include speaking, listening, reading,
+     phonics, vocabulary, grammar, writing and review.
+   - Weekly review is included.
+   - Assessment checkpoint days are protected.
+   - Practice should reinforce the daily lesson rather
+     than replace the daily lesson.
+
+   SECURITY
+   - NEVER store passwords.
+   - NEVER store authentication credentials.
+   - NEVER store payment information.
+   - NEVER store API keys or payment secrets.
+   - NEVER place confidential account information
+     into practice activities.
+   - Confidential Pacific Education information must
+     not be copied or pasted outside the application.
+   - The application should warn users before displaying
+     or handling confidential information.
 */
 
-const PACIFIC_EDUCATION_FIVE_MINUTE_VERSION = "1.0.0";
+const PACIFIC_EDUCATION_FIVE_MINUTE_VERSION = "2.0.0";
 
-const fiveMinutePracticeData = {
+const PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY = 365;
 
-    default: {
-        title: "5-Minute English Practice",
-        activity:
-            "Review today's English lesson for five minutes.",
-        steps: [
-            "Read today's lesson words or sentences.",
-            "Say the words or sentences aloud.",
-            "Practise one example.",
-            "Try the activity again without help."
-        ]
-    },
+
+/* =========================================
+   SAFE DAY NORMALISATION
+========================================= */
+
+function normaliseFiveMinuteDay(dayNumber) {
+
+    const day = parseInt(dayNumber, 10);
+
+    if (
+        isNaN(day) ||
+        day < 1 ||
+        day > PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY
+    ) {
+        return null;
+    }
+
+    return day;
+}
+
+
+/* =========================================
+   CURRICULUM WORD BANKS
+========================================= */
+
+const fiveMinuteWordBanks = {
+
+    greetings: [
+        "hello",
+        "good morning",
+        "good afternoon",
+        "goodbye",
+        "thank you",
+        "please",
+        "sorry",
+        "welcome"
+    ],
+
+    family: [
+        "mother",
+        "father",
+        "sister",
+        "brother",
+        "grandmother",
+        "grandfather",
+        "family",
+        "child"
+    ],
+
+    colours: [
+        "red",
+        "blue",
+        "yellow",
+        "green",
+        "black",
+        "white",
+        "orange",
+        "purple"
+    ],
+
+    numbers: [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten"
+    ],
+
+    classroom: [
+        "book",
+        "pen",
+        "pencil",
+        "desk",
+        "chair",
+        "bag",
+        "teacher",
+        "student"
+    ],
+
+    actions: [
+        "walk",
+        "run",
+        "sit",
+        "stand",
+        "jump",
+        "read",
+        "write",
+        "listen",
+        "speak",
+        "look"
+    ],
+
+    home: [
+        "house",
+        "door",
+        "window",
+        "room",
+        "bed",
+        "table",
+        "chair",
+        "kitchen"
+    ],
+
+    nature: [
+        "sun",
+        "rain",
+        "wind",
+        "tree",
+        "flower",
+        "water",
+        "river",
+        "sea"
+    ],
+
+    food: [
+        "rice",
+        "fish",
+        "fruit",
+        "bread",
+        "water",
+        "milk",
+        "banana",
+        "coconut"
+    ],
+
+    community: [
+        "school",
+        "village",
+        "community",
+        "market",
+        "clinic",
+        "road",
+        "church",
+        "shop"
+    ],
+
+    phonics: [
+        "cat",
+        "dog",
+        "sun",
+        "fish",
+        "map",
+        "pen",
+        "pig",
+        "top",
+        "cup",
+        "red"
+    ],
+
+    adjectives: [
+        "big",
+        "small",
+        "hot",
+        "cold",
+        "fast",
+        "slow",
+        "happy",
+        "sad",
+        "clean",
+        "dirty"
+    ],
+
+    verbs: [
+        "eat",
+        "drink",
+        "play",
+        "read",
+        "write",
+        "walk",
+        "run",
+        "help",
+        "learn",
+        "work"
+    ]
+};
+
+
+/* =========================================
+   PHONICS DATA
+========================================= */
+
+const fiveMinutePhonics = {
 
     1: {
-        title: "5-Minute Practice — English Words",
-        activity:
-            "Practise hello, goodbye and thank you.",
-        steps: [
-            "Say hello three times.",
-            "Say goodbye three times.",
-            "Say thank you three times.",
-            "Use one word in a short sentence."
-        ]
+        sound: "a",
+        examples: ["apple", "ant"]
     },
 
     2: {
-        title: "5-Minute Practice — Greetings",
-        activity:
-            "Practise English greetings.",
-        steps: [
-            "Say Hello!",
-            "Say Good morning!",
-            "Say How are you?",
-            "Practise a short greeting with someone."
-        ]
+        sound: "b",
+        examples: ["ball", "bat"]
     },
 
     3: {
-        title: "5-Minute Practice — My Name",
-        activity:
-            "Practise introducing yourself.",
-        steps: [
-            "Say My name is...",
-            "Say your full name.",
-            "Repeat the sentence three times.",
-            "Ask someone their name."
-        ]
+        sound: "c",
+        examples: ["cat", "cup"]
     },
 
     4: {
-        title: "5-Minute Practice — Family",
-        activity:
-            "Practise family words.",
-        steps: [
-            "Say mother.",
-            "Say father.",
-            "Say sister.",
-            "Say brother.",
-            "Make one sentence about your family."
-        ]
+        sound: "d",
+        examples: ["dog", "duck"]
     },
 
     5: {
-        title: "5-Minute Practice — Colours",
-        activity:
-            "Review basic colour words.",
-        steps: [
-            "Find something red.",
-            "Find something blue.",
-            "Find something yellow.",
-            "Find something green."
-        ]
+        sound: "e",
+        examples: ["egg", "elephant"]
     },
 
     6: {
-        title: "5-Minute Practice — Numbers",
-        activity:
-            "Practise counting from one to five.",
-        steps: [
-            "Say one.",
-            "Say two.",
-            "Say three.",
-            "Say four.",
-            "Say five.",
-            "Count five objects."
-        ]
+        sound: "f",
+        examples: ["fish", "fan"]
     },
 
     7: {
-        title: "5-Minute Practice — Week 1 Review",
-        activity:
-            "Review the English learned during Week 1.",
-        steps: [
-            "Say one greeting.",
-            "Say your name.",
-            "Name one family member.",
-            "Name two colours.",
-            "Count from one to five."
-        ]
+        sound: "g",
+        examples: ["goat", "gum"]
     },
 
-    60: {
-        title: "5-Minute Practice — Phonics Checkpoint",
-        activity:
-            "Prepare for the Day 60 Phonics Assessment.",
-        steps: [
-            "Say the beginning sound in cat.",
-            "Say the beginning sound in sun.",
-            "Say the beginning sound in dog.",
-            "Blend /c/ /a/ /t/ to make cat.",
-            "Practise until you feel ready for the assessment."
-        ]
+    8: {
+        sound: "h",
+        examples: ["hat", "hen"]
     },
 
-    61: {
-        title: "5-Minute Practice — Everyday Actions",
-        activity:
-            "Review action words.",
-        steps: [
-            "Say walk.",
-            "Say run.",
-            "Say sit.",
-            "Say stand.",
-            "Say jump.",
-            "Demonstrate each action."
-        ]
+    9: {
+        sound: "i",
+        examples: ["igloo", "ink"]
     },
 
-    62: {
-        title: "5-Minute Practice — Action Sentences",
-        activity:
-            "Practise sentences using I can.",
-        steps: [
-            "Say I can walk.",
-            "Say I can run.",
-            "Say I can sit.",
-            "Say I can stand.",
-            "Say I can jump."
-        ]
+    10: {
+        sound: "j",
+        examples: ["jam", "jug"]
     },
 
-    63: {
-        title: "5-Minute Practice — Things I Can Do",
-        activity:
-            "Create five sentences using I can.",
-        steps: [
-            "Make one I can sentence.",
-            "Make a second sentence.",
-            "Make a third sentence.",
-            "Make a fourth sentence.",
-            "Make a fifth sentence."
-        ]
+    11: {
+        sound: "k",
+        examples: ["kite", "king"]
+    },
+
+    12: {
+        sound: "l",
+        examples: ["lion", "leg"]
+    },
+
+    13: {
+        sound: "m",
+        examples: ["map", "man"]
+    },
+
+    14: {
+        sound: "n",
+        examples: ["net", "nose"]
+    },
+
+    15: {
+        sound: "o",
+        examples: ["orange", "ox"]
+    },
+
+    16: {
+        sound: "p",
+        examples: ["pig", "pen"]
+    },
+
+    17: {
+        sound: "q",
+        examples: ["queen", "quiz"]
+    },
+
+    18: {
+        sound: "r",
+        examples: ["rat", "red"]
+    },
+
+    19: {
+        sound: "s",
+        examples: ["sun", "sock"]
+    },
+
+    20: {
+        sound: "t",
+        examples: ["top", "ten"]
+    },
+
+    21: {
+        sound: "u",
+        examples: ["up", "umbrella"]
+    },
+
+    22: {
+        sound: "v",
+        examples: ["van", "vet"]
+    },
+
+    23: {
+        sound: "w",
+        examples: ["wet", "web"]
+    },
+
+    24: {
+        sound: "x",
+        examples: ["fox", "box"]
+    },
+
+    25: {
+        sound: "y",
+        examples: ["yes", "yellow"]
+    },
+
+    26: {
+        sound: "z",
+        examples: ["zoo", "zip"]
+    }
+};
+
+
+/* =========================================
+   CURRICULUM STAGES
+========================================= */
+
+const fiveMinuteStages = [
+
+    {
+        min: 1,
+        max: 30,
+        name: "Foundation English",
+        focus: "letters, sounds, greetings, numbers and basic words"
+    },
+
+    {
+        min: 31,
+        max: 60,
+        name: "Early Phonics",
+        focus: "letter sounds, blending and simple words"
+    },
+
+    {
+        min: 61,
+        max: 90,
+        name: "Everyday English",
+        focus: "actions, people, objects and simple sentences"
+    },
+
+    {
+        min: 91,
+        max: 120,
+        name: "Vocabulary Building",
+        focus: "home, school, food, nature and community vocabulary"
+    },
+
+    {
+        min: 121,
+        max: 150,
+        name: "Sentence Building",
+        focus: "simple sentences, questions and answers"
+    },
+
+    {
+        min: 151,
+        max: 180,
+        name: "Grammar Foundations",
+        focus: "nouns, verbs, adjectives, pronouns and sentence order"
+    },
+
+    {
+        min: 181,
+        max: 210,
+        name: "Reading Development",
+        focus: "short texts, comprehension and vocabulary"
+    },
+
+    {
+        min: 211,
+        max: 240,
+        name: "Writing Development",
+        focus: "sentences, descriptions and short paragraphs"
+    },
+
+    {
+        min: 241,
+        max: 270,
+        name: "Communication Skills",
+        focus: "speaking, listening, questions and conversation"
+    },
+
+    {
+        min: 271,
+        max: 300,
+        name: "Pacific English Practice",
+        focus: "everyday Pacific contexts and Standard English development"
+    },
+
+    {
+        min: 301,
+        max: 330,
+        name: "Intermediate English",
+        focus: "grammar, comprehension, vocabulary and writing"
+    },
+
+    {
+        min: 331,
+        max: 365,
+        name: "Consolidation and Mastery",
+        focus: "review, communication, reading and independent English"
+    }
+];
+
+
+/* =========================================
+   GET CURRICULUM STAGE
+========================================= */
+
+function getFiveMinuteStage(day) {
+
+    for (let i = 0; i < fiveMinuteStages.length; i++) {
+
+        if (
+            day >= fiveMinuteStages[i].min &&
+            day <= fiveMinuteStages[i].max
+        ) {
+            return fiveMinuteStages[i];
+        }
+
     }
 
-};
+    return fiveMinuteStages[
+        fiveMinuteStages.length - 1
+    ];
+}
+
+
+/* =========================================
+   WEEK NUMBER
+========================================= */
+
+function getFiveMinuteWeek(day) {
+
+    return Math.ceil(day / 7);
+}
+
+
+/* =========================================
+   DAY OF WEEK IN CURRICULUM
+========================================= */
+
+function getFiveMinuteDayOfWeek(day) {
+
+    const position = ((day - 1) % 7) + 1;
+
+    return position;
+}
+
+
+/* =========================================
+   DAILY CURRICULUM GENERATOR
+========================================= */
+
+function generateFiveMinutePractice(day) {
+
+    const stage =
+        getFiveMinuteStage(day);
+
+    const week =
+        getFiveMinuteWeek(day);
+
+    const weekDay =
+        getFiveMinuteDayOfWeek(day);
+
+    /*
+       Every seventh curriculum day is a review.
+       This creates regular reinforcement without
+       requiring 365 separate hard-coded objects.
+    */
+
+    if (weekDay === 7) {
+
+        return {
+
+            title:
+                "5-Minute Practice — Week " +
+                week +
+                " Review",
+
+            activity:
+                "Review the English skills practised this week.",
+
+            steps: [
+
+                "Review three words from this week's lessons.",
+
+                "Say the words aloud.",
+
+                "Read one sentence from this week's learning.",
+
+                "Make one new sentence using a word you remember.",
+
+                "Explain one thing you learned this week."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "weekly-review"
+
+        };
+
+    }
+
+
+    /* =====================================
+       FOUNDATION STAGE
+    ===================================== */
+
+    if (day <= 30) {
+
+        const word =
+            fiveMinuteWordBanks.greetings[
+                (day - 1) %
+                fiveMinuteWordBanks.greetings.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Foundation English",
+
+            activity:
+                "Practise a basic English word or phrase.",
+
+            steps: [
+
+                "Look at the word: " + word + ".",
+
+                "Say the word three times.",
+
+                "Spell the word if you can.",
+
+                "Use the word in a short sentence.",
+
+                "Say your sentence aloud."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "foundation"
+
+        };
+
+    }
+
+
+    /* =====================================
+       EARLY PHONICS
+    ===================================== */
+
+    if (day <= 59) {
+
+        const phonicsDay =
+            ((day - 31) % 26) + 1;
+
+        const phonics =
+            fiveMinutePhonics[phonicsDay];
+
+        return {
+
+            title:
+                "5-Minute Practice — Phonics",
+
+            activity:
+                "Practise the sound /" +
+                phonics.sound +
+                "/.",
+
+            steps: [
+
+                "Say the sound /" +
+                phonics.sound +
+                "/.",
+
+                "Say " +
+                phonics.examples[0] +
+                ".", 
+
+                "Say " +
+                phonics.examples[1] +
+                ".", 
+
+                "Listen for the target sound.",
+
+                "Practise the sound and words again."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "phonics"
+
+        };
+
+    }
+
+
+    /* =====================================
+       DAY 60 CHECKPOINT
+    ===================================== */
+
+    if (day === 60) {
+
+        return {
+
+            title:
+                "5-Minute Practice — Phonics Checkpoint",
+
+            activity:
+                "Prepare for the Day 60 Phonics Assessment.",
+
+            steps: [
+
+                "Say the beginning sound in cat.",
+
+                "Say the beginning sound in sun.",
+
+                "Say the beginning sound in dog.",
+
+                "Blend /c/ /a/ /t/ to make cat.",
+
+                "Practise until you feel ready for the assessment."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "assessment-preparation",
+            assessmentDay: 60
+
+        };
+
+    }
+
+
+    /* =====================================
+       EVERYDAY ENGLISH
+    ===================================== */
+
+    if (day <= 90) {
+
+        const action =
+            fiveMinuteWordBanks.actions[
+                (day - 61) %
+                fiveMinuteWordBanks.actions.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Everyday Actions",
+
+            activity:
+                "Practise using an action word in English.",
+
+            steps: [
+
+                "Say the word: " + action + ".",
+
+                "Show the action if possible.",
+
+                "Say: I can " +
+                action +
+                ".",
+
+                "Repeat the sentence three times.",
+
+                "Make one new sentence using the word."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "everyday-english"
+
+        };
+
+    }
+
+
+    /* =====================================
+       VOCABULARY
+    ===================================== */
+
+    if (day <= 120) {
+
+        const groups = [
+            fiveMinuteWordBanks.family,
+            fiveMinuteWordBanks.home,
+            fiveMinuteWordBanks.food,
+            fiveMinuteWordBanks.nature,
+            fiveMinuteWordBanks.community
+        ];
+
+        const group =
+            groups[
+                (day - 91) %
+                groups.length
+            ];
+
+        const word =
+            group[
+                Math.floor(
+                    (day - 91) /
+                    groups.length
+                ) %
+                group.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Vocabulary",
+
+            activity:
+                "Learn and use one everyday English word.",
+
+            steps: [
+
+                "Say the word: " + word + ".",
+
+                "Explain what the word means.",
+
+                "Spell the word.",
+
+                "Use the word in a sentence.",
+
+                "Say your sentence aloud."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "vocabulary"
+
+        };
+
+    }
+
+
+    /* =====================================
+       SENTENCE BUILDING
+    ===================================== */
+
+    if (day <= 150) {
+
+        const subjects = [
+            "I",
+            "We",
+            "You",
+            "He",
+            "She",
+            "They"
+        ];
+
+        const subject =
+            subjects[
+                (day - 121) %
+                subjects.length
+            ];
+
+        const verb =
+            fiveMinuteWordBanks.verbs[
+                Math.floor(
+                    (day - 121) /
+                    subjects.length
+                ) %
+                fiveMinuteWordBanks.verbs.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Sentence Building",
+
+            activity:
+                "Build and say a complete English sentence.",
+
+            steps: [
+
+                "Start with: " +
+                subject +
+                ".",
+
+                "Add an action word: " +
+                verb +
+                ".",
+
+                "Make the sentence: " +
+                subject +
+                " " +
+                verb +
+                ".",
+
+                "Say the sentence three times.",
+
+                "Create one different sentence."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "sentence-building"
+
+        };
+
+    }
+
+
+    /* =====================================
+       GRAMMAR
+    ===================================== */
+
+    if (day <= 180) {
+
+        const grammarSkills = [
+
+            "nouns",
+            "verbs",
+            "pronouns",
+            "adjectives",
+            "singular and plural words",
+            "capital letters",
+            "full stops",
+            "question marks",
+            "present tense",
+            "sentence order"
+
+        ];
+
+        const skill =
+            grammarSkills[
+                (day - 151) %
+                grammarSkills.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Grammar",
+
+            activity:
+                "Practise " + skill + " in English.",
+
+            steps: [
+
+                "Name the grammar skill: " +
+                skill +
+                ".",
+
+                "Think of one example.",
+
+                "Say the example aloud.",
+
+                "Write the example if appropriate.",
+
+                "Check that the sentence makes sense."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "grammar"
+
+        };
+
+    }
+
+
+    /* =====================================
+       READING
+    ===================================== */
+
+    if (day <= 210) {
+
+        return {
+
+            title:
+                "5-Minute Practice — Reading",
+
+            activity:
+                "Read a short English passage and show understanding.",
+
+            steps: [
+
+                "Read a short sentence or paragraph.",
+
+                "Read it aloud.",
+
+                "Identify one important word.",
+
+                "Explain what the sentence means.",
+
+                "Tell someone one thing you learned."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "reading"
+
+        };
+
+    }
+
+
+    /* =====================================
+       WRITING
+    ===================================== */
+
+    if (day <= 240) {
+
+        return {
+
+            title:
+                "5-Minute Practice — Writing",
+
+            activity:
+                "Practise writing clear English.",
+
+            steps: [
+
+                "Choose one familiar topic.",
+
+                "Write one complete sentence.",
+
+                "Check the first letter is capitalised.",
+
+                "Check the sentence has correct punctuation.",
+
+                "Read your sentence aloud."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "writing"
+
+        };
+
+    }
+
+
+    /* =====================================
+       COMMUNICATION
+    ===================================== */
+
+    if (day <= 270) {
+
+        const questions = [
+
+            "What is your name?",
+
+            "How are you today?",
+
+            "What do you like?",
+
+            "What did you learn today?",
+
+            "What is your favourite activity?",
+
+            "Who helps you at school?",
+
+            "What can you do well?"
+
+        ];
+
+        const question =
+            questions[
+                (day - 241) %
+                questions.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Communication",
+
+            activity:
+                "Practise answering an English question.",
+
+            steps: [
+
+                "Read the question: " +
+                question,
+
+                "Think about your answer.",
+
+                "Answer using a complete sentence.",
+
+                "Say your answer aloud.",
+
+                "Ask yourself one related question."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "communication"
+
+        };
+
+    }
+
+
+    /* =====================================
+       PACIFIC ENGLISH → STANDARD ENGLISH
+    ===================================== */
+
+    if (day <= 300) {
+
+        return {
+
+            title:
+                "5-Minute Practice — Pacific English to Standard English",
+
+            activity:
+                "Practise clear English for everyday communication.",
+
+            steps: [
+
+                "Think of an English expression you use every day.",
+
+                "Say it clearly.",
+
+                "Think about how it would be expressed in Standard English.",
+
+                "Practise the Standard English sentence.",
+
+                "Use the sentence in a real conversation."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "pacific-standard-english"
+
+        };
+
+    }
+
+
+    /* =====================================
+       INTERMEDIATE ENGLISH
+    ===================================== */
+
+    if (day <= 330) {
+
+        const skills = [
+
+            "reading comprehension",
+            "sentence structure",
+            "vocabulary",
+            "grammar",
+            "speaking",
+            "writing",
+            "listening",
+            "summarising"
+
+        ];
+
+        const skill =
+            skills[
+                (day - 301) %
+                skills.length
+            ];
+
+        return {
+
+            title:
+                "5-Minute Practice — Intermediate English",
+
+            activity:
+                "Strengthen your " +
+                skill +
+                " skills.",
+
+            steps: [
+
+                "Practise one " +
+                skill +
+                " activity.",
+
+                "Say or write your answer.",
+
+                "Check your English carefully.",
+
+                "Correct one mistake if you find one.",
+
+                "Repeat the improved answer."
+
+            ],
+
+            stage: stage.name,
+            week: week,
+            day: day,
+            type: "intermediate"
+
+        };
+
+    }
+
+
+    /* =====================================
+       FINAL CONSOLIDATION
+    ===================================== */
+
+    return {
+
+        title:
+            "5-Minute Practice — English Mastery",
+
+        activity:
+            "Review and apply the English skills you have learned.",
+
+        steps: [
+
+            "Choose one English skill you have learned.",
+
+            "Practise it for one minute.",
+
+            "Read or say your example aloud.",
+
+            "Create a new example independently.",
+
+            "Explain what you learned."
+
+        ],
+
+        stage: stage.name,
+        week: week,
+        day: day,
+        type: "mastery"
+
+    };
+
+}
 
 
 /* =========================================
@@ -191,22 +1211,43 @@ const fiveMinutePracticeData = {
 
 function getFiveMinutePractice(dayNumber) {
 
-    const day = parseInt(dayNumber, 10);
+    const day =
+        normaliseFiveMinuteDay(dayNumber);
 
-    if (
-        !isNaN(day) &&
-        fiveMinutePracticeData[day]
-    ) {
-        return fiveMinutePracticeData[day];
+    if (day === null) {
+
+        return {
+
+            title:
+                "5-Minute English Practice",
+
+            activity:
+                "Please select a valid practice day from Day 1 to Day 365.",
+
+            steps: [
+
+                "Select a valid day.",
+
+                "Read the practice activity.",
+
+                "Practise the activity aloud.",
+
+                "Complete the activity.",
+
+                "Review your learning."
+
+            ],
+
+            stage: "Invalid day",
+            week: null,
+            day: null,
+            type: "invalid"
+
+        };
+
     }
 
-    return {
-        ...fiveMinutePracticeData.default,
-        title:
-            "5-Minute English Practice — Day " +
-            (isNaN(day) ? "" : day)
-    };
-
+    return generateFiveMinutePractice(day);
 }
 
 
@@ -223,7 +1264,22 @@ function getFiveMinutePracticeHistory() {
                 "pacificEducationFiveMinutePractice"
             );
 
-        return saved ? JSON.parse(saved) : {};
+        if (!saved) {
+            return {};
+        }
+
+        const history =
+            JSON.parse(saved);
+
+        if (
+            !history ||
+            typeof history !== "object" ||
+            Array.isArray(history)
+        ) {
+            return {};
+        }
+
+        return history;
 
     } catch (error) {
 
@@ -247,11 +1303,15 @@ function saveFiveMinutePracticeHistory(history) {
             JSON.stringify(history)
         );
 
+        return true;
+
     } catch (error) {
 
         console.warn(
             "Pacific Education: practice history could not be saved."
         );
+
+        return false;
 
     }
 
@@ -264,14 +1324,82 @@ function saveFiveMinutePracticeHistory(history) {
 
 function getFiveMinutePracticeStatus(dayNumber) {
 
+    const day =
+        normaliseFiveMinuteDay(dayNumber);
+
+    if (day === null) {
+
+        return {
+
+            completed: false,
+            valid: false
+
+        };
+
+    }
+
     const history =
         getFiveMinutePracticeHistory();
 
-    const day =
-        String(parseInt(dayNumber, 10));
+    return history[String(day)] || {
 
-    return history[day] || {
-        completed: false
+        completed: false,
+        valid: true,
+        day: day
+
+    };
+
+}
+
+
+/* =========================================
+   PRACTICE PROGRESS SUMMARY
+========================================= */
+
+function getFiveMinutePracticeProgress() {
+
+    const history =
+        getFiveMinutePracticeHistory();
+
+    let completedDays = 0;
+
+    for (
+        let day = 1;
+        day <= PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY;
+        day++
+    ) {
+
+        const record =
+            history[String(day)];
+
+        if (
+            record &&
+            record.completed === true
+        ) {
+            completedDays++;
+        }
+
+    }
+
+    return {
+
+        completedDays: completedDays,
+
+        totalDays:
+            PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY,
+
+        remainingDays:
+            PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY -
+            completedDays,
+
+        percentage:
+            Math.round(
+                (
+                    completedDays /
+                    PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY
+                ) * 100
+            )
+
     };
 
 }
@@ -284,36 +1412,47 @@ function getFiveMinutePracticeStatus(dayNumber) {
 function startFiveMinutePractice(dayNumber) {
 
     const day =
-        parseInt(dayNumber, 10);
+        normaliseFiveMinuteDay(dayNumber);
 
-    if (
-        isNaN(day) ||
-        day < 1 ||
-        day > 365
-    ) {
+    if (day === null) {
+
         console.warn(
             "Pacific Education: invalid practice day."
         );
+
         return false;
+
     }
 
     const practice =
         getFiveMinutePractice(day);
 
-    const event =
+    document.dispatchEvent(
+
         new CustomEvent(
             "pacificEducationFiveMinutePracticeStarted",
             {
                 detail: {
+
                     day: day,
-                    title: practice.title,
+
+                    title:
+                        practice.title,
+
+                    type:
+                        practice.type,
+
+                    stage:
+                        practice.stage,
+
                     version:
                         PACIFIC_EDUCATION_FIVE_MINUTE_VERSION
+
                 }
             }
-        );
+        )
 
-    document.dispatchEvent(event);
+    );
 
     return true;
 
@@ -327,13 +1466,9 @@ function startFiveMinutePractice(dayNumber) {
 function completeFiveMinutePractice(dayNumber) {
 
     const day =
-        parseInt(dayNumber, 10);
+        normaliseFiveMinuteDay(dayNumber);
 
-    if (
-        isNaN(day) ||
-        day < 1 ||
-        day > 365
-    ) {
+    if (day === null) {
         return false;
     }
 
@@ -341,30 +1476,98 @@ function completeFiveMinutePractice(dayNumber) {
         getFiveMinutePracticeHistory();
 
     history[String(day)] = {
+
         completed: true,
+
         completedAt:
             new Date().toISOString(),
+
         version:
             PACIFIC_EDUCATION_FIVE_MINUTE_VERSION
+
     };
 
-    saveFiveMinutePracticeHistory(history);
+    const saved =
+        saveFiveMinutePracticeHistory(history);
+
+    if (!saved) {
+        return false;
+    }
 
     document.dispatchEvent(
+
         new CustomEvent(
             "pacificEducationFiveMinutePracticeCompleted",
             {
                 detail: {
+
                     day: day,
+
                     completed: true,
+
+                    progress:
+                        getFiveMinutePracticeProgress(),
+
                     version:
                         PACIFIC_EDUCATION_FIVE_MINUTE_VERSION
+
                 }
             }
         )
+
     );
 
     return true;
+
+}
+
+
+/* =========================================
+   RESET ONE DAY
+========================================= */
+
+function resetFiveMinutePracticeDay(dayNumber) {
+
+    const day =
+        normaliseFiveMinuteDay(dayNumber);
+
+    if (day === null) {
+        return false;
+    }
+
+    const history =
+        getFiveMinutePracticeHistory();
+
+    delete history[String(day)];
+
+    return saveFiveMinutePracticeHistory(history);
+
+}
+
+
+/* =========================================
+   RESET ALL PRACTICE
+========================================= */
+
+function resetFiveMinutePracticeHistory() {
+
+    try {
+
+        localStorage.removeItem(
+            "pacificEducationFiveMinutePractice"
+        );
+
+        return true;
+
+    } catch (error) {
+
+        console.warn(
+            "Pacific Education: practice history could not be reset."
+        );
+
+        return false;
+
+    }
 
 }
 
@@ -383,7 +1586,7 @@ function renderFiveMinutePractice(
     }
 
     const day =
-        parseInt(dayNumber, 10);
+        normaliseFiveMinuteDay(dayNumber);
 
     const practice =
         getFiveMinutePractice(day);
@@ -392,6 +1595,11 @@ function renderFiveMinutePractice(
         getFiveMinutePracticeStatus(day);
 
     container.textContent = "";
+
+
+    /* =====================================
+       TITLE
+    ===================================== */
 
     const title =
         document.createElement("h3");
@@ -402,6 +1610,33 @@ function renderFiveMinutePractice(
     container.appendChild(title);
 
 
+    /* =====================================
+       SAFETY NOTICE
+    ===================================== */
+
+    const warning =
+        document.createElement("div");
+
+    warning.setAttribute(
+        "role",
+        "note"
+    );
+
+    warning.setAttribute(
+        "aria-label",
+        "Pacific Education safety notice"
+    );
+
+    warning.textContent =
+        "Safety notice: Never copy or paste passwords, payment details, authentication codes, API keys, or other confidential Pacific Education information outside the app.";
+
+    container.appendChild(warning);
+
+
+    /* =====================================
+       ACTIVITY
+    ===================================== */
+
     const activity =
         document.createElement("p");
 
@@ -411,28 +1646,73 @@ function renderFiveMinutePractice(
     container.appendChild(activity);
 
 
+    /* =====================================
+       STAGE INFORMATION
+    ===================================== */
+
+    const stage =
+        document.createElement("p");
+
+    stage.textContent =
+        "Learning stage: " +
+        (practice.stage || "English practice");
+
+    container.appendChild(stage);
+
+
+    /* =====================================
+       INSTRUCTIONS
+    ===================================== */
+
     const list =
         document.createElement("ol");
 
-    practice.steps.forEach(function(step) {
+    practice.steps.forEach(
+        function(step) {
 
-        const item =
-            document.createElement("li");
+            const item =
+                document.createElement("li");
 
-        item.textContent =
-            step;
+            item.textContent =
+                step;
 
-        list.appendChild(item);
+            list.appendChild(item);
 
-    });
+        }
+    );
 
     container.appendChild(list);
 
 
+    /* =====================================
+       COMPLETION STATUS
+    ===================================== */
+
+    const statusText =
+        document.createElement("p");
+
+    statusText.setAttribute(
+        "aria-live",
+        "polite"
+    );
+
+    statusText.textContent =
+        status.completed
+            ? "Status: Completed"
+            : "Status: Not completed";
+
+    container.appendChild(statusText);
+
+
+    /* =====================================
+       COMPLETE BUTTON
+    ===================================== */
+
     const button =
         document.createElement("button");
 
-    button.type = "button";
+    button.type =
+        "button";
 
     button.textContent =
         status.completed
@@ -454,12 +1734,17 @@ function renderFiveMinutePractice(
                 button.textContent =
                     "5-Minute Practice Completed";
 
-                button.disabled = true;
+                button.disabled =
+                    true;
+
+                statusText.textContent =
+                    "Status: Completed";
 
             }
 
         }
     );
+
 
     container.appendChild(button);
 
@@ -475,17 +1760,32 @@ window.PacificEducationFiveMinutePractice = {
     version:
         PACIFIC_EDUCATION_FIVE_MINUTE_VERSION,
 
+    maxDay:
+        PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY,
+
     getPractice:
         getFiveMinutePractice,
 
     getStatus:
         getFiveMinutePracticeStatus,
 
+    getProgress:
+        getFiveMinutePracticeProgress,
+
+    getStage:
+        getFiveMinuteStage,
+
     start:
         startFiveMinutePractice,
 
     complete:
         completeFiveMinutePractice,
+
+    resetDay:
+        resetFiveMinutePracticeDay,
+
+    resetAll:
+        resetFiveMinutePracticeHistory,
 
     render:
         renderFiveMinutePractice
@@ -498,13 +1798,20 @@ window.PacificEducationFiveMinutePractice = {
 ========================================= */
 
 document.dispatchEvent(
+
     new CustomEvent(
         "pacificEducationFiveMinutePracticeLoaded",
         {
             detail: {
+
                 version:
-                    PACIFIC_EDUCATION_FIVE_MINUTE_VERSION
+                    PACIFIC_EDUCATION_FIVE_MINUTE_VERSION,
+
+                totalDays:
+                    PACIFIC_EDUCATION_FIVE_MINUTE_MAX_DAY
+
             }
         }
     )
+
 );
