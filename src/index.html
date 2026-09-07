@@ -338,6 +338,49 @@
 
 </section>
 
+
+<!-- PACIFIC EDUCATION — BUY PLANS --><section id="buyPlansSection" class="dashboard-section">
+    <div class="activity">
+        <h2>💳 Pacific Education — Buy Plans</h2>    <!-- MANDATORY CONFIDENTIAL INFORMATION WARNING -->
+    <div class="activity">
+        <h3>🔐 Security & Confidential Information Warning</h3>
+        <p>
+            For your protection, never copy or paste Pacific Education
+            passwords, authentication credentials, payment information,
+            API keys, security codes, or other confidential information
+            outside Pacific Education.
+        </p>
+        <p>
+            Pacific Education will guide you toward safe options when
+            confidential information is required. Payment information
+            must only be entered through the secure payment checkout.
+        </p>
+    </div>
+
+    <p>Select your plan below. Fiji users are charged in FJD and
+    international users are charged in USD.</p>
+
+    <!-- BUY PLANS ARE RENDERED HERE -->
+    <div id="buyPlans"></div>
+
+    <p class="small">
+        🔒 Payments are handled through a secure checkout/backend.
+        Payment secrets are never stored in this webpage.
+    </p>
+</div>
+
+</section><script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.PacificEducationBuyPlans) {
+            window.PacificEducationBuyPlans.showConfidentialInformationWarning();
+
+            window.PacificEducationBuyPlans.render(
+                document.getElementById("buyPlans"),
+                "FJ"
+            );
+        }
+    });
+</script>
 <!-- =========================================
      PACIFIC EDUCATION JAVASCRIPT
 ========================================= -->
