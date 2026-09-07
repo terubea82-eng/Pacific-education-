@@ -368,3 +368,28 @@ function showLesson(html) {
     dailyLesson.innerHTML = html;
 
 }
+
+/* =========================================
+   START / RETURN TO DAILY LESSON
+========================================= */
+
+function startDailyLesson() {
+
+    /*
+       Return the learner to the current
+       daily lesson without changing progress.
+    */
+
+    displayDailyLesson();
+
+    const dailyLesson =
+        document.getElementById("dailyLesson");
+
+    if (dailyLesson) {
+        dailyLesson.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+
+}
