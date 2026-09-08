@@ -50,3 +50,21 @@
     };
 
 })();
+
+
+                    <button type="button" id="startTerms">
+                        ▶ Start Term 1
+                    </button>
+
+                    <div id="termStep"></div>
+                </section>
+            `;
+
+            document.getElementById("startTerms").onclick =
+                function () {
+                    alert("Term 1 setup will start here.");
+                };
+        }
+    };
+
+})();
