@@ -454,3 +454,16 @@ function setOwnerTestDay(dayNumber) {
 /* =========================================
    END OF DASHBOARDS ENGINE
 ========================================= */
+
+/* =========================================
+   PACIFIC EDUCATION DASHBOARDS API
+========================================= */
+
+window.PacificEducationDashboards = Object.freeze({
+    version: "1.0.0",
+    getStudentData: getPacificStudentData,
+    refreshTeacher: refreshTeacherDashboard,
+    refreshParent: refreshParentDashboard,
+    refreshAll: refreshAllDashboards,
+    completeLesson: completeLesson
+});
