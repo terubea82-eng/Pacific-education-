@@ -5,9 +5,7 @@
      DAILY ENGLISH LESSON
 ========================================= --><div class="activity" id="dailyLesson"><h2>📚 Daily English Lesson</h2>
 
-<h3 id="dailyLessonDay">
-    Day 1
-</h3>
+<h3 id="dailyLessonDay">Day 1</h3>
 
 <h3 id="dailyLessonTitle">
     My First English Words
@@ -335,10 +333,6 @@
         💳 Pacific Education — Buy Plans
     </h2>
 
-    <!-- =====================================
-         MANDATORY SECURITY WARNING
-    ====================================== -->
-
     <div class="activity">
 
         <h3>
@@ -369,25 +363,13 @@
 
     </div>
 
-    <!-- =====================================
-         PLAN INFORMATION
-    ====================================== -->
-
     <p>
         Select your plan below.
         Fiji users are charged in FJD and
         international users are charged in USD.
     </p>
 
-    <!-- =====================================
-         BUY PLANS RENDER TARGET
-    ====================================== -->
-
     <div id="buyPlans"></div>
-
-    <!-- =====================================
-         PAYMENT SECURITY NOTICE
-    ====================================== -->
 
     <p class="small">
 
@@ -406,20 +388,52 @@
 ========================================= --><div id="nationalCalendarSetup"></div><!-- =========================================
      PACIFIC EDUCATION JAVASCRIPT
 ========================================= --><script src="./js/buyPlans.js"></script><!-- National Calendar Engine --><script src="../js/js/nationalTermCalendar.js"></script><script src="../js/pacificEducationCore.js"></script><script src="../js/pacificEducationDailyLearningIntegration.js"></script><script src="../js/pacificEducationAssessmentIntegration.js"></script><script src="../js/pacificEducationMarksIntegration.js"></script><script src="js/pacificEducationCoreBridge.js"></script><script src="js/pacificEducationAssessmentBridge.js"></script><script src="../js/pacificEducationPacificGuardian.js"></script><script src="../js/pacificEducationAIWorkflow.js"></script><script src="js/app.js"></script><!-- =========================================
+     NATIONAL CALENDAR STARTUP CONNECTION
+========================================= --><script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const calendarContainer =
+            document.getElementById(
+                "nationalCalendarSetup"
+            );
+
+        if (
+            calendarContainer &&
+            window.PacificEducationNationalCalendarSetup &&
+            typeof window.PacificEducationNationalCalendarSetup.start ===
+                "function"
+        ) {
+
+            window.PacificEducationNationalCalendarSetup.start(
+                calendarContainer
+            );
+
+        }
+
+    }
+);
+
+</script><!-- =========================================
      BUY PLANS INITIALIZATION
 ========================================= --><script>
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
-    if (window.PacificEducationBuyPlans) {
+        if (window.PacificEducationBuyPlans) {
 
-        window.PacificEducationBuyPlans.render(
-            document.getElementById("buyPlans"),
-            "FJ"
-        );
+            window.PacificEducationBuyPlans.render(
+                document.getElementById("buyPlans"),
+                "FJ"
+            );
+
+        }
 
     }
-
-});
+);
 
 </script>
