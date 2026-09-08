@@ -407,3 +407,16 @@ function startDailyLesson() {
     }
 
 }
+
+/* =========================================
+   PACIFIC EDUCATION DAILY LESSON API
+========================================= */
+
+window.PacificEducationDailyLessons = Object.freeze({
+    version: "1.0.0",
+    getDailyLesson: getDailyLesson,
+    updateDay60AssessmentVisibility: updateDay60AssessmentVisibility,
+    displayDailyLesson: displayDailyLesson,
+    showLesson: showLesson,
+    start: startDailyLesson
+});
