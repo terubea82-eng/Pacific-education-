@@ -457,3 +457,14 @@
 <script src="../js/pacificEducationAIWorkflow.js"></script>
 
 <script src="js/app.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.PacificEducationBuyPlans) {
+        window.PacificEducationBuyPlans.render(
+            document.getElementById("buyPlans"),
+            "FJ"
+        );
+    }
+});
+</script>
