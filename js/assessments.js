@@ -441,4 +441,26 @@ function startPhonicsAssessment() {
 
 function startAlphabetAssessment() {
     startAssessment("alphabet");
+
 }
+
+
+/* =========================================
+   PACIFIC EDUCATION ASSESSMENT API
+========================================= */
+
+window.PacificEducationAssessments = Object.freeze({
+    version: "1.0.0",
+    getAssessment: function (type) {
+        return assessmentData[type] || null;
+    },
+    start: function (type) {
+        return startAssessment(type);
+    },
+    startAlphabet: function () {
+        return startAlphabetAssessment();
+    },
+    startPhonics: function () {
+        return startPhonicsAssessment();
+    }
+});
