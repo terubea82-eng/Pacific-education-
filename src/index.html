@@ -39,7 +39,9 @@
 
 </div><!-- =========================================
      DAY 60 — PHONICS ASSESSMENT
-========================================= --><div class="activity" id="phonicsAssessmentDay60"><h3>🔊 Day 60 — Phonics Assessment</h3>
+========================================= --><div
+    class="activity"
+    id="phonicsAssessmentDay60"><h3>🔊 Day 60 — Phonics Assessment</h3>
 
 <p>
     Test your knowledge of sounds,
@@ -56,7 +58,9 @@
 
 </div><!-- =========================================
      OWNER TEST MODE
-========================================= --><section id="ownerTestMode" class="dashboard-section"><div class="activity">
+========================================= --><section
+    id="ownerTestMode"
+    class="dashboard-section"><div class="activity">
 
     <h3>🛠️ Owner Test Mode</h3>
 
@@ -85,7 +89,9 @@
 
 </section><!-- =========================================
      TEACHER DASHBOARD
-========================================= --><section id="teacherDashboard" class="dashboard-section"><div class="activity">
+========================================= --><section
+    id="teacherDashboard"
+    class="dashboard-section"><div class="activity">
 
     <h2>👩‍🏫 Teacher Dashboard</h2>
 
@@ -93,7 +99,6 @@
         Monitor student learning progress,
         assessments and daily lesson completion.
     </p>
-
 
     <div class="dashboard-box">
 
@@ -111,7 +116,6 @@
 
     </div>
 
-
     <div class="dashboard-box">
 
         <div class="small">
@@ -127,7 +131,6 @@
         </div>
 
     </div>
-
 
     <div class="dashboard-box">
 
@@ -145,7 +148,6 @@
 
     </div>
 
-
     <div class="dashboard-box">
 
         <div class="small">
@@ -161,7 +163,6 @@
         </div>
 
     </div>
-
 
     <div class="dashboard-box">
 
@@ -179,7 +180,6 @@
 
     </div>
 
-
     <div class="dashboard-box">
 
         <div class="small">
@@ -196,7 +196,6 @@
 
     </div>
 
-
     <button
         type="button"
         onclick="refreshTeacherDashboard()">
@@ -209,7 +208,9 @@
 
 </section><!-- =========================================
      PARENT DASHBOARD
-========================================= --><section id="parentDashboard" class="dashboard-section"><div class="activity">
+========================================= --><section
+    id="parentDashboard"
+    class="dashboard-section"><div class="activity">
 
     <h2>👨‍👩‍👧 Parent Dashboard</h2>
 
@@ -217,7 +218,6 @@
         Follow your child's English learning
         progress at home.
     </p>
-
 
     <div class="dashboard-box">
 
@@ -235,7 +235,6 @@
 
     </div>
 
-
     <div class="dashboard-box">
 
         <div class="small">
@@ -251,7 +250,6 @@
         </div>
 
     </div>
-
 
     <div class="dashboard-box">
 
@@ -269,7 +267,6 @@
 
     </div>
 
-
     <div class="dashboard-box">
 
         <div class="small">
@@ -285,7 +282,6 @@
         </div>
 
     </div>
-
 
     <div class="dashboard-box">
 
@@ -303,7 +299,6 @@
 
     </div>
 
-
     <div class="dashboard-box">
 
         <div class="small">
@@ -319,7 +314,6 @@
         </div>
 
     </div>
-
 
     <button
         type="button"
@@ -340,7 +334,6 @@
     <h2>
         💳 Pacific Education — Buy Plans
     </h2>
-
 
     <!-- =====================================
          MANDATORY SECURITY WARNING
@@ -376,7 +369,6 @@
 
     </div>
 
-
     <!-- =====================================
          PLAN INFORMATION
     ====================================== -->
@@ -387,13 +379,11 @@
         international users are charged in USD.
     </p>
 
-
     <!-- =====================================
          BUY PLANS RENDER TARGET
     ====================================== -->
 
     <div id="buyPlans"></div>
-
 
     <!-- =====================================
          PAYMENT SECURITY NOTICE
@@ -411,47 +401,25 @@
 
 </div>
 
-</section>
-                
-<div id="nationalCalendarSetup"></div>
-<!-- =========================================
+</section><!-- =========================================
+     NATIONAL SCHOOL CALENDAR
+========================================= --><div id="nationalCalendarSetup"></div><!-- =========================================
      PACIFIC EDUCATION JAVASCRIPT
-========================================= --><script src="./js/buyPlans.js"></script>
+========================================= --><script src="./js/buyPlans.js"></script><!-- National Calendar Engine --><script src="../js/js/nationalTermCalendar.js"></script><script src="../js/pacificEducationCore.js"></script><script src="../js/pacificEducationDailyLearningIntegration.js"></script><script src="../js/pacificEducationAssessmentIntegration.js"></script><script src="../js/pacificEducationMarksIntegration.js"></script><script src="js/pacificEducationCoreBridge.js"></script><script src="js/pacificEducationAssessmentBridge.js"></script><script src="../js/pacificEducationPacificGuardian.js"></script><script src="../js/pacificEducationAIWorkflow.js"></script><script src="js/app.js"></script><!-- =========================================
+     BUY PLANS INITIALIZATION
+========================================= --><script>
 
-<script src="./js/nationalTermCalendar.js"></script>
-
-
-<script src="./js/nationalCalendarSetup.js"></script>
-
-<script src="../js/pacificEducationCore.js"></script>
-<script src="../js/pacificEducationDailyLearningIntegration.js"></script>
-<script src="../js/pacificEducationAssessmentIntegration.js"></script>
-<script src="../js/pacificEducationMarksIntegration.js"></script>
-<script src="js/pacificEducationCoreBridge.js"></script>
-<script src="js/pacificEducationAssessmentBridge.js"></script>
-
-<script src="../js/pacificEducationPacificGuardian.js"></script>
-<script src="../js/pacificEducationAIWorkflow.js"></script>
-
-<script src="js/app.js"></script>
-
-<script>
 document.addEventListener("DOMContentLoaded", function () {
+
     if (window.PacificEducationBuyPlans) {
+
         window.PacificEducationBuyPlans.render(
             document.getElementById("buyPlans"),
             "FJ"
         );
+
     }
+
 });
+
 </script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    if (
-
-         <!-- National Calendar Engine -->
-<script src="../js/js/nationalTermCalendar.js"></script>
-
-
-
