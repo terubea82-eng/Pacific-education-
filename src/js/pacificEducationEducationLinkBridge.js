@@ -1,13 +1,21 @@
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK BRIDGE
+ * VERSION 1.1.0
  *
- * Connects:
- * Core
- * Secure Link Authorization
- * Secure Communication
+ * Secure connection bridge for:
+ * Student ↔ Teacher
+ * Parent ↔ Student
+ * Parent ↔ Teacher
+ * Teacher/School ↔ Ministry
+ * Parent ↔ Ministry
+ * Student ↔ Ministry
  *
- * Student • Teacher • Parent • Ministry
+ * Security flow:
+ * Identity → Role → Verified Relationship
+ * → Authorization → Permission → Communication
+ *
+ * Link availability NEVER means information access.
  *
  * Prototype only.
  */
@@ -15,7 +23,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
 
   function getAuthorization() {
     return window.PacificEducationSecureLinkAuthorization;
@@ -25,9 +33,14 @@
     return window.PacificEducationSecureCommunication;
   }
 
+  function getRelationshipLayer() {
+    return window.PacificEducationVerifiedEducationRelationship;
+  }
+
   function requireModules() {
     const authorization = getAuthorization();
     const communication = getCommunication();
+    const relationship = getRelationshipLayer();
 
     if (!authorization) {
       throw new Error(
@@ -41,9 +54,16 @@
       );
     }
 
+    if (!relationship) {
+      throw new Error(
+        "Verified Education Relationship module is not loaded."
+      );
+    }
+
     return {
       authorization,
-      communication
+      communication,
+      relationship
     };
   }
 
@@ -143,14 +163,38 @@
   function getStatus() {
     const authorization = getAuthorization();
     const communication = getCommunication();
+    const relationship = getRelationshipLayer();
+
+    const allLoaded =
+      Boolean(
+        authorization &&
+        communication &&
+        relationship
+      );
 
     return Object.freeze({
       version: VERSION,
-      authorizationLoaded: Boolean(authorization),
-      communicationLoaded: Boolean(communication),
-      ready: Boolean(
-        authorization && communication
-      ),
+
+      authorizationLoaded:
+        Boolean(authorization),
+
+      communicationLoaded:
+        Boolean(communication),
+
+      verifiedRelationshipLoaded:
+        Boolean(relationship),
+
+      ready: allLoaded,
+
+      securityFlow:
+        "identity_role_verified_relationship_authorization_permission_communication",
+
+      verifiedRelationshipRequired: true,
+
+      relationshipRecheckedByAuthorization: true,
+
+      automaticInformationAccess: false,
+
       productionBackendRequired: true
     });
   }
@@ -158,12 +202,15 @@
   window.PacificEducationEducationLinkBridge =
     Object.freeze({
       version: VERSION,
+
       requestConnection,
       approveConnection,
       checkAccess,
       revokeConnection,
+
       openConversation,
       sendAuthorizedMessage,
+
       getUserLinks,
       getStatus
     });
