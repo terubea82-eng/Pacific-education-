@@ -1,7 +1,18 @@
 /*
  * PACIFIC EDUCATION
  * SECURE EDUCATION COMMUNICATION LAYER
+ * VERSION 1.1.0
+ *
  * Student • Teacher • Parent • Ministry of Education
+ *
+ * Security flow:
+ * Verified Relationship
+ * → Active Approved Link
+ * → Communication Permission
+ * → Conversation
+ * → Message
+ *
+ * Link availability NEVER means information access.
  *
  * Prototype only.
  * No passwords, API keys, access tokens or payment secrets.
@@ -10,7 +21,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
   const STORAGE_KEY = "pacificEducationSecureMessages";
 
   const ROLES = Object.freeze([
@@ -29,9 +40,41 @@
     student_ministry: ["student", "ministry"]
   });
 
+  function getAuthorization() {
+    return window.PacificEducationSecureLinkAuthorization;
+  }
+
+  function getRelationshipLayer() {
+    return window.PacificEducationVerifiedEducationRelationship;
+  }
+
+  function requireSecurityModules() {
+    const authorization = getAuthorization();
+    const relationship = getRelationshipLayer();
+
+    if (!authorization) {
+      throw new Error(
+        "Secure Link Authorization module is not loaded."
+      );
+    }
+
+    if (!relationship) {
+      throw new Error(
+        "Verified Education Relationship module is not loaded."
+      );
+    }
+
+    return {
+      authorization,
+      relationship
+    };
+  }
+
   function load() {
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {
+      return JSON.parse(
+        localStorage.getItem(STORAGE_KEY)
+      ) || {
         conversations: [],
         messages: [],
         audit: []
@@ -46,7 +89,10 @@
   }
 
   function save(state) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify(state)
+    );
   }
 
   function audit(state, action, details = {}) {
@@ -72,38 +118,157 @@
     );
   }
 
-  function canCommunicate(sender, recipient) {
-    if (!validParticipant(sender) || !validParticipant(recipient)) {
-      return false;
-    }
-
-    return Object.values(LINK_TYPES).some(
-      roles =>
-        roles.includes(sender.role) &&
-        roles.includes(recipient.role)
-    );
+  function getLinkType(senderRole, recipientRole) {
+    return Object.entries(LINK_TYPES).find(
+      ([, roles]) =>
+        roles.includes(senderRole) &&
+        roles.includes(recipientRole)
+    )?.[0] || null;
   }
 
-  function createConversation(sender, recipient) {
-    if (!canCommunicate(sender, recipient)) {
-      throw new Error("Communication not authorized.");
+  function requireAuthorizedCommunication({
+    linkId,
+    requester,
+    recipient
+  }) {
+    if (!linkId) {
+      throw new Error(
+        "Active approved education link is required."
+      );
     }
+
+    if (
+      !validParticipant(requester) ||
+      !validParticipant(recipient)
+    ) {
+      throw new Error(
+        "Communication participants are not authorized."
+      );
+    }
+
+    const linkType =
+      getLinkType(
+        requester.role,
+        recipient.role
+      );
+
+    if (!linkType) {
+      throw new Error(
+        "This education relationship does not permit communication."
+      );
+    }
+
+    const {
+      authorization,
+      relationship
+    } = requireSecurityModules();
+
+    const access =
+      authorization.authorizeAccess({
+        linkId,
+        requester,
+        requiredPermission: "communication"
+      });
+
+    if (!access || access.allowed !== true) {
+      throw new Error(
+        "Communication authorization denied."
+      );
+    }
+
+    const relationships =
+      relationship.getUserRelationships(
+        requester.id
+      ) || [];
+
+    const verifiedRelationship =
+      relationships.find(
+        item =>
+          item.status === "verified" &&
+          item.relationshipType === linkType &&
+          (
+            (
+              item.requesterId === requester.id &&
+              item.targetId === recipient.id
+            ) ||
+            (
+              item.requesterId === recipient.id &&
+              item.targetId === requester.id
+            )
+          )
+      );
+
+    if (!verifiedRelationship) {
+      throw new Error(
+        "Verified education relationship is required."
+      );
+    }
+
+    return {
+      access,
+      linkType,
+      relationshipId:
+        verifiedRelationship.relationshipId ||
+        verifiedRelationship.id ||
+        null
+    };
+  }
+
+  function createConversation(
+    sender,
+    recipient,
+    options = {}
+  ) {
+    const {
+      linkId
+    } = options;
+
+    const security =
+      requireAuthorizedCommunication({
+        linkId,
+        requester: sender,
+        recipient
+      });
 
     const state = load();
 
     const conversation = {
       id: crypto.randomUUID(),
-      participants: [sender.id, recipient.id],
-      participantRoles: [sender.role, recipient.role],
+      linkId,
+      relationshipId:
+        security.relationshipId,
+      linkType:
+        security.linkType,
+      participants: [
+        sender.id,
+        recipient.id
+      ],
+      participantRoles: [
+        sender.role,
+        recipient.role
+      ],
       status: "active",
-      createdAt: new Date().toISOString()
+      createdAt:
+        new Date().toISOString()
     };
 
-    state.conversations.push(conversation);
+    state.conversations.push(
+      conversation
+    );
 
-    audit(state, "CONVERSATION_CREATED", {
-      conversationId: conversation.id
-    });
+    audit(
+      state,
+      "CONVERSATION_CREATED",
+      {
+        conversationId:
+          conversation.id,
+        linkId,
+        relationshipId:
+          security.relationshipId,
+        linkType:
+          security.linkType
+      }
+    );
 
     save(state);
 
@@ -114,116 +279,219 @@
     conversationId,
     sender,
     recipient,
-    text
+    text,
+    linkId
   }) {
-    if (!conversationId || !validParticipant(sender) ||
-        !validParticipant(recipient)) {
-      throw new Error("Invalid communication authorization.");
+    if (
+      !conversationId ||
+      !validParticipant(sender) ||
+      !validParticipant(recipient)
+    ) {
+      throw new Error(
+        "Invalid communication authorization."
+      );
     }
 
-    if (!canCommunicate(sender, recipient)) {
-      throw new Error("Communication not authorized.");
-    }
+    const security =
+      requireAuthorizedCommunication({
+        linkId,
+        requester: sender,
+        recipient
+      });
 
-    if (typeof text !== "string" || !text.trim()) {
-      throw new Error("Message cannot be empty.");
+    if (
+      typeof text !== "string" ||
+      !text.trim()
+    ) {
+      throw new Error(
+        "Message cannot be empty."
+      );
     }
 
     const state = load();
 
-    const conversation = state.conversations.find(
-      item =>
-        item.id === conversationId &&
-        item.status === "active" &&
-        item.participants.includes(sender.id) &&
-        item.participants.includes(recipient.id)
-    );
+    const conversation =
+      state.conversations.find(
+        item =>
+          item.id === conversationId &&
+          item.status === "active" &&
+          item.linkId === linkId &&
+          item.relationshipId ===
+            security.relationshipId &&
+          item.participants.includes(
+            sender.id
+          ) &&
+          item.participants.includes(
+            recipient.id
+          )
+      );
 
     if (!conversation) {
-      throw new Error("Active authorized conversation not found.");
+      throw new Error(
+        "Active authorized conversation not found."
+      );
     }
 
     const message = {
       id: crypto.randomUUID(),
       conversationId,
-      senderId: sender.id,
-      recipientId: recipient.id,
-      senderRole: sender.role,
-      recipientRole: recipient.role,
-      text: text.trim(),
-      createdAt: new Date().toISOString()
+      linkId,
+      relationshipId:
+        security.relationshipId,
+      senderId:
+        sender.id,
+      recipientId:
+        recipient.id,
+      senderRole:
+        sender.role,
+      recipientRole:
+        recipient.role,
+      text:
+        text.trim(),
+      createdAt:
+        new Date().toISOString()
     };
 
     state.messages.push(message);
 
-    audit(state, "MESSAGE_SENT", {
-      conversationId,
-      messageId: message.id
-    });
+    audit(
+      state,
+      "MESSAGE_SENT",
+      {
+        conversationId,
+        messageId:
+          message.id,
+        linkId,
+        relationshipId:
+          security.relationshipId
+      }
+    );
 
     save(state);
 
     window.dispatchEvent(
-      new CustomEvent("pacificEducationMessageSent", {
-        detail: {
-          conversationId,
-          messageId: message.id
+      new CustomEvent(
+        "pacificEducationMessageSent",
+        {
+          detail: {
+            conversationId,
+            messageId:
+              message.id
+          }
         }
-      })
+      )
     );
 
     return message;
   }
 
-  function getConversation(conversationId, requester) {
-    if (!validParticipant(requester)) {
-      throw new Error("Requester is not authorized.");
+  function getConversation(
+    conversationId,
+    requester
+  ) {
+    if (
+      !validParticipant(requester)
+    ) {
+      throw new Error(
+        "Requester is not authorized."
+      );
     }
 
     const state = load();
 
-    const conversation = state.conversations.find(
-      item =>
-        item.id === conversationId &&
-        item.status === "active" &&
-        item.participants.includes(requester.id)
-    );
+    const conversation =
+      state.conversations.find(
+        item =>
+          item.id === conversationId &&
+          item.status === "active" &&
+          item.participants.includes(
+            requester.id
+          )
+      );
 
     if (!conversation) {
-      throw new Error("Conversation access denied.");
+      throw new Error(
+        "Conversation access denied."
+      );
+    }
+
+    /*
+     * Re-check the approved link before
+     * returning conversation content.
+     */
+    const {
+      authorization
+    } = requireSecurityModules();
+
+    const access =
+      authorization.authorizeAccess({
+        linkId:
+          conversation.linkId,
+        requester,
+        requiredPermission:
+          "communication"
+      });
+
+    if (
+      !access ||
+      access.allowed !== true
+    ) {
+      throw new Error(
+        "Conversation authorization has been revoked."
+      );
     }
 
     return {
       conversation,
-      messages: state.messages.filter(
-        message => message.conversationId === conversationId
-      )
+      messages:
+        state.messages.filter(
+          message =>
+            message.conversationId ===
+            conversationId
+        )
     };
   }
 
-  function closeConversation(conversationId, requester) {
-    if (!validParticipant(requester)) {
-      throw new Error("Requester is not authorized.");
+  function closeConversation(
+    conversationId,
+    requester
+  ) {
+    if (
+      !validParticipant(requester)
+    ) {
+      throw new Error(
+        "Requester is not authorized."
+      );
     }
 
     const state = load();
 
-    const conversation = state.conversations.find(
-      item =>
-        item.id === conversationId &&
-        item.participants.includes(requester.id)
-    );
+    const conversation =
+      state.conversations.find(
+        item =>
+          item.id === conversationId &&
+          item.participants.includes(
+            requester.id
+          )
+      );
 
     if (!conversation) {
-      throw new Error("Conversation not found.");
+      throw new Error(
+        "Conversation not found."
+      );
     }
 
     conversation.status = "closed";
-    conversation.closedAt = new Date().toISOString();
+    conversation.closedAt =
+      new Date().toISOString();
 
-    audit(state, "CONVERSATION_CLOSED", {
-      conversationId
-    });
+    audit(
+      state,
+      "CONVERSATION_CLOSED",
+      {
+        conversationId
+      }
+    );
 
     save(state);
 
@@ -235,25 +503,40 @@
 
     return Object.freeze({
       version: VERSION,
-      conversations: state.conversations.length,
-      messages: state.messages.length,
-      prototypeOnly: true,
-      backendRequiredForProduction: true
+      conversations:
+        state.conversations.length,
+      messages:
+        state.messages.length,
+      verifiedRelationshipRequired:
+        true,
+      activeApprovedLinkRequired:
+        true,
+      communicationPermissionRequired:
+        true,
+      automaticInformationAccess:
+        false,
+      prototypeOnly:
+        true,
+      backendRequiredForProduction:
+        true
     });
   }
 
   function resetPrototypeState() {
-    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(
+      STORAGE_KEY
+    );
   }
 
-  window.PacificEducationSecureCommunication = Object.freeze({
-    version: VERSION,
-    createConversation,
-    sendMessage,
-    getConversation,
-    closeConversation,
-    getStatus,
-    resetPrototypeState
-  });
+  window.PacificEducationSecureCommunication =
+    Object.freeze({
+      version: VERSION,
+      createConversation,
+      sendMessage,
+      getConversation,
+      closeConversation,
+      getStatus,
+      resetPrototypeState
+    });
 
 })();
