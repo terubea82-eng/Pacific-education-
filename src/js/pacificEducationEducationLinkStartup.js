@@ -4,34 +4,29 @@
  * EDUCATION LINK STARTUP
  * =========================================================
  *
- * Purpose:
- * Safely starts the Education Link system after the
- * Pacific Education page has loaded.
+ * Version: 1.1.0
  *
- * Link architecture:
+ * Secure startup order:
  *
- * Student  <-> Teacher
- * Parent   <-> Student
- * Parent   <-> Teacher
- * Teacher/School <-> Ministry of Education
+ * Identity
+ *   ↓
+ * Verified Education Relationship
+ *   ↓
+ * Secure Link Authorization
+ *   ↓
+ * Secure Communication
+ *   ↓
+ * Education Link Bridge
+ *   ↓
+ * Education Link Center
  *
- * Access pattern:
- *
- * Link Available
- *      ↓
- * Verify
- *      ↓
- * Authorize
- *      ↓
- * Connect
- *      ↓
- * Communicate
+ * Student • Teacher • Parent • Ministry
  *
  * Security:
- * - Does not create authorization by itself.
- * - Does not bypass role permissions.
- * - Does not expose passwords, API keys or tokens.
- * - Does not grant automatic access to student records.
+ * - Verification layer loads before authorization.
+ * - Authorization cannot activate an unverified relationship.
+ * - Link availability does not grant information access.
+ * - No passwords, API keys or tokens are exposed.
  * - Production backend authorization is required.
  *
  * Prototype only.
@@ -47,43 +42,34 @@
        VERSION
     ===================================================== */
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
 
 
     /* =====================================================
        MODULE PATHS
-       ===================================================== */
-
-    /*
-     * IMPORTANT:
-     *
-     * This file is located at:
-     *
-     * src/js/pacificEducationEducationLinkStartup.js
-     *
-     * Therefore:
-     *
-     * ../js/  = root js/
-     * js/     = src/js/
-     */
+    ===================================================== */
 
     const MODULES = Object.freeze([
 
         /*
-         * Root secure authorization module.
+         * Verified Education Relationship.
+         *
+         * MUST load before Secure Link Authorization.
+         */
+        "js/pacificEducationVerifiedEducationRelationship.js",
+
+        /*
+         * Secure Link Authorization.
          */
         "../js/pacificEducationSecureLinkAuthorization.js",
 
         /*
-         * Root secure communication module.
+         * Secure Communication.
          */
         "../js/pacificEducationSecureCommunication.js",
 
         /*
          * Education Link Bridge.
-         *
-         * Must load before the Center because
-         * the Center checks for the Bridge.
          */
         "js/pacificEducationEducationLinkBridge.js",
 
@@ -195,7 +181,7 @@
 
 
                 /*
-                 * Create the script element.
+                 * Create script element.
                  */
                 const script =
                     document.createElement(
@@ -273,6 +259,12 @@
 
         const status = {
 
+            relationship:
+                Boolean(
+                    window
+                        .PacificEducationVerifiedEducationRelationship
+                ),
+
             authorization:
                 Boolean(
                     window
@@ -301,6 +293,7 @@
 
 
         status.ready =
+            status.relationship &&
             status.authorization &&
             status.communication &&
             status.bridge &&
@@ -326,7 +319,11 @@
 
                     detail: {
 
-                        version: VERSION,
+                        version:
+                            VERSION,
+
+                        relationshipLoaded:
+                            status.relationship,
 
                         authorizationLoaded:
                             status.authorization,
@@ -342,6 +339,9 @@
 
                         ready:
                             status.ready,
+
+                        verifiedRelationshipRequired:
+                            true,
 
                         productionBackendRequired:
                             true
@@ -361,7 +361,10 @@
        DISPATCH ERROR EVENT
     ===================================================== */
 
-    function dispatchError(error, status = null) {
+    function dispatchError(
+        error,
+        status = null
+    ) {
 
         const message =
             error &&
@@ -378,9 +381,11 @@
 
                     detail: {
 
-                        version: VERSION,
+                        version:
+                            VERSION,
 
-                        error: message,
+                        error:
+                            message,
 
                         status
 
@@ -428,6 +433,9 @@
 
             /*
              * Load modules sequentially.
+             *
+             * This guarantees the verified relationship
+             * layer loads before authorization.
              */
             for (
                 const modulePath
@@ -472,15 +480,23 @@
 
                 return Object.freeze({
 
-                    version: VERSION,
+                    version:
+                        VERSION,
 
-                    started: false,
+                    started:
+                        false,
 
-                    loading: false,
+                    loading:
+                        false,
 
-                    ready: false,
+                    ready:
+                        false,
 
-                    modules: status,
+                    modules:
+                        status,
+
+                    verifiedRelationshipRequired:
+                        true,
 
                     productionBackendRequired:
                         true
@@ -499,7 +515,9 @@
             /*
              * Notify the application.
              */
-            dispatchReady(status);
+            dispatchReady(
+                status
+            );
 
 
             /*
@@ -525,19 +543,26 @@
 
             return Object.freeze({
 
-                version: VERSION,
+                version:
+                    VERSION,
 
-                started: false,
+                started:
+                    false,
 
-                loading: false,
+                loading:
+                    false,
 
-                ready: false,
+                ready:
+                    false,
 
                 error:
                     error &&
                     error.message
                         ? error.message
                         : String(error),
+
+                verifiedRelationshipRequired:
+                    true,
 
                 productionBackendRequired:
                     true
@@ -567,11 +592,15 @@
 
         return Object.freeze({
 
-            version: VERSION,
+            version:
+                VERSION,
 
             started,
 
             loading,
+
+            relationshipLoaded:
+                modules.relationship,
 
             authorizationLoaded:
                 modules.authorization,
@@ -591,6 +620,12 @@
                     modules.ready
                 ),
 
+            verifiedRelationshipRequired:
+                true,
+
+            automaticInformationAccess:
+                false,
+
             productionBackendRequired:
                 true
 
@@ -607,7 +642,8 @@
 
         Object.freeze({
 
-            version: VERSION,
+            version:
+                VERSION,
 
             start,
 
