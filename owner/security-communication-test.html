@@ -1,1 +1,133 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pacific Education — Owner Security Communication Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 12px 18px;
+      margin: 6px 4px 6px 0;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .warning {
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pacific Education</h1>
+  <h2>Owner Security Communication Test</h2>
+
+  <p class="warning">
+    OWNER/DEVELOPER TEST ONLY — NOT PART OF PRODUCTION STARTUP.
+  </p>
+
+  <p>
+    This page runs the existing V1.3.0 secure communication test harness.
+    It does not modify the production calendar or application files.
+  </p>
+
+  <button id="runTest" type="button">Run Security Test</button>
+  <button id="resetTest" type="button">Reset Test State</button>
+
+  <h3>Test Output</h3>
+  <pre id="output">Ready. Press “Run Security Test”.</pre>
+
+  <script src="../js/pacificEducationVerifiedEducationRelationship.js"></script>
+  <script src="../js/pacificEducationSecureLinkAuthorization.js"></script>
+  <script src="../js/pacificEducationSecureCommunication.js"></script>
+  <script src="../js/pacificEducationSecureCommunicationTest.js"></script>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const output = document.getElementById("output");
+
+      function show(value) {
+        output.textContent =
+          typeof value === "string"
+            ? value
+            : JSON.stringify(value, null, 2);
+      }
+
+      document
+        .getElementById("runTest")
+        .addEventListener("click", function () {
+          try {
+            if (
+              !window.PacificEducationSecureCommunicationTest ||
+              typeof window.PacificEducationSecureCommunicationTest.run !==
+                "function"
+            ) {
+              show(
+                "ERROR: PacificEducationSecureCommunicationTest is not available."
+              );
+              return;
+            }
+
+            const report =
+              window.PacificEducationSecureCommunicationTest.run();
+
+            if (
+              typeof window.PacificEducationSecureCommunicationTest
+                .printReport === "function"
+            ) {
+              window.PacificEducationSecureCommunicationTest.printReport();
+            }
+
+            show(report);
+          } catch (error) {
+            show(
+              "TEST ERROR:\n" +
+                (error && error.stack ? error.stack : String(error))
+            );
+          }
+        });
+
+      document
+        .getElementById("resetTest")
+        .addEventListener("click", function () {
+          try {
+            if (
+              !window.PacificEducationSecureCommunicationTest ||
+              typeof window.PacificEducationSecureCommunicationTest.reset !==
+                "function"
+            ) {
+              show("ERROR: Test reset API is not available.");
+              return;
+            }
+
+            window.PacificEducationSecureCommunicationTest.reset();
+
+            show(
+              "Test state reset. Production application was not changed."
+            );
+          } catch (error) {
+            show(
+              "RESET ERROR:\n" +
+                (error && error.stack ? error.stack : String(error))
+            );
+          }
+        });
+    })();
+  </script>
+</body>
+</html>
