@@ -470,6 +470,7 @@
       state.conversations.find(
         item =>
           item.id === conversationId &&
+          item.status === "active" &&
           item.participants.includes(
             requester.id
           )
@@ -477,7 +478,61 @@
 
     if (!conversation) {
       throw new Error(
-        "Conversation not found."
+        "Active conversation not found."
+      );
+    }
+
+    /*
+     * Re-check authorization and the verified
+     * relationship before allowing closure.
+     * A revoked relationship or permission must
+     * prevent further conversation actions.
+     */
+    const {
+      authorization,
+      relationship
+    } = requireSecurityModules();
+
+    const access =
+      authorization.authorizeAccess({
+        linkId:
+          conversation.linkId,
+        requester,
+        requiredPermission:
+          "communication"
+      });
+
+    if (
+      !access ||
+      access.allowed !== true
+    ) {
+      throw new Error(
+        "Conversation closure authorization denied."
+      );
+    }
+
+    const relationships =
+      relationship.getUserRelationships(
+        requester.id
+      ) || [];
+
+    const verifiedRelationship =
+      relationships.find(
+        item =>
+          item.status === "verified" &&
+          item.relationshipType ===
+            conversation.linkType &&
+          item.relationshipId ===
+            conversation.relationshipId &&
+          (
+            item.requesterId === requester.id ||
+            item.targetId === requester.id
+          )
+      );
+
+    if (!verifiedRelationship) {
+      throw new Error(
+        "Verified education relationship is required to close conversation."
       );
     }
 
@@ -489,7 +544,13 @@
       state,
       "CONVERSATION_CLOSED",
       {
-        conversationId
+        conversationId,
+        linkId:
+          conversation.linkId,
+        relationshipId:
+          conversation.relationshipId,
+        linkType:
+          conversation.linkType
       }
     );
 
