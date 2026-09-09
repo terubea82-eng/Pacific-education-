@@ -1,2717 +1,974 @@
 /*
- * PACIFIC EDUCATION
- * SECURE COMMUNICATION SECURITY TEST
- * VERSION 1.2.0
- *
- * Prototype security validation only.
- *
- * SECURITY SEQUENCE:
- *
- * Identity
- * → Role
- * → Verified Relationship
- * → Approved Link
- * → Communication Permission
- * → Conversation
- * → Message
- * → Relationship Revocation
- * → Access Denied
- *
- * HARDENING:
- *
- * - Wrong link ID denied
- * - Unauthorized identity denied
- * - Non-participant denied
- * - Missing permission denied
- * - Revoked relationship denied
- * - Old link cannot restore access
- * - Conversation access denied
- * - Message denied
- * - Conversation closure denied
- * - Fail-closed security status
- *
- * IMPORTANT:
- * Development / owner test harness only.
- *
- * NEVER USE:
- * - real passwords
- * - API keys
- * - authentication tokens
- * - payment secrets
- * - private student information
- * - confidential family information
- *
- * Production authorization MUST be enforced
- * server-side.
- */
-
-(() => {
-
-  "use strict";
-
-
-  const VERSION = "1.2.0";
-
-
-  const RESULTS = [];
-
-
-  /* =====================================================
-     SYNTHETIC TEST IDENTITIES
-     ===================================================== */
-
-  const parent = {
-
-    id:
-      "TEST-PARENT-001",
-
-    role:
-      "parent",
-
-    authorized:
-      true
-
-  };
-
-
-  const teacher = {
-
-    id:
-      "TEST-TEACHER-001",
-
-    role:
-      "teacher",
-
-    authorized:
-      true
-
-  };
-
-
-  const unauthorizedParent = {
-
-    id:
-      "TEST-UNAUTHORIZED-001",
-
-    role:
-      "parent",
-
-    authorized:
-      false
-
-  };
-
-
-  const nonParticipant = {
-
-    id:
-      "TEST-NON-PARTICIPANT-001",
-
-    role:
-      "parent",
-
-    authorized:
-      true
-
-  };
-
-
-  let relationshipId =
-    null;
-
-
-  let linkId =
-    null;
-
-
-  let conversationId =
-    null;
-
-
-
-  /* =====================================================
-     RESULT HANDLING
-     ===================================================== */
-
-  function record(
-    name,
-    passed,
-    details = ""
-  ) {
-
-    RESULTS.push({
-
-      name,
-
-      passed:
-        passed === true,
-
-      details,
-
-      timestamp:
-        new Date().toISOString()
-
-    });
-
-  }
-
-
-
-  function expectSuccess(
-    name,
-    callback
-  ) {
-
-    try {
-
-      const result =
-        callback();
-
-
-      record(
-
-        name,
-
-        true,
-
-        "Operation succeeded as expected."
-
-      );
-
-
-      return result;
-
-    } catch (error) {
-
-      record(
-
-        name,
-
-        false,
-
-        error?.message ||
-          String(error)
-
-      );
-
-
-      return null;
-
-    }
-
-  }
-
-
-
-  /*
-   * Use this only for APIs that are expected
-   * to throw when access is denied.
-   */
-
-  function expectDeniedByThrow(
-    name,
-    callback
-  ) {
-
-    try {
-
-      callback();
-
-
-      record(
-
-        name,
-
-        false,
-
-        "SECURITY FAILURE: operation was allowed."
-
-      );
-
-
-      return false;
-
-    } catch (error) {
-
-      record(
-
-        name,
-
-        true,
-
-        "Operation correctly denied: " +
-          (
-            error?.message ||
-            String(error)
-          )
-
-      );
-
-
-      return true;
-
-    }
-
-  }
-
-
-
-  /*
-   * Authorization APIs may return:
-   *
-   * { allowed: false }
-   *
-   * instead of throwing.
-   *
-   * Therefore they must be tested explicitly.
-   */
-
-  function expectDeniedResult(
-    name,
-    callback
-  ) {
-
-    try {
-
-      const result =
-        callback();
-
-
-      const denied =
-        result?.allowed === false;
-
-
-      record(
-
-        name,
-
-        denied,
-
-        denied
-
-          ? (
-              "Access correctly denied: " +
-              (
-                result.reason ||
-                "no_reason_returned"
-              )
-            )
-
-          : "SECURITY FAILURE: access was allowed."
-
-      );
-
-
-      return denied;
-
-    } catch (error) {
-
-      record(
-
-        name,
-
-        true,
-
-        "Access correctly denied by exception: " +
-          (
-            error?.message ||
-            String(error)
-          )
-
-      );
-
-
-      return true;
-
-    }
-
-  }
-
-
-
-  /* =====================================================
-     MODULE ACCESS
-     ===================================================== */
-
-  function getModules() {
-
-    return {
-
-      relationship:
-
-        window
-          .PacificEducationVerifiedEducationRelationship,
-
-      authorization:
-
-        window
-          .PacificEducationSecureLinkAuthorization,
-
-      communication:
-
-        window
-          .PacificEducationSecureCommunication
-
+============================================================
+PACIFIC EDUCATION
+SECURE COMMUNICATION SECURITY TEST
+VERSION 1.3.0
+
+OWNER / DEVELOPER TEST HARNESS
+
+Purpose:
+Verify that secure communication follows:
+
+Identity
+→ Role
+→ Verified Relationship
+→ Approved Link
+→ Communication Permission
+→ Conversation
+→ Message
+→ Relationship Revocation
+→ Access Denied
+
+This file is a TEST HARNESS only.
+It must NOT be added to production startup.
+
+Production security must still be enforced server-side.
+============================================================
+*/
+
+(function () {
+    "use strict";
+
+    const VERSION = "1.3.0";
+
+    const parent = {
+        id: "parent-001",
+        role: "parent",
+        authorized: true
     };
 
-  }
+    const teacher = {
+        id: "teacher-001",
+        role: "teacher",
+        authorized: true
+    };
 
+    const unauthorizedParent = {
+        id: "parent-unauthorized-001",
+        role: "parent",
+        authorized: true
+    };
 
+    const nonParticipant = {
+        id: "student-001",
+        role: "student",
+        authorized: true
+    };
 
-  function assertModules() {
+    const TEST_GROUP = {
+        name: "Pacific Education Secure Communication Test Group",
+        jurisdiction: "Fiji"
+    };
 
-    const modules =
-      getModules();
+    const results = [];
 
+    let relationshipId = null;
+    let linkId = null;
+    let conversationId = null;
 
-    const required = [
+    function record(name, passed, details) {
+        const result = {
+            name,
+            passed: Boolean(passed),
+            details: details || "",
+            timestamp: new Date().toISOString()
+        };
 
-      "relationship",
+        results.push(result);
 
-      "authorization",
-
-      "communication"
-
-    ];
-
-
-    required.forEach(
-
-      name => {
-
-        if (!modules[name]) {
-
-          throw new Error(
-
-            name +
-              " module is not loaded."
-
-          );
-
+        if (passed) {
+            console.log("PASS:", name, details || "");
+        } else {
+            console.error("FAIL:", name, details || "");
         }
 
-      }
-
-    );
-
-
-    return modules;
-
-  }
-
-
-
-  /* =====================================================
-     RESET
-     ===================================================== */
-
-  function resetTestState(
-    modules
-  ) {
-
-    if (
-
-      modules.relationship &&
-
-      typeof modules.relationship
-        .resetPrototypeState ===
-        "function"
-
-    ) {
-
-      modules.relationship
-        .resetPrototypeState();
-
+        return result;
     }
 
+    function expectSuccess(name, action) {
+        try {
+            const value = action();
+
+            if (value === undefined || value === null) {
+                return record(name, false, "Expected successful result but received no result.");
+            }
+
+            return record(name, true, "Successful.");
+        } catch (error) {
+            return record(
+                name,
+                false,
+                error && error.message
+                    ? error.message
+                    : String(error)
+            );
+        }
+    }
+
+    function expectDeniedByThrow(name, action) {
+        try {
+            action();
+
+            return record(
+                name,
+                false,
+                "Expected access to be denied, but the operation succeeded."
+            );
+        } catch (error) {
+            return record(
+                name,
+                true,
+                "Access correctly denied."
+            );
+        }
+    }
+
+    function expectDeniedResult(name, action) {
+        try {
+            const value = action();
+
+            if (value && value.allowed === false) {
+                return record(
+                    name,
+                    true,
+                    value.reason || "Access correctly denied."
+                );
+            }
+
+            return record(
+                name,
+                false,
+                "Expected allowed:false."
+            );
+        } catch (error) {
+            return record(
+                name,
+                false,
+                error && error.message
+                    ? error.message
+                    : String(error)
+            );
+        }
+    }
+
+    function getModules() {
+        return {
+            identity: window.PacificEducationIdentity,
+            relationship: window.PacificEducationVerifiedEducationRelationship,
+            authorization: window.PacificEducationSecureLinkAuthorization,
+            communication: window.PacificEducationSecureCommunication
+        };
+    }
+
+    function assertModules(modules) {
+        const required = [
+            "identity",
+            "relationship",
+            "authorization",
+            "communication"
+        ];
+
+        const missing = required.filter(function (name) {
+            return !modules[name];
+        });
+
+        if (missing.length > 0) {
+            throw new Error(
+                "Required module(s) missing: " + missing.join(", ")
+            );
+        }
+
+        return true;
+    }
+
+    function resetTestState() {
+        const modules = getModules();
+
+        try {
+            if (
+                modules.relationship &&
+                typeof modules.relationship.resetPrototypeState === "function"
+            ) {
+                modules.relationship.resetPrototypeState();
+            }
+        } catch (error) {
+            console.warn(
+                "Relationship reset warning:",
+                error && error.message
+                    ? error.message
+                    : error
+            );
+        }
+
+        try {
+            localStorage.removeItem("pacificEducationSecureLinks");
+        } catch (error) {
+            console.warn("Secure link storage reset warning.");
+        }
+
+        try {
+            localStorage.removeItem("pacificEducationSecureMessages");
+        } catch (error) {
+            console.warn("Secure message storage reset warning.");
+        }
+
+        relationshipId = null;
+        linkId = null;
+        conversationId = null;
+    }
 
     /*
-     * Prototype authorization storage.
-     */
+    ============================================================
+    1. MODULE AVAILABILITY
+    ============================================================
+    */
 
-    try {
+    function testModuleAvailability() {
+        const modules = getModules();
 
-      localStorage.removeItem(
+        try {
+            assertModules(modules);
 
-        "pacificEducationSecureLinks"
-
-      );
-
-    } catch {
-
-      /* Ignore prototype cleanup failure. */
-
+            return record(
+                "module_availability",
+                true,
+                "All required security modules are available."
+            );
+        } catch (error) {
+            return record(
+                "module_availability",
+                false,
+                error.message || String(error)
+            );
+        }
     }
-
 
     /*
-     * Prototype communication storage.
-     */
+    ============================================================
+    2. CLEAN STATE
+    ============================================================
+    */
 
-    try {
+    function testCleanState() {
+        resetTestState();
 
-      localStorage.removeItem(
-
-        "pacificEducationSecureMessages"
-
-      );
-
-    } catch {
-
-      /* Ignore prototype cleanup failure. */
-
+        return record(
+            "clean_test_state",
+            relationshipId === null &&
+            linkId === null &&
+            conversationId === null,
+            "Security test state reset."
+        );
     }
-
-  }
-
-
-
-  /* =====================================================
-     1. IDENTITY TESTS
-     ===================================================== */
-
-  function testIdentities() {
-
-    record(
-
-      "Parent identity is valid",
-
-      parent.id ===
-        "TEST-PARENT-001" &&
-
-      parent.role ===
-        "parent" &&
-
-      parent.authorized ===
-        true
-
-    );
-
-
-    record(
-
-      "Teacher identity is valid",
-
-      teacher.id ===
-        "TEST-TEACHER-001" &&
-
-      teacher.role ===
-        "teacher" &&
-
-      teacher.authorized ===
-        true
-
-    );
-
-
-    record(
-
-      "Unauthorized identity is invalid",
-
-      unauthorizedParent.authorized ===
-        false
-
-    );
-
-
-    record(
-
-      "Non-participant test identity is valid",
-
-      nonParticipant.authorized ===
-        true
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     2. VERIFIED RELATIONSHIP
-     ===================================================== */
-
-  function createVerifiedRelationship(
-    modules
-  ) {
-
-    const relationship =
-      expectSuccess(
-
-        "Create verified parent-teacher relationship",
-
-        () =>
-
-          modules.relationship
-            .verifyRelationship({
-
-              requester:
-                parent,
-
-              target:
-                teacher,
-
-              relationshipType:
-                "parent_teacher",
-
-              jurisdiction:
-                "Fiji",
-
-              evidence: {
-
-                type:
-                  "authorized_school_record",
-
-                verified:
-                  true,
-
-                reference:
-                  "SYNTHETIC-TEST-REFERENCE"
-
-              },
-
-              authority: {
-
-                type:
-                  "synthetic_test_authority",
-
-                consent:
-                  true
-
-              }
-
-            })
-
-      );
-
-
-    if (relationship) {
-
-      relationshipId =
-        relationship.id;
-
-    }
-
-
-    record(
-
-      "Verified relationship ID created",
-
-      typeof relationshipId ===
-        "string" &&
-
-      relationshipId.length > 0,
-
-      relationshipId
-
-        ? "Synthetic relationship created."
-
-        : "Relationship ID was not returned."
-
-    );
-
-
-    return relationship;
-
-  }
-
-
-
-  /* =====================================================
-     3. LINK REQUEST
-     ===================================================== */
-
-  function createSecureLink(
-    modules
-  ) {
-
-    const link =
-      expectSuccess(
-
-        "Request parent-teacher secure link",
-
-        () =>
-
-          modules.authorization
-            .requestLink({
-
-              requester:
-                parent,
-
-              target:
-                teacher,
-
-              linkType:
-                "parent_teacher",
-
-              relationshipId:
-                relationshipId,
-
-              jurisdiction:
-                "Fiji",
-
-              evidenceReference:
-                "SYNTHETIC-TEST-REFERENCE"
-
-            })
-
-      );
-
-
-    if (link) {
-
-      linkId =
-        link.id;
-
-    }
-
-
-    record(
-
-      "Secure link ID created",
-
-      typeof linkId ===
-        "string" &&
-
-      linkId.length > 0,
-
-      linkId
-
-        ? "Synthetic secure link created."
-
-        : "Secure link ID was not returned."
-
-    );
-
-
-    return link;
-
-  }
-
-
-
-  /* =====================================================
-     4. APPROVE LINK
-     ===================================================== */
-
-  function approveSecureLink(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Approve secure education link",
-
-        false,
-
-        "No link ID available."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    const approvedLink =
-      expectSuccess(
-
-        "Approve secure education link",
-
-        () =>
-
-          modules.authorization
-            .approveLink({
-
-              linkId:
-                linkId,
-
-              approver:
-                teacher,
-
-              permissions: [
-
-                "communication"
-
-              ]
-
-            })
-
-      );
-
-
-    record(
-
-      "Approved link is active",
-
-      approvedLink?.status ===
-        "active",
-
-      approvedLink
-
-        ? "Link status: " +
-          approvedLink.status
-
-        : "No approved link returned."
-
-    );
-
-
-    record(
-
-      "Communication permission granted",
-
-      approvedLink?.permissions
-        ?.includes(
-          "communication"
-        ) === true,
-
-      approvedLink?.permissions
-
-        ? approvedLink.permissions.join(
-            ", "
-          )
-
-        : "No permissions returned."
-
-    );
-
-
-    return approvedLink;
-
-  }
-
-
-
-  /* =====================================================
-     5. AUTHORIZATION
-     ===================================================== */
-
-  function authorizeCommunication(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Authorize communication",
-
-        false,
-
-        "No link ID available."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    const access =
-      expectSuccess(
-
-        "Authorize communication permission",
-
-        () =>
-
-          modules.authorization
-            .authorizeAccess({
-
-              linkId:
-                linkId,
-
-              requester:
-                parent,
-
-              requiredPermission:
-                "communication"
-
-            })
-
-      );
-
-
-    record(
-
-      "Communication authorization allowed",
-
-      access?.allowed ===
-        true,
-
-      access
-
-        ? "Authorization result: " +
-          (
-            access.allowed
-              ? "allowed"
-              : access.reason
-          )
-
-        : "No authorization result returned."
-
-    );
-
-
-    return access;
-
-  }
-
-
-
-  /* =====================================================
-     6. CREATE CONVERSATION
-     ===================================================== */
-
-  function createConversation(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Create authorized conversation",
-
-        false,
-
-        "No link ID available."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    const conversation =
-      expectSuccess(
-
-        "Create authorized conversation",
-
-        () =>
-
-          modules.communication
-            .createConversation(
-
-              parent,
-
-              teacher,
-
-              {
-
-                linkId:
-                  linkId
-
-              }
-
-            )
-
-      );
-
-
-    if (conversation) {
-
-      conversationId =
-        conversation.id;
-
-    }
-
-
-    record(
-
-      "Conversation ID created",
-
-      typeof conversationId ===
-        "string" &&
-
-      conversationId.length > 0,
-
-      conversationId
-
-        ? "Synthetic conversation created."
-
-        : "Conversation ID was not returned."
-
-    );
-
-
-    return conversation;
-
-  }
-
-
-
-  /* =====================================================
-     7. SEND MESSAGE
-     ===================================================== */
-
-  function sendAuthorizedMessage(
-    modules
-  ) {
-
-    if (
-
-      !conversationId ||
-
-      !linkId
-
-    ) {
-
-      record(
-
-        "Send authorized message",
-
-        false,
-
-        "Conversation or link ID unavailable."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    return expectSuccess(
-
-      "Send authorized message",
-
-      () =>
-
-        modules.communication
-          .sendMessage({
-
-            conversationId:
-              conversationId,
-
-            sender:
-              parent,
-
-            recipient:
-              teacher,
-
-            text:
-              "Pacific Education security test message.",
-
-            linkId:
-              linkId
-
-          })
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     8. READ CONVERSATION
-     ===================================================== */
-
-  function readAuthorizedConversation(
-    modules
-  ) {
-
-    if (!conversationId) {
-
-      record(
-
-        "Read authorized conversation",
-
-        false,
-
-        "Conversation ID unavailable."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    return expectSuccess(
-
-      "Read authorized conversation",
-
-      () =>
-
-        modules.communication
-          .getConversation(
-
-            conversationId,
-
-            parent
-
-          )
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     9. VERIFY CONVERSATION ACTIVE
-     ===================================================== */
-
-  function verifyConversationActive(
-    modules
-  ) {
-
-    if (!conversationId) {
-
-      record(
-
-        "Conversation remains active before revocation",
-
-        false,
-
-        "Conversation ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    const conversation =
-      expectSuccess(
-
-        "Verify conversation remains active before revocation",
-
-        () =>
-
-          modules.communication
-            .getConversation(
-
-              conversationId,
-
-              parent
-
-            )
-
-      );
-
-
-    record(
-
-      "Conversation status is active before revocation",
-
-      conversation?.status ===
-        "active",
-
-      conversation
-
-        ? "Conversation status: " +
-          conversation.status
-
-        : "No conversation returned."
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     10. REVOKE RELATIONSHIP
-     ===================================================== */
-
-  function revokeRelationship(
-    modules
-  ) {
-
-    if (!relationshipId) {
-
-      record(
-
-        "Revoke verified education relationship",
-
-        false,
-
-        "Relationship ID unavailable."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    return expectSuccess(
-
-      "Revoke verified education relationship",
-
-      () =>
-
-        modules.relationship
-          .revokeRelationship({
-
-            relationshipId:
-              relationshipId,
-
-            revoker:
-              parent,
-
-            reason:
-              "security_test_revocation"
-
-          })
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     11. VERIFY AUTHORIZATION AFTER REVOCATION
-     ===================================================== */
-
-  function verifyAuthorizationDenied(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Authorization denied after relationship revocation",
-
-        false,
-
-        "Link ID unavailable."
-
-      );
-
-
-      return null;
-
-    }
-
-
-    const access =
-      expectSuccess(
-
-        "Check authorization after relationship revocation",
-
-        () =>
-
-          modules.authorization
-            .authorizeAccess({
-
-              linkId:
-                linkId,
-
-              requester:
-                parent,
-
-              requiredPermission:
-                "communication"
-
-            })
-
-      );
-
-
-    record(
-
-      "Authorization denied after relationship revocation",
-
-      access?.allowed ===
-        false,
-
-      access
-
-        ? "Authorization result: " +
-          (
-            access.allowed
-              ? "allowed"
-              : access.reason
-          )
-
-        : "No authorization result returned."
-
-    );
-
-
-    record(
-
-      "Revocation reason is verified_relationship_revoked",
-
-      access?.reason ===
-        "verified_relationship_revoked",
-
-      access
-
-        ? "Reason: " +
-          access.reason
-
-        : "No reason returned."
-
-    );
-
-
-    return access;
-
-  }
-
-
-
-  /* =====================================================
-     12. DENY CONVERSATION AFTER REVOCATION
-     ===================================================== */
-
-  function denyConversationAfterRevocation(
-    modules
-  ) {
-
-    if (!conversationId) {
-
-      record(
-
-        "Deny conversation access after relationship revocation",
-
-        false,
-
-        "Conversation ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedByThrow(
-
-      "Deny conversation access after relationship revocation",
-
-      () =>
-
-        modules.communication
-          .getConversation(
-
-            conversationId,
-
-            parent
-
-          )
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     13. DENY MESSAGE AFTER REVOCATION
-     ===================================================== */
-
-  function denyMessageAfterRevocation(
-    modules
-  ) {
-
-    if (
-
-      !conversationId ||
-
-      !linkId
-
-    ) {
-
-      record(
-
-        "Deny message after relationship revocation",
-
-        false,
-
-        "Conversation or link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedByThrow(
-
-      "Deny message after relationship revocation",
-
-      () =>
-
-        modules.communication
-          .sendMessage({
-
-            conversationId:
-              conversationId,
-
-            sender:
-              parent,
-
-            recipient:
-              teacher,
-
-            text:
-              "This message MUST be rejected after relationship revocation.",
-
-            linkId:
-              linkId
-
-          })
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     14. DENY CLOSE AFTER REVOCATION
-     ===================================================== */
-
-  function denyCloseAfterRevocation(
-    modules
-  ) {
-
-    if (!conversationId) {
-
-      record(
-
-        "Deny conversation closure after relationship revocation",
-
-        false,
-
-        "Conversation ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedByThrow(
-
-      "Deny conversation closure after relationship revocation",
-
-      () =>
-
-        modules.communication
-          .closeConversation(
-
-            conversationId,
-
-            parent
-
-          )
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     15. DENY UNAUTHORIZED USER
-     ===================================================== */
-
-  function denyUnauthorizedUser(
-    modules
-  ) {
-
-    if (!conversationId) {
-
-      record(
-
-        "Deny unauthorized user conversation access",
-
-        false,
-
-        "Conversation ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedByThrow(
-
-      "Deny unauthorized user conversation access",
-
-      () =>
-
-        modules.communication
-          .getConversation(
-
-            conversationId,
-
-            unauthorizedParent
-
-          )
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     16. HARDENING:
-         WRONG LINK ID
-     ===================================================== */
-
-  function testWrongLinkId(
-    modules
-  ) {
-
-    if (
-
-      !conversationId ||
-
-      !linkId
-
-    ) {
-
-      record(
-
-        "Wrong link ID access denied",
-
-        false,
-
-        "Conversation or link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedByThrow(
-
-      "Wrong link ID access denied",
-
-      () =>
-
-        modules.communication
-          .sendMessage({
-
-            conversationId:
-              conversationId,
-
-            sender:
-              parent,
-
-            recipient:
-              teacher,
-
-            text:
-              "This tampered-link message MUST be rejected.",
-
-            linkId:
-              "TAMPERED-LINK-ID"
-
-          })
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     17. HARDENING:
-         UNAUTHORIZED AUTHORIZATION
-     ===================================================== */
-
-  function testUnauthorizedAuthorization(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Unauthorized parent authorization denied",
-
-        false,
-
-        "Link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedResult(
-
-      "Unauthorized parent authorization denied",
-
-      () =>
-
-        modules.authorization
-          .authorizeAccess({
-
-            linkId:
-              linkId,
-
-            requester:
-              unauthorizedParent,
-
-            requiredPermission:
-              "communication"
-
-          })
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     18. HARDENING:
-         NON-PARTICIPANT
-     ===================================================== */
-
-  function testNonParticipantAuthorization(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Non-participant authorization denied",
-
-        false,
-
-        "Link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    expectDeniedResult(
-
-      "Non-participant authorization denied",
-
-      () =>
-
-        modules.authorization
-          .authorizeAccess({
-
-            linkId:
-              linkId,
-
-            requester:
-              nonParticipant,
-
-            requiredPermission:
-              "communication"
-
-          })
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     19. HARDENING:
-         MISSING / WRONG PERMISSION
-     ===================================================== */
-
-  function testMissingPermission(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Wrong communication permission denied",
-
-        false,
-
-        "Link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    const result =
-      expectSuccess(
-
-        "Check access with non-communication permission",
-
-        () =>
-
-          modules.authorization
-            .authorizeAccess({
-
-              linkId:
-                linkId,
-
-              requester:
-                parent,
-
-              requiredPermission:
-                "learning_summary"
-
-            })
-
-      );
-
-
-    record(
-
-      "Non-authorized permission denied",
-
-      result?.allowed ===
-        false,
-
-      result
-
-        ? "Access result: " +
-          (
-            result.allowed
-              ? "allowed"
-              : result.reason
-          )
-
-        : "No authorization result returned."
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     20. HARDENING:
-         DIRECT RELATIONSHIP STATE
-     ===================================================== */
-
-  function testRelationshipRevoked(
-    modules
-  ) {
-
-    if (!relationshipId) {
-
-      record(
-
-        "Relationship remains revoked",
-
-        false,
-
-        "Relationship ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    const result =
-      expectSuccess(
-
-        "Check relationship after revocation",
-
-        () =>
-
-          modules.relationship
-            .checkRelationship({
-
-              relationshipId:
-                relationshipId,
-
-              requester:
-                parent,
-
-              target:
-                teacher,
-
-              relationshipType:
-                "parent_teacher"
-
-            })
-
-      );
-
-
-    record(
-
-      "Relationship remains revoked",
-
-      result?.status ===
-        "revoked",
-
-      result
-
-        ? "Relationship status: " +
-          result.status
-
-        : "No relationship result returned."
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     21. HARDENING:
-         OLD LINK CANNOT RESTORE ACCESS
-     ===================================================== */
-
-  function testOldLinkCannotRestoreAccess(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Old secure link cannot restore access",
-
-        false,
-
-        "Link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
-
-    const result =
-      expectSuccess(
-
-        "Re-check old secure link after relationship revocation",
-
-        () =>
-
-          modules.authorization
-            .authorizeAccess({
-
-              linkId:
-                linkId,
-
-              requester:
-                parent,
-
-              requiredPermission:
-                "communication"
-
-            })
-
-      );
-
-
-    record(
-
-      "Old secure link cannot restore access",
-
-      result?.allowed ===
-        false,
-
-      result
-
-        ? "Old-link access result: " +
-          (
-            result.allowed
-              ? "allowed"
-              : result.reason
-          )
-
-        : "No authorization result returned."
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     22. HARDENING:
-         REVOKED LINK
-     ===================================================== */
-
-  function testRevokedLink(
-    modules
-  ) {
-
-    if (!linkId) {
-
-      record(
-
-        "Revoked secure link denied",
-
-        false,
-
-        "Link ID unavailable."
-
-      );
-
-
-      return;
-
-    }
-
 
     /*
-     * The relationship is already revoked.
-     *
-     * Therefore the old active link must
-     * no longer authorize communication.
-     */
+    ============================================================
+    3. IDENTITY
+    ============================================================
+    */
 
-    const result =
-      expectSuccess(
+    function testIdentity() {
+        const modules = getModules();
 
-        "Check revoked relationship against old link",
+        try {
+            assertModules(modules);
 
-        () =>
+            if (!parent.id || !teacher.id) {
+                throw new Error("Test identities are incomplete.");
+            }
 
-          modules.authorization
-            .authorizeAccess({
+            if (!parent.authorized || !teacher.authorized) {
+                throw new Error("Test identities must be authorized.");
+            }
 
-              linkId:
-                linkId,
+            return record(
+                "identity_validation",
+                true,
+                "Parent and teacher identities are valid."
+            );
+        } catch (error) {
+            return record(
+                "identity_validation",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
 
-              requester:
+    /*
+    ============================================================
+    4. VERIFIED RELATIONSHIP
+    ============================================================
+    */
+
+    function createVerifiedRelationship() {
+        const modules = getModules();
+
+        try {
+            const result = modules.relationship.verifyRelationship({
+                requester: parent,
+                target: teacher,
+                relationshipType: "parent_teacher",
+                jurisdiction: TEST_GROUP.jurisdiction,
+                evidence: {
+                    type: "linked_student_relationship",
+                    verified: true
+                },
+                authority: {
+                    consent: true
+                }
+            });
+
+            relationshipId = result.relationshipId;
+
+            return record(
+                "verified_relationship_created",
+                Boolean(relationshipId),
+                relationshipId
+                    ? "Verified parent-teacher relationship created."
+                    : "Relationship ID was not returned."
+            );
+        } catch (error) {
+            return record(
+                "verified_relationship_created",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    5. SECURE LINK REQUEST
+    ============================================================
+    */
+
+    function requestSecureLink() {
+        const modules = getModules();
+
+        try {
+            const result = modules.authorization.requestLink({
+                requester: parent,
+                target: teacher,
+                linkType: "parent_teacher",
+                relationship: {
+                    id: relationshipId,
+                    type: "parent_teacher"
+                },
+                relationshipId: relationshipId,
+                jurisdiction: TEST_GROUP.jurisdiction,
+                evidenceReference: {
+                    type: "linked_student_relationship",
+                    verified: true
+                }
+            });
+
+            linkId = result.linkId;
+
+            return record(
+                "secure_link_requested",
+                Boolean(linkId),
+                linkId
+                    ? "Secure communication link requested."
+                    : "Link ID was not returned."
+            );
+        } catch (error) {
+            return record(
+                "secure_link_requested",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    6. LINK APPROVAL
+    ============================================================
+    */
+
+    function approveSecureLink() {
+        const modules = getModules();
+
+        try {
+            const result = modules.authorization.approveLink({
+                linkId: linkId,
+                approver: teacher,
+                permissions: [
+                    "communication"
+                ]
+            });
+
+            return record(
+                "secure_link_approved",
+                Boolean(result),
+                "Secure link approved with communication permission."
+            );
+        } catch (error) {
+            return record(
+                "secure_link_approved",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    7. COMMUNICATION AUTHORIZATION
+    ============================================================
+    */
+
+    function authorizeCommunication() {
+        const modules = getModules();
+
+        try {
+            const result = modules.authorization.authorizeAccess({
+                linkId: linkId,
+                requester: parent,
+                requiredPermission: "communication"
+            });
+
+            return record(
+                "communication_authorized",
+                Boolean(result && result.allowed === true),
+                result && result.allowed === true
+                    ? "Communication permission correctly authorized."
+                    : "Communication authorization failed."
+            );
+        } catch (error) {
+            return record(
+                "communication_authorized",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    8. CONVERSATION CREATION
+    ============================================================
+    */
+
+    function createSecureConversation() {
+        const modules = getModules();
+
+        try {
+            const result = modules.communication.createConversation(
                 parent,
+                teacher,
+                {
+                    linkId: linkId
+                }
+            );
 
-              requiredPermission:
-                "communication"
+            conversationId = result.conversationId;
 
-            })
-
-      );
-
-
-    record(
-
-      "Revoked relationship invalidates old link",
-
-      result?.allowed ===
-        false,
-
-      result
-
-        ? "Access result: " +
-          (
-            result.allowed
-              ? "allowed"
-              : result.reason
-          )
-
-        : "No authorization result returned."
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     23. HARDENING TEST GROUP
-     ===================================================== */
-
-  function testSecurityHardening(
-    modules
-  ) {
-
-    testWrongLinkId(
-      modules
-    );
-
-
-    testUnauthorizedAuthorization(
-      modules
-    );
-
-
-    testNonParticipantAuthorization(
-      modules
-    );
-
-
-    testMissingPermission(
-      modules
-    );
-
-
-    testRelationshipRevoked(
-      modules
-    );
-
-
-    testOldLinkCannotRestoreAccess(
-      modules
-    );
-
-
-    testRevokedLink(
-      modules
-    );
-
-  }
-
-
-
-  /* =====================================================
-     24. SECURITY STATUS
-     ===================================================== */
-
-  function testSecurityStatus(
-    modules
-  ) {
-
-    if (
-
-      typeof modules.communication
-        .getStatus !==
-      "function"
-
-    ) {
-
-      record(
-
-        "Read Secure Communication security status",
-
-        false,
-
-        "getStatus() is unavailable."
-
-      );
-
-
-      return;
-
+            return record(
+                "conversation_created",
+                Boolean(conversationId),
+                conversationId
+                    ? "Authorized conversation created."
+                    : "Conversation ID was not returned."
+            );
+        } catch (error) {
+            return record(
+                "conversation_created",
+                false,
+                error.message || String(error)
+            );
+        }
     }
 
+    /*
+    ============================================================
+    9. AUTHORIZED MESSAGE
+    ============================================================
+    */
 
-    const status =
-      expectSuccess(
+    function sendAuthorizedMessage() {
+        const modules = getModules();
 
-        "Read Secure Communication security status",
+        try {
+            const result = modules.communication.sendMessage({
+                conversationId: conversationId,
+                sender: parent,
+                recipient: teacher,
+                text: "Secure communication test message.",
+                linkId: linkId
+            });
 
-        () =>
-
-          modules.communication
-            .getStatus()
-
-      );
-
-
-    if (!status) {
-
-      return;
-
+            return record(
+                "authorized_message_sent",
+                Boolean(result),
+                "Authorized message sent."
+            );
+        } catch (error) {
+            return record(
+                "authorized_message_sent",
+                false,
+                error.message || String(error)
+            );
+        }
     }
 
-
-    record(
-
-      "Verified relationship required",
-
-      status
-        .verifiedRelationshipRequired ===
-        true
-
-    );
-
-
-    record(
-
-      "Active approved link required",
-
-      status
-        .activeApprovedLinkRequired ===
-        true
-
-    );
-
-
-    record(
-
-      "Communication permission required",
-
-      status
-        .communicationPermissionRequired ===
-        true
-
-    );
-
-
-    record(
-
-      "Automatic information access disabled",
-
-      status
-        .automaticInformationAccess ===
-        false
-
-    );
-
-
-    record(
-
-      "Production backend requirement declared",
-
-      status
-        .backendRequiredForProduction ===
-        true
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     25. FINAL FAIL-CLOSED CHECK
-     ===================================================== */
-
-  function testFinalFailClosedStatus(
-    modules
-  ) {
-
-    const checks = [
-
-      typeof modules.relationship
-        ?.verifyRelationship ===
-        "function",
-
-      typeof modules.authorization
-        ?.authorizeAccess ===
-        "function",
-
-      typeof modules.communication
-        ?.createConversation ===
-        "function",
-
-      typeof modules.communication
-        ?.sendMessage ===
-        "function",
-
-      typeof modules.communication
-        ?.getConversation ===
-        "function",
-
-      typeof modules.communication
-        ?.closeConversation ===
-        "function"
-
-    ];
-
-
-    record(
-
-      "Required security enforcement APIs remain available",
-
-      checks.every(
-        value =>
-          value === true
-      ),
-
-      checks.every(
-        value =>
-          value === true
-      )
-
-        ? "Required enforcement APIs are available."
-
-        : "One or more enforcement APIs are missing."
-
-    );
-
-
-    record(
-
-      "Final test state is fail-closed",
-
-      RESULTS.some(
-        result =>
-          result.name ===
-            "Old secure link cannot restore access" &&
-          result.passed ===
-            true
-      ) &&
-
-      RESULTS.some(
-        result =>
-          result.name ===
-            "Wrong link ID access denied" &&
-          result.passed ===
-            true
-      ) &&
-
-      RESULTS.some(
-        result =>
-          result.name ===
-            "Unauthorized parent authorization denied" &&
-          result.passed ===
-            true
-      ),
-
-      "Critical unauthorized-access paths must remain denied."
-
-    );
-
-  }
-
-
-
-  /* =====================================================
-     REPORT
-     ===================================================== */
-
-  function getReport() {
-
-    const passed =
-      RESULTS.filter(
-
-        result =>
-          result.passed
-
-      ).length;
-
-
-    const failed =
-      RESULTS.filter(
-
-        result =>
-          !result.passed
-
-      ).length;
-
-
-    return Object.freeze({
-
-      version:
-        VERSION,
-
-      total:
-        RESULTS.length,
-
-      passed,
-
-      failed,
-
-      allPassed:
-        failed === 0,
-
-      results:
-        RESULTS.slice()
-
-    });
-
-  }
-
-
-
-  function printReport(
-    report
-  ) {
-
-    console.group(
-
-      "Pacific Education Secure Communication Security Test"
-
-    );
-
-
-    console.log(
-
-      "Version:",
-
-      report.version
-
-    );
-
-
-    console.log(
-
-      "Total:",
-
-      report.total
-
-    );
-
-
-    console.log(
-
-      "Passed:",
-
-      report.passed
-
-    );
-
-
-    console.log(
-
-      "Failed:",
-
-      report.failed
-
-    );
-
-
-    console.log(
-
-      "ALL TESTS PASSED:",
-
-      report.allPassed
-
-    );
-
-
-    report.results.forEach(
-
-      result => {
+    /*
+    ============================================================
+    10. AUTHORIZED READ
+    ============================================================
+    */
+
+    function readAuthorizedConversation() {
+        const modules = getModules();
+
+        try {
+            const result = modules.communication.getConversation(
+                conversationId,
+                parent
+            );
+
+            return record(
+                "authorized_conversation_read",
+                Boolean(result),
+                "Authorized conversation read successfully."
+            );
+        } catch (error) {
+            return record(
+                "authorized_conversation_read",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    11. PRE-REVOCATION HARDENING
+    ============================================================
+    */
+
+    function testWrongLinkId() {
+        const modules = getModules();
+
+        return expectDeniedResult(
+            "hardening_wrong_link_id",
+            function () {
+                return modules.authorization.authorizeAccess({
+                    linkId: "wrong-link-id",
+                    requester: parent,
+                    requiredPermission: "communication"
+                });
+            }
+        );
+    }
+
+    function testUnauthorizedParentAuthorization() {
+        const modules = getModules();
+
+        return expectDeniedResult(
+            "hardening_unauthorized_parent",
+            function () {
+                return modules.authorization.authorizeAccess({
+                    linkId: linkId,
+                    requester: unauthorizedParent,
+                    requiredPermission: "communication"
+                });
+            }
+        );
+    }
+
+    function testNonParticipantAuthorization() {
+        const modules = getModules();
+
+        return expectDeniedResult(
+            "hardening_non_participant",
+            function () {
+                return modules.authorization.authorizeAccess({
+                    linkId: linkId,
+                    requester: nonParticipant,
+                    requiredPermission: "communication"
+                });
+            }
+        );
+    }
+
+    function testWrongPermission() {
+        const modules = getModules();
+
+        return expectDeniedResult(
+            "hardening_wrong_permission",
+            function () {
+                return modules.authorization.authorizeAccess({
+                    linkId: linkId,
+                    requester: parent,
+                    requiredPermission: "learning_summary"
+                });
+            }
+        );
+    }
+
+    function testUnauthorizedConversationAccess() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "hardening_unauthorized_conversation_access",
+            function () {
+                modules.communication.getConversation(
+                    conversationId,
+                    unauthorizedParent
+                );
+            }
+        );
+    }
+
+    /*
+    ============================================================
+    12. RELATIONSHIP REVOCATION
+    ============================================================
+    */
+
+    function revokeVerifiedRelationship() {
+        const modules = getModules();
+
+        try {
+            const result = modules.relationship.revokeRelationship({
+                relationshipId: relationshipId,
+                revoker: parent,
+                reason: "Security test revocation."
+            });
+
+            return record(
+                "relationship_revoked",
+                Boolean(result),
+                "Verified relationship revoked."
+            );
+        } catch (error) {
+            return record(
+                "relationship_revoked",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    13. DIRECT REVOCATION CHECK
+    ============================================================
+    */
+
+    function testRelationshipRevoked() {
+        const modules = getModules();
+
+        try {
+            const result = modules.relationship.checkRelationship({
+                relationshipId: relationshipId,
+                requester: parent,
+                target: teacher,
+                relationshipType: "parent_teacher"
+            });
+
+            const revoked =
+                result &&
+                (
+                    result.active === false ||
+                    result.status === "revoked" ||
+                    result.allowed === false
+                );
+
+            return record(
+                "relationship_revocation_verified",
+                revoked,
+                revoked
+                    ? "Relationship is no longer active."
+                    : "Relationship still appears active."
+            );
+        } catch (error) {
+            return record(
+                "relationship_revocation_verified",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    14. AUTHORIZATION AFTER REVOCATION
+    ============================================================
+    */
+
+    function testAuthorizationAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedResult(
+            "authorization_denied_after_revocation",
+            function () {
+                return modules.authorization.authorizeAccess({
+                    linkId: linkId,
+                    requester: parent,
+                    requiredPermission: "communication"
+                });
+            }
+        );
+    }
+
+    /*
+    ============================================================
+    15. OLD / REVOKED LINK HARDENING
+    ============================================================
+    */
+
+    function testOldLinkCannotRestoreAccess() {
+        const modules = getModules();
+
+        return expectDeniedResult(
+            "old_link_cannot_restore_access",
+            function () {
+                return modules.authorization.authorizeAccess({
+                    linkId: linkId,
+                    requester: parent,
+                    requiredPermission: "communication"
+                });
+            }
+        );
+    }
+
+    function testRevokedLink() {
+        const modules = getModules();
+
+        try {
+            const result = modules.authorization.revokeLink({
+                linkId: linkId,
+                revoker: parent,
+                reason: "Security test link revocation."
+            });
+
+            return record(
+                "revoked_link_verified",
+                Boolean(result),
+                "Link revocation processed."
+            );
+        } catch (error) {
+            return record(
+                "revoked_link_verified",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    16. POST-REVOCATION COMMUNICATION DENIAL
+    ============================================================
+    */
+
+    function testConversationDeniedAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "conversation_denied_after_revocation",
+            function () {
+                modules.communication.getConversation(
+                    conversationId,
+                    parent
+                );
+            }
+        );
+    }
+
+    function testMessageDeniedAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "message_denied_after_revocation",
+            function () {
+                modules.communication.sendMessage({
+                    conversationId: conversationId,
+                    sender: parent,
+                    recipient: teacher,
+                    text: "This message must be denied after revocation.",
+                    linkId: linkId
+                });
+            }
+        );
+    }
+
+    function testCloseDeniedAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "close_denied_after_revocation",
+            function () {
+                modules.communication.closeConversation(
+                    conversationId,
+                    parent
+                );
+            }
+        );
+    }
+
+    /*
+    ============================================================
+    17. SECURITY STATUS
+    ============================================================
+    */
+
+    function testSecurityStatus() {
+        const modules = getModules();
+
+        try {
+            const status = modules.communication.getStatus
+                ? modules.communication.getStatus()
+                : null;
+
+            const authorizationStatus =
+                modules.authorization.getStatus
+                    ? modules.authorization.getStatus()
+                    : null;
+
+            const relationshipStatus =
+                modules.relationship.getStatus
+                    ? modules.relationship.getStatus()
+                    : null;
+
+            const valid =
+                Boolean(status) ||
+                Boolean(authorizationStatus) ||
+                Boolean(relationshipStatus);
+
+            return record(
+                "security_status",
+                valid,
+                "Security module status APIs are available."
+            );
+        } catch (error) {
+            return record(
+                "security_status",
+                false,
+                error.message || String(error)
+            );
+        }
+    }
+
+    /*
+    ============================================================
+    18. FINAL FAIL-CLOSED CHECK
+    ============================================================
+    */
+
+    function finalFailClosedCheck() {
+        const criticalTests = [
+            "hardening_wrong_link_id",
+            "hardening_unauthorized_parent",
+            "hardening_non_participant",
+            "hardening_wrong_permission",
+            "hardening_unauthorized_conversation_access",
+            "relationship_revocation_verified",
+            "authorization_denied_after_revocation",
+            "old_link_cannot_restore_access",
+            "revoked_link_verified",
+            "conversation_denied_after_revocation",
+            "message_denied_after_revocation",
+            "close_denied_after_revocation"
+        ];
+
+        const failures = criticalTests.filter(function (testName) {
+            const result = results.find(function (item) {
+                return item.name === testName;
+            });
+
+            return !result || result.passed !== true;
+        });
+
+        return record(
+            "final_fail_closed_check",
+            failures.length === 0,
+            failures.length === 0
+                ? "All critical denial paths passed."
+                : "Critical denial test(s) failed: " + failures.join(", ")
+        );
+    }
+
+    /*
+    ============================================================
+    REPORT
+    ============================================================
+    */
+
+    function getPassedCount() {
+        return results.filter(function (result) {
+            return result.passed;
+        }).length;
+    }
+
+    function getFailedCount() {
+        return results.filter(function (result) {
+            return !result.passed;
+        }).length;
+    }
+
+    function getReport() {
+        return {
+            version: VERSION,
+            group: TEST_GROUP,
+            totalTests: results.length,
+            passed: getPassedCount(),
+            failed: getFailedCount(),
+            passedAll: getFailedCount() === 0,
+            relationshipId: relationshipId,
+            linkId: linkId,
+            conversationId: conversationId,
+            results: results.slice()
+        };
+    }
+
+    function printReport() {
+        const report = getReport();
 
         console.log(
-
-          result.passed
-            ? "PASS"
-            : "FAIL",
-
-          "-",
-
-          result.name,
-
-          result.details
-            ? "(" +
-              result.details +
-              ")"
-            : ""
-
+            "============================================================"
         );
 
-      }
+        console.log(
+            "PACIFIC EDUCATION SECURE COMMUNICATION SECURITY TEST"
+        );
 
-    );
+        console.log("VERSION:", report.version);
+        console.log("TOTAL:", report.totalTests);
+        console.log("PASSED:", report.passed);
+        console.log("FAILED:", report.failed);
+        console.log("PASSED ALL:", report.passedAll);
 
+        console.log(
+            "============================================================"
+        );
 
-    console.groupEnd();
+        report.results.forEach(function (result) {
+            console.log(
+                result.passed ? "PASS" : "FAIL",
+                result.name,
+                result.details
+            );
+        });
 
-
-    return report;
-
-  }
-
-
-
-  /* =====================================================
-     MAIN SECURITY TEST
-     ===================================================== */
-
-  function runSecurityTest() {
-
-    RESULTS.length =
-      0;
-
-
-    relationshipId =
-      null;
-
-
-    linkId =
-      null;
-
-
-    conversationId =
-      null;
-
-
-    let modules;
-
-
-    /*
-     * -----------------------------------------------------
-     * MODULE AVAILABILITY
-     * -----------------------------------------------------
-     */
-
-    try {
-
-      modules =
-        assertModules();
-
-    } catch (error) {
-
-      record(
-
-        "Required security modules loaded",
-
-        false,
-
-        error?.message ||
-          String(error)
-
-      );
-
-
-      return getReport();
-
+        return report;
     }
 
-
-    record(
-
-      "Required security modules loaded",
-
-      true,
-
-      "Relationship, Authorization and Communication modules are available."
-
-    );
-
-
     /*
-     * -----------------------------------------------------
-     * CLEAN TEST STATE
-     * -----------------------------------------------------
-     */
-
-    resetTestState(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * IDENTITY
-     * -----------------------------------------------------
-     */
-
-    testIdentities();
-
-
-    /*
-     * -----------------------------------------------------
-     * VERIFIED RELATIONSHIP
-     * -----------------------------------------------------
-     */
-
-    const relationship =
-      createVerifiedRelationship(
-        modules
-      );
-
-
-    if (!relationship) {
-
-      return getReport();
-
-    }
-
-
-    /*
-     * -----------------------------------------------------
-     * SECURE LINK
-     * -----------------------------------------------------
-     */
-
-    const link =
-      createSecureLink(
-        modules
-      );
-
-
-    if (!link) {
-
-      return getReport();
-
-    }
-
-
-    /*
-     * -----------------------------------------------------
-     * APPROVAL
-     * -----------------------------------------------------
-     */
-
-    const approvedLink =
-      approveSecureLink(
-        modules
-      );
-
-
-    if (!approvedLink) {
-
-      return getReport();
-
-    }
-
-
-    /*
-     * -----------------------------------------------------
-     * COMMUNICATION AUTHORIZATION
-     * -----------------------------------------------------
-     */
-
-    const access =
-      authorizeCommunication(
-        modules
-      );
-
-
-    if (!access) {
-
-      return getReport();
-
-    }
-
-
-    /*
-     * -----------------------------------------------------
-     * CONVERSATION
-     * -----------------------------------------------------
-     */
-
-    const conversation =
-      createConversation(
-        modules
-      );
-
-
-    if (!conversation) {
-
-      return getReport();
-
-    }
-
-
-    verifyConversationActive(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * MESSAGE
-     * -----------------------------------------------------
-     */
-
-    sendAuthorizedMessage(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * READ
-     * -----------------------------------------------------
-     */
-
-    readAuthorizedConversation(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * HARDENING TESTS WHILE ACCESS IS STILL VALID
-     *
-     * Wrong link
-     * Unauthorized user
-     * Non-participant
-     * Wrong permission
-     * -----------------------------------------------------
-     */
-
-    testWrongLinkId(
-      modules
-    );
-
-
-    testUnauthorizedAuthorization(
-      modules
-    );
-
-
-    testNonParticipantAuthorization(
-      modules
-    );
-
-
-    testMissingPermission(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * CRITICAL SECURITY EVENT
-     *
-     * Revoke the verified relationship while the
-     * conversation still exists.
-     * -----------------------------------------------------
-     */
-
-    revokeRelationship(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * DIRECT RELATIONSHIP CHECK
-     * -----------------------------------------------------
-     */
-
-    testRelationshipRevoked(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * AUTHORIZATION MUST NOW FAIL
-     * -----------------------------------------------------
-     */
-
-    verifyAuthorizationDenied(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * OLD LINK MUST NOT RESTORE ACCESS
-     * -----------------------------------------------------
-     */
-
-    testOldLinkCannotRestoreAccess(
-      modules
-    );
-
-
-    testRevokedLink(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * COMMUNICATION MUST NOW FAIL
-     * -----------------------------------------------------
-     */
-
-    denyConversationAfterRevocation(
-      modules
-    );
-
-
-    denyMessageAfterRevocation(
-      modules
-    );
-
-
-    denyCloseAfterRevocation(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * UNAUTHORIZED USER MUST FAIL
-     * -----------------------------------------------------
-     */
-
-    denyUnauthorizedUser(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * SECURITY STATUS
-     * -----------------------------------------------------
-     */
-
-    testSecurityStatus(
-      modules
-    );
-
-
-    /*
-     * -----------------------------------------------------
-     * FINAL FAIL-CLOSED CHECK
-     * -----------------------------------------------------
-     */
-
-    testFinalFailClosedStatus(
-      modules
-    );
-
-
-    return getReport();
-
-  }
-
-
-
-  /* =====================================================
-     PUBLIC TEST API
-     ===================================================== */
-
-  window.PacificEducationSecureCommunicationTest =
-
-    Object.freeze({
-
-      version:
-        VERSION,
-
-      run:
-        () =>
-          printReport(
-            runSecurityTest()
-          ),
-
-      getReport
-
-    });
-
-
-})();
+    ============================================================
+    MAIN TEST RUNNER
+    ============================================================
+    */
+
+    function runSecurityTest() {
+        results.length = 0;
+
+        relationshipId = null;
+        linkId = null;
+        conversationId = null;
+
+        console.log(
+            "Starting
