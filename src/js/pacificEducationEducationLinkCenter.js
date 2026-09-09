@@ -1,22 +1,24 @@
-
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK CENTER
+ * VERSION 1.1.0
  *
  * Student • Teacher • Parent • Ministry of Education
  *
  * Dashboard-box connection control.
  * Prototype only.
  *
- * Security rule:
- * Link availability does NOT mean information access.
- * Access requires verification + authorization + active permission.
+ * Security flow:
+ * Identity → Role → Verified Relationship
+ * → Authorization → Permission → Communication
+ *
+ * Link availability NEVER means information access.
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
 
   const LINK_TYPES = Object.freeze({
     student_teacher: ["student", "teacher"],
@@ -33,6 +35,13 @@
 
   function getBridge() {
     return window.PacificEducationEducationLinkBridge || null;
+  }
+
+  function getRelationshipLayer() {
+    return (
+      window.PacificEducationVerifiedEducationRelationship ||
+      null
+    );
   }
 
   function validUser(user) {
@@ -58,52 +67,52 @@
       .map(([type]) => type);
   }
 
+  function requireAuthorization() {
+    const authorization = getAuthorization();
+
+    if (!authorization) {
+      throw new Error(
+        "Secure Link Authorization module is not loaded."
+      );
+    }
+
+    return authorization;
+  }
+
   function requestLink(request) {
     if (!validUser(request?.requester)) {
-      throw new Error("Requester is not authorized.");
+      throw new Error(
+        "Requester is not authorized."
+      );
     }
 
     if (!validUser(request?.target)) {
-      throw new Error("Target user is not authorized.");
+      throw new Error(
+        "Target user is not authorized."
+      );
     }
 
     if (!validLinkType(request.linkType)) {
-      throw new Error("Invalid education link type.");
-    }
-
-    const authorization = getAuthorization();
-
-    if (!authorization?.requestLink) {
       throw new Error(
-        "Secure Link Authorization module is not loaded."
+        "Invalid education link type."
       );
     }
 
-    return authorization.requestLink(request);
+    return requireAuthorization().requestLink(
+      request
+    );
   }
 
   function approveLink(request) {
-    const authorization = getAuthorization();
-
-    if (!authorization?.approveLink) {
-      throw new Error(
-        "Secure Link Authorization module is not loaded."
-      );
-    }
-
-    return authorization.approveLink(request);
+    return requireAuthorization().approveLink(
+      request
+    );
   }
 
   function revokeLink(request) {
-    const authorization = getAuthorization();
-
-    if (!authorization?.revokeLink) {
-      throw new Error(
-        "Secure Link Authorization module is not loaded."
-      );
-    }
-
-    return authorization.revokeLink(request);
+    return requireAuthorization().revokeLink(
+      request
+    );
   }
 
   function checkAccess(request) {
@@ -112,16 +121,24 @@
     if (!authorization?.authorizeAccess) {
       return {
         allowed: false,
-        reason: "Authorization module unavailable."
+        reason:
+          "Authorization module unavailable."
       };
     }
 
-    return authorization.authorizeAccess(request);
+    return authorization.authorizeAccess(
+      request
+    );
   }
 
   function getUserLinks(userId) {
-    if (!userId || typeof userId !== "string") {
-      throw new Error("Valid user ID required.");
+    if (
+      !userId ||
+      typeof userId !== "string"
+    ) {
+      throw new Error(
+        "Valid user ID required."
+      );
     }
 
     const authorization = getAuthorization();
@@ -130,72 +147,174 @@
       return [];
     }
 
-    return authorization.getUserLinks(userId);
+    return authorization.getUserLinks(
+      userId
+    );
+  }
+
+  function getUserRelationships(userId) {
+    if (
+      !userId ||
+      typeof userId !== "string"
+    ) {
+      throw new Error(
+        "Valid user ID required."
+      );
+    }
+
+    const relationship =
+      getRelationshipLayer();
+
+    if (
+      !relationship?.getUserRelationships
+    ) {
+      return [];
+    }
+
+    return relationship.getUserRelationships(
+      userId
+    ) || [];
   }
 
   function getDashboardModel(user) {
     if (!validUser(user)) {
-      throw new Error("Dashboard user is not authorized.");
+      throw new Error(
+        "Dashboard user is not authorized."
+      );
     }
 
-    const links = getUserLinks(user.id);
+    const links = getUserLinks(
+      user.id
+    );
+
+    const relationships =
+      getUserRelationships(
+        user.id
+      );
+
+    const verifiedRelationships =
+      relationships.filter(
+        relationship =>
+          relationship.status ===
+          "verified"
+      );
 
     return Object.freeze({
       version: VERSION,
+
       userId: user.id,
+
       role: user.role,
 
       availableLinkTypes:
-        getAvailableLinkTypes(user.role),
+        getAvailableLinkTypes(
+          user.role
+        ),
 
-      pending: links.filter(
-        link => link.status === "pending"
-      ),
+      pending:
+        links.filter(
+          link =>
+            link.status ===
+            "pending"
+        ),
 
-      active: links.filter(
-        link => link.status === "active"
-      ),
+      active:
+        links.filter(
+          link =>
+            link.status ===
+            "active"
+        ),
 
-      revoked: links.filter(
-        link => link.status === "revoked"
-      ),
+      revoked:
+        links.filter(
+          link =>
+            link.status ===
+            "revoked"
+        ),
 
-      linkCount: links.length,
+      linkCount:
+        links.length,
+
+      verifiedRelationshipCount:
+        verifiedRelationships.length,
 
       security: {
+        identityRequired: true,
+        roleRequired: true,
         verificationRequired: true,
+        verifiedRelationshipRequired: true,
         authorizationRequired: true,
         permissionRequired: true,
         auditRequired: true,
-        automaticInformationAccess: false
+        automaticInformationAccess:
+          false
       }
     });
   }
 
   function getStatus() {
-    const authorization = getAuthorization();
-    const bridge = getBridge();
+    const authorization =
+      getAuthorization();
+
+    const bridge =
+      getBridge();
+
+    const relationship =
+      getRelationshipLayer();
+
+    const ready =
+      Boolean(
+        authorization &&
+        bridge &&
+        relationship
+      );
 
     return Object.freeze({
       version: VERSION,
-      authorizationLoaded: Boolean(authorization),
-      bridgeLoaded: Boolean(bridge),
-      ready: Boolean(
-        authorization && bridge
-      ),
-      prototypeOnly: true,
-      productionBackendRequired: true
+
+      authorizationLoaded:
+        Boolean(authorization),
+
+      bridgeLoaded:
+        Boolean(bridge),
+
+      verifiedRelationshipLoaded:
+        Boolean(relationship),
+
+      ready,
+
+      securityFlow:
+        "identity_role_verified_relationship_authorization_permission_communication",
+
+      verifiedRelationshipRequired:
+        true,
+
+      activeApprovedLinkRequired:
+        true,
+
+      automaticInformationAccess:
+        false,
+
+      prototypeOnly:
+        true,
+
+      productionBackendRequired:
+        true
     });
   }
 
   window.PacificEducationEducationLinkCenter =
     Object.freeze({
       version: VERSION,
+
       requestLink,
       approveLink,
       revokeLink,
       checkAccess,
+
       getUserLinks,
+      getUserRelationships,
+
       getDashboardModel,
       getStatus
     });
