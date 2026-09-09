@@ -1,4 +1,3 @@
-
 /*
  * =========================================================
  * PACIFIC EDUCATION
@@ -52,44 +51,61 @@
 
 
     /* =====================================================
-       MODULE FILES
-    ===================================================== */
+       MODULE PATHS
+       ===================================================== */
+
+    /*
+     * IMPORTANT:
+     *
+     * This file is located at:
+     *
+     * src/js/pacificEducationEducationLinkStartup.js
+     *
+     * Therefore:
+     *
+     * ../js/  = root js/
+     * js/     = src/js/
+     */
 
     const MODULES = Object.freeze([
 
         /*
-         * Existing secure authorization layer.
+         * Root secure authorization module.
          */
-        "js/pacificEducationSecureLinkAuthorization.js",
+        "../js/pacificEducationSecureLinkAuthorization.js",
 
         /*
-         * Secure communication layer.
+         * Root secure communication module.
          */
-        "js/pacificEducationSecureCommunication.js",
-
-        /*
-         * Existing Education Link Center.
-         */
-        "js/pacificEducationEducationLinkCenter.js",
+        "../js/pacificEducationSecureCommunication.js",
 
         /*
          * Education Link Bridge.
+         *
+         * Must load before the Center because
+         * the Center checks for the Bridge.
          */
-        "js/pacificEducationEducationLinkBridge.js"
+        "js/pacificEducationEducationLinkBridge.js",
+
+        /*
+         * Education Link Center.
+         */
+        "js/pacificEducationEducationLinkCenter.js"
 
     ]);
 
 
     /* =====================================================
-       STATE
+       STARTUP STATE
     ===================================================== */
 
     let started = false;
+
     let loading = false;
 
 
     /* =====================================================
-       FIND EXISTING SCRIPT
+       FIND SCRIPT
     ===================================================== */
 
     function findScript(src) {
@@ -113,74 +129,91 @@
                 const existing =
                     findScript(src);
 
+
                 /*
-                 * If the script already exists,
-                 * do not load it twice.
+                 * Script already exists.
                  */
                 if (existing) {
 
                     /*
-                     * If already loaded by another
-                     * startup process, continue.
+                     * Already marked as loaded.
                      */
                     if (
                         existing.dataset &&
-                        existing.dataset.pacificEducationLoaded ===
+                        existing.dataset
+                            .pacificEducationLoaded ===
                             "true"
                     ) {
 
                         resolve(src);
 
                         return;
+
                     }
 
 
                     /*
-                     * If the script is already loading,
-                     * wait for its load/error event.
+                     * Existing script may still
+                     * be loading.
                      */
                     existing.addEventListener(
                         "load",
-                        () => resolve(src),
+                        () => {
+
+                            existing.dataset
+                                .pacificEducationLoaded =
+                                "true";
+
+                            resolve(src);
+
+                        },
                         {
                             once: true
                         }
                     );
 
+
                     existing.addEventListener(
                         "error",
-                        () =>
+                        () => {
+
                             reject(
                                 new Error(
                                     `Failed to load ${src}`
                                 )
-                            ),
+                            );
+
+                        },
                         {
                             once: true
                         }
                     );
 
                     return;
+
                 }
 
 
                 /*
-                 * Create the script dynamically.
+                 * Create the script element.
                  */
                 const script =
                     document.createElement(
                         "script"
                     );
 
+
                 script.src = src;
 
+
                 /*
-                 * Preserve module order.
+                 * Preserve dependency order.
                  */
                 script.async = false;
 
+
                 /*
-                 * Mark successful loading.
+                 * Successful loading.
                  */
                 script.addEventListener(
                     "load",
@@ -200,7 +233,7 @@
 
 
                 /*
-                 * Handle loading failure.
+                 * Loading failure.
                  */
                 script.addEventListener(
                     "error",
@@ -220,7 +253,7 @@
 
 
                 /*
-                 * Add to document.
+                 * Add script to document.
                  */
                 document.body.appendChild(
                     script
@@ -233,7 +266,7 @@
 
 
     /* =====================================================
-       REQUIRED MODULE CHECK
+       CHECK REQUIRED MODULES
     ===================================================== */
 
     function checkModules() {
@@ -252,16 +285,16 @@
                         .PacificEducationSecureCommunication
                 ),
 
-            center:
-                Boolean(
-                    window
-                        .PacificEducationEducationLinkCenter
-                ),
-
             bridge:
                 Boolean(
                     window
                         .PacificEducationEducationLinkBridge
+                ),
+
+            center:
+                Boolean(
+                    window
+                        .PacificEducationEducationLinkCenter
                 )
 
         };
@@ -270,8 +303,8 @@
         status.ready =
             status.authorization &&
             status.communication &&
-            status.center &&
-            status.bridge;
+            status.bridge &&
+            status.center;
 
 
         return Object.freeze(status);
@@ -280,7 +313,7 @@
 
 
     /* =====================================================
-       EDUCATION LINK READY EVENT
+       DISPATCH READY EVENT
     ===================================================== */
 
     function dispatchReady(status) {
@@ -301,11 +334,11 @@
                         communicationLoaded:
                             status.communication,
 
-                        centerLoaded:
-                            status.center,
-
                         bridgeLoaded:
                             status.bridge,
+
+                        centerLoaded:
+                            status.center,
 
                         ready:
                             status.ready,
@@ -316,6 +349,7 @@
                     }
 
                 }
+
             )
 
         );
@@ -324,7 +358,45 @@
 
 
     /* =====================================================
-       START
+       DISPATCH ERROR EVENT
+    ===================================================== */
+
+    function dispatchError(error, status = null) {
+
+        const message =
+            error &&
+            error.message
+                ? error.message
+                : String(error);
+
+
+        window.dispatchEvent(
+
+            new CustomEvent(
+                "pacificEducationEducationLinkError",
+                {
+
+                    detail: {
+
+                        version: VERSION,
+
+                        error: message,
+
+                        status
+
+                    }
+
+                }
+
+            )
+
+        );
+
+    }
+
+
+    /* =====================================================
+       START EDUCATION LINK
     ===================================================== */
 
     async function start() {
@@ -340,7 +412,7 @@
 
 
         /*
-         * Prevent simultaneous startup calls.
+         * Prevent simultaneous startup.
          */
         if (loading) {
 
@@ -355,7 +427,7 @@
         try {
 
             /*
-             * Load each required module in order.
+             * Load modules sequentially.
              */
             for (
                 const modulePath
@@ -370,15 +442,15 @@
 
 
             /*
-             * Confirm required modules.
+             * Verify modules after loading.
              */
             const status =
                 checkModules();
 
 
             /*
-             * If required modules are missing,
-             * do not claim the system is ready.
+             * Never claim readiness when
+             * a required module is missing.
              */
             if (!status.ready) {
 
@@ -389,33 +461,37 @@
                 );
 
 
-                window.dispatchEvent(
-
-                    new CustomEvent(
-                        "pacificEducationEducationLinkError",
-                        {
-
-                            detail: {
-
-                                version: VERSION,
-
-                                status
-
-                            }
-
-                        }
-                    )
-
+                dispatchError(
+                    new Error(
+                        "One or more Education Link " +
+                        "modules are unavailable."
+                    ),
+                    status
                 );
 
 
-                return status;
+                return Object.freeze({
+
+                    version: VERSION,
+
+                    started: false,
+
+                    loading: false,
+
+                    ready: false,
+
+                    modules: status,
+
+                    productionBackendRequired:
+                        true
+
+                });
 
             }
 
 
             /*
-             * Mark startup complete.
+             * Startup successful.
              */
             started = true;
 
@@ -442,27 +518,8 @@
             );
 
 
-            window.dispatchEvent(
-
-                new CustomEvent(
-                    "pacificEducationEducationLinkError",
-                    {
-
-                        detail: {
-
-                            version: VERSION,
-
-                            error:
-                                error &&
-                                error.message
-                                    ? error.message
-                                    : String(error)
-
-                        }
-
-                    }
-                )
-
+            dispatchError(
+                error
             );
 
 
@@ -499,7 +556,7 @@
 
 
     /* =====================================================
-       STATUS
+       GET STATUS
     ===================================================== */
 
     function getStatus() {
@@ -522,11 +579,11 @@
             communicationLoaded:
                 modules.communication,
 
-            centerLoaded:
-                modules.center,
-
             bridgeLoaded:
                 modules.bridge,
+
+            centerLoaded:
+                modules.center,
 
             ready:
                 Boolean(
@@ -543,7 +600,7 @@
 
 
     /* =====================================================
-       PUBLIC API
+       PUBLIC STARTUP API
     ===================================================== */
 
     window.PacificEducationEducationLinkStartup =
