@@ -1,7 +1,7 @@
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK BRIDGE
- * VERSION 1.1.0
+ * VERSION 1.2.0
  *
  * Secure connection bridge for:
  * Student ↔ Teacher
@@ -23,7 +23,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
 
   function getAuthorization() {
     return window.PacificEducationSecureLinkAuthorization;
@@ -117,7 +117,10 @@
 
     return communication.createConversation(
       requester,
-      recipient
+      recipient,
+      {
+        linkId
+      }
     );
   }
 
@@ -150,7 +153,8 @@
       conversationId,
       sender,
       recipient,
-      text
+      text,
+      linkId
     });
   }
 
@@ -192,6 +196,8 @@
       verifiedRelationshipRequired: true,
 
       relationshipRecheckedByAuthorization: true,
+
+      activeApprovedLinkPassedToCommunication: true,
 
       automaticInformationAccess: false,
 
