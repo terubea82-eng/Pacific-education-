@@ -3,9 +3,10 @@
  * PACIFIC EDUCATION
  * SECURE LINK & AUTHORIZATION LAYER
  * =========================================================
- * Version 1.3.0
+ * Version 1.4.0
  *
  * Security sequence:
+ *
  * Identity
  *   ↓
  * Role
@@ -18,20 +19,22 @@
  *   ↓
  * Access / Communication
  *
- * Prototype only.
- * Production authorization MUST be enforced server-side.
- *
  * IMPORTANT:
- * - localStorage is prototype storage only.
- * - Client-side state MUST NOT be trusted in production.
+ * - Prototype authorization only.
+ * - Production authorization MUST be enforced server-side.
+ * - localStorage MUST NOT be trusted as a security boundary.
  * - No automatic information access.
+ * - Relationship lookup requires a complete authorized user.
+ * - Raw user IDs are never accepted for relationship lookup.
+ * - No passwords, API keys, payment secrets or access tokens
+ *   are stored by this module.
  * =========================================================
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.3.0";
+  const VERSION = "1.4.0";
 
   const STORAGE_KEY =
     "pacificEducationSecureLinks";
@@ -137,6 +140,17 @@
   }
 
   function saveState(state) {
+    if (
+      !state ||
+      typeof state !== "object" ||
+      !Array.isArray(state.links) ||
+      !Array.isArray(state.audit)
+    ) {
+      throw new Error(
+        "Invalid authorization state."
+      );
+    }
+
     localStorage.setItem(
       STORAGE_KEY,
       JSON.stringify(state)
@@ -194,6 +208,20 @@
     );
   }
 
+  function requireUser(
+    user,
+    message
+  ) {
+    if (!validUser(user)) {
+      throw new Error(
+        message ||
+        "Authorized user required."
+      );
+    }
+
+    return user;
+  }
+
   function sameParticipant(
     first,
     second
@@ -203,6 +231,54 @@
       second &&
       first.id === second.id &&
       first.role === second.role
+    );
+  }
+
+  function participantMatchesLink(
+    user,
+    link,
+    side
+  ) {
+    if (
+      !validUser(user) ||
+      !link ||
+      typeof link !== "object"
+    ) {
+      return false;
+    }
+
+    if (side === "requester") {
+      return (
+        user.id === link.requesterId &&
+        user.role === link.requesterRole
+      );
+    }
+
+    if (side === "target") {
+      return (
+        user.id === link.targetId &&
+        user.role === link.targetRole
+      );
+    }
+
+    return false;
+  }
+
+  function isLinkParticipant(
+    user,
+    link
+  ) {
+    return Boolean(
+      participantMatchesLink(
+        user,
+        link,
+        "requester"
+      ) ||
+      participantMatchesLink(
+        user,
+        link,
+        "target"
+      )
     );
   }
 
@@ -237,7 +313,8 @@
       rule.roles.includes(
         target.role
       ) &&
-      requester.role !== target.role
+      requester.role !==
+        target.role
     );
   }
 
@@ -245,17 +322,15 @@
     requester,
     target
   ) {
-    if (!validUser(requester)) {
-      throw new Error(
-        "Requester verification failed."
-      );
-    }
+    requireUser(
+      requester,
+      "Requester verification failed."
+    );
 
-    if (!validUser(target)) {
-      throw new Error(
-        "Target verification failed."
-      );
-    }
+    requireUser(
+      target,
+      "Target verification failed."
+    );
 
     if (
       sameParticipant(
@@ -307,89 +382,164 @@
     return layer;
   }
 
+  /*
+   * SECURITY FIX:
+   *
+   * The relationship layer now requires the COMPLETE
+   * authorized user object.
+   *
+   * Never pass requester.id or target.id.
+   */
+
+  function getRelationshipsForUser(
+    user
+  ) {
+    requireUser(
+      user,
+      "Authorized user is required for relationship lookup."
+    );
+
+    const layer =
+      requireRelationshipLayer();
+
+    let relationships;
+
+    try {
+      relationships =
+        layer.getUserRelationships(
+          user
+        );
+    } catch (_) {
+      return [];
+    }
+
+    if (
+      !Array.isArray(
+        relationships
+      )
+    ) {
+      return [];
+    }
+
+    return relationships;
+  }
+
+  function relationshipParticipantsMatch(
+    relationship,
+    firstId,
+    secondId
+  ) {
+    if (
+      !relationship ||
+      typeof relationship !==
+        "object"
+    ) {
+      return false;
+    }
+
+    return Boolean(
+      (
+        relationship.requesterId ===
+          firstId &&
+        relationship.targetId ===
+          secondId
+      ) ||
+      (
+        relationship.requesterId ===
+          secondId &&
+        relationship.targetId ===
+          firstId
+      )
+    );
+  }
+
   function findVerifiedRelationship({
-    requesterId,
-    targetId,
+    requester,
+    target,
     relationshipType
   }) {
     if (
-      typeof requesterId !== "string" ||
-      !requesterId.trim() ||
-      typeof targetId !== "string" ||
-      !targetId.trim() ||
-      typeof relationshipType !== "string" ||
+      !validUser(requester) ||
+      !validUser(target) ||
+      typeof relationshipType !==
+        "string" ||
       !relationshipType.trim()
     ) {
       return null;
     }
 
-    const layer =
-      getRelationshipLayer();
-
-    if (
-      !layer ||
-      typeof layer.getUserRelationships !==
-        "function"
-    ) {
-      return null;
-    }
+    let requesterRelationships =
+      [];
 
     try {
-      const requesterRelationships =
-        layer.getUserRelationships(
-          requesterId
+      requesterRelationships =
+        getRelationshipsForUser(
+          requester
         );
+    } catch (_) {
+      requesterRelationships =
+        [];
+    }
 
-      const targetRelationships =
-        layer.getUserRelationships(
-          targetId
-        );
-
-      if (
-        !Array.isArray(
-          requesterRelationships
-        ) ||
-        !Array.isArray(
-          targetRelationships
-        )
-      ) {
-        return null;
-      }
-
-      const combined = [
-        ...requesterRelationships,
-        ...targetRelationships
-      ];
-
-      return (
-        combined.find(item =>
+    const relationship =
+      requesterRelationships.find(
+        item =>
           item &&
           item.status === "verified" &&
           item.relationshipType ===
             relationshipType &&
-          (
-            (
-              item.requesterId ===
-                requesterId &&
-              item.targetId ===
-                targetId
-            ) ||
-            (
-              item.requesterId ===
-                targetId &&
-              item.targetId ===
-                requesterId
-            )
+          relationshipParticipantsMatch(
+            item,
+            requester.id,
+            target.id
           )
-        ) || null
       );
-    } catch (_) {
-      return null;
+
+    if (relationship) {
+      return relationship;
     }
+
+    /*
+     * Do not silently query the target as an arbitrary ID.
+     * The target must also be a complete authorized user.
+     *
+     * This lookup is permitted only because the complete
+     * authorized target object was supplied.
+     */
+
+    let targetRelationships =
+      [];
+
+    try {
+      targetRelationships =
+        getRelationshipsForUser(
+          target
+        );
+    } catch (_) {
+      targetRelationships =
+        [];
+    }
+
+    return (
+      targetRelationships.find(
+        item =>
+          item &&
+          item.status === "verified" &&
+          item.relationshipType ===
+            relationshipType &&
+          relationshipParticipantsMatch(
+            item,
+            requester.id,
+            target.id
+          )
+      ) ||
+      null
+    );
   }
 
-  function requireVerifiedRelationship(
-    link
+  function findVerifiedRelationshipForLink(
+    link,
+    requester
   ) {
     if (
       !link ||
@@ -400,14 +550,52 @@
       );
     }
 
-    requireRelationshipLayer();
+    requireUser(
+      requester,
+      "Authorized requester required."
+    );
+
+    const requesterMatches =
+      participantMatchesLink(
+        requester,
+        link,
+        "requester"
+      ) ||
+      participantMatchesLink(
+        requester,
+        link,
+        "target"
+      );
+
+    if (!requesterMatches) {
+      throw new Error(
+        "Requester is not a participant in this link."
+      );
+    }
+
+    const targetUser =
+      link.requesterId === requester.id
+        ? {
+            id: link.targetId,
+            role: link.targetRole,
+            authorized: true
+          }
+        : {
+            id: link.requesterId,
+            role: link.requesterRole,
+            authorized: true
+          };
+
+    /*
+     * This synthetic object is used only as a prototype
+     * lookup identity. Production systems MUST obtain the
+     * authoritative authenticated user record server-side.
+     */
 
     const relationship =
       findVerifiedRelationship({
-        requesterId:
-          link.requesterId,
-        targetId:
-          link.targetId,
+        requester,
+        target: targetUser,
         relationshipType:
           link.linkType
       });
@@ -419,7 +607,8 @@
     }
 
     if (
-      typeof relationship.id !== "string" ||
+      typeof relationship.id !==
+        "string" ||
       !relationship.id.trim()
     ) {
       throw new Error(
@@ -467,10 +656,8 @@
 
     const verifiedRelationship =
       findVerifiedRelationship({
-        requesterId:
-          requester.id,
-        targetId:
-          target.id,
+        requester,
+        target,
         relationshipType:
           linkType
       });
@@ -479,18 +666,25 @@
       loadState();
 
     const existing =
-      state.links.find(link =>
-        link &&
-        link.requesterId ===
-          requester.id &&
-        link.targetId ===
-          target.id &&
-        link.linkType ===
-          linkType &&
-        (
-          link.status === "active" ||
-          link.status === "pending"
-        )
+      state.links.find(
+        link =>
+          link &&
+          link.requesterId ===
+            requester.id &&
+          link.targetId ===
+            target.id &&
+          link.requesterRole ===
+            requester.role &&
+          link.targetRole ===
+            target.role &&
+          link.linkType ===
+            linkType &&
+          (
+            link.status ===
+              "active" ||
+            link.status ===
+              "pending"
+          )
       );
 
     if (existing) {
@@ -527,16 +721,19 @@
           : null,
 
       jurisdiction:
-        typeof jurisdiction === "string"
+        typeof jurisdiction ===
+        "string"
           ? jurisdiction
           : null,
 
       evidenceReference:
-        typeof evidenceReference === "string"
+        typeof evidenceReference ===
+        "string"
           ? evidenceReference
           : null,
 
-      status: "pending",
+      status:
+        "pending",
 
       verificationStatus:
         verifiedRelationship
@@ -559,7 +756,9 @@
       permissions: []
     };
 
-    state.links.push(link);
+    state.links.push(
+      link
+    );
 
     audit(
       state,
@@ -576,7 +775,8 @@
         suppliedRelationshipIdIgnored:
           Boolean(
             relationshipId &&
-            !verifiedRelationship
+            relationshipId !==
+              link.relationshipId
           )
       }
     );
@@ -611,14 +811,14 @@
     approver,
     permissions = []
   }) {
-    if (!validUser(approver)) {
-      throw new Error(
-        "Approver authorization failed."
-      );
-    }
+    requireUser(
+      approver,
+      "Approver authorization failed."
+    );
 
     if (
-      typeof linkId !== "string" ||
+      typeof linkId !==
+        "string" ||
       !linkId.trim()
     ) {
       throw new Error(
@@ -643,7 +843,8 @@
     }
 
     if (
-      link.status !== "pending"
+      link.status !==
+      "pending"
     ) {
       throw new Error(
         "Only pending links can be approved."
@@ -657,9 +858,8 @@
      * CRITICAL SECURITY GATE:
      *
      * Only the target participant may approve.
-     * The requester cannot approve their own
-     * request.
      */
+
     if (
       approver.id !==
         link.targetId ||
@@ -672,27 +872,41 @@
     }
 
     const verifiedRelationship =
-      requireVerifiedRelationship(
-        link
+      findVerifiedRelationship({
+        requester: {
+          id: link.requesterId,
+          role: link.requesterRole,
+          authorized: true
+        },
+        target: approver,
+        relationshipType:
+          link.linkType
+      });
+
+    if (!verifiedRelationship) {
+      throw new Error(
+        "Verified education relationship required."
       );
+    }
 
     const requestedPermissions =
       Array.isArray(permissions)
         ? permissions
         : [];
 
-    const approvedPermissions = [
-      ...new Set(
-        requestedPermissions.filter(
-          permission =>
-            typeof permission ===
-              "string" &&
-            rule.permissions.includes(
-              permission
-            )
+    const approvedPermissions =
+      [
+        ...new Set(
+          requestedPermissions.filter(
+            permission =>
+              typeof permission ===
+                "string" &&
+              rule.permissions.includes(
+                permission
+              )
+          )
         )
-      )
-    ];
+      ];
 
     if (
       approvedPermissions.length ===
@@ -769,78 +983,4 @@
    * =======================================================
    */
 
-  function authorizeAccess({
-    linkId,
-    requester,
-    requiredPermission
-  }) {
-    if (!validUser(requester)) {
-      throw new Error(
-        "Requester authorization failed."
-      );
-    }
-
-    if (
-      typeof linkId !== "string" ||
-      !linkId.trim()
-    ) {
-      throw new Error(
-        "Valid link ID required."
-      );
-    }
-
-    if (
-      typeof requiredPermission !==
-        "string" ||
-      !requiredPermission.trim()
-    ) {
-      throw new Error(
-        "Required permission is missing."
-      );
-    }
-
-    const state =
-      loadState();
-
-    const link =
-      state.links.find(
-        item =>
-          item &&
-          item.id === linkId
-      );
-
-    if (!link) {
-      throw new Error(
-        "Education link not found."
-      );
-    }
-
-    if (
-      link.status !== "active"
-    ) {
-      throw new Error(
-        "Education link is not active."
-      );
-    }
-
-    const requesterIsRequester =
-      requester.id ===
-        link.requesterId;
-
-    const requesterIsTarget =
-      requester.id ===
-        link.targetId;
-
-    if (
-      !requesterIsRequester &&
-      !requesterIsTarget
-    ) {
-      throw new Error(
-        "Access denied: requester is not a participant in this link."
-      );
-    }
-
-    const expectedRole =
-      requesterIsRequester
-        ? link.requesterRole
-        :
+  function
