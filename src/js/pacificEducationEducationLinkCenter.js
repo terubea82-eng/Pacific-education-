@@ -1,7 +1,7 @@
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK CENTER
- * VERSION 1.1.0
+ * VERSION 1.2.0
  *
  * Student • Teacher • Parent • Ministry of Education
  *
@@ -13,12 +13,15 @@
  * → Authorization → Permission → Communication
  *
  * Link availability NEVER means information access.
+ *
+ * No passwords, API keys, access tokens,
+ * payment secrets, or private credentials.
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
 
   const LINK_TYPES = Object.freeze({
     student_teacher: ["student", "teacher"],
@@ -30,11 +33,17 @@
   });
 
   function getAuthorization() {
-    return window.PacificEducationSecureLinkAuthorization || null;
+    return (
+      window.PacificEducationSecureLinkAuthorization ||
+      null
+    );
   }
 
   function getBridge() {
-    return window.PacificEducationEducationLinkBridge || null;
+    return (
+      window.PacificEducationEducationLinkBridge ||
+      null
+    );
   }
 
   function getRelationshipLayer() {
@@ -47,9 +56,11 @@
   function validUser(user) {
     return Boolean(
       user &&
+      typeof user === "object" &&
       typeof user.id === "string" &&
       user.id.trim() &&
       typeof user.role === "string" &&
+      user.role.trim() &&
       user.authorized === true
     );
   }
@@ -63,30 +74,68 @@
 
   function getAvailableLinkTypes(role) {
     return Object.entries(LINK_TYPES)
-      .filter(([, roles]) => roles.includes(role))
+      .filter(([, roles]) =>
+        roles.includes(role)
+      )
       .map(([type]) => type);
   }
 
   function requireAuthorization() {
-    const authorization = getAuthorization();
+    const authorization =
+      getAuthorization();
 
-    if (!authorization) {
+    if (
+      !authorization ||
+      typeof authorization.requestLink !==
+        "function" ||
+      typeof authorization.approveLink !==
+        "function" ||
+      typeof authorization.authorizeAccess !==
+        "function" ||
+      typeof authorization.revokeLink !==
+        "function" ||
+      typeof authorization.getUserLinks !==
+        "function"
+    ) {
       throw new Error(
-        "Secure Link Authorization module is not loaded."
+        "Secure Link Authorization module is unavailable or incomplete."
       );
     }
 
     return authorization;
   }
 
+  function requireRelationshipLayer() {
+    const relationship =
+      getRelationshipLayer();
+
+    if (
+      !relationship ||
+      typeof relationship.getUserRelationships !==
+        "function"
+    ) {
+      throw new Error(
+        "Verified Education Relationship module is unavailable or incomplete."
+      );
+    }
+
+    return relationship;
+  }
+
   function requestLink(request) {
-    if (!validUser(request?.requester)) {
+    if (!request || typeof request !== "object") {
+      throw new Error(
+        "Valid link request is required."
+      );
+    }
+
+    if (!validUser(request.requester)) {
       throw new Error(
         "Requester is not authorized."
       );
     }
 
-    if (!validUser(request?.target)) {
+    if (!validUser(request.target)) {
       throw new Error(
         "Target user is not authorized."
       );
@@ -104,76 +153,76 @@
   }
 
   function approveLink(request) {
+    if (!request || typeof request !== "object") {
+      throw new Error(
+        "Valid link approval request is required."
+      );
+    }
+
     return requireAuthorization().approveLink(
       request
     );
   }
 
   function revokeLink(request) {
+    if (!request || typeof request !== "object") {
+      throw new Error(
+        "Valid link revocation request is required."
+      );
+    }
+
     return requireAuthorization().revokeLink(
       request
     );
   }
 
   function checkAccess(request) {
-    const authorization = getAuthorization();
-
-    if (!authorization?.authorizeAccess) {
+    if (!request || typeof request !== "object") {
       return {
         allowed: false,
         reason:
-          "Authorization module unavailable."
+          "Valid access request is required."
       };
     }
 
-    return authorization.authorizeAccess(
-      request
-    );
+    return requireAuthorization()
+      .authorizeAccess(request);
   }
 
-  function getUserLinks(userId) {
-    if (
-      !userId ||
-      typeof userId !== "string"
-    ) {
+  /*
+   * Secure Link Authorization.getUserLinks()
+   * requires the complete validated user object.
+   *
+   * Do not pass only userId.
+   */
+  function getUserLinks(user) {
+    if (!validUser(user)) {
       throw new Error(
-        "Valid user ID required."
+        "Valid authorized user object is required."
       );
     }
 
-    const authorization = getAuthorization();
-
-    if (!authorization?.getUserLinks) {
-      return [];
-    }
-
-    return authorization.getUserLinks(
-      userId
+    return (
+      requireAuthorization().getUserLinks(
+        user
+      ) || []
     );
   }
 
   function getUserRelationships(userId) {
     if (
-      !userId ||
-      typeof userId !== "string"
+      typeof userId !== "string" ||
+      !userId.trim()
     ) {
       throw new Error(
-        "Valid user ID required."
+        "Valid user ID is required."
       );
     }
 
-    const relationship =
-      getRelationshipLayer();
-
-    if (
-      !relationship?.getUserRelationships
-    ) {
-      return [];
-    }
-
-    return relationship.getUserRelationships(
-      userId
-    ) || [];
+    return (
+      requireRelationshipLayer()
+        .getUserRelationships(userId) || []
+    );
   }
 
   function getDashboardModel(user) {
@@ -183,20 +232,18 @@
       );
     }
 
-    const links = getUserLinks(
-      user.id
-    );
+    const links =
+      getUserLinks(user);
 
     const relationships =
-      getUserRelationships(
-        user.id
-      );
+      getUserRelationships(user.id);
 
     const verifiedRelationships =
       relationships.filter(
         relationship =>
+          relationship &&
           relationship.status ===
-          "verified"
+            "verified"
       );
 
     return Object.freeze({
@@ -214,22 +261,22 @@
       pending:
         links.filter(
           link =>
-            link.status ===
-            "pending"
+            link &&
+            link.status === "pending"
         ),
 
       active:
         links.filter(
           link =>
-            link.status ===
-            "active"
+            link &&
+            link.status === "active"
         ),
 
       revoked:
         links.filter(
           link =>
-            link.status ===
-            "revoked"
+            link &&
+            link.status === "revoked"
         ),
 
       linkCount:
@@ -262,24 +309,61 @@
     const relationship =
       getRelationshipLayer();
 
-    const ready =
+    const authorizationReady =
       Boolean(
         authorization &&
-        bridge &&
-        relationship
+        typeof authorization.requestLink ===
+          "function" &&
+        typeof authorization.approveLink ===
+          "function" &&
+        typeof authorization.authorizeAccess ===
+          "function" &&
+        typeof authorization.revokeLink ===
+          "function" &&
+        typeof authorization.getUserLinks ===
+          "function"
       );
+
+    const bridgeReady =
+      Boolean(
+        bridge &&
+        typeof bridge.requestConnection ===
+          "function" &&
+        typeof bridge.approveConnection ===
+          "function" &&
+        typeof bridge.checkAccess ===
+          "function" &&
+        typeof bridge.revokeConnection ===
+          "function" &&
+        typeof bridge.openConversation ===
+          "function" &&
+        typeof bridge.sendAuthorizedMessage ===
+          "function"
+      );
+
+    const relationshipReady =
+      Boolean(
+        relationship &&
+        typeof relationship.getUserRelationships ===
+          "function"
+      );
+
+    const ready =
+      authorizationReady &&
+      bridgeReady &&
+      relationshipReady;
 
     return Object.freeze({
       version: VERSION,
 
       authorizationLoaded:
-        Boolean(authorization),
+        authorizationReady,
 
       bridgeLoaded:
-        Boolean(bridge),
+        bridgeReady,
 
       verifiedRelationshipLoaded:
-        Boolean(relationship),
+        relationshipReady,
 
       ready,
 
