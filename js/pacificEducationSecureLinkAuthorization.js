@@ -3,19 +3,14 @@
  * PACIFIC EDUCATION
  * SECURE LINK & AUTHORIZATION LAYER
  * =========================================================
- *
- * Integrated with:
- * PacificEducationVerifiedEducationRelationship
+ * Version 1.2.0
  *
  * Security sequence:
- *
  * Identity
  *   ↓
  * Role
  *   ↓
  * Verified Education Relationship
- *   ↓
- * Jurisdiction / Authority
  *   ↓
  * Link Authorization
  *   ↓
@@ -23,18 +18,15 @@
  *   ↓
  * Access / Communication
  *
- * Student • Teacher • Parent • Ministry
- *
  * Prototype only.
  * Production authorization MUST be enforced server-side.
  * =========================================================
  */
 
 (() => {
-
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
 
   const STORAGE_KEY =
     "pacificEducationSecureLinks";
@@ -104,41 +96,68 @@
      ===================================================== */
 
   function emptyState() {
-
     return {
       links: [],
       audit: []
     };
-
   }
 
 
   function loadState() {
-
     try {
 
-      return JSON.parse(
+      const raw =
         localStorage.getItem(
           STORAGE_KEY
-        )
-      ) || emptyState();
+        );
 
-    } catch {
+      if (!raw) {
+        return emptyState();
+      }
+
+      const parsed =
+        JSON.parse(raw);
+
+      if (
+        !parsed ||
+        typeof parsed !== "object" ||
+        !Array.isArray(parsed.links) ||
+        !Array.isArray(parsed.audit)
+      ) {
+        return emptyState();
+      }
+
+      return parsed;
+
+    } catch (_) {
 
       return emptyState();
 
     }
-
   }
 
 
   function saveState(state) {
-
     localStorage.setItem(
       STORAGE_KEY,
       JSON.stringify(state)
     );
+  }
 
+
+  function createId(prefix) {
+
+    if (
+      typeof crypto !== "undefined" &&
+      typeof crypto.randomUUID === "function"
+    ) {
+      return crypto.randomUUID();
+    }
+
+    return (
+      `${prefix}-${Date.now()}-` +
+      `${Math.random().toString(36).slice(2, 12)}`
+    );
   }
 
 
@@ -151,7 +170,7 @@
     state.audit.push({
 
       id:
-        crypto.randomUUID(),
+        createId("audit"),
 
       action,
 
@@ -161,7 +180,6 @@
       details
 
     });
-
   }
 
 
@@ -170,9 +188,7 @@
      ===================================================== */
 
   function validRole(role) {
-
     return ROLES.includes(role);
-
   }
 
 
@@ -192,7 +208,6 @@
       user.authorized === true
 
     );
-
   }
 
 
@@ -214,7 +229,6 @@
     }
 
     return rule;
-
   }
 
 
@@ -238,7 +252,6 @@
         target.role
 
     );
-
   }
 
 
@@ -263,8 +276,18 @@
 
     }
 
-    return true;
+    if (
+      requester.id ===
+      target.id
+    ) {
 
+      throw new Error(
+        "Requester and target must be different participants."
+      );
+
+    }
+
+    return true;
   }
 
 
@@ -279,88 +302,98 @@
         .PacificEducationVerifiedEducationRelationship
       || null
     );
-
   }
 
 
   function findVerifiedRelationship({
-
     requesterId,
     targetId,
     relationshipType
-
   }) {
 
     const layer =
       getRelationshipLayer();
 
-    if (!layer) {
-
-      return null;
-
-    }
-
     if (
+      !layer ||
       typeof layer.getUserRelationships !==
-      "function"
+        "function"
     ) {
 
       return null;
 
     }
 
-    const requesterRelationships =
-      layer.getUserRelationships(
-        requesterId
-      );
+    try {
 
-    const targetRelationships =
-      layer.getUserRelationships(
-        targetId
-      );
+      const requesterRelationships =
+        layer.getUserRelationships(
+          requesterId
+        );
 
-    const allRelationships = [
+      const targetRelationships =
+        layer.getUserRelationships(
+          targetId
+        );
 
-      ...requesterRelationships,
+      if (
+        !Array.isArray(
+          requesterRelationships
+        ) ||
+        !Array.isArray(
+          targetRelationships
+        )
+      ) {
 
-      ...targetRelationships
+        return null;
 
-    ];
+      }
 
+      return [
 
-    const relationship =
-      allRelationships.find(
-        item =>
+        ...requesterRelationships,
 
-          item.status ===
-            "verified" &&
+        ...targetRelationships
 
-          item.relationshipType ===
-            relationshipType &&
+      ].find(item =>
+
+        item &&
+
+        item.status ===
+          "verified" &&
+
+        item.relationshipType ===
+          relationshipType &&
+
+        (
 
           (
-            (
-              item.requesterId ===
-                requesterId &&
+            item.requesterId ===
+              requesterId &&
 
-              item.targetId ===
-                targetId
-            ) ||
-
-            (
-              item.requesterId ===
-                targetId &&
-
-              item.targetId ===
-                requesterId
-            )
+            item.targetId ===
+              targetId
           )
 
-      );
+          ||
 
+          (
+            item.requesterId ===
+              targetId &&
 
-    return relationship || null;
+            item.targetId ===
+              requesterId
+          )
 
+        )
+
+      ) || null;
+
+    } catch (_) {
+
+      return null;
+
+    }
   }
 
 
@@ -371,14 +404,6 @@
     const layer =
       getRelationshipLayer();
 
-
-    /*
-     * Fail closed.
-     *
-     * If the verification layer is missing,
-     * an education link must NOT become active.
-     */
-
     if (!layer) {
 
       throw new Error(
@@ -386,7 +411,6 @@
       );
 
     }
-
 
     const relationship =
       findVerifiedRelationship({
@@ -402,7 +426,6 @@
 
       });
 
-
     if (!relationship) {
 
       throw new Error(
@@ -411,9 +434,7 @@
 
     }
 
-
     return relationship;
-
   }
 
 
@@ -442,12 +463,10 @@
     const rule =
       getRule(linkType);
 
-
     verifyParticipants(
       requester,
       target
     );
-
 
     if (
       !rolesMatch(
@@ -465,11 +484,11 @@
 
 
     /*
-     * A request may be created before
-     * verification is complete.
+     * A request may exist while verification
+     * is still required.
      *
-     * However, it can NEVER become active
-     * until a verified relationship exists.
+     * It cannot become active until the
+     * verified relationship exists.
      */
 
     const verifiedRelationship =
@@ -492,41 +511,41 @@
 
 
     const existing =
-      state.links.find(
+      state.links.find(link =>
 
-        link =>
+        link &&
 
-          link.requesterId ===
-            requester.id &&
+        link.requesterId ===
+          requester.id &&
 
-          link.targetId ===
-            target.id &&
+        link.targetId ===
+          target.id &&
 
-          link.linkType ===
-            linkType &&
+        link.linkType ===
+          linkType &&
 
-          (
-            link.status ===
-              "active" ||
+        (
 
-            link.status ===
-              "pending"
-          )
+          link.status ===
+            "active" ||
+
+          link.status ===
+            "pending"
+
+        )
 
       );
 
 
     if (existing) {
-
       return existing;
-
     }
 
 
     const link = {
 
       id:
-        crypto.randomUUID(),
+        createId("link"),
 
       requesterId:
         requester.id,
@@ -545,13 +564,14 @@
       relationship:
         relationship || null,
 
+      /*
+       * Never trust an arbitrary relationshipId
+       * supplied by the caller.
+       */
       relationshipId:
-        relationshipId ||
-        (
-          verifiedRelationship
-            ? verifiedRelationship.id
-            : null
-        ),
+        verifiedRelationship
+          ? verifiedRelationship.id
+          : null,
 
       jurisdiction,
 
@@ -607,6 +627,12 @@
         relationshipVerified:
           Boolean(
             verifiedRelationship
+          ),
+
+        suppliedRelationshipIdIgnored:
+          Boolean(
+            relationshipId &&
+            !verifiedRelationship
           )
 
       }
@@ -643,7 +669,6 @@
 
 
     return link;
-
   }
 
 
@@ -677,8 +702,9 @@
     const link =
       state.links.find(
         item =>
+          item &&
           item.id ===
-          linkId
+            linkId
       );
 
 
@@ -693,7 +719,7 @@
 
     if (
       link.status !==
-      "pending"
+        "pending"
     ) {
 
       throw new Error(
@@ -709,26 +735,38 @@
       );
 
 
+    /*
+     * ===================================================
+     * CRITICAL SECURITY GATE
+     * ===================================================
+     *
+     * Only the target participant may approve
+     * the pending link.
+     *
+     * This prevents the requester from approving
+     * their own request.
+     */
+
     if (
-      !rule.roles.includes(
-        approver.role
-      )
+
+      approver.id !==
+        link.targetId ||
+
+      approver.role !==
+        link.targetRole
+
     ) {
 
       throw new Error(
-        "Approver role is not permitted."
+        "Approval authority denied: only the target participant may approve this link."
       );
 
     }
 
 
     /*
-     * ===================================================
-     * CRITICAL SECURITY GATE
-     * ===================================================
-     *
-     * The link cannot become active unless the
-     * underlying education relationship is verified.
+     * The underlying education relationship
+     * must also be verified.
      */
 
     const verifiedRelationship =
@@ -737,527 +775,20 @@
       );
 
 
-    link.relationshipId =
-      verifiedRelationship.id;
-
-    link.verificationStatus =
-      "verified";
+    const requestedPermissions =
+      Array.isArray(
+        permissions
+      )
+        ? permissions
+        : [];
 
 
     const approvedPermissions =
-      permissions.filter(
-        permission =>
-          rule.permissions.includes(
-            permission
-          )
-      );
+      [
 
+        ...new Set(
 
-    if (
-      !approvedPermissions.length
-    ) {
+          requestedPermissions.filter(
+            permission =>
 
-      throw new Error(
-        "At least one authorized permission is required."
-      );
-
-    }
-
-
-    link.status =
-      "active";
-
-    link.permissions =
-      approvedPermissions;
-
-    link.approvedAt =
-      new Date().toISOString();
-
-    link.approvedBy =
-      approver.id;
-
-
-    audit(
-      state,
-      "LINK_APPROVED",
-      {
-
-        linkId,
-
-        permissions:
-          approvedPermissions,
-
-        relationshipId:
-          verifiedRelationship.id,
-
-        relationshipVerified:
-          true
-
-      }
-    );
-
-
-    saveState(
-      state
-    );
-
-
-    window.dispatchEvent(
-
-      new CustomEvent(
-        "pacificEducationLinkApproved",
-        {
-
-          detail: {
-
-            linkId,
-
-            permissions:
-              approvedPermissions,
-
-            relationshipId:
-              verifiedRelationship.id
-
-          }
-
-        }
-      )
-
-    );
-
-
-    return link;
-
-  }
-
-
-  /* =====================================================
-     AUTHORIZE ACCESS
-     ===================================================== */
-
-  function authorizeAccess({
-
-    linkId,
-
-    requester,
-
-    requiredPermission
-
-  }) {
-
-    if (!validUser(requester)) {
-
-      return {
-
-        allowed:
-          false,
-
-        reason:
-          "requester_not_authorized"
-
-      };
-
-    }
-
-
-    const state =
-      loadState();
-
-
-    const link =
-      state.links.find(
-
-        item =>
-
-          item.id ===
-            linkId &&
-
-          item.status ===
-            "active"
-
-      );
-
-
-    if (!link) {
-
-      return {
-
-        allowed:
-          false,
-
-        reason:
-          "active_link_not_found"
-
-      };
-
-    }
-
-
-    if (
-
-      link.requesterId !==
-        requester.id &&
-
-      link.targetId !==
-        requester.id
-
-    ) {
-
-      return {
-
-        allowed:
-          false,
-
-        reason:
-          "requester_not_participant"
-
-      };
-
-    }
-
-
-    /*
-     * Re-check the verified relationship
-     * at access time.
-     *
-     * Revoking the relationship therefore
-     * prevents continued access.
-     */
-
-    const verifiedRelationship =
-      findVerifiedRelationship({
-
-        requesterId:
-          link.requesterId,
-
-        targetId:
-          link.targetId,
-
-        relationshipType:
-          link.linkType
-
-      });
-
-
-    if (!verifiedRelationship) {
-
-      return {
-
-        allowed:
-          false,
-
-        reason:
-          "verified_relationship_revoked"
-
-      };
-
-    }
-
-
-    if (
-      !link.permissions.includes(
-        requiredPermission
-      )
-    ) {
-
-      return {
-
-        allowed:
-          false,
-
-        reason:
-          "permission_not_granted"
-
-      };
-
-    }
-
-
-    return {
-
-      allowed:
-        true,
-
-      linkId,
-
-      permission:
-        requiredPermission,
-
-      relationshipId:
-        verifiedRelationship.id
-
-    };
-
-  }
-
-
-  /* =====================================================
-     REVOKE LINK
-     ===================================================== */
-
-  function revokeLink({
-
-    linkId,
-
-    revoker,
-
-    reason =
-      "authorization_revoked"
-
-  }) {
-
-    if (!validUser(revoker)) {
-
-      throw new Error(
-        "Revoker authorization failed."
-      );
-
-    }
-
-
-    const state =
-      loadState();
-
-
-    const link =
-      state.links.find(
-        item =>
-          item.id ===
-          linkId
-      );
-
-
-    if (!link) {
-
-      throw new Error(
-        "Education link not found."
-      );
-
-    }
-
-
-    if (
-
-      link.requesterId !==
-        revoker.id &&
-
-      link.targetId !==
-        revoker.id &&
-
-      revoker.role !==
-        "ministry"
-
-    ) {
-
-      throw new Error(
-        "Revocation authority denied."
-      );
-
-    }
-
-
-    link.status =
-      "revoked";
-
-    link.permissions =
-      [];
-
-    link.revokedAt =
-      new Date().toISOString();
-
-    link.revokedBy =
-      revoker.id;
-
-    link.revokeReason =
-      reason;
-
-
-    audit(
-      state,
-      "LINK_REVOKED",
-      {
-
-        linkId,
-
-        reason
-
-      }
-    );
-
-
-    saveState(
-      state
-    );
-
-
-    window.dispatchEvent(
-
-      new CustomEvent(
-        "pacificEducationLinkRevoked",
-        {
-
-          detail: {
-
-            linkId,
-
-            reason
-
-          }
-
-        }
-      )
-
-    );
-
-
-    return link;
-
-  }
-
-
-  /* =====================================================
-     GET USER LINKS
-     ===================================================== */
-
-  function getUserLinks(
-    userId
-  ) {
-
-    if (
-
-      typeof userId !==
-        "string" ||
-
-      !userId.trim()
-
-    ) {
-
-      throw new Error(
-        "Valid user ID required."
-      );
-
-    }
-
-
-    const state =
-      loadState();
-
-
-    return state.links.filter(
-
-      link =>
-
-        link.requesterId ===
-          userId ||
-
-        link.targetId ===
-          userId
-
-    );
-
-  }
-
-
-  /* =====================================================
-     STATUS
-     ===================================================== */
-
-  function getStatus() {
-
-    const state =
-      loadState();
-
-
-    return Object.freeze({
-
-      version:
-        VERSION,
-
-      totalLinks:
-        state.links.length,
-
-      activeLinks:
-        state.links.filter(
-          link =>
-            link.status ===
-            "active"
-        ).length,
-
-      pendingLinks:
-        state.links.filter(
-          link =>
-            link.status ===
-            "pending"
-        ).length,
-
-      revokedLinks:
-        state.links.filter(
-          link =>
-            link.status ===
-            "revoked"
-        ).length,
-
-      verifiedRelationshipRequired:
-        true,
-
-      relationshipRecheckedAtAccess:
-        true,
-
-      automaticInformationAccess:
-        false,
-
-      prototypeOnly:
-        true,
-
-      backendRequiredForProduction:
-        true
-
-    });
-
-  }
-
-
-  /* =====================================================
-     RESET PROTOTYPE STATE
-     ===================================================== */
-
-  function resetPrototypeState() {
-
-    localStorage.removeItem(
-      STORAGE_KEY
-    );
-
-  }
-
-
-  /* =====================================================
-     PUBLIC API
-     ===================================================== */
-
-  window.PacificEducationSecureLinkAuthorization =
-
-    Object.freeze({
-
-      version:
-        VERSION,
-
-      linkRules:
-        LINK_RULES,
-
-      requestLink,
-
-      approveLink,
-
-      authorizeAccess,
-
-      revokeLink,
-
-      getUserLinks,
-
-      getStatus,
-
-      resetPrototypeState
-
-    });
-
-})();
+             
