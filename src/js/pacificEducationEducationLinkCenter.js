@@ -1,7 +1,10 @@
 /*
+ * =========================================================
  * PACIFIC EDUCATION
  * EDUCATION LINK CENTER
- * VERSION 1.2.0
+ * =========================================================
+ *
+ * Version: 1.3.0
  *
  * Student • Teacher • Parent • Ministry of Education
  *
@@ -11,14 +14,16 @@
  * Security rules:
  * - Link availability does NOT mean information access.
  * - Access requires verified relationship + authorization + permission.
+ * - Relationship queries require the complete authorized user object.
  * - No automatic information access.
  * - Production backend security is required.
+ * =========================================================
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.2.0";
+  const VERSION = "1.3.0";
 
   const LINK_TYPES = Object.freeze({
     student_teacher: ["student", "teacher"],
@@ -139,7 +144,13 @@
 
   function approveLink(request) {
     if (!request || typeof request !== "object") {
-      throw new Error("Valid approval request required.");
+      throw new Error(
+        "Valid approval request required."
+      );
+    }
+
+    if (!validUser(request.approver)) {
+      throw new Error("Approver is not authorized.");
     }
 
     const authorization = requireAuthorization();
@@ -149,7 +160,13 @@
 
   function revokeLink(request) {
     if (!request || typeof request !== "object") {
-      throw new Error("Valid revoke request required.");
+      throw new Error(
+        "Valid revoke request required."
+      );
+    }
+
+    if (!validUser(request.revoker)) {
+      throw new Error("Revoker is not authorized.");
     }
 
     const authorization = requireAuthorization();
@@ -193,17 +210,23 @@
     return authorization.getUserLinks(user);
   }
 
-  function getUserRelationships(userId) {
-    if (
-      typeof userId !== "string" ||
-      !userId.trim()
-    ) {
-      throw new Error("Valid user ID required.");
+  /*
+   * SECURITY:
+   * Relationship access must receive the complete
+   * authorized user object.
+   *
+   * Raw user IDs are intentionally rejected.
+   */
+  function getUserRelationships(user) {
+    if (!validUser(user)) {
+      throw new Error(
+        "Complete authorized user object required."
+      );
     }
 
     const relationship = requireRelationshipLayer();
 
-    return relationship.getUserRelationships(userId);
+    return relationship.getUserRelationships(user);
   }
 
   function getDashboardModel(user) {
@@ -214,11 +237,13 @@
     }
 
     const links = getUserLinks(user);
-    const relationships = getUserRelationships(user.id);
+    const relationships = getUserRelationships(user);
 
     return Object.freeze({
       version: VERSION,
+
       userId: user.id,
+
       role: user.role,
 
       availableLinkTypes:
@@ -248,6 +273,7 @@
         authorizationRequired: true,
         permissionRequired: true,
         auditRequired: true,
+        completeAuthorizedUserRequired: true,
         automaticInformationAccess: false
       }
     });
@@ -260,12 +286,16 @@
 
     const authorizationReady = Boolean(
       authorization &&
-      typeof authorization.requestLink === "function" &&
-      typeof authorization.approveLink === "function" &&
+      typeof authorization.requestLink ===
+        "function" &&
+      typeof authorization.approveLink ===
+        "function" &&
       typeof authorization.authorizeAccess ===
         "function" &&
-      typeof authorization.revokeLink === "function" &&
-      typeof authorization.getUserLinks === "function"
+      typeof authorization.revokeLink ===
+        "function" &&
+      typeof authorization.getUserLinks ===
+        "function"
     );
 
     const bridgeReady = Boolean(
@@ -274,7 +304,8 @@
         "function" &&
       typeof bridge.approveConnection ===
         "function" &&
-      typeof bridge.checkAccess === "function" &&
+      typeof bridge.checkAccess ===
+        "function" &&
       typeof bridge.revokeConnection ===
         "function"
     );
@@ -287,11 +318,20 @@
 
     return Object.freeze({
       version: VERSION,
-      authorizationLoaded: Boolean(authorization),
+
+      authorizationLoaded:
+        Boolean(authorization),
+
       authorizationReady,
-      bridgeLoaded: Boolean(bridge),
+
+      bridgeLoaded:
+        Boolean(bridge),
+
       bridgeReady,
-      relationshipLoaded: Boolean(relationship),
+
+      relationshipLoaded:
+        Boolean(relationship),
+
       relationshipReady,
 
       ready:
@@ -300,12 +340,14 @@
         relationshipReady,
 
       prototypeOnly: true,
+
       productionBackendRequired: true,
 
       security: {
         verifiedRelationshipRequired: true,
         authorizationRequired: true,
         permissionRequired: true,
+        completeAuthorizedUserRequired: true,
         automaticInformationAccess: false
       }
     });
@@ -314,13 +356,21 @@
   window.PacificEducationEducationLinkCenter =
     Object.freeze({
       version: VERSION,
+
       requestLink,
+
       approveLink,
+
       revokeLink,
+
       checkAccess,
+
       getUserLinks,
+
       getUserRelationships,
+
       getDashboardModel,
+
       getStatus
     });
 
