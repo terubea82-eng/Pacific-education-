@@ -1,6 +1,7 @@
 <!-- =========================================
      PACIFIC EDUCATION
      MAIN LEARNING APPLICATION
+     CONNECTED HTML VERSION
 ========================================= -->
 
 <!-- =========================================
@@ -437,27 +438,100 @@
      PACIFIC EDUCATION JAVASCRIPT
 ========================================= -->
 
+<!-- BUY PLANS -->
 <script src="./js/buyPlans.js"></script>
 
-<!-- National Calendar Engine -->
+
+<!-- =========================================
+     DAILY LESSON ENGINE
+     Provides:
+       displayDailyLesson()
+       showLesson()
+       startDailyLesson()
+       getDailyLesson()
+========================================= -->
+<script src="../js/dailyLessons.js"></script>
+
+
+<!-- =========================================
+     ASSESSMENT ENGINE
+     Provides:
+       startAssessment()
+       finishAssessment()
+       startAlphabetAssessment()
+       startPhonicsAssessment()
+========================================= -->
+<script src="../js/assessments.js"></script>
+
+
+<!-- =========================================
+     DASHBOARD ENGINE
+     Provides:
+       completeLesson()
+       refreshTeacherDashboard()
+       refreshParentDashboard()
+       refreshAllDashboards()
+========================================= -->
+<script src="../js/dashboards.js"></script>
+
+
+<!-- =========================================
+     NATIONAL CALENDAR ENGINE
+========================================= -->
 <script src="../js/js/nationalTermCalendar.js"></script>
 
+
+<!-- =========================================
+     PACIFIC EDUCATION CORE
+========================================= -->
 <script src="../js/pacificEducationCore.js"></script>
 
+
+<!-- =========================================
+     DAILY LEARNING INTEGRATION
+========================================= -->
 <script src="../js/pacificEducationDailyLearningIntegration.js"></script>
 
+
+<!-- =========================================
+     ASSESSMENT INTEGRATION
+========================================= -->
 <script src="../js/pacificEducationAssessmentIntegration.js"></script>
 
+
+<!-- =========================================
+     MARKS INTEGRATION
+========================================= -->
 <script src="../js/pacificEducationMarksIntegration.js"></script>
 
+
+<!-- =========================================
+     CORE BRIDGE
+========================================= -->
 <script src="js/pacificEducationCoreBridge.js"></script>
 
+
+<!-- =========================================
+     ASSESSMENT BRIDGE
+========================================= -->
 <script src="js/pacificEducationAssessmentBridge.js"></script>
 
+
+<!-- =========================================
+     PACIFIC GUARDIAN
+========================================= -->
 <script src="../js/pacificEducationPacificGuardian.js"></script>
 
+
+<!-- =========================================
+     AI WORKFLOW
+========================================= -->
 <script src="../js/pacificEducationAIWorkflow.js"></script>
 
+
+<!-- =========================================
+     MAIN APPLICATION
+========================================= -->
 <script src="js/app.js"></script>
 
 
@@ -503,10 +577,18 @@ document.addEventListener(
     "DOMContentLoaded",
     function () {
 
-        if (window.PacificEducationBuyPlans) {
+        const buyPlansContainer =
+            document.getElementById("buyPlans");
+
+        if (
+            buyPlansContainer &&
+            window.PacificEducationBuyPlans &&
+            typeof window.PacificEducationBuyPlans.render ===
+                "function"
+        ) {
 
             window.PacificEducationBuyPlans.render(
-                document.getElementById("buyPlans"),
+                buyPlansContainer,
                 "FJ"
             );
 
@@ -521,8 +603,8 @@ document.addEventListener(
 <!-- =========================================
      EDUCATION LINK STARTUP
 ========================================= -->
-
 <script src="js/pacificEducationEducationLinkStartup.js"></script>
+
 
 <script>
 
@@ -531,7 +613,9 @@ document.addEventListener(
     function () {
 
         if (
-            window.PacificEducationEducationLinkStartup
+            window.PacificEducationEducationLinkStartup &&
+            typeof window.PacificEducationEducationLinkStartup.start ===
+                "function"
         ) {
 
             window.PacificEducationEducationLinkStartup.start();
@@ -542,3 +626,52 @@ document.addEventListener(
 );
 
 </script>
+
+
+<!-- =========================================
+     PACIFIC EDUCATION CONNECTION CHECK
+========================================= -->
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const connectionStatus = {
+
+            html: true,
+
+            buyPlans:
+                !!window.PacificEducationBuyPlans,
+
+            dailyLessons:
+                typeof window.PacificEducationDailyLessons !==
+                "undefined",
+
+            assessments:
+                !!window.PacificEducationAssessments,
+
+            dashboards:
+                !!window.PacificEducationDashboards,
+
+            core:
+                !!window.PacificEducationCore
+
+        };
+
+        window.PacificEducationConnectionStatus =
+            Object.freeze(connectionStatus);
+
+        console.info(
+            "Pacific Education connection status:",
+            connectionStatus
+        );
+
+    }
+);
+
+</script>
+
+<!-- =========================================
+     END PACIFIC EDUCATION HTML
+========================================= -->
