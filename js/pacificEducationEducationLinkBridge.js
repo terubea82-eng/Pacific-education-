@@ -1,29 +1,30 @@
-
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK BRIDGE
+ * Version 1.1.0
  *
  * Connects:
- * Core
+ * Core-facing education link services
  * Secure Link Authorization
  * Secure Communication
  *
  * Student • Teacher • Parent • Ministry
  *
  * Prototype only.
+ * Production authorization MUST remain server-side.
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
 
   function getAuthorization() {
-    return window.PacificEducationSecureLinkAuthorization;
+    return window.PacificEducationSecureLinkAuthorization || null;
   }
 
   function getCommunication() {
-    return window.PacificEducationSecureCommunication;
+    return window.PacificEducationSecureCommunication || null;
   }
 
   function requireModules() {
@@ -42,33 +43,26 @@
       );
     }
 
-    return {
-      authorization,
-      communication
-    };
+    return { authorization, communication };
   }
 
   function requestConnection(request) {
     const { authorization } = requireModules();
-
     return authorization.requestLink(request);
   }
 
   function approveConnection(request) {
     const { authorization } = requireModules();
-
     return authorization.approveLink(request);
   }
 
   function checkAccess(request) {
     const { authorization } = requireModules();
-
     return authorization.authorizeAccess(request);
   }
 
   function revokeConnection(request) {
     const { authorization } = requireModules();
-
     return authorization.revokeLink(request);
   }
 
@@ -78,27 +72,28 @@
     requiredPermission = "communication",
     recipient
   }) {
-    const {
-      authorization,
-      communication
-    } = requireModules();
+    const { authorization, communication } = requireModules();
 
-    const access =
-      authorization.authorizeAccess({
-        linkId,
-        requester,
-        requiredPermission
-      });
-
-    if (!access.allowed) {
+    if (!linkId) {
       throw new Error(
-        "Communication access denied."
+        "Active approved education link is required."
       );
+    }
+
+    const access = authorization.authorizeAccess({
+      linkId,
+      requester,
+      requiredPermission
+    });
+
+    if (!access || access.allowed !== true) {
+      throw new Error("Communication access denied.");
     }
 
     return communication.createConversation(
       requester,
-      recipient
+      recipient,
+      { linkId }
     );
   }
 
@@ -109,30 +104,55 @@
     recipient,
     text
   }) {
-    const {
-      authorization,
-      communication
-    } = requireModules();
+    const { authorization, communication } = requireModules();
 
-    const access =
-      authorization.authorizeAccess({
-        linkId,
-        requester: sender,
-        requiredPermission: "communication"
-      });
-
-    if (!access.allowed) {
+    if (!linkId) {
       throw new Error(
-        "Message access denied."
+        "Active approved education link is required."
       );
+    }
+
+    if (!conversationId) {
+      throw new Error(
+        "Active authorized conversation is required."
+      );
+    }
+
+    const access = authorization.authorizeAccess({
+      linkId,
+      requester: sender,
+      requiredPermission: "communication"
+    });
+
+    if (!access || access.allowed !== true) {
+      throw new Error("Message access denied.");
     }
 
     return communication.sendMessage({
       conversationId,
       sender,
       recipient,
-      text
+      text,
+      linkId
     });
+  }
+
+  function getConversation(conversationId, requester) {
+    const { communication } = requireModules();
+
+    return communication.getConversation(
+      conversationId,
+      requester
+    );
+  }
+
+  function closeConversation(conversationId, requester) {
+    const { communication } = requireModules();
+
+    return communication.closeConversation(
+      conversationId,
+      requester
+    );
   }
 
   function getUserLinks(userId) {
@@ -165,6 +185,8 @@
       revokeConnection,
       openConversation,
       sendAuthorizedMessage,
+      getConversation,
+      closeConversation,
       getUserLinks,
       getStatus
     });
