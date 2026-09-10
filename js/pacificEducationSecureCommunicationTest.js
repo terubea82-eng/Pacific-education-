@@ -2,63 +2,67 @@
 ============================================================
 PACIFIC EDUCATION
 SECURE COMMUNICATION SECURITY TEST
-VERSION 1.3.0
+VERSION 1.4.0
 
 OWNER / DEVELOPER TEST HARNESS
 
 Purpose:
-Verify that secure communication follows:
+Verify:
 
 Identity
 → Role
 → Verified Relationship
 → Approved Link
-→ Communication Permission
+→ Permission
 → Conversation
 → Message
-→ Relationship Revocation
+→ Revocation
 → Access Denied
 
-This file is a TEST HARNESS only.
-It must NOT be added to production startup.
+IMPORTANT:
+This is a TEST HARNESS only.
 
-Production security must still be enforced server-side.
+Do NOT add this file to normal production startup.
+
+Production security MUST be enforced server-side.
+
+Prototype storage is NOT production-grade secure storage.
 ============================================================
 */
 
 (function () {
     "use strict";
 
-    const VERSION = "1.3.0";
+    const VERSION = "1.4.0";
 
-    const parent = {
+    const TEST_GROUP = Object.freeze({
+        name: "Pacific Education Secure Communication Test Group",
+        jurisdiction: "Fiji"
+    });
+
+    const parent = Object.freeze({
         id: "parent-001",
         role: "parent",
         authorized: true
-    };
+    });
 
-    const teacher = {
+    const teacher = Object.freeze({
         id: "teacher-001",
         role: "teacher",
         authorized: true
-    };
+    });
 
-    const unauthorizedParent = {
+    const unauthorizedParent = Object.freeze({
         id: "parent-unauthorized-001",
         role: "parent",
         authorized: true
-    };
+    });
 
-    const nonParticipant = {
+    const nonParticipant = Object.freeze({
         id: "student-001",
         role: "student",
         authorized: true
-    };
-
-    const TEST_GROUP = {
-        name: "Pacific Education Secure Communication Test Group",
-        jurisdiction: "Fiji"
-    };
+    });
 
     const results = [];
 
@@ -66,9 +70,61 @@ Production security must still be enforced server-side.
     let linkId = null;
     let conversationId = null;
 
+
+    /* =====================================================
+       MODULE ACCESS
+       ===================================================== */
+
+    function getModules() {
+        return {
+            relationship:
+                window.PacificEducationVerifiedEducationRelationship ||
+                null,
+
+            authorization:
+                window.PacificEducationSecureLinkAuthorization ||
+                null,
+
+            communication:
+                window.PacificEducationSecureCommunication ||
+                null
+        };
+    }
+
+
+    function assertModules(modules) {
+        const missing = [];
+
+        if (!modules.relationship) {
+            missing.push("relationship");
+        }
+
+        if (!modules.authorization) {
+            missing.push("authorization");
+        }
+
+        if (!modules.communication) {
+            missing.push("communication");
+        }
+
+        if (missing.length > 0) {
+            throw new Error(
+                "Required security module(s) missing: " +
+                missing.join(", ")
+            );
+        }
+
+        return true;
+    }
+
+
+    /* =====================================================
+       TEST RESULT HELPERS
+       ===================================================== */
+
     function record(name, passed, details) {
         const result = {
-            name,
+            name: name,
             passed: Boolean(passed),
             details: details || "",
             timestamp: new Date().toISOString()
@@ -76,52 +132,23 @@ Production security must still be enforced server-side.
 
         results.push(result);
 
-        if (passed) {
-            console.log("PASS:", name, details || "");
+        if (result.passed) {
+            console.log(
+                "PACIFIC SECURITY TEST PASS:",
+                name,
+                result.details
+            );
         } else {
-            console.error("FAIL:", name, details || "");
+            console.error(
+                "PACIFIC SECURITY TEST FAIL:",
+                name,
+                result.details
+            );
         }
 
         return result;
     }
 
-    function expectSuccess(name, action) {
-        try {
-            const value = action();
-
-            if (value === undefined || value === null) {
-                return record(name, false, "Expected successful result but received no result.");
-            }
-
-            return record(name, true, "Successful.");
-        } catch (error) {
-            return record(
-                name,
-                false,
-                error && error.message
-                    ? error.message
-                    : String(error)
-            );
-        }
-    }
-
-    function expectDeniedByThrow(name, action) {
-        try {
-            action();
-
-            return record(
-                name,
-                false,
-                "Expected access to be denied, but the operation succeeded."
-            );
-        } catch (error) {
-            return record(
-                name,
-                true,
-                "Access correctly denied."
-            );
-        }
-    }
 
     function expectDeniedResult(name, action) {
         try {
@@ -131,7 +158,8 @@ Production security must still be enforced server-side.
                 return record(
                     name,
                     true,
-                    value.reason || "Access correctly denied."
+                    value.reason ||
+                    "Access correctly denied."
                 );
             }
 
@@ -140,6 +168,7 @@ Production security must still be enforced server-side.
                 false,
                 "Expected allowed:false."
             );
+
         } catch (error) {
             return record(
                 name,
@@ -151,35 +180,63 @@ Production security must still be enforced server-side.
         }
     }
 
-    function getModules() {
-        return {
-            identity: window.PacificEducationIdentity,
-            relationship: window.PacificEducationVerifiedEducationRelationship,
-            authorization: window.PacificEducationSecureLinkAuthorization,
-            communication: window.PacificEducationSecureCommunication
-        };
-    }
 
-    function assertModules(modules) {
-        const required = [
-            "identity",
-            "relationship",
-            "authorization",
-            "communication"
-        ];
+    function expectDeniedByThrow(name, action) {
+        try {
+            action();
 
-        const missing = required.filter(function (name) {
-            return !modules[name];
-        });
+            return record(
+                name,
+                false,
+                "Expected operation to be denied."
+            );
 
-        if (missing.length > 0) {
-            throw new Error(
-                "Required module(s) missing: " + missing.join(", ")
+        } catch (error) {
+            return record(
+                name,
+                true,
+                "Operation correctly denied."
             );
         }
-
-        return true;
     }
+
+
+    function expectSuccess(name, action) {
+        try {
+            const value = action();
+
+            if (
+                value === undefined ||
+                value === null
+            ) {
+                return record(
+                    name,
+                    false,
+                    "Expected a successful result."
+                );
+            }
+
+            return record(
+                name,
+                true,
+                "Operation completed successfully."
+            );
+
+        } catch (error) {
+            return record(
+                name,
+                false,
+                error && error.message
+                    ? error.message
+                    : String(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       RESET
+       ===================================================== */
 
     function resetTestState() {
         const modules = getModules();
@@ -187,7 +244,8 @@ Production security must still be enforced server-side.
         try {
             if (
                 modules.relationship &&
-                typeof modules.relationship.resetPrototypeState === "function"
+                typeof modules.relationship.resetPrototypeState ===
+                    "function"
             ) {
                 modules.relationship.resetPrototypeState();
             }
@@ -201,15 +259,55 @@ Production security must still be enforced server-side.
         }
 
         try {
-            localStorage.removeItem("pacificEducationSecureLinks");
+            if (
+                modules.authorization &&
+                typeof modules.authorization.resetPrototypeState ===
+                    "function"
+            ) {
+                modules.authorization.resetPrototypeState();
+            }
         } catch (error) {
-            console.warn("Secure link storage reset warning.");
+            console.warn(
+                "Authorization reset warning:",
+                error && error.message
+                    ? error.message
+                    : error
+            );
         }
 
         try {
-            localStorage.removeItem("pacificEducationSecureMessages");
+            if (
+                modules.communication &&
+                typeof modules.communication.resetPrototypeState ===
+                    "function"
+            ) {
+                modules.communication.resetPrototypeState();
+            }
         } catch (error) {
-            console.warn("Secure message storage reset warning.");
+            console.warn(
+                "Communication reset warning:",
+                error && error.message
+                    ? error.message
+                    : error
+            );
+        }
+
+        try {
+            localStorage.removeItem(
+                "pacificEducationSecureLinks"
+            );
+
+            localStorage.removeItem(
+                "pacificEducationSecureMessages"
+            );
+
+            localStorage.removeItem(
+                "pacificEducationVerifiedRelationships"
+            );
+        } catch (error) {
+            console.warn(
+                "Local test storage reset warning."
+            );
         }
 
         relationshipId = null;
@@ -217,11 +315,10 @@ Production security must still be enforced server-side.
         conversationId = null;
     }
 
-    /*
-    ============================================================
-    1. MODULE AVAILABILITY
-    ============================================================
-    */
+
+    /* =====================================================
+       1. MODULE AVAILABILITY
+       ===================================================== */
 
     function testModuleAvailability() {
         const modules = getModules();
@@ -234,20 +331,22 @@ Production security must still be enforced server-side.
                 true,
                 "All required security modules are available."
             );
+
         } catch (error) {
             return record(
                 "module_availability",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    2. CLEAN STATE
-    ============================================================
-    */
+
+    /* =====================================================
+       2. CLEAN STATE
+       ===================================================== */
 
     function testCleanState() {
         resetTestState();
@@ -257,69 +356,75 @@ Production security must still be enforced server-side.
             relationshipId === null &&
             linkId === null &&
             conversationId === null,
-            "Security test state reset."
+            "Prototype security test state reset."
         );
     }
 
-    /*
-    ============================================================
-    3. IDENTITY
-    ============================================================
-    */
 
-    function testIdentity() {
-        const modules = getModules();
+    /* =====================================================
+       3. TEST IDENTITIES
+       ===================================================== */
 
-        try {
-            assertModules(modules);
+    function testIdentityValidation() {
+        const validParent =
+            typeof parent.id === "string" &&
+            parent.id.trim() &&
+            parent.role === "parent" &&
+            parent.authorized === true;
 
-            if (!parent.id || !teacher.id) {
-                throw new Error("Test identities are incomplete.");
-            }
+        const validTeacher =
+            typeof teacher.id === "string" &&
+            teacher.id.trim() &&
+            teacher.role === "teacher" &&
+            teacher.authorized === true;
 
-            if (!parent.authorized || !teacher.authorized) {
-                throw new Error("Test identities must be authorized.");
-            }
-
-            return record(
-                "identity_validation",
-                true,
-                "Parent and teacher identities are valid."
-            );
-        } catch (error) {
-            return record(
-                "identity_validation",
-                false,
-                error.message || String(error)
-            );
-        }
+        return record(
+            "identity_validation",
+            Boolean(validParent && validTeacher),
+            validParent && validTeacher
+                ? "Parent and teacher test identities are valid."
+                : "Test identity validation failed."
+        );
     }
 
-    /*
-    ============================================================
-    4. VERIFIED RELATIONSHIP
-    ============================================================
-    */
+
+    /* =====================================================
+       4. VERIFIED RELATIONSHIP
+       ===================================================== */
 
     function createVerifiedRelationship() {
         const modules = getModules();
 
         try {
-            const result = modules.relationship.verifyRelationship({
-                requester: parent,
-                target: teacher,
-                relationshipType: "parent_teacher",
-                jurisdiction: TEST_GROUP.jurisdiction,
-                evidence: {
-                    type: "linked_student_relationship",
-                    verified: true
-                },
-                authority: {
-                    consent: true
-                }
-            });
+            const result =
+                modules.relationship.verifyRelationship({
+                    requester: parent,
+                    target: teacher,
+                    relationshipType: "parent_teacher",
+                    jurisdiction:
+                        TEST_GROUP.jurisdiction,
+                    evidence: {
+                        type:
+                            "linked_student_relationship",
+                        verified: true
+                    },
+                    authority: {
+                        consent: true
+                    }
+                });
 
-            relationshipId = result.relationshipId;
+            /*
+             * IMPORTANT:
+             * The current relationship layer returns:
+             * relationship.id
+             *
+             * It does NOT return:
+             * relationship.relationshipId
+             */
+            relationshipId =
+                result && result.id
+                    ? result.id
+                    : null;
 
             return record(
                 "verified_relationship_created",
@@ -328,225 +433,170 @@ Production security must still be enforced server-side.
                     ? "Verified parent-teacher relationship created."
                     : "Relationship ID was not returned."
             );
+
         } catch (error) {
             return record(
                 "verified_relationship_created",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    5. SECURE LINK REQUEST
-    ============================================================
-    */
+
+    /* =====================================================
+       5. SECURE LINK REQUEST
+       ===================================================== */
 
     function requestSecureLink() {
         const modules = getModules();
 
         try {
-            const result = modules.authorization.requestLink({
-                requester: parent,
-                target: teacher,
-                linkType: "parent_teacher",
-                relationship: {
-                    id: relationshipId,
-                    type: "parent_teacher"
-                },
-                relationshipId: relationshipId,
-                jurisdiction: TEST_GROUP.jurisdiction,
-                evidenceReference: {
-                    type: "linked_student_relationship",
-                    verified: true
-                }
-            });
+            if (!relationshipId) {
+                throw new Error(
+                    "Relationship must exist before requesting the test link."
+                );
+            }
 
-            linkId = result.linkId;
+            const result =
+                modules.authorization.requestLink({
+                    requester: parent,
+                    target: teacher,
+                    linkType: "parent_teacher",
+
+                    relationship: {
+                        id: relationshipId,
+                        type: "parent_teacher"
+                    },
+
+                    relationshipId: relationshipId,
+
+                    jurisdiction:
+                        TEST_GROUP.jurisdiction,
+
+                    evidenceReference: {
+                        type:
+                            "linked_student_relationship",
+                        verified: true
+                    }
+                });
+
+            linkId =
+                result && result.id
+                    ? result.id
+                    : null;
 
             return record(
                 "secure_link_requested",
                 Boolean(linkId),
                 linkId
-                    ? "Secure communication link requested."
+                    ? "Secure link created in pending state."
                     : "Link ID was not returned."
             );
+
         } catch (error) {
             return record(
                 "secure_link_requested",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    6. LINK APPROVAL
-    ============================================================
-    */
+
+    /* =====================================================
+       6. LINK APPROVAL
+       ===================================================== */
 
     function approveSecureLink() {
         const modules = getModules();
 
         try {
-            const result = modules.authorization.approveLink({
-                linkId: linkId,
-                approver: teacher,
-                permissions: [
-                    "communication"
-                ]
-            });
+            const result =
+                modules.authorization.approveLink({
+                    linkId: linkId,
+                    approver: teacher,
+                    permissions: [
+                        "communication"
+                    ]
+                });
+
+            const approved =
+                Boolean(
+                    result &&
+                    result.status === "active" &&
+                    Array.isArray(result.permissions) &&
+                    result.permissions.includes(
+                        "communication"
+                    )
+                );
 
             return record(
                 "secure_link_approved",
-                Boolean(result),
-                "Secure link approved with communication permission."
+                approved,
+                approved
+                    ? "Link is active with communication permission."
+                    : "Link approval did not produce the expected active state."
             );
+
         } catch (error) {
             return record(
                 "secure_link_approved",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    7. COMMUNICATION AUTHORIZATION
-    ============================================================
-    */
+
+    /* =====================================================
+       7. COMMUNICATION AUTHORIZATION
+       ===================================================== */
 
     function authorizeCommunication() {
         const modules = getModules();
 
         try {
-            const result = modules.authorization.authorizeAccess({
-                linkId: linkId,
-                requester: parent,
-                requiredPermission: "communication"
-            });
+            const result =
+                modules.authorization.authorizeAccess({
+                    linkId: linkId,
+                    requester: parent,
+                    requiredPermission:
+                        "communication"
+                });
 
             return record(
                 "communication_authorized",
-                Boolean(result && result.allowed === true),
+                Boolean(
+                    result &&
+                    result.allowed === true
+                ),
                 result && result.allowed === true
-                    ? "Communication permission correctly authorized."
-                    : "Communication authorization failed."
+                    ? "Communication authorization granted."
+                    : "Communication authorization was not granted."
             );
+
         } catch (error) {
             return record(
                 "communication_authorized",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    8. CONVERSATION CREATION
-    ============================================================
-    */
 
-    function createSecureConversation() {
-        const modules = getModules();
-
-        try {
-            const result = modules.communication.createConversation(
-                parent,
-                teacher,
-                {
-                    linkId: linkId
-                }
-            );
-
-            conversationId = result.conversationId;
-
-            return record(
-                "conversation_created",
-                Boolean(conversationId),
-                conversationId
-                    ? "Authorized conversation created."
-                    : "Conversation ID was not returned."
-            );
-        } catch (error) {
-            return record(
-                "conversation_created",
-                false,
-                error.message || String(error)
-            );
-        }
-    }
-
-    /*
-    ============================================================
-    9. AUTHORIZED MESSAGE
-    ============================================================
-    */
-
-    function sendAuthorizedMessage() {
-        const modules = getModules();
-
-        try {
-            const result = modules.communication.sendMessage({
-                conversationId: conversationId,
-                sender: parent,
-                recipient: teacher,
-                text: "Secure communication test message.",
-                linkId: linkId
-            });
-
-            return record(
-                "authorized_message_sent",
-                Boolean(result),
-                "Authorized message sent."
-            );
-        } catch (error) {
-            return record(
-                "authorized_message_sent",
-                false,
-                error.message || String(error)
-            );
-        }
-    }
-
-    /*
-    ============================================================
-    10. AUTHORIZED READ
-    ============================================================
-    */
-
-    function readAuthorizedConversation() {
-        const modules = getModules();
-
-        try {
-            const result = modules.communication.getConversation(
-                conversationId,
-                parent
-            );
-
-            return record(
-                "authorized_conversation_read",
-                Boolean(result),
-                "Authorized conversation read successfully."
-            );
-        } catch (error) {
-            return record(
-                "authorized_conversation_read",
-                false,
-                error.message || String(error)
-            );
-        }
-    }
-
-    /*
-    ============================================================
-    11. PRE-REVOCATION HARDENING
-    ============================================================
-    */
+    /* =====================================================
+       8. WRONG LINK ID DENIAL
+       ===================================================== */
 
     function testWrongLinkId() {
         const modules = getModules();
@@ -557,13 +607,19 @@ Production security must still be enforced server-side.
                 return modules.authorization.authorizeAccess({
                     linkId: "wrong-link-id",
                     requester: parent,
-                    requiredPermission: "communication"
+                    requiredPermission:
+                        "communication"
                 });
             }
         );
     }
 
-    function testUnauthorizedParentAuthorization() {
+
+    /* =====================================================
+       9. UNAUTHORIZED PARTICIPANT DENIAL
+       ===================================================== */
+
+    function testUnauthorizedParent() {
         const modules = getModules();
 
         return expectDeniedResult(
@@ -572,13 +628,19 @@ Production security must still be enforced server-side.
                 return modules.authorization.authorizeAccess({
                     linkId: linkId,
                     requester: unauthorizedParent,
-                    requiredPermission: "communication"
+                    requiredPermission:
+                        "communication"
                 });
             }
         );
     }
 
-    function testNonParticipantAuthorization() {
+
+    /* =====================================================
+       10. NON-PARTICIPANT DENIAL
+       ===================================================== */
+
+    function testNonParticipant() {
         const modules = getModules();
 
         return expectDeniedResult(
@@ -587,11 +649,17 @@ Production security must still be enforced server-side.
                 return modules.authorization.authorizeAccess({
                     linkId: linkId,
                     requester: nonParticipant,
-                    requiredPermission: "communication"
+                    requiredPermission:
+                        "communication"
                 });
             }
         );
     }
+
+
+    /* =====================================================
+       11. WRONG PERMISSION DENIAL
+       ===================================================== */
 
     function testWrongPermission() {
         const modules = getModules();
@@ -602,11 +670,135 @@ Production security must still be enforced server-side.
                 return modules.authorization.authorizeAccess({
                     linkId: linkId,
                     requester: parent,
-                    requiredPermission: "learning_summary"
+                    requiredPermission:
+                        "unauthorized_test_permission"
                 });
             }
         );
     }
+
+
+    /* =====================================================
+       12. CONVERSATION CREATION
+       ===================================================== */
+
+    function createSecureConversation() {
+        const modules = getModules();
+
+        try {
+            const result =
+                modules.communication.createConversation(
+                    parent,
+                    teacher,
+                    {
+                        linkId: linkId
+                    }
+                );
+
+            conversationId =
+                result && result.conversationId
+                    ? result.conversationId
+                    : null;
+
+            return record(
+                "conversation_created",
+                Boolean(conversationId),
+                conversationId
+                    ? "Authorized conversation created."
+                    : "Conversation ID was not returned."
+            );
+
+        } catch (error) {
+            return record(
+                "conversation_created",
+                false,
+                error && error.message
+                    ? error.message
+                    : String(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       13. AUTHORIZED MESSAGE
+       ===================================================== */
+
+    function sendAuthorizedMessage() {
+        const modules = getModules();
+
+        try {
+            const result =
+                modules.communication.sendMessage({
+                    conversationId:
+                        conversationId,
+
+                    sender:
+                        parent,
+
+                    recipient:
+                        teacher,
+
+                    text:
+                        "Secure communication test message.",
+
+                    linkId:
+                        linkId
+                });
+
+            return record(
+                "authorized_message_sent",
+                Boolean(result),
+                "Authorized message operation succeeded."
+            );
+
+        } catch (error) {
+            return record(
+                "authorized_message_sent",
+                false,
+                error && error.message
+                    ? error.message
+                    : String(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       14. AUTHORIZED CONVERSATION READ
+       ===================================================== */
+
+    function readAuthorizedConversation() {
+        const modules = getModules();
+
+        try {
+            const result =
+                modules.communication.getConversation(
+                    conversationId,
+                    parent
+                );
+
+            return record(
+                "authorized_conversation_read",
+                Boolean(result),
+                "Authorized conversation read successfully."
+            );
+
+        } catch (error) {
+            return record(
+                "authorized_conversation_read",
+                false,
+                error && error.message
+                    ? error.message
+                    : String(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       15. UNAUTHORIZED CONVERSATION READ
+       ===================================================== */
 
     function testUnauthorizedConversationAccess() {
         const modules = getModules();
@@ -622,82 +814,97 @@ Production security must still be enforced server-side.
         );
     }
 
-    /*
-    ============================================================
-    12. RELATIONSHIP REVOCATION
-    ============================================================
-    */
+
+    /* =====================================================
+       16. RELATIONSHIP REVOCATION
+       ===================================================== */
 
     function revokeVerifiedRelationship() {
         const modules = getModules();
 
         try {
-            const result = modules.relationship.revokeRelationship({
-                relationshipId: relationshipId,
-                revoker: parent,
-                reason: "Security test revocation."
-            });
+            const result =
+                modules.relationship.revokeRelationship({
+                    relationshipId:
+                        relationshipId,
+
+                    revoker:
+                        parent,
+
+                    reason:
+                        "Security test relationship revocation."
+                });
 
             return record(
                 "relationship_revoked",
                 Boolean(result),
-                "Verified relationship revoked."
+                "Verified relationship revocation completed."
             );
+
         } catch (error) {
             return record(
                 "relationship_revoked",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    13. DIRECT REVOCATION CHECK
-    ============================================================
-    */
+
+    /* =====================================================
+       17. DIRECT RELATIONSHIP REVOCATION CHECK
+       ===================================================== */
 
     function testRelationshipRevoked() {
         const modules = getModules();
 
         try {
-            const result = modules.relationship.checkRelationship({
-                relationshipId: relationshipId,
-                requester: parent,
-                target: teacher,
-                relationshipType: "parent_teacher"
-            });
+            const result =
+                modules.relationship.checkRelationship({
+                    relationshipId:
+                        relationshipId,
 
-            const revoked =
-                result &&
-                (
-                    result.active === false ||
-                    result.status === "revoked" ||
+                    requester:
+                        parent,
+
+                    target:
+                        teacher,
+
+                    relationshipType:
+                        "parent_teacher"
+                });
+
+            const denied =
+                Boolean(
+                    result &&
                     result.allowed === false
                 );
 
             return record(
                 "relationship_revocation_verified",
-                revoked,
-                revoked
-                    ? "Relationship is no longer active."
-                    : "Relationship still appears active."
+                denied,
+                denied
+                    ? "Relationship is no longer authorized."
+                    : "Relationship still appears authorized."
             );
+
         } catch (error) {
             return record(
                 "relationship_revocation_verified",
                 false,
-                error.message || String(error)
+                error && error.message
+                    ? error.message
+                    : String(error)
             );
         }
     }
 
-    /*
-    ============================================================
-    14. AUTHORIZATION AFTER REVOCATION
-    ============================================================
-    */
+
+    /* =====================================================
+       18. AUTHORIZATION AFTER RELATIONSHIP REVOCATION
+       ===================================================== */
 
     function testAuthorizationAfterRevocation() {
         const modules = getModules();
@@ -706,19 +913,23 @@ Production security must still be enforced server-side.
             "authorization_denied_after_revocation",
             function () {
                 return modules.authorization.authorizeAccess({
-                    linkId: linkId,
-                    requester: parent,
-                    requiredPermission: "communication"
+                    linkId:
+                        linkId,
+
+                    requester:
+                        parent,
+
+                    requiredPermission:
+                        "communication"
                 });
             }
         );
     }
 
-    /*
-    ============================================================
-    15. OLD / REVOKED LINK HARDENING
-    ============================================================
-    */
+
+    /* =====================================================
+       19. OLD LINK CANNOT RESTORE ACCESS
+       ===================================================== */
 
     function testOldLinkCannotRestoreAccess() {
         const modules = getModules();
@@ -727,248 +938,27 @@ Production security must still be enforced server-side.
             "old_link_cannot_restore_access",
             function () {
                 return modules.authorization.authorizeAccess({
-                    linkId: linkId,
-                    requester: parent,
-                    requiredPermission: "communication"
+                    linkId:
+                        linkId,
+
+                    requester:
+                        parent,
+
+                    requiredPermission:
+                        "communication"
                 });
             }
         );
     }
 
-    function testRevokedLink() {
+
+    /* =====================================================
+       20. LINK REVOCATION
+       ===================================================== */
+
+    function revokeSecureLink() {
         const modules = getModules();
 
         try {
-            const result = modules.authorization.revokeLink({
-                linkId: linkId,
-                revoker: parent,
-                reason: "Security test link revocation."
-            });
-
-            return record(
-                "revoked_link_verified",
-                Boolean(result),
-                "Link revocation processed."
-            );
-        } catch (error) {
-            return record(
-                "revoked_link_verified",
-                false,
-                error.message || String(error)
-            );
-        }
-    }
-
-    /*
-    ============================================================
-    16. POST-REVOCATION COMMUNICATION DENIAL
-    ============================================================
-    */
-
-    function testConversationDeniedAfterRevocation() {
-        const modules = getModules();
-
-        return expectDeniedByThrow(
-            "conversation_denied_after_revocation",
-            function () {
-                modules.communication.getConversation(
-                    conversationId,
-                    parent
-                );
-            }
-        );
-    }
-
-    function testMessageDeniedAfterRevocation() {
-        const modules = getModules();
-
-        return expectDeniedByThrow(
-            "message_denied_after_revocation",
-            function () {
-                modules.communication.sendMessage({
-                    conversationId: conversationId,
-                    sender: parent,
-                    recipient: teacher,
-                    text: "This message must be denied after revocation.",
-                    linkId: linkId
-                });
-            }
-        );
-    }
-
-    function testCloseDeniedAfterRevocation() {
-        const modules = getModules();
-
-        return expectDeniedByThrow(
-            "close_denied_after_revocation",
-            function () {
-                modules.communication.closeConversation(
-                    conversationId,
-                    parent
-                );
-            }
-        );
-    }
-
-    /*
-    ============================================================
-    17. SECURITY STATUS
-    ============================================================
-    */
-
-    function testSecurityStatus() {
-        const modules = getModules();
-
-        try {
-            const status = modules.communication.getStatus
-                ? modules.communication.getStatus()
-                : null;
-
-            const authorizationStatus =
-                modules.authorization.getStatus
-                    ? modules.authorization.getStatus()
-                    : null;
-
-            const relationshipStatus =
-                modules.relationship.getStatus
-                    ? modules.relationship.getStatus()
-                    : null;
-
-            const valid =
-                Boolean(status) ||
-                Boolean(authorizationStatus) ||
-                Boolean(relationshipStatus);
-
-            return record(
-                "security_status",
-                valid,
-                "Security module status APIs are available."
-            );
-        } catch (error) {
-            return record(
-                "security_status",
-                false,
-                error.message || String(error)
-            );
-        }
-    }
-
-    /*
-    ============================================================
-    18. FINAL FAIL-CLOSED CHECK
-    ============================================================
-    */
-
-    function finalFailClosedCheck() {
-        const criticalTests = [
-            "hardening_wrong_link_id",
-            "hardening_unauthorized_parent",
-            "hardening_non_participant",
-            "hardening_wrong_permission",
-            "hardening_unauthorized_conversation_access",
-            "relationship_revocation_verified",
-            "authorization_denied_after_revocation",
-            "old_link_cannot_restore_access",
-            "revoked_link_verified",
-            "conversation_denied_after_revocation",
-            "message_denied_after_revocation",
-            "close_denied_after_revocation"
-        ];
-
-        const failures = criticalTests.filter(function (testName) {
-            const result = results.find(function (item) {
-                return item.name === testName;
-            });
-
-            return !result || result.passed !== true;
-        });
-
-        return record(
-            "final_fail_closed_check",
-            failures.length === 0,
-            failures.length === 0
-                ? "All critical denial paths passed."
-                : "Critical denial test(s) failed: " + failures.join(", ")
-        );
-    }
-
-    /*
-    ============================================================
-    REPORT
-    ============================================================
-    */
-
-    function getPassedCount() {
-        return results.filter(function (result) {
-            return result.passed;
-        }).length;
-    }
-
-    function getFailedCount() {
-        return results.filter(function (result) {
-            return !result.passed;
-        }).length;
-    }
-
-    function getReport() {
-        return {
-            version: VERSION,
-            group: TEST_GROUP,
-            totalTests: results.length,
-            passed: getPassedCount(),
-            failed: getFailedCount(),
-            passedAll: getFailedCount() === 0,
-            relationshipId: relationshipId,
-            linkId: linkId,
-            conversationId: conversationId,
-            results: results.slice()
-        };
-    }
-
-    function printReport() {
-        const report = getReport();
-
-        console.log(
-            "============================================================"
-        );
-
-        console.log(
-            "PACIFIC EDUCATION SECURE COMMUNICATION SECURITY TEST"
-        );
-
-        console.log("VERSION:", report.version);
-        console.log("TOTAL:", report.totalTests);
-        console.log("PASSED:", report.passed);
-        console.log("FAILED:", report.failed);
-        console.log("PASSED ALL:", report.passedAll);
-
-        console.log(
-            "============================================================"
-        );
-
-        report.results.forEach(function (result) {
-            console.log(
-                result.passed ? "PASS" : "FAIL",
-                result.name,
-                result.details
-            );
-        });
-
-        return report;
-    }
-
-    /*
-    ============================================================
-    MAIN TEST RUNNER
-    ============================================================
-    */
-
-    function runSecurityTest() {
-        results.length = 0;
-
-        relationshipId = null;
-        linkId = null;
-        conversationId = null;
-
-        console.log(
-            "Starting
+            const result =
+                modules.authorization.revokeLink({
