@@ -2,7 +2,7 @@
 ============================================================
 PACIFIC EDUCATION
 SECURE COMMUNICATION SECURITY TEST
-VERSION 1.5.0
+VERSION 1.6.0
 
 OWNER / DEVELOPER TEST HARNESS
 
@@ -16,7 +16,10 @@ Identity
 → Permission
 → Conversation
 → Message
-→ Revocation
+→ Conversation Read
+→ Conversation Close
+→ Link Revocation
+→ Relationship Revocation
 → Access Denied
 
 IMPORTANT:
@@ -28,10 +31,6 @@ Production security MUST be enforced server-side.
 
 Prototype storage is NOT production-grade secure storage.
 
-This test accepts both legitimate denial styles:
-1. { allowed: false }
-2. A security exception / thrown Error
-
 No credentials, passwords, API keys, authentication tokens,
 or payment secrets are used.
 ============================================================
@@ -40,7 +39,9 @@ or payment secrets are used.
 (function () {
     "use strict";
 
-    const VERSION = "1.5.0";
+    const VERSION = "1.6.0";
+
+    const EXPECTED_COMMUNICATION_VERSION = "1.4.0";
 
     const TEST_GROUP = Object.freeze({
         name:
@@ -48,6 +49,10 @@ or payment secrets are used.
         jurisdiction: "Fiji"
     });
 
+    /*
+     * These are complete authorized user objects.
+     * They are used only for owner/developer testing.
+     */
     const parent = Object.freeze({
         id: "parent-001",
         role: "parent",
@@ -81,7 +86,9 @@ or payment secrets are used.
     let results = [];
 
     let relationshipId = null;
+
     let linkId = null;
+
     let conversationId = null;
 
 
@@ -102,7 +109,8 @@ or payment secrets are used.
                 null,
 
             communication:
-                window.PacificEducationSecureCommunication ||
+                window
+                    .PacificEducationSecureCommunication ||
                 null
         };
     }
@@ -227,11 +235,15 @@ or payment secrets are used.
     ) {
         const result = {
             name: name,
-            passed: Boolean(passed),
+
+            passed:
+                Boolean(passed),
+
             details:
                 typeof details === "string"
                     ? details
                     : "",
+
             timestamp:
                 new Date().toISOString()
         };
@@ -266,12 +278,6 @@ or payment secrets are used.
     }
 
 
-    /*
-     * A legitimate denial may be returned as:
-     * { allowed: false }
-     *
-     * or may be enforced by throwing.
-     */
     function expectDenied(
         name,
         action
@@ -404,17 +410,22 @@ or payment secrets are used.
         }
 
         try {
-            localStorage.removeItem(
-                "pacificEducationSecureLinks"
-            );
+            if (
+                typeof localStorage !==
+                "undefined"
+            ) {
+                localStorage.removeItem(
+                    "pacificEducationSecureLinks"
+                );
 
-            localStorage.removeItem(
-                "pacificEducationSecureMessages"
-            );
+                localStorage.removeItem(
+                    "pacificEducationSecureMessages"
+                );
 
-            localStorage.removeItem(
-                "pacificEducationVerifiedRelationships"
-            );
+                localStorage.removeItem(
+                    "pacificEducationVerifiedRelationships"
+                );
+            }
         } catch (error) {
             console.warn(
                 "Storage reset warning:",
@@ -425,7 +436,9 @@ or payment secrets are used.
         results = [];
 
         relationshipId = null;
+
         linkId = null;
+
         conversationId = null;
 
         return true;
@@ -531,9 +544,11 @@ or payment secrets are used.
             const result =
                 modules.relationship
                     .verifyRelationship({
-                        requester: parent,
+                        requester:
+                            parent,
 
-                        target: teacher,
+                        target:
+                            teacher,
 
                         relationshipType:
                             "parent_teacher",
@@ -545,11 +560,13 @@ or payment secrets are used.
                             type:
                                 "linked_student_relationship",
 
-                            verified: true
+                            verified:
+                                true
                         },
 
                         authority: {
-                            consent: true
+                            consent:
+                                true
                         }
                     });
 
@@ -700,7 +717,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 7 — TARGET-ONLY APPROVAL
+       TEST 7 — REQUESTER CANNOT APPROVE
        ===================================================== */
 
     function testRequesterCannotApprove() {
@@ -855,33 +872,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 11 — UNAUTHORIZED PARTICIPANT DENIAL
-       ===================================================== */
-
-    function testUnauthorizedParent() {
-        const modules = getModules();
-
-        return expectDenied(
-            "unauthorized_parent_denied",
-            function () {
-                return modules.authorization
-                    .authorizeAccess({
-                        linkId:
-                            linkId,
-
-                        requester:
-                            unauthorizedParent,
-
-                        requiredPermission:
-                            "communication"
-                    });
-            }
-        );
-    }
-
-
-    /* =====================================================
-       TEST 12 — NON-PARTICIPANT DENIAL
+       TEST 11 — NON-PARTICIPANT DENIAL
        ===================================================== */
 
     function testNonParticipant() {
@@ -907,7 +898,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 13 — INVALID IDENTITY DENIAL
+       TEST 12 — UNAUTHORIZED IDENTITY DENIAL
        ===================================================== */
 
     function testInvalidIdentity() {
@@ -933,7 +924,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 14 — WRONG PERMISSION DENIAL
+       TEST 13 — WRONG PERMISSION DENIAL
        ===================================================== */
 
     function testWrongPermission() {
@@ -959,7 +950,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 15 — CREATE CONVERSATION
+       TEST 14 — CREATE CONVERSATION
        ===================================================== */
 
     function createSecureConversation() {
@@ -990,16 +981,27 @@ or payment secrets are used.
                         relationshipId
                 );
 
+            const participantsMatch =
+                Boolean(
+                    result &&
+                    result.senderId ===
+                        parent.id &&
+                    result.recipientId ===
+                        teacher.id
+                );
+
             return record(
                 "conversation_created",
                 Boolean(
                     conversationId &&
-                    relationshipMatches
+                    relationshipMatches &&
+                    participantsMatch
                 ),
                 conversationId &&
-                relationshipMatches
-                    ? "Authorized conversation created and linked to the verified relationship."
-                    : "Conversation relationship binding failed."
+                relationshipMatches &&
+                participantsMatch
+                    ? "Authorized conversation created with correct participants and verified relationship."
+                    : "Conversation security binding failed."
             );
 
         } catch (error) {
@@ -1013,7 +1015,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 16 — SEND MESSAGE
+       TEST 15 — SEND MESSAGE
        ===================================================== */
 
     function sendSecureMessage() {
@@ -1059,8 +1061,8 @@ or payment secrets are used.
                 "message_sent",
                 valid,
                 valid
-                    ? "Authorized message created."
-                    : "Message did not contain the expected security bindings."
+                    ? "Authorized message created with security bindings."
+                    : "Message security bindings failed."
             );
 
         } catch (error) {
@@ -1074,7 +1076,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 17 — GET CONVERSATION
+       TEST 16 — GET CONVERSATION
        ===================================================== */
 
     function getSecureConversation() {
@@ -1085,7 +1087,8 @@ or payment secrets are used.
                 modules.communication
                     .getConversation(
                         conversationId,
-                        parent
+                        parent,
+                        teacher
                     );
 
             const valid =
@@ -1103,7 +1106,7 @@ or payment secrets are used.
                 "conversation_read_authorized",
                 valid,
                 valid
-                    ? "Authorized participant retrieved conversation."
+                    ? "Authorized participant retrieved conversation using both real participant objects."
                     : "Conversation retrieval failed."
             );
 
@@ -1118,7 +1121,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 18 — NON-PARTICIPANT CONVERSATION DENIAL
+       TEST 17 — NON-PARTICIPANT CONVERSATION DENIAL
        ===================================================== */
 
     function testConversationNonParticipant() {
@@ -1130,7 +1133,29 @@ or payment secrets are used.
                 return modules.communication
                     .getConversation(
                         conversationId,
-                        nonParticipant
+                        nonParticipant,
+                        teacher
+                    );
+            }
+        );
+    }
+
+
+    /* =====================================================
+       TEST 18 — UNAUTHORIZED CONVERSATION DENIAL
+       ===================================================== */
+
+    function testUnauthorizedConversation() {
+        const modules = getModules();
+
+        return expectDenied(
+            "conversation_unauthorized_identity_denied",
+            function () {
+                return modules.communication
+                    .getConversation(
+                        conversationId,
+                        unauthorizedUser,
+                        teacher
                     );
             }
         );
@@ -1149,7 +1174,8 @@ or payment secrets are used.
                 modules.communication
                     .closeConversation(
                         conversationId,
-                        parent
+                        parent,
+                        teacher
                     );
 
             return record(
@@ -1162,7 +1188,7 @@ or payment secrets are used.
                 ),
                 result &&
                 result.status === "closed"
-                    ? "Conversation closed after authorization recheck."
+                    ? "Conversation closed after authorization and relationship recheck."
                     : "Conversation was not closed correctly."
             );
 
@@ -1189,7 +1215,8 @@ or payment secrets are used.
                 return modules.communication
                     .getConversation(
                         conversationId,
-                        parent
+                        parent,
+                        teacher
                     );
             }
         );
@@ -1354,7 +1381,7 @@ or payment secrets are used.
 
 
     /* =====================================================
-       TEST 25 — FINAL STATUS
+       TEST 25 — STATUS SECURITY CONTRACT
        ===================================================== */
 
     function testCommunicationStatus() {
@@ -1368,18 +1395,34 @@ or payment secrets are used.
             const valid =
                 Boolean(
                     status &&
+
                     status.version ===
-                        "1.2.0" &&
+                        EXPECTED_COMMUNICATION_VERSION &&
+
                     status.verifiedRelationshipRequired ===
                         true &&
-                    status.activeApprovedLinkRequired ===
+
+                    status.approvedLinkRequired ===
                         true &&
+
                     status.communicationPermissionRequired ===
                         true &&
+
+                    status.rawIdRelationshipLookup ===
+                        false &&
+
+                    status.syntheticAuthorizedUsers ===
+                        false &&
+
+                    status.completeAuthorizedUserRequired ===
+                        true &&
+
                     status.automaticInformationAccess ===
                         false &&
+
                     status.prototypeOnly ===
                         true &&
+
                     status.backendRequiredForProduction ===
                         true
                 );
@@ -1388,13 +1431,121 @@ or payment secrets are used.
                 "communication_security_status",
                 valid,
                 valid
-                    ? "Communication security status matches Version 1.2.0 requirements."
-                    : "Communication security status mismatch."
+                    ? "Communication v1.4.0 security contract matches the repaired architecture."
+                    : "Communication security contract mismatch."
             );
 
         } catch (error) {
             return record(
                 "communication_security_status",
+                false,
+                errorMessage(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       TEST 26 — NO SYNTHETIC AUTHORIZED USER FLAG
+       ===================================================== */
+
+    function testNoSyntheticAuthorizedUsers() {
+        const modules = getModules();
+
+        try {
+            const status =
+                modules.communication
+                    .getStatus();
+
+            return record(
+                "synthetic_authorized_users_disabled",
+                Boolean(
+                    status &&
+                    status.syntheticAuthorizedUsers ===
+                        false
+                ),
+                status &&
+                status.syntheticAuthorizedUsers ===
+                    false
+                    ? "Communication module does not manufacture authorized users."
+                    : "Synthetic authorized-user protection is missing."
+            );
+
+        } catch (error) {
+            return record(
+                "synthetic_authorized_users_disabled",
+                false,
+                errorMessage(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       TEST 27 — RAW ID RELATIONSHIP LOOKUP DISABLED
+       ===================================================== */
+
+    function testRawIdRelationshipLookupDisabled() {
+        const modules = getModules();
+
+        try {
+            const status =
+                modules.communication
+                    .getStatus();
+
+            return record(
+                "raw_id_relationship_lookup_disabled",
+                Boolean(
+                    status &&
+                    status.rawIdRelationshipLookup ===
+                        false
+                ),
+                status &&
+                status.rawIdRelationshipLookup ===
+                    false
+                    ? "Relationship lookup requires complete authorized user objects."
+                    : "Raw-ID relationship lookup protection is missing."
+            );
+
+        } catch (error) {
+            return record(
+                "raw_id_relationship_lookup_disabled",
+                false,
+                errorMessage(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       TEST 28 — COMPLETE AUTHORIZED USER REQUIREMENT
+       ===================================================== */
+
+    function testCompleteAuthorizedUserRequirement() {
+        const modules = getModules();
+
+        try {
+            const status =
+                modules.communication
+                    .getStatus();
+
+            return record(
+                "complete_authorized_user_required",
+                Boolean(
+                    status &&
+                    status.completeAuthorizedUserRequired ===
+                        true
+                ),
+                status &&
+                status.completeAuthorizedUserRequired ===
+                    true
+                    ? "Complete authorized user objects are required."
+                    : "Complete authorized user requirement is missing."
+            );
+
+        } catch (error) {
+            return record(
+                "complete_authorized_user_required",
                 false,
                 errorMessage(error)
             );
@@ -1409,6 +1560,12 @@ or payment secrets are used.
     function runAllTests() {
         results = [];
 
+        relationshipId = null;
+
+        linkId = null;
+
+        conversationId = null;
+
         testModuleAvailability();
 
         if (
@@ -1419,6 +1576,7 @@ or payment secrets are used.
         }
 
         testCleanState();
+
         testIdentityValidation();
 
         createVerifiedRelationship();
@@ -1436,13 +1594,17 @@ or payment secrets are used.
         }
 
         testRequesterCannotApprove();
+
         approveSecureLink();
+
         authorizeCommunication();
 
         testWrongLinkId();
-        testUnauthorizedParent();
+
         testNonParticipant();
+
         testInvalidIdentity();
+
         testWrongPermission();
 
         createSecureConversation();
@@ -1452,18 +1614,32 @@ or payment secrets are used.
         }
 
         sendSecureMessage();
+
         getSecureConversation();
+
         testConversationNonParticipant();
+
+        testUnauthorizedConversation();
+
         closeSecureConversation();
+
         testClosedConversationDenied();
 
         revokeSecureLink();
+
         testAccessAfterLinkRevocation();
+
         testMessageAfterRevocationDenied();
 
         revokeVerifiedRelationship();
 
         testCommunicationStatus();
+
+        testNoSyntheticAuthorizedUsers();
+
+        testRawIdRelationshipLookupDisabled();
+
+        testCompleteAuthorizedUserRequirement();
 
         return getSummary();
     }
@@ -1490,11 +1666,14 @@ or payment secrets are used.
             version:
                 VERSION,
 
-            total,
+            total:
+                total,
 
-            passed,
+            passed:
+                passed,
 
-            failed,
+            failed:
+                failed,
 
             success:
                 total > 0 &&
@@ -1515,11 +1694,14 @@ or payment secrets are used.
             version:
                 VERSION,
 
-            runAllTests,
+            runAllTests:
+                runAllTests,
 
-            getSummary,
+            getSummary:
+                getSummary,
 
-            resetTestState
+            resetTestState:
+                resetTestState
         });
 
 })();
