@@ -4,6 +4,8 @@
  * VERIFIED EDUCATION RELATIONSHIP LAYER
  * =========================================================
  *
+ * Version: 1.1.0
+ *
  * Purpose:
  * Verifies that an education link has a legitimate
  * relationship before access is granted.
@@ -48,7 +50,7 @@
 
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
 
     const STORAGE_KEY =
         "pacificEducationVerifiedRelationships";
@@ -135,11 +137,32 @@
 
         try {
 
-            return JSON.parse(
+            const stored =
                 localStorage.getItem(
                     STORAGE_KEY
+                );
+
+            if (!stored) {
+                return emptyState();
+            }
+
+            const parsed =
+                JSON.parse(stored);
+
+            if (
+                !parsed ||
+                typeof parsed !== "object" ||
+                !Array.isArray(
+                    parsed.relationships
+                ) ||
+                !Array.isArray(
+                    parsed.audit
                 )
-            ) || emptyState();
+            ) {
+                return emptyState();
+            }
+
+            return parsed;
 
         } catch {
 
@@ -155,6 +178,50 @@
         localStorage.setItem(
             STORAGE_KEY,
             JSON.stringify(state)
+        );
+
+    }
+
+
+    function createAuditId() {
+
+        if (
+            typeof crypto !== "undefined" &&
+            typeof crypto.randomUUID ===
+                "function"
+        ) {
+            return crypto.randomUUID();
+        }
+
+        return (
+            "audit-" +
+            Date.now() +
+            "-" +
+            Math.random()
+                .toString(36)
+                .slice(2)
+        );
+
+    }
+
+
+    function createRelationshipId() {
+
+        if (
+            typeof crypto !== "undefined" &&
+            typeof crypto.randomUUID ===
+                "function"
+        ) {
+            return crypto.randomUUID();
+        }
+
+        return (
+            "relationship-" +
+            Date.now() +
+            "-" +
+            Math.random()
+                .toString(36)
+                .slice(2)
         );
 
     }
@@ -346,12 +413,14 @@
        ===================================================== */
 
     function verifyRelationship({
+
         requester,
         target,
         relationshipType,
         jurisdiction,
         evidence,
         authority
+
     }) {
 
         if (!validUser(requester)) {
@@ -455,7 +524,7 @@
         const relationship = {
 
             id:
-                crypto.randomUUID(),
+                createRelationshipId(),
 
             requesterId:
                 requester.id,
@@ -518,7 +587,7 @@
         state.audit.push({
 
             id:
-                crypto.randomUUID(),
+                createAuditId(),
 
             action:
                 "EDUCATION_RELATIONSHIP_VERIFIED",
@@ -539,27 +608,38 @@
         );
 
 
-        window.dispatchEvent(
+        if (
+            typeof window !==
+            "undefined" &&
+            typeof window.dispatchEvent ===
+                "function" &&
+            typeof CustomEvent !==
+                "undefined"
+        ) {
 
-            new CustomEvent(
-                "pacificEducationRelationshipVerified",
-                {
-                    detail: {
-                        relationshipId:
-                            relationship.id,
+            window.dispatchEvent(
 
-                        relationshipType,
+                new CustomEvent(
+                    "pacificEducationRelationshipVerified",
+                    {
+                        detail: {
+                            relationshipId:
+                                relationship.id,
 
-                        requesterId:
-                            requester.id,
+                            relationshipType,
 
-                        targetId:
-                            target.id
+                            requesterId:
+                                requester.id,
+
+                            targetId:
+                                target.id
+                        }
                     }
-                }
-            )
+                )
 
-        );
+            );
+
+        }
 
 
         return relationship;
@@ -572,10 +652,12 @@
        ===================================================== */
 
     function checkRelationship({
+
         relationshipId,
         requester,
         target,
         relationshipType
+
     }) {
 
         if (!validUser(requester)) {
@@ -670,10 +752,12 @@
        ===================================================== */
 
     function revokeRelationship({
+
         relationshipId,
         revoker,
         reason =
             "relationship_authorization_revoked"
+
     }) {
 
         if (!validUser(revoker)) {
@@ -704,31 +788,58 @@
 
 
         /*
-         * Only participants or Ministry
-         * may revoke in this prototype.
+         * SECURITY GATE
          *
-         * Production authority must be
-         * determined server-side.
+         * Only an actual participant in the
+         * relationship may revoke it.
+         *
+         * A user cannot gain revocation authority
+         * merely by claiming the Ministry role.
+         *
+         * Production systems must additionally
+         * apply server-side institutional authority,
+         * jurisdiction and audit controls.
          */
 
-        if (
+        const isParticipant =
 
-            relationship.requesterId !==
-                revoker.id &&
+            relationship.requesterId ===
+                revoker.id ||
 
-            relationship.targetId !==
-                revoker.id &&
+            relationship.targetId ===
+                revoker.id;
 
-            revoker.role !==
-                "ministry"
 
-        ) {
+        if (!isParticipant) {
 
             throw new Error(
-                "Relationship revocation denied."
+                "Relationship revocation denied: revoker is not a participant."
             );
 
         }
+
+
+        if (
+            relationship.status !==
+            "verified"
+        ) {
+
+            throw new Error(
+                "Only verified relationships can be revoked."
+            );
+
+        }
+
+
+        const safeReason =
+
+            typeof reason ===
+                "string" &&
+            reason.trim()
+
+                ? reason.trim()
+
+                : "relationship_authorization_revoked";
 
 
         relationship.status =
@@ -741,13 +852,13 @@
             revoker.id;
 
         relationship.revokeReason =
-            reason;
+            safeReason;
 
 
         state.audit.push({
 
             id:
-                crypto.randomUUID(),
+                createAuditId(),
 
             action:
                 "EDUCATION_RELATIONSHIP_REVOKED",
@@ -757,7 +868,11 @@
 
             relationshipId,
 
-            reason
+            revokedBy:
+                revoker.id,
+
+            reason:
+                safeReason
 
         });
 
@@ -767,19 +882,35 @@
         );
 
 
-        window.dispatchEvent(
+        if (
+            typeof window !==
+            "undefined" &&
+            typeof window.dispatchEvent ===
+                "function" &&
+            typeof CustomEvent !==
+                "undefined"
+        ) {
 
-            new CustomEvent(
-                "pacificEducationRelationshipRevoked",
-                {
-                    detail: {
-                        relationshipId,
-                        reason
+            window.dispatchEvent(
+
+                new CustomEvent(
+                    "pacificEducationRelationshipRevoked",
+                    {
+                        detail: {
+                            relationshipId,
+
+                            revokedBy:
+                                revoker.id,
+
+                            reason:
+                                safeReason
+                        }
                     }
-                }
-            )
+                )
 
-        );
+            );
+
+        }
 
 
         return relationship;
@@ -863,7 +994,10 @@
                 true,
 
             automaticAccess:
-                false
+                false,
+
+            participantOnlyRevocation:
+                true
 
         });
 
