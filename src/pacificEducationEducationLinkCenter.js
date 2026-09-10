@@ -3,7 +3,7 @@
  * PACIFIC EDUCATION
  * EDUCATION LINK CENTER
  * =========================================================
- * Version 1.3.0
+ * Version 1.3.1
  *
  * LEGACY / COMPATIBILITY CENTER
  *
@@ -40,7 +40,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.3.0";
+  const VERSION = "1.3.1";
 
   const LINK_TYPES = Object.freeze({
     student_teacher: ["student", "teacher"],
@@ -52,31 +52,16 @@
   });
 
   function getAuthorization() {
-    return (
-      window.PacificEducationSecureLinkAuthorization ||
-      null
-    );
+    return window.PacificEducationSecureLinkAuthorization || null;
   }
 
   function getBridge() {
-    return (
-      window.PacificEducationEducationLinkBridge ||
-      null
-    );
+    return window.PacificEducationEducationLinkBridge || null;
   }
 
   function getRelationshipLayer() {
-    return (
-      window.PacificEducationVerifiedEducationRelationship ||
-      null
-    );
+    return window.PacificEducationVerifiedEducationRelationship || null;
   }
-
-  /*
-   * =======================================================
-   * USER VALIDATION
-   * =======================================================
-   */
 
   function validUser(user) {
     return Boolean(
@@ -90,25 +75,15 @@
     );
   }
 
-  function requireUser(
-    user,
-    message
-  ) {
+  function requireUser(user, message) {
     if (!validUser(user)) {
       throw new Error(
-        message ||
-        "Complete authorized user object required."
+        message || "Complete authorized user object required."
       );
     }
 
     return user;
   }
-
-  /*
-   * =======================================================
-   * LINK VALIDATION
-   * =======================================================
-   */
 
   function validLinkType(type) {
     return Object.prototype.hasOwnProperty.call(
@@ -119,21 +94,12 @@
 
   function getAvailableLinkTypes(role) {
     return Object.entries(LINK_TYPES)
-      .filter(([, roles]) =>
-        roles.includes(role)
-      )
+      .filter(([, roles]) => roles.includes(role))
       .map(([type]) => type);
   }
 
-  /*
-   * =======================================================
-   * AUTHORIZATION DEPENDENCY
-   * =======================================================
-   */
-
   function requireAuthorization() {
-    const authorization =
-      getAuthorization();
+    const authorization = getAuthorization();
 
     const requiredMethods = [
       "requestLink",
@@ -150,10 +116,7 @@
     }
 
     for (const method of requiredMethods) {
-      if (
-        typeof authorization[method] !==
-        "function"
-      ) {
+      if (typeof authorization[method] !== "function") {
         throw new Error(
           `Secure Link Authorization API is missing: ${method}.`
         );
@@ -163,15 +126,8 @@
     return authorization;
   }
 
-  /*
-   * =======================================================
-   * RELATIONSHIP DEPENDENCY
-   * =======================================================
-   */
-
   function requireRelationshipLayer() {
-    const relationship =
-      getRelationshipLayer();
+    const relationship = getRelationshipLayer();
 
     if (!relationship) {
       throw new Error(
@@ -191,20 +147,9 @@
     return relationship;
   }
 
-  /*
-   * =======================================================
-   * LINK REQUEST
-   * =======================================================
-   */
-
   function requestLink(request) {
-    if (
-      !request ||
-      typeof request !== "object"
-    ) {
-      throw new Error(
-        "Valid link request required."
-      );
+    if (!request || typeof request !== "object") {
+      throw new Error("Valid link request required.");
     }
 
     requireUser(
@@ -218,79 +163,43 @@
     );
 
     if (
-      request.requester.id ===
-        request.target.id &&
-      request.requester.role ===
-        request.target.role
+      request.requester.id === request.target.id &&
+      request.requester.role === request.target.role
     ) {
       throw new Error(
         "Requester and target must be different participants."
       );
     }
 
-    if (
-      !validLinkType(
-        request.linkType
-      )
-    ) {
-      throw new Error(
-        "Invalid education link type."
-      );
+    if (!validLinkType(request.linkType)) {
+      throw new Error("Invalid education link type.");
     }
 
-    const authorization =
-      requireAuthorization();
+    const authorization = requireAuthorization();
 
-    return authorization.requestLink(
-      request
-    );
+    return authorization.requestLink(request);
   }
-
-  /*
-   * =======================================================
-   * LINK APPROVAL
-   * =======================================================
-   */
 
   function approveLink(request) {
-    if (
-      !request ||
-      typeof request !== "object"
-    ) {
-      throw new Error(
-        "Valid approval request required."
-      );
+    if (!request || typeof request !== "object") {
+      throw new Error("Valid approval request required.");
     }
 
-    if (!validUser(request.approver)) {
-      throw new Error(
-        "Complete authorized approver object required."
-      );
-    }
-
-    const authorization =
-      requireAuthorization();
-
-    return authorization.approveLink(
-      request
+    requireUser(
+      request.approver,
+      "Complete authorized approver object required."
     );
+
+    const authorization = requireAuthorization();
+
+    return authorization.approveLink(request);
   }
 
-  /*
-   * =======================================================
-   * ACCESS CHECK
-   * =======================================================
-   */
-
   function checkAccess(request) {
-    if (
-      !request ||
-      typeof request !== "object"
-    ) {
+    if (!request || typeof request !== "object") {
       return {
         allowed: false,
-        reason:
-          "Valid access request required."
+        reason: "Valid access request required."
       };
     }
 
@@ -302,61 +211,35 @@
       };
     }
 
-    const authorization =
-      getAuthorization();
+    const authorization = getAuthorization();
 
     if (
       !authorization ||
-      typeof authorization.authorizeAccess !==
-        "function"
+      typeof authorization.authorizeAccess !== "function"
     ) {
       return {
         allowed: false,
-        reason:
-          "Authorization module unavailable."
+        reason: "Authorization module unavailable."
       };
     }
 
-    return authorization.authorizeAccess(
-      request
-    );
+    return authorization.authorizeAccess(request);
   }
-
-  /*
-   * =======================================================
-   * LINK REVOCATION
-   * =======================================================
-   */
 
   function revokeLink(request) {
-    if (
-      !request ||
-      typeof request !== "object"
-    ) {
-      throw new Error(
-        "Valid revoke request required."
-      );
+    if (!request || typeof request !== "object") {
+      throw new Error("Valid revoke request required.");
     }
 
-    if (!validUser(request.revoker)) {
-      throw new Error(
-        "Complete authorized revoker object required."
-      );
-    }
-
-    const authorization =
-      requireAuthorization();
-
-    return authorization.revokeLink(
-      request
+    requireUser(
+      request.revoker,
+      "Complete authorized revoker object required."
     );
-  }
 
-  /*
-   * =======================================================
-   * USER LINKS
-   * =======================================================
-   */
+    const authorization = requireAuthorization();
+
+    return authorization.revokeLink(request);
+  }
 
   function getUserLinks(user) {
     requireUser(
@@ -364,25 +247,10 @@
       "Complete authorized user object required."
     );
 
-    const authorization =
-      requireAuthorization();
+    const authorization = requireAuthorization();
 
-    return authorization.getUserLinks(
-      user
-    );
+    return authorization.getUserLinks(user);
   }
-
-  /*
-   * =======================================================
-   * USER RELATIONSHIPS
-   *
-   * IMPORTANT:
-   * The relationship layer requires the COMPLETE
-   * authorized user object.
-   *
-   * NEVER replace this with user.id.
-   * =======================================================
-   */
 
   function getUserRelationships(user) {
     requireUser(
@@ -390,19 +258,15 @@
       "Complete authorized user object required for relationship lookup."
     );
 
-    const relationship =
-      requireRelationshipLayer();
+    const relationship = requireRelationshipLayer();
 
-    return relationship.getUserRelationships(
-      user
-    );
+    /*
+     * IMPORTANT:
+     * The complete authorized user object is passed.
+     * Never replace this with user.id.
+     */
+    return relationship.getUserRelationships(user);
   }
-
-  /*
-   * =======================================================
-   * DASHBOARD MODEL
-   * =======================================================
-   */
 
   function getDashboardModel(user) {
     requireUser(
@@ -410,21 +274,12 @@
       "Dashboard user is not authorized."
     );
 
-    const links =
-      getUserLinks(user);
+    const links = getUserLinks(user);
+    const relationships = getUserRelationships(user);
 
-    /*
-     * SECURITY:
-     * Pass the COMPLETE authorized user.
-     * Do NOT pass user.id.
-     */
-    const relationships =
-      getUserRelationships(user);
-
-    const safeLinks =
-      Array.isArray(links)
-        ? links
-        : [];
+    const safeLinks = Array.isArray(links)
+      ? links
+      : [];
 
     const safeRelationships =
       Array.isArray(relationships)
@@ -439,36 +294,32 @@
       role: user.role,
 
       availableLinkTypes:
-        getAvailableLinkTypes(
-          user.role
-        ),
+        getAvailableLinkTypes(user.role),
 
-      pending:
-        safeLinks.filter(
-          link =>
-            link &&
-            link.status === "pending"
-        ),
+      pending: safeLinks.filter(
+        link =>
+          link &&
+          link.status === "pending"
+      ),
 
-      active:
-        safeLinks.filter(
-          link =>
-            link &&
-            link.status === "active"
-        ),
+      active: safeLinks.filter(
+        link =>
+          link &&
+          link.status === "active"
+      ),
 
-      revoked:
-        safeLinks.filter(
-          link =>
-            link &&
-            link.status === "revoked"
-        ),
+      revoked: safeLinks.filter(
+        link =>
+          link &&
+          link.status === "revoked"
+      ),
 
-      relationships:
-        safeRelationships,
+      relationships: safeRelationships,
 
-      linkCount:
-        safeLinks.length,
+      linkCount: safeLinks.length,
+
+      relationshipCount:
+        safeRelationships.length,
 
       security: {
         identityRequired: true,
@@ -482,35 +333,110 @@
         rawIdRelationshipLookup: false,
         syntheticAuthorizedUsers: false,
         automaticInformationAccess: false,
+        callerSuppliedRelationshipIdsTrusted: false,
         prototypeOnly: true,
         productionBackendRequired: true
       }
     });
   }
 
-  /*
-   * =======================================================
-   * STATUS
-   * =======================================================
-   */
-
   function getStatus() {
-    const authorization =
-      getAuthorization();
+    const authorization = getAuthorization();
+    const bridge = getBridge();
+    const relationship = getRelationshipLayer();
 
-    const bridge =
-      getBridge();
+    const authorizationReady = Boolean(
+      authorization &&
+      typeof authorization.requestLink ===
+        "function" &&
+      typeof authorization.approveLink ===
+        "function" &&
+      typeof authorization.authorizeAccess ===
+        "function" &&
+      typeof authorization.revokeLink ===
+        "function" &&
+      typeof authorization.getUserLinks ===
+        "function"
+    );
 
-    const relationship =
-      getRelationshipLayer();
+    const bridgeReady = Boolean(
+      bridge &&
+      typeof bridge.requestConnection ===
+        "function" &&
+      typeof bridge.approveConnection ===
+        "function" &&
+      typeof bridge.checkAccess ===
+        "function" &&
+      typeof bridge.revokeConnection ===
+        "function"
+    );
 
-    const authorizationReady =
-      Boolean(
-        authorization &&
-        typeof authorization.requestLink ===
-          "function" &&
-        typeof authorization.approveLink ===
-          "function" &&
-        typeof authorization.authorizeAccess ===
-          "function" &&
-        typeof
+    const relationshipReady = Boolean(
+      relationship &&
+      typeof relationship.getUserRelationships ===
+        "function"
+    );
+
+    return Object.freeze({
+      module: "PacificEducationEducationLinkCenter",
+
+      version: VERSION,
+
+      ready:
+        authorizationReady &&
+        relationshipReady,
+
+      authorizationReady,
+
+      bridgeReady,
+
+      relationshipReady,
+
+      publicApi: [
+        "requestLink",
+        "approveLink",
+        "revokeLink",
+        "checkAccess",
+        "getUserLinks",
+        "getUserRelationships",
+        "getDashboardModel",
+        "getStatus"
+      ],
+
+      linkTypes: Object.keys(LINK_TYPES),
+
+      security: {
+        identityRequired: true,
+        roleRequired: true,
+        verificationRequired: true,
+        verifiedRelationshipRequired: true,
+        authorizationRequired: true,
+        permissionRequired: true,
+        completeAuthorizedUserRequired: true,
+        rawIdRelationshipLookup: false,
+        syntheticAuthorizedUsers: false,
+        automaticInformationAccess: false,
+        callerSuppliedRelationshipIdsTrusted: false,
+        prototypeOnly: true,
+        productionBackendRequired: true,
+        localStorageTrusted: false,
+        credentialsStored: false,
+        apiKeysStored: false,
+        paymentSecretsStored: false
+      }
+    });
+  }
+
+  const API = Object.freeze({
+    requestLink,
+    approveLink,
+    revokeLink,
+    checkAccess,
+    getUserLinks,
+    getUserRelationships,
+    getDashboardModel,
+    getStatus
+  });
+
+  window.PacificEducationEducationLinkCenter = API;
+})();
