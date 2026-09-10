@@ -2,7 +2,7 @@
 ============================================================
 PACIFIC EDUCATION
 SECURE COMMUNICATION SECURITY TEST
-VERSION 1.4.0
+VERSION 1.4.1
 
 OWNER / DEVELOPER TEST HARNESS
 
@@ -33,7 +33,7 @@ Prototype storage is NOT production-grade secure storage.
 (function () {
     "use strict";
 
-    const VERSION = "1.4.0";
+    const VERSION = "1.4.1";
 
     const TEST_GROUP = Object.freeze({
         name: "Pacific Education Secure Communication Test Group",
@@ -64,7 +64,7 @@ Prototype storage is NOT production-grade secure storage.
         authorized: true
     });
 
-    const results = [];
+    let results = [];
 
     let relationshipId = null;
     let linkId = null;
@@ -92,6 +92,21 @@ Prototype storage is NOT production-grade secure storage.
     }
 
 
+    function assertFunction(module, name, moduleName) {
+        if (
+            !module ||
+            typeof module[name] !== "function"
+        ) {
+            throw new Error(
+                moduleName +
+                "." +
+                name +
+                " is unavailable."
+            );
+        }
+    }
+
+
     function assertModules(modules) {
         const missing = [];
 
@@ -113,6 +128,78 @@ Prototype storage is NOT production-grade secure storage.
                 missing.join(", ")
             );
         }
+
+        assertFunction(
+            modules.relationship,
+            "verifyRelationship",
+            "relationship"
+        );
+
+        assertFunction(
+            modules.relationship,
+            "revokeRelationship",
+            "relationship"
+        );
+
+        assertFunction(
+            modules.relationship,
+            "checkRelationship",
+            "relationship"
+        );
+
+        assertFunction(
+            modules.relationship,
+            "getUserRelationships",
+            "relationship"
+        );
+
+        assertFunction(
+            modules.authorization,
+            "requestLink",
+            "authorization"
+        );
+
+        assertFunction(
+            modules.authorization,
+            "approveLink",
+            "authorization"
+        );
+
+        assertFunction(
+            modules.authorization,
+            "authorizeAccess",
+            "authorization"
+        );
+
+        assertFunction(
+            modules.authorization,
+            "revokeLink",
+            "authorization"
+        );
+
+        assertFunction(
+            modules.communication,
+            "createConversation",
+            "communication"
+        );
+
+        assertFunction(
+            modules.communication,
+            "sendMessage",
+            "communication"
+        );
+
+        assertFunction(
+            modules.communication,
+            "getConversation",
+            "communication"
+        );
+
+        assertFunction(
+            modules.communication,
+            "closeConversation",
+            "communication"
+        );
 
         return true;
     }
@@ -150,11 +237,24 @@ Prototype storage is NOT production-grade secure storage.
     }
 
 
+    function errorMessage(error) {
+        return (
+            error &&
+            typeof error.message === "string"
+        )
+            ? error.message
+            : String(error);
+    }
+
+
     function expectDeniedResult(name, action) {
         try {
             const value = action();
 
-            if (value && value.allowed === false) {
+            if (
+                value &&
+                value.allowed === false
+            ) {
                 return record(
                     name,
                     true,
@@ -173,9 +273,8 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 name,
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                "Unexpected throw: " +
+                errorMessage(error)
             );
         }
     }
@@ -226,9 +325,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 name,
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -252,9 +349,7 @@ Prototype storage is NOT production-grade secure storage.
         } catch (error) {
             console.warn(
                 "Relationship reset warning:",
-                error && error.message
-                    ? error.message
-                    : error
+                errorMessage(error)
             );
         }
 
@@ -269,9 +364,7 @@ Prototype storage is NOT production-grade secure storage.
         } catch (error) {
             console.warn(
                 "Authorization reset warning:",
-                error && error.message
-                    ? error.message
-                    : error
+                errorMessage(error)
             );
         }
 
@@ -286,9 +379,7 @@ Prototype storage is NOT production-grade secure storage.
         } catch (error) {
             console.warn(
                 "Communication reset warning:",
-                error && error.message
-                    ? error.message
-                    : error
+                errorMessage(error)
             );
         }
 
@@ -306,13 +397,18 @@ Prototype storage is NOT production-grade secure storage.
             );
         } catch (error) {
             console.warn(
-                "Local test storage reset warning."
+                "Local test storage reset warning:",
+                errorMessage(error)
             );
         }
+
+        results = [];
 
         relationshipId = null;
         linkId = null;
         conversationId = null;
+
+        return true;
     }
 
 
@@ -329,16 +425,14 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "module_availability",
                 true,
-                "All required security modules are available."
+                "All required security modules and APIs are available."
             );
 
         } catch (error) {
             return record(
                 "module_availability",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -349,15 +443,24 @@ Prototype storage is NOT production-grade secure storage.
        ===================================================== */
 
     function testCleanState() {
-        resetTestState();
+        try {
+            resetTestState();
 
-        return record(
-            "clean_test_state",
-            relationshipId === null &&
-            linkId === null &&
-            conversationId === null,
-            "Prototype security test state reset."
-        );
+            return record(
+                "clean_test_state",
+                relationshipId === null &&
+                linkId === null &&
+                conversationId === null,
+                "Prototype security test state reset."
+            );
+
+        } catch (error) {
+            return record(
+                "clean_test_state",
+                false,
+                errorMessage(error)
+            );
+        }
     }
 
 
@@ -380,7 +483,10 @@ Prototype storage is NOT production-grade secure storage.
 
         return record(
             "identity_validation",
-            Boolean(validParent && validTeacher),
+            Boolean(
+                validParent &&
+                validTeacher
+            ),
             validParent && validTeacher
                 ? "Parent and teacher test identities are valid."
                 : "Test identity validation failed."
@@ -399,30 +505,41 @@ Prototype storage is NOT production-grade secure storage.
             const result =
                 modules.relationship.verifyRelationship({
                     requester: parent,
+
                     target: teacher,
-                    relationshipType: "parent_teacher",
+
+                    relationshipType:
+                        "parent_teacher",
+
                     jurisdiction:
                         TEST_GROUP.jurisdiction,
+
                     evidence: {
                         type:
                             "linked_student_relationship",
+
                         verified: true
                     },
+
                     authority: {
                         consent: true
                     }
                 });
 
             /*
-             * IMPORTANT:
-             * The current relationship layer returns:
-             * relationship.id
+             * CURRENT RELATIONSHIP API:
+             * The relationship object uses:
              *
-             * It does NOT return:
-             * relationship.relationshipId
+             * result.id
+             *
+             * NOT:
+             *
+             * result.relationshipId
              */
+
             relationshipId =
-                result && result.id
+                result &&
+                typeof result.id === "string"
                     ? result.id
                     : null;
 
@@ -438,9 +555,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "verified_relationship_created",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -463,15 +578,21 @@ Prototype storage is NOT production-grade secure storage.
             const result =
                 modules.authorization.requestLink({
                     requester: parent,
+
                     target: teacher,
-                    linkType: "parent_teacher",
+
+                    linkType:
+                        "parent_teacher",
 
                     relationship: {
                         id: relationshipId,
-                        type: "parent_teacher"
+
+                        type:
+                            "parent_teacher"
                     },
 
-                    relationshipId: relationshipId,
+                    relationshipId:
+                        relationshipId,
 
                     jurisdiction:
                         TEST_GROUP.jurisdiction,
@@ -479,12 +600,23 @@ Prototype storage is NOT production-grade secure storage.
                     evidenceReference: {
                         type:
                             "linked_student_relationship",
+
                         verified: true
                     }
                 });
 
+            /*
+             * CURRENT AUTHORIZATION API:
+             * requestLink() returns the link object.
+             *
+             * The link ID is:
+             *
+             * result.id
+             */
+
             linkId =
-                result && result.id
+                result &&
+                typeof result.id === "string"
                     ? result.id
                     : null;
 
@@ -500,9 +632,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "secure_link_requested",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -516,10 +646,18 @@ Prototype storage is NOT production-grade secure storage.
         const modules = getModules();
 
         try {
+            if (!linkId) {
+                throw new Error(
+                    "Link ID is required before approval."
+                );
+            }
+
             const result =
                 modules.authorization.approveLink({
                     linkId: linkId,
+
                     approver: teacher,
+
                     permissions: [
                         "communication"
                     ]
@@ -529,7 +667,9 @@ Prototype storage is NOT production-grade secure storage.
                 Boolean(
                     result &&
                     result.status === "active" &&
-                    Array.isArray(result.permissions) &&
+                    Array.isArray(
+                        result.permissions
+                    ) &&
                     result.permissions.includes(
                         "communication"
                     )
@@ -547,9 +687,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "secure_link_approved",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -566,7 +704,9 @@ Prototype storage is NOT production-grade secure storage.
             const result =
                 modules.authorization.authorizeAccess({
                     linkId: linkId,
+
                     requester: parent,
+
                     requiredPermission:
                         "communication"
                 });
@@ -577,7 +717,8 @@ Prototype storage is NOT production-grade secure storage.
                     result &&
                     result.allowed === true
                 ),
-                result && result.allowed === true
+                result &&
+                result.allowed === true
                     ? "Communication authorization granted."
                     : "Communication authorization was not granted."
             );
@@ -586,9 +727,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "communication_authorized",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -605,8 +744,12 @@ Prototype storage is NOT production-grade secure storage.
             "hardening_wrong_link_id",
             function () {
                 return modules.authorization.authorizeAccess({
-                    linkId: "wrong-link-id",
-                    requester: parent,
+                    linkId:
+                        "wrong-link-id",
+
+                    requester:
+                        parent,
+
                     requiredPermission:
                         "communication"
                 });
@@ -626,8 +769,12 @@ Prototype storage is NOT production-grade secure storage.
             "hardening_unauthorized_parent",
             function () {
                 return modules.authorization.authorizeAccess({
-                    linkId: linkId,
-                    requester: unauthorizedParent,
+                    linkId:
+                        linkId,
+
+                    requester:
+                        unauthorizedParent,
+
                     requiredPermission:
                         "communication"
                 });
@@ -647,8 +794,12 @@ Prototype storage is NOT production-grade secure storage.
             "hardening_non_participant",
             function () {
                 return modules.authorization.authorizeAccess({
-                    linkId: linkId,
-                    requester: nonParticipant,
+                    linkId:
+                        linkId,
+
+                    requester:
+                        nonParticipant,
+
                     requiredPermission:
                         "communication"
                 });
@@ -668,8 +819,12 @@ Prototype storage is NOT production-grade secure storage.
             "hardening_wrong_permission",
             function () {
                 return modules.authorization.authorizeAccess({
-                    linkId: linkId,
-                    requester: parent,
+                    linkId:
+                        linkId,
+
+                    requester:
+                        parent,
+
                     requiredPermission:
                         "unauthorized_test_permission"
                 });
@@ -686,18 +841,45 @@ Prototype storage is NOT production-grade secure storage.
         const modules = getModules();
 
         try {
+            if (!linkId) {
+                throw new Error(
+                    "Link ID is required before conversation creation."
+                );
+            }
+
             const result =
                 modules.communication.createConversation(
                     parent,
+
                     teacher,
+
                     {
-                        linkId: linkId
+                        linkId:
+                            linkId
                     }
                 );
 
+            /*
+             * CRITICAL CURRENT API FIX:
+             *
+             * createConversation() returns:
+             *
+             * {
+             *     id: "...",
+             *     linkId: "...",
+             *     relationshipId: "...",
+             *     ...
+             * }
+             *
+             * Therefore use result.id.
+             *
+             * Do NOT use result.conversationId.
+             */
+
             conversationId =
-                result && result.conversationId
-                    ? result.conversationId
+                result &&
+                typeof result.id === "string"
+                    ? result.id
                     : null;
 
             return record(
@@ -712,9 +894,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "conversation_created",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -728,6 +908,12 @@ Prototype storage is NOT production-grade secure storage.
         const modules = getModules();
 
         try {
+            if (!conversationId) {
+                throw new Error(
+                    "Conversation ID is required before sending a message."
+                );
+            }
+
             const result =
                 modules.communication.sendMessage({
                     conversationId:
@@ -746,19 +932,29 @@ Prototype storage is NOT production-grade secure storage.
                         linkId
                 });
 
+            const passed =
+                Boolean(
+                    result &&
+                    result.id &&
+                    result.conversationId ===
+                        conversationId &&
+                    result.linkId ===
+                        linkId
+                );
+
             return record(
                 "authorized_message_sent",
-                Boolean(result),
-                "Authorized message operation succeeded."
+                passed,
+                passed
+                    ? "Authorized message created and linked to the correct conversation."
+                    : "Message result did not contain the expected identifiers."
             );
 
         } catch (error) {
             return record(
                 "authorized_message_sent",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -778,19 +974,31 @@ Prototype storage is NOT production-grade secure storage.
                     parent
                 );
 
+            const passed =
+                Boolean(
+                    result &&
+                    result.conversation &&
+                    result.conversation.id ===
+                        conversationId &&
+                    Array.isArray(
+                        result.messages
+                    ) &&
+                    result.messages.length >= 1
+                );
+
             return record(
                 "authorized_conversation_read",
-                Boolean(result),
-                "Authorized conversation read successfully."
+                passed,
+                passed
+                    ? "Authorized conversation and message data were read successfully."
+                    : "Conversation read did not return the expected data."
             );
 
         } catch (error) {
             return record(
                 "authorized_conversation_read",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -835,19 +1043,30 @@ Prototype storage is NOT production-grade secure storage.
                         "Security test relationship revocation."
                 });
 
+            const passed =
+                Boolean(
+                    result &&
+                    (
+                        result.status ===
+                            "revoked" ||
+                        result.allowed ===
+                            false
+                    )
+                );
+
             return record(
                 "relationship_revoked",
-                Boolean(result),
-                "Verified relationship revocation completed."
+                passed,
+                passed
+                    ? "Verified relationship revocation completed."
+                    : "Relationship revocation did not return the expected revoked state."
             );
 
         } catch (error) {
             return record(
                 "relationship_revoked",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -879,7 +1098,10 @@ Prototype storage is NOT production-grade secure storage.
             const denied =
                 Boolean(
                     result &&
-                    result.allowed === false
+                    (
+                        result.allowed === false ||
+                        result.status === "revoked"
+                    )
                 );
 
             return record(
@@ -894,9 +1116,7 @@ Prototype storage is NOT production-grade secure storage.
             return record(
                 "relationship_revocation_verified",
                 false,
-                error && error.message
-                    ? error.message
-                    : String(error)
+                errorMessage(error)
             );
         }
     }
@@ -962,3 +1182,337 @@ Prototype storage is NOT production-grade secure storage.
         try {
             const result =
                 modules.authorization.revokeLink({
+                    linkId:
+                        linkId,
+
+                    revoker:
+                        teacher,
+
+                    reason:
+                        "Security test link revocation."
+                });
+
+            const passed =
+                Boolean(
+                    result &&
+                    (
+                        result.status ===
+                            "revoked" ||
+                        result.allowed ===
+                            false ||
+                        result.revoked ===
+                            true
+                    )
+                );
+
+            return record(
+                "secure_link_revoked",
+                passed,
+                passed
+                    ? "Secure communication link revocation completed."
+                    : "Link revocation did not return the expected revoked state."
+            );
+
+        } catch (error) {
+            return record(
+                "secure_link_revoked",
+                false,
+                errorMessage(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       21. MESSAGE ACCESS AFTER REVOCATION
+       ===================================================== */
+
+    function testMessageDeniedAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "message_denied_after_revocation",
+            function () {
+                modules.communication.sendMessage({
+                    conversationId:
+                        conversationId,
+
+                    sender:
+                        parent,
+
+                    recipient:
+                        teacher,
+
+                    text:
+                        "This message must be denied after revocation.",
+
+                    linkId:
+                        linkId
+                });
+            }
+        );
+    }
+
+
+    /* =====================================================
+       22. CONVERSATION READ AFTER REVOCATION
+       ===================================================== */
+
+    function testConversationReadDeniedAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "conversation_read_denied_after_revocation",
+            function () {
+                modules.communication.getConversation(
+                    conversationId,
+                    parent
+                );
+            }
+        );
+    }
+
+
+    /* =====================================================
+       23. CONVERSATION CLOSE AFTER REVOCATION
+       ===================================================== */
+
+    function testConversationCloseDeniedAfterRevocation() {
+        const modules = getModules();
+
+        return expectDeniedByThrow(
+            "conversation_close_denied_after_revocation",
+            function () {
+                modules.communication.closeConversation(
+                    conversationId,
+                    parent
+                );
+            }
+        );
+    }
+
+
+    /* =====================================================
+       24. FINAL FAIL-CLOSED CHECK
+       ===================================================== */
+
+    function testFinalFailClosedState() {
+        const modules = getModules();
+
+        try {
+            const access =
+                modules.authorization.authorizeAccess({
+                    linkId:
+                        linkId,
+
+                    requester:
+                        parent,
+
+                    requiredPermission:
+                        "communication"
+                });
+
+            const accessDenied =
+                Boolean(
+                    access &&
+                    access.allowed === false
+                );
+
+            return record(
+                "final_fail_closed_check",
+                accessDenied,
+                accessDenied
+                    ? "Final authorization state is fail-closed."
+                    : "Security failure: revoked access remains authorized."
+            );
+
+        } catch (error) {
+            return record(
+                "final_fail_closed_check",
+                false,
+                errorMessage(error)
+            );
+        }
+    }
+
+
+    /* =====================================================
+       RUN COMPLETE SECURITY TEST
+       ===================================================== */
+
+    function run() {
+        resetTestState();
+
+        testModuleAvailability();
+        testCleanState();
+        testIdentityValidation();
+
+        createVerifiedRelationship();
+        requestSecureLink();
+        approveSecureLink();
+        authorizeCommunication();
+
+        testWrongLinkId();
+        testUnauthorizedParent();
+        testNonParticipant();
+        testWrongPermission();
+
+        createSecureConversation();
+        sendAuthorizedMessage();
+        readAuthorizedConversation();
+        testUnauthorizedConversationAccess();
+
+        revokeVerifiedRelationship();
+        testRelationshipRevoked();
+
+        testAuthorizationAfterRevocation();
+        testOldLinkCannotRestoreAccess();
+
+        revokeSecureLink();
+
+        testMessageDeniedAfterRevocation();
+        testConversationReadDeniedAfterRevocation();
+        testConversationCloseDeniedAfterRevocation();
+
+        testFinalFailClosedState();
+
+        return getReport();
+    }
+
+
+    /* =====================================================
+       REPORT
+       ===================================================== */
+
+    function getReport() {
+        const total =
+            results.length;
+
+        const passed =
+            results.filter(
+                item => item.passed === true
+            ).length;
+
+        const failed =
+            results.filter(
+                item => item.passed === false
+            ).length;
+
+        return Object.freeze({
+            version:
+                VERSION,
+
+            testGroup:
+                TEST_GROUP.name,
+
+            total:
+                total,
+
+            passed:
+                passed,
+
+            failed:
+                failed,
+
+            allPassed:
+                total > 0 &&
+                failed === 0,
+
+            relationshipId:
+                relationshipId,
+
+            linkId:
+                linkId,
+
+            conversationId:
+                conversationId,
+
+            results:
+                results.slice()
+        });
+    }
+
+
+    /* =====================================================
+       PRINT REPORT
+       ===================================================== */
+
+    function printReport() {
+        const report =
+            getReport();
+
+        console.group(
+            "Pacific Education Secure Communication Test " +
+            VERSION
+        );
+
+        console.table(
+            report.results
+        );
+
+        console.info(
+            "Total:",
+            report.total
+        );
+
+        console.info(
+            "Passed:",
+            report.passed
+        );
+
+        console.info(
+            "Failed:",
+            report.failed
+        );
+
+        console.info(
+            "ALL TESTS PASSED:",
+            report.allPassed
+        );
+
+        console.groupEnd();
+
+        return report;
+    }
+
+
+    /* =====================================================
+       PUBLIC API
+       ===================================================== */
+
+    window.PacificEducationSecureCommunicationTest =
+        Object.freeze({
+            version:
+                VERSION,
+
+            run:
+                run,
+
+            reset:
+                resetTestState,
+
+            getReport:
+                getReport,
+
+            printReport:
+                printReport
+        });
+
+
+    /* =====================================================
+       LOAD EVENT
+       ===================================================== */
+
+    window.dispatchEvent(
+        new CustomEvent(
+            "pacificEducationSecureCommunicationTestLoaded",
+            {
+                detail: {
+                    version:
+                        VERSION
+                }
+            }
+        )
+    );
+
+})();
