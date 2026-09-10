@@ -3,7 +3,7 @@
  * PACIFIC EDUCATION
  * SECURE LINK & AUTHORIZATION LAYER
  * =========================================================
- * Version 1.2.1
+ * Version 1.3.0
  *
  * Security sequence:
  * Identity
@@ -20,13 +20,18 @@
  *
  * Prototype only.
  * Production authorization MUST be enforced server-side.
+ *
+ * IMPORTANT:
+ * - localStorage is prototype storage only.
+ * - Client-side state MUST NOT be trusted in production.
+ * - No automatic information access.
  * =========================================================
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.2.1";
+  const VERSION = "1.3.0";
 
   const STORAGE_KEY =
     "pacificEducationSecureLinks";
@@ -88,10 +93,11 @@
     }
   });
 
-
-  /* =====================================================
-     STATE
-     ===================================================== */
+  /*
+   * =======================================================
+   * STATE
+   * =======================================================
+   */
 
   function emptyState() {
     return {
@@ -99,7 +105,6 @@
       audit: []
     };
   }
-
 
   function loadState() {
     try {
@@ -122,12 +127,14 @@
         return emptyState();
       }
 
-      return parsed;
+      return {
+        links: parsed.links,
+        audit: parsed.audit
+      };
     } catch (_) {
       return emptyState();
     }
   }
-
 
   function saveState(state) {
     localStorage.setItem(
@@ -135,7 +142,6 @@
       JSON.stringify(state)
     );
   }
-
 
   function createId(prefix) {
     if (
@@ -147,10 +153,11 @@
 
     return (
       `${prefix}-${Date.now()}-` +
-      `${Math.random().toString(36).slice(2, 12)}`
+      `${Math.random()
+        .toString(36)
+        .slice(2, 12)}`
     );
   }
-
 
   function audit(
     state,
@@ -166,19 +173,20 @@
     });
   }
 
-
-  /* =====================================================
-     USER VALIDATION
-     ===================================================== */
+  /*
+   * =======================================================
+   * USER VALIDATION
+   * =======================================================
+   */
 
   function validRole(role) {
     return ROLES.includes(role);
   }
 
-
   function validUser(user) {
     return Boolean(
       user &&
+      typeof user === "object" &&
       typeof user.id === "string" &&
       user.id.trim() &&
       validRole(user.role) &&
@@ -186,10 +194,23 @@
     );
   }
 
+  function sameParticipant(
+    first,
+    second
+  ) {
+    return Boolean(
+      first &&
+      second &&
+      first.id === second.id &&
+      first.role === second.role
+    );
+  }
 
-  /* =====================================================
-     LINK RULES
-     ===================================================== */
+  /*
+   * =======================================================
+   * LINK RULES
+   * =======================================================
+   */
 
   function getRule(linkType) {
     const rule =
@@ -204,13 +225,12 @@
     return rule;
   }
 
-
   function rolesMatch(
     rule,
     requester,
     target
   ) {
-    return (
+    return Boolean(
       rule.roles.includes(
         requester.role
       ) &&
@@ -220,7 +240,6 @@
       requester.role !== target.role
     );
   }
-
 
   function verifyParticipants(
     requester,
@@ -239,8 +258,10 @@
     }
 
     if (
-      requester.id ===
-      target.id
+      sameParticipant(
+        requester,
+        target
+      )
     ) {
       throw new Error(
         "Requester and target must be different participants."
@@ -250,25 +271,58 @@
     return true;
   }
 
-
-  /* =====================================================
-     VERIFIED RELATIONSHIP INTEGRATION
-     ===================================================== */
+  /*
+   * =======================================================
+   * VERIFIED EDUCATION RELATIONSHIP
+   * =======================================================
+   */
 
   function getRelationshipLayer() {
     return (
       window
-        .PacificEducationVerifiedEducationRelationship
-      || null
+        .PacificEducationVerifiedEducationRelationship ||
+      null
     );
   }
 
+  function requireRelationshipLayer() {
+    const layer =
+      getRelationshipLayer();
+
+    if (!layer) {
+      throw new Error(
+        "Verified education relationship layer is required."
+      );
+    }
+
+    if (
+      typeof layer.getUserRelationships !==
+      "function"
+    ) {
+      throw new Error(
+        "Verified education relationship API is missing."
+      );
+    }
+
+    return layer;
+  }
 
   function findVerifiedRelationship({
     requesterId,
     targetId,
     relationshipType
   }) {
+    if (
+      typeof requesterId !== "string" ||
+      !requesterId.trim() ||
+      typeof targetId !== "string" ||
+      !targetId.trim() ||
+      typeof relationshipType !== "string" ||
+      !relationshipType.trim()
+    ) {
+      return null;
+    }
+
     const layer =
       getRelationshipLayer();
 
@@ -302,46 +356,51 @@
         return null;
       }
 
-      return [
+      const combined = [
         ...requesterRelationships,
         ...targetRelationships
-      ].find(item =>
-        item &&
-        item.status === "verified" &&
-        item.relationshipType ===
-          relationshipType &&
-        (
+      ];
+
+      return (
+        combined.find(item =>
+          item &&
+          item.status === "verified" &&
+          item.relationshipType ===
+            relationshipType &&
           (
-            item.requesterId ===
-              requesterId &&
-            item.targetId ===
-              targetId
-          ) ||
-          (
-            item.requesterId ===
-              targetId &&
-            item.targetId ===
-              requesterId
+            (
+              item.requesterId ===
+                requesterId &&
+              item.targetId ===
+                targetId
+            ) ||
+            (
+              item.requesterId ===
+                targetId &&
+              item.targetId ===
+                requesterId
+            )
           )
-        )
-      ) || null;
+        ) || null
+      );
     } catch (_) {
       return null;
     }
   }
 
-
   function requireVerifiedRelationship(
     link
   ) {
-    const layer =
-      getRelationshipLayer();
-
-    if (!layer) {
+    if (
+      !link ||
+      typeof link !== "object"
+    ) {
       throw new Error(
-        "Verified education relationship layer is required."
+        "Valid education link required."
       );
     }
+
+    requireRelationshipLayer();
 
     const relationship =
       findVerifiedRelationship({
@@ -355,17 +414,27 @@
 
     if (!relationship) {
       throw new Error(
-        "Verified education relationship required before link approval."
+        "Verified education relationship required."
+      );
+    }
+
+    if (
+      typeof relationship.id !== "string" ||
+      !relationship.id.trim()
+    ) {
+      throw new Error(
+        "Verified relationship ID is missing."
       );
     }
 
     return relationship;
   }
 
-
-  /* =====================================================
-     REQUEST LINK
-     ===================================================== */
+  /*
+   * =======================================================
+   * REQUEST LINK
+   * =======================================================
+   */
 
   function requestLink({
     requester,
@@ -396,14 +465,6 @@
       );
     }
 
-    /*
-     * A request may exist while verification
-     * is still required.
-     *
-     * It cannot become active until the
-     * verified relationship exists.
-     */
-
     const verifiedRelationship =
       findVerifiedRelationship({
         requesterId:
@@ -427,10 +488,8 @@
         link.linkType ===
           linkType &&
         (
-          link.status ===
-            "active" ||
-          link.status ===
-            "pending"
+          link.status === "active" ||
+          link.status === "pending"
         )
       );
 
@@ -439,8 +498,7 @@
     }
 
     const link = {
-      id:
-        createId("link"),
+      id: createId("link"),
 
       requesterId:
         requester.id,
@@ -460,20 +518,25 @@
         relationship || null,
 
       /*
-       * Never trust an arbitrary relationshipId
-       * supplied by the caller.
+       * Caller-supplied relationship IDs
+       * are never trusted.
        */
       relationshipId:
         verifiedRelationship
           ? verifiedRelationship.id
           : null,
 
-      jurisdiction,
+      jurisdiction:
+        typeof jurisdiction === "string"
+          ? jurisdiction
+          : null,
 
-      evidenceReference,
+      evidenceReference:
+        typeof evidenceReference === "string"
+          ? evidenceReference
+          : null,
 
-      status:
-        "pending",
+      status: "pending",
 
       verificationStatus:
         verifiedRelationship
@@ -483,36 +546,26 @@
       requestedAt:
         new Date().toISOString(),
 
-      approvedAt:
-        null,
+      approvedAt: null,
 
-      approvedBy:
-        null,
+      approvedBy: null,
 
-      revokedAt:
-        null,
+      revokedAt: null,
 
-      revokedBy:
-        null,
+      revokedBy: null,
 
-      revokeReason:
-        null,
+      revokeReason: null,
 
-      permissions:
-        []
+      permissions: []
     };
 
-    state.links.push(
-      link
-    );
+    state.links.push(link);
 
     audit(
       state,
       "LINK_REQUESTED",
       {
-        linkId:
-          link.id,
-
+        linkId: link.id,
         linkType,
 
         relationshipVerified:
@@ -528,20 +581,15 @@
       }
     );
 
-    saveState(
-      state
-    );
+    saveState(state);
 
     window.dispatchEvent(
       new CustomEvent(
         "pacificEducationLinkRequested",
         {
           detail: {
-            linkId:
-              link.id,
-
+            linkId: link.id,
             linkType,
-
             verificationStatus:
               link.verificationStatus
           }
@@ -552,10 +600,11 @@
     return link;
   }
 
-
-  /* =====================================================
-     APPROVE LINK
-     ===================================================== */
+  /*
+   * =======================================================
+   * APPROVE LINK
+   * =======================================================
+   */
 
   function approveLink({
     linkId,
@@ -565,6 +614,15 @@
     if (!validUser(approver)) {
       throw new Error(
         "Approver authorization failed."
+      );
+    }
+
+    if (
+      typeof linkId !== "string" ||
+      !linkId.trim()
+    ) {
+      throw new Error(
+        "Valid link ID required."
       );
     }
 
@@ -585,8 +643,7 @@
     }
 
     if (
-      link.status !==
-        "pending"
+      link.status !== "pending"
     ) {
       throw new Error(
         "Only pending links can be approved."
@@ -594,22 +651,15 @@
     }
 
     const rule =
-      getRule(
-        link.linkType
-      );
+      getRule(link.linkType);
 
     /*
-     * ===================================================
-     * CRITICAL SECURITY GATE
-     * ===================================================
+     * CRITICAL SECURITY GATE:
      *
-     * Only the target participant may approve
-     * the pending link.
-     *
-     * This prevents the requester from approving
-     * their own request.
+     * Only the target participant may approve.
+     * The requester cannot approve their own
+     * request.
      */
-
     if (
       approver.id !==
         link.targetId ||
@@ -621,40 +671,32 @@
       );
     }
 
-    /*
-     * The underlying education relationship
-     * must also be verified.
-     */
-
     const verifiedRelationship =
       requireVerifiedRelationship(
         link
       );
 
     const requestedPermissions =
-      Array.isArray(
-        permissions
-      )
+      Array.isArray(permissions)
         ? permissions
         : [];
 
-    const approvedPermissions =
-      [
-        ...new Set(
-          requestedPermissions.filter(
-            permission =>
-              typeof permission ===
-                "string" &&
-              rule.permissions.includes(
-                permission
-              )
-          )
+    const approvedPermissions = [
+      ...new Set(
+        requestedPermissions.filter(
+          permission =>
+            typeof permission ===
+              "string" &&
+            rule.permissions.includes(
+              permission
+            )
         )
-      ];
+      )
+    ];
 
     if (
       approvedPermissions.length ===
-        0
+      0
     ) {
       throw new Error(
         "At least one valid permission is required for approval."
@@ -677,57 +719,40 @@
       new Date().toISOString();
 
     link.approvedBy = {
-      id:
-        approver.id,
-      role:
-        approver.role
+      id: approver.id,
+      role: approver.role
     };
 
-    link.revokedAt =
-      null;
-
-    link.revokedBy =
-      null;
-
-    link.revokeReason =
-      null;
+    link.revokedAt = null;
+    link.revokedBy = null;
+    link.revokeReason = null;
 
     audit(
       state,
       "LINK_APPROVED",
       {
-        linkId:
-          link.id,
-
+        linkId: link.id,
         linkType:
           link.linkType,
-
         approvedBy:
           approver.id,
-
         permissions:
-          approvedPermissions,
-
+          [...approvedPermissions],
         relationshipId:
           verifiedRelationship.id
       }
     );
 
-    saveState(
-      state
-    );
+    saveState(state);
 
     window.dispatchEvent(
       new CustomEvent(
         "pacificEducationLinkApproved",
         {
           detail: {
-            linkId:
-              link.id,
-
+            linkId: link.id,
             linkType:
               link.linkType,
-
             permissions:
               [...approvedPermissions]
           }
@@ -738,10 +763,11 @@
     return link;
   }
 
-
-  /* =====================================================
-     AUTHORIZATION
-     ===================================================== */
+  /*
+   * =======================================================
+   * ACCESS AUTHORIZATION
+   * =======================================================
+   */
 
   function authorizeAccess({
     linkId,
@@ -751,6 +777,15 @@
     if (!validUser(requester)) {
       throw new Error(
         "Requester authorization failed."
+      );
+    }
+
+    if (
+      typeof linkId !== "string" ||
+      !linkId.trim()
+    ) {
+      throw new Error(
+        "Valid link ID required."
       );
     }
 
@@ -781,25 +816,24 @@
     }
 
     if (
-      link.status !==
-        "active"
+      link.status !== "active"
     ) {
       throw new Error(
         "Education link is not active."
       );
     }
 
-    const participantIsRequester =
+    const requesterIsRequester =
       requester.id ===
         link.requesterId;
 
-    const participantIsTarget =
+    const requesterIsTarget =
       requester.id ===
         link.targetId;
 
     if (
-      !participantIsRequester &&
-      !participantIsTarget
+      !requesterIsRequester &&
+      !requesterIsTarget
     ) {
       throw new Error(
         "Access denied: requester is not a participant in this link."
@@ -807,314 +841,6 @@
     }
 
     const expectedRole =
-      participantIsRequester
+      requesterIsRequester
         ? link.requesterRole
-        : link.targetRole;
-
-    if (
-      requester.role !==
-        expectedRole
-    ) {
-      throw new Error(
-        "Access denied: participant role does not match the authorized link role."
-      );
-    }
-
-    /*
-     * Recheck the underlying verified relationship
-     * every time access is requested.
-     */
-
-    const verifiedRelationship =
-      requireVerifiedRelationship(
-        link
-      );
-
-    if (
-      !link.relationshipId ||
-      verifiedRelationship.id !==
-        link.relationshipId
-    ) {
-      throw new Error(
-        "Access denied: verified relationship no longer matches the authorized link."
-      );
-    }
-
-    if (
-      !link.permissions.includes(
-        requiredPermission
-      )
-    ) {
-      throw new Error(
-        "Access denied: required permission is not authorized."
-      );
-    }
-
-    return {
-      authorized:
-        true,
-
-      linkId:
-        link.id,
-
-      linkType:
-        link.linkType,
-
-      permission:
-        requiredPermission,
-
-      requesterId:
-        requester.id,
-
-      requesterRole:
-        requester.role,
-
-      relationshipId:
-        verifiedRelationship.id,
-
-      checkedAt:
-        new Date().toISOString()
-    };
-  }
-
-
-  /* =====================================================
-     REVOKE LINK
-     ===================================================== */
-
-  function revokeLink({
-    linkId,
-    revoker,
-    reason = ""
-  }) {
-    if (!validUser(revoker)) {
-      throw new Error(
-        "Revoker authorization failed."
-      );
-    }
-
-    const state =
-      loadState();
-
-    const link =
-      state.links.find(
-        item =>
-          item &&
-          item.id === linkId
-      );
-
-    if (!link) {
-      throw new Error(
-        "Education link not found."
-      );
-    }
-
-    if (
-      link.status ===
-        "revoked"
-    ) {
-      return link;
-    }
-
-    /*
-     * Only an actual participant may revoke.
-     *
-     * There is intentionally no special Ministry
-     * bypass here.
-     */
-
-    const isRequester =
-      revoker.id ===
-        link.requesterId &&
-      revoker.role ===
-        link.requesterRole;
-
-    const isTarget =
-      revoker.id ===
-        link.targetId &&
-      revoker.role ===
-        link.targetRole;
-
-    if (
-      !isRequester &&
-      !isTarget
-    ) {
-      throw new Error(
-        "Revocation authority denied: only a link participant may revoke this link."
-      );
-    }
-
-    link.status =
-      "revoked";
-
-    link.permissions =
-      [];
-
-    link.revokedAt =
-      new Date().toISOString();
-
-    link.revokedBy = {
-      id:
-        revoker.id,
-      role:
-        revoker.role
-    };
-
-    link.revokeReason =
-      typeof reason ===
-        "string"
-        ? reason.trim()
-        : "";
-
-    audit(
-      state,
-      "LINK_REVOKED",
-      {
-        linkId:
-          link.id,
-
-        revokedBy:
-          revoker.id,
-
-        revokedByRole:
-          revoker.role,
-
-        reason:
-          link.revokeReason
-      }
-    );
-
-    saveState(
-      state
-    );
-
-    window.dispatchEvent(
-      new CustomEvent(
-        "pacificEducationLinkRevoked",
-        {
-          detail: {
-            linkId:
-              link.id,
-
-            revokedBy:
-              revoker.id
-          }
-        }
-      )
-    );
-
-    return link;
-  }
-
-
-  /* =====================================================
-     USER LINKS
-     ===================================================== */
-
-  function getUserLinks(user) {
-    if (!validUser(user)) {
-      throw new Error(
-        "User authorization failed."
-      );
-    }
-
-    const state =
-      loadState();
-
-    return state.links.filter(
-      link =>
-        link &&
-        (
-          link.requesterId ===
-            user.id ||
-          link.targetId ===
-            user.id
-        )
-    );
-  }
-
-
-  /* =====================================================
-     STATUS
-     ===================================================== */
-
-  function getStatus() {
-    return {
-      version:
-        VERSION,
-
-      participantOnlyApproval:
-        true,
-
-      participantOnlyRevocation:
-        true,
-
-      verifiedRelationshipRequired:
-        true,
-
-      relationshipRecheckedAtAccess:
-        true,
-
-      automaticInformationAccess:
-        false,
-
-      prototypeOnly:
-        true,
-
-      backendRequiredForProduction:
-        true
-    };
-  }
-
-
-  /* =====================================================
-     PROTOTYPE RESET
-     ===================================================== */
-
-  function resetPrototypeState() {
-    localStorage.removeItem(
-      STORAGE_KEY
-    );
-
-    window.dispatchEvent(
-      new CustomEvent(
-        "pacificEducationSecureLinkStateReset"
-      )
-    );
-
-    return true;
-  }
-
-
-  /* =====================================================
-     PUBLIC API
-     ===================================================== */
-
-  const publicApi =
-    Object.freeze({
-      VERSION,
-
-      ROLES,
-
-      LINK_RULES,
-
-      requestLink,
-
-      approveLink,
-
-      authorizeAccess,
-
-      revokeLink,
-
-      getUserLinks,
-
-      getStatus,
-
-      resetPrototypeState
-    });
-
-
-  window.PacificEducationSecureLinkAuthorization =
-    publicApi;
-
-})();
+        :
