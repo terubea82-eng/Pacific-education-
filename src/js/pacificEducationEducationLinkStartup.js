@@ -2,29 +2,29 @@
  * =========================================================
  * PACIFIC EDUCATION
  * EDUCATION LINK STARTUP
+ * VERSION 1.2.0
  * =========================================================
- *
- * Version: 1.1.0
  *
  * Secure startup order:
  *
- * Identity
- *   ↓
  * Verified Education Relationship
- *   ↓
+ *        ↓
  * Secure Link Authorization
- *   ↓
+ *        ↓
  * Secure Communication
- *   ↓
+ *        ↓
  * Education Link Bridge
- *   ↓
+ *        ↓
  * Education Link Center
  *
  * Student • Teacher • Parent • Ministry
  *
  * Security:
- * - Verification layer loads before authorization.
- * - Authorization cannot activate an unverified relationship.
+ * - Required APIs are verified before readiness.
+ * - Verified relationship loads before authorization.
+ * - Authorization loads before communication.
+ * - Communication loads before bridge.
+ * - Bridge loads before center.
  * - Link availability does not grant information access.
  * - No passwords, API keys or tokens are exposed.
  * - Production backend authorization is required.
@@ -34,173 +34,207 @@
  */
 
 (() => {
-
     "use strict";
 
-
-    /* =====================================================
-       VERSION
-    ===================================================== */
-
-    const VERSION = "1.1.0";
-
-
-    /* =====================================================
-       MODULE PATHS
-    ===================================================== */
+    const VERSION = "1.2.0";
 
     const MODULES = Object.freeze([
+        {
+            path:
+                "js/pacificEducationVerifiedEducationRelationship.js",
+            global:
+                "PacificEducationVerifiedEducationRelationship",
+            requiredMethods: [
+                "getUserRelationships"
+            ]
+        },
 
-        /*
-         * Verified Education Relationship.
-         *
-         * MUST load before Secure Link Authorization.
-         */
-        "js/pacificEducationVerifiedEducationRelationship.js",
+        {
+            path:
+                "../js/pacificEducationSecureLinkAuthorization.js",
+            global:
+                "PacificEducationSecureLinkAuthorization",
+            requiredMethods: [
+                "requestLink",
+                "approveLink",
+                "authorizeAccess",
+                "revokeLink",
+                "getUserLinks"
+            ]
+        },
 
-        /*
-         * Secure Link Authorization.
-         */
-        "../js/pacificEducationSecureLinkAuthorization.js",
+        {
+            path:
+                "../js/pacificEducationSecureCommunication.js",
+            global:
+                "PacificEducationSecureCommunication",
+            requiredMethods: [
+                "createConversation",
+                "sendMessage",
+                "getConversation",
+                "closeConversation"
+            ]
+        },
 
-        /*
-         * Secure Communication.
-         */
-        "../js/pacificEducationSecureCommunication.js",
+        {
+            path:
+                "js/pacificEducationEducationLinkBridge.js",
+            global:
+                "PacificEducationEducationLinkBridge",
+            requiredMethods: [
+                "requestConnection",
+                "approveConnection",
+                "checkAccess",
+                "revokeConnection"
+            ]
+        },
 
-        /*
-         * Education Link Bridge.
-         */
-        "js/pacificEducationEducationLinkBridge.js",
-
-        /*
-         * Education Link Center.
-         */
-        "js/pacificEducationEducationLinkCenter.js"
-
+        {
+            path:
+                "js/pacificEducationEducationLinkCenter.js",
+            global:
+                "PacificEducationEducationLinkCenter",
+            requiredMethods: [
+                "requestLink",
+                "approveLink",
+                "checkAccess",
+                "revokeLink",
+                "getUserLinks",
+                "getDashboardModel",
+                "getStatus"
+            ]
+        }
     ]);
 
-
-    /* =====================================================
-       STARTUP STATE
-    ===================================================== */
-
     let started = false;
-
     let loading = false;
 
-
-    /* =====================================================
-       FIND SCRIPT
-    ===================================================== */
-
-    function findScript(src) {
-
-        return document.querySelector(
-            `script[src="${src}"]`
-        );
-
+    function getGlobal(name) {
+        return window[name] || null;
     }
 
+    function moduleReady(module) {
+        const target = getGlobal(module.global);
 
-    /* =====================================================
-       LOAD SCRIPT
-    ===================================================== */
+        if (!target) {
+            return false;
+        }
 
-    function loadScript(src) {
+        return module.requiredMethods.every(
+            method =>
+                typeof target[method] === "function"
+        );
+    }
 
+    function findScript(src) {
+        return Array.from(
+            document.querySelectorAll("script[src]")
+        ).find(
+            script =>
+                script.getAttribute("src") === src
+        ) || null;
+    }
+
+    function loadScript(module) {
         return new Promise(
             (resolve, reject) => {
 
-                const existing =
-                    findScript(src);
+                /*
+                 * If the module is already available
+                 * with its required API, do not wait
+                 * for a load event that may already have
+                 * happened.
+                 */
+                if (moduleReady(module)) {
+                    resolve(module.path);
+                    return;
+                }
 
+                let existing =
+                    findScript(module.path);
 
                 /*
-                 * Script already exists.
+                 * Remove a previously failed loader
+                 * script so a later retry can work.
+                 */
+                if (
+                    existing &&
+                    existing.dataset &&
+                    existing.dataset
+                        .pacificEducationLoadFailed ===
+                        "true"
+                ) {
+                    existing.remove();
+                    existing = null;
+                }
+
+                /*
+                 * Existing script is present and may
+                 * still be loading.
                  */
                 if (existing) {
 
-                    /*
-                     * Already marked as loaded.
-                     */
-                    if (
-                        existing.dataset &&
+                    const finish = () => {
                         existing.dataset
-                            .pacificEducationLoaded ===
-                            "true"
-                    ) {
+                            .pacificEducationLoaded =
+                            "true";
 
-                        resolve(src);
+                        if (moduleReady(module)) {
+                            resolve(module.path);
+                        } else {
+                            reject(
+                                new Error(
+                                    `Loaded ${module.path} ` +
+                                    "but its required API is unavailable."
+                                )
+                            );
+                        }
+                    };
 
-                        return;
+                    const fail = () => {
+                        existing.dataset
+                            .pacificEducationLoadFailed =
+                            "true";
 
-                    }
+                        reject(
+                            new Error(
+                                `Failed to load ${module.path}`
+                            )
+                        );
+                    };
 
-
-                    /*
-                     * Existing script may still
-                     * be loading.
-                     */
                     existing.addEventListener(
                         "load",
-                        () => {
-
-                            existing.dataset
-                                .pacificEducationLoaded =
-                                "true";
-
-                            resolve(src);
-
-                        },
-                        {
-                            once: true
-                        }
+                        finish,
+                        { once: true }
                     );
-
 
                     existing.addEventListener(
                         "error",
-                        () => {
-
-                            reject(
-                                new Error(
-                                    `Failed to load ${src}`
-                                )
-                            );
-
-                        },
-                        {
-                            once: true
-                        }
+                        fail,
+                        { once: true }
                     );
 
-                    return;
+                    /*
+                     * Protect against a script that has
+                     * already completed without exposing
+                     * a usable load event to this listener.
+                     */
+                    if (moduleReady(module)) {
+                        resolve(module.path);
+                    }
 
+                    return;
                 }
 
-
-                /*
-                 * Create script element.
-                 */
                 const script =
                     document.createElement(
                         "script"
                     );
 
-
-                script.src = src;
-
-
-                /*
-                 * Preserve dependency order.
-                 */
+                script.src = module.path;
                 script.async = false;
 
-
-                /*
-                 * Successful loading.
-                 */
                 script.addEventListener(
                     "load",
                     () => {
@@ -209,325 +243,192 @@
                             .pacificEducationLoaded =
                             "true";
 
-                        resolve(src);
+                        if (moduleReady(module)) {
+                            resolve(module.path);
+                        } else {
+                            script.dataset
+                                .pacificEducationLoadFailed =
+                                "true";
 
+                            reject(
+                                new Error(
+                                    `Loaded ${module.path} ` +
+                                    "but its required API is unavailable."
+                                )
+                            );
+                        }
                     },
-                    {
-                        once: true
-                    }
+                    { once: true }
                 );
 
-
-                /*
-                 * Loading failure.
-                 */
                 script.addEventListener(
                     "error",
                     () => {
 
+                        script.dataset
+                            .pacificEducationLoadFailed =
+                            "true";
+
                         reject(
                             new Error(
-                                `Failed to load ${src}`
+                                `Failed to load ${module.path}`
                             )
                         );
-
                     },
-                    {
-                        once: true
-                    }
+                    { once: true }
                 );
 
+                const parent =
+                    document.head ||
+                    document.documentElement ||
+                    document.body;
 
-                /*
-                 * Add script to document.
-                 */
-                document.body.appendChild(
-                    script
-                );
+                if (!parent) {
+                    reject(
+                        new Error(
+                            "Document container unavailable."
+                        )
+                    );
+                    return;
+                }
 
+                parent.appendChild(script);
             }
         );
-
     }
-
-
-    /* =====================================================
-       CHECK REQUIRED MODULES
-    ===================================================== */
 
     function checkModules() {
+        const status = {};
 
-        const status = {
-
-            relationship:
-                Boolean(
-                    window
-                        .PacificEducationVerifiedEducationRelationship
-                ),
-
-            authorization:
-                Boolean(
-                    window
-                        .PacificEducationSecureLinkAuthorization
-                ),
-
-            communication:
-                Boolean(
-                    window
-                        .PacificEducationSecureCommunication
-                ),
-
-            bridge:
-                Boolean(
-                    window
-                        .PacificEducationEducationLinkBridge
-                ),
-
-            center:
-                Boolean(
-                    window
-                        .PacificEducationEducationLinkCenter
-                )
-
-        };
-
+        for (const module of MODULES) {
+            status[module.global] =
+                moduleReady(module);
+        }
 
         status.ready =
-            status.relationship &&
-            status.authorization &&
-            status.communication &&
-            status.bridge &&
-            status.center;
-
+            MODULES.every(
+                module =>
+                    status[module.global] === true
+            );
 
         return Object.freeze(status);
-
     }
 
-
-    /* =====================================================
-       DISPATCH READY EVENT
-    ===================================================== */
-
     function dispatchReady(status) {
-
         window.dispatchEvent(
-
             new CustomEvent(
                 "pacificEducationEducationLinkReady",
                 {
-
                     detail: {
-
-                        version:
-                            VERSION,
-
-                        relationshipLoaded:
-                            status.relationship,
-
-                        authorizationLoaded:
-                            status.authorization,
-
-                        communicationLoaded:
-                            status.communication,
-
-                        bridgeLoaded:
-                            status.bridge,
-
-                        centerLoaded:
-                            status.center,
-
-                        ready:
-                            status.ready,
-
+                        version: VERSION,
+                        modules: status,
+                        ready: true,
                         verifiedRelationshipRequired:
                             true,
-
+                        authorizationRequired:
+                            true,
+                        permissionRequired:
+                            true,
+                        automaticInformationAccess:
+                            false,
                         productionBackendRequired:
                             true
-
                     }
-
                 }
-
             )
-
         );
-
     }
-
-
-    /* =====================================================
-       DISPATCH ERROR EVENT
-    ===================================================== */
 
     function dispatchError(
         error,
         status = null
     ) {
-
         const message =
             error &&
             error.message
                 ? error.message
                 : String(error);
 
-
         window.dispatchEvent(
-
             new CustomEvent(
                 "pacificEducationEducationLinkError",
                 {
-
                     detail: {
-
-                        version:
-                            VERSION,
-
-                        error:
-                            message,
-
-                        status
-
+                        version: VERSION,
+                        error: message,
+                        status,
+                        ready: false,
+                        verifiedRelationshipRequired:
+                            true,
+                        productionBackendRequired:
+                            true
                     }
-
                 }
-
             )
-
         );
-
     }
-
-
-    /* =====================================================
-       START EDUCATION LINK
-    ===================================================== */
 
     async function start() {
 
-        /*
-         * Prevent duplicate startup.
-         */
         if (started) {
-
             return getStatus();
-
         }
 
-
-        /*
-         * Prevent simultaneous startup.
-         */
         if (loading) {
-
             return getStatus();
-
         }
-
 
         loading = true;
-
 
         try {
 
             /*
-             * Load modules sequentially.
-             *
-             * This guarantees the verified relationship
-             * layer loads before authorization.
+             * Load strictly in security dependency order.
              */
-            for (
-                const modulePath
-                of MODULES
-            ) {
-
-                await loadScript(
-                    modulePath
-                );
-
+            for (const module of MODULES) {
+                await loadScript(module);
             }
 
-
-            /*
-             * Verify modules after loading.
-             */
             const status =
                 checkModules();
 
-
-            /*
-             * Never claim readiness when
-             * a required module is missing.
-             */
             if (!status.ready) {
 
-                console.error(
-                    "Pacific Education Education Link " +
-                    "startup incomplete.",
-                    status
-                );
-
-
-                dispatchError(
+                const error =
                     new Error(
                         "One or more Education Link " +
-                        "modules are unavailable."
-                    ),
+                        "modules failed API verification."
+                    );
+
+                dispatchError(
+                    error,
                     status
                 );
 
-
                 return Object.freeze({
-
-                    version:
-                        VERSION,
-
-                    started:
-                        false,
-
-                    loading:
-                        false,
-
-                    ready:
-                        false,
-
-                    modules:
-                        status,
-
+                    version: VERSION,
+                    started: false,
+                    loading: false,
+                    ready: false,
+                    modules: status,
+                    error: error.message,
                     verifiedRelationshipRequired:
                         true,
-
                     productionBackendRequired:
                         true
-
                 });
-
             }
 
-
-            /*
-             * Startup successful.
-             */
             started = true;
 
+            dispatchReady(status);
 
-            /*
-             * Notify the application.
-             */
-            dispatchReady(
-                status
-            );
-
-
-            /*
-             * Return final status.
-             */
             return getStatus();
 
-        }
+        } catch (error) {
 
-        catch (error) {
+            const status =
+                checkModules();
 
             console.error(
                 "Pacific Education Education Link " +
@@ -535,84 +436,66 @@
                 error
             );
 
-
             dispatchError(
-                error
+                error,
+                status
             );
 
-
             return Object.freeze({
-
-                version:
-                    VERSION,
-
-                started:
-                    false,
-
-                loading:
-                    false,
-
-                ready:
-                    false,
-
+                version: VERSION,
+                started: false,
+                loading: false,
+                ready: false,
+                modules: status,
                 error:
                     error &&
                     error.message
                         ? error.message
                         : String(error),
-
                 verifiedRelationshipRequired:
                     true,
-
                 productionBackendRequired:
                     true
-
             });
 
-        }
-
-        finally {
-
+        } finally {
             loading = false;
-
         }
-
     }
 
-
-    /* =====================================================
-       GET STATUS
-    ===================================================== */
-
     function getStatus() {
-
         const modules =
             checkModules();
 
-
         return Object.freeze({
-
-            version:
-                VERSION,
-
+            version: VERSION,
             started,
-
             loading,
 
-            relationshipLoaded:
-                modules.relationship,
+            relationshipReady:
+                modules
+                    .PacificEducationVerifiedEducationRelationship ===
+                true,
 
-            authorizationLoaded:
-                modules.authorization,
+            authorizationReady:
+                modules
+                    .PacificEducationSecureLinkAuthorization ===
+                true,
 
-            communicationLoaded:
-                modules.communication,
+            communicationReady:
+                modules
+                    .PacificEducationSecureCommunication ===
+                true,
 
-            bridgeLoaded:
-                modules.bridge,
+            bridgeReady:
+                modules
+                    .PacificEducationEducationLinkBridge ===
+                true,
 
-            centerLoaded:
-                modules.center,
+            centerReady:
+                modules
+                    .PacificEducationEducationLinkCenter ===
+                true,
 
             ready:
                 Boolean(
@@ -623,33 +506,28 @@
             verifiedRelationshipRequired:
                 true,
 
+            authorizationRequired:
+                true,
+
+            permissionRequired:
+                true,
+
             automaticInformationAccess:
                 false,
 
+            prototypeOnly:
+                true,
+
             productionBackendRequired:
                 true
-
         });
-
     }
 
-
-    /* =====================================================
-       PUBLIC STARTUP API
-    ===================================================== */
-
     window.PacificEducationEducationLinkStartup =
-
         Object.freeze({
-
-            version:
-                VERSION,
-
+            version: VERSION,
             start,
-
             getStatus
-
         });
-
 
 })();
