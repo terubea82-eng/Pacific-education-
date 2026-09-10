@@ -2,12 +2,12 @@
    PACIFIC EDUCATION
    TEACHER & PARENT DASHBOARDS
    STUDENT PROGRESS STORAGE
-   VERSION 1.1.0
+   VERSION 1.2.0
 ========================================= */
 
 
 /* =========================================
-   GET STUDENT PROGRESS
+   GET REAL STUDENT PROGRESS
 ========================================= */
 
 function getPacificStudentData() {
@@ -51,20 +51,26 @@ function getPacificStudentData() {
         currentDay:
             "Day " + currentDayNumber,
 
+        currentDayNumber:
+            currentDayNumber,
+
         lessonsCompleted:
             lessonsCompleted,
 
         alphabetAssessment:
-            localStorage.getItem("alphabetAssessment") ||
-            "Not completed",
+            localStorage.getItem(
+                "alphabetAssessment"
+            ) || "Not completed",
 
         phonicsAssessment:
-            localStorage.getItem("phonicsAssessment") ||
-            "Not completed",
+            localStorage.getItem(
+                "phonicsAssessment"
+            ) || "Not completed",
 
         learningStatus:
-            localStorage.getItem("learningStatus") ||
-            "Monitoring"
+            localStorage.getItem(
+                "learningStatus"
+            ) || "Monitoring"
 
     };
 
@@ -243,10 +249,52 @@ function refreshAllDashboards() {
 
 
 /* =========================================
+   EXIT OWNER TEST MODE
+========================================= */
+
+function exitOwnerTestMode() {
+
+    localStorage.removeItem(
+        "pacificOwnerTestDay"
+    );
+
+}
+
+
+/* =========================================
    COMPLETE DAILY LESSON
 ========================================= */
 
 function completeLesson() {
+
+    /*
+       Owner testing must never count as
+       a real learner lesson.
+    */
+
+    if (
+        localStorage.getItem(
+            "pacificOwnerTestDay"
+        )
+    ) {
+
+        exitOwnerTestMode();
+
+        if (
+            typeof displayDailyLesson ===
+            "function"
+        ) {
+
+            displayDailyLesson();
+
+        }
+
+        refreshAllDashboards();
+
+        return;
+
+    }
+
 
     let currentDayNumber =
         parseInt(
@@ -264,6 +312,11 @@ function completeLesson() {
             10
         );
 
+
+    /* =========================================
+       VALIDATE DAY
+    ========================================= */
+
     if (
         isNaN(currentDayNumber) ||
         currentDayNumber < 1
@@ -275,6 +328,11 @@ function completeLesson() {
         currentDayNumber = 365;
     }
 
+
+    /* =========================================
+       VALIDATE LESSON COUNT
+    ========================================= */
+
     if (
         isNaN(lessonsCompleted) ||
         lessonsCompleted < 0
@@ -284,7 +342,7 @@ function completeLesson() {
 
 
     /* =========================================
-       PREVENT REPEATED COMPLETION AFTER DAY 365
+       DAY 365 COMPLETE
     ========================================= */
 
     if (currentDayNumber >= 365) {
@@ -301,11 +359,12 @@ function completeLesson() {
         refreshAllDashboards();
 
         return;
+
     }
 
 
     /* =========================================
-       COMPLETE TODAY'S LESSON
+       RECORD REAL LESSON
     ========================================= */
 
     lessonsCompleted++;
@@ -323,7 +382,7 @@ function completeLesson() {
 
 
     /* =========================================
-       MAXIMUM 365 DAYS
+       MAXIMUM DAY 365
     ========================================= */
 
     if (currentDayNumber > 365) {
@@ -334,7 +393,7 @@ function completeLesson() {
 
 
     /* =========================================
-       SAVE PROGRESS
+       SAVE REAL PROGRESS
     ========================================= */
 
     localStorage.setItem(
@@ -361,7 +420,7 @@ function completeLesson() {
 
 
     /* =========================================
-       REFRESH DAILY LESSON
+       REFRESH LESSON
     ========================================= */
 
     if (
@@ -372,6 +431,174 @@ function completeLesson() {
         displayDailyLesson();
 
     }
+
+}
+
+
+/* =========================================
+   OWNER TEST MODE
+   IMPORTANT:
+   DOES NOT CHANGE REAL PROGRESS.
+========================================= */
+
+function setOwnerTestDay(dayNumber) {
+
+    const testDay =
+        parseInt(
+            dayNumber,
+            10
+        );
+
+
+    /* =========================================
+       VALIDATE TEST DAY
+    ========================================= */
+
+    if (
+        isNaN(testDay) ||
+        testDay < 1 ||
+        testDay > 365
+    ) {
+
+        console.warn(
+            "Invalid Owner Test Day:",
+            dayNumber
+        );
+
+        return;
+
+    }
+
+
+    /* =========================================
+       SAVE TEST DAY SEPARATELY
+    ========================================= */
+
+    localStorage.setItem(
+        "pacificOwnerTestDay",
+        testDay.toString()
+    );
+
+
+    /*
+       Save the learner's real progress before
+       temporarily asking the existing lesson
+       engine to display the test lesson.
+    */
+
+    const realDay =
+        localStorage.getItem(
+            "currentDayNumber"
+        );
+
+    const realCurrentDay =
+        localStorage.getItem(
+            "currentDay"
+        );
+
+
+    /* =========================================
+       TEMPORARY DISPLAY ONLY
+    ========================================= */
+
+    localStorage.setItem(
+        "currentDayNumber",
+        testDay.toString()
+    );
+
+    localStorage.setItem(
+        "currentDay",
+        "Day " + testDay
+    );
+
+
+    if (
+        typeof displayDailyLesson ===
+        "function"
+    ) {
+
+        displayDailyLesson();
+
+    }
+
+
+    /* =========================================
+       RESTORE REAL LEARNER PROGRESS
+    ========================================= */
+
+    if (realDay !== null) {
+
+        localStorage.setItem(
+            "currentDayNumber",
+            realDay
+        );
+
+    } else {
+
+        localStorage.removeItem(
+            "currentDayNumber"
+        );
+
+    }
+
+
+    if (realCurrentDay !== null) {
+
+        localStorage.setItem(
+            "currentDay",
+            realCurrentDay
+        );
+
+    } else {
+
+        localStorage.removeItem(
+            "currentDay"
+        );
+
+    }
+
+
+    /* =========================================
+       REFRESH DASHBOARDS FROM REAL DATA
+    ========================================= */
+
+    refreshAllDashboards();
+
+
+    console.info(
+        "Pacific Education Owner Test Mode:",
+        "Day " + testDay,
+        "Real learner progress preserved."
+    );
+
+}
+
+
+/* =========================================
+   GET OWNER TEST DAY
+========================================= */
+
+function getOwnerTestDay() {
+
+    const testDay =
+        parseInt(
+            localStorage.getItem(
+                "pacificOwnerTestDay"
+            ) || "",
+            10
+        );
+
+    if (
+        isNaN(testDay) ||
+        testDay < 1 ||
+        testDay > 365
+    ) {
+
+        return null;
+
+    }
+
+    return testDay;
 
 }
 
@@ -391,79 +618,41 @@ document.addEventListener(
 
 
 /* =========================================
-   OWNER TEST MODE
+   PUBLIC DASHBOARD API
 ========================================= */
 
-function setOwnerTestDay(dayNumber) {
+window.PacificEducationDashboards =
+    Object.freeze({
 
-    let testDay =
-        parseInt(
-            dayNumber,
-            10
-        );
+        version: "1.2.0",
 
-    if (
-        isNaN(testDay) ||
-        testDay < 1 ||
-        testDay > 365
-    ) {
+        getStudentData:
+            getPacificStudentData,
 
-        return;
+        refreshTeacher:
+            refreshTeacherDashboard,
 
-    }
+        refreshParent:
+            refreshParentDashboard,
 
+        refreshAll:
+            refreshAllDashboards,
 
-    /* =========================================
-       SAVE TEST DAY
-    ========================================= */
+        completeLesson:
+            completeLesson,
 
-    localStorage.setItem(
-        "currentDayNumber",
-        testDay.toString()
-    );
+        setOwnerTestDay:
+            setOwnerTestDay,
 
-    localStorage.setItem(
-        "currentDay",
-        "Day " + testDay
-    );
+        getOwnerTestDay:
+            getOwnerTestDay,
 
+        exitOwnerTestMode:
+            exitOwnerTestMode
 
-    /* =========================================
-       REFRESH DASHBOARDS
-    ========================================= */
-
-    refreshAllDashboards();
-
-
-    /* =========================================
-       REFRESH DAILY LESSON
-    ========================================= */
-
-    if (
-        typeof displayDailyLesson ===
-        "function"
-    ) {
-
-        displayDailyLesson();
-
-    }
-
-}
+    });
 
 
 /* =========================================
-   END OF DASHBOARDS ENGINE
+   END DASHBOARDS ENGINE
 ========================================= */
-
-/* =========================================
-   PACIFIC EDUCATION DASHBOARDS API
-========================================= */
-
-window.PacificEducationDashboards = Object.freeze({
-    version: "1.0.0",
-    getStudentData: getPacificStudentData,
-    refreshTeacher: refreshTeacherDashboard,
-    refreshParent: refreshParentDashboard,
-    refreshAll: refreshAllDashboards,
-    completeLesson: completeLesson
-});
