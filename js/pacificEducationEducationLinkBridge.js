@@ -1,7 +1,7 @@
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK BRIDGE
- * Version 1.1.0
+ * Version 1.2.0
  *
  * Connects:
  * Core-facing education link services
@@ -10,14 +10,23 @@
  *
  * Student • Teacher • Parent • Ministry
  *
+ * Security sequence:
+ * Verified Relationship
+ * → Active Approved Link
+ * → Permission
+ * → Communication
+ *
  * Prototype only.
  * Production authorization MUST remain server-side.
+ *
+ * No passwords, API keys, access tokens,
+ * payment secrets, or private credentials.
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
 
   function getAuthorization() {
     return window.PacificEducationSecureLinkAuthorization || null;
@@ -43,26 +52,81 @@
       );
     }
 
-    return { authorization, communication };
+    return {
+      authorization,
+      communication
+    };
+  }
+
+  function validUser(user) {
+    return Boolean(
+      user &&
+      typeof user === "object" &&
+      typeof user.id === "string" &&
+      user.id.trim() &&
+      typeof user.role === "string" &&
+      user.role.trim() &&
+      user.authorized === true
+    );
   }
 
   function requestConnection(request) {
     const { authorization } = requireModules();
+
+    if (
+      !request ||
+      typeof request !== "object"
+    ) {
+      throw new Error(
+        "Valid education link request is required."
+      );
+    }
+
     return authorization.requestLink(request);
   }
 
   function approveConnection(request) {
     const { authorization } = requireModules();
+
+    if (
+      !request ||
+      typeof request !== "object"
+    ) {
+      throw new Error(
+        "Valid education link approval request is required."
+      );
+    }
+
     return authorization.approveLink(request);
   }
 
   function checkAccess(request) {
     const { authorization } = requireModules();
+
+    if (
+      !request ||
+      typeof request !== "object"
+    ) {
+      throw new Error(
+        "Valid access request is required."
+      );
+    }
+
     return authorization.authorizeAccess(request);
   }
 
   function revokeConnection(request) {
     const { authorization } = requireModules();
+
+    if (
+      !request ||
+      typeof request !== "object"
+    ) {
+      throw new Error(
+        "Valid education link revocation request is required."
+      );
+    }
+
     return authorization.revokeLink(request);
   }
 
@@ -72,7 +136,10 @@
     requiredPermission = "communication",
     recipient
   }) {
-    const { authorization, communication } = requireModules();
+    const {
+      authorization,
+      communication
+    } = requireModules();
 
     if (!linkId) {
       throw new Error(
@@ -80,20 +147,37 @@
       );
     }
 
-    const access = authorization.authorizeAccess({
-      linkId,
-      requester,
-      requiredPermission
-    });
+    if (
+      !validUser(requester) ||
+      !validUser(recipient)
+    ) {
+      throw new Error(
+        "Authorized requester and recipient are required."
+      );
+    }
 
-    if (!access || access.allowed !== true) {
-      throw new Error("Communication access denied.");
+    const access =
+      authorization.authorizeAccess({
+        linkId,
+        requester,
+        requiredPermission
+      });
+
+    if (
+      !access ||
+      access.allowed !== true
+    ) {
+      throw new Error(
+        "Communication access denied."
+      );
     }
 
     return communication.createConversation(
       requester,
       recipient,
-      { linkId }
+      {
+        linkId
+      }
     );
   }
 
@@ -104,7 +188,10 @@
     recipient,
     text
   }) {
-    const { authorization, communication } = requireModules();
+    const {
+      authorization,
+      communication
+    } = requireModules();
 
     if (!linkId) {
       throw new Error(
@@ -118,14 +205,29 @@
       );
     }
 
-    const access = authorization.authorizeAccess({
-      linkId,
-      requester: sender,
-      requiredPermission: "communication"
-    });
+    if (
+      !validUser(sender) ||
+      !validUser(recipient)
+    ) {
+      throw new Error(
+        "Authorized sender and recipient are required."
+      );
+    }
 
-    if (!access || access.allowed !== true) {
-      throw new Error("Message access denied.");
+    const access =
+      authorization.authorizeAccess({
+        linkId,
+        requester: sender,
+        requiredPermission: "communication"
+      });
+
+    if (
+      !access ||
+      access.allowed !== true
+    ) {
+      throw new Error(
+        "Message access denied."
+      );
     }
 
     return communication.sendMessage({
@@ -137,8 +239,18 @@
     });
   }
 
-  function getConversation(conversationId, requester) {
-    const { communication } = requireModules();
+  function getConversation(
+    conversationId,
+    requester
+  ) {
+    const { communication } =
+      requireModules();
+
+    if (!validUser(requester)) {
+      throw new Error(
+        "Authorized requester is required."
+      );
+    }
 
     return communication.getConversation(
       conversationId,
@@ -146,8 +258,18 @@
     );
   }
 
-  function closeConversation(conversationId, requester) {
-    const { communication } = requireModules();
+  function closeConversation(
+    conversationId,
+    requester
+  ) {
+    const { communication } =
+      requireModules();
+
+    if (!validUser(requester)) {
+      throw new Error(
+        "Authorized requester is required."
+      );
+    }
 
     return communication.closeConversation(
       conversationId,
@@ -155,38 +277,75 @@
     );
   }
 
-  function getUserLinks(userId) {
-    const { authorization } = requireModules();
+  /*
+   * IMPORTANT:
+   *
+   * Secure Link Authorization requires the
+   * complete validated user object for getUserLinks().
+   *
+   * The previous bridge incorrectly passed only
+   * userId. That caused an API contract mismatch.
+   *
+   * We now require the same validated user object
+   * used by the authorization layer.
+   */
+  function getUserLinks(user) {
+    const { authorization } =
+      requireModules();
 
-    return authorization.getUserLinks(userId);
+    if (!validUser(user)) {
+      throw new Error(
+        "Valid authorized user object is required."
+      );
+    }
+
+    return authorization.getUserLinks(
+      user
+    );
   }
 
   function getStatus() {
-    const authorization = getAuthorization();
-    const communication = getCommunication();
+    const authorization =
+      getAuthorization();
+
+    const communication =
+      getCommunication();
 
     return Object.freeze({
       version: VERSION,
-      authorizationLoaded: Boolean(authorization),
-      communicationLoaded: Boolean(communication),
-      ready: Boolean(
-        authorization && communication
-      ),
-      productionBackendRequired: true
+
+      authorizationLoaded:
+        Boolean(authorization),
+
+      communicationLoaded:
+        Boolean(communication),
+
+      ready:
+        Boolean(
+          authorization &&
+          communication
+        ),
+
+      productionBackendRequired:
+        true
     });
   }
 
   window.PacificEducationEducationLinkBridge =
     Object.freeze({
       version: VERSION,
+
       requestConnection,
       approveConnection,
       checkAccess,
       revokeConnection,
+
       openConversation,
       sendAuthorizedMessage,
+
       getConversation,
       closeConversation,
+
       getUserLinks,
       getStatus
     });
