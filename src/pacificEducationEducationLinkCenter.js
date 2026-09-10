@@ -1,549 +1,327 @@
-Skip to content
-Pacific-education-
-Repository navigation
-Code
-Issues
-Pull requests
-Pacific-education-/src/js
-/pacificEducationEducationLinkStartup.js
-terubea82-eng
-terubea82-eng
-now
-533 lines (452 loc) · 14 KB
-
-Code
-
-Blame
 /*
- * =========================================================
  * PACIFIC EDUCATION
- * EDUCATION LINK STARTUP
+ * EDUCATION LINK CENTER
  * VERSION 1.2.0
- * =========================================================
  *
- * Secure startup order:
+ * Student • Teacher • Parent • Ministry of Education
  *
- * Verified Education Relationship
- *        ↓
- * Secure Link Authorization
- *        ↓
- * Secure Communication
- *        ↓
- * Education Link Bridge
- *        ↓
- * Education Link Center
- *
- * Student • Teacher • Parent • Ministry
- *
- * Security:
- * - Required APIs are verified before readiness.
- * - Verified relationship loads before authorization.
- * - Authorization loads before communication.
- * - Communication loads before bridge.
- * - Bridge loads before center.
- * - Link availability does not grant information access.
- * - No passwords, API keys or tokens are exposed.
- * - Production backend authorization is required.
- *
+ * Dashboard-box connection control.
  * Prototype only.
- * =========================================================
+ *
+ * Security rules:
+ * - Link availability does NOT mean information access.
+ * - Access requires verified relationship + authorization + permission.
+ * - No automatic information access.
+ * - Production backend security is required.
  */
 
 (() => {
-    "use strict";
+  "use strict";
 
-    const VERSION = "1.2.0";
+  const VERSION = "1.2.0";
 
-    const MODULES = Object.freeze([
-        {
-            path:
-                "js/pacificEducationVerifiedEducationRelationship.js",
-            global:
-                "PacificEducationVerifiedEducationRelationship",
-            requiredMethods: [
-                "getUserRelationships"
-            ]
-        },
+  const LINK_TYPES = Object.freeze({
+    student_teacher: ["student", "teacher"],
+    parent_student: ["parent", "student"],
+    parent_teacher: ["parent", "teacher"],
+    teacher_ministry: ["teacher", "ministry"],
+    parent_ministry: ["parent", "ministry"],
+    student_ministry: ["student", "ministry"]
+  });
 
-        {
-            path:
-                "../js/pacificEducationSecureLinkAuthorization.js",
-            global:
-                "PacificEducationSecureLinkAuthorization",
-            requiredMethods: [
-                "requestLink",
-                "approveLink",
-                "authorizeAccess",
-                "revokeLink",
-                "getUserLinks"
-            ]
-        },
+  function getAuthorization() {
+    return window.PacificEducationSecureLinkAuthorization || null;
+  }
 
-        {
-            path:
-                "../js/pacificEducationSecureCommunication.js",
-            global:
-                "PacificEducationSecureCommunication",
-            requiredMethods: [
-                "createConversation",
-                "sendMessage",
-                "getConversation",
-                "closeConversation"
-            ]
-        },
+  function getBridge() {
+    return window.PacificEducationEducationLinkBridge || null;
+  }
 
-        {
-            path:
-                "js/pacificEducationEducationLinkBridge.js",
-            global:
-                "PacificEducationEducationLinkBridge",
-            requiredMethods: [
-                "requestConnection",
-                "approveConnection",
-                "checkAccess",
-                "revokeConnection"
-            ]
-        },
+  function getRelationshipLayer() {
+    return window.PacificEducationVerifiedEducationRelationship || null;
+  }
 
-        {
-            path:
-                "js/pacificEducationEducationLinkCenter.js",
-            global:
-                "PacificEducationEducationLinkCenter",
-            requiredMethods: [
-                "requestLink",
-                "approveLink",
-                "checkAccess",
-                "revokeLink",
-                "getUserLinks",
-                "getDashboardModel",
-                "getStatus"
-            ]
-        }
-    ]);
+  function validUser(user) {
+    return Boolean(
+      user &&
+      typeof user === "object" &&
+      typeof user.id === "string" &&
+      user.id.trim() &&
+      typeof user.role === "string" &&
+      user.role.trim() &&
+      user.authorized === true
+    );
+  }
 
-    let started = false;
-    let loading = false;
+  function validLinkType(type) {
+    return Object.prototype.hasOwnProperty.call(
+      LINK_TYPES,
+      type
+    );
+  }
 
-    function getGlobal(name) {
-        return window[name] || null;
+  function getAvailableLinkTypes(role) {
+    return Object.entries(LINK_TYPES)
+      .filter(([, roles]) => roles.includes(role))
+      .map(([type]) => type);
+  }
+
+  function requireAuthorization() {
+    const authorization = getAuthorization();
+
+    const requiredMethods = [
+      "requestLink",
+      "approveLink",
+      "authorizeAccess",
+      "revokeLink",
+      "getUserLinks"
+    ];
+
+    if (!authorization) {
+      throw new Error(
+        "Secure Link Authorization module is not loaded."
+      );
     }
 
-    function moduleReady(module) {
-        const target = getGlobal(module.global);
-
-        if (!target) {
-            return false;
-        }
-
-        return module.requiredMethods.every(
-            method =>
-                typeof target[method] === "function"
+    for (const method of requiredMethods) {
+      if (typeof authorization[method] !== "function") {
+        throw new Error(
+          `Secure Link Authorization API is missing: ${method}.`
         );
+      }
     }
 
-    function findScript(src) {
-        return Array.from(
-            document.querySelectorAll("script[src]")
-        ).find(
-            script =>
-                script.getAttribute("src") === src
-        ) || null;
+    return authorization;
+  }
+
+  function requireRelationshipLayer() {
+    const relationship = getRelationshipLayer();
+
+    if (!relationship) {
+      throw new Error(
+        "Verified Education Relationship module is not loaded."
+      );
     }
 
-    function loadScript(module) {
-        return new Promise(
-            (resolve, reject) => {
-
-                /*
-                 * If the module is already available
-                 * with its required API, do not wait
-                 * for a load event that may already have
-                 * happened.
-                 */
-                if (moduleReady(module)) {
-                    resolve(module.path);
-                    return;
-                }
-
-                let existing =
-                    findScript(module.path);
-
-                /*
-                 * Remove a previously failed loader
-                 * script so a later retry can work.
-                 */
-                if (
-                    existing &&
-                    existing.dataset &&
-                    existing.dataset
-                        .pacificEducationLoadFailed ===
-                        "true"
-                ) {
-                    existing.remove();
-                    existing = null;
-                }
-
-                /*
-                 * Existing script is present and may
-                 * still be loading.
-                 */
-                if (existing) {
-
-                    const finish = () => {
-                        existing.dataset
-                            .pacificEducationLoaded =
-                            "true";
-
-                        if (moduleReady(module)) {
-                            resolve(module.path);
-                        } else {
-                            reject(
-                                new Error(
-                                    `Loaded ${module.path} ` +
-                                    "but its required API is unavailable."
-                                )
-                            );
-                        }
-                    };
-
-                    const fail = () => {
-                        existing.dataset
-                            .pacificEducationLoadFailed =
-                            "true";
-
-                        reject(
-                            new Error(
-                                `Failed to load ${module.path}`
-                            )
-                        );
-                    };
-
-                    existing.addEventListener(
-                        "load",
-                        finish,
-                        { once: true }
-                    );
-
-                    existing.addEventListener(
-                        "error",
-                        fail,
-                        { once: true }
-                    );
-
-                    /*
-                     * Protect against a script that has
-                     * already completed without exposing
-                     * a usable load event to this listener.
-                     */
-                    if (moduleReady(module)) {
-                        resolve(module.path);
-                    }
-
-                    return;
-                }
-
-                const script =
-                    document.createElement(
-                        "script"
-                    );
-
-                script.src = module.path;
-                script.async = false;
-
-                script.addEventListener(
-                    "load",
-                    () => {
-
-                        script.dataset
-                            .pacificEducationLoaded =
-                            "true";
-
-                        if (moduleReady(module)) {
-                            resolve(module.path);
-                        } else {
-                            script.dataset
-                                .pacificEducationLoadFailed =
-                                "true";
-
-                            reject(
-                                new Error(
-                                    `Loaded ${module.path} ` +
-                                    "but its required API is unavailable."
-                                )
-                            );
-                        }
-                    },
-                    { once: true }
-                );
-
-                script.addEventListener(
-                    "error",
-                    () => {
-
-                        script.dataset
-                            .pacificEducationLoadFailed =
-                            "true";
-
-                        reject(
-                            new Error(
-                                `Failed to load ${module.path}`
-                            )
-                        );
-                    },
-                    { once: true }
-                );
-
-                const parent =
-                    document.head ||
-                    document.documentElement ||
-                    document.body;
-
-                if (!parent) {
-                    reject(
-                        new Error(
-                            "Document container unavailable."
-                        )
-                    );
-                    return;
-                }
-
-                parent.appendChild(script);
-            }
-        );
-    }
-
-    function checkModules() {
-        const status = {};
-
-        for (const module of MODULES) {
-            status[module.global] =
-                moduleReady(module);
-        }
-
-        status.ready =
-            MODULES.every(
-                module =>
-                    status[module.global] === true
-            );
-
-        return Object.freeze(status);
-    }
-
-    function dispatchReady(status) {
-        window.dispatchEvent(
-            new CustomEvent(
-                "pacificEducationEducationLinkReady",
-                {
-                    detail: {
-                        version: VERSION,
-                        modules: status,
-                        ready: true,
-                        verifiedRelationshipRequired:
-                            true,
-                        authorizationRequired:
-                            true,
-                        permissionRequired:
-                            true,
-                        automaticInformationAccess:
-                            false,
-                        productionBackendRequired:
-                            true
-                    }
-                }
-            )
-        );
-    }
-
-    function dispatchError(
-        error,
-        status = null
+    if (
+      typeof relationship.getUserRelationships !==
+      "function"
     ) {
-        const message =
-            error &&
-            error.message
-                ? error.message
-                : String(error);
-
-        window.dispatchEvent(
-            new CustomEvent(
-                "pacificEducationEducationLinkError",
-                {
-                    detail: {
-                        version: VERSION,
-                        error: message,
-                        status,
-                        ready: false,
-                        verifiedRelationshipRequired:
-                            true,
-                        productionBackendRequired:
-                            true
-                    }
-                }
-            )
-        );
+      throw new Error(
+        "Verified Education Relationship API is missing: getUserRelationships."
+      );
     }
 
-    async function start() {
+    return relationship;
+  }
 
-        if (started) {
-            return getStatus();
-        }
-
-        if (loading) {
-            return getStatus();
-        }
-
-        loading = true;
-
-        try {
-
-            /*
-             * Load strictly in security dependency order.
-             */
-            for (const module of MODULES) {
-                await loadScript(module);
-            }
-
-            const status =
-                checkModules();
-
-            if (!status.ready) {
-
-                const error =
-                    new Error(
-                        "One or more Education Link " +
-                        "modules failed API verification."
-                    );
-
-                dispatchError(
-                    error,
-                    status
-                );
-
-                return Object.freeze({
-                    version: VERSION,
-                    started: false,
-                    loading: false,
-                    ready: false,
-                    modules: status,
-                    error: error.message,
-                    verifiedRelationshipRequired:
-                        true,
-                    productionBackendRequired:
-                        true
-                });
-            }
-
-            started = true;
-
-            dispatchReady(status);
-
-            return getStatus();
-
-        } catch (error) {
-
-            const status =
-                checkModules();
-
-            console.error(
-                "Pacific Education Education Link " +
-                "startup failed.",
-                error
-            );
-
-            dispatchError(
-                error,
-                status
-            );
-
-            return Object.freeze({
-                version: VERSION,
-                started: false,
-                loading: false,
-                ready: false,
-                modules: status,
-                error:
-                    error &&
-                    error.message
-                        ? error.message
-                        : String(error),
-                verifiedRelationshipRequired:
-                    true,
-                productionBackendRequired:
-                    true
-            });
-
-        } finally {
-            loading = false;
-        }
+  function requestLink(request) {
+    if (!request || typeof request !== "object") {
+      throw new Error("Valid link request required.");
     }
 
-    function getStatus() {
-        const modules =
-            checkModules();
-
-        return Object.freeze({
-            version: VERSION,
-            started,
-            loading,
-
-            relationshipReady:
-                modules
-                    .PacificEducationVerifiedEducationRelationship ===
-                true,
-
-            authorizationReady:
-                modules
-                    .PacificEducationSecureLinkAuthorization ===
-                true,
-
-            communicationReady:
-                modules
-                    .PacificEducationSecureCommunication ===
-                true,
-
-            bridgeReady:
-                modules
-                    .PacificEducationEducationLinkBridge ===
-                true,
-
-            centerReady:
-                modules
-                    .PacificEducationEducationLinkCenter ===
-                true,
-
-            ready:
-                Boolean(
-                    started &&
-                    modules.ready
-                ),
-
-            verifiedRelationshipRequired:
-                true,
-
-            authorizationRequired:
-                true,
-
-            permissionRequired:
-                true,
-
-            automaticInformationAccess:
-                false,
-
-            prototypeOnly:
-                true,
-
-            productionBackendRequired:
-                true
-        });
+    if (!validUser(request.requester)) {
+      throw new Error("Requester is not authorized.");
     }
 
-    window.PacificEducationEducationLinkStartup =
-        Object.freeze({
-            version: VERSION,
-            start,
-            getStatus
-        });
+    if (!validUser(request.target)) {
+      throw new Error("Target user is not authorized.");
+    }
+
+    if (!validLinkType(request.linkType)) {
+      throw new Error("Invalid education link type.");
+    }
+
+    const authorization = requireAuthorization();
+
+    return authorization.requestLink(request);
+  }
+
+  function approveLink(request) {
+    if (!request || typeof request !== "object") {
+      throw new Error("Valid approval request required.");
+    }
+
+    const authorization = requireAuthorization();
+
+    return authorization.approveLink(request);
+  }
+
+  function revokeLink(request) {
+    if (!request || typeof request !== "object") {
+      throw new Error("Valid revoke request required.");
+    }
+
+    const authorization = requireAuthorization();
+
+    return authorization.revokeLink(request);
+  }
+
+  function checkAccess(request) {
+    if (!request || typeof request !== "object") {
+      return {
+        allowed: false,
+        reason: "Valid access request required."
+      };
+    }
+
+    const authorization = getAuthorization();
+
+    if (
+      !authorization ||
+      typeof authorization.authorizeAccess !==
+        "function"
+    ) {
+      return {
+        allowed: false,
+        reason: "Authorization module unavailable."
+      };
+    }
+
+    return authorization.authorizeAccess(request);
+  }
+
+  function getUserLinks(user) {
+    if (!validUser(user)) {
+      throw new Error(
+        "Complete authorized user object required."
+      );
+    }
+
+    const authorization = requireAuthorization();
+
+    return authorization.getUserLinks(user);
+  }
+
+  function getUserRelationships(userId) {
+    if (
+      typeof userId !== "string" ||
+      !userId.trim()
+    ) {
+      throw new Error("Valid user ID required.");
+    }
+
+    const relationship = requireRelationshipLayer();
+
+    return relationship.getUserRelationships(userId);
+  }
+
+  function getDashboardModel(user) {
+    if (!validUser(user)) {
+      throw new Error(
+        "Dashboard user is not authorized."
+      );
+    }
+
+    const links = getUserLinks(user);
+    const relationships = getUserRelationships(user.id);
+
+    return Object.freeze({
+      version: VERSION,
+      userId: user.id,
+      role: user.role,
+
+      availableLinkTypes:
+        getAvailableLinkTypes(user.role),
+
+      pending: links.filter(
+        link => link.status === "pending"
+      ),
+
+      active: links.filter(
+        link => link.status === "active"
+      ),
+
+      revoked: links.filter(
+        link => link.status === "revoked"
+      ),
+
+      relationships: Array.isArray(relationships)
+        ? relationships
+        : [],
+
+      linkCount: links.length,
+
+      security: {
+        verificationRequired: true,
+        verifiedRelationshipRequired: true,
+        authorizationRequired: true,
+        permissionRequired: true,
+        auditRequired: true,
+        automaticInformationAccess: false
+      }
+    });
+  }
+
+  function getStatus() {
+    const authorization = getAuthorization();
+    const bridge = getBridge();
+    const relationship = getRelationshipLayer();
+
+    const authorizationReady = Boolean(
+      authorization &&
+      typeof authorization.requestLink === "function" &&
+      typeof authorization.approveLink === "function" &&
+      typeof authorization.authorizeAccess ===
+        "function" &&
+      typeof authorization.revokeLink === "function" &&
+      typeof authorization.getUserLinks === "function"
+    );
+
+    const bridgeReady = Boolean(
+      bridge &&
+      typeof bridge.requestConnection ===
+        "function" &&
+      typeof bridge.approveConnection ===
+        "function" &&
+      typeof bridge.checkAccess === "function" &&
+      typeof bridge.revokeConnection ===
+        "function"
+    );
+
+    const relationshipReady = Boolean(
+      relationship &&
+      typeof relationship.getUserRelationships ===
+        "function"
+    );
+
+    return Object.freeze({
+      version: VERSION,
+      authorizationLoaded: Boolean(authorization),
+      authorizationReady,
+      bridgeLoaded: Boolean(bridge),
+      bridgeReady,
+      relationshipLoaded: Boolean(relationship),
+      relationshipReady,
+
+      ready:
+        authorizationReady &&
+        bridgeReady &&
+        relationshipReady,
+
+      prototypeOnly: true,
+      productionBackendRequired: true,
+
+      security: {
+        verifiedRelationshipRequired: true,
+        authorizationRequired: true,
+        permissionRequired: true,
+        automaticInformationAccess: false
+      }
+    });
+  }
+
+  window.PacificEducationEducationLinkCenter =
+    Object.freeze({
+      version: VERSION,
+      requestLink,
+      approveLink,
+      revokeLink,
+      checkAccess,
+      getUserLinks,
+      getUserRelationships,
+      getDashboardModel,
+      getStatus
+    });
 
 })();
