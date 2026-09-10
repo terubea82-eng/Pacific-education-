@@ -1,30 +1,29 @@
 /* =========================================================
    PACIFIC EDUCATION
    LESSON ↔ ASSESSMENT ↔ DASHBOARD CONNECTION
-   VERSION 1.0.0
+   VERSION 1.1.0
 
    PURPOSE
    ---------------------------------------------------------
-   Connects the existing:
+   Controlled connection layer for:
      • Daily Lesson Engine
      • Assessment Engine
      • Dashboard Engine
 
-   Repairs:
-     • Missing Day 30 Alphabet Assessment display
-     • Day 30 lesson-progression bypass
-     • Day 60 lesson-progression bypass
+   Provides:
+     • Day 30 Alphabet Assessment display
+     • Day 30 progression checkpoint
+     • Day 60 progression checkpoint
      • Assessment/dashboard refresh connection
+     • Safe Owner Test Mode handling
 
    IMPORTANT
    ---------------------------------------------------------
    This file does NOT replace the existing lesson,
    assessment or dashboard engines.
 
-   It provides a controlled connection layer around them.
-
-   Owner Test Mode:
-     • Must never change real learner progress.
+   Owner Test Mode must never modify real learner
+   progression through this connection layer.
 ========================================================= */
 
 (function () {
@@ -36,7 +35,19 @@
        VERSION
     ===================================================== */
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
+
+
+    /* =====================================================
+       CONNECTION STATE
+       -----------------------------------------------------
+       Kept outside the public API so it cannot be lost
+       when the public API object is created.
+    ===================================================== */
+
+    let completionConnected = false;
+
+    let monitorStarted = false;
 
 
     /* =====================================================
@@ -63,7 +74,8 @@
 
     function enginesReady() {
 
-        const connections = getConnections();
+        const connections =
+            getConnections();
 
         return (
             connections.dailyLessons &&
@@ -77,22 +89,31 @@
     /* =====================================================
        CURRENT REAL LEARNER DAY
        -----------------------------------------------------
-       Owner test mode is deliberately ignored here.
+       Owner test day is deliberately ignored.
     ===================================================== */
 
     function getCurrentDay() {
 
         let day = parseInt(
-            localStorage.getItem("currentDayNumber") || "1",
+            localStorage.getItem(
+                "currentDayNumber"
+            ) || "1",
             10
         );
 
-        if (isNaN(day) || day < 1) {
+        if (
+            isNaN(day) ||
+            day < 1
+        ) {
+
             day = 1;
+
         }
 
         if (day > 365) {
+
             day = 365;
+
         }
 
         return day;
@@ -115,18 +136,16 @@
 
     /* =====================================================
        CREATE DAY 30 ASSESSMENT PANEL
-       -----------------------------------------------------
-       The current HTML contains Day 60 but not Day 30.
-       This creates the missing Day 30 panel safely.
     ===================================================== */
 
     function ensureAlphabetAssessmentPanel() {
 
-        if (
+        const existingPanel =
             document.getElementById(
                 "alphabetAssessmentDay30"
-            )
-        ) {
+            );
+
+        if (existingPanel) {
 
             return;
 
@@ -150,9 +169,12 @@
 
 
         const panel =
-            document.createElement("div");
+            document.createElement(
+                "div"
+            );
 
-        panel.className = "activity";
+        panel.className =
+            "activity";
 
         panel.id =
             "alphabetAssessmentDay30";
@@ -190,40 +212,51 @@
                 "startAlphabetAssessmentConnectionButton"
             );
 
-        if (button) {
+        if (!button) {
 
-            button.addEventListener(
-                "click",
-                function () {
-
-                    if (
-                        window.PacificEducationAssessments &&
-                        typeof window.PacificEducationAssessments.startAlphabetAssessment ===
-                            "function"
-                    ) {
-
-                        window.PacificEducationAssessments
-                            .startAlphabetAssessment();
-
-                    } else if (
-                        typeof window.startAlphabetAssessment ===
-                        "function"
-                    ) {
-
-                        window.startAlphabetAssessment();
-
-                    } else {
-
-                        console.error(
-                            "Pacific Education: Alphabet Assessment engine is unavailable."
-                        );
-
-                    }
-
-                }
-            );
+            return;
 
         }
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                if (
+                    window.PacificEducationAssessments &&
+                    typeof
+                        window.PacificEducationAssessments
+                            .startAlphabetAssessment ===
+                        "function"
+                ) {
+
+                    window.PacificEducationAssessments
+                        .startAlphabetAssessment();
+
+                    return;
+
+                }
+
+
+                if (
+                    typeof window.startAlphabetAssessment ===
+                    "function"
+                ) {
+
+                    window.startAlphabetAssessment();
+
+                    return;
+
+                }
+
+
+                console.error(
+                    "Pacific Education: Alphabet Assessment engine is unavailable."
+                );
+
+            }
+        );
 
     }
 
@@ -272,7 +305,7 @@
 
 
     /* =====================================================
-       CHECK WHETHER A CHECKPOINT BLOCKS PROGRESSION
+       CHECKPOINT CONTROL
     ===================================================== */
 
     function checkpointBlocksCompletion(day) {
@@ -305,7 +338,7 @@
 
 
     /* =====================================================
-       SHOW CHECKPOINT MESSAGE
+       CHECKPOINT MESSAGE
     ===================================================== */
 
     function showCheckpointMessage(day) {
@@ -318,7 +351,10 @@
             message =
                 "Please complete and pass the Day 30 Alphabet Assessment before continuing to Day 31.";
 
-        } else if (day === 60) {
+        }
+
+
+        if (day === 60) {
 
             message =
                 "Please complete and pass the Day 60 Phonics Assessment before continuing to Day 61.";
@@ -326,10 +362,16 @@
         }
 
 
+        if (!message) {
+
+            return;
+
+        }
+
+
         if (
-            message &&
             typeof window.showLesson ===
-                "function"
+            "function"
         ) {
 
             window.showLesson(
@@ -354,14 +396,15 @@
                 `
             );
 
-        } else {
-
-            console.info(
-                "Pacific Education:",
-                message
-            );
+            return;
 
         }
+
+
+        console.info(
+            "Pacific Education:",
+            message
+        );
 
     }
 
@@ -369,13 +412,21 @@
     /* =====================================================
        CONTROLLED LESSON COMPLETION
        -----------------------------------------------------
-       This wraps the EXISTING dashboard function.
+       Wraps the existing dashboard completion function
+       exactly once.
 
-       It does not replace the dashboard engine's
-       storage or owner-test logic.
+       The state flag is stored in this closure and is
+       therefore not overwritten by the public API object.
     ===================================================== */
 
     function connectLessonCompletion() {
+
+        if (completionConnected) {
+
+            return;
+
+        }
+
 
         if (
             typeof window.completeLesson !==
@@ -391,17 +442,6 @@
         }
 
 
-        if (
-            window.PacificEducationLessonAssessmentConnection &&
-            window.PacificEducationLessonAssessmentConnection
-                .completionConnected
-        ) {
-
-            return;
-
-        }
-
-
         const originalCompleteLesson =
             window.completeLesson;
 
@@ -409,9 +449,12 @@
         function connectedCompleteLesson() {
 
             /*
-               Owner Test Mode must remain completely
-               separate from real learner progress.
-            */
+             * Owner Test Mode is intentionally excluded
+             * from real learner checkpoint control.
+             *
+             * The existing dashboard engine remains
+             * responsible for Owner Test Mode behaviour.
+             */
 
             if (isOwnerTestMode()) {
 
@@ -429,12 +472,12 @@
 
 
             /*
-               Day 30 checkpoint
-            */
+             * Day 30 checkpoint.
+             */
 
             if (
                 day === 30 &&
-                checkpointBlocksCompletion(day)
+                checkpointBlocksCompletion(30)
             ) {
 
                 showCheckpointMessage(30);
@@ -447,12 +490,12 @@
 
 
             /*
-               Day 60 checkpoint
-            */
+             * Day 60 checkpoint.
+             */
 
             if (
                 day === 60 &&
-                checkpointBlocksCompletion(day)
+                checkpointBlocksCompletion(60)
             ) {
 
                 showCheckpointMessage(60);
@@ -465,8 +508,8 @@
 
 
             /*
-               Normal lesson progression.
-            */
+             * Normal lesson progression.
+             */
 
             originalCompleteLesson();
 
@@ -479,25 +522,14 @@
             connectedCompleteLesson;
 
 
-        window.PacificEducationLessonAssessmentConnection =
-            window.PacificEducationLessonAssessmentConnection || {};
-
-        window.PacificEducationLessonAssessmentConnection
-            .completionConnected = true;
+        completionConnected =
+            true;
 
     }
 
 
     /* =====================================================
-       ASSESSMENT RESULT MONITOR
-       -----------------------------------------------------
-       The existing assessment engine writes:
-         alphabetAssessmentPassed
-         phonicsAssessmentPassed
-         currentDayNumber
-
-       This connection simply refreshes the lesson,
-       dashboards and visibility afterward.
+       REFRESH AFTER ASSESSMENT
     ===================================================== */
 
     function refreshAfterAssessment() {
@@ -514,24 +546,21 @@
 
         if (
             window.PacificEducationDashboards &&
-            typeof window.PacificEducationDashboards
-                .refreshAll ===
+            typeof
+                window.PacificEducationDashboards
+                    .refreshAll ===
                 "function"
         ) {
 
             window.PacificEducationDashboards
                 .refreshAll();
 
-        } else {
+        } else if (
+            typeof window.refreshAllDashboards ===
+            "function"
+        ) {
 
-            if (
-                typeof window.refreshAllDashboards ===
-                "function"
-            ) {
-
-                window.refreshAllDashboards();
-
-            }
+            window.refreshAllDashboards();
 
         }
 
@@ -542,16 +571,19 @@
 
 
     /* =====================================================
-       ASSESSMENT STORAGE WATCH
+       ASSESSMENT RESULT MONITOR
        -----------------------------------------------------
-       Detects a completed assessment without modifying
-       the assessment engine itself.
+       Only watches pass/fail state keys already written
+       by the assessment engine.
+
+       No assessment answers are collected here.
     ===================================================== */
 
     let lastAlphabetResult =
         localStorage.getItem(
             "alphabetAssessmentPassed"
         );
+
 
     let lastPhonicsResult =
         localStorage.getItem(
@@ -565,6 +597,7 @@
             localStorage.getItem(
                 "alphabetAssessmentPassed"
             );
+
 
         const phonicsResult =
             localStorage.getItem(
@@ -601,6 +634,33 @@
 
 
     /* =====================================================
+       START RESULT MONITOR
+       -----------------------------------------------------
+       Prevents multiple monitoring intervals.
+    ===================================================== */
+
+    function startResultMonitor() {
+
+        if (monitorStarted) {
+
+            return;
+
+        }
+
+
+        monitorStarted =
+            true;
+
+
+        window.setInterval(
+            monitorAssessmentResults,
+            500
+        );
+
+    }
+
+
+    /* =====================================================
        INITIALIZE CONNECTION
     ===================================================== */
 
@@ -610,21 +670,19 @@
 
         updateAssessmentVisibility();
 
-        /*
-           dashboards.js is loaded after dailyLessons.js
-           and assessments.js in the current HTML.
-           Therefore connect after the page has loaded.
-        */
-
         connectLessonCompletion();
 
+        startResultMonitor();
+
 
         /*
-           Run again after all DOMContentLoaded handlers
-           have had a chance to initialize.
-        */
+         * A zero-delay retry allows any DOMContentLoaded
+         * initialization performed by connected engines
+         * to complete before the connection is checked
+         * again.
+         */
 
-        setTimeout(
+        window.setTimeout(
             function () {
 
                 ensureAlphabetAssessmentPanel();
@@ -637,25 +695,18 @@
             0
         );
 
-
-        /*
-           Lightweight result monitoring.
-           No assessment answers are collected here.
-        */
-
-        setInterval(
-            monitorAssessmentResults,
-            500
-        );
-
     }
 
 
     /* =====================================================
        PUBLIC CONNECTION API
+       -----------------------------------------------------
+       completionConnected is exposed as read-only through
+       a getter so the internal state cannot accidentally
+       be replaced by another object assignment.
     ===================================================== */
 
-    window.PacificEducationLessonAssessmentConnection = {
+    const publicAPI = {
 
         version:
             VERSION,
@@ -678,10 +729,34 @@
         ensureAlphabetAssessmentPanel:
             ensureAlphabetAssessmentPanel,
 
+        checkpointBlocksCompletion:
+            checkpointBlocksCompletion,
+
         refreshAfterAssessment:
-            refreshAfterAssessment
+            refreshAfterAssessment,
+
+        connectLessonCompletion:
+            connectLessonCompletion
 
     };
+
+
+    Object.defineProperty(
+        publicAPI,
+        "completionConnected",
+        {
+            enumerable: true,
+
+            get:
+                function () {
+                    return completionConnected;
+                }
+        }
+    );
+
+
+    window.PacificEducationLessonAssessmentConnection =
+        publicAPI;
 
 
     /* =====================================================
@@ -695,7 +770,10 @@
 
         document.addEventListener(
             "DOMContentLoaded",
-            initialize
+            initialize,
+            {
+                once: true
+            }
         );
 
     } else {
