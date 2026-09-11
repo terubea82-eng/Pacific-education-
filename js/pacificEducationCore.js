@@ -1520,12 +1520,4 @@
   );
 
 
-  emit(
-    "coreReady",
-    {
-      version:
-        VERSION
-    }
-  );
 
-})(window);
