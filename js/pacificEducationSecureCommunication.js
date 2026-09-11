@@ -3,7 +3,7 @@
  * PACIFIC EDUCATION
  * SECURE EDUCATION COMMUNICATION LAYER
  * =========================================================
- * Version 1.4.0
+ * Version 1.4.1
  *
  * Student • Teacher • Parent • Ministry of Education
  *
@@ -34,13 +34,22 @@
  * - No payment secrets are stored.
  * - Pacific Education does not hold customer funds.
  * - localStorage is prototype storage only.
+ *
+ * CONNECTION FIX:
+ * - SecureLinkAuthorization.authorizeAccess()
+ *   requires { user, linkId, permission }.
+ * - This module now uses that exact API.
+ * - Authorized links use status "authorized".
+ * - Verified relationships are checked through the
+ *   actual relationship-layer API.
  * =========================================================
  */
 
 (() => {
     "use strict";
 
-    const VERSION = "1.4.0";
+    const VERSION = "1.4.1";
+
     const STORAGE_KEY =
         "pacificEducationSecureMessages";
 
@@ -60,20 +69,28 @@
         student_ministry: ["student", "ministry"]
     });
 
-    const REQUIRED_PERMISSION = "communication";
+    const REQUIRED_PERMISSION =
+        "communication";
+
 
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * SECURITY MODULE ACCESS
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function getAuthorization() {
-        return window.PacificEducationSecureLinkAuthorization;
+        return (
+            window.PacificEducationSecureLinkAuthorization ||
+            null
+        );
     }
 
     function getRelationshipLayer() {
-        return window.PacificEducationVerifiedEducationRelationship;
+        return (
+            window.PacificEducationVerifiedEducationRelationship ||
+            null
+        );
     }
 
     function requireSecurityModules() {
@@ -96,6 +113,8 @@
         if (
             !relationshipLayer ||
             typeof relationshipLayer.getUserRelationships !==
+                "function" ||
+            typeof relationshipLayer.checkRelationship !==
                 "function"
         ) {
             throw new Error(
@@ -109,10 +128,11 @@
         };
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * PROTOTYPE STORAGE
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function emptyState() {
@@ -181,10 +201,11 @@
         }
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * IDENTIFIERS AND AUDIT
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function createId(prefix) {
@@ -233,10 +254,11 @@
         save(state);
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * PARTICIPANT VALIDATION
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function validRole(role) {
@@ -249,7 +271,8 @@
                 typeof user === "object" &&
                 typeof user.id === "string" &&
                 user.id.trim() !== "" &&
-                validRole(user.role)
+                validRole(user.role) &&
+                user.authorized === true
         );
     }
 
@@ -260,7 +283,7 @@
         if (!validParticipant(user)) {
             throw new Error(
                 (label || "Participant") +
-                    " must be a complete authorized user object with a valid id and role."
+                    " must be a complete authorized user object with a valid id, role, and authorized status."
             );
         }
 
@@ -278,10 +301,11 @@
         );
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * LINK TYPE
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function getLinkType(
@@ -316,10 +340,11 @@
         return null;
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * RELATIONSHIP HELPERS
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function getRelationshipId(
@@ -360,145 +385,96 @@
         recipient,
         linkId
     ) {
-        const requesterRelationships =
+        const relationships =
             getRelationshipsForUser(
                 relationshipLayer,
                 requester
             );
 
-        const recipientRelationships =
-            getRelationshipsForUser(
-                relationshipLayer,
-                recipient
-            );
-
-        const allRelationships = [
-            ...requesterRelationships,
-            ...recipientRelationships
-        ];
-
-        return (
-            allRelationships.find(
-                (relationship) => {
+        const relationship =
+            relationships.find(
+                item => {
                     if (
-                        !relationship ||
-                        typeof relationship !==
+                        !item ||
+                        typeof item !==
                             "object"
+                    ) {
+                        return false;
+                    }
+
+                    if (
+                        item.status !==
+                        "verified"
                     ) {
                         return false;
                     }
 
                     const relationshipId =
                         getRelationshipId(
-                            relationship
+                            item
                         );
 
                     if (!relationshipId) {
                         return false;
                     }
 
-                    const relationshipLinkId =
-                        relationship.linkId ||
-                        relationship.approvedLinkId ||
-                        relationship.educationLinkId ||
-                        null;
-
                     if (
                         linkId &&
-                        relationshipLinkId &&
-                        relationshipLinkId !==
+                        item.linkId &&
+                        item.linkId !==
                             linkId
                     ) {
                         return false;
                     }
 
-                    const verified =
-                        relationship.verified ===
-                            true ||
-                        relationship.status ===
-                            "verified" ||
-                        relationship.status ===
-                            "active" ||
-                        relationship.approved ===
-                            true;
-
-                    if (!verified) {
+                    if (
+                        item.relationshipType !==
+                        getLinkType(
+                            requester.role,
+                            recipient.role
+                        )
+                    ) {
                         return false;
                     }
 
-                    const participants =
-                        Array.isArray(
-                            relationship.participants
-                        )
-                            ? relationship.participants
-                            : [];
-
-                    const participantIds =
-                        participants
-                            .map(
-                                (
-                                    participant
-                                ) => {
-                                    if (
-                                        participant &&
-                                        typeof participant ===
-                                            "object"
-                                    ) {
-                                        return participant.id;
-                                    }
-
-                                    return participant;
-                                }
-                            )
-                            .filter(
-                                Boolean
-                            );
-
-                    const requesterMatches =
-                        participantIds.includes(
-                            requester.id
+                    const directMatch =
+                        (
+                            item.requesterId ===
+                                requester.id &&
+                            item.targetId ===
+                                recipient.id
                         ) ||
-                        relationship.requesterId ===
-                            requester.id ||
-                        relationship.studentId ===
-                            requester.id ||
-                        relationship.teacherId ===
-                            requester.id ||
-                        relationship.parentId ===
-                            requester.id ||
-                        relationship.ministryId ===
-                            requester.id;
+                        (
+                            item.requesterId ===
+                                recipient.id &&
+                            item.targetId ===
+                                requester.id
+                        );
 
-                    const recipientMatches =
-                        participantIds.includes(
-                            recipient.id
-                        ) ||
-                        relationship.requesterId ===
-                            recipient.id ||
-                        relationship.recipientId ===
-                            recipient.id ||
-                        relationship.studentId ===
-                            recipient.id ||
-                        relationship.teacherId ===
-                            recipient.id ||
-                        relationship.parentId ===
-                            recipient.id ||
-                        relationship.ministryId ===
-                            recipient.id;
-
-                    return (
-                        requesterMatches &&
-                        recipientMatches
-                    );
+                    return directMatch;
                 }
-            ) || null
-        );
+            );
+
+        return relationship || null;
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * CENTRAL COMMUNICATION SECURITY GATE
-     * -------------------------------------------------------
+     * =====================================================
+     *
+     * IMPORTANT:
+     * The connected authorization module expects:
+     *
+     * authorizeAccess({
+     *     linkId,
+     *     user,
+     *     permission
+     * })
+     *
+     * This module uses that exact contract.
+     * =====================================================
      */
 
     function requireAuthorizedCommunication(
@@ -555,15 +531,18 @@
             );
         }
 
+        /*
+         * FIXED CONNECTION:
+         * SecureLinkAuthorization v1.6.0
+         * expects user + permission.
+         */
         const access =
-            authorization.authorizeAccess(
-                {
-                    linkId,
-                    requester,
-                    requiredPermission:
-                        REQUIRED_PERMISSION
-                }
-            );
+            authorization.authorizeAccess({
+                linkId,
+                user: requester,
+                permission:
+                    REQUIRED_PERMISSION
+            });
 
         if (
             !access ||
@@ -606,10 +585,11 @@
         };
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * CREATE CONVERSATION
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function createConversation(
@@ -631,20 +611,19 @@
             options.linkId;
 
         const security =
-            requireAuthorizedCommunication(
-                {
-                    linkId,
-                    requester: sender,
-                    recipient
-                }
-            );
+            requireAuthorizedCommunication({
+                linkId,
+                requester: sender,
+                recipient
+            });
 
         const state = load();
 
         const conversation = {
-            id: createId(
-                "conversation"
-            ),
+            id:
+                createId(
+                    "conversation"
+                ),
 
             linkId,
 
@@ -670,12 +649,14 @@
                 recipient.role
             ],
 
-            status: "active",
+            status:
+                "active",
 
             createdAt:
                 new Date().toISOString(),
 
-            closedAt: null,
+            closedAt:
+                null,
 
             messages: []
         };
@@ -705,10 +686,11 @@
         return conversation;
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * SEND MESSAGE
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function sendMessage({
@@ -751,7 +733,7 @@
 
         const conversation =
             state.conversations.find(
-                (item) =>
+                item =>
                     item.id ===
                     conversationId
             );
@@ -781,13 +763,11 @@
         }
 
         const security =
-            requireAuthorizedCommunication(
-                {
-                    linkId,
-                    requester: sender,
-                    recipient
-                }
-            );
+            requireAuthorizedCommunication({
+                linkId,
+                requester: sender,
+                recipient
+            });
 
         if (
             conversation.relationshipId !==
@@ -812,9 +792,10 @@
         }
 
         const message = {
-            id: createId(
-                "message"
-            ),
+            id:
+                createId(
+                    "message"
+                ),
 
             conversationId,
 
@@ -862,10 +843,11 @@
         return message;
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * GET CONVERSATION
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function getConversation(
@@ -897,7 +879,7 @@
 
         const conversation =
             state.conversations.find(
-                (item) =>
+                item =>
                     item.id ===
                     conversationId
             );
@@ -909,16 +891,14 @@
         }
 
         const security =
-            requireAuthorizedCommunication(
-                {
-                    linkId:
-                        conversation.linkId,
+            requireAuthorizedCommunication({
+                linkId:
+                    conversation.linkId,
 
-                    requester,
+                requester,
 
-                    recipient
-                }
-            );
+                recipient
+            });
 
         if (
             security.relationshipId !==
@@ -945,10 +925,11 @@
         return conversation;
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * CLOSE CONVERSATION
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function closeConversation(
@@ -966,7 +947,7 @@
 
         const conversation =
             state.conversations.find(
-                (item) =>
+                item =>
                     item.id ===
                     conversationId
             );
@@ -1008,19 +989,23 @@
         return conversation;
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * SAFE STATUS
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function getStatus() {
         return {
-            version: VERSION,
+            version:
+                VERSION,
 
-            available: true,
+            available:
+                true,
 
-            prototypeOnly: true,
+            prototypeOnly:
+                true,
 
             productionServerAuthorizationRequired:
                 true,
@@ -1028,15 +1013,20 @@
             automaticInformationAccess:
                 false,
 
-            secretsStored: false,
+            secretsStored:
+                false,
 
-            passwordsStored: false,
+            passwordsStored:
+                false,
 
-            accessTokensStored: false,
+            accessTokensStored:
+                false,
 
-            paymentSecretsStored: false,
+            paymentSecretsStored:
+                false,
 
-            customerFundsHeld: false,
+            customerFundsHeld:
+                false,
 
             localStoragePrototypeOnly:
                 true,
@@ -1054,10 +1044,11 @@
         };
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * PROTOTYPE RESET
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     function resetPrototypeState() {
@@ -1074,15 +1065,17 @@
         return getStatus();
     }
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * PUBLIC API
-     * -------------------------------------------------------
+     * =====================================================
      */
 
     window.PacificEducationSecureCommunication =
         Object.freeze({
-            version: VERSION,
+            version:
+                VERSION,
 
             createConversation,
 
@@ -1097,14 +1090,11 @@
             resetPrototypeState
         });
 
+
     /*
-     * -------------------------------------------------------
+     * =====================================================
      * OPTIONAL READINESS EVENT
-     * -------------------------------------------------------
-     *
-     * The event is informational only.
-     * Failure to dispatch it must never break
-     * the communication module.
+     * =====================================================
      */
 
     try {
@@ -1113,12 +1103,17 @@
                 "pacificEducationSecureCommunicationReady",
                 {
                     detail: {
-                        version: VERSION
+                        version:
+                            VERSION
                     }
                 }
             )
         );
     } catch (error) {
-        // Readiness notification is optional.
+        /*
+         * Readiness notification is optional.
+         * It must never break the module.
+         */
     }
+
 })();
