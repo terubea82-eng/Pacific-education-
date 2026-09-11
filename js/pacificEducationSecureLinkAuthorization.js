@@ -727,9 +727,10 @@
 
       revokeLink,
 
-      getLinksForUser,
+  getLinksForUser,
+getUserLinks: getLinksForUser,
 
-      getStatus,
+      getStatus,    
 
       resetPrototypeState
     });
