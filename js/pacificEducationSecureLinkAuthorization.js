@@ -708,7 +708,6 @@
   function resetPrototypeState() {
     window.localStorage.removeItem(STORAGE_KEY);
   }
-
   window.PacificEducationSecureLinkAuthorization =
     Object.freeze({
       version: VERSION,
@@ -727,11 +726,13 @@
 
       revokeLink,
 
-  getLinksForUser,
-getUserLinks: getLinksForUser,
+      getLinksForUser,
+      getUserLinks: getLinksForUser,
 
-      getStatus,    
+      getStatus,
 
       resetPrototypeState
     });
 })();
+  
+  
