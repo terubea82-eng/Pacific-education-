@@ -11,7 +11,7 @@
  *
  * Verified Education Relationship
  *          ↓
- * Active Approved Link
+ * Exact Approved Link
  *          ↓
  * Communication Permission
  *          ↓
@@ -27,6 +27,12 @@
  * - Complete authorized user objects are required.
  * - Raw user IDs must not be used as authorization objects.
  * - Synthetic authorized users must not be created.
+ * - The exact approved link must belong to the exact
+ *   requester and recipient pair.
+ * - The link relationship ID must match the verified
+ *   relationship ID.
+ * - The verified relationship is revalidated through
+ *   checkRelationship().
  * - No automatic information access.
  * - No passwords are stored.
  * - No API keys are stored.
@@ -38,17 +44,17 @@
  * CONNECTION FIX:
  * - SecureLinkAuthorization.authorizeAccess()
  *   requires { user, linkId, permission }.
- * - This module now uses that exact API.
- * - Authorized links use status "authorized".
- * - Verified relationships are checked through the
- *   actual relationship-layer API.
+ * - SecureLinkAuthorization.getLinksForUser()
+ *   is used to verify exact link ownership.
+ * - Verified relationship checkRelationship() is used
+ *   for defense-in-depth revalidation.
  * =========================================================
  */
 
 (() => {
     "use strict";
 
-    const VERSION = "1.4.1";
+    const VERSION = "1.5.0";
 
     const STORAGE_KEY =
         "pacificEducationSecureMessages";
@@ -107,6 +113,17 @@
         ) {
             throw new Error(
                 "Pacific Education secure link authorization module is unavailable."
+            );
+        }
+
+        if (
+            typeof authorization.getLinksForUser !==
+                "function" &&
+            typeof authorization.getUserLinks !==
+                "function"
+        ) {
+            throw new Error(
+                "Pacific Education secure link list API is unavailable."
             );
         }
 
@@ -312,11 +329,6 @@
         firstRole,
         secondRole
     ) {
-        const roles = [
-            firstRole,
-            secondRole
-        ];
-
         for (
             const [
                 linkType,
@@ -327,10 +339,10 @@
         ) {
             if (
                 supportedRoles.includes(
-                    roles[0]
+                    firstRole
                 ) &&
                 supportedRoles.includes(
-                    roles[1]
+                    secondRole
                 )
             ) {
                 return linkType;
@@ -338,6 +350,136 @@
         }
 
         return null;
+    }
+
+
+    /*
+     * =====================================================
+     * AUTHORIZATION LINK HELPERS
+     * =====================================================
+     */
+
+    function getLinksForUser(
+        authorization,
+        user
+    ) {
+        let result;
+
+        if (
+            typeof authorization.getLinksForUser ===
+            "function"
+        ) {
+            result =
+                authorization.getLinksForUser(
+                    user
+                );
+        } else {
+            result =
+                authorization.getUserLinks(
+                    user
+                );
+        }
+
+        return Array.isArray(result)
+            ? result
+            : [];
+    }
+
+    function sameLinkParticipant(
+        link,
+        user,
+        idField,
+        roleField
+    ) {
+        return Boolean(
+            link &&
+                link[idField] === user.id &&
+                link[roleField] === user.role
+        );
+    }
+
+    function exactLinkMatchesParticipants(
+        link,
+        requester,
+        recipient,
+        linkType
+    ) {
+        if (
+            !link ||
+            typeof link !== "object"
+        ) {
+            return false;
+        }
+
+        if (
+            link.status !== "authorized"
+        ) {
+            return false;
+        }
+
+        if (
+            link.linkType !== linkType
+        ) {
+            return false;
+        }
+
+        const direct =
+            sameLinkParticipant(
+                link,
+                requester,
+                "requesterId",
+                "requesterRole"
+            ) &&
+            sameLinkParticipant(
+                link,
+                recipient,
+                "targetId",
+                "targetRole"
+            );
+
+        const reverse =
+            sameLinkParticipant(
+                link,
+                recipient,
+                "requesterId",
+                "requesterRole"
+            ) &&
+            sameLinkParticipant(
+                link,
+                requester,
+                "targetId",
+                "targetRole"
+            );
+
+        return direct || reverse;
+    }
+
+    function findExactAuthorizedLink(
+        authorization,
+        requester,
+        recipient,
+        linkId,
+        linkType
+    ) {
+        const links =
+            getLinksForUser(
+                authorization,
+                requester
+            );
+
+        const link =
+            links.find(item =>
+                item &&
+                item.id === linkId &&
+                exactLinkMatchesParticipants(
+                    item,
+                    requester,
+                    recipient,
+                    linkType
+                )
+            );
+
+        return link || null;
     }
 
 
@@ -385,6 +527,12 @@
         recipient,
         linkId
     ) {
+        const expectedType =
+            getLinkType(
+                requester.role,
+                recipient.role
+            );
+
         const relationships =
             getRelationshipsForUser(
                 relationshipLayer,
@@ -409,6 +557,13 @@
                         return false;
                     }
 
+                    if (
+                        item.relationshipType !==
+                        expectedType
+                    ) {
+                        return false;
+                    }
+
                     const relationshipId =
                         getRelationshipId(
                             item
@@ -419,20 +574,9 @@
                     }
 
                     if (
-                        linkId &&
                         item.linkId &&
                         item.linkId !==
                             linkId
-                    ) {
-                        return false;
-                    }
-
-                    if (
-                        item.relationshipType !==
-                        getLinkType(
-                            requester.role,
-                            recipient.role
-                        )
                     ) {
                         return false;
                     }
@@ -463,27 +607,13 @@
      * =====================================================
      * CENTRAL COMMUNICATION SECURITY GATE
      * =====================================================
-     *
-     * IMPORTANT:
-     * The connected authorization module expects:
-     *
-     * authorizeAccess({
-     *     linkId,
-     *     user,
-     *     permission
-     * })
-     *
-     * This module uses that exact contract.
-     * =====================================================
      */
 
-    function requireAuthorizedCommunication(
-        {
-            linkId,
-            requester,
-            recipient
-        }
-    ) {
+    function requireAuthorizedCommunication({
+        linkId,
+        requester,
+        recipient
+    }) {
         const {
             authorization,
             relationshipLayer
@@ -500,8 +630,8 @@
         );
 
         if (
-            !linkId ||
-            typeof linkId !== "string"
+            typeof linkId !== "string" ||
+            !linkId.trim()
         ) {
             throw new Error(
                 "An approved education linkId is required."
@@ -515,7 +645,7 @@
             )
         ) {
             throw new Error(
-                "A user cannot create an authorized conversation with the same user."
+                "A user cannot communicate with the same user."
             );
         }
 
@@ -531,11 +661,58 @@
             );
         }
 
+
         /*
-         * FIXED CONNECTION:
-         * SecureLinkAuthorization v1.6.0
-         * expects user + permission.
+         * =================================================
+         * STEP 1
+         * EXACT AUTHORIZED LINK
+         * =================================================
          */
+
+        const approvedLink =
+            findExactAuthorizedLink(
+                authorization,
+                requester,
+                recipient,
+                linkId,
+                linkType
+            );
+
+        if (!approvedLink) {
+            throw new Error(
+                "The approved education link does not belong to the exact requester and recipient pair."
+            );
+        }
+
+
+        /*
+         * =================================================
+         * STEP 2
+         * LINK RELATIONSHIP ID
+         * =================================================
+         */
+
+        const approvedRelationshipId =
+            approvedLink.relationshipId;
+
+        if (
+            typeof approvedRelationshipId !==
+                "string" ||
+            !approvedRelationshipId.trim()
+        ) {
+            throw new Error(
+                "The approved education link has no valid relationship ID."
+            );
+        }
+
+
+        /*
+         * =================================================
+         * STEP 3
+         * AUTHORIZATION PERMISSION
+         * =================================================
+         */
+
         const access =
             authorization.authorizeAccess({
                 linkId,
@@ -552,6 +729,14 @@
                 "Communication authorization was not granted."
             );
         }
+
+
+        /*
+         * =================================================
+         * STEP 4
+         * VERIFIED RELATIONSHIP
+         * =================================================
+         */
 
         const relationship =
             findVerifiedRelationship(
@@ -578,10 +763,74 @@
             );
         }
 
+        if (
+            relationshipId !==
+            approvedRelationshipId
+        ) {
+            throw new Error(
+                "The approved link and verified education relationship do not match."
+            );
+        }
+
+
+        /*
+         * =================================================
+         * STEP 5
+         * DEFENSE-IN-DEPTH REVALIDATION
+         * =================================================
+         */
+
+        const relationshipCheck =
+            relationshipLayer.checkRelationship({
+                relationshipId,
+
+                requester: {
+                    id:
+                        requester.id,
+                    role:
+                        requester.role,
+                    authorized:
+                        true
+                },
+
+                target: {
+                    id:
+                        recipient.id,
+                    role:
+                        recipient.role,
+                    authorized:
+                        true
+                },
+
+                relationshipType:
+                    linkType
+            });
+
+        if (
+            !relationshipCheck ||
+            relationshipCheck.allowed !== true
+        ) {
+            throw new Error(
+                "Verified education relationship revalidation failed."
+            );
+        }
+
+        if (
+            relationshipCheck.relationshipId !==
+            relationshipId
+        ) {
+            throw new Error(
+                "Relationship revalidation returned a different relationship ID."
+            );
+        }
+
         return {
             linkType,
+            linkId,
             relationshipId,
-            access
+            approvedLink,
+            access,
+            relationshipCheck
         };
     }
 
@@ -613,7 +862,8 @@
         const security =
             requireAuthorizedCommunication({
                 linkId,
-                requester: sender,
+                requester:
+                    sender,
                 recipient
             });
 
@@ -625,7 +875,8 @@
                     "conversation"
                 ),
 
-            linkId,
+            linkId:
+                security.linkId,
 
             relationshipId:
                 security.relationshipId,
@@ -673,7 +924,8 @@
                 conversationId:
                     conversation.id,
 
-                linkId,
+                linkId:
+                    security.linkId,
 
                 relationshipId:
                     security.relationshipId,
@@ -729,6 +981,15 @@
             );
         }
 
+        if (
+            typeof linkId !== "string" ||
+            !linkId
+        ) {
+            throw new Error(
+                "linkId is required."
+            );
+        }
+
         const state = load();
 
         const conversation =
@@ -765,7 +1026,8 @@
         const security =
             requireAuthorizedCommunication({
                 linkId,
-                requester: sender,
+                requester:
+                    sender,
                 recipient
             });
 
@@ -779,341 +1041,13 @@
         }
 
         if (
-            !conversation.participants.includes(
-                sender.id
-            ) ||
-            !conversation.participants.includes(
-                recipient.id
-            )
+            conversation.linkType !==
+            security.linkType
         ) {
             throw new Error(
-                "The sender and recipient are not both authorized participants in this conversation."
-            );
-        }
-
-        const message = {
-            id:
-                createId(
-                    "message"
-                ),
-
-            conversationId,
-
-            senderId:
-                sender.id,
-
-            senderRole:
-                sender.role,
-
-            recipientId:
-                recipient.id,
-
-            recipientRole:
-                recipient.role,
-
-            text:
-                text.trim(),
-
-            createdAt:
-                new Date().toISOString()
-        };
-
-        conversation.messages.push(
-            message
-        );
-
-        save(state);
-
-        audit(
-            "message_sent",
-            {
-                conversationId,
-
-                messageId:
-                    message.id,
-
-                senderId:
-                    sender.id,
-
-                recipientId:
-                    recipient.id
-            }
-        );
-
-        return message;
-    }
-
-
-    /*
-     * =====================================================
-     * GET CONVERSATION
-     * =====================================================
-     */
-
-    function getConversation(
-        conversationId,
-        requester,
-        recipient
-    ) {
-        requireParticipant(
-            requester,
-            "Requester"
-        );
-
-        requireParticipant(
-            recipient,
-            "Recipient"
-        );
-
-        if (
-            typeof conversationId !==
-                "string" ||
-            !conversationId
-        ) {
-            throw new Error(
-                "conversationId is required."
-            );
-        }
-
-        const state = load();
-
-        const conversation =
-            state.conversations.find(
-                item =>
-                    item.id ===
-                    conversationId
-            );
-
-        if (!conversation) {
-            throw new Error(
-                "Authorized conversation was not found."
-            );
-        }
-
-        const security =
-            requireAuthorizedCommunication({
-                linkId:
-                    conversation.linkId,
-
-                requester,
-
-                recipient
-            });
-
-        if (
-            security.relationshipId !==
-            conversation.relationshipId
-        ) {
-            throw new Error(
-                "The verified education relationship does not match the conversation."
+                "The communication link type does not match the conversation."
             );
         }
 
         if (
-            !conversation.participants.includes(
-                requester.id
-            ) ||
-            !conversation.participants.includes(
-                recipient.id
-            )
-        ) {
-            throw new Error(
-                "The requester and recipient are not authorized participants in this conversation."
-            );
-        }
-
-        return conversation;
-    }
-
-
-    /*
-     * =====================================================
-     * CLOSE CONVERSATION
-     * =====================================================
-     */
-
-    function closeConversation(
-        conversationId,
-        requester,
-        recipient
-    ) {
-        getConversation(
-            conversationId,
-            requester,
-            recipient
-        );
-
-        const state = load();
-
-        const conversation =
-            state.conversations.find(
-                item =>
-                    item.id ===
-                    conversationId
-            );
-
-        if (!conversation) {
-            throw new Error(
-                "Authorized conversation was not found."
-            );
-        }
-
-        if (
-            conversation.status ===
-            "closed"
-        ) {
-            return conversation;
-        }
-
-        conversation.status =
-            "closed";
-
-        conversation.closedAt =
-            new Date().toISOString();
-
-        save(state);
-
-        audit(
-            "conversation_closed",
-            {
-                conversationId,
-
-                requesterId:
-                    requester.id,
-
-                recipientId:
-                    recipient.id
-            }
-        );
-
-        return conversation;
-    }
-
-
-    /*
-     * =====================================================
-     * SAFE STATUS
-     * =====================================================
-     */
-
-    function getStatus() {
-        return {
-            version:
-                VERSION,
-
-            available:
-                true,
-
-            prototypeOnly:
-                true,
-
-            productionServerAuthorizationRequired:
-                true,
-
-            automaticInformationAccess:
-                false,
-
-            secretsStored:
-                false,
-
-            passwordsStored:
-                false,
-
-            accessTokensStored:
-                false,
-
-            paymentSecretsStored:
-                false,
-
-            customerFundsHeld:
-                false,
-
-            localStoragePrototypeOnly:
-                true,
-
-            requiredPermission:
-                REQUIRED_PERMISSION,
-
-            supportedRoles:
-                ROLES.slice(),
-
-            supportedLinkTypes:
-                Object.keys(
-                    LINK_TYPES
-                )
-        };
-    }
-
-
-    /*
-     * =====================================================
-     * PROTOTYPE RESET
-     * =====================================================
-     */
-
-    function resetPrototypeState() {
-        try {
-            localStorage.removeItem(
-                STORAGE_KEY
-            );
-        } catch (error) {
-            throw new Error(
-                "Unable to reset secure communication prototype storage."
-            );
-        }
-
-        return getStatus();
-    }
-
-
-    /*
-     * =====================================================
-     * PUBLIC API
-     * =====================================================
-     */
-
-    window.PacificEducationSecureCommunication =
-        Object.freeze({
-            version:
-                VERSION,
-
-            createConversation,
-
-            sendMessage,
-
-            getConversation,
-
-            closeConversation,
-
-            getStatus,
-
-            resetPrototypeState
-        });
-
-
-    /*
-     * =====================================================
-     * OPTIONAL READINESS EVENT
-     * =====================================================
-     */
-
-    try {
-        window.dispatchEvent(
-            new CustomEvent(
-                "pacificEducationSecureCommunicationReady",
-                {
-                    detail: {
-                        version:
-                            VERSION
-                    }
-                }
-            )
-        );
-    } catch (error) {
-        /*
-         * Readiness notification is optional.
-         * It must never break the module.
-         */
-    }
-
-})();
+            !conversation.participants
