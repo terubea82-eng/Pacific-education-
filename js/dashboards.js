@@ -1,658 +1,740 @@
-/* =========================================
+/* =========================================================
    PACIFIC EDUCATION
    TEACHER & PARENT DASHBOARDS
-   STUDENT PROGRESS STORAGE
-   VERSION 1.2.0
-========================================= */
+   PROTECTED PROGRESS CONNECTION
+   VERSION 1.3.0
 
+   RULES
+   ---------------------------------------------------------
+   • Education Core is the preferred progress authority.
+   • Unauthorized progress changes are blocked.
+   • localStorage is compatibility storage only.
+   • Owner Test Day never becomes real learner progress.
+   • Day 30 and Day 60 assessment progression remains
+     controlled by assessments.js/Core.
+   ========================================================= */
 
-/* =========================================
-   GET REAL STUDENT PROGRESS
-========================================= */
+(function (window) {
+    "use strict";
 
-function getPacificStudentData() {
+    const VERSION = "1.3.0";
+    const MAX_DAY = 365;
 
-    let currentDayNumber =
-        parseInt(
-            localStorage.getItem("currentDayNumber") || "1",
-            10
-        );
+    const STORAGE = Object.freeze({
+        currentDayNumber: "currentDayNumber",
+        currentDay: "currentDay",
+        lessonsCompleted: "lessonsCompleted",
+        studentName: "studentName",
+        alphabetAssessment: "alphabetAssessment",
+        phonicsAssessment: "phonicsAssessment",
+        learningStatus: "learningStatus",
+        ownerTestDay: "pacificOwnerTestDay"
+    });
 
-    let lessonsCompleted =
-        parseInt(
-            localStorage.getItem("lessonsCompleted") || "0",
-            10
-        );
+    function getCore() {
+        if (
+            window.PacificEducationCore &&
+            typeof window.PacificEducationCore === "object"
+        ) {
+            return window.PacificEducationCore;
+        }
 
-    if (
-        isNaN(currentDayNumber) ||
-        currentDayNumber < 1
-    ) {
-        currentDayNumber = 1;
+        return null;
     }
 
-    if (currentDayNumber > 365) {
-        currentDayNumber = 365;
-    }
-
-    if (
-        isNaN(lessonsCompleted) ||
-        lessonsCompleted < 0
-    ) {
-        lessonsCompleted = 0;
-    }
-
-    return {
-
-        name:
-            localStorage.getItem("studentName") ||
-            "Student",
-
-        currentDay:
-            "Day " + currentDayNumber,
-
-        currentDayNumber:
-            currentDayNumber,
-
-        lessonsCompleted:
-            lessonsCompleted,
-
-        alphabetAssessment:
-            localStorage.getItem(
-                "alphabetAssessment"
-            ) || "Not completed",
-
-        phonicsAssessment:
-            localStorage.getItem(
-                "phonicsAssessment"
-            ) || "Not completed",
-
-        learningStatus:
-            localStorage.getItem(
-                "learningStatus"
-            ) || "Monitoring"
-
-    };
-
-}
-
-
-/* =========================================
-   TEACHER DASHBOARD
-========================================= */
-
-function refreshTeacherDashboard() {
-
-    const student =
-        getPacificStudentData();
-
-    const name =
-        document.getElementById(
-            "teacherStudentName"
-        );
-
-    const day =
-        document.getElementById(
-            "teacherCurrentDay"
-        );
-
-    const lessons =
-        document.getElementById(
-            "teacherLessonsCompleted"
-        );
-
-    const alphabet =
-        document.getElementById(
-            "teacherAlphabetAssessment"
-        );
-
-    const phonics =
-        document.getElementById(
-            "teacherPhonicsAssessment"
-        );
-
-    const status =
-        document.getElementById(
-            "teacherLearningStatus"
-        );
-
-    if (name) {
-        name.textContent =
-            student.name;
-    }
-
-    if (day) {
-        day.textContent =
-            student.currentDay;
-    }
-
-    if (lessons) {
-        lessons.textContent =
-            student.lessonsCompleted;
-    }
-
-    if (alphabet) {
-        alphabet.textContent =
-            student.alphabetAssessment;
-    }
-
-    if (phonics) {
-        phonics.textContent =
-            student.phonicsAssessment;
-    }
-
-    if (status) {
-        status.textContent =
-            student.learningStatus;
-    }
-
-}
-
-
-/* =========================================
-   PARENT DASHBOARD
-========================================= */
-
-function refreshParentDashboard() {
-
-    const student =
-        getPacificStudentData();
-
-    const name =
-        document.getElementById(
-            "parentStudentName"
-        );
-
-    const day =
-        document.getElementById(
-            "parentCurrentDay"
-        );
-
-    const lessons =
-        document.getElementById(
-            "parentLessonsCompleted"
-        );
-
-    const alphabet =
-        document.getElementById(
-            "parentAlphabetAssessment"
-        );
-
-    const phonics =
-        document.getElementById(
-            "parentPhonicsAssessment"
-        );
-
-    const status =
-        document.getElementById(
-            "parentLearningStatus"
-        );
-
-    if (name) {
-        name.textContent =
-            student.name;
-    }
-
-    if (day) {
-        day.textContent =
-            student.currentDay;
-    }
-
-    if (lessons) {
-        lessons.textContent =
-            student.lessonsCompleted;
-    }
-
-    if (alphabet) {
-        alphabet.textContent =
-            student.alphabetAssessment;
-    }
-
-    if (phonics) {
-        phonics.textContent =
-            student.phonicsAssessment;
-    }
-
-    if (status) {
+    function isAuthorized() {
+        const core = getCore();
 
         if (
+            core &&
+            typeof core.isAuthorized === "function"
+        ) {
+            return core.isAuthorized() === true;
+        }
+
+        /*
+         * Without the protected Core, dashboard actions that
+         * change learner progress are not authorized.
+         */
+        return false;
+    }
+
+    function readStorage(key, fallback) {
+        try {
+            if (
+                typeof window.localStorage === "undefined"
+            ) {
+                return fallback;
+            }
+
+            const value =
+                window.localStorage.getItem(key);
+
+            return value === null
+                ? fallback
+                : value;
+        } catch (error) {
+            console.warn(
+                "Pacific Education Dashboard storage read blocked.",
+                error
+            );
+
+            return fallback;
+        }
+    }
+
+    function writeStorage(key, value) {
+        try {
+            if (
+                typeof window.localStorage === "undefined"
+            ) {
+                return false;
+            }
+
+            window.localStorage.setItem(
+                key,
+                String(value)
+            );
+
+            return true;
+        } catch (error) {
+            console.warn(
+                "Pacific Education Dashboard storage write blocked.",
+                error
+            );
+
+            return false;
+        }
+    }
+
+    function removeStorage(key) {
+        try {
+            if (
+                typeof window.localStorage === "undefined"
+            ) {
+                return false;
+            }
+
+            window.localStorage.removeItem(key);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function toValidDay(value, fallback) {
+        const number = parseInt(value, 10);
+
+        if (
+            isNaN(number) ||
+            number < 1
+        ) {
+            return fallback;
+        }
+
+        return Math.min(number, MAX_DAY);
+    }
+
+    function toValidLessons(value) {
+        const number = parseInt(value, 10);
+
+        if (
+            isNaN(number) ||
+            number < 0
+        ) {
+            return 0;
+        }
+
+        return number;
+    }
+
+    function getCoreState() {
+        const core = getCore();
+
+        if (
+            core &&
+            typeof core.getState === "function"
+        ) {
+            try {
+                const state = core.getState();
+
+                if (
+                    state &&
+                    typeof state === "object"
+                ) {
+                    return state;
+                }
+            } catch (error) {
+                console.warn(
+                    "Pacific Education Core state could not be read.",
+                    error
+                );
+            }
+        }
+
+        return null;
+    }
+
+    function getPacificStudentData() {
+        const coreState = getCoreState();
+
+        const coreDay =
+            coreState &&
+            coreState.lesson
+                ? toValidDay(
+                    coreState.lesson.day,
+                    null
+                )
+                : null;
+
+        const currentDayNumber =
+            coreDay ||
+            toValidDay(
+                readStorage(
+                    STORAGE.currentDayNumber,
+                    "1"
+                ),
+                1
+            );
+
+        const coreStudent =
+            coreState &&
+            coreState.student
+                ? coreState.student
+                : {};
+
+        const coreIdentity =
+            coreState &&
+            coreState.identity
+                ? coreState.identity
+                : {};
+
+        const name =
+            coreStudent.name ||
+            coreIdentity.name ||
+            readStorage(
+                STORAGE.studentName,
+                "Student"
+            );
+
+        const lessonsCompleted =
+            toValidLessons(
+                readStorage(
+                    STORAGE.lessonsCompleted,
+                    "0"
+                )
+            );
+
+        return {
+            name: name || "Student",
+
+            currentDay:
+                "Day " +
+                currentDayNumber,
+
+            currentDayNumber:
+                currentDayNumber,
+
+            lessonsCompleted:
+                lessonsCompleted,
+
+            alphabetAssessment:
+                readStorage(
+                    STORAGE.alphabetAssessment,
+                    "Not completed"
+                ),
+
+            phonicsAssessment:
+                readStorage(
+                    STORAGE.phonicsAssessment,
+                    "Not completed"
+                ),
+
+            learningStatus:
+                readStorage(
+                    STORAGE.learningStatus,
+                    "Monitoring"
+                )
+        };
+    }
+
+    function setText(id, value) {
+        const element =
+            document.getElementById(id);
+
+        if (element) {
+            element.textContent =
+                value === undefined ||
+                value === null
+                    ? ""
+                    : String(value);
+        }
+    }
+
+    function refreshTeacherDashboard() {
+        const student =
+            getPacificStudentData();
+
+        setText(
+            "teacherStudentName",
+            student.name
+        );
+
+        setText(
+            "teacherCurrentDay",
+            student.currentDay
+        );
+
+        setText(
+            "teacherLessonsCompleted",
+            student.lessonsCompleted
+        );
+
+        setText(
+            "teacherAlphabetAssessment",
+            student.alphabetAssessment
+        );
+
+        setText(
+            "teacherPhonicsAssessment",
+            student.phonicsAssessment
+        );
+
+        setText(
+            "teacherLearningStatus",
+            student.learningStatus
+        );
+    }
+
+    function refreshParentDashboard() {
+        const student =
+            getPacificStudentData();
+
+        setText(
+            "parentStudentName",
+            student.name
+        );
+
+        setText(
+            "parentCurrentDay",
+            student.currentDay
+        );
+
+        setText(
+            "parentLessonsCompleted",
+            student.lessonsCompleted
+        );
+
+        setText(
+            "parentAlphabetAssessment",
+            student.alphabetAssessment
+        );
+
+        setText(
+            "parentPhonicsAssessment",
+            student.phonicsAssessment
+        );
+
+        setText(
+            "parentLearningStatus",
             student.learningStatus ===
             "Monitoring"
-        ) {
-
-            status.textContent =
-                "Keep practising";
-
-        } else {
-
-            status.textContent =
-                student.learningStatus;
-
-        }
-
+                ? "Keep practising"
+                : student.learningStatus
+        );
     }
 
-}
+    function refreshAllDashboards() {
+        refreshTeacherDashboard();
+        refreshParentDashboard();
+    }
 
+    function getOwnerTestDay() {
+        const value =
+            readStorage(
+                STORAGE.ownerTestDay,
+                ""
+            );
 
-/* =========================================
-   REFRESH ALL DASHBOARDS
-========================================= */
-
-function refreshAllDashboards() {
-
-    refreshTeacherDashboard();
-
-    refreshParentDashboard();
-
-}
-
-
-/* =========================================
-   EXIT OWNER TEST MODE
-========================================= */
-
-function exitOwnerTestMode() {
-
-    localStorage.removeItem(
-        "pacificOwnerTestDay"
-    );
-
-}
-
-
-/* =========================================
-   COMPLETE DAILY LESSON
-========================================= */
-
-function completeLesson() {
-
-    /*
-       Owner testing must never count as
-       a real learner lesson.
-    */
-
-    if (
-        localStorage.getItem(
-            "pacificOwnerTestDay"
-        )
-    ) {
-
-        exitOwnerTestMode();
+        const day =
+            parseInt(value, 10);
 
         if (
-            typeof displayDailyLesson ===
-            "function"
+            isNaN(day) ||
+            day < 1 ||
+            day > MAX_DAY
         ) {
-
-            displayDailyLesson();
-
+            return null;
         }
 
-        refreshAllDashboards();
-
-        return;
-
+        return day;
     }
 
-
-    let currentDayNumber =
-        parseInt(
-            localStorage.getItem(
-                "currentDayNumber"
-            ) || "1",
-            10
+    function exitOwnerTestMode() {
+        removeStorage(
+            STORAGE.ownerTestDay
         );
-
-    let lessonsCompleted =
-        parseInt(
-            localStorage.getItem(
-                "lessonsCompleted"
-            ) || "0",
-            10
-        );
-
-
-    /* =========================================
-       VALIDATE DAY
-    ========================================= */
-
-    if (
-        isNaN(currentDayNumber) ||
-        currentDayNumber < 1
-    ) {
-        currentDayNumber = 1;
     }
 
-    if (currentDayNumber > 365) {
-        currentDayNumber = 365;
-    }
-
-
-    /* =========================================
-       VALIDATE LESSON COUNT
-    ========================================= */
-
-    if (
-        isNaN(lessonsCompleted) ||
-        lessonsCompleted < 0
-    ) {
-        lessonsCompleted = 0;
-    }
-
-
-    /* =========================================
-       DAY 365 COMPLETE
-    ========================================= */
-
-    if (currentDayNumber >= 365) {
-
+    function displayLessonIfAvailable() {
         if (
-            typeof displayDailyLesson ===
+            typeof window.displayDailyLesson ===
             "function"
         ) {
-
-            displayDailyLesson();
-
+            window.displayDailyLesson();
         }
-
-        refreshAllDashboards();
-
-        return;
-
     }
-
-
-    /* =========================================
-       RECORD REAL LESSON
-    ========================================= */
-
-    lessonsCompleted++;
-
-
-    /* =========================================
-       DAY 60 CHECKPOINT
-    ========================================= */
-
-    if (currentDayNumber !== 60) {
-
-        currentDayNumber++;
-
-    }
-
-
-    /* =========================================
-       MAXIMUM DAY 365
-    ========================================= */
-
-    if (currentDayNumber > 365) {
-
-        currentDayNumber = 365;
-
-    }
-
-
-    /* =========================================
-       SAVE REAL PROGRESS
-    ========================================= */
-
-    localStorage.setItem(
-        "currentDayNumber",
-        currentDayNumber.toString()
-    );
-
-    localStorage.setItem(
-        "currentDay",
-        "Day " + currentDayNumber
-    );
-
-    localStorage.setItem(
-        "lessonsCompleted",
-        lessonsCompleted.toString()
-    );
-
-
-    /* =========================================
-       REFRESH DASHBOARDS
-    ========================================= */
-
-    refreshAllDashboards();
-
-
-    /* =========================================
-       REFRESH LESSON
-    ========================================= */
-
-    if (
-        typeof displayDailyLesson ===
-        "function"
-    ) {
-
-        displayDailyLesson();
-
-    }
-
-}
-
-
-/* =========================================
-   OWNER TEST MODE
-   IMPORTANT:
-   DOES NOT CHANGE REAL PROGRESS.
-========================================= */
-
-function setOwnerTestDay(dayNumber) {
-
-    const testDay =
-        parseInt(
-            dayNumber,
-            10
-        );
-
-
-    /* =========================================
-       VALIDATE TEST DAY
-    ========================================= */
-
-    if (
-        isNaN(testDay) ||
-        testDay < 1 ||
-        testDay > 365
-    ) {
-
-        console.warn(
-            "Invalid Owner Test Day:",
-            dayNumber
-        );
-
-        return;
-
-    }
-
-
-    /* =========================================
-       SAVE TEST DAY SEPARATELY
-    ========================================= */
-
-    localStorage.setItem(
-        "pacificOwnerTestDay",
-        testDay.toString()
-    );
-
 
     /*
-       Save the learner's real progress before
-       temporarily asking the existing lesson
-       engine to display the test lesson.
-    */
+     * ---------------------------------------------------------
+     * COMPLETE REAL LESSON
+     * ---------------------------------------------------------
+     */
 
-    const realDay =
-        localStorage.getItem(
-            "currentDayNumber"
+    function completeLesson() {
+        if (!isAuthorized()) {
+            console.warn(
+                "Pacific Education: lesson completion blocked because the user is not authorized."
+            );
+
+            return false;
+        }
+
+        /*
+         * Owner test mode must never create a real lesson
+         * completion or real learner progression.
+         */
+        if (getOwnerTestDay() !== null) {
+            exitOwnerTestMode();
+            refreshAllDashboards();
+            displayLessonIfAvailable();
+
+            return false;
+        }
+
+        const core =
+            getCore();
+
+        const current =
+            getPacificStudentData();
+
+        const currentDay =
+            current.currentDayNumber;
+
+        /*
+         * Day 365 is the final programme day.
+         */
+        if (currentDay >= MAX_DAY) {
+            refreshAllDashboards();
+            displayLessonIfAvailable();
+
+            return true;
+        }
+
+        const nextDay =
+            currentDay + 1;
+
+        /*
+         * Update the protected Core first.
+         * Core authorization is required.
+         */
+        if (
+            !core ||
+            typeof core.setLesson !==
+            "function"
+        ) {
+            console.warn(
+                "Pacific Education: protected Core lesson API is unavailable. Progress was not changed."
+            );
+
+            return false;
+        }
+
+        const existingLesson =
+            currentCoreLesson();
+
+        const lessonUpdate = {
+            lessonId:
+                existingLesson &&
+                existingLesson.lessonId
+                    ? existingLesson.lessonId
+                    : null,
+
+            day:
+                nextDay,
+
+            subject:
+                existingLesson &&
+                existingLesson.subject
+                    ? existingLesson.subject
+                    : "",
+
+            title:
+                existingLesson &&
+                existingLesson.title
+                    ? existingLesson.title
+                    : "",
+
+            concept:
+                existingLesson &&
+                existingLesson.concept
+                    ? existingLesson.concept
+                    : "",
+
+            status:
+                "completed"
+        };
+
+        let savedLesson;
+
+        try {
+            savedLesson =
+                core.setLesson(
+                    lessonUpdate
+                );
+        } catch (error) {
+            console.error(
+                "Pacific Education: protected lesson update failed.",
+                error
+            );
+
+            return false;
+        }
+
+        if (!savedLesson) {
+            console.warn(
+                "Pacific Education: Core rejected lesson progression."
+            );
+
+            return false;
+        }
+
+        /*
+         * Compatibility counters are maintained only after
+         * Core accepts the progression.
+         */
+        const lessonsCompleted =
+            current.lessonsCompleted + 1;
+
+        writeStorage(
+            STORAGE.currentDayNumber,
+            nextDay
         );
 
-    const realCurrentDay =
-        localStorage.getItem(
-            "currentDay"
+        writeStorage(
+            STORAGE.currentDay,
+            "Day " + nextDay
         );
 
+        writeStorage(
+            STORAGE.lessonsCompleted,
+            lessonsCompleted
+        );
 
-    /* =========================================
-       TEMPORARY DISPLAY ONLY
-    ========================================= */
+        refreshAllDashboards();
+        displayLessonIfAvailable();
 
-    localStorage.setItem(
-        "currentDayNumber",
-        testDay.toString()
-    );
-
-    localStorage.setItem(
-        "currentDay",
-        "Day " + testDay
-    );
-
-
-    if (
-        typeof displayDailyLesson ===
-        "function"
-    ) {
-
-        displayDailyLesson();
-
+        return true;
     }
 
+    function currentCoreLesson() {
+        const state =
+            getCoreState();
 
-    /* =========================================
-       RESTORE REAL LEARNER PROGRESS
-    ========================================= */
+        if (
+            state &&
+            state.lesson &&
+            typeof state.lesson ===
+            "object"
+        ) {
+            return state.lesson;
+        }
 
-    if (realDay !== null) {
+        return null;
+    }
 
-        localStorage.setItem(
-            "currentDayNumber",
+    /*
+     * ---------------------------------------------------------
+     * OWNER TEST DAY
+     * ---------------------------------------------------------
+     *
+     * Test display is temporary and does not modify the
+     * learner's permanent Core progress.
+     */
+
+    function setOwnerTestDay(dayNumber) {
+        if (!isAuthorized()) {
+            console.warn(
+                "Pacific Education: Owner Test Mode blocked because authorization is not active."
+            );
+
+            return false;
+        }
+
+        const testDay =
+            parseInt(
+                dayNumber,
+                10
+            );
+
+        if (
+            isNaN(testDay) ||
+            testDay < 1 ||
+            testDay > MAX_DAY
+        ) {
+            console.warn(
+                "Invalid Owner Test Day:",
+                dayNumber
+            );
+
+            return false;
+        }
+
+        /*
+         * Save the requested test day separately.
+         */
+        writeStorage(
+            STORAGE.ownerTestDay,
+            testDay
+        );
+
+        /*
+         * Save the real compatibility values so the display
+         * can be restored after testing.
+         */
+        const realDay =
+            readStorage(
+                STORAGE.currentDayNumber,
+                "1"
+            );
+
+        const realCurrentDay =
+            readStorage(
+                STORAGE.currentDay,
+                "Day 1"
+            );
+
+        /*
+         * Temporary display only.
+         *
+         * The protected Core is deliberately NOT changed.
+         */
+        writeStorage(
+            STORAGE.currentDayNumber,
+            testDay
+        );
+
+        writeStorage(
+            STORAGE.currentDay,
+            "Day " + testDay
+        );
+
+        displayLessonIfAvailable();
+
+        /*
+         * Immediately restore the real compatibility
+         * progress after the lesson engine has rendered.
+         */
+        writeStorage(
+            STORAGE.currentDayNumber,
             realDay
         );
 
-    } else {
-
-        localStorage.removeItem(
-            "currentDayNumber"
-        );
-
-    }
-
-
-    if (realCurrentDay !== null) {
-
-        localStorage.setItem(
-            "currentDay",
+        writeStorage(
+            STORAGE.currentDay,
             realCurrentDay
         );
 
-    } else {
-
-        localStorage.removeItem(
-            "currentDay"
-        );
-
-    }
-
-
-    /* =========================================
-       REFRESH DASHBOARDS FROM REAL DATA
-    ========================================= */
-
-    refreshAllDashboards();
-
-
-    console.info(
-        "Pacific Education Owner Test Mode:",
-        "Day " + testDay,
-        "Real learner progress preserved."
-    );
-
-}
-
-
-/* =========================================
-   GET OWNER TEST DAY
-========================================= */
-
-function getOwnerTestDay() {
-
-    const testDay =
-        parseInt(
-            localStorage.getItem(
-                "pacificOwnerTestDay"
-            ) || "",
-            10
-        );
-
-    if (
-        isNaN(testDay) ||
-        testDay < 1 ||
-        testDay > 365
-    ) {
-
-        return null;
-
-    }
-
-    return testDay;
-
-}
-
-
-/* =========================================
-   PAGE LOAD
-========================================= */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
         refreshAllDashboards();
 
+        console.info(
+            "Pacific Education Owner Test Mode:",
+            "Day " + testDay,
+            "Real learner progress preserved."
+        );
+
+        return true;
     }
-);
 
+    /*
+     * ---------------------------------------------------------
+     * PUBLIC API
+     * ---------------------------------------------------------
+     */
 
-/* =========================================
-   PUBLIC DASHBOARD API
-========================================= */
+    window.PacificEducationDashboards =
+        Object.freeze({
 
-window.PacificEducationDashboards =
-    Object.freeze({
+            version:
+                VERSION,
 
-        version: "1.2.0",
+            isAuthorized:
+                isAuthorized,
 
-        getStudentData:
-            getPacificStudentData,
+            getStudentData:
+                getPacificStudentData,
 
-        refreshTeacher:
-            refreshTeacherDashboard,
+            refreshTeacher:
+                refreshTeacherDashboard,
 
-        refreshParent:
-            refreshParentDashboard,
+            refreshParent:
+                refreshParentDashboard,
 
-        refreshAll:
-            refreshAllDashboards,
+            refreshAll:
+                refreshAllDashboards,
 
-        completeLesson:
-            completeLesson,
+            completeLesson:
+                completeLesson,
 
-        setOwnerTestDay:
-            setOwnerTestDay,
+            setOwnerTestDay:
+                setOwnerTestDay,
 
-        getOwnerTestDay:
-            getOwnerTestDay,
+            getOwnerTestDay:
+                getOwnerTestDay,
 
-        exitOwnerTestMode:
-            exitOwnerTestMode
+            exitOwnerTestMode:
+                exitOwnerTestMode
+        });
 
-    });
+    /*
+     * Preserve existing global functions used by the
+     * Class 1 prototype.
+     */
+    window.getPacificStudentData =
+        getPacificStudentData;
 
+    window.refreshTeacherDashboard =
+        refreshTeacherDashboard;
 
-/* =========================================
-   END DASHBOARDS ENGINE
-========================================= */
+    window.refreshParentDashboard =
+        refreshParentDashboard;
+
+    window.refreshAllDashboards =
+        refreshAllDashboards;
+
+    window.completeLesson =
+        completeLesson;
+
+    window.setOwnerTestDay =
+        setOwnerTestDay;
+
+    window.getOwnerTestDay =
+        getOwnerTestDay;
+
+    window.exitOwnerTestMode =
+        exitOwnerTestMode;
+
+    /*
+     * ---------------------------------------------------------
+     * PAGE LOAD
+     * ---------------------------------------------------------
+     */
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+            refreshAllDashboards();
+        }
+    );
+
+})(window);
