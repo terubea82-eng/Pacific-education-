@@ -2,7 +2,7 @@
    PACIFIC EDUCATION
    TEACHER & PARENT DASHBOARDS
    PROTECTED PROGRESS CONNECTION
-   VERSION 1.3.0
+   VERSION 1.4.0
 
    RULES
    ---------------------------------------------------------
@@ -10,15 +10,18 @@
    • Unauthorized progress changes are blocked.
    • localStorage is compatibility storage only.
    • Owner Test Day never becomes real learner progress.
-   • Day 30 and Day 60 assessment progression remains
-     controlled by assessments.js/Core.
+   • Day 30 requires a passed Alphabet Assessment.
+   • Day 60 requires a passed Phonics Assessment.
+   • Assessment progression remains controlled by
+     assessments.js/Core.
    ========================================================= */
 
 (function (window) {
     "use strict";
 
-    const VERSION = "1.3.0";
+    const VERSION = "1.4.0";
     const MAX_DAY = 365;
+    const ASSESSMENT_PASS_MARK = 80;
 
     const STORAGE = Object.freeze({
         currentDayNumber: "currentDayNumber",
@@ -52,10 +55,6 @@
             return core.isAuthorized() === true;
         }
 
-        /*
-         * Without the protected Core, dashboard actions that
-         * change learner progress are not authorized.
-         */
         return false;
     }
 
@@ -385,11 +384,224 @@
         }
     }
 
-    /*
-     * ---------------------------------------------------------
-     * COMPLETE REAL LESSON
-     * ---------------------------------------------------------
-     */
+    /* =====================================================
+       ASSESSMENT GATE
+       ===================================================== */
+
+    function getAssessmentRecords() {
+        const state =
+            getCoreState();
+
+        if (
+            !state ||
+            !Array.isArray(state.assessments)
+        ) {
+            return [];
+        }
+
+        return state.assessments;
+    }
+
+    function assessmentMatches(record, type, day) {
+        if (
+            !record ||
+            typeof record !== "object"
+        ) {
+            return false;
+        }
+
+        const recordType =
+            typeof record.type === "string"
+                ? record.type.toLowerCase()
+                : "";
+
+        const recordTitle =
+            typeof record.title === "string"
+                ? record.title.toLowerCase()
+                : "";
+
+        const recordAssessmentType =
+            typeof record.assessmentType === "string"
+                ? record.assessmentType.toLowerCase()
+                : "";
+
+        const requestedType =
+            type.toLowerCase();
+
+        const typeMatches =
+            recordType === requestedType ||
+            recordAssessmentType === requestedType ||
+            recordTitle.indexOf(
+                requestedType
+            ) !== -1;
+
+        if (!typeMatches) {
+            return false;
+        }
+
+        if (
+            record.day !== undefined &&
+            record.day !== null
+        ) {
+            const recordDay =
+                parseInt(
+                    record.day,
+                    10
+                );
+
+            if (
+                !isNaN(recordDay) &&
+                recordDay !== day
+            ) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function assessmentRecordPassed(record) {
+        if (
+            !record ||
+            typeof record !== "object"
+        ) {
+            return false;
+        }
+
+        if (record.passed === true) {
+            return true;
+        }
+
+        if (
+            typeof record.status === "string" &&
+            record.status.toLowerCase() ===
+            "passed"
+        ) {
+            return true;
+        }
+
+        const percentage =
+            Number(
+                record.percentage !== undefined
+                    ? record.percentage
+                    : record.score
+            );
+
+        if (
+            Number.isFinite(percentage) &&
+            percentage >= ASSESSMENT_PASS_MARK
+        ) {
+            return true;
+        }
+
+        return false;
+    }
+
+    function hasPassedRequiredAssessment(
+        type,
+        day
+    ) {
+        if (!isAuthorized()) {
+            return false;
+        }
+
+        const records =
+            getAssessmentRecords();
+
+        for (
+            let index = 0;
+            index < records.length;
+            index += 1
+        ) {
+            const record =
+                records[index];
+
+            if (
+                assessmentMatches(
+                    record,
+                    type,
+                    day
+                ) &&
+                assessmentRecordPassed(record)
+            ) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    function getRequiredAssessmentForDay(day) {
+        if (day === 30) {
+            return {
+                type: "alphabet",
+                title: "Alphabet Assessment"
+            };
+        }
+
+        if (day === 60) {
+            return {
+                type: "phonics",
+                title: "Phonics Assessment"
+            };
+        }
+
+        return null;
+    }
+
+    function canProgressFromDay(day) {
+        const required =
+            getRequiredAssessmentForDay(
+                day
+            );
+
+        if (!required) {
+            return true;
+        }
+
+        return hasPassedRequiredAssessment(
+            required.type,
+            day
+        );
+    }
+
+    function showAssessmentGate(day) {
+        const required =
+            getRequiredAssessmentForDay(
+                day
+            );
+
+        if (!required) {
+            return;
+        }
+
+        const message =
+            "Day " +
+            day +
+            " requires a passed " +
+            required.title +
+            " before learning can progress.";
+
+        console.warn(
+            "Pacific Education:",
+            message
+        );
+
+        if (
+            typeof window.showLesson ===
+            "function"
+        ) {
+            window.showLesson(
+                "<p>" +
+                message +
+                "</p>"
+            );
+        }
+    }
+
+    /* =====================================================
+       COMPLETE REAL LESSON
+       ===================================================== */
 
     function completeLesson() {
         if (!isAuthorized()) {
@@ -401,8 +613,8 @@
         }
 
         /*
-         * Owner test mode must never create a real lesson
-         * completion or real learner progression.
+         * Owner Test Mode must never create a real
+         * lesson completion.
          */
         if (getOwnerTestDay() !== null) {
             exitOwnerTestMode();
@@ -422,6 +634,26 @@
             current.currentDayNumber;
 
         /*
+         * Day 30 and Day 60 are protected assessment gates.
+         *
+         * The learner must pass the required assessment
+         * before progression is allowed.
+         */
+        if (
+            !canProgressFromDay(
+                currentDay
+            )
+        ) {
+            showAssessmentGate(
+                currentDay
+            );
+
+            refreshAllDashboards();
+
+            return false;
+        }
+
+        /*
          * Day 365 is the final programme day.
          */
         if (currentDay >= MAX_DAY) {
@@ -435,8 +667,7 @@
             currentDay + 1;
 
         /*
-         * Update the protected Core first.
-         * Core authorization is required.
+         * Protected Core lesson API is mandatory.
          */
         if (
             !core ||
@@ -510,8 +741,8 @@
         }
 
         /*
-         * Compatibility counters are maintained only after
-         * Core accepts the progression.
+         * Compatibility counters are updated only after
+         * Core accepts the protected lesson change.
          */
         const lessonsCompleted =
             current.lessonsCompleted + 1;
@@ -553,14 +784,9 @@
         return null;
     }
 
-    /*
-     * ---------------------------------------------------------
-     * OWNER TEST DAY
-     * ---------------------------------------------------------
-     *
-     * Test display is temporary and does not modify the
-     * learner's permanent Core progress.
-     */
+    /* =====================================================
+       OWNER TEST DAY
+       ===================================================== */
 
     function setOwnerTestDay(dayNumber) {
         if (!isAuthorized()) {
@@ -590,18 +816,11 @@
             return false;
         }
 
-        /*
-         * Save the requested test day separately.
-         */
         writeStorage(
             STORAGE.ownerTestDay,
             testDay
         );
 
-        /*
-         * Save the real compatibility values so the display
-         * can be restored after testing.
-         */
         const realDay =
             readStorage(
                 STORAGE.currentDayNumber,
@@ -615,9 +834,8 @@
             );
 
         /*
-         * Temporary display only.
-         *
-         * The protected Core is deliberately NOT changed.
+         * Temporary compatibility display only.
+         * The protected Core is NOT changed.
          */
         writeStorage(
             STORAGE.currentDayNumber,
@@ -632,8 +850,7 @@
         displayLessonIfAvailable();
 
         /*
-         * Immediately restore the real compatibility
-         * progress after the lesson engine has rendered.
+         * Restore the real compatibility values.
          */
         writeStorage(
             STORAGE.currentDayNumber,
@@ -656,17 +873,18 @@
         return true;
     }
 
-    /*
-     * ---------------------------------------------------------
-     * PUBLIC API
-     * ---------------------------------------------------------
-     */
+    /* =====================================================
+       DASHBOARD PUBLIC API
+       ===================================================== */
 
     window.PacificEducationDashboards =
         Object.freeze({
 
             version:
                 VERSION,
+
+            assessmentPassMark:
+                ASSESSMENT_PASS_MARK,
 
             isAuthorized:
                 isAuthorized,
@@ -693,13 +911,20 @@
                 getOwnerTestDay,
 
             exitOwnerTestMode:
-                exitOwnerTestMode
+                exitOwnerTestMode,
+
+            hasPassedRequiredAssessment:
+                hasPassedRequiredAssessment,
+
+            canProgressFromDay:
+                canProgressFromDay
         });
 
     /*
      * Preserve existing global functions used by the
      * Class 1 prototype.
      */
+
     window.getPacificStudentData =
         getPacificStudentData;
 
@@ -725,9 +950,9 @@
         exitOwnerTestMode;
 
     /*
-     * ---------------------------------------------------------
-     * PAGE LOAD
-     * ---------------------------------------------------------
+     * =====================================================
+       PAGE LOAD
+       =====================================================
      */
 
     document.addEventListener(
