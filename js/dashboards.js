@@ -37,10 +37,6 @@
         ownerTestDay: "pacificOwnerTestDay"
     });
 
-    /*
-     * Connection marker used by the protected lesson/
-     * assessment connection layer.
-     */
     window.__pacificEducationProtectedWrapper = true;
 
     function getCore() {
@@ -69,18 +65,13 @@
 
     function readStorage(key, fallback) {
         try {
-            if (
-                typeof window.localStorage === "undefined"
-            ) {
+            if (typeof window.localStorage === "undefined") {
                 return fallback;
             }
 
-            const value =
-                window.localStorage.getItem(key);
+            const value = window.localStorage.getItem(key);
 
-            return value === null
-                ? fallback
-                : value;
+            return value === null ? fallback : value;
         } catch (error) {
             console.warn(
                 "Pacific Education Dashboard storage read blocked.",
@@ -93,17 +84,11 @@
 
     function writeStorage(key, value) {
         try {
-            if (
-                typeof window.localStorage === "undefined"
-            ) {
+            if (typeof window.localStorage === "undefined") {
                 return false;
             }
 
-            window.localStorage.setItem(
-                key,
-                String(value)
-            );
-
+            window.localStorage.setItem(key, String(value));
             return true;
         } catch (error) {
             console.warn(
@@ -117,14 +102,11 @@
 
     function removeStorage(key) {
         try {
-            if (
-                typeof window.localStorage === "undefined"
-            ) {
+            if (typeof window.localStorage === "undefined") {
                 return false;
             }
 
             window.localStorage.removeItem(key);
-
             return true;
         } catch (error) {
             return false;
@@ -134,10 +116,7 @@
     function toValidDay(value, fallback) {
         const number = parseInt(value, 10);
 
-        if (
-            isNaN(number) ||
-            number < 1
-        ) {
+        if (isNaN(number) || number < 1) {
             return fallback;
         }
 
@@ -147,10 +126,7 @@
     function toValidLessons(value) {
         const number = parseInt(value, 10);
 
-        if (
-            isNaN(number) ||
-            number < 0
-        ) {
+        if (isNaN(number) || number < 0) {
             return 0;
         }
 
@@ -196,8 +172,7 @@
             typeof core.getLearningHistory === "function"
         ) {
             try {
-                const history =
-                    core.getLearningHistory();
+                const history = core.getLearningHistory();
 
                 if (Array.isArray(history)) {
                     return history;
@@ -210,10 +185,6 @@
             }
         }
 
-        /*
-         * Some Core versions expose the state directly.
-         * This remains read-only compatibility handling.
-         */
         const state = getCoreState();
 
         if (
@@ -258,23 +229,15 @@
 
         return (
             typeof entry.status === "string" &&
-            entry.status.toLowerCase() ===
-                "completed"
+            entry.status.toLowerCase() === "completed"
         );
     }
 
-    function historyEntryMatchesStudent(
-        entry,
-        studentId
-    ) {
+    function historyEntryMatchesStudent(entry, studentId) {
         if (!studentId) {
             return true;
         }
 
-        /*
-         * If an entry has no studentId, do not claim it
-         * belongs to the current learner.
-         */
         if (
             entry.studentId === undefined ||
             entry.studentId === null
@@ -282,21 +245,20 @@
             return false;
         }
 
-        return String(entry.studentId) ===
-            String(studentId);
+        return (
+            String(entry.studentId) ===
+            String(studentId)
+        );
     }
 
     function countCoreCompletedLessons() {
-        const history =
-            getCoreLearningHistory();
+        const history = getCoreLearningHistory();
 
         if (!Array.isArray(history)) {
             return null;
         }
 
-        const studentId =
-            getCurrentStudentId();
-
+        const studentId = getCurrentStudentId();
         let count = 0;
 
         for (
@@ -304,8 +266,7 @@
             index < history.length;
             index += 1
         ) {
-            const entry =
-                history[index];
+            const entry = history[index];
 
             if (
                 isCompletedHistoryEntry(entry) &&
@@ -321,26 +282,33 @@
         return count;
     }
 
-    function currentLessonAlreadyCompleted(
-        day
-    ) {
-        const history =
-            getCoreLearningHistory();
+    function getCompletedLessonCount() {
+        const coreCount = countCoreCompletedLessons();
 
-        const studentId =
-            getCurrentStudentId();
+        if (coreCount !== null) {
+            return coreCount;
+        }
+
+        return toValidLessons(
+            readStorage(
+                STORAGE.lessonsCompleted,
+                "0"
+            )
+        );
+    }
+
+    function currentLessonAlreadyCompleted(day) {
+        const history = getCoreLearningHistory();
+        const studentId = getCurrentStudentId();
 
         for (
             let index = 0;
             index < history.length;
             index += 1
         ) {
-            const entry =
-                history[index];
+            const entry = history[index];
 
-            if (
-                !isCompletedHistoryEntry(entry)
-            ) {
+            if (!isCompletedHistoryEntry(entry)) {
                 continue;
             }
 
@@ -371,8 +339,7 @@
        ===================================================== */
 
     function getPacificStudentData() {
-        const coreState =
-            getCoreState();
+        const coreState = getCoreState();
 
         const coreDay =
             coreState &&
@@ -413,20 +380,12 @@
                 "Student"
             );
 
-        /*
-         * Core learning history is now authoritative.
-         *
-         * localStorage remains only as a compatibility
-         * fallback when Core history is unavailable.
-         */
         const coreCompleted =
             countCoreCompletedLessons();
 
         const lessonsCompleted =
             coreCompleted !== null
-                ? toValidLessons(
-                    coreCompleted
-                )
+                ? toValidLessons(coreCompleted)
                 : toValidLessons(
                     readStorage(
                         STORAGE.lessonsCompleted,
@@ -435,12 +394,10 @@
                 );
 
         return {
-            name:
-                name || "Student",
+            name: name || "Student",
 
             currentDay:
-                "Day " +
-                currentDayNumber,
+                "Day " + currentDayNumber,
 
             currentDayNumber:
                 currentDayNumber,
@@ -588,19 +545,51 @@
         return day;
     }
 
-    function exitOwnerTestMode() {
-        removeStorage(
-            STORAGE.ownerTestDay
-        );
-    }
-
     function displayLessonIfAvailable() {
         if (
             typeof window.displayDailyLesson ===
             "function"
         ) {
-            window.displayDailyLesson();
+            try {
+                window.displayDailyLesson();
+            } catch (error) {
+                console.warn(
+                    "Pacific Education: daily lesson display failed.",
+                    error
+                );
+            }
         }
+    }
+
+    function exitOwnerTestMode() {
+        const realDay =
+            readStorage(
+                STORAGE.currentDayNumber,
+                "1"
+            );
+
+        removeStorage(
+            STORAGE.ownerTestDay
+        );
+
+        /*
+         * Restore compatibility display only.
+         * Core progress was never changed.
+         */
+        writeStorage(
+            STORAGE.currentDayNumber,
+            realDay
+        );
+
+        writeStorage(
+            STORAGE.currentDay,
+            "Day " + realDay
+        );
+
+        refreshAllDashboards();
+        displayLessonIfAvailable();
+
+        return true;
     }
 
     /* =====================================================
@@ -608,8 +597,7 @@
        ===================================================== */
 
     function getAssessmentRecords() {
-        const state =
-            getCoreState();
+        const state = getCoreState();
 
         if (
             !state ||
@@ -652,12 +640,11 @@
                 : "";
 
         const requestedType =
-            type.toLowerCase();
+            String(type).toLowerCase();
 
         const typeMatches =
             recordType === requestedType ||
-            recordAssessmentType ===
-                requestedType ||
+            recordAssessmentType === requestedType ||
             recordTitle.indexOf(
                 requestedType
             ) !== -1;
@@ -687,9 +674,7 @@
         return true;
     }
 
-    function assessmentRecordPassed(
-        record
-    ) {
+    function assessmentRecordPassed(record) {
         if (
             !record ||
             typeof record !== "object"
@@ -704,30 +689,22 @@
         if (
             typeof record.status === "string" &&
             record.status.toLowerCase() ===
-                "passed"
+            "passed"
         ) {
             return true;
         }
 
         const percentage =
             Number(
-                record.percentage !==
-                    undefined
+                record.percentage !== undefined
                     ? record.percentage
                     : record.score
             );
 
-        if (
-            Number.isFinite(
-                percentage
-            ) &&
-            percentage >=
-                ASSESSMENT_PASS_MARK
-        ) {
-            return true;
-        }
-
-        return false;
+        return (
+            Number.isFinite(percentage) &&
+            percentage >= ASSESSMENT_PASS_MARK
+        );
     }
 
     function hasPassedRequiredAssessment(
@@ -746,8 +723,7 @@
             index < records.length;
             index += 1
         ) {
-            const record =
-                records[index];
+            const record = records[index];
 
             if (
                 assessmentMatches(
@@ -755,9 +731,7 @@
                     type,
                     day
                 ) &&
-                assessmentRecordPassed(
-                    record
-                )
+                assessmentRecordPassed(record)
             ) {
                 return true;
             }
@@ -766,22 +740,18 @@
         return false;
     }
 
-    function getRequiredAssessmentForDay(
-        day
-    ) {
+    function getRequiredAssessmentForDay(day) {
         if (day === 30) {
             return {
                 type: "alphabet",
-                title:
-                    "Alphabet Assessment"
+                title: "Alphabet Assessment"
             };
         }
 
         if (day === 60) {
             return {
                 type: "phonics",
-                title:
-                    "Phonics Assessment"
+                title: "Phonics Assessment"
             };
         }
 
@@ -790,9 +760,7 @@
 
     function canProgressFromDay(day) {
         const required =
-            getRequiredAssessmentForDay(
-                day
-            );
+            getRequiredAssessmentForDay(day);
 
         if (!required) {
             return true;
@@ -806,9 +774,7 @@
 
     function showAssessmentGate(day) {
         const required =
-            getRequiredAssessmentForDay(
-                day
-            );
+            getRequiredAssessmentForDay(day);
 
         if (!required) {
             return;
@@ -830,11 +796,18 @@
             typeof window.showLesson ===
             "function"
         ) {
-            window.showLesson(
-                "<p>" +
-                message +
-                "</p>"
-            );
+            try {
+                window.showLesson(
+                    "<p>" +
+                    message +
+                    "</p>"
+                );
+            } catch (error) {
+                console.warn(
+                    "Pacific Education: assessment gate display failed.",
+                    error
+                );
+            }
         }
     }
 
@@ -850,7 +823,7 @@
             state &&
             state.lesson &&
             typeof state.lesson ===
-                "object"
+            "object"
         ) {
             return state.lesson;
         }
@@ -865,13 +838,12 @@
     function recordCurrentLessonCompletion(
         lesson
     ) {
-        const core =
-            getCore();
+        const core = getCore();
 
         if (
             !core ||
             typeof core.recordLessonCompletion !==
-                "function"
+            "function"
         ) {
             console.warn(
                 "Pacific Education: Core lesson-completion API is unavailable."
@@ -884,10 +856,6 @@
             !lesson ||
             typeof lesson !== "object"
         ) {
-            console.warn(
-                "Pacific Education: current lesson data is unavailable."
-            );
-
             return false;
         }
 
@@ -898,22 +866,14 @@
             );
 
         if (day === null) {
-            console.warn(
-                "Pacific Education: invalid current lesson day."
-            );
-
             return false;
         }
 
-        const studentId =
-            getCurrentStudentId();
-
         const completionData = {
-            day:
-                day,
+            day: day,
 
             studentId:
-                studentId,
+                getCurrentStudentId(),
 
             lessonId:
                 lesson.lessonId ||
@@ -931,15 +891,14 @@
                 lesson.concept ||
                 "",
 
-            evidence:
-                null,
+            evidence: null,
 
             source:
                 "dashboard_complete_lesson"
         };
 
         try {
-            return core.recordLessonCompletion(
+            return !!core.recordLessonCompletion(
                 completionData
             );
         } catch (error) {
@@ -960,13 +919,12 @@
         currentLesson,
         nextDay
     ) {
-        const core =
-            getCore();
+        const core = getCore();
 
         if (
             !core ||
             typeof core.setLesson !==
-                "function"
+            "function"
         ) {
             console.warn(
                 "Pacific Education: protected Core lesson API is unavailable."
@@ -982,8 +940,7 @@
                     ? currentLesson.lessonId
                     : null,
 
-            day:
-                nextDay,
+            day: nextDay,
 
             subject:
                 currentLesson &&
@@ -991,8 +948,7 @@
                     ? currentLesson.subject
                     : "",
 
-            title:
-                "",
+            title: "",
 
             concept:
                 currentLesson &&
@@ -1000,21 +956,13 @@
                     ? currentLesson.concept
                     : "",
 
-            /*
-             * IMPORTANT:
-             * The next lesson is NOT completed.
-             */
-            status:
-                "not_started"
+            status: "not_started"
         };
 
         try {
-            const savedLesson =
-                core.setLesson(
-                    lessonUpdate
-                );
-
-            return !!savedLesson;
+            return !!core.setLesson(
+                lessonUpdate
+            );
         } catch (error) {
             console.error(
                 "Pacific Education: protected lesson advancement failed.",
@@ -1081,13 +1029,14 @@
         }
 
         /*
-         * Owner Test Mode must never create a real
-         * lesson completion.
+         * Owner Test Mode never creates real progress.
          */
         if (
             getOwnerTestDay() !== null
         ) {
-            exitOwnerTestMode();
+            console.info(
+                "Pacific Education: Owner Test Mode active. No real lesson completion recorded."
+            );
 
             refreshAllDashboards();
             displayLessonIfAvailable();
@@ -1113,15 +1062,11 @@
             );
 
         if (currentDay === null) {
-            console.warn(
-                "Pacific Education: current Core lesson day is invalid."
-            );
-
             return false;
         }
 
         /*
-         * Day 30 and Day 60 assessment gates.
+         * Assessment gate.
          */
         if (
             !canProgressFromDay(
@@ -1138,22 +1083,15 @@
         }
 
         /*
-         * Record the CURRENT lesson before changing
-         * the Core current lesson.
-         *
-         * This is the critical correction from v1.4.0.
+         * Never create duplicate completion.
          */
-        let completionResult = null;
+        let completionResult;
 
         if (
             currentLessonAlreadyCompleted(
                 currentDay
             )
         ) {
-            /*
-             * Existing Core history already contains this
-             * completion. Do not create a duplicate.
-             */
             completionResult = true;
         } else {
             completionResult =
@@ -1171,16 +1109,10 @@
         }
 
         /*
-         * Day 365 is the final programme day.
-         *
-         * It is now recorded as completed, but there is
-         * no Day 366.
+         * Final day.
          */
-        if (
-            currentDay >= MAX_DAY
-        ) {
+        if (currentDay >= MAX_DAY) {
             syncCompatibilityProgress();
-
             refreshAllDashboards();
             displayLessonIfAvailable();
 
@@ -1191,8 +1123,8 @@
             currentDay + 1;
 
         /*
-         * Advance ONLY after the current lesson has been
-         * successfully recorded.
+         * Advance only after current lesson
+         * is safely recorded.
          */
         const advanced =
             advanceToNextLesson(
@@ -1201,15 +1133,6 @@
             );
 
         if (!advanced) {
-            /*
-             * Important:
-             * The completion is retained in Core history.
-             * We do NOT manufacture a second completion.
-             *
-             * The next attempt can detect that the current
-             * day was already completed and safely repair
-             * the advancement.
-             */
             console.warn(
                 "Pacific Education: lesson was recorded, but advancement to the next lesson failed."
             );
@@ -1220,10 +1143,6 @@
             return false;
         }
 
-        /*
-         * Core is now authoritative.
-         * Compatibility storage is synchronized from Core.
-         */
         syncCompatibilityProgress();
 
         refreshAllDashboards();
@@ -1264,19 +1183,152 @@
             return false;
         }
 
+        /*
+         * Save the test day separately.
+         */
         writeStorage(
             STORAGE.ownerTestDay,
             testDay
         );
 
         /*
-         * Compatibility display values only.
-         * Core is NEVER changed.
+         * Compatibility display only.
+         * Core lesson/progress is NOT changed.
          */
-        const realDay =
-            readStorage(
-                STORAGE.currentDayNumber,
-                "1"
-            );
+        writeStorage(
+            STORAGE.currentDayNumber,
+            testDay
+        );
 
-       
+        writeStorage(
+            STORAGE.currentDay,
+            "Day " + testDay
+        );
+
+        refreshAllDashboards();
+        displayLessonIfAvailable();
+
+        return true;
+    }
+
+    /* =====================================================
+       INITIALISATION
+       ===================================================== */
+
+    function initialiseDashboards() {
+        try {
+            refreshAllDashboards();
+        } catch (error) {
+            console.warn(
+                "Pacific Education: dashboard initialization failed.",
+                error
+            );
+        }
+    }
+
+    if (
+        document.readyState ===
+        "loading"
+    ) {
+        document.addEventListener(
+            "DOMContentLoaded",
+            initialiseDashboards
+        );
+    } else {
+        initialiseDashboards();
+    }
+
+    /* =====================================================
+       PUBLIC API
+       ===================================================== */
+
+    const publicAPI = Object.freeze({
+        version:
+            VERSION,
+
+        getStudentData:
+            getPacificStudentData,
+
+        getCompletedLessonCount:
+            getCompletedLessonCount,
+
+        currentLessonAlreadyCompleted:
+            currentLessonAlreadyCompleted,
+
+        refreshTeacherDashboard:
+            refreshTeacherDashboard,
+
+        refreshParentDashboard:
+            refreshParentDashboard,
+
+        refreshAllDashboards:
+            refreshAllDashboards,
+
+        completeLesson:
+            completeLesson,
+
+        setOwnerTestDay:
+            setOwnerTestDay,
+
+        getOwnerTestDay:
+            getOwnerTestDay,
+
+        clearOwnerTestDay:
+            exitOwnerTestMode,
+
+        exitOwnerTestMode:
+            exitOwnerTestMode,
+
+        canProgressFromDay:
+            canProgressFromDay,
+
+        hasPassedRequiredAssessment:
+            hasPassedRequiredAssessment
+    });
+
+    window.PacificEducationDashboards =
+        publicAPI;
+
+    /*
+     * Backward-compatible global functions.
+     */
+    window.getPacificStudentData =
+        getPacificStudentData;
+
+    window.getCompletedLessonCount =
+        getCompletedLessonCount;
+
+    window.currentLessonAlreadyCompleted =
+        currentLessonAlreadyCompleted;
+
+    window.refreshTeacherDashboard =
+        refreshTeacherDashboard;
+
+    window.refreshParentDashboard =
+        refreshParentDashboard;
+
+    window.refreshAllDashboards =
+        refreshAllDashboards;
+
+    window.completeLesson =
+        completeLesson;
+
+    window.setOwnerTestDay =
+        setOwnerTestDay;
+
+    window.getOwnerTestDay =
+        getOwnerTestDay;
+
+    window.clearOwnerTestDay =
+        exitOwnerTestMode;
+
+    window.exitOwnerTestMode =
+        exitOwnerTestMode;
+
+    window.canProgressFromDay =
+        canProgressFromDay;
+
+    window.hasPassedRequiredAssessment =
+        hasPassedRequiredAssessment;
+
+})(window);
