@@ -1519,4 +1519,13 @@
     }
   );
 
-})(window);return true 
+
+  emit(
+    "coreReady",
+    {
+      version:
+        VERSION
+    }
+  );
+
+})(window);
