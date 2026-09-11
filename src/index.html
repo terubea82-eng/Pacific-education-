@@ -443,34 +443,31 @@
 
 
 <!-- =========================================
+     5-MINUTE INDEPENDENT PRACTICE
+
+     IMPORTANT:
+     This MUST load before dailyLessons.js
+     because dailyLessons.js calls:
+
+     window.PacificEducationFiveMinutePractice
+========================================= -->
+<script src="../js/fiveMinutePractice.js"></script>
+
+
+<!-- =========================================
      DAILY LESSON ENGINE
-     Provides:
-       displayDailyLesson()
-       showLesson()
-       startDailyLesson()
-       getDailyLesson()
 ========================================= -->
 <script src="../js/dailyLessons.js"></script>
 
 
 <!-- =========================================
      ASSESSMENT ENGINE
-     Provides:
-       startAssessment()
-       finishAssessment()
-       startAlphabetAssessment()
-       startPhonicsAssessment()
 ========================================= -->
 <script src="../js/assessments.js"></script>
 
 
 <!-- =========================================
      DASHBOARD ENGINE
-     Provides:
-       completeLesson()
-       refreshTeacherDashboard()
-       refreshParentDashboard()
-       refreshAllDashboards()
 ========================================= -->
 <script src="../js/dashboards.js"></script>
 
@@ -650,6 +647,9 @@ document.addEventListener(
             buyPlans:
                 !!window.PacificEducationBuyPlans,
 
+            fiveMinutePractice:
+                !!window.PacificEducationFiveMinutePractice,
+
             dailyLessons:
                 typeof window.PacificEducationDailyLessons !==
                 "undefined",
@@ -659,6 +659,9 @@ document.addEventListener(
 
             dashboards:
                 !!window.PacificEducationDashboards,
+
+            nationalCalendar:
+                !!window.PacificEducationNationalCalendarSetup,
 
             core:
                 !!window.PacificEducationCore
@@ -677,6 +680,7 @@ document.addEventListener(
 );
 
 </script>
+
 
 <!-- =========================================
      END PACIFIC EDUCATION HTML
