@@ -438,8 +438,21 @@
      PACIFIC EDUCATION JAVASCRIPT
 ========================================= -->
 
-<!-- BUY PLANS -->
+
+<!-- =========================================
+     BUY PLANS
+========================================= -->
 <script src="./js/buyPlans.js"></script>
+
+
+<!-- =========================================
+     PACIFIC EDUCATION CORE
+     
+     IMPORTANT:
+     Core is loaded BEFORE modules that depend
+     on protected learning state.
+========================================= -->
+<script src="../js/pacificEducationCore.js"></script>
 
 
 <!-- =========================================
@@ -479,21 +492,9 @@
 
 
 <!-- =========================================
-     PACIFIC EDUCATION CORE
-========================================= -->
-<script src="../js/pacificEducationCore.js"></script>
-
-
-<!-- =========================================
      DAILY LEARNING INTEGRATION
 ========================================= -->
 <script src="../js/pacificEducationDailyLearningIntegration.js"></script>
-
-
-<!-- =========================================
-     ASSESSMENT INTEGRATION
-========================================= -->
-<script src="../js/pacificEducationAssessmentIntegration.js"></script>
 
 
 <!-- =========================================
@@ -504,6 +505,11 @@
 
 <!-- =========================================
      LESSON ↔ ASSESSMENT ↔ DASHBOARD CONNECTION
+
+     ACTIVE PROTECTED CONNECTION.
+
+     This replaces the old duplicate assessment
+     progression connector.
 ========================================= -->
 <script src="../js/pacificEducationLessonAssessmentConnection.js"></script>
 
@@ -664,7 +670,31 @@ document.addEventListener(
                 !!window.PacificEducationNationalCalendarSetup,
 
             core:
-                !!window.PacificEducationCore
+                !!window.PacificEducationCore,
+
+            dailyLearningIntegration:
+                !!window.PacificEducationDailyLearningIntegration,
+
+            marksIntegration:
+                !!window.PacificEducationMarksIntegration,
+
+            lessonAssessmentConnection:
+                !!window.PacificEducationLessonAssessmentConnection,
+
+            coreBridge:
+                !!window.PacificEducationCoreBridge,
+
+            assessmentBridge:
+                !!window.PacificEducationAssessmentBridge,
+
+            pacificGuardian:
+                !!window.PacificEducationPacificGuardian,
+
+            aiWorkflow:
+                !!window.PacificEducationAIWorkflow,
+
+            educationLinkStartup:
+                !!window.PacificEducationEducationLinkStartup
 
         };
 
@@ -680,6 +710,31 @@ document.addEventListener(
 );
 
 </script>
+
+
+<!-- =========================================
+     ARCHITECTURE NOTE
+     
+     The following old file is intentionally NOT
+     loaded here:
+
+     ../js/pacificEducationAssessmentIntegration.js
+
+     It remains in the repository for audit/review,
+     but is no longer part of the active HTML chain.
+
+     The active protected connection is:
+
+     Core
+       ↓
+     Daily Lessons
+       ↓
+     Assessments
+       ↓
+     Lesson Assessment Connection
+       ↓
+     Dashboards
+========================================= -->
 
 
 <!-- =========================================
