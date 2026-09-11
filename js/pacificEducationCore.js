@@ -1,8 +1,8 @@
-/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.2 */
+/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.3 */
 (function (window) {
   "use strict";
 
-  const VERSION = "1.2.2";
+  const VERSION = "1.2.3";
   const STORAGE_KEY = "pacificEducationCoreState";
   const PASS_MARK = 80;
 
@@ -167,6 +167,17 @@
         error
       );
     }
+  }
+
+  /*
+   * PUBLIC COMPATIBILITY API
+   * Existing Pacific Education modules use these functions.
+   *
+   * getState() returns a clone so external modules cannot
+   * directly mutate the protected Core state.
+   */
+  function getState() {
+    return clone(state);
   }
 
   function audit(action, details) {
@@ -1351,8 +1362,27 @@
 
   const api = {
     version: VERSION,
+
     PASS_MARK: PASS_MARK,
+
     ROLES: ROLES,
+
+    /*
+     * LEGACY COMPATIBILITY
+     * Preserve the original Core public names.
+     */
+    passMark: PASS_MARK,
+
+    roles: ROLES.slice(),
+
+    /*
+     * STATE COMPATIBILITY
+     * getState returns a clone so external modules cannot
+     * directly mutate the protected Core state.
+     */
+    getState: getState,
+
+    saveState: saveState,
 
     identity: identity,
 
@@ -1489,4 +1519,4 @@
     }
   );
 
-})(window);
+})(window);return true 
