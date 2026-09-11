@@ -3,7 +3,7 @@
  * PACIFIC EDUCATION
  * SECURE EDUCATION COMMUNICATION LAYER
  * =========================================================
- * Version 1.4.1
+ * Version 1.5.0
  *
  * Student • Teacher • Parent • Ministry of Education
  *
