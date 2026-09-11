@@ -1,6 +1,6 @@
 /* =========================================
    PACIFIC EDUCATION — ASSESSMENTS
-   VERSION 1.2.0
+   VERSION 1.2.1
    Protected assessment engine
 
    Day 30 Alphabet Checkpoint
@@ -26,7 +26,7 @@
        CONFIGURATION
     ========================================= */
 
-    const VERSION = "1.2.0";
+    const VERSION = "1.2.1";
 
     const PASS_MARK = 80;
 
@@ -51,38 +51,50 @@
             questions:
                 Object.freeze([
 
-                    {
+                    Object.freeze({
                         question:
                             "Which letter is this? A",
 
                         options:
-                            ["A", "B", "C"],
+                            Object.freeze([
+                                "A",
+                                "B",
+                                "C"
+                            ]),
 
                         answer:
                             "A"
-                    },
+                    }),
 
-                    {
+                    Object.freeze({
                         question:
                             "Which letter comes after B?",
 
                         options:
-                            ["A", "C", "D"],
+                            Object.freeze([
+                                "A",
+                                "C",
+                                "D"
+                            ]),
 
                         answer:
                             "C"
-                    },
+                    }),
 
-                    {
+                    Object.freeze({
                         question:
                             "Which word begins with A?",
 
                         options:
-                            ["Apple", "Ball", "Cat"],
+                            Object.freeze([
+                                "Apple",
+                                "Ball",
+                                "Cat"
+                            ]),
 
                         answer:
                             "Apple"
-                    }
+                    })
 
                 ])
 
@@ -100,38 +112,50 @@
             questions:
                 Object.freeze([
 
-                    {
+                    Object.freeze({
                         question:
                             "Which word begins with the /b/ sound?",
 
                         options:
-                            ["Ball", "Cat", "Sun"],
+                            Object.freeze([
+                                "Ball",
+                                "Cat",
+                                "Sun"
+                            ]),
 
                         answer:
                             "Ball"
-                    },
+                    }),
 
-                    {
+                    Object.freeze({
                         question:
                             "Which word begins with the /m/ sound?",
 
                         options:
-                            ["Map", "Dog", "Fish"],
+                            Object.freeze([
+                                "Map",
+                                "Dog",
+                                "Fish"
+                            ]),
 
                         answer:
                             "Map"
-                    },
+                    }),
 
-                    {
+                    Object.freeze({
                         question:
                             "What word do these sounds make? /c/ /a/ /t/",
 
                         options:
-                            ["Cat", "Dog", "Sun"],
+                            Object.freeze([
+                                "Cat",
+                                "Dog",
+                                "Sun"
+                            ]),
 
                         answer:
                             "Cat"
-                    }
+                    })
 
                 ])
 
@@ -226,13 +250,16 @@
 
 
         /*
-         * Prefer the protected Core state.
+         * Protected Core state is preferred.
          */
 
         if (
+
             core &&
+
             typeof core.getState ===
                 "function"
+
         ) {
 
             const state =
@@ -240,16 +267,24 @@
 
             const coreDay =
                 Number(
+
                     state &&
+
                     state.lesson &&
+
                     state.lesson.day
+
                 );
 
 
             if (
+
                 Number.isInteger(coreDay) &&
+
                 coreDay >= 1 &&
+
                 coreDay <= 365
+
             ) {
 
                 return coreDay;
@@ -260,11 +295,11 @@
 
 
         /*
-         * Compatibility fallback for the
-         * existing prototype UI.
+         * Compatibility fallback only.
          */
 
-        let storedDay = 1;
+        let storedDay =
+            1;
 
         try {
 
@@ -281,18 +316,24 @@
 
         } catch (error) {
 
-            storedDay = 1;
+            storedDay =
+                1;
 
         }
 
 
         if (
+
             !Number.isInteger(storedDay) ||
+
             storedDay < 1 ||
+
             storedDay > 365
+
         ) {
 
-            storedDay = 1;
+            storedDay =
+                1;
 
         }
 
@@ -318,9 +359,27 @@
         }
 
 
+        const safeDay =
+            Number(day);
+
+
+        if (
+
+            !Number.isInteger(safeDay) ||
+
+            safeDay < 1 ||
+
+            safeDay > 365
+
+        ) {
+
+            return false;
+
+        }
+
+
         const core =
             getCore();
-
 
         let updated =
             false;
@@ -331,16 +390,19 @@
          */
 
         if (
+
             core &&
+
             typeof core.setLesson ===
                 "function"
+
         ) {
 
             const result =
                 core.setLesson({
 
                     day:
-                        day,
+                        safeDay,
 
                     status:
                         status ||
@@ -356,22 +418,26 @@
 
 
         /*
-         * Compatibility support if a future
-         * Core exposes lesson.set().
+         * Compatibility support for a future
+         * Core lesson.set() implementation.
          */
 
         else if (
+
             core &&
+
             core.lesson &&
+
             typeof core.lesson.set ===
                 "function"
+
         ) {
 
             const result =
                 core.lesson.set({
 
                     day:
-                        day,
+                        safeDay,
 
                     status:
                         status ||
@@ -395,26 +461,31 @@
 
         /*
          * Compatibility cache only.
-         *
-         * This does not replace Core state.
          */
 
         try {
 
             window.localStorage.setItem(
+
                 "currentDayNumber",
-                String(day)
+
+                String(safeDay)
+
             );
 
             window.localStorage.setItem(
+
                 "currentDay",
-                "Day " + day
+
+                "Day " +
+                safeDay
+
             );
 
         } catch (error) {
 
             console.warn(
-                "Assessment progression cache could not be updated."
+                "Assessment progression compatibility cache could not be updated."
             );
 
         }
@@ -432,8 +503,10 @@
     function show(html) {
 
         if (
+
             typeof window.showLesson ===
                 "function"
+
         ) {
 
             window.showLesson(html);
@@ -478,7 +551,7 @@
 
 
     /* =========================================
-       CHECK WHETHER ASSESSMENT CAN START
+       CHECK ASSESSMENT ACCESS
     ========================================= */
 
     function canStartAssessment(type) {
@@ -494,15 +567,12 @@
         }
 
 
-        /*
-         * Assessment sessions require an
-         * authorized Core identity.
-         */
-
         if (!isAuthorized()) {
 
             return block(
+
                 "An authorised learner session is required before an assessment can start."
+
             );
 
         }
@@ -512,14 +582,11 @@
             getCurrentDay();
 
 
-        /*
-         * Assessment must occur on its
-         * authorised curriculum day.
-         */
-
         if (
+
             currentDay !==
             assessment.day
+
         ) {
 
             return block(
@@ -555,20 +622,17 @@
 
 
         if (
+
             !assessment ||
+
             !canStartAssessment(type)
+
         ) {
 
             return false;
 
         }
 
-
-        /*
-         * Copy question data so the active
-         * session cannot mutate the source
-         * curriculum definition.
-         */
 
         window.currentAssessment = {
 
@@ -667,14 +731,15 @@
 
                 '</h2>' +
 
-
                 '<h3>' +
 
                     'Question ' +
 
                     (
+
                         assessment.currentQuestion +
                         1
+
                     ) +
 
                     ' of ' +
@@ -682,7 +747,6 @@
                     assessment.questions.length +
 
                 '</h3>' +
-
 
                 '<p>' +
 
@@ -711,7 +775,7 @@
 
                         '" ' +
 
-                        'style="display:block;margin:10px 0;"' +
+                        'style="display:block;margin:10px 0;padding:10px;font-size:1rem;"' +
 
                     '>' +
 
@@ -725,7 +789,6 @@
 
 
         html +=
-
             '</div>';
 
 
@@ -734,9 +797,18 @@
 
         /*
          * Use event listeners instead of
-         * injecting executable answer text
-         * into onclick handlers.
+         * executable inline answer handlers.
          */
+
+        if (
+            typeof document ===
+                "undefined"
+        ) {
+
+            return;
+
+        }
+
 
         const buttons =
             document.querySelectorAll(
@@ -788,9 +860,7 @@
             window.currentAssessment;
 
 
-        if (
-            !assessment
-        ) {
+        if (!assessment) {
 
             return block(
                 "No active assessment session is available."
@@ -825,8 +895,10 @@
 
 
         if (
+
             String(answer) ===
             String(question.answer)
+
         ) {
 
             assessment.score +=
@@ -840,8 +912,10 @@
 
 
         if (
+
             assessment.currentQuestion >=
             assessment.questions.length
+
         ) {
 
             finishAssessment();
@@ -872,31 +946,27 @@
         }
 
 
-        /*
-         * Core is the protected assessment
-         * record layer.
-         */
-
         if (
-            core &&
-            core.assessments &&
-            typeof core.assessments.add ===
+
+            !core ||
+
+            !core.assessments ||
+
+            typeof core.assessments.add !==
                 "function"
+
         ) {
 
-            const saved =
-                core.assessments.add(
-                    result
-                );
+            return false;
+
+        }
 
 
-            if (!saved) {
+        const saved =
+            core.assessments.add(result);
 
-                return false;
 
-            }
-
-        } else {
+        if (!saved) {
 
             return false;
 
@@ -904,12 +974,11 @@
 
 
         /*
-         * Compatibility cache for dashboard/UI
-         * only. The protected Core record is
-         * authoritative.
+         * Compatibility cache only.
          */
 
-        let history = [];
+        let history =
+            [];
 
 
         try {
@@ -941,9 +1010,7 @@
         }
 
 
-        history.push(
-            result
-        );
+        history.push(result);
 
 
         try {
@@ -1018,11 +1085,15 @@
             total > 0
 
                 ? Math.round(
+
                     (
                         assessment.score /
                         total
+
                     ) *
+
                     100
+
                 )
 
                 : 0;
@@ -1087,13 +1158,11 @@
 
 
         /*
-         * Do not unlock progression until
-         * Core accepts the assessment result.
+         * Core must accept the result before
+         * any progression is unlocked.
          */
 
-        if (
-            !saveResult(result)
-        ) {
+        if (!saveResult(result)) {
 
             window.currentAssessment =
                 null;
@@ -1112,36 +1181,44 @@
         ===================================== */
 
         if (
+
             assessment.type ===
                 "alphabet" &&
 
             assessmentDay ===
                 30
+
         ) {
+
+            try {
+
+                window.localStorage.setItem(
+
+                    "alphabetAssessmentPassed",
+
+                    passed
+                        ? "true"
+                        : "false"
+
+                );
+
+            } catch (error) {
+
+                console.warn(
+                    "Alphabet assessment status cache could not be updated."
+                );
+
+            }
+
 
             if (passed) {
 
-                window.localStorage.setItem(
-                    "alphabetAssessmentPassed",
-                    "true"
-                );
-
-
-                /*
-                 * Day 31 is unlocked only after
-                 * a verified saved pass.
-                 */
-
                 setProgressionDay(
+
                     31,
+
                     "in_progress"
-                );
 
-            } else {
-
-                window.localStorage.setItem(
-                    "alphabetAssessmentPassed",
-                    "false"
                 );
 
             }
@@ -1154,46 +1231,54 @@
         ===================================== */
 
         if (
+
             assessment.type ===
                 "phonics" &&
 
             assessmentDay ===
                 60
+
         ) {
 
-            window.localStorage.setItem(
+            try {
 
-                "phonicsAssessmentPassed",
+                window.localStorage.setItem(
 
-                passed
-                    ? "true"
-                    : "false"
+                    "phonicsAssessmentPassed",
 
-            );
+                    passed
+                        ? "true"
+                        : "false"
+
+                );
+
+            } catch (error) {
+
+                console.warn(
+                    "Phonics assessment status cache could not be updated."
+                );
+
+            }
 
 
             if (passed) {
 
-                /*
-                 * Day 61 unlock requires the
-                 * saved verified result first.
-                 */
-
                 setProgressionDay(
+
                     61,
+
                     "in_progress"
+
                 );
 
             } else {
 
-                /*
-                 * Failed Day 60 remains on
-                 * the Day 60 checkpoint.
-                 */
-
                 setProgressionDay(
+
                     60,
+
                     "assessment_practice_required"
+
                 );
 
             }
@@ -1206,8 +1291,10 @@
         ===================================== */
 
         if (
+
             typeof window.refreshAllDashboards ===
                 "function"
+
         ) {
 
             window.refreshAllDashboards();
@@ -1219,7 +1306,8 @@
            RESULT MESSAGE
         ===================================== */
 
-        let message = "";
+        let message =
+            "";
 
 
         if (passed) {
@@ -1239,7 +1327,6 @@
                     "</strong>." +
 
                 "</p>" +
-
 
                 "<p>" +
 
@@ -1265,7 +1352,6 @@
 
                 "</p>" +
 
-
                 "<p>" +
 
                     "📚 The pass mark is " +
@@ -1286,6 +1372,7 @@
 
 
         if (
+
             assessment.type ===
                 "alphabet" &&
 
@@ -1293,8 +1380,171 @@
                 30 &&
 
             passed
+
         ) {
 
             message +=
 
-                "<
+                "<p>" +
+
+                    "🔓 Day 31 has been unlocked." +
+
+                "</p>";
+
+        }
+
+
+        if (
+
+            assessment.type ===
+                "phonics" &&
+
+            assessmentDay ===
+                60 &&
+
+            passed
+
+        ) {
+
+            message +=
+
+                "<p>" +
+
+                    "🔓 Day 61 has been unlocked." +
+
+                "</p>";
+
+        }
+
+
+        if (
+
+            assessment.type ===
+                "phonics" &&
+
+            assessmentDay ===
+                60 &&
+
+            !passed
+
+        ) {
+
+            message +=
+
+                "<p>" +
+
+                    "📖 Please continue practising before attempting the Day 60 checkpoint again." +
+
+                "</p>";
+
+        }
+
+
+        show(
+
+            '<div class="activity">' +
+
+                '<h2>Assessment Result</h2>' +
+
+                message +
+
+            '</div>'
+
+        );
+
+
+        window.currentAssessment =
+            null;
+
+
+        return result;
+
+    }
+
+
+    /* =========================================
+       PUBLIC FUNCTIONS
+    ========================================= */
+
+    window.startAssessment =
+        startAssessment;
+
+
+    window.finishAssessment =
+        finishAssessment;
+
+
+    window.startAlphabetAssessment =
+        function () {
+
+            return startAssessment(
+                "alphabet"
+            );
+
+        };
+
+
+    window.startPhonicsAssessment =
+        function () {
+
+            return startAssessment(
+                "phonics"
+            );
+
+        };
+
+
+    /* =========================================
+       PUBLIC API
+    ========================================= */
+
+    window.PacificEducationAssessments = {
+
+        version:
+            VERSION,
+
+        passMark:
+            PASS_MARK,
+
+        getAssessment:
+            function (type) {
+
+                return assessmentData[type] ||
+                    null;
+
+            },
+
+        getCurrentDay:
+            getCurrentDay,
+
+        canStart:
+            canStartAssessment,
+
+        start:
+            startAssessment,
+
+        startAlphabet:
+            function () {
+
+                return startAssessment(
+                    "alphabet"
+                );
+
+            },
+
+        startPhonics:
+            function () {
+
+                return startAssessment(
+                    "phonics"
+                );
+
+            },
+
+        finish:
+            finishAssessment
+
+    };
+
+
+})(window);
