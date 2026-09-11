@@ -1,14 +1,17 @@
 /* =========================================
    PACIFIC EDUCATION
    DAILY LESSON ENGINE
-   VERSION 1.1.0
+   VERSION 1.2.0
    DAY 1 - DAY 365
 
    CONNECTION RULES
    -----------------------------------------
    • Five-Minute Practice loads before this file.
-   • Daily lessons remain compatible with
-     the protected Core/assessment system.
+   • Pacific Education Core is the primary
+     progression authority.
+   • localStorage is compatibility fallback only.
+   • Daily lessons remain compatible with the
+     protected Core/assessment system.
    • Assessment/dashboard messages must not
      permanently destroy the daily lesson UI.
    • Returning to the daily lesson always
@@ -312,7 +315,89 @@
 
 
     /* =========================================
-       GET CURRENT DAILY LESSON
+       GET CURRENT CORE DAY
+       
+       CORE IS THE PRIMARY AUTHORITY.
+       localStorage is compatibility fallback.
+    ========================================= */
+
+    function getCurrentCoreDay() {
+
+        try {
+
+            const core =
+                window.PacificEducationCore;
+
+            if (
+                core &&
+                typeof core.getState === "function"
+            ) {
+
+                const state =
+                    core.getState();
+
+                const coreDay =
+                    Number(
+                        state &&
+                        state.lesson &&
+                        state.lesson.day
+                    );
+
+                if (
+                    Number.isInteger(coreDay) &&
+                    coreDay >= 1 &&
+                    coreDay <= 365
+                ) {
+
+                    return coreDay;
+                }
+            }
+
+        } catch (error) {
+
+            console.warn(
+                "Pacific Education: Core day could not be read."
+            );
+        }
+
+
+        /* =====================================
+           COMPATIBILITY FALLBACK
+        ===================================== */
+
+        try {
+
+            const fallbackDay =
+                Number.parseInt(
+                    window.localStorage.getItem(
+                        "currentDayNumber"
+                    ) || "1",
+                    10
+                );
+
+            if (
+                Number.isInteger(fallbackDay) &&
+                fallbackDay >= 1 &&
+                fallbackDay <= 365
+            ) {
+
+                return fallbackDay;
+            }
+
+        } catch (error) {
+
+            console.warn(
+                "Pacific Education: localStorage day fallback unavailable."
+            );
+        }
+
+
+        return 1;
+    }
+
+
+    /* =========================================
+       GET DAILY LESSON
     ========================================= */
 
     function getDailyLesson(dayNumber) {
@@ -414,33 +499,22 @@
 
     /* =========================================
        DISPLAY TODAY'S LESSON
+       
+       Core-controlled day is used first.
     ========================================= */
 
     function displayDailyLesson() {
 
         captureOriginalLessonHTML();
 
-        let dayNumber =
-            parseInt(
-                localStorage.getItem(
-                    "currentDayNumber"
-                ) || "1",
-                10
-            );
 
-        if (
-            isNaN(dayNumber) ||
-            dayNumber < 1
-        ) {
-            dayNumber = 1;
-        }
+        const dayNumber =
+            getCurrentCoreDay();
 
-        if (dayNumber > 365) {
-            dayNumber = 365;
-        }
 
         const lesson =
             getDailyLesson(dayNumber);
+
 
         updateDay60AssessmentVisibility(
             dayNumber
@@ -561,6 +635,7 @@
 
         displayDailyLesson();
 
+
         const dailyLesson =
             getDailyLessonContainer();
 
@@ -585,10 +660,13 @@
     window.PacificEducationDailyLessons =
         Object.freeze({
 
-            version: "1.1.0",
+            version: "1.2.0",
 
             getDailyLesson:
                 getDailyLesson,
+
+            getCurrentCoreDay:
+                getCurrentCoreDay,
 
             updateDay60AssessmentVisibility:
                 updateDay60AssessmentVisibility,
