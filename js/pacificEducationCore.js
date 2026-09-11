@@ -1,210 +1,258 @@
-/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.1 */
-(function(window){
+/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.2 */
+(function (window) {
   "use strict";
 
-  const VERSION="1.2.1";
-  const STORAGE_KEY="pacificEducationCoreState";
-  const PASS_MARK=80;
+  const VERSION = "1.2.2";
+  const STORAGE_KEY = "pacificEducationCoreState";
+  const PASS_MARK = 80;
 
-  const ROLES=Object.freeze([
-    "student","teacher","parent","ministry",
-    "head_of_school","examiner","owner","admin"
+  const ROLES = Object.freeze([
+    "student",
+    "teacher",
+    "parent",
+    "ministry",
+    "head_of_school",
+    "examiner",
+    "owner",
+    "admin"
   ]);
 
-  const DEFAULT_STATE={
-    version:VERSION,
-    identity:{
-      userId:null,name:"",role:null,country:"",
-      jurisdiction:"",schoolId:null,classId:null,
-      authorized:false
+  const DEFAULT_STATE = {
+    version: VERSION,
+
+    identity: {
+      userId: null,
+      name: "",
+      role: null,
+      country: "",
+      jurisdiction: "",
+      schoolId: null,
+      classId: null,
+      authorized: false
     },
-    workspace:{
-      workspaceId:null,type:"personal",status:"active"
+
+    workspace: {
+      workspaceId: null,
+      type: "personal",
+      status: "active"
     },
-    student:{
-      studentId:null,name:"",yearForm:"",
-      className:"",subjects:[]
+
+    student: {
+      studentId: null,
+      name: "",
+      yearForm: "",
+      className: "",
+      subjects: []
     },
-    curriculum:{
-      country:"",jurisdiction:"",version:"",
-      yearForm:"",subject:"",currentConcept:"",
-      verified:false
+
+    curriculum: {
+      country: "",
+      jurisdiction: "",
+      version: "",
+      yearForm: "",
+      subject: "",
+      currentConcept: "",
+      verified: false
     },
-    lesson:{
-      lessonId:null,day:null,subject:"",
-      title:"",concept:"",status:"not_started"
+
+    lesson: {
+      lessonId: null,
+      day: null,
+      subject: "",
+      title: "",
+      concept: "",
+      status: "not_started"
     },
-    dailyLearningCheck:{
-      checkId:null,concept:"",questions:[],
-      attempted:false,score:null,
-      understandingPercent:null,status:"not_started"
+
+    dailyLearningCheck: {
+      checkId: null,
+      concept: "",
+      questions: [],
+      attempted: false,
+      score: null,
+      understandingPercent: null,
+      status: "not_started"
     },
-    activities:[],
-    learningHistory:[],
-    assessments:[],
-    marks:[],
-    interventions:[],
-    audit:[],
-    events:[]
+
+    activities: [],
+    learningHistory: [],
+    assessments: [],
+    marks: [],
+    interventions: [],
+    audit: [],
+    events: []
   };
 
-  const clone=v=>{
-    try{return JSON.parse(JSON.stringify(v));}
-    catch(e){return null;}
-  };
-
-  const obj=v=>!!(
-    v &&
-    typeof v==="object" &&
-    !Array.isArray(v)
-  );
-
-  function merge(a,b){
-    if(!obj(b)) return a;
-    Object.keys(b).forEach(k=>{
-      a[k]=obj(b[k])&&obj(a[k])
-        ? merge(a[k],b[k])
-        : b[k];
-    });
-    return a;
+  function clone(value) {
+    try {
+      return JSON.parse(JSON.stringify(value));
+    } catch (error) {
+      return null;
+    }
   }
 
-  const now=()=>new Date().toISOString();
+  function isObject(value) {
+    return !!(
+      value &&
+      typeof value === "object" &&
+      !Array.isArray(value)
+    );
+  }
 
-  const id=p=>
-    p+"-"+Date.now().toString(36)+"-"+
-    Math.random().toString(36).slice(2,9);
+  function merge(target, source) {
+    if (!isObject(source)) return target;
 
-  function load(){
-    try{
-      const raw=
+    Object.keys(source).forEach(function (key) {
+      if (
+        isObject(source[key]) &&
+        isObject(target[key])
+      ) {
+        merge(target[key], source[key]);
+      } else {
+        target[key] = source[key];
+      }
+    });
+
+    return target;
+  }
+
+  function now() {
+    return new Date().toISOString();
+  }
+
+  function makeId(prefix) {
+    return (
+      prefix +
+      "-" +
+      Date.now().toString(36) +
+      "-" +
+      Math.random().toString(36).slice(2, 9)
+    );
+  }
+
+  function loadState() {
+    try {
+      const raw =
         window.localStorage &&
         window.localStorage.getItem(STORAGE_KEY);
 
-      return raw
-        ? merge(clone(DEFAULT_STATE),JSON.parse(raw))
-        : clone(DEFAULT_STATE);
-    }catch(e){
+      if (!raw) {
+        return clone(DEFAULT_STATE);
+      }
+
+      return merge(
+        clone(DEFAULT_STATE),
+        JSON.parse(raw)
+      );
+    } catch (error) {
       return clone(DEFAULT_STATE);
     }
   }
 
-  let state=load();
+  let state = loadState();
 
-  function save(){
-    state.version=VERSION;
-    try{
-      if(window.localStorage){
+  function saveState() {
+    state.version = VERSION;
+
+    try {
+      if (window.localStorage) {
         window.localStorage.setItem(
           STORAGE_KEY,
           JSON.stringify(state)
         );
       }
-    }catch(e){
+    } catch (error) {
       console.error(
         "Pacific Education Core save failed",
-        e
+        error
       );
     }
   }
 
-  function audit(action,details){
+  function audit(action, details) {
     state.audit.push({
-      auditId:id("AUDIT"),
-      action:action,
-      details:obj(details)?clone(details):{},
-      timestamp:now()
+      auditId: makeId("AUDIT"),
+      action: action,
+      details: isObject(details)
+        ? clone(details)
+        : {},
+      timestamp: now()
     });
-    save();
+
+    saveState();
   }
 
-  function emit(name,payload){
-    const event={
-      eventId:id("EVENT"),
-      name:name,
-      payload:clone(payload)||{},
-      timestamp:now()
+  function emit(name, payload) {
+    const event = {
+      eventId: makeId("EVENT"),
+      name: name,
+      payload: clone(payload) || {},
+      timestamp: now()
     };
 
     state.events.push(event);
 
-    if(
-      typeof window.dispatchEvent==="function" &&
-      typeof window.CustomEvent==="function"
-    ){
+    if (
+      typeof window.dispatchEvent === "function" &&
+      typeof window.CustomEvent === "function"
+    ) {
       window.dispatchEvent(
         new CustomEvent(
-          "pacificEducation:"+name,
-          {detail:event.payload}
+          "pacificEducation:" + name,
+          {
+            detail: event.payload
+          }
         )
       );
     }
 
-    save();
+    saveState();
+
     return clone(event);
   }
 
-  function authorized(){
+  function isAuthorized() {
     return !!(
       state.identity &&
-      state.identity.authorized===true
+      state.identity.authorized === true
     );
   }
 
-  function requireAuth(action){
-    if(authorized()) return true;
+  function requireAuthorization(action) {
+    if (isAuthorized()) {
+      return true;
+    }
 
     audit(
-      String(action||"ACTION")+"_BLOCKED",
-      {reason:"User is not authorized."}
+      String(action || "ACTION") + "_BLOCKED",
+      {
+        reason: "User is not authorized."
+      }
     );
 
     return false;
   }
 
-  function authorize(ctx){
-    if(!obj(ctx)||ctx.authorized!==true){
-      state.identity.authorized=false;
-      audit("AUTHORIZATION_DENIED",{});
+  function setIdentity(value) {
+    if (!isObject(value)) {
       return false;
     }
 
-    state.identity.authorized=true;
-
-    audit(
-      "AUTHORIZATION_GRANTED",
-      {
-        userId:state.identity.userId,
-        role:state.identity.role
-      }
-    );
-
-    emit(
-      "authorizationGranted",
-      state.identity
-    );
-
-    return true;
-  }
-
-  function setIdentity(v){
-    if(!obj(v)) return false;
-
-    state.identity=merge(
+    state.identity = merge(
       state.identity,
-      v
+      value
     );
 
-    if(v.authorized!==true){
-      state.identity.authorized=false;
+    if (value.authorized !== true) {
+      state.identity.authorized = false;
     }
 
     audit(
       "IDENTITY_UPDATED",
       {
-        userId:state.identity.userId,
-        role:state.identity.role,
-        authorized:state.identity.authorized
+        userId: state.identity.userId,
+        role: state.identity.role,
+        authorized: state.identity.authorized
       }
     );
 
@@ -216,79 +264,184 @@
     return clone(state.identity);
   }
 
-  const identity={
-    set:setIdentity,
-    get:()=>clone(state.identity),
-    isAuthorized:authorized,
-    authorize:authorize
-  };
+  function authorizeUser(context) {
+    if (
+      !isObject(context) ||
+      context.authorized !== true
+    ) {
+      state.identity.authorized = false;
 
-  function protectedSet(
-    key,
-    v,
-    action,
-    event
-  ){
-    if(!requireAuth(action)||!obj(v)){
+      audit(
+        "AUTHORIZATION_DENIED",
+        {}
+      );
+
       return false;
     }
 
-    state[key]=merge(
-      state[key],
-      v
+    if (
+      context.role &&
+      ROLES.indexOf(context.role) === -1
+    ) {
+      audit(
+        "AUTHORIZATION_DENIED",
+        {
+          reason: "Invalid role."
+        }
+      );
+
+      return false;
+    }
+
+    state.identity = merge(
+      state.identity,
+      context
     );
 
+    state.identity.authorized = true;
+
     audit(
-      action+"_UPDATED",
-      v
+      "AUTHORIZATION_GRANTED",
+      {
+        userId: state.identity.userId,
+        role: state.identity.role
+      }
     );
 
     emit(
-      event,
-      state[key]
+      "authorizationGranted",
+      state.identity
     );
 
-    return clone(state[key]);
+    return true;
   }
 
-  function setLesson(v){
+  function getIdentity() {
+    return clone(state.identity);
+  }
+
+  const identity = {
+    set: setIdentity,
+    get: getIdentity,
+    isAuthorized: isAuthorized,
+    authorize: authorizeUser
+  };
+
+  function protectedSet(
+    section,
+    value,
+    action,
+    eventName
+  ) {
+    if (
+      !requireAuthorization(action) ||
+      !isObject(value)
+    ) {
+      return false;
+    }
+
+    state[section] = merge(
+      state[section],
+      value
+    );
+
+    audit(
+      action + "_UPDATED",
+      value
+    );
+
+    emit(
+      eventName,
+      state[section]
+    );
+
+    return clone(state[section]);
+  }
+
+  function setWorkspace(value) {
+    return protectedSet(
+      "workspace",
+      value,
+      "WORKSPACE",
+      "workspaceUpdated"
+    );
+  }
+
+  function getWorkspace() {
+    return clone(state.workspace);
+  }
+
+  function setStudent(value) {
+    return protectedSet(
+      "student",
+      value,
+      "STUDENT",
+      "studentUpdated"
+    );
+  }
+
+  function getStudent() {
+    return clone(state.student);
+  }
+
+  function setCurriculum(value) {
+    return protectedSet(
+      "curriculum",
+      value,
+      "CURRICULUM",
+      "curriculumUpdated"
+    );
+  }
+
+  function getCurriculum() {
+    return clone(state.curriculum);
+  }
+
+  function setLesson(value) {
     return protectedSet(
       "lesson",
-      v,
+      value,
       "LESSON",
       "lessonUpdated"
     );
   }
 
-  function createDailyLearningCheck(v){
-    if(
-      !requireAuth(
+  function getLesson() {
+    return clone(state.lesson);
+  }
+
+  function createDailyLearningCheck(value) {
+    if (
+      !requireAuthorization(
         "DAILY_LEARNING_CHECK_CREATE"
       )
-    ){
+    ) {
       return false;
     }
 
-    v=obj(v)?v:{};
+    value = isObject(value)
+      ? value
+      : {};
 
-    state.dailyLearningCheck={
+    state.dailyLearningCheck = {
       checkId:
-        v.checkId||id("CHECK"),
+        value.checkId ||
+        makeId("CHECK"),
 
       concept:
-        typeof v.concept==="string"
-          ?v.concept
-          :"",
+        typeof value.concept === "string"
+          ? value.concept
+          : "",
 
       questions:
-        Array.isArray(v.questions)
-          ?clone(v.questions)
-          :[],
+        Array.isArray(value.questions)
+          ? clone(value.questions)
+          : [],
 
-      attempted:false,
-      score:null,
-      understandingPercent:null,
-      status:"not_started"
+      attempted: false,
+      score: null,
+      understandingPercent: null,
+      status: "not_started"
     };
 
     audit(
@@ -309,88 +462,104 @@
     );
   }
 
-  function startDailyLearning(o){
-    if(
-      !requireAuth(
+  /*
+   * IMPORTANT COMPATIBILITY API
+   * Existing modules require:
+   * core.startDailyLearning()
+   */
+  function startDailyLearning(options) {
+    if (
+      !requireAuthorization(
         "DAILY_LEARNING_START"
       )
-    ){
+    ) {
       return false;
     }
 
-    if(obj(o)&&obj(o.lesson)){
-      setLesson(o.lesson);
+    options = isObject(options)
+      ? options
+      : {};
+
+    if (isObject(options.lesson)) {
+      setLesson(options.lesson);
     }
 
     return createDailyLearningCheck(
-      obj(o)&&obj(o.check)
-        ?o.check
-        :{
-          concept:
-            obj(o)&&o.concept
-              ?o.concept
-              :state.lesson.concept,
+      isObject(options.check)
+        ? options.check
+        : {
+            concept:
+              options.concept ||
+              state.lesson.concept ||
+              "",
 
-          questions:
-            obj(o)&&o.questions
-              ?o.questions
-              :[]
-        }
+            questions:
+              Array.isArray(options.questions)
+                ? options.questions
+                : []
+          }
     );
   }
 
-  function recordDailyLearningCheck(v){
-    if(
-      !requireAuth(
+  function recordDailyLearningCheck(value) {
+    if (
+      !requireAuthorization(
         "DAILY_LEARNING_CHECK_RECORD"
       )
-    ){
+    ) {
       return false;
     }
 
-    v=obj(v)?v:{};
+    value = isObject(value)
+      ? value
+      : {};
 
-    const total=Number(v.total);
-    const correct=Number(v.correct);
+    const total = Number(value.total);
+    const correct = Number(value.correct);
 
-    let pct=null;
+    let percentage = null;
 
-    if(
-      Number.isFinite(total)&&
-      total>0&&
+    if (
+      Number.isFinite(total) &&
+      total > 0 &&
       Number.isFinite(correct)
-    ){
-      pct=Math.round(
-        Math.max(
-          0,
-          Math.min(correct,total)
-        )/total*100
+    ) {
+      percentage = Math.round(
+        (
+          Math.max(
+            0,
+            Math.min(correct, total)
+          ) /
+          total
+        ) * 100
       );
     }
 
-    state.dailyLearningCheck.attempted=true;
+    state.dailyLearningCheck.attempted =
+      true;
 
-    state.dailyLearningCheck.score={
+    state.dailyLearningCheck.score = {
       correct:
         Number.isFinite(correct)
-          ?correct
-          :0,
+          ? correct
+          : 0,
 
       total:
         Number.isFinite(total)
-          ?total
-          :0
+          ? total
+          : 0
     };
 
     state.dailyLearningCheck
-      .understandingPercent=pct;
+      .understandingPercent =
+      percentage;
 
-    state.dailyLearningCheck.status=
-      pct===null
-        ?"teacher_review_required"
-        :pct<PASS_MARK
-          ?"intervention_required"
-          :"continue";
+    state.dailyLearningCheck.status =
+      percentage === null
+        ? "teacher_review_required"
+        : percentage < PASS_MARK
+          ? "intervention_required"
+          : "continue";
 
     audit(
       "DAILY_LEARNING_CHECK_RECORDED",
@@ -398,7 +567,8 @@
         checkId:
           state.dailyLearningCheck.checkId,
 
-        understandingPercent:pct,
+        understandingPercent:
+          percentage,
 
         status:
           state.dailyLearningCheck.status
@@ -415,346 +585,458 @@
     );
   }
 
-  const dailyLearningCheck={
-    start:startDailyLearning,
-    create:createDailyLearningCheck,
-    record:recordDailyLearningCheck,
-    get:()=>clone(
-      state.dailyLearningCheck
-    )
+  const dailyLearningCheck = {
+    start: startDailyLearning,
+    create: createDailyLearningCheck,
+    record: recordDailyLearningCheck,
+
+    get: function () {
+      return clone(
+        state.dailyLearningCheck
+      );
+    }
   };
 
-  function addActivity(v){
-    if(!requireAuth("ACTIVITY_ADD")){
+  function addActivity(value) {
+    if (
+      !requireAuthorization(
+        "ACTIVITY_ADD"
+      )
+    ) {
       return false;
     }
 
-    v=obj(v)?v:{};
+    value = isObject(value)
+      ? value
+      : {};
 
-    const r={
+    const activity = {
       activityId:
-        v.activityId||id("ACT"),
+        value.activityId ||
+        makeId("ACT"),
 
       date:
-        v.date||now(),
+        value.date ||
+        now(),
 
       subject:
-        v.subject||"",
+        value.subject ||
+        "",
 
       title:
-        v.title||"",
+        value.title ||
+        "",
 
       concept:
-        v.concept||"",
+        value.concept ||
+        "",
 
       status:
-        v.status||"assigned",
+        value.status ||
+        "assigned",
 
       evidence:
-        v.evidence||null,
+        value.evidence ||
+        null,
 
-      attempts:[]
+      attempts: []
     };
 
-    state.activities.push(r);
+    state.activities.push(activity);
 
     audit(
       "ACTIVITY_ADDED",
-      {activityId:r.activityId}
+      {
+        activityId:
+          activity.activityId
+      }
     );
 
     emit(
       "activityAdded",
-      r
+      activity
     );
 
-    return clone(r);
+    return clone(activity);
   }
 
   function recordActivityAttempt(
     activityId,
     result
-  ){
-    if(
-      !requireAuth(
+  ) {
+    if (
+      !requireAuthorization(
         "ACTIVITY_ATTEMPT"
       )
-    ){
+    ) {
       return false;
     }
 
-    const a=
+    const activity =
       state.activities.find(
-        x=>x.activityId===activityId
+        function (item) {
+          return (
+            item.activityId ===
+            activityId
+          );
+        }
       );
 
-    if(!a) return false;
+    if (!activity) {
+      return false;
+    }
 
-    a.attempts=
-      Array.isArray(a.attempts)
-        ?a.attempts
-        :[];
+    if (
+      !Array.isArray(
+        activity.attempts
+      )
+    ) {
+      activity.attempts = [];
+    }
 
-    a.attempts.push({
-      attemptId:id("ATTEMPT"),
-      result:clone(result),
-      timestamp:now()
-    });
+    const attempt = {
+      attemptId:
+        makeId("ATTEMPT"),
+
+      result:
+        clone(result),
+
+      timestamp:
+        now()
+    };
+
+    activity.attempts.push(attempt);
 
     audit(
       "ACTIVITY_ATTEMPT_RECORDED",
-      {activityId:activityId}
+      {
+        activityId:
+          activityId
+      }
     );
 
     emit(
       "activityAttemptRecorded",
       {
-        activityId:activityId,
-        result:clone(result)
+        activityId:
+          activityId,
+
+        result:
+          clone(result)
       }
     );
 
-    return clone(a);
+    return clone(activity);
   }
 
-  function addAssessment(v){
-    if(
-      !requireAuth("ASSESSMENT_ADD")||
-      !obj(v)
-    ){
+  function getActivities() {
+    return clone(state.activities);
+  }
+
+  function addAssessment(value) {
+    if (
+      !requireAuthorization(
+        "ASSESSMENT_ADD"
+      ) ||
+      !isObject(value)
+    ) {
       return false;
     }
 
-    const r=clone(v);
+    const assessment =
+      clone(value);
 
-    r.assessmentId=
-      r.assessmentId||
-      id("ASSESSMENT");
+    assessment.assessmentId =
+      assessment.assessmentId ||
+      makeId("ASSESSMENT");
 
-    r.createdAt=
-      r.createdAt||
+    assessment.createdAt =
+      assessment.createdAt ||
       now();
 
-    if(
-      typeof r.score==="number" &&
-      typeof r.pass!=="boolean"
-    ){
-      r.pass=
-        r.score>=PASS_MARK;
+    if (
+      typeof assessment.score ===
+        "number" &&
+      typeof assessment.pass !==
+        "boolean"
+    ) {
+      assessment.pass =
+        assessment.score >=
+        PASS_MARK;
     }
 
-    state.assessments.push(r);
+    state.assessments.push(
+      assessment
+    );
 
     audit(
       "ASSESSMENT_ADDED",
       {
-        assessmentId:r.assessmentId,
+        assessmentId:
+          assessment.assessmentId,
+
         type:
-          r.type||
-          r.assessmentType||
+          assessment.type ||
+          assessment.assessmentType ||
           "",
-        score:r.score,
-        pass:r.pass
+
+        score:
+          assessment.score,
+
+        pass:
+          assessment.pass
       }
     );
 
     emit(
       "assessmentAdded",
-      r
+      assessment
     );
 
-    return clone(r);
+    return clone(assessment);
   }
 
-  const assessments={
-    add:addAssessment,
-    record:addAssessment,
+  const assessments = {
+    add: addAssessment,
+    record: addAssessment,
 
-    getAll:()=>
-      clone(state.assessments),
+    getAll: function () {
+      return clone(
+        state.assessments
+      );
+    },
 
-    getById:idv=>
-      clone(
+    getById: function (assessmentId) {
+      return clone(
         state.assessments.find(
-          x=>x.assessmentId===idv
-        )||null
-      ),
+          function (item) {
+            return (
+              item.assessmentId ===
+              assessmentId
+            );
+          }
+        ) || null
+      );
+    },
 
-    latest:()=>
-      clone(
+    latest: function () {
+      return clone(
         state.assessments[
-          state.assessments.length-1
-        ]||null
-      )
+          state.assessments.length - 1
+        ] || null
+      );
+    }
   };
 
   function transferMark(
     assessmentId,
-    v
-  ){
-    if(
-      !requireAuth("MARK_TRANSFER")||
-      typeof assessmentId!=="string"||
+    value
+  ) {
+    if (
+      !requireAuthorization(
+        "MARK_TRANSFER"
+      ) ||
+      typeof assessmentId !==
+        "string" ||
       !assessmentId.trim()
-    ){
+    ) {
       return false;
     }
 
-    v=obj(v)?clone(v):{};
+    value = isObject(value)
+      ? clone(value)
+      : {};
 
-    const r={
-      markId:id("MARK"),
-      assessmentId:assessmentId,
+    const mark = {
+      markId:
+        makeId("MARK"),
+
+      assessmentId:
+        assessmentId,
 
       studentId:
-        v.studentId||
-        state.student.studentId||
+        value.studentId ||
+        state.student.studentId ||
         null,
 
       score:
-        v.score!==undefined
-          ?v.score
-          :null,
+        value.score !== undefined
+          ? value.score
+          : null,
 
       percentage:
-        v.percentage!==undefined
-          ?v.percentage
-          :v.score!==undefined
-            ?v.score
-            :null,
+        value.percentage !==
+        undefined
+          ? value.percentage
+          : value.score !== undefined
+            ? value.score
+            : null,
 
       grade:
-        v.grade||"",
+        value.grade ||
+        "",
 
       subject:
-        v.subject||
-        state.lesson.subject||
+        value.subject ||
+        state.lesson.subject ||
         "",
 
       status:
-        v.status||"verified",
+        value.status ||
+        "verified",
 
       source:
-        v.source||"assessment",
+        value.source ||
+        "assessment",
 
-      createdAt:now(),
-      updatedAt:now()
+      createdAt:
+        now(),
+
+      updatedAt:
+        now()
     };
 
-    state.marks.push(r);
+    state.marks.push(mark);
 
     audit(
       "MARK_TRANSFERRED",
       {
-        markId:r.markId,
-        assessmentId:assessmentId
+        markId:
+          mark.markId,
+
+        assessmentId:
+          assessmentId
       }
     );
 
     emit(
       "markTransferred",
-      r
+      mark
     );
 
-    return clone(r);
+    return clone(mark);
   }
 
   function editMark(
     markId,
     changes,
     reason
-  ){
-    if(!requireAuth("MARK_EDIT")){
+  ) {
+    if (
+      !requireAuthorization(
+        "MARK_EDIT"
+      )
+    ) {
       return false;
     }
 
-    const r=
+    const mark =
       state.marks.find(
-        x=>x.markId===markId
+        function (item) {
+          return (
+            item.markId ===
+            markId
+          );
+        }
       );
 
-    if(!r) return false;
+    if (!mark) {
+      return false;
+    }
 
-    changes=
-      obj(changes)
-        ?changes
-        :{};
+    changes = isObject(changes)
+      ? changes
+      : {};
 
     Object.keys(changes)
-      .forEach(k=>{
-        if(k!=="markId"){
-          r[k]=clone(
-            changes[k]
-          );
+      .forEach(function (key) {
+        if (key !== "markId") {
+          mark[key] =
+            clone(changes[key]);
         }
       });
 
-    r.updatedAt=now();
+    mark.updatedAt = now();
 
-    r.editReason=
-      typeof reason==="string"
-        ?reason
-        :"Authorized mark correction";
+    mark.editReason =
+      typeof reason === "string"
+        ? reason
+        : "Authorized mark correction";
 
     audit(
       "MARK_EDITED",
       {
-        markId:markId,
-        reason:r.editReason
+        markId:
+          markId,
+
+        reason:
+          mark.editReason
       }
     );
 
     emit(
       "markEdited",
-      r
+      mark
     );
 
-    return clone(r);
+    return clone(mark);
   }
 
-  const marks={
-    transfer:transferMark,
-    edit:editMark,
+  const marks = {
+    transfer: transferMark,
+    edit: editMark,
 
-    getAll:()=>
-      clone(state.marks),
+    getAll: function () {
+      return clone(state.marks);
+    },
 
-    getById:idv=>
-      clone(
+    getById: function (markId) {
+      return clone(
         state.marks.find(
-          x=>x.markId===idv
-        )||null
-      )
+          function (item) {
+            return (
+              item.markId ===
+              markId
+            );
+          }
+        ) || null
+      );
+    }
   };
 
-  function createIntervention(v){
-    if(
-      !requireAuth(
+  function createIntervention(value) {
+    if (
+      !requireAuthorization(
         "INTERVENTION_CREATE"
       )
-    ){
+    ) {
       return false;
     }
 
-    v=obj(v)?v:{};
+    value = isObject(value)
+      ? value
+      : {};
 
-    const r={
+    const intervention = {
       interventionId:
-        id("INTERVENTION"),
+        makeId("INTERVENTION"),
 
       studentId:
-        v.studentId||
-        state.student.studentId||
+        value.studentId ||
+        state.student.studentId ||
         null,
 
       reason:
-        v.reason||"",
+        value.reason ||
+        "",
 
       target:
-        v.target||"",
+        value.target ||
+        "",
 
       action:
-        v.action||"",
+        value.action ||
+        "",
 
       status:
         "proposed",
@@ -763,124 +1045,360 @@
         now()
     };
 
-    state.interventions.push(r);
+    state.interventions.push(
+      intervention
+    );
 
     audit(
       "INTERVENTION_CREATED",
       {
         interventionId:
-          r.interventionId
+          intervention.interventionId
       }
     );
 
     emit(
       "interventionCreated",
-      r
+      intervention
     );
 
-    return clone(r);
+    return clone(
+      intervention
+    );
   }
 
   function approveIntervention(
     interventionId,
-    approval
-  ){
-    if(
-      !requireAuth(
+    approver
+  ) {
+    if (
+      !requireAuthorization(
         "INTERVENTION_APPROVE"
       )
-    ){
+    ) {
       return false;
     }
 
-    const r=
+    const intervention =
       state.interventions.find(
-        x=>
-          x.interventionId===
-          interventionId
+        function (item) {
+          return (
+            item.interventionId ===
+            interventionId
+          );
+        }
       );
 
-    if(!r) return false;
+    if (!intervention) {
+      return false;
+    }
 
-    r.status=
-      approval===false
-        ?"rejected"
-        :"approved";
+    intervention.status =
+      "approved";
 
-    r.approvedAt=now();
+    intervention.approvedBy =
+      approver ||
+      state.identity.userId ||
+      state.identity.name ||
+      "";
+
+    intervention.approvedAt =
+      now();
 
     audit(
-      "INTERVENTION_STATUS_CHANGED",
+      "INTERVENTION_APPROVED",
       {
         interventionId:
-          interventionId,
-        status:r.status
+          interventionId
       }
     );
 
     emit(
-      "interventionStatusChanged",
-      r
+      "interventionApproved",
+      intervention
     );
 
-    return clone(r);
+    return clone(
+      intervention
+    );
   }
 
-  const api={
-    version:VERSION,
-    passMark:PASS_MARK,
-    roles:ROLES.slice(),
+  function getInterventions() {
+    return clone(
+      state.interventions
+    );
+  }
 
-    getState:()=>clone(state),
-    saveState:save,
+  function recordLearningHistory(
+    value
+  ) {
+    if (
+      !requireAuthorization(
+        "LEARNING_HISTORY_RECORD"
+      )
+    ) {
+      return false;
+    }
 
-    isAuthorized:authorized,
-    authorizeUser:authorize,
-    requireAuthorization:requireAuth,
+    value = isObject(value)
+      ? value
+      : {};
 
-    identity:identity,
+    const entry = {
+      historyId:
+        makeId("HISTORY"),
 
-    setIdentity:setIdentity,
-    getIdentity:()=>clone(state.identity),
+      timestamp:
+        now(),
 
-    setWorkspace:v=>
-      protectedSet(
-        "workspace",
-        v,
-        "WORKSPACE",
-        "workspaceUpdated"
-      ),
+      studentId:
+        value.studentId ||
+        state.student.studentId ||
+        null,
 
-    getWorkspace:()=>
-      clone(state.workspace),
+      day:
+        value.day !== undefined
+          ? value.day
+          : state.lesson.day,
 
-    setStudent:v=>
-      protectedSet(
-        "student",
-        v,
-        "STUDENT",
-        "studentUpdated"
-      ),
+      subject:
+        value.subject ||
+        state.lesson.subject ||
+        "",
 
-    getStudent:()=>
-      clone(state.student),
+      concept:
+        value.concept ||
+        state.lesson.concept ||
+        "",
 
-    setCurriculum:v=>
-      protectedSet(
-        "curriculum",
-        v,
-        "CURRICULUM",
-        "curriculumUpdated"
-      ),
+      status:
+        value.status ||
+        "recorded",
 
-    getCurriculum:()=>
-      clone(state.curriculum),
+      evidence:
+        value.evidence ||
+        null
+    };
 
-    setLesson:setLesson,
+    state.learningHistory.push(
+      entry
+    );
 
-    getLesson:()=>
-      clone(state.lesson),
+    audit(
+      "LEARNING_HISTORY_RECORDED",
+      {
+        historyId:
+          entry.historyId
+      }
+    );
 
+    emit(
+      "learningHistoryRecorded",
+      entry
+    );
+
+    return clone(entry);
+  }
+
+  function getLearningHistory() {
+    return clone(
+      state.learningHistory
+    );
+  }
+
+  function getUnderstandingStatus() {
+    return {
+      percentage:
+        state.dailyLearningCheck
+          .understandingPercent,
+
+      status:
+        state.dailyLearningCheck
+          .status,
+
+      interventionRequired:
+        state.dailyLearningCheck
+          .status ===
+        "intervention_required"
+    };
+  }
+
+  function getAssessments() {
+    return clone(
+      state.assessments
+    );
+  }
+
+  function getAssessmentById(
+    assessmentId
+  ) {
+    return assessments.getById(
+      assessmentId
+    );
+  }
+
+  function getLatestAssessment() {
+    return assessments.latest();
+  }
+
+  function getMarks() {
+    return clone(
+      state.marks
+    );
+  }
+
+  function getMarkById(markId) {
+    return marks.getById(
+      markId
+    );
+  }
+
+  function getStatus() {
+    return {
+      version:
+        VERSION,
+
+      authorized:
+        isAuthorized(),
+
+      identity:
+        clone(state.identity),
+
+      workspace:
+        clone(state.workspace),
+
+      student:
+        clone(state.student),
+
+      curriculum:
+        clone(state.curriculum),
+
+      lesson:
+        clone(state.lesson),
+
+      dailyLearningCheck:
+        clone(
+          state.dailyLearningCheck
+        ),
+
+      assessments:
+        state.assessments.length,
+
+      marks:
+        state.marks.length,
+
+      interventions:
+        state.interventions.length,
+
+      activities:
+        state.activities.length,
+
+      learningHistory:
+        state.learningHistory.length
+    };
+  }
+
+  function connectModules(modules) {
+    modules = isObject(modules)
+      ? modules
+      : {};
+
+    audit(
+      "MODULES_CONNECTED",
+      {
+        modules:
+          Object.keys(modules)
+      }
+    );
+
+    emit(
+      "modulesConnected",
+      {
+        modules:
+          Object.keys(modules)
+      }
+    );
+
+    return {
+      connected: true,
+
+      modules:
+        Object.keys(modules),
+
+      version:
+        VERSION
+    };
+  }
+
+  function resetPrototypeState() {
+    state =
+      clone(DEFAULT_STATE);
+
+    saveState();
+
+    audit(
+      "PROTOTYPE_STATE_RESET",
+      {}
+    );
+
+    emit(
+      "prototypeStateReset",
+      {}
+    );
+
+    return true;
+  }
+
+  const api = {
+    version: VERSION,
+    PASS_MARK: PASS_MARK,
+    ROLES: ROLES,
+
+    identity: identity,
+
+    isAuthorized:
+      isAuthorized,
+
+    authorizeUser:
+      authorizeUser,
+
+    requireAuthorization:
+      requireAuthorization,
+
+    setIdentity:
+      setIdentity,
+
+    getIdentity:
+      getIdentity,
+
+    setWorkspace:
+      setWorkspace,
+
+    getWorkspace:
+      getWorkspace,
+
+    setStudent:
+      setStudent,
+
+    getStudent:
+      getStudent,
+
+    setCurriculum:
+      setCurriculum,
+
+    getCurriculum:
+      getCurriculum,
+
+    setLesson:
+      setLesson,
+
+    getLesson:
+      getLesson,
+
+    /*
+     * Compatibility aliases required by
+     * existing Pacific Education modules.
+     */
     startDailyLearning:
       startDailyLearning,
 
@@ -893,87 +1411,44 @@
     recordDailyLearningCheck:
       recordDailyLearningCheck,
 
-    getDailyLearningCheck:()=>
-      clone(
-        state.dailyLearningCheck
-      ),
-
-    addActivity:addActivity,
+    addActivity:
+      addActivity,
 
     recordActivityAttempt:
       recordActivityAttempt,
 
-    getActivities:()=>
-      clone(state.activities),
+    getActivities:
+      getActivities,
 
-    recordLearningHistory:v=>{
-      if(
-        !requireAuth(
-          "LEARNING_HISTORY"
-        )
-      ){
-        return false;
-      }
+    assessments:
+      assessments,
 
-      const r={
-        historyId:id("HISTORY"),
-        timestamp:now(),
-        data:clone(v)
-      };
+    addAssessment:
+      addAssessment,
 
-      state.learningHistory.push(r);
+    getAssessments:
+      getAssessments,
 
-      audit(
-        "LEARNING_HISTORY_RECORDED",
-        {
-          historyId:r.historyId
-        }
-      );
+    getAssessmentById:
+      getAssessmentById,
 
-      emit(
-        "learningHistoryRecorded",
-        r
-      );
+    getLatestAssessment:
+      getLatestAssessment,
 
-      return clone(r);
-    },
+    marks:
+      marks,
 
-    getLearningHistory:()=>
-      clone(state.learningHistory),
+    transferMark:
+      transferMark,
 
-    assessments:assessments,
-    addAssessment:addAssessment,
+    editMark:
+      editMark,
 
-    getAssessments:()=>
-      clone(state.assessments),
+    getMarks:
+      getMarks,
 
-    getAssessmentById:idv=>
-      clone(
-        state.assessments.find(
-          x=>x.assessmentId===idv
-        )||null
-      ),
-
-    getLatestAssessment:()=>
-      clone(
-        state.assessments[
-          state.assessments.length-1
-        ]||null
-      ),
-
-    marks:marks,
-    transferMark:transferMark,
-    editMark:editMark,
-
-    getMarks:()=>
-      clone(state.marks),
-
-    getMarkById:idv=>
-      clone(
-        state.marks.find(
-          x=>x.markId===idv
-        )||null
-      ),
+    getMarkById:
+      getMarkById,
 
     createIntervention:
       createIntervention,
@@ -981,122 +1456,37 @@
     approveIntervention:
       approveIntervention,
 
-    getInterventions:()=>
-      clone(state.interventions),
+    getInterventions:
+      getInterventions,
 
-    getUnderstandingStatus:()=>
-      ({
-        dailyLearningCheck:
-          clone(
-            state.dailyLearningCheck
-          ),
+    recordLearningHistory:
+      recordLearningHistory,
 
-        latestAssessment:
-          clone(
-            state.assessments[
-              state.assessments.length-1
-            ]||null
-          ),
+    getLearningHistory:
+      getLearningHistory,
 
-        understandingPercent:
-          state
-            .dailyLearningCheck
-            .understandingPercent,
+    getUnderstandingStatus:
+      getUnderstandingStatus,
 
-        status:
-          state
-            .dailyLearningCheck
-            .status,
+    getStatus:
+      getStatus,
 
-        interventionRequired:
-          state
-            .dailyLearningCheck
-            .status===
-          "intervention_required"
-      }),
+    connectModules:
+      connectModules,
 
-    getStatus:()=>
-      ({
-        version:VERSION,
-        authorized:authorized(),
-
-        identity:
-          clone(state.identity),
-
-        student:
-          clone(state.student),
-
-        lesson:
-          clone(state.lesson),
-
-        dailyLearningCheck:
-          clone(
-            state.dailyLearningCheck
-          ),
-
-        assessments:
-          state.assessments.length,
-
-        marks:
-          state.marks.length,
-
-        interventions:
-          state.interventions.length
-      }),
-
-    connectModules:modules=>{
-      modules=
-        obj(modules)
-          ?modules
-          :{};
-
-      audit(
-        "MODULES_CONNECTED",
-        {
-          modules:
-            Object.keys(modules)
-        }
-      );
-
-      emit(
-        "modulesConnected",
-        {
-          modules:
-            Object.keys(modules)
-        }
-      );
-
-      return{
-        connected:true,
-        modules:
-          Object.keys(modules),
-        version:VERSION
-      };
-    },
-
-    resetPrototypeState:()=>{
-      state=clone(DEFAULT_STATE);
-      save();
-
-      audit(
-        "PROTOTYPE_STATE_RESET",
-        {}
-      );
-
-      emit(
-        "prototypeStateReset"
-      );
-
-      return true;
-    }
+    resetPrototypeState:
+      resetPrototypeState
   };
 
-  window.PacificEducationCore=
+  window.PacificEducationCore =
     Object.freeze(api);
 
   emit(
     "coreReady",
-    {version:VERSION}
+    {
+      version:
+        VERSION
+    }
   );
 
 })(window);
