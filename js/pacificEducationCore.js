@@ -1,8 +1,8 @@
-/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.3 */
+/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.4 */
 (function (window) {
   "use strict";
 
-  const VERSION = "1.2.3";
+  const VERSION = "1.2.4";
   const STORAGE_KEY = "pacificEducationCoreState";
   const PASS_MARK = 80;
 
@@ -169,13 +169,6 @@
     }
   }
 
-  /*
-   * PUBLIC COMPATIBILITY API
-   * Existing Pacific Education modules use these functions.
-   *
-   * getState() returns a clone so external modules cannot
-   * directly mutate the protected Core state.
-   */
   function getState() {
     return clone(state);
   }
@@ -473,11 +466,6 @@
     );
   }
 
-  /*
-   * IMPORTANT COMPATIBILITY API
-   * Existing modules require:
-   * core.startDailyLearning()
-   */
   function startDailyLearning(options) {
     if (
       !requireAuthorization(
@@ -1211,6 +1199,170 @@
     return clone(entry);
   }
 
+  /*
+   * NEW CORE-AUTHORITATIVE LESSON COMPLETION API
+   *
+   * This is deliberately separate from setLesson().
+   * setLesson() changes the current lesson.
+   * recordLessonCompletion() records that a lesson
+   * was actually completed.
+   *
+   * This prevents the next lesson from accidentally
+   * being recorded as completed when the current lesson
+   * advances.
+   */
+  function recordLessonCompletion(value) {
+    if (
+      !requireAuthorization(
+        "LESSON_COMPLETION_RECORD"
+      )
+    ) {
+      return false;
+    }
+
+    value = isObject(value)
+      ? value
+      : {};
+
+    const day =
+      value.day !== undefined
+        ? Number(value.day)
+        : Number(state.lesson.day);
+
+    if (
+      !Number.isFinite(day) ||
+      day < 1 ||
+      day > 365
+    ) {
+      audit(
+        "LESSON_COMPLETION_BLOCKED",
+        {
+          reason:
+            "Invalid lesson day.",
+          day:
+            value.day
+        }
+      );
+
+      return false;
+    }
+
+    const studentId =
+      value.studentId ||
+      state.student.studentId ||
+      null;
+
+    const lessonId =
+      value.lessonId ||
+      state.lesson.lessonId ||
+      null;
+
+    const alreadyCompleted =
+      state.learningHistory.some(
+        function (entry) {
+          return (
+            entry.status ===
+              "completed" &&
+            Number(entry.day) ===
+              day &&
+            (studentId === null ||
+              entry.studentId ===
+                studentId)
+          );
+        }
+      );
+
+    if (alreadyCompleted) {
+      audit(
+        "LESSON_COMPLETION_DUPLICATE_BLOCKED",
+        {
+          day: day,
+          studentId: studentId,
+          lessonId: lessonId
+        }
+      );
+
+      return false;
+    }
+
+    const entry = {
+      historyId:
+        makeId("HISTORY"),
+
+      completionId:
+        makeId("COMPLETION"),
+
+      timestamp:
+        now(),
+
+      studentId:
+        studentId,
+
+      day:
+        day,
+
+      lessonId:
+        lessonId,
+
+      subject:
+        value.subject ||
+        state.lesson.subject ||
+        "",
+
+      title:
+        value.title ||
+        state.lesson.title ||
+        "",
+
+      concept:
+        value.concept ||
+        state.lesson.concept ||
+        "",
+
+      status:
+        "completed",
+
+      evidence:
+        value.evidence ||
+        null,
+
+      source:
+        value.source ||
+        "lesson_completion"
+    };
+
+    state.learningHistory.push(
+      entry
+    );
+
+    audit(
+      "LESSON_COMPLETION_RECORDED",
+      {
+        completionId:
+          entry.completionId,
+
+        historyId:
+          entry.historyId,
+
+        day:
+          day,
+
+        studentId:
+          studentId,
+
+        lessonId:
+          lessonId
+      }
+    );
+
+    emit(
+      "lessonCompletionRecorded",
+      entry
+    );
+
+    return clone(entry);
+  }
+
   function getLearningHistory() {
     return clone(
       state.learningHistory
@@ -1367,19 +1519,10 @@
 
     ROLES: ROLES,
 
-    /*
-     * LEGACY COMPATIBILITY
-     * Preserve the original Core public names.
-     */
     passMark: PASS_MARK,
 
     roles: ROLES.slice(),
 
-    /*
-     * STATE COMPATIBILITY
-     * getState returns a clone so external modules cannot
-     * directly mutate the protected Core state.
-     */
     getState: getState,
 
     saveState: saveState,
@@ -1425,10 +1568,6 @@
     getLesson:
       getLesson,
 
-    /*
-     * Compatibility aliases required by
-     * existing Pacific Education modules.
-     */
     startDailyLearning:
       startDailyLearning,
 
@@ -1492,6 +1631,13 @@
     recordLearningHistory:
       recordLearningHistory,
 
+    /*
+     * NEW:
+     * Core-authoritative completed-lesson record.
+     */
+    recordLessonCompletion:
+      recordLessonCompletion,
+
     getLearningHistory:
       getLearningHistory,
 
@@ -1518,6 +1664,5 @@
         VERSION
     }
   );
-
 
 })(window);
