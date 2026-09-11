@@ -1,333 +1,1102 @@
-/*
- * =========================================================
- * PACIFIC EDUCATION
- * CENTRAL EDUCATION CORE
- * Version 1.2.0
- *
- * PURPOSE
- * ---------------------------------------------------------
- * Central protected education-state layer.
- *
- * CONNECTS:
- * • identity
- * • workspace
- * • student
- * • curriculum
- * • lesson
- * • daily learning check
- * • activities
- * • learning history
- * • assessments
- * • marks
- * • interventions
- * • events
- * • audit history
- *
- * SECURITY RULE
- * ---------------------------------------------------------
- * Authorization is never inferred from identity alone.
- *
- * Prototype note:
- * localStorage is suitable for the current prototype only.
- * Production requires secure authentication, server-side
- * authorization, encrypted storage, audit controls,
- * backup, recovery and jurisdiction-compliant education
- * record protection.
- * =========================================================
- */
+/* PACIFIC EDUCATION - CENTRAL EDUCATION CORE - Version 1.2.1 */
+(function(window){
+  "use strict";
 
-(function (window) {
-    "use strict";
+  const VERSION="1.2.1";
+  const STORAGE_KEY="pacificEducationCoreState";
+  const PASS_MARK=80;
 
-    const VERSION = "1.2.0";
-    const STORAGE_KEY = "pacificEducationCoreState";
-    const PASS_MARK = 80;
+  const ROLES=Object.freeze([
+    "student","teacher","parent","ministry",
+    "head_of_school","examiner","owner","admin"
+  ]);
 
-    const ROLES = Object.freeze([
-        "student",
-        "teacher",
-        "parent",
-        "ministry",
-        "head_of_school",
-        "examiner",
-        "owner",
-        "admin"
-    ]);
+  const DEFAULT_STATE={
+    version:VERSION,
+    identity:{
+      userId:null,name:"",role:null,country:"",
+      jurisdiction:"",schoolId:null,classId:null,
+      authorized:false
+    },
+    workspace:{
+      workspaceId:null,type:"personal",status:"active"
+    },
+    student:{
+      studentId:null,name:"",yearForm:"",
+      className:"",subjects:[]
+    },
+    curriculum:{
+      country:"",jurisdiction:"",version:"",
+      yearForm:"",subject:"",currentConcept:"",
+      verified:false
+    },
+    lesson:{
+      lessonId:null,day:null,subject:"",
+      title:"",concept:"",status:"not_started"
+    },
+    dailyLearningCheck:{
+      checkId:null,concept:"",questions:[],
+      attempted:false,score:null,
+      understandingPercent:null,status:"not_started"
+    },
+    activities:[],
+    learningHistory:[],
+    assessments:[],
+    marks:[],
+    interventions:[],
+    audit:[],
+    events:[]
+  };
 
-    const DEFAULT_STATE = {
-        version: VERSION,
+  const clone=v=>{
+    try{return JSON.parse(JSON.stringify(v));}
+    catch(e){return null;}
+  };
 
-        identity: {
-            userId: null,
-            name: "",
-            role: null,
-            country: "",
-            jurisdiction: "",
-            schoolId: null,
-            classId: null,
-            authorized: false
-        },
+  const obj=v=>!!(
+    v &&
+    typeof v==="object" &&
+    !Array.isArray(v)
+  );
 
-        workspace: {
-            workspaceId: null,
-            type: "personal",
-            status: "active"
-        },
+  function merge(a,b){
+    if(!obj(b)) return a;
+    Object.keys(b).forEach(k=>{
+      a[k]=obj(b[k])&&obj(a[k])
+        ? merge(a[k],b[k])
+        : b[k];
+    });
+    return a;
+  }
 
-        student: {
-            studentId: null,
-            name: "",
-            yearForm: "",
-            className: "",
-            subjects: []
-        },
+  const now=()=>new Date().toISOString();
 
-        curriculum: {
-            country: "",
-            jurisdiction: "",
-            version: "",
-            yearForm: "",
-            subject: "",
-            currentConcept: "",
-            verified: false
-        },
+  const id=p=>
+    p+"-"+Date.now().toString(36)+"-"+
+    Math.random().toString(36).slice(2,9);
 
-        lesson: {
-            lessonId: null,
-            day: null,
-            subject: "",
-            title: "",
-            concept: "",
-            status: "not_started"
-        },
+  function load(){
+    try{
+      const raw=
+        window.localStorage &&
+        window.localStorage.getItem(STORAGE_KEY);
 
-        dailyLearningCheck: {
-            checkId: null,
-            concept: "",
-            questions: [],
-            attempted: false,
-            score: null,
-            understandingPercent: null,
-            status: "not_started"
-        },
+      return raw
+        ? merge(clone(DEFAULT_STATE),JSON.parse(raw))
+        : clone(DEFAULT_STATE);
+    }catch(e){
+      return clone(DEFAULT_STATE);
+    }
+  }
 
-        activities: [],
-        learningHistory: [],
-        assessments: [],
-        marks: [],
-        interventions: [],
-        audit: [],
-        events: []
+  let state=load();
+
+  function save(){
+    state.version=VERSION;
+    try{
+      if(window.localStorage){
+        window.localStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify(state)
+        );
+      }
+    }catch(e){
+      console.error(
+        "Pacific Education Core save failed",
+        e
+      );
+    }
+  }
+
+  function audit(action,details){
+    state.audit.push({
+      auditId:id("AUDIT"),
+      action:action,
+      details:obj(details)?clone(details):{},
+      timestamp:now()
+    });
+    save();
+  }
+
+  function emit(name,payload){
+    const event={
+      eventId:id("EVENT"),
+      name:name,
+      payload:clone(payload)||{},
+      timestamp:now()
     };
 
-    function clone(value) {
-        try {
-            return JSON.parse(JSON.stringify(value));
-        } catch (error) {
-            return null;
+    state.events.push(event);
+
+    if(
+      typeof window.dispatchEvent==="function" &&
+      typeof window.CustomEvent==="function"
+    ){
+      window.dispatchEvent(
+        new CustomEvent(
+          "pacificEducation:"+name,
+          {detail:event.payload}
+        )
+      );
+    }
+
+    save();
+    return clone(event);
+  }
+
+  function authorized(){
+    return !!(
+      state.identity &&
+      state.identity.authorized===true
+    );
+  }
+
+  function requireAuth(action){
+    if(authorized()) return true;
+
+    audit(
+      String(action||"ACTION")+"_BLOCKED",
+      {reason:"User is not authorized."}
+    );
+
+    return false;
+  }
+
+  function authorize(ctx){
+    if(!obj(ctx)||ctx.authorized!==true){
+      state.identity.authorized=false;
+      audit("AUTHORIZATION_DENIED",{});
+      return false;
+    }
+
+    state.identity.authorized=true;
+
+    audit(
+      "AUTHORIZATION_GRANTED",
+      {
+        userId:state.identity.userId,
+        role:state.identity.role
+      }
+    );
+
+    emit(
+      "authorizationGranted",
+      state.identity
+    );
+
+    return true;
+  }
+
+  function setIdentity(v){
+    if(!obj(v)) return false;
+
+    state.identity=merge(
+      state.identity,
+      v
+    );
+
+    if(v.authorized!==true){
+      state.identity.authorized=false;
+    }
+
+    audit(
+      "IDENTITY_UPDATED",
+      {
+        userId:state.identity.userId,
+        role:state.identity.role,
+        authorized:state.identity.authorized
+      }
+    );
+
+    emit(
+      "identityUpdated",
+      state.identity
+    );
+
+    return clone(state.identity);
+  }
+
+  const identity={
+    set:setIdentity,
+    get:()=>clone(state.identity),
+    isAuthorized:authorized,
+    authorize:authorize
+  };
+
+  function protectedSet(
+    key,
+    v,
+    action,
+    event
+  ){
+    if(!requireAuth(action)||!obj(v)){
+      return false;
+    }
+
+    state[key]=merge(
+      state[key],
+      v
+    );
+
+    audit(
+      action+"_UPDATED",
+      v
+    );
+
+    emit(
+      event,
+      state[key]
+    );
+
+    return clone(state[key]);
+  }
+
+  function setLesson(v){
+    return protectedSet(
+      "lesson",
+      v,
+      "LESSON",
+      "lessonUpdated"
+    );
+  }
+
+  function createDailyLearningCheck(v){
+    if(
+      !requireAuth(
+        "DAILY_LEARNING_CHECK_CREATE"
+      )
+    ){
+      return false;
+    }
+
+    v=obj(v)?v:{};
+
+    state.dailyLearningCheck={
+      checkId:
+        v.checkId||id("CHECK"),
+
+      concept:
+        typeof v.concept==="string"
+          ?v.concept
+          :"",
+
+      questions:
+        Array.isArray(v.questions)
+          ?clone(v.questions)
+          :[],
+
+      attempted:false,
+      score:null,
+      understandingPercent:null,
+      status:"not_started"
+    };
+
+    audit(
+      "DAILY_LEARNING_CHECK_CREATED",
+      {
+        checkId:
+          state.dailyLearningCheck.checkId
+      }
+    );
+
+    emit(
+      "dailyLearningCheckCreated",
+      state.dailyLearningCheck
+    );
+
+    return clone(
+      state.dailyLearningCheck
+    );
+  }
+
+  function startDailyLearning(o){
+    if(
+      !requireAuth(
+        "DAILY_LEARNING_START"
+      )
+    ){
+      return false;
+    }
+
+    if(obj(o)&&obj(o.lesson)){
+      setLesson(o.lesson);
+    }
+
+    return createDailyLearningCheck(
+      obj(o)&&obj(o.check)
+        ?o.check
+        :{
+          concept:
+            obj(o)&&o.concept
+              ?o.concept
+              :state.lesson.concept,
+
+          questions:
+            obj(o)&&o.questions
+              ?o.questions
+              :[]
         }
+    );
+  }
+
+  function recordDailyLearningCheck(v){
+    if(
+      !requireAuth(
+        "DAILY_LEARNING_CHECK_RECORD"
+      )
+    ){
+      return false;
     }
 
-    function isPlainObject(value) {
-        return !!(
-            value &&
-            typeof value === "object" &&
-            !Array.isArray(value)
-        );
+    v=obj(v)?v:{};
+
+    const total=Number(v.total);
+    const correct=Number(v.correct);
+
+    let pct=null;
+
+    if(
+      Number.isFinite(total)&&
+      total>0&&
+      Number.isFinite(correct)
+    ){
+      pct=Math.round(
+        Math.max(
+          0,
+          Math.min(correct,total)
+        )/total*100
+      );
     }
 
-    function mergeState(base, source) {
-        if (!isPlainObject(source)) {
-            return base;
+    state.dailyLearningCheck.attempted=true;
+
+    state.dailyLearningCheck.score={
+      correct:
+        Number.isFinite(correct)
+          ?correct
+          :0,
+
+      total:
+        Number.isFinite(total)
+          ?total
+          :0
+    };
+
+    state.dailyLearningCheck
+      .understandingPercent=pct;
+
+    state.dailyLearningCheck.status=
+      pct===null
+        ?"teacher_review_required"
+        :pct<PASS_MARK
+          ?"intervention_required"
+          :"continue";
+
+    audit(
+      "DAILY_LEARNING_CHECK_RECORDED",
+      {
+        checkId:
+          state.dailyLearningCheck.checkId,
+
+        understandingPercent:pct,
+
+        status:
+          state.dailyLearningCheck.status
+      }
+    );
+
+    emit(
+      "dailyLearningCheckRecorded",
+      state.dailyLearningCheck
+    );
+
+    return clone(
+      state.dailyLearningCheck
+    );
+  }
+
+  const dailyLearningCheck={
+    start:startDailyLearning,
+    create:createDailyLearningCheck,
+    record:recordDailyLearningCheck,
+    get:()=>clone(
+      state.dailyLearningCheck
+    )
+  };
+
+  function addActivity(v){
+    if(!requireAuth("ACTIVITY_ADD")){
+      return false;
+    }
+
+    v=obj(v)?v:{};
+
+    const r={
+      activityId:
+        v.activityId||id("ACT"),
+
+      date:
+        v.date||now(),
+
+      subject:
+        v.subject||"",
+
+      title:
+        v.title||"",
+
+      concept:
+        v.concept||"",
+
+      status:
+        v.status||"assigned",
+
+      evidence:
+        v.evidence||null,
+
+      attempts:[]
+    };
+
+    state.activities.push(r);
+
+    audit(
+      "ACTIVITY_ADDED",
+      {activityId:r.activityId}
+    );
+
+    emit(
+      "activityAdded",
+      r
+    );
+
+    return clone(r);
+  }
+
+  function recordActivityAttempt(
+    activityId,
+    result
+  ){
+    if(
+      !requireAuth(
+        "ACTIVITY_ATTEMPT"
+      )
+    ){
+      return false;
+    }
+
+    const a=
+      state.activities.find(
+        x=>x.activityId===activityId
+      );
+
+    if(!a) return false;
+
+    a.attempts=
+      Array.isArray(a.attempts)
+        ?a.attempts
+        :[];
+
+    a.attempts.push({
+      attemptId:id("ATTEMPT"),
+      result:clone(result),
+      timestamp:now()
+    });
+
+    audit(
+      "ACTIVITY_ATTEMPT_RECORDED",
+      {activityId:activityId}
+    );
+
+    emit(
+      "activityAttemptRecorded",
+      {
+        activityId:activityId,
+        result:clone(result)
+      }
+    );
+
+    return clone(a);
+  }
+
+  function addAssessment(v){
+    if(
+      !requireAuth("ASSESSMENT_ADD")||
+      !obj(v)
+    ){
+      return false;
+    }
+
+    const r=clone(v);
+
+    r.assessmentId=
+      r.assessmentId||
+      id("ASSESSMENT");
+
+    r.createdAt=
+      r.createdAt||
+      now();
+
+    if(
+      typeof r.score==="number" &&
+      typeof r.pass!=="boolean"
+    ){
+      r.pass=
+        r.score>=PASS_MARK;
+    }
+
+    state.assessments.push(r);
+
+    audit(
+      "ASSESSMENT_ADDED",
+      {
+        assessmentId:r.assessmentId,
+        type:
+          r.type||
+          r.assessmentType||
+          "",
+        score:r.score,
+        pass:r.pass
+      }
+    );
+
+    emit(
+      "assessmentAdded",
+      r
+    );
+
+    return clone(r);
+  }
+
+  const assessments={
+    add:addAssessment,
+    record:addAssessment,
+
+    getAll:()=>
+      clone(state.assessments),
+
+    getById:idv=>
+      clone(
+        state.assessments.find(
+          x=>x.assessmentId===idv
+        )||null
+      ),
+
+    latest:()=>
+      clone(
+        state.assessments[
+          state.assessments.length-1
+        ]||null
+      )
+  };
+
+  function transferMark(
+    assessmentId,
+    v
+  ){
+    if(
+      !requireAuth("MARK_TRANSFER")||
+      typeof assessmentId!=="string"||
+      !assessmentId.trim()
+    ){
+      return false;
+    }
+
+    v=obj(v)?clone(v):{};
+
+    const r={
+      markId:id("MARK"),
+      assessmentId:assessmentId,
+
+      studentId:
+        v.studentId||
+        state.student.studentId||
+        null,
+
+      score:
+        v.score!==undefined
+          ?v.score
+          :null,
+
+      percentage:
+        v.percentage!==undefined
+          ?v.percentage
+          :v.score!==undefined
+            ?v.score
+            :null,
+
+      grade:
+        v.grade||"",
+
+      subject:
+        v.subject||
+        state.lesson.subject||
+        "",
+
+      status:
+        v.status||"verified",
+
+      source:
+        v.source||"assessment",
+
+      createdAt:now(),
+      updatedAt:now()
+    };
+
+    state.marks.push(r);
+
+    audit(
+      "MARK_TRANSFERRED",
+      {
+        markId:r.markId,
+        assessmentId:assessmentId
+      }
+    );
+
+    emit(
+      "markTransferred",
+      r
+    );
+
+    return clone(r);
+  }
+
+  function editMark(
+    markId,
+    changes,
+    reason
+  ){
+    if(!requireAuth("MARK_EDIT")){
+      return false;
+    }
+
+    const r=
+      state.marks.find(
+        x=>x.markId===markId
+      );
+
+    if(!r) return false;
+
+    changes=
+      obj(changes)
+        ?changes
+        :{};
+
+    Object.keys(changes)
+      .forEach(k=>{
+        if(k!=="markId"){
+          r[k]=clone(
+            changes[k]
+          );
         }
+      });
 
-        Object.keys(source).forEach(function (key) {
-            if (
-                isPlainObject(source[key]) &&
-                isPlainObject(base[key])
-            ) {
-                base[key] = mergeState(
-                    base[key],
-                    source[key]
-                );
-            } else {
-                base[key] = source[key];
-            }
-        });
+    r.updatedAt=now();
 
-        return base;
+    r.editReason=
+      typeof reason==="string"
+        ?reason
+        :"Authorized mark correction";
+
+    audit(
+      "MARK_EDITED",
+      {
+        markId:markId,
+        reason:r.editReason
+      }
+    );
+
+    emit(
+      "markEdited",
+      r
+    );
+
+    return clone(r);
+  }
+
+  const marks={
+    transfer:transferMark,
+    edit:editMark,
+
+    getAll:()=>
+      clone(state.marks),
+
+    getById:idv=>
+      clone(
+        state.marks.find(
+          x=>x.markId===idv
+        )||null
+      )
+  };
+
+  function createIntervention(v){
+    if(
+      !requireAuth(
+        "INTERVENTION_CREATE"
+      )
+    ){
+      return false;
     }
 
-    function timestamp() {
-        return new Date().toISOString();
+    v=obj(v)?v:{};
+
+    const r={
+      interventionId:
+        id("INTERVENTION"),
+
+      studentId:
+        v.studentId||
+        state.student.studentId||
+        null,
+
+      reason:
+        v.reason||"",
+
+      target:
+        v.target||"",
+
+      action:
+        v.action||"",
+
+      status:
+        "proposed",
+
+      createdAt:
+        now()
+    };
+
+    state.interventions.push(r);
+
+    audit(
+      "INTERVENTION_CREATED",
+      {
+        interventionId:
+          r.interventionId
+      }
+    );
+
+    emit(
+      "interventionCreated",
+      r
+    );
+
+    return clone(r);
+  }
+
+  function approveIntervention(
+    interventionId,
+    approval
+  ){
+    if(
+      !requireAuth(
+        "INTERVENTION_APPROVE"
+      )
+    ){
+      return false;
     }
 
-    function createId(prefix) {
-        return (
-            prefix +
-            "-" +
-            Date.now().toString(36) +
-            "-" +
-            Math.random()
-                .toString(36)
-                .substring(2, 9)
-        );
-    }
+    const r=
+      state.interventions.find(
+        x=>
+          x.interventionId===
+          interventionId
+      );
 
-    function loadState() {
-        try {
-            if (
-                typeof window.localStorage ===
-                "undefined"
-            ) {
-                return clone(DEFAULT_STATE);
-            }
+    if(!r) return false;
 
-            const saved =
-                window.localStorage.getItem(
-                    STORAGE_KEY
-                );
+    r.status=
+      approval===false
+        ?"rejected"
+        :"approved";
 
-            if (!saved) {
-                return clone(DEFAULT_STATE);
-            }
+    r.approvedAt=now();
 
-            const parsed = JSON.parse(saved);
+    audit(
+      "INTERVENTION_STATUS_CHANGED",
+      {
+        interventionId:
+          interventionId,
+        status:r.status
+      }
+    );
 
-            if (!isPlainObject(parsed)) {
-                return clone(DEFAULT_STATE);
-            }
+    emit(
+      "interventionStatusChanged",
+      r
+    );
 
-            return mergeState(
-                clone(DEFAULT_STATE),
-                parsed
-            );
-        } catch (error) {
-            console.error(
-                "Pacific Education Core: unable to load state.",
-                error
-            );
+    return clone(r);
+  }
 
-            return clone(DEFAULT_STATE);
+  const api={
+    version:VERSION,
+    passMark:PASS_MARK,
+    roles:ROLES.slice(),
+
+    getState:()=>clone(state),
+    saveState:save,
+
+    isAuthorized:authorized,
+    authorizeUser:authorize,
+    requireAuthorization:requireAuth,
+
+    identity:identity,
+
+    setIdentity:setIdentity,
+    getIdentity:()=>clone(state.identity),
+
+    setWorkspace:v=>
+      protectedSet(
+        "workspace",
+        v,
+        "WORKSPACE",
+        "workspaceUpdated"
+      ),
+
+    getWorkspace:()=>
+      clone(state.workspace),
+
+    setStudent:v=>
+      protectedSet(
+        "student",
+        v,
+        "STUDENT",
+        "studentUpdated"
+      ),
+
+    getStudent:()=>
+      clone(state.student),
+
+    setCurriculum:v=>
+      protectedSet(
+        "curriculum",
+        v,
+        "CURRICULUM",
+        "curriculumUpdated"
+      ),
+
+    getCurriculum:()=>
+      clone(state.curriculum),
+
+    setLesson:setLesson,
+
+    getLesson:()=>
+      clone(state.lesson),
+
+    startDailyLearning:
+      startDailyLearning,
+
+    dailyLearningCheck:
+      dailyLearningCheck,
+
+    createDailyLearningCheck:
+      createDailyLearningCheck,
+
+    recordDailyLearningCheck:
+      recordDailyLearningCheck,
+
+    getDailyLearningCheck:()=>
+      clone(
+        state.dailyLearningCheck
+      ),
+
+    addActivity:addActivity,
+
+    recordActivityAttempt:
+      recordActivityAttempt,
+
+    getActivities:()=>
+      clone(state.activities),
+
+    recordLearningHistory:v=>{
+      if(
+        !requireAuth(
+          "LEARNING_HISTORY"
+        )
+      ){
+        return false;
+      }
+
+      const r={
+        historyId:id("HISTORY"),
+        timestamp:now(),
+        data:clone(v)
+      };
+
+      state.learningHistory.push(r);
+
+      audit(
+        "LEARNING_HISTORY_RECORDED",
+        {
+          historyId:r.historyId
         }
-    }
+      );
 
-    let state = loadState();
+      emit(
+        "learningHistoryRecorded",
+        r
+      );
 
-    function saveState() {
-        state.version = VERSION;
+      return clone(r);
+    },
 
-        try {
-            if (
-                typeof window.localStorage !==
-                "undefined"
-            ) {
-                window.localStorage.setItem(
-                    STORAGE_KEY,
-                    JSON.stringify(state)
-                );
-            }
-        } catch (error) {
-            console.error(
-                "Pacific Education Core: save failed.",
-                error
-            );
+    getLearningHistory:()=>
+      clone(state.learningHistory),
+
+    assessments:assessments,
+    addAssessment:addAssessment,
+
+    getAssessments:()=>
+      clone(state.assessments),
+
+    getAssessmentById:idv=>
+      clone(
+        state.assessments.find(
+          x=>x.assessmentId===idv
+        )||null
+      ),
+
+    getLatestAssessment:()=>
+      clone(
+        state.assessments[
+          state.assessments.length-1
+        ]||null
+      ),
+
+    marks:marks,
+    transferMark:transferMark,
+    editMark:editMark,
+
+    getMarks:()=>
+      clone(state.marks),
+
+    getMarkById:idv=>
+      clone(
+        state.marks.find(
+          x=>x.markId===idv
+        )||null
+      ),
+
+    createIntervention:
+      createIntervention,
+
+    approveIntervention:
+      approveIntervention,
+
+    getInterventions:()=>
+      clone(state.interventions),
+
+    getUnderstandingStatus:()=>
+      ({
+        dailyLearningCheck:
+          clone(
+            state.dailyLearningCheck
+          ),
+
+        latestAssessment:
+          clone(
+            state.assessments[
+              state.assessments.length-1
+            ]||null
+          ),
+
+        understandingPercent:
+          state
+            .dailyLearningCheck
+            .understandingPercent,
+
+        status:
+          state
+            .dailyLearningCheck
+            .status,
+
+        interventionRequired:
+          state
+            .dailyLearningCheck
+            .status===
+          "intervention_required"
+      }),
+
+    getStatus:()=>
+      ({
+        version:VERSION,
+        authorized:authorized(),
+
+        identity:
+          clone(state.identity),
+
+        student:
+          clone(state.student),
+
+        lesson:
+          clone(state.lesson),
+
+        dailyLearningCheck:
+          clone(
+            state.dailyLearningCheck
+          ),
+
+        assessments:
+          state.assessments.length,
+
+        marks:
+          state.marks.length,
+
+        interventions:
+          state.interventions.length
+      }),
+
+    connectModules:modules=>{
+      modules=
+        obj(modules)
+          ?modules
+          :{};
+
+      audit(
+        "MODULES_CONNECTED",
+        {
+          modules:
+            Object.keys(modules)
         }
-    }
+      );
 
-    function audit(action, details) {
-        state.audit.push({
-            auditId: createId("AUDIT"),
-            action: action,
-            details:
-                isPlainObject(details)
-                    ? clone(details)
-                    : {},
-            timestamp: timestamp()
-        });
-
-        saveState();
-    }
-
-    function emit(eventName, payload) {
-        const safePayload =
-            isPlainObject(payload) ||
-            Array.isArray(payload)
-                ? clone(payload)
-                : {};
-
-        const event = {
-            eventId: createId("EVENT"),
-            name: eventName,
-            payload: safePayload,
-            timestamp: timestamp()
-        };
-
-        state.events.push(event);
-
-        if (
-            typeof window.CustomEvent ===
-                "function" &&
-            typeof window.dispatchEvent ===
-                "function"
-        ) {
-            window.dispatchEvent(
-                new CustomEvent(
-                    "pacificEducation:" +
-                        eventName,
-                    {
-                        detail:
-                            safePayload
-                    }
-                )
-            );
+      emit(
+        "modulesConnected",
+        {
+          modules:
+            Object.keys(modules)
         }
+      );
 
-        saveState();
+      return{
+        connected:true,
+        modules:
+          Object.keys(modules),
+        version:VERSION
+      };
+    },
 
-        return clone(event);
+    resetPrototypeState:()=>{
+      state=clone(DEFAULT_STATE);
+      save();
+
+      audit(
+        "PROTOTYPE_STATE_RESET",
+        {}
+      );
+
+      emit(
+        "prototypeStateReset"
+      );
+
+      return true;
     }
+  };
 
-    function getState() {
-        return clone(state);
-    }
+  window.PacificEducationCore=
+    Object.freeze(api);
 
-    /*
-     * =====================================================
-     * AUTHORIZATION
-     * =====================================================
-     */
+  emit(
+    "coreReady",
+    {version:VERSION}
+  );
 
-    function isAuthorized() {
-        return !!(
-            state.identity &&
-            state.identity.authorized === true
-        );
-    }
-
-    function authorizeUser(permissionContext) {
-        const context =
-            isPlainObject(permissionContext)
-                ? permissionContext
-                : {};
-
-        if (context.authorized !== true) {
-            state.identity.authorized = false;
-
-            audit(
-                "AUTHORIZATION_DENIED",
-                {
-                    reason:
-                        "Explicit authorization was not provided."
-                }
-            );
-
-            emit("authorizationDenied");
-
-            return false;
-        }
-
-        state.identity.authorized = true;
-
-        audit(
-            "AUTHORIZATION_GRANTED
+})(window);
