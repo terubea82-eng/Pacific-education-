@@ -1,25 +1,28 @@
 /* =========================================================
    PACIFIC EDUCATION
    TEACHER & PARENT DASHBOARDS
-   PROTECTED PROGRESS CONNECTION
-   VERSION 1.4.0
+   CORE-AUTHORITATIVE PROGRESS CONNECTION
+   VERSION 1.5.0
 
    RULES
    ---------------------------------------------------------
-   • Education Core is the preferred progress authority.
-   • Unauthorized progress changes are blocked.
-   • localStorage is compatibility storage only.
+   • Education Core is the progress authority.
+   • Core records completed lessons.
+   • localStorage is compatibility/UI fallback only.
    • Owner Test Day never becomes real learner progress.
    • Day 30 requires a passed Alphabet Assessment.
    • Day 60 requires a passed Phonics Assessment.
-   • Assessment progression remains controlled by
-     assessments.js/Core.
+   • Assessment progression remains controlled by Core.
+   • Completing a lesson records the CURRENT lesson first.
+   • Only after successful completion does Core advance.
+   • The next lesson is never falsely marked completed.
+   • Duplicate completion records are blocked.
    ========================================================= */
 
 (function (window) {
     "use strict";
 
-    const VERSION = "1.4.0";
+    const VERSION = "1.5.0";
     const MAX_DAY = 365;
     const ASSESSMENT_PASS_MARK = 80;
 
@@ -33,6 +36,12 @@
         learningStatus: "learningStatus",
         ownerTestDay: "pacificOwnerTestDay"
     });
+
+    /*
+     * Connection marker used by the protected lesson/
+     * assessment connection layer.
+     */
+    window.__pacificEducationProtectedWrapper = true;
 
     function getCore() {
         if (
@@ -115,6 +124,7 @@
             }
 
             window.localStorage.removeItem(key);
+
             return true;
         } catch (error) {
             return false;
@@ -174,8 +184,195 @@
         return null;
     }
 
+    /* =====================================================
+       CORE LEARNING HISTORY
+       ===================================================== */
+
+    function getCoreLearningHistory() {
+        const core = getCore();
+
+        if (
+            core &&
+            typeof core.getLearningHistory === "function"
+        ) {
+            try {
+                const history =
+                    core.getLearningHistory();
+
+                if (Array.isArray(history)) {
+                    return history;
+                }
+            } catch (error) {
+                console.warn(
+                    "Pacific Education Core learning history could not be read.",
+                    error
+                );
+            }
+        }
+
+        /*
+         * Some Core versions expose the state directly.
+         * This remains read-only compatibility handling.
+         */
+        const state = getCoreState();
+
+        if (
+            state &&
+            Array.isArray(state.learningHistory)
+        ) {
+            return state.learningHistory;
+        }
+
+        return [];
+    }
+
+    function getCurrentStudentId() {
+        const state = getCoreState();
+
+        if (
+            state &&
+            state.student &&
+            state.student.studentId
+        ) {
+            return state.student.studentId;
+        }
+
+        if (
+            state &&
+            state.student &&
+            state.student.id
+        ) {
+            return state.student.id;
+        }
+
+        return null;
+    }
+
+    function isCompletedHistoryEntry(entry) {
+        if (
+            !entry ||
+            typeof entry !== "object"
+        ) {
+            return false;
+        }
+
+        return (
+            typeof entry.status === "string" &&
+            entry.status.toLowerCase() ===
+                "completed"
+        );
+    }
+
+    function historyEntryMatchesStudent(
+        entry,
+        studentId
+    ) {
+        if (!studentId) {
+            return true;
+        }
+
+        /*
+         * If an entry has no studentId, do not claim it
+         * belongs to the current learner.
+         */
+        if (
+            entry.studentId === undefined ||
+            entry.studentId === null
+        ) {
+            return false;
+        }
+
+        return String(entry.studentId) ===
+            String(studentId);
+    }
+
+    function countCoreCompletedLessons() {
+        const history =
+            getCoreLearningHistory();
+
+        if (!Array.isArray(history)) {
+            return null;
+        }
+
+        const studentId =
+            getCurrentStudentId();
+
+        let count = 0;
+
+        for (
+            let index = 0;
+            index < history.length;
+            index += 1
+        ) {
+            const entry =
+                history[index];
+
+            if (
+                isCompletedHistoryEntry(entry) &&
+                historyEntryMatchesStudent(
+                    entry,
+                    studentId
+                )
+            ) {
+                count += 1;
+            }
+        }
+
+        return count;
+    }
+
+    function currentLessonAlreadyCompleted(
+        day
+    ) {
+        const history =
+            getCoreLearningHistory();
+
+        const studentId =
+            getCurrentStudentId();
+
+        for (
+            let index = 0;
+            index < history.length;
+            index += 1
+        ) {
+            const entry =
+                history[index];
+
+            if (
+                !isCompletedHistoryEntry(entry)
+            ) {
+                continue;
+            }
+
+            if (
+                Number(entry.day) !==
+                Number(day)
+            ) {
+                continue;
+            }
+
+            if (
+                !historyEntryMatchesStudent(
+                    entry,
+                    studentId
+                )
+            ) {
+                continue;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    /* =====================================================
+       STUDENT DATA
+       ===================================================== */
+
     function getPacificStudentData() {
-        const coreState = getCoreState();
+        const coreState =
+            getCoreState();
 
         const coreDay =
             coreState &&
@@ -216,16 +413,30 @@
                 "Student"
             );
 
+        /*
+         * Core learning history is now authoritative.
+         *
+         * localStorage remains only as a compatibility
+         * fallback when Core history is unavailable.
+         */
+        const coreCompleted =
+            countCoreCompletedLessons();
+
         const lessonsCompleted =
-            toValidLessons(
-                readStorage(
-                    STORAGE.lessonsCompleted,
-                    "0"
+            coreCompleted !== null
+                ? toValidLessons(
+                    coreCompleted
                 )
-            );
+                : toValidLessons(
+                    readStorage(
+                        STORAGE.lessonsCompleted,
+                        "0"
+                    )
+                );
 
         return {
-            name: name || "Student",
+            name:
+                name || "Student",
 
             currentDay:
                 "Day " +
@@ -256,6 +467,10 @@
                 )
         };
     }
+
+    /* =====================================================
+       DASHBOARD DISPLAY
+       ===================================================== */
 
     function setText(id, value) {
         const element =
@@ -348,6 +563,10 @@
         refreshParentDashboard();
     }
 
+    /* =====================================================
+       OWNER TEST MODE
+       ===================================================== */
+
     function getOwnerTestDay() {
         const value =
             readStorage(
@@ -394,7 +613,9 @@
 
         if (
             !state ||
-            !Array.isArray(state.assessments)
+            !Array.isArray(
+                state.assessments
+            )
         ) {
             return [];
         }
@@ -402,7 +623,11 @@
         return state.assessments;
     }
 
-    function assessmentMatches(record, type, day) {
+    function assessmentMatches(
+        record,
+        type,
+        day
+    ) {
         if (
             !record ||
             typeof record !== "object"
@@ -421,7 +646,8 @@
                 : "";
 
         const recordAssessmentType =
-            typeof record.assessmentType === "string"
+            typeof record.assessmentType ===
+            "string"
                 ? record.assessmentType.toLowerCase()
                 : "";
 
@@ -430,7 +656,8 @@
 
         const typeMatches =
             recordType === requestedType ||
-            recordAssessmentType === requestedType ||
+            recordAssessmentType ===
+                requestedType ||
             recordTitle.indexOf(
                 requestedType
             ) !== -1;
@@ -460,7 +687,9 @@
         return true;
     }
 
-    function assessmentRecordPassed(record) {
+    function assessmentRecordPassed(
+        record
+    ) {
         if (
             !record ||
             typeof record !== "object"
@@ -475,21 +704,25 @@
         if (
             typeof record.status === "string" &&
             record.status.toLowerCase() ===
-            "passed"
+                "passed"
         ) {
             return true;
         }
 
         const percentage =
             Number(
-                record.percentage !== undefined
+                record.percentage !==
+                    undefined
                     ? record.percentage
                     : record.score
             );
 
         if (
-            Number.isFinite(percentage) &&
-            percentage >= ASSESSMENT_PASS_MARK
+            Number.isFinite(
+                percentage
+            ) &&
+            percentage >=
+                ASSESSMENT_PASS_MARK
         ) {
             return true;
         }
@@ -522,7 +755,9 @@
                     type,
                     day
                 ) &&
-                assessmentRecordPassed(record)
+                assessmentRecordPassed(
+                    record
+                )
             ) {
                 return true;
             }
@@ -531,18 +766,22 @@
         return false;
     }
 
-    function getRequiredAssessmentForDay(day) {
+    function getRequiredAssessmentForDay(
+        day
+    ) {
         if (day === 30) {
             return {
                 type: "alphabet",
-                title: "Alphabet Assessment"
+                title:
+                    "Alphabet Assessment"
             };
         }
 
         if (day === 60) {
             return {
                 type: "phonics",
-                title: "Phonics Assessment"
+                title:
+                    "Phonics Assessment"
             };
         }
 
@@ -600,6 +839,235 @@
     }
 
     /* =====================================================
+       CURRENT CORE LESSON
+       ===================================================== */
+
+    function currentCoreLesson() {
+        const state =
+            getCoreState();
+
+        if (
+            state &&
+            state.lesson &&
+            typeof state.lesson ===
+                "object"
+        ) {
+            return state.lesson;
+        }
+
+        return null;
+    }
+
+    /* =====================================================
+       RECORD CURRENT LESSON
+       ===================================================== */
+
+    function recordCurrentLessonCompletion(
+        lesson
+    ) {
+        const core =
+            getCore();
+
+        if (
+            !core ||
+            typeof core.recordLessonCompletion !==
+                "function"
+        ) {
+            console.warn(
+                "Pacific Education: Core lesson-completion API is unavailable."
+            );
+
+            return false;
+        }
+
+        if (
+            !lesson ||
+            typeof lesson !== "object"
+        ) {
+            console.warn(
+                "Pacific Education: current lesson data is unavailable."
+            );
+
+            return false;
+        }
+
+        const day =
+            toValidDay(
+                lesson.day,
+                null
+            );
+
+        if (day === null) {
+            console.warn(
+                "Pacific Education: invalid current lesson day."
+            );
+
+            return false;
+        }
+
+        const studentId =
+            getCurrentStudentId();
+
+        const completionData = {
+            day:
+                day,
+
+            studentId:
+                studentId,
+
+            lessonId:
+                lesson.lessonId ||
+                null,
+
+            subject:
+                lesson.subject ||
+                "",
+
+            title:
+                lesson.title ||
+                "",
+
+            concept:
+                lesson.concept ||
+                "",
+
+            evidence:
+                null,
+
+            source:
+                "dashboard_complete_lesson"
+        };
+
+        try {
+            return core.recordLessonCompletion(
+                completionData
+            );
+        } catch (error) {
+            console.error(
+                "Pacific Education: Core lesson completion failed.",
+                error
+            );
+
+            return false;
+        }
+    }
+
+    /* =====================================================
+       ADVANCE TO NEXT LESSON
+       ===================================================== */
+
+    function advanceToNextLesson(
+        currentLesson,
+        nextDay
+    ) {
+        const core =
+            getCore();
+
+        if (
+            !core ||
+            typeof core.setLesson !==
+                "function"
+        ) {
+            console.warn(
+                "Pacific Education: protected Core lesson API is unavailable."
+            );
+
+            return false;
+        }
+
+        const lessonUpdate = {
+            lessonId:
+                currentLesson &&
+                currentLesson.lessonId
+                    ? currentLesson.lessonId
+                    : null,
+
+            day:
+                nextDay,
+
+            subject:
+                currentLesson &&
+                currentLesson.subject
+                    ? currentLesson.subject
+                    : "",
+
+            title:
+                "",
+
+            concept:
+                currentLesson &&
+                currentLesson.concept
+                    ? currentLesson.concept
+                    : "",
+
+            /*
+             * IMPORTANT:
+             * The next lesson is NOT completed.
+             */
+            status:
+                "not_started"
+        };
+
+        try {
+            const savedLesson =
+                core.setLesson(
+                    lessonUpdate
+                );
+
+            return !!savedLesson;
+        } catch (error) {
+            console.error(
+                "Pacific Education: protected lesson advancement failed.",
+                error
+            );
+
+            return false;
+        }
+    }
+
+    /* =====================================================
+       COMPATIBILITY STORAGE SYNC
+       ===================================================== */
+
+    function syncCompatibilityProgress() {
+        const coreState =
+            getCoreState();
+
+        if (
+            coreState &&
+            coreState.lesson
+        ) {
+            const day =
+                toValidDay(
+                    coreState.lesson.day,
+                    null
+                );
+
+            if (day !== null) {
+                writeStorage(
+                    STORAGE.currentDayNumber,
+                    day
+                );
+
+                writeStorage(
+                    STORAGE.currentDay,
+                    "Day " + day
+                );
+            }
+        }
+
+        const completed =
+            countCoreCompletedLessons();
+
+        if (completed !== null) {
+            writeStorage(
+                STORAGE.lessonsCompleted,
+                completed
+            );
+        }
+    }
+
+    /* =====================================================
        COMPLETE REAL LESSON
        ===================================================== */
 
@@ -616,28 +1084,44 @@
          * Owner Test Mode must never create a real
          * lesson completion.
          */
-        if (getOwnerTestDay() !== null) {
+        if (
+            getOwnerTestDay() !== null
+        ) {
             exitOwnerTestMode();
+
             refreshAllDashboards();
             displayLessonIfAvailable();
 
             return false;
         }
 
-        const core =
-            getCore();
+        const currentLesson =
+            currentCoreLesson();
 
-        const current =
-            getPacificStudentData();
+        if (!currentLesson) {
+            console.warn(
+                "Pacific Education: current Core lesson is unavailable."
+            );
+
+            return false;
+        }
 
         const currentDay =
-            current.currentDayNumber;
+            toValidDay(
+                currentLesson.day,
+                null
+            );
+
+        if (currentDay === null) {
+            console.warn(
+                "Pacific Education: current Core lesson day is invalid."
+            );
+
+            return false;
+        }
 
         /*
-         * Day 30 and Day 60 are protected assessment gates.
-         *
-         * The learner must pass the required assessment
-         * before progression is allowed.
+         * Day 30 and Day 60 assessment gates.
          */
         if (
             !canProgressFromDay(
@@ -654,9 +1138,49 @@
         }
 
         /*
-         * Day 365 is the final programme day.
+         * Record the CURRENT lesson before changing
+         * the Core current lesson.
+         *
+         * This is the critical correction from v1.4.0.
          */
-        if (currentDay >= MAX_DAY) {
+        let completionResult = null;
+
+        if (
+            currentLessonAlreadyCompleted(
+                currentDay
+            )
+        ) {
+            /*
+             * Existing Core history already contains this
+             * completion. Do not create a duplicate.
+             */
+            completionResult = true;
+        } else {
+            completionResult =
+                recordCurrentLessonCompletion(
+                    currentLesson
+                );
+        }
+
+        if (!completionResult) {
+            console.warn(
+                "Pacific Education: lesson completion was not recorded. Progress was not advanced."
+            );
+
+            return false;
+        }
+
+        /*
+         * Day 365 is the final programme day.
+         *
+         * It is now recorded as completed, but there is
+         * no Day 366.
+         */
+        if (
+            currentDay >= MAX_DAY
+        ) {
+            syncCompatibilityProgress();
+
             refreshAllDashboards();
             displayLessonIfAvailable();
 
@@ -667,121 +1191,45 @@
             currentDay + 1;
 
         /*
-         * Protected Core lesson API is mandatory.
+         * Advance ONLY after the current lesson has been
+         * successfully recorded.
          */
-        if (
-            !core ||
-            typeof core.setLesson !==
-            "function"
-        ) {
+        const advanced =
+            advanceToNextLesson(
+                currentLesson,
+                nextDay
+            );
+
+        if (!advanced) {
+            /*
+             * Important:
+             * The completion is retained in Core history.
+             * We do NOT manufacture a second completion.
+             *
+             * The next attempt can detect that the current
+             * day was already completed and safely repair
+             * the advancement.
+             */
             console.warn(
-                "Pacific Education: protected Core lesson API is unavailable. Progress was not changed."
+                "Pacific Education: lesson was recorded, but advancement to the next lesson failed."
             );
 
-            return false;
-        }
-
-        const existingLesson =
-            currentCoreLesson();
-
-        const lessonUpdate = {
-            lessonId:
-                existingLesson &&
-                existingLesson.lessonId
-                    ? existingLesson.lessonId
-                    : null,
-
-            day:
-                nextDay,
-
-            subject:
-                existingLesson &&
-                existingLesson.subject
-                    ? existingLesson.subject
-                    : "",
-
-            title:
-                existingLesson &&
-                existingLesson.title
-                    ? existingLesson.title
-                    : "",
-
-            concept:
-                existingLesson &&
-                existingLesson.concept
-                    ? existingLesson.concept
-                    : "",
-
-            status:
-                "completed"
-        };
-
-        let savedLesson;
-
-        try {
-            savedLesson =
-                core.setLesson(
-                    lessonUpdate
-                );
-        } catch (error) {
-            console.error(
-                "Pacific Education: protected lesson update failed.",
-                error
-            );
-
-            return false;
-        }
-
-        if (!savedLesson) {
-            console.warn(
-                "Pacific Education: Core rejected lesson progression."
-            );
+            syncCompatibilityProgress();
+            refreshAllDashboards();
 
             return false;
         }
 
         /*
-         * Compatibility counters are updated only after
-         * Core accepts the protected lesson change.
+         * Core is now authoritative.
+         * Compatibility storage is synchronized from Core.
          */
-        const lessonsCompleted =
-            current.lessonsCompleted + 1;
-
-        writeStorage(
-            STORAGE.currentDayNumber,
-            nextDay
-        );
-
-        writeStorage(
-            STORAGE.currentDay,
-            "Day " + nextDay
-        );
-
-        writeStorage(
-            STORAGE.lessonsCompleted,
-            lessonsCompleted
-        );
+        syncCompatibilityProgress();
 
         refreshAllDashboards();
         displayLessonIfAvailable();
 
         return true;
-    }
-
-    function currentCoreLesson() {
-        const state =
-            getCoreState();
-
-        if (
-            state &&
-            state.lesson &&
-            typeof state.lesson ===
-            "object"
-        ) {
-            return state.lesson;
-        }
-
-        return null;
     }
 
     /* =====================================================
@@ -821,145 +1269,14 @@
             testDay
         );
 
+        /*
+         * Compatibility display values only.
+         * Core is NEVER changed.
+         */
         const realDay =
             readStorage(
                 STORAGE.currentDayNumber,
                 "1"
             );
 
-        const realCurrentDay =
-            readStorage(
-                STORAGE.currentDay,
-                "Day 1"
-            );
-
-        /*
-         * Temporary compatibility display only.
-         * The protected Core is NOT changed.
-         */
-        writeStorage(
-            STORAGE.currentDayNumber,
-            testDay
-        );
-
-        writeStorage(
-            STORAGE.currentDay,
-            "Day " + testDay
-        );
-
-        displayLessonIfAvailable();
-
-        /*
-         * Restore the real compatibility values.
-         */
-        writeStorage(
-            STORAGE.currentDayNumber,
-            realDay
-        );
-
-        writeStorage(
-            STORAGE.currentDay,
-            realCurrentDay
-        );
-
-        refreshAllDashboards();
-
-        console.info(
-            "Pacific Education Owner Test Mode:",
-            "Day " + testDay,
-            "Real learner progress preserved."
-        );
-
-        return true;
-    }
-
-    /* =====================================================
-       DASHBOARD PUBLIC API
-       ===================================================== */
-
-    window.PacificEducationDashboards =
-        Object.freeze({
-
-            version:
-                VERSION,
-
-            assessmentPassMark:
-                ASSESSMENT_PASS_MARK,
-
-            isAuthorized:
-                isAuthorized,
-
-            getStudentData:
-                getPacificStudentData,
-
-            refreshTeacher:
-                refreshTeacherDashboard,
-
-            refreshParent:
-                refreshParentDashboard,
-
-            refreshAll:
-                refreshAllDashboards,
-
-            completeLesson:
-                completeLesson,
-
-            setOwnerTestDay:
-                setOwnerTestDay,
-
-            getOwnerTestDay:
-                getOwnerTestDay,
-
-            exitOwnerTestMode:
-                exitOwnerTestMode,
-
-            hasPassedRequiredAssessment:
-                hasPassedRequiredAssessment,
-
-            canProgressFromDay:
-                canProgressFromDay
-        });
-
-    /*
-     * Preserve existing global functions used by the
-     * Class 1 prototype.
-     */
-
-    window.getPacificStudentData =
-        getPacificStudentData;
-
-    window.refreshTeacherDashboard =
-        refreshTeacherDashboard;
-
-    window.refreshParentDashboard =
-        refreshParentDashboard;
-
-    window.refreshAllDashboards =
-        refreshAllDashboards;
-
-    window.completeLesson =
-        completeLesson;
-
-    window.setOwnerTestDay =
-        setOwnerTestDay;
-
-    window.getOwnerTestDay =
-        getOwnerTestDay;
-
-    window.exitOwnerTestMode =
-        exitOwnerTestMode;
-
-    /*
-     * =====================================================
-       PAGE LOAD
-       =====================================================
-     */
-
-    document.addEventListener(
-        "DOMContentLoaded",
-        function () {
-            refreshAllDashboards();
-        }
-    );
-
-})(window);
+       
