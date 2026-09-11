@@ -1,7 +1,7 @@
 /*
  * PACIFIC EDUCATION
  * EDUCATION LINK BRIDGE
- * VERSION 1.3.0
+ * VERSION 1.3.1
  *
  * Secure connection bridge for:
  * Student ↔ Teacher
@@ -26,7 +26,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.3.0";
+  const VERSION = "1.3.1";
 
   function getAuthorization() {
     return (
@@ -139,7 +139,19 @@
       };
     }
 
-    return authorization.authorizeAccess(request);
+    /*
+     * Authorization contract:
+     * authorizeAccess({
+     *   linkId,
+     *   user,
+     *   permission
+     * })
+     */
+    return authorization.authorizeAccess({
+      linkId: request.linkId,
+      user: request.user,
+      permission: request.permission
+    });
   }
 
   function revokeConnection(request) {
@@ -186,11 +198,17 @@
       );
     }
 
+    const permission =
+      typeof requiredPermission === "string" &&
+      requiredPermission.trim()
+        ? requiredPermission.trim()
+        : "communication";
+
     const access =
       authorization.authorizeAccess({
         linkId,
-        requester,
-        requiredPermission
+        user: requester,
+        permission
       });
 
     if (
@@ -265,8 +283,8 @@
     const access =
       authorization.authorizeAccess({
         linkId,
-        requester: sender,
-        requiredPermission: "communication"
+        user: sender,
+        permission: "communication"
       });
 
     if (
