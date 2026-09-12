@@ -563,6 +563,6 @@
      * Diagnostic readiness notification failure must never
      * affect the application.
      */
-  }
+  
+
 })();
-}
