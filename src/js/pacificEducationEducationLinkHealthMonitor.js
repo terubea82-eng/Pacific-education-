@@ -2,314 +2,437 @@
  * =========================================================
  * PACIFIC EDUCATION
  * EDUCATION LINK HEALTH MONITOR
+ * VERSION 1.1.0
  * =========================================================
- * Version: 1.0.0
- * Purpose:
- *   Verify that the live Education Link security chain is
- *   loaded and connected correctly.
  *
- * IMPORTANT:
- *   - Diagnostic/verification layer only.
- *   - Does NOT replace security modules.
- *   - Does NOT grant permissions.
- *   - Does NOT approve links.
- *   - Does NOT bypass authorization.
- *   - Does NOT send real communication.
+ * Diagnostic verification layer only.
+ *
+ * This monitor:
+ * - verifies required security APIs exist;
+ * - verifies the APIs match the Startup contract;
+ * - does NOT grant permissions;
+ * - does NOT approve links;
+ * - does NOT authorize access;
+ * - does NOT send communication;
+ * - does NOT start security operations.
+ *
+ * Required security order:
+ *
+ * Verified Education Relationship
+ *        ↓
+ * Secure Link Authorization
+ *        ↓
+ * Secure Communication
+ *        ↓
+ * Education Link Bridge
+ *        ↓
+ * Education Link Center
+ *
+ * Startup:
+ * PacificEducationEducationLinkStartup
+ *
+ * Prototype only.
+ * Production authorization MUST remain server-side.
  * =========================================================
  */
 
-(function () {
+(() => {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
 
     const MODULE_NAME =
         "PacificEducationEducationLinkHealthMonitor";
 
-    const REQUIRED_APIS = {
-        relationship: [
-            "PacificEducationVerifiedEducationRelationship"
-        ],
 
-        authorization: [
-            "PacificEducationSecureLinkAuthorization"
-        ],
+    /*
+     * =======================================================
+     * LIVE STARTUP CONTRACT
+     * =======================================================
+     */
 
-        communication: [
-            "PacificEducationSecureCommunication"
-        ],
+    const MODULES = Object.freeze([
+        {
+            name:
+                "PacificEducationVerifiedEducationRelationship",
 
-        bridge: [
-            "PacificEducationEducationLinkBridge"
-        ],
+            group:
+                "relationship",
 
-        center: [
-            "PacificEducationEducationLinkCenter"
-        ]
-    };
+            requiredMethods: [
+                "getUserRelationships",
+                "checkRelationship"
+            ]
+        },
+
+        {
+            name:
+                "PacificEducationSecureLinkAuthorization",
+
+            group:
+                "authorization",
+
+            requiredMethods: [
+                "requestLink",
+                "approveLink",
+                "authorizeAccess",
+                "revokeLink",
+                "getUserLinks"
+            ]
+        },
+
+        {
+            name:
+                "PacificEducationSecureCommunication",
+
+            group:
+                "communication",
+
+            requiredMethods: [
+                "createConversation",
+                "sendMessage",
+                "getConversation",
+                "closeConversation"
+            ]
+        },
+
+        {
+            name:
+                "PacificEducationEducationLinkBridge",
+
+            group:
+                "bridge",
+
+            requiredMethods: [
+                "requestConnection",
+                "approveConnection",
+                "checkAccess",
+                "revokeConnection"
+            ]
+        },
+
+        {
+            name:
+                "PacificEducationEducationLinkCenter",
+
+            group:
+                "center",
+
+            requiredMethods: [
+                "requestLink",
+                "approveLink",
+                "checkAccess",
+                "revokeLink",
+                "getUserLinks",
+                "getDashboardModel",
+                "getStatus"
+            ]
+        }
+    ]);
+
+
+    /*
+     * =======================================================
+     * HELPERS
+     * =======================================================
+     */
 
     function getGlobal(name) {
+
         try {
+
             return window[name] || null;
+
         } catch (error) {
+
             return null;
         }
     }
 
-    function hasObject(name) {
-        const value = getGlobal(name);
 
-        return !!value &&
-            typeof value === "object";
+    function hasMethod(
+        object,
+        methodName
+    ) {
+
+        return Boolean(
+            object &&
+            typeof object[methodName] ===
+                "function"
+        );
     }
 
-    function hasMethod(object, methodName) {
-        return !!object &&
-            typeof object[methodName] === "function";
-    }
 
-    function inspectModule(name) {
-        const module = getGlobal(name);
+    function inspectModule(
+        module
+    ) {
 
-        return {
-            name: name,
-            loaded: !!module,
-            type: module
-                ? typeof module
-                : "missing"
-        };
-    }
-
-    function inspectRequiredApis() {
-        const result = {
-            relationship: [],
-            authorization: [],
-            communication: [],
-            bridge: [],
-            center: []
-        };
-
-        Object.keys(REQUIRED_APIS).forEach(function (group) {
-            result[group] =
-                REQUIRED_APIS[group].map(inspectModule);
-        });
-
-        return result;
-    }
-
-    function checkRelationship() {
         const api =
             getGlobal(
-                "PacificEducationVerifiedEducationRelationship"
+                module.name
             );
 
+
+        const methods = {};
+
+
+        module.requiredMethods.forEach(
+            method => {
+
+                methods[method] =
+                    hasMethod(
+                        api,
+                        method
+                    );
+            }
+        );
+
+
+        const methodsReady =
+            module.requiredMethods.every(
+                method =>
+                    methods[method] === true
+            );
+
+
         return {
-            loaded: !!api,
-            checkRelationship:
-                hasMethod(api, "checkRelationship"),
-            verifyRelationship:
-                hasMethod(api, "verifyRelationship"),
-            getUserRelationships:
-                hasMethod(api, "getUserRelationships")
+
+            name:
+                module.name,
+
+            group:
+                module.group,
+
+            loaded:
+                Boolean(api),
+
+            type:
+                api
+                    ? typeof api
+                    : "missing",
+
+            requiredMethods:
+                methods,
+
+            ready:
+                Boolean(
+                    api &&
+                    methodsReady
+                )
         };
     }
 
-    function checkAuthorization() {
-        const api =
-            getGlobal(
-                "PacificEducationSecureLinkAuthorization"
-            );
 
-        return {
-            loaded: !!api,
-            requestLink:
-                hasMethod(api, "requestLink"),
-            approveLink:
-                hasMethod(api, "approveLink"),
-            authorizeAccess:
-                hasMethod(api, "authorizeAccess"),
-            revokeLink:
-                hasMethod(api, "revokeLink"),
-            getUserLinks:
-                hasMethod(api, "getUserLinks"),
-            getStatus:
-                hasMethod(api, "getStatus")
-        };
-    }
-
-    function checkCommunication() {
-        const api =
-            getGlobal(
-                "PacificEducationSecureCommunication"
-            );
-
-        return {
-            loaded: !!api,
-            openConversation:
-                hasMethod(api, "openConversation"),
-            sendMessage:
-                hasMethod(api, "sendMessage"),
-            getStatus:
-                hasMethod(api, "getStatus")
-        };
-    }
-
-    function checkBridge() {
-        const api =
-            getGlobal(
-                "PacificEducationEducationLinkBridge"
-            );
-
-        return {
-            loaded: !!api,
-            requestConnection:
-                hasMethod(api, "requestConnection"),
-            approveConnection:
-                hasMethod(api, "approveConnection"),
-            checkAccess:
-                hasMethod(api, "checkAccess"),
-            revokeConnection:
-                hasMethod(api, "revokeConnection"),
-            openConversation:
-                hasMethod(api, "openConversation"),
-            sendAuthorizedMessage:
-                hasMethod(api, "sendAuthorizedMessage"),
-            getUserLinks:
-                hasMethod(api, "getUserLinks"),
-            getStatus:
-                hasMethod(api, "getStatus")
-        };
-    }
-
-    function checkCenter() {
-        const api =
-            getGlobal(
-                "PacificEducationEducationLinkCenter"
-            );
-
-        return {
-            loaded: !!api,
-            requestLink:
-                hasMethod(api, "requestLink"),
-            approveLink:
-                hasMethod(api, "approveLink"),
-            checkAccess:
-                hasMethod(api, "checkAccess"),
-            revokeLink:
-                hasMethod(api, "revokeLink"),
-            getUserLinks:
-                hasMethod(api, "getUserLinks"),
-            getUserRelationships:
-                hasMethod(api, "getUserRelationships"),
-            getDashboardModel:
-                hasMethod(api, "getDashboardModel"),
-            getStatus:
-                hasMethod(api, "getStatus")
-        };
-    }
+    /*
+     * =======================================================
+     * STARTUP CONTRACT CHECK
+     * =======================================================
+     */
 
     function checkStartup() {
+
         const api =
             getGlobal(
                 "PacificEducationEducationLinkStartup"
             );
 
+
         return {
-            loaded: !!api,
+
+            name:
+                "PacificEducationEducationLinkStartup",
+
+            loaded:
+                Boolean(api),
+
             start:
-                hasMethod(api, "start"),
+                hasMethod(
+                    api,
+                    "start"
+                ),
+
             getStatus:
-                hasMethod(api, "getStatus")
+                hasMethod(
+                    api,
+                    "getStatus"
+                ),
+
+            ready:
+                Boolean(
+                    api &&
+                    hasMethod(
+                        api,
+                        "start"
+                    ) &&
+                    hasMethod(
+                        api,
+                        "getStatus"
+                    )
+                )
         };
     }
 
+
+    /*
+     * =======================================================
+     * MODULE EVALUATION
+     * =======================================================
+     */
+
+    function evaluateModules() {
+
+        const result = {};
+
+
+        MODULES.forEach(
+            module => {
+
+                result[module.group] =
+                    inspectModule(
+                        module
+                    );
+            }
+        );
+
+
+        return result;
+    }
+
+
+    /*
+     * =======================================================
+     * CONNECTION EVALUATION
+     * =======================================================
+     */
+
     function evaluateConnection() {
-        const relationship =
-            checkRelationship();
 
-        const authorization =
-            checkAuthorization();
+        const modules =
+            evaluateModules();
 
-        const communication =
-            checkCommunication();
-
-        const bridge =
-            checkBridge();
-
-        const center =
-            checkCenter();
 
         const startup =
             checkStartup();
 
-        const requiredChecks = [
-            relationship.loaded &&
-            relationship.checkRelationship,
 
-            authorization.loaded &&
-            authorization.requestLink &&
-            authorization.approveLink &&
-            authorization.authorizeAccess &&
-            authorization.revokeLink,
+        const relationshipReady =
+            modules.relationship.ready;
 
-            communication.loaded &&
-            communication.openConversation &&
-            communication.sendMessage,
 
-            bridge.loaded &&
-            bridge.requestConnection &&
-            bridge.approveConnection &&
-            bridge.checkAccess &&
-            bridge.revokeConnection,
+        const authorizationReady =
+            modules.authorization.ready;
 
-            center.loaded &&
-            center.requestLink &&
-            center.approveLink &&
-            center.checkAccess &&
-            center.revokeLink &&
-            center.getDashboardModel,
 
-            startup.loaded &&
-            startup.start
-        ];
+        const communicationReady =
+            modules.communication.ready;
+
+
+        const bridgeReady =
+            modules.bridge.ready;
+
+
+        const centerReady =
+            modules.center.ready;
+
+
+        const startupReady =
+            startup.ready;
+
 
         const healthy =
-            requiredChecks.every(Boolean);
+            relationshipReady &&
+            authorizationReady &&
+            communicationReady &&
+            bridgeReady &&
+            centerReady &&
+            startupReady;
+
 
         return {
-            healthy: healthy,
 
-            status: healthy
-                ? "HEALTHY"
-                : "INCOMPLETE",
+            healthy:
+
+                healthy,
+
+
+            status:
+
+                healthy
+                    ? "HEALTHY"
+                    : "INCOMPLETE",
+
 
             modules: {
-                relationship: relationship,
-                authorization: authorization,
-                communication: communication,
-                bridge: bridge,
-                center: center,
-                startup: startup
+
+                relationship:
+                    modules.relationship,
+
+                authorization:
+                    modules.authorization,
+
+                communication:
+                    modules.communication,
+
+                bridge:
+                    modules.bridge,
+
+                center:
+                    modules.center,
+
+                startup:
+                    startup
             },
 
+
             securityPrinciples: {
-                authorizationRequired: true,
-                communicationPermissionRequired: true,
-                bridgeRequired: true,
-                relationshipVerificationRequired: true,
-                centerRequiresBridge: true,
-                diagnosticOnly: true
+
+                authorizationRequired:
+                    true,
+
+                communicationPermissionRequired:
+                    true,
+
+                bridgeRequired:
+                    true,
+
+                relationshipVerificationRequired:
+                    true,
+
+                centerRequiresBridge:
+                    true,
+
+                automaticInformationAccess:
+                    false,
+
+                diagnosticOnly:
+                    true,
+
+                productionBackendRequired:
+                    true
             }
         };
     }
 
+
+    /*
+     * =======================================================
+     * STATUS
+     * =======================================================
+     */
+
     function getStatus() {
+
         const evaluation =
             evaluateConnection();
 
+
         return {
-            module: MODULE_NAME,
-            version: VERSION,
+
+            module:
+                MODULE_NAME,
+
+            version:
+                VERSION,
 
             healthy:
                 evaluation.healthy,
@@ -325,62 +448,109 @@
         };
     }
 
+
+    /*
+     * =======================================================
+     * HEALTH CHECK
+     * =======================================================
+     */
+
     function runHealthCheck() {
+
         const result =
             getStatus();
 
+
         try {
+
             window.dispatchEvent(
                 new CustomEvent(
                     "pacificEducationEducationLinkHealthChecked",
                     {
-                        detail: result
+                        detail:
+                            result
                     }
                 )
             );
+
         } catch (error) {
-            // Diagnostic event failure must never
-            // interfere with the application.
+
+            /*
+             * Diagnostic event failure must never
+             * interfere with the application.
+             */
         }
+
 
         return result;
     }
 
-    const publicAPI = Object.freeze({
-        version: VERSION,
 
-        getStatus:
-            getStatus,
+    /*
+     * =======================================================
+     * PUBLIC API
+     * =======================================================
+     */
 
-        runHealthCheck:
-            runHealthCheck,
+    const publicAPI =
+        Object.freeze({
 
-        evaluateConnection:
-            evaluateConnection
-    });
+            version:
+                VERSION,
+
+            getStatus:
+                getStatus,
+
+            runHealthCheck:
+                runHealthCheck,
+
+            evaluateConnection:
+                evaluateConnection
+        });
+
 
     window.PacificEducationEducationLinkHealthMonitor =
         publicAPI;
 
+
     /*
-     * Do not automatically start security operations.
+     * =======================================================
+     * READY EVENT
+     * =======================================================
      *
-     * This monitor only checks the already-loaded APIs.
+     * This announces that the diagnostic monitor itself
+     * is available.
+     *
+     * It does NOT mean the Education Link security chain
+     * is healthy.
+     *
+     * Use getStatus() or runHealthCheck() for that.
+     * =======================================================
      */
+
     try {
+
         window.dispatchEvent(
             new CustomEvent(
                 "pacificEducationEducationLinkHealthMonitorReady",
                 {
                     detail: {
-                        module: MODULE_NAME,
-                        version: VERSION
+
+                        module:
+                            MODULE_NAME,
+
+                        version:
+                            VERSION
                     }
                 }
             )
         );
+
     } catch (error) {
-        // Never block application startup.
+
+        /*
+         * Never block application startup.
+         */
     }
 
 })();
