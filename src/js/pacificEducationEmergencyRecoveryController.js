@@ -1,14 +1,29 @@
-
 /*
  * =========================================================
  * PACIFIC EDUCATION
  * EMERGENCY ACTIVATION & RECOVERY CONTROLLER
- * VERSION 1.0.0
+ * VERSION 1.0.1
  * =========================================================
  *
  * PURPOSE
  * ---------------------------------------------------------
  * Controlled emergency continuity and self-recovery layer.
+ *
+ * RECOVERY FLOW
+ * ---------------------------------------------------------
+ * DETECT FAILURE
+ *      ↓
+ * ISOLATE FAILED PATH
+ *      ↓
+ * APPROVED BACKUP PATH
+ *      ↓
+ * VERIFY COMPONENT API
+ *      ↓
+ * VERIFY SECURITY DEPENDENCIES
+ *      ↓
+ * RESTORE SERVICE
+ *      ↓
+ * AUDIT + CONTINUE MONITORING
  *
  * DESIGN PRINCIPLES
  * ---------------------------------------------------------
@@ -16,14 +31,15 @@
  * 2. Never bypass security.
  * 3. Never invent authorization or relationships.
  * 4. Never load the known legacy/broken Bridge.
- * 5. Never load the same recovery path repeatedly forever.
- * 6. Never load duplicate module instances unnecessarily.
+ * 5. Never retry the same path forever.
+ * 6. Never create duplicate module instances unnecessarily.
  * 7. Use only explicitly approved recovery candidates.
  * 8. Verify APIs after every recovery attempt.
- * 9. Preserve safe user flow where possible.
- * 10. Enter safe mode if approved recovery fails.
- * 11. Keep recovery auditable.
- * 12. Do not rewrite application source code automatically.
+ * 9. Verify required security dependencies before success.
+ * 10. Preserve safe user flow where possible.
+ * 11. Enter safe mode if approved recovery fails.
+ * 12. Keep recovery auditable.
+ * 13. Do not rewrite application source code automatically.
  *
  * IMPORTANT
  * ---------------------------------------------------------
@@ -39,6 +55,7 @@
  * - hack or retaliate against systems
  *
  * Prototype / controlled recovery layer.
+ *
  * Production backend recovery infrastructure is required
  * before commercial deployment.
  * =========================================================
@@ -47,7 +64,7 @@
 (() => {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.0.1";
 
     const CONTROLLER_NAME =
         "PacificEducationEmergencyRecoveryController";
@@ -59,17 +76,19 @@
     const RECOVERY_TIMEOUT_MS = 8000;
 
     /*
-     * Only approved recovery candidates belong here.
+     * =======================================================
+     * APPROVED RECOVERY MANIFEST
+     * =======================================================
      *
-     * The v1.4.0 Bridge backup already exists in the
-     * repository and is therefore registered as the first
-     * controlled recovery candidate.
+     * Only explicitly approved recovery paths may be used.
      *
-     * DO NOT add the legacy top-level Bridge here.
+     * The legacy top-level Bridge is deliberately excluded.
      */
+
     const RECOVERY_MANIFEST = Object.freeze({
 
         bridge: Object.freeze({
+
             component:
                 "PacificEducationEducationLinkBridge",
 
@@ -87,28 +106,84 @@
                 "revokeConnection"
             ]),
 
+            /*
+             * The Bridge cannot be considered recovered unless
+             * its complete security dependency chain is healthy.
+             */
+
+            dependencies: Object.freeze([
+
+                Object.freeze({
+                    global:
+                        "PacificEducationVerifiedEducationRelationship",
+
+                    requiredMethods: Object.freeze([
+                        "getUserRelationships",
+                        "checkRelationship"
+                    ])
+                }),
+
+                Object.freeze({
+                    global:
+                        "PacificEducationSecureLinkAuthorization",
+
+                    requiredMethods: Object.freeze([
+                        "requestLink",
+                        "approveLink",
+                        "authorizeAccess",
+                        "revokeLink",
+                        "getUserLinks"
+                    ])
+                }),
+
+                Object.freeze({
+                    global:
+                        "PacificEducationSecureCommunication",
+
+                    requiredMethods: Object.freeze([
+                        "createConversation",
+                        "sendMessage",
+                        "getConversation",
+                        "closeConversation"
+                    ])
+                })
+
+            ]),
+
             securityRequired: true
         })
+
     });
 
     let recoveryRunning = false;
+
     let safeMode = false;
 
     const attemptHistory = [];
+
+
+    /*
+     * =======================================================
+     * BASIC HELPERS
+     * =======================================================
+     */
 
     function now() {
         return new Date().toISOString();
     }
 
+
     function getGlobal(name) {
         return window[name] || null;
     }
+
 
     function hasRequiredAPI(
         globalName,
         requiredMethods
     ) {
-        const target = getGlobal(globalName);
+        const target =
+            getGlobal(globalName);
 
         if (!target) {
             return false;
@@ -116,27 +191,130 @@
 
         return requiredMethods.every(
             method =>
-                typeof target[method] === "function"
+                typeof target[method] ===
+                "function"
         );
     }
 
-    function pathAlreadyLoaded(path) {
+
+    /*
+     * =======================================================
+     * SECURITY DEPENDENCY VERIFICATION
+     * =======================================================
+     */
+
+    function verifyDependencies(
+        component
+    ) {
+        const definition =
+            RECOVERY_MANIFEST[component];
+
+        if (!definition) {
+            return false;
+        }
+
+        if (
+            !definition.dependencies ||
+            !Array.isArray(
+                definition.dependencies
+            )
+        ) {
+            return true;
+        }
+
+        return definition.dependencies.every(
+            dependency =>
+                hasRequiredAPI(
+                    dependency.global,
+                    dependency.requiredMethods
+                )
+        );
+    }
+
+
+    function getDependencyStatus(
+        component
+    ) {
+        const definition =
+            RECOVERY_MANIFEST[component];
+
+        if (!definition) {
+            return {
+                available: false,
+                dependencies: {}
+            };
+        }
+
+        const dependencies = {};
+
+        (
+            definition.dependencies ||
+            []
+        ).forEach(
+            dependency => {
+
+                dependencies[
+                    dependency.global
+                ] = hasRequiredAPI(
+                    dependency.global,
+                    dependency.requiredMethods
+                );
+            }
+        );
+
+        return {
+            available:
+                verifyDependencies(
+                    component
+                ),
+            dependencies
+        };
+    }
+
+
+    /*
+     * =======================================================
+     * SCRIPT DETECTION
+     * =======================================================
+     */
+
+    function pathAlreadyLoaded(
+        path
+    ) {
         return Array.from(
-            document.querySelectorAll("script[src]")
+            document.querySelectorAll(
+                "script[src]"
+            )
         ).some(
             script =>
-                script.getAttribute("src") === path
+                script.getAttribute(
+                    "src"
+                ) === path
         );
     }
 
-    function getExistingScript(path) {
+
+    function getExistingScript(
+        path
+    ) {
         return Array.from(
-            document.querySelectorAll("script[src]")
+            document.querySelectorAll(
+                "script[src]"
+            )
         ).find(
             script =>
-                script.getAttribute("src") === path
+                script.getAttribute(
+                    "src"
+                ) === path
         ) || null;
     }
+
+
+    /*
+     * =======================================================
+     * AUDIT HISTORY
+     * =======================================================
+     */
 
     function recordAttempt(
         component,
@@ -145,26 +323,43 @@
         message
     ) {
         attemptHistory.push({
+
             time: now(),
+
             component,
+
             path,
+
             result,
+
             message
         });
 
         /*
          * Keep diagnostic history bounded.
          */
-        if (attemptHistory.length > 50) {
+
+        if (
+            attemptHistory.length >
+            50
+        ) {
             attemptHistory.shift();
         }
     }
+
+
+    /*
+     * =======================================================
+     * EVENT DISPATCH
+     * =======================================================
+     */
 
     function dispatchEvent(
         eventName,
         detail
     ) {
         try {
+
             window.dispatchEvent(
                 new CustomEvent(
                     eventName,
@@ -173,7 +368,9 @@
                     }
                 )
             );
+
         } catch (error) {
+
             console.error(
                 "Pacific Education emergency event failed.",
                 error
@@ -181,20 +378,37 @@
         }
     }
 
+
+    /*
+     * =======================================================
+     * SAFE MODE
+     * =======================================================
+     */
+
     function enterSafeMode(
         reason
     ) {
         safeMode = true;
 
-        const detail = Object.freeze({
-            controllerVersion: VERSION,
-            time: now(),
-            safeMode: true,
-            reason:
-                reason ||
-                "Approved recovery paths unavailable.",
-            securityBypass: false
-        });
+        const detail =
+            Object.freeze({
+
+                controllerVersion:
+                    VERSION,
+
+                time:
+                    now(),
+
+                safeMode:
+                    true,
+
+                reason:
+                    reason ||
+                    "Approved recovery paths unavailable.",
+
+                securityBypass:
+                    false
+            });
 
         dispatchEvent(
             "pacificEducationEmergencySafeMode",
@@ -204,26 +418,39 @@
         return detail;
     }
 
+
+    /*
+     * =======================================================
+     * APPROVED PATH VALIDATION
+     * =======================================================
+     */
+
     function isCandidateApproved(
         component,
         path
     ) {
         const definition =
-            RECOVERY_MANIFEST[component];
+            RECOVERY_MANIFEST[
+                component
+            ];
 
         if (!definition) {
             return false;
         }
 
-        return definition.approvedBackups
+        return definition
+            .approvedBackups
             .includes(path);
     }
+
 
     function getCandidates(
         component
     ) {
         const definition =
-            RECOVERY_MANIFEST[component];
+            RECOVERY_MANIFEST[
+                component
+            ];
 
         if (!definition) {
             return [];
@@ -233,6 +460,67 @@
             ...definition.approvedBackups
         ];
     }
+
+
+    /*
+     * =======================================================
+     * COMPLETE RECOVERY VERIFICATION
+     * =======================================================
+     */
+
+    function verifyComponent(
+        component
+    ) {
+        const definition =
+            RECOVERY_MANIFEST[
+                component
+            ];
+
+        if (!definition) {
+            return false;
+        }
+
+        /*
+         * First verify the recovered component itself.
+         */
+
+        const componentReady =
+            hasRequiredAPI(
+                definition.component,
+                definition.requiredMethods
+            );
+
+        if (!componentReady) {
+            return false;
+        }
+
+        /*
+         * Then verify every required security
+         * dependency.
+         */
+
+        if (
+            definition.securityRequired ===
+            true
+        ) {
+            if (
+                !verifyDependencies(
+                    component
+                )
+            ) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+    /*
+     * =======================================================
+     * RECOVERY SCRIPT LOADER
+     * =======================================================
+     */
 
     function loadRecoveryScript(
         component,
@@ -257,25 +545,45 @@
                 }
 
                 const definition =
-                    RECOVERY_MANIFEST[component];
+                    RECOVERY_MANIFEST[
+                        component
+                    ];
+
+                /*
+                 * If the component and all of its
+                 * security dependencies are already
+                 * healthy, no additional script is loaded.
+                 */
 
                 if (
-                    hasRequiredAPI(
-                        definition.component,
-                        definition.requiredMethods
+                    verifyComponent(
+                        component
                     )
                 ) {
                     resolve({
+
                         component,
+
                         path,
-                        alreadyReady: true
+
+                        alreadyReady:
+                            true
+
                     });
 
                     return;
                 }
 
                 let existing =
-                    getExistingScript(path);
+                    getExistingScript(
+                        path
+                    );
+
+                /*
+                 * Remove a previously failed recovery
+                 * script before allowing another controlled
+                 * attempt.
+                 */
 
                 if (existing) {
 
@@ -285,25 +593,37 @@
                             .pacificEducationRecoveryFailed ===
                         "true";
 
-                    if (existingFailed) {
+                    if (
+                        existingFailed
+                    ) {
                         existing.remove();
+
                         existing = null;
                     }
                 }
 
+
+                /*
+                 * Existing script instance.
+                 */
+
                 if (existing) {
 
-                    let settled = false;
+                    let settled =
+                        false;
 
                     const timeout =
                         setTimeout(
                             () => {
 
-                                if (settled) {
+                                if (
+                                    settled
+                                ) {
                                     return;
                                 }
 
-                                settled = true;
+                                settled =
+                                    true;
 
                                 reject(
                                     new Error(
@@ -315,32 +635,45 @@
                             RECOVERY_TIMEOUT_MS
                         );
 
+
                     existing.addEventListener(
                         "load",
                         () => {
 
-                            if (settled) {
+                            if (
+                                settled
+                            ) {
                                 return;
                             }
 
-                            clearTimeout(timeout);
+                            clearTimeout(
+                                timeout
+                            );
 
                             if (
-                                hasRequiredAPI(
-                                    definition.component,
-                                    definition.requiredMethods
+                                verifyComponent(
+                                    component
                                 )
                             ) {
-                                settled = true;
+
+                                settled =
+                                    true;
 
                                 resolve({
+
                                     component,
+
                                     path,
-                                    alreadyReady: false
+
+                                    alreadyReady:
+                                        false
+
                                 });
 
                             } else {
-                                settled = true;
+
+                                settled =
+                                    true;
 
                                 existing.dataset
                                     .pacificEducationRecoveryFailed =
@@ -348,27 +681,34 @@
 
                                 reject(
                                     new Error(
-                                        "Recovery script loaded without required API."
+                                        "Recovery script loaded, but component or security dependencies failed verification."
                                     )
                                 );
                             }
+
                         },
                         {
                             once: true
                         }
                     );
 
+
                     existing.addEventListener(
                         "error",
                         () => {
 
-                            if (settled) {
+                            if (
+                                settled
+                            ) {
                                 return;
                             }
 
-                            clearTimeout(timeout);
+                            clearTimeout(
+                                timeout
+                            );
 
-                            settled = true;
+                            settled =
+                                true;
 
                             existing.dataset
                                 .pacificEducationRecoveryFailed =
@@ -379,6 +719,7 @@
                                     "Recovery script failed to load."
                                 )
                             );
+
                         },
                         {
                             once: true
@@ -388,18 +729,26 @@
                     return;
                 }
 
+
+                /*
+                 * New controlled recovery script.
+                 */
+
                 const script =
                     document.createElement(
                         "script"
                     );
 
-                script.src = path;
+                script.src =
+                    path;
 
-                script.async = false;
+                script.async =
+                    false;
 
                 script.dataset
                     .pacificEducationEmergencyRecovery =
                     "true";
+
 
                 const timeout =
                     setTimeout(
@@ -421,23 +770,35 @@
                         RECOVERY_TIMEOUT_MS
                     );
 
+
                 script.addEventListener(
                     "load",
                     () => {
 
-                        clearTimeout(timeout);
+                        clearTimeout(
+                            timeout
+                        );
+
+                        /*
+                         * Critical security check:
+                         * loading successfully is NOT enough.
+                         */
 
                         if (
-                            hasRequiredAPI(
-                                definition.component,
-                                definition.requiredMethods
+                            verifyComponent(
+                                component
                             )
                         ) {
 
                             resolve({
+
                                 component,
+
                                 path,
-                                alreadyReady: false
+
+                                alreadyReady:
+                                    false
+
                             });
 
                         } else {
@@ -448,21 +809,25 @@
 
                             reject(
                                 new Error(
-                                    "Recovery script loaded without required API."
+                                    "Recovery script loaded, but component or security dependencies failed verification."
                                 )
                             );
                         }
+
                     },
                     {
                         once: true
                     }
                 );
 
+
                 script.addEventListener(
                     "error",
                     () => {
 
-                        clearTimeout(timeout);
+                        clearTimeout(
+                            timeout
+                        );
 
                         script.dataset
                             .pacificEducationRecoveryFailed =
@@ -473,20 +838,25 @@
                                 "Recovery script failed to load."
                             )
                         );
+
                     },
                     {
                         once: true
                     }
                 );
 
+
                 const parent =
                     document.head ||
                     document.documentElement ||
                     document.body;
 
+
                 if (!parent) {
 
-                    clearTimeout(timeout);
+                    clearTimeout(
+                        timeout
+                    );
 
                     reject(
                         new Error(
@@ -497,66 +867,111 @@
                     return;
                 }
 
-                parent.appendChild(script);
+
+                parent.appendChild(
+                    script
+                );
             }
         );
     }
 
+
+    /*
+     * =======================================================
+     * MAIN RECOVERY ENGINE
+     * =======================================================
+     */
+
     async function recoverComponent(
         component
     ) {
+
         if (safeMode) {
+
             return Object.freeze({
-                recovered: false,
-                safeMode: true,
+
+                recovered:
+                    false,
+
+                safeMode:
+                    true,
+
                 reason:
                     "Emergency recovery is already in safe mode."
             });
         }
 
+
         if (recoveryRunning) {
+
             return Object.freeze({
-                recovered: false,
-                recoveryInProgress: true
+
+                recovered:
+                    false,
+
+                recoveryInProgress:
+                    true
             });
         }
 
+
         const definition =
-            RECOVERY_MANIFEST[component];
+            RECOVERY_MANIFEST[
+                component
+            ];
+
 
         if (!definition) {
 
             return Object.freeze({
-                recovered: false,
+
+                recovered:
+                    false,
+
                 reason:
                     "No approved recovery manifest exists."
             });
         }
 
-        recoveryRunning = true;
 
-        let totalAttempts = 0;
+        recoveryRunning =
+            true;
+
+        let totalAttempts =
+            0;
+
 
         try {
 
             dispatchEvent(
                 "pacificEducationEmergencyRecoveryStarted",
                 {
-                    controllerVersion: VERSION,
+
+                    controllerVersion:
+                        VERSION,
+
                     component,
-                    time: now()
+
+                    time:
+                        now()
                 }
             );
 
-            /*
-             * Never use the primary path as an emergency
-             * backup. Recovery candidates must be explicitly
-             * registered in approvedBackups.
-             */
-            const candidates =
-                getCandidates(component);
 
-            for (const path of candidates) {
+            /*
+             * Never use the primary path as an
+             * emergency backup.
+             */
+
+            const candidates =
+                getCandidates(
+                    component
+                );
+
+
+            for (
+                const path of candidates
+            ) {
 
                 if (
                     totalAttempts >=
@@ -564,6 +979,7 @@
                 ) {
                     break;
                 }
+
 
                 if (
                     !isCandidateApproved(
@@ -574,27 +990,40 @@
                     continue;
                 }
 
+
+                /*
+                 * A previously loaded backup path
+                 * is not automatically trusted.
+                 * Full verification decides.
+                 */
+
                 if (
-                    pathAlreadyLoaded(path)
+                    pathAlreadyLoaded(
+                        path
+                    )
                 ) {
                     /*
-                     * Existing backup script may already be
-                     * loaded. API verification determines
-                     * whether it is actually usable.
+                     * Intentionally continue to
+                     * verification/loader logic.
                      */
                 }
 
-                let pathAttempts = 0;
+
+                let pathAttempts =
+                    0;
+
 
                 while (
                     pathAttempts <
-                    MAX_ATTEMPTS_PER_PATH &&
+                        MAX_ATTEMPTS_PER_PATH &&
                     totalAttempts <
-                    MAX_TOTAL_ATTEMPTS
+                        MAX_TOTAL_ATTEMPTS
                 ) {
 
                     pathAttempts += 1;
+
                     totalAttempts += 1;
+
 
                     try {
 
@@ -604,55 +1033,93 @@
                                 path
                             );
 
+
+                        /*
+                         * FINAL SECURITY GATE
+                         *
+                         * Component + all declared
+                         * security dependencies must
+                         * be healthy.
+                         */
+
                         if (
-                            hasRequiredAPI(
-                                definition.component,
-                                definition.requiredMethods
+                            verifyComponent(
+                                component
                             )
                         ) {
+
+                            const dependencyStatus =
+                                getDependencyStatus(
+                                    component
+                                );
+
 
                             recordAttempt(
                                 component,
                                 path,
                                 "success",
-                                "Approved recovery path verified."
+                                "Approved recovery path and complete security dependency chain verified."
                             );
+
 
                             dispatchEvent(
                                 "pacificEducationEmergencyRecoverySuccess",
                                 {
+
                                     controllerVersion:
                                         VERSION,
+
                                     component,
+
                                     path,
-                                    time: now(),
+
+                                    time:
+                                        now(),
+
                                     attempts:
                                         totalAttempts,
+
                                     securityVerified:
-                                        true
+                                        true,
+
+                                    dependencyStatus
                                 }
                             );
 
+
                             return Object.freeze({
-                                recovered: true,
+
+                                recovered:
+                                    true,
+
                                 component,
+
                                 path,
+
                                 attempts:
                                     totalAttempts,
+
                                 securityVerified:
                                     true,
+
+                                dependencyStatus,
+
                                 result
                             });
                         }
+
 
                         recordAttempt(
                             component,
                             path,
                             "failed",
-                            "Required API verification failed."
+                            "Component API or security dependency verification failed."
                         );
 
-                    } catch (error) {
+
+                    } catch (
+                        error
+                    ) {
 
                         recordAttempt(
                             component,
@@ -661,134 +1128,212 @@
                             error &&
                             error.message
                                 ? error.message
-                                : String(error)
+                                : String(
+                                    error
+                                )
                         );
                     }
                 }
             }
 
+
             return enterSafeMode(
-                `Automatic recovery failed for ${component}.`
+                `Automatic recovery failed for ${component}. Component or security dependency chain could not be verified.`
             );
+
 
         } finally {
 
-            recoveryRunning = false;
+            recoveryRunning =
+                false;
         }
     }
 
-    function verifyComponent(
-        component
-    ) {
-        const definition =
-            RECOVERY_MANIFEST[component];
 
-        if (!definition) {
-            return false;
-        }
-
-        return hasRequiredAPI(
-            definition.component,
-            definition.requiredMethods
-        );
-    }
+    /*
+     * =======================================================
+     * STATUS
+     * =======================================================
+     */
 
     function getStatus() {
 
         const components = {};
+
+        const dependencyStatus =
+            {};
+
 
         Object.keys(
             RECOVERY_MANIFEST
         ).forEach(
             component => {
 
-                components[component] =
+                components[
+                    component
+                ] =
                     verifyComponent(
+                        component
+                    );
+
+                dependencyStatus[
+                    component
+                ] =
+                    getDependencyStatus(
                         component
                     );
             }
         );
 
+
         return Object.freeze({
-            controllerVersion: VERSION,
-            controllerName: CONTROLLER_NAME,
+
+            controllerVersion:
+                VERSION,
+
+            controllerName:
+                CONTROLLER_NAME,
+
             recoveryRunning,
+
             safeMode,
+
             totalHistoryEntries:
                 attemptHistory.length,
+
             components,
+
+            dependencyStatus,
+
             securityBypass:
                 false,
+
             sourceCodeSelfModification:
                 false,
+
             unauthorizedRecoveryPaths:
                 false,
+
+            legacyBridgeExcluded:
+                true,
+
+            duplicateRecoveryLoop:
+                false,
+
             productionBackendRequired:
                 true,
+
             prototypeOnly:
                 true
         });
     }
 
+
+    /*
+     * =======================================================
+     * RECOVERY HISTORY
+     * =======================================================
+     */
+
     function getRecoveryHistory() {
+
         return Object.freeze(
+
             attemptHistory.map(
                 entry =>
                     Object.freeze({
                         ...entry
                     })
             )
+
         );
     }
+
+
+    /*
+     * =======================================================
+     * MANUAL SAFE-MODE RESET
+     * =======================================================
+     */
 
     function resetSafeMode() {
 
         /*
-         * Safe-mode reset is deliberately manual through
-         * this controlled API. It does not automatically
-         * override a confirmed failure.
+         * Manual reset only.
+         *
+         * Resetting safe mode does NOT manufacture
+         * missing security dependencies.
          */
-        safeMode = false;
+
+        safeMode =
+            false;
+
 
         dispatchEvent(
             "pacificEducationEmergencySafeModeReset",
             {
+
                 controllerVersion:
                     VERSION,
-                time: now()
+
+                time:
+                    now()
             }
         );
+
 
         return getStatus();
     }
 
-    window[
-        CONTROLLER_NAME
-    ] = Object.freeze({
-
-        version:
-            VERSION,
-
-        recoverComponent,
-
-        verifyComponent,
-
-        getStatus,
-
-        getRecoveryHistory,
-
-        resetSafeMode,
-
-        recoveryManifest:
-            RECOVERY_MANIFEST
-    });
 
     /*
-     * Controller is intentionally NOT automatically
-     * connected to Startup in this first stage.
+     * =======================================================
+     * PUBLIC CONTROLLER API
+     * =======================================================
+     */
+
+    window[
+        CONTROLLER_NAME
+    ] =
+        Object.freeze({
+
+            version:
+                VERSION,
+
+            recoverComponent,
+
+            verifyComponent,
+
+            getStatus,
+
+            getRecoveryHistory,
+
+            resetSafeMode,
+
+            recoveryManifest:
+                RECOVERY_MANIFEST
+        });
+
+
+    /*
+     * =======================================================
+     * STARTUP CONNECTION INTENTIONALLY DISABLED
+     * =======================================================
      *
-     * Startup integration happens only after this file
-     * has been independently checked and verified.
+     * Do NOT connect this controller automatically to
+     * Education Link Startup yet.
+     *
+     * Startup must first be corrected so that it requires
+     * both:
+     *
+     * getUserRelationships()
+     * AND
+     * checkRelationship()
+     *
+     * before declaring the security chain ready.
+     *
+     * No duplicate script tags are added here.
+     * No legacy Bridge is added here.
      */
 
 })();
