@@ -148,16 +148,6 @@
       };
     }
 
-    /*
-     * Authorization contract:
-     *
-     * authorizeAccess({
-     *   linkId,
-     *   user,
-     *   permission
-     * })
-     */
-
     return authorization.authorizeAccess({
       linkId: request.linkId,
       user: request.user,
@@ -471,7 +461,13 @@
     });
   }
 
-  window.PacificEducationEducationLinkBridgeV140 =
+  /*
+   * IMPORTANT:
+   * Canonical export required by Education Link Startup
+   * and Education Link Center.
+   */
+
+  window.PacificEducationEducationLinkBridge =
     Object.freeze({
       version: VERSION,
 
