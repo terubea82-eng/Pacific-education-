@@ -1,7 +1,9 @@
 /*
+ * =========================================================
  * PACIFIC EDUCATION
  * EDUCATION LINK BRIDGE
- * VERSION 1.3.1
+ * VERSION 1.4.0
+ * =========================================================
  *
  * Secure connection bridge for:
  * Student ↔ Teacher
@@ -13,20 +15,27 @@
  *
  * Security flow:
  * Identity → Role → Verified Relationship
- * → Authorization → Permission → Communication
+ * → Authorization → Communication Permission
+ * → Communication
  *
- * Link availability NEVER means information access.
+ * IMPORTANT:
+ * - Communication always requires "communication" permission.
+ * - Callers cannot substitute another permission.
+ * - Link availability NEVER means information access.
+ * - Verified relationship and authorization remain required.
  *
  * Prototype only.
  *
  * No passwords, API keys, access tokens,
  * payment secrets, or private credentials.
+ * =========================================================
  */
 
 (() => {
   "use strict";
 
-  const VERSION = "1.3.1";
+  const VERSION = "1.4.0";
+  const REQUIRED_PERMISSION = "communication";
 
   function getAuthorization() {
     return (
@@ -139,14 +148,6 @@
       };
     }
 
-    /*
-     * Authorization contract:
-     * authorizeAccess({
-     *   linkId,
-     *   user,
-     *   permission
-     * })
-     */
     return authorization.authorizeAccess({
       linkId: request.linkId,
       user: request.user,
@@ -166,10 +167,21 @@
     return authorization.revokeLink(request);
   }
 
+  /*
+   * =======================================================
+   * OPEN SECURE COMMUNICATION
+   * =======================================================
+   *
+   * Communication is deliberately restricted to the
+   * communication permission.
+   *
+   * The caller cannot replace this with another permission.
+   */
+
   function openConversation({
     linkId,
     requester,
-    requiredPermission = "communication",
+    requiredPermission,
     recipient
   }) {
     const {
@@ -198,17 +210,30 @@
       );
     }
 
-    const permission =
-      typeof requiredPermission === "string" &&
-      requiredPermission.trim()
-        ? requiredPermission.trim()
-        : "communication";
+    /*
+     * SECURITY BOUNDARY
+     *
+     * Ignore any caller-supplied permission.
+     *
+     * This bridge opens communication only when the
+     * requester has the exact communication permission.
+     */
+
+    if (
+      requiredPermission !== undefined &&
+      requiredPermission !== null &&
+      requiredPermission !== REQUIRED_PERMISSION
+    ) {
+      throw new Error(
+        "Invalid communication permission requested."
+      );
+    }
 
     const access =
       authorization.authorizeAccess({
         linkId,
         user: requester,
-        permission
+        permission: REQUIRED_PERMISSION
       });
 
     if (
@@ -228,6 +253,12 @@
       }
     );
   }
+
+  /*
+   * =======================================================
+   * SEND AUTHORIZED MESSAGE
+   * =======================================================
+   */
 
   function sendAuthorizedMessage({
     linkId,
@@ -280,11 +311,16 @@
       );
     }
 
+    /*
+     * Communication permission is fixed here.
+     * It cannot be supplied by the caller.
+     */
+
     const access =
       authorization.authorizeAccess({
         linkId,
         user: sender,
-        permission: "communication"
+        permission: REQUIRED_PERMISSION
       });
 
     if (
@@ -306,11 +342,16 @@
   }
 
   /*
+   * =======================================================
+   * GET USER LINKS
+   * =======================================================
+   *
    * Secure Link Authorization.getUserLinks()
    * requires the complete validated user object.
    *
    * Do not pass only userId.
    */
+
   function getUserLinks(user) {
     if (!validUser(user)) {
       throw new Error(
@@ -326,6 +367,12 @@
       authorization.getUserLinks(user) || []
     );
   }
+
+  /*
+   * =======================================================
+   * STATUS
+   * =======================================================
+   */
 
   function getStatus() {
     const authorization = getAuthorization();
@@ -371,6 +418,9 @@
     return Object.freeze({
       version: VERSION,
 
+      requiredPermission:
+        REQUIRED_PERMISSION,
+
       authorizationLoaded:
         authorizationReady,
 
@@ -383,7 +433,7 @@
       ready,
 
       securityFlow:
-        "identity_role_verified_relationship_authorization_permission_communication",
+        "identity_role_verified_relationship_authorization_communication_permission_communication",
 
       verifiedRelationshipRequired:
         true,
@@ -392,6 +442,12 @@
         true,
 
       activeApprovedLinkPassedToCommunication:
+        true,
+
+      communicationPermissionFixed:
+        true,
+
+      callerCannotSubstitutePermission:
         true,
 
       automaticInformationAccess:
@@ -404,6 +460,12 @@
         true
     });
   }
+
+  /*
+   * IMPORTANT:
+   * Canonical export required by Education Link Startup
+   * and Education Link Center.
+   */
 
   window.PacificEducationEducationLinkBridge =
     Object.freeze({
