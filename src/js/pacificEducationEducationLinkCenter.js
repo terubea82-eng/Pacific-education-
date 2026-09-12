@@ -4,7 +4,7 @@
  * EDUCATION LINK CENTER
  * =========================================================
  *
- * Version: 1.3.0
+ * Version: 1.3.1
  *
  * Student • Teacher • Parent • Ministry of Education
  *
@@ -15,6 +15,9 @@
  * - Link availability does NOT mean information access.
  * - Access requires verified relationship + authorization + permission.
  * - Relationship queries require the complete authorized user object.
+ * - Relationship verification requires BOTH:
+ *   getUserRelationships
+ *   checkRelationship
  * - No automatic information access.
  * - Production backend security is required.
  * =========================================================
@@ -23,7 +26,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.3.0";
+  const VERSION = "1.3.1";
 
   const LINK_TYPES = Object.freeze({
     student_teacher: ["student", "teacher"],
@@ -99,6 +102,14 @@
     return authorization;
   }
 
+  /*
+   * =====================================================
+   * VERIFIED RELATIONSHIP REQUIREMENT
+   *
+   * Both APIs are mandatory.
+   * =====================================================
+   */
+
   function requireRelationshipLayer() {
     const relationship = getRelationshipLayer();
 
@@ -108,13 +119,17 @@
       );
     }
 
-    if (
-      typeof relationship.getUserRelationships !==
-      "function"
-    ) {
-      throw new Error(
-        "Verified Education Relationship API is missing: getUserRelationships."
-      );
+    const requiredMethods = [
+      "getUserRelationships",
+      "checkRelationship"
+    ];
+
+    for (const method of requiredMethods) {
+      if (typeof relationship[method] !== "function") {
+        throw new Error(
+          `Verified Education Relationship API is missing: ${method}.`
+        );
+      }
     }
 
     return relationship;
@@ -137,6 +152,11 @@
       throw new Error("Invalid education link type.");
     }
 
+    /*
+     * Verify relationship layer before authorization.
+     */
+    requireRelationshipLayer();
+
     const authorization = requireAuthorization();
 
     return authorization.requestLink(request);
@@ -152,6 +172,11 @@
     if (!validUser(request.approver)) {
       throw new Error("Approver is not authorized.");
     }
+
+    /*
+     * Verify relationship layer before authorization.
+     */
+    requireRelationshipLayer();
 
     const authorization = requireAuthorization();
 
@@ -169,6 +194,12 @@
       throw new Error("Revoker is not authorized.");
     }
 
+    /*
+     * Relationship verification remains part of
+     * the security dependency chain.
+     */
+    requireRelationshipLayer();
+
     const authorization = requireAuthorization();
 
     return authorization.revokeLink(request);
@@ -179,6 +210,22 @@
       return {
         allowed: false,
         reason: "Valid access request required."
+      };
+    }
+
+    /*
+     * Never report access as available when the
+     * relationship security layer is incomplete.
+     */
+    try {
+      requireRelationshipLayer();
+    } catch (error) {
+      return {
+        allowed: false,
+        reason:
+          error && error.message
+            ? error.message
+            : "Relationship verification unavailable."
       };
     }
 
@@ -204,6 +251,8 @@
         "Complete authorized user object required."
       );
     }
+
+    requireRelationshipLayer();
 
     const authorization = requireAuthorization();
 
@@ -235,6 +284,12 @@
         "Dashboard user is not authorized."
       );
     }
+
+    /*
+     * Verify the complete relationship API before
+     * constructing the dashboard security model.
+     */
+    requireRelationshipLayer();
 
     const links = getUserLinks(user);
     const relationships = getUserRelationships(user);
@@ -270,6 +325,7 @@
       security: {
         verificationRequired: true,
         verifiedRelationshipRequired: true,
+        relationshipCheckRequired: true,
         authorizationRequired: true,
         permissionRequired: true,
         auditRequired: true,
@@ -310,9 +366,15 @@
         "function"
     );
 
+    /*
+     * IMPORTANT:
+     * Relationship readiness requires BOTH APIs.
+     */
     const relationshipReady = Boolean(
       relationship &&
       typeof relationship.getUserRelationships ===
+        "function" &&
+      typeof relationship.checkRelationship ===
         "function"
     );
 
@@ -334,6 +396,20 @@
 
       relationshipReady,
 
+      relationshipQueryReady:
+        Boolean(
+          relationship &&
+          typeof relationship.getUserRelationships ===
+            "function"
+        ),
+
+      relationshipCheckReady:
+        Boolean(
+          relationship &&
+          typeof relationship.checkRelationship ===
+            "function"
+        ),
+
       ready:
         authorizationReady &&
         bridgeReady &&
@@ -345,6 +421,7 @@
 
       security: {
         verifiedRelationshipRequired: true,
+        relationshipCheckRequired: true,
         authorizationRequired: true,
         permissionRequired: true,
         completeAuthorizedUserRequired: true,
