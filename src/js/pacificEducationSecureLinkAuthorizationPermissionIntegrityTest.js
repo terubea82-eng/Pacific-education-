@@ -1,4 +1,3 @@
-
 /*
  * =========================================================
  * PACIFIC EDUCATION
@@ -6,14 +5,27 @@
  * PERMISSION INTEGRITY TEST
  * =========================================================
  *
- * Version: 1.0.0
+ * Version: 1.1.0
  *
  * PURPOSE
  * -------
- * Diagnostic-only test for the Secure Link Authorization
- * permission boundary.
+ * Diagnostic-only verification of the permission boundary.
  *
- * This file does NOT:
+ * SECURITY CHAIN
+ * --------------
+ * Link Type
+ *     ↓
+ * Canonical LINK_RULES
+ *     ↓
+ * Requested Permission
+ *     ↓
+ * Stored Link Permission
+ *     ↓
+ * Current Verified Relationship
+ *     ↓
+ * Authorization Decision
+ *
+ * This file MUST NOT:
  * - create links
  * - approve links
  * - authorize access
@@ -23,26 +35,14 @@
  * - modify permissions
  * - modify stored authorization state
  *
- * SECURITY REQUIREMENT
- * --------------------
- * A permission is valid only when:
- *
- * 1. The link type is recognised.
- * 2. The requested permission is part of the canonical
- *    LINK_RULES permission list for that link type.
- * 3. The stored link also contains that permission.
- * 4. Current verified relationship is still valid.
- *
- * The test only inspects the authorization API and its
- * declared security status. Production enforcement must
- * remain server-side.
+ * Production enforcement must remain server-side.
  * =========================================================
  */
 
 (function () {
   "use strict";
 
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
 
   function getAuthorization() {
     return window.PacificEducationSecureLinkAuthorization || null;
@@ -56,6 +56,84 @@
     return !!object && typeof object[name] === "function";
   }
 
+  function getCanonicalRules(authorization) {
+    if (
+      !authorization ||
+      typeof authorization.linkRules !== "object" ||
+      !authorization.linkRules
+    ) {
+      return null;
+    }
+
+    return authorization.linkRules;
+  }
+
+  function validateCanonicalRules(authorization) {
+    const rules = getCanonicalRules(authorization);
+
+    if (!rules) {
+      return {
+        valid: false,
+        reason: "canonical_link_rules_missing"
+      };
+    }
+
+    const linkTypes = Object.keys(rules);
+
+    if (!linkTypes.length) {
+      return {
+        valid: false,
+        reason: "canonical_link_rules_empty"
+      };
+    }
+
+    for (const linkType of linkTypes) {
+      const rule = rules[linkType];
+
+      if (!rule || typeof rule !== "object") {
+        return {
+          valid: false,
+          reason: "invalid_link_rule",
+          linkType
+        };
+      }
+
+      if (!Array.isArray(rule.permissions)) {
+        return {
+          valid: false,
+          reason: "canonical_permissions_missing",
+          linkType
+        };
+      }
+
+      if (!rule.permissions.length) {
+        return {
+          valid: false,
+          reason: "canonical_permissions_empty",
+          linkType
+        };
+      }
+
+      for (const permission of rule.permissions) {
+        if (
+          typeof permission !== "string" ||
+          !permission.trim()
+        ) {
+          return {
+            valid: false,
+            reason: "invalid_canonical_permission",
+            linkType
+          };
+        }
+      }
+    }
+
+    return {
+      valid: true,
+      linkTypes
+    };
+  }
+
   function getStatus() {
     const authorization = getAuthorization();
     const relationship = getRelationshipLayer();
@@ -67,6 +145,10 @@
     const relationshipReady =
       hasFunction(relationship, "checkRelationship") &&
       hasFunction(relationship, "getUserRelationships");
+
+    const canonicalRules = validateCanonicalRules(
+      authorization
+    );
 
     let authorizationStatus = null;
 
@@ -84,13 +166,21 @@
     return {
       version: VERSION,
       diagnosticOnly: true,
+
       authorizationModuleReady: authorizationReady,
       relationshipModuleReady: relationshipReady,
+
+      canonicalPermissionRulesPresent:
+        canonicalRules.valid,
+
       canonicalPermissionRulesRequired: true,
-      currentRelationshipRequired: true,
+      requestedPermissionMustBeCanonical: true,
       storedLinkPermissionRequired: true,
+      currentRelationshipRequired: true,
+
       automaticInformationAccess: false,
       productionBackendRequired: true,
+
       authorizationStatus
     };
   }
@@ -103,18 +193,27 @@
       version: VERSION,
       diagnosticOnly: true,
       passed: false,
+
       checks: {
         authorizationModulePresent: false,
         authorizeAccessAvailable: false,
+        authorizationStatusAvailable: false,
+
         relationshipLayerPresent: false,
         relationshipCheckAvailable: false,
-        statusAvailable: false,
-        canonicalPermissionRulesRequired: true,
-        currentRelationshipRequired: true,
+
+        canonicalPermissionRulesPresent: false,
+        canonicalPermissionRulesValid: false,
+
+        requestedPermissionMustBeCanonical: true,
         storedPermissionRequired: true,
-        productionBackendRequired: true,
-        automaticInformationAccess: false
+        currentRelationshipRequired: true,
+
+        automaticInformationAccess: false,
+        productionBackendRequired: true
       },
+
+      canonicalLinkTypes: [],
       reason: null
     };
 
@@ -132,6 +231,13 @@
 
     result.checks.authorizeAccessAvailable = true;
 
+    if (!hasFunction(authorization, "getStatus")) {
+      result.reason = "authorization_status_missing";
+      return result;
+    }
+
+    result.checks.authorizationStatusAvailable = true;
+
     if (!relationship) {
       result.reason = "relationship_module_missing";
       return result;
@@ -146,99 +252,6 @@
 
     result.checks.relationshipCheckAvailable = true;
 
-    if (!hasFunction(authorization, "getStatus")) {
-      result.reason = "authorization_status_missing";
-      return result;
-    }
-
-    result.checks.statusAvailable = true;
-
     /*
-     * This test intentionally does not call authorizeAccess()
-     * with a fabricated user, link, or permission.
-     *
-     * Calling the authorization function with artificial
-     * authorization data could itself create misleading
-     * prototype state or trigger an access decision.
-     *
-     * The enforcement contract is therefore verified through
-     * the module's declared status and required dependencies.
-     */
-    let status;
-
-    try {
-      status = authorization.getStatus();
-    } catch (error) {
-      result.reason = "authorization_status_error";
-      return result;
-    }
-
-    if (!status || typeof status !== "object") {
-      result.reason = "invalid_authorization_status";
-      return result;
-    }
-
-    if (status.automaticAccess === true) {
-      result.reason = "automatic_access_detected";
-      return result;
-    }
-
-    if (status.productionServerAuthorizationRequired !== true) {
-      result.reason = "production_server_authorization_requirement_missing";
-      return result;
-    }
-
-    /*
-     * A successful diagnostic result confirms that the
-     * authorization layer is connected to the verified
-     * relationship layer and declares the required security
-     * boundary.
-     */
-    result.passed = true;
-    result.reason = "permission_integrity_dependencies_ready";
-
-    return result;
-  }
-
-  function runAndReportTest() {
-    const result = runTest();
-
-    try {
-      window.dispatchEvent(
-        new CustomEvent(
-          "pacificEducationSecureLinkAuthorizationPermissionIntegrityTested",
-          {
-            detail: result
-          }
-        )
-      );
-    } catch (error) {
-      /* Diagnostic event failure must not affect security. */
-    }
-
-    return result;
-  }
-
-  function isReady() {
-    return runTest().passed === true;
-  }
-
-  window.PacificEducationSecureLinkAuthorizationPermissionIntegrityTest =
-    Object.freeze({
-      version: VERSION,
-      runTest: runTest,
-      runAndReportTest: runAndReportTest,
-      getStatus: getStatus,
-      isReady: isReady
-    });
-
-  try {
-    window.dispatchEvent(
-      new CustomEvent(
-        "pacificEducationSecureLinkAuthorizationPermissionIntegrityTestReady"
-      )
-    );
-  } catch (error) {
-    /* Diagnostic readiness event only. */
-  }
-})();
+     * Verify the actual canonical permission table
+     * exported by Secure
