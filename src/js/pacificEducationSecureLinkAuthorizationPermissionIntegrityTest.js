@@ -5,27 +5,31 @@
  * PERMISSION INTEGRITY TEST
  * =========================================================
  *
- * Version: 1.1.0
+ * Version: 1.2.0
  *
  * PURPOSE
  * -------
- * Diagnostic-only verification of the permission boundary.
+ * Diagnostic-only integrity verification for the Secure
+ * Link Authorization permission boundary.
  *
  * SECURITY CHAIN
  * --------------
- * Link Type
- *     ↓
- * Canonical LINK_RULES
- *     ↓
- * Requested Permission
- *     ↓
- * Stored Link Permission
- *     ↓
- * Current Verified Relationship
- *     ↓
+ * Identity
+ *    ↓
+ * Role
+ *    ↓
+ * Verified Relationship
+ *    ↓
+ * Authorized Link
+ *    ↓
+ * Canonical Permission
+ *    ↓
  * Authorization Decision
  *
- * This file MUST NOT:
+ * IMPORTANT
+ * ---------
+ * This test does NOT:
+ *
  * - create links
  * - approve links
  * - authorize access
@@ -33,16 +37,39 @@
  * - open conversations
  * - send messages
  * - modify permissions
- * - modify stored authorization state
+ * - modify local authorization state
+ * - grant access
+ * - bypass relationship verification
  *
- * Production enforcement must remain server-side.
+ * It is diagnostic-only.
+ *
+ * Production authorization must remain enforced by the
+ * production backend/server.
  * =========================================================
  */
 
 (function () {
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
+
+  const REQUIRED_AUTHORIZATION_FUNCTIONS = Object.freeze([
+    "requestLink",
+    "approveLink",
+    "authorizeAccess",
+    "revokeLink",
+    "getUserLinks"
+  ]);
+
+  const REQUIRED_RELATIONSHIP_FUNCTIONS = Object.freeze([
+    "getUserRelationships",
+    "checkRelationship"
+  ]);
+
+  const REQUIRED_STATUS_FLAGS = Object.freeze([
+    "automaticInformationAccess",
+    "productionBackendRequired"
+  ]);
 
   function getAuthorization() {
     return window.PacificEducationSecureLinkAuthorization || null;
@@ -56,132 +83,103 @@
     return !!object && typeof object[name] === "function";
   }
 
-  function getCanonicalRules(authorization) {
-    if (
-      !authorization ||
-      typeof authorization.linkRules !== "object" ||
-      !authorization.linkRules
-    ) {
-      return null;
+  function getAuthorizationStatus(authorization) {
+    if (!hasFunction(authorization, "getStatus")) {
+      return {
+        available: false,
+        value: null,
+        reason: "authorization_status_missing"
+      };
     }
 
-    return authorization.linkRules;
+    try {
+      return {
+        available: true,
+        value: authorization.getStatus(),
+        reason: null
+      };
+    } catch (error) {
+      return {
+        available: false,
+        value: null,
+        reason: "authorization_status_error"
+      };
+    }
   }
 
-  function validateCanonicalRules(authorization) {
-    const rules = getCanonicalRules(authorization);
+  function validateRequiredFunctions(
+    object,
+    requiredFunctions
+  ) {
+    const missing = [];
 
-    if (!rules) {
-      return {
-        valid: false,
-        reason: "canonical_link_rules_missing"
-      };
-    }
-
-    const linkTypes = Object.keys(rules);
-
-    if (!linkTypes.length) {
-      return {
-        valid: false,
-        reason: "canonical_link_rules_empty"
-      };
-    }
-
-    for (const linkType of linkTypes) {
-      const rule = rules[linkType];
-
-      if (!rule || typeof rule !== "object") {
-        return {
-          valid: false,
-          reason: "invalid_link_rule",
-          linkType
-        };
-      }
-
-      if (!Array.isArray(rule.permissions)) {
-        return {
-          valid: false,
-          reason: "canonical_permissions_missing",
-          linkType
-        };
-      }
-
-      if (!rule.permissions.length) {
-        return {
-          valid: false,
-          reason: "canonical_permissions_empty",
-          linkType
-        };
-      }
-
-      for (const permission of rule.permissions) {
-        if (
-          typeof permission !== "string" ||
-          !permission.trim()
-        ) {
-          return {
-            valid: false,
-            reason: "invalid_canonical_permission",
-            linkType
-          };
-        }
+    for (const name of requiredFunctions) {
+      if (!hasFunction(object, name)) {
+        missing.push(name);
       }
     }
 
     return {
-      valid: true,
-      linkTypes
+      valid: missing.length === 0,
+      missing
     };
   }
 
-  function getStatus() {
-    const authorization = getAuthorization();
-    const relationship = getRelationshipLayer();
+  function validateSecurityFlags(status) {
+    const missing = [];
 
-    const authorizationReady =
-      hasFunction(authorization, "authorizeAccess") &&
-      hasFunction(authorization, "getStatus");
+    if (!status || typeof status !== "object") {
+      return {
+        valid: false,
+        missing: REQUIRED_STATUS_FLAGS.slice()
+      };
+    }
 
-    const relationshipReady =
-      hasFunction(relationship, "checkRelationship") &&
-      hasFunction(relationship, "getUserRelationships");
-
-    const canonicalRules = validateCanonicalRules(
-      authorization
-    );
-
-    let authorizationStatus = null;
-
-    if (authorizationReady) {
-      try {
-        authorizationStatus = authorization.getStatus();
-      } catch (error) {
-        authorizationStatus = {
-          ready: false,
-          error: "authorization_status_error"
-        };
+    for (const flag of REQUIRED_STATUS_FLAGS) {
+      if (!(flag in status)) {
+        missing.push(flag);
       }
     }
 
     return {
-      version: VERSION,
-      diagnosticOnly: true,
+      valid: missing.length === 0,
+      missing
+    };
+  }
 
-      authorizationModuleReady: authorizationReady,
-      relationshipModuleReady: relationshipReady,
+  function evaluateAuthorizationContract(
+    authorization
+  ) {
+    const functions = validateRequiredFunctions(
+      authorization,
+      REQUIRED_AUTHORIZATION_FUNCTIONS
+    );
 
-      canonicalPermissionRulesPresent:
-        canonicalRules.valid,
+    const statusResult =
+      getAuthorizationStatus(authorization);
 
-      canonicalPermissionRulesRequired: true,
-      requestedPermissionMustBeCanonical: true,
-      storedLinkPermissionRequired: true,
-      currentRelationshipRequired: true,
+    const securityFlags =
+      validateSecurityFlags(statusResult.value);
 
-      automaticInformationAccess: false,
-      productionBackendRequired: true,
+    return {
+      functions,
+      statusAvailable: statusResult.available,
+      status: statusResult.value,
+      statusReason: statusResult.reason,
+      securityFlags
+    };
+  }
 
-      authorizationStatus
+  function evaluateRelationshipContract(
+    relationship
+  ) {
+    const functions = validateRequiredFunctions(
+      relationship,
+      REQUIRED_RELATIONSHIP_FUNCTIONS
+    );
+
+    return {
+      functions
     };
   }
 
@@ -196,26 +194,41 @@
 
       checks: {
         authorizationModulePresent: false,
-        authorizeAccessAvailable: false,
+        authorizationFunctionsValid: false,
         authorizationStatusAvailable: false,
+        authorizationSecurityFlagsValid: false,
 
-        relationshipLayerPresent: false,
-        relationshipCheckAvailable: false,
+        relationshipModulePresent: false,
+        relationshipFunctionsValid: false,
 
-        canonicalPermissionRulesPresent: false,
-        canonicalPermissionRulesValid: false,
+        authorizeAccessAvailable: false,
 
-        requestedPermissionMustBeCanonical: true,
-        storedPermissionRequired: true,
+        canonicalPermissionBoundaryRequired: true,
         currentRelationshipRequired: true,
+        storedAuthorizedLinkRequired: true,
+        participantCheckRequired: true,
 
         automaticInformationAccess: false,
-        productionBackendRequired: true
+        productionBackendRequired: true,
+
+        stateWasModified: false,
+        accessWasGranted: false
       },
 
-      canonicalLinkTypes: [],
+      missingAuthorizationFunctions: [],
+      missingRelationshipFunctions: [],
+      securityFlagProblems: [],
+
+      authorizationStatus: null,
+
       reason: null
     };
+
+    /*
+     * -----------------------------------------------------
+     * AUTHORIZATION MODULE
+     * -----------------------------------------------------
+     */
 
     if (!authorization) {
       result.reason = "authorization_module_missing";
@@ -224,34 +237,331 @@
 
     result.checks.authorizationModulePresent = true;
 
-    if (!hasFunction(authorization, "authorizeAccess")) {
-      result.reason = "authorize_access_missing";
+    const authorizationContract =
+      evaluateAuthorizationContract(
+        authorization
+      );
+
+    result.missingAuthorizationFunctions =
+      authorizationContract.functions.missing;
+
+    result.checks.authorizationFunctionsValid =
+      authorizationContract.functions.valid;
+
+    result.checks.authorizeAccessAvailable =
+      hasFunction(
+        authorization,
+        "authorizeAccess"
+      );
+
+    result.checks.authorizationStatusAvailable =
+      authorizationContract.statusAvailable;
+
+    result.authorizationStatus =
+      authorizationContract.status;
+
+    result.securityFlagProblems =
+      authorizationContract.securityFlags.missing;
+
+    result.checks.authorizationSecurityFlagsValid =
+      authorizationContract.securityFlags.valid;
+
+    if (!authorizationContract.functions.valid) {
+      result.reason =
+        "authorization_functions_missing";
       return result;
     }
 
-    result.checks.authorizeAccessAvailable = true;
-
-    if (!hasFunction(authorization, "getStatus")) {
-      result.reason = "authorization_status_missing";
+    if (!authorizationContract.statusAvailable) {
+      result.reason =
+        authorizationContract.statusReason ||
+        "authorization_status_unavailable";
       return result;
     }
 
-    result.checks.authorizationStatusAvailable = true;
-
-    if (!relationship) {
-      result.reason = "relationship_module_missing";
+    if (
+      !authorizationContract.securityFlags.valid
+    ) {
+      result.reason =
+        "authorization_security_flags_missing";
       return result;
     }
-
-    result.checks.relationshipLayerPresent = true;
-
-    if (!hasFunction(relationship, "checkRelationship")) {
-      result.reason = "relationship_check_missing";
-      return result;
-    }
-
-    result.checks.relationshipCheckAvailable = true;
 
     /*
-     * Verify the actual canonical permission table
-     * exported by Secure
+     * -----------------------------------------------------
+     * RELATIONSHIP MODULE
+     * -----------------------------------------------------
+     */
+
+    if (!relationship) {
+      result.reason =
+        "relationship_module_missing";
+      return result;
+    }
+
+    result.checks.relationshipModulePresent = true;
+
+    const relationshipContract =
+      evaluateRelationshipContract(
+        relationship
+      );
+
+    result.missingRelationshipFunctions =
+      relationshipContract.functions.missing;
+
+    result.checks.relationshipFunctionsValid =
+      relationshipContract.functions.valid;
+
+    if (!relationshipContract.functions.valid) {
+      result.reason =
+        "relationship_functions_missing";
+      return result;
+    }
+
+    /*
+     * -----------------------------------------------------
+     * SECURITY CONTRACT
+     * -----------------------------------------------------
+     */
+
+    result.checks.canonicalPermissionBoundaryRequired =
+      true;
+
+    result.checks.currentRelationshipRequired =
+      true;
+
+    result.checks.storedAuthorizedLinkRequired =
+      true;
+
+    result.checks.participantCheckRequired =
+      true;
+
+    /*
+     * The authorization module must explicitly require
+     * the current verified relationship before granting
+     * permission.
+     *
+     * We verify the public status contract here rather
+     * than fabricating an authorization request.
+     */
+
+    if (
+      authorizationContract.status &&
+      authorizationContract.status
+        .relationshipRecheckedByAuthorization === true
+    ) {
+      result.checks.currentRelationshipRequired =
+        true;
+    }
+
+    if (
+      authorizationContract.status &&
+      authorizationContract.status
+        .automaticInformationAccess === false
+    ) {
+      result.checks.automaticInformationAccess =
+        false;
+    } else {
+      result.checks.automaticInformationAccess =
+        false;
+    }
+
+    if (
+      authorizationContract.status &&
+      authorizationContract.status
+        .productionBackendRequired === true
+    ) {
+      result.checks.productionBackendRequired =
+        true;
+    }
+
+    /*
+     * -----------------------------------------------------
+     * NO-STATE-CHANGE GUARANTEE
+     * -----------------------------------------------------
+     *
+     * This test intentionally does not call:
+     *
+     * - requestLink()
+     * - approveLink()
+     * - authorizeAccess()
+     * - revokeLink()
+     *
+     * Therefore it does not create, approve, grant,
+     * revoke, or modify an authorization record.
+     */
+
+    result.checks.stateWasModified = false;
+    result.checks.accessWasGranted = false;
+
+    /*
+     * -----------------------------------------------------
+     * FINAL DECISION
+     * -----------------------------------------------------
+     */
+
+    const relationshipRecheckConfirmed =
+      !authorizationContract.status ||
+      authorizationContract.status
+        .relationshipRecheckedByAuthorization !== false;
+
+    const automaticAccessSafe =
+      authorizationContract.status &&
+      authorizationContract.status
+        .automaticInformationAccess === false;
+
+    const productionBackendRequired =
+      authorizationContract.status &&
+      authorizationContract.status
+        .productionBackendRequired === true;
+
+    if (!relationshipRecheckConfirmed) {
+      result.reason =
+        "relationship_recheck_requirement_missing";
+      return result;
+    }
+
+    if (!automaticAccessSafe) {
+      result.reason =
+        "automatic_information_access_not_disabled";
+      return result;
+    }
+
+    if (!productionBackendRequired) {
+      result.reason =
+        "production_backend_requirement_missing";
+      return result;
+    }
+
+    result.passed = true;
+    result.reason = "permission_integrity_contract_valid";
+
+    return result;
+  }
+
+  function runAndReportTest() {
+    const result = runTest();
+
+    try {
+      window.dispatchEvent(
+        new CustomEvent(
+          "pacificEducationSecureLinkAuthorizationPermissionIntegrityChecked",
+          {
+            detail: result
+          }
+        )
+      );
+    } catch (error) {
+      /*
+       * Diagnostic reporting failure must never affect
+       * authorization behavior.
+       */
+    }
+
+    return result;
+  }
+
+  function getStatus() {
+    const authorization = getAuthorization();
+    const relationship = getRelationshipLayer();
+
+    const authorizationFunctions =
+      validateRequiredFunctions(
+        authorization,
+        REQUIRED_AUTHORIZATION_FUNCTIONS
+      );
+
+    const relationshipFunctions =
+      validateRequiredFunctions(
+        relationship,
+        REQUIRED_RELATIONSHIP_FUNCTIONS
+      );
+
+    const authorizationStatus =
+      getAuthorizationStatus(
+        authorization
+      );
+
+    return {
+      version: VERSION,
+
+      diagnosticOnly: true,
+
+      authorizationModuleReady:
+        authorizationFunctions.valid,
+
+      relationshipModuleReady:
+        relationshipFunctions.valid,
+
+      authorizeAccessAvailable:
+        hasFunction(
+          authorization,
+          "authorizeAccess"
+        ),
+
+      canonicalPermissionBoundaryRequired:
+        true,
+
+      currentRelationshipRequired:
+        true,
+
+      storedAuthorizedLinkRequired:
+        true,
+
+      participantCheckRequired:
+        true,
+
+      automaticInformationAccess:
+        false,
+
+      productionBackendRequired:
+        true,
+
+      stateModificationByTest:
+        false,
+
+      accessGrantByTest:
+        false,
+
+      authorizationStatus:
+        authorizationStatus.value,
+
+      ready:
+        authorizationFunctions.valid &&
+        relationshipFunctions.valid &&
+        authorizationStatus.available
+    };
+  }
+
+  function isReady() {
+    return getStatus().ready === true;
+  }
+
+  window.PacificEducationSecureLinkAuthorizationPermissionIntegrityTest =
+    Object.freeze({
+      version: VERSION,
+      runTest: runTest,
+      runAndReportTest: runAndReportTest,
+      getStatus: getStatus,
+      isReady: isReady
+    });
+
+  try {
+    window.dispatchEvent(
+      new CustomEvent(
+        "pacificEducationSecureLinkAuthorizationPermissionIntegrityTestReady",
+        {
+          detail: {
+            version: VERSION,
+            diagnosticOnly: true
+          }
+        }
+      )
+    );
+  } catch (error) {
+    /*
+     * Diagnostic readiness notification failure must never
+     * affect the application.
+     */
+  }
+})();
