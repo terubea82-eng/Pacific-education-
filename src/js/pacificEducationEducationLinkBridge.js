@@ -1,82 +1,44 @@
-function checkAccess(request) {
-  if (!request || typeof request !== "object") {
-    return {
-      allowed: false,
-      reason: "Valid access request is required."
-    };
-  }
-
-  /*
-   * =====================================================
-   * SECURITY CHAIN
-   *
-   * Education Link Center
-   *        ↓
-   * Verified Relationship
-   *        ↓
-   * Education Link Bridge
-   *        ↓
-   * Secure Link Authorization
-   *
-   * The Bridge must not allow the caller to
-   * substitute another permission.
-   * =====================================================
-   */
-
+function requireModules() {
+  const authorization = getAuthorization();
+  const communication = getCommunication();
   const relationship = getRelationshipLayer();
 
   if (
-    !relationship ||
-    typeof relationship.getUserRelationships !==
-      "function" ||
-    typeof relationship.checkRelationship !==
-      "function"
-  ) {
-    return {
-      allowed: false,
-      reason:
-        "Verified Education Relationship module is unavailable or incomplete."
-    };
-  }
-
-  const authorization = getAuthorization();
-
-  if (
     !authorization ||
-    typeof authorization.authorizeAccess !==
-      "function"
+    typeof authorization.requestLink !== "function" ||
+    typeof authorization.approveLink !== "function" ||
+    typeof authorization.authorizeAccess !== "function" ||
+    typeof authorization.revokeLink !== "function" ||
+    typeof authorization.getUserLinks !== "function"
   ) {
-    return {
-      allowed: false,
-      reason:
-        "Secure Link Authorization module is unavailable."
-    };
+    throw new Error(
+      "Secure Link Authorization module is unavailable or incomplete."
+    );
   }
 
   if (
-    typeof request.linkId !== "string" ||
-    !request.linkId.trim()
+    !communication ||
+    typeof communication.createConversation !== "function" ||
+    typeof communication.sendMessage !== "function"
   ) {
-    return {
-      allowed: false,
-      reason: "Valid link ID is required."
-    };
+    throw new Error(
+      "Secure Communication module is unavailable or incomplete."
+    );
   }
 
-  if (!validUser(request.user)) {
-    return {
-      allowed: false,
-      reason: "Authorized user is required."
-    };
+  if (
+    !relationship ||
+    typeof relationship.getUserRelationships !== "function" ||
+    typeof relationship.checkRelationship !== "function"
+  ) {
+    throw new Error(
+      "Verified Education Relationship module is unavailable or incomplete."
+    );
   }
 
-  /*
-   * Communication is the only permission allowed
-   * through this Bridge access path.
-   */
-  return authorization.authorizeAccess({
-    linkId: request.linkId,
-    user: request.user,
-    permission: REQUIRED_PERMISSION
-  });
+  return {
+    authorization,
+    communication,
+    relationship
+  };
 }
