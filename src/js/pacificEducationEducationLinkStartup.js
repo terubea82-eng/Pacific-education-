@@ -2,7 +2,7 @@
  * =========================================================
  * PACIFIC EDUCATION
  * EDUCATION LINK STARTUP
- * VERSION 1.2.0
+ * VERSION 1.2.1
  * =========================================================
  *
  * Secure startup order:
@@ -17,10 +17,11 @@
  *        ↓
  * Education Link Center
  *
- * Student • Teacher • Parent • Ministry
- *
  * Security:
  * - Required APIs are verified before readiness.
+ * - Relationship verification requires BOTH:
+ *   getUserRelationships
+ *   checkRelationship
  * - Verified relationship loads before authorization.
  * - Authorization loads before communication.
  * - Communication loads before bridge.
@@ -36,7 +37,7 @@
 (() => {
     "use strict";
 
-    const VERSION = "1.2.0";
+    const VERSION = "1.2.1";
 
     const MODULES = Object.freeze([
         {
@@ -45,7 +46,8 @@
             global:
                 "PacificEducationVerifiedEducationRelationship",
             requiredMethods: [
-                "getUserRelationships"
+                "getUserRelationships",
+                "checkRelationship"
             ]
         },
 
@@ -139,12 +141,6 @@
         return new Promise(
             (resolve, reject) => {
 
-                /*
-                 * If the module is already available
-                 * with its required API, do not wait
-                 * for a load event that may already have
-                 * happened.
-                 */
                 if (moduleReady(module)) {
                     resolve(module.path);
                     return;
@@ -153,10 +149,6 @@
                 let existing =
                     findScript(module.path);
 
-                /*
-                 * Remove a previously failed loader
-                 * script so a later retry can work.
-                 */
                 if (
                     existing &&
                     existing.dataset &&
@@ -168,10 +160,6 @@
                     existing = null;
                 }
 
-                /*
-                 * Existing script is present and may
-                 * still be loading.
-                 */
                 if (existing) {
 
                     const finish = () => {
@@ -215,11 +203,6 @@
                         { once: true }
                     );
 
-                    /*
-                     * Protect against a script that has
-                     * already completed without exposing
-                     * a usable load event to this listener.
-                     */
                     if (moduleReady(module)) {
                         resolve(module.path);
                     }
@@ -382,9 +365,6 @@
 
         try {
 
-            /*
-             * Load strictly in security dependency order.
-             */
             for (const module of MODULES) {
                 await loadScript(module);
             }
