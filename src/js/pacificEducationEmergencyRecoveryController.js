@@ -2,7 +2,7 @@
  * =========================================================
  * PACIFIC EDUCATION
  * EMERGENCY ACTIVATION & RECOVERY CONTROLLER
- * VERSION 1.0.1
+ * VERSION 1.0.2
  * =========================================================
  *
  * PURPOSE
@@ -64,7 +64,7 @@
 (() => {
     "use strict";
 
-    const VERSION = "1.0.1";
+    const VERSION = "1.0.2";
 
     const CONTROLLER_NAME =
         "PacificEducationEmergencyRecoveryController";
@@ -74,6 +74,7 @@
     const MAX_TOTAL_ATTEMPTS = 3;
 
     const RECOVERY_TIMEOUT_MS = 8000;
+
 
     /*
      * =======================================================
@@ -608,6 +609,39 @@
                  */
 
                 if (existing) {
+
+                    /*
+                     * IMPORTANT v1.0.2 FIX:
+                     *
+                     * The script may already have finished
+                     * loading before this controller attached
+                     * its event listeners.
+                     *
+                     * Re-check the actual component immediately.
+                     * If it is already healthy, recovery succeeds
+                     * without waiting for an event that has already
+                     * happened.
+                     */
+
+                    if (
+                        verifyComponent(
+                            component
+                        )
+                    ) {
+                        resolve({
+
+                            component,
+
+                            path,
+
+                            alreadyReady:
+                                true
+
+                        });
+
+                        return;
+                    }
+
 
                     let settled =
                         false;
