@@ -113,42 +113,7 @@
       };
     }
 
-        /*
-     * SECURITY REQUIREMENT:
-     * The canonical LINK_RULES permission table is the
-     * authoritative permission boundary.
-     *
-     * Stored link.permissions may exist in client-side
-     * prototype state and must never be trusted by itself.
-     */
-    const canonicalRule = LINK_RULES[link.linkType];
-
-    if (
-      !canonicalRule ||
-      !Array.isArray(canonicalRule.permissions) ||
-      !canonicalRule.permissions.includes(request.permission)
-    ) {
-      audit(state, "ACCESS_DENIED_CANONICAL_PERMISSION", {
-        linkId: link.id,
-        userId: user.id,
-        linkType: link.linkType,
-        permission: request.permission
-      });
-
-      saveState(state);
-
-      return {
-        allowed: false,
-        reason: "canonical_permission_denied"
-      };
-    }
-
-    /*
-     * The stored permission must also contain the
-     * canonically approved permission.
-     */
-    
-    /*
+        
      * SECURITY REQUIREMENT:
      * The canonical LINK_RULES permission table is the
      * authoritative permission boundary.
