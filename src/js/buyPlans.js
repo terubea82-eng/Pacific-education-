@@ -24,6 +24,10 @@
 
     const BUY_PLANS_VERSION = "1.1.0";
 
+REQUIRED {
+REQUIRED: REQUIRED: REQUIRED: REQUIRED: REQUIRED: REQUIRED: REQUIRED: REQUIRED:
+   
+   
     /*
      * ---------------------------------------------------------
      * OWNER-CONTROLLED FIJI PRICING
