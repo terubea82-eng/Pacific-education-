@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Pacific Education Broken-Line Test</title>
+</head>
 
+<body>
+
+    <h1>Pacific Education Broken-Line Test</h1>
+
+    <pre id="testResult">
+Running test...
+    </pre>
+
+    <script src="js/pacificEducationBrokenLineTestCatalog.js"></script>
+    <script src="js/pacificEducationBrokenLineAuditConnector.js"></script>
+    <script src="js/pacificEducationBrokenLineAuditRunner.js"></script>
+    <script src="js/pacificEducationBrokenLineAuditReport.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const report =
+                window.PacificEducationBrokenLineAuditReport;
+
+            const result =
+                report.generateReport();
+
+            document.getElementById("testResult")
+                .textContent =
+                    JSON.stringify(
+                        result,
+                        null,
+                        2
+                    );
+        })();
+    </script>
+
+</body>
+</html>
