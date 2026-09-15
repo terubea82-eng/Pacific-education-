@@ -7,23 +7,17 @@
  * File:
  * src/js/pacificEducationAnnualGdpPricingEngine.js
  *
- * Version: 1.0.0
+ * Version: 1.1.0
  * Status: PROTOTYPE / OWNER-CONTROLLED SPECIFICATION
- *
- * PURPOSE
- * -------
- * Calculates an annual Pacific Education subscription price
- * using an approved annual GDP-per-capita economic indicator.
  *
  * IMPORTANT
  * ---------
- * This browser-side prototype is NOT a security boundary.
- * Production pricing decisions MUST be performed or verified
- * server-side.
+ * This browser-side module is NOT a production security
+ * boundary and does NOT retrieve or authorize live payments.
  *
- * Educational quality, curriculum, assessment, safeguarding,
- * fairness, accessibility and student rights MUST NEVER depend
- * on the price calculated by this module.
+ * Production GDP data, exchange rates, pricing policy,
+ * authorization, payment processing and audit records MUST
+ * be verified server-side.
  *
  * =========================================================
  */
@@ -31,23 +25,13 @@
 (function (global) {
   "use strict";
 
-  const ENGINE_VERSION = "1.0.0";
-  const STORAGE_KEY = "pacificEducationAnnualGdpPricing";
-  const AUDIT_KEY = "pacificEducationAnnualGdpPricingAudit";
+  const ENGINE_VERSION = "1.1.0";
 
-  /*
-   * ---------------------------------------------------------
-   * OWNER-CONTROLLED PRICING POLICY
-   * ---------------------------------------------------------
-   *
-   * These values define the current policy.
-   *
-   * They are NOT secret credentials.
-   * They MUST NOT be treated as authorization credentials.
-   *
-   * Production systems must obtain the authoritative policy
-   * from a protected server-side configuration.
-   */
+  const STORAGE_KEY =
+    "pacificEducationAnnualGdpPricing";
+
+  const AUDIT_KEY =
+    "pacificEducationAnnualGdpPricingAudit";
 
   const POLICY = Object.freeze({
     minimumUsdPerChildPerYear: 0.50,
@@ -57,62 +41,71 @@
 
     pricingFrequency: "ANNUAL",
 
-    /*
-     * Fiji may use its separately approved owner-controlled
-     * Fiji pricing policy.
-     */
     protectedMarkets: Object.freeze({
       FJ: true
     }),
 
-    /*
-     * The formula is deliberately isolated here.
-     *
-     * This prototype uses a GDP-per-capita index rather than
-     * directly charging a percentage of GDP.
-     *
-     * Production formula must be approved by the owner before
-     * commercial activation.
-     */
     formulaVersion: "GDP_INDEX_V1",
 
     /*
-     * Reference GDP-per-capita value used by the prototype
-     * formula.
-     *
-     * This is a configuration placeholder, NOT a live official
-     * economic-data value.
+     * Prototype reference values only.
+     * These are NOT live economic data.
      */
     referenceGdpPerCapitaUsd: 10000,
+    referencePriceUsd: 3.00,
 
-    /*
-     * Reference annual price.
-     *
-     * The final price is bounded by the minimum and maximum.
-     */
-    referencePriceUsd: 3.00
+    maxAuditRecords: 200
   });
 
   /*
    * ---------------------------------------------------------
-   * UTILITIES
+   * STATUS VALUES
    * ---------------------------------------------------------
    */
 
-  function roundCurrency(value) {
-    return Math.round((Number(value) + Number.EPSILON) * 100) / 100;
-  }
+  const STATUS = Object.freeze({
+    CALCULATED: "CALCULATED",
+    PROTECTED_MARKET: "PROTECTED_MARKET",
+    DATA_UNAVAILABLE: "DATA_UNAVAILABLE",
+    DATA_INVALID: "DATA_INVALID",
+    PRODUCTION_REQUIRED: "PRODUCTION_REQUIRED",
+    FALLBACK_TO_LAST_VERIFIED_PRICE:
+      "FALLBACK_TO_LAST_VERIFIED_PRICE",
+    NO_VERIFIED_PRICE: "NO_VERIFIED_PRICE"
+  });
 
-  function isFinitePositiveNumber(value) {
-    return (
-      typeof value === "number" &&
-      Number.isFinite(value) &&
-      value >= 0
-    );
-  }
+  /*
+   * ---------------------------------------------------------
+   * BASIC UTILITIES
+   * ---------------------------------------------------------
+   */
 
   function currentYear() {
     return new Date().getUTCFullYear();
+  }
+
+  function roundCurrency(value) {
+    return Math.round(
+      (Number(value) + Number.EPSILON) * 100
+    ) / 100;
+  }
+
+  function isPositiveFiniteNumber(value) {
+    return (
+      typeof value === "number" &&
+      Number.isFinite(value) &&
+      value > 0
+    );
+  }
+
+  function isValidYear(value) {
+    const year = Number(value);
+
+    return (
+      Number.isInteger(year) &&
+      year >= 1900 &&
+      year <= currentYear() + 1
+    );
   }
 
   function safeJsonParse(value, fallback) {
@@ -123,36 +116,69 @@
     }
   }
 
+  function hasLocalStorage() {
+    return (
+      typeof global !== "undefined" &&
+      typeof global.localStorage !== "undefined"
+    );
+  }
+
   /*
    * ---------------------------------------------------------
-   * GDP DATA VALIDATION
+   * GDP RECORD VALIDATION
    * ---------------------------------------------------------
    */
 
   function validateGdpRecord(record) {
+    const errors = [];
+
     if (!record || typeof record !== "object") {
-      throw new Error("GDP record is required.");
+      errors.push("GDP record is required.");
+    } else {
+      if (
+        typeof record.countryCode !== "string" ||
+        record.countryCode.trim().length !== 2
+      ) {
+        errors.push(
+          "countryCode must be a two-letter country code."
+        );
+      }
+
+      if (!isPositiveFiniteNumber(record.gdpPerCapitaUsd)) {
+        errors.push(
+          "gdpPerCapitaUsd must be greater than zero."
+        );
+      }
+
+      if (!isValidYear(record.dataYear)) {
+        errors.push(
+          "dataYear must be a valid economic-data year."
+        );
+      }
+
+      if (
+        typeof record.source !== "string" ||
+        record.source.trim().length === 0
+      ) {
+        errors.push(
+          "An authoritative GDP data source is required."
+        );
+      }
     }
 
-    if (!record.countryCode) {
-      throw new Error("GDP record requires countryCode.");
+    if (errors.length > 0) {
+      return {
+        valid: false,
+        status: STATUS.DATA_INVALID,
+        errors
+      };
     }
 
-    if (!isFinitePositiveNumber(record.gdpPerCapitaUsd)) {
-      throw new Error(
-        "GDP record requires a valid gdpPerCapitaUsd value."
-      );
-    }
-
-    if (!Number.isInteger(Number(record.dataYear))) {
-      throw new Error("GDP record requires a valid dataYear.");
-    }
-
-    if (!record.source) {
-      throw new Error("GDP record requires an authoritative source.");
-    }
-
-    return true;
+    return {
+      valid: true,
+      status: STATUS.CALCULATED,
+      errors: []
+    };
   }
 
   /*
@@ -160,20 +186,27 @@
    * OWNER-CONTROLLED FORMULA
    * ---------------------------------------------------------
    *
-   * IMPORTANT:
-   * This is the only function that should determine the
-   * unbounded USD price from GDP data.
+   * This is deliberately isolated.
    *
-   * It can later be replaced by a formally approved formula
-   * without rewriting the rest of the pricing engine.
+   * It must be replaced or formally approved before commercial
+   * activation.
    */
 
   function calculateRawUsdPrice(gdpPerCapitaUsd) {
+    if (!isPositiveFiniteNumber(gdpPerCapitaUsd)) {
+      throw new Error(
+        "GDP per capita must be greater than zero."
+      );
+    }
+
     const ratio =
       gdpPerCapitaUsd /
       POLICY.referenceGdpPerCapitaUsd;
 
-    return POLICY.referencePriceUsd * ratio;
+    return (
+      POLICY.referencePriceUsd *
+      ratio
+    );
   }
 
   /*
@@ -183,15 +216,21 @@
    */
 
   function applyPriceLimits(priceUsd) {
-    const limited = Math.min(
-      POLICY.maximumUsdPerChildPerYear,
-      Math.max(
-        POLICY.minimumUsdPerChildPerYear,
-        priceUsd
+    if (!Number.isFinite(Number(priceUsd))) {
+      throw new Error(
+        "Price must be a finite number."
+      );
+    }
+
+    return roundCurrency(
+      Math.min(
+        POLICY.maximumUsdPerChildPerYear,
+        Math.max(
+          POLICY.minimumUsdPerChildPerYear,
+          Number(priceUsd)
+        )
       )
     );
-
-    return roundCurrency(limited);
   }
 
   /*
@@ -199,124 +238,242 @@
    * LOCAL CURRENCY CONVERSION
    * ---------------------------------------------------------
    *
-   * exchangeRate means:
+   * exchangeRate:
    *
    * 1 USD = exchangeRate units of local currency
    *
-   * Example:
-   * 1 USD = 2.25 FJD
+   * Exchange rates must come from an approved source.
    */
 
-  function convertUsdToLocalCurrency(priceUsd, currencyCode, exchangeRate) {
-    if (!currencyCode) {
-      return {
-        currency: POLICY.defaultCurrency,
-        amount: roundCurrency(priceUsd),
-        exchangeRate: 1
-      };
-    }
+  function convertUsdToLocalCurrency(
+    priceUsd,
+    currencyCode,
+    exchangeRate
+  ) {
+    const currency =
+      typeof currencyCode === "string" &&
+      currencyCode.trim()
+        ? currencyCode.trim().toUpperCase()
+        : POLICY.defaultCurrency;
 
-    if (currencyCode === POLICY.defaultCurrency) {
-      return {
-        currency: POLICY.defaultCurrency,
-        amount: roundCurrency(priceUsd),
-        exchangeRate: 1
-      };
-    }
-
-    if (!isFinitePositiveNumber(exchangeRate) || exchangeRate <= 0) {
+    if (!isPositiveFiniteNumber(priceUsd)) {
       throw new Error(
-        "A valid exchange rate is required for local-currency pricing."
+        "USD price must be greater than zero."
+      );
+    }
+
+    if (currency === POLICY.defaultCurrency) {
+      return {
+        currency,
+        amount: roundCurrency(priceUsd),
+        exchangeRate: 1
+      };
+    }
+
+    if (!isPositiveFiniteNumber(exchangeRate)) {
+      throw new Error(
+        "A valid approved exchange rate is required."
       );
     }
 
     return {
-      currency: currencyCode,
-      amount: roundCurrency(priceUsd * exchangeRate),
-      exchangeRate: exchangeRate
+      currency,
+      amount: roundCurrency(
+        priceUsd * exchangeRate
+      ),
+      exchangeRate
     };
   }
 
   /*
    * ---------------------------------------------------------
-   * PRICE CALCULATION
+   * DATA AVAILABILITY CHECK
+   * ---------------------------------------------------------
+   */
+
+  function checkDataAvailability(gdpRecord) {
+    if (!gdpRecord) {
+      return {
+        available: false,
+        status: STATUS.DATA_UNAVAILABLE,
+        reason: "No GDP data supplied."
+      };
+    }
+
+    const validation =
+      validateGdpRecord(gdpRecord);
+
+    if (!validation.valid) {
+      return {
+        available: false,
+        status: STATUS.DATA_INVALID,
+        reason: validation.errors.join(" ")
+      };
+    }
+
+    return {
+      available: true,
+      status: STATUS.CALCULATED,
+      reason: null
+    };
+  }
+
+  /*
+   * ---------------------------------------------------------
+   * ANNUAL PRICE CALCULATION
    * ---------------------------------------------------------
    */
 
   function calculateAnnualPrice(options) {
     if (!options || typeof options !== "object") {
-      throw new Error("Pricing options are required.");
+      return {
+        status: STATUS.DATA_INVALID,
+        reason: "Pricing options are required."
+      };
     }
 
-    const gdpRecord = options.gdpRecord;
+    const gdpRecord =
+      options.gdpRecord || null;
 
-    validateGdpRecord(gdpRecord);
+    const dataStatus =
+      checkDataAvailability(gdpRecord);
+
+    if (!dataStatus.available) {
+      return {
+        status: dataStatus.status,
+        pricingYear:
+          Number(
+            options.pricingYear || currentYear()
+          ),
+        reason: dataStatus.reason
+      };
+    }
 
     const countryCode =
-      String(gdpRecord.countryCode).toUpperCase();
+      String(
+        gdpRecord.countryCode
+      ).trim().toUpperCase();
+
+    const pricingYear =
+      Number(
+        options.pricingYear || currentYear()
+      );
+
+    if (!isValidYear(pricingYear)) {
+      return {
+        status: STATUS.DATA_INVALID,
+        reason: "Invalid pricing year."
+      };
+    }
 
     /*
-     * Protected market handling.
-     *
-     * Fiji pricing is intentionally not automatically replaced
-     * by the international GDP formula.
+     * Fiji and any future protected market must not be
+     * overwritten by the international GDP formula.
      */
-    if (POLICY.protectedMarkets[countryCode]) {
+
+    if (
+      POLICY.protectedMarkets[countryCode]
+    ) {
       return {
         engineVersion: ENGINE_VERSION,
-        status: "PROTECTED_MARKET",
-        countryCode: countryCode,
-        pricingYear: Number(options.pricingYear || currentYear()),
+        status: STATUS.PROTECTED_MARKET,
+        countryCode,
+        pricingYear,
         formulaVersion: null,
-        currency: options.currencyCode || "FJD",
-        priceUsdEquivalent: null,
+        currency:
+          options.currencyCode || "FJD",
+        priceUsdPerChildPerYear: null,
         priceLocalCurrency: null,
         reason:
           "Protected market requires separately approved owner-controlled pricing."
       };
     }
 
+    /*
+     * Prototype production boundary.
+     *
+     * Live commercial pricing must not be authorized merely
+     * from browser-side GDP data.
+     */
+
+    if (
+      options.productionAuthorization === true
+    ) {
+      return {
+        engineVersion: ENGINE_VERSION,
+        status: STATUS.PRODUCTION_REQUIRED,
+        countryCode,
+        pricingYear,
+        reason:
+          "Production pricing authorization must be performed server-side."
+      };
+    }
+
     const rawPriceUsd =
       calculateRawUsdPrice(
-        Number(gdpRecord.gdpPerCapitaUsd)
+        Number(
+          gdpRecord.gdpPerCapitaUsd
+        )
       );
 
     const finalPriceUsd =
-      applyPriceLimits(rawPriceUsd);
-
-    const localCurrency =
-      convertUsdToLocalCurrency(
-        finalPriceUsd,
-        options.currencyCode || "USD",
-        options.exchangeRate
+      applyPriceLimits(
+        rawPriceUsd
       );
+
+    let localCurrency;
+
+    try {
+      localCurrency =
+        convertUsdToLocalCurrency(
+          finalPriceUsd,
+          options.currencyCode || "USD",
+          options.exchangeRate
+        );
+    } catch (error) {
+      return {
+        engineVersion: ENGINE_VERSION,
+        status: STATUS.DATA_INVALID,
+        countryCode,
+        pricingYear,
+        reason: error.message
+      };
+    }
 
     return {
       engineVersion: ENGINE_VERSION,
-      status: "CALCULATED",
 
-      countryCode: countryCode,
+      status: STATUS.CALCULATED,
 
-      pricingYear:
-        Number(options.pricingYear || currentYear()),
+      countryCode,
+
+      pricingYear,
 
       formulaVersion:
         POLICY.formulaVersion,
 
       gdpPerCapitaUsd:
-        Number(gdpRecord.gdpPerCapitaUsd),
+        Number(
+          gdpRecord.gdpPerCapitaUsd
+        ),
 
       gdpDataYear:
-        Number(gdpRecord.dataYear),
+        Number(
+          gdpRecord.dataYear
+        ),
 
       gdpSource:
-        String(gdpRecord.source),
+        String(
+          gdpRecord.source
+        ),
 
       gdpRetrievedAt:
         gdpRecord.retrievedAt || null,
 
       rawPriceUsd:
-        roundCurrency(rawPriceUsd),
+        roundCurrency(
+          rawPriceUsd
+        ),
 
       priceUsdPerChildPerYear:
         finalPriceUsd,
@@ -343,38 +500,81 @@
 
   /*
    * ---------------------------------------------------------
+   * ANNUAL CHANGE CHECK
+   * ---------------------------------------------------------
+   *
+   * The engine does not silently overwrite an existing price
+   * merely because the calendar year changed.
+   */
+
+  function shouldCalculateNewAnnualPrice(
+    existingRecord,
+    requestedYear
+  ) {
+    const year =
+      Number(
+        requestedYear || currentYear()
+      );
+
+    if (!existingRecord) {
+      return true;
+    }
+
+    if (
+      Number(existingRecord.pricingYear) <
+      year
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
+  /*
+   * ---------------------------------------------------------
    * AUDIT LOG
    * ---------------------------------------------------------
    */
 
   function getAuditLog() {
-    if (typeof localStorage === "undefined") {
+    if (!hasLocalStorage()) {
       return [];
     }
 
     return safeJsonParse(
-      localStorage.getItem(AUDIT_KEY),
+      global.localStorage.getItem(
+        AUDIT_KEY
+      ),
       []
     );
   }
 
   function saveAuditRecord(record) {
-    if (typeof localStorage === "undefined") {
+    if (!hasLocalStorage()) {
       return false;
     }
 
-    const auditLog = getAuditLog();
+    const auditLog =
+      getAuditLog();
 
-    auditLog.push(record);
+    auditLog.push({
+      ...record,
+      engineVersion:
+        ENGINE_VERSION,
+      timestamp:
+        new Date().toISOString()
+    });
 
-    /*
-     * Keep the prototype audit log bounded.
-     */
-    const limitedLog = auditLog.slice(-200);
+    const limitedLog =
+      auditLog.slice(
+        -POLICY.maxAuditRecords
+      );
 
-    localStorage.setItem(
+    global.localStorage.setItem(
       AUDIT_KEY,
-      JSON.stringify(limitedLog)
+      JSON.stringify(
+        limitedLog
+      )
     );
 
     return true;
@@ -386,39 +586,65 @@
    * ---------------------------------------------------------
    */
 
-  function savePriceSnapshot(priceRecord) {
-    if (typeof localStorage === "undefined") {
+  function savePriceSnapshot(
+    priceRecord
+  ) {
+    if (!hasLocalStorage()) {
       return false;
     }
 
-    localStorage.setItem(
+    if (
+      !priceRecord ||
+      typeof priceRecord !== "object"
+    ) {
+      return false;
+    }
+
+    global.localStorage.setItem(
       STORAGE_KEY,
-      JSON.stringify(priceRecord)
+      JSON.stringify(
+        priceRecord
+      )
     );
 
     saveAuditRecord({
-      event: "ANNUAL_PRICE_CALCULATED",
-      engineVersion: ENGINE_VERSION,
-      pricingYear: priceRecord.pricingYear,
-      countryCode: priceRecord.countryCode,
+      event:
+        "ANNUAL_PRICE_SNAPSHOT_SAVED",
+
+      pricingYear:
+        priceRecord.pricingYear,
+
+      countryCode:
+        priceRecord.countryCode,
+
+      status:
+        priceRecord.status,
+
       priceUsdPerChildPerYear:
-        priceRecord.priceUsdPerChildPerYear || null,
-      currency: priceRecord.currency || null,
+        priceRecord.priceUsdPerChildPerYear ??
+        null,
+
+      currency:
+        priceRecord.currency ||
+        null,
+
       priceLocalCurrency:
-        priceRecord.priceLocalCurrency || null,
-      timestamp: new Date().toISOString()
+        priceRecord.priceLocalCurrency ??
+        null
     });
 
     return true;
   }
 
   function getSavedPriceSnapshot() {
-    if (typeof localStorage === "undefined") {
+    if (!hasLocalStorage()) {
       return null;
     }
 
     return safeJsonParse(
-      localStorage.getItem(STORAGE_KEY),
+      global.localStorage.getItem(
+        STORAGE_KEY
+      ),
       null
     );
   }
@@ -428,26 +654,136 @@
    * SAFE FALLBACK
    * ---------------------------------------------------------
    *
-   * If current official data is unavailable, do not invent
-   * a new price.
-   *
-   * The last verified price may remain temporarily active.
+   * If current economic data cannot be verified, the engine
+   * must NOT invent a new price.
    */
 
   function getLastVerifiedPrice() {
-    const previous = getSavedPriceSnapshot();
+    const previous =
+      getSavedPriceSnapshot();
 
     if (!previous) {
       return {
-        status: "NO_VERIFIED_PRICE",
+        status:
+          STATUS.NO_VERIFIED_PRICE,
+
+        priceRecord:
+          null,
+
         message:
           "No previously verified annual price is available."
       };
     }
 
     return {
-      status: "FALLBACK_TO_LAST_VERIFIED_PRICE",
-      priceRecord: previous
+      status:
+        STATUS.FALLBACK_TO_LAST_VERIFIED_PRICE,
+
+      priceRecord:
+        previous,
+
+      message:
+        "Current pricing data is unavailable or invalid. The last saved price remains available for controlled fallback."
+    };
+  }
+
+  /*
+   * ---------------------------------------------------------
+   * ANNUAL PRICING DECISION
+   * ---------------------------------------------------------
+   *
+   * This function determines whether a new calculation is
+   * needed. It does NOT fetch external data.
+   */
+
+  function evaluateAnnualPricing(options) {
+    const existingRecord =
+      getSavedPriceSnapshot();
+
+    const pricingYear =
+      Number(
+        options &&
+        options.pricingYear
+          ? options.pricingYear
+          : currentYear()
+      );
+
+    if (
+      existingRecord &&
+      !shouldCalculateNewAnnualPrice(
+        existingRecord,
+        pricingYear
+      )
+    ) {
+      return {
+        status:
+          "CURRENT_PRICE_ALREADY_VERIFIED",
+
+        pricingYear,
+
+        priceRecord:
+          existingRecord
+      };
+    }
+
+    if (
+      !options ||
+      !options.gdpRecord
+    ) {
+      return getLastVerifiedPrice();
+    }
+
+    const calculated =
+      calculateAnnualPrice({
+        ...options,
+        pricingYear
+      });
+
+    if (
+      calculated.status !==
+      STATUS.CALCULATED
+    ) {
+      return calculated;
+    }
+
+    savePriceSnapshot(
+      calculated
+    );
+
+    return calculated;
+  }
+
+  /*
+   * ---------------------------------------------------------
+   * PRODUCTION DATA BOUNDARY
+   * ---------------------------------------------------------
+   *
+   * This prototype intentionally does not make network calls.
+   *
+   * Production implementation should supply verified GDP data
+   * from a secure server/API layer.
+   */
+
+  function getProductionDataBoundary() {
+    return {
+      status:
+        STATUS.PRODUCTION_REQUIRED,
+
+      engineVersion:
+        ENGINE_VERSION,
+
+      message:
+        "Live GDP data, exchange rates, commercial pricing authorization and payment decisions must be verified server-side.",
+
+      requiredData: [
+        "countryCode",
+        "gdpPerCapitaUsd",
+        "dataYear",
+        "source",
+        "retrievedAt",
+        "currencyCode",
+        "exchangeRate"
+      ]
     };
   }
 
@@ -459,11 +795,18 @@
 
   const api = Object.freeze({
 
-    engineVersion: ENGINE_VERSION,
+    engineVersion:
+      ENGINE_VERSION,
 
-    policy: POLICY,
+    status:
+      STATUS,
+
+    policy:
+      POLICY,
 
     validateGdpRecord,
+
+    checkDataAvailability,
 
     calculateRawUsdPrice,
 
@@ -473,25 +816,28 @@
 
     calculateAnnualPrice,
 
+    shouldCalculateNewAnnualPrice,
+
+    evaluateAnnualPricing,
+
     savePriceSnapshot,
 
     getSavedPriceSnapshot,
 
     getLastVerifiedPrice,
 
-    getAuditLog
+    getAuditLog,
+
+    getProductionDataBoundary
   });
 
   /*
    * ---------------------------------------------------------
    * GLOBAL EXPORT
    * ---------------------------------------------------------
-   *
-   * No credentials.
-   * No payment secrets.
-   * No server authorization.
    */
 
-  global.PacificEducationAnnualGdpPricingEngine = api;
+  global.PacificEducationAnnualGdpPricingEngine =
+    api;
 
 })(window);
