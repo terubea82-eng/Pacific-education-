@@ -1,56 +1,55 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacific Education — Central Bridge Integration Test</title>
-</head><body>
+</head>
+
+<body>
+
     <h1>Pacific Education</h1>
-    <h2>Central Bridge Integration Test</h2><p><strong>TEST ONLY — NOT PRODUCTION</strong></p>
+    <h2>Central Bridge Integration Test</h2>
 
-<button type="button" onclick="runIntegrationTest()">
-    Run Integration Test
-</button>
+    <p>
+        <strong>TEST ONLY — NOT PRODUCTION</strong>
+    </p>
 
-<pre id="results">Preparing test...</pre>
+    <button type="button" onclick="runIntegrationTest()">
+        Run Integration Test
+    </button>
 
-<!-- Central Bridge -->
-<script src="js/pacificEducationCentralBridge.js"></script>
+    <pre id="results">Preparing test...</pre>
 
-<!-- Existing modules under test -->
-<script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
-<script src="js/pacificEducationPricingAuditGuard.js"></script>
+    <!-- Central Bridge -->
+    <script src="js/pacificEducationCentralBridge.js"></script>
 
-<script src="js/pacificEducationEducationLinkBridge.js"></script>
-<script src="../js/pacificEducationSecureLinkAuthorization.js"></script>
+    <!-- Existing modules under test -->
+    <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+    <script src="js/pacificEducationPricingAuditGuard.js"></script>
+    <script src="js/pacificEducationEducationLinkBridge.js"></script>
 
-<script src="js/pacificEducationAssessmentBridge.js"></script>
+    <!-- Secure Link Authorization -->
+    <script src="../js/pacificEducationSecureLinkAuthorization.js"></script>
 
-<!-- Integration test -->
-<script src="pacificEducationCentralBridgeIntegrationTest.js"></script>
+    <!-- Assessment Bridge -->
+    <script src="js/pacificEducationAssessmentBridge.js"></script>
 
-<script>
-    function runIntegrationTest() {
-        const output = document.getElementById("results");
+    <!-- Existing Integration Test -->
+    <script src="pacificEducationCentralBridgeIntegrationTest.js"></script>
 
-        if (
-            !window.PacificEducationCentralBridgeIntegrationTest ||
-            typeof window.PacificEducationCentralBridgeIntegrationTest.run !== "function"
-        ) {
-            output.textContent =
-                "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
-                "=================================================\n\n" +
-                "FAIL — Integration test was not loaded.";
-            return;
-        }
+    <!-- New Communication Test -->
+    <script src="pacificEducationCentralBridgeCommunicationTest.js"></script>
 
-        try {
-            const result =
-                window.PacificEducationCentralBridgeIntegrationTest.run();
+    <script>
+
+        function formatIntegrationResult(result) {
 
             let text = "";
 
             text +=
                 "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n";
+
             text +=
                 "=================================================\n\n";
 
@@ -66,6 +65,7 @@
             text += "=======\n\n";
 
             result.results.forEach(function (item, index) {
+
                 text +=
                     (index + 1) +
                     ". " +
@@ -75,27 +75,180 @@
                     "\n";
 
                 if (item.details) {
-                    text += "   " + item.details + "\n";
+
+                    text +=
+                        "   " +
+                        item.details +
+                        "\n";
                 }
 
                 text += "\n";
             });
 
-            output.textContent = text;
-
-        } catch (error) {
-            output.textContent =
-                "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
-                "=================================================\n\n" +
-                "FAIL — Test execution error.\n\n" +
-                String(error);
+            return text;
         }
-    }
 
-    window.addEventListener("load", function () {
-        runIntegrationTest();
-    });
-</script>
+
+        function formatCommunicationResult(result) {
+
+            let text = "";
+
+            text +=
+                "\n\nPACIFIC EDUCATION CENTRAL BRIDGE COMMUNICATION TEST\n";
+
+            text +=
+                "=================================================\n\n";
+
+            text += "Version: " + result.version + "\n";
+            text += "Status: " + result.status + "\n";
+            text += "Total: " + result.total + "\n";
+            text += "Passed: " + result.passed + "\n";
+            text += "Failed: " + result.failed + "\n";
+            text += "Overall: " + result.overall + "\n";
+            text += "Timestamp: " + result.timestamp + "\n\n";
+
+            text += "RESULTS\n";
+            text += "=======\n\n";
+
+            result.results.forEach(function (item, index) {
+
+                text +=
+                    (index + 1) +
+                    ". " +
+                    (item.passed ? "PASS" : "FAIL") +
+                    " — " +
+                    item.name +
+                    "\n";
+
+                if (item.details) {
+
+                    text +=
+                        "   " +
+                        item.details +
+                        "\n";
+                }
+
+                text += "\n";
+            });
+
+            return text;
+        }
+
+
+        function runIntegrationTest() {
+
+            const output =
+                document.getElementById("results");
+
+            let text = "";
+
+
+            /*
+             * =================================================
+             * INTEGRATION TEST
+             * =================================================
+             */
+
+            if (
+                !window.PacificEducationCentralBridgeIntegrationTest ||
+                typeof window.PacificEducationCentralBridgeIntegrationTest.run !==
+                    "function"
+            ) {
+
+                text +=
+                    "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
+                    "=================================================\n\n" +
+                    "FAIL — Integration test was not loaded.\n\n";
+
+            } else {
+
+                try {
+
+                    const integrationResult =
+                        window.PacificEducationCentralBridgeIntegrationTest.run();
+
+                    text +=
+                        formatIntegrationResult(
+                            integrationResult
+                        );
+
+                } catch (error) {
+
+                    text +=
+                        "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
+                        "=================================================\n\n" +
+                        "FAIL — Integration test execution error.\n\n" +
+                        String(error) +
+                        "\n\n";
+                }
+            }
+
+
+            /*
+             * =================================================
+             * COMMUNICATION TEST
+             * =================================================
+             */
+
+            if (
+                !window.PacificEducationCentralBridgeCommunicationTest ||
+                typeof window.PacificEducationCentralBridgeCommunicationTest.run !==
+                    "function"
+            ) {
+
+                text +=
+                    "\nPACIFIC EDUCATION CENTRAL BRIDGE COMMUNICATION TEST\n" +
+                    "=================================================\n\n" +
+                    "FAIL — Communication test was not loaded.\n";
+
+            } else {
+
+                try {
+
+                    const communicationResult =
+                        window.PacificEducationCentralBridgeCommunicationTest.run();
+
+                    text +=
+                        formatCommunicationResult(
+                            communicationResult
+                        );
+
+                } catch (error) {
+
+                    text +=
+                        "\nPACIFIC EDUCATION CENTRAL BRIDGE COMMUNICATION TEST\n" +
+                        "=================================================\n\n" +
+                        "FAIL — Communication test execution error.\n\n" +
+                        String(error) +
+                        "\n";
+                }
+            }
+
+
+            /*
+             * =================================================
+             * FINAL DISPLAY
+             * =================================================
+             */
+
+            output.textContent = text;
+        }
+
+
+        /*
+         * Automatically run both tests when the page loads.
+         */
+
+        window.addEventListener(
+            "load",
+            function () {
+
+                runIntegrationTest();
+
+            }
+        );
+
+    </script>
 
 </body>
 </html>
