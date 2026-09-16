@@ -1,52 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacific Education GDP Pricing Production Authorization Audit Integration Test</title>
-</head>
+/*
+ * PACIFIC EDUCATION
+ * GDP PRICING → PRODUCTION AUTHORIZATION → AUDIT INTEGRATION TEST
+ * VERSION 1.0.0
+ *
+ * TEST ONLY — NOT PRODUCTION
+ */
 
-<body>
-    <h1>Pacific Education — GDP Pricing → Production Authorization → Audit Integration Test</h1>
+(function () {
+    "use strict";
 
-    <p>
-        TEST ONLY — This page does not create production prices
-        or process payments.
-    </p>
+    const engine =
+        window.PacificEducationAnnualGdpPricingEngine;
 
-    <pre id="result">
-Running production authorization → audit integration test...
-    </pre>
+    const auditGuard =
+        window.PacificEducationPricingAuditGuard;
 
-    <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
-    <script src="js/pacificEducationPricingAuditGuard.js"></script>
+    if (!engine) {
+        console.error(
+            "GDP Pricing Engine is unavailable."
+        );
+        return;
+    }
 
-    <!-- Version 1.0.0 test file — cache-busted -->
-    <script src="js/pacificEducationGdpPricingProductionAuthorizationAuditIntegrationTest.js?v=20260916-1"></script>
+    if (!auditGuard) {
+        console.error(
+            "Pricing Audit Guard is unavailable."
+        );
+        return;
+    }
 
-    <script>
-        (function () {
-            "use strict";
+    const gdpRecord = {
+        countryCode:
+            "IN",
 
-            const output =
-                document.getElementById("result");
+        gdpPerCapitaUsd:
+            2702.5,
 
-            const testResult =
-                window.PacificEducationGdpPricingProductionAuthorizationAuditIntegrationTestResult;
+        dataYear:
+            2025,
 
-            if (!testResult) {
-                output.textContent =
-                    "TEST FAILED: Production authorization → audit integration result unavailable.";
-                return;
-            }
+        source:
+            "TEST DATA — World Bank GDP per capita"
+    };
 
-            output.textContent =
-                JSON.stringify(
-                    testResult,
-                    null,
-                    2
-                );
-        })();
-    </script>
-</body>
-</html>
+    const pricing =
+        engine.calculateAnnualPrice({
+            gdpRecord:
+                gdpRecord,
+
+            pricingYear:
+                2026,
+
+            currencyCode:
+                "USD",
+
+            productionAuthorization:
+                true
+        });
+
+    const audit =
+        auditGuard.auditPlan({
+            planId:
+                "INDIA-PRODUCTION-AUTH-AUDIT-2026",
+
+            countryCode:
+                "IN",
+
+            currency:
+                pricing.currency,
+
+            amount:
+                pricing.priceUsdPerChildPerYear,
+
+            period:
+                "ANNUAL"
+        });
+
+    const productionBlocked =
+        pricing.status ===
+            "PRODUCTION_REQUIRED";
+
+    const priceUnavailable =
+        pricing.priceUsdPerChildPerYear ===
+            null ||
+        typeof pricing.priceUsdPerChildPerYear ===
+            "undefined";
+
+    const auditRejected =
+        audit.valid === false;
+
+    window.PacificEducationGdpPricingProductionAuthorizationAuditIntegrationTestResult =
+        Object.freeze({
+
+            testName:
+                "GDP Pricing → Production Authorization → Audit Integration",
+
+            pricingStatus:
+                pricing.status,
+
+            productionBlocked:
+                productionBlocked,
+
+            priceUnavailable:
+                priceUnavailable,
+
+            auditValid:
+                audit.valid,
+
+            auditErrors:
+                audit.errors,
+
+            auditRejected:
+                auditRejected,
+
+            pricingResult:
+                pricing,
+
+            auditResult:
+                audit,
+
+            passed:
+                productionBlocked &&
+                priceUnavailable &&
+                auditRejected
+
+        });
+
+    console.log(
+        "PACIFIC EDUCATION GDP PRICING → PRODUCTION AUTHORIZATION → AUDIT INTEGRATION TEST",
+        window.PacificEducationGdpPricingProductionAuthorizationAuditIntegrationTestResult
+    );
+
+})();
