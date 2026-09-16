@@ -1,7 +1,7 @@
 /*
  * PACIFIC EDUCATION
  * GDP PRICING → PRODUCTION AUTHORIZATION → AUDIT INTEGRATION TEST
- * VERSION 1.0.0
+ * VERSION 1.0.1
  *
  * TEST ONLY — NOT PRODUCTION
  */
@@ -15,17 +15,58 @@
     const auditGuard =
         window.PacificEducationPricingAuditGuard;
 
+    const diagnostic = {
+        testName:
+            "GDP Pricing → Production Authorization → Audit Integration",
+
+        engineLoaded:
+            !!engine,
+
+        auditGuardLoaded:
+            !!auditGuard,
+
+        engineFunctionAvailable:
+            !!(
+                engine &&
+                typeof engine.calculateAnnualPrice === "function"
+            ),
+
+        auditFunctionAvailable:
+            !!(
+                auditGuard &&
+                typeof auditGuard.auditPlan === "function"
+            )
+    };
+
     if (!engine) {
+        diagnostic.passed = false;
+        diagnostic.error =
+            "GDP Pricing Engine is unavailable.";
+
+        window.PacificEducationGdpPricingProductionAuthorizationAuditIntegrationTestResult =
+            Object.freeze(diagnostic);
+
         console.error(
-            "GDP Pricing Engine is unavailable."
+            "PACIFIC EDUCATION TEST FAILED",
+            diagnostic
         );
+
         return;
     }
 
     if (!auditGuard) {
+        diagnostic.passed = false;
+        diagnostic.error =
+            "Pricing Audit Guard is unavailable.";
+
+        window.PacificEducationGdpPricingProductionAuthorizationAuditIntegrationTestResult =
+            Object.freeze(diagnostic);
+
         console.error(
-            "Pricing Audit Guard is unavailable."
+            "PACIFIC EDUCATION TEST FAILED",
+            diagnostic
         );
+
         return;
     }
 
@@ -95,6 +136,12 @@
             testName:
                 "GDP Pricing → Production Authorization → Audit Integration",
 
+            engineLoaded:
+                true,
+
+            auditGuardLoaded:
+                true,
+
             pricingStatus:
                 pricing.status,
 
@@ -123,7 +170,6 @@
                 productionBlocked &&
                 priceUnavailable &&
                 auditRejected
-
         });
 
     console.log(
