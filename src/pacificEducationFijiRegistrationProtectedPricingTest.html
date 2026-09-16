@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education Fiji Registration → Protected Pricing Test</title>
+</head>
 
+<body>
+
+    <h1>
+        Pacific Education — Fiji Registration → Protected Pricing Test
+    </h1>
+
+    <p>
+        TEST ONLY — This page does not create a production price
+        or process payments.
+    </p>
+
+    <pre id="result">
+Running Fiji registration → protected pricing test...
+    </pre>
+
+    <!-- Country Registration Bridge -->
+    <script src="js/pacificEducationCountryRegistrationBridge.js"></script>
+
+    <!-- GDP Pricing Engine -->
+    <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+
+    <!-- Connection Test -->
+    <script src="js/pacificEducationFijiRegistrationProtectedPricingTest.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const output =
+                document.getElementById("result");
+
+            const testResult =
+                window.PacificEducationFijiRegistrationProtectedPricingTestResult;
+
+            if (!testResult) {
+                output.textContent =
+                    "TEST FAILED: Fiji registration → protected pricing result unavailable.";
+                return;
+            }
+
+            output.textContent =
+                JSON.stringify(
+                    testResult,
+                    null,
+                    2
+                );
+        })();
+    </script>
+
+</body>
+</html>
