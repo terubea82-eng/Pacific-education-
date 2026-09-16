@@ -753,3 +753,5 @@
             run: run
         });
 })(); 
+
+bridge.status === "PROTOTYPE — NOT PRODUCTION SECURITY"
