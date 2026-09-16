@@ -752,6 +752,13 @@
             status: STATUS,
             run: run
         });
-})(); 
 
-bridge.status === "PROTOTYPE — NOT PRODUCTION SECURITY",
+
+        window.PacificEducationCentralBridgeFailureRecoveryTest =
+        Object.freeze({
+            version: VERSION,
+            status: STATUS,
+            run: run
+        });
+    }
+})();
