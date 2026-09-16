@@ -1,1 +1,47 @@
 
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education Pricing Audit Invalid Data Test</title>
+</head><body>
+    <h1>Pacific Education — Pricing Audit Invalid Data Test</h1><p>
+    TEST ONLY — This page does not create production prices
+    or process payments.
+</p>
+
+<pre id="result">
+
+Running pricing audit invalid-data test...
+</pre>
+
+<script src="js/pacificEducationPricingAuditGuard.js"></script>
+<script src="js/pacificEducationPricingAuditInvalidDataTest.js"></script>
+
+<script>
+    (function () {
+        "use strict";
+
+        const output =
+            document.getElementById("result");
+
+        const testResult =
+            window.PacificEducationPricingAuditInvalidDataTestResult;
+
+        if (!testResult) {
+            output.textContent =
+                "TEST FAILED: Pricing Audit invalid-data result unavailable.";
+            return;
+        }
+
+        output.textContent =
+            JSON.stringify(
+                testResult,
+                null,
+                2
+            );
+    })();
+</script>
+
+</body>
+</html>
