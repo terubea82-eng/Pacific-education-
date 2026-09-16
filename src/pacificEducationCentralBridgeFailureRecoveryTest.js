@@ -746,12 +746,7 @@
         };
     }
 
-    window.PacificEducationCentralBridgeFailureRecoveryTest =
-        Object.freeze({
-            version: VERSION,
-            status: STATUS,
-            run: run
-        });
+    
 
 
         window.PacificEducationCentralBridgeFailureRecoveryTest =
