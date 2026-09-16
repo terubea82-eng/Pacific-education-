@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education GDP Pricing Test</title>
+</head>
+
+<body>
+
+    <h1>Pacific Education — GDP → Pricing Test</h1>
+
+    <p>
+        TEST ONLY — This page does not create a production price
+        or process payments.
+    </p>
+
+    <pre id="result">Running test...</pre>
+
+    <!-- Existing pricing engine -->
+    <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+
+    <!-- GDP pricing connection test -->
+    <script src="js/pacificEducationGdpPricingTest.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const output =
+                document.getElementById("result");
+
+            const testResult =
+                window.PacificEducationGdpPricingTestResult;
+
+            if (!testResult) {
+                output.textContent =
+                    "TEST FAILED: GDP pricing test result unavailable.";
+                return;
+            }
+
+            output.textContent =
+                JSON.stringify(
+                    testResult,
+                    null,
+                    2
+                );
+        })();
+    </script>
+
+</body>
+</html>
