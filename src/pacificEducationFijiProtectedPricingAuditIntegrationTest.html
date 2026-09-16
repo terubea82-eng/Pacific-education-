@@ -1,1 +1,47 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education Fiji Protected Pricing Audit Integration Test</title>
+</head><body>
+    <h1>Pacific Education — Fiji Protected Pricing → Audit Guard Integration Test</h1><p>
+    TEST ONLY — This page does not create production prices
+    or process payments.
+</p>
 
+<pre id="result">
+
+Running Fiji protected pricing → audit integration test...
+</pre>
+
+<script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+<script src="js/pacificEducationPricingAuditGuard.js"></script>
+<script src="js/pacificEducationFijiProtectedPricingAuditIntegrationTest.js"></script>
+
+<script>
+    (function () {
+        "use strict";
+
+        const output =
+            document.getElementById("result");
+
+        const testResult =
+            window.PacificEducationFijiProtectedPricingAuditIntegrationTestResult;
+
+        if (!testResult) {
+            output.textContent =
+                "TEST FAILED: Fiji protected pricing → audit integration result unavailable.";
+            return;
+        }
+
+        output.textContent =
+            JSON.stringify(
+                testResult,
+                null,
+                2
+            );
+    })();
+</script>
+
+</body>
+</html>
