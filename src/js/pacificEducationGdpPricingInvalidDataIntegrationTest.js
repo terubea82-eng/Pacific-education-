@@ -1,7 +1,7 @@
 /*
  * PACIFIC EDUCATION
  * GDP PRICING → INVALID DATA → AUDIT INTEGRATION TEST
- * VERSION 1.0.0
+ * VERSION 1.0.1
  *
  * TEST ONLY — NOT PRODUCTION
  */
@@ -73,6 +73,11 @@
                 "ANNUAL"
         });
 
+    const priceUnavailable =
+        pricing.priceUsdPerChildPerYear === null ||
+        typeof pricing.priceUsdPerChildPerYear ===
+            "undefined";
+
     window.PacificEducationGdpPricingInvalidDataIntegrationTestResult =
         Object.freeze({
 
@@ -92,14 +97,21 @@
                 audit.errors,
 
             invalidDataRejected:
-                pricing.status === "DATA_INVALID",
+                pricing.status ===
+                "DATA_INVALID",
 
             auditRejectedInvalidPrice:
                 audit.valid === false,
 
+            priceUnavailable:
+                priceUnavailable,
+
             passed:
-                pricing.status === "DATA_INVALID" &&
-                pricing.priceUsdPerChildPerYear === null &&
+                pricing.status ===
+                    "DATA_INVALID" &&
+
+                priceUnavailable &&
+
                 audit.valid === false
 
         });
