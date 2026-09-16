@@ -1,24 +1,25 @@
-
 /*
- * Pacific Education
- * Central Bridge Integration Test
+ * =========================================================
+ * PACIFIC EDUCATION
+ * CENTRAL BRIDGE INTEGRATION TEST
+ * =========================================================
+ * Version 1.1.0
  *
- * VERSION: 1.0.0
- * STATUS: TEST ONLY — NOT PRODUCTION
+ * TEST ONLY — NOT PRODUCTION
  *
  * Purpose:
- * Verify that existing Pacific Education modules can be detected
- * and connected to the Central Bridge without replacing their
- * individual responsibilities.
+ * Verify existing Pacific Education modules and provide
+ * diagnostics when a required module is not detected.
  *
  * IMPORTANT:
- * This file must NOT be loaded by production index.html.
+ * This file does NOT modify production modules.
+ * =========================================================
  */
 
 (function () {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
     const STATUS = "TEST ONLY — NOT PRODUCTION";
 
     const REQUIRED_MODULES = [
@@ -32,7 +33,7 @@
 
     function test(name, condition, details) {
         return {
-            name,
+            name: name,
             passed: Boolean(condition),
             details: details || ""
         };
@@ -56,7 +57,7 @@
         results.push(
             test(
                 "Correct test version",
-                VERSION === "1.0.0",
+                VERSION === "1.1.0",
                 VERSION
             )
         );
@@ -89,6 +90,82 @@
                         : "Module not detected in this test environment."
                 )
             );
+
+            /*
+             * Additional diagnostic information for the
+             * Secure Link Authorization module only.
+             */
+            if (
+                moduleName ===
+                "PacificEducationSecureLinkAuthorization"
+            ) {
+                results.push(
+                    test(
+                        "Secure Link global object exists",
+                        typeof window.PacificEducationSecureLinkAuthorization !==
+                            "undefined",
+                        available
+                            ? "Global authorization object exists."
+                            : "Global authorization object is missing."
+                    )
+                );
+
+                results.push(
+                    test(
+                        "Secure Link requestLink exists",
+                        Boolean(
+                            window.PacificEducationSecureLinkAuthorization &&
+                            typeof window.PacificEducationSecureLinkAuthorization
+                                .requestLink === "function"
+                        ),
+                        available
+                            ? "requestLink function detected."
+                            : "requestLink cannot be checked because the global object is missing."
+                    )
+                );
+
+                results.push(
+                    test(
+                        "Secure Link approveLink exists",
+                        Boolean(
+                            window.PacificEducationSecureLinkAuthorization &&
+                            typeof window.PacificEducationSecureLinkAuthorization
+                                .approveLink === "function"
+                        ),
+                        available
+                            ? "approveLink function detected."
+                            : "approveLink cannot be checked because the global object is missing."
+                    )
+                );
+
+                results.push(
+                    test(
+                        "Secure Link authorizeAccess exists",
+                        Boolean(
+                            window.PacificEducationSecureLinkAuthorization &&
+                            typeof window.PacificEducationSecureLinkAuthorization
+                                .authorizeAccess === "function"
+                        ),
+                        available
+                            ? "authorizeAccess function detected."
+                            : "authorizeAccess cannot be checked because the global object is missing."
+                    )
+                );
+
+                results.push(
+                    test(
+                        "Secure Link revokeLink exists",
+                        Boolean(
+                            window.PacificEducationSecureLinkAuthorization &&
+                            typeof window.PacificEducationSecureLinkAuthorization
+                                .revokeLink === "function"
+                        ),
+                        available
+                            ? "revokeLink function detected."
+                            : "revokeLink cannot be checked because the global object is missing."
+                    )
+                );
+            }
         });
 
         const bridge = window.PacificEducationCentralBridge;
@@ -127,12 +204,15 @@
             );
 
             if (typeof bridge.getSystemStatus === "function") {
-                const status = bridge.getSystemStatus();
+                const systemStatus = bridge.getSystemStatus();
 
                 results.push(
                     test(
                         "System status can be read",
-                        Boolean(status && typeof status === "object"),
+                        Boolean(
+                            systemStatus &&
+                            typeof systemStatus === "object"
+                        ),
                         "Central Bridge system status response received."
                     )
                 );
@@ -151,13 +231,43 @@
             }
         }
 
+        /*
+         * Final diagnostic summary.
+         */
+        const authorization =
+            window.PacificEducationSecureLinkAuthorization;
+
+        let diagnosticDetails = "";
+
+        if (!authorization) {
+            diagnosticDetails =
+                "DIAGNOSTIC: PacificEducationSecureLinkAuthorization " +
+                "is not present on window. Check script loading/path/cache.";
+        } else {
+            diagnosticDetails =
+                "DIAGNOSTIC: Authorization global detected. " +
+                "Version: " +
+                String(authorization.version || "unknown");
+        }
+
+        results.push(
+            test(
+                "Secure Link Authorization diagnostic",
+                Boolean(authorization),
+                diagnosticDetails
+            )
+        );
+
         const passed = results.filter(function (item) {
             return item.passed;
         }).length;
 
         const failed = results.length - passed;
 
-        const overall = failed === 0 ? "PASS" : "FAIL";
+        const overall =
+            failed === 0
+                ? "PASS"
+                : "FAIL";
 
         const finalResult = {
             version: VERSION,
