@@ -1,105 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacific Education — Central Bridge Integration Test</title>
-</head>
-
-<body>
+</head><body>
     <h1>Pacific Education</h1>
-    <h2>Central Bridge Integration Test</h2>
+    <h2>Central Bridge Integration Test</h2><p><strong>TEST ONLY — NOT PRODUCTION</strong></p>
 
-    <p><strong>TEST ONLY — NOT PRODUCTION</strong></p>
+<button type="button" onclick="runIntegrationTest()">
+    Run Integration Test
+</button>
 
-    <button type="button" onclick="runIntegrationTest()">
-        Run Integration Test
-    </button>
+<pre id="results">Preparing test...</pre>
 
-    <pre id="results">Preparing test...</pre>
+<!-- Central Bridge -->
+<script src="js/pacificEducationCentralBridge.js"></script>
 
-    <!-- Central Bridge -->
-    <script src="js/pacificEducationCentralBridge.js"></script>
+<!-- Existing modules under test -->
+<script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+<script src="js/pacificEducationPricingAuditGuard.js"></script>
 
-    <!-- Existing modules under test -->
-    <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
-    <script src="js/pacificEducationPricingAuditGuard.js"></script>
+<script src="js/pacificEducationEducationLinkBridge.js"></script>
+<script src="../js/pacificEducationSecureLinkAuthorization.js"></script>
 
-    <script src="js/pacificEducationEducationLinkBridge.js"></script>
-    <script src="js/pacificEducationSecureLinkAuthorization.js"></script>
+<script src="js/pacificEducationAssessmentBridge.js"></script>
 
-    <script src="js/pacificEducationAssessmentBridge.js"></script>
+<!-- Integration test -->
+<script src="pacificEducationCentralBridgeIntegrationTest.js"></script>
 
-    <!-- Integration test -->
-    <script src="pacificEducationCentralBridgeIntegrationTest.js"></script>
+<script>
+    function runIntegrationTest() {
+        const output = document.getElementById("results");
 
-    <script>
-        function runIntegrationTest() {
-            const output = document.getElementById("results");
-
-            if (
-                !window.PacificEducationCentralBridgeIntegrationTest ||
-                typeof window.PacificEducationCentralBridgeIntegrationTest.run !== "function"
-            ) {
-                output.textContent =
-                    "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
-                    "=================================================\n\n" +
-                    "FAIL — Integration test was not loaded.";
-                return;
-            }
-
-            try {
-                const result =
-                    window.PacificEducationCentralBridgeIntegrationTest.run();
-
-                let text = "";
-
-                text +=
-                    "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n";
-                text +=
-                    "=================================================\n\n";
-
-                text += "Version: " + result.version + "\n";
-                text += "Status: " + result.status + "\n";
-                text += "Total: " + result.total + "\n";
-                text += "Passed: " + result.passed + "\n";
-                text += "Failed: " + result.failed + "\n";
-                text += "Overall: " + result.overall + "\n";
-                text += "Timestamp: " + result.timestamp + "\n\n";
-
-                text += "RESULTS\n";
-                text += "=======\n\n";
-
-                result.results.forEach(function (item, index) {
-                    text +=
-                        (index + 1) +
-                        ". " +
-                        (item.passed ? "PASS" : "FAIL") +
-                        " — " +
-                        item.name +
-                        "\n";
-
-                    if (item.details) {
-                        text += "   " + item.details + "\n";
-                    }
-
-                    text += "\n";
-                });
-
-                output.textContent = text;
-
-            } catch (error) {
-                output.textContent =
-                    "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
-                    "=================================================\n\n" +
-                    "FAIL — Test execution error.\n\n" +
-                    String(error);
-            }
+        if (
+            !window.PacificEducationCentralBridgeIntegrationTest ||
+            typeof window.PacificEducationCentralBridgeIntegrationTest.run !== "function"
+        ) {
+            output.textContent =
+                "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
+                "=================================================\n\n" +
+                "FAIL — Integration test was not loaded.";
+            return;
         }
 
-        window.addEventListener("load", function () {
-            runIntegrationTest();
-        });
-    </script>
+        try {
+            const result =
+                window.PacificEducationCentralBridgeIntegrationTest.run();
+
+            let text = "";
+
+            text +=
+                "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n";
+            text +=
+                "=================================================\n\n";
+
+            text += "Version: " + result.version + "\n";
+            text += "Status: " + result.status + "\n";
+            text += "Total: " + result.total + "\n";
+            text += "Passed: " + result.passed + "\n";
+            text += "Failed: " + result.failed + "\n";
+            text += "Overall: " + result.overall + "\n";
+            text += "Timestamp: " + result.timestamp + "\n\n";
+
+            text += "RESULTS\n";
+            text += "=======\n\n";
+
+            result.results.forEach(function (item, index) {
+                text +=
+                    (index + 1) +
+                    ". " +
+                    (item.passed ? "PASS" : "FAIL") +
+                    " — " +
+                    item.name +
+                    "\n";
+
+                if (item.details) {
+                    text += "   " + item.details + "\n";
+                }
+
+                text += "\n";
+            });
+
+            output.textContent = text;
+
+        } catch (error) {
+            output.textContent =
+                "PACIFIC EDUCATION CENTRAL BRIDGE INTEGRATION TEST\n" +
+                "=================================================\n\n" +
+                "FAIL — Test execution error.\n\n" +
+                String(error);
+        }
+    }
+
+    window.addEventListener("load", function () {
+        runIntegrationTest();
+    });
+</script>
+
 </body>
 </html>
