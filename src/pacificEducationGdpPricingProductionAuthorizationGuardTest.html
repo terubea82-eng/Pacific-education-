@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education GDP Pricing Production Authorization Guard Test</title>
+</head>
+
+<body>
+    <h1>Pacific Education — GDP Pricing → Production Authorization Guard Test</h1>
+
+    <p>
+        TEST ONLY — This page does not create production prices
+        or process payments.
+    </p>
+
+    <pre id="result">
+Running production authorization guard test...
+    </pre>
+
+    <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+
+    <!-- Version 1.0.0 test file — cache-busted -->
+    <script src="js/pacificEducationGdpPricingProductionAuthorizationGuardTest.js?v=20260916-1"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const output =
+                document.getElementById("result");
+
+            const testResult =
+                window.PacificEducationGdpPricingProductionAuthorizationGuardTestResult;
+
+            if (!testResult) {
+                output.textContent =
+                    "TEST FAILED: Production authorization guard result unavailable.";
+                return;
+            }
+
+            output.textContent =
+                JSON.stringify(
+                    testResult,
+                    null,
+                    2
+                );
+        })();
+    </script>
+</body>
+</html>
