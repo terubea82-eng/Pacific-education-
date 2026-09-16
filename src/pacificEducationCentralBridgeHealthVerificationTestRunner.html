@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education Central Bridge Health Verification</title>
+</head>
 
+<body>
+    <h1>Pacific Education Central Bridge Health Verification</h1>
+
+    <p id="status">Running test...</p>
+
+    <pre id="results"></pre>
+
+    <script src="js/pacificEducationCentralBridge.js"></script>
+
+    <script src="pacificEducationCentralBridgeHealthVerificationTest.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const output =
+                document.getElementById("results");
+
+            const status =
+                document.getElementById("status");
+
+            if (
+                !window.PacificEducationCentralBridgeHealthVerificationTest
+            ) {
+                status.textContent =
+                    "TEST ERROR — Health Verification Test not found.";
+
+                output.textContent =
+                    "pacificEducationCentralBridgeHealthVerificationTest.js was not loaded.";
+
+                return;
+            }
+
+            const result =
+                window.PacificEducationCentralBridgeHealthVerificationTest.run();
+
+            status.textContent =
+                result.overall === "PASS"
+                    ? "OVERALL RESULT: PASS"
+                    : "OVERALL RESULT: FAIL";
+
+            output.textContent =
+                JSON.stringify(result, null, 2);
+        })();
+    </script>
+</body>
+  </html>
