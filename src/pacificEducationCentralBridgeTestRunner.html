@@ -1,1 +1,212 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pacific Education Central Bridge Test Runner</title>
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .status {
+        font-weight: bold;
+        padding: 12px;
+        margin: 15px 0;
+        border: 1px solid #999;
+    }
+
+    .pass {
+        font-weight: bold;
+    }
+
+    .fail {
+        font-weight: bold;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #f4f4f4;
+        padding: 12px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 12px 18px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+</head><body><h1>Pacific Education Central Bridge Test Runner</h1>
+
+<p>
+    <strong>Version:</strong> 1.0.0
+</p>
+
+<p>
+    <strong>TEST ONLY.</strong>
+    This page must not be connected to the production application.
+</p>
+
+<div id="status" class="status">
+    Loading Central Bridge...
+</div>
+
+<button id="runTestButton" type="button">
+    Run Central Bridge Test
+</button>
+
+<h2>Test Summary</h2>
+
+<pre id="summary">Test has not been run yet.</pre>
+
+<h2>Detailed Results</h2>
+
+<pre id="results">No results yet.</pre>
+
+<!-- Central Bridge -->
+<script src="js/pacificEducationCentralBridge.js"></script>
+
+<!-- Central Bridge Test -->
+<script src="pacificEducationCentralBridgeTest.js"></script>
+
+<script>
+    (function () {
+        "use strict";
+
+        const statusElement =
+            document.getElementById("status");
+
+        const summaryElement =
+            document.getElementById("summary");
+
+        const resultsElement =
+            document.getElementById("results");
+
+        const button =
+            document.getElementById("runTestButton");
+
+        function displayResults(report) {
+            if (!report) {
+                statusElement.textContent =
+                    "TEST ERROR: No test report returned.";
+
+                summaryElement.textContent =
+                    "No report was returned.";
+
+                resultsElement.textContent =
+                    "The Central Bridge test did not return a result.";
+
+                return;
+            }
+
+            statusElement.textContent =
+                report.success
+                    ? "CENTRAL BRIDGE TEST: PASS"
+                    : "CENTRAL BRIDGE TEST: FAIL";
+
+            summaryElement.textContent =
+                [
+                    "Test: " + report.testName,
+                    "Version: " + report.version,
+                    "Total: " + report.total,
+                    "Passed: " + report.passed,
+                    "Failed: " + report.failed,
+                    "Overall: " +
+                        (report.success ? "PASS" : "FAIL")
+                ].join("\n");
+
+            resultsElement.textContent =
+                JSON.stringify(
+                    report.results,
+                    null,
+                    2
+                );
+        }
+
+        function runTest() {
+            statusElement.textContent =
+                "Running Central Bridge Test...";
+
+            summaryElement.textContent =
+                "Running...";
+
+            resultsElement.textContent =
+                "Running...";
+
+            if (
+                !window.PacificEducationCentralBridge
+            ) {
+                statusElement.textContent =
+                    "TEST ERROR: Central Bridge not loaded.";
+
+                summaryElement.textContent =
+                    "window.PacificEducationCentralBridge is missing.";
+
+                return;
+            }
+
+            if (
+                !window.PacificEducationCentralBridgeTest
+            ) {
+                statusElement.textContent =
+                    "TEST ERROR: Test module not loaded.";
+
+                summaryElement.textContent =
+                    "window.PacificEducationCentralBridgeTest is missing.";
+
+                return;
+            }
+
+            try {
+                const report =
+                    window.PacificEducationCentralBridgeTest.run();
+
+                displayResults(report);
+
+            } catch (error) {
+                statusElement.textContent =
+                    "TEST ERROR: Test execution failed.";
+
+                summaryElement.textContent =
+                    error && error.message
+                        ? error.message
+                        : String(error);
+
+                resultsElement.textContent =
+                    error && error.stack
+                        ? error.stack
+                        : String(error);
+            }
+        }
+
+        button.addEventListener(
+            "click",
+            runTest
+        );
+
+        if (
+            window.PacificEducationCentralBridge &&
+            window.PacificEducationCentralBridgeTest
+        ) {
+            statusElement.textContent =
+                "Central Bridge and test module loaded. Ready.";
+
+            runTest();
+        } else {
+            statusElement.textContent =
+                "Loading failed. Check the script paths.";
+        }
+
+    })();
+</script>
+
+</body>
+</html>
