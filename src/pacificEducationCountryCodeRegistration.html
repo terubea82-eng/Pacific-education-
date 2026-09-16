@@ -1,1 +1,768 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pacific Education — Country Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+            color: #17202a;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: auto;
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .notice {
+            padding: 14px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background: #eef5ff;
+        }
+
+        label {
+            display: block;
+            margin-top: 16px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 11px;
+            margin-top: 6px;
+            border: 1px solid #b8c2cc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 18px;
+            padding: 12px 18px;
+            border: 0;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .primary {
+            background: #1f5eff;
+            color: #ffffff;
+        }
+
+        .secondary {
+            background: #e9edf2;
+            color: #17202a;
+        }
+
+        .result {
+            display: none;
+            margin-top: 25px;
+            padding: 16px;
+            border-radius: 8px;
+            background: #f0f8f0;
+        }
+
+        .error {
+            display: none;
+            margin-top: 20px;
+            padding: 14px;
+            border-radius: 8px;
+            background: #fff0f0;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-break: break-word;
+            background: #101820;
+            color: #ffffff;
+            padding: 14px;
+            border-radius: 7px;
+            overflow-x: auto;
+        }
+
+        .small {
+            font-size: 13px;
+            color: #566573;
+        }
+
+        .required {
+            color: #b00020;
+        }
+
+        .status {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Pacific Education</h1>
+
+    <h2>Country / Territory Registration</h2>
+
+    <div class="notice">
+        <strong>One registration page for all countries.</strong>
+        <br>
+        Fiji and every other eligible country or territory use
+        this same registration page.
+    </div>
+
+    <div class="notice">
+        Registration does not automatically create an official
+        ISO code, approve GDP data, activate pricing, or process
+        payment. Verification is required first.
+    </div>
+
+    <form id="countryRegistrationForm">
+
+        <label for="countryName">
+            Country / Territory Name
+            <span class="required">*</span>
+        </label>
+
+        <input
+            id="countryName"
+            type="text"
+            required
+            autocomplete="country-name"
+            placeholder="Example: Fiji"
+        >
+
+        <label for="alpha2">
+            ISO Alpha-2 Code
+        </label>
+
+        <input
+            id="alpha2"
+            type="text"
+            maxlength="2"
+            pattern="[A-Za-z]{2}"
+            placeholder="Example: FJ"
+        >
+
+        <label for="alpha3">
+            ISO Alpha-3 Code
+        </label>
+
+        <input
+            id="alpha3"
+            type="text"
+            maxlength="3"
+            pattern="[A-Za-z]{3}"
+            placeholder="Example: FJI"
+        >
+
+        <label for="numericCode">
+            ISO Numeric-3 Code
+        </label>
+
+        <input
+            id="numericCode"
+            type="text"
+            maxlength="3"
+            pattern="[0-9]{3}"
+            placeholder="Example: 242"
+        >
+
+        <label for="codeStatus">
+            Country Code Status
+            <span class="required">*</span>
+        </label>
+
+        <select id="codeStatus" required>
+
+            <option value="">
+                Select status
+            </option>
+
+            <option value="ISO_OFFICIAL">
+                Official ISO code
+            </option>
+
+            <option value="PENDING_VERIFICATION">
+                Requires verification
+            </option>
+
+            <option value="PACIFIC_EDUCATION_LOCAL">
+                Pacific Education local registration
+            </option>
+
+            <option value="NOT_ASSIGNED">
+                No code currently assigned
+            </option>
+
+        </select>
+
+        <label for="currencyCode">
+            National Currency Code
+        </label>
+
+        <input
+            id="currencyCode"
+            type="text"
+            maxlength="3"
+            placeholder="Example: FJD"
+        >
+
+        <label for="governmentAuthority">
+            Government / Official Authority
+            <span class="required">*</span>
+        </label>
+
+        <input
+            id="governmentAuthority"
+            type="text"
+            required
+            placeholder="Official ministry, department or authority"
+        >
+
+        <label for="officialWebsite">
+            Official Government Website
+        </label>
+
+        <input
+            id="officialWebsite"
+            type="url"
+            placeholder="https://example.gov"
+        >
+
+        <label for="contactName">
+            Registration Contact Name
+            <span class="required">*</span>
+        </label>
+
+        <input
+            id="contactName"
+            type="text"
+            required
+            autocomplete="name"
+        >
+
+        <label for="contactEmail">
+            Registration Contact Email
+            <span class="required">*</span>
+        </label>
+
+        <input
+            id="contactEmail"
+            type="email"
+            required
+            autocomplete="email"
+        >
+
+        <label for="reason">
+            Registration Request
+            <span class="required">*</span>
+        </label>
+
+        <select id="reason" required>
+
+            <option value="">
+                Select request
+            </option>
+
+            <option value="NEW_COUNTRY_REGISTRATION">
+                New country registration
+            </option>
+
+            <option value="UPDATE_COUNTRY_RECORD">
+                Update existing country record
+            </option>
+
+            <option value="CODE_CORRECTION">
+                Correct country code information
+            </option>
+
+            <option value="CURRENCY_UPDATE">
+                Update currency information
+            </option>
+
+            <option value="GDP_PRICING_REVIEW">
+                GDP pricing review
+            </option>
+
+        </select>
+
+        <label for="supportingInformation">
+            Supporting Information
+        </label>
+
+        <textarea
+            id="supportingInformation"
+            placeholder="Enter additional information for verification."
+        ></textarea>
+
+        <label>
+            <input
+                id="understanding"
+                type="checkbox"
+                required
+                style="width:auto;"
+            >
+
+            I understand that registration does not itself create
+            an official ISO code or activate pricing.
+        </label>
+
+        <button
+            type="submit"
+            class="primary"
+        >
+            Prepare Registration Request
+        </button>
+
+    </form>
+
+    <div
+        id="error"
+        class="error"
+    ></div>
+
+    <div
+        id="result"
+        class="result"
+    >
+
+        <h2>Registration Request Prepared</h2>
+
+        <p>
+            Request ID:
+            <strong id="requestId"></strong>
+        </p>
+
+        <p>
+            Registration status:
+            <span
+                id="registrationStatus"
+                class="status"
+            >
+                PENDING_REVIEW
+            </span>
+        </p>
+
+        <p>
+            Pricing status:
+            <strong id="pricingStatus">
+                WAITING_FOR_VERIFICATION
+            </strong>
+        </p>
+
+        <h3>Registration Record</h3>
+
+        <pre id="registrationOutput"></pre>
+
+        <button
+            type="button"
+            class="secondary"
+            id="copyButton"
+        >
+            Copy Registration Record
+        </button>
+
+        <button
+            type="button"
+            class="secondary"
+            id="downloadButton"
+        >
+            Download Registration Record
+        </button>
+
+    </div>
+
+    <hr>
+
+    <p class="small">
+        Official ISO 3166 information:
+        <a
+            href="https://www.iso.org/iso-3166-country-codes.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ISO 3166 Country Codes
+        </a>
+    </p>
+
+    <p class="small">
+        GDP reference:
+        <a
+            href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            World Bank — GDP per capita
+        </a>
+    </p>
+
+</div>
+
+<!-- Country Registration Bridge -->
+<script src="js/pacificEducationCountryRegistrationBridge.js"></script>
+
+<script>
+(function () {
+
+    "use strict";
+
+    const form =
+        document.getElementById(
+            "countryRegistrationForm"
+        );
+
+    const resultBox =
+        document.getElementById(
+            "result"
+        );
+
+    const errorBox =
+        document.getElementById(
+            "error"
+        );
+
+    const output =
+        document.getElementById(
+            "registrationOutput"
+        );
+
+    const requestIdOutput =
+        document.getElementById(
+            "requestId"
+        );
+
+    const statusOutput =
+        document.getElementById(
+            "registrationStatus"
+        );
+
+    const pricingStatusOutput =
+        document.getElementById(
+            "pricingStatus"
+        );
+
+    function clean(value) {
+        return String(value || "").trim();
+    }
+
+    function createRequestId() {
+
+        const date =
+            new Date()
+                .toISOString()
+                .slice(0, 10)
+                .replace(/-/g, "");
+
+        const random =
+            Math.random()
+                .toString(36)
+                .substring(2, 7)
+                .toUpperCase();
+
+        return (
+            "PE-CC-" +
+            date +
+            "-" +
+            random
+        );
+    }
+
+    form.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+            errorBox.style.display =
+                "none";
+
+            const bridge =
+                window.PacificEducationCountryRegistrationBridge;
+
+            if (!bridge) {
+
+                errorBox.textContent =
+                    "Country Registration Bridge is unavailable.";
+
+                errorBox.style.display =
+                    "block";
+
+                return;
+            }
+
+            const requestId =
+                createRequestId();
+
+            const registrationData = {
+
+                country: {
+
+                    name:
+                        clean(
+                            document.getElementById(
+                                "countryName"
+                            ).value
+                        ),
+
+                    alpha2:
+                        clean(
+                            document.getElementById(
+                                "alpha2"
+                            ).value
+                        ).toUpperCase(),
+
+                    alpha3:
+                        clean(
+                            document.getElementById(
+                                "alpha3"
+                            ).value
+                        ).toUpperCase(),
+
+                    numeric3:
+                        clean(
+                            document.getElementById(
+                                "numericCode"
+                            ).value
+                        ),
+
+                    codeStatus:
+                        clean(
+                            document.getElementById(
+                                "codeStatus"
+                            ).value
+                        ),
+
+                    currencyCode:
+                        clean(
+                            document.getElementById(
+                                "currencyCode"
+                            ).value
+                        ).toUpperCase()
+                },
+
+                authority: {
+
+                    name:
+                        clean(
+                            document.getElementById(
+                                "governmentAuthority"
+                            ).value
+                        ),
+
+                    officialWebsite:
+                        clean(
+                            document.getElementById(
+                                "officialWebsite"
+                            ).value
+                        )
+                },
+
+                contact: {
+
+                    name:
+                        clean(
+                            document.getElementById(
+                                "contactName"
+                            ).value
+                        ),
+
+                    email:
+                        clean(
+                            document.getElementById(
+                                "contactEmail"
+                            ).value
+                        )
+                },
+
+                request: {
+
+                    type:
+                        clean(
+                            document.getElementById(
+                                "reason"
+                            ).value
+                        ),
+
+                    supportingInformation:
+                        clean(
+                            document.getElementById(
+                                "supportingInformation"
+                            ).value
+                        )
+                }
+
+            };
+
+            const record =
+                bridge.createRegistrationRecord(
+                    registrationData
+                );
+
+            record.requestId =
+                requestId;
+
+            record.createdAt =
+                new Date().toISOString();
+
+            const prepared =
+                bridge.prepareForVerification(
+                    record
+                );
+
+            if (!prepared.valid) {
+
+                errorBox.textContent =
+                    prepared.errors.join(
+                        ", "
+                    );
+
+                errorBox.style.display =
+                    "block";
+
+                return;
+            }
+
+            const json =
+                JSON.stringify(
+                    prepared.record,
+                    null,
+                    2
+                );
+
+            requestIdOutput.textContent =
+                requestId;
+
+            statusOutput.textContent =
+                prepared.status;
+
+            pricingStatusOutput.textContent =
+                prepared.pricingStatus;
+
+            output.textContent =
+                json;
+
+            resultBox.style.display =
+                "block";
+
+            resultBox.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+    document
+        .getElementById("copyButton")
+        .addEventListener(
+            "click",
+            async function () {
+
+                try {
+
+                    await navigator.clipboard.writeText(
+                        output.textContent
+                    );
+
+                    this.textContent =
+                        "Copied";
+
+                    setTimeout(
+                        function () {
+                            this.textContent =
+                                "Copy Registration Record";
+                        },
+                        1500
+                    );
+
+                } catch (error) {
+
+                    alert(
+                        "Copy is unavailable. Please copy the record manually."
+                    );
+                }
+
+            }
+        );
+
+    document
+        .getElementById("downloadButton")
+        .addEventListener(
+            "click",
+            function () {
+
+                const blob =
+                    new Blob(
+                        [
+                            output.textContent
+                        ],
+                        {
+                            type:
+                                "application/json"
+                        }
+                    );
+
+                const url =
+                    URL.createObjectURL(
+                        blob
+                    );
+
+                const link =
+                    document.createElement(
+                        "a"
+                    );
+
+                link.href =
+                    url;
+
+                link.download =
+                    "pacific-education-country-registration.json";
+
+                document.body.appendChild(
+                    link
+                );
+
+                link.click();
+
+                link.remove();
+
+                URL.revokeObjectURL(
+                    url
+                );
+
+            }
+        );
+
+})();
+</script>
+
+</body>
+</html>
