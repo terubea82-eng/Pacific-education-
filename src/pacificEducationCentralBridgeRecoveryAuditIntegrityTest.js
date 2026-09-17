@@ -683,3 +683,146 @@
          * DO NOT REPAIR THIS TEST YET.
          *
          * The purpose is to confirm that the test
+         * detect this audit-linkage gap.
+         */
+        var brokenFailureIdAuditRecords =
+            Array.isArray(auditAfter) && failureId
+                ? auditAfter.filter(function (entry) {
+                    return (
+                        entry &&
+                        entry.failureId ===
+                            failureId
+                    );
+                })
+                : [];
+
+        tests.push(
+            check(
+                brokenFailureIdAuditRecords.length > 0,
+                "INTENTIONAL BROKEN TEST — failure ID audit linkage",
+                "This test is intentionally expected to fail until Central Bridge audit records expose or otherwise verifiably link the recovery failure ID."
+            )
+        );
+
+        /*
+         * SYSTEM STATUS
+         */
+        var systemStatus =
+            safeCall(function () {
+                return bridge.getSystemStatus();
+            });
+
+        check(
+            systemStatus.success &&
+            systemStatus.value &&
+            typeof systemStatus.value ===
+                "object",
+            "System status available",
+            systemStatus.success
+                ? "System status returned."
+                : systemStatus.error
+        );
+
+        /*
+         * Ensure the test does not expose production
+         * authorization capability.
+         */
+        var systemStatusText =
+            systemStatus.success
+                ? JSON.stringify(systemStatus.value)
+                : "";
+
+        check(
+            systemStatusText.indexOf(
+                "productionAuthorization"
+            ) === -1,
+            "No production authorization exposed",
+            "Central Bridge must not expose production authorization."
+        );
+
+        /*
+         * Summary
+         */
+        var passedTests =
+            tests.filter(function (test) {
+                return test.passed;
+            });
+
+        var failedTests =
+            tests.filter(function (test) {
+                return !test.passed;
+            });
+
+        return {
+            success:
+                failedTests.length === 0,
+
+            version:
+                TEST_VERSION,
+
+            component:
+                COMPONENT,
+
+            failureId:
+                failureId,
+
+            totalTests:
+                tests.length,
+
+            passedTests:
+                passedTests.length,
+
+            failedTests:
+                failedTests.length,
+
+            tests:
+                tests,
+
+            auditBeforeCount:
+                auditBefore.length,
+
+            auditAfterCount:
+                auditAfter.length,
+
+            communicationAuditRecordCount:
+                communicationAuditRecords.length,
+
+            intentionalBrokenTestPresent:
+                true,
+
+            intentionalBrokenTestPassed:
+                brokenFailureIdAuditRecords.length >
+                0,
+
+            systemStatus:
+                systemStatus.success
+                    ? systemStatus.value
+                    : null
+        };
+    }
+
+    /*
+     * Public test interface
+     */
+    window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest =
+        {
+            VERSION: TEST_VERSION,
+
+            STATUS:
+                "TEST ONLY — NOT PRODUCTION",
+
+            COMPONENT:
+                COMPONENT,
+
+            run:
+                run
+        };
+
+    /*
+     * Do not automatically execute the test on page load.
+     *
+     * This is deliberate:
+     * test execution must remain controlled and explicit.
+     */
+
+})();
