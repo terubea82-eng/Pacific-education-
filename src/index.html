@@ -3,35 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pacific Education</title>
+
+    <meta
+        name="description"
+        content="Pacific Education — learning, assessment, dashboards, pricing and education relationship services."
+    >
 </head>
 
 <body>
+
     <div id="app">
         <p>Opening Pacific Education...</p>
     </div>
 
-    <!-- Pacific Education Master Control -->
+    <!-- =========================================================
+         PACIFIC EDUCATION CENTRAL CORE
+         Actual Core is stored in the root /js folder.
+         ========================================================= -->
+    <script src="../js/pacificEducationCore.js"></script>
+
+    <!-- =========================================================
+         CORE BRIDGE
+         Must load after the Central Core.
+         ========================================================= -->
+    <script src="js/pacificEducationCoreBridge.js"></script>
+
+    <!-- =========================================================
+         MASTER CONTROL
+         ========================================================= -->
     <script src="js/pacificEducationMasterControl.js"></script>
 
-    <!-- Core pricing -->
+    <!-- =========================================================
+         PRICING
+         ========================================================= -->
     <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
-
-    <!-- Pricing -->
     <script src="js/pacificEducationPricingAuditGuard.js"></script>
     <script src="js/buyPlans.js"></script>
 
-    <!-- Education relationships and authorization -->
+    <!-- =========================================================
+         EDUCATION RELATIONSHIPS AND AUTHORIZATION
+         ========================================================= -->
     <script src="js/pacificEducationEducationLinkBridge.js"></script>
     <script src="js/pacificEducationSecureLinkAuthorization.js"></script>
 
-    <!-- Assessment and learning -->
+    <!-- =========================================================
+         ASSESSMENT AND LEARNING
+         ========================================================= -->
     <script src="js/pacificEducationAssessmentBridge.js"></script>
     <script src="js/dailyLessons.js"></script>
     <script src="js/assessments.js"></script>
 
-    <!-- Dashboards and application -->
+    <!-- =========================================================
+         DASHBOARDS AND APPLICATION
+         ========================================================= -->
     <script src="js/dashboards.js"></script>
     <script src="js/app.js"></script>
+
 </body>
 </html>
