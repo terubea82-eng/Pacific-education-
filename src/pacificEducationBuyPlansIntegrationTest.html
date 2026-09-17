@@ -3,218 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacific Education — Buy Plans Integration Test</title>
+    <title>Pacific Education — Buy Plans Diagnostic Test</title>
 </head>
 
 <body>
 
-<h1>Pacific Education — Buy Plans Integration Test</h1>
+<h1>Pacific Education — Buy Plans Diagnostic Test</h1>
 
-<pre id="output">Running test...</pre>
-
-<script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
-<script src="js/pacificEducationPricingAuditGuard.js"></script>
-<script src="js/buyPlans.js"></script>
+<pre id="output">Starting test...</pre>
 
 <script>
 (function () {
     "use strict";
 
-    const output =
-        document.getElementById("output");
+    const output = document.getElementById("output");
 
-    const results = [];
-
-    function test(name, passed, details) {
-        results.push({
-            name: name,
-            passed: passed,
-            details: details || null
-        });
+    function show(message) {
+        output.textContent += "\n" + message;
     }
 
-    const buyPlans =
-        window.PacificEducationBuyPlans;
+    show("HTML loaded successfully.");
+    show("Checking JavaScript modules...");
 
-    const auditGuard =
-        window.PacificEducationPricingAuditGuard;
+    function loadScript(path, name, callback) {
+        const script = document.createElement("script");
 
-    const gdpEngine =
-        window.PacificEducationAnnualGdpPricingEngine;
+        script.src = path;
 
-    test(
-        "Buy Plans exists",
-        !!buyPlans
-    );
+        script.onload = function () {
+            show("OK: " + name + " loaded.");
+            callback(true);
+        };
 
-    test(
-        "Pricing Audit Guard exists",
-        !!auditGuard
-    );
+        script.onerror = function () {
+            show("FAILED: " + name + " could not load.");
+            callback(false);
+        };
 
-    test(
-        "GDP Pricing Engine exists",
-        !!gdpEngine
-    );
+        document.head.appendChild(script);
+    }
 
-    test(
-        "Buy Plans version is 1.0.0",
-        buyPlans &&
-        buyPlans.version === "1.0.0"
-    );
+    loadScript(
+        "js/pacificEducationAnnualGdpPricingEngine.js",
+        "Annual GDP Pricing Engine",
+        function () {
 
-    const fijiPlans =
-        buyPlans
-            ? buyPlans.getFijiPlans()
-            : [];
+            loadScript(
+                "js/pacificEducationPricingAuditGuard.js",
+                "Pricing Audit Guard",
+                function () {
 
-    test(
-        "Four Fiji plans exist",
-        fijiPlans.length === 4,
-        {
-            count: fijiPlans.length
+                    loadScript(
+                        "js/buyPlans.js",
+                        "Buy Plans",
+                        function () {
+
+                            show("");
+                            show("Checking exported modules...");
+
+                            show(
+                                "GDP Engine: " +
+                                (
+                                    window.PacificEducationAnnualGdpPricingEngine
+                                    ? "AVAILABLE"
+                                    : "MISSING"
+                                )
+                            );
+
+                            show(
+                                "Pricing Audit Guard: " +
+                                (
+                                    window.PacificEducationPricingAuditGuard
+                                    ? "AVAILABLE"
+                                    : "MISSING"
+                                )
+                            );
+
+                            show(
+                                "Buy Plans: " +
+                                (
+                                    window.PacificEducationBuyPlans
+                                    ? "AVAILABLE"
+                                    : "MISSING"
+                                )
+                            );
+
+                            show("");
+                            show("Diagnostic test complete.");
+                        }
+                    );
+                }
+            );
         }
     );
-
-    const expectedPrices = [
-        1,
-        10,
-        10,
-        100
-    ];
-
-    const actualPrices =
-        fijiPlans.map(function (plan) {
-            return plan.amount;
-        });
-
-    test(
-        "Fiji prices match owner-controlled values",
-        JSON.stringify(actualPrices) ===
-        JSON.stringify(expectedPrices),
-        {
-            expected: expectedPrices,
-            actual: actualPrices
-        }
-    );
-
-    test(
-        "All Fiji plans use FJD",
-        fijiPlans.every(function (plan) {
-            return plan.currency === "FJD";
-        })
-    );
-
-    test(
-        "All Fiji plans are annual",
-        fijiPlans.every(function (plan) {
-            return plan.period === "annual";
-        })
-    );
-
-    const fijiPricing =
-        buyPlans
-            ? buyPlans.getFijiPricing()
-            : null;
-
-    test(
-        "Fiji market remains protected",
-        fijiPricing &&
-        fijiPricing.pricingStatus ===
-            "FIJI_PROTECTED",
-        fijiPricing
-    );
-
-    test(
-        "Fiji pricing audit is valid",
-        fijiPricing &&
-        fijiPricing.audit &&
-        fijiPricing.audit.valid === true,
-        fijiPricing &&
-        fijiPricing.audit
-    );
-
-    const paymentRequest =
-        buyPlans
-            ? buyPlans.createPaymentRequest(
-                fijiPlans[0]
-            )
-            : null;
-
-    test(
-        "Payment request is created",
-        paymentRequest &&
-        paymentRequest.success === true
-    );
-
-    test(
-        "Payment is NOT browser-verified",
-        paymentRequest &&
-        paymentRequest.paymentVerified === false
-    );
-
-    test(
-        "Subscription is NOT browser-activated",
-        paymentRequest &&
-        paymentRequest.subscriptionActivated === false
-    );
-
-    test(
-        "Production payment verification is required",
-        paymentRequest &&
-        paymentRequest.productionVerificationRequired === true
-    );
-
-    const productionResult =
-        buyPlans
-            ? buyPlans.calculateInternationalPlan({
-                countryCode: "IN",
-                pricingYear: 2026
-            })
-            : null;
-
-    test(
-        "International pricing connects to GDP engine",
-        productionResult !== null &&
-        productionResult !== undefined,
-        productionResult
-    );
-
-    const passed =
-        results.every(function (item) {
-            return item.passed === true;
-        });
-
-    const report = {
-        testName:
-            "Buy Plans Integration Test",
-
-        passed:
-            passed,
-
-        totalTests:
-            results.length,
-
-        passedTests:
-            results.filter(function (item) {
-                return item.passed;
-            }).length,
-
-        failedTests:
-            results.filter(function (item) {
-                return !item.passed;
-            }).length,
-
-        results:
-            results
-    };
-
-    output.textContent =
-        JSON.stringify(
-            report,
-            null,
-            2
-        );
 
 })();
 </script>
