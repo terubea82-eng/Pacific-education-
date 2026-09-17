@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Education — Buy Plans Integration Test</title>
+</head>
 
+<body>
+
+<h1>Pacific Education — Buy Plans Integration Test</h1>
+
+<pre id="output">Running test...</pre>
+
+<script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
+<script src="js/pacificEducationPricingAuditGuard.js"></script>
+<script src="js/buyPlans.js"></script>
+
+<script>
+(function () {
+    "use strict";
+
+    const output =
+        document.getElementById("output");
+
+    const results = [];
+
+    function test(name, passed, details) {
+        results.push({
+            name: name,
+            passed: passed,
+            details: details || null
+        });
+    }
+
+    const buyPlans =
+        window.PacificEducationBuyPlans;
+
+    const auditGuard =
+        window.PacificEducationPricingAuditGuard;
+
+    const gdpEngine =
+        window.PacificEducationAnnualGdpPricingEngine;
+
+    test(
+        "Buy Plans exists",
+        !!buyPlans
+    );
+
+    test(
+        "Pricing Audit Guard exists",
+        !!auditGuard
+    );
+
+    test(
+        "GDP Pricing Engine exists",
+        !!gdpEngine
+    );
+
+    test(
+        "Buy Plans version is 1.0.0",
+        buyPlans &&
+        buyPlans.version === "1.0.0"
+    );
+
+    const fijiPlans =
+        buyPlans
+            ? buyPlans.getFijiPlans()
+            : [];
+
+    test(
+        "Four Fiji plans exist",
+        fijiPlans.length === 4,
+        {
+            count: fijiPlans.length
+        }
+    );
+
+    const expectedPrices = [
+        1,
+        10,
+        10,
+        100
+    ];
+
+    const actualPrices =
+        fijiPlans.map(function (plan) {
+            return plan.amount;
+        });
+
+    test(
+        "Fiji prices match owner-controlled values",
+        JSON.stringify(actualPrices) ===
+        JSON.stringify(expectedPrices),
+        {
+            expected: expectedPrices,
+            actual: actualPrices
+        }
+    );
+
+    test(
+        "All Fiji plans use FJD",
+        fijiPlans.every(function (plan) {
+            return plan.currency === "FJD";
+        })
+    );
+
+    test(
+        "All Fiji plans are annual",
+        fijiPlans.every(function (plan) {
+            return plan.period === "annual";
+        })
+    );
+
+    const fijiPricing =
+        buyPlans
+            ? buyPlans.getFijiPricing()
+            : null;
+
+    test(
+        "Fiji market remains protected",
+        fijiPricing &&
+        fijiPricing.pricingStatus ===
+            "FIJI_PROTECTED",
+        fijiPricing
+    );
+
+    test(
+        "Fiji pricing audit is valid",
+        fijiPricing &&
+        fijiPricing.audit &&
+        fijiPricing.audit.valid === true,
+        fijiPricing &&
+        fijiPricing.audit
+    );
+
+    const paymentRequest =
+        buyPlans
+            ? buyPlans.createPaymentRequest(
+                fijiPlans[0]
+            )
+            : null;
+
+    test(
+        "Payment request is created",
+        paymentRequest &&
+        paymentRequest.success === true
+    );
+
+    test(
+        "Payment is NOT browser-verified",
+        paymentRequest &&
+        paymentRequest.paymentVerified === false
+    );
+
+    test(
+        "Subscription is NOT browser-activated",
+        paymentRequest &&
+        paymentRequest.subscriptionActivated === false
+    );
+
+    test(
+        "Production payment verification is required",
+        paymentRequest &&
+        paymentRequest.productionVerificationRequired === true
+    );
+
+    const productionResult =
+        buyPlans
+            ? buyPlans.calculateInternationalPlan({
+                countryCode: "IN",
+                pricingYear: 2026
+            })
+            : null;
+
+    test(
+        "International pricing connects to GDP engine",
+        productionResult !== null &&
+        productionResult !== undefined,
+        productionResult
+    );
+
+    const passed =
+        results.every(function (item) {
+            return item.passed === true;
+        });
+
+    const report = {
+        testName:
+            "Buy Plans Integration Test",
+
+        passed:
+            passed,
+
+        totalTests:
+            results.length,
+
+        passedTests:
+            results.filter(function (item) {
+                return item.passed;
+            }).length,
+
+        failedTests:
+            results.filter(function (item) {
+                return !item.passed;
+            }).length,
+
+        results:
+            results
+    };
+
+    output.textContent =
+        JSON.stringify(
+            report,
+            null,
+            2
+        );
+
+})();
+</script>
+
+</body>
+</html>
