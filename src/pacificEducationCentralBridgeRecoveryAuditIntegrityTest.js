@@ -4,6 +4,12 @@
  *
  * Version: 1.0.0
  * Status: TEST ONLY — NOT PRODUCTION
+ *
+ * INTENTIONAL BROKEN TEST:
+ * The failure-ID audit check intentionally looks
+ * for the failure ID in a non-existent top-level
+ * field instead of searching the serialized audit
+ * record. This is deliberate for test validation.
  */
 
 (function () {
@@ -17,7 +23,6 @@
     const EXPECTED_HEALTHY = "HEALTHY";
     const EXPECTED_BROKEN = "BROKEN";
     const EXPECTED_FALLBACK = "FALLBACK";
-    const EXPECTED_RECOVERING = "RECOVERING";
     const EXPECTED_RECONNECTED = "RECONNECTED";
 
     function check(condition, name, details) {
@@ -52,9 +57,6 @@
             };
         }
 
-        /*
-         * Basic interface verification.
-         */
         tests.push(
             check(
                 bridge.version === "1.0.0",
@@ -163,9 +165,6 @@
             )
         );
 
-        /*
-         * Reset prototype state so this test starts clean.
-         */
         if (
             typeof bridge.resetPrototypeState ===
             "function"
@@ -173,10 +172,6 @@
             bridge.resetPrototypeState();
         }
 
-        /*
-         * Establish a clean healthy state for the
-         * component under test.
-         */
         if (typeof bridge.checkComponent === "function") {
             bridge.checkComponent(
                 TARGET,
@@ -210,9 +205,6 @@
             )
         );
 
-        /*
-         * Capture audit before recovery.
-         */
         const auditBefore =
             bridge.getAudit();
 
@@ -229,9 +221,6 @@
             )
         );
 
-        /*
-         * Register a complete recovery lifecycle.
-         */
         const recovery =
             bridge.registerRecovery(
                 TARGET,
@@ -275,9 +264,6 @@
                 ? recovery.failureId
                 : null;
 
-        /*
-         * DETECT
-         */
         const detected =
             bridge.detect(
                 TARGET,
@@ -293,9 +279,6 @@
             )
         );
 
-        /*
-         * IDENTIFY
-         */
         const identified =
             bridge.identify(
                 TARGET,
@@ -317,9 +300,6 @@
             )
         );
 
-        /*
-         * ISOLATE
-         */
         const isolated =
             bridge.isolate(
                 TARGET,
@@ -335,9 +315,6 @@
             )
         );
 
-        /*
-         * PRESERVE DATA
-         */
         const preserved =
             bridge.preserveData(
                 TARGET,
@@ -356,9 +333,6 @@
             )
         );
 
-        /*
-         * FALLBACK
-         */
         const fallback =
             bridge.activateFallback(
                 TARGET,
@@ -404,9 +378,6 @@
             )
         );
 
-        /*
-         * REPAIR
-         */
         const repair =
             bridge.beginRepair(
                 TARGET,
@@ -425,9 +396,6 @@
             )
         );
 
-        /*
-         * FAILED TEST
-         */
         const failedTest =
             bridge.recordTest(
                 TARGET,
@@ -468,9 +436,6 @@
             )
         );
 
-        /*
-         * SUCCESSFUL TEST
-         */
         const successfulTest =
             bridge.recordTest(
                 TARGET,
@@ -490,9 +455,6 @@
             )
         );
 
-        /*
-         * RECONNECT
-         */
         const reconnected =
             bridge.reconnect(
                 TARGET,
@@ -532,9 +494,6 @@
             )
         );
 
-        /*
-         * UNVERIFIED VERIFICATION
-         */
         const unverified =
             bridge.verify(
                 TARGET,
@@ -559,9 +518,6 @@
             )
         );
 
-        /*
-         * VERIFIED RECOVERY
-         */
         const verified =
             bridge.verify(
                 TARGET,
@@ -586,9 +542,6 @@
             )
         );
 
-        /*
-         * AUDIT SNAPSHOT
-         */
         const auditAfter =
             bridge.getAudit();
 
@@ -617,10 +570,6 @@
             )
         );
 
-        /*
-         * Check that audit entries contain
-         * identifiable records.
-         */
         const identifiableAuditRecords =
             Array.isArray(auditAfter)
                 ? auditAfter.filter(function (entry) {
@@ -646,9 +595,6 @@
             )
         );
 
-        /*
-         * Check target component references.
-         */
         const communicationAuditRecords =
             Array.isArray(auditAfter)
                 ? auditAfter.filter(function (entry) {
@@ -675,32 +621,34 @@
         );
 
         /*
-         * Check failure ID traceability where
-         * the bridge exposes it in audit entries.
+         * INTENTIONAL BROKEN CHECK
+         *
+         * The Central Bridge does not expose the
+         * failure ID as a top-level audit field.
+         *
+         * This deliberately checks a field that does
+         * not exist so the audit-integrity test should
+         * detect this broken assumption.
          */
-        const failureIdAuditRecords =
+        const brokenFailureIdAuditRecords =
             Array.isArray(auditAfter) && failureId
                 ? auditAfter.filter(function (entry) {
-                    const text =
-                        JSON.stringify(entry);
-
-                    return text.indexOf(failureId) !== -1;
+                    return (
+                        entry &&
+                        entry.failureId === failureId
+                    );
                 })
                 : [];
 
         tests.push(
             check(
-                failureIdAuditRecords.length > 0,
-                "Recovery failure ID is traceable in audit",
-                "Matching audit records: " +
-                    failureIdAuditRecords.length
+                brokenFailureIdAuditRecords.length > 0,
+                "BROKEN CHECK — failure ID exposed as top-level audit field",
+                "Matching records: " +
+                    brokenFailureIdAuditRecords.length
             )
         );
 
-        /*
-         * Component must be healthy after
-         * verified recovery.
-         */
         const finalComponentStatus =
             bridge.getComponentStatus(TARGET);
 
@@ -722,9 +670,6 @@
             )
         );
 
-        /*
-         * System status must remain consistent.
-         */
         const systemStatus =
             bridge.getSystemStatus();
 
@@ -739,9 +684,6 @@
             )
         );
 
-        /*
-         * No production authorization.
-         */
         tests.push(
             check(
                 typeof bridge.authorizeProduction !==
@@ -751,9 +693,6 @@
             )
         );
 
-        /*
-         * Calculate result.
-         */
         const passed =
             tests.filter(function (test) {
                 return test.passed;
@@ -799,9 +738,6 @@
         };
     }
 
-    /*
-     * Single clean export.
-     */
     window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest =
         Object.freeze({
             version: VERSION,
