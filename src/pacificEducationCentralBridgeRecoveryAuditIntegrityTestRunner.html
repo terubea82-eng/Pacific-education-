@@ -477,9 +477,8 @@ safeCall(function () {
                     failedStatus.success === true &&
                     failedStatus.status &&
                     (
-                        failedStatus.status.health === "BROKEN" ||
-                        failedStatus.status.health === "RECOVERING"
-                    ),
+"Failed repair leaves component in non-healthy recovery state"
+
                 "Failed repair leaves component in non-healthy recovery state",
                 failedStatus &&
                     failedStatus.status
