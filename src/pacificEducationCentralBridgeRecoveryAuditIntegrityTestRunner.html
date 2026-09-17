@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>
+        Pacific Education Central Bridge Recovery Audit &amp; Integrity Test
+    </title>
+</head>
+
+<body>
+
+    <h1>
+        Pacific Education Central Bridge Recovery Audit &amp; Integrity Test
+    </h1>
+
+    <p id="status">
+        Running test...
+    </p>
+
+    <pre id="results"></pre>
+
+    <script src="js/pacificEducationCentralBridge.js"></script>
+
+    <script src="pacificEducationCentralBridgeRecoveryAuditIntegrityTest.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const output =
+                document.getElementById("results");
+
+            const status =
+                document.getElementById("status");
+
+            if (
+                !window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest
+            ) {
+                status.textContent =
+                    "TEST ERROR — Recovery Audit & Integrity Test not found.";
+
+                output.textContent =
+                    "pacificEducationCentralBridgeRecoveryAuditIntegrityTest.js was not loaded.";
+
+                return;
+            }
+
+            const result =
+                window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest.run();
+
+            status.textContent =
+                result.overall === "PASS"
+                    ? "OVERALL RESULT: PASS"
+                    : "OVERALL RESULT: FAIL";
+
+            output.textContent =
+                JSON.stringify(result, null, 2);
+
+        })();
+    </script>
+
+</body>
+</html>
