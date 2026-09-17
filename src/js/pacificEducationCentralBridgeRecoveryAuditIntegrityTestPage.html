@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
+    <title>
+        Pacific Education — Central Bridge Recovery Audit Integrity Test
+    </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .warning {
+            padding: 12px;
+            border: 1px solid #999;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 18px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            border: 1px solid #999;
+            padding: 12px;
+            margin-top: 20px;
+        }
+
+        .status {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        Pacific Education
+    </h1>
+
+    <h2>
+        Central Bridge Recovery Audit Integrity Test
+    </h2>
+
+    <div class="warning">
+        <strong>TEST ONLY — NOT PRODUCTION</strong><br>
+        This page is for controlled prototype testing.
+        It must not be treated as a production security,
+        authorization, payment, audit, or safeguarding boundary.
+    </div>
+
+    <button
+        type="button"
+        id="runTestButton"
+    >
+        Run Recovery Audit Integrity Test
+    </button>
+
+    <div
+        id="status"
+        class="status"
+    >
+        Test has not been executed.
+    </div>
+
+    <pre id="results">No test result yet.</pre>
+
+    <!--
+        Central Bridge
+    -->
+    <script
+        src="js/pacificEducationCentralBridge.js"
+    ></script>
+
+    <!--
+        Recovery Audit Integrity Test
+    -->
+    <script
+        src="pacificEducationCentralBridgeRecoveryAuditIntegrityTest.js"
+    ></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            var button =
+                document.getElementById(
+                    "runTestButton"
+                );
+
+            var status =
+                document.getElementById(
+                    "status"
+                );
+
+            var results =
+                document.getElementById(
+                    "results"
+                );
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    status.textContent =
+                        "Running test...";
+
+                    results.textContent =
+                        "Please wait...";
+
+                    try {
+
+                        if (
+                            !window
+                                .PacificEducationCentralBridge
+                        ) {
+                            throw new Error(
+                                "Central Bridge was not loaded."
+                            );
+                        }
+
+                        if (
+                            !window
+                                .PacificEducationCentralBridgeRecoveryAuditIntegrityTest
+                        ) {
+                            throw new Error(
+                                "Recovery Audit Integrity Test was not loaded."
+                            );
+                        }
+
+                        var result =
+                            window
+                                .PacificEducationCentralBridgeRecoveryAuditIntegrityTest
+                                .run();
+
+                        status.textContent =
+                            result.success
+                                ? "Test completed."
+                                : "Test completed with failure(s).";
+
+                        results.textContent =
+                            JSON.stringify(
+                                result,
+                                null,
+                                4
+                            );
+
+                    } catch (error) {
+
+                        status.textContent =
+                            "TEST EXECUTION ERROR";
+
+                        results.textContent =
+                            error &&
+                            error.stack
+                                ? error.stack
+                                : String(error);
+                    }
+                }
+            );
+        })();
+    </script>
+
+</body>
+</html>
