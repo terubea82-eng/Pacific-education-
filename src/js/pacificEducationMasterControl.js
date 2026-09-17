@@ -7,7 +7,7 @@
  * File:
  * src/js/pacificEducationMasterControl.js
  *
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  * PURPOSE
  * -------
@@ -32,7 +32,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.0";
+    var MASTER_CONTROL_VERSION = "1.0.1";
 
     var PROJECT = Object.freeze({
         name: "Pacific Education",
@@ -138,6 +138,28 @@
             status: STATUS.IN_PROGRESS,
             purpose:
                 "Connects assessment information with the wider platform."
+        },
+
+        /*
+         * ---------------------------------------------------
+         * CENTRAL BRIDGE
+         * ---------------------------------------------------
+         */
+
+        centralBridge: {
+            file:
+                "js/pacificEducationCentralBridge.js",
+            status: STATUS.IN_PROGRESS,
+            purpose:
+                "Central coordination bridge for system health, recovery, communication and controlled reconnection."
+        },
+
+        centralBridgeRecoveryAuditIntegrityTest: {
+            file:
+                "../pacificEducationCentralBridgeRecoveryAuditIntegrityTest.js",
+            status: STATUS.TESTING,
+            purpose:
+                "Test-only verification of Central Bridge recovery history, audit integrity, failure linkage and recovery traceability. Not a production security boundary."
         },
 
         application: {
@@ -314,6 +336,26 @@
                 "Assessment content must reflect covered learning."
         },
 
+        /*
+         * ---------------------------------------------------
+         * CENTRAL BRIDGE TESTING CONNECTION
+         * ---------------------------------------------------
+         */
+
+        {
+            from: "Central Bridge",
+            to: "Central Bridge Recovery Audit Integrity Test",
+            purpose:
+                "The Central Bridge recovery, audit and integrity behaviour must be tested against the registered Central Bridge implementation."
+        },
+
+        {
+            from: "Central Bridge Recovery Audit Integrity Test",
+            to: "Full System Testing",
+            purpose:
+                "Central Bridge recovery, audit integrity and failure-linkage tests must be completed and reviewed before full-system testing."
+        },
+
         {
             from: "Application",
             to: "All Approved Modules",
@@ -335,6 +377,16 @@
         "pacificEducationEducationLinkBridge.js",
         "pacificEducationSecureLinkAuthorization.js",
         "pacificEducationAssessmentBridge.js",
+
+        /*
+         * Central Bridge
+         *
+         * This registry entry does not by itself load the file.
+         * Actual application loading must remain controlled by
+         * the application's approved script configuration.
+         */
+        "pacificEducationCentralBridge.js",
+
         "dailyLessons.js",
         "assessments.js",
         "dashboards.js",
@@ -350,18 +402,33 @@
 
     var PUBLICATION_GATES = Object.freeze([
         "All required modules exist.",
+
         "All required module connections are tested.",
+
+        "Central Bridge recovery, audit integrity and failure-linkage tests are completed and reviewed.",
+
         "No production secrets exist in browser code.",
+
         "Production authorization is server-side.",
+
         "Payment verification is server-side.",
+
         "Curriculum authority rules are implemented.",
+
         "Safeguarding controls are implemented.",
+
         "Accessibility requirements are tested.",
+
         "Assessment fairness is tested.",
+
         "Pricing data sources are verified.",
+
         "Audit controls are tested.",
+
         "Security and loophole testing is completed.",
+
         "Rollback and recovery procedures exist.",
+
         "Owner approval is recorded before publication."
     ]);
 
