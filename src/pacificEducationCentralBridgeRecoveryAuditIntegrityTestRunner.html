@@ -205,19 +205,23 @@
         safeCall(function () {
             if (typeof bridge.checkComponent === "function") {
                 return bridge.checkComponent(
-                    COMPONENT,
-                    function () {
-                        return {
-                            passed: true,
-                            details:
-                                "Baseline test health initialization"
-                        };
-                    }
-                );
-            }
 
-            return null;
-        });
+safeCall(function () {
+    if (typeof bridge.checkComponent === "function") {
+        return bridge.checkComponent(
+            COMPONENT,
+            function () {
+                return {
+                    passed: true,
+                    details:
+                        "Baseline test health initialization"
+                };
+            }
+        );
+    }
+
+    return null;
+});
 
         const baselineStatus =
             safeCall(function () {
