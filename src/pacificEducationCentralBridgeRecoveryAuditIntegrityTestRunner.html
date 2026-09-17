@@ -15,9 +15,9 @@
 
     <!-- =========================================================
          CENTRAL BRIDGE
-         Production bridge is loaded for TESTING ONLY.
+         TESTING ONLY — NOT PRODUCTION AUTHORIZATION
          ========================================================= -->
-    <script src="../js/pacificEducationCentralBridge.js"></script>
+    <script src="js/pacificEducationCentralBridge.js"></script>
 
     <!-- =========================================================
          RECOVERY AUDIT INTEGRITY TEST
@@ -81,7 +81,6 @@
                 "</p>";
 
             html += "<h3>Test Results</h3>";
-
             html += "<ol>";
 
             if (Array.isArray(result.tests)) {
@@ -89,10 +88,9 @@
 
                     html += "<li>";
 
-                    html +=
-                        test.passed
-                            ? "<strong>PASS</strong>"
-                            : "<strong>FAIL</strong>";
+                    html += test.passed
+                        ? "<strong>PASS</strong>"
+                        : "<strong>FAIL</strong>";
 
                     html +=
                         " — " +
