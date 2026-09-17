@@ -685,7 +685,13 @@
          * The purpose is to confirm that the test
          * detect this audit-linkage gap.
          */
-        var brokenFailureIdAuditRecords =
+        
+        * DO NOT REPAIR THIS TEST YET.
+*
+* The purpose is to confirm that the test
+* detects this audit-linkage gap.
+*/
+var brokenFailureIdAuditRecords = 
             Array.isArray(auditAfter) && failureId
                 ? auditAfter.filter(function (entry) {
                     return (
