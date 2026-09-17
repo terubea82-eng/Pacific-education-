@@ -36,8 +36,12 @@
     const VERSION = "1.0.0";
     const STATUS = "PROTOTYPE — NOT PRODUCTION SECURITY";
 
-    const STORAGE_KEY = "pacificEducationCentralBridgeState";
-    const AUDIT_KEY = "pacificEducationCentralBridgeAudit";
+    const STORAGE_KEY =
+        "pacificEducationCentralBridgeState";
+
+    const AUDIT_KEY =
+        "pacificEducationCentralBridgeAudit";
+
     const MAX_AUDIT = 200;
 
     const HEALTH = Object.freeze({
@@ -65,12 +69,6 @@
         VERIFY: "VERIFY"
     });
 
-    /*
-     * Central dependency registry.
-     *
-     * These are names only. The Bridge does not take ownership
-     * of the responsibilities of these modules.
-     */
     const COMPONENTS = Object.freeze([
         "Curriculum Registry",
         "Link-and-Build Engine",
@@ -103,7 +101,9 @@
 
     function safeClone(value) {
         try {
-            return JSON.parse(JSON.stringify(value));
+            return JSON.parse(
+                JSON.stringify(value)
+            );
         } catch (error) {
             return null;
         }
@@ -111,7 +111,10 @@
 
     function loadState() {
         try {
-            const raw = window.localStorage.getItem(STORAGE_KEY);
+            const raw =
+                window.localStorage.getItem(
+                    STORAGE_KEY
+                );
 
             if (!raw) {
                 return {
@@ -126,11 +129,32 @@
 
             const parsed = JSON.parse(raw);
 
-            if (!parsed || typeof parsed !== "object") {
-                throw new Error("Invalid bridge state.");
+            if (
+                !parsed ||
+                typeof parsed !== "object"
+            ) {
+                throw new Error(
+                    "Invalid bridge state."
+                );
+            }
+
+            if (!Array.isArray(parsed.activeFailures)) {
+                parsed.activeFailures = [];
+            }
+
+            if (!Array.isArray(parsed.pendingRecovery)) {
+                parsed.pendingRecovery = [];
+            }
+
+            if (
+                !parsed.components ||
+                typeof parsed.components !== "object"
+            ) {
+                parsed.components = {};
             }
 
             return parsed;
+
         } catch (error) {
             return {
                 version: VERSION,
@@ -139,7 +163,8 @@
                 components: {},
                 activeFailures: [],
                 pendingRecovery: [],
-                storageWarning: "State could not be safely loaded."
+                storageWarning:
+                    "State could not be safely loaded."
             };
         }
     }
@@ -147,11 +172,14 @@
     function saveState(state) {
         try {
             state.updatedAt = now();
+
             window.localStorage.setItem(
                 STORAGE_KEY,
                 JSON.stringify(state)
             );
+
             return true;
+
         } catch (error) {
             return false;
         }
@@ -159,7 +187,10 @@
 
     function loadAudit() {
         try {
-            const raw = window.localStorage.getItem(AUDIT_KEY);
+            const raw =
+                window.localStorage.getItem(
+                    AUDIT_KEY
+                );
 
             if (!raw) {
                 return [];
@@ -167,7 +198,10 @@
 
             const parsed = JSON.parse(raw);
 
-            return Array.isArray(parsed) ? parsed : [];
+            return Array.isArray(parsed)
+                ? parsed
+                : [];
+
         } catch (error) {
             return [];
         }
@@ -175,7 +209,8 @@
 
     function saveAudit(audit) {
         try {
-            const trimmed = audit.slice(-MAX_AUDIT);
+            const trimmed =
+                audit.slice(-MAX_AUDIT);
 
             window.localStorage.setItem(
                 AUDIT_KEY,
@@ -183,24 +218,60 @@
             );
 
             return true;
+
         } catch (error) {
             return false;
         }
     }
 
-    function audit(action, details) {
+    /*
+     * Audit records now expose the principal
+     * recovery identifiers at top level.
+     *
+     * This improves traceability while remaining
+     * test/prototype only.
+     */
+    function audit(
+        action,
+        details,
+        component,
+        failureId
+    ) {
         const records = loadAudit();
+
+        const safeDetails =
+            safeClone(details) || {};
+
+        const resolvedComponent =
+            component ||
+            safeDetails.component ||
+            null;
+
+        const resolvedFailureId =
+            failureId ||
+            safeDetails.failureId ||
+            null;
 
         records.push({
             timestamp: now(),
             action: action,
-            details: safeClone(details) || {}
+
+            component:
+                resolvedComponent,
+
+            failureId:
+                resolvedFailureId,
+
+            details: safeDetails
         });
 
         saveAudit(records);
     }
 
-    function ensureComponent(state, component) {
+    function ensureComponent(
+        state,
+        component
+    ) {
         if (!state.components[component]) {
             state.components[component] = {
                 name: component,
@@ -210,7 +281,8 @@
                 lastError: null,
                 recoveryStage: null,
                 fallbackActive: false,
-                dataPreserved: false
+                dataPreserved: false,
+                activeFailureId: null
             };
         }
 
@@ -218,10 +290,16 @@
     }
 
     function isKnownComponent(component) {
-        return COMPONENTS.indexOf(component) !== -1;
+        return (
+            COMPONENTS.indexOf(component) !== -1
+        );
     }
 
-    function setHealth(component, health, details) {
+    function setHealth(
+        component,
+        health,
+        details
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -230,30 +308,59 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
+
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
 
         record.health = health;
         record.lastChecked = now();
 
-        if (details && details.error) {
-            record.lastError = details.error;
+        if (
+            details &&
+            details.error
+        ) {
+            record.lastError =
+                details.error;
         }
 
-        if (details && details.recoveryStage) {
-            record.recoveryStage = details.recoveryStage;
+        if (
+            details &&
+            details.recoveryStage
+        ) {
+            record.recoveryStage =
+                details.recoveryStage;
         }
 
-        if (health === HEALTH.HEALTHY) {
+        if (
+            details &&
+            details.failureId
+        ) {
+            record.activeFailureId =
+                details.failureId;
+        }
+
+        if (
+            health === HEALTH.HEALTHY
+        ) {
             record.lastVerified = now();
         }
 
         saveState(state);
 
-        audit("HEALTH_STATUS_CHANGED", {
-            component: component,
-            health: health,
-            details: details || {}
-        });
+        audit(
+            "HEALTH_STATUS_CHANGED",
+            {
+                component: component,
+                health: health,
+                details: details || {}
+            },
+            component,
+            details &&
+            details.failureId
+        );
 
         return {
             success: true,
@@ -262,14 +369,27 @@
         };
     }
 
-    function detect(component, error) {
-        return setHealth(component, HEALTH.BROKEN, {
-            error: error || "Unknown connection failure.",
-            recoveryStage: RECOVERY_STAGE.DETECT
-        });
+    function detect(
+        component,
+        error
+    ) {
+        return setHealth(
+            component,
+            HEALTH.BROKEN,
+            {
+                error:
+                    error ||
+                    "Unknown connection failure.",
+                recoveryStage:
+                    RECOVERY_STAGE.DETECT
+            }
+        );
     }
 
-    function identify(component, dependency) {
+    function identify(
+        component,
+        dependency
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -278,27 +398,46 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
-        record.recoveryStage = RECOVERY_STAGE.IDENTIFY;
-        record.dependency = dependency || null;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.recoveryStage =
+            RECOVERY_STAGE.IDENTIFY;
+
+        record.dependency =
+            dependency || null;
+
         record.lastChecked = now();
 
         saveState(state);
 
-        audit("FAILURE_IDENTIFIED", {
-            component: component,
-            dependency: dependency || null
-        });
+        audit(
+            "FAILURE_IDENTIFIED",
+            {
+                component: component,
+                dependency:
+                    dependency || null
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
             component: component,
-            dependency: dependency || null
+            dependency:
+                dependency || null
         };
     }
 
-    function isolate(component, reason) {
+    function isolate(
+        component,
+        reason
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -307,20 +446,37 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
-        record.health = HEALTH.ISOLATED;
-        record.recoveryStage = RECOVERY_STAGE.ISOLATE;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.health =
+            HEALTH.ISOLATED;
+
+        record.recoveryStage =
+            RECOVERY_STAGE.ISOLATE;
+
         record.isolationReason =
-            reason || "Component isolated for safety.";
+            reason ||
+            "Component isolated for safety.";
+
         record.lastChecked = now();
 
         saveState(state);
 
-        audit("COMPONENT_ISOLATED", {
-            component: component,
-            reason: record.isolationReason
-        });
+        audit(
+            "COMPONENT_ISOLATED",
+            {
+                component: component,
+                reason:
+                    record.isolationReason
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
@@ -329,7 +485,10 @@
         };
     }
 
-    function preserveData(component, evidence) {
+    function preserveData(
+        component,
+        evidence
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -338,19 +497,33 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
+
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
 
         record.dataPreserved = true;
-        record.recoveryStage = RECOVERY_STAGE.PRESERVE_DATA;
+
+        record.recoveryStage =
+            RECOVERY_STAGE.PRESERVE_DATA;
+
         record.preservedEvidence =
             safeClone(evidence) || null;
 
         saveState(state);
 
-        audit("DATA_PRESERVATION_RECORDED", {
-            component: component,
-            evidence: evidence || null
-        });
+        audit(
+            "DATA_PRESERVATION_RECORDED",
+            {
+                component: component,
+                evidence:
+                    evidence || null
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
@@ -359,7 +532,10 @@
         };
     }
 
-    function activateFallback(component, fallbackDetails) {
+    function activateFallback(
+        component,
+        fallbackDetails
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -368,21 +544,40 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
-        record.health = HEALTH.FALLBACK;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.health =
+            HEALTH.FALLBACK;
+
         record.fallbackActive = true;
-        record.recoveryStage = RECOVERY_STAGE.FALLBACK;
+
+        record.recoveryStage =
+            RECOVERY_STAGE.FALLBACK;
+
         record.fallbackDetails =
-            safeClone(fallbackDetails) || null;
+            safeClone(
+                fallbackDetails
+            ) || null;
+
         record.lastChecked = now();
 
         saveState(state);
 
-        audit("SAFE_FALLBACK_ACTIVATED", {
-            component: component,
-            fallbackDetails: fallbackDetails || null
-        });
+        audit(
+            "SAFE_FALLBACK_ACTIVATED",
+            {
+                component: component,
+                fallbackDetails:
+                    fallbackDetails || null
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
@@ -391,7 +586,11 @@
         };
     }
 
-    function createFailureRecord(component, problem, impact) {
+    function createFailureRecord(
+        component,
+        problem,
+        impact
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -406,33 +605,71 @@
                 "PE-CB-" +
                 Date.now() +
                 "-" +
-                Math.random().toString(36).slice(2, 8),
+                Math.random()
+                    .toString(36)
+                    .slice(2, 8),
+
             component: component,
-            problem: problem || "Unspecified problem.",
-            impact: impact || "Impact not yet determined.",
+
+            problem:
+                problem ||
+                "Unspecified problem.",
+
+            impact:
+                impact ||
+                "Impact not yet determined.",
+
             detectedAt: now(),
+
             status: "OPEN",
-            recoveryStage: RECOVERY_STAGE.DETECT
+
+            recoveryStage:
+                RECOVERY_STAGE.DETECT
         };
 
-        state.activeFailures.push(failure);
+        state.activeFailures.push(
+            failure
+        );
 
-        const record = ensureComponent(state, component);
-        record.health = HEALTH.BROKEN;
-        record.recoveryStage = RECOVERY_STAGE.DETECT;
-        record.lastError = failure.problem;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.health =
+            HEALTH.BROKEN;
+
+        record.recoveryStage =
+            RECOVERY_STAGE.DETECT;
+
+        record.lastError =
+            failure.problem;
+
+        record.activeFailureId =
+            failure.id;
 
         saveState(state);
 
-        audit("FAILURE_RECORDED", failure);
+        audit(
+            "FAILURE_RECORDED",
+            failure,
+            component,
+            failure.id
+        );
 
         return {
             success: true,
-            failure: safeClone(failure)
+            failure:
+                safeClone(failure)
         };
     }
 
-    function alert(component, failureId, message) {
+    function alert(
+        component,
+        failureId,
+        message
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -441,22 +678,49 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
-        record.recoveryStage = RECOVERY_STAGE.ALERT;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.recoveryStage =
+            RECOVERY_STAGE.ALERT;
+
+        if (failureId) {
+            record.activeFailureId =
+                failureId;
+        }
+
         record.lastAlert = {
             timestamp: now(),
-            failureId: failureId || null,
-            message: message || "Central Bridge alert."
+
+            failureId:
+                failureId || null,
+
+            message:
+                message ||
+                "Central Bridge alert."
         };
 
         saveState(state);
 
-        audit("OWNER_GUARDIAN_ALERT", {
-            component: component,
-            failureId: failureId || null,
-            message: message || "Central Bridge alert."
-        });
+        audit(
+            "OWNER_GUARDIAN_ALERT",
+            {
+                component: component,
+
+                failureId:
+                    failureId || null,
+
+                message:
+                    message ||
+                    "Central Bridge alert."
+            },
+            component,
+            failureId
+        );
 
         return {
             success: true,
@@ -464,7 +728,10 @@
         };
     }
 
-    function beginRepair(component, repairPlan) {
+    function beginRepair(
+        component,
+        repairPlan
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -473,20 +740,38 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
-        record.health = HEALTH.RECOVERING;
-        record.recoveryStage = RECOVERY_STAGE.REPAIR;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.health =
+            HEALTH.RECOVERING;
+
+        record.recoveryStage =
+            RECOVERY_STAGE.REPAIR;
+
         record.repairPlan =
-            safeClone(repairPlan) || null;
+            safeClone(
+                repairPlan
+            ) || null;
+
         record.lastChecked = now();
 
         saveState(state);
 
-        audit("REPAIR_STARTED", {
-            component: component,
-            repairPlan: repairPlan || null
-        });
+        audit(
+            "REPAIR_STARTED",
+            {
+                component: component,
+                repairPlan:
+                    repairPlan || null
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
@@ -495,7 +780,11 @@
         };
     }
 
-    function recordTest(component, passed, testDetails) {
+    function recordTest(
+        component,
+        passed,
+        testDetails
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -504,37 +793,64 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
-        record.recoveryStage = RECOVERY_STAGE.TEST;
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        record.recoveryStage =
+            RECOVERY_STAGE.TEST;
+
         record.lastTest = {
             timestamp: now(),
-            passed: Boolean(passed),
-            details: safeClone(testDetails) || null
+
+            passed:
+                Boolean(passed),
+
+            details:
+                safeClone(
+                    testDetails
+                ) || null
         };
 
         if (!passed) {
-            record.health = HEALTH.BROKEN;
+            record.health =
+                HEALTH.BROKEN;
+
             record.lastError =
                 "Recovery test failed.";
         }
 
         saveState(state);
 
-        audit("RECOVERY_TEST", {
-            component: component,
-            passed: Boolean(passed),
-            details: testDetails || null
-        });
+        audit(
+            "RECOVERY_TEST",
+            {
+                component: component,
+
+                passed:
+                    Boolean(passed),
+
+                details:
+                    testDetails || null
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
             component: component,
-            passed: Boolean(passed)
+            passed:
+                Boolean(passed)
         };
     }
 
-    function reconnect(component) {
+    function reconnect(
+        component
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -543,31 +859,52 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
+
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
 
         /*
-         * Reconnection is only a recorded state transition.
-         * It does not prove that the real external service works.
+         * Reconnection is only a recorded
+         * state transition.
+         *
+         * It does not prove that the real
+         * external service works.
          */
-        record.health = HEALTH.RECONNECTED;
-        record.recoveryStage = RECOVERY_STAGE.RECONNECT;
+        record.health =
+            HEALTH.RECONNECTED;
+
+        record.recoveryStage =
+            RECOVERY_STAGE.RECONNECT;
+
         record.lastChecked = now();
 
         saveState(state);
 
-        audit("RECONNECT_ATTEMPT_RECORDED", {
-            component: component
-        });
+        audit(
+            "RECONNECT_ATTEMPT_RECORDED",
+            {
+                component: component
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
             component: component,
-            health: HEALTH.RECONNECTED,
+            health:
+                HEALTH.RECONNECTED,
             verificationRequired: true
         };
     }
 
-    function verify(component, verificationDetails) {
+    function verify(
+        component,
+        verificationDetails
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -576,11 +913,19 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
+
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
 
         /*
-         * Verification must be explicitly supplied.
-         * The Bridge does not guess that a component is healthy.
+         * Verification must be explicitly
+         * supplied.
+         *
+         * The Bridge does not guess that a
+         * component is healthy.
          */
         const verified =
             Boolean(
@@ -588,27 +933,48 @@
                 verificationDetails.verified === true
             );
 
-        record.recoveryStage = RECOVERY_STAGE.VERIFY;
+        record.recoveryStage =
+            RECOVERY_STAGE.VERIFY;
 
         if (verified) {
-            record.health = HEALTH.HEALTHY;
-            record.lastVerified = now();
-            record.fallbackActive = false;
+            record.health =
+                HEALTH.HEALTHY;
+
+            record.lastVerified =
+                now();
+
+            record.fallbackActive =
+                false;
+
             record.lastVerification =
-                safeClone(verificationDetails);
+                safeClone(
+                    verificationDetails
+                );
+
         } else {
-            record.health = HEALTH.BROKEN;
+            record.health =
+                HEALTH.BROKEN;
+
             record.lastError =
                 "Verification was not confirmed.";
         }
 
         saveState(state);
 
-        audit("COMPONENT_VERIFICATION", {
-            component: component,
-            verified: verified,
-            details: verificationDetails || null
-        });
+        audit(
+            "COMPONENT_VERIFICATION",
+            {
+                component: component,
+
+                verified: verified,
+
+                details:
+                    verificationDetails ||
+                    null
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
@@ -618,39 +984,67 @@
         };
     }
 
-    function closeFailure(failureId, resolution) {
+    function closeFailure(
+        failureId,
+        resolution
+    ) {
         const state = loadState();
 
-        const failure = state.activeFailures.find(function (item) {
-            return item.id === failureId;
-        });
+        const failure =
+            state.activeFailures.find(
+                function (item) {
+                    return (
+                        item.id ===
+                        failureId
+                    );
+                }
+            );
 
         if (!failure) {
             return {
                 success: false,
-                error: "FAILURE_NOT_FOUND"
+                error:
+                    "FAILURE_NOT_FOUND"
             };
         }
 
-        failure.status = "CLOSED";
-        failure.closedAt = now();
+        failure.status =
+            "CLOSED";
+
+        failure.closedAt =
+            now();
+
         failure.resolution =
-            safeClone(resolution) || null;
+            safeClone(
+                resolution
+            ) || null;
 
         saveState(state);
 
-        audit("FAILURE_CLOSED", {
-            failureId: failureId,
-            resolution: resolution || null
-        });
+        audit(
+            "FAILURE_CLOSED",
+            {
+                failureId:
+                    failureId,
+
+                resolution:
+                    resolution || null
+            },
+            failure.component,
+            failureId
+        );
 
         return {
             success: true,
-            failure: safeClone(failure)
+            failure:
+                safeClone(failure)
         };
     }
 
-    function registerRecovery(component, details) {
+    function registerRecovery(
+        component,
+        details
+    ) {
         /*
          * Convenience workflow:
          *
@@ -661,22 +1055,30 @@
          * FALLBACK
          * ALERT
          *
-         * Repair/test/reconnect/verify remain explicit actions.
+         * Repair/test/reconnect/verify
+         * remain explicit actions.
          */
 
-        const failureResult = createFailureRecord(
-            component,
-            details && details.problem,
-            details && details.impact
-        );
+        const failureResult =
+            createFailureRecord(
+                component,
+                details &&
+                    details.problem,
+                details &&
+                    details.impact
+            );
 
         if (!failureResult.success) {
             return failureResult;
         }
 
+        const failureId =
+            failureResult.failure.id;
+
         identify(
             component,
-            details && details.dependency
+            details &&
+                details.dependency
         );
 
         isolate(
@@ -686,28 +1088,53 @@
 
         preserveData(
             component,
-            details && details.evidence
+            details &&
+                details.evidence
         );
 
         activateFallback(
             component,
-            details && details.fallback
+            details &&
+                details.fallback
         );
 
         alert(
             component,
-            failureResult.failure.id,
-            details && details.alertMessage
+            failureId,
+            details &&
+                details.alertMessage
+        );
+
+        /*
+         * Explicit recovery linkage record.
+         */
+        audit(
+            "RECOVERY_REGISTERED",
+            {
+                component: component,
+
+                failureId:
+                    failureId,
+
+                details:
+                    details || null
+            },
+            component,
+            failureId
         );
 
         return {
             success: true,
-            failureId: failureResult.failure.id,
-            stage: RECOVERY_STAGE.ALERT
+            failureId: failureId,
+            stage:
+                RECOVERY_STAGE.ALERT
         };
     }
 
-    function checkComponent(component, healthCheck) {
+    function checkComponent(
+        component,
+        healthCheck
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -716,7 +1143,12 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
+
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
 
         let result = {
             checked: false,
@@ -724,52 +1156,81 @@
         };
 
         try {
-            if (typeof healthCheck === "function") {
-                result = healthCheck();
+            if (
+                typeof healthCheck ===
+                "function"
+            ) {
+                result =
+                    healthCheck();
             } else {
                 result = {
                     checked: false,
                     passed: false,
-                    reason: "No health-check function supplied."
+                    reason:
+                        "No health-check function supplied."
                 };
             }
+
         } catch (error) {
             result = {
                 checked: true,
                 passed: false,
-                reason: error.message || "Health check failed."
+                reason:
+                    error.message ||
+                    "Health check failed."
             };
         }
 
         record.lastChecked = now();
 
-        if (result && result.passed === true) {
-            record.health = HEALTH.HEALTHY;
-            record.lastVerified = now();
-            record.lastError = null;
-        } else {
-            record.health = HEALTH.DEGRADED;
+        if (
+            result &&
+            result.passed === true
+        ) {
+            record.health =
+                HEALTH.HEALTHY;
+
+            record.lastVerified =
+                now();
+
             record.lastError =
-                (result && result.reason) ||
+                null;
+
+        } else {
+            record.health =
+                HEALTH.DEGRADED;
+
+            record.lastError =
+                (result &&
+                    result.reason) ||
                 "Health check did not confirm success.";
         }
 
         saveState(state);
 
-        audit("COMPONENT_HEALTH_CHECK", {
-            component: component,
-            result: result
-        });
+        audit(
+            "COMPONENT_HEALTH_CHECK",
+            {
+                component: component,
+                result: result
+            },
+            component,
+            record.activeFailureId
+        );
 
         return {
             success: true,
             component: component,
-            health: record.health,
-            result: safeClone(result)
+            health:
+                record.health,
+            result:
+                safeClone(result)
         };
     }
 
-    function getComponentStatus(component) {
+    function getComponentStatus(
+        component
+    ) {
         if (!isKnownComponent(component)) {
             return {
                 success: false,
@@ -778,20 +1239,41 @@
         }
 
         const state = loadState();
-        const record = ensureComponent(state, component);
 
+        const record =
+            ensureComponent(
+                state,
+                component
+            );
+
+        /*
+         * Preserve the original status
+         * wrapper while also exposing the
+         * health directly for compatibility
+         * with verification tests.
+         */
         return {
             success: true,
-            status: safeClone(record)
+
+            health:
+                record.health,
+
+            status:
+                safeClone(record)
         };
     }
 
     function getSystemStatus() {
         const state = loadState();
 
-        COMPONENTS.forEach(function (component) {
-            ensureComponent(state, component);
-        });
+        COMPONENTS.forEach(
+            function (component) {
+                ensureComponent(
+                    state,
+                    component
+                );
+            }
+        );
 
         saveState(state);
 
@@ -807,58 +1289,92 @@
             RECONNECTED: 0
         };
 
-        COMPONENTS.forEach(function (component) {
-            const health =
-                state.components[component].health;
+        COMPONENTS.forEach(
+            function (component) {
+                const health =
+                    state
+                        .components[
+                            component
+                        ]
+                        .health;
 
-            if (summary[health] !== undefined) {
-                summary[health] += 1;
+                if (
+                    summary[health] !==
+                    undefined
+                ) {
+                    summary[health] += 1;
+                }
             }
-        });
+        );
 
         return {
             version: VERSION,
             status: STATUS,
             generatedAt: now(),
-            components: safeClone(state.components),
+
+            components:
+                safeClone(
+                    state.components
+                ),
+
             summary: summary,
+
             activeFailures:
-                safeClone(state.activeFailures) || [],
+                safeClone(
+                    state.activeFailures
+                ) || [],
+
             pendingRecovery:
-                safeClone(state.pendingRecovery) || []
+                safeClone(
+                    state.pendingRecovery
+                ) || []
         };
     }
 
     function getAudit(limit) {
-        const auditRecords = loadAudit();
+        const auditRecords =
+            loadAudit();
 
         if (
-            typeof limit !== "number" ||
+            typeof limit !==
+                "number" ||
             limit <= 0
         ) {
-            return safeClone(auditRecords);
+            return safeClone(
+                auditRecords
+            );
         }
 
         return safeClone(
-            auditRecords.slice(-Math.floor(limit))
+            auditRecords.slice(
+                -Math.floor(limit)
+            )
         );
     }
 
     function resetPrototypeState() {
         /*
          * Prototype reset only.
-         * Production systems must never use an unrestricted client reset
+         *
+         * Production systems must never
+         * use an unrestricted client reset
          * as a security or audit mechanism.
          */
         try {
-            window.localStorage.removeItem(STORAGE_KEY);
-            window.localStorage.removeItem(AUDIT_KEY);
+            window.localStorage.removeItem(
+                STORAGE_KEY
+            );
+
+            window.localStorage.removeItem(
+                AUDIT_KEY
+            );
 
             return {
                 success: true,
                 warning:
                     "Prototype state reset. This is not a production audit reset."
             };
+
         } catch (error) {
             return {
                 success: false,
@@ -868,51 +1384,91 @@
     }
 
     const CentralBridge = {
+        /*
+         * Original public metadata.
+         */
         version: VERSION,
         status: STATUS,
+
+        /*
+         * Explicit metadata aliases for tests
+         * and controlled registry verification.
+         */
+        VERSION: VERSION,
+        STATUS: STATUS,
+
         components: COMPONENTS,
 
         health: HEALTH,
-        recoveryStage: RECOVERY_STAGE,
+        recoveryStage:
+            RECOVERY_STAGE,
 
         detect: detect,
         identify: identify,
         isolate: isolate,
-        preserveData: preserveData,
-        activateFallback: activateFallback,
+        preserveData:
+            preserveData,
+        activateFallback:
+            activateFallback,
         alert: alert,
-        beginRepair: beginRepair,
-        recordTest: recordTest,
-        reconnect: reconnect,
+        beginRepair:
+            beginRepair,
+        recordTest:
+            recordTest,
+        reconnect:
+            reconnect,
         verify: verify,
 
-        createFailureRecord: createFailureRecord,
-        registerRecovery: registerRecovery,
-        closeFailure: closeFailure,
+        createFailureRecord:
+            createFailureRecord,
 
-        checkComponent: checkComponent,
-        setHealth: setHealth,
+        registerRecovery:
+            registerRecovery,
 
-        getComponentStatus: getComponentStatus,
-        getSystemStatus: getSystemStatus,
-        getAudit: getAudit,
+        closeFailure:
+            closeFailure,
 
-        resetPrototypeState: resetPrototypeState
+        checkComponent:
+            checkComponent,
+
+        setHealth:
+            setHealth,
+
+        getComponentStatus:
+            getComponentStatus,
+
+        getSystemStatus:
+            getSystemStatus,
+
+        getAudit:
+            getAudit,
+
+        resetPrototypeState:
+            resetPrototypeState
     };
 
     /*
      * Public global reference.
      */
-    window.PacificEducationCentralBridge = CentralBridge;
+    window.PacificEducationCentralBridge =
+        CentralBridge;
 
     /*
-     * Do not automatically run recovery or modify other modules.
+     * Do not automatically run recovery
+     * or modify other modules.
+     *
      * The Bridge starts passively.
      */
-    audit("CENTRAL_BRIDGE_INITIALIZED", {
-        version: VERSION,
-        status: STATUS,
-        componentCount: COMPONENTS.length
-    });
+    audit(
+        "CENTRAL_BRIDGE_INITIALIZED",
+        {
+            version: VERSION,
+            status: STATUS,
+            componentCount:
+                COMPONENTS.length
+        },
+        null,
+        null
+    );
 
 })(window);
