@@ -42,7 +42,7 @@
 
     function check(condition, name, details) {
         return {
-            name,
+            name: name,
             passed: Boolean(condition),
             details: details || ""
         };
@@ -79,9 +79,13 @@
             )
         );
 
+        /*
+         * IMPORTANT:
+         * This must match the actual Central Bridge status.
+         */
         tests.push(
             check(
-                bridge.status === "PROTOTYPE — NOT PRODUCTION",
+                bridge.status === "PROTOTYPE — NOT PRODUCTION SECURITY",
                 "Central Bridge is prototype-only",
                 bridge.status
             )
@@ -169,8 +173,8 @@
         }
 
         /*
-         * Establish a clean baseline:
-         * all 23 components must be healthy.
+         * Establish clean baseline.
+         * All 23 components must be healthy.
          */
         COMPONENTS.forEach(function (component) {
             if (typeof bridge.checkComponent === "function") {
@@ -193,8 +197,7 @@
                 bridge.getComponentStatus(component);
 
             const record =
-                response &&
-                response.status
+                response && response.status
                     ? response.status
                     : null;
 
@@ -215,9 +218,10 @@
         );
 
         /*
-         * Create a real recovery record.
-         * Keep the failure ID because closeFailure()
-         * requires the actual failure ID, not the component name.
+         * Create recovery record.
+         *
+         * Keep the actual failure ID because
+         * closeFailure() requires the failure ID.
          */
         const recoveryRecord =
             bridge.registerRecovery(
@@ -257,7 +261,7 @@
         );
 
         /*
-         * Detect
+         * DETECT
          */
         const detected =
             bridge.detect(
@@ -275,7 +279,7 @@
         );
 
         /*
-         * Identify
+         * IDENTIFY
          */
         const identified =
             bridge.identify(
@@ -283,6 +287,7 @@
                 {
                     problem:
                         "Simulated communication failure.",
+
                     impact:
                         "Communication temporarily unavailable."
                 }
@@ -298,7 +303,7 @@
         );
 
         /*
-         * Isolate
+         * ISOLATE
          */
         const isolated =
             bridge.isolate(
@@ -316,7 +321,7 @@
         );
 
         /*
-         * Preserve data
+         * PRESERVE DATA
          */
         const preserved =
             bridge.preserveData(
@@ -337,7 +342,7 @@
         );
 
         /*
-         * Activate fallback
+         * FALLBACK
          */
         const fallback =
             bridge.activateFallback(
@@ -345,6 +350,7 @@
                 {
                     mode:
                         "safe-test-fallback",
+
                     reason:
                         "Temporary communication interruption."
                 }
@@ -383,7 +389,7 @@
         );
 
         /*
-         * Begin repair
+         * BEGIN REPAIR
          */
         const repair =
             bridge.beginRepair(
@@ -424,7 +430,11 @@
         );
 
         /*
-         * Failed repair test
+         * INTENTIONAL FAILED REPAIR TEST
+         *
+         * This is deliberately kept.
+         * It proves that a failed repair does not
+         * incorrectly declare the component healthy.
          */
         const failedRepair =
             bridge.recordTest(
@@ -466,7 +476,7 @@
         );
 
         /*
-         * Successful repair test
+         * SUCCESSFUL REPAIR TEST
          */
         const successfulRepair =
             bridge.recordTest(
@@ -488,7 +498,7 @@
         );
 
         /*
-         * Reconnect
+         * RECONNECT
          */
         const reconnected =
             bridge.reconnect(
@@ -529,7 +539,10 @@
         );
 
         /*
-         * Unverified recovery must not be accepted.
+         * UNVERIFIED RECOVERY
+         *
+         * The bridge should not accept an
+         * unconfirmed recovery as healthy.
          */
         const unverified =
             bridge.verify(
@@ -575,7 +588,7 @@
         );
 
         /*
-         * Explicit verified recovery.
+         * VERIFIED RECOVERY
          */
         const verified =
             bridge.verify(
@@ -632,7 +645,7 @@
         );
 
         /*
-         * Close the actual failure record using its failure ID.
+         * CLOSE THE ACTUAL FAILURE RECORD
          */
         const closed =
             bridge.closeFailure(
@@ -650,7 +663,7 @@
         );
 
         /*
-         * Confirm all components remain healthy.
+         * FINAL FULL HEALTH CHECK
          */
         let finalHealthy = 0;
 
@@ -681,7 +694,7 @@
         );
 
         /*
-         * Audit
+         * AUDIT
          */
         const audit =
             typeof bridge.getAudit === "function"
@@ -703,8 +716,7 @@
         );
 
         /*
-         * Production authorization must never be created
-         * by this test.
+         * PRODUCTION AUTHORIZATION MUST NOT EXIST
          */
         tests.push(
             check(
@@ -726,34 +738,47 @@
             version: VERSION,
             status: STATUS,
             target: TARGET,
+
             total: tests.length,
             passed: passed,
             failed: failed,
-            overall: failed === 0
-                ? "PASS"
-                : "FAIL",
+
+            overall:
+                failed === 0
+                    ? "PASS"
+                    : "FAIL",
+
             baselineHealthy:
-                baselineHealthy + "/" + COMPONENTS.length,
+                baselineHealthy +
+                "/" +
+                COMPONENTS.length,
+
             finalHealthy:
-                finalHealthy + "/" + COMPONENTS.length,
+                finalHealthy +
+                "/" +
+                COMPONENTS.length,
+
             auditRecords:
                 Array.isArray(audit)
                     ? audit.length
                     : 0,
+
             productionAuthorization:
                 false,
+
             tests: tests
         };
     }
 
-    
-
-
-        window.PacificEducationCentralBridgeFailureRecoveryTest =
+    /*
+     * Single clean export.
+     * Nothing should appear after the final IIFE.
+     */
+    window.PacificEducationCentralBridgeFailureRecoveryTest =
         Object.freeze({
             version: VERSION,
             status: STATUS,
             run: run
         });
-    }
+
 })();
