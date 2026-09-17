@@ -87,3 +87,30 @@
     </script>
 </body>
 </html>
+
+    // ============================================================
+    // INTENTIONAL BROKEN TEST — TEST ONLY
+    // ============================================================
+    // This section is deliberately incorrect.
+    // It should FAIL because failureId is not a top-level
+    // property of the audit record.
+    // ============================================================
+
+    const brokenFailureIdAuditRecords =
+        Array.isArray(auditAfter) && failureId
+            ? auditAfter.filter(function (entry) {
+                return (
+                    entry &&
+                    entry.failureId === failureId
+                );
+            })
+            : [];
+
+    tests.push(
+        check(
+            brokenFailureIdAuditRecords.length > 0,
+            "INTENTIONAL BROKEN TEST — failure ID audit linkage",
+            "Matching records: " +
+                brokenFailureIdAuditRecords.length
+        )
+    );
