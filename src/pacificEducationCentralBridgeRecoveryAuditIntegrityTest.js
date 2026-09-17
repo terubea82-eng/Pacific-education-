@@ -6,35 +6,48 @@
  * Status: TEST ONLY — NOT PRODUCTION
  *
  * Purpose:
- * Verify that Central Bridge recovery history remains traceable,
- * internally consistent, and auditable.
+ * Verify that Central Bridge recovery history is:
+ * - traceable
+ * - internally consistent
+ * - auditable
+ * - linked to recovery activity
  *
  * IMPORTANT:
- * This file contains ONE intentional broken test section.
- * The broken section is deliberately expected to FAIL.
+ * This file is a test-only verification layer.
+ * It is NOT a production security boundary.
  *
- * Do not use this file as a production security boundary.
+ * One intentional broken test is included deliberately.
+ * That test MUST remain visible until it is executed and
+ * confirmed as an expected failure.
  */
 
 (function () {
     "use strict";
 
-    const VERSION = "1.0.0";
-    const STATUS = "TEST ONLY — NOT PRODUCTION";
+    var TEST_VERSION = "1.0.0";
 
-    const COMPONENT = "Communication";
+    var COMPONENT = "Communication";
+
+    var tests = [];
 
     function check(condition, name, details) {
-        return {
-            passed: Boolean(condition),
+        var result = {
             name: name,
+            passed: Boolean(condition),
             details: details || ""
         };
+
+        tests.push(result);
+
+        return result;
     }
 
-    function safeCall(fn) {
+    function safeCall(callback) {
         try {
-            return fn();
+            return {
+                success: true,
+                value: callback()
+            };
         } catch (error) {
             return {
                 success: false,
@@ -46,224 +59,150 @@
     }
 
     function run() {
-        const tests = [];
+        tests = [];
 
-        const bridge =
+        var bridge =
             window.PacificEducationCentralBridge;
 
-        tests.push(
-            check(
-                !!bridge,
-                "Central Bridge detected",
-                bridge
-                    ? "Central Bridge is available."
-                    : "Central Bridge was not detected."
-            )
+        check(
+            Boolean(bridge),
+            "Central Bridge exists",
+            "PacificEducationCentralBridge must be available."
         );
 
         if (!bridge) {
             return {
-                version: VERSION,
-                status: STATUS,
-                total: tests.length,
-                passed: tests.filter(function (item) {
-                    return item.passed;
+                success: false,
+                version: TEST_VERSION,
+                totalTests: tests.length,
+                passedTests: tests.filter(function (test) {
+                    return test.passed;
                 }).length,
-                failed: tests.filter(function (item) {
-                    return !item.passed;
+                failedTests: tests.filter(function (test) {
+                    return !test.passed;
                 }).length,
-                tests: tests,
-                productionAuthorization: false
+                tests: tests
             };
         }
 
-        tests.push(
-            check(
-                bridge.version === "1.0.0",
-                "Central Bridge version",
-                "Detected: " + bridge.version
-            )
+        check(
+            bridge.VERSION === "1.0.0",
+            "Central Bridge version",
+            "Expected Central Bridge version 1.0.0."
         );
 
-        tests.push(
-            check(
-                bridge.status ===
-                    "PROTOTYPE — NOT PRODUCTION SECURITY",
-                "Central Bridge prototype-only status",
-                "Detected: " + bridge.status
-            )
+        check(
+            bridge.STATUS ===
+                "PROTOTYPE — NOT PRODUCTION SECURITY",
+            "Central Bridge prototype-only status",
+            "Central Bridge must remain outside the production security boundary."
         );
 
-        tests.push(
-            check(
-                typeof bridge.detect === "function",
-                "detect interface available"
-            )
-        );
+        var requiredMethods = [
+            "detect",
+            "identify",
+            "isolate",
+            "preserveData",
+            "activateFallback",
+            "beginRepair",
+            "recordTest",
+            "reconnect",
+            "verify",
+            "getAudit",
+            "getComponentStatus",
+            "getSystemStatus",
+            "registerRecovery"
+        ];
 
-        tests.push(
+        requiredMethods.forEach(function (methodName) {
             check(
-                typeof bridge.identify === "function",
-                "identify interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.isolate === "function",
-                "isolate interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.preserveData === "function",
-                "preserveData interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.activateFallback === "function",
-                "activateFallback interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.beginRepair === "function",
-                "beginRepair interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.recordTest === "function",
-                "recordTest interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.reconnect === "function",
-                "reconnect interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.verify === "function",
-                "verify interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.getAudit === "function",
-                "getAudit interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.getComponentStatus === "function",
-                "getComponentStatus interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.getSystemStatus === "function",
-                "getSystemStatus interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.registerRecovery === "function",
-                "registerRecovery interface available"
-            )
-        );
-
-        /*
-         * Reset prototype state before beginning the integrity test.
-         */
-        safeCall(function () {
-            if (typeof bridge.resetPrototypeState === "function") {
-                bridge.resetPrototypeState();
-            }
+                typeof bridge[methodName] === "function",
+                "Required interface: " + methodName,
+                "Central Bridge must expose " + methodName + "()."
+            );
         });
 
         /*
-         * TEST-ONLY BASELINE INITIALIZATION
-         *
-         * The prototype bridge starts components as UNKNOWN.
-         * Initialize Communication through the existing health-check
-         * interface so the baseline assertion tests the intended
-         * healthy starting condition.
+         * Reset prototype state before beginning the controlled test.
          */
-        safeCall(function () {
-            if (typeof bridge.checkComponent === "function") {
+        if (
+            typeof bridge.resetPrototypeState ===
+            "function"
+        ) {
+            safeCall(function () {
+                return bridge.resetPrototypeState();
+            });
+        }
+
+        /*
+         * Establish a healthy baseline.
+         */
+        var baselineCheck =
+            safeCall(function () {
                 return bridge.checkComponent(
                     COMPONENT,
                     function () {
                         return {
                             passed: true,
                             details:
-                                "Baseline test health initialization"
+                                "Communication baseline check passed."
                         };
                     }
                 );
-            }
-
-            return null;
-        });
-
-        const baselineStatus =
-            safeCall(function () {
-                return bridge.getComponentStatus(COMPONENT);
             });
 
-        const baselineHealthy =
-            baselineStatus &&
-            baselineStatus.success === true &&
-            baselineStatus.status &&
-            baselineStatus.status.health === "HEALTHY";
-
-        tests.push(
-            check(
-                baselineHealthy,
-                "Baseline Communication component is healthy",
-                baselineStatus &&
-                    baselineStatus.status
-                    ? "Health: " +
-                        baselineStatus.status.health
-                    : "No component status returned."
-            )
+        check(
+            baselineCheck.success,
+            "Communication baseline check executed",
+            baselineCheck.success
+                ? "Baseline health check executed."
+                : baselineCheck.error
         );
 
-        const auditBefore =
+        var baselineStatus =
+            safeCall(function () {
+                return bridge.getComponentStatus(
+                    COMPONENT
+                );
+            });
+
+        check(
+            baselineStatus.success &&
+            baselineStatus.value &&
+            baselineStatus.value.health === "HEALTHY",
+            "Communication baseline is HEALTHY",
+            baselineStatus.success
+                ? JSON.stringify(baselineStatus.value)
+                : baselineStatus.error
+        );
+
+        /*
+         * Capture audit history before recovery.
+         */
+        var auditBeforeResult =
             safeCall(function () {
                 return bridge.getAudit();
             });
 
-        tests.push(
-            check(
-                Array.isArray(auditBefore),
-                "Baseline audit is available",
-                "Audit records: " +
-                    (
-                        Array.isArray(auditBefore)
-                            ? auditBefore.length
-                            : 0
-                    )
-            )
+        check(
+            auditBeforeResult.success &&
+            Array.isArray(auditBeforeResult.value),
+            "Audit history available before recovery",
+            auditBeforeResult.success
+                ? "Audit history returned."
+                : auditBeforeResult.error
         );
 
+        var auditBefore =
+            auditBeforeResult.success &&
+            Array.isArray(auditBeforeResult.value)
+                ? auditBeforeResult.value
+                : [];
+
         /*
-         * Register a complete recovery sequence.
+         * Register a controlled recovery.
          */
-        const recoveryRecord =
+        var recoveryResult =
             safeCall(function () {
                 return bridge.registerRecovery(
                     COMPONENT,
@@ -276,45 +215,53 @@
                 );
             });
 
-        const failureId =
-            recoveryRecord &&
-            recoveryRecord.success
-                ? recoveryRecord.failureId
+        check(
+            recoveryResult.success,
+            "Controlled recovery registered",
+            recoveryResult.success
+                ? "Recovery registration completed."
+                : recoveryResult.error
+        );
+
+        var failureId =
+            recoveryResult.success &&
+            recoveryResult.value
+                ? recoveryResult.value.failureId
                 : null;
 
-        tests.push(
-            check(
-                recoveryRecord &&
-                    recoveryRecord.success === true,
-                "Recovery failure record created",
-                failureId
-                    ? "Failure ID: " + failureId
-                    : "No failure ID returned."
-            )
+        check(
+            Boolean(failureId),
+            "Recovery failure ID created",
+            failureId ||
+                "No failure ID was returned."
         );
 
         /*
-         * Recovery lifecycle.
+         * DETECT
          */
-        const detected =
+        var detectResult =
             safeCall(function () {
-                return bridge.detect(COMPONENT);
+                return bridge.detect(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Audit integrity detection test"
+                    }
+                );
             });
 
-        tests.push(
-            check(
-                detected &&
-                    detected.success === true,
-                "Failure detection recorded",
-                detected &&
-                    detected.status
-                    ? "Health: " +
-                        detected.status.health
-                    : ""
-            )
+        check(
+            detectResult.success,
+            "Recovery DETECT stage executed",
+            detectResult.success
+                ? "Detection stage completed."
+                : detectResult.error
         );
 
-        const identified =
+        /*
+         * IDENTIFY
+         */
+        var identifyResult =
             safeCall(function () {
                 return bridge.identify(
                     COMPONENT,
@@ -325,15 +272,18 @@
                 );
             });
 
-        tests.push(
-            check(
-                identified &&
-                    identified.success === true,
-                "Failure identification recorded"
-            )
+        check(
+            identifyResult.success,
+            "Recovery IDENTIFY stage executed",
+            identifyResult.success
+                ? "Identification stage completed."
+                : identifyResult.error
         );
 
-        const isolated =
+        /*
+         * ISOLATE
+         */
+        var isolateResult =
             safeCall(function () {
                 return bridge.isolate(
                     COMPONENT,
@@ -344,15 +294,18 @@
                 );
             });
 
-        tests.push(
-            check(
-                isolated &&
-                    isolated.success === true,
-                "Failure isolation recorded"
-            )
+        check(
+            isolateResult.success,
+            "Recovery ISOLATE stage executed",
+            isolateResult.success
+                ? "Isolation stage completed."
+                : isolateResult.error
         );
 
-        const preserved =
+        /*
+         * PRESERVE DATA
+         */
+        var preserveDataResult =
             safeCall(function () {
                 return bridge.preserveData(
                     COMPONENT,
@@ -363,15 +316,18 @@
                 );
             });
 
-        tests.push(
-            check(
-                preserved &&
-                    preserved.success === true,
-                "Data preservation recorded"
-            )
+        check(
+            preserveDataResult.success,
+            "Recovery PRESERVE_DATA stage executed",
+            preserveDataResult.success
+                ? "Data preservation stage completed."
+                : preserveDataResult.error
         );
 
-        const fallback =
+        /*
+         * FALLBACK
+         */
+        var fallbackResult =
             safeCall(function () {
                 return bridge.activateFallback(
                     COMPONENT,
@@ -382,37 +338,36 @@
                 );
             });
 
-        tests.push(
-            check(
-                fallback &&
-                    fallback.success === true,
-                "Fallback activation recorded"
-            )
+        check(
+            fallbackResult.success,
+            "Recovery FALLBACK stage executed",
+            fallbackResult.success
+                ? "Fallback stage completed."
+                : fallbackResult.error
         );
 
-        const componentAfterFallback =
+        var fallbackStatus =
             safeCall(function () {
                 return bridge.getComponentStatus(
                     COMPONENT
                 );
             });
 
-        tests.push(
-            check(
-                componentAfterFallback &&
-                    componentAfterFallback.success === true &&
-                    componentAfterFallback.status &&
-                    componentAfterFallback.status.fallbackActive === true,
-                "Fallback state is active",
-                componentAfterFallback &&
-                    componentAfterFallback.status
-                    ? "Fallback active: " +
-                        componentAfterFallback.status.fallbackActive
-                    : ""
-            )
+        check(
+            fallbackStatus.success &&
+            fallbackStatus.value &&
+            fallbackStatus.value.health ===
+                "FALLBACK",
+            "Communication fallback is active",
+            fallbackStatus.success
+                ? JSON.stringify(fallbackStatus.value)
+                : fallbackStatus.error
         );
 
-        const repair =
+        /*
+         * BEGIN REPAIR
+         */
+        var repairResult =
             safeCall(function () {
                 return bridge.beginRepair(
                     COMPONENT,
@@ -423,396 +378,308 @@
                 );
             });
 
-        tests.push(
-            check(
-                repair &&
-                    repair.success === true,
-                "Repair started"
-            )
+        check(
+            repairResult.success,
+            "Recovery REPAIR stage executed",
+            repairResult.success
+                ? "Repair stage completed."
+                : repairResult.error
         );
 
         /*
-         * Record an intentional failed repair attempt.
+         * INTENTIONAL FAILED REPAIR TEST
+         *
+         * IMPORTANT:
+         * Central Bridge recordTest() expects:
+         *
+         * recordTest(component, passed, testDetails)
+         *
+         * Therefore the second argument must be the Boolean
+         * false. The details object is the third argument.
          */
-        const failedTest =
+        var failedTest =
             safeCall(function () {
                 return bridge.recordTest(
                     COMPONENT,
+                    false,
                     {
-                        passed: false,
                         details:
                             "Intentional failed repair attempt"
                     }
                 );
             });
 
-        tests.push(
-            check(
-                failedTest &&
-                    failedTest.success === true,
-                "Failed repair test recorded"
-            )
+        check(
+            failedTest.success,
+            "Intentional failed repair test executed",
+            failedTest.success
+                ? "The failed repair test was recorded."
+                : failedTest.error
         );
 
-        const failedStatus =
+        var failedStatus =
             safeCall(function () {
                 return bridge.getComponentStatus(
                     COMPONENT
                 );
             });
 
-        /*
-         * TEST-ONLY CORRECTION:
-         * The prototype bridge may retain RECOVERING after the
-         * failed repair attempt. Both BROKEN and RECOVERING are
-         * valid non-healthy recovery states at this point.
-         */
-        tests.push(
-            check(
-                failedStatus &&
-                    failedStatus.success === true &&
-                    failedStatus.status &&
-                    (
-                        failedStatus.status.health === "BROKEN" ||
-                        failedStatus.status.health === "RECOVERING"
-                    ),
-                "Failed repair leaves component in non-healthy recovery state",
-                failedStatus &&
-                    failedStatus.status
-                    ? "Health: " +
-                        failedStatus.status.health
-                    : ""
-            )
+        check(
+            failedStatus.success &&
+            failedStatus.value &&
+            (
+                failedStatus.value.health ===
+                    "BROKEN" ||
+                failedStatus.value.health ===
+                    "RECOVERING"
+            ),
+            "Failed repair leaves component non-healthy",
+            failedStatus.success
+                ? JSON.stringify(failedStatus.value)
+                : failedStatus.error
         );
 
         /*
-         * Record successful repair test.
+         * SUCCESSFUL REPAIR TEST
          */
-        const successfulTest =
+        var successfulTest =
             safeCall(function () {
                 return bridge.recordTest(
                     COMPONENT,
+                    true,
                     {
-                        passed: true,
                         details:
                             "Successful repair test"
                     }
                 );
             });
 
-        tests.push(
-            check(
-                successfulTest &&
-                    successfulTest.success === true,
-                "Successful repair test recorded"
-            )
+        check(
+            successfulTest.success,
+            "Successful repair test executed",
+            successfulTest.success
+                ? "The successful repair test was recorded."
+                : successfulTest.error
         );
 
-        const reconnected =
+        /*
+         * RECONNECT
+         *
+         * Central Bridge reconnect() currently accepts the
+         * component argument. Verification is performed separately.
+         */
+        var reconnectResult =
             safeCall(function () {
                 return bridge.reconnect(
-                    COMPONENT,
-                    {
-                        reason:
-                            "Reconnect repaired component"
-                    }
+                    COMPONENT
                 );
             });
 
-        tests.push(
-            check(
-                reconnected &&
-                    reconnected.success === true,
-                "Reconnection recorded"
-            )
+        check(
+            reconnectResult.success,
+            "Recovery RECONNECT stage executed",
+            reconnectResult.success
+                ? "Reconnect stage completed."
+                : reconnectResult.error
         );
 
-        const reconnectedStatus =
+        var reconnectedStatus =
             safeCall(function () {
                 return bridge.getComponentStatus(
                     COMPONENT
                 );
             });
 
-        tests.push(
-            check(
-                reconnectedStatus &&
-                    reconnectedStatus.success === true &&
-                    reconnectedStatus.status &&
-                    reconnectedStatus.status.health ===
-                        "RECONNECTED",
-                "Component reaches RECONNECTED state",
-                reconnectedStatus &&
-                    reconnectedStatus.status
-                    ? "Health: " +
-                        reconnectedStatus.status.health
-                    : ""
-            )
+        check(
+            reconnectedStatus.success &&
+            reconnectedStatus.value &&
+            reconnectedStatus.value.health ===
+                "RECONNECTED",
+            "Communication is RECONNECTED",
+            reconnectedStatus.success
+                ? JSON.stringify(
+                    reconnectedStatus.value
+                )
+                : reconnectedStatus.error
         );
 
         /*
-         * Verification must not succeed without explicit confirmation.
+         * VERIFY FAILURE
+         *
+         * Verification with verified:false must not declare
+         * the component healthy.
          */
-        const unverified =
+        var failedVerification =
             safeCall(function () {
                 return bridge.verify(
                     COMPONENT,
                     {
                         verified: false,
-                        details:
-                            "Verification intentionally not confirmed"
+                        reason:
+                            "Intentional verification failure"
                     }
                 );
             });
 
-        tests.push(
-            check(
-                unverified &&
-                    unverified.success === true &&
-                    unverified.verified === false &&
-                    unverified.health === "BROKEN",
-                "Unverified recovery remains BROKEN",
-                unverified
-                    ? "Health: " +
-                        unverified.health
-                    : ""
-            )
+        check(
+            failedVerification.success,
+            "Failed verification executed",
+            failedVerification.success
+                ? "Failed verification was recorded."
+                : failedVerification.error
         );
 
-        /*
-         * Explicit successful verification.
-         */
-        const verified =
-            safeCall(function () {
-                return bridge.verify(
-                    COMPONENT,
-                    {
-                        verified: true,
-                        details:
-                            "Recovery verified successfully"
-                    }
-                );
-            });
-
-        tests.push(
-            check(
-                verified &&
-                    verified.success === true &&
-                    verified.verified === true &&
-                    verified.health === "HEALTHY",
-                "Verified recovery reaches HEALTHY",
-                verified
-                    ? "Health: " +
-                        verified.health
-                    : ""
-            )
-        );
-
-        const finalComponentStatus =
+        var failedVerificationStatus =
             safeCall(function () {
                 return bridge.getComponentStatus(
                     COMPONENT
                 );
             });
 
-        tests.push(
-            check(
-                finalComponentStatus &&
-                    finalComponentStatus.success === true &&
-                    finalComponentStatus.status &&
-                    finalComponentStatus.status.health ===
-                        "HEALTHY",
-                "Final Communication component is HEALTHY",
-                finalComponentStatus &&
-                    finalComponentStatus.status
-                    ? "Health: " +
-                        finalComponentStatus.status.health
-                    : ""
-            )
+        check(
+            failedVerificationStatus.success &&
+            failedVerificationStatus.value &&
+            failedVerificationStatus.value.health ===
+                "BROKEN",
+            "Failed verification leaves component BROKEN",
+            failedVerificationStatus.success
+                ? JSON.stringify(
+                    failedVerificationStatus.value
+                )
+                : failedVerificationStatus.error
         );
 
-        const auditAfter =
+        /*
+         * VERIFY SUCCESS
+         */
+        var successfulVerification =
+            safeCall(function () {
+                return bridge.verify(
+                    COMPONENT,
+                    {
+                        verified: true,
+                        reason:
+                            "Successful recovery verification"
+                    }
+                );
+            });
+
+        check(
+            successfulVerification.success,
+            "Successful verification executed",
+            successfulVerification.success
+                ? "Successful verification was recorded."
+                : successfulVerification.error
+        );
+
+        var finalComponentStatus =
+            safeCall(function () {
+                return bridge.getComponentStatus(
+                    COMPONENT
+                );
+            });
+
+        check(
+            finalComponentStatus.success &&
+            finalComponentStatus.value &&
+            finalComponentStatus.value.health ===
+                "HEALTHY",
+            "Final Communication status is HEALTHY",
+            finalComponentStatus.success
+                ? JSON.stringify(
+                    finalComponentStatus.value
+                )
+                : finalComponentStatus.error
+        );
+
+        /*
+         * Capture audit history after recovery.
+         */
+        var auditAfterResult =
             safeCall(function () {
                 return bridge.getAudit();
             });
 
-        tests.push(
-            check(
-                Array.isArray(auditAfter),
-                "Recovery audit is available after recovery",
-                "Audit records: " +
-                    (
-                        Array.isArray(auditAfter)
-                            ? auditAfter.length
-                            : 0
-                    )
-            )
+        check(
+            auditAfterResult.success &&
+            Array.isArray(auditAfterResult.value),
+            "Audit history available after recovery",
+            auditAfterResult.success
+                ? "Audit history returned."
+                : auditAfterResult.error
         );
 
-        tests.push(
-            check(
-                Array.isArray(auditBefore) &&
-                    Array.isArray(auditAfter) &&
-                    auditAfter.length >
-                        auditBefore.length,
-                "Recovery created additional audit records",
-                "Before: " +
-                    (
-                        Array.isArray(auditBefore)
-                            ? auditBefore.length
-                            : 0
-                    ) +
-                    ", After: " +
-                    (
-                        Array.isArray(auditAfter)
-                            ? auditAfter.length
-                            : 0
-                    )
-            )
-        );
-
-        const identifiableAuditRecords =
-            Array.isArray(auditAfter)
-                ? auditAfter.filter(function (entry) {
-                    return (
-                        entry &&
-                        entry.timestamp &&
-                        entry.action
-                    );
-                })
+        var auditAfter =
+            auditAfterResult.success &&
+            Array.isArray(auditAfterResult.value)
+                ? auditAfterResult.value
                 : [];
 
-        tests.push(
-            check(
-                identifiableAuditRecords.length > 0,
-                "Audit records contain identifiable action history",
-                "Identifiable records: " +
-                    identifiableAuditRecords.length
-            )
+        check(
+            auditAfter.length >
+                auditBefore.length,
+            "Audit history increased",
+            "Recovery activity should create additional audit records."
         );
-
-        const communicationAuditRecords =
-            Array.isArray(auditAfter)
-                ? auditAfter.filter(function (entry) {
-                    const serialized =
-                        JSON.stringify(entry);
-
-                    return serialized.indexOf(
-                        COMPONENT
-                    ) !== -1;
-                })
-                : [];
-
-        tests.push(
-            check(
-                communicationAuditRecords.length > 0,
-                "Communication recovery history is present in audit",
-                "Communication records: " +
-                    communicationAuditRecords.length
-            )
-        );
-
-        // ============================================================
-        // INTENTIONAL BROKEN TEST — TEST ONLY
-        // ============================================================
-        // This is the ONE deliberate broken section in this file.
-        //
-        // The actual audit record does not expose failureId as a
-        // top-level property. Therefore this check is deliberately
-        // incorrect and should FAIL.
-        //
-        // DO NOT REPAIR THIS SECTION UNTIL THE BROKEN TEST HAS
-        // BEEN EXECUTED AND ITS FAILURE CONFIRMED.
-        // ============================================================
-
-        const brokenFailureIdAuditRecords =
-            Array.isArray(auditAfter) && failureId
-                ? auditAfter.filter(function (entry) {
-                    return (
-                        entry &&
-                        entry.failureId === failureId
-                    );
-                })
-                : [];
-
-        tests.push(
-            check(
-                brokenFailureIdAuditRecords.length > 0,
-                "INTENTIONAL BROKEN TEST — failure ID audit linkage",
-                "Matching records: " +
-                    brokenFailureIdAuditRecords.length
-            )
-        );
-
-        // ============================================================
-        // Continue normal integrity checks
-        // ============================================================
-
-        const systemStatus =
-            safeCall(function () {
-                return bridge.getSystemStatus();
-            });
 
         /*
-         * TEST-ONLY CORRECTION:
-         * getSystemStatus() returns the system-status object rather
-         * than a {success:true} wrapper. Confirm that a usable object
-         * was returned and that it does not report an error.
+         * Check that audit records are identifiable.
          */
-        tests.push(
-            check(
-                systemStatus &&
-                    typeof systemStatus === "object" &&
-                    !systemStatus.error,
-                "System status remains available"
-            )
+        var identifiableAuditRecords =
+            auditAfter.filter(function (entry) {
+                return (
+                    entry &&
+                    (
+                        entry.timestamp ||
+                        entry.time ||
+                        entry.action ||
+                        entry.event ||
+                        entry.type
+                    )
+                );
+            });
+
+        check(
+            identifiableAuditRecords.length > 0,
+            "Audit records are identifiable",
+            "Audit records must contain identifiable audit information."
         );
 
-        const productionAuthorization =
-            !!window.authorizeProduction ||
-            !!window.PacificEducationProductionAuthorization;
+        /*
+         * Check Communication-specific audit records.
+         */
+        var communicationAuditRecords =
+            auditAfter.filter(function (entry) {
+                return (
+                    entry &&
+                    (
+                        entry.component === COMPONENT ||
+                        entry.target === COMPONENT ||
+                        entry.module === COMPONENT
+                    )
+                );
+            });
 
-        tests.push(
-            check(
-                productionAuthorization === false,
-                "No production authorization exposed",
-                "Production authorization: " +
-                    productionAuthorization
-            )
+        check(
+            communicationAuditRecords.length > 0,
+            "Communication audit records exist",
+            "Recovery actions should be traceable to Communication."
         );
 
-        const passed =
-            tests.filter(function (item) {
-                return item.passed;
-            }).length;
-
-        const failed =
-            tests.filter(function (item) {
-                return !item.passed;
-            }).length;
-
-        return {
-            version: VERSION,
-            status: STATUS,
-            total: tests.length,
-            passed: passed,
-            failed: failed,
-            tests: tests,
-            auditBefore: auditBefore,
-            auditAfter: auditAfter,
-            communicationAuditRecords:
-                communicationAuditRecords,
-            failureId: failureId,
-            productionAuthorization:
-                productionAuthorization
-        };
-    }
-
-    window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest =
-        Object.freeze({
-            version: VERSION,
-            status: STATUS,
-            run: run
-        });
-
-})();
+        /*
+         * ---------------------------------------------------------
+         * INTENTIONAL BROKEN TEST
+         * ---------------------------------------------------------
+         *
+         * This test intentionally uses an incorrect assumption:
+         *
+         * It expects failureId to exist directly on each audit
+         * record.
+         *
+         * The current Central Bridge audit implementation does
+         * not expose failureId as a top-level audit property for
+         * every relevant record.
+         *
+         * DO NOT REPAIR THIS TEST YET.
+         *
+         * The purpose is to confirm that the test
