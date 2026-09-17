@@ -1,15 +1,19 @@
 /*
- * Pacific Education Central Bridge
- * Recovery Audit & Integrity Test
+ * Pacific Education
+ * Central Bridge Recovery Audit Integrity Test
  *
  * Version: 1.0.0
  * Status: TEST ONLY — NOT PRODUCTION
  *
- * INTENTIONAL BROKEN TEST:
- * The failure-ID audit check intentionally looks
- * for the failure ID in a non-existent top-level
- * field instead of searching the serialized audit
- * record. This is deliberate for test validation.
+ * Purpose:
+ * Verify that Central Bridge recovery history remains traceable,
+ * internally consistent, and auditable.
+ *
+ * IMPORTANT:
+ * This file contains ONE intentional broken test section.
+ * The broken section is deliberately expected to FAIL.
+ *
+ * Do not use this file as a production security boundary.
  */
 
 (function () {
@@ -18,50 +22,66 @@
     const VERSION = "1.0.0";
     const STATUS = "TEST ONLY — NOT PRODUCTION";
 
-    const TARGET = "Communication";
-
-    const EXPECTED_HEALTHY = "HEALTHY";
-    const EXPECTED_BROKEN = "BROKEN";
-    const EXPECTED_FALLBACK = "FALLBACK";
-    const EXPECTED_RECONNECTED = "RECONNECTED";
+    const COMPONENT = "Communication";
 
     function check(condition, name, details) {
         return {
-            name: name,
             passed: Boolean(condition),
+            name: name,
             details: details || ""
         };
     }
 
+    function safeCall(fn) {
+        try {
+            return fn();
+        } catch (error) {
+            return {
+                success: false,
+                error: error && error.message
+                    ? error.message
+                    : String(error)
+            };
+        }
+    }
+
     function run() {
         const tests = [];
+
         const bridge =
             window.PacificEducationCentralBridge;
+
+        tests.push(
+            check(
+                !!bridge,
+                "Central Bridge detected",
+                bridge
+                    ? "Central Bridge is available."
+                    : "Central Bridge was not detected."
+            )
+        );
 
         if (!bridge) {
             return {
                 version: VERSION,
                 status: STATUS,
-                target: TARGET,
-                overall: "FAIL",
-                total: 1,
-                passed: 0,
-                failed: 1,
-                tests: [
-                    check(
-                        false,
-                        "Central Bridge is available",
-                        "PacificEducationCentralBridge was not found."
-                    )
-                ]
+                total: tests.length,
+                passed: tests.filter(function (item) {
+                    return item.passed;
+                }).length,
+                failed: tests.filter(function (item) {
+                    return !item.passed;
+                }).length,
+                tests: tests,
+                productionAuthorization: false
             };
         }
 
         tests.push(
             check(
                 bridge.version === "1.0.0",
-                "Central Bridge version detected",
-                bridge.version
+                "Central Bridge version",
+                "Detected: " + bridge.version
             )
         );
 
@@ -69,29 +89,8 @@
             check(
                 bridge.status ===
                     "PROTOTYPE — NOT PRODUCTION SECURITY",
-                "Central Bridge remains prototype-only",
-                bridge.status
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.getAudit === "function",
-                "Audit interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.getComponentStatus === "function",
-                "Component status interface available"
-            )
-        );
-
-        tests.push(
-            check(
-                typeof bridge.getSystemStatus === "function",
-                "System status interface available"
+                "Central Bridge prototype-only status",
+                "Detected: " + bridge.status
             )
         );
 
@@ -160,59 +159,74 @@
 
         tests.push(
             check(
+                typeof bridge.getAudit === "function",
+                "getAudit interface available"
+            )
+        );
+
+        tests.push(
+            check(
+                typeof bridge.getComponentStatus === "function",
+                "getComponentStatus interface available"
+            )
+        );
+
+        tests.push(
+            check(
+                typeof bridge.getSystemStatus === "function",
+                "getSystemStatus interface available"
+            )
+        );
+
+        tests.push(
+            check(
                 typeof bridge.registerRecovery === "function",
                 "registerRecovery interface available"
             )
         );
 
-        if (
-            typeof bridge.resetPrototypeState ===
-            "function"
-        ) {
-            bridge.resetPrototypeState();
-        }
+        /*
+         * Reset prototype state before beginning the integrity test.
+         */
+        safeCall(function () {
+            if (typeof bridge.resetPrototypeState === "function") {
+                bridge.resetPrototypeState();
+            }
+        });
 
-        if (typeof bridge.checkComponent === "function") {
-            bridge.checkComponent(
-                TARGET,
-                function () {
-                    return {
-                        passed: true,
-                        details:
-                            "Audit integrity baseline passed."
-                    };
-                }
-            );
-        }
+        const baselineStatus =
+            safeCall(function () {
+                return bridge.getComponentStatus(COMPONENT);
+            });
 
-        const baseline =
-            bridge.getComponentStatus(TARGET);
-
-        const baselineRecord =
-            baseline && baseline.status
-                ? baseline.status
-                : null;
+        const baselineHealthy =
+            baselineStatus &&
+            baselineStatus.success === true &&
+            baselineStatus.status &&
+            baselineStatus.status.health === "HEALTHY";
 
         tests.push(
             check(
-                baselineRecord &&
-                baselineRecord.health ===
-                    EXPECTED_HEALTHY,
-                "Communication baseline is HEALTHY",
-                baselineRecord
-                    ? baselineRecord.health
-                    : "No component status."
+                baselineHealthy,
+                "Baseline Communication component is healthy",
+                baselineStatus &&
+                    baselineStatus.status
+                    ? "Health: " +
+                        baselineStatus.status.health
+                    : "No component status returned."
             )
         );
 
         const auditBefore =
-            bridge.getAudit();
+            safeCall(function () {
+                return bridge.getAudit();
+            });
 
         tests.push(
             check(
                 Array.isArray(auditBefore),
-                "Initial audit response is an array",
-                "Records: " +
+                "Baseline audit is available",
+                "Audit records: " +
                     (
                         Array.isArray(auditBefore)
                             ? auditBefore.length
@@ -221,340 +235,393 @@
             )
         );
 
-        const recovery =
-            bridge.registerRecovery(
-                TARGET,
-                {
-                    problem:
-                        "Audit integrity test failure.",
+        /*
+         * Register a complete recovery sequence.
+         */
+        const recoveryRecord =
+            safeCall(function () {
+                return bridge.registerRecovery(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Recovery audit integrity test",
+                        source:
+                            "Central Bridge Recovery Audit Integrity Test"
+                    }
+                );
+            });
 
-                    impact:
-                        "Test-only simulated communication interruption.",
-
-                    dependency:
-                        "Simulated communication dependency.",
-
-                    evidence:
-                        "Audit integrity evidence.",
-
-                    fallback:
-                        "Safe audit-test fallback.",
-
-                    alertMessage:
-                        "Audit integrity test alert."
-                }
-            );
+        const failureId =
+            recoveryRecord &&
+            recoveryRecord.success
+                ? recoveryRecord.failureId
+                : null;
 
         tests.push(
             check(
-                recovery &&
-                recovery.success === true &&
-                Boolean(recovery.failureId),
-                "Recovery record created with failure ID",
-                recovery &&
-                recovery.failureId
-                    ? recovery.failureId
+                recoveryRecord &&
+                    recoveryRecord.success === true,
+                "Recovery failure record created",
+                failureId
+                    ? "Failure ID: " + failureId
                     : "No failure ID returned."
             )
         );
 
-        const failureId =
-            recovery &&
-            recovery.failureId
-                ? recovery.failureId
-                : null;
-
+        /*
+         * Recovery lifecycle.
+         */
         const detected =
-            bridge.detect(
-                TARGET,
-                "Audit integrity simulated failure."
-            );
+            safeCall(function () {
+                return bridge.detect(COMPONENT);
+            });
 
         tests.push(
             check(
                 detected &&
-                detected.success === true,
-                "Detection audit event created",
-                "Detection completed."
+                    detected.success === true,
+                "Failure detection recorded",
+                detected &&
+                    detected.status
+                    ? "Health: " +
+                        detected.status.health
+                    : ""
             )
         );
 
         const identified =
-            bridge.identify(
-                TARGET,
-                {
-                    problem:
-                        "Audit integrity simulated failure.",
-
-                    impact:
-                        "Audit integrity test interruption."
-                }
-            );
+            safeCall(function () {
+                return bridge.identify(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Audit integrity verification"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 identified &&
-                identified.success === true,
-                "Identification audit event created",
-                "Identification completed."
+                    identified.success === true,
+                "Failure identification recorded"
             )
         );
 
         const isolated =
-            bridge.isolate(
-                TARGET,
-                "Audit integrity isolation."
-            );
+            safeCall(function () {
+                return bridge.isolate(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Audit integrity isolation"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 isolated &&
-                isolated.success === true,
-                "Isolation audit event created",
-                "Isolation completed."
+                    isolated.success === true,
+                "Failure isolation recorded"
             )
         );
 
         const preserved =
-            bridge.preserveData(
-                TARGET,
-                {
-                    reason:
-                        "Audit integrity data preservation."
-                }
-            );
+            safeCall(function () {
+                return bridge.preserveData(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Preserve data before recovery"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 preserved &&
-                preserved.success === true,
-                "Data preservation audit event created",
-                "Data preservation completed."
+                    preserved.success === true,
+                "Data preservation recorded"
             )
         );
 
         const fallback =
-            bridge.activateFallback(
-                TARGET,
-                {
-                    mode:
-                        "audit-test-fallback",
-
-                    reason:
-                        "Audit integrity fallback."
-                }
-            );
+            safeCall(function () {
+                return bridge.activateFallback(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Activate safe fallback"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 fallback &&
-                fallback.success === true,
-                "Fallback audit event created",
-                "Fallback activated."
+                    fallback.success === true,
+                "Fallback activation recorded"
             )
         );
 
-        const fallbackStatus =
-            bridge.getComponentStatus(TARGET);
-
-        const fallbackRecord =
-            fallbackStatus &&
-            fallbackStatus.status
-                ? fallbackStatus.status
-                : null;
+        const componentAfterFallback =
+            safeCall(function () {
+                return bridge.getComponentStatus(
+                    COMPONENT
+                );
+            });
 
         tests.push(
             check(
-                fallbackRecord &&
-                (
-                    fallbackRecord.health ===
-                        EXPECTED_FALLBACK ||
-                    fallbackRecord.fallbackActive === true
-                ),
-                "Fallback state matches audit lifecycle",
-                fallbackRecord
-                    ? fallbackRecord.health
-                    : "No component status."
+                componentAfterFallback &&
+                    componentAfterFallback.success === true &&
+                    componentAfterFallback.status &&
+                    componentAfterFallback.status.fallbackActive === true,
+                "Fallback state is active",
+                componentAfterFallback &&
+                    componentAfterFallback.status
+                    ? "Fallback active: " +
+                        componentAfterFallback.status.fallbackActive
+                    : ""
             )
         );
 
         const repair =
-            bridge.beginRepair(
-                TARGET,
-                {
-                    repairPlan:
-                        "Audit integrity simulated repair."
-                }
-            );
+            safeCall(function () {
+                return bridge.beginRepair(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Begin controlled repair"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 repair &&
-                repair.success === true,
-                "Repair audit event created",
-                "Repair started."
+                    repair.success === true,
+                "Repair started"
             )
         );
 
+        /*
+         * Record an intentional failed repair attempt.
+         */
         const failedTest =
-            bridge.recordTest(
-                TARGET,
-                false,
-                {
-                    details:
-                        "Intentional audit integrity failed test."
-                }
-            );
+            safeCall(function () {
+                return bridge.recordTest(
+                    COMPONENT,
+                    {
+                        passed: false,
+                        details:
+                            "Intentional failed repair attempt"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 failedTest &&
-                failedTest.success === true,
-                "Failed repair audit event recorded",
-                "Intentional failed repair recorded."
+                    failedTest.success === true,
+                "Failed repair test recorded"
             )
         );
 
-        const brokenStatus =
-            bridge.getComponentStatus(TARGET);
-
-        const brokenRecord =
-            brokenStatus &&
-            brokenStatus.status
-                ? brokenStatus.status
-                : null;
+        const failedStatus =
+            safeCall(function () {
+                return bridge.getComponentStatus(
+                    COMPONENT
+                );
+            });
 
         tests.push(
             check(
-                brokenRecord &&
-                brokenRecord.health ===
-                    EXPECTED_BROKEN,
-                "Failed repair audit state is BROKEN",
-                brokenRecord
-                    ? brokenRecord.health
-                    : "No component status."
+                failedStatus &&
+                    failedStatus.success === true &&
+                    failedStatus.status &&
+                    failedStatus.status.health === "BROKEN",
+                "Failed repair leaves component BROKEN",
+                failedStatus &&
+                    failedStatus.status
+                    ? "Health: " +
+                        failedStatus.status.health
+                    : ""
             )
         );
 
+        /*
+         * Record successful repair test.
+         */
         const successfulTest =
-            bridge.recordTest(
-                TARGET,
-                true,
-                {
-                    details:
-                        "Audit integrity repair test passed."
-                }
-            );
+            safeCall(function () {
+                return bridge.recordTest(
+                    COMPONENT,
+                    {
+                        passed: true,
+                        details:
+                            "Successful repair test"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 successfulTest &&
-                successfulTest.success === true,
-                "Successful repair audit event recorded",
-                "Successful repair recorded."
+                    successfulTest.success === true,
+                "Successful repair test recorded"
             )
         );
 
         const reconnected =
-            bridge.reconnect(
-                TARGET,
-                {
-                    details:
-                        "Audit integrity simulated dependency restored."
-                }
-            );
+            safeCall(function () {
+                return bridge.reconnect(
+                    COMPONENT,
+                    {
+                        reason:
+                            "Reconnect repaired component"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 reconnected &&
-                reconnected.success === true,
-                "Reconnection audit event recorded",
-                "Reconnection completed."
+                    reconnected.success === true,
+                "Reconnection recorded"
             )
         );
 
         const reconnectedStatus =
-            bridge.getComponentStatus(TARGET);
-
-        const reconnectedRecord =
-            reconnectedStatus &&
-            reconnectedStatus.status
-                ? reconnectedStatus.status
-                : null;
+            safeCall(function () {
+                return bridge.getComponentStatus(
+                    COMPONENT
+                );
+            });
 
         tests.push(
             check(
-                reconnectedRecord &&
-                reconnectedRecord.health ===
-                    EXPECTED_RECONNECTED,
-                "RECONNECTED state matches recovery audit",
-                reconnectedRecord
-                    ? reconnectedRecord.health
-                    : "No component status."
+                reconnectedStatus &&
+                    reconnectedStatus.success === true &&
+                    reconnectedStatus.status &&
+                    reconnectedStatus.status.health ===
+                        "RECONNECTED",
+                "Component reaches RECONNECTED state",
+                reconnectedStatus &&
+                    reconnectedStatus.status
+                    ? "Health: " +
+                        reconnectedStatus.status.health
+                    : ""
             )
         );
 
+        /*
+         * Verification must not succeed without explicit confirmation.
+         */
         const unverified =
-            bridge.verify(
-                TARGET,
-                {
-                    verified: false,
-                    details:
-                        "Audit integrity verification intentionally unconfirmed."
-                }
-            );
+            safeCall(function () {
+                return bridge.verify(
+                    COMPONENT,
+                    {
+                        verified: false,
+                        details:
+                            "Verification intentionally not confirmed"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 unverified &&
-                unverified.success === true &&
-                unverified.verified === false &&
-                unverified.health ===
-                    EXPECTED_BROKEN,
-                "Unverified audit recovery remains BROKEN",
+                    unverified.success === true &&
+                    unverified.verified === false &&
+                    unverified.health === "BROKEN",
+                "Unverified recovery remains BROKEN",
                 unverified
-                    ? JSON.stringify(unverified)
-                    : "No verification response."
+                    ? "Health: " +
+                        unverified.health
+                    : ""
             )
         );
 
+        /*
+         * Explicit successful verification.
+         */
         const verified =
-            bridge.verify(
-                TARGET,
-                {
-                    verified: true,
-                    details:
-                        "Audit integrity recovery independently verified."
-                }
-            );
+            safeCall(function () {
+                return bridge.verify(
+                    COMPONENT,
+                    {
+                        verified: true,
+                        details:
+                            "Recovery verified successfully"
+                    }
+                );
+            });
 
         tests.push(
             check(
                 verified &&
-                verified.success === true &&
-                verified.verified === true &&
-                verified.health ===
-                    EXPECTED_HEALTHY,
-                "Verified audit recovery becomes HEALTHY",
+                    verified.success === true &&
+                    verified.verified === true &&
+                    verified.health === "HEALTHY",
+                "Verified recovery reaches HEALTHY",
                 verified
-                    ? JSON.stringify(verified)
-                    : "No verification response."
+                    ? "Health: " +
+                        verified.health
+                    : ""
+            )
+        );
+
+        const finalComponentStatus =
+            safeCall(function () {
+                return bridge.getComponentStatus(
+                    COMPONENT
+                );
+            });
+
+        tests.push(
+            check(
+                finalComponentStatus &&
+                    finalComponentStatus.success === true &&
+                    finalComponentStatus.status &&
+                    finalComponentStatus.status.health ===
+                        "HEALTHY",
+                "Final Communication component is HEALTHY",
+                finalComponentStatus &&
+                    finalComponentStatus.status
+                    ? "Health: " +
+                        finalComponentStatus.status.health
+                    : ""
             )
         );
 
         const auditAfter =
-            bridge.getAudit();
+            safeCall(function () {
+                return bridge.getAudit();
+            });
 
         tests.push(
             check(
-                Array.isArray(auditAfter) &&
-                auditAfter.length >
+                Array.isArray(auditAfter),
+                "Recovery audit is available after recovery",
+                "Audit records: " +
                     (
-                        Array.isArray(auditBefore)
-                            ? auditBefore.length
+                        Array.isArray(auditAfter)
+                            ? auditAfter.length
                             : 0
-                    ),
-                "Audit history increased after recovery",
+                    )
+            )
+        );
+
+        tests.push(
+            check(
+                Array.isArray(auditBefore) &&
+                    Array.isArray(auditAfter) &&
+                    auditAfter.length >
+                        auditBefore.length,
+                "Recovery created additional audit records",
                 "Before: " +
                     (
                         Array.isArray(auditBefore)
@@ -575,13 +642,8 @@
                 ? auditAfter.filter(function (entry) {
                     return (
                         entry &&
-                        typeof entry === "object" &&
-                        (
-                            Boolean(entry.action) ||
-                            Boolean(entry.event) ||
-                            Boolean(entry.type) ||
-                            Boolean(entry.component)
-                        )
+                        entry.timestamp &&
+                        entry.action
                     );
                 })
                 : [];
@@ -589,7 +651,7 @@
         tests.push(
             check(
                 identifiableAuditRecords.length > 0,
-                "Audit contains identifiable event records",
+                "Audit records contain identifiable action history",
                 "Identifiable records: " +
                     identifiableAuditRecords.length
             )
@@ -598,38 +660,37 @@
         const communicationAuditRecords =
             Array.isArray(auditAfter)
                 ? auditAfter.filter(function (entry) {
-                    return (
-                        entry &&
-                        typeof entry === "object" &&
-                        (
-                            entry.component === TARGET ||
-                            entry.target === TARGET ||
-                            entry.details &&
-                            String(entry.details).indexOf(TARGET) !== -1
-                        )
-                    );
+                    const serialized =
+                        JSON.stringify(entry);
+
+                    return serialized.indexOf(
+                        COMPONENT
+                    ) !== -1;
                 })
                 : [];
 
         tests.push(
             check(
                 communicationAuditRecords.length > 0,
-                "Audit contains Communication recovery records",
-                "Communication-related records: " +
+                "Communication recovery history is present in audit",
+                "Communication records: " +
                     communicationAuditRecords.length
             )
         );
 
-        /*
-         * INTENTIONAL BROKEN CHECK
-         *
-         * The Central Bridge does not expose the
-         * failure ID as a top-level audit field.
-         *
-         * This deliberately checks a field that does
-         * not exist so the audit-integrity test should
-         * detect this broken assumption.
-         */
+        // ============================================================
+        // INTENTIONAL BROKEN TEST — TEST ONLY
+        // ============================================================
+        // This is the ONE deliberate broken section in this file.
+        //
+        // The actual audit record does not expose failureId as a
+        // top-level property. Therefore this check is deliberately
+        // incorrect and should FAIL.
+        //
+        // DO NOT REPAIR THIS SECTION UNTIL THE BROKEN TEST HAS
+        // BEEN EXECUTED AND ITS FAILURE CONFIRMED.
+        // ============================================================
+
         const brokenFailureIdAuditRecords =
             Array.isArray(auditAfter) && failureId
                 ? auditAfter.filter(function (entry) {
@@ -643,98 +704,66 @@
         tests.push(
             check(
                 brokenFailureIdAuditRecords.length > 0,
-                "BROKEN CHECK — failure ID exposed as top-level audit field",
+                "INTENTIONAL BROKEN TEST — failure ID audit linkage",
                 "Matching records: " +
                     brokenFailureIdAuditRecords.length
             )
         );
 
-        const finalComponentStatus =
-            bridge.getComponentStatus(TARGET);
-
-        const finalComponentRecord =
-            finalComponentStatus &&
-            finalComponentStatus.status
-                ? finalComponentStatus.status
-                : null;
-
-        tests.push(
-            check(
-                finalComponentRecord &&
-                finalComponentRecord.health ===
-                    EXPECTED_HEALTHY,
-                "Final Communication state is HEALTHY",
-                finalComponentRecord
-                    ? finalComponentRecord.health
-                    : "No component status."
-            )
-        );
+        // ============================================================
+        // Continue normal integrity checks
+        // ============================================================
 
         const systemStatus =
-            bridge.getSystemStatus();
+            safeCall(function () {
+                return bridge.getSystemStatus();
+            });
 
         tests.push(
             check(
                 systemStatus &&
-                systemStatus.success === true,
-                "System status response is valid",
-                systemStatus
-                    ? "System status returned."
-                    : "No system status."
+                    systemStatus.success === true,
+                "System status remains available"
             )
         );
 
+        const productionAuthorization =
+            !!window.authorizeProduction ||
+            !!window.PacificEducationProductionAuthorization;
+
         tests.push(
             check(
-                typeof bridge.authorizeProduction !==
-                    "function",
+                productionAuthorization === false,
                 "No production authorization exposed",
-                "Test remains prototype-only."
+                "Production authorization: " +
+                    productionAuthorization
             )
         );
 
         const passed =
-            tests.filter(function (test) {
-                return test.passed;
+            tests.filter(function (item) {
+                return item.passed;
             }).length;
 
         const failed =
-            tests.length - passed;
+            tests.filter(function (item) {
+                return !item.passed;
+            }).length;
 
         return {
             version: VERSION,
             status: STATUS,
-            target: TARGET,
-
             total: tests.length,
             passed: passed,
             failed: failed,
-
-            overall:
-                failed === 0
-                    ? "PASS"
-                    : "FAIL",
-
-            auditBefore:
-                Array.isArray(auditBefore)
-                    ? auditBefore.length
-                    : 0,
-
-            auditAfter:
-                Array.isArray(auditAfter)
-                    ? auditAfter.length
-                    : 0,
-
+            tests: tests,
+            auditBefore: auditBefore,
+            auditAfter: auditAfter,
             communicationAuditRecords:
-                communicationAuditRecords.length,
-
-            failureId:
-                failureId,
-
+                communicationAuditRecords,
+            failureId: failureId,
             productionAuthorization:
-                false,
-
-            tests: tests
+                productionAuthorization
         };
     }
 
