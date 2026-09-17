@@ -4,35 +4,30 @@
  * MASTER CONTROL
  * =========================================================
  *
- * File:
- * src/js/pacificEducationMasterControl.js
+ * Version: 1.0.3
  *
- * Version: 1.0.2
+ * Purpose:
+ * Central coordination registry for Pacific Education.
  *
- * PURPOSE
- * -------
- * Central build registry for Pacific Education.
- *
- * This file records:
- * - project stages
- * - module locations
- * - dependencies
- * - connection order
- * - completion status
- * - prototype/production boundaries
- * - publication requirements
- *
- * IMPORTANT
- * ----------
- * This is a coordination and registry layer.
- * It is NOT a production security boundary.
+ * IMPORTANT:
+ * - This is a coordination registry.
+ * - It is NOT a production security boundary.
+ * - Production authorization must remain server-side.
+ * - Production payment verification must remain server-side.
+ * - Owner approval is required before production publication.
  * =========================================================
  */
 
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.2";
+    var MASTER_CONTROL_VERSION = "1.0.3";
+
+    /*
+     * =======================================================
+     * PROJECT
+     * =======================================================
+     */
 
     var PROJECT = Object.freeze({
         name: "Pacific Education",
@@ -44,7 +39,7 @@
 
     /*
      * =======================================================
-     * BUILD STATUS
+     * STATUS VALUES
      * =======================================================
      */
 
@@ -58,7 +53,7 @@
 
     /*
      * =======================================================
-     * CORE MODULE REGISTRY
+     * MODULE REGISTRY
      * =======================================================
      */
 
@@ -67,112 +62,100 @@
         masterInclusionSpecification: {
             file:
                 "js/pacificEducationMasterInclusionSpecification.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Central owner-controlled education, security, inclusion and business specification."
+            status: STATUS.COMPLETE
         },
 
         dailyLessons: {
             file: "js/dailyLessons.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Daily learning programme and lesson progression."
+            status: STATUS.COMPLETE
         },
 
         assessments: {
             file: "js/assessments.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Day 30 alphabet and Day 60 phonics assessment framework."
+            status: STATUS.COMPLETE
         },
 
         dashboards: {
             file: "js/dashboards.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Teacher, parent and student dashboard functions."
+            status: STATUS.COMPLETE
         },
 
         buyPlans: {
             file: "js/buyPlans.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Annual subscription plan presentation and pricing integration."
+            status: STATUS.COMPLETE
         },
 
         annualGdpPricingEngine: {
             file:
                 "js/pacificEducationAnnualGdpPricingEngine.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Prototype annual GDP-based international pricing calculation."
+            status: STATUS.COMPLETE
         },
 
         pricingAuditGuard: {
             file:
                 "js/pacificEducationPricingAuditGuard.js",
-            status: STATUS.IN_PROGRESS,
-            purpose:
-                "Verification and audit layer for pricing data and approval."
+            status: STATUS.COMPLETE
         },
 
         educationLinkBridge: {
             file:
                 "js/pacificEducationEducationLinkBridge.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Prototype relationship and education-link model."
+            status: STATUS.COMPLETE
         },
 
         secureLinkAuthorization: {
             file:
                 "js/pacificEducationSecureLinkAuthorization.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Prototype authorization and relationship permissions."
+            status: STATUS.COMPLETE
         },
 
         assessmentBridge: {
             file:
                 "js/pacificEducationAssessmentBridge.js",
-            status: STATUS.IN_PROGRESS,
-            purpose:
-                "Connects assessment information with the wider platform."
+            status: STATUS.IN_PROGRESS
         },
-
-        /*
-         * ---------------------------------------------------
-         * CENTRAL BRIDGE
-         * ---------------------------------------------------
-         */
 
         centralBridge: {
             file:
                 "js/pacificEducationCentralBridge.js",
             status: STATUS.COMPLETE,
+
             purpose:
-                "Central coordination bridge for system health, recovery, communication and controlled reconnection. Prototype only; production security remains server-side."
+                "Central coordination bridge for system health, recovery, communication and controlled reconnection.",
+
+            prototypeOnly: true,
+
+            productionSecurityNote:
+                "Production security and authorization remain server-side."
         },
 
         centralBridgeRecoveryAuditIntegrityTest: {
             file:
                 "../pacificEducationCentralBridgeRecoveryAuditIntegrityTest.js",
+
             status: STATUS.COMPLETE,
+
             purpose:
-                "Test-only verification of Central Bridge recovery history, audit integrity, failure linkage and recovery traceability. 45/45 tests passed. Not a production security boundary."
+                "Test-only verification of Central Bridge recovery history, audit integrity, failure linkage and recovery traceability.",
+
+            testResult:
+                "45/45 tests passed",
+
+            prototypeOnly: true,
+
+            productionSecurityNote:
+                "This test is not a production security boundary."
         },
 
         application: {
-            file: "js/app.js",
-            status: STATUS.COMPLETE,
-            purpose:
-                "Main application behaviour and user interface coordination."
+            file: "index.html",
+            status: STATUS.COMPLETE
         }
     });
 
     /*
      * =======================================================
-     * BUILD STAGES
+     * DEVELOPMENT STAGES
      * =======================================================
      */
 
@@ -180,217 +163,202 @@
 
         foundation: {
             number: 1,
-            name: "Class 1 Foundation",
             status: STATUS.COMPLETE
         },
 
         dailyLearning: {
             number: 2,
-            name: "Daily Learning",
             status: STATUS.COMPLETE
         },
 
         assessments: {
             number: 3,
-            name: "Assessment System",
             status: STATUS.COMPLETE
         },
 
         dashboards: {
             number: 4,
-            name: "Dashboards",
             status: STATUS.COMPLETE
         },
 
         pricing: {
             number: 5,
-            name: "Annual Pricing",
             status: STATUS.IN_PROGRESS
         },
 
         relationships: {
             number: 6,
-            name: "Education Relationships",
             status: STATUS.COMPLETE
         },
 
         authorization: {
             number: 7,
-            name: "Secure Authorization",
             status: STATUS.COMPLETE
         },
 
         curriculumAlignment: {
             number: 8,
-            name: "Curriculum Alignment",
             status: STATUS.NOT_STARTED
         },
 
         calendar: {
             number: 9,
-            name: "School Calendar and Day Management",
             status: STATUS.NOT_STARTED
         },
 
         safeguarding: {
             number: 10,
-            name: "Safeguarding and Assistance",
             status: STATUS.NOT_STARTED
         },
 
         accessibility: {
             number: 11,
-            name: "Accessibility and Inclusion",
             status: STATUS.NOT_STARTED
         },
 
         marketplace: {
             number: 12,
-            name: "Learner Marketplace",
             status: STATUS.NOT_STARTED
         },
 
         payments: {
             number: 13,
-            name: "Secure Payment Integration",
             status: STATUS.NOT_STARTED
         },
 
         integrations: {
             number: 14,
-            name: "External Education Integrations",
             status: STATUS.NOT_STARTED
         },
 
         testing: {
             number: 15,
-            name: "Full System Testing",
             status: STATUS.NOT_STARTED
         },
 
         securityReview: {
             number: 16,
-            name: "Security and Loophole Review",
             status: STATUS.NOT_STARTED
         },
 
         production: {
             number: 17,
-            name: "Production Readiness",
             status: STATUS.NOT_STARTED
         },
 
         publication: {
             number: 18,
-            name: "Final Publication",
             status: STATUS.NOT_STARTED
         }
     });
 
     /*
      * =======================================================
-     * CONNECTION RULES
+     * CONNECTION REGISTRY
      * =======================================================
      */
 
     var CONNECTIONS = Object.freeze([
+
         {
-            from: "Master Inclusion Specification",
-            to: "Application Modules",
-            purpose:
-                "Provides the owner-controlled specification."
+            from:
+                "Master Inclusion Specification",
+            to:
+                "Application Modules"
         },
 
         {
-            from: "Annual GDP Pricing Engine",
-            to: "Pricing Audit Guard",
-            purpose:
-                "Pricing calculations require verification and audit."
+            from:
+                "Annual GDP Pricing Engine",
+            to:
+                "Pricing Audit Guard"
         },
 
         {
-            from: "Pricing Audit Guard",
-            to: "Buy Plans",
-            purpose:
-                "Only approved pricing should reach the plan display."
+            from:
+                "Pricing Audit Guard",
+            to:
+                "Buy Plans"
         },
 
         {
-            from: "Education Link Bridge",
-            to: "Secure Link Authorization",
-            purpose:
-                "A relationship link must not automatically grant information access."
+            from:
+                "Education Link Bridge",
+            to:
+                "Secure Link Authorization"
         },
 
         {
-            from: "Assessments",
-            to: "Dashboards",
-            purpose:
-                "Authorized assessment results may inform dashboards."
+            from:
+                "Assessments",
+            to:
+                "Dashboards"
         },
 
         {
-            from: "Daily Lessons",
-            to: "Assessments",
-            purpose:
-                "Assessment content must reflect covered learning."
-        },
-
-        /*
-         * ---------------------------------------------------
-         * CENTRAL BRIDGE TESTING CONNECTION
-         * ---------------------------------------------------
-         */
-
-        {
-            from: "Central Bridge",
-            to: "Central Bridge Recovery Audit Integrity Test",
-            purpose:
-                "The Central Bridge recovery, audit and integrity behaviour must be tested against the registered Central Bridge implementation."
+            from:
+                "Daily Lessons",
+            to:
+                "Assessments"
         },
 
         {
-            from: "Central Bridge Recovery Audit Integrity Test",
-            to: "Full System Testing",
-            purpose:
-                "Central Bridge recovery, audit integrity and failure-linkage tests must be completed and reviewed before full-system testing."
+            from:
+                "Central Bridge",
+            to:
+                "Central Bridge Recovery Audit Integrity Test"
         },
 
         {
-            from: "Application",
-            to: "All Approved Modules",
-            purpose:
-                "Coordinates the user-facing application."
+            from:
+                "Central Bridge Recovery Audit Integrity Test",
+            to:
+                "Full System Testing"
+        },
+
+        {
+            from:
+                "Application",
+            to:
+                "All Approved Modules"
         }
     ]);
 
     /*
      * =======================================================
-     * SCRIPT LOAD ORDER
+     * APPROVED SCRIPT LOAD ORDER
+     * =======================================================
+     *
+     * Registry entry does not itself load files.
+     * Actual application loading remains controlled by
+     * the approved application script configuration.
      * =======================================================
      */
 
     var SCRIPT_LOAD_ORDER = Object.freeze([
+
         "pacificEducationMasterInclusionSpecification.js",
+
         "pacificEducationAnnualGdpPricingEngine.js",
+
         "pacificEducationPricingAuditGuard.js",
+
         "pacificEducationEducationLinkBridge.js",
+
         "pacificEducationSecureLinkAuthorization.js",
+
         "pacificEducationAssessmentBridge.js",
 
-        /*
-         * Central Bridge
-         *
-         * This registry entry does not by itself load the file.
-         * Actual application loading must remain controlled by
-         * the application's approved script configuration.
-         */
         "pacificEducationCentralBridge.js",
 
         "dailyLessons.js",
+
         "assessments.js",
+
         "dashboards.js",
+
         "buyPlans.js",
+
         "app.js"
     ]);
 
@@ -401,75 +369,37 @@
      */
 
     var PUBLICATION_GATES = Object.freeze([
-        "All required modules exist.",
 
-        "All required module connections are tested.",
+        "all required modules exist",
 
-        "Central Bridge recovery, audit integrity and failure-linkage tests are completed and reviewed.",
+        "all connections tested",
 
-        "No production secrets exist in browser code.",
+        "Central Bridge recovery/audit/failure-linkage tests completed and reviewed",
 
-        "Production authorization is server-side.",
+        "no production secrets browser-side",
 
-        "Payment verification is server-side.",
+        "production authorization server-side",
 
-        "Curriculum authority rules are implemented.",
+        "payment verification server-side",
 
-        "Safeguarding controls are implemented.",
+        "curriculum authority rules implemented",
 
-        "Accessibility requirements are tested.",
+        "safeguarding implemented",
 
-        "Assessment fairness is tested.",
+        "accessibility tested",
 
-        "Pricing data sources are verified.",
+        "assessment fairness tested",
 
-        "Audit controls are tested.",
+        "pricing sources verified",
 
-        "Security and loophole testing is completed.",
+        "audit controls tested",
 
-        "Rollback and recovery procedures exist.",
+        "security/loophole testing completed",
 
-        "Owner approval is recorded before publication."
+        "rollback/recovery exists",
+
+        "owner approval recorded"
     ]);
-
-    /*
-     * =======================================================
-     * CONTROL FUNCTIONS
-     * =======================================================
-     */
-
-    function getProject() {
-        return PROJECT;
-    }
-
-    function getModules() {
-        return MODULES;
-    }
-
-    function getStages() {
-        return STAGES;
-    }
-
-    function getConnections() {
-        return CONNECTIONS;
-    }
-
-    function getScriptLoadOrder() {
-        return SCRIPT_LOAD_ORDER;
-    }
-
-    function getPublicationGates() {
-        return PUBLICATION_GATES;
-    }
-
-    function getStatus() {
-        return {
-            version: MASTER_CONTROL_VERSION,
-            project: PROJECT,
-            modules: MODULES,
-            stages: STAGES
-        };
-    }
 
     /*
      * =======================================================
@@ -477,32 +407,95 @@
      * =======================================================
      */
 
-    var api = {
-        version: MASTER_CONTROL_VERSION,
+    var api = Object.freeze({
 
-        status: STATUS,
+        version:
+            MASTER_CONTROL_VERSION,
 
-        project: PROJECT,
+        VERSION:
+            MASTER_CONTROL_VERSION,
 
-        modules: MODULES,
+        project:
+            PROJECT,
 
-        stages: STAGES,
+        status:
+            STATUS,
 
-        connections: CONNECTIONS,
+        modules:
+            MODULES,
 
-        scriptLoadOrder: SCRIPT_LOAD_ORDER,
+        stages:
+            STAGES,
 
-        publicationGates: PUBLICATION_GATES,
+        connections:
+            CONNECTIONS,
 
-        getProject: getProject,
-        getModules: getModules,
-        getStages: getStages,
-        getConnections: getConnections,
-        getScriptLoadOrder: getScriptLoadOrder,
-        getPublicationGates: getPublicationGates,
-        getStatus: getStatus
-    };
+        scriptLoadOrder:
+            SCRIPT_LOAD_ORDER,
+
+        publicationGates:
+            PUBLICATION_GATES,
+
+        getModule: function (name) {
+            return MODULES[name] || null;
+        },
+
+        getStage: function (name) {
+            return STAGES[name] || null;
+        },
+
+        getProject: function () {
+            return PROJECT;
+        },
+
+        getConnections: function () {
+            return CONNECTIONS;
+        },
+
+        getScriptLoadOrder: function () {
+            return SCRIPT_LOAD_ORDER;
+        },
+
+        getPublicationGates: function () {
+            return PUBLICATION_GATES;
+        }
+    });
+
+    /*
+     * =======================================================
+     * REGISTER MASTER CONTROL
+     * =======================================================
+     */
 
     global.PacificEducationMasterControl = api;
+
+    /*
+     * =======================================================
+     * LOAD EVENT
+     * =======================================================
+     */
+
+    if (
+        typeof global.dispatchEvent === "function" &&
+        typeof global.CustomEvent === "function"
+    ) {
+        global.dispatchEvent(
+            new CustomEvent(
+                "pacificEducationMasterControlLoaded",
+                {
+                    detail: {
+                        version:
+                            MASTER_CONTROL_VERSION,
+
+                        ownerControlled:
+                            PROJECT.ownerControlled,
+
+                        prototypeFirst:
+                            PROJECT.prototypeFirst
+                    }
+                }
+            )
+        );
+    }
 
 })(window);
