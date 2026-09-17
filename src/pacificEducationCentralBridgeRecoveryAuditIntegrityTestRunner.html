@@ -205,23 +205,19 @@
         safeCall(function () {
             if (typeof bridge.checkComponent === "function") {
                 return bridge.checkComponent(
-
-safeCall(function () {
-    if (typeof bridge.checkComponent === "function") {
-        return bridge.checkComponent(
-            COMPONENT,
-            function () {
-                return {
-                    passed: true,
-                    details:
-                        "Baseline test health initialization"
-                };
+                    COMPONENT,
+                    function () {
+                        return {
+                            passed: true,
+                            details:
+                                "Baseline test health initialization"
+                        };
+                    }
+                );
             }
-        );
-    }
 
-    return null;
-});
+            return null;
+        });
 
         const baselineStatus =
             safeCall(function () {
@@ -477,8 +473,9 @@ safeCall(function () {
                     failedStatus.success === true &&
                     failedStatus.status &&
                     (
-"Failed repair leaves component in non-healthy recovery state"
-
+                        failedStatus.status.health === "BROKEN" ||
+                        failedStatus.status.health === "RECOVERING"
+                    ),
                 "Failed repair leaves component in non-healthy recovery state",
                 failedStatus &&
                     failedStatus.status
