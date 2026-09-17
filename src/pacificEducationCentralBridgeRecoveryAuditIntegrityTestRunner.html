@@ -13,69 +13,132 @@
         Loading test...
     </div>
 
-    <!-- Central Bridge -->
+    <!-- =========================================================
+         CENTRAL BRIDGE
+         Production bridge is loaded for TESTING ONLY.
+         ========================================================= -->
     <script src="../js/pacificEducationCentralBridge.js"></script>
 
-    <!-- Test-only audit integrity test -->
+    <!-- =========================================================
+         RECOVERY AUDIT INTEGRITY TEST
+         TEST ONLY — NOT PRODUCTION
+         ========================================================= -->
     <script src="pacificEducationCentralBridgeRecoveryAuditIntegrityTest.js"></script>
 
     <script>
         (function () {
-            const output = document.getElementById("testOutput");
+            "use strict";
+
+            const output =
+                document.getElementById("testOutput");
 
             if (
-                !window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest
+                !window
+                    .PacificEducationCentralBridgeRecoveryAuditIntegrityTest
             ) {
                 output.innerHTML =
                     "<h2>TEST LOAD ERROR</h2>" +
-                    "<p>The Recovery Audit Integrity Test could not be loaded.</p>";
+                    "<p>" +
+                    "The Recovery Audit Integrity Test could not be loaded." +
+                    "</p>";
+
                 return;
             }
 
             const result =
-                window.PacificEducationCentralBridgeRecoveryAuditIntegrityTest.run();
+                window
+                    .PacificEducationCentralBridgeRecoveryAuditIntegrityTest
+                    .run();
 
             let html = "";
 
-            html += "<h2>Recovery Audit & Integrity Test</h2>";
-            html += "<p><strong>Version:</strong> " +
-                result.version + "</p>";
-            html += "<p><strong>Status:</strong> " +
-                result.status + "</p>";
+            html +=
+                "<h2>Recovery Audit &amp; Integrity Test</h2>";
 
-            html += "<p><strong>Total:</strong> " +
-                result.total + "</p>";
-            html += "<p><strong>Passed:</strong> " +
-                result.passed + "</p>";
-            html += "<p><strong>Failed:</strong> " +
-                result.failed + "</p>";
+            html +=
+                "<p><strong>Version:</strong> " +
+                result.version +
+                "</p>";
+
+            html +=
+                "<p><strong>Status:</strong> " +
+                result.status +
+                "</p>";
+
+            html +=
+                "<p><strong>Total:</strong> " +
+                result.total +
+                "</p>";
+
+            html +=
+                "<p><strong>Passed:</strong> " +
+                result.passed +
+                "</p>";
+
+            html +=
+                "<p><strong>Failed:</strong> " +
+                result.failed +
+                "</p>";
 
             html += "<h3>Test Results</h3>";
+
             html += "<ol>";
 
-            result.tests.forEach(function (test) {
-                html += "<li>" +
-                    (test.passed ? "PASS" : "FAIL") +
-                    " — " +
-                    test.name +
-                    " — " +
-                    test.details +
-                    "</li>";
-            });
+            if (Array.isArray(result.tests)) {
+                result.tests.forEach(function (test) {
+
+                    html += "<li>";
+
+                    html +=
+                        test.passed
+                            ? "<strong>PASS</strong>"
+                            : "<strong>FAIL</strong>";
+
+                    html +=
+                        " — " +
+                        test.name;
+
+                    if (test.details) {
+                        html +=
+                            " — " +
+                            test.details;
+                    }
+
+                    html += "</li>";
+                });
+            }
 
             html += "</ol>";
 
-            html += "<h3>Recovery Information</h3>";
-            html += "<pre>" +
+            html +=
+                "<h3>Recovery Information</h3>";
+
+            html +=
+                "<pre>" +
                 JSON.stringify(
                     {
-                        failureId: result.failureId,
+                        failureId:
+                            result.failureId || null,
+
                         productionAuthorization:
-                            result.productionAuthorization,
-                        auditBefore: result.auditBefore,
-                        auditAfter: result.auditAfter,
+                            result.productionAuthorization === true,
+
+                        auditBefore:
+                            Array.isArray(result.auditBefore)
+                                ? result.auditBefore
+                                : [],
+
+                        auditAfter:
+                            Array.isArray(result.auditAfter)
+                                ? result.auditAfter
+                                : [],
+
                         communicationAuditRecords:
-                            result.communicationAuditRecords
+                            Array.isArray(
+                                result.communicationAuditRecords
+                            )
+                                ? result.communicationAuditRecords
+                                : []
                     },
                     null,
                     2
@@ -87,30 +150,3 @@
     </script>
 </body>
 </html>
-
-    // ============================================================
-    // INTENTIONAL BROKEN TEST — TEST ONLY
-    // ============================================================
-    // This section is deliberately incorrect.
-    // It should FAIL because failureId is not a top-level
-    // property of the audit record.
-    // ============================================================
-
-    const brokenFailureIdAuditRecords =
-        Array.isArray(auditAfter) && failureId
-            ? auditAfter.filter(function (entry) {
-                return (
-                    entry &&
-                    entry.failureId === failureId
-                );
-            })
-            : [];
-
-    tests.push(
-        check(
-            brokenFailureIdAuditRecords.length > 0,
-            "INTENTIONAL BROKEN TEST — failure ID audit linkage",
-            "Matching records: " +
-                brokenFailureIdAuditRecords.length
-        )
-    );
