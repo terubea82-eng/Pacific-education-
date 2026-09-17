@@ -389,13 +389,11 @@
         /*
          * INTENTIONAL FAILED REPAIR TEST
          *
-         * IMPORTANT:
          * Central Bridge recordTest() expects:
          *
          * recordTest(component, passed, testDetails)
          *
-         * Therefore the second argument must be the Boolean
-         * false. The details object is the third argument.
+         * The second argument is therefore Boolean false.
          */
         var failedTest =
             safeCall(function () {
@@ -505,9 +503,6 @@
 
         /*
          * VERIFY FAILURE
-         *
-         * Verification with verified:false must not declare
-         * the component healthy.
          */
         var failedVerification =
             safeCall(function () {
@@ -671,7 +666,7 @@
          * INTENTIONAL BROKEN TEST
          * ---------------------------------------------------------
          *
-         * This test intentionally uses an incorrect assumption:
+         * This test intentionally uses an incorrect assumption.
          *
          * It expects failureId to exist directly on each audit
          * record.
@@ -683,15 +678,9 @@
          * DO NOT REPAIR THIS TEST YET.
          *
          * The purpose is to confirm that the test
-         * detect this audit-linkage gap.
+         * detects this audit-linkage gap.
          */
-        
-        * DO NOT REPAIR THIS TEST YET.
-*
-* The purpose is to confirm that the test
-* detects this audit-linkage gap.
-*/
-var brokenFailureIdAuditRecords = 
+        var brokenFailureIdAuditRecords =
             Array.isArray(auditAfter) && failureId
                 ? auditAfter.filter(function (entry) {
                     return (
