@@ -1,311 +1,437 @@
-/* =========================================================
-   PACIFIC EDUCATION
-   ANNUAL GDP PRICING ENGINE
+/*
+ * =========================================================
+ * PACIFIC EDUCATION
+ * BUY PLANS
+ * =========================================================
+ *
+ * File:
+ * src/js/buyPlans.js
+ *
+ * Version: 1.0.0
+ * Status: PROTOTYPE / OWNER-CONTROLLED SPECIFICATION
+ *
+ * PURPOSE
+ * -------
+ * - Maintain Fiji owner-controlled annual pricing.
+ * - Connect international plans to the Annual GDP Pricing Engine.
+ * - Send pricing results through the Pricing Audit Guard.
+ * - Never process payments in the browser.
+ * - Never store payment secrets.
+ * - Never treat browser payment status as proof of payment.
+ *
+ * PRODUCTION
+ * ----------
+ * Production pricing authorization, payment processing,
+ * payment verification, subscription activation and audit
+ * records must be performed server-side or by an approved
+ * payment provider.
+ * =========================================================
+ */
 
-   File:
-   src/js/pacificEducationAnnualGdpPricingEngine.js
-
-   Purpose:
-   - Provide annual international pricing data to buyPlans.js
-   - Keep Fiji pricing completely separate
-   - Use an approved GDP pricing record
-   - Never store payment secrets
-   - Never process payments
-   - Never confirm payment
-   - Never grant subscription access
-
-   SECURITY:
-   - This client-side engine is NOT a security boundary.
-   - Production pricing approval must be verified server-side.
-   - Payment processing and payment verification MUST remain
-     server-side or with an approved payment provider.
-   - No passwords, API keys, card details, bank credentials,
-     payment secrets, or provider secrets belong in this file.
-
-   IMPORTANT:
-   - Fiji pricing is NOT calculated here.
-   - Fiji pricing remains controlled by buyPlans.js.
-   - This engine supplies INTERNATIONAL annual pricing only.
-   ========================================================= */
-
-(function () {
+(function (global) {
     "use strict";
 
-    const ENGINE_VERSION = "1.0.0";
-
-    const FORMULA_VERSION =
-        "GDP_OWNER_APPROVED_BASE_V1";
+    const BUY_PLANS_VERSION = "1.0.0";
 
     const STATUS = Object.freeze({
-        CALCULATED: "CALCULATED",
-        PRICE_UNAVAILABLE: "PRICE_UNAVAILABLE",
-        INVALID_RECORD: "INVALID_RECORD"
+        READY: "READY",
+        FIJI_PROTECTED: "FIJI_PROTECTED",
+        INTERNATIONAL: "INTERNATIONAL",
+        PRICING_UNAVAILABLE: "PRICING_UNAVAILABLE",
+        AUDIT_REJECTED: "AUDIT_REJECTED",
+        PRODUCTION_REQUIRED: "PRODUCTION_REQUIRED"
     });
 
     /*
      * ---------------------------------------------------------
-     * BASIC HELPERS
+     * FIJI OWNER-CONTROLLED PRICING
+     * ---------------------------------------------------------
+     *
+     * These are prototype owner-controlled values.
+     * They are NOT payment authorization.
+     */
+
+    const FIJI_PLANS = Object.freeze([
+        Object.freeze({
+            planId: "FIJI-STUDENT",
+            name: "Student",
+            currency: "FJD",
+            amount: 1,
+            period: "annual"
+        }),
+
+        Object.freeze({
+            planId: "FIJI-INDIVIDUAL",
+            name: "Individual",
+            currency: "FJD",
+            amount: 10,
+            period: "annual"
+        }),
+
+        Object.freeze({
+            planId: "FIJI-PARENT",
+            name: "Parent",
+            currency: "FJD",
+            amount: 10,
+            period: "annual"
+        }),
+
+        Object.freeze({
+            planId: "FIJI-ORGANIZATION",
+            name: "Organization",
+            currency: "FJD",
+            amount: 100,
+            period: "annual"
+        })
+    ]);
+
+    /*
+     * ---------------------------------------------------------
+     * ENGINE ACCESS
      * ---------------------------------------------------------
      */
 
-    function getCurrentYear() {
-        return new Date().getUTCFullYear();
+    function getGdpEngine() {
+        return (
+            global.PacificEducationAnnualGdpPricingEngine ||
+            null
+        );
     }
 
-    function isFiniteNumber(value) {
+    function getPricingAuditGuard() {
         return (
-            typeof value === "number" &&
-            Number.isFinite(value)
+            global.PacificEducationPricingAuditGuard ||
+            null
         );
     }
 
     /*
      * ---------------------------------------------------------
-     * GDP RECORD VALIDATION
+     * FIJI PLANS
      * ---------------------------------------------------------
-     *
-     * The pricing engine does not invent GDP information.
-     *
-     * The application must provide an approved GDP record.
-     *
-     * Expected record:
-     *
-     * {
-     *     countryCode: "XX",
-     *     countryName: "Country",
-     *     gdpDataYear: 2025,
-     *     gdpPerCapita: 12345,
-     *     annualPriceUsdPerChild: 2,
-     *     gdpSource: "Approved source"
-     * }
-     *
-     * annualPriceUsdPerChild is the owner-approved annual
-     * international base price derived from the approved
-     * GDP pricing model.
      */
 
-    function validateGdpRecord(
-        gdpRecord
-    ) {
-        if (
-            !gdpRecord ||
-            typeof gdpRecord !== "object"
-        ) {
-            return {
-                valid: false,
-                reason:
-                    "GDP pricing record is required."
-            };
-        }
-
-        if (
-            !isFiniteNumber(
-                gdpRecord.annualPriceUsdPerChild
-            )
-        ) {
-            return {
-                valid: false,
-                reason:
-                    "Approved annual GDP price is unavailable."
-            };
-        }
-
-        if (
-            gdpRecord.annualPriceUsdPerChild <
-            0
-        ) {
-            return {
-                valid: false,
-                reason:
-                    "Annual GDP price cannot be negative."
-            };
-        }
-
-        if (
-            !isFiniteNumber(
-                gdpRecord.gdpDataYear
-            )
-        ) {
-            return {
-                valid: false,
-                reason:
-                    "GDP data year is required."
-            };
-        }
-
-        if (
-            !gdpRecord.gdpSource
-        ) {
-            return {
-                valid: false,
-                reason:
-                    "GDP source is required."
-            };
-        }
-
-        return {
-            valid: true,
-            reason: null
-        };
+    function getFijiPlans() {
+        return FIJI_PLANS.map(function (plan) {
+            return Object.assign({}, plan);
+        });
     }
 
     /*
      * ---------------------------------------------------------
-     * EXCHANGE RATE
+     * INTERNATIONAL PLAN
      * ---------------------------------------------------------
      *
-     * The GDP base price is expressed in USD.
-     *
-     * If an approved exchange rate is supplied:
-     *
-     *     local price = USD price × exchange rate
-     *
-     * If no exchange rate is supplied, USD is retained.
-     *
-     * Exchange rates used for commercial pricing should be
-     * obtained and verified by the production/server layer.
+     * The GDP engine supplies the international annual price.
+     * This module does not invent GDP data.
      */
 
-    function calculateLocalPrice(
-        priceUsd,
-        currencyCode,
-        exchangeRate
-    ) {
-        const currency =
-            String(
-                currencyCode || "USD"
-            )
-                .trim()
-                .toUpperCase();
+    function calculateInternationalPlan(options) {
+        const engine = getGdpEngine();
 
         if (
-            currency === "USD"
-        ) {
-            return {
-                currency: "USD",
-                priceLocal: priceUsd,
-                exchangeRate: 1
-            };
-        }
-
-        if (
-            !isFiniteNumber(
-                exchangeRate
-            ) ||
-            exchangeRate <= 0
-        ) {
-            return {
-                currency: "USD",
-                priceLocal: priceUsd,
-                exchangeRate: null
-            };
-        }
-
-        return {
-            currency: currency,
-            priceLocal:
-                priceUsd *
-                exchangeRate,
-            exchangeRate:
-                exchangeRate
-        };
-    }
-
-    /*
-     * ---------------------------------------------------------
-     * ANNUAL PRICE CALCULATION
-     * ---------------------------------------------------------
-     *
-     * This is the public interface required by:
-     *
-     * PacificEducationBuyPlans
-     *
-     * in buyPlans.js.
-     */
-
-    function calculateAnnualPrice(
-        options
-    ) {
-        options =
-            options || {};
-
-        const gdpRecord =
-            options.gdpRecord || null;
-
-        const validation =
-            validateGdpRecord(
-                gdpRecord
-            );
-
-        if (
-            !validation.valid
+            !engine ||
+            typeof engine.calculateAnnualPrice !==
+                "function"
         ) {
             return {
                 status:
-                    STATUS.PRICE_UNAVAILABLE,
+                    STATUS.PRICING_UNAVAILABLE,
 
                 reason:
-                    validation.reason
+                    "Annual GDP Pricing Engine is unavailable."
             };
         }
 
-        const pricingYear =
-            options.pricingYear ||
-            getCurrentYear();
-
-        const currencyCode =
-            options.currencyCode ||
-            "USD";
-
-        const priceUsd =
-            gdpRecord.annualPriceUsdPerChild;
-
-        const local =
-            calculateLocalPrice(
-                priceUsd,
-                currencyCode,
-                options.exchangeRate
+        const result =
+            engine.calculateAnnualPrice(
+                options || {}
             );
+
+        if (
+            result.status ===
+            "PRODUCTION_REQUIRED"
+        ) {
+            return {
+                status:
+                    STATUS.PRODUCTION_REQUIRED,
+
+                result: result
+            };
+        }
+
+        if (
+            result.status !==
+            "CALCULATED"
+        ) {
+            return {
+                status:
+                    STATUS.PRICING_UNAVAILABLE,
+
+                result: result
+            };
+        }
 
         return {
             status:
-                STATUS.CALCULATED,
+                STATUS.INTERNATIONAL,
 
-            pricingYear:
-                pricingYear,
+            result: result
+        };
+    }
 
-            formulaVersion:
-                FORMULA_VERSION,
+    /*
+     * ---------------------------------------------------------
+     * PRICING AUDIT
+     * ---------------------------------------------------------
+     */
 
-            gdpDataYear:
-                gdpRecord.gdpDataYear,
+    function auditPlan(plan) {
+        const guard =
+            getPricingAuditGuard();
 
-            gdpSource:
-                gdpRecord.gdpSource,
+        if (
+            !guard ||
+            typeof guard.auditPlan !==
+                "function"
+        ) {
+            return {
+                valid: false,
+                productionVerified: false,
+                errors: [
+                    "Pricing Audit Guard is unavailable."
+                ],
+                warnings: []
+            };
+        }
 
-            countryCode:
-                gdpRecord.countryCode ||
-                null,
+        return guard.auditPlan(
+            plan,
+            0
+        );
+    }
 
-            countryName:
-                gdpRecord.countryName ||
-                null,
+    function auditPlans(plans) {
+        const guard =
+            getPricingAuditGuard();
 
-            gdpPerCapita:
-                gdpRecord.gdpPerCapita ||
-                null,
+        if (
+            !guard ||
+            typeof guard.auditPlans !==
+                "function"
+        ) {
+            return {
+                valid: false,
+                productionVerified: false,
+                errors: [
+                    "Pricing Audit Guard is unavailable."
+                ],
+                warnings: []
+            };
+        }
 
-            priceUsdPerChildPerYear:
-                priceUsd,
+        return guard.auditPlans(
+            plans
+        );
+    }
+
+    /*
+     * ---------------------------------------------------------
+     * FIJI PROTECTED MARKET
+     * ---------------------------------------------------------
+     */
+
+    function getFijiPricing() {
+        const plans =
+            getFijiPlans();
+
+        const audit =
+            auditPlans(plans);
+
+        if (!audit.valid) {
+            return {
+                status:
+                    STATUS.AUDIT_REJECTED,
+
+                market:
+                    "FJ",
+
+                pricingStatus:
+                    STATUS.FIJI_PROTECTED,
+
+                plans:
+                    plans,
+
+                audit:
+                    audit
+            };
+        }
+
+        return {
+            status:
+                STATUS.FIJI_PROTECTED,
+
+            market:
+                "FJ",
+
+            pricingStatus:
+                STATUS.FIJI_PROTECTED,
+
+            plans:
+                plans,
+
+            audit:
+                audit
+        };
+    }
+
+    /*
+     * ---------------------------------------------------------
+     * INTERNATIONAL PRICING + AUDIT
+     * ---------------------------------------------------------
+     */
+
+    function getInternationalPricing(options) {
+        const calculated =
+            calculateInternationalPlan(
+                options
+            );
+
+        if (
+            calculated.status !==
+            STATUS.INTERNATIONAL
+        ) {
+            return calculated;
+        }
+
+        const result =
+            calculated.result;
+
+        const plan = {
+            planId:
+                "INTERNATIONAL-" +
+                String(
+                    result.countryCode ||
+                    "UNKNOWN"
+                ),
+
+            name:
+                "International Annual",
 
             currency:
-                local.currency,
+                result.currency,
 
-            priceLocalCurrency:
-                local.priceLocal,
+            amount:
+                result.priceLocalCurrency,
 
-            exchangeRate:
-                local.exchangeRate
+            period:
+                "annual",
+
+            countryCode:
+                result.countryCode,
+
+            gdpDataYear:
+                result.gdpDataYear,
+
+            gdpSource:
+                result.gdpSource,
+
+            gdpPerCapitaUsd:
+                result.gdpPerCapitaUsd
+        };
+
+        const audit =
+            auditPlan(plan);
+
+        if (!audit.valid) {
+            return {
+                status:
+                    STATUS.AUDIT_REJECTED,
+
+                pricingStatus:
+                    STATUS.INTERNATIONAL,
+
+                plan:
+                    plan,
+
+                engineResult:
+                    result,
+
+                audit:
+                    audit
+            };
+        }
+
+        return {
+            status:
+                STATUS.INTERNATIONAL,
+
+            pricingStatus:
+                STATUS.INTERNATIONAL,
+
+            plan:
+                plan,
+
+            engineResult:
+                result,
+
+            audit:
+                audit
+        };
+    }
+
+    /*
+     * ---------------------------------------------------------
+     * PAYMENT BOUNDARY
+     * ---------------------------------------------------------
+     *
+     * This browser module never confirms payment.
+     */
+
+    function createPaymentRequest(plan) {
+        if (
+            !plan ||
+            typeof plan !== "object"
+        ) {
+            return {
+                success: false,
+                status:
+                    "INVALID_PAYMENT_REQUEST"
+            };
+        }
+
+        return {
+            success: true,
+
+            status:
+                "PAYMENT_REQUEST_CREATED",
+
+            paymentRequired:
+                true,
+
+            paymentVerified:
+                false,
+
+            subscriptionActivated:
+                false,
+
+            planId:
+                plan.planId || null,
+
+            currency:
+                plan.currency || null,
+
+            amount:
+                plan.amount ?? null,
+
+            period:
+                plan.period || null,
+
+            productionVerificationRequired:
+                true,
+
+            message:
+                "Payment must be verified by the production server or approved payment provider."
         };
     }
 
@@ -315,33 +441,41 @@
      * ---------------------------------------------------------
      */
 
-    const PacificEducationAnnualGdpPricingEngine =
-        Object.freeze({
+    const api = Object.freeze({
 
-            version:
-                ENGINE_VERSION,
+        version:
+            BUY_PLANS_VERSION,
 
-            formulaVersion:
-                FORMULA_VERSION,
+        status:
+            STATUS,
 
-            status:
-                STATUS,
+        fijiPlans:
+            FIJI_PLANS,
 
-            validateGdpRecord:
-                validateGdpRecord,
+        getFijiPlans:
+            getFijiPlans,
 
-            calculateAnnualPrice:
-                calculateAnnualPrice
-        });
+        getFijiPricing:
+            getFijiPricing,
 
-    /*
-     * ---------------------------------------------------------
-     * GLOBAL EXPORT
-     * ---------------------------------------------------------
-     */
+        calculateInternationalPlan:
+            calculateInternationalPlan,
 
-    window.PacificEducationAnnualGdpPricingEngine =
-        PacificEducationAnnualGdpPricingEngine;
+        getInternationalPricing:
+            getInternationalPricing,
+
+        auditPlan:
+            auditPlan,
+
+        auditPlans:
+            auditPlans,
+
+        createPaymentRequest:
+            createPaymentRequest
+    });
+
+    global.PacificEducationBuyPlans =
+        api;
 
     /*
      * ---------------------------------------------------------
@@ -349,19 +483,22 @@
      * ---------------------------------------------------------
      */
 
-    window.dispatchEvent(
+    global.dispatchEvent(
         new CustomEvent(
-            "pacificEducationAnnualGdpPricingEngineLoaded",
+            "pacificEducationBuyPlansLoaded",
             {
                 detail: {
                     version:
-                        ENGINE_VERSION,
+                        BUY_PLANS_VERSION,
 
-                    formulaVersion:
-                        FORMULA_VERSION
+                    prototypeOnly:
+                        true,
+
+                    productionPaymentVerificationRequired:
+                        true
                 }
             }
         )
     );
 
-})();
+})(window);
