@@ -188,6 +188,13 @@
             prototypeOnly: true
         },
 
+        fullSystemTestVerificationGate: {
+            file: "src/js/pacificEducationFullSystemTestVerificationGate.js",
+            status: STATUS.TESTING,
+            purpose: "Fail-closed verification of complete full-system test evidence before reconciliation.",
+            prototypeOnly: true
+        },
+
         fullSystemTestEvidenceRecord: {
             file: "src/js/pacificEducationFullSystemTestEvidenceRecord.js",
             status: STATUS.TESTING,
@@ -412,6 +419,13 @@
             from:
                 "Full System Testing Evidence Record",
             to:
+                "Full System Test Verification Gate"
+        },
+
+        {
+            from:
+                "Full System Test Verification Gate",
+            to:
                 "Full System Testing"
         },
 
@@ -514,6 +528,8 @@
         "js/pacificEducationFullSystemTestMatrix.js",
 
         "js/pacificEducationFullSystemTestEvidenceRecord.js",
+
+        "js/pacificEducationFullSystemTestVerificationGate.js",
 
         "js/app.js"
     ]);
