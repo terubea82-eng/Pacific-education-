@@ -10,7 +10,7 @@ function render(targetId){
 var t=document.getElementById(targetId||"pacificEducationProductionIndependentReviewLog");if(!t)return;
 var r=window.PacificEducationProductionIndependentReviewRequest;
 if(!r){t.innerHTML="<p>Independent review log unavailable.</p>";return;}
-var rows=r.list(),h="<section><h2>Independent Review Log</h2><div style="overflow:auto"><table><thead><tr><th>ID</th><th>Requested</th><th>Status</th><th>Reviewer</th><th>Notes</th></tr></thead><tbody>";
+var rows=r.list(),h='<section><h2>Independent Review Log</h2><div style="overflow:auto"><table><thead><tr><th>ID</th><th>Requested</th><th>Status</th><th>Reviewer</th><th>Notes</th></tr></thead><tbody>';
 rows.slice().reverse().forEach(function(x){h+="<tr><td>"+esc(x.id)+"</td><td>"+esc(x.requestedAt)+"</td><td>"+esc(x.status)+"</td><td>"+esc(x.reviewerReference)+"</td><td>"+esc(x.notes)+"</td></tr>";});
 h+="</tbody></table></div><p><small>Completion of a review does not itself authorize production.</small></p></section>";
 t.innerHTML=h;
