@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.7";
+    var MASTER_CONTROL_VERSION = "1.0.8";
 
     /*
      * =======================================================
@@ -146,6 +146,16 @@
             prototypeOnly: true,
             validationNote:
                 "No achievement-indicator text is invented. Indicators remain pending until authorized current Ministry source validation."
+        },
+
+        curriculumAlignmentRuntimeBridge: {
+            file:
+                "src/js/pacificEducationCurriculumAlignmentRuntimeBridge.js",
+            status: STATUS.IN_PROGRESS,
+            purpose:
+                "Connects curriculum records to daily activity validation without upgrading unverified source data.",
+            prototypeOnly: true,
+            externalValidationRequired: true
         },
 
         centralBridge: {
@@ -695,6 +705,8 @@
         "js/pacificEducationFullSystemTestReconciliationAcknowledgementVerificationGate.js",
 
         "js/pacificEducationCurriculumAlignmentDataModel.js",
+
+        "js/pacificEducationCurriculumAlignmentRuntimeBridge.js",
 
         "js/pacificEducationCurriculumAlignmentNextStage.js",
         "js/pacificEducationCalendarNextStage.js",
