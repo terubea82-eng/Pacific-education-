@@ -7,7 +7,7 @@
 function render(id){
  var t=document.getElementById(id||"pacificEducationFinalReleaseControlAuditExport");if(!t)return;
  var g=window.PacificEducationFinalReleaseControlAuditExport;if(!g)return;
- t.innerHTML="<section><h2>Final Release Control Audit Export</h2><button type="button" id="pacificEducationExportReleaseAudit">Prepare Audit JSON</button><pre id="pacificEducationReleaseAuditOutput">No export prepared.</pre><p><small>Export is for review/recordkeeping only. It does not authorize production.</small></p></section>";
+ t.innerHTML='<section><h2>Final Release Control Audit Export</h2><button type="button" id="pacificEducationExportReleaseAudit">Prepare Audit JSON</button><pre id="pacificEducationReleaseAuditOutput">No export prepared.</pre><p><small>Export is for review/recordkeeping only. It does not authorize production.</small></p></section>';
  var b=document.getElementById("pacificEducationExportReleaseAudit"),o=document.getElementById("pacificEducationReleaseAuditOutput");
  if(b)b.addEventListener("click",function(){o.textContent=JSON.stringify(g.exportJSON(),null,2);});
 }
