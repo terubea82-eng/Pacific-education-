@@ -11,7 +11,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function copy(value) {
         return JSON.parse(JSON.stringify(value));
@@ -27,6 +27,25 @@
 
     function getSourceVerification() {
         return window.PacificEducationCurriculumSourceVerification || null;
+    }
+
+    function getIntegrationRule() {
+        var bridge = window.PacificEducationCurriculumAlignmentRuntimeBridge;
+        if (bridge && typeof bridge.getIntegrationRule === "function") {
+            return bridge.getIntegrationRule();
+        }
+        return {
+            coreShare: 0.5,
+            crossSubjectShare: 0.5,
+            crossSubjectMustBeLevelled: true,
+            crossSubjectMustHaveApprovedMapping: true
+        };
+    }
+
+    function isRevisionDay(calendar, dayNumber) {
+        if (!calendar || typeof calendar.getDayByNumber !== "function") return false;
+        var result = calendar.getDayByNumber(dayNumber);
+        return !!result && result.type === "revision";
     }
 
     function getEligibleIndicators(filters) {
@@ -58,7 +77,8 @@
 
         if (result.type === "weekend" ||
             result.type === "holiday" ||
-            result.type === "exam") {
+            result.type === "exam" ||
+            result.type === "revision") {
             return false;
         }
 
@@ -97,6 +117,7 @@
         var days = getAvailableDays(startDay, endDay);
         var assignments = [];
         var index = 0;
+        var integrationRule = getIntegrationRule();
 
         if (!days.length || !indicators.length) {
             return {
@@ -105,6 +126,7 @@
                 endDay: endDay,
                 availableLearningDays: days.length,
                 indicatorCount: indicators.length,
+                integrationAllocation: integrationRule,
                 assignments: [],
                 prototype: true
             };
@@ -128,6 +150,10 @@
                 sourceStatus: indicator.source
                     ? indicator.source.status
                     : "unverified",
+                integrationAllocation: {
+                    coreShare: integrationRule.coreShare,
+                    crossSubjectShare: integrationRule.crossSubjectShare
+                },
                 productionEligible: false,
                 prototype: true
             });
@@ -141,6 +167,7 @@
             endDay: endDay,
             availableLearningDays: days.length,
             indicatorCount: indicators.length,
+            integrationAllocation: integrationRule,
             assignments: assignments,
             prototype: true
         };
@@ -184,6 +211,9 @@
         result.assignments.forEach(function(item) {
             if (!item.indicatorId) errors.push("Missing indicator id on day " + item.dayNumber);
             if (!item.indicatorText) errors.push("Missing indicator text on day " + item.dayNumber);
+            if (item.integrationAllocation && (item.integrationAllocation.coreShare !== 0.5 || item.integrationAllocation.crossSubjectShare !== 0.5)) {
+                errors.push("Integration allocation must remain 50/50");
+            }
             if (item.productionEligible === true) {
                 errors.push("Distribution engine cannot grant production eligibility");
             }
