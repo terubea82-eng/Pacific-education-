@@ -6,7 +6,7 @@
 (function (window, document) {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
     const STORAGE_KEY = "pacificEducationOwnerPrototypeTestChecklist";
     const TESTS = [
         ["page-load", "Prototype page loads"],
@@ -48,6 +48,51 @@
         return write(data);
     }
 
+    function autoDetect() {
+        const diagnostics = window.PacificEducationPrototypeRuntimeDiagnostics;
+        if (!diagnostics || typeof diagnostics.run !== "function") return false;
+
+        const report = diagnostics.run();
+        const map = {
+            core: "page-load",
+            coreAuthorizationApi: "authorization",
+            dailyLesson: "daily-lesson",
+            completeLesson: "lesson-completion",
+            assessments: "alphabet",
+            dashboards: "dashboards",
+            ownerReviewApi: "owner-review"
+        };
+        const data = read();
+        const now = new Date().toISOString();
+
+        report.checks.forEach(function (item) {
+            const testId = map[item.id];
+            if (!testId) return;
+
+            /* Automatic detection records capability/state evidence only.
+               It never claims the human interaction itself was performed. */
+            data[testId] = {
+                status: item.passed ? "pass" : "blocked",
+                notes: item.passed
+                    ? "Automatically detected required prototype capability/state: " + item.label
+                    : "Automatically detected missing/blocked prototype capability: " + item.label,
+                timestamp: now,
+                source: "automatic-diagnostic"
+            };
+        });
+
+        if (report.authorized === true) {
+            data.authorization = {
+                status: "pass",
+                notes: "Prototype authorization state automatically detected.",
+                timestamp: now,
+                source: "automatic-diagnostic"
+            };
+        }
+
+        return write(data);
+    }
+
     function clearAll() {
         try {
             window.localStorage.removeItem(STORAGE_KEY);
@@ -63,6 +108,7 @@
         );
         if (!target) return false;
 
+        autoDetect();
         const data = read();
         target.innerHTML = "";
 
@@ -128,6 +174,10 @@
         note.textContent =
             "Prototype evidence is stored in browser localStorage for testing convenience. It is not a security boundary, not independently verified, and does not grant production approval.";
         target.appendChild(note);
+
+        const limitation = document.createElement("p");
+        limitation.textContent = "Automatic PASS means the required API/DOM capability was detected; it does not prove that a person completed the interaction successfully. Human browser testing remains required.";
+        target.appendChild(limitation);
 
         return data;
     }
