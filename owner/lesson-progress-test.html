@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pacific Education — Owner Lesson Progress Test</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:760px;margin:24px auto;padding:16px;line-height:1.5}
+.warning{border:2px solid #b00;padding:12px;border-radius:8px}
+button{padding:12px 16px;margin:8px 0;font-size:16px}
+#results{white-space:pre-wrap;background:#f5f5f5;padding:12px;border-radius:8px}
+.pass{font-weight:bold}.fail{font-weight:bold}
+</style>
+</head>
+<body>
+<h1>Pacific Education — Owner Lesson Progress Test</h1>
+<div class="warning">
+<strong>OWNER / DEVELOPER TEST ONLY</strong><br>
+This page is not part of production startup. It temporarily uses the existing Core authorization API, tests the existing Dashboard completion flow, and restores the saved browser test state when finished.
+</div>
+
+<p>This test verifies the real lesson-completion path without using Owner Test Mode as learner progress.</p>
+<button type="button" id="runTest">Run Lesson Progress Test</button>
+<button type="button" id="resetResults">Clear Test Results</button>
+<div id="results">Ready.</div>
+
+<script src="../js/pacificEducationCore.js"></script>
+<script src="../js/dailyLessons.js"></script>
+<script src="../js/dashboards.js"></script>
+
+<script>
+(function(window){
+"use strict";
+
+var KEYS = [
+  "pacificEducationCoreState",
+  "currentDayNumber",
+  "currentDay",
+  "lessonsCompleted",
+  "studentName",
+  "alphabetAssessment",
+  "phonicsAssessment",
+  "learningStatus",
+  "pacificOwnerTestDay"
+];
+
+function snapshot(){
+  var saved = {};
+  KEYS.forEach(function(key){
+    saved[key] = window.localStorage.getItem(key);
+  });
+  return saved;
+}
+
+function restore(saved){
+  KEYS.forEach(function(key){
+    if(saved[key] === null){
+      window.localStorage.removeItem(key);
+    }else{
+      window.localStorage.setItem(key, saved[key]);
+    }
+  });
+}
+
+function output(lines, ok){
+  var el = document.getElementById("results");
+  el.className = ok ? "pass" : "fail";
+  el.textContent = lines.join("\n");
+}
+
+function runTest(){
+  var saved = snapshot();
+  var lines = [];
+  var ok = true;
+
+  try{
+    var core = window.PacificEducationCore;
+
+    if(!core){
+      throw new Error("PacificEducationCore is not loaded.");
+    }
+
+    if(typeof core.identity.authorize !== "function"){
+      throw new Error("Core authorization API is not available.");
+    }
+
+    if(typeof window.completeLesson !== "function"){
+      throw new Error("Dashboard completeLesson() is not available.");
+    }
+
+    var authorized = core.identity.authorize({
+      authorized:true,
+      userId:"OWNER-LESSON-TEST",
+      name:"Pacific Education Owner Test",
+      role:"owner",
+      country:"Fiji",
+      jurisdiction:"Fiji"
+    });
+
+    if(authorized !== true){
+      throw new Error("Owner test authorization was not granted.");
+    }
+
+    var setLessonResult = core.setLesson({
+      lessonId:"day-1",
+      day:1,
+      subject:"English",
+      title:"My First English Words",
+      concept:"hello, goodbye, thank you",
+      status:"in_progress"
+    });
+
+    if(!setLessonResult || Number(setLessonResult.day) !== 1){
+      throw new Error("Could not set the Core lesson to Day 1.");
+    }
+
+    localStorage.removeItem("pacificOwnerTestDay");
+
+    var before = core.getState();
+    var beforeHistory = Array.isArray(before.learningHistory) ? before.learningHistory : [];
+    var beforeDay1 = beforeHistory.filter(function(item){
+      return Number(item.day) === 1 && item.status === "completed";
+    }).length;
+
+    var completionResult = window.completeLesson();
+
+    var after = core.getState();
+    var afterHistory = Array.isArray(after.learningHistory) ? after.learningHistory : [];
+    var afterDay1 = afterHistory.filter(function(item){
+      return Number(item.day) === 1 && item.status === "completed";
+    }).length;
+
+    var passed =
+      core.isAuthorized() === true &&
+      completionResult === true &&
+      afterDay1 === beforeDay1 + 1 &&
+      Number(after.lesson.day) === 2 &&
+      Number(localStorage.getItem("currentDayNumber")) === 2 &&
+      Number(localStorage.getItem("lessonsCompleted")) === 1;
+
+    lines.push("Authorization active: " + (core.isAuthorized() === true ? "PASS" : "FAIL"));
+    lines.push("completeLesson() returned true: " + (completionResult === true ? "PASS" : "FAIL"));
+    lines.push("Exactly one new Day 1 completion: " + (afterDay1 === beforeDay1 + 1 ? "PASS" : "FAIL"));
+    lines.push("Core advanced to Day 2: " + (Number(after.lesson.day) === 2 ? "PASS" : "FAIL"));
+    lines.push("Compatibility day is 2: " + (Number(localStorage.getItem("currentDayNumber")) === 2 ? "PASS" : "FAIL"));
+    lines.push("Lessons completed is 1: " + (Number(localStorage.getItem("lessonsCompleted")) === 1 ? "PASS" : "FAIL"));
+    lines.push("");
+    lines.push(passed ? "RESULT: PASS — real Core/Dashboard lesson progress flow works." : "RESULT: FAIL — inspect the checks above.");
+
+    ok = passed;
+  }catch(error){
+    ok = false;
+    lines.push("RESULT: FAIL");
+    lines.push(String(error && error.message ? error.message : error));
+  }finally{
+    restore(saved);
+  }
+
+  output(lines, ok);
+}
+
+document.getElementById("runTest").addEventListener("click", runTest);
+document.getElementById("resetResults").addEventListener("click", function(){
+  var el = document.getElementById("results");
+  el.className = "";
+  el.textContent = "Test results cleared.";
+});
+})(window);
+</script>
+</body>
+</html>
