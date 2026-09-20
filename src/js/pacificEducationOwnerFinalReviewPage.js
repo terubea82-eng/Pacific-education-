@@ -35,12 +35,9 @@ function getRemediationSummary(){var api=window.PacificEducationPrototypeVerific
  "<li>Final reconciliation: "+finalGate.status+"</li>"+
  "<li>Reconciliation record: "+recordGate.status+"</li>"+
  "<li>Acknowledgement: "+ackGate.status+"</li></ul>"+
- "<h3>Live prototype verification reconciliation</h3><ul><li>Automated runtime: " + prototypeReconciliation.automatedRuntimeStatus + "</li><li>Matrix evidence: " + prototypeReconciliation.matrixEvidenceStatus + "</li><li>Reconciliation: " + prototypeReconciliation.status + "</li></ul><h3>Production boundary</h3><p><strong>Production approved:</strong> NO</p><p><strong>Production eligible:</strong> NO</p><p><strong>Deployment authorized:</strong> NO</p>"+
- "<p><strong>External authorized review:</strong> REQUIRED</p>"+
- var remediationSummary=getRemediationSummary();var remediationRoot=document.getElementById("pacificEducationOwnerRemediation")||el;renderRemediationItems(remediationRoot,remediationSummary);;
-
+ "<h3>Live prototype verification reconciliation</h3><ul><li>Automated runtime: "+prototypeReconciliation.automatedRuntimeStatus+"</li><li>Matrix evidence: "+prototypeReconciliation.matrixEvidenceStatus+"</li><li>Reconciliation: "+prototypeReconciliation.status+"</li><li>Current matrix version: "+(prototypeReconciliation.currentMatrixVersion||"unknown")+"</li></ul>"+
+ "<h3>Production boundary</h3><p><strong>Production approved:</strong> NO</p><p><strong>Production eligible:</strong> NO</p><p><strong>Deployment authorized:</strong> NO</p><p><strong>External authorized review:</strong> REQUIRED</p>"+
  "<p>This page is an owner review surface only. It cannot approve, certify, publish, or authorize production deployment.</p></section>";
-}
-window.PacificEducationOwnerFinalReviewPage=Object.freeze({version:"1.0.0",render:render,productionApproved:false,productionEligible:false,deploymentAuthorized:false});
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){render();});else render();
-})(window,document);
+ var remediationSummary=getRemediationSummary();
+ var remediationRoot=document.getElementById("pacificEducationOwnerRemediation")||el;
+ renderRemediationItems(remediationRoot,remediationSummary);
