@@ -1,0 +1,12 @@
+(function(window){"use strict";
+var VERSION="1.0.0",config={startDay:1,daysPerYear:365,startDate:null,holidays:[],revisionDates:[],examDates:[],teacherOverrides:[]};
+function copy(v){return JSON.parse(JSON.stringify(v));}
+function configure(x){x=x||{};Object.keys(config).forEach(function(k){if(x[k]!==undefined)config[k]=copy(x[k])});return copy(config);}
+function key(d){if(!d)return null;var x=new Date(d);if(isNaN(x.getTime()))return null;return x.toISOString().slice(0,10);}
+function typeFor(day,date){var k=key(date);if(config.examDates.indexOf(k)>=0)return"exam";if(config.revisionDates.indexOf(k)>=0)return"revision";if(config.holidays.indexOf(k)>=0)return"holiday";if(date){var n=new Date(date).getDay();if(n===0||n===6)return"weekend"}return"learning";}
+function getDayByDate(date){var k=key(date);return{date:k,type:typeFor(null,date)};}
+function getDayByNumber(day){var d=Number(day);if(!config.startDate)return{dayNumber:d,type:"learning"};var x=new Date(config.startDate);x.setDate(x.getDate()+d-config.startDay);return{dayNumber:d,date:key(x),type:typeFor(d,x)};}
+function add(list,value){var k=key(value);if(k&&list.indexOf(k)<0)list.push(k);return copy(config);}
+function getRemainingLearningDays(startDay,endDay){var out=[];for(var d=Number(startDay||1);d<=Number(endDay||config.daysPerYear);d++){var x=getDayByNumber(d);if(x.type==="learning")out.push(x)}return out;}
+function reset(){config={startDay:1,daysPerYear:365,startDate:null,holidays:[],revisionDates:[],examDates:[],teacherOverrides:[]};}
+window.PacificEducationTeacherCalendar=Object.freeze({name:"PacificEducationTeacherCalendar",version:VERSION,configure:configure,getConfiguration:function(){return copy(config)},addHoliday:function(d){return add(config.holidays,d)},addRevisionDate:function(d){return add(config.revisionDates,d)},addExamDate:function(d){return add(config.examDates,d)},addTeacherOverride:function(o){config.teacherOverrides.push(copy(o));return copy(o)},getDayByDate:getDayByDate,getDayByNumber:getDayByNumber,getRemainingLearningDays:getRemainingLearningDays,reset:reset});})(window);
