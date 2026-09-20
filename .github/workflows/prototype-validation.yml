@@ -47,7 +47,8 @@ jobs:
           for ref in refs:
               if "://" in ref:
                   continue
-              clean_ref = ref.split("?", 1)[0]\n              target = (index.parent / clean_ref).resolve()
+              clean_ref = ref.split("?", 1)[0]
+              target = (index.parent / clean_ref).resolve()
               if not target.exists():
                   missing.append((ref, target))
           if missing:
@@ -56,6 +57,7 @@ jobs:
                   print(f"- {ref} -> {target}")
               sys.exit(1)
           print(f"Validated {len(refs)} local script references.")
+          PY
 
       - name: Validate required publication records
         shell: bash
