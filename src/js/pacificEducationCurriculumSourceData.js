@@ -26,7 +26,7 @@
 (function (global) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     var SOURCES = Object.freeze([
         Object.freeze({
@@ -70,6 +70,128 @@
         })
     ]);
 
+
+
+    /*
+     * Verified resource evidence from the Ministry resource copy.
+     * These are learning-resource topics/activities, NOT official
+     * achievement-indicator statements.
+     */
+    var UNIT_EVIDENCE = Object.freeze([
+        Object.freeze({
+            unit: 1,
+            title: "Who am I?",
+            pages: "5-9",
+            evidence: [
+                "personal introduction",
+                "name, age, clothing and colour questions",
+                "letter recognition and beginning-sound practice"
+            ]
+        }),
+        Object.freeze({
+            unit: 2,
+            title: "My Friends - Sera and Tazim",
+            pages: "10-14",
+            evidence: [
+                "describing friends",
+                "age and clothing questions",
+                "letter recognition and beginning-sound practice"
+            ]
+        }),
+        Object.freeze({
+            unit: 3,
+            title: "My School",
+            pages: "15-19",
+            evidence: [
+                "talking about school",
+                "school/classroom discussion",
+                "letter recognition and beginning-sound practice"
+            ]
+        }),
+        Object.freeze({
+            unit: 4,
+            title: "Getting Ready for School",
+            pages: "20-24",
+            evidence: [
+                "daily routine vocabulary",
+                "sequencing actions before school",
+                "letter recognition and beginning-sound practice"
+            ]
+        }),
+        Object.freeze({
+            unit: 5,
+            title: "A Rainy Day",
+            pages: "25-29",
+            evidence: [
+                "weather discussion",
+                "recitation",
+                "reading familiar words",
+                "beginning and middle sound practice"
+            ]
+        }),
+        Object.freeze({
+            unit: 6,
+            title: "What I Do On A Rainy Day",
+            pages: "30-35",
+            evidence: [
+                "recitation and discussion",
+                "drawing and describing activity",
+                "phonological segmentation of simple words",
+                "beginning, middle and end sound practice"
+            ]
+        }),
+        Object.freeze({
+            unit: 7,
+            title: "Preparing a Family Feast",
+            pages: "36-40",
+            evidence: [
+                "family activity discussion",
+                "helping family",
+                "spelling and reading simple words",
+                "phonics patterns including consonant and vowel sounds"
+            ]
+        }),
+        Object.freeze({
+            unit: 8,
+            title: "A Family Feast",
+            pages: "41-54",
+            evidence: [
+                "picture discussion",
+                "family and food vocabulary",
+                "extended phonics patterns and digraphs",
+                "reading and sound practice"
+            ]
+        })
+    ]);
+
+    var PHONICS_EVIDENCE = Object.freeze([
+        "beginning sounds",
+        "middle sounds",
+        "end sounds",
+        "letter recognition",
+        "simple word segmentation",
+        "ai",
+        "oa",
+        "ie",
+        "ee",
+        "or",
+        "y",
+        "x",
+        "z",
+        "w",
+        "ng",
+        "oo",
+        "ch",
+        "sh",
+        "th",
+        "qu",
+        "ou",
+        "oi",
+        "ue",
+        "er",
+        "ar"
+    ]);
+
     var ALIGNMENT_RECORDS = Object.freeze([
         Object.freeze({
             recordId: "Y1-LLC-SOURCE-01",
@@ -95,6 +217,8 @@
         version: VERSION,
         sources: SOURCES,
         alignmentRecords: ALIGNMENT_RECORDS,
+        unitEvidence: UNIT_EVIDENCE,
+        phonicsEvidence: PHONICS_EVIDENCE,
 
         getSources: function () {
             return SOURCES;
@@ -102,6 +226,14 @@
 
         getAlignmentRecords: function () {
             return ALIGNMENT_RECORDS;
+        },
+
+        getUnitEvidence: function () {
+            return UNIT_EVIDENCE;
+        },
+
+        getPhonicsEvidence: function () {
+            return PHONICS_EVIDENCE;
         }
     });
 
