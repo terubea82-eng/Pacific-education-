@@ -4,7 +4,7 @@
  * MASTER CONTROL
  * =========================================================
  *
- * Version: 1.0.4
+ * Version: 1.0.5
  *
  * Purpose:
  * Central coordination registry for Pacific Education.
@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.4";
+    var MASTER_CONTROL_VERSION = "1.0.5";
 
     /*
      * =======================================================
@@ -124,6 +124,17 @@
             prototypeOnly: true,
             productionSecurityNote:
                 "Official curriculum authority, versioning and sensitive controls must be validated and enforced server-side where required."
+        },
+
+        curriculumSourceData: {
+            file:
+                "src/js/pacificEducationCurriculumSourceData.js",
+            status: STATUS.IN_PROGRESS,
+            purpose:
+                "Verified source metadata and alignment evidence for Fiji curriculum resources.",
+            prototypeOnly: true,
+            validationNote:
+                "Source data is not treated as official current achievement-indicator data until authorized current Ministry documents are validated."
         },
 
         centralBridge: {
