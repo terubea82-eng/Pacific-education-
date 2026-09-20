@@ -14,6 +14,8 @@ function evaluate(){
  var now=Date.now();
  var staleTests=[];
  var missingEvidenceTests=[];
+ var orphanEvidenceTests=[];
+ var evidenceRecordApi=window.PacificEducationFullSystemTestEvidenceRecord||null;
  var remediationByStage={};
  var stageMap={
   "offline-sync":"Offline","offline-sync-batch":"Offline","offline-sync-fail-closed":"Offline",
@@ -45,9 +47,11 @@ function evaluate(){
   matrixEvidenceComplete:matrixComplete,
   missingEvidenceTests:missingEvidenceTests,
   staleTests:staleTests,
+  orphanEvidenceTests:orphanEvidenceTests,
   staleThresholdHours:24,
   remediationByStage:remediationByStage,
   remediationStageCount:Object.keys(remediationByStage).length,
+  evidenceRecordEvaluationAvailable:!!(evidenceRecordApi&&typeof evidenceRecordApi.evaluate==="function"),
   reviewerEvidenceRequired:true,
   productionApproved:false,
   productionEligible:false,
