@@ -16,7 +16,7 @@ h+="<p><strong>Review closed:</strong> "+(x.reviewClosed?"YES":"NO")+" | <strong
 h+="<p><strong>Production approved:</strong> NO | <strong>Production eligible:</strong> NO</p><h3>Blockers</h3><ul>";
 if(!x.blockers.length)h+="<li>None detected by this prototype gate.</li>";
 x.blockers.forEach(function(b){h+="<li>"+esc(b)+"</li>";});
-h+="</ul><button type="button" id="pacificRefreshExternalReviewClosureGate">Refresh Closure Gate</button>";
+h+='</ul><button type="button" id="pacificRefreshExternalReviewClosureGate">Refresh Closure Gate</button>';
 h+="<p><small>READY-FOR-FINAL-RELEASE-CONTROL only returns the package to final controls. It is not production authorization.</small></p></section>";
 t.innerHTML=h;
 document.getElementById("pacificRefreshExternalReviewClosureGate").onclick=function(){render(targetId);};
