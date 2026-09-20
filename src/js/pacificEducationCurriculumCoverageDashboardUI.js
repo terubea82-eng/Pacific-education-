@@ -12,6 +12,10 @@
         return window.PacificEducationCurriculumCoverageEngine || null;
     }
 
+    function studentContext() {
+        return window.PacificEducationStudentCoverageContext || null;
+    }
+
     function escapeHtml(value) {
         return String(value == null ? "" : value)
             .replace(/&/g, "&amp;")
