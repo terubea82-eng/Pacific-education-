@@ -308,6 +308,19 @@
         });
         if (status) status.textContent = ok ? "Authorized" : "Authorization failed";
         if (ok) {
+            /*
+             * A previous owner/developer test must not block this
+             * real-progress prototype check. Exit Owner Test Mode
+             * through its existing dashboard API; this does not
+             * alter Core learning history or authorization.
+             */
+            if (
+                window.PacificEducationDashboards &&
+                typeof window.PacificEducationDashboards.clearOwnerTestDay === "function"
+            ) {
+                window.PacificEducationDashboards.clearOwnerTestDay();
+            }
+
             const button = document.getElementById("prototypeAuthorizeButton");
             if (button) button.textContent = "Authorized Student Session Active";
 
