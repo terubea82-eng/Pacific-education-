@@ -195,6 +195,20 @@
             prototypeOnly: true
         },
 
+        fullSystemTestReconciliationAcknowledgement: {
+            file: "src/js/pacificEducationFullSystemTestReconciliationAcknowledgement.js",
+            status: STATUS.TESTING,
+            purpose: "Records acknowledgement of the latest full-system test reconciliation; never grants production authority.",
+            prototypeOnly: true
+        },
+
+        fullSystemTestReconciliationAcknowledgementVerificationGate: {
+            file: "src/js/pacificEducationFullSystemTestReconciliationAcknowledgementVerificationGate.js",
+            status: STATUS.TESTING,
+            purpose: "Fail-closed verification that the latest full-system test reconciliation acknowledgement matches the latest reconciliation.",
+            prototypeOnly: true
+        },
+
         fullSystemTestReconciliationRecord: {
             file: "src/js/pacificEducationFullSystemTestReconciliationRecord.js",
             status: STATUS.TESTING,
@@ -548,6 +562,10 @@
         "js/pacificEducationFullSystemTestReconciliationRecord.js",
 
         "js/pacificEducationFullSystemTestReconciliationVerificationGate.js",
+
+        "js/pacificEducationFullSystemTestReconciliationAcknowledgement.js",
+
+        "js/pacificEducationFullSystemTestReconciliationAcknowledgementVerificationGate.js",
 
         "js/app.js"
     ]);
