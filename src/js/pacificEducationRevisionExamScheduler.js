@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function copy(value) {
         return JSON.parse(JSON.stringify(value));
@@ -50,18 +50,46 @@
         };
     }
 
-    function addExamDay(day, label) {
-        var cal = calendar();
+    function addExamDay(day, label, indicatorIds, studentId) {
         var dayNumber = normaliseDay(day);
+        var ids = Array.isArray(indicatorIds) ? indicatorIds.filter(Boolean) : [];
+        var bridge = window.PacificEducationCurriculumAssessmentBridge || null;
 
-        if (!cal || typeof cal.addExamDate !== "function" || dayNumber === null) {
+        if (dayNumber === null) {
             return { success: false, error: "Teacher calendar or day unavailable" };
+        }
+        if (!ids.length) {
+            return { success: false, error: "Exam indicator IDs are required; exams must identify covered indicators." };
+        }
+        if (!bridge || typeof bridge.scheduleExam !== "function") {
+            return { success: false, error: "Assessment coverage bridge unavailable" };
+        }
+
+        var eligibility = bridge.scheduleExam({
+            indicatorIds: ids,
+            studentId: studentId || null,
+            date: label || null
+        });
+        if (!eligibility.scheduled) {
+            return {
+                success: false,
+                error: eligibility.reason || "Exam blocked by curriculum coverage rules",
+                eligibility: copy(eligibility),
+                prototype: true
+            };
+        }
+
+        var cal = calendar();
+        if (!cal || typeof cal.addExamDate !== "function") {
+            return { success: false, error: "Teacher calendar unavailable", eligibility: copy(eligibility) };
         }
 
         var result = typeof cal.addExamDay === "function" ? cal.addExamDay(dayNumber) : cal.addExamDate(dayNumber);
         return {
             success: true,
             dayNumber: dayNumber,
+            indicatorIds: ids,
+            eligibility: copy(eligibility),
             result: copy(result),
             prototype: true
         };
