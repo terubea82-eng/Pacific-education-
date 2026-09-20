@@ -3,7 +3,7 @@
  * payments or child-identifying records are cached.
  */
 "use strict";
-const CACHE_NAME="pacific-education-prototype-src-v2";
+const CACHE_NAME="pacific-education-prototype-src-v3";
 const CORE_ASSETS=["./","./index.html","./js/app.js","./js/dailyLessons.js","./js/dashboards.js","./js/assessments.js","./js/pacificEducationOfflineRuntime.js","./js/pacificEducationAccessibilityRuntime.js"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(CORE_ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(self.clients.claim()));
