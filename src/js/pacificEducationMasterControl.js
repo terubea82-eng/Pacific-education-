@@ -188,6 +188,13 @@
             prototypeOnly: true
         },
 
+        prototypeTestEvidenceBridge: {
+            file: "src/js/pacificEducationPrototypeTestEvidenceBridge.js",
+            status: STATUS.TESTING,
+            purpose: "Feeds owner prototype test evidence into Full System Testing review without granting production authority.",
+            prototypeOnly: true
+        },
+
         ownerPrototypeTestSession: {
             file: "src/js/pacificEducationOwnerPrototypeTestSession.js",
             status: STATUS.TESTING,
@@ -391,6 +398,13 @@
             from:
                 "Owner Prototype Test Session",
             to:
+                "Prototype Test Evidence Bridge"
+        },
+
+        {
+            from:
+                "Prototype Test Evidence Bridge",
+            to:
                 "Full System Testing"
         },
 
@@ -450,6 +464,8 @@
         "js/pacificEducationOwnerPrototypeTestChecklist.js",
 
         "js/pacificEducationOwnerPrototypeTestSession.js",
+
+        "js/pacificEducationPrototypeTestEvidenceBridge.js",
 
         "js/app.js"
     ]);
