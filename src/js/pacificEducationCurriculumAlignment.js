@@ -19,7 +19,7 @@
 (function (global) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     var AUTHORITY = Object.freeze({
         jurisdiction: "Fiji",
@@ -135,6 +135,72 @@
             dailyActivityType: "sound-pattern and word-reading practice",
             assessmentUse: "FORMATIVE_ONLY",
             validationStatus: "NOT_VALIDATED"
+        })
+    ]);
+
+
+
+    /*
+     * YEAR 1 ALIGNMENT DATA MODEL
+     * The indicatorText field is deliberately null until the
+     * current authorized Ministry prescription is validated.
+     */
+    var YEAR1_ALIGNMENT_TABLE = Object.freeze([
+        Object.freeze({
+            rowId: "Y1-ALIGN-001",
+            level: "Year 1",
+            subject: "English",
+            strand: "Language, Literacy and Communication",
+            subStrand: "Speaking and listening",
+            achievementIndicator: null,
+            indicatorStatus: "NOT_VALIDATED",
+            sourceUnit: 1,
+            sourceEvidence: "Personal introduction; name, age, clothing and colour questions.",
+            term: null,
+            dailyActivityRange: null,
+            assessmentCoverage: "FORMATIVE_ONLY"
+        }),
+        Object.freeze({
+            rowId: "Y1-ALIGN-002",
+            level: "Year 1",
+            subject: "English",
+            strand: "Language, Literacy and Communication",
+            subStrand: "Phonics and early word reading",
+            achievementIndicator: null,
+            indicatorStatus: "NOT_VALIDATED",
+            sourceUnit: 1,
+            sourceEvidence: "Letter recognition and beginning-sound practice.",
+            term: null,
+            dailyActivityRange: null,
+            assessmentCoverage: "FORMATIVE_ONLY"
+        }),
+        Object.freeze({
+            rowId: "Y1-ALIGN-003",
+            level: "Year 1",
+            subject: "English",
+            strand: "Language, Literacy and Communication",
+            subStrand: "Reading and phonological awareness",
+            achievementIndicator: null,
+            indicatorStatus: "NOT_VALIDATED",
+            sourceUnit: 5,
+            sourceEvidence: "Reading familiar words; beginning and middle sound practice.",
+            term: null,
+            dailyActivityRange: null,
+            assessmentCoverage: "FORMATIVE_ONLY"
+        }),
+        Object.freeze({
+            rowId: "Y1-ALIGN-004",
+            level: "Year 1",
+            subject: "English",
+            strand: "Language, Literacy and Communication",
+            subStrand: "Phonics and word reading",
+            achievementIndicator: null,
+            indicatorStatus: "NOT_VALIDATED",
+            sourceUnit: 8,
+            sourceEvidence: "Extended phonics patterns and digraphs.",
+            term: null,
+            dailyActivityRange: null,
+            assessmentCoverage: "FORMATIVE_ONLY"
         })
     ]);
 
