@@ -13,8 +13,20 @@
         button { padding: 10px 16px; margin: 5px; cursor: pointer; }
         .status { padding: 10px; border-radius: 6px; }
     </style>
-</head>
-<body>
+<style id="pacificEducationAccessibilityStyles">
+html[data-text-scale="large"]{font-size:112.5%}
+html[data-text-scale="x-large"]{font-size:125%}
+#pacificEducationAccessibilityControls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+#pacificEducationAccessibilityControls button{min-height:44px;padding:10px 14px}
+</style></head>
+<body><section id="pacificEducationAccessibilityControls" aria-label="Accessibility controls">
+<strong>Accessibility:</strong>
+<button type="button" onclick="PacificEducationAccessibilityRuntime.setTextScale('normal')">Normal text</button>
+<button type="button" onclick="PacificEducationAccessibilityRuntime.setTextScale('large')">Large text</button>
+<button type="button" onclick="PacificEducationAccessibilityRuntime.setTextScale('x-large')">Extra large</button>
+<button type="button" onclick="PacificEducationAccessibilityRuntime.stopSpeaking()">Stop speech</button>
+<span id="pacificEducationAccessibilityStatus" aria-live="polite"></span>
+</section>
 <header>
     <h1>Pacific Education</h1>
     <p>Learning • Assessment • Dashboards • Education Services</p>
