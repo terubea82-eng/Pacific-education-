@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pacific Education — Assessment Gate Test</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:760px;margin:24px auto;padding:16px;line-height:1.5}
+.warning{border:2px solid #b00;padding:12px;border-radius:8px}
+button{padding:12px 16px;margin:8px 0;font-size:16px}
+#results{white-space:pre-wrap;background:#f5f5f5;padding:12px;border-radius:8px}
+.pass{font-weight:bold}.fail{font-weight:bold}
+</style>
+</head>
+<body>
+<h1>Pacific Education — Assessment Gate Test</h1>
+<div class="warning">
+<strong>OWNER / DEVELOPER TEST ONLY</strong><br>
+This page is not part of production startup. It tests the existing Core assessment API and Dashboard progression gates, then restores the saved browser test state.
+</div>
+
+<p>This test verifies that Day 30 requires a passed Alphabet Assessment and Day 60 requires a passed Phonics Assessment.</p>
+<button type="button" id="runTest">Run Assessment Gate Test</button>
+<button type="button" id="resetResults">Clear Test Results</button>
+<div id="results">Ready.</div>
+
+<script src="../js/pacificEducationCore.js"></script>
+<script src="../js/dailyLessons.js"></script>
+<script src="../js/dashboards.js"></script>
+
+<script>
+(function(window){
+"use strict";
+
+var KEYS = [
+  "pacificEducationCoreState",
+  "currentDayNumber",
+  "currentDay",
+  "lessonsCompleted",
+  "studentName",
+  "alphabetAssessment",
+  "phonicsAssessment",
+  "learningStatus",
+  "pacificOwnerTestDay"
+];
+
+function snapshot(){
+  var saved = {};
+  KEYS.forEach(function(key){
+    saved[key] = window.localStorage.getItem(key);
+  });
+  return saved;
+}
+
+function restore(saved){
+  KEYS.forEach(function(key){
+    if(saved[key] === null){
+      window.localStorage.removeItem(key);
+    }else{
+      window.localStorage.setItem(key, saved[key]);
+    }
+  });
+}
+
+function output(lines, ok){
+  var el = document.getElementById("results");
+  el.className = ok ? "pass" : "fail";
+  el.textContent = lines.join("\n");
+}
+
+function setTestLesson(core, day, title){
+  return core.setLesson({
+    lessonId:"assessment-gate-day-" + day,
+    day:day,
+    subject:"English",
+    title:title,
+    concept:"assessment gate test",
+    status:"in_progress"
+  });
+}
+
+function runTest(){
+  var saved = snapshot();
+  var lines = [];
+  var ok = true;
+
+  try{
+    var core = window.PacificEducationCore;
+
+    if(!core){
+      throw new Error("PacificEducationCore is not loaded.");
+    }
+
+    if(typeof core.identity.authorize !== "function"){
+      throw new Error("Core authorization API is not available.");
+    }
+
+    if(typeof core.addAssessment !== "function"){
+      throw new Error("Core assessment API is not available.");
+    }
+
+    if(typeof window.completeLesson !== "function"){
+      throw new Error("Dashboard completeLesson() is not available.");
+    }
+
+    var authorized = core.identity.authorize({
+      authorized:true,
+      userId:"OWNER-ASSESSMENT-GATE-TEST",
+      name:"Pacific Education Owner Assessment Test",
+      role:"owner",
+      country:"Fiji",
+      jurisdiction:"Fiji"
+    });
+
+    if(authorized !== true){
+      throw new Error("Owner test authorization was not granted.");
+    }
+
+    localStorage.removeItem("pacificOwnerTestDay");
+
+    var day30Set = setTestLesson(core, 30, "Day 30 Assessment Gate Test");
+    if(!day30Set || Number(day30Set.day) !== 30){
+      throw new Error("Could not set Core lesson to Day 30.");
+    }
+
+    var before30 = core.getState();
+    var before30Count = Array.isArray(before30.learningHistory)
+      ? before30.learningHistory.filter(function(item){
+          return Number(item.day) === 30 && item.status === "completed";
+        }).length
+      : 0;
+
+    var blocked30 = window.completeLesson();
+    var afterBlocked30 = core.getState();
+
+    var day30Blocked =
+      blocked30 === false &&
+      Number(afterBlocked30.lesson.day) === 30 &&
+      (Array.isArray(afterBlocked30.learningHistory)
+        ? afterBlocked30.learningHistory.filter(function(item){
+            return Number(item.day) === 30 && item.status === "completed";
+          }).length
+        : 0) === before30Count;
+
+    var alphabetAssessment = core.addAssessment({
+      assessmentId:"OWNER-TEST-ALPHABET-30",
+      type:"alphabet",
+      title:"Alphabet Assessment",
+      day:30,
+      score:80,
+      pass:true
+    });
+
+    if(!alphabetAssessment){
+      throw new Error("Could not record the test Alphabet Assessment.");
+    }
+
+    var passed30 = window.completeLesson();
+    var after30 = core.getState();
+
+    var day30Passed =
+      passed30 === true &&
+      Number(after30.lesson.day) === 31;
+
+    var day60Set = setTestLesson(core, 60, "Day 60 Assessment Gate Test");
+    if(!day60Set || Number(day60Set.day) !== 60){
+      throw new Error("Could not set Core lesson to Day 60.");
+    }
+
+    var before60 = core.getState();
+    var before60Count = Array.isArray(before60.learningHistory)
+      ? before60.learningHistory.filter(function(item){
+          return Number(item.day) === 60 && item.status === "completed";
+        }).length
+      : 0;
+
+    var blocked60 = window.completeLesson();
+    var afterBlocked60 = core.getState();
+
+    var day60Blocked =
+      blocked60 === false &&
+      Number(afterBlocked60.lesson.day) === 60 &&
+      (Array.isArray(afterBlocked60.learningHistory)
+        ? afterBlocked60.learningHistory.filter(function(item){
+            return Number(item.day) === 60 && item.status === "completed";
+          }).length
+        : 0) === before60Count;
+
+    var phonicsAssessment = core.addAssessment({
+      assessmentId:"OWNER-TEST-PHONICS-60",
+      type:"phonics",
+      title:"Phonics Assessment",
+      day:60,
+      score:80,
+      pass:true
+    });
+
+    if(!phonicsAssessment){
+      throw new Error("Could not record the test Phonics Assessment.");
+    }
+
+    var passed60 = window.completeLesson();
+    var after60 = core.getState();
+
+    var day60Passed =
+      passed60 === true &&
+      Number(after60.lesson.day) === 61;
+
+    var allPassed =
+      core.isAuthorized() === true &&
+      day30Blocked &&
+      day30Passed &&
+      day60Blocked &&
+      day60Passed;
+
+    lines.push("Authorization active: " + (core.isAuthorized() === true ? "PASS" : "FAIL"));
+    lines.push("Day 30 blocked without Alphabet Assessment: " + (day30Blocked ? "PASS" : "FAIL"));
+    lines.push("Day 30 advanced after passed Alphabet Assessment: " + (day30Passed ? "PASS" : "FAIL"));
+    lines.push("Day 60 blocked without Phonics Assessment: " + (day60Blocked ? "PASS" : "FAIL"));
+    lines.push("Day 60 advanced after passed Phonics Assessment: " + (day60Passed ? "PASS" : "FAIL"));
+    lines.push("");
+    lines.push(allPassed
+      ? "RESULT: PASS — assessment progression gates work."
+      : "RESULT: FAIL — inspect the checks above.");
+
+    ok = allPassed;
+  }catch(error){
+    ok = false;
+    lines.push("RESULT: FAIL");
+    lines.push(String(error && error.message ? error.message : error));
+  }finally{
+    restore(saved);
+  }
+
+  output(lines, ok);
+}
+
+document.getElementById("runTest").addEventListener("click", runTest);
+document.getElementById("resetResults").addEventListener("click", function(){
+  var el = document.getElementById("results");
+  el.className = "";
+  el.textContent = "Test results cleared.";
+});
+})(window);
+</script>
+</body>
+</html>
