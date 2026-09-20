@@ -1,10 +1,17 @@
 (function(window){"use strict";
-var VERSION="1.0.0";
+var VERSION="1.1.0";
 function copy(v){return JSON.parse(JSON.stringify(v));}
 function initialize(){var d=window.PacificEducationCurriculumData;if(!d)return{success:false,error:"Curriculum Data unavailable"};return d.registerWithRegistry();}
 function validateConnection(){var names=["PacificEducationCurriculumData","PacificEducationCurriculumAlignmentRegistry","PacificEducationCurriculumAssessmentMap","PacificEducationCurriculumIntegrationEngine","PacificEducationTeacherCalendar","PacificEducationCurriculumValidationGuard","PacificEducationDailyCurriculumEngine"];var missing=names.filter(function(n){return!window[n]});return{connected:missing.length===0,missing:missing};}
 function generateDailyLesson(c){var e=window.PacificEducationDailyCurriculumEngine;if(!e)return{success:false,error:"Daily Curriculum Engine unavailable"};var p=e.generateDailyPlan(c||{});if(!p.success)return p;return{success:true,status:"generated",dayNumber:p.dayNumber,lesson:{dayNumber:p.dayNumber,level:p.level,subjectId:p.subjectId,term:p.term,title:(p.level||"Learner")+" — "+(p.subjectId||"Learning")+" — Day "+p.dayNumber,learningAreas:copy(p.indicators),activities:copy(p.activities),assessments:copy(p.assessments),calendar:copy(p.calendar),prototype:true},sourcePlan:p};}
-function recordTeacherEvidence(c){var m=window.PacificEducationCurriculumAssessmentMap;if(!m)return{success:false,error:"Assessment Map unavailable"};var ev=m.recordEvidence(c||{});return{success:true,evidence:ev,decision:m.getCoverageDecision(c||{})};}
+function recordTeacherEvidence(c){
+var b=window.PacificEducationCurriculumAssessmentBridge;
+if(!b||typeof b.recordTeacherEvidence!=="function")
+return{success:false,error:"Assessment Coverage Bridge unavailable"};
+var result=b.recordTeacherEvidence(c||{});
+if(!result.recorded)return{success:false,blocked:true,reason:result.reason,indicatorCheck:result.indicatorCheck||null};
+return{success:true,evidence:result.evidence,decision:b.getCoverageDecision(c||{})};
+}
 function getAssessmentForIndicator(id){var m=window.PacificEducationCurriculumAssessmentMap;return m?m.getForIndicator(id):[];}
 function getIntegrationForIndicator(i,l,s){var e=window.PacificEducationCurriculumIntegrationEngine;return e?e.buildFromIndicator(i,l,s):null;}
 function getCalendarStatus(d){var c=window.PacificEducationTeacherCalendar;return c?c.getDayByDate(d):null;}
