@@ -70,11 +70,14 @@
 
         const core = getCore();
 
+        /*
+         * Education Core is the single authorization authority.
+         * Do not read or expose Core's internal state directly.
+         */
         return !!(
             core &&
-            core.identity &&
-            typeof core.identity.isAuthorized === "function" &&
-            core.identity.isAuthorized()
+            typeof core.isAuthorized === "function" &&
+            core.isAuthorized() === true
         );
 
     }
