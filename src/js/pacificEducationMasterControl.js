@@ -188,6 +188,13 @@
             prototypeOnly: true
         },
 
+        fullSystemTestReconciliationVerificationGate: {
+            file: "src/js/pacificEducationFullSystemTestReconciliationVerificationGate.js",
+            status: STATUS.TESTING,
+            purpose: "Fail-closed verification of the full-system test reconciliation record.",
+            prototypeOnly: true
+        },
+
         fullSystemTestReconciliationRecord: {
             file: "src/js/pacificEducationFullSystemTestReconciliationRecord.js",
             status: STATUS.TESTING,
@@ -539,6 +546,8 @@
         "js/pacificEducationFullSystemTestVerificationGate.js",
 
         "js/pacificEducationFullSystemTestReconciliationRecord.js",
+
+        "js/pacificEducationFullSystemTestReconciliationVerificationGate.js",
 
         "js/app.js"
     ]);
