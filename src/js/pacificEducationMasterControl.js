@@ -61,7 +61,7 @@
 
         masterInclusionSpecification: {
             file:
-                "src/js/pacificEducationMasterInclusionSpecification.js",
+                "../js/pacificEducationMasterInclusionSpecification.js",
             status: STATUS.COMPLETE
         },
 
@@ -87,13 +87,13 @@
 
         annualGdpPricingEngine: {
             file:
-                "src/js/pacificEducationAnnualGdpPricingEngine.js",
+                "js/pacificEducationAnnualGdpPricingEngine.js",
             status: STATUS.COMPLETE
         },
 
         pricingAuditGuard: {
             file:
-                "src/js/pacificEducationPricingAuditGuard.js",
+                "js/pacificEducationPricingAuditGuard.js",
             status: STATUS.COMPLETE
         },
 
@@ -111,13 +111,13 @@
 
         assessmentBridge: {
             file:
-                "src/js/pacificEducationAssessmentBridge.js",
+                "js/pacificEducationAssessmentBridge.js",
             status: STATUS.IN_PROGRESS
         },
 
         curriculumAlignment: {
             file:
-                "src/js/pacificEducationCurriculumAlignment.js",
+                "js/pacificEducationCurriculumAlignmentRegistry.js",
             status: STATUS.IN_PROGRESS,
             purpose:
                 "Controlled registry for aligning daily learning and assessment activities to the official Fiji curriculum.",
@@ -128,7 +128,7 @@
 
         curriculumSourceData: {
             file:
-                "src/js/pacificEducationCurriculumSourceData.js",
+                "js/pacificEducationCurriculumSourceVerification.js",
             status: STATUS.IN_PROGRESS,
             purpose:
                 "Verified source metadata and alignment evidence for Fiji curriculum resources.",
@@ -684,7 +684,7 @@
 
         "../js/pacificEducationCore.js",
 
-        "src/js/pacificEducationMasterInclusionSpecification.js",
+        "../js/pacificEducationMasterInclusionSpecification.js",
 
         "js/pacificEducationCoreBridge.js",
 
@@ -700,7 +700,7 @@
 
         "js/pacificEducationSecureLinkAuthorization.js",
 
-        "src/js/pacificEducationAssessmentBridge.js",
+        "js/pacificEducationAssessmentBridge.js",
 
         "../js/pacificEducationAssessmentIntegration.js",
 
