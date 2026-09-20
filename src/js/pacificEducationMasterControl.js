@@ -4,7 +4,7 @@
  * MASTER CONTROL
  * =========================================================
  *
- * Version: 1.0.5
+ * Version: 1.0.6
  *
  * Purpose:
  * Central coordination registry for Pacific Education.
@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.5";
+    var MASTER_CONTROL_VERSION = "1.0.6";
 
     /*
      * =======================================================
@@ -256,6 +256,54 @@
             status: STATUS.TESTING,
             purpose: "Aggregated owner prototype test-session evidence package.",
             prototypeOnly: true
+        },
+        
+        curriculumAlignmentNextStage: {
+            file: "src/js/pacificEducationCurriculumAlignmentNextStage.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Locks curriculum alignment authority and achievement-indicator distribution rules for continued prototype work.",
+            prototypeOnly: true,
+            externalValidationRequired: true
+        },
+
+        calendarNextStage: {
+            file: "src/js/pacificEducationCalendarNextStage.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Coordinates teacher Day 1 setup, redistribution, covered-indicator assessment timing and school calendar handling.",
+            prototypeOnly: true,
+            externalValidationRequired: true
+        },
+
+        accessibilityNextStage: {
+            file: "src/js/pacificEducationAccessibilityNextStage.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Coordinates accessibility requirements including larger text, text-to-speech and usable interaction.",
+            prototypeOnly: true,
+            humanTestingRequired: true
+        },
+
+        safeguardingNextStage: {
+            file: "src/js/pacificEducationSafeguardingNextStage.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Locks prototype safeguarding requirements and fail-closed production boundaries.",
+            prototypeOnly: true,
+            specialistReviewRequired: true
+        },
+
+        offlineNextStage: {
+            file: "src/js/pacificEducationOfflineNextStage.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Coordinates offline, cached and low-bandwidth learning behavior without treating client storage as secure.",
+            prototypeOnly: true,
+            realDeviceTestingRequired: true
+        },
+
+        testingNextStage: {
+            file: "src/js/pacificEducationTestingNextStage.js",
+            status: STATUS.TESTING,
+            purpose: "Defines continued unit, integration, accessibility, fairness, security, recovery and independent testing requirements.",
+            prototypeOnly: true,
+            independentReviewRequired: true
         }
     });
 
@@ -309,51 +357,56 @@
 
         calendar: {
             number: 9,
-            status: STATUS.NOT_STARTED
+            status: STATUS.IN_PROGRESS
         },
 
         safeguarding: {
             number: 10,
-            status: STATUS.NOT_STARTED
+            status: STATUS.IN_PROGRESS
         },
 
         accessibility: {
             number: 11,
-            status: STATUS.NOT_STARTED
+            status: STATUS.IN_PROGRESS
+        },
+
+        offline: {
+            number: 12,
+            status: STATUS.IN_PROGRESS
         },
 
         marketplace: {
-            number: 12,
-            status: STATUS.NOT_STARTED
-        },
-
-        payments: {
             number: 13,
             status: STATUS.NOT_STARTED
         },
 
-        integrations: {
+        payments: {
             number: 14,
             status: STATUS.NOT_STARTED
         },
 
-        testing: {
+        integrations: {
             number: 15,
             status: STATUS.NOT_STARTED
         },
 
-        securityReview: {
+        testing: {
             number: 16,
             status: STATUS.NOT_STARTED
         },
 
-        production: {
+        securityReview: {
             number: 17,
             status: STATUS.NOT_STARTED
         },
 
-        publication: {
+        production: {
             number: 18,
+            status: STATUS.NOT_STARTED
+        },
+
+        publication: {
+            number: 19,
             status: STATUS.NOT_STARTED
         }
     });
@@ -514,10 +567,38 @@
         },
 
         {
-            from:
-                "Full System Test Reconciliation Acknowledgement Verification Gate",
-            to:
-                "Owner Final Review"
+            from: "Full System Test Reconciliation Acknowledgement Verification Gate",
+            to: "Owner Final Review"
+        },
+
+        {
+            from: "Curriculum Alignment Next Stage",
+            to: "Calendar Next Stage"
+        },
+
+        {
+            from: "Calendar Next Stage",
+            to: "Accessibility Next Stage"
+        },
+
+        {
+            from: "Accessibility Next Stage",
+            to: "Safeguarding Next Stage"
+        },
+
+        {
+            from: "Safeguarding Next Stage",
+            to: "Offline Next Stage"
+        },
+
+        {
+            from: "Offline Next Stage",
+            to: "Testing Next Stage"
+        },
+
+        {
+            from: "Testing Next Stage",
+            to: "Owner Final Review"
         },
 
         {
@@ -594,6 +675,13 @@
         "js/pacificEducationFullSystemTestReconciliationAcknowledgement.js",
 
         "js/pacificEducationFullSystemTestReconciliationAcknowledgementVerificationGate.js",
+
+        "js/pacificEducationCurriculumAlignmentNextStage.js",
+        "js/pacificEducationCalendarNextStage.js",
+        "js/pacificEducationAccessibilityNextStage.js",
+        "js/pacificEducationSafeguardingNextStage.js",
+        "js/pacificEducationOfflineNextStage.js",
+        "js/pacificEducationTestingNextStage.js",
 
         "js/app.js"
     ]);
