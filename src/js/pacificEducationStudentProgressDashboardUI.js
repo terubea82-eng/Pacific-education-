@@ -28,6 +28,10 @@
         return window.PacificEducationDailyCurriculumEngine || null;
     }
 
+    function progressRecorder() {
+        return window.PacificEducationDailyProgressRecorder || null;
+    }
+
     function assessmentMap() {
         return window.PacificEducationCurriculumAssessmentMap || null;
     }
@@ -144,7 +148,8 @@
                 " integrated subject connection(s) available." :
                 "Integration plan unavailable."
             ) + '</p>' +
-            '<h3>Current Assessment Evidence</h3>' +
+            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div>
+<h3>Current Assessment Evidence</h3>' +
             '<p>' + (assessments.length ?
                 escapeHtml(String(assessments.length) + " assessment record(s) linked.") :
                 "No assessment records linked to the current indicator.") + '</p>' +
@@ -157,6 +162,43 @@
             '</ul>' +
             '<p><small>Prototype only. Student reference data is not production identity or authorization.</small></p>' +
             '</div>';
+
+        var recorder = progressRecorder();
+        var message = target.querySelector("#pacificEducationDailyProgressMessage");
+        function saveProgress(method) {
+            if (!recorder || typeof recorder[method] !== "function") {
+                if (message) message.textContent = "Daily Progress Recorder unavailable.";
+                return;
+            }
+            var result = recorder[method]({
+                level: level || "Class 1",
+                subjectId: subjectId,
+                term: term,
+                dayNumber: currentDay,
+                studentId: studentId
+            });
+            if (message) {
+                message.textContent = result.success ?
+                    "Progress recorded for Day " + currentDay + "." :
+                    (result.error || "Progress could not be recorded.");
+            }
+            if (result.success) {
+                render(targetId);
+                document.dispatchEvent(new CustomEvent("pacificEducationCoverageRefresh"));
+            }
+        }
+        var taughtButton = target.querySelector("#pacificEducationRecordDailyProgress");
+        var practiceButton = target.querySelector("#pacificEducationRecordDailyPractice");
+        var assessmentButton = target.querySelector("#pacificEducationRecordDailyAssessment");
+        if (taughtButton) taughtButton.addEventListener("click", function() {
+            saveProgress("completeDailyLesson");
+        });
+        if (practiceButton) practiceButton.addEventListener("click", function() {
+            saveProgress("recordPractised");
+        });
+        if (assessmentButton) assessmentButton.addEventListener("click", function() {
+            saveProgress("recordAssessed");
+        });
 
         return {
             success: true,
