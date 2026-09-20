@@ -13,6 +13,10 @@ function verify(name){
  return api.verify();
 }
 function renderRemediationItems(root,summary){if(!root||!summary)return;var box=document.createElement("section");box.setAttribute("aria-label","Owner remediation items");var h=document.createElement("h3");h.textContent="Remediation: exact blockers and required actions";box.appendChild(h);var stages=summary.stages||{};var keys=Object.keys(stages);if(!keys.length){var ok=document.createElement("p");ok.textContent="No remediation blockers reported by the prototype reconciliation layer.";box.appendChild(ok);}else{keys.forEach(function(stage){var sh=document.createElement("h4");sh.textContent=stage;box.appendChild(sh);var ul=document.createElement("ul");(stages[stage]||[]).forEach(function(item){var li=document.createElement("li");li.textContent=item.testId+": "+item.reason+" — required action: obtain current evidence and complete authorized review.";ul.appendChild(li);});box.appendChild(ul);});}root.appendChild(box);}
+
+ var remediationSummary=getRemediationSummary();
+ var remediationRoot=document.getElementById("pacificEducationOwnerRemediation")||document.getElementById("pacificEducationOwnerFinalReview");
+ if(remediationRoot){remediationRoot.innerHTML="";renderRemediationItems(remediationRoot,remediationSummary);}
  function render(id){
  var el=document.getElementById(id||"pacificEducationOwnerFinalReviewPage");if(!el)return;
  var finalGate=verify("PacificEducationFinalReleaseAuthorizedReviewFinalReconciliationGate");
