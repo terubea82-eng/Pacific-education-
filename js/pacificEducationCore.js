@@ -1512,6 +1512,45 @@
     return true;
   }
 
+  /*
+   * Prototype test-session progress reset.
+   * Preserves the current prototype identity/workspace/student/curriculum
+   * context while clearing learner progress and assessment history.
+   * Prototype only. This is not a production data-management function.
+   */
+  function resetPrototypeProgress() {
+    const preserved = {
+      identity: clone(state.identity),
+      workspace: clone(state.workspace),
+      student: clone(state.student),
+      curriculum: clone(state.curriculum)
+    };
+
+    state = clone(DEFAULT_STATE);
+    state.identity = preserved.identity || clone(DEFAULT_STATE.identity);
+    state.workspace = preserved.workspace || clone(DEFAULT_STATE.workspace);
+    state.student = preserved.student || clone(DEFAULT_STATE.student);
+    state.curriculum = preserved.curriculum || clone(DEFAULT_STATE.curriculum);
+
+    saveState();
+
+    audit(
+      "PROTOTYPE_PROGRESS_RESET",
+      {
+        preservedAuthorization: !!(
+          state.identity && state.identity.authorized === true
+        )
+      }
+    );
+
+    emit(
+      "prototypeProgressReset",
+      {}
+    );
+
+    return true;
+  }
+
   const api = {
     version: VERSION,
 
@@ -1651,7 +1690,10 @@
       connectModules,
 
     resetPrototypeState:
-      resetPrototypeState
+      resetPrototypeState,
+
+    resetPrototypeProgress:
+      resetPrototypeProgress
   };
 
   window.PacificEducationCore =
