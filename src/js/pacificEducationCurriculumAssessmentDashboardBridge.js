@@ -202,6 +202,20 @@
         };
     }
 
+    function recordCoverage(c) {
+        var e = window.PacificEducationCurriculumCoverageEngine;
+        if (!e || typeof e.record !== "function") {
+            return { success: false, error: "Coverage Engine unavailable" };
+        }
+        return e.record(c || {});
+    }
+
+    function getCoverageSummary(c) {
+        var e = window.PacificEducationCurriculumCoverageEngine;
+        return e && typeof e.summarize === "function" ?
+            e.summarize(c || {}) : null;
+    }
+
     function refreshDashboards() {
         var d = dashboards();
 
@@ -280,6 +294,12 @@
 
             recordCurriculumEvidence:
                 recordCurriculumEvidence,
+
+            recordCoverage:
+                recordCoverage,
+
+            getCoverageSummary:
+                getCoverageSummary,
 
             refreshDashboards:
                 refreshDashboards,
