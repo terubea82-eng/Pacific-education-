@@ -78,6 +78,28 @@
         return copy(cal.getDayByNumber(dayNumber));
     }
 
+    function redistributeRemaining(config) {
+        var e = window.PacificEducationRemainingAchievementRedistributionEngine;
+        if (!e || typeof e.redistribute !== "function") {
+            return {
+                success: false,
+                error: "Remaining Achievement Redistribution Engine unavailable"
+            };
+        }
+        return e.redistribute(config || {});
+    }
+
+    function buildRemainingPlan(config) {
+        var e = window.PacificEducationRemainingAchievementRedistributionEngine;
+        if (!e || typeof e.buildRemainingPlan !== "function") {
+            return {
+                success: false,
+                error: "Remaining Achievement Redistribution Engine unavailable"
+            };
+        }
+        return e.buildRemainingPlan(config || {});
+    }
+
     function redistribute(filters) {
         filters = filters || {};
 
@@ -172,6 +194,8 @@
             addExamDay: addExamDay,
             getCalendarDay: getCalendarDay,
             redistribute: redistribute,
+            redistributeRemaining: redistributeRemaining,
+            buildRemainingPlan: buildRemainingPlan,
             buildDayPlan: buildDayPlan,
             validate: validate
         });
