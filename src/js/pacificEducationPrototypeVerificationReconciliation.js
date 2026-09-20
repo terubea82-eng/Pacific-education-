@@ -10,6 +10,17 @@ function evaluate(){
  var matrix=window.PacificEducationFullSystemTestMatrix;
  var report=runner&&typeof runner.run==="function"?runner.run():null;
  var matrixReport=matrix&&typeof matrix.evaluate==="function"?matrix.evaluate():null;
+ var staleThresholdMs=24*60*60*1000;
+ var now=Date.now();
+ var staleTests=[];
+ var missingEvidenceTests=[];
+ if(matrixReport&&Array.isArray(matrixReport.tests)){
+  matrixReport.tests.forEach(function(t){
+   var x=t&&t.status==="pass"&&t.evidence;
+   if(!x) missingEvidenceTests.push(t[0]);
+   if(x&&t.updatedAt){var age=now-Date.parse(t.updatedAt);if(isFinite(age)&&age>staleThresholdMs)staleTests.push(t[0]);}
+  });
+ }
  var automatedPass=!!(report&&report.status==="PASS");
  var matrixComplete=!!(matrixReport&&matrixReport.status==="FULL-SYSTEM-TESTING-EVIDENCE-COMPLETE");
  return{
@@ -24,6 +35,9 @@ function evaluate(){
   status:automatedPass&&matrixComplete?"RECONCILIATION-COMPLETE":"BLOCKED",
   automatedRuntimePass:automatedPass,
   matrixEvidenceComplete:matrixComplete,
+  missingEvidenceTests:missingEvidenceTests,
+  staleTests:staleTests,
+  staleThresholdHours:24,
   reviewerEvidenceRequired:true,
   productionApproved:false,
   productionEligible:false,
@@ -40,7 +54,7 @@ function render(targetId){
  var u=document.createElement("ul");
  [["Automated runtime",r.automatedRuntimeStatus],["Automated checks",r.automatedChecks+"/"+r.automatedChecksTotal],["Matrix evidence",r.matrixEvidenceStatus],["Matrix completion",r.matrixCompletedTests+"/"+r.matrixTotalTests]].forEach(function(x){var li=document.createElement("li");li.textContent=x[0]+": "+x[1];u.appendChild(li);});
  target.appendChild(u);
- var n=document.createElement("p");n.textContent="Reconciliation does not create human reviewer evidence. Production remains blocked until required evidence, independent testing and authorized review are completed.";target.appendChild(n);
+ var n=document.createElement("p");n.textContent="Missing evidence tests: "+(r.missingEvidenceTests.length?r.missingEvidenceTests.join(", "):"none")+" | Stale tests (>24h): "+(r.staleTests.length?r.staleTests.join(", "):"none")+". Reconciliation does not create human reviewer evidence. Production remains blocked until required evidence, independent testing and authorized review are completed.";target.appendChild(n);
  return r;
 }
 window.PacificEducationPrototypeVerificationReconciliation=Object.freeze({name:"PacificEducationPrototypeVerificationReconciliation",version:VERSION,evaluate:evaluate,render:render});
