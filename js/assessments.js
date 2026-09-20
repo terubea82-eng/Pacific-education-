@@ -1,6 +1,6 @@
 /* =========================================
    PACIFIC EDUCATION — ASSESSMENTS
-   VERSION 1.2.1
+   VERSION 1.2.2
    Protected assessment engine
 
    Day 30 Alphabet Checkpoint
@@ -26,7 +26,7 @@
        CONFIGURATION
     ========================================= */
 
-    const VERSION = "1.2.1";
+    const VERSION = "1.2.2";
 
     const PASS_MARK = 80;
 
@@ -634,6 +634,54 @@
 
 
     /* =========================================
+       ASSESSMENT BUTTON STATE
+    ========================================= */
+
+    function refreshAssessmentButtons() {
+
+        if (typeof document === "undefined") {
+            return false;
+        }
+
+        const currentDay = getCurrentDay();
+
+        const alphabetButton = document.querySelector(
+            'button[onclick="startAlphabetAssessment()"]'
+        );
+
+        const phonicsButton = document.querySelector(
+            'button[onclick="startPhonicsAssessment()"]'
+        );
+
+        if (alphabetButton) {
+            const enabled = currentDay === 30;
+            alphabetButton.disabled = !enabled;
+            alphabetButton.setAttribute(
+                "aria-disabled",
+                enabled ? "false" : "true"
+            );
+            alphabetButton.title = enabled
+                ? "Available for the Day 30 Alphabet checkpoint."
+                : "Available only when the learner reaches Day 30.";
+        }
+
+        if (phonicsButton) {
+            const enabled = currentDay === 60;
+            phonicsButton.disabled = !enabled;
+            phonicsButton.setAttribute(
+                "aria-disabled",
+                enabled ? "false" : "true"
+            );
+            phonicsButton.title = enabled
+                ? "Available for the Day 60 Phonics checkpoint."
+                : "Available only when the learner reaches Day 60.";
+        }
+
+        return true;
+    }
+
+
+    /* =========================================
        START ASSESSMENT
     ========================================= */
 
@@ -696,6 +744,7 @@
 
 
         showAssessmentQuestion();
+        refreshAssessmentButtons();
 
 
         return true;
@@ -1330,6 +1379,9 @@
         }
 
 
+        refreshAssessmentButtons();
+
+
         /* =====================================
            RESULT MESSAGE
         ===================================== */
@@ -1570,7 +1622,10 @@
             },
 
         finish:
-            finishAssessment
+            finishAssessment,
+
+        refreshButtons:
+            refreshAssessmentButtons
 
     };
 
