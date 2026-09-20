@@ -5,7 +5,7 @@
 (function(window, document) {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
     const KEY = "pacificEducationFullSystemTestEvidenceRecords";
 
     function read() {
@@ -23,6 +23,7 @@
             status: input.status === "pass" ? "pass" : "blocked",
             evidenceReference: input.evidenceReference,
             reviewerReference: input.reviewerReference,
+            matrixVersion: input.matrixVersion || (window.PacificEducationFullSystemTestMatrix && window.PacificEducationFullSystemTestMatrix.version) || null,
             notes: input.notes || "",
             createdAt: new Date().toISOString(),
             productionApproved: false,
@@ -46,9 +47,10 @@
         const tests = matrix && Array.isArray(matrix.tests) ? matrix.tests : [];
         const records = read();
 
+        const currentMatrixVersion = matrix && matrix.version ? matrix.version : null;
         const verified = tests.every(function(test) {
             const record = records.filter(function(r) { return r.testId === test[0]; }).pop();
-            return record && record.status === "pass" && !!record.evidenceReference && !!record.reviewerReference;
+            return record && record.status === "pass" && !!record.evidenceReference && !!record.reviewerReference && !!currentMatrixVersion && record.matrixVersion === currentMatrixVersion;
         });
 
         return {
@@ -57,6 +59,7 @@
             totalTests: tests.length,
             evidenceRecords: records.length,
             allTestsEvidenceVerified: verified,
+            currentMatrixVersion: currentMatrixVersion,
             status: verified ? "FULL-SYSTEM-TEST-EVIDENCE-VERIFIED" : "BLOCKED",
             productionApproved: false,
             productionEligible: false,
