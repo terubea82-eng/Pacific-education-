@@ -5,7 +5,7 @@
 (function(window, document) {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
     const KEY = "pacificEducationFullSystemTestMatrix";
 
     const TESTS = [
@@ -22,6 +22,8 @@
         ["pricing","Pricing uses owner-controlled Fiji values and approved GDP rules"],
         ["payments","Client payment state is never treated as production proof"],
         ["offline","Offline/low-bandwidth fallback behavior is tested"],
+        ["offline-sync","Offline queue preserves progress until secure server acknowledgement"],
+        ["accessibility-runtime","Accessibility runtime exposes text scaling, speech controls and live status"],
         ["accessibility","Text, keyboard, assistive technology and readability behavior is tested"],
         ["safeguarding","Child-safeguarding controls are reviewed by qualified specialists"],
         ["recovery","Rollback, recovery and audit evidence are tested"],
