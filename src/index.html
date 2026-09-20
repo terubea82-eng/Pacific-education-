@@ -484,6 +484,9 @@
             }
             if (typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
             if (typeof window.displayDailyLesson === "function") window.displayDailyLesson();
+            if (window.PacificEducationPrototypeRuntimeDiagnostics && typeof window.PacificEducationPrototypeRuntimeDiagnostics.render === "function") {
+                window.PacificEducationPrototypeRuntimeDiagnostics.render("pacificEducationPrototypeRuntimeDiagnostics");
+            }
         }
         return ok;
     };
