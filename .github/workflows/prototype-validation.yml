@@ -47,7 +47,7 @@ jobs:
           for ref in refs:
               if "://" in ref:
                   continue
-              target = (index.parent / ref).resolve()
+              clean_ref = ref.split("?", 1)[0]\n              target = (index.parent / clean_ref).resolve()
               if not target.exists():
                   missing.append((ref, target))
           if missing:
