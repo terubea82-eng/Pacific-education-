@@ -16,7 +16,7 @@ h+="<p><strong>Production approved:</strong> NO | <strong>Production eligible:</
 h+="<h3>Blockers</h3><ul>";
 if(!p.blockers.length)h+="<li>None reported by the validation layer.</li>";
 p.blockers.forEach(function(b){h+="<li>"+esc(b)+"</li>";});
-h+="</ul><button type="button" id="pacificRefreshFinalReleaseDecisionPackage">Refresh Package</button>";
+h+='</ul><button type="button" id="pacificRefreshFinalReleaseDecisionPackage">Refresh Package</button>';
 h+="<p><small>Final release decisions must be made by the authorized human/external authority using verified evidence and applicable legal, security, privacy, safeguarding, accessibility, infrastructure, testing, and payment controls.</small></p></section>";
 t.innerHTML=h;
 document.getElementById("pacificRefreshFinalReleaseDecisionPackage").onclick=function(){render(id);};
