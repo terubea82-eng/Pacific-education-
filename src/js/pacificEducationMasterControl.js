@@ -172,6 +172,27 @@
         application: {
             file: "src/index.html",
             status: STATUS.COMPLETE
+        },
+
+        prototypeRuntimeDiagnostics: {
+            file: "src/js/pacificEducationPrototypeRuntimeDiagnostics.js",
+            status: STATUS.TESTING,
+            purpose: "Owner-visible prototype capability diagnostics; never grants production authorization.",
+            prototypeOnly: true
+        },
+
+        ownerPrototypeTestChecklist: {
+            file: "src/js/pacificEducationOwnerPrototypeTestChecklist.js",
+            status: STATUS.TESTING,
+            purpose: "Owner-entered and automatically detected prototype test evidence.",
+            prototypeOnly: true
+        },
+
+        ownerPrototypeTestSession: {
+            file: "src/js/pacificEducationOwnerPrototypeTestSession.js",
+            status: STATUS.TESTING,
+            purpose: "Aggregated owner prototype test-session evidence package.",
+            prototypeOnly: true
         }
     });
 
@@ -354,6 +375,27 @@
 
         {
             from:
+                "Prototype Runtime Diagnostics",
+            to:
+                "Owner Prototype Test Checklist"
+        },
+
+        {
+            from:
+                "Owner Prototype Test Checklist",
+            to:
+                "Owner Prototype Test Session"
+        },
+
+        {
+            from:
+                "Owner Prototype Test Session",
+            to:
+                "Full System Testing"
+        },
+
+        {
+            from:
                 "Application",
             to:
                 "All Approved Modules"
@@ -402,6 +444,12 @@
         "../js/dashboards.js",
 
         "js/buyPlans.js",
+
+        "js/pacificEducationPrototypeRuntimeDiagnostics.js",
+
+        "js/pacificEducationOwnerPrototypeTestChecklist.js",
+
+        "js/pacificEducationOwnerPrototypeTestSession.js",
 
         "js/app.js"
     ]);
