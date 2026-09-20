@@ -41,7 +41,9 @@
         if (!s || typeof s.addRevisionDay !== "function") {
             return { success: false, error: "Revision/Exam Scheduler unavailable" };
         }
-        return s.addRevisionDay(Number(dayNumber));
+        var raw = window.prompt("Enter indicator ID(s) for revision, separated by commas:");
+        var ids = raw ? raw.split(",").map(function(v){ return v.trim(); }).filter(Boolean) : [];
+        return s.addRevisionDay(Number(dayNumber), null, ids, null);
     }
 
     function addExam(dayNumber) {
@@ -103,8 +105,9 @@
             '<h3>Updated Redistribution</h3>' +
             '<p>' + (plan.success ?
                 escapeHtml(String(plan.uncoveredIndicatorCount) +
-                    " uncovered indicator(s) across " + String(plan.teachingDayCount) +
-                    " remaining teaching day(s).") :
+                    " eligible uncovered indicator(s) across " + String(plan.teachingDayCount) +
+                    " remaining teaching day(s)." +
+                    (plan.blockedIndicatorCount ? " " + String(plan.blockedIndicatorCount) + " indicator(s) remain blocked pending source verification." : "")) :
                 escapeHtml(plan.error || "Redistribution unavailable.")) + '</p>' +
             '<p><small>Prototype only. Production teacher authorization and curriculum approval are required.</small></p>' +
             '</div>';
