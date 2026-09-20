@@ -33,11 +33,11 @@ function evaluate(){
   matrixReport.tests.forEach(function(t){
    var testId=t&&t.id?t.id:t[0];
    var latest=evidenceRecords.filter(function(r){return r&&r.testId===testId;}).pop();
-   if(latest&&!latest.matrixVersion) {legacyEvidenceTests.push(testId);addRemediation(stageMap[t[0]]||"Other",t[0],"Legacy evidence has no matrix version; refresh evidence against the current test matrix");}
-   if(latest&&latest.matrixVersion&&matrix&&matrix.version&&latest.matrixVersion!==matrix.version) {outdatedMatrixEvidenceTests.push(testId);addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence is tied to an older test-matrix version; refresh evidence against the current matrix");}
-   if(!latest||latest.status!=="pass"||!latest.evidenceReference||!latest.reviewerReference||!latest.matrixVersion){ missingEvidenceTests.push(testId); addRemediation(stageMap[t[0]]||"Other",t[0],"PASS + current evidence reference + reviewer reference required"); }
-   if(latest&&latest.createdAt){var evidenceAge=now-Date.parse(latest.createdAt);if(isFinite(evidenceAge)&&evidenceAge>staleThresholdMs){staleTests.push(testId);addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence record older than 24 hours; refresh authorized review evidence");}}
-   );
+   if(latest&&!latest.matrixVersion) {legacyEvidenceTests.push(testId);addRemediation(stageMap[testId]||"Other",testId,"Legacy evidence has no matrix version; refresh evidence against the current test matrix");}
+   if(latest&&latest.matrixVersion&&matrix&&matrix.version&&latest.matrixVersion!==matrix.version) {outdatedMatrixEvidenceTests.push(testId);addRemediation(stageMap[testId]||"Other",testId,"Evidence is tied to an older test-matrix version; refresh evidence against the current matrix");}
+   if(!latest||latest.status!=="pass"||!latest.evidenceReference||!latest.reviewerReference||!latest.matrixVersion){ missingEvidenceTests.push(testId); addRemediation(stageMap[testId]||"Other",testId,"PASS + current evidence reference + reviewer reference required"); }
+   if(latest&&latest.createdAt){var evidenceAge=now-Date.parse(latest.createdAt);if(isFinite(evidenceAge)&&evidenceAge>staleThresholdMs){staleTests.push(testId);addRemediation(stageMap[testId]||"Other",testId,"Evidence record older than 24 hours; refresh authorized review evidence");}}
+   });
  }
  evidenceRecords.forEach(function(r){if(r&&r.testId&&currentTestIds.indexOf(r.testId)===-1)orphanEvidenceTests.push(r.testId);});
  if(orphanEvidenceTests.length){orphanEvidenceTests.forEach(function(id){addRemediation("Other",id,"Evidence record does not match a current test-matrix ID; reconcile or retire the record");});}
