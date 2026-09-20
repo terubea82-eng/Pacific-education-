@@ -24,6 +24,9 @@
         ["offline","Offline/low-bandwidth fallback behavior is tested"],
         ["offline-sync","Offline queue preserves progress until secure server acknowledgement"],
         ["accessibility-runtime","Accessibility runtime exposes text scaling, speech controls and live status"],
+        ["offline-sync-batch","Offline sync batch contains only approved non-sensitive progress fields"],
+        ["offline-sync-fail-closed","Offline sync does not clear queued progress without server acknowledgement"],
+
         ["accessibility","Text, keyboard, assistive technology and readability behavior is tested"],
         ["safeguarding","Child-safeguarding controls are reviewed by qualified specialists"],
         ["recovery","Rollback, recovery and audit evidence are tested"],
