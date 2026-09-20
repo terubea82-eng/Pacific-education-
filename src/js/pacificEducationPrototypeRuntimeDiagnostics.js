@@ -82,6 +82,27 @@
                     "pacificEducationOwnerFinalReviewPage"
                 );
             }
+        },
+        {
+            id: "ownerReviewApi",
+            label: "Owner Final Review controller",
+            test: function () {
+                return !!(
+                    window.PacificEducationOwnerFinalReviewPage &&
+                    typeof window.PacificEducationOwnerFinalReviewPage.render === "function"
+                );
+            }
+        },
+        {
+            id: "coreAuthorizationApi",
+            label: "Prototype authorization API",
+            test: function () {
+                return !!(
+                    window.PacificEducationCore &&
+                    typeof window.PacificEducationCore.authorizeUser === "function" &&
+                    typeof window.PacificEducationCore.isAuthorized === "function"
+                );
+            }
         }
     ];
 
@@ -166,6 +187,12 @@
         });
 
         target.appendChild(list);
+
+        const rerun = document.createElement("button");
+        rerun.type = "button";
+        rerun.textContent = "Re-run Diagnostics";
+        rerun.addEventListener("click", function () { render(targetId); });
+        target.appendChild(rerun);
 
         const note = document.createElement("p");
         note.textContent =
