@@ -17,7 +17,7 @@ h+="<p><strong>Production approved:</strong> NO | <strong>Production eligible:</
 h+="<h3>Blockers</h3><ul>";
 if(!x.blockers.length)h+="<li>None detected by this prototype reconciliation.</li>";
 x.blockers.forEach(function(b){h+="<li>"+esc(b)+"</li>";});
-h+="</ul><button type="button" id="pacificRefreshFinalReleaseReconciliation">Refresh Reconciliation</button>";
+h+='</ul><button type="button" id="pacificRefreshFinalReleaseReconciliation">Refresh Reconciliation</button>';
 h+="<p><small>Reconciliation only coordinates existing controls. Production authorization remains external and specialist-controlled.</small></p></section>";
 t.innerHTML=h;
 document.getElementById("pacificRefreshFinalReleaseReconciliation").onclick=function(){render(targetId);};
