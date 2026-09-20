@@ -41,7 +41,7 @@
             return { success: false, error: "Teacher calendar or day unavailable" };
         }
 
-        var result = cal.addRevisionDate(dayNumber, label || "Revision");
+        var result = typeof cal.addRevisionDay === "function" ? cal.addRevisionDay(dayNumber) : cal.addRevisionDate(dayNumber);
         return {
             success: true,
             dayNumber: dayNumber,
@@ -58,7 +58,7 @@
             return { success: false, error: "Teacher calendar or day unavailable" };
         }
 
-        var result = cal.addExamDate(dayNumber, label || "Examination");
+        var result = typeof cal.addExamDay === "function" ? cal.addExamDay(dayNumber) : cal.addExamDate(dayNumber);
         return {
             success: true,
             dayNumber: dayNumber,
