@@ -26,7 +26,7 @@
        CONFIGURATION
     ========================================= */
 
-    const VERSION = "1.2.2";
+    const VERSION = "1.2.3";
 
     const PASS_MARK = 80;
 
@@ -613,7 +613,9 @@
 
             return block(
 
-                "This assessment is authorised for Day " +
+                escapeHTML(assessment.title) +
+
+                " is authorised for Day " +
 
                 assessment.day +
 
