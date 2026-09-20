@@ -19,7 +19,7 @@
 (function (global) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     var AUTHORITY = Object.freeze({
         jurisdiction: "Fiji",
@@ -74,6 +74,69 @@
         VALIDATED: "VALIDATED",
         RETIRED: "RETIRED"
     });
+
+
+
+    /*
+     * SOURCE-GROUNDED ALIGNMENT CANDIDATES
+     * These records map verified resource evidence to prototype
+     * learning areas. They are NOT official Ministry achievement
+     * indicators and remain pending current Ministry validation.
+     */
+    var SOURCE_GROUNDED_CANDIDATES = Object.freeze([
+        Object.freeze({
+            candidateId: "Y1-ENG-CAND-001",
+            sourceId: "FJ-MOE-Y1-LLC-2019-REPRINT2020",
+            level: "Year 1",
+            subject: "English",
+            term: "UNASSIGNED",
+            sourceUnit: 1,
+            learningArea: "Speaking and listening",
+            evidence: "personal introduction; name, age, clothing and colour questions",
+            dailyActivityType: "guided oral language practice",
+            assessmentUse: "FORMATIVE_ONLY",
+            validationStatus: "NOT_VALIDATED"
+        }),
+        Object.freeze({
+            candidateId: "Y1-ENG-CAND-002",
+            sourceId: "FJ-MOE-Y1-LLC-2019-REPRINT2020",
+            level: "Year 1",
+            subject: "English",
+            term: "UNASSIGNED",
+            sourceUnit: 1,
+            learningArea: "Phonics and early word reading",
+            evidence: "letter recognition and beginning-sound practice",
+            dailyActivityType: "letter/sound recognition practice",
+            assessmentUse: "FORMATIVE_ONLY",
+            validationStatus: "NOT_VALIDATED"
+        }),
+        Object.freeze({
+            candidateId: "Y1-ENG-CAND-003",
+            sourceId: "FJ-MOE-Y1-LLC-2019-REPRINT2020",
+            level: "Year 1",
+            subject: "English",
+            term: "UNASSIGNED",
+            sourceUnit: 5,
+            learningArea: "Reading and phonological awareness",
+            evidence: "reading familiar words; beginning and middle sound practice",
+            dailyActivityType: "guided reading and sound practice",
+            assessmentUse: "FORMATIVE_ONLY",
+            validationStatus: "NOT_VALIDATED"
+        }),
+        Object.freeze({
+            candidateId: "Y1-ENG-CAND-004",
+            sourceId: "FJ-MOE-Y1-LLC-2019-REPRINT2020",
+            level: "Year 1",
+            subject: "English",
+            term: "UNASSIGNED",
+            sourceUnit: 8,
+            learningArea: "Phonics and word reading",
+            evidence: "extended phonics patterns and digraphs",
+            dailyActivityType: "sound-pattern and word-reading practice",
+            assessmentUse: "FORMATIVE_ONLY",
+            validationStatus: "NOT_VALIDATED"
+        })
+    ]);
 
     var api = Object.freeze({
         version: VERSION,
