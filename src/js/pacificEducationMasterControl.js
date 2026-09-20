@@ -188,6 +188,13 @@
             prototypeOnly: true
         },
 
+        fullSystemTestMatrix: {
+            file: "src/js/pacificEducationFullSystemTestMatrix.js",
+            status: STATUS.TESTING,
+            purpose: "Records full-system test evidence across functional, curriculum, accessibility, safeguarding, security, pricing, payment, recovery and release-control areas.",
+            prototypeOnly: true
+        },
+
         fullSystemTestingController: {
             file: "src/js/pacificEducationFullSystemTestingController.js",
             status: STATUS.TESTING,
@@ -384,6 +391,13 @@
             from:
                 "Central Bridge Recovery Audit Integrity Test",
             to:
+                "Full System Test Matrix"
+        },
+
+        {
+            from:
+                "Full System Test Matrix",
+            to:
                 "Full System Testing"
         },
 
@@ -482,6 +496,8 @@
         "js/pacificEducationPrototypeTestEvidenceBridge.js",
 
         "js/pacificEducationFullSystemTestingController.js",
+
+        "js/pacificEducationFullSystemTestMatrix.js",
 
         "js/app.js"
     ]);
