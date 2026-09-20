@@ -188,6 +188,13 @@
             prototypeOnly: true
         },
 
+        fullSystemTestingController: {
+            file: "src/js/pacificEducationFullSystemTestingController.js",
+            status: STATUS.TESTING,
+            purpose: "Fail-closed controller that gates entry to full system testing from prototype evidence.",
+            prototypeOnly: true
+        },
+
         prototypeTestEvidenceBridge: {
             file: "src/js/pacificEducationPrototypeTestEvidenceBridge.js",
             status: STATUS.TESTING,
@@ -405,6 +412,13 @@
             from:
                 "Prototype Test Evidence Bridge",
             to:
+                "Full System Testing Controller"
+        },
+
+        {
+            from:
+                "Full System Testing Controller",
+            to:
                 "Full System Testing"
         },
 
@@ -466,6 +480,8 @@
         "js/pacificEducationOwnerPrototypeTestSession.js",
 
         "js/pacificEducationPrototypeTestEvidenceBridge.js",
+
+        "js/pacificEducationFullSystemTestingController.js",
 
         "js/app.js"
     ]);
