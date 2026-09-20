@@ -1049,5 +1049,342 @@
             );
         }
 
+   if (
+            !conversation.participants.includes(
+                sender.id
+            ) ||
+            !conversation.participants.includes(
+                recipient.id
+            )
+        ) {
+            throw new Error(
+                "The sender and recipient are not both authorized participants in this conversation."
+            );
+        }
+
+        const message = {
+            id:
+                createId(
+                    "message"
+                ),
+
+            conversationId,
+
+            senderId:
+                sender.id,
+
+            senderRole:
+                sender.role,
+
+            recipientId:
+                recipient.id,
+
+            recipientRole:
+                recipient.role,
+
+            text:
+                text.trim(),
+
+            createdAt:
+                new Date().toISOString()
+        };
+
+        conversation.messages.push(
+            message
+        );
+
+        save(state);
+
+        audit(
+            "message_sent",
+            {
+                conversationId,
+
+                messageId:
+                    message.id,
+
+                senderId:
+                    sender.id,
+
+                recipientId:
+                    recipient.id
+            }
+        );
+
+        return message;
+    }
+
+
+    /*
+     * =====================================================
+     * GET CONVERSATION
+     * =====================================================
+     */
+
+    function getConversation(
+        conversationId,
+        requester,
+        recipient
+    ) {
+        requireParticipant(
+            requester,
+            "Requester"
+        );
+
+        requireParticipant(
+            recipient,
+            "Recipient"
+        );
+
         if (
-            !conversation.participants
+            typeof conversationId !==
+                "string" ||
+            !conversationId
+        ) {
+            throw new Error(
+                "conversationId is required."
+            );
+        }
+
+        const state = load();
+
+        const conversation =
+            state.conversations.find(
+                item =>
+                    item.id ===
+                    conversationId
+            );
+
+        if (!conversation) {
+            throw new Error(
+                "Authorized conversation was not found."
+            );
+        }
+
+        const security =
+            requireAuthorizedCommunication({
+                linkId:
+                    conversation.linkId,
+
+                requester,
+
+                recipient
+            });
+
+        if (
+            security.relationshipId !==
+            conversation.relationshipId
+        ) {
+            throw new Error(
+                "The verified education relationship does not match the conversation."
+            );
+        }
+
+        if (
+            !conversation.participants.includes(
+                requester.id
+            ) ||
+            !conversation.participants.includes(
+                recipient.id
+            )
+        ) {
+            throw new Error(
+                "The requester and recipient are not authorized participants in this conversation."
+            );
+        }
+
+        return conversation;
+    }
+
+
+    /*
+     * =====================================================
+     * CLOSE CONVERSATION
+     * =====================================================
+     */
+
+    function closeConversation(
+        conversationId,
+        requester,
+        recipient
+    ) {
+        getConversation(
+            conversationId,
+            requester,
+            recipient
+        );
+
+        const state = load();
+
+        const conversation =
+            state.conversations.find(
+                item =>
+                    item.id ===
+                    conversationId
+            );
+
+        if (!conversation) {
+            throw new Error(
+                "Authorized conversation was not found."
+            );
+        }
+
+        if (
+            conversation.status ===
+            "closed"
+        ) {
+            return conversation;
+        }
+
+        conversation.status =
+            "closed";
+
+        conversation.closedAt =
+            new Date().toISOString();
+
+        save(state);
+
+        audit(
+            "conversation_closed",
+            {
+                conversationId,
+
+                requesterId:
+                    requester.id,
+
+                recipientId:
+                    recipient.id
+            }
+        );
+
+        return conversation;
+    }
+
+
+    /*
+     * =====================================================
+     * SAFE STATUS
+     * =====================================================
+     */
+
+    function getStatus() {
+        return {
+            version:
+                VERSION,
+
+            available:
+                true,
+
+            prototypeOnly:
+                true,
+
+            productionServerAuthorizationRequired:
+                true,
+
+            automaticInformationAccess:
+                false,
+
+            secretsStored:
+                false,
+
+            passwordsStored:
+                false,
+
+            accessTokensStored:
+                false,
+
+            paymentSecretsStored:
+                false,
+
+            customerFundsHeld:
+                false,
+
+            localStoragePrototypeOnly:
+                true,
+
+            requiredPermission:
+                REQUIRED_PERMISSION,
+
+            supportedRoles:
+                ROLES.slice(),
+
+            supportedLinkTypes:
+                Object.keys(
+                    LINK_TYPES
+                )
+        };
+    }
+
+
+    /*
+     * =====================================================
+     * PROTOTYPE RESET
+     * =====================================================
+     */
+
+    function resetPrototypeState() {
+        try {
+            localStorage.removeItem(
+                STORAGE_KEY
+            );
+        } catch (error) {
+            throw new Error(
+                "Unable to reset secure communication prototype storage."
+            );
+        }
+
+        return getStatus();
+    }
+
+
+    /*
+     * =====================================================
+     * PUBLIC API
+     * =====================================================
+     */
+
+    window.PacificEducationSecureCommunication =
+        Object.freeze({
+            version:
+                VERSION,
+
+            createConversation,
+
+            sendMessage,
+
+            getConversation,
+
+            closeConversation,
+
+            getStatus,
+
+            resetPrototypeState
+        });
+
+
+    /*
+     * =====================================================
+     * OPTIONAL READINESS EVENT
+     * =====================================================
+     */
+
+    try {
+        window.dispatchEvent(
+            new CustomEvent(
+                "pacificEducationSecureCommunicationReady",
+                {
+                    detail: {
+                        version:
+                            VERSION
+                    }
+                }
+            )
+        );
+    } catch (error) {
+        /*
+         * Readiness notification is optional.
+         * It must never break the module.
+         */
+    }
+
+})();
