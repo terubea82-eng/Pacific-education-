@@ -16,6 +16,8 @@ function evaluate(){
  var missingEvidenceTests=[];
  var orphanEvidenceTests=[];
  var evidenceRecordApi=window.PacificEducationFullSystemTestEvidenceRecord||null;
+ var evidenceRecords=evidenceRecordApi&&typeof evidenceRecordApi.read==="function"?evidenceRecordApi.read():[];
+ var currentTestIds=[];
  var remediationByStage={};
  var stageMap={
   "offline-sync":"Offline","offline-sync-batch":"Offline","offline-sync-fail-closed":"Offline",
@@ -25,12 +27,17 @@ function evaluate(){
  };
  function addRemediation(stage,id,reason){if(!remediationByStage[stage])remediationByStage[stage]=[];remediationByStage[stage].push({testId:id,reason:reason});}
  if(matrixReport&&Array.isArray(matrixReport.tests)){
+  currentTestIds=matrixReport.tests.map(function(t){return t[0];});
   matrixReport.tests.forEach(function(t){
    var x=t&&t.status==="pass"&&t.evidence;
-   if(!x){ missingEvidenceTests.push(t[0]); addRemediation(stageMap[t[0]]||"Other",t[0],"PASS + reviewer evidence required"); }
+   var latest=evidenceRecords.filter(function(r){return r&&r.testId===t[0];}).pop();
+   if(!latest||latest.status!=="pass"||!latest.evidenceReference||!latest.reviewerReference){ missingEvidenceTests.push(t[0]); addRemediation(stageMap[t[0]]||"Other",t[0],"PASS + current evidence reference + reviewer reference required"); }
+   if(latest&&latest.createdAt){var evidenceAge=now-Date.parse(latest.createdAt);if(isFinite(evidenceAge)&&evidenceAge>staleThresholdMs){staleTests.push(t[0]);addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence record older than 24 hours; refresh authorized review evidence");}}
    if(x&&t.updatedAt){var age=now-Date.parse(t.updatedAt);if(isFinite(age)&&age>staleThresholdMs){ staleTests.push(t[0]); addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence older than 24 hours; refresh/review required"); }}
   });
  }
+ evidenceRecords.forEach(function(r){if(r&&r.testId&&currentTestIds.indexOf(r.testId)===-1)orphanEvidenceTests.push(r.testId);});
+ if(orphanEvidenceTests.length){orphanEvidenceTests.forEach(function(id){addRemediation("Other",id,"Evidence record does not match a current test-matrix ID; reconcile or retire the record");});}
  var automatedPass=!!(report&&report.status==="PASS");
  var matrixComplete=!!(matrixReport&&matrixReport.status==="FULL-SYSTEM-TESTING-EVIDENCE-COMPLETE");
  return{
