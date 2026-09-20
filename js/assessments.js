@@ -30,6 +30,13 @@
 
     const PASS_MARK = 80;
 
+    const ANSWER_LABELS = Object.freeze([
+        "A",
+        "B",
+        "C",
+        "D"
+    ]);
+
     const RESULTS_KEY =
         "pacificEducationAssessmentResults";
 
@@ -74,6 +81,7 @@
                         options:
                             Object.freeze([
                                 "A",
+                                "B",
                                 "C",
                                 "D"
                             ]),
@@ -773,7 +781,7 @@
 
         question.options.forEach(
 
-            function (option) {
+            function (option, optionIndex) {
 
                 html +=
 
@@ -792,6 +800,12 @@
                         'style="display:block;margin:10px 0;padding:10px;font-size:1rem;"' +
 
                     '>' +
+
+                        '<strong>' +
+
+                            ANSWER_LABELS[optionIndex] +
+
+                        '.</strong> ' +
 
                         escapeHTML(option) +
 
