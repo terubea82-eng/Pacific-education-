@@ -188,6 +188,13 @@
             prototypeOnly: true
         },
 
+        fullSystemTestEvidenceRecord: {
+            file: "src/js/pacificEducationFullSystemTestEvidenceRecord.js",
+            status: STATUS.TESTING,
+            purpose: "Records evidence and reviewer references for each full-system test.",
+            prototypeOnly: true
+        },
+
         fullSystemTestMatrix: {
             file: "src/js/pacificEducationFullSystemTestMatrix.js",
             status: STATUS.TESTING,
@@ -398,6 +405,13 @@
             from:
                 "Full System Test Matrix",
             to:
+                "Full System Testing Evidence Record"
+        },
+
+        {
+            from:
+                "Full System Testing Evidence Record",
+            to:
                 "Full System Testing"
         },
 
@@ -498,6 +512,8 @@
         "js/pacificEducationFullSystemTestingController.js",
 
         "js/pacificEducationFullSystemTestMatrix.js",
+
+        "js/pacificEducationFullSystemTestEvidenceRecord.js",
 
         "js/app.js"
     ]);
