@@ -33,18 +33,42 @@
             : null;
     }
 
-    function addRevisionDay(day, label) {
+    function addRevisionDay(day, label, indicatorIds, studentId) {
         var cal = calendar();
         var dayNumber = normaliseDay(day);
+        var ids = Array.isArray(indicatorIds) ? indicatorIds.filter(Boolean) : [];
+        var bridge = window.PacificEducationCurriculumAssessmentBridge || null;
 
         if (!cal || typeof cal.addRevisionDate !== "function" || dayNumber === null) {
             return { success: false, error: "Teacher calendar or day unavailable" };
+        }
+        if (!ids.length) {
+            return { success: false, error: "Revision indicator IDs are required." };
+        }
+        if (!bridge || typeof bridge.scheduleRevision !== "function") {
+            return { success: false, error: "Assessment coverage bridge unavailable" };
+        }
+
+        var eligibility = bridge.scheduleRevision({
+            indicatorIds: ids,
+            studentId: studentId || null,
+            date: label || null
+        });
+        if (!eligibility.scheduled) {
+            return {
+                success: false,
+                error: eligibility.reason || "Revision blocked by curriculum alignment rules",
+                eligibility: copy(eligibility),
+                prototype: true
+            };
         }
 
         var result = typeof cal.addRevisionDay === "function" ? cal.addRevisionDay(dayNumber) : cal.addRevisionDate(dayNumber);
         return {
             success: true,
             dayNumber: dayNumber,
+            indicatorIds: eligibility.remainingIndicatorIds || ids,
+            eligibility: copy(eligibility),
             result: copy(result),
             prototype: true
         };
