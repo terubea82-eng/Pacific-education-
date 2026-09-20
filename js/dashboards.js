@@ -1145,6 +1145,33 @@
 
         syncCompatibilityProgress();
 
+        /*
+         * Offline-first progress handoff.
+         * Only non-sensitive lesson progress is queued.
+         * Authentication, authorization and child-identifying
+         * records are never written to this queue.
+         */
+        try {
+            var offlineRuntime =
+                window.PacificEducationOfflineRuntime;
+
+            if (
+                offlineRuntime &&
+                typeof offlineRuntime.queueProgress === "function"
+            ) {
+                offlineRuntime.queueProgress({
+                    type: "lesson-completed",
+                    lessonId: "day-" + currentDay,
+                    dayNumber: currentDay,
+                    completed: true
+                });
+            }
+        } catch (offlineError) {
+            console.warn(
+                "Pacific Education: offline progress queue unavailable."
+            );
+        }
+
         refreshAllDashboards();
         displayLessonIfAvailable();
 
