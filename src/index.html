@@ -3,291 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Pacific Education</title>
-
-    <meta
-        name="description"
-        content="Pacific Education — learning, assessment, dashboards, pricing and education relationship services."
-    >
-
+    <meta name="description" content="Pacific Education — learning, assessment, dashboards, pricing and education relationship services.">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-
-        header {
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 24px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-
-        button {
-            padding: 10px 16px;
-            margin: 5px;
-            cursor: pointer;
-        }
-
-        .status {
-            padding: 10px;
-            border-radius: 6px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
+        header { padding: 20px; border-bottom: 1px solid #ccc; }
+        main { max-width: 1000px; margin: auto; padding: 20px; }
+        section { margin-bottom: 24px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        button { padding: 10px 16px; margin: 5px; cursor: pointer; }
+        .status { padding: 10px; border-radius: 6px; }
     </style>
 </head>
-
 <body>
-
 <header>
     <h1>Pacific Education</h1>
     <p>Learning • Assessment • Dashboards • Education Services</p>
 </header>
-
 <main id="app">
-
-    <section id="prototypeAccess" style="border:1px solid #888;padding:12px;margin:12px 0;">
+<section id="prototypeAccess" style="border:1px solid #888;padding:12px;margin:12px 0;">
 <h2>Prototype Access</h2>
 <p><strong>PROTOTYPE ONLY:</strong> This authorizes the browser session through the existing Pacific Education Core. It is not production authentication.</p>
 <button type="button" id="prototypeAuthorizeButton" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
 <span id="prototypeAccessStatus" aria-live="polite">Checking authorization...</span>
 </section>
 
-    <!-- DAILY LEARNING -->
-    <section id="dailyLesson">
+<section id="dailyLesson">
+<h2>Daily English Lesson</h2>
+<p><strong>Day:</strong> <span id="dailyLessonDay">1</span></p>
+<h3 id="dailyLessonTitle">Daily Lesson</h3>
+<div id="dailyLessonActivity"><p>Loading today's learning activity...</p></div>
+<div id="dailyLessonPractice"></div>
+<button type="button" onclick="completeLesson()">Complete Lesson</button>
+</section>
 
-        <h2>Daily English Lesson</h2>
+<section id="assessments">
+<h2>Assessments</h2>
+<div id="assessmentDashboard"></div>
+<p>Assessment activities are connected to the Pacific Education assessment modules.</p>
+<button type="button" onclick="startAlphabetAssessment()">Alphabet Assessment</button>
+<button type="button" onclick="startPhonicsAssessment()">Phonics Assessment</button>
+</section>
 
-        <p>
-            <strong>Day:</strong>
-            <span id="dailyLessonDay">1</span>
-        </p>
+<section id="teacherDashboard">
+<h2>Teacher Dashboard</h2>
+<p><strong>Student:</strong> <span id="teacherStudentName">Student</span></p>
+<p><strong>Current Day:</strong> <span id="teacherCurrentDay">1</span></p>
+<p><strong>Lessons Completed:</strong> <span id="teacherLessonsCompleted">0</span></p>
+<p><strong>Alphabet Assessment:</strong> <span id="teacherAlphabetAssessment">Not completed</span></p>
+<p><strong>Phonics Assessment:</strong> <span id="teacherPhonicsAssessment">Not completed</span></p>
+<p><strong>Learning Status:</strong> <span id="teacherLearningStatus">Monitoring</span></p>
+</section>
 
-        <h3 id="dailyLessonTitle">
-            Daily Lesson
-        </h3>
+<section id="parentDashboard">
+<h2>Parent Dashboard</h2>
+<p><strong>Student:</strong> <span id="parentStudentName">Student</span></p>
+<p><strong>Current Day:</strong> <span id="parentCurrentDay">1</span></p>
+<p><strong>Lessons Completed:</strong> <span id="parentLessonsCompleted">0</span></p>
+<p><strong>Alphabet Assessment:</strong> <span id="parentAlphabetAssessment">Not completed</span></p>
+<p><strong>Phonics Assessment:</strong> <span id="parentPhonicsAssessment">Not completed</span></p>
+<p><strong>Learning Status:</strong> <span id="parentLearningStatus">Monitoring</span></p>
+</section>
 
-        <div id="dailyLessonActivity">
-            <p>Loading today's learning activity...</p>
-        </div>
+<section id="buyPlans">
+<h2>Pacific Education Plans</h2>
+<p>Fiji annual plans and international GDP-based pricing.</p>
+</section>
 
-        <div id="dailyLessonPractice"></div>
-
-        <button
-            type="button"
-            onclick="completeLesson()"
-        >
-            Complete Lesson
-        </button>
-
-    </section>
-
-
-    <!-- ASSESSMENTS -->
-    <section id="assessments">
-
-        <h2>Assessments</h2>
-
-        <div id="assessmentDashboard"></div>
-
-        <p>
-            Assessment activities are connected to the
-            Pacific Education assessment modules.
-        </p>
-
-        <button
-            type="button"
-            onclick="startAlphabetAssessment()"
-        >
-            Alphabet Assessment
-        </button>
-
-        <button
-            type="button"
-            onclick="startPhonicsAssessment()"
-        >
-            Phonics Assessment
-        </button>
-
-    </section>
-
-
-    <!-- TEACHER DASHBOARD -->
-    <section id="teacherDashboard">
-
-        <h2>Teacher Dashboard</h2>
-
-        <p>
-            <strong>Student:</strong>
-            <span id="teacherStudentName">Student</span>
-        </p>
-
-        <p>
-            <strong>Current Day:</strong>
-            <span id="teacherCurrentDay">1</span>
-        </p>
-
-        <p>
-            <strong>Lessons Completed:</strong>
-            <span id="teacherLessonsCompleted">0</span>
-        </p>
-
-        <p>
-            <strong>Alphabet Assessment:</strong>
-            <span id="teacherAlphabetAssessment">
-                Not completed
-            </span>
-        </p>
-
-        <p>
-            <strong>Phonics Assessment:</strong>
-            <span id="teacherPhonicsAssessment">
-                Not completed
-            </span>
-        </p>
-
-        <p>
-            <strong>Learning Status:</strong>
-            <span id="teacherLearningStatus">
-                Monitoring
-            </span>
-        </p>
-
-    </section>
-
-
-    <!-- PARENT DASHBOARD -->
-    <section id="parentDashboard">
-
-        <h2>Parent Dashboard</h2>
-
-        <p>
-            <strong>Student:</strong>
-            <span id="parentStudentName">Student</span>
-        </p>
-
-        <p>
-            <strong>Current Day:</strong>
-            <span id="parentCurrentDay">1</span>
-        </p>
-
-        <p>
-            <strong>Lessons Completed:</strong>
-            <span id="parentLessonsCompleted">0</span>
-        </p>
-
-        <p>
-            <strong>Alphabet Assessment:</strong>
-            <span id="parentAlphabetAssessment">
-                Not completed
-            </span>
-        </p>
-
-        <p>
-            <strong>Phonics Assessment:</strong>
-            <span id="parentPhonicsAssessment">
-                Not completed
-            </span>
-        </p>
-
-        <p>
-            <strong>Learning Status:</strong>
-            <span id="parentLearningStatus">
-                Monitoring
-            </span>
-        </p>
-
-    </section>
-
-
-    <!-- BUY PLANS -->
-    <section id="buyPlans">
-
-        <h2>Pacific Education Plans</h2>
-
-        <p>
-            Fiji annual plans and international GDP-based pricing.
-        </p>
-
-    </section>
-
-
-    <!-- SYSTEM STATUS -->
-    <section id="systemStatus">
-
-        <h2>System Status</h2>
-
-        <div class="status">
-            Pacific Education application shell loaded.
-        </div>
-
-    </section>
-
+<section id="systemStatus">
+<h2>System Status</h2>
+<div class="status">Pacific Education application shell loaded.</div>
+</section>
 </main>
 
-
-<!-- CENTRAL CORE -->
 <script src="../js/pacificEducationCore.js"></script>
-
-
-<!-- MASTER INCLUSION SPECIFICATION -->
 <script src="js/pacificEducationMasterInclusionSpecification.js"></script>
-
-
-<!-- CORE BRIDGE -->
 <script src="js/pacificEducationCoreBridge.js"></script>
-
-
-<!-- MASTER CONTROL -->
 <script src="js/pacificEducationMasterControl.js"></script>
-
-
-<!-- PRICING -->
 <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
 <script src="js/pacificEducationPricingAuditGuard.js"></script>
 <script src="js/buyPlans.js"></script>
-
-
-<!-- CENTRAL BRIDGE -->
 <script src="js/pacificEducationCentralBridge.js"></script>
-
-
-<!-- EDUCATION RELATIONSHIPS AND AUTHORIZATION -->
 <script src="js/pacificEducationEducationLinkBridge.js"></script>
 <script src="js/pacificEducationSecureLinkAuthorization.js"></script>
-
-
-<!-- ASSESSMENT BRIDGE -->
 <script src="js/pacificEducationAssessmentBridge.js"></script>
-
-
-<!-- ASSESSMENT INTEGRATION -->
 <script src="../js/pacificEducationAssessmentIntegration.js"></script>
-
-
-<!-- DAILY LEARNING -->
 <script src="../js/dailyLessons.js"></script>
-<script src="../js/assessments.js"></script>
-
-
-<!-- DASHBOARDS -->
+<script src="../js/assessments.js?v=810040"></script>
 <script src="../js/dashboards.js"></script>
-
-
-<!-- APPLICATION -->
 <script src="js/app.js"></script>
 
 <script>
@@ -308,29 +110,12 @@
         });
         if (status) status.textContent = ok ? "Authorized" : "Authorization failed";
         if (ok) {
-            /*
-             * A previous owner/developer test must not block this
-             * real-progress prototype check. Exit Owner Test Mode
-             * through its existing dashboard API; this does not
-             * alter Core learning history or authorization.
-             */
-            if (
-                window.PacificEducationDashboards &&
-                typeof window.PacificEducationDashboards.clearOwnerTestDay === "function"
-            ) {
+            if (window.PacificEducationDashboards &&
+                typeof window.PacificEducationDashboards.clearOwnerTestDay === "function") {
                 window.PacificEducationDashboards.clearOwnerTestDay();
             }
-
             const button = document.getElementById("prototypeAuthorizeButton");
             if (button) button.textContent = "Authorized Student Session Active";
-
-            /*
-             * Prototype session bootstrap only.
-             * Use the existing protected Core APIs to establish
-             * the first student and Day 1 lesson when this is a
-             * fresh browser session. No alternate progress store
-             * or authorization bypass is introduced.
-             */
             if (typeof core.setStudent === "function") {
                 core.setStudent({
                     studentId: "prototype-student",
@@ -339,21 +124,12 @@
                     className: "Prototype Class"
                 });
             }
-
-            const coreState = typeof core.getState === "function"
-                ? core.getState()
-                : null;
-
-            if (
-                typeof core.setLesson === "function" &&
-                (
-                    !coreState ||
-                    !coreState.lesson ||
-                    !Number.isInteger(Number(coreState.lesson.day)) ||
-                    Number(coreState.lesson.day) < 1 ||
-                    Number(coreState.lesson.day) > 365
-                )
-            ) {
+            const coreState = typeof core.getState === "function" ? core.getState() : null;
+            if (typeof core.setLesson === "function" &&
+                (!coreState || !coreState.lesson ||
+                 !Number.isInteger(Number(coreState.lesson.day)) ||
+                 Number(coreState.lesson.day) < 1 ||
+                 Number(coreState.lesson.day) > 365)) {
                 core.setLesson({
                     lessonId: "class1-day-1",
                     day: 1,
@@ -363,7 +139,6 @@
                     status: "not_started"
                 });
             }
-
             if (typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
             if (typeof window.displayDailyLesson === "function") window.displayDailyLesson();
         }
@@ -380,9 +155,7 @@
             status.textContent = "Not authorized — start the prototype student session before completing a lesson.";
         }
     });
-
 })();
 </script>
-
 </body>
 </html>
