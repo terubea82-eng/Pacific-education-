@@ -384,6 +384,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script src="js/pacificEducationTestingNextStage.js"></script>
 <script src="js/pacificEducationAccessibilityRuntime.js"></script>
 <script src="js/pacificEducationOfflineRuntime.js"></script>
+<script src="js/pacificEducationOfflineSyncController.js"></script>
 <script src="js/pacificEducationNextStageControl.js"></script>
         <script src="js/pacificEducationFinalReleaseAuthorizedReviewFinalReconciliationRecord.js"></script>
         <script src="js/pacificEducationFinalReleaseAuthorizedReviewFinalReconciliationGate.js"></script>
@@ -527,5 +528,19 @@ html[data-text-scale="x-large"]{font-size:125%}
     });
 })();
 </script>
-</body>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ try{
+  if(window.PacificEducationOfflineRuntime){
+   window.PacificEducationOfflineRuntime.registerServiceWorker();
+  }
+  var s=window.PacificEducationOfflineSyncController;
+  var el=document.getElementById("pacificEducationOfflineSyncStatus");
+  if(s&&el){
+   var x=s.status();
+   el.textContent=x.queuedProgressCount+" offline progress item(s) queued. Server sync remains disabled until a secure backend endpoint and server acknowledgement exist.";
+  }
+ }catch(e){}
+});
+</script></body>
 </html>
