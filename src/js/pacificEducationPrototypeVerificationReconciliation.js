@@ -16,6 +16,7 @@ function evaluate(){
  var missingEvidenceTests=[];
  var orphanEvidenceTests=[];
  var legacyEvidenceTests=[];
+ var outdatedMatrixEvidenceTests=[];
  var evidenceRecordApi=window.PacificEducationFullSystemTestEvidenceRecord||null;
  var evidenceRecords=evidenceRecordApi&&typeof evidenceRecordApi.read==="function"?evidenceRecordApi.read():[];
  var currentTestIds=[];
@@ -33,6 +34,7 @@ function evaluate(){
    var x=t&&t.status==="pass"&&t.evidence;
    var latest=evidenceRecords.filter(function(r){return r&&r.testId===t[0];}).pop();
    if(latest&&!latest.matrixVersion) {legacyEvidenceTests.push(t[0]);addRemediation(stageMap[t[0]]||"Other",t[0],"Legacy evidence has no matrix version; refresh evidence against the current test matrix");}
+   if(latest&&latest.matrixVersion&&matrix&&matrix.version&&latest.matrixVersion!==matrix.version) {outdatedMatrixEvidenceTests.push(t[0]);addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence is tied to an older test-matrix version; refresh evidence against the current matrix");}
    if(!latest||latest.status!=="pass"||!latest.evidenceReference||!latest.reviewerReference||!latest.matrixVersion){ missingEvidenceTests.push(t[0]); addRemediation(stageMap[t[0]]||"Other",t[0],"PASS + current evidence reference + reviewer reference required"); }
    if(latest&&latest.createdAt){var evidenceAge=now-Date.parse(latest.createdAt);if(isFinite(evidenceAge)&&evidenceAge>staleThresholdMs){staleTests.push(t[0]);addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence record older than 24 hours; refresh authorized review evidence");}}
    if(x&&t.updatedAt){var age=now-Date.parse(t.updatedAt);if(isFinite(age)&&age>staleThresholdMs){ staleTests.push(t[0]); addRemediation(stageMap[t[0]]||"Other",t[0],"Evidence older than 24 hours; refresh/review required"); }}
@@ -58,11 +60,13 @@ function evaluate(){
   staleTests:staleTests,
   orphanEvidenceTests:orphanEvidenceTests,
   legacyEvidenceTests:legacyEvidenceTests,
+  outdatedMatrixEvidenceTests:outdatedMatrixEvidenceTests,
   staleThresholdHours:24,
   remediationByStage:remediationByStage,
   remediationStageCount:Object.keys(remediationByStage).length,
   evidenceRecordEvaluationAvailable:!!(evidenceRecordApi&&typeof evidenceRecordApi.evaluate==="function"),
   currentMatrixVersion:matrix&&matrix.version?matrix.version:null,
+  evidenceMatrixVersionMismatchCount:outdatedMatrixEvidenceTests.length,
   reviewerEvidenceRequired:true,
   productionApproved:false,
   productionEligible:false,
