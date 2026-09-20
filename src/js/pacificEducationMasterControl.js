@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.6";
+    var MASTER_CONTROL_VERSION = "1.0.7";
 
     /*
      * =======================================================
@@ -135,6 +135,17 @@
             prototypeOnly: true,
             validationNote:
                 "Source data is not treated as official current achievement-indicator data until authorized current Ministry documents are validated."
+        },
+
+        curriculumAlignmentDataModel: {
+            file:
+                "src/js/pacificEducationCurriculumAlignmentDataModel.js",
+            status: STATUS.IN_PROGRESS,
+            purpose:
+                "Runtime contract and fail-closed validation layer connecting curriculum indicators to daily activities and assessments.",
+            prototypeOnly: true,
+            validationNote:
+                "No achievement-indicator text is invented. Indicators remain pending until authorized current Ministry source validation."
         },
 
         centralBridge: {
@@ -472,6 +483,13 @@
             from:
                 "Curriculum Alignment Registry",
             to:
+                "Curriculum Alignment Data Model"
+        },
+
+        {
+            from:
+                "Curriculum Alignment Data Model",
+            to:
                 "Daily Lessons and Assessments"
         },
 
@@ -675,6 +693,8 @@
         "js/pacificEducationFullSystemTestReconciliationAcknowledgement.js",
 
         "js/pacificEducationFullSystemTestReconciliationAcknowledgementVerificationGate.js",
+
+        "js/pacificEducationCurriculumAlignmentDataModel.js",
 
         "js/pacificEducationCurriculumAlignmentNextStage.js",
         "js/pacificEducationCalendarNextStage.js",
