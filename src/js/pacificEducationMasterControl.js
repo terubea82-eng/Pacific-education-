@@ -148,6 +148,14 @@
                 "No achievement-indicator text is invented. Indicators remain pending until authorized current Ministry source validation."
         },
 
+        curriculumAssessmentCoverageBridge: {
+            file: "src/js/pacificEducationCurriculumAssessmentBridge.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Connects curriculum indicator validation, teacher evidence coverage, revision scheduling and exam scheduling; prototype only.",
+            prototypeOnly: true,
+            externalValidationRequired: true
+        },
+
         curriculumAlignmentRuntimeBridge: {
             file:
                 "src/js/pacificEducationCurriculumAlignmentRuntimeBridge.js",
