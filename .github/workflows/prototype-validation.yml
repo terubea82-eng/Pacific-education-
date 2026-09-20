@@ -23,9 +23,14 @@ jobs:
           set -euo pipefail
           mapfile -t files < <(find . -type f -name '*.js' -not -path './.git/*' | sort)
           test "${#files[@]}" -gt 0
+          failed=0
           for file in "${files[@]}"; do
-            node --check "$file"
+            if ! node --check "$file"; then
+              echo "::error file=$file::JavaScript syntax validation failed"
+              failed=1
+            fi
           done
+          test "$failed" -eq 0
 
       - name: Validate local script references
         shell: bash
