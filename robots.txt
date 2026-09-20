@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://terubea82-eng.github.io/Pacific-education-/sitemap.xml
