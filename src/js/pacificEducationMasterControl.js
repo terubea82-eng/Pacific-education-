@@ -494,6 +494,34 @@
 
         {
             from:
+                "Full System Test Reconciliation Record",
+            to:
+                "Full System Test Reconciliation Verification Gate"
+        },
+
+        {
+            from:
+                "Full System Test Reconciliation Verification Gate",
+            to:
+                "Full System Test Reconciliation Acknowledgement"
+        },
+
+        {
+            from:
+                "Full System Test Reconciliation Acknowledgement",
+            to:
+                "Full System Test Reconciliation Acknowledgement Verification Gate"
+        },
+
+        {
+            from:
+                "Full System Test Reconciliation Acknowledgement Verification Gate",
+            to:
+                "Owner Final Review"
+        },
+
+        {
+            from:
                 "Application",
             to:
                 "All Approved Modules"
