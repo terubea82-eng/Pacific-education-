@@ -13,7 +13,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var CORE_SHARE = 0.50;
     var INTEGRATED_SHARE = 0.50;
 
@@ -31,6 +31,19 @@
 
     function distributionEngine() {
         return window.PacificEducationAchievementDistributionEngine || null;
+    }
+
+    function alignmentModel() {
+        return window.PacificEducationCurriculumAlignmentDataModel || null;
+    }
+
+    function isApprovedMapping(item, subjectId, level) {
+        if (!item) return false;
+        if (item.integrationMappingApproved === true) return true;
+        if (Array.isArray(item.approvedIntegrationSubjects) &&
+            item.approvedIntegrationSubjects.indexOf(subjectId) >= 0 &&
+            item.integrationLevel === level) return true;
+        return false;
     }
 
     function selectCoreIndicator(filters) {
@@ -75,6 +88,7 @@
         });
 
         var integrated = [];
+        var blockedIntegrationSubjects = [];
 
         if (core) {
             var engine = integrationEngine();
@@ -87,7 +101,18 @@
                 );
 
                 if (result && Array.isArray(result.integrated)) {
-                    integrated = copy(result.integrated);
+                    result.integrated.forEach(function(item) {
+                        var approved = isApprovedMapping(core, item.subjectId, level);
+                        if (approved) {
+                            integrated.push(copy(item));
+                        } else {
+                            blockedIntegrationSubjects.push({
+                                subjectId: item.subjectId,
+                                reason: "APPROVED_INTEGRATION_MAPPING_REQUIRED",
+                                productionEligible: false
+                            });
+                        }
+                    });
                 }
             }
 
@@ -95,7 +120,7 @@
              * If the indicator has no integration subjects, retain a
              * transparent empty list rather than inventing curriculum.
              */
-            if (!integrated.length &&
+            if (!integrated.length && !blockedIntegrationSubjects.length &&
                 Array.isArray(core.integrationSubjects)) {
                 integrated = core.integrationSubjects.map(function(subject) {
                     return {
@@ -123,7 +148,10 @@
             },
             integrated: {
                 share: INTEGRATED_SHARE,
-                subjects: integrated
+                subjects: integrated,
+                blockedSubjects: blockedIntegrationSubjects,
+                levelled: true,
+                approvedMappingRequired: true
             },
             productionEligible: false,
             prototype: true
@@ -140,6 +168,14 @@
 
         if (plan.integrated.share !== 0.50) {
             errors.push("Integrated share must remain 50%");
+        }
+
+        if (plan.integrated.levelled !== true) {
+            errors.push("Integrated learning must be levelled");
+        }
+
+        if (plan.integrated.approvedMappingRequired !== true) {
+            errors.push("Approved integration mapping is required");
         }
 
         if (plan.productionEligible === true) {
