@@ -1,0 +1,6 @@
+(function(window){"use strict";
+function data(){return window.PacificEducationCurriculumData}function reg(){return window.PacificEducationCurriculumAlignmentRegistry}function map(){return window.PacificEducationCurriculumAssessmentMap}
+function validateDataLayer(){if(!data())return{status:"blocked",valid:false,errors:["Curriculum Data unavailable"]};var r=data().validate();return{status:r.valid?"pass":"blocked",valid:r.valid,errors:r.errors};}
+function validateRegistry(){if(!reg())return{status:"blocked",valid:false,errors:["Alignment Registry unavailable"]};var r=reg().validate();return{status:r.valid?"pass":"blocked",valid:r.valid,errors:r.errors};}
+function runFullValidation(){var a=validateDataLayer(),b=validateRegistry(),c=map()?map().validate():{valid:false,errors:["Assessment Map unavailable"]};return{valid:a.valid&&b.valid&&c.valid,status:(a.valid&&b.valid&&c.valid)?"pass":"blocked",data:a,registry:b,assessmentMap:c,productionEligible:false};}
+window.PacificEducationCurriculumValidationGuard=Object.freeze({name:"PacificEducationCurriculumValidationGuard",version:"1.0.0",validateDataLayer:validateDataLayer,validateRegistry:validateRegistry,runFullValidation:runFullValidation,canGeneratePrototypePlans:function(){return runFullValidation().valid},canPublishProduction:function(){return false}});})(window);
