@@ -87,13 +87,13 @@
 
         annualGdpPricingEngine: {
             file:
-                "js/pacificEducationAnnualGdpPricingEngine.js",
+                "src/js/pacificEducationAnnualGdpPricingEngine.js",
             status: STATUS.COMPLETE
         },
 
         pricingAuditGuard: {
             file:
-                "js/pacificEducationPricingAuditGuard.js",
+                "src/js/pacificEducationPricingAuditGuard.js",
             status: STATUS.COMPLETE
         },
 
@@ -339,7 +339,7 @@
 
         "../js/pacificEducationCore.js",
 
-        "js/pacificEducationMasterInclusionSpecification.js",
+        "src/js/pacificEducationMasterInclusionSpecification.js",
 
         "js/pacificEducationCoreBridge.js",
 
@@ -355,7 +355,7 @@
 
         "js/pacificEducationSecureLinkAuthorization.js",
 
-        "js/pacificEducationAssessmentBridge.js",
+        "src/js/pacificEducationAssessmentBridge.js",
 
         "../js/pacificEducationAssessmentIntegration.js",
 
