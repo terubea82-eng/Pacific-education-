@@ -1,0 +1,10 @@
+(function(window){"use strict";
+var VERSION="1.0.0",maps=[],evidence=[];
+function copy(v){return JSON.parse(JSON.stringify(v));}
+function register(m){if(!m||!m.id||!m.indicatorId)throw new Error("Assessment map id and indicatorId required");var i=maps.findIndex(function(x){return x.id===m.id});if(i>=0)maps[i]=copy(m);else maps.push(copy(m));return copy(m);}
+function get(id){var x=maps.find(function(m){return m.id===id});return x?copy(x):null;}
+function getForIndicator(id){return maps.filter(function(m){return m.indicatorId===id}).map(copy);}
+function recordEvidence(x){x=x||{};if(!x.indicatorId)throw new Error("indicatorId required");var r={id:x.id||("EV-"+Date.now()),indicatorId:x.indicatorId,studentId:x.studentId||null,assessmentId:x.assessmentId||null,evidenceType:x.evidenceType||"teacher-observation",result:x.result||"recorded",teacherConfirmed:Boolean(x.teacherConfirmed),date:x.date||new Date().toISOString().slice(0,10)};evidence.push(r);return copy(r);}
+function getCoverageDecision(x){x=x||{};var list=evidence.filter(function(e){return e.indicatorId===x.indicatorId&&(!x.studentId||e.studentId===x.studentId)});return{indicatorId:x.indicatorId,evidenceCount:list.length,covered:list.some(function(e){return e.teacherConfirmed&&["achieved","competent","covered"].indexOf(e.result)>=0}),evidence:list.map(copy)};}
+function validate(){var errors=[];maps.forEach(function(m){if(!m.id||!m.indicatorId)errors.push("Invalid assessment map")});return{valid:errors.length===0,errors:errors,mapCount:maps.length};}
+window.PacificEducationCurriculumAssessmentMap=Object.freeze({name:"PacificEducationCurriculumAssessmentMap",version:VERSION,register:register,get:get,getForIndicator:getForIndicator,recordEvidence:recordEvidence,getCoverageDecision:getCoverageDecision,validate:validate,exportMap:function(){return copy(maps)}});})(window);
