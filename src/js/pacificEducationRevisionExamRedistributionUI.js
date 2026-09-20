@@ -9,7 +9,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function scheduler() {
         return window.PacificEducationRevisionExamScheduler || null;
@@ -49,7 +49,9 @@
         if (!s || typeof s.addExamDay !== "function") {
             return { success: false, error: "Revision/Exam Scheduler unavailable" };
         }
-        return s.addExamDay(Number(dayNumber));
+        var raw = window.prompt("Enter covered indicator ID(s), separated by commas:");
+        var ids = raw ? raw.split(",").map(function(v){ return v.trim(); }).filter(Boolean) : [];
+        return s.addExamDay(Number(dayNumber), null, ids, null);
     }
 
     function rebuild() {
