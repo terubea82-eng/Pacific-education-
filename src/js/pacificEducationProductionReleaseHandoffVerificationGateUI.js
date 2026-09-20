@@ -17,7 +17,7 @@ h+="<p><strong>Production approved:</strong> NO | <strong>Production eligible:</
 h+="<h3>Blockers</h3><ul>";
 if(!x.blockers.length)h+="<li>None detected by this prototype gate.</li>";
 x.blockers.forEach(function(b){h+="<li>"+esc(b)+"</li>";});
-h+="</ul><button type="button" id="pacificRefreshHandoffGate">Refresh Verification</button>";
+h+='</ul><button type="button" id="pacificRefreshHandoffGate">Refresh Verification</button>';
 h+="<p><small>READY-FOR-EXTERNAL-REVIEW is not production approval. Independent specialist review and external authorization remain required.</small></p></section>";
 t.innerHTML=h;
 document.getElementById("pacificRefreshHandoffGate").onclick=function(){render(targetId);};
