@@ -59,6 +59,13 @@
 
 <main id="app">
 
+    <section id="prototypeAccess" style="border:1px solid #888;padding:12px;margin:12px 0;">
+<h2>Prototype Access</h2>
+<p><strong>PROTOTYPE ONLY:</strong> This authorizes the browser session through the existing Pacific Education Core. It is not production authentication.</p>
+<button type="button" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
+<span id="prototypeAccessStatus" aria-live="polite">Not authorized</span>
+</section>
+
     <!-- DAILY LEARNING -->
     <section id="dailyLesson">
 
@@ -282,6 +289,32 @@
 
 <!-- APPLICATION -->
 <script src="js/app.js"></script>
+
+<script>
+(function () {
+    "use strict";
+    window.authorizePrototypeStudent = function () {
+        const core = window.PacificEducationCore;
+        const status = document.getElementById("prototypeAccessStatus");
+        if (!core || typeof core.authorizeUser !== "function") {
+            if (status) status.textContent = "Core unavailable";
+            return false;
+        }
+        const ok = core.authorizeUser({
+            authorized: true,
+            userId: "prototype-student",
+            role: "student",
+            displayName: "Prototype Student"
+        });
+        if (status) status.textContent = ok ? "Authorized" : "Authorization failed";
+        if (ok) {
+            if (typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
+            if (typeof window.displayDailyLesson === "function") window.displayDailyLesson();
+        }
+        return ok;
+    };
+})();
+</script>
 
 </body>
 </html>
