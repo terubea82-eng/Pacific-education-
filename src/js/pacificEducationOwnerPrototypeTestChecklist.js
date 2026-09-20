@@ -185,6 +185,7 @@
     window.PacificEducationOwnerPrototypeTestChecklist = Object.freeze({
         version: VERSION,
         render: render,
+        read: read,
         setResult: setResult,
         clearAll: clearAll
     });
