@@ -346,7 +346,13 @@
 
             if (
                 typeof core.setLesson === "function" &&
-                (!coreState || !coreState.lesson || !Number.isInteger(Number(coreState.lesson.day)))
+                (
+                    !coreState ||
+                    !coreState.lesson ||
+                    !Number.isInteger(Number(coreState.lesson.day)) ||
+                    Number(coreState.lesson.day) < 1 ||
+                    Number(coreState.lesson.day) > 365
+                )
             ) {
                 core.setLesson({
                     lessonId: "class1-day-1",
