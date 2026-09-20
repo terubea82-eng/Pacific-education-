@@ -1,0 +1,7 @@
+(function(window){"use strict";
+var VERSION="1.0.0",CORE_SHARE=0.5,INTEGRATED_SHARE=0.5;
+function copy(v){return JSON.parse(JSON.stringify(v));}
+function buildFromIndicator(indicator,level,subjectId){indicator=indicator||{};var subjects=Array.isArray(indicator.integrationSubjects)?indicator.integrationSubjects:[];return{model:"Pacific Education prototype 50/50",coreShare:CORE_SHARE,integratedShare:INTEGRATED_SHARE,core:{subjectId:subjectId||indicator.subjectId||null,indicatorId:indicator.id||null},integrated:subjects.map(function(s){return{subjectId:s,level:level||indicator.level||null,activitySuggestion:"Levelled integration activity linked to the core learning."}}),prototype:true};}
+function createPlan(x){x=x||{};return buildFromIndicator(x.indicator,x.level,x.subjectId);}
+function validatePlan(p){return{valid:Boolean(p&&p.core&&p.model),prototype:true,errors:p&&p.core?[]:["Core learning component missing"]};}
+window.PacificEducationCurriculumIntegrationEngine=Object.freeze({name:"PacificEducationCurriculumIntegrationEngine",version:VERSION,createPlan:createPlan,buildFromIndicator:buildFromIndicator,getSubjects:function(i){return i&&Array.isArray(i.integrationSubjects)?copy(i.integrationSubjects):[]},validatePlan:validatePlan,exportPlan:copy});})(window);
