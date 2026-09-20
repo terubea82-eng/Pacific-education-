@@ -148,8 +148,7 @@
                 " integrated subject connection(s) available." :
                 "Integration plan unavailable."
             ) + '</p>' +
-            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div>
-<h3>Current Assessment Evidence</h3>' +
+            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div><h3>Current Assessment Evidence</h3>' +
             '<p>' + (assessments.length ?
                 escapeHtml(String(assessments.length) + " assessment record(s) linked.") :
                 "No assessment records linked to the current indicator.") + '</p>' +
