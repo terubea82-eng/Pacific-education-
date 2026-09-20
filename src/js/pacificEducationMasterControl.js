@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.8";
+    var MASTER_CONTROL_VERSION = "1.0.9";
 
     /*
      * =======================================================
@@ -317,6 +317,30 @@
             purpose: "Locks prototype safeguarding requirements and fail-closed production boundaries.",
             prototypeOnly: true,
             specialistReviewRequired: true
+        },
+
+        accessibilityRuntime: {
+            file: "src/js/pacificEducationAccessibilityRuntime.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Prototype accessibility controls for text scaling, speech and accessible status announcements.",
+            prototypeOnly: true,
+            humanTestingRequired: true
+        },
+
+        offlineRuntime: {
+            file: "src/js/pacificEducationOfflineRuntime.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Prototype offline progress queue and cached learning runtime.",
+            prototypeOnly: true,
+            realDeviceTestingRequired: true
+        },
+
+        offlineServiceWorker: {
+            file: "src/service-worker.js",
+            status: STATUS.IN_PROGRESS,
+            purpose: "Prototype cached learning fallback; never caches secrets or authorization state.",
+            prototypeOnly: true,
+            realDeviceTestingRequired: true
         },
 
         offlineNextStage: {
@@ -719,6 +743,10 @@
         "js/pacificEducationCurriculumAlignmentNextStage.js",
         "js/pacificEducationCalendarNextStage.js",
         "js/pacificEducationAccessibilityNextStage.js",
+
+        "js/pacificEducationAccessibilityRuntime.js",
+
+        "js/pacificEducationOfflineRuntime.js",
         "js/pacificEducationSafeguardingNextStage.js",
         "js/pacificEducationOfflineNextStage.js",
         "js/pacificEducationTestingNextStage.js",
