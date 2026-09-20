@@ -1,0 +1,70 @@
+name: Pacific Education Prototype Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t files < <(find . -type f -name '*.js' -not -path './.git/*' | sort)
+          test "${#files[@]}" -gt 0
+          for file in "${files[@]}"; do
+            node --check "$file"
+          done
+
+      - name: Validate local script references
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, sys
+
+          index = Path("src/index.html")
+          text = index.read_text(encoding="utf-8")
+          refs = re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', text)
+          missing = []
+          for ref in refs:
+              if "://" in ref:
+                  continue
+              target = (index.parent / ref).resolve()
+              if not target.exists():
+                  missing.append((ref, target))
+          if missing:
+              print("Missing local script references:")
+              for ref, target in missing:
+                  print(f"- {ref} -> {target}")
+              sys.exit(1)
+          print(f"Validated {len(refs)} local script references.")
+
+      - name: Validate required publication records
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f PUBLICATION_READINESS.md
+          test -f src/index.html
+          test -f src/service-worker.js
+          echo "Required publication records and prototype entry files exist."
+
+      - name: Validate fail-closed production markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -R "productionApproved.*false\|productionApproved: false" src/js >/dev/null
+          grep -R "productionEligible.*false\|productionEligible: false" src/js >/dev/null
+          echo "Fail-closed production markers detected."
