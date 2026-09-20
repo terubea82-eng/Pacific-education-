@@ -17,9 +17,14 @@ function render(id){
  var finalGate=verify("PacificEducationFinalReleaseAuthorizedReviewFinalReconciliationGate");
  var recordGate=verify("PacificEducationFinalReleaseAuthorizedReviewFinalReconciliationRecordVerificationGate");
  var ackGate=verify("PacificEducationFinalReleaseAuthorizedReviewFinalReconciliationAcknowledgementVerificationGate");
- var overall=(finalGate.status==="FINAL-RECONCILIATION-VERIFIED-FOR-REVIEW-CONTROL"&&recordGate.status==="VERIFIED-FOR-FINAL-REVIEW-CONTROL"&&ackGate.status==="ACKNOWLEDGEMENT-VERIFIED-FOR-FINAL-REVIEW-CONTROL");
+ var fullSystemTestGate=verify("PacificEducationFullSystemTestVerificationGate");
+ var fullSystemReconciliationGate=verify("PacificEducationFullSystemTestReconciliationVerificationGate");
+ var overall=(fullSystemTestGate.status==="FULL-SYSTEM-TEST-VERIFIED-FOR-RECONCILIATION"&&fullSystemReconciliationGate.status==="FULL-SYSTEM-TEST-RECONCILIATION-VERIFIED"&&finalGate.status==="FINAL-RECONCILIATION-VERIFIED-FOR-REVIEW-CONTROL"&&recordGate.status==="VERIFIED-FOR-FINAL-REVIEW-CONTROL"&&ackGate.status==="ACKNOWLEDGEMENT-VERIFIED-FOR-FINAL-REVIEW-CONTROL");
  el.innerHTML="<section><h2>Pacific Education — Owner Final Review</h2>"+
  "<p><strong>Owner review status:</strong> "+(overall?"READY FOR OWNER REVIEW":"BLOCKED — REQUIRED REVIEW CONTROL INCOMPLETE")+"</p>"+
+ "<h3>Full-system testing checks</h3><ul>"+
+ "<li>Full-system testing: "+fullSystemTestGate.status+"</li>"+
+ "<li>Testing reconciliation: "+fullSystemReconciliationGate.status+"</li></ul>"+
  "<h3>Release-control checks</h3><ul>"+
  "<li>Final reconciliation: "+finalGate.status+"</li>"+
  "<li>Reconciliation record: "+recordGate.status+"</li>"+
