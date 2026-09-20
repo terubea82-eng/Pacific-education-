@@ -41,3 +41,5 @@ function getRemediationSummary(){var api=window.PacificEducationPrototypeVerific
  var remediationSummary=getRemediationSummary();
  var remediationRoot=document.getElementById("pacificEducationOwnerRemediation")||el;
  renderRemediationItems(remediationRoot,remediationSummary);
+ }
+})(window,document);
