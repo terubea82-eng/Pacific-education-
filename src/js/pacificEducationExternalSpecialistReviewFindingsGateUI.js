@@ -1,6 +1,6 @@
 /*
  * Pacific Education — External Specialist Review Findings Gate UI
- * Version 1.0.0
+ * Version 1.0.1
  * PROTOTYPE ONLY / FAIL-CLOSED.
  */
 (function(window,document){
@@ -17,12 +17,12 @@ h+="<p><strong>Requests:</strong> "+x.requests+" | <strong>Evidence:</strong> "+
 h+="<h3>Blockers</h3><ul>";
 if(!x.blockers.length)h+="<li>None detected by this prototype gate.</li>";
 x.blockers.forEach(function(b){h+="<li>"+esc(b)+"</li>";});
-h+="</ul><button type="button" id="pacificRefreshSpecialistFindingsGate">Refresh Findings Gate</button>";
+h+='</ul><button type="button" id="pacificRefreshSpecialistFindingsGate">Refresh Findings Gate</button>';
 h+="<p><small>Evidence completeness does not equal production approval. External authorization remains required.</small></p></section>";
 t.innerHTML=h;
 document.getElementById("pacificRefreshSpecialistFindingsGate").onclick=function(){render(targetId);};
 }
-window.PacificEducationExternalSpecialistReviewFindingsGateUI=Object.freeze({version:"1.0.0",render:render});
+window.PacificEducationExternalSpecialistReviewFindingsGateUI=Object.freeze({version:"1.0.1",render:render});
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){render();});else render();
 document.addEventListener("pacificEducationExternalSpecialistEvidenceChanged",function(){render();});
 document.addEventListener("pacificEducationIndependentProductionReviewChanged",function(){render();});
