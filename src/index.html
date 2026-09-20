@@ -310,8 +310,41 @@
         if (ok) {
             const button = document.getElementById("prototypeAuthorizeButton");
             if (button) button.textContent = "Authorized Student Session Active";
-        }
-        if (ok) {
+
+            /*
+             * Prototype session bootstrap only.
+             * Use the existing protected Core APIs to establish
+             * the first student and Day 1 lesson when this is a
+             * fresh browser session. No alternate progress store
+             * or authorization bypass is introduced.
+             */
+            if (typeof core.setStudent === "function") {
+                core.setStudent({
+                    studentId: "prototype-student",
+                    name: "Prototype Student",
+                    yearForm: "Class 1",
+                    className: "Prototype Class"
+                });
+            }
+
+            const coreState = typeof core.getState === "function"
+                ? core.getState()
+                : null;
+
+            if (
+                typeof core.setLesson === "function" &&
+                (!coreState || !coreState.lesson || !Number.isInteger(Number(coreState.lesson.day)))
+            ) {
+                core.setLesson({
+                    lessonId: "class1-day-1",
+                    day: 1,
+                    subject: "English",
+                    title: "My First English Words",
+                    concept: "Basic English words",
+                    status: "not_started"
+                });
+            }
+
             if (typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
             if (typeof window.displayDailyLesson === "function") window.displayDailyLesson();
         }
