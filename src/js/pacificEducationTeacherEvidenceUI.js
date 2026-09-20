@@ -21,6 +21,10 @@
         return window.PacificEducationCurriculumLessonRenderer || null;
     }
 
+    function studentContext() {
+        return window.PacificEducationStudentCoverageContext || null;
+    }
+
     function escapeHtml(value) {
         return String(value == null ? "" : value)
             .replace(/&/g, "&amp;").replace(/</g, "&lt;")
@@ -106,7 +110,7 @@
 
                 var result = e.record({
                     indicatorId: item.id,
-                    studentId: get("pacificEducationStudentId", null),
+                    studentId: (studentContext() && typeof studentContext().getStudentId === "function" ? studentContext().getStudentId() : get("pacificEducationStudentId", null)),
                     assessmentId: null,
                     evidenceType: "teacher-entry",
                     status: status,
