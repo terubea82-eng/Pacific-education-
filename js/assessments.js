@@ -59,7 +59,8 @@
                             Object.freeze([
                                 "A",
                                 "B",
-                                "C"
+                                "C",
+                                "D"
                             ]),
 
                         answer:
@@ -89,7 +90,8 @@
                             Object.freeze([
                                 "Apple",
                                 "Ball",
-                                "Cat"
+                                "Cat",
+                                "Dog"
                             ]),
 
                         answer:
@@ -120,7 +122,8 @@
                             Object.freeze([
                                 "Ball",
                                 "Cat",
-                                "Sun"
+                                "Sun",
+                                "Map"
                             ]),
 
                         answer:
@@ -135,7 +138,8 @@
                             Object.freeze([
                                 "Map",
                                 "Dog",
-                                "Fish"
+                                "Fish",
+                                "Ball"
                             ]),
 
                         answer:
@@ -150,7 +154,8 @@
                             Object.freeze([
                                 "Cat",
                                 "Dog",
-                                "Sun"
+                                "Sun",
+                                "Map"
                             ]),
 
                         answer:
