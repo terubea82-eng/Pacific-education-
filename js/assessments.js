@@ -502,23 +502,32 @@
 
     function show(html) {
 
-        if (
+        /*
+         * Assessment messages belong in the assessment
+         * dashboard. Do not replace the Daily Lesson DOM.
+         * This keeps the lesson, Prototype Access and
+         * Complete Lesson action available after a
+         * protected assessment attempt.
+         */
 
-            typeof window.showLesson ===
-                "function"
-
-        ) {
-
-            window.showLesson(html);
-
-        } else {
-
-            console.error(
-                "Pacific Education assessment connection error: showLesson() is unavailable."
+        const container =
+            document.getElementById(
+                "assessmentDashboard"
             );
 
+        if (container) {
+
+            container.innerHTML =
+                html || "";
+
+            return true;
         }
 
+        console.error(
+            "Pacific Education assessment connection error: assessmentDashboard is unavailable."
+        );
+
+        return false;
     }
 
 
