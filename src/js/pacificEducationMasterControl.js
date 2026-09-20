@@ -4,7 +4,7 @@
  * MASTER CONTROL
  * =========================================================
  *
- * Version: 1.0.3
+ * Version: 1.0.4
  *
  * Purpose:
  * Central coordination registry for Pacific Education.
@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.3";
+    var MASTER_CONTROL_VERSION = "1.0.4";
 
     /*
      * =======================================================
@@ -115,6 +115,17 @@
             status: STATUS.IN_PROGRESS
         },
 
+        curriculumAlignment: {
+            file:
+                "src/js/pacificEducationCurriculumAlignment.js",
+            status: STATUS.IN_PROGRESS,
+            purpose:
+                "Controlled registry for aligning daily learning and assessment activities to the official Fiji curriculum.",
+            prototypeOnly: true,
+            productionSecurityNote:
+                "Official curriculum authority, versioning and sensitive controls must be validated and enforced server-side where required."
+        },
+
         centralBridge: {
             file:
                 "src/js/pacificEducationCentralBridge.js",
@@ -198,7 +209,7 @@
 
         curriculumAlignment: {
             number: 8,
-            status: STATUS.NOT_STARTED
+            status: STATUS.IN_PROGRESS
         },
 
         calendar: {
@@ -300,6 +311,20 @@
                 "Daily Lessons",
             to:
                 "Assessments"
+        },
+
+        {
+            from:
+                "Official Fiji Curriculum",
+            to:
+                "Curriculum Alignment Registry"
+        },
+
+        {
+            from:
+                "Curriculum Alignment Registry",
+            to:
+                "Daily Lessons and Assessments"
         },
 
         {
