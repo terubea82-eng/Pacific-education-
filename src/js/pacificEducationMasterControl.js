@@ -61,7 +61,7 @@
 
         masterInclusionSpecification: {
             file:
-                "js/pacificEducationMasterInclusionSpecification.js",
+                "src/js/pacificEducationMasterInclusionSpecification.js",
             status: STATUS.COMPLETE
         },
 
@@ -111,13 +111,13 @@
 
         assessmentBridge: {
             file:
-                "js/pacificEducationAssessmentBridge.js",
+                "src/js/pacificEducationAssessmentBridge.js",
             status: STATUS.IN_PROGRESS
         },
 
         centralBridge: {
             file:
-                "js/pacificEducationCentralBridge.js",
+                "src/js/pacificEducationCentralBridge.js",
             status: STATUS.COMPLETE,
 
             purpose:
@@ -148,7 +148,7 @@
         },
 
         application: {
-            file: "index.html",
+            file: "src/index.html",
             status: STATUS.COMPLETE
         }
     });
@@ -337,29 +337,37 @@
 
     var SCRIPT_LOAD_ORDER = Object.freeze([
 
-        "pacificEducationMasterInclusionSpecification.js",
+        "../js/pacificEducationCore.js",
 
-        "pacificEducationAnnualGdpPricingEngine.js",
+        "js/pacificEducationMasterInclusionSpecification.js",
 
-        "pacificEducationPricingAuditGuard.js",
+        "js/pacificEducationCoreBridge.js",
 
-        "pacificEducationEducationLinkBridge.js",
+        "js/pacificEducationMasterControl.js",
 
-        "pacificEducationSecureLinkAuthorization.js",
+        "js/pacificEducationAnnualGdpPricingEngine.js",
 
-        "pacificEducationAssessmentBridge.js",
+        "js/pacificEducationPricingAuditGuard.js",
 
-        "pacificEducationCentralBridge.js",
+        "js/pacificEducationCentralBridge.js",
 
-        "dailyLessons.js",
+        "js/pacificEducationEducationLinkBridge.js",
 
-        "assessments.js",
+        "js/pacificEducationSecureLinkAuthorization.js",
 
-        "dashboards.js",
+        "js/pacificEducationAssessmentBridge.js",
 
-        "buyPlans.js",
+        "../js/pacificEducationAssessmentIntegration.js",
 
-        "app.js"
+        "../js/dailyLessons.js",
+
+        "../js/assessments.js",
+
+        "../js/dashboards.js",
+
+        "js/buyPlans.js",
+
+        "js/app.js"
     ]);
 
     /*
