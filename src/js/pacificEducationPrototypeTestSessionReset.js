@@ -39,7 +39,9 @@
             "alphabetAssessment",
             "phonicsAssessment",
             "learningStatus",
-            "pacificOwnerTestDay"
+            "pacificOwnerTestDay",
+            "pacificEducationCurrentDay",
+            "dailyLessonDay"
         ];
 
         keys.forEach(function (key) {
