@@ -20,6 +20,7 @@ function render(id){
  var fullSystemTestGate=verify("PacificEducationFullSystemTestVerificationGate");
  var fullSystemReconciliationGate=verify("PacificEducationFullSystemTestReconciliationVerificationGate");
  var fullSystemReconciliationAcknowledgementGate=verify("PacificEducationFullSystemTestReconciliationAcknowledgementVerificationGate");
+ var prototypeReconciliation=window.PacificEducationPrototypeVerificationReconciliation&&typeof window.PacificEducationPrototypeVerificationReconciliation.evaluate==="function"?window.PacificEducationPrototypeVerificationReconciliation.evaluate():{status:"BLOCKED",automatedRuntimeStatus:"MISSING",matrixEvidenceStatus:"MISSING"};
  var overall=(fullSystemTestGate.status==="FULL-SYSTEM-TEST-VERIFIED-FOR-RECONCILIATION"&&fullSystemReconciliationGate.status==="FULL-SYSTEM-TEST-RECONCILIATION-VERIFIED"&&fullSystemReconciliationAcknowledgementGate.status==="FULL-SYSTEM-TEST-RECONCILIATION-ACKNOWLEDGEMENT-VERIFIED"&&finalGate.status==="FINAL-RECONCILIATION-VERIFIED-FOR-REVIEW-CONTROL"&&recordGate.status==="VERIFIED-FOR-FINAL-REVIEW-CONTROL"&&ackGate.status==="ACKNOWLEDGEMENT-VERIFIED-FOR-FINAL-REVIEW-CONTROL");
  el.innerHTML="<section><h2>Pacific Education — Owner Final Review</h2>"+
  "<p><strong>Owner review status:</strong> "+(overall?"READY FOR OWNER REVIEW":"BLOCKED — REQUIRED REVIEW CONTROL INCOMPLETE")+"</p>"+
@@ -31,7 +32,7 @@ function render(id){
  "<li>Final reconciliation: "+finalGate.status+"</li>"+
  "<li>Reconciliation record: "+recordGate.status+"</li>"+
  "<li>Acknowledgement: "+ackGate.status+"</li></ul>"+
- "<h3>Production boundary</h3><p><strong>Production approved:</strong> NO</p><p><strong>Production eligible:</strong> NO</p><p><strong>Deployment authorized:</strong> NO</p>"+
+ "<h3>Live prototype verification reconciliation</h3><ul><li>Automated runtime: " + prototypeReconciliation.automatedRuntimeStatus + "</li><li>Matrix evidence: " + prototypeReconciliation.matrixEvidenceStatus + "</li><li>Reconciliation: " + prototypeReconciliation.status + "</li></ul><h3>Production boundary</h3><p><strong>Production approved:</strong> NO</p><p><strong>Production eligible:</strong> NO</p><p><strong>Deployment authorized:</strong> NO</p>"+
  "<p><strong>External authorized review:</strong> REQUIRED</p>"+
  "<p>This page is an owner review surface only. It cannot approve, certify, publish, or authorize production deployment.</p></section>";
 }
