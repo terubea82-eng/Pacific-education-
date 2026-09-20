@@ -17,9 +17,8 @@
 
         return !!(
             core &&
-            core.identity &&
-            typeof core.identity.isAuthorized === "function" &&
-            core.identity.isAuthorized()
+            typeof core.isAuthorized === "function" &&
+            core.isAuthorized()
         );
     }
 
