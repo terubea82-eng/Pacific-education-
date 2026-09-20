@@ -1,11 +1,11 @@
 /* =========================================
    PACIFIC EDUCATION — FULL SYSTEM TEST EVIDENCE RECORD
-   v1.0.0 — PROTOTYPE / REVIEW EVIDENCE ONLY
+   v1.1.1 — PROTOTYPE / REVIEW EVIDENCE ONLY
    ========================================= */
 (function(window, document) {
     "use strict";
 
-    const VERSION = "1.1.0";
+    const VERSION = "1.1.1";
     const KEY = "pacificEducationFullSystemTestEvidenceRecords";
 
     function read() {
@@ -49,7 +49,7 @@
 
         const currentMatrixVersion = matrix && matrix.version ? matrix.version : null;
         const verified = tests.every(function(test) {
-            const record = records.filter(function(r) { return r.testId === test[0]; }).pop();
+            const record = records.filter(function(r) { return r.testId === (test && test.id ? test.id : test[0]); }).pop();
             return record && record.status === "pass" && !!record.evidenceReference && !!record.reviewerReference && !!currentMatrixVersion && record.matrixVersion === currentMatrixVersion;
         });
 
