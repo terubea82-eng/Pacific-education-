@@ -62,8 +62,8 @@
     <section id="prototypeAccess" style="border:1px solid #888;padding:12px;margin:12px 0;">
 <h2>Prototype Access</h2>
 <p><strong>PROTOTYPE ONLY:</strong> This authorizes the browser session through the existing Pacific Education Core. It is not production authentication.</p>
-<button type="button" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
-<span id="prototypeAccessStatus" aria-live="polite">Not authorized</span>
+<button type="button" id="prototypeAuthorizeButton" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
+<span id="prototypeAccessStatus" aria-live="polite">Checking authorization...</span>
 </section>
 
     <!-- DAILY LEARNING -->
@@ -308,11 +308,27 @@
         });
         if (status) status.textContent = ok ? "Authorized" : "Authorization failed";
         if (ok) {
+            const button = document.getElementById("prototypeAuthorizeButton");
+            if (button) button.textContent = "Authorized Student Session Active";
+        }
+        if (ok) {
             if (typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
             if (typeof window.displayDailyLesson === "function") window.displayDailyLesson();
         }
         return ok;
     };
+    document.addEventListener("DOMContentLoaded", function () {
+        const core = window.PacificEducationCore;
+        const status = document.getElementById("prototypeAccessStatus");
+        const button = document.getElementById("prototypeAuthorizeButton");
+        if (core && typeof core.isAuthorized === "function" && core.isAuthorized() === true) {
+            if (status) status.textContent = "Authorized";
+            if (button) button.textContent = "Authorized Student Session Active";
+        } else if (status) {
+            status.textContent = "Not authorized — start the prototype student session before completing a lesson.";
+        }
+    });
+
 })();
 </script>
 
