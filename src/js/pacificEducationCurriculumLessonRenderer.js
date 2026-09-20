@@ -152,6 +152,8 @@
     }
 
     function generateAndRender() {
+        ensureCurriculumData();
+
         var e = engine();
 
         if (!e || typeof e.generateDailyPlan !== "function") {
