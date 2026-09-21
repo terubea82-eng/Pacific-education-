@@ -116,3 +116,13 @@ At the end of the pilot:
 11. Do not label the system production-ready until the external requirements and owner authorization are actually completed.
 
 **Owner-control statement:** Pilot participation does not transfer Pacific Education ownership, equity, shares, intellectual property, or platform control.
+
+### Final pre-pilot owner checklist
+- [ ] Confirm GitHub Pages source is configured to the intended prototype publishing source.
+- [ ] Confirm the published site opens from the repository's GitHub Pages URL.
+- [ ] Confirm the pilot banner and end date are visible.
+- [ ] Confirm no real child/sensitive data is entered during the pilot.
+- [ ] Confirm an actual validation workflow run completes successfully; absence of a run is not a pass.
+- [ ] Record pilot tester/device/browser evidence separately from prototype code.
+- [ ] Report defects through the repository issue/test process.
+- [ ] Keep production authorization blocked throughout the pilot unless every production requirement is independently verified and authorized server-side.
