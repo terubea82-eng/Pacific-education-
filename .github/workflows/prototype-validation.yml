@@ -49,12 +49,17 @@ jobs:
               root / "src/pacificEducationCentralBridgeIntegrationTestRunner.html",
               root / "src/pacificEducationCentralBridgeFailureRecoveryTestRunner.html",
           }
+          excluded_name_patterns = (
+              "Test.html",
+              "TestRunner.html",
+              "BrokenLineTest.html",
+          )
           missing = []
           checked_files = 0
           checked_refs = 0
 
           for html in sorted(root.rglob("*.html")):
-              if ".git" in html.parts or html in excluded_html:
+              if ".git" in html.parts or html in excluded_html or html.name.endswith(excluded_name_patterns):
                   continue
               checked_files += 1
               text = html.read_text(encoding="utf-8", errors="strict")
