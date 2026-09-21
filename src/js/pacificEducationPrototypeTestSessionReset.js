@@ -41,7 +41,14 @@
             "learningStatus",
             "pacificOwnerTestDay",
             "pacificEducationCurrentDay",
-            "dailyLessonDay"
+            "dailyLessonDay",
+            "pacificEducationSelectedStudentId",
+            "pacificEducationSelectedClassId",
+            "pacificEducationPrototypeClassRosters",
+            "pacificEducationProductionRequirements",
+            "pacificEducationExternalApprovals",
+            "pacificEducationProductionReleaseIssues",
+            "pacificEducationProductionReleaseReviewDecisions"
         ];
 
         keys.forEach(function (key) {
