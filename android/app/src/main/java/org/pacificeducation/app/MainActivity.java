@@ -29,7 +29,13 @@ public final class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        WebView webView = (WebView) findViewById(android.R.id.content);
+        if (getWindow().getDecorView().findFocus() instanceof WebView) {
+            WebView webView = (WebView) getWindow().getDecorView().findFocus();
+            if (webView.canGoBack()) {
+                webView.goBack();
+                return;
+            }
+        }
         super.onBackPressed();
     }
 }
