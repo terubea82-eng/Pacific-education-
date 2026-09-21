@@ -806,9 +806,9 @@
      */
 
     var PILOT_TRANSITION = Object.freeze({
-        startDate: "2026-09-21",
-        endDate: "2026-12-21",
-        releaseType: "controlled-prototype-pilot",
+        startDate: (global.PacificEducationPilotConfig && global.PacificEducationPilotConfig.startDate) || "2026-09-21",
+        endDate: (global.PacificEducationPilotConfig && global.PacificEducationPilotConfig.endDate) || "2026-10-21",
+        releaseType: (global.PacificEducationPilotConfig && global.PacificEducationPilotConfig.releaseType) || "controlled-prototype-pilot",
         automaticPilotClose: true,
         automaticProductionDecision: true,
         productionApprovalRequiresServerAuthority: true,
