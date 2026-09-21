@@ -25,6 +25,9 @@ Before opening the pilot to testers, confirm:
 - Production approval gates remain fail-closed.
 - Prototype validation workflow exists under `.github/workflows/prototype-validation.yml`.
 - No secrets, API keys, passwords, private credentials or real child records are committed.
+- Prototype authorization objects used by Secure Link and Secure Communication explicitly require `prototypeSession: true`.
+- The prototype validation workflow must pass JavaScript syntax, local script-reference, publication-record, fail-closed, security-boundary and obvious-secret checks.
+- Do not treat a missing or delayed GitHub Actions run as a successful validation result.
 
 ## 3. GitHub Pages publication
 
