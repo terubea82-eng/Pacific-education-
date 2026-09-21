@@ -560,7 +560,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 document.addEventListener("DOMContentLoaded",function(){
  try{
   if(window.PacificEducationOfflineRuntime){
-   window.PacificEducationOfflineRuntime.registerServiceWorker();
+   window.PacificEducationOfflineRuntime.registerServiceWorker("../service-worker.js");
   }
   var s=window.PacificEducationOfflineSyncController;
   var el=document.getElementById("pacificEducationOfflineSyncStatus");
