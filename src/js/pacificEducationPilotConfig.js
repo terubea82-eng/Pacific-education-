@@ -11,10 +11,10 @@
 
     var CONFIG = Object.freeze({
         releaseType: "controlled-prototype-pilot",
-        pilotName: "1-Month Controlled Pilot",
+        pilotName: "3-Month Controlled Pilot",
         startDate: "2026-09-21",
-        endDate: "2026-10-21",
-        durationMonths: 1,
+        endDate: "2026-12-21",
+        durationMonths: 3,
         automaticPilotClose: true,
         automaticProductionDecision: true,
         productionApprovalRequiresServerAuthority: true,
