@@ -338,6 +338,86 @@
        STUDENT DATA
        ===================================================== */
 
+    function getCoreAssessmentDisplay(type) {
+        const state = getCoreState();
+
+        if (
+            state &&
+            Array.isArray(state.assessments)
+        ) {
+            const requested = String(type).toLowerCase();
+            let latest = null;
+
+            state.assessments.forEach(function (record) {
+                if (!record || typeof record !== "object") return;
+
+                const recordType = String(
+                    record.type ||
+                    record.assessmentType ||
+                    record.title ||
+                    ""
+                ).toLowerCase();
+
+                if (
+                    recordType.indexOf(requested) === -1
+                ) {
+                    return;
+                }
+
+                latest = record;
+            });
+
+            if (!latest) {
+                return "Not completed";
+            }
+
+            if (
+                latest.passed === true ||
+                latest.pass === true ||
+                String(latest.status || "").toLowerCase() === "passed"
+            ) {
+                return "Passed";
+            }
+
+            const score = Number(
+                latest.percentage !== undefined
+                    ? latest.percentage
+                    : latest.score
+            );
+
+            if (Number.isFinite(score)) {
+                return String(score) + "%";
+            }
+
+            return "Completed";
+        }
+
+        return readStorage(
+            type === "alphabet"
+                ? STORAGE.alphabetAssessment
+                : STORAGE.phonicsAssessment,
+            "Not completed"
+        );
+    }
+
+    function getCoreLearningStatus() {
+        const state = getCoreState();
+
+        if (
+            state &&
+            Array.isArray(state.learningHistory)
+        ) {
+            return state.learningHistory.length > 0
+                ? "Monitoring"
+                : "Monitoring";
+        }
+
+        return readStorage(
+            STORAGE.learningStatus,
+            "Monitoring"
+        );
+    }
+
     function getPacificStudentData() {
         const coreState = getCoreState();
 
@@ -406,22 +486,13 @@
                 lessonsCompleted,
 
             alphabetAssessment:
-                readStorage(
-                    STORAGE.alphabetAssessment,
-                    "Not completed"
-                ),
+                getCoreAssessmentDisplay("alphabet"),
 
             phonicsAssessment:
-                readStorage(
-                    STORAGE.phonicsAssessment,
-                    "Not completed"
-                ),
+                getCoreAssessmentDisplay("phonics"),
 
             learningStatus:
-                readStorage(
-                    STORAGE.learningStatus,
-                    "Monitoring"
-                )
+                getCoreLearningStatus()
         };
     }
 
