@@ -53,6 +53,7 @@ jobs:
               "Test.html",
               "TestRunner.html",
               "BrokenLineTest.html",
+              "TestPage.html",
           )
           missing = []
           checked_files = 0
@@ -138,7 +139,6 @@ jobs:
           grep -q 'requiredForProduction: true' src/js/pacificEducationGuardianReviewController.js
           grep -q 'SERVER_GUARDIAN_VERIFICATION_REQUIRED' src/js/pacificEducationGuardianReviewController.js
           grep -q 'guardianReviewRequired: true' src/js/pacificEducationMasterControl.js
-          grep -q 'guardianReady' src/js/pacificEducationMasterControl.js
           grep -q 'guardianReady' src/js/pacificEducationMasterControl.js
           grep -q 'serverAuthorized' src/js/pacificEducationMasterControl.js
           echo "Pacific Guardian mandatory production gate markers validated."
