@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.9";
+    var MASTER_CONTROL_VERSION = "1.0.10";
 
     /*
      * =======================================================
@@ -795,6 +795,88 @@
 
     /*
      * =======================================================
+     * PILOT -> PRODUCTION TRANSITION CONTROLLER
+     * =======================================================
+     *
+     * The pilot end date may be evaluated automatically, but the browser
+     * can never promote itself to production. Automatic production approval
+     * is allowed only when every required production condition is verified
+     * AND an authorized server-side production authority confirms approval.
+     * Client/localStorage evidence alone can never satisfy that authority.
+     */
+
+    var PILOT_TRANSITION = Object.freeze({
+        startDate: "2026-09-21",
+        endDate: "2026-10-21",
+        releaseType: "controlled-prototype-pilot",
+        automaticPilotClose: true,
+        automaticProductionDecision: true,
+        productionApprovalRequiresServerAuthority: true,
+        failClosed: true
+    });
+
+    function evaluatePilotTransition(serverDecision) {
+        var now = new Date();
+        var end = new Date(PILOT_TRANSITION.endDate + "T23:59:59Z");
+        var pilotClosed = now.getTime() > end.getTime();
+        var registry = global.PacificEducationProductionRequirementRegistry;
+        var summary = registry && typeof registry.summary === "function"
+            ? registry.summary()
+            : { totalRequired: 0, verified: 0, pending: 0, ready: false, productionEligible: false };
+        var allRequirementsVerified = summary.totalRequired > 0 &&
+            summary.verified === summary.totalRequired &&
+            summary.pending === 0;
+        var serverAuthorized = !!(
+            serverDecision &&
+            serverDecision.authorized === true &&
+            serverDecision.productionApproved === true
+        );
+        var approved = pilotClosed && allRequirementsVerified && serverAuthorized;
+        var decision = approved ? "PRODUCTION_APPROVED" : "BLOCKED";
+
+        return Object.freeze({
+            pilotStart: PILOT_TRANSITION.startDate,
+            pilotEnd: PILOT_TRANSITION.endDate,
+            pilotClosed: pilotClosed,
+            allRequirementsVerified: allRequirementsVerified,
+            serverAuthorityConfirmed: serverAuthorized,
+            decision: decision,
+            productionApproved: approved,
+            productionEligible: approved,
+            failClosed: !approved,
+            prototype: true,
+            reason: approved
+                ? "All required production conditions and authorized server-side approval are present."
+                : "Production remains blocked until all required conditions and authorized server-side approval are present."
+        });
+    }
+
+    function runAutomaticPilotTransition(serverDecision) {
+        var result = evaluatePilotTransition(serverDecision);
+        try {
+            global.localStorage.setItem(
+                "pacificEducationPilotTransitionStatus",
+                JSON.stringify({
+                    pilotClosed: result.pilotClosed,
+                    decision: result.decision,
+                    productionApproved: result.productionApproved,
+                    productionEligible: result.productionEligible,
+                    failClosed: result.failClosed,
+                    evaluatedAt: new Date().toISOString()
+                })
+            );
+        } catch (_) {}
+
+        if (typeof global.dispatchEvent === "function" && typeof global.CustomEvent === "function") {
+            global.dispatchEvent(new CustomEvent("pacificEducationPilotTransitionEvaluated", {
+                detail: result
+            }));
+        }
+        return result;
+    }
+
+    /*
+     * =======================================================
      * PUBLIC API
      * =======================================================
      */
@@ -850,7 +932,13 @@
 
         getPublicationGates: function () {
             return PUBLICATION_GATES;
-        }
+        },
+
+        pilotTransition: PILOT_TRANSITION,
+
+        evaluatePilotTransition: evaluatePilotTransition,
+
+        runAutomaticPilotTransition: runAutomaticPilotTransition
     });
 
     /*
