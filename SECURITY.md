@@ -23,3 +23,7 @@ GitHub Pages and browser JavaScript are not production authentication, authoriza
 ## Response
 
 Security reports should be triaged, affected code isolated, credentials revoked/rotated when applicable, and fixes validated before release. Never treat a client-side control as proof of production authorization.
+
+## Pacific Guardian user-comment review requirement
+
+Before production, every user comment that enters the Pacific Education Guardian review flow must receive a polite response and a documented needs-alignment disposition. Substantive correctness and production readiness must be verified by an authorized server-side Guardian review service or authorized reviewer; browser/localStorage flags are never sufficient. If Guardian verification is unavailable, incomplete, or unresolved, the production gate remains fail-closed.
