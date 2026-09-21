@@ -949,8 +949,14 @@
 
     global.PacificEducationMasterControl = api;
 
-    /* Automatically evaluate the pilot transition on every application load. */
-    runAutomaticPilotTransition();
+    /* Evaluate after the page has finished loading its remaining gate modules. */
+    if (typeof global.setTimeout === "function") {
+        global.setTimeout(function () {
+            runAutomaticPilotTransition();
+        }, 0);
+    } else {
+        runAutomaticPilotTransition();
+    }
 
     /* Re-evaluate when a production requirement record changes. */
     if (global.document && typeof global.document.addEventListener === "function") {
