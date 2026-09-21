@@ -242,6 +242,39 @@
       return false;
     }
 
+    /*
+     * Prototype fail-closed rule:
+     * identity.set() must never be able to create an authorized session by
+     * merely supplying {authorized:true}. Authorization is only accepted
+     * when the caller explicitly identifies this as a prototype session.
+     * Production authentication/authorization must be server-side.
+     */
+    if (
+      value.authorized === true &&
+      value.prototypeSession !== true
+    ) {
+      audit(
+        "IDENTITY_UPDATE_BLOCKED",
+        {
+          reason: "Authorized identity requires an explicit prototype session."
+        }
+      );
+      return false;
+    }
+
+    if (
+      value.role &&
+      ROLES.indexOf(value.role) === -1
+    ) {
+      audit(
+        "IDENTITY_UPDATE_BLOCKED",
+        {
+          reason: "Invalid role."
+        }
+      );
+      return false;
+    }
+
     state.identity = merge(
       state.identity,
       value
@@ -256,7 +289,9 @@
       {
         userId: state.identity.userId,
         role: state.identity.role,
-        authorized: state.identity.authorized
+        authorized: state.identity.authorized,
+        prototypeSession:
+          state.identity.prototypeSession === true
       }
     );
 
