@@ -1,0 +1,39 @@
+name: Pacific Education Android Build
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "android/**"
+      - ".github/workflows/android-build.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "9.6.0"
+
+      - name: Build unsigned release bundle
+        run: gradle --no-daemon :app:bundleRelease
+        working-directory: android
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacific-education-release-unsigned
+          path: android/app/build/outputs/bundle/release/app-release.aab
