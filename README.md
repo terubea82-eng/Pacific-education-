@@ -1,12 +1,17 @@
-# Pacific Education — 3-Month Controlled Pilot
+# Pacific Education — 1-Month Controlled Pilot
 
-**Pilot period:** September 21, 2026 – December 21, 2026
+**Initial pilot period:** September 21, 2026 – October 21, 2026
 
-Pacific Education is being prepared as a **controlled three-month prototype pilot** covering learning, assessment, dashboards, curriculum-alignment workflows, accessibility, offline/low-bandwidth prototype behavior, and education relationship services.
+**Extension policy:** If additional pilot time is genuinely needed, the owner may approve an extension. The total pilot period must never exceed 3 months, with a maximum end date of December 21, 2026. There is **no automatic extension**.
+
+Pacific Education is being prepared as a **controlled one-month prototype pilot** covering learning, assessment, dashboards, curriculum-alignment workflows, accessibility, offline/low-bandwidth prototype behavior, and education relationship services.
 
 ## Pilot status
 
 - **Pilot type:** Controlled prototype pilot
+- **Initial duration:** 1 month
+- **Maximum duration:** 3 months total
+- **Extension:** Owner-approved only; no automatic extension
 - **Public demonstration:** GitHub Pages
 - **Production status:** Not approved
 - **Production authentication/database:** Required before production
