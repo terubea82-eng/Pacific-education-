@@ -1,250 +1,31 @@
-PACIFIC_EDUCATION_FINAL_MASTER.md
-README.md
-the src folder/files if available
-<!-- =========================================
-     PACIFIC EDUCATION — ASSESSMENT DASHBOARD
-========================================= -->
+# Pacific Education — 3-Month Controlled Pilot
 
-<section id="assessmentDashboard"
-         class="dashboard-section">
+**Pilot period:** September 21, 2026 – December 21, 2026
 
-    <div class="activity">
+Pacific Education is being prepared as a **controlled three-month prototype pilot** covering learning, assessment, dashboards, curriculum-alignment workflows, accessibility, offline/low-bandwidth prototype behavior, and education relationship services.
 
-        <h2>📝 Assessment Progress</h2>
+## Pilot status
 
-        <div class="dashboard-box">
+- **Pilot type:** Controlled prototype pilot
+- **Public demonstration:** GitHub Pages
+- **Production status:** Not approved
+- **Production authentication/database:** Required before production
+- **Real child sensitive data:** Do not enter during this prototype pilot
+- **Official curriculum authority:** Fiji Ministry of Education prescriptions and achievement indicators
+- **Owner control:** Pacific Education remains owner-controlled
 
-            <div class="small">
-                Alphabet Assessment
-            </div>
+## Pilot safeguards
 
-            <div id="dashboardAlphabetAssessment"
-                 class="dashboard-number">
+The pilot must not be represented as a production-ready education platform. Production release remains fail-closed until required external work is completed, including secure authentication, server-side database and hosting controls, payment verification, cybersecurity review, privacy compliance, child safeguarding, accessibility/device testing, official curriculum source validation, controlled user testing, and authorized independent review.
 
-                Not completed
+## Pilot website
 
-            </div>
+The published prototype is available through the repository's GitHub Pages deployment.
 
-        </div>
+## Ownership
 
+Pilot participation, technical support, funding, infrastructure or distribution arrangements do not automatically transfer ownership, equity, shares or control of Pacific Education.
 
-        <div class="dashboard-box">
+## Development rule
 
-            <div class="small">
-                Phonics Assessment
-            </div>
-
-            <div id="dashboardPhonicsAssessment"
-                 class="dashboard-number">
-
-                Not completed
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     TEACHER DASHBOARD
-========================================= -->
-
-<section id="teacherDashboard"
-         class="dashboard-section">
-
-    <div class="activity">
-
-        <h2>👩‍🏫 Teacher Dashboard</h2>
-
-        <p>
-            Monitor student learning progress,
-            assessments and daily lesson completion.
-        </p>
-
-
-        <div class="dashboard-box">
-            <div class="small">Student</div>
-
-            <div id="teacherStudentName"
-                 class="dashboard-number">
-
-                Student
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Current Day</div>
-
-            <div id="teacherCurrentDay"
-                 class="dashboard-number">
-
-                Day 1
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Lessons Completed</div>
-
-            <div id="teacherLessonsCompleted"
-                 class="dashboard-number">
-
-                0
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Alphabet Assessment</div>
-
-            <div id="teacherAlphabetAssessment"
-                 class="dashboard-number">
-
-                Not completed
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Phonics Assessment</div>
-
-            <div id="teacherPhonicsAssessment"
-                 class="dashboard-number">
-
-                Not completed
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Learning Status</div>
-
-            <div id="teacherLearningStatus"
-                 class="dashboard-number">
-
-                Monitoring
-
-            </div>
-        </div>
-
-
-        <button type="button"
-                onclick="refreshTeacherDashboard()">
-
-            🔄 Refresh Student Progress
-
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     PARENT DASHBOARD
-========================================= -->
-
-<section id="parentDashboard"
-         class="dashboard-section">
-
-    <div class="activity">
-
-        <h2>👨‍👩‍👧 Parent Dashboard</h2>
-
-        <p>
-            Follow your child's English learning
-            progress at home.
-        </p>
-
-
-        <div class="dashboard-box">
-            <div class="small">Child</div>
-
-            <div id="parentStudentName"
-                 class="dashboard-number">
-
-                Child
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Current Learning Day</div>
-
-            <div id="parentCurrentDay"
-                 class="dashboard-number">
-
-                Day 1
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Lessons Completed</div>
-
-            <div id="parentLessonsCompleted"
-                 class="dashboard-number">
-
-                0
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Alphabet Assessment</div>
-
-            <div id="parentAlphabetAssessment"
-                 class="dashboard-number">
-
-                Not completed
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Phonics Assessment</div>
-
-            <div id="parentPhonicsAssessment"
-                 class="dashboard-number">
-
-                Not completed
-
-            </div>
-        </div>
-
-
-        <div class="dashboard-box">
-            <div class="small">Home Learning Status</div>
-
-            <div id="parentLearningStatus"
-                 class="dashboard-number">
-
-                Keep practising
-
-            </div>
-        </div>
-
-
-        <button type="button"
-                onclick="refreshParentDashboard()">
-
-            🔄 Refresh Child Progress
-
-        </button>
-
-    </div>
-
-</section>
+Prototype code may demonstrate workflows, but browser/localStorage controls are not treated as production security boundaries.
