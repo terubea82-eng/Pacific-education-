@@ -1,7 +1,7 @@
-# Pacific Education — 3-Month Pilot Publication Procedure
+# Pacific Education — 1-Month Pilot Publication Procedure
 
 **Release type:** Controlled prototype pilot  
-**Pilot period:** September 21, 2026 – December 21, 2026  
+**Pilot period:** September 21, 2026 – October 21, 2026  
 **Repository:** terubea82-eng/Pacific-education-  
 **Default branch:** main
 
@@ -18,7 +18,7 @@ Before opening the pilot to testers, confirm:
 - Repository visibility is Public.
 - Default branch is main.
 - The root `index.html` exists and routes to `src/index.html`.
-- `src/index.html` contains the 3-month controlled-pilot notice.
+- `src/index.html` contains the 1-month controlled-pilot notice.
 - The notice states that real sensitive child information, passwords, payment credentials and exact child location data must not be entered.
 - Production status remains explicitly blocked.
 - Prototype authorization is not described as production authentication.
