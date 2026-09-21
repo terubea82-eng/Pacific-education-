@@ -105,6 +105,7 @@ function runTest(){
 
     var authorized = core.identity.authorize({
       authorized:true,
+      prototypeSession:true,
       userId:"OWNER-ASSESSMENT-GATE-TEST",
       name:"Pacific Education Owner Assessment Test",
       role:"owner",
