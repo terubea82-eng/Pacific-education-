@@ -120,3 +120,15 @@ jobs:
           fi
           echo "No obvious committed secret patterns found."
 
+
+      - name: Validate Pacific Guardian production gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f src/js/pacificEducationGuardianReviewController.js
+          grep -q 'requiredForProduction: true' src/js/pacificEducationGuardianReviewController.js
+          grep -q 'SERVER_GUARDIAN_VERIFICATION_REQUIRED' src/js/pacificEducationGuardianReviewController.js
+          grep -q 'guardianReviewRequired: true' src/js/pacificEducationMasterControl.js
+          grep -q 'guardianReady' src/js/pacificEducationMasterControl.js
+          grep -q 'guardianReady && serverAuthorized' src/js/pacificEducationMasterControl.js
+          echo "Pacific Guardian mandatory production gate markers validated."
