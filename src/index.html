@@ -251,6 +251,15 @@ html[data-text-scale="x-large"]{font-size:125%}
 <p><strong>Prototype publication:</strong> This GitHub Pages build is suitable for controlled prototype demonstration only. Production publication remains blocked until server-side authentication, database, payment verification, cybersecurity, privacy, child safeguarding, accessibility/device testing, curriculum source validation and authorized independent review are completed.</p>
 </section>
 
+<section id="pacificGuardianCommentSection" aria-label="Pacific Guardian user comment review">
+<h2>Pacific Guardian</h2>
+<p>Comments are received politely and queued for Guardian review. Production-grade correctness and needs alignment require authorized server-side Guardian verification.</p>
+<label for="pacificGuardianComment">Your comment or need</label><br>
+<textarea id="pacificGuardianComment" rows="5" style="width:100%;max-width:760px;" placeholder="Tell Pacific Guardian what you need..."></textarea><br>
+<button type="button" onclick="submitPacificGuardianComment()">Send to Pacific Guardian</button>
+<div id="pacificGuardianCommentStatus" aria-live="polite"></div>
+</section>
+
 <section id="systemStatus">
 <h2>System Status</h2>
 <div class="status">Pacific Education application shell loaded.</div>
@@ -264,7 +273,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script src="../js/pacificEducationCore.js"></script>
 <script src="js/pacificEducationMasterInclusionSpecification.js"></script>
 <script src="js/pacificEducationCoreBridge.js"></script>
-<script src="js/pacificEducationMasterControl.js"></script>
+<script src="js/pacificEducationMasterControl.js"></script>\n<script src="js/pacificEducationGuardianReviewController.js"></script>
 <script src="js/pacificEducationAnnualGdpPricingEngine.js"></script>
 <script src="js/pacificEducationPricingAuditGuard.js"></script>
 <script src="js/buyPlans.js"></script>
@@ -570,5 +579,22 @@ document.addEventListener("DOMContentLoaded",function(){
   }
  }catch(e){}
 });
-</script></body>
+</script><script>
+function submitPacificGuardianComment() {
+    var box = document.getElementById("pacificGuardianComment");
+    var status = document.getElementById("pacificGuardianCommentStatus");
+    if (!box || !status || !window.PacificEducationGuardian) return;
+    var result = window.PacificEducationGuardian.submitComment(box.value, {
+        page: window.location.pathname,
+        level: window.PacificEducationCurriculumAlignmentRuntimeBridge &&
+            typeof window.PacificEducationCurriculumAlignmentRuntimeBridge.getSelectedLevel === "function"
+            ? window.PacificEducationCurriculumAlignmentRuntimeBridge.getSelectedLevel()
+            : null
+    });
+    status.textContent = result.message || result.acknowledgement ||
+        "Thank you. Pacific Guardian has received your comment.";
+    if (result.accepted) box.value = "";
+}
+</script>
+\n</body>
 </html>
