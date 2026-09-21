@@ -269,9 +269,14 @@
   }
 
   function authorizeUser(context) {
+    /*
+     * Prototype browser authorization is deliberately explicit.
+     * It is not authentication and cannot be used as production identity proof.
+     */
     if (
       !isObject(context) ||
-      context.authorized !== true
+      context.authorized !== true ||
+      context.prototypeSession !== true
     ) {
       state.identity.authorized = false;
 
