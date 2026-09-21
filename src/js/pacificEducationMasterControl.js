@@ -949,6 +949,19 @@
 
     global.PacificEducationMasterControl = api;
 
+    /* Automatically evaluate the pilot transition on every application load. */
+    runAutomaticPilotTransition();
+
+    /* Re-evaluate when a production requirement record changes. */
+    if (global.document && typeof global.document.addEventListener === "function") {
+        global.document.addEventListener(
+            "pacificEducationProductionRequirementChanged",
+            function () {
+                runAutomaticPilotTransition();
+            }
+        );
+    }
+
     /*
      * =======================================================
      * LOAD EVENT
