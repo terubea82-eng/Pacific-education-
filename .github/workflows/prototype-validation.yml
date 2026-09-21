@@ -32,7 +32,7 @@ jobs:
           done
           test "$failed" -eq 0
 
-      - name: Validate local script references
+      - name: Validate local script references across repository HTML
         shell: bash
         run: |
           set -euo pipefail
@@ -40,23 +40,43 @@ jobs:
           from pathlib import Path
           import re, sys
 
-          index = Path("src/index.html")
-          text = index.read_text(encoding="utf-8")
-          refs = re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', text)
+          root = Path(".").resolve()
+          excluded_html = {
+              root / "src/pacificEducationCountryGdpPricingBrokenLineTest.html",
+              root / "src/src/pacificEducationCountryGdpPricingBrokenLineTest.html",
+          }
           missing = []
-          for ref in refs:
-              if "://" in ref:
+          checked_files = 0
+          checked_refs = 0
+
+          for html in sorted(root.rglob("*.html")):
+              if ".git" in html.parts or html in excluded_html:
                   continue
-              clean_ref = ref.split("?", 1)[0]
-              target = (index.parent / clean_ref).resolve()
-              if not target.exists():
-                  missing.append((ref, target))
+              checked_files += 1
+              text = html.read_text(encoding="utf-8", errors="strict")
+              refs = re.findall(r'<script\\b[^>]+src=["\\']([^"\\']+)["\\']', text, flags=re.IGNORECASE)
+              for ref in refs:
+                  if "://" in ref or ref.startswith("//") or ref.startswith("data:"):
+                      continue
+                  checked_refs += 1
+                  clean_ref = ref.split("?", 1)[0].split("#", 1)[0]
+                  target = (html.parent / clean_ref).resolve()
+                  try:
+                      target.relative_to(root)
+                  except ValueError:
+                      missing.append((html.relative_to(root), ref, target))
+                      continue
+                  if not target.is_file():
+                      missing.append((html.relative_to(root), ref, target.relative_to(root)))
+
           if missing:
-              print("Missing local script references:")
-              for ref, target in missing:
-                  print(f"- {ref} -> {target}")
+              print("Missing or invalid local script references:")
+              for html, ref, target in missing:
+                  print(f"- {html}: {ref} -> {target}")
               sys.exit(1)
-          print(f"Validated {len(refs)} local script references.")
+
+          print(f"Validated {checked_refs} local script references across {checked_files} HTML files.")
+          print("Intentionally broken fixture pages are excluded from this path check.")
           PY
 
       - name: Validate required publication records
