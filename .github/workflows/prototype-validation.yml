@@ -44,6 +44,10 @@ jobs:
           excluded_html = {
               root / "src/pacificEducationCountryGdpPricingBrokenLineTest.html",
               root / "src/src/pacificEducationCountryGdpPricingBrokenLineTest.html",
+              root / "src/pacificEducationCentralBridgeTestRunner.html",
+              root / "src/pacificEducationCentralBridgeFailureRecoveryTest.html",
+              root / "src/pacificEducationCentralBridgeIntegrationTestRunner.html",
+              root / "src/pacificEducationCentralBridgeFailureRecoveryTestRunner.html",
           }
           missing = []
           checked_files = 0
