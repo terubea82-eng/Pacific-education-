@@ -96,17 +96,20 @@ Production requires, at minimum:
 
 Client-side JavaScript, localStorage, GitHub Pages, prototype gates, or this document cannot substitute for those controls.
 
-## 7. Pilot close-out
+## 7. Pilot close-out and automatic transition check
 
 At the end of the pilot:
 
-1. Freeze the pilot evidence and issue/defect record.
-2. Record user-testing results without exposing personal information.
-3. Record curriculum-alignment findings and unresolved questions.
-4. Record accessibility and device findings.
-5. Record security/privacy/safeguarding findings.
-6. Review all open production blockers.
-7. Decide separately whether to extend the prototype, begin production engineering, or close the pilot.
-8. Do not label the system production-ready until the external requirements and owner authorization are actually completed.
+1. The application automatically detects that the pilot end date has passed and records the pilot as closed.
+2. Freeze the pilot evidence and issue/defect record.
+3. Record user-testing results without exposing personal information.
+4. Record curriculum-alignment findings and unresolved questions.
+5. Record accessibility and device findings.
+6. Record security/privacy/safeguarding findings.
+7. The application automatically evaluates all required production conditions.
+8. If any required condition is missing, unverified or blocked, production remains **BLOCKED**.
+9. Automatic production approval is permitted only when every required production condition is verified **and authorized server-side production authority confirms approval**.
+10. Client-side JavaScript, localStorage, GitHub Pages, pilot dates, or a successful pilot cannot by themselves grant production authorization.
+11. Do not label the system production-ready until the external requirements and owner authorization are actually completed.
 
 **Owner-control statement:** Pilot participation does not transfer Pacific Education ownership, equity, shares, intellectual property, or platform control.
