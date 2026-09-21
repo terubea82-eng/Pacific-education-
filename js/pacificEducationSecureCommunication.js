@@ -289,7 +289,8 @@
                 typeof user.id === "string" &&
                 user.id.trim() !== "" &&
                 validRole(user.role) &&
-                user.authorized === true
+                user.authorized === true &&
+                user.prototypeSession === true
         );
     }
 
@@ -300,7 +301,7 @@
         if (!validParticipant(user)) {
             throw new Error(
                 (label || "Participant") +
-                    " must be a complete authorized user object with a valid id, role, and authorized status."
+                    " must be a complete prototype-session user object with a valid id, role, authorized status, and prototypeSession marker."
             );
         }
 
