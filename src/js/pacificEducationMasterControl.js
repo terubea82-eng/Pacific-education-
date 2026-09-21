@@ -826,6 +826,17 @@
         var allRequirementsVerified = summary.totalRequired > 0 &&
             summary.verified === summary.totalRequired &&
             summary.pending === 0;
+
+        /*
+         * MANDATORY PACIFIC GUARDIAN PRODUCTION GATE:
+         * Every recorded user comment requiring review must have a
+         * server-verified, polite, needs-aligned, production-ready disposition.
+         */
+        var guardian = global.PacificEducationGuardian;
+        var guardianGate = guardian && typeof guardian.productionGate === "function"
+            ? guardian.productionGate()
+            : { required: true, pendingCount: 1, ready: false, failClosed: true };
+        var guardianReady = guardianGate.ready === true;
         /*
          * SECURITY BOUNDARY:
          * A caller-supplied object is never accepted as production authority.
@@ -847,7 +858,10 @@
                 serverAuthorized = false;
             }
         }
-        var approved = pilotClosed && allRequirementsVerified && serverAuthorized;
+        var approved = pilotClosed &&
+            allRequirementsVerified &&
+            guardianReady &&
+            serverAuthorized;
         var decision = approved ? "PRODUCTION_APPROVED" : "BLOCKED";
 
         return Object.freeze({
@@ -856,14 +870,17 @@
             pilotClosed: pilotClosed,
             allRequirementsVerified: allRequirementsVerified,
             serverAuthorityConfirmed: serverAuthorized,
+            guardianReviewRequired: true,
+            guardianReviewReady: guardianReady,
+            guardianPendingCount: guardianGate.pendingCount,
             decision: decision,
             productionApproved: approved,
             productionEligible: approved,
             failClosed: !approved,
             prototype: true,
             reason: approved
-                ? "All required production conditions and authorized server-side approval are present."
-                : "Production remains blocked until all required conditions and authorized server-side approval are present."
+                ? "All required production conditions, mandatory Guardian review requirements, and authorized server-side approval are present."
+                : "Production remains blocked until all required conditions, mandatory Guardian review requirements, and authorized server-side approval are present."
         });
     }
 
