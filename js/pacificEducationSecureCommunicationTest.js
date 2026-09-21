@@ -37,19 +37,22 @@
     const parent = Object.freeze({
         id: "parent-001",
         role: "parent",
-        authorized: true
+        authorized: true,
+        prototypeSession: true
     });
 
     const teacher = Object.freeze({
         id: "teacher-001",
         role: "teacher",
-        authorized: true
+        authorized: true,
+        prototypeSession: true
     });
 
     const nonParticipant = Object.freeze({
         id: "student-001",
         role: "student",
-        authorized: true
+        authorized: true,
+        prototypeSession: true
     });
 
     const unauthorizedUser = Object.freeze({
