@@ -8,7 +8,7 @@
 (function (window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function reset() {
         var core = window.PacificEducationCore;
@@ -50,6 +50,11 @@
                 cleared.push(key);
             } catch (error) {}
         });
+
+        try {
+            localStorage.removeItem("pacificEducationOfflineProgressQueue");
+            cleared.push("pacificEducationOfflineProgressQueue");
+        } catch (error) {}
 
         try {
             localStorage.removeItem("pacificEducationFullSystemTestMatrix");
