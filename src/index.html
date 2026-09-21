@@ -48,7 +48,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 <main id="app">
 <section id="prototypeAccess" style="border:1px solid #888;padding:12px;margin:12px 0;">
 <h2>Prototype Access</h2>
-<p><strong>PROTOTYPE ONLY:</strong> This authorizes the browser session through the existing Pacific Education Core. It is not production authentication.</p>
+<p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session through the Pacific Education Core. It is <strong>not identity verification, authentication, authorization for real users, or production access</strong>.</p>
 <button type="button" id="prototypeAuthorizeButton" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
 <span id="prototypeAccessStatus" aria-live="polite">Checking authorization...</span>
 </section>
@@ -499,6 +499,7 @@ html[data-text-scale="x-large"]{font-size:125%}
         }
         const ok = core.authorizeUser({
             authorized: true,
+            prototypeSession: true,
             userId: "prototype-student",
             role: "student",
             displayName: "Prototype Student"
