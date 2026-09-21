@@ -805,12 +805,19 @@
      * Client/localStorage evidence alone can never satisfy that authority.
      */
 
+    var PILOT_CONFIG = global.PacificEducationPilotConfig || {};
     var PILOT_TRANSITION = Object.freeze({
-        startDate: (global.PacificEducationPilotConfig && global.PacificEducationPilotConfig.startDate) || "2026-09-21",
-        endDate: (global.PacificEducationPilotConfig && global.PacificEducationPilotConfig.endDate) || "2026-10-21",
-        releaseType: (global.PacificEducationPilotConfig && global.PacificEducationPilotConfig.releaseType) || "controlled-prototype-pilot",
-        automaticPilotClose: true,
-        automaticProductionDecision: true,
+        startDate: PILOT_CONFIG.startDate || "2026-09-21",
+        endDate: PILOT_CONFIG.endDate || "2026-10-21",
+        releaseType: PILOT_CONFIG.releaseType || "controlled-prototype-pilot",
+        durationMonths: PILOT_CONFIG.durationMonths || 1,
+        extensionAllowed: PILOT_CONFIG.extensionAllowed === true,
+        extensionRequiresOwnerApproval: PILOT_CONFIG.extensionRequiresOwnerApproval !== false,
+        automaticExtension: PILOT_CONFIG.automaticExtension === true,
+        maximumDurationMonths: PILOT_CONFIG.maximumDurationMonths || 3,
+        maximumEndDate: PILOT_CONFIG.maximumEndDate || "2026-12-21",
+        automaticPilotClose: PILOT_CONFIG.automaticPilotClose !== false,
+        automaticProductionDecision: PILOT_CONFIG.automaticProductionDecision !== false,
         productionApprovalRequiresServerAuthority: true,
         failClosed: true
     });
@@ -818,7 +825,14 @@
     function evaluatePilotTransition(serverDecision) {
         var now = new Date();
         var end = new Date(PILOT_TRANSITION.endDate + "T23:59:59Z");
-        var pilotClosed = now.getTime() > end.getTime();
+        var maximumEnd = new Date(PILOT_TRANSITION.maximumEndDate + "T23:59:59Z");
+        var invalidPilotWindow =
+            !Number.isFinite(end.getTime()) ||
+            !Number.isFinite(maximumEnd.getTime()) ||
+            end.getTime() <= new Date(PILOT_TRANSITION.startDate + "T00:00:00Z").getTime() ||
+            end.getTime() > maximumEnd.getTime() ||
+            PILOT_TRANSITION.durationMonths > PILOT_TRANSITION.maximumDurationMonths;
+        var pilotClosed = !invalidPilotWindow && now.getTime() > end.getTime();
         var registry = global.PacificEducationProductionRequirementRegistry;
         var summary = registry && typeof registry.summary === "function"
             ? registry.summary()
@@ -858,7 +872,8 @@
                 serverAuthorized = false;
             }
         }
-        var approved = pilotClosed &&
+        var approved = !invalidPilotWindow &&
+            pilotClosed &&
             allRequirementsVerified &&
             guardianReady &&
             serverAuthorized;
@@ -867,6 +882,13 @@
         return Object.freeze({
             pilotStart: PILOT_TRANSITION.startDate,
             pilotEnd: PILOT_TRANSITION.endDate,
+            maximumPilotEnd: PILOT_TRANSITION.maximumEndDate,
+            pilotDurationMonths: PILOT_TRANSITION.durationMonths,
+            maximumDurationMonths: PILOT_TRANSITION.maximumDurationMonths,
+            extensionAllowed: PILOT_TRANSITION.extensionAllowed,
+            extensionRequiresOwnerApproval: PILOT_TRANSITION.extensionRequiresOwnerApproval,
+            automaticExtension: PILOT_TRANSITION.automaticExtension,
+            invalidPilotWindow: invalidPilotWindow,
             pilotClosed: pilotClosed,
             allRequirementsVerified: allRequirementsVerified,
             serverAuthorityConfirmed: serverAuthorized,
@@ -880,7 +902,9 @@
             prototype: true,
             reason: approved
                 ? "All required production conditions, mandatory Guardian review requirements, and authorized server-side approval are present."
-                : "Production remains blocked until all required conditions, mandatory Guardian review requirements, and authorized server-side approval are present."
+                : invalidPilotWindow
+                    ? "Pilot configuration is invalid or exceeds the owner-controlled maximum duration; production remains blocked."
+                    : "Production remains blocked until all required conditions, mandatory Guardian review requirements, and authorized server-side approval are present."
         });
     }
 
