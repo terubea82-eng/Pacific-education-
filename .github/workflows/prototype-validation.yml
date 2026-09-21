@@ -54,7 +54,7 @@ jobs:
                   continue
               checked_files += 1
               text = html.read_text(encoding="utf-8", errors="strict")
-              refs = re.findall(r'<script\\b[^>]+src=["\\']([^"\\']+)["\\']', text, flags=re.IGNORECASE)
+              refs = re.findall(r'<script\b[^>]+src=["\']([^"\']+)["\']', text, flags=re.IGNORECASE)
               for ref in refs:
                   if "://" in ref or ref.startswith("//") or ref.startswith("data:"):
                       continue
