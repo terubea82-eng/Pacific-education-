@@ -55,7 +55,8 @@ function clearPrototypeCachesAndWorker(){
    window.caches.keys().then(function(keys){
     return Promise.all(
      keys.filter(function(k){
-      return k.indexOf("pacific-education-prototype-src-")===0;
+      return k.indexOf("pacific-education-prototype-src-")===0 ||
+       k.indexOf("pacific-education-prototype-root-")===0;
      }).map(function(k){
       return window.caches.delete(k);
      })
