@@ -95,3 +95,28 @@ jobs:
           grep -R "productionApproved.*false\|productionApproved: false" src/js >/dev/null
           grep -R "productionEligible.*false\|productionEligible: false" src/js >/dev/null
           echo "Fail-closed production markers detected."
+
+
+      - name: Validate prototype security boundaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f js/pacificEducationSecureLinkAuthorization.js
+          test -f js/pacificEducationSecureCommunication.js
+          grep -q 'user.prototypeSession === true' js/pacificEducationSecureLinkAuthorization.js
+          grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
+          if grep -RInE --include='*.html' --include='*.js' 'src=["'"'"'][^"'"']*(https?:)?//|fetch\(["'"']https?://|XMLHttpRequest' . | grep -v '^./.git/'; then
+            echo "::error::Potential external runtime/network dependency found in pilot client files"
+            exit 1
+          fi
+
+      - name: Scan repository for obvious committed secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE --exclude-dir=.git --exclude='*.md' '(BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk_live_[A-Za-z0-9]+|sk_test_[A-Za-z0-9]+|AIza[0-9A-Za-z_-]{20,}|password[[:space:]]*=[[:space:]]*["'"'][^"'"']+["'"'])' .; then
+            echo "::error::Potential secret or credential pattern found"
+            exit 1
+          fi
+          echo "No obvious committed secret patterns found."
+
