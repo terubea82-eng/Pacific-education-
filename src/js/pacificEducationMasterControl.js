@@ -826,11 +826,27 @@
         var allRequirementsVerified = summary.totalRequired > 0 &&
             summary.verified === summary.totalRequired &&
             summary.pending === 0;
-        var serverAuthorized = !!(
-            serverDecision &&
-            serverDecision.authorized === true &&
-            serverDecision.productionApproved === true
-        );
+        /*
+         * SECURITY BOUNDARY:
+         * A caller-supplied object is never accepted as production authority.
+         * Prototype/browser code cannot self-assert server authorization.
+         * A future production backend must expose a server-authority verifier
+         * that independently validates the decision before this gate can open.
+         */
+        var authorityVerifier = global.PacificEducationProductionServerAuthority;
+        var serverAuthorized = false;
+        if (
+            authorityVerifier &&
+            typeof authorityVerifier.verifyProductionApproval === "function"
+        ) {
+            try {
+                serverAuthorized = authorityVerifier.verifyProductionApproval(
+                    serverDecision
+                ) === true;
+            } catch (_) {
+                serverAuthorized = false;
+            }
+        }
         var approved = pilotClosed && allRequirementsVerified && serverAuthorized;
         var decision = approved ? "PRODUCTION_APPROVED" : "BLOCKED";
 
