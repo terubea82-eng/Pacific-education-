@@ -511,6 +511,14 @@
 
             event.preventDefault();
 
+            errorBox.textContent =
+                "Country registration is disabled during the 3-month controlled pilot. No personal or government contact data is accepted or submitted from this prototype page.";
+
+            errorBox.style.display =
+                "block";
+
+            return;
+
             errorBox.style.display =
                 "none";
 
