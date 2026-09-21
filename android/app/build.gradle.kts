@@ -14,9 +14,40 @@ android {
         versionName = "1.0.0"
     }
 
+    signingConfigs {
+        create("release") {
+            val keystorePath = System.getenv("KEYSTORE_PATH")
+            val keystorePassword = System.getenv("KEYSTORE_PASSWORD")
+            val keyAlias = System.getenv("KEY_ALIAS")
+            val keyPassword = System.getenv("KEY_PASSWORD")
+
+            if (!keystorePath.isNullOrBlank() &&
+                !keystorePassword.isNullOrBlank() &&
+                !keyAlias.isNullOrBlank() &&
+                !keyPassword.isNullOrBlank()
+            ) {
+                storeFile = file(keystorePath)
+                storePassword = keystorePassword
+                this.keyAlias = keyAlias
+                this.keyPassword = keyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+
+            val keystorePath = System.getenv("KEYSTORE_PATH")
+            val signingReady =
+                !keystorePath.isNullOrBlank() &&
+                !System.getenv("KEYSTORE_PASSWORD").isNullOrBlank() &&
+                !System.getenv("KEY_ALIAS").isNullOrBlank() &&
+                !System.getenv("KEY_PASSWORD").isNullOrBlank()
+
+            if (signingReady) {
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
 }
