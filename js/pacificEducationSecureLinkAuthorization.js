@@ -121,7 +121,8 @@
       typeof user.id === "string" &&
       user.id.trim() &&
       validRole(user.role) &&
-      user.authorized === true
+      user.authorized === true &&
+      user.prototypeSession === true
     );
   }
 
