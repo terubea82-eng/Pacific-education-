@@ -9,10 +9,10 @@
 (function(window){
 "use strict";
 var KEY="pacificEducationProductionRequirements";
-var TYPES=["curriculum","security","privacy","safeguarding","accessibility","infrastructure","testing","payments"];
+var TYPES=["curriculum","security","privacy","safeguarding","accessibility","infrastructure","testing","payments","governance","legal","operations"];
 var DEFAULTS=[
 {id:"curriculum-verification",type:"curriculum",label:"Official curriculum source verification",required:true,status:"pending"},
-{id:"owner-approval",type:"curriculum",label:"Owner approval",required:true,status:"pending"},
+{id:"owner-approval",type:"governance",label:"Owner approval",required:true,status:"pending"},
 {id:"production-database",type:"infrastructure",label:"Production database",required:true,status:"pending"},
 {id:"secure-production-authentication",type:"security",label:"Secure production authentication",required:true,status:"pending"},
 {id:"production-hosting",type:"infrastructure",label:"Production hosting",required:true,status:"pending"},
@@ -21,7 +21,11 @@ var DEFAULTS=[
 {id:"child-safeguarding-review",type:"safeguarding",label:"Child safeguarding review",required:true,status:"pending"},
 {id:"accessibility-review",type:"accessibility",label:"Accessibility review",required:true,status:"pending"},
 {id:"controlled-pilot-user-testing",type:"testing",label:"Controlled pilot and user testing",required:true,status:"pending"},
-{id:"production-payment-verification",type:"payments",label:"Production payment verification",required:true,status:"pending"}
+{id:"production-payment-verification",type:"payments",label:"Production payment verification",required:true,status:"pending"},
+{id:"privacy-data-governance",type:"privacy",label:"Privacy and data-governance controls",required:true,status:"pending"},
+{id:"backup-recovery-verification",type:"infrastructure",label:"Backup and recovery verification",required:true,status:"pending"},
+{id:"monitoring-incident-response",type:"operations",label:"Monitoring and incident-response readiness",required:true,status:"pending"},
+{id:"legal-regulatory-review",type:"legal",label:"Applicable legal and regulatory review",required:true,status:"pending"}
 ];
 function load(){try{return JSON.parse(localStorage.getItem(KEY)||"[]");}catch(e){return [];}}
 function save(v){localStorage.setItem(KEY,JSON.stringify(v));}
