@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "policy": "PACIFIC_GUARDIAN_AUTOMATED_STAGE_WRITE_POLICY.md",
   "stages": {
     "20": {
@@ -143,6 +143,84 @@
       ],
       "requiredEvidenceType": "all-mandatory-production-evidence-and-authorized-release",
       "implementationSpec": "STAGE_30_PRODUCTION_RELEASE_GATE_CONTROLLED_LAUNCH_IMPLEMENTATION_SPEC.md",
+      "nextStage": null
+    },
+    "31": {
+      "name": "Continuous Security Privacy Safeguarding Monitoring",
+      "contract": "STAGE_31_CONTINUOUS_SECURITY_PRIVACY_SAFEGUARDING_MONITORING_SPEC.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "security-privacy-safeguarding-continuous-monitoring",
+      "allowlistedTargets": [
+        "STAGE_31_CONTINUOUS_SECURITY_PRIVACY_SAFEGUARDING_MONITORING_SPEC.md"
+      ],
+      "requiredEvidenceType": "specialist-review-and-monitoring-verification",
+      "implementationSpec": "STAGE_31_CONTINUOUS_SECURITY_PRIVACY_SAFEGUARDING_MONITORING_SPEC.md",
+      "nextStage": 32
+    },
+    "32": {
+      "name": "Curriculum Accessibility Product Quality Regression",
+      "contract": "STAGE_32_CURRICULUM_ACCESSIBILITY_PRODUCT_QUALITY_REGRESSION_SPEC.md",
+      "changeClass": "B",
+      "autoWrite": false,
+      "reviewRequired": "curriculum-accessibility-quality-regression",
+      "allowlistedTargets": [
+        "STAGE_32_CURRICULUM_ACCESSIBILITY_PRODUCT_QUALITY_REGRESSION_SPEC.md"
+      ],
+      "requiredEvidenceType": "regression-and-human-review",
+      "implementationSpec": "STAGE_32_CURRICULUM_ACCESSIBILITY_PRODUCT_QUALITY_REGRESSION_SPEC.md",
+      "nextStage": 33
+    },
+    "33": {
+      "name": "Business Payment Vendor Operations Continuity",
+      "contract": "STAGE_33_BUSINESS_PAYMENT_VENDOR_OPERATIONS_CONTINUITY_SPEC.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "payment-vendor-operational-continuity",
+      "allowlistedTargets": [
+        "STAGE_33_BUSINESS_PAYMENT_VENDOR_OPERATIONS_CONTINUITY_SPEC.md"
+      ],
+      "requiredEvidenceType": "operational-and-independent-verification",
+      "implementationSpec": "STAGE_33_BUSINESS_PAYMENT_VENDOR_OPERATIONS_CONTINUITY_SPEC.md",
+      "nextStage": 34
+    },
+    "34": {
+      "name": "Legal Regulatory Professional Review Cycle",
+      "contract": "STAGE_34_LEGAL_REGULATORY_PROFESSIONAL_REVIEW_CYCLE_SPEC.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "legal-regulatory-professional-review",
+      "allowlistedTargets": [
+        "STAGE_34_LEGAL_REGULATORY_PROFESSIONAL_REVIEW_CYCLE_SPEC.md"
+      ],
+      "requiredEvidenceType": "professional-review-and-owner-decision",
+      "implementationSpec": "STAGE_34_LEGAL_REGULATORY_PROFESSIONAL_REVIEW_CYCLE_SPEC.md",
+      "nextStage": 35
+    },
+    "35": {
+      "name": "Owner Governance Change Succession Control",
+      "contract": "STAGE_35_OWNER_GOVERNANCE_CHANGE_SUCCESSION_CONTROL_SPEC.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "owner-governance-change-succession",
+      "allowlistedTargets": [
+        "STAGE_35_OWNER_GOVERNANCE_CHANGE_SUCCESSION_CONTROL_SPEC.md"
+      ],
+      "requiredEvidenceType": "owner-and-professional-review",
+      "implementationSpec": "STAGE_35_OWNER_GOVERNANCE_CHANGE_SUCCESSION_CONTROL_SPEC.md",
+      "nextStage": 36
+    },
+    "36": {
+      "name": "Continuous Improvement Metrics User Needs",
+      "contract": "STAGE_36_CONTINUOUS_IMPROVEMENT_METRICS_USER_NEEDS_SPEC.md",
+      "changeClass": "B",
+      "autoWrite": false,
+      "reviewRequired": "continuous-improvement-user-needs",
+      "allowlistedTargets": [
+        "STAGE_36_CONTINUOUS_IMPROVEMENT_METRICS_USER_NEEDS_SPEC.md"
+      ],
+      "requiredEvidenceType": "quality-review-and-evidence",
+      "implementationSpec": "STAGE_36_CONTINUOUS_IMPROVEMENT_METRICS_USER_NEEDS_SPEC.md",
       "nextStage": null
     }
   },
