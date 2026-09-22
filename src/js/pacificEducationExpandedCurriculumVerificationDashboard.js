@@ -85,24 +85,44 @@
         subjectId: subject || undefined,
         verificationStatus: state || undefined
       });
-      var html = '<p><strong>Showing:</strong> ' + esc(rows.length) + ' record(s)</p>' +
+      var sourceVerifier = window.PacificEducationCurriculumSourceVerification || null;
+      var workflowGuard = window.PacificEducationCurriculumVerificationWorkflowGuard || null;
+      rows = rows.map(function (r) {
+        var sourceRecord = sourceVerifier && typeof sourceVerifier.get === "function"
+          ? sourceVerifier.get(r.activityId) : null;
+        var workflow = workflowGuard && typeof workflowGuard.evaluate === "function"
+          ? workflowGuard.evaluate(r.activityId) : null;
+        return {
+          record: r,
+          sourceStatus: sourceRecord ? sourceRecord.verificationStatus : null,
+          sourceReference: sourceRecord && sourceRecord.source
+            ? (sourceRecord.source.reference || sourceRecord.sourceReference || "") : (sourceRecord ? sourceRecord.sourceReference || "" : ""),
+          workflowReady: workflow ? workflow.blockers.length === 0 : false,
+          workflowBlockers: workflow ? workflow.blockers : ["No matching authoritative source-verification record."]
+        };
+      });
+      var html = '<p><strong>Existing source-verification workflow is checked by activity ID:</strong> no source record is created automatically. <strong>Showing:</strong> ' + esc(rows.length) + ' record(s)</p>' +
         '<table style="width:100%;border-collapse:collapse;min-width:900px;"><thead><tr>' +
-        ["Activity ID","Form","Subject","Topic","Verification","Official source","Achievement indicator"].map(function (h) {
+        ["Activity ID","Form","Subject","Topic","Queue status","Official source","Achievement indicator","Source workflow","Workflow readiness"].map(function (h) {
           return '<th scope="col" style="border:1px solid #aaa;padding:7px;text-align:left;">' + h + '</th>';
         }).join("") + '</tr></thead><tbody>';
 
       if (!rows.length) {
         html += '<tr><td colspan="7" style="border:1px solid #aaa;padding:10px;">No matching records.</td></tr>';
       } else {
-        rows.slice(0, 300).forEach(function (r) {
+        rows.slice(0, 300).forEach(function (item) {
+          var r = item.record;
+          var workflowText = item.workflowReady ? "Ready for guarded review" : "Blocked — " + item.workflowBlockers.join(" ");
           html += '<tr>' +
             '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.activityId) + '</td>' +
             '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.level) + '</td>' +
             '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.subjectId) + '</td>' +
             '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.topic) + '</td>' +
             '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.verificationStatus) + '</td>' +
-            '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.sourceReference || "Not entered") + '</td>' +
+            '<td style="border:1px solid #aaa;padding:7px;">' + esc(item.sourceReference || "No matching source record") + '</td>' +
             '<td style="border:1px solid #aaa;padding:7px;">' + esc(r.achievementIndicatorId || "Not entered") + '</td>' +
+            '<td style="border:1px solid #aaa;padding:7px;">' + esc(item.sourceStatus || "unregistered") + '</td>' +
+            '<td style="border:1px solid #aaa;padding:7px;">' + esc(workflowText) + '</td>' +
             '</tr>';
         });
       }
