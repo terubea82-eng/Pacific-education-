@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "policy": "PACIFIC_GUARDIAN_AUTOMATED_STAGE_WRITE_POLICY.md",
+  "stages": {
+    "20": {
+      "name": "Production Backend Data Architecture",
+      "contract": "PRODUCTION_BACKEND_DATA_ARCHITECTURE.md",
+      "changeClass": "B",
+      "autoWrite": false,
+      "reviewRequired": "production-backend-data-architecture",
+      "allowlistedTargets": ["PRODUCTION_BACKEND_DATA_ARCHITECTURE.md"],
+      "requiredEvidenceType": "implementation-and-verification"
+    },
+    "21": {
+      "name": "Production Authentication Security",
+      "contract": "PRODUCTION_AUTHENTICATION_SECURITY.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "security-authentication",
+      "allowlistedTargets": ["PRODUCTION_AUTHENTICATION_SECURITY.md"],
+      "requiredEvidenceType": "security-implementation-and-independent-verification"
+    },
+    "22": {
+      "name": "Production Hosting Infrastructure Security",
+      "contract": "PRODUCTION_HOSTING_INFRASTRUCTURE_SECURITY.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "hosting-infrastructure-security",
+      "allowlistedTargets": ["PRODUCTION_HOSTING_INFRASTRUCTURE_SECURITY.md"],
+      "requiredEvidenceType": "infrastructure-implementation-and-independent-verification"
+    },
+    "23": {
+      "name": "Cybersecurity Privacy Child Safeguarding",
+      "contract": "STAGE_23_CYBERSECURITY_PRIVACY_CHILD_SAFEGUARDING.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "cybersecurity-privacy-safeguarding",
+      "allowlistedTargets": ["STAGE_23_CYBERSECURITY_PRIVACY_CHILD_SAFEGUARDING.md"],
+      "requiredEvidenceType": "specialist-review-and-independent-verification"
+    },
+    "24": {
+      "name": "Privacy Data Governance",
+      "contract": "STAGE_24_PRIVACY_DATA_GOVERNANCE.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "privacy-data-governance",
+      "allowlistedTargets": ["STAGE_24_PRIVACY_DATA_GOVERNANCE.md"],
+      "requiredEvidenceType": "legal-privacy-review-and-independent-verification"
+    },
+    "25": {
+      "name": "Accessibility Low Bandwidth Device Verification",
+      "contract": "STAGE_25_ACCESSIBILITY_LOW_BANDWIDTH_DEVICE_VERIFICATION.md",
+      "changeClass": "B",
+      "autoWrite": false,
+      "reviewRequired": "accessibility-device-verification",
+      "allowlistedTargets": ["STAGE_25_ACCESSIBILITY_LOW_BANDWIDTH_DEVICE_VERIFICATION.md"],
+      "requiredEvidenceType": "device-and-human-testing"
+    },
+    "26": {
+      "name": "Fiji Curriculum Source Validation Alignment",
+      "contract": "STAGE_26_FIJI_CURRICULUM_SOURCE_VALIDATION_ALIGNMENT.md",
+      "changeClass": "B",
+      "autoWrite": false,
+      "reviewRequired": "official-curriculum-source-validation",
+      "allowlistedTargets": ["STAGE_26_FIJI_CURRICULUM_SOURCE_VALIDATION_ALIGNMENT.md"],
+      "requiredEvidenceType": "official-source-and-authorized-review"
+    },
+    "27": {
+      "name": "Controlled Pilot User Testing Evidence",
+      "contract": "STAGE_27_CONTROLLED_PILOT_USER_TESTING_EVIDENCE.md",
+      "changeClass": "B",
+      "autoWrite": false,
+      "reviewRequired": "controlled-pilot-evidence",
+      "allowlistedTargets": ["STAGE_27_CONTROLLED_PILOT_USER_TESTING_EVIDENCE.md"],
+      "requiredEvidenceType": "pilot-test-and-review-evidence"
+    },
+    "28": {
+      "name": "Payment Verification Operations Business Controls",
+      "contract": "STAGE_28_PAYMENT_VERIFICATION_OPERATIONS_BUSINESS_CONTROLS.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "payment-operations-controls",
+      "allowlistedTargets": ["STAGE_28_PAYMENT_VERIFICATION_OPERATIONS_BUSINESS_CONTROLS.md"],
+      "requiredEvidenceType": "server-payment-and-operational-verification"
+    },
+    "29": {
+      "name": "Final Production Readiness Owner Approval",
+      "contract": "STAGE_29_FINAL_PRODUCTION_READINESS_OWNER_APPROVAL.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "final-readiness-owner-approval",
+      "allowlistedTargets": ["STAGE_29_FINAL_PRODUCTION_READINESS_OWNER_APPROVAL.md"],
+      "requiredEvidenceType": "complete-evidence-and-explicit-owner-approval"
+    },
+    "30": {
+      "name": "Production Release Gate Controlled Launch",
+      "contract": "STAGE_30_PRODUCTION_RELEASE_GATE_CONTROLLED_LAUNCH.md",
+      "changeClass": "C",
+      "autoWrite": false,
+      "reviewRequired": "production-release-gate",
+      "allowlistedTargets": ["STAGE_30_PRODUCTION_RELEASE_GATE_CONTROLLED_LAUNCH.md"],
+      "requiredEvidenceType": "all-mandatory-production-evidence-and-authorized-release"
+    }
+  }
+}
