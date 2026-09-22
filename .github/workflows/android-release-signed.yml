@@ -17,6 +17,7 @@ jobs:
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
+          set -euo pipefail
           test -n "$KEYSTORE_BASE64"
           test -n "$KEYSTORE_PASSWORD"
           test -n "$KEY_ALIAS"
@@ -40,8 +41,10 @@ jobs:
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
+          set -euo pipefail
           printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/pacific-education-release.jks"
           chmod 600 "$RUNNER_TEMP/pacific-education-release.jks"
+          test -s "$RUNNER_TEMP/pacific-education-release.jks"
 
       - name: Build signed release bundle
         env:
@@ -49,15 +52,32 @@ jobs:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: gradle --no-daemon :app:bundleRelease
+        run: |
+          set -euo pipefail
+          gradle --no-daemon :app:bundleRelease
         working-directory: android
 
-      - name: Verify AAB exists
-        run: test -s android/app/build/outputs/bundle/release/app-release.aab
+      - name: Verify AAB identity and signature
+        env:
+          KEYSTORE_PATH: ${{ runner.temp }}/pacific-education-release.jks
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        run: |
+          set -euo pipefail
+          AAB="android/app/build/outputs/bundle/release/app-release.aab"
+          test -s "$AAB"
+          jarsigner -verify -verbose -certs "$AAB" >/tmp/jarsigner.txt 2>&1
+          grep -q "jar verified" /tmp/jarsigner.txt
+          echo "Signed AAB verified."
+          echo "Expected applicationId: org.pacificeducation.app"
+          echo "Expected versionCode: 2"
+          echo "Expected versionName: 1.0.1"
+          keytool -list -v             -keystore "$KEYSTORE_PATH"             -storepass "$KEYSTORE_PASSWORD"             -alias "$KEY_ALIAS" |
+            grep -E "Alias name:|Entry type:|SHA256:" | head -n 10
 
       - name: Upload signed AAB artifact
         uses: actions/upload-artifact@v4
         with:
-          name: pacific-education-release-signed
+          name: pacific-education-release-signed-v1.0.1
           path: android/app/build/outputs/bundle/release/app-release.aab
           retention-days: 7
