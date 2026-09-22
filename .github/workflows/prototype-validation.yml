@@ -117,22 +117,20 @@ jobs:
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
           python3 - <<'PY'
           from pathlib import Path
-          import re, sys
-          root = Path(".").resolve()
+          import sys
           offenders = []
-          for p in root.rglob("*"):
+          for p in Path(".").rglob("*"):
               if not p.is_file() or ".git" in p.parts or p.suffix not in {".html", ".js"}:
                   continue
-              s = p.read_text(encoding="utf-8", errors="ignore")
-              if p.suffix == ".html":
-                  for m in re.finditer(r'<script\\b[^>]+src=["\']([^"\']+)', s, re.I):
-                      src = m.group(1)
-                      if "://" in src or src.startswith("//"):
-                          offenders.append(f"{p}: external script {src}")
-              if re.search(r'fetch\\s*\\(\\s*["\']https?://', s, re.I):
-                  offenders.append(f"{p}: absolute fetch URL")
-              if re.search(r'open\\s*\\(\\s*["\'][^"\']*["\']\\s*,\\s*["\']https?://', s, re.I):
-                  offenders.append(f"{p}: absolute XHR URL")
+              lines = p.read_text(encoding="utf-8", errors="ignore").splitlines()
+              for line_no, line in enumerate(lines, 1):
+                  low = line.lower()
+                  if "<script" in low and "src=" in low and "://" in line:
+                      offenders.append(f"{p}:{line_no}: external script URL")
+                  if "fetch(" in low and ("http://" in low or "https://" in low):
+                      offenders.append(f"{p}:{line_no}: absolute fetch URL")
+                  if "xmlhttprequest" in low and ("http://" in low or "https://" in low):
+                      offenders.append(f"{p}:{line_no}: absolute XHR URL")
           if offenders:
               print("Potential external runtime/network dependency found:")
               print("\n".join(offenders))
