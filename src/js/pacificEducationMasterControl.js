@@ -21,7 +21,7 @@
 (function (global) {
     "use strict";
 
-    var MASTER_CONTROL_VERSION = "1.0.10";
+    var MASTER_CONTROL_VERSION = "1.0.11";
 
     /*
      * =======================================================
@@ -527,6 +527,17 @@
             number: 30,
             status: STATUS.BLOCKED,
             contract: "DEFINED — actual production release remains blocked until all mandatory evidence and approvals are verified"
+        },
+
+        continuousGovernanceExtensions: {
+            number: 31,
+            status: STATUS.NOT_STARTED,
+            conditional: true,
+            activationRule: "Need-based only — no extension is required unless an objective need, material change, incident, risk, review finding, new requirement or owner-approved governance need is recorded.",
+            noAutomaticTimeBasedExtension: true,
+            stages: [31, 32, 33, 34, 35, 36],
+            noNeedDecision: "NO_EXTENSION_REQUIRED",
+            productionAuthority: "No extension stage grants production, legal or regulatory authority."
         }
     });
 
