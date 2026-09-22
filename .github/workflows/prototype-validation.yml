@@ -157,9 +157,11 @@ jobs:
           test -f automation/stage-completion.json
           test -f automation/stage-allowlist.json
           test -f automation/stage-evidence-requirements.json
+          test -f automation/STAGE_20_EVIDENCE_MAPPING.md
           test -f automation/pacificGuardianStageWriteCheck.js
           test -f .github/workflows/pacific-guardian-stage-write.yml
           node --check automation/pacificGuardianStageWriteCheck.js
           node -e 'const fs=require("fs"); const x=JSON.parse(fs.readFileSync("automation/stage-allowlist.json","utf8")); const r=JSON.parse(fs.readFileSync("automation/stage-evidence-requirements.json","utf8")); for (let n=20;n<=30;n++) { const s=x.stages[String(n)], e=r.stages[String(n)]; if (!s) throw new Error("missing stage "+n); if (!e) throw new Error("missing evidence contract "+n); if (!["B","C"].includes(s.changeClass)) throw new Error("unsafe class for stage "+n); if (s.autoWrite !== false) throw new Error("stage "+n+" must remain review-controlled"); if (!Array.isArray(s.allowlistedTargets) || !s.allowlistedTargets.length) throw new Error("missing allowlist for stage "+n); if (!Array.isArray(e.requiredEvidence) || !e.requiredEvidence.length) throw new Error("missing required evidence for stage "+n); if (typeof e.completionAuthority !== "string" || !e.completionAuthority.trim()) throw new Error("missing completion authority for stage "+n); }'
-          node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json automation/stage-evidence-requirements.json | grep -q '"eligible":false'
+          node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json automation/stage-evidence-requirements.json automation/STAGE_20_EVIDENCE_MAPPING.md | grep -q '"eligible":false'
+          node -e 'const fs=require("fs"); const m=fs.readFileSync("automation/STAGE_20_EVIDENCE_MAPPING.md","utf8"); const r=JSON.parse(fs.readFileSync("automation/stage-evidence-requirements.json","utf8")); for (const x of r.stages["20"].requiredEvidence) if (!m.includes(x)) throw new Error("Stage 20 evidence mapping missing: "+x);'
           echo "Pacific Guardian Stage 20-30 automation and evidence verification are configured fail-closed."
