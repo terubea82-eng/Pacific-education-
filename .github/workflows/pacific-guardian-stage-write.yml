@@ -8,6 +8,7 @@ on:
       - "automation/stage-allowlist.json"
       - "automation/pacificGuardianStageWriteCheck.js"
       - "PACIFIC_GUARDIAN_AUTOMATED_STAGE_WRITE_POLICY.md"
+      - "automation/extension-need-assessment.json"
 
 permissions:
   contents: write
@@ -27,7 +28,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          result="$(node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json)"
+          result="$(node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json automation/stage-evidence-requirements.json automation/STAGE_20_EVIDENCE_MAPPING.md automation/extension-need-assessment.json)"
           echo "$result"
           eligible="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(String(x.eligible))' "$result")"
           stage="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(String(x.stage ?? ""))' "$result")"
