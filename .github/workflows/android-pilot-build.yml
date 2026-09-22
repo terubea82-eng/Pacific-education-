@@ -1,4 +1,5 @@
 name: Android Pilot Build
+# Controlled pilot build: debug APK, unsigned release APK and unsigned release AAB.
 
 on:
   workflow_dispatch:
