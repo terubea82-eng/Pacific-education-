@@ -1,15 +1,16 @@
 /*
  * Pacific Education — Curriculum Alignment Completeness Engine
- * Version 1.0.0
+ * Version 1.1.0
  * PROTOTYPE ONLY.
  *
- * Measures data completeness across level, subject and term.
- * It does not determine whether curriculum content is officially correct.
+ * Measures data completeness across the same levels exposed by
+ * the Pacific Education level selector. It does not determine
+ * whether curriculum content is officially correct.
  */
 (function(window){
     "use strict";
-    var VERSION="1.0.0";
-    var LEVELS=["Kindergarten","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
+    var VERSION="1.1.0";
+    var LEVELS=["Kindergarten","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"];
     var TERMS=["Term 1","Term 2","Term 3"];
 
     function rows(){var w=window.PacificEducationCurriculumAlignmentImportWorkspace;return w&&w.list?w.list():[];}
