@@ -68,7 +68,7 @@
         if (status) {
             status.textContent =
                 "Selected: " + subjectId + " • " + getLevel() +
-                " (pilot curriculum selection)";
+                " (pilot/unverified curriculum selection)";
         }
 
         refreshLesson();
@@ -104,7 +104,7 @@
         status.setAttribute("aria-live", "polite");
         status.textContent =
             "Selected: " + select.value + " • " + getLevel() +
-            " (pilot curriculum selection)";
+            " (pilot/unverified curriculum selection)";
 
         select.addEventListener("change", function() {
             setSubject(select.value);
