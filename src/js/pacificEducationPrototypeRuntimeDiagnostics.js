@@ -20,7 +20,7 @@
 (function (window, document) {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
 
     const checks = [
         {
@@ -101,6 +101,54 @@
                     window.PacificEducationCore &&
                     typeof window.PacificEducationCore.authorizeUser === "function" &&
                     typeof window.PacificEducationCore.isAuthorized === "function"
+                );
+            }
+        },
+        {
+            id: "accessibilityRuntime",
+            label: "Accessibility runtime",
+            test: function () {
+                return !!(
+                    window.PacificEducationAccessibilityRuntime &&
+                    typeof window.PacificEducationAccessibilityRuntime.setTextScale === "function" &&
+                    typeof window.PacificEducationAccessibilityRuntime.stopSpeaking === "function"
+                );
+            }
+        },
+        {
+            id: "accessibilityControls",
+            label: "Accessibility controls and live status",
+            test: function () {
+                const controls = document.getElementById("pacificEducationAccessibilityControls");
+                const status = document.getElementById("pacificEducationAccessibilityStatus");
+                return !!(
+                    controls &&
+                    controls.querySelectorAll("button").length >= 4 &&
+                    status &&
+                    status.getAttribute("aria-live") === "polite"
+                );
+            }
+        },
+        {
+            id: "curriculumSelectors",
+            label: "Learning level, subject and term selectors",
+            test: function () {
+                return !!(
+                    document.getElementById("pacificEducationLevelSelector") &&
+                    document.getElementById("pacificEducationSubjectSelector") &&
+                    document.getElementById("pacificEducationTermSelector")
+                );
+            }
+        },
+        {
+            id: "productionFailClosed",
+            label: "Production authorization remains fail-closed",
+            test: function () {
+                const recon = window.PacificEducationFinalReleaseControlReconciliation;
+                return !!(
+                    recon &&
+                    recon.productionApproved === false &&
+                    recon.productionEligible === false
                 );
             }
         }
