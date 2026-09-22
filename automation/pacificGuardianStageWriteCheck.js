@@ -5,9 +5,11 @@ const fs = require("fs");
 
 const evidencePath = process.argv[2] || "automation/stage-completion.json";
 const configPath = process.argv[3] || "automation/stage-allowlist.json";
+const requirementsPath = process.argv[4] || "automation/stage-evidence-requirements.json";
 
 const evidence = JSON.parse(fs.readFileSync(evidencePath, "utf8"));
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+const requirements = JSON.parse(fs.readFileSync(requirementsPath, "utf8"));
 
 function fail(reason, extra = {}) {
   console.log(JSON.stringify({ eligible: false, reason, ...extra }));
@@ -19,14 +21,33 @@ if (!Number.isInteger(evidence.stage) || evidence.stage < 1 || evidence.stage > 
 }
 
 const stageConfig = config.stages && config.stages[String(evidence.stage)];
+const stageRequirements = requirements.stages && requirements.stages[String(evidence.stage)];
 if (!stageConfig) fail("stage_configuration_missing");
+if (!stageRequirements) fail("stage_evidence_requirements_missing");
 
 if (evidence.status !== "COMPLETE") fail("stage_not_complete");
 if (evidence.testsPassed !== true) fail("required_tests_not_passed");
 if (!Array.isArray(evidence.evidence) || evidence.evidence.length === 0) {
   fail("missing_evidence");
 }
-if (evidence.reviewStatus !== "APPROVED") fail("review_not_satisfied");
+
+const requiredEvidence = stageRequirements.requiredEvidence || [];
+const evidenceRecords = evidence.evidence.filter(item => item && typeof item === "object");
+if (evidenceRecords.length !== evidence.evidence.length) fail("invalid_evidence_record");
+if (requiredEvidence.length === 0) fail("stage_has_no_required_evidence");
+for (const requirement of requiredEvidence) {
+  const match = evidenceRecords.find(item =>
+    item.requirement === requirement &&
+    item.status === "VERIFIED" &&
+    typeof item.verifiedBy === "string" && item.verifiedBy.trim() &&
+    typeof item.verifiedAt === "string" && item.verifiedAt.trim()
+  );
+  if (!match) fail("required_evidence_not_verified", { missingRequirement: requirement });
+}
+
+if (typeof evidence.evidenceType !== "string" || evidence.evidenceType !== stageConfig.requiredEvidenceType) {
+  fail("evidence_type_mismatch");
+}
 if (
   typeof evidence.completionAuthority !== "string" ||
   !evidence.completionAuthority.trim()
