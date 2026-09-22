@@ -69,14 +69,12 @@
             return {success:false,error:"Source verification service unavailable.",state:state};
         }
 
-        var result=s.verify({
-            indicatorId:indicatorId,
-            status:state.nextStatus,
-            sourceReference:input.sourceReference||"",
-            evidenceReference:input.evidenceReference||"",
-            reviewerReference:input.reviewerReference||"",
-            notes:input.notes||""
-        });
+        var result=s.verify(
+            indicatorId,
+            state.nextStatus,
+            input.reviewerReference||"",
+            input.notes||""
+        );
 
         return {
             success:true,
