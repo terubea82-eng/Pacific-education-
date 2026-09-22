@@ -7,7 +7,7 @@
   "reviewStatus": "PENDING",
   "blockingDefects": 0,
   "targetFiles": [
-    "PRODUCTION_BACKEND_DATA_ARCHITECTURE.md"
+    "STAGE_20_PRODUCTION_DATABASE_AND_API_IMPLEMENTATION_SPEC.md"
   ],
   "changeClass": "B",
   "completionAuthority": "authorized production backend reviewer",
