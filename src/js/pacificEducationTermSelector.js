@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var TERMS = ["Term 1", "Term 2", "Term 3"];
 
     function getTerm() {
@@ -64,7 +64,7 @@
 
         var label = document.createElement("label");
         label.setAttribute("for", "pacificEducationTerm");
-        label.textContent = "School Term";
+        label.textContent = "Choose school term";
 
         var select = document.createElement("select");
         select.id = "pacificEducationTerm";
