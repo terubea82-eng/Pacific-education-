@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "stage": null,
+  "status": "INCOMPLETE",
+  "testsPassed": false,
+  "evidence": [],
+  "reviewStatus": "PENDING",
+  "blockingDefects": 0,
+  "targetFiles": [],
+  "changeClass": "A"
+}
