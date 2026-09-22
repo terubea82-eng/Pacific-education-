@@ -71,7 +71,7 @@ public final class MainActivity extends Activity {
             }
         });
 
-        WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
+        WebView.setWebContentsDebuggingEnabled(fj.pacificeducation.app.BuildConfig.DEBUG);
     }
 
     private boolean handleUrl(Uri uri) {
