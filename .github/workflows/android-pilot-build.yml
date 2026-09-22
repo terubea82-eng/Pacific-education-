@@ -49,6 +49,10 @@ jobs:
         working-directory: android
         run: gradle --no-daemon assembleRelease
 
+      - name: Build unsigned release AAB
+        working-directory: android
+        run: gradle --no-daemon bundleRelease
+
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
@@ -61,4 +65,11 @@ jobs:
         with:
           name: pacific-education-release-apk-unsigned
           path: android/app/build/outputs/apk/release/app-release-unsigned.apk
+          if-no-files-found: error
+
+      - name: Upload unsigned release AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacific-education-release-aab-unsigned
+          path: android/app/build/outputs/bundle/release/app-release.aab
           if-no-files-found: error
