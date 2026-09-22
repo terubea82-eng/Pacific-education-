@@ -29,6 +29,7 @@ if (!Array.isArray(evidence.evidence) || evidence.evidence.length === 0) {
   fail("missing_evidence");
 }
 if (evidence.reviewStatus !== "APPROVED") fail("review_not_satisfied");
+if (typeof evidence.completionAuthority !== "string" || !evidence.completionAuthority.trim()) fail("completion_authority_missing");
 if (Number(evidence.blockingDefects) !== 0) fail("blocking_defect_present");
 if (!Array.isArray(evidence.targetFiles) || evidence.targetFiles.length === 0) {
   fail("missing_target_files");
