@@ -115,10 +115,10 @@ jobs:
           test -f js/pacificEducationSecureCommunication.js
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureLinkAuthorization.js
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
-          if grep -RInE --include='*.html' --include='*.js' 'src=["'"'"'][^"'"']*(https?:)?//|fetch\(["'"']https?://|XMLHttpRequest' . | grep -v '^./.git/'; then
+          if grep -RInE --include='*.html' --include='*.js' "src=[\\\"'][^\\\"']*(https?:)?//|fetch\\\\([\\\"']https?://|XMLHttpRequest" . | grep -v '^./.git/'; then
             echo "::error::Potential external runtime/network dependency found in pilot client files"
             exit 1
-          fi
+          fii
 
       - name: Scan repository for obvious committed secrets
         shell: bash
