@@ -117,13 +117,13 @@ jobs:
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
           python3 - <<'PY'
           from pathlib import Path
-          import re, sys
+          import sys
           offenders = []
           for p in Path(".").rglob("*"):
               if not p.is_file() or ".git" in p.parts or p.suffix not in {".html", ".js"}:
                   continue
               s = p.read_text(encoding="utf-8", errors="ignore")
-              if re.search(r'<script\\b[^>]+src=["\\\'][^"\\\']*(?:https?:)?//', s, re.I) or re.search(r'\\b(?:fetch|XMLHttpRequest)\\s*\\(', s):
+              if "http://" in s or "https://" in s or "fetch(" in s or "XMLHttpRequest" in s:
                   offenders.append(str(p))
           if offenders:
               print("Potential external runtime/network dependency found:")
