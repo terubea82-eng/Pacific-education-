@@ -8,8 +8,12 @@
       "changeClass": "B",
       "autoWrite": false,
       "reviewRequired": "production-backend-data-architecture",
-      "allowlistedTargets": ["PRODUCTION_BACKEND_DATA_ARCHITECTURE.md"],
-      "requiredEvidenceType": "implementation-and-verification"
+      "allowlistedTargets": [
+        "STAGE_20_PRODUCTION_DATABASE_AND_API_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "implementation-and-verification",
+      "implementationSpec": "STAGE_20_PRODUCTION_DATABASE_AND_API_IMPLEMENTATION_SPEC.md",
+      "nextStage": 21
     },
     "21": {
       "name": "Production Authentication Security",
@@ -17,8 +21,12 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "security-authentication",
-      "allowlistedTargets": ["PRODUCTION_AUTHENTICATION_SECURITY.md"],
-      "requiredEvidenceType": "security-implementation-and-independent-verification"
+      "allowlistedTargets": [
+        "STAGE_21_PRODUCTION_AUTHENTICATION_SECURITY_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "security-implementation-and-independent-verification",
+      "implementationSpec": "STAGE_21_PRODUCTION_AUTHENTICATION_SECURITY_IMPLEMENTATION_SPEC.md",
+      "nextStage": 22
     },
     "22": {
       "name": "Production Hosting Infrastructure Security",
@@ -26,8 +34,12 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "hosting-infrastructure-security",
-      "allowlistedTargets": ["PRODUCTION_HOSTING_INFRASTRUCTURE_SECURITY.md"],
-      "requiredEvidenceType": "infrastructure-implementation-and-independent-verification"
+      "allowlistedTargets": [
+        "STAGE_22_PRODUCTION_HOSTING_INFRASTRUCTURE_SECURITY_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "infrastructure-implementation-and-independent-verification",
+      "implementationSpec": "STAGE_22_PRODUCTION_HOSTING_INFRASTRUCTURE_SECURITY_IMPLEMENTATION_SPEC.md",
+      "nextStage": 23
     },
     "23": {
       "name": "Cybersecurity Privacy Child Safeguarding",
@@ -35,8 +47,12 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "cybersecurity-privacy-safeguarding",
-      "allowlistedTargets": ["STAGE_23_CYBERSECURITY_PRIVACY_CHILD_SAFEGUARDING.md"],
-      "requiredEvidenceType": "specialist-review-and-independent-verification"
+      "allowlistedTargets": [
+        "STAGE_23_CYBERSECURITY_PRIVACY_CHILD_SAFEGUARDING_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "specialist-review-and-independent-verification",
+      "implementationSpec": "STAGE_23_CYBERSECURITY_PRIVACY_CHILD_SAFEGUARDING_IMPLEMENTATION_SPEC.md",
+      "nextStage": 24
     },
     "24": {
       "name": "Privacy Data Governance",
@@ -44,8 +60,12 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "privacy-data-governance",
-      "allowlistedTargets": ["STAGE_24_PRIVACY_DATA_GOVERNANCE.md"],
-      "requiredEvidenceType": "legal-privacy-review-and-independent-verification"
+      "allowlistedTargets": [
+        "STAGE_24_PRIVACY_DATA_GOVERNANCE_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "legal-privacy-review-and-independent-verification",
+      "implementationSpec": "STAGE_24_PRIVACY_DATA_GOVERNANCE_IMPLEMENTATION_SPEC.md",
+      "nextStage": 25
     },
     "25": {
       "name": "Accessibility Low Bandwidth Device Verification",
@@ -53,8 +73,12 @@
       "changeClass": "B",
       "autoWrite": false,
       "reviewRequired": "accessibility-device-verification",
-      "allowlistedTargets": ["STAGE_25_ACCESSIBILITY_LOW_BANDWIDTH_DEVICE_VERIFICATION.md"],
-      "requiredEvidenceType": "device-and-human-testing"
+      "allowlistedTargets": [
+        "STAGE_25_ACCESSIBILITY_LOW_BANDWIDTH_DEVICE_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "device-and-human-testing",
+      "implementationSpec": "STAGE_25_ACCESSIBILITY_LOW_BANDWIDTH_DEVICE_IMPLEMENTATION_SPEC.md",
+      "nextStage": 26
     },
     "26": {
       "name": "Fiji Curriculum Source Validation Alignment",
@@ -62,8 +86,12 @@
       "changeClass": "B",
       "autoWrite": false,
       "reviewRequired": "official-curriculum-source-validation",
-      "allowlistedTargets": ["STAGE_26_FIJI_CURRICULUM_SOURCE_VALIDATION_ALIGNMENT.md"],
-      "requiredEvidenceType": "official-source-and-authorized-review"
+      "allowlistedTargets": [
+        "STAGE_26_FIJI_CURRICULUM_SOURCE_VALIDATION_ALIGNMENT_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "official-source-and-authorized-review",
+      "implementationSpec": "STAGE_26_FIJI_CURRICULUM_SOURCE_VALIDATION_ALIGNMENT_IMPLEMENTATION_SPEC.md",
+      "nextStage": 27
     },
     "27": {
       "name": "Controlled Pilot User Testing Evidence",
@@ -71,8 +99,12 @@
       "changeClass": "B",
       "autoWrite": false,
       "reviewRequired": "controlled-pilot-evidence",
-      "allowlistedTargets": ["STAGE_27_CONTROLLED_PILOT_USER_TESTING_EVIDENCE.md"],
-      "requiredEvidenceType": "pilot-test-and-review-evidence"
+      "allowlistedTargets": [
+        "STAGE_27_CONTROLLED_PILOT_USER_TESTING_EVIDENCE_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "pilot-test-and-review-evidence",
+      "implementationSpec": "STAGE_27_CONTROLLED_PILOT_USER_TESTING_EVIDENCE_IMPLEMENTATION_SPEC.md",
+      "nextStage": 28
     },
     "28": {
       "name": "Payment Verification Operations Business Controls",
@@ -80,8 +112,12 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "payment-operations-controls",
-      "allowlistedTargets": ["STAGE_28_PAYMENT_VERIFICATION_OPERATIONS_BUSINESS_CONTROLS.md"],
-      "requiredEvidenceType": "server-payment-and-operational-verification"
+      "allowlistedTargets": [
+        "STAGE_28_PAYMENT_VERIFICATION_OPERATIONS_BUSINESS_CONTROLS_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "server-payment-and-operational-verification",
+      "implementationSpec": "STAGE_28_PAYMENT_VERIFICATION_OPERATIONS_BUSINESS_CONTROLS_IMPLEMENTATION_SPEC.md",
+      "nextStage": 29
     },
     "29": {
       "name": "Final Production Readiness Owner Approval",
@@ -89,8 +125,12 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "final-readiness-owner-approval",
-      "allowlistedTargets": ["STAGE_29_FINAL_PRODUCTION_READINESS_OWNER_APPROVAL.md"],
-      "requiredEvidenceType": "complete-evidence-and-explicit-owner-approval"
+      "allowlistedTargets": [
+        "STAGE_29_FINAL_PRODUCTION_READINESS_OWNER_APPROVAL_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "complete-evidence-and-explicit-owner-approval",
+      "implementationSpec": "STAGE_29_FINAL_PRODUCTION_READINESS_OWNER_APPROVAL_IMPLEMENTATION_SPEC.md",
+      "nextStage": 30
     },
     "30": {
       "name": "Production Release Gate Controlled Launch",
@@ -98,8 +138,13 @@
       "changeClass": "C",
       "autoWrite": false,
       "reviewRequired": "production-release-gate",
-      "allowlistedTargets": ["STAGE_30_PRODUCTION_RELEASE_GATE_CONTROLLED_LAUNCH.md"],
-      "requiredEvidenceType": "all-mandatory-production-evidence-and-authorized-release"
+      "allowlistedTargets": [
+        "STAGE_30_PRODUCTION_RELEASE_GATE_CONTROLLED_LAUNCH_IMPLEMENTATION_SPEC.md"
+      ],
+      "requiredEvidenceType": "all-mandatory-production-evidence-and-authorized-release",
+      "implementationSpec": "STAGE_30_PRODUCTION_RELEASE_GATE_CONTROLLED_LAUNCH_IMPLEMENTATION_SPEC.md",
+      "nextStage": null
     }
-  }
+  },
+  "integrationRule": "The implementationSpec is the practical stage build target. The contract remains the architecture/governance reference. A stage cannot be considered connected until its implementationSpec exists and its evidence contract, reviewer and next-stage dependency agree."
 }
