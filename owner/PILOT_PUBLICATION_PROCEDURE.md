@@ -1,11 +1,14 @@
-# Pacific Education — 3-Month Controlled Pilot Publication Procedure
+# Pacific Education — 1-Month Controlled Pilot Publication Procedure
 
 **Release type:** Controlled prototype pilot  
-**Pilot period:** September 21, 2026 – December 21, 2026  
+**Pilot period:** September 21, 2026 – October 21, 2026  
 **Repository:** terubea82-eng/Pacific-education-  
-**Default branch:** main
+**Default branch:** main  
+**Extension rule:** The initial pilot is one month. If a genuine need arises, the owner may explicitly extend the controlled pilot, up to a maximum total duration of three months.
 
 ## 1. Publication boundary
+
+The initial controlled pilot term is one month. An extension to a maximum total of three months is permitted only when a genuine need arises and the owner explicitly approves the extension. An extension does not change the production boundary.
 
 This procedure authorizes publication of the repository as a **controlled prototype pilot demonstration only**. It does not authorize production education services, production authentication, production child-data collection, production payments, or production security claims.
 
