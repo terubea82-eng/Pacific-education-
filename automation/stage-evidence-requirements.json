@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "purpose": "Stage-specific evidence contract for Pacific Guardian. These records define what must be demonstrated; they do not themselves prove completion.",
+  "completionRule": "A stage remains INCOMPLETE until every mandatory evidence item is independently verified and the required review/authority conditions are satisfied.",
+  "stages": {
+    "20": {
+      "requiredEvidence": [
+        "production data model and schema implemented in an approved production environment",
+        "identity, role, relationship, authorization and audit data boundaries verified",
+        "backup, recovery and migration controls tested",
+        "independent technical verification recorded"
+      ],
+      "completionAuthority": "authorized production backend reviewer"
+    },
+    "21": {
+      "requiredEvidence": [
+        "production authentication implemented server-side",
+        "session/token lifecycle and account recovery controls tested",
+        "authorization enforcement verified server-side",
+        "security review and independent verification recorded"
+      ],
+      "completionAuthority": "authorized security/authentication reviewer"
+    },
+    "22": {
+      "requiredEvidence": [
+        "production hosting architecture implemented",
+        "TLS, secrets handling, deployment and rollback controls verified",
+        "monitoring, backup and recovery tested",
+        "independent infrastructure/security verification recorded"
+      ],
+      "completionAuthority": "authorized infrastructure/security reviewer"
+    },
+    "23": {
+      "requiredEvidence": [
+        "cybersecurity controls implemented and tested",
+        "privacy and child-safeguarding controls implemented",
+        "incident response and abuse-reporting procedures verified",
+        "specialist review and independent verification recorded"
+      ],
+      "completionAuthority": "authorized cybersecurity/privacy/safeguarding reviewer"
+    },
+    "24": {
+      "requiredEvidence": [
+        "data inventory, purpose limitation, retention and deletion controls verified",
+        "access, correction and incident processes documented and tested",
+        "applicable legal/privacy requirements reviewed",
+        "independent privacy/legal verification recorded"
+      ],
+      "completionAuthority": "authorized privacy/legal reviewer"
+    },
+    "25": {
+      "requiredEvidence": [
+        "accessibility requirements implemented",
+        "real-device and low-bandwidth testing completed",
+        "assistive interaction and readable-content testing completed",
+        "human accessibility review recorded"
+      ],
+      "completionAuthority": "authorized accessibility/device-test reviewer"
+    },
+    "26": {
+      "requiredEvidence": [
+        "current authorized Fiji curriculum sources identified and version recorded",
+        "achievement-indicator mapping evidence verified",
+        "unverified curriculum claims prevented from becoming official records",
+        "authorized curriculum review recorded"
+      ],
+      "completionAuthority": "authorized curriculum reviewer"
+    },
+    "27": {
+      "requiredEvidence": [
+        "controlled pilot executed within owner-approved period",
+        "test evidence and user feedback collected without unnecessary sensitive child data",
+        "defects, incidents and corrective actions reconciled",
+        "pilot review evidence independently checked"
+      ],
+      "completionAuthority": "authorized pilot reviewer"
+    },
+    "28": {
+      "requiredEvidence": [
+        "production payment provider/server verification implemented",
+        "entitlement cannot be established by client-side payment state",
+        "refund, reconciliation, fraud and operational procedures tested",
+        "independent payment/operations verification recorded"
+      ],
+      "completionAuthority": "authorized payment/operations reviewer"
+    },
+    "29": {
+      "requiredEvidence": [
+        "all mandatory production requirements verified",
+        "blocking defects resolved or formally dispositioned",
+        "required specialist and independent reviews completed",
+        "explicit owner approval recorded"
+      ],
+      "completionAuthority": "authorized owner approval authority"
+    },
+    "30": {
+      "requiredEvidence": [
+        "Stage 29 completion verified",
+        "production release gate evaluates all mandatory conditions server-side",
+        "controlled launch, rollback and incident procedures verified",
+        "authorized release decision recorded"
+      ],
+      "completionAuthority": "authorized production release authority"
+    }
+  }
+}
