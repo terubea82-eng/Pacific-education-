@@ -1,22 +1,29 @@
 /*
  * Pacific Education
  * Curriculum Subject Selector
- * Version 1.0.0
+ * Version 1.1.0
  *
  * Connects selected level + subject to the curriculum lesson layer.
  *
- * PROTOTYPE ONLY. Subject names are planning categories until
- * verified against the authoritative Fiji curriculum source.
+ * PROTOTYPE/PILOT ONLY. Subject names and prototype activities are
+ * planning/testing categories until verified against authoritative
+ * Fiji curriculum sources.
  */
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     var SUBJECTS = [
         { id: "English", name: "English" },
         { id: "Mathematics", name: "Mathematics" },
         { id: "Science", name: "Science" },
+        { id: "Basic Science", name: "Basic Science" },
+        { id: "Elementary Science", name: "Elementary Science" },
+        { id: "Biology", name: "Biology" },
+        { id: "Chemistry", name: "Chemistry" },
+        { id: "Physics", name: "Physics" },
+        { id: "Health Science", name: "Health Science" },
         { id: "Social Science", name: "Social Science" },
         { id: "Health & Physical Education", name: "Health & Physical Education" },
         { id: "Arts", name: "Arts" },
@@ -60,7 +67,7 @@
         if (status) {
             status.textContent =
                 "Selected: " + subjectId + " • " + getLevel() +
-                " (prototype curriculum selection)";
+                " (pilot curriculum selection)";
         }
 
         refreshLesson();
@@ -96,7 +103,7 @@
         status.setAttribute("aria-live", "polite");
         status.textContent =
             "Selected: " + select.value + " • " + getLevel() +
-            " (prototype curriculum selection)";
+            " (pilot curriculum selection)";
 
         select.addEventListener("change", function() {
             setSubject(select.value);
@@ -114,7 +121,9 @@
         return {
             level: getLevel(),
             subjectId: getSubject(),
-            prototype: true
+            prototype: true,
+            form1To7ScienceHealthCatalog:
+                !!window.PacificEducationForm1To7ScienceHealth
         };
     }
 
