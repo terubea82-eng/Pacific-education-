@@ -12,6 +12,7 @@ const evidence = JSON.parse(fs.readFileSync(evidencePath, "utf8"));
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const requirements = JSON.parse(fs.readFileSync(requirementsPath, "utf8"));
 const mapping = evidence.stage === 20 ? fs.readFileSync(mappingPath, "utf8") : "";
+const repoRoot = process.cwd();
 
 function fail(reason, extra = {}) {
   console.log(JSON.stringify({ eligible: false, reason, ...extra }));
@@ -26,6 +27,8 @@ const stageConfig = config.stages && config.stages[String(evidence.stage)];
 const stageRequirements = requirements.stages && requirements.stages[String(evidence.stage)];
 if (!stageConfig) fail("stage_configuration_missing");
 if (!stageRequirements) fail("stage_evidence_requirements_missing");
+if (typeof stageConfig.implementationSpec !== "string" || !stageConfig.implementationSpec.trim()) fail("implementation_spec_missing");
+if (!fs.existsSync(`${repoRoot}/${stageConfig.implementationSpec}`)) fail("implementation_spec_file_missing", { implementationSpec: stageConfig.implementationSpec });
 
 if (evidence.status !== "COMPLETE") fail("stage_not_complete");
 if (evidence.testsPassed !== true) fail("required_tests_not_passed");
@@ -77,6 +80,7 @@ if (evidence.changeClass !== stageConfig.changeClass) {
 }
 
 const allowlistedTargets = new Set(stageConfig.allowlistedTargets || []);
+if (!allowlistedTargets.has(stageConfig.implementationSpec)) fail("implementation_spec_not_allowlisted");
 for (const path of evidence.targetFiles) {
   if (
     typeof path !== "string" ||
@@ -99,7 +103,9 @@ const result = {
   autoWrite,
   reviewRequired: stageConfig.reviewRequired,
   requiredEvidenceType: stageConfig.requiredEvidenceType,
-  targetFiles: evidence.targetFiles
+  targetFiles: evidence.targetFiles,
+  implementationSpec: stageConfig.implementationSpec,
+  nextStage: stageConfig.nextStage ?? null
 };
 
 if (!autoWrite) {
