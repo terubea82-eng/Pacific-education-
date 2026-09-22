@@ -171,3 +171,62 @@ jobs:
           set -euo pipefail
           test -f automation/extension-need-assessment.json
           node -e 'const fs=require("fs"); const a=JSON.parse(fs.readFileSync("automation/stage-allowlist.json","utf8")); const p=a.extensionPolicy; const n=JSON.parse(fs.readFileSync("automation/extension-need-assessment.json","utf8")); if(!p || p.requiredAfterStage30!==false || p.defaultDecision!=="NO_EXTENSION_REQUIRED" || p.noAutomaticTimeBasedExtension!==true || p.activateOnlyRelevantStages!==true) throw new Error("Invalid extension policy"); if(n.defaultDecision!=="NO_EXTENSION_REQUIRED" || !n.prohibitedTrigger.includes("Time elapsed alone")) throw new Error("Invalid need-assessment policy"); for(let i=31;i<=36;i++){const s=a.stages[String(i)], e=(JSON.parse(fs.readFileSync("automation/stage-evidence-requirements.json","utf8"))).stages[String(i)]; if(!s) throw new Error("missing extension stage "+i); if(!e) throw new Error("missing extension evidence contract "+i); if(s.autoWrite!==false) throw new Error("extension stage "+i+" must remain review-controlled"); if(s.nextStage!==null) throw new Error("extension stage "+i+" must not auto-chain"); if(typeof s.implementationSpec!=="string" || !s.implementationSpec.trim()) throw new Error("missing extension implementation spec "+i); if(!fs.existsSync(s.implementationSpec)) throw new Error("missing extension implementation file "+i); if(!Array.isArray(s.allowlistedTargets) || !s.allowlistedTargets.includes(s.implementationSpec)) throw new Error("extension spec not allowlisted "+i); if(!Array.isArray(e.requiredEvidence) || !e.requiredEvidence.length) throw new Error("missing extension evidence "+i); if(typeof e.completionAuthority!=="string" || !e.completionAuthority.trim()) throw new Error("missing extension completion authority "+i);} if(a.stages["30"].nextStage!==null) throw new Error("Stage 30 must not auto-chain to an extension"); console.log("Stages 31-36 optional, independent, need-based extension policy: PASS");'
+      - name: Test extension activation remains need-based and fail-closed
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp -d)"
+          trap 'rm -rf "$tmp"' EXIT
+          node - "$tmp" <<'NODE'
+          const fs = require("fs");
+          const path = require("path");
+          const out = process.argv[2];
+          const allow = JSON.parse(fs.readFileSync("automation/stage-allowlist.json", "utf8"));
+          const req = JSON.parse(fs.readFileSync("automation/stage-evidence-requirements.json", "utf8"));
+          const stage = 31;
+          const s = allow.stages[String(stage)];
+          const e = req.stages[String(stage)];
+          const evidence = {
+            version: "test",
+            stage,
+            status: "COMPLETE",
+            testsPassed: true,
+            evidence: e.requiredEvidence.map((requirement) => ({ requirement, status: "VERIFIED", verifiedBy: "automated-extension-gate-test", verifiedAt: "2026-01-01T00:00:00Z" })),
+            evidenceType: s.requiredEvidenceType,
+            completionAuthority: e.completionAuthority,
+            reviewStatus: "APPROVED",
+            reviewType: s.reviewRequired,
+            blockingDefects: 0,
+            targetFiles: [s.implementationSpec],
+            changeClass: s.changeClass
+          };
+          fs.writeFileSync(path.join(out, "stage31-evidence.json"), JSON.stringify(evidence, null, 2));
+          NODE
+          cp automation/extension-need-assessment.json "$tmp/no-extension.json"
+          no_extension_result="$(node automation/pacificGuardianStageWriteCheck.js "$tmp/stage31-evidence.json" automation/stage-allowlist.json automation/stage-evidence-requirements.json automation/STAGE_20_EVIDENCE_MAPPING.md "$tmp/no-extension.json")"
+          echo "$no_extension_result"
+          echo "$no_extension_result" | grep -q '"eligible":false'
+          echo "$no_extension_result" | grep -q 'extension_not_activated_by_need_assessment'
+          node - "$tmp" <<'NODE'
+          const fs = require("fs");
+          const path = require("path");
+          const out = process.argv[2];
+          const n = JSON.parse(fs.readFileSync("automation/extension-need-assessment.json", "utf8"));
+          n.decision = "EXTENSION_REQUIRED";
+          n.assessedAt = "2026-01-01T00:00:00Z";
+          n.assessedBy = "automated-extension-gate-test";
+          n.reason = "Automated test of explicit need-based activation";
+          n.evidence = ["automated-test-evidence"];
+          n.affectedCapability = "continuous-security-monitoring";
+          n.relevantExtensionStages = [31];
+          n.reviewStatus = "APPROVED";
+          n.ownerDecision = "APPROVED";
+          fs.writeFileSync(path.join(out, "extension-required.json"), JSON.stringify(n, null, 2));
+          NODE
+          required_result="$(node automation/pacificGuardianStageWriteCheck.js "$tmp/stage31-evidence.json" automation/stage-allowlist.json automation/stage-evidence-requirements.json automation/STAGE_20_EVIDENCE_MAPPING.md "$tmp/extension-required.json")"
+          echo "$required_result"
+          echo "$required_result" | grep -q '"eligible":true'
+          echo "$required_result" | grep -q '"stage":31'
+          echo "$required_result" | grep -q '"nextStage":null'
+          echo "Need-based extension activation test passed: no need blocks Stage 31; explicit verified need permits evaluation."
+
