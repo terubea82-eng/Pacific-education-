@@ -461,6 +461,72 @@
         publication: {
             number: 19,
             status: STATUS.NOT_STARTED
+        },
+
+        productionBackendDataArchitecture: {
+            number: 20,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — production implementation and independent verification required"
+        },
+
+        productionAuthenticationSecurity: {
+            number: 21,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — production implementation and independent verification required"
+        },
+
+        productionHostingInfrastructure: {
+            number: 22,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — production implementation and independent verification required"
+        },
+
+        cybersecurityPrivacyChildSafeguarding: {
+            number: 23,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — production implementation, specialist review and independent verification required"
+        },
+
+        privacyDataGovernance: {
+            number: 24,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — production implementation, legal/privacy review and independent verification required"
+        },
+
+        accessibilityLowBandwidthDeviceVerification: {
+            number: 25,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — implementation, device testing and independent accessibility verification required"
+        },
+
+        fijiCurriculumSourceValidationAlignment: {
+            number: 26,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — official-source verification, curriculum mapping and authorized review required"
+        },
+
+        controlledPilotUserTestingEvidence: {
+            number: 27,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — controlled pilot execution, evidence collection and review required"
+        },
+
+        paymentVerificationOperationsBusinessControls: {
+            number: 28,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — production payment implementation, operational controls and independent verification required"
+        },
+
+        finalProductionReadinessOwnerApproval: {
+            number: 29,
+            status: STATUS.IN_PROGRESS,
+            contract: "DEFINED — final evidence review and explicit owner approval required"
+        },
+
+        productionReleaseGateControlledLaunch: {
+            number: 30,
+            status: STATUS.BLOCKED,
+            contract: "DEFINED — actual production release remains blocked until all mandatory evidence and approvals are verified"
         }
     });
 
@@ -807,7 +873,7 @@
 
     var PILOT_TRANSITION = Object.freeze({
         startDate: "2026-09-21",
-        endDate: "2026-12-21",
+        endDate: "2026-10-21",
         releaseType: "controlled-prototype-pilot",
         automaticPilotClose: true,
         automaticProductionDecision: false,
