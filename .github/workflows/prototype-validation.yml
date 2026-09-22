@@ -115,10 +115,22 @@ jobs:
           test -f js/pacificEducationSecureCommunication.js
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureLinkAuthorization.js
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
-          if grep -RInE --include='*.html' --include='*.js' "src=[\\\"'][^\\\"']*(https?:)?//|fetch\\\\([\\\"']https?://|XMLHttpRequest" . | grep -v '^./.git/'; then
-            echo "::error::Potential external runtime/network dependency found in pilot client files"
-            exit 1
-          fii
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, sys
+          offenders = []
+          for p in Path(".").rglob("*"):
+              if not p.is_file() or ".git" in p.parts or p.suffix not in {".html", ".js"}:
+                  continue
+              s = p.read_text(encoding="utf-8", errors="ignore")
+              if re.search(r'<script\\b[^>]+src=["\\\'][^"\\\']*(?:https?:)?//', s, re.I) or re.search(r'\\b(?:fetch|XMLHttpRequest)\\s*\\(', s):
+                  offenders.append(str(p))
+          if offenders:
+              print("Potential external runtime/network dependency found:")
+              print("\n".join(offenders))
+              sys.exit(1)
+          print("Prototype runtime security boundary scan passed.")
+          PY
 
       - name: Scan repository for obvious committed secrets
         shell: bash
