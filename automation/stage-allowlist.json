@@ -156,7 +156,7 @@
       ],
       "requiredEvidenceType": "specialist-review-and-monitoring-verification",
       "implementationSpec": "STAGE_31_CONTINUOUS_SECURITY_PRIVACY_SAFEGUARDING_MONITORING_SPEC.md",
-      "nextStage": 32
+      "nextStage": null
     },
     "32": {
       "name": "Curriculum Accessibility Product Quality Regression",
@@ -169,7 +169,7 @@
       ],
       "requiredEvidenceType": "regression-and-human-review",
       "implementationSpec": "STAGE_32_CURRICULUM_ACCESSIBILITY_PRODUCT_QUALITY_REGRESSION_SPEC.md",
-      "nextStage": 33
+      "nextStage": null
     },
     "33": {
       "name": "Business Payment Vendor Operations Continuity",
@@ -182,7 +182,7 @@
       ],
       "requiredEvidenceType": "operational-and-independent-verification",
       "implementationSpec": "STAGE_33_BUSINESS_PAYMENT_VENDOR_OPERATIONS_CONTINUITY_SPEC.md",
-      "nextStage": 34
+      "nextStage": null
     },
     "34": {
       "name": "Legal Regulatory Professional Review Cycle",
@@ -195,7 +195,7 @@
       ],
       "requiredEvidenceType": "professional-review-and-owner-decision",
       "implementationSpec": "STAGE_34_LEGAL_REGULATORY_PROFESSIONAL_REVIEW_CYCLE_SPEC.md",
-      "nextStage": 35
+      "nextStage": null
     },
     "35": {
       "name": "Owner Governance Change Succession Control",
@@ -208,7 +208,7 @@
       ],
       "requiredEvidenceType": "owner-and-professional-review",
       "implementationSpec": "STAGE_35_OWNER_GOVERNANCE_CHANGE_SUCCESSION_CONTROL_SPEC.md",
-      "nextStage": 36
+      "nextStage": null
     },
     "36": {
       "name": "Continuous Improvement Metrics User Needs",
@@ -239,6 +239,7 @@
       "owner-approved ongoing governance cycle"
     ],
     "activateOnlyRelevantStages": true,
-    "noAutomaticTimeBasedExtension": true
+    "noAutomaticTimeBasedExtension": true,
+    "sequencing": "Extensions are independent and need-based. nextStage is null for Stages 31-36; activation of one extension never automatically activates another."
   }
 }
