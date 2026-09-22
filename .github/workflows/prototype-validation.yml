@@ -106,7 +106,6 @@ jobs:
           grep -R "productionEligible.*false\|productionEligible: false" src/js >/dev/null
           echo "Fail-closed production markers detected."
 
-
       - name: Validate prototype security boundaries
         shell: bash
         run: |
@@ -129,17 +128,15 @@ jobs:
           print("Prototype runtime external-network scan passed.")
           PY
 
-
       - name: Scan repository for obvious committed secrets
         shell: bash
         run: |
           set -euo pipefail
-          if grep -RInE --exclude-dir=.git --exclude='*.md' '(BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk_live_[A-Za-z0-9]+|sk_test_[A-Za-z0-9]+|AIza[0-9A-Za-z_-]{20,}|password[[:space:]]*=[[:space:]]*["'"'][^"'"']+["'"'])' .; then
+          if grep -RInE --exclude-dir=.git --exclude='*.md' '(BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk_live_[A-Za-z0-9]+|sk_test_[A-Za-z0-9]+|AIza[0-9A-Za-z_-]{20,}|password[[:space:]]*=[[:space:]]*["'"][^"'"]+["'"])' .; then
             echo "::error::Potential secret or credential pattern found"
             exit 1
           fi
           echo "No obvious committed secret patterns found."
-
 
       - name: Validate Pacific Guardian production gate
         shell: bash
@@ -152,3 +149,16 @@ jobs:
           grep -q 'guardianReady' src/js/pacificEducationMasterControl.js
           grep -q 'serverAuthorized' src/js/pacificEducationMasterControl.js
           echo "Pacific Guardian mandatory production gate markers validated."
+
+      - name: Validate Pacific Guardian stage automation
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f automation/stage-completion.json
+          test -f automation/stage-allowlist.json
+          test -f automation/pacificGuardianStageWriteCheck.js
+          test -f .github/workflows/pacific-guardian-stage-write.yml
+          node --check automation/pacificGuardianStageWriteCheck.js
+          node -e 'const x=JSON.parse(require("fs").readFileSync("automation/stage-allowlist.json","utf8")); for (let n=20;n<=30;n++) { const s=x.stages[String(n)]; if (!s) throw new Error("missing stage "+n); if (!["B","C"].includes(s.changeClass)) throw new Error("unsafe class for stage "+n); if (s.autoWrite !== false) throw new Error("stage "+n+" must remain review-controlled"); if (!Array.isArray(s.allowlistedTargets) || !s.allowlistedTargets.length) throw new Error("missing allowlist for stage "+n); }'
+          node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json | grep -q '"eligible":false'
+          echo "Pacific Guardian Stage 20-30 automation is configured fail-closed."
