@@ -54,6 +54,11 @@ if (
 ) {
   fail("completion_authority_missing");
 }
+if (evidence.completionAuthority !== stageRequirements.completionAuthority) {
+  fail("completion_authority_mismatch");
+}
+if (evidence.reviewStatus !== "APPROVED") fail("review_not_satisfied");
+if (evidence.reviewType !== stageConfig.reviewRequired) fail("review_type_mismatch");
 if (Number(evidence.blockingDefects) !== 0) fail("blocking_defect_present");
 if (!Array.isArray(evidence.targetFiles) || evidence.targetFiles.length === 0) {
   fail("missing_target_files");
