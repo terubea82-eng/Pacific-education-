@@ -7,11 +7,13 @@ const evidencePath = process.argv[2] || "automation/stage-completion.json";
 const configPath = process.argv[3] || "automation/stage-allowlist.json";
 const requirementsPath = process.argv[4] || "automation/stage-evidence-requirements.json";
 const mappingPath = process.argv[5] || "automation/STAGE_20_EVIDENCE_MAPPING.md";
+const extensionAssessmentPath = process.argv[6] || "automation/extension-need-assessment.json";
 
 const evidence = JSON.parse(fs.readFileSync(evidencePath, "utf8"));
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const requirements = JSON.parse(fs.readFileSync(requirementsPath, "utf8"));
 const mapping = evidence.stage === 20 ? fs.readFileSync(mappingPath, "utf8") : "";
+const extensionAssessment = fs.existsSync(extensionAssessmentPath) ? JSON.parse(fs.readFileSync(extensionAssessmentPath, "utf8")) : null;
 const repoRoot = process.cwd();
 
 function fail(reason, extra = {}) {
@@ -19,7 +21,7 @@ function fail(reason, extra = {}) {
   process.exit(0);
 }
 
-if (!Number.isInteger(evidence.stage) || evidence.stage < 1 || evidence.stage > 30) {
+if (!Number.isInteger(evidence.stage) || evidence.stage < 1 || evidence.stage > 36) {
   fail("invalid_stage");
 }
 
@@ -27,6 +29,17 @@ const stageConfig = config.stages && config.stages[String(evidence.stage)];
 const stageRequirements = requirements.stages && requirements.stages[String(evidence.stage)];
 if (!stageConfig) fail("stage_configuration_missing");
 if (!stageRequirements) fail("stage_evidence_requirements_missing");
+
+if (evidence.stage > 30) {
+  if (!extensionAssessment) fail("extension_need_assessment_missing");
+  if (extensionAssessment.defaultDecision !== "NO_EXTENSION_REQUIRED") fail("invalid_extension_default_decision");
+  if (extensionAssessment.prohibitedTrigger !== "Time elapsed alone must never activate an extension.") fail("invalid_extension_time_trigger_rule");
+  if (extensionAssessment.decision !== "EXTENSION_REQUIRED") fail("extension_not_activated_by_need_assessment");
+  if (!Array.isArray(extensionAssessment.relevantExtensionStages) ||
+      !extensionAssessment.relevantExtensionStages.includes(evidence.stage)) {
+    fail("extension_stage_not_relevant_to_need_assessment");
+  }
+}
 if (typeof stageConfig.implementationSpec !== "string" || !stageConfig.implementationSpec.trim()) fail("implementation_spec_missing");
 if (!fs.existsSync(`${repoRoot}/${stageConfig.implementationSpec}`)) fail("implementation_spec_file_missing", { implementationSpec: stageConfig.implementationSpec });
 
