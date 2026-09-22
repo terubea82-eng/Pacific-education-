@@ -877,7 +877,8 @@
         releaseType: "controlled-prototype-pilot",
         automaticPilotClose: true,
         automaticProductionDecision: false,
-        productionApprovalRequiresServerAuthority: true,\n        productionAuthorityNote: "Production authority is server-side only.",
+        productionApprovalRequiresServerAuthority: true,
+        productionAuthorityNote: "Production authority is server-side only.",
         failClosed: true
     });
 
