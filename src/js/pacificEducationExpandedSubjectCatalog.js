@@ -10,7 +10,7 @@
 (function(window){
     "use strict";
     var LEVELS=["Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"];
-    var SUBJECTS=["English","Mathematics","Science","Basic Science","Elementary Science","Biology","Chemistry","Physics","Health Science","Health & Physical Education","Geography","History","Social Science","Accounting","Economics","Business/Enterprise Studies","Office Technology","Computer Studies","Agricultural Science","Home Economics","Basic Technology","Basic Graphics Technology","Applied Technology","Technical Drawing","Arts","Vosa Vakaviti","Hindi","Urdu","Other"];
+    var SUBJECTS=["English","Mathematics","Science","Basic Science","Elementary Science","Biology","Chemistry","Physics","Health Science","Health & Physical Education","Geography","History","Social Science","Accounting","Economics","Business/Enterprise Studies","Office Technology","Computer Studies","Agricultural Science","Home Economics","Basic Technology","Basic Graphics Technology","Applied Technology","Technical Drawing","Arts","Vosa Vakaviti","Hindi","Urdu","Moral Values","Other"];
     var AREAS={
       "English":["Reading and comprehension","Writing and composition","Speaking and listening","Language and grammar","Literature and response","Communication in context"],
       "Mathematics":["Number and operations","Algebra","Geometry","Measurement","Statistics and probability","Problem solving"],
@@ -40,6 +40,7 @@
       "Vosa Vakaviti":["Listening and speaking","Reading","Writing","Grammar","Literature","Culture and communication"],
       "Hindi":["Listening and speaking","Reading","Writing","Grammar","Literature","Culture and communication"],
       "Urdu":["Listening and speaking","Reading","Writing","Grammar","Literature","Culture and communication"],
+      "Moral Values":["Respect and kindness","Honesty and integrity","Responsibility and accountability","Empathy and compassion","Fairness and justice","Community and environmental responsibility"],
       "Other":["Integrated inquiry","Communication","Numeracy","Digital literacy","Local context","Project learning"]
     };
     var records=[]; SUBJECTS.forEach(function(subject){LEVELS.forEach(function(level){(AREAS[subject]||AREAS.Other).forEach(function(topic,n){records.push({id:"PE-"+level.replace(/\\s/g,"")+"-"+subject.replace(/[^A-Za-z0-9]/g,"")+"-"+(n+1),level:level,subjectId:subject,activityNumber:n+1,topic:topic,title:"Pilot activity: "+topic,instruction:"Explore, explain and apply key ideas in "+topic.toLowerCase()+" at "+level+" level.",teacherTask:"Attempt this prototype activity and record clarity, level suitability and curriculum-alignment feedback.",pilotStatus:"prototype-review",curriculumVerification:"required-before-production"});});});});
