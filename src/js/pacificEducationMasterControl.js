@@ -810,8 +810,8 @@
         endDate: "2026-12-21",
         releaseType: "controlled-prototype-pilot",
         automaticPilotClose: true,
-        automaticProductionDecision: true,
-        productionApprovalRequiresServerAuthority: true,
+        automaticProductionDecision: false,
+        productionApprovalRequiresServerAuthority: true,\n        productionAuthorityNote: "Production authority is server-side only.",
         failClosed: true
     });
 
