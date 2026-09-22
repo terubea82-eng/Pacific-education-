@@ -165,3 +165,7 @@ jobs:
           node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json automation/stage-evidence-requirements.json automation/STAGE_20_EVIDENCE_MAPPING.md | grep -q '"eligible":false'
           node -e 'const fs=require("fs"); const m=fs.readFileSync("automation/STAGE_20_EVIDENCE_MAPPING.md","utf8"); const r=JSON.parse(fs.readFileSync("automation/stage-evidence-requirements.json","utf8")); for (const x of r.stages["20"].requiredEvidence) if (!m.includes(x)) throw new Error("Stage 20 evidence mapping missing: "+x);'
           echo "Pacific Guardian Stage 20-30 automation and evidence verification are configured fail-closed."
+
+      - name: Validate need-based optional extension policy
+        run: |
+          node -e 'const a=require("./automation/stage-allowlist.json"); const p=a.extensionPolicy; if(!p || p.requiredAfterStage30!==false || p.defaultDecision!=="NO_EXTENSION_REQUIRED" || p.noAutomaticTimeBasedExtension!==true || p.activateOnlyRelevantStages!==true) throw new Error("Invalid extension policy"); console.log("Stages 31-36 optional extension policy: PASS");'
