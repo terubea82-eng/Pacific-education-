@@ -1,11 +1,18 @@
 {
   "version": "1.0.0",
-  "stage": null,
+  "stage": 20,
   "status": "INCOMPLETE",
   "testsPassed": false,
   "evidence": [],
   "reviewStatus": "PENDING",
   "blockingDefects": 0,
-  "targetFiles": [],
-  "changeClass": "A"
+  "targetFiles": [
+    "PRODUCTION_BACKEND_DATA_ARCHITECTURE.md"
+  ],
+  "changeClass": "B",
+  "completionAuthority": "authorized production backend reviewer",
+  "reviewRequired": "production-backend-data-architecture",
+  "requiredEvidenceType": "implementation-and-verification",
+  "autoWrite": false,
+  "note": "Prepared record only. No evidence is asserted. Stage 20 cannot become COMPLETE until all required evidence is independently verified and the required review is approved."
 }
