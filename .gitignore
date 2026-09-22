@@ -32,3 +32,9 @@ google-services.json
 
 # Android Profiling
 *.hprof
+# Android signing / credential material
+*.pem
+*.p12
+*.pkcs12
+key.properties
+release-key.properties
