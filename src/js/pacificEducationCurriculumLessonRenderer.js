@@ -14,7 +14,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var originalDisplay = null;
     var connected = false;
 
@@ -75,7 +75,7 @@
         setText("dailyLessonDay", "Day " + lesson.dayNumber);
         setText(
             "dailyLessonTitle",
-            lesson.title || "Daily English Lesson"
+            lesson.title || ("Daily " + (lesson.subjectId || "Curriculum") + " Lesson")
         );
 
         var activityText = [];
@@ -212,6 +212,15 @@
             var rendered = generateAndRender();
 
             if (!rendered) {
+                var subject = getSubject();
+                if (subject && subject !== "English") {
+                    setText("dailyLessonTitle", "Daily " + subject + " Lesson — Prototype");
+                    setText("dailyLessonActivity", "A subject-specific curriculum lesson is not yet available for this selection. Use the expanded pilot activity area for prototype testing; official curriculum evidence is required before production use.");
+                    setText("dailyLessonPractice", "Do not treat this prototype content as an official Fiji curriculum prescription.");
+                    var fallback = document.getElementById("dailyLesson");
+                    if (fallback) fallback.setAttribute("data-curriculum-linked", "false");
+                    return false;
+                }
                 return originalDisplay();
             }
 
