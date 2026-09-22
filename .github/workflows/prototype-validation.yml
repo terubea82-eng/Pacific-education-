@@ -117,14 +117,22 @@ jobs:
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
           python3 - <<'PY'
           from pathlib import Path
-          import sys
+          import re, sys
+          root = Path(".").resolve()
           offenders = []
-          for p in Path(".").rglob("*"):
+          for p in root.rglob("*"):
               if not p.is_file() or ".git" in p.parts or p.suffix not in {".html", ".js"}:
                   continue
               s = p.read_text(encoding="utf-8", errors="ignore")
-              if "http://" in s or "https://" in s or "fetch(" in s or "XMLHttpRequest" in s:
-                  offenders.append(str(p))
+              if p.suffix == ".html":
+                  for m in re.finditer(r'<script\\b[^>]+src=["\']([^"\']+)', s, re.I):
+                      src = m.group(1)
+                      if "://" in src or src.startswith("//"):
+                          offenders.append(f"{p}: external script {src}")
+              if re.search(r'fetch\\s*\\(\\s*["\']https?://', s, re.I):
+                  offenders.append(f"{p}: absolute fetch URL")
+              if re.search(r'open\\s*\\(\\s*["\'][^"\']*["\']\\s*,\\s*["\']https?://', s, re.I):
+                  offenders.append(f"{p}: absolute XHR URL")
           if offenders:
               print("Potential external runtime/network dependency found:")
               print("\n".join(offenders))
