@@ -11,7 +11,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     var LEVELS = [
         "Class 1","Class 2","Class 3","Class 4","Class 5","Class 6",
@@ -74,7 +74,7 @@
 
         var label = document.createElement("label");
         label.setAttribute("for", "pacificEducationLevel");
-        label.textContent = "Learning Level";
+        label.textContent = "Choose learning level";
 
         var select = document.createElement("select");
         select.id = "pacificEducationLevel";
