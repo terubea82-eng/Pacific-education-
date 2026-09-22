@@ -1,4 +1,4 @@
-# Pacific Education — 1-Month Pilot Publication Procedure
+# Pacific Education — 3-Month Controlled Pilot Publication Procedure
 
 **Release type:** Controlled prototype pilot  
 **Pilot period:** September 21, 2026 – December 21, 2026  
