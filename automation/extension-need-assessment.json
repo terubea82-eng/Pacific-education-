@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "purpose": "Fail-closed decision record for determining whether any post-Stage-30 extension is genuinely needed.",
+  "defaultDecision": "NO_EXTENSION_REQUIRED",
+  "decisions": ["NO_EXTENSION_REQUIRED", "EXTENSION_REQUIRED"],
+  "activationConditions": [
+    "objective need",
+    "material change",
+    "incident",
+    "risk",
+    "review finding",
+    "new requirement",
+    "owner-approved ongoing governance cycle"
+  ],
+  "prohibitedTrigger": "Time elapsed alone must never activate an extension.",
+  "extensionRule": "If EXTENSION_REQUIRED is recorded, only the relevant Stage 31-36 extension stage(s) may be activated.",
+  "requiredFields": [
+    "decision",
+    "assessedAt",
+    "assessedBy",
+    "reason",
+    "evidence",
+    "affectedCapability",
+    "relevantExtensionStages",
+    "reviewStatus",
+    "ownerDecision"
+  ],
+  "minimumNoExtensionRecord": {
+    "decision": "NO_EXTENSION_REQUIRED",
+    "reason": "No objective need identified",
+    "relevantExtensionStages": [],
+    "reviewStatus": "RECORDED",
+    "ownerDecision": "RECORDED"
+  },
+  "minimumExtensionRecord": {
+    "decision": "EXTENSION_REQUIRED",
+    "reason": "Specific objective need documented",
+    "evidence": ["verified evidence reference"],
+    "relevantExtensionStages": ["31"],
+    "reviewStatus": "PENDING_OR_APPROVED_AS_REQUIRED",
+    "ownerDecision": "REQUIRED_BEFORE_PROTECTED_WORK"
+  },
+  "productionAuthority": "This record does not establish legal compliance, regulatory approval, Ministry approval, or production authorization."
+}
