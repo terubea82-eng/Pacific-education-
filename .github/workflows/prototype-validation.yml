@@ -117,26 +117,18 @@ jobs:
           grep -q 'user.prototypeSession === true' js/pacificEducationSecureCommunication.js
           python3 - <<'PY'
           from pathlib import Path
-          import sys
-          offenders = []
+          import re,sys
+          pattern=re.compile(r'''src\s*=\s*["'][^"']*(?:https?:)?//|fetch\(\s*["']https?://|XMLHttpRequest''',re.I)
+          findings=[]
           for p in Path(".").rglob("*"):
-              if not p.is_file() or ".git" in p.parts or p.suffix not in {".html", ".js"}:
-                  continue
-              lines = p.read_text(encoding="utf-8", errors="ignore").splitlines()
-              for line_no, line in enumerate(lines, 1):
-                  low = line.lower()
-                  if "<script" in low and "src=" in low and "://" in line:
-                      offenders.append(f"{p}:{line_no}: external script URL")
-                  if "fetch(" in low and ("http://" in low or "https://" in low):
-                      offenders.append(f"{p}:{line_no}: absolute fetch URL")
-                  if "xmlhttprequest" in low and ("http://" in low or "https://" in low):
-                      offenders.append(f"{p}:{line_no}: absolute XHR URL")
-          if offenders:
-              print("Potential external runtime/network dependency found:")
-              print("\n".join(offenders))
-              sys.exit(1)
-          print("Prototype runtime security boundary scan passed.")
+              if not p.is_file() or ".git" in p.parts or p.suffix.lower() not in {".html",".js"}: continue
+              for n,line in enumerate(p.read_text(encoding="utf-8",errors="ignore").splitlines(),1):
+                  if pattern.search(line): findings.append(f"{p}:{n}: {line.strip()}")
+          if findings:
+              print("\n".join(findings)); sys.exit(1)
+          print("Prototype runtime external-network scan passed.")
           PY
+
 
       - name: Scan repository for obvious committed secrets
         shell: bash
