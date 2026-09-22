@@ -14,7 +14,11 @@ android {
         versionName = "1.0.0-pilot"
     }
 
-    buildFeatures {\n        buildConfig = true\n    }\n\n    buildTypes {
+    buildFeatures {
+        buildConfig = true
+    }
+
+    buildTypes {
         debug {
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"
