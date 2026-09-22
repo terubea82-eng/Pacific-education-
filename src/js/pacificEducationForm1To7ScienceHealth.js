@@ -3,14 +3,15 @@
  * Form 1-7 Science & Health Pilot Activity Catalog
  * Version 1.0.0
  *
- * Prototype teacher-testing catalog. Official Fiji curriculum
- * prescriptions, achievement indicators and source documents must
- * be mapped and verified before production use.
+ * Prototype teacher-testing catalog only.
+ * These generated activities are NOT official Fiji curriculum prescriptions.
+ * Every activity requires authoritative mapping and verification before
+ * it may be represented as curriculum-aligned production content.
  */
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var LEVELS = ["Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"];
 
     var SUBJECTS = [
@@ -73,7 +74,16 @@
                         "check the expected level, and record curriculum-alignment feedback.",
                     assessmentType:index % 2 === 0 ? "short-answer" : "discussion-and-application",
                     pilotStatus:"prototype-review",
-                    curriculumVerification:"required-before-production"
+                    curriculumVerification:"required-before-production",
+                    curriculumMapping:{
+                        status:"UNVERIFIED",
+                        authority:"Fiji Ministry of Education",
+                        source:null,
+                        strand:null,
+                        achievementIndicator:null,
+                        verified:false
+                    },
+                    levelSuitability:"UNVERIFIED — do not treat this generated activity as a Form-specific official prescription until authoritative mapping is completed"
                 });
             });
         });
