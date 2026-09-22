@@ -10,11 +10,13 @@ public final class MainActivity extends Activity {
     private static final String START_URL =
             "https://terubea82-eng.github.io/Pacific-education-/";
 
+    private WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        WebView webView = new WebView(this);
+        webView = new WebView(this);
         webView.setWebViewClient(new WebViewClient());
 
         WebSettings settings = webView.getSettings();
@@ -22,6 +24,7 @@ public final class MainActivity extends Activity {
         settings.setDomStorageEnabled(true);
         settings.setAllowFileAccess(false);
         settings.setAllowContentAccess(false);
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
 
         webView.loadUrl(START_URL);
         setContentView(webView);
@@ -29,13 +32,20 @@ public final class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        if (getWindow().getDecorView().findFocus() instanceof WebView) {
-            WebView webView = (WebView) getWindow().getDecorView().findFocus();
-            if (webView.canGoBack()) {
-                webView.goBack();
-                return;
-            }
+        if (webView != null && webView.canGoBack()) {
+            webView.goBack();
+            return;
         }
         super.onBackPressed();
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (webView != null) {
+            webView.stopLoading();
+            webView.destroy();
+            webView = null;
+        }
+        super.onDestroy();
     }
 }
