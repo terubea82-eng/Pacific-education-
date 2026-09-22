@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "purpose": "Stage-specific evidence contract for Pacific Guardian. These records define what must be demonstrated; they do not themselves prove completion.",
   "completionRule": "A stage remains INCOMPLETE until every mandatory evidence item is independently verified and the required review/authority conditions are satisfied.",
   "stages": {
@@ -101,6 +101,60 @@
         "authorized release decision recorded"
       ],
       "completionAuthority": "authorized production release authority"
+    },
+    "31": {
+      "requiredEvidence": [
+        "continuous security, privacy and safeguarding monitoring implemented",
+        "alerting and incident-response exercises verified",
+        "vulnerability, audit and backup monitoring verified",
+        "specialist/independent monitoring review recorded"
+      ],
+      "completionAuthority": "authorized continuous security/privacy/safeguarding reviewer"
+    },
+    "32": {
+      "requiredEvidence": [
+        "curriculum and achievement-indicator regression testing completed against current authorized sources",
+        "accessibility, device and low-bandwidth regression testing completed",
+        "assessment and progression regression testing completed",
+        "quality review and defects reconciled"
+      ],
+      "completionAuthority": "authorized curriculum/accessibility quality reviewer"
+    },
+    "33": {
+      "requiredEvidence": [
+        "payment reconciliation and entitlement controls verified",
+        "vendor and operational continuity controls tested",
+        "refund, dispute and support procedures verified",
+        "independent operational review recorded"
+      ],
+      "completionAuthority": "authorized business/operations reviewer"
+    },
+    "34": {
+      "requiredEvidence": [
+        "current legal/publication register prepared with source/version evidence",
+        "professional/legal review questions and evidence package completed",
+        "required revisions recorded and resolved or dispositioned",
+        "authorized professional review decision recorded"
+      ],
+      "completionAuthority": "authorized legal/regulatory/professional reviewer"
+    },
+    "35": {
+      "requiredEvidence": [
+        "owner governance and authority records verified",
+        "material-change and access-revocation controls tested",
+        "ownership/IP and succession records handled through appropriate professional procedures",
+        "authorized owner governance decision recorded"
+      ],
+      "completionAuthority": "authorized owner governance authority"
+    },
+    "36": {
+      "requiredEvidence": [
+        "user-needs and quality metrics collected with data minimization",
+        "improvement decisions traceable to evidence and defects",
+        "material changes routed back to affected controlled stage",
+        "periodic quality review recorded"
+      ],
+      "completionAuthority": "authorized quality/improvement reviewer"
     }
   }
 }
