@@ -5,7 +5,7 @@
      * Pacific Education Pilot Configuration
      * Owner-controlled prototype setting.
      * Initial pilot: 1 month.
-     * Optional extension: only if needed and explicitly approved by the owner.
+     * Optional extension: only if genuinely needed and explicitly approved by the owner.
      * Maximum total pilot duration: 3 months.
      * No automatic extension is permitted.
      * This configuration does NOT provide production security,
@@ -24,7 +24,14 @@
         maximumDurationMonths: 3,
         maximumEndDate: "2026-12-21",
         automaticPilotClose: true,
-        automaticProductionDecision: true,
+
+        /*
+         * This flag is deliberately false. The browser may evaluate and
+         * close the pilot window, but it must never make a production
+         * approval decision. Production authority is server-side only.
+         */
+        automaticProductionDecision: false,
+
         productionApprovalRequiresServerAuthority: true,
         failClosed: true,
         prototypeOnly: true
