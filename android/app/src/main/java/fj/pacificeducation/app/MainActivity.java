@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebResourceRequest;
@@ -43,7 +44,9 @@ public final class MainActivity extends Activity {
         settings.setBuiltInZoomControls(false);
         settings.setDisplayZoomControls(false);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
-        settings.setSafeBrowsingEnabled(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            settings.setSafeBrowsingEnabled(true);
+        }
         settings.setMediaPlaybackRequiresUserGesture(true);
 
         view.setVerticalScrollBarEnabled(true);
@@ -77,8 +80,8 @@ public final class MainActivity extends Activity {
         String scheme = uri.getScheme();
         String host = uri.getHost();
 
-        if ("https".equalsIgnoreCase(scheme) && APP_ORIGIN.equalsIgnoreCase(
-                uri.getScheme() + "://" + host)) {
+        if ("https".equalsIgnoreCase(scheme)
+                && APP_ORIGIN.equalsIgnoreCase(uri.getScheme() + "://" + host)) {
             return false;
         }
 
