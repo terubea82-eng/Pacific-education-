@@ -6,10 +6,12 @@ const fs = require("fs");
 const evidencePath = process.argv[2] || "automation/stage-completion.json";
 const configPath = process.argv[3] || "automation/stage-allowlist.json";
 const requirementsPath = process.argv[4] || "automation/stage-evidence-requirements.json";
+const mappingPath = process.argv[5] || "automation/STAGE_20_EVIDENCE_MAPPING.md";
 
 const evidence = JSON.parse(fs.readFileSync(evidencePath, "utf8"));
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const requirements = JSON.parse(fs.readFileSync(requirementsPath, "utf8"));
+const mapping = evidence.stage === 20 ? fs.readFileSync(mappingPath, "utf8") : "";
 
 function fail(reason, extra = {}) {
   console.log(JSON.stringify({ eligible: false, reason, ...extra }));
@@ -32,6 +34,12 @@ if (!Array.isArray(evidence.evidence) || evidence.evidence.length === 0) {
 }
 
 const requiredEvidence = stageRequirements.requiredEvidence || [];
+if (evidence.stage === 20) {
+  if (!mapping.trim()) fail("stage_20_evidence_mapping_missing");
+  for (const requirement of requiredEvidence) {
+    if (!mapping.includes(requirement)) fail("stage_20_evidence_mapping_incomplete", { missingRequirement: requirement });
+  }
+}
 const evidenceRecords = evidence.evidence.filter(item => item && typeof item === "object");
 if (evidenceRecords.length !== evidence.evidence.length) fail("invalid_evidence_record");
 if (requiredEvidence.length === 0) fail("stage_has_no_required_evidence");
