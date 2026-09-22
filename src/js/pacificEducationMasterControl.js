@@ -799,10 +799,11 @@
      * =======================================================
      *
      * The pilot end date may be evaluated automatically, but the browser
-     * can never promote itself to production. Automatic production approval
-     * is allowed only when every required production condition is verified
-     * AND an authorized server-side production authority confirms approval.
-     * Client/localStorage evidence alone can never satisfy that authority.
+     * can never promote itself to production. The browser may report the
+     * state of the pilot window, but production approval is NEVER a client
+     * decision. An authorized server-side production authority must make
+     * the production decision after all required conditions are independently
+     * verified. Client/localStorage evidence alone can never satisfy that authority.
      */
 
     var PILOT_CONFIG = global.PacificEducationPilotConfig || {};
@@ -817,7 +818,7 @@
         maximumDurationMonths: PILOT_CONFIG.maximumDurationMonths || 3,
         maximumEndDate: PILOT_CONFIG.maximumEndDate || "2026-12-21",
         automaticPilotClose: PILOT_CONFIG.automaticPilotClose !== false,
-        automaticProductionDecision: PILOT_CONFIG.automaticProductionDecision !== false,
+        automaticProductionDecision: false,
         productionApprovalRequiresServerAuthority: true,
         failClosed: true
     });
@@ -878,6 +879,11 @@
             guardianReady &&
             serverAuthorized;
         var decision = approved ? "PRODUCTION_APPROVED" : "BLOCKED";
+
+        /* Production approval is intentionally never derived from a browser flag. */
+        if (serverDecision && serverDecision.approved === true) {
+            serverDecision = serverDecision;
+        }
 
         return Object.freeze({
             pilotStart: PILOT_TRANSITION.startDate,
