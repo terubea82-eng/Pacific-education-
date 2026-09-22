@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "automation/stage-completion.json"
+      - "automation/stage-allowlist.json"
       - "automation/pacificGuardianStageWriteCheck.js"
       - "PACIFIC_GUARDIAN_AUTOMATED_STAGE_WRITE_POLICY.md"
 
@@ -26,14 +27,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          result="$(node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json)"
+          result="$(node automation/pacificGuardianStageWriteCheck.js automation/stage-completion.json automation/stage-allowlist.json)"
           echo "$result"
           eligible="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(String(x.eligible))' "$result")"
           stage="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(String(x.stage ?? ""))' "$result")"
           class="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(String(x.changeClass ?? ""))' "$result")"
+          action="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(String(x.action ?? ""))' "$result")"
           echo "eligible=$eligible" >> "$GITHUB_OUTPUT"
           echo "stage=$stage" >> "$GITHUB_OUTPUT"
           echo "change_class=$class" >> "$GITHUB_OUTPUT"
+          echo "action=$action" >> "$GITHUB_OUTPUT"
 
       - name: Stop safely when the stage is not completed
         if: steps.gate.outputs.eligible != 'true'
@@ -61,15 +64,46 @@ jobs:
           The record is generated only after the repository's stage-completion gate passes.
           EOF
 
+      - name: Prepare Class B review-required record
+        if: steps.gate.outputs.eligible == 'true' && steps.gate.outputs.change_class == 'B'
+        env:
+          STAGE: ${{ steps.gate.outputs.stage }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p automation/generated
+          cat > "automation/generated/STAGE_${STAGE}_GUARDIAN_REVIEW_REQUIRED.md" <<EOF
+          # Pacific Guardian Stage ${STAGE} Review Required
+
+          The stage-specific completion gate passed, but this stage is classified as review-required.
+
+          - Stage: ${STAGE}
+          - Change class: B
+          - Automatic merge: NOT PERMITTED
+          - Production authorization: NOT GRANTED
+          - Legal/Ministry approval: NOT GRANTED
+          - Production deployment: NOT PERFORMED
+
+          A qualified reviewer must review the proposed change before merge or deployment.
+          EOF
+
+      - name: Stop Class C before repository content write
+        if: steps.gate.outputs.eligible == 'true' && steps.gate.outputs.change_class == 'C'
+        run: |
+          echo "CLASS C PROTECTED STAGE — no autonomous repository content write or deployment is permitted."
+          echo "Human/specialist review and authorized production controls remain required."
+
       - name: Validate generated change
-        if: steps.gate.outputs.eligible == 'true'
+        if: steps.gate.outputs.eligible == 'true' && steps.gate.outputs.change_class != 'C'
         run: |
           set -euo pipefail
           node --check automation/pacificGuardianStageWriteCheck.js
-          test -f automation/stage-completion.json
+          node -e 'JSON.parse(require("fs").readFileSync("automation/stage-completion.json","utf8")); JSON.parse(require("fs").readFileSync("automation/stage-allowlist.json","utf8"))'
+          test -d automation/generated
+          test "$(find automation/generated -type f | wc -l)" -gt 0
 
-      - name: Open review pull request
-        if: steps.gate.outputs.eligible == 'true'
+      - name: Open review pull request for Class A or B
+        if: steps.gate.outputs.eligible == 'true' && (steps.gate.outputs.change_class == 'A' || steps.gate.outputs.change_class == 'B')
         env:
           GH_TOKEN: ${{ github.token }}
           STAGE: ${{ steps.gate.outputs.stage }}
@@ -82,6 +116,6 @@ jobs:
           git config user.name "Pacific Guardian Automation"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add automation/generated/
-          git commit -m "Pacific Guardian: record completed Stage ${STAGE}"
+          git commit -m "Pacific Guardian: prepare completed Stage ${STAGE} review record"
           git push --set-upstream origin "$branch"
-          gh pr create             --base main             --head "$branch"             --title "Pacific Guardian: completed Stage ${STAGE} controlled write"             --body "Automated Class ${CLASS} stage write. Required evidence passed the fail-closed gate. This PR does not grant production approval, legal compliance, Ministry approval, or production deployment."
+          gh pr create             --base main             --head "$branch"             --title "Pacific Guardian: Stage ${STAGE} controlled review"             --body "Automated Class ${CLASS} stage evidence passed the fail-closed gate. This PR is review-controlled and does not grant production approval, legal compliance, Ministry approval, or production deployment."
