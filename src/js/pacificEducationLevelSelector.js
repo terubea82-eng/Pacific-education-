@@ -56,6 +56,7 @@
         if (window.PacificEducationCurriculumLessonRenderer &&
             typeof window.PacificEducationCurriculumLessonRenderer.refresh === "function") {
             window.PacificEducationCurriculumLessonRenderer.refresh();
+            if (window.PacificEducationExpandedSubjectActivityUI && typeof window.PacificEducationExpandedSubjectActivityUI.render === "function") window.PacificEducationExpandedSubjectActivityUI.render();
         } else if (typeof window.displayDailyLesson === "function") {
             window.displayDailyLesson();
         }
