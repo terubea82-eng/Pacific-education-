@@ -147,6 +147,7 @@
         var status = document.getElementById("pacificEducationSubjectStatus");
         if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
         refreshLesson();
+        if (window.PacificEducationExpandedSubjectActivityUI && typeof window.PacificEducationExpandedSubjectActivityUI.render === "function") window.PacificEducationExpandedSubjectActivityUI.render();
         return true;
     }
     function createUI() {
