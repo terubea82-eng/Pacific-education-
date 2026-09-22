@@ -16,6 +16,14 @@ The initial pilot term is one month. **If a genuine need arises, the owner may e
 - **Official curriculum authority:** Fiji Ministry of Education prescriptions and achievement indicators
 - **Owner control:** Pacific Education remains owner-controlled
 
+## Current legal, policy and curriculum status
+
+Pacific Education is **not represented as legally compliant, Ministry-approved, or production-ready** by this repository. Before production, the owner must obtain appropriate Fiji legal/privacy, child-safeguarding, cybersecurity, accessibility and education-sector advice and verify the laws, regulations, policies and contracts applicable at the time of launch.
+
+Fiji's current policy environment is changing: Government endorsed a National Privacy and Personal Data Protection Policy in 2025 as a foundation for proposed privacy legislation, and the Education Act and education system are under review. The Fiji National Curriculum Framework is also under review. Pacific Education therefore uses versioned source verification rather than treating any single curriculum or legal document as permanently current.
+
+The prototype also remains subject to Fiji's Online Safety Act 2018 and applicable child-safety requirements. This README does not provide legal advice or certify compliance.
+
 ## Pilot safeguards
 
 The pilot must not be represented as a production-ready education platform. Production release remains fail-closed until required external work is completed, including secure authentication, server-side database and hosting controls, payment verification, cybersecurity review, privacy compliance, child safeguarding, accessibility/device testing, official curriculum source validation, controlled user testing, and authorized independent review.
