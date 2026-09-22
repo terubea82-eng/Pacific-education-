@@ -162,7 +162,7 @@
         select.addEventListener("change",function(){setSubject(select.value);});
         host.appendChild(label); host.appendChild(document.createElement("br")); host.appendChild(select); host.appendChild(status); return true;
     }
-    function getSelection(){return {level:getLevel(),subjectId:getSubject(),prototype:true,curriculumVerification:"required-before-production"};}
+    function getSelection(){return {level:getLevel(),subjectId:getSubject(),prototype:true,curriculumVerification:"required-before-production",curriculumVerificationRequired:true,form1To7ScienceHealthCatalog:!!window.PacificEducationForm1To7ScienceHealth};}
     function initialise(){createUI(); return getSelection();}
     window.PacificEducationSubjectSelector=Object.freeze({version:VERSION,subjects:SUBJECTS.map(function(item){return Object.assign({},item);}),getSubject:getSubject,setSubject:setSubject,getSelection:getSelection,createUI:createUI,initialise:initialise});
     if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",initialise); else initialise();
