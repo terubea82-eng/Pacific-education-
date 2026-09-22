@@ -9,7 +9,7 @@
  */
 (function(window) {
     "use strict";
-    var VERSION = "1.2.0";
+    var VERSION = "1.3.0";
     var SUBJECTS = [
     {
         "id": "English",
@@ -154,7 +154,7 @@
         var host = document.getElementById("pacificEducationSubjectSelector");
         if (!host) return false;
         host.innerHTML = "";
-        var label = document.createElement("label"); label.setAttribute("for","pacificEducationSubject"); label.textContent = "Curriculum Subject";
+        var label = document.createElement("label"); label.setAttribute("for","pacificEducationSubject"); label.textContent = "Choose curriculum subject";
         var select = document.createElement("select"); select.id="pacificEducationSubject"; select.name="pacificEducationSubject"; select.setAttribute("aria-label","Curriculum subject");
         SUBJECTS.forEach(function(subject){var option=document.createElement("option"); option.value=subject.id; option.textContent=subject.name; select.appendChild(option);});
         select.value=getSubject();
