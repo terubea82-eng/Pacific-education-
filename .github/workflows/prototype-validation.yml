@@ -168,4 +168,6 @@ jobs:
 
       - name: Validate need-based optional extension policy
         run: |
-          node -e 'const a=require("./automation/stage-allowlist.json"); const p=a.extensionPolicy; if(!p || p.requiredAfterStage30!==false || p.defaultDecision!=="NO_EXTENSION_REQUIRED" || p.noAutomaticTimeBasedExtension!==true || p.activateOnlyRelevantStages!==true) throw new Error("Invalid extension policy"); console.log("Stages 31-36 optional extension policy: PASS");'
+          set -euo pipefail
+          test -f automation/extension-need-assessment.json
+          node -e 'const fs=require("fs"); const a=JSON.parse(fs.readFileSync("automation/stage-allowlist.json","utf8")); const p=a.extensionPolicy; const n=JSON.parse(fs.readFileSync("automation/extension-need-assessment.json","utf8")); if(!p || p.requiredAfterStage30!==false || p.defaultDecision!=="NO_EXTENSION_REQUIRED" || p.noAutomaticTimeBasedExtension!==true || p.activateOnlyRelevantStages!==true) throw new Error("Invalid extension policy"); if(n.defaultDecision!=="NO_EXTENSION_REQUIRED" || !n.prohibitedTrigger.includes("Time elapsed alone")) throw new Error("Invalid need-assessment policy"); for(let i=31;i<=36;i++){const s=a.stages[String(i)]; if(!s) throw new Error("missing extension stage "+i); if(s.autoWrite!==false) throw new Error("extension stage "+i+" must remain review-controlled");} if(a.stages["30"].nextStage!==null) throw new Error("Stage 30 must not auto-chain to an extension"); console.log("Stages 31-36 optional, need-based extension policy: PASS");'
