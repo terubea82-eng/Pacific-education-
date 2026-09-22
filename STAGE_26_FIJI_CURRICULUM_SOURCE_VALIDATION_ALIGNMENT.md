@@ -2,7 +2,9 @@
 
 ## Status
 
-**Stage 26 architecture contract: DEFINED — official-source verification, curriculum mapping and independent review required.**
+**Stage 26 architecture contract: DEFINED — official-source verification, curriculum mapping, version control and authorized review required.**
+
+**Important current-context correction:** Fiji's National Curriculum Framework is under review. Therefore Pacific Education must not hard-code the assumption that one framework/version will remain the permanent authority. The production curriculum registry must identify the applicable current official source/version and its status at the time each curriculum mapping is approved.
 
 ## 1. Curriculum authority
 
@@ -107,8 +109,24 @@ Stage 26 should not be marked implementation-complete until evidence exists for:
 - Independent or authorized curriculum review completed
 - Unsupported official-status claims removed or corrected
 
-## 10. Release boundary
+## 10. Curriculum change control
 
-Stage 26 does not authorize production publication.
+Because the Fiji National Curriculum Framework and related education policy are subject to review and change, production must support:
+
+- Source/version status
+- Effective and superseded dates where available
+- Verification date
+- Responsible reviewer
+- Mapping version
+- Impact assessment when an official source changes
+- Revalidation of affected lessons and assessments
+- Withdrawal or replacement of obsolete mappings
+- Clear separation between official source text and Pacific Education instructional interpretation
+
+A curriculum mapping must never be labelled "official" merely because it was created inside Pacific Education.
+
+## 11. Release boundary
+
+Stage 26 does not authorize production publication. Production curriculum claims require current-source verification and the applicable authorized review.
 
 Production curriculum content must remain subject to official-source verification and authorized review before being represented as aligned to Fiji's official curriculum.
