@@ -224,5 +224,21 @@
       "nextStage": null
     }
   },
-  "integrationRule": "The implementationSpec is the practical stage build target. The contract remains the architecture/governance reference. A stage cannot be considered connected until its implementationSpec exists and its evidence contract, reviewer and next-stage dependency agree."
+  "integrationRule": "The implementationSpec is the practical stage build target. The contract remains the architecture/governance reference. A stage cannot be considered connected until its implementationSpec exists and its evidence contract, reviewer and next-stage dependency agree.",
+  "extensionPolicy": {
+    "mode": "need-based",
+    "requiredAfterStage30": false,
+    "defaultDecision": "NO_EXTENSION_REQUIRED",
+    "activationConditions": [
+      "objective need",
+      "material change",
+      "incident",
+      "risk",
+      "review finding",
+      "new requirement",
+      "owner-approved ongoing governance cycle"
+    ],
+    "activateOnlyRelevantStages": true,
+    "noAutomaticTimeBasedExtension": true
+  }
 }
