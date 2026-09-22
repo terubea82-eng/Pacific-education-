@@ -32,11 +32,10 @@ jobs:
             "platforms;android-36" \
             "build-tools;36.0.0"
 
-      - name: Download Gradle 9.6
-        run: |
-          curl -fsSL https://services.gradle.org/distributions/gradle-9.6-bin.zip -o /tmp/gradle.zip
-          sudo unzip -q /tmp/gradle.zip -d /opt
-          echo "/opt/gradle-9.6/bin" >> "$GITHUB_PATH"
+      - name: Set up Gradle 9.6
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "9.6"
 
       - name: Verify Gradle
         working-directory: android
