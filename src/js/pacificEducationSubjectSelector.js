@@ -7,7 +7,8 @@
  *
  * PROTOTYPE/PILOT ONLY. Subject names and prototype activities are
  * planning/testing categories until verified against authoritative
- * Fiji curriculum sources.
+ * Fiji curriculum sources. They must not be presented as official
+ * curriculum prescriptions or achievement indicators.
  */
 (function(window) {
     "use strict";
@@ -122,6 +123,7 @@
             level: getLevel(),
             subjectId: getSubject(),
             prototype: true,
+            curriculumVerificationRequired: true,
             form1To7ScienceHealthCatalog:
                 !!window.PacificEducationForm1To7ScienceHealth
         };
