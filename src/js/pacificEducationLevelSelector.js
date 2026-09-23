@@ -14,13 +14,15 @@
     var VERSION = "1.1.0";
 
     var LEVELS = [
-        "Class 1","Class 2","Class 3","Class 4","Class 5","Class 6",
-        "Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"
+        "Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"
     ];
 
     function getStoredLevel() {
         var value = window.localStorage.getItem("pacificEducationLevel");
-        return LEVELS.indexOf(value) !== -1 ? value : "Class 1";
+        if (LEVELS.indexOf(value) !== -1) return value;
+        var legacy = {"Form 1":"Class 7","Form 2":"Class 8","Form 3":"Class 9","Form 4":"Class 10","Form 5":"Class 11","Form 6":"Class 12","Form 7":"Class 13"};
+        if (legacy[value]) { window.localStorage.setItem("pacificEducationLevel", legacy[value]); return legacy[value]; }
+        return "Class 1";
     }
 
     function setLevel(level) {
