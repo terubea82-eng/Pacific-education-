@@ -1,6 +1,6 @@
 /*
  * Pacific Education
- * Expanded Form 1-7 Pilot Activity UI
+ * Expanded Class 7–13 (Form 1–7) Pilot Activity UI
  * Version 1.0.0
  *
  * Teacher-testing interface for the expanded subject catalog.
@@ -23,7 +23,7 @@
     }
 
     function isExpanded(level){
-        return /^Form [1-7]$/.test(level);
+        return /^Class (?:[7-9]|1[0-3])$/.test(level);
     }
 
     function getIndex(){
@@ -46,13 +46,13 @@
 
         var s=selection();
         if(!isExpanded(s.level)){
-            host.innerHTML="<h2>Form 1–7 Pilot Activities</h2><p>Select Form 1–7 to use the expanded subject activity catalog. Class 1–6 continue using the existing learning flow.</p>";
+            host.innerHTML="<h2>Class 7–13 (Form 1–7) Pilot Activities</h2><p>Select Class 7–13 (Form 1–7) to use the expanded subject activity catalog. Class 1–6 continue using the existing learning flow.</p>";
             return true;
         }
 
         var records=c.list({level:s.level,subjectId:s.subjectId});
         if(!records.length){
-            host.innerHTML="<h2>Form 1–7 Pilot Activities</h2><p>No expanded pilot activity is currently listed for this selection.</p>";
+            host.innerHTML="<h2>Class 7–13 (Form 1–7) Pilot Activities</h2><p>No expanded pilot activity is currently listed for this selection.</p>";
             return true;
         }
 
