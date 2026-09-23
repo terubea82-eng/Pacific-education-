@@ -3,7 +3,7 @@
  * Expanded Subject Curriculum Mapping Queue
  * Version 1.0.0
  *
- * Creates a transparent verification queue for every Form 1-7
+ * Creates a transparent verification queue for every Class 7-13 (Form 1-7)
  * expanded pilot activity. It does NOT claim official alignment.
  */
 (function(window){
