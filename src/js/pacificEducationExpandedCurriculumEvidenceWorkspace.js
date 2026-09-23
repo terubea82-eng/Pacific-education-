@@ -4,7 +4,7 @@
  * PROTOTYPE ONLY.
  *
  * Allows an authorized reviewer to enter authoritative Fiji curriculum
- * source evidence against a Class 7–13 (Form 1–7) pilot activity. This workspace never
+ * source evidence against a Class 7–13 (Class 7–13 (Form 1–7)) pilot activity. This workspace never
  * invents evidence and never grants curriculum or production approval.
  */
 (function(window){
@@ -240,7 +240,7 @@
         });
 
         host.innerHTML =
-            '<h2>Curriculum Evidence Entry — Class 7–13 (Form 1–7)</h2>' +
+            '<h2>Curriculum Evidence Entry — Class 7–13 (Class 7–13 (Form 1–7))</h2>' +
             '<p><strong>PILOT PROTOTYPE — OFFICIAL CURRICULUM VERIFICATION REQUIRED.</strong> Enter only evidence taken from an authoritative Fiji curriculum source. This workspace does not invent, certify, approve, or publish curriculum alignment.</p>' +
             '<label>Activity <select id="pecewActivity"></select></label>' +
             '<div id="pecewActivityInfo" style="margin:10px 0;"></div>' +
