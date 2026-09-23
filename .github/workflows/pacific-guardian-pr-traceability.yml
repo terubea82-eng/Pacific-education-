@@ -1,0 +1,67 @@
+name: Pacific Guardian PR Traceability
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "src/**"
+      - "js/**"
+      - "owner/**"
+      - "android/**"
+      - "app/**"
+      - "automation/**"
+      - ".github/workflows/**"
+      - "STAGE_*"
+      - "PRODUCTION_*"
+      - "PACIFIC_EDUCATION_MASTER*"
+      - "PACIFIC_GUARDIAN*"
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  traceability:
+    name: mandatory-traceability
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Inspect changed files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --name-only "$BASE_SHA" "$HEAD_SHA" | tee /tmp/changed-files.txt
+
+      - name: Require Pacific Guardian traceability policy
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f PACIFIC_GUARDIAN_MANDATORY_CHANGE_TRACEABILITY_POLICY.md
+          test -f automation/pacificGuardianChangeAudit.js
+          test -f automation/pacificGuardianStageWriteCheck.js
+
+      - name: Validate architecture traceability
+        shell: bash
+        run: |
+          set -euo pipefail
+          changed="$(cat /tmp/changed-files.txt)"
+          if echo "$changed" | grep -Eq '^(src/|js/|owner/|android/|app/)'; then
+            echo "Application change detected."
+            echo "Pacific Guardian mandatory traceability applies."
+          fi
+          if echo "$changed" | grep -Eq '^(automation/|\.github/workflows/|STAGE_|PRODUCTION_|PACIFIC_EDUCATION_MASTER|PACIFIC_GUARDIAN)'; then
+            echo "Architecture/governance change detected."
+            echo "Pacific Guardian traceability applies."
+          fi
+          node --check automation/pacificGuardianChangeAudit.js
+          node --check automation/pacificGuardianStageWriteCheck.js
+
+      - name: Traceability gate passed
+        run: echo "Pacific Guardian traceability gate PASSED for this pull request. Merge remains subject to the repository ruleset and all applicable specialist/owner approvals."
