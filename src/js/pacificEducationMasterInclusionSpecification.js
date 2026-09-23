@@ -121,13 +121,7 @@
             "Class 4",
             "Class 5",
             "Class 6",
-            "Form 1",
-            "Form 2",
-            "Form 3",
-            "Form 4",
-            "Form 5",
-            "Form 6",
-            "Form 7"
+            "Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"
         ]),
 
         earlyLearningProgramme:
