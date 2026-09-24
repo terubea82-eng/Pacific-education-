@@ -1,23 +1,23 @@
-import json
-import pathlib
 import subprocess
-import tempfile
+import sys
+from pathlib import Path
 
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "automation" / "production_release_gate.py"
 
-def run(payload):
-    with tempfile.TemporaryDirectory() as td:
-        p = pathlib.Path(td) / "production-authorization.json"
-        p.write_text(json.dumps(payload), encoding="utf-8")
-        # The production gate reads the repository release file, so this test
-        # verifies the source script syntax separately rather than mutating repo state.
-    return subprocess.run(["python3", "-m", "py_compile", str(SCRIPT)], capture_output=True, text=True)
-
-def test_gate_script_compiles():
-    result = run({})
-    assert result.returncode == 0, result.stderr
+def test_current_release_record_is_fail_closed():
+    result = subprocess.run(
+        [sys.executable, str(SCRIPT)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode != 0, "Gate unexpectedly passed while production authorization is incomplete"
+    output = result.stdout + result.stderr
+    assert "BLOCKED" in output
+    assert "FAIL-CLOSED" in output
+    assert "owner_approval_recorded" in output
 
 if __name__ == "__main__":
-    test_gate_script_compiles()
-    print("production release gate test: PASS")
+    test_current_release_record_is_fail_closed()
+    print("production release gate fail-closed test: PASS")
