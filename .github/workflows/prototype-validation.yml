@@ -124,8 +124,7 @@ jobs:
               for n,line in enumerate(p.read_text(encoding="utf-8",errors="ignore").splitlines(),1):
                   if pattern.search(line): findings.append(f"{p}:{n}: {line.strip()}")
           if findings:
-              print("
-".join(findings)); sys.exit(1)
+              print("\n".join(findings)); sys.exit(1)
           print("Prototype runtime external-network scan passed.")
           PY
 
