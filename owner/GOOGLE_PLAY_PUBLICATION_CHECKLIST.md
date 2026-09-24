@@ -12,6 +12,7 @@ Updated: 2026-09-24
 - [x] GitHub Pages deployment passed.
 - [x] Pacific Guardian mandatory audit passed.
 - [ ] Signed AAB: requires repository signing secrets to be configured.
+- [x] Native Android pilot home + offline Day 1 lesson added to reduce WebView-only dependence; Families-policy review still required.
 
 ## GitHub signing setup — owner action required
 Create these repository Actions secrets:
@@ -26,6 +27,11 @@ After the secrets exist:
 1. Run .github/workflows/android-release-signed.yml manually.
 2. Confirm the signed AAB artifact is produced.
 3. Verify the artifact corresponds to versionCode 3 / versionName 1.0.2-pilot.
+
+## Current release state
+- Android package: `fj.pacificeducation.app`
+- Current pilot release: versionCode 3 / versionName `1.0.2-pilot`
+- Unsigned validation AAB can be built by CI; Play distribution requires a properly signed AAB.
 
 ## Google Play Console
 1. Create/confirm the Pacific Education app entry.
