@@ -56,6 +56,10 @@ jobs:
             echo "Application change detected."
             echo "Pacific Guardian mandatory traceability applies."
           fi
+          if echo "$changed" | grep -Eq '^(automation/|\.github/workflows/|STAGE_|PRODUCTION_|PACIFIC_EDUCATION_MASTER|PACIFIC_GUARDIAN|release/)'; then
+            echo "Release/architecture/governance change detected."
+            echo "Pacific Guardian mandatory traceability applies."
+          fi
           if echo "$changed" | grep -Eq '^(automation/|\.github/workflows/|STAGE_|PRODUCTION_|PACIFIC_EDUCATION_MASTER|PACIFIC_GUARDIAN)'; then
             echo "Architecture/governance change detected."
             echo "Pacific Guardian traceability applies."
