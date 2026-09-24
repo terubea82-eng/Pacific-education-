@@ -37,3 +37,9 @@ This record does **not** constitute Google Play approval or legal/privacy approv
 ## Fail-closed rule
 
 No signed pilot artifact or Play Console submission is treated as proof of production readiness. Production approval remains owner-controlled and evidence-based.
+
+## 2026-09-24 — Android Play preflight automation
+
+7. Added `automation/android_play_preflight.py` to statically verify the Android release candidate's package/version/target SDK, release hardening, manifest permissions, cleartext-network prohibition, and privacy-policy presence.
+8. Added `.github/workflows/android-play-preflight.yml` so these checks run automatically on Android/privacy-policy changes or manually before release work.
+9. The preflight is intentionally a static engineering check; it does not claim Google Play approval, legal/privacy approval, or production readiness.
