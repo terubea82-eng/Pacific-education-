@@ -53,12 +53,29 @@ jobs:
         working-directory: android
         run: gradle --no-daemon bundleRelease
 
+      - name: Create pilot checksums
+        run: |
+          mkdir -p pilot-artifacts
+          cp android/app/build/outputs/apk/debug/app-debug.apk pilot-artifacts/pacific-education-debug.apk
+          cp android/app/build/outputs/apk/release/app-release-unsigned.apk pilot-artifacts/pacific-education-release-unsigned.apk
+          cp android/app/build/outputs/bundle/release/app-release.aab pilot-artifacts/pacific-education-release-unsigned.aab
+          sha256sum pilot-artifacts/* > pilot-artifacts/SHA256SUMS.txt
+
+      - name: Upload pilot package
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacific-education-100-user-pilot
+          path: pilot-artifacts/*
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
           name: pacific-education-debug-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
+          retention-days: 30
 
       - name: Upload unsigned release APK
         uses: actions/upload-artifact@v4
@@ -66,6 +83,7 @@ jobs:
           name: pacific-education-release-apk-unsigned
           path: android/app/build/outputs/apk/release/app-release-unsigned.apk
           if-no-files-found: error
+          retention-days: 30
 
       - name: Upload unsigned release AAB
         uses: actions/upload-artifact@v4
@@ -73,3 +91,4 @@ jobs:
           name: pacific-education-release-aab-unsigned
           path: android/app/build/outputs/bundle/release/app-release.aab
           if-no-files-found: error
+          retention-days: 30
