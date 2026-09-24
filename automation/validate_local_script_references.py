@@ -13,7 +13,7 @@ EXCLUDED_HTML = {
     ROOT / "src/pacificEducationCentralBridgeFailureRecoveryTestRunner.html",
 }
 EXCLUDED_SUFFIXES = ("Test.html", "TestRunner.html", "BrokenLineTest.html", "TestPage.html")
-SCRIPT_RE = re.compile(r'<script\\b[^>]+src=["\']([^"\']+)["\']', re.IGNORECASE)
+SCRIPT_RE = re.compile(r'<script\b[^>]+src=["\']([^"\']+)["\']', re.IGNORECASE)
 
 missing = []
 checked_files = 0
