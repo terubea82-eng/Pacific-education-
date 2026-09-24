@@ -1,0 +1,29 @@
+name: Production Release Gate Tests
+
+on:
+  push:
+    paths:
+      - "automation/production_release_gate.py"
+      - "automation/test_production_release_gate.py"
+      - "release/production-authorization.json"
+      - ".github/workflows/production-release-gate-tests.yml"
+  pull_request:
+    paths:
+      - "automation/production_release_gate.py"
+      - "automation/test_production_release_gate.py"
+      - "release/production-authorization.json"
+      - ".github/workflows/production-release-gate-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: verify-fail-closed-release-control
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fail-closed authorization test
+        run: python3 automation/test_production_release_gate.py
+      - name: Compile release gate
+        run: python3 -m py_compile automation/production_release_gate.py
