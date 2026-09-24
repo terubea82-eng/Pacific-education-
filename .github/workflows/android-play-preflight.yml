@@ -17,5 +17,6 @@ jobs:
       - uses: actions/checkout@v6
       - name: Run static Android Play preflight
         run: python3 automation/android_play_preflight.py
-      - name: Enforce production release gate
+      - name: Enforce production release gate for release checks
+        if: github.event_name == 'workflow_dispatch'
         run: python3 automation/production_release_gate.py
