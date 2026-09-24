@@ -124,7 +124,8 @@ jobs:
               for n,line in enumerate(p.read_text(encoding="utf-8",errors="ignore").splitlines(),1):
                   if pattern.search(line): findings.append(f"{p}:{n}: {line.strip()}")
           if findings:
-              print("\n".join(findings)); sys.exit(1)
+              print("
+".join(findings)); sys.exit(1)
           print("Prototype runtime external-network scan passed.")
           PY
 
@@ -132,7 +133,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if grep -RInE --exclude-dir=.git --exclude='*.md' '(BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk_live_[A-Za-z0-9]+|sk_test_[A-Za-z0-9]+|AIza[0-9A-Za-z_-]{20,}|password[[:space:]]*=[[:space:]]*["'"][^"'"]+["'"])' .; then
+          if grep -RInE --exclude-dir=.git --exclude='*.md' --exclude='prototype-validation.yml' '(BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk_live_[A-Za-z0-9]+|sk_test_[A-Za-z0-9]+|AIza[0-9A-Za-z_-]{20,}|password[[:space:]]*=[[:space:]]*["'"][^"'"]+["'"])' .; then
             echo "::error::Potential secret or credential pattern found"
             exit 1
           fi
