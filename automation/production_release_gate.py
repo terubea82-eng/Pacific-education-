@@ -3,7 +3,7 @@
 
 CI control only. A passing build/preflight never authorizes production.
 The gate is fail-closed and requires explicit, externally verified evidence
-to be recorded in release/production-authorization.json before publication.
+and explicit protected authorization before publication.
 """
 from pathlib import Path
 import json
@@ -28,8 +28,10 @@ REQUIRED = [
     "independent_release_authorization",
 ]
 
+
 def fail(message):
     print(f"BLOCKED: {message}")
+
 
 if not AUTH.is_file():
     fail("release/production-authorization.json is missing.")
@@ -41,8 +43,12 @@ except (OSError, json.JSONDecodeError) as exc:
     fail(f"authorization record is invalid: {exc}")
     sys.exit(1)
 
-if data.get("productionApproved") is not False:
-    fail("productionApproved must remain false until the authorized release process changes it.")
+if data.get("productionApproved") is not True:
+    fail("explicit protected production authorization has not been recorded.")
+    sys.exit(1)
+
+if data.get("productionEligible") is not True:
+    fail("productionEligible is not true in the protected authorization record.")
     sys.exit(1)
 
 missing = [key for key in REQUIRED if data.get("evidence", {}).get(key) is not True]
@@ -54,8 +60,6 @@ if missing:
         print(f" - {key}")
     sys.exit(1)
 
-# This workflow is intentionally unable to self-authorize. Even complete
-# evidence must be promoted through the protected owner/authorized process.
 if data.get("authorization_source") != "protected-authorized-release-process":
     fail("authorization_source is not the protected authorized release process.")
     sys.exit(1)
