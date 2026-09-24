@@ -17,3 +17,5 @@ jobs:
       - uses: actions/checkout@v6
       - name: Run static Android Play preflight
         run: python3 automation/android_play_preflight.py
+      - name: Enforce production release gate
+        run: python3 automation/production_release_gate.py
