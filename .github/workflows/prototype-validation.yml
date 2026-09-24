@@ -80,12 +80,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if grep -RInE --exclude-dir=.git --exclude='*.md' --exclude='prototype-validation.yml' '(BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk_live_[A-Za-z0-9]+|sk_test_[A-Za-z0-9]+|AIza[0-9A-Za-z_-]{20,}|password[[:space:]]*=[[:space:]]*["'"][^"'"]+["'"])' .; then
-            echo "::error::Potential secret or credential pattern found"
-            exit 1
-          fi
-          echo "No obvious committed secret patterns found."
-
+          python3 automation/scan_obvious_secrets.py
       - name: Validate Pacific Guardian production gate
         shell: bash
         run: |
