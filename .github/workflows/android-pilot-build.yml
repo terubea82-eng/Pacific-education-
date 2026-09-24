@@ -41,14 +41,32 @@ jobs:
         working-directory: android
         run: gradle --version
 
-      - name: Prepare owner signing keystore
+      - name: Validate owner signing keystore secret
         if: ${{ env.PACIFIC_SIGNING_READY == 'true' }}
         env:
           PACIFIC_KEYSTORE_BASE64: ${{ secrets.PACIFIC_KEYSTORE_BASE64 }}
         run: |
-          echo "$PACIFIC_KEYSTORE_BASE64" | base64 --decode > "${RUNNER_TEMP}/pacific-education-release.jks"
+          printf '%s' "$PACIFIC_KEYSTORE_BASE64" | tr -d '[:space:]' > "${RUNNER_TEMP}/pacific-keystore.b64"
+          chars=$(wc -c < "${RUNNER_TEMP}/pacific-keystore.b64")
+          echo "Base64 payload length: ${chars} characters"
+          if [ "$chars" -eq 0 ]; then
+            echo "ERROR: PACIFIC_KEYSTORE_BASE64 is empty."
+            exit 1
+          fi
+          if ! grep -qE '^[A-Za-z0-9+/]*={0,2}$' "${RUNNER_TEMP}/pacific-keystore.b64"; then
+            echo "ERROR: PACIFIC_KEYSTORE_BASE64 contains characters outside the Base64 alphabet."
+            exit 1
+          fi
+          if [ $((chars % 4)) -ne 0 ]; then
+            echo "ERROR: PACIFIC_KEYSTORE_BASE64 length is not a multiple of 4."
+            exit 1
+          fi
+          if ! base64 --decode "${RUNNER_TEMP}/pacific-keystore.b64" > "${RUNNER_TEMP}/pacific-education-release.jks"; then
+            echo "ERROR: PACIFIC_KEYSTORE_BASE64 cannot be decoded."
+            exit 1
+          fi
           test -s "${RUNNER_TEMP}/pacific-education-release.jks"
-
+          echo "Base64 validation and keystore decoding succeeded."
       - name: Build debug APK
         working-directory: android
         run: gradle --no-daemon assembleDebug
