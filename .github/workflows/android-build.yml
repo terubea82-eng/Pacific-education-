@@ -20,5 +20,5 @@ jobs:
         run: test -s android/app/build/outputs/bundle/release/app-release.aab
       - uses: actions/upload-artifact@v4
         with:
-          name: pacific-education-release-unsigned-validation-v1.0.1
+          name: pacific-education-release-unsigned-validation-v1.0.2
           path: android/app/build/outputs/bundle/release/app-release.aab
