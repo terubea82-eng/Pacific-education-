@@ -67,6 +67,7 @@ jobs:
           fi
           test -s "${RUNNER_TEMP}/pacific-education-release.jks"
           echo "Base64 validation and keystore decoding succeeded."
+
       - name: Build debug APK
         working-directory: android
         run: gradle --no-daemon assembleDebug
