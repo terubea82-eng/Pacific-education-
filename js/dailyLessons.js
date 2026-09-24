@@ -121,6 +121,89 @@
 
 
     /* =========================================
+       DAILY LESSONS — DAY 1 TO DAY 60
+       Concrete learner activities are defined for
+       every day before the progressive 64–364 stages.
+       Day 30 remains the Alphabet Assessment gate.
+       Day 60 remains the Phonics Assessment gate.
+    ========================================= */
+
+    const earlyDailyLessons = {
+        1:  ["My First English Words", "Learn and say: hello, goodbye, thank you.", "Say each word aloud three times."],
+        2:  ["Greetings", "Practise: Hello! Good morning! How are you?", "Greet a parent, teacher or friend using a complete sentence."],
+        3:  ["My Name", "Practise: My name is ______.", "Say your name using a complete sentence three times."],
+        4:  ["Family Words", "Learn: mother, father, sister, brother.", "Name four family words and use two in sentences."],
+        5:  ["Colours", "Learn: red, blue, yellow and green.", "Find or point to one object for each colour."],
+        6:  ["Numbers 1–5", "Practise counting from one to five.", "Count five objects around you."],
+        7:  ["Review Week 1", "Review greetings, names, family, colours and numbers.", "Say five English words you learned this week."],
+        8:  ["Numbers 6–10", "Practise counting from six to ten.", "Count ten objects and say the numbers aloud."],
+        9:  ["My Body", "Learn: head, eyes, ears, nose, mouth and hands.", "Point to each body part and say its name."],
+        10: ["Classroom Words", "Learn: book, pencil, bag, desk, chair and teacher.", "Point to five classroom objects and name them."],
+        11: ["School Actions", "Practise: read, write, listen, speak and draw.", "Demonstrate each action while saying the word."],
+        12: ["Simple Instructions", "Practise: stand up, sit down, look, listen and write.", "Follow five instructions correctly."],
+        13: ["Shapes", "Learn: circle, square, triangle and rectangle.", "Find one example of each shape."],
+        14: ["Review Week 2", "Review numbers, body parts, classroom words, actions and shapes.", "Name ten things you remember from Days 8–13."],
+        15: ["My Home", "Learn: house, room, door, window, table and bed.", "Name six things you can see at home."],
+        16: ["Food Words", "Learn: rice, bread, fish, water, fruit and vegetables.", "Name three foods and make simple sentences."],
+        17: ["Animals", "Learn: dog, cat, bird, fish, cow and chicken.", "Name six animals and make one sentence about an animal."],
+        18: ["Weather", "Learn: sunny, rainy, cloudy, windy and hot.", "Describe today's weather using one sentence."],
+        19: ["Clothes", "Learn: shirt, skirt, shorts, dress, shoes and hat.", "Name what you are wearing using three words."],
+        20: ["My Community", "Learn: school, village, road, shop, church and market.", "Name three places in your community."],
+        21: ["Action Words", "Practise: walk, run, jump, sit, stand and clap.", "Say each action word and demonstrate it safely."],
+        22: ["I Can", "Practise: I can walk. I can run. I can read. I can write.", "Make four sentences beginning with “I can”."],
+        23: ["I Like", "Practise: I like rice. I like blue. I like reading.", "Say three things you like."],
+        24: ["I Do Not Like", "Practise: I do not like ______.", "Make two respectful sentences about things you do not like."],
+        25: ["Questions and Answers", "Practise: What is your name? How are you? What do you like?", "Ask and answer three simple questions."],
+        26: ["Sentence Building", "Put words together to make simple sentences.", "Write or say five complete sentences."],
+        27: ["Listening Practice", "Listen to a short instruction or sentence and identify the key words.", "Repeat the instruction or sentence accurately."],
+        28: ["Speaking Review", "Use greetings, family, school, food, animals and action words in conversation.", "Speak for one minute using words learned this month."],
+        29: ["Alphabet Review", "Review the letters A–Z and practise saying their names.", "Say the alphabet aloud and identify five letters."],
+        30: ["Alphabet Assessment", "Complete the mandatory Alphabet Assessment before progressing beyond Day 30.", "Answer all assessment questions. A passed assessment unlocks the next stage."],
+        31: ["Beginning Sounds", "Listen for the beginning sound in simple words.", "Say five words and identify their first sounds."],
+        32: ["Letter and Sound Matching", "Match familiar letters with their common sounds.", "Match ten letters to their sounds."],
+        33: ["Vowels", "Practise the vowels A, E, I, O and U.", "Say the five vowels and find one word for each."],
+        34: ["Short Words", "Read simple two- and three-letter words.", "Read five familiar short words aloud."],
+        35: ["Word Families", "Practise simple word families such as -at, -an and -in.", "Say three words from each of two word families."],
+        36: ["Review Sounds", "Review letters, beginning sounds, vowels and short words.", "Read ten familiar words aloud."],
+        37: ["Simple Nouns", "Identify people, places, animals and things as nouns.", "Name five nouns around you."],
+        38: ["Simple Verbs", "Identify action words such as run, eat, read, write and play.", "Make five sentences using action words."],
+        39: ["Describing Words", "Practise describing words such as big, small, hot, cold and happy.", "Describe five objects or people with one word each."],
+        40: ["This and That", "Practise: This is a book. That is a chair.", "Make four sentences using this and that."],
+        41: ["One and Many", "Practise singular and plural words: book/books, dog/dogs.", "Change five one-word examples into plural forms."],
+        42: ["Review Sentences", "Review nouns, verbs, describing words and simple sentence patterns.", "Say or write five complete sentences."],
+        43: ["Reading Aloud", "Read a short, familiar passage slowly and clearly.", "Read the passage aloud twice."],
+        44: ["Finding Information", "Read a short passage and find names, places or objects in it.", "Answer three questions about what you read."],
+        45: ["Main Idea", "Listen to or read a short passage and identify what it is mainly about.", "Tell a parent or teacher the main idea."],
+        46: ["Sequencing", "Put three simple events in the correct order.", "Tell a short event sequence using first, next and last."],
+        47: ["Story Words", "Learn beginning, middle and ending in a simple story.", "Tell a story with a beginning, middle and ending."],
+        48: ["Reading Review", "Review reading aloud, finding information, main idea and sequencing.", "Read a short passage and answer three questions."],
+        49: ["Writing My Name", "Practise writing your name clearly.", "Write your name three times with correct letter formation."],
+        50: ["Writing Words", "Copy and write familiar words carefully.", "Write ten familiar English words."],
+        51: ["Writing Sentences", "Write simple sentences using a capital letter and full stop.", "Write five complete sentences."],
+        52: ["Capital Letters", "Practise capital letters at the beginning of sentences and names.", "Correct five sentences with missing capital letters."],
+        53: ["Full Stops", "Practise using a full stop at the end of a statement.", "Add full stops to five sentences."],
+        54: ["Writing Review", "Review names, words, sentences, capital letters and full stops.", "Write five sentences and check each one."],
+        55: ["Speaking About Family", "Talk about family using simple complete sentences.", "Say five sentences about family members."],
+        56: ["Speaking About School", "Talk about school, classroom objects and activities.", "Say five sentences about school."],
+        57: ["Speaking About Home", "Talk about home, rooms and familiar objects.", "Say five sentences about home."],
+        58: ["Listening and Responding", "Listen to simple questions and respond with complete sentences.", "Answer five simple questions aloud."],
+        59: ["Monthly Review", "Review vocabulary, sounds, reading, writing, speaking and listening.", "Complete a mixed review of ten short activities."],
+        60: ["Phonics Assessment", "Complete the mandatory Phonics Assessment before progressing beyond Day 60.", "Answer all assessment questions. A passed assessment unlocks the next stage."]
+    };
+
+    Object.keys(earlyDailyLessons).forEach(function (key) {
+        const day = Number(key);
+        const item = earlyDailyLessons[day];
+
+        dailyLessons[day] = {
+            title: item[0],
+            activity: item[1],
+            practice: item[2]
+        };
+    });
+
+
+    /* =========================================
        PROGRESSIVE DAILY LESSONS
        DAY 64 - DAY 364
     ========================================= */
