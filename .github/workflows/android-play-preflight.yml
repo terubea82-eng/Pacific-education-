@@ -1,0 +1,19 @@
+name: Pacific Education Android Play Preflight
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "android/**"
+      - "privacy-policy.html"
+      - "automation/android_play_preflight.py"
+      - ".github/workflows/android-play-preflight.yml"
+
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Run static Android Play preflight
+        run: python3 automation/android_play_preflight.py
