@@ -12,10 +12,10 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Validate JavaScript syntax
         shell: bash
@@ -36,59 +36,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 - <<'PY'
-          from pathlib import Path
-          import re, sys
-
-          root = Path(".").resolve()
-          excluded_html = {
-              root / "src/pacificEducationCountryGdpPricingBrokenLineTest.html",
-              root / "src/src/pacificEducationCountryGdpPricingBrokenLineTest.html",
-              root / "src/pacificEducationCentralBridgeTestRunner.html",
-              root / "src/pacificEducationCentralBridgeFailureRecoveryTest.html",
-              root / "src/pacificEducationCentralBridgeIntegrationTestRunner.html",
-              root / "src/pacificEducationCentralBridgeFailureRecoveryTestRunner.html",
-          }
-          excluded_name_patterns = (
-              "Test.html",
-              "TestRunner.html",
-              "BrokenLineTest.html",
-              "TestPage.html",
-          )
-          missing = []
-          checked_files = 0
-          checked_refs = 0
-
-          for html in sorted(root.rglob("*.html")):
-              if ".git" in html.parts or html in excluded_html or html.name.endswith(excluded_name_patterns):
-                  continue
-              checked_files += 1
-              text = html.read_text(encoding="utf-8", errors="strict")
-              refs = re.findall(r'<script\b[^>]+src=["\']([^"\']+)["\']', text, flags=re.IGNORECASE)
-              for ref in refs:
-                  if "://" in ref or ref.startswith("//") or ref.startswith("data:"):
-                      continue
-                  checked_refs += 1
-                  clean_ref = ref.split("?", 1)[0].split("#", 1)[0]
-                  target = (html.parent / clean_ref).resolve()
-                  try:
-                      target.relative_to(root)
-                  except ValueError:
-                      missing.append((html.relative_to(root), ref, target))
-                      continue
-                  if not target.is_file():
-                      missing.append((html.relative_to(root), ref, target.relative_to(root)))
-
-          if missing:
-              print("Missing or invalid local script references:")
-              for html, ref, target in missing:
-                  print(f"- {html}: {ref} -> {target}")
-              sys.exit(1)
-
-          print(f"Validated {checked_refs} local script references across {checked_files} HTML files.")
-          print("Intentionally broken fixture pages are excluded from this path check.")
-          PY
-
+          python3 automation/validate_local_script_references.py
       - name: Validate required publication records
         shell: bash
         run: |
