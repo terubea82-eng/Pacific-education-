@@ -12,5 +12,6 @@ window.PacificEducationFirebaseConfig = {
   projectId: "REPLACE_ME",
   storageBucket: "REPLACE_ME.firebasestorage.app",
   messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME"
+  appId: "REPLACE_ME",
+  appCheckSiteKey: "REPLACE_ME"
 };
