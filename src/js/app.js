@@ -933,3 +933,90 @@
 
 
 })(window, document);
+
+
+/* Firebase backend bridge: server authority, no secrets in browser. */
+(function () {
+    "use strict";
+    function loadScript(src) {
+        return new Promise(function (resolve, reject) {
+            var script = document.createElement("script");
+            script.src = src; script.async = false;
+            script.onload = resolve; script.onerror = reject;
+            document.head.appendChild(script);
+        });
+    }
+    function status(message) {
+        var el = document.getElementById("pacificEducationBackendStatus");
+        if (el) el.textContent = message;
+    }
+    function installUI() {
+        if (document.getElementById("pacificEducationBackend")) return;
+        var section = document.createElement("section");
+        section.id = "pacificEducationBackend";
+        section.style.cssText = "border:2px solid #444;padding:16px;margin:16px 0;";
+        section.innerHTML =
+            "<h2>Pacific Education Account</h2>" +
+            "<p id='pacificEducationBackendStatus'>Connecting to secure backend...</p>" +
+            "<button type='button' id='pacificEducationGoogleLogin'>Sign in with Google</button>" +
+            "<button type='button' id='pacificEducationGoogleLogout' style='display:none'>Sign out</button>" +
+            "<button type='button' id='pacificEducationOwnerBootstrap' style='display:none'>Activate Owner Control</button>";
+        var app = document.getElementById("app") || document.body;
+        app.insertBefore(section, app.firstChild);
+
+        document.getElementById("pacificEducationGoogleLogin").onclick = async function () {
+            try { await window.PacificEducationFirebaseBackend.signInWithGoogle(); }
+            catch (error) { status("Google sign-in failed: " + (error.message || "unknown error")); }
+        };
+        document.getElementById("pacificEducationGoogleLogout").onclick = async function () {
+            try { await window.PacificEducationFirebaseBackend.signOut(); status("Signed out."); }
+            catch (error) { status("Sign-out failed."); }
+        };
+        document.getElementById("pacificEducationOwnerBootstrap").onclick = async function () {
+            try {
+                await window.PacificEducationFirebaseBackend.bootstrapOwner();
+                status("Owner activation completed. Sign out and sign in again.");
+            } catch (error) { status("Owner activation denied: " + (error.message || "unknown error")); }
+        };
+    }
+    async function start() {
+        installUI();
+        try {
+            await loadScript("js/pacificEducationFirebaseConfig.js");
+            await loadScript("js/pacificEducationFirebaseBackend.js");
+            await window.PacificEducationFirebaseBackend.onAuthStateChanged(async function (user) {
+                var login = document.getElementById("pacificEducationGoogleLogin");
+                var logout = document.getElementById("pacificEducationGoogleLogout");
+                var owner = document.getElementById("pacificEducationOwnerBootstrap");
+                if (!user) {
+                    if (login) login.style.display = "";
+                    if (logout) logout.style.display = "none";
+                    if (owner) owner.style.display = "none";
+                    status("Not signed in.");
+                    return;
+                }
+                if (login) login.style.display = "none";
+                if (logout) logout.style.display = "";
+                if (owner) owner.style.display = "";
+                try {
+                    await window.PacificEducationFirebaseBackend.upsertProfile({
+                        displayName: user.displayName || "",
+                        country: "Fiji"
+                    });
+                    status("Secure backend connected: " + (user.email || "account"));
+                    if (window.PacificEducationApp) {
+                        window.PacificEducationApp.setUser({
+                            id: user.uid, name: user.displayName || "", authorized: true
+                        });
+                    }
+                } catch (error) {
+                    status("Signed in, but backend profile setup failed: " + (error.message || "unknown error"));
+                }
+            });
+        } catch (error) {
+            status("Backend configuration is not installed yet. Add src/js/pacificEducationFirebaseConfig.js.");
+        }
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+    else start();
+})();
