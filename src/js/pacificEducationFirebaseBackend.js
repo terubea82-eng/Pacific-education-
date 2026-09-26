@@ -13,16 +13,23 @@
     readyPromise = Promise.all([
       import("https://www.gstatic.com/firebasejs/" + FIREBASE_VERSION + "/firebase-app.js"),
       import("https://www.gstatic.com/firebasejs/" + FIREBASE_VERSION + "/firebase-auth.js"),
-      import("https://www.gstatic.com/firebasejs/" + FIREBASE_VERSION + "/firebase-functions.js")
-    ]).then(([app, auth, functions]) => {
+      import("https://www.gstatic.com/firebasejs/" + FIREBASE_VERSION + "/firebase-functions.js"),
+      import("https://www.gstatic.com/firebasejs/" + FIREBASE_VERSION + "/firebase-app-check.js")
+    ]).then(([app, auth, functions, appCheck]) => {
       const config = window.PacificEducationFirebaseConfig;
       if (!config || !config.projectId || String(config.projectId).indexOf("REPLACE_ME") === 0) {
         throw new Error("Firebase web configuration is not installed.");
       }
       const firebaseApp = app.initializeApp(config);
       const authClient = auth.getAuth(firebaseApp);
+      if (config.appCheckSiteKey && String(config.appCheckSiteKey).indexOf("REPLACE_ME") !== 0) {
+        appCheck.initializeAppCheck(firebaseApp, {
+          provider: new appCheck.ReCaptchaEnterpriseProvider(config.appCheckSiteKey),
+          isTokenAutoRefreshEnabled: true
+        });
+      }
       const functionsClient = functions.getFunctions(firebaseApp, "australia-southeast1");
-      modules = { app, auth, functions, firebaseApp, authClient, functionsClient };
+      modules = { app, auth, functions, appCheck, firebaseApp, authClient, functionsClient };
       return modules;
     });
     return readyPromise;
