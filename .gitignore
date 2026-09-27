@@ -38,3 +38,5 @@ google-services.json
 *.pkcs12
 key.properties
 release-key.properties
+
+node_modules/
