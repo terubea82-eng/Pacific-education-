@@ -9,7 +9,7 @@
 (function(window){
     "use strict";
     var VERSION="1.1.0";
-    var LEVELS=["Kindergarten","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"];
+    var LEVELS=["Kindergarten","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
     var TERMS=["Term 1","Term 2","Term 3"];
 
     function source(){return window.PacificEducationCurriculumAlignmentImportWorkspace||null;}

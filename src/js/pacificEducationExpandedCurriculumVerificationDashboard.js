@@ -1,6 +1,6 @@
 /* Pacific Education — Expanded Curriculum Verification Dashboard
  * v1.0.0
- * Read-only pilot workspace for Form 1–7 expanded activities.
+ * Read-only pilot workspace for Class 7–13 (Form 1–7) expanded activities.
  * Verification evidence must come from authoritative Fiji curriculum sources.
  */
 (function () {
@@ -58,7 +58,7 @@
       '<div role="note" style="border:2px solid #b36b00;padding:12px;margin:10px 0;">' +
       '<strong>PILOT VERIFICATION WORKSPACE:</strong> No activity is official Fiji curriculum-aligned until authoritative Fiji curriculum evidence is entered and reviewed. This dashboard does not grant production approval.' +
       '</div>' +
-      '<p><strong>Total Form 1–7 pilot activities:</strong> ' + esc(s.total || 0) + '</p>' +
+      '<p><strong>Total Class 7–13 (Form 1–7) pilot activities:</strong> ' + esc(s.total || 0) + '</p>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;">' +
       STATES.map(function (state) {
         return '<span style="border:1px solid #999;border-radius:6px;padding:8px;"><strong>' +

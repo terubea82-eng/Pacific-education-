@@ -1,0 +1,22 @@
+{
+  "schema": "pacific-education-production-authorization/v1",
+  "productionApproved": false,
+  "productionEligible": false,
+  "release_status": "BLOCKED",
+  "authorization_source": "protected-authorized-release-process",
+  "evidence": {
+    "release_packet_generated": false,
+    "curriculum_verified": false,
+    "owner_approval_recorded": false,
+    "database_verified": false,
+    "authentication_verified": false,
+    "hosting_verified": false,
+    "security_reviewed": false,
+    "privacy_reviewed": false,
+    "safeguarding_reviewed": false,
+    "accessibility_reviewed": false,
+    "pilot_user_testing_completed": false,
+    "payments_verified": false,
+    "independent_release_authorization": false
+  }
+}

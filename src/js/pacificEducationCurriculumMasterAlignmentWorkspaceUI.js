@@ -14,7 +14,7 @@
         var s=ws.summary(), rows=ws.list();
         target.innerHTML='<section><h2>Curriculum Master Alignment Workspace</h2>'+
           '<p><strong>Total:</strong> '+s.total+' | <strong>Valid:</strong> '+s.valid+' | <strong>Invalid:</strong> '+s.invalid+' | <strong>Traceable:</strong> '+s.traceable+'</p>'+
-          '<p>Central view for Class 1 → Form 7 alignment records. Imported curriculum remains subject to source verification.</p>'+
+          '<p>Central view for Class 1 → Class 13 (Form 7) alignment records. Imported curriculum remains subject to source verification.</p>'+
           '<div style="overflow:auto"><table><thead><tr><th>Indicator</th><th>Level</th><th>Subject</th><th>Term</th><th>Status</th><th>Source</th><th>Evidence</th><th>Traceable</th></tr></thead><tbody>'+
           (rows.length?rows.map(function(x){
               var t=window.PacificEducationCurriculumEvidenceTraceability&&window.PacificEducationCurriculumEvidenceTraceability.trace?window.PacificEducationCurriculumEvidenceTraceability.trace(x.indicatorId):null;

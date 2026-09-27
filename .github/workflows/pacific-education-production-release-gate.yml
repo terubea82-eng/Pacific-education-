@@ -1,0 +1,33 @@
+name: Pacific Education Production Release Gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "release/**"
+      - "automation/production_release_gate.py"
+      - ".github/workflows/pacific-education-production-release-gate.yml"
+      - "STAGE_*"
+      - "PRODUCTION_*"
+      - "PACIFIC_GUARDIAN*"
+
+permissions:
+  contents: read
+
+jobs:
+  production-release-gate:
+    name: fail-closed-production-release-gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run production authorization gate
+        run: python3 automation/production_release_gate.py
+
+      - name: Explain blocked release state
+        if: failure()
+        run: |
+          echo "Production release is BLOCKED."
+          echo "No CI job may convert prototype evidence into production authorization."
+          echo "An authorized release process must provide the required verified evidence and explicit owner authorization."

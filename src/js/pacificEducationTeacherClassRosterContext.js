@@ -163,8 +163,8 @@
             '<select id="pacificEducationRosterLevel">' +
             '<option value="">Select level</option><option>Class 1</option><option>Class 2</option>' +
             '<option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option>' +
-            '<option>Form 1</option><option>Form 2</option><option>Form 3</option><option>Form 4</option>' +
-            '<option>Form 5</option><option>Form 6</option><option>Form 7</option>' +
+            '<option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option>' +
+            '<option>Class 11</option><option>Class 12</option><option>Class 13</option>' +
             '</select></label> ' +
             '<button type="button" id="pacificEducationCreateClass">Set Class</button>' +
             '<hr>' +
