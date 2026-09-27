@@ -604,6 +604,20 @@ function submitPacificGuardianComment() {
     if (result.accepted) box.value = "";
 }
 </script>
+<section id="pacificEducationFirebaseAuth" aria-labelledby="firebaseAuthHeading">
+<h2 id="firebaseAuthHeading">Pacific Education Account</h2>
+<p>Sign in or create an account for the controlled pilot.</p>
+<label for="firebaseAuthEmail">Email</label>
+<input id="firebaseAuthEmail" type="email" autocomplete="email" required>
+<label for="firebaseAuthPassword">Password</label>
+<input id="firebaseAuthPassword" type="password" autocomplete="current-password" required>
+<div>
+<button type="button" id="firebaseLoginButton">Sign In</button>
+<button type="button" id="firebaseRegisterButton">Create Account</button>
+<button type="button" id="firebaseLogoutButton" hidden>Sign Out</button>
+</div>
+<p id="firebaseAuthStatus" aria-live="polite">Checking account status...</p>
+</section>
 <script type="module" src="js/pacificEducationFirebase.js"></script>
 \n</body>
 </html>

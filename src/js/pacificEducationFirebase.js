@@ -54,3 +54,179 @@ window.PacificEducationFirebase = {
     logoutFirebase,
     observeAuthState
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("firebaseAuthEmail");
+    const passwordInput = document.getElementById("firebaseAuthPassword");
+    const loginButton = document.getElementById("firebaseLoginButton");
+    const registerButton = document.getElementById("firebaseRegisterButton");
+    const logoutButton = document.getElementById("firebaseLogoutButton");
+    const status = document.getElementById("firebaseAuthStatus");
+
+    if (!emailInput || !passwordInput || !loginButton ||
+        !registerButton || !logoutButton || !status) {
+        return;
+    }
+
+    function showStatus(message) {
+        status.textContent = message;
+    }
+
+    function getCredentials() {
+        return {
+            email: emailInput.value.trim(),
+            password: passwordInput.value
+        };
+    }
+
+    registerButton.addEventListener("click", async function () {
+        const credentials = getCredentials();
+
+        if (!credentials.email || !credentials.password) {
+            showStatus("Enter an email address and password.");
+            return;
+        }
+
+        showStatus("Creating account...");
+
+        try {
+            await registerWithEmail(credentials.email, credentials.password);
+            showStatus("Account created and signed in.");
+        } catch (error) {
+            showStatus("Account creation failed: " + (error.code || error.message));
+        }
+    });
+
+    loginButton.addEventListener("click", async function () {
+        const credentials = getCredentials();
+
+        if (!credentials.email || !credentials.password) {
+            showStatus("Enter an email address and password.");
+            return;
+        }
+
+        showStatus("Signing in...");
+
+        try {
+            await loginWithEmail(credentials.email, credentials.password);
+            showStatus("Signed in successfully.");
+        } catch (error) {
+            showStatus("Sign-in failed: " + (error.code || error.message));
+        }
+    });
+
+    logoutButton.addEventListener("click", async function () {
+        showStatus("Signing out...");
+
+        try {
+            await logoutFirebase();
+            showStatus("Signed out.");
+        } catch (error) {
+            showStatus("Sign-out failed: " + (error.code || error.message));
+        }
+    });
+
+    observeAuthState(function (user) {
+        if (user) {
+            emailInput.value = user.email || "";
+            passwordInput.value = "";
+            loginButton.hidden = true;
+            registerButton.hidden = true;
+            logoutButton.hidden = false;
+            showStatus("Signed in: " + (user.email || "account"));
+        } else {
+            loginButton.hidden = false;
+            registerButton.hidden = false;
+            logoutButton.hidden = true;
+            showStatus("Not signed in.");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("firebaseAuthEmail");
+    const passwordInput = document.getElementById("firebaseAuthPassword");
+    const loginButton = document.getElementById("firebaseLoginButton");
+    const registerButton = document.getElementById("firebaseRegisterButton");
+    const logoutButton = document.getElementById("firebaseLogoutButton");
+    const status = document.getElementById("firebaseAuthStatus");
+
+    if (!emailInput || !passwordInput || !loginButton ||
+        !registerButton || !logoutButton || !status) {
+        return;
+    }
+
+    function showStatus(message) {
+        status.textContent = message;
+    }
+
+    function getCredentials() {
+        return {
+            email: emailInput.value.trim(),
+            password: passwordInput.value
+        };
+    }
+
+    registerButton.addEventListener("click", async function () {
+        const credentials = getCredentials();
+
+        if (!credentials.email || !credentials.password) {
+            showStatus("Enter an email address and password.");
+            return;
+        }
+
+        showStatus("Creating account...");
+
+        try {
+            await registerWithEmail(credentials.email, credentials.password);
+            showStatus("Account created and signed in.");
+        } catch (error) {
+            showStatus("Account creation failed: " + (error.code || error.message));
+        }
+    });
+
+    loginButton.addEventListener("click", async function () {
+        const credentials = getCredentials();
+
+        if (!credentials.email || !credentials.password) {
+            showStatus("Enter an email address and password.");
+            return;
+        }
+
+        showStatus("Signing in...");
+
+        try {
+            await loginWithEmail(credentials.email, credentials.password);
+            showStatus("Signed in successfully.");
+        } catch (error) {
+            showStatus("Sign-in failed: " + (error.code || error.message));
+        }
+    });
+
+    logoutButton.addEventListener("click", async function () {
+        showStatus("Signing out...");
+
+        try {
+            await logoutFirebase();
+            showStatus("Signed out.");
+        } catch (error) {
+            showStatus("Sign-out failed: " + (error.code || error.message));
+        }
+    });
+
+    observeAuthState(function (user) {
+        if (user) {
+            emailInput.value = user.email || "";
+            passwordInput.value = "";
+            loginButton.hidden = true;
+            registerButton.hidden = true;
+            logoutButton.hidden = false;
+            showStatus("Signed in: " + (user.email || "account"));
+        } else {
+            loginButton.hidden = false;
+            registerButton.hidden = false;
+            logoutButton.hidden = true;
+            showStatus("Not signed in.");
+        }
+    });
+});
