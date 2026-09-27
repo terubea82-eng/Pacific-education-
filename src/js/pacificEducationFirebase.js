@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             await registerWithEmail(credentials.email, credentials.password);
+            await createOrUpdateUserProfile(auth.currentUser);
             showStatus("Account created and signed in.");
         } catch (error) {
             showStatus("Account creation failed: " + (error.code || error.message));
@@ -109,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             await loginWithEmail(credentials.email, credentials.password);
+            await createOrUpdateUserProfile(auth.currentUser);
             showStatus("Signed in successfully.");
         } catch (error) {
             showStatus("Sign-in failed: " + (error.code || error.message));
@@ -179,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             await registerWithEmail(credentials.email, credentials.password);
+            await createOrUpdateUserProfile(auth.currentUser);
             showStatus("Account created and signed in.");
         } catch (error) {
             showStatus("Account creation failed: " + (error.code || error.message));
@@ -197,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             await loginWithEmail(credentials.email, credentials.password);
+            await createOrUpdateUserProfile(auth.currentUser);
             showStatus("Signed in successfully.");
         } catch (error) {
             showStatus("Sign-in failed: " + (error.code || error.message));
@@ -230,3 +234,46 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+import {
+    getFirestore,
+    doc,
+    setDoc,
+    getDoc,
+    serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+const db = getFirestore(app);
+
+async function createOrUpdateUserProfile(user) {
+    if (!user || !user.uid) {
+        throw new Error("Authenticated user is required.");
+    }
+
+    const userRef = doc(db, "users", user.uid);
+
+    await setDoc(userRef, {
+        uid: user.uid,
+        email: user.email || "",
+        lastSignInAt: serverTimestamp()
+    }, { merge: true });
+
+    return userRef;
+}
+
+async function getUserProfile(user) {
+    if (!user || !user.uid) {
+        throw new Error("Authenticated user is required.");
+    }
+
+    const userRef = doc(db, "users", user.uid);
+    const snapshot = await getDoc(userRef);
+
+    return snapshot.exists() ? snapshot.data() : null;
+}
+
+window.PacificEducationFirebase.createOrUpdateUserProfile =
+    createOrUpdateUserProfile;
+
+window.PacificEducationFirebase.getUserProfile =
+    getUserProfile;
