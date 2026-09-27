@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             await registerWithEmail(credentials.email, credentials.password);
-            await createOrUpdateUserProfile(auth.currentUser); showStatus("Firestore profile write completed.");
+            await createOrUpdateUserProfile(auth.currentUser);
             showStatus("Account created and signed in.");
         } catch (error) {
             showStatus("Account creation failed: " + (error.code || error.message));
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             await loginWithEmail(credentials.email, credentials.password);
-            await createOrUpdateUserProfile(auth.currentUser); showStatus("Firestore profile write completed.");
+            await createOrUpdateUserProfile(auth.currentUser);
             showStatus("Signed in successfully.");
         } catch (error) {
             showStatus("Sign-in failed: " + (error.code || error.message));
