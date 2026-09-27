@@ -5,7 +5,13 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyC8vXzLwsKMfr5MUmXEm2GflW7c-l6a06E",
@@ -21,10 +27,30 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
+async function registerWithEmail(email, password) {
+    return createUserWithEmailAndPassword(auth, email, password);
+}
+
+async function loginWithEmail(email, password) {
+    return signInWithEmailAndPassword(auth, email, password);
+}
+
+async function logoutFirebase() {
+    return signOut(auth);
+}
+
+function observeAuthState(callback) {
+    return onAuthStateChanged(auth, callback);
+}
+
 console.info("Pacific Education Firebase initialized");
 
 window.PacificEducationFirebase = {
-    auth,
     app,
-    analytics
+    analytics,
+    auth,
+    registerWithEmail,
+    loginWithEmail,
+    logoutFirebase,
+    observeAuthState
 };
