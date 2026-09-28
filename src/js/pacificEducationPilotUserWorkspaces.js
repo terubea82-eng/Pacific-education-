@@ -97,13 +97,15 @@
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
-        "<ul>" + role.actions.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul>" +
-        '<button type="button" id="pilotWorkspaceAction">Open demo workspace</button>' +
-        '<div id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:8px;"></div>';
-      document.getElementById("pilotWorkspaceAction").onclick = function () {
-        document.getElementById("pilotWorkspaceStatus").textContent =
-          role.title + " demo workspace opened. Production authentication and role authorization remain separate requirements.";
-      };
+        '<p><strong>Go directly to your tools:</strong></p>' +
+        '<nav aria-label="Role learning tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
+        '<a href="#dailyLesson" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">Daily Lesson</a>' +
+        '<a href="#assessments" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">Assessments</a>' +
+        '<a href="#teacherDashboard" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">Progress Dashboard</a>' +
+        '<a href="#learningPlatform" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">All Learning Tools</a>' +
+        "</nav>" +
+        '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Select a tool above to continue.</p>';
+    };
     }
 
     select.onchange = function () {
