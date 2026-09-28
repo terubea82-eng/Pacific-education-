@@ -159,3 +159,18 @@
         recordCovered: recordCovered
     });
 })(window, document);
+
+/* Pilot integration loader: keeps the world clock automatic and read-only. */
+(function(window, document) {
+    'use strict';
+    function loadWorldClock() {
+        if (window.PacificEducationWorldClock || document.getElementById('pacificEducationWorldClockScript')) return;
+        var script = document.createElement('script');
+        script.id = 'pacificEducationWorldClockScript';
+        script.src = 'js/pacificEducationWorldClock.js';
+        script.async = true;
+        document.head.appendChild(script);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadWorldClock);
+    else loadWorldClock();
+})(window, document);
