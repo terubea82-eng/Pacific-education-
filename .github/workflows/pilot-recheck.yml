@@ -1,0 +1,61 @@
+name: Pacific Education Pilot Recheck
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "js/**"
+      - "docs/**"
+      - "PILOT_100_USER_APK_DISTRIBUTION.md"
+      - ".github/workflows/pilot-recheck.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pilot-recheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Check required pilot files
+        run: |
+          test -f src/index.html
+          test -f src/js/pacificEducationPilotUserWorkspaces.js
+          test -f PILOT_100_USER_APK_DISTRIBUTION.md
+          test -f release/production-authorization.json
+
+      - name: Verify all pilot roles are wired
+        run: |
+          for role in student teacher parent professional ngo education community owner; do
+            grep -q "id:"$role"" src/js/pacificEducationPilotUserWorkspaces.js
+          done
+          grep -q "pacificEducationPilotUserWorkspaces.js" src/index.html
+
+      - name: Verify production remains fail-closed
+        run: |
+          grep -q '"productionApproved": false' release/production-authorization.json
+          grep -q '"productionEligible": false' release/production-authorization.json
+          grep -q '"release_status": "BLOCKED"' release/production-authorization.json
+
+      - name: Verify live pilot link
+        run: |
+          curl -fsSL --retry 3 --retry-delay 2 https://terubea82-eng.github.io/Pacific-education-/ -o /tmp/pacific.html
+          grep -q "Pilot User Workspaces" /tmp/pacific.html
+          grep -q "Pacific Education" /tmp/pacific.html
+
+      - name: Publish recheck summary
+        run: |
+          {
+            echo "## Pacific Education pilot recheck"
+            echo ""
+            echo "- Required pilot files: PASS"
+            echo "- Eight pilot roles wired: PASS"
+            echo "- Production gate remains BLOCKED: PASS"
+            echo "- Live GitHub Pages pilot URL reachable: PASS"
+            echo ""
+            echo "Pilot URL: https://terubea82-eng.github.io/Pacific-education-/"
+          } >> "$GITHUB_STEP_SUMMARY"
