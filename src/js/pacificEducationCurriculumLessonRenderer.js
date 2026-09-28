@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.3.0";
+    var VERSION = "1.4.0";
     var originalDisplay = null;
     var connected = false;
 
@@ -106,6 +106,9 @@
         return render({
             success: result.success,
             evidenceStatus: result.evidenceStatus,
+            schedule: result.schedule,
+            concept: result.concept,
+            capabilityName: result.capabilityName,
             lesson: result.success ? {
                 dayNumber: result.dayNumber,
                 level: result.level,
@@ -115,7 +118,9 @@
                 learningAreas: result.indicators,
                 activities: result.activities,
                 assessments: result.assessments,
-                calendar: result.calendar
+                calendar: result.calendar,
+                schedule: result.schedule,
+                concept: result.concept
             } : null
         });
     }
