@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.4.0";
+    var VERSION = "1.5.0";
     var originalDisplay = null;
     var connected = false;
 
@@ -57,11 +57,11 @@
         return true;
     }
 
-    function render(plan) {
+    function setDay(day){var d=Math.max(1,Math.min(50,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(50,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 50 teaching days";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=50;}function render(plan) {
         if (!plan || !plan.success || !plan.lesson) return false;
         var lesson = plan.lesson;
         var areas = Array.isArray(lesson.learningAreas) ? lesson.learningAreas : [];
-        setText("dailyLessonDay", "Day " + lesson.dayNumber);
+        setText("dailyLessonDay", "Day " + lesson.dayNumber); updateNavigation(lesson.dayNumber);
         setText("dailyLessonTitle", lesson.title || ("Daily " + (lesson.subjectId || "Curriculum") + " Lesson"));
         var schedule = plan.schedule || {};
         var concept = plan.concept && plan.concept.domain ? plan.concept.domain : "";
@@ -170,7 +170,7 @@
         };
     }
 
-    function initialise() { connect(); refresh(); return status(); }
+    function initialise() { connect(); bindNavigation(); refresh(); return status(); }
 
     window.PacificEducationCurriculumLessonRenderer = Object.freeze({
         name: "PacificEducationCurriculumLessonRenderer",
