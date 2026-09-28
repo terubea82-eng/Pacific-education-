@@ -646,6 +646,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", async () => {
         status.textContent = "Submitting...";
         try {
+            if (!window.PacificEducationFirebase || typeof window.PacificEducationFirebase.submitPilotFeedback !== "function") { throw new Error("Firebase feedback service is not ready."); }
             await window.PacificEducationFirebase.submitPilotFeedback({message: message.value, category: category.value});
             message.value = "";
             status.textContent = "Feedback submitted successfully.";
