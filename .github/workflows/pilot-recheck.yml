@@ -12,6 +12,7 @@ on:
       - "release/production-authorization.json"
       - "automation/**"
       - ".github/workflows/pilot-recheck.yml"
+      - ".github/workflows/deploy-pilot-pages.yml"
   workflow_dispatch:
 
 permissions:
