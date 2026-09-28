@@ -24,7 +24,7 @@ for path in Path(".").rglob("*"):
     for line_no, line in enumerate(text.splitlines(), 1):
         # Firebase web apiKey values are client identifiers, not credentials by themselves.
         # Enforce real secret patterns while allowing the documented public Firebase config.
-        if path.name == "pacificEducationFirebase.js" and re.search(r"apiKey\\s*:", line, re.IGNORECASE):
+        if path.name == "pacificEducationFirebase.js" and re.search(r"apiKey\s*:", line, re.IGNORECASE):
             continue
         if PATTERN.search(line):
             findings.append(f"{path}:{line_no}: {line.strip()}")
