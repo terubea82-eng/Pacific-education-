@@ -102,7 +102,7 @@
         var filters = { studentId: studentId };
         var summary = e.summarize(filters);
         var records = e.list(filters);
-        var remaining = e.getRemaining(filters);\n        var stageRecords = records.filter(function(item){ return item && item.evidenceType === "indicator-stage"; });\n        var stageCompleted = stageRecords.length;\n\n        var registry = window.PacificEducationCurriculumAlignmentRegistry;\n        var curriculumIndicators = registry && typeof registry.list === "function" ? registry.list({ level: level || "Class 1", subjectId: subjectId, term: term }) : [];
+        var remaining = e.getRemaining(filters);
 
         var currentDay = 1;
         try {
