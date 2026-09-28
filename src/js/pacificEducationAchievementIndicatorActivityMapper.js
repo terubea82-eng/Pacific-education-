@@ -42,24 +42,25 @@
         });
     }
 
-    function makeActivities(indicator){
+    function indicatorAction(text){var t=String(text||"").toLowerCase();if(/collect|gather|identify/.test(t))return "collect or identify evidence";if(/sort|classif|compare|contrast/.test(t))return "sort, classify, compare or contrast evidence";if(/describe|discuss|explain/.test(t))return "describe, discuss or explain using evidence";if(/demonstrate|practise|practice/.test(t))return "demonstrate the required skill with observable evidence";if(/draw|budget|calculate|measure/.test(t))return "produce the required calculation, record, drawing or model";if(/report|compile|create|develop/.test(t))return "produce and communicate a supported response";return "demonstrate understanding through evidence and explanation";}\n\n    function makeActivities(indicator){
         var id=String(indicator.id||indicator.indicatorId||indicator.rowId||"indicator");
         var text=String(indicator.indicatorText||indicator.achievementIndicator||"");
         if(!text)return [];
         return ACTIVITY_TYPES.map(function(type,index){
             var labels={
-                "teach":"Teacher modelling and explicit teaching",
-                "guided-practice":"Guided practice with feedback",
-                "independent-practice":"Independent learner practice",
-                "application":"Application/integration task",
-                "check-assessment":"Short evidence check",
-                "remedial-extension":"Targeted remedial or extension activity"
+                "teach":"Teach and model the achievement indicator",
+                "guided-practice":"Guided practice with prompts and feedback",
+                "independent-practice":"Independent practice demonstrating the indicator",
+                "application":"Application: transfer the indicator to a familiar context",
+                "check-assessment":"Check assessment: collect evidence of the indicator",
+                "remedial-extension":"Remedial / extension: reteach gaps or extend mastery"
             };
             return {
                 activityId:id+"-ACT-"+String(index+1).padStart(2,"0"),
                 indicatorId:id,
                 activityType:type,
                 title:labels[type],
+                taskFocus:action,
                 achievementIndicator:text,
                 sourceDocument:indicator.sourceDocument||indicator.evidenceReference||"",
                 sourceLocation:indicator.sourceLocation||indicator.page||"",
