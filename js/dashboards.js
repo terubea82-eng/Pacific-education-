@@ -418,6 +418,14 @@
         );
     }
 
+    function getIndicatorStageProgress() {
+        var engine = window.PacificEducationCurriculumCoverageEngine;
+        var studentId = getCurrentStudentId();
+        if (!engine || !studentId || typeof engine.list !== "function") return { count: 0, records: [] };
+        var records = engine.list({ studentId: studentId }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
+        return { count: records.length, records: records };
+    }
+
     function getPacificStudentData() {
         const coreState = getCoreState();
 
