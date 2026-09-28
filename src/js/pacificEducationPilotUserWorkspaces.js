@@ -74,6 +74,25 @@
         return;
       }
       gate.innerHTML = "<strong>Mandatory pilot workspace selected:</strong> " + esc(role.title) + ". You may now continue testing.";
+      /*
+       * Controlled pilot only: selecting Student creates an explicit
+       * prototype Core authorization session so protected demo actions
+       * such as Complete Lesson can be tested. This is NOT production
+       * authentication or role authorization.
+       */
+      if (
+        role.id === "student" &&
+        window.PacificEducationCore &&
+        typeof window.PacificEducationCore.authorizeUser === "function"
+      ) {
+        window.PacificEducationCore.authorizeUser({
+          userId: "pilot-student-demo",
+          name: "Student",
+          role: "student",
+          prototypeSession: true,
+          authorized: true
+        });
+      }
       var workspace = document.getElementById("pilotRoleWorkspace");
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
