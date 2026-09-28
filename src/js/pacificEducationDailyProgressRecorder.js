@@ -90,6 +90,21 @@
         });
 
         document.dispatchEvent(new CustomEvent("pacificEducationDailyProgressRecorded"));
+        try {
+            var firebaseService = window.PacificEducationFirebase;
+            if (firebaseService && typeof firebaseService.saveProgress === "function" && config.studentId) {
+                firebaseService.saveProgress({
+                    progressId: String(config.studentId) + "-day-" + String(config.dayNumber),
+                    activityId: "daily-lesson-day-" + String(config.dayNumber),
+                    status: input.status || "taught",
+                    score: Number.isFinite(input.score) ? input.score : null
+                }).catch(function(error) {
+                    console.warn("Firebase progress sync deferred:", error);
+                });
+            }
+        } catch (firebaseError) {
+            console.warn("Firebase progress sync unavailable:", firebaseError);
+        }
 
         return {
             success: true,
