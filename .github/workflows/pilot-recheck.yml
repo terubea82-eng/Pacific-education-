@@ -52,7 +52,8 @@ jobs:
       - name: Verify live pilot link
         run: |
           set -e
-          curl -fsSL --retry 12 --retry-delay 5 https://terubea82-eng.github.io/Pacific-education-/ -o /tmp/pacific.html
+          sleep 60
+          curl -fsSL --retry 12 --retry-delay 5 "https://terubea82-eng.github.io/Pacific-education/?pilot_recheck=1" -o /tmp/pacific.html
           grep -q "Pilot User Workspaces" /tmp/pacific.html
           grep -q "Pacific Education" /tmp/pacific.html
 
