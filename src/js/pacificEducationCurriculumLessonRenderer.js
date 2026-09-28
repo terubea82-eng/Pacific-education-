@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.6.0";
+    var VERSION = "1.7.0";
     var originalDisplay = null;
     var connected = false;
 
@@ -76,7 +76,7 @@
         var practiceText = [];
         areas.forEach(function(area) {
             if (area.title) activityText.push(area.title);
-            if (Array.isArray(area.activities)) area.activities.forEach(function(item) { if (item.activityTitle) activityText.push(item.activityTitle + ":"); if (item.instructions) activityText.push(item.instructions); if (item.teacherAction) activityText.push("Teacher: " + item.teacherAction); if (item.learnerAction) activityText.push("Learner: " + item.learnerAction); if (item.practice) practiceText.push("Practice: " + item.practice); if (item.check) practiceText.push("Check: " + item.check); });
+            if (Array.isArray(area.activities)) area.activities.forEach(function(item) { if (item.activityTitle) activityText.push(item.activityTitle + ":"); if (item.description) activityText.push(item.description); if (item.instructions) activityText.push(item.instructions); if (item.teacherAction) activityText.push("Teacher: " + item.teacherAction); if (item.learnerAction) activityText.push("Learner: " + item.learnerAction); if (item.practice) practiceText.push("Practice: " + item.practice); if (item.check) practiceText.push("Check: " + item.check); });
             if (area.integration && Array.isArray(area.integration.integrated)) area.integration.integrated.forEach(function(item) {
                 if (item.subjectId) activityText.push("Integration: " + item.subjectId + " — " + (item.activitySuggestion || ""));
             });
