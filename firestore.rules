@@ -3,9 +3,36 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Only authenticated users can access Firestore.
-    match /{document=**} {
-      allow read, write: if request.auth != null;
+    match /users/{userId} {
+      allow read, create, update: if request.auth != null
+        && request.auth.uid == userId;
+
+      allow delete: if false;
+    }
+
+    match /feedback/{feedbackId} {
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() <= 2000
+        && request.resource.data.category is string
+        && request.resource.data.category in [
+          'general',
+          'lesson',
+          'assessment',
+          'dashboard',
+          'accessibility',
+          'technical'
+        ]
+        && request.resource.data.keys().hasOnly([
+          'uid',
+          'message',
+          'category',
+          'createdAt'
+        ]);
+
+      allow read, update, delete: if false;
     }
   }
 }
