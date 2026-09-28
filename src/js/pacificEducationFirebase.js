@@ -12,7 +12,7 @@ import {
     signOut,
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
-import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+import { getFirestore, doc, setDoc, getDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyC8vXzLwsKMfr5MUmXEm2GflW7c-l6a06E",
@@ -148,13 +148,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-import {
-    getFirestore,
-    doc,
-    setDoc,
-    getDoc,
-    serverTimestamp
-} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 
 async function createOrUpdateUserProfile(user) {
