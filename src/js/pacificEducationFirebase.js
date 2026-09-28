@@ -201,8 +201,8 @@ async function reviewHomeSubmission(submission) {
     if (!id) throw new Error("Submission ID is required.");
     const ref = doc(db, "homeSubmissions", id);
     await setDoc(ref, {
-        status:"teacher-approved", mark:Number(submission?.mark), teacherComment:String(submission?.teacherComment||""),
-        reviewedByUid:user.uid, reviewedAt:serverTimestamp()
+        status:String(submission?.status||"teacher-approved"), mark:Number.isFinite(Number(submission?.mark)) ? Number(submission.mark) : null, specialEducationComment:String(submission?.specialEducationComment||""), specialEducationReviewedAt:submission?.specialEducationReviewedAt||null, teacherGuidance:String(submission?.teacherGuidance||""), teacherComment:String(submission?.teacherComment||""),
+        reviewedByUid:user.uid, teacherAuthorizedAt:submission?.teacherAuthorizedAt||null, reviewedAt:serverTimestamp()
     }, {merge:true});
     return ref;
 }
