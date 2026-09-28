@@ -1,7 +1,7 @@
 (function(window){"use strict";
 var records=[], assessments=[], VERSION="1.0.0";
 var levels=["Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
-var terms=["Term 1","Term 2","Term 3"];
+var terms=["Term 1","Term 2","Term 3","UNASSIGNED"];
 function copy(v){return JSON.parse(JSON.stringify(v));}
 function registerIndicator(r){if(!r||!r.id)throw new Error("Indicator id required");var i=records.findIndex(function(x){return x.id===r.id});if(i>=0)records[i]=copy(r);else records.push(copy(r));return copy(r);}
 function getIndicator(id){var r=records.find(function(x){return x.id===id});return r?copy(r):null;}
