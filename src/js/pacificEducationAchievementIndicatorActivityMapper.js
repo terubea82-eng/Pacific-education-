@@ -36,7 +36,9 @@
         return r.list(filters||{}).filter(function(x){
             return x.status==="VALIDATED" ||
                    x.validationStatus==="VALIDATED" ||
-                   x.indicatorStatus==="VALIDATED";
+                   x.indicatorStatus==="VALIDATED" ||
+                   x.status==="SOURCE_VERIFIED" ||
+                   x.validationStatus==="SOURCE_VERIFIED";
         });
     }
 
@@ -75,7 +77,9 @@
         if(!indicator)return {success:false,activities:[],reason:"indicator-required"};
         if(!(indicator.status==="VALIDATED" ||
              indicator.validationStatus==="VALIDATED" ||
-             indicator.indicatorStatus==="VALIDATED")){
+             indicator.indicatorStatus==="VALIDATED" ||
+             indicator.status==="SOURCE_VERIFIED" ||
+             indicator.validationStatus==="SOURCE_VERIFIED")){
             return {success:false,activities:[],reason:"indicator-not-verified"};
         }
         return {success:true,indicatorId:indicator.id||indicator.indicatorId||indicator.rowId,
