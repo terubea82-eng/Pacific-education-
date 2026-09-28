@@ -7,6 +7,8 @@ on:
   push:
     paths:
       - "android/**"
+      - "src/**"
+      - "js/**"
       - ".github/workflows/android-pilot-build.yml"
 jobs:
   build:
