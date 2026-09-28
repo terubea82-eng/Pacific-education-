@@ -143,6 +143,12 @@ window.PacificEducationAssessments = Object.freeze({
             score = message === "I can explain it" ? 100 : message === "I need more practice" ? 50 : 0;
         } else if (type === "true_false") {
             score = message === "True" ? 100 : 0;
+        } else if (type === "matching") {
+            score = message === "practice" ? 100 : 0;
+        } else if (type === "short_answer") {
+            score = message.length >= 20 ? 100 : message.length >= 8 ? 50 : 0;
+        } else if (type === "long_answer") {
+            score = message.length >= 80 ? 100 : message.length >= 30 ? 50 : 0;
         }
         if (score !== null) {
             var recorder = window.PacificEducationDailyProgressRecorder;
