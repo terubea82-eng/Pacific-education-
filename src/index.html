@@ -650,7 +650,7 @@ document.addEventListener("DOMContentLoaded", () => {
             message.value = "";
             status.textContent = "Feedback submitted successfully.";
         } catch (error) {
-            status.textContent = "Feedback could not be submitted.";
+            status.textContent = "Feedback could not be submitted: " + (error.code || error.message);
             console.error("Pilot feedback error:", error);
         }
     });
