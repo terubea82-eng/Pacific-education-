@@ -28,12 +28,26 @@ html[data-text-scale="large"]{font-size:112.5%}html[data-text-scale="x-large"]{f
 
 <header><h1>Pacific Education</h1><p>Learning • Assessment • Dashboards • Education Services</p></header>
 <main id="app">
+<nav id="userFirstNavigation" aria-label="Pacific Education main navigation" style="margin:12px 0;padding:10px;border:1px solid currentColor;">
+<strong>Start here:</strong>
+<a href="#pacificEducationPilotUserWorkspaces">Users</a> ·
+<a href="#learningPlatform">Platform</a> ·
+<a href="#dailyLesson">Learning</a> ·
+<a href="#assessments">Assessments</a> ·
+<a href="#teacherDashboard">Dashboards</a> ·
+<a href="#buyPlans">Services</a> ·
+<a href="#publicationStatus">Pilot / Production</a> ·
+<a href="#systemStatus">Information / Status</a>
+</nav>
+<section id="learningPlatform"><h2>Learning &amp; Education Platform</h2><p>Choose the learning level, curriculum subject and school term after selecting your user workspace.</p></section>
 <section id="prototypeAccess"><h2>Prototype Access</h2><p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session. It is not identity verification, authentication, authorization for real users, or production access.</p>
 <button type="button" id="prototypeAuthorizeButton" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
 <span id="prototypeAccessStatus" aria-live="polite">Checking authorization...</span></section>
 
 <section id="levelSelection"><h2>Learning Level</h2><div id="pacificEducationLevelSelector"></div></section>
+
 <section id="subjectSelection"><h2>Curriculum Subject</h2><div id="pacificEducationSubjectSelector"></div></section>
+
 <section id="termSelection"><h2>School Term</h2><div id="pacificEducationTermSelector"></div></section>
 
 <section id="teacherCalendarSection">
@@ -57,13 +71,21 @@ html[data-text-scale="large"]{font-size:112.5%}html[data-text-scale="x-large"]{f
 <div id="pacificEducationCurriculumProductionReadinessGate"></div><div id="pacificEducationCurriculumVerificationAudit"></div><div id="pacificEducationStudentCoverageContext"></div><div id="pacificEducationTeacherEvidence"></div></section>
 
 <section id="dailyLesson"><h2>Daily Lesson</h2><p><strong>Day:</strong> <span id="dailyLessonDay">1</span></p><h3 id="dailyLessonTitle">Daily Lesson</h3><div id="dailyLessonActivity"><p>Loading today's learning activity...</p></div><div id="dailyLessonPractice"></div><button type="button" onclick="completeLesson()">Complete Lesson</button></section>
+
 <section id="assessments"><h2>Assessments</h2><div id="assessmentDashboard"></div><p>Assessment activities are connected to the Pacific Education assessment modules.</p><button type="button" onclick="startAlphabetAssessment()">Alphabet Assessment</button><button type="button" onclick="startPhonicsAssessment()">Phonics Assessment</button></section>
+
 <section id="teacherDashboard"><h2>Teacher Dashboard</h2><p><strong>Student:</strong> <span id="teacherStudentName">Student</span></p><p><strong>Current Day:</strong> <span id="teacherCurrentDay">1</span></p><p><strong>Lessons Completed:</strong> <span id="teacherLessonsCompleted">0</span></p><p><strong>Alphabet Assessment:</strong> <span id="teacherAlphabetAssessment">Not completed</span></p><p><strong>Phonics Assessment:</strong> <span id="teacherPhonicsAssessment">Not completed</span></p><p><strong>Learning Status:</strong> <span id="teacherLearningStatus">Monitoring</span></p></section>
+
 <section id="parentDashboard"><h2>Parent Dashboard</h2><p><strong>Student:</strong> <span id="parentStudentName">Student</span></p><p><strong>Current Day:</strong> <span id="parentCurrentDay">1</span></p><p><strong>Lessons Completed:</strong> <span id="parentLessonsCompleted">0</span></p><p><strong>Alphabet Assessment:</strong> <span id="parentAlphabetAssessment">Not completed</span></p><p><strong>Phonics Assessment:</strong> <span id="parentPhonicsAssessment">Not completed</span></p><p><strong>Learning Status:</strong> <span id="parentLearningStatus">Monitoring</span></p></section>
+
 <section id="buyPlans"><h2>Pacific Education Plans</h2><p>Pricing is displayed for pilot discussion only; production payment is not enabled.</p></section>
+
 <section id="connectivityBoundary"><strong>Connectivity boundary:</strong> The Android pilot wrapper loads GitHub Pages over HTTPS. First launch and uncached content require network access. Offline behavior is prototype-only.</section>
+
 <section id="publicationStatus"><h2>Publication Status</h2><p><strong>Controlled pilot only.</strong> Production remains blocked until required authentication, backend/database, payment, cybersecurity, privacy, safeguarding, accessibility/device testing, official curriculum validation and authorized independent review are completed.</p></section>
+
 <section id="pacificGuardianCommentSection"><h2>Pacific Guardian</h2><p>Comments are queued for Guardian review.</p><label for="pacificGuardianComment">Your comment or need</label><br><textarea id="pacificGuardianComment" rows="5" style="width:100%;max-width:760px"></textarea><br><button type="button" onclick="submitPacificGuardianComment()">Send to Pacific Guardian</button><div id="pacificGuardianCommentStatus" aria-live="polite"></div></section>
+
 <section id="systemStatus"><h2>System Status</h2><div class="status">Pacific Education pilot application shell loaded.</div><div id="pacificEducationPrototypeRuntimeDiagnostics"></div><div id="pacificEducationPrototypeTestRunner"></div><div id="pacificEducationPrototypeVerificationReconciliation"></div><div id="pacificEducationOfflineSyncStatus"></div></section>
 </main>
 <script src="../js/pacificEducationCore.js"></script>
