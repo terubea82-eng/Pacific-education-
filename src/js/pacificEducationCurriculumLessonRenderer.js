@@ -77,6 +77,8 @@
             if(x.taskFocus){var f=document.createElement("p");f.innerHTML="<strong>Focus:</strong> ";f.appendChild(document.createTextNode(x.taskFocus));card.appendChild(f);}
             var type=x.activityType||"";
             var labels={"teach":"Teach","guided-practice":"Guided Practice","independent-practice":"Independent Practice","application":"Application","check-assessment":"Check Assessment","remedial-extension":"Remedial / Extension"};
+            var assessmentPassed=true;
+            if(type==="check-assessment" && x.assessmentResult && x.assessmentResult.passed===false) assessmentPassed=false;
             var instructions={
                 "guided-practice":"Work through the task with prompts, examples and feedback.",
                 "application":"Use the learning in a new or familiar real-world situation.",
@@ -95,6 +97,12 @@
                 });
                 if(result&&result.success){
                     action.disabled=true;action.textContent="Stage Recorded";
+                    if(type==="check-assessment" && !assessmentPassed){
+                        var support=document.createElement("p");
+                        support.textContent="Support needed: return to Remedial / Extension before progressing.";
+                        support.setAttribute("aria-live","assertive");
+                        card.appendChild(support);
+                    }
                     var nextIndex=currentIndex+1;
                     var nextType=nextIndex<stageOrder.length?stageOrder[nextIndex]:null;
                     var nextNotice=document.createElement("p");
