@@ -95,6 +95,12 @@
                 });
                 if(result&&result.success){
                     action.disabled=true;action.textContent="Stage Recorded";
+                    var nextIndex=currentIndex+1;
+                    var nextType=nextIndex<stageOrder.length?stageOrder[nextIndex]:null;
+                    var nextNotice=document.createElement("p");
+                    nextNotice.setAttribute("aria-live","polite");
+                    nextNotice.textContent=nextType?"Next: "+(labels[nextType]||"Next Stage"):"All six stages completed for this activity.";
+                    card.appendChild(nextNotice);
                     document.dispatchEvent(new CustomEvent("pacificEducationCoverageRefresh"));
                 }else{action.textContent="Try Again";}
             });
