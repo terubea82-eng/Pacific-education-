@@ -210,3 +210,34 @@ async function submitPilotFeedback(feedback) {
 
 window.PacificEducationFirebase.submitPilotFeedback =
     submitPilotFeedback;
+window.PacificEducationFirebase.submitPilotFeedback =
+    submitPilotFeedback;
+async function saveProgress(progress) {
+    const user = auth.currentUser;
+
+    if (!user || !user.uid) {
+        throw new Error("Authenticated user is required.");
+    }
+
+    const progressId = String(progress?.progressId || "").trim();
+
+    if (!progressId) {
+        throw new Error("Progress ID is required.");
+    }
+
+    const progressRef = doc(db, "progress", progressId);
+
+    await setDoc(progressRef, {
+        uid: user.uid,
+        progressId,
+        activityId: String(progress?.activityId || ""),
+        status: String(progress?.status || "in_progress"),
+        score: Number.isFinite(progress?.score) ? progress.score : null,
+        updatedAt: serverTimestamp()
+    }, { merge: true });
+
+    return progressRef;
+}
+
+window.PacificEducationFirebase.saveProgress = saveProgress;
+
