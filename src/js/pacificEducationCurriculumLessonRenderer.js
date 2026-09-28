@@ -22,6 +22,7 @@
     function getLevel() { return window.localStorage.getItem("pacificEducationLevel") || "Class 1"; }
     function getSubject() { return window.localStorage.getItem("pacificEducationSubject") || "English"; }
     function getTerm() { return window.localStorage.getItem("pacificEducationTerm") || "Term 1"; }
+    function getCapability() { return window.localStorage.getItem("pacificEducationCapability") || "expected"; }
     function setText(id, value) { var element = document.getElementById(id); if (element) element.textContent = value == null ? "" : String(value); }
 
     function activityTypeForDay(day) {
@@ -62,6 +63,12 @@
         var areas = Array.isArray(lesson.learningAreas) ? lesson.learningAreas : [];
         setText("dailyLessonDay", "Day " + lesson.dayNumber);
         setText("dailyLessonTitle", lesson.title || ("Daily " + (lesson.subjectId || "Curriculum") + " Lesson"));
+        var schedule = plan.schedule || {};
+        var concept = plan.concept && plan.concept.domain ? plan.concept.domain : "";
+        var capability = plan.capabilityName || getCapability();
+        var meta = document.getElementById("pacificLessonPlanMeta");
+        if (!meta) { meta = document.createElement("p"); meta.id = "pacificLessonPlanMeta"; meta.setAttribute("aria-live","polite"); var titleNode=document.getElementById("dailyLessonTitle"); if(titleNode && titleNode.parentNode) titleNode.parentNode.insertBefore(meta,titleNode.nextSibling); }
+        meta.textContent = "Term " + (String(lesson.term || "").replace("Term ","") || "") + " • Week " + (schedule.week || "") + " • " + (schedule.phase || "Teaching") + " • Capability: " + capability + " • Concept: " + concept;
 
         var activityText = [];
         var practiceText = [];
@@ -93,7 +100,7 @@
         ensureCurriculumData();
         var e = engine();
         if (!e || typeof e.generateDailyPlan !== "function") return false;
-        var result = e.generateDailyPlan({ level: getLevel(), subjectId: getSubject(), term: getTerm(), dayNumber: getDay() });
+        var result = e.generateDailyPlan({ level: getLevel(), subjectId: getSubject(), term: getTerm(), capability: getCapability(), dayNumber: getDay() });
         return render({
             success: result.success,
             lesson: result.success ? {
