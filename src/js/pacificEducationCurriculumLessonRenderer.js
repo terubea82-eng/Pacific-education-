@@ -57,7 +57,51 @@
         return true;
     }
 
-    function setDay(day){var d=Math.max(1,Math.min(50,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}var core=window.PacificEducationCore;if(core&&typeof core.setLesson==="function"&&typeof core.isAuthorized==="function"&&core.isAuthorized()){try{var state=typeof core.getState==="function"?core.getState():null;var lesson=state&&state.lesson?state.lesson:{};core.setLesson({lessonId:lesson.lessonId||null,day:d,subject:lesson.subject||getSubject(),title:"",concept:lesson.concept||"",status:"not_started"});}catch(e){console.warn("Pacific Education: Core day navigation sync deferred.",e);}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(50,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 50 teaching days";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=50;}function renderIndicatorStages(lesson) { var container=document.getElementById("dailyLesson"); if(!container)return; var old=document.getElementById("pacificAchievementIndicatorStages"); if(old)old.remove(); var areas=Array.isArray(lesson.learningAreas)?lesson.learningAreas:[],items=[]; areas.forEach(function(a){if(Array.isArray(a.activities))a.activities.forEach(function(x){items.push(x);});}); if(!items.length)return; var section=document.createElement("section"); section.id="pacificAchievementIndicatorStages"; section.setAttribute("aria-label","Achievement indicator activity sequence"); var h=document.createElement("h3");h.textContent="Achievement Indicator Activity Sequence";section.appendChild(h); items.forEach(function(x,i){var card=document.createElement("article");card.style.margin="0.75rem 0";card.style.padding="0.75rem";card.style.border="1px solid #ccc";var title=document.createElement("h4");title.textContent=(i+1)+". "+(x.title||x.activityType||"Learning activity");card.appendChild(title);if(x.achievementIndicator){var p=document.createElement("p");p.innerHTML="<strong>Indicator:</strong> ";p.appendChild(document.createTextNode(x.achievementIndicator));card.appendChild(p);}if(x.taskFocus){var f=document.createElement("p");f.innerHTML="<strong>Focus:</strong> ";f.appendChild(document.createTextNode(x.taskFocus));card.appendChild(f);}var action=document.createElement("button");action.type="button";action.textContent="Mark Stage Complete";action.addEventListener("click",function(){var recorder=window.PacificEducationDailyProgressRecorder;if(!recorder||typeof recorder.record!=="function"){action.textContent="Recorder unavailable";return;}var result=recorder.record({status:"practised",evidenceType:"indicator-stage",stageType:x.activityType,activityType:x.activityType,notes:"Pilot completion: "+(x.activityType||"learning stage")});if(result&&result.success){action.disabled=true;action.textContent="Stage Recorded";document.dispatchEvent(new CustomEvent("pacificEducationCoverageRefresh"));}else{action.textContent="Try Again";}});card.appendChild(action);section.appendChild(card);});container.appendChild(section);}\n\nfunction render(plan) {
+    function setDay(day){var d=Math.max(1,Math.min(50,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}var core=window.PacificEducationCore;if(core&&typeof core.setLesson==="function"&&typeof core.isAuthorized==="function"&&core.isAuthorized()){try{var state=typeof core.getState==="function"?core.getState():null;var lesson=state&&state.lesson?state.lesson:{};core.setLesson({lessonId:lesson.lessonId||null,day:d,subject:lesson.subject||getSubject(),title:"",concept:lesson.concept||"",status:"not_started"});}catch(e){console.warn("Pacific Education: Core day navigation sync deferred.",e);}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(50,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 50 teaching days";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=50;}function renderIndicatorStages(lesson) {
+        var container=document.getElementById("dailyLesson");
+        if(!container)return;
+        var old=document.getElementById("pacificAchievementIndicatorStages");
+        if(old)old.remove();
+        var areas=Array.isArray(lesson.learningAreas)?lesson.learningAreas:[],items=[];
+        areas.forEach(function(a){if(Array.isArray(a.activities))a.activities.forEach(function(x){items.push(x);});});
+        if(!items.length)return;
+        var section=document.createElement("section");
+        section.id="pacificAchievementIndicatorStages";
+        section.setAttribute("aria-label","Achievement indicator activity sequence");
+        var h=document.createElement("h3");h.textContent="Achievement Indicator Activity Sequence";section.appendChild(h);
+        items.forEach(function(x,i){
+            var card=document.createElement("article");
+            card.style.margin="0.75rem 0";card.style.padding="0.75rem";card.style.border="1px solid #ccc";
+            var title=document.createElement("h4");title.textContent=(i+1)+". "+(x.title||x.activityType||"Learning activity");card.appendChild(title);
+            if(x.achievementIndicator){var p=document.createElement("p");p.innerHTML="<strong>Indicator:</strong> ";p.appendChild(document.createTextNode(x.achievementIndicator));card.appendChild(p);}
+            if(x.taskFocus){var f=document.createElement("p");f.innerHTML="<strong>Focus:</strong> ";f.appendChild(document.createTextNode(x.taskFocus));card.appendChild(f);}
+            var type=x.activityType||"";
+            var labels={"teach":"Teach","guided-practice":"Guided Practice","independent-practice":"Independent Practice","application":"Application","check-assessment":"Check Assessment","remedial-extension":"Remedial / Extension"};
+            var instructions={
+                "guided-practice":"Work through the task with prompts, examples and feedback.",
+                "application":"Use the learning in a new or familiar real-world situation.",
+                "remedial-extension":"Review the gap and either reteach the skill or extend the learner with a challenge."
+            };
+            if(instructions[type]){
+                var ip=document.createElement("p");ip.textContent=instructions[type];card.appendChild(ip);
+            }
+            var action=document.createElement("button");action.type="button";action.textContent="Mark "+(labels[type]||"Stage")+" Complete";
+            action.addEventListener("click",function(){
+                var recorder=window.PacificEducationDailyProgressRecorder;
+                if(!recorder||typeof recorder.record!=="function"){action.textContent="Recorder unavailable";return;}
+                var result=recorder.record({
+                    status:"practised",evidenceType:"indicator-stage",stageType:type,activityType:type,
+                    notes:"Pilot completion: "+(labels[type]||type)
+                });
+                if(result&&result.success){
+                    action.disabled=true;action.textContent="Stage Recorded";
+                    document.dispatchEvent(new CustomEvent("pacificEducationCoverageRefresh"));
+                }else{action.textContent="Try Again";}
+            });
+            card.appendChild(action);section.appendChild(card);
+        });
+        container.appendChild(section);
+    }\n\nfunction render(plan) {
         if (!plan || !plan.success || !plan.lesson) return false;
         var lesson = plan.lesson;
         var areas = Array.isArray(lesson.learningAreas) ? lesson.learningAreas : [];
