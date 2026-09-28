@@ -1,11 +1,11 @@
 /* Pacific Education — production app shell integration layer.
- * Connects the separated AI services to the existing page without allowing
- * them to bypass authorization, human review, curriculum verification or
- * production gates.
+ * Connects separated learning services and the authenticated external-review portal
+ * without allowing them to bypass authorization, human review, curriculum verification
+ * or production gates.
  */
 (function (window, document) {
   "use strict";
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var state = { activeActivity: null };
 
   function el(id) { return document.getElementById(id); }
@@ -68,23 +68,56 @@
     render("pacificEducationAccessibilityStudio", "Accessibility Support", "<p>Choose an appropriate way to demonstrate the same learning goal.</p><ul>" + modes.map(function (m) { return "<li>" + text(m) + "</li>"; }).join("") + "</ul><p>Formal standards are not silently changed; authorized accommodations remain subject to review.</p>");
   }
 
+  function ensureExternalReviewerPortal() {
+    if (window.PacificEducationExternalReviewerPortal && typeof window.PacificEducationExternalReviewerPortal.render === "function") {
+      window.PacificEducationExternalReviewerPortal.render();
+      return;
+    }
+    var script = document.createElement("script");
+    script.src = "js/pacificEducationExternalReviewerPortal.js";
+    script.onload = function () {
+      if (window.PacificEducationExternalReviewerPortal) window.PacificEducationExternalReviewerPortal.render();
+    };
+    script.onerror = function () {
+      var app = el("app");
+      if (app && !el("pacificEducationExternalReviewerPortal")) {
+        var section = document.createElement("section");
+        section.id = "pacificEducationExternalReviewerPortal";
+        section.innerHTML = "<h2>External Professional Review Portal</h2><p>Reviewer portal could not be loaded in this build.</p>";
+        app.appendChild(section);
+      }
+    };
+    document.head.appendChild(script);
+  }
+
   function init() {
     [
       ["pacificEducationTeacherGuideStudio", "Teacher Guide"],
       ["pacificEducationEssayStudio", "Essay Studio"],
       ["pacificEducationProjectsStudio", "Projects Studio"],
       ["pacificEducationAccessibilityStudio", "Accessibility Support"]
-    ].forEach(function (item) { if (!el(item[0])) { var s = document.createElement("section"); s.id = item[0]; s.innerHTML = "<h2>" + item[1] + "</h2><p>Available from the learning workspace.</p>"; document.getElementById("app").appendChild(s); } });
-    var controls = document.createElement("section");
-    controls.id = "pacificEducationProductionLearningTools";
-    controls.setAttribute("aria-label", "Learning tools");
-    controls.innerHTML = "<h2>Learning Tools</h2><button type=\"button\" id=\"openTeacherGuideAI\">Teacher Guide</button><button type=\"button\" id=\"openEssayStudio\">Essay Studio</button><button type=\"button\" id=\"openProjectsStudio\">Projects Studio</button><button type=\"button\" id=\"openAccessibilityStudio\">Accessibility Support</button>";
+    ].forEach(function (item) {
+      var app = el("app");
+      if (app && !el(item[0])) {
+        var s = document.createElement("section");
+        s.id = item[0];
+        s.innerHTML = "<h2>" + item[1] + "</h2><p>Available from the learning workspace.</p>";
+        app.appendChild(s);
+      }
+    });
     var app = el("app");
-    if (app) app.insertBefore(controls, el("dailyLesson"));
-    el("openTeacherGuideAI").onclick = openTeacherGuide;
-    el("openEssayStudio").onclick = openEssayStudio;
-    el("openProjectsStudio").onclick = openProjectsStudio;
-    el("openAccessibilityStudio").onclick = showAccessibility;
+    if (app && !el("pacificEducationProductionLearningTools")) {
+      var controls = document.createElement("section");
+      controls.id = "pacificEducationProductionLearningTools";
+      controls.setAttribute("aria-label", "Learning tools");
+      controls.innerHTML = "<h2>Learning Tools</h2><button type=\"button\" id=\"openTeacherGuideAI\">Teacher Guide</button><button type=\"button\" id=\"openEssayStudio\">Essay Studio</button><button type=\"button\" id=\"openProjectsStudio\">Projects Studio</button><button type=\"button\" id=\"openAccessibilityStudio\">Accessibility Support</button>";
+      app.insertBefore(controls, el("dailyLesson"));
+    }
+    if (el("openTeacherGuideAI")) el("openTeacherGuideAI").onclick = openTeacherGuide;
+    if (el("openEssayStudio")) el("openEssayStudio").onclick = openEssayStudio;
+    if (el("openProjectsStudio")) el("openProjectsStudio").onclick = openProjectsStudio;
+    if (el("openAccessibilityStudio")) el("openAccessibilityStudio").onclick = showAccessibility;
+    ensureExternalReviewerPortal();
     window.PacificEducationProductionAppShell.ready = true;
   }
 
@@ -95,7 +128,8 @@
     openTeacherGuide: openTeacherGuide,
     openEssayStudio: openEssayStudio,
     openProjectsStudio: openProjectsStudio,
-    showAccessibility: showAccessibility
+    showAccessibility: showAccessibility,
+    ensureExternalReviewerPortal: ensureExternalReviewerPortal
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })(window, document);
