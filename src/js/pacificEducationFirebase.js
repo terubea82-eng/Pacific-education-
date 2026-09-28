@@ -156,7 +156,6 @@ import {
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
-const db = getFirestore(app);
 
 async function createOrUpdateUserProfile(user) {
     if (!user || !user.uid) {
