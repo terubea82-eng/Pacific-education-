@@ -6,7 +6,8 @@
 
   var roles = [
     { id:"student", title:"Student", access:"Learning, daily lessons, practice and assessments", actions:["Open daily lesson","Practice","View my progress"] },
-    { id:"teacher", title:"Teacher", access:"Class, lesson, assessment and progress tools", actions:["Class dashboard","Lesson/teacher guide","Assessment review"] },
+    { id:"teacher", title:"Teacher", access:"Class, lesson, assessment, progress and authorization tools", actions:["Class dashboard","Lesson/teacher guide","Assessment review","Authorize reviewed marks"] },
+    { id:"special-education", title:"Special Education / Inclusion", access:"Daily learner performance tracking, individualized support and mandatory review comments", actions:["Daily performance review","Individual support comment","Review home assessments"] },
     { id:"parent", title:"Parent / Caregiver", access:"Linked-child learning overview and feedback", actions:["Learning progress","Attendance/activity view","Send feedback"] },
     { id:"professional", title:"Professional Reviewer", access:"Controlled review evidence and findings", actions:["Review evidence","Record finding","View review status"] },
     { id:"ngo", title:"NGO / Organization", access:"Program-level pilot participation and feedback", actions:["Program overview","Pilot feedback","Request support"] },
