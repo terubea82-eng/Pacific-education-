@@ -226,6 +226,7 @@ function finishAssessment(
                 status: percentage >= 80 ? "passed" : "needs_practice",
                 score: percentage
             }).catch(function(error) {
+                alert("Firebase saveProgress found and called.");
                 alert("Firebase assessment sync failed: " + (error && error.message ? error.message : error)); console.warn("Firebase assessment sync deferred:", error);
             });
         }
