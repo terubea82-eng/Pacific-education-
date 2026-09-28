@@ -76,7 +76,7 @@
                     '<td>' + row.summary.remaining + '</td></tr>';
             }).join("") : '<tr><td colspan="8">No students in the selected class.</td></tr>') +
             '</tbody></table></div>' +
-            '<div id="pacificEducationSelectedStudentProgress"></div>' +
+            '<div id="pacificEducationSelectedStudentProgress"></div><div id="pacificEducationTeacherIndicatorStageDetails"></div>' +
             '<p><small>Prototype only. This dashboard does not establish production authorization or identity.</small></p>' +
             '</div>';
 
@@ -85,6 +85,11 @@
                 var result = r.selectStudent(button.getAttribute("data-student"));
                 if (result.success) {
                     render(targetId);
+                    var detailTarget = target.querySelector("#pacificEducationTeacherIndicatorStageDetails");
+                    if (detailTarget) {
+                        var detailRecords = e.list({ studentId: button.getAttribute("data-student") }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
+                        detailTarget.innerHTML = "<h3>Completed Achievement Indicator Stages</h3>" + (detailRecords.length ? "<ul>" + detailRecords.map(function(item) { return "<li><strong>" + escapeHtml(item.indicatorId || "Indicator") + "</strong> — " + escapeHtml(item.activityType || "stage") + "</li>"; }).join("") + "</ul>" : "<p>No indicator stages recorded yet.</p>");
+                    }
                     var lesson = lessonRenderer();
                     if (lesson && typeof lesson.generateAndRender === "function") {
                         lesson.generateAndRender();
