@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.5.0";
+    var VERSION = "1.6.0";
     var originalDisplay = null;
     var connected = false;
 
@@ -57,7 +57,7 @@
         return true;
     }
 
-    function setDay(day){var d=Math.max(1,Math.min(50,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(50,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 50 teaching days";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=50;}function render(plan) {
+    function setDay(day){var d=Math.max(1,Math.min(50,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}var core=window.PacificEducationCore;if(core&&typeof core.setLesson==="function"&&typeof core.isAuthorized==="function"&&core.isAuthorized()){try{var state=typeof core.getState==="function"?core.getState():null;var lesson=state&&state.lesson?state.lesson:{};core.setLesson({lessonId:lesson.lessonId||null,day:d,subject:lesson.subject||getSubject(),title:"",concept:lesson.concept||"",status:"not_started"});}catch(e){console.warn("Pacific Education: Core day navigation sync deferred.",e);}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(50,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 50 teaching days";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=50;}function render(plan) {
         if (!plan || !plan.success || !plan.lesson) return false;
         var lesson = plan.lesson;
         var areas = Array.isArray(lesson.learningAreas) ? lesson.learningAreas : [];
