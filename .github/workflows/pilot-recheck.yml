@@ -8,6 +8,8 @@ on:
       - "js/**"
       - "docs/**"
       - "PILOT_100_USER_APK_DISTRIBUTION.md"
+      - "PILOT_READY_CHECKLIST.md"
+      - "release/production-authorization.json"
       - ".github/workflows/pilot-recheck.yml"
   workflow_dispatch:
 
@@ -23,27 +25,33 @@ jobs:
 
       - name: Check required pilot files
         run: |
+          set -e
           test -f src/index.html
           test -f src/js/pacificEducationPilotUserWorkspaces.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
+          test -f PILOT_READY_CHECKLIST.md
           test -f release/production-authorization.json
 
-      - name: Verify all pilot roles are wired
+      - name: Verify all eight pilot roles are wired
         run: |
-          for role in student teacher parent professional ngo education community owner; do
-            grep -q "id:"$role"" src/js/pacificEducationPilotUserWorkspaces.js
+          set -e
+          roles="student teacher parent professional ngo education community owner"
+          for role in $roles; do
+            grep -Fq 'id:"'$role'"' src/js/pacificEducationPilotUserWorkspaces.js
           done
-          grep -q "pacificEducationPilotUserWorkspaces.js" src/index.html
+          grep -Fq 'pacificEducationPilotUserWorkspaces.js' src/index.html
 
       - name: Verify production remains fail-closed
         run: |
+          set -e
           grep -q '"productionApproved": false' release/production-authorization.json
           grep -q '"productionEligible": false' release/production-authorization.json
           grep -q '"release_status": "BLOCKED"' release/production-authorization.json
 
       - name: Verify live pilot link
         run: |
-          curl -fsSL --retry 3 --retry-delay 2 https://terubea82-eng.github.io/Pacific-education-/ -o /tmp/pacific.html
+          set -e
+          curl -fsSL --retry 12 --retry-delay 5 https://terubea82-eng.github.io/Pacific-education-/ -o /tmp/pacific.html
           grep -q "Pilot User Workspaces" /tmp/pacific.html
           grep -q "Pacific Education" /tmp/pacific.html
 
@@ -51,7 +59,6 @@ jobs:
         run: |
           {
             echo "## Pacific Education pilot recheck"
-            echo ""
             echo "- Required pilot files: PASS"
             echo "- Eight pilot roles wired: PASS"
             echo "- Production gate remains BLOCKED: PASS"
