@@ -10,7 +10,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function getStudentId() {
         var c = window.PacificEducationStudentCoverageContext;
@@ -75,9 +75,16 @@
 
         var records = [];
         var automaticStage = null;
+        var assessmentPassed = true;
+        var assessmentScore = Number(input.score);
+        var passingScore = Number(input.passingScore);
+        if (!Number.isFinite(passingScore)) passingScore = 60;
         if (input.evidenceType === "daily-lesson-completion") automaticStage = "teach";
         else if (input.evidenceType === "daily-practice") automaticStage = "independent-practice";
-        else if (input.evidenceType === "daily-assessment") automaticStage = "check-assessment";
+        else if (input.evidenceType === "daily-assessment") {
+            automaticStage = "check-assessment";
+            if (Number.isFinite(assessmentScore)) assessmentPassed = assessmentScore >= passingScore;
+        }
         indicators.forEach(function(item) {
             var indicator = item.indicator || item;
             if (!indicator || !indicator.id) return;
@@ -99,10 +106,25 @@
                     evidenceType: "indicator-stage",
                     stageType: automaticStage,
                     activityType: automaticStage,
+                    assessmentId: input.assessmentId || null,
                     teacherConfirmed: input.teacherConfirmed === true,
-                    notes: "Automatic stage evidence from " + String(input.evidenceType) + " — Day " + config.dayNumber,
+                    notes: "Automatic stage evidence from " + String(input.evidenceType) + " — Day " + config.dayNumber + (Number.isFinite(assessmentScore) ? " — Score " + assessmentScore + "% / Pass " + passingScore + "%" : ""),
                     date: input.date || new Date().toISOString().slice(0, 10)
                 }));
+                if (input.evidenceType === "daily-assessment" && Number.isFinite(assessmentScore) && !assessmentPassed) {
+                    records.push(coverage.record({
+                        indicatorId: indicator.id,
+                        studentId: config.studentId,
+                        status: "practised",
+                        evidenceType: "indicator-stage",
+                        stageType: "remedial-extension",
+                        activityType: "remedial-extension",
+                        assessmentId: input.assessmentId || null,
+                        teacherConfirmed: input.teacherConfirmed === true,
+                        notes: "Automatic remedial trigger: score " + assessmentScore + "% below passing score " + passingScore + "%",
+                        date: input.date || new Date().toISOString().slice(0, 10)
+                    }));
+                }
             }
         });
 
@@ -130,6 +152,12 @@
             dayNumber: config.dayNumber,
             indicatorCount: records.length,
             records: records,
+            assessment: input.evidenceType === "daily-assessment" ? {
+                score: Number.isFinite(assessmentScore) ? assessmentScore : null,
+                passingScore: passingScore,
+                passed: Number.isFinite(assessmentScore) ? assessmentPassed : null,
+                remedialTriggered: Number.isFinite(assessmentScore) ? !assessmentPassed : false
+            } : null,
             productionEligible: false,
             prototype: true
         };
