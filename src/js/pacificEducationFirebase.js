@@ -45,9 +45,6 @@ function observeAuthState(callback) {
     return onAuthStateChanged(auth, callback);
 }
 
-console.info("Pacific Education Firebase initialized");
-alert("Firebase module loaded.");
-
 window.PacificEducationFirebase = {
     app,
     analytics,
@@ -84,14 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     registerButton.addEventListener("click", async function () {
         const credentials = getCredentials();
-
         if (!credentials.email || !credentials.password) {
             showStatus("Enter an email address and password.");
             return;
         }
-
         showStatus("Creating account...");
-
         try {
             await registerWithEmail(credentials.email, credentials.password);
             await createOrUpdateUserProfile(auth.currentUser);
@@ -103,14 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     loginButton.addEventListener("click", async function () {
         const credentials = getCredentials();
-
         if (!credentials.email || !credentials.password) {
             showStatus("Enter an email address and password.");
             return;
         }
-
         showStatus("Signing in...");
-
         try {
             await loginWithEmail(credentials.email, credentials.password);
             await createOrUpdateUserProfile(auth.currentUser);
@@ -122,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     logoutButton.addEventListener("click", async function () {
         showStatus("Signing out...");
-
         try {
             await logoutFirebase();
             showStatus("Signed out.");
@@ -148,22 +138,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-
 async function createOrUpdateUserProfile(user) {
     if (!user || !user.uid) {
         throw new Error("Authenticated user is required.");
     }
-
     const userRef = doc(db, "users", user.uid);
-
     await setDoc(userRef, {
         uid: user.uid,
         email: user.email || "",
         lastSignInAt: serverTimestamp()
     }, { merge: true });
-
     return userRef;
 }
 
@@ -171,57 +155,41 @@ async function getUserProfile(user) {
     if (!user || !user.uid) {
         throw new Error("Authenticated user is required.");
     }
-
     const userRef = doc(db, "users", user.uid);
     const snapshot = await getDoc(userRef);
-
     return snapshot.exists() ? snapshot.data() : null;
 }
 
-window.PacificEducationFirebase.createOrUpdateUserProfile =
-    createOrUpdateUserProfile;
-
-window.PacificEducationFirebase.getUserProfile =
-    getUserProfile;
+window.PacificEducationFirebase.createOrUpdateUserProfile = createOrUpdateUserProfile;
+window.PacificEducationFirebase.getUserProfile = getUserProfile;
 
 async function submitPilotFeedback(feedback) {
     const user = auth.currentUser;
-
     if (!user || !user.uid) {
         throw new Error("Authenticated user is required.");
     }
-
     const feedbackRef = doc(db, "feedback", crypto.randomUUID());
-
     await setDoc(feedbackRef, {
         uid: user.uid,
         message: String(feedback?.message || "").trim(),
         category: String(feedback?.category || "general"),
         createdAt: serverTimestamp()
     });
-
     return feedbackRef;
 }
 
-window.PacificEducationFirebase.submitPilotFeedback =
-    submitPilotFeedback;
-window.PacificEducationFirebase.submitPilotFeedback =
-    submitPilotFeedback;
+window.PacificEducationFirebase.submitPilotFeedback = submitPilotFeedback;
+
 async function saveProgress(progress) {
     const user = auth.currentUser;
-
     if (!user || !user.uid) {
         throw new Error("Authenticated user is required.");
     }
-
     const progressId = String(progress?.progressId || "").trim();
-
     if (!progressId) {
         throw new Error("Progress ID is required.");
     }
-
     const progressRef = doc(db, "progress", progressId);
-
     await setDoc(progressRef, {
         uid: user.uid,
         progressId,
@@ -230,9 +198,7 @@ async function saveProgress(progress) {
         score: Number.isFinite(progress?.score) ? progress.score : null,
         updatedAt: serverTimestamp()
     }, { merge: true });
-
     return progressRef;
 }
 
 window.PacificEducationFirebase.saveProgress = saveProgress;
-
