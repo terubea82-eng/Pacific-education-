@@ -214,8 +214,24 @@ function finishAssessment(
     localStorage.setItem(
         "pacificEducationAssessments",
         JSON.stringify(results)
+
     );
 
+    try {
+        var firebaseService = window.PacificEducationFirebase;
+        if (firebaseService && typeof firebaseService.saveProgress === "function") {
+            firebaseService.saveProgress({
+                progressId: "assessment-" + String(type) + "-" + String(Date.now()),
+                activityId: "assessment-" + String(type),
+                status: percentage >= 80 ? "passed" : "needs_practice",
+                score: percentage
+            }).catch(function(error) {
+                console.warn("Firebase assessment sync deferred:", error);
+            });
+        }
+    } catch (firebaseError) {
+        console.warn("Firebase assessment sync unavailable:", firebaseError);
+    }
     if (typeof refreshAllDashboards === "function") {
         refreshAllDashboards();
     }
