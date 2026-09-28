@@ -180,6 +180,35 @@ async function submitPilotFeedback(feedback) {
 
 window.PacificEducationFirebase.submitPilotFeedback = submitPilotFeedback;
 
+async function submitHomeSubmission(submission) {
+    const user = auth.currentUser;
+    if (!user || !user.uid) throw new Error("Authenticated user is required.");
+    const id = String(submission?.submissionId || crypto.randomUUID());
+    const ref = doc(db, "homeSubmissions", id);
+    await setDoc(ref, {
+        submissionId:id, studentId:String(submission?.studentId||""), studentName:String(submission?.studentName||""),
+        classLevel:String(submission?.classLevel||""), subject:String(submission?.subject||""), term:String(submission?.term||""),
+        type:String(submission?.type||"daily-activity"), answers:Array.isArray(submission?.answers)?submission.answers:[],
+        imageDataUrl:String(submission?.imageDataUrl||""), status:"pending-teacher-review",
+        mark:null, teacherComment:"", submittedByUid:user.uid, submittedAt:serverTimestamp(), reviewedAt:null
+    });
+    return ref;
+}
+async function reviewHomeSubmission(submission) {
+    const user = auth.currentUser;
+    if (!user || !user.uid) throw new Error("Authenticated user is required.");
+    const id = String(submission?.submissionId || "");
+    if (!id) throw new Error("Submission ID is required.");
+    const ref = doc(db, "homeSubmissions", id);
+    await setDoc(ref, {
+        status:"teacher-approved", mark:Number(submission?.mark), teacherComment:String(submission?.teacherComment||""),
+        reviewedByUid:user.uid, reviewedAt:serverTimestamp()
+    }, {merge:true});
+    return ref;
+}
+window.PacificEducationFirebase.submitHomeSubmission = submitHomeSubmission;
+window.PacificEducationFirebase.reviewHomeSubmission = reviewHomeSubmission;
+
 async function saveProgress(progress) {
     const user = auth.currentUser;
     if (!user || !user.uid) {
