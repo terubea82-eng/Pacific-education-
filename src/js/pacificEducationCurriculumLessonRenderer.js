@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.2.0";
+    var VERSION = "1.3.0";
     var originalDisplay = null;
     var connected = false;
 
@@ -66,9 +66,11 @@
         var schedule = plan.schedule || {};
         var concept = plan.concept && plan.concept.domain ? plan.concept.domain : "";
         var capability = plan.capabilityName || getCapability();
+        var evidenceStatus = plan.evidenceStatus || "prototype-pending-verification";
+        var evidenceText = evidenceStatus === "verified" ? "Curriculum evidence: verified mapping" : "Pilot prototype activity — official curriculum evidence pending";
         var meta = document.getElementById("pacificLessonPlanMeta");
         if (!meta) { meta = document.createElement("p"); meta.id = "pacificLessonPlanMeta"; meta.setAttribute("aria-live","polite"); var titleNode=document.getElementById("dailyLessonTitle"); if(titleNode && titleNode.parentNode) titleNode.parentNode.insertBefore(meta,titleNode.nextSibling); }
-        meta.textContent = "Term " + (String(lesson.term || "").replace("Term ","") || "") + " • Week " + (schedule.week || "") + " • " + (schedule.phase || "Teaching") + " • Capability: " + capability + " • Concept: " + concept;
+        meta.textContent = evidenceText + " • Term " + (String(lesson.term || "").replace("Term ","") || "") + " • Week " + (schedule.week || "") + " • " + (schedule.phase || "Teaching") + " • Capability: " + capability + " • Concept: " + concept;
 
         var activityText = [];
         var practiceText = [];
@@ -103,6 +105,7 @@
         var result = e.generateDailyPlan({ level: getLevel(), subjectId: getSubject(), term: getTerm(), capability: getCapability(), dayNumber: getDay() });
         return render({
             success: result.success,
+            evidenceStatus: result.evidenceStatus,
             lesson: result.success ? {
                 dayNumber: result.dayNumber,
                 level: result.level,
