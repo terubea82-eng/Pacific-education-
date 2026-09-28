@@ -220,13 +220,13 @@ function finishAssessment(
     try {
         var firebaseService = window.PacificEducationFirebase;
         if (firebaseService && typeof firebaseService.saveProgress === "function") {
+            alert("Firebase saveProgress found and called.");
             firebaseService.saveProgress({
                 progressId: "assessment-" + String(type) + "-" + String(Date.now()),
                 activityId: "assessment-" + String(type),
                 status: percentage >= 80 ? "passed" : "needs_practice",
                 score: percentage
             }).catch(function(error) {
-                alert("Firebase saveProgress found and called.");
                 alert("Firebase assessment sync failed: " + (error && error.message ? error.message : error)); console.warn("Firebase assessment sync deferred:", error);
             });
         }
