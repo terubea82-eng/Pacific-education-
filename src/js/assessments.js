@@ -137,6 +137,24 @@ window.PacificEducationAssessments = Object.freeze({
     }
 
     function result(type, message) {
+        var score = null;
+        var passingScore = 60;
+        if (type === "multiple_choice") {
+            score = message === "I can explain it" ? 100 : message === "I need more practice" ? 50 : 0;
+        } else if (type === "true_false") {
+            score = message === "True" ? 100 : 0;
+        }
+        if (score !== null) {
+            var recorder = window.PacificEducationDailyProgressRecorder;
+            if (recorder && typeof recorder.recordAssessed === "function") {
+                recorder.recordAssessed({
+                    score: score,
+                    passingScore: passingScore,
+                    assessmentId: "daily-activity-" + type,
+                    notes: "Interactive pilot activity assessment"
+                });
+            }
+        }
         showLesson(labels[type] + " — Complete", `<div class="activity"><h3>${escape(message)}</h3><p>Your activity response has been recorded on this device. Signed-in pilot users can also sync progress to the account service.</p><button type="button" onclick="startDailyLesson()">📚 Continue Learning</button></div>`);
     }
 
