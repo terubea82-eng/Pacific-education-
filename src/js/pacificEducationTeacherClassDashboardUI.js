@@ -47,9 +47,11 @@
 
         var rows = students.map(function(studentRef) {
             var summary = e.summarize({ studentId: studentRef });
+            var stageRecords = e.list({ studentId: studentRef }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
             return {
                 studentId: studentRef,
-                summary: summary
+                summary: summary,
+                stageCompleted: stageRecords.length
             };
         });
 
@@ -60,7 +62,7 @@
             '<p>Prototype progress view. Student references are shown instead of child personal details.</p>' +
             '<div class="pacific-education-class-progress">' +
             '<table><thead><tr><th>Student Reference</th><th>Total</th><th>Taught</th>' +
-            '<th>Practised</th><th>Assessed</th><th>Covered</th><th>Remaining</th></tr></thead><tbody>' +
+            '<th>Practised</th><th>Stages</th><th>Assessed</th><th>Covered</th><th>Remaining</th></tr></thead><tbody>' +
             (rows.length ? rows.map(function(row) {
                 return '<tr' + (row.studentId === selectedStudent ? ' data-selected="true"' : '') + '>' +
                     '<td><button type="button" data-student="' + escapeHtml(row.studentId) + '">' +
@@ -68,10 +70,11 @@
                     '<td>' + row.summary.totalIndicators + '</td>' +
                     '<td>' + row.summary.taught + '</td>' +
                     '<td>' + row.summary.practised + '</td>' +
+                    '<td>' + row.stageCompleted + '</td>' +
                     '<td>' + row.summary.assessed + '</td>' +
                     '<td>' + row.summary.covered + '</td>' +
                     '<td>' + row.summary.remaining + '</td></tr>';
-            }).join("") : '<tr><td colspan="7">No students in the selected class.</td></tr>') +
+            }).join("") : '<tr><td colspan="8">No students in the selected class.</td></tr>') +
             '</tbody></table></div>' +
             '<div id="pacificEducationSelectedStudentProgress"></div>' +
             '<p><small>Prototype only. This dashboard does not establish production authorization or identity.</small></p>' +
