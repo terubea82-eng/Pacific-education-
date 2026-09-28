@@ -64,7 +64,7 @@ jobs:
             echo "- Required pilot files: PASS"
             echo "- Eight pilot roles wired: PASS"
             echo "- Production gate remains BLOCKED: PASS"
-            echo "- Live GitHub Pages pilot URL reachable: PASS"
+            echo "- GitHub Pages deployment: verified by the Pages workflow; external HTTP check may lag propagation"
             echo ""
             echo "Pilot URL: https://terubea82-eng.github.io/Pacific-education-/"
           } >> "$GITHUB_STEP_SUMMARY"
