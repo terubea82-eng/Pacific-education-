@@ -46,6 +46,7 @@ function observeAuthState(callback) {
 }
 
 console.info("Pacific Education Firebase initialized");
+alert("Firebase module loaded.");
 
 window.PacificEducationFirebase = {
     app,
