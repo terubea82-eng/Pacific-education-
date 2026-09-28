@@ -618,6 +618,25 @@ function submitPacificGuardianComment() {
 </div>
 <p id="firebaseAuthStatus" aria-live="polite">Checking account status...</p>
 </section>
+<section id="pilotFeedback" aria-labelledby="pilotFeedbackHeading">
+<h2 id="pilotFeedbackHeading">Pilot Feedback</h2>
+<p>Share your feedback about the Pacific Education controlled pilot.</p>
+<label for="pilotFeedbackCategory">Category</label>
+<select id="pilotFeedbackCategory">
+<option value="general">General</option>
+<option value="lesson">Lessons</option>
+<option value="assessment">Assessment</option>
+<option value="dashboard">Dashboard</option>
+<option value="accessibility">Accessibility</option>
+<option value="technical">Technical issue</option>
+</select>
+<label for="pilotFeedbackMessage">Feedback</label>
+<textarea id="pilotFeedbackMessage" rows="5" maxlength="2000" placeholder="Enter your feedback"></textarea>
+<button type="button" id="pilotFeedbackSubmit">Submit Feedback</button>
+<p id="pilotFeedbackStatus" aria-live="polite"></p>
+</section>
 <script type="module" src="js/pacificEducationFirebase.js"></script>
-\n</body>
+
+</body>
 </html>
+
