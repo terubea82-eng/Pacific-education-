@@ -57,15 +57,13 @@ html[data-text-scale="large"]{font-size:112.5%}html[data-text-scale="x-large"]{f
 </nav>
 </section>
 
-<section id="prototypeAccess"><h2>Prototype Access</h2><p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session. It is not identity verification, authentication, authorization for real users, or production access.</p>
-<button type="button" id="prototypeAuthorizeButton" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
-<span id="prototypeAccessStatus" aria-live="polite">Checking authorization...</span></section>
-
 <section id="levelSelection"><h2>Learning Level</h2><div id="pacificEducationLevelSelector"></div></section>
 
 <section id="subjectSelection"><h2>Curriculum Subject</h2><div id="pacificEducationSubjectSelector"></div></section>
 
 <section id="termSelection"><h2>School Term</h2><div id="pacificEducationTermSelector"></div></section>
+
+
 
 <section id="teacherCalendarSection">
 <div id="pacificEducationTeacherCalendar"></div><div id="pacificEducationCoverageDashboard"></div><div id="pacificEducationTeacherClassRoster"></div><div id="pacificEducationTeacherClassDashboard"></div><div id="pacificEducationStudentProgressDashboard"></div>
@@ -86,6 +84,10 @@ html[data-text-scale="large"]{font-size:112.5%}html[data-text-scale="x-large"]{f
 <div id="pacificEducationExternalAuthorizationCheckRequest"></div><div id="pacificEducationExternalAuthorizationResponseRegistry"></div><div id="pacificEducationExternalAuthorizationResponseValidationGate"></div><div id="pacificEducationFinalReleaseDecisionPackage"></div>
 <div id="pacificEducationFinalReleaseDecisionAcknowledgement"></div><div id="pacificEducationFinalReleaseDecisionVerificationGate"></div><div id="pacificEducationOwnerFinalReviewPage"></div><div id="pacificEducationNextStageControl"></div>
 <div id="pacificEducationCurriculumProductionReadinessGate"></div><div id="pacificEducationCurriculumVerificationAudit"></div><div id="pacificEducationStudentCoverageContext"></div><div id="pacificEducationTeacherEvidence"></div></section>
+
+<section id="prototypeAccess"><h2>Prototype Access</h2><p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session. It is not identity verification, authentication, authorization for real users, or production access.</p>
+<button type="button" id="prototypeAuthorizeButton" onclick="authorizePrototypeStudent()">Start Authorized Student Test</button>
+<span id="prototypeAccessStatus" aria-live="polite">Checking authorization...</span></section>
 
 <section id="dailyLesson"><h2>Daily Lesson</h2><p><strong>Day:</strong> <span id="dailyLessonDay">1</span></p><h3 id="dailyLessonTitle">Daily Lesson</h3><div id="dailyLessonActivity"><p>Loading today's learning activity...</p></div><div id="dailyLessonPractice"></div><button type="button" onclick="completeLesson()">Complete Lesson</button></section>
 
