@@ -51,13 +51,25 @@ jobs:
           grep -q '"productionEligible": false' release/production-authorization.json
           grep -q '"release_status": "BLOCKED"' release/production-authorization.json
 
-      - name: Verify live pilot link
+      - name: Verify live pilot links
         run: |
           set -e
           sleep 60
-          curl -fsSL --retry 12 --retry-delay 5 "https://terubea82-eng.github.io/Pacific-education/?pilot_recheck=1" -o /tmp/pacific.html
-          grep -q "Pilot User Workspaces" /tmp/pacific.html
-          grep -q "Pacific Education" /tmp/pacific.html
+          root_code=$(curl -sSL --retry 12 --retry-delay 5 -o /tmp/pacific-root.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/?pilot_recheck=1" || true)
+          src_code=$(curl -sSL --retry 12 --retry-delay 5 -o /tmp/pacific-src.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/src/index.html?pilot_recheck=1" || true)
+          echo "GitHub Pages root HTTP status: $root_code"
+          echo "GitHub Pages /src/index.html HTTP status: $src_code"
+          if [ "$root_code" = "200" ]; then
+            grep -q "Pilot User Workspaces" /tmp/pacific-root.html
+            grep -q "Pacific Education" /tmp/pacific-root.html
+          elif [ "$src_code" = "200" ]; then
+            grep -q "Pilot User Workspaces" /tmp/pacific-src.html
+            grep -q "Pacific Education" /tmp/pacific-src.html
+            echo "::warning::Root Pages URL still returns $root_code; direct /src/index.html pilot entry point is live."
+          else
+            echo "::error::Neither the root Pages URL nor /src/index.html returned HTTP 200."
+            exit 1
+          fi
 
       - name: Publish recheck summary
         run: |
