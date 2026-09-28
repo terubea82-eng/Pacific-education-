@@ -10,6 +10,7 @@ on:
       - "PILOT_100_USER_APK_DISTRIBUTION.md"
       - "PILOT_READY_CHECKLIST.md"
       - "release/production-authorization.json"
+      - "automation/**"
       - ".github/workflows/pilot-recheck.yml"
   workflow_dispatch:
 
