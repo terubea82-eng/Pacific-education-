@@ -1,7 +1,7 @@
 name: Android Pilot Build
 # Controlled pilot build. Release signing is enabled only when owner-controlled
 # GitHub Actions signing secrets are present; the keystore is never committed.
-# Rebuilds on Android/workflow changes so the current main branch is packaged.
+# Rebuilds on pilot web, Android, and workflow changes so current main is packaged.
 on:
   workflow_dispatch:
   push:
