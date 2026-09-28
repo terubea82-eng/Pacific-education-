@@ -46,7 +46,11 @@
             addedBy:input.addedBy||"owner-review-required",
             addedAt:input.addedAt||new Date().toISOString(),
             prototype:true,
-            productionEligible:false
+            productionEligible:false,
+            level:input.level||"",
+            subjectId:input.subjectId||"",
+            term:input.term||"",
+            concept:input.concept||""
         };
 
         var items=read();
