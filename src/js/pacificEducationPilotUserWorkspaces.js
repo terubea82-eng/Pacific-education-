@@ -31,7 +31,11 @@
       "<h2>Pilot User Workspaces</h2>" +
       "<p><strong>Controlled pilot:</strong> Select a role to preview its workspace. This is a synthetic demonstration and is not production authentication.</p>" +
       '<label for="pilotRoleSelector"><strong>User role</strong></label> ' +
-      '<select id="pilotRoleSelector" aria-label="Pilot user role"></select>' +
+      '<select id="pilotRoleSelector" aria-label="Pilot user role" required>' +
+      '<option value="" selected disabled>Select your mandatory pilot role</option>' +
+      '</select>' +
+      '<div id="pilotWorkspaceGate" role="status" aria-live="polite" style="margin-top:10px;padding:10px;border:1px solid currentColor;">' +
+      '<strong>Pilot workspace selection is mandatory.</strong> Select your role before continuing with pilot activities.</div>' +
       '<div id="pilotRoleWorkspace" style="margin-top:12px;"></div>' +
       '<p style="font-size:.9em;"><strong>Privacy:</strong> Use test/demo data only. Real child identity, passwords, payment details and exact location must not be entered during the pilot.</p>';
     app.insertBefore(section, document.getElementById("dailyLesson") || null);
@@ -44,8 +48,32 @@
       select.appendChild(option);
     });
 
+    function setPilotActivityGate(enabled) {
+      var controls = document.querySelectorAll("main button, main select, main input, main textarea");
+      Array.prototype.forEach.call(controls, function (el) {
+        if (el.id === "pilotRoleSelector" || el.closest("#pacificEducationPilotUserWorkspaces")) return;
+        if (enabled) {
+          if (el.dataset.pilotGateDisabled === "true") {
+            el.disabled = false;
+            delete el.dataset.pilotGateDisabled;
+          }
+        } else {
+          el.disabled = true;
+          el.dataset.pilotGateDisabled = "true";
+        }
+      });
+    }
+
     function renderRole(roleId) {
-      var role = roles.filter(function (r) { return r.id === roleId; })[0] || roles[0];
+      var role = roles.filter(function (r) { return r.id === roleId; })[0];
+      var gate = document.getElementById("pilotWorkspaceGate");
+      if (!role) {
+        document.getElementById("pilotRoleWorkspace").innerHTML = "";
+        gate.innerHTML = "<strong>Pilot workspace selection is mandatory.</strong> Select a role before continuing with pilot activities.";
+        setPilotActivityGate(false);
+        return;
+      }
+      gate.innerHTML = "<strong>Mandatory pilot workspace selected:</strong> " + esc(role.title) + ". You may now continue testing.";
       var workspace = document.getElementById("pilotRoleWorkspace");
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
@@ -59,8 +87,18 @@
       };
     }
 
-    select.onchange = function () { renderRole(select.value); };
-    renderRole("student");
+    select.onchange = function () {
+      renderRole(select.value);
+      if (select.value) {
+        try { window.sessionStorage.setItem("pacificEducationPilotRole", select.value); } catch (e) {}
+      }
+    };
+    var savedRole = "";
+    try { savedRole = window.sessionStorage.getItem("pacificEducationPilotRole") || ""; } catch (e) {}
+    if (roles.some(function (r) { return r.id === savedRole; })) {
+      select.value = savedRole;
+    }
+    renderRole(select.value);
     window.PacificEducationPilotUserWorkspaces = { roles: roles, render: render };
   }
 
