@@ -188,3 +188,25 @@ window.PacificEducationFirebase.createOrUpdateUserProfile =
 
 window.PacificEducationFirebase.getUserProfile =
     getUserProfile;
+
+async function submitPilotFeedback(feedback) {
+    const user = auth.currentUser;
+
+    if (!user || !user.uid) {
+        throw new Error("Authenticated user is required.");
+    }
+
+    const feedbackRef = doc(db, "feedback", crypto.randomUUID());
+
+    await setDoc(feedbackRef, {
+        uid: user.uid,
+        message: String(feedback?.message || "").trim(),
+        category: String(feedback?.category || "general"),
+        createdAt: serverTimestamp()
+    });
+
+    return feedbackRef;
+}
+
+window.PacificEducationFirebase.submitPilotFeedback =
+    submitPilotFeedback;
