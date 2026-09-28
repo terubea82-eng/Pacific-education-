@@ -9,6 +9,7 @@ on:
       - "docs/**"
       - "PILOT_100_USER_APK_DISTRIBUTION.md"
       - "PILOT_READY_CHECKLIST.md"
+      - "404.html"
       - "release/production-authorization.json"
       - "automation/**"
       - ".github/workflows/pilot-recheck.yml"
