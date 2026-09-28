@@ -74,7 +74,7 @@
         var filters = { studentId: studentId };
         var summary = e.summarize(filters);
         var records = e.list(filters);
-        var remaining = e.getRemaining(filters);
+        var remaining = e.getRemaining(filters);\n        var stageRecords = records.filter(function(item){ return item && item.evidenceType === "indicator-stage"; });\n        var stageCompleted = stageRecords.length;
 
         var currentDay = 1;
         try {
@@ -148,7 +148,7 @@
                 " integrated subject connection(s) available." :
                 "Integration plan unavailable."
             ) + '</p>' +
-            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div><h3>Current Assessment Evidence</h3>' +
+            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div><h3>Achievement Indicator Stages</h3><p><strong>Stages recorded:</strong> " + stageCompleted + " &nbsp; | &nbsp; Teach → Guided Practice → Independent Practice → Application → Check → Remedial / Extension</p><p>Stage completion is recorded as pilot practice evidence for the selected learner.</p><h3>Current Assessment Evidence</h3>' +
             '<p>' + (assessments.length ?
                 escapeHtml(String(assessments.length) + " assessment record(s) linked.") :
                 "No assessment records linked to the current indicator.") + '</p>' +
