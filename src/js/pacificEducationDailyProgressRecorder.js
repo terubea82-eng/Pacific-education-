@@ -74,6 +74,10 @@
         }
 
         var records = [];
+        var automaticStage = null;
+        if (input.evidenceType === "daily-lesson-completion") automaticStage = "teach";
+        else if (input.evidenceType === "daily-practice") automaticStage = "independent-practice";
+        else if (input.evidenceType === "daily-assessment") automaticStage = "check-assessment";
         indicators.forEach(function(item) {
             var indicator = item.indicator || item;
             if (!indicator || !indicator.id) return;
@@ -87,6 +91,19 @@
                 notes: input.notes || ("Daily lesson completed — Day " + config.dayNumber),
                 date: input.date || new Date().toISOString().slice(0, 10)
             }));
+            if (automaticStage) {
+                records.push(coverage.record({
+                    indicatorId: indicator.id,
+                    studentId: config.studentId,
+                    status: input.status || "taught",
+                    evidenceType: "indicator-stage",
+                    stageType: automaticStage,
+                    activityType: automaticStage,
+                    teacherConfirmed: input.teacherConfirmed === true,
+                    notes: "Automatic stage evidence from " + String(input.evidenceType) + " — Day " + config.dayNumber,
+                    date: input.date || new Date().toISOString().slice(0, 10)
+                }));
+            }
         });
 
         document.dispatchEvent(new CustomEvent("pacificEducationDailyProgressRecorded"));
