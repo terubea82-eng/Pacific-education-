@@ -38,7 +38,7 @@
       '<strong>Pilot workspace selection is mandatory.</strong> Select your role before continuing with pilot activities.</div>' +
       '<div id="pilotRoleWorkspace" style="margin-top:12px;"></div>' +
       '<p style="font-size:.9em;"><strong>Privacy:</strong> Use test/demo data only. Real child identity, passwords, payment details and exact location must not be entered during the pilot.</p>';
-    app.insertBefore(section, document.getElementById("dailyLesson") || null);
+    app.insertBefore(section, document.getElementById("learningPlatform") || document.getElementById("dailyLesson") || null);
 
     var select = document.getElementById("pilotRoleSelector");
     roles.forEach(function (role) {
