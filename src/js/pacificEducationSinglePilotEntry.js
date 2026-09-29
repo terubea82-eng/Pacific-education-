@@ -18,7 +18,7 @@
     student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "pacificEducationTermBaseline", "assessments", "pacificEducationStudentProgressDashboard", "pacificEducationHomeSubmission", "pacificEducationTransferIntake", "pacificGuardianCommentSection"],
     teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     "special-education": ["teacherDashboard", "specialEducationDashboard", "specialEducationReviewEvidence", "pacificEducationTeacherClassDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
-    parent: ["parentDashboard", "parentAlphabetAssessment", "parentPhonicsAssessment", "parentLearningStatus", "pacificGuardianCommentSection"],
+    parent: ["parentDashboard", "pacificGuardianCommentSection"],
     professional: ["pacificEducationWebsitePilotChecklist", "pacificEducationExternalReviewerPortal", "pacificEducationExternalSpecialistReviewEvidenceRegistry", "pacificEducationExternalSpecialistReviewEvidenceLog", "pacificGuardianCommentSection"],
     ngo: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificGuardianCommentSection"],
     education: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationCurriculumMasterControlStatus", "pacificEducationCurriculumEvidenceRegistry", "pacificEducationCurriculumEvidenceTraceability", "pacificGuardianCommentSection"],
@@ -169,7 +169,7 @@
     }
   }
 
-  function registerRole(role) {
+  function authorizePrototypeStudent() {\n    authorizeStudent();\n    var status = document.getElementById("prototypeAccessStatus");\n    if (status) status.textContent = "Authorized synthetic Student pilot session. Production authorization remains locked.";\n    showRoute("student");\n  }\n\n  function registerRole(role) {
     if (!role) return;
 
     safeSet("pacificEducationPilotRole", role);
@@ -250,7 +250,7 @@
     });
   }
 
-  function guardianCommentBridge() {
+  window.authorizePrototypeStudent = authorizePrototypeStudent;\n\n  function guardianCommentBridge() {
     window.submitPacificGuardianComment = function () {
       var input = document.getElementById("pacificGuardianComment");
       var status = document.getElementById("pacificGuardianCommentStatus");
