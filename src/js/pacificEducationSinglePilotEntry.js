@@ -129,6 +129,32 @@
       if (subject) subject.hidden = false;
       if (term) term.hidden = false;
       if (capability) capability.hidden = false;
+
+      /* Student workspace must initialize its own learning controls after routing. */
+      try {
+        if (window.PacificEducationLevelSelector && typeof window.PacificEducationLevelSelector.initialise === "function") {
+          window.PacificEducationLevelSelector.initialise();
+        }
+        if (window.PacificEducationSubjectSelector && typeof window.PacificEducationSubjectSelector.initialise === "function") {
+          window.PacificEducationSubjectSelector.initialise();
+        }
+        if (window.PacificEducationTermSelector && typeof window.PacificEducationTermSelector.initialise === "function") {
+          window.PacificEducationTermSelector.initialise();
+        }
+        if (window.PacificEducationCapabilitySelector && typeof window.PacificEducationCapabilitySelector.initialise === "function") {
+          window.PacificEducationCapabilitySelector.initialise();
+        }
+        if (window.PacificEducationCurriculumLessonRenderer && typeof window.PacificEducationCurriculumLessonRenderer.refresh === "function") {
+          window.PacificEducationCurriculumLessonRenderer.refresh();
+        } else if (typeof window.displayDailyLesson === "function") {
+          window.displayDailyLesson();
+        }
+        if (window.PacificEducationStudentProgressDashboardUI && typeof window.PacificEducationStudentProgressDashboardUI.render === "function") {
+          window.PacificEducationStudentProgressDashboardUI.render("pacificEducationStudentProgressDashboard");
+        }
+      } catch (studentWorkspaceError) {
+        console.warn("Pacific Education: student pilot workspace initialization recovered from an error.", studentWorkspaceError);
+      }
     }
 
     var nav = document.getElementById("userFirstNavigation");
