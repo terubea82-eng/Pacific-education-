@@ -31,18 +31,32 @@ jobs:
           set -e
           test -f src/index.html
           test -f src/js/pacificEducationPilotUserWorkspaces.js
+          test -f src/js/pacificEducationForm1To7ScienceHealth.js
+          test -f src/js/pacificEducationSubjectSelector.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
           test -f PILOT_READY_CHECKLIST.md
           test -f release/production-authorization.json
 
-      - name: Verify all eight pilot roles are wired
+      - name: Verify all pilot roles are wired
         run: |
           set -e
-          roles="student teacher parent professional ngo education community owner"
+          roles="student teacher special-education parent professional ngo education community owner"
           for role in $roles; do
             grep -Fq 'id:"'$role'"' src/js/pacificEducationPilotUserWorkspaces.js
           done
           grep -Fq 'pacificEducationPilotUserWorkspaces.js' src/index.html
+
+      - name: Verify Form 1-7 Science and Health pilot coverage
+        run: |
+          set -e
+          for subject in "Health Science" "Basic Science" "Elementary Science" "Biology" "Chemistry" "Physics"; do
+            grep -Fq 'id:"'$subject'"' src/js/pacificEducationForm1To7ScienceHealth.js
+            grep -Fq 'id: "'$subject'"' src/js/pacificEducationSubjectSelector.js
+          done
+          grep -Fq 'Form 1' src/js/pacificEducationForm1To7ScienceHealth.js
+          grep -Fq 'Form 7' src/js/pacificEducationForm1To7ScienceHealth.js
+          grep -Fq 'curriculumVerification:"required-before-production"' src/js/pacificEducationForm1To7ScienceHealth.js
+          grep -Fq 'verified:false' src/js/pacificEducationForm1To7ScienceHealth.js
 
       - name: Verify production remains fail-closed
         run: |
@@ -50,6 +64,13 @@ jobs:
           grep -q '"productionApproved": false' release/production-authorization.json
           grep -q '"productionEligible": false' release/production-authorization.json
           grep -q '"release_status": "BLOCKED"' release/production-authorization.json
+
+      - name: Verify pilot boundary does not require production authorization
+        run: |
+          set -e
+          grep -Fq 'pilotOnly' src/js/pacificEducationPacificGuardian.js
+          grep -Fq 'productionAuthority:false' src/js/pacificEducationPacificGuardian.js
+          grep -Fq 'productionApproval:false' src/js/pacificEducationPacificGuardian.js
 
       - name: Verify live pilot links
         run: |
@@ -78,9 +99,11 @@ jobs:
           {
             echo "## Pacific Education pilot recheck"
             echo "- Required pilot files: PASS"
-            echo "- Eight pilot roles wired: PASS"
+            echo "- All pilot roles wired: PASS"
+            echo "- Form 1-7 Science and Health pilot coverage: PASS"
             echo "- Production gate remains BLOCKED: PASS"
-            echo "- GitHub Pages deployment: verified by the Pages workflow; external HTTP check may lag propagation"
+            echo "- Pilot boundary remains separate from production authorization: PASS"
+            echo "- GitHub Pages deployment: verified by live HTTP check"
             echo ""
             echo "Pilot URL: https://terubea82-eng.github.io/Pacific-education-/"
           } >> "$GITHUB_STEP_SUMMARY"
