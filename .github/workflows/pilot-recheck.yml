@@ -90,7 +90,7 @@ jobs:
           set -e
           grep -Fq 'pacificEducationInteractionRepair.js' src/index.html
           grep -Fq 'window.PacificEducationInteractionRepair' src/js/pacificEducationInteractionRepair.js
-          grep -Fq 'window.submitPacificGuardianComment' src/js/pacificEducationGuardianReviewController.js
+          grep -Eq '(window|global)\.submitPacificGuardianComment|function submitPacificGuardianComment' src/js/pacificEducationGuardianReviewController.js
           grep -Fq 'peActivityRecord' src/js/pacificEducationLearnerActivityRuntime.js
           grep -Fq 'pacificGuardianCommentStatus' src/index.html
           grep -Fq 'pacificEducationDashboardReviewCommentSection' src/index.html
