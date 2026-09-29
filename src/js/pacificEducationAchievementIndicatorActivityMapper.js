@@ -42,7 +42,9 @@
         });
     }
 
-    function indicatorAction(text){var t=String(text||"").toLowerCase();if(/collect|gather|identify/.test(t))return "collect or identify evidence";if(/sort|classif|compare|contrast/.test(t))return "sort, classify, compare or contrast evidence";if(/describe|discuss|explain/.test(t))return "describe, discuss or explain using evidence";if(/demonstrate|practise|practice/.test(t))return "demonstrate the required skill with observable evidence";if(/draw|budget|calculate|measure/.test(t))return "produce the required calculation, record, drawing or model";if(/report|compile|create|develop/.test(t))return "produce and communicate a supported response";return "demonstrate understanding through evidence and explanation";}\n\n    function makeActivities(indicator){
+    function indicatorAction(text){var t=String(text||"").toLowerCase();if(/collect|gather|identify/.test(t))return "collect or identify evidence";if(/sort|classif|compare|contrast/.test(t))return "sort, classify, compare or contrast evidence";if(/describe|discuss|explain/.test(t))return "describe, discuss or explain using evidence";if(/demonstrate|practise|practice/.test(t))return "demonstrate the required skill with observable evidence";if(/draw|budget|calculate|measure/.test(t))return "produce the required calculation, record, drawing or model";if(/report|compile|create|develop/.test(t))return "produce and communicate a supported response";return "demonstrate understanding through evidence and explanation";}
+
+    function makeActivities(indicator){
         var id=String(indicator.id||indicator.indicatorId||indicator.rowId||"indicator");
         var text=String(indicator.indicatorText||indicator.achievementIndicator||"");
         if(!text)return [];
