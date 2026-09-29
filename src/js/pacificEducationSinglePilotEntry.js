@@ -169,7 +169,14 @@
     }
   }
 
-  function authorizePrototypeStudent() {\n    authorizeStudent();\n    var status = document.getElementById("prototypeAccessStatus");\n    if (status) status.textContent = "Authorized synthetic Student pilot session. Production authorization remains locked.";\n    showRoute("student");\n  }\n\n  function registerRole(role) {
+  function authorizePrototypeStudent() {
+    authorizeStudent();
+    var status = document.getElementById("prototypeAccessStatus");
+    if (status) status.textContent = "Authorized synthetic Student pilot session. Production authorization remains locked.";
+    showRoute("student");
+  }
+
+  function registerRole(role) {
     if (!role) return;
 
     safeSet("pacificEducationPilotRole", role);
@@ -250,7 +257,9 @@
     });
   }
 
-  window.authorizePrototypeStudent = authorizePrototypeStudent;\n\n  function guardianCommentBridge() {
+  window.authorizePrototypeStudent = authorizePrototypeStudent;
+
+  function guardianCommentBridge() {
     window.submitPacificGuardianComment = function () {
       var input = document.getElementById("pacificGuardianComment");
       var status = document.getElementById("pacificGuardianCommentStatus");
