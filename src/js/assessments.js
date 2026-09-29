@@ -21,7 +21,27 @@ const assessmentData = {
     }
 };
 
-function speakAssessmentQuestion(question) {\n    if (typeof speakText === "function") speakText(String(question || ""));\n}\n\nfunction renderAudioControls(question) {\n    var safeQuestion = escapeHTML(String(question || ""));\n    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label></div>`;\n}\n\nfunction startAssessment(type) {
+function speakAssessmentQuestion(question) {    if (typeof speakText === "function") speakText(String(question || ""));}function renderAudioControls(question) {    var safeQuestion = escapeHTML(String(question || ""));    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label></div>`;}function readFormalAssessmentAudio(done) {
+    var input=document.getElementById("peActivityAudio"), file=input&&input.files&&input.files[0];
+    if(!file){done("");return;}
+    var reader=new FileReader();
+    reader.onload=function(){done(String(reader.result||""));};
+    reader.onerror=function(){done("");};
+    reader.readAsDataURL(file);
+}
+function saveFormalAssessmentEvidence(type, questionNumber, questionText, selectedAnswer, audioDataUrl) {
+    if(!audioDataUrl) return;
+    var key="pacificEducationHomeSubmissions", items=[];
+    try{items=JSON.parse(localStorage.getItem(key)||"[]");}catch(e){items=[];}
+    var state=window.PacificEducationCore&&typeof window.PacificEducationCore.getState==="function"?window.PacificEducationCore.getState():{};
+    var student=state&&state.student?state.student:{};
+    var item={submissionId:"formal-audio-"+type+"-"+Date.now()+"-"+questionNumber,studentId:student.studentId||student.id||"pilot-student-demo",studentName:student.name||"Student",classLevel:localStorage.getItem("pacificEducationLevel")||"",subject:localStorage.getItem("pacificEducationSubject")||"",term:localStorage.getItem("pacificEducationTerm")||"",type:"formal-assessment-audio",activityType:type,day:type==="alphabet"?30:60,answers:[{questionNumber:questionNumber,question:questionText,answer:selectedAnswer||""}],audioDataUrl:audioDataUrl,imageDataUrl:"",status:"pending-special-education-review",mark:null,specialEducationMark:null,specialEducationComment:"",specialEducationReviewedAt:null,teacherGuidance:"",teacherAuthorizationComment:"",teacherAuthorizedAt:null,submittedAt:new Date().toISOString(),reviewedAt:null};
+    items.push(item);
+    localStorage.setItem(key,JSON.stringify(items.slice(-100)));
+    var f=window.PacificEducationFirebase;
+    if(f&&typeof f.submitHomeSubmission==="function")f.submitHomeSubmission(item).catch(function(e){console.warn("Formal assessment audio sync deferred:",e);});
+}
+function startAssessment(type) {
     const assessment = assessmentData[type];
     if (!assessment) { alert("Assessment not found."); return; }
     let questionNumber = 0;
@@ -39,13 +59,16 @@ function speakAssessmentQuestion(question) {\n    if (typeof speakText === "func
     window.answerAssessment = function(answer) {
         const question = window.currentAssessmentQuestion;
         if (!question) return;
-        if (String(answer).trim().toLowerCase() === String(question.answer).trim().toLowerCase()) {
-            assessmentScore++;
-            if (typeof speakText === "function") speakText("Correct!");
-        } else if (typeof speakText === "function") speakText("Let's keep practising.");
-        questionNumber++;
-        if (questionNumber < assessment.questions.length) showQuestion();
-        else finishAssessment(type, assessmentScore, assessment.questions.length);
+        readFormalAssessmentAudio(function(audioDataUrl) {
+            saveFormalAssessmentEvidence(type, questionNumber + 1, question.question, answer, audioDataUrl);
+            if (String(answer).trim().toLowerCase() === String(question.answer).trim().toLowerCase()) {
+                assessmentScore++;
+                if (typeof speakText === "function") speakText("Correct!");
+            } else if (typeof speakText === "function") speakText("Lets keep practising.");
+            questionNumber++;
+            if (questionNumber < assessment.questions.length) showQuestion();
+            else finishAssessment(type, assessmentScore, assessment.questions.length);
+        });
     };
     showQuestion();
 }
@@ -80,7 +103,7 @@ function startAlphabetAssessment() { startAssessment("alphabet"); }
 function startPhonicsAssessment() { startAssessment("phonics"); }
 
 window.PacificEducationAssessments = Object.freeze({
-    version: "1.2.0",
+    version: "1.3.0",
     getAssessment: function(type) { return assessmentData[type] || null; },
     start: function(type) { return startAssessment(type); },
     startAlphabet: function() { return startAlphabetAssessment(); },
@@ -183,7 +206,7 @@ window.PacificEducationAssessments = Object.freeze({
                 });
             }
         }
-        if (audioDataUrl) queueAudioForSpecialEducation(type, day, response, audioDataUrl, questionText);\n        showLesson(labels[type] + " — Complete", `<div class="activity"><h3>${escape(message)}</h3><p>Your activity response has been recorded on this device. Signed-in pilot users can also sync progress to the account service.</p><button type="button" onclick="startDailyLesson()">📚 Continue Learning</button></div>`);
+        if (audioDataUrl) queueAudioForSpecialEducation(type, day, response, audioDataUrl, questionText);        showLesson(labels[type] + " — Complete", `<div class="activity"><h3>${escape(message)}</h3><p>Your activity response has been recorded on this device. Signed-in pilot users can also sync progress to the account service.</p><button type="button" onclick="startDailyLesson()">📚 Continue Learning</button></div>`);
     }
 
     function render(type, day, lesson) {
