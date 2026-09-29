@@ -154,6 +154,8 @@
                 studentId: studentId
             }) : null;
 
+        var curriculumIndicators = dailyPlan && Array.isArray(dailyPlan.indicators) ? dailyPlan.indicators.map(function(x){ return x && x.indicator ? x.indicator : x; }).filter(Boolean) : [];
+
         var integration = integrationPlanner() &&
             typeof integrationPlanner().build === "function" ?
             integrationPlanner().build({
