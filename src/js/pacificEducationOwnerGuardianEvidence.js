@@ -34,9 +34,9 @@
 
     section.innerHTML =
       "<h3>Owner / Control — Pacific Guardian Pilot Evidence</h3>" +
-      "<p><strong>Status:</strong> <span id="ownerGuardianEvidenceStatus">Loading...</span></p>" +
+      "<p><strong>Status:</strong> <span id=\"ownerGuardianEvidenceStatus\">Loading...</span></p>" +
       "<p><strong>Important:</strong> This register records pilot evidence only. It does not approve production, authenticate users, or change release eligibility.</p>" +
-      "<div id="ownerGuardianEvidenceList"></div>";
+      "<div id=\"ownerGuardianEvidenceList\"></div>";
 
     anchor.parentNode.insertBefore(section, anchor.nextSibling);
     refresh();
@@ -72,7 +72,7 @@
       var capability = details.capability || details.detail && details.detail.capability || "";
       var nextActivity = details.nextActivity || details.detail && details.detail.nextActivity || "";
 
-      return "<article style="margin:8px 0;padding:10px;border:1px solid currentColor">" +
+      return "<article style=\"margin:8px 0;padding:10px;border:1px solid currentColor\">" +
         "<strong>" + escapeHtml(event.type || "guardian_event") + "</strong>" +
         "<br><small>" + escapeHtml(event.timestamp || "") + "</small>" +
         (reviewStatus ? "<br>Review: " + escapeHtml(reviewStatus) : "") +
