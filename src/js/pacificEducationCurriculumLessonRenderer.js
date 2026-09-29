@@ -32,29 +32,50 @@
 
     function attachActivity(day, lesson) {
         var activity = window.PacificEducationActivity;
-        if (!activity || typeof activity.render !== "function") return false;
         var container = document.getElementById("dailyLesson");
         if (!container) return false;
         var old = document.getElementById("pacificInteractiveActivity");
         if (old) old.remove();
 
-        var type = activityTypeForDay(day);
         var box = document.createElement("section");
         box.id = "pacificInteractiveActivity";
-        box.setAttribute("aria-label", "Interactive learner activity");
+        box.setAttribute("aria-label", "Daily learner activities");
         box.style.marginTop = "1rem";
-        box.innerHTML = "<h3>Interactive Activity — " +
-            (activity.labels && activity.labels[type] ? activity.labels[type] : type) +
-            "</h3><p>Complete this activity as part of today's pilot lesson.</p>";
-        var button = document.createElement("button");
-        button.type = "button";
-        button.textContent = "Start Interactive Activity";
-        button.addEventListener("click", function() {
-            activity.render(type, day, lesson || {});
+        var heading = document.createElement("h3");
+        heading.textContent = "Daily Activities — choose any activity to attempt";
+        box.appendChild(heading);
+
+        var note = document.createElement("p");
+        note.textContent = "Pacific Guardian recommends a pathway based on the learner's current capability. Complete activities in order when the teacher requires the six-stage sequence.";
+        box.appendChild(note);
+
+        var types = window.PacificEducationActivityTypes || ["multiple_choice","true_false","matching","short_answer","long_answer"];
+        var recommended = activityTypeForDay(day);
+
+        types.forEach(function(type) {
+            var card = document.createElement("article");
+            card.style.margin = "0.6rem 0";
+            card.style.padding = "0.7rem";
+            card.style.border = "1px solid #ccc";
+            var title = document.createElement("h4");
+            title.textContent = (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type) + (type === recommended ? " — Recommended" : "");
+            card.appendChild(title);
+            var p = document.createElement("p");
+            p.textContent = "Attempt this daily activity using text or audio where supported.";
+            card.appendChild(p);
+            var button = document.createElement("button");
+            button.type = "button";
+            button.textContent = "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type);
+            button.disabled = !activity || typeof activity.render !== "function";
+            button.addEventListener("click", function() {
+                if (activity && typeof activity.render === "function") activity.render(type, day, lesson || {});
+            });
+            card.appendChild(button);
+            box.appendChild(card);
         });
-        box.appendChild(button);
+
         container.appendChild(box);
-        return true;
+        return !!activity;
     }
 
     function setDay(day){var d=Math.max(1,Math.min(60,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}var core=window.PacificEducationCore;if(core&&typeof core.setLesson==="function"&&typeof core.isAuthorized==="function"&&core.isAuthorized()){try{var state=typeof core.getState==="function"?core.getState():null;var lesson=state&&state.lesson?state.lesson:{};core.setLesson({lessonId:lesson.lessonId||null,day:d,subject:lesson.subject||getSubject(),title:"",concept:lesson.concept||"",status:"not_started"});}catch(e){console.warn("Pacific Education: Core day navigation sync deferred.",e);}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(60,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 60 term days (50 teaching + revision + examination)";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=60;}function renderIndicatorStages(lesson) {
@@ -95,6 +116,18 @@
             if(coverage&&typeof coverage.list==="function"){var coreUser=window.PacificEducationCore&&typeof window.PacificEducationCore.getCurrentUser==="function" ? window.PacificEducationCore.getCurrentUser() : null;existingRecords=coverage.list({studentId:coreUser&&coreUser.userId});}
             var priorComplete=stageOrder.slice(0,currentIndex).every(function(s){return existingRecords.some(function(r){return r&&r.evidenceType==="indicator-stage"&&r.indicatorId===indicatorId&&(r.stageType===s||r.activityType===s);});});
             if(currentIndex>0&&!priorComplete){var locked=document.createElement("p");locked.textContent="Complete the previous stage first.";locked.setAttribute("aria-live","polite");card.appendChild(locked);}
+            var startStage=document.createElement("button");
+            startStage.type="button";
+            startStage.textContent="Start "+(labels[type]||"Stage")+" Activity";
+            startStage.addEventListener("click",function(){
+                var activity=window.PacificEducationActivity;
+                if(activity&&typeof activity.render==="function"){
+                    activity.render(activityTypeForDay(day),day,Object.assign({},lesson||{},{stageType:type,stageActivity:x}));
+                }else{
+                    startStage.textContent="Interactive activity unavailable";
+                }
+            });
+            card.appendChild(startStage);
             var action=document.createElement("button");action.type="button";action.textContent="Mark "+(labels[type]||"Stage")+" Complete";action.disabled=currentIndex>0&&!priorComplete;
             action.addEventListener("click",function(){
                 var recorder=window.PacificEducationDailyProgressRecorder;
@@ -254,7 +287,28 @@ function attachTextAudioControls(targetId, text) {
         };
     }
 
-    function initialise() { connect(); bindNavigation(); refresh(); return status(); }
+    function bindAssessmentButtons() {
+        var alphabet=document.querySelector("button[onclick*='startAlphabetAssessment']");
+        var phonics=document.querySelector("button[onclick*='startPhonicsAssessment']");
+        if(alphabet){
+            alphabet.removeAttribute("onclick");
+            alphabet.addEventListener("click",function(){
+                var api=window.PacificEducationAssessments;
+                if(api&&typeof api.startAlphabet==="function") api.startAlphabet();
+                else if(typeof window.startAlphabetAssessment==="function") window.startAlphabetAssessment();
+            });
+        }
+        if(phonics){
+            phonics.removeAttribute("onclick");
+            phonics.addEventListener("click",function(){
+                var api=window.PacificEducationAssessments;
+                if(api&&typeof api.startPhonics==="function") api.startPhonics();
+                else if(typeof window.startPhonicsAssessment==="function") window.startPhonicsAssessment();
+            });
+        }
+    }
+
+    function initialise() { connect(); bindNavigation(); refresh(); bindAssessmentButtons(); return status(); }
 
     window.PacificEducationCurriculumLessonRenderer = Object.freeze({
         name: "PacificEducationCurriculumLessonRenderer",
