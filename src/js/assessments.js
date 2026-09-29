@@ -272,7 +272,8 @@ window.PacificEducationAssessments = Object.freeze({
         const rows = type === "short_answer" ? 3 : 8;
         const instruction = type === "short_answer" ? "Write a short answer." : "Write a detailed answer with an explanation or example.";
         showLesson(title, '<div class="activity"><p>' + escape(prompt) + '</p>' + audioControls + '<p>' + instruction + '</p><textarea id="peWrittenAnswer" data-question-text="' + dataQuestion + '" rows="' + rows + '" maxlength="' + (type === "short_answer" ? 500 : 2000) + '"></textarea><button type="button" onclick="window.PacificEducationActivity.submitField(\'' + type + '\',' + Number(day) + ',\'peWrittenAnswer\')">Submit Answer</button></div>');
-    }        answer: function(type, day, response) {
+    },
+        answer: function(type, day, response) {
             var lesson = window.PacificEducationCurrentLesson || {};
             var curriculumContext = buildContext(lesson, day);
             readAudioFile(function(audioDataUrl) {
