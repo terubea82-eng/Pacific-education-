@@ -27,6 +27,9 @@
 
     function activityTypeForDay(day) {
         var types = window.PacificEducationActivityTypes || ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
+        var capability = getCapability();
+        var preferred = { remedial: "multiple_choice", developing: "true_false", expected: "short_answer", advanced: "long_answer" }[capability];
+        if (preferred && types.indexOf(preferred) >= 0) return preferred;
         return types[(Math.max(1, Number(day) || 1) - 1) % types.length];
     }
 
@@ -46,7 +49,7 @@
         box.appendChild(heading);
 
         var note = document.createElement("p");
-        note.textContent = "Pacific Guardian recommends a pathway based on the learner's current capability. Complete activities in order when the teacher requires the six-stage sequence.";
+        note.textContent = "Recommended for " + (getCapability() === "remedial" ? "Remedial / Re-teaching" : getCapability() === "developing" ? "Developing / Guided Practice" : getCapability() === "advanced" ? "Advanced / Extension" : "Expected-level / Independent Practice") + ". All five daily activity types remain available to attempt.";
         box.appendChild(note);
 
         var types = window.PacificEducationActivityTypes || ["multiple_choice","true_false","matching","short_answer","long_answer"];
