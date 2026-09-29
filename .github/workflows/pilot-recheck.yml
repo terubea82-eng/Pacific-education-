@@ -42,7 +42,7 @@ jobs:
           test -f src/js/pacificEducationStudentCoverageContext.js
           test -f src/js/pacificEducationTeacherCalendar.js
           test -f src/js/pacificEducationInteractionRepair.js
-          test -f src/js/pacificEducationPilotIntegrityGuard.js
+          test -f js/pacificEducationPilotIntegrityGuard.js
           test -f js/pacificEducationProductionAppShell.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
           test -f PILOT_READY_CHECKLIST.md
@@ -73,7 +73,7 @@ jobs:
       - name: Syntax-check critical JavaScript and interaction layer
         run: |
           set -e
-          node --check src/js/pacificEducationPilotIntegrityGuard.js
+          node --check js/pacificEducationPilotIntegrityGuard.js
           node --check src/js/pacificEducationLearnerActivityRuntime.js
           node --check src/js/pacificEducationInteractionRepair.js
           node --check src/js/pacificEducationCurriculumLessonRenderer.js
@@ -98,11 +98,11 @@ jobs:
           grep -Fq 'submitPacificEducationDashboardReviewComment' src/js/pacificEducationGuardianReviewController.js
           grep -Fq 'pacificEducationStudentCoverageContext.js' src/index.html
           grep -Fq 'pacificEducationTeacherCalendar.js' src/index.html
-          test "$(grep -o 'src/js/pacificEducationPilotIntegrityGuard.js' src/index.html | wc -l)" -eq 1
-          grep -Fq 'window.PacificEducationPilotIntegrityGuard' src/js/pacificEducationPilotIntegrityGuard.js
-          grep -Eq 'productionAuthority:[[:space:]]*false' src/js/pacificEducationPilotIntegrityGuard.js
-          grep -Eq 'productionApproval:[[:space:]]*false' src/js/pacificEducationPilotIntegrityGuard.js
-          grep -Eq 'productionEligible:[[:space:]]*false' src/js/pacificEducationPilotIntegrityGuard.js
+          test "$(grep -o 'js/pacificEducationPilotIntegrityGuard.js' src/index.html | wc -l)" -eq 1
+          grep -Fq 'window.PacificEducationPilotIntegrityGuard' js/pacificEducationPilotIntegrityGuard.js
+          grep -Eq 'productionAuthority:[[:space:]]*false' js/pacificEducationPilotIntegrityGuard.js
+          grep -Eq 'productionApproval:[[:space:]]*false' js/pacificEducationPilotIntegrityGuard.js
+          grep -Eq 'productionEligible:[[:space:]]*false' js/pacificEducationPilotIntegrityGuard.js
 
       - name: Verify daily activity runtime
         run: |
