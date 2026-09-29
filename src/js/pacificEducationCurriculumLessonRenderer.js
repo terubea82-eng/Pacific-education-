@@ -147,6 +147,7 @@
                         context.activity.choices = pilotMultipleChoice.options.slice();
                         context.activity.answerOptions = pilotMultipleChoice.options.slice();
                         context.activity.answerIndex = pilotMultipleChoice.answerIndex;
+                        context.activity.answerKey = pilotMultipleChoice.answerIndex !== null && pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] !== undefined ? pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] : null;
                     }
                     context.activity.contentBasis = (lesson && lesson.activity && lesson.activity.contentBasis) || "concept-based-pilot-prototype";
                     context.questionText = question;
@@ -392,7 +393,34 @@ function attachTextAudioControls(targetId, text) {
         button.textContent = "Open Selected Day";
         button.setAttribute("data-pacific-action", "open-selected-day");
         button.addEventListener("click", function() {
-            setDay(Number(select.value));
+            var selectedDay = Number(select.value);
+            setDay(selectedDay);
+            window.setTimeout(function() {
+                var runtime = window.PacificEducationActivity;
+                if (runtime && typeof runtime.render === "function") {
+                    var subject = getSubject();
+                    var mc = buildPilotMultipleChoice(null, subject);
+                    runtime.render("multiple_choice", selectedDay, {
+                        dayNumber: selectedDay,
+                        level: getLevel(),
+                        subjectId: subject,
+                        term: getTerm(),
+                        title: getLevel() + " — " + subject + " — Day " + selectedDay,
+                        activity: {
+                            questionText: mc.question,
+                            options: mc.options,
+                            choices: mc.options,
+                            answerOptions: mc.options,
+                            answerIndex: mc.answerIndex,
+                            answerKey: mc.answerIndex !== null && mc.options[mc.answerIndex] !== undefined ? mc.options[mc.answerIndex] : null,
+                            audioText: mc.question,
+                            contentBasis: "concept-based-pilot-prototype"
+                        }
+                    });
+                    var activityPanel = document.getElementById("dailyLessonActivity");
+                    if (activityPanel) activityPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }, 150);
             var target = document.getElementById("dailyLesson");
             if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
         });
