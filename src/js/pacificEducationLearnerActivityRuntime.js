@@ -155,7 +155,20 @@
     if (type === "true_false") {
       body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button>';
     } else if (type === "multiple_choice") {
-      body += '<p>Enter your selected answer.</p><input id="peWrittenAnswer" placeholder="Type your selected answer"><button type="button" id="peActivitySubmit">Submit Answer</button>';
+      var choices = [];
+      var activitySource = lesson && lesson.activity ? lesson.activity : {};
+      var rawChoices = activitySource.options || activitySource.choices || activitySource.answerOptions || (lesson && (lesson.options || lesson.choices || lesson.answerOptions));
+      if (Array.isArray(rawChoices)) choices = rawChoices.slice(0, 6);
+      if (!choices.length && Array.isArray(activitySource.multipleChoiceOptions)) choices = activitySource.multipleChoiceOptions.slice(0, 6);
+      if (choices.length) {
+        body += '<p>Select one answer:</p><div id="peMultipleChoiceOptions" role="group" aria-label="Multiple choice answers">';
+        choices.forEach(function(option, index) {
+          body += '<button type="button" class="pe-multiple-choice-option" data-option-index="' + index + '">' + escape(option) + '</button>';
+        });
+        body += '</div>';
+      } else {
+        body += '<p>Select or enter your answer:</p><input id="peWrittenAnswer" placeholder="Type your selected answer"><button type="button" id="peActivitySubmit">Submit Answer</button>';
+      }
     } else if (type === "matching") {
       body += '<input id="peMatchAnswer" placeholder="Enter your matching answer"><button type="button" id="peActivitySubmit">Submit Match</button>';
     } else {
@@ -219,6 +232,14 @@
       var input = document.getElementById(type === "matching" ? "peMatchAnswer" : "peWrittenAnswer");
       complete(type, input ? input.value : "");
     });
+
+    var choiceButtons = document.querySelectorAll(".pe-multiple-choice-option");
+    for (var ci = 0; ci < choiceButtons.length; ci += 1) {
+      choiceButtons[ci].addEventListener("click", function() {
+        var selected = this.textContent || "";
+        complete("multiple_choice", selected);
+      });
+    }
 
     var yes = document.getElementById("peActivityTrue");
     if (yes) yes.addEventListener("click", function() { complete(type, "True"); });
