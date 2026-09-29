@@ -52,7 +52,9 @@
       ["Adaptive learning controller", !!window.PacificEducationAdaptiveLearningController],
       ["Student progress dashboard", !!window.PacificEducationStudentProgressDashboard],
       ["Controlled pilot boundary", true],
-      ["Production authority remains fail-closed", true]
+      ["Production authority remains fail-closed", true],
+      ["End-to-end evidence chain", !!window.PacificEducationGuardianReviewController],
+      ["Pilot release evidence register", true]
     ];
     var results = checks.map(function (c) { return {name:c[0], passed:!!c[1]}; });
     write(TEST_KEY, results);
@@ -77,7 +79,7 @@
       "<button type='button' data-stakeholder='NGO / Organization'>Record NGO / Organization review</button>" +
       "<button type='button' data-stakeholder='Education / Government'>Record Education / Government review</button>" +
       "<button type='button' data-stakeholder='Community / Partner'>Record Community / Partner review</button>" +
-      "<button type='button' id='runPacificEducationPilotVerification'>Run full pilot verification</button></div>" +
+      "<button type='button' id='runPacificEducationPilotVerification'>Run full pilot verification</button><button type='button' id='recordPacificEducationPilotReleaseEvidence'>Record pilot release verification</button></div>" +
       "<div id='pacificEducationStakeholderStatus' role='status'>Pilot evidence only. No production approval.</div>" +
       "<div id='pacificEducationPilotVerificationResults'></div>";
     app.appendChild(section);
@@ -89,6 +91,12 @@
         document.getElementById("pacificEducationStakeholderStatus").textContent =
           type + " pilot evidence recorded. Production authority remains false.";
       });
+    });
+
+    document.getElementById("recordPacificEducationPilotReleaseEvidence").addEventListener("click", function () {
+      record("pilot-release-verification", "Controlled pilot release evidence reviewed; production authorization remains false.");
+      document.getElementById("pacificEducationStakeholderStatus").textContent =
+        "Pilot release verification recorded. This does not authorize production.";
     });
 
     document.getElementById("runPacificEducationPilotVerification").addEventListener("click", function () {
