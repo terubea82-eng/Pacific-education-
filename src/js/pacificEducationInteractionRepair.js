@@ -351,8 +351,10 @@
 
   function start() {
     repairControls();
+    repairDailyActivityRuntime();
     window.setTimeout(repairControls, 500);
     window.setTimeout(repairControls, 1500);
+    window.setTimeout(ensureDailyActivitiesVisible, 2000);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
