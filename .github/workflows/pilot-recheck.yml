@@ -92,7 +92,7 @@ jobs:
           grep -Fq 'window.PacificEducationInteractionRepair' src/js/pacificEducationInteractionRepair.js
           grep -Fq 'window.submitPacificGuardianComment' src/js/pacificEducationGuardianReviewController.js
           grep -Fq 'peActivityRecord' src/js/pacificEducationLearnerActivityRuntime.js
-          grep -Fq 'pacificEducationGuardianCommentStatus' src/index.html
+          grep -Fq 'pacificGuardianCommentStatus' src/index.html
           grep -Fq 'pacificEducationDashboardReviewCommentSection' src/index.html
           grep -Fq 'pacificEducationDashboardReviewComment' src/index.html
           grep -Fq 'submitPacificEducationDashboardReviewComment' src/js/pacificEducationGuardianReviewController.js
