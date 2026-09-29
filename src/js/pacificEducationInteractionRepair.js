@@ -297,7 +297,14 @@
             options: subject === "Mathematics" ? ["3","4","5","6"] :
               subject === "Science" ? ["Tree","Rock","Cup","Pencil"] :
               ["Hello","Pencil","Seven","Green"],
-            answerIndex: subject === "Mathematics" ? 1 : 0
+            choices: subject === "Mathematics" ? ["3","4","5","6"] :
+              subject === "Science" ? ["Tree","Rock","Cup","Pencil"] :
+              ["Hello","Pencil","Seven","Green"],
+            answerOptions: subject === "Mathematics" ? ["3","4","5","6"] :
+              subject === "Science" ? ["Tree","Rock","Cup","Pencil"] :
+              ["Hello","Pencil","Seven","Green"],
+            answerIndex: subject === "Mathematics" ? 1 : 0,
+            answerKey: subject === "Mathematics" ? "4" : subject === "Science" ? "Tree" : "Hello"
           }
         };
 
