@@ -87,6 +87,9 @@
     try{activities=map&&typeof map.mapIndicator==="function"?map.mapIndicator(i):[];}catch(e){activities=[];}
     var stages=["teach","guided-practice","independent-practice","application","check-assessment","remedial-extension"];
     var records=coverage()&&typeof coverage().list==="function"?coverage().list({studentId:studentId(),indicatorId:indicatorId}):[];
+    var approved=[];
+    try{approved=JSON.parse(window.localStorage.getItem("pacificEducationApprovedHomeAssessments")||"[]");if(!Array.isArray(approved))approved=[];}catch(e){approved=[];}
+    approved=approved.filter(function(x){return String(x.studentId||"")===String(studentId())&&x.status==="teacher-approved";});
     var html=["<section class=\"pe-audit-detail\"><h3>Indicator Drill-Down: "+esc(i.id)+"</h3>"]; 
     html.push("<p><strong>Achievement Indicator:</strong> "+esc(i.indicatorText||i.achievementIndicator||"")+"</p>");
     html.push("<p><strong>Class:</strong> "+esc(i.level)+" &nbsp; <strong>Subject:</strong> "+esc(i.subjectId)+" &nbsp; <strong>Term:</strong> "+esc(i.term)+"</p>");
@@ -98,7 +101,10 @@
     activities.forEach(function(a,n){html.push("<p><strong>"+(n+1)+". "+esc(a.activityType||"activity")+"</strong> — "+esc(a.title||a.taskFocus||"")+"</p>");});
     html.push("<h4>3. Six-Stage Learning Evidence</h4><ul>");
     stages.forEach(function(s){var hit=records.some(function(r){return r.evidenceType==="indicator-stage"&&r.stageType===s;});html.push("<li>"+esc(s)+" — "+(hit?"Recorded":"Not recorded")+"</li>");});
-    html.push("</ul><h4>4. Assessment & Coverage</h4>");
+    html.push("</ul><h4>4. Learner Evidence</h4>");
+    if(!approved.length)html.push("<p>No teacher-approved learner evidence is recorded.</p>");
+    approved.forEach(function(x){var answers=(x.answers||[]).map(function(a){return "Q"+String(a.questionNumber||"")+" — "+String(a.answer||"");}).join(" | ");html.push("<p><strong>"+esc(x.type||"Assessment")+" Day "+esc(x.day||"")+"</strong> • "+esc(x.subject||"")+"</p>");if(answers)html.push("<p>Text answers: "+esc(answers)+"</p>");html.push("<p>Audio evidence: "+(x.audioDataUrl?"Available":"Not recorded")+"</p>");html.push("<p>Special Education review: "+esc(x.specialEducationComment||"")+" • provisional mark "+esc(x.specialEducationMark==null?"":x.specialEducationMark)+"</p>");html.push("<p>Teacher authorization: "+esc(x.teacherGuidance||"")+" • final mark "+esc(x.teacherMark==null?"":x.teacherMark)+"</p>");});
+    html.push("<h4>5. Assessment & Coverage</h4>");
     var normal=records.filter(function(r){return r.evidenceType!=="indicator-stage";}).sort(function(a,b){return String(b.updatedAt||"").localeCompare(String(a.updatedAt||""));})[0];
     html.push("<p><strong>Assessment:</strong> "+(row.assessed?"Assessed":"Not Assessed")+"</p>");
     html.push("<p><strong>Coverage:</strong> "+(row.covered?"Covered — teacher confirmed":"Not Covered")+(normal&&normal.status?" ("+esc(normal.status)+")":"")+"</p>");
