@@ -176,7 +176,7 @@
           ? "<p><strong>Student:</strong> your learning, baseline, assessments, progress, home continuity and Pacific Guardian request area are connected to this workspace.</p>"
           : "<p>Your role-specific pilot tools are connected to this workspace. Other roles and administrative controls are not shown here.</p>") +
         "<p id=\"singleEntryStatus\" aria-live=\"polite\"></p>" +
-        "<button type=\"button\" id=\"pilotSignOutButton\">Return to registration</button>";
+        "<button type=\"button\" id=\"pilotSignOutButton\" data-pacific-action=\"pilot-sign-out\">Return to registration</button>";
 
       document.getElementById("pilotSignOutButton").onclick = function () {
         safeSet("pacificEducationPilotRegistered", "");
@@ -254,7 +254,7 @@
       "<option value=\"community\">Community / Partner</option>" +
       "<option value=\"owner\">Owner / Control</option>" +
       "</select><br>" +
-      "<button type=\"button\" id=\"singlePilotRegisterButton\" style=\"margin-top:12px;padding:11px 18px;border-radius:8px\">Enter Pilot Workspace</button>" +
+      "<button type=\"button\" id=\"singlePilotRegisterButton\" data-pacific-action=\"pilot-enter-workspace\" style=\"margin-top:12px;padding:11px 18px;border-radius:8px\">Enter Pilot Workspace</button>" +
       "<p id=\"singlePilotRegistrationStatus\" role=\"status\" aria-live=\"polite\">Select a role to begin. No other pilot workspace is exposed before entry.</p>" +
       "<div style=\"margin-top:14px;padding:12px;border-left:4px solid currentColor\"><strong>Pilot safety boundary</strong><br><small>Use demonstration/test data only. Do not enter passwords, payment details, sensitive child information or exact location. This pilot entry is not production authentication and cannot authorize production release.</small></div>";
     main.insertBefore(section, main.firstChild);
