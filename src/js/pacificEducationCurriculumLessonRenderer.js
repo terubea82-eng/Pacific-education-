@@ -269,6 +269,7 @@ function attachTextAudioControls(targetId, text) {
                 title: result.level + " — " + result.subjectId + " — Day " + result.dayNumber,
                 learningAreas: result.indicators,
                 activities: result.activities,
+                activity: result.activities && result.activities[0] ? result.activities[0] : null,
                 assessments: result.assessments,
                 calendar: result.calendar,
                 schedule: result.schedule,
