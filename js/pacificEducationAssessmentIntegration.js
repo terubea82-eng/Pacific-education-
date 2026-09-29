@@ -228,6 +228,10 @@
 
     function checkpointBlocksCompletion(day) {
 
+        if (day === 5 && window.PacificEducationTermBaselineAssessment && window.PacificEducationTermBaselineAssessment.gate(day)) {
+            return true;
+        }
+
         if (day === 30) {
 
             return !alphabetAssessmentPassed();
@@ -388,6 +392,10 @@
 
         let message = "";
 
+
+        if (day === 5 && window.PacificEducationTermBaselineAssessment && window.PacificEducationTermBaselineAssessment.gate(day)) {
+            message = "Please complete the mandatory Week 1 baseline skills assessment before continuing. This identifies the learner current abilities and support needs for this term.";
+        }
 
         if (day === 30) {
 
@@ -594,6 +602,15 @@
 
                 const day = getCurrentDay();
 
+
+                /*
+                 * Week 1 mandatory baseline checkpoint.
+                 */
+                if (day === 5 && checkpointBlocksCompletion(5)) {
+                    showCheckpointMessage(5);
+                    updateAssessmentVisibility();
+                    return;
+                }
 
                 /*
                  * Day 30 checkpoint.
