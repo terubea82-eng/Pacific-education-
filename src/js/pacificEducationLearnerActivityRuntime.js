@@ -180,7 +180,13 @@
     }
 
     body += '</div>';
-    if (typeof window.showLesson === "function") window.showLesson(title, body);
+    var activityPanel = document.getElementById("dailyLessonActivity");
+    if (activityPanel) {
+      activityPanel.innerHTML = body;
+      activityPanel.setAttribute("aria-live", "polite");
+    } else if (typeof window.showLesson === "function") {
+      window.showLesson(title, body);
+    }
 
     var listen = document.getElementById("peActivityListen");
     if (listen) listen.addEventListener("click", function() { speak(audio); });
