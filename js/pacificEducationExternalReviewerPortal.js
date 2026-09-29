@@ -5,7 +5,7 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.0.0";
+  var VERSION="1.1.0";
   var ROLE="external_reviewer";
 
   function esc(v){return String(v==null?"":v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;");}
@@ -74,16 +74,57 @@
     if(!user||!user.uid){status.textContent="Please sign in first.";return;}
     if(!comment){status.textContent="Enter an assessment comment.";return;}
     try{
-      if(fb&&typeof fb.submitPilotFeedback==="function"){
-        await fb.submitPilotFeedback({message:comment,category:"external-specialist-review:"+scope});
-      }
       var result=null;
       if(registry&&typeof registry.register==="function"){
-        result=registry.register({reviewRequestId:"ACCOUNT-"+user.uid,reviewerReference:name||user.uid,evidenceReference:"FIREBASE-FEEDBACK",type:"finding",finding:comment,notes:"Submitted by authenticated account; independent reviewer verification still required."});
+        result=registry.register({
+          reviewRequestId:"ACCOUNT-"+user.uid,
+          reviewerReference:name||user.uid,
+          evidenceReference:"LOCAL-PILOT-EVIDENCE",
+          type:"finding",
+          finding:comment,
+          notes:"Submitted by authenticated account; independent reviewer verification still required."
+        });
+      }
+      var cloudSaved=false;
+      var cloudError="";
+      if(fb&&typeof fb.submitPilotFeedback==="function"){
+        try{
+          await fb.submitPilotFeedback({message:comment,category:"external-specialist-review:"+scope});
+          cloudSaved=true;
+        }catch(error){
+          cloudError=String(error.code||error.message||"cloud-feedback-failed");
+          var queue=[];
+          try{queue=JSON.parse(localStorage.getItem("pacificEducationExternalReviewerCloudSyncQueue")||"[]");}catch(ignore){}
+          queue.push({
+            uid:user.uid,
+            email:user.email||"",
+            reviewerReference:name||user.uid,
+            scope:scope,
+            message:comment,
+            error:cloudError,
+            queuedAt:new Date().toISOString(),
+            productionApproved:false,
+            productionEligible:false
+          });
+          localStorage.setItem("pacificEducationExternalReviewerCloudSyncQueue",JSON.stringify(queue.slice(-200)));
+        }
+      }
+      if(result&&result.ok&&cloudSaved){
+        result=registry.update(result.evidence.id,{evidenceReference:"FIREBASE-FEEDBACK"});
       }
       document.getElementById("externalReviewerComment").value="";
-      status.textContent=result&&result.ok?"Assessment comment submitted for review evidence. It does not authorize production.":"Assessment comment submitted to the authenticated review channel.";
-    }catch(error){status.textContent="Submission failed: "+(error.code||error.message);}
+      if(result&&result.ok){
+        status.textContent=cloudSaved
+          ?"Assessment comment submitted for review evidence and authenticated pilot feedback."
+          :"Assessment comment saved as pilot review evidence. Cloud sync is pending; permission rules did not accept the feedback write. It does not authorize production.";
+      }else{
+        status.textContent=cloudSaved
+          ?"Assessment comment submitted to the authenticated review channel."
+          :"Assessment comment saved to the local pilot review queue. It does not authorize production.";
+      }
+    }catch(error){
+      status.textContent="Assessment comment could not be recorded: "+(error.code||error.message);
+    }
   }
 
   window.PacificEducationExternalReviewerPortal={version:VERSION,role:ROLE,render:render};
