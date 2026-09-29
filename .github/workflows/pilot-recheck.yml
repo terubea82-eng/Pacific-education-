@@ -100,9 +100,9 @@ jobs:
           grep -Fq 'pacificEducationTeacherCalendar.js' src/index.html
           test "$(grep -o 'src/js/pacificEducationPilotIntegrityGuard.js' src/index.html | wc -l)" -eq 1
           grep -Fq 'window.PacificEducationPilotIntegrityGuard' src/js/pacificEducationPilotIntegrityGuard.js
-          grep -Fq 'productionAuthority: false' src/js/pacificEducationPilotIntegrityGuard.js
-          grep -Fq 'productionApproval: false' src/js/pacificEducationPilotIntegrityGuard.js
-          grep -Fq 'productionEligible: false' src/js/pacificEducationPilotIntegrityGuard.js
+          grep -Eq 'productionAuthority:[[:space:]]*false' src/js/pacificEducationPilotIntegrityGuard.js
+          grep -Eq 'productionApproval:[[:space:]]*false' src/js/pacificEducationPilotIntegrityGuard.js
+          grep -Eq 'productionEligible:[[:space:]]*false' src/js/pacificEducationPilotIntegrityGuard.js
 
       - name: Verify daily activity runtime
         run: |
