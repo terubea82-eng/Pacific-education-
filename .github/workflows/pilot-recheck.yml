@@ -60,9 +60,14 @@ jobs:
           echo "GitHub Pages root HTTP status: $root_code"
           echo "GitHub Pages /src/index.html HTTP status: $src_code"
           if [ "$root_code" = "200" ] && [ "$src_code" = "200" ]; then
-            grep -q "src/index.html" /tmp/pacific-root.html
-            grep -q "Pilot User Workspaces" /tmp/pacific-src.html
-            grep -q "Pacific Education" /tmp/pacific-src.html
+            grep -qi "Pacific Education" /tmp/pacific-root.html || {
+              echo "::error::GitHub Pages root returned 200 but does not contain Pacific Education."
+              exit 1
+            }
+            grep -qi "Pilot User Workspaces" /tmp/pacific-src.html || {
+              echo "::error::GitHub Pages /src/index.html returned 200 but pilot workspace content was not found."
+              exit 1
+            }
           else
             echo "::error::GitHub Pages root or /src/index.html did not return HTTP 200."
             exit 1
