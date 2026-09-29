@@ -15,10 +15,10 @@
 
   var ENTRY_ID = "pacificEducationSingleRegistration";
   var ROLE_ROUTES = {
-    student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "assessments", "teacherCalendarSection", "pacificGuardianCommentSection"],
-    teacher: ["teacherDashboard", "teacherCalendarSection", "pacificGuardianCommentSection"],
-    "special-education": ["teacherDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
-    parent: ["parentDashboard", "pacificGuardianCommentSection"],
+    student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "pacificEducationTermBaseline", "assessments", "pacificEducationStudentProgressDashboard", "pacificEducationHomeSubmission", "pacificEducationTransferIntake", "pacificGuardianCommentSection"],
+    teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
+    "special-education": ["teacherDashboard", "pacificEducationTeacherClassDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
+    parent: ["parentDashboard", "parentAlphabetAssessment", "parentPhonicsAssessment", "parentLearningStatus", "pacificGuardianCommentSection"],
     professional: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
     ngo: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
     education: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
@@ -108,7 +108,7 @@
         "<h2>" + getRoleTitle(role) + " Pilot Platform</h2>" +
         "<p><strong>Registration complete.</strong> Your pilot workspace is now linked.</p>" +
         (role === "student"
-          ? "<p><strong>Student:</strong> go directly to Daily Learning and Assessments. Your progress and Pacific Guardian request area are connected to this workspace.</p>"
+          ? "<p><strong>Student:</strong> your learning, baseline, assessments, progress, home continuity and Pacific Guardian request area are connected to this workspace.</p>"
           : "<p>Your role-specific pilot tools are connected to this workspace. Other roles and administrative controls are not shown here.</p>") +
         "<p id=\"singleEntryStatus\" aria-live=\"polite\"></p>" +
         "<button type=\"button\" id=\"pilotSignOutButton\">Return to registration</button>";
@@ -204,7 +204,7 @@
     }
 
     window.PacificEducationSinglePilotEntry = Object.freeze({
-      version: "1.0.0",
+      version: "1.1.0",
       prototype: true,
       productionEligible: false,
       registerRole: registerRole,
