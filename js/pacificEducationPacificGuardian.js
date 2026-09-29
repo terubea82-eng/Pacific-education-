@@ -18,6 +18,11 @@
   const STORAGE_KEY = "pacificEducationGuardianState";
   const LOCK_THRESHOLD = 0.95;
 
+  // Controlled pilot boundary: Guardian is not production authority.
+  const pilotOnly = true;
+  const productionAuthority = false;
+  const productionApproval = false;
+
   const state = {
     locked: false,
     reason: null,
@@ -304,6 +309,9 @@
   window.PacificEducationPacificGuardian =
     Object.freeze({
       version: VERSION,
+      pilotOnly: pilotOnly,
+      productionAuthority: productionAuthority,
+      productionApproval: productionApproval,
       checkAccess: checkAccess,
       reportThreat: reportThreat,
       unlock: unlock,
