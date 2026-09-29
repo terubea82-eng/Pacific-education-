@@ -159,6 +159,7 @@
             var startStage=document.createElement("button");
             startStage.type="button";
             startStage.textContent="Start "+(labels[type]||"Stage")+" Activity";
+            startStage.setAttribute("data-pacific-action", "start-stage-"+String(type));
             startStage.addEventListener("click",function(){
                 var activity=window.PacificEducationActivity;
                 if(activity&&typeof activity.render==="function"){
@@ -168,7 +169,8 @@
                 }
             });
             card.appendChild(startStage);
-            var action=document.createElement("button");action.type="button";action.textContent="Mark "+(labels[type]||"Stage")+" Complete";action.disabled=currentIndex>0&&!priorComplete;
+            var action=document.createElement("button");action.type="button";action.textContent="Mark "+(labels[type]||"Stage")+" Complete";
+            action.setAttribute("data-pacific-action", "complete-stage-"+String(type));action.disabled=currentIndex>0&&!priorComplete;
             action.addEventListener("click",function(){
                 var recorder=window.PacificEducationDailyProgressRecorder;
                 if(!recorder||typeof recorder.record!=="function"){action.textContent="Recorder unavailable";return;}
@@ -204,11 +206,13 @@ function attachTextAudioControls(targetId, text) {
         var old=document.getElementById(targetId+"AudioControls"); if(old)old.remove();
         var box=document.createElement("div"); box.id=targetId+"AudioControls"; box.className="activity-audio-controls";
         var listen=document.createElement("button"); listen.type="button"; listen.textContent="🔊 Listen"; listen.setAttribute("aria-label","Listen to this learning content");
+        listen.setAttribute("data-pacific-action", "listen-activity");
         listen.addEventListener("click",function(){
             if(typeof window.speakText==="function"){window.speakText(String(text||""));return;}
             if(window.speechSynthesis){window.speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(String(text||""));window.speechSynthesis.speak(u);}
         });
-        var stop=document.createElement("button"); stop.type="button"; stop.textContent="⏹ Stop audio"; stop.addEventListener("click",function(){if(window.speechSynthesis)window.speechSynthesis.cancel();});
+        var stop=document.createElement("button"); stop.type="button"; stop.textContent="⏹ Stop audio";
+        stop.setAttribute("data-pacific-action", "stop-audio"); stop.addEventListener("click",function(){if(window.speechSynthesis)window.speechSynthesis.cancel();});
         box.appendChild(listen); box.appendChild(stop); target.parentNode.appendChild(box);
     }
 
@@ -338,6 +342,7 @@ function attachTextAudioControls(targetId, text) {
         var button = document.createElement("button");
         button.type = "button";
         button.textContent = "Open Selected Day";
+        button.setAttribute("data-pacific-action", "open-selected-day");
         button.addEventListener("click", function() {
             setDay(Number(select.value));
             var target = document.getElementById("dailyLesson");
