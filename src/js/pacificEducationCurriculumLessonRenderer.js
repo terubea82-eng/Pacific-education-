@@ -28,7 +28,7 @@
     function activityTypeForDay(day) {
         var types = window.PacificEducationActivityTypes || ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
         var capability = getCapability();
-        var preferred = { remedial: "multiple_choice", developing: "true_false", expected: "short_answer", advanced: "long_answer" }[capability];
+        var preferred = { foundation: "matching", remedial: "multiple_choice", developing: "true_false", expected: "short_answer", advanced: "long_answer" }[capability];
         if (preferred && types.indexOf(preferred) >= 0) return preferred;
         return types[(Math.max(1, Number(day) || 1) - 1) % types.length];
     }
