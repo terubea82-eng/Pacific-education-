@@ -37,6 +37,8 @@ jobs:
           test -f src/js/pacificEducationPilotUserWorkspaces.js
           test -f src/js/pacificEducationForm1To7ScienceHealth.js
           test -f src/js/pacificEducationSubjectSelector.js
+          test -f js/pacificEducationExternalReviewerPortal.js
+          test -f js/pacificEducationProductionAppShell.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
           test -f PILOT_READY_CHECKLIST.md
           test -f release/production-authorization.json
@@ -62,6 +64,15 @@ jobs:
           grep -Fq 'curriculumVerification:"required-before-production"' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'verified:false' src/js/pacificEducationForm1To7ScienceHealth.js
 
+      - name: Verify Professional Reviewer portal wiring
+        run: |
+          set -e
+          grep -Fq 'pacificEducationExternalReviewerPortal.js' src/index.html || grep -Fq 'pacificEducationExternalReviewerPortal.js' js/pacificEducationProductionAppShell.js
+          grep -Fq 'script.src = "../js/pacificEducationExternalReviewerPortal.js"' js/pacificEducationProductionAppShell.js
+          grep -Fq 'window.PacificEducationExternalReviewerPortal' js/pacificEducationExternalReviewerPortal.js
+          grep -Fq 'function render()' js/pacificEducationExternalReviewerPortal.js
+          grep -Fq 'External Professional Review Portal' js/pacificEducationExternalReviewerPortal.js
+
       - name: Verify production remains fail-closed
         run: |
           set -e
@@ -86,7 +97,10 @@ jobs:
             root_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-root.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/?pilot_recheck=$GITHUB_RUN_ID" || true)
             src_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-src.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/src/index.html?pilot_recheck=$GITHUB_RUN_ID" || true)
             echo "Attempt $attempt: root=$root_code src=$src_code"
-            if [ "$root_code" = "200" ] && [ "$src_code" = "200" ] && grep -qi "Pacific Education" /tmp/pacific-root.html && grep -qi "Pilot User Workspaces" /tmp/pacific-src.html; then
+            echo "Portal asset: https://terubea82-eng.github.io/Pacific-education-/js/pacificEducationExternalReviewerPortal.js"
+            portal_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-reviewer.js -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/js/pacificEducationExternalReviewerPortal.js?pilot_recheck=$GITHUB_RUN_ID" || true)
+            echo "Attempt $attempt: reviewer_portal_js=$portal_code"
+            if [ "$root_code" = "200" ] && [ "$src_code" = "200" ] && [ "$portal_code" = "200" ] && grep -qi "Pacific Education" /tmp/pacific-root.html && grep -qi "Pilot User Workspaces" /tmp/pacific-src.html && grep -qi "External Professional Review Portal" /tmp/pacific-reviewer.js; then
               root_ok=true
               src_ok=true
               break
@@ -94,11 +108,12 @@ jobs:
             sleep 15
           done
           if [ "$root_ok" != "true" ] || [ "$src_ok" != "true" ]; then
-            echo "::error::GitHub Pages pilot content was not verified within the retry window."
+            echo "::error::GitHub Pages pilot content or Professional Reviewer portal asset was not verified within the retry window."
             exit 1
           fi
           echo "GitHub Pages root HTTP status: $root_code"
           echo "GitHub Pages /src/index.html HTTP status: $src_code"
+          echo "Professional Reviewer portal asset HTTP status: $portal_code"
 
       - name: Publish recheck summary
         run: |
@@ -107,9 +122,10 @@ jobs:
             echo "- Required pilot files: PASS"
             echo "- All pilot roles wired: PASS"
             echo "- Form 1-7 Science and Health pilot coverage: PASS"
+            echo "- Professional Reviewer portal wiring: PASS"
             echo "- Production gate remains BLOCKED: PASS"
             echo "- Pilot boundary remains separate from production authorization: PASS"
-            echo "- GitHub Pages deployment: verified by live HTTP check"
+            echo "- GitHub Pages deployment and reviewer portal asset: verified by live HTTP checks"
             echo ""
             echo "Pilot URL: https://terubea82-eng.github.io/Pacific-education-/"
           } >> "$GITHUB_STEP_SUMMARY"
