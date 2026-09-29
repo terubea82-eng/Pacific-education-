@@ -655,28 +655,23 @@
             'button[onclick="startPhonicsAssessment()"]'
         );
 
+        /* Keep buttons clickable. canStartAssessment() remains the protected gate. */
         if (alphabetButton) {
-            const enabled = currentDay === 30;
-            alphabetButton.disabled = !enabled;
-            alphabetButton.setAttribute(
-                "aria-disabled",
-                enabled ? "false" : "true"
-            );
-            alphabetButton.title = enabled
-                ? "Available for the Day 30 Alphabet checkpoint."
-                : "Available only when the learner reaches Day 30.";
+            const eligible = currentDay === 30;
+            alphabetButton.disabled = false;
+            alphabetButton.setAttribute("aria-disabled", "false");
+            alphabetButton.title = eligible
+                ? "Start the Day 30 Alphabet checkpoint."
+                : "Assessment information: the protected Alphabet checkpoint starts on Day 30.";
         }
 
         if (phonicsButton) {
-            const enabled = currentDay === 60;
-            phonicsButton.disabled = !enabled;
-            phonicsButton.setAttribute(
-                "aria-disabled",
-                enabled ? "false" : "true"
-            );
-            phonicsButton.title = enabled
-                ? "Available for the Day 60 Phonics checkpoint."
-                : "Available only when the learner reaches Day 60.";
+            const eligible = currentDay === 60;
+            phonicsButton.disabled = false;
+            phonicsButton.setAttribute("aria-disabled", "false");
+            phonicsButton.title = eligible
+                ? "Start the Day 60 Phonics checkpoint."
+                : "Assessment information: the protected Phonics checkpoint starts on Day 60.";
         }
 
         return true;
