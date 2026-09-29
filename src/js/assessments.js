@@ -21,7 +21,7 @@ const assessmentData = {
     }
 };
 
-function speakAssessmentQuestion(question) {\n    if (typeof speakText === "function") speakText(String(question || ""));\n}\n\nfunction renderAudioControls(question) {\n    var safeQuestion = escapeHTML(String(question || ""));\n    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input type="file" accept="audio/*" capture></label></div>`;\n}\n\nfunction startAssessment(type) {
+function speakAssessmentQuestion(question) {\n    if (typeof speakText === "function") speakText(String(question || ""));\n}\n\nfunction renderAudioControls(question) {\n    var safeQuestion = escapeHTML(String(question || ""));\n    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label></div>`;\n}\n\nfunction startAssessment(type) {
     const assessment = assessmentData[type];
     if (!assessment) { alert("Assessment not found."); return; }
     let questionNumber = 0;
@@ -119,10 +119,10 @@ window.PacificEducationAssessments = Object.freeze({
         });
     }
 
-    function saveActivity(type, day, response) {
+    function saveActivity(type, day, response, audioDataUrl) {
         const key = "pacificEducationActivityResponses";
         const data = JSON.parse(localStorage.getItem(key) || "[]");
-        data.push({ type: type, day: Number(day) || 0, response: response, date: new Date().toISOString() });
+        data.push({ type: type, day: Number(day) || 0, response: response, audioDataUrl: audioDataUrl || "", date: new Date().toISOString() });
         localStorage.setItem(key, JSON.stringify(data.slice(-500)));
 
         const service = window.PacificEducationFirebase;
@@ -134,6 +134,16 @@ window.PacificEducationAssessments = Object.freeze({
                 score: null
             }).catch(function(error) { console.warn("Activity progress sync deferred:", error); });
         }
+    }
+
+    function readAudioFile(done) {
+        var input = document.getElementById("peActivityAudio");
+        var file = input && input.files && input.files[0];
+        if (!file) { done(""); return; }
+        var reader = new FileReader();
+        reader.onload = function() { done(String(reader.result || "")); };
+        reader.onerror = function() { done(""); };
+        reader.readAsDataURL(file);
     }
 
     function result(type, message) {
@@ -166,7 +176,8 @@ window.PacificEducationAssessments = Object.freeze({
 
     function render(type, day, lesson) {
         const prompt = lesson && lesson.activity ? lesson.activity : "Complete today's learning activity.";
-        const title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + labels[type];\n        const audioControls = renderAudioControls(prompt);
+        const title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + labels[type];
+        const audioControls = renderAudioControls(prompt);
 
         if (type === "multiple_choice") {
             const options = ["I can explain it", "I need more practice", "I am not sure"];
@@ -190,12 +201,12 @@ window.PacificEducationAssessments = Object.freeze({
     }
 
     window.PacificEducationActivity = {
-        version: "1.0.0",
+        version: "1.3.0",
         types: Object.freeze(ACTIVITY_TYPES.slice()),
         labels: Object.freeze(Object.assign({}, labels)),
         render: render,
         answer: function(type, day, response) {
-            saveActivity(type, day, response);
+            readAudioFile(function(audioDataUrl) { saveActivity(type, day, response, audioDataUrl); });
             result(type, "Activity submitted successfully.");
         },
         submitField: function(type, day, id) {
@@ -205,7 +216,7 @@ window.PacificEducationAssessments = Object.freeze({
                 if (field) field.focus();
                 return;
             }
-            saveActivity(type, day, value);
+            readAudioFile(function(audioDataUrl) { saveActivity(type, day, value, audioDataUrl); });
             result(type, "Answer submitted successfully.");
         }
     };
