@@ -16,8 +16,8 @@
   var ENTRY_ID = "pacificEducationSingleRegistration";
   var ROLE_ROUTES = {
     student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "pacificEducationTermBaseline", "assessments", "pacificEducationStudentProgressDashboard", "pacificEducationHomeSubmission", "pacificEducationTransferIntake", "pacificGuardianCommentSection"],
-    teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
-    "special-education": ["teacherDashboard", "pacificEducationTeacherClassDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
+    teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
+    "special-education": ["teacherDashboard", "specialEducationDashboard", "specialEducationReviewEvidence", "pacificEducationTeacherClassDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     parent: ["parentDashboard", "parentAlphabetAssessment", "parentPhonicsAssessment", "parentLearningStatus", "pacificGuardianCommentSection"],
     professional: ["pacificEducationWebsitePilotChecklist", "pacificEducationExternalReviewerPortal", "pacificEducationExternalSpecialistReviewEvidenceRegistry", "pacificEducationExternalSpecialistReviewEvidenceLog", "pacificGuardianCommentSection"],
     ngo: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificGuardianCommentSection"],
@@ -78,8 +78,7 @@
 
     var routes = ROLE_ROUTES[role] || [];
     routes.forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) el.hidden = false;
+      var el = document.getElementById(id);\n      if (el) {\n        el.hidden = false;\n        /* Reveal hidden ancestors so nested dashboards are actually visible. */\n        var parent = el.parentElement;\n        while (parent && parent.id !== "app") {\n          parent.hidden = false;\n          parent = parent.parentElement;\n        }\n      }
     });
 
     /* Teacher pilot workspace: ensure the dashboard has a usable synthetic class context. */
