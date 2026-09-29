@@ -22,7 +22,7 @@
 (function (window) {
     "use strict";
 
-    const VERSION = "1.6.0";
+    const VERSION = "1.7.0";
     const MAX_DAY = 365;
     const ASSESSMENT_PASS_MARK = 80;
 
@@ -529,6 +529,30 @@
         var id = getCurrentStudentId(), records = getApprovedHomeAssessments();
         return records.filter(function(r){ return !id || String(r.studentId) === String(id); });
     }
+    function refreshSpecialEducationDashboard() {
+        var path = "No teacher-reviewed pathway recorded yet.";
+        var queue = [];
+        try {
+            var review = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null");
+            if (review) path = review.status === "approved" ? "Teacher-approved — continue learning" : "Needs more practice / re-teaching";
+            var responses = JSON.parse(localStorage.getItem("pacificEducationActivityResponses") || "[]");
+            queue = responses.filter(function(r){ return r && (r.reviewStatus === "pending-teacher-review" || r.status === "pending-special-education-review"); });
+        } catch(e) {}
+        setText("specialEducationLearningPathway", path);
+        setText("specialEducationReviewQueueStatus", queue.length ? String(queue.length) + " item(s) require authorized review." : "No pending mandatory review items.");
+        var host = document.getElementById("specialEducationReviewEvidence");
+        if (host) {
+            host.innerHTML = queue.slice(-10).reverse().map(function(r){
+                return "<article><strong>Day " + String(r.day || "") + "</strong> — " +
+                    String(r.activityType || r.type || "Learning activity") +
+                    "<br><small>Class: " + String(r.classLevel || "") + " | Subject: " + String(r.subject || "") +
+                    " | Term: " + String(r.term || "") + "</small>" +
+                    (r.audioDataUrl ? "<p>🎧 Audio evidence available for authorized review.</p>" : "") +
+                    "<p>Status: " + String(r.reviewStatus || r.status || "pending") + "</p></article>";
+            }).join("") || "<p>No pending audio/home evidence requires Special Education review.</p>";
+        }
+    }
+
     function refreshTeacherDashboard() {
         const student =
             getPacificStudentData();
@@ -609,6 +633,7 @@
     function refreshAllDashboards() {
         refreshTeacherDashboard();
         refreshParentDashboard();
+        refreshSpecialEducationDashboard();
     }
 
     /* =====================================================
@@ -1378,6 +1403,9 @@
 
         refreshParentDashboard:
             refreshParentDashboard,
+
+        refreshSpecialEducationDashboard:
+            refreshSpecialEducationDashboard,
 
         refreshAllDashboards:
             refreshAllDashboards,
