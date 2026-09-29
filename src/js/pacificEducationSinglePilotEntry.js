@@ -163,6 +163,10 @@
     var workspace = document.getElementById("pacificEducationPilotUserWorkspaces");
     if (workspace) workspace.hidden = true;
 
+    if (window.PacificEducationTeacherStudentCalendarLink && typeof window.PacificEducationTeacherStudentCalendarLink.render === "function") {
+      window.PacificEducationTeacherStudentCalendarLink.render();
+    }
+
     var entry = document.getElementById(ENTRY_ID);
     if (entry) {
       entry.innerHTML =
