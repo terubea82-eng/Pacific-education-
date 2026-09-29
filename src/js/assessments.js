@@ -161,10 +161,10 @@ window.PacificEducationAssessments = Object.freeze({
         });
     }
 
-    function saveActivity(type, day, response, audioDataUrl, questionText) {
+    function saveActivity(type, day, response, audioDataUrl, questionText, context) {
         const key = "pacificEducationActivityResponses";
         const data = JSON.parse(localStorage.getItem(key) || "[]");
-        data.push({ type: type, day: Number(day) || 0, response: response, questionText: questionText || "", audioDataUrl: audioDataUrl || "", classLevel: localStorage.getItem("pacificEducationLevel") || "", subject: localStorage.getItem("pacificEducationSubject") || "", term: localStorage.getItem("pacificEducationTerm") || "", date: new Date().toISOString() });
+        data.push({ type: type, day: Number(day) || 0, response: response, questionText: questionText || "", curriculumContext: context || {}, audioDataUrl: audioDataUrl || "", classLevel: localStorage.getItem("pacificEducationLevel") || "", subject: localStorage.getItem("pacificEducationSubject") || "", term: localStorage.getItem("pacificEducationTerm") || "", date: new Date().toISOString() });
         localStorage.setItem(key, JSON.stringify(data.slice(-500)));
 
         const service = window.PacificEducationFirebase;
@@ -200,7 +200,7 @@ window.PacificEducationAssessments = Object.freeze({
         var f = window.PacificEducationFirebase;
         if (f && typeof f.submitHomeSubmission === "function") f.submitHomeSubmission(item).catch(function(error) { console.warn("Audio evidence remote sync deferred:", error); });
     }
-    function result(type, message, audioDataUrl, day, response, questionText) {
+    function result(type, message, audioDataUrl, day, response, questionText, context) {
         var score = null;
         var passingScore = 60;
         if (type === "multiple_choice") {
@@ -222,7 +222,7 @@ window.PacificEducationAssessments = Object.freeze({
                     passingScore: passingScore,
                     activityId: "daily-activity-" + type + "-day-" + String(day),
                     assessmentId: "daily-activity-" + type,
-                    notes: "Interactive pilot activity assessment"
+                    notes: "Interactive pilot activity assessment", questionText: questionText || "", curriculumContext: context || {}
                 });
             }
         }
@@ -230,9 +230,9 @@ window.PacificEducationAssessments = Object.freeze({
     }
 
     function render(type, day, lesson) {
-        const prompt = lesson && lesson.activity ? lesson.activity : "Complete today's learning activity.";
+        const activityContext = lesson && lesson.activity ? lesson.activity : (lesson || {});\n        const prompt = activityContext.questionText || activityContext.learnerTask || activityContext.description || "Complete today's learning activity.";\n        const audioPrompt = activityContext.audioText || prompt;\n        const curriculumContext = { level: lesson && lesson.level || localStorage.getItem("pacificEducationLevel") || "", subjectId: lesson && lesson.subjectId || localStorage.getItem("pacificEducationSubject") || "", term: lesson && lesson.term || localStorage.getItem("pacificEducationTerm") || "", dayNumber: Number(day) || 0, activityTitle: activityContext.activityTitle || lesson && lesson.title || "", contentBasis: activityContext.contentBasis || "concept-based-pilot-prototype", responseMode: "text-or-audio" };
         const title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + labels[type];
-        const audioControls = renderAudioControls(prompt);
+        const audioControls = renderAudioControls(audioPrompt);
 
         if (type === "multiple_choice") {
             const options = ["I can explain it", "I need more practice", "I am not sure"];
@@ -261,7 +261,7 @@ window.PacificEducationAssessments = Object.freeze({
         labels: Object.freeze(Object.assign({}, labels)),
         render: render,
         answer: function(type, day, response) {
-            readAudioFile(function(audioDataUrl) { saveActivity(type, day, response, audioDataUrl); result(type, "Activity submitted successfully.", audioDataUrl, day, response, ""); });
+            readAudioFile(function(audioDataUrl) { saveActivity(type, day, response, audioDataUrl, prompt, curriculumContext); result(type, "Activity submitted successfully.", audioDataUrl, day, response, prompt, curriculumContext); });
         },
         submitField: function(type, day, id) {
             const field = document.getElementById(id);
@@ -270,7 +270,7 @@ window.PacificEducationAssessments = Object.freeze({
                 if (field) field.focus();
                 return;
             }
-            readAudioFile(function(audioDataUrl) { saveActivity(type, day, value, audioDataUrl, field.getAttribute("data-question-text") || ""); result(type, "Answer submitted successfully.", audioDataUrl, day, value, field.getAttribute("data-question-text") || ""); });
+            readAudioFile(function(audioDataUrl) { saveActivity(type, day, value, audioDataUrl, field.getAttribute("data-question-text") || "", curriculumContext); result(type, "Answer submitted successfully.", audioDataUrl, day, value, field.getAttribute("data-question-text") || "", curriculumContext); });
         }
     };
 
