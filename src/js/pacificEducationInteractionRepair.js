@@ -6,7 +6,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.1.0";
+  var VERSION = "2.0.0";
   var errors = [];
 
   function status(text, isError) {
@@ -99,6 +99,89 @@
     });
   }
 
+  function runDynamicInteractionAudit() {
+    var failures = [];
+    var checks = 0;
+
+    function check(condition, message) {
+      checks += 1;
+      if (!condition) failures.push(message);
+    }
+
+    var buttons = document.querySelectorAll("button, input[type=button], input[type=submit]");
+    for (var i = 0; i < buttons.length; i += 1) {
+      var b = buttons[i];
+      check(!b.disabled || b.getAttribute("data-pacific-allow-disabled") === "true" || b.id === "previousLessonButton" || b.id === "nextLessonButton",
+        "Unexpected disabled control: " + (b.id || b.textContent || "unnamed"));
+    }
+
+    var ids = {};
+    var all = document.querySelectorAll("[id]");
+    for (var j = 0; j < all.length; j += 1) {
+      var id = all[j].id;
+      if (ids[id]) failures.push("Duplicate id: " + id);
+      ids[id] = true;
+    }
+
+    check(typeof window.openPacificEducationFinance === "function", "Finance handler unavailable");
+    check(typeof window.completeLesson === "function", "Complete Lesson handler unavailable");
+    check(typeof window.startAlphabetAssessment === "function", "Alphabet Assessment handler unavailable");
+    check(typeof window.startPhonicsAssessment === "function", "Phonics Assessment handler unavailable");
+    check(typeof window.submitPacificGuardianComment === "function", "Guardian comment handler unavailable");
+
+    var renderer = window.PacificEducationCurriculumLessonRenderer;
+    check(!!renderer && typeof renderer.refresh === "function" && typeof renderer.initialise === "function",
+      "Daily lesson renderer unavailable");
+    if (renderer && typeof renderer.status === "function") {
+      var rs = renderer.status();
+      check(rs.connected === true, "Daily lesson renderer is not connected");
+      check(rs.interactiveActivitiesAvailable === true, "Interactive learner activity runtime unavailable");
+    }
+
+    check(!!document.getElementById("previousLessonButton"), "Previous Day control missing");
+    check(!!document.getElementById("nextLessonButton"), "Next Day control missing");
+    check(!!document.getElementById("dailyLessonProgress"), "Daily activity progress control missing");
+    check(!!document.getElementById("buyPlans"), "Finance target missing");
+    check(!!document.getElementById("pacificGuardianCommentSection"), "Guardian section missing");
+
+    var progress = document.getElementById("dailyLessonProgress");
+    if (progress) check(String(progress.textContent || "").indexOf("365") !== -1, "Daily activity range is not 365");
+
+    var marked = document.querySelectorAll("[data-pacific-action]");
+    for (var k = 0; k < marked.length; k += 1) {
+      check(!!marked[k].parentNode, "Detached dynamic control: " + marked[k].getAttribute("data-pacific-action"));
+    }
+
+    var entryButton = document.getElementById("singlePilotRegisterButton");
+    if (entryButton) {
+      check(typeof entryButton.onclick === "function", "Pilot Enter Workspace button has no handler");
+    }
+    var signOut = document.getElementById("pilotSignOutButton");
+    if (signOut) {
+      check(typeof signOut.onclick === "function", "Pilot Return to registration button has no handler");
+    }
+
+    var result = {
+      version: VERSION,
+      checks: checks,
+      failures: failures,
+      passed: failures.length === 0,
+      dynamicControls: marked.length,
+      totalButtons: buttons.length
+    };
+
+    try {
+      localStorage.setItem("pacificEducationInteractionAudit", JSON.stringify(result));
+    } catch (e) {}
+
+    if (failures.length) {
+      status("Interaction audit: " + failures.length + " issue(s) found.", true);
+    } else {
+      status("Interaction audit passed: " + checks + " checks, " + buttons.length + " controls, " + marked.length + " dynamic controls.", false);
+    }
+    return result;
+  }
+
   function repairControls() {
     ensureGlobalHandler("openPacificEducationFinance", openPacificEducationFinance);
     repairKnownHandlers();
@@ -145,6 +228,7 @@
       };
     }
 
+    runDynamicInteractionAudit();
     status("Interactive controls checked. Pilot interaction layer is active.", false);
   }
 
@@ -160,7 +244,8 @@
     version: VERSION,
     repair: repairControls,
     getErrors: function() { return errors.slice(); },
-    status: function() { return {version: VERSION, errors: errors.length}; }
+    status: function() { return {version: VERSION, errors: errors.length}; },
+    audit: runDynamicInteractionAudit
   });
 
   function start() {
