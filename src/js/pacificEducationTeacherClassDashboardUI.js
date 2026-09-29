@@ -45,13 +45,16 @@
             typeof window.PacificEducationStudentCoverageContext.getStudentId === "function" ?
             window.PacificEducationStudentCoverageContext.getStudentId() : "";
 
+        function approvedHomeForStudent(studentId) { var records=[]; try { records=JSON.parse(localStorage.getItem('pacificEducationApprovedHomeAssessments') || '[]'); } catch(e) { records=[]; } return records.filter(function(x){ return String(x.studentId||'')===String(studentId) && x.status==='teacher-approved'; }); }
+
         var rows = students.map(function(studentRef) {
             var summary = e.summarize({ studentId: studentRef });
             var stageRecords = e.list({ studentId: studentRef }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
             return {
                 studentId: studentRef,
                 summary: summary,
-                stageCompleted: stageRecords.length
+                stageCompleted: stageRecords.length,
+                approvedHomeCount: approvedHomeForStudent(studentRef).length
             };
         });
 
@@ -62,7 +65,7 @@
             '<p>Prototype progress view. Student references are shown instead of child personal details.</p>' +
             '<div class="pacific-education-class-progress">' +
             '<table><thead><tr><th>Student Reference</th><th>Total</th><th>Taught</th>' +
-            '<th>Practised</th><th>Stages</th><th>Assessed</th><th>Covered</th><th>Remaining</th></tr></thead><tbody>' +
+            '<th>Practised</th><th>Stages</th><th>Home/Audio</th><th>Assessed</th><th>Covered</th><th>Remaining</th></tr></thead><tbody>' +
             (rows.length ? rows.map(function(row) {
                 return '<tr' + (row.studentId === selectedStudent ? ' data-selected="true"' : '') + '>' +
                     '<td><button type="button" data-student="' + escapeHtml(row.studentId) + '">' +
@@ -71,10 +74,11 @@
                     '<td>' + row.summary.taught + '</td>' +
                     '<td>' + row.summary.practised + '</td>' +
                     '<td>' + row.stageCompleted + '</td>' +
+                    '<td>' + row.approvedHomeCount + '</td>' +
                     '<td>' + row.summary.assessed + '</td>' +
                     '<td>' + row.summary.covered + '</td>' +
                     '<td>' + row.summary.remaining + '</td></tr>';
-            }).join("") : '<tr><td colspan="8">No students in the selected class.</td></tr>') +
+            }).join("") : '<tr><td colspan="9">No students in the selected class.</td></tr>') +
             '</tbody></table></div>' +
             '<div id="pacificEducationSelectedStudentProgress"></div><div id="pacificEducationTeacherIndicatorStageDetails"></div>' +
             '<p><small>Prototype only. This dashboard does not establish production authorization or identity.</small></p>' +
