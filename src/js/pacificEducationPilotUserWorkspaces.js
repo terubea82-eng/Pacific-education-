@@ -116,9 +116,6 @@
         ],
         parent: [
           ["parentDashboard","Parent Dashboard"],
-          ["parentAlphabetAssessment","Alphabet Assessment"],
-          ["parentPhonicsAssessment","Phonics Assessment"],
-          ["parentLearningStatus","Learning Status"],
           ["pacificGuardianCommentSection","Send Feedback"]
         ],
         professional: [
