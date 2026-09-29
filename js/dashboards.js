@@ -563,7 +563,7 @@
             student.learningStatus
         );
         var teacherHome = getApprovedHomeForStudent();
-        setText("teacherApprovedHomeAssessments", teacherHome.length ? String(teacherHome.length) + " approved" : "None");
+        setText("teacherLearningStatus", student.learningStatus + (teacherHome.length ? " • " + String(teacherHome.length) + " teacher-authorized home/audio record(s)" : ""));
     }
 
     function refreshParentDashboard() {
@@ -603,7 +603,7 @@
                 : student.learningStatus
         );
         var parentHome = getApprovedHomeForStudent();
-        setText("parentApprovedHomeAssessments", parentHome.length ? String(parentHome.length) + " approved" : "None");
+        setText("parentLearningStatus", (student.learningStatus === "Monitoring" ? "Keep practising" : student.learningStatus) + (parentHome.length ? " • " + String(parentHome.length) + " teacher-authorized home/audio record(s)" : ""));
     }
 
     function refreshAllDashboards() {
