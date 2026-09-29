@@ -119,10 +119,10 @@ window.PacificEducationAssessments = Object.freeze({
         });
     }
 
-    function saveActivity(type, day, response, audioDataUrl) {
+    function saveActivity(type, day, response, audioDataUrl, questionText) {
         const key = "pacificEducationActivityResponses";
         const data = JSON.parse(localStorage.getItem(key) || "[]");
-        data.push({ type: type, day: Number(day) || 0, response: response, audioDataUrl: audioDataUrl || "", date: new Date().toISOString() });
+        data.push({ type: type, day: Number(day) || 0, response: response, questionText: questionText || "", audioDataUrl: audioDataUrl || "", date: new Date().toISOString() });
         localStorage.setItem(key, JSON.stringify(data.slice(-500)));
 
         const service = window.PacificEducationFirebase;
@@ -146,7 +146,19 @@ window.PacificEducationAssessments = Object.freeze({
         reader.readAsDataURL(file);
     }
 
-    function result(type, message) {
+    function queueAudioForSpecialEducation(type, day, response, audioDataUrl, questionText) {
+        if (!audioDataUrl) return;
+        var key = "pacificEducationHomeSubmissions", items = [];
+        try { items = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) { items = []; }
+        var state = window.PacificEducationCore && typeof window.PacificEducationCore.getState === "function" ? window.PacificEducationCore.getState() : {};
+        var student = state && state.student ? state.student : {};
+        var item = { submissionId: "audio-activity-" + Date.now(), studentId: student.studentId || student.id || "pilot-student-demo", studentName: student.name || "Student", classLevel: localStorage.getItem("pacificEducationLevel") || "", subject: localStorage.getItem("pacificEducationSubject") || "", term: localStorage.getItem("pacificEducationTerm") || "", type: "daily-activity-audio", activityType: type, day: Number(day) || 0, answers: [{ questionNumber: 1, question: questionText || "", answer: response || "" }], audioDataUrl: audioDataUrl, imageDataUrl: "", status: "pending-special-education-review", mark: null, specialEducationMark: null, specialEducationComment: "", specialEducationReviewedAt: null, teacherGuidance: "", teacherAuthorizationComment: "", teacherAuthorizedAt: null, submittedAt: new Date().toISOString(), reviewedAt: null };
+        items.push(item);
+        localStorage.setItem(key, JSON.stringify(items.slice(-100)));
+        var f = window.PacificEducationFirebase;
+        if (f && typeof f.submitHomeSubmission === "function") f.submitHomeSubmission(item).catch(function(error) { console.warn("Audio evidence remote sync deferred:", error); });
+    }
+    function result(type, message, audioDataUrl, day, response, questionText) {
         var score = null;
         var passingScore = 60;
         if (type === "multiple_choice") {
@@ -171,7 +183,7 @@ window.PacificEducationAssessments = Object.freeze({
                 });
             }
         }
-        showLesson(labels[type] + " — Complete", `<div class="activity"><h3>${escape(message)}</h3><p>Your activity response has been recorded on this device. Signed-in pilot users can also sync progress to the account service.</p><button type="button" onclick="startDailyLesson()">📚 Continue Learning</button></div>`);
+        if (audioDataUrl) queueAudioForSpecialEducation(type, day, response, audioDataUrl, questionText);\n        showLesson(labels[type] + " — Complete", `<div class="activity"><h3>${escape(message)}</h3><p>Your activity response has been recorded on this device. Signed-in pilot users can also sync progress to the account service.</p><button type="button" onclick="startDailyLesson()">📚 Continue Learning</button></div>`);
     }
 
     function render(type, day, lesson) {
@@ -206,7 +218,7 @@ window.PacificEducationAssessments = Object.freeze({
         labels: Object.freeze(Object.assign({}, labels)),
         render: render,
         answer: function(type, day, response) {
-            readAudioFile(function(audioDataUrl) { saveActivity(type, day, response, audioDataUrl); });
+            readAudioFile(function(audioDataUrl) { saveActivity(type, day, response, audioDataUrl); result(type, "Activity submitted successfully.", audioDataUrl, day, response, ""); });
             result(type, "Activity submitted successfully.");
         },
         submitField: function(type, day, id) {
@@ -216,7 +228,7 @@ window.PacificEducationAssessments = Object.freeze({
                 if (field) field.focus();
                 return;
             }
-            readAudioFile(function(audioDataUrl) { saveActivity(type, day, value, audioDataUrl); });
+            readAudioFile(function(audioDataUrl) { saveActivity(type, day, value, audioDataUrl, field.getAttribute("data-question-text") || ""); result(type, "Answer submitted successfully.", audioDataUrl, day, value, field.getAttribute("data-question-text") || ""); });
             result(type, "Answer submitted successfully.");
         }
     };
