@@ -181,9 +181,77 @@
     return result;
   }
 
+  function repairNavigationAndDashboards() {
+    var links = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < links.length; i += 1) {
+      if (links[i].getAttribute("data-pacific-nav-bound") === "true") continue;
+      links[i].setAttribute("data-pacific-nav-bound", "true");
+      links[i].addEventListener("click", function(event) {
+        var href = this.getAttribute("href") || "";
+        var id = href.slice(1);
+        var target = id ? document.getElementById(id) : null;
+        if (!target) return;
+        event.preventDefault();
+        try { target.scrollIntoView({behavior:"smooth", block:"start"}); }
+        catch (e) { target.scrollIntoView(); }
+        target.setAttribute("tabindex", "-1");
+        try { target.focus({preventScroll:true}); } catch (ignore) {}
+        if (id === "teacherDashboard") {
+          var teacher = window.PacificEducationTeacherClassDashboardUI;
+          if (teacher && typeof teacher.render === "function") {
+            try { teacher.render("pacificEducationTeacherClassDashboard"); } catch (e1) {}
+          }
+        }
+        if (id === "parentDashboard") {
+          var parent = window.PacificEducationParentDashboard;
+          if (parent && typeof parent.render === "function") {
+            try { parent.render("parentDashboard"); } catch (e2) {}
+          }
+        }
+        if (id === "dailyLesson") {
+          var renderer = window.PacificEducationCurriculumLessonRenderer;
+          if (renderer && typeof renderer.refresh === "function") {
+            try { renderer.refresh(); } catch (e3) {}
+          }
+        }
+      });
+    }
+
+    function addDashboardButton(sectionId, buttonId, label, action) {
+      var section = document.getElementById(sectionId);
+      if (!section || document.getElementById(buttonId)) return;
+      var button = document.createElement("button");
+      button.type = "button";
+      button.id = buttonId;
+      button.textContent = label;
+      button.setAttribute("data-pacific-action", buttonId);
+      button.addEventListener("click", action);
+      section.insertBefore(button, section.firstChild.nextSibling || section.firstChild);
+    }
+
+    addDashboardButton("teacherDashboard", "pacificTeacherDashboardRefresh", "Refresh Teacher Dashboard", function() {
+      var ui = window.PacificEducationTeacherClassDashboardUI;
+      if (ui && typeof ui.render === "function") ui.render("pacificEducationTeacherClassDashboard");
+      var progress = window.PacificEducationStudentProgressDashboardUI;
+      if (progress && typeof progress.render === "function") progress.render("pacificEducationStudentProgressDashboard");
+      var queue = window.PacificEducationTeacherReviewQueue;
+      if (queue && typeof queue.render === "function") queue.render();
+      var status = document.getElementById("pacificEducationInteractionStatus");
+      if (status) status.textContent = "Teacher dashboard refreshed.";
+    });
+
+    addDashboardButton("parentDashboard", "pacificParentDashboardRefresh", "Refresh Parent Dashboard", function() {
+      var parent = window.PacificEducationParentDashboard;
+      if (parent && typeof parent.render === "function") parent.render("parentDashboard");
+      var status = document.getElementById("pacificEducationInteractionStatus");
+      if (status) status.textContent = "Parent dashboard refreshed.";
+    });
+  }
+
   function repairControls() {
     ensureGlobalHandler("openPacificEducationFinance", openPacificEducationFinance);
     repairKnownHandlers();
+    repairNavigationAndDashboards();
     var missing = missingInlineHandlers();
     if (missing.length) {
       reportError("Missing controls: " + missing.join(", "), "button wiring");
@@ -361,6 +429,7 @@
     repairDailyActivityRuntime();
     window.setTimeout(repairControls, 500);
     window.setTimeout(repairControls, 1500);
+    window.setTimeout(repairNavigationAndDashboards, 2000);
     window.setTimeout(ensureDailyActivitiesVisible, 2000);
   }
 
