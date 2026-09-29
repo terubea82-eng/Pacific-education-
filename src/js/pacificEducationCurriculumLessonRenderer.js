@@ -91,9 +91,11 @@
             var button = document.createElement("button");
             button.type = "button";
             button.textContent = "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type);
-            button.disabled = !activity || typeof activity.render !== "function";
+            button.disabled = false;
+            button.setAttribute("aria-label", "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type));
             button.addEventListener("click", function() {
-                if (activity && typeof activity.render === "function") {
+                var runtime = window.PacificEducationActivity;
+                if (runtime && typeof runtime.render === "function") {
                     var context = Object.assign({}, lesson || {});
                     context.activity = context.activity || {};
                     context.activity.questionText = question;
@@ -102,7 +104,10 @@
                     context.questionText = question;
                     context.audioText = audioText;
                     context.responseMode = "text-or-audio";
-                    activity.render(type, day, context);
+                    runtime.render(type, day, context);
+                } else {
+                    var message = document.getElementById("pacificEducationInteractionStatus");
+                    if (message) message.textContent = "Daily activity runtime is still loading. Please try the button again.";
                 }
             });
             card.appendChild(button);
