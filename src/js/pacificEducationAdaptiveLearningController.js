@@ -162,7 +162,7 @@
     return saveAdaptation(result);
   }
 
-  function connectAssessmentFinish() {
+  function connectBaselineCompletion() {\n    if (window.__pacificEducationAdaptiveBaselineConnected) return true;\n    document.addEventListener("pacificEducationBaselineCompleted", function(event) {\n      if (event && event.detail) saveAdaptation(event.detail);\n    });\n    window.__pacificEducationAdaptiveBaselineConnected = true;\n    return true;\n  }\n\n  function connectAssessmentFinish() {
     if (window.__pacificEducationAdaptiveFinishConnected) return true;
     if (typeof window.finishAssessment !== "function") return false;
 
@@ -190,7 +190,7 @@
     connectAssessmentFinish();
     processLatest();
     refreshSelectors();
-    setTimeout(function retry(){ connectAssessmentFinish(); processLatest(); }, 500);
+    setTimeout(function retry(){ connectBaselineCompletion(); connectAssessmentFinish(); processLatest(); }, 500);
   }
 
   window.PacificEducationAdaptiveLearning = Object.freeze({
@@ -199,7 +199,7 @@
     prototype: true,
     productionEligible: false,
     chooseCapability: chooseCapability,
-    applyAssessmentResult: saveAdaptation,
+    applyAssessmentResult: saveAdaptation,\n    applyBaselineResult: saveAdaptation,
     processLatest: processLatest,
     getLatestAssessment: getLatestAssessment
   });
