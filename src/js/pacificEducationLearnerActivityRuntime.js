@@ -155,7 +155,7 @@
     var body = '<div class="activity"><p>' + escape(prompt) + '</p>' + audioButton + audioFile;
 
     if (type === "true_false") {
-      body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button>';
+      body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button><button type="button" id="peActivitySubmitChoice" disabled>Submit Selected Answer</button>';
     } else if (type === "multiple_choice") {
       var choices = [];
       var activitySource = lesson && lesson.activity ? lesson.activity : {};
@@ -260,9 +260,24 @@
     }
 
     var yes = document.getElementById("peActivityTrue");
-    if (yes) yes.addEventListener("click", function() { complete(type, "True"); });
     var no = document.getElementById("peActivityFalse");
-    if (no) no.addEventListener("click", function() { complete(type, "False"); });
+    var tfSubmit = document.getElementById("peActivitySubmitChoice");
+    var tfSelected = "";
+    if (yes) yes.addEventListener("click", function() {
+      tfSelected = "True";
+      yes.setAttribute("aria-pressed","true"); no.setAttribute("aria-pressed","false");
+      if (tfSubmit) tfSubmit.disabled = false;
+    });
+    if (no) no.addEventListener("click", function() {
+      tfSelected = "False";
+      no.setAttribute("aria-pressed","true"); yes.setAttribute("aria-pressed","false");
+      if (tfSubmit) tfSubmit.disabled = false;
+    });
+    if (tfSubmit && (yes || no)) tfSubmit.addEventListener("click", function() {
+      if (!tfSelected) return;
+      tfSubmit.disabled = true;
+      complete(type, tfSelected);
+    });
 
     return true;
   }
