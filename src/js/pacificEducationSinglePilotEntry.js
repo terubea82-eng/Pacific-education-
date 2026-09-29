@@ -82,6 +82,33 @@
       if (el) el.hidden = false;
     });
 
+    /* Teacher pilot workspace: ensure the dashboard has a usable synthetic class context. */
+    if (role === "teacher" || role === "special-education") {
+      try {
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster) {
+          var classId = roster.getClassId && roster.getClassId();
+          if (!classId) {
+            roster.createClass("PILOT-CLASS-001", "Class 7");
+            roster.setClassId("PILOT-CLASS-001");
+            roster.addStudent("PILOT-CLASS-001", "PILOT-STUDENT-001");
+          } else if (roster.getStudents && roster.getStudents(classId).length === 0) {
+            roster.addStudent(classId, "PILOT-STUDENT-001");
+          }
+          if (typeof roster.render === "function") roster.render("pacificEducationTeacherClassRoster");
+        }
+        var teacherDashboard = window.PacificEducationTeacherClassDashboardUI;
+        if (teacherDashboard && typeof teacherDashboard.render === "function") {
+          teacherDashboard.render("pacificEducationTeacherClassDashboard");
+        }
+        if (window.PacificEducationDashboards && typeof window.PacificEducationDashboards.refreshTeacherDashboard === "function") {
+          window.PacificEducationDashboards.refreshTeacherDashboard();
+        }
+      } catch (teacherDashboardError) {
+        console.warn("Pacific Education: teacher pilot dashboard initialization recovered from an error.", teacherDashboardError);
+      }
+    }
+
     var learning = document.getElementById("learningPlatform");
     var level = document.getElementById("levelSelection");
     var subject = document.getElementById("subjectSelection");
