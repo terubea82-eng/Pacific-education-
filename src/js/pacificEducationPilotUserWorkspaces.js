@@ -106,7 +106,6 @@
         '<a href="#learningPlatform" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">All Learning Tools</a>' +
         "</nav>" +
         '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Select a tool above to continue.</p>';
-    };
     }
 
     select.onchange = function () {
