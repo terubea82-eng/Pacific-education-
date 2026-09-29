@@ -1,6 +1,6 @@
 /*
  * Pacific Education — Pacific Guardian
- * Version: 1.1.0
+ * Version: 1.2.0
  *
  * Purpose:
  * - Safety and security gate for Pacific Education.
@@ -14,7 +14,7 @@
 (function (window) {
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
   const STORAGE_KEY = "pacificEducationGuardianState";
   const LOCK_THRESHOLD = 0.95;
 
@@ -258,6 +258,37 @@
     };
   }
 
+  function recordPilotEvidence(event) {
+    if (!event || typeof event !== "object") {
+      return {
+        success: false,
+        reason: "invalid_pilot_evidence"
+      };
+    }
+
+    const details = clone(event.details || {});
+    const safeDetails = details && typeof details === "object"
+      ? details
+      : {};
+
+    /* Pilot evidence is non-authoritative: it never grants production approval. */
+    const record = audit({
+      type: event.type || "pilot_evidence",
+      severity: "information",
+      details: Object.assign({}, safeDetails, {
+        pilotOnly: true,
+        productionAuthority: false,
+        productionApproval: false
+      })
+    });
+
+    return {
+      success: true,
+      status: "PILOT_EVIDENCE_RECORDED",
+      record: record
+    };
+  }
+
   function getStatus() {
     return {
       version: VERSION,
@@ -276,7 +307,8 @@
       checkAccess: checkAccess,
       reportThreat: reportThreat,
       unlock: unlock,
-      getStatus: getStatus
+      getStatus: getStatus,
+      recordPilotEvidence: recordPilotEvidence
     });
 
   window.dispatchEvent(
