@@ -18,7 +18,7 @@
 (function (global) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var QUEUE_KEY = "pacificEducationGuardianReviewQueue";
     var MAX_QUEUE = 100;
 
@@ -209,6 +209,85 @@
                 ? "Every user comment requiring review must receive Guardian verification, needs alignment, and a production-ready disposition."
                 : "All recorded Guardian review items have verified production-ready dispositions."
         });
+    }
+
+    function recordPilotEvidence(eventType, detail) {
+        var guardian = global.PacificEducationPacificGuardian;
+        var payload = {
+            eventType: eventType,
+            source: "pacificEducationGuardianReviewController",
+            recordedAt: now(),
+            detail: detail || {},
+            pilotOnly: true,
+            productionApproval: false
+        };
+
+        if (guardian && typeof guardian.recordPilotEvidence === "function") {
+            try {
+                return guardian.recordPilotEvidence({
+                    type: eventType,
+                    details: payload
+                });
+            } catch (_) {}
+        }
+
+        /* Fail-safe local queue until the Guardian runtime is available. */
+        try {
+            var key = "pacificEducationGuardianPilotEvidence";
+            var raw = global.localStorage.getItem(key);
+            var queue = raw ? JSON.parse(raw) : [];
+            if (!Array.isArray(queue)) queue = [];
+            queue.push(payload);
+            global.localStorage.setItem(key, JSON.stringify(queue.slice(-100)));
+            return { success: true, status: "PILOT_EVIDENCE_QUEUED" };
+        } catch (_) {
+            return { success: false, status: "PILOT_EVIDENCE_NOT_RECORDED" };
+        }
+    }
+
+    function handleTeacherReview(event) {
+        var detail = event && event.detail ? event.detail : {};
+        var item = detail.item || detail;
+        if (!item || typeof item !== "object") return;
+
+        recordPilotEvidence("teacher-reviewed-adaptive-pathway", {
+            reviewStatus: item.reviewStatus || detail.status || null,
+            capability: item.capability || detail.capability || null,
+            nextActivity: item.nextActivity || detail.nextActivity || null,
+            day: item.day || detail.day || null,
+            classLevel: item.classLevel || detail.classLevel || null,
+            subject: item.subject || detail.subject || null,
+            term: item.term || detail.term || null,
+            sourceModule: "teacher-review"
+        });
+    }
+
+    function handleAdaptiveLearning(event) {
+        var detail = event && event.detail ? event.detail : {};
+        if (detail.teacherReviewed !== true) return;
+
+        recordPilotEvidence("teacher-reviewed-adaptive-pathway", {
+            reviewStatus: detail.reviewStatus || null,
+            capability: detail.capability || null,
+            nextActivity: detail.nextActivity || null,
+            day: detail.day || null,
+            classLevel: detail.classLevel || null,
+            subject: detail.subject || null,
+            term: detail.term || null,
+            sourceModule: "adaptive-learning-controller",
+            teacherReviewed: true
+        });
+    }
+
+    if (typeof global.addEventListener === "function") {
+        global.addEventListener(
+            "pacificEducationTeacherReviewCompleted",
+            handleTeacherReview
+        );
+        global.addEventListener(
+            "pacificEducationAdaptiveLearningUpdated",
+            handleAdaptiveLearning
+        );
     }
 
     global.PacificEducationGuardian = Object.freeze({
