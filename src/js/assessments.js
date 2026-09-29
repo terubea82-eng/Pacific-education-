@@ -73,8 +73,23 @@ function startAssessment(type) {
     showQuestion();
 }
 
+function recordFormalAssessmentProgress(type, percentage) {
+    var recorder = window.PacificEducationDailyProgressRecorder;
+    if (!recorder || typeof recorder.recordAssessed !== "function") return;
+    var day = type === "alphabet" ? 30 : 60;
+    recorder.recordAssessed({
+        score: percentage,
+        passingScore: 80,
+        assessmentId: "formal-" + type + "-day-" + String(day),
+        activityId: "formal-" + type,
+        status: percentage >= 80 ? "assessed" : "practised",
+        notes: "Formal " + type + " assessment evidence"
+    });
+}
+
 function finishAssessment(type, assessmentScore, total) {
     const percentage = Math.round((assessmentScore / total) * 100);
+    recordFormalAssessmentProgress(type, percentage);
     const results = JSON.parse(localStorage.getItem("pacificEducationAssessments") || "[]");
     results.push({ assessment: type, score: assessmentScore, total: total, percentage: percentage, date: new Date().toISOString() });
     localStorage.setItem("pacificEducationAssessments", JSON.stringify(results));
@@ -145,7 +160,7 @@ window.PacificEducationAssessments = Object.freeze({
     function saveActivity(type, day, response, audioDataUrl, questionText) {
         const key = "pacificEducationActivityResponses";
         const data = JSON.parse(localStorage.getItem(key) || "[]");
-        data.push({ type: type, day: Number(day) || 0, response: response, questionText: questionText || "", audioDataUrl: audioDataUrl || "", date: new Date().toISOString() });
+        data.push({ type: type, day: Number(day) || 0, response: response, questionText: questionText || "", audioDataUrl: audioDataUrl || "", classLevel: localStorage.getItem("pacificEducationLevel") || "", subject: localStorage.getItem("pacificEducationSubject") || "", term: localStorage.getItem("pacificEducationTerm") || "", date: new Date().toISOString() });
         localStorage.setItem(key, JSON.stringify(data.slice(-500)));
 
         const service = window.PacificEducationFirebase;
@@ -201,6 +216,7 @@ window.PacificEducationAssessments = Object.freeze({
                 recorder.recordAssessed({
                     score: score,
                     passingScore: passingScore,
+                    activityId: "daily-activity-" + type + "-day-" + String(day),
                     assessmentId: "daily-activity-" + type,
                     notes: "Interactive pilot activity assessment"
                 });
