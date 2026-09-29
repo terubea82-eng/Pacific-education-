@@ -17,6 +17,7 @@
   function registry(){ return window.PacificEducationCurriculumAlignmentRegistry; }
   function coverage(){ return window.PacificEducationCurriculumCoverageEngine; }
   function mapper(){ return window.PacificEducationAchievementIndicatorActivityMapper; }
+  function evidence(){ return window.PacificEducationCurriculumEvidenceRegistry; }
 
   function currentFilters(){
     var f={};
@@ -48,6 +49,7 @@
     var reg=registry();
     var cov=coverage();
     var map=mapper();
+    var ev=evidence();
     if(!reg||typeof reg.list!=="function") return {rows:[],counts:{total:0,verified:0,pending:0,mapped:0,assessed:0,covered:0}};
     var filters=currentFilters();
     var indicators=reg.list(filters);
@@ -55,13 +57,15 @@
     var rows=indicators.map(function(ind){
       var verified=isVerified(ind);
       var mapped=false;
+      var evidenceRecords=ev&&typeof ev.getForIndicator==="function"?ev.getForIndicator(ind.id):[];
+      var verifiedEvidence=evidenceRecords.filter(function(x){return String(x.status||"").toUpperCase()==="VERIFIED"||String(x.status||"").toUpperCase()==="VALIDATED"||String(x.status||"").toUpperCase()==="SOURCE_VERIFIED";});
       try{
         mapped=map&&typeof map.mapIndicator==="function"&&map.mapIndicator(ind).length>0;
       }catch(e){ mapped=false; }
       var rec=records.filter(function(r){return r.indicatorId===ind.id && r.evidenceType!=="indicator-stage";}).sort(function(a,b){return String(b.updatedAt||"").localeCompare(String(a.updatedAt||""));})[0]||null;
       var assessed=!!(rec&&(rec.status==="assessed"||rec.status==="covered"));
       var covered=!!(rec&&rec.status==="covered"&&rec.teacherConfirmed===true);
-      return {indicator:ind,verified:verified,mapped:mapped,assessed:assessed,covered:covered,record:rec};
+      return {indicator:ind,verified:verified,mapped:mapped,assessed:assessed,covered:covered,record:rec,evidenceRecords:evidenceRecords,verifiedEvidence:verifiedEvidence};
     });
     return {rows:rows,counts:{
       total:rows.length,
@@ -96,10 +100,11 @@
         html.push("<tr>");
         html.push("<td><strong>"+esc(i.id)+"</strong><br>"+esc(i.indicatorText||i.achievementIndicator||"")+"</td>");
         html.push("<td>"+esc(i.level)+"</td><td>"+esc(i.subjectId)+"</td><td>"+esc(i.term)+"</td>");
-        html.push("<td>"+(r.verified?"Verified":"Pending Verification")+"</td>");
+        html.push("<td>"+(r.verified?"Verified":"Pending Verification")+(r.verifiedEvidence.length?"<br><small>"+esc(r.verifiedEvidence[0].sourceTitle||"Source evidence")+(r.verifiedEvidence[0].page?" • p. "+esc(r.verifiedEvidence[0].page):"")+(r.verifiedEvidence[0].section?" • "+esc(r.verifiedEvidence[0].section):"")+"</small>":"")+"</td>");
         html.push("<td>"+(r.mapped?"Mapped to Activities":"Not Mapped")+"</td>");
         html.push("<td>"+(r.assessed?"Assessed":"Not Assessed")+"</td>");
         html.push("<td>"+(r.covered?"Covered":"Not Covered")+(rec&&rec.status?"<br><small>"+esc(rec.status)+"</small>":"")+"</td>");
+        if(r.evidenceRecords.length){ html.push("<td colspan=\"0\"></td>"); }
         html.push("</tr>");
       });
       html.push("</tbody></table></div>");
