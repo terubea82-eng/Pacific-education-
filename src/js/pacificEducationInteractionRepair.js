@@ -49,7 +49,45 @@
     return missing;
   }
 
+  function ensureGlobalHandler(name, fallback) {
+    if (typeof window[name] !== "function" && typeof fallback === "function") {
+      window[name] = fallback;
+    }
+  }
+
+  function repairKnownHandlers() {
+    ensureGlobalHandler("authorizePrototypeStudent", function() {
+      if (typeof window.authorizeStudent === "function") window.authorizeStudent();
+      if (typeof window.showRoute === "function") window.showRoute("student");
+    });
+    ensureGlobalHandler("completeLesson", function() {
+      if (typeof window.PacificEducationDailyProgressRecorder !== "undefined" &&
+          typeof window.PacificEducationDailyProgressRecorder.completeLesson === "function") {
+        return window.PacificEducationDailyProgressRecorder.completeLesson();
+      }
+      if (typeof window.PacificEducationDailyProgressFlow !== "undefined" &&
+          typeof window.PacificEducationDailyProgressFlow.completeLesson === "function") {
+        return window.PacificEducationDailyProgressFlow.completeLesson();
+      }
+      return false;
+    });
+    ensureGlobalHandler("submitPacificGuardianComment", function() {
+      var guardian = window.PacificEducationGuardian;
+      var input = document.getElementById("pacificGuardianComment");
+      var out = document.getElementById("pacificGuardianCommentStatus");
+      if (guardian && typeof guardian.submitComment === "function") {
+        var result = guardian.submitComment(input ? input.value : "", {source:"guardian-comment-form", pilotOnly:true});
+        if (out) out.textContent = result.message || result.acknowledgement || "Comment queued for Guardian review.";
+        if (result.accepted && input) input.value = "";
+        return result;
+      }
+      if (out) out.textContent = "Guardian review controller is still loading.";
+      return false;
+    });
+  }
+
   function repairControls() {
+    repairKnownHandlers();
     var missing = missingInlineHandlers();
     if (missing.length) {
       reportError("Missing controls: " + missing.join(", "), "button wiring");
