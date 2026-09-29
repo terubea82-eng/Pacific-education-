@@ -323,7 +323,37 @@
         );
     }
 
+    function submitPacificEducationDashboardReviewComment() {
+        var input = global.document &&
+            global.document.getElementById("pacificEducationDashboardReviewComment");
+        var status = global.document &&
+            global.document.getElementById("pacificEducationDashboardReviewCommentStatus");
+
+        var result = submitComment(
+            input ? input.value : "",
+            {
+                source: "pilot-dashboard-review-comment",
+                pilotOnly: true,
+                reviewArea: "dashboard"
+            }
+        );
+
+        if (status) {
+            status.textContent = result.accepted
+                ? "Review comment saved to the pilot review queue. It does not authorize production."
+                : result.message;
+        }
+
+        if (result.accepted && input) {
+            input.value = "";
+        }
+
+        return result;
+    }
+
     global.submitPacificGuardianComment = submitPacificGuardianComment;
+    global.submitPacificEducationDashboardReviewComment =
+        submitPacificEducationDashboardReviewComment;
 
     global.PacificEducationGuardian = Object.freeze({
         version: VERSION,
@@ -333,7 +363,9 @@
         getPendingReviews: getPendingReviews,
         productionGate: productionGate,
         politeAcknowledgement: politeAcknowledgement,
-        submitPacificGuardianComment: submitPacificGuardianComment
+        submitPacificGuardianComment: submitPacificGuardianComment,
+        submitPacificEducationDashboardReviewComment:
+            submitPacificEducationDashboardReviewComment
     });
 
     if (global.document &&
