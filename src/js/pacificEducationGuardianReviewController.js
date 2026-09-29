@@ -68,7 +68,8 @@
             acknowledgement: politeAcknowledgement(),
             needsAligned: false,
             correctnessVerified: false,
-            productionReady: false
+            productionReady: false,
+            guardianDisposition: createAdaptationDisposition({ comment: text })
         };
 
         var queue = readQueue();
@@ -96,6 +97,43 @@
         }
 
         return Object.freeze(item);
+    }
+
+    function classifyRequest(text) {
+        var value = String(text || "").toLowerCase();
+        var broadSignals = [
+            "all student", "all students", "everyone", "every user",
+            "all users", "teacher", "parent", "accessibility", "audio",
+            "assessment", "safety", "privacy", "curriculum", "learning",
+            "school transfer", "special education", "inclusion", "guardian"
+        ];
+        var matches = broadSignals.filter(function (signal) {
+            return value.indexOf(signal) !== -1;
+        });
+        return {
+            scope: matches.length > 0 ? "potentially-broad" : "individual-or-unclear",
+            signals: matches,
+            automaticBuildChange: false,
+            ownerApprovalRequired: true
+        };
+    }
+
+    function createAdaptationDisposition(item) {
+        var classification = classifyRequest(item && item.comment);
+        if (classification.scope === "potentially-broad") {
+            return {
+                disposition: "GUARDIAN_BUILD_REVIEW",
+                scope: "potentially-broad",
+                action: "prepare-adaptation-for-architecture-review",
+                ownerApprovalRequired: true
+            };
+        }
+        return {
+            disposition: "OWNER_ASSESSMENT",
+            scope: "individual-or-unclear",
+            action: "send-to-owner-for-assessment",
+            ownerApprovalRequired: true
+        };
     }
 
     function recordVerifiedReview(review) {
