@@ -74,6 +74,7 @@
         }
 
         var records = [];
+        var activityId = input.activityId || ("daily-"+String(config.dayNumber)+"-"+String(config.subjectId));
         var automaticStage = null;
         var assessmentPassed = true;
         var assessmentScore = Number(input.score);
@@ -104,6 +105,11 @@
                     studentId: config.studentId,
                     status: input.status || "taught",
                     evidenceType: "indicator-stage",
+                    activityId: activityId,
+                    level: config.level,
+                    subjectId: config.subjectId,
+                    term: config.term,
+                    dayNumber: config.dayNumber,
                     stageType: automaticStage,
                     activityType: automaticStage,
                     assessmentId: input.assessmentId || null,
@@ -128,7 +134,8 @@
             }
         });
 
-        document.dispatchEvent(new CustomEvent("pacificEducationDailyProgressRecorded"));
+        document.dispatchEvent(new CustomEvent("pacificEducationDailyProgressRecorded", { detail: { studentId: config.studentId, dayNumber: config.dayNumber, activityId: activityId, subjectId: config.subjectId, term: config.term } }));
+        document.dispatchEvent(new CustomEvent("pacificEducationCoverageRefresh"));
         try {
             var firebaseService = window.PacificEducationFirebase;
             if (firebaseService && typeof firebaseService.saveProgress === "function" && config.studentId) {
