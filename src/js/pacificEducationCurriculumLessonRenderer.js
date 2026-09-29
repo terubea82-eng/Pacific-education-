@@ -126,7 +126,20 @@
         container.appendChild(section);
     }
 
-function render(plan) {
+function attachTextAudioControls(targetId, text) {
+        var target=document.getElementById(targetId); if(!target)return;
+        var old=document.getElementById(targetId+"AudioControls"); if(old)old.remove();
+        var box=document.createElement("div"); box.id=targetId+"AudioControls"; box.className="activity-audio-controls";
+        var listen=document.createElement("button"); listen.type="button"; listen.textContent="🔊 Listen"; listen.setAttribute("aria-label","Listen to this learning content");
+        listen.addEventListener("click",function(){
+            if(typeof window.speakText==="function"){window.speakText(String(text||""));return;}
+            if(window.speechSynthesis){window.speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(String(text||""));window.speechSynthesis.speak(u);}
+        });
+        var stop=document.createElement("button"); stop.type="button"; stop.textContent="⏹ Stop audio"; stop.addEventListener("click",function(){if(window.speechSynthesis)window.speechSynthesis.cancel();});
+        box.appendChild(listen); box.appendChild(stop); target.parentNode.appendChild(box);
+    }
+
+    function render(plan) {
         if (!plan || !plan.success || !plan.lesson) return false;
         var lesson = plan.lesson;
         var areas = Array.isArray(lesson.learningAreas) ? lesson.learningAreas : [];
@@ -155,6 +168,8 @@ function render(plan) {
         if (!practiceText.length) practiceText.push("Practise today's learning and explain what you learned to a teacher or parent.");
         setText("dailyLessonActivity", activityText.join(" "));
         setText("dailyLessonPractice", practiceText.join(" "));
+        attachTextAudioControls("dailyLessonActivity", activityText.join(" "));
+        attachTextAudioControls("dailyLessonPractice", practiceText.join(" "));
         var container = document.getElementById("dailyLesson");
         if (container) container.setAttribute("data-curriculum-linked", "true");
         renderIndicatorStages(lesson); attachActivity(lesson.dayNumber, lesson);
