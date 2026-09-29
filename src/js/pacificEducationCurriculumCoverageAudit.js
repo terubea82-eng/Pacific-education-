@@ -104,7 +104,6 @@
         html.push("<td>"+(r.mapped?"Mapped to Activities":"Not Mapped")+"</td>");
         html.push("<td>"+(r.assessed?"Assessed":"Not Assessed")+"</td>");
         html.push("<td>"+(r.covered?"Covered":"Not Covered")+(rec&&rec.status?"<br><small>"+esc(rec.status)+"</small>":"")+"</td>");
-        if(r.evidenceRecords.length){ html.push("<td colspan=\"0\"></td>"); }
         html.push("</tr>");
       });
       html.push("</tbody></table></div>");
