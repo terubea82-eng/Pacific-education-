@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -53,6 +53,8 @@
       questionText: source.questionText || source.learnerTask || source.description || "Complete today's learning activity.",
       audioText: source.audioText || source.questionText || source.learnerTask || "",
       answerKey: source.answerKey,
+      options: Array.isArray(source.options) ? source.options.slice(0, 6) : (Array.isArray(source.choices) ? source.choices.slice(0, 6) : (Array.isArray(source.answerOptions) ? source.answerOptions.slice(0, 6) : [])),
+      answerIndex: Number.isInteger(Number(source.answerIndex)) ? Number(source.answerIndex) : null,
       contentBasis: source.contentBasis || "concept-based-pilot-prototype",
       indicatorId: source.indicatorId || null,
       stageType: lesson && lesson.stageType || null,
@@ -161,11 +163,11 @@
       if (Array.isArray(rawChoices)) choices = rawChoices.slice(0, 6);
       if (!choices.length && Array.isArray(activitySource.multipleChoiceOptions)) choices = activitySource.multipleChoiceOptions.slice(0, 6);
       if (choices.length) {
-        body += '<p>Select one answer:</p><div id="peMultipleChoiceOptions" role="group" aria-label="Multiple choice answers">';
+        body += '<p id="peMultipleChoiceSelection" aria-live="polite">Select one answer:</p><div id="peMultipleChoiceOptions" role="group" aria-label="Multiple choice answers">';
         choices.forEach(function(option, index) {
           body += '<button type="button" class="pe-multiple-choice-option" data-option-index="' + index + '">' + escape(option) + '</button>';
         });
-        body += '</div>';
+        body += '</div><button type="button" id="peActivitySubmitChoice" disabled>Submit Selected Answer</button>';
       } else {
         body += '<p>Select or enter your answer:</p><input id="peWrittenAnswer" placeholder="Type your selected answer"><button type="button" id="peActivitySubmit">Submit Answer</button>';
       }
@@ -234,10 +236,26 @@
     });
 
     var choiceButtons = document.querySelectorAll(".pe-multiple-choice-option");
+    var selectedChoice = "";
+    var choiceSubmit = document.getElementById("peActivitySubmitChoice");
     for (var ci = 0; ci < choiceButtons.length; ci += 1) {
+      choiceButtons[ci].setAttribute("aria-pressed", "false");
       choiceButtons[ci].addEventListener("click", function() {
-        var selected = this.textContent || "";
-        complete("multiple_choice", selected);
+        selectedChoice = this.textContent || "";
+        for (var cj = 0; cj < choiceButtons.length; cj += 1) {
+          choiceButtons[cj].setAttribute("aria-pressed", choiceButtons[cj] === this ? "true" : "false");
+          choiceButtons[cj].classList.toggle("selected", choiceButtons[cj] === this);
+        }
+        if (choiceSubmit) choiceSubmit.disabled = !selectedChoice;
+        var selection = document.getElementById("peMultipleChoiceSelection");
+        if (selection) selection.textContent = "Selected: " + selectedChoice + ". Tap Submit Selected Answer to record it.";
+      });
+    }
+    if (choiceSubmit) {
+      choiceSubmit.addEventListener("click", function() {
+        if (!selectedChoice) return;
+        choiceSubmit.disabled = true;
+        complete("multiple_choice", selectedChoice);
       });
     }
 
