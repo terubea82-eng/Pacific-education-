@@ -19,11 +19,11 @@
     teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     "special-education": ["teacherDashboard", "pacificEducationTeacherClassDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     parent: ["parentDashboard", "parentAlphabetAssessment", "parentPhonicsAssessment", "parentLearningStatus", "pacificGuardianCommentSection"],
-    professional: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
-    ngo: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
-    education: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
-    community: ["pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"],
-    owner: ["systemStatus", "pacificEducationWebsitePilotChecklist", "pacificGuardianCommentSection"]
+    professional: ["pacificEducationWebsitePilotChecklist", "pacificEducationExternalReviewerPortal", "pacificEducationExternalSpecialistReviewEvidenceRegistry", "pacificEducationExternalSpecialistReviewEvidenceLog", "pacificGuardianCommentSection"],
+    ngo: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificGuardianCommentSection"],
+    education: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationCurriculumMasterControlStatus", "pacificEducationCurriculumEvidenceRegistry", "pacificEducationCurriculumEvidenceTraceability", "pacificGuardianCommentSection"],
+    community: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificGuardianCommentSection"],
+    owner: ["systemStatus", "pacificEducationWebsitePilotChecklist", "pacificEducationProductionReleaseChecklist", "pacificEducationProductionReleaseEvidenceRegistry", "pacificEducationProductionReleaseEvidenceGate", "pacificEducationFinalProductionAuthorizationEvidenceRegistry", "publicationStatus", "pacificEducationOfflineSyncStatus", "pacificGuardianCommentSection"]
   };
 
   function safeGet(key) {
