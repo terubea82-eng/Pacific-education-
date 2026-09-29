@@ -78,7 +78,16 @@
 
     var routes = ROLE_ROUTES[role] || [];
     routes.forEach(function (id) {
-      var el = document.getElementById(id);\n      if (el) {\n        el.hidden = false;\n        /* Reveal hidden ancestors so nested dashboards are actually visible. */\n        var parent = el.parentElement;\n        while (parent && parent.id !== "app") {\n          parent.hidden = false;\n          parent = parent.parentElement;\n        }\n      }
+      var el = document.getElementById(id);
+      if (el) {
+        el.hidden = false;
+        /* Reveal hidden ancestors so nested dashboards are actually visible. */
+        var parent = el.parentElement;
+        while (parent && parent.id !== "app") {
+          parent.hidden = false;
+          parent = parent.parentElement;
+        }
+      }
     });
 
     /* Teacher pilot workspace: ensure the dashboard has a usable synthetic class context. */
