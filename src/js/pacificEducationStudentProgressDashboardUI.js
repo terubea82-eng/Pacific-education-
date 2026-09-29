@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     function context() {
         return window.PacificEducationStudentCoverageContext || null;
@@ -125,6 +125,9 @@
             adaptiveNext = localStorage.getItem("pacificEducationAdaptiveNextActivity") || adaptiveNext;
         } catch (ignoreAdaptive) {}
 
+        var reviewPath = "No teacher review recorded yet";
+        try { var rr = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null"); if (rr) reviewPath = rr.status === "approved" ? "Approved — continue learning" : "Needs more practice"; } catch(ignoreReview) {}
+
         var currentDay = 1;
         try {
             currentDay = Number(
@@ -184,7 +187,7 @@
             '<div><strong>' + summary.covered + '</strong><span>Covered</span></div>' +
             '<div><strong>' + summary.remaining + '</strong><span>Remaining</span></div>' +
             '</div>' +
-            '<h3>Adaptive Learning Path</h3><p><strong>Current pathway:</strong> ' + escapeHtml(adaptiveCapability) + '</p><p><strong>Next activity:</strong> ' + escapeHtml(adaptiveNext) + '</p><p>' + escapeHtml(adaptiveStatus) + '</p><h3>Current Daily Learning</h3>' +
+            '<h3>Adaptive Learning Path</h3><p><strong>Teacher-reviewed pathway:</strong> <span id="pacificEducationTeacherReviewedPath">'+ escapeHtml(reviewPath) +'</span></p><p><strong>Current pathway:</strong> ' + escapeHtml(adaptiveCapability) + '</p><p><strong>Next activity:</strong> ' + escapeHtml(adaptiveNext) + '</p><p>' + escapeHtml(adaptiveStatus) + '</p><h3>Current Daily Learning</h3>' +
             '<p>Day ' + currentDay + ' — ' + escapeHtml(subjectId) +
             ' — ' + escapeHtml(term) + '</p>' +
             (dailyPlan && dailyPlan.success ?
@@ -279,6 +282,10 @@
     document.addEventListener("pacificEducationCoverageRefresh", function() {
         render("pacificEducationStudentProgressDashboard");
     });
+
+    document.addEventListener("pacificEducationAdaptiveLearningUpdated", function() { render("pacificEducationStudentProgressDashboard"); });
+
+    document.addEventListener("pacificEducationTeacherReviewCompleted", function() { render("pacificEducationStudentProgressDashboard"); });
 
     document.addEventListener("pacificEducationStudentChanged", function() {
         render("pacificEducationStudentProgressDashboard");
