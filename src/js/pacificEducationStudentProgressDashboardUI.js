@@ -70,7 +70,18 @@
             .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
 
-    function getApprovedHomeAssessments(studentId) {\n        var records=[];\n        try { records=JSON.parse(localStorage.getItem("pacificEducationApprovedHomeAssessments") || "[]"); } catch(e) { records=[]; }\n        return records.filter(function(r){ return !studentId || String(r.studentId)===String(studentId); });\n    }\n\n    function renderApprovedHomeEvidence(records) {\n        if (!records.length) return "<p>No teacher-authorized home/audio assessment evidence yet.</p>";\n        return records.slice(-10).reverse().map(function(r){ return "<article><strong>"+escapeHtml(r.type||"Home assessment")+"</strong> — "+escapeHtml(r.subject||"")+" — Teacher mark: <strong>"+escapeHtml(r.teacherMark)+"%</strong><br><small>Special Education mark: "+escapeHtml(r.specialEducationMark)+"% | Teacher authorized: "+escapeHtml(r.teacherAuthorizedAt||"")+"</small>"+(r.audioDataUrl?"<p>🎧 <audio controls preload=\"metadata\" src=\""+r.audioDataUrl+"\"></audio></p>":"")+"<p><strong>Special Education:</strong> "+escapeHtml(r.specialEducationComment||"")+"</p><p><strong>Teacher:</strong> "+escapeHtml(r.teacherGuidance||"")+" "+escapeHtml(r.teacherAuthorizationComment||"")+"</p></article>"; }).join("");\n    }\n\n    function render(targetId) {
+    function getApprovedHomeAssessments(studentId) {
+        var records=[];
+        try { records=JSON.parse(localStorage.getItem("pacificEducationApprovedHomeAssessments") || "[]"); } catch(e) { records=[]; }
+        return records.filter(function(r){ return !studentId || String(r.studentId)===String(studentId); });
+    }
+
+    function renderApprovedHomeEvidence(records) {
+        if (!records.length) return "<p>No teacher-authorized home/audio assessment evidence yet.</p>";
+        return records.slice(-10).reverse().map(function(r){ return "<article><strong>"+escapeHtml(r.type||"Home assessment")+"</strong> — "+escapeHtml(r.subject||"")+" — Teacher mark: <strong>"+escapeHtml(r.teacherMark)+"%</strong><br><small>Special Education mark: "+escapeHtml(r.specialEducationMark)+"% | Teacher authorized: "+escapeHtml(r.teacherAuthorizedAt||"")+"</small>"+(r.audioDataUrl?"<p>🎧 <audio controls preload=\"metadata\" src=\""+r.audioDataUrl+"\"></audio></p>":"")+"<p><strong>Special Education:</strong> "+escapeHtml(r.specialEducationComment||"")+"</p><p><strong>Teacher:</strong> "+escapeHtml(r.teacherGuidance||"")+" "+escapeHtml(r.teacherAuthorizationComment||"")+"</p></article>"; }).join("");
+    }
+
+    function render(targetId) {
         var target = document.getElementById(
             targetId || "pacificEducationStudentProgressDashboard"
         );
@@ -102,7 +113,8 @@
         var filters = { studentId: studentId };
         var summary = e.summarize(filters);
         var records = e.list(filters);
-        var remaining = e.getRemaining(filters);\n        var approvedHomeRecords = getApprovedHomeAssessments(studentId);
+        var remaining = e.getRemaining(filters);
+        var approvedHomeRecords = getApprovedHomeAssessments(studentId);
 
         var currentDay = 1;
         try {
