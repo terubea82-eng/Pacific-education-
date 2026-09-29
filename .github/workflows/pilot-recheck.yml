@@ -39,6 +39,7 @@ jobs:
           test -f src/js/pacificEducationSubjectSelector.js
           test -f js/pacificEducationExternalReviewerPortal.js
           test -f src/js/pacificEducationLearnerActivityRuntime.js
+          test -f src/js/pacificEducationInteractionRepair.js
           test -f js/pacificEducationProductionAppShell.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
           test -f PILOT_READY_CHECKLIST.md
@@ -64,6 +65,24 @@ jobs:
           grep -Fq 'Form 7' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'curriculumVerification:"required-before-production"' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'verified:false' src/js/pacificEducationForm1To7ScienceHealth.js
+
+      - name: Syntax-check critical JavaScript and interaction layer
+        run: |
+          set -e
+          node --check src/js/pacificEducationLearnerActivityRuntime.js
+          node --check src/js/pacificEducationInteractionRepair.js
+          node --check src/js/pacificEducationCurriculumLessonRenderer.js
+          node --check src/js/pacificEducationGuardianReviewController.js
+          node --check js/pacificEducationPacificGuardian.js
+
+      - name: Verify interactive control wiring
+        run: |
+          set -e
+          grep -Fq 'pacificEducationInteractionRepair.js' src/index.html
+          grep -Fq 'window.PacificEducationInteractionRepair' src/js/pacificEducationInteractionRepair.js
+          grep -Fq 'window.submitPacificGuardianComment' src/js/pacificEducationGuardianReviewController.js
+          grep -Fq 'peActivityRecord' src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq 'pacificEducationGuardianCommentStatus' src/index.html
 
       - name: Verify daily activity runtime
         run: |
