@@ -270,9 +270,58 @@ function attachTextAudioControls(targetId, text) {
         return true;
     }
 
+    function renderDayBrowser() {
+        var container = document.getElementById("dailyLesson");
+        if (!container) return;
+        var old = document.getElementById("pacificDailyActivityBrowser");
+        if (old) old.remove();
+        var section = document.createElement("section");
+        section.id = "pacificDailyActivityBrowser";
+        section.setAttribute("aria-label", "Daily activity browser");
+        section.style.marginTop = "1rem";
+        var h = document.createElement("h3");
+        h.textContent = "Daily Activities — Days 1–60";
+        section.appendChild(h);
+        var p = document.createElement("p");
+        p.textContent = "Choose any term day to attempt its activities. Pacific Guardian highlights the recommended activity for the learner's current capability.";
+        section.appendChild(p);
+        var controls = document.createElement("div");
+        var select = document.createElement("select");
+        select.id = "pacificDailyActivityDay";
+        select.setAttribute("aria-label", "Choose daily activity day");
+        for (var d = 1; d <= 60; d += 1) {
+            var option = document.createElement("option");
+            option.value = String(d);
+            option.textContent = "Day " + d;
+            if (d === getDay()) option.selected = true;
+            select.appendChild(option);
+        }
+        controls.appendChild(select);
+        var button = document.createElement("button");
+        button.type = "button";
+        button.textContent = "Open Selected Day";
+        button.addEventListener("click", function() {
+            setDay(Number(select.value));
+            var target = document.getElementById("dailyLesson");
+            if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        controls.appendChild(button);
+        section.appendChild(controls);
+        var today = document.createElement("p");
+        today.textContent = "Current day: Day " + getDay() + " • Recommended: " +
+            (getCapability() === "remedial" ? "Multiple Choice" :
+             getCapability() === "developing" ? "True or False" :
+             getCapability() === "advanced" ? "Long Answer" : "Short Answer");
+        today.setAttribute("aria-live", "polite");
+        section.appendChild(today);
+        container.parentNode.insertBefore(section, container);
+    }
+
     function refresh() {
         if (!connected) connect();
-        return typeof window.displayDailyLesson === "function" ? window.displayDailyLesson() : false;
+        var result = typeof window.displayDailyLesson === "function" ? window.displayDailyLesson() : false;
+        setTimeout(renderDayBrowser, 0);
+        return result;
     }
 
     function status() {
