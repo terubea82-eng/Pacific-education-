@@ -49,6 +49,39 @@
         return "Thank you for your comment. Pacific Guardian has received it and will review your request carefully and respectfully.";
     }
 
+    /*
+     * Public UI handler used by the Guardian comment form in src/index.html.
+     * The form previously called this function, but the controller did not
+     * expose it, so the button produced no action.
+     */
+    function submitPacificGuardianComment() {
+        var input = global.document &&
+            global.document.getElementById("pacificGuardianComment");
+        var status = global.document &&
+            global.document.getElementById("pacificGuardianCommentStatus");
+
+        var result = submitComment(
+            input ? input.value : "",
+            {
+                source: "pilot-guardian-comment-form",
+                pilotOnly: true
+            }
+        );
+
+        if (status) {
+            status.textContent = result.accepted
+                ? result.acknowledgement
+                : result.message;
+        }
+
+        if (result.accepted && input) {
+            input.value = "";
+        }
+
+        return result;
+    }
+
+
     function submitComment(comment, context) {
         var text = String(comment == null ? "" : comment).trim();
         if (!text) {
@@ -290,6 +323,8 @@
         );
     }
 
+    global.submitPacificGuardianComment = submitPacificGuardianComment;
+
     global.PacificEducationGuardian = Object.freeze({
         version: VERSION,
         requiredForProduction: true,
@@ -297,7 +332,8 @@
         recordVerifiedReview: recordVerifiedReview,
         getPendingReviews: getPendingReviews,
         productionGate: productionGate,
-        politeAcknowledgement: politeAcknowledgement
+        politeAcknowledgement: politeAcknowledgement,
+        submitPacificGuardianComment: submitPacificGuardianComment
     });
 
     if (global.document &&
