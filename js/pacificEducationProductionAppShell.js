@@ -5,7 +5,7 @@
  */
 (function (window, document) {
   "use strict";
-  var VERSION = "1.1.0";
+  var VERSION = "1.1.1";
   var state = { activeActivity: null };
 
   function el(id) { return document.getElementById(id); }
@@ -74,20 +74,31 @@
       return;
     }
     var script = document.createElement("script");
-    script.src = "js/pacificEducationExternalReviewerPortal.js";
+    // src/index.html is one directory below the repository root; the reviewer
+    // portal lives in the root js/ directory, so it must be loaded via ../js/.
+    script.src = "../js/pacificEducationExternalReviewerPortal.js";
     script.onload = function () {
-      if (window.PacificEducationExternalReviewerPortal) window.PacificEducationExternalReviewerPortal.render();
-    };
-    script.onerror = function () {
-      var app = el("app");
-      if (app && !el("pacificEducationExternalReviewerPortal")) {
-        var section = document.createElement("section");
-        section.id = "pacificEducationExternalReviewerPortal";
-        section.innerHTML = "<h2>External Professional Review Portal</h2><p>Reviewer portal could not be loaded in this build.</p>";
-        app.appendChild(section);
+      if (window.PacificEducationExternalReviewerPortal) {
+        window.PacificEducationExternalReviewerPortal.render();
+      } else {
+        showReviewerLoadFailure("Reviewer portal module loaded without its public interface.");
       }
     };
+    script.onerror = function () {
+      showReviewerLoadFailure("Reviewer portal module could not be loaded from the pilot build.");
+    };
     document.head.appendChild(script);
+  }
+
+  function showReviewerLoadFailure(message) {
+    var app = el("app");
+    if (app && !el("pacificEducationExternalReviewerPortal")) {
+      var section = document.createElement("section");
+      section.id = "pacificEducationExternalReviewerPortal";
+      section.setAttribute("aria-label", "External professional review portal");
+      section.innerHTML = "<h2>External Professional Review Portal</h2><p>" + text(message) + "</p>";
+      app.appendChild(section);
+    }
   }
 
   function init() {
