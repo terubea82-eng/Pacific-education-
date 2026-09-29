@@ -84,7 +84,7 @@
                     '</select></label> ' +
                     '<label><input type="checkbox" id="pacificEducationEvidenceConfirm' + index + '"> Teacher confirmed</label> ' +
                     '<input id="pacificEducationEvidenceNotes' + index + '" type="text" placeholder="Optional notes"> ' +
-                    '<button type="button" data-evidence-index="' + index + '">Save evidence</button>' +
+                    '<button type="button" data-evidence-index="' + index + '" data-pacific-action="save-teacher-evidence">Save evidence</button>' +
                     '<span id="pacificEducationEvidenceResult' + index + '"></span>' +
                     '</div>';
             }).join("") : "<p>No curriculum indicators match the selected filters.</p>") +
