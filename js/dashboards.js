@@ -22,7 +22,7 @@
 (function (window) {
     "use strict";
 
-    const VERSION = "1.5.0";
+    const VERSION = "1.6.0";
     const MAX_DAY = 365;
     const ASSESSMENT_PASS_MARK = 80;
 
@@ -566,7 +566,7 @@
         setText("teacherLearningStatus", student.learningStatus + (teacherHome.length ? " • " + String(teacherHome.length) + " teacher-authorized home/audio record(s)" : ""));
     }
 
-    function refreshParentDashboard() {
+    function getParentReviewedPathway() {\n        try {\n            var review = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null");\n            if (!review) return "No teacher-reviewed pathway recorded yet.";\n            return review.status === "approved" ? "Teacher-approved — continue learning" : "Teacher recommends more practice";\n        } catch (e) { return "Teacher-reviewed pathway unavailable."; }\n    }\n\n    function refreshParentDashboard() {
         const student =
             getPacificStudentData();
 
@@ -603,7 +603,7 @@
                 : student.learningStatus
         );
         var parentHome = getApprovedHomeForStudent();
-        setText("parentLearningStatus", (student.learningStatus === "Monitoring" ? "Keep practising" : student.learningStatus) + (parentHome.length ? " • " + String(parentHome.length) + " teacher-authorized home/audio record(s)" : ""));
+        setText("parentLearningStatus", (student.learningStatus === "Monitoring" ? "Keep practising" : student.learningStatus) + (parentHome.length ? " • " + String(parentHome.length) + " teacher-authorized home/audio record(s)" : ""));\n        setText("parentReviewedPathway", getParentReviewedPathway());
     }
 
     function refreshAllDashboards() {
