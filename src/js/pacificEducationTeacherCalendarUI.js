@@ -202,9 +202,13 @@
             '<p id="pacificEducationDistributionStatus" aria-live="polite"></p>' +
             '<p id="pacificEducationCalendarStatus" aria-live="polite">Calendar interface ready.</p>';
 
+        get("pacificEducationSaveStartDate").setAttribute("data-pacific-action","teacher-save-start-date");
         get("pacificEducationSaveStartDate").addEventListener("click", saveStartDate);
+        get("pacificEducationAddHoliday").setAttribute("data-pacific-action","teacher-add-holiday");
         get("pacificEducationAddHoliday").addEventListener("click", addHoliday);
+        get("pacificEducationAddRevision").setAttribute("data-pacific-action","teacher-add-revision");
         get("pacificEducationAddRevision").addEventListener("click", addRevision);
+        get("pacificEducationAddExam").setAttribute("data-pacific-action","teacher-add-exam");
         get("pacificEducationAddExam").addEventListener("click", addExam);
 
         refreshSummary();
