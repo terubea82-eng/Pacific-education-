@@ -38,7 +38,7 @@
 
     function find(records, indicatorId, studentId) {
         return records.find(function(r) {
-            return r.indicatorId === indicatorId &&
+            return r.evidenceType !== "indicator-stage" && r.indicatorId === indicatorId &&
                 (r.studentId || null) === (studentId || null);
         });
     }
@@ -70,11 +70,18 @@
                 status: state,
                 date: input.date || now,
                 assessmentId: input.assessmentId || null,
+                activityId: input.activityId || null,
+                level: input.level || null,
+                subjectId: input.subjectId || null,
+                term: input.term || null,
+                dayNumber: input.dayNumber || null,
                 evidenceType: "indicator-stage",
                 stageType: stageType,
                 activityType: input.activityType || stageType,
                 teacherConfirmed: input.teacherConfirmed === true,
                 notes: input.notes || "",
+                score: Number.isFinite(Number(input.score)) ? Number(input.score) : null,
+                passingScore: Number.isFinite(Number(input.passingScore)) ? Number(input.passingScore) : null,
                 productionEligible: false,
                 updatedAt: now
             };
