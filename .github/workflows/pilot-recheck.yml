@@ -138,8 +138,8 @@ jobs:
         run: |
           set -e
           grep -Fq 'pilotOnly' src/js/pacificEducationPacificGuardian.js
-          grep -Fq 'productionAuthority:false' src/js/pacificEducationPacificGuardian.js
-          grep -Fq 'productionApproval:false' src/js/pacificEducationPacificGuardian.js
+          grep -Eq 'productionAuthority:[[:space:]]*false' src/js/pacificEducationPacificGuardian.js
+          grep -Eq 'productionApproval:[[:space:]]*false' src/js/pacificEducationPacificGuardian.js
 
       - name: Verify live pilot links
         timeout-minutes: 5
