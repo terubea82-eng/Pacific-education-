@@ -41,7 +41,7 @@
     var nodes = document.querySelectorAll("[onclick]");
     for (var i = 0; i < nodes.length; i += 1) {
       var code = nodes[i].getAttribute("onclick") || "";
-      var match = code.match(/^\s*([A-Za-z_$][\\w$]*)\s*\\(/);
+      var match = code.match(/^\s*([A-Za-z_$][\w$]*)\s*\(/);
       if (match && typeof window[match[1]] !== "function") {
         missing.push(match[1]);
       }
