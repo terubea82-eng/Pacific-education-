@@ -127,6 +127,9 @@
     check(typeof window.startAlphabetAssessment === "function", "Alphabet Assessment handler unavailable");
     check(typeof window.startPhonicsAssessment === "function", "Phonics Assessment handler unavailable");
     check(typeof window.submitPacificGuardianComment === "function", "Guardian comment handler unavailable");
+    check(typeof window.submitPacificEducationDashboardReviewComment === "function", "Dashboard review handler unavailable");
+    check(typeof window.authorizePrototypeStudent === "function", "Prototype Access handler unavailable");
+    check(typeof window.openPacificEducationFinance === "function", "Finance navigation handler unavailable");
 
     var renderer = window.PacificEducationCurriculumLessonRenderer;
     check(!!renderer && typeof renderer.refresh === "function" && typeof renderer.initialise === "function",
@@ -250,10 +253,81 @@
     });
   }
 
+  function repairRemainingNavigationAndDashboardControls() {
+    /*
+     * This layer only repairs navigation/dashboard entry points. It deliberately
+     * does not replace or edit the learner activity runtime/renderer.
+     */
+    function bindInlineButton(button, handlerName, handler) {
+      if (!button || button.getAttribute("data-pacific-repaired") === "true") return;
+      var inline = button.getAttribute("onclick") || "";
+      if (inline.indexOf(handlerName + "(") === -1) return;
+      button.removeAttribute("onclick");
+      button.setAttribute("data-pacific-repaired", "true");
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        try { return handler(); } catch (e) {
+          reportError(e && e.message ? e.message : e, "navigation/dashboard button");
+          return false;
+        }
+      });
+    }
+
+    /* Assessment entry points: preserve the existing assessment engine. */
+    var assessments = document.getElementById("assessments");
+    if (assessments) {
+      var assessmentButtons = assessments.querySelectorAll("button");
+      for (var i = 0; i < assessmentButtons.length; i += 1) {
+        var label = String(assessmentButtons[i].textContent || "").toLowerCase();
+        if (label.indexOf("alphabet") !== -1) {
+          bindInlineButton(assessmentButtons[i], "startAlphabetAssessment", function() {
+            if (window.PacificEducationAssessments && typeof window.PacificEducationAssessments.startAlphabet === "function") {
+              return window.PacificEducationAssessments.startAlphabet();
+            }
+            if (typeof window.startAlphabetAssessment === "function") return window.startAlphabetAssessment();
+            return false;
+          });
+        }
+        if (label.indexOf("phonics") !== -1) {
+          bindInlineButton(assessmentButtons[i], "startPhonicsAssessment", function() {
+            if (window.PacificEducationAssessments && typeof window.PacificEducationAssessments.startPhonics === "function") {
+              return window.PacificEducationAssessments.startPhonics();
+            }
+            if (typeof window.startPhonicsAssessment === "function") return window.startPhonicsAssessment();
+            return false;
+          });
+        }
+      }
+    }
+
+    /* Finance remains a pilot navigation action only; payment verification stays server-side. */
+    bindInlineButton(document.getElementById("financeButton"), "openPacificEducationFinance", function() {
+      return typeof window.openPacificEducationFinance === "function" && window.openPacificEducationFinance();
+    });
+    bindInlineButton(document.getElementById("financeOpenButton"), "openPacificEducationFinance", function() {
+      return typeof window.openPacificEducationFinance === "function" && window.openPacificEducationFinance();
+    });
+
+    /* Prototype Access routes only to the synthetic student pilot workspace. */
+    bindInlineButton(document.getElementById("prototypeAuthorizeButton"), "authorizePrototypeStudent", function() {
+      return typeof window.authorizePrototypeStudent === "function" && window.authorizePrototypeStudent();
+    });
+
+    /* Dashboard review comments use the existing Pacific Guardian review controller. */
+    var reviewButton = document.querySelector('button[onclick*="submitPacificEducationDashboardReviewComment"]');
+    bindInlineButton(reviewButton, "submitPacificEducationDashboardReviewComment", function() {
+      if (typeof window.submitPacificEducationDashboardReviewComment === "function") {
+        return window.submitPacificEducationDashboardReviewComment();
+      }
+      return false;
+    });
+  }
+
   function repairControls() {
     ensureGlobalHandler("openPacificEducationFinance", openPacificEducationFinance);
     repairKnownHandlers();
     repairNavigationAndDashboards();
+    repairRemainingNavigationAndDashboardControls();
     var missing = missingInlineHandlers();
     if (missing.length) {
       reportError("Missing controls: " + missing.join(", "), "button wiring");
