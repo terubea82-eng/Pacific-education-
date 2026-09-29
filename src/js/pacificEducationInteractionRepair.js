@@ -203,9 +203,9 @@
           }
         }
         if (id === "parentDashboard") {
-          var parent = window.PacificEducationParentDashboard;
-          if (parent && typeof parent.render === "function") {
-            try { parent.render("parentDashboard"); } catch (e2) {}
+          var dashboards = window.PacificEducationDashboards;
+          if (dashboards && typeof dashboards.refreshParentDashboard === "function") {
+            try { dashboards.refreshParentDashboard(); } catch (e2) {}
           }
         }
         if (id === "dailyLesson") {
@@ -232,6 +232,8 @@
     addDashboardButton("teacherDashboard", "pacificTeacherDashboardRefresh", "Refresh Teacher Dashboard", function() {
       var ui = window.PacificEducationTeacherClassDashboardUI;
       if (ui && typeof ui.render === "function") ui.render("pacificEducationTeacherClassDashboard");
+      var dashboards = window.PacificEducationDashboards;
+      if (dashboards && typeof dashboards.refreshTeacherDashboard === "function") dashboards.refreshTeacherDashboard();
       var progress = window.PacificEducationStudentProgressDashboardUI;
       if (progress && typeof progress.render === "function") progress.render("pacificEducationStudentProgressDashboard");
       var queue = window.PacificEducationTeacherReviewQueue;
@@ -241,8 +243,8 @@
     });
 
     addDashboardButton("parentDashboard", "pacificParentDashboardRefresh", "Refresh Parent Dashboard", function() {
-      var parent = window.PacificEducationParentDashboard;
-      if (parent && typeof parent.render === "function") parent.render("parentDashboard");
+      var dashboards = window.PacificEducationDashboards;
+      if (dashboards && typeof dashboards.refreshParentDashboard === "function") dashboards.refreshParentDashboard();
       var status = document.getElementById("pacificEducationInteractionStatus");
       if (status) status.textContent = "Parent dashboard refreshed.";
     });
