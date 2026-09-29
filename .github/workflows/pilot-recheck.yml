@@ -38,6 +38,7 @@ jobs:
           test -f src/js/pacificEducationForm1To7ScienceHealth.js
           test -f src/js/pacificEducationSubjectSelector.js
           test -f js/pacificEducationExternalReviewerPortal.js
+          test -f src/js/pacificEducationLearnerActivityRuntime.js
           test -f js/pacificEducationProductionAppShell.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
           test -f PILOT_READY_CHECKLIST.md
@@ -63,6 +64,18 @@ jobs:
           grep -Fq 'Form 7' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'curriculumVerification:"required-before-production"' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'verified:false' src/js/pacificEducationForm1To7ScienceHealth.js
+
+      - name: Verify daily activity runtime
+        run: |
+          set -e
+          grep -Fq "window.PacificEducationActivity =" src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq "multiple_choice" src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq "true_false" src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq "matching" src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq "short_answer" src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq "long_answer" src/js/pacificEducationLearnerActivityRuntime.js
+          grep -Fq "pacificEducationLearnerActivityRuntime.js" src/index.html
+          grep -Fq "pacificEducationLearnerActivityRuntime.js" src/index.html
 
       - name: Verify Professional Reviewer portal wiring
         run: |
