@@ -388,6 +388,26 @@
      * This browser module never confirms payment.
      */
 
+    function normalizeCurrencyCode(value) {
+        var code = String(value || "").trim().toUpperCase();
+        return /^[A-Z]{3}$/.test(code) ? code : null;
+    }
+
+    /* Every customer category uses the customer's approved local currency.
+     * Production currency and exchange-rate values must come from the server/provider.
+     */
+    function createCustomerPlan(plan, options) {
+        options = options || {};
+        var currency = normalizeCurrencyCode(options.currencyCode);
+        if (!currency) return { status: STATUS.PRICING_UNAVAILABLE, reason: "Customer currency is required." };
+        var category = String(options.category || plan.category || plan.name || "Customer");
+        return Object.assign({}, plan, {
+            category: category,
+            currency: currency,
+            currencySource: "customer-approved-local-currency",
+            localCurrencyRequired: true
+        });
+    }
     function createPaymentRequest(plan) {
         if (
             !plan ||
@@ -398,6 +418,10 @@
                 status:
                     "INVALID_PAYMENT_REQUEST"
             };
+        }
+
+        if (!normalizeCurrencyCode(plan.currency)) {
+            return { success: false, status: "CUSTOMER_CURRENCY_REQUIRED", message: "A valid local customer currency is required before payment." };
         }
 
         return {
@@ -471,7 +495,9 @@
             auditPlans,
 
         createPaymentRequest:
-            createPaymentRequest
+            createPaymentRequest,
+
+        createCustomerPlan
     });
 
     global.PacificEducationBuyPlans =
