@@ -81,6 +81,10 @@ function recordFormalAssessmentProgress(type, percentage) {
         score: percentage,
         passingScore: 80,
         assessmentId: "formal-" + type + "-day-" + String(day),
+        level: localStorage.getItem("pacificEducationLevel") || "Class 1",
+        subjectId: localStorage.getItem("pacificEducationSubject") || "English",
+        term: localStorage.getItem("pacificEducationTerm") || "Term 1",
+        dayNumber: day,
         activityId: "formal-" + type,
         status: percentage >= 80 ? "assessed" : "practised",
         notes: "Formal " + type + " assessment evidence"
