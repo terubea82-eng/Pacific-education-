@@ -1,0 +1,12 @@
+/* Pacific Education — Owner Pilot Headcount */
+(function(window,document){
+ "use strict"; var VERSION="1.0.0",KEY="pacificEducationPilotUsage";
+ function read(){try{return JSON.parse(localStorage.getItem(KEY)||"[]");}catch(e){return [];}}
+ function record(){var c=window.PacificEducationCore,s=c&&typeof c.getState==="function"?c.getState():{},u=s&&s.student?s.student:{};var id=u.studentId||u.id||"pilot-student-demo";var role=(s&&s.user&&s.user.role)||localStorage.getItem("pacificEducationPilotRole")||"student";var a=read(),i=a.findIndex(function(x){return x.userId===id;});var old=i>=0?a[i]:{};var item={userId:id,role:role,firstSeenAt:old.firstSeenAt||new Date().toISOString(),lastSeenAt:new Date().toISOString(),paymentStatus:old.paymentStatus||"not-confirmed",active:true};if(i>=0)a[i]=item;else a.push(item);localStorage.setItem(KEY,JSON.stringify(a.slice(-5000)));document.dispatchEvent(new CustomEvent("pacificEducationPilotHeadcountUpdated"));}
+ function summary(){var a=read(),active=a.filter(function(x){return x.active;}).length,paid=a.filter(function(x){return x.paymentStatus==="paid"||x.paymentStatus==="payment-confirmed";}).length;return {totalPilotUsers:a.length,activeUsers:active,payingUsers:paid,paymentStatusConfirmedOnly:true,prototype:true};}
+ function render(){var t=document.getElementById("pacificEducationOwnerHeadcount");if(!t)return;var s=summary();t.innerHTML="<h3>Owner Pilot Headcount</h3><p><strong>Total recorded pilot users:</strong> "+s.totalPilotUsers+"</p><p><strong>Active users:</strong> "+s.activeUsers+"</p><p><strong>Payment-confirmed users:</strong> "+s.payingUsers+"</p><p><small>Payment count is shown only when a payment/entitlement record explicitly says paid or payment-confirmed. Local pilot usage is not a production-wide authoritative count.</small></p>";}
+ function init(){record();render();}
+ window.PacificEducationOwnerHeadcount=Object.freeze({version:VERSION,recordUsage:record,summary:summary,render:render});
+ document.addEventListener("pacificEducationPilotHeadcountUpdated",render);
+ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})(window,document);
