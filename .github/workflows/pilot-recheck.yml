@@ -137,9 +137,9 @@ jobs:
       - name: Verify pilot boundary does not require production authorization
         run: |
           set -e
-          grep -Fq 'pilotOnly' src/js/pacificEducationPacificGuardian.js
-          grep -Eq 'productionAuthority:[[:space:]]*false' src/js/pacificEducationPacificGuardian.js
-          grep -Eq 'productionApproval:[[:space:]]*false' src/js/pacificEducationPacificGuardian.js
+          grep -Fq 'pilotOnly' js/pacificEducationPacificGuardian.js
+          grep -Eq 'productionAuthority:[[:space:]]*false' js/pacificEducationPacificGuardian.js
+          grep -Eq 'productionApproval:[[:space:]]*false' js/pacificEducationPacificGuardian.js
 
       - name: Verify live pilot links
         timeout-minutes: 5
