@@ -39,6 +39,8 @@ jobs:
           test -f src/js/pacificEducationSubjectSelector.js
           test -f js/pacificEducationExternalReviewerPortal.js
           test -f src/js/pacificEducationLearnerActivityRuntime.js
+          test -f src/js/pacificEducationStudentCoverageContext.js
+          test -f src/js/pacificEducationTeacherCalendar.js
           test -f src/js/pacificEducationInteractionRepair.js
           test -f js/pacificEducationProductionAppShell.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
@@ -73,6 +75,11 @@ jobs:
           node --check src/js/pacificEducationInteractionRepair.js
           node --check src/js/pacificEducationCurriculumLessonRenderer.js
           node --check src/js/pacificEducationGuardianReviewController.js
+          node --check src/js/pacificEducationStudentCoverageContext.js
+          node --check src/js/pacificEducationTeacherCalendar.js
+          node --check src/js/pacificEducationTeacherCalendarUI.js
+          node --check src/js/pacificEducationTeacherClassDashboardUI.js
+          node --check src/js/pacificEducationStudentProgressDashboardUI.js
           node --check js/pacificEducationPacificGuardian.js
 
       - name: Verify interactive control wiring
@@ -83,6 +90,11 @@ jobs:
           grep -Fq 'window.submitPacificGuardianComment' src/js/pacificEducationGuardianReviewController.js
           grep -Fq 'peActivityRecord' src/js/pacificEducationLearnerActivityRuntime.js
           grep -Fq 'pacificEducationGuardianCommentStatus' src/index.html
+          grep -Fq 'pacificEducationDashboardReviewCommentSection' src/index.html
+          grep -Fq 'pacificEducationDashboardReviewComment' src/index.html
+          grep -Fq 'submitPacificEducationDashboardReviewComment' src/js/pacificEducationGuardianReviewController.js
+          grep -Fq 'pacificEducationStudentCoverageContext.js' src/index.html
+          grep -Fq 'pacificEducationTeacherCalendar.js' src/index.html
 
       - name: Verify daily activity runtime
         run: |
