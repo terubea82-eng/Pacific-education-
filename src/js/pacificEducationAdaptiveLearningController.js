@@ -162,7 +162,16 @@
     return saveAdaptation(result);
   }
 
-  function connectBaselineCompletion() {\n    if (window.__pacificEducationAdaptiveBaselineConnected) return true;\n    document.addEventListener("pacificEducationBaselineCompleted", function(event) {\n      if (event && event.detail) saveAdaptation(event.detail);\n    });\n    window.__pacificEducationAdaptiveBaselineConnected = true;\n    return true;\n  }\n\n  function connectAssessmentFinish() {
+  function connectBaselineCompletion() {
+    if (window.__pacificEducationAdaptiveBaselineConnected) return true;
+    document.addEventListener("pacificEducationBaselineCompleted", function(event) {
+      if (event && event.detail) saveAdaptation(event.detail);
+    });
+    window.__pacificEducationAdaptiveBaselineConnected = true;
+    return true;
+  }
+
+  function connectAssessmentFinish() {
     if (window.__pacificEducationAdaptiveFinishConnected) return true;
     if (typeof window.finishAssessment !== "function") return false;
 
@@ -199,7 +208,8 @@
     prototype: true,
     productionEligible: false,
     chooseCapability: chooseCapability,
-    applyAssessmentResult: saveAdaptation,\n    applyBaselineResult: saveAdaptation,
+    applyAssessmentResult: saveAdaptation,
+    applyBaselineResult: saveAdaptation,
     processLatest: processLatest,
     getLatestAssessment: getLatestAssessment
   });
