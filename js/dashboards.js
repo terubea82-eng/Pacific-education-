@@ -521,6 +521,14 @@
         }
     }
 
+    function getApprovedHomeAssessments() {
+        try { return JSON.parse(localStorage.getItem("pacificEducationApprovedHomeAssessments") || "[]"); } catch (e) { return []; }
+    }
+
+    function getApprovedHomeForStudent() {
+        var id = getCurrentStudentId(), records = getApprovedHomeAssessments();
+        return records.filter(function(r){ return !id || String(r.studentId) === String(id); });
+    }
     function refreshTeacherDashboard() {
         const student =
             getPacificStudentData();
@@ -554,6 +562,8 @@
             "teacherLearningStatus",
             student.learningStatus
         );
+        var teacherHome = getApprovedHomeForStudent();
+        setText("teacherApprovedHomeAssessments", teacherHome.length ? String(teacherHome.length) + " approved" : "None");
     }
 
     function refreshParentDashboard() {
@@ -592,6 +602,8 @@
                 ? "Keep practising"
                 : student.learningStatus
         );
+        var parentHome = getApprovedHomeForStudent();
+        setText("parentApprovedHomeAssessments", parentHome.length ? String(parentHome.length) + " approved" : "None");
     }
 
     function refreshAllDashboards() {
