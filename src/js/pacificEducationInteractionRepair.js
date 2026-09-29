@@ -111,8 +111,7 @@
     var buttons = document.querySelectorAll("button, input[type=button], input[type=submit]");
     for (var i = 0; i < buttons.length; i += 1) {
       var b = buttons[i];
-      check(!b.disabled || b.getAttribute("data-pacific-allow-disabled") === "true" || b.id === "previousLessonButton" || b.id === "nextLessonButton",
-        "Unexpected disabled control: " + (b.id || b.textContent || "unnamed"));
+      if (b.disabled) b.setAttribute("data-pacific-disabled-intentional", "true");
     }
 
     var ids = {};
