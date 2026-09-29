@@ -19,6 +19,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: pacific-education-pilot-recheck-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pilot-recheck:
     runs-on: ubuntu-latest
@@ -73,26 +77,28 @@ jobs:
           grep -Fq 'productionApproval:false' src/js/pacificEducationPacificGuardian.js
 
       - name: Verify live pilot links
+        timeout-minutes: 5
         run: |
           set -e
-          sleep 60
-          root_code=$(curl -sSL --retry 12 --retry-delay 5 -o /tmp/pacific-root.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/?pilot_recheck=1" || true)
-          src_code=$(curl -sSL --retry 12 --retry-delay 5 -o /tmp/pacific-src.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/src/index.html?pilot_recheck=1" || true)
-          echo "GitHub Pages root HTTP status: $root_code"
-          echo "GitHub Pages /src/index.html HTTP status: $src_code"
-          if [ "$root_code" = "200" ] && [ "$src_code" = "200" ]; then
-            grep -qi "Pacific Education" /tmp/pacific-root.html || {
-              echo "::error::GitHub Pages root returned 200 but does not contain Pacific Education."
-              exit 1
-            }
-            grep -qi "Pilot User Workspaces" /tmp/pacific-src.html || {
-              echo "::error::GitHub Pages /src/index.html returned 200 but pilot workspace content was not found."
-              exit 1
-            }
-          else
-            echo "::error::GitHub Pages root or /src/index.html did not return HTTP 200."
+          root_ok=false
+          src_ok=false
+          for attempt in $(seq 1 12); do
+            root_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-root.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/?pilot_recheck=$GITHUB_RUN_ID" || true)
+            src_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-src.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/src/index.html?pilot_recheck=$GITHUB_RUN_ID" || true)
+            echo "Attempt $attempt: root=$root_code src=$src_code"
+            if [ "$root_code" = "200" ] && [ "$src_code" = "200" ] && grep -qi "Pacific Education" /tmp/pacific-root.html && grep -qi "Pilot User Workspaces" /tmp/pacific-src.html; then
+              root_ok=true
+              src_ok=true
+              break
+            fi
+            sleep 15
+          done
+          if [ "$root_ok" != "true" ] || [ "$src_ok" != "true" ]; then
+            echo "::error::GitHub Pages pilot content was not verified within the retry window."
             exit 1
           fi
+          echo "GitHub Pages root HTTP status: $root_code"
+          echo "GitHub Pages /src/index.html HTTP status: $src_code"
 
       - name: Publish recheck summary
         run: |
