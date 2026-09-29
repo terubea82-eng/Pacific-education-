@@ -95,18 +95,99 @@
         });
       }
       var workspace = document.getElementById("pilotRoleWorkspace");
+      var toolMap = {
+        student: [
+          ["dailyLesson","Daily Lesson"],
+          ["assessments","Assessments"],
+          ["pacificEducationStudentProgressDashboard","My Progress"],
+          ["pacificEducationHomeSubmission","Home Continuity"]
+        ],
+        teacher: [
+          ["teacherDashboard","Teacher Dashboard"],
+          ["pacificEducationTeacherClassDashboard","Class Dashboard"],
+          ["pacificEducationCoverageDashboard","Curriculum Coverage"],
+          ["pacificEducationTeacherEvidence","Teacher Evidence"]
+        ],
+        "special-education": [
+          ["specialEducationDashboard","Inclusion Dashboard"],
+          ["specialEducationReviewEvidence","Review Evidence"],
+          ["pacificEducationTeacherClassDashboard","Class Dashboard"],
+          ["pacificEducationHomeSubmission","Home Evidence"]
+        ],
+        parent: [
+          ["parentDashboard","Parent Dashboard"],
+          ["parentAlphabetAssessment","Alphabet Assessment"],
+          ["parentPhonicsAssessment","Phonics Assessment"],
+          ["parentLearningStatus","Learning Status"],
+          ["pacificGuardianCommentSection","Send Feedback"]
+        ],
+        professional: [
+          ["pacificEducationExternalReviewerPortal","Reviewer Portal"],
+          ["pacificEducationExternalSpecialistReviewEvidenceRegistry","Review Evidence Registry"],
+          ["pacificEducationExternalSpecialistReviewEvidenceLog","Review Evidence Log"],
+          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"]
+        ],
+        ngo: [
+          ["pacificEducationCoverageDashboard","Program Coverage"],
+          ["pacificEducationTeacherEvidence","Teacher Evidence"],
+          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"],
+          ["pacificGuardianCommentSection","Feedback"]
+        ],
+        education: [
+          ["pacificEducationCurriculumMasterControlStatus","Curriculum Control"],
+          ["pacificEducationCurriculumEvidenceRegistry","Evidence Registry"],
+          ["pacificEducationCurriculumEvidenceTraceability","Evidence Traceability"],
+          ["pacificEducationCoverageDashboard","Coverage Dashboard"]
+        ],
+        community: [
+          ["pacificEducationCoverageDashboard","Education Coverage"],
+          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"],
+          ["pacificGuardianCommentSection","Feedback"]
+        ],
+        owner: [
+          ["systemStatus","System Status"],
+          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"],
+          ["pacificEducationProductionReleaseChecklist","Release Checklist"],
+          ["pacificEducationProductionReleaseEvidenceRegistry","Release Evidence"],
+          ["pacificEducationProductionReleaseEvidenceGate","Release Evidence Gate"],
+          ["pacificEducationFinalProductionAuthorizationEvidenceRegistry","Final Authorization Evidence"],
+          ["publicationStatus","Publication Status"],
+          ["pacificEducationOfflineSyncStatus","Offline Sync"]
+        ]
+      };
+
+      function revealTarget(id) {
+        var target = document.getElementById(id);
+        if (!target) return false;
+        target.hidden = false;
+        var parent = target.parentElement;
+        while (parent && parent.id !== "app") {
+          parent.hidden = false;
+          parent = parent.parentElement;
+        }
+        try { target.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e) {}
+        return true;
+      }
+
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
-        '<p><strong>Go directly to your tools:</strong></p>' +
-        '<nav aria-label="Role learning tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
-        '<a href="#dailyLesson" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">Daily Lesson</a>' +
-        '<a href="#assessments" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">Assessments</a>' +
-        '<a href="#teacherDashboard" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">Progress Dashboard</a>' +
-        '<a href="#learningPlatform" style="display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:6px;">All Learning Tools</a>' +
+        '<p><strong>Open a role-specific tool:</strong></p>' +
+        '<nav aria-label="Role pilot tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
+        (toolMap[role.id] || []).map(function(tool) {
+          return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="padding:10px 14px;border:1px solid currentColor;border-radius:6px;">' + esc(tool[1]) + '</button>';
+        }).join("") +
         "</nav>" +
-        '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Select a tool above to continue.</p>';
-    }
+        '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Choose a tool above to continue.</p>';
+
+      Array.prototype.forEach.call(workspace.querySelectorAll("[data-pilot-target]"), function(button) {
+        button.addEventListener("click", function() {
+          var id = button.getAttribute("data-pilot-target");
+          var ok = revealTarget(id);
+          var status = document.getElementById("pilotWorkspaceStatus");
+          if (status) status.textContent = ok ? "Opened " + button.textContent + "." : "That pilot tool is not available in this build.";
+        });
+      });
 
     select.onchange = function () {
       renderRole(select.value);
