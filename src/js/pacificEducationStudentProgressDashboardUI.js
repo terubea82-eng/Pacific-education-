@@ -70,7 +70,7 @@
             .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
 
-    function render(targetId) {
+    function getApprovedHomeAssessments(studentId) {\n        var records=[];\n        try { records=JSON.parse(localStorage.getItem("pacificEducationApprovedHomeAssessments") || "[]"); } catch(e) { records=[]; }\n        return records.filter(function(r){ return !studentId || String(r.studentId)===String(studentId); });\n    }\n\n    function renderApprovedHomeEvidence(records) {\n        if (!records.length) return "<p>No teacher-authorized home/audio assessment evidence yet.</p>";\n        return records.slice(-10).reverse().map(function(r){ return "<article><strong>"+escapeHtml(r.type||"Home assessment")+"</strong> — "+escapeHtml(r.subject||"")+" — Teacher mark: <strong>"+escapeHtml(r.teacherMark)+"%</strong><br><small>Special Education mark: "+escapeHtml(r.specialEducationMark)+"% | Teacher authorized: "+escapeHtml(r.teacherAuthorizedAt||"")+"</small>"+(r.audioDataUrl?"<p>🎧 <audio controls preload=\"metadata\" src=\""+r.audioDataUrl+"\"></audio></p>":"")+"<p><strong>Special Education:</strong> "+escapeHtml(r.specialEducationComment||"")+"</p><p><strong>Teacher:</strong> "+escapeHtml(r.teacherGuidance||"")+" "+escapeHtml(r.teacherAuthorizationComment||"")+"</p></article>"; }).join("");\n    }\n\n    function render(targetId) {
         var target = document.getElementById(
             targetId || "pacificEducationStudentProgressDashboard"
         );
@@ -102,7 +102,7 @@
         var filters = { studentId: studentId };
         var summary = e.summarize(filters);
         var records = e.list(filters);
-        var remaining = e.getRemaining(filters);
+        var remaining = e.getRemaining(filters);\n        var approvedHomeRecords = getApprovedHomeAssessments(studentId);
 
         var currentDay = 1;
         try {
@@ -176,7 +176,7 @@
                 " integrated subject connection(s) available." :
                 "Integration plan unavailable."
             ) + '</p>' +
-            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div><h3>Achievement Indicator Stages</h3><p><strong>Stages recorded:</strong> " + stageCompleted + " &nbsp; | &nbsp; Teach → Guided Practice → Independent Practice → Application → Check → Remedial / Extension</p><p>Stage completion is recorded as pilot practice evidence for the selected learner.</p><h3>Detailed Achievement Indicator Progress</h3><p>Each indicator is shown with its six-stage pilot completion checklist.</p><div id="pacificEducationIndicatorStageChecklist">' + renderIndicatorStageChecklist(curriculumIndicators, stageRecords) + '</div><h3>Current Assessment Evidence</h3>' +
+            '<h3>Daily Progress</h3><p>Record the current daily lesson for the selected student.</p><button type="button" id="pacificEducationRecordDailyProgress">Record Lesson as Taught</button> <button type="button" id="pacificEducationRecordDailyPractice">Record Practice</button> <button type="button" id="pacificEducationRecordDailyAssessment">Record Assessment</button><div id="pacificEducationDailyProgressMessage" role="status"></div><h3>Achievement Indicator Stages</h3><p><strong>Stages recorded:</strong> " + stageCompleted + " &nbsp; | &nbsp; Teach → Guided Practice → Independent Practice → Application → Check → Remedial / Extension</p><p>Stage completion is recorded as pilot practice evidence for the selected learner.</p><h3>Detailed Achievement Indicator Progress</h3><p>Each indicator is shown with its six-stage pilot completion checklist.</p><div id="pacificEducationIndicatorStageChecklist">' + renderIndicatorStageChecklist(curriculumIndicators, stageRecords) + '</div><h3>Teacher-Authorized Home & Audio Evidence</h3><div id="pacificEducationApprovedHomeEvidence">"+renderApprovedHomeEvidence(approvedHomeRecords)+"</div><h3>Current Assessment Evidence</h3>' +
             '<p>' + (assessments.length ?
                 escapeHtml(String(assessments.length) + " assessment record(s) linked.") :
                 "No assessment records linked to the current indicator.") + '</p>' +
