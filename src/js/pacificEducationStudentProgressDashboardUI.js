@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function context() {
         return window.PacificEducationStudentCoverageContext || null;
@@ -102,7 +102,16 @@
         var classContext = roster() ? roster().getContext() : { classId: null };
 
         if (!studentId) {
-            target.innerHTML =
+            var adaptiveCapability = "expected";
+        var adaptiveStatus = "Independent expected-level learning recommended";
+        var adaptiveNext = "Independent Practice";
+        try {
+            adaptiveCapability = localStorage.getItem("pacificEducationCapability") || "expected";
+            adaptiveStatus = localStorage.getItem("pacificEducationAdaptiveLearningStatus") || adaptiveStatus;
+            adaptiveNext = localStorage.getItem("pacificEducationAdaptiveNextActivity") || adaptiveNext;
+        } catch (ignoreAdaptive) {}
+
+        target.innerHTML =
                 '<div class="pacific-education-student-progress-card">' +
                 '<h2>Student Progress</h2>' +
                 '<p>Select a student from the teacher class roster first.</p>' +
@@ -133,7 +142,6 @@
             term = window.localStorage.getItem("pacificEducationTerm") || "Term 1";
         } catch (ignore2) {}
 
-        var curriculumIndicators = dailyPlan && Array.isArray(dailyPlan.indicators) ? dailyPlan.indicators.map(function(x){ return x && x.indicator ? x.indicator : x; }).filter(Boolean) : [];
         var stageRecords = e.list(filters).filter(function(item){ return item && item.evidenceType === "indicator-stage"; });
         var stageCompleted = stageRecords.length;
         var dailyPlan = dailyEngine() &&
@@ -174,7 +182,7 @@
             '<div><strong>' + summary.covered + '</strong><span>Covered</span></div>' +
             '<div><strong>' + summary.remaining + '</strong><span>Remaining</span></div>' +
             '</div>' +
-            '<h3>Current Daily Learning</h3>' +
+            '<h3>Adaptive Learning Path</h3><p><strong>Current pathway:</strong> ' + escapeHtml(adaptiveCapability) + '</p><p><strong>Next activity:</strong> ' + escapeHtml(adaptiveNext) + '</p><p>' + escapeHtml(adaptiveStatus) + '</p><h3>Current Daily Learning</h3>' +
             '<p>Day ' + currentDay + ' — ' + escapeHtml(subjectId) +
             ' — ' + escapeHtml(term) + '</p>' +
             (dailyPlan && dailyPlan.success ?
