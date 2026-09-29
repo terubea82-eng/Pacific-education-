@@ -219,7 +219,6 @@ window.PacificEducationAssessments = Object.freeze({
         render: render,
         answer: function(type, day, response) {
             readAudioFile(function(audioDataUrl) { saveActivity(type, day, response, audioDataUrl); result(type, "Activity submitted successfully.", audioDataUrl, day, response, ""); });
-            result(type, "Activity submitted successfully.");
         },
         submitField: function(type, day, id) {
             const field = document.getElementById(id);
@@ -229,7 +228,6 @@ window.PacificEducationAssessments = Object.freeze({
                 return;
             }
             readAudioFile(function(audioDataUrl) { saveActivity(type, day, value, audioDataUrl, field.getAttribute("data-question-text") || ""); result(type, "Answer submitted successfully.", audioDataUrl, day, value, field.getAttribute("data-question-text") || ""); });
-            result(type, "Answer submitted successfully.");
         }
     };
 
