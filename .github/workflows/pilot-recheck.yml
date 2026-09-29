@@ -42,7 +42,7 @@ jobs:
           set -e
           roles="student teacher special-education parent professional ngo education community owner"
           for role in $roles; do
-            grep -Fq 'id:"'$role'"' src/js/pacificEducationPilotUserWorkspaces.js
+            grep -Fq "id:\"$role\"" src/js/pacificEducationPilotUserWorkspaces.js
           done
           grep -Fq 'pacificEducationPilotUserWorkspaces.js' src/index.html
 
@@ -50,8 +50,8 @@ jobs:
         run: |
           set -e
           for subject in "Health Science" "Basic Science" "Elementary Science" "Biology" "Chemistry" "Physics"; do
-            grep -Fq 'id:"'$subject'"' src/js/pacificEducationForm1To7ScienceHealth.js
-            grep -Fq 'id: "'$subject'"' src/js/pacificEducationSubjectSelector.js
+            grep -Fq "id:\"$subject\"" src/js/pacificEducationForm1To7ScienceHealth.js
+            grep -Fq "id: \"$subject\"" src/js/pacificEducationSubjectSelector.js
           done
           grep -Fq 'Form 1' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'Form 7' src/js/pacificEducationForm1To7ScienceHealth.js
