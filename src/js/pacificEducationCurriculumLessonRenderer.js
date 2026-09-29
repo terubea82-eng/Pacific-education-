@@ -33,6 +33,46 @@
         return types[(Math.max(1, Number(day) || 1) - 1) % types.length];
     }
 
+    function buildPilotMultipleChoice(lesson, subject) {
+        var existing = lesson && lesson.activity && (
+            lesson.activity.options || lesson.activity.choices || lesson.activity.answerOptions ||
+            lesson.activity.multipleChoiceOptions
+        );
+        if (Array.isArray(existing) && existing.length >= 2) return {
+            question: lesson.activity.questionText || "Select the correct answer.",
+            options: existing,
+            answerIndex: Number.isInteger(Number(lesson.activity.answerIndex)) ? Number(lesson.activity.answerIndex) : null
+        };
+
+        var s = String(subject || "English");
+        if (s === "English") {
+            return {
+                question: "Which word is a greeting?",
+                options: ["Hello", "Pencil", "Seven", "Green"],
+                answerIndex: 0
+            };
+        }
+        if (s === "Mathematics") {
+            return {
+                question: "What is 2 + 2?",
+                options: ["3", "4", "5", "6"],
+                answerIndex: 1
+            };
+        }
+        if (s === "Science" || s === "Basic Science" || s === "Elementary Science") {
+            return {
+                question: "Which one is a living thing?",
+                options: ["Tree", "Rock", "Cup", "Pencil"],
+                answerIndex: 0
+            };
+        }
+        return {
+            question: "Select the correct response for today's pilot activity.",
+            options: ["Option A", "Option B", "Option C", "Option D"],
+            answerIndex: null
+        };
+    }
+
     function attachActivity(day, lesson) {
         var activity = window.PacificEducationActivity;
         var container = document.getElementById("dailyLesson");
@@ -54,6 +94,7 @@
             : lesson && lesson.activities && lesson.activities[0] && lesson.activities[0].questionText
                 ? lesson.activities[0].questionText
                 : "Complete today's curriculum activity.";
+        var pilotMultipleChoice = buildPilotMultipleChoice(lesson, getSubject());
         var audioText = lesson && lesson.activity && lesson.activity.audioText
             ? lesson.activity.audioText
             : lesson && lesson.activities && lesson.activities[0] && lesson.activities[0].audioText
@@ -100,6 +141,13 @@
                     context.activity = context.activity || {};
                     context.activity.questionText = question;
                     context.activity.audioText = audioText;
+                    if (type === "multiple_choice") {
+                        context.activity.questionText = pilotMultipleChoice.question;
+                        context.activity.options = pilotMultipleChoice.options.slice();
+                        context.activity.choices = pilotMultipleChoice.options.slice();
+                        context.activity.answerOptions = pilotMultipleChoice.options.slice();
+                        context.activity.answerIndex = pilotMultipleChoice.answerIndex;
+                    }
                     context.activity.contentBasis = (lesson && lesson.activity && lesson.activity.contentBasis) || "concept-based-pilot-prototype";
                     context.questionText = question;
                     context.audioText = audioText;
