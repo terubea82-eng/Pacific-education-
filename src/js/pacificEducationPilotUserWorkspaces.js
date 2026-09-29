@@ -188,6 +188,7 @@
           if (status) status.textContent = ok ? "Opened " + button.textContent + "." : "That pilot tool is not available in this build.";
         });
       });
+    }
 
     select.onchange = function () {
       renderRole(select.value);
