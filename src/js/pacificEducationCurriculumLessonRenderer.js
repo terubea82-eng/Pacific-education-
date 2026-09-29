@@ -118,7 +118,7 @@
         return !!activity;
     }
 
-    function setDay(day){var d=Math.max(1,Math.min(60,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}var core=window.PacificEducationCore;if(core&&typeof core.setLesson==="function"&&typeof core.isAuthorized==="function"&&core.isAuthorized()){try{var state=typeof core.getState==="function"?core.getState():null;var lesson=state&&state.lesson?state.lesson:{};core.setLesson({lessonId:lesson.lessonId||null,day:d,subject:lesson.subject||getSubject(),title:"",concept:lesson.concept||"",status:"not_started"});}catch(e){console.warn("Pacific Education: Core day navigation sync deferred.",e);}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(60,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(50,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 60 term days (50 teaching + revision + examination)";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=60;}function renderIndicatorStages(lesson) {
+    function setDay(day){var d=Math.max(1,Math.min(365,Number(day)||1));window.localStorage.setItem("pacificEducationPilotTermDay",String(d));window.localStorage.setItem("currentDayNumber",String(d));if(window.PacificEducationDailyLessons&&typeof window.PacificEducationDailyLessons.setCurrentCoreDay==="function"){try{window.PacificEducationDailyLessons.setCurrentCoreDay(d);}catch(e){}}var core=window.PacificEducationCore;if(core&&typeof core.setLesson==="function"&&typeof core.isAuthorized==="function"&&core.isAuthorized()){try{var state=typeof core.getState==="function"?core.getState():null;var lesson=state&&state.lesson?state.lesson:{};core.setLesson({lessonId:lesson.lessonId||null,day:d,subject:lesson.subject||getSubject(),title:"",concept:lesson.concept||"",status:"not_started"});}catch(e){console.warn("Pacific Education: Core day navigation sync deferred.",e);}}refresh();return d;}function bindNavigation(){var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.onclick=function(){setDay(Math.max(1,getDay()-1));};if(next)next.onclick=function(){setDay(Math.min(60,getDay()+1));};}function updateNavigation(day){var d=Math.max(1,Math.min(365,Number(day)||1)),label=document.getElementById("dailyLessonProgress");if(label)label.textContent="Day "+d+" of 365 daily activities (school calendar controls teaching, revision and examination days)";var prev=document.getElementById("previousLessonButton"),next=document.getElementById("nextLessonButton");if(prev)prev.disabled=d<=1;if(next)next.disabled=d>=60;}function renderIndicatorStages(lesson) {
         var container=document.getElementById("dailyLesson");
         if(!container)return;
         var old=document.getElementById("pacificAchievementIndicatorStages");
@@ -318,7 +318,7 @@ function attachTextAudioControls(targetId, text) {
         section.setAttribute("aria-label", "Daily activity browser");
         section.style.marginTop = "1rem";
         var h = document.createElement("h3");
-        h.textContent = "Daily Activities — Days 1–60";
+        h.textContent = "Daily Activities — Days 1–365";
         section.appendChild(h);
         var p = document.createElement("p");
         p.textContent = "Choose any term day to attempt its activities. Pacific Guardian highlights the recommended activity for the learner's current capability.";
@@ -327,7 +327,7 @@ function attachTextAudioControls(targetId, text) {
         var select = document.createElement("select");
         select.id = "pacificDailyActivityDay";
         select.setAttribute("aria-label", "Choose daily activity day");
-        for (var d = 1; d <= 60; d += 1) {
+        for (var d = 1; d <= 365; d += 1) {
             var option = document.createElement("option");
             option.value = String(d);
             option.textContent = "Day " + d;
