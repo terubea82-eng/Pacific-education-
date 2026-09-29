@@ -44,13 +44,37 @@
         box.id = "pacificInteractiveActivity";
         box.setAttribute("aria-label", "Daily learner activities");
         box.style.marginTop = "1rem";
+
         var heading = document.createElement("h3");
-        heading.textContent = "Daily Activities — choose any activity to attempt";
+        heading.textContent = "Daily Activities — Day " + day;
         box.appendChild(heading);
 
-        var note = document.createElement("p");
-        note.textContent = "Recommended for " + (getCapability() === "remedial" ? "Remedial / Re-teaching" : getCapability() === "developing" ? "Developing / Guided Practice" : getCapability() === "advanced" ? "Advanced / Extension" : "Expected-level / Independent Practice") + ". All five daily activity types remain available to attempt.";
-        box.appendChild(note);
+        var question = lesson && lesson.activity && lesson.activity.questionText
+            ? lesson.activity.questionText
+            : lesson && lesson.activities && lesson.activities[0] && lesson.activities[0].questionText
+                ? lesson.activities[0].questionText
+                : "Complete today's curriculum activity.";
+        var audioText = lesson && lesson.activity && lesson.activity.audioText
+            ? lesson.activity.audioText
+            : lesson && lesson.activities && lesson.activities[0] && lesson.activities[0].audioText
+                ? lesson.activities[0].audioText
+                : question;
+
+        var source = document.createElement("p");
+        source.textContent = "Curriculum activity: " + question;
+        box.appendChild(source);
+
+        var audio = document.createElement("button");
+        audio.type = "button";
+        audio.textContent = "🔊 Listen to curriculum question";
+        audio.addEventListener("click", function() {
+            if (typeof window.speakText === "function") window.speakText(String(audioText));
+            else if (window.speechSynthesis) {
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(new SpeechSynthesisUtterance(String(audioText)));
+            }
+        });
+        box.appendChild(audio);
 
         var types = window.PacificEducationActivityTypes || ["multiple_choice","true_false","matching","short_answer","long_answer"];
         var recommended = activityTypeForDay(day);
@@ -63,15 +87,23 @@
             var title = document.createElement("h4");
             title.textContent = (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type) + (type === recommended ? " — Recommended" : "");
             card.appendChild(title);
-            var p = document.createElement("p");
-            p.textContent = "Attempt this daily activity using text or audio where supported.";
-            card.appendChild(p);
+
             var button = document.createElement("button");
             button.type = "button";
             button.textContent = "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type);
             button.disabled = !activity || typeof activity.render !== "function";
             button.addEventListener("click", function() {
-                if (activity && typeof activity.render === "function") activity.render(type, day, lesson || {});
+                if (activity && typeof activity.render === "function") {
+                    var context = Object.assign({}, lesson || {});
+                    context.activity = context.activity || {};
+                    context.activity.questionText = question;
+                    context.activity.audioText = audioText;
+                    context.activity.contentBasis = (lesson && lesson.activity && lesson.activity.contentBasis) || "concept-based-pilot-prototype";
+                    context.questionText = question;
+                    context.audioText = audioText;
+                    context.responseMode = "text-or-audio";
+                    activity.render(type, day, context);
+                }
             });
             card.appendChild(button);
             box.appendChild(card);
