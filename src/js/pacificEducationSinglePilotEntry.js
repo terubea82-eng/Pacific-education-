@@ -160,14 +160,18 @@
     var section = document.createElement("section");
     section.id = ENTRY_ID;
     section.setAttribute("aria-label", "Pacific Education single user registration");
-    section.style.border = "2px solid currentColor";
+    section.style.cssText = "border:2px solid currentColor;border-radius:14px;padding:20px;margin:12px 0 20px;background:rgba(127,127,127,.08);box-shadow:0 2px 10px rgba(0,0,0,.08)";
     section.innerHTML =
-      "<h2>Pacific Education — Register / Sign In</h2>" +
-      "<p><strong>One registration box.</strong> Select your user type once. Pacific Education will connect you to the correct pilot platform automatically.</p>" +
-      "<p>Student users go directly to Daily Learning and Assessments. Other roles are routed only to their authorized pilot workspace.</p>" +
-      "<label for=\"singlePilotRole\"><strong>User type</strong></label><br>" +
-      "<select id=\"singlePilotRole\" style=\"width:100%;max-width:520px;padding:12px;margin-top:6px\">" +
-      "<option value=\"\">Select user type</option>" +
+      "<div style=\"display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap\">" +
+        "<div><p style=\"margin:0 0 6px\"><strong>CONTROLLED PILOT • USER ENTRY</strong></p>" +
+        "<h2 style=\"margin:0\">Pacific Education Pilot</h2></div>" +
+        "<span style=\"border:1px solid currentColor;border-radius:999px;padding:5px 10px;font-size:.85em\">Pilot only • Production locked</span>" +
+      "</div>" +
+      "<p><strong>Welcome.</strong> Choose your pilot role below. Your role determines which learning, review and dashboard tools are shown.</p>" +
+      "<p><strong>Student:</strong> Daily Learning → Activities → Assessments → Progress. <strong>Other roles:</strong> role-specific pilot workspace only.</p>" +
+      "<label for=\"singlePilotRole\"><strong>Who are you testing as?</strong></label><br>" +
+      "<select id=\"singlePilotRole\" style=\"width:100%;max-width:620px;padding:12px;margin-top:7px;border-radius:8px\">" +
+      "<option value=\"\">Select pilot role</option>" +
       "<option value=\"student\">Student</option>" +
       "<option value=\"teacher\">Teacher</option>" +
       "<option value=\"special-education\">Special Education / Inclusion</option>" +
@@ -178,10 +182,9 @@
       "<option value=\"community\">Community / Partner</option>" +
       "<option value=\"owner\">Owner / Control</option>" +
       "</select><br>" +
-      "<button type=\"button\" id=\"singlePilotRegisterButton\" style=\"margin-top:10px\">Register / Continue</button>" +
-      "<p id=\"singlePilotRegistrationStatus\" role=\"status\" aria-live=\"polite\">Pilot registration is required before any other platform tools appear.</p>" +
-      "<p><small>Controlled pilot only. Do not enter real sensitive identity, password, payment or exact-location data. Production authentication and server authorization are still required.</small></p>";
-
+      "<button type=\"button\" id=\"singlePilotRegisterButton\" style=\"margin-top:12px;padding:11px 18px;border-radius:8px\">Enter Pilot Workspace</button>" +
+      "<p id=\"singlePilotRegistrationStatus\" role=\"status\" aria-live=\"polite\">Select a role to begin. No other pilot workspace is exposed before entry.</p>" +
+      "<div style=\"margin-top:14px;padding:12px;border-left:4px solid currentColor\"><strong>Pilot safety boundary</strong><br><small>Use demonstration/test data only. Do not enter passwords, payment details, sensitive child information or exact location. This pilot entry is not production authentication and cannot authorize production release.</small></div>";
     main.insertBefore(section, main.firstChild);
 
     document.getElementById("singlePilotRegisterButton").onclick = function () {
@@ -204,7 +207,7 @@
     }
 
     window.PacificEducationSinglePilotEntry = Object.freeze({
-      version: "1.1.0",
+      version: "1.2.0",
       prototype: true,
       productionEligible: false,
       registerRole: registerRole,
