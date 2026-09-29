@@ -20,11 +20,23 @@ function render(){
  html+="<p><strong>Audio/special-education submissions:</strong> "+audio.length+"</p></div>";
  root.innerHTML=html;
 }
+function applyAdaptiveReview(item,status){
+ var capability=status==="approved"?"expected":"remedial";
+ try{
+  localStorage.setItem("pacificEducationCapability",capability);
+  localStorage.setItem("pacificEducationAdaptiveLearningStatus",status==="approved"?"Teacher-approved evidence — continue expected-level mixed learning":"Teacher review recommends targeted re-teaching before progressing");
+  localStorage.setItem("pacificEducationAdaptiveNextActivity",status==="approved"?"Independent Practice":"Remedial / Re-teaching");
+  localStorage.setItem("pacificEducationAdaptiveLastReview",JSON.stringify({status:status,day:Number(item.day)||0,type:item.type||"",questionText:item.questionText||"",reviewedAt:new Date().toISOString()}));
+ }catch(e){}
+ document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated",{detail:{capability:capability,capabilityLabel:capability==="approved"?"Expected-level":(capability==="remedial"?"Remedial / Re-teaching":"Expected-level"),score:null,reviewStatus:status,nextActivity:status==="approved"?"Independent Practice":"Remedial / Re-teaching",context:item.curriculumContext||{},teacherReviewed:true,prototype:true}}));
+ if(typeof window.displayDailyLesson==="function"){try{window.displayDailyLesson();}catch(e){}}
+}
 function review(index,status){
  var a=read(KEY); if(!a[index])return;
  var note=document.getElementById("trq-"+index);
  a[index].reviewStatus=status==="approved"?"teacher-approved":"teacher-needs-practice";
  a[index].teacherGuidance=note?note.value:""; a[index].teacherReviewedAt=new Date().toISOString(); write(KEY,a);
+ applyAdaptiveReview(a[index],status);
  if(window.PacificEducationDailyProgressRecorder&&status==="approved"){
   try{window.PacificEducationDailyProgressRecorder.recordPractised({activityId:"reviewed-"+String(a[index].type||"activity")+"-day-"+String(a[index].day||0),dayNumber:Number(a[index].day)||1,notes:"Teacher-approved learner response: "+String(a[index].questionText||"")+" Guidance: "+String(a[index].teacherGuidance||"")});}catch(e){}
  }
