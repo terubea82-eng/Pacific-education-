@@ -133,6 +133,9 @@
             term = window.localStorage.getItem("pacificEducationTerm") || "Term 1";
         } catch (ignore2) {}
 
+        var curriculumIndicators = dailyPlan && Array.isArray(dailyPlan.indicators) ? dailyPlan.indicators.map(function(x){ return x && x.indicator ? x.indicator : x; }).filter(Boolean) : [];
+        var stageRecords = e.list(filters).filter(function(item){ return item && item.evidenceType === "indicator-stage"; });
+        var stageCompleted = stageRecords.length;
         var dailyPlan = dailyEngine() &&
             typeof dailyEngine().generateDailyPlan === "function" ?
             dailyEngine().generateDailyPlan({
@@ -214,7 +217,8 @@
                 subjectId: subjectId,
                 term: term,
                 dayNumber: currentDay,
-                studentId: studentId
+                studentId: studentId,
+                activityId: "daily-"+String(currentDay)+"-"+String(subjectId)
             });
             if (message) {
                 message.textContent = result.success ?
