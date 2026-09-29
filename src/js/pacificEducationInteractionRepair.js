@@ -239,6 +239,108 @@
     reportError(event && event.reason ? String(event.reason) : "Unhandled promise rejection", "promise");
   });
 
+  function ensureDailyActivitiesVisible() {
+    var daily = document.getElementById("dailyLesson");
+    if (!daily) return false;
+
+    var existing = document.getElementById("pacificInteractiveActivity");
+    if (existing) return true;
+
+    var section = document.createElement("section");
+    section.id = "pacificInteractiveActivity";
+    section.setAttribute("aria-label", "Daily learner activities");
+    section.style.marginTop = "1rem";
+    section.style.padding = "1rem";
+    section.style.border = "2px solid currentColor";
+
+    var day = Number(localStorage.getItem("currentDayNumber") || "1");
+    if (!Number.isFinite(day) || day < 1 || day > 365) day = 1;
+    var subject = localStorage.getItem("pacificEducationSubject") || "English";
+    var heading = document.createElement("h3");
+    heading.textContent = "Daily Activities — Day " + day + " of 365";
+    section.appendChild(heading);
+
+    var note = document.createElement("p");
+    note.textContent = "Attempt a pilot activity below. Test/demo data only.";
+    section.appendChild(note);
+
+    var statusEl = document.createElement("p");
+    statusEl.id = "pacificEducationDailyActivityStatus";
+    statusEl.setAttribute("aria-live", "polite");
+    section.appendChild(statusEl);
+
+    var types = window.PacificEducationActivityTypes ||
+      ["multiple_choice","true_false","matching","short_answer","long_answer"];
+    var labels = (window.PacificEducationActivity && window.PacificEducationActivity.labels) || {
+      multiple_choice:"Multiple Choice", true_false:"True or False", matching:"Matching",
+      short_answer:"Short Answer", long_answer:"Long Answer"
+    };
+
+    types.forEach(function(type) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.textContent = "Attempt " + (labels[type] || type);
+      button.setAttribute("data-pacific-action", "attempt-daily-" + type);
+      button.addEventListener("click", function() {
+        var runtime = window.PacificEducationActivity;
+        var lesson = {
+          dayNumber: day,
+          level: localStorage.getItem("pacificEducationLevel") || "Class 1",
+          subjectId: subject,
+          term: localStorage.getItem("pacificEducationTerm") || "Term 1",
+          title: "Day " + day + " — " + subject + " Daily Activity",
+          activity: {
+            questionText: subject === "Mathematics" ? "What is 2 + 2?" :
+              subject === "Science" ? "Which one is a living thing?" :
+              "Which word is a greeting?",
+            audioText: "Complete today's " + subject + " daily activity.",
+            options: subject === "Mathematics" ? ["3","4","5","6"] :
+              subject === "Science" ? ["Tree","Rock","Cup","Pencil"] :
+              ["Hello","Pencil","Seven","Green"],
+            answerIndex: subject === "Mathematics" ? 1 : 0
+          }
+        };
+
+        if (runtime && typeof runtime.render === "function") {
+          try {
+            runtime.render(type, day, lesson);
+            statusEl.textContent = "Activity opened. Submit your answer to record the attempt.";
+            return;
+          } catch (e) {
+            reportError(e && e.message ? e.message : e, "daily activity runtime");
+          }
+        }
+
+        statusEl.textContent = "Interactive runtime is unavailable. Reloading the Daily Activity system…";
+        var renderer = window.PacificEducationCurriculumLessonRenderer;
+        if (renderer && typeof renderer.initialise === "function") {
+          try { renderer.initialise(); } catch (e2) {}
+        }
+      });
+      section.appendChild(button);
+    });
+
+    daily.appendChild(section);
+    return true;
+  }
+
+  function repairDailyActivityRuntime() {
+    var runtime = window.PacificEducationActivity;
+    if (!runtime || typeof runtime.render !== "function") {
+      window.setTimeout(repairDailyActivityRuntime, 500);
+      return;
+    }
+
+    var renderer = window.PacificEducationCurriculumLessonRenderer;
+    if (renderer && typeof renderer.refresh === "function") {
+      try { renderer.refresh(); } catch (e) { reportError(e.message, "daily lesson refresh"); }
+    }
+
+    window.setTimeout(function() {
+      ensureDailyActivitiesVisible();
+    }, 100);
+  }
+
   window.PacificEducationInteractionRepair = Object.freeze({
     version: VERSION,
     repair: repairControls,
