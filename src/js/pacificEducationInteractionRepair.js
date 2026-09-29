@@ -55,7 +55,7 @@
     }
   }
 
-  function repairKnownHandlers() {
+  function openPacificEducationFinance() {\n    var target = document.getElementById("buyPlans");\n    if (!target) return false;\n    target.hidden = false;\n    try { target.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e) { target.scrollIntoView(); }\n    var statusEl = document.getElementById("pacificEducationPaymentGatewayStatus");\n    if (statusEl) {\n      var gateway = window.PacificEducationPaymentGateway;\n      statusEl.textContent = gateway && gateway.providerConnected ? "Payment provider connected." : "Pilot finance is available for testing; payment verification remains a production-server/provider responsibility.";\n    }\n    return true;\n  }\n\n  function repairKnownHandlers() {
     ensureGlobalHandler("authorizePrototypeStudent", function() {
       if (typeof window.authorizeStudent === "function") window.authorizeStudent();
       if (typeof window.showRoute === "function") window.showRoute("student");
@@ -87,7 +87,7 @@
   }
 
   function repairControls() {
-    repairKnownHandlers();
+    ensureGlobalHandler("openPacificEducationFinance", openPacificEducationFinance);\n    repairKnownHandlers();
     var missing = missingInlineHandlers();
     if (missing.length) {
       reportError("Missing controls: " + missing.join(", "), "button wiring");
