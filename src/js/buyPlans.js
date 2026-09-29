@@ -408,7 +408,7 @@
             localCurrencyRequired: true
         });
     }
-    function createPaymentRequest(plan) {
+    function createCustomerPaymentRecord(plan, customer) {,        plan = plan || {}; customer = customer || {};,        var currency = normalizeCurrencyCode(customer.currencyCode || plan.currency);,        if (!currency) return { success: false, status: "CUSTOMER_CURRENCY_REQUIRED" };,        var category = String(customer.category || plan.category || plan.name || "Customer");,        return {,            success: true,,            status: "PAYMENT_RECORD_CREATED",,            customerCategory: category,,            countryCode: customer.countryCode || null,,            currency: currency,,            amount: plan.amount ?? null,,            planId: plan.planId || null,,            period: plan.period || null,,            currencySource: "customer-approved-local-currency",,            paymentStatus: "pending",,            providerTransactionId: null,,            receiptStatus: "pending",,            ownerReportingEligible: true,,            productionVerified: false,,            createdAt: new Date().toISOString(),        };,    },,    function validatePaymentRecord(record) {,        var errors = [];,        if (!record || typeof record !== 'object') errors.push('Payment record is required.');,        if (!normalizeCurrencyCode(record && record.currency)) errors.push('Valid customer currency is required.');,        if (!record || !record.planId) errors.push('Plan is required.');,        if (!record || !record.customerCategory) errors.push('Customer category is required.');,        if (record && (!Number.isFinite(Number(record.amount)) || Number(record.amount) <= 0)) errors.push('Positive payment amount is required.');,        return { valid: errors.length === 0, errors: errors };,    },    function createPaymentRequest(plan) {
         if (
             !plan ||
             typeof plan !== "object"
@@ -496,6 +496,8 @@
 
         createPaymentRequest:
             createPaymentRequest,
+        createCustomerPaymentRecord,
+        validatePaymentRecord,
 
         createCustomerPlan
     });
