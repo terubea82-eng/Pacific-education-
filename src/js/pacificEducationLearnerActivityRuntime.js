@@ -147,7 +147,7 @@
     var prompt = active.context.questionText;
     var audio = active.context.audioText || prompt;
     var title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + LABELS[type];
-    var audioButton = '<button type="button" id="peActivityListen">🔊 Listen to question</button>';
+    var audioButton = '<button type="button" id="peActivityListen">🔊 Listen to question</button><button type="button" id="peActivityRecord">🎙️ Record voice answer</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
     var audioFile = '<label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label>';
 
     var body = '<div class="activity"><p>' + escape(prompt) + '</p>' + audioButton + audioFile;
@@ -169,6 +169,50 @@
 
     var listen = document.getElementById("peActivityListen");
     if (listen) listen.addEventListener("click", function() { speak(audio); });
+
+    var recordButton = document.getElementById("peActivityRecord");
+    var recordStatus = document.getElementById("peActivityRecordStatus");
+    var mediaRecorder = null;
+    var recordedChunks = [];
+    if (recordButton) {
+      recordButton.addEventListener("click", function() {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
+          if (recordStatus) recordStatus.textContent = "Voice recording is not supported here. Use the audio file option instead.";
+          return;
+        }
+        if (mediaRecorder && mediaRecorder.state === "recording") {
+          mediaRecorder.stop();
+          recordButton.textContent = "🎙️ Record voice answer";
+          return;
+        }
+        navigator.mediaDevices.getUserMedia({ audio: true }).then(function(stream) {
+          recordedChunks = [];
+          mediaRecorder = new MediaRecorder(stream);
+          mediaRecorder.ondataavailable = function(event) {
+            if (event.data && event.data.size) recordedChunks.push(event.data);
+          };
+          mediaRecorder.onstop = function() {
+            stream.getTracks().forEach(function(track) { track.stop(); });
+            var blob = new Blob(recordedChunks, { type: "audio/webm" });
+            var input = document.getElementById("peActivityAudio");
+            try {
+              var file = new File([blob], "voice-answer.webm", { type: "audio/webm" });
+              var transfer = new DataTransfer();
+              transfer.items.add(file);
+              if (input) input.files = transfer.files;
+              if (recordStatus) recordStatus.textContent = "Voice answer recorded and ready to submit.";
+            } catch (e) {
+              if (recordStatus) recordStatus.textContent = "Voice answer recorded. If it is not attached automatically, use the audio file picker.";
+            }
+          };
+          mediaRecorder.start();
+          recordButton.textContent = "⏹ Stop recording";
+          if (recordStatus) recordStatus.textContent = "Recording… tap Stop recording when finished.";
+        }).catch(function() {
+          if (recordStatus) recordStatus.textContent = "Microphone permission was not granted. You can still answer by text or choose an audio file.";
+        });
+      });
+    }
 
     var submit = document.getElementById("peActivitySubmit");
     if (submit) submit.addEventListener("click", function() {
