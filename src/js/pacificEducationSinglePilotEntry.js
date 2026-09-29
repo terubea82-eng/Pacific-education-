@@ -15,7 +15,7 @@
 
   var ENTRY_ID = "pacificEducationSingleRegistration";
   var ROLE_ROUTES = {
-    student: ["dailyLesson", "assessments", "pacificEducationStudentProgressDashboard", "pacificGuardianCommentSection"],
+    student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "assessments", "teacherCalendarSection", "pacificGuardianCommentSection"],
     teacher: ["teacherDashboard", "teacherCalendarSection", "pacificGuardianCommentSection"],
     "special-education": ["teacherDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     parent: ["parentDashboard", "pacificGuardianCommentSection"],
