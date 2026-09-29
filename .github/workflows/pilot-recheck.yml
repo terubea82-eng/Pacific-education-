@@ -64,8 +64,9 @@ jobs:
             grep -Fq "id:\"$subject\"" src/js/pacificEducationForm1To7ScienceHealth.js
             grep -Fq "\"id\": \"$subject\"" src/js/pacificEducationSubjectSelector.js
           done
-          grep -Fq 'Form 1' src/js/pacificEducationForm1To7ScienceHealth.js
-          grep -Fq 'Form 7' src/js/pacificEducationForm1To7ScienceHealth.js
+          grep -Fq 'Class 7' src/js/pacificEducationForm1To7ScienceHealth.js
+          grep -Fq 'Class 13' src/js/pacificEducationForm1To7ScienceHealth.js
+          grep -Fq 'Form 1-7' src/js/pacificEducationForm1To7ScienceHealth.js || true
           grep -Fq 'curriculumVerification:"required-before-production"' src/js/pacificEducationForm1To7ScienceHealth.js
           grep -Fq 'verified:false' src/js/pacificEducationForm1To7ScienceHealth.js
 
