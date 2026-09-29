@@ -28,7 +28,7 @@ function applyAdaptiveReview(item,status){
   localStorage.setItem("pacificEducationAdaptiveNextActivity",status==="approved"?"Independent Practice":"Remedial / Re-teaching");
   localStorage.setItem("pacificEducationAdaptiveLastReview",JSON.stringify({status:status,day:Number(item.day)||0,type:item.type||"",questionText:item.questionText||"",reviewedAt:new Date().toISOString()}));
  }catch(e){}
- document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated",{detail:{capability:capability,capabilityLabel:capability==="approved"?"Expected-level":(capability==="remedial"?"Remedial / Re-teaching":"Expected-level"),score:null,reviewStatus:status,nextActivity:status==="approved"?"Independent Practice":"Remedial / Re-teaching",context:item.curriculumContext||{},teacherReviewed:true,prototype:true}}));
+ document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated",{detail:{capability:capability,capabilityLabel:status==="approved"?"Expected-level":"Remedial / Re-teaching",score:null,reviewStatus:status,nextActivity:status==="approved"?"Independent Practice":"Remedial / Re-teaching",context:item.curriculumContext||{},teacherReviewed:true,prototype:true}}));
  if(typeof window.displayDailyLesson==="function"){try{window.displayDailyLesson();}catch(e){}}
 }
 function review(index,status){
