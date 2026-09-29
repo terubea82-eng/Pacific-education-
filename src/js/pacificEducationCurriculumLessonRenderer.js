@@ -87,12 +87,20 @@
             if(instructions[type]){
                 var ip=document.createElement("p");ip.textContent=instructions[type];card.appendChild(ip);
             }
-            var stageOrder=["teach","guided-practice","independent-practice","application","check-assessment","remedial-extension"];\n            var currentIndex=stageOrder.indexOf(type);\n            var indicatorId=x.indicatorId||x.id;\n            var existingRecords=[];\n            var coverage=window.PacificEducationCurriculumCoverageEngine;\n            if(coverage&&typeof coverage.list==="function"){var coreUser=window.PacificEducationCore&&typeof window.PacificEducationCore.getCurrentUser==="function" ? window.PacificEducationCore.getCurrentUser() : null;existingRecords=coverage.list({studentId:coreUser&&coreUser.userId});}\n            var priorComplete=stageOrder.slice(0,currentIndex).every(function(s){return existingRecords.some(function(r){return r&&r.evidenceType==="indicator-stage"&&r.indicatorId===indicatorId&&(r.stageType===s||r.activityType===s);});});\n            if(currentIndex>0&&!priorComplete){var locked=document.createElement("p");locked.textContent="Complete the previous stage first.";locked.setAttribute("aria-live","polite");card.appendChild(locked);}\n            var action=document.createElement("button");action.type="button";action.textContent="Mark "+(labels[type]||"Stage")+" Complete";
+            var stageOrder=["teach","guided-practice","independent-practice","application","check-assessment","remedial-extension"];
+            var currentIndex=stageOrder.indexOf(type);
+            var indicatorId=x.indicatorId||x.id;
+            var existingRecords=[];
+            var coverage=window.PacificEducationCurriculumCoverageEngine;
+            if(coverage&&typeof coverage.list==="function"){var coreUser=window.PacificEducationCore&&typeof window.PacificEducationCore.getCurrentUser==="function" ? window.PacificEducationCore.getCurrentUser() : null;existingRecords=coverage.list({studentId:coreUser&&coreUser.userId});}
+            var priorComplete=stageOrder.slice(0,currentIndex).every(function(s){return existingRecords.some(function(r){return r&&r.evidenceType==="indicator-stage"&&r.indicatorId===indicatorId&&(r.stageType===s||r.activityType===s);});});
+            if(currentIndex>0&&!priorComplete){var locked=document.createElement("p");locked.textContent="Complete the previous stage first.";locked.setAttribute("aria-live","polite");card.appendChild(locked);}
+            var action=document.createElement("button");action.type="button";action.textContent="Mark "+(labels[type]||"Stage")+" Complete";action.disabled=currentIndex>0&&!priorComplete;
             action.addEventListener("click",function(){
                 var recorder=window.PacificEducationDailyProgressRecorder;
                 if(!recorder||typeof recorder.record!=="function"){action.textContent="Recorder unavailable";return;}
                 var result=recorder.record({
-                    status:"practised",evidenceType:"indicator-stage",stageType:type,activityType:type,
+                    status:"practised",evidenceType:"indicator-stage",stageType:type,activityType:type,activityId:"daily-"+String(day)+"-"+String(getSubject()),
                     notes:"Pilot completion: "+(labels[type]||type)
                 });
                 if(result&&result.success){
@@ -115,7 +123,9 @@
             card.appendChild(action);section.appendChild(card);
         });
         container.appendChild(section);
-    }\n\nfunction render(plan) {
+    }
+
+function render(plan) {
         if (!plan || !plan.success || !plan.lesson) return false;
         var lesson = plan.lesson;
         var areas = Array.isArray(lesson.learningAreas) ? lesson.learningAreas : [];
