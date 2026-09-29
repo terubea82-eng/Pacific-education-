@@ -21,6 +21,8 @@ const assessmentData = {
     }
 };
 
+function escapeHTML(value) { return String(value == null ? "" : value).replace(/[&<>"\']/g, function (ch) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","\'":"&#039;"}[ch]; }); }
+
 function speakAssessmentQuestion(question) {    if (typeof speakText === "function") speakText(String(question || ""));}function renderAudioControls(question) {    var safeQuestion = escapeHTML(String(question || ""));    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label></div>`;}function readFormalAssessmentAudio(done) {
     var input=document.getElementById("peActivityAudio"), file=input&&input.files&&input.files[0];
     if(!file){done("");return;}
