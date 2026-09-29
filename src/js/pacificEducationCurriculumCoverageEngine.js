@@ -11,7 +11,8 @@
     var VERSION = "1.0.0";
     var STORAGE_KEY = "pacificEducationCurriculumCoverage";
     var MAX_RECORDS = 5000;
-    var STATES = ["not-started", "taught", "practised", "assessed", "covered"];\n    var STAGE_TYPES = ["teach", "guided-practice", "independent-practice", "application", "check-assessment", "remedial-extension"];
+    var STATES = ["not-started", "taught", "practised", "assessed", "covered"];
+    var STAGE_TYPES = ["teach", "guided-practice", "independent-practice", "application", "check-assessment", "remedial-extension"];
 
     function copy(v) {
         return JSON.parse(JSON.stringify(v));
@@ -52,10 +53,37 @@
             input.status : "taught";
 
         var records = load();
-        var existing = find(records, input.indicatorId, input.studentId);\n        var isStage = input.evidenceType === "indicator-stage";\n        var stageType = input.stageType || input.activityType || null;\n        if (isStage && STAGE_TYPES.indexOf(stageType) < 0) {\n            return { success: false, error: "Valid indicator stage type required" };\n        }
+        var existing = find(records, input.indicatorId, input.studentId);
+        var isStage = input.evidenceType === "indicator-stage";
+        var stageType = input.stageType || input.activityType || null;
+        if (isStage && STAGE_TYPES.indexOf(stageType) < 0) {
+            return { success: false, error: "Valid indicator stage type required" };
+        }
         var now = new Date().toISOString();
 
-        if (isStage) {\n            var stageRecord = {\n                indicatorId: input.indicatorId,\n                studentId: input.studentId || null,\n                firstRecordedAt: now,\n                prototype: true,\n                status: state,\n                date: input.date || now,\n                assessmentId: input.assessmentId || null,\n                evidenceType: "indicator-stage",\n                stageType: stageType,\n                activityType: input.activityType || stageType,\n                teacherConfirmed: input.teacherConfirmed === true,\n                notes: input.notes || "",\n                productionEligible: false,\n                updatedAt: now\n            };\n            records.push(stageRecord);\n            save(records);\n            return { success: true, record: copy(stageRecord), prototype: true };\n        }\n\n        var item = existing || {
+        if (isStage) {
+            var stageRecord = {
+                indicatorId: input.indicatorId,
+                studentId: input.studentId || null,
+                firstRecordedAt: now,
+                prototype: true,
+                status: state,
+                date: input.date || now,
+                assessmentId: input.assessmentId || null,
+                evidenceType: "indicator-stage",
+                stageType: stageType,
+                activityType: input.activityType || stageType,
+                teacherConfirmed: input.teacherConfirmed === true,
+                notes: input.notes || "",
+                productionEligible: false,
+                updatedAt: now
+            };
+            records.push(stageRecord);
+            save(records);
+            return { success: true, record: copy(stageRecord), prototype: true };
+        }
+
+        var item = existing || {
             indicatorId: input.indicatorId,
             studentId: input.studentId || null,
             firstRecordedAt: now,
