@@ -42,6 +42,7 @@ jobs:
           test -f src/js/pacificEducationStudentCoverageContext.js
           test -f src/js/pacificEducationTeacherCalendar.js
           test -f src/js/pacificEducationInteractionRepair.js
+          test -f src/js/pacificEducationPilotIntegrityGuard.js
           test -f js/pacificEducationProductionAppShell.js
           test -f PILOT_100_USER_APK_DISTRIBUTION.md
           test -f PILOT_READY_CHECKLIST.md
@@ -71,6 +72,7 @@ jobs:
       - name: Syntax-check critical JavaScript and interaction layer
         run: |
           set -e
+          node --check src/js/pacificEducationPilotIntegrityGuard.js
           node --check src/js/pacificEducationLearnerActivityRuntime.js
           node --check src/js/pacificEducationInteractionRepair.js
           node --check src/js/pacificEducationCurriculumLessonRenderer.js
@@ -95,6 +97,11 @@ jobs:
           grep -Fq 'submitPacificEducationDashboardReviewComment' src/js/pacificEducationGuardianReviewController.js
           grep -Fq 'pacificEducationStudentCoverageContext.js' src/index.html
           grep -Fq 'pacificEducationTeacherCalendar.js' src/index.html
+          test "$(grep -o 'src/js/pacificEducationPilotIntegrityGuard.js' src/index.html | wc -l)" -eq 1
+          grep -Fq 'window.PacificEducationPilotIntegrityGuard' src/js/pacificEducationPilotIntegrityGuard.js
+          grep -Fq 'productionAuthority: false' src/js/pacificEducationPilotIntegrityGuard.js
+          grep -Fq 'productionApproval: false' src/js/pacificEducationPilotIntegrityGuard.js
+          grep -Fq 'productionEligible: false' src/js/pacificEducationPilotIntegrityGuard.js
 
       - name: Verify daily activity runtime
         run: |
@@ -123,6 +130,8 @@ jobs:
           grep -q '"productionApproved": false' release/production-authorization.json
           grep -q '"productionEligible": false' release/production-authorization.json
           grep -q '"release_status": "BLOCKED"' release/production-authorization.json
+          ! grep -q '"productionApproved": true' release/production-authorization.json
+          ! grep -q '"productionEligible": true' release/production-authorization.json
 
       - name: Verify pilot boundary does not require production authorization
         run: |
@@ -167,6 +176,7 @@ jobs:
             echo "- All pilot roles wired: PASS"
             echo "- Form 1-7 Science and Health pilot coverage: PASS"
             echo "- Professional Reviewer portal wiring: PASS"
+            echo "- Pilot integrity guard: PASS"
             echo "- Production gate remains BLOCKED: PASS"
             echo "- Pilot boundary remains separate from production authorization: PASS"
             echo "- GitHub Pages deployment and reviewer portal asset: verified by live HTTP checks"
