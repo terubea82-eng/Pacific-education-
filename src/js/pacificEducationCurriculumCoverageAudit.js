@@ -9,6 +9,7 @@
   "use strict";
   var VERSION="1.0.0";
   var ROOT_ID="pacificEducationCurriculumVerificationAudit";
+  var DETAIL_ID="pacificEducationCurriculumAuditDetail";
   var VERIFIED=["VALIDATED","SOURCE_VERIFIED","VERIFIED"];
 
   function esc(v){
@@ -77,6 +78,34 @@
     }};
   }
 
+  function renderDetail(indicatorId){
+    var root=document.getElementById(DETAIL_ID); if(!root) return;
+    var data=build(), row=data.rows.filter(function(x){return x.indicator.id===indicatorId;})[0];
+    if(!row){root.innerHTML="";return;}
+    var i=row.indicator, ev=row.verifiedEvidence.length?row.verifiedEvidence:row.evidenceRecords;
+    var map=mapper(), activities=[];
+    try{activities=map&&typeof map.mapIndicator==="function"?map.mapIndicator(i):[];}catch(e){activities=[];}
+    var stages=["teach","guided-practice","independent-practice","application","check-assessment","remedial-extension"];
+    var records=coverage()&&typeof coverage().list==="function"?coverage().list({studentId:studentId(),indicatorId:indicatorId}):[];
+    var html=["<section class=\"pe-audit-detail\"><h3>Indicator Drill-Down: "+esc(i.id)+"</h3>"]; 
+    html.push("<p><strong>Achievement Indicator:</strong> "+esc(i.indicatorText||i.achievementIndicator||"")+"</p>");
+    html.push("<p><strong>Class:</strong> "+esc(i.level)+" &nbsp; <strong>Subject:</strong> "+esc(i.subjectId)+" &nbsp; <strong>Term:</strong> "+esc(i.term)+"</p>");
+    html.push("<h4>1. Source Evidence</h4>");
+    if(!ev.length) html.push("<p>Pending source evidence.</p>");
+    ev.forEach(function(x){html.push("<p><strong>"+esc(x.status||"Unverified")+"</strong> — "+esc(x.sourceTitle||x.evidenceReference||"Source reference")+(x.page?" — page "+esc(x.page):"")+(x.section?" — "+esc(x.section):"")+(x.documentLocation?" — "+esc(x.documentLocation):"")+"</p>");});
+    html.push("<h4>2. Mapped Activities</h4>");
+    if(!activities.length) html.push("<p>No activity mapping is currently available.</p>");
+    activities.forEach(function(a,n){html.push("<p><strong>"+(n+1)+". "+esc(a.activityType||"activity")+"</strong> — "+esc(a.title||a.taskFocus||"")+"</p>");});
+    html.push("<h4>3. Six-Stage Learning Evidence</h4><ul>");
+    stages.forEach(function(s){var hit=records.some(function(r){return r.evidenceType==="indicator-stage"&&r.stageType===s;});html.push("<li>"+esc(s)+" — "+(hit?"Recorded":"Not recorded")+"</li>");});
+    html.push("</ul><h4>4. Assessment & Coverage</h4>");
+    var normal=records.filter(function(r){return r.evidenceType!=="indicator-stage";}).sort(function(a,b){return String(b.updatedAt||"").localeCompare(String(a.updatedAt||""));})[0];
+    html.push("<p><strong>Assessment:</strong> "+(row.assessed?"Assessed":"Not Assessed")+"</p>");
+    html.push("<p><strong>Coverage:</strong> "+(row.covered?"Covered — teacher confirmed":"Not Covered")+(normal&&normal.status?" ("+esc(normal.status)+")":"")+"</p>");
+    html.push("<button type=\"button\" data-pe-audit-close>Close drill-down</button></section>"); root.innerHTML=html.join("");
+    var close=root.querySelector("[data-pe-audit-close]"); if(close) close.addEventListener("click",function(){root.innerHTML="";});
+  }
+
   function render(){
     var root=document.getElementById(ROOT_ID);
     if(!root) return;
@@ -94,7 +123,7 @@
     html.push("<p><strong>Current selection:</strong> "+esc(currentFilters().level||"All classes")+" • "+esc(currentFilters().subjectId||"All subjects")+" • "+esc(currentFilters().term||"All terms")+"</p>");
     if(!data.rows.length){ html.push("<p>No curriculum indicators are registered for the current selection.</p>"); }
     else {
-      html.push("<div style=\"overflow:auto\"><table><thead><tr><th>Indicator</th><th>Level</th><th>Subject</th><th>Term</th><th>Verification</th><th>Activities</th><th>Assessment</th><th>Coverage</th></tr></thead><tbody>");
+      html.push("<div style=\"overflow:auto\"><table><thead><tr><th>Indicator</th><th>Level</th><th>Subject</th><th>Term</th><th>Verification</th><th>Activities</th><th>Assessment</th><th>Coverage</th><th>Drill-down</th></tr></thead><tbody>");
       data.rows.forEach(function(r){
         var i=r.indicator, rec=r.record;
         html.push("<tr>");
@@ -104,12 +133,16 @@
         html.push("<td>"+(r.mapped?"Mapped to Activities":"Not Mapped")+"</td>");
         html.push("<td>"+(r.assessed?"Assessed":"Not Assessed")+"</td>");
         html.push("<td>"+(r.covered?"Covered":"Not Covered")+(rec&&rec.status?"<br><small>"+esc(rec.status)+"</small>":"")+"</td>");
+        html.push("<td><button type=\"button\" data-pe-audit-detail=\""+esc(i.id)+"\">View details</button></td>");
         html.push("</tr>");
       });
       html.push("</tbody></table></div>");
     }
     html.push("<p><small>Coverage is student-specific and remains prototype evidence. Covered requires teacher confirmation.</small></p>");
     html.push("</section>");
+    var detail=document.getElementById(DETAIL_ID); if(detail&&data.rows.length===0) detail.innerHTML="";
+    var buttons=root.querySelectorAll("[data-pe-audit-detail]"); Array.prototype.forEach.call(buttons,function(b){b.addEventListener("click",function(){renderDetail(b.getAttribute("data-pe-audit-detail"));});});
+    renderDetail("");
     root.innerHTML=html.join("");
   }
 
