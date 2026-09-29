@@ -100,7 +100,8 @@
                 var recorder=window.PacificEducationDailyProgressRecorder;
                 if(!recorder||typeof recorder.record!=="function"){action.textContent="Recorder unavailable";return;}
                 var result=recorder.record({
-                    status:"practised",evidenceType:"indicator-stage",stageType:type,activityType:type,activityId:"daily-"+String(day)+"-"+String(getSubject()),
+                    status:type==="teach"?"taught":"practised",evidenceType:"indicator-stage",stageType:type,activityType:type,activityId:"daily-"+String(day)+"-"+String(getSubject()),
+                    level:getLevel(),subjectId:getSubject(),term:getTerm(),dayNumber:day,
                     notes:"Pilot completion: "+(labels[type]||type)
                 });
                 if(result&&result.success){
