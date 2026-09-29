@@ -102,16 +102,7 @@
         var classContext = roster() ? roster().getContext() : { classId: null };
 
         if (!studentId) {
-            var adaptiveCapability = "expected";
-        var adaptiveStatus = "Independent expected-level learning recommended";
-        var adaptiveNext = "Independent Practice";
-        try {
-            adaptiveCapability = localStorage.getItem("pacificEducationCapability") || "expected";
-            adaptiveStatus = localStorage.getItem("pacificEducationAdaptiveLearningStatus") || adaptiveStatus;
-            adaptiveNext = localStorage.getItem("pacificEducationAdaptiveNextActivity") || adaptiveNext;
-        } catch (ignoreAdaptive) {}
-
-        target.innerHTML =
+            target.innerHTML =
                 '<div class="pacific-education-student-progress-card">' +
                 '<h2>Student Progress</h2>' +
                 '<p>Select a student from the teacher class roster first.</p>' +
@@ -124,6 +115,15 @@
         var records = e.list(filters);
         var remaining = e.getRemaining(filters);
         var approvedHomeRecords = getApprovedHomeAssessments(studentId);
+
+        var adaptiveCapability = "expected";
+        var adaptiveStatus = "Independent expected-level learning recommended";
+        var adaptiveNext = "Independent Practice";
+        try {
+            adaptiveCapability = localStorage.getItem("pacificEducationCapability") || "expected";
+            adaptiveStatus = localStorage.getItem("pacificEducationAdaptiveLearningStatus") || adaptiveStatus;
+            adaptiveNext = localStorage.getItem("pacificEducationAdaptiveNextActivity") || adaptiveNext;
+        } catch (ignoreAdaptive) {}
 
         var currentDay = 1;
         try {
