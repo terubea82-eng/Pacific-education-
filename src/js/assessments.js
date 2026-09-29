@@ -21,7 +21,7 @@ const assessmentData = {
     }
 };
 
-function startAssessment(type) {
+function speakAssessmentQuestion(question) {\n    if (typeof speakText === "function") speakText(String(question || ""));\n}\n\nfunction renderAudioControls(question) {\n    var safeQuestion = escapeHTML(String(question || ""));\n    return `<div class="activity-audio-controls"><button type="button" onclick="speakAssessmentQuestion(this.dataset.question)" data-question="${safeQuestion}">🔊 Listen to question</button><label> 🎤 Answer by voice <input type="file" accept="audio/*" capture></label></div>`;\n}\n\nfunction startAssessment(type) {
     const assessment = assessmentData[type];
     if (!assessment) { alert("Assessment not found."); return; }
     let questionNumber = 0;
@@ -33,7 +33,7 @@ function startAssessment(type) {
         const buttons = question.options.map(function(option) {
             return `<button type="button" onclick="answerAssessment(this.dataset.answer)" data-answer="${escapeHTML(option)}">${escapeHTML(option)}</button>`;
         }).join("");
-        showLesson(assessment.title, `<div class="activity"><p>Question ${questionNumber + 1} of ${assessment.questions.length}</p><h3>${escapeHTML(question.question)}</h3><div>${buttons}</div></div>`);
+        showLesson(assessment.title, `<div class="activity"><p>Question ${questionNumber + 1} of ${assessment.questions.length}</p><h3>${escapeHTML(question.question)}</h3>${renderAudioControls(question.question)}<div>${buttons}</div></div>`);
     }
 
     window.answerAssessment = function(answer) {
@@ -80,7 +80,7 @@ function startAlphabetAssessment() { startAssessment("alphabet"); }
 function startPhonicsAssessment() { startAssessment("phonics"); }
 
 window.PacificEducationAssessments = Object.freeze({
-    version: "1.1.0",
+    version: "1.2.0",
     getAssessment: function(type) { return assessmentData[type] || null; },
     start: function(type) { return startAssessment(type); },
     startAlphabet: function() { return startAlphabetAssessment(); },
@@ -166,27 +166,27 @@ window.PacificEducationAssessments = Object.freeze({
 
     function render(type, day, lesson) {
         const prompt = lesson && lesson.activity ? lesson.activity : "Complete today's learning activity.";
-        const title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + labels[type];
+        const title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + labels[type];\n        const audioControls = renderAudioControls(prompt);
 
         if (type === "multiple_choice") {
             const options = ["I can explain it", "I need more practice", "I am not sure"];
-            showLesson(title, `<div class="activity"><p>${escape(prompt)}</p><p>How well can you do this?</p>${options.map(function(o){return `<button type="button" onclick="window.PacificEducationActivity.answer('multiple_choice',${Number(day)},'${escape(o)}')">${escape(o)}</button>`;}).join("")}</div>`);
+            showLesson(title, `<div class="activity"><p>${escape(prompt)}</p>${audioControls}<p>How well can you do this?</p>${options.map(function(o){return `<button type="button" onclick="window.PacificEducationActivity.answer('multiple_choice',${Number(day)},'${escape(o)}')">${escape(o)}</button>`;}).join("")}</div>`);
             return;
         }
 
         if (type === "true_false") {
-            showLesson(title, `<div class="activity"><p>${escape(prompt)}</p><p>True or False: I completed today's practice.</p><button type="button" onclick="window.PacificEducationActivity.answer('true_false',${Number(day)},'True')">True</button><button type="button" onclick="window.PacificEducationActivity.answer('true_false',${Number(day)},'False')">False</button></div>`);
+            showLesson(title, `<div class="activity"><p>${escape(prompt)}</p>${audioControls}<p>True or False: I completed today's practice.</p><button type="button" onclick="window.PacificEducationActivity.answer('true_false',${Number(day)},'True')">True</button><button type="button" onclick="window.PacificEducationActivity.answer('true_false',${Number(day)},'False')">False</button></div>`);
             return;
         }
 
         if (type === "matching") {
-            showLesson(title, `<div class="activity"><p>${escape(prompt)}</p><p>Match the learning action to its purpose:</p><select id="peMatchAnswer"><option value="">Choose</option><option value="practice">Practice → build the skill</option><option value="review">Review → remember the skill</option></select><button type="button" onclick="window.PacificEducationActivity.submitField('matching',${Number(day)},'peMatchAnswer')">Submit Match</button></div>`);
+            showLesson(title, `<div class="activity"><p>${escape(prompt)}</p>${audioControls}<p>Match the learning action to its purpose:</p><select id="peMatchAnswer"><option value="">Choose</option><option value="practice">Practice → build the skill</option><option value="review">Review → remember the skill</option></select><button type="button" onclick="window.PacificEducationActivity.submitField('matching',${Number(day)},'peMatchAnswer')">Submit Match</button></div>`);
             return;
         }
 
         const rows = type === "short_answer" ? 3 : 8;
         const instruction = type === "short_answer" ? "Write a short answer in one or two sentences." : "Write a detailed answer explaining what you learned, how you used it, and an example.";
-        showLesson(title, `<div class="activity"><p>${escape(prompt)}</p><p>${instruction}</p><textarea id="peWrittenAnswer" rows="${rows}" maxlength="${type === "short_answer" ? 500 : 2000}" placeholder="Write your answer here"></textarea><button type="button" onclick="window.PacificEducationActivity.submitField('${type}',${Number(day)},'peWrittenAnswer')">Submit Answer</button></div>`);
+        showLesson(title, `<div class="activity"><p>${escape(prompt)}</p>${audioControls}<p>${instruction}</p><textarea id="peWrittenAnswer" rows="${rows}" maxlength="${type === "short_answer" ? 500 : 2000}" placeholder="Write your answer here"></textarea><button type="button" onclick="window.PacificEducationActivity.submitField('${type}',${Number(day)},'peWrittenAnswer')">Submit Answer</button></div>`);
     }
 
     window.PacificEducationActivity = {
