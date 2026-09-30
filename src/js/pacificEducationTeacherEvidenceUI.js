@@ -7,7 +7,7 @@
     "use strict";
 
     var VERSION = "1.0.0";
-    var STATES = ["taught", "practised", "assessed", "covered"];
+    var STATES = ["not-started", "taught", "practised", "assessed", "covered"];
 
     function registry() {
         return window.PacificEducationCurriculumAlignmentRegistry || null;
@@ -73,18 +73,25 @@
             '</select></label></div>' +
             '<div id="pacificEducationEvidenceList">' +
             (items.length ? items.map(function(item, index) {
+                var saved = coverage() && typeof coverage().get === "function" ?
+                    coverage().get(item.id, get("pacificEducationStudentId", null)) : null;
+                var savedStatus = saved && STATES.indexOf(saved.status) >= 0 ? saved.status : "not-started";
+                var savedNotes = saved && saved.notes ? saved.notes : "";
+                var savedConfirmed = !!(saved && saved.teacherConfirmed);
                 return '<article class="pacific-education-evidence-row" id="pacificEvidenceCard' + index + '" style="margin:12px 0;padding:14px;border:1px solid currentColor;border-radius:8px;">' +
                     '<h3 style="margin-top:0;">Curriculum Indicator ' + escapeHtml(item.id) + '</h3>' +
                     '<p><strong>Achievement Indicator:</strong><br>' + escapeHtml(item.indicatorText) + '</p>' +
                     '<label>Status <select id="pacificEducationEvidenceStatus' + index + '">' +
+                    '<option value="not-started">Not started</option>' +
                     '<option value="taught">Taught</option>' +
                     '<option value="practised">Practised</option>' +
                     '<option value="assessed">Assessed</option>' +
                     '<option value="covered">Covered</option>' +
                     '</select></label> ' +
                     '<label><input type="checkbox" id="pacificEducationEvidenceConfirm' + index + '"> Teacher confirmed</label> ' +
-                    '<input id="pacificEducationEvidenceNotes' + index + '" type="text" placeholder="Optional notes"> ' +
-                    '<button type="button" data-evidence-index="' + index + '" data-pacific-action="save-teacher-evidence">Save evidence</button>' +
+                    '<input id="pacificEducationEvidenceNotes' + index + '" type="text" placeholder="Optional notes" value="' + escapeHtml(savedNotes) + '"> ' +
+                    '<button type="button" data-evidence-index="' + index + '" data-pacific-action="save-teacher-evidence">Save Evidence</button>' +
+                    '<span style="margin-left:8px;">' + (saved ? "Saved: " + escapeHtml(savedStatus) : "Not yet saved") + '</span>' +
                     '<span id="pacificEducationEvidenceResult' + index + '" role="status" aria-live="polite"></span>' +
                     '</div>';
             }).join("") : "<p>No curriculum indicators match the selected filters.</p>") +
@@ -97,6 +104,12 @@
         });
 
         items.forEach(function(item, index) {
+            var saved = coverage() && typeof coverage().get === "function" ?
+                coverage().get(item.id, get("pacificEducationStudentId", null)) : null;
+            var statusEl = document.getElementById("pacificEducationEvidenceStatus" + index);
+            var confirmEl = document.getElementById("pacificEducationEvidenceConfirm" + index);
+            if (statusEl) statusEl.value = saved && STATES.indexOf(saved.status) >= 0 ? saved.status : "not-started";
+            if (confirmEl) confirmEl.checked = !!(saved && saved.teacherConfirmed);
             var button = document.querySelector('[data-evidence-index="' + index + '"]');
             if (!button) return;
 
