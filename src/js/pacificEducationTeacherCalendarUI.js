@@ -173,7 +173,7 @@
     }
 
     function createUI() {
-        var host = get("pacificEducationTeacherCalendar");
+        var host = get("pacificEducationAppTeacherCalendar");
         if (!host) return false;
 
         host.innerHTML =
