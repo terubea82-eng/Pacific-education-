@@ -14,6 +14,29 @@
   "use strict";
 
   var ENTRY_ID = "pacificEducationSingleRegistration";
+  var LANGUAGE_KEY = "pacificEducationUserRegistrationLanguageV1";
+  var LANGUAGE_OPTIONS = [
+    {value:"English",label:"English",direction:"ltr"},
+    {value:"French",label:"Français",direction:"ltr"},
+    {value:"Spanish",label:"Español",direction:"ltr"},
+    {value:"Portuguese",label:"Português",direction:"ltr"},
+    {value:"Arabic",label:"العربية",direction:"rtl"},
+    {value:"Hindi",label:"हिन्दी",direction:"ltr"},
+    {value:"Chinese",label:"中文",direction:"ltr"},
+    {value:"Japanese",label:"日本語",direction:"ltr"}
+  ];
+  function safeLanguageGet(){try{return JSON.parse(sessionStorage.getItem(LANGUAGE_KEY)||"null");}catch(e){return null;}}
+  function safeLanguageSet(v){try{sessionStorage.setItem(LANGUAGE_KEY,JSON.stringify(v));}catch(e){}}
+  function languageOptionHtml(){return LANGUAGE_OPTIONS.map(function(x){return "<option value=\"" + x.value + "\">" + x.label + "</option>";}).join("");}
+  function applyRegistrationLanguage(language){
+    var item=LANGUAGE_OPTIONS.filter(function(x){return x.value===language;})[0]||LANGUAGE_OPTIONS[0];
+    document.documentElement.dir=item.direction;
+    document.documentElement.lang=item.value==="English"?"en":item.value.toLowerCase();
+    if(window.PacificEducationLanguagePreferences&&typeof window.PacificEducationLanguagePreferences.configure==="function"){
+      window.PacificEducationLanguagePreferences.configure({interfaceLanguage:item.value,learningLanguage:item.value,direction:item.direction},true);
+    }
+    return item;
+  }
   var ROLE_ROUTES = {
     student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "pacificEducationTermBaseline", "assessments", "pacificEducationStudentProgressDashboard", "pacificEducationHomeSubmission", "pacificEducationTransferIntake", "pacificGuardianCommentSection"],
     teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
@@ -206,8 +229,11 @@
     showRoute("student");
   }
 
-  function registerRole(role) {
+  function registerRole(role, language) {
     if (!role) return;
+    var selectedLanguage=language||(document.getElementById("singlePilotLanguage")&&document.getElementById("singlePilotLanguage").value)||"English";
+    applyRegistrationLanguage(selectedLanguage);
+    safeLanguageSet({interfaceLanguage:selectedLanguage,learningLanguage:selectedLanguage,selectedAt:new Date().toISOString()});
 
     safeSet("pacificEducationPilotRole", role);
     safeSet("pacificEducationPilotRegistered", "true");
@@ -261,25 +287,32 @@
 
     document.getElementById("singlePilotRegisterButton").onclick = function () {
       var role = document.getElementById("singlePilotRole").value;
+      var language = document.getElementById("singlePilotLanguage").value;
       var status = document.getElementById("singlePilotRegistrationStatus");
       if (!role) {
         status.textContent = "Please select your user type.";
         return;
       }
-      status.textContent = "Registration accepted. Linking your " + getRoleTitle(role) + " pilot platform...";
-      registerRole(role);
+      status.textContent = "Registration accepted. Linking your " + getRoleTitle(role) + " pilot platform in " + language + "...";
+      registerRole(role, language);
     };
 
     var savedRole = safeGet("pacificEducationPilotRole");
     var registered = safeGet("pacificEducationPilotRegistered") === "true";
+    var savedLanguage = safeLanguageGet();
+    var languageSelect = document.getElementById("singlePilotLanguage");
+    if (languageSelect && savedLanguage && savedLanguage.interfaceLanguage) {
+      languageSelect.value = savedLanguage.interfaceLanguage;
+      applyRegistrationLanguage(savedLanguage.interfaceLanguage);
+    }
     if (registered && ROLE_ROUTES[savedRole]) {
-      registerRole(savedRole);
+      registerRole(savedRole, savedLanguage && savedLanguage.interfaceLanguage);
     } else {
       hideAllForEntry();
     }
 
     window.PacificEducationSinglePilotEntry = Object.freeze({
-      version: "1.2.0",
+      version: "1.3.0",
       prototype: true,
       productionEligible: false,
       registerRole: registerRole,
