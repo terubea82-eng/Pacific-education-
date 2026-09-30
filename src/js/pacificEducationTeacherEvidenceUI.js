@@ -53,9 +53,9 @@
         var items = indicators();
 
         target.innerHTML =
-            '<div class="pacific-education-evidence-card">' +
-            '<h2>Teacher Evidence</h2>' +
-            '<p>Record what has been taught, practised, assessed, or covered.</p>' +
+            '<div class="pacific-education-evidence-card" id="pacificTeacherEvidenceWorkspace">' +
+            '<h2>CURRICULUM EVIDENCE — TEACHER CONFIRMATION</h2>' +
+            '<p><strong>Separate from Daily Activities.</strong> Record evidence for each curriculum indicator here. These evidence records are not part of the student\'s Daily Activities Days 1–365 sequence.</p>' +
             '<div>' +
             '<label>Level <select id="pacificEducationEvidenceLevel">' +
             '<option value="">All levels</option><option>Class 1</option><option>Class 2</option>' +
@@ -73,9 +73,9 @@
             '</select></label></div>' +
             '<div id="pacificEducationEvidenceList">' +
             (items.length ? items.map(function(item, index) {
-                return '<div class="pacific-education-evidence-row">' +
-                    '<p><strong>' + escapeHtml(item.id) + '</strong><br>' +
-                    escapeHtml(item.indicatorText) + '</p>' +
+                return '<article class="pacific-education-evidence-row" id="pacificEvidenceCard' + index + '" style="margin:12px 0;padding:14px;border:1px solid currentColor;border-radius:8px;">' +
+                    '<h3 style="margin-top:0;">Curriculum Indicator ' + escapeHtml(item.id) + '</h3>' +
+                    '<p><strong>Achievement Indicator:</strong><br>' + escapeHtml(item.indicatorText) + '</p>' +
                     '<label>Status <select id="pacificEducationEvidenceStatus' + index + '">' +
                     '<option value="taught">Taught</option>' +
                     '<option value="practised">Practised</option>' +
@@ -85,7 +85,7 @@
                     '<label><input type="checkbox" id="pacificEducationEvidenceConfirm' + index + '"> Teacher confirmed</label> ' +
                     '<input id="pacificEducationEvidenceNotes' + index + '" type="text" placeholder="Optional notes"> ' +
                     '<button type="button" data-evidence-index="' + index + '" data-pacific-action="save-teacher-evidence">Save evidence</button>' +
-                    '<span id="pacificEducationEvidenceResult' + index + '"></span>' +
+                    '<span id="pacificEducationEvidenceResult' + index + '" role="status" aria-live="polite"></span>' +
                     '</div>';
             }).join("") : "<p>No curriculum indicators match the selected filters.</p>") +
             '</div></div>';
