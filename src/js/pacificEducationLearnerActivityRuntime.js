@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.3.0";
+  var VERSION = "1.4.0";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -15,6 +15,7 @@
     long_answer: "Long Answer"
   };
   var active = { type: null, day: 0, context: {} };
+  var recordedAudioBlob = null;
 
   function escape(value) {
     if (typeof window.escapeHTML === "function") return window.escapeHTML(String(value == null ? "" : value));
@@ -34,7 +35,7 @@
 
   function readAudio(done) {
     var input = document.getElementById("peActivityAudio");
-    var file = input && input.files && input.files[0];
+    var file = recordedAudioBlob || (input && input.files && input.files[0]);
     if (!file) return done("");
     var reader = new FileReader();
     reader.onload = function() { done(String(reader.result || "")); };
@@ -161,12 +162,13 @@
     active.type = type;
     active.day = Number(day) || 1;
     active.context = contextFrom(lesson, active.day);
+    recordedAudioBlob = null;
 
     var prompt = active.context.questionText;
     var audio = active.context.audioText || prompt;
     var title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + LABELS[type];
-    var audioButton = '<button type="button" id="peActivityListen">🔊 Listen to question</button><button type="button" id="peActivityRecord">🎙️ Record voice answer</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
-    var audioFile = '<label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label>';
+    var audioButton = '<button type="button" id="peActivityListen" aria-label="Listen to the activity question">🔊 Listen to question</button><button type="button" id="peActivityRecord" aria-label="Record your voice answer">🎙️ Record voice answer</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
+    var audioFile = '<label> 🎤 Attach an audio recording (optional) <input id="peActivityAudio" type="file" accept="audio/*"></label>';
 
     var curriculumInfo = ""; if (active.context.achievementIndicator || active.context.concept || active.context.strand || active.context.subStrand) { curriculumInfo += '<div class="pe-daily-curriculum-context" aria-label="Daily curriculum alignment">'; if (active.context.achievementIndicator) curriculumInfo += '<p><strong>Achievement Indicator:</strong> ' + escape(active.context.achievementIndicator) + '</p>'; if (active.context.strand) curriculumInfo += '<p><strong>Strand:</strong> ' + escape(active.context.strand) + '</p>'; if (active.context.subStrand) curriculumInfo += '<p><strong>Sub-strand / Concept:</strong> ' + escape(active.context.subStrand) + '</p>'; if (active.context.activitySequence) curriculumInfo += '<p><strong>Activity Progression:</strong> Activity ' + escape(String(active.context.activitySequence)) + '</p>'; curriculumInfo += '</div>'; }
     var body = '<div class="activity">' + curriculumInfo + '<p>' + escape(prompt) + '</p>' + audioButton + audioFile;
@@ -211,7 +213,12 @@
     }
 
     var listen = document.getElementById("peActivityListen");
-    if (listen) listen.addEventListener("click", function() { speak(audio); });
+    if (listen) listen.addEventListener("click", function() {
+      if (!audio) return;
+      speak(audio);
+      var status = document.getElementById("peActivityRecordStatus");
+      if (status) status.textContent = "The question is being read aloud. You can listen again at any time.";
+    });
 
     var recordButton = document.getElementById("peActivityRecord");
     var recordStatus = document.getElementById("peActivityRecordStatus");
@@ -237,16 +244,8 @@
           mediaRecorder.onstop = function() {
             stream.getTracks().forEach(function(track) { track.stop(); });
             var blob = new Blob(recordedChunks, { type: "audio/webm" });
-            var input = document.getElementById("peActivityAudio");
-            try {
-              var file = new File([blob], "voice-answer.webm", { type: "audio/webm" });
-              var transfer = new DataTransfer();
-              transfer.items.add(file);
-              if (input) input.files = transfer.files;
-              if (recordStatus) recordStatus.textContent = "Voice answer recorded and ready to submit.";
-            } catch (e) {
-              if (recordStatus) recordStatus.textContent = "Voice answer recorded. If it is not attached automatically, use the audio file picker.";
-            }
+            recordedAudioBlob = blob;
+            if (recordStatus) recordStatus.textContent = "Voice answer recorded and ready to submit. You do not need to choose a file.";
           };
           mediaRecorder.start();
           recordButton.textContent = "⏹ Stop recording";
