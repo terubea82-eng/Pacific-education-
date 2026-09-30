@@ -284,6 +284,7 @@
       var workspace = document.getElementById("pilotRoleWorkspace");
       var toolMap = {
         student: [
+          ["studentStartLearning","Start Learning"],
           ["dailyLesson","Daily Activities — Days 1–365"],
           ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"],
           ["assessments","Assessments"],
@@ -372,6 +373,13 @@
       Array.prototype.forEach.call(workspace.querySelectorAll("[data-pilot-target]"), function(button) {
         button.addEventListener("click", function() {
           var id = button.getAttribute("data-pilot-target");
+          if (id === "studentStartLearning") {
+            var target = document.getElementById("learningPlatform");
+            if (target) { try { target.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e) {} }
+            var status = document.getElementById("pilotWorkspaceStatus");
+            if (status) status.textContent = "Start Learning opened. Select your class/level, subject and term to begin.";
+            return;
+          }
           var ok = revealTarget(id);
           var status = document.getElementById("pilotWorkspaceStatus");
           if (status) status.textContent = ok ? "Opened " + button.textContent + "." : "That pilot tool is not available in this build.";
