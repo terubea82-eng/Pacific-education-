@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.7.0";
+    var VERSION = "1.7.1";
     var originalDisplay = null;
     var connected = false;
 
@@ -73,6 +73,50 @@
         };
     }
 
+    function launchInteractiveActivity(type, day, lesson, question, audioText, pilotMultipleChoice, button) {
+        var message = document.getElementById("pacificEducationInteractionStatus");
+        try {
+            var runtime = window.PacificEducationActivity;
+            if (!runtime || typeof runtime.render !== "function") {
+                if (message) message.textContent = "Daily activity is loading. Please try again in a moment.";
+                return false;
+            }
+            var context = Object.assign({}, lesson || {});
+            context.activity = Object.assign({}, context.activity || {});
+            context.activity.questionText = question;
+            context.activity.audioText = audioText;
+            if (type === "multiple_choice") {
+                context.activity.questionText = pilotMultipleChoice.question;
+                context.activity.options = pilotMultipleChoice.options.slice();
+                context.activity.choices = pilotMultipleChoice.options.slice();
+                context.activity.answerOptions = pilotMultipleChoice.options.slice();
+                context.activity.answerIndex = pilotMultipleChoice.answerIndex;
+                context.activity.answerKey = pilotMultipleChoice.answerIndex !== null && pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] !== undefined
+                    ? pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] : null;
+            }
+            context.activity.contentBasis = (lesson && lesson.activity && lesson.activity.contentBasis) || "concept-based-pilot-prototype";
+            context.questionText = question;
+            context.audioText = audioText;
+            context.responseMode = "text-or-audio";
+            var result = runtime.render(type, day, context);
+            if (result === false) {
+                if (message) message.textContent = "This activity could not open. Please try the activity again.";
+                return false;
+            }
+            if (button) button.setAttribute("aria-expanded", "true");
+            var panel = document.getElementById("dailyLessonActivity");
+            if (panel) {
+                panel.scrollIntoView({behavior:"smooth", block:"start"});
+                if (message) message.textContent = (window.PacificEducationActivity.labels[type] || type) + " activity opened.";
+            }
+            return true;
+        } catch (error) {
+            if (message) message.textContent = "Activity error: " + String(error && error.message ? error.message : error);
+            try { console.error("Pacific Education activity launch error:", error); } catch (e) {}
+            return false;
+        }
+    }
+
     function attachActivity(day, lesson) {
         var activity = window.PacificEducationActivity;
         var container = document.getElementById("dailyLesson");
@@ -135,29 +179,7 @@
             button.disabled = false;
             button.setAttribute("aria-label", "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type));
             button.addEventListener("click", function() {
-                var runtime = window.PacificEducationActivity;
-                if (runtime && typeof runtime.render === "function") {
-                    var context = Object.assign({}, lesson || {});
-                    context.activity = context.activity || {};
-                    context.activity.questionText = question;
-                    context.activity.audioText = audioText;
-                    if (type === "multiple_choice") {
-                        context.activity.questionText = pilotMultipleChoice.question;
-                        context.activity.options = pilotMultipleChoice.options.slice();
-                        context.activity.choices = pilotMultipleChoice.options.slice();
-                        context.activity.answerOptions = pilotMultipleChoice.options.slice();
-                        context.activity.answerIndex = pilotMultipleChoice.answerIndex;
-                        context.activity.answerKey = pilotMultipleChoice.answerIndex !== null && pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] !== undefined ? pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] : null;
-                    }
-                    context.activity.contentBasis = (lesson && lesson.activity && lesson.activity.contentBasis) || "concept-based-pilot-prototype";
-                    context.questionText = question;
-                    context.audioText = audioText;
-                    context.responseMode = "text-or-audio";
-                    runtime.render(type, day, context);
-                } else {
-                    var message = document.getElementById("pacificEducationInteractionStatus");
-                    if (message) message.textContent = "Daily activity runtime is still loading. Please try the button again.";
-                }
+                launchInteractiveActivity(type, day, lesson, question, audioText, pilotMultipleChoice, button);
             });
             card.appendChild(button);
             box.appendChild(card);
