@@ -165,6 +165,10 @@
     document.addEventListener("pacificEducationSelectionChanged", function(event) {
         var detail = event && event.detail ? event.detail : {};
         if (detail.subjectId) syncUI(detail.subjectId);
+        var levelStatus = document.getElementById("pacificEducationLevelStatus");
+        if (levelStatus && window.PacificEducationLevelSelector && typeof window.PacificEducationLevelSelector.getLevel === "function") {
+            levelStatus.textContent = "Selected: " + window.PacificEducationLevelSelector.getLevel() + " (prototype curriculum selection)";
+        }
     });
 
     function createUI() {
