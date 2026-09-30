@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.2.0";
+    var VERSION = "1.3.0";
     var TERMS = ["Term 1", "Term 2", "Term 3"];
 
     function getTerm() {
@@ -58,6 +58,20 @@
         refresh();
         return true;
     }
+
+    function syncUI(term) {
+        var select = document.getElementById("pacificEducationTerm");
+        if (select && TERMS.indexOf(term) !== -1 && select.value !== term) {
+            select.value = term;
+            var status = document.getElementById("pacificEducationTermStatus");
+            if (status) status.textContent = "Selected: " + term + " (prototype term selection)";
+        }
+    }
+
+    document.addEventListener("pacificEducationSelectionChanged", function(event) {
+        var detail = event && event.detail ? event.detail : {};
+        if (detail.term) syncUI(detail.term);
+    });
 
     function createUI() {
         var host = document.getElementById("pacificEducationTermSelector");
