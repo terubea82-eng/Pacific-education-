@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.4.1";
+  var VERSION = "1.4.2";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -25,14 +25,25 @@
   }
 
   function speak(value) {
-    var text = String(value || "");
-    if (typeof window.speakText === "function") return window.speakText(text);
-    if (window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
-    }
+    var text = String(value || "").trim();
+    if (!text) return false;
+    try {
+      if (window.speechSynthesis && typeof window.SpeechSynthesisUtterance === "function") {
+        window.speechSynthesis.cancel();
+        var utterance = new window.SpeechSynthesisUtterance(text);
+        utterance.lang = "en";
+        window.speechSynthesis.speak(utterance);
+        return true;
+      }
+    } catch (e) {}
+    try {
+      if (typeof window.speakText === "function") {
+        window.speakText(text);
+        return true;
+      }
+    } catch (e) {}
+    return false;
   }
-
   function readAudio(done) {
     var input = document.getElementById("peActivityAudio");
     var file = recordedAudioBlob || (input && input.files && input.files[0]);
