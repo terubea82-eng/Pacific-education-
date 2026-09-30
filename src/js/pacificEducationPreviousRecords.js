@@ -49,10 +49,35 @@ function render(){
    "<label><strong>Source type</strong><br><select id=\"paceduSourceType\"><option>FEMIS authorised export</option><option>Institution student information system</option><option>Institution academic records</option><option>Other approved source</option></select></label>"+
    "<label><input type=\"checkbox\" id=\"paceduSourceVerified\"> I confirm this source is authorised for this institution and this import.</label><br>"+
    "<button type=\"button\" id=\"paceduRegisterSource\">Register authorised source</button>"+
-   "<p id=\"paceduImportStatus\" role=\"status\" aria-live=\"polite\"></p>";
+   "<hr><h3>Import and Mapping Preview</h3><p>Upload an authorised CSV/TSV export. Pacedu previews the mapping before saving.</p><input type=\"file\" id=\"paceduPreviousFile\" accept=\".csv,.tsv,text/csv,text/tab-separated-values\"><div id=\"paceduMappingArea\"></div><div id=\"paceduImportPreview\"></div><button type=\"button\" id=\"paceduApproveImport\" disabled>Approve and save mapped records</button><p id=\"paceduImportStatus\" role=\"status\" aria-live=\"polite\"></p>";
   app.appendChild(s);
  }
  renderSummary();
+ var pending={records:[],headers:[],mapping:{},sourceId:""};
+ document.getElementById("paceduPreviousFile").onchange=function(ev){
+  var file=ev.target.files&&ev.target.files[0];if(!file)return;
+  var reader=new FileReader();reader.onload=function(){
+   var lines=String(reader.result||"").split(/\r?\n/).filter(function(x){return x.trim();}),sep=lines[0]&&lines[0].indexOf("\t")>=0?"\t":",";
+   function row(x){return x.split(sep).map(function(v){return clean(v.replace(/^"(.*)"$/,"$1"));});}
+   pending.headers=lines.length?row(lines[0]):[];pending.records=lines.slice(1).map(function(line){var v=row(line),o={};pending.headers.forEach(function(h,i){if(h)o[h]=v[i]||"";});return o;});
+   pending.sourceId=state.sources.length?state.sources[state.sources.length-1].id:"";
+   var keys=["recordId","studentName","school","class","year","subject","term","attendance","assessment","result"];
+   document.getElementById("paceduMappingArea").innerHTML="<p><strong>Step 1 — Map fields</strong></p>"+keys.map(function(k){return "<label style=\"display:block\">"+k+": <select data-map-key=\""+k+"\"><option value=\"\">— Not mapped —</option>"+pending.headers.map(function(h){return "<option value=\""+esc(h)+"\">"+esc(h)+"</option>";}).join("")+"</select></label>";}).join("");
+   Array.prototype.forEach.call(document.querySelectorAll("[data-map-key]"),function(el){el.onchange=preview;});preview();
+  };reader.readAsText(file);
+ };
+ function preview(){
+  pending.mapping={};Array.prototype.forEach.call(document.querySelectorAll("[data-map-key]"),function(el){if(el.value)pending.mapping[el.getAttribute("data-map-key")]=el.value;});
+  var sample=pending.records.slice(0,5).map(function(r){var x={};Object.keys(pending.mapping).forEach(function(k){x[k]=r[pending.mapping[k]]||"";});return x;});
+  var dup=pending.records.filter(function(r){var id=pending.mapping.recordId&&r[pending.mapping.recordId];return id&&state.records.some(function(x){return x.recordId===id;});}).length;
+  document.getElementById("paceduImportPreview").innerHTML=pending.records.length?"<p><strong>Step 2 — Preview:</strong> "+pending.records.length+" records; existing IDs detected: "+dup+".</p><pre style=\"white-space:pre-wrap\">"+esc(JSON.stringify(sample,null,2))+"</pre>":"";
+  document.getElementById("paceduApproveImport").disabled=!pending.records.length||!pending.sourceId||!state.sources.some(function(s){return s.id===pending.sourceId&&s.verified;});
+ }
+ document.getElementById("paceduApproveImport").onclick=function(){
+  var mapped=pending.records.map(function(r){var x={};Object.keys(pending.mapping).forEach(function(k){if(pending.mapping[k])x[k]=r[pending.mapping[k]]||"";});return x;});
+  var result=importRecords(mapped,pending.sourceId,"authorised-mapped-import");
+  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained.";
+ };
  document.getElementById("paceduRegisterSource").onclick=function(){
   var verified=document.getElementById("paceduSourceVerified").checked;
   if(!verified){document.getElementById("paceduImportStatus").textContent="Source registration requires explicit authorisation confirmation.";return;}
