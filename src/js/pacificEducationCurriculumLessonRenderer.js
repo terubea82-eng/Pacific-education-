@@ -73,7 +73,7 @@
         };
     }
 
-    function launchInteractiveActivity(type, day, lesson, question, audioText, pilotMultipleChoice, button) {
+    function launchInteractiveActivity(type, day, lesson, question, audioText, pilotMultipleChoice, button, panelId) {
         var message = document.getElementById("pacificEducationInteractionStatus");
         try {
             var runtime = window.PacificEducationActivity;
@@ -106,8 +106,7 @@
             if (button) button.setAttribute("aria-expanded", "true");
             var panel = document.getElementById("dailyLessonActivity");
             if (panel) {
-                panel.scrollIntoView({behavior:"smooth", block:"start"});
-                if (message) message.textContent = (window.PacificEducationActivity.labels[type] || type) + " activity opened.";
+                if (message) message.textContent = ((window.PacificEducationActivity.labels && window.PacificEducationActivity.labels[type]) || type) + " activity opened.";
             }
             return true;
         } catch (error) {
@@ -126,11 +125,12 @@
 
         var box = document.createElement("section");
         box.id = "pacificInteractiveActivity";
-        box.setAttribute("aria-label", "Daily learner activities");
+        box.setAttribute("aria-label", "Mandatory daily activities");
+        box.style.scrollMarginTop = "1rem";
         box.style.marginTop = "1rem";
 
         var heading = document.createElement("h3");
-        heading.textContent = "MANDATORY PILOT DAILY ACTIVITIES — Day " + day + " of 365";
+        heading.textContent = "MANDATORY DAILY ACTIVITIES — DAY " + day + " OF 365";
         box.appendChild(heading);
 
         var question = lesson && lesson.activity && lesson.activity.questionText
@@ -146,7 +146,7 @@
                 : question;
 
         var source = document.createElement("p");
-        source.textContent = "Curriculum activity: " + question;
+        source.textContent = "Complete each required activity below. Activities are kept separate from supplementary weekend and holiday assignments.";
         box.appendChild(source);
 
         var audio = document.createElement("button");
@@ -166,6 +166,7 @@
 
         types.forEach(function(type) {
             var card = document.createElement("article");
+            card.id = "pacificMandatoryActivityCard-" + type;
             card.style.margin = "0.6rem 0";
             card.style.padding = "0.7rem";
             card.style.border = "1px solid #ccc";
@@ -178,10 +179,26 @@
             button.textContent = "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type);
             button.disabled = false;
             button.setAttribute("aria-label", "Start " + (activity && activity.labels && activity.labels[type] ? activity.labels[type] : type));
+            var panelId = "pacificMandatoryActivityPanel-" + type;
+            button.setAttribute("aria-controls", panelId);
+            button.setAttribute("aria-expanded", "false");
             button.addEventListener("click", function() {
-                launchInteractiveActivity(type, day, lesson, question, audioText, pilotMultipleChoice, button);
+                var panels = box.querySelectorAll(".pacific-mandatory-activity-panel");
+                for (var pi = 0; pi < panels.length; pi += 1) {
+                    panels[pi].hidden = true;
+                }
+                var panel = document.getElementById(panelId);
+                if (panel) panel.hidden = false;
+                launchInteractiveActivity(type, day, lesson, question, audioText, pilotMultipleChoice, button, panelId);
             });
             card.appendChild(button);
+            var panel = document.createElement("div");
+            panel.id = panelId;
+            panel.className = "pacific-mandatory-activity-panel";
+            panel.hidden = true;
+            panel.style.marginTop = "0.75rem";
+            panel.setAttribute("aria-live", "polite");
+            card.appendChild(panel);
             box.appendChild(card);
         });
 
