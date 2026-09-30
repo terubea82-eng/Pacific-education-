@@ -144,6 +144,9 @@
     function setSubject(subjectId) {
         if (!SUBJECTS.some(function(item){return item.id === subjectId;})) return false;
         window.localStorage.setItem("pacificEducationSubject", subjectId);
+        document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
+            detail: { subjectId: subjectId, prototype: true }
+        }));
         var status = document.getElementById("pacificEducationSubjectStatus");
         if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
         refreshLesson();
