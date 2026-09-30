@@ -167,7 +167,7 @@
     function setRoleVisibility(roleId) {
       ensureStudentProgressSection();
       var schoolSection = document.getElementById("pacificEducationSchoolIdentitySection");
-      if (schoolSection) schoolSection.hidden = roleId !== "head-of-school";
+      if (schoolSection) schoolSection.hidden = false;
       refreshWeekendHolidaySupplementaryStatus();
 
       var roleVisibility = {
@@ -307,27 +307,30 @@
       }
       try { window.sessionStorage.setItem("pacificEducationActiveRole", role.id); } catch (e) {}
       setRoleVisibility(role.id);
+      var schoolEditor = document.getElementById("pacificEducationSchoolIdentity");
+      if (schoolEditor) schoolEditor.hidden = role.id !== "head-of-school";
       organizeDailyActivitiesForRole(role.id);
       setPilotActivityGate(true);
 
       var workspace = document.getElementById("pilotRoleWorkspace");
+      if (role.id === "student" && !document.getElementById("studentAssignedClassContext")) {
+        var sc = document.createElement("section"); sc.id = "studentAssignedClassContext"; sc.hidden = true; sc.innerHTML = "<h2>My Assigned Class / Year / Teacher</h2><p>Class, Year, Subject, Term and teaching day are assigned by the teacher. Students cannot edit these settings.</p>"; document.getElementById("app").appendChild(sc);
+      }
       var toolMap = {
         student: [
           ["studentStartLearning","1. Start Learning"],
-          ["levelSelection","2. Class / Level"],
-          ["subjectSelection","3. Subject"],
-          ["termSelection","4. Term"],
-          ["dailyLesson","5. Daily Activities — Days 1–365"],
-          ["assessments","6. Assessments"],
-          ["pacificEducationStudentProgressDashboard","7. My Progress"],
-          ["pacificEducationHomeSubmission","8. Home Continuity"]
+          ["studentAssignedClassContext","2. My Assigned Class / Year / Teacher"],
+          ["dailyLesson","3. Daily Activities — Days 1–365"],
+          ["assessments","4. Assessments"],
+          ["pacificEducationStudentProgressDashboard","5. My Progress"],
+          ["pacificEducationHomeSubmission","6. Home Continuity"]
         ],
         teacher: [
           ["teacherDashboard","1. Teacher Dashboard"],
-          ["pacificEducationTeacherClassDashboard","2. My Classes"],
-          ["levelSelection","3. Class / Level"],
-          ["subjectSelection","4. Subject"],
-          ["termSelection","5. Term"],
+          ["pacificEducationTeacherClassDashboard","2. My Classes & Class Lists"],
+          ["levelSelection","3. Class / Year Setup"],
+          ["subjectSelection","4. Subject Setup"],
+          ["termSelection","5. Term & Teaching Day Setup"],
           ["dailyLesson","6. Daily Activities — Days 1–365"],
           ["assessments","7. Assessments"],
           ["pacificEducationCoverageDashboard","8. Curriculum Coverage"],
@@ -342,7 +345,7 @@
           ["pacificEducationHomeSubmission","6. Home Evidence"]
         ],
         parent: [
-          ["parentDashboard","1. Parent Dashboard"],
+          ["parentDashboard","1. Parent Dashboard & Child Class"],
           ["pacificEducationWeekendHolidaySupplementaryActivities","2. Weekend & Holiday Activities"],
           ["pacificGuardianCommentSection","3. Send Feedback"]
         ],
