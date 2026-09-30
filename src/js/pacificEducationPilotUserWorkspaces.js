@@ -239,6 +239,12 @@
         });
       }
 
+      // Student Platform owns the learner flow; keep Daily Activities hidden until Student is selected.
+      var dailySection = document.getElementById("dailyLesson");
+      if (dailySection) {
+        dailySection.hidden = roleId !== "student" && roleId !== "teacher" && roleId !== "special-education";
+      }
+
       var learningNav = document.querySelector('#learningPlatform nav[aria-label="Learning tools"]');
       if (learningNav) {
         Array.prototype.forEach.call(learningNav.querySelectorAll("a[href^='#']"), function(link) {
@@ -377,7 +383,7 @@
         button.addEventListener("click", function() {
           var id = button.getAttribute("data-pilot-target");
           if (id === "studentStartLearning") {
-            var target = document.getElementById("learningPlatform");
+            var target = document.getElementById("levelSelection") || document.getElementById("learningPlatform");
             if (target) { try { target.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e) {} }
             var status = document.getElementById("pilotWorkspaceStatus");
             if (status) status.textContent = "Start Learning opened. Select your class/level, subject and term to begin.";
