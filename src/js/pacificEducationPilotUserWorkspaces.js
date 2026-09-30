@@ -170,8 +170,9 @@
         ]
       };
 
-      var allowed = roleVisibility[roleId] || [];
+      var allowed = (roleVisibility[roleId] || []).concat(["pacificEducationAppTools"]);
       var managed = [
+        "pacificEducationAppTools",
         "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
         "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
         "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","learningPlatform","levelSelection","subjectSelection",
