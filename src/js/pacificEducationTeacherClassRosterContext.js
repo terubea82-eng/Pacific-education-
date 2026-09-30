@@ -203,7 +203,31 @@
 
         function refreshList() {
             var identity = document.getElementById("pacificEducationRosterIdentity");
-            if (identity) identity.innerHTML = currentClass ? "<strong>Class:</strong> " + String(currentClass.classId) + " &nbsp; <strong>Level:</strong> " + String(currentClass.level || "—") + " &nbsp; <strong>Section:</strong> " + String(currentClass.section || "—") + " &nbsp; <strong>Teacher:</strong> " + String(currentClass.teacherRef || "—") : "";
+            if (identity) {
+                if (getActiveRole() === "head-of-school") {
+                    var all = load();
+                    var ids = Object.keys(all);
+                    identity.innerHTML = "<strong>School-wide view:</strong> " + ids.length + " class list(s) visible. Head of School cannot edit teacher-created lists.";
+                } else {
+                    identity.innerHTML = currentClass ? "<strong>Class:</strong> " + String(currentClass.classId) + " &nbsp; <strong>Level:</strong> " + String(currentClass.level || "—") + " &nbsp; <strong>Section:</strong> " + String(currentClass.section || "—") + " &nbsp; <strong>Teacher:</strong> " + String(currentClass.teacherRef || "—") : "";
+                }
+            }
+            if (getActiveRole() === "head-of-school") {
+                var allClasses = load();
+                var ids = Object.keys(allClasses);
+                list.innerHTML = ids.length ? ids.map(function(id) {
+                    var item = allClasses[id] || {};
+                    var refs = Array.isArray(item.studentRefs) ? item.studentRefs : [];
+                    return '<div style="margin:8px 0;padding:8px;border:1px solid currentColor;">' +
+                        '<strong>' + String(item.classId || id).replace(/&/g,"&amp;").replace(/</g,"&lt;") + '</strong> — ' +
+                        'Level: ' + String(item.level || "—").replace(/&/g,"&amp;").replace(/</g,"&lt;") +
+                        ' • Section: ' + String(item.section || "—").replace(/&/g,"&amp;").replace(/</g,"&lt;") +
+                        ' • Teacher: ' + String(item.teacherRef || "—").replace(/&/g,"&amp;").replace(/</g,"&lt;") +
+                        ' • Students: ' + refs.length +
+                        '</div>';
+                }).join("") : "<p>No teacher-created class lists are available yet.</p>";
+                return;
+            }
             var selected = window.PacificEducationStudentCoverageContext &&
                 typeof window.PacificEducationStudentCoverageContext.getStudentId === "function" ?
                 window.PacificEducationStudentCoverageContext.getStudentId() : "";
