@@ -1,12 +1,12 @@
 /*
  * Pacific Education — Curriculum Coverage Dashboard UI
- * Version 1.0.0
+ * Version 1.0.1
  * PROTOTYPE ONLY.
  */
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.0.1";
 
     function engine() {
         return window.PacificEducationCurriculumCoverageEngine || null;
@@ -25,9 +25,19 @@
             .replace(/'/g, "&#039;");
     }
 
-    function getValue(id, fallback) {
+    function stored(key, fallback) {
+        try {
+            var value = window.localStorage.getItem(key);
+            return value || fallback;
+        } catch (e) {
+            return fallback;
+        }
+    }
+
+    function getValue(id, storageKey, fallback) {
         var el = document.getElementById(id);
-        return el && el.value ? el.value : fallback;
+        if (el && el.value) return el.value;
+        return stored(storageKey, fallback);
     }
 
     function render(targetId) {
@@ -41,9 +51,9 @@
         }
 
         var filters = {
-            level: getValue("pacificEducationCoverageLevel", null),
-            subjectId: getValue("pacificEducationCoverageSubject", null),
-            term: getValue("pacificEducationCoverageTerm", null)
+            level: getValue("pacificEducationCoverageLevel", "pacificEducationLevel", ""),
+            subjectId: getValue("pacificEducationCoverageSubject", "pacificEducationSubject", ""),
+            term: getValue("pacificEducationCoverageTerm", "pacificEducationTerm", "")
         };
 
         var summary = e.summarize(filters);
@@ -96,10 +106,21 @@
         if (termEl) termEl.value = filters.term || "";
 
         [levelEl, subjectEl, termEl].forEach(function(el) {
-            if (el) el.addEventListener("change", function() { render(targetId); });
+            if (el) el.addEventListener("change", function() {
+                if (el.id === "pacificEducationCoverageLevel") {
+                    try { window.localStorage.setItem("pacificEducationLevel", el.value); } catch (e) {}
+                }
+                if (el.id === "pacificEducationCoverageSubject") {
+                    try { window.localStorage.setItem("pacificEducationSubject", el.value); } catch (e) {}
+                }
+                if (el.id === "pacificEducationCoverageTerm") {
+                    try { window.localStorage.setItem("pacificEducationTerm", el.value); } catch (e) {}
+                }
+                render(targetId);
+            });
         });
 
-        return { success: true, summary: summary, remainingCount: remaining.length, prototype: true };
+        return { success: true, summary: summary, remainingCount: remaining.length, filters: filters, prototype: true };
     }
 
     function init() {
@@ -111,6 +132,23 @@
         version: VERSION,
         render: render,
         init: init
+    });
+
+    document.addEventListener("pacificEducationStudentChanged", function() {
+        render("pacificEducationCoverageDashboard");
+    });
+
+    document.addEventListener("pacificEducationCoverageRefresh", function() {
+        render("pacificEducationCoverageDashboard");
+    });
+
+    window.addEventListener("storage", function(event) {
+        if (!event || !event.key ||
+            event.key === "pacificEducationLevel" ||
+            event.key === "pacificEducationSubject" ||
+            event.key === "pacificEducationTerm") {
+            render("pacificEducationCoverageDashboard");
+        }
     });
 
     if (document.readyState === "loading") {
