@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
     var TERMS = ["Term 1", "Term 2", "Term 3"];
 
     function getTerm() {
@@ -35,6 +35,9 @@
         if (TERMS.indexOf(term) === -1) return false;
 
         window.localStorage.setItem("pacificEducationTerm", term);
+        document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
+            detail: { term: term, prototype: true }
+        }));
 
         var calendar = window.PacificEducationTeacherCalendar;
         if (calendar && typeof calendar.getDayByNumber === "function") {
