@@ -103,7 +103,7 @@
         var endDay = Math.max(startDay, Number(config.endDay || 365));
         var filters = {
             level: config.level || undefined,
-            subject: config.subjectId || config.subject || undefined,
+            subjectId: config.subjectId || config.subject || undefined,
             term: config.term || undefined,
             studentId: config.studentId || undefined
         };
