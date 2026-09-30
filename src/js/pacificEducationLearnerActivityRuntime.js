@@ -180,9 +180,10 @@
     }
 
     body += '</div>';
-    var activityPanel = document.getElementById("dailyLessonActivity");
+    var activityPanel = active.context.renderTargetId ? document.getElementById(active.context.renderTargetId) : document.getElementById("dailyLessonActivity");
     if (activityPanel) {
       activityPanel.innerHTML = body;
+      activityPanel.hidden = false;
       activityPanel.setAttribute("aria-live", "polite");
     } else if (typeof window.showLesson === "function") {
       window.showLesson(title, body);
