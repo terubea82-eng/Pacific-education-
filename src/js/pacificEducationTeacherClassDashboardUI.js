@@ -61,7 +61,7 @@
         target.innerHTML =
             '<div class="pacific-education-teacher-class-dashboard">' +
             '<h2>Teacher Class Dashboard</h2>' +
-            '<p><strong>Class:</strong> ' + escapeHtml(classId) + '</p>' +
+            '<p><strong>Class:</strong> ' + escapeHtml(classId) + ' &nbsp; <strong>Level:</strong> ' + escapeHtml(context.level || "—") + ' &nbsp; <strong>Section:</strong> ' + escapeHtml(context.section || "—") + ' &nbsp; <strong>Teacher:</strong> ' + escapeHtml(context.teacherRef || "—") + '</p>' +
             '<p>Prototype progress view. Student references are shown instead of child personal details.</p>' +
             '<div class="pacific-education-class-progress">' +
             '<table><thead><tr><th>Student Reference</th><th>Total</th><th>Taught</th>' +
