@@ -1,0 +1,16 @@
+(function(window,document){"use strict";
+var KEY="pacificEducationLanguagePreferencesV1";
+var DEFAULTS={interfaceLanguage:"English",learningLanguage:"English",additionalLanguages:[],direction:"ltr",translationStatus:"pilot-configured"};
+var state=Object.assign({},DEFAULTS);
+function esc(v){return String(v==null?"":v).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+function clean(v){return String(v||"").replace(/\s+/g," ").trim();}
+function list(v){return Array.isArray(v)?v.map(clean).filter(Boolean).slice(0,10):[];}
+function load(){try{var x=localStorage.getItem(KEY);if(x){var v=JSON.parse(x);if(v&&typeof v==="object")state=Object.assign({},DEFAULTS,v);}}catch(_){}render();return getState();}
+function getState(){return JSON.parse(JSON.stringify(state));}
+function configure(v,authorized){if(!authorized||!v||typeof v!=="object")return {ok:false,error:"Authorised language configuration is required."};var next=Object.assign({},state);if(v.interfaceLanguage)next.interfaceLanguage=clean(v.interfaceLanguage);if(v.learningLanguage)next.learningLanguage=clean(v.learningLanguage);if(v.additionalLanguages)next.additionalLanguages=list(v.additionalLanguages);if(v.direction==="rtl"||v.direction==="ltr")next.direction=v.direction;state=next;try{localStorage.setItem(KEY,JSON.stringify(state));}catch(_){}render();return {ok:true,state:getState()};}
+function render(){var app=document.getElementById("app");if(!app)return;var s=document.getElementById("pacificEducationLanguagePreferences");if(!s){s=document.createElement("section");s.id="pacificEducationLanguagePreferences";s.setAttribute("aria-label","Language preferences");var nav=document.getElementById("userFirstNavigation");if(nav&&nav.parentNode)nav.parentNode.insertBefore(s,nav.nextSibling);else app.insertBefore(s,app.firstChild);}
+var extras=state.additionalLanguages.length?state.additionalLanguages.join(", "):"None selected";s.innerHTML="<h2>Language Preferences</h2><p><strong>Interface language:</strong> "+esc(state.interfaceLanguage)+"</p><p><strong>Learning language:</strong> "+esc(state.learningLanguage)+"</p><p><strong>Additional languages:</strong> "+esc(extras)+"</p><p><strong>Text direction:</strong> "+esc(state.direction.toUpperCase())+"</p><p><small>Users may choose their preferred supported language. Institution, learning and legal languages can be different. Translations are informational unless an authorised source states otherwise.</small></p><p><strong>Translation status:</strong> "+esc(state.translationStatus)+"</p>";}
+document.addEventListener("pacificEducationCountryConfigChanged",function(e){if(e&&e.detail&&e.detail.language&&!localStorage.getItem(KEY)){state.interfaceLanguage=e.detail.language;state.learningLanguage=e.detail.language;render();}});
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",load);else load();
+window.PacificEducationLanguagePreferences={load:load,getState:getState,configure:configure,render:render};
+})(window,document);
