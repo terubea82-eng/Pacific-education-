@@ -97,9 +97,9 @@
         if (roster) {
           var classId = roster.getClassId && roster.getClassId();
           if (!classId) {
-            roster.createClass("PILOT-CLASS-001", "Class 7");
-            roster.setClassId("PILOT-CLASS-001");
-            roster.addStudent("PILOT-CLASS-001", "PILOT-STUDENT-001");
+            roster.createClass("YEAR-7-01", "Class 7", "PILOT-TEACHER-001", "01");
+            roster.setClassId("YEAR-7-01");
+            roster.addStudent("YEAR-7-01", "PILOT-STUDENT-001");
           } else if (roster.getStudents && roster.getStudents(classId).length === 0) {
             roster.addStudent(classId, "PILOT-STUDENT-001");
           }
