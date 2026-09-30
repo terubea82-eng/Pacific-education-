@@ -9,7 +9,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var CLASS_KEY = "pacificEducationSelectedClassId";
     var ROSTER_KEY = "pacificEducationPrototypeClassRosters";
 
@@ -50,7 +50,7 @@
         return id;
     }
 
-    function createClass(classId, level) {
+    function createClass(classId, level, teacherRef, section) {
         var id = String(classId || "").trim();
         if (!id) return { success: false, error: "Class reference required" };
 
@@ -59,12 +59,16 @@
             data[id] = {
                 classId: id,
                 level: level || "",
+                section: section || "",
+                teacherRef: teacherRef || "",
                 studentRefs: [],
                 prototype: true,
                 productionEligible: false
             };
-        } else if (level) {
-            data[id].level = level;
+        } else {
+            if (level) data[id].level = level;
+            if (section !== undefined) data[id].section = String(section || "").trim();
+            if (teacherRef !== undefined) data[id].teacherRef = String(teacherRef || "").trim();
         }
 
         save(data);
@@ -155,9 +159,15 @@
         target.innerHTML =
             '<div class="pacific-education-class-roster">' +
             '<h2>Teacher Class Roster</h2>' +
-            '<p>Prototype class context using approved student references only.</p>' +
+            '<p>Each class/section has its own unique class reference and teacher assignment, even when several classes share the same level.</p>' +
             '<label>Class reference ' +
             '<input id="pacificEducationClassRef" type="text" autocomplete="off" placeholder="Class reference">' +
+            '</label> ' +
+            '<label>Teacher reference ' +
+            '<input id="pacificEducationRosterTeacherRef" type="text" autocomplete="off" placeholder="e.g. PILOT-TEACHER-001">' +
+            '</label> ' +
+            '<label>Section ' +
+            '<input id="pacificEducationRosterSection" type="text" autocomplete="off" placeholder="e.g. 01">' +
             '</label> ' +
             '<label>Level ' +
             '<select id="pacificEducationRosterLevel">' +
@@ -173,20 +183,26 @@
             '</label> ' +
             '<button type="button" id="pacificEducationAddStudent">Add</button>' +
             '<div id="pacificEducationRosterStudents"></div>' +
-            '<p id="pacificEducationRosterStatus"></p>' +
+            '<p id="pacificEducationRosterStatus"></p><p id="pacificEducationRosterIdentity"></p>' +
             '<small>Prototype only. Do not enter child names, addresses, locations, health information, or other sensitive data.</small>' +
             '</div>';
 
         var classInput = document.getElementById("pacificEducationClassRef");
         var levelInput = document.getElementById("pacificEducationRosterLevel");
         var studentInput = document.getElementById("pacificEducationRosterStudentRef");
+        var teacherInput = document.getElementById("pacificEducationRosterTeacherRef");
+        var sectionInput = document.getElementById("pacificEducationRosterSection");
         var list = document.getElementById("pacificEducationRosterStudents");
         var status = document.getElementById("pacificEducationRosterStatus");
 
         if (classInput) classInput.value = getClassId();
         if (levelInput) levelInput.value = currentClass ? currentClass.level : "";
+        if (teacherInput) teacherInput.value = currentClass ? (currentClass.teacherRef || "") : "";
+        if (sectionInput) sectionInput.value = currentClass ? (currentClass.section || "") : "";
 
         function refreshList() {
+            var identity = document.getElementById("pacificEducationRosterIdentity");
+            if (identity) identity.innerHTML = currentClass ? "<strong>Class:</strong> " + String(currentClass.classId) + " &nbsp; <strong>Level:</strong> " + String(currentClass.level || "—") + " &nbsp; <strong>Section:</strong> " + String(currentClass.section || "—") + " &nbsp; <strong>Teacher:</strong> " + String(currentClass.teacherRef || "—") : "";
             var selected = window.PacificEducationStudentCoverageContext &&
                 typeof window.PacificEducationStudentCoverageContext.getStudentId === "function" ?
                 window.PacificEducationStudentCoverageContext.getStudentId() : "";
@@ -217,12 +233,12 @@
 
         if (document.getElementById("pacificEducationCreateClass")) {
             document.getElementById("pacificEducationCreateClass").addEventListener("click", function() {
-                var result = createClass(classInput.value, levelInput.value);
+                var result = createClass(classInput.value, levelInput.value, teacherInput.value, sectionInput.value);
                 if (result.success) {
                     setClassId(classInput.value);
                     currentClass = getClass();
                     students = currentClass ? currentClass.studentRefs : [];
-                    status.textContent = "Class context selected.";
+                    status.textContent = "Class/section and teacher context selected.";
                     refreshList();
                 } else status.textContent = result.error;
             });
@@ -252,6 +268,7 @@
     window.PacificEducationTeacherClassRosterContext = Object.freeze({
         name: "PacificEducationTeacherClassRosterContext",
         version: VERSION,
+        getClasses: function() { return load(); },
         getClassId: getClassId,
         setClassId: setClassId,
         createClass: createClass,
