@@ -11,7 +11,7 @@ var DEFAULT_SUBJECTS=[
 var defaults={
  country:"Fiji",educationAuthority:"Ministry of Education",language:"English",currency:"FJD",
  institutionType:"School",institutionName:"Pacific Education Pilot",institutionAuthority:"Institution controlled",
- levelSystem:"National system",termSystem:"National system",nationalExamName:"National examinations",
+ levelSystem:"National system",termSystem:"National system",nationalExamName:"National examinations",legalLanguage:"English",
  academicUnits:["Faculty","School","Department","Programme"],programmes:["General education"],courses:["Course"],
  assessmentSystem:"Institution-defined",gradingSystem:"Institution-defined",creditSystem:"Institution-defined",
  levels:DEFAULT_LEVELS,terms:DEFAULT_TERMS,subjects:DEFAULT_SUBJECTS
@@ -26,7 +26,7 @@ function cleanList(value,fallback){
 }
 function load(config){
  config=config||{};
- ["country","educationAuthority","language","currency","institutionType","institutionName","institutionAuthority","levelSystem","termSystem","nationalExamName","assessmentSystem","gradingSystem","creditSystem"].forEach(function(k){
+ ["country","educationAuthority","language","currency","institutionType","institutionName","institutionAuthority","levelSystem","termSystem","nationalExamName","legalLanguage","assessmentSystem","gradingSystem","creditSystem"].forEach(function(k){
    if(config[k]!==undefined&&clean(config[k])) state[k]=clean(config[k]);
  });
  if(config.levels!==undefined) state.levels=cleanList(config.levels,DEFAULT_LEVELS);
@@ -59,7 +59,7 @@ function render(){
 }
 function esc(v){return String(v).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
 window.PacificEducationCountryConfig={
- load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,reset:reset,render:render,
+ load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,getLegalLanguage:function(){return state.legalLanguage;},reset:reset,render:render,
  defaults:function(){return clone(defaults);}
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ensureUI);else ensureUI();
