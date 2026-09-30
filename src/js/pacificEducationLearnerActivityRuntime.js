@@ -62,6 +62,7 @@
       subStrand: source.subStrand || null,
       concept: source.concept || source.subStrand || null,
       activitySequence: Number.isInteger(Number(source.activitySequence)) ? Number(source.activitySequence) : null,
+      renderTargetId: source.renderTargetId || null,
       stageType: lesson && lesson.stageType || null,
       responseMode: "text-or-audio"
     };
