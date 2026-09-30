@@ -305,91 +305,81 @@
       var workspace = document.getElementById("pilotRoleWorkspace");
       var toolMap = {
         student: [
-          ["studentStartLearning","Start Learning"],
-          ["levelSelection","Class / Level"],
-          ["subjectSelection","Subject"],
-          ["termSelection","Term"],
-          ["dailyLesson","Daily Activities — Days 1–365"],
-          ["assessments","Assessments"],
-          ["pacificEducationStudentProgressDashboard","My Progress"],
-          ["pacificEducationHomeSubmission","Home Continuity"],
-          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"]
+          ["studentStartLearning","1. Start Learning"],
+          ["levelSelection","2. Class / Level"],
+          ["subjectSelection","3. Subject"],
+          ["termSelection","4. Term"],
+          ["dailyLesson","5. Daily Activities — Days 1–365"],
+          ["assessments","6. Assessments"],
+          ["pacificEducationStudentProgressDashboard","7. My Progress"],
+          ["pacificEducationHomeSubmission","8. Home Continuity"]
         ],
         teacher: [
-          ["dailyLesson","Daily Activities — Days 1–365"],
-          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Assignments & Support"],
-          ["teacherDashboard","Teacher Dashboard"],
-          ["pacificEducationTeacherClassDashboard","Class Dashboard"],
-          ["pacificEducationCoverageDashboard","Curriculum Coverage"],
-          ["pacificEducationTeacherEvidence","Teacher Evidence"]
+          ["teacherDashboard","1. Teacher Dashboard"],
+          ["pacificEducationTeacherClassDashboard","2. My Classes"],
+          ["levelSelection","3. Class / Level"],
+          ["subjectSelection","4. Subject"],
+          ["termSelection","5. Term"],
+          ["dailyLesson","6. Daily Activities — Days 1–365"],
+          ["assessments","7. Assessments"],
+          ["pacificEducationCoverageDashboard","8. Curriculum Coverage"],
+          ["pacificEducationTeacherEvidence","9. Teacher Evidence"]
         ],
         "special-education": [
-          ["specialEducationDashboard","Inclusion Dashboard"],
-          ["specialEducationReviewEvidence","Review Evidence"],
-          ["pacificEducationTeacherClassDashboard","Class Dashboard"],
-          ["pacificEducationHomeSubmission","Home Evidence"]
+          ["specialEducationDashboard","1. Inclusion Dashboard"],
+          ["pacificEducationTeacherClassDashboard","2. Learner / Class"],
+          ["dailyLesson","3. Daily Learning"],
+          ["assessments","4. Assessments"],
+          ["specialEducationReviewEvidence","5. Review Evidence"],
+          ["pacificEducationHomeSubmission","6. Home Evidence"]
         ],
         parent: [
-          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"],
-          ["parentDashboard","Parent Dashboard"],
-          ["pacificGuardianCommentSection","Send Feedback"]
+          ["parentDashboard","1. Parent Dashboard"],
+          ["pacificEducationWeekendHolidaySupplementaryActivities","2. Weekend & Holiday Activities"],
+          ["pacificGuardianCommentSection","3. Send Feedback"]
         ],
         professional: [
-          ["pacificEducationExternalReviewerPortal","Reviewer Portal"],
-          ["pacificEducationExternalSpecialistReviewEvidenceRegistry","Review Evidence Registry"],
-          ["pacificEducationExternalSpecialistReviewEvidenceLog","Review Evidence Log"],
-          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"]
+          ["pacificEducationExternalReviewerPortal","1. Reviewer Portal"],
+          ["pacificEducationExternalSpecialistReviewEvidenceRegistry","2. Review Evidence"],
+          ["pacificEducationExternalSpecialistReviewEvidenceLog","3. Review Evidence Log"],
+          ["pacificEducationWebsitePilotChecklist","4. Pilot Checklist"]
         ],
         ngo: [
-          ["pacificEducationCoverageDashboard","Program Coverage"],
-          ["pacificEducationTeacherEvidence","Teacher Evidence"],
-          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"],
-          ["pacificGuardianCommentSection","Feedback"]
+          ["pacificEducationCoverageDashboard","1. Program Coverage"],
+          ["pacificEducationTeacherEvidence","2. Teacher Evidence"],
+          ["pacificEducationWebsitePilotChecklist","3. Pilot Checklist"],
+          ["pacificGuardianCommentSection","4. Feedback"]
         ],
         education: [
-          ["pacificEducationCurriculumMasterControlStatus","Curriculum Control"],
-          ["pacificEducationCurriculumEvidenceRegistry","Evidence Registry"],
-          ["pacificEducationCurriculumEvidenceTraceability","Evidence Traceability"],
-          ["pacificEducationCoverageDashboard","Coverage Dashboard"]
+          ["pacificEducationCurriculumMasterControlStatus","1. Curriculum Control"],
+          ["pacificEducationCurriculumEvidenceRegistry","2. Evidence Registry"],
+          ["pacificEducationCurriculumEvidenceTraceability","3. Evidence Traceability"],
+          ["pacificEducationCoverageDashboard","4. Coverage"]
         ],
         community: [
-          ["pacificEducationCoverageDashboard","Education Coverage"],
-          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"],
-          ["pacificGuardianCommentSection","Feedback"]
+          ["learningPlatform","1. Education Services"],
+          ["pacificEducationWebsitePilotChecklist","2. Pilot Information"],
+          ["pacificGuardianCommentSection","3. Feedback"]
         ],
         owner: [
-          ["systemStatus","System Status"],
-          ["pacificEducationWebsitePilotChecklist","Pilot Checklist"],
-          ["pacificEducationProductionReleaseChecklist","Release Checklist"],
-          ["pacificEducationProductionReleaseEvidenceRegistry","Release Evidence"],
-          ["pacificEducationProductionReleaseEvidenceGate","Release Evidence Gate"],
-          ["pacificEducationFinalProductionAuthorizationEvidenceRegistry","Final Authorization Evidence"],
-          ["publicationStatus","Publication Status"],
-          ["pacificEducationOfflineSyncStatus","Offline Sync"]
+          ["systemStatus","1. System Status"],
+          ["pacificEducationWebsitePilotChecklist","2. Pilot Checklist"],
+          ["pacificEducationProductionReleaseChecklist","3. Production Release Checklist"],
+          ["pacificEducationProductionReleaseEvidenceRegistry","4. Release Evidence"],
+          ["pacificEducationProductionReleaseEvidenceGate","5. Release Evidence Gate"],
+          ["publicationStatus","6. Publication Status"],
+          ["pacificEducationOfflineSyncStatus","7. Offline / Sync Status"]
         ]
       };
-
-      function revealTarget(id) {
-        var target = document.getElementById(id);
-        if (!target) return false;
-        target.hidden = false;
-        var parent = target.parentElement;
-        while (parent && parent.id !== "app") {
-          parent.hidden = false;
-          parent = parent.parentElement;
-        }
-        try { target.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e) {}
-        return true;
-      }
 
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
         '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +
         '<p><strong>Open a role-specific tool:</strong></p>' +
-        '<nav aria-label="Role pilot tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
+        '<nav aria-label="Role pilot tools" style="display:flex;flex-direction:column;gap:10px;max-width:520px;">' +
         (toolMap[role.id] || []).map(function(tool) {
-          return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="padding:10px 14px;border:1px solid currentColor;border-radius:6px;' + (tool[0] === "studentStartLearning" ? "font-size:1.08em;font-weight:bold;min-width:180px;" : "") + '">' + esc(tool[1]) + '</button>';
+          return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="display:block;width:100%;text-align:left;padding:12px 14px;border:1px solid currentColor;border-radius:6px;' + (tool[0] === "studentStartLearning" ? "font-size:1.08em;font-weight:bold;" : "") + '">' + esc(tool[1]) + '</button>';
         }).join("") +
         "</nav>" +
         '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Choose a tool above to continue.</p>';
