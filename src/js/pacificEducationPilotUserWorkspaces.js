@@ -49,7 +49,7 @@
       select.appendChild(option);
     });
 
-    function setPilotActivityGate(enabled) {
+    function ensureSchoolIdentity() { if (window.PacificEducationSchoolIdentity) window.PacificEducationSchoolIdentity.render("pacificEducationSchoolIdentity"); }\n    document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);\n\n    function setPilotActivityGate(enabled) {
       var controls = document.querySelectorAll("main button, main select, main input, main textarea");
       Array.prototype.forEach.call(controls, function (el) {
         if (el.id === "pilotRoleSelector" || el.closest("#pacificEducationPilotUserWorkspaces")) return;
