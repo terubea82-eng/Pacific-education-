@@ -146,7 +146,7 @@
   }
 
   function renderTeacher() {
-    var target = document.getElementById("pacificEducationTeacherSchoolCalendarLink");
+    var target = document.getElementById("pacificEducationAppTeacherSchoolCalendarLink");
     if (!target || !isTeacher()) return false;
 
     var schedule = read();
@@ -217,7 +217,7 @@
   }
 
   function renderStudent() {
-    var target = document.getElementById("pacificEducationStudentSchoolCalendar");
+    var target = document.getElementById("pacificEducationAppStudentSchoolCalendar");
     if (!target || role() !== "student") return false;
 
     var schedule = read();
