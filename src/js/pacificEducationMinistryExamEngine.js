@@ -19,8 +19,8 @@ function makeQuestions(concepts,meta){
     return {
       id:"MINISTRY-"+(i+1),
       concept:concept,
-      question:"Explain the main idea of ""+concept+"" in "+subject+" and give one relevant example.",
-      solution:"A correct response should accurately explain ""+concept+"", use the terminology expected for the verified Ministry scope, and provide a relevant example. The teacher/reviewer must verify the final answer against the official curriculum and examination requirements before use.",
+      question:"Explain the main idea of \""+concept+"\" in "+subject+" and give one relevant example.",
+      solution:"A correct response should accurately explain \""+concept+"\", use the terminology expected for the verified official scope, and provide a relevant example. The teacher/reviewer must verify the final answer against the official curriculum and examination requirements before use.",
       status:"DRAFT — TEACHER/REVIEWER VERIFICATION REQUIRED"
     };
   });
@@ -29,7 +29,7 @@ function ensureUI(){
   var host=document.getElementById("pacificEducationNationalExamCalendar");
   if(!host||document.getElementById("pacificEducationMinistryExamCoverage"))return;
   var box=document.createElement("div"); box.id="pacificEducationMinistryExamCoverage";
-  box.innerHTML="<h4>Ministry Examination Scope → Concept & Question Engine</h4><p>When an official, verified Ministry examination scope is entered, Pacific Education identifies the stated concepts and immediately prepares draft practice questions with solution guidance.</p><p><strong>Authority boundary:</strong> Pacific Education may generate practice material, but it does not create or replace official Ministry examination questions, scope, marks or timetable.</p><p id="pacificEducationMinistryExamCoverageStatus">No verified Ministry examination scope loaded.</p><div id="pacificEducationMinistryExamConcepts"></div><div id="pacificEducationMinistryExamQuestions"></div>";
+  box.innerHTML="<h4>Official Examination Scope → Concept & Question Engine</h4><p>When an official, verified examination scope is entered, Pacific Education identifies the stated concepts and immediately prepares draft practice questions with solution guidance.</p><p><strong>Authority boundary:</strong> Pacific Education may generate practice material, but it does not create or replace official Ministry examination questions, scope, marks or timetable.</p><p id="pacificEducationMinistryExamCoverageStatus">No verified Ministry examination scope loaded.</p><div id="pacificEducationMinistryExamConcepts"></div><div id="pacificEducationMinistryExamQuestions"></div>";
   host.appendChild(box);
 }
 function render(){
@@ -44,7 +44,7 @@ function render(){
 function escapeHtml(v){return String(v).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[ch];});}
 function loadVerifiedScope(payload){
   payload=payload||{};
-  if(payload.verified!==true)throw new Error("Only a verified official Ministry examination scope can be loaded.");
+  if(payload.verified!==true)throw new Error("Only a verified official examination scope can be loaded.");
   state.scope={year:clean(payload.year),level:clean(payload.level),subject:clean(payload.subject),source:clean(payload.source),text:clean(payload.scopeText)};
   state.concepts=extractConcepts(state.scope.text);
   state.questions=makeQuestions(state.concepts,state.scope);
