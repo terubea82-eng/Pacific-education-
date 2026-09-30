@@ -1,16 +1,15 @@
 /*
  * Pacific Education — Dashboard Reliability Repair Layer
- * PROTOTYPE ONLY. Ensures pilot dashboard dependencies, learner context,
- * role routing, and refresh hooks are connected without granting production authority.
+ * PROTOTYPE ONLY. Keeps Student, Teacher, Parent and Inclusion
+ * dashboards synchronized with the same saved pilot learning records.
  */
 (function(window, document){
   "use strict";
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var PILOT_CLASS = "PILOT-CLASS-001";
   var PILOT_STUDENT = "PILOT-STUDENT-001";
 
   function role(){ try { return window.sessionStorage.getItem("pacificEducationPilotRole") || ""; } catch(e){ return ""; } }
-  function dispatch(name){ try { document.dispatchEvent(new CustomEvent(name)); } catch(e){} }
 
   function ensureStudent(){
     var ctx = window.PacificEducationStudentCoverageContext;
@@ -35,46 +34,73 @@
     }catch(e){}
   }
 
-  function renderStudent(){
+  function refreshStudent(){
     ensureStudent();
     var ui = window.PacificEducationStudentProgressDashboardUI;
     if(ui && typeof ui.render === "function") ui.render("pacificEducationStudentProgressDashboard");
   }
-  function renderTeacher(){
+
+  function refreshTeacher(){
     ensureTeacherClass();
     var ui = window.PacificEducationTeacherClassDashboardUI;
     if(ui && typeof ui.render === "function") ui.render("pacificEducationTeacherClassDashboard");
     var d = window.PacificEducationDashboards;
     if(d && typeof d.refreshTeacherDashboard === "function") d.refreshTeacherDashboard();
   }
-  function renderParent(){
+
+  function refreshParent(){
     ensureStudent();
     if(typeof window.refreshParentDashboard === "function") window.refreshParentDashboard();
   }
-  function renderAll(){
+
+  function refreshAll(){
     var r = role();
-    if(r === "student") renderStudent();
-    if(r === "teacher" || r === "special-education") renderTeacher();
-    if(r === "parent") renderParent();
-    if(r === "student" || r === "teacher" || r === "special-education" || r === "parent"){
-      if(typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
-    }
+    if(r === "student") refreshStudent();
+    if(r === "teacher" || r === "special-education") refreshTeacher();
+    if(r === "parent") refreshParent();
+
+    /* Keep the underlying dashboard records synchronized even when
+       the current role is only viewing one dashboard. */
+    if(typeof window.refreshAllDashboards === "function") window.refreshAllDashboards();
   }
 
   function start(){
-    renderAll();
-    [250,750,1500].forEach(function(ms){ window.setTimeout(renderAll,ms); });
+    refreshAll();
+    [250,750,1500].forEach(function(ms){ window.setTimeout(refreshAll,ms); });
   }
 
   window.PacificEducationDashboardRepair = Object.freeze({
     version:VERSION,
     ensureStudent:ensureStudent,
     ensureTeacherClass:ensureTeacherClass,
-    refresh:renderAll,
+    refresh:refreshAll,
     prototype:true,
     productionEligible:false
   });
 
-  ["pacificEducationStudentChanged","pacificEducationCoverageRefresh","pacificEducationAdaptiveLearningUpdated","pacificEducationTeacherReviewCompleted"].forEach(function(name){ document.addEventListener(name,renderAll); });
+  [
+    "pacificEducationStudentChanged",
+    "pacificEducationCoverageRefresh",
+    "pacificEducationAdaptiveLearningUpdated",
+    "pacificEducationTeacherReviewCompleted",
+    "pacificEducationActivityCompleted",
+    "pacificEducationLessonCompleted",
+    "pacificEducationAssessmentCompleted",
+    "pacificEducationDashboardRefresh"
+  ].forEach(function(name){
+    document.addEventListener(name,refreshAll);
+  });
+
+  window.addEventListener("storage",function(event){
+    if(!event || !event.key) return;
+    if(
+      event.key === "pacificEducationActivityResponses" ||
+      event.key === "pacificEducationApprovedHomeAssessments" ||
+      event.key === "pacificEducationAdaptiveLastReview" ||
+      event.key === "lessonsCompleted" ||
+      event.key === "currentDayNumber"
+    ) refreshAll();
+  });
+
   if(document.readyState === "loading") document.addEventListener("DOMContentLoaded",start); else start();
 })(window,document);
