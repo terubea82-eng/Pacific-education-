@@ -57,6 +57,11 @@
       answerIndex: Number.isInteger(Number(source.answerIndex)) ? Number(source.answerIndex) : null,
       contentBasis: source.contentBasis || "concept-based-pilot-prototype",
       indicatorId: source.indicatorId || null,
+      achievementIndicator: source.achievementIndicator || null,
+      strand: source.strand || null,
+      subStrand: source.subStrand || null,
+      concept: source.concept || source.subStrand || null,
+      activitySequence: Number.isInteger(Number(source.activitySequence)) ? Number(source.activitySequence) : null,
       stageType: lesson && lesson.stageType || null,
       responseMode: "text-or-audio"
     };
@@ -152,7 +157,8 @@
     var audioButton = '<button type="button" id="peActivityListen">🔊 Listen to question</button><button type="button" id="peActivityRecord">🎙️ Record voice answer</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
     var audioFile = '<label> 🎤 Answer by voice <input id="peActivityAudio" type="file" accept="audio/*" capture></label>';
 
-    var body = '<div class="activity"><p>' + escape(prompt) + '</p>' + audioButton + audioFile;
+    var curriculumInfo = ""; if (active.context.achievementIndicator || active.context.concept || active.context.strand || active.context.subStrand) { curriculumInfo += '<div class="pe-daily-curriculum-context" aria-label="Daily curriculum alignment">'; if (active.context.achievementIndicator) curriculumInfo += '<p><strong>Achievement Indicator:</strong> ' + escape(active.context.achievementIndicator) + '</p>'; if (active.context.strand) curriculumInfo += '<p><strong>Strand:</strong> ' + escape(active.context.strand) + '</p>'; if (active.context.subStrand) curriculumInfo += '<p><strong>Sub-strand / Concept:</strong> ' + escape(active.context.subStrand) + '</p>'; if (active.context.activitySequence) curriculumInfo += '<p><strong>Activity Progression:</strong> Activity ' + escape(String(active.context.activitySequence)) + '</p>'; curriculumInfo += '</div>'; }
+    var body = '<div class="activity">' + curriculumInfo + '<p>' + escape(prompt) + '</p>' + audioButton + audioFile;
 
     if (type === "true_false") {
       body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button><button type="button" id="peActivitySubmitChoice" disabled>Submit Selected Answer</button>';
