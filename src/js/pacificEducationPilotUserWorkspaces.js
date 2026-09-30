@@ -49,7 +49,14 @@
       select.appendChild(option);
     });
 
-    function ensureSchoolIdentity() { if (window.PacificEducationSchoolIdentity) window.PacificEducationSchoolIdentity.render("pacificEducationSchoolIdentity"); }\n    document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);\n\n    function setPilotActivityGate(enabled) {
+    function ensureSchoolIdentity() { if (window.PacificEducationSchoolIdentity) window.PacificEducationSchoolIdentity.render("pacificEducationSchoolIdentity"); }
+
+    function schoolSummary() {
+      var p = window.PacificEducationSchoolIdentity && typeof window.PacificEducationSchoolIdentity.getProfile === "function"
+        ? window.PacificEducationSchoolIdentity.getProfile() : null;
+      if (!p || (!p.schoolName && !p.registrationNumber)) return "School profile: not yet entered.";
+      return "School: " + esc(p.schoolName || "Not entered") + " • " + esc(p.country || "Not entered") + " • Registration: " + esc(p.registrationNumber || "Not entered");
+    }\n    document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);\n\n    function setPilotActivityGate(enabled) {
       var controls = document.querySelectorAll("main button, main select, main input, main textarea");
       Array.prototype.forEach.call(controls, function (el) {
         if (el.id === "pilotRoleSelector" || el.closest("#pacificEducationPilotUserWorkspaces")) return;
@@ -335,6 +342,7 @@
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
+        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared school profile:</strong> ' + schoolSummary() + '</p>' +
         '<p><strong>Open a role-specific tool:</strong></p>' +
         '<nav aria-label="Role pilot tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
         (toolMap[role.id] || []).map(function(tool) {
@@ -352,6 +360,12 @@
         });
       });
     }
+
+    document.addEventListener("pacificEducationSchoolChanged", function () {
+      ensureSchoolIdentity();
+      var context = document.getElementById("pilotSchoolContext");
+      if (context) context.innerHTML = "<strong>Shared school profile:</strong> " + schoolSummary();
+    });
 
     select.onchange = function () {
       renderRole(select.value);
