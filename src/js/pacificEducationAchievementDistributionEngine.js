@@ -52,17 +52,24 @@
         var registry = getRegistry();
         if (!registry || typeof registry.list !== "function") return [];
 
-        var items = registry.list(filters || {});
-        var verifier = getSourceVerification();
+        filters = filters || {};
+        var items = [];
+        if (filters.annual) {
+            ["Term 1", "Term 2", "Term 3"].forEach(function(term) {
+                registry.list({ level: filters.level, subjectId: filters.subjectId, term: term }).forEach(function(item) {
+                    if (!items.some(function(existing) { return existing.id === item.id; })) items.push(item);
+                });
+            });
+            registry.list({ level: filters.level, subjectId: filters.subjectId, term: "UNASSIGNED" }).forEach(function(item) {
+                if (!items.some(function(existing) { return existing.id === item.id; })) items.push(item);
+            });
+        } else {
+            items = registry.list(filters);
+        }
 
+        var verifier = getSourceVerification();
         return items.filter(function(item) {
-            /*
-             * Prototype planning may use unverified records, but the
-             * production flag is never granted by this engine.
-             */
-            if (verifier && typeof verifier.canUseForPrototype === "function") {
-                return verifier.canUseForPrototype(item.id);
-            }
+            if (verifier && typeof verifier.canUseForPrototype === "function") return verifier.canUseForPrototype(item.id);
             return true;
         });
     }
@@ -108,13 +115,21 @@
         if (!Number.isInteger(endDay) || endDay > 365) endDay = 365;
         if (endDay < startDay) endDay = startDay;
 
+        var annual = filters.annual === true;
         var indicators = getEligibleIndicators({
             level: filters.level,
             subjectId: filters.subjectId,
-            term: filters.term
+            term: annual ? null : filters.term,
+            annual: annual
         });
 
         var days = getAvailableDays(startDay, endDay);
+        var calendar = getCalendar();
+        var authorizedDays = calendar && typeof calendar.getConfiguration === "function"
+            ? Number(calendar.getConfiguration().authorizedTeachingDays)
+            : 180;
+        if (!Number.isInteger(authorizedDays) || authorizedDays < 1) authorizedDays = 180;
+        if (annual) days = days.slice(0, authorizedDays);
         var assignments = [];
         var index = 0;
         var integrationRule = getIntegrationRule();
@@ -125,6 +140,8 @@
                 startDay: startDay,
                 endDay: endDay,
                 availableLearningDays: days.length,
+                authorizedTeachingDays: annual ? days.length : null,
+                allocationModel: annual ? "annual-contiguous-equal-blocks" : "round-robin",
                 indicatorCount: indicators.length,
                 integrationAllocation: integrationRule,
                 assignments: [],
@@ -136,11 +153,16 @@
          * Deterministic round-robin allocation. An indicator may span
          * multiple learning days when there are fewer indicators than days.
          */
-        days.forEach(function(dayNumber) {
-            var indicator = indicators[index % indicators.length];
+        days.forEach(function(dayNumber, dayIndex) {
+            var indicatorIndex = annual
+                ? Math.min(indicators.length - 1, Math.floor(dayIndex * indicators.length / days.length))
+                : index % indicators.length;
+            var indicator = indicators[indicatorIndex];
 
             assignments.push({
                 dayNumber: dayNumber,
+                teachingDayIndex: dayIndex + 1,
+                indicatorPosition: indicatorIndex + 1,
                 indicatorId: indicator.id,
                 level: indicator.level,
                 subjectId: indicator.subjectId,
@@ -181,6 +203,7 @@
             level: filters.level,
             subjectId: filters.subjectId,
             term: filters.term,
+            annual: filters.annual === true,
             startDay: filters.startDay || 1,
             endDay: filters.endDay || 365
         });
