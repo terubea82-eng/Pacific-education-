@@ -68,10 +68,22 @@
         }
 
         var verifier = getSourceVerification();
-        return items.filter(function(item) {
+        items = items.filter(function(item) {
             if (verifier && typeof verifier.canUseForPrototype === "function") return verifier.canUseForPrototype(item.id);
             return true;
         });
+
+        if (filters.annual) {
+            var termOrder = {"Term 1": 1, "Term 2": 2, "Term 3": 3, "UNASSIGNED": 4};
+            items.sort(function(a, b) {
+                var aOrder = Object.prototype.hasOwnProperty.call(termOrder, a.term) ? termOrder[a.term] : 4;
+                var bOrder = Object.prototype.hasOwnProperty.call(termOrder, b.term) ? termOrder[b.term] : 4;
+                if (aOrder !== bOrder) return aOrder - bOrder;
+                return String(a.id || "").localeCompare(String(b.id || ""));
+            });
+        }
+
+        return items;
     }
 
     function isTeachingDay(calendar, dayNumber) {
