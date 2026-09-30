@@ -104,6 +104,16 @@
         render("pacificEducationRemainingAchievementScheduler");
     });
 
+    document.addEventListener("pacificEducationSelectionChanged", function() {
+        render("pacificEducationRemainingAchievementScheduler");
+    });
+
+    window.addEventListener("storage", function(event) {
+        if (event && /^pacificEducation(Level|Subject|Term|CurrentDay)$/.test(event.key || "")) {
+            render("pacificEducationRemainingAchievementScheduler");
+        }
+    });
+
     document.addEventListener("pacificEducationDayChanged", function() {
         render("pacificEducationRemainingAchievementScheduler");
     });
