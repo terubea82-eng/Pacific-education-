@@ -9,7 +9,7 @@
  */
 (function(window) {
     "use strict";
-    var VERSION = "1.3.0";
+    var VERSION = "1.4.0";
     var SUBJECTS = [
     {
         "id": "English",
@@ -153,6 +153,20 @@
         if (window.PacificEducationExpandedSubjectActivityUI && typeof window.PacificEducationExpandedSubjectActivityUI.render === "function") window.PacificEducationExpandedSubjectActivityUI.render();
         return true;
     }
+    function syncUI(subjectId) {
+        var select = document.getElementById("pacificEducationSubject");
+        if (select && SUBJECTS.some(function(item){return item.id === subjectId;}) && select.value !== subjectId) {
+            select.value = subjectId;
+            var status = document.getElementById("pacificEducationSubjectStatus");
+            if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
+        }
+    }
+
+    document.addEventListener("pacificEducationSelectionChanged", function(event) {
+        var detail = event && event.detail ? event.detail : {};
+        if (detail.subjectId) syncUI(detail.subjectId);
+    });
+
     function createUI() {
         var host = document.getElementById("pacificEducationSubjectSelector");
         if (!host) return false;
