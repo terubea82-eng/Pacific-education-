@@ -11,7 +11,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     var LEVELS = [
         "Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"
@@ -31,6 +31,9 @@
         }
 
         window.localStorage.setItem("pacificEducationLevel", level);
+        document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
+            detail: { level: level, prototype: true }
+        }));
 
         var status = document.getElementById("pacificEducationLevelStatus");
         if (status) {
