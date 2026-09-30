@@ -5,20 +5,61 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION = "1.1.0";
+  var VERSION = "1.2.0";
   var PILOT_CLASS = "PILOT-CLASS-001";
   var PILOT_STUDENT = "PILOT-STUDENT-001";
 
   function role(){ try { return window.sessionStorage.getItem("pacificEducationPilotRole") || ""; } catch(e){ return ""; } }
 
+  function isSyntheticStudentReference(value){
+    return /^PILOT-STUDENT-[A-Z0-9-]+$/.test(String(value || ""));
+  }
+
   function ensureStudent(){
     var ctx = window.PacificEducationStudentCoverageContext;
-    if(ctx && typeof ctx.setStudentId === "function" && !ctx.getStudentId()) ctx.setStudentId(PILOT_STUDENT);
+    if(ctx && typeof ctx.setStudentId === "function"){
+      var current = "";
+      try { current = ctx.getStudentId ? ctx.getStudentId() : ""; } catch(e) {}
+      if(!isSyntheticStudentReference(current)){
+        ctx.setStudentId(PILOT_STUDENT);
+      }
+    }
+
+    /*
+     * Migrate legacy pilot roster data that may contain a human-looking
+     * display name. The controlled pilot must use synthetic references only.
+     */
+    var roster = window.PacificEducationTeacherClassRosterContext;
+    if(roster && typeof roster.getClassId === "function" && typeof roster.getClass === "function"){
+      try {
+        var classId = roster.getClassId();
+        var currentClass = classId ? roster.getClass(classId) : null;
+        if(currentClass && Array.isArray(currentClass.studentRefs)){
+          var refs = currentClass.studentRefs.filter(isSyntheticStudentReference);
+          if(refs.indexOf(PILOT_STUDENT) < 0) refs.unshift(PILOT_STUDENT);
+          var unique = refs.filter(function(ref,index){ return refs.indexOf(ref) === index; });
+          currentClass.studentRefs.forEach(function(ref){
+            if(unique.indexOf(ref) < 0 && typeof roster.removeStudent === "function"){
+              roster.removeStudent(classId, ref);
+            }
+          });
+          if(typeof roster.addStudent === "function") roster.addStudent(classId, PILOT_STUDENT);
+        }
+      } catch(e) {}
+    }
+
     var core = window.PacificEducationCore;
     if(core && typeof core.setStudent === "function"){
       try {
         var state = core.getState ? core.getState() : null;
-        if(!state || !state.student || !state.student.studentId) core.setStudent({studentId:PILOT_STUDENT,id:PILOT_STUDENT,name:"Student"});
+        var student = state && state.student ? state.student : {};
+        if(!student.studentId || !isSyntheticStudentReference(student.studentId) || student.name !== "Student"){
+          core.setStudent({
+            studentId: PILOT_STUDENT,
+            id: PILOT_STUDENT,
+            name: "Student"
+          });
+        }
       } catch(e){}
     }
   }
