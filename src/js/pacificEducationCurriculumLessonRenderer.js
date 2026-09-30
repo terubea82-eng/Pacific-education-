@@ -304,6 +304,79 @@ function attachTextAudioControls(targetId, text) {
         box.appendChild(listen); box.appendChild(stop); target.parentNode.appendChild(box);
     }
 
+    function renderDailyCurriculumTarget(lesson, plan) {
+        var container = document.getElementById("dailyLesson");
+        if (!container) return;
+        var old = document.getElementById("pacificDailyCurriculumTarget");
+        if (old) old.remove();
+
+        var target = document.createElement("section");
+        target.id = "pacificDailyCurriculumTarget";
+        target.setAttribute("aria-label", "Daily curriculum concept and achievement indicator");
+        target.style.margin = "1rem 0";
+        target.style.padding = "1rem";
+        target.style.border = "2px solid #ccc";
+
+        var heading = document.createElement("h3");
+        heading.textContent = "TODAY'S CURRICULUM TARGET — BEFORE DAILY ACTIVITIES";
+        target.appendChild(heading);
+
+        var first = lesson && Array.isArray(lesson.learningAreas) && lesson.learningAreas.length ? lesson.learningAreas[0] : null;
+        var indicatorId = first && first.indicatorId ? first.indicatorId : "";
+        var indicatorText = first && first.achievementIndicator ? first.achievementIndicator : "";
+        var concept = plan && plan.concept ? plan.concept : (lesson && lesson.concept ? lesson.concept : {});
+        var conceptText = concept && concept.domain ? concept.domain : "Concept focus not yet mapped";
+        var conceptDay = Number(concept && concept.teachingDay) || 1;
+        var daysPerConcept = Number(concept && concept.daysPerConcept) || 1;
+
+        var indicator = document.createElement("p");
+        if (indicatorId || indicatorText) {
+            indicator.innerHTML = "<strong>Achievement Indicator:</strong> ";
+            indicator.appendChild(document.createTextNode((indicatorId ? indicatorId + " — " : "") + (indicatorText || "Indicator text pending official verification.")));
+        } else {
+            indicator.innerHTML = "<strong>Curriculum Concept:</strong> ";
+            indicator.appendChild(document.createTextNode(conceptText));
+        }
+        target.appendChild(indicator);
+
+        var conceptNode = document.createElement("p");
+        conceptNode.innerHTML = "<strong>Concept:</strong> ";
+        conceptNode.appendChild(document.createTextNode(conceptText));
+        target.appendChild(conceptNode);
+
+        var sequence = document.createElement("p");
+        sequence.textContent = "Concept teaching sequence: Day " + conceptDay + " of " + daysPerConcept + ". The concept may continue across teaching days; the learner receives a different activity/task each day.";
+        target.appendChild(sequence);
+
+        if (plan && plan.concept && plan.concept.nextConceptAvailable) {
+            var next = document.createElement("button");
+            next.type = "button";
+            next.textContent = "Next Concept →";
+            next.setAttribute("data-pacific-action", "next-concept");
+            next.addEventListener("click", function() {
+                var current = Number(lesson && lesson.dayNumber) || getDay();
+                var nextDay = current + Math.max(1, daysPerConcept - conceptDay + 1);
+                setDay(Math.min(365, nextDay));
+            });
+            target.appendChild(next);
+        } else {
+            var end = document.createElement("p");
+            end.textContent = "This is the final mapped concept currently available for this selection.";
+            target.appendChild(end);
+        }
+
+        var note = document.createElement("p");
+        note.textContent = "The target above is the curriculum link for the mandatory activities below. Do not treat supplementary weekend or holiday assignments as part of this sequence.";
+        target.appendChild(note);
+
+        var activityHeading = document.createElement("h3");
+        activityHeading.textContent = "LINKED DAILY ACTIVITIES";
+        activityHeading.id = "pacificLinkedDailyActivitiesHeading";
+        target.appendChild(activityHeading);
+
+        container.appendChild(target);
+    }
+
     function render(plan) {
         if (!plan || !plan.success || !plan.lesson) return false;
         var lesson = plan.lesson;
@@ -337,7 +410,7 @@ function attachTextAudioControls(targetId, text) {
         attachTextAudioControls("dailyLessonPractice", practiceText.join(" "));
         var container = document.getElementById("dailyLesson");
         if (container) container.setAttribute("data-curriculum-linked", "true");
-        attachActivity(lesson.dayNumber, lesson);
+        renderDailyCurriculumTarget(lesson, plan);\n        attachActivity(lesson.dayNumber, lesson);
         return true;
     }
 
