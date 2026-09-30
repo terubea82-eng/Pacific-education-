@@ -37,6 +37,24 @@ function renderDashboardHistory(){
  var rows=state.records.slice(0,20);
  host.innerHTML="<h3>Previous Records — "+esc(role)+" view</h3><p>Historical source-linked records are shown according to the active role.</p>"+(rows.length?"<ul>"+rows.map(function(r){return "<li>"+esc(r.studentName||r.recordId||"Record")+" — "+esc(r.year||"")+" "+esc(r.subject||"")+" "+esc(r.result||"")+" <small>(historical)</small></li>";}).join("")+"</ul>":"<p>No imported previous records available.</p>");
 }
+function historicalProgress(){
+ var totals={},rows=state.records||[];
+ rows.forEach(function(r){
+  var key=clean(r.studentName||r.recordId||"Unidentified")+"|"+clean(r.year||r.class||"");
+  if(!totals[key])totals[key]={student:clean(r.studentName||r.recordId||"Historical record"),level:clean(r.year||r.class||"Not mapped"),subjects:0,attendance:[],results:[]};
+  if(r.subject)totals[key].subjects++;
+  if(r.attendance!==undefined&&r.attendance!=="")totals[key].attendance.push(r.attendance);
+  if(r.result)totals[key].results.push(r.result);
+ });
+ return Object.keys(totals).map(function(k){return totals[k];});
+}
+function renderHistoricalProgress(){
+ var role=sessionStorage.getItem("pacificEducationActiveRole")||"",host=document.getElementById("pacificEducationHistoricalProgress");if(!host)return;
+ var allowed=["student","teacher","parent","head-of-school","institution-admin","special-education","professional-reviewer","ngo","education-government","community-partner","owner"];
+ if(allowed.indexOf(role)<0){host.innerHTML="";return;}
+ var rows=historicalProgress();
+ host.innerHTML="<h3>Historical Academic Progress</h3><p>Imported history is reference evidence for continuity. It does not automatically change current class placement, grades or curriculum decisions.</p>"+(rows.length?"<ul>"+rows.slice(0,30).map(function(x){return "<li><strong>"+esc(x.student)+"</strong> — "+esc(x.level)+" • "+x.subjects+" subject record(s)"+(x.results.length?" • results recorded: "+x.results.length:"")+"</li>";}).join("")+"</ul>":"<p>No mapped historical progress is available.</p>");
+}
 function renderSummary(){
  var s=document.getElementById("pacificEducationPreviousRecordsSummary");if(!s)return;
  s.innerHTML="<p><strong>Imported previous records:</strong> "+state.records.length+" • <strong>Registered sources:</strong> "+state.sources.length+"</p>"+
@@ -61,6 +79,7 @@ function render(){
  }
  renderSummary();
  renderDashboardHistory();
+ renderHistoricalProgress();
  var pending={records:[],headers:[],mapping:{},sourceId:""};
  document.getElementById("paceduPreviousFile").onchange=function(ev){
   var file=ev.target.files&&ev.target.files[0];if(!file)return;
@@ -84,7 +103,7 @@ function render(){
  document.getElementById("paceduApproveImport").onclick=function(){
   var mapped=pending.records.map(function(r){var x={};Object.keys(pending.mapping).forEach(function(k){if(pending.mapping[k])x[k]=r[pending.mapping[k]]||"";});return x;});
   var result=importRecords(mapped,pending.sourceId,"authorised-mapped-import");
-  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained.";
+  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained."; renderDashboardHistory(); renderHistoricalProgress();
  };
  document.getElementById("paceduRegisterSource").onclick=function(){
   var verified=document.getElementById("paceduSourceVerified").checked;
