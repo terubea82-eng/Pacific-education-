@@ -52,6 +52,20 @@
         return true;
     }
 
+    function saveAuthorizedTeachingDays() {
+        var cal = calendar();
+        var days = Number.parseInt(value("pacificEducationAuthorizedTeachingDays"), 10);
+        if (!cal || typeof cal.configure !== "function" || !Number.isInteger(days) || days < 1 || days > 365) {
+            status("Enter an authorized annual teaching-day total from 1 to 365.");
+            return false;
+        }
+        cal.configure({ authorizedTeachingDays: days });
+        status("Authorized annual teaching days saved: " + days + ". Annual concepts will be distributed across these teaching days.");
+        refreshSummary();
+        refreshDistribution();
+        return true;
+    }
+
     function addHoliday() {
         var cal = calendar();
         var date = value("pacificEducationHolidayDate");
@@ -139,7 +153,8 @@
         var start = get("pacificEducationSchoolStartStatus");
         if (start) {
             start.textContent =
-                "School start date: " + (config.startDate || "Not set");
+                "School start date: " + (config.startDate || "Not set") +
+                " • Authorized annual teaching days: " + (config.authorizedTeachingDays || 180);
         }
     }
 
@@ -183,6 +198,10 @@
             '<input type="date" id="pacificEducationSchoolStartDate">' +
             '<button type="button" id="pacificEducationSaveStartDate">Save Start Date</button>' +
             '<p id="pacificEducationSchoolStartStatus" aria-live="polite"></p>' +
+            '<label for="pacificEducationAuthorizedTeachingDays">Authorized annual teaching days</label><br>' +
+            '<input type="number" id="pacificEducationAuthorizedTeachingDays" min="1" max="365" value="180">' +
+            '<button type="button" id="pacificEducationSaveAuthorizedTeachingDays">Save Teaching Days</button>' +
+            '<p>All annual curriculum indicators/concepts will be distributed as evenly as possible across these authorized teaching days.</p>' +
             '<hr>' +
             '<label for="pacificEducationHolidayDate">Holiday date</label><br>' +
             '<input type="date" id="pacificEducationHolidayDate">' +
@@ -202,8 +221,13 @@
             '<p id="pacificEducationDistributionStatus" aria-live="polite"></p>' +
             '<p id="pacificEducationCalendarStatus" aria-live="polite">Calendar interface ready.</p>';
 
+        var calConfig = calendar() && typeof calendar().getConfiguration === "function" ? calendar().getConfiguration() : {};
+        var authorizedInput = get("pacificEducationAuthorizedTeachingDays");
+        if (authorizedInput) authorizedInput.value = String(calConfig.authorizedTeachingDays || 180);
         get("pacificEducationSaveStartDate").setAttribute("data-pacific-action","teacher-save-start-date");
         get("pacificEducationSaveStartDate").addEventListener("click", saveStartDate);
+        get("pacificEducationSaveAuthorizedTeachingDays").setAttribute("data-pacific-action","teacher-save-authorized-teaching-days");
+        get("pacificEducationSaveAuthorizedTeachingDays").addEventListener("click", saveAuthorizedTeachingDays);
         get("pacificEducationAddHoliday").setAttribute("data-pacific-action","teacher-add-holiday");
         get("pacificEducationAddHoliday").addEventListener("click", addHoliday);
         get("pacificEducationAddRevision").setAttribute("data-pacific-action","teacher-add-revision");
