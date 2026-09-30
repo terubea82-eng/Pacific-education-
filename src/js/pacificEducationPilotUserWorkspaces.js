@@ -7,6 +7,7 @@
   var roles = [
     { id:"student", title:"Student", access:"Learning, Daily Activities Days 1–365, assessments, plus separate Weekend & Holiday Supplementary Activities", actions:["Open daily activity","Practice","View my progress","Open weekend/holiday assignment"] },
     { id:"teacher", title:"Teacher", access:"Full Daily Activities Days 1–365, Weekend & Holiday Assignments, class, assessment and learner support tools", actions:["Open daily activity","Open weekend/holiday assignment","Class dashboard","Support student/parent"] },
+    { id:"head-of-school", title:"Head of School", access:"School identity and registration control plus read-only oversight of all teacher-created class lists", actions:["Register school","View all class lists","Review school-wide class coverage"] },
     { id:"special-education", title:"Special Education / Inclusion", access:"Daily learner performance tracking, individualized support and mandatory review comments", actions:["Daily performance review","Individual support comment","Review home assessments"] },
     { id:"parent", title:"Parent / Caregiver", access:"Linked-child overview plus automatic Weekend & Holiday Supplementary Activities only", actions:["Open weekend/holiday assignment","Seek teacher help","Send feedback"] },
     { id:"professional", title:"Professional Reviewer", access:"Controlled review evidence and findings", actions:["Review evidence","Record finding","View review status"] },
@@ -165,6 +166,8 @@
 
     function setRoleVisibility(roleId) {
       ensureStudentProgressSection();
+      var schoolSection = document.getElementById("pacificEducationSchoolIdentitySection");
+      if (schoolSection) schoolSection.hidden = roleId !== "head-of-school";
       refreshWeekendHolidaySupplementaryStatus();
 
       var roleVisibility = {
@@ -182,6 +185,10 @@
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "specialEducationDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
           "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
+        ],
+        "head-of-school": [
+          "pacificEducationSchoolIdentitySection","teacherCalendarSection","pacificEducationTeacherClassRoster","pacificEducationTeacherClassDashboard",
+          "pacificEducationCoverageDashboard"
         ],
         parent: [
           "parentDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
@@ -211,7 +218,7 @@
 
       var allowed = (roleVisibility[roleId] || []).concat(["pacificEducationAppTools"]);
       var managed = [
-        "pacificEducationAppTools",
+        "pacificEducationAppTools","pacificEducationSchoolIdentitySection",
         "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
         "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
         "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","learningPlatform","levelSelection","subjectSelection",
@@ -298,6 +305,7 @@
           authorized: true
         });
       }
+      try { window.sessionStorage.setItem("pacificEducationActiveRole", role.id); } catch (e) {}
       setRoleVisibility(role.id);
       organizeDailyActivitiesForRole(role.id);
       setPilotActivityGate(true);
@@ -360,6 +368,11 @@
           ["learningPlatform","1. Education Services"],
           ["pacificEducationWebsitePilotChecklist","2. Pilot Information"],
           ["pacificGuardianCommentSection","3. Feedback"]
+        ],
+        "head-of-school": [
+          ["pacificEducationSchoolIdentitySection","1. School Name & Registration"],
+          ["pacificEducationTeacherClassRoster","2. All Class Lists — View Only"],
+          ["pacificEducationCoverageDashboard","3. School Curriculum Coverage"]
         ],
         owner: [
           ["systemStatus","1. System Status"],
