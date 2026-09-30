@@ -81,6 +81,11 @@
     document.addEventListener("pacificEducationSelectionChanged", function(event) {
         var detail = event && event.detail ? event.detail : {};
         if (detail.level) syncUI(detail.level);
+        var subjectStatus = document.getElementById("pacificEducationSubjectStatus");
+        if (subjectStatus) {
+            var subject = window.localStorage.getItem("pacificEducationSubject") || "English";
+            subjectStatus.textContent = "Selected: " + subject + " • " + getStoredLevel() + " (pilot — curriculum verification required)";
+        }
     });
 
     function createUI() {
