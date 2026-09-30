@@ -6,7 +6,7 @@
 (function(window,document){
 "use strict";
 var KEY="pacificEducationPreviousRecordsV1";
-var state={records:[],sources:[]};
+var state={records:[],sources:[],workLinks:[]};
 function clean(v){return String(v==null?"":v).replace(/\s+/g," ").trim();}
 function esc(v){return String(v==null?"":v).replace(/[&<>"]/g,function(c){return({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c];});}
 function load(){try{var x=JSON.parse(localStorage.getItem(KEY)||"null");if(x){state.records=Array.isArray(x.records)?x.records:[];state.sources=Array.isArray(x.sources)?x.sources:[];}}catch(e){}}
@@ -65,6 +65,19 @@ function renderHistoricalCoverage(){
  var a=historicalCoverageAdvice();
  host.innerHTML="<h3>Historical Curriculum Coverage Reference</h3><p>Previous records can inform planning, but they are not proof that an achievement indicator was taught or mastered. Teachers/reviewers must verify evidence before marking current coverage.</p>"+(a.subjects.length?"<p><strong>Subjects found in historical records:</strong> "+a.subjects.map(esc).join(", ")+"</p>":"<p>No mapped historical subjects available.</p>")+"<p><strong>Historical records:</strong> "+a.records+"</p>";
 }
+
+function addWorkLink(title,url,type,studentRef,authorised){
+ if(!authorised||!url)return null;
+ var item={id:"work-"+Date.now()+"-"+Math.random().toString(36).slice(2,8),title:clean(title||"Previous student work"),url:String(url).trim(),type:clean(type||"Approved student work source"),studentRef:clean(studentRef||""),authorised:true,createdAt:new Date().toISOString(),readOnly:true};
+ state.workLinks.push(item);save();return item;
+}
+function renderPreviousWorkLinks(){
+ var role=sessionStorage.getItem("pacificEducationActiveRole")||"",host=document.getElementById("paceduPreviousWorkLinks");if(!host)return;
+ var allowed=["teacher","head-of-school","institution-admin","special-education","professional-reviewer","education-government","owner"];
+ if(allowed.indexOf(role)<0){host.innerHTML="";return;}
+ var links=state.workLinks||[];
+ host.innerHTML="<h3>Previous Student Work & Assignment Links</h3><p>PacEdu can catalogue authorised links to previous student work or assignments for continuity and review. It does not assume linked work is correct, current, or proof of mastery.</p>"+(links.length?links.slice(-30).reverse().map(function(x){return "<p><strong>"+esc(x.title)+"</strong> — "+esc(x.type)+(x.studentRef?" — Student/reference: "+esc(x.studentRef):"")+" — <a href=\""+esc(x.url)+"\" target=\"_blank\" rel=\"noopener noreferrer\">Open authorised source</a><br><small>Historical / Imported — Read Only. Verify evidence before using it for current teaching or assessment.</small></p>";}).join(""):"<p>No authorised previous-work links registered.</p>");
+}
 function renderHistoricalProgress(){
  var role=sessionStorage.getItem("pacificEducationActiveRole")||"",host=document.getElementById("pacificEducationHistoricalProgress");if(!host)return;
  var allowed=["student","teacher","parent","head-of-school","institution-admin","special-education","professional-reviewer","ngo","education-government","community-partner","owner"];
@@ -91,13 +104,14 @@ function render(){
    "<label><strong>Source type</strong><br><select id=\"paceduSourceType\"><option>FEMIS authorised export</option><option>Institution student information system</option><option>Institution academic records</option><option>Other approved source</option></select></label>"+
    "<label><input type=\"checkbox\" id=\"paceduSourceVerified\"> I confirm this source is authorised for this institution and this import.</label><br>"+
    "<button type=\"button\" id=\"paceduRegisterSource\">Register authorised source</button>"+
-   "<hr><h3>Import and Mapping Preview</h3><p>Upload an authorised CSV/TSV export. Pacedu previews the mapping before saving.</p><input type=\"file\" id=\"paceduPreviousFile\" accept=\".csv,.tsv,text/csv,text/tab-separated-values\"><div id=\"paceduMappingArea\"></div><div id=\"paceduImportPreview\"></div><button type=\"button\" id=\"paceduApproveImport\" disabled>Approve and save mapped records</button><p id=\"paceduImportStatus\" role=\"status\" aria-live=\"polite\"></p>";
+   "<hr><h3>Previous Work / Assignment Link Registry</h3><p>Add only links you are authorised to use. Protected student accounts, private LMS pages and records must be accessed through the institution's approved authentication/export process.</p><label>Work/assignment title <input id="paceduWorkTitle"></label><br><label>Authorised link <input id="paceduWorkUrl" type="url"></label><br><label>Source type <select id="paceduWorkType"><option>Institution assignment archive</option><option>Approved student portfolio</option><option>Approved LMS/export source</option><option>Public educational work</option><option>Other approved source</option></select></label><br><label>Student/reference ID (optional) <input id="paceduWorkStudent"></label><br><label><input type="checkbox" id="paceduWorkAuthorised"> I confirm this link is authorised for this institution and use.</label><br><button type="button" id="paceduAddWorkLink">Add previous work link</button><p id="paceduWorkStatus" role="status"></p><hr><h3>Import and Mapping Preview</h3><p>Upload an authorised CSV/TSV export. Pacedu previews the mapping before saving.</p><input type=\"file\" id=\"paceduPreviousFile\" accept=\".csv,.tsv,text/csv,text/tab-separated-values\"><div id=\"paceduMappingArea\"></div><div id=\"paceduImportPreview\"></div><button type=\"button\" id=\"paceduApproveImport\" disabled>Approve and save mapped records</button><p id=\"paceduImportStatus\" role=\"status\" aria-live=\"polite\"></p>";
   app.appendChild(s);
  }
  renderSummary();
  renderDashboardHistory();
  renderHistoricalProgress();
  renderHistoricalCoverage();
+ renderPreviousWorkLinks();
  var pending={records:[],headers:[],mapping:{},sourceId:""};
  document.getElementById("paceduPreviousFile").onchange=function(ev){
   var file=ev.target.files&&ev.target.files[0];if(!file)return;
@@ -118,10 +132,11 @@ function render(){
   document.getElementById("paceduImportPreview").innerHTML=pending.records.length?"<p><strong>Step 2 — Preview:</strong> "+pending.records.length+" records; existing IDs detected: "+dup+".</p><pre style=\"white-space:pre-wrap\">"+esc(JSON.stringify(sample,null,2))+"</pre>":"";
   document.getElementById("paceduApproveImport").disabled=!pending.records.length||!pending.sourceId||!state.sources.some(function(s){return s.id===pending.sourceId&&s.verified;});
  }
+ document.getElementById("paceduAddWorkLink").onclick=function(){var ok=document.getElementById("paceduWorkAuthorised").checked;var x=addWorkLink(document.getElementById("paceduWorkTitle").value,document.getElementById("paceduWorkUrl").value,document.getElementById("paceduWorkType").value,document.getElementById("paceduWorkStudent").value,ok);document.getElementById("paceduWorkStatus").textContent=x?"Previous work link added as read-only historical evidence.":"Authorisation confirmation is required.";renderPreviousWorkLinks();};
  document.getElementById("paceduApproveImport").onclick=function(){
   var mapped=pending.records.map(function(r){var x={};Object.keys(pending.mapping).forEach(function(k){if(pending.mapping[k])x[k]=r[pending.mapping[k]]||"";});return x;});
   var result=importRecords(mapped,pending.sourceId,"authorised-mapped-import");
-  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained."; renderDashboardHistory(); renderHistoricalProgress(); renderHistoricalCoverage();
+  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained."; renderDashboardHistory(); renderHistoricalProgress(); renderHistoricalCoverage(); renderPreviousWorkLinks();
  };
  document.getElementById("paceduRegisterSource").onclick=function(){
   var verified=document.getElementById("paceduSourceVerified").checked;
@@ -131,6 +146,6 @@ function render(){
  };
 }
 load();
-window.PacificEducationPreviousRecords={load:load,save:save,addSource:addSource,importRecords:importRecords,getState:function(){return JSON.parse(JSON.stringify(state));},render:render};
+window.PacificEducationPreviousRecords={load:load,save:save,addSource:addSource,addWorkLink:addWorkLink,importRecords:importRecords,getState:function(){return JSON.parse(JSON.stringify(state));},render:render};
 document.addEventListener("DOMContentLoaded",render);
 })(window,document);
