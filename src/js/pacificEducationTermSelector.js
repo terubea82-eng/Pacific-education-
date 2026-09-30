@@ -71,6 +71,12 @@
     document.addEventListener("pacificEducationSelectionChanged", function(event) {
         var detail = event && event.detail ? event.detail : {};
         if (detail.term) syncUI(detail.term);
+        var level = window.localStorage.getItem("pacificEducationLevel") || "Class 1";
+        var subject = window.localStorage.getItem("pacificEducationSubject") || "English";
+        var levelStatus = document.getElementById("pacificEducationLevelStatus");
+        var subjectStatus = document.getElementById("pacificEducationSubjectStatus");
+        if (levelStatus) levelStatus.textContent = "Selected: " + level + " (prototype curriculum selection)";
+        if (subjectStatus) subjectStatus.textContent = "Selected: " + subject + " • " + level + " (pilot — curriculum verification required)";
     });
 
     function createUI() {
