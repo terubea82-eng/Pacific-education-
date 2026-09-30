@@ -103,10 +103,36 @@
     return duplicates;
   }
 
+  function similarityAdvice(value, field){
+    var needle=normaliseForMatch(value);
+    if(!needle) return [];
+    var words=needle.split(" ").filter(Boolean);
+    var matches=[];
+    ["academicUnits","levelLabels","programmes","courses"].forEach(function(k){
+      (state[k]||[]).forEach(function(v){
+        var candidate=normaliseForMatch(v);
+        if(!candidate || candidate===needle || k===field) return;
+        var overlap=words.filter(function(w){return candidate.indexOf(w)>=0;}).length;
+        if(overlap && (overlap/words.length)>=0.5) matches.push({field:k,value:v});
+      });
+    });
+    return matches;
+  }
+
+  function conflictAdvice(){
+    var conflicts=[];
+    if(clean(state.attendanceRules) && /(?:minimum|required|at least)\\s*\\d+\\s*%/i.test(state.attendanceRules) &&
+       /(?:minimum|required|at least)\\s*\\d+\\s*%/i.test(state.academicIntegrity)){
+      conflicts.push("Attendance rules and academic-integrity rules both contain percentage requirements; confirm that they are intentionally different.");
+    }
+    return conflicts;
+  }
+
   function renderAdvice(){
     var host=document.getElementById("pacificEducationInstitutionAdvice");
     if(!host)return;
     var d=duplicateAdvice();
+    var conflicts=conflictAdvice();
     var messages=[];
     if(d.length){
       messages.push("<strong>Similar information detected:</strong> "+d.map(function(x){
@@ -114,6 +140,9 @@
       }).join("; ")+". Review it before creating another entry.");
     } else {
       messages.push("<strong>No exact duplicate detected in the current prototype configuration.</strong> Similarity checking is advisory and does not replace institutional review.");
+    }
+    if(conflicts.length){
+      conflicts.forEach(function(x){ messages.push("<strong>Possible conflict:</strong> "+esc(x)); });
     }
     if(clean(state.attendanceRules)){
       messages.push("<strong>Attendance:</strong> Your institution has defined attendance rules. Confirm whether programme/course-specific rules override the institution-wide rule.");
@@ -187,11 +216,23 @@
       "<span id=\"pacificEducationInstitutionSetupStatus\" role=\"status\" aria-live=\"polite\"></span>";
 
     Array.prototype.forEach.call(form.querySelectorAll("[data-inst-key]"),function(el){
-      el.addEventListener("change",function(){
+      el.addEventListener("input",function(){
         var k=el.getAttribute("data-inst-key"), v=el.value;
         if(["levelLabels","academicUnits","programmes","courses"].indexOf(k)>=0) state[k]=unique(list(v));
         else state[k]=clean(v);
         renderAdvice();
+        var matches=similarityAdvice(v,k);
+        el.setAttribute("aria-describedby", "pacificEducationLiveFieldAdvice");
+        var live=document.getElementById("pacificEducationLiveFieldAdvice");
+        if(!live){
+          live=document.createElement("div");
+          live.id="pacificEducationLiveFieldAdvice";
+          live.setAttribute("role","status");
+          live.setAttribute("aria-live","polite");
+          live.style.marginTop="8px";
+          form.appendChild(live);
+        }
+        live.textContent=matches.length ? "Possible similar information: "+matches.slice(0,3).map(function(x){return x.value+" ("+x.field+")";}).join(", ")+" — review before saving." : "";
       });
     });
     document.getElementById("pacificEducationInstitutionSave").onclick=function(){
