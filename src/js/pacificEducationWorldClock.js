@@ -51,19 +51,18 @@
     var host = document.getElementById('pacificEducationAppWorldClock');
     if (!host) return;
     ensurePanel(host, 'Pacific Education App');
-      var grid = host.querySelector('.pacificEducationWorldClockGrid');
-      if (!grid) return;
-      grid.innerHTML = '';
-      LOCATIONS.forEach(function(item) {
-        var value;
-        try { value = format(item[0], item[1]); } catch (e) { return; }
-        var card = document.createElement('div');
-        card.style.cssText = 'border:1px solid #ccc;border-radius:6px;padding:8px;margin:4px;display:inline-block;min-width:180px;';
-        card.innerHTML = '<strong>' + value.location + '</strong><br>' +
-          '<span>' + value.time + ' (' + value.zoneName + ')</span><br>' +
-          '<span>' + value.date + '</span><br><small>' + value.zone + '</small>';
-        grid.appendChild(card);
-      });
+    var grid = host.querySelector('.pacificEducationWorldClockGrid');
+    if (!grid) return;
+    grid.innerHTML = '';
+    LOCATIONS.forEach(function(item) {
+      var value;
+      try { value = format(item[0], item[1]); } catch (e) { return; }
+      var card = document.createElement('div');
+      card.style.cssText = 'border:1px solid #ccc;border-radius:6px;padding:8px;margin:4px;display:inline-block;min-width:180px;';
+      card.innerHTML = '<strong>' + value.location + '</strong><br>' +
+        '<span>' + value.time + ' (' + value.zoneName + ')</span><br>' +
+        '<span>' + value.date + '</span><br><small>' + value.zone + '</small>';
+      grid.appendChild(card);
     });
   }
 
