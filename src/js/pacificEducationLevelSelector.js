@@ -11,22 +11,27 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.3.0";
+    var VERSION = "1.4.0";
 
-    var LEVELS = [
-        "Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"
-    ];
+    function getConfiguredLevels() {
+        if (window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.getLevels === "function") {
+            return window.PacificEducationCountryConfig.getLevels();
+        }
+        return ["Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
+    }
+    function getLevels() { return getConfiguredLevels(); }
 
     function getStoredLevel() {
         var value = window.localStorage.getItem("pacificEducationLevel");
-        if (LEVELS.indexOf(value) !== -1) return value;
+        var levels = getConfiguredLevels();
+        if (levels.indexOf(value) !== -1) return value;
         var legacy = {"Form 1":"Class 7","Form 2":"Class 8","Form 3":"Class 9","Form 4":"Class 10","Form 5":"Class 11","Form 6":"Class 12","Form 7":"Class 13"};
         if (legacy[value]) { window.localStorage.setItem("pacificEducationLevel", legacy[value]); return legacy[value]; }
         return "Class 1";
     }
 
     function setLevel(level) {
-        if (LEVELS.indexOf(level) === -1) {
+        if (getConfiguredLevels().indexOf(level) === -1) {
             return false;
         }
 
@@ -71,7 +76,7 @@
 
     function syncUI(level) {
         var select = document.getElementById("pacificEducationLevel");
-        if (select && LEVELS.indexOf(level) !== -1 && select.value !== level) {
+        if (select && getConfiguredLevels().indexOf(level) !== -1 && select.value !== level) {
             select.value = level;
             var status = document.getElementById("pacificEducationLevelStatus");
             if (status) status.textContent = "Selected: " + level + " (prototype curriculum selection)";
@@ -105,7 +110,7 @@
         select.name = "pacificEducationLevel";
         select.setAttribute("aria-label", "Learning level");
 
-        LEVELS.forEach(function(level) {
+        getConfiguredLevels().forEach(function(level) {
             var option = document.createElement("option");
             option.value = level;
             option.textContent = level;
@@ -133,19 +138,21 @@
         return true;
     }
 
+    document.addEventListener("pacificEducationCountryConfigChanged", function() { createUI(); });
+
     function initialise() {
         createUI();
         return {
             version: VERSION,
             level: getStoredLevel(),
-            levels: LEVELS.slice(),
+            levels: getConfiguredLevels(),
             prototype: true
         };
     }
 
     window.PacificEducationLevelSelector = Object.freeze({
         version: VERSION,
-        levels: LEVELS.slice(),
+        levels: getConfiguredLevels(),
         getLevel: getStoredLevel,
         setLevel: setLevel,
         createUI: createUI,
