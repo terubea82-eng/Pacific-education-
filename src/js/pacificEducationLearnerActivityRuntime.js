@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.1.0";
+  var VERSION = "1.2.0";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -162,7 +162,11 @@
     var body = '<div class="activity">' + curriculumInfo + '<p>' + escape(prompt) + '</p>' + audioButton + audioFile;
 
     if (type === "true_false") {
-      body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button><button type="button" id="peActivitySubmitTrueFalse" disabled>Submit Selected Answer</button>';
+      body += '<p>Choose True or False.</p>' +
+        '<div id="peTrueFalseSelection" aria-live="polite" style="margin:8px 0;padding:10px;border:2px solid currentColor;min-height:24px;">No answer selected.</div>' +
+        '<button type="button" id="peActivityTrue" aria-pressed="false">True</button>' +
+        '<button type="button" id="peActivityFalse" aria-pressed="false">False</button>' +
+        '<button type="button" id="peActivitySubmitTrueFalse" disabled style="display:inline-block;visibility:visible;opacity:1;">Submit Selected Answer</button>';
     } else if (type === "multiple_choice") {
       var choices = [];
       var activitySource = lesson && lesson.activity ? lesson.activity : {};
@@ -277,16 +281,31 @@
     var no = document.getElementById("peActivityFalse");
     var tfSubmit = document.getElementById("peActivitySubmitTrueFalse");
     var tfSelected = "";
+    var tfSelection = document.getElementById("peTrueFalseSelection");
+    function updateTrueFalseSelection() {
+      if (tfSelection) tfSelection.textContent = tfSelected ? "Selected: " + tfSelected + ". Tap Submit Selected Answer to record it." : "No answer selected.";
+      if (tfSubmit) {
+        tfSubmit.disabled = !tfSelected;
+        tfSubmit.style.display = "inline-block";
+        tfSubmit.style.visibility = "visible";
+        tfSubmit.style.opacity = "1";
+      }
+    }
     if (yes) yes.addEventListener("click", function() {
       tfSelected = "True";
       yes.setAttribute("aria-pressed","true"); no.setAttribute("aria-pressed","false");
-      if (tfSubmit) tfSubmit.disabled = false;
+      yes.style.outline = "3px solid currentColor";
+      no.style.outline = "";
+      updateTrueFalseSelection();
     });
     if (no) no.addEventListener("click", function() {
       tfSelected = "False";
       no.setAttribute("aria-pressed","true"); yes.setAttribute("aria-pressed","false");
-      if (tfSubmit) tfSubmit.disabled = false;
+      no.style.outline = "3px solid currentColor";
+      yes.style.outline = "";
+      updateTrueFalseSelection();
     });
+    updateTrueFalseSelection();
     if (tfSubmit && (yes || no)) tfSubmit.addEventListener("click", function() {
       if (!tfSelected) return;
       tfSubmit.disabled = true;
