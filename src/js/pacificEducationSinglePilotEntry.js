@@ -46,7 +46,9 @@
     ngo: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificGuardianCommentSection"],
     education: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificEducationCurriculumMasterControlStatus", "pacificEducationCurriculumEvidenceRegistry", "pacificEducationCurriculumEvidenceTraceability", "pacificGuardianCommentSection"],
     community: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificGuardianCommentSection"],
-    owner: ["systemStatus", "pacificEducationWebsitePilotChecklist", "pacificEducationProductionReleaseChecklist", "pacificEducationProductionReleaseEvidenceRegistry", "pacificEducationProductionReleaseEvidenceGate", "pacificEducationFinalProductionAuthorizationEvidenceRegistry", "publicationStatus", "pacificEducationOfflineSyncStatus", "pacificGuardianCommentSection"]
+    owner: ["systemStatus", "pacificEducationWebsitePilotChecklist", "pacificEducationProductionReleaseChecklist", "pacificEducationProductionReleaseEvidenceRegistry", "pacificEducationProductionReleaseEvidenceGate", "pacificEducationFinalProductionAuthorizationEvidenceRegistry", "publicationStatus", "pacificEducationOfflineSyncStatus", "pacificGuardianCommentSection"],
+    "head-of-school": ["pacificEducationSchoolIdentitySection", "pacificEducationTeacherClassRoster", "pacificEducationExamCalendarSection", "pacificEducationCoverageDashboard"],
+    "institution-admin": ["pacificEducationInstitutionSetup", "pacificEducationInstitutionAdvice", "pacificEducationExamCalendarSection"]
   };
 
   function safeGet(key) {
@@ -67,7 +69,9 @@
       ngo: "NGO / Organization",
       education: "Education / Government",
       community: "Community / Partner",
-      owner: "Owner / Control"
+      owner: "Owner / Control",
+      "head-of-school": "Head of School",
+      "institution-admin": "Institution Administrator"
     };
     return map[role] || "User";
   }
@@ -312,7 +316,7 @@
     }
 
     window.PacificEducationSinglePilotEntry = Object.freeze({
-      version: "1.3.0",
+      version: "1.4.0",
       prototype: true,
       productionEligible: false,
       registerRole: registerRole,
