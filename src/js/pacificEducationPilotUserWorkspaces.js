@@ -157,8 +157,7 @@
       var parentDashboard = document.getElementById("parentDashboard");
       var host = roleId === "student" ? studentPlatform :
         roleId === "teacher" ? teacherDashboard :
-        roleId === "special-education" ? specialDashboard :
-        roleId === "parent" ? parentDashboard : null;
+        roleId === "special-education" ? specialDashboard : null;
       if (host && daily.parentNode !== host) {
         host.appendChild(daily);
       }
@@ -185,7 +184,6 @@
           "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
         ],
         parent: [
-          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "parentDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
         ],
         professional: [
