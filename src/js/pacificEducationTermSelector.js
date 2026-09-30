@@ -12,12 +12,17 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.3.0";
-    var TERMS = ["Term 1", "Term 2", "Term 3"];
+    var VERSION = "1.4.0";
+    function getConfiguredTerms() {
+        if (window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.getTerms === "function") return window.PacificEducationCountryConfig.getTerms();
+        return ["Term 1", "Term 2", "Term 3"];
+    }
+    function getTerms() { return getConfiguredTerms(); }
 
     function getTerm() {
         var value = window.localStorage.getItem("pacificEducationTerm");
-        return TERMS.indexOf(value) !== -1 ? value : "Term 1";
+        var terms = getConfiguredTerms();
+        return terms.indexOf(value) !== -1 ? value : terms[0];
     }
 
     function refresh() {
@@ -32,7 +37,7 @@
     }
 
     function setTerm(term) {
-        if (TERMS.indexOf(term) === -1) return false;
+        if (getConfiguredTerms().indexOf(term) === -1) return false;
 
         window.localStorage.setItem("pacificEducationTerm", term);
         document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
@@ -61,7 +66,7 @@
 
     function syncUI(term) {
         var select = document.getElementById("pacificEducationTerm");
-        if (select && TERMS.indexOf(term) !== -1 && select.value !== term) {
+        if (select && getConfiguredTerms().indexOf(term) !== -1 && select.value !== term) {
             select.value = term;
             var status = document.getElementById("pacificEducationTermStatus");
             if (status) status.textContent = "Selected: " + term + " (prototype term selection)";
@@ -94,7 +99,7 @@
         select.name = "pacificEducationTerm";
         select.setAttribute("aria-label", "School term");
 
-        TERMS.forEach(function(term) {
+        getConfiguredTerms().forEach(function(term) {
             var option = document.createElement("option");
             option.value = term;
             option.textContent = term;
@@ -130,6 +135,8 @@
         };
     }
 
+    document.addEventListener("pacificEducationCountryConfigChanged", function() { createUI(); });
+
     function initialise() {
         createUI();
         return getSelection();
@@ -137,7 +144,7 @@
 
     window.PacificEducationTermSelector = Object.freeze({
         version: VERSION,
-        terms: TERMS.slice(),
+        terms: getConfiguredTerms(),
         getTerm: getTerm,
         setTerm: setTerm,
         getSelection: getSelection,
