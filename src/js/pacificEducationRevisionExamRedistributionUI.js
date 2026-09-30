@@ -3,7 +3,7 @@
  * Version 1.0.0
  * PROTOTYPE ONLY.
  *
- * Teacher-entered revision/exam dates are treated as scheduling inputs.
+ * Head-of-School-entered revision/exam dates are treated as scheduling inputs.
  * Official curriculum authority remains external to this prototype.
  */
 (function(window, document) {
@@ -77,6 +77,9 @@
         }
 
         var cfg = config();
+        var activeRole = "";
+        try { activeRole = sessionStorage.getItem("pacificEducationActiveRole") || ""; } catch (ignore) {}
+        var canEdit = activeRole === "head-of-school";
         var plan = rebuild();
         var calendar = [];
         for (var day = cfg.startDay; day <= cfg.endDay; day++) {
@@ -89,11 +92,8 @@
         target.innerHTML =
             '<div class="pacific-education-revision-exam-ui">' +
             '<h2>Revision & Examination Redistribution</h2>' +
-            '<p>Enter teacher scheduling days. Remaining achievements recalculate around them.</p>' +
-            '<label>Revision day <input id="pacificEducationRevisionDay" type="number" min="1" max="365"></label>' +
-            '<button type="button" id="pacificEducationAddRevisionDay">Add Revision Day</button>' +
-            '<label>Examination day <input id="pacificEducationExamDay" type="number" min="1" max="365"></label>' +
-            '<button type="button" id="pacificEducationAddExamDay">Add Examination Day</button>' +
+            '<p>' + (canEdit ? 'Head of School manages school-based revision, trial and internal examination days. Remaining achievements recalculate around them.' : 'School revision and internal examination dates are managed by the Head of School. This view is read-only for other roles.') + '</p>' +
+            (canEdit ? '<label>Revision day <input id="pacificEducationRevisionDay" type="number" min="1" max="365"></label>' + '<button type="button" id="pacificEducationAddRevisionDay">Add Revision Day</button>' + '<label>Examination day <input id="pacificEducationExamDay" type="number" min="1" max="365"></label>' + '<button type="button" id="pacificEducationAddExamDay">Add Examination Day</button>' : '') +
             '<div id="pacificEducationRevisionExamMessage" role="status"></div>' +
             '<h3>Scheduled Days</h3>' +
             '<ul>' +
@@ -114,7 +114,8 @@
 
         var message = target.querySelector("#pacificEducationRevisionExamMessage");
 
-        target.querySelector("#pacificEducationAddRevisionDay").addEventListener("click", function() {
+        var revisionButton = target.querySelector("#pacificEducationAddRevisionDay");
+        if (revisionButton) revisionButton.addEventListener("click", function() {
             var value = Number(target.querySelector("#pacificEducationRevisionDay").value);
             var result = addRevision(value);
             if (message) message.textContent = result.success ?
@@ -126,7 +127,8 @@
             }
         });
 
-        target.querySelector("#pacificEducationAddExamDay").addEventListener("click", function() {
+        var examButton = target.querySelector("#pacificEducationAddExamDay");
+        if (examButton) examButton.addEventListener("click", function() {
             var value = Number(target.querySelector("#pacificEducationExamDay").value);
             var result = addExam(value);
             if (message) message.textContent = result.success ?
