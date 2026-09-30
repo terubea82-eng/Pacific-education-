@@ -285,11 +285,14 @@
       var toolMap = {
         student: [
           ["studentStartLearning","Start Learning"],
+          ["levelSelection","Class / Level"],
+          ["subjectSelection","Subject"],
+          ["termSelection","Term"],
           ["dailyLesson","Daily Activities — Days 1–365"],
-          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"],
           ["assessments","Assessments"],
           ["pacificEducationStudentProgressDashboard","My Progress"],
-          ["pacificEducationHomeSubmission","Home Continuity"]
+          ["pacificEducationHomeSubmission","Home Continuity"],
+          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"]
         ],
         teacher: [
           ["dailyLesson","Daily Activities — Days 1–365"],
