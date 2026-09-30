@@ -223,7 +223,7 @@
         "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
         "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection","learningPlatform","levelSelection","subjectSelection",
         "termSelection","capabilitySelection","pacificEducationWebsitePilotChecklist","systemStatus",
-        "pacificEducationTeacherClassDashboard","pacificEducationCoverageDashboard","pacificEducationTeacherEvidence",
+        "pacificEducationTeacherClassDashboard","pacificEducationTeacherClassRoster","pacificEducationCoverageDashboard","pacificEducationTeacherEvidence",
         "specialEducationReviewEvidence","pacificEducationExternalReviewerPortal","pacificEducationExternalSpecialistReviewEvidenceRegistry",
         "pacificEducationExternalSpecialistReviewEvidenceLog","pacificEducationCurriculumMasterControlStatus",
         "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability",
@@ -308,6 +308,8 @@
       try { window.sessionStorage.setItem("pacificEducationActiveRole", role.id); } catch (e) {}
       setRoleVisibility(role.id);
       if (window.PacificEducationExamCalendar && typeof window.PacificEducationExamCalendar.render === "function") window.PacificEducationExamCalendar.render();
+      var examCalendar = document.getElementById("pacificEducationExamCalendarSection");
+      if (examCalendar) examCalendar.hidden = ["student","teacher","special-education","head-of-school","parent","professional","ngo","education","community"].indexOf(role.id) === -1;
       if (role.id === "head-of-school" && window.PacificEducationRevisionExamRedistributionUI && typeof window.PacificEducationRevisionExamRedistributionUI.render === "function") window.PacificEducationRevisionExamRedistributionUI.render("pacificEducationExamCalendarSection");
       var schoolEditor = document.getElementById("pacificEducationSchoolIdentity");
       if (schoolEditor) schoolEditor.hidden = role.id !== "head-of-school";
@@ -318,6 +320,8 @@
       if (role.id === "student" && !document.getElementById("studentAssignedClassContext")) {
         var sc = document.createElement("section"); sc.id = "studentAssignedClassContext"; sc.hidden = true; sc.innerHTML = "<h2>My Assigned Class / Year / Teacher</h2><p>Class, Year, Subject, Term and teaching day are assigned by the teacher. Students cannot edit these settings.</p>"; document.getElementById("app").appendChild(sc);
       }
+      var assignedContext = document.getElementById("studentAssignedClassContext");
+      if (assignedContext) assignedContext.hidden = role.id !== "student";
       var toolMap = {
         student: [
           ["studentStartLearning","1. Start Learning"],
