@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.4.0";
+  var VERSION = "1.4.1";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -132,10 +132,17 @@
     }
   }
 
+  function resetTemporaryAnswerState() {
+    recordedAudioBlob = null;
+    var input = document.getElementById("peActivityAudio");
+    if (input) { try { input.value = ""; } catch (e) {} }
+}
+
   function complete(type, response) {
     var ctx = active.context;
     readAudio(function(audio) {
       save(type, response, audio, ctx);
+      resetTemporaryAnswerState();
       var status = ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review";
       var panel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
       var completion = '<div class="activity"><h3>' + escape(LABELS[type]) + ' complete</h3><p>Your answer and the curriculum question have been recorded.</p>' +
@@ -148,6 +155,7 @@
         panel.setAttribute("aria-live", "polite");
         var continueButton = document.getElementById("peContinueLearning");
         if (continueButton) continueButton.addEventListener("click", function() {
+          resetTemporaryAnswerState();
           if (typeof window.startDailyLesson === "function") window.startDailyLesson();
         });
         panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
