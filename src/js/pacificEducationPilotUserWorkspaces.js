@@ -65,6 +65,117 @@
       });
     }
 
+    function ensureStudentProgressSection() {
+      var progress = document.getElementById("pacificEducationStudentProgressDashboard");
+      if (!progress) return;
+      var host = document.getElementById("studentProgressDashboard");
+      if (!host) {
+        host = document.createElement("section");
+        host.id = "studentProgressDashboard";
+        host.setAttribute("aria-label", "Student Progress Dashboard");
+        host.innerHTML = "<h2>Student Progress Dashboard</h2><p>Student learning progress for the current pilot session.</p>";
+        var daily = document.getElementById("dailyLesson");
+        if (daily && daily.parentNode) daily.parentNode.insertBefore(host, daily);
+        else {
+          var app = document.getElementById("app");
+          if (app) app.appendChild(host);
+        }
+      }
+      if (progress.parentNode !== host) host.appendChild(progress);
+    }
+
+    function setRoleVisibility(roleId) {
+      ensureStudentProgressSection();
+
+      var roleVisibility = {
+        student: [
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
+          "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments",
+          "pacificGuardianCommentSection"
+        ],
+        teacher: [
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
+          "teacherCalendarSection","teacherDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
+          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
+        ],
+        "special-education": [
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
+          "specialEducationDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
+          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
+        ],
+        parent: [
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
+          "parentDashboard","dailyLesson","assessments","pacificGuardianCommentSection"
+        ],
+        professional: [
+          "learningPlatform","professional",
+          "pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection"
+        ],
+        ngo: [
+          "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection"
+        ],
+        education: [
+          "learningPlatform","pacificEducationCurriculumMasterControlStatus",
+          "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability",
+          "pacificEducationCoverageDashboard"
+        ],
+        community: [
+          "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection"
+        ],
+        owner: [
+          "systemStatus","pacificEducationWebsitePilotChecklist","pacificEducationProductionReleaseChecklist",
+          "pacificEducationProductionReleaseEvidenceRegistry","pacificEducationProductionReleaseEvidenceGate",
+          "pacificEducationFinalProductionAuthorizationEvidenceRegistry","publicationStatus",
+          "pacificEducationOfflineSyncStatus"
+        ]
+      };
+
+      var allowed = roleVisibility[roleId] || [];
+      var managed = [
+        "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
+        "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
+        "pacificGuardianCommentSection","learningPlatform","levelSelection","subjectSelection",
+        "termSelection","capabilitySelection","pacificEducationWebsitePilotChecklist","systemStatus"
+      ];
+
+      managed.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) el.hidden = allowed.indexOf(id) === -1;
+      });
+
+      var progress = document.getElementById("pacificEducationStudentProgressDashboard");
+      if (progress) {
+        progress.hidden = allowed.indexOf("pacificEducationStudentProgressDashboard") === -1 &&
+          allowed.indexOf("studentProgressDashboard") === -1;
+      }
+
+      var nav = document.getElementById("userFirstNavigation");
+      if (nav) {
+        Array.prototype.forEach.call(nav.querySelectorAll("a[href^='#']"), function(link) {
+          var id = link.getAttribute("href").slice(1);
+          var roleDashboardMap = {
+            teacherDashboard:["teacher","special-education"],
+            parentDashboard:["parent"],
+            dailyLesson:["student","teacher","special-education","parent"],
+            assessments:["student","teacher","special-education","parent"],
+            learningPlatform:["student","teacher","special-education","parent","professional","ngo","education","community"],
+            buyPlans:["owner","community","ngo","education","professional"]
+          };
+          var rolesForLink = roleDashboardMap[id];
+          if (rolesForLink) link.hidden = rolesForLink.indexOf(roleId) === -1;
+        });
+      }
+
+      var learningNav = document.querySelector('#learningPlatform nav[aria-label="Learning tools"]');
+      if (learningNav) {
+        Array.prototype.forEach.call(learningNav.querySelectorAll("a[href^='#']"), function(link) {
+          var id = link.getAttribute("href").slice(1);
+          if (id === "teacherDashboard") link.hidden = roleId !== "teacher";
+          if (id === "parentDashboard") link.hidden = roleId !== "parent";
+        });
+      }
+    }
+
     function renderRole(roleId) {
       var role = roles.filter(function (r) { return r.id === roleId; })[0];
       var gate = document.getElementById("pilotWorkspaceGate");
@@ -94,6 +205,8 @@
           authorized: true
         });
       }
+      setRoleVisibility(role.id);
+
       var workspace = document.getElementById("pilotRoleWorkspace");
       var toolMap = {
         student: [
