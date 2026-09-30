@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.2.0";
+  var VERSION = "1.3.0";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -136,12 +136,22 @@
     readAudio(function(audio) {
       save(type, response, audio, ctx);
       var status = ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review";
-      if (typeof window.showLesson === "function") {
-        window.showLesson(LABELS[type] + " — Complete",
-          '<div class="activity"><h3>Response submitted</h3><p>Your answer and the curriculum question have been recorded.</p>' +
-          '<p><strong>Review:</strong> ' + escape(status) + '</p>' +
-          '<p>Teacher review is required when no verified answer key is available.</p>' +
-          '<button type="button" onclick="startDailyLesson()">📚 Continue Learning</button></div>');
+      var panel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
+      var completion = '<div class="activity"><h3>' + escape(LABELS[type]) + ' complete</h3><p>Your answer and the curriculum question have been recorded.</p>' +
+        '<p><strong>Review:</strong> ' + escape(status) + '</p>' +
+        '<p>Teacher review is required when no verified answer key is available.</p>' +
+        '<button type="button" id="peContinueLearning">📚 Continue Learning</button></div>';
+      if (panel) {
+        panel.innerHTML = completion;
+        panel.hidden = false;
+        panel.setAttribute("aria-live", "polite");
+        var continueButton = document.getElementById("peContinueLearning");
+        if (continueButton) continueButton.addEventListener("click", function() {
+          if (typeof window.startDailyLesson === "function") window.startDailyLesson();
+        });
+        panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } else if (typeof window.showLesson === "function") {
+        window.showLesson(LABELS[type] + " — Complete", completion);
       }
     });
   }
