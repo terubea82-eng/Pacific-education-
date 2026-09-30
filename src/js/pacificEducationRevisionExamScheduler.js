@@ -34,6 +34,9 @@
     }
 
     function addRevisionDay(day, label, indicatorIds, studentId) {
+        var activeRole = "";
+        try { activeRole = window.sessionStorage.getItem("pacificEducationActiveRole") || ""; } catch (ignore) {}
+        if (activeRole !== "head-of-school") return { success: false, error: "Only the Head of School can set school revision dates." };
         var cal = calendar();
         var dayNumber = normaliseDay(day);
         var ids = Array.isArray(indicatorIds) ? indicatorIds.filter(Boolean) : [];
@@ -75,6 +78,9 @@
     }
 
     function addExamDay(day, label, indicatorIds, studentId) {
+        var activeRole = "";
+        try { activeRole = window.sessionStorage.getItem("pacificEducationActiveRole") || ""; } catch (ignore) {}
+        if (activeRole !== "head-of-school") return { success: false, error: "Only the Head of School can set school examination dates. National examination dates are Ministry controlled." };
         var dayNumber = normaliseDay(day);
         var ids = Array.isArray(indicatorIds) ? indicatorIds.filter(Boolean) : [];
         var bridge = window.PacificEducationCurriculumAssessmentBridge || null;
