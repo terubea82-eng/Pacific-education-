@@ -174,17 +174,17 @@
         student: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments",
-          "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
+          "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
         ],
         teacher: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "teacherCalendarSection","teacherDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
-          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
+          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
         ],
         "special-education": [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "specialEducationDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
-          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
+          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
         ],
         "head-of-school": [
           "pacificEducationSchoolIdentitySection","pacificEducationTeacherClassRoster","pacificEducationTeacherClassDashboard","pacificEducationExamCalendarSection",
@@ -195,18 +195,18 @@
         ],
         professional: [
           "learningPlatform","professional",
-          "pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection"
+          "pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
         ],
         ngo: [
-          "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection"
+          "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
         ],
         education: [
           "learningPlatform","pacificEducationCurriculumMasterControlStatus",
-          "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability",
+          "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability","pacificEducationExamCalendarSection",
           "pacificEducationCoverageDashboard"
         ],
         community: [
-          "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection"
+          "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
         ],
         owner: [
           "systemStatus","pacificEducationWebsitePilotChecklist","pacificEducationProductionReleaseChecklist",
