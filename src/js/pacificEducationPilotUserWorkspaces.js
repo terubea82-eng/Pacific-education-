@@ -404,13 +404,17 @@
         ]
       };
 
+      var workspaceTools = (window.PacificEducationMandatedWorkspace && typeof window.PacificEducationMandatedWorkspace.resolve === "function")
+        ? window.PacificEducationMandatedWorkspace.resolve(role.id, toolMap[role.id] || [])
+        : (toolMap[role.id] || []);
+
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
         '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +
         '<p><strong>Open a role-specific tool:</strong></p>' +
         '<nav aria-label="Role pilot tools" style="display:flex;flex-direction:column;gap:10px;max-width:520px;">' +
-        (toolMap[role.id] || []).map(function(tool) {
+        workspaceTools.map(function(tool) {
           return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="display:block;width:100%;text-align:left;padding:12px 14px;border:1px solid currentColor;border-radius:6px;' + (tool[0] === "studentStartLearning" ? "font-size:1.08em;font-weight:bold;" : "") + '">' + esc(tool[1]) + '</button>';
         }).join("") +
         "</nav>" +
