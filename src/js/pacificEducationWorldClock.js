@@ -6,7 +6,7 @@
 (function(window, document) {
   'use strict';
 
-  var VERSION = '1.0.0';
+  var VERSION = '1.1.0';
   var LOCATIONS = [
     ['Fiji', 'Pacific/Fiji'],
     ['New Zealand', 'Pacific/Auckland'],
@@ -48,18 +48,9 @@
   }
 
   function render() {
-    var targets = [
-      ['teacherDashboard', 'Teacher Dashboard'],
-      ['parentDashboard', 'Parent Dashboard'],
-      ['studentDashboard', 'Student Dashboard'],
-      ['professionalDashboard', 'Professional Dashboard'],
-      ['pacificEducationTeacherClassDashboard', 'Teacher Class Dashboard'],
-      ['pacificEducationStudentProgressDashboard', 'Student Progress Dashboard']
-    ];
-    targets.forEach(function(item) {
-      var host = document.getElementById(item[0]);
-      if (!host) return;
-      ensurePanel(host, item[1]);
+    var host = document.getElementById('pacificEducationAppWorldClock');
+    if (!host) return;
+    ensurePanel(host, 'Pacific Education App');
       var grid = host.querySelector('.pacificEducationWorldClockGrid');
       if (!grid) return;
       grid.innerHTML = '';
