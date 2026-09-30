@@ -607,4 +607,5 @@ function attachTextAudioControls(targetId, text) {
 
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialise);
     else initialise();
+window.setTimeout(function(){try{refresh();}catch(e){}},250);
 })(window);
