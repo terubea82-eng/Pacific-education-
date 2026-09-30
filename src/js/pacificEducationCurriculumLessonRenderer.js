@@ -120,6 +120,7 @@
         var activity = window.PacificEducationActivity;
         var container = document.getElementById("dailyLesson");
         if (!container) return false;
+
         var old = document.getElementById("pacificInteractiveActivity");
         if (old) old.remove();
 
@@ -410,7 +411,8 @@ function attachTextAudioControls(targetId, text) {
         attachTextAudioControls("dailyLessonPractice", practiceText.join(" "));
         var container = document.getElementById("dailyLesson");
         if (container) container.setAttribute("data-curriculum-linked", "true");
-        renderDailyCurriculumTarget(lesson, plan);\n        attachActivity(lesson.dayNumber, lesson);
+        renderDailyCurriculumTarget(lesson, plan);
+        attachActivity(lesson.dayNumber, lesson);
         return true;
     }
 
