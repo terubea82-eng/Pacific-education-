@@ -48,6 +48,23 @@ function historicalProgress(){
  });
  return Object.keys(totals).map(function(k){return totals[k];});
 }
+function historicalCoverageAdvice(){
+ var rows=state.records||[], covered={}, subjects={};
+ rows.forEach(function(r){
+  var subject=clean(r.subject||"");if(!subject)return;
+  subjects[subject]=true;
+  var key=subject+"|"+clean(r.year||r.class||"");
+  covered[key]=(covered[key]||0)+1;
+ });
+ return {records:rows.length,subjects:Object.keys(subjects),coverage:covered};
+}
+function renderHistoricalCoverage(){
+ var role=sessionStorage.getItem("pacificEducationActiveRole")||"",host=document.getElementById("pacificEducationHistoricalCoverage");if(!host)return;
+ var allowed=["teacher","head-of-school","institution-admin","special-education","professional-reviewer","education-government","owner"];
+ if(allowed.indexOf(role)<0){host.innerHTML="";return;}
+ var a=historicalCoverageAdvice();
+ host.innerHTML="<h3>Historical Curriculum Coverage Reference</h3><p>Previous records can inform planning, but they are not proof that an achievement indicator was taught or mastered. Teachers/reviewers must verify evidence before marking current coverage.</p>"+(a.subjects.length?"<p><strong>Subjects found in historical records:</strong> "+a.subjects.map(esc).join(", ")+"</p>":"<p>No mapped historical subjects available.</p>")+"<p><strong>Historical records:</strong> "+a.records+"</p>";
+}
 function renderHistoricalProgress(){
  var role=sessionStorage.getItem("pacificEducationActiveRole")||"",host=document.getElementById("pacificEducationHistoricalProgress");if(!host)return;
  var allowed=["student","teacher","parent","head-of-school","institution-admin","special-education","professional-reviewer","ngo","education-government","community-partner","owner"];
@@ -80,6 +97,7 @@ function render(){
  renderSummary();
  renderDashboardHistory();
  renderHistoricalProgress();
+ renderHistoricalCoverage();
  var pending={records:[],headers:[],mapping:{},sourceId:""};
  document.getElementById("paceduPreviousFile").onchange=function(ev){
   var file=ev.target.files&&ev.target.files[0];if(!file)return;
@@ -103,7 +121,7 @@ function render(){
  document.getElementById("paceduApproveImport").onclick=function(){
   var mapped=pending.records.map(function(r){var x={};Object.keys(pending.mapping).forEach(function(k){if(pending.mapping[k])x[k]=r[pending.mapping[k]]||"";});return x;});
   var result=importRecords(mapped,pending.sourceId,"authorised-mapped-import");
-  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained."; renderDashboardHistory(); renderHistoricalProgress();
+  document.getElementById("paceduImportStatus").textContent="Approved import saved: "+result+" records. Source metadata retained."; renderDashboardHistory(); renderHistoricalProgress(); renderHistoricalCoverage();
  };
  document.getElementById("paceduRegisterSource").onclick=function(){
   var verified=document.getElementById("paceduSourceVerified").checked;
