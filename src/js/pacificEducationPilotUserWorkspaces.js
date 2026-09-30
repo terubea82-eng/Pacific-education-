@@ -56,6 +56,24 @@
         ? window.PacificEducationSchoolIdentity.getProfile() : null;
       if (!p || (!p.schoolName && !p.registrationNumber)) return "School profile: not yet entered.";
       return "School: " + esc(p.schoolName || "Not entered") + " • " + esc(p.country || "Not entered") + " • Registration: " + esc(p.registrationNumber || "Not entered");
+    }
+
+    function pilotContextSummary() {
+      var level = "", subject = "", term = "";
+      try {
+        level = window.localStorage.getItem("pacificEducationLevel") || "";
+        subject = window.localStorage.getItem("pacificEducationSubject") || "";
+        term = window.localStorage.getItem("pacificEducationTerm") || "";
+      } catch (e) {}
+      return schoolSummary() +
+        " • Class/Level: " + esc(level || "Not selected") +
+        " • Subject: " + esc(subject || "Not selected") +
+        " • Term: " + esc(term || "Not selected");
+    }
+
+    function refreshPilotContext() {
+      var context = document.getElementById("pilotSchoolContext");
+      if (context) context.innerHTML = "<strong>Shared pilot context:</strong> " + pilotContextSummary();
     }\n    document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);\n\n    function setPilotActivityGate(enabled) {
       var controls = document.querySelectorAll("main button, main select, main input, main textarea");
       Array.prototype.forEach.call(controls, function (el) {
@@ -342,7 +360,7 @@
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
-        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared school profile:</strong> ' + schoolSummary() + '</p>' +
+        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +
         '<p><strong>Open a role-specific tool:</strong></p>' +
         '<nav aria-label="Role pilot tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
         (toolMap[role.id] || []).map(function(tool) {
@@ -361,10 +379,11 @@
       });
     }
 
-    document.addEventListener("pacificEducationSchoolChanged", function () {
-      ensureSchoolIdentity();
-      var context = document.getElementById("pilotSchoolContext");
-      if (context) context.innerHTML = "<strong>Shared school profile:</strong> " + schoolSummary();
+    ["pacificEducationSchoolChanged","pacificEducationSelectionChanged"].forEach(function (eventName) {
+      document.addEventListener(eventName, function () {
+        ensureSchoolIdentity();
+        refreshPilotContext();
+      });
     });
 
     select.onchange = function () {
