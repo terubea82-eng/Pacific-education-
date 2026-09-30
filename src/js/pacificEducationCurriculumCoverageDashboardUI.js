@@ -142,6 +142,10 @@
         render("pacificEducationCoverageDashboard");
     });
 
+    document.addEventListener("pacificEducationSelectionChanged", function() {
+        render("pacificEducationCoverageDashboard");
+    });
+
     window.addEventListener("storage", function(event) {
         if (!event || !event.key ||
             event.key === "pacificEducationLevel" ||
