@@ -9,8 +9,8 @@
  */
 (function(window) {
     "use strict";
-    var VERSION = "1.4.0";
-    var SUBJECTS = [
+    var VERSION = "1.5.0";
+    var DEFAULT_SUBJECTS = [
     {
         "id": "English",
         "name": "English"
@@ -128,9 +128,16 @@
         "name": "Other"
     }
 ];
+    function getConfiguredSubjects() {
+        if (window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.getSubjects === "function") {
+            return window.PacificEducationCountryConfig.getSubjects().map(function(name){ return { id:name, name:name }; });
+        }
+        return DEFAULT_SUBJECTS.map(function(item){ return Object.assign({}, item); });
+    }
+    function getSubjects() { return getConfiguredSubjects(); }
     function getSubject() {
         var value = window.localStorage.getItem("pacificEducationSubject");
-        return SUBJECTS.some(function(item){return item.id === value;}) ? value : "English";
+        return getConfiguredSubjects().some(function(item){return item.id === value;}) ? value : "English";
     }
     function getLevel() {
         if (window.PacificEducationLevelSelector && typeof window.PacificEducationLevelSelector.getLevel === "function") return window.PacificEducationLevelSelector.getLevel();
@@ -142,7 +149,7 @@
         return false;
     }
     function setSubject(subjectId) {
-        if (!SUBJECTS.some(function(item){return item.id === subjectId;})) return false;
+        if (!getConfiguredSubjects().some(function(item){return item.id === subjectId;})) return false;
         window.localStorage.setItem("pacificEducationSubject", subjectId);
         document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
             detail: { subjectId: subjectId, prototype: true }
@@ -177,14 +184,15 @@
         host.innerHTML = "";
         var label = document.createElement("label"); label.setAttribute("for","pacificEducationSubject"); label.textContent = "Choose curriculum subject";
         var select = document.createElement("select"); select.id="pacificEducationSubject"; select.name="pacificEducationSubject"; select.setAttribute("aria-label","Curriculum subject");
-        SUBJECTS.forEach(function(subject){var option=document.createElement("option"); option.value=subject.id; option.textContent=subject.name; select.appendChild(option);});
+        getConfiguredSubjects().forEach(function(subject){var option=document.createElement("option"); option.value=subject.id; option.textContent=subject.name; select.appendChild(option);});
         select.value=getSubject();
         var status=document.createElement("p"); status.id="pacificEducationSubjectStatus"; status.setAttribute("aria-live","polite"); status.textContent="Selected: "+select.value+" • "+getLevel()+" (pilot — curriculum verification required)";
         select.addEventListener("change",function(){setSubject(select.value);});
         host.appendChild(label); host.appendChild(document.createElement("br")); host.appendChild(select); host.appendChild(status); return true;
     }
     function getSelection(){return {level:getLevel(),subjectId:getSubject(),prototype:true,curriculumVerification:"required-before-production",curriculumVerificationRequired:true,form1To7ScienceHealthCatalog:!!window.PacificEducationForm1To7ScienceHealth};}
+    document.addEventListener("pacificEducationCountryConfigChanged", function() { createUI(); });
     function initialise(){createUI(); return getSelection();}
-    window.PacificEducationSubjectSelector=Object.freeze({version:VERSION,subjects:SUBJECTS.map(function(item){return Object.assign({},item);}),getSubject:getSubject,setSubject:setSubject,getSelection:getSelection,createUI:createUI,initialise:initialise});
+    window.PacificEducationSubjectSelector=Object.freeze({version:VERSION,subjects:getConfiguredSubjects(),getSubject:getSubject,setSubject:setSubject,getSelection:getSelection,createUI:createUI,initialise:initialise});
     if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",initialise); else initialise();
 })(window);
