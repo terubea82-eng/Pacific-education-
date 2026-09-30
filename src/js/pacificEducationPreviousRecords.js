@@ -30,6 +30,13 @@ function importRecords(records,sourceId,mode){
  });
  save();return imported;
 }
+function roleCanView(role){return ["student","teacher","parent","special-education","professional-reviewer","ngo","education-government","community-partner","head-of-school","institution-admin","owner"].indexOf(role)>=0;}
+function renderDashboardHistory(){
+ var role=sessionStorage.getItem("pacificEducationActiveRole")||"",host=document.getElementById("pacificEducationPreviousRecordsDashboard");if(!host)return;
+ if(!roleCanView(role)){host.innerHTML="";return;}
+ var rows=state.records.slice(0,20);
+ host.innerHTML="<h3>Previous Records — "+esc(role)+" view</h3><p>Historical source-linked records are shown according to the active role.</p>"+(rows.length?"<ul>"+rows.map(function(r){return "<li>"+esc(r.studentName||r.recordId||"Record")+" — "+esc(r.year||"")+" "+esc(r.subject||"")+" "+esc(r.result||"")+" <small>(historical)</small></li>";}).join("")+"</ul>":"<p>No imported previous records available.</p>");
+}
 function renderSummary(){
  var s=document.getElementById("pacificEducationPreviousRecordsSummary");if(!s)return;
  s.innerHTML="<p><strong>Imported previous records:</strong> "+state.records.length+" • <strong>Registered sources:</strong> "+state.sources.length+"</p>"+
@@ -53,6 +60,7 @@ function render(){
   app.appendChild(s);
  }
  renderSummary();
+ renderDashboardHistory();
  var pending={records:[],headers:[],mapping:{},sourceId:""};
  document.getElementById("paceduPreviousFile").onchange=function(ev){
   var file=ev.target.files&&ev.target.files[0];if(!file)return;
