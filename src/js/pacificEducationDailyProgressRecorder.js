@@ -219,7 +219,7 @@
         if (window.PacificEducationWorldClock || document.getElementById('pacificEducationWorldClockScript')) return;
         var script = document.createElement('script');
         script.id = 'pacificEducationWorldClockScript';
-        script.src = 'js/pacificEducationWorldClock.js';
+        script.src = 'js/pacificEducationWorldClock.js?v=1101';
         script.async = true;
         document.head.appendChild(script);
     }
