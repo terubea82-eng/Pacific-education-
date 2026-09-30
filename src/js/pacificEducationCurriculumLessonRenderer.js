@@ -95,6 +95,8 @@
                     ? pilotMultipleChoice.options[pilotMultipleChoice.answerIndex] : null;
             }
             context.activity.contentBasis = (lesson && lesson.activity && lesson.activity.contentBasis) || "concept-based-pilot-prototype";
+            context.activity.renderTargetId = panelId;
+            context.renderTargetId = panelId;
             context.questionText = question;
             context.audioText = audioText;
             context.responseMode = "text-or-audio";
