@@ -162,7 +162,7 @@
     var body = '<div class="activity">' + curriculumInfo + '<p>' + escape(prompt) + '</p>' + audioButton + audioFile;
 
     if (type === "true_false") {
-      body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button><button type="button" id="peActivitySubmitChoice" disabled>Submit Selected Answer</button>';
+      body += '<p>Choose True or False.</p><button type="button" id="peActivityTrue">True</button><button type="button" id="peActivityFalse">False</button><button type="button" id="peActivitySubmitTrueFalse" disabled>Submit Selected Answer</button>';
     } else if (type === "multiple_choice") {
       var choices = [];
       var activitySource = lesson && lesson.activity ? lesson.activity : {};
@@ -275,7 +275,7 @@
 
     var yes = document.getElementById("peActivityTrue");
     var no = document.getElementById("peActivityFalse");
-    var tfSubmit = document.getElementById("peActivitySubmitChoice");
+    var tfSubmit = document.getElementById("peActivitySubmitTrueFalse");
     var tfSelected = "";
     if (yes) yes.addEventListener("click", function() {
       tfSelected = "True";
