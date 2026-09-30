@@ -148,6 +148,22 @@
       }
     }
 
+    function organizeDailyActivitiesForRole(roleId) {
+      var daily = document.getElementById("dailyLesson");
+      if (!daily) return;
+      var studentPlatform = document.getElementById("learningPlatform");
+      var teacherDashboard = document.getElementById("teacherDashboard");
+      var specialDashboard = document.getElementById("specialEducationDashboard");
+      var parentDashboard = document.getElementById("parentDashboard");
+      var host = roleId === "student" ? studentPlatform :
+        roleId === "teacher" ? teacherDashboard :
+        roleId === "special-education" ? specialDashboard :
+        roleId === "parent" ? parentDashboard : null;
+      if (host && daily.parentNode !== host) {
+        host.appendChild(daily);
+      }
+    }
+
     function setRoleVisibility(roleId) {
       ensureStudentProgressSection();
       refreshWeekendHolidaySupplementaryStatus();
@@ -285,6 +301,7 @@
         });
       }
       setRoleVisibility(role.id);
+      organizeDailyActivitiesForRole(role.id);
       setPilotActivityGate(true);
 
       var workspace = document.getElementById("pilotRoleWorkspace");
