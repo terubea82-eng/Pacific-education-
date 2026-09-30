@@ -604,6 +604,28 @@ function attachTextAudioControls(targetId, text) {
         }
     }
 
+    document.addEventListener("pacificEducationSelectionChanged", function() {
+        refresh();
+        if (window.PacificEducationExpandedSubjectActivityUI &&
+            typeof window.PacificEducationExpandedSubjectActivityUI.render === "function") {
+            window.PacificEducationExpandedSubjectActivityUI.render();
+        }
+    });
+
+    document.addEventListener("pacificEducationCoverageRefresh", function() {
+        refresh();
+    });
+
+    window.addEventListener("storage", function(event) {
+        if (event && /^(pacificEducationLevel|pacificEducationSubject|pacificEducationTerm|pacificEducationCurrentDay)$/.test(event.key || "")) {
+            refresh();
+            if (window.PacificEducationExpandedSubjectActivityUI &&
+                typeof window.PacificEducationExpandedSubjectActivityUI.render === "function") {
+                window.PacificEducationExpandedSubjectActivityUI.render();
+            }
+        }
+    });
+
     function initialise() { connect(); bindNavigation(); refresh(); bindAssessmentButtons(); return status(); }
 
     window.PacificEducationCurriculumLessonRenderer = Object.freeze({
