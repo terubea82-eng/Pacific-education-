@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.7.1";
+    var VERSION = "1.7.2";
     var originalDisplay = null;
     var connected = false;
 
@@ -351,7 +351,12 @@ function attachTextAudioControls(targetId, text) {
         sequence.textContent = "Concept teaching sequence: Day " + conceptDay + " of " + daysPerConcept + ". The concept may continue across teaching days; the learner receives a different activity/task each day.";
         target.appendChild(sequence);
 
-        if (plan && plan.concept && plan.concept.nextConceptAvailable) {
+        /*
+         * Progression display must never infer that a concept is final merely
+         * because a next-concept link is unavailable. During the pilot, the
+         * curriculum mapping may be incomplete or unverified.
+         */
+        if (plan && plan.concept && plan.concept.nextConceptAvailable === true) {
             var next = document.createElement("button");
             next.type = "button";
             next.textContent = "Next Concept →";
@@ -363,9 +368,13 @@ function attachTextAudioControls(targetId, text) {
             });
             target.appendChild(next);
         } else {
-            var end = document.createElement("p");
-            end.textContent = "This is the final mapped concept currently available for this selection.";
-            target.appendChild(end);
+            var progression = document.createElement("p");
+            if (plan && plan.concept && plan.concept.isFinalConcept === true) {
+                progression.textContent = "Final mapped concept for this verified selection.";
+            } else {
+                progression.textContent = "Concept progression continues according to the available curriculum schedule. The next concept is not yet confirmed in this pilot mapping.";
+            }
+            target.appendChild(progression);
         }
 
         var note = document.createElement("p");
