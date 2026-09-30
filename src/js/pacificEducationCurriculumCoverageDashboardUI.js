@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.1";
+    var VERSION = "1.1.0";
 
     function engine() {
         return window.PacificEducationCurriculumCoverageEngine || null;
@@ -108,13 +108,25 @@
         [levelEl, subjectEl, termEl].forEach(function(el) {
             if (el) el.addEventListener("change", function() {
                 if (el.id === "pacificEducationCoverageLevel") {
-                    try { window.localStorage.setItem("pacificEducationLevel", el.value); } catch (e) {}
+                    if (window.PacificEducationLevelSelector && typeof window.PacificEducationLevelSelector.setLevel === "function") {
+                        window.PacificEducationLevelSelector.setLevel(el.value);
+                    } else {
+                        try { window.localStorage.setItem("pacificEducationLevel", el.value); } catch (e) {}
+                    }
                 }
                 if (el.id === "pacificEducationCoverageSubject") {
-                    try { window.localStorage.setItem("pacificEducationSubject", el.value); } catch (e) {}
+                    if (window.PacificEducationSubjectSelector && typeof window.PacificEducationSubjectSelector.setSubject === "function") {
+                        window.PacificEducationSubjectSelector.setSubject(el.value);
+                    } else {
+                        try { window.localStorage.setItem("pacificEducationSubject", el.value); } catch (e) {}
+                    }
                 }
                 if (el.id === "pacificEducationCoverageTerm") {
-                    try { window.localStorage.setItem("pacificEducationTerm", el.value); } catch (e) {}
+                    if (window.PacificEducationTermSelector && typeof window.PacificEducationTermSelector.setTerm === "function") {
+                        window.PacificEducationTermSelector.setTerm(el.value);
+                    } else {
+                        try { window.localStorage.setItem("pacificEducationTerm", el.value); } catch (e) {}
+                    }
                 }
                 render(targetId);
             });
