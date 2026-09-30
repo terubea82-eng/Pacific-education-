@@ -187,7 +187,7 @@
           "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
         ],
         "head-of-school": [
-          "pacificEducationSchoolIdentitySection","teacherCalendarSection","pacificEducationTeacherClassRoster","pacificEducationTeacherClassDashboard",
+          "pacificEducationSchoolIdentitySection","pacificEducationTeacherClassRoster","pacificEducationTeacherClassDashboard","pacificEducationExamCalendarSection",
           "pacificEducationCoverageDashboard"
         ],
         parent: [
@@ -221,7 +221,7 @@
         "pacificEducationAppTools","pacificEducationSchoolIdentitySection",
         "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
         "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
-        "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","learningPlatform","levelSelection","subjectSelection",
+        "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection","learningPlatform","levelSelection","subjectSelection",
         "termSelection","capabilitySelection","pacificEducationWebsitePilotChecklist","systemStatus",
         "pacificEducationTeacherClassDashboard","pacificEducationCoverageDashboard","pacificEducationTeacherEvidence",
         "specialEducationReviewEvidence","pacificEducationExternalReviewerPortal","pacificEducationExternalSpecialistReviewEvidenceRegistry",
@@ -307,6 +307,8 @@
       }
       try { window.sessionStorage.setItem("pacificEducationActiveRole", role.id); } catch (e) {}
       setRoleVisibility(role.id);
+      if (window.PacificEducationExamCalendar && typeof window.PacificEducationExamCalendar.render === "function") window.PacificEducationExamCalendar.render();
+      if (role.id === "head-of-school" && window.PacificEducationRevisionExamRedistributionUI && typeof window.PacificEducationRevisionExamRedistributionUI.render === "function") window.PacificEducationRevisionExamRedistributionUI.render("pacificEducationExamCalendarSection");
       var schoolEditor = document.getElementById("pacificEducationSchoolIdentity");
       if (schoolEditor) schoolEditor.hidden = role.id !== "head-of-school";
       organizeDailyActivitiesForRole(role.id);
@@ -375,7 +377,8 @@
         "head-of-school": [
           ["pacificEducationSchoolIdentitySection","1. School Name & Registration"],
           ["pacificEducationTeacherClassRoster","2. All Class Lists — View Only"],
-          ["pacificEducationCoverageDashboard","3. School Curriculum Coverage"]
+          ["pacificEducationExamCalendarSection","3. Revision & Internal Examination Dates"],
+          ["pacificEducationCoverageDashboard","4. School Curriculum Coverage"]
         ],
         owner: [
           ["systemStatus","1. System Status"],
