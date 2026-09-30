@@ -5,10 +5,10 @@
   "use strict";
 
   var roles = [
-    { id:"student", title:"Student", access:"Learning, daily lessons, practice and assessments", actions:["Open daily lesson","Practice","View my progress"] },
-    { id:"teacher", title:"Teacher", access:"Class, lesson, assessment, progress and authorization tools", actions:["Class dashboard","Lesson/teacher guide","Assessment review","Authorize reviewed marks"] },
+    { id:"student", title:"Student", access:"Learning, Daily Activities Days 1–365, assessments, plus separate Weekend & Holiday Supplementary Activities", actions:["Open daily activity","Practice","View my progress","Open weekend/holiday assignment"] },
+    { id:"teacher", title:"Teacher", access:"Full Daily Activities Days 1–365, Weekend & Holiday Assignments, class, assessment and learner support tools", actions:["Open daily activity","Open weekend/holiday assignment","Class dashboard","Support student/parent"] },
     { id:"special-education", title:"Special Education / Inclusion", access:"Daily learner performance tracking, individualized support and mandatory review comments", actions:["Daily performance review","Individual support comment","Review home assessments"] },
-    { id:"parent", title:"Parent / Caregiver", access:"Linked-child learning overview and feedback", actions:["Learning progress","Attendance/activity view","Send feedback"] },
+    { id:"parent", title:"Parent / Caregiver", access:"Linked-child overview plus automatic Weekend & Holiday Supplementary Activities only", actions:["Open weekend/holiday assignment","Seek teacher help","Send feedback"] },
     { id:"professional", title:"Professional Reviewer", access:"Controlled review evidence and findings", actions:["Review evidence","Record finding","View review status"] },
     { id:"ngo", title:"NGO / Organization", access:"Program-level pilot participation and feedback", actions:["Program overview","Pilot feedback","Request support"] },
     { id:"education", title:"Education / Government", access:"Pilot-level education evidence and reporting view", actions:["Pilot overview","Evidence review","Feedback"] },
@@ -84,19 +84,57 @@
       if (progress.parentNode !== host) host.appendChild(progress);
     }
 
+    function ensureWeekendHolidaySupplementarySection() {
+      var section = document.getElementById("pacificEducationWeekendHolidaySupplementaryActivities");
+      if (section) return section;
+      section = document.createElement("section");
+      section.id = "pacificEducationWeekendHolidaySupplementaryActivities";
+      section.setAttribute("aria-label", "Weekend and Holiday Supplementary Activities");
+      section.innerHTML =
+        "<h2>Weekend & Holiday Supplementary Activities</h2>" +
+        "<p><strong>Separate from Daily Activities Days 1–365.</strong> This area is for supplementary weekend and school-holiday assignments only.</p>" +
+        "<div id=\"pacificEducationWeekendHolidaySupplementaryStatus\" role=\"status\" aria-live=\"polite\"></div>";
+      var app = document.getElementById("app");
+      if (app) app.appendChild(section);
+      return section;
+    }
+
+    function refreshWeekendHolidaySupplementaryStatus() {
+      var section = ensureWeekendHolidaySupplementarySection();
+      var status = document.getElementById("pacificEducationWeekendHolidaySupplementaryStatus");
+      if (!status) return;
+      var dayNumber = Number.parseInt(window.localStorage.getItem("currentDayNumber") || "1", 10);
+      var calendar = window.PacificEducationTeacherCalendar || null;
+      var day = calendar && typeof calendar.getDayByNumber === "function"
+        ? calendar.getDayByNumber(dayNumber)
+        : null;
+      if (!day) {
+        status.innerHTML = "<strong>Calendar status:</strong> Waiting for an authoritative school calendar. No supplementary assignment is generated or mixed into Daily Activities.";
+        return;
+      }
+      if (day.type === "weekend" || day.type === "holiday") {
+        status.innerHTML = "<strong>Automatic access active:</strong> Day " + esc(dayNumber) +
+          " is marked " + esc(day.type) +
+          ". Student, Teacher and Parent/Caregiver may use the separate supplementary assignment area. Teacher support is available for help requests.";
+      } else {
+        status.innerHTML = "<strong>Not a weekend/holiday:</strong> Supplementary weekend/holiday activities remain separate and inactive. Daily Activities Days 1–365 remain the normal learning sequence.";
+      }
+    }
+
     function setRoleVisibility(roleId) {
       ensureStudentProgressSection();
+      refreshWeekendHolidaySupplementaryStatus();
 
       var roleVisibility = {
         student: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments",
-          "pacificGuardianCommentSection"
+          "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
         ],
         teacher: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
           "teacherCalendarSection","teacherDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
-          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection"
+          "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
         ],
         "special-education": [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
@@ -105,7 +143,7 @@
         ],
         parent: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
-          "parentDashboard","dailyLesson","assessments","pacificGuardianCommentSection"
+          "parentDashboard","assessments","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
         ],
         professional: [
           "learningPlatform","professional",
@@ -134,7 +172,7 @@
       var managed = [
         "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
         "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
-        "pacificGuardianCommentSection","learningPlatform","levelSelection","subjectSelection",
+        "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","learningPlatform","levelSelection","subjectSelection",
         "termSelection","capabilitySelection","pacificEducationWebsitePilotChecklist","systemStatus"
       ];
 
@@ -210,12 +248,15 @@
       var workspace = document.getElementById("pilotRoleWorkspace");
       var toolMap = {
         student: [
-          ["dailyLesson","Daily Lesson"],
+          ["dailyLesson","Daily Activities — Days 1–365"],
+          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"],
           ["assessments","Assessments"],
           ["pacificEducationStudentProgressDashboard","My Progress"],
           ["pacificEducationHomeSubmission","Home Continuity"]
         ],
         teacher: [
+          ["dailyLesson","Daily Activities — Days 1–365"],
+          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Assignments & Support"],
           ["teacherDashboard","Teacher Dashboard"],
           ["pacificEducationTeacherClassDashboard","Class Dashboard"],
           ["pacificEducationCoverageDashboard","Curriculum Coverage"],
@@ -228,6 +269,7 @@
           ["pacificEducationHomeSubmission","Home Evidence"]
         ],
         parent: [
+          ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Supplementary Activities"],
           ["parentDashboard","Parent Dashboard"],
           ["pacificGuardianCommentSection","Send Feedback"]
         ],
