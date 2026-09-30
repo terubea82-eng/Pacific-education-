@@ -153,6 +153,15 @@
         };
     }
 
+    function getActiveRole() {
+        try { return window.sessionStorage.getItem("pacificEducationActiveRole") || window.sessionStorage.getItem("pacificEducationPilotRole") || ""; } catch (e) { return ""; }
+    }
+
+    function canEditRoster() {
+        var role = getActiveRole();
+        return role === "teacher";
+    }
+
     function render(targetId) {
         var target = document.getElementById(targetId || "pacificEducationTeacherClassRoster");
         if (!target) return { success: false, error: "Class roster target unavailable" };
@@ -162,30 +171,18 @@
 
         target.innerHTML =
             '<div class="pacific-education-class-roster">' +
-            '<h2>Teacher Class Roster</h2>' +
+            '<h2>' + (canEditRoster() ? 'Teacher Class Roster' : 'All Class Lists — View Only') + '</h2>' +
             '<p>Each class/section has its own unique class reference and teacher assignment, even when several classes share the same level.</p>' +
-            '<label>Class reference ' +
-            '<input id="pacificEducationClassRef" type="text" autocomplete="off" placeholder="Class reference">' +
-            '</label> ' +
-            '<label>Teacher reference ' +
-            '<input id="pacificEducationRosterTeacherRef" type="text" autocomplete="off" placeholder="e.g. PILOT-TEACHER-001">' +
-            '</label> ' +
-            '<label>Section ' +
-            '<input id="pacificEducationRosterSection" type="text" autocomplete="off" placeholder="e.g. 01">' +
-            '</label> ' +
-            '<label>Level ' +
-            '<select id="pacificEducationRosterLevel">' +
-            '<option value="">Select level</option><option>Class 1</option><option>Class 2</option>' +
-            '<option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option>' +
-            '<option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option>' +
-            '<option>Class 11</option><option>Class 12</option><option>Class 13</option>' +
-            '</select></label> ' +
-            '<button type="button" id="pacificEducationCreateClass">Set Class</button>' +
-            '<hr>' +
-            '<label>Approved student reference ' +
-            '<input id="pacificEducationRosterStudentRef" type="text" autocomplete="off" placeholder="Student reference">' +
-            '</label> ' +
-            '<button type="button" id="pacificEducationAddStudent">Add</button>' +
+            (canEditRoster() ? (
+              '<label>Class reference <input id="pacificEducationClassRef" type="text" autocomplete="off" placeholder="Class reference"></label> ' +
+              '<label>Teacher reference <input id="pacificEducationRosterTeacherRef" type="text" autocomplete="off" placeholder="e.g. PILOT-TEACHER-001"></label> ' +
+              '<label>Section <input id="pacificEducationRosterSection" type="text" autocomplete="off" placeholder="e.g. 01"></label> ' +
+              '<label>Level <select id="pacificEducationRosterLevel">' +
+              '<option value="">Select level</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option><option>Class 13</option>' +
+              '</select></label> <button type="button" id="pacificEducationCreateClass">Set Class</button><hr>' +
+              '<label>Approved student reference <input id="pacificEducationRosterStudentRef" type="text" autocomplete="off" placeholder="Student reference"></label> ' +
+              '<button type="button" id="pacificEducationAddStudent">Add</button>'
+            ) : '<p><strong>Head of School access:</strong> All teacher-created class lists are visible here for school-wide oversight. Class lists are read-only for this role.</p>') +
             '<div id="pacificEducationRosterStudents"></div>' +
             '<p id="pacificEducationRosterStatus"></p><p id="pacificEducationRosterIdentity"></p>' +
             '<small>Prototype only. Do not enter child names, addresses, locations, health information, or other sensitive data.</small>' +
