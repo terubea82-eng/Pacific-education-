@@ -10,7 +10,10 @@ var DEFAULT_SUBJECTS=[
 ];
 var defaults={
  country:"Fiji",educationAuthority:"Ministry of Education",language:"English",currency:"FJD",
+ institutionType:"School",institutionName:"Pacific Education Pilot",institutionAuthority:"Institution controlled",
  levelSystem:"National system",termSystem:"National system",nationalExamName:"National examinations",
+ academicUnits:["Faculty","School","Department","Programme"],programmes:["General education"],courses:["Course"],
+ assessmentSystem:"Institution-defined",gradingSystem:"Institution-defined",creditSystem:"Institution-defined",
  levels:DEFAULT_LEVELS,terms:DEFAULT_TERMS,subjects:DEFAULT_SUBJECTS
 };
 var state=clone(defaults);
@@ -23,12 +26,15 @@ function cleanList(value,fallback){
 }
 function load(config){
  config=config||{};
- ["country","educationAuthority","language","currency","levelSystem","termSystem","nationalExamName"].forEach(function(k){
+ ["country","educationAuthority","language","currency","institutionType","institutionName","institutionAuthority","levelSystem","termSystem","nationalExamName","assessmentSystem","gradingSystem","creditSystem"].forEach(function(k){
    if(config[k]!==undefined&&clean(config[k])) state[k]=clean(config[k]);
  });
  if(config.levels!==undefined) state.levels=cleanList(config.levels,DEFAULT_LEVELS);
  if(config.terms!==undefined) state.terms=cleanList(config.terms,DEFAULT_TERMS);
  if(config.subjects!==undefined) state.subjects=cleanList(config.subjects,DEFAULT_SUBJECTS);
+ if(config.academicUnits!==undefined) state.academicUnits=cleanList(config.academicUnits,defaults.academicUnits);
+ if(config.programmes!==undefined) state.programmes=cleanList(config.programmes,defaults.programmes);
+ if(config.courses!==undefined) state.courses=cleanList(config.courses,defaults.courses);
  render();
  document.dispatchEvent(new CustomEvent("pacificEducationCountryConfigChanged",{detail:clone(state)}));
  return getState();
@@ -37,20 +43,23 @@ function getState(){return clone(state);}
 function getLevels(){return state.levels.slice();}
 function getTerms(){return state.terms.slice();}
 function getSubjects(){return state.subjects.slice();}
+function getAcademicUnits(){return state.academicUnits.slice();}
+function getProgrammes(){return state.programmes.slice();}
+function getCourses(){return state.courses.slice();}
 function reset(){state=clone(defaults);render();document.dispatchEvent(new CustomEvent("pacificEducationCountryConfigChanged",{detail:clone(state)}));return getState();}
 function ensureUI(){
  var app=document.getElementById("app");if(!app||document.getElementById("pacificEducationCountrySettings"))return;
  var s=document.createElement("section");s.id="pacificEducationCountrySettings";s.hidden=true;
- s.innerHTML="<h2>Country & Education System</h2><p>Pacific Education is adaptable by country. Each country keeps its own education authority, curriculum, levels, terms, examinations, language and local settings.</p><p><strong>International mapping:</strong> Optional UNESCO ISCED mapping can support cross-country comparison without replacing national terminology or authority.</p><div id="pacificEducationCountrySettingsSummary"></div>";
+ s.innerHTML="<h2>Institution & Education System</h2><p>Pacific Education can be configured for schools, colleges, universities, training providers and other education organisations. Each institution can define its own structure, programmes, courses, academic calendar, assessment, grading and credit rules.</p><p><strong>International mapping:</strong> Optional UNESCO ISCED mapping can support cross-country comparison without replacing national terminology, institutional autonomy or national authority.</p><div id="pacificEducationCountrySettingsSummary"></div>";
  app.appendChild(s);
 }
 function render(){
  ensureUI();var e=document.getElementById("pacificEducationCountrySettingsSummary");if(!e)return;
- e.innerHTML="<p><strong>Country:</strong> "+esc(state.country)+"</p><p><strong>Education authority:</strong> "+esc(state.educationAuthority)+"</p><p><strong>Language:</strong> "+esc(state.language)+"</p><p><strong>Currency:</strong> "+esc(state.currency)+"</p><p><strong>Level system:</strong> "+esc(state.levelSystem)+"</p><p><strong>Term system:</strong> "+esc(state.termSystem)+"</p><p><strong>National examination name:</strong> "+esc(state.nationalExamName)+"</p><p><strong>Configured levels:</strong> "+state.levels.length+" • <strong>Terms:</strong> "+state.terms.length+" • <strong>Subjects:</strong> "+state.subjects.length+"</p>";
+ e.innerHTML="<p><strong>Country:</strong> "+esc(state.country)+"</p><p><strong>Institution:</strong> "+esc(state.institutionName)+" • <strong>Type:</strong> "+esc(state.institutionType)+"</p><p><strong>Education authority:</strong> "+esc(state.educationAuthority)+"</p><p><strong>Language:</strong> "+esc(state.language)+"</p><p><strong>Currency:</strong> "+esc(state.currency)+"</p><p><strong>Level system:</strong> "+esc(state.levelSystem)+"</p><p><strong>Term system:</strong> "+esc(state.termSystem)+"</p><p><strong>National examination name:</strong> "+esc(state.nationalExamName)+"</p><p><strong>Academic units:</strong> "+state.academicUnits.length+" • <strong>Programmes:</strong> "+state.programmes.length+" • <strong>Courses:</strong> "+state.courses.length+"</p><p><strong>Assessment:</strong> "+esc(state.assessmentSystem)+" • <strong>Grading:</strong> "+esc(state.gradingSystem)+" • <strong>Credits:</strong> "+esc(state.creditSystem)+"</p><p><strong>Configured levels:</strong> "+state.levels.length+" • <strong>Terms:</strong> "+state.terms.length+" • <strong>Subjects:</strong> "+state.subjects.length+"</p>";
 }
 function esc(v){return String(v).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
 window.PacificEducationCountryConfig={
- load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,reset:reset,render:render,
+ load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,reset:reset,render:render,
  defaults:function(){return clone(defaults);}
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ensureUI);else ensureUI();
