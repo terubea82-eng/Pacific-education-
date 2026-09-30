@@ -145,7 +145,7 @@
         ],
         parent: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
-          "parentDashboard","assessments","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
+          "parentDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities"
         ],
         professional: [
           "learningPlatform","professional",
@@ -175,7 +175,14 @@
         "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
         "studentProgressDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
         "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","learningPlatform","levelSelection","subjectSelection",
-        "termSelection","capabilitySelection","pacificEducationWebsitePilotChecklist","systemStatus"
+        "termSelection","capabilitySelection","pacificEducationWebsitePilotChecklist","systemStatus",
+        "pacificEducationTeacherClassDashboard","pacificEducationCoverageDashboard","pacificEducationTeacherEvidence",
+        "specialEducationReviewEvidence","pacificEducationExternalReviewerPortal","pacificEducationExternalSpecialistReviewEvidenceRegistry",
+        "pacificEducationExternalSpecialistReviewEvidenceLog","pacificEducationCurriculumMasterControlStatus",
+        "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability",
+        "pacificEducationProductionReleaseChecklist","pacificEducationProductionReleaseEvidenceRegistry",
+        "pacificEducationProductionReleaseEvidenceGate","pacificEducationFinalProductionAuthorizationEvidenceRegistry",
+        "publicationStatus","pacificEducationOfflineSyncStatus","buyPlans"
       ];
 
       managed.forEach(function(id) {
@@ -197,7 +204,7 @@
             teacherDashboard:["teacher","special-education"],
             parentDashboard:["parent"],
             dailyLesson:["student","teacher","special-education"],
-            assessments:["student","teacher","special-education","parent"],
+            assessments:["student","teacher","special-education"],
             learningPlatform:["student","teacher","special-education","parent","professional","ngo","education","community"],
             buyPlans:["owner","community","ngo","education","professional"]
           };
@@ -246,6 +253,7 @@
         });
       }
       setRoleVisibility(role.id);
+      setPilotActivityGate(true);
 
       var workspace = document.getElementById("pilotRoleWorkspace");
       var toolMap = {
