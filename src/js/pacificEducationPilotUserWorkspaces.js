@@ -365,7 +365,7 @@
         '<p><strong>Open a role-specific tool:</strong></p>' +
         '<nav aria-label="Role pilot tools" style="display:flex;flex-wrap:wrap;gap:10px;">' +
         (toolMap[role.id] || []).map(function(tool) {
-          return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="padding:10px 14px;border:1px solid currentColor;border-radius:6px;">' + esc(tool[1]) + '</button>';
+          return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="padding:10px 14px;border:1px solid currentColor;border-radius:6px;' + (tool[0] === "studentStartLearning" ? "font-size:1.08em;font-weight:bold;min-width:180px;" : "") + '">' + esc(tool[1]) + '</button>';
         }).join("") +
         "</nav>" +
         '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Choose a tool above to continue.</p>';
