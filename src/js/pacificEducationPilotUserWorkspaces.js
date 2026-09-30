@@ -112,7 +112,9 @@
         status.innerHTML = "<strong>Calendar status:</strong> Waiting for an authoritative school calendar. No supplementary assignment is generated or mixed into Daily Activities.";
         return;
       }
-      if (day.type === "weekend" || day.type === "holiday") {
+      var active = day.type === "weekend" || day.type === "holiday";
+      section.hidden = !active;
+      if (active) {
         status.innerHTML = "<strong>Automatic access active:</strong> Day " + esc(dayNumber) +
           " is marked " + esc(day.type) +
           ". Student, Teacher and Parent/Caregiver may use the separate supplementary assignment area. Teacher support is available for help requests.";
@@ -194,7 +196,7 @@
           var roleDashboardMap = {
             teacherDashboard:["teacher","special-education"],
             parentDashboard:["parent"],
-            dailyLesson:["student","teacher","special-education","parent"],
+            dailyLesson:["student","teacher","special-education"],
             assessments:["student","teacher","special-education","parent"],
             learningPlatform:["student","teacher","special-education","parent","professional","ngo","education","community"],
             buyPlans:["owner","community","ngo","education","professional"]
