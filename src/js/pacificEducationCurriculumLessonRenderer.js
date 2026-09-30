@@ -337,7 +337,7 @@ function attachTextAudioControls(targetId, text) {
         attachTextAudioControls("dailyLessonPractice", practiceText.join(" "));
         var container = document.getElementById("dailyLesson");
         if (container) container.setAttribute("data-curriculum-linked", "true");
-        renderIndicatorStages(lesson); attachActivity(lesson.dayNumber, lesson);
+        attachActivity(lesson.dayNumber, lesson);
         return true;
     }
 
