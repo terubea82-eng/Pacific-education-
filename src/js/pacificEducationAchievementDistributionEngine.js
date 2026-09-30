@@ -162,6 +162,8 @@
             assignments.push({
                 dayNumber: dayNumber,
                 teachingDayIndex: dayIndex + 1,
+                authorizedTeachingDays: days.length,
+                indicatorCount: indicators.length,
                 indicatorPosition: indicatorIndex + 1,
                 indicatorId: indicator.id,
                 level: indicator.level,
