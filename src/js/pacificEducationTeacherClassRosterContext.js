@@ -141,8 +141,12 @@
     }
 
     function getContext() {
+        var current = getClass();
         return {
             classId: getClassId() || null,
+            level: current ? (current.level || null) : null,
+            section: current ? (current.section || null) : null,
+            teacherRef: current ? (current.teacherRef || null) : null,
             studentRefs: getStudents(),
             prototype: true,
             productionEligible: false
