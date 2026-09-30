@@ -11,7 +11,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.2.0";
+    var VERSION = "1.3.0";
 
     var LEVELS = [
         "Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"
@@ -68,6 +68,20 @@
 
         return true;
     }
+
+    function syncUI(level) {
+        var select = document.getElementById("pacificEducationLevel");
+        if (select && LEVELS.indexOf(level) !== -1 && select.value !== level) {
+            select.value = level;
+            var status = document.getElementById("pacificEducationLevelStatus");
+            if (status) status.textContent = "Selected: " + level + " (prototype curriculum selection)";
+        }
+    }
+
+    document.addEventListener("pacificEducationSelectionChanged", function(event) {
+        var detail = event && event.detail ? event.detail : {};
+        if (detail.level) syncUI(detail.level);
+    });
 
     function createUI() {
         var host = document.getElementById("pacificEducationLevelSelector");
