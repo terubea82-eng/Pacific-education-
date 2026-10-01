@@ -93,3 +93,7 @@ This document is an evidence template for Stage 26 performance, capacity, scalin
 ## Performance monitor interpretation
 
 The in-app performance monitor records local browser observations only. Its average and p95 values are diagnostic samples, not representative capacity measurements or service-level objectives. Record controlled load-test results separately in the capacity section above.
+
+## Recommended evidence fields
+
+For each measured scenario, record the exact app commit, device/browser, network conditions, test method, sample count, observed metrics, pass/fail outcome, and an evidence reference. This makes results reproducible across countries, devices, ISPs, VPNs/proxies, and connectivity conditions.
