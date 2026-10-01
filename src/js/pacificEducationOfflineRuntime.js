@@ -20,6 +20,16 @@ function queueProgress(item){
  if(!duplicate)list.push(safe);
  return{success:save(list),queued:safe,duplicate:duplicate,count:list.length,prototype:true};
 }
+function getQueueConflictCandidates(){
+ var q=getQueue();
+ var seen={},duplicates=[];
+ (q.items||[]).forEach(function(item){
+   var key=[item&&item.type||"",item&&item.lessonId||"",item&&item.dayNumber==null?"":item.dayNumber].join("|");
+   if(seen[key]&&seen[key].completed!==item.completed)duplicates.push({key:key,requiresReview:true});
+   else if(!seen[key])seen[key]=item;
+ });
+ return {count:duplicates.length,requiresManualReview:duplicates.length>0,items:duplicates,prototype:true};
+}
 function getQueueStatus(){
  var q=getQueue();
  return {count:q.count||0,items:q.items||[],prototype:true};
@@ -31,5 +41,6 @@ function connection(){var c=navigator.connection||navigator.mozConnection||navig
 function status(){return{version:VERSION,online:navigator.onLine,queuedProgressCount:q().length,serviceWorkerSupported:"serviceWorker"in navigator,serviceWorkerControlled:!!(navigator.serviceWorker&&navigator.serviceWorker.controller),connection:connection(),lowBandwidthFallback:true,queueContainsLessonMetadataOnly:true,clientCacheMustNotContainSecrets:true,productionApproved:false,realDeviceTestingRequired:true};}
 function listenConnectivity(callback){if(typeof callback!=="function")return function(){};var handler=function(){callback(status());};window.addEventListener("online",handler);window.addEventListener("offline",handler);var c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(c&&c.addEventListener)c.addEventListener("change",handler);return function(){window.removeEventListener("online",handler);window.removeEventListener("offline",handler);if(c&&c.removeEventListener)c.removeEventListener("change",handler);};}
 window.PacificEducationOfflineRuntime=Object.freeze({name:"PacificEducationOfflineRuntime",version:VERSION,queueProgress:queueProgress,getQueue:getQueue,
- getQueueStatus:getQueueStatus,clearQueue:clearQueue,registerServiceWorker:registerServiceWorker,status:status,listenConnectivity:listenConnectivity});
+ getQueueStatus:getQueueStatus,
+ getQueueConflictCandidates:getQueueConflictCandidates,clearQueue:clearQueue,registerServiceWorker:registerServiceWorker,status:status,listenConnectivity:listenConnectivity});
 })(window);
