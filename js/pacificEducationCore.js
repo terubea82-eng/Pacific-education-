@@ -784,7 +784,9 @@
   }
 
   function getActivities() {
-    return clone(state.activities);
+    const classId = getCanonicalClassId({});
+    if (!classId) return [];
+    return clone(state.activities.filter(function(item){ return String(item.classId || "") === String(classId); }));
   }
 
   function addAssessment(value) {
@@ -864,18 +866,20 @@
     record: addAssessment,
 
     getAll: function () {
-      return clone(
-        state.assessments
-      );
+      const classId = getCanonicalClassId({});
+      if (!classId) return [];
+      return clone(state.assessments.filter(function(item){ return String(item.classId || "") === String(classId); }));
     },
 
     getById: function (assessmentId) {
+      const classId = getCanonicalClassId({});
+      if (!classId) return null;
       return clone(
         state.assessments.find(
           function (item) {
             return (
-              item.assessmentId ===
-              assessmentId
+              item.assessmentId === assessmentId &&
+              String(item.classId || "") === String(classId)
             );
           }
         ) || null
@@ -883,9 +887,12 @@
     },
 
     latest: function () {
+      const classId = getCanonicalClassId({});
+      if (!classId) return null;
+      const items = state.assessments.filter(function(item){ return String(item.classId || "") === String(classId); });
       return clone(
-        state.assessments[
-          state.assessments.length - 1
+        items[
+          items.length - 1
         ] || null
       );
     }
@@ -1217,9 +1224,9 @@
   }
 
   function getInterventions() {
-    return clone(
-      state.interventions
-    );
+    const classId = getCanonicalClassId({});
+    if (!classId) return [];
+    return clone(state.interventions.filter(function(item){ return String(item.classId || "") === String(classId); }));
   }
 
   function getCanonicalClassId(value) {
