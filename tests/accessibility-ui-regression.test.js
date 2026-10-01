@@ -25,3 +25,12 @@ test("index exposes speech stop and text-scale integration", () => {
   assert.match(html, /id=["']pacificEducationStopSpeechButton["']/);
   assert.match(html, /(?:data-text-scale|textScale|text-scale|large|x-large)/i);
 });
+
+test("voice preference UI synchronizes with the accessibility runtime", () => {
+  assert.match(html, /PacificEducationAccessibilityRuntime/);
+  assert.match(html, /readVoicePreference/);
+  assert.match(html, /setVoicePreference/);
+  assert.match(html, /aria-pressed/);
+  assert.match(html, /Turn off voice preference/);
+  assert.match(html, /Turn on voice preference to read choices aloud/);
+});
