@@ -1,7 +1,7 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v7";
+const CACHE_NAME="pacific-education-shell-v8";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
