@@ -45,3 +45,7 @@ Prototype code may demonstrate workflows, but browser/localStorage controls are 
 The prototype is designed to be resilient across different network environments, including slow or intermittent connectivity and VPN/proxy paths. Network resilience does not guarantee availability on every network; production access still depends on hosting, backend, device, browser, and local network policy.
 
 Current prototype capabilities include offline shell support, reconnect guidance, queued learning-progress metadata, retry/idempotency planning, conflict detection, connectivity diagnostics, and local performance diagnostics. These capabilities require real-device and controlled network testing before production use.
+
+## Testing priority
+
+Before any production decision, prioritize representative Android and web devices, slow/high-latency networks, temporary disconnection and reconnection, VPN/proxy paths, duplicate/retry scenarios, accessibility modes, and controlled capacity testing. Record observed results in `docs/PERFORMANCE-CAPACITY-EVIDENCE.md` and `docs/LOW-CONNECTIVITY-TESTING.md`. Prototype diagnostics are not a substitute for independent verification or production approval.
