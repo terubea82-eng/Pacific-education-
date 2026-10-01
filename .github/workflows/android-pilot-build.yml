@@ -1,6 +1,7 @@
 name: Android Pilot Build
 # Controlled pilot build.
-# Latest pilot verification trigger. Release signing is enabled only when owner-controlled
+# Latest pilot verification trigger.
+# Latest main verification after offline conflict regression repair. Release signing is enabled only when owner-controlled
 # GitHub Actions signing secrets are present; the keystore is never committed.
 # Rebuilds on pilot web, Android, and workflow changes so current main is packaged.
 on:
