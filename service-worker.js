@@ -78,7 +78,7 @@ self.addEventListener("fetch",event=>{
           }
           return response;
         }).catch(()=>null);
-        return cached||refresh;
+        return cached||refresh.then(function(response){return response||new Response("Pacific Education asset unavailable while offline.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});});
       })
     );
   }
