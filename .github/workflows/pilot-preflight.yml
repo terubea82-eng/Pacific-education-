@@ -1,0 +1,78 @@
+name: Pacific Education Pilot Preflight
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pilot-preflight:
+    name: Automated Pilot Safety Preflight
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify controlled pilot boundaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f src/js/pacificEducationPilotReadinessSelfCheck.js
+          test -f src/js/pacificEducationProductionFinalGate.js
+          test -f src/js/pacificEducationPilotIntegrityGuard.js
+          grep -qi "production remains blocked" src/index.html
+          grep -qi "synthetic\|test/demo data" src/index.html
+          grep -qi "Payment is not confirmed by the browser" src/index.html
+          grep -qi "official curriculum validation" src/index.html
+
+      - name: Verify daily learning range
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "365" src/js/pacificEducationDailyCurriculumEngine.js
+          grep -q "getDailyLesson(365)" src/js/pacificEducationPilotReadinessSelfCheck.js
+
+      - name: Verify required role coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          for role in student teacher special-education parent professional ngo education community head-of-school institution-admin owner; do
+            grep -q "\"$role\"" src/js/pacificEducationPilotReadinessSelfCheck.js
+          done
+
+      - name: Verify production gate remains fail-closed
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "productionApproved:false" src/js/pacificEducationProductionFinalGate.js
+          grep -q "productionEligible:false" src/js/pacificEducationProductionFinalGate.js
+          grep -q "failClosed:true" src/js/pacificEducationProductionFinalGate.js
+          grep -q "external-specialist-approval-required" src/js/pacificEducationProductionFinalGate.js
+
+      - name: Verify pilot checklist exists
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/PILOT_PREFLIGHT_CHECKLIST.md
+
+      - name: Write preflight evidence
+        shell: bash
+        run: |
+          {
+            echo "Pacific Education Pilot Preflight"
+            echo "Commit: $GITHUB_SHA"
+            echo "Date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "Automated boundary, daily-range, role, production-gate and checklist checks: PASS"
+            echo "Manual evidence remains required before expanding pilot access."
+          } > pilot-preflight-evidence.txt
+          cat pilot-preflight-evidence.txt
+
+      - name: Upload preflight evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: pilot-preflight-evidence
+          path: pilot-preflight-evidence.txt
+          retention-days: 30
