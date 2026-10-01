@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller */
+/* Pacific Education — Speech Voice Controller v1007 */
 (function (window) {
   "use strict";
 
@@ -101,6 +101,20 @@
       speakText(text);
     }
   }
+
+  // Android Chrome/WebView can require a user-gesture resume before TTS will play.
+  function unlockSpeechOnInteraction() {
+    if (!window.speechSynthesis) return;
+    try {
+      if (typeof window.speechSynthesis.resume === "function") window.speechSynthesis.resume();
+    } catch (error) {
+      console.warn("Pacific Education speech unlock deferred:", error);
+    }
+  }
+
+  ["pointerdown", "touchstart", "keydown"].forEach(function (eventName) {
+    document.addEventListener(eventName, unlockSpeechOnInteraction, { once: true, capture: true, passive: true });
+  });
 
   window.PacificEducationSpeech = {
     chooseVoice: chooseVoice,
