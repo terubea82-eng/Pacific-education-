@@ -35,6 +35,12 @@ test("voice preference UI synchronizes with the accessibility runtime", () => {
   assert.match(html, /Turn on voice preference to read choices aloud/);
 });
 
+test("accessibility UI exposes speech status and stop control semantics", () => {
+  assert.match(html, /id=["']pacificEducationAccessibilityStatus["'][^>]*role=["']status["']/);
+  assert.match(html, /id=["']pacificEducationStopSpeechButton["']/);
+  assert.match(html, /aria-label=["'][^"']*Stop[^"']*speech[^"']*["']/i);
+});
+
 test("voice preference UI retains a safe storage fallback", () => {
   assert.match(html, /localStorage\.setItem\("pacificEducationVoicePreference",next\?"voice":"text"\)/);
   assert.match(html, /localStorage\.getItem\("pacificEducationVoicePreference"\)==="voice"/);
