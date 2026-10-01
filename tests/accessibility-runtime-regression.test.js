@@ -81,7 +81,8 @@ test("accessibility runtime preserves production safety state", () => {
 
 test("accessibility runtime synchronizes text scale across browser tabs", () => {
   assert.match(runtime, /event\.key===SCALE_KEY\|\|event\.key===null/);
-  assert.match(runtime, /setTextScale\(readScale\(\)\)/);
+  assert.match(runtime, /var scale=readScale\(\);setTextScale\(scale\)/);
+  assert.match(runtime, /Text size updated in another tab\./);
 });
 
 test("accessibility runtime synchronizes voice preference across browser tabs", () => {
