@@ -9,17 +9,25 @@
 (function(window){
     "use strict";
 
-    var VERSION="1.0.0";
+    var VERSION="1.1.0";
     var STORAGE_KEY="pacificEducationExpandedActivityIndex";
 
     function catalog(){
         return window.PacificEducationExpandedSubjectCatalog||null;
     }
 
+    function selectedClassId(){
+        try{
+            var roster=window.PacificEducationTeacherClassRosterContext;
+            var id=roster&&typeof roster.getClassId==="function"?String(roster.getClassId()||"").trim():"";
+            return id&&roster.getClass(id)?id:"";
+        }catch(e){return "";}
+    }
+
     function selection(){
         var level=window.localStorage.getItem("pacificEducationLevel")||"Class 1";
         var subject=window.localStorage.getItem("pacificEducationSubject")||"English";
-        return {level:level,subjectId:subject};
+        return {classId:selectedClassId(),level:level,subjectId:subject};
     }
 
     function isExpanded(level){
@@ -45,6 +53,10 @@
         if(!host||!c)return false;
 
         var s=selection();
+        if(!s.classId){
+            host.innerHTML="<h2>Class 7–13 Pilot Activities</h2><p>Select an existing Class Reference before viewing class-specific activities.</p>";
+            return false;
+        }
         if(!isExpanded(s.level)){
             host.innerHTML="<h2>Class 7–13 (Class 7–13 (Form 1–7)) Pilot Activities</h2><p>Select Class 7–13 (Class 7–13 (Form 1–7)) to use the expanded subject activity catalog. Class 1–6 continue using the existing learning flow.</p>";
             return true;
@@ -100,7 +112,7 @@
         complete.textContent="Record prototype review";
         complete.onclick=function(){
             status.textContent="Prototype review recorded in this browser session only. Server submission is disabled.";
-            window.localStorage.setItem("pacificEducationExpandedActivityLastReviewed",activity.id);
+            window.localStorage.setItem("pacificEducationExpandedActivityLastReviewed:"+s.classId,activity.id);
         };
 
         host.appendChild(title);
