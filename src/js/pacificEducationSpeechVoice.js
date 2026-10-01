@@ -33,16 +33,19 @@
 
     if (!text || !window.speechSynthesis ||
         typeof window.SpeechSynthesisUtterance !== "function") {
+      console.warn("Pacific Education speech unavailable in this browser/runtime.");
       return false;
     }
 
+    pendingText = text;
+    var synth = window.speechSynthesis;
     var voice = selectedVoice || chooseVoice();
 
-    // Some browsers expose speechSynthesis before their voice list is ready.
-    // Do not block playback just because getVoices() is temporarily empty;
-    // the browser can still use its default system voice.
     try {
-      window.speechSynthesis.cancel();
+      // Mobile Chrome/Android can leave the synthesis queue paused after a
+      // previous navigation. Resume before every user-triggered utterance.
+      synth.cancel();
+      if (typeof synth.resume === "function") synth.resume();
 
       var utterance = new window.SpeechSynthesisUtterance(text);
       if (voice) utterance.voice = voice;
@@ -51,15 +54,35 @@
       utterance.pitch = 1;
       utterance.volume = 1;
 
+      utterance.onstart = function () {
+        pendingText = text;
+      };
       utterance.onend = function () {
         pendingText = "";
       };
-
       utterance.onerror = function (event) {
-        console.warn("Pacific Education speech error:", event.error);
+        console.warn("Pacific Education speech error:", event && event.error);
+        // Do not silently lose a user-requested speech action. If the
+        // runtime reports a transient interruption, retry once after resume.
+        if (pendingText === text && event && (event.error === "interrupted" || event.error === "canceled")) {
+          pendingText = "";
+          setTimeout(function () {
+            if (window.speechSynthesis && typeof window.speechSynthesis.resume === "function") {
+              window.speechSynthesis.resume();
+            }
+            speakText(text);
+          }, 120);
+        }
       };
 
-      window.speechSynthesis.speak(utterance);
+      synth.speak(utterance);
+
+      // Some Android WebView/Chrome versions need a second resume tick.
+      if (typeof synth.resume === "function") {
+        setTimeout(function () {
+          try { synth.resume(); } catch (_) {}
+        }, 50);
+      }
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
