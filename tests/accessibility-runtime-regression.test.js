@@ -69,6 +69,7 @@ test("accessibility runtime exposes speech controls and availability status", ()
 
 test("accessibility runtime handles unavailable speech safely", () => {
   assert.match(runtime, /TEXT_TO_SPEECH_UNAVAILABLE/);
+  assert.match(runtime, /Speech is unavailable in this browser\./);
   assert.match(runtime, /if\(!text\|\|!window\.speechSynthesis\|\|!window\.SpeechSynthesisUtterance\)/);
 });
 
