@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "node --test tests/offline-sync-regression.test.js"
+  },
   "dependencies": {
     "@genkit-ai/googleai": "^1.28.0",
     "firebase": "^12.19.0",
