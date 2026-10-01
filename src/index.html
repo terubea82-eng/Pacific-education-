@@ -11,7 +11,10 @@ body{font-family:Arial,sans-serif;margin:0;line-height:1.5}
 header{padding:20px;border-bottom:1px solid #ccc}
 main{max-width:1000px;margin:auto;padding:20px}
 section{margin-bottom:24px;padding:20px;border:1px solid #ccc;border-radius:8px}
-body.pe-guided-flow main > *{display:none !important}\nbody.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper,body.pe-guided-flow #dailyNextWrapper,body.pe-guided-flow #practiceNextWrapper,body.pe-guided-flow #assessmentNextWrapper{display:none !important}\nbody.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #capabilityNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #dailyNextWrapper,body.pe-guided-flow[data-pe-flow-step="7"] #practiceNextWrapper,body.pe-guided-flow[data-pe-flow-step="8"] #assessmentNextWrapper{display:block !important}\n
+body.pe-guided-flow main > *{display:none !important}
+body.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper,body.pe-guided-flow #dailyNextWrapper,body.pe-guided-flow #practiceNextWrapper,body.pe-guided-flow #assessmentNextWrapper{display:none !important}
+body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #capabilityNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #dailyNextWrapper,body.pe-guided-flow[data-pe-flow-step="7"] #practiceNextWrapper,body.pe-guided-flow[data-pe-flow-step="8"] #assessmentNextWrapper{display:block !important}
+
 body.pe-guided-flow #pacificEducationAppMenu,body.pe-guided-flow header,body.pe-guided-flow #userFirstNavigation{display:none !important}
 body.pe-guided-flow #pacificEducationAccessibilityControls{display:flex !important}
 body.pe-guided-flow[data-pe-flow-step="0"] #pacificEducationWelcome,body.pe-guided-flow[data-pe-flow-step="0"] #pilotBanner{display:block !important}
@@ -101,14 +104,14 @@ html[data-text-scale="x-large"]{font-size:125%}
     var name=document.getElementById("pilotRegistrationName"), role=document.getElementById("pilotRegistrationRole"), save=document.getElementById("pilotRegistrationSaveButton"), status=document.getElementById("pilotRegistrationStatus");
     if(!name||!role||!save||!status)return;
     try{
-      var saved=JSON.parse(localStorage.getItem(key)||"null");
+      var saved=JSON.parse(sessionStorage.getItem(key)||"null");
       if(saved){name.value=saved.name||"";role.value=saved.role||"";status.textContent="Pilot registration saved for this browser test session.";}
     }catch(_){}
     save.onclick=function(){
       var n=name.value.trim(), r=role.value;
       if(!n||!r){status.textContent="Enter a name and select a user role.";return;}
       try{
-        localStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
+        sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
         status.textContent="Pilot registration saved. Continue to Learning Level.";
         if(window.speakText)window.speakText("Pilot registration saved. Continue to Learning Level.");
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
