@@ -37,7 +37,7 @@
         try {
             subjectId = localStorage.getItem("pacificEducationSubject") || "";
             term = localStorage.getItem("pacificEducationTerm") || "Term 1";
-            day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1); catch (ignore) {}
+            day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1); } catch (ignore) {}
         return { classId: selectedClassId(), level: level, subjectId: subjectId, term: term, startDay: day, endDay: 365 };
     }
 
