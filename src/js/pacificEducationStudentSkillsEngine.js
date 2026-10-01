@@ -133,7 +133,11 @@
             throw new Error("Valid evidence type is required.");
         }
 
-        if (!selectedClassId()) {\n            throw new Error("Class Reference is required.");\n        }\n\n        if (!evidence.studentId) {
+        if (!selectedClassId()) {
+            throw new Error("Class Reference is required.");
+        }
+
+        if (!evidence.studentId) {
             throw new Error("Student ID is required.");
         }
 
@@ -152,7 +156,8 @@
         const item = {
             evidenceId: createId("EVID"),
             studentId: evidence.studentId,
-            skillId: evidence.skillId,\n            classId: selectedClassId(),
+            skillId: evidence.skillId,
+            classId: selectedClassId(),
             type: evidence.type,
             subject: evidence.subject || null,
             activityId: evidence.activityId || null,
@@ -238,17 +243,23 @@
         return record.skills[skill.skillId];
     }
 
-    function getSkill(studentId, skillId) {\n        const classId = selectedClassId();\n        if (!classId) return null;
+    function getSkill(studentId, skillId) {
+        const classId = selectedClassId();
+        if (!classId) return null;
         const record = getStudentRecord(studentId);
         return record.skills[skillId] && String(record.skills[skillId].classId || "") === classId ? record.skills[skillId] : null;
     }
 
-    function getAllSkills(studentId) {\n        const classId = selectedClassId();\n        if (!classId) return [];
+    function getAllSkills(studentId) {
+        const classId = selectedClassId();
+        if (!classId) return [];
         const record = getStudentRecord(studentId);
         return Object.values(record.skills).filter(function(skill){ return String(skill.classId || "") === classId; });
     }
 
-    function getEvidence(studentId) {\n        const classId = selectedClassId();\n        if (!classId) return [];
+    function getEvidence(studentId) {
+        const classId = selectedClassId();
+        if (!classId) return [];
         const record = getStudentRecord(studentId);
         return record.evidence.filter(function(item){ return String(item.classId || "") === classId; });
     }
