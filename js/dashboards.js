@@ -421,8 +421,21 @@
     function getIndicatorStageProgress() {
         var engine = window.PacificEducationCurriculumCoverageEngine;
         var studentId = getCurrentStudentId();
-        if (!engine || !studentId || typeof engine.list !== "function") return { count: 0, records: [] };
-        var records = engine.list({ studentId: studentId }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var classId = roster && typeof roster.getClassId === "function"
+            ? roster.getClassId()
+            : "";
+        if (!engine || !studentId || !classId || typeof engine.list !== "function") {
+            return { count: 0, records: [] };
+        }
+        var records = engine.list({
+            studentId: studentId,
+            classId: classId
+        }).filter(function(item) {
+            return item &&
+                item.evidenceType === "indicator-stage" &&
+                String(item.classId || "") === String(classId);
+        });
         return { count: records.length, records: records };
     }
 
