@@ -57,7 +57,7 @@
     var source = lesson && lesson.activity ? lesson.activity : (lesson || {});
     return {
       classId: classId,
-      level: lesson && lesson.level || localStorage.getItem("pacificEducationLevel") || "Class 1",
+      level: (function(){var rr=window.PacificEducationTeacherClassRosterContext;var cc=classId&&rr&&typeof rr.getClass==="function"?rr.getClass(classId):null;return cc&&cc.level?String(cc.level):String(lesson&&lesson.level||"");})(),
       subjectId: lesson && lesson.subjectId || localStorage.getItem("pacificEducationSubject") || "English",
       term: lesson && lesson.term || localStorage.getItem("pacificEducationTerm") || "Term 1",
       dayNumber: Number(day) || 1,
