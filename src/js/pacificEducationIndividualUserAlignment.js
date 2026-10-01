@@ -6,7 +6,7 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.1.0";
+  var VERSION="1.1.1";
   var PROFILE_KEY="pacificEducationIndividualUserAlignmentV1";
   var TYPES=["multiple_choice","true_false","matching","short_answer","long_answer"];
   var CAPABILITY_TYPE={foundation:"matching",remedial:"multiple_choice",developing:"true_false",expected:"short_answer",advanced:"long_answer"};
@@ -22,7 +22,9 @@
     var ent=json("pacificEducationAccessEntitlementV1",{});
     return {current:current||{},identity:identity||{},prefs:prefs||{},entitlement:ent||{}};
   }
-  function paceduId(u){return String((u.current&&u.current.userId)||(u.current&&u.current.pacificEducationId)||read("pacificEducationId","")||read("pacificEducationUserId","")||"").trim();}
+  function paceduId(u){
+    return String(read("pacificEducationUserId","")||read("pacificEducationId","")||(u.current&&u.current.userId)||(u.current&&u.current.pacificEducationId)||"").trim();
+  }
   function role(u){return String((u.current&&u.current.role)||read("pacificEducationRole","")||read("pilotRole","")||"student").trim().toLowerCase();}
   function access(u){
     var status=String((u.entitlement&&u.entitlement.status)||read("pacificEducationAccessStatus","UNPAID")).toUpperCase();
@@ -44,10 +46,6 @@
     var preferred=CAPABILITY_TYPE[p.capability];
     var types=window.PacificEducationActivityTypes||TYPES;
     return types.indexOf(preferred)>=0?preferred:(types[(p.dayNumber-1)%types.length]||"short_answer");
-  }
-  function activityLabel(t){
-    var labels=window.PacificEducationActivity&&window.PacificEducationActivity.labels;
-    return labels&&labels[t]?labels[t]:({multiple_choice:"Multiple Choice",true_false:"True or False",matching:"Matching",short_answer:"Short Answer",long_answer:"Long Answer"}[t]||t);
   }
   function renderProfile(p){
     var app=document.getElementById("app");if(!app)return;
@@ -82,7 +80,7 @@
     var app=document.getElementById("app");if(app)obs.observe(app,{childList:true,subtree:true});
     document.addEventListener("pacificEducationSelectionChanged",refresh);
     document.addEventListener("pacificEducationCoverageRefresh",refresh);
-    window.addEventListener("storage",function(e){if(e&&/^(pacificEducationLevel|pacificEducationSubject|pacificEducationTerm|pacificEducationCapability|currentDayNumber|pacificEducationAccessStatus)$/.test(e.key||""))refresh();});
+    window.addEventListener("storage",function(e){if(e&&/^(pacificEducationLevel|pacificEducationSubject|pacificEducationTerm|pacificEducationCapability|currentDayNumber|pacificEducationAccessStatus|pacificEducationUserId)$/.test(e.key||""))refresh();});
   }
   window.PacificEducationIndividualUserAlignment=Object.freeze({version:VERSION,profile:profile,refresh:refresh,recommendedType:function(){return recommendedType(profile());},productionEligible:false});
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start);else start();
