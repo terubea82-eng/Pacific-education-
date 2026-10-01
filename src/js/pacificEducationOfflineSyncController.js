@@ -71,7 +71,7 @@ function conflictSummary(){
     var queue=[];
     try{
       var runtime=window.PacificEducationOfflineRuntime;
-      if(runtime&&typeof runtime.inspectQueue==="function")queue=runtime.inspectQueue()||[];
+      if(runtime&&typeof runtime.getQueue==="function"){var result=runtime.getQueue();queue=result&&result.items||[];}
     }catch(e){queue=[];}
     var conflicts=detectConflicts(queue);
     return {count:conflicts.length,requiresManualReview:conflicts.length>0,conflicts:conflicts};
@@ -80,5 +80,6 @@ function conflictSummary(){
 function status(){return inspect();}
 window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,
     detectConflicts:detectConflicts,
+    hasConflictFor:hasConflictFor,
     conflictSummary:conflictSummary,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
 })(window);
