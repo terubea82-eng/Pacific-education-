@@ -1,7 +1,7 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v8";
+const CACHE_NAME="pacific-education-shell-v9";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
@@ -86,8 +86,6 @@ self.addEventListener("fetch",event=>{
   }
 
   if(isStatic(request)){
-    // Versioned assets such as foo.js?v=123 use one stable cache key.
-    // The network request keeps its version query so deployments stay fresh.
     const cacheKey=new Request(url.origin+url.pathname,{method:"GET"});
     event.respondWith(
       caches.match(cacheKey).then(cached=>{
