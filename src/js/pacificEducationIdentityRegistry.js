@@ -18,6 +18,9 @@
   function render(){
     var el=document.getElementById("pacificEducationIdentityRegistration");
     if(!el)return;
+    /* Preserve the pilot registration form rendered by src/index.html. This registry
+       is the identity boundary; it must not replace the usable pilot form. */
+    if(document.getElementById("pilotRegistrationName") && document.getElementById("pilotRegistrationRole") && document.getElementById("pilotRegistrationSaveButton"))return;
     el.innerHTML="<h2>Identity Registration</h2><p><strong>One person → one Pacific Education ID → one account.</strong></p><p>Production identity verification must be completed by the secure server. The browser must not store or expose the underlying identification number.</p><p id=\"peIdentityStatus\" aria-live=\"polite\">Identity registration boundary ready.</p>";
   }
   window.PacificEducationIdentityRegistry={version:"1.0.0",prototype:true,productionEligible:false,createIdentity:create,render:render};
