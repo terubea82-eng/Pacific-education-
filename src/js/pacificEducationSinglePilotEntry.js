@@ -246,7 +246,17 @@
   }
 
   function registerRole(role, language) {
-    if (!role) return;
+    if (!role) return false;
+    if (role === "student") {
+      var roster = window.PacificEducationTeacherClassRosterContext;
+      var existingClassId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+      var existingClass = existingClassId && roster && typeof roster.getClass === "function" ? roster.getClass(existingClassId) : null;
+      if (!existingClass) {
+        var entryStatus = document.getElementById("singlePilotRegistrationStatus");
+        if (entryStatus) entryStatus.textContent = "Select an existing Class Reference assigned by the teacher before entering the Student pilot workspace. No class is created automatically.";
+        return false;
+      }
+    }
     var selectedLanguage=language||(document.getElementById("singlePilotLanguage")&&document.getElementById("singlePilotLanguage").value)||"English";
     applyRegistrationLanguage(selectedLanguage);
     safeLanguageSet({interfaceLanguage:selectedLanguage,learningLanguage:selectedLanguage,selectedAt:new Date().toISOString()});
@@ -257,14 +267,20 @@
     if (role === "student") {
       authorizeStudent();
       try {
-        window.localStorage.setItem("pacificEducationLevel", window.localStorage.getItem("pacificEducationLevel") || "Class 1");
-        window.localStorage.setItem("pacificEducationSubject", window.localStorage.getItem("pacificEducationSubject") || "English");
-        window.localStorage.setItem("pacificEducationTerm", window.localStorage.getItem("pacificEducationTerm") || "Term 1");
-        window.localStorage.setItem("pacificEducationCapability", window.localStorage.getItem("pacificEducationCapability") || "expected");
+        var studentRoster = window.PacificEducationTeacherClassRosterContext;
+        var studentClassId = studentRoster && typeof studentRoster.getClassId === "function" ? String(studentRoster.getClassId() || "").trim() : "";
+        var studentClass = studentClassId && studentRoster && typeof studentRoster.getClass === "function" ? studentRoster.getClass(studentClassId) : null;
+        if (studentClass && studentClass.level) {
+          window.localStorage.setItem("pacificEducationLevel", String(studentClass.level));
+        }
+        if (!window.localStorage.getItem("pacificEducationCapability")) {
+          window.localStorage.setItem("pacificEducationCapability", "expected");
+        }
       } catch (e) {}
     }
 
     showRoute(role);
+    return true;
   }
 
   function render() {
