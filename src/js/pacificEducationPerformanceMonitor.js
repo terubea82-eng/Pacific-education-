@@ -24,7 +24,10 @@
       scriptCount:document.scripts?document.scripts.length:null,
       online:navigator.onLine!==false,
       slowLoad:false,
-      slowDom:false
+      slowDom:false,
+      connectionType:null,
+      rttMs:null,
+      saveData:false
     };
 
     paint.forEach(function(entry){
@@ -40,6 +43,12 @@
     data.cacheStatus=("serviceWorker"in navigator) ? "Service worker supported" : "Service worker unavailable";
     data.slowLoad=data.loadEventMs!==null&&data.loadEventMs>SLOW_LOAD_MS;
     data.slowDom=data.domContentLoadedMs!==null&&data.domContentLoadedMs>SLOW_DOM_MS;
+    var connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
+    if(connection){
+      data.connectionType=connection.effectiveType||null;
+      data.rttMs=typeof connection.rtt==="number"?connection.rtt:null;
+      data.saveData=connection.saveData===true;
+    }
     window.PacificEducationPerformance=data;
     var status=document.getElementById("systemStatus");
     if(status){
@@ -54,7 +63,10 @@
         " • Load "+(data.loadEventMs===null?"n/a":data.loadEventMs+" ms")+
         " • Scripts "+(data.scriptCount===null?"n/a":data.scriptCount)+
         " • "+data.cacheStatus+
-        (data.slowLoad||data.slowDom?" • Slow-load warning":"");
+        (data.connectionType?" • "+data.connectionType:"")+ 
+        (data.rttMs!==null?" • RTT "+data.rttMs+" ms":"")+
+        (data.slowLoad||data.slowDom?" • Slow-load warning":"")+
+        (data.saveData?" • Data-saver on":"");
     }
   }
 
