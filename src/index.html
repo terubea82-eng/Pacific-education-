@@ -376,15 +376,9 @@ html[data-text-scale="x-large"]{font-size:125%}
 </script>
 <script>
 (function(){
-  var refreshText="Refresh information: If Pacific Education has been updated, please refresh this page to load the latest version. Automatic refresh checking remains active.";
-  function speakRefresh(){
-    if(window.PacificEducationVoice){window.PacificEducationVoice.speak(refreshText);return true;}
-    return false;
-  }
   function init(){
     var b=document.getElementById("pacificEducationRefreshButton");
     if(b)b.addEventListener("click",function(){window.location.reload();});
-    setTimeout(function(){if(document.visibilityState==="visible")speakRefresh();},1200);
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
