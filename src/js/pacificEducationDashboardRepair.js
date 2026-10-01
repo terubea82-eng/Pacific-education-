@@ -69,8 +69,8 @@
     if(!r) return;
     try{
       var id = r.getClassId && r.getClassId();
-      if(!id){ r.createClass(PILOT_CLASS,"Class 7"); r.setClassId(PILOT_CLASS); }
-      id = r.getClassId ? r.getClassId() : PILOT_CLASS;
+      if(!id) return;
+      id = r.getClassId ? r.getClassId() : "";
       if(r.getStudents && (!r.getStudents(id) || r.getStudents(id).indexOf(PILOT_STUDENT) === -1)) r.addStudent(id,PILOT_STUDENT);
     }catch(e){}
   }
