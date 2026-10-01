@@ -47,42 +47,45 @@
       synth.cancel();
       if (typeof synth.resume === "function") synth.resume();
 
-      var utterance = new window.SpeechSynthesisUtterance(text);
-      if (voice) utterance.voice = voice;
-      utterance.lang = voice && voice.lang ? voice.lang : "en-US";
-      utterance.rate = 0.95;
-      utterance.pitch = 1;
-      utterance.volume = 1;
+      // Android Chrome/WebView can drop an utterance when speak() is called
+      // in the same task immediately after cancel(). Schedule playback on the
+      // next short timer so the queue has time to reset.
+      setTimeout(function () {
+        try {
+          if (!window.speechSynthesis ||
+              typeof window.SpeechSynthesisUtterance !== "function") return;
 
-      utterance.onstart = function () {
-        pendingText = text;
-      };
-      utterance.onend = function () {
-        pendingText = "";
-      };
-      utterance.onerror = function (event) {
-        console.warn("Pacific Education speech error:", event && event.error);
-        // Do not silently lose a user-requested speech action. If the
-        // runtime reports a transient interruption, retry once after resume.
-        if (pendingText === text && event && (event.error === "interrupted" || event.error === "canceled")) {
-          pendingText = "";
-          setTimeout(function () {
-            if (window.speechSynthesis && typeof window.speechSynthesis.resume === "function") {
-              window.speechSynthesis.resume();
+          var currentSynth = window.speechSynthesis;
+          if (typeof currentSynth.resume === "function") currentSynth.resume();
+
+          var currentVoice = selectedVoice || chooseVoice();
+          var utterance = new window.SpeechSynthesisUtterance(text);
+          if (currentVoice) utterance.voice = currentVoice;
+          utterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
+          utterance.rate = 0.95;
+          utterance.pitch = 1;
+          utterance.volume = 1;
+
+          utterance.onstart = function () {
+            pendingText = text;
+          };
+          utterance.onend = function () {
+            pendingText = "";
+          };
+          utterance.onerror = function (event) {
+            console.warn("Pacific Education speech error:", event && event.error);
+            if (pendingText === text && event && event.error === "interrupted") {
+              pendingText = "";
             }
-            speakText(text);
-          }, 120);
+          };
+
+          currentSynth.speak(utterance);
+          if (typeof currentSynth.resume === "function") currentSynth.resume();
+        } catch (error) {
+          console.error("Pacific Education delayed speech failed:", error);
         }
-      };
+      }, 80);
 
-      synth.speak(utterance);
-
-      // Some Android WebView/Chrome versions need a second resume tick.
-      if (typeof synth.resume === "function") {
-        setTimeout(function () {
-          try { synth.resume(); } catch (_) {}
-        }, 50);
-      }
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
