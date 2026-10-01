@@ -1,7 +1,7 @@
 /* Pacific Education — Teacher Class Roster Context */
 (function(window, document) {
     "use strict";
-    var VERSION = "1.2.0";
+    var VERSION = "1.3.0";
     var CLASS_KEY = "pacificEducationSelectedClassId";
     var ROSTER_KEY = "pacificEducationPrototypeClassRosters";
     function load() { try { var raw=window.localStorage.getItem(ROSTER_KEY); var data=raw?JSON.parse(raw):{}; return data&&typeof data==="object"?data:{}; } catch(e){ return {}; } }
@@ -13,6 +13,17 @@
         try { if(id) window.localStorage.setItem(CLASS_KEY,id); else window.localStorage.removeItem(CLASS_KEY); } catch(e){}
         var selectedClass=id?getClass(id):null;
         if(selectedClass&&selectedClass.level){ try { window.localStorage.setItem("pacificEducationLevel",String(selectedClass.level)); } catch(e){} }
+        try {
+            var studentKey = "pacificEducationSelectedStudentId";
+            var students = selectedClass && Array.isArray(selectedClass.studentRefs) ? selectedClass.studentRefs : [];
+            var currentStudent = window.localStorage.getItem(studentKey) || "";
+            if (!id || (currentStudent && students.indexOf(currentStudent) === -1)) {
+                window.localStorage.removeItem(studentKey);
+                window.dispatchEvent(new CustomEvent("pacificEducationStudentChanged", {
+                    detail: { studentId: "", classId: id || null, prototype: true }
+                }));
+            }
+        } catch(e){}
         window.dispatchEvent(new CustomEvent("pacificEducationClassChanged",{detail:{classId:id,level:selectedClass?selectedClass.level||null:null,prototype:true}}));
         return id;
     }
