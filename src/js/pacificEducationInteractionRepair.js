@@ -326,6 +326,34 @@
       });
     }
 
+    /* User Registration entry point: keep the pilot registration form reliably open on touch/mobile. */
+    var registrationOpenButton = document.getElementById("userRegistrationOpenButton");
+    if (registrationOpenButton && registrationOpenButton.getAttribute("data-pacific-registration-bound") !== "true") {
+      registrationOpenButton.removeAttribute("onclick");
+      registrationOpenButton.setAttribute("data-pacific-registration-bound", "true");
+      registrationOpenButton.addEventListener("click", function(event) {
+        if (event) event.preventDefault();
+        var form = document.getElementById("userRegistrationForm");
+        if (!form) return false;
+        var opening = !!form.hidden;
+        form.hidden = !opening;
+        registrationOpenButton.setAttribute("aria-expanded", String(opening));
+        registrationOpenButton.textContent = opening
+          ? "👤 User Registration — Tap to close"
+          : "👤 User Registration — Tap to open";
+        if (opening) {
+          try { form.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e) { form.scrollIntoView(); }
+          setTimeout(function() {
+            var name = document.getElementById("pilotRegistrationName");
+            if (name) {
+              try { name.focus({preventScroll:true}); } catch (ignore) { name.focus(); }
+            }
+          }, 50);
+        }
+        return false;
+      });
+    }
+
     /* Assessment entry points: preserve the existing assessment engine. */
     var assessments = document.getElementById("assessments");
     if (assessments) {
