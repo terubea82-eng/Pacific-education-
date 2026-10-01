@@ -6,6 +6,14 @@ Pacific Education is being prepared as a **controlled one-month prototype pilot*
 
 The initial pilot term is one month. **If a genuine need arises, the owner may extend the controlled pilot for up to a total of three months by explicit owner approval; an extension does not authorize production release.**
 
+
+## Pilot access
+
+- **Web pilot:** https://terubea82-eng.github.io/Pacific-education-/src/index.html
+- **Android pilot build workflow:** https://github.com/terubea82-eng/Pacific-education-/actions/workflows/android-pilot-build.yml
+- **Repository:** https://github.com/terubea82-eng/Pacific-education-/
+- **Pilot scope:** controlled 1-month pilot; production approval remains blocked until required independent verification and production gates are completed.
+
 ## Pilot status
 
 - **Pilot type:** Controlled prototype pilot
