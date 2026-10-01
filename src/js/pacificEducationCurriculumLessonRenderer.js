@@ -19,7 +19,12 @@
         var value = Number.parseInt(window.localStorage.getItem("currentDayNumber") || "1", 10);
         return Number.isInteger(value) && value >= 1 && value <= 365 ? value : 1;
     }
-    function getLevel() { return window.localStorage.getItem("pacificEducationLevel") || "Class 1"; }
+    function getLevel() {
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var classId = roster && typeof roster.getClassId === "function" ? roster.getClassId() : null;
+        var selected = classId && roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+        return selected && selected.level ? String(selected.level) : "";
+    }
     function getSubject() { return window.localStorage.getItem("pacificEducationSubject") || "English"; }
     function getTerm() { return window.localStorage.getItem("pacificEducationTerm") || "Term 1"; }
     function getCapability() { return window.localStorage.getItem("pacificEducationCapability") || "expected"; }
