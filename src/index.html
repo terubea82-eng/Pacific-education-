@@ -295,7 +295,7 @@ html[data-text-scale="x-large"]{font-size:125%}
         :"Local performance samples: 0";
     }catch(e){el.textContent="Performance summary unavailable.";}
   }
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",renderCapacity);else renderCapacity();
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",renderCapacity);else renderCapacity();\n  window.addEventListener("pacific:performance-ready",renderCapacity);
 })();
 </script>
 
