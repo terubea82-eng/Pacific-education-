@@ -1168,6 +1168,27 @@
     );
   }
 
+  function getCanonicalClassId(value) {
+    value = isObject(value) ? value : {};
+
+    if (value.classId) {
+      return String(value.classId).trim();
+    }
+
+    const roster =
+      window.PacificEducationTeacherClassRosterContext;
+
+    if (
+      roster &&
+      typeof roster.getClassId === "function"
+    ) {
+      const classId = roster.getClassId();
+      return classId ? String(classId).trim() : "";
+    }
+
+    return "";
+  }
+
   function recordLearningHistory(
     value
   ) {
@@ -1183,6 +1204,18 @@
       ? value
       : {};
 
+    const classId = getCanonicalClassId(value);
+
+    if (!classId) {
+      audit(
+        "LEARNING_HISTORY_BLOCKED",
+        {
+          reason: "Class Reference required."
+        }
+      );
+      return false;
+    }
+
     const entry = {
       historyId:
         makeId("HISTORY"),
@@ -1194,6 +1227,9 @@
         value.studentId ||
         state.student.studentId ||
         null,
+
+      classId:
+        classId,
 
       day:
         value.day !== undefined
@@ -1292,6 +1328,21 @@
       state.student.studentId ||
       null;
 
+    const classId =
+      getCanonicalClassId(value);
+
+    if (!classId) {
+      audit(
+        "LESSON_COMPLETION_BLOCKED",
+        {
+          reason: "Class Reference required.",
+          day: day,
+          studentId: studentId
+        }
+      );
+      return false;
+    }
+
     const lessonId =
       value.lessonId ||
       state.lesson.lessonId ||
@@ -1337,6 +1388,9 @@
 
       studentId:
         studentId,
+
+      classId:
+        classId,
 
       day:
         day,
