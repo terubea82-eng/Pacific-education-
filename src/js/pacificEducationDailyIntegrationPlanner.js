@@ -73,9 +73,9 @@
     function build(filters) {
         filters = filters || {};
 
-        var level = filters.level || "Class 1";
-        var subjectId = filters.subjectId || "English";
-        var term = filters.term || "Term 1";
+        var level = filters.level || "";
+        var subjectId = filters.subjectId || localStorage.getItem("pacificEducationSubject") || "";
+        var term = filters.term || localStorage.getItem("pacificEducationTerm") || "";
         var dayNumber = Number(filters.dayNumber || 1);
 
         var core = selectCoreIndicator({
