@@ -174,7 +174,7 @@
         if (!classId) { if (node) node.textContent = "Select an existing Class Reference before distributing curriculum."; return; }
 
         var level =
-            window.localStorage.getItem("pacificEducationLevel") || "Class 1";
+            (function(){var rr=window.PacificEducationTeacherClassRosterContext;var cc=classId&&rr&&typeof rr.getClass==="function"?rr.getClass(classId):null;return cc&&cc.level?String(cc.level):"";})();
         var subject =
             window.localStorage.getItem("pacificEducationSubject") || "English";
         var term =
