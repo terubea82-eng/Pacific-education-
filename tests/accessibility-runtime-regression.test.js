@@ -65,6 +65,7 @@ test("accessibility runtime exposes speech controls and availability status", ()
   assert.match(runtime, /SpeechSynthesisUtterance/);
   assert.match(runtime, /stopSpeaking/);
   assert.match(runtime, /Speech stopped\./);
+  assert.match(runtime, /reason:"TEXT_TO_SPEECH_UNAVAILABLE"/);
   assert.match(runtime, /textToSpeechAvailable/);
 });
 
