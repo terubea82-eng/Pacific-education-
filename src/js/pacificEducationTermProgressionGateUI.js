@@ -52,7 +52,7 @@
         target.innerHTML =
             '<div class="pacific-education-term-gate">' +
             '<h2>Term 1 → Term 2 Progression</h2>' +
-            '<p><strong>Class Reference:</strong> &#39; + escapeHtml(cfg.classId || "No class selected") + '<br><strong>Level:</strong> ' + escapeHtml(cfg.level) +
+            '<p><strong>Class Reference:</strong> ' + escapeHtml(cfg.classId || "No class selected") + '<br><strong>Level:</strong> ' + escapeHtml(cfg.level) +
             ' &nbsp; <strong>Subject:</strong> ' + escapeHtml(cfg.subjectId) + '</p>' +
             '<p><strong>Student reference:</strong> ' +
             escapeHtml(cfg.studentId || "No student selected") + '</p>' +
