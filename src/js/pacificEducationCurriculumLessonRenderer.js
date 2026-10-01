@@ -545,7 +545,6 @@ function attachTextAudioControls(targetId, text) {
                         contentBasis: "concept-based-pilot-prototype"
                     }
                 });
-                today.textContent = "Today: Day " + selectedDay;
                 if (activityPanel) activityPanel.scrollIntoView({ behavior: "smooth", block: "start" });
             } else {
                 var status = document.getElementById("pacificEducationInteractionStatus");
