@@ -11,6 +11,20 @@ body{font-family:Arial,sans-serif;margin:0;line-height:1.5}
 header{padding:20px;border-bottom:1px solid #ccc}
 main{max-width:1000px;margin:auto;padding:20px}
 section{margin-bottom:24px;padding:20px;border:1px solid #ccc;border-radius:8px}
+body.pe-guided-flow main > *{display:none !important}
+body.pe-guided-flow #pacificEducationAppMenu,body.pe-guided-flow header,body.pe-guided-flow #userFirstNavigation{display:none !important}
+body.pe-guided-flow #pacificEducationAccessibilityControls{display:flex !important}
+body.pe-guided-flow[data-pe-flow-step="0"] #pacificEducationWelcome,body.pe-guided-flow[data-pe-flow-step="0"] #pilotBanner{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="1"] #pacificEducationIdentityRegistration,body.pe-guided-flow[data-pe-flow-step="1"] #prototypeAccess{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="2"] #levelSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="3"] #subjectSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="4"] #termSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="5"] #capabilitySelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="6"] #dailyLesson{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="7"] #dailyLessonPracticeStage{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="8"] #assessments{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="9"] #teacherCalendarSection{display:block !important}
+
 button{padding:10px 16px;margin:5px;cursor:pointer}
 .status{padding:10px;border-radius:6px}
 html[data-text-scale="large"]{font-size:112.5%}
@@ -78,7 +92,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script>
 (function(){
   var stepGroups=[
-    ["pacificEducationWelcome"],
+    ["pacificEducationWelcome","pilotBanner"],
     ["pacificEducationIdentityRegistration","prototypeAccess"],
     ["levelSelection"],
     ["subjectSelection"],
@@ -92,39 +106,36 @@ html[data-text-scale="x-large"]{font-size:125%}
   var nextIds=["welcomeNextButton","registrationNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
   var current=0;
 
-  function showStep(index){
+  function applyStep(index){
     current=Math.max(0,Math.min(stepGroups.length-1,index));
-    var welcome=document.getElementById("pacificEducationWelcome");
-    if(welcome) welcome.hidden=current!==0;
+    document.body.classList.add("pe-guided-flow");
+    document.body.setAttribute("data-pe-flow-step",String(current));
 
     var main=document.getElementById("app");
-    if(main){
-      Array.prototype.forEach.call(main.children,function(el){el.hidden=true;});
-      if(current>0){
-        stepGroups[current].forEach(function(id){
-          var target=document.getElementById(id);
-          if(target) target.hidden=false;
-        });
-      }
-    }
+    if(main)Array.prototype.forEach.call(main.children,function(el){el.hidden=true;});
+
+    stepGroups[current].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el)el.hidden=false;
+    });
+
+    var menu=document.getElementById("pacificEducationAppMenu");
+    var nav=document.getElementById("userFirstNavigation");
+    var header=document.querySelector("body > header");
+    if(menu)menu.hidden=true;
+    if(nav)nav.hidden=true;
+    if(header)header.hidden=true;
 
     nextIds.forEach(function(id,i){
       var b=document.getElementById(id);
       if(!b)return;
       var wrapper=b.parentElement;
-      if(wrapper && wrapper.parentElement===document.getElementById("app")){
-        wrapper.hidden=i!==current;
-      }
-      b.onclick=function(){
-        showStep(i+1);
-        window.scrollTo({top:0,behavior:"smooth"});
-      };
+      if(wrapper)wrapper.hidden=i!==current;
+      b.onclick=function(){applyStep(i+1);window.scrollTo({top:0,behavior:"smooth"});};
     });
-
-    window.scrollTo({top:0,behavior:"smooth"});
   }
 
-  function init(){showStep(0);}
+  function init(){applyStep(0);}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
