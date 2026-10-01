@@ -74,5 +74,6 @@ function conflictSummary(){
 
 function status(){return inspect();}
 window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,
-    detectConflicts:detectConflicts,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
+    detectConflicts:detectConflicts,
+    conflictSummary:conflictSummary,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
 })(window);
