@@ -76,6 +76,7 @@ function summary(){
     data.summary=summary();
     data.capacitySummary=capacitySummary();
     window.PacificEducationPerformance=data;
+    announceReady(data);
     var status=document.getElementById("systemStatus");
     if(status){
       var target=status.querySelector("[data-pacific-performance]");
