@@ -40,6 +40,12 @@
     return result;
   }
 
+  function average(values){if(!values.length)return null;return Math.round(values.reduce(function(a,b){return a+b;},0)/values.length);}
+  function summary(){
+    var valid=samples.filter(function(x){return x&&typeof x.loadEventMs==="number";}).map(function(x){return x.loadEventMs;});
+    return {sampleCount:samples.length,averageLoadMs:average(valid),slowSamples:samples.filter(function(x){return (x.loadEventMs||0)>SLOW_LOAD_MS||(x.domContentLoadedMs||0)>SLOW_DOM_MS;}).length};
+  }
+
   function render(){
     var data=collect();
     data.cacheStatus=("serviceWorker"in navigator) ? "Service worker supported" : "Service worker unavailable";
@@ -55,6 +61,7 @@
     if(samples.length>MAX_SLOW_SAMPLES)samples.shift();
     data.sampleCount=samples.length;
     data.recentSamples=samples.slice();
+    data.summary=summary();
     window.PacificEducationPerformance=data;
     var status=document.getElementById("systemStatus");
     if(status){
@@ -69,6 +76,7 @@
         " • Load "+(data.loadEventMs===null?"n/a":data.loadEventMs+" ms")+
         " • Scripts "+(data.scriptCount===null?"n/a":data.scriptCount)+
         " • "+data.cacheStatus+
+        (data.summary.sampleCount?" • Samples "+data.summary.sampleCount:"")+
         (data.connectionType?" • "+data.connectionType:"")+ 
         (data.rttMs!==null?" • RTT "+data.rttMs+" ms":"")+
         (data.slowLoad||data.slowDom?" • Slow-load warning":"")+
@@ -76,7 +84,7 @@
     }
   }
 
-  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},clearSamples:function(){samples=[];return true;}};
+  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},getSummary:summary,clearSamples:function(){samples=[];return true;}};
 
   if(document.readyState==="loading"){
     document.addEventListener("DOMContentLoaded",function(){setTimeout(render,0);});
