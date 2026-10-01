@@ -7,6 +7,8 @@ on:
       - "src/js/pacificEducationOfflineRuntime.js"
       - "src/js/pacificEducationOfflineSyncController.js"
       - "tests/offline-sync-regression.test.js"
+      - "tests/offline-sync-ui-regression.test.js"
+      - "docs/LOW-CONNECTIVITY-TESTING.md"
       - "package.json"
       - ".github/workflows/offline-sync-regression.yml"
   pull_request:
@@ -14,6 +16,8 @@ on:
       - "src/js/pacificEducationOfflineRuntime.js"
       - "src/js/pacificEducationOfflineSyncController.js"
       - "tests/offline-sync-regression.test.js"
+      - "tests/offline-sync-ui-regression.test.js"
+      - "docs/LOW-CONNECTIVITY-TESTING.md"
       - "package.json"
       - ".github/workflows/offline-sync-regression.yml"
 
