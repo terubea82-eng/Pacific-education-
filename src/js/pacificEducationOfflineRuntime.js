@@ -31,8 +31,9 @@ function getQueueConflictCandidates(){
  return {count:duplicates.length,requiresManualReview:duplicates.length>0,items:duplicates,prototype:true};
 }
 function getQueueStatus(){
- var q=getQueue();
- return {count:q.length,items:q.slice(),prototype:true};
+ var result=getQueue();
+ var items=result&&Array.isArray(result.items)?result.items:[];
+ return {count:items.length,items:items.slice(),prototype:true};
 }
 function getQueue(){return{items:q(),count:q().length,prototype:true};}
 function clearQueue(){return{success:save([]),prototype:true};}
