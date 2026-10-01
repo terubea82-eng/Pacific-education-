@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "node --test tests/offline-sync-regression.test.js"
+    "test": "node --test tests/offline-sync-regression.test.js tests/offline-sync-ui-regression.test.js"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.28.0",
