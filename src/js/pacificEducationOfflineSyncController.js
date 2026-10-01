@@ -1,13 +1,16 @@
 /* PACIFIC EDUCATION — OFFLINE SYNC CONTROLLER
- * v1.3.0 — prototype reconciliation, conflict gating and retry planning only
+ * v1.4.0 — reconnect state, user-visible sync status, conflict gating and retry planning only
  * A real server must authenticate the session, validate ownership,
  * deduplicate events and acknowledge durable persistence.
  */
 (function(window){
 "use strict";
-var VERSION="1.3.0";
+var VERSION="1.4.0";
 var MAX_RETRIES=5;
 var BASE_DELAY_MS=2000;
+var connectionState=navigator.onLine?"online":"offline";
+var lastTransitionAt=Date.now();
+var lastTransition=null;
 function runtime(){return window.PacificEducationOfflineRuntime||null;}
 function eventId(item){
  var s=[item&&item.type||"",item&&item.lessonId||"",item&&item.dayNumber||"",item&&item.completed?"1":"0"].join("|");
@@ -25,7 +28,7 @@ function inspect(){
  if(!r||typeof r.getQueue!=="function") return {ready:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
  var q=r.getQueue();
  var conflicts=conflictSummary();
- return {ready:true,queuedProgressCount:q.count||0,serverSyncConfigured:false,syncStatus:"SERVER_ENDPOINT_REQUIRED",retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},conflictCount:conflicts.count||0,requiresManualReview:Boolean(conflicts.requiresManualReview),productionApproved:false,prototype:true};
+ return {ready:true,queuedProgressCount:q.count||0,serverSyncConfigured:false,syncStatus:"SERVER_ENDPOINT_REQUIRED",retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},conflictCount:conflicts.count||0,requiresManualReview:Boolean(conflicts.requiresManualReview),connectionState:connectionState,lastTransitionAt:lastTransitionAt,lastTransition:lastTransition,productionApproved:false,prototype:true};
 }
 function conflictKey(item){
  item=item||{};
@@ -87,6 +90,54 @@ function clearAfterServerAcknowledgement(ack){
  if(!r||typeof r.clearQueue!=="function")return{success:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
  return{success:r.clearQueue().success,cleared:true,productionApproved:false,prototype:true};
 }
+function connectionSummary(){
+ var s=inspect();
+ return {state:connectionState,online:connectionState==="online",queuedProgressCount:s.queuedProgressCount||0,conflictCount:s.conflictCount||0,requiresManualReview:Boolean(s.requiresManualReview),lastTransitionAt:lastTransitionAt,lastTransition:lastTransition,serverSyncConfigured:false,prototype:true};
+}
+function announce(reason){
+ var detail=connectionSummary();
+ detail.reason=reason||null;
+ try{window.dispatchEvent(new CustomEvent("pacific:offline-sync-status",{detail:detail}));}catch(e){}
+ renderUserStatus(detail);
+}
+function renderUserStatus(detail){
+ function render(){
+   var host=document.getElementById("systemStatus");
+   if(!host)return;
+   var el=host.querySelector("[data-pacific-reconnect-status]");
+   if(!el){
+     el=document.createElement("div");
+     el.setAttribute("data-pacific-reconnect-status","");
+     el.setAttribute("role","status");
+     el.setAttribute("aria-live","polite");
+     host.appendChild(el);
+   }
+   var queued=detail.queuedProgressCount||0;
+   if(detail.requiresManualReview){
+     el.textContent=detail.online
+       ? "Connection restored. "+detail.conflictCount+" queued sync conflict(s) require manual review; data remains preserved."
+       : "Offline. "+detail.conflictCount+" queued sync conflict(s) require manual review; data remains preserved.";
+   }else if(detail.online){
+     el.textContent=queued
+       ? "Connection restored. "+queued+" queued learning item(s) remain pending; automatic server sync is not configured."
+       : "Connection restored. No queued learning sync items are pending.";
+   }else{
+     el.textContent=queued
+       ? "Offline. Learning progress is queued locally for later review/sync."
+       : "Offline. The learning shell can continue using available offline support.";
+   }
+ }
+ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",render,{once:true});else render();
+}
+function transition(next,reason){
+ var changed=connectionState!==next;
+ connectionState=next;
+ if(changed){lastTransitionAt=Date.now();lastTransition=reason||next;}
+ announce(reason||next);
+}
 function status(){return inspect();}
-window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,detectConflicts:detectConflicts,hasConflictFor:hasConflictFor,conflictSummary:conflictSummary,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
+window.addEventListener("offline",function(){transition("offline","network-offline");});
+window.addEventListener("online",function(){transition("online","network-reconnected");});
+window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,detectConflicts:detectConflicts,hasConflictFor:hasConflictFor,conflictSummary:conflictSummary,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status,connectionSummary:connectionSummary,announceStatus:announce});
+announce("initial-state");
 })(window);
