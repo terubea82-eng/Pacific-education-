@@ -83,3 +83,9 @@ This document is an evidence template for Stage 26 performance, capacity, scalin
 - Production authorization: **Not established by this document.**
 
 > This template does not constitute a production approval or claim that testing has been performed. Populate it only with observed evidence.
+
+## Evidence status
+
+- This template is a recording tool, not test evidence by itself.
+- Do not mark a scenario complete without observed results and an evidence reference.
+- Do not convert prototype measurements into production capacity claims.
