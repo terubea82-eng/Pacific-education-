@@ -14,7 +14,13 @@
     var STATES = ["not-started", "taught", "practised", "assessed", "covered"];
     var STAGE_TYPES = ["teach", "guided-practice", "independent-practice", "application", "check-assessment", "remedial-extension"];
 
-    function getClassId(input) {\n        if (input && input.classId) return String(input.classId).trim();\n        var r = window.PacificEducationTeacherClassRosterContext;\n        return r && typeof r.getClassId === "function" ? r.getClassId() : null;\n    }\n\n    function copy(v) {
+    function getClassId(input) {
+        if (input && input.classId) return String(input.classId).trim();
+        var r = window.PacificEducationTeacherClassRosterContext;
+        return r && typeof r.getClassId === "function" ? r.getClassId() : null;
+    }
+
+    function copy(v) {
         return JSON.parse(JSON.stringify(v));
     }
 
@@ -38,14 +44,16 @@
 
     function find(records, indicatorId, studentId, classId) {
         return records.find(function(r) {
-            return r.evidenceType !== "indicator-stage" && r.indicatorId === indicatorId &&
+            return r.evidenceType !== "indicator-stage" && r.classId === String(classId || "") && r.indicatorId === indicatorId &&
                 (r.studentId || null) === (studentId || null);
         });
     }
 
     function record(input) {
         input = input || {};
-        var classId = getClassId(input);\n        if (!classId) return { success: false, error: "Class Reference required" };\n        if (!input.indicatorId) {
+        var classId = getClassId(input);
+        if (!classId) return { success: false, error: "Class Reference required" };
+        if (!input.indicatorId) {
             return { success: false, error: "indicatorId required" };
         }
 
@@ -64,6 +72,7 @@
         if (isStage) {
             var stageRecord = {
                 indicatorId: input.indicatorId,
+                classId: classId,
                 studentId: input.studentId || null,
                 firstRecordedAt: now,
                 prototype: true,
@@ -92,6 +101,7 @@
 
         var item = existing || {
             indicatorId: input.indicatorId,
+            classId: classId,
             studentId: input.studentId || null,
             firstRecordedAt: now,
             prototype: true
@@ -127,8 +137,10 @@
 
     function list(filters) {
         filters = filters || {};
+        var classId = getClassId(filters);
         return load().filter(function(r) {
-            return (!filters.indicatorId || r.indicatorId === filters.indicatorId) &&
+            return (!classId || r.classId === String(classId)) &&
+                (!filters.indicatorId || r.indicatorId === filters.indicatorId) &&
                 (!filters.studentId || r.studentId === filters.studentId) &&
                 (!filters.status || r.status === filters.status);
         }).map(copy);
@@ -189,7 +201,8 @@
     function validate() {
         var errors = [];
         load().forEach(function(r) {
-            if (!r.classId) errors.push(r.indicatorId + ": Coverage record missing Class Reference");\n            if (!r.indicatorId) errors.push("Coverage record missing indicatorId");
+            if (!r.classId) errors.push(r.indicatorId + ": Coverage record missing Class Reference");
+            if (!r.indicatorId) errors.push("Coverage record missing indicatorId");
             if (STATES.indexOf(r.status) < 0) {
                 errors.push(r.indicatorId + ": invalid coverage status");
             }
