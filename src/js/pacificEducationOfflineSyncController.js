@@ -1,11 +1,11 @@
 /* PACIFIC EDUCATION — OFFLINE SYNC CONTROLLER
- * v1.5.0 — reconnect state, manual conflict review state, safe retry gating and retry planning only
+ * v1.6.0 — reconnect state, visible manual conflict review controls, safe retry gating and retry planning only
  * A real server must authenticate the session, validate ownership,
  * deduplicate events and acknowledge durable persistence.
  */
 (function(window){
 "use strict";
-var VERSION="1.5.0";
+var VERSION="1.6.0";
 var MAX_RETRIES=5;
 var BASE_DELAY_MS=2000;
 var REVIEW_KEY="pacificEducationOfflineSyncConflictReviews";
@@ -74,12 +74,16 @@ function buildSyncBatch(){
 function markConflictReviewed(key){
  if(typeof key!=="string"||!key)return{success:false,reason:"INVALID_CONFLICT_KEY",prototype:true};
  var reviews=readReviews();reviews[key]={reviewedAt:new Date().toISOString()};
- return{success:saveReviews(reviews),key:key,reviewed:true,prototype:true};
+ var result={success:saveReviews(reviews),key:key,reviewed:true,prototype:true};
+ announce("manual-conflict-reviewed");
+ return result;
 }
 function clearConflictReview(key){
  if(typeof key!=="string"||!key)return{success:false,reason:"INVALID_CONFLICT_KEY",prototype:true};
  var reviews=readReviews();delete reviews[key];
- return{success:saveReviews(reviews),key:key,reviewed:false,prototype:true};
+ var result={success:saveReviews(reviews),key:key,reviewed:false,prototype:true};
+ announce("manual-conflict-unreviewed");
+ return result;
 }
 function canRetrySync(attempt){
  var s=inspect(),n=Number.isInteger(attempt)&&attempt>=0?attempt:0;
@@ -104,7 +108,69 @@ function clearAfterServerAcknowledgement(ack){
 }
 function connectionSummary(){var s=inspect();return{state:connectionState,online:connectionState==="online",queuedProgressCount:s.queuedProgressCount||0,conflictCount:s.conflictCount||0,pendingConflictCount:s.pendingConflictCount||0,requiresManualReview:Boolean(s.requiresManualReview),lastTransitionAt:lastTransitionAt,lastTransition:lastTransition,serverSyncConfigured:false,prototype:true};}
 function announce(reason){var detail=connectionSummary();detail.reason=reason||null;try{window.dispatchEvent(new CustomEvent("pacific:offline-sync-status",{detail:detail}));}catch(e){}renderUserStatus(detail);}
-function renderUserStatus(detail){function render(){var host=document.getElementById("systemStatus");if(!host)return;var el=host.querySelector("[data-pacific-reconnect-status]");if(!el){el=document.createElement("div");el.setAttribute("data-pacific-reconnect-status","");el.setAttribute("role","status");el.setAttribute("aria-live","polite");host.appendChild(el);}var queued=detail.queuedProgressCount||0;if(detail.requiresManualReview){el.textContent=detail.online?"Connection restored. "+detail.pendingConflictCount+" queued sync conflict(s) require manual review; data remains preserved.":"Offline. "+detail.pendingConflictCount+" queued sync conflict(s) require manual review; data remains preserved.";}else if(detail.online){el.textContent=queued?"Connection restored. "+queued+" queued learning item(s) remain pending; automatic server sync is not configured.":"Connection restored. No queued learning sync items are pending.";}else{el.textContent=queued?"Offline. Learning progress is queued locally for later review/sync.":"Offline. The learning shell can continue using available offline support.";}}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",render,{once:true});else render();}
+function renderConflictControls(detail){
+ var host=document.getElementById("systemStatus");
+ if(!host)return;
+ var box=host.querySelector("[data-pacific-conflict-review]");
+ if(!box){
+   box=document.createElement("div");
+   box.setAttribute("data-pacific-conflict-review","");
+   box.setAttribute("role","region");
+   box.setAttribute("aria-label","Offline sync conflict review");
+   host.appendChild(box);
+ }
+ box.innerHTML="";
+ var summary=conflictSummary();
+ if(!summary.count){box.hidden=true;return;}
+ box.hidden=false;
+ var heading=document.createElement("strong");
+ heading.textContent="Sync conflict review";
+ box.appendChild(heading);
+ var note=document.createElement("p");
+ note.textContent=summary.pendingCount?"Review each conflict before retrying sync. Reviewing does not delete or automatically change queued data.":"All queued conflicts have been reviewed. Queued data remains preserved.";
+ box.appendChild(note);
+ summary.conflicts.forEach(function(conflict){
+   var row=document.createElement("div");
+   row.setAttribute("data-pacific-conflict-row",conflict.key);
+   var label=document.createElement("span");
+   label.textContent="Lesson "+(conflict.first&&conflict.first.lessonId||"unknown")+", day "+(conflict.first&&conflict.first.dayNumber||"unknown")+": "+(conflict.first&&conflict.first.completed?"completed":"not completed")+" vs "+(conflict.second&&conflict.second.completed?"completed":"not completed");
+   row.appendChild(label);
+   if(conflict.reviewed){
+     var reviewed=document.createElement("span");
+     reviewed.textContent=" — Reviewed; data preserved.";
+     row.appendChild(reviewed);
+     var undo=document.createElement("button");
+     undo.type="button";
+     undo.textContent="Require review again";
+     undo.setAttribute("aria-label","Require manual review again for lesson "+(conflict.first&&conflict.first.lessonId||"unknown")+", day "+(conflict.first&&conflict.first.dayNumber||"unknown"));
+     undo.addEventListener("click",function(){clearConflictReview(conflict.key);});
+     row.appendChild(undo);
+   }else{
+     var review=document.createElement("button");
+     review.type="button";
+     review.textContent="Mark reviewed";
+     review.setAttribute("aria-label","Mark sync conflict reviewed for lesson "+(conflict.first&&conflict.first.lessonId||"unknown")+", day "+(conflict.first&&conflict.first.dayNumber||"unknown"));
+     review.addEventListener("click",function(){markConflictReviewed(conflict.key);});
+     row.appendChild(review);
+   }
+   box.appendChild(row);
+ });
+}
+function renderUserStatus(detail){
+ function render(){
+   var host=document.getElementById("systemStatus");
+   if(!host)return;
+   var el=host.querySelector("[data-pacific-reconnect-status]");
+   if(!el){el=document.createElement("div");el.setAttribute("data-pacific-reconnect-status","");el.setAttribute("role","status");el.setAttribute("aria-live","polite");host.appendChild(el);}
+   var queued=detail.queuedProgressCount||0;
+   if(detail.requiresManualReview){el.textContent=detail.online?"Connection restored. "+detail.pendingConflictCount+" queued sync conflict(s) require manual review; data remains preserved.":"Offline. "+detail.pendingConflictCount+" queued sync conflict(s) require manual review; data remains preserved.";}
+   else if(detail.conflictCount){el.textContent="All queued sync conflicts have been manually reviewed; data remains preserved. Automatic server sync is not configured.";}
+   else if(detail.online){el.textContent=queued?"Connection restored. "+queued+" queued learning item(s) remain pending; automatic server sync is not configured.":"Connection restored. No queued learning sync items are pending.";}
+   else{el.textContent=queued?"Offline. Learning progress is queued locally for later review/sync.":"Offline. The learning shell can continue using available offline support.";}
+   renderConflictControls(detail);
+ }
+ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",render,{once:true});else render();
+}
 function transition(next,reason){var changed=connectionState!==next;connectionState=next;if(changed){lastTransitionAt=Date.now();lastTransition=reason||next;}announce(reason||next);}
 function status(){return inspect();}
 window.addEventListener("offline",function(){transition("offline","network-offline");});
