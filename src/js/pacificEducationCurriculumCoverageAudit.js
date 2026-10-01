@@ -32,9 +32,9 @@
     var ctx=classContext();
     if(!ctx) return null;
     var f={classId:ctx.classId};
-    var level=window.localStorage.getItem("pacificEducationLevel");
-    var subject=window.localStorage.getItem("pacificEducationSubject");
-    var term=window.localStorage.getItem("pacificEducationTerm");
+    var level=String(ctx.level||"");
+    var subject=window.localStorage.getItem("pacificEducationSubject")||"";
+    var term=window.localStorage.getItem("pacificEducationTerm")||"";
     if(level) f.level=level;
     if(subject) f.subjectId=subject;
     if(term) f.term=term;
