@@ -205,7 +205,7 @@ html[data-text-scale="x-large"]{font-size:125%}
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRegistration);else initRegistration();
 })();
-</script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=1001"></script><script src="js/pacificEducationMasterInclusionSpecification.js"></script><script src="js/pacificEducationPilotIntegrityGuard.js"></script><script src="js/pacificEducationCoreBridge.js"></script><script src="js/pacificEducationMasterControl.js"></script><script src="js/pacificEducationGuardianReviewController.js"></script><script src="js/pacificEducationAnnualGdpPricingEngine.js"></script><script src="js/pacificEducationPricingAuditGuard.js"></script><script src="js/buyPlans.js"></script><script src="js/pacificEducationPaymentGateway.js"></script><script src="js/pacificEducationPaymentLinks.js"></script><script src="js/pacificEducationAccessEntitlement.js"></script><script src="js/pacificEducationInstitutionFeeRegistry.js"></script><script src="js/pacificEducationUniversityFeeWorkflow.js"></script><script src="js/pacificEducationCentralBridge.js"></script><script src="../js/pacificEducationEducationLinkBridge.js"></script><script src="../js/pacificEducationSecureLinkAuthorization.js"></script><script src="js/pacificEducationCountryConfig.js"></script><script src="js/pacificEducationLegalFramework.js"></script><script src="js/pacificEducationIndividualMandatoryInformation.js"></script><script src="js/pacificEducationStudentExternalIdRegistry.js"></script><script src="js/pacificEducationIdentityIntegrity.js"></script><script src="js/pacificEducationLanguagePreferences.js"></script><script src="js/pacificEducationPilotReadinessSelfCheck.js">
+</script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=1001"></script><script src="js/pacificEducationMasterInclusionSpecification.js"></script><script src="js/pacificEducationPilotIntegrityGuard.js"></script><script src="js/pacificEducationCoreBridge.js"></script><script src="js/pacificEducationMasterControl.js"></script><script src="js/pacificEducationGuardianReviewController.js"></script><script src="js/pacificEducationAnnualGdpPricingEngine.js"></script><script src="js/pacificEducationPricingAuditGuard.js"></script><script src="js/buyPlans.js"></script><script src="js/pacificEducationPaymentGateway.js"></script><script src="js/pacificEducationPaymentLinks.js"></script><script src="js/pacificEducationAccessEntitlement.js"></script><script src="js/pacificEducationInstitutionFeeRegistry.js"></script><script src="js/pacificEducationUniversityFeeWorkflow.js"></script><script src="js/pacificEducationCentralBridge.js"></script><script src="../js/pacificEducationEducationLinkBridge.js"></script><script src="../js/pacificEducationSecureLinkAuthorization.js"></script><script src="js/pacificEducationCountryConfig.js"></script><script src="js/pacificEducationLegalFramework.js"></script><script src="js/pacificEducationIndividualMandatoryInformation.js"></script><script src="js/pacificEducationStudentExternalIdRegistry.js"></script><script src="js/pacificEducationIdentityIntegrity.js"></script><script src="js/pacificEducationLanguagePreferences.js"></script><script src="js/pacificEducationPilotReadinessSelfCheck.js"></script>
 <script src="js/pacificEducationProductionFinalGate.js"></script>
 <script src="js/pacificEducationInstitutionSetup.js"></script>
 <script src="js/pacificEducationInstitutionInformationRegistry.js"></script>
@@ -229,7 +229,77 @@ html[data-text-scale="x-large"]{font-size:125%}
     ["teacherCalendarSection","pacificEducationExternalReviewerPortal"]
   ];
   var nextIds=["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
+  var welcomeScripts={
+    0:"Welcome to Pacific Education. You are at the Welcome section. This is a controlled pilot. Do not enter real sensitive child information, passwords, payment credentials, or exact child location data. Choose Next when you are ready to begin.",
+    1:"Welcome to User Registration. This section records pilot registration for this browser test session. Use only pilot-safe information, then save your registration and continue to Prototype Access.",
+    2:"Welcome to Prototype Access. This is the controlled pilot workspace. Production services are not active in this pilot. Continue when you are ready to choose a learning level.",
+    3:"Welcome to Learning Level. Choose the class or learning level for this session. Your next step is Curriculum Subject.",
+    4:"Welcome to Curriculum Subject. Choose the subject for this learning session. Your next step is School Term.",
+    5:"Welcome to School Term. Choose the term for this learning session. Your next step is Learning Capability.",
+    6:"Welcome to Learning Capability. Choose the learning capability or curriculum focus. Your next step is Daily Activities.",
+    7:"Welcome to Daily Activities. This is where learning begins. Complete the activity, then continue to Practice.",
+    8:"Welcome to Practice. Use this stage to practise the learning from Daily Activities before moving to Assessment.",
+    9:"Welcome to Assessment. Complete the assessment to record learning evidence. Continue according to the available assessment controls.",
+    10:"Welcome to Teacher and External Review. This area supports teacher review and authorized external review evidence. It is part of the controlled pilot and does not by itself authorize production release."
+  };
+  var sectionScripts={
+    pacificEducationMailbox:"Welcome to the Pacific Education Mail Box. This is a pilot communication area and is separate from personal email. Do not place sensitive personal information in pilot messages.",
+    learningPlatform:"Welcome to Learning Tools. Choose your class, subject, and term, then open Daily Activities to start learning.",
+    pacificEducationAppTools:"Welcome to Pacific Education App Tools. Shared tools such as the World Clock and school calendars are managed here.",
+    buyPlans:"Welcome to Pacific Education Plans. Real purchasing is inactive during the controlled pilot. Payment is not confirmed by the browser.",
+    publicationStatus:"Welcome to Publication Status. Pacific Education is currently presented as a controlled pilot. Production remains subject to required verification and authorization.",
+    pacificEducationAIConversation:"Welcome to Pacific Education AI. This is the user-facing conversational assistant. Pacific Guardian is not the conversational assistant; Guardian remains the owner-accountable governance and oversight layer.",
+    pacificGuardianCommentSection:"Welcome to Pacific Guardian Owner Oversight. This area is for authorized governance evidence and owner oversight. Users do not converse directly with Guardian.",
+    systemStatus:"Welcome to System Status. This section reports the current pilot application shell and available runtime status information."
+  };
   var current=0;
+
+  function stop(){
+    try{ if("speechSynthesis" in window) window.speechSynthesis.cancel(); }catch(_){}
+    try{ if(window.PacificEducationAccessibilityRuntime && window.PacificEducationAccessibilityRuntime.stopSpeaking) window.PacificEducationAccessibilityRuntime.stopSpeaking(); }catch(_){}
+  }
+
+  function speak(text){
+    if(!text)return false;
+    stop();
+    try{
+      if(window.speakText){ window.speakText(text); return true; }
+      if("speechSynthesis" in window){
+        var u=new SpeechSynthesisUtterance(text);
+        u.lang="en-NZ";
+        u.rate=0.95;
+        u.pitch=1;
+        u.volume=1;
+        window.speechSynthesis.speak(u);
+        return true;
+      }
+    }catch(_){}
+    return false;
+  }
+
+  window.PacificEducationVoice={
+    open:function(stepOrId){
+      var text;
+      if(typeof stepOrId==="number" || /^\\d+$/.test(String(stepOrId))){
+        text=welcomeScripts[Number(stepOrId)];
+      }else{
+        var id=String(stepOrId||"").replace(/^#/,"");
+        text=sectionScripts[id];
+        if(!text){
+          var el=document.getElementById(id);
+          var heading=el&&el.querySelector("h1,h2,h3");
+          var title=heading?heading.textContent.trim():"Pacific Education";
+          text="Welcome to "+title+". This section provides information or tools within the controlled Pacific Education pilot.";
+        }
+      }
+      return speak(text);
+    },
+    replay:function(){
+      return this.open(current);
+    },
+    stop:stop,
+    speak:speak
+  };
 
   function applyStep(index){
     current=Math.max(0,Math.min(stepGroups.length-1,Number(index)||0));
@@ -238,7 +308,10 @@ html[data-text-scale="x-large"]{font-size:125%}
 
     var main=document.getElementById("app");
     if(main){
-      Array.prototype.forEach.call(main.children,function(el){if(el.id==="pacificEducationSingleRegistration"||el.id==="pilotBanner")return;el.hidden=true;});
+      Array.prototype.forEach.call(main.children,function(el){
+        if(el.id==="pacificEducationSingleRegistration"||el.id==="pilotBanner")return;
+        el.hidden=true;
+      });
     }
 
     stepGroups[current].forEach(function(id){
@@ -258,6 +331,7 @@ html[data-text-scale="x-large"]{font-size:125%}
     });
 
     window.scrollTo({top:0,behavior:"smooth"});
+    window.PacificEducationVoice.open(current);
   }
 
   window.PacificEducationGuidedNext=function(nextIndex){
@@ -269,6 +343,7 @@ html[data-text-scale="x-large"]{font-size:125%}
       if(!registration||!registration.name||!registration.role){
         var status=document.getElementById("pilotRegistrationStatus");
         if(status)status.textContent="Please save Pilot Registration before continuing.";
+        window.PacificEducationVoice.speak("Please save Pilot Registration before continuing to Prototype Access.");
         return false;
       }
     }
@@ -276,11 +351,26 @@ html[data-text-scale="x-large"]{font-size:125%}
     return false;
   };
 
-  window.PacificEducationGuidedCurrent=function(){
-    return current;
-  };
+  window.PacificEducationGuidedCurrent=function(){return current;};
 
-  function init(){applyStep(0);}
+  function init(){
+    applyStep(0);
+
+    var welcomeButton=document.getElementById("pacificEducationWelcomeVoiceButton");
+    if(welcomeButton)welcomeButton.addEventListener("click",function(){window.PacificEducationVoice.replay();});
+
+    document.addEventListener("click",function(e){
+      var link=e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if(!link)return;
+      var href=link.getAttribute("href");
+      if(!href || href==="#")return;
+      var id=href.slice(1);
+      if(document.getElementById(id)){
+        setTimeout(function(){window.PacificEducationVoice.open(id);},50);
+      }
+    });
+  }
+
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
@@ -288,11 +378,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 (function(){
   var refreshText="Refresh information: If Pacific Education has been updated, please refresh this page to load the latest version. Automatic refresh checking remains active.";
   function speakRefresh(){
-    if(window.speakText){window.speakText(refreshText);return true;}
-    if("speechSynthesis" in window){
-      var u=new SpeechSynthesisUtterance(refreshText);
-      u.lang="en";window.speechSynthesis.cancel();window.speechSynthesis.speak(u);return true;
-    }
+    if(window.PacificEducationVoice){window.PacificEducationVoice.speak(refreshText);return true;}
     return false;
   }
   function init(){
@@ -305,43 +391,11 @@ html[data-text-scale="x-large"]{font-size:125%}
 </script>
 <script>
 (function(){
- function speakWelcome(){
-   var text="Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
-   if(window.speakText){window.speakText(text);return true;}
-   if("speechSynthesis" in window){var u=new SpeechSynthesisUtterance(text);u.lang="en";window.speechSynthesis.cancel();window.speechSynthesis.speak(u);return true;}
-   return false;
- }
- function init(){
-   var b=document.getElementById("pacificEducationWelcomeVoiceButton");
-   if(b)b.addEventListener("click",speakWelcome);
-   setTimeout(function(){
-     if(document.visibilityState==="visible")speakWelcome();
-   },700);
- }
- if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+  var b=document.getElementById("pacificEducationWelcomeVoiceButton");
+  if(b && !b.dataset.peWelcomeBound){
+    b.dataset.peWelcomeBound="true";
+    b.setAttribute("aria-label","Replay the mandatory Pacific Education welcome");
+  }
 })();
 </script>
-<script>
-(function(){
-  function playPacificWelcome(){
-    var text="Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
-    try{
-      if(window.speakText){window.speakText(text);return true;}
-      if("speechSynthesis" in window){
-        window.speechSynthesis.cancel();
-        var u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=0.95;u.pitch=1;
-        window.speechSynthesis.speak(u);return true;
-      }
-    }catch(_){}
-    return false;
-  }
-  function bindWelcomeGreeting(){
-    var b=document.getElementById("pacificEducationHearWelcome");
-    if(b&&!b.dataset.peGreetingBound){b.dataset.peGreetingBound="true";b.addEventListener("click",playPacificWelcome);}
-    try{localStorage.setItem("pacificEducationWelcomeVisited","1");}catch(_){}
-    setTimeout(playPacificWelcome,900);
-    window.addEventListener("pageshow",function(){setTimeout(playPacificWelcome,500);});
-  }
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",bindWelcomeGreeting);else bindWelcomeGreeting();
-})();
-</script></body></html>
+</body></html>
