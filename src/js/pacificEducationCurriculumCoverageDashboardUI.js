@@ -133,7 +133,7 @@
                     if (window.PacificEducationTermSelector && typeof window.PacificEducationTermSelector.setTerm === "function") {
                         window.PacificEducationTermSelector.setTerm(el.value);
                     } else {
-                        try { window.localStorage.setItem("pacificEducationTerm", el.value); } catch (e) {}
+                        return;
                     }
                 }
                 render(targetId);
