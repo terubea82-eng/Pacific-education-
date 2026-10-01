@@ -12,6 +12,7 @@
   "theme_color": "#0b5d7a",
   "categories": ["education", "learning"],
   "lang": "en",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/Pacific-education-/icons/pacific-education-192.svg",
