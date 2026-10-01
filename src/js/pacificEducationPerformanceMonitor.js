@@ -33,6 +33,7 @@
 
   function render(){
     var data=collect();
+    data.cacheStatus=("serviceWorker"in navigator) ? "Service worker supported" : "Service worker unavailable";
     window.PacificEducationPerformance=data;
     var status=document.getElementById("systemStatus");
     if(status){
@@ -45,7 +46,8 @@
       }
       target.textContent="Runtime performance: DOM "+(data.domContentLoadedMs===null?"n/a":data.domContentLoadedMs+" ms")+
         " • Load "+(data.loadEventMs===null?"n/a":data.loadEventMs+" ms")+
-        " • Scripts "+(data.scriptCount===null?"n/a":data.scriptCount);
+        " • Scripts "+(data.scriptCount===null?"n/a":data.scriptCount)+
+        " • "+data.cacheStatus;
     }
   }
 
