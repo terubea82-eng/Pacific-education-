@@ -62,6 +62,11 @@ function conflictKey(item){
     return conflicts;
   }
 
+function hasConflictFor(item,items){
+    var key=conflictKey(item);
+    return (items||[]).some(function(x){return conflictKey(x)===key && x && item && x.completed!==item.completed;});
+  }
+
 function conflictSummary(){
     var queue=[];
     try{
