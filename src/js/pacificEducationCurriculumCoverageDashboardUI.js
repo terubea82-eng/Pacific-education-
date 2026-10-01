@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.2.0";
+    var VERSION = "1.2.1";
 
     function engine() {
         return window.PacificEducationCurriculumCoverageEngine || null;
@@ -59,7 +59,7 @@
 
         var filters = {
             classId: classContext.classId,
-            level: getValue("pacificEducationCoverageLevel", "pacificEducationLevel", ""),
+            level: String(classContext.level || ""),
             subjectId: getValue("pacificEducationCoverageSubject", "pacificEducationSubject", ""),
             term: getValue("pacificEducationCoverageTerm", "pacificEducationTerm", "")
         };
