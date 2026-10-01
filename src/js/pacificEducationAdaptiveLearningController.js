@@ -11,7 +11,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var LAST_SIGNATURE_KEY = "pacificEducationAdaptiveLastAssessment";
   var CAPABILITY_KEY = "pacificEducationCapability";
 
@@ -47,12 +47,22 @@
     }[capability] || "Expected-level";
   }
 
+  function selectedClassId() {
+    try {
+      var roster = window.PacificEducationTeacherClassRosterContext;
+      if (!roster || typeof roster.getClassId !== "function" || typeof roster.getClass !== "function") return "";
+      var id = String(roster.getClassId() || "").trim();
+      return id && roster.getClass(id) ? id : "";
+    } catch (e) { return ""; }
+  }
+
   function currentContext() {
     var day = 1;
     try {
       day = Number(localStorage.getItem("currentDayNumber") || 1);
     } catch (e) {}
     return {
+      classId: selectedClassId(),
       level: (function(){ try { return localStorage.getItem("pacificEducationLevel") || "Class 1"; } catch(e){ return "Class 1"; } })(),
       subject: (function(){ try { return localStorage.getItem("pacificEducationSubject") || "English"; } catch(e){ return "English"; } })(),
       term: (function(){ try { return localStorage.getItem("pacificEducationTerm") || "Term 1"; } catch(e){ return "Term 1"; } })(),
@@ -64,13 +74,15 @@
     var score = numberFrom(result);
     var capability = chooseCapability(score);
     var context = currentContext();
+    if (!context.classId) return {success:false,error:"Class Reference required",prototype:true};
+    if (result && result.classId && String(result.classId) !== String(context.classId)) return {success:false,error:"Assessment belongs to a different Class Reference",prototype:true};
     var passed = result && (result.passed === true || result.pass === true);
     if (!passed && Number.isFinite(score)) passed = score >= 60;
 
     try {
-      localStorage.setItem(CAPABILITY_KEY, capability);
-      localStorage.setItem("pacificEducationAdaptiveLastScore", score === null ? "" : String(score));
-      localStorage.setItem("pacificEducationAdaptiveLearningStatus",
+      localStorage.setItem(CAPABILITY_KEY + ":" + context.classId, capability);
+      localStorage.setItem("pacificEducationAdaptiveLastScore:" + context.classId, score === null ? "" : String(score));
+      localStorage.setItem("pacificEducationAdaptiveLearningStatus:" + context.classId,
         capability === "remedial"
           ? "Targeted re-teaching recommended"
           : capability === "developing"
@@ -78,7 +90,7 @@
             : capability === "advanced"
               ? "Extension activity recommended"
               : "Independent expected-level learning recommended");
-      localStorage.setItem("pacificEducationAdaptiveNextActivity",
+      localStorage.setItem("pacificEducationAdaptiveNextActivity:" + context.classId,
         capability === "remedial"
           ? "Remedial / Re-teaching"
           : capability === "developing"
@@ -86,7 +98,7 @@
             : capability === "advanced"
               ? "Extension / Challenge"
               : "Independent Practice");
-      localStorage.setItem(LAST_SIGNATURE_KEY, JSON.stringify(result));
+      localStorage.setItem(LAST_SIGNATURE_KEY + ":" + context.classId, JSON.stringify(result));
     } catch (e) {}
 
     document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated", {
@@ -139,14 +151,21 @@
   }
 
   function getLatestAssessment() {
+    var classId = selectedClassId();
+    if (!classId) return null;
+    try {
+      var core = window.PacificEducationCore;
+      if (core && core.assessments && typeof core.assessments.getAll === "function") {
+        var items = core.assessments.getAll() || [];
+        return items.filter(function(x){ return String(x.classId || "") === String(classId); }).slice(-1)[0] || null;
+      }
+    } catch (e) {}
     try {
       var raw = localStorage.getItem("pacificEducationAssessments");
       if (!raw) return null;
       var data = JSON.parse(raw);
-      if (Array.isArray(data)) return data.length ? data[data.length - 1] : null;
-      if (data && Array.isArray(data.history)) {
-        return data.history.length ? data.history[data.history.length - 1] : null;
-      }
+      var items = Array.isArray(data) ? data : (data && Array.isArray(data.history) ? data.history : []);
+      return items.filter(function(x){ return String(x.classId || "") === String(classId); }).slice(-1)[0] || null;
     } catch (e) {}
     return null;
   }
@@ -157,7 +176,7 @@
     var signature;
     try { signature = JSON.stringify(result); } catch (e) { signature = String(result); }
     var previous = "";
-    try { previous = localStorage.getItem(LAST_SIGNATURE_KEY) || ""; } catch (e) {}
+    try { previous = localStorage.getItem(LAST_SIGNATURE_KEY + ":" + selectedClassId()) || ""; } catch (e) {}
     if (signature === previous) return null;
     return saveAdaptation(result);
   }
@@ -188,7 +207,7 @@
 
   function refreshSelectors() {
     document.dispatchEvent(new CustomEvent("pacificEducationCapabilityChanged", {
-      detail: { capability: (function(){ try { return localStorage.getItem(CAPABILITY_KEY) || "expected"; } catch(e){ return "expected"; } })(), prototype: true }
+      detail: { capability: (function(){ var id=selectedClassId(); try { return id ? (localStorage.getItem(CAPABILITY_KEY + ":" + id) || "expected") : "expected"; } catch(e){ return "expected"; } })(), classId: selectedClassId(), prototype: true }
     }));
     if (typeof window.displayDailyLesson === "function") {
       try { window.displayDailyLesson(); } catch (e) {}
