@@ -1,3 +1,4 @@
+# Current pilot gate verification trigger.
 name: Stage 15 QA Regression
 
 on:
