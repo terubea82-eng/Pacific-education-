@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.3.0";
+    var VERSION = "1.3.1";
 
     function context() {
         return window.PacificEducationStudentCoverageContext || null;
@@ -70,10 +70,10 @@
             .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
 
-    function getApprovedHomeAssessments(studentId) {
+    function getApprovedHomeAssessments(studentId, classId) {
         var records=[];
         try { records=JSON.parse(localStorage.getItem("pacificEducationApprovedHomeAssessments") || "[]"); } catch(e) { records=[]; }
-        return records.filter(function(r){ return !studentId || String(r.studentId)===String(studentId); });
+        return records.filter(function(r){ return r && String(r.classId || "")===String(classId || "") && (!studentId || String(r.studentId)===String(studentId)); });
     }
 
     function renderApprovedHomeEvidence(records) {
@@ -120,7 +120,7 @@
         var summary = e.summarize(filters);
         var records = e.list(filters);
         var remaining = e.getRemaining(filters);
-        var approvedHomeRecords = getApprovedHomeAssessments(studentId);
+        var approvedHomeRecords = getApprovedHomeAssessments(studentId, classContext.classId);
 
         var adaptiveCapability = "expected";
         var adaptiveStatus = "Independent expected-level learning recommended";
@@ -132,7 +132,7 @@
         } catch (ignoreAdaptive) {}
 
         var reviewPath = "No teacher review recorded yet";
-        try { var rr = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null"); if (rr) reviewPath = rr.status === "approved" ? "Approved — continue learning" : "Needs more practice"; } catch(ignoreReview) {}
+        try { var rr = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null"); if (rr && String(rr.classId || "") === String(classContext.classId)) reviewPath = rr.status === "approved" ? "Approved — continue learning" : "Needs more practice"; } catch(ignoreReview) {}
 
         var currentDay = 1;
         try {
@@ -160,7 +160,8 @@
                 level: level || "Class 1",
                 subjectId: subjectId,
                 term: term,
-                studentId: studentId
+                studentId: studentId,
+                classReference: classContext.classId
             }) : null;
 
         var curriculumIndicators = dailyPlan && Array.isArray(dailyPlan.indicators) ? dailyPlan.indicators.map(function(x){ return x && x.indicator ? x.indicator : x; }).filter(Boolean) : [];
@@ -172,7 +173,8 @@
                 level: level || "Class 1",
                 subjectId: subjectId,
                 term: term,
-                studentId: studentId
+                studentId: studentId,
+                classReference: classContext.classId
             }) : null;
 
         var assessments = assessmentMap() &&
