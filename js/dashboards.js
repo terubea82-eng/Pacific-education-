@@ -22,9 +22,18 @@
 (function (window) {
     "use strict";
 
-    const VERSION = "1.7.0";
+    const VERSION = "1.8.0";
     const MAX_DAY = 365;
     const ASSESSMENT_PASS_MARK = 80;
+
+    function getCurrentClassId() {
+        const roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function") {
+            const id = roster.getClassId();
+            return id ? String(id).trim() : "";
+        }
+        return "";
+    }
 
     const STORAGE = Object.freeze({
         currentDayNumber: "currentDayNumber",
@@ -259,6 +268,8 @@
         }
 
         const studentId = getCurrentStudentId();
+        const classId = getCurrentClassId();
+        if (!classId) return 0;
         let count = 0;
 
         for (
@@ -270,6 +281,7 @@
 
             if (
                 isCompletedHistoryEntry(entry) &&
+                String(entry.classId || "") === String(classId) &&
                 historyEntryMatchesStudent(
                     entry,
                     studentId
@@ -340,6 +352,7 @@
 
     function getCoreAssessmentDisplay(type) {
         const state = getCoreState();
+        const classId = getCurrentClassId();
 
         if (
             state &&
@@ -350,6 +363,7 @@
 
             state.assessments.forEach(function (record) {
                 if (!record || typeof record !== "object") return;
+                if (!classId || String(record.classId || "") !== String(classId)) return;
 
                 const recordType = String(
                     record.type ||
@@ -853,6 +867,9 @@
             return false;
         }
 
+        const classId = getCurrentClassId();
+        if (!classId) return false;
+
         const records =
             getAssessmentRecords();
 
@@ -864,6 +881,7 @@
             const record = records[index];
 
             if (
+                String(record.classId || "") === String(classId) &&
                 assessmentMatches(
                     record,
                     type,
