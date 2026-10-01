@@ -130,6 +130,33 @@
 
   function globalCommand(text) {
     var normalized = String(text || "").toLowerCase().replace(/[^a-z0-9\\s]/g, " ").replace(/\\s+/g, " ").trim();
+    var install = /^(install|install pacific education|download pacific education)$/.test(normalized);
+    if (install) {
+      var installEvent = getInstallEvent();
+      if (installEvent && typeof installEvent.prompt === "function") {
+        installEvent.prompt().then(function () {
+          try { installEvent.userChoice.then(function(choice){ if(choice && choice.outcome === "accepted") speakAndUpdate("Pacific Education installation started."); }); } catch (_) {}
+        });
+      } else {
+        speakAndUpdate("Pacific Education is ready on the web. If your browser offers Add to Home Screen or Install, choose it to install the web app.");
+      }
+      return;
+    }
+    var dictation = normalized.match(/^(?:dictate|type|enter|write) (.+)$/);
+    if (dictation) {
+      if (fillFocusedField(dictation[1])) speakAndUpdate("Entered the spoken text.");
+      else speakAndUpdate("Focus a text field, then say Dictate followed by your message.");
+      return;
+    }
+    var choose = normalized.match(/^choose option ([1-9][0-9]*)$/);
+    if (choose) {
+      speakAndUpdate(chooseOption(Number(choose[1])) ? "Option " + choose[1] + " selected." : "That option is not available.");
+      return;
+    }
+    if (/^(start voice|start listening|voice on)$/.test(normalized)) {
+      startGlobal();
+      return;
+    }
     if (/^(stop listening|voice off|stop voice control)$/.test(normalized)) {
       stopGlobal();
       return;
@@ -212,11 +239,55 @@
     updateGlobalUI("🎙️ Start Voice Control","Voice control stopped.");
   }
 
+  function getInstallEvent() {
+    return window.PacificEducationInstallPrompt || null;
+  }
+
+  function speakAndUpdate(message) {
+    updateGlobalUI(globalListening ? "🎙️ Voice Control: Listening" : "🎙️ Start Voice Control", message);
+    if (window.speakText) window.speakText(message);
+  }
+
+  function fillFocusedField(text) {
+    var value = String(text || "").trim();
+    if (!value) return false;
+    var active = document.activeElement;
+    if (!active || !/^(INPUT|TEXTAREA|SELECT)$/.test(active.tagName)) return false;
+    if (active.tagName === "SELECT") {
+      var options = [].slice.call(active.options || []);
+      var match = options.find(function (o) {
+        return String(o.textContent || "").toLowerCase().trim() === value.toLowerCase();
+      });
+      if (match) { active.value = match.value; active.dispatchEvent(new Event("change", {bubbles:true})); return true; }
+      return false;
+    }
+    var setter = Object.getOwnPropertyDescriptor(active.tagName === "TEXTAREA" ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype, "value");
+    if (setter && setter.set) setter.set.call(active, value);
+    else active.value = value;
+    active.dispatchEvent(new Event("input", {bubbles:true}));
+    active.dispatchEvent(new Event("change", {bubbles:true}));
+    return true;
+  }
+
+  function chooseOption(number) {
+    var choices = [].slice.call(document.querySelectorAll('input[type="radio"], input[type="checkbox"]')).filter(function(e){return !e.disabled;});
+    var index = Number(number) - 1;
+    if (index >= 0 && index < choices.length) {
+      choices[index].click();
+      return true;
+    }
+    return false;
+  }
+
   function updateGlobalUI(label,message) {
     var b=document.getElementById("pacificEducationPersistentVoiceButton");
     var s=document.getElementById("pacificEducationPersistentVoiceStatus");
+    var db=document.getElementById("pacificEducationVoiceDockButton");
+    var ds=document.getElementById("pacificEducationVoiceDockStatus");
     if(b)b.textContent=label;
     if(s)s.textContent=message;
+    if(db)db.textContent=label;
+    if(ds)ds.textContent=message;
   }
 
   function initGlobalVoiceUI() {
@@ -236,6 +307,21 @@
       b.onclick=function(){globalListening?stopGlobal():startGlobal();};
     }
     if(SpeechRecognition)setTimeout(startGlobal,400);
+    if (!document.getElementById("pacificEducationVoiceDock")) {
+      var dock=document.createElement("section");
+      dock.id="pacificEducationVoiceDock";
+      dock.setAttribute("aria-label","Pacific Education voice and installation controls");
+      dock.style.cssText="position:fixed;left:8px;right:8px;bottom:8px;z-index:9999;background:#fff;border:2px solid currentColor;border-radius:10px;padding:8px;box-shadow:0 2px 10px rgba(0,0,0,.18);display:flex;gap:6px;align-items:center;flex-wrap:wrap;";
+      var vb=document.createElement("button"); vb.type="button"; vb.textContent="🎙️ Start Voice Control"; vb.id="pacificEducationVoiceDockButton"; vb.setAttribute("aria-label","Start or stop voice control");
+      var ib=document.createElement("button"); ib.type="button"; ib.textContent="📲 Install Pacific Education"; ib.id="pacificEducationInstallButton"; ib.hidden=true;
+      var vs=document.createElement("span"); vs.id="pacificEducationVoiceDockStatus"; vs.setAttribute("role","status"); vs.setAttribute("aria-live","polite"); vs.textContent="Voice-first mode ready. Say Start Voice, Next, Read, Read Choices, Dictate, or Sign Out.";
+      vb.onclick=function(){globalListening?stopGlobal():startGlobal();};
+      ib.onclick=function(){var ev=getInstallEvent(); if(ev&&ev.prompt){ev.prompt();}};
+      dock.appendChild(vb); dock.appendChild(ib); dock.appendChild(vs); document.body.appendChild(dock);
+    }
+    if (window.PacificEducationInstallPrompt) {
+      var ib2=document.getElementById("pacificEducationInstallButton"); if(ib2)ib2.hidden=false;
+    }
     document.addEventListener("click",function(e){
       var x=e.target&&e.target.closest?e.target.closest("button,a,[role=button]"):null;
       if(x && /^(sign out|log out|logout)$/i.test(String(x.getAttribute("aria-label")||x.textContent||"").replace(/\s+/g," ").trim())) stopGlobal();
