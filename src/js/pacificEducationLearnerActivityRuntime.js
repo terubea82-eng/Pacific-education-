@@ -52,8 +52,11 @@
   }
 
   function contextFrom(lesson, day) {
+    var roster = window.PacificEducationTeacherClassRosterContext;
+    var classId = roster && typeof roster.getClassId === "function" ? roster.getClassId() : null;
     var source = lesson && lesson.activity ? lesson.activity : (lesson || {});
     return {
+      classId: classId,
       level: lesson && lesson.level || localStorage.getItem("pacificEducationLevel") || "Class 1",
       subjectId: lesson && lesson.subjectId || localStorage.getItem("pacificEducationSubject") || "English",
       term: lesson && lesson.term || localStorage.getItem("pacificEducationTerm") || "Term 1",
@@ -87,7 +90,8 @@
       response: response || "",
       questionText: ctx.questionText,
       audioDataUrl: audio || "",
-      classId: ctx.classId,\n      classLevel: ctx.level,
+      classId: ctx.classId,
+      classLevel: ctx.level,
       subject: ctx.subjectId,
       term: ctx.term,
       curriculumContext: ctx,
@@ -107,6 +111,7 @@
           score: score,
           passingScore: 60,
           activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
+          classId: ctx.classId,
           assessmentId: "daily-activity-" + type,
           level: ctx.level,
           subjectId: ctx.subjectId,
@@ -123,7 +128,8 @@
       try { home = JSON.parse(localStorage.getItem(homeKey) || "[]"); } catch (e) {}
       home.push({
         submissionId: "audio-activity-" + Date.now(),
-        classId: ctx.classId,\n        studentId: "pilot-student-demo",
+        classId: ctx.classId,
+        studentId: "pilot-student-demo",
         studentName: "Student",
         classLevel: ctx.level,
         subject: ctx.subjectId,
