@@ -71,7 +71,7 @@ function conflictSummary(){
     var queue=[];
     try{
       var runtime=window.PacificEducationOfflineRuntime;
-      if(runtime&&typeof runtime.getQueue==="function"){var result=runtime.getQueue();queue=result&&result.items||[];}
+      if(runtime&&typeof runtime.getQueueStatus==="function"){var result=runtime.getQueueStatus();queue=result&&result.items||[];}else if(runtime&&typeof runtime.getQueue==="function"){var result=runtime.getQueue();queue=result&&result.items||[];}
     }catch(e){queue=[];}
     var conflicts=detectConflicts(queue);
     return {count:conflicts.length,requiresManualReview:conflicts.length>0,conflicts:conflicts};
