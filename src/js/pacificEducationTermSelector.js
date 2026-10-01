@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.4.0";
+    var VERSION = "1.5.0";
     function getConfiguredTerms() {
         if (window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.getTerms === "function") return window.PacificEducationCountryConfig.getTerms();
         return ["Term 1", "Term 2", "Term 3"];
@@ -36,12 +36,25 @@
         return false;
     }
 
+    function getClassContext() {
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (!roster || typeof roster.getClassId !== "function" || typeof roster.getClass !== "function") return null;
+        var classId = String(roster.getClassId() || "").trim();
+        if (!classId) return null;
+        var currentClass = roster.getClass(classId);
+        return currentClass ? { classId: classId, level: String(currentClass.level || "").trim() } : null;
+    }
     function setTerm(term) {
         if (getConfiguredTerms().indexOf(term) === -1) return false;
-
+        var context = getClassContext();
+        if (!context) {
+            var status = document.getElementById("pacificEducationTermStatus");
+            if (status) status.textContent = "Select an existing Class Reference before selecting a term.";
+            return false;
+        }
         window.localStorage.setItem("pacificEducationTerm", term);
         document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
-            detail: { term: term, prototype: true }
+            detail: { classId: context.classId, level: context.level || "Class 1", subjectId: window.localStorage.getItem("pacificEducationSubject") || "English", term: term, prototype: true }
         }));
 
         var calendar = window.PacificEducationTeacherCalendar;
@@ -127,14 +140,22 @@
     }
 
     function getSelection() {
+        var context = getClassContext();
         return {
-            level: window.localStorage.getItem("pacificEducationLevel") || "Class 1",
+            classId: context ? context.classId : null,
+            level: context ? (context.level || "Class 1") : (window.localStorage.getItem("pacificEducationLevel") || "Class 1"),
             subjectId: window.localStorage.getItem("pacificEducationSubject") || "English",
             term: getTerm(),
             prototype: true
         };
     }
 
+    document.addEventListener("pacificEducationClassChanged", function(event) {
+        var detail = event && event.detail ? event.detail : {};
+        var current = getClassContext();
+        var status = document.getElementById("pacificEducationTermStatus");
+        if (status && current) status.textContent = "Class Reference: " + current.classId + " • Selected: " + getTerm() + " • " + (current.level || "Level not set") + " (prototype term selection)";
+    });
     document.addEventListener("pacificEducationCountryConfigChanged", function() { createUI(); });
 
     function initialise() {
