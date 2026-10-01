@@ -38,6 +38,10 @@ html[data-text-scale="x-large"]{font-size:125%}
 <p>Connect daily learning activities, educational content, assessment and progress so learners can build knowledge step by step and teachers can support learning effectively.</p>
 <h2>Vision</h2>
 <p>Support quality, inclusive and accessible education across the Pacific while strengthening learning connections between learners, teachers and families.</p>
+<div id="pacificEducationWelcomeVoice" aria-live="polite">
+<p><strong>Welcome to Pacific Education.</strong> We are pleased to welcome you. Learn, discover, practise and grow with us.</p>
+<button type="button" id="pacificEducationWelcomeVoiceButton" aria-label="Hear the Pacific Education welcome">🔊 Hear Welcome</button>
+</div>
 
 </div>
 <div id="pacificEducationWelcomeNext" style="margin-top:16px;"><button type="button" id="welcomeNextButton">➡️ Next</button></div>
@@ -90,6 +94,24 @@ html[data-text-scale="x-large"]{font-size:125%}
   }
   function init(){showStep(0);}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+<script>
+(function(){
+ function speakWelcome(){
+   var text="Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
+   if(window.speakText){window.speakText(text);return true;}
+   if("speechSynthesis" in window){var u=new SpeechSynthesisUtterance(text);u.lang="en";window.speechSynthesis.cancel();window.speechSynthesis.speak(u);return true;}
+   return false;
+ }
+ function init(){
+   var b=document.getElementById("pacificEducationWelcomeVoiceButton");
+   if(b)b.addEventListener("click",speakWelcome);
+   setTimeout(function(){
+     if(document.visibilityState==="visible")speakWelcome();
+   },700);
+ }
+ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
 </body></html>
