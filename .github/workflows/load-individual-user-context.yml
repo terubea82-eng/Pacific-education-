@@ -21,6 +21,7 @@ jobs:
           p=Path('src/index.html')
           s=p.read_text(encoding='utf-8')
           tag='<script src="js/pacificEducationIndividualUserContext.js"></script>'
+          # GitHub Pages serves src/index.html as the site root, so js/ maps to src/js/.
           if tag not in s:
               s=s.replace('</body>', tag+'\n</body>', 1)
               p.write_text(s, encoding='utf-8')
