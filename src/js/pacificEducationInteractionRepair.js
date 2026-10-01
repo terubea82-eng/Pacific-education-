@@ -6,7 +6,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "2.0.0";
+  var VERSION = "2.0.1";
   var errors = [];
   var AUTO_REFRESH_INTERVAL_MS = 60000;
   var AUTO_REFRESH_KEY = "pacificEducationAutoRefreshVersion";
@@ -436,9 +436,21 @@
     reportError(event && event.reason ? String(event.reason) : "Unhandled promise rejection", "promise");
   });
 
+  function getSelectedClassContext() {
+    var roster = window.PacificEducationTeacherClassRosterContext;
+    if (!roster || typeof roster.getClassId !== "function" || typeof roster.getClass !== "function") return null;
+    var classId = String(roster.getClassId() || "").trim();
+    if (!classId) return null;
+    var record = roster.getClass(classId);
+    if (!record) return null;
+    return {classId: classId, level: record.level || ""};
+  }
+
   function ensureDailyActivitiesVisible() {
     var daily = document.getElementById("dailyLesson");
     if (!daily) return false;
+    var classContext = getSelectedClassContext();
+    if (!classContext) return false;
 
     var existing = document.getElementById("pacificInteractiveActivity");
     if (existing) return true;
@@ -482,7 +494,9 @@
         var runtime = window.PacificEducationActivity;
         var lesson = {
           dayNumber: day,
-          level: localStorage.getItem("pacificEducationLevel") || "Class 1",
+          classReference: classContext.classId,
+          classId: classContext.classId,
+          level: classContext.level || localStorage.getItem("pacificEducationLevel") || "Class 1",
           subjectId: subject,
           term: localStorage.getItem("pacificEducationTerm") || "Term 1",
           title: "Day " + day + " — " + subject + " Daily Activity",
