@@ -40,6 +40,7 @@ function conflictSummary(){
  return{count:conflicts.length,reviewedCount:conflicts.length-pending.length,pendingCount:pending.length,requiresManualReview:pending.length>0,conflicts:conflicts};
 }
 function inspect(){
+ connectionState=navigator.onLine?"online":"offline";
  var r=runtime();if(!r||typeof r.getQueue!=="function")return{ready:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
  var q=r.getQueue(),conflicts=conflictSummary();
  return{ready:true,queuedProgressCount:q.count||0,serverSyncConfigured:false,syncStatus:"SERVER_ENDPOINT_REQUIRED",retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},conflictCount:conflicts.count||0,reviewedConflictCount:conflicts.reviewedCount||0,pendingConflictCount:conflicts.pendingCount||0,requiresManualReview:Boolean(conflicts.requiresManualReview),connectionState:connectionState,lastTransitionAt:lastTransitionAt,lastTransition:lastTransition,productionApproved:false,prototype:true};
