@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     function engine() {
         return window.PacificEducationCurriculumCoverageEngine || null;
@@ -50,7 +50,15 @@
             return { success: false, error: "Coverage engine unavailable" };
         }
 
+        var roster = window.PacificEducationTeacherClassRosterContext || null;
+        var classContext = roster && typeof roster.getContext === "function" ? roster.getContext() : null;
+        if (!classContext || !classContext.classId) {
+            target.innerHTML = "<div class=\"pacific-education-coverage-card\"><h2>Curriculum Coverage</h2><p>Select an existing Class Reference first.</p></div>";
+            return { success: false, error: "Class Reference required", prototype: true };
+        }
+
         var filters = {
+            classId: classContext.classId,
             level: getValue("pacificEducationCoverageLevel", "pacificEducationLevel", ""),
             subjectId: getValue("pacificEducationCoverageSubject", "pacificEducationSubject", ""),
             term: getValue("pacificEducationCoverageTerm", "pacificEducationTerm", "")
