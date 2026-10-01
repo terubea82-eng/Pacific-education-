@@ -493,7 +493,11 @@
     function getDailyLesson(dayNumber) {
 
         const day = Math.max(1, Math.min(365, Number(dayNumber) || 1));
-        const level = window.localStorage.getItem("pacificEducationLevel") || "Class 1";
+        const roster = window.PacificEducationTeacherClassRosterContext;
+        const classId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+        const selectedClass = classId && roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+        if (!selectedClass) return { title: "Select an existing Class Reference", activity: "Select an existing Class Reference before opening a class daily lesson.", practice: "Choose the class first so the lesson is linked to the correct curriculum scope.", classId: null, blocked: true };
+        const level = String(selectedClass.level || "Class 1");
         const subject = window.localStorage.getItem("pacificEducationSubject") || "English";
         const term = window.localStorage.getItem("pacificEducationTerm") || "Term 1";
         const capability = window.localStorage.getItem("pacificEducationCapability") || "expected";
@@ -504,7 +508,7 @@
          * page-by-page Day 1–365 navigation works across the full selector.
          */
         if (level === "Class 1" && subject === "English" && dailyLessons[day]) {
-            return dailyLessons[day];
+            return Object.assign({}, dailyLessons[day], { classId: classId, level: level, subjectId: subject, term: term });
         }
 
         try {
@@ -783,7 +787,7 @@
     window.PacificEducationDailyLessons =
         Object.freeze({
 
-            version: "1.3.0",
+            version: "1.4.0",
 
             getDailyLesson:
                 getDailyLesson,
