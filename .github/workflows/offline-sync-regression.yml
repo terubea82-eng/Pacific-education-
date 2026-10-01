@@ -1,0 +1,36 @@
+name: Offline Sync Regression
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "src/js/pacificEducationOfflineRuntime.js"
+      - "src/js/pacificEducationOfflineSyncController.js"
+      - "tests/offline-sync-regression.test.js"
+      - "package.json"
+      - ".github/workflows/offline-sync-regression.yml"
+  pull_request:
+    paths:
+      - "src/js/pacificEducationOfflineRuntime.js"
+      - "src/js/pacificEducationOfflineSyncController.js"
+      - "tests/offline-sync-regression.test.js"
+      - "package.json"
+      - ".github/workflows/offline-sync-regression.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  offline-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Run offline sync regression tests
+        run: npm test
