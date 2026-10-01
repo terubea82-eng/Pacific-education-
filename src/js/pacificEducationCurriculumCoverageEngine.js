@@ -8,7 +8,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var STORAGE_KEY = "pacificEducationCurriculumCoverage";
     var MAX_RECORDS = 5000;
     var STATES = ["not-started", "taught", "practised", "assessed", "covered"];
@@ -79,6 +79,9 @@
                 status: state,
                 date: input.date || now,
                 assessmentId: input.assessmentId || null,
+                level: input.level || null,
+                subjectId: input.subjectId || null,
+                term: input.term || null,
                 activityId: input.activityId || null,
                 level: input.level || null,
                 subjectId: input.subjectId || null,
@@ -110,6 +113,9 @@
         item.status = state;
         item.date = input.date || now;
         item.assessmentId = input.assessmentId || item.assessmentId || null;
+        item.level = input.level || item.level || null;
+        item.subjectId = input.subjectId || item.subjectId || null;
+        item.term = input.term || item.term || null;
         item.evidenceType = input.evidenceType || item.evidenceType || null;
         item.teacherConfirmed = input.teacherConfirmed === true;
         item.notes = input.notes || item.notes || "";
@@ -139,9 +145,12 @@
         filters = filters || {};
         var classId = getClassId(filters);
         return load().filter(function(r) {
-            return (!classId || r.classId === String(classId)) &&
+            return classId && r.classId === String(classId) &&
                 (!filters.indicatorId || r.indicatorId === filters.indicatorId) &&
                 (!filters.studentId || r.studentId === filters.studentId) &&
+                (!filters.level || r.level === filters.level) &&
+                (!filters.subjectId || r.subjectId === filters.subjectId) &&
+                (!filters.term || r.term === filters.term) &&
                 (!filters.status || r.status === filters.status);
         }).map(copy);
     }
