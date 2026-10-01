@@ -219,6 +219,29 @@
     if(s)s.textContent=message;
   }
 
+  function initGlobalVoiceUI() {
+    var controls=document.getElementById("pacificEducationAccessibilityControls");
+    if(controls && !document.getElementById("pacificEducationPersistentVoiceButton")){
+      var wrap=document.createElement("div");
+      wrap.style.cssText="display:flex;align-items:center;gap:6px;flex-wrap:wrap;width:100%;";
+      var b=document.createElement("button");
+      b.type="button";b.id="pacificEducationPersistentVoiceButton";
+      b.textContent="🎙️ Start Voice Control";
+      b.setAttribute("aria-label","Start voice control");
+      var s=document.createElement("span");
+      s.id="pacificEducationPersistentVoiceStatus";
+      s.setAttribute("role","status");s.setAttribute("aria-live","polite");
+      s.textContent="Voice control ready from page load. You can use voice directives without typing.";
+      wrap.appendChild(b);wrap.appendChild(s);controls.insertBefore(wrap,controls.firstChild);
+      b.onclick=function(){globalListening?stopGlobal():startGlobal();};
+    }
+    if(SpeechRecognition)setTimeout(startGlobal,400);
+    document.addEventListener("click",function(e){
+      var x=e.target&&e.target.closest?e.target.closest("button,a,[role=button]"):null;
+      if(x && /^(sign out|log out|logout)$/i.test(String(x.getAttribute("aria-label")||x.textContent||"").replace(/\s+/g," ").trim())) stopGlobal();
+    },true);
+  }
+
   function attach(nextId, statusElementId) {
     var button = document.getElementById(nextId);
     if (!button || button.dataset.peVoiceNextBound === "true") return;
@@ -244,6 +267,7 @@
   });
 
   document.addEventListener("DOMContentLoaded", function () {
+    initGlobalVoiceUI();
     // The guided-flow controller calls attachVoiceOption() after each step is shown.
   });
 })(window, document);
