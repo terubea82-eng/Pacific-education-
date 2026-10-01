@@ -33,6 +33,14 @@ test("accessibility runtime stores the UI-compatible voice preference values", (
   assert.match(runtime, /normalizeVoice\(value\)/);
 });
 
+test("accessibility runtime synchronizes the voice preference control", () => {
+  assert.match(runtime, /pacificEducationVoicePreferenceButton/);
+  assert.match(runtime, /aria-pressed/);
+  assert.match(runtime, /syncVoiceControl/);
+  assert.match(runtime, /Turn off voice preference/);
+  assert.match(runtime, /Turn on voice preference to read choices aloud/);
+});
+
 test("accessibility runtime exposes speech controls and availability status", () => {
   assert.match(runtime, /speechSynthesis/);
   assert.match(runtime, /SpeechSynthesisUtterance/);
