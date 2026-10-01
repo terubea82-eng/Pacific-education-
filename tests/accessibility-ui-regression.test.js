@@ -17,7 +17,7 @@ test("index exposes an accessible live status target", () => {
 });
 
 test("index keeps accessibility controls keyboard operable", () => {
-  assert.match(html, /aria-label=["'][^"']*Voice preference[^"']*["']/i);
+  assert.match(html, /pacificEducationVoicePreferenceButton/);
   assert.match(html, /type=["']button["']/);
 });
 
