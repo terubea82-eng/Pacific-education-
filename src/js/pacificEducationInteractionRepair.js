@@ -553,7 +553,8 @@
     audit: runDynamicInteractionAudit
   });
 
-  function start() {\n    startAutomaticRefreshMonitor();
+  function start() {
+    startAutomaticRefreshMonitor();
     repairControls();
     repairDailyActivityRuntime();
     window.setTimeout(repairControls, 500);
