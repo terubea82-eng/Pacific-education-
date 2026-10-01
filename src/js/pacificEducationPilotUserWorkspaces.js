@@ -61,13 +61,17 @@
     }
 
     function pilotContextSummary() {
-      var level = "", subject = "", term = "";
+      var classId = "", level = "", subject = "", term = "";
       try {
-        level = window.localStorage.getItem("pacificEducationLevel") || "";
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function") classId = String(roster.getClassId() || "").trim();
+        var selectedClass = classId && roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+        if (selectedClass) level = String(selectedClass.level || "");
         subject = window.localStorage.getItem("pacificEducationSubject") || "";
         term = window.localStorage.getItem("pacificEducationTerm") || "";
       } catch (e) {}
       return schoolSummary() +
+        " • Class Reference: " + esc(classId || "Not selected") +
         " • Class/Level: " + esc(level || "Not selected") +
         " • Subject: " + esc(subject || "Not selected") +
         " • Term: " + esc(term || "Not selected");
