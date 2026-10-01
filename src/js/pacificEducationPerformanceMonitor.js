@@ -6,6 +6,8 @@
   var started=Date.now();
   var SLOW_LOAD_MS=5000;
   var SLOW_DOM_MS=3000;
+  var MAX_SLOW_SAMPLES=20;
+  var samples=[];
 
   function round(value){return Math.round(Number(value||0));}
   function collect(){
@@ -49,6 +51,10 @@
       data.rttMs=typeof connection.rtt==="number"?connection.rtt:null;
       data.saveData=connection.saveData===true;
     }
+    samples.push({at:new Date().toISOString(),domContentLoadedMs:data.domContentLoadedMs,loadEventMs:data.loadEventMs,connectionType:data.connectionType,rttMs:data.rttMs,online:data.online});
+    if(samples.length>MAX_SLOW_SAMPLES)samples.shift();
+    data.sampleCount=samples.length;
+    data.recentSamples=samples.slice();
     window.PacificEducationPerformance=data;
     var status=document.getElementById("systemStatus");
     if(status){
@@ -70,7 +76,7 @@
     }
   }
 
-  window.PacificEducationPerformanceMonitor={collect:collect};
+  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},clearSamples:function(){samples=[];return true;}};
 
   if(document.readyState==="loading"){
     document.addEventListener("DOMContentLoaded",function(){setTimeout(render,0);});
