@@ -44,7 +44,7 @@
             else window.localStorage.removeItem(CLASS_KEY);
         } catch (e) {}
 
-        window.dispatchEvent(new CustomEvent("pacificEducationClassChanged", {
+        var selectedClass = id ? getClass(id) : null;\n        if (selectedClass && selectedClass.level) {\n            try { window.localStorage.setItem("pacificEducationLevel", String(selectedClass.level)); } catch (e) {}\n        }\n        window.dispatchEvent(new CustomEvent("pacificEducationClassChanged", {
             detail: { classId: id, prototype: true }
         }));
         return id;
