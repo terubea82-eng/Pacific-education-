@@ -84,8 +84,14 @@ These are prototype/manual verification procedures. Passing a local test does **
 - Queue the same lesson/day progress event more than once with different completion states.
 - Confirm the runtime reports a conflict candidate rather than silently choosing one value.
 - Confirm the sync controller reports the conflict as requiring manual review.
-- Confirm the queued records remain preserved until an explicit server acknowledgement is available.
-- Do not treat local conflict detection as proof of production sync correctness; server-side conflict policy still requires backend testing and approval.
+- Confirm **System Status** displays a **Sync conflict review** section when a conflict exists.
+- Confirm each conflict shows the lesson/day and both conflicting completion states.
+- Confirm **Mark reviewed** changes only the local review state and does not delete or rewrite either queued record.
+- Confirm reviewed conflicts show **Reviewed; data preserved**.
+- Confirm **Require review again** returns the conflict to the manual-review gate.
+- Confirm retry remains blocked while any conflict is unreviewed.
+- Confirm queued records remain preserved until an explicit server acknowledgement is available.
+- Do not treat local conflict detection or review controls as proof of production sync correctness; server-side conflict policy still requires backend testing and approval.
 
 ## Cache diagnostics verification
 
