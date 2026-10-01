@@ -193,13 +193,13 @@
   }
 
   function startGlobal() {
-    if(!SpeechRecognition) return false;
+    if(!SpeechRecognition){ updateGlobalUI("🎙️ Start Voice Control","Voice recognition is unavailable in this browser. Use the buttons instead."); return false; }
     if(globalListening) return true;
     globalStopRequested=false;
     try {
       globalRecognition=new SpeechRecognition();
       globalRecognition.lang="en-US";
-      globalRecognition.continuous=true;
+      globalRecognition.continuous=false;
       globalRecognition.interimResults=false;
       globalRecognition.maxAlternatives=2;
       globalRecognition.onstart=function(){globalListening=true;updateGlobalUI("🎙️ Voice Control: Listening","Voice control listening. Say Next, Read, Read Choices, or Sign Out.");};
@@ -209,15 +209,25 @@
         }
       };
       globalRecognition.onerror=function(event){
-        if(event && (event.error==="not-allowed"||event.error==="service-not-allowed")){
-          globalListening=false;
+        globalListening=false;
+        if(globalRestart)clearTimeout(globalRestart);
+        var error=event&&event.error?event.error:"unknown";
+        if(error==="not-allowed"||error==="service-not-allowed"){
           updateGlobalUI("🎙️ Start Voice Control","Allow microphone access, then press Start Voice Control.");
+        }else if(error==="audio-capture"){
+          updateGlobalUI("🎙️ Start Voice Control","Microphone could not be opened. Check the microphone permission and try again.");
+        }else if(error==="no-speech"){
+          updateGlobalUI("🎙️ Start Voice Control","No speech was detected. Press Start Voice Control and try again.");
+        }else if(error==="network"){
+          updateGlobalUI("🎙️ Start Voice Control","Voice recognition needs a supported network service. You can still use the buttons.");
+        }else{
+          updateGlobalUI("🎙️ Start Voice Control","Voice control could not listen. Press Start Voice Control to try again.");
         }
       };
       globalRecognition.onend=function(){
         globalListening=false;
-        updateGlobalUI("🎙️ Start Voice Control","Voice control ready.");
-        if(!globalStopRequested)globalRestart=setTimeout(startGlobal,700);
+        if(globalRestart)clearTimeout(globalRestart);
+        updateGlobalUI("🎙️ Start Voice Control","Voice control ready. Press Start Voice Control for the next command.");
       };
       globalRecognition.start();
       return true;
@@ -279,12 +289,8 @@
   function updateGlobalUI(label,message) {
     var b=document.getElementById("pacificEducationPersistentVoiceButton");
     var s=document.getElementById("pacificEducationPersistentVoiceStatus");
-    var db=document.getElementById("pacificEducationVoiceDockButton");
-    var ds=document.getElementById("pacificEducationVoiceDockStatus");
     if(b)b.textContent=label;
     if(s)s.textContent=message;
-    if(db)db.textContent=label;
-    if(ds)ds.textContent=message;
   }
 
   function initGlobalVoiceUI() {
