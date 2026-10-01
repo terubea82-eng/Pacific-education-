@@ -22,7 +22,7 @@
 (function (window) {
     "use strict";
 
-    const VERSION = "1.8.0";
+    const VERSION = "1.8.1";
     const MAX_DAY = 365;
     const ASSESSMENT_PASS_MARK = 80;
 
@@ -312,6 +312,8 @@
     function currentLessonAlreadyCompleted(day) {
         const history = getCoreLearningHistory();
         const studentId = getCurrentStudentId();
+        const classId = getCurrentClassId();
+        if (!classId) return false;
 
         for (
             let index = 0;
@@ -321,6 +323,10 @@
             const entry = history[index];
 
             if (!isCompletedHistoryEntry(entry)) {
+                continue;
+            }
+
+            if (String(entry.classId || "") !== String(classId)) {
                 continue;
             }
 
@@ -553,8 +559,9 @@
     }
 
     function getApprovedHomeForStudent() {
-        var id = getCurrentStudentId(), records = getApprovedHomeAssessments();
-        return records.filter(function(r){ return !id || String(r.studentId) === String(id); });
+        var id = getCurrentStudentId(), classId = getCurrentClassId(), records = getApprovedHomeAssessments();
+        if (!classId) return [];
+        return records.filter(function(r){ return r && String(r.classId || "") === String(classId) && (!id || String(r.studentId) === String(id)); });
     }
     function refreshSpecialEducationDashboard() {
         var path = "No teacher-reviewed pathway recorded yet.";
@@ -563,7 +570,8 @@
             var review = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null");
             if (review) path = review.status === "approved" ? "Teacher-approved — continue learning" : "Needs more practice / re-teaching";
             var responses = JSON.parse(localStorage.getItem("pacificEducationActivityResponses") || "[]");
-            queue = responses.filter(function(r){ return r && (r.reviewStatus === "pending-teacher-review" || r.status === "pending-special-education-review"); });
+            var classId = getCurrentClassId();
+            queue = classId ? responses.filter(function(r){ return r && String(r.classId || "") === String(classId) && (r.reviewStatus === "pending-teacher-review" || r.status === "pending-special-education-review"); }) : [];
         } catch(e) {}
         setText("specialEducationLearningPathway", path);
         setText("specialEducationReviewQueueStatus", queue.length ? String(queue.length) + " item(s) require authorized review." : "No pending mandatory review items.");
@@ -620,7 +628,8 @@
     function getParentReviewedPathway() {
         try {
             var review = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null");
-            if (!review) return "No teacher-reviewed pathway recorded yet.";
+            var classId = getCurrentClassId();
+            if (!review || !classId || String(review.classId || "") !== String(classId)) return "No teacher-reviewed pathway recorded yet.";
             return review.status === "approved" ? "Teacher-approved — continue learning" : "Teacher recommends more practice";
         } catch (e) { return "Teacher-reviewed pathway unavailable."; }
     }
