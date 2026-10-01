@@ -1,3 +1,4 @@
+# Current pilot gate verification trigger.
 name: Pacific Education Pilot Recheck
 
 on:
