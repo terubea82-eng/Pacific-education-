@@ -2,7 +2,7 @@
 (function (window) {
   "use strict";
 
-  const VERSION = "1.2.4";
+  const VERSION = "1.3.0";
   const STORAGE_KEY = "pacificEducationCoreState";
   const PASS_MARK = 80;
 
@@ -649,10 +649,19 @@
       ? value
       : {};
 
+    const classId = getCanonicalClassId(value);
+    if (!classId) {
+      audit("ACTIVITY_ADD_BLOCKED", { reason: "Class Reference required." });
+      return false;
+    }
+
     const activity = {
       activityId:
         value.activityId ||
         makeId("ACT"),
+
+      classId:
+        classId,
 
       date:
         value.date ||
@@ -711,12 +720,18 @@
       return false;
     }
 
+    const classId = getCanonicalClassId({});
+    if (!classId) {
+      audit("ACTIVITY_ATTEMPT_BLOCKED", { reason: "Class Reference required.", activityId: activityId });
+      return false;
+    }
+
     const activity =
       state.activities.find(
         function (item) {
           return (
-            item.activityId ===
-            activityId
+            item.activityId === activityId &&
+            String(item.classId || "") === String(classId)
           );
         }
       );
@@ -886,12 +901,21 @@
       ? clone(value)
       : {};
 
+    const classId = getCanonicalClassId(value);
+    if (!classId) {
+      audit("MARK_TRANSFER_BLOCKED", { reason: "Class Reference required.", assessmentId: assessmentId });
+      return false;
+    }
+
     const mark = {
       markId:
         makeId("MARK"),
 
       assessmentId:
         assessmentId,
+
+      classId:
+        classId,
 
       studentId:
         value.studentId ||
@@ -969,12 +993,18 @@
       return false;
     }
 
+    const classId = getCanonicalClassId({});
+    if (!classId) {
+      audit("MARK_EDIT_BLOCKED", { reason: "Class Reference required.", markId: markId });
+      return false;
+    }
+
     const mark =
       state.marks.find(
         function (item) {
           return (
-            item.markId ===
-            markId
+            item.markId === markId &&
+            String(item.classId || "") === String(classId)
           );
         }
       );
@@ -1056,6 +1086,12 @@
       ? value
       : {};
 
+    const classId = getCanonicalClassId(value);
+    if (!classId) {
+      audit("INTERVENTION_CREATE_BLOCKED", { reason: "Class Reference required." });
+      return false;
+    }
+
     const intervention = {
       interventionId:
         makeId("INTERVENTION"),
@@ -1064,6 +1100,9 @@
         value.studentId ||
         state.student.studentId ||
         null,
+
+      classId:
+        classId,
 
       reason:
         value.reason ||
@@ -1118,12 +1157,18 @@
       return false;
     }
 
+    const classId = getCanonicalClassId({});
+    if (!classId) {
+      audit("INTERVENTION_APPROVE_BLOCKED", { reason: "Class Reference required.", interventionId: interventionId });
+      return false;
+    }
+
     const intervention =
       state.interventions.find(
         function (item) {
           return (
-            item.interventionId ===
-            interventionId
+            item.interventionId === interventionId &&
+            String(item.classId || "") === String(classId)
           );
         }
       );
