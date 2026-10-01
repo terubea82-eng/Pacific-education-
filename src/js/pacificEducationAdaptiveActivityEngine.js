@@ -489,8 +489,6 @@
      * Get all recommendations for a student.
      */
     function getRecommendations(studentId, filters) {
-        const classId = selectedClassId();
-        if (!classId) throw new Error("Class Reference is required.");
         const data = safeRead();
 
         const student = data[studentId];
@@ -500,9 +498,9 @@
         }
 
         let recommendations = [...student.recommendations];
-        const classId = (filters && filters.classId) || selectedClassId();
-        if (!classId) return [];
-        recommendations = recommendations.filter(item => String(item.classId || "") === String(classId));
+        const filterClassId = (filters && filters.classId) || selectedClassId();
+        if (!filterClassId) return [];
+        recommendations = recommendations.filter(item => String(item.classId || "") === String(filterClassId));
 
         if (filters && filters.subject) {
             recommendations =
