@@ -238,6 +238,11 @@
       body += '<p>' + instruction + '</p><textarea id="peWrittenAnswer" rows="' + rows + '" maxlength="' + (type === "short_answer" ? 500 : 2000) + '" placeholder="' + (type === "short_answer" ? "Type your short answer here." : "Type your long answer here. Include an explanation or example.") + '"></textarea><button type="button" id="peActivitySubmit">Submit Answer</button>';
     }
 
+    body += '<div class="pe-response-mode" style="margin-top:14px;padding:12px;border:2px solid currentColor;">' +
+      '<p><strong>Response options:</strong> Answer by text or audio. Audio may be used for any question type during the pilot.</p>' +
+      '<button type="button" id="peActivitySubmitVoice">🎙️ Submit Voice Answer</button>' +
+      '<span id="peActivityVoiceSubmitStatus" aria-live="polite"></span>' +
+      '</div>';
     body += '</div>';
     var activityPanel = active.context.renderTargetId ? document.getElementById(active.context.renderTargetId) : document.getElementById("dailyLessonActivity");
     if (activityPanel) {
@@ -305,6 +310,31 @@
         var input = document.getElementById("peWrittenAnswer");
         complete(type, input ? input.value : "");
       }
+    });
+
+    var voiceSubmit = document.getElementById("peActivitySubmitVoice");
+    if (voiceSubmit) voiceSubmit.addEventListener("click", function() {
+      var status = document.getElementById("peActivityVoiceSubmitStatus");
+      var audioInput = document.getElementById("peActivityAudio");
+      var hasRecordedAudio = !!recordedAudioBlob;
+      var hasAttachedAudio = !!(audioInput && audioInput.files && audioInput.files[0]);
+      if (!hasRecordedAudio && !hasAttachedAudio) {
+        if (status) status.textContent = "Record your voice answer or attach an audio recording first.";
+        return;
+      }
+      var textResponse = "";
+      if (type === "matching") {
+        var matchInputs = document.querySelectorAll(".peMatchAnswer");
+        var matches = [];
+        for (var vi = 0; vi < matchInputs.length; vi += 1) matches.push(String(matchInputs[vi].value || "").trim());
+        textResponse = matches.join(" | ");
+      } else {
+        var input = document.getElementById("peWrittenAnswer");
+        textResponse = input ? input.value : "";
+      }
+      voiceSubmit.disabled = true;
+      if (status) status.textContent = "Submitting your audio response...";
+      complete(type, textResponse);
     });
 
     var choiceButtons = document.querySelectorAll(".pe-multiple-choice-option");
