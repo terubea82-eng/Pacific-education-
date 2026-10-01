@@ -9,6 +9,8 @@ on:
       - "android/**"
       - "src/**"
       - "js/**"
+      - "tests/**"
+      - "package.json"
       - ".github/workflows/android-pilot-build.yml"
 jobs:
   build:
