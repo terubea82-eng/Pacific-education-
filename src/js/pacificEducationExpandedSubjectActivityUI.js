@@ -10,7 +10,7 @@
     "use strict";
 
     var VERSION="1.1.0";
-    var STORAGE_KEY="pacificEducationExpandedActivityIndex";
+    var STORAGE_KEY="pacificEducationExpandedActivityIndex:";
 
     function catalog(){
         return window.PacificEducationExpandedSubjectCatalog||null;
@@ -25,9 +25,12 @@
     }
 
     function selection(){
-        var level=window.localStorage.getItem("pacificEducationLevel")||"Class 1";
+        var classId=selectedClassId();
+        var roster=window.PacificEducationTeacherClassRosterContext;
+        var selected=classId&&roster&&typeof roster.getClass==="function"?roster.getClass(classId):null;
+        var level=selected&&selected.level?String(selected.level):"";
         var subject=window.localStorage.getItem("pacificEducationSubject")||"English";
-        return {classId:selectedClassId(),level:level,subjectId:subject};
+        return {classId:classId,level:level,subjectId:subject};
     }
 
     function isExpanded(level){
@@ -35,12 +38,13 @@
     }
 
     function getIndex(){
-        var n=Number(window.localStorage.getItem(STORAGE_KEY)||"0");
+        var key=STORAGE_KEY+(selectedClassId()||"unassigned");
+        var n=Number(window.localStorage.getItem(key)||"0");
         return Number.isInteger(n)&&n>=0?n:0;
     }
 
     function setIndex(n){
-        window.localStorage.setItem(STORAGE_KEY,String(n));
+        window.localStorage.setItem(STORAGE_KEY+(selectedClassId()||"unassigned"),String(n));
     }
 
     function escapeText(value){
