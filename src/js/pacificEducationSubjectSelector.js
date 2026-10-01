@@ -9,7 +9,7 @@
  */
 (function(window) {
     "use strict";
-    var VERSION = "1.6.0";
+    var VERSION = "1.6.1";
     var DEFAULT_SUBJECTS = [
     {
         "id": "English",
@@ -180,7 +180,7 @@
     }
     function syncUI(subjectId) {
         var select = document.getElementById("pacificEducationSubject");
-        if (select && SUBJECTS.some(function(item){return item.id === subjectId;}) && select.value !== subjectId) {
+        if (select && getConfiguredSubjects().some(function(item){return item.id === subjectId;}) && select.value !== subjectId) {
             select.value = subjectId;
             var status = document.getElementById("pacificEducationSubjectStatus");
             if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
@@ -213,9 +213,23 @@
         var detail = event && event.detail ? event.detail : {};
         var status = document.getElementById("pacificEducationSubjectStatus");
         var current = getClassContext();
-        if (status && current) status.textContent = "Class Reference: " + current.classId + " • Selected: " + getSubject() + " • " + (current.level || getLevel()) + " (pilot — curriculum verification required)";
         if (current && detail.classId) {
-            document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", { detail: { classId: current.classId, level: current.level || getLevel(), subjectId: getSubject(), prototype: true } }));
+            /*
+             * A class switch changes the curriculum scope. Revalidate the
+             * subject selector before publishing the new class context.
+             */
+            var selected = getSubject();
+            var select = document.getElementById("pacificEducationSubject");
+            if (select) {
+                var valid = getConfiguredSubjects().some(function(item){ return item.id === selected; });
+                if (!valid) {
+                    selected = "English";
+                    window.localStorage.setItem("pacificEducationSubject", selected);
+                }
+                select.value = selected;
+            }
+            if (status) status.textContent = "Class Reference: " + current.classId + " • Subject: " + selected + " • " + (current.level || getLevel()) + " (pilot — curriculum verification required)";
+            document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", { detail: { classId: current.classId, level: current.level || getLevel(), subjectId: selected, prototype: true, classScopeChanged: true } }));
         }
     });
     document.addEventListener("pacificEducationCountryConfigChanged", function() { createUI(); });
