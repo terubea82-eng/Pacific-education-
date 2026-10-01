@@ -1,5 +1,6 @@
 # Current pilot gate verification trigger.
 name: Offline Sync Regression
+# Regression gate refreshed.
 
 on:
   workflow_dispatch:
