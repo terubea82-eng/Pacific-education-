@@ -492,16 +492,49 @@
 
     function getDailyLesson(dayNumber) {
 
-        return dailyLessons[dayNumber] || {
+        const day = Math.max(1, Math.min(365, Number(dayNumber) || 1));
+        const level = window.localStorage.getItem("pacificEducationLevel") || "Class 1";
+        const subject = window.localStorage.getItem("pacificEducationSubject") || "English";
+        const term = window.localStorage.getItem("pacificEducationTerm") || "Term 1";
+        const capability = window.localStorage.getItem("pacificEducationCapability") || "expected";
 
-            title:
-                "Daily English Practice",
+        /*
+         * Class 1 English keeps its concrete pilot lesson sequence.
+         * Every other class/subject uses the curriculum engine so the same
+         * page-by-page Day 1–365 navigation works across the full selector.
+         */
+        if (level === "Class 1" && subject === "English" && dailyLessons[day]) {
+            return dailyLessons[day];
+        }
 
-            activity:
-                "Practise speaking, listening, reading and writing in English.",
+        try {
+            const engine = window.PacificEducationDailyCurriculumEngine;
+            if (engine && typeof engine.generateDailyPlan === "function") {
+                const plan = engine.generateDailyPlan({
+                    dayNumber: day,
+                    level: level,
+                    subjectId: subject,
+                    term: term,
+                    capability: capability
+                });
 
-            practice:
-                "Complete today's English activity with a parent or teacher."
+                if (plan && plan.success && Array.isArray(plan.activities) && plan.activities.length) {
+                    const activity = plan.activities[0];
+                    return {
+                        title: (activity.activityTitle || activity.title || subject) + " — Day " + day,
+                        activity: activity.instructions || activity.description || activity.learnerAction || "Complete today's curriculum activity.",
+                        practice: activity.practice || activity.learnerAction || "Complete guided and independent practice for today's learning."
+                    };
+                }
+            }
+        } catch (error) {
+            console.warn("Pacific Education: curriculum-engine daily lesson generation deferred.", error);
+        }
+
+        return dailyLessons[day] || {
+            title: subject + " — Day " + day,
+            activity: "Complete today's curriculum learning activity for " + subject + ".",
+            practice: "Complete guided and independent practice with a teacher or parent."
         };
     }
 
