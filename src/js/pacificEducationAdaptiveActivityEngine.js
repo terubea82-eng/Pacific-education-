@@ -489,6 +489,12 @@
      * Get all recommendations for a student.
      */
     function getRecommendations(studentId, filters) {
+        const classId = selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
+        const classId = selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
+        const classId = selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
         const data = safeRead();
 
         const student = data[studentId];
@@ -578,8 +584,8 @@
         const recommendation =
             student.recommendations.find(
                 item =>
-                    item.recommendationId ===
-                    recommendationId
+                    item.recommendationId === recommendationId &&
+                    String(item.classId || "") === String(classId)
             );
 
         if (!recommendation) {
@@ -610,6 +616,9 @@
 
             recommendationId:
                 recommendationId,
+
+            classId:
+                classId,
 
             previousStatus:
                 previousStatus,
@@ -668,8 +677,8 @@
         const recommendation =
             student.recommendations.find(
                 item =>
-                    item.recommendationId ===
-                    recommendationId
+                    item.recommendationId === recommendationId &&
+                    String(item.classId || "") === String(classId)
             );
 
         if (!recommendation) {
@@ -703,6 +712,9 @@
 
             recommendationId:
                 recommendationId,
+
+            classId:
+                classId,
 
             previousStatus:
                 previousStatus,
@@ -758,8 +770,8 @@
         const recommendation =
             student.recommendations.find(
                 item =>
-                    item.recommendationId ===
-                    recommendationId
+                    item.recommendationId === recommendationId &&
+                    String(item.classId || "") === String(classId)
             );
 
         if (!recommendation) {
