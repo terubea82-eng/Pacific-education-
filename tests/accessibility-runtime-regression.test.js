@@ -41,6 +41,12 @@ test("accessibility runtime synchronizes the voice preference control", () => {
   assert.match(runtime, /Turn on voice preference to read choices aloud/);
 });
 
+test("accessibility runtime synchronizes the control after preference changes", () => {
+  assert.match(runtime, /setVoicePreference\(enabled\).*syncVoiceControl\(\)/);
+  assert.match(runtime, /voicePreferenceValue:readVoiceValue\(\)/);
+  assert.match(runtime, /function readVoiceValue\(\)/);
+});
+
 test("accessibility runtime fails safely when browser storage is unavailable", () => {
   assert.match(runtime, /try\{return normalizeScale\(window\.localStorage&&window\.localStorage\.getItem\(SCALE_KEY\)\);\}catch\(_\)\{return\"normal\";\}/);
   assert.match(runtime, /try\{return normalizeVoice\(window\.localStorage&&window\.localStorage\.getItem\(VOICE_KEY\)\);\}catch\(_\)\{return false;\}/);
