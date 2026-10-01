@@ -10,7 +10,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     function copy(v) {
         return JSON.parse(JSON.stringify(v));
@@ -27,6 +27,10 @@
     function coverageBridge() {
         return window.PacificEducationCurriculumAssessmentBridge || null;
     }
+
+    function roster() { return window.PacificEducationTeacherClassRosterContext || null; }
+
+    function selectedClassId() { var r=roster(); return r && typeof r.getClassId === "function" ? String(r.getClassId() || "").trim() : ""; }
 
     function alignment() {
         return window.PacificEducationCurriculumAlignmentRuntimeBridge ||
@@ -101,11 +105,14 @@
         config = config || {};
         var startDay = Math.max(1, Number(config.startDay || config.dayNumber || 1));
         var endDay = Math.max(startDay, Number(config.endDay || 365));
+        var classId = String(config.classId || selectedClassId() || "").trim();
+        if (!classId) return { success:false, error:"Class Reference required", prototype:true, productionApproved:false, productionEligible:false };
         var filters = {
             level: config.level || undefined,
             subjectId: config.subjectId || config.subject || undefined,
             term: config.term || undefined,
-            studentId: config.studentId || undefined
+            studentId: config.studentId || undefined,
+            classId: classId
         };
 
         Object.keys(filters).forEach(function(key) {
@@ -136,6 +143,7 @@
             subjectId: config.subjectId || config.subject || null,
             term: config.term || null,
             studentId: config.studentId || null,
+            classId: classId,
             days: planDays,
             teachingDayCount: planDays.length,
             uncoveredIndicatorCount: uncovered.eligible.length,
