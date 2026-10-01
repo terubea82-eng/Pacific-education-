@@ -2,7 +2,7 @@
 (function (window) {
   "use strict";
 
-  const VERSION = "1.3.0";
+  const VERSION = "1.3.1";
   const STORAGE_KEY = "pacificEducationCoreState";
   const PASS_MARK = 80;
 
@@ -799,6 +799,15 @@
 
     const assessment =
       clone(value);
+
+    const classId = getCanonicalClassId(assessment);
+    if (!classId) {
+      audit("ASSESSMENT_ADD_BLOCKED", {
+        reason: "Class Reference required."
+      });
+      return false;
+    }
+    assessment.classId = classId;
 
     assessment.assessmentId =
       assessment.assessmentId ||
