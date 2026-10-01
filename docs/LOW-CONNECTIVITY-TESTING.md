@@ -74,6 +74,18 @@ Verify that the prototype remains usable across:
 9. Confirm reviewing a conflict does not delete or rewrite either queued record.
 10. Repeat after reconnect and confirm the manual-review gate remains enforced until every conflict is reviewed.
 
+## Test 8 — Accessibility runtime and UI
+
+1. Open the entry page with keyboard navigation and an assistive technology or browser accessibility tools where available.
+2. Confirm the accessibility runtime loads without a console error.
+3. Confirm the accessibility live-status target is present and announcements are exposed through a polite live region.
+4. Confirm the **Voice preference** control is reachable and operable with keyboard input.
+5. Exercise supported text scaling and confirm only the documented normal, large and x-large states are accepted.
+6. Exercise speech controls where browser speech synthesis is available and confirm Stop Speech cancels active speech.
+7. Confirm unsupported speech synthesis is reported as unavailable rather than presented as successful.
+8. Repeat on an Android-sized viewport and confirm controls remain usable without horizontal scrolling.
+9. Record browser, assistive technology, speech availability and accessibility settings in the evidence record.
+
 ## Evidence record
 
 For each executed test record:
@@ -84,6 +96,8 @@ For each executed test record:
 - connection type
 - VPN/proxy on or off
 - accessibility settings used
+- assistive technology used, if any
+- speech synthesis availability
 - test case
 - expected result
 - observed result
