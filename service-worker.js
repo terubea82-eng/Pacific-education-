@@ -37,6 +37,15 @@ self.addEventListener("install",event=>{
   );
 });
 
+self.addEventListener("message",event=>{
+  if(event.data&&event.data.type==="PACIFIC_CACHE_STATUS"){
+    event.waitUntil(caches.open(CACHE_NAME).then(function(cache){return cache.keys();}).then(function(keys){
+      var urls=keys.map(function(request){return new URL(request.url).pathname;});
+      if(event.ports&&event.ports[0])event.ports[0].postMessage({cacheName:CACHE_NAME,entryCached:urls.indexOf(ENTRY)>=0,coreCached:CORE_ASSETS.map(function(url){return {url:url,cached:urls.indexOf(url)>=0};}),cachedCount:urls.length});
+    }));
+  }
+});
+
 self.addEventListener("activate",event=>{
   event.waitUntil(
     caches.keys().then(keys=>Promise.all(
