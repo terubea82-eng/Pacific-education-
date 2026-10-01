@@ -275,6 +275,37 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script src="js/pacificEducationRealWorldSkills.js"></script><script src="js/pacificEducationLevelSelector.js"></script><script src="js/pacificEducationSubjectSelector.js"></script><script src="js/pacificEducationTermSelector.js"></script><script src="js/pacificEducationCapabilitySelector.js"></script><script src="js/pacificEducationCurriculumEvidenceRegistry.js"></script><script src="js/pacificEducationCurriculumAlignmentRegistry.js"></script><script src="js/pacificEducationMinistryPrescriptionIndicators.js"></script><script src="js/pacificEducationMinistryPrescriptionBridge.js"></script><script src="js/pacificEducationAchievementIndicatorActivityMapper.js"></script><script src="js/pacificEducationDailyCurriculumEngine.js?v=1802"></script><script src="js/pacificEducationCurriculumCoverageAudit.js"></script><script src="js/pacificEducationAssessmentBridge.js"></script><script src="../js/pacificEducationAssessmentIntegration.js"></script><script src="../js/dailyLessons.js"></script><script src="../js/dashboards.js"></script><script src="js/assessments.js"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=1420"></script><script>(function(){var KEY="peAutoUpdateVersion",VERSION="2026-10-01-pilot-review-center-149";try{var previous=localStorage.getItem(KEY);if(previous!==VERSION){localStorage.setItem(KEY,VERSION);if(previous!==null)window.location.reload();}}catch(_){}})();</script><script src="js/pacificEducationCurriculumLessonRenderer.js?v=1801"></script><script src="js/pacificEducationTeacherClassRosterContext.js"></script><script src="js/pacificEducationStudentCoverageContext.js"></script><script src="js/pacificEducationCurriculumCoverageEngine.js"></script><script src="js/pacificEducationTeacherClassDashboardUI.js"></script><script src="js/pacificEducationTeacherReviewQueue.js"></script><script src="js/pacificEducationStudentProgressDashboardUI.js"></script><script src="js/pacificEducationDailyProgressRecorder.js"></script><script src="js/pacificEducationDailyProgressFlow.js"></script><script src="js/pacificEducationAchievementDistributionEngine.js?v=1801"></script><script src="js/pacificEducationRemainingAchievementRedistributionEngine.js"></script><script src="js/pacificEducationRemainingAchievementSchedulerUI.js"></script><script src="js/pacificEducationTeacherCalendar.js?v=1801"></script><script src="js/pacificEducationTeacherCalendarUI.js?v=1801"></script><script src="js/pacificEducationTeacherStudentCalendarLink.js"></script><script src="js/pacificEducationRevisionExamScheduler.js"></script><script src="js/pacificEducationRevisionExamRedistributionUI.js"></script><script src="js/pacificEducationExamCalendar.js"></script><script src="js/pacificEducationMinistryExamEngine.js"></script><script src="js/pacificEducationHomeSubmission.js"></script><script src="js/pacificEducationAccessibilityNextStage.js"></script><script src="js/pacificEducationSafeguardingNextStage.js"></script><script src="js/pacificEducationOfflineNextStage.js"></script><script src="js/pacificEducationTestingNextStage.js"></script><script src="js/pacificEducationAccessibilityRuntime.js"></script><script src="js/pacificEducationOfflineRuntime.js?v=1101"></script>
 <script>
 (function(){
+  function showCacheDiagnostics(){
+    var el=document.querySelector("[data-pacific-cache-diagnostics]");
+    if(!el) return;
+    var monitor=window.PacificEducationPerformanceMonitor;
+    if(!monitor||!monitor.cacheStatus){el.textContent="Cache diagnostics unavailable.";return;}
+    monitor.cacheStatus().then(function(s){
+      if(!s||!s.controlled){el.textContent="Cache: service worker not currently controlling this page.";return;}
+      var cached=(s.coreCached||[]).filter(function(x){return x.cached;}).length;
+      var total=(s.coreCached||[]).length;
+      el.textContent="Cache: "+(s.cacheName||"active")+" • Entry "+(s.entryCached?"cached":"not cached")+" • Core "+cached+"/"+total+" cached • Total cached "+(s.cachedCount||0);
+    }).catch(function(){el.textContent="Cache diagnostics could not be read.";});
+  }
+  function init(){
+    var host=document.getElementById("systemStatus");
+    if(!host)return;
+    var el=host.querySelector("[data-pacific-cache-diagnostics]");
+    if(!el){
+      el=document.createElement("div");
+      el.setAttribute("data-pacific-cache-diagnostics","");
+      el.setAttribute("role","status");
+      el.setAttribute("aria-live","polite");
+      host.appendChild(el);
+    }
+    showCacheDiagnostics();
+    if(navigator.serviceWorker) navigator.serviceWorker.addEventListener("controllerchange",showCacheDiagnostics);
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+<script>
+(function(){
 "use strict";
 function announceReconnect(){
  var s=document.querySelector("[data-pacific-reconnect]");
