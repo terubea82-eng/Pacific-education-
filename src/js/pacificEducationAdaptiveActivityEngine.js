@@ -491,10 +491,6 @@
     function getRecommendations(studentId, filters) {
         const classId = selectedClassId();
         if (!classId) throw new Error("Class Reference is required.");
-        const classId = selectedClassId();
-        if (!classId) throw new Error("Class Reference is required.");
-        const classId = selectedClassId();
-        if (!classId) throw new Error("Class Reference is required.");
         const data = safeRead();
 
         const student = data[studentId];
@@ -571,6 +567,8 @@
         studentId,
         recommendationId
     ) {
+        const classId = selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
         const data = safeRead();
 
         const student = data[studentId];
@@ -664,6 +662,8 @@
         recommendationId,
         completionData
     ) {
+        const classId = selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
         const data = safeRead();
 
         const student = data[studentId];
@@ -747,6 +747,8 @@
         status,
         reason
     ) {
+        const classId = selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
         if (
             !Object.values(
                 ACTIVITY_STATUS
