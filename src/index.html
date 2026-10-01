@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#0b5d7a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="canonical" href="https://terubea82-eng.github.io/Pacific-education-/">
 <style>
 body{font-family:Arial,sans-serif;margin:0;line-height:1.5}
@@ -44,7 +48,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 #pacificEducationAppMenu{margin:0 0 18px}
 #pacificEducationAppMenu summary{cursor:pointer;font-weight:bold;padding:10px}
 </style>
-</head>
+<script>(function(){var deferredPrompt=null;window.PacificEducationInstallPrompt=null;window.addEventListener("beforeinstallprompt",function(event){event.preventDefault();deferredPrompt=event;window.PacificEducationInstallPrompt=event;var b=document.getElementById("pacificEducationInstallButton");if(b)b.hidden=false;if(window.speakText)window.speakText("Pacific Education is ready to install. Say Install Pacific Education or press the Install button.");});window.addEventListener("appinstalled",function(){deferredPrompt=null;window.PacificEducationInstallPrompt=null;var b=document.getElementById("pacificEducationInstallButton");if(b)b.hidden=true;if(window.speakText)window.speakText("Welcome to the installed Pacific Education web app. Voice-first communication is ready.");});function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});var standalone=window.matchMedia&&window.matchMedia("(display-mode: standalone)").matches;if(standalone&&window.speakText)setTimeout(function(){window.speakText("Welcome back to the installed Pacific Education web app. Voice-first communication is ready.");},700);}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
 <section id="pacificEducationWelcome" aria-label="Pacific Education welcome">
 <div id="pacificEducationWelcomeContent">
