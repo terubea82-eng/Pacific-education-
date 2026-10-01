@@ -39,3 +39,9 @@ Pilot participation, technical support, funding, infrastructure or distribution 
 ## Development rule
 
 Prototype code may demonstrate workflows, but browser/localStorage controls are not treated as production security boundaries.
+
+## Network-agnostic access
+
+The prototype is designed to be resilient across different network environments, including slow or intermittent connectivity and VPN/proxy paths. Network resilience does not guarantee availability on every network; production access still depends on hosting, backend, device, browser, and local network policy.
+
+Current prototype capabilities include offline shell support, reconnect guidance, queued learning-progress metadata, retry/idempotency planning, conflict detection, connectivity diagnostics, and local performance diagnostics. These capabilities require real-device and controlled network testing before production use.
