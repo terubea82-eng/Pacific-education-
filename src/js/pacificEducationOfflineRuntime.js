@@ -20,11 +20,16 @@ function queueProgress(item){
  if(!duplicate)list.push(safe);
  return{success:save(list),queued:safe,duplicate:duplicate,count:list.length,prototype:true};
 }
+function getQueueStatus(){
+ var q=getQueue();
+ return {count:q.count||0,items:q.items||[],prototype:true};
+}
 function getQueue(){return{items:q(),count:q().length,prototype:true};}
 function clearQueue(){return{success:save([]),prototype:true};}
 function registerServiceWorker(){if(!("serviceWorker"in navigator))return Promise.resolve({registered:false,reason:"SERVICE_WORKER_UNAVAILABLE",prototype:true});/* The pilot entry page is under /src while dependencies also live under /js; use the root-scoped prototype worker consistently. */return navigator.serviceWorker.register("../service-worker.js").then(function(r){return{registered:true,scope:r.scope,prototype:true};}).catch(function(){return{registered:false,reason:"SERVICE_WORKER_REGISTRATION_FAILED",prototype:true};});}
 function connection(){var c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;return c?{effectiveType:c.effectiveType||null,downlinkMbps:typeof c.downlink==="number"?c.downlink:null,rttMs:typeof c.rtt==="number"?c.rtt:null,saveData:c.saveData===true}:null;}
 function status(){return{version:VERSION,online:navigator.onLine,queuedProgressCount:q().length,serviceWorkerSupported:"serviceWorker"in navigator,serviceWorkerControlled:!!(navigator.serviceWorker&&navigator.serviceWorker.controller),connection:connection(),lowBandwidthFallback:true,queueContainsLessonMetadataOnly:true,clientCacheMustNotContainSecrets:true,productionApproved:false,realDeviceTestingRequired:true};}
 function listenConnectivity(callback){if(typeof callback!=="function")return function(){};var handler=function(){callback(status());};window.addEventListener("online",handler);window.addEventListener("offline",handler);var c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(c&&c.addEventListener)c.addEventListener("change",handler);return function(){window.removeEventListener("online",handler);window.removeEventListener("offline",handler);if(c&&c.removeEventListener)c.removeEventListener("change",handler);};}
-window.PacificEducationOfflineRuntime=Object.freeze({name:"PacificEducationOfflineRuntime",version:VERSION,queueProgress:queueProgress,getQueue:getQueue,clearQueue:clearQueue,registerServiceWorker:registerServiceWorker,status:status,listenConnectivity:listenConnectivity});
+window.PacificEducationOfflineRuntime=Object.freeze({name:"PacificEducationOfflineRuntime",version:VERSION,queueProgress:queueProgress,getQueue:getQueue,
+ getQueueStatus:getQueueStatus,clearQueue:clearQueue,registerServiceWorker:registerServiceWorker,status:status,listenConnectivity:listenConnectivity});
 })(window);
