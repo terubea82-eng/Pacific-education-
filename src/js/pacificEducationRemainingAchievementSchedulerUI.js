@@ -18,13 +18,17 @@
     }
 
     function getConfig() {
-        var day = 1, level = "Class 1", subjectId = "English", term = "Term 1";
+        var day = 1, level = "", subjectId = "", term = "";
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var classId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+        var selectedClass = classId && roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+        if (!selectedClass) return { classId: "", level: "", subjectId: "", term: "", day: 1 };
+        level = String(selectedClass.level || "");
         try {
             day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1);
-            level = localStorage.getItem("pacificEducationLevel") || level;
-            subjectId = localStorage.getItem("pacificEducationSubject") || subjectId;
-            term = localStorage.getItem("pacificEducationTerm") || term;
-        } catch (ignore) {}
+            subjectId = localStorage.getItem("pacificEducationSubject") || "";
+            term = localStorage.getItem("pacificEducationTerm") || "";
+        } catch (ignore) {} catch (ignore) {}
         var r = roster();
         var classId = r && typeof r.getClassId === "function" ? String(r.getClassId() || "").trim() : "";
         return {
