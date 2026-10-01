@@ -29,3 +29,8 @@ test("service worker uses stable cache keys for versioned static assets", () => 
   assert.match(serviceWorker, /const cacheKey=new Request\(url\.origin\+url\.pathname/);
   assert.match(serviceWorker, /cache\.put\(cacheKey,response\.clone\(\)\)/);
 });
+
+
+test("service worker bumps its shell cache when the offline shell changes", () => {
+  assert.match(serviceWorker, /CACHE_NAME="pacific-education-shell-v7"/);
+});
