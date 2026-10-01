@@ -13,7 +13,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
     var CORE_SHARE = 0.50;
     var INTEGRATED_SHARE = 0.50;
 
@@ -35,6 +35,16 @@
 
     function alignmentModel() {
         return window.PacificEducationCurriculumAlignmentDataModel || null;
+    }
+
+    function selectedClassContext(filters) {
+        var roster = window.PacificEducationTeacherClassRosterContext || null;
+        var classId = filters && (filters.classId || filters.classReference) ||
+            (roster && typeof roster.getClassId === "function" ? roster.getClassId() : "");
+        if (!roster || typeof roster.getClass !== "function" || !classId) return null;
+        var item = roster.getClass(classId);
+        if (!item || !item.id) return null;
+        return { classId: String(item.id), level: String(item.level || "") };
     }
 
     function isApprovedMapping(item, subjectId, level) {
@@ -73,12 +83,25 @@
     function build(filters) {
         filters = filters || {};
 
-        var level = filters.level || "";
+        var classContext = selectedClassContext(filters);
+        if (!classContext) {
+            return { success:false, blocked:true, error:"Select an existing Class Reference before building the daily integration plan", prototype:true, productionEligible:false };
+        }
+        if (filters.classId && String(filters.classId) !== classContext.classId) {
+            return { success:false, blocked:true, error:"Class Reference mismatch", classId:classContext.classId, prototype:true, productionEligible:false };
+        }
+
+        var level = filters.level || classContext.level;
         var subjectId = filters.subjectId || localStorage.getItem("pacificEducationSubject") || "";
         var term = filters.term || localStorage.getItem("pacificEducationTerm") || "";
         var dayNumber = Number(filters.dayNumber || 1);
 
+        if (filters.level && String(filters.level) !== classContext.level) {
+            return { success:false, blocked:true, error:"Learning Level does not match the selected Class Reference", classId:classContext.classId, level:classContext.level, prototype:true, productionEligible:false };
+        }
+
         var core = selectCoreIndicator({
+            classId: classContext.classId,
             level: level,
             subjectId: subjectId,
             term: term,
@@ -138,6 +161,7 @@
         return {
             success: true,
             dayNumber: dayNumber,
+            classId: classContext.classId,
             level: level,
             subjectId: subjectId,
             term: term,
