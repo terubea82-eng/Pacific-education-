@@ -28,7 +28,7 @@
             day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1);
             subjectId = localStorage.getItem("pacificEducationSubject") || "";
             term = localStorage.getItem("pacificEducationTerm") || "";
-        } catch (ignore) {} catch (ignore) {}
+        } catch (ignore) {}
         var r = roster();
         var classId = r && typeof r.getClassId === "function" ? String(r.getClassId() || "").trim() : "";
         return {
