@@ -1,6 +1,6 @@
 /*
  * Pacific Education — AI Conversation Layer
- * Version: 1.0.0 — pilot conversation interface
+ * Version: 1.1.0 — pilot conversation interface with Guardian checkpoint
  *
  * Users converse with Pacific Education AI. Pacific Guardian remains the
  * owner-accountable governance and oversight layer and is not the user-facing
@@ -13,9 +13,40 @@
 (function (global) {
   "use strict";
 
-  var VERSION = "1.0.0";
+  var VERSION = "1.1.0";
   var HISTORY_KEY = "pacificEducationAIConversationHistory";
   var MAX_HISTORY = 100;
+  var GUARDIAN_BLOCK_MESSAGE = "Pacific Education AI is unavailable until Pacific Guardian authorizes this conversation.";
+
+  function guardian() {
+    return global.PacificEducationPacificGuardian || null;
+  }
+
+  function guardianCheck() {
+    var g = guardian();
+    if (!g || typeof g.checkAccess !== "function") {
+      return { allowed: false, reason: "guardian_unavailable" };
+    }
+    try {
+      return g.checkAccess();
+    } catch (_) {
+      return { allowed: false, reason: "guardian_check_failed" };
+    }
+  }
+
+  function guardianEvidence(type, details) {
+    var g = guardian();
+    if (!g || typeof g.recordPilotEvidence !== "function") return;
+    try {
+      g.recordPilotEvidence({
+        type: type,
+        details: Object.assign({}, details || {}, {
+          conversationLayer: "Pacific Education AI",
+          pilotOnly: true
+        })
+      });
+    } catch (_) {}
+  }
 
   function speak(text) {
     try {
@@ -59,6 +90,23 @@
   function respond(text) {
     var value = String(text || "").trim();
     if (!value) return "Please tell Pacific Education AI what you need help with.";
+
+    var access = guardianCheck();
+    guardianEvidence("ai_conversation_access_check", {
+      allowed: access.allowed === true,
+      reason: access.reason || null,
+      locked: access.locked === true
+    });
+    if (access.allowed !== true) {
+      var blocked = access.locked ? "Pacific Education AI is temporarily blocked by Pacific Guardian for safety review." : GUARDIAN_BLOCK_MESSAGE;
+      guardianEvidence("ai_conversation_blocked", {
+        reason: access.reason || "guardian_denied",
+        locked: access.locked === true
+      });
+      addMessage("user", value);
+      addMessage("assistant", blocked);
+      return blocked;
+    }
     var lower = value.toLowerCase();
     var response;
 
@@ -75,6 +123,10 @@
     } else {
       response = "I can help you understand and use Pacific Education. Tell me your question or the learning task you are working on, and I will guide you within the pilot controls.";
     }
+    guardianEvidence("ai_conversation_response", {
+      responseGenerated: true,
+      responseType: "pilot_rule_based_response"
+    });
     addMessage("user", value);
     addMessage("assistant", response);
     return response;
