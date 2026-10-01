@@ -6,7 +6,7 @@
   'use strict';
   var KEY='pacificEducationIndividualUserContextsV1';
   var CURRENT='pacificEducationCurrentPacEduIdV1';
-  var VERSION='1.1.0';
+  var VERSION='1.1.1';
   var ROLE_LABELS={student:'Student',teacher:'Teacher','special-education':'Special Education / Inclusion',parent:'Parent / Caregiver',professional:'Professional Reviewer',ngo:'NGO / Organization',education:'Education / Government',community:'Community / Partner',owner:'Owner / Control','head-of-school':'Head of School','institution-admin':'Institution Administrator'};
   function read(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
   function write(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}}
@@ -30,6 +30,14 @@
     if(registered)setTimeout(refresh,120);
     document.addEventListener('click',function(e){if(e.target&&e.target.id==='pilotSignOutButton')clear();});
     document.addEventListener('pacificEducationSelectionChanged',refresh);
+    var scheduled=false;
+    if(window.MutationObserver&&document.body){
+      var obs=new MutationObserver(function(){
+        if(scheduled)return;scheduled=true;
+        setTimeout(function(){scheduled=false;var r=role(),reg=false;try{reg=sessionStorage.getItem('pacificEducationPilotRegistered')==='true'||localStorage.getItem('pacificEducationPilotRegistered')==='true';}catch(e){}if(r&&reg)refresh();},120);
+      });
+      obs.observe(document.body,{childList:true,subtree:true});
+    }
     window.PacificEducationIndividualUserContext={version:VERSION,ensure:ensure,refresh:refresh,clear:clear,publicView:function(){var x=ensure();return x?{pacEduId:x.pacEduId,role:x.role,roleLabel:x.roleLabel,country:x.country,institutionName:x.institutionName,className:x.className,programme:x.programme,level:x.level,subject:x.subject,term:x.term,currentDay:x.currentDay}:null;}};
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
