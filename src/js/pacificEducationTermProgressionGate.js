@@ -100,7 +100,8 @@
         var missing = [];
 
         prerequisites.forEach(function(item) {
-            var record = getCoverage(item, studentId);\n            if (record && String(record.classId || "") !== String(classId)) record = null;
+            var record = getCoverage(item, studentId);
+            if (record && String(record.classId || "") !== String(classId)) record = null;
             if (record && record.status === "covered") covered++;
             else missing.push(copy(item));
         });
