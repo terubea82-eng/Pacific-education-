@@ -63,7 +63,7 @@
     } catch (e) {}
     return {
       classId: selectedClassId(),
-      level: (function(){ try { return localStorage.getItem("pacificEducationLevel") || "Class 1"; } catch(e){ return "Class 1"; } })(),
+      level: (function(){ try { return (function(){var rr=window.PacificEducationTeacherClassRosterContext;var id=selectedClassId();var cc=rr&&typeof rr.getClass==="function"?rr.getClass(id):null;return cc&&cc.level?String(cc.level):"";})(); } catch(e){ return "Class 1"; } })(),
       subject: (function(){ try { return localStorage.getItem("pacificEducationSubject") || "English"; } catch(e){ return "English"; } })(),
       term: (function(){ try { return localStorage.getItem("pacificEducationTerm") || "Term 1"; } catch(e){ return "Term 1"; } })(),
       day: Number.isFinite(day) ? day : 1
