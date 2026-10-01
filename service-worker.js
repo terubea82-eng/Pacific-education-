@@ -3,6 +3,18 @@
 
 const CACHE_NAME="pacific-education-shell-v5";
 const ENTRY="/Pacific-education-/src/index.html";
+const CORE_ASSETS=[
+  "/Pacific-education-/js/pacificEducationCore.js",
+  "/Pacific-education-/src/js/pacificEducationSpeechVoice.js",
+  "/Pacific-education-/src/js/pacificEducationPWAInstall.js",
+  "/Pacific-education-/src/js/pacificEducationVoiceNextDirective.js",
+  "/Pacific-education-/src/js/pacificEducationUniversalButtonVoice.js",
+  "/Pacific-education-/src/js/pacificEducationAccessibilityRuntime.js",
+  "/Pacific-education-/src/js/pacificEducationOfflineRuntime.js",
+  "/Pacific-education-/src/js/pacificEducationOfflineSyncController.js",
+  "/Pacific-education-/src/js/pacificEducationPerformanceMonitor.js",
+  "/Pacific-education-/js/pacificEducationAccessibilitySupport.js"
+];
 
 function isStatic(request){
   const d=request.destination;
