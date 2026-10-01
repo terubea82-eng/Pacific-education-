@@ -1358,7 +1358,9 @@
               day &&
             (studentId === null ||
               entry.studentId ===
-                studentId)
+                studentId) &&
+            String(entry.classId || "") ===
+              String(classId)
           );
         }
       );
