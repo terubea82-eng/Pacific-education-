@@ -1,6 +1,8 @@
-/* Pacific Education — simple speech voice controller
- * Prefers an available English male voice when the device exposes one.
- * Falls back safely to the browser/device default voice.
+/* Pacific Education — mandated male speech voice controller.
+ * Male English voice is the required voice policy for Pacific Education.
+ * The controller never intentionally selects a female voice. If no identifiable
+ * male English voice is exposed by the device/browser, speech is withheld rather
+ * than silently switching to a female voice.
  */
 (function(window) {
   "use strict";
@@ -27,7 +29,7 @@
     var bestScore = -1000;
     voices.forEach(function(voice) {
       var score = scoreVoice(voice);
-      if (score > bestScore) {
+      if (score > bestScore && score >= 150) {
         bestScore = score;
         best = voice;
       }
@@ -39,16 +41,13 @@
   function speakText(text) {
     text = String(text || "").trim();
     if (!text || !window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") return false;
+    var voice = selectedVoice || chooseVoice();
+    if (!voice) return false;
     try {
       window.speechSynthesis.cancel();
       var utterance = new window.SpeechSynthesisUtterance(text);
-      var voice = selectedVoice || chooseVoice();
-      if (voice) {
-        utterance.voice = voice;
-        utterance.lang = voice.lang || "en";
-      } else {
-        utterance.lang = "en";
-      }
+      utterance.voice = voice;
+      utterance.lang = voice.lang || "en";
       window.speechSynthesis.speak(utterance);
       return true;
     } catch (e) {
