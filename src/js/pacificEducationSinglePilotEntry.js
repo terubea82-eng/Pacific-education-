@@ -124,9 +124,8 @@
         if (roster) {
           var classId = roster.getClassId && roster.getClassId();
           if (!classId) {
-            roster.createClass("YEAR-7-01", "Class 7", "PILOT-TEACHER-001", "01");
-            roster.setClassId("YEAR-7-01");
-            roster.addStudent("YEAR-7-01", "PILOT-STUDENT-001");
+            /* Pilot entry must use an existing Class Reference; it must not create one. */
+            return;
           } else if (roster.getStudents && roster.getStudents(classId).length === 0) {
             roster.addStudent(classId, "PILOT-STUDENT-001");
           }
