@@ -19,7 +19,7 @@
     var item=id&&all[id];
     if(!item||item.role!==r){
       id=newId();
-      item={pacEduId:id,role:r,roleLabel:ROLE_LABELS[r]||'User',country:'',institutionId:'',institutionName:'',classId:'',className:'',programme:'',level:'Class 1',subject:'English',term:'Term 1',capability:'expected',currentDay:1,progress:{lessonsCompleted:0},assessments:{},preferences:{},registeredAt:new Date().toISOString(),prototypeSession:true};
+      item={pacEduId:id,role:r,roleLabel:ROLE_LABELS[r]||'User',country:'',institutionId:'',institutionName:'',classId:'',className:'',programme:'',level:(function(){try{var rr=window.PacificEducationTeacherClassRosterContext;var id=rr&&typeof rr.getClassId==='function'?rr.getClassId():'';var cc=id&&typeof rr.getClass==='function'?rr.getClass(id):null;return cc&&cc.level?String(cc.level):'';}catch(e){return '';}})(),subject:'',term:'',capability:'expected',currentDay:1,progress:{lessonsCompleted:0},assessments:{},preferences:{},registeredAt:new Date().toISOString(),prototypeSession:true};
       all[id]=item;write(KEY,all);try{localStorage.setItem(CURRENT,id);localStorage.setItem('pacificEducationUserId',id);}catch(e){}
     } else {try{localStorage.setItem('pacificEducationUserId',item.pacEduId);}catch(e){}}
     return item;
