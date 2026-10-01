@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function roster() {
         return window.PacificEducationTeacherClassRosterContext || null;
@@ -40,7 +40,11 @@
 
         var context = r.getContext();
         var students = context.studentRefs || [];
-        var classId = context.classId || "No class selected";
+        var classId = context.classId || "";
+        if (!classId) {
+            target.innerHTML = "<p>Select an existing Class Reference to view this dashboard.</p>";
+            return { success: false, error: "Class Reference required" };
+        }
         var selectedStudent = window.PacificEducationStudentCoverageContext &&
             typeof window.PacificEducationStudentCoverageContext.getStudentId === "function" ?
             window.PacificEducationStudentCoverageContext.getStudentId() : "";
@@ -48,8 +52,8 @@
         function approvedHomeForStudent(studentId) { var records=[]; try { records=JSON.parse(localStorage.getItem('pacificEducationApprovedHomeAssessments') || '[]'); } catch(e) { records=[]; } return records.filter(function(x){ return String(x.studentId||'')===String(studentId) && x.status==='teacher-approved'; }); }
 
         var rows = students.map(function(studentRef) {
-            var summary = e.summarize({ studentId: studentRef });
-            var stageRecords = e.list({ studentId: studentRef }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
+            var summary = e.summarize({ studentId: studentRef, classId: classId });
+            var stageRecords = e.list({ studentId: studentRef, classId: classId }).filter(function(item) { return item && item.evidenceType === "indicator-stage" && String(item.classId || "") === String(classId); });
             return {
                 studentId: studentRef,
                 summary: summary,
@@ -91,7 +95,7 @@
                     render(targetId);
                     var detailTarget = target.querySelector("#pacificEducationTeacherIndicatorStageDetails");
                     if (detailTarget) {
-                        var detailRecords = e.list({ studentId: button.getAttribute("data-student") }).filter(function(item) { return item && item.evidenceType === "indicator-stage"; });
+                        var detailRecords = e.list({ studentId: button.getAttribute("data-student"), classId: classId }).filter(function(item) { return item && item.evidenceType === "indicator-stage" && String(item.classId || "") === String(classId); });
                         detailTarget.innerHTML = "<h3>Completed Achievement Indicator Stages</h3>" + (detailRecords.length ? "<ul>" + detailRecords.map(function(item) { return "<li><strong>" + escapeHtml(item.indicatorId || "Indicator") + "</strong> — " + escapeHtml(item.activityType || "stage") + "</li>"; }).join("") + "</ul>" : "<p>No indicator stages recorded yet.</p>");
                     }
                     var lesson = lessonRenderer();
