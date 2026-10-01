@@ -12,14 +12,14 @@
 
     var VERSION = "1.1.0";
 
-    function getStudentId() {
+    function getClassId() {\n        var r = window.PacificEducationTeacherClassRosterContext;\n        return r && typeof r.getClassId === "function" ? r.getClassId() : null;\n    }\n\n    function getStudentId() {
         var c = window.PacificEducationStudentCoverageContext;
         return c && typeof c.getStudentId === "function" ? c.getStudentId() : null;
     }
 
     function getConfig(input) {
         input = input || {};
-        var level = input.level || "";
+        var classId = input.classId || getClassId();\n        var level = input.level || "";
         var subjectId = input.subjectId || "";
         var term = input.term || "";
         var dayNumber = Number(input.dayNumber || 1);
@@ -50,7 +50,7 @@
 
     function record(input) {
         var config = getConfig(input);
-        if (!config.studentId) {
+        if (!config.classId) {\n            return { success: false, error: "Select an existing class before recording daily progress" };\n        }\n        if (!config.studentId) {
             return {
                 success: false,
                 error: "Select a student before recording daily progress"
@@ -134,7 +134,7 @@
             }
         });
 
-        document.dispatchEvent(new CustomEvent("pacificEducationDailyProgressRecorded", { detail: { studentId: config.studentId, dayNumber: config.dayNumber, activityId: activityId, subjectId: config.subjectId, term: config.term } }));
+        document.dispatchEvent(new CustomEvent("pacificEducationDailyProgressRecorded", { detail: { classId: config.classId, studentId: config.studentId, dayNumber: config.dayNumber, activityId: activityId, subjectId: config.subjectId, term: config.term } }));
         document.dispatchEvent(new CustomEvent("pacificEducationCoverageRefresh"));
         try {
             var firebaseService = window.PacificEducationFirebase;
