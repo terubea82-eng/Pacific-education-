@@ -87,7 +87,7 @@
       response: response || "",
       questionText: ctx.questionText,
       audioDataUrl: audio || "",
-      classLevel: ctx.level,
+      classId: ctx.classId,\n      classLevel: ctx.level,
       subject: ctx.subjectId,
       term: ctx.term,
       curriculumContext: ctx,
@@ -123,7 +123,7 @@
       try { home = JSON.parse(localStorage.getItem(homeKey) || "[]"); } catch (e) {}
       home.push({
         submissionId: "audio-activity-" + Date.now(),
-        studentId: "pilot-student-demo",
+        classId: ctx.classId,\n        studentId: "pilot-student-demo",
         studentName: "Student",
         classLevel: ctx.level,
         subject: ctx.subjectId,
