@@ -8,8 +8,9 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var STORAGE_KEY = "pacificEducationSelectedStudentId";
+    var CLASS_STORAGE_KEY = "pacificEducationSelectedClassId";
 
     function getStudentId() {
         try {
@@ -19,15 +20,38 @@
         }
     }
 
+    function getClassId() {
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function") {
+            return String(roster.getClassId() || "").trim();
+        }
+        try { return String(window.localStorage.getItem(CLASS_STORAGE_KEY) || "").trim(); } catch (e) { return ""; }
+    }
+
+    function studentBelongsToSelectedClass(id) {
+        var classId = getClassId();
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (!classId || !roster || typeof roster.getStudents !== "function") return false;
+        var students = roster.getStudents(classId) || [];
+        return students.some(function(ref) { return String(ref) === String(id); });
+    }
+
     function setStudentId(studentId) {
         var id = String(studentId || "").trim();
+        if (id && !studentBelongsToSelectedClass(id)) {
+            try { window.localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+            window.dispatchEvent(new CustomEvent("pacificEducationStudentChanged", {
+                detail: { studentId: "", classId: getClassId(), blocked: true, reason: "Student is not enrolled in the selected Class Reference.", prototype: true }
+            }));
+            return "";
+        }
         try {
             if (id) window.localStorage.setItem(STORAGE_KEY, id);
             else window.localStorage.removeItem(STORAGE_KEY);
         } catch (e) {}
 
         window.dispatchEvent(new CustomEvent("pacificEducationStudentChanged", {
-            detail: { studentId: id, prototype: true }
+            detail: { studentId: id, classId: getClassId(), prototype: true }
         }));
 
         return id;
@@ -35,8 +59,11 @@
 
     function getContext() {
         var id = getStudentId();
+        var classId = getClassId();
+        if (id && !studentBelongsToSelectedClass(id)) id = "";
         return {
             studentId: id || null,
+            classId: classId || null,
             selected: !!id,
             prototype: true,
             productionEligible: false
