@@ -61,14 +61,29 @@ Verify that the prototype remains usable across:
 5. Confirm retry planning is bounded and eventually reports manual review.
 6. Confirm no item is removed merely because a retry was attempted.
 
+## Test 7 — Mobile/accessibility conflict review
+
+1. Create a queued conflict using the conflict procedure below.
+2. On an Android-sized viewport, confirm the **Sync conflict review** panel fits within the available width without horizontal scrolling.
+3. Confirm each conflict is presented as a distinct, readable item with the lesson/day and both completion states.
+4. Confirm **Needs review** and **Reviewed — data preserved** are visible text states, not color-only indicators.
+5. Confirm **Mark reviewed** and **Require review again** controls are at least approximately 44px high/wide and remain usable with touch.
+6. Confirm keyboard focus is visibly indicated when navigating with a keyboard or accessibility switch.
+7. Confirm long lesson identifiers wrap instead of forcing horizontal scrolling.
+8. With reduced-motion preferences enabled, confirm the conflict controls remain usable without relying on animation.
+9. Confirm reviewing a conflict does not delete or rewrite either queued record.
+10. Repeat after reconnect and confirm the manual-review gate remains enforced until every conflict is reviewed.
+
 ## Evidence record
 
 For each executed test record:
 - date/time
 - device and OS
 - browser/app version
+- viewport/orientation
 - connection type
 - VPN/proxy on or off
+- accessibility settings used
 - test case
 - expected result
 - observed result
