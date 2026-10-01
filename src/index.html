@@ -12,21 +12,22 @@ header{padding:20px;border-bottom:1px solid #ccc}
 main{max-width:1000px;margin:auto;padding:20px}
 section{margin-bottom:24px;padding:20px;border:1px solid #ccc;border-radius:8px}
 body.pe-guided-flow main > *{display:none !important}
-body.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper,body.pe-guided-flow #dailyNextWrapper,body.pe-guided-flow #practiceNextWrapper,body.pe-guided-flow #assessmentNextWrapper{display:none !important}
-body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #capabilityNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #dailyNextWrapper,body.pe-guided-flow[data-pe-flow-step="7"] #practiceNextWrapper,body.pe-guided-flow[data-pe-flow-step="8"] #assessmentNextWrapper{display:block !important}
+body.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #prototypeNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper,body.pe-guided-flow #dailyNextWrapper,body.pe-guided-flow #practiceNextWrapper,body.pe-guided-flow #assessmentNextWrapper{display:none !important}
+body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #prototypeNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #capabilityNextWrapper,body.pe-guided-flow[data-pe-flow-step="7"] #dailyNextWrapper,body.pe-guided-flow[data-pe-flow-step="8"] #practiceNextWrapper,body.pe-guided-flow[data-pe-flow-step="9"] #assessmentNextWrapper{display:block !important}
 
 body.pe-guided-flow #pacificEducationAppMenu,body.pe-guided-flow header,body.pe-guided-flow #userFirstNavigation{display:none !important}
 body.pe-guided-flow #pacificEducationAccessibilityControls{display:flex !important}
 body.pe-guided-flow[data-pe-flow-step="0"] #pacificEducationWelcome,body.pe-guided-flow[data-pe-flow-step="0"] #pilotBanner{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="1"] #pacificEducationIdentityRegistration,body.pe-guided-flow[data-pe-flow-step="1"] #prototypeAccess{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="2"] #levelSelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="3"] #subjectSelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="4"] #termSelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="5"] #capabilitySelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="6"] #dailyLesson{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="7"] #dailyLessonPracticeStage{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="8"] #assessments{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="9"] #teacherCalendarSection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="1"] #pacificEducationIdentityRegistration{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="2"] #prototypeAccess{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="3"] #levelSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="4"] #subjectSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="5"] #termSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="6"] #capabilitySelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="7"] #dailyLesson{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="8"] #dailyLessonPracticeStage{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="9"] #assessments{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="10"] #teacherCalendarSection{display:block !important}
 
 button{padding:10px 16px;margin:5px;cursor:pointer}
 .status{padding:10px;border-radius:6px}
@@ -134,7 +135,8 @@ html[data-text-scale="x-large"]{font-size:125%}
 (function(){
   var stepGroups=[
     ["pacificEducationWelcome","pilotBanner"],
-    ["pacificEducationIdentityRegistration","prototypeAccess"],
+    ["pacificEducationIdentityRegistration"],
+    ["prototypeAccess"],
     ["levelSelection"],
     ["subjectSelection"],
     ["termSelection"],
@@ -144,7 +146,7 @@ html[data-text-scale="x-large"]{font-size:125%}
     ["assessments"],
     ["teacherCalendarSection"]
   ];
-  var nextIds=["welcomeNextButton","registrationNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
+  var nextIds=["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
   var current=0;
 
   function applyStep(index){
@@ -177,7 +179,18 @@ html[data-text-scale="x-large"]{font-size:125%}
   }
 
   window.PacificEducationGuidedNext=function(nextIndex){
-    applyStep(nextIndex);
+    var idx=Number(nextIndex);
+    if(!Number.isFinite(idx))return false;
+    if(idx===2){
+      var registration=null;
+      try{registration=JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration")||"null");}catch(_){}
+      if(!registration||!registration.name||!registration.role){
+        var status=document.getElementById("pilotRegistrationStatus");
+        if(status)status.textContent="Please save Pilot Registration before continuing.";
+        return false;
+      }
+    }
+    applyStep(idx);
     return false;
   };
 
