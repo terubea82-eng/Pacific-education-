@@ -7,7 +7,7 @@
  */
 (function(window){
   "use strict";
-  var VERSION="1.0.0";
+  var VERSION="1.1.0";
   var ROOT_ID="pacificEducationCurriculumVerificationAudit";
   var DETAIL_ID="pacificEducationCurriculumAuditDetail";
   var VERIFIED=["VALIDATED","SOURCE_VERIFIED","VERIFIED"];
@@ -20,8 +20,18 @@
   function mapper(){ return window.PacificEducationAchievementIndicatorActivityMapper; }
   function evidence(){ return window.PacificEducationCurriculumEvidenceRegistry; }
 
+  function classContext(){
+    var r=window.PacificEducationTeacherClassRosterContext;
+    if(!r||typeof r.getClassId!=="function"||typeof r.getClass!=="function") return null;
+    var id=String(r.getClassId()||"").trim();
+    if(!id||!r.getClass(id)) return null;
+    return {classId:id,level:r.getClass(id).level||""};
+  }
+
   function currentFilters(){
-    var f={};
+    var ctx=classContext();
+    if(!ctx) return null;
+    var f={classId:ctx.classId};
     var level=window.localStorage.getItem("pacificEducationLevel");
     var subject=window.localStorage.getItem("pacificEducationSubject");
     var term=window.localStorage.getItem("pacificEducationTerm");
@@ -53,8 +63,9 @@
     var ev=evidence();
     if(!reg||typeof reg.list!=="function") return {rows:[],counts:{total:0,verified:0,pending:0,mapped:0,assessed:0,covered:0}};
     var filters=currentFilters();
+    if(!filters) return {rows:[],counts:{total:0,verified:0,pending:0,mapped:0,assessed:0,covered:0},blocked:true,error:"Class Reference required"};
     var indicators=reg.list(filters);
-    var records=cov&&typeof cov.list==="function"?cov.list({studentId:studentId()}):[];
+    var records=cov&&typeof cov.list==="function"?cov.list({studentId:studentId(),classId:filters.classId}):[];
     var rows=indicators.map(function(ind){
       var verified=isVerified(ind);
       var mapped=false;
@@ -87,9 +98,10 @@
     try{activities=map&&typeof map.mapIndicator==="function"?map.mapIndicator(i):[];}catch(e){activities=[];}
     var stages=["teach","guided-practice","independent-practice","application","check-assessment","remedial-extension"];
     var records=coverage()&&typeof coverage().list==="function"?coverage().list({studentId:studentId(),indicatorId:indicatorId}):[];
+    var ctx=classContext();
     var approved=[];
     try{approved=JSON.parse(window.localStorage.getItem("pacificEducationApprovedHomeAssessments")||"[]");if(!Array.isArray(approved))approved=[];}catch(e){approved=[];}
-    approved=approved.filter(function(x){return String(x.studentId||"")===String(studentId())&&x.status==="teacher-approved";});
+    approved=approved.filter(function(x){return String(x.studentId||"")===String(studentId())&&String(x.classId||"")===String(ctx?ctx.classId:"")&&x.status==="teacher-approved";});
     var html=["<section class=\"pe-audit-detail\"><h3>Indicator Drill-Down: "+esc(i.id)+"</h3>"]; 
     html.push("<p><strong>Achievement Indicator:</strong> "+esc(i.indicatorText||i.achievementIndicator||"")+"</p>");
     html.push("<p><strong>Class:</strong> "+esc(i.level)+" &nbsp; <strong>Subject:</strong> "+esc(i.subjectId)+" &nbsp; <strong>Term:</strong> "+esc(i.term)+"</p>");
@@ -126,7 +138,9 @@
       html.push("<div class=\"pe-audit-card pe-audit-"+x[2]+"\"><strong>"+x[0]+"</strong><span>"+x[1]+"</span><small>of "+c.total+" indicators</small></div>");
     });
     html.push("</div>");
-    html.push("<p><strong>Current selection:</strong> "+esc(currentFilters().level||"All classes")+" • "+esc(currentFilters().subjectId||"All subjects")+" • "+esc(currentFilters().term||"All terms")+"</p>");
+    var filters=currentFilters();
+    if(!filters){ root.innerHTML="<section class=\"pe-curriculum-audit\"><h2>Curriculum Coverage / Audit</h2><p>Select an existing Class Reference before viewing class-specific curriculum coverage.</p></section>"; return; }
+    html.push("<p><strong>Current selection:</strong> "+esc(filters.level||"All classes")+" • "+esc(currentFilters().subjectId||"All subjects")+" • "+esc(currentFilters().term||"All terms")+"</p>");
     if(!data.rows.length){ html.push("<p>No curriculum indicators are registered for the current selection.</p>"); }
     else {
       html.push("<div style=\"overflow:auto\"><table><thead><tr><th>Indicator</th><th>Level</th><th>Subject</th><th>Term</th><th>Verification</th><th>Activities</th><th>Assessment</th><th>Coverage</th><th>Drill-down</th></tr></thead><tbody>");
