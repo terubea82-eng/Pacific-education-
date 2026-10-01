@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1007 */
+/* Pacific Education — Speech Voice Controller v1008 */
 (function (window) {
   "use strict";
 
@@ -20,7 +20,18 @@
       return /^en(-|$)/i.test(String(voice.lang || ""));
     });
 
+    // Prefer a male-presenting English voice for the Pacific Education pilot.
+    // Browser speech APIs do not standardize a gender property, so use conservative
+    // name hints first, then fall back to a local English voice. The user can still
+    // change the device/browser TTS voice independently.
+    var maleVoiceHints = /(?:male|man|microsoft\s+(?:david|mark|ryan|guy)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|alex|daniel|fred|james|john|tom)/i;
+    var femaleVoiceHints = /(?:female|woman|microsoft\s+(?:zira|hazel|susan)|google\s+(?:uk\s+english\s+female|us\s+english\s+female)|samantha|karen|moira|victoria)/i;
+    var maleEnglishVoice = englishVoices.find(function (voice) {
+      return maleVoiceHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
+    });
+
     selectedVoice =
+      maleEnglishVoice ||
       englishVoices.find(function (voice) { return voice.localService; }) ||
       englishVoices[0] ||
       voices[0];
