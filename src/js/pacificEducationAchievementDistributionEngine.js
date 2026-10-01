@@ -117,8 +117,41 @@
         return days;
     }
 
+    function getClassId(filters) {
+        filters = filters || {};
+
+        var roster =
+            window.PacificEducationTeacherClassRosterContext;
+
+        if (filters.classId) {
+            return String(filters.classId).trim();
+        }
+
+        if (
+            roster &&
+            typeof roster.getClassId === "function"
+        ) {
+            var classId = roster.getClassId();
+            return classId ? String(classId).trim() : "";
+        }
+
+        return "";
+    }
+
     function distribute(filters) {
         filters = filters || {};
+
+        var classId = getClassId(filters);
+
+        if (!classId) {
+            return {
+                success: false,
+                blocked: true,
+                reason: "Class Reference required",
+                assignments: [],
+                prototype: true
+            };
+        }
 
         var startDay = Number.parseInt(filters.startDay || 1, 10);
         var endDay = Number.parseInt(filters.endDay || 365, 10);
@@ -172,6 +205,7 @@
             var indicator = indicators[indicatorIndex];
 
             assignments.push({
+                classId: classId,
                 dayNumber: dayNumber,
                 teachingDayIndex: dayIndex + 1,
                 authorizedTeachingDays: days.length,
@@ -199,6 +233,7 @@
 
         return {
             success: true,
+            classId: classId,
             startDay: startDay,
             endDay: endDay,
             availableLearningDays: days.length,
