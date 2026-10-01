@@ -35,7 +35,21 @@
             return false;
         }
 
-        var roster = window.PacificEducationTeacherClassRosterContext;\n        if (roster && typeof roster.getClassId === "function" && typeof roster.getClass === "function") {\n            var classId = roster.getClassId();\n            if (classId) {\n                var currentClass = roster.getClass(classId);\n                if (!currentClass) return false;\n                if (currentClass.level && String(currentClass.level) !== String(level)) {\n                    var status = document.getElementById("pacificEducationLevelStatus");\n                    if (status) status.textContent = "Level does not match selected Class Reference " + classId + ". Select the correct class first.";\n                    return false;\n                }\n            }\n        }\n\n        window.localStorage.setItem("pacificEducationLevel", level);
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function" && typeof roster.getClass === "function") {
+            var classId = roster.getClassId();
+            if (classId) {
+                var currentClass = roster.getClass(classId);
+                if (!currentClass) return false;
+                if (currentClass.level && String(currentClass.level) !== String(level)) {
+                    var status = document.getElementById("pacificEducationLevelStatus");
+                    if (status) status.textContent = "Level does not match selected Class Reference " + classId + ". Select the correct class first.";
+                    return false;
+                }
+            }
+        }
+
+        window.localStorage.setItem("pacificEducationLevel", level);
         document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
             detail: { level: level, prototype: true }
         }));
