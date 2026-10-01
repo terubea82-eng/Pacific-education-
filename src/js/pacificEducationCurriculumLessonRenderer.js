@@ -498,9 +498,6 @@ function attachTextAudioControls(targetId, text) {
         var h = document.createElement("h3");
         h.textContent = "📚 Daily Activities";
         section.appendChild(h);
-        var p = document.createElement("p");
-        p.textContent = "Choose a day. Then press Start Day.";
-        section.appendChild(p);
         var controls = document.createElement("div");
         var select = document.createElement("select");
         select.id = "pacificDailyActivityDay";
@@ -563,11 +560,7 @@ function attachTextAudioControls(targetId, text) {
         });
         controls.appendChild(button);
         section.appendChild(controls);
-        var today = document.createElement("p");
-        today.textContent = "Today: Day " + getDay();
-        today.setAttribute("aria-live", "polite");
-        section.appendChild(today);
-        container.parentNode.insertBefore(section, container);
+        container.appendChild(section);
     }
 
     function refresh() {
