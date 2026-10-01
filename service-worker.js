@@ -31,7 +31,7 @@ self.addEventListener("fetch",event=>{
   if(request.method!=="GET")return;
 
   const url=new URL(request.url);
-  if(url.origin!==self.location.origin||url.search)return;
+  if(url.origin!==self.location.origin)return;
 
   if(request.mode==="navigate"||request.destination==="document"){
     event.respondWith(
@@ -47,11 +47,14 @@ self.addEventListener("fetch",event=>{
   }
 
   if(isStatic(request)){
+    // Versioned assets such as foo.js?v=123 use one stable cache key.
+    // The network request keeps its version query so deployments stay fresh.
+    const cacheKey=new Request(url.origin+url.pathname,{method:"GET"});
     event.respondWith(
-      caches.match(request).then(cached=>{
+      caches.match(cacheKey).then(cached=>{
         const refresh=fetch(request,{cache:"no-store"}).then(response=>{
           if(response.ok){
-            caches.open(CACHE_NAME).then(cache=>cache.put(request,response.clone()));
+            caches.open(CACHE_NAME).then(cache=>cache.put(cacheKey,response.clone()));
           }
           return response;
         }).catch(()=>null);
