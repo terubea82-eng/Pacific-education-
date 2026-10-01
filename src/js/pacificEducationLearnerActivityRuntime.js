@@ -28,17 +28,14 @@
     var text = String(value || "").trim();
     if (!text) return false;
     try {
+      if (typeof window.speakText === "function") return window.speakText(text);
+    } catch (e) {}
+    try {
       if (window.speechSynthesis && typeof window.SpeechSynthesisUtterance === "function") {
         window.speechSynthesis.cancel();
         var utterance = new window.SpeechSynthesisUtterance(text);
         utterance.lang = "en";
         window.speechSynthesis.speak(utterance);
-        return true;
-      }
-    } catch (e) {}
-    try {
-      if (typeof window.speakText === "function") {
-        window.speakText(text);
         return true;
       }
     } catch (e) {}
