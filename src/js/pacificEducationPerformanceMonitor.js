@@ -4,6 +4,8 @@
 (function(window,document){
   "use strict";
   var started=Date.now();
+  var SLOW_LOAD_MS=5000;
+  var SLOW_DOM_MS=3000;
 
   function round(value){return Math.round(Number(value||0));}
   function collect(){
@@ -20,7 +22,9 @@
       firstPaintMs:null,
       firstContentfulPaintMs:null,
       scriptCount:document.scripts?document.scripts.length:null,
-      online:navigator.onLine!==false
+      online:navigator.onLine!==false,
+      slowLoad:false,
+      slowDom:false
     };
 
     paint.forEach(function(entry){
@@ -34,6 +38,8 @@
   function render(){
     var data=collect();
     data.cacheStatus=("serviceWorker"in navigator) ? "Service worker supported" : "Service worker unavailable";
+    data.slowLoad=data.loadEventMs!==null&&data.loadEventMs>SLOW_LOAD_MS;
+    data.slowDom=data.domContentLoadedMs!==null&&data.domContentLoadedMs>SLOW_DOM_MS;
     window.PacificEducationPerformance=data;
     var status=document.getElementById("systemStatus");
     if(status){
@@ -47,7 +53,8 @@
       target.textContent="Runtime performance: DOM "+(data.domContentLoadedMs===null?"n/a":data.domContentLoadedMs+" ms")+
         " • Load "+(data.loadEventMs===null?"n/a":data.loadEventMs+" ms")+
         " • Scripts "+(data.scriptCount===null?"n/a":data.scriptCount)+
-        " • "+data.cacheStatus;
+        " • "+data.cacheStatus+
+        (data.slowLoad||data.slowDom?" • Slow-load warning":"");
     }
   }
 
