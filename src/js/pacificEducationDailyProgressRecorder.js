@@ -12,14 +12,20 @@
 
     var VERSION = "1.1.0";
 
-    function getClassId() {\n        var r = window.PacificEducationTeacherClassRosterContext;\n        return r && typeof r.getClassId === "function" ? r.getClassId() : null;\n    }\n\n    function getStudentId() {
+    function getClassId() {
+        var r = window.PacificEducationTeacherClassRosterContext;
+        return r && typeof r.getClassId === "function" ? r.getClassId() : null;
+    }
+
+    function getStudentId() {
         var c = window.PacificEducationStudentCoverageContext;
         return c && typeof c.getStudentId === "function" ? c.getStudentId() : null;
     }
 
     function getConfig(input) {
         input = input || {};
-        var classId = input.classId || getClassId();\n        var level = input.level || "";
+        var classId = input.classId || getClassId();
+        var level = input.level || "";
         var subjectId = input.subjectId || "";
         var term = input.term || "";
         var dayNumber = Number(input.dayNumber || 1);
@@ -36,6 +42,7 @@
             subjectId: subjectId,
             term: term,
             dayNumber: dayNumber,
+            classId: classId,
             studentId: input.studentId || getStudentId()
         };
     }
@@ -50,7 +57,10 @@
 
     function record(input) {
         var config = getConfig(input);
-        if (!config.classId) {\n            return { success: false, error: "Select an existing class before recording daily progress" };\n        }\n        if (!config.studentId) {
+        if (!config.classId) {
+            return { success: false, error: "Select an existing class before recording daily progress" };
+        }
+        if (!config.studentId) {
             return {
                 success: false,
                 error: "Select a student before recording daily progress"
@@ -92,6 +102,7 @@
 
             records.push(coverage.record({
                 indicatorId: indicator.id,
+                classId: config.classId,
                 studentId: config.studentId,
                 status: input.status || "taught",
                 evidenceType: input.evidenceType || "daily-lesson",
@@ -102,6 +113,7 @@
             if (automaticStage) {
                 records.push(coverage.record({
                     indicatorId: indicator.id,
+                    classId: config.classId,
                     studentId: config.studentId,
                     status: input.status || "taught",
                     evidenceType: "indicator-stage",
@@ -120,6 +132,7 @@
                 if (input.evidenceType === "daily-assessment" && Number.isFinite(assessmentScore) && !assessmentPassed) {
                     records.push(coverage.record({
                         indicatorId: indicator.id,
+                        classId: config.classId,
                         studentId: config.studentId,
                         status: "practised",
                         evidenceType: "indicator-stage",
