@@ -283,6 +283,8 @@
       "<option value=\"education\">Education / Government</option>" +
       "<option value=\"community\">Community / Partner</option>" +
       "<option value=\"owner\">Owner / Control</option>" +
+      "<option value=\"head-of-school\">Head of School</option>" +
+      "<option value=\"institution-admin\">Institution Administrator</option>" +
       "</select><br>" +
       "<button type=\"button\" id=\"singlePilotRegisterButton\" data-pacific-action=\"pilot-enter-workspace\" style=\"margin-top:12px;padding:11px 18px;border-radius:8px\">Enter Pilot Workspace</button>" +
       "<p id=\"singlePilotRegistrationStatus\" role=\"status\" aria-live=\"polite\">Select a role to begin. No other pilot workspace is exposed before entry.</p>" +
@@ -291,7 +293,8 @@
 
     document.getElementById("singlePilotRegisterButton").onclick = function () {
       var role = document.getElementById("singlePilotRole").value;
-      var language = document.getElementById("singlePilotLanguage").value;
+      var languageSelect = document.getElementById("singlePilotLanguage");
+      var language = languageSelect ? languageSelect.value : "English";
       var status = document.getElementById("singlePilotRegistrationStatus");
       if (!role) {
         status.textContent = "Please select your user type.";
