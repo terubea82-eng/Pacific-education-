@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.2.0";
+    var VERSION = "1.3.0";
 
     function context() {
         return window.PacificEducationStudentCoverageContext || null;
@@ -101,7 +101,13 @@
         var studentId = c.getStudentId();
         var classContext = roster() ? roster().getContext() : { classId: null };
 
-        if (!studentId) {
+        if (!classContext || !classContext.classId) {
+            target.innerHTML =
+                '<div class="pacific-education-student-progress-card"><h2>Student Progress</h2><p>Select an existing Class Reference first.</p></div>';
+            return { success: false, error: "Class Reference required", prototype: true };
+        }
+
+        if (!studentId || !c.studentBelongsToSelectedClass || !c.studentBelongsToSelectedClass()) {
             target.innerHTML =
                 '<div class="pacific-education-student-progress-card">' +
                 '<h2>Student Progress</h2>' +
@@ -110,7 +116,7 @@
             return { success: true, selected: false, prototype: true };
         }
 
-        var filters = { studentId: studentId };
+        var filters = { studentId: studentId, classId: classContext.classId };
         var summary = e.summarize(filters);
         var records = e.list(filters);
         var remaining = e.getRemaining(filters);
