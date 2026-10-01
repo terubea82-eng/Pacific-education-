@@ -8,6 +8,45 @@
 
   var VERSION = "2.0.0";
   var errors = [];
+  var AUTO_REFRESH_INTERVAL_MS = 60000;
+  var AUTO_REFRESH_KEY = "pacificEducationAutoRefreshVersion";
+  var AUTO_REFRESH_LOCK_KEY = "pacificEducationAutoRefreshLock";
+
+  function getAppVersion() {
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; i += 1) {
+      var src = scripts[i].getAttribute("src") || "";
+      if (src.indexOf("pacificEducationInteractionRepair.js") !== -1) {
+        var v = scripts[i].getAttribute("data-app-version");
+        if (v) return v;
+      }
+    }
+    return document.documentElement.getAttribute("data-pacific-version") || "";
+  }
+
+  function autoRefreshOnNewVersion() {
+    var current = getAppVersion();
+    if (!current) return;
+    var previous = "";
+    try { previous = localStorage.getItem(AUTO_REFRESH_KEY) || ""; } catch (e) {}
+    if (!previous) {
+      try { localStorage.setItem(AUTO_REFRESH_KEY, current); } catch (e) {}
+      return;
+    }
+    if (previous === current) return;
+    try {
+      if (sessionStorage.getItem(AUTO_REFRESH_LOCK_KEY) === current) return;
+      sessionStorage.setItem(AUTO_REFRESH_LOCK_KEY, current);
+      localStorage.setItem(AUTO_REFRESH_KEY, current);
+    } catch (e) {}
+    window.location.reload();
+  }
+
+  function startAutomaticRefreshMonitor() {
+    autoRefreshOnNewVersion();
+    window.setInterval(autoRefreshOnNewVersion, AUTO_REFRESH_INTERVAL_MS);
+  }
+
 
   function status(text, isError) {
     var el = document.getElementById("pacificEducationInteractionStatus");
@@ -508,7 +547,7 @@
     audit: runDynamicInteractionAudit
   });
 
-  function start() {
+  function start() {\n    startAutomaticRefreshMonitor();
     repairControls();
     repairDailyActivityRuntime();
     window.setTimeout(repairControls, 500);
