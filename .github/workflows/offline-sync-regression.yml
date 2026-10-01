@@ -1,3 +1,4 @@
+# Current pilot gate verification trigger.
 name: Offline Sync Regression
 
 on:
