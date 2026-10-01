@@ -552,10 +552,7 @@ function attachTextAudioControls(targetId, text) {
         controls.appendChild(button);
         section.appendChild(controls);
         var today = document.createElement("p");
-        today.textContent = "Current day: Day " + getDay() + " • Recommended: " +
-            (getCapability() === "remedial" ? "Multiple Choice" :
-             getCapability() === "developing" ? "True or False" :
-             getCapability() === "advanced" ? "Long Answer" : "Short Answer");
+        today.textContent = "Current learning day: Day " + getDay() + " • Suggested activity: Day " + getDay() + " Activities";
         today.setAttribute("aria-live", "polite");
         section.appendChild(today);
         container.parentNode.insertBefore(section, container);
