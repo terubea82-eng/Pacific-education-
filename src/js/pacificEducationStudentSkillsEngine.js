@@ -16,7 +16,7 @@
 (function () {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
     const STORAGE_KEY = "pacificEducationStudentSkills";
 
     const SKILL_STATUS = Object.freeze({
@@ -60,6 +60,13 @@
         "health",
         "real_life"
     ]);
+
+    function selectedClassId() {
+        const roster = window.PacificEducationTeacherClassRosterContext;
+        if (!roster || typeof roster.getContext !== "function") return null;
+        const ctx = roster.getContext();
+        return ctx && ctx.classId ? String(ctx.classId) : null;
+    }
 
     function now() {
         return new Date().toISOString();
@@ -126,7 +133,7 @@
             throw new Error("Valid evidence type is required.");
         }
 
-        if (!evidence.studentId) {
+        if (!selectedClassId()) {\n            throw new Error("Class Reference is required.");\n        }\n\n        if (!evidence.studentId) {
             throw new Error("Student ID is required.");
         }
 
@@ -145,7 +152,7 @@
         const item = {
             evidenceId: createId("EVID"),
             studentId: evidence.studentId,
-            skillId: evidence.skillId,
+            skillId: evidence.skillId,\n            classId: selectedClassId(),
             type: evidence.type,
             subject: evidence.subject || null,
             activityId: evidence.activityId || null,
@@ -231,19 +238,19 @@
         return record.skills[skill.skillId];
     }
 
-    function getSkill(studentId, skillId) {
+    function getSkill(studentId, skillId) {\n        const classId = selectedClassId();\n        if (!classId) return null;
         const record = getStudentRecord(studentId);
-        return record.skills[skillId] || null;
+        return record.skills[skillId] && String(record.skills[skillId].classId || "") === classId ? record.skills[skillId] : null;
     }
 
-    function getAllSkills(studentId) {
+    function getAllSkills(studentId) {\n        const classId = selectedClassId();\n        if (!classId) return [];
         const record = getStudentRecord(studentId);
-        return Object.values(record.skills);
+        return Object.values(record.skills).filter(function(skill){ return String(skill.classId || "") === classId; });
     }
 
-    function getEvidence(studentId) {
+    function getEvidence(studentId) {\n        const classId = selectedClassId();\n        if (!classId) return [];
         const record = getStudentRecord(studentId);
-        return [...record.evidence];
+        return record.evidence.filter(function(item){ return String(item.classId || "") === classId; });
     }
 
     function recommendNextDevelopment(studentId, skillId) {
