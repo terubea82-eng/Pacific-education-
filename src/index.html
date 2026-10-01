@@ -263,16 +263,7 @@ html[data-text-scale="x-large"]{font-size:125%}
     if(!text)return false;
     stop();
     try{
-      if(window.speakText){ window.speakText(text); return true; }
-      if("speechSynthesis" in window){
-        var u=new SpeechSynthesisUtterance(text);
-        u.lang="en-NZ";
-        u.rate=0.95;
-        u.pitch=1;
-        u.volume=1;
-        window.speechSynthesis.speak(u);
-        return true;
-      }
+      if(window.speakText) return window.speakText(text);
     }catch(_){}
     return false;
   }
