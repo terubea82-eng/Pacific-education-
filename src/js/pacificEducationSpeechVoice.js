@@ -9,6 +9,7 @@
 
   var selectedVoice = null;
   var pendingText = "";
+  var autoplayRetryBound = false;
 
   function scoreVoice(voice) {
     if (!voice) return -1000;
@@ -45,6 +46,7 @@
     var voice = selectedVoice || chooseVoice();
     if (!voice) {
       pendingText = text;
+      bindAutoplayRetry();
       return false;
     }
     try {
@@ -58,6 +60,20 @@
     } catch (e) {
       return false;
     }
+  }
+
+  function bindAutoplayRetry() {
+    if (autoplayRetryBound || !window.document) return;
+    autoplayRetryBound = true;
+    var retry = function() {
+      if (!pendingText || !selectedVoice) return;
+      var text = pendingText;
+      pendingText = "";
+      speakText(text);
+    };
+    ["pointerdown","keydown","touchstart","click"].forEach(function(type) {
+      window.document.addEventListener(type, retry, { once: true, capture: true });
+    });
   }
 
   window.PacificEducationSpeech = {
