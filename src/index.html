@@ -144,33 +144,42 @@ html[data-text-scale="x-large"]{font-size:125%}
   var current=0;
 
   function applyStep(index){
-    current=Math.max(0,Math.min(stepGroups.length-1,index));
+    current=Math.max(0,Math.min(stepGroups.length-1,Number(index)||0));
     document.body.classList.add("pe-guided-flow");
     document.body.setAttribute("data-pe-flow-step",String(current));
 
     var main=document.getElementById("app");
-    if(main)Array.prototype.forEach.call(main.children,function(el){el.hidden=true;});
+    if(main){
+      Array.prototype.forEach.call(main.children,function(el){el.hidden=true;});
+    }
 
     stepGroups[current].forEach(function(id){
       var el=document.getElementById(id);
       if(el)el.hidden=false;
     });
 
-    var menu=document.getElementById("pacificEducationAppMenu");
-    var nav=document.getElementById("userFirstNavigation");
-    var header=document.querySelector("body > header");
-    if(menu)menu.hidden=true;
-    if(nav)nav.hidden=true;
-    if(header)header.hidden=true;
-
     nextIds.forEach(function(id,i){
       var b=document.getElementById(id);
       if(!b)return;
       var wrapper=b.parentElement;
-      if(wrapper)wrapper.hidden=i!==current;
-      b.onclick=function(){applyStep(i+1);window.scrollTo({top:0,behavior:"smooth"});};
+      if(wrapper)wrapper.hidden=(i!==current);
+      b.onclick=function(e){
+        if(e)e.preventDefault();
+        window.PacificEducationGuidedNext(i+1);
+      };
     });
+
+    window.scrollTo({top:0,behavior:"smooth"});
   }
+
+  window.PacificEducationGuidedNext=function(nextIndex){
+    applyStep(nextIndex);
+    return false;
+  };
+
+  window.PacificEducationGuidedCurrent=function(){
+    return current;
+  };
 
   function init(){applyStep(0);}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
