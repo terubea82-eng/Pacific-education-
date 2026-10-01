@@ -88,9 +88,9 @@ test("accessibility runtime announces text scale changes", () => {
 });
 
 test("accessibility runtime safely reports speech availability in status", () => {
-  assert.match(runtime, /function speak\\(text\\)/);
-  assert.match(runtime, /Speech is unavailable in this browser\\./);
-  assert.match(runtime, /function stopSpeaking\\(\\)/);
+  assert.match(runtime, /function speak\(text\)/);
+  assert.match(runtime, /Speech is unavailable in this browser\./);
+  assert.match(runtime, /function stopSpeaking\(\)/);
   assert.match(runtime, /Speech stopped\\./);
 });
 
