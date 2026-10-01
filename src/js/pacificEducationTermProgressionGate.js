@@ -13,7 +13,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var STORAGE_KEY = "pacificEducationTerm1Prerequisites";
 
     function copy(v) {
@@ -86,6 +86,10 @@
     function evaluate(filters) {
         filters = filters || {};
         var studentId = filters.studentId || null;
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var ctx = roster && typeof roster.getContext === "function" ? roster.getContext() : null;
+        var classId = filters.classId || (ctx && ctx.classId) || null;
+        if (!classId) return { success:false, error:"Class Reference required", studentId:studentId, totalPrerequisites:0, coveredPrerequisites:0, remainingPrerequisites:0, missing:[], term2Ready:false, prototype:true, productionEligible:false };
         var prerequisites = list({
             level: filters.level,
             subjectId: filters.subjectId,
@@ -96,7 +100,7 @@
         var missing = [];
 
         prerequisites.forEach(function(item) {
-            var record = getCoverage(item, studentId);
+            var record = getCoverage(item, studentId);\n            if (record && String(record.classId || "") !== String(classId)) record = null;
             if (record && record.status === "covered") covered++;
             else missing.push(copy(item));
         });
