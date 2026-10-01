@@ -293,29 +293,50 @@
       var wrap=document.createElement("div");
       wrap.style.cssText="display:flex;align-items:center;gap:6px;flex-wrap:wrap;width:100%;";
       var b=document.createElement("button");
-      b.type="button";b.id="pacificEducationPersistentVoiceButton";
+      b.type="button";
+      b.id="pacificEducationPersistentVoiceButton";
       b.textContent="🎙️ Start Voice Control";
       b.setAttribute("aria-label","Start voice control");
       var s=document.createElement("span");
       s.id="pacificEducationPersistentVoiceStatus";
-      s.setAttribute("role","status");s.setAttribute("aria-live","polite");
-      s.textContent="Voice control ready from page load. You can use voice directives without typing.";
-      wrap.appendChild(b);wrap.appendChild(s);controls.insertBefore(wrap,controls.firstChild);
+      s.setAttribute("role","status");
+      s.setAttribute("aria-live","polite");
+      s.textContent="Voice control ready. Press Start Voice Control to use the microphone.";
+      wrap.appendChild(b);
+      wrap.appendChild(s);
+      controls.insertBefore(wrap,controls.firstChild);
       b.onclick=function(){globalListening?stopGlobal():startGlobal();};
     }
-    // Do not auto-start microphone recognition on page load. Mobile browsers/WebViews\n    // commonly block SpeechRecognition without a user gesture; start only from the\n    // visible Voice Control button or an explicit user action.\n    if (!document.getElementById("pacificEducationVoiceDock")) {
+    // Mobile browsers require a user gesture before microphone recognition can start.
+    // Do not automatically start SpeechRecognition on page load.
+    if (!document.getElementById("pacificEducationVoiceDock")) {
       var dock=document.createElement("section");
       dock.id="pacificEducationVoiceDock";
       dock.setAttribute("aria-label","Pacific Education voice and installation controls");
       dock.style.cssText="position:fixed;left:8px;right:8px;bottom:8px;z-index:9999;background:#fff;border:2px solid currentColor;border-radius:10px;padding:8px;box-shadow:0 2px 10px rgba(0,0,0,.18);display:flex;gap:6px;align-items:center;flex-wrap:wrap;";
-      var vb=document.createElement("button"); vb.type="button"; vb.textContent="🎙️ Start Voice Control"; vb.id="pacificEducationVoiceDockButton"; vb.setAttribute("aria-label","Start or stop voice control");
-      var ib=document.createElement("button"); ib.type="button"; ib.textContent="📲 Install Pacific Education"; ib.id="pacificEducationVoiceDockInstallButton"; ib.hidden=false;
-      var vs=document.createElement("span"); vs.id="pacificEducationVoiceDockStatus"; vs.setAttribute("role","status"); vs.setAttribute("aria-live","polite"); vs.textContent="Voice-first mode ready. Say Start Voice, Next, Read, Read Choices, Dictate, or Sign Out.";
+      var vb=document.createElement("button");
+      vb.type="button";
+      vb.textContent="🎙️ Start Voice Control";
+      vb.id="pacificEducationVoiceDockButton";
+      vb.setAttribute("aria-label","Start or stop voice control");
+      var ib=document.createElement("button");
+      ib.type="button";
+      ib.textContent="📲 Install Pacific Education";
+      ib.id="pacificEducationVoiceDockInstallButton";
+      ib.hidden=false;
+      var vs=document.createElement("span");
+      vs.id="pacificEducationVoiceDockStatus";
+      vs.setAttribute("role","status");
+      vs.setAttribute("aria-live","polite");
+      vs.textContent="Voice control ready. Press Start Voice Control, then say Next, Read, Read Choices, Dictate, or Sign Out.";
       vb.onclick=function(){globalListening?stopGlobal():startGlobal();};
       ib.onclick=function(){if(window.PacificEducationPWAInstall&&typeof window.PacificEducationPWAInstall.install==="function")window.PacificEducationPWAInstall.install();};
-      dock.appendChild(vb); dock.appendChild(ib); dock.appendChild(vs); document.body.appendChild(dock);
+      dock.appendChild(vb);
+      dock.appendChild(ib);
+      dock.appendChild(vs);
+      document.body.appendChild(dock);
     }
-        document.addEventListener("click",function(e){
+    document.addEventListener("click",function(e){
       var x=e.target&&e.target.closest?e.target.closest("button,a,[role=button]"):null;
       if(x && /^(sign out|log out|logout)$/i.test(String(x.getAttribute("aria-label")||x.textContent||"").replace(/\s+/g," ").trim())) stopGlobal();
     },true);
