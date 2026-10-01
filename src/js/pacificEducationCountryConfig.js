@@ -50,7 +50,7 @@ function reset(){state=clone(defaults);render();document.dispatchEvent(new Custo
 function ensureUI(){
  var app=document.getElementById("app");if(!app||document.getElementById("pacificEducationCountrySettings"))return;
  var s=document.createElement("section");s.id="pacificEducationCountrySettings";s.hidden=true;
- s.innerHTML="<h2>Institution & Education System</h2><p>Pacific Education can be configured for schools, colleges, universities, training providers and other education organisations. Each institution can define its own structure, programmes, courses, academic calendar, assessment, grading and credit rules.</p><p><strong>International mapping:</strong> Optional UNESCO ISCED mapping can support cross-country comparison without replacing national terminology, institutional autonomy or national authority.</p><div id="pacificEducationCountrySettingsSummary"></div>";
+ s.innerHTML='<h2>Institution & Education System</h2><p>Pacific Education can be configured for schools, colleges, universities, training providers and other education organisations. Each institution can define its own structure, programmes, courses, academic calendar, assessment, grading and credit rules.</p><p><strong>International mapping:</strong> Optional UNESCO ISCED mapping can support cross-country comparison without replacing national terminology, institutional autonomy or national authority.</p><div id="pacificEducationCountrySettingsSummary"></div>';
  app.appendChild(s);
 }
 function render(){
