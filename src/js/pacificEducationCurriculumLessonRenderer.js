@@ -6,7 +6,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.7.2";
+    var VERSION = "1.7.3";
     var originalDisplay = null;
     var connected = false;
 
@@ -437,7 +437,20 @@ function attachTextAudioControls(targetId, text) {
         ensureCurriculumData();
         var e = engine();
         if (!e || typeof e.generateDailyPlan !== "function") return false;
-        var result = e.generateDailyPlan({ level: getLevel(), subjectId: getSubject(), term: getTerm(), capability: getCapability(), dayNumber: getDay() });
+        var roster = window.PacificEducationTeacherClassRosterContext || null;
+        var classContext = roster && typeof roster.getContext === "function" ? roster.getContext() : null;
+        if (!classContext || !classContext.classId) {
+            setText("pacificEducationCurriculumLessonStatus", "Select an existing Class Reference first.");
+            return false;
+        }
+        var result = e.generateDailyPlan({
+            classId: classContext.classId,
+            level: classContext.level || getLevel(),
+            subjectId: getSubject(),
+            term: getTerm(),
+            capability: getCapability(),
+            dayNumber: getDay()
+        });
         return render({
             success: result.success,
             evidenceStatus: result.evidenceStatus,
