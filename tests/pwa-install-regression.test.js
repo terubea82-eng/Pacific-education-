@@ -23,5 +23,5 @@ test("PWA install runtime exposes accessible install status", () => {
   assert.match(installRuntime, /pacificEducationInstallStatus/);
   assert.match(installRuntime, /PacificEducationPWAInstall/);
   assert.match(installRuntime, /Enter/);
-  assert.match(installRuntime, /Space/);
+  assert.match(installRuntime, /e\.key===\" \"/);
 });
