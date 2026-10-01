@@ -1,11 +1,11 @@
 /* PACIFIC EDUCATION — OFFLINE SYNC CONTROLLER
- * v1.2.0 — prototype reconciliation and retry planning only
+ * v1.3.0 — prototype reconciliation, conflict gating and retry planning only
  * A real server must authenticate the session, validate ownership,
  * deduplicate events and acknowledge durable persistence.
  */
 (function(window){
 "use strict";
-var VERSION="1.2.0";
+var VERSION="1.3.0";
 var MAX_RETRIES=5;
 var BASE_DELAY_MS=2000;
 function runtime(){return window.PacificEducationOfflineRuntime||null;}
@@ -24,19 +24,61 @@ function inspect(){
  var r=runtime();
  if(!r||typeof r.getQueue!=="function") return {ready:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
  var q=r.getQueue();
- return {ready:true,queuedProgressCount:q.count||0,serverSyncConfigured:false,syncStatus:"SERVER_ENDPOINT_REQUIRED",retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},productionApproved:false,prototype:true};
+ var conflicts=conflictSummary();
+ return {ready:true,queuedProgressCount:q.count||0,serverSyncConfigured:false,syncStatus:"SERVER_ENDPOINT_REQUIRED",retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},conflictCount:conflicts.count||0,requiresManualReview:Boolean(conflicts.requiresManualReview),productionApproved:false,prototype:true};
+}
+function conflictKey(item){
+ item=item||{};
+ return [item.type||"",item.lessonId||"",item.dayNumber==null?"":item.dayNumber].join("|");
+}
+function detectConflicts(items){
+ var seen={},conflicts=[];
+ (items||[]).forEach(function(item){
+   var key=conflictKey(item);
+   if(!key)return;
+   if(seen[key] && seen[key].completed!==item.completed){
+     conflicts.push({key:key,first:seen[key],second:item,requiresReview:true});
+   }else if(!seen[key])seen[key]=item;
+ });
+ return conflicts;
+}
+function hasConflictFor(item,items){
+ var key=conflictKey(item);
+ return (items||[]).some(function(x){return conflictKey(x)===key && x && item && x.completed!==item.completed;});
+}
+function conflictSummary(){
+ var queue=[];
+ try{
+   var r=window.PacificEducationOfflineRuntime;
+   if(r&&typeof r.getQueueConflictCandidates==="function"){
+     var candidates=r.getQueueConflictCandidates();
+     return candidates||{count:0,requiresManualReview:false,items:[]};
+   }
+   if(r&&typeof r.getQueueStatus==="function"){
+     var result=r.getQueueStatus();
+     queue=result&&result.items||[];
+   }else if(r&&typeof r.getQueue==="function"){
+     var result2=r.getQueue();
+     queue=result2&&result2.items||[];
+   }
+ }catch(e){queue=[];}
+ var conflicts=detectConflicts(queue);
+ return {count:conflicts.length,requiresManualReview:conflicts.length>0,conflicts:conflicts};
 }
 function buildSyncBatch(){
  var r=runtime();
  if(!r||typeof r.getQueue!=="function") return {success:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
- var q=r.getQueue(),items=(q.items||[]).map(function(item){
-   return {eventId:eventId(item),type:item.type,lessonId:item.lessonId,dayNumber:item.dayNumber,completed:Boolean(item.completed),queuedAt:item.queuedAt||null,retry:retryPlan(0)};
+ var q=r.getQueue(),raw=q.items||[],conflicts=detectConflicts(raw);
+ var items=raw.map(function(item){
+   var conflicted=hasConflictFor(item,raw);
+   return {eventId:eventId(item),type:item.type,lessonId:item.lessonId,dayNumber:item.dayNumber,completed:Boolean(item.completed),queuedAt:item.queuedAt||null,retry:retryPlan(0),requiresManualReview:conflicted};
  });
- return {success:true,items:items,count:items.length,containsSensitiveFields:false,idempotencyKeysIncluded:true,retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},prototype:true};
+ return {success:true,items:items,count:items.length,conflictCount:conflicts.length,requiresManualReview:conflicts.length>0,containsSensitiveFields:false,idempotencyKeysIncluded:true,retryPolicy:{maxAttempts:MAX_RETRIES,baseDelayMs:BASE_DELAY_MS},prototype:true};
 }
 function attemptSync(){
  var s=inspect();
  if(!s.ready)return s;
+ if(s.requiresManualReview)return {success:false,reason:"MANUAL_CONFLICT_REVIEW_REQUIRED",queuedProgressCount:s.queuedProgressCount,queuePreserved:true,conflictCount:s.conflictCount,retryPlan:null,productionApproved:false,prototype:true};
  return {success:false,reason:"SERVER_SYNC_NOT_CONFIGURED",queuedProgressCount:s.queuedProgressCount,queuePreserved:true,retryPlan:retryPlan(0),productionApproved:false,prototype:true};
 }
 function clearAfterServerAcknowledgement(ack){
@@ -45,41 +87,6 @@ function clearAfterServerAcknowledgement(ack){
  if(!r||typeof r.clearQueue!=="function")return{success:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
  return{success:r.clearQueue().success,cleared:true,productionApproved:false,prototype:true};
 }
-function conflictKey(item){
-    item=item||{};
-    return [item.type||"",item.lessonId||"",item.dayNumber==null?"":item.dayNumber].join("|");
-  }
-
-  function detectConflicts(items){
-    var seen={},conflicts=[];
-    (items||[]).forEach(function(item){
-      var key=conflictKey(item);
-      if(!key)return;
-      if(seen[key] && seen[key].completed!==item.completed){
-        conflicts.push({key:key,first:seen[key],second:item,requiresReview:true});
-      }else if(!seen[key])seen[key]=item;
-    });
-    return conflicts;
-  }
-
-function hasConflictFor(item,items){
-    var key=conflictKey(item);
-    return (items||[]).some(function(x){return conflictKey(x)===key && x && item && x.completed!==item.completed;});
-  }
-
-function conflictSummary(){
-    var queue=[];
-    try{
-      var runtime=window.PacificEducationOfflineRuntime;
-      if(runtime&&typeof runtime.getQueueConflictCandidates==="function"){var candidates=runtime.getQueueConflictCandidates();return candidates||{count:0,requiresManualReview:false,items:[]};}else if(runtime&&typeof runtime.getQueueStatus==="function"){var result=runtime.getQueueStatus();queue=result&&result.items||[];}else if(runtime&&typeof runtime.getQueue==="function"){var result=runtime.getQueue();queue=result&&result.items||[];}
-    }catch(e){queue=[];}
-    var conflicts=detectConflicts(queue);
-    return {count:conflicts.length,requiresManualReview:conflicts.length>0,conflicts:conflicts};
-  }
-
 function status(){return inspect();}
-window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,
-    detectConflicts:detectConflicts,
-    hasConflictFor:hasConflictFor,
-    conflictSummary:conflictSummary,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
+window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,detectConflicts:detectConflicts,hasConflictFor:hasConflictFor,conflictSummary:conflictSummary,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
 })(window);
