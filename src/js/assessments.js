@@ -40,7 +40,7 @@ function saveFormalAssessmentEvidence(type, questionNumber, questionText, select
     try{items=JSON.parse(localStorage.getItem(key)||"[]");}catch(e){items=[];}
     var state=window.PacificEducationCore&&typeof window.PacificEducationCore.getState==="function"?window.PacificEducationCore.getState():{};
     var student=state&&state.student?state.student:{};
-    var item={submissionId:"formal-audio-"+type+"-"+Date.now()+"-"+questionNumber,studentId:student.studentId||student.id||"pilot-student-demo",studentName:student.name||"Student",classId:classId,classLevel:localStorage.getItem("pacificEducationLevel")||"",subject:localStorage.getItem("pacificEducationSubject")||"",term:localStorage.getItem("pacificEducationTerm")||"",type:"formal-assessment-audio",activityType:type,day:type==="alphabet"?30:60,answers:[{questionNumber:questionNumber,question:questionText,answer:selectedAnswer||""}],audioDataUrl:audioDataUrl,imageDataUrl:"",status:"pending-special-education-review",mark:null,specialEducationMark:null,specialEducationComment:"",specialEducationReviewedAt:null,teacherGuidance:"",teacherAuthorizationComment:"",teacherAuthorizedAt:null,submittedAt:new Date().toISOString(),reviewedAt:null};
+    var item={submissionId:"formal-audio-"+type+"-"+Date.now()+"-"+questionNumber,studentId:student.studentId||student.id||"pilot-student-demo",studentName:student.name||"Student",classId:classId,classLevel:(function(){var rr=window.PacificEducationTeacherClassRosterContext;var cc=rr&&typeof rr.getClass==="function"?rr.getClass(getAssessmentClassId()):null;return cc&&cc.level?String(cc.level):"";})(),subject:localStorage.getItem("pacificEducationSubject")||"",term:localStorage.getItem("pacificEducationTerm")||"",type:"formal-assessment-audio",activityType:type,day:type==="alphabet"?30:60,answers:[{questionNumber:questionNumber,question:questionText,answer:selectedAnswer||""}],audioDataUrl:audioDataUrl,imageDataUrl:"",status:"pending-special-education-review",mark:null,specialEducationMark:null,specialEducationComment:"",specialEducationReviewedAt:null,teacherGuidance:"",teacherAuthorizationComment:"",teacherAuthorizedAt:null,submittedAt:new Date().toISOString(),reviewedAt:null};
     items.push(item);
     localStorage.setItem(key,JSON.stringify(items.slice(-100)));
     var f=window.PacificEducationFirebase;
@@ -130,7 +130,7 @@ function startAlphabetAssessment() { startAssessment("alphabet"); }
 function startPhonicsAssessment() { startAssessment("phonics"); }
 
 window.PacificEducationAssessments = Object.freeze({
-    version: "1.3.0",
+    version: "1.3.1",
     getAssessment: function(type) { return assessmentData[type] || null; },
     start: function(type) { return startAssessment(type); },
     startAlphabet: function() { return startAlphabetAssessment(); },
