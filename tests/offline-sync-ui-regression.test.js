@@ -13,24 +13,27 @@ const guidance = fs.readFileSync(
 
 test("conflict review exposes a semantic conflict list", () => {
   assert.match(controller, /data-pacific-conflict-list/);
-  assert.match(controller, /<h3>Sync conflict review<\/h3>/);
-  assert.match(controller, /<ul[^>]*aria-label="Queued sync conflicts"/);
-  assert.match(controller, /Needs review/);
-  assert.match(controller, /Reviewed — data preserved/);
+  assert.match(controller, /heading\.textContent="Sync conflict review"/);
+  assert.match(controller, /list\.setAttribute\("aria-label","Queued sync conflicts"\)/);
+  assert.match(controller, /status\.textContent=conflict\.reviewed\?"Reviewed — data preserved":"Needs review"/);
+  assert.match(controller, /row\.setAttribute\("data-reviewed",conflict\.reviewed\?"true":"false"\)/);
 });
 
 test("conflict controls meet the mobile touch-target and wrapping rules", () => {
+  assert.match(controller, /button\.type="button"/);
   assert.match(controller, /min-width:\s*44px/);
   assert.match(controller, /min-height:\s*44px/);
   assert.match(controller, /@media\(max-width:600px\)/);
   assert.match(controller, /overflow-wrap:\s*anywhere/);
   assert.match(controller, /@media\(prefers-reduced-motion:reduce\)/);
+  assert.match(controller, /button\.setAttribute\("aria-label"/);
+  assert.match(controller, /button:focus-visible/);
 });
 
 test("conflict review remains a data-preserving manual gate", () => {
   assert.match(controller, /MANUAL_CONFLICT_REVIEW_REQUIRED/);
   assert.match(controller, /data-reviewed/);
-  assert.match(controller, /queue preserved/i);
+  assert.match(controller, /queuePreserved:true/);
   assert.match(guidance, /Test 7 — Mobile\/accessibility conflict review/);
   assert.match(guidance, /controls at least approx 44px/);
   assert.match(guidance, /reviewing does not delete\/rewrite queue/);
