@@ -82,6 +82,13 @@ test("accessibility runtime preserves production safety state", () => {
 });
 
 
+test("accessibility runtime safely reports speech availability in status", () => {
+  assert.match(runtime, /function speak\\(text\\)/);
+  assert.match(runtime, /Speech is unavailable in this browser\\./);
+  assert.match(runtime, /function stopSpeaking\\(\\)/);
+  assert.match(runtime, /Speech stopped\\./);
+});
+
 test("accessibility runtime synchronizes text scale across browser tabs", () => {
   assert.match(runtime, /event\.key===SCALE_KEY\|\|event\.key===null/);
   assert.match(runtime, /var scale=readScale\(\);setTextScale\(scale\)/);
