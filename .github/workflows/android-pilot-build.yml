@@ -51,6 +51,9 @@ jobs:
           test $((chars % 4)) -eq 0
           base64 --decode "${RUNNER_TEMP}/pacific-keystore.b64" > "${RUNNER_TEMP}/pacific-education-release.jks"
           test -s "${RUNNER_TEMP}/pacific-education-release.jks"
+      - name: Clean Android outputs
+        working-directory: android
+        run: gradle --no-daemon clean
       - name: Build debug APK
         working-directory: android
         run: gradle --no-daemon assembleDebug
@@ -70,6 +73,13 @@ jobs:
           KEY_ALIAS: ${{ secrets.PACIFIC_KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.PACIFIC_KEY_PASSWORD }}
         run: gradle --no-daemon bundleRelease
+      - name: Verify pilot APK outputs
+        working-directory: android
+        run: |
+          test -s app/build/outputs/apk/debug/app-debug.apk
+          test -s app/build/outputs/apk/release/app-release.apk || test -s app/build/outputs/apk/release/app-release-unsigned.apk
+          "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging app/build/outputs/apk/debug/app-debug.apk | grep -F "package: name='fj.pacificeducation.app'"
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose app/build/outputs/apk/debug/app-debug.apk
       - name: Identify release signing state
         run: |
           if [ -s "${RUNNER_TEMP}/pacific-education-release.jks" ]; then echo "PILOT_SIGNING_STATE=signed" >> "${GITHUB_ENV}"; else echo "PILOT_SIGNING_STATE=unsigned" >> "${GITHUB_ENV}"; fi
