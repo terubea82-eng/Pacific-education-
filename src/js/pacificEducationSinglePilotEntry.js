@@ -232,14 +232,20 @@
     if (status) status.textContent = "Authorized synthetic Student pilot session. Production authorization remains locked.";
     showRoute("student");
 
-    /* Guided-flow integration: Prototype Access is the gate before Learning Level. */
+    /* Guided-flow integration: keep Prototype Access as its own step.
+       The guided controller owns visibility and moves to Learning Level only
+       when the user presses Next. */
     try {
       document.body.classList.add("pe-guided-flow");
-      document.body.setAttribute("data-pe-flow-step", "2");
-      var level = document.getElementById("levelSelection");
-      if (level) {
-        level.hidden = false;
-        level.scrollIntoView({behavior:"smooth", block:"start"});
+      if (typeof window.PacificEducationGuidedNext === "function") {
+        window.PacificEducationGuidedNext(3);
+      } else {
+        document.body.setAttribute("data-pe-flow-step", "3");
+        var level = document.getElementById("levelSelection");
+        if (level) {
+          level.hidden = false;
+          level.scrollIntoView({behavior:"smooth", block:"start"});
+        }
       }
     } catch (guidedFlowError) {
       console.warn("Pacific Education: prototype access was authorized; guided-flow display recovery failed.", guidedFlowError);
