@@ -86,3 +86,10 @@ These are prototype/manual verification procedures. Passing a local test does **
 - Confirm the sync controller reports the conflict as requiring manual review.
 - Confirm the queued records remain preserved until an explicit server acknowledgement is available.
 - Do not treat local conflict detection as proof of production sync correctness; server-side conflict policy still requires backend testing and approval.
+
+## Cache diagnostics verification
+
+- Open System Status after the service worker controls the page.
+- Confirm the cache version and entry/core cache counts are displayed when available.
+- Repeat after a service-worker update and record the observed cache state.
+- If the page is not controlled by a service worker, record that state rather than treating it as a cache failure.
