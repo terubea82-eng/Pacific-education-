@@ -38,17 +38,15 @@
 
     var voice = selectedVoice || chooseVoice();
 
-    if (!voice) {
-      pendingText = text;
-      return false;
-    }
-
+    // Some browsers expose speechSynthesis before their voice list is ready.
+    // Do not block playback just because getVoices() is temporarily empty;
+    // the browser can still use its default system voice.
     try {
       window.speechSynthesis.cancel();
 
       var utterance = new window.SpeechSynthesisUtterance(text);
-      utterance.voice = voice;
-      utterance.lang = voice.lang || "en-US";
+      if (voice) utterance.voice = voice;
+      utterance.lang = voice && voice.lang ? voice.lang : "en-US";
       utterance.rate = 0.95;
       utterance.pitch = 1;
       utterance.volume = 1;
