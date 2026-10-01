@@ -8,6 +8,7 @@
   "use strict";
 
   var selectedVoice = null;
+  var pendingText = "";
 
   function scoreVoice(voice) {
     if (!voice) return -1000;
@@ -42,13 +43,17 @@
     text = String(text || "").trim();
     if (!text || !window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") return false;
     var voice = selectedVoice || chooseVoice();
-    if (!voice) return false;
+    if (!voice) {
+      pendingText = text;
+      return false;
+    }
     try {
       window.speechSynthesis.cancel();
       var utterance = new window.SpeechSynthesisUtterance(text);
       utterance.voice = voice;
       utterance.lang = voice.lang || "en";
       window.speechSynthesis.speak(utterance);
+      pendingText = "";
       return true;
     } catch (e) {
       return false;
@@ -63,7 +68,14 @@
   window.speakText = speakText;
 
   if (window.speechSynthesis && typeof window.speechSynthesis.addEventListener === "function") {
-    window.speechSynthesis.addEventListener("voiceschanged", chooseVoice);
+    window.speechSynthesis.addEventListener("voiceschanged", function() {
+      chooseVoice();
+      if (pendingText && selectedVoice) {
+        var text = pendingText;
+        pendingText = "";
+        speakText(text);
+      }
+    });
   }
   chooseVoice();
 })(window);
