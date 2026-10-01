@@ -9,7 +9,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     function scheduler() {
         return window.PacificEducationRevisionExamScheduler || null;
@@ -17,6 +17,14 @@
 
     function remainingEngine() {
         return window.PacificEducationRemainingAchievementRedistributionEngine || null;
+    }
+
+    function selectedClassId() {
+        try {
+            var roster = window.PacificEducationTeacherClassRosterContext;
+            var id = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+            return id && roster.getClass(id) ? id : "";
+        } catch (e) { return ""; }
     }
 
     function config() {
@@ -27,7 +35,7 @@
             term = localStorage.getItem("pacificEducationTerm") || term;
             day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1);
         } catch (ignore) {}
-        return { level: level, subjectId: subjectId, term: term, startDay: day, endDay: 365 };
+        return { classId: selectedClassId(), level: level, subjectId: subjectId, term: term, startDay: day, endDay: 365 };
     }
 
     function escapeHtml(value) {
@@ -77,6 +85,10 @@
         }
 
         var cfg = config();
+        if (!cfg.classId) {
+            target.innerHTML = "<div class=\"pacific-education-revision-exam-ui\"><h2>Revision & Examination Redistribution</h2><p>Select an existing Class Reference before viewing or changing class-specific redistribution.</p></div>";
+            return { success: false, error: "Class Reference required", prototype: true };
+        }
         var activeRole = "";
         try { activeRole = sessionStorage.getItem("pacificEducationActiveRole") || ""; } catch (ignore) {}
         var canEdit = activeRole === "head-of-school";
