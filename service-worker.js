@@ -5,7 +5,7 @@
  * requests, credentials, payments, authentication material, or child data.
  */
 "use strict";
-const CACHE_NAME="pacific-education-prototype-root-v3";
+const CACHE_NAME="pacific-education-prototype-root-v4";
 const ENTRY="./src/index.html";
 
 async function buildAssets(){
