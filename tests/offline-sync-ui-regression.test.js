@@ -36,5 +36,5 @@ test("conflict review remains a data-preserving manual gate", () => {
   assert.match(controller, /queuePreserved:true/);
   assert.match(guidance, /Test 7 — Mobile\/accessibility conflict review/);
   assert.match(guidance, /controls are at least approximately 44px high\/wide/);
-  assert.match(guidance, /reviewing does not delete\/rewrite queue/);
+  assert.match(guidance, /does not delete or rewrite either queued record/);
 });
