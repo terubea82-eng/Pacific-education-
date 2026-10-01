@@ -10,7 +10,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.1.1";
 
     function getClassId() {
         var r = window.PacificEducationTeacherClassRosterContext;
@@ -26,6 +26,9 @@
         input = input || {};
         var classId = input.classId || getClassId();
         var level = input.level || "";
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var selectedClass = classId && roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+        if (selectedClass && selectedClass.level) level = String(selectedClass.level);
         var subjectId = input.subjectId || "";
         var term = input.term || "";
         var dayNumber = Number(input.dayNumber || 1);
