@@ -18,11 +18,15 @@
     }
 
     function config() {
-        var level = "Class 1", subjectId = "English";
+        var level = "", subjectId = "";
         try {
-            level = localStorage.getItem("pacificEducationLevel") || level;
-            subjectId = localStorage.getItem("pacificEducationSubject") || subjectId;
-        } catch (ignore) {}
+            var selected = roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+            if (!selected) return null;
+            level = String(selected.level || "");
+            subjectId = localStorage.getItem("pacificEducationSubject") || "";
+        } catch (ignore) {
+            return null;
+        }
         var roster = window.PacificEducationTeacherClassRosterContext;
         var ctx = roster && typeof roster.getContext === "function" ? roster.getContext() : null;
         return { level: (ctx && ctx.level) || level, subjectId: subjectId, studentId: studentId(), classId: ctx && ctx.classId ? ctx.classId : null };
