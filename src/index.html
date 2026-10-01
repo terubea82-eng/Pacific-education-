@@ -387,4 +387,27 @@ html[data-text-scale="x-large"]{font-size:125%}
   }
 })();
 </script>
-</body></html>
+
+
+<!-- Pacific Education — mandated low-bandwidth connectivity mode.
+     This module never bypasses carrier billing, captive portals, or network controls.
+     It provides offline caching/queued synchronization hooks for an authorized backend. -->
+<script>
+(function(window,document){
+  "use strict";
+  var KEY="pacificEducationConnectivityMode";
+  var state={mode:"low-bandwidth",online:navigator.onLine!==false,queued:0};
+  function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(_){}}
+  function load(){try{var x=JSON.parse(localStorage.getItem(KEY)||"null");if(x&&typeof x==="object"){state.mode=x.mode||state.mode;state.queued=Number(x.queued)||0;}}catch(_){}}
+  function update(){state.online=navigator.onLine!==false;persist();var el=document.getElementById("pacificEducationConnectivityStatus");if(el)el.textContent=state.online?"Online • Low-bandwidth mode":"Offline • Work will be queued for later sync";}
+  window.PacificEducationConnectivity={
+    status:function(){return Object.assign({},state);},
+    setLowBandwidth:function(enabled){state.mode=enabled?"low-bandwidth":"normal";persist();update();return state.mode;},
+    queue:function(){state.queued++;persist();update();return state.queued;}
+  };
+  load();
+  window.addEventListener("online",update);
+  window.addEventListener("offline",update);
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",update);else update();
+})(window,document);
+</script></body></html>
