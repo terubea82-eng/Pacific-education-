@@ -191,4 +191,27 @@ html[data-text-scale="x-large"]{font-size:125%}
  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
-</body></html>
+<script>
+(function(){
+  function playPacificWelcome(){
+    var text="Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
+    try{
+      if(window.speakText){window.speakText(text);return true;}
+      if("speechSynthesis" in window){
+        window.speechSynthesis.cancel();
+        var u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=0.95;u.pitch=1;
+        window.speechSynthesis.speak(u);return true;
+      }
+    }catch(_){}
+    return false;
+  }
+  function bindWelcomeGreeting(){
+    var b=document.getElementById("pacificEducationHearWelcome");
+    if(b&&!b.dataset.peGreetingBound){b.dataset.peGreetingBound="true";b.addEventListener("click",playPacificWelcome);}
+    try{localStorage.setItem("pacificEducationWelcomeVisited","1");}catch(_){}
+    setTimeout(playPacificWelcome,900);
+    window.addEventListener("pageshow",function(){setTimeout(playPacificWelcome,500);});
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",bindWelcomeGreeting);else bindWelcomeGreeting();
+})();
+</script></body></html>
