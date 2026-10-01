@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
 
     function copy(value) {
         return JSON.parse(JSON.stringify(value));
@@ -48,7 +48,11 @@
         var activeRole = "";
         try { activeRole = window.sessionStorage.getItem("pacificEducationActiveRole") || ""; } catch (ignore) {}
         if (activeRole !== "head-of-school") return { success: false, error: "Only the Head of School can set school revision dates." };
+        var classId = getClassId();
+        if (!classId) return { success:false, error:"Class Reference required", prototype:true };
         var cal = calendar();
+        var classId = getClassId();
+        if (!classId) return { success:false, error:"Class Reference required", prototype:true };
         var dayNumber = normaliseDay(day);
         var ids = Array.isArray(indicatorIds) ? indicatorIds.filter(Boolean) : [];
         var bridge = window.PacificEducationCurriculumAssessmentBridge || null;
@@ -66,6 +70,7 @@
         var eligibility = bridge.scheduleRevision({
             indicatorIds: ids,
             studentId: studentId || null,
+            classId: classId,
             date: label || null
         });
         if (!eligibility.scheduled) {
@@ -212,6 +217,9 @@
     function buildDayPlan(filters) {
         filters = filters || {};
 
+        var classId = getClassId(filters);
+        if (!classId) return { success:false, error:"Class Reference required", prototype:true };
+
         var day = normaliseDay(filters.dayNumber || 1);
         if (day === null) day = 1;
 
@@ -225,6 +233,7 @@
                 subjectId: filters.subjectId,
                 term: filters.term,
                 dayNumber: day,
+                classId: classId,
                 startDay: filters.startDay || 1,
                 endDay: filters.endDay || 365
             })
