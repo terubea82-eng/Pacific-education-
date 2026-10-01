@@ -20,8 +20,9 @@ test("accessibility runtime persists and restores text scale", () => {
   assert.match(runtime, /setTextScale\(readScale\(\)\)/);
 });
 
-test("accessibility runtime persists voice preference", () => {
+test("accessibility runtime persists and recognizes the UI voice preference", () => {
   assert.match(runtime, /pacificEducationVoicePreference/);
+  assert.match(runtime, /value===\"voice\"/);
   assert.match(runtime, /setVoicePreference/);
   assert.match(runtime, /readVoicePreference/);
   assert.match(runtime, /voicePreference:readVoicePreference\(\)/);
