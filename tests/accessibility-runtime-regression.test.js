@@ -49,7 +49,7 @@ test("accessibility runtime synchronizes the control after preference changes", 
 });
 
 test("accessibility runtime announces voice preference changes", () => {
-  assert.match(runtime, /announce\(v\?\"Voice preference enabled\.\"\:\"Voice preference disabled\.\?"\)/);
+  assert.ok(runtime.includes('announce(v?"Voice preference enabled.":"Voice preference disabled.")'));
   assert.match(runtime, /aria-live/);
   assert.match(runtime, /pacificEducationAccessibilityStatus/);
 });
@@ -84,14 +84,14 @@ test("accessibility runtime preserves production safety state", () => {
 
 test("accessibility runtime announces text scale changes", () => {
   assert.match(runtime, /function setTextScale\(scale\)/);
-  assert.match(runtime, /Text size set to \"\+v\+\.\"/);
+  assert.ok(runtime.includes('announce("Text size set to "+v+".")'));
 });
 
 test("accessibility runtime safely reports speech availability in status", () => {
-  assert.match(runtime, /function speak\(text\)/);
-  assert.match(runtime, /Speech is unavailable in this browser\./);
-  assert.match(runtime, /function stopSpeaking\(\)/);
-  assert.match(runtime, /Speech stopped\\./);
+  assert.ok(runtime.includes("function speak(text)"));
+  assert.ok(runtime.includes("Speech is unavailable in this browser."));
+  assert.ok(runtime.includes("function stopSpeaking()"));
+  assert.ok(runtime.includes("Speech stopped."));
 });
 
 test("accessibility runtime synchronizes text scale across browser tabs", () => {
