@@ -496,15 +496,15 @@ function attachTextAudioControls(targetId, text) {
         section.setAttribute("aria-label", "Daily activity browser");
         section.style.marginTop = "1rem";
         var h = document.createElement("h3");
-        h.textContent = "Daily Activities — Days 1–365";
+        h.textContent = "📚 Daily Activities";
         section.appendChild(h);
         var p = document.createElement("p");
-        p.textContent = "Choose any term day to attempt its activities. Pacific Guardian highlights the recommended activity for the learner's current capability.";
+        p.textContent = "Choose a day. Then press Start Day.";
         section.appendChild(p);
         var controls = document.createElement("div");
         var select = document.createElement("select");
         select.id = "pacificDailyActivityDay";
-        select.setAttribute("aria-label", "Choose daily activity day");
+        select.setAttribute("aria-label", "Choose a day");
         for (var d = 1; d <= 365; d += 1) {
             var option = document.createElement("option");
             option.value = String(d);
@@ -515,8 +515,8 @@ function attachTextAudioControls(targetId, text) {
         controls.appendChild(select);
         var button = document.createElement("button");
         button.type = "button";
-        button.textContent = "Open Selected Day";
-        button.setAttribute("data-pacific-action", "open-selected-day");
+        button.textContent = "▶️ Start Day";
+        button.setAttribute("data-pacific-action", "start-day");
         button.addEventListener("click", function() {
             var selectedDay = Number(select.value);
             setDay(selectedDay);
@@ -552,7 +552,7 @@ function attachTextAudioControls(targetId, text) {
         controls.appendChild(button);
         section.appendChild(controls);
         var today = document.createElement("p");
-        today.textContent = "Current learning day: Day " + getDay() + " • Suggested activity: Day " + getDay() + " Activities";
+        today.textContent = "Today: Day " + getDay();
         today.setAttribute("aria-live", "polite");
         section.appendChild(today);
         container.parentNode.insertBefore(section, container);
