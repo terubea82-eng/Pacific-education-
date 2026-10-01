@@ -78,3 +78,11 @@ For each executed test record:
 ## Production gate
 
 These are prototype/manual verification procedures. Passing a local test does **not** authorize production deployment, real child-data use, or server synchronization. Production requires the repository's approved backend, authentication, authorization, persistence, monitoring, backup and external verification controls.
+
+## Conflict handling
+
+- Queue the same lesson/day progress event more than once with different completion states.
+- Confirm the runtime reports a conflict candidate rather than silently choosing one value.
+- Confirm the sync controller reports the conflict as requiring manual review.
+- Confirm the queued records remain preserved until an explicit server acknowledgement is available.
+- Do not treat local conflict detection as proof of production sync correctness; server-side conflict policy still requires backend testing and approval.
