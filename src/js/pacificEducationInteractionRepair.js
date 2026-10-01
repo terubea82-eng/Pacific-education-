@@ -13,33 +13,39 @@
   var AUTO_REFRESH_LOCK_KEY = "pacificEducationAutoRefreshLock";
 
   function getAppVersion() {
-    var scripts = document.getElementsByTagName("script");
-    for (var i = 0; i < scripts.length; i += 1) {
-      var src = scripts[i].getAttribute("src") || "";
-      if (src.indexOf("pacificEducationInteractionRepair.js") !== -1) {
-        var v = scripts[i].getAttribute("data-app-version");
-        if (v) return v;
-      }
-    }
-    return document.documentElement.getAttribute("data-pacific-version") || "";
+    var versionNode = document.documentElement.getAttribute("data-pacific-version");
+    if (versionNode) return Promise.resolve(versionNode);
+    return fetch(window.location.pathname + "?pacific_version_check=" + Date.now(), {
+      cache: "no-store",
+      credentials: "same-origin"
+    }).then(function(response) {
+      if (!response.ok) throw new Error("Version check failed: " + response.status);
+      return response.text();
+    }).then(function(html) {
+      var match = html.match(/VERSION="([^"]+)"/);
+      return match ? match[1] : "";
+    }).catch(function() {
+      return "";
+    });
   }
 
   function autoRefreshOnNewVersion() {
-    var current = getAppVersion();
-    if (!current) return;
-    var previous = "";
-    try { previous = localStorage.getItem(AUTO_REFRESH_KEY) || ""; } catch (e) {}
-    if (!previous) {
-      try { localStorage.setItem(AUTO_REFRESH_KEY, current); } catch (e) {}
-      return;
-    }
-    if (previous === current) return;
-    try {
-      if (sessionStorage.getItem(AUTO_REFRESH_LOCK_KEY) === current) return;
-      sessionStorage.setItem(AUTO_REFRESH_LOCK_KEY, current);
-      localStorage.setItem(AUTO_REFRESH_KEY, current);
-    } catch (e) {}
-    window.location.reload();
+    getAppVersion().then(function(current) {
+      if (!current) return;
+      var previous = "";
+      try { previous = localStorage.getItem(AUTO_REFRESH_KEY) || ""; } catch (e) {}
+      if (!previous) {
+        try { localStorage.setItem(AUTO_REFRESH_KEY, current); } catch (e) {}
+        return;
+      }
+      if (previous === current) return;
+      try {
+        if (sessionStorage.getItem(AUTO_REFRESH_LOCK_KEY) === current) return;
+        sessionStorage.setItem(AUTO_REFRESH_LOCK_KEY, current);
+        localStorage.setItem(AUTO_REFRESH_KEY, current);
+      } catch (e) {}
+      window.location.reload();
+    });
   }
 
   function startAutomaticRefreshMonitor() {
