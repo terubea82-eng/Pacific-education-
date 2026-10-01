@@ -28,13 +28,16 @@
     }
 
     function config() {
-        var level = "Class 1", subjectId = "English", term = "Term 1", day = 1;
+        var level = "", subjectId = "", term = "", day = 1;
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var classId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+        var selectedClass = classId && roster && typeof roster.getClass === "function" ? roster.getClass(classId) : null;
+        if (!selectedClass) return { classId: "", level: "", subjectId: "", term: "", startDay: 1, endDay: 365 };
+        level = String(selectedClass.level || "");
         try {
-            level = localStorage.getItem("pacificEducationLevel") || level;
-            subjectId = localStorage.getItem("pacificEducationSubject") || subjectId;
-            term = localStorage.getItem("pacificEducationTerm") || term;
-            day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1);
-        } catch (ignore) {}
+            subjectId = localStorage.getItem("pacificEducationSubject") || "";
+            term = localStorage.getItem("pacificEducationTerm") || "Term 1";
+            day = Number(localStorage.getItem("pacificEducationCurrentDay") || 1); catch (ignore) {}
         return { classId: selectedClassId(), level: level, subjectId: subjectId, term: term, startDay: day, endDay: 365 };
     }
 
