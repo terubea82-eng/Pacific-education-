@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function gate() {
         return window.PacificEducationTermProgressionGate || null;
@@ -23,7 +23,9 @@
             level = localStorage.getItem("pacificEducationLevel") || level;
             subjectId = localStorage.getItem("pacificEducationSubject") || subjectId;
         } catch (ignore) {}
-        return { level: level, subjectId: subjectId, studentId: studentId() };
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        var ctx = roster && typeof roster.getContext === "function" ? roster.getContext() : null;
+        return { level: (ctx && ctx.level) || level, subjectId: subjectId, studentId: studentId(), classId: ctx && ctx.classId ? ctx.classId : null };
     }
 
     function escapeHtml(value) {
@@ -50,7 +52,7 @@
         target.innerHTML =
             '<div class="pacific-education-term-gate">' +
             '<h2>Term 1 → Term 2 Progression</h2>' +
-            '<p><strong>Level:</strong> ' + escapeHtml(cfg.level) +
+            '<p><strong>Class Reference:</strong> &#39; + escapeHtml(cfg.classId || "No class selected") + '<br><strong>Level:</strong> ' + escapeHtml(cfg.level) +
             ' &nbsp; <strong>Subject:</strong> ' + escapeHtml(cfg.subjectId) + '</p>' +
             '<p><strong>Student reference:</strong> ' +
             escapeHtml(cfg.studentId || "No student selected") + '</p>' +
