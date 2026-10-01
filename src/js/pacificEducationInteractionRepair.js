@@ -140,6 +140,14 @@
       check(rs.interactiveActivitiesAvailable === true, "Interactive learner activity runtime unavailable");
     }
 
+    check(!!document.getElementById("dailyActivitiesStartButton"), "Daily Activities start button missing");
+    check(!!document.getElementById("dailyActivitiesContinuePracticeButton"), "Daily Activities → Practice button missing");
+    check(!!document.getElementById("dailyLessonPracticeStage"), "Practice stage missing");
+    check(!!document.getElementById("practiceContinueAssessmentButton"), "Practice → Assessment button missing");
+    check(!!document.getElementById("assessments"), "Assessment stage missing");
+    check(!!document.getElementById("assessmentContinueCoverageButton"), "Assessment → Coverage button missing");
+    check(!!document.getElementById("pacificEducationCoverageDashboard"), "Coverage stage missing");
+
     check(!!document.getElementById("previousLessonButton"), "Previous Day control missing");
     check(!!document.getElementById("nextLessonButton"), "Next Day control missing");
     check(!!document.getElementById("dailyLessonProgress"), "Daily activity progress control missing");
