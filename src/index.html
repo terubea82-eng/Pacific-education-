@@ -59,6 +59,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 <div id="pacificEducationWelcomeVoice" aria-live="polite">
 <p><strong>Welcome to Pacific Education.</strong> We are pleased to welcome you. Learn, discover, practise and grow with us.</p>
 <button type="button" id="pacificEducationWelcomeVoiceButton" aria-label="Hear the Pacific Education welcome">🔊 Hear Welcome</button>
+<button type="button" id="pacificEducationStopSpeechButton" aria-label="Stop Pacific Education speech">🔇 Stop Speech</button>
 </div>
 
 </div>
@@ -349,6 +350,9 @@ html[data-text-scale="x-large"]{font-size:125%}
 
     var welcomeButton=document.getElementById("pacificEducationWelcomeVoiceButton");
     if(welcomeButton)welcomeButton.addEventListener("click",function(){window.PacificEducationVoice.replay();});
+
+    var stopSpeechButton=document.getElementById("pacificEducationStopSpeechButton");
+    if(stopSpeechButton)stopSpeechButton.addEventListener("click",function(){window.PacificEducationVoice.stop();});
 
     document.addEventListener("click",function(e){
       var link=e.target.closest ? e.target.closest('a[href^="#"]') : null;
