@@ -12,6 +12,14 @@ test("accessibility runtime restricts text scaling to supported values", () => {
   assert.match(runtime, /data-text-scale/);
 });
 
+test("accessibility runtime persists and restores text scale", () => {
+  assert.match(runtime, /pacificEducationTextScale/);
+  assert.match(runtime, /localStorage\.getItem/);
+  assert.match(runtime, /localStorage\.setItem/);
+  assert.match(runtime, /DOMContentLoaded/);
+  assert.match(runtime, /setTextScale\(readScale\(\)\)/);
+});
+
 test("accessibility runtime exposes speech controls and availability status", () => {
   assert.match(runtime, /speechSynthesis/);
   assert.match(runtime, /SpeechSynthesisUtterance/);
