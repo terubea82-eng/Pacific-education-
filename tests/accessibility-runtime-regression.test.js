@@ -28,6 +28,11 @@ test("accessibility runtime persists and recognizes the UI voice preference", ()
   assert.match(runtime, /voicePreference:readVoicePreference\(\)/);
 });
 
+test("accessibility runtime stores the UI-compatible voice preference values", () => {
+  assert.match(runtime, /localStorage\.setItem\(VOICE_KEY,v\?\"voice\":\"text\"\)/);
+  assert.match(runtime, /normalizeVoice\(value\)/);
+});
+
 test("accessibility runtime exposes speech controls and availability status", () => {
   assert.match(runtime, /speechSynthesis/);
   assert.match(runtime, /SpeechSynthesisUtterance/);
