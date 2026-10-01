@@ -89,3 +89,7 @@ This document is an evidence template for Stage 26 performance, capacity, scalin
 - This template is a recording tool, not test evidence by itself.
 - Do not mark a scenario complete without observed results and an evidence reference.
 - Do not convert prototype measurements into production capacity claims.
+
+## Performance monitor interpretation
+
+The in-app performance monitor records local browser observations only. Its average and p95 values are diagnostic samples, not representative capacity measurements or service-level objectives. Record controlled load-test results separately in the capacity section above.
