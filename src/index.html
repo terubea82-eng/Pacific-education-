@@ -275,6 +275,43 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script src="js/pacificEducationRealWorldSkills.js"></script><script src="js/pacificEducationLevelSelector.js"></script><script src="js/pacificEducationSubjectSelector.js"></script><script src="js/pacificEducationTermSelector.js"></script><script src="js/pacificEducationCapabilitySelector.js"></script><script src="js/pacificEducationCurriculumEvidenceRegistry.js"></script><script src="js/pacificEducationCurriculumAlignmentRegistry.js"></script><script src="js/pacificEducationMinistryPrescriptionIndicators.js"></script><script src="js/pacificEducationMinistryPrescriptionBridge.js"></script><script src="js/pacificEducationAchievementIndicatorActivityMapper.js"></script><script src="js/pacificEducationDailyCurriculumEngine.js?v=1802"></script><script src="js/pacificEducationCurriculumCoverageAudit.js"></script><script src="js/pacificEducationAssessmentBridge.js"></script><script src="../js/pacificEducationAssessmentIntegration.js"></script><script src="../js/dailyLessons.js"></script><script src="../js/dashboards.js"></script><script src="js/assessments.js"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=1420"></script><script>(function(){var KEY="peAutoUpdateVersion",VERSION="2026-10-01-pilot-review-center-149";try{var previous=localStorage.getItem(KEY);if(previous!==VERSION){localStorage.setItem(KEY,VERSION);if(previous!==null)window.location.reload();}}catch(_){}})();</script><script src="js/pacificEducationCurriculumLessonRenderer.js?v=1801"></script><script src="js/pacificEducationTeacherClassRosterContext.js"></script><script src="js/pacificEducationStudentCoverageContext.js"></script><script src="js/pacificEducationCurriculumCoverageEngine.js"></script><script src="js/pacificEducationTeacherClassDashboardUI.js"></script><script src="js/pacificEducationTeacherReviewQueue.js"></script><script src="js/pacificEducationStudentProgressDashboardUI.js"></script><script src="js/pacificEducationDailyProgressRecorder.js"></script><script src="js/pacificEducationDailyProgressFlow.js"></script><script src="js/pacificEducationAchievementDistributionEngine.js?v=1801"></script><script src="js/pacificEducationRemainingAchievementRedistributionEngine.js"></script><script src="js/pacificEducationRemainingAchievementSchedulerUI.js"></script><script src="js/pacificEducationTeacherCalendar.js?v=1801"></script><script src="js/pacificEducationTeacherCalendarUI.js?v=1801"></script><script src="js/pacificEducationTeacherStudentCalendarLink.js"></script><script src="js/pacificEducationRevisionExamScheduler.js"></script><script src="js/pacificEducationRevisionExamRedistributionUI.js"></script><script src="js/pacificEducationExamCalendar.js"></script><script src="js/pacificEducationMinistryExamEngine.js"></script><script src="js/pacificEducationHomeSubmission.js"></script><script src="js/pacificEducationAccessibilityNextStage.js"></script><script src="js/pacificEducationSafeguardingNextStage.js"></script><script src="js/pacificEducationOfflineNextStage.js"></script><script src="js/pacificEducationTestingNextStage.js"></script><script src="js/pacificEducationAccessibilityRuntime.js"></script><script src="js/pacificEducationOfflineRuntime.js?v=1101"></script>
 <script>
 (function(){
+"use strict";
+function renderOfflineDiagnostics(){
+ var box=document.querySelector("[data-pacific-offline-diagnostics]");
+ if(!box){
+   var host=document.getElementById("systemStatus");
+   if(!host)return;
+   box=document.createElement("div");
+   box.setAttribute("data-pacific-offline-diagnostics","true");
+   box.style.marginTop="8px";
+   box.setAttribute("role","status");
+   box.setAttribute("aria-live","polite");
+   host.appendChild(box);
+ }
+ var r=window.PacificEducationOfflineRuntime, s=r&&typeof r.status==="function"?r.status():null;
+ var sync=window.PacificEducationOfflineSyncController, ss=sync&&typeof sync.status==="function"?sync.status():null;
+ if(!s){box.textContent="Offline diagnostics unavailable.";return;}
+ var connection=s.connection||{};
+ var parts=[
+   "Connectivity: "+(s.online?"online":"offline"),
+   "Service worker: "+(s.serviceWorkerControlled?"controlled":"not yet controlling"),
+   "Queued progress: "+s.queuedProgressCount
+ ];
+ if(connection.effectiveType)parts.push("Connection: "+connection.effectiveType);
+ if(typeof connection.rttMs==="number")parts.push("RTT: "+connection.rttMs+" ms");
+ if(ss&&ss.retryPolicy)parts.push("Retry policy: "+ss.retryPolicy.maxAttempts+" attempts");
+ box.textContent=parts.join(" • ");
+}
+function init(){
+ renderOfflineDiagnostics();
+ var r=window.PacificEducationOfflineRuntime;
+ if(r&&typeof r.listenConnectivity==="function")r.listenConnectivity(renderOfflineDiagnostics);
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+<script>
+(function(){
   function renderConnectivity(){
     var status=document.getElementById("systemStatus");
     if(!status||!window.PacificEducationOfflineRuntime)return;
