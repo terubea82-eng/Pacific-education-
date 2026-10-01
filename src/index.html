@@ -215,17 +215,32 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script>
 (function(window,document){
   "use strict";
-  var enabledKey="pacificEducationVoicePreference";
   var enabled=false;
-  try{ enabled=localStorage.getItem(enabledKey)==="voice"; }catch(_){}
-
+  function runtime(){
+    return window.PacificEducationAccessibilityRuntime || null;
+  }
+  function sync(){
+    var r=runtime();
+    if(r&&typeof r.readVoicePreference==="function") enabled=r.readVoicePreference();
+    else { try{ enabled=localStorage.getItem("pacificEducationVoicePreference")==="voice"; }catch(_){} }
+    var b=document.getElementById("pacificEducationVoicePreferenceButton");
+    if(b){
+      b.textContent=enabled?"🔊 Voice preference: On":"🔊 Voice preference";
+      b.setAttribute("aria-pressed",enabled?"true":"false");
+      b.setAttribute("aria-label",enabled?"Turn off voice preference":"Turn on voice preference to read choices aloud");
+    }
+  }
   function speak(text){
     if(!enabled || !text || !window.speakText)return;
     try{ window.speakText(String(text).replace(/\\s+/g," ").trim()); }catch(_){}
   }
   function setPreference(value){
-    enabled=value==="voice";
-    try{ localStorage.setItem(enabledKey,enabled?"voice":"text"); }catch(_){}
+    var next=value==="voice";
+    var r=runtime();
+    enabled=next;
+    if(r&&typeof r.setVoicePreference==="function") r.setVoicePreference(next);
+    else { try{ localStorage.setItem("pacificEducationVoicePreference",next?"voice":"text"); }catch(_){} }
+    sync();
     if(enabled) speak("Voice preference enabled. Pacific Education will read selectable choices and controls aloud.");
   }
   function describe(el){
@@ -250,7 +265,7 @@ html[data-text-scale="x-large"]{font-size:125%}
     });
   }
   window.PacificEducationVoicePreference={
-    enabled:function(){return enabled;},
+    enabled:function(){sync();return enabled;},
     set:function(value){setPreference(value);scan(document);}
   };
   function init(){
@@ -259,14 +274,17 @@ html[data-text-scale="x-large"]{font-size:125%}
       var b=document.createElement("button");
       b.type="button"; b.id="pacificEducationVoicePreferenceButton";
       b.textContent="🔊 Voice preference";
+      b.setAttribute("aria-pressed","false");
       b.setAttribute("aria-label","Turn on voice preference to read choices aloud");
-      b.onclick=function(){setPreference(enabled?"text":"voice"); b.textContent=enabled?"🔊 Voice preference: On":"🔊 Voice preference"; scan(document);};
+      b.onclick=function(){setPreference(enabled?"text":"voice");scan(document);};
       controls.appendChild(b);
     }
+    sync();
+    var r=runtime();
+    if(r&&typeof r.syncVoiceControl==="function") r.syncVoiceControl();
     scan(document);
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-})(window,document);
 </script><script src="js/pacificEducationMasterInclusionSpecification.js"></script><script src="js/pacificEducationPilotIntegrityGuard.js"></script><script src="js/pacificEducationCoreBridge.js"></script><script src="js/pacificEducationMasterControl.js"></script><script src="js/pacificEducationGuardianReviewController.js"></script><script src="js/pacificEducationAnnualGdpPricingEngine.js"></script><script src="js/pacificEducationPricingAuditGuard.js"></script><script src="js/buyPlans.js"></script><script src="js/pacificEducationPaymentGateway.js"></script><script src="js/pacificEducationPaymentLinks.js"></script><script src="js/pacificEducationAccessEntitlement.js"></script><script src="js/pacificEducationInstitutionFeeRegistry.js"></script><script src="js/pacificEducationUniversityFeeWorkflow.js"></script><script src="js/pacificEducationCentralBridge.js"></script><script src="../js/pacificEducationEducationLinkBridge.js"></script><script src="../js/pacificEducationSecureLinkAuthorization.js"></script><script src="js/pacificEducationCountryConfig.js"></script><script src="js/pacificEducationLegalFramework.js"></script><script src="js/pacificEducationIndividualMandatoryInformation.js"></script><script src="js/pacificEducationStudentExternalIdRegistry.js"></script><script src="js/pacificEducationIdentityIntegrity.js"></script><script src="js/pacificEducationLanguagePreferences.js"></script><script src="js/pacificEducationPilotReadinessSelfCheck.js"></script>
 <script src="js/pacificEducationProductionFinalGate.js"></script>
 <script src="js/pacificEducationInstitutionSetup.js"></script>
