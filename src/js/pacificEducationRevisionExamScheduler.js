@@ -22,6 +22,17 @@
         return window.PacificEducationTeacherCalendar || null;
     }
 
+    function getClassId(input) {
+        input = input || {};
+        if (input.classId) return String(input.classId).trim();
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function") {
+            var classId = roster.getClassId();
+            return classId ? String(classId).trim() : "";
+        }
+        return "";
+    }
+
     function distribution() {
         return window.PacificEducationAchievementDistributionEngine || null;
     }
@@ -161,6 +172,11 @@
     function redistribute(filters) {
         filters = filters || {};
 
+        var classId = getClassId(filters);
+        if (!classId) {
+            return { success: false, error: "Class Reference required", assignments: [], prototype: true };
+        }
+
         var engine = distribution();
         if (!engine || typeof engine.distribute !== "function") {
             return {
@@ -175,6 +191,7 @@
          * distribution engine when the calendar marks them accordingly.
          */
         var result = engine.distribute({
+            classId: classId,
             level: filters.level,
             subjectId: filters.subjectId,
             term: filters.term,
@@ -184,6 +201,7 @@
 
         return {
             success: true,
+            classId: classId,
             availableLearningDays: result.availableLearningDays,
             indicatorCount: result.indicatorCount,
             assignments: copy(result.assignments),
