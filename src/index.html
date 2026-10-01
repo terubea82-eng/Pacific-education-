@@ -624,6 +624,12 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
       b.disabled=false;
 
       var voiceId=id+"VoiceDirective";
+      // Enforce one Voice Next control per guided step. Older cached/duplicate
+      // renderers must not leave a second command button behind.
+      var voiceButtons=[].slice.call(document.querySelectorAll(".pacific-voice-next-directive"));
+      voiceButtons.forEach(function(existing){
+        if(existing.id!==voiceId) existing.remove();
+      });
       var voiceButton=document.getElementById(voiceId);
       if(!voiceButton && wrapper){
         voiceButton=document.createElement("button");
