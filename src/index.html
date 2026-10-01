@@ -169,7 +169,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 
     var main=document.getElementById("app");
     if(main){
-      Array.prototype.forEach.call(main.children,function(el){el.hidden=true;});
+      Array.prototype.forEach.call(main.children,function(el){if(el.id==="pacificEducationSingleRegistration"||el.id==="pilotBanner")return;el.hidden=true;});
     }
 
     stepGroups[current].forEach(function(id){
