@@ -84,7 +84,7 @@
     }
   }
 
-  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},getSummary:summary,clearSamples:function(){samples=[];return true;}};
+  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},getSummary:summary,clearSamples:function(){samples=[];return true;},cacheStatus:function(){return new Promise(function(resolve){if(!navigator.serviceWorker||!navigator.serviceWorker.controller){resolve({supported:!!navigator.serviceWorker,controlled:false});return;}var channel=new MessageChannel();channel.port1.onmessage=function(event){resolve(event.data||{});};navigator.serviceWorker.controller.postMessage({type:"PACIFIC_CACHE_STATUS"},[channel.port2]);});}};
 
   if(document.readyState==="loading"){
     document.addEventListener("DOMContentLoaded",function(){setTimeout(render,0);});
