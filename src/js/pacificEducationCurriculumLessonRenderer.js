@@ -518,36 +518,48 @@ function attachTextAudioControls(targetId, text) {
         button.textContent = "▶️ Start Day";
         button.setAttribute("data-pacific-action", "start-day");
         button.addEventListener("click", function() {
-            var selectedDay = Number(select.value);
-            setDay(selectedDay);
-            window.setTimeout(function() {
-                var runtime = window.PacificEducationActivity;
-                if (runtime && typeof runtime.render === "function") {
-                    var subject = getSubject();
-                    var mc = buildPilotMultipleChoice(null, subject);
-                    runtime.render("multiple_choice", selectedDay, {
-                        dayNumber: selectedDay,
-                        level: getLevel(),
-                        subjectId: subject,
-                        term: getTerm(),
-                        title: getLevel() + " — " + subject + " — Day " + selectedDay,
-                        activity: {
-                            questionText: mc.question,
-                            options: mc.options,
-                            choices: mc.options,
-                            answerOptions: mc.options,
-                            answerIndex: mc.answerIndex,
-                            answerKey: mc.answerIndex !== null && mc.options[mc.answerIndex] !== undefined ? mc.options[mc.answerIndex] : null,
-                            audioText: mc.question,
-                            contentBasis: "concept-based-pilot-prototype"
-                        }
-                    });
-                    var activityPanel = document.getElementById("dailyLessonActivity");
-                    if (activityPanel) activityPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+            var selectedDay = Number(select.value) || 1;
+            var subject = getSubject();
+            var level = getLevel();
+            var term = getTerm();
+            window.localStorage.setItem("pacificEducationPilotTermDay", String(selectedDay));
+            window.localStorage.setItem("currentDayNumber", String(selectedDay));
+            if (window.PacificEducationDailyLessons && typeof window.PacificEducationDailyLessons.setCurrentCoreDay === "function") {
+                try { window.PacificEducationDailyLessons.setCurrentCoreDay(selectedDay); } catch (e) {}
+            }
+            var runtime = window.PacificEducationActivity;
+            var activityPanel = document.getElementById("dailyLessonActivity");
+            if (runtime && typeof runtime.render === "function") {
+                var mc = buildPilotMultipleChoice(null, subject);
+                runtime.render("multiple_choice", selectedDay, {
+                    dayNumber: selectedDay,
+                    level: level,
+                    subjectId: subject,
+                    term: term,
+                    title: level + " — " + subject + " — Day " + selectedDay,
+                    activity: {
+                        questionText: mc.question,
+                        options: mc.options,
+                        choices: mc.options,
+                        answerOptions: mc.options,
+                        answerIndex: mc.answerIndex,
+                        answerKey: mc.answerIndex !== null && mc.options[mc.answerIndex] !== undefined ? mc.options[mc.answerIndex] : null,
+                        audioText: mc.question,
+                        contentBasis: "concept-based-pilot-prototype"
+                    }
+                });
+                today.textContent = "Today: Day " + selectedDay;
+                if (activityPanel) activityPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+                var status = document.getElementById("pacificEducationInteractionStatus");
+                if (!status) {
+                    status = document.createElement("p");
+                    status.id = "pacificEducationInteractionStatus";
+                    status.setAttribute("aria-live", "polite");
+                    section.appendChild(status);
                 }
-            }, 150);
-            var target = document.getElementById("dailyLesson");
-            if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+                status.textContent = "Daily activity is loading. Please try again in a moment.";
+            }
         });
         controls.appendChild(button);
         section.appendChild(controls);
