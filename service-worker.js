@@ -4,6 +4,7 @@
 const CACHE_NAME="pacific-education-shell-v6";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
+const NAVIGATION_TIMEOUT_MS=6000;
 
 const CORE_ASSETS=[
   "/Pacific-education-/js/pacificEducationCore.js",
@@ -21,6 +22,13 @@ const CORE_ASSETS=[
 function isStatic(request){
   const d=request.destination;
   return d==="script"||d==="style"||d==="image"||d==="font"||d==="worker";
+}
+
+function fetchWithTimeout(request,timeoutMs){
+  if(typeof AbortController==="undefined")return fetch(request,{cache:"no-store"});
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),timeoutMs);
+  return fetch(request,{cache:"no-store",signal:controller.signal}).finally(()=>clearTimeout(timer));
 }
 
 self.addEventListener("install",event=>{
@@ -66,13 +74,13 @@ self.addEventListener("fetch",event=>{
 
   if(request.mode==="navigate"||request.destination==="document"){
     event.respondWith(
-      fetch(request,{cache:"no-store"}).then(response=>{
+      fetchWithTimeout(request,NAVIGATION_TIMEOUT_MS).then(response=>{
         if(response.ok){
           const copy=response.clone();
           caches.open(CACHE_NAME).then(cache=>cache.put(ENTRY,copy));
         }
         return response;
-      }).catch(()=>caches.match(ENTRY).then(cached=>cached||new Response("Pacific Education is offline.",{status:503})))
+      }).catch(()=>caches.match(ENTRY).then(cached=>cached||new Response("Pacific Education is offline or the connection is taking too long.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}})))
     );
     return;
   }
