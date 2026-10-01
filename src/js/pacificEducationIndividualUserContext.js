@@ -5,7 +5,7 @@
   'use strict';
   var KEY='pacificEducationIndividualUserContextsV1';
   var CURRENT='pacificEducationCurrentPacEduIdV1';
-  var VERSION='1.0.0';
+  var VERSION='1.0.1';
   var ROLE_LABELS={student:'Student',teacher:'Teacher','special-education':'Special Education / Inclusion',parent:'Parent / Caregiver',professional:'Professional Reviewer',ngo:'NGO / Organization',education:'Education / Government',community:'Community / Partner',owner:'Owner / Control','head-of-school':'Head of School','institution-admin':'Institution Administrator'};
   var ROUTE_IDS={
     student:['learningPlatform','levelSelection','subjectSelection','termSelection','capabilitySelection','dailyLesson','pacificEducationTermBaseline','assessments','pacificEducationStudentProgressDashboard','pacificEducationHomeSubmission','pacificEducationTransferIntake','pacificGuardianCommentSection'],
@@ -20,6 +20,7 @@
     'head-of-school':['pacificEducationSchoolIdentitySection','pacificEducationTeacherClassRoster','pacificEducationExamCalendarSection','pacificEducationCoverageDashboard'],
     'institution-admin':['pacificEducationInstitutionSetup','pacificEducationInstitutionAdvice','pacificEducationExamCalendarSection']
   };
+  var aligning=false, lastRole='';
   function read(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
   function write(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}}
   function newId(){return 'PE-PILOT-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,8).toUpperCase();}
@@ -48,24 +49,32 @@
     var entry=document.getElementById('pacificEducationSingleRegistration'); if(!entry)return;
     var old=document.getElementById('pacificIndividualIdentityCard'); if(old)old.remove();
     var card=document.createElement('div'); card.id='pacificIndividualIdentityCard'; card.style.cssText='margin-top:14px;padding:12px;border:1px solid currentColor;border-radius:8px';
-    card.innerHTML='<strong>Your dashboard</strong><p style="margin:6px 0"><strong>PacEdu ID:</strong> '+item.pacEduId+'</p><p style="margin:6px 0"><strong>Role:</strong> '+(item.roleLabel||'User')+'</p><p style="margin:6px 0">Your registered workspace is linked to this dashboard.</p>';
+    card.innerHTML='<strong>Your dashboard</strong><p style="margin:6px 0"><strong>PacEdu ID:</strong> '+item.pacEduId+'</p><p style="margin:6px 0"><strong>Role:</strong> '+(item.roleLabel||'User')+'</p><p style="margin:6px 0">Your registered workspace is now linked to this dashboard.</p>';
     entry.appendChild(card);
   }
   function align(){
-    var item=ensure(); if(!item)return;
-    hideAllRoleSections(item.role); addIdentityCard(item);
-    var label=document.getElementById('teacherStudentName');if(label&&item.role==='teacher')label.textContent=item.className||'Assigned class';
-    var day=document.getElementById('teacherCurrentDay');if(day&&item.role==='teacher')day.textContent=String(item.currentDay||1);
-    var studentDay=document.getElementById('dailyLessonDay');if(studentDay&&item.role==='student')studentDay.textContent=String(item.currentDay||1);
-    var progress=document.getElementById('dailyLessonProgress');if(progress&&item.role==='student')progress.textContent='Day '+(item.currentDay||1)+' of 365 daily activities';
+    if(aligning)return; aligning=true;
+    try{
+      var item=ensure(); if(!item)return;
+      hideAllRoleSections(item.role); addIdentityCard(item); lastRole=item.role;
+      var label=document.getElementById('teacherStudentName');if(label&&item.role==='teacher')label.textContent=item.className||'Assigned class';
+      var day=document.getElementById('teacherCurrentDay');if(day&&item.role==='teacher')day.textContent=String(item.currentDay||1);
+      var studentDay=document.getElementById('dailyLessonDay');if(studentDay&&item.role==='student')studentDay.textContent=String(item.currentDay||1);
+      var progress=document.getElementById('dailyLessonProgress');if(progress&&item.role==='student')progress.textContent='Day '+(item.currentDay||1)+' of 365 daily activities';
+    }finally{aligning=false;}
   }
   function clearCurrent(){try{localStorage.removeItem(CURRENT);}catch(e){}}
   function wireSignOut(){document.addEventListener('click',function(e){if(e.target&&e.target.id==='pilotSignOutButton'){clearCurrent();}});}
   function init(){
     wireSignOut();
     var registered=false;try{registered=sessionStorage.getItem('pacificEducationPilotRegistered')==='true'||localStorage.getItem('pacificEducationPilotRegistered')==='true';}catch(e){}
-    if(registered) setTimeout(align,50);
-    var obs=new MutationObserver(function(){var r=getRole();if(r){var c=ensure();if(c)align();}}); if(document.body)obs.observe(document.body,{childList:true,subtree:true});
+    if(registered) setTimeout(align,100);
+    var scheduled=false;
+    var obs=new MutationObserver(function(){
+      if(scheduled)return; scheduled=true;
+      setTimeout(function(){scheduled=false;var r=getRole();if(r&&r!==lastRole)align();},100);
+    });
+    if(document.body)obs.observe(document.body,{childList:true,subtree:true});
     window.PacificEducationIndividualUserContext={version:VERSION,ensure:ensure,getCurrent:ensure,update:update,align:align,clearCurrent:clearCurrent,publicView:function(){var x=ensure();return x?{pacEduId:x.pacEduId,role:x.role,roleLabel:x.roleLabel,country:x.country,institutionName:x.institutionName,className:x.className,programme:x.programme,level:x.level,subject:x.subject,term:x.term,currentDay:x.currentDay}:null;}};
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
