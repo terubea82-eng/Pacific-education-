@@ -9,7 +9,9 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
+
+    function roster() { return window.PacificEducationTeacherClassRosterContext || null; }
 
     function engine() {
         return window.PacificEducationRemainingAchievementRedistributionEngine || null;
@@ -23,7 +25,10 @@
             subjectId = localStorage.getItem("pacificEducationSubject") || subjectId;
             term = localStorage.getItem("pacificEducationTerm") || term;
         } catch (ignore) {}
+        var r = roster();
+        var classId = r && typeof r.getClassId === "function" ? String(r.getClassId() || "").trim() : "";
         return {
+            classId: classId,
             startDay: day,
             endDay: 365,
             dayNumber: day,
@@ -44,7 +49,9 @@
         if (!e || typeof e.buildRemainingPlan !== "function") {
             return { success: false, error: "Remaining Achievement Redistribution Engine unavailable" };
         }
-        return e.buildRemainingPlan(getConfig());
+        var config = getConfig();
+        if (!config.classId) return { success: false, error: "Select an existing Class Reference first.", prototype: true };
+        return e.buildRemainingPlan(config);
     }
 
     function render(targetId) {
