@@ -21,7 +21,7 @@ Before opening the pilot to testers, confirm:
 - Repository visibility is Public.
 - Default branch is main.
 - The root `index.html` exists and routes to `src/index.html`.
-- `src/index.html` contains the 3-month controlled-pilot notice.
+- `src/index.html` contains the 1-month controlled-pilot notice.
 - The notice states that real sensitive child information, passwords, payment credentials and exact child location data must not be entered.
 - Production status remains explicitly blocked.
 - Prototype authorization is not described as production authentication.
