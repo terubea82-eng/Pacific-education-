@@ -9,7 +9,7 @@
  */
 (function(window) {
     "use strict";
-    var VERSION = "1.5.0";
+    var VERSION = "1.6.0";
     var DEFAULT_SUBJECTS = [
     {
         "id": "English",
@@ -148,11 +148,29 @@
         if (typeof window.displayDailyLesson === "function") return window.displayDailyLesson();
         return false;
     }
+    function getClassContext() {
+        var roster = window.PacificEducationTeacherClassRosterContext;
+        if (!roster || typeof roster.getClassId !== "function" || typeof roster.getClass !== "function") return null;
+        var classId = String(roster.getClassId() || "").trim();
+        if (!classId) return null;
+        var currentClass = roster.getClass(classId);
+        if (!currentClass) return null;
+        return { classId: classId, level: String(currentClass.level || "").trim() };
+    }
     function setSubject(subjectId) {
         if (!getConfiguredSubjects().some(function(item){return item.id === subjectId;})) return false;
+        var context = getClassContext();
+        if (!context) {
+            var status = document.getElementById("pacificEducationSubjectStatus");
+            if (status) status.textContent = "Select an existing Class Reference before selecting a subject.";
+            return false;
+        }
+        if (context.level && context.level !== getLevel()) {
+            try { window.localStorage.setItem("pacificEducationLevel", context.level); } catch (e) {}
+        }
         window.localStorage.setItem("pacificEducationSubject", subjectId);
         document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", {
-            detail: { subjectId: subjectId, prototype: true }
+            detail: { classId: context.classId, level: context.level || getLevel(), subjectId: subjectId, prototype: true }
         }));
         var status = document.getElementById("pacificEducationSubjectStatus");
         if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
@@ -190,7 +208,16 @@
         select.addEventListener("change",function(){setSubject(select.value);});
         host.appendChild(label); host.appendChild(document.createElement("br")); host.appendChild(select); host.appendChild(status); return true;
     }
-    function getSelection(){return {level:getLevel(),subjectId:getSubject(),prototype:true,curriculumVerification:"required-before-production",curriculumVerificationRequired:true,form1To7ScienceHealthCatalog:!!window.PacificEducationForm1To7ScienceHealth};}
+    function getSelection(){var context=getClassContext(); return {classId:context ? context.classId : null,level:context ? (context.level || getLevel()) : getLevel(),subjectId:getSubject(),prototype:true,curriculumVerification:"required-before-production",curriculumVerificationRequired:true,form1To7ScienceHealthCatalog:!!window.PacificEducationForm1To7ScienceHealth};}
+    document.addEventListener("pacificEducationClassChanged", function(event) {
+        var detail = event && event.detail ? event.detail : {};
+        var status = document.getElementById("pacificEducationSubjectStatus");
+        var current = getClassContext();
+        if (status && current) status.textContent = "Class Reference: " + current.classId + " • Selected: " + getSubject() + " • " + (current.level || getLevel()) + " (pilot — curriculum verification required)";
+        if (current && detail.classId) {
+            document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged", { detail: { classId: current.classId, level: current.level || getLevel(), subjectId: getSubject(), prototype: true } }));
+        }
+    });
     document.addEventListener("pacificEducationCountryConfigChanged", function() { createUI(); });
     function initialise(){createUI(); return getSelection();}
     window.PacificEducationSubjectSelector=Object.freeze({version:VERSION,subjects:getConfiguredSubjects(),getSubject:getSubject,setSubject:setSubject,getSelection:getSelection,createUI:createUI,initialise:initialise});
