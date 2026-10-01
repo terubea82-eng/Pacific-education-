@@ -129,7 +129,7 @@
 
 
   function globalCommand(text) {
-    var normalized = String(text || "").toLowerCase().replace(/[^a-z0-9\\s]/g, " ").replace(/\\s+/g, " ").trim();
+    var normalized = String(text || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
     var install = /^(install|install pacific education|download pacific education)$/.test(normalized);
     if (install) {
       if (window.PacificEducationPWAInstall && typeof window.PacificEducationPWAInstall.install === "function") {
@@ -172,21 +172,21 @@
     if (/^(read choices|read options|multiple choice)$/.test(normalized)) {
       var choices=[].slice.call(document.querySelectorAll("input[type=radio],input[type=checkbox],select option")).map(function(e){
         var l=e.id?document.querySelector("label[for='"+CSS.escape(e.id)+"']"):null;
-        return String(l?l.textContent:e.textContent||e.getAttribute("aria-label")||e.value||"").replace(/\\s+/g," ").trim();
+        return String(l?l.textContent:e.textContent||e.getAttribute("aria-label")||e.value||"").replace(/\s+/g," ").trim();
       }).filter(Boolean);
       if(window.speakText)window.speakText(choices.length ? "Choices available. "+choices.join(". ") : "No choices are currently available.");
       return;
     }
     if (/^(read|read page|read screen|read section)$/.test(normalized)) {
       var active=document.querySelector("body.pe-guided-flow main > *:not([hidden])")||document.querySelector("main");
-      var content=active?String(active.innerText||active.textContent||"").replace(/\\s+/g," ").trim():"";
+      var content=active?String(active.innerText||active.textContent||"").replace(/\s+/g," ").trim():"";
       if(content && window.speakText)window.speakText(content.slice(0,2400));
       return;
     }
     if (/^(sign out|log out|logout)$/.test(normalized)) {
       stopGlobal();
       var links=[].slice.call(document.querySelectorAll("button,a,[role=button]"));
-      var sign=links.find(function(e){return /^(sign out|log out|logout)$/i.test(String(e.getAttribute("aria-label")||e.textContent||"").replace(/\\s+/g," ").trim());});
+      var sign=links.find(function(e){return /^(sign out|log out|logout)$/i.test(String(e.getAttribute("aria-label")||e.textContent||"").replace(/\s+/g," ").trim());});
       if(sign)sign.click();
       return;
     }
