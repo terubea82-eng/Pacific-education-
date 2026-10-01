@@ -24,7 +24,7 @@
 (function () {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
 
     const STORAGE_KEY =
         "pacificEducationAdaptiveActivities";
@@ -66,6 +66,13 @@
         REQUIRES_REVIEW: "Requires Review",
         REPLACED: "Replaced"
     });
+
+    function selectedClassId() {
+        const roster = window.PacificEducationTeacherClassRosterContext;
+        if (!roster || typeof roster.getContext !== "function") return null;
+        const ctx = roster.getContext();
+        return ctx && ctx.classId ? String(ctx.classId) : null;
+    }
 
     function now() {
         return new Date().toISOString();
@@ -235,6 +242,9 @@
             throw new Error("Student ID is required.");
         }
 
+        const classId = options.classId || selectedClassId();
+        if (!classId) throw new Error("Class Reference is required.");
+
         const capabilityStatus =
             options.capabilityStatus ||
             CAPABILITY_STATUS.INSUFFICIENT_EVIDENCE;
@@ -253,6 +263,7 @@
                 createId("recommendation"),
 
             studentId: options.studentId,
+            classId: classId,
 
             subject:
                 options.subject ||
@@ -339,6 +350,7 @@
      */
     function saveRecommendation(recommendation) {
         validateActivity(recommendation);
+        if (!recommendation.classId) throw new Error("Class Reference is required.");
 
         const data = safeRead();
 
@@ -485,9 +497,10 @@
             return [];
         }
 
-        let recommendations = [
-            ...student.recommendations
-        ];
+        let recommendations = [...student.recommendations];
+        const classId = (filters && filters.classId) || selectedClassId();
+        if (!classId) return [];
+        recommendations = recommendations.filter(item => String(item.classId || "") === String(classId));
 
         if (filters && filters.subject) {
             recommendations =
