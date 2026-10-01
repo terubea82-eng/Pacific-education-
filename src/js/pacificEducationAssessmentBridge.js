@@ -6,7 +6,7 @@
 (function () {
     "use strict";
 
-    const VERSION = "1.0.0";
+    const VERSION = "1.1.0";
 
     function getCore() {
         return window.PacificEducationCore || null;
@@ -52,6 +52,15 @@
         return core.assessments.add(assessment);
     }
 
+    function getSelectedClassId() {
+        const roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function") {
+            const id = roster.getClassId();
+            return id ? String(id).trim() : null;
+        }
+        return null;
+    }
+
     function getAssessments() {
         const core = getCore();
 
@@ -64,8 +73,12 @@
                 ? core.getState()
                 : null;
 
+        const classId = getSelectedClassId();
+        if (!classId) return [];
         return state && Array.isArray(state.assessments)
-            ? state.assessments
+            ? state.assessments.filter(function (item) {
+                return String(item.classId || "") === classId;
+            })
             : [];
     }
 
