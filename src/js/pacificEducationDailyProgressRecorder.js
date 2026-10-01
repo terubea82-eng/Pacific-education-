@@ -226,3 +226,18 @@
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadWorldClock);
     else loadWorldClock();
 })(window, document);
+
+/* Pilot integration loader: align visible learning features to each registered user. */
+(function(window, document) {
+    'use strict';
+    function loadIndividualAlignment() {
+        if (window.PacificEducationIndividualUserAlignment || document.getElementById('pacificEducationIndividualUserAlignmentScript')) return;
+        var script = document.createElement('script');
+        script.id = 'pacificEducationIndividualUserAlignmentScript';
+        script.src = 'js/pacificEducationIndividualUserAlignment.js?v=1000';
+        script.async = false;
+        document.head.appendChild(script);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadIndividualAlignment);
+    else loadIndividualAlignment();
+})(window, document);
