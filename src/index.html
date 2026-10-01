@@ -70,6 +70,10 @@ html[data-text-scale="x-large"]{font-size:125%}
 <section id="pacificEducationAccessibilityControls" aria-label="Accessibility controls" hidden><strong>Accessibility:</strong><button type="button" onclick="PacificEducationAccessibilityRuntime.setTextScale('normal');PacificEducationAccessibilityRuntime.announce('Normal text selected.')">Normal text</button><button type="button" onclick="PacificEducationAccessibilityRuntime.setTextScale('large');PacificEducationAccessibilityRuntime.announce('Large text selected.')">Large text</button><button type="button" onclick="PacificEducationAccessibilityRuntime.setTextScale('x-large');PacificEducationAccessibilityRuntime.announce('Extra large text selected.')">Extra large</button><button type="button" onclick="PacificEducationAccessibilityRuntime.stopSpeaking();PacificEducationAccessibilityRuntime.announce('Speech stopped.')">Stop speech</button><span id="pacificEducationAccessibilityStatus" aria-live="polite"></span></section>
 <section id="pilotBanner" aria-label="Controlled pilot notice" style="border:2px solid #333;background:#f5f5f5"><h2>1-Month Controlled Pilot</h2><p><strong>Pilot period:</strong> September 21, 2026 – October 21, 2026</p><p>Controlled prototype pilot for demonstration, testing, curriculum-alignment work and authorized feedback. It is not a production education service. Any extension beyond this pilot requires genuine documented need and explicit owner approval.</p><p><strong>Do not enter</strong> real sensitive child information, passwords, payment credentials or exact child location data. Production authentication, secure backend/database, payment verification, cybersecurity, privacy, safeguarding, accessibility/device testing, official curriculum validation and independent review remain required.</p><p><strong>Owner control:</strong> Pilot participation does not transfer ownership, equity, shares or control.</p><p><strong>Buy Plans:</strong> Buy Plans and real purchasing remain inactive throughout the 1-month controlled pilot. They may be activated only after the pilot, required verification, final assessment and Owner authorization.</p></section>
 <header><h1>Pacific Education</h1><p>Learning • Assessment • Dashboards • Education Services</p></header>
+<div id="pacificEducationRefreshNotice" role="status" aria-live="polite" style="padding:12px;margin:12px 20px;border:2px solid currentColor;border-radius:8px;font-weight:bold;">
+  🔄 <strong>Refresh Information:</strong> If Pacific Education has been updated, please refresh this page to load the latest version. Automatic refresh checking remains active.
+  <button type="button" id="pacificEducationRefreshButton">Refresh Now</button>
+</div>
 <main id="app">
 <nav id="userFirstNavigation" aria-label="Pacific Education main navigation" style="margin:12px 0;padding:10px;border:1px solid currentColor;"><strong>Start here:</strong> <a href="#pacificEducationPilotUserWorkspaces">Users</a> · <a href="#learningPlatform">Learning Tools</a> · <a href="#levelSelection">Class / Level</a> · <a href="#subjectSelection">Subject</a> · <a href="#termSelection">Term</a> · <a href="#dailyLesson">Daily Activities</a> · <a href="#assessments">Assessments</a> · <a href="#teacherDashboard">Dashboards</a> · <a href="#buyPlans">Services</a> · <button type="button" id="financeButton" onclick="openPacificEducationFinance()">Finance</button> · <a href="#pacificEducationWebsitePilotChecklist">Pilot Checklist</a> · <a href="#publicationStatus">Pilot / Production</a> · <a href="#pacificGuardianCommentSection">Feedback</a> · <a href="#systemStatus">System</a></nav>
 <section id="pacificEducationSchoolIdentitySection"><div id="pacificEducationSchoolIdentity"></div></section><section id="learningPlatform"><h2>Learning Tools</h2><p><strong>Let’s learn!</strong></p><p><strong>1. Choose your class.</strong></p><p><strong>2. Choose your subject.</strong></p><p><strong>3. Choose your term.</strong></p><p><strong>4. Press 📚 Daily Activities.</strong></p><nav aria-label="Learning tools" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;"><a href="#dailyLesson" style="font-size:1.15em;font-weight:bold;">📚 Daily Activities</a></nav><p><strong>That is where you start learning.</strong></p><p><small>Then follow the steps: Daily Activities → Practice → Assessment → Coverage.</small></p></section>
@@ -182,6 +186,25 @@ html[data-text-scale="x-large"]{font-size:125%}
   };
 
   function init(){applyStep(0);}
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+<script>
+(function(){
+  var refreshText="Refresh information: If Pacific Education has been updated, please refresh this page to load the latest version. Automatic refresh checking remains active.";
+  function speakRefresh(){
+    if(window.speakText){window.speakText(refreshText);return true;}
+    if("speechSynthesis" in window){
+      var u=new SpeechSynthesisUtterance(refreshText);
+      u.lang="en";window.speechSynthesis.cancel();window.speechSynthesis.speak(u);return true;
+    }
+    return false;
+  }
+  function init(){
+    var b=document.getElementById("pacificEducationRefreshButton");
+    if(b)b.addEventListener("click",function(){window.location.reload();});
+    setTimeout(function(){if(document.visibilityState==="visible")speakRefresh();},1200);
+  }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
