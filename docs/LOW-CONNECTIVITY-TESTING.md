@@ -84,7 +84,8 @@ Verify that the prototype remains usable across:
 6. Exercise speech controls where browser speech synthesis is available and confirm Stop Speech cancels active speech.
 7. Confirm unsupported speech synthesis is reported as unavailable rather than presented as successful.
 8. Repeat on an Android-sized viewport and confirm controls remain usable without horizontal scrolling.
-9. Record browser, assistive technology, speech availability and accessibility settings in the evidence record.
+9. Open the app in two same-origin browser tabs, change Voice preference in one tab, and confirm the other tab updates its control state and announces the change through the polite live region.
+10. Record browser, assistive technology, speech availability and accessibility settings in the evidence record.
 
 ## Evidence record
 
@@ -141,6 +142,7 @@ For the accessibility and voice-first checks, record evidence for the voice pref
 5. Confirm the control's accessible label changes between enabling and disabling states.
 6. Confirm selectable controls can be announced when voice preference is enabled.
 7. Confirm the control remains usable when speech synthesis is unavailable; the application must not report speech success when the browser does not provide speech synthesis.
-8. Record browser/version, device, operating system, speech availability, keyboard/assistive technology used, and the relevant app commit.
+8. Repeat the preference change in a second same-origin browser tab and confirm the first tab receives the updated state without a page reload.
+9. Record browser/version, device, operating system, speech availability, keyboard/assistive technology used, and the relevant app commit.
 
 This is a manual verification procedure. It does not by itself establish accessibility conformance or production approval.
