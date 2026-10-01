@@ -34,3 +34,10 @@ test("service worker uses stable cache keys for versioned static assets", () => 
 test("service worker bumps its shell cache when the offline shell changes", () => {
   assert.match(serviceWorker, /CACHE_NAME="pacific-education-shell-v7"/);
 });
+
+
+test("service worker removes superseded Pacific Education shell caches", () => {
+  assert.match(serviceWorker, /k\.indexOf\("pacific-education-shell-"\)===0/);
+  assert.match(serviceWorker, /k!==CACHE_NAME/);
+  assert.match(serviceWorker, /caches\.delete\(k\)/);
+});
