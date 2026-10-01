@@ -303,8 +303,7 @@
       wrap.appendChild(b);wrap.appendChild(s);controls.insertBefore(wrap,controls.firstChild);
       b.onclick=function(){globalListening?stopGlobal():startGlobal();};
     }
-    if(SpeechRecognition)setTimeout(startGlobal,400);
-    if (!document.getElementById("pacificEducationVoiceDock")) {
+    // Do not auto-start microphone recognition on page load. Mobile browsers/WebViews\n    // commonly block SpeechRecognition without a user gesture; start only from the\n    // visible Voice Control button or an explicit user action.\n    if (!document.getElementById("pacificEducationVoiceDock")) {
       var dock=document.createElement("section");
       dock.id="pacificEducationVoiceDock";
       dock.setAttribute("aria-label","Pacific Education voice and installation controls");
