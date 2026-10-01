@@ -18,7 +18,7 @@
 (function (global) {
     "use strict";
 
-    var VERSION = "1.1.0";
+    var VERSION = "1.2.0";
     var QUEUE_KEY = "pacificEducationGuardianReviewQueue";
     var MAX_QUEUE = 100;
 
@@ -349,6 +349,96 @@
         }
 
         return result;
+    }
+
+
+    /*
+     * Pilot voice conversation helper:
+     * - Lets the user speak a Guardian message instead of typing it.
+     * - Reads the Guardian acknowledgement/status aloud.
+     * - Uses browser speech APIs only; this is not secure voice authentication.
+     */
+    function installVoiceConversationHelper() {
+        if (!global.document) return;
+        var section = global.document.getElementById("pacificGuardianCommentSection");
+        var input = global.document.getElementById("pacificGuardianComment");
+        if (!section || !input || global.document.getElementById("pacificGuardianVoiceButton")) return;
+
+        var wrap = global.document.createElement("div");
+        wrap.style.marginTop = "10px";
+        wrap.innerHTML =
+            '<button type="button" id="pacificGuardianVoiceButton" aria-label="Speak to Pacific Guardian">🎙️ Speak to Pacific Guardian</button>' +
+            '<button type="button" id="pacificGuardianVoiceStopButton" aria-label="Stop Pacific Guardian voice">🔇 Stop Voice</button>' +
+            '<div id="pacificGuardianVoiceStatus" aria-live="polite"></div>';
+        input.parentNode.insertBefore(wrap, input);
+
+        var voiceButton = global.document.getElementById("pacificGuardianVoiceButton");
+        var stopButton = global.document.getElementById("pacificGuardianVoiceStopButton");
+        var voiceStatus = global.document.getElementById("pacificGuardianVoiceStatus");
+        var Recognition = global.SpeechRecognition || global.webkitSpeechRecognition;
+
+        function speak(text) {
+            try {
+                if ("speechSynthesis" in global) {
+                    global.speechSynthesis.cancel();
+                    var utterance = new global.SpeechSynthesisUtterance(String(text || ""));
+                    utterance.lang = "en";
+                    utterance.rate = 0.95;
+                    global.speechSynthesis.speak(utterance);
+                    return true;
+                }
+            } catch (_) {}
+            return false;
+        }
+
+        if (!Recognition) {
+            voiceButton.disabled = true;
+            voiceStatus.textContent = "Voice input is not available in this browser. You can still type your message.";
+        } else {
+            var recognition = new Recognition();
+            recognition.lang = "en";
+            recognition.interimResults = false;
+            recognition.continuous = false;
+
+            recognition.onstart = function () {
+                voiceButton.disabled = true;
+                voiceStatus.textContent = "Listening… speak your message to Pacific Guardian.";
+            };
+            recognition.onresult = function (event) {
+                var transcript = event.results && event.results[0] && event.results[0][0]
+                    ? event.results[0][0].transcript : "";
+                if (transcript) {
+                    input.value = (input.value ? input.value.trim() + " " : "") + transcript.trim();
+                    voiceStatus.textContent = "Message captured. Press Send to Pacific Guardian when you are ready.";
+                    speak("I heard your message. You can review it and press Send to Pacific Guardian.");
+                }
+            };
+            recognition.onerror = function () {
+                voiceStatus.textContent = "Voice input could not be captured. You can type your message instead.";
+                voiceButton.disabled = false;
+            };
+            recognition.onend = function () {
+                voiceButton.disabled = false;
+            };
+            voiceButton.onclick = function () {
+                try { recognition.start(); }
+                catch (_) { voiceStatus.textContent = "Voice input is already active or unavailable."; }
+            };
+        }
+
+        stopButton.onclick = function () {
+            try { if ("speechSynthesis" in global) global.speechSynthesis.cancel(); } catch (_) {}
+            voiceStatus.textContent = "Guardian voice stopped.";
+        };
+
+        var originalSubmit = global.submitPacificGuardianComment;
+        global.submitPacificGuardianComment = function () {
+            var result = originalSubmit();
+            if (result && result.accepted) {
+                speak(result.acknowledgement || "Your message has been received by Pacific Guardian.");
+            }
+            return result;
+        };
     }
 
     global.submitPacificGuardianComment = submitPacificGuardianComment;
