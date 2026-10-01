@@ -1,56 +1,62 @@
-/* PACIFIC EDUCATION — ROOT OFFLINE SERVICE WORKER
- * Prototype only. Keeps the pilot shell usable while ensuring updated
- * HTML/JavaScript is fetched after a deployment instead of serving stale
- * button handlers from an older cache. Never caches APIs, query-string
- * requests, credentials, payments, authentication material, or child data.
- */
+/* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
-const CACHE_NAME="pacific-education-prototype-root-v4";
-const ENTRY="./src/index.html";
 
-async function buildAssets(){
- const assets=new Set(["./","./index.html","./src/index.html","./service-worker.js"]);
- try{
-  const response=await fetch(ENTRY,{cache:"no-store"});
-  if(response.ok){
-   const html=await response.text();
-   const matches=html.matchAll(/<script\b[^>]+src=["']([^"']+)["']/gi);
-   for(const match of matches){
-    const ref=String(match[1]).split("?")[0].split("#")[0];
-    if(!ref||ref.indexOf("://")!==-1||ref.indexOf("//")===0||ref.indexOf("data:")===0)continue;
-    const u=new URL("./src/"+ref.replace(/^\.\//,""),self.location.href);
-    if(u.origin===self.location.origin)assets.add(u.pathname);
-   }
-  }
- }catch(_){}
- return Array.from(assets);
+const CACHE_NAME="pacific-education-shell-v5";
+const ENTRY="/Pacific-education-/src/index.html";
+
+function isStatic(request){
+  const d=request.destination;
+  return d==="script"||d==="style"||d==="image"||d==="font"||d==="worker";
 }
 
-self.addEventListener("install",e=>e.waitUntil(
- buildAssets().then(assets=>caches.open(CACHE_NAME).then(c=>c.addAll(assets))).then(()=>self.skipWaiting())
-));
+self.addEventListener("install",event=>{
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache=>cache.add(ENTRY))
+      .then(()=>self.skipWaiting())
+  );
+});
 
-self.addEventListener("activate",e=>e.waitUntil(
- caches.keys().then(keys=>Promise.all(
-  keys.filter(k=>k.indexOf("pacific-education-prototype-root-")===0&&k!==CACHE_NAME).map(k=>caches.delete(k))
- )).then(()=>self.clients.claim())
-));
+self.addEventListener("activate",event=>{
+  event.waitUntil(
+    caches.keys().then(keys=>Promise.all(
+      keys.filter(k=>k.indexOf("pacific-education-shell-")===0&&k!==CACHE_NAME)
+        .map(k=>caches.delete(k))
+    )).then(()=>self.clients.claim())
+  );
+});
 
-self.addEventListener("fetch",e=>{
- if(e.request.method!=="GET")return;
- const url=new URL(e.request.url);
- if(url.origin!==self.location.origin||url.search||url.hash)return;
+self.addEventListener("fetch",event=>{
+  const request=event.request;
+  if(request.method!=="GET")return;
 
- e.respondWith(
-  caches.open(CACHE_NAME).then(async cache=>{
-   try{
-    const fresh=await fetch(e.request,{cache:"no-store"});
-    if(fresh.ok) cache.put(e.request,fresh.clone());
-    return fresh;
-   }catch(_){
-    const cached=await cache.match(e.request);
-    return cached||new Response("Offline content unavailable",{status:503,statusText:"Offline"});
-   }
-  })
- );
+  const url=new URL(request.url);
+  if(url.origin!==self.location.origin||url.search)return;
+
+  if(request.mode==="navigate"||request.destination==="document"){
+    event.respondWith(
+      fetch(request,{cache:"no-store"}).then(response=>{
+        if(response.ok){
+          const copy=response.clone();
+          caches.open(CACHE_NAME).then(cache=>cache.put(ENTRY,copy));
+        }
+        return response;
+      }).catch(()=>caches.match(ENTRY).then(cached=>cached||new Response("Pacific Education is offline.",{status:503})))
+    );
+    return;
+  }
+
+  if(isStatic(request)){
+    event.respondWith(
+      caches.match(request).then(cached=>{
+        const refresh=fetch(request,{cache:"no-store"}).then(response=>{
+          if(response.ok){
+            caches.open(CACHE_NAME).then(cache=>cache.put(request,response.clone()));
+          }
+          return response;
+        }).catch(()=>null);
+        return cached||refresh;
+      })
+    );
+  }
 });
