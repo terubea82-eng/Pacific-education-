@@ -76,7 +76,10 @@
     function refreshPilotContext() {
       var context = document.getElementById("pilotSchoolContext");
       if (context) context.innerHTML = "<strong>Shared pilot context:</strong> " + pilotContextSummary();
-    }\n    document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);\n\n    function setPilotActivityGate(enabled) {
+    }
+    document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);
+
+    function setPilotActivityGate(enabled) {
       var controls = document.querySelectorAll("main button, main select, main input, main textarea");
       Array.prototype.forEach.call(controls, function (el) {
         if (el.id === "pilotRoleSelector" || el.closest("#pacificEducationPilotUserWorkspaces")) return;
