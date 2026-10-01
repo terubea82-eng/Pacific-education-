@@ -36,6 +36,8 @@
     speaker.style.marginLeft="2px";
     speaker.style.minWidth="44px";
     speaker.style.minHeight="44px";
+    speaker.style.fontSize="1rem";
+    speaker.style.lineHeight="1";
     speaker.addEventListener("click",function(e){
       e.preventDefault();
       e.stopPropagation();
