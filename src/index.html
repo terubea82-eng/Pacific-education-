@@ -65,6 +65,74 @@ html[data-text-scale="x-large"]{font-size:125%}
 <div id="welcomeNextWrapper" class="pacific-flow-next" style="margin-top:16px;"><button type="button" id="welcomeNextButton" onclick="document.body.classList.add('pe-guided-flow');document.body.setAttribute('data-pe-flow-step','1');document.getElementById('pacificEducationIdentityRegistration').scrollIntoView({behavior:'smooth',block:'start'})">➡️ Next</button></div>
 </section>
 
+<section id="pacificEducationMailbox" aria-label="Pacific Education Mail Box">
+<h2>📬 Pacific Education Mail Box</h2>
+<p>In-app pilot mailbox for Pacific Education notices, authorized communications and feedback. It is separate from personal email.</p>
+<div id="pacificEducationMailboxStatus" aria-live="polite"></div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:10px 0">
+<button type="button" id="pacificEducationMailboxRefresh">Refresh Mail Box</button>
+<button type="button" id="pacificEducationMailboxCompose">✉️ New Message</button>
+</div>
+<div id="pacificEducationMailboxList"></div>
+<div id="pacificEducationMailboxComposer" hidden>
+<h3>New Message</h3>
+<label for="pacificEducationMailboxRecipient">Recipient role / destination</label><br>
+<select id="pacificEducationMailboxRecipient" style="width:100%;max-width:520px">
+<option value="Pacific Education">Pacific Education</option>
+<option value="Teacher">Teacher</option>
+<option value="Parent/Caregiver">Parent/Caregiver</option>
+<option value="Student">Student</option>
+<option value="Education Community / Pilot Tester">Education Community / Pilot Tester</option>
+</select><br><br>
+<label for="pacificEducationMailboxSubject">Subject</label><br>
+<input id="pacificEducationMailboxSubject" maxlength="120" style="width:100%;max-width:520px"><br><br>
+<label for="pacificEducationMailboxBody">Message</label><br>
+<textarea id="pacificEducationMailboxBody" rows="5" maxlength="2000" style="width:100%;max-width:760px"></textarea><br>
+<button type="button" id="pacificEducationMailboxSend">Send Pilot Message</button>
+<button type="button" id="pacificEducationMailboxCancel">Cancel</button>
+</div>
+</section>
+<script>
+(function(){
+  var KEY="pacificEducationPilotMailbox";
+  function load(){try{return JSON.parse(localStorage.getItem(KEY)||"[]");}catch(_){return [];}}
+  function save(items){try{localStorage.setItem(KEY,JSON.stringify(items));return true;}catch(_){return false;}}
+  function esc(s){return String(s||"").replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[ch]||ch;});}
+  function render(){
+    var box=document.getElementById("pacificEducationMailboxList"),status=document.getElementById("pacificEducationMailboxStatus");
+    if(!box)return;
+    var items=load();
+    if(!items.length){box.innerHTML="<p><strong>Inbox:</strong> No pilot messages yet.</p>";}
+    else{
+      box.innerHTML="<h3>Inbox</h3>"+items.slice().reverse().map(function(m){
+        return "<article style='border:1px solid #ccc;border-radius:8px;padding:12px;margin:8px 0'><strong>"+esc(m.subject||"(No subject)")+"</strong><br><small>To: "+esc(m.recipient)+" · "+esc(m.createdAt)+"</small><p style='white-space:pre-wrap'>"+esc(m.body)+"</p></article>";
+      }).join("");
+    }
+    if(status)status.textContent="Mail Box ready. "+items.length+" pilot message"+(items.length===1?"":"s")+" stored on this browser.";
+  }
+  function init(){
+    var refresh=document.getElementById("pacificEducationMailboxRefresh");
+    var compose=document.getElementById("pacificEducationMailboxCompose");
+    var composer=document.getElementById("pacificEducationMailboxComposer");
+    var send=document.getElementById("pacificEducationMailboxSend");
+    var cancel=document.getElementById("pacificEducationMailboxCancel");
+    if(refresh)refresh.onclick=render;
+    if(compose)compose.onclick=function(){if(composer)composer.hidden=false;};
+    if(cancel)cancel.onclick=function(){if(composer)composer.hidden=true;};
+    if(send)send.onclick=function(){
+      var r=document.getElementById("pacificEducationMailboxRecipient"),s=document.getElementById("pacificEducationMailboxSubject"),b=document.getElementById("pacificEducationMailboxBody");
+      var subject=s?s.value.trim():"",body=b?b.value.trim():"";
+      if(!subject||!body){alert("Enter a subject and message.");return;}
+      var items=load();
+      items.push({recipient:r?r.value:"Pacific Education",subject:subject,body:body,createdAt:new Date().toLocaleString(),pilotOnly:true});
+      if(!save(items)){alert("Pilot mailbox could not be saved in this browser.");return;}
+      if(s)s.value="";if(b)b.value="";if(composer)composer.hidden=true;render();
+    };
+    render();
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
 <section id="pacificEducationAppMenu" aria-label="Pacific Education app menu">
 <details><summary>App Menu</summary><nav aria-label="App menu links" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;"><a href="#prototypeAccess">Start / User Workspace</a><a href="#dailyLesson">Daily Activities</a><a href="#assessments">Assessments</a><a href="#teacherDashboard">Teacher Dashboard</a><a href="#parentDashboard">Parent Dashboard</a><a href="#pacificEducationAccessibilityControls" onclick="document.getElementById('pacificEducationAccessibilityControls').hidden=false">Accessibility</a></nav></details>
 </section>
