@@ -40,6 +40,15 @@
     const RESULTS_KEY =
         "pacificEducationAssessmentResults";
 
+    function getSelectedClassId() {
+        const roster = window.PacificEducationTeacherClassRosterContext;
+        if (roster && typeof roster.getClassId === "function") {
+            const id = roster.getClassId();
+            return id ? String(id).trim() : null;
+        }
+        return null;
+    }
+
 
     /* =========================================
        ASSESSMENT DATA
@@ -1037,7 +1046,7 @@
 
 
         const saved =
-            core.assessments.add(result);
+            core.assessments.add(Object.assign({}, result, { classId: getSelectedClassId() }));
 
 
         if (!saved) {
@@ -1178,6 +1187,12 @@
             PASS_MARK;
 
 
+        const classId = getSelectedClassId();
+        if (!classId) {
+            window.currentAssessment = null;
+            return block("Select an existing Class Reference before saving the assessment result.");
+        }
+
         const assessmentDay =
             assessmentData[
                 assessment.type
@@ -1203,6 +1218,9 @@
 
             type:
                 assessment.type,
+
+            classId:
+                classId,
 
 
             day:
