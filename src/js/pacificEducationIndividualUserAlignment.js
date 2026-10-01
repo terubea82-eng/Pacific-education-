@@ -6,7 +6,7 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.2.0";
+  var VERSION="1.2.1";
   var PROFILE_KEY="pacificEducationIndividualUserAlignmentV1";
   var TYPES=["multiple_choice","true_false","matching","short_answer","long_answer"];
   var CAPABILITY_TYPE={foundation:"matching",remedial:"multiple_choice",developing:"true_false",expected:"short_answer",advanced:"long_answer"};
@@ -47,7 +47,7 @@
       "<p><strong>Suggested activity:</strong> Day "+p.dayNumber+" Activities</p>";
     target.insertBefore(s,target.firstChild||null);
   }
-  function escapeHtml(v){return String(v==null?"":v).replace(/[&<>\"']/g,function(c){return ({"&":"&amp;","<":"&lt;","/>":"&gt;",'"':"&quot;","'":"&#39;"}[c]||c);});}
+  function escapeHtml(v){return String(v==null?"":v).replace(/[&<>\"']/g,function(c){return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]||c);});}
   function updateDailyBrowser(p){
     var section=document.getElementById("pacificDailyActivityBrowser");if(!section)return;
     var ps=section.querySelectorAll("p"),target=null;
