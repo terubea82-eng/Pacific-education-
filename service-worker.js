@@ -24,7 +24,15 @@ function isStatic(request){
 self.addEventListener("install",event=>{
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache=>cache.add(ENTRY))
+      .then(cache=>{
+        const urls=[ENTRY].concat(CORE_ASSETS);
+        return Promise.all(urls.map(url=>
+          fetch(url,{cache:"no-store"}).then(response=>{
+            if(response.ok)return cache.put(new Request(url),response);
+            return null;
+          }).catch(()=>null)
+        ));
+      })
       .then(()=>self.skipWaiting())
   );
 });
