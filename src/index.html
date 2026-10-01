@@ -276,6 +276,36 @@ html[data-text-scale="x-large"]{font-size:125%}
 <script>
 (function(){
 "use strict";
+function announceReconnect(){
+ var s=document.querySelector("[data-pacific-reconnect]");
+ if(!s){
+  var host=document.getElementById("systemStatus");
+  if(!host)return;
+  s=document.createElement("div");
+  s.setAttribute("data-pacific-reconnect","true");
+  s.setAttribute("role","status");
+  s.setAttribute("aria-live","polite");
+  host.appendChild(s);
+ }
+ s.textContent="Connectivity monitor active. Reconnect is detected automatically; queued learning progress is preserved until server acknowledgement.";
+}
+function init(){
+ var r=window.PacificEducationOfflineRuntime;
+ announceReconnect();
+ if(r&&typeof r.listenConnectivity==="function"){
+  var wasOnline=navigator.onLine;
+  r.listenConnectivity(function(state){
+   if(!wasOnline&&state.online) announceReconnect();
+   wasOnline=state.online;
+  });
+ }
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+<script>
+(function(){
+"use strict";
 function renderOfflineDiagnostics(){
  var box=document.querySelector("[data-pacific-offline-diagnostics]");
  if(!box){
