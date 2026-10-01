@@ -1,12 +1,12 @@
 /*
  * Pacific Education — Individual User Alignment Engine
  * Pilot-safe personalisation boundary.
- * Aligns visible learning features to the currently registered user without
- * inventing curriculum evidence or exposing payer/identity details.
+ * One simple registration creates/uses one individual pilot workspace.
+ * Only the registered user's role-relevant dashboard is shown.
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.0.0";
+  var VERSION="1.1.0";
   var PROFILE_KEY="pacificEducationIndividualUserAlignmentV1";
   var TYPES=["multiple_choice","true_false","matching","short_answer","long_answer"];
   var CAPABILITY_TYPE={foundation:"matching",remedial:"multiple_choice",developing:"true_false",expected:"short_answer",advanced:"long_answer"};
@@ -52,28 +52,37 @@
   function renderProfile(p){
     var app=document.getElementById("app");if(!app)return;
     var s=document.getElementById("pacificEducationIndividualAlignment");
-    if(!s){s=document.createElement("section");s.id="pacificEducationIndividualAlignment";s.setAttribute("aria-label","Individual user alignment");app.insertBefore(s,document.getElementById("dailyLesson")||app.firstChild);}
-    var label=p.paceduId?"Registered Pacific Education ID linked":"Registered pilot profile";
-    s.innerHTML="<h2>Your Individual Learning Alignment</h2>"+
-      "<p><strong>"+label+"</strong></p>"+
-      "<p><strong>Role:</strong> "+escapeHtml(p.role)+" • <strong>Level:</strong> "+escapeHtml(p.level)+" • <strong>Subject:</strong> "+escapeHtml(p.subject)+" • <strong>Term:</strong> "+escapeHtml(p.term)+"</p>"+
-      "<p><strong>Learning pathway:</strong> "+escapeHtml(p.capability)+" • <strong>Current learning day:</strong> Day "+p.dayNumber+"</p>"+
-      "<p><strong>Suggested activity:</strong> Day "+p.dayNumber+" Activities — "+escapeHtml(activityLabel(recommendedType(p)))+"</p>"+
-      "<p><strong>Access:</strong> "+escapeHtml(p.fullAccess?"Full pilot features through verified paid/sponsored entitlement":"Activities viewing only until paid/sponsored access is verified")+"</p>"+
-      "<p><small>Activities remain linked to the selected level, subject, term, capability and available curriculum evidence. No curriculum indicator is invented when official verification is missing.</small></p>";
+    if(!s){s=document.createElement("section");s.id="pacificEducationIndividualAlignment";s.setAttribute("aria-label","Your dashboard");app.insertBefore(s,document.getElementById("dailyLesson")||app.firstChild);}
+    s.innerHTML="<h2>Your Dashboard</h2>"+
+      "<p><strong>Role:</strong> "+escapeHtml(p.role)+"</p>"+
+      (p.level?"<p><strong>Class / Level:</strong> "+escapeHtml(p.level)+"</p>":"")+ 
+      (p.subject?"<p><strong>Subject:</strong> "+escapeHtml(p.subject)+"</p>":"")+ 
+      (p.term?"<p><strong>Term:</strong> "+escapeHtml(p.term)+"</p>":"")+ 
+      "<p><strong>Current learning day:</strong> Day "+p.dayNumber+" of 365</p>"+
+      "<p><strong>Suggested activity:</strong> Day "+p.dayNumber+" Activities</p>"+
+      "<p><small>Your dashboard shows only information and tools relevant to your registered role.</small></p>";
   }
   function escapeHtml(v){return String(v==null?"":v).replace(/[&<>\"']/g,function(c){return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]);});}
   function updateDailyBrowser(p){
     var section=document.getElementById("pacificDailyActivityBrowser");if(!section)return;
     var ps=section.querySelectorAll("p"), target=null;
-    for(var i=0;i<ps.length;i++){if(/Current day:/.test(ps[i].textContent||"")){target=ps[i];break;}}
-    if(target)target.textContent="Current learning day: Day "+p.dayNumber+" • Suggested activity: Day "+p.dayNumber+" Activities — "+activityLabel(recommendedType(p));
+    for(var i=0;i<ps.length;i++){if(/Current day:|Recommended:|Suggested activity:/.test(ps[i].textContent||"")){target=ps[i];break;}}
+    if(target)target.textContent="Current learning day: Day "+p.dayNumber+" • Suggested activity: Day "+p.dayNumber+" Activities";
     var intro=section.querySelector("p");
-    if(intro&&/Choose any term day/.test(intro.textContent||"")) intro.textContent="Your daily activities are aligned to your registered learning profile. You may explore other days for authorised review.";
+    if(intro&&/Choose any term day/.test(intro.textContent||"")) intro.textContent="Daily activities follow your registered learning profile. Other days are available for authorised review.";
   }
   function refresh(){var p=profile();renderProfile(p);updateDailyBrowser(p);return p;}
-  function start(){refresh();var obs=new MutationObserver(function(){var p=profile();updateDailyBrowser(p);});var app=document.getElementById("app");if(app)obs.observe(app,{childList:true,subtree:true});
-    document.addEventListener("pacificEducationSelectionChanged",refresh);document.addEventListener("pacificEducationCoverageRefresh",refresh);window.addEventListener("storage",function(e){if(e&&/^(pacificEducationLevel|pacificEducationSubject|pacificEducationTerm|pacificEducationCapability|currentDayNumber|pacificEducationAccessStatus)$/.test(e.key||""))refresh();});
+  function start(){
+    refresh();
+    var scheduled=false;
+    var obs=new MutationObserver(function(){
+      if(scheduled)return; scheduled=true;
+      setTimeout(function(){scheduled=false;var p=profile();updateDailyBrowser(p);},80);
+    });
+    var app=document.getElementById("app");if(app)obs.observe(app,{childList:true,subtree:true});
+    document.addEventListener("pacificEducationSelectionChanged",refresh);
+    document.addEventListener("pacificEducationCoverageRefresh",refresh);
+    window.addEventListener("storage",function(e){if(e&&/^(pacificEducationLevel|pacificEducationSubject|pacificEducationTerm|pacificEducationCapability|currentDayNumber|pacificEducationAccessStatus)$/.test(e.key||""))refresh();});
   }
   window.PacificEducationIndividualUserAlignment=Object.freeze({version:VERSION,profile:profile,refresh:refresh,recommendedType:function(){return recommendedType(profile());},productionEligible:false});
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start);else start();
