@@ -51,7 +51,6 @@
         var classId = getClassId();
         if (!classId) return { success:false, error:"Class Reference required", prototype:true };
         var cal = calendar();
-        var classId = getClassId();
         if (!classId) return { success:false, error:"Class Reference required", prototype:true };
         var dayNumber = normaliseDay(day);
         var ids = Array.isArray(indicatorIds) ? indicatorIds.filter(Boolean) : [];
@@ -111,9 +110,12 @@
             return { success: false, error: "Assessment coverage bridge unavailable" };
         }
 
+        var classId = getClassId();
+        if (!classId) return { success:false, error:"Class Reference required", prototype:true };
         var eligibility = bridge.scheduleExam({
             indicatorIds: ids,
             studentId: studentId || null,
+            classId: classId,
             date: label || null
         });
         if (!eligibility.scheduled) {
