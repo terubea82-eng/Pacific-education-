@@ -10,7 +10,11 @@
   var samples=[];
 
   function round(value){return Math.round(Number(value||0));}
-  function collect(){
+  function announceReady(result){
+  try{window.dispatchEvent(new CustomEvent("pacific:performance-ready",{detail:result||{}}));}catch(e){}
+}
+
+function collect(){
     var nav=(window.performance&&performance.getEntriesByType)?performance.getEntriesByType("navigation")[0]:null;
     var paint=(window.performance&&performance.getEntriesByType)?performance.getEntriesByType("paint"):[];
 
