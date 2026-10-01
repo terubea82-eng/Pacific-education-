@@ -84,7 +84,7 @@ test("accessibility runtime preserves production safety state", () => {
 
 test("accessibility runtime announces text scale changes", () => {
   assert.match(runtime, /function setTextScale\(scale\)/);
-  assert.match(runtime, /Text size set to \"\+v\+\"/);
+  assert.match(runtime, /Text size set to \"\+v\+\.\"/);
 });
 
 test("accessibility runtime safely reports speech availability in status", () => {
