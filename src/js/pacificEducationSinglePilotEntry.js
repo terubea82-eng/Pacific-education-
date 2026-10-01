@@ -233,20 +233,14 @@
     showRoute("student");
 
     /* Guided-flow integration: keep Prototype Access as its own step.
-       The guided controller owns visibility and moves to Learning Level only
-       when the user presses Next. */
+       Authorization does not skip the visible Next button. */
     try {
       document.body.classList.add("pe-guided-flow");
-      if (typeof window.PacificEducationGuidedNext === "function") {
-        window.PacificEducationGuidedNext(3);
-      } else {
-        document.body.setAttribute("data-pe-flow-step", "3");
-        var level = document.getElementById("levelSelection");
-        if (level) {
-          level.hidden = false;
-          level.scrollIntoView({behavior:"smooth", block:"start"});
-        }
-      }
+      document.body.setAttribute("data-pe-flow-step", "2");
+      var prototype = document.getElementById("prototypeAccess");
+      if (prototype) prototype.hidden = false;
+      var next = document.getElementById("prototypeNextWrapper");
+      if (next) next.hidden = false;
     } catch (guidedFlowError) {
       console.warn("Pacific Education: prototype access was authorized; guided-flow display recovery failed.", guidedFlowError);
     }
