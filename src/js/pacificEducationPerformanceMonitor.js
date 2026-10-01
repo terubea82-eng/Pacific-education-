@@ -41,7 +41,15 @@
   }
 
   function average(values){if(!values.length)return null;return Math.round(values.reduce(function(a,b){return a+b;},0)/values.length);}
-  function summary(){
+  function capacitySummary(){
+    var valid=samples.filter(function(x){return x&&typeof x.loadEventMs==="number";});
+    var loads=valid.map(function(x){return x.loadEventMs;}).sort(function(a,b){return a-b;});
+    var p95=null;
+    if(loads.length)p95=loads[Math.min(loads.length-1,Math.ceil(loads.length*0.95)-1)];
+    return {sampleCount:valid.length,averageLoadMs:average(loads),p95LoadMs:p95,slowSamples:valid.filter(function(x){return (x.loadEventMs||0)>SLOW_LOAD_MS;}).length};
+  }
+
+function summary(){
     var valid=samples.filter(function(x){return x&&typeof x.loadEventMs==="number";}).map(function(x){return x.loadEventMs;});
     return {sampleCount:samples.length,averageLoadMs:average(valid),slowSamples:samples.filter(function(x){return (x.loadEventMs||0)>SLOW_LOAD_MS||(x.domContentLoadedMs||0)>SLOW_DOM_MS;}).length};
   }
@@ -62,6 +70,7 @@
     data.sampleCount=samples.length;
     data.recentSamples=samples.slice();
     data.summary=summary();
+    data.capacitySummary=capacitySummary();
     window.PacificEducationPerformance=data;
     var status=document.getElementById("systemStatus");
     if(status){
@@ -84,7 +93,7 @@
     }
   }
 
-  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},getSummary:summary,clearSamples:function(){samples=[];return true;},cacheStatus:function(){return new Promise(function(resolve){if(!navigator.serviceWorker||!navigator.serviceWorker.controller){resolve({supported:!!navigator.serviceWorker,controlled:false});return;}var channel=new MessageChannel();channel.port1.onmessage=function(event){resolve(event.data||{});};navigator.serviceWorker.controller.postMessage({type:"PACIFIC_CACHE_STATUS"},[channel.port2]);});}};
+  window.PacificEducationPerformanceMonitor={collect:collect,getSamples:function(){return samples.slice();},getSummary:summary,getCapacitySummary:capacitySummary,clearSamples:function(){samples=[];return true;},cacheStatus:function(){return new Promise(function(resolve){if(!navigator.serviceWorker||!navigator.serviceWorker.controller){resolve({supported:!!navigator.serviceWorker,controlled:false});return;}var channel=new MessageChannel();channel.port1.onmessage=function(event){resolve(event.data||{});};navigator.serviceWorker.controller.postMessage({type:"PACIFIC_CACHE_STATUS"},[channel.port2]);});}};
 
   if(document.readyState==="loading"){
     document.addEventListener("DOMContentLoaded",function(){setTimeout(render,0);});
