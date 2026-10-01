@@ -19,6 +19,11 @@ test("accessibility runtime exposes speech controls and availability status", ()
   assert.match(runtime, /textToSpeechAvailable/);
 });
 
+test("accessibility runtime handles unavailable speech safely", () => {
+  assert.match(runtime, /TEXT_TO_SPEECH_UNAVAILABLE/);
+  assert.match(runtime, /if\(!text\|\|!window\.speechSynthesis\|\|!window\.SpeechSynthesisUtterance\)/);
+});
+
 test("accessibility runtime preserves production safety state", () => {
   assert.match(runtime, /humanTestingRequired:true/);
   assert.match(runtime, /productionApproved:false/);
