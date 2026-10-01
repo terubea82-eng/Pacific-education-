@@ -149,7 +149,7 @@
     var term = document.getElementById("termSelection");
     var capability = document.getElementById("capabilitySelection");
 
-    if (role === "student") {
+    if (role === "student" || role === "teacher" || role === "special-education" || role === "head-of-school") {
       if (learning) learning.hidden = false;
       if (level) level.hidden = false;
       if (subject) subject.hidden = false;
@@ -253,7 +253,7 @@
       var existingClass = existingClassId && roster && typeof roster.getClass === "function" ? roster.getClass(existingClassId) : null;
       if (!existingClass) {
         var entryStatus = document.getElementById("singlePilotRegistrationStatus");
-        if (entryStatus) entryStatus.textContent = "Select an existing Class Reference assigned by the teacher before entering the Student pilot workspace. No class is created automatically.";
+        if (entryStatus) entryStatus.textContent = "Select an existing Class Reference before entering this class-based pilot workspace. No class is created automatically.";
         return false;
       }
     }
@@ -341,8 +341,9 @@
       applyRegistrationLanguage(savedLanguage.interfaceLanguage);
     }
     if (registered && ROLE_ROUTES[savedRole]) {
-      registerRole(savedRole, savedLanguage && savedLanguage.interfaceLanguage);
-    } else {
+      if (!registerRole(savedRole, savedLanguage && savedLanguage.interfaceLanguage)) {
+        hideAllForEntry();
+      }    } else {
       hideAllForEntry();
     }
 
