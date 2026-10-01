@@ -496,7 +496,7 @@
           dayNumber: day,
           classReference: classContext.classId,
           classId: classContext.classId,
-          level: classContext.level || localStorage.getItem("pacificEducationLevel") || "Class 1",
+          level: classContext.level || "",
           subjectId: subject,
           term: localStorage.getItem("pacificEducationTerm") || "Term 1",
           title: "Day " + day + " — " + subject + " Daily Activity",
