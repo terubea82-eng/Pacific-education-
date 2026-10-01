@@ -31,13 +31,16 @@ function speakAssessmentQuestion(question) {    if (typeof speakText === "functi
     reader.onerror=function(){done("");};
     reader.readAsDataURL(file);
 }
+function getAssessmentClassId() { var r=window.PacificEducationTeacherClassRosterContext; return r&&typeof r.getClassId==="function"?String(r.getClassId()||"").trim():""; }
 function saveFormalAssessmentEvidence(type, questionNumber, questionText, selectedAnswer, audioDataUrl) {
     if(!audioDataUrl) return;
+    var classId=getAssessmentClassId();
+    if(!classId) return;
     var key="pacificEducationHomeSubmissions", items=[];
     try{items=JSON.parse(localStorage.getItem(key)||"[]");}catch(e){items=[];}
     var state=window.PacificEducationCore&&typeof window.PacificEducationCore.getState==="function"?window.PacificEducationCore.getState():{};
     var student=state&&state.student?state.student:{};
-    var item={submissionId:"formal-audio-"+type+"-"+Date.now()+"-"+questionNumber,studentId:student.studentId||student.id||"pilot-student-demo",studentName:student.name||"Student",classLevel:localStorage.getItem("pacificEducationLevel")||"",subject:localStorage.getItem("pacificEducationSubject")||"",term:localStorage.getItem("pacificEducationTerm")||"",type:"formal-assessment-audio",activityType:type,day:type==="alphabet"?30:60,answers:[{questionNumber:questionNumber,question:questionText,answer:selectedAnswer||""}],audioDataUrl:audioDataUrl,imageDataUrl:"",status:"pending-special-education-review",mark:null,specialEducationMark:null,specialEducationComment:"",specialEducationReviewedAt:null,teacherGuidance:"",teacherAuthorizationComment:"",teacherAuthorizedAt:null,submittedAt:new Date().toISOString(),reviewedAt:null};
+    var item={submissionId:"formal-audio-"+type+"-"+Date.now()+"-"+questionNumber,studentId:student.studentId||student.id||"pilot-student-demo",studentName:student.name||"Student",classId:classId,classLevel:localStorage.getItem("pacificEducationLevel")||"",subject:localStorage.getItem("pacificEducationSubject")||"",term:localStorage.getItem("pacificEducationTerm")||"",type:"formal-assessment-audio",activityType:type,day:type==="alphabet"?30:60,answers:[{questionNumber:questionNumber,question:questionText,answer:selectedAnswer||""}],audioDataUrl:audioDataUrl,imageDataUrl:"",status:"pending-special-education-review",mark:null,specialEducationMark:null,specialEducationComment:"",specialEducationReviewedAt:null,teacherGuidance:"",teacherAuthorizationComment:"",teacherAuthorizedAt:null,submittedAt:new Date().toISOString(),reviewedAt:null};
     items.push(item);
     localStorage.setItem(key,JSON.stringify(items.slice(-100)));
     var f=window.PacificEducationFirebase;
@@ -94,10 +97,12 @@ function recordFormalAssessmentProgress(type, percentage) {
 }
 
 function finishAssessment(type, assessmentScore, total) {
+    const classId = getAssessmentClassId();
+    if (!classId) { console.warn("Pacific Education: assessment completion blocked because no Class Reference is selected."); return; }
     const percentage = Math.round((assessmentScore / total) * 100);
     recordFormalAssessmentProgress(type, percentage);
     const results = JSON.parse(localStorage.getItem("pacificEducationAssessments") || "[]");
-    results.push({ assessment: type, score: assessmentScore, total: total, percentage: percentage, date: new Date().toISOString() });
+    results.push({ assessment: type, score: assessmentScore, total: total, percentage: percentage, classId: classId, date: new Date().toISOString() });
     localStorage.setItem("pacificEducationAssessments", JSON.stringify(results));
 
     try {
@@ -105,6 +110,7 @@ function finishAssessment(type, assessmentScore, total) {
         if (firebaseService && typeof firebaseService.saveProgress === "function") {
             firebaseService.saveProgress({
                 progressId: "assessment-" + String(type) + "-" + String(Date.now()),
+                classId: classId,
                 activityId: "assessment-" + String(type),
                 status: percentage >= 80 ? "passed" : "needs_practice",
                 score: percentage
