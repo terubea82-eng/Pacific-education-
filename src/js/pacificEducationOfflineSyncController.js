@@ -45,6 +45,24 @@ function clearAfterServerAcknowledgement(ack){
  if(!r||typeof r.clearQueue!=="function")return{success:false,reason:"OFFLINE_RUNTIME_UNAVAILABLE",prototype:true};
  return{success:r.clearQueue().success,cleared:true,productionApproved:false,prototype:true};
 }
+function conflictKey(item){
+    item=item||{};
+    return [item.type||"",item.lessonId||"",item.dayNumber==null?"":item.dayNumber].join("|");
+  }
+
+  function detectConflicts(items){
+    var seen={},conflicts=[];
+    (items||[]).forEach(function(item){
+      var key=conflictKey(item);
+      if(!key)return;
+      if(seen[key] && seen[key].completed!==item.completed){
+        conflicts.push({key:key,first:seen[key],second:item,requiresReview:true});
+      }else if(!seen[key])seen[key]=item;
+    });
+    return conflicts;
+  }
+
 function status(){return inspect();}
-window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
+window.PacificEducationOfflineSyncController=Object.freeze({name:"PacificEducationOfflineSyncController",version:VERSION,inspect:inspect,buildSyncBatch:buildSyncBatch,
+    detectConflicts:detectConflicts,attemptSync:attemptSync,clearAfterServerAcknowledgement:clearAfterServerAcknowledgement,retryPlan:retryPlan,status:status});
 })(window);
