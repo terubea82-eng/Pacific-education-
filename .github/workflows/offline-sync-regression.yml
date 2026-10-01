@@ -4,23 +4,27 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - "manifest.webmanifest"
       - "service-worker.js"
       - "src/js/pacificEducationOfflineRuntime.js"
       - "src/js/pacificEducationOfflineSyncController.js"
       - "tests/offline-sync-regression.test.js"
       - "tests/offline-sync-ui-regression.test.js"
       - "tests/service-worker-regression.test.js"
+      - "tests/pwa-regression.test.js"
       - "docs/LOW-CONNECTIVITY-TESTING.md"
       - "package.json"
       - ".github/workflows/offline-sync-regression.yml"
   pull_request:
     paths:
+      - "manifest.webmanifest"
       - "service-worker.js"
       - "src/js/pacificEducationOfflineRuntime.js"
       - "src/js/pacificEducationOfflineSyncController.js"
       - "tests/offline-sync-regression.test.js"
       - "tests/offline-sync-ui-regression.test.js"
       - "tests/service-worker-regression.test.js"
+      - "tests/pwa-regression.test.js"
       - "docs/LOW-CONNECTIVITY-TESTING.md"
       - "package.json"
       - ".github/workflows/offline-sync-regression.yml"
