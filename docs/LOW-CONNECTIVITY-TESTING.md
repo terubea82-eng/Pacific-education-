@@ -128,3 +128,19 @@ These are prototype/manual verification procedures. Passing a local test does **
 - Confirm the cache version and entry/core cache counts are displayed when available.
 - Repeat after a service-worker update and record the observed cache state.
 - If the page is not controlled by a service worker, record that state rather than treating it as a cache failure.
+
+
+## Voice preference accessibility verification
+
+For the accessibility and voice-first checks, record evidence for the voice preference control:
+
+1. Confirm the Voice preference control is reachable by keyboard and has a visible focus indicator.
+2. Confirm the control exposes an accessible ON/OFF state through aria-pressed.
+3. Enable voice preference and confirm the setting persists after a page reload.
+4. Disable voice preference and confirm the disabled state persists after a page reload.
+5. Confirm the control's accessible label changes between enabling and disabling states.
+6. Confirm selectable controls can be announced when voice preference is enabled.
+7. Confirm the control remains usable when speech synthesis is unavailable; the application must not report speech success when the browser does not provide speech synthesis.
+8. Record browser/version, device, operating system, speech availability, keyboard/assistive technology used, and the relevant app commit.
+
+This is a manual verification procedure. It does not by itself establish accessibility conformance or production approval.
