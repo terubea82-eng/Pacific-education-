@@ -29,7 +29,14 @@
   function capability(){var c=String(read("pacificEducationCapability","expected")).toLowerCase();return CAPABILITY_TYPE[c]?c:"expected";}
   function profile(){
     var u=user(),a=access(u),d=Math.max(1,Math.min(365,number("currentDayNumber",1)));
-    var p={paceduId:paceduId(u),role:role(u),level:read("pacificEducationLevel","Class 1"),subject:read("pacificEducationSubject","English"),term:read("pacificEducationTerm","Term 1"),capability:capability(),dayNumber:d,accessStatus:a.status,fullAccess:a.full,interfaceLanguage:String(u.prefs.interfaceLanguage||"English"),learningLanguage:String(u.prefs.learningLanguage||read("pacificEducationLearningLanguage","English")),textScale:read("pacificEducationTextScale","normal"),updatedAt:new Date().toISOString()};
+    var classId="",classLevel="";
+    try{
+      var roster=window.PacificEducationTeacherClassRosterContext;
+      classId=roster&&typeof roster.getClassId==="function"?String(roster.getClassId()||"").trim():"";
+      var selected=classId&&roster&&typeof roster.getClass==="function"?roster.getClass(classId):null;
+      classLevel=selected&&selected.level?String(selected.level):"";
+    }catch(e){}
+    var p={paceduId:paceduId(u),role:role(u),classId:classId,level:classLevel||read("pacificEducationLevel",""),subject:read("pacificEducationSubject",""),term:read("pacificEducationTerm",""),capability:capability(),dayNumber:d,accessStatus:a.status,fullAccess:a.full,interfaceLanguage:String(u.prefs.interfaceLanguage||"English"),learningLanguage:String(u.prefs.learningLanguage||read("pacificEducationLearningLanguage","English")),textScale:read("pacificEducationTextScale","normal"),updatedAt:new Date().toISOString()};
     try{localStorage.setItem(PROFILE_KEY,JSON.stringify(p));}catch(e){}
     return p;
   }
