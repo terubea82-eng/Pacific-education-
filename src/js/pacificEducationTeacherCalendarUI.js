@@ -12,7 +12,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
 
     function calendar() {
         return window.PacificEducationTeacherCalendar || null;
@@ -158,9 +158,20 @@
         }
     }
 
+    function selectedClassId() {
+        try {
+            var roster = window.PacificEducationTeacherClassRosterContext;
+            var id = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+            return id && roster.getClass(id) ? id : "";
+        } catch (e) { return ""; }
+    }
+
     function refreshDistribution() {
         var engine = window.PacificEducationAchievementDistributionEngine;
         if (!engine || typeof engine.distribute !== "function") return;
+        var classId = selectedClassId();
+        var node = get("pacificEducationDistributionStatus");
+        if (!classId) { if (node) node.textContent = "Select an existing Class Reference before distributing curriculum."; return; }
 
         var level =
             window.localStorage.getItem("pacificEducationLevel") || "Class 1";
@@ -170,6 +181,7 @@
             window.localStorage.getItem("pacificEducationTerm") || "Term 1";
 
         var result = engine.distribute({
+            classId: classId,
             level: level,
             subjectId: subject,
             term: term,
@@ -177,7 +189,6 @@
             endDay: 365
         });
 
-        var node = get("pacificEducationDistributionStatus");
         if (node) {
             node.textContent =
                 "Learning days available: " +
