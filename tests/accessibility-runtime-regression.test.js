@@ -18,6 +18,7 @@ test("accessibility runtime persists and restores text scale", () => {
   assert.match(runtime, /localStorage\.setItem/);
   assert.match(runtime, /DOMContentLoaded/);
   assert.match(runtime, /setTextScale\(readScale\(\)\)/);
+  assert.match(runtime, /Text size updated in another tab\./);
 });
 
 test("accessibility runtime persists and recognizes the UI voice preference", () => {
