@@ -76,10 +76,22 @@ jobs:
       - name: Verify pilot APK outputs
         working-directory: android
         run: |
-          test -s app/build/outputs/apk/debug/app-debug.apk
-          test -s app/build/outputs/apk/release/app-release.apk || test -s app/build/outputs/apk/release/app-release-unsigned.apk
-          "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging app/build/outputs/apk/debug/app-debug.apk | grep -F "package: name='fj.pacificeducation.app'"
-          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose app/build/outputs/apk/debug/app-debug.apk
+          set -e
+          debug_apk="app/build/outputs/apk/debug/app-debug.apk"
+          release_apk="app/build/outputs/apk/release/app-release.apk"
+          release_unsigned="app/build/outputs/apk/release/app-release-unsigned.apk"
+          test -s "$debug_apk"
+          test -s "$release_apk" || test -s "$release_unsigned"
+          debug_badging=$("$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$debug_apk")
+          printf '%s\n' "$debug_badging" | grep -Eq "package: name='fj\.pacificeducation\.app(\.debug)?'"
+          if [ -s "$release_apk" ]; then
+            release_badging=$("$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$release_apk")
+            printf '%s\n' "$release_badging" | grep -F "package: name='fj.pacificeducation.app'"
+            "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$release_apk"
+          else
+            "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$release_unsigned" | grep -F "package: name='fj.pacificeducation.app'"
+          fi
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$debug_apk"
       - name: Identify release signing state
         run: |
           if [ -s "${RUNNER_TEMP}/pacific-education-release.jks" ]; then echo "PILOT_SIGNING_STATE=signed" >> "${GITHUB_ENV}"; else echo "PILOT_SIGNING_STATE=unsigned" >> "${GITHUB_ENV}"; fi
