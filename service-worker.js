@@ -1,7 +1,7 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v5";
+const CACHE_NAME="pacific-education-shell-v6";
 const ENTRY="/Pacific-education-/src/index.html";
 const CORE_ASSETS=[
   "/Pacific-education-/js/pacificEducationCore.js",
