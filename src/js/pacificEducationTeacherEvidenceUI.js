@@ -6,7 +6,7 @@
 (function(window, document) {
     "use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.1.0";
     var STATES = ["not-started", "taught", "practised", "assessed", "covered"];
 
     function registry() {
@@ -20,6 +20,8 @@
     function renderer() {
         return window.PacificEducationCurriculumLessonRenderer || null;
     }
+
+    function rosterContext() { return window.PacificEducationTeacherClassRosterContext || null; }
 
     function studentContext() {
         return window.PacificEducationStudentCoverageContext || null;
@@ -50,6 +52,9 @@
         var target = document.getElementById(targetId || "pacificEducationTeacherEvidence");
         if (!target) return { success: false, error: "Teacher evidence target unavailable" };
 
+        var roster = rosterContext();
+        var classCtx = roster && typeof roster.getContext === "function" ? roster.getContext() : null;
+        if (!classCtx || !classCtx.classId) { target.innerHTML = "<p>Select an existing Class Reference before entering curriculum evidence.</p>"; return { success:false, error:"Class Reference required" }; }
         var items = indicators();
 
         target.innerHTML =
@@ -124,6 +129,10 @@
                 var result = e.record({
                     indicatorId: item.id,
                     studentId: (studentContext() && typeof studentContext().getStudentId === "function" ? studentContext().getStudentId() : get("pacificEducationStudentId", null)),
+                    classId: classCtx.classId,
+                    level: classCtx.level || null,
+                    subjectId: get("pacificEducationEvidenceSubject", null),
+                    term: get("pacificEducationEvidenceTerm", null),
                     assessmentId: null,
                     evidenceType: "teacher-entry",
                     status: status,
