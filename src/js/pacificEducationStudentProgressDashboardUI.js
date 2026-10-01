@@ -146,7 +146,7 @@
         var term = "Term 1";
 
         try {
-            level = window.localStorage.getItem("pacificEducationLevel") || "";
+            level = (function(){var rr=window.PacificEducationTeacherClassRosterContext;var id=rr&&typeof rr.getClassId==="function"?String(rr.getClassId()||"").trim():"";var cc=id&&rr&&typeof rr.getClass==="function"?rr.getClass(id):null;return cc&&cc.level?String(cc.level):"";})();
             subjectId = window.localStorage.getItem("pacificEducationSubject") || "English";
             term = window.localStorage.getItem("pacificEducationTerm") || "Term 1";
         } catch (ignore2) {}
