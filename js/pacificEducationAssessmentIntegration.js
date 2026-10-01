@@ -83,6 +83,23 @@
     }
 
 
+    function getSelectedClassId() {
+
+        const roster =
+            window.PacificEducationTeacherClassRosterContext;
+
+        if (
+            roster &&
+            typeof roster.getClassId === "function"
+        ) {
+            const classId = roster.getClassId();
+            return classId ? String(classId).trim() : null;
+        }
+
+        return null;
+    }
+
+
     function recordAssessment(assessment) {
 
         const core = getCore();
@@ -105,10 +122,28 @@
             return false;
         }
 
-        return core.assessments.add(assessment);
+        const classId =
+            assessment.classId ||
+            getSelectedClassId();
+
+        if (!classId) {
+            console.warn(
+                "Pacific Education: assessment blocked because no existing Class Reference is selected."
+            );
+            return false;
+        }
+
+        return core.assessments.add(
+            Object.assign(
+                {},
+                assessment,
+                {
+                    classId: String(classId)
+                }
+            )
+        );
 
     }
-
 
     /* =====================================================
        ENGINE CONNECTIONS
