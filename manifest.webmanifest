@@ -17,12 +17,12 @@
     {
       "name": "Daily Activities",
       "short_name": "Daily Activities",
-      "url": "/Pacific-education-/src/index.html#dailyActivities"
+      "url": "/Pacific-education-/src/index.html#dailyLesson"
     },
     {
       "name": "Assessments",
       "short_name": "Assessments",
-      "url": "/Pacific-education-/src/index.html#assessment"
+      "url": "/Pacific-education-/src/index.html#assessments"
     }
   ],
   "icons": [
