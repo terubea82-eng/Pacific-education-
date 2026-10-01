@@ -34,9 +34,8 @@
         var dayNumber = Number(input.dayNumber || 1);
 
         try {
-            level = level || localStorage.getItem("pacificEducationLevel") || "Class 1";
-            subjectId = subjectId || localStorage.getItem("pacificEducationSubject") || "English";
-            term = term || localStorage.getItem("pacificEducationTerm") || "Term 1";
+            subjectId = subjectId || localStorage.getItem("pacificEducationSubject") || "";
+            term = term || localStorage.getItem("pacificEducationTerm") || "";
             dayNumber = Number(localStorage.getItem("pacificEducationCurrentDay") || dayNumber || 1);
         } catch (ignore) {}
 
