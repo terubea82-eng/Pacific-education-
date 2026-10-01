@@ -211,11 +211,31 @@
         body += '<p>Select or enter your answer:</p><input id="peWrittenAnswer" placeholder="Type your selected answer"><button type="button" id="peActivitySubmit">Submit Answer</button>';
       }
     } else if (type === "matching") {
-      body += '<input id="peMatchAnswer" placeholder="Enter your matching answer"><button type="button" id="peActivitySubmit">Submit Match</button>';
+      var source = lesson && lesson.activity ? lesson.activity : {};
+      var pairs = Array.isArray(source.matchingPairs) ? source.matchingPairs.slice(0, 6) : [];
+      body += '<p>Match each item with its correct answer. You may type the matches or give your response by voice.</p>';
+      if (pairs.length) {
+        body += '<div id="peMatchingQuestions" role="group" aria-label="Matching questions">';
+        pairs.forEach(function(pair, index) {
+          var left = pair && (pair.left || pair.question || pair.prompt) || "";
+          body += '<div class="pe-matching-row" style="margin:10px 0;padding:10px;border:1px solid currentColor;">' +
+            '<label for="peMatchAnswer' + index + '"><strong>' + (index + 1) + '. ' + escape(left) + '</strong></label>' +
+            '<input id="peMatchAnswer' + index + '" class="peMatchAnswer" type="text" placeholder="Write the matching answer" aria-label="Answer for matching question ' + (index + 1) + '" style="display:block;width:100%;max-width:760px;margin-top:6px;box-sizing:border-box;">' +
+            '</div>';
+        });
+        body += '</div>';
+      } else {
+        body += '<div id="peMatchingQuestions" role="group" aria-label="Matching answer spaces">';
+        for (var mi = 0; mi < 3; mi += 1) {
+          body += '<label for="peMatchAnswer' + mi + '" style="display:block;margin:10px 0;"><strong>Match ' + (mi + 1) + '</strong><input id="peMatchAnswer' + mi + '" class="peMatchAnswer" type="text" placeholder="Write the matching answer" aria-label="Matching answer ' + (mi + 1) + '" style="display:block;width:100%;max-width:760px;box-sizing:border-box;"></label>';
+        }
+        body += '</div>';
+      }
+      body += '<button type="button" id="peActivitySubmit">Submit Matching Answers</button>';
     } else {
       var rows = type === "short_answer" ? 3 : 8;
-      var instruction = type === "short_answer" ? "Write a short answer." : "Write a detailed answer with an explanation or example.";
-      body += '<p>' + instruction + '</p><textarea id="peWrittenAnswer" rows="' + rows + '" maxlength="' + (type === "short_answer" ? 500 : 2000) + '"></textarea><button type="button" id="peActivitySubmit">Submit Answer</button>';
+      var instruction = type === "short_answer" ? "Write a short answer. You may use the space below or respond by voice." : "Write a detailed answer with an explanation or example. You may use the space below or respond by voice.";
+      body += '<p>' + instruction + '</p><textarea id="peWrittenAnswer" rows="' + rows + '" maxlength="' + (type === "short_answer" ? 500 : 2000) + '" placeholder="' + (type === "short_answer" ? "Type your short answer here." : "Type your long answer here. Include an explanation or example.") + '"></textarea><button type="button" id="peActivitySubmit">Submit Answer</button>';
     }
 
     body += '</div>';
@@ -274,8 +294,17 @@
 
     var submit = document.getElementById("peActivitySubmit");
     if (submit) submit.addEventListener("click", function() {
-      var input = document.getElementById(type === "matching" ? "peMatchAnswer" : "peWrittenAnswer");
-      complete(type, input ? input.value : "");
+      if (type === "matching") {
+        var matchInputs = document.querySelectorAll(".peMatchAnswer");
+        var matches = [];
+        for (var mi = 0; mi < matchInputs.length; mi += 1) {
+          matches.push(String(matchInputs[mi].value || "").trim());
+        }
+        complete(type, matches.join(" | "));
+      } else {
+        var input = document.getElementById("peWrittenAnswer");
+        complete(type, input ? input.value : "");
+      }
     });
 
     var choiceButtons = document.querySelectorAll(".pe-multiple-choice-option");
