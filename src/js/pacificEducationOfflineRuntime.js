@@ -32,7 +32,7 @@ function getQueueConflictCandidates(){
 }
 function getQueueStatus(){
  var q=getQueue();
- return {count:q.count||0,items:q.items||[],prototype:true};
+ return {count:q.length,items:q.slice(),prototype:true};
 }
 function getQueue(){return{items:q(),count:q().length,prototype:true};}
 function clearQueue(){return{success:save([]),prototype:true};}
