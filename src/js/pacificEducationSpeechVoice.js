@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1008 */
+/* Pacific Education — Speech Voice Controller v1009 */
 (function (window) {
   "use strict";
 
@@ -127,6 +127,32 @@
     document.addEventListener(eventName, unlockSpeechOnInteraction, { once: true, capture: true, passive: true });
   });
 
+  function bindVoiceButtons() {
+    var welcome = document.getElementById("pacificEducationWelcomeVoiceButton");
+    var stop = document.getElementById("pacificEducationStopSpeechButton");
+
+    if (welcome && welcome.getAttribute("data-pe-welcome-voice-bound") !== "true") {
+      welcome.setAttribute("data-pe-welcome-voice-bound", "true");
+      welcome.addEventListener("click", function (event) {
+        if (event) event.preventDefault();
+        speakText("Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.");
+        return false;
+      });
+    }
+
+    if (stop && stop.getAttribute("data-pe-stop-voice-bound") !== "true") {
+      stop.setAttribute("data-pe-stop-voice-bound", "true");
+      stop.addEventListener("click", function (event) {
+        if (event) event.preventDefault();
+        try {
+          if (window.speechSynthesis) window.speechSynthesis.cancel();
+        } catch (_) {}
+        pendingText = "";
+        return false;
+      });
+    }
+  }
+
   window.PacificEducationSpeech = {
     chooseVoice: chooseVoice,
     speakText: speakText,
@@ -140,5 +166,8 @@
     window.speechSynthesis.addEventListener("voiceschanged", retryPendingSpeech);
   }
 
+  bindVoiceButtons();
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindVoiceButtons);
+  else setTimeout(bindVoiceButtons, 0);
   chooseVoice();
 })(window);
