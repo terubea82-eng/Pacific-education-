@@ -50,56 +50,69 @@
 
     pendingText = text;
     var synth = window.speechSynthesis;
-    var voice = selectedVoice || chooseVoice();
 
     try {
-      // Mobile Chrome/Android can leave the synthesis queue paused after a
-      // previous navigation. Resume before every user-triggered utterance.
+      // Keep speak() inside the caller's user-gesture task. Some Android
+      // Chrome/WebView versions reject speech when it is deferred by a timer.
       synth.cancel();
       if (typeof synth.resume === "function") synth.resume();
 
-      // Android Chrome/WebView can drop an utterance when speak() is called
-      // in the same task immediately after cancel(). Schedule playback on the
-      // next short timer so the queue has time to reset.
-      setTimeout(function () {
-        try {
-          if (!window.speechSynthesis ||
-              typeof window.SpeechSynthesisUtterance !== "function") return;
+      var currentVoice = selectedVoice || chooseVoice();
+      var utterance = new window.SpeechSynthesisUtterance(text);
+      if (currentVoice) utterance.voice = currentVoice;
+      utterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
+      utterance.rate = 0.95;
+      utterance.pitch = 1;
+      utterance.volume = 1;
 
-          var currentSynth = window.speechSynthesis;
-          if (typeof currentSynth.resume === "function") currentSynth.resume();
+      utterance.onstart = function () {
+        pendingText = text;
+      };
+      utterance.onend = function () {
+        pendingText = "";
+      };
+      utterance.onerror = function (event) {
+        var code = event && event.error;
+        console.warn("Pacific Education speech error:", code);
+        if (pendingText !== text) return;
 
-          var currentVoice = selectedVoice || chooseVoice();
-          var utterance = new window.SpeechSynthesisUtterance(text);
-          if (currentVoice) utterance.voice = currentVoice;
-          utterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
-          utterance.rate = 0.95;
-          utterance.pitch = 1;
-          utterance.volume = 1;
-
-          utterance.onstart = function () {
-            pendingText = text;
-          };
-          utterance.onend = function () {
-            pendingText = "";
-          };
-          utterance.onerror = function (event) {
-            console.warn("Pacific Education speech error:", event && event.error);
-            if (pendingText === text && event && event.error === "interrupted") {
+        // If a selected device voice is rejected, retry once with the
+        // browser's default English TTS voice.
+        if (currentVoice && code && code !== "interrupted") {
+          pendingText = "";
+          selectedVoice = null;
+          try {
+            synth.cancel();
+            if (typeof synth.resume === "function") synth.resume();
+            var fallback = new window.SpeechSynthesisUtterance(text);
+            fallback.lang = "en-US";
+            fallback.rate = 0.95;
+            fallback.pitch = 1;
+            fallback.volume = 1;
+            fallback.onstart = function () { pendingText = text; };
+            fallback.onend = function () { pendingText = ""; };
+            fallback.onerror = function (retryEvent) {
+              console.warn("Pacific Education fallback speech error:", retryEvent && retryEvent.error);
               pendingText = "";
-            }
-          };
-
-          currentSynth.speak(utterance);
-          if (typeof currentSynth.resume === "function") currentSynth.resume();
-        } catch (error) {
-          console.error("Pacific Education delayed speech failed:", error);
+            };
+            synth.speak(fallback);
+            if (typeof synth.resume === "function") synth.resume();
+            return;
+          } catch (retryError) {
+            console.error("Pacific Education fallback speech failed:", retryError);
+          }
         }
-      }, 80);
+        pendingText = "";
+      };
 
+      // Critical: do not defer this call with setTimeout; Android/browser
+      // user-activation rules can otherwise suppress speech from button taps.
+      synth.speak(utterance);
+      if (typeof synth.resume === "function") synth.resume();
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
+      pendingText = "";
       return false;
     }
   }
