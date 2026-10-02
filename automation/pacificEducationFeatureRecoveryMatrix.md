@@ -179,3 +179,36 @@ A feature is considered recovered only when:
 - accessibility/voice behavior remains available where required;
 - the recovery result is recorded;
 - unresolved failures are clearly surfaced rather than hidden.
+
+
+## Redundant feature-line requirement
+
+For critical user-facing features, a single implementation line must never be the only path.
+
+### Welcome and greeting redundancy
+
+The greeting system must have multiple independent recovery paths:
+
+1. **Primary greeting path** — normal welcome voice/runtime.
+2. **Secondary greeting path** — alternate voice invocation using the same approved welcome text.
+3. **Text fallback path** — visible greeting remains available if speech fails.
+4. **Accessibility path** — Hear Welcome control can invoke the greeting independently.
+5. **Installed-app path** — PWA/standalone startup can announce the welcome independently.
+6. **Navigation-safe path** — failure of every greeting path must not block the Next/navigation flow.
+
+### Redundancy rule
+
+For every critical feature, define at least:
+- a primary execution path;
+- an independent secondary path;
+- a user-visible fallback;
+- a health check for each path;
+- a recovery/recheck sequence.
+
+A failure in one greeting line must automatically try the next valid greeting path before declaring the feature unavailable.
+
+### User experience rule
+
+The user should not see a technical failure merely because one implementation path broke. The system should transparently fail over, preserve the intended function where possible, and log which path was used.
+
+The same redundancy pattern should be applied to other critical functions such as Next navigation, Registration, Daily Activities, Practice, Assessments, connectivity/sync, and accessibility controls.
