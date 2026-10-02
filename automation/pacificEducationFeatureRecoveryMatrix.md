@@ -113,3 +113,69 @@ For every push:
 6. Build the Android pilot.
 7. Deploy Pages only when the relevant deployment checks pass.
 8. Report remaining failures; do not label the pilot complete from a partial pass.
+
+
+## User-protection recovery layer
+
+15. **Pre-failure detection**
+   - Check dependencies before opening a feature, not only after a button fails.
+   - If a dependency is unavailable, show a clear status and use the approved fallback where possible.
+
+16. **Automatic retry**
+   - Retry transient operations with bounded attempts.
+   - Do not create duplicate records when retrying a write.
+   - Preserve the user's current workflow step during retries.
+
+17. **Safe fallback**
+   - If repair cannot complete immediately, keep the user inside a usable part of the app.
+   - Provide the next safe action instead of exposing a blank or broken page.
+   - Voice must announce the fallback when mandatory voice is active.
+
+18. **Dependency tracing**
+   - Record which feature, script, service, data context, or workflow dependency caused the failure.
+   - Re-test the smallest affected dependency chain before re-running the full suite.
+
+19. **State protection**
+   - Never discard valid learner progress because a UI component fails.
+   - Never silently overwrite newer data during synchronization.
+   - Preserve Class Reference, Learning Level, Subject, and Term relationships.
+
+20. **Repair escalation**
+   - Automatic repair handles safe UI/runtime/cache failures.
+   - Failed automatic repair creates a diagnostic record for Owner/Technician review.
+   - Security, privacy, safeguarding, payment, ownership, curriculum approval, and production-gate decisions require explicit controlled review.
+
+21. **User-facing recovery message**
+   - Replace technical errors with a simple message such as: “This feature needs a quick repair. Your work is being protected.”
+   - Provide Retry/Continue where appropriate.
+   - Do not expose stack traces or internal credentials/configuration.
+
+22. **Recovery verification**
+   - After repair, test the exact action that failed.
+   - Then test its immediate dependents.
+   - Only after both pass should the workflow continue to broader regression tests.
+
+23. **Failure containment**
+   - One damaged feature must not disable unrelated features.
+   - A failure in Voice must not disable learning navigation.
+   - A failure in Daily Activities must not corrupt Practice or Assessment context.
+   - A failure in connectivity must not erase offline-safe pilot state.
+
+24. **Repair audit trail**
+   - Record detection time, feature, dependency, action, result, retry count, and recheck result.
+   - Keep repair records separate from learner-facing content and personal mailbox data.
+
+## Expanded automatic sequence
+
+**Detect → Protect user state → Isolate dependency → Retry safe operation → Apply bounded repair/fallback → Re-test failed action → Re-test immediate dependents → Record result → Continue or escalate.**
+
+## Recovery acceptance criteria
+
+A feature is considered recovered only when:
+- the original user action works again;
+- its immediate dependent feature still works;
+- protected state remains intact;
+- no duplicate Class Reference or duplicate submission is created;
+- accessibility/voice behavior remains available where required;
+- the recovery result is recorded;
+- unresolved failures are clearly surfaced rather than hidden.
