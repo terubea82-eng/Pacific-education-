@@ -280,3 +280,21 @@ Technician handling must remain feature-scoped and dependency-aware:
 **Detect → isolate → protect state → select healthy line → fail over → verify user action → verify dependent feature → log recovery → continue monitoring.**
 
 This makes the Technician the operational handler of broken feature lines while preserving the Owner's authorization and governance controls.
+
+
+## Technician responsibility
+
+The pilot Technician is the operational recovery role for the feature-line system. The Technician is responsible for monitoring feature health, identifying failed execution lines, protecting user state, activating the approved secondary path or safe fallback, re-testing the affected feature and immediate dependents, and recording the recovery result.
+
+Technician handling must remain feature-scoped and dependency-aware:
+- Do not rewrite another feature's data to repair a failed feature.
+- Do not create duplicate Class References while repairing class/teacher/curriculum flows.
+- Do not bypass Owner, production, payment, privacy, safeguarding, curriculum-verification, or external-approval gates.
+- Do not expose credentials, secrets, or sensitive pilot information.
+- A Technician repair is not considered successful until the affected user action is re-tested and passes.
+
+### Automatic Technician sequence
+
+**Detect → isolate → protect state → select healthy line → fail over → verify user action → verify dependent feature → log recovery → continue monitoring.**
+
+This makes the Technician the operational handler of broken feature lines while preserving the Owner's authorization and governance controls.
