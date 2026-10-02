@@ -45,6 +45,9 @@
   function enforceGuided(){
     var step=currentGuidedStep();
     if(step===null) return false;
+    // Guided pages already have one authoritative Voice Instruction + manual Next
+    // renderer in index.html. Do not inject a second navigation block.
+    return true;
     var wrapper=document.querySelector(".pacific-flow-next button:not([hidden])");
     if(!wrapper) return false;
     var sectionId=wrapper.closest(".pacific-flow-next") && wrapper.closest(".pacific-flow-next").id;
