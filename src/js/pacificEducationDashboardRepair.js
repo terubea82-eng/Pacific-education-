@@ -64,10 +64,36 @@
     }
   }
 
+  function ensurePilotClassContext(){
+    var r = window.PacificEducationTeacherClassRosterContext;
+    if(!r) return false;
+    try{
+      var id = r.getClassId && r.getClassId();
+      if(id && r.getClass && r.getClass(id)) return true;
+      /*
+       * The controlled pilot needs one pre-defined synthetic Class Reference
+       * so the student flow can actually open Day 1. This is a system pilot
+       * fixture, not a user-created class. Never replace an existing class.
+       */
+      var classes = r.getClasses && r.getClasses();
+      var keys = classes && typeof classes === "object" ? Object.keys(classes) : [];
+      if(keys.length){
+        r.setClassId(keys[0]);
+        return !!(r.getClass && r.getClass(keys[0]));
+      }
+      if(typeof r.createClass !== "function") return false;
+      var created = r.createClass(PILOT_CLASS,"Class 1","PILOT-TEACHER-001","Pilot");
+      if(!created || !created.success) return false;
+      if(typeof r.setClassId === "function") r.setClassId(PILOT_CLASS);
+      return !!(r.getClass && r.getClass(PILOT_CLASS));
+    }catch(e){ return false; }
+  }
+
   function ensureTeacherClass(){
     var r = window.PacificEducationTeacherClassRosterContext;
     if(!r) return;
     try{
+      ensurePilotClassContext();
       var id = r.getClassId && r.getClassId();
       if(!id) return;
       id = r.getClassId ? r.getClassId() : "";
@@ -76,6 +102,7 @@
   }
 
   function refreshStudent(){
+    ensurePilotClassContext();
     ensureStudent();
     var ui = window.PacificEducationStudentProgressDashboardUI;
     if(ui && typeof ui.render === "function") ui.render("pacificEducationStudentProgressDashboard");
