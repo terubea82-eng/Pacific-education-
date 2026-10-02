@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1012 */
+/* Pacific Education — Speech Voice Controller v1013 */
 (function (window) {
   "use strict";
 
@@ -47,7 +47,8 @@
 
     if (!text || !window.speechSynthesis ||
         typeof window.SpeechSynthesisUtterance !== "function") {
-      console.warn("Pacific Education speech unavailable in this browser/runtime.");\n      try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = "Voice engine unavailable in this browser or device."; } catch (_) {}
+      console.warn("Pacific Education speech unavailable in this browser/runtime.");
+      try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = "Voice engine unavailable in this browser or device."; } catch (_) {}
       return false;
     }
 
@@ -79,7 +80,8 @@
       };
       utterance.onerror = function (event) {
         var code = event && event.error;
-        console.warn("Pacific Education speech error:", code);\n        try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = "Voice error: " + (code || "unknown") + "."; } catch (_) {}
+        console.warn("Pacific Education speech error:", code);
+        try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = "Voice error: " + (code || "unknown") + "."; } catch (_) {}
         if (pendingText !== text) return;
 
         // If a selected device voice is rejected, retry once with the
