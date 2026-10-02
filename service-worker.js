@@ -1,10 +1,11 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v17";
+const CACHE_NAME="pacific-education-shell-v18";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
+const RUNTIME_REPAIR="/Pacific-education-/src/js/pacificEducationPilotRuntimeRepair.js";
 
 const CORE_ASSETS=[
   "/Pacific-education-/js/pacificEducationCore.js",
@@ -16,6 +17,7 @@ const CORE_ASSETS=[
   "/Pacific-education-/src/js/pacificEducationOfflineRuntime.js",
   "/Pacific-education-/src/js/pacificEducationOfflineSyncController.js",
   "/Pacific-education-/src/js/pacificEducationPerformanceMonitor.js",
+  "/Pacific-education-/src/js/pacificEducationPilotRuntimeRepair.js",
   "/Pacific-education-/js/pacificEducationAccessibilitySupport.js"
 ];
 
@@ -29,6 +31,20 @@ function fetchWithTimeout(request,timeoutMs){
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),timeoutMs);
   return fetch(request,{cache:"no-store",signal:controller.signal}).finally(()=>clearTimeout(timer));
+}
+
+function injectRuntimeRepair(response){
+  if(!response||!response.ok)return response;
+  const type=response.headers.get("content-type")||"";
+  if(type.indexOf("text/html")===-1)return response;
+  return response.text().then(function(html){
+    if(html.indexOf("pacificEducationPilotRuntimeRepair.js")!==-1)return new Response(html,{status:response.status,statusText:response.statusText,headers:response.headers});
+    const tag='<script src="../src/js/pacificEducationPilotRuntimeRepair.js" defer></script>';
+    const updated=html.indexOf("</head>")>=0?html.replace("</head>",tag+"</head>"):html+tag;
+    const headers=new Headers(response.headers);
+    headers.delete("content-length");
+    return new Response(updated,{status:response.status,statusText:response.statusText,headers:headers});
+  }).catch(function(){return response;});
 }
 
 self.addEventListener("install",event=>{
@@ -76,8 +92,11 @@ self.addEventListener("fetch",event=>{
     event.respondWith(
       fetchWithTimeout(request,NAVIGATION_TIMEOUT_MS).then(response=>{
         if(response.ok){
-          const copy=response.clone();
-          caches.open(CACHE_NAME).then(cache=>cache.put(ENTRY,copy));
+          return injectRuntimeRepair(response).then(function(repaired){
+            const copy=repaired.clone();
+            caches.open(CACHE_NAME).then(cache=>cache.put(ENTRY,copy));
+            return repaired;
+          });
         }
         return response;
       }).catch(()=>caches.match(ENTRY).then(cached=>cached||new Response("Pacific Education is offline or the connection is taking too long.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}})))
