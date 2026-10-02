@@ -6,7 +6,10 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
 import android.view.View;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -17,6 +20,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.SharedPreferences;
+
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
 
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
@@ -29,12 +36,77 @@ public final class MainActivity extends Activity {
 
     private WebView webView;
     private SharedPreferences prefs;
+    private TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        textToSpeech = new TextToSpeech(this, status -> {
+            if (status == TextToSpeech.SUCCESS) {
+                textToSpeech.setLanguage(Locale.US);
+                selectPreferredVoice();
+            }
+        });
         showNativeHome();
+    }
+
+    private void selectPreferredVoice() {
+        if (textToSpeech == null || Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) return;
+        try {
+            Set<Voice> voices = textToSpeech.getVoices();
+            if (voices == null) return;
+            Voice fallback = null;
+            for (Voice voice : voices) {
+                if (voice == null || voice.getLocale() == null) continue;
+                if (!Locale.ENGLISH.getLanguage().equals(voice.getLocale().getLanguage())) continue;
+                if (fallback == null) fallback = voice;
+                String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
+                if (name.contains("david") || name.contains("mark") || name.contains("ryan")
+                        || name.contains("guy") || name.contains("alex")
+                        || name.contains("daniel") || name.contains("james")
+                        || name.contains("john") || name.contains("tom")) {
+                    textToSpeech.setVoice(voice);
+                    return;
+                }
+            }
+            if (fallback != null) textToSpeech.setVoice(fallback);
+        } catch (Exception ignored) {
+            // Keep the Android TTS engine default voice.
+        }
+    }
+
+    private final class NativeSpeechBridge {
+        @JavascriptInterface
+        public boolean speak(String text) {
+            if (textToSpeech == null || text == null || text.trim().isEmpty()) return false;
+            try {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education");
+                } else {
+                    @SuppressWarnings("deprecation")
+                    HashSet<String> params = new HashSet<>();
+                    @SuppressWarnings("deprecation")
+                    int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                    return result == TextToSpeech.SUCCESS;
+                }
+                return true;
+            } catch (Exception error) {
+                return false;
+            }
+        }
+
+        @JavascriptInterface
+        public void stop() {
+            if (textToSpeech != null) {
+                try { textToSpeech.stop(); } catch (Exception ignored) {}
+            }
+        }
+
+        @JavascriptInterface
+        public boolean available() {
+            return textToSpeech != null;
+        }
     }
 
     private TextView text(String value, int size) {
@@ -170,6 +242,8 @@ public final class MainActivity extends Activity {
         }
         settings.setMediaPlaybackRequiresUserGesture(true);
 
+        view.addJavascriptInterface(new NativeSpeechBridge(), "PacificEducationNativeTTS");
+
         view.setVerticalScrollBarEnabled(true);
         view.setHorizontalScrollBarEnabled(false);
         view.setBackgroundColor(0xFFFFFFFF);
@@ -234,6 +308,11 @@ public final class MainActivity extends Activity {
             webView.stopLoading();
             webView.destroy();
             webView = null;
+        }
+        if (textToSpeech != null) {
+            try { textToSpeech.stop(); } catch (Exception ignored) {}
+            textToSpeech.shutdown();
+            textToSpeech = null;
         }
         super.onDestroy();
     }
