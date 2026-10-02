@@ -4,6 +4,7 @@
 
   var selectedVoice = null;
   var pendingText = "";
+  var speechUnlocked = false;
 
   function chooseVoice() {
     if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") {
@@ -39,6 +40,8 @@
     return selectedVoice;
   }
 
+  function setVoiceStatus(message) { try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = message; } catch (_) {} }
+
   function speakText(text) {
     text = String(text || "").trim();
 
@@ -56,6 +59,7 @@
       // Chrome/WebView versions reject speech when it is deferred by a timer.
       synth.cancel();
       if (typeof synth.resume === "function") synth.resume();
+      speechUnlocked = true;
 
       var currentVoice = selectedVoice || chooseVoice();
       var utterance = new window.SpeechSynthesisUtterance(text);
@@ -67,9 +71,11 @@
 
       utterance.onstart = function () {
         pendingText = text;
+        setVoiceStatus("Voice playing.");
       };
       utterance.onend = function () {
         pendingText = "";
+        setVoiceStatus("Voice ready.");
       };
       utterance.onerror = function (event) {
         var code = event && event.error;
@@ -131,6 +137,8 @@
     if (!window.speechSynthesis) return;
     try {
       if (typeof window.speechSynthesis.resume === "function") window.speechSynthesis.resume();
+      speechUnlocked = true;
+      setVoiceStatus("Voice engine unlocked. Tap Hear Welcome.");
     } catch (error) {
       console.warn("Pacific Education speech unlock deferred:", error);
     }
