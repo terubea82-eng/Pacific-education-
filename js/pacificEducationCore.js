@@ -14,7 +14,8 @@
     "head_of_school",
     "examiner",
     "owner",
-    "admin"
+    "admin",
+    "technician"
   ]);
 
   const DEFAULT_STATE = {
