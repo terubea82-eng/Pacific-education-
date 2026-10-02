@@ -28,7 +28,7 @@ import java.util.Set;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=20261002-pilot";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
@@ -84,8 +84,6 @@ public final class MainActivity extends Activity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education");
                 } else {
-                    @SuppressWarnings("deprecation")
-                    HashSet<String> params = new HashSet<>();
                     @SuppressWarnings("deprecation")
                     int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
                     return result == TextToSpeech.SUCCESS;
