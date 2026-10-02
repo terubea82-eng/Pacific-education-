@@ -11,7 +11,7 @@ const runtime = fs.readFileSync(
 test("index loads the accessibility runtime", () => {
   assert.match(
     html,
-    /<script[^>]+src=["'](?:\.\.\/)?src\/js\/pacificEducationAccessibilityRuntime\.js[?"][^>]*>/
+    /<script[^>]+src=["'](?:\.\.\/)?(?:src\/)?js\/pacificEducationAccessibilityRuntime\.js[?"][^>]*>/
   );
 });
 
