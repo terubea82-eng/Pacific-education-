@@ -17,6 +17,7 @@ const CORE_ASSETS=[
   "/Pacific-education-/src/js/pacificEducationAccessibilityRuntime.js",
   "/Pacific-education-/src/js/pacificEducationOfflineRuntime.js",
   "/Pacific-education-/src/js/pacificEducationOfflineSyncController.js",
+  "/Pacific-education-/src/js/pacificEducationConnectivity.js",
   "/Pacific-education-/src/js/pacificEducationPerformanceMonitor.js",
   "/Pacific-education-/src/js/pacificEducationPilotRuntimeRepair.js",
   "/Pacific-education-/src/js/pacificEducationFrontPageRepair.js",
