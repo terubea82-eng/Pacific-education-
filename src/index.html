@@ -773,4 +773,91 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   window.addEventListener("offline",update);
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",update);else update();
 })(window,document);
-</script></body></html>
+</script><script>
+/* Pacific Education — MANDATED voice instruction + manual text Next on every guided page */
+(function(){
+  "use strict";
+  var pages=[
+    {id:"pacificEducationWelcome",label:"Welcome"},
+    {id:"pacificEducationIdentityRegistration",label:"Registration"},
+    {id:"prototypeAccess",label:"Pilot Access"},
+    {id:"levelSelection",label:"Learning Level"},
+    {id:"subjectSelection",label:"Subject"},
+    {id:"termSelection",label:"Term"},
+    {id:"capabilitySelection",label:"Learning Capability"},
+    {id:"dailyLesson",label:"Daily Learning"},
+    {id:"dailyLessonPracticeStage",label:"Practice"},
+    {id:"assessments",label:"Assessment"},
+    {id:"teacherCalendarSection",label:"Teacher Calendar"}
+  ];
+  function speak(text){
+    try{
+      if(window.PacificEducationVoice&&window.PacificEducationVoice.stop)window.PacificEducationVoice.stop();
+      if(window.speakText)return window.speakText(text);
+    }catch(_){}
+    return false;
+  }
+  function getText(section,label){
+    var heading=section.querySelector("h1,h2,h3");
+    var instruction=(heading&&heading.textContent?heading.textContent.trim():label);
+    return "Instruction for "+label+". "+instruction+". Read the instructions on screen, then use the manual Next button to continue.";
+  }
+  function install(){
+    pages.forEach(function(page,index){
+      var section=document.getElementById(page.id);
+      if(!section||section.querySelector(".pe-mandated-page-controls"))return;
+      var box=document.createElement("div");
+      box.className="pe-mandated-page-controls";
+      box.setAttribute("role","region");
+      box.setAttribute("aria-label","Mandatory voice instruction and manual navigation");
+      box.style.cssText="margin:16px 0;padding:12px;border:2px solid #0b5d7a;border-radius:10px;background:#f5fbff;";
+      var instruction=document.createElement("p");
+      instruction.className="pe-mandated-instruction";
+      instruction.textContent=getText(section,page.label);
+      var voice=document.createElement("button");
+      voice.type="button";
+      voice.textContent="🔊 Voice Instruction";
+      voice.setAttribute("aria-label","Play voice instruction for "+page.label);
+      voice.onclick=function(){speak(instruction.textContent);};
+      var next=document.createElement("button");
+      next.type="button";
+      next.textContent=index===pages.length-1?"✅ Finish / Continue":"➡️ Next";
+      next.setAttribute("aria-label",index===pages.length-1?"Finish this guided page":"Next guided page");
+      next.onclick=function(){
+        if(index===pages.length-1){
+          document.body.classList.remove("pe-guided-flow");
+          document.body.removeAttribute("data-pe-flow-step");
+          window.scrollTo({top:0,behavior:"smooth"});
+          speak("Guided learning flow complete. You may now use the Pacific Education menu.");
+          return;
+        }
+        document.body.classList.add("pe-guided-flow");
+        document.body.setAttribute("data-pe-flow-step",String(index+1));
+        var target=document.getElementById(pages[index+1].id);
+        if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+        setTimeout(function(){
+          var nextInstruction=target&&target.querySelector(".pe-mandated-instruction");
+          if(nextInstruction)speak(nextInstruction.textContent);
+        },250);
+      };
+      var status=document.createElement("span");
+      status.className="pe-mandated-status";
+      status.setAttribute("role","status");
+      status.textContent="Voice instruction is mandatory; manual text navigation is always available.";
+      box.appendChild(instruction);
+      box.appendChild(voice);
+      box.appendChild(next);
+      box.appendChild(status);
+      section.appendChild(box);
+    });
+  }
+  function startObserver(){
+    install();
+    var observer=new MutationObserver(function(){install();});
+    observer.observe(document.body,{childList:true,subtree:true});
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",startObserver);
+  else startObserver();
+})();
+</script>
+</body></html>
