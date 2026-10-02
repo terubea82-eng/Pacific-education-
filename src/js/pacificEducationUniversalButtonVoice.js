@@ -3,6 +3,11 @@
   "use strict";
 
   var bound = new WeakSet();
+  var dedicatedVoiceButtons = {
+    pacificEducationWelcomeVoiceButton: true,
+    pacificEducationStopSpeechButton: true,
+    pacificEducationInstallButton: true
+  };
 
   function labelFor(button){
     var label = button.getAttribute("aria-label") || button.innerText || button.textContent || "";
@@ -21,6 +26,7 @@
 
   function bind(button){
     if(!button || bound.has(button)) return;
+    if(dedicatedVoiceButtons[button.id]) return;
     if(button.classList.contains("pacific-voice-speaker") ||
        button.classList.contains("pacific-voice-next-directive")) return;
 
