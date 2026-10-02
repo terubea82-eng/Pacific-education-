@@ -6,7 +6,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "2.0.1";
+  var VERSION = "2.0.2";
   var errors = [];
   var AUTO_REFRESH_INTERVAL_MS = 60000;
   var AUTO_REFRESH_KEY = "pacificEducationAutoRefreshVersion";
@@ -570,6 +570,47 @@
     return true;
   }
 
+  function forcePilotDailyActivityFallback() {
+    var daily = document.getElementById("dailyLesson");
+    var activityPanel = document.getElementById("dailyLessonActivity");
+    var roster = window.PacificEducationTeacherClassRosterContext;
+    if (!daily || !activityPanel || !roster || typeof roster.getClassId !== "function" || typeof roster.getClass !== "function") return false;
+    var classId = String(roster.getClassId() || "").trim();
+    if (!classId || !roster.getClass(classId)) return false;
+    var textNow = String(activityPanel.textContent || "").trim();
+    if (textNow && textNow.indexOf("Loading today's learning activity") === -1) return true;
+    var day = 1;
+    try {
+      if (window.PacificEducationDailyLessons && typeof window.PacificEducationDailyLessons.getCurrentCoreDay === "function") day = window.PacificEducationDailyLessons.getCurrentCoreDay();
+      else day = Number(localStorage.getItem("currentDayNumber") || "1");
+    } catch (e) {}
+    if (!Number.isFinite(day) || day < 1 || day > 365) day = 1;
+    var lesson = null;
+    var dailyApi = window.PacificEducationDailyLessons;
+    if (dailyApi && typeof dailyApi.getDailyLesson === "function") { try { lesson = dailyApi.getDailyLesson(day); } catch (e2) {} }
+    if (!lesson || lesson.blocked) return false;
+    var title = document.getElementById("dailyLessonTitle");
+    var dayNode = document.getElementById("dailyLessonDay");
+    if (title) title.textContent = String(lesson.title || "Daily Activity");
+    if (dayNode) dayNode.textContent = "Day " + day;
+    var subject = localStorage.getItem("pacificEducationSubject") || "English";
+    var term = localStorage.getItem("pacificEducationTerm") || "Term 1";
+    var level = (roster.getClass(classId) || {}).level || "Class 1";
+    var question = subject === "Mathematics" ? "What is 2 + 2?" : subject === "Science" ? "Which one is a living thing?" : "Which word is a greeting?";
+    var options = subject === "Mathematics" ? ["3","4","5","6"] : subject === "Science" ? ["Tree","Rock","Cup","Pencil"] : ["Hello","Pencil","Seven","Green"];
+    var runtime = window.PacificEducationActivity;
+    if (runtime && typeof runtime.render === "function") {
+      try {
+        runtime.render("multiple_choice", day, {dayNumber:day,classId:classId,level:level,subjectId:subject,term:term,title:String(lesson.title || "Daily Activity"),activity:{questionText:String(lesson.activity || "")+" "+question,audioText:String(lesson.activity || "")+" "+question,options:options,choices:options,answerOptions:options,answerIndex:subject==="Mathematics"?1:0,answerKey:subject==="Mathematics"?"4":subject==="Science"?"Tree":"Hello",contentBasis:"pilot-daily-lesson-fallback"}});
+        var progress=document.getElementById("dailyLessonProgress");
+        if(progress) progress.textContent="Day "+day+" of 365 daily activities (school calendar controls teaching, revision and examination)";
+        return true;
+      } catch (e3) { reportError(e3 && e3.message ? e3.message : e3, "daily activity fallback"); }
+    }
+    activityPanel.textContent=String(lesson.activity || "Complete today's learning activity.");
+    return true;
+  }
+
   function repairDailyActivityRuntime() {
     var runtime = window.PacificEducationActivity;
     if (!runtime || typeof runtime.render !== "function") {
@@ -584,6 +625,7 @@
 
     window.setTimeout(function() {
       ensureDailyActivitiesVisible();
+      forcePilotDailyActivityFallback();
     }, 100);
   }
 
@@ -602,7 +644,8 @@
     window.setTimeout(repairControls, 500);
     window.setTimeout(repairControls, 1500);
     window.setTimeout(repairNavigationAndDashboards, 2000);
-    window.setTimeout(ensureDailyActivitiesVisible, 2000);
+    window.setTimeout(function(){ ensureDailyActivitiesVisible(); forcePilotDailyActivityFallback(); }, 2000);
+    window.setTimeout(forcePilotDailyActivityFallback, 3000);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
