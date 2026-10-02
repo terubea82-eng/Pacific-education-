@@ -15,7 +15,8 @@
     { id:"ngo", title:"NGO / Organization", access:"Program-level pilot participation and feedback", actions:["Program overview","Pilot feedback","Request support"] },
     { id:"education", title:"Education / Government", access:"Pilot-level education evidence and reporting view", actions:["Pilot overview","Evidence review","Feedback"] },
     { id:"community", title:"Community / Partner", access:"General education services and pilot feedback", actions:["Explore services","Submit feedback","Pilot information"] },
-    { id:"owner", title:"Owner / Control", access:"Owner-controlled pilot oversight and release evidence", actions:["Pilot status","Evidence register","Release gates"] }
+    { id:"owner", title:"Owner / Control", access:"Owner-controlled pilot oversight and release evidence", actions:["Pilot status","Evidence register","Release gates"] },
+    { id:"technician", title:"Technician", access:"Controlled technical workspace for builds, deployment, diagnostics and approved Termux workflow", actions:["GitHub repository","GitHub Actions / builds","Live Pages","Firebase Console","Termux workflow"] }
   ];
 
   function esc(v) {
