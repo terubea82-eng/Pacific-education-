@@ -24,3 +24,10 @@ test("universal button voice avoids recursive speaker binding", () => {
   assert.match(runtime, /new WeakSet/);
   assert.match(runtime, /MutationObserver/);
 });
+
+test("dedicated voice controls do not receive duplicate speaker buttons", () => {
+  assert.match(runtime, /pacificEducationWelcomeVoiceButton/);
+  assert.match(runtime, /pacificEducationStopSpeechButton/);
+  assert.match(runtime, /pacificEducationInstallButton/);
+  assert.match(runtime, /dedicatedVoiceButtons\[button\.id\]/);
+});
