@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1013 */
+/* Pacific Education — Speech Voice Controller v1015 */
 (function (window) {
   "use strict";
 
@@ -6,49 +6,65 @@
   var pendingText = "";
   var speechUnlocked = false;
 
-  function chooseVoice() {
-    if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") {
-      return null;
-    }
+  function setVoiceStatus(message) {
+    try {
+      var status = document.getElementById("pacificEducationVoiceStatus");
+      if (status) status.textContent = message;
+    } catch (_) {}
+  }
 
+  function chooseVoice() {
+    if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return null;
     var voices = window.speechSynthesis.getVoices() || [];
     if (!voices.length) {
       selectedVoice = null;
       return null;
     }
-
     var englishVoices = voices.filter(function (voice) {
       return /^en(-|$)/i.test(String(voice.lang || ""));
     });
-
-    // Prefer a male-presenting English voice for the Pacific Education pilot.
-    // Browser speech APIs do not standardize a gender property, so use conservative
-    // name hints first, then fall back to a local English voice. The user can still
-    // change the device/browser TTS voice independently.
     var maleVoiceHints = /(?:male|man|microsoft\s+(?:david|mark|ryan|guy)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|alex|daniel|fred|james|john|tom)/i;
     var femaleVoiceHints = /(?:female|woman|microsoft\s+(?:zira|hazel|susan)|google\s+(?:uk\s+english\s+female|us\s+english\s+female)|samantha|karen|moira|victoria)/i;
     var maleEnglishVoice = englishVoices.find(function (voice) {
       return maleVoiceHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
     });
-
     selectedVoice =
       maleEnglishVoice ||
       englishVoices.find(function (voice) { return voice.localService; }) ||
       englishVoices[0] ||
       voices[0];
-
     return selectedVoice;
   }
 
-  function setVoiceStatus(message) { try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = message; } catch (_) {} }
+  function nativeSpeak(text) {
+    var bridge = window.PacificEducationNativeTTS;
+    if (!bridge || typeof bridge.speak !== "function") return false;
+    try {
+      var ok = bridge.speak(String(text || ""));
+      if (ok) {
+        pendingText = "";
+        setVoiceStatus("Voice playing.");
+        return true;
+      }
+    } catch (error) {
+      console.warn("Pacific Education native TTS failed:", error);
+    }
+    return false;
+  }
 
   function speakText(text) {
     text = String(text || "").trim();
+    if (!text) return false;
 
-    if (!text || !window.speechSynthesis ||
+    // The Android pilot uses the device's native TextToSpeech engine.
+    // This avoids Android WebView speechSynthesis implementations that can
+    // report success but produce no audible output.
+    if (nativeSpeak(text)) return true;
+
+    if (!window.speechSynthesis ||
         typeof window.SpeechSynthesisUtterance !== "function") {
       console.warn("Pacific Education speech unavailable in this browser/runtime.");
-      try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = "Voice engine unavailable in this browser or device."; } catch (_) {}
+      setVoiceStatus("Voice engine unavailable in this browser or device.");
       return false;
     }
 
@@ -56,8 +72,6 @@
     var synth = window.speechSynthesis;
 
     try {
-      // Keep speak() inside the caller's user-gesture task. Some Android
-      // Chrome/WebView versions reject speech when it is deferred by a timer.
       synth.cancel();
       if (typeof synth.resume === "function") synth.resume();
       speechUnlocked = true;
@@ -81,11 +95,9 @@
       utterance.onerror = function (event) {
         var code = event && event.error;
         console.warn("Pacific Education speech error:", code);
-        try { var status = document.getElementById("pacificEducationVoiceStatus"); if (status) status.textContent = "Voice error: " + (code || "unknown") + "."; } catch (_) {}
+        setVoiceStatus("Voice error: " + (code || "unknown") + ".");
         if (pendingText !== text) return;
 
-        // If a selected device voice is rejected, retry once with the
-        // browser's default English TTS voice.
         if (currentVoice && code && code !== "interrupted") {
           pendingText = "";
           selectedVoice = null;
@@ -97,11 +109,12 @@
             fallback.rate = 0.95;
             fallback.pitch = 1;
             fallback.volume = 1;
-            fallback.onstart = function () { pendingText = text; };
-            fallback.onend = function () { pendingText = ""; };
+            fallback.onstart = function () { pendingText = text; setVoiceStatus("Voice playing."); };
+            fallback.onend = function () { pendingText = ""; setVoiceStatus("Voice ready."); };
             fallback.onerror = function (retryEvent) {
               console.warn("Pacific Education fallback speech error:", retryEvent && retryEvent.error);
               pendingText = "";
+              setVoiceStatus("Voice error: " + ((retryEvent && retryEvent.error) || "unknown") + ".");
             };
             synth.speak(fallback);
             if (typeof synth.resume === "function") synth.resume();
@@ -113,16 +126,29 @@
         pendingText = "";
       };
 
-      // Critical: do not defer this call with setTimeout; Android/browser
-      // user-activation rules can otherwise suppress speech from button taps.
       synth.speak(utterance);
       if (typeof synth.resume === "function") synth.resume();
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
       pendingText = "";
+      setVoiceStatus("Voice error.");
       return false;
     }
+  }
+
+  function stopSpeech() {
+    pendingText = "";
+    try {
+      if (window.PacificEducationNativeTTS &&
+          typeof window.PacificEducationNativeTTS.stop === "function") {
+        window.PacificEducationNativeTTS.stop();
+      }
+    } catch (_) {}
+    try {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+    } catch (_) {}
+    setVoiceStatus("Voice stopped.");
   }
 
   function retryPendingSpeech() {
@@ -134,20 +160,28 @@
     }
   }
 
-  // Android Chrome/WebView can require a user-gesture resume before TTS will play.
   function unlockSpeechOnInteraction() {
-    if (!window.speechSynthesis) return;
     try {
-      if (typeof window.speechSynthesis.resume === "function") window.speechSynthesis.resume();
+      if (window.speechSynthesis && typeof window.speechSynthesis.resume === "function") {
+        window.speechSynthesis.resume();
+      }
       speechUnlocked = true;
-      setVoiceStatus("Voice engine unlocked. Tap Hear Welcome.");
+      if (window.PacificEducationNativeTTS &&
+          typeof window.PacificEducationNativeTTS.available === "function" &&
+          window.PacificEducationNativeTTS.available()) {
+        setVoiceStatus("Native voice engine ready. Tap Hear Welcome.");
+      } else {
+        setVoiceStatus("Voice engine unlocked. Tap Hear Welcome.");
+      }
     } catch (error) {
       console.warn("Pacific Education speech unlock deferred:", error);
     }
   }
 
   ["pointerdown", "touchstart", "keydown"].forEach(function (eventName) {
-    document.addEventListener(eventName, unlockSpeechOnInteraction, { once: true, capture: true, passive: true });
+    document.addEventListener(eventName, unlockSpeechOnInteraction, {
+      once: true, capture: true, passive: true
+    });
   });
 
   function bindVoiceButtons() {
@@ -167,10 +201,7 @@
       stop.setAttribute("data-pe-stop-voice-bound", "true");
       stop.addEventListener("click", function (event) {
         if (event) event.preventDefault();
-        try {
-          if (window.speechSynthesis) window.speechSynthesis.cancel();
-        } catch (_) {}
-        pendingText = "";
+        stopSpeech();
         return false;
       });
     }
@@ -179,6 +210,7 @@
   window.PacificEducationSpeech = {
     chooseVoice: chooseVoice,
     speakText: speakText,
+    stopSpeech: stopSpeech,
     getSelectedVoice: function () { return selectedVoice; }
   };
 
@@ -190,7 +222,10 @@
   }
 
   bindVoiceButtons();
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindVoiceButtons);
-  else setTimeout(bindVoiceButtons, 0);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bindVoiceButtons);
+  } else {
+    setTimeout(bindVoiceButtons, 0);
+  }
   chooseVoice();
 })(window);
