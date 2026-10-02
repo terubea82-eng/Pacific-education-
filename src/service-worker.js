@@ -4,7 +4,7 @@
  * authentication material, or child-identifying records.
  */
 "use strict";
-const CACHE_NAME="pacific-education-prototype-src-v6";
+const CACHE_NAME="pacific-education-prototype-src-v7";
 const BASE_ASSETS=["./","./index.html","./service-worker.js"];
 const normalizeRef=ref=>{
  const clean=String(ref||"").split("?")[0].split("#")[0];
