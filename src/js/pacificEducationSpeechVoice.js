@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1015 */
+/* Pacific Education — Speech Voice Controller v1018 */
 (function (window) {
   "use strict";
 
@@ -75,9 +75,13 @@
 
     pendingText = text;
     var synth = window.speechSynthesis;
+    // Some Android browsers/WebViews return from speak() successfully but remain paused.
+    // Force a clean queue and resume before and immediately after enqueueing.
+    try { synth.cancel(); } catch (_) {}
+    try { if (typeof synth.resume === "function") synth.resume(); } catch (_) {}
 
     try {
-      synth.cancel();
+      try { synth.cancel(); } catch (_) {}
       if (typeof synth.resume === "function") synth.resume();
       speechUnlocked = true;
 
@@ -133,6 +137,17 @@
 
       synth.speak(utterance);
       if (typeof synth.resume === "function") synth.resume();
+      // Retry once if the engine reports speaking=false immediately after enqueue.
+      setTimeout(function () {
+        try {
+          if (pendingText === text && !synth.speaking) {
+            synth.cancel();
+            synth.resume();
+            synth.speak(utterance);
+            synth.resume();
+          }
+        } catch (_) {}
+      }, 180);
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
@@ -193,6 +208,8 @@
     chooseVoice();
     if (selectedVoice) {
       setVoiceStatus("English voice ready. Tap Hear Welcome.");
+    } else if (window.speechSynthesis) {
+      setVoiceStatus("Browser voice engine ready. Tap Hear Welcome.");
     }
   }
 
