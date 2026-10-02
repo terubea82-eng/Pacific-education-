@@ -40,6 +40,11 @@
     var bridge = window.PacificEducationNativeTTS;
     if (!bridge || typeof bridge.speak !== "function") return false;
     try {
+      if (typeof bridge.available === "function" && !bridge.available()) return false;
+    } catch (_) {
+      return false;
+    }
+    try {
       var ok = bridge.speak(String(text || ""));
       if (ok) {
         pendingText = "";
@@ -184,6 +189,13 @@
     });
   });
 
+  function refreshVoiceSelection() {
+    chooseVoice();
+    if (selectedVoice) {
+      setVoiceStatus("English voice ready. Tap Hear Welcome.");
+    }
+  }
+
   function bindVoiceButtons() {
     var welcome = document.getElementById("pacificEducationWelcomeVoiceButton");
     var stop = document.getElementById("pacificEducationStopSpeechButton");
@@ -228,4 +240,7 @@
     setTimeout(bindVoiceButtons, 0);
   }
   chooseVoice();
+  // Android/Chrome can populate the voice list asynchronously.
+  setTimeout(refreshVoiceSelection, 250);
+  setTimeout(refreshVoiceSelection, 1000);
 })(window);
