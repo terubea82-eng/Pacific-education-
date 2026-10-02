@@ -212,3 +212,53 @@ A failure in one greeting line must automatically try the next valid greeting pa
 The user should not see a technical failure merely because one implementation path broke. The system should transparently fail over, preserve the intended function where possible, and log which path was used.
 
 The same redundancy pattern should be applied to other critical functions such as Next navigation, Registration, Daily Activities, Practice, Assessments, connectivity/sync, and accessibility controls.
+
+
+## Redundant paths by feature
+
+| Feature | Primary path | Secondary path | User-visible fallback | Isolation rule |
+|---|---|---|---|---|
+| Welcome / Greeting | Automatic welcome voice | Hear Welcome / alternate voice invocation | Visible welcome text + Next | Greeting failure cannot block navigation |
+| Navigation / Next | Guided-flow Next handler | Direct section navigation | App Menu / role workspace entry | A broken Next control cannot hide the destination |
+| Registration | Registration form handler | User Registration entry control | Registration instructions/status | Registration failure cannot erase existing pilot state |
+| Class / Level / Subject / Term | Guided selectors | Existing assigned-context/recovery selector | Current valid selection remains visible | Never create a duplicate Class Reference |
+| Daily Activities | Daily lesson runtime | Renderer refresh/re-entry path | Previous/Next Day + activity status | Activity failure cannot disable Practice/Assessment |
+| Practice | Practice runtime | Re-open Practice stage from Daily Activities | Practice instructions/status | Preserve completed activity evidence |
+| Assessments | Assessment engine | Assessment-specific entry/restart path | Assessment stage and status | Do not duplicate submissions |
+| Coverage / Progress | Coverage renderer | Dashboard refresh/rebuild path | Last verified coverage/progress view | Never consume mismatched class curriculum |
+| Teacher Workspace / Calendar | Teacher dashboard/calendar runtime | Dashboard refresh/re-entry | Teacher workspace navigation | Student learning remains available if teacher UI fails |
+| Owner / Technician Workspace | Workspace controls | Direct system-status / repository links | Technical status panel | Never expose credentials or secrets |
+| Online Connectivity | Network request | Retry with bounded backoff | Offline status + cached pilot shell | Network failure must not crash local UI |
+| Offline / Sync | Sync queue | Retry/reconcile path | Local pending-sync state | Protect queued evidence; no duplicate writes |
+| PWA Install | Browser install prompt | Install/status control | Web app remains usable without install | Install failure does not affect learning |
+| Mailbox | Mailbox local store | Refresh/re-render path | Empty/status view | Mailbox failure cannot affect learning data |
+| Accessibility / Voice | Accessibility runtime | Hear Welcome / direct speech controls | Visible text + controls | Speech failure never blocks content/navigation |
+
+### Mandatory behavior for every row
+
+Each feature must have **at least two execution paths** before it is considered resilient. The secondary path must not simply call the same failing function without checking its health first. The fallback must preserve the user's ability to continue where safe.
+
+The recovery sequence is:
+
+**Detect → protect state → test primary path → fail over to secondary path → show safe fallback if needed → re-test feature → re-test immediate dependents → record the path used.**
+
+A feature is not considered fully recovered merely because an error was caught. The intended user action must be re-tested.
+
+### Critical-path dependency rule
+
+Critical learning paths use dependency-aware isolation:
+
+**Welcome → Registration → Class/Level → Subject → Term → Daily Activities → Practice → Assessment → Coverage**
+
+A failure in one stage must not automatically disable unrelated stages. If a dependency is genuinely required for a specific action, only that action is blocked and the reason is surfaced; unrelated tools remain available.
+
+### Redundancy acceptance test
+
+For each feature, pilot QA must test:
+1. primary path works;
+2. primary path is intentionally made unavailable in a controlled test;
+3. secondary path takes over;
+4. user-visible fallback appears if both execution paths are unavailable;
+5. user state is preserved;
+6. immediate dependent feature remains usable;
+7. recovery is recorded and the feature is re-tested.
