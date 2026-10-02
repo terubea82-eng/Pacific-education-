@@ -152,6 +152,13 @@ html[data-text-scale="x-large"]{font-size:125%}
 </div>
 <main id="app">
 <nav id="userFirstNavigation" aria-label="Pacific Education main navigation" style="margin:12px 0;padding:10px;border:1px solid currentColor;"><strong>Start here:</strong> <a href="#pacificEducationIdentityRegistration">Users</a> · <a href="#learningPlatform">Learning Tools</a> · <a href="#levelSelection">Class / Level</a> · <a href="#subjectSelection">Subject</a> · <a href="#termSelection">Term</a> · <a href="#dailyLesson">Daily Activities</a> · <a href="#assessments">Assessments</a> · <a href="#teacherDashboard">Dashboards</a> · <a href="#buyPlans">Services</a> · <button type="button" id="financeButton" onclick="openPacificEducationFinance()">Finance</button> · <a href="#pacificEducationWebsitePilotChecklist">Pilot Checklist</a> · <a href="#publicationStatus">Pilot / Production</a> · <a href="#pacificGuardianCommentSection">Feedback</a> · <a href="#pacificEducationMailbox">📬 Mail Box</a> · <a href="#pacificEducationExternalReviewerPortal">🔎 External Review</a> · <a href="#pacificEducationAIConversation">🤖 Education AI</a> · <a href="#systemStatus">System</a> · <a id="pacificEducationTechnicianNav" href="#pacificEducationTechnicianWorkspace" hidden>🛠️ Technician</a></nav>
+<section id="pacificEducationTechnicianActivation" aria-label="Technician activation" hidden>
+<h2>🛠️ Technician Activation</h2>
+<p><strong>Owner-controlled pilot technician mode.</strong> Activation is local to this pilot browser/session and does not expose credentials or grant production authority.</p>
+<button type="button" id="pacificEducationActivateTechnician">Activate Technician Workspace</button>
+<button type="button" id="pacificEducationDeactivateTechnician" hidden>Deactivate Technician</button>
+<span id="pacificEducationTechnicianActivationStatus" role="status" aria-live="polite">Technician mode is inactive.</span>
+</section>
 <section id="pacificEducationTechnicianWorkspace" aria-label="Owner and Technician technical workspace" hidden>
 <h2>🛠️ Owner / Technician Technical Workspace</h2>
 <p><strong>Controlled pilot technical area.</strong> This workspace provides navigation to development and deployment tools. It does not expose secrets, passwords, tokens or credentials and it does not execute Termux commands from the browser.</p>
@@ -282,4 +289,38 @@ git status</pre>
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
-</script></body></html>
+</script><script>
+(function(){
+"use strict";
+var KEY="pacificEducationPilotTechnicianMode";
+function setActive(active){
+  try{sessionStorage.setItem(KEY,active?"active":"inactive");}catch(e){}
+  var workspace=document.getElementById("pacificEducationTechnicianWorkspace");
+  var nav=document.getElementById("pacificEducationTechnicianNav");
+  var status=document.getElementById("pacificEducationTechnicianActivationStatus");
+  var on=document.getElementById("pacificEducationActivateTechnician");
+  var off=document.getElementById("pacificEducationDeactivateTechnician");
+  if(workspace)workspace.hidden=!active;
+  if(nav)nav.hidden=!active;
+  if(on)on.hidden=active;
+  if(off)off.hidden=!active;
+  if(status)status.textContent=active?"Technician mode active for this pilot session.":"Technician mode is inactive.";
+  if(window.PacificEducationAccessibilityRuntime&&typeof window.PacificEducationAccessibilityRuntime.announce==="function")
+    window.PacificEducationAccessibilityRuntime.announce(active?"Technician mode activated.":"Technician mode deactivated.");
+}
+function init(){
+  var activation=document.getElementById("pacificEducationTechnicianActivation");
+  if(!activation)return;
+  var active=false;
+  try{active=sessionStorage.getItem(KEY)==="active";}catch(e){}
+  activation.hidden=false;
+  var on=document.getElementById("pacificEducationActivateTechnician");
+  var off=document.getElementById("pacificEducationDeactivateTechnician");
+  if(on)on.onclick=function(){setActive(true);};
+  if(off)off.onclick=function(){setActive(false);};
+  setActive(active);
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script>
+</body></html>
