@@ -54,7 +54,7 @@ jobs:
       - name: Verify all pilot roles are wired
         run: |
           set -e
-          roles="student teacher special-education parent professional ngo education community owner"
+          roles="student teacher special-education parent professional ngo education community owner technician"
           for role in $roles; do
             grep -Fq "id:\"$role\"" src/js/pacificEducationPilotUserWorkspaces.js
           done
