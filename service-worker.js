@@ -1,11 +1,12 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v19";
+const CACHE_NAME="pacific-education-shell-v20";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
 const RUNTIME_REPAIR="/Pacific-education-/src/js/pacificEducationPilotRuntimeRepair.js";
+const FRONT_PAGE_REPAIR="/Pacific-education-/src/js/pacificEducationFrontPageRepair.js";
 
 const CORE_ASSETS=[
   "/Pacific-education-/js/pacificEducationCore.js",
@@ -18,6 +19,7 @@ const CORE_ASSETS=[
   "/Pacific-education-/src/js/pacificEducationOfflineSyncController.js",
   "/Pacific-education-/src/js/pacificEducationPerformanceMonitor.js",
   "/Pacific-education-/src/js/pacificEducationPilotRuntimeRepair.js",
+  "/Pacific-education-/src/js/pacificEducationFrontPageRepair.js",
   "/Pacific-education-/js/pacificEducationAccessibilitySupport.js"
 ];
 
@@ -38,9 +40,11 @@ function injectRuntimeRepair(response){
   const type=response.headers.get("content-type")||"";
   if(type.indexOf("text/html")===-1)return response;
   return response.text().then(function(html){
-    if(html.indexOf("pacificEducationPilotRuntimeRepair.js")!==-1)return new Response(html,{status:response.status,statusText:response.statusText,headers:response.headers});
-    const tag='<script src="../src/js/pacificEducationPilotRuntimeRepair.js" defer></script>';
-    const updated=html.indexOf("</head>")>=0?html.replace("</head>",tag+"</head>"):html+tag;
+    const tags=[];
+    if(html.indexOf("pacificEducationPilotRuntimeRepair.js")===-1)tags.push('<script src="../src/js/pacificEducationPilotRuntimeRepair.js" defer></script>');
+    if(html.indexOf("pacificEducationFrontPageRepair.js")===-1)tags.push('<script src="../src/js/pacificEducationFrontPageRepair.js" defer></script>');
+    if(!tags.length)return new Response(html,{status:response.status,statusText:response.statusText,headers:response.headers});
+    const updated=html.indexOf("</head>")>=0?html.replace("</head>",tags.join("")+"</head>"):html+tags.join("");
     const headers=new Headers(response.headers);
     headers.delete("content-length");
     return new Response(updated,{status:response.status,statusText:response.statusText,headers:headers});
