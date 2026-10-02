@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1011 */
+/* Pacific Education — Speech Voice Controller v1012 */
 (function (window) {
   "use strict";
 
