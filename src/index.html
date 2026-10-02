@@ -151,7 +151,41 @@ html[data-text-scale="x-large"]{font-size:125%}
   <button type="button" id="pacificEducationRefreshButton">Refresh Now</button>
 </div>
 <main id="app">
-<nav id="userFirstNavigation" aria-label="Pacific Education main navigation" style="margin:12px 0;padding:10px;border:1px solid currentColor;"><strong>Start here:</strong> <a href="#pacificEducationIdentityRegistration">Users</a> · <a href="#learningPlatform">Learning Tools</a> · <a href="#levelSelection">Class / Level</a> · <a href="#subjectSelection">Subject</a> · <a href="#termSelection">Term</a> · <a href="#dailyLesson">Daily Activities</a> · <a href="#assessments">Assessments</a> · <a href="#teacherDashboard">Dashboards</a> · <a href="#buyPlans">Services</a> · <button type="button" id="financeButton" onclick="openPacificEducationFinance()">Finance</button> · <a href="#pacificEducationWebsitePilotChecklist">Pilot Checklist</a> · <a href="#publicationStatus">Pilot / Production</a> · <a href="#pacificGuardianCommentSection">Feedback</a> · <a href="#pacificEducationMailbox">📬 Mail Box</a> · <a href="#pacificEducationExternalReviewerPortal">🔎 External Review</a> · <a href="#pacificEducationAIConversation">🤖 Education AI</a> · <a href="#systemStatus">System</a></nav>
+<nav id="userFirstNavigation" aria-label="Pacific Education main navigation" style="margin:12px 0;padding:10px;border:1px solid currentColor;"><strong>Start here:</strong> <a href="#pacificEducationIdentityRegistration">Users</a> · <a href="#learningPlatform">Learning Tools</a> · <a href="#levelSelection">Class / Level</a> · <a href="#subjectSelection">Subject</a> · <a href="#termSelection">Term</a> · <a href="#dailyLesson">Daily Activities</a> · <a href="#assessments">Assessments</a> · <a href="#teacherDashboard">Dashboards</a> · <a href="#buyPlans">Services</a> · <button type="button" id="financeButton" onclick="openPacificEducationFinance()">Finance</button> · <a href="#pacificEducationWebsitePilotChecklist">Pilot Checklist</a> · <a href="#publicationStatus">Pilot / Production</a> · <a href="#pacificGuardianCommentSection">Feedback</a> · <a href="#pacificEducationMailbox">📬 Mail Box</a> · <a href="#pacificEducationExternalReviewerPortal">🔎 External Review</a> · <a href="#pacificEducationAIConversation">🤖 Education AI</a> · <a href="#systemStatus">System</a> · <a id="pacificEducationTechnicianNav" href="#pacificEducationTechnicianWorkspace" hidden>🛠️ Technician</a></nav>
+<section id="pacificEducationTechnicianWorkspace" aria-label="Owner and Technician technical workspace" hidden>
+<h2>🛠️ Owner / Technician Technical Workspace</h2>
+<p><strong>Controlled pilot technical area.</strong> This workspace provides navigation to development and deployment tools. It does not expose secrets, passwords, tokens or credentials and it does not execute Termux commands from the browser.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0">
+<a href="https://github.com/terubea82-eng/Pacific-education-" target="_blank" rel="noopener noreferrer"><button type="button">GitHub Repository</button></a>
+<a href="https://github.com/terubea82-eng/Pacific-education-/actions" target="_blank" rel="noopener noreferrer"><button type="button">GitHub Actions / Builds</button></a>
+<a href="https://terubea82-eng.github.io/Pacific-education-/" target="_blank" rel="noopener noreferrer"><button type="button">Live Pacedu Site</button></a>
+<a href="https://console.firebase.google.com/project/pacedu-fe868/overview" target="_blank" rel="noopener noreferrer"><button type="button">Firebase Console</button></a>
+</div>
+<h3>📱 Termux technician workflow</h3>
+<ol>
+<li>Open Termux on the Android technician device.</li>
+<li>Pull the latest Pacedu source from GitHub.</li>
+<li>Run the approved tests and Gradle build.</li>
+<li>Commit and push only reviewed changes to the main repository.</li>
+<li>Use GitHub Actions to verify the Android pilot build before installation.</li>
+</ol>
+<p><strong>Approved command sequence:</strong></p>
+<pre id="pacificEducationTermuxCommands" style="white-space:pre-wrap;overflow:auto;padding:12px;border:1px solid #ccc;border-radius:8px">cd ~/pacific-education/Pacific-education-
+git pull --ff-only origin main
+./gradlew clean test assembleDebug
+git status</pre>
+<button type="button" id="pacificEducationCopyTermuxCommands">📋 Copy Termux Commands</button>
+<span id="pacificEducationTechnicianStatus" role="status" aria-live="polite"></span>
+<h3>🔐 Technical safety rules</h3>
+<ul>
+<li>Never place GitHub tokens, Firebase secrets, passwords, private keys or payment credentials in Pacedu source or this workspace.</li>
+<li>Do not use Termux as a user-facing app feature; it remains a technician/developer tool.</li>
+<li>Every feature upgrade should be committed, built and tested before pilot distribution.</li>
+<li>Keep the controlled pilot boundary active; production services remain separately gated.</li>
+</ul>
+<h3>📌 Current pilot links</h3>
+<p>Use GitHub Actions for build verification, GitHub Pages for the deployed web version, and the approved Android APK artifact for pilot installation.</p>
+</section>
 <section id="pacificEducationSchoolIdentitySection"><div id="pacificEducationSchoolIdentity"></div></section><section id="learningPlatform"><h2>Learning Tools</h2><p><strong>Let’s learn!</strong></p><p><strong>1. Choose your class.</strong></p><p><strong>2. Choose your subject.</strong></p><p><strong>3. Choose your term.</strong></p><p><strong>4. Press 📚 Daily Activities.</strong></p><nav aria-label="Learning tools" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;"><a href="#dailyLesson" style="font-size:1.15em;font-weight:bold;">📚 Daily Activities</a></nav><p><strong>That is where you start learning.</strong></p><p><small>Then follow the steps: Daily Activities → Practice → Assessment → Coverage.</small></p></section>
 
 <section id="pacificEducationAppTools"><h2>Pacific Education App Tools</h2><p>Shared app-level tools. World Clock and school calendars are managed here and are not embedded inside individual role platforms.</p><div id="pacificEducationAppWorldClock"></div><div id="pacificEducationAppTeacherCalendar"></div><div id="pacificEducationAppTeacherSchoolCalendarLink"></div><div id="pacificEducationAppStudentSchoolCalendar"></div></section>
@@ -166,7 +200,7 @@ html[data-text-scale="x-large"]{font-size:125%}
 <input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your name or test name" style="width:100%;max-width:520px"><br><br>
 <label for="pilotRegistrationRole"><strong>User role</strong></label><br>
 <select id="pilotRegistrationRole" style="width:100%;max-width:520px">
-<option value="">Select role</option><option>Student</option><option>Teacher</option><option>Parent/Caregiver</option><option>Education Community / Pilot Tester</option>
+<option value="">Select role</option><option>Student</option><option>Teacher</option><option>Parent/Caregiver</option><option>Education Community / Pilot Tester</option><option>Technician</option><option>Owner/Control</option>
 </select><br><br>
 <button type="button" id="pilotRegistrationSaveButton">Save Pilot Registration</button>
 <div id="pilotRegistrationStatus" aria-live="polite"></div>
@@ -214,4 +248,38 @@ html[data-text-scale="x-large"]{font-size:125%}
 })();
 </script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=1018"></script><script src="js/pacificEducationMandatoryVoiceNavigation.js?v=1002"></script><script src="js/pacificEducationPWAInstall.js?v=20261001"></script><script src="js/pacificEducationVoiceNextDirective.js?v=1001"></script>
 <!-- Dedicated guided voice navigation is handled by pacificEducationMandatoryVoiceNavigation.js. Duplicate inline guided controls removed. -->
-</body></html>
+<script>
+(function(){
+  function showTechnicianWorkspace(){
+    var section=document.getElementById("pacificEducationTechnicianWorkspace");
+    var nav=document.getElementById("pacificEducationTechnicianNav");
+    if(!section)return;
+    var allowed=false;
+    try{
+      var session=JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration")||"null");
+      var role=String(session&&session.role||"").toLowerCase();
+      allowed=role==="technician"||role==="owner/control"||role==="owner"||role==="admin";
+    }catch(_){}
+    try{
+      if(window.PacificEducationCore&&typeof window.PacificEducationCore.getIdentity==="function"){
+        var identity=window.PacificEducationCore.getIdentity()||{};
+        var coreRole=String(identity.role||"").toLowerCase();
+        allowed=allowed||coreRole==="technician"||coreRole==="owner"||coreRole==="admin";
+      }
+    }catch(_){}
+    section.hidden=!allowed;
+    if(nav)nav.hidden=!allowed;
+  }
+  function init(){
+    var copy=document.getElementById("pacificEducationCopyTermuxCommands");
+    var commands=document.getElementById("pacificEducationTermuxCommands");
+    var status=document.getElementById("pacificEducationTechnicianStatus");
+    if(copy&&commands)copy.onclick=function(){
+      if(!navigator.clipboard){if(status)status.textContent="Clipboard is not available. Select and copy the commands manually.";return;}
+      navigator.clipboard.writeText(commands.textContent).then(function(){if(status)status.textContent="Termux commands copied.";}).catch(function(){if(status)status.textContent="Copy failed. Select the commands and copy manually.";});
+    };
+    showTechnicianWorkspace();
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+})();
+</script></body></html>
