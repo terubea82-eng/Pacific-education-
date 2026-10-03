@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1018 */
+/* Pacific Education — Speech Voice Controller v1019 */
 (function (window) {
   "use strict";
 
@@ -39,11 +39,6 @@
   function nativeSpeak(text) {
     var bridge = window.PacificEducationNativeTTS;
     if (!bridge || typeof bridge.speak !== "function") return false;
-    try {
-      if (typeof bridge.available === "function" && !bridge.available()) return false;
-    } catch (_) {
-      return false;
-    }
     try {
       var ok = bridge.speak(String(text || ""));
       if (ok) {
