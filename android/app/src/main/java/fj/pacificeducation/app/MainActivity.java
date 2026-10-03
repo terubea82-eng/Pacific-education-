@@ -71,20 +71,30 @@ public final class MainActivity extends Activity {
             Set<Voice> voices = textToSpeech.getVoices();
             if (voices == null) return;
             Voice fallback = null;
+            Voice maleFallback = null;
             for (Voice voice : voices) {
                 if (voice == null || voice.getLocale() == null) continue;
                 if (!Locale.ENGLISH.getLanguage().equals(voice.getLocale().getLanguage())) continue;
                 if (fallback == null) fallback = voice;
                 String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
-                if (name.contains("david") || name.contains("mark") || name.contains("ryan")
-                        || name.contains("guy") || name.contains("alex")
-                        || name.contains("daniel") || name.contains("james")
-                        || name.contains("john") || name.contains("tom")) {
-                    textToSpeech.setVoice(voice);
-                    return;
+                if (name.contains("male") || name.contains("man")
+                        || name.contains("david") || name.contains("mark") || name.contains("ryan")
+                        || name.contains("guy") || name.contains("alex") || name.contains("daniel")
+                        || name.contains("james") || name.contains("john") || name.contains("tom")
+                        || name.contains("aaron") || name.contains("arthur") || name.contains("oliver")) {
+                    maleFallback = voice;
+                    if (name.contains("male") || name.contains("david") || name.contains("mark")
+                            || name.contains("ryan") || name.contains("guy")) {
+                        textToSpeech.setVoice(voice);
+                        return;
+                    }
                 }
             }
-            if (fallback != null) textToSpeech.setVoice(fallback);
+            if (maleFallback != null) textToSpeech.setVoice(maleFallback);
+            // Do not silently replace the requested male voice with an arbitrary
+            // (possibly female) English voice. If this device exposes no recognizable
+            // male English voice, the engine keeps its configured voice rather than
+            // pretending that gender selection succeeded.
         } catch (Exception ignored) {
         }
     }
