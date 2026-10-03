@@ -8,7 +8,7 @@
 (function(window, document){
   "use strict";
 
-  var VERSION = "1.1.0";
+  var VERSION = "1.2.0";
   var WELCOME_TEXT = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
   var bound = false;
   var flow = [
@@ -41,7 +41,7 @@
         primaryOk = window.speakText(text) !== false;
       }
     } catch (e) { primaryOk = false; }
-    if (primaryOk) { setStatus("Voice playing."); return true; }
+    if (primaryOk) { setStatus("Voice playback requested."); return true; }
 
     /* Independent browser SpeechSynthesis fallback. */
     try {
@@ -52,7 +52,7 @@
         u.rate = 0.95;
         u.volume = 1;
         window.speechSynthesis.speak(u);
-        setStatus("Voice playing.");
+        setStatus("Voice playback requested.");
         return true;
       }
     } catch (e2) {}
@@ -274,6 +274,12 @@
 
   function init(){
     bind();
+    /* Mandatory guided-flow start: never expose the complete pilot page at once. */
+    try {
+      if (!document.body.classList.contains("pe-guided-flow")) showStep(0, "pacificEducationWelcome");
+    } catch (e) {
+      try { fallbackShowStep(0, "pacificEducationWelcome"); } catch (_) {}
+    }
     window.setTimeout(function(){ repairFlowControls(); recheck(); }, 250);
     window.setTimeout(function(){ repairFlowControls(); recheck(); }, 1000);
     window.setTimeout(function(){ repairFlowControls(); recheck(); }, 3000);
