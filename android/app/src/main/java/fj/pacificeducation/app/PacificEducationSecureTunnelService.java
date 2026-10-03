@@ -3,8 +3,6 @@ package fj.pacificeducation.app;
 import android.content.Intent;
 import android.net.VpnService;
 import android.os.IBinder;
-import androidx.annotation.Nullable;
-
 /**
  * Pacific Education Secure Tunnel (PEST) native boundary.
  * A real tunnel requires an approved endpoint/protocol and carrier configuration.
@@ -23,5 +21,5 @@ public final class PacificEducationSecureTunnelService extends VpnService {
         return START_NOT_STICKY;
     }
 
-    @Nullable @Override public IBinder onBind(Intent intent) { return super.onBind(intent); }
+    @Override public IBinder onBind(Intent intent) { return super.onBind(intent); }
 }
