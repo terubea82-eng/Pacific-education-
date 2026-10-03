@@ -249,13 +249,51 @@ git status</pre>
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
         status.textContent="Pilot registration saved. Press Next to continue to Prototype Access.";
-        if(window.speakText)window.speakText("Pilot registration saved. Continue to Learning Level.");
+        if(window.speakText)window.speakText("Pilot registration saved. Continue to Prototype Access.");
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
     };
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRegistration);else initRegistration();
 })();
 </script><script src="js/pacificEducationPilotUserWorkspaces.js?v=20261002"></script><script src="js/pacificEducationInteractionRepair.js?v=20261002"></script><script src="js/pacificEducationStudentCoverageContext.js?v=20261002"></script><script src="js/pacificEducationTeacherCalendar.js?v=20261002"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=20261002"></script><script src="../js/pacificEducationPilotIntegrityGuard.js?v=20261002"></script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=1019"></script><script src="js/pacificEducationAccessibilityRuntime.js?v=20261002"></script><script src="js/pacificEducationMandatoryVoiceNavigation.js?v=1002"></script><script src="js/pacificEducationPWAInstall.js?v=20261001"></script><script src="js/pacificEducationConnectivity.js?v=20261003"></script><script src="js/pacificEducationVoiceNextDirective.js?v=1001"></script>
+<script>
+(function(){
+"use strict";
+function go(step,id){
+  document.body.classList.add("pe-guided-flow");
+  document.body.setAttribute("data-pe-flow-step",String(step));
+  var target=document.getElementById(id);
+  if(target){
+    try{target.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){target.scrollIntoView();}
+  }
+}
+function bind(id,step,targetId){
+  var b=document.getElementById(id);
+  if(!b||b.getAttribute("data-pe-guided-bound")==="true")return;
+  b.setAttribute("data-pe-guided-bound","true");
+  b.setAttribute("aria-label","Next page. The next page will be read aloud.");
+  b.addEventListener("click",function(e){
+    if(e)e.preventDefault();
+    go(step,targetId);
+    return false;
+  });
+}
+function init(){
+  bind("registrationNextButton",2,"prototypeAccess");
+  bind("prototypeNextButton",3,"levelSelection");
+  bind("levelNextButton",4,"subjectSelection");
+  bind("subjectNextButton",5,"termSelection");
+  bind("termNextButton",6,"capabilitySelection");
+  bind("capabilityNextButton",7,"dailyLesson");
+  bind("dailyNextButton",8,"dailyLessonPracticeStage");
+  bind("practiceNextButton",9,"assessments");
+  bind("assessmentNextButton",10,"teacherCalendarSection");
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+window.setTimeout(init,500);
+window.setTimeout(init,1500);
+})();
+</script>
 <!-- Dedicated guided voice navigation is handled by pacificEducationMandatoryVoiceNavigation.js. Duplicate inline guided controls removed. -->
 <script>
 (function(){
