@@ -98,7 +98,6 @@ public final class MainActivity extends Activity {
                     int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
                     return result == TextToSpeech.SUCCESS;
                 }
-                return true;
             } catch (Exception error) {
                 return false;
             }
