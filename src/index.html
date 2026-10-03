@@ -311,8 +311,8 @@ function setActive(active){
 function init(){
   var activation=document.getElementById("pacificEducationTechnicianActivation");
   if(!activation)return;
-  var active=true;
-  try{sessionStorage.setItem(KEY,"active");}catch(e){}
+  var active=false;
+  try{active=sessionStorage.getItem(KEY)==="active";}catch(e){}
   activation.hidden=false;
   var on=document.getElementById("pacificEducationActivateTechnician");
   var off=document.getElementById("pacificEducationDeactivateTechnician");
