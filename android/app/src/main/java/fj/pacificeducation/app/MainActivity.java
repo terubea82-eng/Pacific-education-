@@ -37,6 +37,7 @@ public final class MainActivity extends Activity {
     private WebView webView;
     private SharedPreferences prefs;
     private TextToSpeech textToSpeech;
+    private boolean ttsReady = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +45,16 @@ public final class MainActivity extends Activity {
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
         textToSpeech = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
-                textToSpeech.setLanguage(Locale.US);
-                selectPreferredVoice();
+                int languageResult = textToSpeech.setLanguage(Locale.US);
+                ttsReady = languageResult != TextToSpeech.LANG_MISSING_DATA
+                        && languageResult != TextToSpeech.LANG_NOT_SUPPORTED;
+                if (ttsReady) {
+                    selectPreferredVoice();
+                    textToSpeech.setSpeechRate(0.95f);
+                    textToSpeech.speak(
+                            "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.",
+                            TextToSpeech.QUEUE_FLUSH, null, "pacific-education-welcome");
+                }
             }
         });
         showNativeHome();
@@ -79,10 +88,11 @@ public final class MainActivity extends Activity {
     private final class NativeSpeechBridge {
         @JavascriptInterface
         public boolean speak(String text) {
-            if (textToSpeech == null || text == null || text.trim().isEmpty()) return false;
+            if (!ttsReady || textToSpeech == null || text == null || text.trim().isEmpty()) return false;
             try {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education");
+                    int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education");
+                    return result == TextToSpeech.SUCCESS;
                 } else {
                     @SuppressWarnings("deprecation")
                     int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
@@ -103,7 +113,7 @@ public final class MainActivity extends Activity {
 
         @JavascriptInterface
         public boolean available() {
-            return textToSpeech != null;
+            return ttsReady && textToSpeech != null;
         }
     }
 
@@ -311,6 +321,7 @@ public final class MainActivity extends Activity {
             try { textToSpeech.stop(); } catch (Exception ignored) {}
             textToSpeech.shutdown();
             textToSpeech = null;
+            ttsReady = false;
         }
         super.onDestroy();
     }
