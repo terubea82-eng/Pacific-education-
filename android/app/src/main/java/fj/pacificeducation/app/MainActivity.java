@@ -21,23 +21,25 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.content.SharedPreferences;
 
-import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=20261002-pilot";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=20261003-voice-repair";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
     private static final String DAY_ONE_COMPLETE = "dayOneComplete";
+    private static final String WELCOME_TEXT =
+            "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
 
     private WebView webView;
     private SharedPreferences prefs;
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
+    private String pendingNativeSpeech = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +53,12 @@ public final class MainActivity extends Activity {
                 if (ttsReady) {
                     selectPreferredVoice();
                     textToSpeech.setSpeechRate(0.95f);
-                    textToSpeech.speak(
-                            "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.",
-                            TextToSpeech.QUEUE_FLUSH, null, "pacific-education-welcome");
+                    speakNativeNow(WELCOME_TEXT);
+                    if (!pendingNativeSpeech.isEmpty()) {
+                        String queued = pendingNativeSpeech;
+                        pendingNativeSpeech = "";
+                        speakNativeNow(queued);
+                    }
                 }
             }
         });
@@ -81,30 +86,39 @@ public final class MainActivity extends Activity {
             }
             if (fallback != null) textToSpeech.setVoice(fallback);
         } catch (Exception ignored) {
-            // Keep the Android TTS engine default voice.
+        }
+    }
+
+    private boolean speakNativeNow(String text) {
+        if (!ttsReady || textToSpeech == null || text == null || text.trim().isEmpty()) return false;
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education");
+                return result == TextToSpeech.SUCCESS;
+            } else {
+                @SuppressWarnings("deprecation")
+                int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                return result == TextToSpeech.SUCCESS;
+            }
+        } catch (Exception error) {
+            return false;
         }
     }
 
     private final class NativeSpeechBridge {
         @JavascriptInterface
         public boolean speak(String text) {
-            if (!ttsReady || textToSpeech == null || text == null || text.trim().isEmpty()) return false;
-            try {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education");
-                    return result == TextToSpeech.SUCCESS;
-                } else {
-                    @SuppressWarnings("deprecation")
-                    int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-                    return result == TextToSpeech.SUCCESS;
-                }
-            } catch (Exception error) {
-                return false;
+            if (text == null || text.trim().isEmpty()) return false;
+            if (!ttsReady || textToSpeech == null) {
+                pendingNativeSpeech = text;
+                return true;
             }
+            return speakNativeNow(text);
         }
 
         @JavascriptInterface
         public void stop() {
+            pendingNativeSpeech = "";
             if (textToSpeech != null) {
                 try { textToSpeech.stop(); } catch (Exception ignored) {}
             }
