@@ -5,6 +5,15 @@
   var selectedVoice = null;
   var pendingText = "";
   var speechUnlocked = false;
+  var platform = (function(){
+    var ua = String(navigator && navigator.userAgent || "");
+    if (/Android/i.test(ua)) return "android";
+    if (/iPad|iPhone|iPod/i.test(ua)) return "ios";
+    if (/Macintosh|Mac OS X/i.test(ua)) return "macos";
+    if (/Windows/i.test(ua)) return "windows";
+    if (/CrOS/i.test(ua)) return "chromeos";
+    return "web";
+  })();
 
   function setVoiceStatus(message) {
     try {
@@ -23,13 +32,16 @@
     var englishVoices = voices.filter(function (voice) {
       return /^en(-|$)/i.test(String(voice.lang || ""));
     });
-    var maleVoiceHints = /(?:male|man|microsoft\s+(?:david|mark|ryan|guy)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|alex|daniel|fred|james|john|tom)/i;
-    var femaleVoiceHints = /(?:female|woman|microsoft\s+(?:zira|hazel|susan)|google\s+(?:uk\s+english\s+female|us\s+english\s+female)|samantha|karen|moira|victoria)/i;
+    var maleVoiceHints = /(?:male|man|microsoft\s+(?:david|mark|ryan|guy)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|alex|daniel|fred|james|john|tom|aaron|arthur|oliver)/i;
+    var femaleVoiceHints = /(?:female|woman|microsoft\s+(?:zira|hazel|susan)|google\s+(?:uk\s+english\s+female|us\s+english\s+female)|samantha|karen|moira|victoria|ava|allison)/i;
     var maleEnglishVoice = englishVoices.find(function (voice) {
       return maleVoiceHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
     });
     selectedVoice =
       maleEnglishVoice ||
+      englishVoices.find(function (voice) {
+        return voice.localService && maleVoiceHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
+      }) ||
       englishVoices.find(function (voice) { return voice.localService; }) ||
       englishVoices[0] ||
       voices[0];
@@ -56,6 +68,9 @@
     text = String(text || "").trim();
     if (!text) return false;
 
+    // Native wrapper bridge: Android, iOS/iPadOS or another host may provide
+    // PacificEducationNativeTTS. Web/PWA falls through to the device browser
+    // speech engine. The page-level API stays identical on every platform.
     // The Android pilot uses the device's native TextToSpeech engine.
     // This avoids Android WebView speechSynthesis implementations that can
     // report success but produce no audible output.
@@ -232,6 +247,12 @@
   }
 
   window.PacificEducationSpeech = {
+    getPlatform: function () { return platform; },
+    getEngine: function () {
+      if (window.PacificEducationNativeTTS && typeof window.PacificEducationNativeTTS.speak === "function") return "native";
+      if (window.speechSynthesis) return "web-speech";
+      return "unavailable";
+    },
     chooseVoice: chooseVoice,
     speakText: speakText,
     stopSpeech: stopSpeech,
