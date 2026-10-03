@@ -45,20 +45,49 @@
   function enforceGuided(){
     var step=currentGuidedStep();
     if(step===null) return false;
-    // Guided pages already have one authoritative Voice Instruction + manual Next
-    // renderer in index.html. Do not inject a second navigation block.
-    return true;
-    var wrapper=document.querySelector(".pacific-flow-next button:not([hidden])");
-    if(!wrapper) return false;
-    var sectionId=wrapper.closest(".pacific-flow-next") && wrapper.closest(".pacific-flow-next").id;
-    var section=document.querySelector('[id$="Selection"],#pacificEducationWelcome,#pacificEducationIdentityRegistration,#prototypeAccess,#dailyLesson,#dailyLessonPracticeStage,#assessments');
-    if(section){
-      var heading=section.querySelector("h1,h2,h3");
-      var text=heading ? heading.textContent.trim() : "this Pacific Education step";
-      var instruction="This is "+text+". Follow the written instructions, or use Voice Instruction. When you are ready, press Next.";
-      var host=wrapper.closest(".pacific-flow-next").parentElement;
-      if(host && !host.querySelector("[data-pe-mandated-navigation]")){
-        addControl(host,instruction,function(){ wrapper.click(); });
+    var ids=["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
+    var instructions=[
+      "Welcome to Pacific Education. Press Next to begin registration.",
+      "Registration page. Complete the pilot registration, then press Next.",
+      "Prototype Access page. Start the authorized pilot test, then press Next.",
+      "Learning Level page. Choose the class or level, then press Next.",
+      "Subject page. Choose the curriculum subject, then press Next.",
+      "Term page. Choose the school term, then press Next.",
+      "Learning Capability page. Choose the learner pathway, then press Next.",
+      "Daily Activities page. Complete the assigned activity, then press Next.",
+      "Practice page. Complete practice, then press Next.",
+      "Assessment page. Complete the assessment, then continue to Teacher Calendar and Review."
+    ];
+    var button=document.getElementById(ids[step]||"");
+    if(button){
+      button.hidden=false;
+      button.disabled=false;
+      button.setAttribute("aria-label","Next page. You can also say Next.");
+      if(button.getAttribute("data-pe-guided-bound")!=="true"){
+        button.setAttribute("data-pe-guided-bound","true");
+        button.addEventListener("click",function(){
+          var nextStep=step+1;
+          if(nextStep>10)return;
+          document.body.classList.add("pe-guided-flow");
+          document.body.setAttribute("data-pe-flow-step",String(nextStep));
+          try{sessionStorage.setItem("pacificEducationGuidedStep",String(nextStep));}catch(_){}
+          setTimeout(function(){
+            var active=document.querySelector(
+              nextStep===0?"#pacificEducationWelcome":
+              nextStep===1?"#pacificEducationIdentityRegistration":
+              nextStep===2?"#prototypeAccess":
+              nextStep===3?"#levelSelection":
+              nextStep===4?"#subjectSelection":
+              nextStep===5?"#termSelection":
+              nextStep===6?"#capabilitySelection":
+              nextStep===7?"#dailyLesson":
+              nextStep===8?"#dailyLessonPracticeStage":
+              nextStep===9?"#assessments":"#teacherCalendarSection"
+            );
+            if(active&&active.scrollIntoView)active.scrollIntoView({behavior:"smooth",block:"start"});
+            speak(instructions[nextStep]||"Next page.");
+          },120);
+        });
       }
     }
     return true;
