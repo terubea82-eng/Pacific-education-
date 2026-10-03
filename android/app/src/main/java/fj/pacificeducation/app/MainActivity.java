@@ -27,7 +27,7 @@ import java.util.Set;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=20261003-voice-repair";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=20261004-pilot-voice";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
