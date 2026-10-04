@@ -271,7 +271,19 @@ public final class MainActivity extends Activity {
         webView = new WebView(this);
         configureWebView(webView);
         setContentView(webView);
+        scheduleNativeWelcomeVoice();
         webView.loadUrl(APP_URL);
+    }
+
+    private void scheduleNativeWelcomeVoice() {
+        welcomeHandler.removeCallbacksAndMessages(AUTO_WELCOME_TAG);
+        welcomeHandler.postAtTime(new Runnable() {
+            @Override public void run() {
+                if (!speakNativeNow(WELCOME_TEXT) && !ttsReady) {
+                    pendingNativeSpeech = WELCOME_TEXT;
+                }
+            }
+        }, AUTO_WELCOME_TAG, android.os.SystemClock.uptimeMillis() + 5000L);
     }
 
     private void configureWebView(WebView view) {
