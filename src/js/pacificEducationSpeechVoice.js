@@ -259,23 +259,33 @@
     if (window.__pacificEducationAutoWelcomeVoiceScheduled) return;
     window.__pacificEducationAutoWelcomeVoiceScheduled = true;
 
-    window.setTimeout(function () {
-      var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
+    var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
+
+    function attemptAutomaticWelcome() {
       try {
         chooseVoice();
         var nativeBridge = window.PacificEducationNativeTTS;
         if (nativeBridge && typeof nativeBridge.scheduleWelcome === "function") {
           nativeBridge.scheduleWelcome();
           setVoiceStatus("Automatic welcome voice scheduled for 5 seconds.");
-          return;
+          return true;
         }
         var ok = speakText(welcomeText);
-        if (!ok) {
-          setVoiceStatus("Automatic welcome voice was attempted. If this browser blocks autoplay speech, press Play at the top-right.");
+        if (ok) {
+          setVoiceStatus("Automatic welcome voice started.");
+          return true;
         }
       } catch (error) {
         console.warn("Pacific Education automatic welcome voice failed:", error);
-        setVoiceStatus("Automatic welcome voice was attempted. Press Play at the top-right if required.");
+      }
+      return false;
+    }
+
+    window.setTimeout(function () {
+      var started = attemptAutomaticWelcome();
+      if (!started) {
+        window.setTimeout(attemptAutomaticWelcome, 600);
+        window.setTimeout(attemptAutomaticWelcome, 1500);
       }
     }, 5000);
   }
