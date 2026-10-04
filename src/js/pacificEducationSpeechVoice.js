@@ -267,14 +267,25 @@
         chooseVoice();
         var nativeBridge = window.PacificEducationNativeTTS;
         if (nativeBridge && typeof nativeBridge.speak === "function") {
-          var nativeStarted = nativeBridge.speak(introText);
-          if (nativeStarted) {
-            setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
-            window.setTimeout(function () {
-              try { nativeBridge.speak(welcomeText); } catch (_) { speakText(welcomeText); }
-            }, 2600);
-            return true;
+          var nativeReady = typeof nativeBridge.available !== "function" || nativeBridge.available();
+          if (nativeReady) {
+            var nativeStarted = nativeBridge.speak(introText);
+            if (nativeStarted) {
+              setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
+              window.setTimeout(function () {
+                try {
+                  if (typeof nativeBridge.speak === "function" && (typeof nativeBridge.available !== "function" || nativeBridge.available())) {
+                    nativeBridge.speak(welcomeText);
+                  } else {
+                    speakText(welcomeText);
+                  }
+                } catch (_) { speakText(welcomeText); }
+              }, 2600);
+              return true;
+            }
           }
+          setVoiceStatus("AI voice engine is starting. Retrying automatically.");
+          return false;
         }
 
         if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
@@ -313,6 +324,8 @@
       if (!started) {
         window.setTimeout(speakAiIntroThenWelcome, 600);
         window.setTimeout(speakAiIntroThenWelcome, 1500);
+        window.setTimeout(speakAiIntroThenWelcome, 3000);
+        window.setTimeout(speakAiIntroThenWelcome, 5000);
       }
     }, 5000);
   }
