@@ -52,10 +52,54 @@
     return false;
   }
 
+  function activatePilotFeature(feature) {
+    var allowed = [
+      "registration","prototypeAccess","learningLevel","subject","term",
+      "capability","dailyActivities","practice","assessment","coverage",
+      "alphabetAssessment","phonicsAssessment","teacherDashboard",
+      "parentDashboard","specialEducation","reviewer","voice","accessibility",
+      "mailbox","progress"
+    ];
+    var protectedFeatures = [
+      "productionAuth","productionPayments","buyPlans","ownerPaymentControl",
+      "productionDatabase","productionEntitlements"
+    ];
+    feature = String(feature || "").trim();
+    if (protectedFeatures.indexOf(feature) !== -1 || allowed.indexOf(feature) === -1) {
+      return {active:false, feature:feature, reason:"Pilot integrity boundary blocked this feature activation."};
+    }
+    return {
+      active:true,
+      feature:feature,
+      pilotOnly:true,
+      productionAuthority:false,
+      productionEligible:false
+    };
+  }
+
+  function activationSnapshot() {
+    return {
+      state:"secure-pilot-active",
+      requiredSequence:[
+        "welcome","registration","prototypeAccess","learningLevel","subject",
+        "term","capability","dailyActivities","practice","assessment","coverage"
+      ],
+      questionTypes:[
+        "multiple_choice","true_false","matching","short_answer","long_answer",
+        "text_response","audio_response","answer_space"
+      ],
+      allClassesEnabled:true,
+      pilotOnly:true,
+      productionEligible:false
+    };
+  }
+
   window.PacificEducationPilotIntegrityGuard = Object.freeze({
     version: VERSION,
     contract: CONTRACT,
     snapshot: snapshot,
+    activatePilotFeature: activatePilotFeature,
+    activationSnapshot: activationSnapshot,
     assertPilotOnly: assertPilotOnly,
     isProductionAuthorized: isProductionAuthorized
   });
