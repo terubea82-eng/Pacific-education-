@@ -88,33 +88,39 @@
     return el;
   }
 
-  function addVoiceControl(host, text){
-    if(!host || host.querySelector("[data-pe-page-voice-control]")) return;
+  var topRightPlayButton = null;
+  var topRightStopButton = null;
+  var currentPageVoiceText = "";
+
+  function ensureTopRightVoiceControls(){
+    if(topRightPlayButton) return;
     var wrap = document.createElement("div");
-    wrap.setAttribute("data-pe-page-voice-control","true");
-    wrap.style.cssText = "display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0;padding:10px;border:2px solid currentColor;border-radius:8px;";
+    wrap.setAttribute("data-pe-top-right-voice-controls","true");
+    wrap.style.cssText = "position:fixed;top:10px;right:10px;z-index:99999;display:flex;gap:6px;align-items:center;";
 
-    var voice = document.createElement("button");
-    voice.type = "button";
-    voice.textContent = "🔊 Voice Instruction";
-    voice.setAttribute("aria-label","Read this Pacific Education page aloud");
-    voice.addEventListener("click", function(){ speak(text); });
+    topRightPlayButton = document.createElement("button");
+    topRightPlayButton.type = "button";
+    topRightPlayButton.textContent = "▶️ Play";
+    topRightPlayButton.setAttribute("aria-label","Play audio instructions for this page");
+    topRightPlayButton.style.cssText = "min-height:44px;padding:10px 14px;font-weight:bold;border:2px solid currentColor;border-radius:8px;background:Canvas;color:CanvasText;box-shadow:0 2px 8px rgba(0,0,0,.2);";
+    topRightPlayButton.addEventListener("click", function(){ speak(currentPageVoiceText); });
 
-    var stopButton = document.createElement("button");
-    stopButton.type = "button";
-    stopButton.textContent = "⏹ Stop Voice";
-    stopButton.setAttribute("aria-label","Stop Pacific Education voice");
-    stopButton.addEventListener("click", stop);
+    topRightStopButton = document.createElement("button");
+    topRightStopButton.type = "button";
+    topRightStopButton.textContent = "⏹";
+    topRightStopButton.setAttribute("aria-label","Stop Pacific Education voice");
+    topRightStopButton.style.cssText = "min-height:44px;padding:10px 12px;font-weight:bold;border:2px solid currentColor;border-radius:8px;background:Canvas;color:CanvasText;box-shadow:0 2px 8px rgba(0,0,0,.2);";
+    topRightStopButton.addEventListener("click", stop);
 
-    var status = document.createElement("span");
-    status.setAttribute("role","status");
-    status.setAttribute("aria-live","polite");
-    status.textContent = "Voice active. Page instructions are read automatically.";
+    wrap.appendChild(topRightPlayButton);
+    wrap.appendChild(topRightStopButton);
+    document.body.appendChild(wrap);
+  }
 
-    wrap.appendChild(voice);
-    wrap.appendChild(stopButton);
-    wrap.appendChild(status);
-    host.insertBefore(wrap, host.firstChild);
+  function addVoiceControl(host, text){
+    currentPageVoiceText = String(text || "").trim();
+    ensureTopRightVoiceControls();
+    if(host) host.querySelectorAll("[data-pe-page-voice-control]").forEach(function(el){ el.remove(); });
   }
 
   function announcePage(page, reason){
