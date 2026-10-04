@@ -6,6 +6,8 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.Voice;
 import android.view.View;
@@ -40,6 +42,8 @@ public final class MainActivity extends Activity {
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
     private String pendingNativeSpeech = "";
+    private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
+    private static final String AUTO_WELCOME_TAG = "pacific-education-auto-welcome";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +57,6 @@ public final class MainActivity extends Activity {
                 if (ttsReady) {
                     selectPreferredVoice();
                     textToSpeech.setSpeechRate(0.95f);
-                    speakNativeNow(WELCOME_TEXT);
                     if (!pendingNativeSpeech.isEmpty()) {
                         String queued = pendingNativeSpeech;
                         pendingNativeSpeech = "";
@@ -124,6 +127,19 @@ public final class MainActivity extends Activity {
                 return true;
             }
             return speakNativeNow(text);
+        }
+
+        @JavascriptInterface
+        public boolean scheduleWelcome() {
+            welcomeHandler.removeCallbacksAndMessages(AUTO_WELCOME_TAG);
+            welcomeHandler.postAtTime(new Runnable() {
+                @Override public void run() {
+                    if (!speakNativeNow(WELCOME_TEXT) && !ttsReady) {
+                        pendingNativeSpeech = WELCOME_TEXT;
+                    }
+                }
+            }, AUTO_WELCOME_TAG, android.os.SystemClock.uptimeMillis() + 5000L);
+            return true;
         }
 
         @JavascriptInterface
@@ -335,6 +351,7 @@ public final class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        welcomeHandler.removeCallbacksAndMessages(AUTO_WELCOME_TAG);
         if (webView != null) {
             webView.stopLoading();
             webView.destroy();
