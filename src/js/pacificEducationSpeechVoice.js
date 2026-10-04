@@ -108,8 +108,6 @@
         console.warn("Pacific Education speech error:", code);
         setVoiceStatus("Voice error: " + (code || "unknown") + ".");
 
-        // Browser autoplay/user-gesture policy can reject page-load speech.
-        // Keep the text queued so the first user interaction can retry it.
         if (code === "not-allowed" || code === "synthesis-unavailable" || code === "voice-unavailable") {
           pendingText = text;
           speechUnlocked = false;
@@ -257,6 +255,25 @@
     }
   }
 
+  function scheduleAutomaticWelcomeVoice() {
+    if (window.__pacificEducationAutoWelcomeVoiceScheduled) return;
+    window.__pacificEducationAutoWelcomeVoiceScheduled = true;
+
+    window.setTimeout(function () {
+      var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
+      try {
+        chooseVoice();
+        var ok = speakText(welcomeText);
+        if (!ok) {
+          setVoiceStatus("Automatic welcome voice was attempted. If the browser blocks automatic speech, press Play at the top-right.");
+        }
+      } catch (error) {
+        console.warn("Pacific Education automatic welcome voice was blocked:", error);
+        setVoiceStatus("Automatic welcome voice was attempted. Press Play at the top-right if required.");
+      }
+    }, 5000);
+  }
+
   window.PacificEducationSpeech = {
     getPlatform: function () { return platform; },
     getEngine: function () {
@@ -279,9 +296,15 @@
 
   bindVoiceButtons();
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", bindVoiceButtons);
+    document.addEventListener("DOMContentLoaded", function () {
+      bindVoiceButtons();
+      scheduleAutomaticWelcomeVoice();
+    });
   } else {
-    setTimeout(bindVoiceButtons, 0);
+    setTimeout(function () {
+      bindVoiceButtons();
+      scheduleAutomaticWelcomeVoice();
+    }, 0);
   }
   chooseVoice();
   setTimeout(refreshVoiceSelection, 250);
