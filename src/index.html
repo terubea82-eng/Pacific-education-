@@ -478,6 +478,30 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   setTimeout(bindRegistration,1500);
 })();
 </script>
+<script id="pe-secure-pilot-activation">
+(function(){
+  "use strict";
+  function activate(){
+    var guard=window.PacificEducationPilotIntegrityGuard;
+    var required=["registration","prototypeAccess","learningLevel","subject","term","capability","dailyActivities","practice","assessment","coverage","alphabetAssessment","phonicsAssessment","teacherDashboard","parentDashboard","specialEducation","reviewer","voice","accessibility","mailbox","progress"];
+    if(!guard||typeof guard.activatePilotFeature!=="function") return;
+    document.body.setAttribute("data-pe-pilot-activation","secure");
+    document.body.setAttribute("data-pe-pilot-feature-state","active");
+    required.forEach(function(feature){ guard.activatePilotFeature(feature); });
+    var snap=typeof guard.activationSnapshot==="function"?guard.activationSnapshot():null;
+    if(snap){
+      document.body.setAttribute("data-pe-question-types",snap.questionTypes.join(","));
+      document.body.setAttribute("data-pe-all-classes-enabled","true");
+    }
+    ["buyPlans","pacificEducationPaymentLinksAlways","pacificEducationInstitutionFees","pacificEducationUniversityFeeWorkflow","pacificEducationAccessEntitlement"].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el){el.hidden=true;el.setAttribute("data-pe-protected","true");}
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",activate);else activate();
+  window.addEventListener("load",activate);
+})();
+</script>
 </body></html>
 <!-- GitHub pilot recheck trigger: guided flow controls -->
 
