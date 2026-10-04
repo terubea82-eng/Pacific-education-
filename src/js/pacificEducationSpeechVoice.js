@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1019 */
+/* Pacific Education — Speech Voice Controller v1020 — AI-first mandatory welcome */
 (function (window) {
   "use strict";
 
@@ -261,31 +261,58 @@
 
     var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
 
-    function attemptAutomaticWelcome() {
+    function speakAiIntroThenWelcome() {
+      var introText = "Pacific Education AI voice is active. I will now welcome you to Pacific Education.";
       try {
         chooseVoice();
         var nativeBridge = window.PacificEducationNativeTTS;
-        if (nativeBridge && typeof nativeBridge.scheduleWelcome === "function") {
-          nativeBridge.scheduleWelcome();
-          setVoiceStatus("Automatic welcome voice scheduled for 5 seconds.");
-          return true;
+        if (nativeBridge && typeof nativeBridge.speak === "function") {
+          var nativeStarted = nativeBridge.speak(introText);
+          if (nativeStarted) {
+            setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
+            window.setTimeout(function () {
+              try { nativeBridge.speak(welcomeText); } catch (_) { speakText(welcomeText); }
+            }, 2600);
+            return true;
+          }
         }
-        var ok = speakText(welcomeText);
-        if (ok) {
-          setVoiceStatus("Automatic welcome voice started.");
-          return true;
+
+        if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
+          return false;
         }
+
+        var synth = window.speechSynthesis;
+        try { synth.cancel(); synth.resume(); } catch (_) {}
+        var currentVoice = selectedVoice || chooseVoice();
+        var introUtterance = new window.SpeechSynthesisUtterance(introText);
+        if (currentVoice) introUtterance.voice = currentVoice;
+        introUtterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
+        introUtterance.rate = 0.95;
+        introUtterance.pitch = 1;
+        introUtterance.volume = 1;
+        introUtterance.onstart = function () {
+          setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
+        };
+        introUtterance.onend = function () {
+          speakText(welcomeText);
+        };
+        introUtterance.onerror = function () {
+          window.setTimeout(function () { speakText(welcomeText); }, 500);
+        };
+        synth.speak(introUtterance);
+        synth.resume();
+        return true;
       } catch (error) {
-        console.warn("Pacific Education automatic welcome voice failed:", error);
+        console.warn("Pacific Education AI-first welcome voice failed:", error);
       }
       return false;
     }
 
     window.setTimeout(function () {
-      var started = attemptAutomaticWelcome();
+      var started = speakAiIntroThenWelcome();
       if (!started) {
-        window.setTimeout(attemptAutomaticWelcome, 600);
-        window.setTimeout(attemptAutomaticWelcome, 1500);
+        window.setTimeout(speakAiIntroThenWelcome, 600);
+        window.setTimeout(speakAiIntroThenWelcome, 1500);
       }
     }, 5000);
   }
