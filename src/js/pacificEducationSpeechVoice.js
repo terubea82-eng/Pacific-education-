@@ -262,7 +262,7 @@
     var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
 
     function speakAiIntroThenWelcome() {
-      var introText = "Pacific Education AI voice is active. I will now welcome you to Pacific Education.";
+      var introText = "Pacific Education AI playback voice is active. I will guide you through this pilot.";
       try {
         chooseVoice();
         var nativeBridge = window.PacificEducationNativeTTS;
@@ -271,14 +271,22 @@
           if (nativeReady) {
             var nativeStarted = nativeBridge.speak(introText);
             if (nativeStarted) {
-              setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
+              setVoiceStatus("AI playback voice is speaking first.");
               window.setTimeout(function () {
+                var secondText = "First, listen to the instructions. Then complete each page in order and use Next when you are ready.";
                 try {
                   if (typeof nativeBridge.speak === "function" && (typeof nativeBridge.available !== "function" || nativeBridge.available())) {
-                    nativeBridge.speak(welcomeText);
+                    nativeBridge.speak(secondText);
+                    setVoiceStatus("AI playback instructions are speaking. Welcome voice follows.");
                   } else {
-                    speakText(welcomeText);
+                    speakText(secondText);
                   }
+                  window.setTimeout(function () {
+                    try {
+                      if (typeof nativeBridge.speak === "function" && (typeof nativeBridge.available !== "function" || nativeBridge.available())) nativeBridge.speak(welcomeText);
+                      else speakText(welcomeText);
+                    } catch (_) { speakText(welcomeText); }
+                  }, 2600);
                 } catch (_) { speakText(welcomeText); }
               }, 2600);
               return true;
@@ -305,7 +313,18 @@
           setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
         };
         introUtterance.onend = function () {
-          speakText(welcomeText);
+          var secondText = "First, listen to the instructions. Then complete each page in order and use Next when you are ready.";
+          try {
+            var secondUtterance = new window.SpeechSynthesisUtterance(secondText);
+            var v = selectedVoice || chooseVoice();
+            if (v) secondUtterance.voice = v;
+            secondUtterance.lang = v && v.lang ? v.lang : "en-US";
+            secondUtterance.rate = 0.95; secondUtterance.pitch = 1; secondUtterance.volume = 1;
+            secondUtterance.onend = function(){ speakText(welcomeText); };
+            secondUtterance.onerror = function(){ speakText(welcomeText); };
+            synth.speak(secondUtterance);
+            synth.resume();
+          } catch (_) { speakText(welcomeText); }
         };
         introUtterance.onerror = function () {
           window.setTimeout(function () { speakText(welcomeText); }, 500);
