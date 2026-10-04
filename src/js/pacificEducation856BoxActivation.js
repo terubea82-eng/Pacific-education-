@@ -155,6 +155,75 @@
       }
     });
 
+    /* Mandatory cross-device voice + interaction bridge.
+     * Preserve the 856 engine: every important pilot control gets a spoken action cue,
+     * dynamic activity buttons are covered, and internal links are re-scanned after renders.
+     */
+    function installInteractiveVoiceBridge(){
+      if(document.body.getAttribute("data-pe-856-voice-bridge")==="true") return;
+      document.body.setAttribute("data-pe-856-voice-bridge","true");
+
+      function importantLabel(el){
+        return String(el && (el.getAttribute("aria-label") || el.textContent || el.value || "") || "").replace(/\\s+/g," ").trim();
+      }
+
+      function prepare(root){
+        var scope=root||document;
+        scope.querySelectorAll("button,a[href^='#'],summary").forEach(function(el){
+          if(el.getAttribute("data-pe-856-interactive-ready")==="true") return;
+          el.setAttribute("data-pe-856-interactive-ready","true");
+          el.style.pointerEvents="auto";
+          el.style.touchAction="manipulation";
+          var label=importantLabel(el);
+          if(label && !el.getAttribute("aria-label") && el.tagName.toLowerCase()==="button") el.setAttribute("aria-label",label);
+        });
+      }
+
+      prepare(document);
+
+      document.addEventListener("focusin",function(e){
+        var el=e.target;
+        if(!el || !el.matches || !el.matches("button,a[href^='#'],summary")) return;
+        var label=importantLabel(el);
+        if(!label || /^(▶️ Play|⏹|🔇 Stop Speech|🔊 Listen to question)$/i.test(label)) return;
+        if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function"){
+          window.PacificEducationSpeech.speakText(label.replace(/^➡️\\s*/,"") + ".");
+        } else if(typeof window.speakText==="function") {
+          window.speakText(label + ".");
+        }
+      },true);
+
+      document.addEventListener("click",function(e){
+        var el=e.target && e.target.closest ? e.target.closest("button,a[href^='#'],summary") : null;
+        if(!el) return;
+        var label=importantLabel(el);
+        if(!label) return;
+        var lower=label.toLowerCase();
+        if(/(math|mathematics|english|phonics|daily activit|practice|assessment|alphabet|submit|continue learning|next)/.test(lower)){
+          var message=label.replace(/^➡️\\s*/,"").trim()+".";
+          if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function") window.PacificEducationSpeech.speakText(message);
+          else if(typeof window.speakText==="function") window.speakText(message);
+        }
+      },false);
+
+      var observer=new MutationObserver(function(mutations){
+        mutations.forEach(function(m){ if(m.addedNodes && m.addedNodes.length) prepare(m.target); });
+      });
+      observer.observe(document.body,{childList:true,subtree:true});
+    }
+
+    installInteractiveVoiceBridge();
+    window.setTimeout(installInteractiveVoiceBridge,500);
+    window.setTimeout(function(){
+      document.querySelectorAll('a[href^="#"]').forEach(function(link){
+        var targetId=(link.getAttribute("href")||"").slice(1);
+        if(targetId && document.getElementById(targetId) && link.getAttribute("data-pe-856-link-bound")!=="true"){
+          link.setAttribute("data-pe-856-link-bound","true");
+          link.addEventListener("click",function(e){ if(e)e.preventDefault(); go(targetId); },false);
+        }
+      });
+    },1200);
+
     var status=document.getElementById("systemStatus");
     if(status)status.textContent="Pacific Education 856-compatible pilot activation is active. Pilot boxes enabled; production/payment gates remain locked.";
   }
