@@ -338,10 +338,17 @@
         student: [
           ["studentStartLearning","1. Start Learning"],
           ["studentAssignedClassContext","2. My Assigned Class / Year / Teacher"],
-          ["dailyLesson","3. Daily Activities — Days 1–365"],
-          ["assessments","4. Assessments"],
-          ["pacificEducationStudentProgressDashboard","5. My Progress"],
-          ["pacificEducationHomeSubmission","6. Home Continuity"]
+          ["learningPlatform","3. Learning Tools"],
+          ["levelSelection","4. Class / Level"],
+          ["subjectSelection","5. Subject"],
+          ["termSelection","6. Term"],
+          ["dailyLesson","7. Daily Activities — Days 1–365"],
+          ["dailyLessonPracticeStage","8. Practice — All Student Practice Activities"],
+          ["assessments","9. Assessments — All Student Assessments"],
+          ["pacificEducationCoverageDashboard","10. Curriculum Coverage"],
+          ["pacificEducationStudentProgressDashboard","11. My Progress"],
+          ["pacificEducationHomeSubmission","12. Home Continuity"],
+          ["pacificEducationWeekendHolidaySupplementaryActivities","13. Weekend & Holiday Supplementary Activities"]
         ],
         teacher: [
           ["teacherDashboard","1. Teacher Dashboard"],
