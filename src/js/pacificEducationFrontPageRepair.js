@@ -8,7 +8,7 @@
 (function(window, document){
   "use strict";
 
-  var VERSION = "1.2.0";
+  var VERSION = "1.3.0";
   var WELCOME_TEXT = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
   var bound = false;
   var flow = [
@@ -115,13 +115,19 @@
     if (!el) return false;
     if (el.getAttribute("data-pe-front-repair") === "true") return true;
     el.setAttribute("data-pe-front-repair", "true");
-    el.addEventListener("click", function(event){
-      if (event) event.preventDefault();
+    var handler = function(event){
+      if (event) { event.preventDefault(); event.stopPropagation(); }
       try { return fn(event); } catch (e) {
         setStatus("Control error detected. Backup recovery is running.");
         return false;
       }
-    });
+    };
+    el.addEventListener("click", handler, true);
+    el.onclick = handler;
+    el.style.pointerEvents = "auto";
+    el.style.touchAction = "manipulation";
+    el.style.position = el.style.position || "relative";
+    el.style.zIndex = "100";
     return true;
   }
 
