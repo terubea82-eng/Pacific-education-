@@ -68,12 +68,6 @@
     text = String(text || "").trim();
     if (!text) return false;
 
-    // Native wrapper bridge: Android, iOS/iPadOS or another host may provide
-    // PacificEducationNativeTTS. Web/PWA falls through to the device browser
-    // speech engine. The page-level API stays identical on every platform.
-    // The Android pilot uses the device's native TextToSpeech engine.
-    // This avoids Android WebView speechSynthesis implementations that can
-    // report success but produce no audible output.
     if (nativeSpeak(text)) return true;
 
     if (!window.speechSynthesis ||
@@ -85,8 +79,6 @@
 
     pendingText = text;
     var synth = window.speechSynthesis;
-    // Some Android browsers/WebViews return from speak() successfully but remain paused.
-    // Force a clean queue and resume before and immediately after enqueueing.
     try { synth.cancel(); } catch (_) {}
     try { if (typeof synth.resume === "function") synth.resume(); } catch (_) {}
 
@@ -115,6 +107,16 @@
         var code = event && event.error;
         console.warn("Pacific Education speech error:", code);
         setVoiceStatus("Voice error: " + (code || "unknown") + ".");
+
+        // Browser autoplay/user-gesture policy can reject page-load speech.
+        // Keep the text queued so the first user interaction can retry it.
+        if (code === "not-allowed" || code === "synthesis-unavailable" || code === "voice-unavailable") {
+          pendingText = text;
+          speechUnlocked = false;
+          setVoiceStatus("Voice waiting for first tap. Tap Hear Welcome.");
+          return;
+        }
+
         if (pendingText !== text) return;
 
         if (currentVoice && code && code !== "interrupted") {
@@ -132,6 +134,12 @@
             fallback.onend = function () { pendingText = ""; setVoiceStatus("Voice ready."); };
             fallback.onerror = function (retryEvent) {
               console.warn("Pacific Education fallback speech error:", retryEvent && retryEvent.error);
+              if (retryEvent && (retryEvent.error === "not-allowed" || retryEvent.error === "synthesis-unavailable" || retryEvent.error === "voice-unavailable")) {
+                pendingText = text;
+                speechUnlocked = false;
+                setVoiceStatus("Voice waiting for first tap. Tap Hear Welcome.");
+                return;
+              }
               pendingText = "";
               setVoiceStatus("Voice error: " + ((retryEvent && retryEvent.error) || "unknown") + ".");
             };
@@ -147,10 +155,9 @@
 
       synth.speak(utterance);
       if (typeof synth.resume === "function") synth.resume();
-      // Retry once if the engine reports speaking=false immediately after enqueue.
       setTimeout(function () {
         try {
-          if (pendingText === text && !synth.speaking) {
+          if (pendingText === text && !synth.speaking && speechUnlocked) {
             synth.cancel();
             synth.resume();
             synth.speak(utterance);
@@ -161,8 +168,8 @@
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
-      pendingText = "";
-      setVoiceStatus("Voice error.");
+      pendingText = text;
+      setVoiceStatus("Voice waiting for first tap. Tap Hear Welcome.");
       return false;
     }
   }
@@ -183,7 +190,7 @@
 
   function retryPendingSpeech() {
     chooseVoice();
-    if (pendingText && selectedVoice) {
+    if (pendingText && (speechUnlocked || window.PacificEducationNativeTTS)) {
       var text = pendingText;
       pendingText = "";
       speakText(text);
@@ -196,7 +203,11 @@
         window.speechSynthesis.resume();
       }
       speechUnlocked = true;
-      if (window.PacificEducationNativeTTS &&
+      if (pendingText) {
+        var queued = pendingText;
+        pendingText = "";
+        speakText(queued);
+      } else if (window.PacificEducationNativeTTS &&
           typeof window.PacificEducationNativeTTS.available === "function" &&
           window.PacificEducationNativeTTS.available()) {
         setVoiceStatus("Native voice engine ready. Tap Hear Welcome.");
@@ -273,7 +284,6 @@
     setTimeout(bindVoiceButtons, 0);
   }
   chooseVoice();
-  // Android/Chrome can populate the voice list asynchronously.
   setTimeout(refreshVoiceSelection, 250);
   setTimeout(refreshVoiceSelection, 1000);
 })(window);
