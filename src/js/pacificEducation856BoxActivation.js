@@ -64,6 +64,32 @@
       if(el){el.hidden=true;el.setAttribute("data-pe-protected","true");}
     });
 
+    /* Mandatory internal-link repair: every pilot navigation link must open its target box. */
+    document.querySelectorAll('a[href^="#"]').forEach(function(link){
+      if(link.getAttribute("data-pe-856-link-bound")==="true") return;
+      var href=link.getAttribute("href")||"";
+      var targetId=href.slice(1);
+      if(!targetId || !document.getElementById(targetId)) return;
+      link.setAttribute("data-pe-856-link-bound","true");
+      link.addEventListener("click",function(e){
+        if(e){e.preventDefault();}
+        go(targetId);
+      },false);
+      link.style.pointerEvents="auto";
+      link.style.touchAction="manipulation";
+    });
+
+    /* Mandatory pilot activity targets: reveal and keep the complete learning path callable. */
+    [
+      "pacificEducationIdentityRegistration","prototypeAccess","levelSelection","subjectSelection",
+      "termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage","assessments",
+      "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
+      "pacificEducationCoverageDashboard","pacificEducationStudentProgressDashboard",
+      "pacificEducationTeacherClassDashboard","pacificEducationTeacherEvidence",
+      "pacificEducationExternalReviewerPortal","pacificEducationAIConversation",
+      "pacificGuardianCommentSection","pacificEducationMailbox","systemStatus"
+    ].forEach(show);
+
     /* Registration and guided Next sequence. */
     bind("userRegistrationOpenButton",function(){
       var f=document.getElementById("userRegistrationForm");
