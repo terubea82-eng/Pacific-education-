@@ -49,6 +49,40 @@ html[data-text-scale="x-large"]{font-size:125%}
 #pacificEducationStartButton{font-size:1.05em;font-weight:bold;padding:12px 22px;border-radius:8px}
 #pacificEducationAppMenu{margin:0 0 18px}
 #pacificEducationAppMenu summary{cursor:pointer;font-weight:bold;padding:10px}
+
+
+/* Responsive pilot shell — phone and computer safe; does not alter the 856 voice engine. */
+*,*::before,*::after{box-sizing:border-box}
+img,video,canvas,svg{max-width:100%;height:auto}
+input,select,textarea{max-width:100%;box-sizing:border-box}
+button,a,summary{touch-action:manipulation}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid currentColor;outline-offset:2px}
+table{max-width:100%}
+pre{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+@media (max-width:700px){
+ body{font-size:16px;overflow-x:hidden}
+ header{padding:14px}
+ main{width:100%;padding:10px}
+ section{padding:14px;margin-bottom:16px;border-radius:7px}
+ #pacificEducationWelcome{padding:14px}
+ #pacificEducationWelcomeContent{padding:12px 2px 4px}
+ #pacificEducationAccessibilityControls{gap:4px}
+ #pacificEducationAccessibilityControls button{flex:1 1 140px}
+ button{min-height:44px;max-width:100%}
+ nav[aria-label="Pacific Education main navigation"],nav[aria-label="App menu links"]{display:flex;flex-wrap:wrap;gap:6px;overflow-wrap:anywhere}
+ nav[aria-label="Pacific Education main navigation"] a,nav[aria-label="App menu links"] a{max-width:100%;overflow-wrap:anywhere}
+ table{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}
+ .pacific-flow-next{position:sticky;bottom:4px;background:inherit}
+ .pacific-flow-next button{width:auto;min-width:120px}
+}
+@media (max-width:380px){
+ section{padding:10px}
+ main{padding:6px}
+ button{width:100%;margin:4px 0}
+ #pacificEducationAccessibilityControls button{flex-basis:100%}
+}
+@media (min-width:701px){main{padding-left:24px;padding-right:24px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.pacific-flow-next{scroll-behavior:auto!important}}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});function greet(){var msg="Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";if(window.speakText){window.speakText(msg);return true;}return false;}var tries=0;function waitForVoice(){if(greet()||tries++>=20)return;setTimeout(waitForVoice,250);}setTimeout(waitForVoice,150);}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
