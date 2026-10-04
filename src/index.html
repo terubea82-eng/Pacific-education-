@@ -21,6 +21,11 @@ body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-fl
 
 body.pe-guided-flow #pacificEducationAppMenu,body.pe-guided-flow header,body.pe-guided-flow #userFirstNavigation,body.pe-guided-flow #buyPlans,body.pe-guided-flow #pacificEducationPaymentLinksAlways,body.pe-guided-flow #pacificEducationInstitutionFees,body.pe-guided-flow #pacificEducationUniversityFeeWorkflow,body.pe-guided-flow #pacificEducationAccessEntitlement{display:none !important}
 body.pe-guided-flow #pacificEducationAccessibilityControls{display:flex !important}
+/* Controlled pilot: activate user-facing registration, learning, activity and dashboard boxes. Production/payment gates remain protected. */
+body.pe-pilot-all-features #pacificEducationAppMenu,body.pe-pilot-all-features header,body.pe-pilot-all-features #userFirstNavigation,body.pe-pilot-all-features #pacificEducationSchoolIdentitySection,body.pe-pilot-all-features #learningPlatform,body.pe-pilot-all-features #pacificEducationAppTools,body.pe-pilot-all-features #pacificEducationIdentityRegistration,body.pe-pilot-all-features #pacificEducationWebsitePilotChecklist,body.pe-pilot-all-features #prototypeAccess,body.pe-pilot-all-features #levelSelection,body.pe-pilot-all-features #subjectSelection,body.pe-pilot-all-features #termSelection,body.pe-pilot-all-features #capabilitySelection,body.pe-pilot-all-features #dailyLesson,body.pe-pilot-all-features #dailyLessonPracticeStage,body.pe-pilot-all-features #pacificEducationHomeSubmission,body.pe-pilot-all-features #pacificEducationTermBaseline,body.pe-pilot-all-features #pacificEducationTransferIntake,body.pe-pilot-all-features #assessments,body.pe-pilot-all-features #specialEducationDashboard,body.pe-pilot-all-features #teacherDashboard,body.pe-pilot-all-features #parentDashboard,body.pe-pilot-all-features #pacificEducationAIConversation,body.pe-pilot-all-features #pacificGuardianCommentSection,body.pe-pilot-all-features #pacificEducationAccountRecovery,body.pe-pilot-all-features #systemStatus{display:block !important}
+body.pe-pilot-all-features .pacific-flow-next{display:flex !important}
+body.pe-pilot-all-features #buyPlans,body.pe-pilot-all-features #pacificEducationPaymentLinksAlways,body.pe-pilot-all-features #pacificEducationInstitutionFees,body.pe-pilot-all-features #pacificEducationUniversityFeeWorkflow,body.pe-pilot-all-features #pacificEducationAccessEntitlement{display:none !important}
+
 body.pe-guided-flow[data-pe-flow-step="0"] #pacificEducationWelcome,body.pe-guided-flow[data-pe-flow-step="0"] #pilotBanner{display:block !important}
 body.pe-guided-flow[data-pe-flow-step="1"] #pacificEducationIdentityRegistration{display:block !important}
 body.pe-guided-flow[data-pe-flow-step="2"] #prototypeAccess{display:block !important}
@@ -290,6 +295,16 @@ git status</pre>
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRegistration);else initRegistration();
 })();
 </script><script src="js/pacificEducationPilotUserWorkspaces.js?v=20261002"></script><script src="js/pacificEducationInteractionRepair.js?v=20261002"></script><script src="js/pacificEducationStudentCoverageContext.js?v=20261002"></script><script src="js/pacificEducationTeacherCalendar.js?v=20261002"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=20261002"></script><script src="../js/pacificEducationPilotIntegrityGuard.js?v=20261002"></script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=1019"></script><script src="js/pacificEducationAccessibilityRuntime.js?v=20261002"></script><script src="js/pacificEducationMandatoryVoiceNavigation.js?v=1002"></script><script src="js/pacificEducationPWAInstall.js?v=20261001"></script><script src="js/pacificEducationConnectivity.js?v=20261003"></script><script src="js/pacificEducationVoiceNextDirective.js?v=1001"></script>
+<script>
+(function(){
+  function activatePilotBoxes(){
+    document.body.classList.add("pe-pilot-all-features");
+    document.body.setAttribute("data-pe-pilot-features","active");
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",activatePilotBoxes);else activatePilotBoxes();
+  window.setTimeout(activatePilotBoxes,500);
+})();
+</script>
 <script>
 (function(){
 "use strict";
