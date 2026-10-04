@@ -263,12 +263,18 @@
       var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
       try {
         chooseVoice();
+        var nativeBridge = window.PacificEducationNativeTTS;
+        if (nativeBridge && typeof nativeBridge.scheduleWelcome === "function") {
+          nativeBridge.scheduleWelcome();
+          setVoiceStatus("Automatic welcome voice scheduled for 5 seconds.");
+          return;
+        }
         var ok = speakText(welcomeText);
         if (!ok) {
-          setVoiceStatus("Automatic welcome voice was attempted. If the browser blocks automatic speech, press Play at the top-right.");
+          setVoiceStatus("Automatic welcome voice was attempted. If this browser blocks autoplay speech, press Play at the top-right.");
         }
       } catch (error) {
-        console.warn("Pacific Education automatic welcome voice was blocked:", error);
+        console.warn("Pacific Education automatic welcome voice failed:", error);
         setVoiceStatus("Automatic welcome voice was attempted. Press Play at the top-right if required.");
       }
     }, 5000);
