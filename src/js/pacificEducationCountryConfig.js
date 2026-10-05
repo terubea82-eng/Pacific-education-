@@ -59,7 +59,7 @@ function render(){
 }
 function esc(v){return String(v).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
 var CURRICULUM_SPACE_VERSION="1.0.0";
-var curriculumSpaces={};
+var curriculumSpaces={};\nvar CURRICULUM_SPACE_STORAGE_KEY="pacificEducationCountryCurriculumSpacesV1";\nfunction restoreCurriculumSpaces(){try{var raw=localStorage.getItem(CURRICULUM_SPACE_STORAGE_KEY);var parsed=raw?JSON.parse(raw):{};if(parsed&&typeof parsed==="object")curriculumSpaces=parsed;}catch(e){}}\nfunction persistCurriculumSpaces(){try{localStorage.setItem(CURRICULUM_SPACE_STORAGE_KEY,JSON.stringify(curriculumSpaces));}catch(e){}}
 function ensureCurriculumSpace(code,name){
   code=String(code||"").trim().toUpperCase();
   if(!code)return null;
@@ -112,8 +112,8 @@ function linkRegisteredUserToCurriculum(user){
 }
 function curriculumSpaceStatus(code){var s=getCurriculumSpace(code);return {countryCode:s.countryCode,country:s.country,status:s.status,sourceStatus:s.sourceStatus,levels:s.levels.length,subjects:s.subjects.length,terms:s.terms.length};}
 window.PacificEducationCountryConfig={
- load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,getLegalLanguage:function(){return state.legalLanguage;},reset:reset,render:render,curriculumSpaceVersion:CURRICULUM_SPACE_VERSION,getCurriculumSpace:getCurriculumSpace,setCurriculumSpace:setCurriculumSpace,linkRegisteredUserToCurriculum:linkRegisteredUserToCurriculum,curriculumSpaceStatus:curriculumSpaceStatus,
+ load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,getLegalLanguage:function(){return state.legalLanguage;},reset:reset,render:render,curriculumSpaceVersion:CURRICULUM_SPACE_VERSION,getCurriculumSpace:getCurriculumSpace,setCurriculumSpace:setCurriculumSpace,linkRegisteredUserToCurriculum:linkRegisteredUserToCurriculum,curriculumSpaceStatus:curriculumSpaceStatus,upsertDailyActivity:upsertDailyActivity,getDailyActivity:getDailyActivity,setRegisteredCurriculumLink:setRegisteredCurriculumLink,
  defaults:function(){return clone(defaults);}
 };
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ensureUI);else ensureUI();
+restoreCurriculumSpaces();\nif(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ensureUI);else ensureUI();
 })(window,document);
