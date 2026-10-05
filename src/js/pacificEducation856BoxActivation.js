@@ -314,31 +314,8 @@
 
       prepare(document);
 
-      document.addEventListener("focusin",function(e){
-        var el=e.target;
-        if(!el || !el.matches || !el.matches("button,a[href^='#'],summary")) return;
-        var label=importantLabel(el);
-        if(!label || /^(▶️ Play|⏹|🔇 Stop Speech|🔊 Listen to question)$/i.test(label)) return;
-        if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function"){
-          window.PacificEducationSpeech.speakText(label.replace(/^➡️\\s*/,"") + ".");
-        } else if(typeof window.speakText==="function") {
-          window.speakText(label + ".");
-        }
-      },true);
-
-      document.addEventListener("click",function(e){
-        var el=e.target && e.target.closest ? e.target.closest("button,a[href^='#'],summary") : null;
-        if(!el) return;
-        var label=importantLabel(el);
-        if(!label) return;
-        var lower=label.toLowerCase();
-        if(/(math|mathematics|english|phonics|daily activit|practice|assessment|alphabet|submit|continue learning|next)/.test(lower)){
-          var message=label.replace(/^➡️\\s*/,"").trim()+".";
-          if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function") window.PacificEducationSpeech.speakText(message);
-          else if(typeof window.speakText==="function") window.speakText(message);
-        }
-      },false);
-
+      /* Mandatory page voice is the single authoritative voice channel.
+         Do not speak on every focus/click because that duplicates page/box instructions. */
       var observer=new MutationObserver(function(mutations){
         mutations.forEach(function(m){ if(m.addedNodes && m.addedNodes.length) prepare(m.target); });
       });
