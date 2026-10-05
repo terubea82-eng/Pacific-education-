@@ -7,6 +7,9 @@
   var lastSpokenText = "";
   var lastSpokenAt = 0;
   var speechGeneration = 0;
+  var conversationGeneration = 0;
+  var lastConversationSignature = "";
+  var lastConversationAt = 0;
   var speechUnlocked = false;
   var platform = (function(){
     var ua = String(navigator && navigator.userAgent || "");
@@ -231,6 +234,15 @@
   function speakConversation(lines, done) {
     lines = Array.isArray(lines) ? lines : [];
     if (!lines.length) { if (done) done(); return false; }
+    var signature = lines.map(function(item){ return String(item && item.text || ""); }).join("\u0001");
+    var now = Date.now();
+    if (signature === lastConversationSignature && (now - lastConversationAt) < 8000) return false;
+    lastConversationSignature = signature;
+    lastConversationAt = now;
+    conversationGeneration += 1;
+    var conversationRun = conversationGeneration;
+    speechGeneration += 1;
+    var runGeneration = speechGeneration;
     if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
       if (window.PacificEducationNativeTTS && typeof window.PacificEducationNativeTTS.speak === "function") {
         var i=0;
@@ -248,8 +260,9 @@
       return false;
     }
     var synth=window.speechSynthesis, pair=chooseConversationVoices(), index=0;
-    try{synth.cancel();synth.resume();}catch(_){}
+    try{synth.cancel();if(typeof synth.resume==="function")synth.resume();}catch(_){}
     function next(){
+      if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration) return;
       if(index>=lines.length){setVoiceStatus("AI Playback conversation complete.");if(done)done();return;}
       var item=lines[index], u=new window.SpeechSynthesisUtterance(String(item.text||""));
       var v=(index%2===0?pair.a:pair.b);
@@ -259,8 +272,8 @@
       u.pitch=index%2===0?0.92:1.08;
       u.volume=1;
       u.onstart=function(){setVoiceStatus("AI Playback: "+(index%2===0?"Speaker 1":"Speaker 2")+" is speaking.");};
-      u.onend=function(){index++;next();};
-      u.onerror=function(){index++;next();};
+      u.onend=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;next();};
+      u.onerror=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;next();};
       try{synth.speak(u);synth.resume();}catch(_){index++;next();}
     }
     next();
@@ -294,6 +307,7 @@
       stop.addEventListener("click", function (event) {
         if (event) event.preventDefault();
         stopSpeech();
+        conversationGeneration += 1;
         return false;
       });
     }
