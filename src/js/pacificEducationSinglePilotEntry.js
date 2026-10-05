@@ -50,7 +50,7 @@
   }
   var ROLE_ROUTES = {
     student: ["learningPlatform", "levelSelection", "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson", "pacificEducationTermBaseline", "assessments", "pacificEducationStudentProgressDashboard", "pacificEducationHomeSubmission", "pacificEducationTransferIntake", "pacificGuardianCommentSection"],
-    teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
+    teacher: ["teacherDashboard", "teacherCalendarSection", "pacificEducationTeacherClassDashboard", "pacificEducationCoverageDashboard", "pacificEducationTeacherEvidence", "dailyLesson", "dailyLessonPracticeStage", "assessments", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     "special-education": ["teacherDashboard", "specialEducationDashboard", "specialEducationReviewEvidence", "pacificEducationTeacherClassDashboard", "pacificEducationHomeSubmission", "pacificGuardianCommentSection"],
     parent: ["parentDashboard", "pacificGuardianCommentSection"],
     professional: ["pacificEducationWebsitePilotChecklist", "pacificEducationExternalReviewerPortal", "pacificEducationExternalSpecialistReviewEvidenceRegistry", "pacificEducationExternalSpecialistReviewEvidenceLog", "pacificGuardianCommentSection"],
