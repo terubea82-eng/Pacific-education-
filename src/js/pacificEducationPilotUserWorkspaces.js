@@ -307,7 +307,9 @@
 
     function renderRole(roleId) {
       var role = roles.filter(function (r) { return r.id === roleId; })[0];
-      var gate = document.getElementById("pilotWorkspaceGate");\n      var linkedCurriculum = null;\n      try { if(window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.linkRegisteredUserToCurriculum==="function"){ linkedCurriculum = window.PacificEducationCountryConfig.linkRegisteredUserToCurriculum({countryCode:window.localStorage.getItem("pacificEducationCurriculumCountryCode")||""}); } } catch(e) {}
+      var gate = document.getElementById("pilotWorkspaceGate");
+      var linkedCurriculum = null;
+      try { if(window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.linkRegisteredUserToCurriculum==="function"){ linkedCurriculum = window.PacificEducationCountryConfig.linkRegisteredUserToCurriculum({countryCode:window.localStorage.getItem("pacificEducationCurriculumCountryCode")||""}); } } catch(e) {}
       if (!role) {
         document.getElementById("pilotRoleWorkspace").innerHTML = "";
         gate.innerHTML = "<strong>Pilot workspace selection is mandatory.</strong> Select a role before continuing with pilot activities.";
@@ -443,7 +445,8 @@
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
-        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +\n        '<p id="pilotLinkedCurriculum" role="status" aria-live="polite"><strong>Linked country curriculum:</strong> ' + esc(linkedCurriculum && linkedCurriculum.country ? linkedCurriculum.country : "Country registration required") + '. Daily Activities, Practice and Assessments use this linked curriculum space.</p>' +
+        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +
+        '<p id="pilotLinkedCurriculum" role="status" aria-live="polite"><strong>Linked country curriculum:</strong> ' + esc(linkedCurriculum && linkedCurriculum.country ? linkedCurriculum.country : "Country registration required") + '. Daily Activities, Practice and Assessments use this linked curriculum space.</p>' +
         '<p><strong>Open a role-specific tool:</strong></p>' +
         '<nav aria-label="Role pilot tools" style="display:flex;flex-direction:column;gap:10px;max-width:520px;">' +
         workspaceTools.map(function(tool) {
