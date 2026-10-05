@@ -15,7 +15,8 @@
   "use strict";
 
   const VERSION = "1.2.0";
-  const STORAGE_KEY = "pacificEducationGuardianState";\n  const USER_SETTINGS_KEY = "pacificEducationGuardianUserSettings";
+  const STORAGE_KEY = "pacificEducationGuardianState";
+  const USER_SETTINGS_KEY = "pacificEducationGuardianUserSettings";
   const LOCK_THRESHOLD = 0.95;
 
   // Controlled pilot boundary: Guardian is not production authority.
@@ -53,7 +54,26 @@
     );
   }
 
-  function resetUserSettings() {\n    try {\n      if (window.localStorage) {\n        window.localStorage.removeItem(USER_SETTINGS_KEY);\n      }\n      audit({type:"guardian_user_settings_auto_reset",severity:"information",details:{scope:"user_settings_only",security_state_preserved:true,automatic:true}});\n    } catch (error) {\n      /* User-setting reset failure must never crash the application. */\n    }\n  }\n\n  function loadPersistedState() {
+  function resetUserSettings() {
+    try {
+      if (window.localStorage) {
+        window.localStorage.removeItem(USER_SETTINGS_KEY);
+      }
+      audit({
+        type: "guardian_user_settings_auto_reset",
+        severity: "information",
+        details: {
+          scope: "user_settings_only",
+          security_state_preserved: true,
+          automatic: true
+        }
+      });
+    } catch (error) {
+      /* User-setting reset failure must never crash the application. */
+    }
+  }
+
+  function loadPersistedState() {
     try {
       if (!window.localStorage) {
         return;
@@ -304,7 +324,8 @@
     };
   }
 
-  loadPersistedState();\n  resetUserSettings();
+  loadPersistedState();
+  resetUserSettings();
 
   window.PacificEducationPacificGuardian =
     Object.freeze({
