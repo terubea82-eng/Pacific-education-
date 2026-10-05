@@ -443,7 +443,7 @@
       workspace.innerHTML =
         "<h3>" + esc(role.title) + " Workspace</h3>" +
         "<p><strong>Pilot access:</strong> " + esc(role.access) + "</p>" +
-        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +
+        '<p id="pilotSchoolContext" role="status" aria-live="polite"><strong>Shared pilot context:</strong> ' + pilotContextSummary() + '</p>' +\n        '<p id="pilotLinkedCurriculum" role="status" aria-live="polite"><strong>Linked country curriculum:</strong> ' + esc(linkedCurriculum && linkedCurriculum.country ? linkedCurriculum.country : "Country registration required") + '. Daily Activities, Practice and Assessments use this linked curriculum space.</p>' +
         '<p><strong>Open a role-specific tool:</strong></p>' +
         '<nav aria-label="Role pilot tools" style="display:flex;flex-direction:column;gap:10px;max-width:520px;">' +
         workspaceTools.map(function(tool) {
