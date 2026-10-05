@@ -307,7 +307,7 @@
 
     function renderRole(roleId) {
       var role = roles.filter(function (r) { return r.id === roleId; })[0];
-      var gate = document.getElementById("pilotWorkspaceGate");
+      var gate = document.getElementById("pilotWorkspaceGate");\n      var linkedCurriculum = null;\n      try { if(window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.linkRegisteredUserToCurriculum==="function"){ linkedCurriculum = window.PacificEducationCountryConfig.linkRegisteredUserToCurriculum({countryCode:window.localStorage.getItem("pacificEducationCurriculumCountryCode")||""}); } } catch(e) {}
       if (!role) {
         document.getElementById("pilotRoleWorkspace").innerHTML = "";
         gate.innerHTML = "<strong>Pilot workspace selection is mandatory.</strong> Select a role before continuing with pilot activities.";
