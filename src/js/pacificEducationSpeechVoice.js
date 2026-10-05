@@ -101,6 +101,22 @@
 
   ["pointerdown","touchstart","keydown"].forEach(function(eventName){document.addEventListener(eventName,unlockSpeechOnInteraction,{once:true,capture:true,passive:true});});
 
+  function chooseVoice() {
+    if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return selectedVoice;
+    var voices = window.speechSynthesis.getVoices() || [];
+    var english = voices.filter(function(v){ return /^en(-|$)/i.test(String(v.lang || "")); });
+    if (!english.length) { selectedVoice = null; return selectedVoice; }
+    function rank(v) {
+      var lang = String(v.lang || ""), name = String(v.name || ""), score = 0;
+      if (/^en[-_]AU$/i.test(lang)) score += 100;
+      if (/(?:natural|neural|enhanced|premium|online|google|microsoft)/i.test(name)) score += 20;
+      return score;
+    }
+    english.sort(function(a,b){ return rank(b) - rank(a); });
+    selectedVoice = english[0] || null;
+    return selectedVoice;
+  }
+
   function refreshVoiceSelection(){chooseVoice();if(selectedVoice)setVoiceStatus("English voice ready. Tap Hear Welcome.");else if(window.speechSynthesis)setVoiceStatus("Browser voice engine ready. Tap Hear Welcome.");}
 
   function chooseConversationVoices(){
