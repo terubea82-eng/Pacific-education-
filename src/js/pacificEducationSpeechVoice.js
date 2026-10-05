@@ -232,6 +232,59 @@
     }
   }
 
+  function chooseConversationVoices() {
+    if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return {a:null,b:null};
+    var voices = window.speechSynthesis.getVoices() || [];
+    var english = voices.filter(function(v){ return /^en(-|$)/i.test(String(v.lang||"")); });
+    if (!english.length) english = voices;
+    var femaleHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
+    var maleHints = /(?:male|man|david|mark|ryan|guy|alex|daniel|fred|james|john|tom|aaron|arthur|oliver|google.*male)/i;
+    var a = english.find(function(v){return maleHints.test(String(v.name||"")) && !femaleHints.test(String(v.name||""));}) || english[0] || null;
+    var b = english.find(function(v){return v !== a && femaleHints.test(String(v.name||""));}) ||
+            english.find(function(v){return v !== a && v.localService;}) ||
+            english.find(function(v){return v !== a;}) || a;
+    return {a:a,b:b};
+  }
+
+  function speakConversation(lines, done) {
+    lines = Array.isArray(lines) ? lines : [];
+    if (!lines.length) { if (done) done(); return false; }
+    if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
+      if (window.PacificEducationNativeTTS && typeof window.PacificEducationNativeTTS.speak === "function") {
+        var i=0;
+        function nativeNext(){
+          if(i>=lines.length){if(done)done();return;}
+          try{
+            window.PacificEducationNativeTTS.speak(String(lines[i++].text||""));
+            setTimeout(nativeNext, 3200);
+          }catch(_){if(done)done();}
+        }
+        nativeNext();
+        return true;
+      }
+      setVoiceStatus("Two-person AI playback requires a speech engine.");
+      return false;
+    }
+    var synth=window.speechSynthesis, pair=chooseConversationVoices(), index=0;
+    try{synth.cancel();synth.resume();}catch(_){}
+    function next(){
+      if(index>=lines.length){setVoiceStatus("AI Playback conversation complete.");if(done)done();return;}
+      var item=lines[index], u=new window.SpeechSynthesisUtterance(String(item.text||""));
+      var v=(index%2===0?pair.a:pair.b);
+      if(v)u.voice=v;
+      u.lang=v&&v.lang?v.lang:"en-US";
+      u.rate=0.94;
+      u.pitch=index%2===0?0.92:1.08;
+      u.volume=1;
+      u.onstart=function(){setVoiceStatus("AI Playback: "+(index%2===0?"Speaker 1":"Speaker 2")+" is speaking.");};
+      u.onend=function(){index++;next();};
+      u.onerror=function(){index++;next();};
+      try{synth.speak(u);synth.resume();}catch(_){index++;next();}
+    }
+    next();
+    return true;
+  }
+
   function bindVoiceButtons() {
     var welcome = document.getElementById("pacificEducationWelcomeVoiceButton");
     var stop = document.getElementById("pacificEducationStopSpeechButton");
@@ -240,7 +293,16 @@
       welcome.setAttribute("data-pe-welcome-voice-bound", "true");
       welcome.addEventListener("click", function (event) {
         if (event) event.preventDefault();
-        speakText("Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.");
+        speakConversation([
+          {speaker:"1",text:"What is Pacific Education, and why is it important?"},
+          {speaker:"2",text:"Pacific Education is designed to support learners, teachers, parents and education communities. Its purpose is to make learning clear, accessible and connected."},
+          {speaker:"1",text:"What does it help learners do?"},
+          {speaker:"2",text:"It brings learning activities, educational content, practice, assessment and progress together so learners can learn step by step."},
+          {speaker:"1",text:"And why does that matter across the Pacific?"},
+          {speaker:"2",text:"Because every learner should have opportunities to learn, discover, practise and grow, while teachers and families can work together to support learning."},
+          {speaker:"1",text:"Welcome to Pacific Education."},
+          {speaker:"2",text:"Learn, discover, practise and grow with us."}
+        ]);
         return false;
       });
     }
@@ -259,92 +321,23 @@
     if (window.__pacificEducationAutoWelcomeVoiceScheduled) return;
     window.__pacificEducationAutoWelcomeVoiceScheduled = true;
 
-    var welcomeText = "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
-
-    function speakAiIntroThenWelcome() {
-      var introText = "Pacific Education AI playback voice is active. I will guide you through this pilot.";
-      try {
-        chooseVoice();
-        var nativeBridge = window.PacificEducationNativeTTS;
-        if (nativeBridge && typeof nativeBridge.speak === "function") {
-          var nativeReady = typeof nativeBridge.available !== "function" || nativeBridge.available();
-          if (nativeReady) {
-            var nativeStarted = nativeBridge.speak(introText);
-            if (nativeStarted) {
-              setVoiceStatus("AI playback voice is speaking first.");
-              window.setTimeout(function () {
-                var secondText = "First, listen to the instructions. Then complete each page in order and use Next when you are ready.";
-                try {
-                  if (typeof nativeBridge.speak === "function" && (typeof nativeBridge.available !== "function" || nativeBridge.available())) {
-                    nativeBridge.speak(secondText);
-                    setVoiceStatus("AI playback instructions are speaking. Welcome voice follows.");
-                  } else {
-                    speakText(secondText);
-                  }
-                  window.setTimeout(function () {
-                    try {
-                      if (typeof nativeBridge.speak === "function" && (typeof nativeBridge.available !== "function" || nativeBridge.available())) nativeBridge.speak(welcomeText);
-                      else speakText(welcomeText);
-                    } catch (_) { speakText(welcomeText); }
-                  }, 2600);
-                } catch (_) { speakText(welcomeText); }
-              }, 2600);
-              return true;
-            }
-          }
-          setVoiceStatus("AI voice engine is starting. Retrying automatically.");
-          return false;
-        }
-
-        if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
-          return false;
-        }
-
-        var synth = window.speechSynthesis;
-        try { synth.cancel(); synth.resume(); } catch (_) {}
-        var currentVoice = selectedVoice || chooseVoice();
-        var introUtterance = new window.SpeechSynthesisUtterance(introText);
-        if (currentVoice) introUtterance.voice = currentVoice;
-        introUtterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
-        introUtterance.rate = 0.95;
-        introUtterance.pitch = 1;
-        introUtterance.volume = 1;
-        introUtterance.onstart = function () {
-          setVoiceStatus("AI voice is speaking first. Welcome voice follows.");
-        };
-        introUtterance.onend = function () {
-          var secondText = "First, listen to the instructions. Then complete each page in order and use Next when you are ready.";
-          try {
-            var secondUtterance = new window.SpeechSynthesisUtterance(secondText);
-            var v = selectedVoice || chooseVoice();
-            if (v) secondUtterance.voice = v;
-            secondUtterance.lang = v && v.lang ? v.lang : "en-US";
-            secondUtterance.rate = 0.95; secondUtterance.pitch = 1; secondUtterance.volume = 1;
-            secondUtterance.onend = function(){ speakText(welcomeText); };
-            secondUtterance.onerror = function(){ speakText(welcomeText); };
-            synth.speak(secondUtterance);
-            synth.resume();
-          } catch (_) { speakText(welcomeText); }
-        };
-        introUtterance.onerror = function () {
-          window.setTimeout(function () { speakText(welcomeText); }, 500);
-        };
-        synth.speak(introUtterance);
-        synth.resume();
-        return true;
-      } catch (error) {
-        console.warn("Pacific Education AI-first welcome voice failed:", error);
-      }
-      return false;
-    }
+    var conversation = [
+      {speaker:"1",text:"What is Pacific Education, and why is it important?"},
+      {speaker:"2",text:"Pacific Education is designed to support learners, teachers, parents and education communities. Its purpose is to make learning clear, accessible and connected."},
+      {speaker:"1",text:"What is its purpose for learning?"},
+      {speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},
+      {speaker:"1",text:"Why is that important across the Pacific?"},
+      {speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},
+      {speaker:"1",text:"Welcome to Pacific Education."},
+      {speaker:"2",text:"Learn, discover, practise and grow with us."}
+    ];
 
     window.setTimeout(function () {
-      var started = speakAiIntroThenWelcome();
+      var started = speakConversation(conversation, function(){
+        setVoiceStatus("AI Playback complete. Welcome to Pacific Education.");
+      });
       if (!started) {
-        window.setTimeout(speakAiIntroThenWelcome, 600);
-        window.setTimeout(speakAiIntroThenWelcome, 1500);
-        window.setTimeout(speakAiIntroThenWelcome, 3000);
-        window.setTimeout(speakAiIntroThenWelcome, 5000);
+        window.setTimeout(function(){ speakConversation(conversation); }, 800);
       }
     }, 5000);
   }
