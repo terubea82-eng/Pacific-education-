@@ -4,6 +4,9 @@
 
   var selectedVoice = null;
   var pendingText = "";
+  var lastSpokenText = "";
+  var lastSpokenAt = 0;
+  var speechGeneration = 0;
   var speechUnlocked = false;
   var platform = (function(){
     var ua = String(navigator && navigator.userAgent || "");
@@ -66,9 +69,18 @@
     return false;
   }
 
-  function speakText(text) {
+  function speakText(text, options) {
     text = String(text || "").trim();
     if (!text) return false;
+    options = options || {};
+    var now = Date.now();
+    if (!options.allowRepeat && text === lastSpokenText && (now - lastSpokenAt) < 8000) {
+      return false;
+    }
+    lastSpokenText = text;
+    lastSpokenAt = now;
+    speechGeneration += 1;
+    var generation = speechGeneration;
 
     if (nativeSpeak(text)) return true;
 
@@ -107,6 +119,7 @@
         setVoiceStatus("Voice playing.");
       };
       utterance.onend = function () {
+        if (generation !== speechGeneration) return;
         pendingText = "";
         setVoiceStatus("Voice ready.");
       };
@@ -128,16 +141,6 @@
 
       synth.speak(utterance);
       if (typeof synth.resume === "function") synth.resume();
-      setTimeout(function () {
-        try {
-          if (pendingText === text && !synth.speaking && speechUnlocked) {
-            synth.cancel();
-            synth.resume();
-            synth.speak(utterance);
-            synth.resume();
-          }
-        } catch (_) {}
-      }, 180);
       return true;
     } catch (error) {
       console.error("Pacific Education speech failed:", error);
@@ -148,6 +151,7 @@
   }
 
   function stopSpeech() {
+    speechGeneration += 1;
     pendingText = "";
     try {
       if (window.PacificEducationNativeTTS &&
@@ -163,7 +167,7 @@
 
   function retryPendingSpeech() {
     chooseVoice();
-    if (pendingText && (speechUnlocked || window.PacificEducationNativeTTS)) {
+    if (pendingText && !window.speechSynthesis.speaking && (speechUnlocked || window.PacificEducationNativeTTS)) {
       var text = pendingText;
       pendingText = "";
       speakText(text);
