@@ -75,7 +75,7 @@
       if(window.PacificEducationCountryConfig&&typeof window.PacificEducationCountryConfig.load==="function"){
         window.PacificEducationCountryConfig.load({country:countryName(code)});
       }
-      document.dispatchEvent(new CustomEvent("pacificEducationCurriculumCountryChanged",{detail:{code:code,name:countryName(code)}}));
+      if(window.PacificEducationCountryConfig&&typeof window.PacificEducationCountryConfig.setRegisteredCurriculumLink==="function"){ window.PacificEducationCountryConfig.setRegisteredCurriculumLink(code); }\n      document.dispatchEvent(new CustomEvent("pacificEducationCurriculumCountryChanged",{detail:{code:code,name:countryName(code)}}));
     }catch(e){}
     return true;
   }
@@ -343,7 +343,7 @@
         "<span style=\"border:1px solid currentColor;border-radius:999px;padding:5px 10px;font-size:.85em\">Pilot only • Production locked</span>" +
       "</div>" +
       "<p><strong>Welcome.</strong> Choose your pilot role below. Your role determines which learning, review and dashboard tools are shown.</p>" +
-      "<p><strong>Student:</strong> Daily Learning → Activities → Assessments → Progress. <strong>Other roles:</strong> role-specific pilot workspace only.</p>" +
+      "<p><strong>Curriculum:</strong> Your registered country automatically links your workspace to that country curriculum space. Daily Activities, Practice and Assessments are delivered from the linked curriculum space after registration.</p>" +
       "<label for=\"singlePilotRole\"><strong>Who are you testing as?</strong></label><br>" +
       "<select id=\"singlePilotRole\" style=\"width:100%;max-width:620px;padding:12px;margin-top:7px;border-radius:8px\">" +
       "<option value=\"\">Select pilot role</option>" +
