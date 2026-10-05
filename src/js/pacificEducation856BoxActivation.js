@@ -71,6 +71,10 @@
       var style=document.createElement("style");
       style.id="pe856-user-box-repair-style";
       style.textContent=
+        "body.pe-pilot-all-features.pe-guided-flow main > *,"+
+        "body.pe-pilot-all-features.pe-guided-flow #pacificEducationAppMenu,"+
+        "body.pe-pilot-all-features.pe-guided-flow header,"+
+        "body.pe-pilot-all-features.pe-guided-flow #userFirstNavigation,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppMenu,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #userFirstNavigation,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #learningPlatform,"+
