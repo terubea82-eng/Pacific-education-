@@ -13,9 +13,6 @@
     {step:4,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
     {step:5,id:"termSelection",label:"Term",text:"Welcome to Term Selection. Please choose the school term for your learning activities. Your daily activities, practice and assessments will follow the selected term. Select Next when ready."},
     {step:6,id:"capabilitySelection",label:"Learning Capability",text:"Welcome to Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
-    {step:7,id:"dailyLesson",label:"Daily Activities",text:"Welcome to Daily Activities. Your assigned learning activity is ready. Listen carefully to each instruction, complete today's activity, and select Next when you are ready to continue."},
-    {step:8,id:"dailyLessonPracticeStage",label:"Practice",text:"Welcome to Practice. Complete the practice activity carefully. You can listen to the question, read it, type your answer, or use an available voice response. Review your answer before continuing."},
-    {step:9,id:"assessments",label:"Assessment",text:"Welcome to Assessment. Listen carefully to every question and answer choice. Complete every required response. Review your answers before selecting Submit."},
     {step:10,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Welcome to Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
   ];
 
@@ -282,7 +279,7 @@
   }
 
   function installNextSafety(){
-    var ids=["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
+    var ids=["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton"];
     ids.forEach(function(id){
       var b=document.getElementById(id);if(!b||b.getAttribute("data-pe-voice-next")==="true")return;
       b.setAttribute("data-pe-voice-next","true");
