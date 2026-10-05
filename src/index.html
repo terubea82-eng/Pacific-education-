@@ -249,15 +249,31 @@ git status</pre>
 <button type="button" id="userRegistrationOpenButton" aria-expanded="false" aria-controls="userRegistrationForm">👤 User Registration — Tap to open</button>
 <div id="userRegistrationForm" hidden>
 <p><strong>One person → one Pacific Education ID → one account.</strong></p>
-<p>Pilot registration creates a synthetic test profile only. Production identity verification must be completed by the secure server; the browser must not store or expose the underlying identification number.</p><p><strong>Complete this form to continue:</strong> enter a name, select a role, then press <strong>Save Pilot Registration</strong> and <strong>➡️ Next</strong>.</p>
+<p>Pilot registration creates a synthetic test profile only. Production identity verification must be completed by the secure server; the browser must not store or expose the underlying identification number.</p>
+<p><strong>Step 1 — Choose your user role.</strong> Tap one role below. The registration boxes for that role will then open.</p>
+<div id="pilotUserRoleCards" class="pe-user-role-cards" role="group" aria-label="Choose your Pacific Education user role">
+<button type="button" class="pe-user-role-card" data-role="Student" aria-pressed="false">👨‍🎓 <strong>Student</strong><span>Learner registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Teacher" aria-pressed="false">👩‍🏫 <strong>Teacher</strong><span>Teacher registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Parent/Caregiver" aria-pressed="false">👨‍👩‍👧 <strong>Parent / Caregiver</strong><span>Family registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Professional Reviewer" aria-pressed="false">🔎 <strong>Professional Reviewer</strong><span>Reviewer registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="NGO/Organization" aria-pressed="false">🏢 <strong>NGO / Organization</strong><span>Organisation registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Education/Government" aria-pressed="false">🏛️ <strong>Education / Government</strong><span>Education partner registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Community/Partner" aria-pressed="false">🤝 <strong>Community / Partner</strong><span>Community registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Technician" aria-pressed="false">🛠️ <strong>Technician</strong><span>Technical pilot registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Owner/Control" aria-pressed="false">👤 <strong>Owner / Control</strong><span>Owner control registration</span></button>
+</div>
+<div id="pilotRoleRegistrationFields" hidden>
+<p id="pilotSelectedRole" role="status" aria-live="polite"><strong>Selected role:</strong> none</p>
 <label for="pilotRegistrationName"><strong>Name / display name</strong></label><br>
 <input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your name or test name" style="width:100%;max-width:520px"><br><br>
-<label for="pilotRegistrationRole"><strong>User role</strong></label><br>
-<select id="pilotRegistrationRole" style="width:100%;max-width:520px">
-<option value="">Select role</option><option>Student</option><option>Teacher</option><option>Parent/Caregiver</option><option>Education Community / Pilot Tester</option><option>Technician</option><option>Owner/Control</option>
+<label for="pilotRegistrationRole"><strong>Selected user role</strong></label><br>
+<select id="pilotRegistrationRole" aria-label="Selected user role" style="width:100%;max-width:520px" disabled>
+<option value="">Select role</option><option>Student</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
 </select><br><br>
+<p><strong>Step 2 — Complete your registration boxes.</strong> This pilot asks only for a display name and selected role. Do not enter sensitive child information, passwords, payment details or exact location.</p>
 <button type="button" id="pilotRegistrationSaveButton">Save Pilot Registration</button>
-<div id="pilotRegistrationStatus" aria-live="polite"></div>
+</div>
+<div id="pilotRegistrationStatus" aria-live="polite">Choose a user role to begin registration.</div>
 </div>
 </section>
 <div id="registrationNextWrapper" class="pacific-flow-next"><button type="button" id="registrationNextButton">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="registrationNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="registrationNextButton" role="status" aria-live="polite">Ready</span></div><section id="pacificEducationWebsitePilotChecklist"><h2>Website Pilot Launch Checklist</h2><p>Checking the website pilot components...</p></section><section id="prototypeAccess"><h2>Prototype Access</h2><p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session. It is not identity verification, authentication, authorization for real users, or production access.</p><button type="button" id="prototypeAuthorizeButton" onclick="(function(){var b=document.getElementById('prototypeAuthorizeButton'),s=document.getElementById('prototypeAccessStatus');if(b)b.disabled=true;if(s)s.textContent='Authorizing synthetic Student pilot session...';try{authorizePrototypeStudent();if(s)s.textContent='Authorized synthetic Student pilot session. Press Next to continue to Learning Level.';}catch(e){if(s)s.textContent='Prototype authorization could not start. Please try again.';if(b)b.disabled=false;}})()">Start Authorized Student Test</button><span id="prototypeAccessStatus" aria-live="polite">Ready for synthetic pilot authorization.</span></section>
@@ -282,19 +298,39 @@ git status</pre>
   }
   var key="pacificEducationPilotRegistration";
   function initRegistration(){
-    var name=document.getElementById("pilotRegistrationName"), role=document.getElementById("pilotRegistrationRole"), save=document.getElementById("pilotRegistrationSaveButton"), status=document.getElementById("pilotRegistrationStatus");
+    var name=document.getElementById("pilotRegistrationName"), role=document.getElementById("pilotRegistrationRole"), save=document.getElementById("pilotRegistrationSaveButton"), status=document.getElementById("pilotRegistrationStatus"), fields=document.getElementById("pilotRoleRegistrationFields"), selected=document.getElementById("pilotSelectedRole");
     if(!name||!role||!save||!status)return;
+    var cards=document.querySelectorAll(".pe-user-role-card");
+    function selectRole(value){
+      role.value=value;
+      if(fields)fields.hidden=false;
+      if(selected)selected.innerHTML="<strong>Selected role:</strong> "+value;
+      cards.forEach(function(card){
+        var active=card.getAttribute("data-role")===value;
+        card.setAttribute("aria-pressed",String(active));
+      });
+      status.textContent=value+" registration selected. Complete the registration boxes below.";
+      if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText("You selected "+value+" registration. Complete the registration boxes below.");
+      else if(window.speakText)window.speakText("You selected "+value+" registration. Complete the registration boxes below.");
+    }
+    cards.forEach(function(card){card.addEventListener("click",function(){selectRole(card.getAttribute("data-role")||"");});});
     try{
       var saved=JSON.parse(sessionStorage.getItem(key)||"null");
-      if(saved){name.value=saved.name||"";role.value=saved.role||"";status.textContent="Pilot registration saved for this browser test session.";}
+      if(saved){
+        name.value=saved.name||"";
+        selectRole(saved.role||"");
+        status.textContent="Pilot registration saved for this browser test session. You may review it below.";
+      }
     }catch(_){}
     save.onclick=function(){
       var n=name.value.trim(), r=role.value;
-      if(!n||!r){status.textContent="Enter a name and select a user role.";return;}
+      if(!r){status.textContent="Choose your user role first.";return;}
+      if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
-        status.textContent="Pilot registration saved. Press Next to continue to Prototype Access.";
-        if(window.speakText)window.speakText("Pilot registration saved. Continue to Prototype Access.");
+        status.textContent="Pilot registration saved for "+r+". Press Next to continue to Prototype Access.";
+        if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText("Pilot registration saved for "+r+". Continue to Prototype Access.");
+        else if(window.speakText)window.speakText("Pilot registration saved for "+r+". Continue to Prototype Access.");
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
     };
   }
