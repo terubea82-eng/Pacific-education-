@@ -1,5 +1,6 @@
 name: Deploy Pacific Education Pilot Pages
 
+# User-box activation deployment refresh: 2026-10-05
 on:
   push:
     branches: [main]
