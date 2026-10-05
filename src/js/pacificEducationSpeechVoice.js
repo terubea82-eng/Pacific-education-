@@ -35,15 +35,19 @@
       var raw = window.localStorage.getItem(persistedConversationKey);
       persistedConversation = raw ? JSON.parse(raw) : null;
       if (!persistedConversation || !Array.isArray(persistedConversation.lines) ||
+          persistedConversation.index < 0 ||
           persistedConversation.index >= persistedConversation.lines.length) {
         persistedConversation = null;
         window.localStorage.removeItem(persistedConversationKey);
+      } else {
+        persistedConversation.charOffset = Math.max(0, Number(persistedConversation.charOffset) || 0);
+        persistedConversation.state = String(persistedConversation.state || "paused");
       }
     } catch (_) { persistedConversation = null; }
     return persistedConversation;
   }
 
-  function savePersistedConversation(lines, index) {
+  function savePersistedConversation(lines, index, charOffset, state) {
     try {
       var safeLines = (Array.isArray(lines) ? lines : []).map(function(item) {
         return {speaker: String(item && item.speaker || ""), text: String(item && item.text || "")};
@@ -53,7 +57,16 @@
         persistedConversation = null;
         return;
       }
-      persistedConversation = {lines: safeLines, index: Math.max(0, Number(index) || 0), savedAt: Date.now()};
+      var safeIndex = Math.max(0, Number(index) || 0);
+      var safeOffset = Math.max(0, Number(charOffset) || 0);
+      if (safeIndex < safeLines.length) safeOffset = Math.min(safeOffset, safeLines[safeIndex].text.length);
+      persistedConversation = {
+        lines: safeLines,
+        index: safeIndex,
+        charOffset: safeOffset,
+        state: String(state || "paused"),
+        savedAt: Date.now()
+      };
       window.localStorage.setItem(persistedConversationKey, JSON.stringify(persistedConversation));
     } catch (_) {}
   }
@@ -61,29 +74,6 @@
   function clearPersistedConversation() {
     try { window.localStorage.removeItem(persistedConversationKey); } catch (_) {}
     persistedConversation = null;
-  }
-
-  function isFluentMaleEnglishVoice(voice) { var name=String(voice&&voice.name||""); var lang=String(voice&&voice.lang||""); if(!/^en(-|$)/i.test(lang)) return false; if(/(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i.test(name)) return false; return /(?:male|man|david|mark|ryan|guy|george|daniel|alex|fred|james|john|tom|aaron|arthur|oliver|microsoft|google)/i.test(name) && /(?:enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom|microsoft|google)/i.test(name); }
-
-  function chooseVoice() {
-    if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return null;
-    var voices = window.speechSynthesis.getVoices() || [];
-    if (!voices.length) { selectedVoice = null; return null; }
-    var englishVoices = voices.filter(function (voice) {
-      return /^en(-|$)/i.test(String(voice.lang || ""));
-    });
-    if (!englishVoices.length) { selectedVoice = null; return null; }
-    /* Locked pilot requirement: do not require a male/female voice label.
-       Prefer Australia English, then a natural English voice, then any
-       installed English voice so Hear Instructions works reliably on Android. */
-    var australian = englishVoices.find(function (voice) {
-      return /^en[-_]AU$/i.test(String(voice.lang || ""));
-    });
-    var natural = englishVoices.find(function (voice) {
-      return /(?:natural|neural|enhanced|premium|online|google|microsoft)/i.test(String(voice.name || ""));
-    });
-    selectedVoice = australian || natural || englishVoices[0] || null;
-    return selectedVoice;
   }
 
   function nativeSpeak(text) {
@@ -249,17 +239,19 @@
   function chooseConversationVoices() {
     if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return {a:null,b:null};
     var voices = window.speechSynthesis.getVoices() || [];
-    var english = voices.filter(function(v){ return /^en(-|$)/i.test(String(v.lang||"")); });
+    var english = voices.filter(function(v){ return /^en(-|$)/i.test(String(v.lang || "")); });
     if (!english.length) return {a:null,b:null};
-    var femaleHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
-    var maleHints = /(?:male|man|david|mark|ryan|guy|alex|daniel|fred|james|john|tom|aaron|arthur|oliver|google.*male)/i;
-    var strictEnglish = english.filter(function(v){
-      var name=String(v.name||"");
-      return maleHints.test(name) && !femaleHints.test(name) &&
-        /(?:microsoft|google|enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom)/i.test(name);
-    });
-    var a = strictEnglish[0] || null;
-    var b = strictEnglish.find(function(v){return v !== a;}) || a;
+    function rank(v) {
+      var lang = String(v.lang || "");
+      var name = String(v.name || "");
+      var score = 0;
+      if (/^en[-_]AU$/i.test(lang)) score += 100;
+      if (/(?:natural|neural|enhanced|premium|online|google|microsoft)/i.test(name)) score += 20;
+      return score;
+    }
+    english.sort(function(a,b){ return rank(b) - rank(a); });
+    var a = english[0] || null;
+    var b = english.find(function(v){ return v !== a; }) || a;
     return {a:a,b:b};
   }
 
@@ -275,15 +267,16 @@
     var conversationRun = conversationGeneration;
     speechGeneration += 1;
     var runGeneration = speechGeneration;
+
     if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function") {
       if (window.PacificEducationNativeTTS && typeof window.PacificEducationNativeTTS.speak === "function") {
-        var i=0;
-        function nativeNext(){
-          if(i>=lines.length){if(done)done();return;}
-          try{
-            window.PacificEducationNativeTTS.speak(String(lines[i++].text||""));
+        var i = 0;
+        function nativeNext() {
+          if (i >= lines.length) { clearPersistedConversation(); if (done) done(); return; }
+          try {
+            window.PacificEducationNativeTTS.speak(String(lines[i++].text || ""));
             setTimeout(nativeNext, 3200);
-          }catch(_){if(done)done();}
+          } catch (_) { if (done) done(); }
         }
         nativeNext();
         return true;
@@ -291,31 +284,73 @@
       setVoiceStatus("Two-person AI playback requires a speech engine.");
       return false;
     }
-    var synth=window.speechSynthesis, pair=chooseConversationVoices(), index=0;
+
+    var synth = window.speechSynthesis, pair = chooseConversationVoices();
+    var index = 0, charOffset = 0;
     var saved = loadPersistedConversation();
-    var requestedSignature = lines.map(function(item){ return String(item && item.text || ""); }).join("\u0001");
-    if (saved && saved.lines.map(function(item){ return String(item.text || ""); }).join("\u0001") === requestedSignature) {
+    if (saved && saved.lines.map(function(item){ return String(item.text || ""); }).join("\u0001") === signature) {
       index = Math.max(0, Math.min(Number(saved.index) || 0, lines.length - 1));
-      setVoiceStatus("Restoring AI Playback from where it stopped.");
+      charOffset = Math.max(0, Number(saved.charOffset) || 0);
+      charOffset = Math.min(charOffset, String(lines[index].text || "").length);
+      setVoiceStatus(charOffset > 0 ? "Restoring AI Playback from the saved position." : "Restoring AI Playback from the saved sentence.");
     } else {
       clearPersistedConversation();
     }
-    try{synth.cancel();if(typeof synth.resume==="function")synth.resume();}catch(_){}
-    function next(){
-      if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration) return;
-      if(index>=lines.length){clearPersistedConversation();setVoiceStatus("AI Playback conversation complete.");if(done)done();return;}
-      savePersistedConversation(lines, index);
-      var item=lines[index], u=new window.SpeechSynthesisUtterance(String(item.text||""));
-      var v=(index%2===0?pair.a:pair.b);
-      if(v)u.voice=v;
-      u.lang=v&&v.lang?v.lang:"en-US";
-      u.rate=0.94;
-      u.pitch=index%2===0?0.92:1.08;
-      u.volume=1;
-      u.onstart=function(){savePersistedConversation(lines, index);setVoiceStatus("AI Playback: "+(index%2===0?"Speaker 1":"Speaker 2")+" is speaking.");};
-      u.onend=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;savePersistedConversation(lines, index);next();};
-      u.onerror=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;next();};
-      try{synth.speak(u);synth.resume();}catch(_){index++;next();}
+    try { synth.cancel(); if (typeof synth.resume === "function") synth.resume(); } catch (_) {}
+
+    function next() {
+      if (conversationRun !== conversationGeneration || runGeneration !== speechGeneration) return;
+      if (index >= lines.length) {
+        clearPersistedConversation();
+        setVoiceStatus("AI Playback conversation complete.");
+        if (done) done();
+        return;
+      }
+
+      var fullText = String(lines[index].text || "");
+      var offsetForLine = charOffset;
+      var remainingText = offsetForLine > 0 ? fullText.slice(offsetForLine) : fullText;
+      if (!remainingText.trim()) {
+        index += 1; charOffset = 0;
+        savePersistedConversation(lines, index, 0, "paused");
+        next();
+        return;
+      }
+
+      savePersistedConversation(lines, index, offsetForLine, "speaking");
+      var u = new window.SpeechSynthesisUtterance(remainingText);
+      var v = (index % 2 === 0 ? pair.a : pair.b);
+      if (v) u.voice = v;
+      u.lang = v && v.lang ? v.lang : "en-AU";
+      u.rate = 0.94; u.pitch = 1; u.volume = 1;
+
+      u.onstart = function() {
+        savePersistedConversation(lines, index, offsetForLine, "speaking");
+        setVoiceStatus("AI Playback: " + (index % 2 === 0 ? "Speaker 1" : "Speaker 2") + " is speaking.");
+      };
+      u.onboundary = function(event) {
+        if (conversationRun !== conversationGeneration || runGeneration !== speechGeneration) return;
+        var boundary = Number(event && event.charIndex);
+        if (!isFinite(boundary) || boundary < 0) return;
+        charOffset = Math.min(fullText.length, offsetForLine + boundary);
+        savePersistedConversation(lines, index, charOffset, "speaking");
+      };
+      u.onend = function() {
+        if (conversationRun !== conversationGeneration || runGeneration !== speechGeneration) return;
+        index += 1; charOffset = 0;
+        savePersistedConversation(lines, index, 0, "paused");
+        next();
+      };
+      u.onerror = function() {
+        if (conversationRun !== conversationGeneration || runGeneration !== speechGeneration) return;
+        savePersistedConversation(lines, index, charOffset, "paused");
+        setVoiceStatus("Voice paused. Restoring from the saved position.");
+      };
+      try { synth.speak(u); if (typeof synth.resume === "function") synth.resume(); }
+      catch (_) {
+        savePersistedConversation(lines, index, charOffset, "paused");
+        setVoiceStatus("Voice paused. Restoring from the saved position.");
+      }
     }
     next();
     return true;
@@ -397,7 +432,7 @@
   window.addEventListener("pagehide", function () {
     try {
       var active = loadPersistedConversation();
-      if (active) savePersistedConversation(active.lines, active.index);
+      if (active) savePersistedConversation(active.lines, active.index, active.charOffset, "paused");
     } catch (_) {}
   });
 
