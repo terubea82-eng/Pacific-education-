@@ -192,7 +192,7 @@
     body.setAttribute("data-pe-voice-watcher","true");
     var last=currentStep();
     var observer=new MutationObserver(function(){
-      var s=currentStep();if(s!==last){last=s;if(!pendingNextVoice)announceCurrentStep("step");installBoxVoice();}
+      var s=currentStep();if(s!==last){last=s;if(!pendingNextVoice)announceCurrentStep("step");installBoxVoice();installFinalNext();}
     });
     observer.observe(body,{attributes:true,attributeFilter:["data-pe-flow-step","class"]});
   }
