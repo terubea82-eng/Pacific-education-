@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1020 — AI-first mandatory welcome */
+/* Pacific Education — Speech Voice Controller v1021 — fluent English male voice */
 (function (window) {
   "use strict";
 
@@ -32,17 +32,26 @@
     var englishVoices = voices.filter(function (voice) {
       return /^en(-|$)/i.test(String(voice.lang || ""));
     });
-    var maleVoiceHints = /(?:male|man|microsoft\s+(?:david|mark|ryan|guy)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|alex|daniel|fred|james|john|tom|aaron|arthur|oliver)/i;
-    var femaleVoiceHints = /(?:female|woman|microsoft\s+(?:zira|hazel|susan)|google\s+(?:uk\s+english\s+female|us\s+english\s+female)|samantha|karen|moira|victoria|ava|allison)/i;
+    var maleVoiceHints = /(?:microsoft\\s+(?:david|mark|ryan|guy|george)|google\\s+(?:uk\\s+english\\s+male|us\\s+english\\s+male)|daniel|alex|fred|james|john|tom|aaron|arthur|oliver)/i;
+    var femaleVoiceHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
+    var fluentEnglishHints = /(?:microsoft|google|enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom)/i;
     var maleEnglishVoice = englishVoices.find(function (voice) {
-      return maleVoiceHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
+      var name = String(voice.name || "");
+      return maleVoiceHints.test(name) && !femaleVoiceHints.test(name);
+    });
+    var naturalMaleEnglishVoice = englishVoices.find(function (voice) {
+      var name = String(voice.name || "");
+      return /male|man|david|mark|ryan|guy|daniel|alex|james|john|tom|aaron|arthur|oliver/i.test(name) &&
+             fluentEnglishHints.test(name) && !femaleVoiceHints.test(name);
     });
     selectedVoice =
       maleEnglishVoice ||
+      naturalMaleEnglishVoice ||
       englishVoices.find(function (voice) {
-        return voice.localService && maleVoiceHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
+        return voice.localService && fluentEnglishHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
       }) ||
-      englishVoices.find(function (voice) { return voice.localService; }) ||
+      englishVoices.find(function (voice) { return voice.localService && !femaleVoiceHints.test(String(voice.name || "")); }) ||
+      englishVoices.find(function (voice) { return !femaleVoiceHints.test(String(voice.name || "")); }) ||
       englishVoices[0] ||
       voices[0];
     return selectedVoice;
@@ -239,8 +248,10 @@
     if (!english.length) english = voices;
     var femaleHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
     var maleHints = /(?:male|man|david|mark|ryan|guy|alex|daniel|fred|james|john|tom|aaron|arthur|oliver|google.*male)/i;
-    var a = english.find(function(v){return maleHints.test(String(v.name||"")) && !femaleHints.test(String(v.name||""));}) || english[0] || null;
-    var b = english.find(function(v){return v !== a && femaleHints.test(String(v.name||""));}) ||
+    var a = english.find(function(v){return maleHints.test(String(v.name||"")) && !femaleHints.test(String(v.name||""));}) ||
+            english.find(function(v){return v.localService && !femaleHints.test(String(v.name||""));}) ||
+            english[0] || null;
+    var b = english.find(function(v){return v !== a && maleHints.test(String(v.name||""));}) ||
             english.find(function(v){return v !== a && v.localService;}) ||
             english.find(function(v){return v !== a;}) || a;
     return {a:a,b:b};
