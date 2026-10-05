@@ -85,9 +85,26 @@
     document.addEventListener("pacificEducationSchoolChanged", ensureSchoolIdentity);
 
     function setPilotActivityGate(enabled) {
+      /*
+       * Registration must never be blocked by the workspace gate.
+       * The pilot workspace is selected after registration, so disabling the
+       * registration controls here creates a deadlock: users cannot register
+       * and therefore cannot reach the role workspace. Keep registration and
+       * guided navigation usable; gate only post-registration activity tools.
+       */
+      var registrationIds = {
+        "userRegistrationOpenButton": true,
+        "pilotRegistrationName": true,
+        "pilotRegistrationRole": true,
+        "pilotRegistrationSaveButton": true,
+        "registrationNextButton": true,
+        "prototypeAuthorizeButton": true,
+        "prototypeNextButton": true,
+        "pilotRoleSelector": true
+      };
       var controls = document.querySelectorAll("main button, main select, main input, main textarea");
       Array.prototype.forEach.call(controls, function (el) {
-        if (el.id === "pilotRoleSelector" || el.closest("#pacificEducationPilotUserWorkspaces")) return;
+        if (el.closest("#pacificEducationPilotUserWorkspaces") || registrationIds[el.id]) return;
         if (enabled) {
           if (el.dataset.pilotGateDisabled === "true") {
             el.disabled = false;
