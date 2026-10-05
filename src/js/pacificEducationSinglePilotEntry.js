@@ -15,6 +15,17 @@
 
   var ENTRY_ID = "pacificEducationSingleRegistration";
   var LANGUAGE_KEY = "pacificEducationUserRegistrationLanguageV1";
+  var COUNTRY_CODES = "AF AL DZ AS AD AO AI AQ AG AR AM AW AU AT AZ BS BH BD BB BY BE BZ BJ BM BT BO BQ BA BW BV BR IO BN BG BF BI CV KH CM CA KY CF TD CL CN CX CC CO KM CG CD CK CR CI HR CU CW CY CZ DK DJ DM DO EC EG SV GQ ER EE SZ ET FK FO FJ FI FR GF PF TF GA GM GE DE GH GI GR GL GD GP GU GT GG GN GW GY HT HM VA HN HK HU IS IN ID IR IQ IE IM IL IT JM JP JE JO KZ KE KI KP KR KW KG LA LV LB LS LR LY LI LT LU MO MG MW MY MV ML MT MH MQ MR MU YT MX FM MD MC MN ME MS MA MZ MM NA NR NP NL NC NZ NI NE NG NU NF MK MP NO OM PK PW PS PA PG PY PE PH PN PL PT PR QA RE RO RU RW BL SH KN LC MF PM VC WS SM ST SA SN RS SC SL SG SX SK SI SB SO ZA GS SS ES LK SD SR SJ SE CH SY TW TJ TZ TH TL TG TK TO TT TN TR TM TC TV UG UA AE GB US UM UY UZ VU VE VN VG VI WF EH YE ZM ZW".split(" ").map(function(code){return code.toUpperCase();});
+  var COUNTRY_NAMES = (function(){
+    var names = [];
+    try {
+      var dn = new Intl.DisplayNames(["en"], {type:"region"});
+      COUNTRY_CODES.forEach(function(code){ var name = dn.of(code); if(name) names.push({code:code,name:name}); });
+    } catch(e) {}
+    if(!names.length) names=[{code:"FJ",name:"Fiji"}];
+    names.sort(function(a,b){return a.name.localeCompare(b.name);});
+    return names;
+  })();
   var LANGUAGE_OPTIONS = [
     {value:"English",label:"English",direction:"ltr"},
     {value:"French",label:"Français",direction:"ltr"},
@@ -50,6 +61,24 @@
     "head-of-school": ["pacificEducationSchoolIdentitySection", "pacificEducationTeacherClassRoster", "pacificEducationExamCalendarSection", "pacificEducationCoverageDashboard"],
     "institution-admin": ["pacificEducationInstitutionSetup", "pacificEducationInstitutionAdvice", "pacificEducationExamCalendarSection"]
   };
+
+  function countryOptionHtml(){return '<option value="">Select your country — required</option>'+COUNTRY_NAMES.map(function(x){return '<option value="'+x.code+'">'+x.name+'</option>';}).join("");}
+  function countryName(code){var item=COUNTRY_NAMES.filter(function(x){return x.code===String(code||"").toUpperCase();})[0];return item?item.name:String(code||"");}
+  function applyRegisteredCountry(code){
+    code=String(code||"").toUpperCase();
+    if(!code)return false;
+    safeSet("pacificEducationPilotCountry",code);
+    safeSet("pacificEducationPilotCountryName",countryName(code));
+    try{
+      localStorage.setItem("pacificEducationCurriculumCountryCode",code);
+      localStorage.setItem("pacificEducationCurriculumCountry",countryName(code));
+      if(window.PacificEducationCountryConfig&&typeof window.PacificEducationCountryConfig.load==="function"){
+        window.PacificEducationCountryConfig.load({country:countryName(code)});
+      }
+      document.dispatchEvent(new CustomEvent("pacificEducationCurriculumCountryChanged",{detail:{code:code,name:countryName(code)}}));
+    }catch(e){}
+    return true;
+  }
 
   function safeGet(key) {
     try { return window.sessionStorage.getItem(key) || ""; } catch (e) { return ""; }
@@ -255,6 +284,13 @@
 
   function registerRole(role, language) {
     if (!role) return false;
+    var countrySelect=document.getElementById("singlePilotCountry");
+    var countryCode=countrySelect?String(countrySelect.value||"").trim().toUpperCase():safeGet("pacificEducationPilotCountry");
+    if(!countryCode){
+      var countryStatus=document.getElementById("singlePilotRegistrationStatus");
+      if(countryStatus) countryStatus.textContent="Country is required. Select your country so Pacific Education can lock your registration to the correct curriculum pathway.";
+      return false;
+    }
     if (role === "student") {
       var roster = window.PacificEducationTeacherClassRosterContext;
       var existingClassId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
@@ -270,6 +306,7 @@
     safeLanguageSet({interfaceLanguage:selectedLanguage,learningLanguage:selectedLanguage,selectedAt:new Date().toISOString()});
 
     safeSet("pacificEducationPilotRole", role);
+    applyRegisteredCountry(countryCode);
     safeSet("pacificEducationPilotRegistered", "true");
 
     if (role === "student") {
@@ -329,6 +366,14 @@
 
     document.getElementById("singlePilotRegisterButton").onclick = function () {
       var role = document.getElementById("singlePilotRole").value;
+      var country = document.getElementById("singlePilotCountry").value;
+      var curriculumStatus=document.getElementById("singlePilotCurriculumStatus");
+      if(!country){
+        status.textContent = "Country is required before registration can be completed.";
+        if(curriculumStatus) curriculumStatus.textContent="Curriculum: country selection is required."; 
+        return;
+      }
+      if(curriculumStatus) curriculumStatus.textContent="Curriculum: registration will be locked to " + countryName(country) + ". Other country curriculum pathways will not be shown in this user workspace.";
       var languageSelect = document.getElementById("singlePilotLanguage");
       var language = languageSelect ? languageSelect.value : "English";
       var status = document.getElementById("singlePilotRegistrationStatus");
@@ -340,6 +385,9 @@
       registerRole(role, language);
     };
 
+    var savedCountry = safeGet("pacificEducationPilotCountry");
+    var countrySelect = document.getElementById("singlePilotCountry");
+    if(countrySelect && savedCountry) countrySelect.value=savedCountry;
     var savedRole = safeGet("pacificEducationPilotRole");
     var registered = safeGet("pacificEducationPilotRegistered") === "true";
     var savedLanguage = safeLanguageGet();
@@ -348,6 +396,7 @@
       languageSelect.value = savedLanguage.interfaceLanguage;
       applyRegistrationLanguage(savedLanguage.interfaceLanguage);
     }
+    if (savedCountry) applyRegisteredCountry(savedCountry);
     if (registered && ROLE_ROUTES[savedRole]) {
       if (!registerRole(savedRole, savedLanguage && savedLanguage.interfaceLanguage)) {
         hideAllForEntry();
@@ -360,7 +409,8 @@
       prototype: true,
       productionEligible: false,
       registerRole: registerRole,
-      showRoute: showRoute
+      showRoute: showRoute,
+      countryName: countryName
     });
   }
 
