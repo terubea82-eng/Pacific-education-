@@ -173,7 +173,7 @@
             detail: { classId: context.classId, level: context.level || getLevel(), subjectId: subjectId, prototype: true }
         }));
         var status = document.getElementById("pacificEducationSubjectStatus");
-        if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
+        if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel();
         refreshLesson();
         if (window.PacificEducationExpandedSubjectActivityUI && typeof window.PacificEducationExpandedSubjectActivityUI.render === "function") window.PacificEducationExpandedSubjectActivityUI.render();
         return true;
@@ -183,7 +183,7 @@
         if (select && getConfiguredSubjects().some(function(item){return item.id === subjectId;}) && select.value !== subjectId) {
             select.value = subjectId;
             var status = document.getElementById("pacificEducationSubjectStatus");
-            if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel() + " (pilot — curriculum verification required)";
+            if (status) status.textContent = "Selected: " + subjectId + " • " + getLevel();
         }
     }
 
