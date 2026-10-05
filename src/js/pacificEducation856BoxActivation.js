@@ -5,7 +5,7 @@
 (function(window, document){
   "use strict";
 
-  var VERSION = "856-box-activation-1.1.0-user-box-repair";
+  var VERSION = "856-box-activation-1.2.0-final-user-activity-repair";
 
   function show(id){
     var el=document.getElementById(id);
@@ -71,7 +71,8 @@
       var style=document.createElement("style");
       style.id="pe856-user-box-repair-style";
       style.textContent=
-        "body.pe-pilot-all-features.pe-guided-flow main > *,"+
+        /* Do not override the guided-flow step filter: only the active step must be visible. */
+        ""+
         "body.pe-pilot-all-features.pe-guided-flow #pacificEducationAppMenu,"+
         "body.pe-pilot-all-features.pe-guided-flow header,"+
         "body.pe-pilot-all-features.pe-guided-flow #userFirstNavigation,"+
@@ -355,6 +356,46 @@
         }
       });
     },1200);
+
+    /* Final pilot interaction pass: repair the two recurring failure modes found in the live build.
+       1) guided-flow CSS must not force every main section visible at once;
+       2) late-running role/gate modules must not leave the core pilot entry/activity controls disabled.
+       Production/payment controls remain protected and are never enabled here. */
+    function finalPilotInteractionPass(){
+      var protectedIds={buyPlans:1,pacificEducationPaymentLinksAlways:1,pacificEducationInstitutionFees:1,pacificEducationUniversityFeeWorkflow:1,pacificEducationAccessEntitlement:1};
+      var requiredIds=[
+        "userRegistrationOpenButton","pilotRegistrationName","pilotRegistrationRole","pilotRegistrationSaveButton",
+        "registrationNextButton","prototypeAuthorizeButton","prototypeNextButton","levelNextButton","subjectNextButton",
+        "termNextButton","capabilityNextButton","dailyActivitiesStartButton","previousLessonButton","nextLessonButton",
+        "dailyActivitiesContinuePracticeButton","practiceContinueAssessmentButton","practiceNextButton",
+        "assessmentContinueCoverageButton","assessmentNextButton"
+      ];
+      requiredIds.forEach(function(id){
+        var el=document.getElementById(id);
+        if(!el || protectedIds[id]) return;
+        el.style.pointerEvents="auto";
+        el.style.touchAction="manipulation";
+        if(el.tagName && el.tagName.toLowerCase()==="button" && id!=="prototypeAuthorizeButton"){
+          el.disabled=false;
+          el.setAttribute("aria-disabled","false");
+        }
+      });
+      /* Submit controls that are intentionally disabled until an answer is selected must stay disabled. */
+      ["peActivitySubmitChoice","peActivitySubmitTrueFalse","peActivitySubmitVoice"].forEach(function(id){
+        var el=document.getElementById(id);
+        if(el && el.getAttribute("data-pe-answer-gate")==="true") return;
+      });
+      /* Keep the protected payment boundary hidden even after late UI refreshes. */
+      Object.keys(protectedIds).forEach(function(id){
+        var el=document.getElementById(id);
+        if(el){el.hidden=true;el.setAttribute("data-pe-protected","true");}
+      });
+      document.body.setAttribute("data-pe-user-box-activity-repair","active");
+    }
+    finalPilotInteractionPass();
+    window.setTimeout(finalPilotInteractionPass,750);
+    window.setTimeout(finalPilotInteractionPass,2000);
+    window.setTimeout(finalPilotInteractionPass,4000);
 
     var status=document.getElementById("systemStatus");
     if(status)status.textContent="Pacific Education 856-compatible pilot activation is active. Pilot boxes enabled; production/payment gates remain locked.";
