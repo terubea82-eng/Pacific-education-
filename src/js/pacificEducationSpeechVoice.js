@@ -284,13 +284,13 @@
       welcome.addEventListener("click", function (event) {
         if (event) event.preventDefault();
         speakConversation([
-          {speaker:"1",text:"What is Pacific Education, and why is it important?"},
-          {speaker:"2",text:"Pacific Education is designed to support learners, teachers, parents and education communities. Its purpose is to make learning clear, accessible and connected."},
-          {speaker:"1",text:"What does it help learners do?"},
-          {speaker:"2",text:"It brings learning activities, educational content, practice, assessment and progress together so learners can learn step by step."},
-          {speaker:"1",text:"And why does that matter across the Pacific?"},
-          {speaker:"2",text:"Because every learner should have opportunities to learn, discover, practise and grow, while teachers and families can work together to support learning."},
-          {speaker:"1",text:"Welcome to Pacific Education."},
+          {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome you."},
+          {speaker:"2",text:"Thank you. Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},
+          {speaker:"1",text:"What is Pacific Education designed to do?"},
+          {speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},
+          {speaker:"1",text:"Why is that important across the Pacific?"},
+          {speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},
+          {speaker:"1",text:"What can learners do here?"},
           {speaker:"2",text:"Learn, discover, practise and grow with us."}
         ]);
         return false;
@@ -313,13 +313,13 @@
     window.__pacificEducationAutoWelcomeVoiceScheduled = true;
 
     var conversation = [
-      {speaker:"1",text:"What is Pacific Education, and why is it important?"},
-      {speaker:"2",text:"Pacific Education is designed to support learners, teachers, parents and education communities. Its purpose is to make learning clear, accessible and connected."},
-      {speaker:"1",text:"What is its purpose for learning?"},
+      {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome you."},
+      {speaker:"2",text:"Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},
+      {speaker:"1",text:"What is Pacific Education designed to do?"},
       {speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},
       {speaker:"1",text:"Why is that important across the Pacific?"},
       {speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},
-      {speaker:"1",text:"Welcome to Pacific Education."},
+      {speaker:"1",text:"What can learners do here?"},
       {speaker:"2",text:"Learn, discover, practise and grow with us."}
     ];
 
