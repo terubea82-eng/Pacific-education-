@@ -328,9 +328,19 @@ git status</pre>
       if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
-        status.textContent="Pilot registration saved for "+r+". Press Next to continue to Prototype Access.";
-        if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText("Pilot registration saved for "+r+". Continue to Prototype Access.");
-        else if(window.speakText)window.speakText("Pilot registration saved for "+r+". Continue to Prototype Access.");
+        status.textContent="Pilot registration saved for "+r+". Opening the "+r+" workspace.";
+        var workspaceRoleMap={"Student":"student","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
+        var workspaceRole=workspaceRoleMap[r]||"";
+        var workspaceSelector=document.getElementById("pilotRoleSelector");
+        if(workspaceSelector&&workspaceRole){
+          workspaceSelector.value=workspaceRole;
+          workspaceSelector.dispatchEvent(new Event("change",{bubbles:true}));
+          var workspace=document.getElementById("pacificEducationPilotUserWorkspaces");
+          if(workspace){workspace.hidden=false;try{workspace.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){workspace.scrollIntoView();}}
+        }
+        var announcement="Pilot registration saved for "+r+". Opening the "+r+" workspace.";
+        if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(announcement);
+        else if(window.speakText)window.speakText(announcement);
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
     };
   }
