@@ -11,7 +11,7 @@
 (function(window) {
     "use strict";
 
-    var VERSION = "1.4.0";
+    var VERSION = "1.5.0";
 
     function getConfiguredLevels() {
         if (window.PacificEducationCountryConfig && typeof window.PacificEducationCountryConfig.getLevels === "function") {
@@ -20,6 +20,26 @@
         return ["Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
     }
     function getLevels() { return getConfiguredLevels(); }
+
+    function getRoster() {
+        return window.PacificEducationTeacherClassRosterContext &&
+            typeof window.PacificEducationTeacherClassRosterContext.getClasses === "function"
+            ? window.PacificEducationTeacherClassRosterContext : null;
+    }
+    function getSelectedClassId() {
+        var roster = getRoster();
+        return roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+    }
+    function selectExistingClass(classId) {
+        var roster = getRoster(), id = String(classId || "").trim();
+        if (!roster || !id || typeof roster.getClass !== "function" || !roster.getClass(id) || typeof roster.setClassId !== "function") return false;
+        roster.setClassId(id);
+        var item = roster.getClass(id);
+        if (item && item.level) window.localStorage.setItem("pacificEducationLevel", String(item.level));
+        document.dispatchEvent(new CustomEvent("pacificEducationClassSelected", {detail:{classId:id,class:item,prototype:true}}));
+        createUI();
+        return true;
+    }
 
     function getStoredLevel() {
         var value = window.localStorage.getItem("pacificEducationLevel");
@@ -115,6 +135,55 @@
 
         host.innerHTML = "";
 
+        var roster = getRoster();
+        var classes = roster ? roster.getClasses() : {};
+        var classIds = Object.keys(classes || {}).filter(function(id) { return classes[id] && String(id).trim(); }).sort();
+
+        var classLabel = document.createElement("label");
+        classLabel.setAttribute("for", "pacificEducationClassReference");
+        classLabel.textContent = "🏫 Choose existing Class Reference";
+
+        var classSelect = document.createElement("select");
+        classSelect.id = "pacificEducationClassReference";
+        classSelect.name = "pacificEducationClassReference";
+        classSelect.setAttribute("aria-label", "Choose existing Class Reference");
+
+        var placeholder = document.createElement("option");
+        placeholder.value = "";
+        placeholder.textContent = classIds.length ? "Select a class" : "No existing Class References available";
+        classSelect.appendChild(placeholder);
+
+        classIds.forEach(function(id) {
+            var item = classes[id] || {};
+            var option = document.createElement("option");
+            option.value = id;
+            option.textContent = String(id) + (item.section ? " • " + item.section : "") + (item.level ? " • " + item.level : "");
+            classSelect.appendChild(option);
+        });
+        classSelect.value = getSelectedClassId();
+        classSelect.disabled = classIds.length === 0;
+        classSelect.addEventListener("change", function() {
+            if (!selectExistingClass(classSelect.value)) {
+                var cs = document.getElementById("pacificEducationClassStatus");
+                if (cs) cs.textContent = "Select an existing Class Reference before continuing.";
+            }
+        });
+
+        var classStatus = document.createElement("p");
+        classStatus.id = "pacificEducationClassStatus";
+        classStatus.setAttribute("aria-live", "polite");
+        var selectedId = getSelectedClassId();
+        var selected = selectedId && classes[selectedId] ? classes[selectedId] : null;
+        classStatus.textContent = selected
+            ? "Selected Class Reference: " + selectedId + (selected.level ? " • " + selected.level : "")
+            : (classIds.length ? "Class Reference is required before choosing the learner level." : "No existing Class References are available. A teacher/authorized class setup must create one first.");
+
+        host.appendChild(classLabel);
+        host.appendChild(document.createElement("br"));
+        host.appendChild(classSelect);
+        host.appendChild(classStatus);
+        host.appendChild(document.createElement("hr"));
+
         var label = document.createElement("label");
         label.setAttribute("for", "pacificEducationLevel");
         label.textContent = "Choose learning level";
@@ -131,14 +200,18 @@
             select.appendChild(option);
         });
 
+        var selectedClassId = getSelectedClassId();
+        var selectedClass = selectedClassId && roster && typeof roster.getClass === "function" ? roster.getClass(selectedClassId) : null;
+        if (selectedClass && selectedClass.level && getConfiguredLevels().indexOf(String(selectedClass.level)) !== -1) window.localStorage.setItem("pacificEducationLevel", String(selectedClass.level));
         select.value = getStoredLevel();
 
         var status = document.createElement("p");
         status.id = "pacificEducationLevelStatus";
         status.setAttribute("aria-live", "polite");
         status.textContent =
-            "Selected: " + select.value +
-            " (prototype curriculum selection)";
+            "Selected: " + select.value + (selectedClass ? " • linked to Class Reference " + selectedClassId : " • select an existing Class Reference first");
+
+        if (!selectedClassId) select.disabled = true;
 
         select.addEventListener("change", function() {
             setLevel(select.value);
