@@ -226,13 +226,15 @@
       ["prototypeNextButton","levelSelection"],
       ["levelNextButton","subjectSelection"],
       ["subjectNextButton","termSelection"],
-      ["termNextButton","capabilitySelection"],
-      ["capabilityNextButton","dailyLesson"],
-      ["dailyNextButton","dailyLessonPracticeStage"],
-      ["practiceNextButton","assessments"],
-      ["assessmentNextButton","pacificEducationCoverageDashboard"]
+      ["termNextButton","capabilitySelection"]
     ];
     flow.forEach(function(pair){bind(pair[0],function(){go(pair[1]);});});
+    bind("capabilityNextButton",function(){
+      document.body.classList.remove("pe-guided-flow");
+      document.body.removeAttribute("data-pe-flow-step");
+      var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
+      if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
+    });
 
     /* Direct pilot boxes must remain usable even when the guided overlay is active. */
     [
