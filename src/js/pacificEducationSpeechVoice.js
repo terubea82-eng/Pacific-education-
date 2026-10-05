@@ -32,7 +32,7 @@
     var englishVoices = voices.filter(function (voice) {
       return /^en(-|$)/i.test(String(voice.lang || ""));
     });
-    var maleVoiceHints = /(?:microsoft\\s+(?:david|mark|ryan|guy|george)|google\\s+(?:uk\\s+english\\s+male|us\\s+english\\s+male)|daniel|alex|fred|james|john|tom|aaron|arthur|oliver)/i;
+    var maleVoiceHints = /(?:microsoft\s+(?:david|mark|ryan|guy|george)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|daniel|alex|fred|james|john|tom|aaron|arthur|oliver)/i;
     var femaleVoiceHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
     var fluentEnglishHints = /(?:microsoft|google|enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom)/i;
     var maleEnglishVoice = englishVoices.find(function (voice) {
@@ -44,16 +44,7 @@
       return /male|man|david|mark|ryan|guy|daniel|alex|james|john|tom|aaron|arthur|oliver/i.test(name) &&
              fluentEnglishHints.test(name) && !femaleVoiceHints.test(name);
     });
-    selectedVoice =
-      maleEnglishVoice ||
-      naturalMaleEnglishVoice ||
-      englishVoices.find(function (voice) {
-        return voice.localService && fluentEnglishHints.test(String(voice.name || "")) && !femaleVoiceHints.test(String(voice.name || ""));
-      }) ||
-      englishVoices.find(function (voice) { return voice.localService && !femaleVoiceHints.test(String(voice.name || "")); }) ||
-      englishVoices.find(function (voice) { return !femaleVoiceHints.test(String(voice.name || "")); }) ||
-      englishVoices[0] ||
-      voices[0];
+    selectedVoice = maleEnglishVoice || naturalMaleEnglishVoice || null;
     return selectedVoice;
   }
 
@@ -96,7 +87,12 @@
       if (typeof synth.resume === "function") synth.resume();
       speechUnlocked = true;
 
-      var currentVoice = selectedVoice || chooseVoice();
+      var currentVoice = chooseVoice();
+      if (!currentVoice) {
+        pendingText = "";
+        setVoiceStatus("No fluent English male voice is installed. No substitute voice will be used.");
+        return false;
+      }
       var utterance = new window.SpeechSynthesisUtterance(text);
       if (currentVoice) utterance.voice = currentVoice;
       utterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
@@ -125,38 +121,6 @@
         }
 
         if (pendingText !== text) return;
-
-        if (currentVoice && code && code !== "interrupted") {
-          pendingText = "";
-          selectedVoice = null;
-          try {
-            synth.cancel();
-            if (typeof synth.resume === "function") synth.resume();
-            var fallback = new window.SpeechSynthesisUtterance(text);
-            fallback.lang = "en-US";
-            fallback.rate = 0.95;
-            fallback.pitch = 1;
-            fallback.volume = 1;
-            fallback.onstart = function () { pendingText = text; setVoiceStatus("Voice playing."); };
-            fallback.onend = function () { pendingText = ""; setVoiceStatus("Voice ready."); };
-            fallback.onerror = function (retryEvent) {
-              console.warn("Pacific Education fallback speech error:", retryEvent && retryEvent.error);
-              if (retryEvent && (retryEvent.error === "not-allowed" || retryEvent.error === "synthesis-unavailable" || retryEvent.error === "voice-unavailable")) {
-                pendingText = text;
-                speechUnlocked = false;
-                setVoiceStatus("Voice waiting for first tap. Tap Hear Welcome.");
-                return;
-              }
-              pendingText = "";
-              setVoiceStatus("Voice error: " + ((retryEvent && retryEvent.error) || "unknown") + ".");
-            };
-            synth.speak(fallback);
-            if (typeof synth.resume === "function") synth.resume();
-            return;
-          } catch (retryError) {
-            console.error("Pacific Education fallback speech failed:", retryError);
-          }
-        }
         pendingText = "";
       };
 
@@ -245,15 +209,16 @@
     if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return {a:null,b:null};
     var voices = window.speechSynthesis.getVoices() || [];
     var english = voices.filter(function(v){ return /^en(-|$)/i.test(String(v.lang||"")); });
-    if (!english.length) english = voices;
+    if (!english.length) return {a:null,b:null};
     var femaleHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
     var maleHints = /(?:male|man|david|mark|ryan|guy|alex|daniel|fred|james|john|tom|aaron|arthur|oliver|google.*male)/i;
-    var a = english.find(function(v){return maleHints.test(String(v.name||"")) && !femaleHints.test(String(v.name||""));}) ||
-            english.find(function(v){return v.localService && !femaleHints.test(String(v.name||""));}) ||
-            english[0] || null;
-    var b = english.find(function(v){return v !== a && maleHints.test(String(v.name||""));}) ||
-            english.find(function(v){return v !== a && v.localService;}) ||
-            english.find(function(v){return v !== a;}) || a;
+    var strictEnglish = english.filter(function(v){
+      var name=String(v.name||"");
+      return maleHints.test(name) && !femaleHints.test(name) &&
+        /(?:microsoft|google|enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom)/i.test(name);
+    });
+    var a = strictEnglish[0] || null;
+    var b = strictEnglish.find(function(v){return v !== a;}) || a;
     return {a:a,b:b};
   }
 
