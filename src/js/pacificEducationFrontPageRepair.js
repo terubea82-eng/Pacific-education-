@@ -3,7 +3,7 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.5.2";
+  var VERSION="1.5.3";
   var flow=[
     ["welcomeNextButton",1,"pacificEducationIdentityRegistration"],
     ["registrationNextButton",2,"prototypeAccess"],
@@ -94,6 +94,17 @@
     var label=textOf(el).toLowerCase();
     if(id==="userRegistrationOpenButton" || /user registration/.test(label) || /^users?$/.test(label)){
       event.preventDefault();event.stopImmediatePropagation();openRegistration();return;
+    }
+    if(id==="levelNextButton"){
+      var roster=window.PacificEducationTeacherClassRosterContext;
+      var classId=roster&&typeof roster.getClassId==="function"?String(roster.getClassId()||"").trim():"";
+      if(!classId){
+        event.preventDefault();event.stopImmediatePropagation();
+        status("Please select an existing Class Reference before continuing to Curriculum Subject.");
+        var classPicker=target("pacificEducationClassReference");
+        if(classPicker){try{classPicker.focus({preventScroll:false});}catch(_){classPicker.focus();}}
+        return;
+      }
     }
     for(var i=0;i<flow.length;i++)if(flow[i][0]===id){event.preventDefault();event.stopImmediatePropagation();nextFromButton(id);return;}
     var dest=mappedTarget(el);if(!dest)return;
