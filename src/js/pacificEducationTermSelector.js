@@ -70,7 +70,7 @@
         var status = document.getElementById("pacificEducationTermStatus");
         if (status) {
             status.textContent =
-                "Selected: " + term + " (prototype term selection)";
+                "Selected: " + term;
         }
 
         refresh();
