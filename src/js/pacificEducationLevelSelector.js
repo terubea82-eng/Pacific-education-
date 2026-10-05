@@ -88,7 +88,7 @@
 
         var status = document.getElementById("pacificEducationLevelStatus");
         if (status) {
-            status.textContent = "Selected: " + level + " (prototype curriculum selection)";
+            status.textContent = "Selected: " + level;
         }
 
         if (window.PacificEducationCore &&
@@ -125,7 +125,7 @@
         if (select && getConfiguredLevels().indexOf(level) !== -1 && select.value !== level) {
             select.value = level;
             var status = document.getElementById("pacificEducationLevelStatus");
-            if (status) status.textContent = "Selected: " + level + " (prototype curriculum selection)";
+            if (status) status.textContent = "Selected: " + level;
         }
     }
 
