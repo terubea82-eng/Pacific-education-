@@ -37,7 +37,19 @@
         var item = roster.getClass(id);
         if (item && item.level) window.localStorage.setItem("pacificEducationLevel", String(item.level));
         document.dispatchEvent(new CustomEvent("pacificEducationClassSelected", {detail:{classId:id,class:item,prototype:true}}));
-        createUI();
+        // Do not rebuild the selector here. Re-rendering during a class-change event
+        // can recreate the pathway controls and make the learner pathway appear to repeat.
+        var classSelect = document.getElementById("pacificEducationClassReference");
+        var levelSelect = document.getElementById("pacificEducationLevel");
+        var classStatus = document.getElementById("pacificEducationClassStatus");
+        var levelStatus = document.getElementById("pacificEducationLevelStatus");
+        if (classSelect) classSelect.value = id;
+        if (classStatus) classStatus.textContent = "Selected Class Reference: " + id + (item.level ? " • " + item.level : "");
+        if (levelSelect) {
+            levelSelect.disabled = false;
+            if (item.level && getConfiguredLevels().indexOf(String(item.level)) !== -1) levelSelect.value = String(item.level);
+        }
+        if (levelStatus) levelStatus.textContent = "Selected: " + (item.level || getStoredLevel()) + " • linked to Class Reference " + id;
         return true;
     }
 
