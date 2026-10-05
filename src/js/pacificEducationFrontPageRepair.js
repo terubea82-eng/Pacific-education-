@@ -3,7 +3,7 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.5.1";
+  var VERSION="1.5.2";
   var flow=[
     ["welcomeNextButton",1,"pacificEducationIdentityRegistration"],
     ["registrationNextButton",2,"prototypeAccess"],
@@ -91,10 +91,12 @@
   function handleNavigation(event){
     var el=event.target&&event.target.closest?event.target.closest("button,a,[role=button]"):null;if(!isNavigationControl(el))return;
     var id=el.id||"";
-    if(id==="userRegistrationOpenButton"){event.preventDefault();event.stopImmediatePropagation();openRegistration();return;}
+    var label=textOf(el).toLowerCase();
+    if(id==="userRegistrationOpenButton" || /user registration/.test(label) || /^users?$/.test(label)){
+      event.preventDefault();event.stopImmediatePropagation();openRegistration();return;
+    }
     for(var i=0;i<flow.length;i++)if(flow[i][0]===id){event.preventDefault();event.stopImmediatePropagation();nextFromButton(id);return;}
     var dest=mappedTarget(el);if(!dest)return;
-    var label=textOf(el).toLowerCase();
     var navigationWord=/(user registration|users|learning tools|class|level|subject|term|capability|daily activit|practice|assessment|coverage|dashboard|workspace|mail box|mailbox|education ai|guardian|system status|external reviewer|progress)/.test(label);
     if(!navigationWord&&((el.getAttribute("href")||"").charAt(0)!=="#"))return;
     event.preventDefault();event.stopImmediatePropagation();go(dest);
