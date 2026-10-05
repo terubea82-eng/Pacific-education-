@@ -103,6 +103,14 @@
       el.hidden = true;
     });
 
+    /* Hide technical pilot-only screens from normal role workspaces. Owner/reviewer routes may explicitly reveal the checklist; no role reveals Prototype Access. */
+    var pilotChecklist = document.getElementById("pacificEducationWebsitePilotChecklist");
+    if (pilotChecklist) pilotChecklist.hidden = true;
+    var prototypeAccess = document.getElementById("prototypeAccess");
+    if (prototypeAccess) prototypeAccess.hidden = true;
+    var prototypeNext = document.getElementById("prototypeNextWrapper");
+    if (prototypeNext) prototypeNext.hidden = true;
+
     var routes = ROLE_ROUTES[role] || [];
     routes.forEach(function (id) {
       var el = document.getElementById(id);
