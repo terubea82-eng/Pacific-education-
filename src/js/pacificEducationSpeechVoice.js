@@ -100,14 +100,14 @@
       speechUnlocked = true;
 
       var currentVoice = chooseVoice();
-      if (!currentVoice) {
-        pendingText = "";
-        setVoiceStatus("English voice is unavailable. Check the device text-to-speech voice pack, then tap Hear Instructions again.");
-        return false;
-      }
+      /* Never block playback merely because the browser has not exposed an
+         English voice object yet. Android/browser speech engines can still
+         synthesize using their system default voice. Prefer en-AU when
+         available, otherwise use the default system voice with English
+         language requested. */
       var utterance = new window.SpeechSynthesisUtterance(text);
       if (currentVoice) utterance.voice = currentVoice;
-      utterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-US";
+      utterance.lang = currentVoice && currentVoice.lang ? currentVoice.lang : "en-AU";
       utterance.rate = 0.95;
       utterance.pitch = 1;
       utterance.volume = 1;
