@@ -17,8 +17,8 @@ header{padding:20px;border-bottom:1px solid #ccc}
 main{max-width:1000px;margin:auto;padding:20px}
 section{margin-bottom:24px;padding:20px;border:1px solid #ccc;border-radius:8px}
 body.pe-guided-flow main > *{display:none !important}
-body.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #prototypeNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper,body.pe-guided-flow #dailyNextWrapper,body.pe-guided-flow #practiceNextWrapper,body.pe-guided-flow #assessmentNextWrapper{display:none !important}
-body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #prototypeNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #capabilityNextWrapper,body.pe-guided-flow[data-pe-flow-step="7"] #dailyNextWrapper,body.pe-guided-flow[data-pe-flow-step="8"] #practiceNextWrapper,body.pe-guided-flow[data-pe-flow-step="9"] #assessmentNextWrapper{display:block !important}
+body.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #prototypeNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper{display:none !important}
+body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #prototypeNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #capabilityNextWrapper{display:block !important}
 
 body.pe-guided-flow #pacificEducationAppMenu,body.pe-guided-flow header,body.pe-guided-flow #userFirstNavigation,body.pe-guided-flow #buyPlans,body.pe-guided-flow #pacificEducationPaymentLinksAlways,body.pe-guided-flow #pacificEducationInstitutionFees,body.pe-guided-flow #pacificEducationUniversityFeeWorkflow,body.pe-guided-flow #pacificEducationAccessEntitlement{display:none !important}
 body.pe-guided-flow #pacificEducationAccessibilityControls{display:flex !important}
@@ -386,10 +386,7 @@ function init(){
   bind("levelNextButton",4,"subjectSelection");
   bind("subjectNextButton",5,"termSelection");
   bind("termNextButton",6,"capabilitySelection");
-  bind("capabilityNextButton",7,"dailyLesson");
-  bind("dailyNextButton",8,"dailyLessonPracticeStage");
-  bind("practiceNextButton",9,"assessments");
-  bind("assessmentNextButton",10,"teacherCalendarSection");
+  bind("capabilityNextButton",7,"pacificEducationPilotUserWorkspaces");
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 window.setTimeout(init,500);
