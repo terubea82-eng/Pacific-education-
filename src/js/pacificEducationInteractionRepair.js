@@ -6,7 +6,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "2.0.2";
+  var VERSION = "2.0.3";
   var errors = [];
   var AUTO_REFRESH_INTERVAL_MS = 60000;
   var AUTO_REFRESH_KEY = "pacificEducationAutoRefreshVersion";
@@ -350,6 +350,33 @@
             }
           }, 50);
         }
+        return false;
+      });
+    }
+
+    /* Daily Activities entry point: the old inline action only scrolled to the panel. Refresh the renderer so the box actually opens a usable activity. */
+    var dailyStartButton = document.getElementById("dailyActivitiesStartButton");
+    if (dailyStartButton && dailyStartButton.getAttribute("data-pacific-daily-bound") !== "true") {
+      dailyStartButton.removeAttribute("onclick");
+      dailyStartButton.setAttribute("data-pacific-daily-bound", "true");
+      dailyStartButton.addEventListener("click", function(event) {
+        if (event) event.preventDefault();
+        var renderer = window.PacificEducationCurriculumLessonRenderer;
+        var opened = false;
+        try { if (renderer && typeof renderer.refresh === "function") opened = renderer.refresh() !== false; }
+        catch (e) { reportError(e && e.message ? e.message : e, "daily activities start"); }
+        window.setTimeout(function() {
+          var target = document.getElementById("dailyLessonActivity");
+          var firstActivity = document.querySelector("#pacificInteractiveActivity button, #pacificMandatoryActivityCard-multiple_choice button, #pacificDailyActivityBrowser button[data-pacific-action='start-day']");
+          if (firstActivity) { try { firstActivity.focus({preventScroll:true}); } catch (ignore) { firstActivity.focus(); } }
+          if (target) { try { target.scrollIntoView({behavior:"smooth", block:"start"}); } catch (e2) { target.scrollIntoView(); } }
+          if (!opened) {
+            var statusEl = document.getElementById("pacificEducationInteractionStatus");
+            var roster = window.PacificEducationTeacherClassRosterContext;
+            var classId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+            if (statusEl && !classId) statusEl.textContent = "Daily Activities is ready, but an existing Class Reference must be selected first.";
+          }
+        }, 150);
         return false;
       });
     }
