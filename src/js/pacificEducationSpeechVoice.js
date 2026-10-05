@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1022 — strict fluent English male voice */
+/* Pacific Education — Speech Voice Controller v1023 — reliable English voice */
 (function (window) {
   "use strict";
 
@@ -33,26 +33,21 @@
   function chooseVoice() {
     if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return null;
     var voices = window.speechSynthesis.getVoices() || [];
-    if (!voices.length) {
-      selectedVoice = null;
-      return null;
-    }
+    if (!voices.length) { selectedVoice = null; return null; }
     var englishVoices = voices.filter(function (voice) {
       return /^en(-|$)/i.test(String(voice.lang || ""));
     });
-    var maleVoiceHints = /(?:microsoft\s+(?:david|mark|ryan|guy|george)|google\s+(?:uk\s+english\s+male|us\s+english\s+male)|daniel|alex|fred|james|john|tom|aaron|arthur|oliver)/i;
-    var femaleVoiceHints = /(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i;
-    var fluentEnglishHints = /(?:microsoft|google|enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom)/i;
-    var maleEnglishVoice = englishVoices.find(function (voice) {
-      var name = String(voice.name || "");
-      return maleVoiceHints.test(name) && !femaleVoiceHints.test(name);
+    if (!englishVoices.length) { selectedVoice = null; return null; }
+    /* Locked pilot requirement: do not require a male/female voice label.
+       Prefer Australia English, then a natural English voice, then any
+       installed English voice so Hear Instructions works reliably on Android. */
+    var australian = englishVoices.find(function (voice) {
+      return /^en[-_]AU$/i.test(String(voice.lang || ""));
     });
-    var naturalMaleEnglishVoice = englishVoices.find(function (voice) {
-      var name = String(voice.name || "");
-      return /male|man|david|mark|ryan|guy|daniel|alex|james|john|tom|aaron|arthur|oliver/i.test(name) &&
-             fluentEnglishHints.test(name) && !femaleVoiceHints.test(name);
+    var natural = englishVoices.find(function (voice) {
+      return /(?:natural|neural|enhanced|premium|online|google|microsoft)/i.test(String(voice.name || ""));
     });
-    selectedVoice = maleEnglishVoice || naturalMaleEnglishVoice || null;
+    selectedVoice = australian || natural || englishVoices[0] || null;
     return selectedVoice;
   }
 
@@ -107,7 +102,7 @@
       var currentVoice = chooseVoice();
       if (!currentVoice) {
         pendingText = "";
-        setVoiceStatus("No fluent English male voice is installed. No substitute voice will be used.");
+        setVoiceStatus("English voice is unavailable. Check the device text-to-speech voice pack, then tap Hear Instructions again.");
         return false;
       }
       var utterance = new window.SpeechSynthesisUtterance(text);
