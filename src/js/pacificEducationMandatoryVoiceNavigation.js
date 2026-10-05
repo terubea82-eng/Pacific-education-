@@ -60,7 +60,7 @@
     file:"Use this upload box only when the page asks for authorised evidence. Select the appropriate file and review it before continuing."
   };
 
-  var lastAnnouncementKey="", announcementTimer=null, installed=false, topRightPlayButton=null, topRightStopButton=null, currentPageVoiceText="", lastSpokenText="", lastSpokenAt=0, lastFocusedBox=null, pendingNextVoice=false, nextVoiceTimer=null;
+  var lastAnnouncementKey="", announcementTimer=null, installed=false, topRightPlayButton=null, topRightStopButton=null, currentPageVoiceText="", lastSpokenText="", lastSpokenAt=0, lastFocusedBox=null, pendingNextVoice=false, nextVoiceTimer=null, lastRegistrationSignature="", finalNextInstalled=false;
 
   function speak(text){
     text=String(text||"").replace(/\\s+/g," ").trim(); if(!text)return false;
@@ -214,6 +214,73 @@
     setTimeout(scan,350);
   }
 
+  function registrationSignature(){
+    try{
+      var saved=JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration")||"null");
+      if(!saved||!saved.registeredAt||!saved.role)return "";
+      return String(saved.registeredAt)+"|"+String(saved.name||"")+"|"+String(saved.role||"");
+    }catch(_){return "";}
+  }
+  function workspaceWelcomeForRole(role){
+    var map={
+      "Student":"Welcome to your Student Workspace. Your learning tools, class or level, subject, term, daily activities, practice, assessments, coverage and progress are ready for you.",
+      "Teacher":"Welcome to your Teacher Workspace. Your classes, learners, teaching calendar, daily activities, assessments and curriculum coverage tools are ready.",
+      "Parent/Caregiver":"Welcome to your Parent and Caregiver Workspace. You can review your learner's progress, activities and available family support information.",
+      "Professional Reviewer":"Welcome to your Professional Reviewer Workspace. Curriculum evidence, activities, assessments and review information are ready for authorised review.",
+      "NGO/Organization":"Welcome to your NGO and Organization Workspace. Programme coverage, evidence and pilot information are ready for authorised use.",
+      "Education/Government":"Welcome to your Education and Government Workspace. Curriculum control, evidence, traceability and coverage information are ready for authorised review.",
+      "Community/Partner":"Welcome to your Community and Partner Workspace. Education services, pilot information and feedback tools are ready.",
+      "Technician":"Welcome to your Technician Workspace. Pilot diagnostics and authorised technical tools are ready.",
+      "Owner/Control":"Welcome to your Owner and Control Workspace. Pilot status, release evidence and authorised control information are ready."
+    };
+    return map[role]||("Welcome to your "+role+" Workspace. Your authorised Pacific Education tools are ready.");
+  }
+  function announceRegistrationCompletion(){
+    var sig=registrationSignature();
+    if(!sig||sig===lastRegistrationSignature)return;
+    lastRegistrationSignature=sig;
+    try{
+      var saved=JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration")||"null");
+      var role=String(saved.role||"");
+      var name=String(saved.name||"").trim();
+      var completion="Registration completed successfully. "+(name?"Registered name: "+name+". ":"")+"Registered role: "+role+". Your registration has been saved for this pilot session. Your individual workspace is now opening.";
+      speak(completion);
+      setTimeout(function(){speak(workspaceWelcomeForRole(role));},900);
+      setTimeout(function(){
+        var workspace=document.getElementById("pacificEducationPilotUserWorkspaces");
+        if(workspace&&!workspace.hidden){try{workspace.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
+        speak(workspaceWelcomeForRole(role));
+      },1800);
+    }catch(_){ }
+  }
+  function installRegistrationCompletionWatcher(){
+    announceRegistrationCompletion();
+    if(window.__peRegistrationVoiceTimer)return;
+    window.__peRegistrationVoiceTimer=setInterval(announceRegistrationCompletion,350);
+  }
+  function installFinalNext(){
+    if(finalNextInstalled)return;
+    var step=currentStep();
+    if(step!==10)return;
+    var host=document.getElementById("teacherCalendarSection")||document.getElementById("pacificEducationExternalReviewerPortal");
+    if(!host)return;
+    finalNextInstalled=true;
+    var wrap=document.createElement("div");
+    wrap.className="pacific-flow-next";
+    wrap.setAttribute("data-pe-final-next","true");
+    var b=document.createElement("button");
+    b.type="button";b.textContent="➡️ Next";
+    b.setAttribute("aria-label","Next page. Finish the guided sequence and return to your workspace.");
+    b.addEventListener("click",function(){
+      document.body.classList.remove("pe-guided-flow");
+      document.body.removeAttribute("data-pe-flow-step");
+      var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
+      if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
+      speak("Guided sequence completed. Welcome to your individual Pacific Education workspace. Choose your workspace tool to continue.");
+    });
+    wrap.appendChild(b);host.appendChild(wrap);
+  }
+
   function installNextSafety(){
     var ids=["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
     ids.forEach(function(id){
@@ -230,12 +297,12 @@
   function installDynamicObserver(){
     var body=document.body;if(!body||body.getAttribute("data-pe-box-observer")==="true")return;
     body.setAttribute("data-pe-box-observer","true");
-    var observer=new MutationObserver(function(){clearTimeout(observer._timer);observer._timer=setTimeout(function(){installBoxVoice();installNextSafety();},100);});
+    var observer=new MutationObserver(function(){clearTimeout(observer._timer);observer._timer=setTimeout(function(){installBoxVoice();installNextSafety();installFinalNext();},100);});
     observer.observe(body,{childList:true,subtree:true});
   }
 
   function enforce(){
-    installNextSafety();installStepWatcher();installWorkspaceWatcher();installBoxVoice();installDynamicObserver();announceCurrentStep("startup");return true;
+    installNextSafety();installStepWatcher();installWorkspaceWatcher();installBoxVoice();installDynamicObserver();installRegistrationCompletionWatcher();installFinalNext();announceCurrentStep("startup");return true;
   }
   function init(){if(installed)return;installed=true;enforce();setTimeout(enforce,500);setTimeout(enforce,1200);}
 
