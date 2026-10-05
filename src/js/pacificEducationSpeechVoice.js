@@ -11,6 +11,8 @@
   var lastConversationSignature = "";
   var lastConversationAt = 0;
   var speechUnlocked = false;
+  var persistedConversationKey = "pacificEducationVoiceResume";
+  var persistedConversation = null;
   var platform = (function(){
     var ua = String(navigator && navigator.userAgent || "");
     if (/Android/i.test(ua)) return "android";
@@ -26,6 +28,39 @@
       var status = document.getElementById("pacificEducationVoiceStatus");
       if (status) status.textContent = message;
     } catch (_) {}
+  }
+
+  function loadPersistedConversation() {
+    try {
+      var raw = window.localStorage.getItem(persistedConversationKey);
+      persistedConversation = raw ? JSON.parse(raw) : null;
+      if (!persistedConversation || !Array.isArray(persistedConversation.lines) ||
+          persistedConversation.index >= persistedConversation.lines.length) {
+        persistedConversation = null;
+        window.localStorage.removeItem(persistedConversationKey);
+      }
+    } catch (_) { persistedConversation = null; }
+    return persistedConversation;
+  }
+
+  function savePersistedConversation(lines, index) {
+    try {
+      var safeLines = (Array.isArray(lines) ? lines : []).map(function(item) {
+        return {speaker: String(item && item.speaker || ""), text: String(item && item.text || "")};
+      });
+      if (!safeLines.length || index >= safeLines.length) {
+        window.localStorage.removeItem(persistedConversationKey);
+        persistedConversation = null;
+        return;
+      }
+      persistedConversation = {lines: safeLines, index: Math.max(0, Number(index) || 0), savedAt: Date.now()};
+      window.localStorage.setItem(persistedConversationKey, JSON.stringify(persistedConversation));
+    } catch (_) {}
+  }
+
+  function clearPersistedConversation() {
+    try { window.localStorage.removeItem(persistedConversationKey); } catch (_) {}
+    persistedConversation = null;
   }
 
   function isFluentMaleEnglishVoice(voice) { var name=String(voice&&voice.name||""); var lang=String(voice&&voice.lang||""); if(!/^en(-|$)/i.test(lang)) return false; if(/(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i.test(name)) return false; return /(?:male|man|david|mark|ryan|guy|george|daniel|alex|fred|james|john|tom|aaron|arthur|oliver|microsoft|google)/i.test(name) && /(?:enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom|microsoft|google)/i.test(name); }
@@ -150,6 +185,8 @@
 
   function stopSpeech() {
     speechGeneration += 1;
+    conversationGeneration += 1;
+    clearPersistedConversation();
     pendingText = "";
     try {
       if (window.PacificEducationNativeTTS &&
@@ -255,10 +292,19 @@
       return false;
     }
     var synth=window.speechSynthesis, pair=chooseConversationVoices(), index=0;
+    var saved = loadPersistedConversation();
+    var requestedSignature = lines.map(function(item){ return String(item && item.text || ""); }).join("\u0001");
+    if (saved && saved.lines.map(function(item){ return String(item.text || ""); }).join("\u0001") === requestedSignature) {
+      index = Math.max(0, Math.min(Number(saved.index) || 0, lines.length - 1));
+      setVoiceStatus("Restoring AI Playback from where it stopped.");
+    } else {
+      clearPersistedConversation();
+    }
     try{synth.cancel();if(typeof synth.resume==="function")synth.resume();}catch(_){}
     function next(){
       if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration) return;
-      if(index>=lines.length){setVoiceStatus("AI Playback conversation complete.");if(done)done();return;}
+      if(index>=lines.length){clearPersistedConversation();setVoiceStatus("AI Playback conversation complete.");if(done)done();return;}
+      savePersistedConversation(lines, index);
       var item=lines[index], u=new window.SpeechSynthesisUtterance(String(item.text||""));
       var v=(index%2===0?pair.a:pair.b);
       if(v)u.voice=v;
@@ -266,8 +312,8 @@
       u.rate=0.94;
       u.pitch=index%2===0?0.92:1.08;
       u.volume=1;
-      u.onstart=function(){setVoiceStatus("AI Playback: "+(index%2===0?"Speaker 1":"Speaker 2")+" is speaking.");};
-      u.onend=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;next();};
+      u.onstart=function(){savePersistedConversation(lines, index);setVoiceStatus("AI Playback: "+(index%2===0?"Speaker 1":"Speaker 2")+" is speaking.");};
+      u.onend=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;savePersistedConversation(lines, index);next();};
       u.onerror=function(){if(conversationRun!==conversationGeneration || runGeneration!==speechGeneration)return;index++;next();};
       try{synth.speak(u);synth.resume();}catch(_){index++;next();}
     }
@@ -324,14 +370,43 @@
     ];
 
     window.setTimeout(function () {
+      var saved = loadPersistedConversation();
       var started = speakConversation(conversation, function(){
         setVoiceStatus("AI Playback complete. Welcome to Pacific Education.");
       });
+      if (!started && saved) {
+        setVoiceStatus("Voice is ready to restore the saved position. Tap the screen once if the device blocks automatic speech.");
+      }
       if (!started) {
         window.setTimeout(function(){ speakConversation(conversation); }, 800);
       }
-    }, 5000);
+    }, saved ? 1200 : 5000);
   }
+
+  function restoreVoiceAfterPageReturn() {
+    var saved = loadPersistedConversation();
+    if (!saved || !saved.lines || !saved.lines.length) return;
+    window.setTimeout(function () {
+      speakConversation(saved.lines, function(){
+        setVoiceStatus("AI Playback complete. Welcome to Pacific Education.");
+      });
+    }, 900);
+  }
+
+  window.addEventListener("pagehide", function () {
+    try {
+      var active = loadPersistedConversation();
+      if (active) savePersistedConversation(active.lines, active.index);
+    } catch (_) {}
+  });
+
+  window.addEventListener("pageshow", function () {
+    if (document.visibilityState !== "hidden") restoreVoiceAfterPageReturn();
+  });
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") restoreVoiceAfterPageReturn();
+  });
 
   window.PacificEducationSpeech = {
     getPlatform: function () { return platform; },
