@@ -369,6 +369,7 @@
       {speaker:"2",text:"Learn, discover, practise and grow with us."}
     ];
 
+    var hasSavedResume = !!loadPersistedConversation();
     window.setTimeout(function () {
       var saved = loadPersistedConversation();
       var started = speakConversation(conversation, function(){
@@ -380,7 +381,7 @@
       if (!started) {
         window.setTimeout(function(){ speakConversation(conversation); }, 800);
       }
-    }, saved ? 1200 : 5000);
+    }, hasSavedResume ? 1200 : 5000);
   }
 
   function restoreVoiceAfterPageReturn() {
