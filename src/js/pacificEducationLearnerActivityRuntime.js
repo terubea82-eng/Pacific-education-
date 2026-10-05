@@ -5,7 +5,7 @@
 (function(window, document) {
   "use strict";
 
-  var VERSION = "1.4.2";
+  var VERSION = "1.5.0";
   var TYPES = ["multiple_choice", "true_false", "matching", "short_answer", "long_answer"];
   var LABELS = {
     multiple_choice: "Multiple Choice",
@@ -28,16 +28,10 @@
     var text = String(value || "").trim();
     if (!text) return false;
     try {
-      if (typeof window.speakText === "function") return window.speakText(text);
-    } catch (e) {}
-    try {
-      if (window.speechSynthesis && typeof window.SpeechSynthesisUtterance === "function") {
-        window.speechSynthesis.cancel();
-        var utterance = new window.SpeechSynthesisUtterance(text);
-        utterance.lang = "en";
-        window.speechSynthesis.speak(utterance);
-        return true;
+      if (window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText === "function") {
+        return window.PacificEducationSpeech.speakText(text);
       }
+      if (typeof window.speakText === "function") return window.speakText(text);
     } catch (e) {}
     return false;
   }
@@ -366,6 +360,28 @@
         complete("multiple_choice", selectedChoice);
       });
     }
+
+    /* Locked Pacific Education voice: announce the complete activity instruction
+       through the same mandatory voice controller used by the User Box. */
+    var spokenParts = [];
+    spokenParts.push(title + ".");
+    spokenParts.push(String(prompt || "Complete today's learning activity."));
+    if (type === "multiple_choice" && choices.length) {
+      spokenParts.push("Here are the answer choices.");
+      choices.forEach(function(option, index) {
+        spokenParts.push("Option " + (index + 1) + ": " + String(option) + ".");
+      });
+      spokenParts.push("Choose one answer, then select Submit Selected Answer.");
+    } else if (type === "true_false") {
+      spokenParts.push("Choose True or False.");
+    } else if (type === "matching") {
+      spokenParts.push("Match each item with its correct answer. You may type your answers or respond by voice.");
+    } else {
+      spokenParts.push(type === "short_answer"
+        ? "Write a short answer. You may respond by text or voice."
+        : "Write a detailed answer using complete sentences. You may respond by text or voice.");
+    }
+    window.setTimeout(function() { speak(spokenParts.join(" ")); }, 180);
 
     var yes = document.getElementById("peActivityTrue");
     var no = document.getElementById("peActivityFalse");
