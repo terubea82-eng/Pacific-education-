@@ -88,6 +88,26 @@
       if(el){el.hidden=true;el.setAttribute("data-pe-protected","true");}
     });
 
+    /* Repair every pilot button whose inline action only scrolls to another user box.
+       Clear guided-flow mode first so the target is not hidden by the single-page overlay. */
+    document.querySelectorAll("button[onclick]").forEach(function(btn){
+      if(btn.getAttribute("data-pe-856-scroll-repaired")==="true") return;
+      var code=btn.getAttribute("onclick")||"";
+      var match=code.match(/getElementById\\(['"]([^'"]+)['"]\\)\\.scrollIntoView/);
+      if(!match) return;
+      var targetId=match[1];
+      if(!document.getElementById(targetId)) return;
+      btn.setAttribute("data-pe-856-scroll-repaired","true");
+      btn.removeAttribute("onclick");
+      btn.addEventListener("click",function(e){
+        if(e)e.preventDefault();
+        go(targetId);
+        return false;
+      },false);
+      btn.style.pointerEvents="auto";
+      btn.style.touchAction="manipulation";
+    });
+
     /* Mandatory internal-link repair: every pilot navigation link must open its target box. */
     document.querySelectorAll('a[href^="#"]').forEach(function(link){
       if(link.getAttribute("data-pe-856-link-bound")==="true") return;
