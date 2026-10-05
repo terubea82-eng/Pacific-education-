@@ -386,7 +386,18 @@ function init(){
   bind("levelNextButton",4,"subjectSelection");
   bind("subjectNextButton",5,"termSelection");
   bind("termNextButton",6,"capabilitySelection");
-  bind("capabilityNextButton",7,"pacificEducationPilotUserWorkspaces");
+  var capabilityNext=document.getElementById("capabilityNextButton");
+  if(capabilityNext&&capabilityNext.getAttribute("data-pe-guided-bound")!=="true"){
+    capabilityNext.setAttribute("data-pe-guided-bound","true");
+    capabilityNext.setAttribute("aria-label","Finish introduction and open your workspace. Daily Activities are available in the Student and Teacher workspaces.");
+    capabilityNext.addEventListener("click",function(e){
+      if(e)e.preventDefault();
+      document.body.classList.remove("pe-guided-flow");
+      document.body.removeAttribute("data-pe-flow-step");
+      var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
+      if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
+    });
+  }
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 window.setTimeout(init,500);
