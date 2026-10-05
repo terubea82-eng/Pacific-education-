@@ -256,3 +256,18 @@
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadIndividualAlignment);
     else loadIndividualAlignment();
 })(window, document);
+
+/* Pilot integration loader: global education and accessibility AI welcome conversation. */
+(function(window, document) {
+    'use strict';
+    function loadGlobalEducationVoice() {
+        if (window.PacificEducationGlobalEducationVoice || document.getElementById('pacificEducationGlobalEducationVoiceScript')) return;
+        var script = document.createElement('script');
+        script.id = 'pacificEducationGlobalEducationVoiceScript';
+        script.src = 'js/pacificEducationGlobalEducationVoice.js?v=1100';
+        script.async = false;
+        document.head.appendChild(script);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadGlobalEducationVoice);
+    else loadGlobalEducationVoice();
+})(window, document);
