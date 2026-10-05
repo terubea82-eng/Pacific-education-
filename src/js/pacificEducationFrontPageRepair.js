@@ -6,15 +6,14 @@
   var VERSION="1.5.3";
   var flow=[
     ["welcomeNextButton",1,"pacificEducationIdentityRegistration"],
-    ["registrationNextButton",2,"prototypeAccess"],
-    ["prototypeNextButton",3,"levelSelection"],
-    ["levelNextButton",4,"subjectSelection"],
-    ["subjectNextButton",5,"termSelection"],
-    ["termNextButton",6,"capabilitySelection"],
-    ["capabilityNextButton",7,"dailyLesson"],
-    ["dailyNextButton",8,"dailyLessonPracticeStage"],
-    ["practiceNextButton",9,"assessments"],
-    ["assessmentNextButton",10,"teacherCalendarSection"]
+    ["registrationNextButton",2,"levelSelection"],
+    ["levelNextButton",3,"subjectSelection"],
+    ["subjectNextButton",4,"termSelection"],
+    ["termNextButton",5,"capabilitySelection"],
+    ["capabilityNextButton",6,"dailyLesson"],
+    ["dailyNextButton",7,"dailyLessonPracticeStage"],
+    ["practiceNextButton",8,"assessments"],
+    ["assessmentNextButton",9,"teacherCalendarSection"]
   ];
   var targetById={
     userRegistrationOpenButton:"pacificEducationIdentityRegistration",
