@@ -40,7 +40,7 @@ body.pe-guided-flow[data-pe-flow-step="9"] #assessments{display:block !important
 body.pe-guided-flow[data-pe-flow-step="10"] #teacherCalendarSection,body.pe-guided-flow[data-pe-flow-step="10"] #pacificEducationExternalReviewerPortal{display:block !important}
 
 button{padding:10px 16px;margin:5px;cursor:pointer}
-.pacific-flow-next{display:flex;justify-content:flex-start;align-items:center;text-align:left;position:sticky;left:0;bottom:8px;z-index:30;margin-top:16px;padding:8px 0;min-height:48px}.pacific-flow-next button{margin-left:0;min-height:44px;touch-action:manipulation}
+.pacific-flow-next{display:flex;justify-content:flex-start;align-items:center;text-align:left;position:sticky;left:0;bottom:8px;z-index:30;margin-top:16px;padding:8px 0;min-height:48px}.pacific-flow-next button{margin-left:0;min-height:58px;min-width:170px;padding:14px 24px;font-size:1.12rem;font-weight:700;border-radius:10px;touch-action:manipulation}
 .pacific-flow-end{display:block;text-align:left;margin-top:20px;padding-top:12px;border-top:1px solid #ccc}
 .status{padding:10px;border-radius:6px}
 html[data-text-scale="large"]{font-size:112.5%}
@@ -79,12 +79,13 @@ pre{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
  nav[aria-label="Pacific Education main navigation"] a,nav[aria-label="App menu links"] a{max-width:100%;overflow-wrap:anywhere}
  table{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}
  .pacific-flow-next{position:sticky;bottom:4px;background:inherit}
- .pacific-flow-next button{width:auto;min-width:120px}
+ .pacific-flow-next button{width:auto;min-width:170px;min-height:58px;padding:14px 24px;font-size:1.12rem}
 }
 @media (max-width:380px){
  section{padding:10px}
  main{padding:6px}
  button{width:100%;margin:4px 0}
+ .pacific-flow-next button{min-height:60px;font-size:1.15rem}
  #pacificEducationAccessibilityControls button{flex-basis:100%}
 }
 @media (min-width:701px){main{padding-left:24px;padding-right:24px}}
@@ -92,7 +93,7 @@ pre{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
 
 /* 5-second voice + left-side Next control: keep pilot navigation touch-active and visible. */
 .pacific-flow-next{display:flex!important;justify-content:flex-start!important;align-items:center!important;text-align:left!important;position:sticky;left:0;bottom:4px;z-index:50;min-height:48px;padding:8px 0;margin-top:16px}
-.pacific-flow-next button{pointer-events:auto!important;touch-action:manipulation!important;min-height:44px}
+.pacific-flow-next button{pointer-events:auto!important;touch-action:manipulation!important;min-height:58px;min-width:170px;padding:14px 24px;font-size:1.12rem;font-weight:700;border-radius:10px}
 body.pe-pilot-all-features #userRegistrationOpenButton,body.pe-pilot-all-features #welcomeNextButton,body.pe-pilot-all-features #registrationNextButton,body.pe-pilot-all-features #prototypeNextButton,body.pe-pilot-all-features #levelNextButton,body.pe-pilot-all-features #subjectNextButton,body.pe-pilot-all-features #termNextButton,body.pe-pilot-all-features #capabilityNextButton,body.pe-pilot-all-features #dailyNextButton,body.pe-pilot-all-features #practiceNextButton,body.pe-pilot-all-features #assessmentNextButton{pointer-events:auto!important;cursor:pointer!important}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
