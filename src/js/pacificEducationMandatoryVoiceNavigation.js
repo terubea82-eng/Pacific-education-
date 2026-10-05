@@ -60,10 +60,13 @@
     file:"Use this upload box only when the page asks for authorised evidence. Select the appropriate file and review it before continuing."
   };
 
-  var lastAnnouncementKey="", announcementTimer=null, installed=false, topRightPlayButton=null, topRightStopButton=null, currentPageVoiceText="";
+  var lastAnnouncementKey="", announcementTimer=null, installed=false, topRightPlayButton=null, topRightStopButton=null, currentPageVoiceText="", lastSpokenText="", lastSpokenAt=0, lastFocusedBox=null, pendingNextVoice=false, nextVoiceTimer=null;
 
   function speak(text){
-    text=String(text||"").trim(); if(!text)return false;
+    text=String(text||"").replace(/\\s+/g," ").trim(); if(!text)return false;
+    var now=Date.now();
+    if(text===lastSpokenText && (now-lastSpokenAt)<4500)return false;
+    lastSpokenText=text; lastSpokenAt=now;
     try{
       if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")return window.PacificEducationSpeech.speakText(text);
       if(typeof window.speakText==="function")return window.speakText(text);
@@ -119,13 +122,24 @@
 
   function announcePage(page,reason){
     if(!page)return false;
-    var key=String(page.step)+":"+page.id+":"+String(reason||"auto");
-    if(key===lastAnnouncementKey)return false;
+    var key=String(page.step)+":"+page.id;
+    if(key===lastAnnouncementKey && reason!=="manual")return false;
     lastAnnouncementKey=key;
     var target=document.getElementById(page.id);if(target)addVoiceControl(target,page.text);
     if(announcementTimer)clearTimeout(announcementTimer);
-    announcementTimer=setTimeout(function(){speak(page.text);},reason==="startup"?700:220);
+    var delay=reason==="startup"?700:220;
+    announcementTimer=setTimeout(function(){speak(page.text);},delay);
     return true;
+  }
+
+  function announceNextPageAfterNavigation(){
+    pendingNextVoice=true;
+    if(nextVoiceTimer)clearTimeout(nextVoiceTimer);
+    nextVoiceTimer=setTimeout(function(){
+      pendingNextVoice=false;
+      var page=pageForStep(currentStep());
+      if(page)announcePage(page,"next");
+    },350);
   }
   function announceCurrentStep(reason){return announcePage(pageForStep(currentStep()),reason||"step");}
 
@@ -164,7 +178,12 @@
     Array.prototype.forEach.call(boxes,function(el){
       if(el.getAttribute("data-pe-box-voice")==="true")return;
       el.setAttribute("data-pe-box-voice","true");
-      el.addEventListener("focus",function(){speak(boxInstruction(el));});
+      el.addEventListener("focus",function(){
+        if(lastFocusedBox===el)return;
+        lastFocusedBox=el;
+        speak(boxInstruction(el));
+      });
+      el.addEventListener("blur",function(){if(lastFocusedBox===el)lastFocusedBox=null;});
     });
   }
 
@@ -173,7 +192,7 @@
     body.setAttribute("data-pe-voice-watcher","true");
     var last=currentStep();
     var observer=new MutationObserver(function(){
-      var s=currentStep();if(s!==last){last=s;announceCurrentStep("step");installBoxVoice();}
+      var s=currentStep();if(s!==last){last=s;if(!pendingNextVoice)announceCurrentStep("step");installBoxVoice();}
     });
     observer.observe(body,{attributes:true,attributeFilter:["data-pe-flow-step","class"]});
   }
@@ -200,7 +219,11 @@
     ids.forEach(function(id){
       var b=document.getElementById(id);if(!b||b.getAttribute("data-pe-voice-next")==="true")return;
       b.setAttribute("data-pe-voice-next","true");
-      b.setAttribute("aria-label","Next page. The next page will be read aloud.");
+      b.setAttribute("aria-label","Next page. Complete this page, then select Next. The next page will be read aloud.");
+      b.addEventListener("click",function(){
+        if(b.disabled||b.hidden)return;
+        announceNextPageAfterNavigation();
+      },true);
     });
   }
 
@@ -216,7 +239,7 @@
   }
   function init(){if(installed)return;installed=true;enforce();setTimeout(enforce,500);setTimeout(enforce,1200);}
 
-  window.PacificEducationMandatoryVoiceNavigation={speak:speak,stop:stop,announceCurrentStep:announceCurrentStep,announcePage:announcePage,enforce:enforce,pages:STEP_PAGES,boxInstruction:boxInstruction};
+  window.PacificEducationMandatoryVoiceNavigation={speak:speak,stop:stop,announceCurrentStep:announceCurrentStep,announcePage:announcePage,announceNextPageAfterNavigation:announceNextPageAfterNavigation,enforce:enforce,pages:STEP_PAGES,boxInstruction:boxInstruction};
   window.PacificEducationPageVoice=window.PacificEducationMandatoryVoiceNavigation;
 
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
