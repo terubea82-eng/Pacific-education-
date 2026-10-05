@@ -1,5 +1,5 @@
 (function(window){"use strict";
-var V="3.0.0";
+var V="3.1.0";
 var CAP={foundation:"Foundation",developing:"Developing",expected:"Expected-level",advanced:"Advanced",remedial:"Remedial / Re-teaching",extension:"Extension / Challenge"};
 var SUB=["English","Mathematics","Science","Basic Science","Elementary Science","Biology","Chemistry","Physics","Health Science","Health & Physical Education","Geography","History","Social Science","Accounting","Economics","Business/Enterprise Studies","Office Technology","Computer Studies","Agricultural Science","Home Economics","Basic Technology","Basic Graphics Technology","Applied Technology","Technical Drawing","Arts","Vosa Vakaviti","Hindi","Urdu","Other"];
 var LEVELS=["Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
