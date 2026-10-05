@@ -19,6 +19,30 @@
   function go(id){
     var el=document.getElementById(id);
     if(!el) return false;
+
+    /* Guided flow must advance when a flow box is opened, while ordinary
+       dashboard/menu boxes must escape the single-page guided overlay. */
+    var steps={
+      "pacificEducationWelcome":0,
+      "pacificEducationIdentityRegistration":1,
+      "prototypeAccess":2,
+      "levelSelection":3,
+      "subjectSelection":4,
+      "termSelection":5,
+      "capabilitySelection":6,
+      "dailyLesson":7,
+      "dailyLessonPracticeStage":8,
+      "assessments":9,
+      "teacherCalendarSection":10
+    };
+    if(Object.prototype.hasOwnProperty.call(steps,id)){
+      document.body.classList.add("pe-guided-flow");
+      document.body.setAttribute("data-pe-flow-step",String(steps[id]));
+    }else{
+      document.body.classList.remove("pe-guided-flow");
+      document.removeAttribute("data-pe-flow-step");
+    }
+
     show(id);
     try{el.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){try{el.scrollIntoView();}catch(_){}}
     return true;
@@ -113,6 +137,19 @@
       ["assessmentNextButton","pacificEducationCoverageDashboard"]
     ];
     flow.forEach(function(pair){bind(pair[0],function(){go(pair[1]);});});
+
+    /* Direct pilot boxes must remain usable even when the guided overlay is active. */
+    [
+      ["userRegistrationOpenButton","pacificEducationIdentityRegistration"],
+      ["dailyActivitiesStartButton","dailyLesson"],
+      ["dailyActivitiesContinuePracticeButton","dailyLessonPracticeStage"],
+      ["practiceContinueAssessmentButton","assessments"],
+      ["assessmentContinueCoverageButton","pacificEducationCoverageDashboard"],
+      ["pacificTeacherDashboardRefresh","teacherDashboard"],
+      ["pacificParentDashboardRefresh","parentDashboard"]
+    ].forEach(function(pair){
+      bind(pair[0],function(){go(pair[1]);});
+    });
 
     bind("dailyActivitiesStartButton",function(){go("dailyLessonActivity");});
     bind("dailyActivitiesContinuePracticeButton",function(){go("dailyLessonPracticeStage");});
