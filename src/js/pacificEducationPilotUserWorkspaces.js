@@ -104,7 +104,7 @@
       };
       var controls = document.querySelectorAll("main button, main select, main input, main textarea");
       Array.prototype.forEach.call(controls, function (el) {
-        if (el.closest("#pacificEducationPilotUserWorkspaces") || registrationIds[el.id]) return;
+        if (el.closest("#pacificEducationPilotUserWorkspaces") || el.closest("#userRegistrationForm") || registrationIds[el.id]) return;
         if (enabled) {
           if (el.dataset.pilotGateDisabled === "true") {
             el.disabled = false;
