@@ -9,11 +9,7 @@
     ["registrationNextButton",2,"levelSelection"],
     ["levelNextButton",3,"subjectSelection"],
     ["subjectNextButton",4,"termSelection"],
-    ["termNextButton",5,"capabilitySelection"],
-    ["capabilityNextButton",6,"dailyLesson"],
-    ["dailyNextButton",7,"dailyLessonPracticeStage"],
-    ["practiceNextButton",8,"assessments"],
-    ["assessmentNextButton",9,"teacherCalendarSection"]
+    ["termNextButton",5,"capabilitySelection"]
   ];
   var targetById={
     userRegistrationOpenButton:"pacificEducationIdentityRegistration",
@@ -73,6 +69,13 @@
     return show("pacificEducationIdentityRegistration",1);
   }
   function nextFromButton(id){for(var i=0;i<flow.length;i++)if(flow[i][0]===id)return show(flow[i][2],flow[i][1]);return false;}
+  function finishIntroduction(){
+    document.body.classList.remove("pe-guided-flow");
+    document.body.removeAttribute("data-pe-flow-step");
+    var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
+    if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
+    return true;
+  }
   function textOf(el){return String(el.getAttribute("aria-label")||el.textContent||el.value||"").replace(/\s+/g," ").trim();}
   function mappedTarget(el){
     if(!el)return "";var id=el.id||"";if(targetById[id])return targetById[id];
@@ -105,6 +108,7 @@
         return;
       }
     }
+    if(id==="capabilityNextButton"){event.preventDefault();event.stopImmediatePropagation();finishIntroduction();return;}
     for(var i=0;i<flow.length;i++)if(flow[i][0]===id){event.preventDefault();event.stopImmediatePropagation();nextFromButton(id);return;}
     var dest=mappedTarget(el);if(!dest)return;
     var navigationWord=/(user registration|users|learning tools|class|level|subject|term|capability|daily activit|practice|assessment|coverage|dashboard|workspace|mail box|mailbox|education ai|guardian|system status|external reviewer|progress)/.test(label);
