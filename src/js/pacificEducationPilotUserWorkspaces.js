@@ -199,12 +199,12 @@
       var roleVisibility = {
         student: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","pacificEducationSchoolIdentitySection",
-          "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments",
+          "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments","pacificEducationCoverageDashboard",
           "pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection","pacificEducationSchoolIdentitySection"
         ],
         teacher: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","pacificEducationSchoolIdentitySection",
-          "teacherCalendarSection","teacherDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
+          "teacherCalendarSection","teacherDashboard","dailyLesson","assessments","pacificEducationHomeSubmission","pacificEducationCoverageDashboard",
           "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
         ],
         "special-education": [
