@@ -75,7 +75,8 @@
       if(window.PacificEducationCountryConfig&&typeof window.PacificEducationCountryConfig.load==="function"){
         window.PacificEducationCountryConfig.load({country:countryName(code)});
       }
-      if(window.PacificEducationCountryConfig&&typeof window.PacificEducationCountryConfig.setRegisteredCurriculumLink==="function"){ window.PacificEducationCountryConfig.setRegisteredCurriculumLink(code); }\n      document.dispatchEvent(new CustomEvent("pacificEducationCurriculumCountryChanged",{detail:{code:code,name:countryName(code)}}));
+      if(window.PacificEducationCountryConfig&&typeof window.PacificEducationCountryConfig.setRegisteredCurriculumLink==="function"){ window.PacificEducationCountryConfig.setRegisteredCurriculumLink(code); }
+      document.dispatchEvent(new CustomEvent("pacificEducationCurriculumCountryChanged",{detail:{code:code,name:countryName(code)}}));
     }catch(e){}
     return true;
   }
