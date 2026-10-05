@@ -6,22 +6,23 @@
   'use strict';
   var KEY='pacificEducationIndividualUserContextsV1';
   var CURRENT='pacificEducationCurrentPacEduIdV1';
-  var VERSION='1.1.2';
+  var VERSION='1.1.3';
   var ROLE_LABELS={student:'Student',teacher:'Teacher','special-education':'Special Education / Inclusion',parent:'Parent / Caregiver',professional:'Professional Reviewer',ngo:'NGO / Organization',education:'Education / Government',community:'Community / Partner',owner:'Owner / Control','head-of-school':'Head of School','institution-admin':'Institution Administrator'};
   var lastLinkedId='';
   function read(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
   function write(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}}
   function newId(){return 'PE-PILOT-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,8).toUpperCase();}
   function role(){try{return sessionStorage.getItem('pacificEducationPilotRole')||localStorage.getItem('pacificEducationPilotRole')||'';}catch(e){return '';}}
+  function registeredCountry(){try{return localStorage.getItem('pacificEducationPilotCountryName')||localStorage.getItem('pacificEducationPilotCountry')||'';}catch(e){return '';}}
   function ensure(){
     var r=role();if(!r)return null;
     var all=read(KEY,{}),id='';try{id=localStorage.getItem(CURRENT)||'';}catch(e){}
     var item=id&&all[id];
     if(!item||item.role!==r){
       id=newId();
-      item={pacEduId:id,role:r,roleLabel:ROLE_LABELS[r]||'User',country:'',institutionId:'',institutionName:'',classId:'',className:'',programme:'',level:(function(){try{var rr=window.PacificEducationTeacherClassRosterContext;var id=rr&&typeof rr.getClassId==='function'?rr.getClassId():'';var cc=id&&typeof rr.getClass==='function'?rr.getClass(id):null;return cc&&cc.level?String(cc.level):'';}catch(e){return '';}})(),subject:'',term:'',capability:'expected',currentDay:1,progress:{lessonsCompleted:0},assessments:{},preferences:{},registeredAt:new Date().toISOString(),prototypeSession:true};
+      item={pacEduId:id,role:r,roleLabel:ROLE_LABELS[r]||'User',country:registeredCountry(),institutionId:'',institutionName:'',classId:'',className:'',programme:'',level:(function(){try{var rr=window.PacificEducationTeacherClassRosterContext;var id=rr&&typeof rr.getClassId==='function'?rr.getClassId():'';var cc=id&&typeof rr.getClass==='function'?rr.getClass(id):null;return cc&&cc.level?String(cc.level):'';}catch(e){return '';}})(),subject:'',term:'',capability:'expected',currentDay:1,progress:{lessonsCompleted:0},assessments:{},preferences:{},registeredAt:new Date().toISOString(),prototypeSession:true};
       all[id]=item;write(KEY,all);try{localStorage.setItem(CURRENT,id);localStorage.setItem('pacificEducationUserId',id);}catch(e){}
-    } else {try{localStorage.setItem('pacificEducationUserId',item.pacEduId);}catch(e){}}
+    } else {item.country=registeredCountry();all[id]=item;write(KEY,all);try{localStorage.setItem('pacificEducationUserId',item.pacEduId);}catch(e){}}
     return item;
   }
   function clear(){lastLinkedId='';try{localStorage.removeItem(CURRENT);localStorage.removeItem('pacificEducationUserId');}catch(e){}}
