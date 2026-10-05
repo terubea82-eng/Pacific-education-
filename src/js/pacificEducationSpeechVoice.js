@@ -1,4 +1,4 @@
-/* Pacific Education — Speech Voice Controller v1021 — fluent English male voice */
+/* Pacific Education — Speech Voice Controller v1022 — strict fluent English male voice */
 (function (window) {
   "use strict";
 
@@ -22,7 +22,7 @@
     } catch (_) {}
   }
 
-  function chooseVoice() {
+  function isFluentMaleEnglishVoice(voice) { var name=String(voice&&voice.name||""); var lang=String(voice&&voice.lang||""); if(!/^en(-|$)/i.test(lang)) return false; if(/(?:female|woman|zira|hazel|susan|samantha|karen|moira|victoria|ava|allison|google.*female)/i.test(name)) return false; return /(?:male|man|david|mark|ryan|guy|george|daniel|alex|fred|james|john|tom|aaron|arthur|oliver|microsoft|google)/i.test(name) && /(?:enhanced|premium|natural|neural|online|uk english|us english|english united states|english united kingdom|microsoft|google)/i.test(name); }\n\n  function chooseVoice() {
     if (!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return null;
     var voices = window.speechSynthesis.getVoices() || [];
     if (!voices.length) {
