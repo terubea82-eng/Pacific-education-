@@ -5,6 +5,7 @@
   "use strict";
 
   var roles = [
+    { id:"blind-learner", title:"Blind Learner", access:"Dedicated accessible learning workspace with voice-first Daily Activities, pronunciation and spelling guidance, and assessment-response protection", actions:["Open Voice-Guided Learning","Speak Answer","Spell / Clarify Word","Read Question and Choices","View Progress","Help"] },
     { id:"student", title:"Student", access:"Learning, Daily Activities Days 1–365, assessments, plus separate Weekend & Holiday Supplementary Activities", actions:["Open daily activity","Practice","View my progress","Open weekend/holiday assignment"] },
     { id:"teacher", title:"Teacher", access:"Full Daily Activities Days 1–365, Weekend & Holiday Assignments, class, assessment and learner support tools", actions:["Open daily activity","Open weekend/holiday assignment","Class dashboard","Support student/parent"] },
     { id:"head-of-school", title:"Head of School", access:"School identity and registration control plus read-only oversight of all teacher-created class lists", actions:["Register school","View all class lists","Review school-wide class coverage"] },
@@ -197,6 +198,11 @@
       refreshWeekendHolidaySupplementaryStatus();
 
       var roleVisibility = {
+        "blind-learner": [
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","pacificEducationSchoolIdentitySection",
+          "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments","pacificEducationCoverageDashboard",
+          "pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
+        ],
         student: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","pacificEducationSchoolIdentitySection",
           "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments","pacificEducationCoverageDashboard",
@@ -279,11 +285,11 @@
           var roleDashboardMap = {
             teacherDashboard:["teacher","special-education"],
             parentDashboard:["parent"],
-            dailyLesson:["student","teacher","special-education"],
-            assessments:["student","teacher","special-education"],
-            learningPlatform:["student","teacher","special-education","parent","professional","ngo","education","community"],
+            dailyLesson:["student","blind-learner","teacher","special-education"],
+            assessments:["student","blind-learner","teacher","special-education"],
+            learningPlatform:["student","blind-learner","teacher","special-education","parent","professional","ngo","education","community"],
             buyPlans:["owner","community","ngo","education","professional"]
-          };
+          }
           var rolesForLink = roleDashboardMap[id];
           if (rolesForLink) link.hidden = rolesForLink.indexOf(roleId) === -1;
         });
@@ -292,7 +298,7 @@
       // Student Platform owns the learner flow; keep Daily Activities hidden until Student is selected.
       var dailySection = document.getElementById("dailyLesson");
       if (dailySection) {
-        dailySection.hidden = roleId !== "student" && roleId !== "teacher" && roleId !== "special-education";
+        dailySection.hidden = roleId !== "student" && roleId !== "blind-learner" && roleId !== "teacher" && roleId !== "special-education";
       }
 
       var learningNav = document.querySelector('#learningPlatform nav[aria-label="Learning tools"]');
@@ -354,6 +360,19 @@
       var assignedContext = document.getElementById("studentAssignedClassContext");
       if (assignedContext) assignedContext.hidden = role.id !== "student";
       var toolMap = {
+        "blind-learner": [
+          ["blindLearnerVoiceGuide","1. Voice-Guided Learning"],
+          ["levelSelection","2. My Assigned Class / Level"],
+          ["subjectSelection","3. Subject"],
+          ["termSelection","4. Term"],
+          ["dailyLesson","5. Daily Activities — Voice Guidance"],
+          ["dailyLessonPracticeStage","6. Practice — Voice Support"],
+          ["assessments","7. Assessments — Original Response Protected"],
+          ["pacificEducationStudentProgressDashboard","8. My Progress"],
+          ["pacificEducationHomeSubmission","9. Home Continuity"],
+          ["pacificEducationWeekendHolidaySupplementaryActivities","10. Weekend & Holiday Activities"],
+          ["blindLearnerHelp","11. Accessibility Help"]
+        ],
         student: [
           ["studentStartLearning","1. Start Learning"],
           ["studentAssignedClassContext","2. My Assigned Class / Year / Teacher"],
@@ -438,6 +457,17 @@
         ]
       };
 
+      if (role.id === "blind-learner") {
+        var appRoot = document.getElementById("app");
+        if (appRoot && !document.getElementById("blindLearnerVoiceGuide")) {
+          var blindGuide=document.createElement("section"); blindGuide.id="blindLearnerVoiceGuide"; blindGuide.setAttribute("aria-label","Blind Learner Voice Guided Workspace"); blindGuide.style.cssText="margin:12px 0;padding:16px;border:3px solid #15803d;border-radius:10px;";
+          blindGuide.innerHTML="<h2>🔊 Blind Learner Workspace</h2><p><strong>Voice-first access is active.</strong> Daily Activities may provide guidance for pronunciation, spelling, grammar, clarity and completeness. Formal assessments preserve your original response and do not provide corrective coaching.</p><div><button type=\"button\" id=\"blindLearnerHearInstructions\">🔊 Hear Instructions</button> <button type=\"button\" id=\"blindLearnerStopSpeech\">■ Stop Speech</button></div><p id=\"blindLearnerWorkspaceStatus\" role=\"status\" aria-live=\"polite\">Voice guidance ready.</p></section>";
+          appRoot.insertBefore(blindGuide, document.getElementById("pacificEducationPilotUserWorkspaces") || null);
+        }
+        var bh=document.getElementById("blindLearnerHearInstructions"), bs=document.getElementById("blindLearnerStopSpeech");
+        if(bh) bh.onclick=function(){var t="Welcome to the Blind Learner Workspace. Your Daily Activities are voice guided. If a spoken word is unclear, you can ask to spell it. Daily Activities may give corrective guidance, but formal assessments preserve your original response without corrective coaching."; if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(t);};
+        if(bs) bs.onclick=function(){if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();};
+      }
       var workspaceTools = (window.PacificEducationMandatedWorkspace && typeof window.PacificEducationMandatedWorkspace.resolve === "function")
         ? window.PacificEducationMandatedWorkspace.resolve(role.id, toolMap[role.id] || [])
         : (toolMap[role.id] || []);
