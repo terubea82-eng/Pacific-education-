@@ -452,6 +452,7 @@
   }
 
   function repairControls() {
+    repairRegistrationSetupControls();
     ensureGlobalHandler("openPacificEducationFinance", openPacificEducationFinance);
     repairKnownHandlers();
     repairNavigationAndDashboards();
