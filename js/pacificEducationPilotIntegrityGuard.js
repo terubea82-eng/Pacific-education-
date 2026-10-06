@@ -58,7 +58,9 @@
       "capability","dailyActivities","practice","assessment","coverage",
       "alphabetAssessment","phonicsAssessment","teacherDashboard",
       "parentDashboard","specialEducation","reviewer","voice","accessibility",
-      "mailbox","progress"
+      "mailbox","progress","countryLanguage","teacherDailyActivities","blindAttempts",
+      "curriculumCoverage","dailyProgress","teacherReview","studentProgress","aiPlayback",
+      "externalReviewer","connectivity","offlineSync","pwaInstall","futureSafeRepair"
     ];
     var protectedFeatures = [
       "productionAuth","productionPayments","buyPlans","ownerPaymentControl",
