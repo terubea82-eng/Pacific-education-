@@ -26,7 +26,7 @@ function applyAdaptiveReview(item,status){
   localStorage.setItem("pacificEducationCapability",capability);
   localStorage.setItem("pacificEducationAdaptiveLearningStatus",status==="approved"?"Teacher-approved evidence — continue expected-level mixed learning":"Teacher review recommends targeted re-teaching before progressing");
   localStorage.setItem("pacificEducationAdaptiveNextActivity",status==="approved"?"Independent Practice":"Remedial / Re-teaching");
-  localStorage.setItem("pacificEducationAdaptiveLastReview",JSON.stringify({status:status,day:Number(item.day)||0,type:item.type||"",questionText:item.questionText||"",reviewedAt:new Date().toISOString()}));
+  localStorage.setItem("pacificEducationAdaptiveLastReview",JSON.stringify({status:status,day:Number(item.day)||0,type:item.type||"",questionText:item.questionText||"",studentId:item.studentId||null,classId:item.classId||null,reviewedAt:new Date().toISOString()}));
  }catch(e){}
  document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated",{detail:{capability:capability,capabilityLabel:status==="approved"?"Expected-level":"Remedial / Re-teaching",score:null,reviewStatus:status,nextActivity:status==="approved"?"Independent Practice":"Remedial / Re-teaching",context:item.curriculumContext||{},teacherReviewed:true,prototype:true}}));
  if(typeof window.displayDailyLesson==="function"){try{window.displayDailyLesson();}catch(e){}}
