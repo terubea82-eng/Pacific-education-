@@ -1,6 +1,6 @@
 /* Pacific Education — Global Education + Accessibility AI Playback
- * Keeps the protected #856 voice engine and changes only the welcome conversation.
- * Focus: global education access and accessibility for learners affected by disruption.
+ * Delegates all speech to the protected #856-compatible voice controller.
+ * This module supplies the two-person global-accessibility welcome script only.
  */
 (function(window, document){
   "use strict";
@@ -18,67 +18,32 @@
     {speaker:"2",text:"The goal is simple: help every learner access education, continue learning through disruption, and receive support through accessible technology and human guidance."}
   ];
 
-  function chooseVoices(){
-    if(!window.speechSynthesis || typeof window.speechSynthesis.getVoices !== "function") return {a:null,b:null};
-    var voices=(window.speechSynthesis.getVoices()||[]).filter(function(v){return /^en(-|$)/i.test(String(v.lang||""));});
-    if(!voices.length) return {a:null,b:null};
-    function score(v){
-      var s=0,n=String(v.name||""),l=String(v.lang||"");
-      if(/^en[-_]AU$/i.test(l)) s+=100;
-      if(/natural|neural|enhanced|premium|online|google|microsoft/i.test(n)) s+=20;
-      return s;
+  function play(){
+    if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakConversation === "function"){
+      return window.PacificEducationSpeech.speakConversation(GLOBAL_LINES);
     }
-    voices.sort(function(a,b){return score(b)-score(a);});
-    return {a:voices[0]||null,b:voices.find(function(v){return v!==voices[0];})||voices[0]||null};
-  }
-
-  function speakConversation(){
-    if(!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== "function"){
-      if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText === "function"){
-        window.PacificEducationSpeech.speakText(GLOBAL_LINES[0].text);
-      }
-      return;
-    }
-    var synth=window.speechSynthesis,pair=chooseVoices(),i=0;
-    try{synth.cancel();if(typeof synth.resume === "function") synth.resume();}catch(_){ }
-    function next(){
-      if(i>=GLOBAL_LINES.length) return;
-      var item=GLOBAL_LINES[i],u=new SpeechSynthesisUtterance(item.text),v=(i%2===0?pair.a:pair.b);
-      if(v) u.voice=v;
-      u.lang=v&&v.lang?v.lang:"en-AU";
-      u.rate=.94;u.pitch=1;u.volume=1;
-      u.onstart=function(){var s=document.getElementById("pacificEducationVoiceStatus");if(s)s.textContent="AI Playback: Speaker "+(i%2===0?"1":"2")+" is speaking.";};
-      u.onend=function(){i+=1;next();};
-      u.onerror=function(){i+=1;next();};
-      try{synth.speak(u);if(typeof synth.resume === "function") synth.resume();}catch(_){i+=1;next();}
-    }
-    next();
+    var status=document.getElementById("pacificEducationVoiceStatus");
+    if(status)status.textContent="AI Playback is loading. Please try Play again.";
+    return false;
   }
 
   function install(){
-    window.__pacificEducationAutoWelcomeVoiceScheduled=true;
-    var button=document.getElementById("pacificEducationWelcomeVoiceButton");
-    if(button && !button.getAttribute("data-pe-global-voice-bound")){
-      var replacement=button.cloneNode(true);
-      replacement.setAttribute("data-pe-global-voice-bound","true");
-      button.parentNode.replaceChild(replacement,button);
-      replacement.addEventListener("click",function(e){e.preventDefault();e.stopImmediatePropagation();speakConversation();},true);
+    var button=document.getElementById("pacificEducationAIPlaybackButton");
+    if(button && button.getAttribute("data-pe-global-play-bound")!=="true"){
+      button.setAttribute("data-pe-global-play-bound","true");
+      button.addEventListener("click",function(e){e.preventDefault();play();});
     }
     var topPlay=document.querySelector('[data-pe-top-right-voice-controls] button[aria-label="Play audio instructions for this page"]');
-    if(topPlay && !topPlay.getAttribute("data-pe-global-voice-bound")){
+    if(topPlay && topPlay.getAttribute("data-pe-global-voice-bound")!=="true"){
       topPlay.setAttribute("data-pe-global-voice-bound","true");
       topPlay.addEventListener("click",function(){
         var active=document.getElementById("pacificEducationWelcome");
-        if(active && !active.hidden) speakConversation();
-      },true);
+        if(active && !active.hidden)play();
+      });
     }
-    window.setTimeout(function(){
-      var welcome=document.getElementById("pacificEducationWelcome");
-      if(welcome && !welcome.hidden) speakConversation();
-    },5000);
   }
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",install); else install();
   window.addEventListener("load",install);
-  window.PacificEducationGlobalEducationVoice={version:"1.1.0",speakGlobalWelcome:speakConversation};
+  window.PacificEducationGlobalEducationVoice={version:"1.2.0",lines:GLOBAL_LINES,play:play};
 })(window,document);
