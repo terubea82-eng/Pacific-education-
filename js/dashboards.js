@@ -629,7 +629,7 @@
         try {
             var review = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null");
             var classId = getCurrentClassId();
-            if (!review || !classId || String(review.classId || "") !== String(classId)) return "No teacher-reviewed pathway recorded yet.";
+            var studentId = getCurrentStudentId(); if (!review || !classId || String(review.classId || "") !== String(classId) || !studentId || String(review.studentId || "") !== String(studentId)) return "No teacher-reviewed pathway recorded yet.";
             return review.status === "approved" ? "Teacher-approved — continue learning" : "Teacher recommends more practice";
         } catch (e) { return "Teacher-reviewed pathway unavailable."; }
     }
