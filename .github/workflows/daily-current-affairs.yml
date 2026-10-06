@@ -20,6 +20,7 @@ jobs:
           const fs=require('fs');
           const raw=JSON.parse(fs.readFileSync('/tmp/gdelt.json','utf8'));
           const articles=Array.isArray(raw.articles)?raw.articles:[];
+          function subjects(title){const t=String(title||'').toLowerCase(),s=[];if(/literacy|reading|language|english|teacher|school/.test(t))s.push('English');if(/math|mathematics|number|data/.test(t))s.push('Mathematics');if(/science|health|disease|climate|environment|disaster/.test(t))s.push('Science','Health Science');if(/technology|digital|internet|computer|ai/.test(t))s.push('Computer Studies');if(/community|society|government|education system|poverty|displacement/.test(t))s.push('Social Science');if(/place|country|climate|environment|migration/.test(t))s.push('Geography');if(/history|heritage|conflict|war/.test(t))s.push('History');if(/art|music|culture/.test(t))s.push('Arts');return [...new Set(s)];}
           const items=articles.map((a,i)=>({
             id:'GDELT-'+Buffer.from(String(a.url||a.title||i)).toString('base64url').slice(0,48),
             title:String(a.title||'').trim(),
@@ -29,10 +30,10 @@ jobs:
             topic:'Education and learning',
             educationalRelevance:'Potentially relevant to teaching, learning, health, inclusion, science, environment, or education systems.',
             ageSuitability:'Teacher/reviewer screening required before student use.',
-            subjectsApplicable:['English','Mathematics','Science','Health Science','Social Science','Geography','History','Computer Studies','Arts'],
+            subjectsApplicable:subjects(a.title),
             levelsApplicable:[],
             verificationStatus:'PENDING_TEACHER_REVIEW',
-            approved:true,
+            approved:false,
             sourceType:'EDUCATIONAL_CURRENT_AFFAIRS'
           })).filter(x=>x.title&&x.url).slice(0,30);
           const out={version:'1.0.0',generatedAt:new Date().toISOString(),source:'GDELT DOC API restricted to UNESCO, UNICEF, UN and WHO domains',items};
