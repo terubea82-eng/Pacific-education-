@@ -207,7 +207,7 @@
   function bindVoiceButtons(){
     var welcome=document.getElementById("pacificEducationWelcomeVoiceButton"),stop=document.getElementById("pacificEducationStopSpeechButton");
     if(welcome&&welcome.getAttribute("data-pe-welcome-voice-bound")!=="true"){
-      welcome.setAttribute("data-pe-welcome-voice-bound","true");welcome.addEventListener("click",function(event){if(event)event.preventDefault();speechUnlocked=true;resumeAttempted=false;var welcomeText=(window.PacificEducationGlobalEducationVoice&&window.PacificEducationGlobalEducationVoice.welcomeText)||"Welcome to Pacific Education.";var started=speakText(welcomeText,{allowRepeat:true});var delay=Math.max(WELCOME_TO_AI_DELAY_MS,Math.min(45000,Math.round(welcomeText.split(/\s+/).length*360)));if(started){setVoiceStatus("Welcome voice playing first. AI Playback will follow.");window.setTimeout(function(){speakConversation(welcomeConversation());},delay);}else{speakConversation(welcomeConversation());}return false;return false;});
+      
     }
     if(stop&&stop.getAttribute("data-pe-stop-voice-bound")!=="true"){stop.setAttribute("data-pe-stop-voice-bound","true");stop.addEventListener("click",function(event){if(event)event.preventDefault();stopSpeech();return false;});}
   }
