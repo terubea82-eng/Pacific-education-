@@ -67,7 +67,10 @@
           "registration","prototypeAccess","learningLevel","subject","term","capability",
           "dailyActivities","practice","assessment","coverage","alphabetAssessment",
           "phonicsAssessment","teacherDashboard","parentDashboard","specialEducation",
-          "reviewer","voice","accessibility","mailbox","progress"
+          "reviewer","voice","accessibility","mailbox","progress","countryLanguage",
+          "teacherDailyActivities","blindAttempts","curriculumCoverage","dailyProgress",
+          "teacherReview","studentProgress","aiPlayback","externalReviewer","connectivity",
+          "offlineSync","pwaInstall","futureSafeRepair"
         ].forEach(function(feature){ guard.activatePilotFeature(feature); });
       }
     });
