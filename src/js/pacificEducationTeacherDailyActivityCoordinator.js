@@ -7,7 +7,7 @@
   "use strict";
 
   var REQUEST_KEY = "pacificEducationTeacherDailyActivityRequestsV1";
-  var COORD_KEY = "pacificEducationSchoolConceptCoordinationV1";
+  var COORD_KEY = "pacificEducationSchoolConceptCoordinationV2";
 
   function read(key, fallback){
     try { var v = JSON.parse(localStorage.getItem(key)); return v == null ? fallback : v; }
@@ -34,7 +34,10 @@
       var c = classId && r && r.getClass ? r.getClass(classId) : null;
       if(c) level = String(c.level||c.className||"");
     } catch(e){}
-    return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,classId:classId,level:level,subject:subject,term:term,day:day};
+    var regionId="",region="";
+try{regionId=String(localStorage.getItem("pacificEducationRegionId")||"").trim();region=String(localStorage.getItem("pacificEducationRegion")||"").trim();}catch(e){}
+if(p){regionId=regionId||String(p.regionId||p.region||"").trim();region=region||String(p.region||"").trim();}
+return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,regionId:regionId,region:region,classId:classId,level:level,subject:subject,term:term,day:day};
   }
 
   function conceptFor(ctx){
@@ -85,23 +88,59 @@
     };
   }
 
+  function applicableClasses(ctx){
+    var out=[];
+    try{
+      var r=window.PacificEducationTeacherClassRosterContext;
+      var all=r&&typeof r.getClasses==="function"?r.getClasses():{};
+      Object.keys(all||{}).forEach(function(id){
+        var x=all[id]||{};
+        var sameSchool=ctx.schoolId && (String(x.schoolId||x.registrationNumber||"")===String(ctx.schoolId));
+        var sameRegion=ctx.regionId && (String(x.regionId||x.region||"")===String(ctx.regionId));
+        if((sameSchool||sameRegion) && String(x.subject||ctx.subject||"")===String(ctx.subject||"")) out.push({
+          classId:String(x.classId||id),level:String(x.level||""),section:String(x.section||""),
+          schoolId:String(x.schoolId||x.registrationNumber||ctx.schoolId||""),regionId:String(x.regionId||x.region||ctx.regionId||"")
+        });
+      });
+    }catch(e){}
+    if(!out.some(function(x){return x.classId===ctx.classId;})) out.unshift({classId:ctx.classId,level:ctx.level,schoolId:ctx.schoolId,regionId:ctx.regionId});
+    return out;
+  }
+  function differentiatedPlan(base,x){
+    var level=String(x.level||base.level||"Class 1");
+    return {
+      classId:x.classId,level:level,section:x.section||"",
+      sharedConcept:base.teachingConcept,
+      activity:"Teacher-guided "+level+" activity applying the shared curriculum concept to an age-appropriate real-world context.",
+      performanceTask:"Learner demonstrates understanding at the appropriate level and submits text or audio evidence.",
+      assessment:"Teacher checks the same curriculum concept/indicator using differentiated difficulty and method.",
+      status:"PENDING_TEACHER_REVIEW"
+    };
+  }
   function coordinate(item){
-    var all = read(COORD_KEY, []);
-    var key = [item.countryCode,item.schoolId,item.subject,item.term,item.day,item.teachingConcept].join("|");
-    var group = all.filter(function(x){return x.key===key;})[0];
-    if(!group){
-      group={key:key,countryCode:item.countryCode,country:item.country,schoolId:item.schoolId,school:item.school,
-        subject:item.subject,term:item.term,day:item.day,teachingConcept:item.teachingConcept,
-        classIds:[],requests:[],updatedAt:new Date().toISOString()};
-      all.push(group);
-    }
-    if(item.classId && group.classIds.indexOf(item.classId)<0) group.classIds.push(item.classId);
-    group.requests.push(item.id);
-    group.updatedAt=new Date().toISOString();
-    write(COORD_KEY,all);
-    item.coordinationGroup=key;
-    item.applicableClassCount=group.classIds.length;
-    return item;
+    var classes=applicableClasses(item);
+    var key=[item.countryCode,item.schoolId||item.regionId,item.subject,item.term,item.day,item.teachingConcept].join("|");
+    var all=read(COORD_KEY,[]),group=all.filter(function(x){return x.key===key;})[0];
+    if(!group){group={key:key,countryCode:item.countryCode,country:item.country,schoolId:item.schoolId,school:item.school,regionId:item.regionId,region:item.region,subject:item.subject,term:item.term,day:item.day,teachingConcept:item.teachingConcept,classIds:[],classPlans:[],requests:[],updatedAt:new Date().toISOString()};all.push(group);}
+    classes.forEach(function(x){
+      if(group.classIds.indexOf(x.classId)<0)group.classIds.push(x.classId);
+      var plan=differentiatedPlan(item,x);
+      var existing=group.classPlans.filter(function(p){return p.classId===x.classId;})[0];
+      if(existing)Object.assign(existing,plan);else group.classPlans.push(plan);
+      try{
+        var cfg=window.PacificEducationCountryConfig;
+        if(cfg&&typeof cfg.upsertDailyActivity==="function")cfg.upsertDailyActivity({
+          id:"TDA-"+item.id+"-"+x.classId,countryCode:item.countryCode,country:item.country,
+          classReference:x.classId,level:x.level,subject:item.subject,term:item.term,day:item.day,
+          teachingConcept:item.teachingConcept,sourceType:item.sourceType,currentAffairsId:item.currentAffairsId,
+          activity:plan.activity,performance:plan.performanceTask,assessment:plan.assessment,
+          status:"PENDING_TEACHER_REVIEW",coordinationGroup:key,
+          verification:"AI Generated → Curriculum Mapped → Pending Teacher/Reviewer Verification"
+        });
+      }catch(e){}
+    });
+    group.requests.push(item.id);group.updatedAt=new Date().toISOString();write(COORD_KEY,all);
+    item.coordinationGroup=key;item.applicableClassCount=group.classIds.length;item.applicableClassIds=group.classIds.slice();item.classPlans=group.classPlans.slice();return item;
   }
 
   function request(){
@@ -156,7 +195,7 @@
   }
 
   window.PacificEducationTeacherDailyActivityCoordinator={
-    request:request, context:context, render:render, version:"1.0.0"
+    request:request, context:context, render:render, version:"2.0.0-school-region-coordination"
   };
   function init(){ render(); }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
