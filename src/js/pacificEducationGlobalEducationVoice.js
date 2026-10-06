@@ -9,6 +9,7 @@
   /* Readiness-gate compatibility marker: Australia English may be represented as en-AU or en_AU. */
   var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
   var WELCOME_DELAY_MS = 5000;
+  var welcomeRetryTimer = null;
 
   var GLOBAL_LINES = [
     {speaker:"1",text:"Welcome to Pacific Education. Education belongs to every learner, everywhere in the world."},
@@ -32,13 +33,28 @@
     return false;
   }
 
+  function attemptWelcome(){
+    var active=document.getElementById("pacificEducationWelcome");
+    if(!active || active.hidden || window.__pacificEducationWelcomePlayed)return false;
+    var started=play();
+    if(started){
+      window.__pacificEducationWelcomePlayed=true;
+      return true;
+    }
+    return false;
+  }
+
   function scheduleWelcome(){
     window.setTimeout(function(){
-      var active=document.getElementById("pacificEducationWelcome");
-      if(active && !active.hidden && !window.__pacificEducationWelcomePlayed){
-        window.__pacificEducationWelcomePlayed=true;
-        play();
-      }
+      if(attemptWelcome())return;
+      if(welcomeRetryTimer)window.clearTimeout(welcomeRetryTimer);
+      welcomeRetryTimer=window.setTimeout(function(){
+        welcomeRetryTimer=null;
+        if(!attemptWelcome()){
+          var status=document.getElementById("pacificEducationVoiceStatus");
+          if(status)status.textContent="Welcome voice is ready. Tap Hear Welcome or AI Playback to start the introduction.";
+        }
+      },1200);
     },WELCOME_DELAY_MS);
   }
 
@@ -46,19 +62,24 @@
     var button=document.getElementById("pacificEducationAIPlaybackButton");
     if(button && button.getAttribute("data-pe-global-play-bound")!=="true"){
       button.setAttribute("data-pe-global-play-bound","true");
-      button.addEventListener("click",function(e){e.preventDefault();play();});
+      button.addEventListener("click",function(e){e.preventDefault();window.__pacificEducationWelcomePlayed=true;play();});
+    }
+    var welcome=document.getElementById("pacificEducationWelcomeVoiceButton");
+    if(welcome && welcome.getAttribute("data-pe-global-welcome-bound")!=="true"){
+      welcome.setAttribute("data-pe-global-welcome-bound","true");
+      welcome.addEventListener("click",function(){window.__pacificEducationWelcomePlayed=true;});
     }
     var topPlay=document.querySelector('[data-pe-top-right-voice-controls] button[aria-label="Play audio instructions for this page"]');
     if(topPlay && topPlay.getAttribute("data-pe-global-voice-bound")!=="true"){
       topPlay.setAttribute("data-pe-global-voice-bound","true");
       topPlay.addEventListener("click",function(){
         var active=document.getElementById("pacificEducationWelcome");
-        if(active && !active.hidden)play();
+        if(active && !active.hidden){window.__pacificEducationWelcomePlayed=true;play();}
       });
     }
   }
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){install();scheduleWelcome();}); else {install();scheduleWelcome();}
   window.addEventListener("load",install);
-  window.PacificEducationGlobalEducationVoice={version:"1.3.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:WELCOME_DELAY_MS,lines:GLOBAL_LINES,play:play};
+  window.PacificEducationGlobalEducationVoice={version:"1.4.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:WELCOME_DELAY_MS,lines:GLOBAL_LINES,play:play};
 })(window,document);
