@@ -1,0 +1,82 @@
+name: Pacific Education Pilot User Readiness Gate
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate pilot release boundaries and user-readiness requirements
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const fail=[];
+          const read=p=>fs.readFileSync(p,'utf8');
+          const index=read('src/index.html');
+          const entry=read('src/js/pacificEducationSinglePilotEntry.js');
+          const engine=read('src/js/pacificEducationDailyCurriculumEngine.js');
+          const coordinator=read('src/js/pacificEducationTeacherDailyActivityCoordinator.js');
+          const voice=read('src/js/pacificEducationGlobalEducationVoice.js');
+          const loader=read('src/js/pacificEducationCurrentAffairsLoader.js');
+          const firebase=read('src/js/pacificEducationFirebase.js');
+          const news=read('.github/workflows/daily-current-affairs.yml');
+
+          function need(name,ok){if(!ok)fail.push(name);}
+
+          need('global voice script linked',index.includes('pacificEducationGlobalEducationVoice.js'));
+          need('current affairs loader linked',index.includes('pacificEducationCurrentAffairsLoader.js'));
+          need('single registration entry',index.includes('pacificEducationSingleRegistration'));
+          need('role routing includes Student',entry.includes('student:'));
+          need('role routing includes Teacher',entry.includes('teacher:'));
+          need('role routing includes Parent/Caregiver',entry.includes('parent:'));
+          need('role routing includes Professional Reviewer',entry.includes('professional:'));
+          need('role routing includes NGO/Organization',entry.includes('ngo:'));
+          need('role routing includes Education/Government',entry.includes('education:'));
+          need('role routing includes Community/Partner',entry.includes('community:'));
+          need('role routing includes Owner/Control',entry.includes('owner:'));
+          need('country is required',entry.includes('Country is required') && entry.includes('singlePilotCountry'));
+          need('student requires existing Class Reference',entry.includes('existing Class Reference') && entry.includes('No class is created automatically'));
+          need('365-day coverage generator',engine.includes('for(var d=1;d<=365;d++)'));
+          need('text and audio response modes',engine.includes('[\"text\",\"audio\"]'));
+          need('teacher school/region coordination',coordinator.includes('school') && coordinator.includes('region') && coordinator.includes('applicableClasses'));
+          need('global accessibility topics',voice.includes('war') && voice.includes('displacement') && voice.includes('disability') && voice.includes('poverty') && voice.includes('offline-first'));
+          need('two-speaker voice',voice.includes('speaker:\"1\"') && voice.includes('speaker:\"2\"'));
+          need('Australia English preference',voice.includes('en[-_]AU'));
+          need('five-second welcome',voice.includes('5000'));
+          need('current affairs feed points to deployed docs data',loader.includes('../docs/data/current-affairs.json'));
+          need('current affairs remains pending teacher review',loader.includes('copy.approved=false') && news.includes("approved:false"));
+          need('current affairs source restricted',news.includes('unesco.org') && news.includes('unicef.org') && news.includes('un.org') && news.includes('who.int'));
+          need('production Firebase remains locked',firebase.includes('productionIntegrationEnabled: false') && firebase.includes('PRODUCTION_BACKEND_NOT_ACTIVATED'));
+          need('Buy Plans protected',index.includes('buyPlans') && index.includes('data-pe-protected'));
+          need('payment entitlement protected',index.includes('pacificEducationAccessEntitlement'));
+
+          if(fail.length){console.error('READINESS GATE: FAIL');fail.forEach(x=>console.error(' - '+x));process.exit(1);}
+          console.log('READINESS GATE: PASS — static pilot safety and integration requirements are present.');
+          NODE
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --check src/js/pacificEducationSinglePilotEntry.js
+          node --check src/js/pacificEducationDailyCurriculumEngine.js
+          node --check src/js/pacificEducationTeacherDailyActivityCoordinator.js
+          node --check src/js/pacificEducationCurrentAffairsLoader.js
+          node --check src/js/pacificEducationGlobalEducationVoice.js
+          node --check src/js/pacificEducationFirebase.js
+
+      - name: Validate current-affairs JSON
+        run: |
+          node -e "const x=require('./docs/data/current-affairs.json'); if(!Array.isArray(x.items)) process.exit(1); console.log('Current affairs JSON: valid');"
+
+      - name: Explicit production block
+        run: |
+          test "$(grep -c 'PRODUCTION_BACKEND_NOT_ACTIVATED' src/js/pacificEducationFirebase.js)" -ge 1
+          echo "Production backend remains intentionally blocked pending external verification and Owner authorization."
