@@ -34,7 +34,7 @@ jobs:
 
           need('global voice script linked',index.includes('pacificEducationGlobalEducationVoice.js'));
           need('current affairs loader linked',index.includes('pacificEducationCurrentAffairsLoader.js'));
-          need('single registration entry',entry.includes('ENTRY_ID = "pacificEducationSingleRegistration"') && index.includes('pacificEducationSinglePilotEntry.js'));
+          need('single registration entry',entry.includes('var ENTRY_ID = "pacificEducationSingleRegistration"') && index.includes('pacificEducationSinglePilotEntry.js'));
           need('role routing includes Student',entry.includes('student:'));
           need('role routing includes Teacher',entry.includes('teacher:'));
           need('role routing includes Parent/Caregiver',entry.includes('parent:'));
@@ -43,10 +43,10 @@ jobs:
           need('role routing includes Education/Government',entry.includes('education:'));
           need('role routing includes Community/Partner',entry.includes('community:'));
           need('role routing includes Owner/Control',entry.includes('owner:'));
-          need('role routing includes Head of School',entry.includes('head-of-school:'));
-          need('role routing includes Institution Administrator',entry.includes('institution-admin:'));
-          need('registration country control exists',entry.includes('id="singlePilotCountry"') && entry.includes('Country — required'));
-          need('registration language control exists',entry.includes('id="singlePilotLanguage"'));
+          need('role routing includes Head of School',entry.includes('"head-of-school":'));
+          need('role routing includes Institution Administrator',entry.includes('"institution-admin":'));
+          need('registration country control exists',entry.includes('id=\\\"singlePilotCountry\\\"') && entry.includes('Country — required'));
+          need('registration language control exists',entry.includes('id=\\\"singlePilotLanguage\\\"'));
           need('student/teacher daily activities are workspace routed',entry.includes('dailyLesson') && entry.includes('assessments'));
           need('offline runtime linked',index.includes('pacificEducationConnectivity.js'));
           need('accessibility runtime linked',index.includes('pacificEducationAccessibilityRuntime.js'));
