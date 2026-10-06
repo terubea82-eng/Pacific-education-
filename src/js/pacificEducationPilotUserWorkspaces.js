@@ -545,7 +545,7 @@
         if(box) box.hidden=true;
       };
       document.getElementById("pacificEducationSignOutYes").onclick=function(){
-        try{sessionStorage.removeItem("pacificEducationPilotRegistration");sessionStorage.removeItem("pacificEducationPilotRole");sessionStorage.removeItem("pacificEducationActiveRole");}catch(e){}
+        try{sessionStorage.removeItem("pacificEducationPilotRegistration");sessionStorage.removeItem("pacificEducationPilotRole");sessionStorage.removeItem("pacificEducationActiveRole");sessionStorage.removeItem("pacificEducationPilotRegistered");sessionStorage.removeItem("pilotRegistrationRole");sessionStorage.removeItem("pilotRegistrationName");}catch(e){}
         var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
         if(ws) ws.hidden=true;
         var reg=document.getElementById("pacificEducationIdentityRegistration")||document.getElementById("userRegistrationForm");
