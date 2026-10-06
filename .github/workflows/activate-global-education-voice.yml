@@ -45,3 +45,5 @@ PY
           git add "$file"
           git commit -m 'Hook global education accessibility AI voice into pilot'
           git push
+
+# One-time repair workflow: the script exits cleanly after the hook is present.
