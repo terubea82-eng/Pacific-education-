@@ -89,6 +89,11 @@
     }catch(_handoff){}
     var selector=document.getElementById("pilotRoleSelector");
     if(selector&&workspaceRole){selector.value=workspaceRole;selector.dispatchEvent(new Event("change",{bubbles:true}));}
+    /* Direct activation closes the registration/workspace race after the role is persisted. */
+    if(workspaceRole && window.PacificEducationSequentialRoleWorkspaces &&
+       typeof window.PacificEducationSequentialRoleWorkspaces.build==="function"){
+      try{window.PacificEducationSequentialRoleWorkspaces.build(workspaceRole);}catch(_sequentialActivation){}
+    }
     document.body.classList.remove("pe-guided-flow");document.body.removeAttribute("data-pe-flow-step");
     var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
     if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){ws.scrollIntoView();}}
