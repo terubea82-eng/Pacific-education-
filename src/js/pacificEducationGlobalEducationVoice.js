@@ -10,19 +10,24 @@
   var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
 
   var GLOBAL_LINES = [
-    {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome learners, teachers, parents, caregivers and education communities."},
-    {speaker:"2",text:"Pacific Education was built to use modern digital technology to assist education, connect learning and support people wherever learning is needed."},
+    {speaker:"1",text:"Welcome to Pacific Education. We welcome learners, teachers, parents, caregivers and education communities."},
+    {speaker:"2",text:"Pacific Education was built with modern digital technology to assist education, connect learning and support people wherever learning is needed."},
     {speaker:"1",text:"Why was Pacific Education built?"},
-    {speaker:"2",text:"It was built to help learners learn, practise, receive guidance and track progress, while helping teachers and families support learning with accessible educational tools."},
+    {speaker:"2",text:"It helps learners learn, practise, receive guidance and track progress, while helping teachers and families support learning with accessible tools."},
     {speaker:"1",text:"Why use modern technology for education?"},
-    {speaker:"2",text:"Modern technology can extend access to learning, provide voice and accessibility support, connect educational resources, and help learning continue during war, displacement, disability, poverty, or other circumstances that make normal schooling difficult, including when learning must continue offline-first."},
+    {speaker:"2",text:"Modern technology can expand access, provide voice and accessibility support, connect learning resources, and keep learning going during war, displacement, disability, poverty, or other difficult circumstances, including offline-first learning."},
     {speaker:"1",text:"Was Pacific Education built only for the Pacific?"},
-    {speaker:"2",text:"No. It began with a strong Pacific purpose, but its vision is global: to assist education beyond the Pacific while respecting each country's curriculum, language, culture, school system and local learning needs."},
+    {speaker:"2",text:"No. It began with a strong Pacific purpose, but its vision is global. It respects each country's curriculum, language, culture, school system and local learning needs."},
     {speaker:"1",text:"Can it help when internet access is limited?"},
-    {speaker:"2",text:"Pacific Education is designed around offline-first learning so learning activities can continue when connectivity is limited, while technology remains a support for teachers and human guidance."},
+    {speaker:"2",text:"Yes. Pacific Education is designed for offline-first learning, so activities can continue when connectivity is limited, while teachers and human guidance remain central."},
     {speaker:"1",text:"What is the bigger purpose?"},
-    {speaker:"2",text:"The bigger purpose is to help make quality, accessible and inclusive education easier to reach, using modern technology responsibly to support learners and educators in the Pacific and around the world."}
+    {speaker:"2",text:"The goal is quality, accessible and inclusive education, using modern technology responsibly to support learners and educators in the Pacific and around the world."}
   ];
+
+  GLOBAL_LINES.forEach(function(line){
+    Object.freeze(line);
+  });
+  Object.freeze(GLOBAL_LINES);
 
   function play(){
     if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakConversation === "function"){
@@ -77,5 +82,5 @@
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){install();}); else {install();}
   window.addEventListener("load",install);
-  window.PacificEducationGlobalEducationVoice={version:"1.5.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:5000,lines:GLOBAL_LINES,play:play,addWelcomeIntroductionButton:addWelcomeIntroductionButton};
+  window.PacificEducationGlobalEducationVoice={version:"1.6.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:5000,lines:GLOBAL_LINES,play:play,addWelcomeIntroductionButton:addWelcomeIntroductionButton};
 })(window,document);
