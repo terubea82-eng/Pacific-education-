@@ -194,6 +194,87 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     });
   }
 
+
+  /* Teacher approval gate: students cannot view or attempt today's activity until release. */
+  var APPROVAL_KEY="pacificEducationTeacherDailyApprovalsV1";
+  function approvalRead(){try{return JSON.parse(localStorage.getItem(APPROVAL_KEY)||"{}")||{};}catch(e){return {};}}
+  function approvalContext(){
+    var c=context();
+    c.day=String(localStorage.getItem("currentDayNumber")||c.day||"1");
+    return c;
+  }
+  function approvalKey(c){return [c.classId||"unassigned",c.subject||"subject-not-set",c.term||"term-not-set",c.day||"1"].join("|");}
+  function isTeacherApproved(c){return !!approvalRead()[approvalKey(c||approvalContext())];}
+  function approvalRole(){
+    try{
+      var r=sessionStorage.getItem("pacificEducationActiveRole");
+      if(r)return String(r).toLowerCase();
+      var s=JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration")||"null");
+      return String(s&&s.role||"").toLowerCase();
+    }catch(e){return "";}
+  }
+  function announceApproval(text){
+    var s=document.getElementById("pacificEducationDailyApprovalStatus");
+    if(s)s.textContent=text;
+    if(window.PacificEducationAccessibilityRuntime&&typeof window.PacificEducationAccessibilityRuntime.announce==="function"){try{window.PacificEducationAccessibilityRuntime.announce(text);}catch(e){}}
+    else if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function"){try{window.PacificEducationSpeech.speakText(text);}catch(e){}}
+  }
+  function applyStudentApprovalGate(){
+    if(approvalRole()!=="student")return;
+    var daily=document.getElementById("dailyLesson"); if(!daily)return;
+    var c=approvalContext(), ok=isTeacherApproved(c), activity=document.getElementById("dailyLessonActivity");
+    var start=document.getElementById("dailyActivitiesStartButton"), practice=document.getElementById("dailyActivitiesContinuePracticeButton");
+    var prev=document.getElementById("previousLessonButton"), next=document.getElementById("nextLessonButton");
+    var complete=daily.querySelectorAll("button[onclick*='completeLesson']");
+    var gate=document.getElementById("pacificEducationStudentDailyApprovalGate");
+    if(!gate){
+      gate=document.createElement("div");gate.id="pacificEducationStudentDailyApprovalGate";gate.setAttribute("role","status");gate.setAttribute("aria-live","polite");
+      gate.style.cssText="margin:12px 0;padding:16px;border:3px solid #15803d;border-radius:8px;background:#f0fdf4;";
+      daily.insertBefore(gate,daily.firstChild);
+    }
+    gate.innerHTML=ok?"<strong>✓ Teacher approved today's activity.</strong><br>You may now start and attempt the Daily Activity.":"<strong>🔒 Waiting for teacher approval.</strong><br>Your teacher must approve and release today's activity before you can view or attempt it.";
+    if(start){start.disabled=!ok;start.textContent=ok?"▶️ Start Teacher-Approved Daily Activity":"🔒 Waiting for Teacher Approval";}
+    if(activity){activity.hidden=!ok;if(!ok)activity.innerHTML="<p><strong>Activity locked.</strong> Your teacher has not released today's activity yet.</p>";}
+    if(practice)practice.disabled=!ok;
+    if(prev)prev.disabled=!ok;if(next)next.disabled=!ok;
+    Array.prototype.forEach.call(complete,function(b){b.disabled=!ok;});
+  }
+  function bindTeacherApproval(){
+    if(approvalRole()!=="teacher")return;
+    var host=document.getElementById("teacherDashboard");if(!host)return;
+    var section=document.getElementById("pacificEducationTeacherDailyApproval");
+    if(!section){
+      section=document.createElement("section");section.id="pacificEducationTeacherDailyApproval";
+      section.style.cssText="margin:12px 0;padding:14px;border:3px solid #15803d;border-radius:8px;background:#f0fdf4;";
+      section.innerHTML="<h3>Teacher Approval — Daily Activity Release</h3><p><strong>Students cannot start today's Daily Activity until you approve and release it.</strong></p><button type=\"button\" id=\"pacificEducationApproveDailyActivity\" style=\"background:#15803d;color:#fff;border:2px solid #15803d;border-radius:6px;min-height:56px;padding:12px 16px;font-weight:800;\">✓ Approve & Release Today's Activity</button><button type=\"button\" id=\"pacificEducationRevokeDailyActivity\" style=\"margin-left:8px;min-height:48px;padding:10px 14px;\">Revoke Student Access</button><p id=\"pacificEducationDailyApprovalStatus\" role=\"status\" aria-live=\"polite\"></p>";
+      host.insertBefore(section,host.firstChild);
+    }
+    var approve=document.getElementById("pacificEducationApproveDailyActivity"),revoke=document.getElementById("pacificEducationRevokeDailyActivity");
+    if(approve&&approve.getAttribute("data-bound")!=="true"){approve.setAttribute("data-bound","true");approve.onclick=function(){
+      var c=approvalContext(),all=approvalRead();all[approvalKey(c)]={approved:true,approvedAt:new Date().toISOString(),approvedBy:"pilot-teacher",context:c};write(APPROVAL_KEY,all);
+      refreshApprovalUI();announceApproval("Today's Daily Activity has been approved and released. Students may now attempt it.");
+    };}
+    if(revoke&&revoke.getAttribute("data-bound")!=="true"){revoke.setAttribute("data-bound","true");revoke.onclick=function(){
+      var c=approvalContext(),all=approvalRead();delete all[approvalKey(c)];write(APPROVAL_KEY,all);
+      refreshApprovalUI();announceApproval("Student access to today's Daily Activity has been revoked.");
+    };}
+    function refreshApprovalUI(){var ok=isTeacherApproved(),s=document.getElementById("pacificEducationDailyApprovalStatus");if(s)s.textContent=ok?"Approved and released for students.":"Waiting for teacher approval. Students remain locked.";if(approve)approve.disabled=ok;if(revoke)revoke.disabled=!ok;}
+    refreshApprovalUI();
+  }
+  function protectActivityRenderer(){
+    if(!window.PacificEducationActivity||typeof window.PacificEducationActivity.render!=="function"||window.PacificEducationActivity.__teacherApprovalGate)return;
+    var original=window.PacificEducationActivity.render;
+    window.PacificEducationActivity.render=function(type,day,lesson){
+      if(approvalRole()==="student"){
+        var c=approvalContext();c.day=String(Number(day)||Number(c.day)||1);
+        if(!isTeacherApproved(c)){applyStudentApprovalGate();announceApproval("This Daily Activity is locked. Your teacher must approve and release it before you can attempt it.");return false;}
+      }
+      return original.apply(this,arguments);
+    };
+    window.PacificEducationActivity.__teacherApprovalGate=true;
+  }
+  function refreshApprovalUI(){bindTeacherApproval();applyStudentApprovalGate();protectActivityRenderer();}
+
   window.PacificEducationTeacherDailyActivityCoordinator={
     request:request, context:context, render:render, version:"2.0.0-school-region-coordination"
   };
