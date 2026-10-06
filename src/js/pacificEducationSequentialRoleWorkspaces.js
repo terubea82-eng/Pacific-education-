@@ -116,6 +116,7 @@
 
   var LEARNER_ROLES = {"student":1,"blind-learner":1,"deaf-learner":1};
   var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
+  var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
   var movedTargets = [];
 
   function speak(text){
@@ -134,28 +135,47 @@
 
   function hideApplicationChildren(app, except){
     Array.prototype.forEach.call(app.children,function(el){
-      if(el===except || el.id==="pacificEducationSequentialRoleWorkspace") return;
-      if(PROTECTED[el.id]) return;
+      if(el===except || el.id==="pacificEducationSequentialRoleWorkspace" || SHARED[el.id]) return;
       el.hidden=true;
       el.setAttribute("data-pe-sequential-hidden","true");
     });
   }
 
-  function restorePrevious(el){
-    if(!el) return;
-    el.hidden=false;
-    el.removeAttribute("data-pe-sequential-hidden");
-    if(el.parentNode && el.dataset.peSequentialMoved==="true"){
-      el.dataset.peSequentialMoved="false";
+  function rememberOriginal(target){
+    if(!target || target.dataset.peSequentialOriginal==="true") return;
+    var parent=target.parentNode;
+    if(!parent) return;
+    target.__peSequentialOriginalParent=parent;
+    target.__peSequentialOriginalNextSibling=target.nextSibling;
+    target.dataset.peSequentialOriginal="true";
+  }
+
+  function restoreMovedTarget(target){
+    if(!target || target.dataset.peSequentialOriginal!=="true") return;
+    var parent=target.__peSequentialOriginalParent;
+    if(parent){
+      var next=target.__peSequentialOriginalNextSibling;
+      if(next && next.parentNode===parent) parent.insertBefore(target,next);
+      else parent.appendChild(target);
     }
+    target.hidden=true;
+    target.removeAttribute("data-pe-sequential-page");
+    target.dataset.peSequentialMoved="false";
+    target.setAttribute("data-pe-sequential-hidden","true");
+  }
+
+  function restoreAllMovedTargets(){
+    movedTargets.forEach(restoreMovedTarget);
   }
 
   function moveTargetIntoPage(target,page){
     if(!target) return false;
+    rememberOriginal(target);
     target.hidden=false;
     target.removeAttribute("data-pe-sequential-hidden");
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
+    if(movedTargets.indexOf(target)===-1) movedTargets.push(target);
     page.appendChild(target);
     return true;
   }
@@ -180,10 +200,12 @@
     var progress=document.getElementById("peSequentialProgress");
     var page=document.getElementById("peSequentialPage");
     var next=document.getElementById("peSequentialNext");
+    restoreAllMovedTargets();
     var status=document.getElementById("peSequentialStatus");
     var index=0;
 
     function renderPage(){
+      restoreAllMovedTargets();
       page.innerHTML="";
       var item=sequence[index];
       var target=document.getElementById(item[0]);
@@ -229,6 +251,7 @@
         sessionStorage.removeItem("pilotRegistrationRole");
         sessionStorage.removeItem("pilotRegistrationName");
       }catch(e){}
+      restoreAllMovedTargets();
       shell.remove();
       Array.prototype.forEach.call(app.children,function(el){
         if(el.getAttribute("data-pe-sequential-hidden")==="true"){
