@@ -8,7 +8,7 @@
 
   var ROLE_SEQUENCES = {
     "student":[
-      ["studentStartLearning","Start Learning"],
+      ["learningPlatform","Start Learning"],
       ["levelSelection","Class / Level"],
       ["subjectSelection","Subject"],
       ["termSelection","Term"],
@@ -21,7 +21,7 @@
       ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Activities"]
     ],
     "blind-learner":[
-      ["studentStartLearning","Voice-Guided Learning"],
+      ["learningPlatform","Voice-Guided Learning"],
       ["levelSelection","Class / Level"],
       ["subjectSelection","Subject"],
       ["termSelection","Term"],
@@ -32,7 +32,7 @@
       ["pacificEducationHomeSubmission","Home Continuity"]
     ],
     "deaf-learner":[
-      ["studentStartLearning","Visual Learning"],
+      ["learningPlatform","Visual Learning"],
       ["levelSelection","Class / Level"],
       ["subjectSelection","Subject"],
       ["termSelection","Term"],
