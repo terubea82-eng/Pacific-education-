@@ -431,6 +431,26 @@
     });
   }
 
+  function repairRegistrationSetupControls() {
+    /* Country, language and User Registration are pilot entry controls and must remain
+       interactive. Do not unlock any payment, production or entitlement controls here. */
+    ["pacificEducationCountrySelect","pacificEducationLanguageSelect","userRegistrationOpenButton"].forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el)return;
+      el.disabled=false;
+      el.removeAttribute("aria-disabled");
+      el.style.pointerEvents="auto";
+      el.style.touchAction="manipulation";
+    });
+    var box=document.getElementById("pacificEducationRegistrationBox");
+    if(box){box.setAttribute("data-pacific-registration-state","active");}
+    var statusEl=document.getElementById("pilotRegistrationStatus");
+    var form=document.getElementById("userRegistrationForm");
+    if(statusEl && (!form || form.hidden)){
+      statusEl.textContent="User Registration is active. Choose a role to begin.";
+    }
+  }
+
   function repairControls() {
     ensureGlobalHandler("openPacificEducationFinance", openPacificEducationFinance);
     repairKnownHandlers();
