@@ -278,7 +278,7 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
   window.PacificEducationTeacherDailyActivityCoordinator={
     request:request, context:context, render:render, version:"2.0.0-school-region-coordination"
   };
-  function init(){ render(); }
+  function init(){ render(); refreshApprovalUI(); [300,1000,2500].forEach(function(ms){setTimeout(refreshApprovalUI,ms);}); }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
   window.addEventListener("load",init);
   document.addEventListener("pacificEducationSelectionChanged",init);
