@@ -5,10 +5,11 @@
 (function(window, document){
   "use strict";
 
-  var VERSION = "1.0.0-blind-confirmed-attempts";
+  var VERSION = "1.2.0-blind-guidance-spelling";
+  var SPELL_THRESHOLD_WORDS = 1;
   var AUDIT_KEY = "pacificEducationBlindAttemptAuditV1";
   var Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  var active = {type:null, day:0, question:"", recognition:null, mediaRecorder:null, chunks:[], transcript:"", awaiting:false};
+  var active = {type:null, day:0, question:"", recognition:null, mediaRecorder:null, chunks:[], transcript:"", awaiting:false, spelling:"", guidanceMode:"activity"};
 
   function speak(text, allowRepeat){
     text=String(text||"").trim(); if(!text) return false;
@@ -39,6 +40,16 @@
   }
   function announce(text){
     status(text); speak(text,true);
+  }
+  function isAssessment(){
+    try{
+      var el=document.getElementById("assessments");
+      return !!(el && !el.hidden && el.offsetParent!==null);
+    }catch(e){return false;}
+  }
+  function guidanceMessage(text){
+    if(isAssessment()) return;
+    announce(text);
   }
   function contextKey(){
     return [active.day,localStorage.getItem("pacificEducationSubject")||"",localStorage.getItem("pacificEducationTerm")||""].join("|");
@@ -95,8 +106,13 @@
       if(meta)finishMedia(meta,function(audio){active.audioDataUrl=audio||"";});
       var heard=text.trim();
       if(!heard){announce("I did not receive a clear answer. Please say your answer again.");active.awaiting=false;return;}
-      status("I heard: "+heard+". Say Confirm to keep it, or Change to record it again.");
-      speak("I heard: "+heard+". Say Confirm to keep it, or Change to record it again.",true);
+      if(heard.split(/\s+/).length <= SPELL_THRESHOLD_WORDS && !isAssessment()){
+        status("I heard: "+heard+". If the word is unclear, use Spell Word. Otherwise say Confirm.");
+        speak("I heard: "+heard+". If the word is unclear, say Spell Word. Otherwise say Confirm.",true);
+      } else {
+        status("I heard: "+heard+". Say Confirm to keep it, or Change to record it again.");
+        speak("I heard: "+heard+". Say Confirm to keep it, or Change to record it again.",true);
+      }
     };
     rec.onerror=function(e){
       active.awaiting=false; setBusy(false); stopMedia();
@@ -114,6 +130,31 @@
       audioDataUrl:String(audioDataUrl||""), recordedAt:new Date().toISOString(),
       report:"Exact speech captured by the device recognition service; PacEdu did not silently correct the transcript."
     });
+  }
+  function spellWord(){
+    if(isAssessment()){
+      announce("Spelling assistance is not used to correct an assessment answer. Your original response will be preserved for assessment review.");
+      return;
+    }
+    if(!Recognition){announce("Voice spelling is not available. Please use the available typing option.");return;}
+    var rec=new Recognition(); active.recognition=rec; active.spelling="";
+    announce("Please spell the unclear word, one letter at a time. I will read the spelling back before using it.");
+    rec.lang="en-AU"; rec.continuous=false; rec.interimResults=false; rec.maxAlternatives=1;
+    rec.onresult=function(e){var t="";try{t=e.results[e.results.length-1][0].transcript||"";}catch(x){};var letters=String(t).replace(/[^A-Za-z]/g,"").toUpperCase();
+      if(!letters){announce("I could not hear the spelling. Please try again.");return;}
+      active.spelling=letters; active.awaiting=true;
+      status("Spelling heard: "+letters+". Say Confirm Spelling or Change Spelling.");
+      speak("I heard the spelling "+letters.split("").join(" ")+". Say Confirm Spelling or Change Spelling.",true);
+    };
+    rec.onerror=function(){active.awaiting=false;announce("I could not reliably capture the spelling. Please try again.");}; rec.onend=function(){active.recognition=null;};
+    try{rec.start();}catch(e){announce("Spelling could not start. Please try again.");}
+  }
+  function confirmSpelling(){
+    if(!active.spelling||isAssessment())return;
+    active.transcript=active.spelling.toLowerCase(); active.awaiting=true; active.spelling="";
+    saveAudit(active.transcript,true,"");
+    guidanceMessage("Confirmed. I will keep your spelling as your answer. I will not change it to match a right answer.");
+    guidanceMessage("Guidance: if you want help, I can give neutral feedback about clarity, spelling, pronunciation, grammar, or whether your response is complete. I will not reveal or force the expected answer.");
   }
   function submitConfirmed(){
     if(!active.awaiting||!String(active.transcript||"").trim())return;
@@ -157,12 +198,12 @@
       "<p>PacEdu will not silently correct your words. You must confirm the words heard before they are submitted.</p>"+
       '<button type="button" id="peBlindListenAnswer" style="min-height:56px;padding:12px;font-weight:800;">🎙️ Speak Answer</button> '+
       '<button type="button" id="peBlindConfirm" disabled style="min-height:52px;padding:12px;">✓ Confirm</button> '+
-      '<button type="button" id="peBlindChange" disabled style="min-height:52px;padding:12px;">↻ Change</button>'+
+      '<button type="button" id="peBlindChange" disabled style="min-height:52px;padding:12px;">↻ Change</button> <button type="button" id="peBlindSpell" style="min-height:52px;padding:12px;">🔤 Spell Word</button>'+
       '<p id="peBlindAttemptStatus" role="status" aria-live="assertive">Ready. Speak Answer starts the protected voice process.</p>';
     panel.insertBefore(box,panel.firstChild);
     document.getElementById("peBlindListenAnswer").addEventListener("click",startRecognition);
     document.getElementById("peBlindConfirm").addEventListener("click",submitConfirmed);
-    document.getElementById("peBlindChange").addEventListener("click",changeAnswer);
+    document.getElementById("peBlindChange").addEventListener("click",changeAnswer); document.getElementById("peBlindSpell").addEventListener("click",spellWord);
     speak("Blind answer protection is ready. Speak Answer starts listening. I will read back exactly what I heard before submission.",true);
   }
   function wrapRender(){
@@ -174,7 +215,7 @@
       active.type=type; active.day=Number(day)||1;
       var source=lesson&&lesson.activity?lesson.activity:(lesson||{});
       active.question=String(source.questionText||source.learnerTask||source.description||lesson&&lesson.title||"Daily Activity");
-      active.transcript=""; active.awaiting=false; active.audioDataUrl="";
+      active.transcript=""; active.awaiting=false; active.audioDataUrl=""; active.spelling="";
       setTimeout(install,50);
       setTimeout(function(){announce("Question "+active.day+" is ready. Listen to the question, then speak your answer when ready.");},120);
       return result;
@@ -188,7 +229,14 @@
     if(window.__pacificEducationBlindPatchReady)return;
     window.__pacificEducationBlindPatchReady=true;
   }
-  function init(){wrapRender();patchAnswerReview();}
+  function init(){wrapRender();patchAnswerReview();
+    var help=document.getElementById("dailyLessonActivity");
+    if(help && !document.getElementById("peBlindGuidanceNotice")){
+      var n=document.createElement("p"); n.id="peBlindGuidanceNotice"; n.setAttribute("aria-live","polite");
+      n.textContent="Daily Activities: voice guidance may help with clarity, spelling, pronunciation, grammar and completeness. Formal assessments preserve the learner's original response without corrective coaching.";
+      help.insertBefore(n,help.firstChild);
+    }
+  }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
   window.addEventListener("load",init);
   document.addEventListener("pacificEducationSelectionChanged",function(){setTimeout(init,50);});
