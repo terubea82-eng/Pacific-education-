@@ -180,17 +180,6 @@
     movedTargets.forEach(restoreMovedTarget);
   }
 
-  function ensureDynamicTarget(id,label){
-    var existing=document.getElementById(id);
-    if(existing) return existing;
-    var section=document.createElement("section");
-    section.id=id;
-    section.setAttribute("data-pe-dynamic-pilot-target","true");
-    section.style.cssText="padding:16px;border:2px solid #15803d;border-radius:8px;margin:8px 0;";
-    section.innerHTML="<h3>"+label+"</h3><p>This existing pilot workspace service is ready for its connected controls and evidence. Use the available controls on this page.</p>";
-    return section;
-  }
-
   function moveTargetIntoPage(target,page){
     if(!target) return false;
     rememberOriginal(target);
@@ -233,16 +222,6 @@
       page.innerHTML="";
       var item=sequence[index];
       var target=document.getElementById(item[0]);
-      if(!target){
-        var dynamicLabels={
-          "pacificEducationWeekendHolidaySupplementaryActivities":"Weekend & Holiday Activities",
-          "pacificEducationExternalReviewerPortal":"External Reviewer Portal",
-          "pacificEducationExamCalendarSection":"School Examination Calendar",
-          "pacificEducationInstitutionSetup":"Institution Setup",
-          "pacificEducationInstitutionAdvice":"Institution Advice"
-        };
-        if(dynamicLabels[item[0]]) target=ensureDynamicTarget(item[0],dynamicLabels[item[0]]);
-      }
       if(target && PROTECTED[item[0]]) target=null;
       title.textContent=(role==="student"?"Student":role==="blind-learner"?"Blind Learner":role==="deaf-learner"?"Deaf Learner":role.replace(/-/g," "))+" Workspace — "+item[1];
       progress.textContent="Step "+(index+1)+" of "+sequence.length;
