@@ -126,6 +126,14 @@
   }
 
   function showRoute(role) {
+    /* Current pilot authority: the sequential workspace owns post-registration routing.
+       Keep this legacy ROLE_ROUTES implementation intact as a fallback only. */
+    if (window.PacificEducationSequentialRoleWorkspaces &&
+        typeof window.PacificEducationSequentialRoleWorkspaces.build === "function") {
+      window.PacificEducationSequentialRoleWorkspaces.build(role);
+      return;
+    }
+
     var main = document.getElementById("app");
     if (!main) return;
 
