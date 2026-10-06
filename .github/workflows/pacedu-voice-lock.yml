@@ -1,0 +1,32 @@
+name: Pacedu Protected Voice Lock
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  voice-lock:
+    name: Protect #856 voice baseline
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify protected voice baseline
+        shell: bash
+        run: bash automation/check-pacedu-voice-lock.sh
+
+      - name: Verify voice scripts are referenced
+        shell: bash
+        run: |
+          test -f src/index.html
+          grep -Fq 'js/pacificEducationSpeechVoice.js?v=20261005-voice5' src/index.html
+          grep -Fq 'js/pacificEducationMandatoryVoiceNavigation.js?v=20261005-userbox-nextvoice' src/index.html
+          echo "Protected #856 voice references: PASS"
