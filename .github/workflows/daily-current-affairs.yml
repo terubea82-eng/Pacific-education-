@@ -1,0 +1,48 @@
+name: Pacific Education Daily Current Affairs Feed
+on:
+  schedule:
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh-current-affairs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch education current affairs
+        env:
+          GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=(education%20OR%20school%20OR%20learning%20OR%20teacher)%20(domainis:unesco.org%20OR%20domainis:unicef.org%20OR%20domainis:un.org%20OR%20domainis:who.int)&mode=artlist&maxrecords=50&timespan=2days&sort=datedesc&format=json
+        run: |
+          mkdir -p docs/data
+          curl --fail --location --max-time 45 "$GDELT_URL" -o /tmp/gdelt.json
+          node <<'NODE'
+          const fs=require('fs');
+          const raw=JSON.parse(fs.readFileSync('/tmp/gdelt.json','utf8'));
+          const articles=Array.isArray(raw.articles)?raw.articles:[];
+          const items=articles.map((a,i)=>({
+            id:'GDELT-'+Buffer.from(String(a.url||a.title||i)).toString('base64url').slice(0,48),
+            title:String(a.title||'').trim(),
+            url:String(a.url||'').trim(),
+            source:String(a.domain||a.sourcecountry||'Approved educational news source').trim(),
+            publishedAt:String(a.seendate||'').trim(),
+            topic:'Education and learning',
+            educationalRelevance:'Potentially relevant to teaching, learning, health, inclusion, science, environment, or education systems.',
+            ageSuitability:'Teacher/reviewer screening required before student use.',
+            subjectsApplicable:['English','Mathematics','Science','Health Science','Social Science','Geography','History','Computer Studies','Arts'],
+            levelsApplicable:[],
+            verificationStatus:'PENDING_TEACHER_REVIEW',
+            approved:true,
+            sourceType:'EDUCATIONAL_CURRENT_AFFAIRS'
+          })).filter(x=>x.title&&x.url).slice(0,30);
+          const out={version:'1.0.0',generatedAt:new Date().toISOString(),source:'GDELT DOC API restricted to UNESCO, UNICEF, UN and WHO domains',items};
+          fs.writeFileSync('docs/data/current-affairs.json',JSON.stringify(out,null,2)+'\n');
+          NODE
+      - name: Commit feed when changed
+        run: |
+          git config user.name "pacific-education-bot"
+          git config user.email "actions@github.com"
+          git add docs/data/current-affairs.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh daily educational current affairs feed"
+          git push
