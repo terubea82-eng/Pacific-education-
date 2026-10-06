@@ -8,8 +8,6 @@
   var AUSTRALIA_ENGLISH = "en-AU";
   /* Readiness-gate compatibility marker: Australia English may be represented as en-AU or en_AU. */
   var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
-  var WELCOME_DELAY_MS = 5000;
-  var welcomeRetryTimer = null;
 
   var GLOBAL_LINES = [
     {speaker:"1",text:"Welcome to Pacific Education. Education belongs to every learner, everywhere in the world."},
@@ -45,31 +43,6 @@
     host.insertBefore(button,host.firstChild);
   }
 
-  function attemptWelcome(){
-    var active=document.getElementById("pacificEducationWelcome");
-    if(!active || active.hidden || window.__pacificEducationWelcomePlayed)return false;
-    var started=play();
-    if(started){
-      window.__pacificEducationWelcomePlayed=true;
-      return true;
-    }
-    return false;
-  }
-
-  function scheduleWelcome(){
-    window.setTimeout(function(){
-      if(attemptWelcome())return;
-      if(welcomeRetryTimer)window.clearTimeout(welcomeRetryTimer);
-      welcomeRetryTimer=window.setTimeout(function(){
-        welcomeRetryTimer=null;
-        if(!attemptWelcome()){
-          var status=document.getElementById("pacificEducationVoiceStatus");
-          if(status)status.textContent="Welcome voice is ready. Tap Hear Welcome & Introduction or AI Playback to start the introduction.";
-        }
-      },1200);
-    },WELCOME_DELAY_MS);
-  }
-
   function install(){
     addWelcomeIntroductionButton();
     var button=document.getElementById("pacificEducationAIPlaybackButton");
@@ -100,7 +73,7 @@
     }
   }
 
-  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){install();scheduleWelcome();}); else {install();scheduleWelcome();}
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){install();}); else {install();scheduleWelcome();}
   window.addEventListener("load",install);
-  window.PacificEducationGlobalEducationVoice={version:"1.5.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:WELCOME_DELAY_MS,lines:GLOBAL_LINES,play:play,addWelcomeIntroductionButton:addWelcomeIntroductionButton};
+  window.PacificEducationGlobalEducationVoice={version:"1.5.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:5000,lines:GLOBAL_LINES,play:play,addWelcomeIntroductionButton:addWelcomeIntroductionButton};
 })(window,document);
