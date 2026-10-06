@@ -376,6 +376,56 @@
     window.setTimeout(finalPilotInteractionPass,2000);
     window.setTimeout(finalPilotInteractionPass,4000);
 
+    /* Activate every non-payment pilot box and link it to a real target.
+       This is additive and keeps the #856 voice controller unchanged. */
+    var allPilotBoxes=[
+      "pacificEducationMailbox","pacificEducationAppMenu","pacificEducationAccessibilityControls","pilotBanner",
+      "pacificEducationTechnicianActivation","pacificEducationTechnicianWorkspace","pacificEducationSchoolIdentitySection",
+      "learningPlatform","pacificEducationAppTools","teacherCalendarSection","pacificEducationAccountRecovery",
+      "pacificEducationIdentityRegistration","pacificEducationWebsitePilotChecklist","prototypeAccess",
+      "levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage",
+      "pacificEducationHomeSubmission","pacificEducationTermBaseline","pacificEducationTransferIntake","assessments",
+      "specialEducationDashboard","teacherDashboard","parentDashboard","connectivityBoundary","publicationStatus",
+      "pacificEducationAIConversation","pacificGuardianCommentSection","pacificEducationStudentExternalIdRegistry",
+      "pacificEducationIdentityIntegrity","systemStatus","pacificEducationCoverageDashboard",
+      "pacificEducationStudentProgressDashboard","pacificEducationTeacherClassDashboard","pacificEducationTeacherEvidence",
+      "pacificEducationExternalReviewerPortal","pacificEducationExternalSpecialistReviewEvidenceRegistry",
+      "pacificEducationExternalSpecialistReviewEvidenceLog","pacificEducationCurriculumMasterControlStatus",
+      "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability",
+      "pacificEducationInstitutionSetup","pacificEducationInstitutionAdvice","pacificEducationExamCalendarSection",
+      "pacificEducationWeekendHolidaySupplementaryActivities"
+    ];
+    allPilotBoxes.forEach(show);
+    /* Any existing internal link to one of these boxes is a live pilot link. */
+    document.querySelectorAll('a[href^="#"]').forEach(function(link){
+      var id=(link.getAttribute("href")||"").slice(1);
+      if(allPilotBoxes.indexOf(id)!==-1 && document.getElementById(id)){
+        link.style.pointerEvents="auto";
+        link.style.touchAction="manipulation";
+      }
+    });
+    /* Give the App Menu a complete pilot-box launcher so users do not depend on
+       hidden/old menu entries. Protected finance boxes are intentionally omitted. */
+    var menu=document.querySelector('#pacificEducationAppMenu nav[aria-label="App menu links"]');
+    if(menu && !document.getElementById("pe856AllPilotBoxesMenu")){
+      var launcher=document.createElement("details");
+      launcher.id="pe856AllPilotBoxesMenu";
+      launcher.style.marginTop="10px";
+      launcher.innerHTML='<summary><strong>All Pilot Boxes — Active</strong></summary><div id="pe856PilotBoxLinks" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;"></div>';
+      menu.parentElement.parentElement.appendChild(launcher);
+      var list=document.getElementById("pe856PilotBoxLinks");
+      var seen={};
+      menu.querySelectorAll('a[href^="#"]').forEach(function(a){seen[(a.getAttribute("href")||"").slice(1)]=true;});
+      allPilotBoxes.forEach(function(id){
+        var target=document.getElementById(id); if(!target || seen[id]) return;
+        var b=document.createElement("button");
+        b.type="button"; b.setAttribute("data-pe-pilot-box-target",id);
+        b.textContent=String(target.getAttribute("aria-label")||target.querySelector("h2,h3,h4")?.textContent||id).replace(/\\s+/g," ").trim();
+        b.style.cssText="padding:10px 12px;border:1px solid currentColor;border-radius:7px;background:transparent;text-align:left;";
+        b.onclick=function(){go(id);};
+        list.appendChild(b);
+      });
+    }
     var status=document.getElementById("systemStatus");
     if(status)status.textContent="Pacific Education 856-compatible pilot activation is active. Pilot boxes enabled; production/payment gates remain locked.";
   }
