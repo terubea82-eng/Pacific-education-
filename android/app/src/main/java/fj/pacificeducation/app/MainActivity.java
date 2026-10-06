@@ -29,7 +29,7 @@ import java.util.Set;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=3efebbb-ai-first-retry-20261005";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=d06ce3ad";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
@@ -51,7 +51,7 @@ public final class MainActivity extends Activity {
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
         textToSpeech = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
-                int languageResult = textToSpeech.setLanguage(Locale.US);
+                int languageResult = textToSpeech.setLanguage(Locale.forLanguageTag("en-AU"));
                 ttsReady = languageResult != TextToSpeech.LANG_MISSING_DATA
                         && languageResult != TextToSpeech.LANG_NOT_SUPPORTED;
                 if (ttsReady) {
@@ -77,7 +77,9 @@ public final class MainActivity extends Activity {
             Voice maleFallback = null;
             for (Voice voice : voices) {
                 if (voice == null || voice.getLocale() == null) continue;
-                if (!Locale.ENGLISH.getLanguage().equals(voice.getLocale().getLanguage())) continue;
+                if (!"en".equalsIgnoreCase(voice.getLocale().getLanguage())) continue;
+                boolean australiaEnglish = "AU".equalsIgnoreCase(voice.getLocale().getCountry());
+                if (fallback == null || (australiaEnglish && !("AU".equalsIgnoreCase(fallback.getLocale().getCountry())))) fallback = voice;
                 if (fallback == null) fallback = voice;
                 String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
                 if (name.contains("male") || name.contains("man")
@@ -94,6 +96,7 @@ public final class MainActivity extends Activity {
                 }
             }
             if (maleFallback != null) textToSpeech.setVoice(maleFallback);
+            else if (fallback != null) textToSpeech.setVoice(fallback);
             // Do not silently replace the requested male voice with an arbitrary
             // (possibly female) English voice. If this device exposes no recognizable
             // male English voice, the engine keeps its configured voice rather than
