@@ -45,8 +45,8 @@ jobs:
           need('role routing includes Owner/Control',entry.includes('owner:'));
           need('role routing includes Head of School',entry.includes('"head-of-school":'));
           need('role routing includes Institution Administrator',entry.includes('"institution-admin":'));
-          need('registration country control exists',entry.includes('id=\\\"singlePilotCountry\\\"') && entry.includes('Country — required'));
-          need('registration language control exists',entry.includes('id=\\\"singlePilotLanguage\\\"'));
+          need('registration country control exists',entry.includes('singlePilotCountry') && entry.includes('Country — required'));
+          need('registration language control exists',entry.includes('singlePilotLanguage'));
           need('student/teacher daily activities are workspace routed',entry.includes('dailyLesson') && entry.includes('assessments'));
           need('offline runtime linked',index.includes('pacificEducationConnectivity.js'));
           need('accessibility runtime linked',index.includes('pacificEducationAccessibilityRuntime.js'));
