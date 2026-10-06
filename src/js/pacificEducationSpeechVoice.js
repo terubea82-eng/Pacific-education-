@@ -132,8 +132,19 @@
     var signature=lines.map(function(item){return String(item&&item.text||"");}).join("\u0001"),now=Date.now();
     if(signature===lastConversationSignature&&now-lastConversationAt<8000)return false;
     lastConversationSignature=signature;lastConversationAt=now;conversationGeneration+=1;var conversationRun=conversationGeneration;speechGeneration+=1;var runGeneration=speechGeneration;
+    // Android pilot: route the mandatory two-person AI Playback through the native TTS bridge first.
+    // This preserves audible output in Android WebView even when WebView speechSynthesis is silent.
+    if(window.PacificEducationNativeTTS&&typeof window.PacificEducationNativeTTS.speakConversation==="function"){
+      try {
+        var nativeLines=lines.map(function(item,index){return {speaker:index%2,text:String(item&&item.text||"")};});
+        if(window.PacificEducationNativeTTS.speakConversation(JSON.stringify(nativeLines))){
+          clearPersistedConversation();
+          setVoiceStatus("AI Playback: native Speaker 1 and Speaker 2 are speaking.");
+          return true;
+        }
+      } catch(error) { console.warn("Pacific Education native AI Playback failed:",error); }
+    }
     if(!window.speechSynthesis||typeof window.SpeechSynthesisUtterance!=="function"){
-      if(window.PacificEducationNativeTTS&&typeof window.PacificEducationNativeTTS.speak==="function"){var ni=0;(function nativeNext(){if(ni>=lines.length){clearPersistedConversation();if(done)done();return;}try{window.PacificEducationNativeTTS.speak(String(lines[ni++].text||""));setTimeout(nativeNext,3200);}catch(_){if(done)done();}})();return true;}
       setVoiceStatus("Two-person AI playback requires a speech engine.");return false;
     }
     var synth=window.speechSynthesis,pair=chooseConversationVoices(),index=0,charOffset=0,saved=loadPersistedConversation();
