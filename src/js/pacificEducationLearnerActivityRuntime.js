@@ -89,7 +89,7 @@
       subject: ctx.subjectId,
       term: ctx.term,
       curriculumContext: ctx,
-      reviewStatus: ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review",
+      reviewStatus: window.__pacificEducationVerifiedVoiceAttempt ? "pending-teacher-review" : (ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review"),
       date: new Date().toISOString()
     });
     localStorage.setItem(key, JSON.stringify(items.slice(-500)));
