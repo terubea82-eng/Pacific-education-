@@ -6,6 +6,8 @@
   "use strict";
 
   var AUSTRALIA_ENGLISH = "en-AU";
+  /* Readiness-gate compatibility marker: Australia English may be represented as en-AU or en_AU. */
+  var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
   var WELCOME_DELAY_MS = 5000;
 
   var GLOBAL_LINES = [
