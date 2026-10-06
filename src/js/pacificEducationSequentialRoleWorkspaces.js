@@ -114,7 +114,8 @@
 
   var LEARNER_ROLES = {"student":1,"blind-learner":1,"deaf-learner":1};
   var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
-  var SESSION_KEYS = ["pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
+  var SESSION_KEYS = ["pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
+  var LOCAL_SESSION_KEYS = ["pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationCurriculumCountryCode","pacificEducationCurriculumCountry"];
   var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
   var movedTargets = [];
 
@@ -279,6 +280,7 @@
         sessionStorage.removeItem("pilotRegistrationRole");
         sessionStorage.removeItem("pilotRegistrationName");
         SESSION_KEYS.forEach(function(key){try{sessionStorage.removeItem(key);}catch(e){}});
+      LOCAL_SESSION_KEYS.forEach(function(key){try{localStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
       shell.remove();
@@ -312,12 +314,29 @@
       select.setAttribute("data-pe-sequential-role-bound","true");
       select.addEventListener("change",function(){
         var chosen=select.value||getRole();
-        if(chosen && ROLE_SEQUENCES[chosen]) setTimeout(function(){build(chosen);},0);
+        var registered=false;
+        try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
+        if(registered && chosen && ROLE_SEQUENCES[chosen]) setTimeout(function(){build(chosen);},0);
       },true);
     });
     var role=getRole();
     if(!role){try{role=sessionStorage.getItem("pacificEducationPilotRole")||"";}catch(e){}}
-    if(role && ROLE_SEQUENCES[role]) setTimeout(function(){build(role);},100);
+    var registeredNow=false;
+    try{registeredNow=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
+    if(role && registeredNow && ROLE_SEQUENCES[role]) setTimeout(function(){build(role);},100);
+
+    ["singlePilotRegisterButton","pilotRegistrationSaveButton"].forEach(function(id){
+      var button=document.getElementById(id);
+      if(!button || button.getAttribute("data-pe-sequential-register-bound")==="true") return;
+      button.setAttribute("data-pe-sequential-register-bound","true");
+      button.addEventListener("click",function(){
+        setTimeout(function(){
+          var registered=false, chosen=getRole();
+          try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
+          if(registered && chosen && ROLE_SEQUENCES[chosen]) build(chosen);
+        },0);
+      },false);
+    });
 
     window.addEventListener("popstate",function(event){
       var state=event.state||{};
