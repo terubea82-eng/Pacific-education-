@@ -25,6 +25,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      - name: Verify Pacedu protected feature wiring before deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f .github/pacedu-protected-features.json
+          python3 - <<'PY'
+          import json, pathlib, re, sys
+          root=pathlib.Path('.')
+          m=json.loads((root/'.github/pacedu-protected-features.json').read_text())
+          missing=[p for p in m['protected_files'] if not (root/p).is_file()]
+          if missing:
+              print('Protected Pacedu files missing:')
+              print('\n'.join(' - '+p for p in missing))
+              sys.exit(1)
+          html=(root/'src/index.html').read_text()
+          protected_js=[p for p in m['protected_files'] if p.startswith('src/js/')]
+          unreferenced=[]
+          for p in protected_js:
+              name=p.rsplit('/',1)[-1]
+              if name not in html:
+                  unreferenced.append(p)
+          if unreferenced:
+              print('Protected Pacedu scripts are not connected from src/index.html:')
+              print('\n'.join(' - '+p for p in unreferenced))
+              sys.exit(1)
+          print(f"PASS: {len(m['protected_files'])} protected files present and protected scripts connected.")
+          PY
+          grep -q 'pacificEducationSpeechVoice.js' src/index.html
+          grep -q 'pacificEducationAutoFeatureActivation.js' src/index.html
+          grep -q 'PacificEducationSequentialRoleWorkspaces' src/js/pacificEducationSequentialRoleWorkspaces.js
+          echo "PASS: Pacedu activation, sequential routing, and #856 voice wiring are protected."
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
