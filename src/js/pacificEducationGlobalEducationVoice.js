@@ -9,6 +9,8 @@
   /* Readiness-gate compatibility marker: Australia English may be represented as en-AU or en_AU. */
   var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
 
+  var WELCOME_VOICE_TEXT = "Welcome to Pacific Education. Pacific Education was built on a simple belief: education should not stop when the world faces difficulties. During war, conflict, natural disasters, pandemics, emergencies, displacement, isolation, or other disruptions, learners can lose access to schools, teachers, and learning resources. Pacific Education was created to help keep learning moving forward. It is designed to assist students, teachers, parents, caregivers, schools, and communities across the Pacific and, with the right development and verification, support education globally. Through modern technology, Pacific Education aims to provide learning activities, assessments, progress support, accessibility, and educational assistance wherever learners may be. Technology should support teachers and communities—not replace them.";
+
   var GLOBAL_LINES = [
     {speaker:"1",text:"Welcome to Pacific Education."},
     {speaker:"1",text:"Pacific Education was built on a simple belief: education should not stop when the world faces difficulties."},
@@ -16,7 +18,7 @@
     {speaker:"1",text:"Pacific Education was created to help keep learning moving forward."},
     {speaker:"2",text:"It is designed to assist students, teachers, parents, caregivers, schools, and communities across the Pacific and, with the right development and verification, support education globally."},
     {speaker:"1",text:"Through modern technology, Pacific Education aims to provide learning activities, assessments, progress support, accessibility, and educational assistance wherever learners may be."},
-    {speaker:"2",text:"Technology should support teachers and communities, not replace them."},
+    {speaker:"2",text:"Technology should support teachers and communities—not replace them."},
     {speaker:"1",text:"Why was Pacific Education built?"},
     {speaker:"2",text:"Because education should remain possible even when distance, disasters, emergencies, conflict, or other challenges interrupt normal schooling."},
     {speaker:"1",text:"So is it only for the Pacific?"},
@@ -85,5 +87,5 @@
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){install();}); else {install();}
   window.addEventListener("load",install);
-  window.PacificEducationGlobalEducationVoice={version:"1.6.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:5000,lines:GLOBAL_LINES,play:play,addWelcomeIntroductionButton:addWelcomeIntroductionButton};
+  window.PacificEducationGlobalEducationVoice={version:"1.7.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:5000,welcomeText:WELCOME_VOICE_TEXT,lines:GLOBAL_LINES,play:play,addWelcomeIntroductionButton:addWelcomeIntroductionButton};
 })(window,document);
