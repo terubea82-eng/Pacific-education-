@@ -59,7 +59,8 @@
     community: ["pacificEducationWebsitePilotChecklist", "pacificEducationCoverageDashboard", "pacificGuardianCommentSection"],
     owner: ["systemStatus", "pacificEducationWebsitePilotChecklist", "pacificEducationProductionReleaseChecklist", "pacificEducationProductionReleaseEvidenceRegistry", "pacificEducationProductionReleaseEvidenceGate", "pacificEducationFinalProductionAuthorizationEvidenceRegistry", "publicationStatus", "pacificEducationOfflineSyncStatus", "pacificGuardianCommentSection"],
     "head-of-school": ["pacificEducationSchoolIdentitySection", "pacificEducationTeacherClassRoster", "pacificEducationExamCalendarSection", "pacificEducationCoverageDashboard"],
-    "institution-admin": ["pacificEducationInstitutionSetup", "pacificEducationInstitutionAdvice", "pacificEducationExamCalendarSection"]
+    "institution-admin": ["pacificEducationInstitutionSetup", "pacificEducationInstitutionAdvice", "pacificEducationExamCalendarSection"],
+    technician: ["systemStatus", "publicationStatus", "pacificEducationOfflineSyncStatus", "pacificEducationWebsitePilotChecklist"]
   };
 
   function countryOptionHtml(){return '<option value="">Select your country — required</option>'+COUNTRY_NAMES.map(function(x){return '<option value="'+x.code+'">'+x.name+'</option>';}).join("");}
@@ -101,7 +102,8 @@
       community: "Community / Partner",
       owner: "Owner / Control",
       "head-of-school": "Head of School",
-      "institution-admin": "Institution Administrator"
+      "institution-admin": "Institution Administrator",
+      technician: "Technician"
     };
     return map[role] || "User";
   }
@@ -363,6 +365,7 @@
       "<option value=\"owner\">Owner / Control</option>" +
       "<option value=\"head-of-school\">Head of School</option>" +
       "<option value=\"institution-admin\">Institution Administrator</option>" +
+      "<option value=\"technician\">Technician</option>" +
       "</select><br>" +
       "<button type=\"button\" id=\"singlePilotRegisterButton\" data-pacific-action=\"pilot-enter-workspace\" style=\"margin-top:12px;padding:11px 18px;border-radius:8px\">Enter Pilot Workspace</button>" +
       "<p id=\"singlePilotRegistrationStatus\" role=\"status\" aria-live=\"polite\">Select a role to begin. No other pilot workspace is exposed before entry.</p>" +
