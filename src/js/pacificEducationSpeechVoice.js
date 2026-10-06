@@ -206,7 +206,7 @@
   window.addEventListener("pageshow",function(){if(document.visibilityState!=="hidden")window.setTimeout(function(){resumeVoiceAfterReopen(false);},300);});
   document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")window.setTimeout(function(){resumeVoiceAfterReopen(false);},300);});
 
-  window.PacificEducationSpeech={getPlatform:function(){return platform;},getEngine:function(){if(window.PacificEducationNativeTTS&&typeof window.PacificEducationNativeTTS.speak==="function")return"native";if(window.speechSynthesis)return"web-speech";return"unavailable";},chooseVoice:chooseVoice,speakText:speakText,stopSpeech:stopSpeech,getSelectedVoice:function(){return selectedVoice;}};
+  window.PacificEducationSpeech={getPlatform:function(){return platform;},getEngine:function(){if(window.PacificEducationNativeTTS&&typeof window.PacificEducationNativeTTS.speak==="function")return"native";if(window.speechSynthesis)return"web-speech";return"unavailable";},chooseVoice:chooseVoice,speakText:speakText,speakConversation:speakConversation,stopSpeech:stopSpeech,getSelectedVoice:function(){return selectedVoice;}};
   window.speakText=speakText;
   if(window.speechSynthesis&&typeof window.speechSynthesis.addEventListener==="function")window.speechSynthesis.addEventListener("voiceschanged",retryPendingSpeech);
   bindVoiceButtons();
