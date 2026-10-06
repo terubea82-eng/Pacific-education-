@@ -1,0 +1,47 @@
+name: Activate Global Education Voice
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  activate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Hook global education voice into pilot page
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="src/index.html"
+          tag='<script src="js/pacificEducationGlobalEducationVoice.js?v=20261006-global-accessibility"></script>'
+          if ! grep -Fq 'pacificEducationGlobalEducationVoice.js' "$file"; then
+            python3 - <<'PY'
+from pathlib import Path
+p = Path('src/index.html')
+s = p.read_text(encoding='utf-8')
+tag = '<script src="js/pacificEducationGlobalEducationVoice.js?v=20261006-global-accessibility"></script>'
+if 'pacificEducationGlobalEducationVoice.js' not in s:
+    marker = '</body>'
+    if marker not in s:
+        raise SystemExit('Missing </body> marker')
+    s = s.replace(marker, tag + '\n' + marker, 1)
+    p.write_text(s, encoding='utf-8')
+PY
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -- "$file"; then
+            echo 'Global education voice hook already active.'
+            exit 0
+          fi
+          git add "$file"
+          git commit -m 'Hook global education accessibility AI voice into pilot'
+          git push
