@@ -455,6 +455,32 @@
         "</nav>" +
         '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Choose a tool above to continue.</p>';
 
+      var signout=document.createElement("section");
+      signout.id="pacificEducationWorkspaceSignOut";
+      signout.setAttribute("aria-label","Sign out");
+      signout.style.cssText="margin-top:24px;padding:16px;border-top:2px solid currentColor;";
+      signout.innerHTML='<h4>Finish this workspace session</h4><button type="button" id="pacificEducationSignOutButton" style="display:block;width:100%;max-width:520px;padding:14px 16px;font-size:1.05em;font-weight:700;border:2px solid currentColor;border-radius:8px;">🔴 Sign Out</button><div id="pacificEducationSignOutConfirm" hidden style="margin-top:12px;padding:12px;border:2px solid currentColor;border-radius:8px;"><p><strong>Are you sure you want to sign out?</strong> Saved pilot learning and evidence records will not be deleted.</p><button type="button" id="pacificEducationSignOutYes" style="margin-right:8px;padding:10px 14px;">✓ Confirm Sign Out</button><button type="button" id="pacificEducationSignOutNo" style="padding:10px 14px;">Cancel</button></div><p id="pacificEducationSignOutStatus" role="status" aria-live="polite">Sign Out is available at the bottom of this workspace.</p>';
+      workspace.appendChild(signout);
+      document.getElementById("pacificEducationSignOutButton").onclick=function(){
+        var box=document.getElementById("pacificEducationSignOutConfirm");
+        if(box) box.hidden=false;
+        if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function") window.PacificEducationSpeech.speakText("You selected Sign Out. Confirm Sign Out or Cancel.");
+      };
+      document.getElementById("pacificEducationSignOutNo").onclick=function(){
+        var box=document.getElementById("pacificEducationSignOutConfirm");
+        if(box) box.hidden=true;
+      };
+      document.getElementById("pacificEducationSignOutYes").onclick=function(){
+        try{sessionStorage.removeItem("pacificEducationPilotRegistration");sessionStorage.removeItem("pacificEducationPilotRole");sessionStorage.removeItem("pacificEducationActiveRole");}catch(e){}
+        var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
+        if(ws) ws.hidden=true;
+        var reg=document.getElementById("pacificEducationIdentityRegistration")||document.getElementById("userRegistrationForm");
+        if(reg){reg.hidden=false;try{reg.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){}}
+        var status=document.getElementById("pacificEducationSignOutStatus");
+        if(status) status.textContent="Signed out successfully. User Registration is ready for the next user.";
+        if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function") window.PacificEducationSpeech.speakText("You are signed out. User Registration is ready for the next user.");
+      };
+
       Array.prototype.forEach.call(workspace.querySelectorAll("[data-pilot-target]"), function(button) {
         button.addEventListener("click", function() {
           var id = button.getAttribute("data-pilot-target");
