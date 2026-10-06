@@ -68,7 +68,7 @@ function ensureCurriculumSpace(code,name){
   if(!code)return null;
   if(!curriculumSpaces[code]) curriculumSpaces[code]={
     countryCode:code,country:name||code,levels:[],subjects:[],terms:[],
-    dailyActivities:{},practice:{},assessments:{},status:"NOT_CONFIGURED",
+    dailyActivities:{},practice:{},assessments:{},currentAffairs:[],status:"NOT_CONFIGURED",
     sourceAuthority:"Requires country education authority validation",
     sourceStatus:"NOT_VALIDATED"
   };
@@ -98,7 +98,7 @@ function setCurriculumSpace(config){
   if(Array.isArray(config.terms))space.terms=cleanList(config.terms,[]);
   if(config.dailyActivities && typeof config.dailyActivities==="object")space.dailyActivities=clone(config.dailyActivities);
   if(config.practice && typeof config.practice==="object")space.practice=clone(config.practice);
-  if(config.assessments && typeof config.assessments==="object")space.assessments=clone(config.assessments);
+  if(config.assessments && typeof config.assessments==="object")space.assessments=clone(config.assessments); if(Array.isArray(config.currentAffairs))space.currentAffairs=clone(config.currentAffairs); persistCurriculumSpaces();
   return clone(space);
 }
 function linkRegisteredUserToCurriculum(user){
@@ -113,9 +113,48 @@ function linkRegisteredUserToCurriculum(user){
   }catch(e){}
   return {linked:true,countryCode:code,country:space.country,space:space};
 }
-function curriculumSpaceStatus(code){var s=getCurriculumSpace(code);return {countryCode:s.countryCode,country:s.country,status:s.status,sourceStatus:s.sourceStatus,levels:s.levels.length,subjects:s.subjects.length,terms:s.terms.length};}
+function curriculumSpaceStatus(code){var s=getCurriculumSpace(code);return {countryCode:s.countryCode,country:s.country,status:s.status,sourceStatus:s.sourceStatus,levels:s.levels.length,subjects:s.subjects.length,terms:s.terms.length,dailyActivities:Object.keys(s.dailyActivities||{}).length,currentAffairs:Array.isArray(s.currentAffairs)?s.currentAffairs.length:0};}
+function activityKey(q){
+ q=q||{}; return [String(q.countryCode||curriculumCountryCode()||"").toUpperCase(),String(q.classReference||q.classId||""),String(q.level||""),String(q.subjectId||q.subject||""),String(q.term||"Term 1"),String(q.dayNumber||q.day||1)].join("|");
+}
+function upsertDailyActivity(activity){
+ activity=activity||{}; var code=String(activity.countryCode||curriculumCountryCode()||"").trim().toUpperCase(); if(!code)return null;
+ var space=ensureCurriculumSpace(code,activity.country||code); var key=activity.key||activityKey(activity); var copy=clone(activity); copy.key=key; copy.updatedAt=new Date().toISOString();
+ space.dailyActivities=space.dailyActivities||{}; space.dailyActivities[key]=copy; persistCurriculumSpaces(); return clone(copy);
+}
+function getDailyActivity(query){
+ query=query||{}; var code=String(query.countryCode||curriculumCountryCode()||"").trim().toUpperCase(); if(!code)return null;
+ var space=ensureCurriculumSpace(code,code); var key=query.key||activityKey(query); var found=(space.dailyActivities||{})[key]; return found?clone(found):null;
+}
+function setRegisteredCurriculumLink(code){
+ code=String(code||"").trim().toUpperCase(); if(!code)return {linked:false,reason:"Country required"};
+ var space=ensureCurriculumSpace(code,code); if(code==="FJ"&&space.status==="NOT_CONFIGURED"){getCurriculumSpace(code);space=curriculumSpaces[code];}
+ try{localStorage.setItem("pacificEducationCurriculumCountryCode",code);localStorage.setItem("pacificEducationLinkedCurriculumCountryCode",code);localStorage.setItem("pacificEducationLinkedCurriculumCountry",space.country||code);localStorage.setItem("pacificEducationLinkedCurriculumSpaceVersion",CURRICULUM_SPACE_VERSION);}catch(e){}
+ persistCurriculumSpaces(); return {linked:true,countryCode:code,country:space.country||code,status:space.status,sourceStatus:space.sourceStatus};
+}
+function upsertEducationalCurrentAffair(item){
+ item=item||{}; var code=String(item.countryCode||curriculumCountryCode()||"").trim().toUpperCase(); if(!code)return null;
+ var space=ensureCurriculumSpace(code,item.country||code); space.currentAffairs=Array.isArray(space.currentAffairs)?space.currentAffairs:[]; var id=String(item.id||item.sourceId||"").trim();
+ if(!id)return null; var copy=clone(item); copy.id=id; copy.countryCode=code; copy.updatedAt=new Date().toISOString();
+ var idx=space.currentAffairs.findIndex(function(x){return String(x.id||"")===id;}); if(idx>=0)space.currentAffairs[idx]=copy; else space.currentAffairs.unshift(copy);
+ if(space.currentAffairs.length>100)space.currentAffairs=space.currentAffairs.slice(0,100); persistCurriculumSpaces(); return clone(copy);
+}
+function getDailyEducationalCurrentAffair(ctx){
+ ctx=ctx||{}; var code=String(ctx.countryCode||curriculumCountryCode()||"").trim().toUpperCase(); if(!code)return null; var space=ensureCurriculumSpace(code,code); var list=Array.isArray(space.currentAffairs)?space.currentAffairs:[];
+ var subject=String(ctx.subject||ctx.subjectId||"").trim().toLowerCase(); var level=String(ctx.level||"").trim().toLowerCase();
+ var candidates=list.filter(function(x){
+   if(String(x.verificationStatus||"").toLowerCase()==="rejected")return false;
+   if(x.approved===false)return false;
+   if(Array.isArray(x.subjectsApplicable)&&subject&&x.subjectsApplicable.length&&!x.subjectsApplicable.map(function(s){return String(s).toLowerCase();}).some(function(s){return s===subject;}))return false;
+   if(Array.isArray(x.levelsApplicable)&&level&&x.levelsApplicable.length&&!x.levelsApplicable.map(function(s){return String(s).toLowerCase();}).some(function(s){return s===level;}))return false;
+   return true;
+ });
+ return candidates.length?clone(candidates[0]):null;
+}
+function getCurrentAffairs(code){var s=getCurriculumSpace(code);return clone(Array.isArray(s.currentAffairs)?s.currentAffairs:[]);}
+
 window.PacificEducationCountryConfig={
- load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,getLegalLanguage:function(){return state.legalLanguage;},reset:reset,render:render,curriculumSpaceVersion:CURRICULUM_SPACE_VERSION,getCurriculumSpace:getCurriculumSpace,setCurriculumSpace:setCurriculumSpace,linkRegisteredUserToCurriculum:linkRegisteredUserToCurriculum,curriculumSpaceStatus:curriculumSpaceStatus,upsertDailyActivity:upsertDailyActivity,getDailyActivity:getDailyActivity,setRegisteredCurriculumLink:setRegisteredCurriculumLink,
+ load:load,getState:getState,getLevels:getLevels,getTerms:getTerms,getSubjects:getSubjects,getAcademicUnits:getAcademicUnits,getProgrammes:getProgrammes,getCourses:getCourses,getLegalLanguage:function(){return state.legalLanguage;},reset:reset,render:render,curriculumSpaceVersion:CURRICULUM_SPACE_VERSION,getCurriculumSpace:getCurriculumSpace,setCurriculumSpace:setCurriculumSpace,linkRegisteredUserToCurriculum:linkRegisteredUserToCurriculum,curriculumSpaceStatus:curriculumSpaceStatus,upsertDailyActivity:upsertDailyActivity,getDailyActivity:getDailyActivity,setRegisteredCurriculumLink:setRegisteredCurriculumLink,upsertEducationalCurrentAffair:upsertEducationalCurrentAffair,getDailyEducationalCurrentAffair:getDailyEducationalCurrentAffair,getCurrentAffairs:getCurrentAffairs,
  defaults:function(){return clone(defaults);}
 };
 restoreCurriculumSpaces();
