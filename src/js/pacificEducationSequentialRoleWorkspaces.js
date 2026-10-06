@@ -211,6 +211,7 @@
     var title=document.getElementById("peSequentialTitle");
     var progress=document.getElementById("peSequentialProgress");
     var page=document.getElementById("peSequentialPage");
+    var back=document.getElementById("peSequentialBack");
     var next=document.getElementById("peSequentialNext");
     restoreAllMovedTargets();
     var status=document.getElementById("peSequentialStatus");
