@@ -239,6 +239,53 @@
       next.textContent=index===sequence.length-1?"Finish":"➡️ Next";
       if(target){
         moveTargetIntoPage(target,page);
+
+        /*
+         * Student-facing key activity shortcuts.
+         * These shortcuts do not bypass registration, class, term or capability
+         * selection because they are rendered only inside the authorized
+         * sequential Daily Activities page.
+         */
+        if((role==="student" || role==="blind-learner" || role==="deaf-learner") && item[0]==="dailyLesson"){
+          var activityNav=document.createElement("div");
+          activityNav.id="peKeyLearningActivityShortcuts";
+          activityNav.setAttribute("aria-label","Key learning activities");
+          activityNav.style.cssText="margin:14px 0;padding:14px;border:2px solid currentColor;border-radius:10px;";
+          activityNav.innerHTML="<h3 style=\"margin-top:0\">Key Learning Activities</h3><p>Choose a key activity. Your existing class, term and learning pathway remain in control.</p>"+
+            "<div style=\"display:flex;gap:8px;flex-wrap:wrap\">"+
+            "<button type=\"button\" id=\"peEnglishActivityShortcut\">📘 English</button>"+
+            "<button type=\"button\" id=\"peMathematicsActivityShortcut\">➗ Mathematics</button>"+
+            "<button type=\"button\" id=\"pePhonicsActivityShortcut\">🔤 Phonics</button></div>"+
+            "<p id=\"peKeyLearningActivityStatus\" role=\"status\" aria-live=\"polite\"></p>";
+          page.insertBefore(activityNav,page.firstChild);
+          function selectSubject(subject){
+            var selector=window.PacificEducationSubjectSelector;
+            var ok=selector && typeof selector.setSubject==="function" ? selector.setSubject(subject) : false;
+            var status=document.getElementById("peKeyLearningActivityStatus");
+            if(status) status.textContent=ok ? subject+" selected. Today's Daily Activity is refreshing." : "Select an existing Class Reference before changing subject.";
+            if(ok){
+              speak(subject+" selected. Your Daily Activity is refreshing.");
+              if(typeof window.startDailyLesson==="function") window.startDailyLesson();
+              else if(typeof window.displayDailyLesson==="function") window.displayDailyLesson();
+            }
+          }
+          var english=document.getElementById("peEnglishActivityShortcut");
+          var math=document.getElementById("peMathematicsActivityShortcut");
+          var phonics=document.getElementById("pePhonicsActivityShortcut");
+          if(english) english.onclick=function(){selectSubject("English");};
+          if(math) math.onclick=function(){selectSubject("Mathematics");};
+          if(phonics) phonics.onclick=function(){
+            var status=document.getElementById("peKeyLearningActivityStatus");
+            var assessment=window.startPhonicsAssessment;
+            if(typeof assessment==="function"){
+              status.textContent="Opening the existing Phonics Assessment.";
+              speak("Opening Phonics Assessment.");
+              assessment();
+            }else if(status){
+              status.textContent="Phonics Assessment is not connected yet.";
+            }
+          };
+        }
       }else{
         var missing=document.createElement("div");
         missing.style.cssText="padding:16px;border:2px solid #b45309;border-radius:8px;";
