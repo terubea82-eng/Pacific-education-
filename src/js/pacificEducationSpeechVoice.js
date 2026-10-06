@@ -200,9 +200,7 @@
   function bindVoiceButtons(){
     var welcome=document.getElementById("pacificEducationWelcomeVoiceButton"),stop=document.getElementById("pacificEducationStopSpeechButton");
     if(welcome&&welcome.getAttribute("data-pe-welcome-voice-bound")!=="true"){
-      welcome.setAttribute("data-pe-welcome-voice-bound","true");welcome.addEventListener("click",function(event){if(event)event.preventDefault();speechUnlocked=true;resumeAttempted=false;speakConversation([
-        {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome you."},{speaker:"2",text:"Thank you. Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},{speaker:"1",text:"What is Pacific Education designed to do?"},{speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},{speaker:"1",text:"Why is that important across the Pacific?"},{speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},{speaker:"1",text:"What can learners do here?"},{speaker:"2",text:"Learn, discover, practise and grow with us."}
-      ]);return false;});
+      welcome.setAttribute("data-pe-welcome-voice-bound","true");welcome.addEventListener("click",function(event){if(event)event.preventDefault();speechUnlocked=true;resumeAttempted=false;speakConversation(welcomeConversation());return false;return false;});
     }
     if(stop&&stop.getAttribute("data-pe-stop-voice-bound")!=="true"){stop.setAttribute("data-pe-stop-voice-bound","true");stop.addEventListener("click",function(event){if(event)event.preventDefault();stopSpeech();return false;});}
   }
