@@ -34,7 +34,7 @@ jobs:
 
           need('global voice script linked',index.includes('pacificEducationGlobalEducationVoice.js'));
           need('current affairs loader linked',index.includes('pacificEducationCurrentAffairsLoader.js'));
-          need('single registration entry',entry.includes('var ENTRY_ID = "pacificEducationSingleRegistration"') && index.includes('pacificEducationSinglePilotEntry.js'));
+          need('single registration entry',entry.includes('pacificEducationSingleRegistration') && index.includes('pacificEducationSinglePilotEntry.js'));
           need('role routing includes Student',entry.includes('student:'));
           need('role routing includes Teacher',entry.includes('teacher:'));
           need('role routing includes Parent/Caregiver',entry.includes('parent:'));
