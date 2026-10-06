@@ -15,7 +15,7 @@
     {speaker:"1",text:"Why was Pacific Education built?"},
     {speaker:"2",text:"It was built to help learners learn, practise, receive guidance and track progress, while helping teachers and families support learning with accessible educational tools."},
     {speaker:"1",text:"Why use modern technology for education?"},
-    {speaker:"2",text:"Modern technology can extend access to learning, provide voice and accessibility support, connect educational resources, and help learning continue when circumstances make normal schooling difficult."},
+    {speaker:"2",text:"Modern technology can extend access to learning, provide voice and accessibility support, connect educational resources, and help learning continue during war, displacement, disability, poverty, or other circumstances that make normal schooling difficult, including when learning must continue offline-first."},
     {speaker:"1",text:"Was Pacific Education built only for the Pacific?"},
     {speaker:"2",text:"No. It began with a strong Pacific purpose, but its vision is global: to assist education beyond the Pacific while respecting each country's curriculum, language, culture, school system and local learning needs."},
     {speaker:"1",text:"Can it help when internet access is limited?"},
