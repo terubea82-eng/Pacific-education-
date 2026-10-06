@@ -71,16 +71,12 @@
         ].forEach(function(feature){ guard.activatePilotFeature(feature); });
       }
     });
-    safe(function(){
-      if(window.PacificEducation856BoxActivation &&
-         typeof window.PacificEducation856BoxActivation.activate==="function"){
-        window.PacificEducation856BoxActivation.activate();
-      }
-    });
+    /* #856 activation initializes itself from its existing protected module.
+       Do not call a private/non-exported function or create a second activation path. */
     safe(function(){
       if(window.PacificEducationInteractionRepair &&
-         typeof window.PacificEducationInteractionRepair.repairAll==="function"){
-        window.PacificEducationInteractionRepair.repairAll();
+         typeof window.PacificEducationInteractionRepair.repair==="function"){
+        window.PacificEducationInteractionRepair.repair();
       }
     });
     protect();
