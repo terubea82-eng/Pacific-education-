@@ -132,7 +132,7 @@
         } catch (ignoreAdaptive) {}
 
         var reviewPath = "No teacher review recorded yet";
-        try { var rr = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null"); if (rr && String(rr.classId || "") === String(classContext.classId)) reviewPath = rr.status === "approved" ? "Approved — continue learning" : "Needs more practice"; } catch(ignoreReview) {}
+        try { var rr = JSON.parse(localStorage.getItem("pacificEducationAdaptiveLastReview") || "null"); if (rr && String(rr.classId || "") === String(classContext.classId) && String(rr.studentId || "") === String(studentId)) reviewPath = rr.status === "approved" ? "Approved — continue learning" : "Needs more practice"; } catch(ignoreReview) {}
 
         var currentDay = 1;
         try {
