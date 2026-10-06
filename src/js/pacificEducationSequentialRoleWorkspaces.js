@@ -212,6 +212,8 @@
       title.textContent=(role==="student"?"Student":role==="blind-learner"?"Blind Learner":role==="deaf-learner"?"Deaf Learner":role.replace(/-/g," "))+" Workspace — "+item[1];
       progress.textContent="Step "+(index+1)+" of "+sequence.length;
       status.textContent="";
+      back.disabled=index===0;
+      back.setAttribute("aria-label",index===0?"Back unavailable on first workspace page":"Back to "+(sequence[index-1] ? sequence[index-1][1] : "previous page"));
       next.textContent=index===sequence.length-1?"Finish":"➡️ Next";
       if(target){
         moveTargetIntoPage(target,page);
@@ -221,9 +223,22 @@
         placeholder.innerHTML="<strong>"+item[1]+"</strong><p>This eligible workspace page is ready for the next connected pilot feature.</p>";
         page.appendChild(placeholder);
       }
-      try{ shell.focus(); }catch(e){}
+      try{
+        var focusTitle=document.getElementById("peSequentialTitle");
+        if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus();}
+        else shell.focus();
+      }catch(e){}
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this page, then press Next.");
     }
+
+    back.onclick=function(){
+      if(index>0){
+        index--;
+        renderPage();
+        status.textContent="Returned to the previous workspace page.";
+        speak("Back. Returning to the previous page. "+sequence[index][1]+".");
+      }
+    };
 
     next.onclick=function(){
       if(index<sequence.length-1){
