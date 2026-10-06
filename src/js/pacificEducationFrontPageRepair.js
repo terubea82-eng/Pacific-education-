@@ -6,10 +6,11 @@
   var VERSION="1.5.3";
   var flow=[
     ["welcomeNextButton",1,"pacificEducationIdentityRegistration"],
-    ["registrationNextButton",2,"levelSelection"],
-    ["levelNextButton",3,"subjectSelection"],
-    ["subjectNextButton",4,"termSelection"],
-    ["termNextButton",5,"capabilitySelection"]
+    ["registrationNextButton",2,"prototypeAccess"],
+    ["prototypeNextButton",3,"levelSelection"],
+    ["levelNextButton",4,"subjectSelection"],
+    ["subjectNextButton",5,"termSelection"],
+    ["termNextButton",6,"capabilitySelection"]
   ];
   var targetById={
     userRegistrationOpenButton:"pacificEducationIdentityRegistration",
@@ -97,7 +98,7 @@
     if(id==="userRegistrationOpenButton" || /user registration/.test(label) || /^users?$/.test(label)){
       event.preventDefault();event.stopImmediatePropagation();openRegistration();return;
     }
-    if(id==="levelNextButton"){
+    if(id==="prototypeNextButton" || id==="levelNextButton"){
       var roster=window.PacificEducationTeacherClassRosterContext;
       var classId=roster&&typeof roster.getClassId==="function"?String(roster.getClassId()||"").trim():"";
       if(!classId){
