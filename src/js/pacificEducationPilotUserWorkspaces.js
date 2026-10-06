@@ -497,6 +497,33 @@
       signout.setAttribute("aria-label","Sign out");
       signout.style.cssText="margin-top:24px;padding:16px;border-top:2px solid currentColor;";
       signout.innerHTML='<h4>Finish this workspace session</h4><button type="button" id="pacificEducationSignOutButton" style="display:block;width:100%;max-width:520px;padding:14px 16px;font-size:1.05em;font-weight:700;border:2px solid currentColor;border-radius:8px;">🔴 Sign Out</button><div id="pacificEducationSignOutConfirm" hidden style="margin-top:12px;padding:12px;border:2px solid currentColor;border-radius:8px;"><p><strong>Are you sure you want to sign out?</strong> Saved pilot learning and evidence records will not be deleted.</p><button type="button" id="pacificEducationSignOutYes" style="margin-right:8px;padding:10px 14px;">✓ Confirm Sign Out</button><button type="button" id="pacificEducationSignOutNo" style="padding:10px 14px;">Cancel</button></div><p id="pacificEducationSignOutStatus" role="status" aria-live="polite">Sign Out is available at the bottom of this workspace.</p>';
+      var liveStatus=document.createElement("section");
+      liveStatus.id="pacificEducationWorkspaceLiveStatus";
+      liveStatus.setAttribute("aria-label","Live pilot status");
+      liveStatus.style.cssText="margin-top:18px;padding:16px;border:2px solid currentColor;border-radius:8px;";
+      liveStatus.innerHTML='<h4>🔴 Live Status</h4><p id="peLiveConnection"><strong>Connection:</strong> checking…</p><p id="peLiveSync"><strong>Offline/Sync:</strong> device status only; saved pilot records remain available offline.</p><p id="peLiveMessages"><strong>Messages:</strong> checking…</p><p id="peLiveVoice"><strong>Voice:</strong> checking…</p><p id="peLiveCurriculum"><strong>Curriculum:</strong> '+esc(linkedCurriculum && linkedCurriculum.country ? linkedCurriculum.country : "Registration country required")+'</p><p id="peLivePilot"><strong>Pilot:</strong> Controlled pilot — not production.</p><button type="button" id="peLiveRefresh" style="padding:10px 14px;">↻ Refresh Live Status</button><p id="peLiveStatus" role="status" aria-live="polite">Live status ready.</p></section>';
+      workspace.appendChild(liveStatus);
+      function refreshLiveStatus(){
+        var online=navigator.onLine;
+        var conn=document.getElementById("peLiveConnection");
+        var sync=document.getElementById("peLiveSync");
+        var msgs=document.getElementById("peLiveMessages");
+        var voice=document.getElementById("peLiveVoice");
+        var curriculum=document.getElementById("peLiveCurriculum");
+        if(conn) conn.innerHTML="<strong>Connection:</strong> "+(online?"🟢 Online":"⚫ Offline — learning can continue offline");
+        if(sync) sync.innerHTML="<strong>Offline/Sync:</strong> "+(online?"Online connection available; server sync status is not claimed by this device indicator.":"Offline mode active; records remain on the device until connectivity returns.");
+        var count=0;
+        try{var raw=localStorage.getItem("pacificEducationPilotMailbox");if(raw){var parsed=JSON.parse(raw);count=Array.isArray(parsed)?parsed.length:(parsed&&Array.isArray(parsed.messages)?parsed.messages.length:0);}}catch(e){}
+        if(msgs) msgs.innerHTML="<strong>Messages:</strong> "+count+" stored pilot message"+(count===1?"":"s");
+        var voiceReady=!!(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function");
+        if(voice) voice.innerHTML="<strong>Voice:</strong> "+(voiceReady?"🟢 Pacific Education speech controller available":"🟠 Voice controller not currently available");
+        if(curriculum) curriculum.innerHTML="<strong>Curriculum:</strong> "+esc(linkedCurriculum&&linkedCurriculum.country?linkedCurriculum.country:"Registration country required");
+      }
+      document.getElementById("peLiveRefresh").onclick=function(){refreshLiveStatus();var s=document.getElementById("peLiveStatus");if(s)s.textContent="Live status refreshed.";if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText("Live status refreshed. Connection, offline status, messages, voice and curriculum context are shown.");};
+      window.addEventListener("online",refreshLiveStatus);
+      window.addEventListener("offline",refreshLiveStatus);
+      refreshLiveStatus();
+
       var workspaceExtras=document.createElement("section");
       workspaceExtras.id="pacificEducationWorkspaceExtras";
       workspaceExtras.style.cssText="margin-top:18px;padding:16px;border:1px solid currentColor;border-radius:8px;";
