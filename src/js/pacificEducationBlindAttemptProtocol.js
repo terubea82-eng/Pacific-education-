@@ -135,7 +135,6 @@
       announce("The submission could not be completed. Your confirmed answer remains in the blind-attempt audit record.");
       setBusy(false); return;
     }
-    window.__pacificEducationVerifiedVoiceAttempt=false;
     setTimeout(function(){
       announce("Your answer has been submitted. Teacher review is required before it is treated as verified.");
     },500);
