@@ -97,7 +97,7 @@
     var recorder = window.PacificEducationDailyProgressRecorder;
     if (recorder && typeof recorder.record === "function") {
       try {
-        var hasKey = ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "";
+        var hasKey = !window.__pacificEducationVerifiedVoiceAttempt && ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "";
         var score = hasKey ? (String(response || "").trim().toLowerCase() === String(ctx.answerKey).trim().toLowerCase() ? 100 : 0) : null;
         recorder.record({
           status: hasKey ? "assessed" : "practised",
@@ -148,10 +148,12 @@
 
   function complete(type, response) {
     var ctx = active.context;
+    var verifiedVoice = !!window.__pacificEducationVerifiedVoiceAttempt;
     readAudio(function(audio) {
+      if (verifiedVoice) { try { window.__pacificEducationVerifiedVoiceAttempt = false; } catch (e) {} }
       save(type, response, audio, ctx);
       resetTemporaryAnswerState();
-      var status = ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review";
+      var status = verifiedVoice ? "pending-teacher-review" : (ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review");
       var panel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
       var completion = '<div class="activity"><h3>' + escape(LABELS[type]) + ' complete</h3><p>Your answer and the curriculum question have been recorded.</p>' +
         '<p><strong>Review:</strong> ' + escape(status) + '</p>' +
