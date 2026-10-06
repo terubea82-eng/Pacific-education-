@@ -154,18 +154,7 @@
     next();return true;
   }
 
-  function welcomeConversation(){return[
-    {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome you."},
-    {speaker:"2",text:"Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},
-    {speaker:"1",text:"What is Pacific Education designed to do?"},
-    {speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},
-    {speaker:"1",text:"Why is that important across the Pacific?"},
-    {speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},
-    {speaker:"1",text:"What can learners do here?"},
-    {speaker:"2",text:"Learn, discover, practise and grow with us."}
-  ];}
-
-  function resumeVoiceAfterReopen(fromInteraction){
+  function welcomeConversation(){\n    if(window.PacificEducationGlobalEducationVoice && Array.isArray(window.PacificEducationGlobalEducationVoice.lines) && window.PacificEducationGlobalEducationVoice.lines.length){\n      return window.PacificEducationGlobalEducationVoice.lines;\n    }\n    return[\n    {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome you."},\n    {speaker:"2",text:"Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},\n    {speaker:"1",text:"What is Pacific Education designed to do?"},\n    {speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},\n    {speaker:"1",text:"Why is that important across the Pacific?"},\n    {speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},\n    {speaker:"1",text:"What can learners do here?"},\n    {speaker:"2",text:"Learn, discover, practise and grow with us."}\n  ];\n  }\n\n  function resumeVoiceAfterReopen(fromInteraction){
     var saved=loadPersistedConversation();if(!saved||!saved.lines||!saved.lines.length)return false;
     if(resumeAttempted&&!fromInteraction)return true;
     resumeAttempted=true;
