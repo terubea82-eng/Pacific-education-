@@ -6,6 +6,7 @@
 
   var roles = [
     { id:"blind-learner", title:"Blind Learner", access:"Dedicated accessible learning workspace with voice-first Daily Activities, pronunciation and spelling guidance, and assessment-response protection", actions:["Open Voice-Guided Learning","Speak Answer","Spell / Clarify Word","Read Question and Choices","View Progress","Help"] },
+    { id:"deaf-learner", title:"Deaf Learner", access:"Dedicated visual-first accessible learning workspace with captions, sign-language preferences, text instructions and visual notifications", actions:["Open Deaf Learner Guide","Choose Sign Language","Read Captions","Open Visual Daily Activity","Write Answer","View Progress","Help"] },
     { id:"student", title:"Student", access:"Learning, Daily Activities Days 1–365, assessments, plus separate Weekend & Holiday Supplementary Activities", actions:["Open daily activity","Practice","View my progress","Open weekend/holiday assignment"] },
     { id:"teacher", title:"Teacher", access:"Full Daily Activities Days 1–365, Weekend & Holiday Assignments, class, assessment and learner support tools", actions:["Open daily activity","Open weekend/holiday assignment","Class dashboard","Support student/parent"] },
     { id:"head-of-school", title:"Head of School", access:"School identity and registration control plus read-only oversight of all teacher-created class lists", actions:["Register school","View all class lists","Review school-wide class coverage"] },
@@ -203,6 +204,9 @@
           "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments","pacificEducationCoverageDashboard",
           "pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
         ],
+        "deaf-learner": [
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","pacificEducationSchoolIdentitySection","studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments","pacificEducationCoverageDashboard","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
+        ],
         student: [
           "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","pacificEducationSchoolIdentitySection",
           "studentProgressDashboard","dailyLesson","pacificEducationHomeSubmission","assessments","pacificEducationCoverageDashboard",
@@ -372,6 +376,9 @@
           ["pacificEducationHomeSubmission","9. Home Continuity"],
           ["pacificEducationWeekendHolidaySupplementaryActivities","10. Weekend & Holiday Activities"],
           ["blindLearnerHelp","11. Accessibility Help"]
+        ],
+        "deaf-learner": [
+          ["deafLearnerRegistrationGuide","1. Deaf Learner Registration & Accessibility Guide"],["deafLearnerAccessibility","2. Accessibility Preferences"],["levelSelection","3. My Assigned Class / Level"],["subjectSelection","4. Subject"],["termSelection","5. Term"],["dailyLesson","6. Visual Daily Activities"],["dailyLessonPracticeStage","7. Practice — Text / Visual Support"],["assessments","8. Assessments — Original Response Protected"],["pacificEducationStudentProgressDashboard","9. My Progress"],["pacificEducationWeekendHolidaySupplementaryActivities","10. Weekend & Holiday Activities"],["deafLearnerHelp","11. Deaf Learner Help"]
         ],
         student: [
           ["studentStartLearning","1. Start Learning"],
