@@ -5,6 +5,9 @@
 (function(window, document){
   "use strict";
 
+  var AUSTRALIA_ENGLISH = "en-AU";
+  var WELCOME_DELAY_MS = 5000;
+
   var GLOBAL_LINES = [
     {speaker:"1",text:"Welcome to Pacific Education. Education belongs to every learner, everywhere in the world."},
     {speaker:"2",text:"Our purpose is to help make learning accessible and meaningful for children, young people, teachers, parents and communities, regardless of where they live or what challenges they face."},
@@ -27,6 +30,16 @@
     return false;
   }
 
+  function scheduleWelcome(){
+    window.setTimeout(function(){
+      var active=document.getElementById("pacificEducationWelcome");
+      if(active && !active.hidden && !window.__pacificEducationWelcomePlayed){
+        window.__pacificEducationWelcomePlayed=true;
+        play();
+      }
+    },WELCOME_DELAY_MS);
+  }
+
   function install(){
     var button=document.getElementById("pacificEducationAIPlaybackButton");
     if(button && button.getAttribute("data-pe-global-play-bound")!=="true"){
@@ -43,7 +56,7 @@
     }
   }
 
-  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",install); else install();
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",function(){install();scheduleWelcome();}); else {install();scheduleWelcome();}
   window.addEventListener("load",install);
-  window.PacificEducationGlobalEducationVoice={version:"1.2.0",lines:GLOBAL_LINES,play:play};
+  window.PacificEducationGlobalEducationVoice={version:"1.3.0",locale:AUSTRALIA_ENGLISH,welcomeDelayMs:WELCOME_DELAY_MS,lines:GLOBAL_LINES,play:play};
 })(window,document);
