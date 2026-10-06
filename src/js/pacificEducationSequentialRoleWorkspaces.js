@@ -202,7 +202,7 @@
     if(old) old.remove();
 
     var shell=document.createElement("section");
-    shell.id="pacificEducationSequentialRoleWorkspace";
+    shell.id="pacificEducationSequentialRoleWorkspace"; shell.setAttribute("data-pe-role",role);
     shell.setAttribute("aria-label","Sequential "+role+" workspace");
     shell.style.cssText="margin:0;padding:20px;border:3px solid #15803d;border-radius:10px;";
     shell.innerHTML="<h2 id=\"peSequentialTitle\"></h2><p id=\"peSequentialProgress\" role=\"status\" aria-live=\"polite\"></p><div id=\"peSequentialPage\" tabindex=\"-1\"></div><div style=\"margin-top:18px;display:flex;justify-content:flex-start;gap:10px;flex-wrap:wrap;\"><button type=\"button\" id=\"peSequentialBack\" style=\"background:#fff;padding:14px 20px;font-weight:700;border-radius:8px;\">⬅️ Back</button><button type=\"button\" id=\"peSequentialNext\" style=\"background:#15803d;color:#fff;padding:14px 20px;font-weight:700;border-radius:8px;\">➡️ Next</button></div><p id=\"peSequentialStatus\" role=\"status\" aria-live=\"polite\"></p><div id=\"peSequentialSignOut\" style=\"margin-top:28px;padding-top:18px;border-top:2px solid currentColor;\"><button type=\"button\" id=\"peSequentialSignOutButton\" style=\"padding:13px 18px;font-weight:700;\">🔴 Sign Out</button><div id=\"peSequentialSignOutConfirm\" hidden style=\"margin-top:10px;padding:12px;border:2px solid currentColor;\"><p>Are you sure you want to sign out?</p><button type=\"button\" id=\"peSequentialSignOutYes\">✓ Confirm Sign Out</button> <button type=\"button\" id=\"peSequentialSignOutNo\">Cancel</button></div></div>";
@@ -319,14 +319,14 @@
         var chosen=select.value||getRole();
         var registered=false;
         try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-        if(registered && chosen && ROLE_SEQUENCES[chosen]) setTimeout(function(){build(chosen);},0);
+        if(registered && chosen && ROLE_SEQUENCES[chosen]) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen); },0);
       },true);
     });
     var role=getRole();
     if(!role){try{role=sessionStorage.getItem("pacificEducationPilotRole")||"";}catch(e){}}
     var registeredNow=false;
     try{registeredNow=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-    if(role && registeredNow && ROLE_SEQUENCES[role]) setTimeout(function(){build(role);},100);
+    if(role && registeredNow && ROLE_SEQUENCES[role]) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(role); },100);
 
     ["singlePilotRegisterButton","pilotRegistrationSaveButton"].forEach(function(id){
       var button=document.getElementById(id);
@@ -336,7 +336,7 @@
         setTimeout(function(){
           var registered=false, chosen=getRole();
           try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-          if(registered && chosen && ROLE_SEQUENCES[chosen]) build(chosen);
+          if(registered && chosen && ROLE_SEQUENCES[chosen] && !document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen);
         },0);
       },false);
     });
