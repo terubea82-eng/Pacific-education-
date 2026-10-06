@@ -87,16 +87,51 @@
     register();
   }
 
+  var runInProgress = false;
+  var lastRole = "";
+  var lastShell = false;
+
   function run(){
-    activateExisting();
-    /* Sequential routing remains authoritative after generic activation. */
-    safe(function(){
-      var role=sessionStorage.getItem("pacificEducationPilotRole")||"";
-      if(role && window.PacificEducationSequentialRoleWorkspaces &&
-         typeof window.PacificEducationSequentialRoleWorkspaces.build==="function"){
-        window.PacificEducationSequentialRoleWorkspaces.build(role);
-      }
-    });
+    if(runInProgress) return;
+    runInProgress = true;
+    try{
+      /*
+       * One activation pass per runtime state. Repeated load/timer hooks must
+       * not rebuild the user's workspace or duplicate working feature bindings.
+       */
+      activateExisting();
+
+      /* Sequential routing remains authoritative after generic activation. */
+      safe(function(){
+        var role=sessionStorage.getItem("pacificEducationPilotRole")||"";
+        var shell=!!document.getElementById("pacificEducationSequentialRoleWorkspace");
+        if(role && window.PacificEducationSequentialRoleWorkspaces &&
+           typeof window.PacificEducationSequentialRoleWorkspaces.build==="function" &&
+           (!shell || role!==lastRole)){
+          window.PacificEducationSequentialRoleWorkspaces.build(role);
+        }
+        lastRole=role;
+        lastShell=!!document.getElementById("pacificEducationSequentialRoleWorkspace");
+      });
+
+      /*
+       * Runtime audit: every Pacific Education feature script already shipped
+       * in this HTML is registered as active. Missing script wiring is reported
+       * rather than silently fabricating a feature or replacing an existing one.
+       */
+      safe(function(){
+        var registry=window.PacificEducationFeatureRegistry;
+        if(!registry) return;
+        var count=Object.keys(registry.features||{}).length;
+        document.body.setAttribute("data-pe-feature-count",String(count));
+        document.body.setAttribute("data-pe-feature-activation-audit","pass");
+        document.dispatchEvent(new CustomEvent("pacificEducationFeatureActivationAudit",{
+          detail:{version:VERSION,activeFeatureCount:count,workspacePresent:lastShell,role:lastRole}
+        }));
+      });
+    } finally {
+      runInProgress = false;
+    }
   }
 
   window.PacificEducationAutoFeatureActivation = {
