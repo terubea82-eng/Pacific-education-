@@ -591,7 +591,7 @@
       select.value = savedRole;
     }
     renderRole(select.value);
-    window.PacificEducationPilotUserWorkspaces = { roles: roles, render: render };
+    window.PacificEducationPilotUserWorkspaces = { roles: roles, render: render, ensureWeekendHolidaySupplementarySection: ensureWeekendHolidaySupplementarySection, refreshWeekendHolidaySupplementaryStatus: refreshWeekendHolidaySupplementaryStatus };
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", render);
