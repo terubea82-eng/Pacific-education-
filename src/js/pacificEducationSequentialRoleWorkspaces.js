@@ -115,7 +115,7 @@
   };
 
   var LEARNER_ROLES = {"student":1,"blind-learner":1,"deaf-learner":1};
-  var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
+  var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};\n  var movedTargets = [];
 
   function speak(text){
     if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function"){
