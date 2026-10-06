@@ -76,7 +76,7 @@
     if(!selected){status("Please choose your user role before continuing.");return false;}
     if(!display){status("Please enter your name or display name before continuing.");if(name)name.focus();return false;}
     try{sessionStorage.setItem("pacificEducationPilotRegistration",JSON.stringify({name:display,role:selected,registeredAt:new Date().toISOString(),pilotOnly:true}));}catch(_){ }
-    var map={"Student":"student","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
+    var map={"Student":"student","Blind Learner":"blind-learner","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
     var workspaceRole=map[selected], selector=document.getElementById("pilotRoleSelector");
     if(selector&&workspaceRole){selector.value=workspaceRole;selector.dispatchEvent(new Event("change",{bubbles:true}));}
     document.body.classList.remove("pe-guided-flow");document.body.removeAttribute("data-pe-flow-step");
