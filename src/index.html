@@ -338,7 +338,7 @@ git status</pre>
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
         status.textContent="Pilot registration saved for "+r+". Opening the "+r+" workspace.";
-        var workspaceRoleMap={"Student":"student","Blind Learner":"blind-learner","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
+        var workspaceRoleMap={"Student":"student","Blind Learner":"blind-learner","Deaf Learner":"deaf-learner","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
         var workspaceRole=workspaceRoleMap[r]||"";
         var workspaceSelector=document.getElementById("pilotRoleSelector");
         if(workspaceSelector&&workspaceRole){
