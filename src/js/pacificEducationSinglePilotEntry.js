@@ -345,6 +345,10 @@
       "</div>" +
       "<p><strong>Welcome.</strong> Choose your pilot role below. Your role determines which learning, review and dashboard tools are shown.</p>" +
       "<p><strong>Curriculum:</strong> Your registered country automatically links your workspace to that country curriculum space. Daily Activities, Practice and Assessments are delivered from the linked curriculum space after registration.</p>" +
+      "<label for=\"singlePilotCountry\"><strong>Country — required</strong></label><br>" +
+      "<select id=\"singlePilotCountry\" required style=\"width:100%;max-width:620px;padding:12px;margin-top:7px;border-radius:8px\">" + countryOptionHtml() + "</select><br>" +
+      "<label for=\"singlePilotLanguage\"><strong>Interface / learning language</strong></label><br>" +
+      "<select id=\"singlePilotLanguage\" style=\"width:100%;max-width:620px;padding:12px;margin-top:7px;border-radius:8px\">" + languageOptionHtml() + "</select><br>" +
       "<label for=\"singlePilotRole\"><strong>Who are you testing as?</strong></label><br>" +
       "<select id=\"singlePilotRole\" style=\"width:100%;max-width:620px;padding:12px;margin-top:7px;border-radius:8px\">" +
       "<option value=\"\">Select pilot role</option>" +
@@ -367,8 +371,10 @@
 
     document.getElementById("singlePilotRegisterButton").onclick = function () {
       var role = document.getElementById("singlePilotRole").value;
-      var country = document.getElementById("singlePilotCountry").value;
+      var countrySelect = document.getElementById("singlePilotCountry");
+      var country = countrySelect ? countrySelect.value : "";
       var curriculumStatus=document.getElementById("singlePilotCurriculumStatus");
+      var status = document.getElementById("singlePilotRegistrationStatus");
       if(!country){
         status.textContent = "Country is required before registration can be completed.";
         if(curriculumStatus) curriculumStatus.textContent="Curriculum: country selection is required."; 
@@ -377,7 +383,6 @@
       if(curriculumStatus) curriculumStatus.textContent="Curriculum: registration will be locked to " + countryName(country) + ". Other country curriculum pathways will not be shown in this user workspace.";
       var languageSelect = document.getElementById("singlePilotLanguage");
       var language = languageSelect ? languageSelect.value : "English";
-      var status = document.getElementById("singlePilotRegistrationStatus");
       if (!role) {
         status.textContent = "Please select your user type.";
         return;
