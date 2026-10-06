@@ -1,0 +1,65 @@
+name: Pacific Education Feature Preservation Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  feature-preservation:
+    name: Verify protected Pacedu features
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify protected files
+        shell: bash
+        run: |
+          set -euo pipefail
+          manifest=".github/pacedu-protected-features.json"
+          test -f "$manifest" || { echo "Missing protected feature manifest"; exit 1; }
+          python3 - <<'PY'
+          import json, pathlib, sys
+          m=json.loads(pathlib.Path(".github/pacedu-protected-features.json").read_text())
+          missing=[p for p in m["protected_files"] if not pathlib.Path(p).is_file()]
+          if missing:
+              print("PROTECTED PACEDU FEATURES MISSING:")
+              print("\n".join(" - "+p for p in missing))
+              sys.exit(1)
+          print(f"PASS: {len(m['protected_files'])} protected Pacedu files are present.")
+          PY
+
+      - name: Verify protected voice/runtime markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "PacificEducationSpeech" src/js/pacificEducationSpeechVoice.js
+          grep -q "PacificEducationSequentialRoleWorkspaces" src/js/pacificEducationSequentialRoleWorkspaces.js
+          grep -q "PacificEducationAutoFeatureActivation" src/js/pacificEducationAutoFeatureActivation.js
+          grep -q "pacificEducationSpeechVoice.js" src/index.html
+          grep -q "pacificEducationSequentialRoleWorkspaces.js" src/index.html
+          grep -q "pacificEducationAutoFeatureActivation.js" src/index.html
+          echo "PASS: protected runtime markers and script connections are present."
+
+      - name: Verify protected finance controls remain hidden in source
+        shell: bash
+        run: |
+          set -euo pipefail
+          for id in buyPlans pacificEducationPaymentLinksAlways pacificEducationInstitutionFees pacificEducationUniversityFeeWorkflow pacificEducationAccessEntitlement; do
+            grep -q "$id" src/index.html
+          done
+          echo "PASS: protected pilot finance/production controls remain guarded."
+
+      - name: Verify #856 voice controller remains referenced
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "pacificEducationSpeechVoice.js" src/index.html
+          grep -q "PacificEducationSpeech" src/js/pacificEducationMandatoryVoiceNavigation.js
+          echo "PASS: #856 voice controller remains connected."
