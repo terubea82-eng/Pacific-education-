@@ -67,10 +67,12 @@ function ensureCurriculumSpace(code,name){
   code=String(code||"").trim().toUpperCase();
   if(!code)return null;
   if(!curriculumSpaces[code]) curriculumSpaces[code]={
-    countryCode:code,country:name||code,levels:[],subjects:[],terms:[],
-    dailyActivities:{},practice:{},assessments:{},currentAffairs:[],status:"NOT_CONFIGURED",
-    sourceAuthority:"Requires country education authority validation",
-    sourceStatus:"NOT_VALIDATED"
+    countryCode:code,country:name||code,levels:DEFAULT_LEVELS.slice(),subjects:DEFAULT_SUBJECTS.slice(),terms:DEFAULT_TERMS.slice(),
+    dailyActivities:{},practice:{},assessments:{},currentAffairs:[],status:"PILOT_FRAMEWORK_PENDING_AUTHORITY_VALIDATION",
+    sourceAuthority:"Country education authority required for official curriculum validation",
+    sourceStatus:"PILOT_FRAMEWORK_ONLY_NOT_OFFICIAL",
+    curriculumProfile:"COUNTRY_SPECIFIC_CURRICULUM_REQUIRED",
+    curriculumNote:"The pilot framework provides a functional Class 1–13 subject/day structure only. It does not claim to reproduce the registered country’s official curriculum until an authorised country curriculum source is loaded and verified."
   };
   return curriculumSpaces[code];
 }
@@ -144,7 +146,6 @@ function getDailyEducationalCurrentAffair(ctx){
  var subject=String(ctx.subject||ctx.subjectId||"").trim().toLowerCase(); var level=String(ctx.level||"").trim().toLowerCase();
  var candidates=list.filter(function(x){
    if(String(x.verificationStatus||"").toLowerCase()==="rejected")return false;
-   if(x.approved===false)return false;
    if(Array.isArray(x.subjectsApplicable)&&subject&&x.subjectsApplicable.length&&!x.subjectsApplicable.map(function(s){return String(s).toLowerCase();}).some(function(s){return s===subject;}))return false;
    if(Array.isArray(x.levelsApplicable)&&level&&x.levelsApplicable.length&&!x.levelsApplicable.map(function(s){return String(s).toLowerCase();}).some(function(s){return s===level;}))return false;
    return true;
