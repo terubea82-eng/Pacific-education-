@@ -74,6 +74,24 @@
       l.addEventListener("change",function(){saveContext();announceSelection("language");});
       l.addEventListener("input",function(){saveContext();});
     }
+    var save=document.getElementById("pilotRegistrationSaveButton");
+    if(save && save.getAttribute("data-pe-context-registration-bound")!=="true"){
+      save.setAttribute("data-pe-context-registration-bound","true");
+      save.addEventListener("click",function(e){
+        var v=validate();
+        if(!v.valid){
+          if(e){e.preventDefault();e.stopImmediatePropagation();}
+          var cs=document.getElementById("pacificEducationCountryStatus");
+          var ls=document.getElementById("pacificEducationLanguageStatus");
+          if(!v.countryCode && cs)cs.textContent="⚠ Choose your country before completing registration.";
+          if(!v.languageCode && ls)ls.textContent="⚠ Choose your language before completing registration.";
+          announce("Please choose your country and language before completing user registration.");
+          return false;
+        }
+        saveContext();
+        return true;
+      },true);
+    }
     return true;
   }
   function init(){
