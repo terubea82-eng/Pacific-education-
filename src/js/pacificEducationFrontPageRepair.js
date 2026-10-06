@@ -77,7 +77,17 @@
     if(!display){status("Please enter your name or display name before continuing.");if(name)name.focus();return false;}
     try{sessionStorage.setItem("pacificEducationPilotRegistration",JSON.stringify({name:display,role:selected,registeredAt:new Date().toISOString(),pilotOnly:true}));}catch(_){ }
     var map={"Student":"student","Blind Learner":"blind-learner","Deaf Learner":"deaf-learner","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
-    var workspaceRole=map[selected], selector=document.getElementById("pilotRoleSelector");
+    var workspaceRole=map[selected];
+    /* Mandatory registration-to-workspace handoff: persist the approved pilot role so
+       the sequential workspace controller can activate the exact selected workspace. */
+    try{
+      sessionStorage.setItem("pacificEducationPilotRole",workspaceRole||"");
+      sessionStorage.setItem("pacificEducationActiveRole",workspaceRole||"");
+      sessionStorage.setItem("pilotRegistrationRole",selected);
+      sessionStorage.setItem("pilotRegistrationName",display);
+      sessionStorage.setItem("pacificEducationPilotRegistered","true");
+    }catch(_handoff){}
+    var selector=document.getElementById("pilotRoleSelector");
     if(selector&&workspaceRole){selector.value=workspaceRole;selector.dispatchEvent(new Event("change",{bubbles:true}));}
     document.body.classList.remove("pe-guided-flow");document.body.removeAttribute("data-pe-flow-step");
     var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
