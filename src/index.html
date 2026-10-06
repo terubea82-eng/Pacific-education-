@@ -260,6 +260,7 @@ git status</pre>
 <p><strong>Step 1 — Choose your user role.</strong> Tap one role below. The registration boxes for that role will then open.</p>
 <div id="pilotUserRoleCards" class="pe-user-role-cards" role="group" aria-label="Choose your Pacific Education user role">
 <button type="button" class="pe-user-role-card" data-role="Student" aria-pressed="false">👨‍🎓 <strong>Student</strong><span>Learner registration</span></button>
+<button type="button" class="pe-user-role-card" data-role="Blind Learner" aria-pressed="false">🔊 <strong>Blind Learner</strong><span>Dedicated voice-first accessible learner registration</span></button>
 <button type="button" class="pe-user-role-card" data-role="Teacher" aria-pressed="false">👩‍🏫 <strong>Teacher</strong><span>Teacher registration</span></button>
 <button type="button" class="pe-user-role-card" data-role="Parent/Caregiver" aria-pressed="false">👨‍👩‍👧 <strong>Parent / Caregiver</strong><span>Family registration</span></button>
 <button type="button" class="pe-user-role-card" data-role="Professional Reviewer" aria-pressed="false">🔎 <strong>Professional Reviewer</strong><span>Reviewer registration</span></button>
@@ -275,7 +276,7 @@ git status</pre>
 <input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your name or test name" style="width:100%;max-width:520px"><br><br>
 <label for="pilotRegistrationRole"><strong>Selected user role</strong></label><br>
 <select id="pilotRegistrationRole" aria-label="Selected user role" style="width:100%;max-width:520px" disabled>
-<option value="">Select role</option><option>Student</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
+<option value="">Select role</option><option>Student</option><option>Blind Learner</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
 </select><br><br>
 <p><strong>Step 2 — Complete your registration boxes.</strong> This pilot asks only for a display name and selected role. Do not enter sensitive child information, passwords, payment details or exact location.</p>
 <button type="button" id="pilotRegistrationSaveButton">Save Pilot Registration</button>
@@ -336,7 +337,7 @@ git status</pre>
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
         status.textContent="Pilot registration saved for "+r+". Opening the "+r+" workspace.";
-        var workspaceRoleMap={"Student":"student","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
+        var workspaceRoleMap={"Student":"student","Blind Learner":"blind-learner","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
         var workspaceRole=workspaceRoleMap[r]||"";
         var workspaceSelector=document.getElementById("pilotRoleSelector");
         if(workspaceSelector&&workspaceRole){
