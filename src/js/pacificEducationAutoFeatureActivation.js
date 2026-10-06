@@ -35,7 +35,7 @@
     var scripts={};
     document.querySelectorAll("script[src]").forEach(function(s){
       var src=s.getAttribute("src")||"";
-      var m=src.match(/(?:^|\\/)((?:pacificEducation|pacificGuardian)[A-Za-z0-9_-]*\\.js)(?:[?#].*)?$/i);
+      var m=src.match(/(?:^|\/)((?:pacificEducation|pacificGuardian)[A-Za-z0-9_-]*\.js)(?:[?#].*)?$/i);
       if(m) scripts[m[1]]=true;
     });
     return Object.keys(scripts);
