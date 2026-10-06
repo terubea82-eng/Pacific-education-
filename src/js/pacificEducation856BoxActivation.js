@@ -5,7 +5,7 @@
 (function(window, document){
   "use strict";
 
-  var VERSION = "856-box-activation-1.2.0-final-user-activity-repair";
+  var VERSION = "856-box-activation-1.3.0-connected-apk-repair";
 
   function show(id){
     var el=document.getElementById(id);
@@ -183,7 +183,7 @@
     ];
     document.querySelectorAll("button").forEach(function(btn){
       if(btn.getAttribute("data-pe-856-box-label-repaired")==="true") return;
-      var label=String(btn.textContent||btn.getAttribute("aria-label")||"").replace(/\\s+/g," ").trim();
+      var label=String(btn.textContent||btn.getAttribute("aria-label")||"").replace(/\s+/g," ").trim();
       if(!label) return;
       for(var i=0;i<userBoxMap.length;i++){
         if(userBoxMap[i][0].test(label)){
