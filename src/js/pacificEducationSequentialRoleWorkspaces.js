@@ -278,6 +278,7 @@
     document.getElementById("peSequentialSignOutYes").onclick=function(){
       try{
         sessionStorage.removeItem("pacificEducationPilotRegistration");
+        sessionStorage.removeItem("pacificEducationPilotRegistered");
         sessionStorage.removeItem("pacificEducationPilotRole");
         sessionStorage.removeItem("pacificEducationActiveRole");
         sessionStorage.removeItem("pilotRegistrationRole");
