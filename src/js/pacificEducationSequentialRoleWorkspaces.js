@@ -54,7 +54,6 @@
     ],
     "parent":[
       ["parentDashboard","My Child"],
-      ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Support"],
       ["pacificGuardianCommentSection","Teacher Communication"],
       ["pacificEducationStudentProgressDashboard","Child Progress"]
     ],
@@ -76,7 +75,6 @@
       ["pacificEducationCoverageDashboard","Education Coverage"]
     ],
     "community":[
-      ["learningPlatform","Education Services"],
       ["pacificEducationWebsitePilotChecklist","Pilot Information"],
       ["pacificGuardianCommentSection","Community Feedback"]
     ],
@@ -116,6 +114,7 @@
 
   var LEARNER_ROLES = {"student":1,"blind-learner":1,"deaf-learner":1};
   var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
+  var SESSION_KEYS = ["pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
   var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
   var movedTargets = [];
 
@@ -133,12 +132,21 @@
     return role;
   }
 
+  function hideProtected(){
+    Object.keys(PROTECTED).forEach(function(id){
+      var el=document.getElementById(id);
+      if(el){el.hidden=true;el.setAttribute("data-pe-protected","true");try{el.style.setProperty("display","none","important");}catch(e){}}
+    });
+  }
+
   function hideApplicationChildren(app, except){
     Array.prototype.forEach.call(app.children,function(el){
       if(el===except || el.id==="pacificEducationSequentialRoleWorkspace" || SHARED[el.id]) return;
+      if(PROTECTED[el.id]){el.hidden=true;el.setAttribute("data-pe-protected","true");try{el.style.setProperty("display","none","important");}catch(e){};return;}
       el.hidden=true;
       el.setAttribute("data-pe-sequential-hidden","true");
     });
+    hideProtected();
   }
 
   function rememberOriginal(target){
@@ -209,6 +217,7 @@
       page.innerHTML="";
       var item=sequence[index];
       var target=document.getElementById(item[0]);
+      if(target && PROTECTED[item[0]]) target=null;
       title.textContent=(role==="student"?"Student":role==="blind-learner"?"Blind Learner":role==="deaf-learner"?"Deaf Learner":role.replace(/-/g," "))+" Workspace — "+item[1];
       progress.textContent="Step "+(index+1)+" of "+sequence.length;
       status.textContent="";
@@ -219,11 +228,13 @@
       if(target){
         moveTargetIntoPage(target,page);
       }else{
-        var placeholder=document.createElement("div");
-        placeholder.style.cssText="padding:16px;border:1px dashed currentColor;border-radius:8px;";
-        placeholder.innerHTML="<strong>"+item[1]+"</strong><p>This eligible workspace page is ready for the next connected pilot feature.</p>";
-        page.appendChild(placeholder);
+        var missing=document.createElement("div");
+        missing.style.cssText="padding:16px;border:2px solid #b45309;border-radius:8px;";
+        missing.innerHTML="<strong>"+item[1]+" is not connected yet.</strong><p>This page cannot be completed until its existing pilot feature is connected. No placeholder workspace is presented as a working feature.</p>";
+        page.appendChild(missing);
+        next.disabled=true;
       }
+      if(target) next.disabled=false;
       try{
         var focusTitle=document.getElementById("peSequentialTitle");
         if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus();}
@@ -235,19 +246,16 @@
     back.onclick=function(){
       if(index>0){
         index--;
+        try{history.replaceState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
         renderPage();
-        status.textContent="Returned to the previous workspace page.";
         speak("Back. Returning to the previous page. "+sequence[index][1]+".");
       }
-    };
-
-    back.onclick=function(){
-      if(index>0){ index--; renderPage(); speak("Back. Returning to the previous page. "+sequence[index][1]+"."); }
     };
 
     next.onclick=function(){
       if(index<sequence.length-1){
         index++;
+        try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
         renderPage();
       }else{
         status.textContent="Workspace sequence complete.";
@@ -270,6 +278,7 @@
         sessionStorage.removeItem("pacificEducationActiveRole");
         sessionStorage.removeItem("pilotRegistrationRole");
         sessionStorage.removeItem("pilotRegistrationName");
+        SESSION_KEYS.forEach(function(key){try{sessionStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
       shell.remove();
@@ -284,29 +293,49 @@
         reg.hidden=false;
         try{reg.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){}
       }
+      try{history.replaceState({pacificEducationSignedOut:true},"","#pacificEducationIdentityRegistration");}catch(e){}
+      hideProtected();
       speak("You are signed out. User Registration is ready for the next user.");
     };
 
     hideApplicationChildren(app,shell);
     shell.hidden=false;
+    try{history.replaceState({pacificEducationSequential:true,role:role,index:0},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
     renderPage();
+    hideProtected();
   }
 
   function bind(){
-    var select=document.getElementById("pilotRoleSelector");
-    if(!select) return;
-    select.addEventListener("change",function(){
-      setTimeout(function(){ build(select.value||getRole()); },0);
-    },true);
+    var selectors=[document.getElementById("pilotRoleSelector"),document.getElementById("singlePilotRole"),document.getElementById("pilotRegistrationRole")].filter(Boolean);
+    selectors.forEach(function(select){
+      if(select.getAttribute("data-pe-sequential-role-bound")==="true") return;
+      select.setAttribute("data-pe-sequential-role-bound","true");
+      select.addEventListener("change",function(){
+        var chosen=select.value||getRole();
+        if(chosen && ROLE_SEQUENCES[chosen]) setTimeout(function(){build(chosen);},0);
+      },true);
+    });
     var role=getRole();
-    if(role) setTimeout(function(){build(role);},100);
+    if(!role){try{role=sessionStorage.getItem("pacificEducationPilotRole")||"";}catch(e){}}
+    if(role && ROLE_SEQUENCES[role]) setTimeout(function(){build(role);},100);
+
+    window.addEventListener("popstate",function(event){
+      var state=event.state||{};
+      if(!state.pacificEducationSequential || state.role!==getRole()) return;
+      var shell=document.getElementById("pacificEducationSequentialRoleWorkspace");
+      if(!shell) return;
+      var backButton=document.getElementById("peSequentialBack");
+      if(backButton && state.index>=0){
+        backButton.click();
+      }
+    });
   }
 
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",bind);
   else bind();
 
   window.PacificEducationSequentialRoleWorkspaces={
-    version:"1.0.0",
+    version:"1.1.0",
     roles:Object.keys(ROLE_SEQUENCES),
     learnerRoles:LEARNER_ROLES,
     build:build
