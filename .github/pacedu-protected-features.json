@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "policy": "protected-pilot-feature-manifest",
+  "description": "Core Pacedu modules that must remain present and referenced before deployment. Additive changes are allowed; deleting a protected module requires an explicit manifest update and verification.",
+  "protected_files": [
+    "src/index.html",
+    "src/js/pacificEducationSpeechVoice.js",
+    "src/js/pacificEducationMandatoryVoiceNavigation.js",
+    "src/js/pacificEducationGlobalEducationVoice.js",
+    "src/js/pacificEducationSinglePilotEntry.js",
+    "src/js/pacificEducationSequentialRoleWorkspaces.js",
+    "src/js/pacificEducationAutoFeatureActivation.js",
+    "src/js/pacificEducation856BoxActivation.js",
+    "src/js/pacificEducationInteractionRepair.js",
+    "src/js/pacificEducationPilotUserWorkspaces.js",
+    "src/js/pacificEducationCountryConfig.js",
+    "src/js/pacificEducationRegistrationContext.js",
+    "src/js/pacificEducationLearnerActivityRuntime.js",
+    "src/js/pacificEducationTeacherDailyActivityCoordinator.js",
+    "src/js/pacificEducationBlindAttemptProtocol.js",
+    "src/js/pacificEducationCurriculumCoverageEngine.js",
+    "src/js/pacificEducationDailyProgressRecorder.js",
+    "src/js/pacificEducationTeacherReviewQueue.js",
+    "src/js/pacificEducationStudentProgressDashboardUI.js",
+    "src/js/pacificEducationFutureSafeFeatureRepair.js"
+  ],
+  "protected_runtime_markers": [
+    "PacificEducationSpeech",
+    "PacificEducationSequentialRoleWorkspaces",
+    "PacificEducationAutoFeatureActivation"
+  ]
+}
