@@ -262,7 +262,7 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     refreshApprovalUI();
   }
   function protectActivityRenderer(){
-    if(!window.PacificEducationActivity||typeof window.PacificEducationActivity.render!=="function"||window.PacificEducationActivity.__teacherApprovalGate)return;
+    if(!window.PacificEducationActivity||typeof window.PacificEducationActivity.render!=="function")return;if(window.PacificEducationActivity.__teacherApprovalGate)return;
     var original=window.PacificEducationActivity.render;
     window.PacificEducationActivity.render=function(type,day,lesson){
       if(approvalRole()==="student"){
