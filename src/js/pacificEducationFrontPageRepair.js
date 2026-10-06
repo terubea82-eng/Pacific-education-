@@ -6,7 +6,7 @@
   var VERSION="1.5.3";
   var flow=[
     ["welcomeNextButton",1,"pacificEducationIdentityRegistration"],
-    ["registrationNextButton",2,"prototypeAccess"],
+    ["registrationNextButton",2,"pacificEducationPilotUserWorkspaces"],
     ["prototypeNextButton",3,"levelSelection"],
     ["levelNextButton",4,"subjectSelection"],
     ["subjectNextButton",5,"termSelection"],
@@ -70,6 +70,23 @@
     return show("pacificEducationIdentityRegistration",1);
   }
   function nextFromButton(id){for(var i=0;i<flow.length;i++)if(flow[i][0]===id)return show(flow[i][2],flow[i][1]);return false;}
+  function openRegisteredWorkspace(){
+    var role=document.getElementById("pilotRegistrationRole"), name=document.getElementById("pilotRegistrationName");
+    var selected=(role&&role.value)||"", display=(name&&name.value||"").trim();
+    if(!selected){status("Please choose your user role before continuing.");return false;}
+    if(!display){status("Please enter your name or display name before continuing.");if(name)name.focus();return false;}
+    try{sessionStorage.setItem("pacificEducationPilotRegistration",JSON.stringify({name:display,role:selected,registeredAt:new Date().toISOString(),pilotOnly:true}));}catch(_){ }
+    var map={"Student":"student","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
+    var workspaceRole=map[selected], selector=document.getElementById("pilotRoleSelector");
+    if(selector&&workspaceRole){selector.value=workspaceRole;selector.dispatchEvent(new Event("change",{bubbles:true}));}
+    document.body.classList.remove("pe-guided-flow");document.body.removeAttribute("data-pe-flow-step");
+    var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
+    if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){ws.scrollIntoView();}}
+    var message=selected==="Student"?"Registration complete. Your Student Workspace is ready. Your teacher guides your class, subject and term. Open Start Learning to begin Daily Activities.":"Registration complete. Your "+selected+" Workspace is ready.";
+    status(message);
+    if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(message);else if(window.speakText)window.speakText(message);
+    return true;
+  }
   function finishIntroduction(){
     document.body.classList.remove("pe-guided-flow");
     document.body.removeAttribute("data-pe-flow-step");
@@ -109,6 +126,7 @@
         return;
       }
     }
+    if(id==="registrationNextButton"){event.preventDefault();event.stopImmediatePropagation();openRegisteredWorkspace();return;}
     if(id==="capabilityNextButton"){event.preventDefault();event.stopImmediatePropagation();finishIntroduction();return;}
     for(var i=0;i<flow.length;i++)if(flow[i][0]===id){event.preventDefault();event.stopImmediatePropagation();nextFromButton(id);return;}
     var dest=mappedTarget(el);if(!dest)return;
@@ -146,7 +164,7 @@
   var GREEN="#15803d";
   var steps=[
     ["welcomeNextButton","Step 1","Welcome","Next"],
-    ["registrationNextButton","Step 2","User Registration","Next"],
+    ["registrationNextButton","Step 2","Student Workspace","Open workspace"],
     ["prototypeNextButton","Step 3","Workspace access","Next"],
     ["levelNextButton","Step 4","Class / Level","Next"],
     ["subjectNextButton","Step 5","Subject","Next"],
