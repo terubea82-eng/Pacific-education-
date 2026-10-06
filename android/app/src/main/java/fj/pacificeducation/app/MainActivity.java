@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.Voice;
+import android.speech.tts.UtteranceProgressListener;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
@@ -25,6 +26,9 @@ import android.content.SharedPreferences;
 
 import java.util.Locale;
 import java.util.Set;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
@@ -42,6 +46,8 @@ public final class MainActivity extends Activity {
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
     private String pendingNativeSpeech = "";
+    private Voice preferredVoice;
+    private Voice alternateVoice;
     private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
     private static final String AUTO_WELCOME_TAG = "pacific-education-auto-welcome";
 
@@ -75,12 +81,13 @@ public final class MainActivity extends Activity {
             if (voices == null) return;
             Voice fallback = null;
             Voice maleFallback = null;
+            Voice secondEnglishVoice = null;
             for (Voice voice : voices) {
                 if (voice == null || voice.getLocale() == null) continue;
                 if (!"en".equalsIgnoreCase(voice.getLocale().getLanguage())) continue;
                 boolean australiaEnglish = "AU".equalsIgnoreCase(voice.getLocale().getCountry());
                 if (fallback == null || (australiaEnglish && !("AU".equalsIgnoreCase(fallback.getLocale().getCountry())))) fallback = voice;
-                if (fallback == null) fallback = voice;
+                if (fallback != null && secondEnglishVoice == null && voice != fallback) secondEnglishVoice = voice;
                 String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
                 if (name.contains("male") || name.contains("man")
                         || name.contains("david") || name.contains("mark") || name.contains("ryan")
@@ -95,8 +102,9 @@ public final class MainActivity extends Activity {
                     }
                 }
             }
-            if (maleFallback != null) textToSpeech.setVoice(maleFallback);
-            else if (fallback != null) textToSpeech.setVoice(fallback);
+            preferredVoice = maleFallback != null ? maleFallback : fallback;
+            alternateVoice = secondEnglishVoice != null ? secondEnglishVoice : preferredVoice;
+            if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
             // Do not silently replace the requested male voice with an arbitrary
             // (possibly female) English voice. If this device exposes no recognizable
             // male English voice, the engine keeps its configured voice rather than
@@ -121,6 +129,48 @@ public final class MainActivity extends Activity {
         }
     }
 
+    private boolean speakConversationNative(String json) {
+        if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
+        try {
+            JSONArray lines = new JSONArray(json);
+            if (lines.length() == 0) return false;
+            final int[] index = {0};
+            textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                @Override public void onStart(String utteranceId) { }
+                @Override public void onDone(String utteranceId) {
+                    int next = index[0] + 1;
+                    index[0] = next;
+                    if (next < lines.length()) {
+                        runOnUiThread(() -> speakConversationLine(lines, next));
+                    }
+                }
+                @Override public void onError(String utteranceId) { }
+                @Override public void onError(String utteranceId, int errorCode) { }
+            });
+            speakConversationLine(lines, 0);
+            return true;
+        } catch (Exception error) {
+            return false;
+        }
+    }
+
+    private void speakConversationLine(JSONArray lines, int index) {
+        if (!ttsReady || textToSpeech == null || index < 0 || index >= lines.length()) return;
+        try {
+            JSONObject line = lines.getJSONObject(index);
+            String text = line.optString("text", "").trim();
+            if (text.isEmpty()) { speakConversationLine(lines, index + 1); return; }
+            int speaker = line.optInt("speaker", index % 2);
+            Voice voice = speaker % 2 == 0 ? preferredVoice : alternateVoice;
+            if (voice != null) textToSpeech.setVoice(voice);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education-conversation-" + index);
+            } else {
+                @SuppressWarnings("deprecation") int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        } catch (Exception ignored) { }
+    }
+
     private final class NativeSpeechBridge {
         @JavascriptInterface
         public boolean speak(String text) {
@@ -143,6 +193,11 @@ public final class MainActivity extends Activity {
                 }
             }, AUTO_WELCOME_TAG, android.os.SystemClock.uptimeMillis() + 5000L);
             return true;
+        }
+
+        @JavascriptInterface
+        public boolean speakConversation(String json) {
+            return speakConversationNative(json);
         }
 
         @JavascriptInterface
