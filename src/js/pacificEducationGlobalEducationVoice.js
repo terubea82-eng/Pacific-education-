@@ -10,20 +10,23 @@
   var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
 
   var GLOBAL_LINES = [
-    {speaker:"1",text:"Welcome to Pacific Education. We welcome learners, teachers, parents, caregivers and education communities."},
-    {speaker:"2",text:"Pacific Education was built with modern digital technology to assist education, connect learning and support people wherever learning is needed."},
+    {speaker:"1",text:"Welcome to Pacific Education."},
+    {speaker:"1",text:"Pacific Education was built on a simple belief: education should not stop when the world faces difficulties."},
+    {speaker:"2",text:"During war, conflict, natural disasters, pandemics, emergencies, displacement, isolation, or other disruptions, learners can lose access to schools, teachers, and learning resources."},
+    {speaker:"1",text:"Pacific Education was created to help keep learning moving forward."},
+    {speaker:"2",text:"It is designed to assist students, teachers, parents, caregivers, schools, and communities across the Pacific and, with the right development and verification, support education globally."},
+    {speaker:"1",text:"Through modern technology, Pacific Education aims to provide learning activities, assessments, progress support, accessibility, and educational assistance wherever learners may be."},
+    {speaker:"2",text:"Technology should support teachers and communities, not replace them."},
     {speaker:"1",text:"Why was Pacific Education built?"},
-    {speaker:"2",text:"It helps learners learn, practise, receive guidance and track progress, while helping teachers and families support learning with accessible tools."},
-    {speaker:"1",text:"Why use modern technology for education?"},
-    {speaker:"2",text:"Modern technology can expand access, provide voice and accessibility support, connect learning resources, and keep learning going during war, displacement, disability, poverty, or other difficult circumstances, including offline-first learning."},
-    {speaker:"1",text:"Was Pacific Education built only for the Pacific?"},
-    {speaker:"2",text:"No. It began with a strong Pacific purpose, but its vision is global. It respects each country's curriculum, language, culture, school system and local learning needs."},
-    {speaker:"1",text:"Can it help when internet access is limited?"},
-    {speaker:"2",text:"Yes. Pacific Education is designed for offline-first learning, so activities can continue when connectivity is limited, while teachers and human guidance remain central."},
-    {speaker:"1",text:"What is the bigger purpose?"},
-    {speaker:"2",text:"The goal is quality, accessible and inclusive education, using modern technology responsibly to support learners and educators in the Pacific and around the world."}
+    {speaker:"2",text:"Because education should remain possible even when distance, disasters, emergencies, conflict, or other challenges interrupt normal schooling."},
+    {speaker:"1",text:"So is it only for the Pacific?"},
+    {speaker:"2",text:"No. It was inspired by the needs of Pacific communities, but its purpose is broader: to develop educational assistance that can help learners and educators around the world."},
+    {speaker:"1",text:"And what is the goal?"},
+    {speaker:"2",text:"To help learners learn, discover, practise, and grow—and to help teachers, families, schools, and communities keep education moving forward."},
+    {speaker:"1",text:"Welcome to Pacific Education."},
+    {speaker:"2",text:"Let us learn, discover, practise, and grow together."},
+    {speaker:"1",text:"Press Next to begin registration."}
   ];
-
   GLOBAL_LINES.forEach(function(line){
     Object.freeze(line);
   });
