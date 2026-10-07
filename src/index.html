@@ -94,7 +94,9 @@ pre{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
 /* 5-second voice + left-side Next control: keep pilot navigation touch-active and visible. */
 .pacific-flow-next{display:flex!important;justify-content:flex-start!important;align-items:center!important;text-align:left!important;position:sticky;left:0;bottom:4px;z-index:50;min-height:48px;padding:8px 0;margin-top:16px}
 .pacific-flow-next button{pointer-events:auto!important;touch-action:manipulation!important;min-height:58px;min-width:170px;padding:14px 24px;font-size:1.12rem;font-weight:700;border-radius:10px}
-body.pe-pilot-all-features #userRegistrationOpenButton,body.pe-pilot-all-features #welcomeNextButton,body.pe-pilot-all-features #registrationNextButton,body.pe-pilot-all-features #prototypeNextButton,body.pe-pilot-all-features #levelNextButton,body.pe-pilot-all-features #subjectNextButton,body.pe-pilot-all-features #termNextButton,body.pe-pilot-all-features #capabilityNextButton,body.pe-pilot-all-features #dailyNextButton,body.pe-pilot-all-features #practiceNextButton,body.pe-pilot-all-features #assessmentNextButton{pointer-events:auto!important;cursor:pointer!important}
+body.pe-pilot-all-features #userRegistrationOpenButton,body.pe-pilot-all-features #welcomeNextButton,body.pe-pilot-all-features #registrationNextButton,body.pe-pilot-all-features #prototypeNextButton,body.pe-pilot-all-features #levelNextButton,body.pe-pilot-all-features #subjectNextButton,body.pe-pilot-all-features #termNextButton,body.pe-pilot-all-features #capabilityNextButton,body.pe-pilot-all-features #dailyNextButton,body.pe-pilot-all-features #practiceNextButton,body.pe-pilot-all-features #assessmentNextButton,
+#pilotRegistrationSaveButton,
+#peSequentialNext{pointer-events:auto!important;cursor:pointer!important}
 @media (max-width:700px){#pacificEducationSetupBoxes{grid-template-columns:1fr!important}}
 
 /* Pacedu page-by-page entry gateway: one clear page at a time. */
@@ -158,7 +160,9 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 #capabilityNextButton:hover,
 #dailyNextButton:hover,
 #practiceNextButton:hover,
-#assessmentNextButton:hover{filter:brightness(.92)}
+#assessmentNextButton:hover,
+#pilotRegistrationSaveButton:hover,
+#peSequentialNext:hover{filter:brightness(.92)}
 .pacific-mandatory-next:focus-visible,
 #paceduVisionNext:focus-visible,
 #paceduRulesContinue:focus-visible,
@@ -171,7 +175,9 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 #capabilityNextButton:focus-visible,
 #dailyNextButton:focus-visible,
 #practiceNextButton:focus-visible,
-#assessmentNextButton:focus-visible{outline:3px solid #000!important;outline-offset:3px}
+#assessmentNextButton:focus-visible,
+#pilotRegistrationSaveButton:focus-visible,
+#peSequentialNext:focus-visible{outline:3px solid #000!important;outline-offset:3px}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
