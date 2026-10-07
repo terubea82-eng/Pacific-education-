@@ -13,14 +13,17 @@
   function show(page){
     var body=document.body;
     if(page===4){
-      body.classList.remove("pacedu-entry-mode");
-      body.classList.add("pe-guided-flow");
-      body.setAttribute("data-pe-flow-step","1");
+      body.classList.remove("pe-guided-flow");
+      body.classList.add("pacedu-entry-mode","pacedu-registration-mode");
+      var pilot=byId("pacificEducationPilotPages");
+      if(pilot)pilot.hidden=true;
       var reg=byId("pacificEducationIdentityRegistration");
+      if(reg)reg.style.display="";
       if(reg)reg.scrollIntoView({behavior:"smooth",block:"start"});
-      announce("Rules confirmed. Welcome to registration. Choose your country, language, then your user role.");
+      announce("Rules confirmed. Welcome to User Registration. Choose your country, language, then your user role.");
       return;
     }
+    body.classList.remove("pacedu-registration-mode");
     body.classList.add("pacedu-entry-mode");
     body.classList.remove("pe-guided-flow");
     Object.keys(pages).forEach(function(k){
