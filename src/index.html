@@ -128,28 +128,41 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
 <section id="pacificEducationWelcome" aria-label="Pacific Education welcome">
-<div id="pacificEducationWelcomeContent">
-<h1>Pacific Education</h1>
+<div id="pacificEducationWelcomeContent" class="pacedu-welcome-only">
+<div class="pacedu-welcome-hero" role="img" aria-label="A Pacific island student reading a book on a beach while facing the sea under a bright sun">
+<svg viewBox="0 0 900 520" aria-hidden="true">
+<rect width="900" height="520" rx="28" fill="#dff5ff"/>
+<circle cx="735" cy="92" r="58" fill="#ffd95a"/>
+<path d="M0 265 Q150 220 300 265 T600 265 T900 255 V520 H0Z" fill="#65cbe4"/>
+<path d="M0 320 Q180 275 360 320 T720 315 T900 325 V520 H0Z" fill="#1886a5"/>
+<path d="M0 390 Q160 350 330 390 T650 385 T900 395 V520 H0Z" fill="#e7c77c"/>
+<path d="M85 390 Q170 300 255 390Z" fill="#4e9b61"/>
+<path d="M120 390 Q170 330 220 390Z" fill="#79bd68"/>
+<path d="M170 335 Q170 290 205 270" fill="none" stroke="#6d482c" stroke-width="12" stroke-linecap="round"/>
+<path d="M202 278 Q245 250 270 292" fill="none" stroke="#4e9b61" stroke-width="16" stroke-linecap="round"/>
+<ellipse cx="450" cy="408" rx="75" ry="28" fill="#b28a57"/>
+<circle cx="450" cy="330" r="32" fill="#9b6b4a"/>
+<path d="M405 420 Q450 365 495 420Z" fill="#174f63"/>
+<path d="M420 420 L395 485 M480 420 L505 485" stroke="#174f63" stroke-width="18" stroke-linecap="round"/>
+<path d="M408 390 Q450 365 492 390" fill="#f4d7a1" stroke="#174f63" stroke-width="5"/>
+<path d="M410 385 Q450 350 490 385" fill="#ffffff" stroke="#174f63" stroke-width="4"/>
+<text x="38" y="60" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#174f63">Pacific Education</text>
+<text x="38" y="94" font-family="Arial,sans-serif" font-size="18" fill="#174f63">Learning • Inclusion • Connection • Progress</text>
+</svg>
+</div>
+<h1>Welcome to Pacific Education</h1>
 <p><strong>Learn • Discover • Practise • Grow</strong></p>
-<h2>Why Pacific Education?</h2>
-<p>Pacific Education was built to support learners, teachers, parents and education communities with clear, accessible and structured learning.</p>
-<h2>Purpose</h2>
-<p>Connect daily learning activities, educational content, assessment and progress so learners can build knowledge step by step and teachers can support learning effectively.</p>
-<h2>Vision</h2>
-<p>Support quality, inclusive and accessible education across the Pacific while strengthening learning connections between learners, teachers and families.</p>
+<p>Welcome to Pacedu — a modern education platform created to support learners, teachers, families and education communities across the Pacific and beyond.</p>
 <div id="pacificEducationWelcomeVoice" aria-live="polite">
-<p><strong>Welcome to Pacific Education.</strong> We are pleased to welcome you. Learn, discover, practise and grow with us.</p>
-<p id="pacificEducationTopRightPlayInstruction"><strong>🔊 Audio instruction:</strong> Press the <strong>Play</strong> button at the top-right of the page to hear the instructions.</p>
-<button type="button" id="pacificEducationAIPlaybackButton" aria-label="Play two-person AI Playback about Pacific Education" style="background:#000;color:#fff;border:2px solid #000;border-radius:8px;font-weight:700;padding:12px 16px;">▶️ AI Playback — Pacific Education</button><button type="button" id="pacificEducationWelcomeVoiceButton" aria-label="Hear Pacific Education welcome and introduction">🔊 Hear Welcome & Introduction</button>
+<p><strong>Voice welcome:</strong> Hear the introduction, use AI Playback, or say <strong>Next</strong> to continue.</p>
+<button type="button" id="pacificEducationAIPlaybackButton" aria-label="Play two-person AI Playback about Pacific Education" style="background:#000;color:#fff;border:2px solid #000;border-radius:8px;font-weight:700;padding:12px 16px;">▶️ AI Playback — Pacific Education</button>
+<button type="button" id="pacificEducationWelcomeVoiceButton" aria-label="Hear Pacific Education welcome and introduction">🔊 Hear Welcome & Introduction</button>
 <button type="button" id="pacificEducationStopSpeechButton" aria-label="Stop Pacific Education speech">🔇 Stop Speech</button>
-<button type="button" id="pacificEducationInstallButton" aria-label="Install Pacific Education" hidden>📲 Install Pacific Education</button>
-<span id="pacificEducationInstallStatus" role="status" aria-live="polite">Pacific Education is ready for web installation when this browser supports it.</span><br><span id="pacificEducationVoiceStatus" role="status" aria-live="polite">Voice ready.</span>
+<span id="pacificEducationVoiceStatus" role="status" aria-live="polite">Voice ready.</span>
 </div>
-
 </div>
-<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" onclick="window.PacificEducationPilotPages && window.PacificEducationPilotPages.goTo(2)">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
+<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Say Next</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
 </section>
-
 
 <section id="pacificEducationPilotPages" aria-label="Pacific Education pilot welcome pages" hidden>
   <article id="paceduPageVision" class="pacedu-entry-page" aria-labelledby="paceduVisionTitle">
@@ -612,7 +625,9 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
             if(status) status.textContent=command?("Heard: "+command):"No command heard.";
             var text=command.toLowerCase();
             if(/\b(next|continue|go on|proceed)\b/.test(text)){
-              if(typeof window.PacificEducationGuidedNext==="function"){ var b=document.getElementById(target); if(b) b.click(); }
+              var b=document.getElementById(target);
+              if(b) b.click();
+              else if(typeof window.PacificEducationGuidedNext==="function") window.PacificEducationGuidedNext();
             }else if(/\b(play|read|speak|audio|voice)\b/.test(text)){
               if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function") window.PacificEducationSpeech.speakText("Press Next to continue.");
               else if(typeof window.speakText==="function") window.speakText("Press Next to continue.");
