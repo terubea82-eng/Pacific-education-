@@ -20,9 +20,9 @@
     if(page===4){
       body.classList.remove("pe-guided-flow");
       body.classList.add("pacedu-entry-mode","pacedu-registration-mode");
-      if(pilot)pilot.hidden=true;
-      if(welcome)welcome.hidden=true;
-      if(welcomeNext)welcomeNext.hidden=true;
+      if(pilot){pilot.hidden=true;pilot.style.display="none";}
+      if(welcome){welcome.hidden=true;welcome.style.display="none";}
+      if(welcomeNext){welcomeNext.hidden=true;welcomeNext.style.display="none";}
       var reg=byId("pacificEducationIdentityRegistration");
       if(reg)reg.style.display="";
       if(reg)reg.scrollIntoView({behavior:"smooth",block:"start"});
@@ -37,15 +37,15 @@
       if(el)el.hidden=(Number(k)!==page);
     });
     var welcome=byId("pacificEducationWelcome");
-    if(welcome)welcome.style.display="";
+    if(welcome)welcome.style.display=(page===1?"":"none");
     if(page===1){
-      if(welcome)welcome.hidden=false;
-      if(welcomeNext)welcomeNext.hidden=false;
-      if(pilot)pilot.hidden=true;
+      if(welcome){welcome.hidden=false;welcome.style.display="";}
+      if(welcomeNext){welcomeNext.hidden=false;welcomeNext.style.display="";}
+      if(pilot){pilot.hidden=true;pilot.style.display="none";}
     }else{
-      if(welcome)welcome.hidden=true;
-      if(welcomeNext)welcomeNext.hidden=true;
-      if(pilot)pilot.hidden=false;
+      if(welcome){welcome.hidden=true;welcome.style.display="none";}
+      if(welcomeNext){welcomeNext.hidden=true;welcomeNext.style.display="none";}
+      if(pilot){pilot.hidden=false;pilot.style.display="";}
     }
     if(page===1)announce("Welcome to Pacific Education. Continue to learn about our vision, mission and purpose.");
     if(page===2)announce("Vision, mission and purpose. Continue to the mandatory Pacedu rules and conditions.");
