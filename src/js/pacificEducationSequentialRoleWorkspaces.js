@@ -6,7 +6,13 @@
 (function(window, document){
   "use strict";
 
-  var ROLE_SEQUENCES = {
+  /* Adjustable sequence configuration.
+   * Keep stable step IDs; insert/remove/reorder only changes position.
+   * Overrides are validated and persisted locally so future reshuffles do not
+   * require rewriting navigation logic. Protected voice/payment controls remain
+   * outside this configuration layer.
+   */
+  var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
       ["learningPlatform","Student Workspace"],
       ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
@@ -122,6 +128,65 @@
       ["publicationStatus","Deployment / Publication Status"]
     ]
   };
+  var SEQUENCE_STORAGE_KEY = "paceduSequenceAdjustmentsV1";
+  function cloneSequence(value){ try{return JSON.parse(JSON.stringify(value));}catch(e){return [];} }
+  function validateSequence(sequence){
+    var errors=[],seen={};
+    if(!Array.isArray(sequence)||!sequence.length) return {valid:false,errors:["Sequence must contain at least one step."]};
+    sequence.forEach(function(step,i){
+      if(!Array.isArray(step)||typeof step[0]!=="string"||!step[0]||typeof step[1]!=="string"||!step[1]) errors.push("Invalid step at position "+(i+1)+".");
+      else if(seen[step[0]]) errors.push("Duplicate step id: "+step[0]);
+      else seen[step[0]]=true;
+    });
+    return {valid:errors.length===0,errors:errors};
+  }
+  function loadSequenceOverrides(){
+    try{
+      var raw=localStorage.getItem(SEQUENCE_STORAGE_KEY);
+      if(!raw) return {};
+      var data=JSON.parse(raw);
+      return data && data.version==="1.0.0" && data.roles ? data.roles : {};
+    }catch(e){return {};}
+  }
+  var ROLE_SEQUENCE_OVERRIDES=loadSequenceOverrides();
+  function saveSequenceOverrides(){
+    try{localStorage.setItem(SEQUENCE_STORAGE_KEY,JSON.stringify({version:"1.0.0",roles:ROLE_SEQUENCE_OVERRIDES}));return true;}catch(e){return false;}
+  }
+  function getRoleSequence(role){
+    var sequence=ROLE_SEQUENCE_OVERRIDES[role]||ROLE_SEQUENCE_DEFAULTS[role];
+    return sequence?cloneSequence(sequence):[];
+  }
+  function setRoleSequence(role,sequence){
+    var check=validateSequence(sequence);
+    if(!check.valid) return check;
+    ROLE_SEQUENCE_OVERRIDES[role]=cloneSequence(sequence);
+    saveSequenceOverrides();
+    return {valid:true,sequence:getRoleSequence(role)};
+  }
+  function insertRoleStep(role,step,index){
+    var sequence=getRoleSequence(role);
+    if(!Array.isArray(step)||typeof step[0]!=="string"||typeof step[1]!=="string") return {valid:false,errors:["Step must be [stableId,label]."]};
+    var position=typeof index==="number"?Math.max(0,Math.min(index,sequence.length)):sequence.length;
+    sequence.splice(position,0,step);
+    return setRoleSequence(role,sequence);
+  }
+  function removeRoleStep(role,stepId){
+    var sequence=getRoleSequence(role),position=sequence.findIndex(function(step){return step[0]===stepId;});
+    if(position<0) return {valid:false,errors:["Step not found: "+stepId]};
+    sequence.splice(position,1);
+    return setRoleSequence(role,sequence);
+  }
+  function moveRoleStep(role,stepId,newIndex){
+    var sequence=getRoleSequence(role),from=sequence.findIndex(function(step){return step[0]===stepId;});
+    if(from<0) return {valid:false,errors:["Step not found: "+stepId]};
+    var step=sequence.splice(from,1)[0],to=Math.max(0,Math.min(Number(newIndex)||0,sequence.length));
+    sequence.splice(to,0,step);
+    return setRoleSequence(role,sequence);
+  }
+  function resetRoleSequence(role){
+    delete ROLE_SEQUENCE_OVERRIDES[role]; saveSequenceOverrides(); return getRoleSequence(role);
+  }
+
 
   var LEARNER_ROLES = {"student":1,"blind-learner":1,"deaf-learner":1};
   var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
@@ -203,8 +268,8 @@
   function build(role){
     var app=document.getElementById("app");
     if(!app) return;
-    var sequence=ROLE_SEQUENCES[role];
-    if(!sequence) return;
+    var sequence=getRoleSequence(role);
+    if(!sequence || !sequence.length) return;
 
     var old=document.getElementById("pacificEducationSequentialRoleWorkspace");
     if(old) old.remove();
@@ -442,14 +507,14 @@
         var chosen=select.value||getRole();
         var registered=false;
         try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-        if(registered && chosen && ROLE_SEQUENCES[chosen]) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen); },0);
+        if(registered && chosen && getRoleSequence(chosen).length) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen); },0);
       },true);
     });
     var role=getRole();
     if(!role){try{role=sessionStorage.getItem("pacificEducationPilotRole")||"";}catch(e){}}
     var registeredNow=false;
     try{registeredNow=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-    if(role && registeredNow && ROLE_SEQUENCES[role]) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(role); },100);
+    if(role && registeredNow && getRoleSequence(role).length) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(role); },100);
 
     ["singlePilotRegisterButton","pilotRegistrationSaveButton"].forEach(function(id){
       var button=document.getElementById(id);
@@ -480,8 +545,19 @@
   else bind();
 
   window.PacificEducationSequentialRoleWorkspaces={
-    version:"1.2.0-numbered-user-sequence",
-    roles:Object.keys(ROLE_SEQUENCES),
+    version:"1.3.0-adjustable-sequence",
+    roles:Object.keys(ROLE_SEQUENCE_DEFAULTS),
+    sequenceConfig:{
+      get:getRoleSequence,
+      set:setRoleSequence,
+      insert:insertRoleStep,
+      remove:removeRoleStep,
+      move:moveRoleStep,
+      reset:resetRoleSequence,
+      validate:validateSequence,
+      defaults:function(role){return cloneSequence(ROLE_SEQUENCE_DEFAULTS[role]||[]);},
+      clearOverrides:function(){ROLE_SEQUENCE_OVERRIDES={};saveSequenceOverrides();}
+    },
     learnerRoles:LEARNER_ROLES,
     build:build
   };
