@@ -96,6 +96,25 @@ pre{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
 .pacific-flow-next button{pointer-events:auto!important;touch-action:manipulation!important;min-height:58px;min-width:170px;padding:14px 24px;font-size:1.12rem;font-weight:700;border-radius:10px}
 body.pe-pilot-all-features #userRegistrationOpenButton,body.pe-pilot-all-features #welcomeNextButton,body.pe-pilot-all-features #registrationNextButton,body.pe-pilot-all-features #prototypeNextButton,body.pe-pilot-all-features #levelNextButton,body.pe-pilot-all-features #subjectNextButton,body.pe-pilot-all-features #termNextButton,body.pe-pilot-all-features #capabilityNextButton,body.pe-pilot-all-features #dailyNextButton,body.pe-pilot-all-features #practiceNextButton,body.pe-pilot-all-features #assessmentNextButton{pointer-events:auto!important;cursor:pointer!important}
 @media (max-width:700px){#pacificEducationSetupBoxes{grid-template-columns:1fr!important}}
+
+/* Pacedu page-by-page entry gateway: one clear page at a time. */
+body.pacedu-entry-mode #pacificEducationPilotPages{display:block!important}
+body.pacedu-entry-mode #pacificEducationPilotPages .pacedu-entry-page{display:none!important}
+body.pacedu-entry-mode #pacificEducationPilotPages #paceduPageVision{display:block!important}
+body.pacedu-entry-mode #pacificEducationWelcome{display:block!important}
+body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #pacificEducationAppMenu,body.pacedu-entry-mode > #pacificEducationAccessibilityControls,body.pacedu-entry-mode > #pilotBanner,body.pacedu-entry-mode > header,body.pacedu-entry-mode > #pacificEducationRefreshNotice,body.pacedu-entry-mode > main{display:none!important}
+.pacedu-entry-card{max-width:980px;margin:0 auto;padding:20px;border:2px solid #174f63;border-radius:18px;background:#fff;box-shadow:0 8px 28px rgba(0,0,0,.08)}
+.pacedu-entry-illustration{margin:-4px -4px 18px;overflow:hidden;border-radius:14px}
+.pacedu-entry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pacedu-entry-grid section{margin:0;padding:16px;border:1px solid #9fc6d4;border-radius:12px;background:#f5fbfd}
+.pacedu-entry-grid h2{margin-top:0;font-size:1.15rem}
+.pacedu-entry-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:20px;padding-top:14px;border-top:1px solid #ccc}
+.pacedu-entry-actions button{min-height:52px;font-weight:700}
+.pacedu-rules-list{padding-left:24px}
+.pacedu-rules-list li{margin:10px 0}
+.pacedu-agreement{display:flex;gap:10px;align-items:flex-start;margin:18px 0;padding:15px;border:2px solid #174f63;border-radius:12px;background:#f7fbfc;font-weight:700}
+.pacedu-agreement input{width:24px;height:24px;flex:0 0 auto}
+@media(max-width:700px){.pacedu-entry-grid{grid-template-columns:1fr}.pacedu-entry-card{padding:14px;border-radius:12px}.pacedu-entry-actions{flex-direction:column;align-items:stretch}.pacedu-entry-actions button{width:100%}}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
@@ -119,7 +138,7 @@ body.pe-pilot-all-features #userRegistrationOpenButton,body.pe-pilot-all-feature
 </div>
 
 </div>
-<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" onclick="document.body.classList.add('pe-guided-flow');document.body.setAttribute('data-pe-flow-step','1');document.getElementById('pacificEducationIdentityRegistration').scrollIntoView({behavior:'smooth',block:'start'})">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
+<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" onclick="window.PacificEducationPilotPages && window.PacificEducationPilotPages.goTo(2)">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
 </section>
 
 
