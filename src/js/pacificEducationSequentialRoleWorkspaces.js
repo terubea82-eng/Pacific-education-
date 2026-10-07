@@ -247,7 +247,61 @@
       back.setAttribute("aria-label",index===0?"Back unavailable on first workspace page":"Back to "+(sequence[index-1] ? sequence[index-1][1] : "previous page"));
       back.disabled=index===0;
       next.textContent=index===sequence.length-1?"Finish":"➡️ Next";
-      if(target){
+      if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
+        var teacherTest=item[0]==="pacificEducationTeacherCapabilityTest";
+        var test=document.createElement("section");
+        test.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;";
+        test.innerHTML="<h3>🧠 "+(teacherTest?"Teacher Capability & Platform Test":"Child Capability & Ability Test")+"</h3><p>"+(teacherTest?"Complete this short readiness test before the teacher daily sequence.":"Complete this short starting-point test so Pacedu can identify the learner's current capability and ability.")+"</p>";
+        var qs=teacherTest?[
+          ["Can you identify a learner in your class list?","yes"],
+          ["Can you review a learner response?","yes"],
+          ["Can you use the teacher calendar?","yes"]
+        ]:[
+          ["Type the letter A.","a"],
+          ["Which number is greater: 3 or 5?","5"],
+          ["Type the animal word: cat or table.","cat"]
+        ];
+        qs.forEach(function(q,i){
+          var p=document.createElement("p");
+          p.innerHTML="<strong>"+(i+1)+". "+q[0]+"</strong><br><input data-pe-cap-answer=\""+q[1]+"\" type=\"text\" style=\"padding:10px;width:100%;max-width:420px;box-sizing:border-box\" aria-label=\"Answer "+(i+1)+"\">";
+          test.appendChild(p);
+        });
+        var submit=document.createElement("button");
+        submit.type="button";submit.textContent="✓ Submit Test";submit.style.cssText="padding:12px 18px;font-weight:700;";
+        var msg=document.createElement("p");msg.setAttribute("role","status");msg.setAttribute("aria-live","polite");
+        test.appendChild(submit);test.appendChild(msg);page.appendChild(test);next.disabled=true;
+        submit.onclick=function(){
+          var score=0,inputs=test.querySelectorAll("input");
+          Array.prototype.forEach.call(inputs,function(input){
+            if(String(input.value||"").trim().toLowerCase()===input.getAttribute("data-pe-cap-answer"))score++;
+          });
+          var result={score:score,total:qs.length,passed:score===qs.length};
+          try{sessionStorage.setItem(item[0],JSON.stringify(result));}catch(e){}
+          if(result.passed){
+            msg.textContent="✓ Successful. The next numbered step is unlocked.";
+            next.disabled=false;
+            speak("Capability test successful. The next numbered step is unlocked.");
+          }else{
+            msg.textContent="Please try again. All answers must be correct before the next step is unlocked.";
+            speak("Please try the capability test again.");
+          }
+        };
+      }else if(item[0]==="pacificEducationInitialCapabilityResult" || item[0]==="pacificEducationTeacherCapabilityResult"){
+        var source=item[0]==="pacificEducationTeacherCapabilityResult"?"pacificEducationTeacherCapabilityTest":"pacificEducationInitialCapabilityTest";
+        var raw=null,result=null;
+        try{raw=sessionStorage.getItem(source);if(raw)result=JSON.parse(raw);}catch(e){}
+        var resultBox=document.createElement("section");
+        resultBox.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;";
+        resultBox.innerHTML="<h3>📊 "+(source==="pacificEducationTeacherCapabilityTest"?"Teacher Capability Result":"Capability Result")+"</h3>";
+        if(result && result.passed){
+          resultBox.innerHTML+="<p>✓ Test successful. Score: <strong>"+result.score+" / "+result.total+"</strong></p><p>The next numbered step is unlocked.</p>";
+          next.disabled=false;
+        }else{
+          resultBox.innerHTML+="<p>No successful result is recorded. Go Back and complete the test.</p>";
+          next.disabled=true;
+        }
+        page.appendChild(resultBox);
+      }else if(target){
         moveTargetIntoPage(target,page);
 
         /*
