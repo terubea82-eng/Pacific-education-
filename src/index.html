@@ -126,6 +126,52 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 .pacedu-agreement{display:flex;gap:10px;align-items:flex-start;margin:18px 0;padding:15px;border:2px solid #174f63;border-radius:12px;background:#f7fbfc;font-weight:700}
 .pacedu-agreement input{width:24px;height:24px;flex:0 0 auto}
 @media(max-width:700px){.pacedu-entry-grid{grid-template-columns:1fr}.pacedu-entry-card{padding:14px;border-radius:12px}.pacedu-entry-actions{flex-direction:column;align-items:stretch}.pacedu-entry-actions button{width:100%}}
+
+/* Mandatory green Next controls — every guided page uses the same clear continuation action. */
+.pacific-mandatory-next,
+#paceduVisionNext,
+#paceduRulesContinue,
+#welcomeNextButton,
+#registrationNextButton,
+#prototypeNextButton,
+#levelNextButton,
+#subjectNextButton,
+#termNextButton,
+#capabilityNextButton,
+#dailyNextButton,
+#practiceNextButton,
+#assessmentNextButton{
+  background:#168a3a !important;
+  color:#fff !important;
+  border:2px solid #0f642a !important;
+  font-weight:800 !important;
+}
+.pacific-mandatory-next:hover,
+#paceduVisionNext:hover,
+#paceduRulesContinue:hover,
+#welcomeNextButton:hover,
+#registrationNextButton:hover,
+#prototypeNextButton:hover,
+#levelNextButton:hover,
+#subjectNextButton:hover,
+#termNextButton:hover,
+#capabilityNextButton:hover,
+#dailyNextButton:hover,
+#practiceNextButton:hover,
+#assessmentNextButton:hover{filter:brightness(.92)}
+.pacific-mandatory-next:focus-visible,
+#paceduVisionNext:focus-visible,
+#paceduRulesContinue:focus-visible,
+#welcomeNextButton:focus-visible,
+#registrationNextButton:focus-visible,
+#prototypeNextButton:focus-visible,
+#levelNextButton:focus-visible,
+#subjectNextButton:focus-visible,
+#termNextButton:focus-visible,
+#capabilityNextButton:focus-visible,
+#dailyNextButton:focus-visible,
+#practiceNextButton:focus-visible,
+#assessmentNextButton:focus-visible{outline:3px solid #000!important;outline-offset:3px}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
