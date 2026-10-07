@@ -1,6 +1,6 @@
 # Pacedu Foundation — Teaching Experience and Research-Informed Architecture
 
-## Locked foundation
+## Controlled-locked foundation
 
 Pacific Education (Pacedu) was primarily conceived from the Owner's 21 years of practical experience as a primary-school teacher.
 
@@ -10,7 +10,7 @@ That classroom experience is the foundation of the system. Pacedu is intended to
 
 Pacedu is designed around the principle that education should connect with real life. Daily activities are therefore intended to reflect practical classroom experience, learner needs, observation, practice, application, and real-life situations rather than treating education as isolated information.
 
-## Locked educational architecture
+## Core learning architecture
 
 The core learning pathway is:
 
@@ -50,12 +50,24 @@ Such research must be described as **research informing or supporting the design
 
 Pacedu must not claim that UNICEF, UNESCO, or another organization directly built or funded Pacedu without documented evidence.
 
-## Architectural governance
+## Future-safe architecture and controlled amendment
 
-These principles are locked as the educational foundation while the technical architecture remains future-safe. Features, page order, role sequences, activities, curriculum mappings, and integrations may be adjusted by authorized project controls without removing the core teaching-experience foundation.
+These principles are protected requirements while the technical architecture remains future-safe. Features, page order, role sequences, activities, curriculum mappings, and integrations may be adjusted by authorized project controls without removing the core teaching-experience foundation.
+
+**Locked does not mean permanently unchangeable.** The foundation is **LOCKED / CONTROLLED-AMENDMENT**: it is protected from accidental, silent, or casual replacement, but it may be deliberately amended later when a genuine educational, technical, accessibility, curriculum, governance, or operational need arises.
+
+Any amendment should:
+
+1. be deliberate and documented;
+2. be Owner-authorized through the project's controlled change process;
+3. preserve the #856 voice baseline and other protected requirements unless the amendment explicitly changes them;
+4. include compatibility/regression checks for registration, workspaces, navigation, accessibility, voice, daily activities, evidence, assessment, and deployment where relevant;
+5. record what changed, why it changed, and the resulting version/commit so the project remains auditable and reversible.
+
+Future improvements may extend the foundation without weakening its core purpose. This keeps Pacedu protected today while allowing responsible improvement tomorrow.
 
 ## Status
 
-**Foundation status: LOCKED**
+**Foundation status: LOCKED / CONTROLLED-AMENDMENT**
 
 The educational philosophy, teacher-support purpose, real-life learning principle, and listener-accessible explanation are protected requirements. Technical improvements may extend them but should not silently replace or contradict them.
