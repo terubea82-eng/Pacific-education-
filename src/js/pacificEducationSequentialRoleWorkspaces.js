@@ -8,12 +8,14 @@
 
   var ROLE_SEQUENCES = {
     "student":[
-      ["learningPlatform","Start Learning"],
+      ["learningPlatform","Student Workspace"],
+      ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
+      ["pacificEducationInitialCapabilityResult","Capability Result"],
       ["levelSelection","Class / Level"],
       ["subjectSelection","Subject"],
       ["termSelection","Term"],
-      ["capabilitySelection","Capability"],
-      ["dailyLesson","Daily Activities"],
+      ["capabilitySelection","Learning Capability"],
+      ["dailyLesson","Day 1 of 365"],
       ["dailyLessonPracticeStage","Practice"],
       ["assessments","Assessments"],
       ["pacificEducationCoverageDashboard","Curriculum Coverage"],
@@ -22,7 +24,9 @@
       ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Activities"]
     ],
     "blind-learner":[
-      ["learningPlatform","Voice-Guided Learning"],
+      ["learningPlatform","Voice-Guided Student Workspace"],
+      ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
+      ["pacificEducationInitialCapabilityResult","Capability Result"],
       ["levelSelection","Class / Level"],
       ["subjectSelection","Subject"],
       ["termSelection","Term"],
@@ -34,7 +38,9 @@
       ["pacificEducationHomeSubmission","Home Continuity"]
     ],
     "deaf-learner":[
-      ["learningPlatform","Visual Learning"],
+      ["learningPlatform","Visual Student Workspace"],
+      ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
+      ["pacificEducationInitialCapabilityResult","Capability Result"],
       ["levelSelection","Class / Level"],
       ["subjectSelection","Subject"],
       ["termSelection","Term"],
@@ -46,7 +52,9 @@
       ["pacificEducationHomeSubmission","Home Continuity"]
     ],
     "teacher":[
-      ["teacherDashboard","Teacher Dashboard"],
+      ["teacherDashboard","Teacher Workspace"],
+      ["pacificEducationTeacherCapabilityTest","Teacher Capability & Platform Test"],
+      ["pacificEducationTeacherCapabilityResult","Teacher Capability Result"],
       ["pacificEducationTeacherClassDashboard","My Classes"],
       ["teacherCalendarSection","Teacher Calendar"],
       ["pacificEducationTeacherEvidence","Student Evidence"],
@@ -216,11 +224,13 @@
     restoreAllMovedTargets();
     var status=document.getElementById("peSequentialStatus");
     var index=0;
+    var dailyDay=1;
 
     function renderPage(){
       restoreAllMovedTargets();
       page.innerHTML="";
       var item=sequence[index];
+      if(item[0]==="dailyLesson") item=[item[0],"Day "+dailyDay+" of 365"];
       var target=document.getElementById(item[0]);
       if(!target){
         if(item[0]==="pacificEducationExternalReviewerPortal" && window.PacificEducationProductionAppShell && typeof window.PacificEducationProductionAppShell.ensureExternalReviewerPortal==="function") window.PacificEducationProductionAppShell.ensureExternalReviewerPortal();
@@ -230,8 +240,8 @@
         target=document.getElementById(item[0]);
       }
       if(target && PROTECTED[item[0]]) target=null;
-      title.textContent=(role==="student"?"Student":role==="blind-learner"?"Blind Learner":role==="deaf-learner"?"Deaf Learner":role.replace(/-/g," "))+" Workspace — "+item[1];
-      progress.textContent="Step "+(index+1)+" of "+sequence.length;
+      title.textContent="STEP "+(index+1)+" — "+(role==="student"?"Student":role==="blind-learner"?"Blind Learner":role==="deaf-learner"?"Deaf Learner":role.replace(/-/g," "))+" Workspace — "+item[1];
+      progress.textContent="STEP "+(index+1)+" OF "+sequence.length+" — Follow the numbered order";
       status.textContent="";
       back.disabled=index===0;
       back.setAttribute("aria-label",index===0?"Back unavailable on first workspace page":"Back to "+(sequence[index-1] ? sequence[index-1][1] : "previous page"));
@@ -299,7 +309,7 @@
         if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus();}
         else shell.focus();
       }catch(e){}
-      speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this page, then press Next.");
+      speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
 
     back.onclick=function(){
@@ -313,6 +323,9 @@
 
     next.onclick=function(){
       if(index<sequence.length-1){
+        if(sequence[index][0]==="assessments" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+          if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
+        }
         index++;
         try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
         renderPage();
@@ -413,7 +426,7 @@
   else bind();
 
   window.PacificEducationSequentialRoleWorkspaces={
-    version:"1.1.0",
+    version:"1.2.0-numbered-user-sequence",
     roles:Object.keys(ROLE_SEQUENCES),
     learnerRoles:LEARNER_ROLES,
     build:build
