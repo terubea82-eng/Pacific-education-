@@ -155,7 +155,7 @@
   }
   function bindVoice(){var c=window.PacificEducationVoiceNextDirective;if(!c)return;try{if(typeof c.attach==="function")flow.forEach(function(x){c.attach(x[0],"pacificEducationVoiceStatus");});}catch(_){}}
   function audit(){
-    var failures=[];flow.forEach(function(x){if(!target(x[0]))failures.push(x[0]+" missing");if(!target(x[2]))failures.push(x[2]+" missing");});
+    var failures=[];flow.forEach(function(x){if(!target(x[0]))failures.push(x[0]+" missing");/* Workspace target is created dynamically after registration; audit it when the user completes registration rather than flagging the front page. */if(x[2]!=="pacificEducationPilotUserWorkspaces"&&!target(x[2]))failures.push(x[2]+" missing");});
     var result={version:VERSION,passed:failures.length===0,failures:failures,checkedAt:new Date().toISOString()};
     try{localStorage.setItem("pacificEducationFrontRepairAudit",JSON.stringify(result));}catch(_){ }
     status(failures.length?"Navigation recheck: "+failures.length+" issue(s) detected.":"Pacific Education pilot navigation ready: page boxes and Next controls active.");
