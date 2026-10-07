@@ -33,6 +33,7 @@
     registration.setAttribute("data-pe-box-sequence-ready","true");
 
     var state = 0;
+    var sequenceStarted = false;
 
     var controller = document.createElement("section");
     controller.id = "pacificEducationMandatoryBoxSequence";
@@ -70,6 +71,7 @@
 
     function update(){
       hideAll();
+      sequenceStarted = true;
 
       var item=BOXES[state];
       var el=get(item.id);
@@ -170,6 +172,7 @@
     }
 
     hideAll();
+    // Registration starts only when Page 4 is entered; never expose all registration boxes at once.
     update();
   }
 
