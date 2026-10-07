@@ -122,6 +122,81 @@ body.pe-pilot-all-features #userRegistrationOpenButton,body.pe-pilot-all-feature
 <div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" onclick="document.body.classList.add('pe-guided-flow');document.body.setAttribute('data-pe-flow-step','1');document.getElementById('pacificEducationIdentityRegistration').scrollIntoView({behavior:'smooth',block:'start'})">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
 </section>
 
+
+<section id="pacificEducationPilotPages" aria-label="Pacific Education pilot welcome pages" hidden>
+  <article id="paceduPageVision" class="pacedu-entry-page" aria-labelledby="paceduVisionTitle">
+    <div class="pacedu-entry-card">
+      <div class="pacedu-entry-illustration" role="img" aria-label="Pacific island, ocean, school and learning technology illustration">
+        <svg viewBox="0 0 900 300" aria-hidden="true">
+          <rect width="900" height="300" rx="24" fill="#dff4ff"/>
+          <circle cx="760" cy="70" r="42" fill="#fff4b8"/>
+          <path d="M0 190 Q160 135 320 190 T640 190 T900 185 V300 H0Z" fill="#67c7df"/>
+          <path d="M0 225 Q180 175 360 225 T720 220 T900 225 V300 H0Z" fill="#1683a1"/>
+          <path d="M80 205 Q180 135 285 205Z" fill="#4b9b62"/>
+          <path d="M125 205 Q180 155 235 205Z" fill="#7bbf69"/>
+          <rect x="500" y="145" width="180" height="85" rx="8" fill="#ffffff" stroke="#174f63" stroke-width="5"/>
+          <path d="M535 145 V105 H645 V145" fill="#f2b84b" stroke="#174f63" stroke-width="5"/>
+          <circle cx="560" cy="175" r="10" fill="#174f63"/><circle cx="620" cy="175" r="10" fill="#174f63"/>
+          <path d="M545 205 H635" stroke="#174f63" stroke-width="5" stroke-linecap="round"/>
+          <path d="M350 220 C380 170 425 170 455 220" fill="none" stroke="#174f63" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="402" cy="150" r="25" fill="#f0c8a0"/>
+          <path d="M370 230 Q402 195 434 230" fill="#ef8f42"/>
+          <text x="40" y="55" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#174f63">Pacific Education</text>
+          <text x="40" y="88" font-family="Arial,sans-serif" font-size="18" fill="#174f63">Learning • Inclusion • Connection • Progress</text>
+        </svg>
+      </div>
+      <h1 id="paceduVisionTitle">Vision • Mission • Purpose</h1>
+      <div class="pacedu-entry-grid">
+        <section><h2>🌊 Vision</h2><p>Accessible, inclusive and meaningful education for learners across the Pacific and beyond.</p></section>
+        <section><h2>🎓 Mission</h2><p>Use modern education technology to connect learners, teachers, families and education partners with learning, assessment, evidence and progress.</p></section>
+        <section><h2>💡 Purpose</h2><p>Support learning step by step, reduce unnecessary teacher workload, help identify learner strengths and needs, and keep learning connected when circumstances or connectivity are difficult.</p></section>
+      </div>
+      <div class="pacedu-entry-actions">
+        <button type="button" id="paceduVisionBack">⬅️ Back</button>
+        <button type="button" id="paceduVisionNext">➡️ Continue to Rules & Conditions</button>
+        <button type="button" class="pe-audio-command" data-audio-command-for="paceduVisionNext" aria-label="Audio command for vision page">🎙️ Audio Command</button>
+      </div>
+    </div>
+  </article>
+
+  <article id="paceduPageRules" class="pacedu-entry-page" aria-labelledby="paceduRulesTitle" hidden>
+    <div class="pacedu-entry-card">
+      <h1 id="paceduRulesTitle">🔐 Pacedu Rules & Conditions</h1>
+      <p><strong>Registration cannot be completed until the required agreement is confirmed.</strong></p>
+      <p>These controls protect learners, families, teachers and the integrity of the controlled pilot.</p>
+      <details>
+        <summary><strong>Read the mandatory rules</strong></summary>
+        <ol class="pacedu-rules-list">
+          <li><strong>Educational use:</strong> Use Pacedu for lawful educational, assessment, support and pilot activities.</li>
+          <li><strong>Respect and safety:</strong> Do not harass, threaten, impersonate, abuse or deliberately disrupt other users.</li>
+          <li><strong>Accurate registration:</strong> Provide information that is truthful and appropriate for the role selected.</li>
+          <li><strong>Role protection:</strong> Select your genuine primary role. Privileged Owner/Technician controls are restricted.</li>
+          <li><strong>Privacy:</strong> Do not enter unnecessary sensitive child information, passwords, payment credentials or exact child-location data during this prototype pilot.</li>
+          <li><strong>Workspace protection:</strong> Do not attempt to access another person's workspace or bypass role permissions.</li>
+          <li><strong>Learning evidence:</strong> Do not falsify learner responses, assessments, progress or teacher-review evidence.</li>
+          <li><strong>Payments:</strong> Buy Plans and real purchasing are inactive during this controlled pilot.</li>
+          <li><strong>Pilot status:</strong> Pacedu is a controlled pilot, not a fully approved production education service.</li>
+          <li><strong>Connectivity:</strong> Offline-first features may be available, but local/offline operation does not guarantee permanent data storage or synchronization.</li>
+          <li><strong>Accessibility:</strong> Use available voice, text, speaker and accessibility controls responsibly. The protected #856 voice architecture is part of the pilot baseline.</li>
+          <li><strong>Safety controls:</strong> Pacedu may restrict, suspend or disable access when necessary for safety, testing, maintenance or pilot governance.</li>
+          <li><strong>Changes:</strong> Pilot features, curriculum mappings and technical controls may be improved under documented change control.</li>
+          <li><strong>Pilot evidence:</strong> Authorized testing and feedback may be recorded for pilot verification and improvement.</li>
+        </ol>
+      </details>
+      <label class="pacedu-agreement">
+        <input type="checkbox" id="paceduRulesAgreement">
+        <span>I have read and agree to the Pacedu Rules & Conditions and understand that this is a controlled pilot.</span>
+      </label>
+      <p id="paceduRulesStatus" role="status" aria-live="polite">Agreement required before registration can continue.</p>
+      <div class="pacedu-entry-actions">
+        <button type="button" id="paceduRulesBack">⬅️ Back</button>
+        <button type="button" id="paceduRulesContinue" disabled>✅ Agree & Continue to Registration</button>
+        <button type="button" class="pe-audio-command" data-audio-command-for="paceduRulesContinue" aria-label="Audio command for rules confirmation">🎙️ Audio Command</button>
+      </div>
+    </div>
+  </article>
+</section>
+
 <section id="pacificEducationMailbox" aria-label="Pacific Education Mail Box">
 <h2>📬 Pacific Education Mail Box</h2>
 <p>In-app pilot mailbox for Pacific Education notices, authorized communications and feedback. It is separate from personal email.</p>
