@@ -12,11 +12,15 @@
   }
   function show(page){
     var body=document.body;
+    var welcome=byId("pacificEducationWelcome");
+    var welcomeNext=byId("welcomeNextWrapper");
+    var pilot=byId("pacificEducationPilotPages");
     if(page===4){
       body.classList.remove("pe-guided-flow");
       body.classList.add("pacedu-entry-mode","pacedu-registration-mode");
-      var pilot=byId("pacificEducationPilotPages");
       if(pilot)pilot.hidden=true;
+      if(welcome)welcome.hidden=true;
+      if(welcomeNext)welcomeNext.hidden=true;
       var reg=byId("pacificEducationIdentityRegistration");
       if(reg)reg.style.display="";
       if(reg)reg.scrollIntoView({behavior:"smooth",block:"start"});
@@ -32,26 +36,35 @@
     });
     var welcome=byId("pacificEducationWelcome");
     if(welcome)welcome.style.display="";
-    var pilot=byId("pacificEducationPilotPages");
-    if(pilot)pilot.hidden=false;
+    if(page===1){
+      if(welcome)welcome.hidden=false;
+      if(welcomeNext)welcomeNext.hidden=false;
+      if(pilot)pilot.hidden=true;
+    }else{
+      if(welcome)welcome.hidden=true;
+      if(welcomeNext)welcomeNext.hidden=true;
+      if(pilot)pilot.hidden=false;
+    }
     if(page===1)announce("Welcome to Pacific Education. Continue to learn about our vision, mission and purpose.");
     if(page===2)announce("Vision, mission and purpose. Continue to the mandatory Pacedu rules and conditions.");
     if(page===3)announce("Pacedu Rules and Conditions. Read and confirm the required agreement before registration.");
   }
   function init(){
     document.body.classList.add("pacedu-entry-mode");
-    var pilot=byId("pacificEducationPilotPages"); if(pilot)pilot.hidden=false;
+    var pilot=byId("pacificEducationPilotPages"); if(pilot)pilot.hidden=true;
     var v=byId("paceduVisionNext"),vb=byId("paceduVisionBack");
     var r=byId("paceduRulesContinue"),rb=byId("paceduRulesBack"),check=byId("paceduRulesAgreement"),status=byId("paceduRulesStatus");
-    if(v)v.onclick=function(){show(3);};
-    if(vb)vb.onclick=function(){show(1);};
-    if(rb)rb.onclick=function(){show(2);};
+    if(v)v.onclick=function(e){if(e)e.preventDefault();show(3);};
+    if(vb)vb.onclick=function(e){if(e)e.preventDefault();show(1);};
+    if(rb)rb.onclick=function(e){if(e)e.preventDefault();show(2);};
     function sync(){
       var ok=!!(check&&check.checked);
       if(r)r.disabled=!ok;
       if(status)status.textContent=ok?"Agreement confirmed. You may continue to registration.":"Agreement required before registration can continue.";
     }
     if(check)check.addEventListener("change",sync);
+    var welcomeNextButton=byId("welcomeNextButton");
+    if(welcomeNextButton)welcomeNextButton.onclick=function(e){if(e)e.preventDefault();show(2);};
     if(r)r.onclick=function(){
       if(!check||!check.checked)return;
       try{localStorage.setItem(AGREEMENT_KEY,JSON.stringify({version:"1",acceptedAt:new Date().toISOString()}));}catch(_){}
