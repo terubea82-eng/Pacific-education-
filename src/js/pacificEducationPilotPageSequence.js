@@ -11,6 +11,8 @@
     }catch(_){}
   }
   function show(page){
+    /* Gateway state is authoritative: prevent legacy repair scripts from restoring Page 1 after a transition. */
+    document.body.setAttribute("data-pac-edu-entry-page",String(page));
     var body=document.body;
     var welcome=byId("pacificEducationWelcome");
     var welcomeNext=byId("welcomeNextWrapper");
