@@ -50,6 +50,16 @@ public final class MainActivity extends Activity {
     private Voice alternateVoice;
     private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
     private static final String AUTO_WELCOME_TAG = "pacific-education-auto-welcome";
+    private static final String VOICE_RESUME_JSON = "voiceResumeJson";
+    private static final String VOICE_RESUME_INDEX = "voiceResumeIndex";
+    private static final String VOICE_RESUME_OFFSET = "voiceResumeOffset";
+    private static final String VOICE_RESUME_ACTIVE = "voiceResumeActive";
+    private static final String VOICE_RESUME_STOPPED = "voiceResumeStopped";
+    private String nativeConversationJson = "";
+    private int nativeConversationIndex = 0;
+    private int nativeConversationOffset = 0;
+    private boolean nativeConversationActive = false;
+    private boolean nativeConversationIntentionalStop = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,25 +140,60 @@ public final class MainActivity extends Activity {
         }
     }
 
+    private void saveNativeConversationResume() {
+        if (prefs == null || !nativeConversationActive || nativeConversationJson.isEmpty()) return;
+        prefs.edit().putString(VOICE_RESUME_JSON, nativeConversationJson).putInt(VOICE_RESUME_INDEX, nativeConversationIndex).putInt(VOICE_RESUME_OFFSET, nativeConversationOffset).putBoolean(VOICE_RESUME_ACTIVE, true).putBoolean(VOICE_RESUME_STOPPED, nativeConversationIntentionalStop).apply();
+    }
+
+    private void clearNativeConversationResume() {
+        nativeConversationJson = "";
+        nativeConversationIndex = 0;
+        nativeConversationOffset = 0;
+        nativeConversationActive = false;
+        prefs.edit().remove(VOICE_RESUME_JSON).remove(VOICE_RESUME_INDEX).remove(VOICE_RESUME_OFFSET).putBoolean(VOICE_RESUME_ACTIVE, false).putBoolean(VOICE_RESUME_STOPPED, false).apply();
+    }
+
+    private void restoreNativeConversationResume() {
+        if (prefs == null || nativeConversationActive) return;
+        if (!prefs.getBoolean(VOICE_RESUME_ACTIVE, false) || prefs.getBoolean(VOICE_RESUME_STOPPED, false)) return;
+        String json = prefs.getString(VOICE_RESUME_JSON, "");
+        if (json == null || json.trim().isEmpty()) return;
+        nativeConversationJson = json;
+        nativeConversationIndex = Math.max(0, prefs.getInt(VOICE_RESUME_INDEX, 0));
+        nativeConversationOffset = Math.max(0, prefs.getInt(VOICE_RESUME_OFFSET, 0));
+        nativeConversationActive = true;
+        nativeConversationIntentionalStop = false;
+        welcomeHandler.postDelayed(() -> speakConversationNative(nativeConversationJson), 350);
+    }
+
     private boolean speakConversationNative(String json) {
         if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
         try {
             JSONArray lines = new JSONArray(json);
             if (lines.length() == 0) return false;
-            final int[] index = {0};
+            final int[] index = {Math.max(0, Math.min(nativeConversationIndex, lines.length() - 1))};
+            final int[] baseOffset = {Math.max(0, nativeConversationOffset)};
             textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-                @Override public void onStart(String utteranceId) { }
+                @Override public void onStart(String utteranceId) { nativeConversationActive = true; saveNativeConversationResume(); }
+                @Override public void onRangeStart(String utteranceId, int start, int end, int frame) { if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) { nativeConversationOffset = Math.max(0, baseOffset[0] + start); saveNativeConversationResume(); } }
                 @Override public void onDone(String utteranceId) {
                     int next = index[0] + 1;
                     index[0] = next;
+                    nativeConversationOffset = 0;
                     if (next < lines.length()) {
+                        nativeConversationIndex = next;
+                        saveNativeConversationResume();
                         runOnUiThread(() -> speakConversationLine(lines, next));
+                    } else {
+                        clearNativeConversationResume();
                     }
                 }
                 @Override public void onError(String utteranceId) { }
                 @Override public void onError(String utteranceId, int errorCode) { }
             });
-            speakConversationLine(lines, 0);
+            nativeConversationIndex = index[0];
+            saveNativeConversationResume();
+            speakConversationLine(lines, index[0]);
             return true;
         } catch (Exception error) {
             return false;
@@ -159,8 +204,13 @@ public final class MainActivity extends Activity {
         if (!ttsReady || textToSpeech == null || index < 0 || index >= lines.length()) return;
         try {
             JSONObject line = lines.getJSONObject(index);
-            String text = line.optString("text", "").trim();
-            if (text.isEmpty()) { speakConversationLine(lines, index + 1); return; }
+            String fullText = line.optString("text", "").trim();
+            if (fullText.isEmpty()) { speakConversationLine(lines, index + 1); return; }
+            int offset = (index == nativeConversationIndex) ? Math.min(nativeConversationOffset, fullText.length()) : 0;
+            String text = offset > 0 ? fullText.substring(offset) : fullText;
+            nativeConversationIndex = index;
+            nativeConversationOffset = offset;
+            saveNativeConversationResume();
             int speaker = line.optInt("speaker", index % 2);
             Voice voice = speaker % 2 == 0 ? preferredVoice : alternateVoice;
             if (voice != null) textToSpeech.setVoice(voice);
@@ -204,6 +254,8 @@ public final class MainActivity extends Activity {
         @JavascriptInterface
         public void stop() {
             pendingNativeSpeech = "";
+            nativeConversationIntentionalStop = true;
+            clearNativeConversationResume();
             if (textToSpeech != null) {
                 try { textToSpeech.stop(); } catch (Exception ignored) {}
             }
@@ -402,6 +454,18 @@ public final class MainActivity extends Activity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
         return true;
+    }
+
+    @Override
+    protected void onPause() {
+        if (nativeConversationActive && !nativeConversationIntentionalStop) saveNativeConversationResume();
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        restoreNativeConversationResume();
     }
 
     @Override
