@@ -315,7 +315,7 @@
       back.disabled=index===0;
       back.setAttribute("aria-label",index===0?"Back unavailable on first workspace page":"Back to "+(sequence[index-1] ? sequence[index-1][1] : "previous page"));
       back.disabled=index===0;
-      next.textContent=index===sequence.length-1?"Finish":"➡️ Next";
+      next.textContent=index===sequence.length-1?"Finish":"➡️ Next"; next.classList.add("pacific-mandatory-next"); next.setAttribute("aria-label",index===sequence.length-1?"Finish workspace sequence":"Next to "+(sequence[index+1] ? sequence[index+1][1] : "next page"));
       if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
         var teacherTest=item[0]==="pacificEducationTeacherCapabilityTest";
         var test=document.createElement("section");
