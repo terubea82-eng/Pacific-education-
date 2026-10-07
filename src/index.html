@@ -760,6 +760,62 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationTeacherReviewQueue.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationStudentProgressDashboardUI.js?v=20261006-protected-wiring"></script>
+<script src="./js/pacificEducationUserBoxVisualActivation.js?v=20261007-user-box-blue"></script>
+<style id="pacific-education-user-box-visual-standard">
+/* User-facing boxes only: light Pacific blue. Keep the rest of the UI neutral/status-based. */
+.pe-user-box{
+  background:#eef8ff !important;
+  border:2px solid #7bb9e8 !important;
+  border-radius:10px !important;
+  box-shadow:0 1px 4px rgba(20,90,140,.10);
+  color:#17324d;
+}
+.pe-user-box h1,.pe-user-box h2,.pe-user-box h3,.pe-user-box h4,
+.pe-user-box legend,.pe-user-box summary{color:#145b8d;}
+.pe-user-box button:not(.pacific-mandatory-next):not(.pacific-flow-next button):not(#peSequentialNext):not(#pilotRegistrationSaveButton){
+  border:1px solid #6aa9d8;
+  background:#f7fcff;
+  color:#164e70;
+}
+.pe-user-box button:not(.pacific-mandatory-next):not(.pacific-flow-next button):not(#peSequentialNext):not(#pilotRegistrationSaveButton):hover{
+  background:#dff1ff;
+}
+.pe-user-control{
+  background:#f8fcff !important;
+  border:2px solid #7bb9e8 !important;
+  color:#17324d !important;
+}
+.pe-user-box-selected{
+  background:#d8efff !important;
+  border:3px solid #1877b7 !important;
+  box-shadow:0 0 0 3px rgba(24,119,183,.16);
+}
+.pe-user-next,
+.pacific-mandatory-next,
+.pacific-flow-next button,
+#peSequentialNext,
+#registrationNextButton,
+#pilotRegistrationSaveButton{
+  background:#168a3a !important;
+  color:#fff !important;
+  border-color:#0f642a !important;
+}
+.pe-protected-voice-control,
+#pacificEducationAIPlaybackButton,
+#pacificEducationWelcomeVoiceButton,
+#pacificEducationStopSpeechButton{
+  background:#111 !important;
+  color:#fff !important;
+  border-color:#000 !important;
+}
+.pe-user-box:focus-within{
+  outline:3px solid #1877b7;
+  outline-offset:2px;
+}
+@media(max-width:700px){
+  .pe-user-box{padding:14px !important;}
+}
+</style>
 </body></html>
 <!-- GitHub pilot recheck trigger: guided flow controls -->
 
