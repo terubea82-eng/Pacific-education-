@@ -58,8 +58,9 @@ public final class MainActivity extends Activity {
         textToSpeech = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
                 int languageResult = textToSpeech.setLanguage(Locale.forLanguageTag("en-AU"));
-                ttsReady = languageResult != TextToSpeech.LANG_MISSING_DATA
-                        && languageResult != TextToSpeech.LANG_NOT_SUPPORTED;
+                if (languageResult == TextToSpeech.LANG_MISSING_DATA || languageResult == TextToSpeech.LANG_NOT_SUPPORTED) languageResult = textToSpeech.setLanguage(Locale.US);
+                if (languageResult == TextToSpeech.LANG_MISSING_DATA || languageResult == TextToSpeech.LANG_NOT_SUPPORTED) languageResult = textToSpeech.setLanguage(Locale.UK);
+                ttsReady = languageResult != TextToSpeech.LANG_MISSING_DATA && languageResult != TextToSpeech.LANG_NOT_SUPPORTED;
                 if (ttsReady) {
                     selectPreferredVoice();
                     textToSpeech.setSpeechRate(0.95f);
