@@ -49,6 +49,13 @@
     if(page===2)announce("Vision, mission and purpose. Continue to the mandatory Pacedu rules and conditions.");
     if(page===3)announce("Pacedu Rules and Conditions. Read and confirm the required agreement before registration.");
   }
+
+  function bindWelcomeNext(){
+    var button=byId("welcomeNextButton");
+    if(!button || button.getAttribute("data-pe-page-next-bound")==="true") return;
+    button.setAttribute("data-pe-page-next-bound","true");
+    button.addEventListener("click",function(e){if(e)e.preventDefault();show(2);},false);
+  }
   function init(){
     document.body.classList.add("pacedu-entry-mode");
     var pilot=byId("pacificEducationPilotPages"); if(pilot)pilot.hidden=true;
@@ -65,8 +72,7 @@
       if(status)status.textContent=ok?"Agreement confirmed. You may continue to registration.":"Agreement required before registration can continue.";
     }
     if(check)check.addEventListener("change",sync);
-    var welcomeNextButton=byId("welcomeNextButton");
-    if(welcomeNextButton)welcomeNextButton.onclick=function(e){if(e)e.preventDefault();show(2);};
+    bindWelcomeNext();
     if(r)r.onclick=function(){
       if(!check||!check.checked)return;
       try{localStorage.setItem(AGREEMENT_KEY,JSON.stringify({version:"1",acceptedAt:new Date().toISOString()}));}catch(_){}
@@ -74,6 +80,8 @@
     };
     sync();
     show(1);
+    window.setTimeout(bindWelcomeNext,300);
+    window.setTimeout(bindWelcomeNext,1000);
   }
   window.PacificEducationPilotPages={version:"1.0.0",goTo:show,agreementKey:AGREEMENT_KEY};
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
