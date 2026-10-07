@@ -524,7 +524,7 @@
         setTimeout(function(){
           var registered=false, chosen=getRole();
           try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-          if(registered && chosen && ROLE_SEQUENCES[chosen] && !document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen);
+          if(registered && chosen && getRoleSequence(chosen) && !document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen);
         },0);
       },false);
     });
