@@ -127,6 +127,16 @@
     var el=event.target&&event.target.closest?event.target.closest("button,a,[role=button]"):null;if(!isNavigationControl(el))return;
     var id=el.id||"";
     var label=textOf(el).toLowerCase();
+    /* The dedicated Pacedu entry gateway owns Welcome -> Vision -> Rules -> Registration. */
+    if(id==="welcomeNextButton" && window.PacificEducationPilotPages && typeof window.PacificEducationPilotPages.goTo==="function"){
+      event.preventDefault();event.stopImmediatePropagation();window.PacificEducationPilotPages.goTo(2);return;
+    }
+    if(id==="paceduVisionNext" && window.PacificEducationPilotPages && typeof window.PacificEducationPilotPages.goTo==="function"){
+      event.preventDefault();event.stopImmediatePropagation();window.PacificEducationPilotPages.goTo(3);return;
+    }
+    if(id==="paceduRulesContinue" && window.PacificEducationPilotPages && typeof window.PacificEducationPilotPages.goTo==="function"){
+      event.preventDefault();event.stopImmediatePropagation();window.PacificEducationPilotPages.goTo(4);return;
+    }
     if(id==="userRegistrationOpenButton" || /user registration/.test(label) || /^users?$/.test(label)){
       event.preventDefault();event.stopImmediatePropagation();openRegistration();return;
     }
