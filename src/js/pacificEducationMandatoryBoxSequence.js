@@ -158,23 +158,8 @@
       }
     },true);
 
-    var save=get("pilotRegistrationSaveButton");
-    if(save){
-      save.addEventListener("click",function(){
-        setTimeout(function(){
-          var registered=false, role="";
-          try{
-            registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" ||
-              !!sessionStorage.getItem("pacificEducationPilotRegistration");
-            role=sessionStorage.getItem("pacificEducationPilotRole")||"";
-          }catch(e){}
-          if(registered && role && window.PacificEducationSequentialRoleWorkspaces &&
-             typeof window.PacificEducationSequentialRoleWorkspaces.build==="function"){
-            window.PacificEducationSequentialRoleWorkspaces.build(role);
-          }
-        },150);
-      },true);
-    }
+    /* Registration save is intentionally not allowed to open a role workspace here.
+       SingleNavigation remains the only guided-flow owner. */
 
     hideAll();
     // Registration starts only when Page 4 is entered; never expose all registration boxes at once.
