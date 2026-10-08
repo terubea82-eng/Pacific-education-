@@ -495,7 +495,6 @@
     repairDailyActivityRuntime();
     window.setTimeout(repairControls, 500);
     window.setTimeout(repairControls, 1500);
-    window.setTimeout(repairNavigationAndDashboards, 2000);
     window.setTimeout(function(){ ensureDailyActivitiesVisible(); forcePilotDailyActivityFallback(); }, 2000);
     window.setTimeout(forcePilotDailyActivityFallback, 3000);
   }
