@@ -33,7 +33,7 @@ import org.json.JSONObject;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=498ae327-next-repair-20261008";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=539a2f6d-next-active-20261008";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
@@ -434,6 +434,15 @@ public final class MainActivity extends Activity {
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 view.setVisibility(View.VISIBLE);
                 super.onPageStarted(view, url, favicon);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                // Android-only safety repair: make the first gateway Next control
+                // touch-active even if an older cached script has interfered.
+                // This does not replace or modify the protected #856 voice system.
+                view.evaluateJavascript("(function(){try{var b=document.getElementById('welcomeNextButton');if(!b)return;b.disabled=false;b.removeAttribute('aria-disabled');b.style.pointerEvents='auto';b.style.touchAction='manipulation';if(b.getAttribute('data-android-welcome-next')==='1')return;b.setAttribute('data-android-welcome-next','1');b.addEventListener('click',function(e){try{e.preventDefault();e.stopImmediatePropagation();if(window.PacificEducationPilotPages&&typeof window.PacificEducationPilotPages.goTo==='function'){window.PacificEducationPilotPages.goTo(2);return false;}document.body.classList.add('pacedu-entry-mode','pacedu-registration-mode');document.body.setAttribute('data-pac-edu-entry-page','2');var w=document.getElementById('pacificEducationWelcome'),n=document.getElementById('welcomeNextWrapper'),p=document.getElementById('pacificEducationPilotPages'),r=document.getElementById('pacificEducationIdentityRegistration');if(w)w.style.display='none';if(n)n.style.display='none';if(p)p.style.display='none';if(r){r.hidden=false;r.style.display='';}}catch(_){}return false;},true);}catch(_){} })();", null);
             }
         });
 
