@@ -52,6 +52,12 @@ function bind(id,fn){
   },false);
 }
 function init(){
+  /* Fresh launch always starts on the real Welcome page. Registration must not
+     be announced or displayed until the user presses through the gateway. */
+  if(!document.body.getAttribute("data-pe-single-navigation-started")){
+    document.body.setAttribute("data-pe-single-navigation-started","true");
+    gateway(1);
+  }
   document.body.setAttribute("data-pe-navigation-owner","single");
   bind("welcomeNextButton",function(){gateway(2);});
   bind("paceduVisionNext",function(){gateway(3);});
