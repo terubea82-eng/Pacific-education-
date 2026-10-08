@@ -244,12 +244,11 @@
       var name=String(saved.name||"").trim();
       var completion="Registration completed successfully. "+(name?"Registered name: "+name+". ":"")+"Registered role: "+role+". Your registration has been saved for this pilot session. Your individual workspace is now opening.";
       speak(completion);
-      setTimeout(function(){speak(workspaceWelcomeForRole(role));},900);
       setTimeout(function(){
         var workspace=document.getElementById("pacificEducationPilotUserWorkspaces");
         if(workspace&&!workspace.hidden){try{workspace.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
         speak(workspaceWelcomeForRole(role));
-      },1800);
+      },1200);
     }catch(_){ }
   }
   function installRegistrationCompletionWatcher(){
