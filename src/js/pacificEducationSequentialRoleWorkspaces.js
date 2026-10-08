@@ -386,9 +386,9 @@
           activityNav.style.cssText="margin:14px 0;padding:14px;border:2px solid currentColor;border-radius:10px;";
           activityNav.innerHTML="<h3 style=\"margin-top:0\">Key Learning Activities</h3><p>Choose a key activity. Your existing class, term and learning pathway remain in control.</p>"+
             "<div style=\"display:flex;gap:8px;flex-wrap:wrap\">"+
-            "<button type=\"button\" id=\"peEnglishActivityShortcut\">📘 English</button>"+
-            "<button type=\"button\" id=\"peMathematicsActivityShortcut\">➗ Mathematics</button>"+
-            "<button type=\"button\" id=\"pePhonicsActivityShortcut\">🔤 Phonics</button></div>"+
+            "<button type=\"button\" id=\"peEnglishActivityShortcut\" style=\"background:#eef8ff;border:2px solid #7bb9e8;border-radius:8px;padding:10px 14px;font-weight:700;\">📘 English</button>"+
+            "<button type=\"button\" id=\"peMathematicsActivityShortcut\" style=\"background:#eef8ff;border:2px solid #7bb9e8;border-radius:8px;padding:10px 14px;font-weight:700;\">➗ Math</button>"+
+            "<button type=\"button\" id=\"pePhonicsActivityShortcut\" style=\"background:#eef8ff;border:2px solid #7bb9e8;border-radius:8px;padding:10px 14px;font-weight:700;\">🔤 Phonics</button></div>"+
             "<p id=\"peKeyLearningActivityStatus\" role=\"status\" aria-live=\"polite\"></p>";
           page.insertBefore(activityNav,page.firstChild);
           function selectSubject(subject){
