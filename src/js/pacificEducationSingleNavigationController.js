@@ -21,7 +21,8 @@ var STEPS = {
   capabilityNextButton: [7, "dailyLesson"],
   dailyNextButton:      [8, "dailyLessonPracticeStage"],
   practiceNextButton:   [9, "assessments"],
-  assessmentNextButton: [10, "teacherCalendarSection"]
+  assessmentNextButton: [10, "pacificEducationCoverageDashboard"],
+  coverageNextButton:   [11, "teacherCalendarSection"]
 };
 
 var GATEWAY = {
@@ -43,7 +44,8 @@ var BACK = {
   dailyLesson: [9, "capability"],
   dailyLessonPracticeStage: [10, "daily"],
   assessments: [11, "practice"],
-  teacherCalendarSection: [12, "assessment"]
+  pacificEducationCoverageDashboard: [12, "assessment"],
+  teacherCalendarSection: [13, "coverage"]
 };
 
 var bound = {};
@@ -313,7 +315,11 @@ function bindGuidedFeatureButtons(){
   });
 
   bind("assessmentContinueCoverageButton",function(){
-    guided(10,"teacherCalendarSection");
+    guided(10,"pacificEducationCoverageDashboard");
+  });
+
+  bind("coverageNextButton",function(button){
+    if(!button.disabled) guided(11,"teacherCalendarSection");
   });
 }
 
