@@ -48,6 +48,22 @@ var BACK = {
 
 var bound = {};
 var backBound = {};
+var GUIDED_PAGES = [
+  "paceduPageVision",
+  "paceduPageRules",
+  "pacificEducationIdentityRegistration",
+  "prototypeAccess",
+  "levelSelection",
+  "subjectSelection",
+  "termSelection",
+  "capabilitySelection",
+  "dailyLesson",
+  "dailyLessonPracticeStage",
+  "assessments",
+  "teacherCalendarSection",
+  "pacificEducationCoverageDashboard"
+];
+
 
 function el(id){ return document.getElementById(id); }
 
@@ -95,9 +111,27 @@ function refreshFeatureForTarget(targetId){
   }
 }
 
+function hideOtherGuidedPages(targetId){
+  GUIDED_PAGES.forEach(function(pageId){
+    var page=el(pageId);
+    if(!page) return;
+    if(pageId===targetId){
+      page.hidden=false;
+      page.removeAttribute("aria-hidden");
+      try{ page.style.removeProperty("display"); }catch(e){}
+      return;
+    }
+    page.hidden=true;
+    page.setAttribute("aria-hidden","true");
+    try{ page.style.display="none"; }catch(e){}
+  });
+}
+
 function revealTarget(targetId){
   var target=el(targetId);
   if(!target) return false;
+
+  hideOtherGuidedPages(targetId);
 
   target.hidden=false;
   target.removeAttribute("aria-hidden");
