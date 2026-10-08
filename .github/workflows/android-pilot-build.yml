@@ -149,13 +149,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -e
-          if gh release view pilot-public >/dev/null 2>&1; then
-            gh release upload pilot-public public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt --clobber
-            gh release edit pilot-public --title "Pacific Education Pilot — Public APK" --notes "Controlled pilot APK. Latest successful Android pilot build is refreshed by CI. Protected #856 voice system and current pilot changes are preserved." --prerelease
-          else
-            gh release create pilot-public public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt \
-              --target "${{ github.sha }}" \
-              --title "Pacific Education Pilot — Public APK" \
-              --notes "Controlled pilot APK built from ${{ github.sha }}. Protected #856 voice system and current pilot changes are preserved." \
-              --prerelease
-          fi
+          # GitHub immutable releases cannot have assets replaced. Publish one
+          # immutable public release per successful commit instead of attempting
+          # to overwrite the previous public release.
+          PUBLIC_TAG="pilot-public-${GITHUB_SHA::12}"
+          gh release create "$PUBLIC_TAG" public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt \
+            --target "${GITHUB_SHA}" \
+            --title "Pacific Education Pilot — Public APK ${GITHUB_SHA::12}" \
+            --notes "Controlled pilot APK built from ${GITHUB_SHA}. Protected #856 voice system and current pilot changes are preserved. This release is immutable and corresponds exactly to this successful build commit." \
+            --prerelease
