@@ -18,7 +18,7 @@ main{max-width:1000px;margin:auto;padding:20px}
 section{margin-bottom:24px;padding:20px;border:1px solid #ccc;border-radius:8px}
 body.pe-guided-flow main > *{display:none !important}
 body.pe-guided-flow #welcomeNextWrapper,body.pe-guided-flow #registrationNextWrapper,body.pe-guided-flow #prototypeNextWrapper,body.pe-guided-flow #levelNextWrapper,body.pe-guided-flow #subjectNextWrapper,body.pe-guided-flow #termNextWrapper,body.pe-guided-flow #capabilityNextWrapper{display:none !important}
-body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #paceduVisionNext,body.pe-guided-flow[data-pe-flow-step="2"] #paceduRulesContinue,body.pe-guided-flow[data-pe-flow-step="3"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #prototypeNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="7"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="8"] #capabilityNextWrapper{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="0"] #welcomeNextWrapper,body.pe-guided-flow[data-pe-flow-step="1"] #paceduVisionNext,body.pe-guided-flow[data-pe-flow-step="2"] #paceduRulesContinue,body.pe-guided-flow[data-pe-flow-step="1"] #registrationNextWrapper,body.pe-guided-flow[data-pe-flow-step="2"] #prototypeNextWrapper,body.pe-guided-flow[data-pe-flow-step="3"] #levelNextWrapper,body.pe-guided-flow[data-pe-flow-step="4"] #subjectNextWrapper,body.pe-guided-flow[data-pe-flow-step="5"] #termNextWrapper,body.pe-guided-flow[data-pe-flow-step="6"] #capabilityNextWrapper{display:block !important}
 
 body.pe-guided-flow #pacificEducationAppMenu,body.pe-guided-flow header,body.pe-guided-flow #userFirstNavigation,body.pe-guided-flow #buyPlans,body.pe-guided-flow #pacificEducationPaymentLinksAlways,body.pe-guided-flow #pacificEducationInstitutionFees,body.pe-guided-flow #pacificEducationUniversityFeeWorkflow,body.pe-guided-flow #pacificEducationAccessEntitlement{display:none !important}
 body.pe-guided-flow #pacificEducationAccessibilityControls{display:flex !important}
@@ -28,19 +28,17 @@ body.pe-pilot-all-features .pacific-flow-next{display:flex !important}
 body.pe-pilot-all-features #buyPlans,body.pe-pilot-all-features #pacificEducationPaymentLinksAlways,body.pe-pilot-all-features #pacificEducationInstitutionFees,body.pe-pilot-all-features #pacificEducationUniversityFeeWorkflow,body.pe-pilot-all-features #pacificEducationAccessEntitlement{display:none !important}
 
 body.pe-guided-flow[data-pe-flow-step="0"] #pacificEducationWelcome,body.pe-guided-flow[data-pe-flow-step="0"] #pilotBanner{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="1"] #paceduPageVision{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="2"] #paceduPageRules{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="3"] #pacificEducationIdentityRegistration{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="4"] #prototypeAccess{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="5"] #levelSelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="6"] #subjectSelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="7"] #termSelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="8"] #capabilitySelection{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="9"] #dailyLesson{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="10"] #dailyLessonPracticeStage{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="11"] #assessments{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="12"] #pacificEducationCoverageDashboard{display:block !important}
-body.pe-guided-flow[data-pe-flow-step="13"] #teacherCalendarSection,body.pe-guided-flow[data-pe-flow-step="13"] #pacificEducationExternalReviewerPortal{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="1"] #pacificEducationIdentityRegistration{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="2"] #prototypeAccess{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="3"] #levelSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="4"] #subjectSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="5"] #termSelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="6"] #capabilitySelection{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="7"] #dailyLesson{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="8"] #dailyLessonPracticeStage{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="9"] #assessments{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="10"] #pacificEducationCoverageDashboard{display:block !important}
+body.pe-guided-flow[data-pe-flow-step="11"] #teacherCalendarSection,body.pe-guided-flow[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
 
 button{padding:10px 16px;margin:5px;cursor:pointer}
 .pacific-flow-next{display:flex;justify-content:flex-start;align-items:center;text-align:left;position:sticky;left:0;bottom:8px;z-index:30;margin-top:16px;padding:8px 0;min-height:48px}.pacific-flow-next button{margin-left:0;min-height:58px;min-width:170px;padding:14px 24px;font-size:1.12rem;font-weight:700;border-radius:10px;touch-action:manipulation}
@@ -539,17 +537,12 @@ git status</pre>
       if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
-        status.textContent="Pilot registration saved for "+r+". Opening the "+r+" workspace.";
-        var workspaceRoleMap={"Student":"student","Blind Learner":"blind-learner","Deaf Learner":"deaf-learner","Teacher":"teacher","Parent/Caregiver":"parent","Professional Reviewer":"professional","NGO/Organization":"ngo","Education/Government":"education","Community/Partner":"community","Technician":"technician","Owner/Control":"owner"};
-        var workspaceRole=workspaceRoleMap[r]||"";
-        var workspaceSelector=document.getElementById("pilotRoleSelector");
-        if(workspaceSelector&&workspaceRole){
-          workspaceSelector.value=workspaceRole;
-          workspaceSelector.dispatchEvent(new Event("change",{bubbles:true}));
-          var workspace=document.getElementById("pacificEducationPilotUserWorkspaces");
-          if(workspace){workspace.hidden=false;try{workspace.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){workspace.scrollIntoView();}}
-        }
-        var announcement="Pilot registration saved for "+r+". Opening the "+r+" workspace.";
+        status.textContent="Pilot registration saved for "+r+". Continue to Prototype Access.";
+        /* Registration is complete, but the role workspace must not bypass the
+           single page-by-page navigation authority. MandatoryBoxSequence hands
+           control back to SingleNavigation after this successful save. */
+        try{ sessionStorage.setItem("pacificEducationPilotRole",r); }catch(_){}
+        var announcement="Pilot registration saved for "+r+". Continue to Prototype Access.";
         if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(announcement);
         else if(window.speakText)window.speakText(announcement);
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
