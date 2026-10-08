@@ -360,7 +360,8 @@
         if(!el || protectedIds[id]) return;
         el.style.pointerEvents="auto";
         el.style.touchAction="manipulation";
-        if(el.tagName && el.tagName.toLowerCase()==="button" && id!=="prototypeAuthorizeButton"){
+        if(el.tagName && el.tagName.toLowerCase()==="button" &&
+           id!=="prototypeAuthorizeButton" && id!=="registrationNextButton" && id!=="pilotRegistrationSaveButton"){
           el.disabled=false;
           el.setAttribute("aria-disabled","false");
         }
