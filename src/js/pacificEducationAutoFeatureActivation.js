@@ -117,7 +117,16 @@
       safe(function(){
         var role=sessionStorage.getItem("pacificEducationPilotRole")||"";
         var shell=!!document.getElementById("pacificEducationSequentialRoleWorkspace");
-        if(role && window.PacificEducationSequentialRoleWorkspaces &&
+        /* Single Navigation owns the guided sequence. Do not build a role workspace
+           while the user is still inside the mandatory page-by-page flow. */
+        var singleOwner=!!(window.PacificEducationSingleNavigation &&
+                           window.PacificEducationSingleNavigation.owner==="single");
+        var guidedFlow=document.body.classList.contains("pe-guided-flow") ||
+                       document.body.classList.contains("pacedu-entry-mode") ||
+                       document.body.classList.contains("pacedu-registration-mode");
+        var guidedComplete=document.body.getAttribute("data-pe-guided-complete")==="true";
+        if(role && !singleOwner && !guidedFlow && guidedComplete &&
+           window.PacificEducationSequentialRoleWorkspaces &&
            typeof window.PacificEducationSequentialRoleWorkspaces.build==="function" &&
            (!shell || role!==lastRole)){
           window.PacificEducationSequentialRoleWorkspaces.build(role);
