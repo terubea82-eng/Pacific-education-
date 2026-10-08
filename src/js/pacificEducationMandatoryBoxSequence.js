@@ -131,8 +131,13 @@
       var save=get("pilotRegistrationSaveButton");
       if(save && !save.disabled){
         save.click();
-        progress.textContent="Registration submitted. Opening your individual workspace...";
-        speak("Registration submitted. Opening your individual workspace.");
+        progress.textContent="Registration submitted. Opening the next guided page...";
+        speak("Registration submitted. Opening the next guided page.");
+        window.setTimeout(function(){
+          if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
+            window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
+          }
+        },200);
       }
     }
 
