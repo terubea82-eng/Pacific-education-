@@ -33,7 +33,7 @@ import org.json.JSONObject;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=d06ce3ad";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=e097dee9-next-repair-20261008";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
@@ -116,10 +116,6 @@ public final class MainActivity extends Activity {
             preferredVoice = maleFallback != null ? maleFallback : fallback;
             alternateVoice = secondEnglishVoice != null ? secondEnglishVoice : preferredVoice;
             if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
-            // Do not silently replace the requested male voice with an arbitrary
-            // (possibly female) English voice. If this device exposes no recognizable
-            // male English voice, the engine keeps its configured voice rather than
-            // pretending that gender selection succeeded.
         } catch (Exception ignored) {
         }
     }
