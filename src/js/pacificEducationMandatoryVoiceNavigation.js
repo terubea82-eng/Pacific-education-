@@ -265,6 +265,25 @@
     if(window.__peRegistrationVoiceTimer)return;
     window.__peRegistrationVoiceTimer=setInterval(announceRegistrationCompletion,350);
   }
+  function findSignOutControls(){
+    var controls=[];
+    document.querySelectorAll("button,a,input[type=\"button\"],input[type=\"submit\"]").forEach(function(el){
+      var label=(el.getAttribute("aria-label")||el.textContent||el.value||"").replace(/\\s+/g," ").trim().toLowerCase();
+      if(/\\bsign[ -]?out\\b|\\blog[ -]?out\\b/.test(label))controls.push(el);
+    });
+    return controls;
+  }
+  function installSignOutVoice(){
+    findSignOutControls().forEach(function(el){
+      if(el.getAttribute("data-pe-signout-voice")==="true")return;
+      el.setAttribute("data-pe-signout-voice","true");
+      el.setAttribute("aria-label",(el.getAttribute("aria-label")||el.textContent||"Sign Out").trim()+". Sign out of Pacific Education.");
+      el.addEventListener("focus",function(){speak("Sign Out. Select this control when you have finished using Pacific Education and want to safely end your session.");});
+      el.addEventListener("mouseenter",function(){speak("Sign Out. Select this control to safely end your Pacific Education session.");});
+      el.addEventListener("click",function(){setTimeout(function(){speak("You have selected Sign Out. Your Pacific Education session is ending.");},40);},true);
+    });
+  }
+
   function installFinalNext(){
     if(finalNextInstalled)return;
     var step=currentStep();
@@ -304,12 +323,12 @@
   function installDynamicObserver(){
     var body=document.body;if(!body||body.getAttribute("data-pe-box-observer")==="true")return;
     body.setAttribute("data-pe-box-observer","true");
-    var observer=new MutationObserver(function(){clearTimeout(observer._timer);observer._timer=setTimeout(function(){installBoxVoice();installNextSafety();installFinalNext();},100);});
+    var observer=new MutationObserver(function(){clearTimeout(observer._timer);observer._timer=setTimeout(function(){installBoxVoice();installNextSafety();installSignOutVoice();installFinalNext();},100);});
     observer.observe(body,{childList:true,subtree:true});
   }
 
   function enforce(){
-    installNextSafety();installStepWatcher();installWorkspaceWatcher();installBoxVoice();installDynamicObserver();installRegistrationCompletionWatcher();installFinalNext();
+    installNextSafety();installStepWatcher();installWorkspaceWatcher();installBoxVoice();installSignOutVoice();installDynamicObserver();installRegistrationCompletionWatcher();installFinalNext();
     // The protected global AI Playback is the single authoritative automatic Welcome voice.
     // Do not let page navigation create a second automatic Welcome announcement on startup.
     if(currentStep()!==0)announceCurrentStep("startup");
