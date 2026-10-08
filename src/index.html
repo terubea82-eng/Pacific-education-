@@ -811,6 +811,20 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   background:#168a3a !important;
   color:#fff !important;
   border-color:#0f642a !important;
+  animation:peNextBreathing 2s ease-in-out infinite;
+  box-shadow:0 0 0 0 rgba(22,138,58,.45);
+}
+.pe-user-next:hover,
+.pacific-mandatory-next:hover,
+.pacific-flow-next button:hover,
+#peSequentialNext:hover,
+#registrationNextButton:hover,
+#pilotRegistrationSaveButton:hover{
+  animation-duration:1.2s;
+}
+@keyframes peNextBreathing{
+  0%,100%{box-shadow:0 0 0 0 rgba(22,138,58,.45);filter:brightness(1)}
+  50%{box-shadow:0 0 0 7px rgba(22,138,58,.10);filter:brightness(1.08)}
 }
 .pe-protected-voice-control,
 #pacificEducationAIPlaybackButton,
