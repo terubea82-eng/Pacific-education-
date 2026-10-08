@@ -7,15 +7,6 @@
     return document.getElementById(id);
   }
 
-  function announce(text){
-    try{
-      if(window.PacificEducationSpeech &&
-         typeof window.PacificEducationSpeech.speakText==="function"){
-        window.PacificEducationSpeech.speakText(text,{priority:"navigation"});
-      }
-    }catch(_){}
-  }
-
   function show(page){
     document.body.setAttribute(
       "data-pac-edu-entry-page",
@@ -61,9 +52,6 @@
         });
       }
 
-      announce(
-        "Welcome to User Registration. Choose your country, language, and user role."
-      );
       return;
     }
 
@@ -133,7 +121,7 @@
   }
 
   window.PacificEducationPilotPages={
-    version:"2.0.0",
+    version:"2.0.1",
     goTo:show,
     agreementKey:AGREEMENT_KEY
   };
