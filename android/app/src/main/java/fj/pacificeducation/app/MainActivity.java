@@ -33,7 +33,7 @@ import org.json.JSONObject;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=e097dee9-next-repair-20261008";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=498ae327-next-repair-20261008";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
@@ -378,6 +378,8 @@ public final class MainActivity extends Activity {
         webView = new WebView(this);
         configureWebView(webView);
         setContentView(webView);
+        webView.clearCache(true);
+        webView.clearHistory();
         // The WebView speech controller owns the mandatory AI-first sequence.
         // Do not schedule a competing native welcome at the same time.
         webView.loadUrl(APP_URL);
@@ -398,6 +400,8 @@ public final class MainActivity extends Activity {
         WebSettings settings = view.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
+        // Controlled-pilot WebView: always fetch the current deployed page so repaired Next controls cannot be served from an older WebView cache.
+        settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         settings.setDatabaseEnabled(false);
         settings.setAllowFileAccess(false);
         settings.setAllowContentAccess(false);
