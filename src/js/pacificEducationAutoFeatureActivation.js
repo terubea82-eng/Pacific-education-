@@ -63,7 +63,7 @@
     safe(function(){
       var guard=window.PacificEducationPilotIntegrityGuard;
       if(guard && typeof guard.activatePilotFeature==="function"){
-        [
+        var baseFeatures = [
           "registration","prototypeAccess","learningLevel","subject","term","capability",
           "dailyActivities","practice","assessment","coverage","alphabetAssessment",
           "phonicsAssessment","teacherDashboard","parentDashboard","specialEducation",
@@ -71,7 +71,20 @@
           "teacherDailyActivities","blindAttempts","curriculumCoverage","dailyProgress",
           "teacherReview","studentProgress","aiPlayback","externalReviewer","connectivity",
           "offlineSync","pwaInstall","futureSafeRepair"
-        ].forEach(function(feature){ guard.activatePilotFeature(feature); });
+        ];
+        var contractFeatures = [];
+        try{
+          var contract = window.PacificEducationConversationContract &&
+                         window.PacificEducationConversationContract.get &&
+                         window.PacificEducationConversationContract.get();
+          contractFeatures = contract && Array.isArray(contract.runtimeFeatures) ?
+            contract.runtimeFeatures : [];
+        }catch(e){}
+        baseFeatures.concat(contractFeatures).filter(function(feature,index,list){
+          return feature && list.indexOf(feature)===index;
+        }).forEach(function(feature){
+          guard.activatePilotFeature(feature);
+        });
       }
     });
     /* #856 activation initializes itself from its existing protected module.
