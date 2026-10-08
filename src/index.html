@@ -181,9 +181,11 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 #assessmentNextButton:focus-visible,
 #pilotRegistrationSaveButton:focus-visible,
 #peSequentialNext:focus-visible{outline:3px solid #000!important;outline-offset:3px}
-/* Final guided-flow precedence: one active page at a time, while preserving the protected #856 voice system. */
+/* Final guided-flow precedence: visibility steps mirror PacificEducationSingleNavigation exactly.
+   Gateway pages are controlled by pacedu-entry-mode; guided step 1 starts at registration.
+   Coverage lives inside teacherCalendarSection, so its parent must remain visible at step 10.
+   Protected #856 voice scripts are not modified. */
 body.pe-guided-flow.pe-pilot-all-features main > *{display:none !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="0"] #pacificEducationWelcome{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="1"] #pacificEducationIdentityRegistration{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="2"] #prototypeAccess{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="3"] #levelSelection{display:block !important}
@@ -193,8 +195,9 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="6"] #capabilitySele
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="7"] #dailyLesson{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="8"] #dailyLessonPracticeStage{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #assessments{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection,
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #pacificEducationExternalReviewerPortal{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #teacherCalendarSection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
