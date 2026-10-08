@@ -127,11 +127,27 @@ function hideOtherGuidedPages(targetId){
   });
 }
 
+function updateUserBoxDirection(targetId){
+  try{
+    document.querySelectorAll(".pe-user-box").forEach(function(box){
+      box.classList.remove("pe-sequence-user-active");
+      box.removeAttribute("data-pe-sequence-direction");
+    });
+    var target=el(targetId);
+    if(!target) return;
+    target.querySelectorAll(".pe-user-box").forEach(function(box){
+      box.classList.add("pe-sequence-user-active");
+      box.setAttribute("data-pe-sequence-direction","current-step");
+    });
+  }catch(e){}
+}
+
 function revealTarget(targetId){
   var target=el(targetId);
   if(!target) return false;
 
   hideOtherGuidedPages(targetId);
+  updateUserBoxDirection(targetId);
 
   target.hidden=false;
   target.removeAttribute("aria-hidden");
