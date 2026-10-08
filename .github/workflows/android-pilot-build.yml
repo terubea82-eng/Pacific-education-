@@ -149,5 +149,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -e
-          gh release delete pilot-latest --cleanup-tag --yes || true
-          gh release create pilot-latest public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt             --target "${GITHUB_SHA}"             --title "Pacific Education Pilot — Latest Public APK"             --notes "Controlled pilot APK built from ${GITHUB_SHA}. This public download contains the current Android pilot build. Protected #856 voice system and current pilot changes are preserved."             --prerelease
+          if gh release view pilot-public >/dev/null 2>&1; then
+            gh release upload pilot-public public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt --clobber
+            gh release edit pilot-public --title "Pacific Education Pilot — Public APK" --notes "Controlled pilot APK. Latest successful Android pilot build is refreshed by CI. Protected #856 voice system and current pilot changes are preserved." --prerelease
+          else
+            gh release create pilot-public public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt \
+              --target "${{ github.sha }}" \
+              --title "Pacific Education Pilot — Public APK" \
+              --notes "Controlled pilot APK built from ${{ github.sha }}. Protected #856 voice system and current pilot changes are preserved." \
+              --prerelease
+          fi
