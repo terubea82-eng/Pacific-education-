@@ -26,7 +26,7 @@
     {speaker:"2",text:"To make education more connected to real life: daily activities help learners learn, discover, practise, and grow while giving teachers practical evidence to guide the next step. The architecture connects daily activities, learner responses, skills and evidence, teacher review, targeted support, progress, and assessment, including offline-first support when connectivity is limited."},
     {speaker:"1",text:"Welcome to Pacific Education."},
     {speaker:"2",text:"Let us learn, discover, practise, and grow together."},
-    {speaker:"1",text:"Press Next to begin registration."}
+    {speaker:"1",text:"Press Next to continue."}
   ];
 
   GLOBAL_LINES.forEach(function(line){ Object.freeze(line); });
