@@ -230,21 +230,8 @@
       go("userRegistrationForm");
     });
 
-    var flow=[
-      ["welcomeNextButton","pacificEducationIdentityRegistration"],
-      ["prototypeNextButton","levelSelection"],
-      ["levelNextButton","subjectSelection"],
-      ["subjectNextButton","termSelection"],
-      ["termNextButton","capabilitySelection"]
-    ];
-    flow.forEach(function(pair){bind(pair[0],function(){go(pair[1]);});});
-    bind("capabilityNextButton",function(){
-      document.body.classList.remove("pe-guided-flow");
-      document.body.removeAttribute("data-pe-flow-step");
-      var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
-      if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
-    });
-
+    /* Guided Next buttons are owned exclusively by PacificEducationSingleNavigation.
+       The #856 layer must not install a competing guided flow. */
     /* Direct pilot boxes must remain usable even when the guided overlay is active. */
     [
       ["userRegistrationOpenButton","pacificEducationIdentityRegistration"],
@@ -258,10 +245,8 @@
       bind(pair[0],function(){go(pair[1]);});
     });
 
-    bind("dailyActivitiesStartButton",function(){go("dailyLesson");});
-    bind("dailyActivitiesContinuePracticeButton",function(){go("dailyLessonPracticeStage");});
-    bind("practiceContinueAssessmentButton",function(){go("assessments");});
-    bind("assessmentContinueCoverageButton",function(){go("pacificEducationCoverageDashboard");});
+    /* Daily → Practice → Assessment → Coverage transitions are owned by
+       PacificEducationSingleNavigation; no duplicate #856 guided handlers. */
 
     bind("previousLessonButton",function(){
       var d=parseInt(localStorage.getItem("pacificEducationPilotTermDay")||localStorage.getItem("currentDayNumber")||"1",10)||1;
