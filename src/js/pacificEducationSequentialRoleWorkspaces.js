@@ -518,7 +518,7 @@
     if(!role){try{role=sessionStorage.getItem("pacificEducationPilotRole")||"";}catch(e){}}
     var registeredNow=false;
     try{registeredNow=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-    if(role && registeredNow && getRoleSequence(role).length) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(role); },100);
+    if(role && registeredNow && getRoleSequence(role).length && !(window.PacificEducationSingleNavigation && window.PacificEducationSingleNavigation.owner === "single")) setTimeout(function(){ if(!document.getElementById("pacificEducationSequentialRoleWorkspace")) build(role); },100);
 
     ["singlePilotRegisterButton","pilotRegistrationSaveButton"].forEach(function(id){
       var button=document.getElementById(id);
@@ -528,7 +528,7 @@
         setTimeout(function(){
           var registered=false, chosen=getRole();
           try{registered=sessionStorage.getItem("pacificEducationPilotRegistered")==="true" || !!sessionStorage.getItem("pacificEducationPilotRegistration");}catch(e){}
-          if(registered && chosen && getRoleSequence(chosen) && !document.getElementById("pacificEducationSequentialRoleWorkspace")) build(chosen);
+          if(registered && chosen && getRoleSequence(chosen) && !document.getElementById("pacificEducationSequentialRoleWorkspace") && !(window.PacificEducationSingleNavigation && window.PacificEducationSingleNavigation.owner === "single")) build(chosen);
         },0);
       },false);
     });
