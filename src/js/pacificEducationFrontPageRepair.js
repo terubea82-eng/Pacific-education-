@@ -1,12 +1,10 @@
 /* Pacific Education — Guided UI styling only.
- * The single navigation controller is the sole owner of page-to-page navigation.
- * This file must not bind, intercept, route, scroll, or audit navigation controls.
+ * Page-to-page navigation is owned exclusively by PacificEducationSingleNavigation.
+ * This file contains visual guidance only; it does not bind or intercept navigation.
  * Protected #856 voice and feature engines remain untouched.
  */
-(function(window, document){
-  "use strict";
-/* Green Guided Steps — visual guidance only. Navigation ownership remains single-controller.
- * Visual guidance only: preserves existing #856 voice/navigation behavior.
+/* Green Guided Steps — visual guidance only.
+ * The single navigation controller owns all page-to-page navigation. */
  */
 (function(){
   "use strict";
