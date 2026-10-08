@@ -299,7 +299,11 @@
   }
 
   function enforce(){
-    installNextSafety();installStepWatcher();installWorkspaceWatcher();installBoxVoice();installDynamicObserver();installRegistrationCompletionWatcher();installFinalNext();announceCurrentStep("startup");return true;
+    installNextSafety();installStepWatcher();installWorkspaceWatcher();installBoxVoice();installDynamicObserver();installRegistrationCompletionWatcher();installFinalNext();
+    // The protected global AI Playback is the single authoritative automatic Welcome voice.
+    // Do not let page navigation create a second automatic Welcome announcement on startup.
+    if(currentStep()!==0)announceCurrentStep("startup");
+    return true;
   }
   function init(){if(installed)return;installed=true;enforce();setTimeout(enforce,500);setTimeout(enforce,1200);}
 
