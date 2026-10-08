@@ -587,21 +587,23 @@ function bind(id,step,targetId){
   });
 }
 function init(){
+  bind("welcomeNextButton",1,"pacificEducationIdentityRegistration");
   bind("registrationNextButton",2,"prototypeAccess");
   bind("prototypeNextButton",3,"levelSelection");
   bind("levelNextButton",4,"subjectSelection");
   bind("subjectNextButton",5,"termSelection");
   bind("termNextButton",6,"capabilitySelection");
+  bind("dailyNextButton",8,"dailyLessonPracticeStage");
+  bind("practiceNextButton",9,"assessments");
+  bind("assessmentNextButton",10,"teacherCalendarSection");
   var capabilityNext=document.getElementById("capabilityNextButton");
   if(capabilityNext&&capabilityNext.getAttribute("data-pe-guided-bound")!=="true"){
     capabilityNext.setAttribute("data-pe-guided-bound","true");
     capabilityNext.setAttribute("aria-label","Finish introduction and open your workspace. Daily Activities are available in the Student and Teacher workspaces.");
     capabilityNext.addEventListener("click",function(e){
       if(e)e.preventDefault();
-      document.body.classList.remove("pe-guided-flow");
-      document.body.removeAttribute("data-pe-flow-step");
-      var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
-      if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
+      go(7,"dailyLesson");
+      return false;
     });
   }
 }
