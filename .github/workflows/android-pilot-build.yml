@@ -158,3 +158,5 @@ jobs:
             --title "Pacific Education Pilot — Public APK ${GITHUB_SHA::12}" \
             --notes "Controlled pilot APK built from ${GITHUB_SHA}. Protected #856 voice system and current pilot changes are preserved. This release is immutable and corresponds exactly to this successful build commit." \
             --prerelease
+
+# Protected baseline rebuild trigger: no application-code changes; preserve locked pilot tree.
