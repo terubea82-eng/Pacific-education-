@@ -30,7 +30,24 @@ var GATEWAY = {
   welcome: "pacificEducationWelcome"
 };
 
+/* One page-back authority for the complete pilot sequence. */
+var BACK = {
+  paceduPageVision: [1, "welcome"],
+  paceduPageRules: [2, "vision"],
+  pacificEducationIdentityRegistration: [3, "rules"],
+  prototypeAccess: [4, "registration"],
+  levelSelection: [5, "prototype"],
+  subjectSelection: [6, "level"],
+  termSelection: [7, "subject"],
+  capabilitySelection: [8, "term"],
+  dailyLesson: [9, "capability"],
+  dailyLessonPracticeStage: [10, "daily"],
+  assessments: [11, "practice"],
+  teacherCalendarSection: [12, "assessment"]
+};
+
 var bound = {};
+var backBound = {};
 
 function el(id){ return document.getElementById(id); }
 
@@ -177,12 +194,57 @@ function bind(id,fn){
   button.style.touchAction="manipulation";
 }
 
+/* Create exactly one visible Back control on every guided page. */
+function ensureBackButton(targetId){
+  var target=el(targetId);
+  if(!target || !BACK[targetId]) return;
+  var id="pacificEducationBack_"+targetId;
+  var button=el(id);
+  if(!button){
+    button=document.createElement("button");
+    button.type="button";
+    button.id=id;
+    button.textContent="⬅️ Back";
+    button.setAttribute("aria-label","Back to previous Pacific Education page");
+    button.setAttribute("data-pe-back-button","true");
+    button.setAttribute("data-pe-navigation-owner","single");
+    button.style.display="block";
+    button.style.pointerEvents="auto";
+    button.style.touchAction="manipulation";
+    button.style.margin="12px 0";
+    button.style.padding="10px 16px";
+    button.style.cursor="pointer";
+    target.insertBefore(button,target.firstChild);
+  }
+  if(backBound[id]) return;
+  backBound[id]=true;
+  button.addEventListener("click",function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    var row=BACK[targetId];
+    if(row[1]==="welcome"){ gateway(1); return; }
+    if(row[1]==="vision"){ gateway(2); return; }
+    if(row[1]==="rules"){ gateway(3); return; }
+    var map={
+      registration:"pacificEducationIdentityRegistration",
+      prototype:"prototypeAccess",
+      level:"levelSelection",
+      subject:"subjectSelection",
+      term:"termSelection",
+      capability:"capabilitySelection",
+      daily:"dailyLesson",
+      practice:"dailyLessonPracticeStage",
+      assessment:"assessments"
+    };
+    if(map[row[1]]) guided(row[0],map[row[1]]);
+  });
+}
+
+function bindAllBackButtons(){
+  Object.keys(BACK).forEach(ensureBackButton);
+}
+
 function bindGuidedFeatureButtons(){
-  /*
-   * All feature-to-feature continuation controls are owned here for navigation.
-   * The underlying feature engines remain responsible for their own data,
-   * scoring, rendering, voice and business logic.
-   */
   bind("dailyActivitiesStartButton",function(){
     var activity=el("dailyLessonActivity");
     if(activity){
@@ -218,11 +280,6 @@ function syncRules(){
 }
 
 function init(){
-  /*
-   * A fresh app launch ALWAYS starts at Welcome Page 1. This prevents saved
-   * registration/workspace state from appearing or speaking before the user
-   * passes through the gateway.
-   */
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
     gateway(1);
@@ -239,7 +296,6 @@ function init(){
   Object.keys(STEPS).forEach(function(id){
     if(id==="welcomeNextButton") return;
     var row=STEPS[id];
-
     bind(id,function(button){
       if(!button.disabled) guided(row[0],row[1]);
     });
@@ -247,6 +303,7 @@ function init(){
 
   bindGuidedFeatureButtons();
   syncRules();
+  bindAllBackButtons();
 }
 
 if(document.readyState==="loading"){
@@ -258,9 +315,10 @@ if(document.readyState==="loading"){
 window.setTimeout(init,500);
 window.setTimeout(init,1500);
 window.setTimeout(bindGuidedFeatureButtons,2500);
+window.setTimeout(bindAllBackButtons,2500);
 
 window.PacificEducationSingleNavigation={
-  version:"2.1.0",
+  version:"2.2.0",
   owner:"single",
   go:go,
   gateway:gateway,
@@ -268,10 +326,11 @@ window.PacificEducationSingleNavigation={
   refreshFeatureForTarget:refreshFeatureForTarget,
   status:function(){
     return {
-      version:"2.0.0",
+      version:"2.2.0",
       owner:"single",
       started:!!document.body.getAttribute("data-pe-single-navigation-started"),
-      bound:Object.keys(bound).filter(function(id){return bound[id];})
+      bound:Object.keys(bound).filter(function(id){return bound[id];}),
+      backBound:Object.keys(backBound).filter(function(id){return backBound[id];})
     };
   }
 };
