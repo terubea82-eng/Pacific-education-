@@ -16,11 +16,16 @@ on:
       - "automation/**"
       - "package.json"
       - ".github/workflows/android-pilot-build.yml"
+permissions:
+  contents: write
+concurrency:
+  group: pacedu-public-pilot-release
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     env:
       PACIFIC_SIGNING_READY: ${{ secrets.PACIFIC_KEYSTORE_BASE64 != '' && secrets.PACIFIC_KEYSTORE_PASSWORD != '' && secrets.PACIFIC_KEY_ALIAS != '' && secrets.PACIFIC_KEY_PASSWORD != '' }}
     steps:
@@ -133,3 +138,16 @@ jobs:
           path: android/app/build/outputs/bundle/release/app-release*.aab
           if-no-files-found: error
           retention-days: 30
+      - name: Prepare public APK
+        run: |
+          mkdir -p public-release
+          cp android/app/build/outputs/apk/debug/app-debug.apk public-release/pacific-education-debug.apk
+          sha256sum public-release/pacific-education-debug.apk > public-release/SHA256SUMS.txt
+          printf '%s\n' "Commit: ${GITHUB_SHA}" >> public-release/SHA256SUMS.txt
+      - name: Publish public pilot APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          gh release delete pilot-latest --cleanup-tag --yes || true
+          gh release create pilot-latest public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt             --target "${GITHUB_SHA}"             --title "Pacific Education Pilot — Latest Public APK"             --notes "Controlled pilot APK built from ${GITHUB_SHA}. This public download contains the current Android pilot build. Protected #856 voice system and current pilot changes are preserved."             --prerelease
