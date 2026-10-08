@@ -47,7 +47,7 @@
       if(welcomeNext){welcomeNext.hidden=true;welcomeNext.style.display="none";}
       if(pilot){pilot.hidden=false;pilot.style.display="";}
     }
-    if(page===1)announce("Welcome to Pacific Education. Continue to learn about our vision, mission and purpose.");
+    /* The protected global AI Playback is the only automatic Welcome voice. */
     if(page===2)announce("Vision, mission and purpose. Continue to the mandatory Pacedu rules and conditions.");
     if(page===3)announce("Pacedu Rules and Conditions. Read and confirm the required agreement before registration.");
   }
