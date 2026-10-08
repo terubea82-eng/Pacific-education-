@@ -178,6 +178,20 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 #assessmentNextButton:focus-visible,
 #pilotRegistrationSaveButton:focus-visible,
 #peSequentialNext:focus-visible{outline:3px solid #000!important;outline-offset:3px}
+/* Final guided-flow precedence: one active page at a time, while preserving the protected #856 voice system. */
+body.pe-guided-flow.pe-pilot-all-features main > *{display:none !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="0"] #pacificEducationWelcome{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="1"] #pacificEducationIdentityRegistration{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="2"] #prototypeAccess{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="3"] #levelSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="4"] #subjectSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="5"] #termSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="6"] #capabilitySelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="7"] #dailyLesson{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="8"] #dailyLessonPracticeStage{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #assessments{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #pacificEducationExternalReviewerPortal{display:block !important}
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
