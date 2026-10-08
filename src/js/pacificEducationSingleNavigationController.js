@@ -364,7 +364,9 @@ function init(){
   });
 
   Object.keys(STEPS).forEach(function(id){
-    if(id==="welcomeNextButton") return;
+    /* Registration Next belongs exclusively to the mandatory 5-box registration sub-flow.
+       It hands control back to SingleNavigation only after a successful save. */
+    if(id==="welcomeNextButton" || id==="registrationNextButton") return;
     var row=STEPS[id];
     bind(id,function(button){
       if(!button.disabled) guided(row[0],row[1]);
