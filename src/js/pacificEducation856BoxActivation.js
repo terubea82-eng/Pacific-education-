@@ -229,7 +229,6 @@
 
     var flow=[
       ["welcomeNextButton","pacificEducationIdentityRegistration"],
-      ["registrationNextButton","prototypeAccess"],
       ["prototypeNextButton","levelSelection"],
       ["levelNextButton","subjectSelection"],
       ["subjectNextButton","termSelection"],
