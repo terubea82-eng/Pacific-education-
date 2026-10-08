@@ -3,7 +3,7 @@
  */
 (function(window, document){
   "use strict";
-  var VERSION="1.5.3";
+  var VERSION="1.5.4";
   var flow=[
     ["welcomeNextButton",1,"pacificEducationIdentityRegistration"],
     ["registrationNextButton",2,"pacificEducationPilotUserWorkspaces"],
@@ -127,15 +127,11 @@
     var el=event.target&&event.target.closest?event.target.closest("button,a,[role=button]"):null;if(!isNavigationControl(el))return;
     var id=el.id||"";
     var label=textOf(el).toLowerCase();
-    /* The dedicated Pacedu entry gateway owns Welcome -> Vision -> Rules -> Registration. */
-    if(id==="welcomeNextButton" && window.PacificEducationPilotPages && typeof window.PacificEducationPilotPages.goTo==="function"){
-      event.preventDefault();event.stopImmediatePropagation();window.PacificEducationPilotPages.goTo(2);return;
-    }
-    if(id==="paceduVisionNext" && window.PacificEducationPilotPages && typeof window.PacificEducationPilotPages.goTo==="function"){
-      event.preventDefault();event.stopImmediatePropagation();window.PacificEducationPilotPages.goTo(3);return;
-    }
-    if(id==="paceduRulesContinue" && window.PacificEducationPilotPages && typeof window.PacificEducationPilotPages.goTo==="function"){
-      event.preventDefault();event.stopImmediatePropagation();window.PacificEducationPilotPages.goTo(4);return;
+    /* Entry gateway ownership is exclusive to pacificEducationPilotPageSequence.js.
+       Do not intercept its controls here: this capture listener would otherwise stop
+       the gateway handler before Welcome -> Vision can advance. */
+    if(id==="welcomeNextButton" || id==="paceduVisionNext" || id==="paceduRulesContinue"){
+      return;
     }
     if(id==="userRegistrationOpenButton" || /user registration/.test(label) || /^users?$/.test(label)){
       event.preventDefault();event.stopImmediatePropagation();openRegistration();return;
