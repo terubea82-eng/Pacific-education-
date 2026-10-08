@@ -130,7 +130,8 @@
     /* Entry gateway ownership is exclusive to pacificEducationPilotPageSequence.js.
        Do not intercept its controls here: this capture listener would otherwise stop
        the gateway handler before Welcome -> Vision can advance. */
-    if(id==="welcomeNextButton" || id==="paceduVisionNext" || id==="paceduRulesContinue"){
+    if(/^paceduVisionNext$|^paceduRulesContinue$|^(welcome|registration|prototype|level|subject|term|capability|daily|practice|assessment)NextButton$/.test(id)){
+      /* Single navigation authority owns every guided Next control. */
       return;
     }
     if(id==="userRegistrationOpenButton" || /user registration/.test(label) || /^users?$/.test(label)){
