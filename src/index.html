@@ -809,6 +809,20 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 }
 @media(max-width:700px){
   .pe-user-box{padding:14px !important;}
+.pe-user-box.pe-sequence-user-active{
+  animation:peUserBoxBreathing 2.2s ease-in-out infinite;
+  border:3px solid #1877b7 !important;
+  background:#dff1ff !important;
+  box-shadow:0 0 0 0 rgba(24,119,183,.30);
+}
+@keyframes peUserBoxBreathing{
+  0%,100%{box-shadow:0 0 0 0 rgba(24,119,183,.28);filter:brightness(1)}
+  50%{box-shadow:0 0 0 6px rgba(24,119,183,.14);filter:brightness(1.035)}
+}
+.pe-user-box:not(.pe-sequence-user-active){
+  animation:none !important;
+}
+
 }
 </style>
 </body></html>
