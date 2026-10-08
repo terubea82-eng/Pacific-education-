@@ -235,6 +235,10 @@
     return map[role]||("Welcome to your "+role+" Workspace. Your authorised Pacific Education tools are ready.");
   }
   function announceRegistrationCompletion(){
+    /* Registration completion voice is mandatory on/after Registration only.
+       Never let saved registration data trigger registration/workspace speech on
+       the first Welcome + Owner Experience page. */
+    if(currentStep()===0)return;
     var sig=registrationSignature();
     if(!sig||sig===lastRegistrationSignature)return;
     lastRegistrationSignature=sig;
