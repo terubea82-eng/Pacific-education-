@@ -98,9 +98,20 @@
     /* Mandatory continuation remains green, not blue. */
     document.querySelectorAll(
       ".pacific-mandatory-next,.pacific-flow-next button,#peSequentialNext," +
-      "#registrationNextButton,#pilotRegistrationSaveButton"
+      "#registrationNextButton,#pilotRegistrationSaveButton," +
+      "[id$=\"NextButton\"],[id$=\"nextButton\"]"
     ).forEach(function(button){
       button.classList.add("pe-user-next");
+    });
+
+    /* Keep the guided sequence active on every page: any visible button whose
+       accessible/text label is Next is a green continuation control, not a blue box. */
+    document.querySelectorAll("button").forEach(function(button){
+      var label=(button.getAttribute("aria-label")||button.textContent||"").replace(/\\s+/g," ").trim().toLowerCase();
+      if(/^next(?:\\b|\\s|➡️)/.test(label) || /\\bnext page\\b/.test(label)){
+        button.classList.add("pe-user-next");
+        button.classList.remove("pe-user-box");
+      }
     });
 
     /* Protected AI Playback remains black; never recolour it as a user box. */
@@ -125,7 +136,7 @@
   }
 
   window.PacificEducationUserBoxVisualActivation={
-    version:"1.0.0",
+    version:"1.1.0",
     refresh:mark,
     userBoxIds:USER_BOX_IDS.slice()
   };
