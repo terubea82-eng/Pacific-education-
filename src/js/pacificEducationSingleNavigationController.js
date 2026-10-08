@@ -296,6 +296,20 @@ function bindAllBackButtons(){
   Object.keys(BACK).forEach(ensureBackButton);
 }
 
+function ensureCoverageNextButton(){
+  var target=el("pacificEducationCoverageDashboard");
+  if(!target || el("coverageNextButton")) return;
+  var button=document.createElement("button");
+  button.type="button";
+  button.id="coverageNextButton";
+  button.className="pacific-flow-next";
+  button.textContent="➡️ Next";
+  button.setAttribute("aria-label","Next: Teacher Calendar and Review");
+  button.setAttribute("data-pe-single-navigation","true");
+  button.setAttribute("data-pe-navigation-owner","single");
+  target.appendChild(button);
+}
+
 function bindGuidedFeatureButtons(){
   bind("dailyActivitiesStartButton",function(){
     var activity=el("dailyLessonActivity");
@@ -357,6 +371,7 @@ function init(){
     });
   });
 
+  ensureCoverageNextButton();
   bindGuidedFeatureButtons();
   syncRules();
   bindAllBackButtons();
@@ -370,6 +385,7 @@ if(document.readyState==="loading"){
 
 window.setTimeout(init,500);
 window.setTimeout(init,1500);
+window.setTimeout(ensureCoverageNextButton,2500);
 window.setTimeout(bindGuidedFeatureButtons,2500);
 window.setTimeout(bindAllBackButtons,2500);
 
