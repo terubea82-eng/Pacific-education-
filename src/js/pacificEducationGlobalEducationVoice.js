@@ -61,7 +61,7 @@
       button.addEventListener("click",function(e){e.preventDefault();window.__pacificEducationWelcomePlayed=true;play();});
     }
     var welcome=document.getElementById("pacificEducationWelcomeVoiceButton");
-    if(welcome && welcome.getAttribute("data-pe-global-welcome-bound")!=="true"){
+    if(welcome && !welcome.getAttribute("data-pe-welcome-voice-bound") && welcome.getAttribute("data-pe-global-welcome-bound")!=="true"){
       welcome.setAttribute("data-pe-global-welcome-bound","true");
       welcome.addEventListener("click",function(e){
         e.preventDefault();
