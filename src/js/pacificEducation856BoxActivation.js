@@ -48,8 +48,11 @@
     }
 
     /* Ordinary feature boxes still use the protected #856-compatible repair. */
-    document.body.classList.remove("pe-guided-flow");
-    document.body.removeAttribute("data-pe-flow-step");
+    if(!(window.PacificEducationSingleNavigation &&
+         window.PacificEducationSingleNavigation.owner==="single")){
+      document.body.classList.remove("pe-guided-flow");
+      document.body.removeAttribute("data-pe-flow-step");
+    }
     show(id);
     try{el.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){try{el.scrollIntoView();}catch(_){}}
     return true;
