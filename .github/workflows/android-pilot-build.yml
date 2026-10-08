@@ -152,7 +152,7 @@ jobs:
           # GitHub immutable releases cannot have assets replaced. Publish one
           # immutable public release per successful commit instead of attempting
           # to overwrite the previous public release.
-          PUBLIC_TAG="pilot-public-${GITHUB_SHA::12}"
+          PUBLIC_TAG="pilot-public-${GITHUB_SHA::12}-${GITHUB_RUN_ID}"
           gh release create "$PUBLIC_TAG" public-release/pacific-education-debug.apk public-release/SHA256SUMS.txt \
             --target "${GITHUB_SHA}" \
             --title "Pacific Education Pilot — Public APK ${GITHUB_SHA::12}" \
