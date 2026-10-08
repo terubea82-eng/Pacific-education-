@@ -179,11 +179,17 @@ function bind(id,fn){
 
 function bindGuidedFeatureButtons(){
   /*
-   * These are continuation controls inside existing feature engines.
-   * They are wired only when present and never replace the engine itself.
+   * All feature-to-feature continuation controls are owned here for navigation.
+   * The underlying feature engines remain responsible for their own data,
+   * scoring, rendering, voice and business logic.
    */
   bind("dailyActivitiesStartButton",function(){
-    guided(7,"dailyLesson");
+    var activity=el("dailyLessonActivity");
+    if(activity){
+      try{ activity.scrollIntoView({behavior:"smooth",block:"start"}); }
+      catch(e){ try{ activity.scrollIntoView(); }catch(ignore){} }
+    }
+    setStatus("Daily Activity is active. Complete the activity, then use Next to continue to Practice.");
   });
 
   bind("dailyActivitiesContinuePracticeButton",function(){
@@ -194,10 +200,9 @@ function bindGuidedFeatureButtons(){
     guided(9,"assessments");
   });
 
-  /*
-   * Coverage remains an existing assessment feature. Its own engine owns the
-   * target transition, so do not hijack its button here.
-   */
+  bind("assessmentContinueCoverageButton",function(){
+    guided(10,"teacherCalendarSection");
+  });
 }
 
 function syncRules(){
@@ -255,7 +260,7 @@ window.setTimeout(init,1500);
 window.setTimeout(bindGuidedFeatureButtons,2500);
 
 window.PacificEducationSingleNavigation={
-  version:"2.0.0",
+  version:"2.1.0",
   owner:"single",
   go:go,
   gateway:gateway,
