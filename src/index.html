@@ -676,31 +676,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",bind); else bind();
   window.addEventListener("load",bind);
 })();
-</script><script id="pacificEducationRegistrationRepair">
-(function(){
-  function bindRegistration(){
-    var b=document.getElementById("userRegistrationOpenButton");
-    var f=document.getElementById("userRegistrationForm");
-    if(!b||!f||b.getAttribute("data-pe-registration-bound")==="true") return;
-    b.setAttribute("data-pe-registration-bound","true");
-    b.addEventListener("click",function(e){
-      e.preventDefault(); e.stopPropagation();
-      var opening=f.hidden;
-      f.hidden=!opening;
-      b.setAttribute("aria-expanded",String(opening));
-      b.textContent=opening?"👤 User Registration — Tap to close":"👤 User Registration — Tap to open";
-      if(opening){
-        setTimeout(function(){var n=document.getElementById("pilotRegistrationName");if(n){n.focus();}},50);
-      }
-    },true);
-  }
-  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",bindRegistration);
-  else bindRegistration();
-  setTimeout(bindRegistration,500);
-  setTimeout(bindRegistration,1500);
-})();
-</script>
-<script id="pe-secure-pilot-activation">
+</script><script id="pe-secure-pilot-activation">
 (function(){
   "use strict";
   function activate(){
