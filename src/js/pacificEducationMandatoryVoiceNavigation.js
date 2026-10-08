@@ -13,6 +13,9 @@
     {step:4,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
     {step:5,id:"termSelection",label:"Term",text:"Welcome to Term Selection. Please choose the school term for your learning activities. Your daily activities, practice and assessments will follow the selected term. Select Next when ready."},
     {step:6,id:"capabilitySelection",label:"Learning Capability",text:"Welcome to Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
+    {step:7,id:"dailyLesson",label:"Daily Activities",text:"Welcome to Daily Activities. Complete the activity for the current learning day. Listen to the question and instructions whenever you need help, then enter your answer and continue."},
+    {step:8,id:"dailyLessonPracticeStage",label:"Practice",text:"Welcome to Practice. Complete the practice task carefully. Use the Hear Instructions control whenever you need the question or choices read aloud."},
+    {step:9,id:"assessments",label:"Assessments",text:"Welcome to Assessments. Follow the spoken instructions, review each question and choice carefully, then submit your response when you are ready."},
     {step:10,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Welcome to Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
   ];
 
