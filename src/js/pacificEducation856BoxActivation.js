@@ -20,10 +20,10 @@
     var el=document.getElementById(id);
     if(!el) return false;
 
-    /* Guided flow must advance when a flow box is opened, while ordinary
-       dashboard/menu boxes must escape the single-page guided overlay. */
-    var steps={
-      "pacificEducationWelcome":0,
+    /* SINGLE NAVIGATION AUTHORITY:
+       #856 keeps its box/voice repairs, but guided page transitions belong only
+       to PacificEducationSingleNavigation. This prevents competing step counters. */
+    var guidedSteps={
       "pacificEducationIdentityRegistration":1,
       "prototypeAccess":2,
       "levelSelection":3,
@@ -33,16 +33,23 @@
       "dailyLesson":7,
       "dailyLessonPracticeStage":8,
       "assessments":9,
-      "teacherCalendarSection":10
+      "pacificEducationCoverageDashboard":10,
+      "teacherCalendarSection":11
     };
-    if(Object.prototype.hasOwnProperty.call(steps,id)){
-      document.body.classList.add("pe-guided-flow");
-      document.body.setAttribute("data-pe-flow-step",String(steps[id]));
-    }else{
-      document.body.classList.remove("pe-guided-flow");
-      document.removeAttribute("data-pe-flow-step");
+    if(id==="pacificEducationWelcome" &&
+       window.PacificEducationSingleNavigation &&
+       typeof window.PacificEducationSingleNavigation.gateway==="function"){
+      return window.PacificEducationSingleNavigation.gateway(1);
+    }
+    if(Object.prototype.hasOwnProperty.call(guidedSteps,id) &&
+       window.PacificEducationSingleNavigation &&
+       typeof window.PacificEducationSingleNavigation.guided==="function"){
+      return window.PacificEducationSingleNavigation.guided(guidedSteps[id],id);
     }
 
+    /* Ordinary feature boxes still use the protected #856-compatible repair. */
+    document.body.classList.remove("pe-guided-flow");
+    document.body.removeAttribute("data-pe-flow-step");
     show(id);
     try{el.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){try{el.scrollIntoView();}catch(_){}}
     return true;
