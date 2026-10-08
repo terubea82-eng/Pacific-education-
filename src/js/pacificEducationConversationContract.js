@@ -33,7 +33,7 @@
       "subjectNextButton","termNextButton","capabilityNextButton",
       "dailyActivitiesStartButton","dailyActivitiesContinuePracticeButton",
       "dailyNextButton","practiceContinueAssessmentButton","practiceNextButton",
-      "assessmentContinueCoverageButton","assessmentNextButton"
+      "assessmentContinueCoverageButton","assessmentNextButton","coverageNextButton"
     ],
     requirements: {
       pageByPage: true,
