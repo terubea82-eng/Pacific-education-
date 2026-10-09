@@ -356,6 +356,18 @@ body.pe-guided-flow #pacificEducationTechnicianActivation {
     scroll-behavior: auto !important;
   }
 }
+
+/* Hide non-task notices and global menus even before guided-flow JS starts. */
+#pilotBanner,
+#pacificEducationRefreshNotice,
+#userFirstNavigation,
+#pacificEducationAppMenu {
+  display: none !important;
+}
+body.pe-pilot-all-features #userFirstNavigation,
+body.pe-pilot-all-features #pacificEducationAppMenu {
+  display: none !important;
+}
 </style>
 
 </head>
