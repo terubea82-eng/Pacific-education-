@@ -9,35 +9,35 @@
 
   var STEP_PAGES = [
     {step:0,id:"pacificEducationWelcome",label:"Welcome",text:"Welcome to Pacific Education. We are pleased to welcome you. Pacific Education helps learners learn, discover, practise and grow. Press Next to continue."},
-    {step:1,id:"pacificEducationIdentityRegistration",label:"Registration",text:"User Registration. Please complete each required box carefully. Enter your information one box at a time. When all required information is complete, review it and select Next to continue."},
-    {step:2,id:"prototypeAccess",label:"Pilot Access",text:"Pacific Education pilot access. Please review the pilot information and instructions. When you are ready to continue, select Next."},
-    {step:3,id:"levelSelection",label:"Learning Level",text:"Learning Level. Please choose the class or form that matches your current learning programme. Review your selection, then select Next to choose your subject."},
-    {step:4,id:"subjectSelection",label:"Subject",text:"Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
-    {step:5,id:"termSelection",label:"Term",text:"Term Selection. Please choose the school term for your learning activities. Your daily activities, practice and assessments will follow the selected term. Select Next when ready."},
-    {step:6,id:"capabilitySelection",label:"Learning Capability",text:"Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
-    {step:7,id:"dailyLesson",label:"Daily Activities",text:"Daily Activities. Complete the activity for the current learning day. Listen to the question and instructions whenever you need help, then enter your answer and continue."},
-    {step:8,id:"dailyLessonPracticeStage",label:"Practice",text:"Practice. Complete the practice task carefully. Use the Hear Instructions control whenever you need the question or choices read aloud."},
-    {step:9,id:"assessments",label:"Assessments",text:"Assessments. Follow the spoken instructions, review each question and choice carefully, then submit your response when you are ready."},
-    {step:10,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
+    {step:1,id:"pacificEducationIdentityRegistration",label:"Registration",text:"Welcome to User Registration. Please complete each required box carefully. Enter your information one box at a time. When all required information is complete, review it and select Next to continue."},
+    {step:2,id:"prototypeAccess",label:"Pilot Access",text:"Welcome to Pacific Education pilot access. Please review the pilot information and instructions. When you are ready to continue, select Next."},
+    {step:3,id:"levelSelection",label:"Learning Level",text:"Welcome to Learning Level. Please choose the class or form that matches your current learning programme. Review your selection, then select Next to choose your subject."},
+    {step:4,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
+    {step:5,id:"termSelection",label:"Term",text:"Welcome to Term Selection. Please choose the school term for your learning activities. Your daily activities, practice and assessments will follow the selected term. Select Next when ready."},
+    {step:6,id:"capabilitySelection",label:"Learning Capability",text:"Welcome to Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
+    {step:7,id:"dailyLesson",label:"Daily Activities",text:"Welcome to Daily Activities. Complete the activity for the current learning day. Listen to the question and instructions whenever you need help, then enter your answer and continue."},
+    {step:8,id:"dailyLessonPracticeStage",label:"Practice",text:"Welcome to Practice. Complete the practice task carefully. Use the Hear Instructions control whenever you need the question or choices read aloud."},
+    {step:9,id:"assessments",label:"Assessments",text:"Welcome to Assessments. Follow the spoken instructions, review each question and choice carefully, then submit your response when you are ready."},
+    {step:10,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Welcome to Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
   ];
 
   var WORKSPACE_PAGES = [
-    ["pacificEducationAppTools","Learning Tools","Learning Tools. Choose the learning tool you want to use. Users come first, followed by Learning Level, Subject, Term, Daily Activities, Practice, Assessment and Coverage."],
-    ["pacificEducationSchoolIdentitySection","School Identity","School Identity. Review the school and existing class information. Use the existing unique Class Reference where one already exists."],
-    ["teacherDashboard","Teacher Workspace","the Teacher Workspace. Review classes, learners, activities, the teacher calendar, assessments and learning coverage."],
-    ["parentDashboard","Parent and Caregiver Workspace","the Parent and Caregiver Workspace. Review the learner's progress, activities and available family support information."],
-    ["specialEducationDashboard","Special Education","the Special Education workspace. Review authorised learning support information and evidence routing."],
-    ["studentProgressDashboard","Student Progress","Student Progress. Review completed learning, practice, assessment evidence and areas that may need more practice."],
-    ["pacificEducationStudentProgressDashboard","Student Progress Dashboard","the Student Progress Dashboard. Review your learning progress and coverage."],
-    ["pacificGuardianCommentSection","Guardian Review","Pacific Guardian Review. Review administrative support information and recorded comments."],
-    ["pacificEducationExternalReviewerPortal","External Reviewer","the External Reviewer Portal. Review curriculum evidence, activities, assessments and comments carefully."],
-    ["pacificEducationHomeSubmission","Home Evidence","Home Evidence. Provide authorised learning evidence for teacher review and approval."],
-    ["pacificEducationWeekendHolidaySupplementaryActivities","Supplementary Activities","Supplementary Activities. Review the available weekend and holiday learning activities."],
-    ["pacificEducationExamCalendarSection","Exam Calendar","the Exam Calendar. Review scheduled examination information."],
-    ["pacificEducationAppStudentSchoolCalendar","Student School Calendar","the Student School Calendar. Review dates provided by the teacher or school. Students do not create school dates."],
-    ["assessments","Assessments","Assessments. Choose an assessment and follow the spoken instructions carefully."],
-    ["dailyLesson","Daily Activities","Daily Activities. Complete the assigned activity for the current learning day."],
-    ["dailyLessonPracticeStage","Practice","Practice. Complete the practice task and use Listen whenever you need the question read aloud."]
+    ["pacificEducationAppTools","Learning Tools","Welcome to Learning Tools. Choose the learning tool you want to use. Users come first, followed by Learning Level, Subject, Term, Daily Activities, Practice, Assessment and Coverage."],
+    ["pacificEducationSchoolIdentitySection","School Identity","Welcome to School Identity. Review the school and existing class information. Use the existing unique Class Reference where one already exists."],
+    ["teacherDashboard","Teacher Workspace","Welcome to the Teacher Workspace. Review classes, learners, activities, the teacher calendar, assessments and learning coverage."],
+    ["parentDashboard","Parent and Caregiver Workspace","Welcome to the Parent and Caregiver Workspace. Review the learner's progress, activities and available family support information."],
+    ["specialEducationDashboard","Special Education","Welcome to the Special Education workspace. Review authorised learning support information and evidence routing."],
+    ["studentProgressDashboard","Student Progress","Welcome to Student Progress. Review completed learning, practice, assessment evidence and areas that may need more practice."],
+    ["pacificEducationStudentProgressDashboard","Student Progress Dashboard","Welcome to the Student Progress Dashboard. Review your learning progress and coverage."],
+    ["pacificGuardianCommentSection","Guardian Review","Welcome to Pacific Guardian Review. Review administrative support information and recorded comments."],
+    ["pacificEducationExternalReviewerPortal","External Reviewer","Welcome to the External Reviewer Portal. Review curriculum evidence, activities, assessments and comments carefully."],
+    ["pacificEducationHomeSubmission","Home Evidence","Welcome to Home Evidence. Provide authorised learning evidence for teacher review and approval."],
+    ["pacificEducationWeekendHolidaySupplementaryActivities","Supplementary Activities","Welcome to Supplementary Activities. Review the available weekend and holiday learning activities."],
+    ["pacificEducationExamCalendarSection","Exam Calendar","Welcome to the Exam Calendar. Review scheduled examination information."],
+    ["pacificEducationAppStudentSchoolCalendar","Student School Calendar","Welcome to the Student School Calendar. Review dates provided by the teacher or school. Students do not create school dates."],
+    ["assessments","Assessments","Welcome to Assessments. Choose an assessment and follow the spoken instructions carefully."],
+    ["dailyLesson","Daily Activities","Welcome to Daily Activities. Complete the assigned activity for the current learning day."],
+    ["dailyLessonPracticeStage","Practice","Welcome to Practice. Complete the practice task and use Listen whenever you need the question read aloud."]
   ];
 
   var BOX_INSTRUCTIONS = {
@@ -227,17 +227,17 @@
   }
   function workspaceWelcomeForRole(role){
     var map={
-      "Student":"Your Student Workspace. Your learning tools, class or level, subject, term, daily activities, practice, assessments, coverage and progress are ready for you.",
-      "Teacher":"Your Teacher Workspace. Your classes, learners, teaching calendar, daily activities, assessments and curriculum coverage tools are ready.",
-      "Parent/Caregiver":"Your Parent and Caregiver Workspace. You can review your learner's progress, activities and available family support information.",
-      "Professional Reviewer":"Your Professional Reviewer Workspace. Curriculum evidence, activities, assessments and review information are ready for authorised review.",
-      "NGO/Organization":"Your NGO and Organization Workspace. Programme coverage, evidence and pilot information are ready for authorised use.",
-      "Education/Government":"Your Education and Government Workspace. Curriculum control, evidence, traceability and coverage information are ready for authorised review.",
-      "Community/Partner":"Your Community and Partner Workspace. Education services, pilot information and feedback tools are ready.",
-      "Technician":"Your Technician Workspace. Pilot diagnostics and authorised technical tools are ready.",
-      "Owner/Control":"Your Owner and Control Workspace. Pilot status, release evidence and authorised control information are ready."
+      "Student":"Welcome to your Student Workspace. Your learning tools, class or level, subject, term, daily activities, practice, assessments, coverage and progress are ready for you.",
+      "Teacher":"Welcome to your Teacher Workspace. Your classes, learners, teaching calendar, daily activities, assessments and curriculum coverage tools are ready.",
+      "Parent/Caregiver":"Welcome to your Parent and Caregiver Workspace. You can review your learner's progress, activities and available family support information.",
+      "Professional Reviewer":"Welcome to your Professional Reviewer Workspace. Curriculum evidence, activities, assessments and review information are ready for authorised review.",
+      "NGO/Organization":"Welcome to your NGO and Organization Workspace. Programme coverage, evidence and pilot information are ready for authorised use.",
+      "Education/Government":"Welcome to your Education and Government Workspace. Curriculum control, evidence, traceability and coverage information are ready for authorised review.",
+      "Community/Partner":"Welcome to your Community and Partner Workspace. Education services, pilot information and feedback tools are ready.",
+      "Technician":"Welcome to your Technician Workspace. Pilot diagnostics and authorised technical tools are ready.",
+      "Owner/Control":"Welcome to your Owner and Control Workspace. Pilot status, release evidence and authorised control information are ready."
     };
-    return map[role]||("Your "+role+" Workspace. Your authorised Pacific Education tools are ready.");
+    return map[role]||("Welcome to your "+role+" Workspace. Your authorised Pacific Education tools are ready.");
   }
   function announceRegistrationCompletion(){
     /* Registration completion voice is mandatory on/after Registration only.
@@ -302,7 +302,7 @@
       document.body.removeAttribute("data-pe-flow-step");
       var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
       if(ws){ws.hidden=false;try{ws.scrollIntoView({behavior:"smooth",block:"start"});}catch(_){} }
-      speak("Guided sequence completed. Your individual Pacific Education workspace. Choose your workspace tool to continue.");
+      speak("Guided sequence completed. Welcome to your individual Pacific Education workspace. Choose your workspace tool to continue.");
     });
     wrap.appendChild(b);host.appendChild(wrap);
   }
