@@ -8,6 +8,34 @@ Pilot page: https://terubea82-eng.github.io/Pacific-education-/src/index.html
 
 Do not guess that a Pacedu feature works because its label, HTML ID, CSS rule, or JavaScript file exists. Every change must be traced from the real HTML element through the responsible JavaScript handler and target, tested in CI, then checked on the deployed page and supported devices before being marked complete.
 
+## Unified ChatGPT command-to-activation model
+
+The product goal is one plain-language command in the Pacedu ChatGPT conversation that starts one coordinated change workflow across every relevant connected development surface. Example: “PACEDU ACTIVATE: connect every Back and Next button across all pages, website, Android and computers; preserve #856 voice.”
+
+Treat each instruction as a **change request**, not as proof that execution has already happened.
+
+1. **Interpret:** Extract the requested action (activate, change, add, repair, verify, or delete), target feature, affected platforms, and locked constraints.
+2. **Resolve:** Read the latest repository source and current commit. Identify the responsible HTML, CSS, JavaScript, feature engines, tests, and workflows. Do not guess paths or edit stale versions.
+3. **Plan:** Build a scoped change list and identify dependencies and regression risks. Reuse shared controller/feature logic where appropriate rather than making platform-specific duplicate behaviour.
+4. **Protect:** Preserve the installed and user-confirmed #856 voice system, registration protections, pilot/payment boundaries, and unrelated working features. For destructive code or data deletion, identify the exact target and preview the effect; require explicit confirmation when the target or consequences are ambiguous or irreversible.
+5. **Change:** Use authenticated GitHub/repository tools to commit only the scoped changes when those tools and permissions are available. If a required external builder, app, credential, or permission is unavailable, report that dependency instead of claiming it was updated.
+6. **Test:** Add or update regression tests; run relevant source, behaviour, security, build and preservation checks through GitHub Actions. A green build alone is not behavioural proof.
+7. **Deploy/build:** Deploy the web version and produce an Android artifact only through the relevant workflows, and associate results with the exact commit SHA. Existing installed APKs do not update just because Pages deploys.
+8. **Verify:** Record separately whether source inspection, automated tests, deployment, APK creation, real-phone testing, computer/browser testing, and feature-behaviour testing are complete.
+9. **Report:** Return the commit, changed files, check statuses, deployment/APK links when verified, remaining failures, and the next required user action. Never say “active everywhere” if any required platform or behaviour remains unverified.
+
+### Command meanings
+
+- **Activate / repair / connect:** implement the requested behaviour, wire it to the correct shared controller and UI, test, and deploy/build when possible.
+- **Add / update:** make a scoped source change, preserve unrelated working behaviour, and test it.
+- **Delete / remove:** identify exactly what will be removed; do not silently delete ambiguous, shared, protected, or user data. Confirm before irreversible or broad destructive actions.
+- **Check / verify:** inspect current source and evidence without claiming unperformed changes.
+- **Release:** verify the exact commit's CI, deployment and APK artifact before presenting it as ready.
+
+### Cross-platform truth rule
+
+“Every platform” means every relevant platform that is actually wired to the workflow. The website, Android APK, and computer browser may share source requirements but have distinct deployment/runtime checks. GitHub Actions can run automated tests and builds; it cannot prove every physical phone or computer works without real-device/browser evidence. External building apps are not automatically connected simply because they are mentioned in a ChatGPT message: each needs an authenticated integration or repository workflow.
+
 ## Locked requirements
 
 - Keep the installed and user-confirmed #856 voice behaviour protected. Do not replace the voice engine during navigation repairs.
@@ -51,6 +79,7 @@ An element-presence audit is not a behavioural test. CI success is not proof tha
 - Earlier exact revision `a6d0289098fa67047ebfd8c8783e1a0a31ce2d09`: Android Pilot Build, Pages deployment, protected voice lock, pilot preflight/recheck, feature preservation, prototype validation, user readiness, CodeQL and mandatory change audit were reported successful by GitHub Actions.
 - Latest revision `841cc5c48c34f412ae17ac357a466ac6a0082d2b`: new CI runs were queued when this document was written; final outcomes must be checked before calling the latest revision verified.
 - Actual on-device click-through for all steps and features: **not yet evidenced by this record**.
+- Added the unified command-to-activation model in this document. This records the intended process; it does not by itself connect external apps or make every future ChatGPT message execute automatically.
 
 ## Required checklist for every future change
 
