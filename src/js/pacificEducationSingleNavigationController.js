@@ -296,8 +296,9 @@ function bind(id,fn){
   var button=el(id);
   /* Real entry-page links use browser navigation; do not intercept them as buttons. */
   if(button && button.tagName==="A" && button.getAttribute("href")) return;
-  if(!button || bound[id]) return;
-  bound[id]=true;
+  if(!button || bound[id]===button) return;
+  /* Replaced DOM nodes must be rebound; a stale ID must never leave a new button dead. */
+  bound[id]=button;
 
   button.setAttribute("data-pe-single-navigation","true");
   button.setAttribute("data-pe-navigation-owner","single");
@@ -343,8 +344,9 @@ function ensureBackButton(targetId){
     button.style.cursor="pointer";
     target.insertBefore(button,target.firstChild);
   }
-  if(backBound[id]) return;
-  backBound[id]=true;
+  if(backBound[id]===button) return;
+  /* Rebind if a repair or feature insertion replaces this page’s Back node. */
+  backBound[id]=button;
   button.addEventListener("click",function(event){
     event.preventDefault();
     event.stopPropagation();
@@ -547,6 +549,67 @@ function bindGatewayCaptureFallback(){
   },true);
 }
 
+/*
+ * Cross-feature activation registry.
+ * Navigation owns visibility; feature engines own their own behaviour.
+ * This registry reports missing wiring honestly and safely rebinds replaced controls.
+ * It never edits the protected #856 voice engine or unlocks payment/production gates.
+ */
+var FEATURE_REGISTRY = {
+  registration: { label:"Registration", ids:["pacificEducationIdentityRegistration","pilotRoleSelector","pilotRegistrationSaveButton"] },
+  learning: { label:"Learning and curriculum", ids:["learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson"] },
+  activities: { label:"Daily activities", ids:["dailyLessonActivity","dailyActivitiesStartButton","dailyActivitiesContinuePracticeButton"] },
+  practice: { label:"Practice", ids:["dailyLessonPracticeStage","practiceContinueAssessmentButton"] },
+  assessment: { label:"Assessments", ids:["assessments","assessmentContinueCoverageButton"] },
+  dashboards: { label:"Progress and coverage", ids:["pacificEducationCoverageDashboard","pacificEducationStudentProgressDashboard"] },
+  teacher: { label:"Teacher calendar and review", ids:["teacherCalendarSection","teacherCalendarNextButton"] },
+  accessibility: { label:"Accessibility", ids:["pacificEducationAccessibilityControls"] },
+  mailbox: { label:"Pilot mailbox", ids:["pacificEducationMailbox"] },
+  voice: { label:"Protected voice controls", ids:["pacificEducationAIConversation","pacificEducationVoiceStatus"] }
+};
+
+function auditFeatures(){
+  var report={version:"2.3.0",owner:"single",features:{},missingRequired:[],checkedAt:(new Date()).toISOString()};
+  Object.keys(FEATURE_REGISTRY).forEach(function(key){
+    var spec=FEATURE_REGISTRY[key], present=[], missing=[];
+    spec.ids.forEach(function(id){ (el(id)?present:missing).push(id); });
+    report.features[key]={label:spec.label,status:missing.length?"needs-attention":"present",present:present,missing:missing};
+    missing.forEach(function(id){ report.missingRequired.push({feature:key,id:id}); });
+  });
+  document.documentElement.setAttribute("data-pe-feature-audit",report.missingRequired.length?"needs-attention":"present");
+  document.documentElement.setAttribute("data-pe-feature-audit-version",report.version);
+  var status=el("pacificEducationFeatureActivationStatus");
+  if(status){
+    status.textContent=report.missingRequired.length
+      ? "Pac edu feature wiring check: "+report.missingRequired.length+" required element(s) need attention. See PacificEducationFeatureActivation.audit()."
+      : "Pac edu feature wiring check: all registered elements are present. Behavioural tests are still required.";
+    status.setAttribute("role","status");
+    status.setAttribute("aria-live","polite");
+  }
+  return report;
+}
+
+function observeFeatureChanges(){
+  if(!window.MutationObserver || document.documentElement.getAttribute("data-pe-activation-observer")==="true") return;
+  document.documentElement.setAttribute("data-pe-activation-observer","true");
+  var queued=false;
+  var observer=new MutationObserver(function(records){
+    var relevant=records.some(function(record){
+      return record.type==="childList" && (record.addedNodes.length>0 || record.removedNodes.length>0);
+    });
+    if(!relevant || queued) return;
+    queued=true;
+    window.setTimeout(function(){
+      queued=false;
+      /* init() is idempotent and now rebinds replacement DOM nodes by identity. */
+      init();
+      auditFeatures();
+    },60);
+  });
+  observer.observe(document.documentElement,{childList:true,subtree:true});
+  window.PacificEducationFeatureActivationObserver=observer;
+}
+
 function init(){
   bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
@@ -587,6 +650,8 @@ function init(){
   bindGuidedFeatureButtons();
   syncRules();
   bindAllBackButtons();
+  auditFeatures();
+  observeFeatureChanges();
 }
 
 if(document.readyState==="loading"){
@@ -603,16 +668,24 @@ window.setTimeout(bindGuidedFeatureButtons,2500);
 window.setTimeout(bindAllBackButtons,2500);
 
 window.PacificEducationSingleNavigation={
-  version:"2.2.0",
+  version:"2.3.0",
   owner:"single",
   go:go,
   gateway:gateway,
   guided:guided,
   refreshFeatureForTarget:refreshFeatureForTarget,
+  audit:auditFeatures,
+  registerFeature:function(key,spec){
+    if(!key || !spec || !Array.isArray(spec.ids)) return false;
+    FEATURE_REGISTRY[key]={label:String(spec.label||key),ids:spec.ids.slice()};
+    auditFeatures();
+    return true;
+  },
   status:function(){
     return {
-      version:"2.2.0",
+      version:"2.3.0",
       owner:"single",
+      featureAudit:auditFeatures(),
       started:!!document.body.getAttribute("data-pe-single-navigation-started"),
       bound:Object.keys(bound).filter(function(id){return bound[id];}),
       backBound:Object.keys(backBound).filter(function(id){return backBound[id];})
