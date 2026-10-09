@@ -126,7 +126,7 @@
   function observe(){
     mark();
     var observer=new MutationObserver(function(){ mark(); });
-    observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["aria-pressed","class"]});
+    observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["aria-pressed"]});
   }
 
   if(document.readyState==="loading"){
