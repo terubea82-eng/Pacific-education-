@@ -110,6 +110,16 @@ jobs:
           with open("device-evidence/evidence.json","w",encoding="utf-8") as f: json.dump(record,f,indent=2); f.write("\n")
           PY
 
+      - name: Validate evidence against exact candidate
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tests/device-bridge/verify_device_evidence.py \\
+            --evidence device-evidence/evidence.json \\
+            --expected-commit "$PACEDU_VERIFIED_COMMIT" \\
+            --evidence-dir device-evidence
+
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
