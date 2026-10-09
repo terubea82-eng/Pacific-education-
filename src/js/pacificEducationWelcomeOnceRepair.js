@@ -9,7 +9,7 @@
   function firstPage(){
     var body=document.body;
     if(!body)return false;
-    if(body.getAttribute("data-pac-edu-entry-page")==="1")return true;
+    if(body.classList.contains("pacedu-entry-mode") && body.getAttribute("data-pac-edu-entry-page")==="1")return true;
     if(body.getAttribute("data-pe-flow-step")==="0")return true;
     var welcome=document.getElementById("pacificEducationWelcome");
     if(welcome&&!welcome.hidden){
