@@ -119,7 +119,7 @@ function hideOtherGuidedPages(targetId){
   if(welcome && targetId!==GATEWAY.welcome){
     welcome.hidden=true;
     welcome.setAttribute("aria-hidden","true");
-    try{ welcome.style.setProperty("display","none","important"); }catch(e){}
+    try{ welcome.style.display="none"; }catch(e){}
   }
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
@@ -261,7 +261,7 @@ function gateway(page){
     if(!page) return;
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.setProperty("display","none","important"); }catch(e){}
+    try{ page.style.display="none"; }catch(e){}
   });
 
   if(welcome){
