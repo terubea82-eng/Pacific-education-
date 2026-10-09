@@ -161,6 +161,11 @@ test("device speaker diagnostic invokes speech and presents an honest result", a
   await expect(page.locator("#speechFacts")).toContainText("Yes, I heard the sound");
   await expect(page.locator("#speechFacts")).toContainText("No sound heard");
   await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(2);
+  await expect.poll(() => page.evaluate(() => {
+    const status = document.querySelector("#pacificEducationVoiceStatus");
+    return status && /Speaker 1 is speaking|Speaker 2 is speaking|conversation complete/i.test(status.textContent);
+  }), { timeout: 8000 }).toBeTruthy();
+  await expect.poll(() => page.locator("#report").textContent()).toContain("lifecycleEvents");
   const calls = await page.evaluate(() => window.__paceduSpeechCalls);
   expect(calls[0].text).toContain("Pacific Education speaker test");
   expect(calls[1].text).toContain("If you can hear this sentence");
