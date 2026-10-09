@@ -250,24 +250,24 @@ function renderPageGuide(targetId){
   var target=el(targetId);
   var info=PAGE_GUIDE[targetId];
   if(!target || !info) return;
-  var guide=el("paceduPageSequenceGuide");
-  if(!guide || !target.contains(guide)){
+  var guide=target.querySelector(".pacedu-page-sequence-guide");
+  if(!guide){
     guide=document.createElement("section");
-    guide.id="paceduPageSequenceGuide";
+    guide.className="pacedu-page-sequence-guide";
     guide.setAttribute("aria-label","Page-by-page sequence guide");
     guide.style.cssText="margin:0 0 16px;padding:12px 14px;border:2px solid #1877b7;border-radius:10px;background:#eef8ff;color:#17324d";
     var number=document.createElement("strong");
-    number.id="paceduPageSequenceNumber";
+    number.className="pacedu-page-sequence-number";
     number.style.cssText="display:block;color:#145b8d;font-size:1.05rem";
     var detail=document.createElement("p");
-    detail.id="paceduPageSequenceDetail";
+    detail.className="pacedu-page-sequence-detail";
     detail.style.cssText="margin:5px 0 0";
     detail.textContent="Complete the blue-highlighted entry boxes on this page, then use the green Next button. Only the current page should be shown.";
     guide.appendChild(number);
     guide.appendChild(detail);
     target.insertBefore(guide,target.firstChild);
   }
-  var numberEl=el("paceduPageSequenceNumber");
+  var numberEl=guide.querySelector(".pacedu-page-sequence-number");
   if(numberEl) numberEl.textContent="Page "+info[0]+" of 14 — "+info[1];
   guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
 }
