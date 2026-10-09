@@ -44,7 +44,7 @@
       "background:inherit;";
 
     controller.innerHTML =
-      "<strong id=\"peBoxSequenceTitle\">Mandatory registration — Step 1 of 5</strong>" +
+      "<strong id=\"peBoxSequenceTitle\">Mandatory registration — Step 1 of 4</strong>" +
       "<p id=\"peBoxSequenceProgress\" role=\"status\" aria-live=\"polite\">Complete one box, then press Next.</p>";
 
     registration.insertBefore(controller, registration.firstChild);
