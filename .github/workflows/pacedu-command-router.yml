@@ -48,10 +48,11 @@ jobs:
           grep -q "DISPATCH_COMMAND" "$file"
           grep -q "actions: write" "$file"
           grep -q "help|check|test|build-android|deploy-web|preserve-check" "$file"
-          grep -q "gh workflow run android-pilot-build.yml --ref main" "$file"
-          grep -q "gh workflow run deploy-pilot-pages.yml --ref main" "$file"
-          grep -q "gh workflow run pacedu-voice-lock.yml --ref main" "$file"
-          echo "PASS: command router has owner gate and allowlisted workflow mappings."
+          grep -q "dispatch_and_wait android-pilot-build.yml" "$file"
+          grep -q "dispatch_and_wait deploy-pilot-pages.yml" "$file"
+          grep -q "dispatch_and_wait pacedu-voice-lock.yml" "$file"
+          grep -q "Downstream workflow completed successfully" "$file"
+          echo "PASS: command router has owner gate, allowlisted mappings, and downstream completion checks."
 
   route:
     if: >-
@@ -94,7 +95,8 @@ jobs:
           esac
           echo "command=$command" >> "$GITHUB_OUTPUT"
 
-      - name: Run only the selected approved workflow
+      - name: Run approved workflow and verify its actual result
+        id: downstream
         if: steps.parse.outputs.command != 'help'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -103,34 +105,91 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          summary_file="$RUNNER_TEMP/pacedu-downstream-summary.txt"
+          : > "$summary_file"
+
+          dispatch_and_wait() {
+            local workflow="$1"
+            local label="$2"
+            local since run_json run_id run_status run_conclusion run_url started_at
+            since="$(date -u +%s)"
+            echo "Dispatching $label ($workflow)..."
+            gh workflow run "$workflow" --ref main
+            # Allow GitHub's Actions API to publish the newly dispatched run.
+            sleep 3
+            started_at="$(date -u +%s)"
+            run_json=""
+            for attempt in $(seq 1 360); do
+              run_json="$(gh run list --workflow "$workflow" --event workflow_dispatch --branch main --json databaseId,status,conclusion,createdAt,url --limit 30)"
+              run_json="$(printf '%s' "$run_json" | jq -c --argjson since "$since" '[.[] | select((.createdAt | fromdateiso8601) >= $since)] | sort_by(.createdAt) | last // empty')"
+              if [[ -n "$run_json" && "$run_json" != "null" ]]; then
+                break
+              fi
+              sleep 2
+            done
+            if [[ -z "$run_json" || "$run_json" == "null" ]]; then
+              echo "::error::No downstream run appeared for $workflow after dispatch."
+              return 1
+            fi
+
+            run_id="$(printf '%s' "$run_json" | jq -r '.databaseId')"
+            run_url="$(printf '%s' "$run_json" | jq -r '.url')"
+            for attempt in $(seq 1 900); do
+              run_json="$(gh run view "$run_id" --json databaseId,status,conclusion,url)"
+              run_status="$(printf '%s' "$run_json" | jq -r '.status')"
+              run_conclusion="$(printf '%s' "$run_json" | jq -r '.conclusion // ""')"
+              run_url="$(printf '%s' "$run_json" | jq -r '.url')"
+              if [[ "$run_status" == "completed" ]]; then
+                break
+              fi
+              sleep 3
+            done
+            if [[ "$run_status" != "completed" ]]; then
+              echo "::error::Timed out waiting for $label (run $run_id)."
+              printf '%s: TIMEOUT — %s\n' "$label" "$run_url" | tee -a "$summary_file"
+              return 1
+            fi
+            printf '%s: %s — %s\n' "$label" "$run_conclusion" "$run_url" | tee -a "$summary_file"
+            if [[ "$run_conclusion" != "success" ]]; then
+              echo "::error::$label did not succeed (run $run_id; conclusion=$run_conclusion)."
+              return 1
+            fi
+            echo "Downstream workflow completed successfully: $label (run $run_id)."
+          }
+
           case "$COMMAND" in
             check)
-              gh workflow run pilot-recheck.yml --ref main
-              echo "Triggered Pacific Education Pilot Recheck."
+              dispatch_and_wait pilot-recheck.yml "Pilot recheck"
               ;;
             test)
-              gh workflow run pilot-preflight.yml --ref main
-              gh workflow run pacedu-feature-preservation.yml --ref main
-              echo "Triggered pilot preflight and protected-feature checks."
+              dispatch_and_wait pilot-preflight.yml "Pilot preflight"
+              dispatch_and_wait pacedu-feature-preservation.yml "Feature preservation"
               ;;
             build-android)
-              gh workflow run android-pilot-build.yml --ref main
-              echo "Triggered Android Pilot Build for main."
+              dispatch_and_wait android-pilot-build.yml "Android pilot build"
               ;;
             deploy-web)
-              gh workflow run deploy-pilot-pages.yml --ref main
-              echo "Triggered Pages deployment for main."
+              dispatch_and_wait deploy-pilot-pages.yml "GitHub Pages deployment"
+              dispatch_and_wait pilot-recheck.yml "Post-deployment pilot recheck"
               ;;
             preserve-check)
-              gh workflow run pacedu-feature-preservation.yml --ref main
-              gh workflow run pacedu-voice-lock.yml --ref main
-              echo "Triggered protected-feature and voice-lock checks."
+              dispatch_and_wait pacedu-feature-preservation.yml "Feature preservation"
+              dispatch_and_wait pacedu-voice-lock.yml "Protected voice lock"
               ;;
             *)
               echo "No workflow is mapped for this command."
               exit 2
               ;;
           esac
+          {
+            echo "Downstream workflow verification: PASS"
+            cat "$summary_file"
+          } >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "summary<<PACEDU_SUMMARY_EOF"
+            cat "$summary_file"
+            echo "PACEDU_SUMMARY_EOF"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Report help or command result
         if: always()
@@ -141,6 +200,7 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           COMMAND: ${{ steps.parse.outputs.command }}
           JOB_STATUS: ${{ job.status }}
+          DOWNSTREAM_SUMMARY: ${{ steps.downstream.outputs.summary }}
         shell: bash
         run: |
           set -euo pipefail
@@ -151,6 +211,10 @@ jobs:
           if [[ "$COMMAND" == "help" || -z "$COMMAND" ]]; then
             body=$'Pacedu owner command router\n\nAllowed comments (owner account only):\n- `/pacedu check` — trigger pilot recheck\n- `/pacedu test` — trigger pilot preflight and feature-preservation checks\n- `/pacedu build-android` — trigger Android pilot build\n- `/pacedu deploy-web` — deploy the current main branch to Pages\n- `/pacedu preserve-check` — trigger protected-feature and voice-lock checks\n- `/pacedu help` — show this list\n\nThis router runs only these allowlisted workflows. It does not execute arbitrary shell/code or automatically receive messages from ChatGPT.'
           else
-            printf -v body 'Pacedu command `%s` router status: %s. Check the Actions tab for the downstream workflow result. A successful trigger is not proof of deployment or device behaviour.' "$COMMAND" "$JOB_STATUS"
+            if [[ "$JOB_STATUS" == "success" && -n "${DOWNSTREAM_SUMMARY:-}" ]]; then
+              printf -v body 'Pacedu command `%s` result: SUCCESS. Downstream workflow(s) completed successfully:\n%s\nAutomated checks and deployment results are shown in the linked run(s); phone speaker output and physical-device behaviour still require a device test.' "$COMMAND" "$DOWNSTREAM_SUMMARY"
+            else
+              printf -v body 'Pacedu command `%s` result: %s. The downstream workflow did not confirm success. Open Actions logs to inspect the failure.' "$COMMAND" "$JOB_STATUS"
+            fi
           fi
           gh api "repos/$GH_REPO/issues/$ISSUE_NUMBER/comments" -f body="$body"
