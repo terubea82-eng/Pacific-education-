@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b5d7a">
+<title>Pacific Education — Rules & Conditions</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 Arial,sans-serif;color:#173b49;background:#edf8fc}main{max-width:960px;margin:0 auto;padding:18px}.card{background:#fff;border:2px solid #174f63;border-radius:18px;padding:22px;box-shadow:0 8px 26px #1233}h1{line-height:1.2}.rules{padding-left:24px}.rules li{margin:9px 0}.agreement{display:flex;gap:12px;align-items:flex-start;margin:20px 0;padding:15px;border:2px solid #174f63;border-radius:12px;background:#f7fbfc;font-weight:700}.agreement input{width:24px;height:24px;flex:0 0 auto}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;padding-top:16px;border-top:1px solid #ccd9de}a,button{font:inherit;font-weight:700;min-height:50px;padding:12px 18px;border-radius:10px;touch-action:manipulation}.next{background:#168a3a;color:white;border:2px solid #0f642a}.next:disabled{opacity:.45;cursor:not-allowed}.back{background:#fff;color:#174f63;border:2px solid #174f63;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.status{min-height:1.5em}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #000;outline-offset:3px}@media(max-width:700px){main{padding:10px}.card{padding:14px;border-radius:12px}.actions{flex-direction:column}.actions a,.actions button{width:100%}}
+</style>
+</head>
+<body>
+<main><article class="card">
+<h1>🔐 Pacedu Rules &amp; Conditions</h1>
+<p><strong>Registration cannot continue until you confirm the required agreement.</strong></p>
+<p>These rules protect learners, families, teachers and the integrity of this controlled pilot.</p>
+<details><summary><strong>Read the mandatory rules</strong></summary>
+<ol class="rules">
+<li><strong>Educational use:</strong> Use Pacedu for lawful educational, assessment, support and pilot activities.</li>
+<li><strong>Respect and safety:</strong> Do not harass, threaten, impersonate, abuse or deliberately disrupt other users.</li>
+<li><strong>Accurate registration:</strong> Provide truthful information appropriate for the role selected.</li>
+<li><strong>Role protection:</strong> Select your genuine primary role. Privileged Owner/Technician controls are restricted.</li>
+<li><strong>Privacy:</strong> Do not enter unnecessary sensitive child information, passwords, payment credentials or exact child-location data during this prototype pilot.</li>
+<li><strong>Workspace protection:</strong> Do not attempt to access another person's workspace or bypass role permissions.</li>
+<li><strong>Learning evidence:</strong> Do not falsify learner responses, assessments, progress or teacher-review evidence.</li>
+<li><strong>Payments:</strong> Buy Plans and real purchasing are inactive during this controlled pilot.</li>
+<li><strong>Pilot status:</strong> Pacedu is a controlled pilot, not a fully approved production education service.</li>
+<li><strong>Connectivity:</strong> Offline-first features may be available, but offline operation does not guarantee permanent storage or synchronization.</li>
+<li><strong>Accessibility:</strong> Use voice, text, speaker and accessibility controls responsibly. The protected #856 voice architecture remains the pilot baseline.</li>
+<li><strong>Safety controls:</strong> Access may be restricted for safety, testing, maintenance or pilot governance.</li>
+<li><strong>Changes and evidence:</strong> Features and curriculum mappings may change under documented control; authorized testing feedback may be recorded for pilot verification.</li>
+</ol></details>
+<label class="agreement"><input type="checkbox" id="rulesAgreement"><span>I have read and agree to the Pacedu Rules &amp; Conditions and understand this is a controlled pilot.</span></label>
+<p id="rulesStatus" class="status" role="status" aria-live="polite">Agreement required before registration can continue.</p>
+<div class="actions"><a class="back" href="./vision.html" rel="prev">⬅️ Back — Vision</a><button class="next" id="continueButton" type="button" disabled>➡️ Next — Registration</button></div>
+</article></main>
+<script>
+(function(){
+ var check=document.getElementById("rulesAgreement"),next=document.getElementById("continueButton"),status=document.getElementById("rulesStatus");
+ check.addEventListener("change",function(){next.disabled=!check.checked;status.textContent=check.checked?"Agreement recorded for this browser session. You may continue to registration.":"Agreement required before registration can continue.";});
+ next.addEventListener("click",function(){
+   if(!check.checked){status.textContent="Please confirm the agreement before continuing.";return;}
+   try{sessionStorage.setItem("pacificEducationRulesAccepted","yes");}catch(e){status.textContent="Session storage is unavailable. Please enable it to continue safely.";return;}
+   window.location.href="./index.html?entry=registration";
+ });
+})();
+</script>
+</body></html>
