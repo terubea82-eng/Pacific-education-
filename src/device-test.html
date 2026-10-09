@@ -46,6 +46,9 @@
 </ul>
 </section>
 </main>
+<script>window.__pacificEducationAutoWelcomeVoiceScheduled = true;</script>
+<script src="./js/pacificEducationSpeechVoice.js?v=20261005-voice5"></script>
+<script src="./js/pacificEducationNativeAndroidVoiceRepair.js?v=20261007-native-android-voice-repair"></script>
 <script>
 (function(){
   "use strict";
@@ -66,10 +69,37 @@
     list(["Device class: "+state.device.deviceClass,"Browser language: "+state.device.language,"Viewport: "+innerWidth+" × "+innerHeight,"Connection: "+(navigator.onLine?"online":"offline"),"Secure context: "+(isSecureContext?"yes":"no"),"Speech API: "+(state.device.speechSynthesisAvailable&&state.device.utteranceAvailable?"available":"unavailable")],facts);
     buildReport();
   }
-  function stop(){if(timeoutId)clearTimeout(timeoutId);timeoutId=null;if(window.speechSynthesis)window.speechSynthesis.cancel();currentUtterance=null;setStatus("Speech stopped. Run the speaker test again when ready.","idle");}
+  function stop(){if(timeoutId)clearTimeout(timeoutId);timeoutId=null;try{if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();else if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){if(window.speechSynthesis)window.speechSynthesis.cancel();}currentUtterance=null;setStatus("Speech stopped. Run the speaker test again when ready.","idle");}
+  function showConfirmationButtons(){
+    speechFacts.innerHTML="";
+    var yes=document.createElement("button");yes.type="button";yes.textContent="Yes, I heard the sound";
+    yes.onclick=function(){state.humanHeard=true;state.speech.humanConfirmation="audible";setStatus("CONFIRMED BY USER — this device's speaker was audible for this Pacedu voice test.","pass");buildReport();};
+    var no=document.createElement("button");no.type="button";no.className="secondary";no.textContent="No sound heard";
+    no.onclick=function(){state.humanHeard=false;state.speech.humanConfirmation="no audible sound";state.speech.result="no-audible-sound";setStatus("BLOCKER — the speech request ran but you heard no sound. Check volume, silent mode, Bluetooth output, browser permissions and the device text-to-speech engine.","fail");buildReport();};
+    speechFacts.appendChild(yes);speechFacts.appendChild(no);
+  }
   document.getElementById("runSpeakerTest").addEventListener("click",function(){
+    state.tested=true;state.humanHeard=null;
+    if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakConversation==="function"){
+      var engine=typeof window.PacificEducationSpeech.getEngine==="function"?window.PacificEducationSpeech.getEngine():"Pacedu speech engine";
+      var lines=[
+        {speaker:"1",text:"Pacific Education speaker test."},
+        {speaker:"2",text:"If you can hear this sentence, sound is working on this device."}
+      ];
+      state.speech={result:"request-sent",engine:engine,mode:"Pacedu protected speech engine",voicesAvailable:window.speechSynthesis&&window.speechSynthesis.getVoices?window.speechSynthesis.getVoices().length:null};
+      setStatus("Pacedu voice engine request sent ("+engine+"). Listen for the two-speaker test, then confirm whether you actually heard sound.","idle");
+      try{
+        var started=window.PacificEducationSpeech.speakConversation(lines);
+        if(!started)throw new Error("Pacedu speech engine did not accept the conversation");
+        showConfirmationButtons();buildReport();
+      }catch(e){
+        state.speech.result="exception";state.speech.error=String(e);
+        setStatus("FAIL — Pacedu speech engine could not start: "+e,"fail");buildReport();
+      }
+      return;
+    }
     if(!window.speechSynthesis||typeof window.SpeechSynthesisUtterance!=="function"){
-      state.tested=true;state.speech={result:"fail",reason:"Speech Synthesis API unavailable"};state.humanHeard=null;
+      state.speech={result:"fail",reason:"Speech Synthesis API unavailable"};state.humanHeard=null;
       list(["FAIL: This browser does not expose the Web Speech API. Try the installed Pacedu Android app or another supported browser."],speechFacts);setStatus("FAIL — speech engine unavailable on this browser.","fail");buildReport();return;
     }
     window.speechSynthesis.cancel();
@@ -78,11 +108,11 @@
     var voices=window.speechSynthesis.getVoices()||[];
     var selected=voices.find(function(v){return /^en-AU/i.test(v.lang)&&/male|daniel|oliver|lee|guy/i.test(v.name);})||voices.find(function(v){return /^en-AU/i.test(v.lang);})||voices.find(function(v){return /^en/i.test(v.lang);});
     if(selected)u.voice=selected;
-    state.tested=true;state.humanHeard=null;state.speech={result:"pending",event:"waiting for browser speech events",voice:selected?selected.name:"browser default",voiceLanguage:selected?selected.lang:u.lang,voicesAvailable:voices.length,volume:1};
-    list(["Speech API is present.","Voices returned by browser: "+voices.length,"Selected voice: "+(selected?selected.name+" ("+selected.lang+")":"browser default"),"Waiting for speech start and completion events."],speechFacts);
-    setStatus("TEST STARTED — listen for the spoken sentence. The page will report browser events, not whether sound reached your ears.","idle");
-    u.onstart=function(){state.speech.result="started";state.speech.startedAt=new Date().toISOString();setStatus("Browser speech started. Listen now; after it finishes, confirm whether you heard sound.","idle");buildReport();};
-    u.onend=function(){state.speech.result="ended";state.speech.endedAt=new Date().toISOString();currentUtterance=null;if(timeoutId)clearTimeout(timeoutId);timeoutId=null;setStatus("Browser reports speech finished. Did you actually hear it? Confirm below.","pass");list(["Browser speech started and finished.","A successful event does not prove the physical speaker was audible."].concat(selected?["Voice: "+selected.name+" ("+selected.lang+")"]:[]),speechFacts);var b=document.createElement("button");b.type="button";b.textContent="Yes, I heard the sound";b.onclick=function(){state.humanHeard=true;setStatus("CONFIRMED BY USER — this device's speaker was audible for this test.","pass");buildReport();};var n=document.createElement("button");n.type="button";n.className="secondary";n.textContent="No sound heard";n.onclick=function(){state.humanHeard=false;state.speech.result="browser-ended-but-no-audible-sound";setStatus("BLOCKER — browser completed speech but you heard no sound. Check volume, silent mode, Bluetooth output, browser permissions and the device's text-to-speech engine.","fail");buildReport();};speechFacts.appendChild(b);speechFacts.appendChild(n);buildReport();};
+    state.speech={result:"pending",engine:"Web Speech API",voice:selected?selected.name:"browser default",voiceLanguage:selected?selected.lang:u.lang,voicesAvailable:voices.length,volume:1};
+    list(["Web Speech API is present.","Voices returned by browser: "+voices.length,"Selected voice: "+(selected?selected.name+" ("+selected.lang+")":"browser default"),"Waiting for speech start and completion events."],speechFacts);
+    setStatus("Web speech test started. Listen for the sentence; then confirm whether you actually heard sound.","idle");
+    u.onstart=function(){state.speech.result="started";state.speech.startedAt=new Date().toISOString();setStatus("Browser speech started. Listen now.","idle");buildReport();};
+    u.onend=function(){state.speech.result="ended";state.speech.endedAt=new Date().toISOString();currentUtterance=null;if(timeoutId)clearTimeout(timeoutId);timeoutId=null;setStatus("Browser reports speech finished. Confirm whether you actually heard sound.","pass");showConfirmationButtons();buildReport();};
     u.onerror=function(e){state.speech.result="error";state.speech.error=e&&e.error?e.error:"speech error";currentUtterance=null;if(timeoutId)clearTimeout(timeoutId);timeoutId=null;setStatus("FAIL — browser speech error: "+state.speech.error,"fail");list(["Speech engine reported an error: "+state.speech.error,"Check device text-to-speech settings and try again."],speechFacts);buildReport();};
     timeoutId=setTimeout(function(){if(state.speech.result==="pending"){state.speech.result="timeout";setStatus("BLOCKER — no speech-start event arrived within 12 seconds. Browser/device speech may be blocked or unavailable.","fail");buildReport();}},12000);
     try{window.speechSynthesis.speak(u);}catch(e){state.speech.result="exception";state.speech.error=String(e);setStatus("FAIL — could not start speech: "+e,"fail");buildReport();}
