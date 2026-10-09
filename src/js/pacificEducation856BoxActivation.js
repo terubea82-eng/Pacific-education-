@@ -235,10 +235,7 @@
     /* Direct pilot boxes must remain usable even when the guided overlay is active. */
     [
       ["userRegistrationOpenButton","pacificEducationIdentityRegistration"],
-      ["dailyActivitiesStartButton","dailyLesson"],
-      ["dailyActivitiesContinuePracticeButton","dailyLessonPracticeStage"],
-      ["practiceContinueAssessmentButton","assessments"],
-      ["assessmentContinueCoverageButton","pacificEducationCoverageDashboard"],
+      /* Guided daily/practice/assessment transitions belong only to SingleNavigation. */
       ["pacificTeacherDashboardRefresh","teacherDashboard"],
       ["pacificParentDashboardRefresh","parentDashboard"]
     ].forEach(function(pair){
