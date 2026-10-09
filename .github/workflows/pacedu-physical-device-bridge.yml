@@ -20,13 +20,13 @@ permissions:
 
 jobs:
   physical-device-test:
-    runs-on: \${{ inputs.device_class == 'android-phone' && fromJSON('["self-hosted","linux","pacedu-android-device"]') || fromJSON('["self-hosted","linux","pacedu-desktop-device"]') }}
+    runs-on: ${{ inputs.device_class == 'android-phone' && fromJSON('["self-hosted","linux","pacedu-android-device"]') || fromJSON('["self-hosted","linux","pacedu-desktop-device"]') }}
     timeout-minutes: 30
     steps:
       - name: Validate candidate SHA
         shell: bash
         env:
-          TARGET_COMMIT: \${{ inputs.target_commit }}
+          TARGET_COMMIT: ${{ inputs.target_commit }}
         run: |
           set -euo pipefail
           [[ "$TARGET_COMMIT" =~ ^[0-9a-fA-F]{40}$ ]] || { echo "::error::Provide a full 40-character commit SHA"; exit 1; }
@@ -34,13 +34,13 @@ jobs:
       - name: Checkout exact candidate
         uses: actions/checkout@v4
         with:
-          ref: \${{ inputs.target_commit }}
+          ref: ${{ inputs.target_commit }}
           persist-credentials: false
 
       - name: Verify exact source identity
         shell: bash
         env:
-          TARGET_COMMIT: \${{ inputs.target_commit }}
+          TARGET_COMMIT: ${{ inputs.target_commit }}
         run: |
           set -euo pipefail
           ACTUAL="$(git rev-parse HEAD)"
@@ -48,7 +48,7 @@ jobs:
           echo "PACEDU_VERIFIED_COMMIT=$ACTUAL" >> "$GITHUB_ENV"
 
       - name: Connect and test real Android phone
-        if: \${{ inputs.device_class == 'android-phone' }}
+        if: ${{ inputs.device_class == 'android-phone' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -87,7 +87,7 @@ jobs:
           PY
 
       - name: Test real desktop browser
-        if: \${{ inputs.device_class == 'desktop-browser' }}
+        if: ${{ inputs.device_class == 'desktop-browser' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -115,16 +115,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 tests/device-bridge/verify_device_evidence.py \\
-            --evidence device-evidence/evidence.json \\
-            --expected-commit "$PACEDU_VERIFIED_COMMIT" \\
-            --evidence-dir device-evidence
+          python3 tests/device-bridge/verify_device_evidence.py --evidence device-evidence/evidence.json --expected-commit "$PACEDU_VERIFIED_COMMIT" --evidence-dir device-evidence
 
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pacedu-device-evidence-\${{ inputs.device_class }}-\${{ github.run_id }}
+          name: pacedu-device-evidence-${{ inputs.device_class }}-${{ github.run_id }}
           path: device-evidence/
           if-no-files-found: error
           retention-days: 30
