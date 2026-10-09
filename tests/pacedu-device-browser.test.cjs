@@ -113,7 +113,8 @@ test("AI Playback completes a two-speaker Pacific Education conversation", async
   for (let i = 1; i < calls.length; i += 1) {
     expect(calls[i].voice, "each dialogue line must alternate voices").not.toBe(calls[i - 1].voice);
   }
-  expect(calls[calls.length - 1].text).toContain("Let us learn, discover, practise, and grow together.");
+  expect(calls.some(call => call.text.includes("Let us learn, discover, practise, and grow together."))).toBe(true);
+  expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
 });
 
 test("live pilot page fits a narrow phone viewport without document-level horizontal overflow", async ({ page }) => {
