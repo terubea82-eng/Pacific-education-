@@ -114,18 +114,10 @@
       ["pacificEducationStudentProgressDashboard","Learner Progress"]
     ],
     "owner":[
-      ["systemStatus","System Status"],
-      ["pacificEducationWebsitePilotChecklist","Pilot Governance"],
-      ["pacificEducationProductionReleaseChecklist","Production Release Checklist"],
-      ["pacificEducationProductionReleaseEvidenceRegistry","Release Evidence"],
-      ["pacificEducationProductionReleaseEvidenceGate","Release Evidence Gate"],
-      ["publicationStatus","Publication Status"],
-      ["pacificEducationOfflineSyncStatus","Offline / Sync Status"]
+      ["pacificEducationPrivilegedAccessNotice","Owner access verification"]
     ],
     "technician":[
-      ["pacificEducationTechnicianWorkspace","Technician Workspace"],
-      ["systemStatus","System Diagnostics"],
-      ["publicationStatus","Deployment / Publication Status"]
+      ["pacificEducationPrivilegedAccessNotice","Technician access verification"]
     ]
   };
   var SEQUENCE_STORAGE_KEY = "paceduSequenceAdjustmentsV1";

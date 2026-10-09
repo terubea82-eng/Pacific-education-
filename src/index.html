@@ -260,8 +260,118 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
   }
 }
 
+
+/* Final override: local role selection must never reveal privileged controls. */
+/* Fail closed for privileged panels: a local role choice or local sequence override is not authorization. */
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianWorkspace,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianActivation,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseChecklist,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceRegistry,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceGate,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationFinalProductionAuthorizationEvidenceRegistry,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationProduction"],
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationOwner"],
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationTechnician"] {
+  display: none !important;
+}
+
 </style>
-<script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
+<script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script><style id="pacedu-clean-role-aware-screens">
+/* Pacedu clean guided screens — role workspaces reveal only their active target. */
+/* Keep pilot/governance/technical surfaces out of the ordinary user flow by default. */
+#systemStatus,
+#publicationStatus,
+#pacificEducationWebsitePilotChecklist,
+#pacificEducationOfflineSyncStatus,
+#pacificEducationTechnicianActivation,
+#pacificEducationTechnicianWorkspace,
+#pacificEducationExternalReviewerPortal,
+#pacificEducationExternalSpecialistReviewEvidenceRegistry,
+#pacificEducationExternalSpecialistReviewEvidenceLog,
+#pacificEducationSchoolIdentitySection,
+#pacificEducationInstitutionSetup,
+#pacificEducationInstitutionAdvice,
+#pacificEducationExamCalendarSection,
+#pacificEducationAppTools,
+#pacificEducationWorkspaceLiveStatus,
+#pacificGuardianCommentSection,
+#teacherDashboard,
+#parentDashboard,
+#specialEducationDashboard,
+#pacificEducationTeacherClassDashboard,
+#pacificEducationTeacherEvidence,
+#pacificEducationStudentProgressDashboard,
+#pacificEducationProductionReleaseChecklist,
+#pacificEducationProductionReleaseEvidenceRegistry,
+#pacificEducationProductionReleaseEvidenceGate,
+#pacificEducationFinalProductionAuthorizationEvidenceRegistry,
+[id^="pacificEducationProduction"],
+[id^="pacificEducationCurriculum"],
+[id^="pacificEducationExternalSpecialistReview"],
+[id^="pacificEducationFinal"],
+[id^="pacificEducationOwner"],
+[id^="pacificEducationTechnician"] {
+  display: none !important;
+}
+/* Role-specific pages are moved into this one active workspace page by the role-flow controller. */
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [data-pe-sequential-page="active"] {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* During guided navigation, remove repeated banners, global menus and unrelated links. */
+body.pe-guided-flow #pilotBanner,
+body.pe-guided-flow #pacificEducationRefreshNotice,
+body.pe-guided-flow header,
+body.pe-guided-flow #userFirstNavigation,
+body.pe-guided-flow #pacificEducationAppMenu {
+  display: none !important;
+}
+/* A role workspace is one page at a time; never let the global feature-activation
+   rules force diagnostics, dashboards or reviewer panels onto unrelated pages. */
+body.pe-guided-flow #systemStatus,
+body.pe-guided-flow #publicationStatus,
+body.pe-guided-flow #pacificEducationWebsitePilotChecklist,
+body.pe-guided-flow #pacificEducationExternalReviewerPortal,
+body.pe-guided-flow #pacificEducationOfflineSyncStatus,
+body.pe-guided-flow #pacificEducationTechnicianWorkspace,
+body.pe-guided-flow #pacificEducationTechnicianActivation {
+  display: none !important;
+}
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationWebsitePilotChecklist,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationExternalReviewerPortal,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationOfflineSyncStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianWorkspace {
+  display: block !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pe-user-box.pe-sequence-user-active,
+  .pe-user-next,
+  .pacific-mandatory-next,
+  .pacific-flow-next button,
+  #peSequentialNext {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hide non-task notices and global menus even before guided-flow JS starts. */
+#pilotBanner,
+#pacificEducationRefreshNotice,
+#userFirstNavigation,
+#pacificEducationAppMenu {
+  display: none !important;
+}
+body.pe-pilot-all-features #userFirstNavigation,
+body.pe-pilot-all-features #pacificEducationAppMenu {
+  display: none !important;
+}
+</style>
+</head>
 <body>
 <section id="pacificEducationWelcome" aria-label="Pacific Education welcome">
 <div id="pacificEducationWelcomeContent" class="pacedu-welcome-only">
@@ -507,6 +617,18 @@ git status</pre>
 </ul>
 <h3>📌 Current pilot links</h3>
 <p>Use GitHub Actions for build verification, GitHub Pages for the deployed web version, and the approved Android APK artifact for pilot installation.</p>
+</section>
+<section id="pacificEducationPrivilegedAccessNotice" aria-label="Owner and technician access verification" hidden>
+<h2>Owner / Technician access verification</h2>
+<p><strong>This public pilot cannot grant Owner or Technician authority from a role selection alone.</strong> Secure server-side sign-in and role verification must be connected before private diagnostics, release controls or privileged app data can be opened.</p>
+<p>You can continue Pacedu development through the authenticated services below. They require your own GitHub or Google account; Pacedu does not ask you to paste passwords, tokens or secret keys here.</p>
+<ul>
+<li><a href="https://github.com/terubea82-eng/Pacific-education-" target="_blank" rel="noopener noreferrer">Open Pacedu GitHub repository</a></li>
+<li><a href="https://github.com/terubea82-eng/Pacific-education-/actions" target="_blank" rel="noopener noreferrer">Open GitHub Actions and Android builds</a></li>
+<li><a href="https://terubea82-eng.github.io/Pacific-education-/src/index.html" target="_blank" rel="noopener noreferrer">Open Pacedu website</a></li>
+<li><a href="https://console.firebase.google.com/project/pacedu-fe868/overview" target="_blank" rel="noopener noreferrer">Open Firebase Console</a></li>
+</ul>
+<p role="status">Privileged in-app controls remain locked until server authentication and authorization are verified. This does not change the protected #856 voice baseline or the pilot/payment release gates.</p>
 </section>
 <section id="pacificEducationSchoolIdentitySection"><div id="pacificEducationSchoolIdentity"></div></section><section id="learningPlatform"><h2>Learning Tools</h2><p><strong>Let’s learn!</strong></p><p><strong>1. Choose your class.</strong></p><p><strong>2. Choose your subject.</strong></p><p><strong>3. Choose your term.</strong></p><p><strong>4. Press 📚 Daily Activities.</strong></p><nav aria-label="Learning tools" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;"><a href="#dailyLesson" style="font-size:1.15em;font-weight:bold;">📚 Daily Activities</a></nav><p><strong>That is where you start learning.</strong></p><p><small>Then follow the steps: Daily Activities → Practice → Assessment → Coverage.</small></p></section>
 
