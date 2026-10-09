@@ -299,6 +299,20 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
 [id^="pacificEducationTechnician"] {
   display: none !important;
 }
+/* Fail closed for privileged panels: a local role choice or local sequence override is not authorization. */
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianWorkspace,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianActivation,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseChecklist,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceRegistry,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceGate,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationFinalProductionAuthorizationEvidenceRegistry,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationProduction"],
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationOwner"],
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationTechnician"] {
+  display: none !important;
+}
 /* Role-specific pages are moved into this one active workspace page by the role-flow controller. */
 #pacificEducationSequentialRoleWorkspace #peSequentialPage [data-pe-sequential-page="active"] {
   display: block !important;
@@ -589,6 +603,18 @@ git status</pre>
 </ul>
 <h3>📌 Current pilot links</h3>
 <p>Use GitHub Actions for build verification, GitHub Pages for the deployed web version, and the approved Android APK artifact for pilot installation.</p>
+</section>
+<section id="pacificEducationPrivilegedAccessNotice" aria-label="Owner and technician access verification" hidden>
+<h2>Owner / Technician access verification</h2>
+<p><strong>This public pilot cannot grant Owner or Technician authority from a role selection alone.</strong> Secure server-side sign-in and role verification must be connected before private diagnostics, release controls or privileged app data can be opened.</p>
+<p>You can continue Pacedu development through the authenticated services below. They require your own GitHub or Google account; Pacedu does not ask you to paste passwords, tokens or secret keys here.</p>
+<ul>
+<li><a href="https://github.com/terubea82-eng/Pacific-education-" target="_blank" rel="noopener noreferrer">Open Pacedu GitHub repository</a></li>
+<li><a href="https://github.com/terubea82-eng/Pacific-education-/actions" target="_blank" rel="noopener noreferrer">Open GitHub Actions and Android builds</a></li>
+<li><a href="https://terubea82-eng.github.io/Pacific-education-/src/index.html" target="_blank" rel="noopener noreferrer">Open Pacedu website</a></li>
+<li><a href="https://console.firebase.google.com/project/pacedu-fe868/overview" target="_blank" rel="noopener noreferrer">Open Firebase Console</a></li>
+</ul>
+<p role="status">Privileged in-app controls remain locked until server authentication and authorization are verified. This does not change the protected #856 voice baseline or the pilot/payment release gates.</p>
 </section>
 <section id="pacificEducationSchoolIdentitySection"><div id="pacificEducationSchoolIdentity"></div></section><section id="learningPlatform"><h2>Learning Tools</h2><p><strong>Let’s learn!</strong></p><p><strong>1. Choose your class.</strong></p><p><strong>2. Choose your subject.</strong></p><p><strong>3. Choose your term.</strong></p><p><strong>4. Press 📚 Daily Activities.</strong></p><nav aria-label="Learning tools" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;"><a href="#dailyLesson" style="font-size:1.15em;font-weight:bold;">📚 Daily Activities</a></nav><p><strong>That is where you start learning.</strong></p><p><small>Then follow the steps: Daily Activities → Practice → Assessment → Coverage.</small></p></section>
 
