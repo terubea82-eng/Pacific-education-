@@ -1,6 +1,9 @@
 name: Pacedu Authenticated Command Router
 
 on:
+  push:
+    paths:
+      - ".github/workflows/pacedu-command-router.yml"
   issue_comment:
     types: [created]
   workflow_dispatch:
@@ -27,6 +30,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate-router:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Verify allowlisted routes and owner guard
+        shell: bash
+        run: |
+          set -euo pipefail
+          file=.github/workflows/pacedu-command-router.yml
+          grep -q "github.actor == 'terubea82-eng'" "$file"
+          grep -q "actions: write" "$file"
+          grep -q "help|check|test|build-android|deploy-web|preserve-check" "$file"
+          grep -q "gh workflow run android-pilot-build.yml --ref main" "$file"
+          grep -q "gh workflow run deploy-pilot-pages.yml --ref main" "$file"
+          grep -q "gh workflow run pacedu-voice-lock.yml --ref main" "$file"
+          echo "PASS: command router has owner gate and allowlisted workflow mappings."
+
   route:
     if: >-
       github.event_name == 'workflow_dispatch' ||
