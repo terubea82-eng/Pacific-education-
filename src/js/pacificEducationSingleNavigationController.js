@@ -502,7 +502,34 @@ function syncRules(){
   sync();
 }
 
+
+/* Capture-phase gateway fallback: make the first three entry buttons navigate even
+   if another legacy listener consumes the normal bubbling click. This does not touch voice. */
+function bindGatewayCaptureFallback(){
+  if(document.documentElement.getAttribute("data-pe-gateway-capture-bound")==="true") return;
+  document.documentElement.setAttribute("data-pe-gateway-capture-bound","true");
+  document.addEventListener("click",function(event){
+    var node=event.target;
+    while(node && node!==document && node.nodeType===1 && !node.id) node=node.parentNode;
+    if(!node || node===document) return;
+    var id=node.id;
+    if(id!=="welcomeNextButton" && id!=="paceduVisionNext" && id!=="paceduRulesContinue") return;
+    if(node.disabled) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    if(id==="welcomeNextButton"){
+      gateway(2);
+    }else if(id==="paceduVisionNext"){
+      gateway(3);
+    }else{
+      var agreement=el("paceduRulesAgreement");
+      if(agreement && agreement.checked) guided(1,"pacificEducationIdentityRegistration");
+    }
+  },true);
+}
+
 function init(){
+  bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
     gateway(1);
