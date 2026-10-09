@@ -146,8 +146,8 @@ function updateUserBoxDirection(targetId){
 
 var NEXT_WRAPPERS = {
   /* Gateway pages also need their own Next wrappers; otherwise gateway() hides every Next button. */
-  paceduPageVision: "paceduVisionNextWrapper",
-  paceduPageRules: "paceduRulesNextWrapper",
+  paceduPageVision: "paceduVisionNext",
+  paceduPageRules: "paceduRulesContinue",
   pacificEducationWelcome: "welcomeNextWrapper",
   pacificEducationIdentityRegistration: "registrationNextWrapper",
   prototypeAccess: "prototypeNextWrapper",
