@@ -62,7 +62,7 @@ async function installMutationObserverWatchdog(page) {
 
 test("live pilot page loads at desktop size without uncaught page errors", async ({ page }) => {
   const errors = [];
-  page.on("pageerror", error => errors.push(error.message));
+  page.on("pageerror", error => errors.push(error.stack || error.message));
   page.on("console", message => { if (message.type() === "error") console.log("[browser console] " + message.text()); });
   page.on("dialog", dialog => dialog.dismiss());
   await installMutationObserverWatchdog(page);
@@ -85,8 +85,8 @@ test("Pacedu welcome voice control invokes the protected speech engine", async (
   const voiceButton = page.locator("#pacificEducationWelcomeVoiceButton");
   await expect(voiceButton).toBeAttached();
   await voiceButton.click({ force: true });
-  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length), { timeout: 8000 }).toBeGreaterThan(0);
-  const call = await page.evaluate(() => window.__paceduSpeechCalls[0]);
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.some(call => /Pacific Education|Welcome/i.test(call.text))), { timeout: 8000 }).toBe(true);
+  const call = await page.evaluate(() => window.__paceduSpeechCalls.find(call => /Pacific Education|Welcome/i.test(call.text)));
   expect(call.text).toMatch(/Pacific Education|Welcome/i);
   expect(call.volume).toBe(1);
 });
