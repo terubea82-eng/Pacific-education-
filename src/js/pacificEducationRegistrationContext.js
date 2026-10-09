@@ -104,7 +104,7 @@
   function init(){
     if(bind())restore();
     var attempts=0;
-    var timer=setInterval(function(){if(bind()||++attempts>=20)clearInterval(timer);},250);
+    var timer=setInterval(function(){if(bind()){restore();clearInterval(timer);}else if(++attempts>=40)clearInterval(timer);},250);
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
   window.PacificEducationRegistrationContext={save:saveContext,restore:restore,validate:validate,bind:bind,countries:COUNTRY_NAMES};
