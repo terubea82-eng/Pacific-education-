@@ -117,6 +117,21 @@ test("AI Playback completes a two-speaker Pacific Education conversation", async
   expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
 });
 
+test("automatic welcome starts with two-person AI Playback before page guidance", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length), { timeout: 8000 }).toBeGreaterThan(0);
+  await expect.poll(() => page.evaluate(() =>
+    window.__paceduSpeechCalls.some(call => call.text === "Press Next to continue.")
+  ), { timeout: 8000 }).toBe(true);
+  const calls = await page.evaluate(() => window.__paceduSpeechCalls);
+  expect(calls[0].text).toMatch(/^Welcome to Pacific Education\. I am Tion Terubea/);
+  expect(calls.some(call => call.text.startsWith("Registration step"))).toBe(false);
+  expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
+  expect(await page.evaluate(() => window.__pacificEducationWelcomeCompleted)).toBe(true);
+});
+
 test("live pilot page fits a narrow phone viewport without document-level horizontal overflow", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
