@@ -36,6 +36,21 @@ Treat each instruction as a **change request**, not as proof that execution has 
 
 “Every platform” means every relevant platform that is actually wired to the workflow. The website, Android APK, and computer browser may share source requirements but have distinct deployment/runtime checks. GitHub Actions can run automated tests and builds; it cannot prove every physical phone or computer works without real-device/browser evidence. External building apps are not automatically connected simply because they are mentioned in a ChatGPT message: each needs an authenticated integration or repository workflow.
 
+### Implemented GitHub command route
+
+Workflow: `.github/workflows/pacedu-command-router.yml`.
+
+The repository now has an owner-authenticated command router. It accepts comments on ordinary repository issues from the GitHub account `terubea82-eng` beginning with `/pacedu `, and it also supports a manually started workflow with an allowlisted command choice. Available commands:
+
+- `/pacedu check` — starts the pilot recheck workflow.
+- `/pacedu test` — starts pilot preflight and protected-feature checks.
+- `/pacedu build-android` — starts the Android pilot build for `main`.
+- `/pacedu deploy-web` — starts the Pages deployment for `main`.
+- `/pacedu preserve-check` — starts protected-feature and voice-lock checks.
+- `/pacedu help` — replies with the command list.
+
+The router uses GitHub's workflow token and only dispatches the named allowlisted workflows; it does not execute comment text as shell code or directly edit app source. A command trigger is not a successful build/deployment, so the downstream run must be checked. **Important remaining boundary:** messages typed in this ChatGPT conversation are not automatically forwarded to GitHub by this workflow. To use this route now, post the command as a comment on a repository issue (or manually start the router in GitHub Actions). A true ChatGPT-to-GitHub automatic bridge requires an authenticated external integration/webhook that is not provided by this repository workflow alone. Arbitrary feature edits remain scoped changes requiring source review and tests, not blind execution of free text.
+
 ## Locked requirements
 
 - Keep the installed and user-confirmed #856 voice behaviour protected. Do not replace the voice engine during navigation repairs.
@@ -79,7 +94,8 @@ An element-presence audit is not a behavioural test. CI success is not proof tha
 - Earlier exact revision `a6d0289098fa67047ebfd8c8783e1a0a31ce2d09`: Android Pilot Build, Pages deployment, protected voice lock, pilot preflight/recheck, feature preservation, prototype validation, user readiness, CodeQL and mandatory change audit were reported successful by GitHub Actions.
 - Latest revision `841cc5c48c34f412ae17ac357a466ac6a0082d2b`: new CI runs were queued when this document was written; final outcomes must be checked before calling the latest revision verified.
 - Actual on-device click-through for all steps and features: **not yet evidenced by this record**.
-- Added the unified command-to-activation model in this document. This records the intended process; it does not by itself connect external apps or make every future ChatGPT message execute automatically.
+- Added the unified command-to-activation model in this document; it records the intended process but does not itself connect external apps.
+- Added `.github/workflows/pacedu-command-router.yml` in commit `5fb8a13e688cf1c397ba2b082dc26b5297da8fd9`. This adds an owner-authenticated issue-comment/manual-dispatch router for allowlisted check, test, Android build, Pages deployment, and preservation commands. Its downstream runs still need outcome verification; it does not receive ChatGPT messages automatically or perform arbitrary code edits.
 
 ## Required checklist for every future change
 
