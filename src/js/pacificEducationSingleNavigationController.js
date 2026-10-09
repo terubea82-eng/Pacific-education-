@@ -581,7 +581,7 @@ function auditFeatures(){
   var status=el("pacificEducationFeatureActivationStatus");
   if(status){
     var statusMessage=report.missingRequired.length
-      ? "Pac edu feature wiring check: "+report.missingRequired.length+" required element(s) need attention. See PacificEducationFeatureActivation.audit()."
+      ? "Pac edu feature wiring check: "+report.missingRequired.length+" required element(s) need attention. Call PacificEducationSingleNavigation.audit() for details."
       : "Pac edu feature wiring check: all registered elements are present. Behavioural tests are still required.";
     if(status.textContent!==statusMessage) status.textContent=statusMessage;
     status.setAttribute("role","status");
