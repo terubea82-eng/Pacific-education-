@@ -48,6 +48,19 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
+test("Pacedu welcome voice control invokes the protected speech engine", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  const voiceButton = page.locator("#pacificEducationWelcomeVoiceButton");
+  await expect(voiceButton).toBeAttached();
+  await voiceButton.click({ force: true });
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length), { timeout: 8000 }).toBeGreaterThan(0);
+  const call = await page.evaluate(() => window.__paceduSpeechCalls[0]);
+  expect(call.text).toMatch(/Pacific Education|Welcome/i);
+  expect(call.volume).toBe(1);
+});
+
 test("live pilot page fits a narrow phone viewport without document-level horizontal overflow", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
