@@ -65,15 +65,15 @@
   function detect(){
     var ua=navigator.userAgent||"";
     var mobile=/Android|iPhone|iPad|iPod|Mobile/i.test(ua);
-    state.device={userAgent:ua,deviceClass:mobile?"phone-or-tablet":"computer-or-other",language:navigator.language||"unknown",screenWidth:screen.width,screenHeight:screen.height,viewportWidth:innerWidth,viewportHeight:innerHeight,online:navigator.onLine,secureContext:isSecureContext,speechSynthesisAvailable:!!window.speechSynthesis,utteranceAvailable:typeof window.SpeechSynthesisUtterance==="function"};
-    list(["Device class: "+state.device.deviceClass,"Browser language: "+state.device.language,"Viewport: "+innerWidth+" × "+innerHeight,"Connection: "+(navigator.onLine?"online":"offline"),"Secure context: "+(isSecureContext?"yes":"no"),"Speech API: "+(state.device.speechSynthesisAvailable&&state.device.utteranceAvailable?"available":"unavailable")],facts);
+    state.device={userAgent:ua,deviceClass:mobile?"phone-or-tablet":"computer-or-other",language:navigator.language||"unknown",screenWidth:screen.width,screenHeight:screen.height,viewportWidth:innerWidth,viewportHeight:innerHeight,online:navigator.onLine,secureContext:isSecureContext,paceduSpeechEngine:window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.getEngine==="function"?window.PacificEducationSpeech.getEngine():"unavailable",nativeTTSBridgeAvailable:!!(window.PacificEducationNativeTTS&&typeof window.PacificEducationNativeTTS.speakConversation==="function"),speechSynthesisAvailable:!!window.speechSynthesis,utteranceAvailable:typeof window.SpeechSynthesisUtterance==="function"};
+    list(["Device class: "+state.device.deviceClass,"Browser language: "+state.device.language,"Viewport: "+innerWidth+" × "+innerHeight,"Connection: "+(navigator.onLine?"online":"offline"),"Secure context: "+(isSecureContext?"yes":"no"),"Pacedu speech engine: "+state.device.paceduSpeechEngine,"Native Android TTS bridge: "+(state.device.nativeTTSBridgeAvailable?"available":"not detected in this browser"),"Web Speech API: "+(state.device.speechSynthesisAvailable&&state.device.utteranceAvailable?"available":"unavailable")],facts);
     buildReport();
   }
   function stop(){if(timeoutId)clearTimeout(timeoutId);timeoutId=null;try{if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();else if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){if(window.speechSynthesis)window.speechSynthesis.cancel();}currentUtterance=null;setStatus("Speech stopped. Run the speaker test again when ready.","idle");}
   function showConfirmationButtons(){
     speechFacts.innerHTML="";
     var yes=document.createElement("button");yes.type="button";yes.textContent="Yes, I heard the sound";
-    yes.onclick=function(){state.humanHeard=true;state.speech.humanConfirmation="audible";setStatus("CONFIRMED BY USER — this device's speaker was audible for this Pacedu voice test.","pass");buildReport();};
+    yes.onclick=function(){state.humanHeard=true;state.speech.result="user-confirmed-audible";state.speech.humanConfirmation="audible";setStatus("CONFIRMED BY USER — this device's speaker was audible for this Pacedu voice test.","pass");buildReport();};
     var no=document.createElement("button");no.type="button";no.className="secondary";no.textContent="No sound heard";
     no.onclick=function(){state.humanHeard=false;state.speech.humanConfirmation="no audible sound";state.speech.result="no-audible-sound";setStatus("BLOCKER — the speech request ran but you heard no sound. Check volume, silent mode, Bluetooth output, browser permissions and the device text-to-speech engine.","fail");buildReport();};
     speechFacts.appendChild(yes);speechFacts.appendChild(no);
