@@ -278,6 +278,8 @@ function go(step,targetId){
 
 function bind(id,fn){
   var button=el(id);
+  /* Real entry-page links use browser navigation; do not intercept them as buttons. */
+  if(button && button.tagName==="A" && button.getAttribute("href")) return;
   if(!button || bound[id]) return;
   bound[id]=true;
 
@@ -513,6 +515,7 @@ function bindGatewayCaptureFallback(){
     while(node && node!==document && node.nodeType===1 && !node.id) node=node.parentNode;
     if(!node || node===document) return;
     var id=node.id;
+    if(id==="welcomeNextButton" && node.tagName==="A" && node.getAttribute("href")) return;
     if(id!=="welcomeNextButton" && id!=="paceduVisionNext" && id!=="paceduRulesContinue") return;
     if(node.disabled) return;
     event.preventDefault();
@@ -532,7 +535,17 @@ function init(){
   bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
-    gateway(1);
+    var entryRoute="";
+    var rulesAccepted=false;
+    try{
+      entryRoute=(new URLSearchParams(window.location.search)).get("entry")||"";
+      rulesAccepted=window.sessionStorage.getItem("pacificEducationRulesAccepted")==="yes";
+    }catch(e){}
+    if(entryRoute==="registration" && rulesAccepted){
+      guided(1,"pacificEducationIdentityRegistration");
+    }else{
+      gateway(1);
+    }
   }
 
   document.body.setAttribute("data-pe-navigation-owner","single");
