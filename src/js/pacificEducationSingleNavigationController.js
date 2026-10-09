@@ -112,13 +112,19 @@ function refreshFeatureForTarget(targetId){
 }
 
 function hideOtherGuidedPages(targetId){
-  /* Welcome is outside #app/GUIDED_PAGES, so hide it explicitly when a guided page opens. */
-  var welcome=el(GATEWAY.welcome);
-  if(welcome && targetId!==GATEWAY.welcome){
-    welcome.hidden=true;
-    welcome.setAttribute("aria-hidden","true");
-    try{ welcome.style.display="none"; }catch(e){}
-  }
+  /*
+   * LOCKED PAGE-BY-PAGE RULE:
+   * Next and Back may reveal only their one mandated destination page.
+   * Never leave Welcome, Vision, Rules, or another guided page visible beside it.
+   * Back returns to the previous step; Next advances only to the next defined step.
+   */
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var page=el(pageId);
+    if(!page || pageId===targetId) return;
+    page.hidden=true;
+    page.setAttribute("aria-hidden","true");
+    try{ page.style.display="none"; }catch(e){}
+  });
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
     if(!page) return;
@@ -229,6 +235,49 @@ function revealTarget(targetId){
   return true;
 }
 
+/* Visible page-by-page sequence guide. This is navigation UI only; it does not change speech. */
+var PAGE_GUIDE = {
+  pacificEducationWelcome:[1,"Welcome"],
+  paceduPageVision:[2,"Pacific Education vision"],
+  paceduPageRules:[3,"Pilot rules and agreement"],
+  pacificEducationIdentityRegistration:[4,"User registration"],
+  prototypeAccess:[5,"Prototype access"],
+  levelSelection:[6,"Learning level"],
+  subjectSelection:[7,"Subject"],
+  termSelection:[8,"Term"],
+  capabilitySelection:[9,"Learning capability"],
+  dailyLesson:[10,"Daily lesson"],
+  dailyLessonPracticeStage:[11,"Practice activity"],
+  assessments:[12,"Assessment"],
+  pacificEducationCoverageDashboard:[13,"Coverage and progress"],
+  teacherCalendarSection:[14,"Teacher calendar and review"]
+};
+function renderPageGuide(targetId){
+  var target=el(targetId);
+  var info=PAGE_GUIDE[targetId];
+  if(!target || !info) return;
+  var guide=target.querySelector(".pacedu-page-sequence-guide");
+  if(!guide){
+    guide=document.createElement("section");
+    guide.className="pacedu-page-sequence-guide";
+    guide.setAttribute("aria-label","Page-by-page sequence guide");
+    guide.style.cssText="margin:0 0 16px;padding:12px 14px;border:2px solid #1877b7;border-radius:10px;background:#eef8ff;color:#17324d";
+    var number=document.createElement("strong");
+    number.className="pacedu-page-sequence-number";
+    number.style.cssText="display:block;color:#145b8d;font-size:1.05rem";
+    var detail=document.createElement("p");
+    detail.className="pacedu-page-sequence-detail";
+    detail.style.cssText="margin:5px 0 0";
+    detail.textContent="Complete the blue-highlighted entry boxes on this page, then use the green Next button. Only the current page should be shown.";
+    guide.appendChild(number);
+    guide.appendChild(detail);
+    target.insertBefore(guide,target.firstChild);
+  }
+  var numberEl=guide.querySelector(".pacedu-page-sequence-number");
+  if(numberEl) numberEl.textContent="Page "+info[0]+" of 14 — "+info[1];
+  guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
+}
+
 function guided(step,targetId){
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
@@ -236,7 +285,7 @@ function guided(step,targetId){
   document.body.setAttribute("data-pe-navigation-owner","single");
 
   var ok=revealTarget(targetId);
-  if(ok) setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue.");
+  if(ok){ renderPageGuide(targetId); setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue."); }
   return ok;
 }
 
@@ -252,6 +301,7 @@ function gateway(page){
   var rules=el(GATEWAY.rules);
 
   if(pilot){ pilot.hidden=false; pilot.style.display=""; }
+  renderPageGuide(page===1?"pacificEducationWelcome":page===2?"paceduPageVision":"paceduPageRules");
 
   /* Entry pages and guided pages must never remain visible together on Back/Next. */
   GUIDED_PAGES.forEach(function(pageId){
@@ -262,18 +312,15 @@ function gateway(page){
     try{ page.style.display="none"; }catch(e){}
   });
 
-  if(welcome){
-    welcome.hidden=page!==1;
-    welcome.style.display=page===1?"":"none";
-  }
-  if(vision){
-    vision.hidden=page!==2;
-    vision.style.display=page===2?"block":"none";
-  }
-  if(rules){
-    rules.hidden=page!==3;
-    rules.style.display=page===3?"block":"none";
-  }
+  /* Gateway Next/Back shows exactly one of Welcome, Vision, or Rules. */
+  [welcome,vision,rules].forEach(function(node,index){
+    if(!node) return;
+    var active=(index+1)===page;
+    node.hidden=!active;
+    if(active) node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden","true");
+    node.style.display=active?(index===0?"":"block"):"none";
+  });
 
   if(page===1){
     setStatus("Welcome page active. AI Playback and welcome voice are protected.");

@@ -200,6 +200,66 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #assessments{di
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #teacherCalendarSection,
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
+
+/* Keep every user type inside the single User Registration box. */
+#pacificEducationRegistrationBox{grid-column:1 / -1;min-width:0}
+#pacificEducationRegistrationBox #userRegistrationForm{display:block;width:100%;min-width:0}
+#pilotUserRoleCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+#pilotUserRoleCards .pe-user-role-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;min-width:0;min-height:68px;text-align:left;white-space:normal}
+#pilotRoleRegistrationFields{margin-top:12px;padding:12px;border:2px solid #168be8;border-radius:10px}
+@media(max-width:520px){#pilotUserRoleCards{grid-template-columns:1fr}}
+
+/* User Registration: blue breathing activation cue for registration boxes only.
+   Keep guided Next buttons green and preserve the protected #856 voice controller. */
+#pacificEducationIdentityRegistration input:not([type="hidden"]),
+#pacificEducationIdentityRegistration select,
+#pacificEducationIdentityRegistration textarea {
+  border:2px solid #168be8 !important;
+  border-radius:8px;
+  box-shadow:0 0 0 2px rgba(22,139,232,.10);
+}
+#pacificEducationIdentityRegistration input:focus-visible,
+#pacificEducationIdentityRegistration select:focus-visible,
+#pacificEducationIdentityRegistration textarea:focus-visible {
+  outline:3px solid #075ca8 !important;
+  outline-offset:2px;
+  border-color:#075ca8 !important;
+}
+@keyframes paceduRegistrationBlueBreath {
+  0%,100% { border-color:#168be8; box-shadow:0 0 0 2px rgba(22,139,232,.12),0 0 8px rgba(22,139,232,.18); background-color:#f5fbff; }
+  50% { border-color:#0874d1; box-shadow:0 0 0 4px rgba(22,139,232,.22),0 0 18px rgba(22,139,232,.38); background-color:#e7f5ff; }
+}
+#pacificEducationIdentityRegistration #pacificEducationRegistrationBox,
+#pacificEducationIdentityRegistration #pacificEducationSetupBoxes > div,
+#pacificEducationIdentityRegistration #userRegistrationForm,
+#pacificEducationIdentityRegistration #pilotRoleRegistrationFields,
+#pacificEducationIdentityRegistration .pe-user-role-card {
+  border:2px solid #168be8 !important;
+  border-radius:12px;
+  animation:paceduRegistrationBlueBreath 2.4s ease-in-out infinite;
+}
+#pacificEducationIdentityRegistration .pe-user-role-card {
+  color:#12324a;
+  cursor:pointer;
+}
+#pacificEducationIdentityRegistration .pe-user-role-card[aria-pressed="true"] {
+  border-color:#075ca8 !important;
+  background:#d9efff !important;
+  box-shadow:0 0 0 3px rgba(7,92,168,.28) !important;
+}
+@media (prefers-reduced-motion:reduce) {
+  #pacificEducationIdentityRegistration #pacificEducationRegistrationBox,
+  #pacificEducationIdentityRegistration #pacificEducationSetupBoxes > div,
+  #pacificEducationIdentityRegistration #userRegistrationForm,
+  #pacificEducationIdentityRegistration #pilotRoleRegistrationFields,
+  #pacificEducationIdentityRegistration .pe-user-role-card {
+    animation:none !important;
+    border-color:#168be8 !important;
+    box-shadow:0 0 0 2px rgba(22,139,232,.18) !important;
+    background-color:#f0f8ff;
+  }
+}
+
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
@@ -454,15 +514,15 @@ git status</pre>
 <section id="teacherCalendarSection"><div id="pacificEducationCoverageDashboard"></div><div id="pacificEducationTeacherClassRoster"></div><div id="pacificEducationTeacherClassDashboard"></div><div id="pacificEducationStudentProgressDashboard"></div><div id="pacificEducationRemainingAchievementScheduler"></div><div id="pacificEducationRevisionExamRedistribution"></div><div id="pacificEducationTermProgressionGate"></div><div id="pacificEducationCurriculumDependencyValidator"></div><div id="pacificEducationCurriculumMasterControlStatus"></div><div id="pacificEducationCurriculumSourceVerification"></div><div id="pacificEducationCurriculumSourceMapping"></div><div id="pacificEducationCurriculumDocumentReferences"></div><div id="pacificEducationCurriculumEvidenceRegistry"></div><div id="pacificEducationCurriculumVerificationWorkflow"></div><div id="pacificEducationCurriculumEvidenceTraceability"></div><div id="pacificEducationCurriculumVerificationApprovalController"></div><div id="pacificEducationCurriculumAlignmentImportWorkspace"></div><div id="pacificEducationCurriculumAlignmentAutoLinkBridge"></div><div id="pacificEducationCurriculumBulkImportValidation"></div><div id="pacificEducationCurriculumMasterAlignmentWorkspace"></div><div id="pacificEducationCurriculumMasterAlignmentWorkflowController"></div><div id="pacificEducationCurriculumAlignmentCompleteness"></div><div id="pacificEducationCurriculumAlignmentReviewQueue"></div><div id="pacificEducationCurriculumAlignmentReviewActions"></div><div id="pacificEducationCurriculumAlignmentReviewActionLog"></div><div id="pacificEducationCurriculumAlignmentReviewDecisions"></div><div id="pacificEducationCurriculumAlignmentReviewDecisionLog"></div><div id="pacificEducationCurriculumOwnerReviewGate"></div><div id="pacificEducationCurriculumOwnerApprovalRequests"></div><div id="pacificEducationCurriculumOwnerApprovalDecisions"></div><div id="pacificEducationCurriculumOwnerApprovalDecisionLog"></div><div id="pacificEducationCurriculumProductionApprovalGate"></div><div id="pacificEducationProductionRequirementRegistry"></div><div id="pacificEducationProductionFinalGate"></div><div id="pacificEducationExternalApprovalRegistry"></div><div id="pacificEducationProductionExternalApprovalBridge"></div><div id="pacificEducationProductionGateSynchronizer"></div><div id="pacificEducationProductionGateAudit"></div><div id="pacificEducationProductionReleasePacket"></div><div id="pacificEducationProductionReleaseChecklist"></div><div id="pacificEducationProductionReleaseEvidenceRegistry"></div><div id="pacificEducationProductionReleaseEvidenceGate"></div><div id="pacificEducationProductionReleaseReviewBoard"></div><div id="pacificEducationProductionReleaseReviewDecision"></div><div id="pacificEducationProductionReleaseReviewDecisionLog"></div><div id="pacificEducationProductionReleaseIssueRegister"></div><div id="pacificEducationProductionIndependentReviewRequest"></div><div id="pacificEducationProductionIndependentReviewLog"></div><div id="pacificEducationProductionReleaseHandoffPacket"></div><div id="pacificEducationProductionReleaseHandoffVerificationGate"></div><div id="pacificEducationExternalSpecialistReviewEvidenceRegistry"></div><div id="pacificEducationExternalSpecialistReviewEvidenceLog"></div><div id="pacificEducationExternalSpecialistReviewFindingsGate"></div><div id="pacificEducationExternalSpecialistReviewCompletionRecord"></div><div id="pacificEducationExternalSpecialistReviewCompletionLog"></div><div id="pacificEducationExternalReviewClosureGate"></div><div id="pacificEducationFinalReleaseControlReconciliation"></div><div id="pacificEducationFinalProductionAuthorizationEvidenceRegistry"></div><div id="pacificEducationFinalAuthorizationReconciliationGate"></div><div id="pacificEducationExternalAuthorizationCheckRequest"></div><div id="pacificEducationExternalAuthorizationResponseRegistry"></div><div id="pacificEducationExternalAuthorizationResponseValidationGate"></div><div id="pacificEducationFinalReleaseDecisionPackage"></div><div id="pacificEducationFinalReleaseDecisionAcknowledgement"></div><div id="pacificEducationFinalReleaseDecisionVerificationGate"></div><div id="pacificEducationOwnerFinalReviewPage"></div><div id="pacificEducationNextStageControl"></div><div id="pacificEducationCurriculumProductionReadinessGate"></div><div id="pacificEducationCurriculumVerificationAudit"></div><div id="pacificEducationStudentCoverageContext"></div><div id="pacificEducationTeacherEvidence"></div><div id="guidedFlowEndWrapper" class="pacific-flow-end"><button type="button" id="guidedFlowEndButton" aria-label="End guided Pacific Education flow" onclick="document.body.classList.remove('pe-guided-flow');document.body.removeAttribute('data-pe-flow-step');if(window.PacificEducationAccessibilityRuntime&&typeof window.PacificEducationAccessibilityRuntime.announce==='function'){window.PacificEducationAccessibilityRuntime.announce('Pacific Education guided flow ended.');}else if(window.speakText){window.speakText('Pacific Education guided flow ended.');}">⏹️ End</button></div></section>
 <section id="pacificEducationAccountRecovery"><h2>Account Recovery</h2><p>Recovery restores the existing Pacific Education account and does not create a second account.</p></section><section id="pacificEducationIdentityRegistration">
 <h2>User Registration</h2>
+<p id="pacificEducationRegistrationSequenceGuide" role="note" aria-live="polite"><strong>Blue sequence guide:</strong> Follow the blue-highlighted user-entry boxes in order. Complete the current entry before moving to the next step. The selected role is highlighted in blue; use the green Next button to continue through the guided pages until sign-out.</p>
 <div id="pacificEducationSetupBoxes" aria-label="Country, language and user registration setup" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0;">
 <div id="pacificEducationCountriesBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;"><h3 style="margin-top:0;">🌏 Countries</h3><label for="pacificEducationCountrySelect"><strong>Choose your country</strong></label><select id="pacificEducationCountrySelect" style="width:100%;margin-top:8px;padding:10px;"><option value="">Select country</option><option value="FJ">🇫🇯 Fiji</option><option value="PG">🇵🇬 Papua New Guinea</option><option value="SB">🇸🇧 Solomon Islands</option><option value="VU">🇻🇺 Vanuatu</option><option value="NC">🇳🇨 New Caledonia</option><option value="PF">🇵🇫 French Polynesia</option><option value="WS">🇼🇸 Samoa</option><option value="TO">🇹🇴 Tonga</option><option value="TV">🇹🇻 Tuvalu</option><option value="KI">🇰🇮 Kiribati</option><option value="NR">🇳🇷 Nauru</option><option value="FM">🇫🇲 Federated States of Micronesia</option><option value="MH">🇲🇭 Marshall Islands</option><option value="PW">🇵🇼 Palau</option><option value="GU">🇬🇺 Guam</option><option value="AS">🇦🇸 American Samoa</option><option value="CK">🇨🇰 Cook Islands</option><option value="NU">🇳🇺 Niue</option><option value="TK">🇹🇰 Tokelau</option><option value="AU">🇦🇺 Australia</option><option value="NZ">🇳🇿 New Zealand</option><option value="OTHER">🌐 Other</option></select><p id="pacificEducationCountryStatus" role="status" aria-live="polite" style="margin-bottom:0;">Country not selected.</p></div>
 <div id="pacificEducationLanguageBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;"><h3 style="margin-top:0;">🌐 Language</h3><label for="pacificEducationLanguageSelect"><strong>Choose your language</strong></label><select id="pacificEducationLanguageSelect" style="width:100%;margin-top:8px;padding:10px;"><option value="">Select language</option><option value="en-AU">English — Australia (pilot voice)</option><option value="en-FJ">English — Fiji</option><option value="fj">Vosa Vakaviti</option><option value="hi">Hindi</option><option value="ur">Urdu</option><option value="fr">French</option><option value="sm">Samoan</option><option value="to">Tongan</option><option value="tvl">Tuvaluan</option><option value="gil">Kiribati / Gilbertese</option><option value="bi">Bislama</option><option value="ho">Hiri Motu</option><option value="tpi">Tok Pisin</option><option value="other">Other</option></select><p id="pacificEducationLanguageStatus" role="status" aria-live="polite" style="margin-bottom:0;">Language not selected.</p></div>
-<div id="pacificEducationRegistrationBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;"><h3 style="margin-top:0;">👤 User Registration</h3><p style="margin-bottom:8px;">Choose your role and register.</p><button type="button" id="userRegistrationOpenButton" aria-expanded="false" aria-controls="userRegistrationForm" style="width:100%;">👤 Open User Registration</button></div>
-</div>
-<div id="userRegistrationForm" hidden>
+<div id="pacificEducationRegistrationBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;grid-column:1 / -1;"><h3 style="margin-top:0;">👤 User Registration</h3><p style="margin-bottom:8px;">Tap your user type below. Your registration fields will open inside this same box.</p>
+<div id="userRegistrationForm">
 <p><strong>One person → one Pacific Education ID → one account.</strong></p>
 <p>Pilot registration creates a synthetic test profile only. Production identity verification must be completed by the secure server; the browser must not store or expose the underlying identification number.</p>
-<p><strong>Step 1 — Choose your user role.</strong> Tap one role below. The registration boxes for that role will then open.</p>
+<p><strong>Choose your user type.</strong> All user types are listed here. Tap one type to open the name and registration fields inside this same User Registration box.</p>
 <div id="pilotUserRoleCards" class="pe-user-role-cards" role="group" aria-label="Choose your Pacific Education user role">
 <button type="button" class="pe-user-role-card" data-role="Student" aria-pressed="false">👨‍🎓 <strong>Student</strong><span>Learner registration</span></button>
 <button type="button" class="pe-user-role-card" data-role="Blind Learner" aria-pressed="false">🔊 <strong>Blind Learner</strong><span>Dedicated voice-first accessible learner registration</span></button>
@@ -482,12 +542,14 @@ git status</pre>
 <input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your name or test name" style="width:100%;max-width:520px"><br><br>
 <label for="pilotRegistrationRole"><strong>Selected user role</strong></label><br>
 <select id="pilotRegistrationRole" aria-label="Selected user role" style="width:100%;max-width:520px" disabled>
-<option value="">Select role</option><option>Student</option><option>Blind Learner</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
+<option value="">Select role</option><option>Student</option><option>Blind Learner</option><option>Deaf Learner</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
 </select><br><br>
 <p><strong>Step 2 — Complete your registration boxes.</strong> This pilot asks only for a display name and selected role. Do not enter sensitive child information, passwords, payment details or exact location.</p>
 <button type="button" id="pilotRegistrationSaveButton">Save Pilot Registration</button>
 </div>
 <div id="pilotRegistrationStatus" aria-live="polite">Choose a user role to begin registration.</div>
+</div>
+</div>
 </div>
 </section>
 <div id="registrationNextWrapper" class="pacific-flow-next"><button type="button" id="registrationNextButton">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="registrationNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="registrationNextButton" role="status" aria-live="polite">Ready</span></div><section id="pacificEducationWebsitePilotChecklist"><h2>Website Pilot Launch Checklist</h2><p>Checking the website pilot components...</p></section><section id="prototypeAccess"><h2>Prototype Access</h2><p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session. It is not identity verification, authentication, authorization for real users, or production access.</p><button type="button" id="prototypeAuthorizeButton" onclick="(function(){var b=document.getElementById('prototypeAuthorizeButton'),s=document.getElementById('prototypeAccessStatus');if(b)b.disabled=true;if(s)s.textContent='Authorizing synthetic Student pilot session...';try{authorizePrototypeStudent();if(s)s.textContent='Authorized synthetic Student pilot session. Press Next to continue to Learning Level.';}catch(e){if(s)s.textContent='Prototype authorization could not start. Please try again.';if(b)b.disabled=false;}})()">Start Authorized Student Test</button><span id="prototypeAccessStatus" aria-live="polite">Ready for synthetic pilot authorization.</span></section>
@@ -716,7 +778,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261007-mandatory-box-sequence"></script>
 <script src="./js/pacificEducationBreathingFocusGuide.js?v=20261007-breathing-focus"></script>
 <script src="./js/pacificEducationConversationContract.js?v=20261009-conversation-contract-v1"></script>
-<script src="./js/pacificEducationSingleNavigationController.js?v=20261009-controller-wiring-tests-ca759ccc"></script>
+<script src="./js/pacificEducationSingleNavigationController.js?v=20261009-single-page-back-next-0ffd7108"></script>
 <script src="./js/pacificEducationAutoFeatureActivation.js?v=20261006-auto-feature-activation-v1"></script>
 <script src="./js/pacificEducationCurriculumCoverageEngine.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
