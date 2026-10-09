@@ -39,6 +39,9 @@ body.pe-guided-flow[data-pe-flow-step="8"] #dailyLessonPracticeStage{display:blo
 body.pe-guided-flow[data-pe-flow-step="9"] #assessments{display:block !important}
 body.pe-guided-flow[data-pe-flow-step="10"] #pacificEducationCoverageDashboard{display:block !important}
 body.pe-guided-flow[data-pe-flow-step="11"] #teacherCalendarSection,body.pe-guided-flow[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
+/* Step 10 renders the Coverage Dashboard nested inside Teacher Calendar; expose only that nested page and keep its siblings hidden. */
+body.pe-guided-flow[data-pe-flow-step="10"] #teacherCalendarSection{display:block!important}
+body.pe-guided-flow[data-pe-flow-step="10"] #teacherCalendarSection > :not(#pacificEducationCoverageDashboard){display:none!important}
 
 button{padding:10px 16px;margin:5px;cursor:pointer}
 .pacific-flow-next{display:flex;justify-content:flex-start;align-items:center;text-align:left;position:sticky;left:0;bottom:8px;z-index:30;margin-top:16px;padding:8px 0;min-height:48px}.pacific-flow-next button{margin-left:0;min-height:58px;min-width:170px;padding:14px 24px;font-size:1.12rem;font-weight:700;border-radius:10px;touch-action:manipulation}
@@ -711,7 +714,8 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261007-mandatory-box-sequence"></script>
 <script src="./js/pacificEducationBreathingFocusGuide.js?v=20261007-breathing-focus"></script>
 <script src="./js/pacificEducationConversationContract.js?v=20261009-conversation-contract-v1"></script>
-<script src="./js/pacificEducationSingleNavigationController.js?v=20261009-next-every-page-8ce0e8f9"></script>\n<script src="./js/pacificEducationAutoFeatureActivation.js?v=20261006-auto-feature-activation-v1"></script>
+<script src="./js/pacificEducationSingleNavigationController.js?v=20261009-next-back-fix-88f6a8c5"></script>
+<script src="./js/pacificEducationAutoFeatureActivation.js?v=20261006-auto-feature-activation-v1"></script>
 <script src="./js/pacificEducationCurriculumCoverageEngine.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationTeacherReviewQueue.js?v=20261006-protected-wiring"></script>
