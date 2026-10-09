@@ -63,18 +63,23 @@
   function startWelcomeAttempt(){
     if(window.__pacificEducationWelcomeAutoAttempted) return;
     window.__pacificEducationWelcomeAutoAttempted=true;
-    var voice=window.PacificEducationSpeech;
-    if(voice && typeof voice.speakConversation==="function"){
-      var lines=[
-        {speaker:"1",text:"Welcome to Pacific Education."},
-        {speaker:"2",text:"Choose your language, then press Next to continue. You can use AI Playback or Hear Welcome at any time."}
-      ];
-      var started=voice.speakConversation(lines);
-      var status=byId("pacificEducationVoiceStatus");
-      if(!started && status) status.textContent="Automatic voice was attempted. Tap AI Playback or Hear Welcome to try again.";
-    } else {
-      var statusFallback=byId("pacificEducationVoiceStatus");
-      if(statusFallback) statusFallback.textContent="Automatic voice was attempted. Tap AI Playback or Hear Welcome; check this device's speech settings if silent.";
+    var status=byId("pacificEducationVoiceStatus");
+    /* Use the existing full two-speaker introduction so the final Next cue is included. */
+    var globalVoice=window.PacificEducationGlobalEducationVoice;
+    var started=false;
+    try {
+      if(globalVoice && typeof globalVoice.play==="function") {
+        started=globalVoice.play();
+      } else {
+        var playback=byId("pacificEducationAIPlaybackButton");
+        if(playback) {
+          playback.click();
+          started=true;
+        }
+      }
+    } catch(_) { started=false; }
+    if(!started && status) {
+      status.textContent="Automatic welcome voice could not start. Tap AI Playback or Hear Welcome to try again.";
     }
   }
   function init(){
