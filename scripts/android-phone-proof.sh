@@ -1,14 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Run in Termux on the physical Android phone.
-# Usage: bash scripts/android-phone-proof.sh FULL_40_CHAR_COMMIT /path/to/candidate.apk
+# Usage: bash scripts/android-phone-proof.sh FULL_40_CHAR_COMMIT /path/to/candidate.apk fj.pacificeducation.app.debug
 set -euo pipefail
 TARGET_COMMIT="${1:-}"
 APK="${2:-}"
+APP_ID="${3:-}"
 [[ "$TARGET_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "BLOCKED: provide the exact lowercase 40-character commit SHA"; exit 2; }
 [[ -s "$APK" ]] || { echo "BLOCKED: APK path missing or empty"; exit 2; }
+[[ "$APP_ID" =~ ^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)+$ ]] || { echo "BLOCKED: provide the exact application ID from the build output"; exit 2; }
 command -v adb >/dev/null || { echo "BLOCKED: run pkg install android-tools"; exit 2; }
 command -v python >/dev/null || { echo "BLOCKED: run pkg install python"; exit 2; }
-command -v aapt >/dev/null || { echo "BLOCKED: aapt is required to read the APK application ID"; exit 2; }
 DEVICE_LINES="$(adb devices | awk 'NR>1 && $2=="device" {print $1}')"
 DEVICE_COUNT="$(printf '%s\n' "$DEVICE_LINES" | awk 'NF {n++} END {print n+0}')"
 [[ "$DEVICE_COUNT" -eq 1 ]] || { echo "BLOCKED: need exactly one authorized ADB device. Check Android Developer options > Wireless debugging and run adb pair/connect using the on-screen ports. Never share the pairing code."; adb devices -l; exit 3; }
@@ -20,11 +21,11 @@ SDK="$(adb -s "$SERIAL" shell getprop ro.build.version.sdk | tr -d '\r')"
 case "$MODEL $PRODUCT_DEVICE" in *sdk_gphone*|*emulator*|*goldfish*|*ranchu*) echo "BLOCKED: emulator identity rejected"; exit 3;; esac
 [[ -n "$MODEL" && -n "$PRODUCT_DEVICE" && -n "$SDK" ]] || { echo "BLOCKED: could not read device identity"; exit 3; }
 APK_SHA="$(sha256sum "$APK" | awk '{print $1}')"
-APP_ID="$(aapt dump badging "$APK" | sed -n "s/^package: name='\([^']*\)'.*/\1/p" | head -n1)"
-[[ -n "$APP_ID" ]] || { echo "BLOCKED: could not read APK application ID"; exit 3; }
 OUT="pacedu-device-evidence-$(date -u +%Y%m%dT%H%M%SZ)"
 mkdir -p "$OUT"
 adb -s "$SERIAL" install -r "$APK"
+adb -s "$SERIAL" shell pm path "$APP_ID" > "$OUT/package-path.txt"
+grep -F "package:" "$OUT/package-path.txt" >/dev/null || { echo "FAIL: supplied app ID is not installed; verify it against the build output"; exit 4; }
 adb -s "$SERIAL" shell monkey -p "$APP_ID" 1
 sleep 5
 adb -s "$SERIAL" shell dumpsys activity activities > "$OUT/activities.txt"
@@ -36,7 +37,7 @@ NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 python - "$OUT/evidence.json" "$NOW" "$TARGET_COMMIT" "$SERIAL" "$MODEL" "$PRODUCT_DEVICE" "$SDK" "$APP_ID" "$APK_SHA" <<'PY'
 import json,sys
 path,now,commit,serial,model,product,sdk,app_id,apk_sha=sys.argv[1:]
-record={"schema":"pacedu-physical-device-evidence/v1","status":"PASS","device_class":"android-phone","physical_device":True,"connection_method":"Termux ADB over Android Wireless debugging","session_timestamp_utc":now,"device":{"serial":serial,"model":model,"product_device":product,"sdk":sdk},"build":{"commit":commit,"application_id":app_id,"apk_sha256":apk_sha},"test_action":{"name":"install-launch-and-screenshot","result":"PASS","device_originated":True},"artifacts":["android-screen.png","activities.txt","apk-sha256.txt"]}
+record={"schema":"pacedu-physical-device-evidence/v1","status":"PASS","device_class":"android-phone","physical_device":True,"connection_method":"Termux ADB over Android Wireless debugging","session_timestamp_utc":now,"device":{"serial":serial,"model":model,"product_device":product,"sdk":sdk},"build":{"commit":commit,"application_id":app_id,"apk_sha256":apk_sha},"test_action":{"name":"install-launch-and-screenshot","result":"PASS","device_originated":True},"artifacts":["android-screen.png","activities.txt","apk-sha256.txt","package-path.txt"]}
 with open(path,"w",encoding="utf-8") as f:
  json.dump(record,f,indent=2)
  f.write("\n")
