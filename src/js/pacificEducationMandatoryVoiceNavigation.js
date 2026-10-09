@@ -214,7 +214,7 @@
       }
     }
     var observer=new MutationObserver(function(){clearTimeout(observer._timer);observer._timer=setTimeout(scan,120);});
-    observer.observe(body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","style","class"]});
+    observer.observe(body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","style"]});
     setTimeout(scan,350);
   }
 
