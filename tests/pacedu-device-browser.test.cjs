@@ -182,3 +182,65 @@ test("device report is local, includes device facts, and stop control works", as
   await page.getByRole("button", { name: "Stop speech" }).click();
   await expect(page.locator("#status")).toContainText("Speech stopped");
 });
+
+
+test("device speaker diagnostic checks the browser speech start/end lifecycle on fallback", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(deviceURL, { waitUntil: "domcontentloaded" });
+  // Exercise the browser fallback explicitly instead of Pacedu's wrapped conversation path.
+  await page.evaluate(() => { window.PacificEducationSpeech = undefined; });
+  await page.getByRole("button", { name: "Test this device's speaker" }).click();
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(1);
+  await expect(page.locator("#status")).toContainText("Browser reports speech finished", { timeout: 5000 });
+  await expect(page.locator("#speechFacts")).toContainText("Yes, I heard the sound");
+  const report = JSON.parse(await page.locator("#report").textContent());
+  expect(report.speech.result).toBe("ended");
+  expect(report.speech.startedAt).toBeTruthy();
+  expect(report.speech.endedAt).toBeTruthy();
+  expect(report.humanHeard).toBeNull();
+});
+
+test("device speaker diagnostic fails honestly when no speech engine exists", async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, "SpeechSynthesisUtterance", { configurable: true, value: undefined });
+    Object.defineProperty(window, "speechSynthesis", { configurable: true, value: undefined });
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(deviceURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => { window.PacificEducationSpeech = undefined; });
+  await page.getByRole("button", { name: "Test this device's speaker" }).click();
+  await expect(page.locator("#status")).toContainText("FAIL — speech engine unavailable");
+  const report = JSON.parse(await page.locator("#report").textContent());
+  expect(report.speech.result).toBe("fail");
+  expect(report.speech.reason).toBe("Speech Synthesis API unavailable");
+  await expect(page.locator("#speechFacts")).not.toContainText("Yes, I heard the sound");
+});
+
+test("device speaker diagnostic surfaces a browser speech exception as a blocker", async ({ page }) => {
+  await page.addInitScript(() => {
+    class ThrowingUtterance {
+      constructor(text) { this.text = text; this.lang = ""; this.rate = 1; this.volume = 1; this.voice = null; }
+    }
+    const synth = {
+      speaking: false,
+      pending: false,
+      paused: false,
+      cancel() {},
+      resume() {},
+      getVoices() { return []; },
+      speak() { throw new Error("synthetic device output failure"); }
+    };
+    Object.defineProperty(window, "SpeechSynthesisUtterance", { configurable: true, value: ThrowingUtterance });
+    Object.defineProperty(window, "speechSynthesis", { configurable: true, value: synth });
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(deviceURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => { window.PacificEducationSpeech = undefined; });
+  await page.getByRole("button", { name: "Test this device's speaker" }).click();
+  await expect(page.locator("#status")).toContainText("FAIL — could not start speech");
+  const report = JSON.parse(await page.locator("#report").textContent());
+  expect(report.speech.result).toBe("exception");
+  expect(report.speech.error).toContain("synthetic device output failure");
+  await expect(page.locator("#speechFacts")).not.toContainText("Yes, I heard the sound");
+});
