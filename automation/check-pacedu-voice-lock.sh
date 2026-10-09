@@ -9,22 +9,21 @@ PROTECTED=(
   "src/js/pacificEducationMandatoryVoiceNavigation.js"
 )
 
-if [[ -n "${GITHUB_EVENT_NAME:-}" && "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
-  BASE="${GITHUB_BASE_REF:-main}"
-  git fetch --no-tags --depth=1 origin "${BASE}"
-  RANGE="origin/${BASE}...HEAD"
-else
-  RANGE="HEAD^...HEAD"
-fi
-
-CHANGED="$(git diff --name-only "${RANGE}" -- "${PROTECTED[@]}" || true)"
-
-if [[ -n "${CHANGED}" ]]; then
-  echo "::error::Protected Pacific Education #856 voice files were changed:"
-  printf '%s\n' "${CHANGED}"
-  echo "::error::Use additive changes around the protected voice baseline. Do not replace the #856 controller."
-  exit 1
-fi
+# Compare protected files to the last known-good #856 voice baseline.
+# This allows unrelated commits to pass while still rejecting any content change.
+BASELINE_REF="476cda0a284de6471ce3619aab0cd6b2330ea29b"
+git fetch --no-tags --depth=1 origin "$BASELINE_REF"
+for file in "${PROTECTED[@]}"; do
+  if ! git show "${BASELINE_REF}:${file}" > "${RUNNER_TEMP:-/tmp}/pacedu-voice-baseline.tmp"; then
+    echo "::error::Could not read protected baseline file at ${BASELINE_REF}: ${file}"
+    exit 1
+  fi
+  if ! cmp -s "${RUNNER_TEMP:-/tmp}/pacedu-voice-baseline.tmp" "${file}"; then
+    echo "::error::Protected Pacific Education #856 voice file differs from baseline:"
+    echo "${file}"
+    exit 1
+  fi
+done
 
 for file in "${PROTECTED[@]}"; do
   if [[ ! -f "${file}" ]]; then
