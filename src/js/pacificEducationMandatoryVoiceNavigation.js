@@ -145,13 +145,7 @@
       if(page)announcePage(page,"next");
     },350);
   }
-  function announceCurrentStep(reason){
-    var step=currentStep();
-    /* The Welcome page has its own mandatory two-person AI Playback, manual Hear
-       Welcome, and Stop Speech controls. Keep this generic narrator off page 1. */
-    if(step===0 && reason!=="manual")return false;
-    return announcePage(pageForStep(step),reason||"step");
-  }
+  function announceCurrentStep(reason){return announcePage(pageForStep(currentStep()),reason||"step");}
 
   function labelText(el){
     var id=el.id||"", name=el.name||"", aria=el.getAttribute("aria-label")||"", ph=el.getAttribute("placeholder")||"";
@@ -202,12 +196,7 @@
     body.setAttribute("data-pe-voice-watcher","true");
     var last=currentStep();
     var observer=new MutationObserver(function(){
-      var s=currentStep();if(s!==last){last=s;
-        /* Page 1 is reserved for the two-person AI welcome playback. Do not let the
-           generic page narrator speak first or interrupt the owner introduction. */
-        if(!pendingNextVoice && s!==0)announceCurrentStep("step");
-        installBoxVoice();installFinalNext();
-      }
+      var s=currentStep();if(s!==last){last=s;if(!pendingNextVoice)announceCurrentStep("step");installBoxVoice();installFinalNext();}
     });
     observer.observe(body,{attributes:true,attributeFilter:["data-pe-flow-step","class"]});
   }
