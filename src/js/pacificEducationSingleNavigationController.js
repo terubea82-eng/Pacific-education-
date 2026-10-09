@@ -476,7 +476,7 @@ function bindGuidedFeatureButtons(){
     if(button.disabled) return;
     var role="";
     try{ role=sessionStorage.getItem("pacificEducationPilotRole")||""; }catch(e){}
-    var roleSelect=el("pilotRoleSelector");
+    var roleSelect=el("pilotRegistrationRole");
     if(!role && roleSelect) role=roleSelect.value||"";
     if(!role){
       setStatus("Please complete registration and choose your user role before opening the workspace.");
