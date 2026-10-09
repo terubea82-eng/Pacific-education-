@@ -114,7 +114,8 @@ test("AI Playback completes a two-speaker Pacific Education conversation", async
     expect(calls[i].voice, "each dialogue line must alternate voices").not.toBe(calls[i - 1].voice);
   }
   expect(calls.some(call => call.text.includes("Let us learn, discover, practise, and grow together."))).toBe(true);
-  expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
+  expect(calls.some(call => call.text === "Press Next to continue.")).toBe(true);
+  expect(calls[calls.length - 1].text).toContain("ready to be installed on this device");
 });
 
 test("automatic welcome starts with two-person AI Playback before page guidance", async ({ page }) => {
@@ -123,7 +124,7 @@ test("automatic welcome starts with two-person AI Playback before page guidance"
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length), { timeout: 8000 }).toBeGreaterThan(0);
   await expect.poll(() => page.evaluate(() =>
-    window.__paceduSpeechCalls.some(call => call.text === "Press Next to continue.")
+    window.__paceduSpeechCalls.some(call => call.text.includes("ready to be installed on this device"))
   ), { timeout: 8000 }).toBe(true);
   const calls = await page.evaluate(() => window.__paceduSpeechCalls);
   expect(calls[0].text).toMatch(/^Welcome to Pacific Education\. I am Tion Terubea/);
