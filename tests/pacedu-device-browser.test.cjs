@@ -36,10 +36,36 @@ async function installSpeechHarness(page) {
   });
 }
 
+async function installMutationObserverWatchdog(page) {
+  await page.addInitScript(() => {
+    const NativeMutationObserver = window.MutationObserver;
+    window.__paceduObserverRunaways = [];
+    window.MutationObserver = class PaceduObservedMutationObserver extends NativeMutationObserver {
+      constructor(callback) {
+        let callbacks = 0;
+        const started = Date.now();
+        const stack = new Error("MutationObserver created here").stack;
+        super((records, observer) => {
+          callbacks += 1;
+          if (callbacks > 100 && Date.now() - started < 3000) {
+            window.__paceduObserverRunaways.push(stack || "unknown observer source");
+            console.error("[PACEDU OBSERVER RUNAWAY] " + (stack || "unknown observer source"));
+            observer.disconnect();
+            return;
+          }
+          callback(records, observer);
+        });
+      }
+    };
+  });
+}
+
 test("live pilot page loads at desktop size without uncaught page errors", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
+  page.on("console", message => { if (message.type() === "error") console.log("[browser console] " + message.text()); });
   page.on("dialog", dialog => dialog.dismiss());
+  await installMutationObserverWatchdog(page);
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 1365, height: 900 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -47,6 +73,8 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   await expect(page.locator("#pacificEducationVoiceStatus")).toBeAttached();
   await expect(page.locator("#welcomeNextButton")).toBeAttached();
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeAttached();
+  const observerRunaways = await page.evaluate(() => window.__paceduObserverRunaways || []);
+  expect(observerRunaways, "MutationObserver runaway stacks").toEqual([]);
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
