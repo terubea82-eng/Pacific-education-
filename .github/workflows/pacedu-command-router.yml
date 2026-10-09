@@ -122,8 +122,8 @@ jobs:
             started_at="$(date -u +%s)"
             run_json=""
             for attempt in $(seq 1 360); do
-              run_json="$(gh run list --workflow "$workflow" --event workflow_dispatch --branch main --json databaseId,status,conclusion,createdAt,url --limit 30)"
-              run_json="$(printf '%s' "$run_json" | jq -c --argjson since "$since" '[.[] | select((.createdAt | fromdateiso8601) >= $since)] | sort_by(.createdAt) | last // empty')"
+              run_json="$(gh run list --workflow "$workflow" --event workflow_dispatch --branch main --json databaseId,status,conclusion,createdAt,url,headSha --limit 30)"
+              run_json="$(printf '%s' "$run_json" | jq -c --argjson since "$since" --arg sha "$GITHUB_SHA" '[.[] | select(.headSha == $sha and (.createdAt | fromdateiso8601) >= $since)] | sort_by(.createdAt) | last // empty')"
               if [[ -n "$run_json" && "$run_json" != "null" ]]; then
                 break
               fi
