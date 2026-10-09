@@ -556,7 +556,7 @@ function bindGatewayCaptureFallback(){
  * It never edits the protected #856 voice engine or unlocks payment/production gates.
  */
 var FEATURE_REGISTRY = {
-  registration: { label:"Registration", ids:["pacificEducationIdentityRegistration","pilotRoleSelector","pilotRegistrationSaveButton"] },
+  registration: { label:"Registration", ids:["pacificEducationIdentityRegistration","pilotRegistrationRole","pilotRegistrationSaveButton"] },
   learning: { label:"Learning and curriculum", ids:["learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson"] },
   activities: { label:"Daily activities", ids:["dailyLessonActivity","dailyActivitiesStartButton","dailyActivitiesContinuePracticeButton"] },
   practice: { label:"Practice", ids:["dailyLessonPracticeStage","practiceContinueAssessmentButton"] },
