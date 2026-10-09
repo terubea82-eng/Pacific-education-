@@ -6,6 +6,8 @@ on:
       - ".github/workflows/pacedu-command-router.yml"
   issue_comment:
     types: [created]
+  repository_dispatch:
+    types: [pacedu-command]
   workflow_dispatch:
     inputs:
       command:
@@ -42,6 +44,8 @@ jobs:
           set -euo pipefail
           file=.github/workflows/pacedu-command-router.yml
           grep -q "github.actor == 'terubea82-eng'" "$file"
+          grep -q "repository_dispatch:" "$file"
+          grep -q "DISPATCH_COMMAND" "$file"
           grep -q "actions: write" "$file"
           grep -q "help|check|test|build-android|deploy-web|preserve-check" "$file"
           grep -q "gh workflow run android-pilot-build.yml --ref main" "$file"
@@ -52,6 +56,7 @@ jobs:
   route:
     if: >-
       github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'repository_dispatch' && github.event.action == 'pacedu-command') ||
       (github.event.issue.pull_request == null &&
        github.actor == 'terubea82-eng' &&
        startsWith(github.event.comment.body, '/pacedu '))
@@ -64,6 +69,7 @@ jobs:
           ACTOR: ${{ github.actor }}
           COMMENT_BODY: ${{ github.event.comment.body }}
           INPUT_COMMAND: ${{ inputs.command }}
+          DISPATCH_COMMAND: ${{ github.event.client_payload.command }}
         shell: bash
         run: |
           set -euo pipefail
@@ -73,6 +79,8 @@ jobs:
           fi
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             command="$INPUT_COMMAND"
+          elif [[ "$EVENT_NAME" == "repository_dispatch" ]]; then
+            command="$DISPATCH_COMMAND"
           else
             command="$(printf '%s\n' "$COMMENT_BODY" | sed -n '1{s#^/pacedu[[:space:]]\+##;p;}')"
             command="${command%%[[:space:]]*}"
