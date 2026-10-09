@@ -108,7 +108,7 @@ test("Stop Speech cancels pending browser speech and clears saved dialogue", () 
   ]);
   assert.notEqual(h.window.localStorage.getItem("pacificEducationVoiceResume"), null);
   h.window.PacificEducationSpeech.stopSpeech();
-  assert.equal(h.synth.cancelled, 1);
+  assert.equal(h.synth.cancelled, 2, "conversation start and Stop Speech both cancel queued audio");
   assert.equal(h.status.textContent, "Voice stopped.");
   assert.equal(h.window.localStorage.getItem("pacificEducationVoiceResume"), null);
 });
