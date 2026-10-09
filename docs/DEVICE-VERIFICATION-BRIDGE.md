@@ -32,8 +32,8 @@ If no computer is available, Termux can run a local ADB proof script on the actu
 1. In Termux, run: `pkg update && pkg install android-tools python git`. The APK application-ID inspection step also needs a Termux-compatible `aapt`; if unavailable, stop rather than skipping identity checks.
 2. Enable Android Developer options → Wireless debugging. Pair the Termux ADB client using the pairing code and pairing port shown on the phone, then connect to the separate debugging port. Confirm `adb devices -l` shows exactly one authorized device. Never share the pairing code.
 3. Obtain the exact candidate APK and full source commit SHA from its GitHub Actions build. Do not substitute an older APK such as #856 for a different candidate SHA.
-4. Run: `bash scripts/android-phone-proof.sh FULL_40_CHAR_COMMIT /path/to/candidate.apk`.
-5. Review the generated evidence folder and screenshot. The script records device-reported identity, the supplied source SHA, APK checksum, timestamp, activity output and screenshot. The source SHA must be independently matched to the build run; a command-line SHA alone cannot cryptographically prove APK provenance.
+4. Run: `bash scripts/android-phone-proof.sh FULL_40_CHAR_COMMIT /path/to/candidate.apk EXACT_APPLICATION_ID`.
+5. Review the generated evidence folder and screenshot. The script records device-reported identity, the supplied source SHA, APK checksum, timestamp, installed package-path confirmation, activity output and screenshot. Supply the exact application ID shown by the build output (debug builds may have a .debug suffix). The source SHA must be independently matched to the build run; a command-line SHA alone cannot cryptographically prove APK provenance.
 6. If local ADB pairing fails, stop; do not bypass Android security. A second trusted host or approved real-device service is then required.
 
 This local script does not automatically send screenshots, evidence, tokens or personal data to GitHub. Android install/launch does not prove audible AI Playback; listen to the protected two-person dialogue separately. This route cannot verify desktop behavior.
