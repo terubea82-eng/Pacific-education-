@@ -39,6 +39,8 @@ async function installSpeechHarness(page) {
 test("live pilot page loads at desktop size without uncaught page errors", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
+  page.on("dialog", dialog => dialog.dismiss());
+  await installSpeechHarness(page);
   await page.setViewportSize({ width: 1365, height: 900 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await expect(page.locator("#pacificEducationWelcome")).toBeAttached();
@@ -64,6 +66,8 @@ test("Pacedu welcome voice control invokes the protected speech engine", async (
 test("live pilot page fits a narrow phone viewport without document-level horizontal overflow", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
+  page.on("dialog", dialog => dialog.dismiss());
+  await installSpeechHarness(page);
   await page.setViewportSize({ width: 360, height: 800 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(1200);
