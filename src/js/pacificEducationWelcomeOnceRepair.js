@@ -21,9 +21,9 @@
   function clean(text){
     if(typeof text!=="string"||firstPage())return text;
     return text
-      .replace(/\\bWelcome to your /gi,"Your ")
-      .replace(/\\bWelcome to /gi,"")
-      .replace(/\\bWelcome back to your /gi,"Your ");
+      .replace(/\bWelcome to your /gi,"Your ")
+      .replace(/\bWelcome to /gi,"")
+      .replace(/\bWelcome back to your /gi,"Your ");
   }
   function install(){
     var speech=window.PacificEducationSpeech;
