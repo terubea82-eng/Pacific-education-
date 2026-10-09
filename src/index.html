@@ -200,6 +200,44 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #assessments{di
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #teacherCalendarSection,
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
+
+/* User Registration: blue breathing activation cue for registration boxes only.
+   Keep guided Next buttons green and preserve the protected #856 voice controller. */
+@keyframes paceduRegistrationBlueBreath {
+  0%,100% { border-color:#168be8; box-shadow:0 0 0 2px rgba(22,139,232,.12),0 0 8px rgba(22,139,232,.18); background-color:#f5fbff; }
+  50% { border-color:#0874d1; box-shadow:0 0 0 4px rgba(22,139,232,.22),0 0 18px rgba(22,139,232,.38); background-color:#e7f5ff; }
+}
+#pacificEducationIdentityRegistration #pacificEducationRegistrationBox,
+#pacificEducationIdentityRegistration #pacificEducationSetupBoxes > div,
+#pacificEducationIdentityRegistration #userRegistrationForm,
+#pacificEducationIdentityRegistration #pilotRoleRegistrationFields,
+#pacificEducationIdentityRegistration .pe-user-role-card {
+  border:2px solid #168be8 !important;
+  border-radius:12px;
+  animation:paceduRegistrationBlueBreath 2.4s ease-in-out infinite;
+}
+#pacificEducationIdentityRegistration .pe-user-role-card {
+  color:#12324a;
+  cursor:pointer;
+}
+#pacificEducationIdentityRegistration .pe-user-role-card[aria-pressed="true"] {
+  border-color:#075ca8 !important;
+  background:#d9efff !important;
+  box-shadow:0 0 0 3px rgba(7,92,168,.28) !important;
+}
+@media (prefers-reduced-motion:reduce) {
+  #pacificEducationIdentityRegistration #pacificEducationRegistrationBox,
+  #pacificEducationIdentityRegistration #pacificEducationSetupBoxes > div,
+  #pacificEducationIdentityRegistration #userRegistrationForm,
+  #pacificEducationIdentityRegistration #pilotRoleRegistrationFields,
+  #pacificEducationIdentityRegistration .pe-user-role-card {
+    animation:none !important;
+    border-color:#168be8 !important;
+    box-shadow:0 0 0 2px rgba(22,139,232,.18) !important;
+    background-color:#f0f8ff;
+  }
+}
+
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
 <body>
