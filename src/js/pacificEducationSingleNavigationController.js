@@ -144,11 +144,64 @@ function updateUserBoxDirection(targetId){
   }catch(e){}
 }
 
+var NEXT_WRAPPERS = {
+  pacificEducationWelcome: "welcomeNextWrapper",
+  pacificEducationIdentityRegistration: "registrationNextWrapper",
+  prototypeAccess: "prototypeNextWrapper",
+  levelSelection: "levelNextWrapper",
+  subjectSelection: "subjectNextWrapper",
+  termSelection: "termNextWrapper",
+  capabilitySelection: "capabilityNextWrapper",
+  dailyLesson: "dailyNextWrapper",
+  dailyLessonPracticeStage: "practiceNextWrapper",
+  assessments: "assessmentNextWrapper",
+  pacificEducationCoverageDashboard: "coverageNextWrapper",
+  teacherCalendarSection: "teacherCalendarNextWrapper"
+};
+
+var ALL_NEXT_WRAPPERS = [
+  "welcomeNextWrapper","registrationNextWrapper","prototypeNextWrapper",
+  "levelNextWrapper","subjectNextWrapper","termNextWrapper","capabilityNextWrapper",
+  "dailyNextWrapper","practiceNextWrapper","assessmentNextWrapper",
+  "coverageNextWrapper","teacherCalendarNextWrapper"
+];
+
+function syncNextWrapper(targetId){
+  ALL_NEXT_WRAPPERS.forEach(function(id){
+    var wrapper=el(id);
+    if(wrapper) wrapper.style.setProperty("display","none","important");
+  });
+  var activeId=NEXT_WRAPPERS[targetId];
+  var active=activeId && el(activeId);
+  if(active) active.style.setProperty("display","flex","important");
+
+  /* Keep each Next control large, tappable, and visibly active on phones. */
+  var controls=[
+    "welcomeNextButton","paceduVisionNext","paceduRulesContinue","registrationNextButton",
+    "prototypeNextButton","levelNextButton","subjectNextButton","termNextButton",
+    "capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton",
+    "coverageNextButton","teacherCalendarNextButton"
+  ];
+  controls.forEach(function(id){
+    var button=el(id);
+    if(!button) return;
+    button.type="button";
+    button.style.pointerEvents="auto";
+    button.style.touchAction="manipulation";
+    button.style.cursor="pointer";
+    button.style.position="relative";
+    button.style.zIndex="51";
+    button.classList.add("pe-user-next");
+    if(!button.getAttribute("aria-label")) button.setAttribute("aria-label","Next to the following Pacific Education page");
+  });
+}
+
 function revealTarget(targetId){
   var target=el(targetId);
   if(!target) return false;
 
   hideOtherGuidedPages(targetId);
+  syncNextWrapper(targetId);
   updateUserBoxDirection(targetId);
 
   target.hidden=false;
@@ -298,16 +351,74 @@ function bindAllBackButtons(){
 
 function ensureCoverageNextButton(){
   var target=el("pacificEducationCoverageDashboard");
-  if(!target || el("coverageNextButton")) return;
-  var button=document.createElement("button");
-  button.type="button";
-  button.id="coverageNextButton";
-  button.className="pacific-flow-next";
-  button.textContent="➡️ Next";
-  button.setAttribute("aria-label","Next: Teacher Calendar and Review");
-  button.setAttribute("data-pe-single-navigation","true");
-  button.setAttribute("data-pe-navigation-owner","single");
-  target.appendChild(button);
+  if(!target) return;
+  var wrapper=el("coverageNextWrapper");
+  if(!wrapper){
+    wrapper=document.createElement("div");
+    wrapper.id="coverageNextWrapper";
+    wrapper.className="pacific-flow-next";
+    target.appendChild(wrapper);
+  }
+  if(!el("coverageNextButton")){
+    var button=document.createElement("button");
+    button.type="button";
+    button.id="coverageNextButton";
+    button.textContent="➡️ Next — Teacher Calendar";
+    button.setAttribute("aria-label","Next: Teacher Calendar and Review");
+    button.setAttribute("data-pe-single-navigation","true");
+    button.setAttribute("data-pe-navigation-owner","single");
+    wrapper.appendChild(button);
+    var audio=document.createElement("button");
+    audio.type="button";
+    audio.className="pe-audio-command";
+    audio.setAttribute("data-audio-command-for","coverageNextButton");
+    audio.setAttribute("aria-label","Audio command for Coverage Next");
+    audio.textContent="🎙️ Say Next";
+    wrapper.appendChild(audio);
+    var status=document.createElement("span");
+    status.className="pe-audio-command-status";
+    status.setAttribute("data-audio-status-for","coverageNextButton");
+    status.setAttribute("role","status");
+    status.setAttribute("aria-live","polite");
+    status.textContent="Ready";
+    wrapper.appendChild(status);
+  }
+}
+
+function ensureTeacherCalendarNextButton(){
+  var target=el("teacherCalendarSection");
+  if(!target) return;
+  var wrapper=el("teacherCalendarNextWrapper");
+  if(!wrapper){
+    wrapper=document.createElement("div");
+    wrapper.id="teacherCalendarNextWrapper";
+    wrapper.className="pacific-flow-next";
+    target.appendChild(wrapper);
+  }
+  if(!el("teacherCalendarNextButton")){
+    var button=document.createElement("button");
+    button.type="button";
+    button.id="teacherCalendarNextButton";
+    button.textContent="➡️ Next — Open Workspace";
+    button.setAttribute("aria-label","Next: finish the guided flow and open your workspace");
+    button.setAttribute("data-pe-single-navigation","true");
+    button.setAttribute("data-pe-navigation-owner","single");
+    wrapper.appendChild(button);
+    var audio=document.createElement("button");
+    audio.type="button";
+    audio.className="pe-audio-command";
+    audio.setAttribute("data-audio-command-for","teacherCalendarNextButton");
+    audio.setAttribute("aria-label","Audio command for final Next");
+    audio.textContent="🎙️ Say Next";
+    wrapper.appendChild(audio);
+    var status=document.createElement("span");
+    status.className="pe-audio-command-status";
+    status.setAttribute("data-audio-status-for","teacherCalendarNextButton");
+    status.setAttribute("role","status");
+    status.setAttribute("aria-live","polite");
+    status.textContent="Ready";
+    wrapper.appendChild(status);
+  }
 }
 
 function bindGuidedFeatureButtons(){
@@ -334,6 +445,27 @@ function bindGuidedFeatureButtons(){
 
   bind("coverageNextButton",function(button){
     if(!button.disabled) guided(11,"teacherCalendarSection");
+  });
+
+  bind("teacherCalendarNextButton",function(button){
+    if(button.disabled) return;
+    document.body.setAttribute("data-pe-guided-complete","true");
+    document.body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
+    document.body.removeAttribute("data-pe-flow-step");
+    ALL_NEXT_WRAPPERS.forEach(function(id){
+      var wrapper=el(id);
+      if(wrapper) wrapper.style.setProperty("display","none","important");
+    });
+    var pages=el("pacificEducationPilotPages");
+    if(pages){ pages.hidden=true; pages.style.display="none"; }
+    var workspaces=el("pacificEducationPilotUserWorkspaces");
+    if(workspaces){ workspaces.hidden=false; workspaces.style.removeProperty("display"); }
+    var menu=el("pacificEducationAppMenu");
+    if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
+    setStatus("Guided setup complete. Your Pacific Education workspace is ready.");
+    safeCall("PacificEducationAutoFeatureActivation","activate");
+    safeCall("PacificEducationSequentialRoleWorkspaces","activate");
+    if(workspaces){ try{workspaces.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){} }
   });
 }
 
@@ -374,6 +506,7 @@ function init(){
   });
 
   ensureCoverageNextButton();
+  ensureTeacherCalendarNextButton();
   bindGuidedFeatureButtons();
   syncRules();
   bindAllBackButtons();
@@ -388,6 +521,7 @@ if(document.readyState==="loading"){
 window.setTimeout(init,500);
 window.setTimeout(init,1500);
 window.setTimeout(ensureCoverageNextButton,2500);
+window.setTimeout(ensureTeacherCalendarNextButton,2500);
 window.setTimeout(bindGuidedFeatureButtons,2500);
 window.setTimeout(bindAllBackButtons,2500);
 
