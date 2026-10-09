@@ -13,7 +13,6 @@
  */
 
 var STEPS = {
-  welcomeNextButton:    [1, "paceduGatewayVision"],
   prototypeNextButton:  [3, "levelSelection"],
   levelNextButton:      [4, "subjectSelection"],
   subjectNextButton:    [5, "termSelection"],
@@ -21,8 +20,7 @@ var STEPS = {
   capabilityNextButton: [7, "dailyLesson"],
   dailyNextButton:      [8, "dailyLessonPracticeStage"],
   practiceNextButton:   [9, "assessments"],
-  assessmentNextButton: [10, "pacificEducationCoverageDashboard"],
-  coverageNextButton:   [11, "teacherCalendarSection"]
+  assessmentNextButton: [10, "pacificEducationCoverageDashboard"]
 };
 
 var GATEWAY = {
