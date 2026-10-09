@@ -261,7 +261,89 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
 }
 
 </style>
-<script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script></head>
+<script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script>
+<style id="pacedu-clean-role-aware-screens">
+/* Pacedu clean guided screens — role workspaces reveal only their active target. */
+/* Keep pilot/governance/technical surfaces out of the ordinary user flow by default. */
+#systemStatus,
+#publicationStatus,
+#pacificEducationWebsitePilotChecklist,
+#pacificEducationOfflineSyncStatus,
+#pacificEducationTechnicianActivation,
+#pacificEducationTechnicianWorkspace,
+#pacificEducationExternalReviewerPortal,
+#pacificEducationExternalSpecialistReviewEvidenceRegistry,
+#pacificEducationExternalSpecialistReviewEvidenceLog,
+#pacificEducationSchoolIdentitySection,
+#pacificEducationInstitutionSetup,
+#pacificEducationInstitutionAdvice,
+#pacificEducationExamCalendarSection,
+#pacificEducationAppTools,
+#pacificEducationWorkspaceLiveStatus,
+#pacificGuardianCommentSection,
+#teacherDashboard,
+#parentDashboard,
+#specialEducationDashboard,
+#pacificEducationTeacherClassDashboard,
+#pacificEducationTeacherEvidence,
+#pacificEducationStudentProgressDashboard,
+#pacificEducationProductionReleaseChecklist,
+#pacificEducationProductionReleaseEvidenceRegistry,
+#pacificEducationProductionReleaseEvidenceGate,
+#pacificEducationFinalProductionAuthorizationEvidenceRegistry,
+[id^="pacificEducationProduction"],
+[id^="pacificEducationCurriculum"],
+[id^="pacificEducationExternalSpecialistReview"],
+[id^="pacificEducationFinal"],
+[id^="pacificEducationOwner"],
+[id^="pacificEducationTechnician"] {
+  display: none !important;
+}
+/* Role-specific pages are moved into this one active workspace page by the role-flow controller. */
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [data-pe-sequential-page="active"] {
+  display: block !important;
+  visibility: visible !important;
+}
+/* During guided navigation, remove repeated banners, global menus and unrelated links. */
+body.pe-guided-flow #pilotBanner,
+body.pe-guided-flow #pacificEducationRefreshNotice,
+body.pe-guided-flow header,
+body.pe-guided-flow #userFirstNavigation,
+body.pe-guided-flow #pacificEducationAppMenu {
+  display: none !important;
+}
+/* A role workspace is one page at a time; never let the global feature-activation
+   rules force diagnostics, dashboards or reviewer panels onto unrelated pages. */
+body.pe-guided-flow #systemStatus,
+body.pe-guided-flow #publicationStatus,
+body.pe-guided-flow #pacificEducationWebsitePilotChecklist,
+body.pe-guided-flow #pacificEducationExternalReviewerPortal,
+body.pe-guided-flow #pacificEducationOfflineSyncStatus,
+body.pe-guided-flow #pacificEducationTechnicianWorkspace,
+body.pe-guided-flow #pacificEducationTechnicianActivation {
+  display: none !important;
+}
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationWebsitePilotChecklist,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationExternalReviewerPortal,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationOfflineSyncStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianWorkspace {
+  display: block !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pe-user-box.pe-sequence-user-active,
+  .pe-user-next,
+  .pacific-mandatory-next,
+  .pacific-flow-next button,
+  #peSequentialNext {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+
+</head>
 <body>
 <section id="pacificEducationWelcome" aria-label="Pacific Education welcome">
 <div id="pacificEducationWelcomeContent" class="pacedu-welcome-only">
