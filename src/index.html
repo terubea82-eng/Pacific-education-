@@ -299,6 +299,12 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
 [id^="pacificEducationTechnician"] {
   display: none !important;
 }
+/* Role-specific pages are moved into this one active workspace page by the role-flow controller. */
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [data-pe-sequential-page="active"] {
+  display: block !important;
+  visibility: visible !important;
+}
+
 /* Fail closed for privileged panels: a local role choice or local sequence override is not authorization. */
 #pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
 #pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
@@ -312,11 +318,6 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
 #pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationOwner"],
 #pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationTechnician"] {
   display: none !important;
-}
-/* Role-specific pages are moved into this one active workspace page by the role-flow controller. */
-#pacificEducationSequentialRoleWorkspace #peSequentialPage [data-pe-sequential-page="active"] {
-  display: block !important;
-  visibility: visible !important;
 }
 /* During guided navigation, remove repeated banners, global menus and unrelated links. */
 body.pe-guided-flow #pilotBanner,
