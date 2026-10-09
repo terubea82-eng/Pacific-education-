@@ -69,7 +69,8 @@
       event.preventDefault();
       deferredPrompt=event;
       setInstallVisible(true);
-      announce("Pacific Education is ready to install on this device. Press Install Pacific Education.", true);
+      /* The welcome AI Playback already announces installation as its final line. Do not start a competing voice here. */
+      announce("Pacific Education is ready to install on this device. Press Install Pacific Education.", false);
     });
 
     window.addEventListener("appinstalled",function(){
