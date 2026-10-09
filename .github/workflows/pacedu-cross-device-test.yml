@@ -20,8 +20,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: pacedu-cross-device-tests-${{ github.ref }}
-  cancel-in-progress: true
+  group: pacedu-cross-device-tests-${{ github.run_id }}
+  cancel-in-progress: false
 
 jobs:
   browser-tests:
