@@ -332,17 +332,18 @@ function ensureBackButton(targetId){
     if(row[1]==="vision"){ gateway(2); return; }
     if(row[1]==="rules"){ gateway(3); return; }
     var map={
-      registration:"pacificEducationIdentityRegistration",
-      prototype:"prototypeAccess",
-      level:"levelSelection",
-      subject:"subjectSelection",
-      term:"termSelection",
-      capability:"capabilitySelection",
-      daily:"dailyLesson",
-      practice:"dailyLessonPracticeStage",
-      assessment:"assessments"
+      registration:["pacificEducationIdentityRegistration",1],
+      prototype:["prototypeAccess",2],
+      level:["levelSelection",3],
+      subject:["subjectSelection",4],
+      term:["termSelection",5],
+      capability:["capabilitySelection",6],
+      daily:["dailyLesson",7],
+      practice:["dailyLessonPracticeStage",8],
+      assessment:["assessments",9],
+      coverage:["pacificEducationCoverageDashboard",10]
     };
-    if(map[row[1]]) guided(row[0],map[row[1]]);
+    if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
   });
 }
 
