@@ -21,7 +21,7 @@ async function installSpeechHarness(page) {
       resume() {},
       getVoices() { return voices; },
       speak(utterance) {
-        calls.push({ text: utterance.text, lang: utterance.lang, volume: utterance.volume });
+        calls.push({ text: utterance.text, lang: utterance.lang, volume: utterance.volume, voice: utterance.voice ? utterance.voice.name : null });
         this.speaking = true;
         setTimeout(() => {
           this.speaking = false;
@@ -89,6 +89,26 @@ test("Pacedu welcome voice control invokes the protected speech engine", async (
   const call = await page.evaluate(() => window.__paceduSpeechCalls.find(call => /Pacific Education|Welcome/i.test(call.text)));
   expect(call.text).toMatch(/Pacific Education|Welcome/i);
   expect(call.volume).toBe(1);
+});
+
+test("AI Playback completes a two-speaker Pacific Education conversation", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  const playback = page.locator("#pacificEducationAIPlaybackButton");
+  await expect(playback).toBeAttached();
+  await playback.click({ force: true });
+  await expect.poll(() => page.evaluate(() =>
+    window.__paceduSpeechCalls.some(call => call.text.includes("Let us learn, discover, practise, and grow together."))
+  ), { timeout: 8000 }).toBe(true);
+  const calls = await page.evaluate(() => window.__paceduSpeechCalls);
+  const question = calls.findIndex(call => call.text === "Why was Pacific Education built?");
+  const answer = calls.findIndex(call => call.text.startsWith("Because it grew from real classroom experience"));
+  expect(calls.length).toBeGreaterThanOrEqual(10);
+  expect(question).toBeGreaterThanOrEqual(0);
+  expect(answer).toBeGreaterThan(question);
+  expect(calls[0].voice).not.toBe(calls[1].voice);
+  expect(calls[calls.length - 1].text).toContain("Let us learn, discover, practise, and grow together.");
 });
 
 test("live pilot page fits a narrow phone viewport without document-level horizontal overflow", async ({ page }) => {
