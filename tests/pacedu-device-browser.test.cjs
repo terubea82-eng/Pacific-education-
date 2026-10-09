@@ -88,7 +88,7 @@ test("device speaker diagnostic invokes speech and presents an honest result", a
   await expect(page.locator("#deviceFacts")).toContainText("Speech API: available");
   await page.getByRole("button", { name: "Test this device's speaker" }).click();
   await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(1);
-  await expect(page.locator("#status")).toContainText("Browser speech finished");
+  await expect(page.locator("#status")).toContainText("Browser reports speech finished");
   await expect(page.locator("#speechFacts")).toContainText("Browser speech started and finished");
   await expect(page.locator("#speechFacts")).toContainText("Yes, I heard the sound");
   const call = await page.evaluate(() => window.__paceduSpeechCalls[0]);
