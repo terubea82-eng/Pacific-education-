@@ -97,6 +97,8 @@ test("AI Playback completes a two-speaker Pacific Education conversation", async
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   const playback = page.locator("#pacificEducationAIPlaybackButton");
   await expect(playback).toBeAttached();
+  expect(await page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(0);
+  expect(await page.evaluate(() => window.__pacificEducationWelcomeCompleted)).toBe(false);
   await playback.click({ force: true });
   await expect.poll(() => page.evaluate(() =>
     window.__paceduSpeechCalls.some(call => call.text.includes("Let us learn, discover, practise, and grow together."))
@@ -105,9 +107,12 @@ test("AI Playback completes a two-speaker Pacific Education conversation", async
   const question = calls.findIndex(call => call.text === "Why was Pacific Education built?");
   const answer = calls.findIndex(call => call.text.startsWith("Because it grew from real classroom experience"));
   expect(calls.length).toBeGreaterThanOrEqual(10);
+  expect(calls[0].text).toMatch(/^Welcome to Pacific Education/);
   expect(question).toBeGreaterThanOrEqual(0);
   expect(answer).toBeGreaterThan(question);
-  expect(calls[0].voice).not.toBe(calls[1].voice);
+  for (let i = 1; i < calls.length; i += 1) {
+    expect(calls[i].voice, "each dialogue line must alternate voices").not.toBe(calls[i - 1].voice);
+  }
   expect(calls[calls.length - 1].text).toContain("Let us learn, discover, practise, and grow together.");
 });
 
