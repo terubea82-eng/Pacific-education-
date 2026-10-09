@@ -73,6 +73,7 @@ test("speech engine queues audible utterances and chooses an English voice", () 
   assert.equal(h.utterances[0].text, "Test the Pacedu speaker.");
   assert.equal(h.utterances[0].lang, "en-AU");
   assert.equal(h.utterances[0].volume, 1);
+  h.utterances[0].onstart();
   assert.equal(h.status.textContent, "Voice playing.");
 });
 
