@@ -1,0 +1,63 @@
+name: Pacedu Cross-Device Browser Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "package.json"
+      - ".github/workflows/pacedu-cross-device-test.yml"
+  pull_request:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "package.json"
+      - ".github/workflows/pacedu-cross-device-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pacedu-cross-device-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  browser-tests:
+    name: Chromium desktop and phone viewport tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright test runner
+        run: npm install --no-save @playwright/test
+      - name: Install Chromium and OS dependencies
+        run: npx playwright install --with-deps chromium
+      - name: Run existing Pacedu software regression suite
+        run: npm test
+      - name: Start local static server
+        shell: bash
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > "$RUNNER_TEMP/pacedu-http.log" 2>&1 &
+          echo $! > "$RUNNER_TEMP/pacedu-http.pid"
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4173/src/index.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/pacedu-http.log"
+          exit 1
+      - name: Test desktop and phone-sized browser behaviour
+        env:
+          PACEDU_TEST_URL: http://127.0.0.1:4173/src/index.html
+          PACEDU_DEVICE_TEST_URL: http://127.0.0.1:4173/src/device-test.html
+        run: npx playwright test tests/pacedu-device-browser.test.cjs --reporter=line
+      - name: Stop local static server
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/pacedu-http.pid" ]; then kill "$(cat "$RUNNER_TEMP/pacedu-http.pid")" || true; fi
