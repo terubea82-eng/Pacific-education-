@@ -265,6 +265,7 @@ function gateway(page){
   }else{
     setStatus("Rules & Conditions active. Agree to continue to Registration.");
   }
+  syncNextWrapper(page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules");
   return true;
 }
 
@@ -463,8 +464,7 @@ function bindGuidedFeatureButtons(){
     var menu=el("pacificEducationAppMenu");
     if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
     setStatus("Guided setup complete. Your Pacific Education workspace is ready.");
-    safeCall("PacificEducationAutoFeatureActivation","activate");
-    safeCall("PacificEducationSequentialRoleWorkspaces","activate");
+    safeCall("PacificEducationAutoFeatureActivation","run");
     if(workspaces){ try{workspaces.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){} }
   });
 }
