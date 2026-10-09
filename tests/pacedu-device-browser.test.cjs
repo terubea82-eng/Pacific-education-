@@ -129,7 +129,8 @@ test("automatic welcome starts with two-person AI Playback before page guidance"
   const calls = await page.evaluate(() => window.__paceduSpeechCalls);
   expect(calls[0].text).toMatch(/^Welcome to Pacific Education\. I am Tion Terubea/);
   expect(calls.some(call => call.text.startsWith("Registration step"))).toBe(false);
-  expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
+  expect(calls.some(call => call.text === "Press Next to continue.")).toBe(true);
+  expect(calls[calls.length - 1].text).toContain("ready to be installed on this device");
   expect(await page.evaluate(() => window.__pacificEducationWelcomeCompleted)).toBe(true);
 });
 
