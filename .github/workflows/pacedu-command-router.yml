@@ -151,6 +151,6 @@ jobs:
           if [[ "$COMMAND" == "help" || -z "$COMMAND" ]]; then
             body=$'Pacedu owner command router\n\nAllowed comments (owner account only):\n- `/pacedu check` — trigger pilot recheck\n- `/pacedu test` — trigger pilot preflight and feature-preservation checks\n- `/pacedu build-android` — trigger Android pilot build\n- `/pacedu deploy-web` — deploy the current main branch to Pages\n- `/pacedu preserve-check` — trigger protected-feature and voice-lock checks\n- `/pacedu help` — show this list\n\nThis router runs only these allowlisted workflows. It does not execute arbitrary shell/code or automatically receive messages from ChatGPT.'
           else
-            body="Pacedu command `$COMMAND` router status: $JOB_STATUS. Check the Actions tab for the downstream workflow result. A successful trigger is not proof of deployment or device behaviour."
+            printf -v body 'Pacedu command `%s` router status: %s. Check the Actions tab for the downstream workflow result. A successful trigger is not proof of deployment or device behaviour.' "$COMMAND" "$JOB_STATUS"
           fi
           gh api "repos/$GH_REPO/issues/$ISSUE_NUMBER/comments" -f body="$body"
