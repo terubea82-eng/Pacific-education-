@@ -201,6 +201,14 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalend
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #teacherCalendarSection,
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
 
+/* Keep every user type inside the single User Registration box. */
+#pacificEducationRegistrationBox{grid-column:1 / -1;min-width:0}
+#pacificEducationRegistrationBox #userRegistrationForm{display:block;width:100%;min-width:0}
+#pilotUserRoleCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+#pilotUserRoleCards .pe-user-role-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;min-width:0;min-height:68px;text-align:left;white-space:normal}
+#pilotRoleRegistrationFields{margin-top:12px;padding:12px;border:2px solid #168be8;border-radius:10px}
+@media(max-width:520px){#pilotUserRoleCards{grid-template-columns:1fr}}
+
 /* User Registration: blue breathing activation cue for registration boxes only.
    Keep guided Next buttons green and preserve the protected #856 voice controller. */
 #pacificEducationIdentityRegistration input:not([type="hidden"]),
@@ -510,12 +518,11 @@ git status</pre>
 <div id="pacificEducationSetupBoxes" aria-label="Country, language and user registration setup" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0;">
 <div id="pacificEducationCountriesBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;"><h3 style="margin-top:0;">🌏 Countries</h3><label for="pacificEducationCountrySelect"><strong>Choose your country</strong></label><select id="pacificEducationCountrySelect" style="width:100%;margin-top:8px;padding:10px;"><option value="">Select country</option><option value="FJ">🇫🇯 Fiji</option><option value="PG">🇵🇬 Papua New Guinea</option><option value="SB">🇸🇧 Solomon Islands</option><option value="VU">🇻🇺 Vanuatu</option><option value="NC">🇳🇨 New Caledonia</option><option value="PF">🇵🇫 French Polynesia</option><option value="WS">🇼🇸 Samoa</option><option value="TO">🇹🇴 Tonga</option><option value="TV">🇹🇻 Tuvalu</option><option value="KI">🇰🇮 Kiribati</option><option value="NR">🇳🇷 Nauru</option><option value="FM">🇫🇲 Federated States of Micronesia</option><option value="MH">🇲🇭 Marshall Islands</option><option value="PW">🇵🇼 Palau</option><option value="GU">🇬🇺 Guam</option><option value="AS">🇦🇸 American Samoa</option><option value="CK">🇨🇰 Cook Islands</option><option value="NU">🇳🇺 Niue</option><option value="TK">🇹🇰 Tokelau</option><option value="AU">🇦🇺 Australia</option><option value="NZ">🇳🇿 New Zealand</option><option value="OTHER">🌐 Other</option></select><p id="pacificEducationCountryStatus" role="status" aria-live="polite" style="margin-bottom:0;">Country not selected.</p></div>
 <div id="pacificEducationLanguageBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;"><h3 style="margin-top:0;">🌐 Language</h3><label for="pacificEducationLanguageSelect"><strong>Choose your language</strong></label><select id="pacificEducationLanguageSelect" style="width:100%;margin-top:8px;padding:10px;"><option value="">Select language</option><option value="en-AU">English — Australia (pilot voice)</option><option value="en-FJ">English — Fiji</option><option value="fj">Vosa Vakaviti</option><option value="hi">Hindi</option><option value="ur">Urdu</option><option value="fr">French</option><option value="sm">Samoan</option><option value="to">Tongan</option><option value="tvl">Tuvaluan</option><option value="gil">Kiribati / Gilbertese</option><option value="bi">Bislama</option><option value="ho">Hiri Motu</option><option value="tpi">Tok Pisin</option><option value="other">Other</option></select><p id="pacificEducationLanguageStatus" role="status" aria-live="polite" style="margin-bottom:0;">Language not selected.</p></div>
-<div id="pacificEducationRegistrationBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;"><h3 style="margin-top:0;">👤 User Registration</h3><p style="margin-bottom:8px;">Choose your role and register.</p><button type="button" id="userRegistrationOpenButton" aria-expanded="false" aria-controls="userRegistrationForm" style="width:100%;">👤 Open User Registration</button></div>
-</div>
-<div id="userRegistrationForm" hidden>
+<div id="pacificEducationRegistrationBox" style="border:2px solid #15803d;border-radius:10px;padding:14px;grid-column:1 / -1;"><h3 style="margin-top:0;">👤 User Registration</h3><p style="margin-bottom:8px;">Tap your user type below. Your registration fields will open inside this same box.</p>
+<div id="userRegistrationForm">
 <p><strong>One person → one Pacific Education ID → one account.</strong></p>
 <p>Pilot registration creates a synthetic test profile only. Production identity verification must be completed by the secure server; the browser must not store or expose the underlying identification number.</p>
-<p><strong>Step 1 — Choose your user role.</strong> Tap one role below. The registration boxes for that role will then open.</p>
+<p><strong>Choose your user type.</strong> All user types are listed here. Tap one type to open the name and registration fields inside this same User Registration box.</p>
 <div id="pilotUserRoleCards" class="pe-user-role-cards" role="group" aria-label="Choose your Pacific Education user role">
 <button type="button" class="pe-user-role-card" data-role="Student" aria-pressed="false">👨‍🎓 <strong>Student</strong><span>Learner registration</span></button>
 <button type="button" class="pe-user-role-card" data-role="Blind Learner" aria-pressed="false">🔊 <strong>Blind Learner</strong><span>Dedicated voice-first accessible learner registration</span></button>
@@ -541,6 +548,8 @@ git status</pre>
 <button type="button" id="pilotRegistrationSaveButton">Save Pilot Registration</button>
 </div>
 <div id="pilotRegistrationStatus" aria-live="polite">Choose a user role to begin registration.</div>
+</div>
+</div>
 </div>
 </section>
 <div id="registrationNextWrapper" class="pacific-flow-next"><button type="button" id="registrationNextButton">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="registrationNextButton" aria-label="Audio command for Next">🎙️ Audio Command</button><span class="pe-audio-command-status" data-audio-status-for="registrationNextButton" role="status" aria-live="polite">Ready</span></div><section id="pacificEducationWebsitePilotChecklist"><h2>Website Pilot Launch Checklist</h2><p>Checking the website pilot components...</p></section><section id="prototypeAccess"><h2>Prototype Access</h2><p><strong>PROTOTYPE ONLY:</strong> This creates a synthetic browser test session. It is not identity verification, authentication, authorization for real users, or production access.</p><button type="button" id="prototypeAuthorizeButton" onclick="(function(){var b=document.getElementById('prototypeAuthorizeButton'),s=document.getElementById('prototypeAccessStatus');if(b)b.disabled=true;if(s)s.textContent='Authorizing synthetic Student pilot session...';try{authorizePrototypeStudent();if(s)s.textContent='Authorized synthetic Student pilot session. Press Next to continue to Learning Level.';}catch(e){if(s)s.textContent='Prototype authorization could not start. Please try again.';if(b)b.disabled=false;}})()">Start Authorized Student Test</button><span id="prototypeAccessStatus" aria-live="polite">Ready for synthetic pilot authorization.</span></section>
