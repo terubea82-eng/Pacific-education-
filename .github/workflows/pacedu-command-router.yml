@@ -1,0 +1,126 @@
+name: Pacedu Authenticated Command Router
+
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "Owner-authorized Pacedu operation"
+        required: true
+        type: choice
+        options:
+          - help
+          - check
+          - test
+          - build-android
+          - deploy-web
+          - preserve-check
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+concurrency:
+  group: pacedu-command-router
+  cancel-in-progress: false
+
+jobs:
+  route:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.pull_request == null &&
+       github.actor == 'terubea82-eng' &&
+       startsWith(github.event.comment.body, '/pacedu '))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate requester and parse allowlisted command
+        id: parse
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          ACTOR: ${{ github.actor }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          INPUT_COMMAND: ${{ inputs.command }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" == "issue_comment" && "$ACTOR" != "terubea82-eng" ]]; then
+            echo "Rejected: only the repository owner may issue Pacedu commands."
+            exit 1
+          fi
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            command="$INPUT_COMMAND"
+          else
+            command="$(printf '%s\n' "$COMMENT_BODY" | sed -n '1{s#^/pacedu[[:space:]]\+##;p;}')"
+            command="${command%%[[:space:]]*}"
+          fi
+          case "$command" in
+            help|check|test|build-android|deploy-web|preserve-check) ;;
+            *)
+              echo "Unsupported command. Allowed: help, check, test, build-android, deploy-web, preserve-check."
+              exit 2
+              ;;
+          esac
+          echo "command=$command" >> "$GITHUB_OUTPUT"
+
+      - name: Run only the selected approved workflow
+        if: steps.parse.outputs.command != 'help'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          COMMAND: ${{ steps.parse.outputs.command }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$COMMAND" in
+            check)
+              gh workflow run pilot-recheck.yml --ref main
+              echo "Triggered Pacific Education Pilot Recheck."
+              ;;
+            test)
+              gh workflow run pilot-preflight.yml --ref main
+              gh workflow run pacedu-feature-preservation.yml --ref main
+              echo "Triggered pilot preflight and protected-feature checks."
+              ;;
+            build-android)
+              gh workflow run android-pilot-build.yml --ref main
+              echo "Triggered Android Pilot Build for main."
+              ;;
+            deploy-web)
+              gh workflow run deploy-pilot-pages.yml --ref main
+              echo "Triggered Pages deployment for main."
+              ;;
+            preserve-check)
+              gh workflow run pacedu-feature-preservation.yml --ref main
+              gh workflow run pacedu-voice-lock.yml --ref main
+              echo "Triggered protected-feature and voice-lock checks."
+              ;;
+            *)
+              echo "No workflow is mapped for this command."
+              exit 2
+              ;;
+          esac
+
+      - name: Report help or command result
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMAND: ${{ steps.parse.outputs.command }}
+          JOB_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" != "issue_comment" || -z "${ISSUE_NUMBER:-}" ]]; then
+            echo "Command: $COMMAND; router status: $JOB_STATUS"
+            exit 0
+          fi
+          if [[ "$COMMAND" == "help" || -z "$COMMAND" ]]; then
+            body=$'Pacedu owner command router\n\nAllowed comments (owner account only):\n- `/pacedu check` — trigger pilot recheck\n- `/pacedu test` — trigger pilot preflight and feature-preservation checks\n- `/pacedu build-android` — trigger Android pilot build\n- `/pacedu deploy-web` — deploy the current main branch to Pages\n- `/pacedu preserve-check` — trigger protected-feature and voice-lock checks\n- `/pacedu help` — show this list\n\nThis router runs only these allowlisted workflows. It does not execute arbitrary shell/code or automatically receive messages from ChatGPT.'
+          else
+            body="Pacedu command `$COMMAND` router status: $JOB_STATUS. Check the Actions tab for the downstream workflow result. A successful trigger is not proof of deployment or device behaviour."
+          fi
+          gh api "repos/$GH_REPO/issues/$ISSUE_NUMBER/comments" -f body="$body"
