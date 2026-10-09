@@ -18,15 +18,15 @@
    */
   var GLOBAL_LINES = [
     {speaker:"1",text:WELCOME_VOICE_TEXT},
-    {speaker:"1",text:"Why was Pacific Education built?"},
-    {speaker:"2",text:"Because it grew from real classroom experience: teachers need practical support with workload, learners need their skills and needs identified early, and daily activities can provide useful evidence for what should be practised next. Education should also remain possible when distance, disasters, emergencies, conflict, displacement, disability, poverty, or other challenges interrupt normal schooling."},
-    {speaker:"1",text:"So is it only for the Pacific?"},
-    {speaker:"2",text:"No. It was inspired by the needs of Pacific communities, but its purpose is broader: to develop educational assistance that can help learners and educators around the world."},
-    {speaker:"1",text:"And what is the goal?"},
-    {speaker:"2",text:"To make education more connected to real life: daily activities help learners learn, discover, practise, and grow while giving teachers practical evidence to guide the next step. The architecture connects daily activities, learner responses, skills and evidence, teacher review, targeted support, progress, and assessment, including offline-first support when connectivity is limited."},
-    {speaker:"1",text:"Welcome to Pacific Education."},
-    {speaker:"2",text:"Let us learn, discover, practise, and grow together."},
-    {speaker:"1",text:"Press Next to continue."}
+    {speaker:"2",text:"Why was Pacific Education built?"},
+    {speaker:"1",text:"Because it grew from real classroom experience: teachers need practical support with workload, learners need their skills and needs identified early, and daily activities can provide useful evidence for what should be practised next. Education should also remain possible when distance, disasters, emergencies, conflict, displacement, disability, poverty, or other challenges interrupt normal schooling."},
+    {speaker:"2",text:"So is it only for the Pacific?"},
+    {speaker:"1",text:"No. It was inspired by the needs of Pacific communities, but its purpose is broader: to develop educational assistance that can help learners and educators around the world."},
+    {speaker:"2",text:"And what is the goal?"},
+    {speaker:"1",text:"To make education more connected to real life: daily activities help learners learn, discover, practise, and grow while giving teachers practical evidence to guide the next step. The architecture connects daily activities, learner responses, skills and evidence, teacher review, targeted support, progress, and assessment, including offline-first support when connectivity is limited."},
+    {speaker:"2",text:"Welcome to Pacific Education."},
+    {speaker:"1",text:"Let us learn, discover, practise, and grow together."},
+    {speaker:"2",text:"Press Next to continue."}
   ];
 
   GLOBAL_LINES.forEach(function(line){ Object.freeze(line); });
