@@ -52,12 +52,30 @@
 <script>
 (function(){
   "use strict";
-  var state={tested:false,device:{},speech:{},humanHeard:null,updatedAt:null};
+  var state={tested:false,device:{},speech:{lifecycleEvents:[]},humanHeard:null,updatedAt:null};
   var status=document.getElementById("status");
   var reportNode=document.getElementById("report");
   var facts=document.getElementById("deviceFacts");
   var speechFacts=document.getElementById("speechFacts");
-  var currentUtterance=null, timeoutId=null;
+  var currentUtterance=null, timeoutId=null, lifecycleTimeoutId=null;
+  function recordLifecycle(message){
+    message=String(message||"").trim();
+    if(!message)return;
+    var known=/AI Playback: Speaker [12] is speaking|AI Playback conversation complete|AI Playback: native Android voice active|Voice playing\.|Voice ready\.|Voice paused\.|Two-person AI playback requires a speech engine|Voice engine unavailable/i.test(message);
+    if(!known)return;
+    state.speech.lifecycleEvents=state.speech.lifecycleEvents||[];
+    if(state.speech.lifecycleEvents[state.speech.lifecycleEvents.length-1]!==message)state.speech.lifecycleEvents.push(message);
+    state.speech.lastLifecycleStatus=message;
+    buildReport();
+  }
+  if(window.MutationObserver){
+    var lifecycleObserver=new MutationObserver(function(){
+      var voiceStatus=document.getElementById("pacificEducationVoiceStatus");
+      if(voiceStatus)recordLifecycle(voiceStatus.textContent);
+    });
+    var lifecycleTarget=document.getElementById("pacificEducationVoiceStatus");
+    if(lifecycleTarget)lifecycleObserver.observe(lifecycleTarget,{childList:true,subtree:true,characterData:true});
+  }
   function esc(value){return String(value==null?"":value).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
   function setStatus(message,kind){status.textContent=message;status.dataset.state=kind||"idle";}
   function list(items,target){target.innerHTML=items.map(function(item){return "<li>"+esc(item)+"</li>";}).join("");}
@@ -69,17 +87,17 @@
     list(["Device class: "+state.device.deviceClass,"Browser language: "+state.device.language,"Viewport: "+innerWidth+" × "+innerHeight,"Connection: "+(navigator.onLine?"online":"offline"),"Secure context: "+(isSecureContext?"yes":"no"),"Pacedu speech engine: "+state.device.paceduSpeechEngine,"Native Android TTS bridge: "+(state.device.nativeTTSBridgeAvailable?"available":"not detected in this browser"),"Web Speech API: "+(state.device.speechSynthesisAvailable&&state.device.utteranceAvailable?"available":"unavailable")],facts);
     buildReport();
   }
-  function stop(){if(timeoutId)clearTimeout(timeoutId);timeoutId=null;try{if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();else if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){if(window.speechSynthesis)window.speechSynthesis.cancel();}currentUtterance=null;setStatus("Speech stopped. Run the speaker test again when ready.","idle");}
+  function stop(){if(timeoutId)clearTimeout(timeoutId);timeoutId=null;if(lifecycleTimeoutId)clearTimeout(lifecycleTimeoutId);lifecycleTimeoutId=null;try{if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();else if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){if(window.speechSynthesis)window.speechSynthesis.cancel();}currentUtterance=null;setStatus("Speech stopped. Run the speaker test again when ready.","idle");}
   function showConfirmationButtons(){
     speechFacts.innerHTML="";
     var yes=document.createElement("button");yes.type="button";yes.textContent="Yes, I heard the sound";
-    yes.onclick=function(){state.humanHeard=true;state.speech.result="user-confirmed-audible";state.speech.humanConfirmation="audible";setStatus("CONFIRMED BY USER — this device's speaker was audible for this Pacedu voice test.","pass");buildReport();};
+    yes.onclick=function(){if(lifecycleTimeoutId)clearTimeout(lifecycleTimeoutId);lifecycleTimeoutId=null;state.humanHeard=true;state.speech.result="user-confirmed-audible";state.speech.humanConfirmation="audible";setStatus("CONFIRMED BY USER — this device's speaker was audible for this Pacedu voice test.","pass");buildReport();};
     var no=document.createElement("button");no.type="button";no.className="secondary";no.textContent="No sound heard";
-    no.onclick=function(){state.humanHeard=false;state.speech.humanConfirmation="no audible sound";state.speech.result="no-audible-sound";setStatus("BLOCKER — the speech request ran but you heard no sound. Check volume, silent mode, Bluetooth output, browser permissions and the device text-to-speech engine.","fail");buildReport();};
+    no.onclick=function(){if(lifecycleTimeoutId)clearTimeout(lifecycleTimeoutId);lifecycleTimeoutId=null;state.humanHeard=false;state.speech.humanConfirmation="no audible sound";state.speech.result="no-audible-sound";setStatus("BLOCKER — the speech request ran but you heard no sound. Check volume, silent mode, Bluetooth output, browser permissions and the device text-to-speech engine.","fail");buildReport();};
     speechFacts.appendChild(yes);speechFacts.appendChild(no);
   }
   document.getElementById("runSpeakerTest").addEventListener("click",function(){
-    state.tested=true;state.humanHeard=null;
+    state.tested=true;state.humanHeard=null;state.speech={lifecycleEvents:[]};
     if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakConversation==="function"){
       var engine=typeof window.PacificEducationSpeech.getEngine==="function"?window.PacificEducationSpeech.getEngine():"Pacedu speech engine";
       var lines=[
@@ -91,7 +109,20 @@
       try{
         var started=window.PacificEducationSpeech.speakConversation(lines);
         if(!started)throw new Error("Pacedu speech engine did not accept the conversation");
+        state.speech.acceptedByEngine=true;
+        state.speech.lifecycleEvents=state.speech.lifecycleEvents||[];
         showConfirmationButtons();buildReport();
+        if(lifecycleTimeoutId)clearTimeout(lifecycleTimeoutId);
+        lifecycleTimeoutId=setTimeout(function(){
+          var events=state.speech.lifecycleEvents||[];
+          var nativeAccepted=events.some(function(x){return /native Android voice active/i.test(x);});
+          var browserLifecycle=events.some(function(x){return /Speaker 1 is speaking|Voice playing\./i.test(x);});
+          if(!nativeAccepted&&!browserLifecycle&&state.humanHeard===null){
+            state.speech.lifecycleTimeout=true;
+            setStatus("BLOCKER — Pacedu accepted the speech request but no playback-start status was observed. Try the browser speaker fallback or the installed Android app, then report this result.","fail");
+            buildReport();
+          }
+        },12000);
       }catch(e){
         state.speech.result="exception";state.speech.error=String(e);
         setStatus("FAIL — Pacedu speech engine could not start: "+e,"fail");buildReport();
