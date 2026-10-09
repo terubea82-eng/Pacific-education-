@@ -444,6 +444,57 @@ function ensureTeacherCalendarNextButton(){
   }
 }
 
+/* Last guided page: keep Back and Finish together at the bottom, visible and thumb-friendly. */
+function ensureFinalNavigationLayout(){
+  var target=el("teacherCalendarSection");
+  var wrapper=el("teacherCalendarNextWrapper");
+  var back=el("pacificEducationBack_teacherCalendarSection");
+  var next=el("teacherCalendarNextButton");
+  if(!target || !wrapper || !back || !next) return false;
+
+  if(!el("pacificEducationFinalNavigationStyle")){
+    var style=document.createElement("style");
+    style.id="pacificEducationFinalNavigationStyle";
+    style.textContent=
+      ".pacific-final-navigation{display:flex!important;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:10px;margin-top:22px;padding:14px 0 8px;border-top:2px solid #b9d5df;position:sticky;bottom:4px;z-index:60;background:Canvas;color:CanvasText}" +
+      ".pacific-final-navigation button{display:inline-flex!important;align-items:center;justify-content:center;min-height:54px;min-width:150px;max-width:100%;padding:13px 18px;margin:0;border-radius:12px;font-size:1rem;font-weight:800;line-height:1.25;white-space:normal;overflow-wrap:anywhere;pointer-events:auto!important;touch-action:manipulation!important;cursor:pointer}" +
+      ".pacific-final-back{background:#e7f3fb!important;color:#124e70!important;border:2px solid #397da0!important}" +
+      ".pacific-final-next{background:#168a3a!important;color:#fff!important;border:2px solid #0f642a!important;animation:pacificFinalNextPulse 1.8s ease-in-out infinite}" +
+      ".pacific-final-navigation button:focus-visible{outline:3px solid #111!important;outline-offset:3px}" +
+      "@keyframes pacificFinalNextPulse{0%,100%{box-shadow:0 0 0 0 rgba(22,138,58,.24)}50%{box-shadow:0 0 0 6px rgba(22,138,58,.12)}}" +
+      "@media(prefers-reduced-motion:reduce){.pacific-final-next{animation:none!important}}" +
+      "@media(max-width:480px){.pacific-final-navigation{position:static;gap:8px}.pacific-final-navigation button{flex:1 1 100%;width:100%;min-height:56px}}";
+    document.head.appendChild(style);
+  }
+
+  wrapper.classList.add("pacific-final-navigation");
+  back.textContent="⬅️ Back — Coverage";
+  back.setAttribute("aria-label","Back to Curriculum Coverage and Progress");
+  back.classList.add("pacific-final-back");
+  back.style.display="inline-flex";
+  back.style.position="static";
+  back.style.zIndex="61";
+  back.style.pointerEvents="auto";
+  back.style.touchAction="manipulation";
+
+  next.textContent="✅ Finish Setup & Open Workspace";
+  next.setAttribute("aria-label","Finish guided setup and open your Pacific Education workspace");
+  next.classList.add("pacific-final-next");
+  next.style.display="inline-flex";
+  next.style.position="static";
+  next.style.zIndex="61";
+  next.style.pointerEvents="auto";
+  next.style.touchAction="manipulation";
+
+  /* Order the two navigation actions first; keep the audio command/status after them. */
+  if(back.parentNode!==wrapper) wrapper.insertBefore(back,wrapper.firstChild);
+  else wrapper.insertBefore(back,wrapper.firstChild);
+  if(next.parentNode!==wrapper) wrapper.insertBefore(next,back.nextSibling);
+  else wrapper.insertBefore(next,back.nextSibling);
+
+  return true;
+}
+
 function bindGuidedFeatureButtons(){
   bind("dailyActivitiesStartButton",function(){
     var activity=el("dailyLessonActivity");
@@ -649,6 +700,7 @@ function init(){
   bindGuidedFeatureButtons();
   syncRules();
   bindAllBackButtons();
+  ensureFinalNavigationLayout();
   auditFeatures();
   observeFeatureChanges();
 }
@@ -665,6 +717,7 @@ window.setTimeout(ensureCoverageNextButton,2500);
 window.setTimeout(ensureTeacherCalendarNextButton,2500);
 window.setTimeout(bindGuidedFeatureButtons,2500);
 window.setTimeout(bindAllBackButtons,2500);
+window.setTimeout(ensureFinalNavigationLayout,2600);
 
 window.PacificEducationSingleNavigation={
   version:"2.3.0",
