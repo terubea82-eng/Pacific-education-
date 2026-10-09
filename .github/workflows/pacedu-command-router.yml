@@ -87,7 +87,7 @@ jobs:
             command="${command%%[[:space:]]*}"
           fi
           case "$command" in
-            help|check|test|build-android|deploy-web|preserve-check) ;;
+            help|check|test|activate|build-android|deploy-web|preserve-check) ;;
             *)
               echo "Unsupported command. Allowed: help, check, test, activate, build-android, deploy-web, preserve-check."
               exit 2
