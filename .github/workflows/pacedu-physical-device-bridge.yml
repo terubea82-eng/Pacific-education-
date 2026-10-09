@@ -1,0 +1,120 @@
+name: Pacedu Physical Device Verification Bridge
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_commit:
+        description: "Exact full commit SHA to test"
+        required: true
+        type: string
+      device_class:
+        description: "Select the actual connected device"
+        required: true
+        type: choice
+        options:
+          - android-phone
+          - desktop-browser
+
+permissions:
+  contents: read
+
+jobs:
+  physical-device-test:
+    runs-on: \${{ inputs.device_class == 'android-phone' && fromJSON('["self-hosted","linux","pacedu-android-device"]') || fromJSON('["self-hosted","linux","pacedu-desktop-device"]') }}
+    timeout-minutes: 30
+    steps:
+      - name: Validate candidate SHA
+        shell: bash
+        env:
+          TARGET_COMMIT: \${{ inputs.target_commit }}
+        run: |
+          set -euo pipefail
+          [[ "$TARGET_COMMIT" =~ ^[0-9a-fA-F]{40}$ ]] || { echo "::error::Provide a full 40-character commit SHA"; exit 1; }
+
+      - name: Checkout exact candidate
+        uses: actions/checkout@v4
+        with:
+          ref: \${{ inputs.target_commit }}
+          persist-credentials: false
+
+      - name: Verify exact source identity
+        shell: bash
+        env:
+          TARGET_COMMIT: \${{ inputs.target_commit }}
+        run: |
+          set -euo pipefail
+          ACTUAL="$(git rev-parse HEAD)"
+          test "$ACTUAL" = "$TARGET_COMMIT" || { echo "::error::Source identity mismatch"; exit 1; }
+          echo "PACEDU_VERIFIED_COMMIT=$ACTUAL" >> "$GITHUB_ENV"
+
+      - name: Connect and test real Android phone
+        if: \${{ inputs.device_class == 'android-phone' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v adb >/dev/null
+          command -v gradle >/dev/null
+          DEVICE_COUNT="$(adb devices | awk 'NR>1 && $2=="device" {n++} END {print n+0}')"
+          test "$DEVICE_COUNT" -eq 1 || { echo "::error::Expected exactly one authorized ADB device"; adb devices -l; exit 1; }
+          SERIAL="$(adb devices | awk 'NR>1 && $2=="device" {print $1}')"
+          [[ "$SERIAL" != emulator-* ]] || { echo "::error::Emulators are not physical-device evidence"; exit 1; }
+          MODEL="$(adb -s "$SERIAL" shell getprop ro.product.model | tr -d '\r')"
+          PRODUCT_DEVICE="$(adb -s "$SERIAL" shell getprop ro.product.device | tr -d '\r')"
+          SDK="$(adb -s "$SERIAL" shell getprop ro.build.version.sdk | tr -d '\r')"
+          test -n "$MODEL" && test -n "$PRODUCT_DEVICE" && test -n "$SDK"
+          case "$MODEL $PRODUCT_DEVICE" in *sdk_gphone*|*emulator*|*goldfish*|*ranchu*) echo "::error::Emulator signature rejected"; exit 1;; esac
+          gradle --no-daemon -p android assembleDebug
+          APK="android/app/build/outputs/apk/debug/app-debug.apk"
+          test -s "$APK"
+          mkdir -p device-evidence
+          sha256sum "$APK" > device-evidence/apk-sha256.txt
+          APP_ID="$("$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$APK" | sed -n "s/^package: name='\([^']*\)'.*/\1/p" | head -n1)"
+          test -n "$APP_ID"
+          adb -s "$SERIAL" install -r "$APK"
+          adb -s "$SERIAL" shell monkey -p "$APP_ID" 1
+          sleep 5
+          adb -s "$SERIAL" shell dumpsys activity activities > device-evidence/activities.txt
+          grep -F "$APP_ID" device-evidence/activities.txt >/dev/null
+          adb -s "$SERIAL" exec-out screencap -p > device-evidence/android-screen.png
+          test -s device-evidence/android-screen.png
+          APK_SHA="$(sha256sum "$APK" | awk '{print $1}')"
+          NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          python3 - "$NOW" "$PACEDU_VERIFIED_COMMIT" "$SERIAL" "$MODEL" "$PRODUCT_DEVICE" "$SDK" "$APP_ID" "$APK_SHA" <<'PY'
+          import json,sys
+          now,commit,serial,model,product_device,sdk,app_id,apk_sha=sys.argv[1:]
+          record={"schema":"pacedu-physical-device-evidence/v1","status":"PASS","device_class":"android-phone","physical_device":True,"connection_method":"authorized ADB","session_timestamp_utc":now,"device":{"serial":serial,"model":model,"product_device":product_device,"sdk":sdk},"build":{"commit":commit,"application_id":app_id,"apk_sha256":apk_sha},"test_action":{"name":"install-launch-screen-capture","result":"PASS","device_originated":True},"artifacts":["android-screen.png","activities.txt","apk-sha256.txt"]}
+          with open("device-evidence/evidence.json","w",encoding="utf-8") as f: json.dump(record,f,indent=2); f.write("\n")
+          PY
+
+      - name: Test real desktop browser
+        if: \${{ inputs.device_class == 'desktop-browser' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(uname -s)" = "Linux"
+          command -v node >/dev/null
+          command -v chromium >/dev/null || command -v chromium-browser >/dev/null || command -v google-chrome >/dev/null || { echo "::error::Install Chromium or Chrome on this physical desktop runner"; exit 1; }
+          npm install --no-save @playwright/test
+          npx playwright install chromium
+          python3 -m http.server 4173 --bind 127.0.0.1 > "$RUNNER_TEMP/pacedu-http.log" 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:4173/src/index.html >/dev/null && break; sleep 1; done
+          curl --fail --silent http://127.0.0.1:4173/src/index.html >/dev/null
+          mkdir -p device-evidence
+          PACEDU_TEST_URL=http://127.0.0.1:4173/src/index.html npx playwright test tests/pacedu-device-browser.test.cjs --reporter=line
+          printf 'host=%s\nos=%s\ncommit=%s\ntimestamp_utc=%s\n' "$(hostname)" "$(uname -a)" "$PACEDU_VERIFIED_COMMIT" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > device-evidence/desktop-runner.txt
+          python3 - <<'PY'
+          import json,os,subprocess
+          record={"schema":"pacedu-physical-device-evidence/v1","status":"PASS","device_class":"desktop-browser","physical_device":True,"connection_method":"GitHub Actions self-hosted runner on physical desktop","session_timestamp_utc":subprocess.check_output(["date","-u","+%Y-%m-%dT%H:%M:%SZ"],text=True).strip(),"device":{"host":subprocess.check_output(["hostname"],text=True).strip(),"os":subprocess.check_output(["uname","-a"],text=True).strip()},"build":{"commit":os.environ["PACEDU_VERIFIED_COMMIT"],"web_source":"exact checked-out commit"},"test_action":{"name":"Playwright browser suite","result":"PASS","device_originated":True},"artifacts":["desktop-runner.txt"]}
+          with open("device-evidence/evidence.json","w",encoding="utf-8") as f: json.dump(record,f,indent=2); f.write("\n")
+          PY
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacedu-device-evidence-\${{ inputs.device_class }}-\${{ github.run_id }}
+          path: device-evidence/
+          if-no-files-found: error
+          retention-days: 30
