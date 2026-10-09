@@ -5,12 +5,12 @@
 (function(window, document){
   "use strict";
 
+  /* Role choices and their fields are descendants of the single User Registration box.
+     Do not treat the role cards as a separate page or move them outside that box. */
   var BOXES = [
     {id:"pacificEducationCountriesBox", label:"Country"},
     {id:"pacificEducationLanguageBox", label:"Language"},
-    {id:"pacificEducationRegistrationBox", label:"Open User Registration"},
-    {id:"pilotUserRoleCards", label:"User Role"},
-    {id:"pilotRoleRegistrationFields", label:"Your Registration"}
+    {id:"pacificEducationRegistrationBox", label:"User Registration"}
   ];
 
   function speak(message){
@@ -57,6 +57,10 @@
         if(el) el.hidden=true;
       });
       form.hidden=true;
+      var cards=get("pilotUserRoleCards");
+      if(cards) cards.hidden=true;
+      var fields=get("pilotRoleRegistrationFields");
+      if(fields) fields.hidden=true;
     }
 
     function selectedRole(){
@@ -77,37 +81,39 @@
       var el=get(item.id);
       if(el) el.hidden=false;
 
-      if(state===3){
+      if(state===2){
+        /* Keep the role picker and any selected-role fields inside the visible
+           User Registration box. Selecting a role opens its fields immediately. */
         form.hidden=false;
+        var cards=get("pilotUserRoleCards");
+        if(cards) cards.hidden=false;
         var fields=get("pilotRoleRegistrationFields");
-        if(fields) fields.hidden=true;
-        title.textContent="Mandatory registration — Step 4 of 5";
-        progress.textContent="Choose exactly one user role. Then press Next.";
-      }else if(state===4){
+        if(fields) fields.hidden=!selectedRole();
+        title.textContent="Mandatory registration — Step 3 of 4";
+        progress.textContent=selectedRole()
+          ? "Your role-specific registration fields are open inside this User Registration box. Complete them, then press Next."
+          : "Choose one user role below. The role-specific registration fields will open inside this same box.";
+      }else if(state===3){
         form.hidden=false;
+        var cards2=get("pilotUserRoleCards");
+        if(cards2) cards2.hidden=false;
         var fields2=get("pilotRoleRegistrationFields");
         if(fields2) fields2.hidden=false;
-        title.textContent="Mandatory registration — Step 5 of 5";
-        progress.textContent="Enter your display name. Then save your registration.";
+        title.textContent="Mandatory registration — Step 4 of 4";
+        progress.textContent="Complete the registration fields inside this same box, then save.";
       }else{
-        title.textContent="Mandatory registration — Step "+(state+1)+" of 5";
+        title.textContent="Mandatory registration — Step "+(state+1)+" of 4";
         progress.textContent="Complete the visible box only, then press Next.";
       }
 
-      next.textContent=state===4 ? "✓ Save Registration" : "➡️ Next";
+      next.textContent=state===3 ? "✓ Save Registration" : "➡️ Next";
       next.disabled =
         (state===0 && !(get("pacificEducationCountrySelect")||{}).value) ||
         (state===1 && !(get("pacificEducationLanguageSelect")||{}).value) ||
-        (state===2 && false) ||
-        (state===3 && !selectedRole()) ||
-        (state===4 && !validName());
+        (state===2 && !selectedRole()) ||
+        (state===3 && !validName());
 
-      if(state===2){
-        var open=get("userRegistrationOpenButton");
-        if(open) open.hidden=false;
-      }
-
-      speak("Registration step "+(state+1)+" of 5. "+item.label+". Complete this box, then press Next.");
+      speak("Registration step "+(state+1)+" of 4. "+item.label+". Complete this box, then press Next.");
     }
 
     function nextStep(){
@@ -120,13 +126,8 @@
         state=2; update(); return;
       }
       if(state===2){
-        var open=get("userRegistrationOpenButton");
-        if(open) open.click();
-        state=3; update(); return;
-      }
-      if(state===3){
         if(!selectedRole()) return;
-        state=4; update(); return;
+        state=3; update(); return;
       }
       var save=get("pilotRegistrationSaveButton");
       if(save && !save.disabled){
