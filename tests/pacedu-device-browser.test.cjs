@@ -157,12 +157,15 @@ test("device speaker diagnostic invokes speech and presents an honest result", a
   await expect(page.locator("#deviceFacts")).toContainText("Speech API: available");
   await page.getByRole("button", { name: "Test this device's speaker" }).click();
   await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(1);
-  await expect(page.locator("#status")).toContainText("Browser reports speech finished");
-  await expect(page.locator("#speechFacts")).toContainText("Browser speech started and finished");
+  await expect(page.locator("#status")).toContainText("Pacedu voice engine request sent");
   await expect(page.locator("#speechFacts")).toContainText("Yes, I heard the sound");
-  const call = await page.evaluate(() => window.__paceduSpeechCalls[0]);
-  expect(call.text).toContain("Pacific Education speaker test");
-  expect(call.volume).toBe(1);
+  await expect(page.locator("#speechFacts")).toContainText("No sound heard");
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(2);
+  const calls = await page.evaluate(() => window.__paceduSpeechCalls);
+  expect(calls[0].text).toContain("Pacific Education speaker test");
+  expect(calls[1].text).toContain("If you can hear this sentence");
+  expect(calls[0].voice).not.toBe(calls[1].voice);
+  expect(calls[0].volume).toBe(1);
 });
 
 test("device report is local, includes device facts, and stop control works", async ({ page }) => {
