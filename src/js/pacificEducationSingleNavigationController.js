@@ -580,9 +580,10 @@ function auditFeatures(){
   document.documentElement.setAttribute("data-pe-feature-audit-version",report.version);
   var status=el("pacificEducationFeatureActivationStatus");
   if(status){
-    status.textContent=report.missingRequired.length
+    var statusMessage=report.missingRequired.length
       ? "Pac edu feature wiring check: "+report.missingRequired.length+" required element(s) need attention. See PacificEducationFeatureActivation.audit()."
       : "Pac edu feature wiring check: all registered elements are present. Behavioural tests are still required.";
+    if(status.textContent!==statusMessage) status.textContent=statusMessage;
     status.setAttribute("role","status");
     status.setAttribute("aria-live","polite");
   }
