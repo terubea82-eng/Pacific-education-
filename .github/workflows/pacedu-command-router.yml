@@ -113,8 +113,8 @@ jobs:
           dispatch_and_wait() {
             local workflow="$1"
             local label="$2"
-            local since run_json run_id run_status run_conclusion run_url started_at
-            since="$(date -u +%s)"
+            local before_ids run_json run_id run_status run_conclusion run_url
+            before_ids="$(gh run list --workflow "$workflow" --event workflow_dispatch --branch main --json databaseId --limit 30 | jq '[.[].databaseId]')"
             echo "Dispatching $label ($workflow)..."
             gh workflow run "$workflow" --ref main
             # Allow GitHub's Actions API to publish the newly dispatched run.
@@ -122,8 +122,8 @@ jobs:
             started_at="$(date -u +%s)"
             run_json=""
             for attempt in $(seq 1 360); do
-              run_json="$(gh run list --workflow "$workflow" --event workflow_dispatch --branch main --json databaseId,status,conclusion,createdAt,url,headSha --limit 30)"
-              run_json="$(printf '%s' "$run_json" | jq -c --argjson since "$since" --arg sha "$GITHUB_SHA" '[.[] | select(.headSha == $sha and (.createdAt | fromdateiso8601) >= $since)] | sort_by(.createdAt) | last // empty')"
+              run_json="$(gh run list --workflow "$workflow" --event workflow_dispatch --branch main --json databaseId,status,conclusion,createdAt,url --limit 30)"
+              run_json="$(printf '%s' "$run_json" | jq -c --argjson before "$before_ids" '[.[] | select((.databaseId as $id | ($before | index($id)) == null)] | sort_by(.createdAt) | last // empty')"
               if [[ -n "$run_json" && "$run_json" != "null" ]]; then
                 break
               fi
