@@ -112,13 +112,19 @@ function refreshFeatureForTarget(targetId){
 }
 
 function hideOtherGuidedPages(targetId){
-  /* Welcome is outside #app/GUIDED_PAGES, so hide it explicitly when a guided page opens. */
-  var welcome=el(GATEWAY.welcome);
-  if(welcome && targetId!==GATEWAY.welcome){
-    welcome.hidden=true;
-    welcome.setAttribute("aria-hidden","true");
-    try{ welcome.style.display="none"; }catch(e){}
-  }
+  /*
+   * LOCKED PAGE-BY-PAGE RULE:
+   * Next and Back may reveal only their one mandated destination page.
+   * Never leave Welcome, Vision, Rules, or another guided page visible beside it.
+   * Back returns to the previous step; Next advances only to the next defined step.
+   */
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var page=el(pageId);
+    if(!page || pageId===targetId) return;
+    page.hidden=true;
+    page.setAttribute("aria-hidden","true");
+    try{ page.style.display="none"; }catch(e){}
+  });
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
     if(!page) return;
@@ -306,18 +312,15 @@ function gateway(page){
     try{ page.style.display="none"; }catch(e){}
   });
 
-  if(welcome){
-    welcome.hidden=page!==1;
-    welcome.style.display=page===1?"":"none";
-  }
-  if(vision){
-    vision.hidden=page!==2;
-    vision.style.display=page===2?"block":"none";
-  }
-  if(rules){
-    rules.hidden=page!==3;
-    rules.style.display=page===3?"block":"none";
-  }
+  /* Gateway Next/Back shows exactly one of Welcome, Vision, or Rules. */
+  [welcome,vision,rules].forEach(function(node,index){
+    if(!node) return;
+    var active=(index+1)===page;
+    node.hidden=!active;
+    if(active) node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden","true");
+    node.style.display=active?(index===0?"":"block"):"none";
+  });
 
   if(page===1){
     setStatus("Welcome page active. AI Playback and welcome voice are protected.");
