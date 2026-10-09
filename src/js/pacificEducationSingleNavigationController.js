@@ -450,6 +450,14 @@ function bindGuidedFeatureButtons(){
 
   bind("teacherCalendarNextButton",function(button){
     if(button.disabled) return;
+    var role="";
+    try{ role=sessionStorage.getItem("pacificEducationPilotRole")||""; }catch(e){}
+    var roleSelect=el("pilotRoleSelector");
+    if(!role && roleSelect) role=roleSelect.value||"";
+    if(!role){
+      setStatus("Please complete registration and choose your user role before opening the workspace.");
+      return;
+    }
     document.body.setAttribute("data-pe-guided-complete","true");
     document.body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
     document.body.removeAttribute("data-pe-flow-step");
@@ -459,13 +467,22 @@ function bindGuidedFeatureButtons(){
     });
     var pages=el("pacificEducationPilotPages");
     if(pages){ pages.hidden=true; pages.style.display="none"; }
-    var workspaces=el("pacificEducationPilotUserWorkspaces");
-    if(workspaces){ workspaces.hidden=false; workspaces.style.removeProperty("display"); }
     var menu=el("pacificEducationAppMenu");
     if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
+    if(window.PacificEducationSequentialRoleWorkspaces &&
+       typeof window.PacificEducationSequentialRoleWorkspaces.build==="function"){
+      window.PacificEducationSequentialRoleWorkspaces.build(role);
+    }else{
+      var workspaces=el("pacificEducationPilotUserWorkspaces");
+      if(workspaces){ workspaces.hidden=false; workspaces.style.removeProperty("display"); }
+    }
     setStatus("Guided setup complete. Your Pacific Education workspace is ready.");
-    safeCall("PacificEducationAutoFeatureActivation","run");
-    if(workspaces){ try{workspaces.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){} }
+    if(window.PacificEducationAutoFeatureActivation &&
+       typeof window.PacificEducationAutoFeatureActivation.run==="function"){
+      window.PacificEducationAutoFeatureActivation.run();
+    }
+    var shell=el("pacificEducationSequentialRoleWorkspace")||el("pacificEducationPilotUserWorkspaces");
+    if(shell){ try{shell.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){} }
   });
 }
 
