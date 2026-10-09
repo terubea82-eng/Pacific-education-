@@ -62,7 +62,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          node --test tests/controller-navigation-wiring.test.js
+          node --test tests/controller-navigation-wiring.test.js tests/speech-engine-runtime.test.js
+          grep -q 'pacificEducationSpeechVoice.js' src/index.html
+          grep -q 'pacificEducationUniversalButtonVoice.js' src/index.html
           grep -q 'pacificEducationSingleNavigationController.js' src/index.html
           grep -q 'pacificEducationConversationContract.js' src/index.html
           echo "PASS: controller wiring tests passed and both navigation controller and requirements contract are connected."
