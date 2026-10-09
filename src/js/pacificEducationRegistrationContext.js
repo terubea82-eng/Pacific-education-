@@ -57,7 +57,14 @@
       var l=localStorage.getItem("pacificEducationRegistrationLanguage")||"";
       var cs=document.getElementById("pacificEducationCountrySelect"),ls=document.getElementById("pacificEducationLanguageSelect");
       if(cs && c)cs.value=c;
-      if(ls && l)ls.value=l;
+      if(ls){
+        if(l)ls.value=l;
+        /* English is the accessible default; users can still select another language. */
+        if(!ls.value){
+          if(Array.prototype.some.call(ls.options,function(option){return option.value==="en-AU";}))ls.value="en-AU";
+          else if(ls.options.length>1)ls.selectedIndex=1;
+        }
+      }
     }catch(e){}
     return saveContext();
   }
