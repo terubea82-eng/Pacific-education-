@@ -58,6 +58,15 @@ jobs:
           set -euo pipefail
           test -f docs/PILOT_PREFLIGHT_CHECKLIST.md
 
+      - name: Test navigation controller wiring against HTML and conversation contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test tests/controller-navigation-wiring.test.js
+          grep -q 'pacificEducationSingleNavigationController.js' src/index.html
+          grep -q 'pacificEducationConversationContract.js' src/index.html
+          echo "PASS: controller wiring tests passed and both navigation controller and requirements contract are connected."
+
       - name: Write preflight evidence
         shell: bash
         run: |
