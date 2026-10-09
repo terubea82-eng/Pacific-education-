@@ -10,7 +10,8 @@
   var BOXES = [
     {id:"pacificEducationCountriesBox", label:"Country"},
     {id:"pacificEducationLanguageBox", label:"Language"},
-    {id:"pacificEducationRegistrationBox", label:"User Registration"}
+    {id:"pacificEducationRegistrationBox", label:"User Registration"},
+    {id:"pilotRoleRegistrationFields", label:"Your Registration"}
   ];
 
   function speak(message){
@@ -94,6 +95,10 @@
           ? "Your role-specific registration fields are open inside this User Registration box. Complete them, then press Next."
           : "Choose one user role below. The role-specific registration fields will open inside this same box.";
       }else if(state===3){
+        /* The fields are nested in the registration form, so keep their parent
+           box visible rather than displaying a detached role-fields panel. */
+        var registrationBox=get("pacificEducationRegistrationBox");
+        if(registrationBox) registrationBox.hidden=false;
         form.hidden=false;
         var cards2=get("pilotUserRoleCards");
         if(cards2) cards2.hidden=false;
