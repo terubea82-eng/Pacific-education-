@@ -260,6 +260,23 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
   }
 }
 
+
+/* Final override: local role selection must never reveal privileged controls. */
+/* Fail closed for privileged panels: a local role choice or local sequence override is not authorization. */
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianWorkspace,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianActivation,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseChecklist,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceRegistry,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceGate,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationFinalProductionAuthorizationEvidenceRegistry,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationProduction"],
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationOwner"],
+#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationTechnician"] {
+  display: none !important;
+}
+
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script><style id="pacedu-clean-role-aware-screens">
 /* Pacedu clean guided screens — role workspaces reveal only their active target. */
@@ -304,20 +321,6 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
   visibility: visible !important;
 }
 
-/* Fail closed for privileged panels: a local role choice or local sequence override is not authorization. */
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #systemStatus,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #publicationStatus,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianWorkspace,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationTechnicianActivation,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseChecklist,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceRegistry,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationProductionReleaseEvidenceGate,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage #pacificEducationFinalProductionAuthorizationEvidenceRegistry,
-#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationProduction"],
-#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationOwner"],
-#pacificEducationSequentialRoleWorkspace #peSequentialPage [id^="pacificEducationTechnician"] {
-  display: none !important;
-}
 /* During guided navigation, remove repeated banners, global menus and unrelated links. */
 body.pe-guided-flow #pilotBanner,
 body.pe-guided-flow #pacificEducationRefreshNotice,
