@@ -114,6 +114,13 @@ function refreshFeatureForTarget(targetId){
 }
 
 function hideOtherGuidedPages(targetId){
+  /* Welcome is outside #app/GUIDED_PAGES, so hide it explicitly when a guided page opens. */
+  var welcome=el(GATEWAY.welcome);
+  if(welcome && targetId!==GATEWAY.welcome){
+    welcome.hidden=true;
+    welcome.setAttribute("aria-hidden","true");
+    try{ welcome.style.setProperty("display","none","important"); }catch(e){}
+  }
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
     if(!page) return;
@@ -163,7 +170,7 @@ var NEXT_WRAPPERS = {
 };
 
 var ALL_NEXT_WRAPPERS = [
-  "welcomeNextWrapper","registrationNextWrapper","prototypeNextWrapper",
+  "welcomeNextWrapper","paceduVisionNext","paceduRulesContinue","registrationNextWrapper","prototypeNextWrapper",
   "levelNextWrapper","subjectNextWrapper","termNextWrapper","capabilityNextWrapper",
   "dailyNextWrapper","practiceNextWrapper","assessmentNextWrapper",
   "coverageNextWrapper","teacherCalendarNextWrapper"
@@ -247,6 +254,15 @@ function gateway(page){
   var rules=el(GATEWAY.rules);
 
   if(pilot){ pilot.hidden=false; pilot.style.display=""; }
+
+  /* Entry pages and guided pages must never remain visible together on Back/Next. */
+  GUIDED_PAGES.forEach(function(pageId){
+    var page=el(pageId);
+    if(!page) return;
+    page.hidden=true;
+    page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
+  });
 
   if(welcome){
     welcome.hidden=page!==1;
