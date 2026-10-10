@@ -46,6 +46,8 @@ public final class MainActivity extends Activity {
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
     private String pendingNativeSpeech = "";
+    private String pendingNativeConversationJson = "";
+    private boolean nativeTtsInitializationFinished = false;
     private Voice preferredVoice;
     private Voice alternateVoice;
     private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
@@ -66,7 +68,8 @@ public final class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
         textToSpeech = new TextToSpeech(this, status -> {
-            if (status == TextToSpeech.SUCCESS) {
+            nativeTtsInitializationFinished = true;
+            if (status == TextToSpeech.SUCCESS && textToSpeech != null) {
                 int languageResult = textToSpeech.setLanguage(Locale.forLanguageTag("en-AU"));
                 if (languageResult == TextToSpeech.LANG_MISSING_DATA || languageResult == TextToSpeech.LANG_NOT_SUPPORTED) languageResult = textToSpeech.setLanguage(Locale.US);
                 if (languageResult == TextToSpeech.LANG_MISSING_DATA || languageResult == TextToSpeech.LANG_NOT_SUPPORTED) languageResult = textToSpeech.setLanguage(Locale.UK);
@@ -79,7 +82,22 @@ public final class MainActivity extends Activity {
                         pendingNativeSpeech = "";
                         speakNativeNow(queued);
                     }
+                    if (!pendingNativeConversationJson.isEmpty()) {
+                        String queuedConversation = pendingNativeConversationJson;
+                        pendingNativeConversationJson = "";
+                        if (!speakConversationNative(queuedConversation)) {
+                            notifyWebVoiceStatus("AI Playback could not start: Android text-to-speech rejected the conversation. Check the phone's Text-to-speech engine and English voice data, then tap Hear Welcome.");
+                        }
+                    }
+                } else {
+                    pendingNativeConversationJson = "";
+                    pendingNativeSpeech = "";
+                    notifyWebVoiceStatus("AI Playback unavailable: this phone has no supported English text-to-speech voice configured.");
                 }
+            } else {
+                pendingNativeConversationJson = "";
+                pendingNativeSpeech = "";
+                notifyWebVoiceStatus("AI Playback unavailable: Android could not initialize its text-to-speech engine.");
             }
         });
         showNativeHome();
@@ -162,6 +180,20 @@ public final class MainActivity extends Activity {
         welcomeHandler.postDelayed(() -> speakConversationNative(nativeConversationJson), 350);
     }
 
+    private void notifyWebVoiceStatus(String message) {
+        // The native Android TTS engine must release the web voice-priority guard
+        // when its conversation actually ends; otherwise later page instructions
+        // remain blocked even though native audio has finished.
+        runOnUiThread(() -> {
+            WebView current = webView;
+            if (current == null) return;
+            String quoted = JSONObject.quote(message == null ? "" : message);
+            current.evaluateJavascript(
+                    "(function(){var s=document.getElementById('pacificEducationVoiceStatus');"
+                            + "if(s){s.textContent=" + quoted + ";}})();",
+                    null);
+        });
+    }
     private boolean speakConversationNative(String json) {
         if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
         try {
@@ -182,10 +214,15 @@ public final class MainActivity extends Activity {
                         runOnUiThread(() -> speakConversationLine(lines, next));
                     } else {
                         clearNativeConversationResume();
+                        notifyWebVoiceStatus("AI Playback conversation complete.");
                     }
                 }
-                @Override public void onError(String utteranceId) { }
-                @Override public void onError(String utteranceId, int errorCode) { }
+                @Override public void onError(String utteranceId) {
+                    notifyWebVoiceStatus("AI Playback could not start speech; tap Hear Welcome to retry.");
+                }
+                @Override public void onError(String utteranceId, int errorCode) {
+                    notifyWebVoiceStatus("AI Playback could not start speech; tap Hear Welcome to retry.");
+                }
             });
             nativeConversationIndex = index[0];
             saveNativeConversationResume();
@@ -244,7 +281,24 @@ public final class MainActivity extends Activity {
 
         @JavascriptInterface
         public boolean speakConversation(String json) {
-            return speakConversationNative(json);
+            if (json == null || json.trim().isEmpty()) return false;
+            if (ttsReady && textToSpeech != null) return speakConversationNative(json);
+            if (nativeTtsInitializationFinished || textToSpeech == null) {
+                notifyWebVoiceStatus("AI Playback unavailable: Android text-to-speech is not ready. Check the phone's Text-to-speech engine and English voice data.");
+                return false;
+            }
+            // A user may tap AI Playback before Android finishes initializing TTS.
+            // Queue the whole conversation instead of falling back to a browser engine
+            // that may be blocked by WebView audio policies.
+            pendingNativeConversationJson = json;
+            notifyWebVoiceStatus("AI Playback: preparing the Android voice engine…");
+            welcomeHandler.postDelayed(() -> {
+                if (!pendingNativeConversationJson.isEmpty() && !ttsReady) {
+                    pendingNativeConversationJson = "";
+                    notifyWebVoiceStatus("AI Playback timed out while preparing Android voice. Check the phone's Text-to-speech engine and English voice data, then tap Hear Welcome.");
+                }
+            }, 12000L);
+            return true;
         }
 
         @JavascriptInterface
@@ -443,6 +497,10 @@ public final class MainActivity extends Activity {
                 // touch-active even if an older cached script has interfered.
                 // This does not replace or modify the protected #856 voice system.
                 view.evaluateJavascript("(function(){try{var b=document.getElementById('welcomeNextButton');if(!b)return;b.disabled=false;b.removeAttribute('aria-disabled');b.style.pointerEvents='auto';b.style.touchAction='manipulation';if(b.getAttribute('data-android-welcome-next')==='1')return;b.setAttribute('data-android-welcome-next','1');b.addEventListener('click',function(e){try{e.preventDefault();e.stopImmediatePropagation();if(window.PacificEducationPilotPages&&typeof window.PacificEducationPilotPages.goTo==='function'){window.PacificEducationPilotPages.goTo(2);return false;}document.body.classList.add('pacedu-entry-mode','pacedu-registration-mode');document.body.setAttribute('data-pac-edu-entry-page','2');var w=document.getElementById('pacificEducationWelcome'),n=document.getElementById('welcomeNextWrapper'),p=document.getElementById('pacificEducationPilotPages'),r=document.getElementById('pacificEducationIdentityRegistration');if(w)w.style.display='none';if(n)n.style.display='none';if(p)p.style.display='none';if(r){r.hidden=false;r.style.display='';}}catch(_){}return false;},true);}catch(_){} })();", null);
+                // Inject the native adapter after remotely hosted page scripts load.
+                // The APK opens GitHub Pages, so branch-only JavaScript is not bundled.
+                // Keep the protected #856 speech controller intact.
+                view.evaluateJavascript("(function(){try{var s=window.PacificEducationSpeech,b=window.PacificEducationNativeTTS;if(!s||!b||typeof b.speakConversation!=='function'||s.__pacNativeAndroidBridgeOverride)return;var previous=s.speakConversation;s.speakConversation=function(lines,done){if(!Array.isArray(lines)||!lines.length)return false;try{var payload=JSON.stringify(lines.map(function(x){return {speaker:String(x&&x.speaker||''),text:String(x&&x.text||'')};}));var accepted=b.speakConversation(payload);if(accepted){var st=document.getElementById('pacificEducationVoiceStatus');if(st)st.textContent=(typeof b.available==='function'&&!b.available())?'AI Playback: preparing the Android voice engine…':'AI Playback: native Android voice active.';return true;}var st2=document.getElementById('pacificEducationVoiceStatus');if(st2)st2.textContent='Android voice engine did not accept AI Playback. Check Android Text-to-speech settings and retry.';return previous(lines,done);}catch(e){try{return previous(lines,done);}catch(_){return false;}}};s.__pacNativeAndroidBridgeOverride=true;}catch(_){}})();", null);
             }
         });
 
