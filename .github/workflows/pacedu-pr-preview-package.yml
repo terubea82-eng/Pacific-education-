@@ -1,0 +1,56 @@
+name: Pacedu PR Preview Package (No Deployment)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - ".github/workflows/pacedu-pr-preview-package.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pacedu-pr-preview-package-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package-preview:
+    name: Package branch preview without publishing it
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this PR branch
+        uses: actions/checkout@v4
+
+      - name: Create downloadable website preview package
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f src/index.html
+          mkdir -p preview-package
+          cp -a src preview-package/
+          cat > preview-package/README-preview.txt <<'EOF'
+          Pacific Education — test package for this pull request
+
+          This package is built from the pull-request branch for inspection only.
+          It is NOT deployed to GitHub Pages and does NOT change the live website.
+
+          To inspect, extract the ZIP and open src/index.html in a browser.
+          Some browser features (installation prompts, speech voices, offline/PWA
+          behaviour) require a secure hosted origin and must be checked separately
+          on the target Android device.
+
+          Protected APK #856 is not included or changed by this package.
+          EOF
+          cd preview-package
+          zip -qr ../pacedu-pr-preview.zip .
+
+      - name: Upload downloadable preview package
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacedu-pr-preview-${{ github.event.pull_request.number || github.run_number }}
+          path: pacedu-pr-preview.zip
+          if-no-files-found: error
+          retention-days: 7

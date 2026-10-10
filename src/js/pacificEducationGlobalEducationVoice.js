@@ -26,7 +26,8 @@
     {speaker:"1",text:"To make education more connected to real life: daily activities help learners learn, discover, practise, and grow while giving teachers practical evidence to guide the next step. The architecture connects daily activities, learner responses, skills and evidence, teacher review, targeted support, progress, and assessment, including offline-first support when connectivity is limited."},
     {speaker:"2",text:"Welcome to Pacific Education."},
     {speaker:"1",text:"Let us learn, discover, practise, and grow together."},
-    {speaker:"2",text:"Press Next to continue."}
+    {speaker:"2",text:"Press Next to continue."},
+    {speaker:"1",text:"Pacific Education is ready to be installed on this device, if your browser supports installation. To install Pacedu, look for Install in your browser, or open the browser menu and choose Install app or Add to Home screen. You can also continue using Pacific Education on this website."}
   ];
 
   GLOBAL_LINES.forEach(function(line){ Object.freeze(line); });
