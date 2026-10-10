@@ -24,9 +24,14 @@
     if(manualControl(el))manualUntil=Date.now()+5000;
   },true);
   function permit(text){
+    var clean=String(text||"").replace(/\s+/g," ").trim();
+    /* Page 1 owns the welcome/Owner introduction. Do not replay that narration
+       on page 4 (registration) or any later page, even after a manual tap.
+       Other page-specific instructions remain available through explicit controls. */
+    var isPageOneWelcome=/welcome to (?:pacedu|pacific education)|modern education platform created to support learners|owner'?s experience|21 years of classroom teaching experience/i.test(clean);
+    if(isPageOneWelcome&&!pageOne())return false;
     if(Date.now()<manualUntil)return true;
     if(!pageOne())return false;
-    var clean=String(text||"").replace(/\s+/g," ").trim();
     if(!/welcome|pacific education/i.test(clean))return false;
     var now=Date.now();
     if(clean&&clean===lastAutoText&&now-lastAutoAt<300)return true;
