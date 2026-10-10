@@ -312,10 +312,19 @@ function enforceSingleVisiblePage(targetId, expectedStep){
     var page=el(pageId);
     if(!page) return;
     var active=pageId===targetId;
-    page.hidden=!active;
-    if(active) page.removeAttribute("aria-hidden");
-    else page.setAttribute("aria-hidden","true");
-    try{ page.style.setProperty("display",active?"block":"none","important"); }catch(e){}
+    if(page.hidden!==!active) page.hidden=!active;
+    if(active){
+      if(page.hasAttribute("aria-hidden")) page.removeAttribute("aria-hidden");
+    }else if(page.getAttribute("aria-hidden")!=="true"){
+      page.setAttribute("aria-hidden","true");
+    }
+    try{
+      var wantedDisplay=active?"block":"none";
+      if(page.style.getPropertyValue("display")!==wantedDisplay ||
+         page.style.getPropertyPriority("display")!=="important"){
+        page.style.setProperty("display",wantedDisplay,"important");
+      }
+    }catch(e){}
   });
   [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
     var page=el(pageId);
@@ -332,6 +341,7 @@ function guided(step,targetId){
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
   document.body.setAttribute("data-pe-flow-step",String(step));
+  document.body.setAttribute("data-pe-active-guided-page",targetId);
   document.body.setAttribute("data-pe-navigation-owner","single");
 
   var ok=revealTarget(targetId);
@@ -354,6 +364,7 @@ function gateway(page){
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
+  document.body.removeAttribute("data-pe-active-guided-page");
   document.body.setAttribute("data-pe-navigation-owner","single");
 
   var pilot=el("pacificEducationPilotPages");
@@ -698,6 +709,34 @@ function auditFeatures(){
   return report;
 }
 
+function observeGuidedPageIsolation(){
+  if(!window.MutationObserver || document.documentElement.getAttribute("data-pe-isolation-observer")==="true") return;
+  document.documentElement.setAttribute("data-pe-isolation-observer","true");
+  var queued=false;
+  var observer=new MutationObserver(function(records){
+    var changed=records.some(function(record){
+      return record.type==="attributes" &&
+        (record.attributeName==="hidden" || record.attributeName==="style" || record.attributeName==="aria-hidden");
+    });
+    if(!changed || queued) return;
+    queued=true;
+    window.setTimeout(function(){
+      queued=false;
+      var targetId=document.body.getAttribute("data-pe-active-guided-page");
+      var step=document.body.getAttribute("data-pe-flow-step");
+      if(!targetId || !step || !document.body.classList.contains("pe-guided-flow")) return;
+      /* Reassert the active guided page after legacy visibility changes.
+         Idempotent writes avoid observer loops; voice and feature engines are untouched. */
+      enforceSingleVisiblePage(targetId,step);
+    },0);
+  });
+  GUIDED_PAGES.concat([GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules]).forEach(function(id){
+    var page=el(id);
+    if(page) observer.observe(page,{attributes:true,attributeFilter:["hidden","style","aria-hidden"]});
+  });
+  window.PacificEducationGuidedIsolationObserver=observer;
+}
+
 function observeFeatureChanges(){
   if(!window.MutationObserver || document.documentElement.getAttribute("data-pe-activation-observer")==="true") return;
   document.documentElement.setAttribute("data-pe-activation-observer","true");
@@ -760,6 +799,7 @@ function init(){
   syncRules();
   bindAllBackButtons();
   auditFeatures();
+  observeGuidedPageIsolation();
   observeFeatureChanges();
 }
 
