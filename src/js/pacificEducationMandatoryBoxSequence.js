@@ -88,6 +88,24 @@
       });
     }
 
+    /* Other legacy repair modules can re-apply a stale disabled marker after the
+       role picker opens. Observe only the role-card disabled attributes and repair
+       them while this sequence owns role selection; do not touch privileged controls. */
+    var roleCardObserver=null;
+    function watchRoleCardAvailability(){
+      var cards=get("pilotUserRoleCards");
+      if(!cards || roleCardObserver) return;
+      roleCardObserver=new MutationObserver(function(){
+        if(state===2 || state===3) enableRoleCards();
+      });
+      roleCardObserver.observe(cards,{
+        subtree:true,
+        attributes:true,
+        attributeFilter:["disabled","aria-disabled","data-pacific-disabled-intentional"]
+      });
+    }
+    watchRoleCardAvailability();
+
     /* Make role-card taps self-sufficient on mobile browsers. The normal registration
        script still owns its status/voice behaviour; this synchronous capture handler
        guarantees the selected value and visible fields are set before Next is re-evaluated. */
