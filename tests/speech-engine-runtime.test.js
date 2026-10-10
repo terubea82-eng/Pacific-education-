@@ -62,6 +62,11 @@ function createSpeechHarness(options = {}) {
     context,
     { filename: "pacificEducationSpeechVoice.js" }
   );
+  vm.runInNewContext(
+    fs.readFileSync("src/js/pacificEducationSpeechCompatibility856.js", "utf8"),
+    context,
+    { filename: "pacificEducationSpeechCompatibility856.js" }
+  );
   return { window, document, synth, utterances, status, listeners, documentListeners };
 }
 
