@@ -78,11 +78,12 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
-test("mobile touch can complete registration and select a role before Next advances", async ({ page }) => {
+test("mobile touch can complete registration and select a role before Next advances", async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 360, height: 800 }, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
   const errors = [];
   page.on("pageerror", error => errors.push(error.stack || error.message));
   await installSpeechHarness(page);
-  await page.setViewportSize({ width: 360, height: 800 });
   await page.addInitScript(() => {
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
   });
@@ -112,6 +113,7 @@ test("mobile touch can complete registration and select a role before Next advan
   const savedRole = await page.evaluate(() => sessionStorage.getItem("pacificEducationPilotRole"));
   expect(savedRole).toBe("Teacher");
   expect(errors, "uncaught JavaScript errors").toEqual([]);
+  await context.close();
 });
 
 test("Pacedu welcome voice control invokes the protected speech engine", async ({ page }) => {
