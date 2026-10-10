@@ -29,6 +29,7 @@
     var clean=String(text||"").replace(/\s+/g," ").trim();
     if(!/welcome|pacific education/i.test(clean))return false;
     var now=Date.now();
+    if(clean&&clean===lastAutoText&&now-lastAutoAt<300)return true;
     if(clean&&clean===lastAutoText&&now-lastAutoAt<15000)return false;
     if(welcomeAutoUsed)return false;
     welcomeAutoUsed=true;lastAutoText=clean;lastAutoAt=now;
