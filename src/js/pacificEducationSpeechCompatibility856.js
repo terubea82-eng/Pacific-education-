@@ -37,13 +37,14 @@
     var item=queue.shift(), synth=window.speechSynthesis;
     try{
       var english=getVoices();
-      var voice=english.length ? english[selectedIndex % english.length] : null;
+      var speakerIndex=String(item.speaker)==="2" ? 1 : 0;
+      var voice=english.length ? english[speakerIndex % english.length] : null;
       selectedIndex++;
       var utterance=new window.SpeechSynthesisUtterance(item.text);
       if(voice) utterance.voice=voice;
       utterance.lang=voice&&voice.lang?voice.lang:"en-AU";
       utterance.rate=0.95; utterance.pitch=1; utterance.volume=1;
-      utterance.onstart=function(){status("Speaker "+(item.speaker||"1")+" is speaking.");};
+      utterance.onstart=function(){status("AI Playback: Speaker "+(item.speaker||"1")+" is speaking.");};
       utterance.onend=function(){next();};
       utterance.onerror=function(event){
         active=false; queue=[]; clearSaved();
