@@ -162,6 +162,20 @@ public final class MainActivity extends Activity {
         welcomeHandler.postDelayed(() -> speakConversationNative(nativeConversationJson), 350);
     }
 
+    private void notifyWebVoiceStatus(String message) {
+        // The native Android TTS engine must release the web voice-priority guard
+        // when its conversation actually ends; otherwise later page instructions
+        // remain blocked even though native audio has finished.
+        runOnUiThread(() -> {
+            WebView current = webView;
+            if (current == null) return;
+            String quoted = JSONObject.quote(message == null ? "" : message);
+            current.evaluateJavascript(
+                    "(function(){var s=document.getElementById('pacificEducationVoiceStatus');"
+                            + "if(s){s.textContent=" + quoted + ";}})();",
+                    null);
+        });
+    }
     private boolean speakConversationNative(String json) {
         if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
         try {
@@ -182,10 +196,15 @@ public final class MainActivity extends Activity {
                         runOnUiThread(() -> speakConversationLine(lines, next));
                     } else {
                         clearNativeConversationResume();
+                        notifyWebVoiceStatus("AI Playback conversation complete.");
                     }
                 }
-                @Override public void onError(String utteranceId) { }
-                @Override public void onError(String utteranceId, int errorCode) { }
+                @Override public void onError(String utteranceId) {
+                    notifyWebVoiceStatus("AI Playback could not start speech; tap Hear Welcome to retry.");
+                }
+                @Override public void onError(String utteranceId, int errorCode) {
+                    notifyWebVoiceStatus("AI Playback could not start speech; tap Hear Welcome to retry.");
+                }
             });
             nativeConversationIndex = index[0];
             saveNativeConversationResume();
