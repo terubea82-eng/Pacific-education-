@@ -373,9 +373,10 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 /* Guided navigation: Back is green like Next, with a clear breathing cue. */
 .pacedu-entry-actions button[id$="Back"],button[id$="BackButton"],button[id$="backButton"],button[aria-label^="Back"],#peSequentialBack,#paceduVisionBack,#paceduRulesBack,.pacedu-real-back{background:#168a3a!important;color:#fff!important;border:2px solid #0f642a!important;min-height:52px;min-width:120px;border-radius:10px;font-weight:800;animation:peNextBreathing 2s ease-in-out infinite}
 .pacedu-entry-actions button[id$="Back"]:hover,button[id$="BackButton"]:hover,button[id$="backButton"]:hover,button[aria-label^="Back"]:hover,#peSequentialBack:hover,#paceduVisionBack:hover,#paceduRulesBack:hover,.pacedu-real-back:hover{filter:brightness(.92)}
-#pacificEducationRegistrationBox.pacedu-user-registration-box{border:2px solid #2563eb!important;animation:paceduRegistrationBoxPulse 2.4s ease-in-out infinite}
+#pacificEducationRegistrationBox.pacedu-user-registration-box{border:2px solid #2563eb!important}
+#pacificEducationRegistrationBox.pacedu-user-registration-box.pacific-breathing-focus,#pacificEducationRegistrationBox.pacedu-user-registration-box[data-pe-breathing-active="true"]{animation:paceduRegistrationBoxPulse 2.4s ease-in-out infinite}
 @keyframes paceduRegistrationBoxPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,99,235,.12)}50%{box-shadow:0 0 0 5px rgba(37,99,235,.22)}}
-@media(prefers-reduced-motion:reduce){#pacificEducationRegistrationBox.pacedu-user-registration-box{animation:none;box-shadow:0 0 0 2px rgba(37,99,235,.16)}}
+@media(prefers-reduced-motion:reduce){#pacificEducationRegistrationBox.pacedu-user-registration-box.pacific-breathing-focus,#pacificEducationRegistrationBox.pacedu-user-registration-box[data-pe-breathing-active="true"]{animation:none;box-shadow:0 0 0 2px rgba(37,99,235,.16)}}
 </style>
 </head>
 <body>
@@ -913,6 +914,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationTeacherReviewQueue.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationStudentProgressDashboardUI.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationUserBoxVisualActivation.js?v=20261007-user-box-blue"></script>
+<script src="./js/pacificEducationWelcomeOnlyVoiceGuard.js?v=20261010-welcome-only-guard"></script>
 <style id="pacific-education-user-box-visual-standard">
 /* User-facing boxes only: light Pacific blue. Keep the rest of the UI neutral/status-based. */
 .pe-user-box{
