@@ -65,8 +65,27 @@
     }
 
     function selectedRole(){
+      var role=get("pilotRegistrationRole");
+      var value=role ? String(role.value||"").trim() : "";
       var cards=document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card[aria-pressed=\"true\"]");
-      return cards.length>0;
+      return !!value || cards.length>0;
+    }
+
+    /* Some older interaction-repair passes marked role cards as intentionally
+       disabled while their parent form was hidden. Re-enable only the visible
+       role-picker controls when the registration sequence reaches role choice;
+       this does not unlock payment, production, or privileged workspace controls. */
+    function enableRoleCards(){
+      var cards=document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card");
+      cards.forEach(function(card){
+        card.disabled=false;
+        card.removeAttribute("aria-disabled");
+        card.removeAttribute("data-pacific-disabled-intentional");
+        card.style.pointerEvents="auto";
+        card.style.touchAction="manipulation";
+        card.style.position="relative";
+        card.style.zIndex="2";
+      });
     }
 
     /* Make role-card taps self-sufficient on mobile browsers. The normal registration
@@ -114,6 +133,7 @@
         form.hidden=false;
         var cards=get("pilotUserRoleCards");
         if(cards) cards.hidden=false;
+        enableRoleCards();
         var fields=get("pilotRoleRegistrationFields");
         if(fields) fields.hidden=!selectedRole();
         title.textContent="Mandatory registration — Step 3 of 4";
@@ -128,6 +148,7 @@
         form.hidden=false;
         var cards2=get("pilotUserRoleCards");
         if(cards2) cards2.hidden=false;
+        enableRoleCards();
         var fields2=get("pilotRoleRegistrationFields");
         if(fields2) fields2.hidden=false;
         title.textContent="Mandatory registration — Step 4 of 4";
