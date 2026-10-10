@@ -27,6 +27,7 @@
     if(Date.now()<manualUntil)return true;
     if(!pageOne())return false;
     var clean=String(text||"").replace(/\s+/g," ").trim();
+    if(!/welcome|pacific education/i.test(clean))return false;
     var now=Date.now();
     if(clean&&clean===lastAutoText&&now-lastAutoAt<15000)return false;
     if(welcomeAutoUsed)return false;
