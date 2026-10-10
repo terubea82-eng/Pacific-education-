@@ -82,11 +82,14 @@ test("mobile touch can complete registration and select a role before Next advan
   const context = await browser.newContext({ viewport: { width: 360, height: 800 }, isMobile: true, hasTouch: true });
   const page = await context.newPage();
   const errors = [];
+  page.setDefaultTimeout(7000);
   page.on("pageerror", error => errors.push(error.stack || error.message));
+  page.on("console", message => { if (message.type() === "error") console.log("[mobile browser console] " + message.text()); });
   await installSpeechHarness(page);
   await page.addInitScript(() => {
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
   });
+  console.log("[mobile flow] opening registration entry");
   await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
   // Keep real touch hit-testing, but remove perpetual breathing transforms from this
   // automated interaction test: Playwright requires a stationary target before tap().
@@ -94,26 +97,34 @@ test("mobile touch can complete registration and select a role before Next advan
   await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
+  console.log("[mobile flow] registration visible");
 
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  console.log("[mobile flow] country selected; tap Next");
   await page.locator("#registrationNextButton").tap();
   await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  console.log("[mobile flow] language box visible");
 
   await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+  console.log("[mobile flow] language selected; tap Next");
   await page.locator("#registrationNextButton").tap();
   const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
   await expect(teacher).toBeVisible();
+  console.log("[mobile flow] role cards visible; tap Teacher");
   await teacher.tap();
   await expect(teacher).toHaveAttribute("aria-pressed", "true");
   await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
   await expect(page.locator("#registrationNextButton")).toBeEnabled();
+  console.log("[mobile flow] Teacher selected; tap Next to name");
 
   await page.locator("#registrationNextButton").tap();
   await page.locator("#pilotRegistrationName").fill("Phone Pilot Test");
   await expect(page.locator("#registrationNextButton")).toBeEnabled();
+  console.log("[mobile flow] name filled; tap Save/Next");
   await page.locator("#registrationNextButton").tap();
   await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
   await expect(registration).toBeHidden();
+  console.log("[mobile flow] Prototype Access visible and registration hidden");
   const savedRole = await page.evaluate(() => sessionStorage.getItem("pacificEducationPilotRole"));
   expect(savedRole).toBe("Teacher");
   expect(errors, "uncaught JavaScript errors").toEqual([]);
