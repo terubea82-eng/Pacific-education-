@@ -98,7 +98,7 @@
     topRightPlayButton.type="button";topRightPlayButton.textContent="▶️ Play";
     topRightPlayButton.setAttribute("aria-label","Play audio instructions for this page");
     topRightPlayButton.style.cssText="min-height:44px;padding:10px 14px;font-weight:bold;border:2px solid currentColor;border-radius:8px;background:Canvas;color:CanvasText;box-shadow:0 2px 8px rgba(0,0,0,.2);";
-    topRightPlayButton.addEventListener("click",function(){var active=document.getElementById("pacificEducationWelcome");if(pageOne()&&active&&!active.hidden&&window.PacificEducationGlobalEducationVoice&&typeof window.PacificEducationGlobalEducationVoice.play==="function"){window.__pacificEducationWelcomePlayed=true;window.PacificEducationGlobalEducationVoice.play();return;}speak(currentPageVoiceText);});
+    topRightPlayButton.addEventListener("click",function(){var active=document.getElementById("pacificEducationWelcome");if(active&&!active.hidden&&window.PacificEducationGlobalEducationVoice&&typeof window.PacificEducationGlobalEducationVoice.play==="function"){window.__pacificEducationWelcomePlayed=true;window.PacificEducationGlobalEducationVoice.play();return;}speak(currentPageVoiceText);});
     topRightStopButton=document.createElement("button");
     topRightStopButton.type="button";topRightStopButton.textContent="⏹";
     topRightStopButton.setAttribute("aria-label","Stop Pacific Education voice");
