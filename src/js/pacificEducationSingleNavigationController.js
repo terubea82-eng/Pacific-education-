@@ -123,7 +123,7 @@ function hideOtherGuidedPages(targetId){
     if(!page || pageId===targetId) return;
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.display="none"; }catch(e){}
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
   });
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
@@ -131,13 +131,34 @@ function hideOtherGuidedPages(targetId){
     if(pageId===targetId){
       page.hidden=false;
       page.removeAttribute("aria-hidden");
-      try{ page.style.removeProperty("display"); }catch(e){}
+      try{ page.style.setProperty("display","block","important"); }catch(e){}
       return;
     }
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.display="none"; }catch(e){}
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
   });
+}
+
+/* Keep isolation scoped to known page panels only.
+ * Hiding arbitrary siblings up the DOM tree permanently disabled registration
+ * controls and unrelated app features; the page list below is the authority.
+ */
+function isolateCurrentPage(targetId){
+  var target=el(targetId);
+  if(!target) return false;
+  hideOtherGuidedPages(targetId);
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var page=el(pageId);
+    if(!page || pageId===targetId) return;
+    page.hidden=true;
+    page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
+  });
+  target.hidden=false;
+  target.removeAttribute("aria-hidden");
+  try{ target.style.setProperty("display","block","important"); }catch(e){}
+  return true;
 }
 
 function updateUserBoxDirection(targetId){
@@ -220,17 +241,18 @@ function revealTarget(targetId){
 
   target.hidden=false;
   target.removeAttribute("aria-hidden");
-  try{ target.style.removeProperty("display"); }catch(e){}
+  try{ target.style.setProperty("display","block","important"); }catch(e){}
 
   var parent=target.parentElement;
   while(parent && parent.id!=="app"){
     parent.hidden=false;
+    parent.removeAttribute("aria-hidden");
+    try{ parent.style.setProperty("display","block","important"); }catch(e){}
     parent=parent.parentElement;
   }
 
-  try{ target.scrollIntoView({behavior:"smooth",block:"start"}); }
-  catch(e){ try{ target.scrollIntoView(); }catch(ignore){} }
-
+  /* Swap pages without smooth-scrolling through unrelated information. */
+  isolateCurrentPage(targetId);
   refreshFeatureForTarget(targetId);
   return true;
 }
@@ -278,6 +300,34 @@ function renderPageGuide(targetId){
   guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
 }
 
+function enforceSingleVisiblePage(targetId, expectedStep){
+  /* Re-assert the one-page contract after legacy registration handlers finish.
+     Some older handlers can restore display styles after the navigation click. */
+  if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)) return;
+  document.body.classList.remove("pacedu-entry-mode");
+  if(targetId!=="pacificEducationIdentityRegistration"){
+    document.body.classList.remove("pacedu-registration-mode");
+  }
+  GUIDED_PAGES.forEach(function(pageId){
+    var page=el(pageId);
+    if(!page) return;
+    var active=pageId===targetId;
+    page.hidden=!active;
+    if(active) page.removeAttribute("aria-hidden");
+    else page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display",active?"block":"none","important"); }catch(e){}
+  });
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var page=el(pageId);
+    if(!page) return;
+    var active=pageId===targetId;
+    page.hidden=!active;
+    if(active) page.removeAttribute("aria-hidden");
+    else page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display",active?"block":"none","important"); }catch(e){}
+  });
+}
+
 function guided(step,targetId){
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
@@ -285,7 +335,13 @@ function guided(step,targetId){
   document.body.setAttribute("data-pe-navigation-owner","single");
 
   var ok=revealTarget(targetId);
-  if(ok){ renderPageGuide(targetId); setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue."); }
+  if(ok){
+    renderPageGuide(targetId);
+    setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue.");
+    /* Run after click handlers and their queued repairs; never change the protected voice engine. */
+    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
+    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
+  }
   return ok;
 }
 
@@ -309,7 +365,7 @@ function gateway(page){
     if(!page) return;
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.display="none"; }catch(e){}
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
   });
 
   /* Gateway Next/Back shows exactly one of Welcome, Vision, or Rules. */
@@ -329,7 +385,9 @@ function gateway(page){
   }else{
     setStatus("Rules & Conditions active. Agree to continue to Registration.");
   }
-  syncNextWrapper(page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules");
+  var activePageId=page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules";
+  syncNextWrapper(activePageId);
+  isolateCurrentPage(activePageId);
   return true;
 }
 

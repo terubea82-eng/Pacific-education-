@@ -78,6 +78,48 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
+test("mobile touch can complete registration and select a role before Next advances", async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 360, height: 800 }, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
+  const errors = [];
+  page.on("pageerror", error => errors.push(error.stack || error.message));
+  await installSpeechHarness(page);
+  await page.addInitScript(() => {
+    try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
+  });
+  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  // Keep real touch hit-testing, but remove perpetual breathing transforms from this
+  // automated interaction test: Playwright requires a stationary target before tap().
+  // The production UI animations remain unchanged for actual phone users.
+  await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+  await expect(registration).toBeVisible();
+
+  await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await page.locator("#registrationNextButton").tap();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+
+  await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+  await page.locator("#registrationNextButton").tap();
+  const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
+  await expect(teacher).toBeVisible();
+  await teacher.tap();
+  await expect(teacher).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
+  await expect(page.locator("#registrationNextButton")).toBeEnabled();
+
+  await page.locator("#registrationNextButton").tap();
+  await page.locator("#pilotRegistrationName").fill("Phone Pilot Test");
+  await expect(page.locator("#registrationNextButton")).toBeEnabled();
+  await page.locator("#registrationNextButton").tap();
+  await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
+  await expect(registration).toBeHidden();
+  const savedRole = await page.evaluate(() => sessionStorage.getItem("pacificEducationPilotRole"));
+  expect(savedRole).toBe("Teacher");
+  expect(errors, "uncaught JavaScript errors").toEqual([]);
+  await context.close();
+});
+
 test("Pacedu welcome voice control invokes the protected speech engine", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });

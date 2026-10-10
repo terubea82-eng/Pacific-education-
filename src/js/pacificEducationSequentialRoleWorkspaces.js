@@ -262,6 +262,9 @@
     if(!app) return;
     var sequence=getRoleSequence(role);
     if(!sequence || !sequence.length) return;
+    /* Sign Out is a dedicated final page for every role, not an off-screen footer. */
+    sequence=cloneSequence(sequence);
+    sequence.push(["paceduSignOutPage","Sign Out"]);
 
     var old=document.getElementById("pacificEducationSequentialRoleWorkspace");
     if(old) old.remove();
@@ -289,6 +292,8 @@
 
     function renderPage(){
       restoreAllMovedTargets();
+      var signOutArea=document.getElementById("peSequentialSignOut");
+      if(signOutArea && signOutArea.parentElement===page) shell.appendChild(signOutArea);
       page.innerHTML="";
       var item=sequence[index];
       if(item[0]==="dailyLesson") item=[item[0],"Day "+dailyDay+" of 365"];
@@ -308,6 +313,18 @@
       back.setAttribute("aria-label",index===0?"Back unavailable on first workspace page":"Back to "+(sequence[index-1] ? sequence[index-1][1] : "previous page"));
       back.disabled=index===0;
       next.textContent=index===sequence.length-1?"Finish":"➡️ Next"; next.classList.add("pacific-mandatory-next"); next.setAttribute("aria-label",index===sequence.length-1?"Finish workspace sequence":"Next to "+(sequence[index+1] ? sequence[index+1][1] : "next page"));
+      next.hidden=false;
+      if(item[0]==="paceduSignOutPage"){
+        var signOutIntro=document.createElement("section");
+        signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
+        signOutIntro.innerHTML="<h3>🔴 Sign Out</h3><p>Your role-specific workspace steps are complete. Use <strong>Sign Out</strong> when you have finished, or use Back to return to your previous workspace page.</p><p>Signing out clears this pilot session's registration and role state from this device.</p>";
+        page.appendChild(signOutIntro);
+        if(signOutArea) page.appendChild(signOutArea);
+        next.hidden=true;
+        status.textContent="Final page — Sign Out. Confirm Sign Out when you are ready.";
+        speak("Final page. Sign Out. Your workspace sequence is complete. Confirm Sign Out when you are ready.");
+        return;
+      }
       if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
         var teacherTest=item[0]==="pacificEducationTeacherCapabilityTest";
         var test=document.createElement("section");
@@ -419,10 +436,10 @@
         next.disabled=true;
       }
       if(target) next.disabled=false;
+      /* Keep Next from scrolling the viewport through unrelated page content. */
       try{
         var focusTitle=document.getElementById("peSequentialTitle");
-        if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus();}
-        else shell.focus();
+        if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
       }catch(e){}
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
