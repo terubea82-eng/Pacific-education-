@@ -37,7 +37,7 @@
     var item=queue.shift(), synth=window.speechSynthesis;
     try{
       var english=getVoices();
-      var speakerIndex=String(item.speaker)==="2" ? 1 : 0;
+      var speakerIndex=selectedIndex % 2; // Alternate voices by dialogue order, even if speaker labels vary.
       var voice=english.length ? english[speakerIndex % english.length] : null;
       selectedIndex++;
       var utterance=new window.SpeechSynthesisUtterance(item.text);
