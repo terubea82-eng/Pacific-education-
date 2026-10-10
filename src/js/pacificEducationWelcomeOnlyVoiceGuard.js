@@ -41,6 +41,14 @@
     return true;
   }
   function wrapSpeechObject(){
+    /* The welcome conversation calls speakConversation directly, bypassing speakText.
+       Guard the public playback entry point as well so it cannot replay on Page 4. */
+    var globalVoice=window.PacificEducationGlobalEducationVoice;
+    if(globalVoice&&typeof globalVoice.play==="function"&&!globalVoice.play.__peWelcomeGuard){
+      var originalPlay=globalVoice.play;
+      var guardedPlay=function(){if(!pageOne())return false;return originalPlay.apply(this,arguments);};
+      guardedPlay.__peWelcomeGuard=true;guardedPlay.__peOriginal=originalPlay;globalVoice.play=guardedPlay;
+    }
     var engine=window.PacificEducationSpeech;
     if(engine&&typeof engine.speakText==="function"&&!engine.speakText.__peWelcomeGuard){
       var original=engine.speakText;
