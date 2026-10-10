@@ -123,7 +123,7 @@ function hideOtherGuidedPages(targetId){
     if(!page || pageId===targetId) return;
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.display="none"; }catch(e){}
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
   });
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
@@ -131,41 +131,33 @@ function hideOtherGuidedPages(targetId){
     if(pageId===targetId){
       page.hidden=false;
       page.removeAttribute("aria-hidden");
-      try{ page.style.removeProperty("display"); }catch(e){}
+      try{ page.style.setProperty("display","block","important"); }catch(e){}
       return;
     }
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.display="none"; }catch(e){}
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
   });
 }
 
-/* Defeat legacy !important rules that expose every pilot feature at once. */
+/* Keep isolation scoped to known page panels only.
+ * Hiding arbitrary siblings up the DOM tree permanently disabled registration
+ * controls and unrelated app features; the page list below is the authority.
+ */
 function isolateCurrentPage(targetId){
   var target=el(targetId);
   if(!target) return false;
-  var root=document.querySelector("main")||el("app")||document.body;
-  if(!root || !root.contains(target)) root=el("app")||document.body;
-  var activeWrapper=NEXT_WRAPPERS[targetId]||"";
-  var current=target;
-  while(current && current!==root){
-    var parent=current.parentElement;
-    if(!parent) break;
-    Array.prototype.slice.call(parent.children).forEach(function(sibling){
-      if(sibling===current || sibling.tagName==="SCRIPT" || sibling.tagName==="STYLE") return;
-      if(sibling.id==="pacificEducationAccessibilityControls" ||
-         sibling.id==="pacificEducationVoiceStatus" ||
-         sibling.id==="pacificEducationInteractionStatus" ||
-         (activeWrapper && sibling.id===activeWrapper)) return;
-      sibling.hidden=true;
-      sibling.setAttribute("aria-hidden","true");
-      try{ sibling.style.setProperty("display","none","important"); }catch(e){}
-    });
-    current.hidden=false;
-    current.removeAttribute("aria-hidden");
-    try{ current.style.setProperty("display","block","important"); }catch(e){}
-    current=parent;
-  }
+  hideOtherGuidedPages(targetId);
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var page=el(pageId);
+    if(!page || pageId===targetId) return;
+    page.hidden=true;
+    page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
+  });
+  target.hidden=false;
+  target.removeAttribute("aria-hidden");
+  try{ target.style.setProperty("display","block","important"); }catch(e){}
   return true;
 }
 
@@ -339,7 +331,7 @@ function gateway(page){
     if(!page) return;
     page.hidden=true;
     page.setAttribute("aria-hidden","true");
-    try{ page.style.display="none"; }catch(e){}
+    try{ page.style.setProperty("display","none","important"); }catch(e){}
   });
 
   /* Gateway Next/Back shows exactly one of Welcome, Vision, or Rules. */
