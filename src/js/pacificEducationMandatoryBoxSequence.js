@@ -135,16 +135,30 @@
         state=3; update(); return;
       }
       var save=get("pilotRegistrationSaveButton");
-      if(save && !save.disabled){
-        save.click();
-        progress.textContent="Registration submitted. Opening the next guided page...";
-        speak("Registration submitted. Opening the next guided page.");
-        window.setTimeout(function(){
-          if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
-            window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
-          }
-        },200);
+      if(!save || save.disabled){
+        progress.textContent="Registration is not ready to submit. Complete all required fields and resolve any validation messages before pressing Next.";
+        speak("Registration is not ready to submit. Complete all required fields before pressing Next.");
+        return;
       }
+      save.click();
+      progress.textContent="Checking registration before opening the next guided page...";
+      speak("Checking registration before opening the next guided page.");
+      window.setTimeout(function(){
+        var registered=false;
+        try{
+          registered=window.sessionStorage.getItem("pacificEducationPilotRegistered")==="true" ||
+            !!window.sessionStorage.getItem("pacificEducationPilotRegistration");
+        }catch(e){}
+        if(!registered){
+          progress.textContent="Registration has not been confirmed. Check the required fields and try Save Registration again.";
+          speak("Registration has not been confirmed. Check the required fields and try again.");
+          return;
+        }
+        progress.textContent="Registration confirmed. Opening the next guided page.";
+        if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
+          window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
+        }
+      },500);
     }
 
     next.addEventListener("click",nextStep,true);
