@@ -8,16 +8,6 @@
   var AUSTRALIA_ENGLISH = "en-AU";
   var AUSTRALIA_ENGLISH_MATCH = "en[-_]AU";
 
-  function welcomePageIsActive(){
-    var body=document.body;
-    var step=body&&body.getAttribute("data-pe-flow-step");
-    if(step!==null&&step!=="")return Number(step)===0;
-    var el=document.getElementById("pacificEducationWelcome");
-    if(!el||el.hidden)return false;
-    var style=window.getComputedStyle?window.getComputedStyle(el):null;
-    return !style||(style.display!=="none"&&style.visibility!=="hidden");
-  }
-
   var WELCOME_VOICE_TEXT = "Welcome to Pacific Education. I am Tion Terubea, Owner of Pacific Education. This is the Pacific Education Owner experience and introduction. I bring 21 years of practical classroom teaching experience in Fiji, a small island nation in the South Pacific. That real classroom experience is the foundation of Pacedu: to reduce unnecessary teacher workload, help teachers understand learners better, identify strengths and areas needing development, and turn daily learning into meaningful evidence of progress. Pacedu is built on a simple belief: education should not stop when the world faces difficulties. During war, conflict, natural disasters, pandemics, emergencies, displacement, isolation, or other disruptions, learners can lose access to schools, teachers, and learning resources. Pacific Education was created to help keep learning moving forward. It is designed to assist students, teachers, parents, caregivers, schools, and communities across the Pacific and, with the right development and verification, support education globally. Through modern technology, Pacific Education aims to provide learning activities, assessments, progress support, accessibility, and educational assistance wherever learners may be. Pacific Education also aims to support learners experiencing disability or poverty and to help maintain offline-first learning when connectivity is limited. Technology should support teachers and communities—not replace them.";
 
   /*
@@ -68,14 +58,13 @@
     var button=document.getElementById("pacificEducationAIPlaybackButton");
     if(button && button.getAttribute("data-pe-global-play-bound")!=="true"){
       button.setAttribute("data-pe-global-play-bound","true");
-      button.addEventListener("click",function(e){e.preventDefault();if(!welcomePageIsActive())return;window.__pacificEducationWelcomePlayed=true;play();});
+      button.addEventListener("click",function(e){e.preventDefault();window.__pacificEducationWelcomePlayed=true;play();});
     }
     var welcome=document.getElementById("pacificEducationWelcomeVoiceButton");
     if(welcome && !welcome.getAttribute("data-pe-welcome-voice-bound") && welcome.getAttribute("data-pe-global-welcome-bound")!=="true"){
       welcome.setAttribute("data-pe-global-welcome-bound","true");
       welcome.addEventListener("click",function(e){
         e.preventDefault();
-        if(!welcomePageIsActive())return;
         window.__pacificEducationWelcomePlayed=true;
         if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech === "function")window.PacificEducationSpeech.stopSpeech();
         var status=document.getElementById("pacificEducationVoiceStatus");
@@ -89,7 +78,7 @@
       topPlay.setAttribute("data-pe-global-voice-bound","true");
       topPlay.addEventListener("click",function(){
         var active=document.getElementById("pacificEducationWelcome");
-        if(welcomePageIsActive() && active && !active.hidden){window.__pacificEducationWelcomePlayed=true;play();}
+        if(active && !active.hidden){window.__pacificEducationWelcomePlayed=true;play();}
       });
     }
   }
