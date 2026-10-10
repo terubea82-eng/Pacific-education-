@@ -57,10 +57,12 @@
     /* Page 1 owns the welcome/Owner introduction. Do not replay that narration
        on page 4 (registration) or any later page, even after a manual tap.
        Other page-specific instructions remain available through explicit controls. */
-    var isPageOneWelcome=/welcome to (?:pacedu|pacific education)|modern education platform created to support learners|owner'?s experience|21 years of classroom teaching experience/i.test(clean);
+    var isPageOneWelcome=/welcome to (?:pacedu|pacific education)|modern education platform created to support learners|owner'?s experience|owner of pacific education|21 years(?: of)? (?:practical )?classroom teaching experience|why was pacific education built|so is it only for the pacific|and what is the goal|learn, discover, practise, and grow together|education should not stop when/i.test(clean);
+    /* Never replay Page 1 welcome/Owner narration after leaving Page 1. */
     if(isPageOneWelcome&&!pageOne())return false;
     if(Date.now()<manualUntil)return true;
-    if(!pageOne())return false;
+    /* Keep page-specific Registration and learning instructions available. */
+    if(!pageOne())return true;
     if(!/welcome|pacific education/i.test(clean))return false;
     var now=Date.now();
     if(clean&&clean===lastAutoText&&now-lastAutoAt<300)return true;
