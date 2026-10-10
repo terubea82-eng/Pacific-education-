@@ -17,19 +17,21 @@
       if(!lines.length) return false;
 
       try{
-        if(typeof bridge.available!=="function" || bridge.available()){
-          var json=JSON.stringify(lines.map(function(item){
-            return {
-              speaker:String(item&&item.speaker||""),
-              text:String(item&&item.text||"")
-            };
-          }));
-          var nativeStarted=bridge.speakConversation(json);
-          if(nativeStarted){
-            var status=document.getElementById("pacificEducationVoiceStatus");
-            if(status) status.textContent="AI Playback: native Android voice active.";
-            return true;
-          }
+        var json=JSON.stringify(lines.map(function(item){
+          return {
+            speaker:String(item&&item.speaker||""),
+            text:String(item&&item.text||"")
+          };
+        }));
+        // Call the bridge even while available() is false: Android may still be
+        // initializing TTS and can queue this conversation until initialization ends.
+        var nativeStarted=bridge.speakConversation(json);
+        if(nativeStarted){
+          var status=document.getElementById("pacificEducationVoiceStatus");
+          if(status) status.textContent=(typeof bridge.available==="function" && !bridge.available())
+            ? "AI Playback: preparing the Android voice engine…"
+            : "AI Playback: native Android voice active.";
+          return true;
         }
       }catch(error){
         console.warn("Pacific Education native Android AI Playback repair:",error);
