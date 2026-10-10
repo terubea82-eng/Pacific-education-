@@ -27,6 +27,22 @@
     if(step!==null&&step!=="")return Number(step)===0;
     return true;
   }
+  function clearPersistedWelcomeConversation(){
+    try{
+      var key="pacificEducationVoiceResume";
+      var raw=window.localStorage&&window.localStorage.getItem(key);
+      if(!raw)return;
+      var saved=JSON.parse(raw);
+      var joined=(saved&&Array.isArray(saved.lines)?saved.lines:[]).map(function(item){return String(item&&item.text||"");}).join(" ");
+      if(/welcome to (?:pacedu|pacific education)|owner of pacific education|owner'?s experience|21 years(?: of)? (?:practical )?classroom teaching experience|modern education platform created to support learners/i.test(joined)){
+        window.localStorage.removeItem(key);
+      }
+    }catch(_){}
+  }
+  function setWelcomeBlockedStatus(){
+    var status=document.getElementById("pacificEducationVoiceStatus");
+    if(status)status.textContent="Welcome narration is Page 1 only. Registration instructions remain available on this page.";
+  }
   function manualControl(el){
     if(!el)return false;
     var text=((el.getAttribute&&el.getAttribute("aria-label"))||el.textContent||el.value||"").toLowerCase();
@@ -67,6 +83,27 @@
       var original=engine.speakText;
       var wrapped=function(text){if(!permit(text))return false;return original.apply(this,arguments);};
       wrapped.__peWelcomeGuard=true;wrapped.__peOriginal=original;engine.speakText=wrapped;
+    }
+    /* Automatic welcome playback and screen-reopen recovery call speakConversation
+       directly, bypassing speakText and the exported welcome .play wrapper. Block
+       the welcome/Owner conversation itself whenever Page 1 is not the visible page.
+       Leave ordinary page-specific conversations (including Registration help) alone. */
+    engine=window.PacificEducationSpeech;
+    if(engine&&typeof engine.speakConversation==="function"&&!engine.speakConversation.__peWelcomeGuard){
+      var originalConversation=engine.speakConversation;
+      var guardedConversation=function(lines,done){
+        var combined=(Array.isArray(lines)?lines:[]).map(function(item){return String(item&&item.text||"");}).join(" ");
+        var isWelcomeConversation=/welcome to (?:pacedu|pacific education)|owner of pacific education|owner'?s experience|21 years(?: of)? (?:practical )?classroom teaching experience|modern education platform created to support learners/i.test(combined);
+        if(isWelcomeConversation&&!pageOne()){
+          clearPersistedWelcomeConversation();
+          setWelcomeBlockedStatus();
+          return false;
+        }
+        return originalConversation.apply(this,arguments);
+      };
+      guardedConversation.__peWelcomeGuard=true;
+      guardedConversation.__peOriginal=originalConversation;
+      engine.speakConversation=guardedConversation;
     }
     if(typeof window.speakText==="function"&&!window.speakText.__peWelcomeGuard){
       var originalGlobal=window.speakText;
