@@ -8,7 +8,7 @@
   if(!speech) return;
   if(speech.__compat856Installed) return;
 
-  var queue=[], active=false, selectedIndex=0, voices=[];
+  var queue=[], active=false, selectedIndex=0, voices=[], lastVoiceName="";
   var storageKey="pacificEducationVoiceResume";
   function status(message){
     var node=document.getElementById("pacificEducationVoiceStatus");
@@ -37,8 +37,20 @@
     var item=queue.shift(), synth=window.speechSynthesis;
     try{
       var english=getVoices();
-      var speakerIndex=selectedIndex % 2; // Alternate voices by dialogue order, even if speaker labels vary.
-      var voice=english.length ? english[speakerIndex % english.length] : null;
+      var voice=null;
+      // Prefer a voice different from the previous utterance. Do not rely only
+      // on speaker labels or array parity: some browsers reorder voice lists.
+      if(english.length){
+        var preferred=english[selectedIndex % english.length];
+        if(preferred && String(preferred.name||"")!==lastVoiceName) voice=preferred;
+        if(!voice && english.length>1){
+          voice=english.find(function(candidate){
+            return String(candidate.name||"")!==lastVoiceName;
+          })||null;
+        }
+        if(!voice) voice=preferred||english[0];
+        lastVoiceName=String(voice.name||"");
+      }
       selectedIndex++;
       var utterance=new window.SpeechSynthesisUtterance(item.text);
       if(voice) utterance.voice=voice;
@@ -79,7 +91,7 @@
       return false;
     }
     try{window.speechSynthesis.cancel();}catch(_){}
-    queue=lines.slice(); active=true; selectedIndex=0;
+    queue=lines.slice(); active=true; selectedIndex=0; lastVoiceName="";
     try{if(window.localStorage)window.localStorage.setItem(storageKey,JSON.stringify({lines:queue,startedAt:Date.now()}));}catch(_){}
     next();
     return true;
