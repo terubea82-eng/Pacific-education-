@@ -88,6 +88,10 @@ test("mobile touch can complete registration and select a role before Next advan
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
   });
   await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  // Keep real touch hit-testing, but remove perpetual breathing transforms from this
+  // automated interaction test: Playwright requires a stationary target before tap().
+  // The production UI animations remain unchanged for actual phone users.
+  await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
 
