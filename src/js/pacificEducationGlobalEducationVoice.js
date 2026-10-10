@@ -32,7 +32,33 @@
   GLOBAL_LINES.forEach(function(line){ Object.freeze(line); });
   Object.freeze(GLOBAL_LINES);
 
+  function isWelcomePageActive(){
+    var registration=document.getElementById("pacificEducationIdentityRegistration");
+    var welcome=document.getElementById("pacificEducationWelcome");
+    function visible(el){
+      if(!el||el.hidden)return false;
+      if(window.getComputedStyle){
+        var style=window.getComputedStyle(el);
+        if(style.display==="none"||style.visibility==="hidden")return false;
+      }
+      return typeof el.getClientRects!=="function"||el.getClientRects().length>0;
+    }
+    /* The page counter alone is not reliable during transitions. Require the
+       actual Welcome page to be visible and Registration to be hidden. */
+    if(visible(registration))return false;
+    if(!visible(welcome))return false;
+    var step=document.body&&document.body.getAttribute("data-pe-flow-step");
+    return step===null||step===""||Number(step)===0;
+  }
+
   function play(){
+    /* Guard the local playback function itself: button listeners close over this
+       function and can bypass wrappers placed around the exported .play method. */
+    if(!isWelcomePageActive()){
+      var blockedStatus=document.getElementById("pacificEducationVoiceStatus");
+      if(blockedStatus)blockedStatus.textContent="Welcome narration is available on Page 1 only. Use Hear Instructions for this page.";
+      return false;
+    }
     if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakConversation === "function"){
       return window.PacificEducationSpeech.speakConversation(GLOBAL_LINES);
     }
