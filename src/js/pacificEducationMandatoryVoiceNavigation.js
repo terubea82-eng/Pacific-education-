@@ -130,7 +130,7 @@
     var target=document.getElementById(page.id);if(target)addVoiceControl(target,page.text);
     if(announcementTimer)clearTimeout(announcementTimer);
     var delay=reason==="startup"?700:220;
-    /* Only Page 1 auto-narrates at startup. Later pages retain user-triggered Hear Instructions controls. */if(page.step===0&&reason==="startup")announcementTimer=setTimeout(function(){speak(page.text);},delay);
+    announcementTimer=setTimeout(function(){speak(page.text);},delay);
     return true;
   }
 
