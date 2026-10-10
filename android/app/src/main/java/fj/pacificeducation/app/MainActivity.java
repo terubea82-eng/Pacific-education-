@@ -46,6 +46,8 @@ public final class MainActivity extends Activity {
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
     private String pendingNativeSpeech = "";
+    private String pendingNativeConversationJson = "";
+    private boolean nativeTtsInitializationFinished = false;
     private Voice preferredVoice;
     private Voice alternateVoice;
     private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
@@ -66,7 +68,8 @@ public final class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
         textToSpeech = new TextToSpeech(this, status -> {
-            if (status == TextToSpeech.SUCCESS) {
+            nativeTtsInitializationFinished = true;
+            if (status == TextToSpeech.SUCCESS && textToSpeech != null) {
                 int languageResult = textToSpeech.setLanguage(Locale.forLanguageTag("en-AU"));
                 if (languageResult == TextToSpeech.LANG_MISSING_DATA || languageResult == TextToSpeech.LANG_NOT_SUPPORTED) languageResult = textToSpeech.setLanguage(Locale.US);
                 if (languageResult == TextToSpeech.LANG_MISSING_DATA || languageResult == TextToSpeech.LANG_NOT_SUPPORTED) languageResult = textToSpeech.setLanguage(Locale.UK);
@@ -79,7 +82,22 @@ public final class MainActivity extends Activity {
                         pendingNativeSpeech = "";
                         speakNativeNow(queued);
                     }
+                    if (!pendingNativeConversationJson.isEmpty()) {
+                        String queuedConversation = pendingNativeConversationJson;
+                        pendingNativeConversationJson = "";
+                        if (!speakConversationNative(queuedConversation)) {
+                            notifyWebVoiceStatus("AI Playback could not start: Android text-to-speech rejected the conversation. Check the phone's Text-to-speech engine and English voice data, then tap Hear Welcome.");
+                        }
+                    }
+                } else {
+                    pendingNativeConversationJson = "";
+                    pendingNativeSpeech = "";
+                    notifyWebVoiceStatus("AI Playback unavailable: this phone has no supported English text-to-speech voice configured.");
                 }
+            } else {
+                pendingNativeConversationJson = "";
+                pendingNativeSpeech = "";
+                notifyWebVoiceStatus("AI Playback unavailable: Android could not initialize its text-to-speech engine.");
             }
         });
         showNativeHome();
@@ -263,7 +281,24 @@ public final class MainActivity extends Activity {
 
         @JavascriptInterface
         public boolean speakConversation(String json) {
-            return speakConversationNative(json);
+            if (json == null || json.trim().isEmpty()) return false;
+            if (ttsReady && textToSpeech != null) return speakConversationNative(json);
+            if (nativeTtsInitializationFinished || textToSpeech == null) {
+                notifyWebVoiceStatus("AI Playback unavailable: Android text-to-speech is not ready. Check the phone's Text-to-speech engine and English voice data.");
+                return false;
+            }
+            // A user may tap AI Playback before Android finishes initializing TTS.
+            // Queue the whole conversation instead of falling back to a browser engine
+            // that may be blocked by WebView audio policies.
+            pendingNativeConversationJson = json;
+            notifyWebVoiceStatus("AI Playback: preparing the Android voice engine…");
+            welcomeHandler.postDelayed(() -> {
+                if (!pendingNativeConversationJson.isEmpty() && !ttsReady) {
+                    pendingNativeConversationJson = "";
+                    notifyWebVoiceStatus("AI Playback timed out while preparing Android voice. Check the phone's Text-to-speech engine and English voice data, then tap Hear Welcome.");
+                }
+            }, 12000L);
+            return true;
         }
 
         @JavascriptInterface
