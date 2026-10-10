@@ -184,7 +184,7 @@
   var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
   var SESSION_KEYS = ["pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
   var LOCAL_SESSION_KEYS = ["pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationCurriculumCountryCode","pacificEducationCurriculumCountry"];
-  var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
+  var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1};
   var movedTargets = [];
 
   function speak(text){
@@ -260,8 +260,9 @@
   function build(role){
     var app=document.getElementById("app");
     if(!app) return;
+    document.body.classList.add("pe-sequential-role-active");
     var sequence=getRoleSequence(role);
-    if(!sequence || !sequence.length) return;
+    if(!sequence || !sequence.length){document.body.classList.remove("pe-sequential-role-active");return;}
 
     var old=document.getElementById("pacificEducationSequentialRoleWorkspace");
     if(old) old.remove();
@@ -470,6 +471,7 @@
       LOCAL_SESSION_KEYS.forEach(function(key){try{localStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
+      document.body.classList.remove("pe-sequential-role-active");
       shell.remove();
       Array.prototype.forEach.call(app.children,function(el){
         if(el.getAttribute("data-pe-sequential-hidden")==="true"){

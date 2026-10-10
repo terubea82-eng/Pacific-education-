@@ -277,6 +277,43 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducat
   display: none !important;
 }
 
+/* Clean guided-flow guard: hide global menus and unrelated notices while one role page is active. */
+body.pe-sequential-role-active > #pacificEducationMailbox,
+body.pe-sequential-role-active > #pacificEducationAppMenu,
+body.pe-sequential-role-active > #pilotBanner,
+body.pe-sequential-role-active > #pacificEducationRefreshNotice,
+body.pe-sequential-role-active > header,
+body.pe-sequential-role-active #pacificEducationAppMenu,
+body.pe-sequential-role-active #pacificEducationWorkspaceLiveStatus,
+body.pe-sequential-role-active #pacificEducationAppTools,
+body.pe-sequential-role-active #systemStatus,
+body.pe-sequential-role-active #publicationStatus,
+body.pe-sequential-role-active #pacificEducationWebsitePilotChecklist,
+body.pe-sequential-role-active #pacificEducationExternalReviewerPortal,
+body.pe-sequential-role-active #pacificEducationOfflineSyncStatus,
+body.pe-sequential-role-active #pacificEducationTechnicianWorkspace,
+body.pe-sequential-role-active #pacificEducationTechnicianActivation { display:none !important; }
+body.pe-sequential-role-active #pacificEducationSequentialRoleWorkspace { display:block !important; }
+/* When the guided chain is active, show the current step rather than every pilot feature. */
+body.pe-guided-flow.pe-pilot-all-features main > * { display:none !important; }
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="1"] #pacificEducationIdentityRegistration,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="2"] #prototypeAccess,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="3"] #levelSelection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="4"] #subjectSelection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="5"] #termSelection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="6"] #capabilitySelection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="7"] #dailyLesson,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="8"] #dailyLessonPracticeStage,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #assessments,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #teacherCalendarSection,
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal { display:block !important; }
+body.pe-guided-flow > #pacificEducationMailbox,
+body.pe-guided-flow > #pacificEducationAppMenu,
+body.pe-guided-flow > #pilotBanner,
+body.pe-guided-flow > #pacificEducationRefreshNotice,
+body.pe-guided-flow > header { display:none !important; }
+
 </style>
 <script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script><style id="pacedu-clean-role-aware-screens">
 /* Pacedu clean guided screens — role workspaces reveal only their active target. */
@@ -746,9 +783,10 @@ git status</pre>
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRegistration);else initRegistration();
 })();
-</script><script src="./js/pacificEducationCountryConfig.js?v=20261006-country-config"></script><script src="./js/pacificEducationRegistrationContext.js?v=20261006-country-language"></script>
+</script><script src="./js/pacificEducationCountryConfig.js?v=20261006-country-config"></script><script src="./js/pacificEducationRegistrationContext.js?v=20261010-language-restore-f9af5154"></script>
 <script src="./js/pacificEducationDeafLearnerRegistration.js?v=20261006-deaf"></script>
-<script src="js/pacificEducationPilotUserWorkspaces.js?v=20261005-registration-activity-repair"></script><script src="js/pacificEducationStudentCoverageContext.js?v=20261002"></script><script src="js/pacificEducationTeacherCalendar.js?v=20261002"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=20261002"></script><script src="../js/pacificEducationPilotIntegrityGuard.js?v=20261002"></script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=20261005-voice5"></script><script src="js/pacificEducationWelcomePriorityGuard.js?v=20261009-welcome-first"></script><script src="js/pacificEducationUniversalButtonVoice.js?v=20261009-speech-runtime-test"></script><script src="js/pacificEducationAccessibilityRuntime.js?v=20261002"></script><script src="js/pacificEducationMandatoryVoiceNavigation.js?v=20261005-userbox-nextvoice"></script><script src="js/pacificEducationPWAInstall.js?v=20261001"></script><script src="js/pacificEducationConnectivity.js?v=20261003"></script><script src="js/pacificEducationVoiceNextDirective.js?v=1001"></script>
+<script src="js/pacificEducationPilotUserWorkspaces.js?v=20261005-registration-activity-repair"></script><script src="js/pacificEducationStudentCoverageContext.js?v=20261002"></script><script src="js/pacificEducationTeacherCalendar.js?v=20261002"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=20261002"></script><script src="../js/pacificEducationPilotIntegrityGuard.js?v=20261002"></script><script src="../js/pacificEducationCore.js"></script><script src="js/pacificEducationSpeechVoice.js?v=20261005-voice5"></script>
+<script src="./js/pacificEducationWelcomePlaybackBridge.js?v=20261010-ai-playback-bridge-a6025219"></script><script src="js/pacificEducationWelcomePriorityGuard.js?v=20261009-welcome-first"></script><script src="js/pacificEducationUniversalButtonVoice.js?v=20261009-speech-runtime-test"></script><script src="js/pacificEducationAccessibilityRuntime.js?v=20261002"></script><script src="js/pacificEducationMandatoryVoiceNavigation.js?v=20261005-userbox-nextvoice"></script><script src="js/pacificEducationPWAInstall.js?v=20261001"></script><script src="js/pacificEducationConnectivity.js?v=20261003"></script><script src="js/pacificEducationVoiceNextDirective.js?v=1001"></script>
 <script>
 (function(){
   function activatePilotBoxes(){
