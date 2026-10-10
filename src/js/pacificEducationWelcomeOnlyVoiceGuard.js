@@ -8,11 +8,24 @@
   if(window.__pacEduWelcomeOnlyGuardInstalled)return;
   window.__pacEduWelcomeOnlyGuardInstalled=true;
   var manualUntil=0, welcomeAutoUsed=false, lastAutoText="", lastAutoAt=0;
+  function visible(el){
+    if(!el||el.hidden)return false;
+    if(window.getComputedStyle){
+      var style=window.getComputedStyle(el);
+      if(style.display==="none"||style.visibility==="hidden")return false;
+    }
+    return typeof el.getClientRects!=="function"||el.getClientRects().length>0;
+  }
   function pageOne(){
+    /* Use the rendered page as well as the counter. The flow counter can be stale
+       during page transitions; a visible Registration page must always win. */
+    var registration=document.getElementById("pacificEducationIdentityRegistration");
+    if(visible(registration))return false;
+    var welcome=document.getElementById("pacificEducationWelcome");
+    if(!visible(welcome))return false;
     var step=document.body&&document.body.getAttribute("data-pe-flow-step");
     if(step!==null&&step!=="")return Number(step)===0;
-    var welcome=document.getElementById("pacificEducationWelcome");
-    return !!(welcome&&!welcome.hidden&&(!window.getComputedStyle||window.getComputedStyle(welcome).display!=="none"));
+    return true;
   }
   function manualControl(el){
     if(!el)return false;
