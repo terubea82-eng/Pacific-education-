@@ -140,6 +140,35 @@ function hideOtherGuidedPages(targetId){
   });
 }
 
+/* Defeat legacy !important rules that expose every pilot feature at once. */
+function isolateCurrentPage(targetId){
+  var target=el(targetId);
+  if(!target) return false;
+  var root=document.querySelector("main")||el("app")||document.body;
+  if(!root || !root.contains(target)) root=el("app")||document.body;
+  var activeWrapper=NEXT_WRAPPERS[targetId]||"";
+  var current=target;
+  while(current && current!==root){
+    var parent=current.parentElement;
+    if(!parent) break;
+    Array.prototype.slice.call(parent.children).forEach(function(sibling){
+      if(sibling===current || sibling.tagName==="SCRIPT" || sibling.tagName==="STYLE") return;
+      if(sibling.id==="pacificEducationAccessibilityControls" ||
+         sibling.id==="pacificEducationVoiceStatus" ||
+         sibling.id==="pacificEducationInteractionStatus" ||
+         (activeWrapper && sibling.id===activeWrapper)) return;
+      sibling.hidden=true;
+      sibling.setAttribute("aria-hidden","true");
+      try{ sibling.style.setProperty("display","none","important"); }catch(e){}
+    });
+    current.hidden=false;
+    current.removeAttribute("aria-hidden");
+    try{ current.style.setProperty("display","block","important"); }catch(e){}
+    current=parent;
+  }
+  return true;
+}
+
 function updateUserBoxDirection(targetId){
   try{
     document.querySelectorAll(".pe-user-box").forEach(function(box){
@@ -220,17 +249,18 @@ function revealTarget(targetId){
 
   target.hidden=false;
   target.removeAttribute("aria-hidden");
-  try{ target.style.removeProperty("display"); }catch(e){}
+  try{ target.style.setProperty("display","block","important"); }catch(e){}
 
   var parent=target.parentElement;
   while(parent && parent.id!=="app"){
     parent.hidden=false;
+    parent.removeAttribute("aria-hidden");
+    try{ parent.style.setProperty("display","block","important"); }catch(e){}
     parent=parent.parentElement;
   }
 
-  try{ target.scrollIntoView({behavior:"smooth",block:"start"}); }
-  catch(e){ try{ target.scrollIntoView(); }catch(ignore){} }
-
+  /* Swap pages without smooth-scrolling through unrelated information. */
+  isolateCurrentPage(targetId);
   refreshFeatureForTarget(targetId);
   return true;
 }
@@ -329,7 +359,9 @@ function gateway(page){
   }else{
     setStatus("Rules & Conditions active. Agree to continue to Registration.");
   }
-  syncNextWrapper(page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules");
+  var activePageId=page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules";
+  syncNextWrapper(activePageId);
+  isolateCurrentPage(activePageId);
   return true;
 }
 
