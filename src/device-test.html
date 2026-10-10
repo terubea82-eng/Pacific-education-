@@ -101,8 +101,10 @@
     state.tested=true;state.humanHeard=null;state.speech={lifecycleEvents:[]};
     if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakConversation==="function"){
       var engine=typeof window.PacificEducationSpeech.getEngine==="function"?window.PacificEducationSpeech.getEngine():"Pacedu speech engine";
+      window.__pacificEducationSpeakerTestAttempt=(window.__pacificEducationSpeakerTestAttempt||0)+1;
+      var testAttempt=window.__pacificEducationSpeakerTestAttempt;
       var lines=[
-        {speaker:"1",text:"Pacific Education speaker test."},
+        {speaker:"1",text:"Pacific Education speaker test, attempt "+testAttempt+"."},
         {speaker:"2",text:"If you can hear this sentence, sound is working on this device."}
       ];
       state.speech={result:"request-sent",engine:engine,mode:"Pacedu protected speech engine",voicesAvailable:window.speechSynthesis&&window.speechSynthesis.getVoices?window.speechSynthesis.getVoices().length:null};
