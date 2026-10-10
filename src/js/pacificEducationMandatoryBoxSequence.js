@@ -69,6 +69,32 @@
       return cards.length>0;
     }
 
+    /* Make role-card taps self-sufficient on mobile browsers. The normal registration
+       script still owns its status/voice behaviour; this synchronous capture handler
+       guarantees the selected value and visible fields are set before Next is re-evaluated. */
+    function activateRoleCard(card){
+      if(!card) return;
+      var value=card.getAttribute("data-role")||"";
+      if(!value) return;
+      var cards=document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card");
+      cards.forEach(function(item){
+        item.setAttribute("aria-pressed",String(item===card));
+        item.disabled=false;
+        item.style.pointerEvents="auto";
+        item.style.touchAction="manipulation";
+        item.style.position="relative";
+        item.style.zIndex="2";
+      });
+      var role=get("pilotRegistrationRole");
+      if(role) role.value=value;
+      var fields=get("pilotRoleRegistrationFields");
+      if(fields) fields.hidden=false;
+      var selected=get("pilotSelectedRole");
+      if(selected) selected.textContent="Selected role: "+value;
+      var status=get("pilotRegistrationStatus");
+      if(status) status.textContent=value+" selected. Complete your name, then press Next to save registration.";
+    }
+
     function validName(){
       var input=get("pilotRegistrationName");
       return !!(input && String(input.value||"").trim());
@@ -174,9 +200,21 @@
     document.addEventListener("click",function(event){
       var card=event.target && event.target.closest ? event.target.closest("#pilotUserRoleCards .pe-user-role-card") : null;
       if(card){
-        setTimeout(update,0);
+        activateRoleCard(card);
+        /* Let the existing registration listener finish, then refresh Next eligibility. */
+        window.setTimeout(update,0);
       }
     },true);
+
+    /* Touch browsers dispatch click after a tap; explicitly remove any stale disabled
+       state and keep cards hit-testable whenever the role picker is revealed. */
+    document.addEventListener("touchend",function(event){
+      var card=event.target && event.target.closest ? event.target.closest("#pilotUserRoleCards .pe-user-role-card") : null;
+      if(card && !card.disabled){
+        card.style.pointerEvents="auto";
+        card.style.touchAction="manipulation";
+      }
+    },{capture:true,passive:true});
 
     /* Registration save is intentionally not allowed to open a role workspace here.
        SingleNavigation remains the only guided-flow owner. */
