@@ -341,6 +341,11 @@ function guided(step,targetId){
     /* Run after click handlers and their queued repairs; never change the protected voice engine. */
     window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
     window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
+    /* Legacy registration helpers may restore their old display state after the save callback. */
+    if(targetId==="prototypeAccess"){
+      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },500);
+      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },1000);
+    }
   }
   return ok;
 }
