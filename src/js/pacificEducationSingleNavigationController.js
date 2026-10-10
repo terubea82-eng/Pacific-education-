@@ -300,6 +300,34 @@ function renderPageGuide(targetId){
   guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
 }
 
+function enforceSingleVisiblePage(targetId, expectedStep){
+  /* Re-assert the one-page contract after legacy registration handlers finish.
+     Some older handlers can restore display styles after the navigation click. */
+  if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)) return;
+  document.body.classList.remove("pacedu-entry-mode");
+  if(targetId!=="pacificEducationIdentityRegistration"){
+    document.body.classList.remove("pacedu-registration-mode");
+  }
+  GUIDED_PAGES.forEach(function(pageId){
+    var page=el(pageId);
+    if(!page) return;
+    var active=pageId===targetId;
+    page.hidden=!active;
+    if(active) page.removeAttribute("aria-hidden");
+    else page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display",active?"block":"none","important"); }catch(e){}
+  });
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var page=el(pageId);
+    if(!page) return;
+    var active=pageId===targetId;
+    page.hidden=!active;
+    if(active) page.removeAttribute("aria-hidden");
+    else page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display",active?"block":"none","important"); }catch(e){}
+  });
+}
+
 function guided(step,targetId){
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
@@ -307,7 +335,13 @@ function guided(step,targetId){
   document.body.setAttribute("data-pe-navigation-owner","single");
 
   var ok=revealTarget(targetId);
-  if(ok){ renderPageGuide(targetId); setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue."); }
+  if(ok){
+    renderPageGuide(targetId);
+    setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue.");
+    /* Run after click handlers and their queued repairs; never change the protected voice engine. */
+    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
+    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
+  }
   return ok;
 }
 
