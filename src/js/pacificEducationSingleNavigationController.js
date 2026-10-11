@@ -290,7 +290,7 @@ function renderPageGuide(targetId){
     var detail=document.createElement("p");
     detail.className="pacedu-page-sequence-detail";
     detail.style.cssText="margin:5px 0 0";
-    detail.textContent="Complete the blue-highlighted entry boxes on this page, then use the green Next button. Only the current page should be shown.";
+    detail.textContent=targetId==="pacificEducationWelcome"?"Review this welcome and introduction, then use the green Next button. Only the current page should be shown.":"Complete the blue-highlighted entry boxes on this page, then use the green Next button. Only the current page should be shown.";
     guide.appendChild(number);
     guide.appendChild(detail);
     target.insertBefore(guide,target.firstChild);
