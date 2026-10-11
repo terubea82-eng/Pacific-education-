@@ -52,21 +52,53 @@
     p.textContent=text;
     p.style.display="block";
   }
+  function effectivePageRoot(){
+    var body=document.body;
+    if(!body) return null;
+    /* The old guide searched the whole document, including hidden pages and
+       app-wide controls. This caused counts such as "Step 186 of 299" on Registration. */
+    var activeId=body.getAttribute("data-pe-active-guided-page");
+    var step=body.getAttribute("data-pe-flow-step");
+    var page=activeId ? document.getElementById(activeId) : null;
+    if(page && visible(page)) return page;
+    if(body.classList.contains("pe-guided-flow") && step==="3"){
+      page=document.getElementById("pacificEducationIdentityRegistration");
+      if(page && visible(page)) return page;
+    }
+    if(body.classList.contains("pacedu-registration-mode")){
+      page=document.getElementById("pacificEducationIdentityRegistration");
+      if(page && visible(page)) return page;
+    }
+    return body;
+  }
+  function actuallyVisible(el,root){
+    for(var node=el;node;node=node.parentElement){
+      if(node.hidden || node.getAttribute("aria-hidden")==="true") return false;
+      var style=window.getComputedStyle ? window.getComputedStyle(node) : null;
+      if(style && (style.display==="none" || style.visibility==="hidden")) return false;
+      if(node===root) break;
+    }
+    try{ if(typeof el.getClientRects==="function" && el.getClientRects().length===0) return false; }catch(_){}
+    return true;
+  }
   function candidates(){
-    var root=document.body;
+    var root=effectivePageRoot();
     if(!root) return [];
     var selectors=[
       "input:not([type='hidden']):not([disabled])",
       "select:not([disabled])",
       "textarea:not([disabled])",
-      "button:not([disabled]):not([data-pe-top-right-voice-controls] button)",
+      "button:not([disabled])",
       "[role='button']:not([aria-disabled='true'])",
       "[role='option']:not([aria-disabled='true'])"
     ];
     var all=[];
     selectors.forEach(function(sel){Array.prototype.forEach.call(root.querySelectorAll(sel),function(el){
-      if(!visible(el)) return;
+      if(!actuallyVisible(el,root)) return;
       if(el.closest("[data-pe-top-right-voice-controls]")) return;
+      if(el.closest("#pacificEducationStepGuide")) return;
+      if(el.closest("#pacificEducationAccessibilityControls")) return;
+      if(el.classList.contains("pe-audio-command") || el.closest(".pe-audio-command")) return;
       if(el.getAttribute("data-pe-step-guide-ignore")==="true") return;
       if(all.indexOf(el)<0) all.push(el);
     });});
