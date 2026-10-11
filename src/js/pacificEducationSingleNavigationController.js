@@ -46,7 +46,32 @@ var BACK = {
   teacherCalendarSection: [13, "coverage"]
 };
 
-var bound = {};
+/* Final runtime visibility authority: override legacy CSS step maps that conflict with this controller. */
+function installSinglePageVisibilityStyles(){
+  if(document.getElementById("pacedu-single-page-visibility-authority")) return;
+  var style=document.createElement("style");
+  style.id="pacedu-single-page-visibility-authority";
+  style.textContent = [
+    "body.pe-guided-flow.pe-pilot-all-features main > *{display:none !important;visibility:hidden !important;}",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='1'] #pacificEducationIdentityRegistration,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='2'] #prototypeAccess,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='3'] #levelSelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='4'] #subjectSelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='5'] #termSelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='6'] #capabilitySelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='7'] #dailyLesson,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='8'] #dailyLessonPracticeStage,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='9'] #assessments,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #pacificEducationCoverageDashboard,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection{display:block !important;visibility:visible !important;}",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #pacificEducationCoverageDashboard *,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection *{visibility:visible;}",
+    "body.pe-guided-flow #pacificEducationExternalReviewerPortal{display:none !important;visibility:hidden !important;}",
+    "body.pe-guided-flow > #pacificEducationMailbox,body.pe-guided-flow > #pacificEducationAppMenu,body.pe-guided-flow > #pilotBanner,body.pe-guided-flow > #pacificEducationRefreshNotice,body.pe-guided-flow > header{display:none !important;visibility:hidden !important;}"
+  ].join("\\n");
+  (document.head||document.documentElement).appendChild(style);
+}
+\nvar bound = {};
 var backBound = {};
 var GUIDED_PAGES = [
   "paceduPageVision",
