@@ -124,15 +124,19 @@ public final class MainActivity extends Activity {
                         || name.contains("james") || name.contains("john") || name.contains("tom")
                         || name.contains("aaron") || name.contains("arthur") || name.contains("oliver")) {
                     maleFallback = voice;
-                    if (name.contains("male") || name.contains("david") || name.contains("mark")
-                            || name.contains("ryan") || name.contains("guy")) {
-                        textToSpeech.setVoice(voice);
-                        return;
-                    }
+                    // Select the voice after scanning all available voices so both
+                    // preferredVoice and alternateVoice are initialised consistently.
+                    // Returning here previously left the conversation pair unset.
                 }
             }
             preferredVoice = maleFallback != null ? maleFallback : fallback;
-            alternateVoice = secondEnglishVoice != null ? secondEnglishVoice : preferredVoice;
+            if (secondEnglishVoice != null && secondEnglishVoice != preferredVoice) {
+                alternateVoice = secondEnglishVoice;
+            } else if (fallback != null && fallback != preferredVoice) {
+                alternateVoice = fallback;
+            } else {
+                alternateVoice = preferredVoice;
+            }
             if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
         } catch (Exception ignored) {
         }
