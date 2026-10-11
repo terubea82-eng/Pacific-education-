@@ -17,6 +17,11 @@
     return typeof el.getClientRects!=="function"||el.getClientRects().length>0;
   }
   function pageOne(){
+    /* A direct Registration entry must never trigger the first-page welcome while
+       the guided controller is still settling visibility on initial load. */
+    try{
+      if((new URLSearchParams(window.location.search)).get("entry")==="registration")return false;
+    }catch(_){}
     /* Use the rendered page as well as the counter. The flow counter can be stale
        during page transitions; a visible Registration page must always win. */
     var registration=document.getElementById("pacificEducationIdentityRegistration");
