@@ -251,7 +251,12 @@ public final class MainActivity extends Activity {
                     if (next < lines.length()) {
                         nativeConversationIndex = next;
                         saveNativeConversationResume();
-                        runOnUiThread(() -> speakConversationLine(lines, next));
+                        runOnUiThread(() -> {
+                            if (!speakConversationLine(lines, next)) {
+                                clearNativeConversationResume();
+                                notifyWebVoiceStatus("AI Playback stopped: Android Text-to-speech rejected a conversation line. Check the installed voice data and retry.");
+                            }
+                        });
                     } else {
                         clearNativeConversationResume();
                         notifyWebVoiceStatus("AI Playback conversation complete.");
@@ -266,19 +271,23 @@ public final class MainActivity extends Activity {
             });
             nativeConversationIndex = index[0];
             saveNativeConversationResume();
-            speakConversationLine(lines, index[0]);
+            if (!speakConversationLine(lines, index[0])) {
+                clearNativeConversationResume();
+                notifyWebVoiceStatus("AI Playback failed: Android Text-to-speech rejected the first utterance. Check the selected TTS engine and installed English voice data, then retry.");
+                return false;
+            }
             return true;
         } catch (Exception error) {
             return false;
         }
     }
 
-    private void speakConversationLine(JSONArray lines, int index) {
-        if (!ttsReady || textToSpeech == null || index < 0 || index >= lines.length()) return;
+    private boolean speakConversationLine(JSONArray lines, int index) {
+        if (!ttsReady || textToSpeech == null || index < 0 || index >= lines.length()) return false;
         try {
             JSONObject line = lines.getJSONObject(index);
             String fullText = line.optString("text", "").trim();
-            if (fullText.isEmpty()) { speakConversationLine(lines, index + 1); return; }
+            if (fullText.isEmpty()) return speakConversationLine(lines, index + 1);
             int offset = (index == nativeConversationIndex) ? Math.min(nativeConversationOffset, fullText.length()) : 0;
             String text = offset > 0 ? fullText.substring(offset) : fullText;
             nativeConversationIndex = index;
@@ -288,11 +297,15 @@ public final class MainActivity extends Activity {
             Voice voice = speaker % 2 == 0 ? preferredVoice : alternateVoice;
             if (voice != null) textToSpeech.setVoice(voice);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education-conversation-" + index);
+                int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education-conversation-" + index);
+                return result == TextToSpeech.SUCCESS;
             } else {
                 @SuppressWarnings("deprecation") int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                return result == TextToSpeech.SUCCESS;
             }
-        } catch (Exception ignored) { }
+        } catch (Exception error) {
+            return false;
+        }
     }
 
     private final class NativeSpeechBridge {
