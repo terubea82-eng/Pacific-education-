@@ -103,14 +103,26 @@
     if(engine&&typeof engine.speakConversation==="function"&&!engine.speakConversation.__peWelcomeGuard){
       var originalConversation=engine.speakConversation;
       var guardedConversation=function(lines,done){
-        var combined=(Array.isArray(lines)?lines:[]).map(function(item){return String(item&&item.text||"");}).join(" ");
+        /* The legacy Registration prompt can be delivered as conversation lines,
+           not only as speakText(). Sanitize each line before it reaches the TTS
+           engine so the welcome phrase is never spoken on Registration. */
+        var safeLines=Array.isArray(lines)?lines.map(function(item){
+          if(!item||typeof item!=="object")return item;
+          var copy={};
+          Object.keys(item).forEach(function(key){copy[key]=item[key];});
+          if(typeof copy.text==="string")copy.text=sanitizeRegistrationText(copy.text);
+          return copy;
+        }):lines;
+        var combined=(Array.isArray(safeLines)?safeLines:[]).map(function(item){return String(item&&item.text||"");}).join(" ");
         var isWelcomeConversation=/welcome to (?:pacedu|pacific education)|owner of pacific education|owner'?s experience|21 years(?: of)? (?:practical )?classroom teaching experience|modern education platform created to support learners/i.test(combined);
         if(isWelcomeConversation&&!pageOne()){
           clearPersistedWelcomeConversation();
           setWelcomeBlockedStatus();
           return false;
         }
-        return originalConversation.apply(this,arguments);
+        var args=Array.prototype.slice.call(arguments);
+        args[0]=safeLines;
+        return originalConversation.apply(this,args);
       };
       guardedConversation.__peWelcomeGuard=true;
       guardedConversation.__peOriginal=originalConversation;
