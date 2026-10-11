@@ -162,10 +162,6 @@
         audio.textContent = "🔊 Listen to curriculum question";
         audio.addEventListener("click", function() {
             if (typeof window.speakText === "function") window.speakText(String(audioText));
-            else if (window.speechSynthesis) {
-                window.speechSynthesis.cancel();
-                window.speechSynthesis.speak(new SpeechSynthesisUtterance(String(audioText)));
-            }
         });
         box.appendChild(audio);
 
@@ -305,10 +301,11 @@ function attachTextAudioControls(targetId, text) {
         listen.setAttribute("data-pacific-action", "listen-activity");
         listen.addEventListener("click",function(){
             if(typeof window.speakText==="function"){window.speakText(String(text||""));return;}
-            if(window.speechSynthesis){window.speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(String(text||""));window.speechSynthesis.speak(u);}
+            var status=box.querySelector("[data-pacific-lesson-voice-status]");
+            if(status)status.textContent="Pacedu voice engine is unavailable. Use the shared Hear Instructions control when available.";
         });
         var stop=document.createElement("button"); stop.type="button"; stop.textContent="⏹ Stop audio";
-        stop.setAttribute("data-pacific-action", "stop-audio"); stop.addEventListener("click",function(){if(window.speechSynthesis)window.speechSynthesis.cancel();});
+        stop.setAttribute("data-pacific-action", "stop-audio"); stop.addEventListener("click",function(){if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();else if(window.speechSynthesis)window.speechSynthesis.cancel();});
         box.appendChild(listen); box.appendChild(stop); target.parentNode.appendChild(box);
     }
 
