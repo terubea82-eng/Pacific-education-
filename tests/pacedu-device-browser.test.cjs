@@ -345,7 +345,7 @@ test("sequential Parent workspace advances one page at a time through confirmed 
     // The page-isolation controller may put its state on either the document
     // root or body. Clear both so its CSS cannot hide the focused controller test.
     [document.documentElement, document.body].forEach(root => {
-      root.classList.remove("pe-guided-flow");
+      root.classList.remove("pe-guided-flow", "pe-pilot-all-features");
       root.removeAttribute("data-pe-active-guided-page");
       root.removeAttribute("data-pe-flow-step");
     });
