@@ -78,3 +78,11 @@ test("single-page visibility reveals nested targets without exposing sibling bra
   assert.match(controller, /isolateTargetPath\(target\)/);
   assert.match(controller, /main > \*\{display:none !important;visibility:hidden !important;\}/);
 });
+test("additive welcome guard removes welcome-introduction wording from registration narration without editing protected voice", () => {
+  const guard = fs.readFileSync("src/js/pacificEducationWelcomePriorityGuard.js", "utf8");
+  const protectedVoice = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
+  assert.match(guard, /function repairRegistrationNarration\(\)/);
+  assert.match(guard, /User Registration is now open/);
+  assert.doesNotMatch(guard, /Welcome to User Registration/);
+  assert.match(protectedVoice, /Welcome to User Registration/);
+});
