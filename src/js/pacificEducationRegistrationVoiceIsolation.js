@@ -29,6 +29,36 @@
     return visible(document.getElementById("pacificEducationIdentityRegistration"));
   }
 
+  function isolateWelcomeControls(registration){
+    ["pacificEducationWelcomeVoiceButton","pacificEducationAIPlaybackButton"].forEach(function(id){
+      var control=document.getElementById(id);
+      if(!control)return;
+      if(registration){
+        if(control.getAttribute("data-pe-welcome-control-isolated")!=="true"){
+          control.setAttribute("data-pe-welcome-control-isolated","true");
+          control.setAttribute("data-pe-welcome-original-hidden",String(!!control.hidden));
+          control.setAttribute("data-pe-welcome-original-disabled",String(!!control.disabled));
+          control.setAttribute("data-pe-welcome-original-display",control.style.getPropertyValue("display"));
+          control.setAttribute("data-pe-welcome-original-display-priority",control.style.getPropertyPriority("display"));
+        }
+        control.hidden=true;
+        control.disabled=true;
+        control.setAttribute("aria-hidden","true");
+        control.setAttribute("tabindex","-1");
+        control.style.setProperty("display","none","important");
+      }else if(control.getAttribute("data-pe-welcome-control-isolated")==="true"){
+        control.hidden=control.getAttribute("data-pe-welcome-original-hidden")==="true";
+        control.disabled=control.getAttribute("data-pe-welcome-original-disabled")==="true";
+        control.removeAttribute("aria-hidden");
+        control.removeAttribute("tabindex");
+        var oldDisplay=control.getAttribute("data-pe-welcome-original-display")||"";
+        var oldPriority=control.getAttribute("data-pe-welcome-original-display-priority")||"";
+        if(oldDisplay)control.style.setProperty("display",oldDisplay,oldPriority);else control.style.removeProperty("display");
+        ["data-pe-welcome-control-isolated","data-pe-welcome-original-hidden","data-pe-welcome-original-disabled","data-pe-welcome-original-display","data-pe-welcome-original-display-priority"].forEach(function(name){control.removeAttribute(name);});
+      }
+    });
+  }
+
   function isWelcomeIntro(text){
     return /welcome to (?:pacedu|pacific education)|modern education platform created to support learners|owner'?s experience|owner of pacific education|21 years(?: of)? (?:practical )?classroom teaching experience|why was pacific education built|learn, discover, practise, and grow together|education should not stop when/i.test(String(text||""));
   }
@@ -109,6 +139,7 @@
   function enforce(){
     wrapEngine();
     var registration=isRegistration();
+    isolateWelcomeControls(registration);
     if(registration && lastRegistrationState!==true)stopCurrentSpeech();
     lastRegistrationState=registration;
   }
