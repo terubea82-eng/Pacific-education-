@@ -213,6 +213,24 @@
         try{
           registered=window.sessionStorage.getItem("pacificEducationPilotRegistered")==="true" ||
             !!window.sessionStorage.getItem("pacificEducationPilotRegistration");
+          /* Some legacy registration handlers replace the save callback after this
+             sequence initializes. If the normal Save click did not persist, safely
+             complete only the synthetic pilot record from the already validated
+             display name and selected role. Never create a production identity. */
+          if(!registered){
+            var nameField=get("pilotRegistrationName");
+            var roleField=get("pilotRegistrationRole");
+            var countryField=get("pacificEducationCountrySelect");
+            var languageField=get("pacificEducationLanguageSelect");
+            var displayName=String(nameField&&nameField.value||"").trim();
+            var roleValue=String(roleField&&roleField.value||selectedRole()||"").trim();
+            if(displayName && roleValue && countryField&&countryField.value && languageField&&languageField.value){
+              var pilotRecord={name:displayName,role:roleValue,registeredAt:(new Date()).toISOString(),pilotOnly:true};
+              window.sessionStorage.setItem("pacificEducationPilotRegistration",JSON.stringify(pilotRecord));
+              window.sessionStorage.setItem("pacificEducationPilotRole",roleValue);
+              registered=true;
+            }
+          }
         }catch(e){}
         if(!registered){
           progress.textContent="Registration has not been confirmed. Check the required fields and try Save Registration again.";
@@ -222,6 +240,8 @@
         progress.textContent="Registration confirmed. Opening the next guided page.";
         if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
           window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
+        }else{
+          progress.textContent="Registration is saved, but the guided navigation controller is not ready. Reload the pilot page and try again.";
         }
       },500);
     }
