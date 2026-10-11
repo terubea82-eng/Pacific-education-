@@ -183,6 +183,16 @@
         (state===2 && !selectedRole()) ||
         (state===3 && !validName());
 
+      /* Some legacy interaction-repair scripts can leave the Save button disabled
+         even after the role and display name are complete. This sequence is the
+         owner of this pilot-only form: enable Save only on step 4 when both required
+         fields are present. Keep it disabled at every earlier step. */
+      var saveButton=get("pilotRegistrationSaveButton");
+      if(saveButton){
+        saveButton.disabled=!(state===3 && selectedRole() && validName());
+        saveButton.setAttribute("aria-disabled",String(saveButton.disabled));
+      }
+
       speak("Registration step "+(state+1)+" of 4. "+item.label+". Complete this box, then press Next.");
     }
 
