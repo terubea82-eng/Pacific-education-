@@ -9,7 +9,7 @@
 
   var STEP_PAGES = [
     {step:0,id:"pacificEducationWelcome",label:"Welcome",text:"Welcome to Pacific Education. We are pleased to welcome you. Pacific Education helps learners learn, discover, practise and grow. Press Next to continue."},
-    {step:1,id:"pacificEducationIdentityRegistration",label:"Registration",text:"Welcome to User Registration. Please complete each required box carefully. Enter your information one box at a time. When all required information is complete, review it and select Next to continue."},
+    {step:1,id:"pacificEducationIdentityRegistration",label:"User Registration",text:"User Registration instructions. Complete each required box carefully, one box at a time. Review your entries, then select Next to continue."},
     {step:2,id:"prototypeAccess",label:"Pilot Access",text:"Welcome to Pacific Education pilot access. Please review the pilot information and instructions. When you are ready to continue, select Next."},
     {step:3,id:"levelSelection",label:"Learning Level",text:"Welcome to Learning Level. Please choose the class or form that matches your current learning programme. Review your selection, then select Next to choose your subject."},
     {step:4,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
