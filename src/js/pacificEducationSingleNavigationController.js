@@ -68,7 +68,7 @@ function installSinglePageVisibilityStyles(){
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection *{visibility:visible;}",
     "body.pe-guided-flow #pacificEducationExternalReviewerPortal{display:none !important;visibility:hidden !important;}",
     "body.pe-guided-flow > #pacificEducationMailbox,body.pe-guided-flow > #pacificEducationAppMenu,body.pe-guided-flow > #pilotBanner,body.pe-guided-flow > #pacificEducationRefreshNotice,body.pe-guided-flow > header{display:none !important;visibility:hidden !important;}"
-  ].join("\\n");
+  ].join(" ");
   (document.head||document.documentElement).appendChild(style);
 }
 \nvar bound = {};
