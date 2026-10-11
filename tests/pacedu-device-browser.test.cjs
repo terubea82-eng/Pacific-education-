@@ -329,6 +329,8 @@ test("device speaker diagnostic surfaces a browser speech exception as a blocker
 
 
 test("sequential Parent workspace advances one page at a time through confirmed Sign Out", async ({ page }) => {
+  test.setTimeout(60000);
+  const trace = async label => console.log("[Parent workspace trace]", label, await page.evaluate(() => ({title:document.getElementById("peSequentialTitle")?.textContent, progress:document.getElementById("peSequentialProgress")?.textContent, nextDisabled:document.getElementById("peSequentialNext")?.disabled, nextHidden:document.getElementById("peSequentialNext")?.hidden, nextDisplay:document.getElementById("peSequentialNext") ? getComputedStyle(document.getElementById("peSequentialNext")).display : null, signOutVisible:!!document.getElementById("peSequentialSignOutButton") && !!document.getElementById("peSequentialSignOutButton").getClientRects().length, status:document.getElementById("peSequentialStatus")?.textContent})));
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   // This is a focused controller test: prevent the separate guided-page controller
@@ -371,8 +373,15 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — My Child");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 4");
   await expect(page.locator("#peSequentialPage")).toBeVisible();
+  await trace("initial page");
 
+  await trace("before Next 1");
+  await trace("before Next 2");
+  await trace("before Next 3");
   await page.locator("#peSequentialNext").click();
+  await trace("after Next 3");
+  await trace("after Next 2");
+  await trace("after Next 1");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Teacher Communication");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 4");
 
@@ -386,9 +395,12 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialNext")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
 
+  await trace("before Sign Out");
   await page.locator("#peSequentialSignOutButton").click();
+  await trace("after Sign Out");
   await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
   await page.locator("#peSequentialSignOutYes").click();
+  await trace("after confirm sign out");
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveCount(0);
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   const cleared = await page.evaluate(() => ({
