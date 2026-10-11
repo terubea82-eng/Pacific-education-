@@ -8,18 +8,21 @@
   "use strict";
 
   var STEP_PAGES = [
-    {step:0,id:"pacificEducationWelcome",label:"Welcome",text:"Welcome to Pacific Education. We are pleased to welcome you. Pacific Education helps learners learn, discover, practise and grow. Press Next to continue."},
-    {step:1,id:"pacificEducationIdentityRegistration",label:"Registration",text:"Welcome to User Registration. Please complete each required box carefully. Enter your information one box at a time. When all required information is complete, review it and select Next to continue."},
-    {step:2,id:"prototypeAccess",label:"Pilot Access",text:"Welcome to Pacific Education pilot access. Please review the pilot information and instructions. When you are ready to continue, select Next."},
-    {step:3,id:"levelSelection",label:"Learning Level",text:"Welcome to Learning Level. Please choose the class or form that matches your current learning programme. Review your selection, then select Next to choose your subject."},
-    {step:4,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
-    {step:5,id:"termSelection",label:"Term",text:"Welcome to Term Selection. Please choose the school term for your learning activities. Your daily activities, practice and assessments will follow the selected term. Select Next when ready."},
-    {step:6,id:"capabilitySelection",label:"Learning Capability",text:"Welcome to Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
-    {step:7,id:"dailyLesson",label:"Daily Activities",text:"Welcome to Daily Activities. Complete the activity for the current learning day. Listen to the question and instructions whenever you need help, then enter your answer and continue."},
-    {step:8,id:"dailyLessonPracticeStage",label:"Practice",text:"Welcome to Practice. Complete the practice task carefully. Use the Hear Instructions control whenever you need the question or choices read aloud."},
-    {step:9,id:"assessments",label:"Assessments",text:"Welcome to Assessments. Follow the spoken instructions, review each question and choice carefully, then submit your response when you are ready."},
-    {step:10,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Welcome to Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
-  ];
+    {step:0,id:"pacificEducationWelcome",label:"Welcome",text:"Welcome to Pacific Education. This is the welcome and introduction page. Press AI Playback to hear the introduction, then press Next to continue."},
+    {step:1,id:"paceduPageVision",label:"Vision, Mission and Purpose",text:"This page explains the vision, mission and purpose of Pacific Education. Review the information, then select Next to continue."},
+    {step:2,id:"paceduPageRules",label:"Rules and Conditions",text:"Please read the Pacific Education pilot rules and conditions carefully. Confirm your agreement where requested, then select Next to continue."},
+    {step:3,id:"pacificEducationIdentityRegistration",label:"Registration",text:"Please complete the required registration boxes one at a time. Check your entries before selecting Next to continue."},
+    {step:4,id:"prototypeAccess",label:"Pilot Access",text:"Please review the Pacific Education pilot access information. When you are ready, select Next."},
+    {step:5,id:"levelSelection",label:"Learning Level",text:"Choose the class or form that matches your current learning programme, then select Next."},
+    {step:6,id:"subjectSelection",label:"Subject",text:"Choose the subject you want to study, then select Next."},
+    {step:7,id:"termSelection",label:"Term",text:"Choose the school term for your learning activities, then select Next."},
+    {step:8,id:"capabilitySelection",label:"Learning Capability",text:"Choose the learning pathway or capability you are working on, then select Next."},
+    {step:9,id:"dailyLesson",label:"Daily Activities",text:"Complete the activity for the current learning day. Use Hear Instructions whenever you need help."},
+    {step:10,id:"dailyLessonPracticeStage",label:"Practice",text:"Complete the practice task carefully. Use Hear Instructions whenever you need the question or choices read aloud."},
+    {step:11,id:"assessments",label:"Assessments",text:"Follow the assessment instructions, review each question carefully, and submit when ready."},
+    {step:12,id:"pacificEducationCoverageDashboard",label:"Coverage and Progress",text:"Review learning coverage and progress information before continuing."},
+    {step:13,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Authorised teachers can review school dates, teaching days, holidays, revision and examinations."}
+  ];;
 
   var WORKSPACE_PAGES = [
     ["pacificEducationAppTools","Learning Tools","Welcome to Learning Tools. Choose the learning tool you want to use. Users come first, followed by Learning Level, Subject, Term, Daily Activities, Practice, Assessment and Coverage."],
