@@ -85,9 +85,9 @@ test("page changes stop the previous page's audio without replacing the protecte
 
 test("protected #856 voice navigation remains unchanged while guided visibility is managed by the page controller", () => {
   assert.match(voiceNavigation, /The protected #856 voice controller remains the speech engine foundation/);
-  assert.match(voiceNavigation, /var STEP_PAGES = \\[/);
+  assert.match(voiceNavigation, /var STEP_PAGES = \[/);
   assert.match(controller, /data-pe-flow-step/);
-  assert.match(controller, /function guided\\(step,targetId\\)/);
+  assert.match(controller, /function guided\(step,targetId\)/);
 });
 test("guided Next transitions use the actual page numbers after registration", () => {
   assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
