@@ -331,6 +331,9 @@ test("device speaker diagnostic surfaces a browser speech exception as a blocker
 test("sequential Parent workspace advances one page at a time through confirmed Sign Out", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
+  // This is a focused controller test: prevent the separate guided-page controller
+  // from racing the workspace controller while this test verifies its own pages.
+  await page.route("**/src/js/pacificEducationSingleNavigationController.js*", route => route.abort());
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => {
     sessionStorage.setItem("pacificEducationPilotRegistered", "true");
