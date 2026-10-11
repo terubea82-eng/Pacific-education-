@@ -33,7 +33,7 @@ import org.json.JSONObject;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=539a2f6d-next-active-20261008";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=pacedu-combined-20261011-r2";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
@@ -49,7 +49,6 @@ public final class MainActivity extends Activity {
     private String pendingNativeConversationJson = "";
     private boolean nativeTtsInitializationFinished = false;
     private Voice preferredVoice;
-    private Voice alternateVoice;
     private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
     private static final String AUTO_WELCOME_TAG = "pacific-education-auto-welcome";
     private static final String VOICE_RESUME_JSON = "voiceResumeJson";
@@ -107,34 +106,41 @@ public final class MainActivity extends Activity {
         if (textToSpeech == null || Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) return;
         try {
             Set<Voice> voices = textToSpeech.getVoices();
-            if (voices == null) return;
-            Voice fallback = null;
-            Voice maleFallback = null;
-            Voice secondEnglishVoice = null;
+            if (voices == null || voices.isEmpty()) return;
+
+            Voice installedAustralianEnglish = null;
+            Voice installedEnglishFallback = null;
             for (Voice voice : voices) {
                 if (voice == null || voice.getLocale() == null) continue;
                 if (!"en".equalsIgnoreCase(voice.getLocale().getLanguage())) continue;
-                boolean australiaEnglish = "AU".equalsIgnoreCase(voice.getLocale().getCountry());
-                if (fallback == null || (australiaEnglish && !("AU".equalsIgnoreCase(fallback.getLocale().getCountry())))) fallback = voice;
-                if (fallback != null && secondEnglishVoice == null && voice != fallback) secondEnglishVoice = voice;
-                String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
-                if (name.contains("male") || name.contains("man")
-                        || name.contains("david") || name.contains("mark") || name.contains("ryan")
-                        || name.contains("guy") || name.contains("alex") || name.contains("daniel")
-                        || name.contains("james") || name.contains("john") || name.contains("tom")
-                        || name.contains("aaron") || name.contains("arthur") || name.contains("oliver")) {
-                    maleFallback = voice;
-                    if (name.contains("male") || name.contains("david") || name.contains("mark")
-                            || name.contains("ryan") || name.contains("guy")) {
-                        textToSpeech.setVoice(voice);
-                        return;
+
+                // Do not select a network-only voice: WebView playback can be silent
+                // when that voice has not been downloaded or connectivity is limited.
+                if (voice.isNetworkConnectionRequired()) continue;
+
+                if ("AU".equalsIgnoreCase(voice.getLocale().getCountry())) {
+                    if (installedAustralianEnglish == null
+                            || voice.getQuality() > installedAustralianEnglish.getQuality()) {
+                        installedAustralianEnglish = voice;
                     }
+                } else if (installedEnglishFallback == null
+                        || voice.getQuality() > installedEnglishFallback.getQuality()) {
+                    installedEnglishFallback = voice;
                 }
             }
-            preferredVoice = maleFallback != null ? maleFallback : fallback;
-            alternateVoice = secondEnglishVoice != null ? secondEnglishVoice : preferredVoice;
-            if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
+
+            // Prefer an installed Australian English voice; otherwise use an installed
+            // English voice. If none exists, retain the Android engine's en-AU default
+            // rather than forcing an unavailable voice or a gender/name heuristic.
+            preferredVoice = installedAustralianEnglish != null
+                    ? installedAustralianEnglish : installedEnglishFallback;
+            if (preferredVoice != null) {
+                int result = textToSpeech.setVoice(preferredVoice);
+                if (result != TextToSpeech.SUCCESS) preferredVoice = null;
+            }
         } catch (Exception ignored) {
+            // Keep the already configured en-AU/system default voice as fallback.
+            preferredVoice = null;
         }
     }
 
@@ -172,6 +178,42 @@ public final class MainActivity extends Activity {
         if (!prefs.getBoolean(VOICE_RESUME_ACTIVE, false) || prefs.getBoolean(VOICE_RESUME_STOPPED, false)) return;
         String json = prefs.getString(VOICE_RESUME_JSON, "");
         if (json == null || json.trim().isEmpty()) return;
+
+        /*
+         * A saved Page 1 introduction must never restart after the user has entered
+         * Registration. The browser guard cannot see Android SharedPreferences, so
+         * enforce this boundary here while preserving resume for ordinary lesson
+         * and task instructions. Only clear the saved conversation when both the
+         * current URL is the explicit registration entry and the saved audio is
+         * recognisably the Welcome/owner introduction.
+         */
+        String currentUrl = "";
+        try {
+            if (webView != null && webView.getUrl() != null) currentUrl = webView.getUrl();
+        } catch (Exception ignored) { }
+        boolean registrationEntry = currentUrl.toLowerCase(Locale.ROOT).contains("entry=registration");
+        boolean welcomeIntroduction = false;
+        try {
+            JSONArray savedLines = new JSONArray(json);
+            StringBuilder savedText = new StringBuilder();
+            for (int i = 0; i < savedLines.length(); i++) {
+                JSONObject savedLine = savedLines.optJSONObject(i);
+                if (savedLine != null) savedText.append(' ').append(savedLine.optString("text", ""));
+            }
+            String normalised = savedText.toString().toLowerCase(Locale.ROOT);
+            welcomeIntroduction = normalised.contains("welcome to pacedu")
+                    || normalised.contains("tion terubea")
+                    || normalised.contains("21 years classroom teaching")
+                    || normalised.contains("modern education platform");
+        } catch (Exception ignored) { }
+        if (registrationEntry && welcomeIntroduction) {
+            clearNativeConversationResume();
+            if (textToSpeech != null) {
+                try { textToSpeech.stop(); } catch (Exception ignored) { }
+            }
+            return;
+        }
+
         nativeConversationJson = json;
         nativeConversationIndex = Math.max(0, prefs.getInt(VOICE_RESUME_INDEX, 0));
         nativeConversationOffset = Math.max(0, prefs.getInt(VOICE_RESUME_OFFSET, 0));
@@ -211,7 +253,12 @@ public final class MainActivity extends Activity {
                     if (next < lines.length()) {
                         nativeConversationIndex = next;
                         saveNativeConversationResume();
-                        runOnUiThread(() -> speakConversationLine(lines, next));
+                        runOnUiThread(() -> {
+                            if (!speakConversationLine(lines, next)) {
+                                clearNativeConversationResume();
+                                notifyWebVoiceStatus("AI Playback stopped: Android Text-to-speech rejected a conversation line. Check the installed voice data and retry.");
+                            }
+                        });
                     } else {
                         clearNativeConversationResume();
                         notifyWebVoiceStatus("AI Playback conversation complete.");
@@ -226,33 +273,40 @@ public final class MainActivity extends Activity {
             });
             nativeConversationIndex = index[0];
             saveNativeConversationResume();
-            speakConversationLine(lines, index[0]);
+            if (!speakConversationLine(lines, index[0])) {
+                clearNativeConversationResume();
+                notifyWebVoiceStatus("AI Playback failed: Android Text-to-speech rejected the first utterance. Check the selected TTS engine and installed English voice data, then retry.");
+                return false;
+            }
             return true;
         } catch (Exception error) {
             return false;
         }
     }
 
-    private void speakConversationLine(JSONArray lines, int index) {
-        if (!ttsReady || textToSpeech == null || index < 0 || index >= lines.length()) return;
+    private boolean speakConversationLine(JSONArray lines, int index) {
+        if (!ttsReady || textToSpeech == null || index < 0 || index >= lines.length()) return false;
         try {
             JSONObject line = lines.getJSONObject(index);
             String fullText = line.optString("text", "").trim();
-            if (fullText.isEmpty()) { speakConversationLine(lines, index + 1); return; }
+            if (fullText.isEmpty()) return speakConversationLine(lines, index + 1);
             int offset = (index == nativeConversationIndex) ? Math.min(nativeConversationOffset, fullText.length()) : 0;
             String text = offset > 0 ? fullText.substring(offset) : fullText;
             nativeConversationIndex = index;
             nativeConversationOffset = offset;
             saveNativeConversationResume();
-            int speaker = line.optInt("speaker", index % 2);
-            Voice voice = speaker % 2 == 0 ? preferredVoice : alternateVoice;
-            if (voice != null) textToSpeech.setVoice(voice);
+            // Ignore legacy speaker metadata: all native playback uses the same narrator.
+            if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education-conversation-" + index);
+                int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education-conversation-" + index);
+                return result == TextToSpeech.SUCCESS;
             } else {
                 @SuppressWarnings("deprecation") int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                return result == TextToSpeech.SUCCESS;
             }
-        } catch (Exception ignored) { }
+        } catch (Exception error) {
+            return false;
+        }
     }
 
     private final class NativeSpeechBridge {
@@ -493,14 +547,13 @@ public final class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
-                // Android-only safety repair: make the first gateway Next control
-                // touch-active even if an older cached script has interfered.
-                // This does not replace or modify the protected #856 voice system.
-                view.evaluateJavascript("(function(){try{var b=document.getElementById('welcomeNextButton');if(!b)return;b.disabled=false;b.removeAttribute('aria-disabled');b.style.pointerEvents='auto';b.style.touchAction='manipulation';if(b.getAttribute('data-android-welcome-next')==='1')return;b.setAttribute('data-android-welcome-next','1');b.addEventListener('click',function(e){try{e.preventDefault();e.stopImmediatePropagation();if(window.PacificEducationPilotPages&&typeof window.PacificEducationPilotPages.goTo==='function'){window.PacificEducationPilotPages.goTo(2);return false;}document.body.classList.add('pacedu-entry-mode','pacedu-registration-mode');document.body.setAttribute('data-pac-edu-entry-page','2');var w=document.getElementById('pacificEducationWelcome'),n=document.getElementById('welcomeNextWrapper'),p=document.getElementById('pacificEducationPilotPages'),r=document.getElementById('pacificEducationIdentityRegistration');if(w)w.style.display='none';if(n)n.style.display='none';if(p)p.style.display='none';if(r){r.hidden=false;r.style.display='';}}catch(_){}return false;},true);}catch(_){} })();", null);
+                // The hosted JavaScript single-navigation controller owns all page
+                // transitions. Do not intercept the Welcome Next button here: an
+                // Android-only click handler can bypass Vision/Mission and Rules.
                 // Inject the native adapter after remotely hosted page scripts load.
                 // The APK opens GitHub Pages, so branch-only JavaScript is not bundled.
                 // Keep the protected #856 speech controller intact.
-                view.evaluateJavascript("(function(){try{var s=window.PacificEducationSpeech,b=window.PacificEducationNativeTTS;if(!s||!b||typeof b.speakConversation!=='function'||s.__pacNativeAndroidBridgeOverride)return;var previous=s.speakConversation;s.speakConversation=function(lines,done){if(!Array.isArray(lines)||!lines.length)return false;try{var payload=JSON.stringify(lines.map(function(x){return {speaker:String(x&&x.speaker||''),text:String(x&&x.text||'')};}));var accepted=b.speakConversation(payload);if(accepted){var st=document.getElementById('pacificEducationVoiceStatus');if(st)st.textContent=(typeof b.available==='function'&&!b.available())?'AI Playback: preparing the Android voice engine…':'AI Playback: native Android voice active.';return true;}var st2=document.getElementById('pacificEducationVoiceStatus');if(st2)st2.textContent='Android voice engine did not accept AI Playback. Check Android Text-to-speech settings and retry.';return previous(lines,done);}catch(e){try{return previous(lines,done);}catch(_){return false;}}};s.__pacNativeAndroidBridgeOverride=true;}catch(_){}})();", null);
+                view.evaluateJavascript("(function(){function install(){try{var s=window.PacificEducationSpeech,b=window.PacificEducationNativeTTS;if(!s||!b||typeof b.speakConversation!=='function')return false;if(s.__pacNativeAndroidBridgeOverride)return true;var previous=s.speakConversation;s.speakConversation=function(lines,done){if(!Array.isArray(lines)||!lines.length)return false;try{var payload=JSON.stringify(lines.map(function(x){return {speaker:String(x&&x.speaker||''),text:String(x&&x.text||'')};}));var accepted=b.speakConversation(payload);if(accepted){var st=document.getElementById('pacificEducationVoiceStatus');if(st)st.textContent=(typeof b.available==='function'&&!b.available())?'AI Playback: preparing the Android voice engine…':'AI Playback: native Android voice active.';return true;}var st2=document.getElementById('pacificEducationVoiceStatus');if(st2)st2.textContent='Android voice engine did not accept AI Playback. Check Android Text-to-speech settings and retry.';return previous(lines,done);}catch(e){try{return previous(lines,done);}catch(_){return false;}}};s.__pacNativeAndroidBridgeOverride=true;return true;}catch(_){return false;}}var attempts=0;function installWithRetry(){attempts++;if(install()||attempts>=40)return;setTimeout(installWithRetry,250);}installWithRetry();})();", null);;
             }
         });
 
