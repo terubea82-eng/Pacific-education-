@@ -376,20 +376,20 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await trace("initial page");
 
   await trace("before Next 1");
-  await trace("before Next 2");
-  await trace("before Next 3");
   await page.locator("#peSequentialNext").click();
-  await trace("after Next 3");
-  await trace("after Next 2");
   await trace("after Next 1");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Teacher Communication");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 4");
 
+  await trace("before Next 2");
   await page.locator("#peSequentialNext").click();
+  await trace("after Next 2");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Child Progress");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 4");
 
+  await trace("before Next 3");
   await page.locator("#peSequentialNext").click();
+  await trace("after Next 3");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Sign Out");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
   await expect(page.locator("#peSequentialNext")).toBeHidden();
@@ -399,7 +399,9 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await page.locator("#peSequentialSignOutButton").click();
   await trace("after Sign Out");
   await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
-  await page.locator("#peSequentialSignOutYes").click();
+  // The handler removes the clicked button and its parent workspace immediately.
+  // Dispatch directly so Playwright does not wait on a locator being detached.
+  await page.locator("#peSequentialSignOutYes").dispatchEvent("click");
   await trace("after confirm sign out");
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveCount(0);
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
