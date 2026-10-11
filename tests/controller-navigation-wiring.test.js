@@ -4,6 +4,7 @@ const fs = require("node:fs");
 
 const html = fs.readFileSync("src/index.html", "utf8");
 const controller = fs.readFileSync("src/js/pacificEducationSingleNavigationController.js", "utf8");
+const voiceNavigation = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
 const htmlIds = new Set([...html.matchAll(/\bid=["']([^"']+)["']/g)].map((match) => match[1]));
 const controllerCreatedIds = new Set(
   [...controller.matchAll(/(?:button|wrapper|status|audio)\.id="([^"]+)"/g)].map((match) => match[1])
@@ -72,4 +73,17 @@ test("all-feature visibility cannot override one-page guided flow", () => {
     html,
     /body\.pe-pilot-all-features #learningPlatform,body\.pe-pilot-all-features #pacificEducationAppTools/
   );
+});
+
+test("page changes stop the previous page's audio without replacing the protected voice engine", () => {
+  assert.match(controller, /function stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function guided\(step,targetId\)\{\s*stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function gateway\(page\)\{\s*var targetId=.*?stopSpeechForPageTransition\(targetId\)/s);
+  assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
+});
+
+test("voice navigation does not treat missing flow state or hidden workspaces as active", () => {
+  assert.match(voiceNavigation, /var raw=b\.getAttribute\("data-pe-flow-step"\);if\(raw===null\|\|String\(raw\)\.trim\(\)===""\)return null/);
+  assert.match(voiceNavigation, /if\(node\.hidden\)return null/);
+  assert.match(voiceNavigation, /if\(activeStep===null\|\|activeStep===0\)return/);
 });
