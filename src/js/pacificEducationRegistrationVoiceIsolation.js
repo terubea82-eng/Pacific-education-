@@ -41,11 +41,13 @@
           control.setAttribute("data-pe-welcome-original-display",control.style.getPropertyValue("display"));
           control.setAttribute("data-pe-welcome-original-display-priority",control.style.getPropertyPriority("display"));
         }
-        control.hidden=true;
-        control.disabled=true;
-        control.setAttribute("aria-hidden","true");
-        control.setAttribute("tabindex","-1");
-        control.style.setProperty("display","none","important");
+        if(!control.hidden)control.hidden=true;
+        if(!control.disabled)control.disabled=true;
+        if(control.getAttribute("aria-hidden")!=="true")control.setAttribute("aria-hidden","true");
+        if(control.getAttribute("tabindex")!=="-1")control.setAttribute("tabindex","-1");
+        if(control.style.getPropertyValue("display")!=="none" || control.style.getPropertyPriority("display")!=="important"){
+          control.style.setProperty("display","none","important");
+        }
       }else if(control.getAttribute("data-pe-welcome-control-isolated")==="true"){
         control.hidden=control.getAttribute("data-pe-welcome-original-hidden")==="true";
         control.disabled=control.getAttribute("data-pe-welcome-original-disabled")==="true";
@@ -148,8 +150,8 @@
   window.addEventListener("pageshow",enforce);
   window.addEventListener("focus",enforce);
   var observer=new MutationObserver(enforce);
-  if(document.body)observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","style","data-pe-flow-step"]});
-  if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","class","data-pe-flow-step"]});
+  if(document.body)observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","data-pe-flow-step"]});
+  if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","class","data-pe-flow-step"]});
   enforce();
   window.setTimeout(enforce,0);
   window.setTimeout(enforce,250);
