@@ -119,24 +119,16 @@
 
   function refreshVoiceSelection(){chooseVoice();if(selectedVoice)setVoiceStatus("English voice ready. Tap Hear Welcome.");else if(window.speechSynthesis)setVoiceStatus("Browser voice engine ready. Tap Hear Welcome.");}
 
-  function chooseConversationVoices(){
-    if(!window.speechSynthesis||typeof window.speechSynthesis.getVoices!=="function")return{a:null,b:null};
-    var voices=window.speechSynthesis.getVoices()||[],english=voices.filter(function(v){return/^en(-|$)/i.test(String(v.lang||""));});
-    if(!english.length)return{a:null,b:null};
-    function rank(v){var score=0;if(/^en[-_]AU$/i.test(String(v.lang||"")))score+=100;if(/(?:natural|neural|enhanced|premium|online|google|microsoft)/i.test(String(v.name||"")))score+=20;return score;}
-    english.sort(function(a,b){return rank(b)-rank(a);}); var a=english[0]||null,b=english.find(function(v){return v!==a;})||a; return{a:a,b:b};
-  }
-
-  function speakConversation(lines,done){
+    function speakConversation(lines,done){
     lines=Array.isArray(lines)?lines:[];if(!lines.length){if(done)done();return false;}
     var signature=lines.map(function(item){return String(item&&item.text||"");}).join("\u0001"),now=Date.now();
     if(signature===lastConversationSignature&&now-lastConversationAt<8000)return false;
     lastConversationSignature=signature;lastConversationAt=now;conversationGeneration+=1;var conversationRun=conversationGeneration;speechGeneration+=1;var runGeneration=speechGeneration;
     if(!window.speechSynthesis||typeof window.SpeechSynthesisUtterance!=="function"){
       if(window.PacificEducationNativeTTS&&typeof window.PacificEducationNativeTTS.speak==="function"){var ni=0;(function nativeNext(){if(ni>=lines.length){clearPersistedConversation();if(done)done();return;}try{window.PacificEducationNativeTTS.speak(String(lines[ni++].text||""));setTimeout(nativeNext,3200);}catch(_){if(done)done();}})();return true;}
-      setVoiceStatus("Two-person AI playback requires a speech engine.");return false;
+      setVoiceStatus("AI Playback requires an available speech engine.");return false;
     }
-    var synth=window.speechSynthesis,pair=chooseConversationVoices(),index=0,charOffset=0,saved=loadPersistedConversation();
+    var synth=window.speechSynthesis,voice=chooseVoice(),index=0,charOffset=0,saved=loadPersistedConversation();
     if(saved&&saved.lines.map(function(item){return String(item.text||"");}).join("\u0001")===signature){index=Math.max(0,Math.min(Number(saved.index)||0,lines.length-1));charOffset=Math.max(0,Number(saved.charOffset)||0);charOffset=Math.min(charOffset,String(lines[index].text||"").length);setVoiceStatus(charOffset>0?"Restoring AI Playback from the saved position.":"Restoring AI Playback from the saved sentence.");}else clearPersistedConversation();
     try{synth.cancel();if(typeof synth.resume==="function")synth.resume();}catch(_){ }
     function next(){
@@ -144,8 +136,8 @@
       if(index>=lines.length){clearPersistedConversation();setVoiceStatus("AI Playback conversation complete.");if(done)done();return;}
       var fullText=String(lines[index].text||""),offsetForLine=charOffset,remainingText=offsetForLine>0?fullText.slice(offsetForLine):fullText;
       if(!remainingText.trim()){index+=1;charOffset=0;if(index<lines.length)savePersistedConversation(lines,index,0,"paused");next();return;}
-      savePersistedConversation(lines,index,offsetForLine,"speaking");var u=new window.SpeechSynthesisUtterance(remainingText),v=(index%2===0?pair.a:pair.b);if(v)u.voice=v;u.lang=v&&v.lang?v.lang:"en-AU";u.rate=.94;u.pitch=1;u.volume=1;
-      u.onstart=function(){savePersistedConversation(lines,index,offsetForLine,"speaking");setVoiceStatus("AI Playback: "+(index%2===0?"Speaker 1":"Speaker 2")+" is speaking.");};
+      savePersistedConversation(lines,index,offsetForLine,"speaking");var u=new window.SpeechSynthesisUtterance(remainingText);if(voice)u.voice=voice;u.lang=voice&&voice.lang?voice.lang:"en-AU";u.rate=.94;u.pitch=1;u.volume=1;
+      u.onstart=function(){savePersistedConversation(lines,index,offsetForLine,"speaking");setVoiceStatus("AI Playback narrator is speaking.");};
       u.onboundary=function(event){if(conversationRun!==conversationGeneration||runGeneration!==speechGeneration)return;var boundary=Number(event&&event.charIndex);if(!isFinite(boundary)||boundary<0)return;charOffset=Math.min(fullText.length,offsetForLine+boundary);savePersistedConversation(lines,index,charOffset,"speaking");};
       u.onend=function(){if(conversationRun!==conversationGeneration||runGeneration!==speechGeneration)return;index+=1;charOffset=0;if(index<lines.length)savePersistedConversation(lines,index,0,"paused");next();};
       u.onerror=function(event){if(conversationRun!==conversationGeneration||runGeneration!==speechGeneration)return;savePersistedConversation(lines,index,charOffset,"paused");setVoiceStatus("Voice paused. Restoring from the saved position.");};
@@ -159,14 +151,11 @@
       return window.PacificEducationGlobalEducationVoice.lines;
     }
     return[
-      {speaker:"1",text:"Welcome to Pacific Education. We are pleased to welcome you."},
-      {speaker:"2",text:"Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},
-      {speaker:"1",text:"What is Pacific Education designed to do?"},
-      {speaker:"2",text:"It connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},
-      {speaker:"1",text:"Why is that important across the Pacific?"},
-      {speaker:"2",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},
-      {speaker:"1",text:"What can learners do here?"},
-      {speaker:"2",text:"Learn, discover, practise and grow with us."}
+      {speaker:"narrator",text:"Welcome to Pacific Education. We are pleased to welcome you."},
+      {speaker:"narrator",text:"Pacific Education supports learners, teachers, parents and education communities with clear, accessible and structured learning."},
+      {speaker:"narrator",text:"The platform connects daily learning activities, educational content, practice, assessment and progress so learners can build knowledge step by step."},
+      {speaker:"narrator",text:"It helps make quality and accessible learning more connected for Pacific communities and supports teachers and families in guiding learners."},
+      {speaker:"narrator",text:"Learn, discover, practise and grow with Pacific Education."}
     ];
   }
 
