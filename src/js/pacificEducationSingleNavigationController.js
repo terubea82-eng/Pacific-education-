@@ -373,7 +373,8 @@ function guided(step,targetId){
   var ok=revealTarget(targetId);
   if(ok){
     renderPageGuide(targetId);
-    setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue.");
+    var pageInfo=PAGE_GUIDE[targetId];
+    setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
     /* Run after click handlers and their queued repairs; never change the protected voice engine. */
     window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
     window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
