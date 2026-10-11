@@ -88,6 +88,10 @@ test("Registration voice removes the legacy welcome phrase before speech playbac
   });
   await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
+  await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeHidden();
+  await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeDisabled();
+  await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeDisabled();
   await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSpeech?.speakConversation), { timeout: 8000 }).toBe("function");
   // Reproduce the reported defect: the direct Page 4 entry must not start or resume
   // the Page 1 welcome/Owner narration, but page-specific Registration speech stays on.

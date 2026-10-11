@@ -29,6 +29,38 @@
     return visible(document.getElementById("pacificEducationIdentityRegistration"));
   }
 
+  function isolateWelcomeControls(registration){
+    ["pacificEducationWelcomeVoiceButton","pacificEducationAIPlaybackButton"].forEach(function(id){
+      var control=document.getElementById(id);
+      if(!control)return;
+      if(registration){
+        if(control.getAttribute("data-pe-welcome-control-isolated")!=="true"){
+          control.setAttribute("data-pe-welcome-control-isolated","true");
+          control.setAttribute("data-pe-welcome-original-hidden",String(!!control.hidden));
+          control.setAttribute("data-pe-welcome-original-disabled",String(!!control.disabled));
+          control.setAttribute("data-pe-welcome-original-display",control.style.getPropertyValue("display"));
+          control.setAttribute("data-pe-welcome-original-display-priority",control.style.getPropertyPriority("display"));
+        }
+        if(!control.hidden)control.hidden=true;
+        if(!control.disabled)control.disabled=true;
+        if(control.getAttribute("aria-hidden")!=="true")control.setAttribute("aria-hidden","true");
+        if(control.getAttribute("tabindex")!=="-1")control.setAttribute("tabindex","-1");
+        if(control.style.getPropertyValue("display")!=="none" || control.style.getPropertyPriority("display")!=="important"){
+          control.style.setProperty("display","none","important");
+        }
+      }else if(control.getAttribute("data-pe-welcome-control-isolated")==="true"){
+        control.hidden=control.getAttribute("data-pe-welcome-original-hidden")==="true";
+        control.disabled=control.getAttribute("data-pe-welcome-original-disabled")==="true";
+        control.removeAttribute("aria-hidden");
+        control.removeAttribute("tabindex");
+        var oldDisplay=control.getAttribute("data-pe-welcome-original-display")||"";
+        var oldPriority=control.getAttribute("data-pe-welcome-original-display-priority")||"";
+        if(oldDisplay)control.style.setProperty("display",oldDisplay,oldPriority);else control.style.removeProperty("display");
+        ["data-pe-welcome-control-isolated","data-pe-welcome-original-hidden","data-pe-welcome-original-disabled","data-pe-welcome-original-display","data-pe-welcome-original-display-priority"].forEach(function(name){control.removeAttribute(name);});
+      }
+    });
+  }
+
   function isWelcomeIntro(text){
     return /welcome to (?:pacedu|pacific education)|modern education platform created to support learners|owner'?s experience|owner of pacific education|21 years(?: of)? (?:practical )?classroom teaching experience|why was pacific education built|learn, discover, practise, and grow together|education should not stop when/i.test(String(text||""));
   }
@@ -109,6 +141,7 @@
   function enforce(){
     wrapEngine();
     var registration=isRegistration();
+    isolateWelcomeControls(registration);
     if(registration && lastRegistrationState!==true)stopCurrentSpeech();
     lastRegistrationState=registration;
   }
@@ -117,8 +150,8 @@
   window.addEventListener("pageshow",enforce);
   window.addEventListener("focus",enforce);
   var observer=new MutationObserver(enforce);
-  if(document.body)observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","style","data-pe-flow-step"]});
-  if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","class","data-pe-flow-step"]});
+  if(document.body)observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","data-pe-flow-step"]});
+  if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","class","data-pe-flow-step"]});
   enforce();
   window.setTimeout(enforce,0);
   window.setTimeout(enforce,250);
