@@ -435,3 +435,35 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   }));
   expect(cleared).toEqual({ registered: null, registration: null, role: null });
 });
+
+
+test("registration must remain on Page 4 when the real save does not persist", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => {
+    try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
+    const original = Storage.prototype.setItem;
+    Storage.prototype.setItem = function(key, value) {
+      if (["pacificEducationPilotRegistered", "pacificEducationPilotRegistration", "pacificEducationPilotRole"].includes(String(key))) return;
+      return original.call(this, key, value);
+    };
+  });
+  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+  await expect(registration).toBeVisible();
+  await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await page.locator("#registrationNextButton").click();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+  await page.locator("#registrationNextButton").click();
+  const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
+  await teacher.click({ force: true });
+  await page.locator("#registrationNextButton").click();
+  await page.locator("#pilotRegistrationName").fill("Unsaved Pilot Test");
+  await page.locator("#registrationNextButton").click();
+  await page.waitForTimeout(700);
+  await expect(registration).toBeVisible();
+  await expect(page.locator("#prototypeAccess")).toBeHidden();
+  await expect(page.locator("#peBoxSequenceProgress")).toContainText(/not been confirmed|not saved/i);
+});
