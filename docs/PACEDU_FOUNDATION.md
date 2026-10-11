@@ -6,6 +6,14 @@ Pacific Education (Pacedu) was primarily conceived from the Owner's 21 years of 
 
 That classroom experience is the foundation of the system. Pacedu is intended to reduce unnecessary teacher workload, help teachers understand learners better, identify learner strengths and areas requiring development, and turn daily learning activities into meaningful evidence of skills and progress.
 
+## Mandatory single narrator voice policy
+
+**One consistent narrator voice is mandatory across every Pacedu app, web page, Android/WebView surface, learning activity, accessibility control, registration flow, role workspace, and device test.** Two-person dialogue, alternating voices, and speaker-1/speaker-2 voice switching are prohibited.
+
+All speech modules must use the shared Pacedu speech controller and the same selected English voice for every utterance. Native Android playback must ignore legacy speaker labels for voice selection. Stop Speech, accessible controls, saved-position/resume behavior, and page-by-page navigation must remain intact. Welcome narration is limited to the welcome page and must not replay on registration or later pages. If no speech engine is available, the app must report that limitation honestly.
+
+This policy is mandatory for new work and regressions must be tested across browser and Android paths. Automated tests do not replace a real-device audio test. Preserve the protected #856 speech-controller architecture; do not merge or deploy a candidate until required checks pass.
+
 ## Real-life education principle
 
 Pacedu is designed around the principle that education should connect with real life. Daily activities are therefore intended to reflect practical classroom experience, learner needs, observation, practice, application, and real-life situations rather than treating education as isolated information.

@@ -203,7 +203,7 @@ test("Pacedu welcome voice control invokes the protected speech engine", async (
   expect(call.volume).toBe(1);
 });
 
-test("AI Playback completes a two-speaker Pacific Education conversation", async ({ page }) => {
+test("AI Playback completes the Pacific Education welcome with one narrator voice", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -223,13 +223,13 @@ test("AI Playback completes a two-speaker Pacific Education conversation", async
   expect(question).toBeGreaterThanOrEqual(0);
   expect(answer).toBeGreaterThan(question);
   for (let i = 1; i < calls.length; i += 1) {
-    expect(calls[i].voice, "each dialogue line must alternate voices").not.toBe(calls[i - 1].voice);
+    expect(calls[i].voice, "every welcome line must use the same narrator voice").toBe(calls[0].voice);
   }
   expect(calls.some(call => call.text.includes("Let us learn, discover, practise, and grow together."))).toBe(true);
   expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
 });
 
-test("automatic welcome starts with two-person AI Playback before page guidance", async ({ page }) => {
+test("automatic welcome starts with single-narrator AI Playback before page guidance", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -275,13 +275,13 @@ test("device speaker diagnostic invokes speech and presents an honest result", a
   await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(2);
   await expect.poll(() => page.evaluate(() => {
     const status = document.querySelector("#pacificEducationVoiceStatus");
-    return status && /Speaker 1 is speaking|Speaker 2 is speaking|conversation complete/i.test(status.textContent);
+    return status && /AI Playback narrator is speaking|conversation complete/i.test(status.textContent);
   }), { timeout: 8000 }).toBeTruthy();
   await expect.poll(() => page.locator("#report").textContent()).toContain("lifecycleEvents");
   const calls = await page.evaluate(() => window.__paceduSpeechCalls);
   expect(calls[0].text).toContain("Pacific Education speaker test");
   expect(calls[1].text).toContain("If you can hear this sentence");
-  expect(calls[0].voice).not.toBe(calls[1].voice);
+  expect(calls[0].voice).toBe(calls[1].voice);
   expect(calls[0].volume).toBe(1);
 });
 
