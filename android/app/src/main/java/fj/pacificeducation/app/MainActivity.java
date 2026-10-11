@@ -33,7 +33,7 @@ import org.json.JSONObject;
 public final class MainActivity extends Activity {
     private static final String APP_ORIGIN = "https://terubea82-eng.github.io";
     private static final String APP_URL =
-            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=539a2f6d-next-active-20261008";
+            "https://terubea82-eng.github.io/Pacific-education-/src/index.html?v=pacedu-combined-20261011-r2";
     private static final String PRIVACY_URL =
             "https://terubea82-eng.github.io/Pacific-education-/privacy-policy.html";
     private static final String PREFS = "pacificEducationNativePilot";
