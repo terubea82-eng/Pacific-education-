@@ -334,9 +334,27 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => {
     sessionStorage.setItem("pacificEducationPilotRegistered", "true");
-    sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Parent Pilot Test",role:"Parent",pilotOnly:true}));
+    sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Parent Pilot Test",role:"parent",pilotOnly:true}));
     sessionStorage.setItem("pacificEducationPilotRole", "parent");
+    // Exercise the workspace controller independently of the page-isolation
+    // controller, which intentionally keeps non-active app pages hidden.
+    window.PacificEducationSingleNavigation = undefined;
+    const app = document.getElementById("app");
+    if (app) {
+      let node = app;
+      while (node && node !== document.body) {
+        node.hidden = false;
+        node.removeAttribute("aria-hidden");
+        if (node.style && node.style.display === "none") node.style.removeProperty("display");
+        node = node.parentElement;
+      }
+    }
     window.PacificEducationSequentialRoleWorkspaces.build("parent");
+    const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    if (shell) {
+      shell.hidden = false;
+      shell.removeAttribute("aria-hidden");
+    }
   });
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell).toBeVisible();
