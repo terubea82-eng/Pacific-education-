@@ -62,7 +62,7 @@ function installSinglePageVisibilityStyles(){
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='7'] #dailyLesson,",
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='8'] #dailyLessonPracticeStage,",
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='9'] #assessments,",
-    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #pacificEducationCoverageDashboard,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #teacherCalendarSection,",
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection{display:block !important;visibility:visible !important;}",
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #pacificEducationCoverageDashboard *,",
     "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection *{visibility:visible;}",
