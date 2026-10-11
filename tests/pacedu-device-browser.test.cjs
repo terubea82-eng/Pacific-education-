@@ -137,7 +137,17 @@ test("mobile touch can complete registration and select a role before Next advan
       prototypeHidden: !!(page && page.hidden),
       prototypeDisplay: page ? getComputedStyle(page).display : "missing",
       registrationHidden: !!(registrationPage && registrationPage.hidden),
-      statusText: status ? status.textContent : ""
+      statusText: status ? status.textContent : "",
+      nextButtonText: (document.querySelector("#registrationNextButton") || {}).textContent || "",
+      nextButtonDisabled: !!(document.querySelector("#registrationNextButton") || {}).disabled,
+      roleFieldValue: (document.querySelector("#pilotRegistrationRole") || {}).value || "",
+      roleCards: Array.from(document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card")).map(card => ({role:card.getAttribute("data-role"),pressed:card.getAttribute("aria-pressed"),disabled:!!card.disabled})),
+      nameValue: (document.querySelector("#pilotRegistrationName") || {}).value || "",
+      saveButtonDisabled: !!(document.querySelector("#pilotRegistrationSaveButton") || {}).disabled,
+      sequenceProgress: (document.querySelector("#peBoxSequenceProgress") || {}).textContent || "",
+      sequenceTitle: (document.querySelector("#peBoxSequenceTitle") || {}).textContent || "",
+      registrationBoxHidden: !!(document.querySelector("#pacificEducationRegistrationBox") || {}).hidden,
+      url: location.href
     };
   });
   console.log("[mobile flow] post-save handoff diagnostic " + JSON.stringify(handoffDiagnostic));
