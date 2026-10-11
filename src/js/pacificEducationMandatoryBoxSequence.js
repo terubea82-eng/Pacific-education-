@@ -196,7 +196,14 @@
       speak("Registration step "+(state+1)+" of 4. "+item.label+". Complete this box, then press Next.");
     }
 
-    function nextStep(){
+    function nextStep(event){
+      /* This button belongs only to the mandatory registration box sequence.
+         Prevent legacy page-level click handlers from treating its Next tap as
+         a Welcome/entry navigation action. The protected voice engine is untouched. */
+      if(event){
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
       if(state===0){
         if(!(get("pacificEducationCountrySelect")||{}).value) return;
         state=1; update(); return;
