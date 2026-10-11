@@ -46,7 +46,16 @@
   }
   function setWelcomeBlockedStatus(){
     var status=document.getElementById("pacificEducationVoiceStatus");
-    if(status)status.textContent="Welcome narration is Page 1 only. Registration instructions remain available on this page.";
+    if(status)status.textContent="Registration page active. Use Hear Instructions or AI Playback for registration help.";
+  }
+  function sanitizeRegistrationStatus(){
+    if(pageOne())return;
+    var status=document.getElementById("pacificEducationVoiceStatus");
+    if(!status)return;
+    var message=String(status.textContent||"");
+    if(/tap hear welcome|hear welcome(?: & introduction)? again/i.test(message)){
+      status.textContent=message.replace(/tap hear welcome(?: & introduction)?/ig,"tap Hear Instructions").replace(/hear welcome(?: & introduction)? again/ig,"Hear Instructions again");
+    }
   }
   function manualControl(el){
     if(!el)return false;
@@ -140,9 +149,9 @@
     }
   }
   wrapSpeechObject();
-  var observer=new MutationObserver(function(){wrapSpeechObject();});
+  var observer=new MutationObserver(function(){wrapSpeechObject();sanitizeRegistrationStatus();});
   if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true});
-  setTimeout(wrapSpeechObject,250);setTimeout(wrapSpeechObject,1000);setTimeout(wrapSpeechObject,2500);
+  setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},250);setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},1000);setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},2500);
 
   /* A welcome conversation may already be speaking when the user presses Next.
      The old guard blocked a new welcome call on Registration, but did not cancel
