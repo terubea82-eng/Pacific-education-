@@ -77,7 +77,7 @@ test("speech engine queues audible utterances and chooses an English voice", () 
   assert.equal(h.status.textContent, "Voice playing.");
 });
 
-test("AI Playback queues two-person dialogue with alternating distinct voices", () => {
+test("AI Playback narrates every line with one consistent English voice", () => {
   const h = createSpeechHarness();
   const lines = [
     { speaker: "1", text: "Welcome to Pacific Education." },
@@ -88,13 +88,13 @@ test("AI Playback queues two-person dialogue with alternating distinct voices", 
   assert.equal(h.utterances[0].text, lines[0].text);
   assert.equal(h.utterances[0].voice.name, "English Australia Natural");
   h.utterances[0].onstart();
-  assert.match(h.status.textContent, /Speaker 1 is speaking/);
+  assert.equal(h.status.textContent, "AI Playback narrator is speaking.");
   h.utterances[0].onend();
   assert.equal(h.utterances.length, 2);
   assert.equal(h.utterances[1].text, lines[1].text);
-  assert.equal(h.utterances[1].voice.name, "English United States");
+  assert.equal(h.utterances[1].voice.name, "English Australia Natural");
   h.utterances[1].onstart();
-  assert.match(h.status.textContent, /Speaker 2 is speaking/);
+  assert.equal(h.status.textContent, "AI Playback narrator is speaking.");
   h.utterances[1].onend();
   assert.equal(h.status.textContent, "AI Playback conversation complete.");
   assert.equal(h.window.localStorage.getItem("pacificEducationVoiceResume"), null);
