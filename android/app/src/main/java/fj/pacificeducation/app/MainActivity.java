@@ -49,7 +49,6 @@ public final class MainActivity extends Activity {
     private String pendingNativeConversationJson = "";
     private boolean nativeTtsInitializationFinished = false;
     private Voice preferredVoice;
-    private Voice alternateVoice;
     private final Handler welcomeHandler = new Handler(Looper.getMainLooper());
     private static final String AUTO_WELCOME_TAG = "pacific-education-auto-welcome";
     private static final String VOICE_RESUME_JSON = "voiceResumeJson";
@@ -110,13 +109,11 @@ public final class MainActivity extends Activity {
             if (voices == null) return;
             Voice fallback = null;
             Voice maleFallback = null;
-            Voice secondEnglishVoice = null;
             for (Voice voice : voices) {
                 if (voice == null || voice.getLocale() == null) continue;
                 if (!"en".equalsIgnoreCase(voice.getLocale().getLanguage())) continue;
                 boolean australiaEnglish = "AU".equalsIgnoreCase(voice.getLocale().getCountry());
                 if (fallback == null || (australiaEnglish && !("AU".equalsIgnoreCase(fallback.getLocale().getCountry())))) fallback = voice;
-                if (fallback != null && secondEnglishVoice == null && voice != fallback) secondEnglishVoice = voice;
                 String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
                 if (name.contains("male") || name.contains("man")
                         || name.contains("david") || name.contains("mark") || name.contains("ryan")
@@ -124,19 +121,10 @@ public final class MainActivity extends Activity {
                         || name.contains("james") || name.contains("john") || name.contains("tom")
                         || name.contains("aaron") || name.contains("arthur") || name.contains("oliver")) {
                     maleFallback = voice;
-                    // Select the voice after scanning all available voices so both
-                    // preferredVoice and alternateVoice are initialised consistently.
-                    // Returning here previously left the conversation pair unset.
                 }
             }
             preferredVoice = maleFallback != null ? maleFallback : fallback;
-            if (secondEnglishVoice != null && secondEnglishVoice != preferredVoice) {
-                alternateVoice = secondEnglishVoice;
-            } else if (fallback != null && fallback != preferredVoice) {
-                alternateVoice = fallback;
-            } else {
-                alternateVoice = preferredVoice;
-            }
+            // Mandatory Pacedu policy: one selected narrator voice for every utterance.
             if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
         } catch (Exception ignored) {
         }
@@ -293,9 +281,8 @@ public final class MainActivity extends Activity {
             nativeConversationIndex = index;
             nativeConversationOffset = offset;
             saveNativeConversationResume();
-            int speaker = line.optInt("speaker", index % 2);
-            Voice voice = speaker % 2 == 0 ? preferredVoice : alternateVoice;
-            if (voice != null) textToSpeech.setVoice(voice);
+            // Ignore legacy speaker metadata: all native playback uses the same narrator.
+            if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 int result = textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "pacific-education-conversation-" + index);
                 return result == TextToSpeech.SUCCESS;
