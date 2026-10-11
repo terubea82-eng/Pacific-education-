@@ -342,9 +342,13 @@ test("sequential Parent workspace advances one page at a time through confirmed 
     // Exercise the workspace controller independently of the page-isolation
     // controller, which intentionally keeps non-active app pages hidden.
     window.PacificEducationSingleNavigation = undefined;
-    document.body.classList.remove("pe-guided-flow");
-    document.body.removeAttribute("data-pe-active-guided-page");
-    document.body.removeAttribute("data-pe-flow-step");
+    // The page-isolation controller may put its state on either the document
+    // root or body. Clear both so its CSS cannot hide the focused controller test.
+    [document.documentElement, document.body].forEach(root => {
+      root.classList.remove("pe-guided-flow");
+      root.removeAttribute("data-pe-active-guided-page");
+      root.removeAttribute("data-pe-flow-step");
+    });
     const app = document.getElementById("app");
     if (app) {
       let node = app;
