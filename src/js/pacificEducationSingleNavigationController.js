@@ -13,14 +13,14 @@
  */
 
 var STEPS = {
-  prototypeNextButton:  [3, "levelSelection"],
-  levelNextButton:      [4, "subjectSelection"],
-  subjectNextButton:    [5, "termSelection"],
-  termNextButton:       [6, "capabilitySelection"],
-  capabilityNextButton: [7, "dailyLesson"],
-  dailyNextButton:      [8, "dailyLessonPracticeStage"],
-  practiceNextButton:   [9, "assessments"],
-  assessmentNextButton: [10, "pacificEducationCoverageDashboard"]
+  prototypeNextButton:  [5, "levelSelection"],
+  levelNextButton:      [6, "subjectSelection"],
+  subjectNextButton:    [7, "termSelection"],
+  termNextButton:       [8, "capabilitySelection"],
+  capabilityNextButton: [9, "dailyLesson"],
+  dailyNextButton:      [10, "dailyLessonPracticeStage"],
+  practiceNextButton:   [11, "assessments"],
+  assessmentNextButton: [12, "pacificEducationCoverageDashboard"]
 };
 
 var GATEWAY = {
@@ -290,7 +290,7 @@ function renderPageGuide(targetId){
     var detail=document.createElement("p");
     detail.className="pacedu-page-sequence-detail";
     detail.style.cssText="margin:5px 0 0";
-    detail.textContent="Complete the blue-highlighted entry boxes on this page, then use the green Next button. Only the current page should be shown.";
+    detail.textContent=targetId==="pacificEducationWelcome"?"Review this welcome and introduction, then use the green Next button. Only the current page should be shown.":"Complete the blue-highlighted entry boxes on this page, then use the green Next button. Only the current page should be shown.";
     guide.appendChild(number);
     guide.appendChild(detail);
     target.insertBefore(guide,target.firstChild);
@@ -337,7 +337,33 @@ function enforceSingleVisiblePage(targetId, expectedStep){
   });
 }
 
+function stopSpeechForPageTransition(targetId){
+  var active=document.body.getAttribute("data-pe-active-guided-page")||"";
+  if(!active){
+    var entry=document.body.getAttribute("data-pac-edu-entry-page");
+    active=entry==="1"?GATEWAY.welcome:entry==="2"?GATEWAY.vision:entry==="3"?GATEWAY.rules:"";
+  }
+  if(!active || active===targetId) return;
+  /* A page's audio must not continue into the next page (especially Welcome -> Registration). */
+  try{
+    var speech=window.PacificEducationSpeech;
+    if(speech && typeof speech.stopSpeech==="function"){
+      speech.stopSpeech();
+      return;
+    }
+  }catch(e){}
+  try{
+    if(window.PacificEducationNativeTTS && typeof window.PacificEducationNativeTTS.stop==="function"){
+      window.PacificEducationNativeTTS.stop();
+    }
+    if(window.speechSynthesis && typeof window.speechSynthesis.cancel==="function"){
+      window.speechSynthesis.cancel();
+    }
+  }catch(e){}
+}
+
 function guided(step,targetId){
+  stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
   document.body.setAttribute("data-pe-flow-step",String(step));
@@ -347,7 +373,8 @@ function guided(step,targetId){
   var ok=revealTarget(targetId);
   if(ok){
     renderPageGuide(targetId);
-    setStatus("Pacific Education page "+String(step+1)+" is active. Use the green Next button to continue.");
+    var pageInfo=PAGE_GUIDE[targetId];
+    setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
     /* Run after click handlers and their queued repairs; never change the protected voice engine. */
     window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
     window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
@@ -361,6 +388,8 @@ function guided(step,targetId){
 }
 
 function gateway(page){
+  var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
+  stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
@@ -576,19 +605,19 @@ function bindGuidedFeatureButtons(){
   });
 
   bind("dailyActivitiesContinuePracticeButton",function(){
-    guided(8,"dailyLessonPracticeStage");
+    guided(10,"dailyLessonPracticeStage");
   });
 
   bind("practiceContinueAssessmentButton",function(){
-    guided(9,"assessments");
+    guided(11,"assessments");
   });
 
   bind("assessmentContinueCoverageButton",function(){
-    guided(10,"pacificEducationCoverageDashboard");
+    guided(12,"pacificEducationCoverageDashboard");
   });
 
   bind("coverageNextButton",function(button){
-    if(!button.disabled) guided(11,"teacherCalendarSection");
+    if(!button.disabled) guided(13,"teacherCalendarSection");
   });
 
   bind("teacherCalendarNextButton",function(button){

@@ -16,6 +16,7 @@ on:
       - "automation/**"
       - "package.json"
       - ".github/workflows/android-pilot-build.yml"
+      - ".github/workflows/pilot-user-readiness-gate.yml"
 permissions:
   contents: write
 concurrency:

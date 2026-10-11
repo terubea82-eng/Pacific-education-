@@ -11,7 +11,8 @@
   }
   function speak(text){
     if(typeof window.speakText==="function"){window.speakText(text);return;}
-    if(window.speechSynthesis){window.speechSynthesis.cancel();window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));}
+    var status=document.getElementById("pacificEducationAccountRecoveryStatus");
+    if(status)status.textContent="Pacedu voice engine is unavailable. Use the shared Hear Instructions control when available.";
   }
   function render(){
     var target=document.getElementById("pacificEducationAccountRecovery");
