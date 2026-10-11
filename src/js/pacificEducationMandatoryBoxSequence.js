@@ -221,30 +221,24 @@
       window.setTimeout(function(){
         var registered=false;
         try{
-          registered=window.sessionStorage.getItem("pacificEducationPilotRegistered")==="true" ||
-            !!window.sessionStorage.getItem("pacificEducationPilotRegistration");
-          /* Some legacy registration handlers replace the save callback after this
-             sequence initializes. If the normal Save click did not persist, safely
-             complete only the synthetic pilot record from the already validated
-             display name and selected role. Never create a production identity. */
+          registered=window.sessionStorage.getItem("pacificEducationPilotRegistered")==="true";
           if(!registered){
-            var nameField=get("pilotRegistrationName");
-            var roleField=get("pilotRegistrationRole");
-            var countryField=get("pacificEducationCountrySelect");
-            var languageField=get("pacificEducationLanguageSelect");
-            var displayName=String(nameField&&nameField.value||"").trim();
-            var roleValue=String(roleField&&roleField.value||selectedRole()||"").trim();
-            if(displayName && roleValue && countryField&&countryField.value && languageField&&languageField.value){
-              var pilotRecord={name:displayName,role:roleValue,registeredAt:(new Date()).toISOString(),pilotOnly:true};
-              window.sessionStorage.setItem("pacificEducationPilotRegistration",JSON.stringify(pilotRecord));
-              window.sessionStorage.setItem("pacificEducationPilotRole",roleValue);
-              registered=true;
+            var raw=window.sessionStorage.getItem("pacificEducationPilotRegistration");
+            if(raw){
+              var record=JSON.parse(raw);
+              var roleValue=String(record && record.role || "").trim();
+              var displayName=String(record && (record.name || record.displayName) || "").trim();
+              var roleField=get("pilotRegistrationRole");
+              var selectedValue=String(roleField && roleField.value || "").trim();
+              var roleCard=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed='true']");
+              if(!selectedValue && roleCard) selectedValue=String(roleCard.getAttribute("data-role")||"").trim();
+              registered=!!(displayName && roleValue && selectedValue && roleValue.toLowerCase()===selectedValue.toLowerCase());
             }
           }
-        }catch(e){}
+        }catch(e){ registered=false; }
         if(!registered){
-          progress.textContent="Registration has not been confirmed. Check the required fields and try Save Registration again.";
-          speak("Registration has not been confirmed. Check the required fields and try again.");
+          progress.textContent="Registration has not been confirmed. Your details were not saved, so Pacedu will keep you on this page. Check the required fields and try Save Registration again.";
+          speak("Registration has not been confirmed. Your details were not saved. Check the required fields and try again.");
           return;
         }
         progress.textContent="Registration confirmed. Opening the next guided page.";
