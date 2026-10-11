@@ -57,7 +57,14 @@
       var l=localStorage.getItem("pacificEducationRegistrationLanguage")||"";
       var cs=document.getElementById("pacificEducationCountrySelect"),ls=document.getElementById("pacificEducationLanguageSelect");
       if(cs && c)cs.value=c;
-      if(ls && l)ls.value=l;
+      if(ls){
+        if(l)ls.value=l;
+        /* English is the accessible default; users can still select another language. */
+        if(!ls.value){
+          if(Array.prototype.some.call(ls.options,function(option){return option.value==="en-AU";}))ls.value="en-AU";
+          else if(ls.options.length>1)ls.selectedIndex=1;
+        }
+      }
     }catch(e){}
     return saveContext();
   }
@@ -97,7 +104,7 @@
   function init(){
     if(bind())restore();
     var attempts=0;
-    var timer=setInterval(function(){if(bind()||++attempts>=20)clearInterval(timer);},250);
+    var timer=setInterval(function(){if(bind()){restore();clearInterval(timer);}else if(++attempts>=40)clearInterval(timer);},250);
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
   window.PacificEducationRegistrationContext={save:saveContext,restore:restore,validate:validate,bind:bind,countries:COUNTRY_NAMES};

@@ -46,8 +46,85 @@ var BACK = {
   teacherCalendarSection: [13, "coverage"]
 };
 
+/* Final runtime visibility authority: override legacy CSS step maps that conflict with this controller. */
+function installSinglePageVisibilityStyles(){
+  if(document.getElementById("pacedu-single-page-visibility-authority")) return;
+  var style=document.createElement("style");
+  style.id="pacedu-single-page-visibility-authority";
+  style.textContent = [
+    "body.pe-guided-flow.pe-pilot-all-features main > *{display:none !important;visibility:hidden !important;}",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='1'] #pacificEducationIdentityRegistration,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='2'] #prototypeAccess,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='3'] #levelSelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='4'] #subjectSelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='5'] #termSelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='6'] #capabilitySelection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='7'] #dailyLesson,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='8'] #dailyLessonPracticeStage,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='9'] #assessments,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #teacherCalendarSection,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection{display:block !important;visibility:visible !important;}",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='10'] #pacificEducationCoverageDashboard *,",
+    "body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step='11'] #teacherCalendarSection *{visibility:visible;}",
+    "body.pe-guided-flow #pacificEducationExternalReviewerPortal{display:none !important;visibility:hidden !important;}",
+    "body.pe-guided-flow > #pacificEducationMailbox,body.pe-guided-flow > #pacificEducationAppMenu,body.pe-guided-flow > #pilotBanner,body.pe-guided-flow > #pacificEducationRefreshNotice,body.pe-guided-flow > header{display:none !important;visibility:hidden !important;}"
+  ].join(" ");
+  (document.head||document.documentElement).appendChild(style);
+}
+
 var bound = {};
 var backBound = {};
+var isolationChanges = [];
+
+function restoreTargetIsolation(){
+  isolationChanges.forEach(function(change){
+    var node=change.node;
+    if(!node) return;
+    node.hidden=change.hidden;
+    if(change.ariaHidden===null) node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden",change.ariaHidden);
+    if(change.display) node.style.setProperty("display",change.display,change.displayPriority);
+    else node.style.removeProperty("display");
+  });
+  isolationChanges=[];
+}
+
+function rememberIsolationState(node){
+  if(!node || isolationChanges.some(function(change){return change.node===node;})) return;
+  isolationChanges.push({
+    node:node,
+    hidden:node.hidden,
+    ariaHidden:node.hasAttribute("aria-hidden")?node.getAttribute("aria-hidden"):null,
+    display:node.style.getPropertyValue("display"),
+    displayPriority:node.style.getPropertyPriority("display")
+  });
+}
+
+function isolateTargetPath(target){
+  var child=target;
+  var parent=target.parentElement;
+  while(parent && parent.id!=="app"){
+    rememberIsolationState(parent);
+    parent.hidden=false;
+    parent.removeAttribute("aria-hidden");
+    parent.style.setProperty("display","block","important");
+
+    Array.prototype.forEach.call(parent.children,function(sibling){
+      if(sibling===child) return;
+      rememberIsolationState(sibling);
+      sibling.hidden=true;
+      sibling.setAttribute("aria-hidden","true");
+      sibling.style.setProperty("display","none","important");
+    });
+
+    child=parent;
+    parent=parent.parentElement;
+  }
+  rememberIsolationState(target);
+  target.hidden=false;
+  target.removeAttribute("aria-hidden");
+  target.style.setProperty("display","block","important");
+}
 var GUIDED_PAGES = [
   "paceduPageVision",
   "paceduPageRules",
@@ -214,19 +291,15 @@ function revealTarget(targetId){
   var target=el(targetId);
   if(!target) return false;
 
+  /* Undo the previous isolation before the guided-page controller hides non-target pages. */
+  restoreTargetIsolation();
   hideOtherGuidedPages(targetId);
   syncNextWrapper(targetId);
   updateUserBoxDirection(targetId);
 
-  target.hidden=false;
-  target.removeAttribute("aria-hidden");
-  try{ target.style.removeProperty("display"); }catch(e){}
-
-  var parent=target.parentElement;
-  while(parent && parent.id!=="app"){
-    parent.hidden=false;
-    parent=parent.parentElement;
-  }
+  /* main > * is intentionally hidden by the runtime CSS. Reveal only the target's
+     ancestor path and hide sibling branches, otherwise a nested target stays invisible. */
+  isolateTargetPath(target);
 
   try{ target.scrollIntoView({behavior:"smooth",block:"start"}); }
   catch(e){ try{ target.scrollIntoView(); }catch(ignore){} }
@@ -657,6 +730,7 @@ function observeFeatureChanges(){
 }
 
 function init(){
+  installSinglePageVisibilityStyles();
   bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
