@@ -117,4 +117,30 @@
   var observer=new MutationObserver(function(){wrapSpeechObject();});
   if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true});
   setTimeout(wrapSpeechObject,250);setTimeout(wrapSpeechObject,1000);setTimeout(wrapSpeechObject,2500);
+
+  /* A welcome conversation may already be speaking when the user presses Next.
+     The old guard blocked a new welcome call on Registration, but did not cancel
+     audio already in progress. Stop and clear only the Page 1 welcome/resume audio
+     as soon as the visible flow leaves Page 1. Later-page instructions are started
+     by the page-navigation controller after this cancellation. */
+  var wasOnWelcomePage=pageOne();
+  function cancelWelcomeWhenLeavingPageOne(){
+    var onWelcome=pageOne();
+    if(wasOnWelcomePage&&!onWelcome){
+      clearPersistedWelcomeConversation();
+      try{
+        if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function"){
+          window.PacificEducationSpeech.stopSpeech();
+        }else if(window.speechSynthesis&&typeof window.speechSynthesis.cancel==="function"){
+          window.speechSynthesis.cancel();
+        }
+      }catch(_){}
+      setWelcomeBlockedStatus();
+    }
+    wasOnWelcomePage=onWelcome;
+  }
+  var pageTransitionObserver=new MutationObserver(cancelWelcomeWhenLeavingPageOne);
+  if(document.body)pageTransitionObserver.observe(document.body,{attributes:true,attributeFilter:["class","data-pe-flow-step"]});
+  if(document.documentElement)pageTransitionObserver.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","class"]});
+  setTimeout(cancelWelcomeWhenLeavingPageOne,0);
 })(window,document);
