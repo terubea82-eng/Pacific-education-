@@ -97,12 +97,29 @@ test("Registration voice removes the legacy welcome phrase before speech playbac
     .map(call => call.text));
   expect(welcomeCallsOnRegistration, "Page 1 welcome narration must never play on Registration").toEqual([]);
 
+  // Automatic registration-box narration must remain silent. The user may still
+  // request page-specific help explicitly using Hear Instructions / AI Playback.
   await page.evaluate(() => window.PacificEducationSpeech.speakConversation([
-    { speaker: "Narrator", text: "Welcome to User Registration. Complete each required box carefully, one box at a time." }
+    { speaker: "Narrator", text: "Registration step 1 of 4. Country. Complete this box, then press Next." }
   ]));
+  await page.waitForTimeout(80);
+  expect(await page.evaluate(() => window.__paceduSpeechCalls.length), "Registration must not auto-speak").toBe(0);
+
+  await page.evaluate(() => {
+    const manual = document.createElement("button");
+    manual.textContent = "Hear Instructions";
+    document.body.appendChild(manual);
+    manual.click();
+    manual.remove();
+    window.PacificEducationSpeech.speakConversation([
+      { speaker: "Narrator", text: "Welcome to User Registration. Complete each required box carefully, one box at a time." }
+    ]);
+  });
 
   await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length), { timeout: 5000 }).toBeGreaterThan(0);
   const spoken = await page.evaluate(() => window.__paceduSpeechCalls.map(call => call.text).join(" "));
+  expect(spoken).not.toMatch(/Welcome to (?:Pacific Education|Pacedu)/i);
+  expect(spoken).not.toMatch(/Owner.?s experience|21 years.*classroom teaching/i);
   expect(spoken).not.toMatch(/Welcome to User Registration/i);
   expect(spoken).toMatch(/User Registration instructions/i);
   expect(spoken).toMatch(/Complete each required box carefully/i);
