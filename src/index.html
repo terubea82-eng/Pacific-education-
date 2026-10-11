@@ -188,18 +188,21 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
    Coverage lives inside teacherCalendarSection, so its parent must remain visible at step 10.
    Protected #856 voice scripts are not modified. */
 body.pe-guided-flow.pe-pilot-all-features main > *{display:none !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="1"] #pacificEducationIdentityRegistration{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="2"] #prototypeAccess{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="3"] #levelSelection{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="4"] #subjectSelection{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="5"] #termSelection{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="6"] #capabilitySelection{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="7"] #dailyLesson{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="8"] #dailyLessonPracticeStage{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #assessments{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #teacherCalendarSection{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #teacherCalendarSection,
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #pacificEducationExternalReviewerPortal{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="1"] #paceduPageVision{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="2"] #paceduPageRules{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="3"] #pacificEducationIdentityRegistration{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="4"] #prototypeAccess{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="5"] #levelSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="6"] #subjectSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="7"] #termSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="8"] #capabilitySelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="9"] #dailyLesson{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="10"] #dailyLessonPracticeStage{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="11"] #assessments{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="12"] #teacherCalendarSection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="12"] #pacificEducationCoverageDashboard{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="12"] #teacherCalendarSection > :not(#pacificEducationCoverageDashboard){display:none !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalendarSection{display:block !important}
 
 /* Keep every user type inside the single User Registration box. */
 #pacificEducationRegistrationBox{grid-column:1 / -1;min-width:0}
