@@ -63,3 +63,11 @@ test("controller-managed activity and transition buttons have explicit bindings"
     assert.match(controller, new RegExp('bind\\("' + id + '"'));
   }
 });
+
+test("registration narration never repeats the welcome introduction", () => {
+  const voice = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
+  const registration = voice.match(/\{step:1,id:"pacificEducationIdentityRegistration",label:"Registration",text:"([^"]+)"\}/);
+  assert.ok(registration, "registration page voice instruction must exist");
+  assert.doesNotMatch(registration[1], /welcome to pacific education|welcome to user registration|owner experience|21 years classroom teaching/i);
+  assert.match(registration[1], /complete each required box carefully/i);
+});
