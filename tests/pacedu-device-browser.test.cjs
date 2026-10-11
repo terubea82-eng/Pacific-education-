@@ -364,20 +364,20 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   });
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell).toBeVisible();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — My Child");
+  await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — My Child");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 4");
   await expect(page.locator("#peSequentialPage")).toBeVisible();
 
   await page.locator("#peSequentialNext").click();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — Teacher Communication");
+  await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Teacher Communication");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 4");
 
   await page.locator("#peSequentialNext").click();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — Child Progress");
+  await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Child Progress");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 4");
 
   await page.locator("#peSequentialNext").click();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — Sign Out");
+  await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Sign Out");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
   await expect(page.locator("#peSequentialNext")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
