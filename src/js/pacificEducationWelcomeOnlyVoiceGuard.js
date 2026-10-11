@@ -52,8 +52,17 @@
     var el=event.target&&event.target.closest?event.target.closest("button,[role='button'],input[type='button']"):null;
     if(manualControl(el))manualUntil=Date.now()+5000;
   },true);
-  function permit(text){
+  function sanitizeRegistrationText(text){
     var clean=String(text||"").replace(/\s+/g," ").trim();
+    /* The legacy page controller's Registration prompt starts with a welcome
+       phrase. Keep its useful instructions but remove that phrase everywhere. */
+    if(/^welcome to user registration[.!]?\s*/i.test(clean)){
+      clean=clean.replace(/^welcome to user registration[.!]?\s*/i,"User Registration instructions. ");
+    }
+    return clean;
+  }
+  function permit(text){
+    var clean=sanitizeRegistrationText(text);
     /* Page 1 owns the welcome/Owner introduction. Do not replay that narration
        on page 4 (registration) or any later page, even after a manual tap.
        Other page-specific instructions remain available through explicit controls. */
@@ -83,7 +92,7 @@
     var engine=window.PacificEducationSpeech;
     if(engine&&typeof engine.speakText==="function"&&!engine.speakText.__peWelcomeGuard){
       var original=engine.speakText;
-      var wrapped=function(text){if(!permit(text))return false;return original.apply(this,arguments);};
+      var wrapped=function(text){var clean=sanitizeRegistrationText(text);if(!permit(clean))return false;var args=Array.prototype.slice.call(arguments);args[0]=clean;return original.apply(this,args);};
       wrapped.__peWelcomeGuard=true;wrapped.__peOriginal=original;engine.speakText=wrapped;
     }
     /* Automatic welcome playback and screen-reopen recovery call speakConversation
@@ -109,7 +118,7 @@
     }
     if(typeof window.speakText==="function"&&!window.speakText.__peWelcomeGuard){
       var originalGlobal=window.speakText;
-      var globalWrapped=function(text){if(!permit(text))return false;return originalGlobal.apply(this,arguments);};
+      var globalWrapped=function(text){var clean=sanitizeRegistrationText(text);if(!permit(clean))return false;var args=Array.prototype.slice.call(arguments);args[0]=clean;return originalGlobal.apply(this,args);};
       globalWrapped.__peWelcomeGuard=true;globalWrapped.__peOriginal=originalGlobal;window.speakText=globalWrapped;
     }
   }
