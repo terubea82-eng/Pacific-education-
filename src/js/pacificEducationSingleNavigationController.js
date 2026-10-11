@@ -74,6 +74,57 @@ function installSinglePageVisibilityStyles(){
 
 var bound = {};
 var backBound = {};
+var isolationChanges = [];
+
+function restoreTargetIsolation(){
+  isolationChanges.forEach(function(change){
+    var node=change.node;
+    if(!node) return;
+    node.hidden=change.hidden;
+    if(change.ariaHidden===null) node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden",change.ariaHidden);
+    if(change.display) node.style.setProperty("display",change.display,change.displayPriority);
+    else node.style.removeProperty("display");
+  });
+  isolationChanges=[];
+}
+
+function rememberIsolationState(node){
+  if(!node || isolationChanges.some(function(change){return change.node===node;})) return;
+  isolationChanges.push({
+    node:node,
+    hidden:node.hidden,
+    ariaHidden:node.hasAttribute("aria-hidden")?node.getAttribute("aria-hidden"):null,
+    display:node.style.getPropertyValue("display"),
+    displayPriority:node.style.getPropertyPriority("display")
+  });
+}
+
+function isolateTargetPath(target){
+  var child=target;
+  var parent=target.parentElement;
+  while(parent && parent.id!=="app"){
+    rememberIsolationState(parent);
+    parent.hidden=false;
+    parent.removeAttribute("aria-hidden");
+    parent.style.setProperty("display","block","important");
+
+    Array.prototype.forEach.call(parent.children,function(sibling){
+      if(sibling===child) return;
+      rememberIsolationState(sibling);
+      sibling.hidden=true;
+      sibling.setAttribute("aria-hidden","true");
+      sibling.style.setProperty("display","none","important");
+    });
+
+    child=parent;
+    parent=parent.parentElement;
+  }
+  rememberIsolationState(target);
+  target.hidden=false;
+  target.removeAttribute("aria-hidden");
+  target.style.setProperty("display","block","important");
+}
 var GUIDED_PAGES = [
   "paceduPageVision",
   "paceduPageRules",
@@ -240,19 +291,15 @@ function revealTarget(targetId){
   var target=el(targetId);
   if(!target) return false;
 
+  /* Undo the previous isolation before the guided-page controller hides non-target pages. */
+  restoreTargetIsolation();
   hideOtherGuidedPages(targetId);
   syncNextWrapper(targetId);
   updateUserBoxDirection(targetId);
 
-  target.hidden=false;
-  target.removeAttribute("aria-hidden");
-  try{ target.style.removeProperty("display"); }catch(e){}
-
-  var parent=target.parentElement;
-  while(parent && parent.id!=="app"){
-    parent.hidden=false;
-    parent=parent.parentElement;
-  }
+  /* main > * is intentionally hidden by the runtime CSS. Reveal only the target's
+     ancestor path and hide sibling branches, otherwise a nested target stays invisible. */
+  isolateTargetPath(target);
 
   try{ target.scrollIntoView({behavior:"smooth",block:"start"}); }
   catch(e){ try{ target.scrollIntoView(); }catch(ignore){} }
