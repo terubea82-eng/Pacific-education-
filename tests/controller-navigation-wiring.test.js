@@ -71,3 +71,10 @@ test("registration narration never repeats the welcome introduction", () => {
   assert.doesNotMatch(registration[1], /welcome to pacific education|welcome to user registration|owner experience|21 years classroom teaching/i);
   assert.match(registration[1], /complete each required box carefully/i);
 });
+
+test("single-page visibility reveals nested targets without exposing sibling branches", () => {
+  assert.match(controller, /function isolateTargetPath\(target\)/);
+  assert.match(controller, /function restoreTargetIsolation\(\)/);
+  assert.match(controller, /isolateTargetPath\(target\)/);
+  assert.match(controller, /main > \*\{display:none !important;visibility:hidden !important;\}/);
+});
