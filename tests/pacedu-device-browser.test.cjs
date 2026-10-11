@@ -461,12 +461,18 @@ test("registration must remain on Page 4 when the real save does not persist", a
   await expect(registration).toBeVisible();
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
   await page.locator("#registrationNextButton").click();
+  await expect(registration, "Country Next must stay on Registration").toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
   await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
   await page.locator("#registrationNextButton").click();
+  await expect(registration, "Language Next must stay on Registration").toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
   await teacher.click({ force: true });
   await page.locator("#registrationNextButton").click();
+  await expect(registration, "Role Next must stay on Registration").toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await page.locator("#pilotRegistrationName").fill("Unsaved Pilot Test");
   await page.locator("#registrationNextButton").click();
   await page.waitForTimeout(700);
