@@ -54,13 +54,8 @@
         global.speakText(String(text || ""));
         return true;
       }
-      if ("speechSynthesis" in global) {
-        global.speechSynthesis.cancel();
-        var u = new global.SpeechSynthesisUtterance(String(text || ""));
-        u.lang = "en";
-        u.rate = 0.95;
-        global.speechSynthesis.speak(u);
-        return true;
+      if (global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText === "function") {
+        return !!global.PacificEducationSpeech.speakText(String(text || ""));
       }
     } catch (_) {}
     return false;
@@ -189,7 +184,7 @@
       recognition.onerror = function () { voice.disabled = false; if (status) status.textContent = "Voice input could not be captured. You can type instead."; };
       recognition.onend = function () { voice.disabled = false; };
       voice.onclick = function () { try { recognition.start(); } catch (_) {} };
-      if (stop) stop.onclick = function () { try { recognition.abort(); } catch (_) {} try { global.speechSynthesis.cancel(); } catch (_) {} if (status) status.textContent = "Voice stopped."; };
+      if (stop) stop.onclick = function () { try { recognition.abort(); } catch (_) {} try { if(global.PacificEducationSpeech&&typeof global.PacificEducationSpeech.stopSpeech==="function")global.PacificEducationSpeech.stopSpeech();else if(global.speechSynthesis)global.speechSynthesis.cancel(); } catch (_) {} if (status) status.textContent = "Voice stopped."; };
     }
     render();
   }
