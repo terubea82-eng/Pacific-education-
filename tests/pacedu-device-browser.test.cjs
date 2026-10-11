@@ -326,3 +326,47 @@ test("device speaker diagnostic surfaces a browser speech exception as a blocker
   expect(report.speech.error).toContain("synthetic device output failure");
   await expect(page.locator("#speechFacts")).not.toContainText("Yes, I heard the sound");
 });
+
+
+test("sequential Parent workspace advances one page at a time through confirmed Sign Out", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    sessionStorage.setItem("pacificEducationPilotRegistered", "true");
+    sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Parent Pilot Test",role:"Parent",pilotOnly:true}));
+    sessionStorage.setItem("pacificEducationPilotRole", "parent");
+    window.PacificEducationSequentialRoleWorkspaces.build("parent");
+  });
+  const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await expect(shell).toBeVisible();
+  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — My Child");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 4");
+  await expect(page.locator("#peSequentialPage")).toBeVisible();
+
+  await page.locator("#peSequentialNext").click();
+  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — Teacher Communication");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 4");
+
+  await page.locator("#peSequentialNext").click();
+  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — Child Progress");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 4");
+
+  await page.locator("#peSequentialNext").click();
+  await expect(page.locator("#peSequentialTitle")).toContainText("Parent Workspace — Sign Out");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
+  await expect(page.locator("#peSequentialNext")).toBeHidden();
+  await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
+
+  await page.locator("#peSequentialSignOutButton").click();
+  await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
+  await page.locator("#peSequentialSignOutYes").click();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveCount(0);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  const cleared = await page.evaluate(() => ({
+    registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
+    registration: sessionStorage.getItem("pacificEducationPilotRegistration"),
+    role: sessionStorage.getItem("pacificEducationPilotRole")
+  }));
+  expect(cleared).toEqual({ registered: null, registration: null, role: null });
+});
