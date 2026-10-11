@@ -172,6 +172,42 @@ public final class MainActivity extends Activity {
         if (!prefs.getBoolean(VOICE_RESUME_ACTIVE, false) || prefs.getBoolean(VOICE_RESUME_STOPPED, false)) return;
         String json = prefs.getString(VOICE_RESUME_JSON, "");
         if (json == null || json.trim().isEmpty()) return;
+
+        /*
+         * A saved Page 1 introduction must never restart after the user has entered
+         * Registration. The browser guard cannot see Android SharedPreferences, so
+         * enforce this boundary here while preserving resume for ordinary lesson
+         * and task instructions. Only clear the saved conversation when both the
+         * current URL is the explicit registration entry and the saved audio is
+         * recognisably the Welcome/owner introduction.
+         */
+        String currentUrl = "";
+        try {
+            if (webView != null && webView.getUrl() != null) currentUrl = webView.getUrl();
+        } catch (Exception ignored) { }
+        boolean registrationEntry = currentUrl.toLowerCase(Locale.ROOT).contains("entry=registration");
+        boolean welcomeIntroduction = false;
+        try {
+            JSONArray savedLines = new JSONArray(json);
+            StringBuilder savedText = new StringBuilder();
+            for (int i = 0; i < savedLines.length(); i++) {
+                JSONObject savedLine = savedLines.optJSONObject(i);
+                if (savedLine != null) savedText.append(' ').append(savedLine.optString("text", ""));
+            }
+            String normalised = savedText.toString().toLowerCase(Locale.ROOT);
+            welcomeIntroduction = normalised.contains("welcome to pacedu")
+                    || normalised.contains("tion terubea")
+                    || normalised.contains("21 years classroom teaching")
+                    || normalised.contains("modern education platform");
+        } catch (Exception ignored) { }
+        if (registrationEntry && welcomeIntroduction) {
+            clearNativeConversationResume();
+            if (textToSpeech != null) {
+                try { textToSpeech.stop(); } catch (Exception ignored) { }
+            }
+            return;
+        }
+
         nativeConversationJson = json;
         nativeConversationIndex = Math.max(0, prefs.getInt(VOICE_RESUME_INDEX, 0));
         nativeConversationOffset = Math.max(0, prefs.getInt(VOICE_RESUME_OFFSET, 0));
