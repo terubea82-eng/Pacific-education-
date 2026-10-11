@@ -30,6 +30,17 @@
     return true;
   }
 
+  function repairRegistrationNarration(){
+    var navigation = window.PacificEducationMandatoryVoiceNavigation;
+    if (!navigation || !Array.isArray(navigation.pages)) return false;
+    var registration = navigation.pages.find(function(page){
+      return page && page.step === 1 && page.id === "pacificEducationIdentityRegistration";
+    });
+    if (!registration) return false;
+    registration.text = "User Registration is now open. Please complete each required box carefully. Enter your information one box at a time. When all required information is complete, review it and select Next to continue.";
+    return true;
+  }
+
   function installSpeechGate(){
     var speech = window.PacificEducationSpeech;
     if (!speech || typeof speech.speakText !== "function") return false;
@@ -60,6 +71,7 @@
     } else {
       installSpeechGate();
     }
+    repairRegistrationNarration();
     markFinishedIfReady();
   }
 
