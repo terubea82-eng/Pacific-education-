@@ -81,6 +81,11 @@ test("live pilot page loads at desktop size without uncaught page errors", async
 test("Registration voice removes the legacy welcome phrase before speech playback", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
+  // The entry route is intentionally gated by the accepted pilot rules. Set that
+  // state before navigation, matching the real flow and the mobile registration test.
+  await page.addInitScript(() => {
+    try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
+  });
   await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSpeech?.speakConversation), { timeout: 8000 }).toBe("function");
