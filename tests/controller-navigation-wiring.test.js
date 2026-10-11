@@ -50,6 +50,7 @@ test("feature registry IDs match real or controller-created elements", () => {
 test("controller preserves the protected voice engine and does not replace it", () => {
   assert.match(html, /pacificEducationSpeechVoice\.js/);
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
+  assert.match(controller, /var pageInfo=PAGE_GUIDE\[targetId\]/);
 });
 
 test("controller-managed activity and transition buttons have explicit bindings", () => {
