@@ -122,6 +122,25 @@ test("mobile touch can complete registration and select a role before Next advan
   await expect(page.locator("#registrationNextButton")).toBeEnabled();
   console.log("[mobile flow] name filled; tap Save/Next");
   await page.locator("#registrationNextButton").tap();
+  await page.waitForTimeout(700);
+  const handoffDiagnostic = await page.evaluate(() => {
+    const read = key => { try { return sessionStorage.getItem(key); } catch (_) { return "sessionStorage-unavailable"; } };
+    const page = document.querySelector("#prototypeAccess");
+    const registrationPage = document.querySelector("#pacificEducationIdentityRegistration");
+    const status = document.querySelector("#pacificEducationInteractionStatus") || document.querySelector("#pacificEducationVoiceStatus");
+    return {
+      registeredFlag: read("pacificEducationPilotRegistered"),
+      registrationRecord: read("pacificEducationPilotRegistration"),
+      selectedRole: read("pacificEducationPilotRole"),
+      flowStep: document.body.getAttribute("data-pe-flow-step"),
+      activeGuidedPage: document.body.getAttribute("data-pe-active-guided-page"),
+      prototypeHidden: !!(page && page.hidden),
+      prototypeDisplay: page ? getComputedStyle(page).display : "missing",
+      registrationHidden: !!(registrationPage && registrationPage.hidden),
+      statusText: status ? status.textContent : ""
+    };
+  });
+  console.log("[mobile flow] post-save handoff diagnostic " + JSON.stringify(handoffDiagnostic));
   await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
   await expect(registration).toBeHidden();
   console.log("[mobile flow] Prototype Access visible and registration hidden");
