@@ -81,12 +81,19 @@
       if(window.speechSynthesis)window.speechSynthesis.cancel();
     }catch(_){}
   }
-  function currentStep(){var b=document.body;if(!b)return null;var n=Number(b.getAttribute("data-pe-flow-step"));return Number.isFinite(n)?n:null;}
+  function currentStep(){var b=document.body;if(!b)return null;var raw=b.getAttribute("data-pe-flow-step");if(raw===null||String(raw).trim()==="")return null;var n=Number(raw);return Number.isFinite(n)?n:null;}
   function pageForStep(step){for(var i=0;i<STEP_PAGES.length;i++)if(STEP_PAGES[i].step===step)return STEP_PAGES[i];return null;}
   function visibleElement(id){
-    var e=document.getElementById(id);if(!e||e.hidden)return null;
-    var s=window.getComputedStyle?window.getComputedStyle(e):null;
-    if(s&&(s.display==="none"||s.visibility==="hidden"))return null;return e;
+    var e=document.getElementById(id);if(!e)return null;
+    /* A descendant of a hidden page is not an active workspace, even if its own CSS says block. */
+    var node=e;
+    while(node && node!==document){
+      if(node.hidden)return null;
+      var s=window.getComputedStyle?window.getComputedStyle(node):null;
+      if(s&&(s.display==="none"||s.visibility==="hidden"))return null;
+      node=node.parentElement;
+    }
+    return e;
   }
 
   function ensureTopRightVoiceControls(){
@@ -243,7 +250,8 @@
     /* Registration completion voice is mandatory on/after Registration only.
        Never let saved registration data trigger registration/workspace speech on
        the first Welcome + Owner Experience page. */
-    if(currentStep()===0)return;
+    var activeStep=currentStep();
+    if(activeStep===null||activeStep===0)return;
     var sig=registrationSignature();
     if(!sig||sig===lastRegistrationSignature)return;
     lastRegistrationSignature=sig;
