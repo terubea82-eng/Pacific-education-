@@ -176,6 +176,6 @@
   }
   var pageTransitionObserver=new MutationObserver(cancelWelcomeWhenLeavingPageOne);
   if(document.body)pageTransitionObserver.observe(document.body,{attributes:true,attributeFilter:["class","data-pe-flow-step"]});
-  if(document.documentElement)pageTransitionObserver.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","class"]});
+  if(document.documentElement)pageTransitionObserver.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","class"]});
   setTimeout(cancelWelcomeWhenLeavingPageOne,0);
 })(window,document);
