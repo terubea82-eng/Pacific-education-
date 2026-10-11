@@ -337,7 +337,33 @@ function enforceSingleVisiblePage(targetId, expectedStep){
   });
 }
 
+function stopSpeechForPageTransition(targetId){
+  var active=document.body.getAttribute("data-pe-active-guided-page")||"";
+  if(!active){
+    var entry=document.body.getAttribute("data-pac-edu-entry-page");
+    active=entry==="1"?GATEWAY.welcome:entry==="2"?GATEWAY.vision:entry==="3"?GATEWAY.rules:"";
+  }
+  if(!active || active===targetId) return;
+  /* A page's audio must not continue into the next page (especially Welcome -> Registration). */
+  try{
+    var speech=window.PacificEducationSpeech;
+    if(speech && typeof speech.stopSpeech==="function"){
+      speech.stopSpeech();
+      return;
+    }
+  }catch(e){}
+  try{
+    if(window.PacificEducationNativeTTS && typeof window.PacificEducationNativeTTS.stop==="function"){
+      window.PacificEducationNativeTTS.stop();
+    }
+    if(window.speechSynthesis && typeof window.speechSynthesis.cancel==="function"){
+      window.speechSynthesis.cancel();
+    }
+  }catch(e){}
+}
+
 function guided(step,targetId){
+  stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
   document.body.setAttribute("data-pe-flow-step",String(step));
@@ -361,6 +387,8 @@ function guided(step,targetId){
 }
 
 function gateway(page){
+  var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
+  stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
