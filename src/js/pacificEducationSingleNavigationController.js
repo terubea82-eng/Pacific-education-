@@ -71,7 +71,8 @@ function installSinglePageVisibilityStyles(){
   ].join(" ");
   (document.head||document.documentElement).appendChild(style);
 }
-\nvar bound = {};
+
+var bound = {};
 var backBound = {};
 var GUIDED_PAGES = [
   "paceduPageVision",
