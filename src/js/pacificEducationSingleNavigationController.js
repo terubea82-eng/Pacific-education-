@@ -682,6 +682,7 @@ function observeFeatureChanges(){
 }
 
 function init(){
+  installSinglePageVisibilityStyles();
   bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
