@@ -94,7 +94,7 @@ test("AI Playback narrates every line with one consistent English voice", () => 
   assert.equal(h.utterances[1].text, lines[1].text);
   assert.match(h.utterances[1].voice.lang, /^en-/);
   h.utterances[1].onstart();
-  assert.equal(h.status.textContent, "AI Playback: Speaker 1 is speaking.");
+  assert.equal(h.status.textContent, "AI Playback: Speaker 2 is speaking.");
   h.utterances[1].onend();
   assert.equal(h.status.textContent, "AI Playback conversation complete.");
   assert.equal(h.window.localStorage.getItem("pacificEducationVoiceResume"), null);
