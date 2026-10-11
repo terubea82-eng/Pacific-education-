@@ -6,7 +6,7 @@
 (function(){
   "use strict";
   var GREEN="#15803d";
-  var steps=[["welcomeNextButton","Step 1","Welcome","Next"],["registrationNextButton","Step 2","Student Workspace","Open workspace"],["prototypeNextButton","Step 3","Workspace access","Next"],["levelNextButton","Step 4","Class / Level","Next"],["subjectNextButton","Step 5","Subject","Next"],["termNextButton","Step 6","Term","Next"],["capabilityNextButton","Step 7","Learning capability","Open workspace"]];
+  var steps=[["welcomeNextButton","Step 1","Welcome","Next"],["registrationNextButton","Registration setup","Continue registration","Continue"],["prototypeNextButton","Step 3","Workspace access","Next"],["levelNextButton","Step 4","Class / Level","Next"],["subjectNextButton","Step 5","Subject","Next"],["termNextButton","Step 6","Term","Next"],["capabilityNextButton","Step 7","Learning capability","Open workspace"]];
   function css(){
     if(document.getElementById("pe-green-guided-style"))return;
     var s=document.createElement("style");s.id="pe-green-guided-style";
@@ -29,7 +29,7 @@
     var form=document.getElementById("userRegistrationForm");
     if(!form||form.querySelector(".pe-green-role-hint"))return;
     var hint=document.createElement("div");hint.className="pe-green-role-hint";hint.setAttribute("role","status");
-    hint.textContent="Step 2: Choose your user role, complete the registration boxes, then follow the green Next button.";
+    hint.textContent="Choose your user role, complete the registration boxes, then follow the green Next button. This instruction applies only when the User Registration box is open.";
     form.insertBefore(hint,form.firstChild);
   }
   function init(){
