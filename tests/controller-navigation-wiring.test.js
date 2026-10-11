@@ -83,12 +83,12 @@ test("page changes stop the previous page's audio without replacing the protecte
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
 });
 
-test("voice navigation does not treat missing flow state or hidden workspaces as active", () => {
-  assert.match(voiceNavigation, /var raw=b\.getAttribute\("data-pe-flow-step"\);if\(raw===null\|\|String\(raw\)\.trim\(\)===""\)return null/);
-  assert.match(voiceNavigation, /if\(node\.hidden\)return null/);
-  assert.match(voiceNavigation, /if\(activeStep===null\|\|activeStep===0\)return/);
+test("protected #856 voice navigation remains unchanged while guided visibility is managed by the page controller", () => {
+  assert.match(voiceNavigation, /The protected #856 voice controller remains the speech engine foundation/);
+  assert.match(voiceNavigation, /var STEP_PAGES = \\[/);
+  assert.match(controller, /data-pe-flow-step/);
+  assert.match(controller, /function guided\\(step,targetId\\)/);
 });
-
 test("guided Next transitions use the actual page numbers after registration", () => {
   assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
   assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
