@@ -4,6 +4,7 @@ const fs = require("node:fs");
 
 const html = fs.readFileSync("src/index.html", "utf8");
 const controller = fs.readFileSync("src/js/pacificEducationSingleNavigationController.js", "utf8");
+const voiceNavigation = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
 const htmlIds = new Set([...html.matchAll(/\bid=["']([^"']+)["']/g)].map((match) => match[1]));
 const controllerCreatedIds = new Set(
   [...controller.matchAll(/(?:button|wrapper|status|audio)\.id="([^"]+)"/g)].map((match) => match[1])
@@ -49,6 +50,7 @@ test("feature registry IDs match real or controller-created elements", () => {
 test("controller preserves the protected voice engine and does not replace it", () => {
   assert.match(html, /pacificEducationSpeechVoice\.js/);
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
+  assert.match(controller, /var pageInfo=PAGE_GUIDE\[targetId\]/);
 });
 
 test("controller-managed activity and transition buttons have explicit bindings", () => {
@@ -62,4 +64,39 @@ test("controller-managed activity and transition buttons have explicit bindings"
   ]) {
     assert.match(controller, new RegExp('bind\\("' + id + '"'));
   }
+});
+
+test("all-feature visibility cannot override one-page guided flow", () => {
+  assert.match(html, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) #learningPlatform/);
+  assert.match(html, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) #dailyLesson/);
+  assert.match(html, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) \.pacific-flow-next/);
+  assert.doesNotMatch(
+    html,
+    /body\.pe-pilot-all-features #learningPlatform,body\.pe-pilot-all-features #pacificEducationAppTools/
+  );
+});
+
+test("page changes stop the previous page's audio without replacing the protected voice engine", () => {
+  assert.match(controller, /function stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function guided\(step,targetId\)\{\s*stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function gateway\(page\)\{\s*var targetId=.*?stopSpeechForPageTransition\(targetId\)/s);
+  assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
+});
+
+test("protected #856 voice navigation remains unchanged while guided visibility is managed by the page controller", () => {
+  assert.match(voiceNavigation, /The protected #856 voice controller remains the speech engine foundation/);
+  assert.match(voiceNavigation, /var STEP_PAGES = \[/);
+  assert.match(controller, /data-pe-flow-step/);
+  assert.match(controller, /function guided\(step,targetId\)/);
+});
+test("guided Next transitions use the actual page numbers after registration", () => {
+  assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
+  assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
+  assert.match(controller, /subjectNextButton:\s*\[7,\s*"termSelection"\]/);
+  assert.match(controller, /termNextButton:\s*\[8,\s*"capabilitySelection"\]/);
+  assert.match(controller, /capabilityNextButton:\s*\[9,\s*"dailyLesson"\]/);
+  assert.match(controller, /dailyNextButton:\s*\[10,\s*"dailyLessonPracticeStage"\]/);
+  assert.match(controller, /practiceNextButton:\s*\[11,\s*"assessments"\]/);
+  assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
+  assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
 });

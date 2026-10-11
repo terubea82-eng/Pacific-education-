@@ -48,7 +48,7 @@
 </section>
 </main>
 <script>window.__pacificEducationAutoWelcomeVoiceScheduled = true;</script>
-<script src="./js/pacificEducationSpeechVoice.js?v=20261005-voice5"></script>
+<script src="./js/pacificEducationSpeechVoice.js?v=20261005-voice5"></script>\n<script src="./js/pacificEducationSingleNarratorVoiceGuard.js?v=20261012-single-narrator"></script>
 <script src="./js/pacificEducationNativeAndroidVoiceRepair.js?v=20261007-native-android-voice-repair"></script>
 <script>
 (function(){
@@ -102,11 +102,11 @@
     if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakConversation==="function"){
       var engine=typeof window.PacificEducationSpeech.getEngine==="function"?window.PacificEducationSpeech.getEngine():"Pacedu speech engine";
       var lines=[
-        {speaker:"1",text:"Pacific Education speaker test."},
-        {speaker:"2",text:"If you can hear this sentence, sound is working on this device."}
+        {speaker:"narrator",text:"Pacific Education speaker test."},
+        {speaker:"narrator",text:"If you can hear this sentence, sound is working on this device."}
       ];
       state.speech={result:"request-sent",engine:engine,mode:"Pacedu protected speech engine",voicesAvailable:window.speechSynthesis&&window.speechSynthesis.getVoices?window.speechSynthesis.getVoices().length:null};
-      setStatus("Pacedu voice engine request sent ("+engine+"). Listen for the two-speaker test, then confirm whether you actually heard sound.","idle");
+      setStatus("Pacedu voice engine request sent ("+engine+"). Listen for the single-narrator test, then confirm whether you actually heard sound.","idle");
       try{
         var started=window.PacificEducationSpeech.speakConversation(lines);
         if(!started)throw new Error("Pacedu speech engine did not accept the conversation");

@@ -1,6 +1,6 @@
 /* Pacific Education — welcome-first narration guard.
  * Additive only: preserves the protected #856 speech controller.
- * The two-speaker AI Playback must finish before page-guidance speech can start.
+ * The single-narrator AI Playback must finish before page-guidance speech can start.
  */
 (function(window, document){
   "use strict";
@@ -16,7 +16,7 @@
   function playbackFinished(){
     var text = statusText();
     if (/AI Playback (?:conversation )?complete/i.test(text)) return true;
-    if (/two-person AI playback requires a speech engine|speech engine unavailable|could not start speech/i.test(text)) return true;
+    if (/AI Playback requires an available speech engine|speech engine unavailable|could not start speech/i.test(text)) return true;
     return false;
   }
 
