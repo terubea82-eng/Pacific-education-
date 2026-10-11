@@ -13,14 +13,14 @@
  */
 
 var STEPS = {
-  prototypeNextButton:  [3, "levelSelection"],
-  levelNextButton:      [4, "subjectSelection"],
-  subjectNextButton:    [5, "termSelection"],
-  termNextButton:       [6, "capabilitySelection"],
-  capabilityNextButton: [7, "dailyLesson"],
-  dailyNextButton:      [8, "dailyLessonPracticeStage"],
-  practiceNextButton:   [9, "assessments"],
-  assessmentNextButton: [10, "pacificEducationCoverageDashboard"]
+  prototypeNextButton:  [5, "levelSelection"],
+  levelNextButton:      [6, "subjectSelection"],
+  subjectNextButton:    [7, "termSelection"],
+  termNextButton:       [8, "capabilitySelection"],
+  capabilityNextButton: [9, "dailyLesson"],
+  dailyNextButton:      [10, "dailyLessonPracticeStage"],
+  practiceNextButton:   [11, "assessments"],
+  assessmentNextButton: [12, "pacificEducationCoverageDashboard"]
 };
 
 var GATEWAY = {
@@ -605,19 +605,19 @@ function bindGuidedFeatureButtons(){
   });
 
   bind("dailyActivitiesContinuePracticeButton",function(){
-    guided(8,"dailyLessonPracticeStage");
+    guided(10,"dailyLessonPracticeStage");
   });
 
   bind("practiceContinueAssessmentButton",function(){
-    guided(9,"assessments");
+    guided(11,"assessments");
   });
 
   bind("assessmentContinueCoverageButton",function(){
-    guided(10,"pacificEducationCoverageDashboard");
+    guided(12,"pacificEducationCoverageDashboard");
   });
 
   bind("coverageNextButton",function(button){
-    if(!button.disabled) guided(11,"teacherCalendarSection");
+    if(!button.disabled) guided(13,"teacherCalendarSection");
   });
 
   bind("teacherCalendarNextButton",function(button){
