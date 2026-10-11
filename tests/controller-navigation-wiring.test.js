@@ -88,3 +88,15 @@ test("voice navigation does not treat missing flow state or hidden workspaces as
   assert.match(voiceNavigation, /if\(node\.hidden\)return null/);
   assert.match(voiceNavigation, /if\(activeStep===null\|\|activeStep===0\)return/);
 });
+
+test("guided Next transitions use the actual page numbers after registration", () => {
+  assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
+  assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
+  assert.match(controller, /subjectNextButton:\s*\[7,\s*"termSelection"\]/);
+  assert.match(controller, /termNextButton:\s*\[8,\s*"capabilitySelection"\]/);
+  assert.match(controller, /capabilityNextButton:\s*\[9,\s*"dailyLesson"\]/);
+  assert.match(controller, /dailyNextButton:\s*\[10,\s*"dailyLessonPracticeStage"\]/);
+  assert.match(controller, /practiceNextButton:\s*\[11,\s*"assessments"\]/);
+  assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
+  assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
+});
