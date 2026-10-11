@@ -144,7 +144,9 @@ test("mobile touch can complete registration and select a role before Next advan
   await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
-  console.log("[mobile flow] registration visible");
+  await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toContainText("Registration setup");
+  await expect(page.locator("#registrationNextWrapper .pe-green-guide")).not.toContainText("Student Workspace");
+  console.log("[mobile flow] registration visible with registration-specific green guidance");
 
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
   console.log("[mobile flow] country selected; tap Next");
