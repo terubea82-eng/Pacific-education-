@@ -106,27 +106,41 @@ public final class MainActivity extends Activity {
         if (textToSpeech == null || Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) return;
         try {
             Set<Voice> voices = textToSpeech.getVoices();
-            if (voices == null) return;
-            Voice fallback = null;
-            Voice maleFallback = null;
+            if (voices == null || voices.isEmpty()) return;
+
+            Voice installedAustralianEnglish = null;
+            Voice installedEnglishFallback = null;
             for (Voice voice : voices) {
                 if (voice == null || voice.getLocale() == null) continue;
                 if (!"en".equalsIgnoreCase(voice.getLocale().getLanguage())) continue;
-                boolean australiaEnglish = "AU".equalsIgnoreCase(voice.getLocale().getCountry());
-                if (fallback == null || (australiaEnglish && !("AU".equalsIgnoreCase(fallback.getLocale().getCountry())))) fallback = voice;
-                String name = String.valueOf(voice.getName()).toLowerCase(Locale.ROOT);
-                if (name.contains("male") || name.contains("man")
-                        || name.contains("david") || name.contains("mark") || name.contains("ryan")
-                        || name.contains("guy") || name.contains("alex") || name.contains("daniel")
-                        || name.contains("james") || name.contains("john") || name.contains("tom")
-                        || name.contains("aaron") || name.contains("arthur") || name.contains("oliver")) {
-                    maleFallback = voice;
+
+                // Do not select a network-only voice: WebView playback can be silent
+                // when that voice has not been downloaded or connectivity is limited.
+                if (voice.isNetworkConnectionRequired()) continue;
+
+                if ("AU".equalsIgnoreCase(voice.getLocale().getCountry())) {
+                    if (installedAustralianEnglish == null
+                            || voice.getQuality() > installedAustralianEnglish.getQuality()) {
+                        installedAustralianEnglish = voice;
+                    }
+                } else if (installedEnglishFallback == null
+                        || voice.getQuality() > installedEnglishFallback.getQuality()) {
+                    installedEnglishFallback = voice;
                 }
             }
-            preferredVoice = maleFallback != null ? maleFallback : fallback;
-            // Mandatory Pacedu policy: one selected narrator voice for every utterance.
-            if (preferredVoice != null) textToSpeech.setVoice(preferredVoice);
+
+            // Prefer an installed Australian English voice; otherwise use an installed
+            // English voice. If none exists, retain the Android engine's en-AU default
+            // rather than forcing an unavailable voice or a gender/name heuristic.
+            preferredVoice = installedAustralianEnglish != null
+                    ? installedAustralianEnglish : installedEnglishFallback;
+            if (preferredVoice != null) {
+                int result = textToSpeech.setVoice(preferredVoice);
+                if (result != TextToSpeech.SUCCESS) preferredVoice = null;
+            }
         } catch (Exception ignored) {
+            // Keep the already configured en-AU/system default voice as fallback.
+            preferredVoice = null;
         }
     }
 
