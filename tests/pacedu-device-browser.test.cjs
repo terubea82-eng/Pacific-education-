@@ -474,3 +474,38 @@ test("registration must remain on Page 4 when the real save does not persist", a
   await expect(page.locator("#prototypeAccess")).toBeHidden();
   await expect(page.locator("#peBoxSequenceProgress")).toContainText(/not been confirmed|not saved/i);
 });
+
+
+test("integrated Welcome → Vision → Rules → Registration flow never replays the welcome narration", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeHidden();
+
+  // Let the first-page narration finish before progressing through the real buttons.
+  await expect.poll(() => page.evaluate(() => window.__pacificEducationWelcomeCompleted), { timeout: 10000 }).toBe(true);
+  await page.locator("#welcomeNextButton").click({ force: true });
+  await expect(page.locator("#paceduPageVision")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+
+  await page.locator("#paceduVisionNext").click({ force: true });
+  await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
+  await page.locator("#paceduRulesAgreement").check({ force: true });
+  await page.locator("#paceduRulesContinue").click({ force: true });
+
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+  await expect(registration).toBeVisible();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await page.waitForTimeout(1200);
+  const welcomeCalls = await page.evaluate(() => window.__paceduSpeechCalls
+    .filter(call => /welcome to (?:pacific education|pacedu)|owner.?s experience|owner of pacific education|21 years.*classroom teaching/i.test(call.text))
+    .map(call => call.text));
+  expect(welcomeCalls, "the completed Page 1 narration must not resume on Registration").toEqual([]);
+  await expect(page.locator("#registrationNextButton")).toBeVisible();
+});
