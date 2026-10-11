@@ -78,6 +78,24 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
+test("Registration voice removes the legacy welcome phrase before speech playback", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSpeech?.speakConversation), { timeout: 8000 }).toBe("function");
+
+  await page.evaluate(() => window.PacificEducationSpeech.speakConversation([
+    { speaker: "Narrator", text: "Welcome to User Registration. Complete each required box carefully, one box at a time." }
+  ]));
+
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length), { timeout: 5000 }).toBeGreaterThan(0);
+  const spoken = await page.evaluate(() => window.__paceduSpeechCalls.map(call => call.text).join(" "));
+  expect(spoken).not.toMatch(/Welcome to User Registration/i);
+  expect(spoken).toMatch(/User Registration instructions/i);
+  expect(spoken).toMatch(/Complete each required box carefully/i);
+});
+
 test("mobile touch can complete registration and select a role before Next advances", async ({ browser }) => {
   const context = await browser.newContext({ viewport: { width: 360, height: 800 }, isMobile: true, hasTouch: true });
   const page = await context.newPage();
