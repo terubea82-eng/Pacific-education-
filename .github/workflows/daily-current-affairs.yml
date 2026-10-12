@@ -14,20 +14,24 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p docs/data
-          # Query one approved domain per request. GDELT supports a single OR block;
-          # combining multiple OR blocks can yield an empty/unexpected response.
+          # GDELT can throttle shared CI IPs. Identify the client and retry slowly.
+          # Keep requests spaced apart; never replace the feed if any request fails.
           for domain in unesco.org unicef.org un.org who.int; do
             echo "Querying GDELT for $domain"
             curl --fail --show-error --location --connect-timeout 15 --max-time 60 \
-              --retry 5 --retry-all-errors --retry-delay 5 --retry-max-time 120 \
+              --retry 8 --retry-all-errors --retry-delay 10 --retry-max-time 240 \
+              --user-agent 'PacificEducationPilot/1.0 (educational current-affairs feed; contact: repository maintainer)' \
+              --header 'Accept: application/json' \
               --get 'https://api.gdeltproject.org/api/v2/doc/doc' \
               --data-urlencode "query=(education OR school OR learning OR teacher) domain:$domain" \
               --data-urlencode 'mode=artlist' \
-              --data-urlencode 'maxrecords=250' \
+              --data-urlencode 'maxrecords=100' \
               --data-urlencode 'timespan=1week' \
               --data-urlencode 'sort=datedesc' \
               --data-urlencode 'format=json' \
               -o "/tmp/gdelt-$domain.json"
+            # Avoid bursting requests against the public endpoint.
+            sleep 10
           done
           node <<'NODE'
           const fs = require('fs');
