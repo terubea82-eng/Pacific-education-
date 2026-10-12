@@ -207,8 +207,14 @@ test("mobile touch can complete registration and select a role before Next advan
   await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
   await expect(registration).toBeHidden();
   console.log("[mobile flow] Prototype Access visible and registration hidden");
-  const savedRole = await page.evaluate(() => sessionStorage.getItem("pacificEducationPilotRole"));
-  expect(savedRole).toBe("Teacher");
+  const savedRegistration = await page.evaluate(() => ({
+    registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
+    role: sessionStorage.getItem("pacificEducationPilotRole"),
+    record: JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration") || "null")
+  }));
+  expect(savedRegistration.registered, "confirmed registration must set the shared registered flag").toBe("true");
+  expect(savedRegistration.role).toBe("Teacher");
+  expect(savedRegistration.record).toMatchObject({name:"Phone Pilot Test",role:"Teacher",pilotOnly:true});
   expect(errors, "uncaught JavaScript errors").toEqual([]);
   await context.close();
 });
@@ -533,5 +539,81 @@ test("integrated Welcome → Vision → Rules → Registration flow never replay
     .filter(call => /welcome to (?:pacific education|pacedu)|owner.?s experience|owner of pacific education|21 years.*classroom teaching/i.test(call.text))
     .map(call => call.text));
   expect(welcomeCalls, "the Welcome/Owner narration must not start on direct Registration entry").toEqual([]);
+  await expect(page.locator("#registrationNextButton")).toBeVisible();
+});
+
+
+test("Page 4 isolation keeps only the active page visible and preserves nested page ancestors", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+
+  // Reproduce the reported conflict: Welcome/Prototype are made visible while
+  // Registration is the declared active page. The repair must restore isolation.
+  await page.evaluate(() => {
+    document.body.classList.add("pe-guided-flow");
+    document.body.setAttribute("data-pe-flow-step", "3");
+    document.body.setAttribute("data-pe-active-guided-page", "pacificEducationIdentityRegistration");
+    for (const id of ["pacificEducationWelcome", "paceduPageVision", "paceduPageRules", "prototypeAccess"]) {
+      const node = document.getElementById(id);
+      if (node) { node.hidden = false; node.style.setProperty("display", "block", "important"); }
+    }
+    window.dispatchEvent(new Event("pageshow"));
+  });
+  await page.waitForTimeout(1100);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  for (const id of ["pacificEducationWelcome", "paceduPageVision", "paceduPageRules", "prototypeAccess"]) {
+    const node = page.locator("#" + id);
+    if (await node.count()) await expect(node).toBeHidden();
+  }
+  const overlayState = await page.evaluate(() => {
+    const overlay = document.getElementById("pacificEducationStepGuide");
+    return overlay ? getComputedStyle(overlay).display : "not-present";
+  });
+  expect(overlayState).not.toBe("block");
+
+  // Coverage Dashboard is a nested page; its Teacher Calendar ancestor must not
+  // be hidden by the isolation repair.
+  const nested = await page.evaluate(() => {
+    const dashboard = document.getElementById("pacificEducationCoverageDashboard");
+    const parent = document.getElementById("teacherCalendarSection");
+    if (!dashboard || !parent || !parent.contains(dashboard)) return { available: false };
+    document.body.setAttribute("data-pe-flow-step", "12");
+    document.body.setAttribute("data-pe-active-guided-page", "pacificEducationCoverageDashboard");
+    window.dispatchEvent(new Event("pageshow"));
+    return { available: true };
+  });
+  if (nested.available) {
+    await page.waitForTimeout(1100);
+    const ancestor = page.locator("#teacherCalendarSection");
+    await expect(ancestor).toBeVisible();
+    await expect(page.locator("#pacificEducationCoverageDashboard")).toBeVisible();
+  }
+});
+
+
+
+test("gateway Next follows Welcome → Vision → Rules → Registration without stale pages", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+
+  // These gateway steps are real HTML entry pages, not panels in index.html.
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await expect(page.locator("#welcomeNextWrapper")).toBeVisible();
+  await page.locator("#welcomeNextButton").click();
+  await expect(page).toHaveURL(/\/vision\.html(?:\?.*)?$/);
+  await expect(page.getByRole("heading", { name: /Vision.*Mission.*Purpose/i })).toBeVisible();
+
+  await page.getByRole("link", { name: /Next.*Rules/i }).click();
+  await expect(page).toHaveURL(/\/rules\.html(?:\?.*)?$/);
+  await expect(page.getByRole("heading", { name: /Rules.*Conditions/i })).toBeVisible();
+
+  await page.locator("#rulesAgreement").check();
+  await expect(page.locator("#continueButton")).toBeEnabled();
+  await page.locator("#continueButton").click();
+  await expect(page).toHaveURL(/\/index\.html\?entry=registration$/);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#welcomeNextWrapper")).toBeHidden();
   await expect(page.locator("#registrationNextButton")).toBeVisible();
 });

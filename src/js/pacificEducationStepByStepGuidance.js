@@ -131,7 +131,16 @@
       "tap the highlighted box and enter the requested information";
     return "Step "+number+" of "+total+" on "+pageLabel()+". Please "+action+" for "+label+". Complete this step before moving to the next box.";
   }
+  function registrationIsActive(){
+    var body=document.body;
+    return !!(body && (body.getAttribute("data-pe-active-guided-page")==="pacificEducationIdentityRegistration" || (body.classList.contains("pacedu-registration-mode"))));
+  }
   function highlight(el, announce){
+    if(registrationIsActive()){
+      clearHighlight();
+      if(panel) panel.style.display="none";
+      return;
+    }
     clearHighlight();
     if(!el) return;
     active=el;
@@ -168,6 +177,12 @@
       },250);
     },true);
     function refresh(){
+      if(registrationIsActive()){
+        if(timer)clearTimeout(timer);
+        clearHighlight();
+        if(panel) panel.style.display="none";
+        return;
+      }
       if(timer)clearTimeout(timer);
       timer=setTimeout(function(){
         var t=firstTarget();
