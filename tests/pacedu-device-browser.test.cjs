@@ -592,38 +592,28 @@ test("Page 4 isolation keeps only the active page visible and preserves nested p
 });
 
 
+
 test("gateway Next follows Welcome → Vision → Rules → Registration without stale pages", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
 
-  const pageIds = [
-    "pacificEducationWelcome",
-    "paceduPageVision",
-    "paceduPageRules",
-    "pacificEducationIdentityRegistration"
-  ];
-  async function expectOnly(activeId) {
-    await expect(page.locator("#" + activeId)).toBeVisible();
-    for (const id of pageIds) {
-      if (id !== activeId) await expect(page.locator("#" + id)).toBeHidden();
-    }
-    const overlay = page.locator("#pacificEducationStepGuide");
-    if (await overlay.count()) await expect(overlay).toBeHidden();
-  }
-
-  await expectOnly("pacificEducationWelcome");
+  // These gateway steps are real HTML entry pages, not panels in index.html.
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await expect(page.locator("#welcomeNextWrapper")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expectOnly("paceduPageVision");
+  await expect(page).toHaveURL(/\/vision\.html(?:\?.*)?$/);
+  await expect(page.getByRole("heading", { name: /Vision.*Mission.*Purpose/i })).toBeVisible();
 
-  await page.locator("#paceduVisionNext").click();
-  await expectOnly("paceduPageRules");
+  await page.getByRole("link", { name: /Next.*Rules/i }).click();
+  await expect(page).toHaveURL(/\/rules\.html(?:\?.*)?$/);
+  await expect(page.getByRole("heading", { name: /Rules.*Conditions/i })).toBeVisible();
 
-  const agreement = page.locator("#paceduRulesAgreement");
-  await expect(agreement).toBeVisible();
-  await agreement.check();
-  await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
-  await page.locator("#paceduRulesContinue").click();
-  await expectOnly("pacificEducationIdentityRegistration");
+  await page.locator("#rulesAgreement").check();
+  await expect(page.locator("#continueButton")).toBeEnabled();
+  await page.locator("#continueButton").click();
+  await expect(page).toHaveURL(/\/index\.html\?entry=registration$/);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#welcomeNextWrapper")).toBeHidden();
   await expect(page.locator("#registrationNextButton")).toBeVisible();
 });
