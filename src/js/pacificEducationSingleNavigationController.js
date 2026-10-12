@@ -362,7 +362,30 @@ function stopSpeechForPageTransition(targetId){
   }catch(e){}
 }
 
+/* Canonical page-step contract shared with the final visibility CSS in src/index.html.
+ * Older callers still pass legacy step values (Registration=1, Prototype=2); normalize
+ * by destination so CSS, the isolation repair, and the navigation controller agree.
+ */
+var CANONICAL_FLOW_STEPS = {
+  paceduPageVision:1,
+  paceduPageRules:2,
+  pacificEducationIdentityRegistration:3,
+  prototypeAccess:4,
+  levelSelection:5,
+  subjectSelection:6,
+  termSelection:7,
+  capabilitySelection:8,
+  dailyLesson:9,
+  dailyLessonPracticeStage:10,
+  assessments:11,
+  pacificEducationCoverageDashboard:12,
+  teacherCalendarSection:13
+};
+
 function guided(step,targetId){
+  if(Object.prototype.hasOwnProperty.call(CANONICAL_FLOW_STEPS,targetId)){
+    step=CANONICAL_FLOW_STEPS[targetId];
+  }
   stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");

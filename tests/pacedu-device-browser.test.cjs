@@ -148,6 +148,10 @@ test("mobile touch can complete registration and select a role before Next advan
   await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-flow-step")).toBe("3");
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toContainText("Registration setup");
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).not.toContainText("Student Workspace");
   console.log("[mobile flow] registration visible with registration-specific green guidance");
@@ -206,7 +210,12 @@ test("mobile touch can complete registration and select a role before Next advan
   console.log("[mobile flow] post-save handoff diagnostic " + JSON.stringify(handoffDiagnostic));
   await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
   await expect(registration).toBeHidden();
-  console.log("[mobile flow] Prototype Access visible and registration hidden");
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-flow-step")).toBe("4");
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-active-guided-page")).toBe("prototypeAccess");
+  console.log("[mobile flow] Prototype Access visible; registration and all entry pages hidden; canonical step 4 confirmed");
   const savedRegistration = await page.evaluate(() => ({
     registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
     role: sessionStorage.getItem("pacificEducationPilotRole"),
