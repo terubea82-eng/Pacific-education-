@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch education current affairs
         env:
-          GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=%28education%20OR%20school%20OR%20learning%20OR%20teacher%29%20AND%20%28domainis%3Aunesco.org%20OR%20domainis%3Aunicef.org%20OR%20domainis%3Aun.org%20OR%20domainis%3Awho.int%29&mode=artlist&maxrecords=50&timespan=2days&sort=datedesc&format=json
+          GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=%28education%20OR%20school%20OR%20learning%20OR%20teacher%29&mode=artlist&maxrecords=250&timespan=1week&sort=datedesc&format=json
         run: |
           set -euo pipefail
           mkdir -p docs/data
