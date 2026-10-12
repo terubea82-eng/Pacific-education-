@@ -63,6 +63,14 @@
       hide(el("pilotUserRoleCards"), false);
       hide(el("pilotRoleRegistrationFields"), false);
     }
+    /* Legacy registration helpers can leave role cards disabled after rebuilding
+       the form. The active role-selection step must always expose tappable cards. */
+    if (state === 2 || state === 3) {
+      document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card").forEach(function (card) {
+        card.disabled = false;
+        card.removeAttribute("aria-disabled");
+      });
+    }
 
     var title = el("peBoxSequenceTitle");
     var progress = el("peBoxSequenceProgress");
