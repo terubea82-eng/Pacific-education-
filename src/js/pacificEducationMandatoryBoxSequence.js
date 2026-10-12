@@ -44,8 +44,8 @@
       "background:inherit;";
 
     controller.innerHTML =
-      "<strong id=\"peBoxSequenceTitle\">Mandatory registration — Step 1 of 4</strong>" +
-      "<p id=\"peBoxSequenceProgress\" role=\"status\" aria-live=\"polite\">Complete one box, then press Next.</p>";
+      "<strong id=\"peBoxSequenceTitle\">Registration progress — Country</strong>" +
+      "<p id=\"peBoxSequenceProgress\" role=\"status\" aria-live=\"polite\">Complete this box, then press Next.</p>";
 
     registration.insertBefore(controller, registration.firstChild);
 
@@ -154,7 +154,7 @@
         enableRoleCards();
         var fields=get("pilotRoleRegistrationFields");
         if(fields) fields.hidden=!selectedRole();
-        title.textContent="Mandatory registration — Step 3 of 4";
+        title.textContent="Registration progress — Choose your role";
         progress.textContent=selectedRole()
           ? "Your role-specific registration fields are open inside this User Registration box. Complete them, then press Next."
           : "Choose one user role below. The role-specific registration fields will open inside this same box.";
@@ -169,10 +169,10 @@
         enableRoleCards();
         var fields2=get("pilotRoleRegistrationFields");
         if(fields2) fields2.hidden=false;
-        title.textContent="Mandatory registration — Step 4 of 4";
+        title.textContent="Registration progress — Your name";
         progress.textContent="Complete the registration fields inside this same box, then save.";
       }else{
-        title.textContent="Mandatory registration — Step "+(state+1)+" of 4";
+        title.textContent="Registration progress — "+item.label;
         progress.textContent="Complete the visible box only, then press Next.";
       }
 
@@ -193,7 +193,7 @@
         saveButton.setAttribute("aria-disabled",String(saveButton.disabled));
       }
 
-      speak("Registration step "+(state+1)+" of 4. "+item.label+". Complete this box, then press Next.");
+      speak(item.label+". Complete this box, then press Next.");
     }
 
     function nextStep(event){
