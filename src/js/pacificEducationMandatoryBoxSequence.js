@@ -228,19 +228,23 @@
       window.setTimeout(function(){
         var registered=false;
         try{
-          registered=window.sessionStorage.getItem("pacificEducationPilotRegistered")==="true";
-          if(!registered){
-            var raw=window.sessionStorage.getItem("pacificEducationPilotRegistration");
-            if(raw){
-              var record=JSON.parse(raw);
-              var roleValue=String(record && record.role || "").trim();
-              var displayName=String(record && (record.name || record.displayName) || "").trim();
-              var roleField=get("pilotRegistrationRole");
-              var selectedValue=String(roleField && roleField.value || "").trim();
-              var roleCard=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed='true']");
-              if(!selectedValue && roleCard) selectedValue=String(roleCard.getAttribute("data-role")||"").trim();
-              registered=!!(displayName && roleValue && selectedValue && roleValue.toLowerCase()===selectedValue.toLowerCase());
-            }
+          /* A persisted pilot registration record is the source of truth. The
+             older save handler may write that record without updating the
+             companion registered flag, leaving downstream role guards unsure. */
+          var raw=window.sessionStorage.getItem("pacificEducationPilotRegistration");
+          var record=raw ? JSON.parse(raw) : null;
+          var roleValue=String(record && record.role || "").trim();
+          var displayName=String(record && (record.name || record.displayName) || "").trim();
+          var roleField=get("pilotRegistrationRole");
+          var selectedValue=String(roleField && roleField.value || "").trim();
+          var roleCard=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed='true']");
+          if(!selectedValue && roleCard) selectedValue=String(roleCard.getAttribute("data-role")||"").trim();
+          registered=!!(displayName && roleValue && selectedValue && roleValue.toLowerCase()===selectedValue.toLowerCase());
+          if(registered){
+            /* Keep all session markers aligned after verifying the actual saved
+               record; never create a registered flag when the record is absent. */
+            window.sessionStorage.setItem("pacificEducationPilotRegistered","true");
+            window.sessionStorage.setItem("pacificEducationPilotRole",roleValue);
           }
         }catch(e){ registered=false; }
         if(!registered){
