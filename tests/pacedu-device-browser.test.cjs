@@ -148,6 +148,7 @@ test("mobile touch can complete registration and select a role before Next advan
   await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
+  await expect.poll(() => page.evaluate(() => window.PacificEducationRegistrationFlowV2?.status()?.version)).toBe("2.0.0");
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toContainText("Registration setup");
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).not.toContainText("Student Workspace");
   console.log("[mobile flow] registration visible with registration-specific green guidance");
@@ -156,11 +157,14 @@ test("mobile touch can complete registration and select a role before Next advan
   console.log("[mobile flow] country selected; tap Next");
   await page.locator("#registrationNextButton").tap();
   await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
-  console.log("[mobile flow] language box visible");
+  await expect.poll(() => page.evaluate(() => window.PacificEducationRegistrationFlowV2?.status()?.step)).toBe(2);
+  await expect(page.locator("#pacificEducationCountriesBox")).toBeHidden();
+  console.log("[mobile flow] language box visible; country box hidden");
 
   await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
   console.log("[mobile flow] language selected; tap Next");
   await page.locator("#registrationNextButton").tap();
+  await expect.poll(() => page.evaluate(() => window.PacificEducationRegistrationFlowV2?.status()?.step)).toBe(3);
   const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
   await expect(teacher).toBeVisible();
   console.log("[mobile flow] role cards visible; tap Teacher");
