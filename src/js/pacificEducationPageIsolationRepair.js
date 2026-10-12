@@ -21,6 +21,46 @@ function isolate(id,step){
  restoreAncestors(target);
  show(id);
  var overlay=get("pacificEducationStepGuide");if(overlay){overlay.style.setProperty("display","none","important");overlay.setAttribute("aria-hidden","true");}
+ setRegistrationShellHidden(id==="pacificEducationIdentityRegistration"||step==="3");
+}
+/* Issue 1 repair: Page 4 must not inherit the global shell above its form.
+   Save each element's original visibility once and restore it when leaving registration. */
+var registrationShellState=[];
+var registrationShellSelectors=[
+ "#pacificEducationMailbox",
+ "#pacificEducationAppMenu",
+ "#pacificEducationAccessibilityControls",
+ "#pilotBanner",
+ "#pacificEducationRefreshNotice",
+ "header",
+ "#pacificEducationTechnicianActivation",
+ "#pacificEducationTechnicianWorkspace",
+ "#systemStatus",
+ "#publicationStatus",
+ "#pacificEducationOfflineSyncStatus",
+ "#pacificEducationWorkspaceLiveStatus"
+];
+function setRegistrationShellHidden(shouldHide){
+ var nodes=[];
+ registrationShellSelectors.forEach(function(selector){
+  try{document.querySelectorAll(selector).forEach(function(node){if(nodes.indexOf(node)===-1)nodes.push(node);});}catch(_){}
+ });
+ if(shouldHide){
+  nodes.forEach(function(node){
+   if(registrationShellState.some(function(entry){return entry.node===node;}))return;
+   registrationShellState.push({node:node,hidden:node.hidden,hadAria:node.hasAttribute("aria-hidden"),aria:node.getAttribute("aria-hidden"),display:node.style.getPropertyValue("display"),priority:node.style.getPropertyPriority("display")});
+   node.hidden=true;node.setAttribute("aria-hidden","true");
+   try{node.style.setProperty("display","none","important");}catch(_){}
+  });
+  return;
+ }
+ registrationShellState.forEach(function(entry){
+  var node=entry.node;if(!node||!node.isConnected)return;
+  node.hidden=entry.hidden;
+  if(entry.hadAria)node.setAttribute("aria-hidden",entry.aria);else node.removeAttribute("aria-hidden");
+  try{if(entry.display)node.style.setProperty("display",entry.display,entry.priority);else node.style.removeProperty("display");}catch(_){}
+ });
+ registrationShellState=[];
 }
 function current(){var b=document.body;if(!b||!b.classList.contains("pe-guided-flow"))return;var id=b.getAttribute("data-pe-active-guided-page"),step=b.getAttribute("data-pe-flow-step");if(id&&step!==null)isolate(id,step);}
 function bind(){
