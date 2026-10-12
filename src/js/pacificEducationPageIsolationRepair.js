@@ -13,14 +13,19 @@ function isolate(id,step){
  if(b.getAttribute("data-pe-flow-step")!==String(step))b.setAttribute("data-pe-flow-step",String(step));
  if(b.getAttribute("data-pe-active-guided-page")!==id)b.setAttribute("data-pe-active-guided-page",id);
  if(b.getAttribute("data-pe-navigation-owner")!=="single")b.setAttribute("data-pe-navigation-owner","single");
- IDS.forEach(function(other){
-  if(other===id)return;
-  var node=get(other);
-  /* The coverage dashboard is nested inside Teacher Calendar. Keep any active
-     page ancestors visible; hide sibling/other pages only. */
-  if(node && node.contains(target)){node.hidden=false;node.removeAttribute("aria-hidden");try{node.style.setProperty("display","block","important");}catch(_){}return;}
-  hide(other);
- });show(id);
+ /* First hide the known guided panels, then explicitly restore the complete
+    ancestor chain of the active panel. This prevents nested workspaces from
+    being hidden by a later sibling pass or legacy CSS. */
+ IDS.forEach(function(other){if(other!==id)hide(other);});
+ var ancestor=target.parentElement;
+ while(ancestor && ancestor!==document.body){
+  if(ancestor.id && IDS.indexOf(ancestor.id)!==-1){
+   ancestor.hidden=false;ancestor.removeAttribute("aria-hidden");
+   try{ancestor.style.setProperty("display","block","important");}catch(_){}
+  }
+  ancestor=ancestor.parentElement;
+ }
+ show(id);
  var overlay=get("pacificEducationStepGuide");if(overlay){overlay.style.setProperty("display","none","important");overlay.setAttribute("aria-hidden","true");}
 }
 function current(){var b=document.body;if(!b||!b.classList.contains("pe-guided-flow"))return;var id=b.getAttribute("data-pe-active-guided-page"),step=b.getAttribute("data-pe-flow-step");if(id&&step!==null)isolate(id,step);}
