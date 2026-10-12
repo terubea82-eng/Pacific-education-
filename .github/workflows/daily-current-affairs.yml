@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch education current affairs
         env:
-          GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=(education%20OR%20school%20OR%20learning%20OR%20teacher)%20(domainis:unesco.org%20OR%20domainis:unicef.org%20OR%20domainis:un.org%20OR%20domainis:who.int)&mode=artlist&maxrecords=50&timespan=2days&sort=datedesc&format=json
+          GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=%28education%20OR%20school%20OR%20learning%20OR%20teacher%29%20AND%20%28domainis%3Aunesco.org%20OR%20domainis%3Aunicef.org%20OR%20domainis%3Aun.org%20OR%20domainis%3Awho.int%29&mode=artlist&maxrecords=50&timespan=2days&sort=datedesc&format=json
         run: |
           set -euo pipefail
           mkdir -p docs/data
@@ -25,7 +25,7 @@ jobs:
           const { URL } = require('url');
           const raw = JSON.parse(fs.readFileSync('/tmp/gdelt.json', 'utf8'));
           if (!raw || !Array.isArray(raw.articles)) {
-            throw new Error('GDELT response is missing the articles array; preserving existing feed.');
+            throw new Error('Unexpected GDELT response (keys: ' + Object.keys(raw || {}).join(',') + '; body: ' + fs.readFileSync('/tmp/gdelt.json', 'utf8').slice(0, 300) + '); preserving existing feed. Check query syntax or upstream response.');
           }
           const approvedHosts = ['unesco.org', 'unicef.org', 'un.org', 'who.int'];
           function approvedUrl(value) {
