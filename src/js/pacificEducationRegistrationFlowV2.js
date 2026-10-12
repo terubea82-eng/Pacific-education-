@@ -15,6 +15,7 @@
   var state = 0;
   var ready = false;
   var scheduled = false;
+  var saveFailure = false;
 
   function el(id) { return document.getElementById(id); }
   function selectedRole() {
@@ -66,7 +67,7 @@
     var title = el("peBoxSequenceTitle");
     var progress = el("peBoxSequenceProgress");
     if (title) title.textContent = "Mandatory registration — Step " + (state + 1) + " of 4";
-    if (progress) {
+    if (progress && !saveFailure) {
       progress.textContent = state === 0 ? "Choose your country, then press Next."
         : state === 1 ? "Choose your language, then press Next."
         : state === 2 ? (selectedRole() ? "Role selected. Press Next to complete your registration details." : "Choose one user role, then press Next.")
@@ -112,6 +113,7 @@
       return;
     }
     if (state < 3) {
+      saveFailure = false;
       state += 1;
       update();
       return;
@@ -138,6 +140,7 @@
         }
       } catch (e) { registered = false; }
       if (!registered) {
+        saveFailure = true;
         if (progress) progress.textContent = "Registration is not confirmed as saved. Check the required details and try again.";
         update();
         return;
@@ -145,7 +148,7 @@
       if (progress) progress.textContent = "Registration confirmed. Opening the next guided page.";
       var navigation = window.PacificEducationSingleNavigation;
       if (navigation && typeof navigation.go === "function") {
-        navigation.go(2, "prototypeAccess");
+        navigation.go(5, "prototypeAccess");
       } else if (progress) {
         progress.textContent = "Registration saved, but page navigation is not ready. Reload Pacedu and try again.";
       }
