@@ -505,7 +505,7 @@ test("registration must remain on Page 4 when the real save does not persist", a
   await page.waitForTimeout(700);
   await expect(registration).toBeVisible();
   await expect(page.locator("#prototypeAccess")).toBeHidden();
-  await expect(page.locator("#peBoxSequenceProgress")).toContainText(/not been confirmed|not saved/i);
+  await expect(page.locator("#peBoxSequenceProgress")).toContainText(/not confirmed as saved|not saved/i);
 });
 
 
