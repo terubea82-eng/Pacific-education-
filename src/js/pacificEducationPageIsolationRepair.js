@@ -8,10 +8,17 @@ function get(id){return document.getElementById(id);}
 function hide(id){var n=get(id);if(!n)return;n.hidden=true;n.setAttribute("aria-hidden","true");try{n.style.setProperty("display","none","important");}catch(_){}}
 function show(id){var n=get(id);if(!n)return false;n.hidden=false;n.removeAttribute("aria-hidden");try{n.style.setProperty("display","block","important");}catch(_){}return true;}
 function isolate(id,step){
- if(!get(id))return;
+ var target=get(id);if(!target)return;
  var b=document.body;b.classList.add("pe-guided-flow","pe-pilot-all-features");b.classList.remove("pacedu-entry-mode");
  b.setAttribute("data-pe-flow-step",String(step));b.setAttribute("data-pe-active-guided-page",id);b.setAttribute("data-pe-navigation-owner","single");
- IDS.forEach(function(other){if(other!==id)hide(other);});show(id);
+ IDS.forEach(function(other){
+  if(other===id)return;
+  var node=get(other);
+  /* The coverage dashboard is nested inside Teacher Calendar. Keep any active
+     page ancestors visible; hide sibling/other pages only. */
+  if(node && node.contains(target)){node.hidden=false;node.removeAttribute("aria-hidden");try{node.style.setProperty("display","block","important");}catch(_){}return;}
+  hide(other);
+ });show(id);
  var overlay=get("pacificEducationStepGuide");if(overlay){overlay.style.setProperty("display","none","important");overlay.setAttribute("aria-hidden","true");}
 }
 function current(){var b=document.body;if(!b||!b.classList.contains("pe-guided-flow"))return;var id=b.getAttribute("data-pe-active-guided-page"),step=b.getAttribute("data-pe-flow-step");if(id&&step!==null)isolate(id,step);}
