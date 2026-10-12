@@ -535,3 +535,50 @@ test("integrated Welcome → Vision → Rules → Registration flow never replay
   expect(welcomeCalls, "the Welcome/Owner narration must not start on direct Registration entry").toEqual([]);
   await expect(page.locator("#registrationNextButton")).toBeVisible();
 });
+
+
+test("Page 4 isolation keeps only the active page visible and preserves nested page ancestors", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+
+  // Reproduce the reported conflict: Welcome/Prototype are made visible while
+  // Registration is the declared active page. The repair must restore isolation.
+  await page.evaluate(() => {
+    document.body.classList.add("pe-guided-flow");
+    document.body.setAttribute("data-pe-flow-step", "3");
+    document.body.setAttribute("data-pe-active-guided-page", "pacificEducationIdentityRegistration");
+    for (const id of ["pacificEducationWelcome", "paceduPageVision", "paceduPageRules", "prototypeAccess"]) {
+      const node = document.getElementById(id);
+      if (node) { node.hidden = false; node.style.setProperty("display", "block", "important"); }
+    }
+  });
+  await page.waitForTimeout(1100);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  for (const id of ["pacificEducationWelcome", "paceduPageVision", "paceduPageRules", "prototypeAccess"]) {
+    const node = page.locator("#" + id);
+    if (await node.count()) await expect(node).toBeHidden();
+  }
+  const overlayState = await page.evaluate(() => {
+    const overlay = document.getElementById("pacificEducationStepGuide");
+    return overlay ? getComputedStyle(overlay).display : "not-present";
+  });
+  expect(overlayState).not.toBe("block");
+
+  // Coverage Dashboard is a nested page; its Teacher Calendar ancestor must not
+  // be hidden by the isolation repair.
+  const nested = await page.evaluate(() => {
+    const dashboard = document.getElementById("pacificEducationCoverageDashboard");
+    const parent = document.getElementById("teacherCalendarSection");
+    if (!dashboard || !parent || !parent.contains(dashboard)) return { available: false };
+    document.body.setAttribute("data-pe-flow-step", "12");
+    document.body.setAttribute("data-pe-active-guided-page", "pacificEducationCoverageDashboard");
+    return { available: true };
+  });
+  if (nested.available) {
+    await page.waitForTimeout(1100);
+    const ancestor = page.locator("#teacherCalendarSection");
+    await expect(ancestor).toBeVisible();
+    await expect(page.locator("#pacificEducationCoverageDashboard")).toBeVisible();
+  }
+});
