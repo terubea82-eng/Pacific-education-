@@ -10,7 +10,9 @@ function show(id){var n=get(id);if(!n)return false;n.hidden=false;n.removeAttrib
 function isolate(id,step){
  var target=get(id);if(!target)return;
  var b=document.body;b.classList.add("pe-guided-flow","pe-pilot-all-features");b.classList.remove("pacedu-entry-mode");
- b.setAttribute("data-pe-flow-step",String(step));b.setAttribute("data-pe-active-guided-page",id);b.setAttribute("data-pe-navigation-owner","single");
+ if(b.getAttribute("data-pe-flow-step")!==String(step))b.setAttribute("data-pe-flow-step",String(step));
+ if(b.getAttribute("data-pe-active-guided-page")!==id)b.setAttribute("data-pe-active-guided-page",id);
+ if(b.getAttribute("data-pe-navigation-owner")!=="single")b.setAttribute("data-pe-navigation-owner","single");
  IDS.forEach(function(other){
   if(other===id)return;
   var node=get(other);
@@ -35,7 +37,15 @@ function bind(){
   },true);
  }
 }
-function init(){bind();current();}
+var navigationObserver=null;
+function observeNavigation(){
+ var body=document.body;if(!body||navigationObserver)return;
+ navigationObserver=new MutationObserver(function(records){
+  if(records.some(function(record){return record.attributeName==="data-pe-active-guided-page"||record.attributeName==="data-pe-flow-step";}))current();
+ });
+ navigationObserver.observe(body,{attributes:true,attributeFilter:["data-pe-active-guided-page","data-pe-flow-step"]});
+}
+function init(){bind();observeNavigation();current();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 window.addEventListener("pageshow",init);window.setTimeout(init,250);window.setTimeout(init,900);
 })(window,document);
