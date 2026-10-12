@@ -590,3 +590,40 @@ test("Page 4 isolation keeps only the active page visible and preserves nested p
     await expect(page.locator("#pacificEducationCoverageDashboard")).toBeVisible();
   }
 });
+
+
+test("gateway Next follows Welcome → Vision → Rules → Registration without stale pages", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+
+  const pageIds = [
+    "pacificEducationWelcome",
+    "paceduPageVision",
+    "paceduPageRules",
+    "pacificEducationIdentityRegistration"
+  ];
+  async function expectOnly(activeId) {
+    await expect(page.locator("#" + activeId)).toBeVisible();
+    for (const id of pageIds) {
+      if (id !== activeId) await expect(page.locator("#" + id)).toBeHidden();
+    }
+    const overlay = page.locator("#pacificEducationStepGuide");
+    if (await overlay.count()) await expect(overlay).toBeHidden();
+  }
+
+  await expectOnly("pacificEducationWelcome");
+  await page.locator("#welcomeNextButton").click();
+  await expectOnly("paceduPageVision");
+
+  await page.locator("#paceduVisionNext").click();
+  await expectOnly("paceduPageRules");
+
+  const agreement = page.locator("#paceduRulesAgreement");
+  await expect(agreement).toBeVisible();
+  await agreement.check();
+  await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
+  await page.locator("#paceduRulesContinue").click();
+  await expectOnly("pacificEducationIdentityRegistration");
+  await expect(page.locator("#registrationNextButton")).toBeVisible();
+});
