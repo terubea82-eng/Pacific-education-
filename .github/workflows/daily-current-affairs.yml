@@ -63,7 +63,7 @@ jobs:
               subjectsApplicable: subjects(title),
               levelsApplicable: [],
               verificationStatus: 'PENDING_TEACHER_REVIEW',
-              approved: false,
+              approved:false,
               sourceType: 'EDUCATIONAL_CURRENT_AFFAIRS'
             };
           }).filter(Boolean).slice(0, 30);
