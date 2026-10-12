@@ -10,24 +10,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch education current affairs
-        env:
-          GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=%28education%20OR%20school%20OR%20learning%20OR%20teacher%29&mode=artlist&maxrecords=250&timespan=1week&sort=datedesc&format=json
+      - name: Fetch education current affairs from approved domains
         run: |
           set -euo pipefail
           mkdir -p docs/data
-          # Retry temporary rate limits/network errors. Never replace the feed on fetch failure.
-          curl --fail --show-error --location --connect-timeout 15 --max-time 60 \
-            --retry 5 --retry-all-errors --retry-delay 5 --retry-max-time 120 \
-            "$GDELT_URL" -o /tmp/gdelt.json
+          # Query one approved domain per request. GDELT supports a single OR block;
+          # combining multiple OR blocks can yield an empty/unexpected response.
+          for domain in unesco.org unicef.org un.org who.int; do
+            echo "Querying GDELT for $domain"
+            curl --fail --show-error --location --connect-timeout 15 --max-time 60 \
+              --retry 5 --retry-all-errors --retry-delay 5 --retry-max-time 120 \
+              --get 'https://api.gdeltproject.org/api/v2/doc/doc' \
+              --data-urlencode "query=(education OR school OR learning OR teacher) domain:$domain" \
+              --data-urlencode 'mode=artlist' \
+              --data-urlencode 'maxrecords=250' \
+              --data-urlencode 'timespan=1week' \
+              --data-urlencode 'sort=datedesc' \
+              --data-urlencode 'format=json' \
+              -o "/tmp/gdelt-$domain.json"
+          done
           node <<'NODE'
           const fs = require('fs');
           const { URL } = require('url');
-          const raw = JSON.parse(fs.readFileSync('/tmp/gdelt.json', 'utf8'));
-          if (!raw || !Array.isArray(raw.articles)) {
-            throw new Error('Unexpected GDELT response (keys: ' + Object.keys(raw || {}).join(',') + '; body: ' + fs.readFileSync('/tmp/gdelt.json', 'utf8').slice(0, 300) + '); preserving existing feed. Check query syntax or upstream response.');
+          const domains = ['unesco.org', 'unicef.org', 'un.org', 'who.int'];
+          const allArticles = [];
+          for (const domain of domains) {
+            const body = fs.readFileSync('/tmp/gdelt-' + domain + '.json', 'utf8');
+            let raw;
+            try { raw = JSON.parse(body); }
+            catch (_) { throw new Error('Invalid JSON from GDELT for ' + domain + '; preserving existing feed. Body: ' + body.slice(0, 200)); }
+            if (!raw || !Array.isArray(raw.articles)) {
+              throw new Error('Unexpected GDELT response for ' + domain + ' (keys: ' + Object.keys(raw || {}).join(',') + '; body: ' + body.slice(0, 200) + '); preserving existing feed.');
+            }
+            console.log(domain + ': received ' + raw.articles.length + ' candidate articles');
+            allArticles.push(...raw.articles);
           }
-          const approvedHosts = ['unesco.org', 'unicef.org', 'un.org', 'who.int'];
+          const approvedHosts = domains;
           function approvedUrl(value) {
             try {
               const u = new URL(String(value || ''));
@@ -47,10 +65,12 @@ jobs:
             if (/art|music|culture/.test(t)) s.push('Arts');
             return [...new Set(s)];
           }
-          const items = raw.articles.map((a, i) => {
+          const seen = new Set();
+          const items = allArticles.map((a, i) => {
             const title = String(a.title || '').trim();
             const url = String(a.url || '').trim();
-            if (!title || !approvedUrl(url)) return null;
+            if (!title || !approvedUrl(url) || seen.has(url)) return null;
+            seen.add(url);
             return {
               id: 'GDELT-' + Buffer.from(url || title || String(i)).toString('base64url').slice(0, 48),
               title,
@@ -63,17 +83,17 @@ jobs:
               subjectsApplicable: subjects(title),
               levelsApplicable: [],
               verificationStatus: 'PENDING_TEACHER_REVIEW',
-              approved:false,
+              approved: false,
               sourceType: 'EDUCATIONAL_CURRENT_AFFAIRS'
             };
-          }).filter(Boolean).slice(0, 30);
+          }).filter(Boolean).sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt))).slice(0, 30);
           if (items.length === 0) {
             throw new Error('No eligible HTTPS articles from approved domains; preserving existing feed.');
           }
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'GDELT DOC API restricted to UNESCO, UNICEF, UN and WHO domains',
+            source: 'GDELT DOC API queried separately for UNESCO, UNICEF, UN and WHO domains',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
