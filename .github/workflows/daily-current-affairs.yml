@@ -76,7 +76,7 @@ jobs:
             source: 'GDELT DOC API restricted to UNESCO, UNICEF, UN and WHO domains',
             items
           };
-          fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\\n');
+          fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
           console.log('Validated ' + items.length + ' articles; all remain pending teacher review.');
           NODE
       - name: Commit feed when changed
