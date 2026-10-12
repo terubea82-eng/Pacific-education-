@@ -552,6 +552,7 @@ test("Page 4 isolation keeps only the active page visible and preserves nested p
       const node = document.getElementById(id);
       if (node) { node.hidden = false; node.style.setProperty("display", "block", "important"); }
     }
+    window.dispatchEvent(new Event("pageshow"));
   });
   await page.waitForTimeout(1100);
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
@@ -573,6 +574,7 @@ test("Page 4 isolation keeps only the active page visible and preserves nested p
     if (!dashboard || !parent || !parent.contains(dashboard)) return { available: false };
     document.body.setAttribute("data-pe-flow-step", "12");
     document.body.setAttribute("data-pe-active-guided-page", "pacificEducationCoverageDashboard");
+    window.dispatchEvent(new Event("pageshow"));
     return { available: true };
   });
   if (nested.available) {
