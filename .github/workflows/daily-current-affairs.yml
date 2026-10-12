@@ -14,30 +14,70 @@ jobs:
         env:
           GDELT_URL: https://api.gdeltproject.org/api/v2/doc/doc?query=(education%20OR%20school%20OR%20learning%20OR%20teacher)%20(domainis:unesco.org%20OR%20domainis:unicef.org%20OR%20domainis:un.org%20OR%20domainis:who.int)&mode=artlist&maxrecords=50&timespan=2days&sort=datedesc&format=json
         run: |
+          set -euo pipefail
           mkdir -p docs/data
-          curl --fail --location --max-time 45 "$GDELT_URL" -o /tmp/gdelt.json
+          # Retry temporary rate limits/network errors. Never replace the feed on fetch failure.
+          curl --fail --show-error --location --connect-timeout 15 --max-time 60 \
+            --retry 5 --retry-all-errors --retry-delay 5 --retry-max-time 120 \
+            "$GDELT_URL" -o /tmp/gdelt.json
           node <<'NODE'
-          const fs=require('fs');
-          const raw=JSON.parse(fs.readFileSync('/tmp/gdelt.json','utf8'));
-          const articles=Array.isArray(raw.articles)?raw.articles:[];
-          function subjects(title){const t=String(title||'').toLowerCase(),s=[];if(/literacy|reading|language|english|teacher|school/.test(t))s.push('English');if(/math|mathematics|number|data/.test(t))s.push('Mathematics');if(/science|health|disease|climate|environment|disaster/.test(t))s.push('Science','Health Science');if(/technology|digital|internet|computer|ai/.test(t))s.push('Computer Studies');if(/community|society|government|education system|poverty|displacement/.test(t))s.push('Social Science');if(/place|country|climate|environment|migration/.test(t))s.push('Geography');if(/history|heritage|conflict|war/.test(t))s.push('History');if(/art|music|culture/.test(t))s.push('Arts');return [...new Set(s)];}
-          const items=articles.map((a,i)=>({
-            id:'GDELT-'+Buffer.from(String(a.url||a.title||i)).toString('base64url').slice(0,48),
-            title:String(a.title||'').trim(),
-            url:String(a.url||'').trim(),
-            source:String(a.domain||a.sourcecountry||'Approved educational news source').trim(),
-            publishedAt:String(a.seendate||'').trim(),
-            topic:'Education and learning',
-            educationalRelevance:'Potentially relevant to teaching, learning, health, inclusion, science, environment, or education systems.',
-            ageSuitability:'Teacher/reviewer screening required before student use.',
-            subjectsApplicable:subjects(a.title),
-            levelsApplicable:[],
-            verificationStatus:'PENDING_TEACHER_REVIEW',
-            approved:false,
-            sourceType:'EDUCATIONAL_CURRENT_AFFAIRS'
-          })).filter(x=>x.title&&x.url).slice(0,30);
-          const out={version:'1.0.0',generatedAt:new Date().toISOString(),source:'GDELT DOC API restricted to UNESCO, UNICEF, UN and WHO domains',items};
-          fs.writeFileSync('docs/data/current-affairs.json',JSON.stringify(out,null,2)+'\n');
+          const fs = require('fs');
+          const { URL } = require('url');
+          const raw = JSON.parse(fs.readFileSync('/tmp/gdelt.json', 'utf8'));
+          if (!raw || !Array.isArray(raw.articles)) {
+            throw new Error('GDELT response is missing the articles array; preserving existing feed.');
+          }
+          const approvedHosts = ['unesco.org', 'unicef.org', 'un.org', 'who.int'];
+          function approvedUrl(value) {
+            try {
+              const u = new URL(String(value || ''));
+              return u.protocol === 'https:' &&
+                approvedHosts.some(host => u.hostname === host || u.hostname.endsWith('.' + host));
+            } catch (_) { return false; }
+          }
+          function subjects(title) {
+            const t = String(title || '').toLowerCase(), s = [];
+            if (/literacy|reading|language|english|teacher|school/.test(t)) s.push('English');
+            if (/math|mathematics|number|data/.test(t)) s.push('Mathematics');
+            if (/science|health|disease|climate|environment|disaster/.test(t)) s.push('Science', 'Health Science');
+            if (/technology|digital|internet|computer|ai/.test(t)) s.push('Computer Studies');
+            if (/community|society|government|education system|poverty|displacement/.test(t)) s.push('Social Science');
+            if (/place|country|climate|environment|migration/.test(t)) s.push('Geography');
+            if (/history|heritage|conflict|war/.test(t)) s.push('History');
+            if (/art|music|culture/.test(t)) s.push('Arts');
+            return [...new Set(s)];
+          }
+          const items = raw.articles.map((a, i) => {
+            const title = String(a.title || '').trim();
+            const url = String(a.url || '').trim();
+            if (!title || !approvedUrl(url)) return null;
+            return {
+              id: 'GDELT-' + Buffer.from(url || title || String(i)).toString('base64url').slice(0, 48),
+              title,
+              url,
+              source: String(a.domain || a.sourcecountry || 'Approved educational news source').trim(),
+              publishedAt: String(a.seendate || '').trim(),
+              topic: 'Education and learning',
+              educationalRelevance: 'Potentially relevant to teaching, learning, health, inclusion, science, environment, or education systems.',
+              ageSuitability: 'Teacher/reviewer screening required before student use.',
+              subjectsApplicable: subjects(title),
+              levelsApplicable: [],
+              verificationStatus: 'PENDING_TEACHER_REVIEW',
+              approved: false,
+              sourceType: 'EDUCATIONAL_CURRENT_AFFAIRS'
+            };
+          }).filter(Boolean).slice(0, 30);
+          if (items.length === 0) {
+            throw new Error('No eligible HTTPS articles from approved domains; preserving existing feed.');
+          }
+          const out = {
+            version: '1.0.0',
+            generatedAt: new Date().toISOString(),
+            source: 'GDELT DOC API restricted to UNESCO, UNICEF, UN and WHO domains',
+            items
+          };
+          fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\\n');
+          console.log('Validated ' + items.length + ' articles; all remain pending teacher review.');
           NODE
       - name: Commit feed when changed
         run: |
