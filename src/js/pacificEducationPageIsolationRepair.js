@@ -6,7 +6,8 @@
 var IDS=["pacificEducationWelcome","paceduPageVision","paceduPageRules","pacificEducationIdentityRegistration","prototypeAccess","levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage","assessments","teacherCalendarSection","pacificEducationCoverageDashboard"];
 function get(id){return document.getElementById(id);}
 function hide(id){var n=get(id);if(!n)return;n.hidden=true;n.setAttribute("aria-hidden","true");try{n.style.setProperty("display","none","important");}catch(_){}}
-function show(id){var n=get(id);if(!n)return false;n.hidden=false;n.removeAttribute("aria-hidden");try{n.style.setProperty("display","block","important");}catch(_){}return true;}
+function show(id){var n=get(id);if(!n)return false;if(n.hidden)n.hidden=false;if(n.hasAttribute("aria-hidden"))n.removeAttribute("aria-hidden");try{if(n.style.getPropertyValue("display")!=="block"||n.style.getPropertyPriority("display")!=="important")n.style.setProperty("display","block","important");}catch(_){}return true;}
+function restoreAncestors(target){var ancestor=target&&target.parentElement;while(ancestor&&ancestor!==document.body){if(ancestor.id&&IDS.indexOf(ancestor.id)!==-1)show(ancestor.id);ancestor=ancestor.parentElement;}}
 function isolate(id,step){
  var target=get(id);if(!target)return;
  var b=document.body;b.classList.add("pe-guided-flow","pe-pilot-all-features");b.classList.remove("pacedu-entry-mode");
@@ -17,14 +18,7 @@ function isolate(id,step){
     ancestor chain of the active panel. This prevents nested workspaces from
     being hidden by a later sibling pass or legacy CSS. */
  IDS.forEach(function(other){if(other!==id)hide(other);});
- var ancestor=target.parentElement;
- while(ancestor && ancestor!==document.body){
-  if(ancestor.id && IDS.indexOf(ancestor.id)!==-1){
-   ancestor.hidden=false;ancestor.removeAttribute("aria-hidden");
-   try{ancestor.style.setProperty("display","block","important");}catch(_){}
-  }
-  ancestor=ancestor.parentElement;
- }
+ restoreAncestors(target);
  show(id);
  var overlay=get("pacificEducationStepGuide");if(overlay){overlay.style.setProperty("display","none","important");overlay.setAttribute("aria-hidden","true");}
 }
@@ -42,13 +36,19 @@ function bind(){
   },true);
  }
 }
-var navigationObserver=null;
+var navigationObserver=null, panelObserver=null;
 function observeNavigation(){
  var body=document.body;if(!body||navigationObserver)return;
  navigationObserver=new MutationObserver(function(records){
   if(records.some(function(record){return record.attributeName==="data-pe-active-guided-page"||record.attributeName==="data-pe-flow-step";}))current();
  });
  navigationObserver.observe(body,{attributes:true,attributeFilter:["data-pe-active-guided-page","data-pe-flow-step"]});
+ panelObserver=new MutationObserver(function(records){
+  if(!records.some(function(record){return record.attributeName==="hidden"||record.attributeName==="aria-hidden"||record.attributeName==="style";}))return;
+  var id=body.getAttribute("data-pe-active-guided-page");if(!id)return;
+  var target=get(id);if(target)restoreAncestors(target);
+ });
+ panelObserver.observe(body,{subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style"]});
 }
 function init(){bind();observeNavigation();current();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
