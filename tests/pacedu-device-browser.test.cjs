@@ -207,8 +207,14 @@ test("mobile touch can complete registration and select a role before Next advan
   await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
   await expect(registration).toBeHidden();
   console.log("[mobile flow] Prototype Access visible and registration hidden");
-  const savedRole = await page.evaluate(() => sessionStorage.getItem("pacificEducationPilotRole"));
-  expect(savedRole).toBe("Teacher");
+  const savedRegistration = await page.evaluate(() => ({
+    registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
+    role: sessionStorage.getItem("pacificEducationPilotRole"),
+    record: JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration") || "null")
+  }));
+  expect(savedRegistration.registered, "confirmed registration must set the shared registered flag").toBe("true");
+  expect(savedRegistration.role).toBe("Teacher");
+  expect(savedRegistration.record).toMatchObject({name:"Phone Pilot Test",role:"Teacher",pilotOnly:true});
   expect(errors, "uncaught JavaScript errors").toEqual([]);
   await context.close();
 });
