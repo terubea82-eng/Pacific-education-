@@ -1178,6 +1178,58 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 }
 
 </style>
+
+<script id="pacedu-initial-entry-visibility-fallback">
+/*
+ * Startup safety net only: if the normal navigation controller leaves the
+ * initial Welcome page hidden, restore the isolated first page. This does not
+ * replace navigation or voice controllers and does not run on direct
+ * registration entry after rules acceptance.
+ */
+(function(window, document) {
+  "use strict";
+  function restoreWelcomeIfBlank() {
+    var body = document.body;
+    var welcome = document.getElementById("pacificEducationWelcome");
+    if (!body || !welcome) return;
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get("entry") === "registration" &&
+          window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes") return;
+    } catch (e) {}
+    var visible = welcome.getClientRects().length > 0 &&
+      window.getComputedStyle(welcome).display !== "none" &&
+      window.getComputedStyle(welcome).visibility !== "hidden";
+    if (visible) return;
+    body.classList.remove("pe-guided-flow-ended");
+    body.classList.add("pe-guided-flow");
+    body.setAttribute("data-pe-flow-step", "0");
+    var main = document.querySelector("main");
+    if (main) {
+      Array.prototype.forEach.call(main.children, function(child) {
+        if (child !== welcome &&
+            child.id !== "pilotBanner" &&
+            child.id !== "welcomeNextWrapper") {
+          child.style.setProperty("display", "none", "important");
+        }
+      });
+      main.style.setProperty("display", "block", "important");
+    }
+    welcome.style.setProperty("display", "block", "important");
+    welcome.style.setProperty("visibility", "visible", "important");
+    var banner = document.getElementById("pilotBanner");
+    if (banner) banner.style.setProperty("display", "block", "important");
+    var next = document.getElementById("welcomeNextWrapper");
+    if (next) next.style.setProperty("display", "flex", "important");
+    body.setAttribute("data-pe-initial-entry-fallback", "welcome-restored");
+  }
+  function scheduleFallback() {
+    window.setTimeout(restoreWelcomeIfBlank, 1200);
+  }
+  if (document.readyState === "complete") scheduleFallback();
+  else window.addEventListener("load", scheduleFallback, { once: true });
+})(window, document);
+</script>
 </body></html>
 <!-- GitHub pilot recheck trigger: guided flow controls -->
 
