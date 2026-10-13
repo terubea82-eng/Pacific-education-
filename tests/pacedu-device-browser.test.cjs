@@ -209,9 +209,15 @@ test("mobile touch can complete registration and select a role before Next advan
     };
   });
   console.log("[mobile flow] post-save handoff diagnostic " + JSON.stringify(handoffDiagnostic));
+  /* Save must confirm the profile without changing the guided page. */
+  await expect(registration).toBeVisible();
+  await expect(page.locator("#prototypeAccess")).toBeHidden();
+  await expect(page.locator("#registrationNextButton")).toHaveText(/Next/);
+  console.log("[mobile flow] registration remains visible after save; waiting for explicit Next tap");
+  await page.locator("#registrationNextButton").tap();
   await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
   await expect(registration).toBeHidden();
-  console.log("[mobile flow] Prototype Access visible and registration hidden");
+  console.log("[mobile flow] explicit Next tap opened Prototype Access");
   const savedRegistration = await page.evaluate(() => ({
     registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
     role: sessionStorage.getItem("pacificEducationPilotRole"),
