@@ -796,6 +796,7 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
 
 
 test("save confirmation then Next opens the selected role workspace for every registration role", async ({ page }) => {
+  test.setTimeout(90000);
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   const roles = [

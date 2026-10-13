@@ -40,8 +40,15 @@
     return {saved:true,countryCode:countryCode,languageCode:languageCode,country:COUNTRY_NAMES[countryCode]||countryCode};
   }
   function validate(){
-    var s=selected();
-    return {valid:!!(s.countryCode&&s.languageCode),countryCode:s.countryCode,languageCode:s.languageCode};
+    var s=selected(), countryCode=s.countryCode, languageCode=s.languageCode;
+    /* The page-by-page controller can temporarily hide and restore the setup
+       controls. Prefer their live values, but fall back to the saved setup context
+       so a valid selection is not lost during a registration-step handoff. */
+    try{
+      if(!countryCode) countryCode=localStorage.getItem("pacificEducationRegistrationCountryCode")||"";
+      if(!languageCode) languageCode=localStorage.getItem("pacificEducationRegistrationLanguage")||"";
+    }catch(e){}
+    return {valid:!!(countryCode&&languageCode),countryCode:countryCode,languageCode:languageCode};
   }
   function announceSelection(kind){
     var s=selected();
@@ -88,6 +95,14 @@
           announce("Please choose your country and language before completing user registration.");
           return false;
         }
+        /* Restore persisted selections into the controls before the target
+           save handler runs; this keeps the registration record and visible
+           setup context consistent even after a hidden-step transition. */
+        var s=selected();
+        try{
+          if(s.country && !s.country.value) s.country.value=v.countryCode;
+          if(s.language && !s.language.value) s.language.value=v.languageCode;
+        }catch(e){}
         saveContext();
         return true;
       },true);
