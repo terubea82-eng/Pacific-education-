@@ -505,6 +505,15 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#pacificEducationAIConversation")).toBeHidden();
   await expect(page.locator("#pacificEducationStudentProgressDashboard")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
+
+  /* Regression: Teacher Workspace Next must change the active page, not leave
+     the teacher dashboard displayed. The capability test is the required step 2. */
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 11");
+  await page.locator("#peSequentialNext").click();
+  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Capability & Platform Test");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 11");
+  await expect(page.locator("#pacificEducationTeacherCapabilityTest")).toBeVisible();
+  await expect(page.locator("#peSequentialNext")).toBeDisabled();
 });
 
 test("verified registration role overrides a stale pilot role marker", async ({ page }) => {
