@@ -45,27 +45,24 @@ test("Page 3 Next opens only Registration at the defined guided-flow step", asyn
   page.setDefaultTimeout(8000);
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
 
-  const welcome = page.locator("#pacificEducationWelcome");
-  const vision = page.locator("#paceduPageVision");
-  const rules = page.locator("#paceduPageRules");
-  const registration = page.locator("#pacificEducationIdentityRegistration");
-
-  await expect(welcome).toBeVisible();
+  // Pacedu's supported entry flow uses separate Welcome, Vision and Rules
+  // documents before returning to index.html for Registration.
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(vision).toBeVisible();
-  await expect(welcome).toBeHidden();
+  await expect(page).toHaveURL(/\\/vision\\.html(?:\\?.*)?$/);
+  await page.getByRole("link", { name: /Next.*Rules/i }).click();
+  await expect(page).toHaveURL(/\\/rules\\.html(?:\\?.*)?$/);
 
-  await page.locator("#paceduVisionNext").click();
-  await expect(rules).toBeVisible();
-  await expect(vision).toBeHidden();
+  await page.locator("#rulesAgreement").check();
+  await expect(page.locator("#continueButton")).toBeEnabled();
+  await page.locator("#continueButton").click();
+  await expect(page).toHaveURL(/\\/index\\.html\\?entry=registration$/);
 
-  await page.locator("#paceduRulesAgreement").check();
-  await page.locator("#paceduRulesContinue").click();
-
+  const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
-  await expect(rules).toBeHidden();
-  await expect(welcome).toBeHidden();
-  await expect(vision).toBeHidden();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
   await expect.poll(() => page.locator("body").getAttribute("data-pe-flow-step")).toBe("3");
   await expect.poll(() => page.locator("body").getAttribute("data-pe-active-guided-page")).toBe("pacificEducationIdentityRegistration");
 
