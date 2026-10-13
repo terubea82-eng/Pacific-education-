@@ -35,6 +35,7 @@
 
     var state = 0;
     var sequenceStarted = false;
+    var registrationSaved = false;
 
     var controller = document.createElement("section");
     controller.id = "pacificEducationMandatoryBoxSequence";
@@ -176,12 +177,12 @@
         progress.textContent="Complete the visible box only, then press Next.";
       }
 
-      next.textContent=state===3 ? "✓ Save Registration" : "➡️ Next";
+      next.textContent=state===3 ? (registrationSaved ? "➡️ Next" : "✓ Save Registration") : "➡️ Next";
       next.disabled =
         (state===0 && !(get("pacificEducationCountrySelect")||{}).value) ||
         (state===1 && !(get("pacificEducationLanguageSelect")||{}).value) ||
         (state===2 && !selectedRole()) ||
-        (state===3 && !validName());
+        (state===3 && !registrationSaved && !validName());
 
       /* Some legacy interaction-repair scripts can leave the Save button disabled
          even after the role and display name are complete. This sequence is the
@@ -189,7 +190,8 @@
          fields are present. Keep it disabled at every earlier step. */
       var saveButton=get("pilotRegistrationSaveButton");
       if(saveButton){
-        saveButton.disabled=!(state===3 && selectedRole() && validName());
+        saveButton.disabled=!(state===3 && !registrationSaved && selectedRole() && validName());
+        if(registrationSaved) saveButton.textContent="✓ Registration Saved";
         saveButton.setAttribute("aria-disabled",String(saveButton.disabled));
       }
 
@@ -216,6 +218,15 @@
         if(!selectedRole()) return;
         state=3; update(); return;
       }
+      if(registrationSaved){
+        progress.textContent="Registration saved. Opening Prototype Access because you pressed Next.";
+        if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
+          window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
+        }else{
+          progress.textContent="Registration is saved, but guided navigation is not ready. Reload the pilot page and try Next again.";
+        }
+        return;
+      }
       var save=get("pilotRegistrationSaveButton");
       if(!save || save.disabled){
         progress.textContent="Registration is not ready to submit. Complete all required fields and resolve any validation messages before pressing Next.";
@@ -223,13 +234,12 @@
         return;
       }
       save.click();
-      progress.textContent="Checking registration before opening the next guided page...";
-      speak("Checking registration before opening the next guided page.");
+      progress.textContent="Saving registration. This page will remain open; press Next when ready to continue.";
+      speak("Saving registration. This page will remain open. Press Next when ready to continue.");
     }
 
-    /* The visible Save Pilot Registration button must complete the same
-       verified handoff as the sequence's final Next action. Previously, direct
-       taps saved a record and updated its status text but never advanced pages. */
+    /* Saving confirms the pilot profile only. Navigation is deliberately deferred
+       until the user presses the green Next button after seeing the confirmation. */
     var saveButton=get("pilotRegistrationSaveButton");
     if(saveButton && saveButton.getAttribute("data-pe-sequence-save-handoff")!=="true"){
       saveButton.setAttribute("data-pe-sequence-save-handoff","true");
@@ -256,12 +266,18 @@
             speak("Registration has not been confirmed. Check the required fields and try again.");
             return;
           }
-          progress.textContent="Registration confirmed. Opening the next guided page.";
-          if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
-            window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
-          }else{
-            progress.textContent="Registration is saved, but guided navigation is not ready. Reload the pilot page and try again.";
+          registrationSaved=true;
+          progress.textContent="Registration confirmed and saved. Press the green Next button when you are ready to continue.";
+          var registrationStatus=get("pilotRegistrationStatus");
+          if(registrationStatus) registrationStatus.textContent="Pilot registration saved for "+roleValue+". Press Next when ready to continue.";
+          next.textContent="➡️ Next";
+          next.disabled=false;
+          if(saveButton){
+            saveButton.disabled=true;
+            saveButton.setAttribute("aria-disabled","true");
+            saveButton.textContent="✓ Registration Saved";
           }
+          speak("Registration confirmed and saved. Press Next when you are ready to continue.");
         },350);
       },false);
     }
