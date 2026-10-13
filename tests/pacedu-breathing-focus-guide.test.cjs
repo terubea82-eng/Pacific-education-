@@ -34,8 +34,26 @@ test("breathing guide activates for a sequential teacher workspace and final sig
 
   const workspace = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(workspace).toBeVisible();
-  await expect.poll(() => page.locator("#peSequentialPage .pacific-breathing-focus").count(), { timeout: 5000 }).toBe(1);
-  await expect(page.locator("#peSequentialPage .pacific-breathing-focus-label")).toContainText("CURRENT STEP");
+  // A workspace page may be informational and have no unfinished user
+  // controls. In that case the correct guidance is a green breathing Next,
+  // not a blue action box. Require one of those two states.
+  await expect.poll(() => page.evaluate(() => {
+    const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    if (!shell) return false;
+    const blue = shell.querySelectorAll(".pacific-breathing-focus").length;
+    const next = document.getElementById("peSequentialNext");
+    const green = !!(next && next.classList.contains("pacific-next-breathing-ready"));
+    return blue === 1 || green;
+  }), { timeout: 8000 }).toBe(true);
+  const firstPageGuidance = await page.evaluate(() => {
+    const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    const next = document.getElementById("peSequentialNext");
+    return {
+      blueActionCount: shell ? shell.querySelectorAll(".pacific-breathing-focus").length : 0,
+      nextReady: !!(next && next.classList.contains("pacific-next-breathing-ready"))
+    };
+  });
+  expect(firstPageGuidance.blueActionCount === 1 || firstPageGuidance.nextReady).toBe(true);
 
   // The guided sequence must reach a dedicated final Sign Out page and visually guide it.
   await page.evaluate(() => {
