@@ -764,5 +764,15 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   await expect(teacher).toBeVisible();
   await teacher.click();
   await expect(saveButton).toBeVisible();
+  await page.locator("#pilotRegistrationName").fill("Teacher Pilot Test");
+  const nextButton = page.locator("#registrationNextButton");
+  await expect(saveButton).toBeEnabled();
+  await expect(nextButton).toBeDisabled();
+  await saveButton.click();
+  await expect(saveButton).toHaveText(/Registration Saved/);
+  await expect(nextButton).toBeEnabled();
+  await expect(nextButton).toContainText(/Prototype Access/);
+  await nextButton.click();
+  await expect(page.locator("#prototypeAccess")).toBeVisible();
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
 });
