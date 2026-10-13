@@ -6,7 +6,7 @@
 (function(){
   "use strict";
   var GREEN="#15803d";
-  var steps=[["welcomeNextButton","Step 1","Welcome","Next"],["registrationNextButton","Registration setup","Continue registration","Continue"],["prototypeNextButton","Step 3","Workspace access","Next"],["levelNextButton","Step 4","Class / Level","Next"],["subjectNextButton","Step 5","Subject","Next"],["termNextButton","Step 6","Term","Next"],["capabilityNextButton","Step 7","Learning capability","Open workspace"]];
+  var steps=[["welcomeNextButton","Step 1","Welcome","Next"],["prototypeNextButton","Step 3","Workspace access","Next"],["levelNextButton","Step 4","Class / Level","Next"],["subjectNextButton","Step 5","Subject","Next"],["termNextButton","Step 6","Term","Next"],["capabilityNextButton","Step 7","Learning capability","Open workspace"]];
   function css(){
     if(document.getElementById("pe-green-guided-style"))return;
     var s=document.createElement("style");s.id="pe-green-guided-style";
@@ -25,17 +25,9 @@
       wrap.insertBefore(g,wrap.firstChild);
     }
   }
-  function roleHint(){
-    var form=document.getElementById("userRegistrationForm");
-    if(!form||form.querySelector(".pe-green-role-hint"))return;
-    var hint=document.createElement("div");hint.className="pe-green-role-hint";hint.setAttribute("role","status");
-    hint.textContent="Choose your user role, complete the registration boxes, then follow the green Next button. This instruction applies only when the User Registration box is open.";
-    form.insertBefore(hint,form.firstChild);
-  }
   function init(){
     css();
     steps.forEach(function(x){addGuide(document.getElementById(x[0]),x[1],x[2],x[3]);});
-    roleHint();
     var roleCards=document.querySelectorAll(".pe-user-role-card");
     roleCards.forEach(function(card){if(card.getAttribute("data-pe-green-role-bound")==="true")return;card.setAttribute("data-pe-green-role-bound","true");card.style.borderColor=GREEN;card.style.cursor="pointer";});
   }
