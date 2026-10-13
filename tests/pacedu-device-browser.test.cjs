@@ -512,7 +512,7 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await page.locator("#peSequentialNext").click();
   await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Capability & Platform Test");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 11");
-  await expect(page.locator("#pacificEducationTeacherCapabilityTest")).toBeVisible();
+  await expect(page.locator("#peSequentialPage h3")).toContainText("Teacher Capability & Platform Test");
   await expect(page.locator("#peSequentialNext")).toBeDisabled();
 });
 
