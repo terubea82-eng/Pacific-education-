@@ -208,6 +208,24 @@
     });
   }
 
+  function setRoleWorkspaceIsolation(active){
+    /* The legacy pilot activation stylesheet uses display:block!important on
+       every feature section. The hidden attribute alone therefore cannot keep
+       unrelated dashboards out of the sequential role workspace. Add a
+       higher-specificity, scoped isolation rule while this workspace is active. */
+    var style=document.getElementById("pacedu-role-workspace-isolation-style");
+    if(!style){
+      style=document.createElement("style");
+      style.id="pacedu-role-workspace-isolation-style";
+      style.textContent=
+        "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
+        "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
+        "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}";
+      document.head.appendChild(style);
+    }
+    document.body.classList.toggle("pe-sequential-role-workspace-active",!!active);
+  }
+
   function hideApplicationChildren(app, except){
     Array.prototype.forEach.call(app.children,function(el){
       if(el===except || el.id==="pacificEducationSequentialRoleWorkspace" || SHARED[el.id]) return;
@@ -487,6 +505,7 @@
       LOCAL_SESSION_KEYS.forEach(function(key){try{localStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
+      setRoleWorkspaceIsolation(false);
       shell.remove();
       Array.prototype.forEach.call(app.children,function(el){
         if(el.getAttribute("data-pe-sequential-hidden")==="true"){
@@ -505,6 +524,7 @@
     };
 
     hideApplicationChildren(app,shell);
+    setRoleWorkspaceIsolation(true);
     shell.hidden=false;
     try{history.replaceState({pacificEducationSequential:true,role:role,index:0},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
     renderPage();
