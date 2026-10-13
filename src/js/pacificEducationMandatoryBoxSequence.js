@@ -30,6 +30,21 @@
     var form = get("userRegistrationForm");
     var next = get("registrationNextButton");
     if(!registration || !setupBoxes || !next || !form) return;
+
+    /* Keep a visible Back control beside the Page 4 Next button. It reverses
+       the inner registration steps; from Country it returns to the Rules page. */
+    var back = get("registrationBackButton");
+    if(!back){
+      back = document.createElement("button");
+      back.type = "button";
+      back.id = "registrationBackButton";
+      back.textContent = "⬅️ Back";
+      back.setAttribute("aria-label","Back to the previous registration step");
+      back.style.cssText = "background:#168a3a;color:#fff;border:2px solid #0f642a;border-radius:10px;min-height:52px;min-width:120px;padding:10px 18px;font-weight:800;margin:6px 8px 6px 0;";
+      var nav = get("registrationNextWrapper");
+      if(nav) nav.insertBefore(back, next);
+      else next.parentNode.insertBefore(back,next);
+    }
     if(registration.getAttribute("data-pe-box-sequence-ready")==="true") return;
     registration.setAttribute("data-pe-box-sequence-ready","true");
 
@@ -70,6 +85,13 @@
       var value=role ? String(role.value||"").trim() : "";
       var cards=document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card[aria-pressed=\"true\"]");
       return !!value || cards.length>0;
+    }
+    function selectedRoleName(){
+      var role=get("pilotRegistrationRole");
+      var value=role ? String(role.value||"").trim() : "";
+      if(value) return value;
+      var card=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed=\"true\"]");
+      return card ? String(card.getAttribute("data-role")||"").trim() : "";
     }
 
     /* Some older interaction-repair passes marked role cards as intentionally
@@ -177,12 +199,12 @@
         progress.textContent="Complete the visible box only, then press Next.";
       }
 
-      next.textContent=state===3 ? (registrationSaved ? "➡️ Next" : "✓ Save Registration") : "➡️ Next";
+      next.textContent=state===3 ? (registrationSaved ? "➡️ Next — Open "+(selectedRoleName()||"your")+" Workspace" : "➡️ Next (save registration first)") : "➡️ Next";
       next.disabled =
         (state===0 && !(get("pacificEducationCountrySelect")||{}).value) ||
         (state===1 && !(get("pacificEducationLanguageSelect")||{}).value) ||
         (state===2 && !selectedRole()) ||
-        (state===3 && !registrationSaved && !validName());
+        (state===3 && !registrationSaved);
 
       /* Some legacy interaction-repair scripts can leave the Save button disabled
          even after the role and display name are complete. This sequence is the
@@ -219,23 +241,21 @@
         state=3; update(); return;
       }
       if(registrationSaved){
-        progress.textContent="Registration saved. Opening Prototype Access because you pressed Next.";
-        if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
-          window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
-        }else{
-          progress.textContent="Registration is saved, but guided navigation is not ready. Reload the pilot page and try Next again.";
+        var roleName=selectedRoleName();
+        var workspace=window.PacificEducationSequentialRoleWorkspaces;
+        if(!roleName || !workspace || typeof workspace.build!=="function"){
+          progress.textContent="Registration is saved, but your role-specific workspace is not ready. Reload the pilot page and try Next again.";
+          speak("Registration is saved, but your role-specific workspace is not ready. Reload the pilot page and try Next again.");
+          return;
         }
+        progress.textContent="Registration saved. Opening the "+roleName+" Workspace because you pressed Next.";
+        speak("Registration saved. Opening the "+roleName+" Workspace.");
+        workspace.build(roleName);
         return;
       }
-      var save=get("pilotRegistrationSaveButton");
-      if(!save || save.disabled){
-        progress.textContent="Registration is not ready to submit. Complete all required fields and resolve any validation messages before pressing Next.";
-        speak("Registration is not ready to submit. Complete all required fields before pressing Next.");
-        return;
-      }
-      save.click();
-      progress.textContent="Saving registration. This page will remain open; press Next when ready to continue.";
-      speak("Saving registration. This page will remain open. Press Next when ready to continue.");
+      progress.textContent="Save Pilot Registration first. After the saved confirmation appears, press the green Next button to open your selected role workspace.";
+      speak("Save Pilot Registration first. After the saved confirmation appears, press Next to open your selected role workspace.");
+      return;
     }
 
     /* Saving confirms the pilot profile only. Navigation is deliberately deferred
@@ -270,7 +290,7 @@
           progress.textContent="Registration confirmed and saved. Press the green Next button when you are ready to continue.";
           var registrationStatus=get("pilotRegistrationStatus");
           if(registrationStatus) registrationStatus.textContent="Pilot registration saved for "+roleValue+". Press Next when ready to continue.";
-          next.textContent="➡️ Next";
+          next.textContent="➡️ Next — Open "+(selectedRoleName()||"your")+" Workspace";
           next.disabled=false;
           if(saveButton){
             saveButton.disabled=true;
@@ -281,6 +301,20 @@
         },350);
       },false);
     }
+
+    back.addEventListener("click",function(event){
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if(state>0){
+        if(state===3) registrationSaved=false;
+        state=state-1;
+        update();
+        return;
+      }
+      var rulesBack=get("paceduRulesBack");
+      if(rulesBack){ rulesBack.click(); return; }
+      progress.textContent="Use the previous page navigation to return to Rules & Conditions.";
+    },true);
 
     next.addEventListener("click",nextStep,true);
 

@@ -177,8 +177,8 @@ test("mobile touch can complete registration and select a role before Next advan
 
   await page.locator("#registrationNextButton").tap();
   await page.locator("#pilotRegistrationName").fill("Phone Pilot Test");
-  await expect(page.locator("#registrationNextButton")).toBeEnabled();
-  console.log("[mobile flow] name filled; tap Save Pilot Registration directly");
+  await expect(page.locator("#registrationNextButton")).toBeDisabled();
+  console.log("[mobile flow] name filled; Next stays disabled until Save Pilot Registration is confirmed");
   await page.locator("#pilotRegistrationSaveButton").tap();
   await page.waitForTimeout(700);
   const handoffDiagnostic = await page.evaluate(() => {
@@ -212,12 +212,14 @@ test("mobile touch can complete registration and select a role before Next advan
   /* Save must confirm the profile without changing the guided page. */
   await expect(registration).toBeVisible();
   await expect(page.locator("#prototypeAccess")).toBeHidden();
-  await expect(page.locator("#registrationNextButton")).toHaveText(/Next/);
+  await expect(page.locator("#registrationNextButton")).toContainText(/Open Teacher Workspace/);
+  await expect(page.locator("#registrationNextButton")).toBeEnabled();
   console.log("[mobile flow] registration remains visible after save; waiting for explicit Next tap");
   await page.locator("#registrationNextButton").tap();
-  await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
-  await expect(registration).toBeHidden();
-  console.log("[mobile flow] explicit Next tap opened Prototype Access");
+  const teacherWorkspace = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await expect(teacherWorkspace).toBeVisible({ timeout: 5000 });
+  await expect(teacherWorkspace).toHaveAttribute("data-pe-role", "teacher");
+  console.log("[mobile flow] explicit Next tap opened Teacher Workspace");
   const savedRegistration = await page.evaluate(() => ({
     registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
     role: sessionStorage.getItem("pacificEducationPilotRole"),
@@ -576,10 +578,15 @@ test("registration must remain on Page 4 when the real save does not persist", a
   await expect(registration, "Role Next must stay on Registration").toBeVisible();
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await page.locator("#pilotRegistrationName").fill("Unsaved Pilot Test");
-  await page.locator("#registrationNextButton").click();
+  const saveButton = page.locator("#pilotRegistrationSaveButton");
+  const nextButton = page.locator("#registrationNextButton");
+  await expect(saveButton).toBeEnabled();
+  await expect(nextButton).toBeDisabled();
+  await saveButton.click();
   await page.waitForTimeout(700);
   await expect(registration).toBeVisible();
   await expect(page.locator("#prototypeAccess")).toBeHidden();
+  await expect(nextButton).toBeDisabled();
   await expect(page.locator("#peBoxSequenceProgress")).toContainText(/not been confirmed|not saved/i);
 });
 
@@ -753,9 +760,16 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   const saveButton = page.locator("#pilotRegistrationSaveButton");
   await expect(saveButton).toHaveText(/Save Pilot Registration/);
   await expect(page.locator("#registrationNextButton")).toBeVisible();
+  const backButton = page.locator("#registrationBackButton");
+  await expect(backButton).toBeVisible();
+  await expect(backButton).toContainText("Back");
   // Save is correctly hidden until the user completes setup and selects a role.
   await expect(saveButton).toBeHidden();
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await page.locator("#registrationNextButton").click();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  await backButton.click();
+  await expect(page.locator("#pacificEducationCountriesBox")).toBeVisible();
   await page.locator("#registrationNextButton").click();
   await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
   await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
@@ -764,5 +778,70 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   await expect(teacher).toBeVisible();
   await teacher.click();
   await expect(saveButton).toBeVisible();
+  await page.locator("#registrationNextButton").click(); // confirm role, then enter the name step
+  await page.locator("#pilotRegistrationName").fill("Teacher Pilot Test");
+  const nextButton = page.locator("#registrationNextButton");
+  await expect(saveButton).toBeEnabled();
+  await expect(nextButton).toBeDisabled();
+  await saveButton.click();
+  await expect(saveButton).toHaveText(/Registration Saved/);
+  await expect(nextButton).toBeEnabled();
+  await expect(nextButton).toContainText(/Open Teacher Workspace/);
+  await nextButton.click();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+});
+
+
+
+test("save confirmation then Next opens the selected role workspace for every registration role", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  const roles = [
+    ["Student", "student"],
+    ["Blind Learner", "blind-learner"],
+    ["Deaf Learner", "deaf-learner"],
+    ["Teacher", "teacher"],
+    ["Parent/Caregiver", "parent"],
+    ["Professional Reviewer", "professional"],
+    ["NGO/Organization", "ngo"],
+    ["Education/Government", "education"],
+    ["Community/Partner", "community"],
+    ["Technician", "technician"],
+    ["Owner/Control", "owner"]
+  ];
+
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  for (const [role, expectedWorkspace] of roles) {
+    await page.evaluate(() => {
+      sessionStorage.clear();
+      localStorage.removeItem("pacificEducationPilotRegistration");
+      localStorage.removeItem("pacificEducationPilotRole");
+      sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
+    });
+    await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+    await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+    await page.locator("#registrationNextButton").click();
+    await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+    await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+    await page.locator("#registrationNextButton").click();
+
+    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card[data-role=\"" + role + "\"]");
+    await roleCard.click();
+    await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
+    await page.locator("#registrationNextButton").click(); // confirm role and open the name step
+    await page.locator("#pilotRegistrationName").fill("Role Pilot Test");
+    const save = page.locator("#pilotRegistrationSaveButton");
+    const next = page.locator("#registrationNextButton");
+    await expect(save).toBeEnabled();
+    await expect(next).toBeDisabled();
+    await save.click();
+    await expect(save).toHaveText(/Registration Saved/);
+    await expect(next).toBeEnabled();
+    await next.click();
+    const workspace = page.locator("#pacificEducationSequentialRoleWorkspace");
+    await expect(workspace).toBeVisible();
+    await expect(workspace).toHaveAttribute("data-pe-role", expectedWorkspace);
+  }
 });

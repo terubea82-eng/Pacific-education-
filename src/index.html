@@ -775,12 +775,12 @@ git status</pre>
       if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
-        status.textContent="Pilot registration saved for "+r+". Continue to Prototype Access.";
+        status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
         /* Registration is complete, but the role workspace must not bypass the
            single page-by-page navigation authority. MandatoryBoxSequence hands
            control back to SingleNavigation after this successful save. */
         try{ sessionStorage.setItem("pacificEducationPilotRole",r); }catch(_){}
-        var announcement="Pilot registration saved for "+r+". Continue to Prototype Access.";
+        var announcement="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
         if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(announcement);
         else if(window.speakText)window.speakText(announcement);
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
@@ -948,7 +948,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="../js/pacificEducationExternalReviewerPortal.js?v=20261006-external-reviewer"></script>
 <script src="./js/pacificEducationFutureSafeFeatureRepair.js?v=20261006-future-safe-links"></script>
 <script src="./js/pacificEducationSequentialRoleWorkspaces.js?v=20261013-workspace-next-owner"></script>
-<script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261013-save-without-auto-advance"></script>
+<script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261013-save-workspace-next"></script>
 <script src="./js/pacificEducationBreathingFocusGuide.js?v=20261013-registration-no-name-autoscroll"></script>
 <script src="./js/pacificEducationConversationContract.js?v=20261009-conversation-contract-v1"></script>
 <script src="./js/pacificEducationSingleNavigationController.js?v=20261011-page-one-instructions"></script>
