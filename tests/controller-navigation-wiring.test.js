@@ -108,10 +108,7 @@ test("guided Next transitions use the actual page numbers after registration", (
 
 
 test("Learning Tools stays fail-closed throughout guided entry and registration handoff", () => {
-  assert.doesNotMatch(
-    boxActivation,
-    /"pacificEducationSchoolIdentitySection","learningPlatform","pacificEducationAppTools"/
-  );
+  assert.doesNotMatch(boxActivation, /"learningPlatform",/);
   assert.match(controller, /function lockLearningToolsDuringEntry\(\)/);
   assert.match(controller, /lockLearningToolsDuringEntry\(\);\s*stopSpeechForPageTransition\(targetId\)/);
   assert.match(controller, /function gateway\(page\)\{\s*lockLearningToolsDuringEntry\(\)/);
