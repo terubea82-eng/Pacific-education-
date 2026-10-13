@@ -14,7 +14,9 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["learningPlatform","Student Workspace"],
+      ["studentStartLearning","Start Learning"],
+      ["studentAssignedClassContext","My Assigned Class / Year / Teacher"],
+      ["learningPlatform","Learning Tools"],
       ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
       ["pacificEducationInitialCapabilityResult","Capability Result"],
       ["levelSelection","Class / Level"],
@@ -348,6 +350,25 @@
       var item=sequence[index];
       if(item[0]==="dailyLesson") item=[item[0],"Day "+dailyDay+" of 365"];
       var target=document.getElementById(item[0]);
+
+      /* The student intro and assigned-context page are required sequential
+       * steps. Legacy role-preview paths create context lazily, so provide a
+       * pilot-safe page when absent. This does not authenticate a student or
+       * claim that an assignment has been verified.
+       */
+      if(!target && role==="student" && item[0]==="studentStartLearning"){
+        target=document.createElement("section");
+        target.id="studentStartLearning";
+        target.innerHTML="<h3>Start Learning</h3><p>Welcome to your Student Workspace. Follow your assigned learning pathway, complete daily activities and practice, and check your progress before signing out.</p><p>Use test data only in this controlled pilot.</p>";
+        app.appendChild(target);
+      }
+      if(!target && role==="student" && item[0]==="studentAssignedClassContext"){
+        target=document.createElement("section");
+        target.id="studentAssignedClassContext";
+        target.innerHTML="<h3>My Assigned Class / Year / Teacher</h3><p>Class, year, subject, term and teaching day should be assigned by the teacher.</p><p><strong>Pilot limitation:</strong> this page does not verify an individual assignment. Continue only with approved demonstration data and confirm class setup with the teacher.</p>";
+        app.appendChild(target);
+      }
+
       if(!target){
         if(item[0]==="pacificEducationExternalReviewerPortal" && window.PacificEducationProductionAppShell && typeof window.PacificEducationProductionAppShell.ensureExternalReviewerPortal==="function") window.PacificEducationProductionAppShell.ensureExternalReviewerPortal();
         if((item[0]==="pacificEducationInstitutionSetup" || item[0]==="pacificEducationInstitutionAdvice") && window.PacificEducationInstitutionSetup && typeof window.PacificEducationInstitutionSetup.render==="function") window.PacificEducationInstitutionSetup.render();
