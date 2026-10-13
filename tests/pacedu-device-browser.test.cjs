@@ -163,7 +163,12 @@ test("mobile touch can complete registration and select a role before Next advan
   await page.locator("#registrationNextButton").tap();
   const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
   await expect(teacher).toBeVisible();
-  console.log("[mobile flow] role cards visible; tap Teacher");
+  const teacherBox = await teacher.boundingBox();
+  expect(teacherBox, "Teacher role must have a measurable tap target").not.toBeNull();
+  expect(teacherBox.height, "Teacher role tap target must be at least 88px tall on mobile").toBeGreaterThanOrEqual(88);
+  expect(teacherBox.width, "Teacher role must provide a broad phone tap target").toBeGreaterThanOrEqual((page.viewportSize()?.width || 360) * 0.65);
+  await expect(teacher).toHaveCSS("pointer-events", "auto");
+  console.log("[mobile flow] large Teacher role card visible; tap Teacher");
   await teacher.tap();
   await expect(teacher).toHaveAttribute("aria-pressed", "true");
   await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
