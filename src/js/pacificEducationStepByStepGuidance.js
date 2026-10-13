@@ -133,7 +133,16 @@
   }
   function registrationIsActive(){
     var body=document.body;
-    return !!(body && (body.getAttribute("data-pe-active-guided-page")==="pacificEducationIdentityRegistration" || (body.classList.contains("pacedu-registration-mode"))));
+    if(!body) return false;
+    /* Registration is guided-flow step 3 even when the page controller has not
+       populated data-pe-active-guided-page yet. The old check missed that state,
+       so focus/highlight guidance could call scrollIntoView() and snap the phone
+       back to the first role card (Deaf Learner) while the user was scrolling. */
+    var registrationStep=body.classList.contains("pe-guided-flow") &&
+      String(body.getAttribute("data-pe-flow-step")||"")==="3";
+    return body.getAttribute("data-pe-active-guided-page")==="pacificEducationIdentityRegistration" ||
+      body.classList.contains("pacedu-registration-mode") ||
+      registrationStep;
   }
   function highlight(el, announce){
     if(registrationIsActive()){
