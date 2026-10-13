@@ -1204,6 +1204,18 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     } catch (e) {}
     if (isVisible(welcome)) return;
 
+    /*
+     * A hidden Welcome is not a blank startup if the controller has already
+     * made a legitimate destination visible. In particular, never pull users
+     * away from Registration or a nested workspace page.
+     */
+    var activePage = Number(body.getAttribute("data-pac-edu-entry-page") || "0");
+    var registration = document.getElementById("pacificEducationIdentityRegistration");
+    var recovery = document.getElementById("pacificEducationAccountRecovery");
+    var nestedDashboard = document.getElementById("pacificEducationCoverageDashboard");
+    if ((activePage >= 2 && activePage <= 4) ||
+        isVisible(registration) || isVisible(recovery) || isVisible(nestedDashboard)) return;
+
     /* First ask the established controller to restore the proper entry page. */
     var navigation = window.PacificEducationSingleNavigation;
     if (navigation && typeof navigation.gateway === "function") {
