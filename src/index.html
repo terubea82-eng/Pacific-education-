@@ -404,6 +404,20 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 </style>
 </head>
 <body>
+<script>
+/* Apply the registration route's visibility gate before Welcome markup can paint.
+   This prevents a one-frame Welcome flash on Rules → Registration navigation. */
+(function(){
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("entry") === "registration") {
+      document.body.classList.add("pacedu-registration-mode");
+      document.body.setAttribute("data-pac-edu-entry-page", "4");
+      document.body.setAttribute("data-pe-navigation-owner", "single");
+    }
+  } catch (e) {}
+})();
+</script>
 <section id="pacificEducationWelcome" aria-label="Pacific Education welcome">
 <div id="pacificEducationWelcomeContent" class="pacedu-welcome-only">
 <div class="pacedu-welcome-hero" role="img" aria-label="A Pacific island student reading a book on a beach while facing the sea under a bright sun">
