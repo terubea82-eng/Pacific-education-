@@ -512,9 +512,10 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#parentDashboard")).toBeHidden();
   await expect(page.locator("#pacificEducationAIConversation")).toBeHidden();
   await expect(page.locator("#pacificEducationStudentProgressDashboard")).toBeHidden();
-  await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
+  await expect(page.locator("#peSequentialSignOutButton")).toBeHidden();
 
-  /* Regression: Teacher Workspace Next must change the active page, not leave
+  /* Sign Out is available only after the role sequence reaches its final page.
+     Regression: Teacher Workspace Next must change the active page, not leave
      the teacher dashboard displayed. The capability test is the required step 2. */
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 11");
   await page.locator("#peSequentialNext").click();
