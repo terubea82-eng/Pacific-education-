@@ -1217,12 +1217,16 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var rules = document.getElementById("paceduPageRules");
     /*
      * Treat the entry-page number as authoritative only when its matching
-     * destination is actually visible. A stale legacy pe-guided-flow marker
-     * must not block recovery merely because the body still carries step 3.
+     * destination is actually visible. A stale legacy pe-guided-flow step 3
+     * can make Registration appear visible through CSS while Welcome is blank.
+     * The single-navigation gateway must be allowed to clear that stale mode.
      */
+    var staleLegacyRegistration = body.classList.contains("pe-guided-flow") &&
+      body.getAttribute("data-pe-flow-step") === "3";
     if ((activePage === 2 && isVisible(vision)) ||
         (activePage === 3 && isVisible(rules)) ||
-        isVisible(registration) || isVisible(recovery) || isVisible(nestedDashboard)) return;
+        ((!staleLegacyRegistration) && isVisible(registration)) ||
+        isVisible(recovery) || isVisible(nestedDashboard)) return;
 
     /* First ask the established controller to restore the proper entry page. */
     var navigation = window.PacificEducationSingleNavigation;
