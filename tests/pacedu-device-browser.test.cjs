@@ -70,6 +70,7 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   await page.setViewportSize({ width: 1365, height: 900 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await expect(page.locator("#pacificEducationWelcome")).toBeAttached();
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await expect(page.locator("#pacificEducationVoiceStatus")).toBeAttached();
   await expect(page.locator("#welcomeNextButton")).toBeAttached();
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeAttached();
