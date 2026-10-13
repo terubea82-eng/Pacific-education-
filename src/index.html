@@ -13,6 +13,8 @@
 <link rel="canonical" href="https://terubea82-eng.github.io/Pacific-education-/">
 <style>
 body{font-family:Arial,sans-serif;margin:0;line-height:1.5}
+/* Prevent the standalone Learning Tools section from flashing before guided-flow isolation initializes. The later explicit post-flow rule can reveal it after setup is complete. */
+#learningPlatform{display:none!important}
 header{padding:20px;border-bottom:1px solid #ccc}
 main{max-width:1000px;margin:auto;padding:20px}
 section{margin-bottom:24px;padding:20px;border:1px solid #ccc;border-radius:8px}
