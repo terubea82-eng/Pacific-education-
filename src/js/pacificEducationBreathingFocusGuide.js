@@ -75,7 +75,7 @@ function refresh(){if(busy)return;busy=true;try{injectStyle();choose();}finally{
 function init(){
  injectStyle();if(observer)return;
  observer=new MutationObserver(function(){refresh();});
- observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","aria-pressed","disabled","value","aria-hidden"]});
+ observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","aria-pressed","value","aria-hidden"]});
  document.addEventListener("input",completedAction,true);document.addEventListener("change",completedAction,true);
  document.addEventListener("click",function(event){var n=event.target&&event.target.closest?event.target.closest("#peSequentialNext,#registrationNextButton,#welcomeNextButton,#paceduVisionNext,#paceduRulesContinue"):null;if(n){completed=new WeakSet();lastPageKey="";setTimeout(refresh,120);return;}completedAction(event);},true);
  window.addEventListener("resize",refresh);setTimeout(refresh,250);
