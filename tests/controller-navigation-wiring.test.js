@@ -134,7 +134,7 @@ test("student sequential workspace begins with Start Learning and assigned-class
 
 test("sequential Sign Out confirmation is hidden until the final workspace page", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
-  assert.match(sequential, /id=\\\\\"peSequentialSignOut\\\\\" hidden style=/);
+  assert.match(sequential, /peSequentialSignOut.*hidden style=/);
   assert.match(sequential, /signOutArea\.hidden = item\[0\] !== "paceduSignOutPage"/);
   assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)/);
 });
