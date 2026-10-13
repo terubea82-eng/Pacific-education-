@@ -49,14 +49,14 @@ test("Page 3 Next opens only Registration at the defined guided-flow step", asyn
   // documents before returning to index.html for Registration.
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(page).toHaveURL(/\\/vision\\.html(?:\\?.*)?$/);
+  await expect(page).toHaveURL(/\/vision\.html(?:\?.*)?$/);
   await page.getByRole("link", { name: /Next.*Rules/i }).click();
-  await expect(page).toHaveURL(/\\/rules\\.html(?:\\?.*)?$/);
+  await expect(page).toHaveURL(/\/rules\.html(?:\?.*)?$/);
 
   await page.locator("#rulesAgreement").check();
   await expect(page.locator("#continueButton")).toBeEnabled();
   await page.locator("#continueButton").click();
-  await expect(page).toHaveURL(/\\/index\\.html\\?entry=registration$/);
+  await expect(page).toHaveURL(/\/index\.html\?entry=registration$/);
 
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
