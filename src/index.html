@@ -1181,13 +1181,18 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 
 <script id="pacedu-initial-entry-visibility-fallback">
 /*
- * Startup safety net only: if the normal navigation controller leaves the
- * initial Welcome page hidden, restore the isolated first page. This does not
- * replace navigation or voice controllers and does not run on direct
- * registration entry after rules acceptance.
+ * Startup safety net: use the single navigation controller as the first
+ * recovery path. If it cannot restore Welcome, align the fallback with the
+ * same pacedu-entry-mode state rather than creating a competing guided-flow
+ * state. Direct registration after accepted rules remains untouched.
  */
 (function(window, document) {
   "use strict";
+  function isVisible(node) {
+    return !!(node && node.getClientRects().length > 0 &&
+      window.getComputedStyle(node).display !== "none" &&
+      window.getComputedStyle(node).visibility !== "hidden");
+  }
   function restoreWelcomeIfBlank() {
     var body = document.body;
     var welcome = document.getElementById("pacificEducationWelcome");
@@ -1197,30 +1202,92 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
       if (params.get("entry") === "registration" &&
           window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes") return;
     } catch (e) {}
-    var visible = welcome.getClientRects().length > 0 &&
-      window.getComputedStyle(welcome).display !== "none" &&
-      window.getComputedStyle(welcome).visibility !== "hidden";
-    if (visible) return;
-    body.classList.remove("pe-guided-flow-ended");
-    body.classList.add("pe-guided-flow");
-    body.setAttribute("data-pe-flow-step", "0");
-    var main = document.querySelector("main");
-    if (main) {
-      Array.prototype.forEach.call(main.children, function(child) {
-        if (child !== welcome &&
-            child.id !== "pilotBanner" &&
-            child.id !== "welcomeNextWrapper") {
-          child.style.setProperty("display", "none", "important");
-        }
-      });
-      main.style.setProperty("display", "block", "important");
+    if (isVisible(welcome)) return;
+
+    /*
+     * A hidden Welcome is not a blank startup if the controller has already
+     * made a legitimate destination visible. In particular, never pull users
+     * away from Registration or a nested workspace page.
+     */
+    var activePage = Number(body.getAttribute("data-pac-edu-entry-page") || "0");
+    var registration = document.getElementById("pacificEducationIdentityRegistration");
+    var recovery = document.getElementById("pacificEducationAccountRecovery");
+    var nestedDashboard = document.getElementById("pacificEducationCoverageDashboard");
+    var vision = document.getElementById("paceduPageVision");
+    var rules = document.getElementById("paceduPageRules");
+    /*
+     * Treat the entry-page number as authoritative only when its matching
+     * destination is actually visible. A stale legacy pe-guided-flow step 3
+     * can make Registration appear visible through CSS while Welcome is blank.
+     * The single-navigation gateway must be allowed to clear that stale mode.
+     */
+    var staleLegacyRegistration = body.classList.contains("pe-guided-flow") &&
+      body.getAttribute("data-pe-flow-step") === "3";
+    if ((activePage === 2 && isVisible(vision)) ||
+        (activePage === 3 && isVisible(rules)) ||
+        ((!staleLegacyRegistration) && isVisible(registration)) ||
+        isVisible(recovery) || isVisible(nestedDashboard)) return;
+
+    /* First ask the established controller to restore the proper entry page. */
+    var navigation = window.PacificEducationSingleNavigation;
+    if (navigation && typeof navigation.gateway === "function") {
+      try { navigation.gateway(1); } catch (e) {}
+      if (isVisible(welcome)) {
+        body.setAttribute("data-pe-initial-entry-fallback", "single-navigation-restored");
+        return;
+      }
     }
+
+    /*
+     * Emergency DOM fallback mirrors gateway(1)'s state. Do not set
+     * pe-guided-flow/data-pe-flow-step here: that is a separate navigation
+     * mode and can conflict with the active-page isolation controller.
+     */
+    body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
+    body.classList.add("pacedu-entry-mode");
+    body.setAttribute("data-pac-edu-entry-page", "1");
+    body.removeAttribute("data-pe-flow-step");
+    body.removeAttribute("data-pe-active-guided-page");
+    body.setAttribute("data-pe-navigation-owner", "single");
+
+    var pilot = document.getElementById("pacificEducationPilotPages");
+    if (pilot) {
+      pilot.hidden = false;
+      pilot.removeAttribute("aria-hidden");
+      pilot.style.setProperty("display", "block", "important");
+    }
+
+    var pageIds = [
+      "paceduPageVision", "paceduPageRules", "pacificEducationIdentityRegistration",
+      "prototypeAccess", "levelSelection", "subjectSelection", "termSelection",
+      "capabilitySelection", "dailyLesson", "dailyLessonPracticeStage", "assessments",
+      "teacherCalendarSection", "pacificEducationCoverageDashboard"
+    ];
+    pageIds.forEach(function(id) {
+      var page = document.getElementById(id);
+      if (!page) return;
+      page.hidden = true;
+      page.setAttribute("aria-hidden", "true");
+      page.style.setProperty("display", "none", "important");
+    });
+
+    welcome.hidden = false;
+    welcome.removeAttribute("aria-hidden");
     welcome.style.setProperty("display", "block", "important");
     welcome.style.setProperty("visibility", "visible", "important");
+
     var banner = document.getElementById("pilotBanner");
-    if (banner) banner.style.setProperty("display", "block", "important");
+    if (banner) {
+      banner.hidden = false;
+      banner.removeAttribute("aria-hidden");
+      banner.style.setProperty("display", "block", "important");
+    }
     var next = document.getElementById("welcomeNextWrapper");
-    if (next) next.style.setProperty("display", "flex", "important");
+    if (next) {
+      next.hidden = false;
+      next.removeAttribute("aria-hidden");
+      next.style.setProperty("display", "flex", "important");
+    }
     body.setAttribute("data-pe-initial-entry-fallback", "welcome-restored");
   }
   function scheduleFallback() {
