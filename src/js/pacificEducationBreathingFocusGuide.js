@@ -5,7 +5,7 @@
 (function(window,document){
 "use strict";
 var STYLE_ID="pacificEducationBreathingFocusStyle",FOCUS_CLASS="pacific-breathing-focus",LABEL_CLASS="pacific-breathing-focus-label",LOCK_CLASS="pacific-breathing-locked",READY_CLASS="pacific-next-breathing-ready";
-var activeTarget=null,activeControl=null,observer=null,busy=false,lastPageKey="",completed=new WeakSet();
+var activeTarget=null,activeControl=null,busy=false,lastPageKey="",completed=new WeakSet(),refreshTimer=null;
 var IGNORE=/^(back|next|finish|hear this page|stop speech|hear instructions|ai playback|stop narration|refresh mail box|start voice control|normal text|large text|extra large|voice preference|accessibility)$/i;
 function injectStyle(){
  if(get(STYLE_ID))return;var s=document.createElement("style");s.id=STYLE_ID;
@@ -19,7 +19,7 @@ function excluded(el){var t=labelOf(el);return IGNORE.test(t)||/^(🔊|🔇|✉�
 function controls(root){return Array.prototype.slice.call((root||document).querySelectorAll('input:not([type="hidden"]),select,textarea,button,[role="button"]')).filter(function(el){return visible(el)&&!el.disabled&&!el.readOnly&&!excluded(el)&&String(el.type||"").toLowerCase()!=="checkbox";});}
 function unlockAll(){Array.prototype.forEach.call(document.querySelectorAll("."+LOCK_CLASS),function(el){el.classList.remove(LOCK_CLASS);el.removeAttribute("aria-disabled");if(el.getAttribute("data-pe-breathing-disabled")==="1"){el.removeAttribute("disabled");el.removeAttribute("data-pe-breathing-disabled");}});}
 function clearVisuals(){if(activeTarget){activeTarget.classList.remove(FOCUS_CLASS);activeTarget.removeAttribute("data-pe-breathing-active");}Array.prototype.forEach.call(document.querySelectorAll("."+LABEL_CLASS),function(el){el.remove();});Array.prototype.forEach.call(document.querySelectorAll("."+READY_CLASS),function(el){el.classList.remove(READY_CLASS);el.removeAttribute("data-pe-breathing-next-ready");});unlockAll();activeTarget=null;activeControl=null;}
-function lockTo(target,root){controls(root).forEach(function(el){if(el===target||(target&&target.contains&&target.contains(el))||/^(registrationNextButton|peSequentialNext|welcomeNextButton|paceduVisionNext|paceduRulesContinue|peSequentialBack|registrationBackButton|peSequentialSignOutButton|peSequentialSignOutYes|peSequentialSignOutNo)$/.test(el.id)||excluded(el))return;el.setAttribute("disabled","disabled");el.setAttribute("data-pe-breathing-disabled","1");el.classList.add(LOCK_CLASS);el.setAttribute("aria-disabled","true");});}
+function lockTo(target,root){/* Visual guidance only; preserve existing control and navigation handlers. */}
 function boxFor(target){return target.closest(".pe-user-box,#pacificEducationRegistrationBox,.pacedu-entry-card,.pacedu-entry-grid section,.pacedu-agreement,.pe-guided-action-box")||target;}
 function showFocus(target,text,root){
  if(!target||!visible(target)||target.disabled)return false;var box=boxFor(target);
@@ -73,13 +73,13 @@ function completedAction(event){
 }
 function refresh(){if(busy)return;busy=true;try{injectStyle();choose();}finally{busy=false;}}
 function init(){
- injectStyle();if(observer)return;
- observer=new MutationObserver(function(){refresh();});
- observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","style","aria-pressed","value","aria-hidden"]});
+ injectStyle();
  document.addEventListener("input",completedAction,true);document.addEventListener("change",completedAction,true);
- document.addEventListener("click",function(event){var n=event.target&&event.target.closest?event.target.closest("#peSequentialNext,#registrationNextButton,#welcomeNextButton,#paceduVisionNext,#paceduRulesContinue"):null;if(n){completed=new WeakSet();lastPageKey="";setTimeout(refresh,120);return;}completedAction(event);},true);
+ document.addEventListener("click",function(event){var n=event.target&&event.target.closest?event.target.closest("#peSequentialNext,#registrationNextButton,#welcomeNextButton,#paceduVisionNext,#paceduRulesContinue,#peSequentialSignOutButton,#peSequentialSignOutYes"):null;if(n){completed=new WeakSet();lastPageKey="";setTimeout(refresh,120);setTimeout(refresh,450);setTimeout(refresh,900);return;}completedAction(event);},true);
  window.addEventListener("resize",refresh);setTimeout(refresh,250);
+ // Catch navigation updates without creating a MutationObserver or changing the protected speech engine.
+ if(!refreshTimer)refreshTimer=window.setInterval(function(){var page=get("peSequentialPage"),title=get("peSequentialTitle"),key=page&&title?title.textContent+":"+page.innerHTML.length:"";if(key!==lastPageKey||!activeTarget||!visible(activeTarget))refresh();},700);
 }
-window.PacificEducationBreathingFocusGuide={version:"1.1.0-all-pages",refresh:refresh,clear:clearVisuals};
+window.PacificEducationBreathingFocusGuide={version:"1.1.1-all-pages-no-observer",refresh:refresh,clear:clearVisuals};
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })(window,document);
