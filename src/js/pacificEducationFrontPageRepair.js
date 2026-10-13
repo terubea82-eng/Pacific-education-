@@ -6,7 +6,7 @@
 (function(){
   "use strict";
   var GREEN="#15803d";
-  var steps=[["welcomeNextButton","Step 1","Welcome","Next"],["prototypeNextButton","Step 3","Workspace access","Next"],["levelNextButton","Step 4","Class / Level","Next"],["subjectNextButton","Step 5","Subject","Next"],["termNextButton","Step 6","Term","Next"],["capabilityNextButton","Step 7","Learning capability","Open workspace"]];
+  var steps=[["registrationNextButton","Step 2","Registration setup","Next"],["welcomeNextButton","Step 1","Welcome","Next"],["prototypeNextButton","Step 3","Workspace access","Next"],["levelNextButton","Step 4","Class / Level","Next"],["subjectNextButton","Step 5","Subject","Next"],["termNextButton","Step 6","Term","Next"],["capabilityNextButton","Step 7","Learning capability","Open workspace"]];
   function css(){
     if(document.getElementById("pe-green-guided-style"))return;
     var s=document.createElement("style");s.id="pe-green-guided-style";
