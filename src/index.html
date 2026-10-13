@@ -751,7 +751,13 @@ git status</pre>
     function selectRole(value){
       role.value=value;
       if(fields)fields.hidden=false;
-      if(selected)selected.innerHTML="<strong>Selected role:</strong> "+value;
+      if(selected){
+        selected.textContent="";
+        var label=document.createElement("strong");
+        label.textContent="Selected role:";
+        selected.appendChild(label);
+        selected.appendChild(document.createTextNode(" "+value));
+      }
       cards.forEach(function(card){
         var active=card.getAttribute("data-role")===value;
         card.setAttribute("aria-pressed",String(active));
