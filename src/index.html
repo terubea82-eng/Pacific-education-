@@ -212,6 +212,26 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
 #pilotUserRoleCards .pe-user-role-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;min-width:0;min-height:68px;text-align:left;white-space:normal}
 #pilotRoleRegistrationFields{margin-top:12px;padding:12px;border:2px solid #168be8;border-radius:10px}
 @media(max-width:520px){#pilotUserRoleCards{grid-template-columns:1fr}}
+/* Large, reliable role targets for phone registration. Keep every role a real button. */
+#pilotUserRoleCards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#pilotUserRoleCards .pe-user-role-card{
+  width:100%;min-height:96px;padding:16px 18px;gap:7px;
+  align-items:flex-start;justify-content:center;text-align:left;
+  font-size:1.08rem;line-height:1.35;font-weight:600;
+  border:2px solid #168be8;border-radius:12px;
+  touch-action:manipulation;pointer-events:auto;position:relative;z-index:3;
+}
+#pilotUserRoleCards .pe-user-role-card strong{font-size:1.12rem;line-height:1.35}
+#pilotUserRoleCards .pe-user-role-card span{font-size:1rem;font-weight:400;line-height:1.4}
+#pilotUserRoleCards .pe-user-role-card[aria-pressed="true"]{
+  border:3px solid #075985;background:#e0f2fe;box-shadow:0 0 0 3px rgba(14,165,233,.18)
+}
+#pilotUserRoleCards .pe-user-role-card:focus-visible{outline:4px solid #075985;outline-offset:3px}
+@media(max-width:520px){
+  #pilotUserRoleCards{grid-template-columns:minmax(0,1fr);gap:12px}
+  #pilotUserRoleCards .pe-user-role-card{min-height:100px;padding:18px;font-size:1.08rem}
+}
+
 
 /* User Registration: blue breathing activation cue for registration boxes only.
    Keep guided Next buttons green and preserve the protected #856 voice controller. */
