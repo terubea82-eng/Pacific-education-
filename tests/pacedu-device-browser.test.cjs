@@ -707,6 +707,7 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
   // during the registration page's initialization cannot be missed.
   await page.addInitScript(() => {
     window.__paceduWelcomeFlashDetected = false;
+    window.__paceduLearningToolsFlashDetected = false;
     const isVisible = node => !!node && !node.hidden &&
       node.getAttribute("aria-hidden") !== "true" &&
       getComputedStyle(node).display !== "none" &&
@@ -715,7 +716,9 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
     const inspect = () => {
       if (!/entry=registration(?:&|$)/.test(location.search)) return;
       const welcome = document.getElementById("pacificEducationWelcome");
+      const learningTools = document.getElementById("learningPlatform");
       if (isVisible(welcome)) window.__paceduWelcomeFlashDetected = true;
+      if (isVisible(learningTools)) window.__paceduLearningToolsFlashDetected = true;
     };
     const start = () => {
       if (!document.documentElement) return;
@@ -743,7 +746,9 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
   await expect(page.locator("#welcomeNextWrapper")).toBeHidden();
   await page.waitForTimeout(1100);
   const flashDetected = await page.evaluate(() => window.__paceduWelcomeFlashDetected);
+  const learningToolsFlashDetected = await page.evaluate(() => window.__paceduLearningToolsFlashDetected);
   expect(flashDetected, "Welcome must remain hidden throughout Rules → Registration").toBe(false);
+  expect(learningToolsFlashDetected, "Learning Tools must remain hidden throughout Rules → Registration").toBe(false);
 });
 
 
