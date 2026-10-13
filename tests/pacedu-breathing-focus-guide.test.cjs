@@ -28,11 +28,20 @@ test("breathing guide activates for a sequential teacher workspace and final sig
     const next = document.getElementById("peSequentialNext");
     const title = document.getElementById("peSequentialTitle");
     let guard = 0;
-    while (next && title && !/Sign Out/.test(title.textContent) && guard++ < 30) next.click();
+    while (next && title && !/Sign Out/.test(title.textContent) && guard++ < 30) {
+      if (next.disabled) {
+        const answers = document.querySelectorAll("#peSequentialPage input[data-pe-cap-answer]");
+        answers.forEach(input => { input.value = input.getAttribute("data-pe-cap-answer"); input.dispatchEvent(new Event("input", { bubbles: true })); });
+        const submit = Array.from(document.querySelectorAll("#peSequentialPage button")).find(button => /Submit Test/.test(button.textContent));
+        if (submit) submit.click();
+      }
+      if (!next.disabled) next.click();
+      else break;
+    }
   });
   await expect(page.locator("#peSequentialTitle")).toContainText("Sign Out");
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
-  await expect(page.locator("#peSequentialSignOutButton.pacific-breathing-focus, #peSequentialSignOutButton")).toBeVisible();
+  await expect.poll(() => page.locator("#peSequentialSignOutButton.pacific-breathing-focus").count(), { timeout: 5000 }).toBe(1);
   await expect(page.locator("#peSequentialSignOutButton")).toContainText("Sign Out");
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
