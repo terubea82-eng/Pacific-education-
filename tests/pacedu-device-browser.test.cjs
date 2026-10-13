@@ -738,3 +738,31 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
   const flashDetected = await page.evaluate(() => window.__paceduWelcomeFlashDetected);
   expect(flashDetected, "Welcome must remain hidden throughout Rules → Registration").toBe(false);
 });
+
+
+test("Page 4 registration guidance has one clear green-step banner and no injected role hint", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => { try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {} });
+  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+  await expect(registration).toBeVisible();
+  await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toHaveCount(1);
+  await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toContainText("Registration setup");
+  await expect(page.locator("#userRegistrationForm .pe-green-role-hint")).toHaveCount(0);
+  const saveButton = page.locator("#pilotRegistrationSaveButton");
+  await expect(saveButton).toHaveText(/Save Pilot Registration/);
+  await expect(page.locator("#registrationNextButton")).toBeVisible();
+  // Save is correctly hidden until the user completes setup and selects a role.
+  await expect(saveButton).toBeHidden();
+  await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await page.locator("#registrationNextButton").click();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+  await page.locator("#registrationNextButton").click();
+  const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
+  await expect(teacher).toBeVisible();
+  await teacher.click();
+  await expect(saveButton).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+});
