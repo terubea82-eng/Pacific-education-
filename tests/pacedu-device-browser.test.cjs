@@ -753,9 +753,16 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   const saveButton = page.locator("#pilotRegistrationSaveButton");
   await expect(saveButton).toHaveText(/Save Pilot Registration/);
   await expect(page.locator("#registrationNextButton")).toBeVisible();
+  const backButton = page.locator("#registrationBackButton");
+  await expect(backButton).toBeVisible();
+  await expect(backButton).toContainText("Back");
   // Save is correctly hidden until the user completes setup and selects a role.
   await expect(saveButton).toBeHidden();
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await page.locator("#registrationNextButton").click();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  await backButton.click();
+  await expect(page.locator("#pacificEducationCountriesBox")).toBeVisible();
   await page.locator("#registrationNextButton").click();
   await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
   await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
