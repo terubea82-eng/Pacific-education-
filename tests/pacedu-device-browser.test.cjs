@@ -764,6 +764,7 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   await expect(teacher).toBeVisible();
   await teacher.click();
   await expect(saveButton).toBeVisible();
+  await page.locator("#registrationNextButton").click(); // confirm role, then enter the name step
   await page.locator("#pilotRegistrationName").fill("Teacher Pilot Test");
   const nextButton = page.locator("#registrationNextButton");
   await expect(saveButton).toBeEnabled();
@@ -815,6 +816,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card[data-role=\"" + role + "\"]");
     await roleCard.click();
     await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
+    await page.locator("#registrationNextButton").click(); // confirm role and open the name step
     await page.locator("#pilotRegistrationName").fill("Role Pilot Test");
     const save = page.locator("#pilotRegistrationSaveButton");
     const next = page.locator("#registrationNextButton");
