@@ -771,8 +771,61 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   await saveButton.click();
   await expect(saveButton).toHaveText(/Registration Saved/);
   await expect(nextButton).toBeEnabled();
-  await expect(nextButton).toContainText(/Prototype Access/);
+  await expect(nextButton).toContainText(/Open Teacher Workspace/);
   await nextButton.click();
-  await expect(page.locator("#prototypeAccess")).toBeVisible();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+});
+
+
+
+test("save confirmation then Next opens the selected role workspace for every registration role", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  const roles = [
+    ["Student", "student"],
+    ["Blind Learner", "blind-learner"],
+    ["Deaf Learner", "deaf-learner"],
+    ["Teacher", "teacher"],
+    ["Parent/Caregiver", "parent"],
+    ["Professional Reviewer", "professional"],
+    ["NGO/Organization", "ngo"],
+    ["Education/Government", "education"],
+    ["Community/Partner", "community"],
+    ["Technician", "technician"],
+    ["Owner/Control", "owner"]
+  ];
+
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  for (const [role, expectedWorkspace] of roles) {
+    await page.evaluate(() => {
+      sessionStorage.clear();
+      localStorage.removeItem("pacificEducationPilotRegistration");
+      localStorage.removeItem("pacificEducationPilotRole");
+      sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
+    });
+    await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+    await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+    await page.locator("#registrationNextButton").click();
+    await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+    await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+    await page.locator("#registrationNextButton").click();
+
+    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card").filter({ has: page.locator("strong", { hasText: new RegExp("^" + role.replace(/[.*+?^\x24{}()|[\]\\]/g, "\\$&") + "$") }) });
+    await roleCard.click();
+    await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
+    await page.locator("#pilotRegistrationName").fill("Role Pilot Test");
+    const save = page.locator("#pilotRegistrationSaveButton");
+    const next = page.locator("#registrationNextButton");
+    await expect(save).toBeEnabled();
+    await expect(next).toBeDisabled();
+    await save.click();
+    await expect(save).toHaveText(/Registration Saved/);
+    await expect(next).toBeEnabled();
+    await next.click();
+    const workspace = page.locator("#pacificEducationSequentialRoleWorkspace");
+    await expect(workspace).toBeVisible();
+    await expect(workspace).toHaveAttribute("data-pe-role", expectedWorkspace);
+  }
 });
