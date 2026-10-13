@@ -83,8 +83,8 @@ test("all-feature visibility cannot override one-page guided flow", () => {
 
 test("page changes stop the previous page's audio without replacing the protected voice engine", () => {
   assert.match(controller, /function stopSpeechForPageTransition\(targetId\)/);
-  assert.match(controller, /function guided\(step,targetId\)\{\s*stopSpeechForPageTransition\(targetId\)/);
-  assert.match(controller, /function gateway\(page\)\{\s*var targetId=.*?stopSpeechForPageTransition\(targetId\)/s);
+  assert.match(controller, /function guided\(step,targetId\)\{\s*lockLearningToolsDuringEntry\(\);\s*stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function gateway\(page\)\{\s*lockLearningToolsDuringEntry\(\);\s*var targetId=.*?stopSpeechForPageTransition\(targetId\)/s);
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
 });
 
@@ -104,4 +104,14 @@ test("guided Next transitions use the actual page numbers after registration", (
   assert.match(controller, /practiceNextButton:\s*\[11,\s*"assessments"\]/);
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
+});
+
+
+test("Learning Tools stays fail-closed throughout guided entry and registration handoff", () => {
+  assert.doesNotMatch(boxActivation, /"learningPlatform",/);
+  assert.match(controller, /function lockLearningToolsDuringEntry\(\)/);
+  assert.match(controller, /lockLearningToolsDuringEntry\(\);\s*stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function gateway\(page\)\{\s*lockLearningToolsDuringEntry\(\)/);
+  assert.match(controller, /page\.style\.setProperty\("display","none","important"\)/);
+  assert.match(html, /body:not\(\.pe-guided-flow-ended\) #learningPlatform\{display:none!important\}/);
 });

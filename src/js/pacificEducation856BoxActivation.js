@@ -114,7 +114,7 @@
     /* Reveal current pilot-facing boxes. Production/payment gates stay protected. */
     [
       "pacificEducationAppMenu","header","userFirstNavigation",
-      "pacificEducationSchoolIdentitySection","learningPlatform","pacificEducationAppTools",
+      "pacificEducationSchoolIdentitySection","pacificEducationAppTools",
       "pacificEducationIdentityRegistration","pacificEducationWebsitePilotChecklist",
       "prototypeAccess","levelSelection","subjectSelection","termSelection","capabilitySelection",
       "dailyLesson","dailyLessonPracticeStage","pacificEducationHomeSubmission",
@@ -372,7 +372,7 @@
     var allPilotBoxes=[
       "pacificEducationMailbox","pacificEducationAppMenu","pacificEducationAccessibilityControls","pilotBanner",
       "pacificEducationTechnicianActivation","pacificEducationTechnicianWorkspace","pacificEducationSchoolIdentitySection",
-      "learningPlatform","pacificEducationAppTools","teacherCalendarSection","pacificEducationAccountRecovery",
+      "pacificEducationAppTools","teacherCalendarSection","pacificEducationAccountRecovery",
       "pacificEducationIdentityRegistration","pacificEducationWebsitePilotChecklist","prototypeAccess",
       "levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage",
       "pacificEducationHomeSubmission","pacificEducationTermBaseline","pacificEducationTransferIntake","assessments",
