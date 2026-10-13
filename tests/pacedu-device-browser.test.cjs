@@ -578,10 +578,15 @@ test("registration must remain on Page 4 when the real save does not persist", a
   await expect(registration, "Role Next must stay on Registration").toBeVisible();
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await page.locator("#pilotRegistrationName").fill("Unsaved Pilot Test");
-  await page.locator("#registrationNextButton").click();
+  const saveButton = page.locator("#pilotRegistrationSaveButton");
+  const nextButton = page.locator("#registrationNextButton");
+  await expect(saveButton).toBeEnabled();
+  await expect(nextButton).toBeDisabled();
+  await saveButton.click();
   await page.waitForTimeout(700);
   await expect(registration).toBeVisible();
   await expect(page.locator("#prototypeAccess")).toBeHidden();
+  await expect(nextButton).toBeDisabled();
   await expect(page.locator("#peBoxSequenceProgress")).toContainText(/not been confirmed|not saved/i);
 });
 
