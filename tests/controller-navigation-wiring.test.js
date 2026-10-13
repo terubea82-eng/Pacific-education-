@@ -105,3 +105,16 @@ test("guided Next transitions use the actual page numbers after registration", (
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
 });
+
+
+test("Learning Tools stays fail-closed throughout guided entry and registration handoff", () => {
+  assert.doesNotMatch(
+    boxActivation,
+    /"pacificEducationSchoolIdentitySection","learningPlatform","pacificEducationAppTools"/
+  );
+  assert.match(controller, /function lockLearningToolsDuringEntry\(\)/);
+  assert.match(controller, /lockLearningToolsDuringEntry\(\);\s*stopSpeechForPageTransition\(targetId\)/);
+  assert.match(controller, /function gateway\(page\)\{\s*lockLearningToolsDuringEntry\(\)/);
+  assert.match(controller, /page\.style\.setProperty\("display","none","important"\)/);
+  assert.match(html, /body:not\(\.pe-guided-flow-ended\) #learningPlatform\{display:none!important\}/);
+});
