@@ -264,7 +264,7 @@
           progress.textContent="Registration confirmed and saved. Press the green Next button when you are ready to continue.";
           var registrationStatus=get("pilotRegistrationStatus");
           if(registrationStatus) registrationStatus.textContent="Pilot registration saved for "+roleValue+". Press Next when ready to continue.";
-          next.textContent="➡️ Next";
+          next.textContent="➡️ Next — Prototype Access";
           next.disabled=false;
           if(saveButton){
             saveButton.disabled=true;
