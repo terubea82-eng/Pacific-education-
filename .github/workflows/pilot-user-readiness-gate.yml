@@ -68,7 +68,7 @@ jobs:
           need('Australia English preference',voice.includes('en[-_]AU'));
           need('five-second welcome',voice.includes('5000'));
           need('current affairs feed points to deployed docs data',loader.includes('../docs/data/current-affairs.json'));
-          need('current affairs remains pending teacher review',loader.includes('copy.approved=false') && news.includes("approved:false"));
+          need('current affairs remains pending teacher review',loader.includes('copy.approved=false') && /approved:\s*false/.test(news));
           need('current affairs source restricted',news.includes('unesco.org') && news.includes('unicef.org') && news.includes('un.org') && news.includes('who.int'));
           need('production Firebase remains locked',firebase.includes('productionIntegrationEnabled: false') && firebase.includes('PRODUCTION_BACKEND_NOT_ACTIVATED'));
           need('Buy Plans protected',index.includes('buyPlans') && index.includes('data-pe-protected'));
