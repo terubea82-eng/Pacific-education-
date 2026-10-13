@@ -16,6 +16,20 @@ test("breathing guide activates for a sequential teacher workspace and final sig
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({ name: "Pilot Teacher", role: "teacher", pilotOnly: true }));
     } catch (_) {}
     window.PacificEducationSequentialRoleWorkspaces.build("teacher");
+    // This test targets the guide inside the workspace. Exit the entry-only
+    // registration route after creating the workspace fixture so route-isolation
+    // CSS does not intentionally keep the workspace hidden.
+    document.body.classList.remove("pacedu-entry-mode");
+    const entryPage = document.querySelector(".pacedu-entry-page");
+    if (entryPage) entryPage.hidden = true;
+    const registrationPage = document.getElementById("pacificEducationIdentityRegistration");
+    if (registrationPage) registrationPage.hidden = true;
+    const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    if (shell) {
+      shell.hidden = false;
+      shell.style.display = "block";
+      shell.removeAttribute("aria-hidden");
+    }
   });
 
   const workspace = page.locator("#pacificEducationSequentialRoleWorkspace");
