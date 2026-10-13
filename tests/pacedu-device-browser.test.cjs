@@ -79,6 +79,31 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
+test("blank startup recovery returns to Welcome through the single navigation controller", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  /* Recreate the reported conflict after the normal startup controller runs,
+     but before the 1.2-second safety net fires. */
+  await page.addInitScript(() => {
+    window.addEventListener("load", () => {
+      window.setTimeout(() => {
+        const welcome = document.getElementById("pacificEducationWelcome");
+        if (!welcome) return;
+        document.body.classList.add("pe-guided-flow");
+        document.body.setAttribute("data-pe-flow-step", "3");
+        document.body.setAttribute("data-pe-active-guided-page", "pacificEducationIdentityRegistration");
+        welcome.hidden = true;
+        welcome.setAttribute("aria-hidden", "true");
+        welcome.style.setProperty("display", "none", "important");
+      }, 0);
+    });
+  });
+  await page.goto(baseURL, { waitUntil: "load" });
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible({ timeout: 5000 });
+  await expect(page.locator("body")).toHaveAttribute("data-pac-edu-entry-page", "1");
+  await expect(page.locator("#welcomeNextWrapper")).toBeVisible();
+});
+
 test("Registration voice removes the legacy welcome phrase before speech playback", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
