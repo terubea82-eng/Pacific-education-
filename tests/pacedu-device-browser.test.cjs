@@ -521,7 +521,7 @@ test("verified registration role overrides a stale pilot role marker", async ({ 
     window.PacificEducationSequentialRoleWorkspaces.build("teacher");
   });
 
-  await expect(page.locator("#peSequentialTitle")).toContainText("blind-learner Workspace");
+  await expect(page.locator("#peSequentialTitle")).toContainText("Blind Learner Workspace");
   await expect(page.locator("#learningPlatform")).toBeVisible();
   await expect(page.locator("#teacherDashboard")).toBeHidden();
 });
