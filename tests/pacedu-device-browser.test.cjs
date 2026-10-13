@@ -679,43 +679,47 @@ test("gateway Next follows Welcome → Vision → Rules → Registration without
 test("Rules Next opens Registration without briefly restoring Welcome", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
-  await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await page.locator("#paceduVisionNext").click();
-  await expect(page.locator("#paceduPageRules")).toBeVisible();
-  await page.locator("#paceduRulesAgreement").check();
 
-  await page.evaluate(() => {
+  // The supported entry journey uses separate vision.html and rules.html pages.
+  // Watch the destination document from document start so a brief Welcome flash
+  // during the registration page's initialization cannot be missed.
+  await page.addInitScript(() => {
     window.__paceduWelcomeFlashDetected = false;
-    window.__paceduWatchWelcomeFlash = true;
     const isVisible = node => !!node && !node.hidden &&
       node.getAttribute("aria-hidden") !== "true" &&
       getComputedStyle(node).display !== "none" &&
       getComputedStyle(node).visibility !== "hidden" &&
       node.getClientRects().length > 0;
     const inspect = () => {
-      if (window.__paceduWatchWelcomeFlash &&
-          isVisible(document.getElementById("pacificEducationWelcome"))) {
-        window.__paceduWelcomeFlashDetected = true;
-      }
+      if (!/entry=registration(?:&|$)/.test(location.search)) return;
+      const welcome = document.getElementById("pacificEducationWelcome");
+      if (isVisible(welcome)) window.__paceduWelcomeFlashDetected = true;
     };
-    window.__paceduWelcomeFlashObserver = new MutationObserver(inspect);
-    window.__paceduWelcomeFlashObserver.observe(document.body, {
-      subtree: true, attributes: true,
-      attributeFilter: ["hidden", "style", "aria-hidden", "class", "data-pe-flow-step", "data-pe-active-guided-page"]
-    });
-    inspect();
+    const start = () => {
+      if (!document.documentElement) return;
+      new MutationObserver(inspect).observe(document.documentElement, {
+        subtree: true, childList: true, attributes: true,
+        attributeFilter: ["hidden", "style", "aria-hidden", "class", "data-pe-flow-step", "data-pe-active-guided-page"]
+      });
+      inspect();
+    };
+    if (document.documentElement) start();
+    else document.addEventListener("DOMContentLoaded", start, { once: true });
   });
 
-  await page.locator("#paceduRulesContinue").click();
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.locator("#welcomeNextButton").click();
+  await expect(page).toHaveURL(/\/vision\.html(?:\?.*)?$/);
+  await page.getByRole("link", { name: /Next.*Rules/i }).click();
+  await expect(page).toHaveURL(/\/rules\.html(?:\?.*)?$/);
+  await page.locator("#rulesAgreement").check();
+  await expect(page.locator("#continueButton")).toBeEnabled();
+  await page.locator("#continueButton").click();
+
+  await expect(page).toHaveURL(/\/index\.html\?entry=registration$/);
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
-  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#welcomeNextWrapper")).toBeHidden();
   await page.waitForTimeout(1100);
-  const flashDetected = await page.evaluate(() => {
-    window.__paceduWatchWelcomeFlash = false;
-    if (window.__paceduWelcomeFlashObserver) window.__paceduWelcomeFlashObserver.disconnect();
-    return window.__paceduWelcomeFlashDetected;
-  });
+  const flashDetected = await page.evaluate(() => window.__paceduWelcomeFlashDetected);
   expect(flashDetected, "Welcome must remain hidden throughout Rules → Registration").toBe(false);
 });
