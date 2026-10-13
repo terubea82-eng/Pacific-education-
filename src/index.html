@@ -785,6 +785,35 @@ git status</pre>
         else if(window.speakText)window.speakText(announcement);
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
     };
+    /* Reliable pilot save handoff: capture the click after country/language
+       validation has run, so the record exists before any sequence listener
+       checks it. Keep the same required fields and exact selected role. */
+    if(save.getAttribute("data-pe-reliable-save-bound")!=="true"){
+      save.setAttribute("data-pe-reliable-save-bound","true");
+      save.addEventListener("click",function(event){
+        if(event && event.defaultPrevented) return;
+        var n=String(name.value||"").trim(), r=String(role.value||"").trim();
+        var country=document.getElementById("pacificEducationCountrySelect");
+        var language=document.getElementById("pacificEducationLanguageSelect");
+        var countryCode=String(country&&country.value||"");
+        var languageCode=String(language&&language.value||"");
+        try{
+          if(!countryCode) countryCode=localStorage.getItem("pacificEducationRegistrationCountryCode")||"";
+          if(!languageCode) languageCode=localStorage.getItem("pacificEducationRegistrationLanguage")||"";
+        }catch(_){}
+        if(!countryCode||!languageCode){
+          status.textContent="Choose your country and language before saving registration.";
+          return;
+        }
+        if(!r){status.textContent="Choose your user role first.";return;}
+        if(!n){status.textContent="Enter a name or test name.";return;}
+        try{
+          sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:countryCode,languageCode:languageCode}));
+          sessionStorage.setItem("pacificEducationPilotRole",r);
+          status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
+        }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
+      },true);
+    }
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRegistration);else initRegistration();
 })();
