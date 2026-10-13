@@ -363,6 +363,21 @@ function stopSpeechForPageTransition(targetId){
   }catch(e){}
 }
 
+/* Fail closed for Learning Tools throughout Welcome, Vision, Rules and Registration.
+ * Guided navigation owns visibility; #856 activation must not briefly expose this panel.
+ */
+function lockLearningToolsDuringEntry(){
+  var page=el("learningPlatform");
+  if(!page) return;
+  var inEntry=document.body.classList.contains("pacedu-entry-mode") ||
+               document.body.classList.contains("pacedu-registration-mode") ||
+               document.body.classList.contains("pe-guided-flow");
+  if(!inEntry) return;
+  page.hidden=true;
+  page.setAttribute("aria-hidden","true");
+  try{ page.style.setProperty("display","none","important"); }catch(e){}
+}
+
 function guided(step,targetId){
   lockLearningToolsDuringEntry();
   stopSpeechForPageTransition(targetId);
