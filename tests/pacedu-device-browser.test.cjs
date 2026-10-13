@@ -177,8 +177,8 @@ test("mobile touch can complete registration and select a role before Next advan
 
   await page.locator("#registrationNextButton").tap();
   await page.locator("#pilotRegistrationName").fill("Phone Pilot Test");
-  await expect(page.locator("#registrationNextButton")).toBeEnabled();
-  console.log("[mobile flow] name filled; tap Save Pilot Registration directly");
+  await expect(page.locator("#registrationNextButton")).toBeDisabled();
+  console.log("[mobile flow] name filled; Next stays disabled until Save Pilot Registration is confirmed");
   await page.locator("#pilotRegistrationSaveButton").tap();
   await page.waitForTimeout(700);
   const handoffDiagnostic = await page.evaluate(() => {
@@ -212,12 +212,14 @@ test("mobile touch can complete registration and select a role before Next advan
   /* Save must confirm the profile without changing the guided page. */
   await expect(registration).toBeVisible();
   await expect(page.locator("#prototypeAccess")).toBeHidden();
-  await expect(page.locator("#registrationNextButton")).toHaveText(/Next/);
+  await expect(page.locator("#registrationNextButton")).toContainText(/Open Teacher Workspace/);
+  await expect(page.locator("#registrationNextButton")).toBeEnabled();
   console.log("[mobile flow] registration remains visible after save; waiting for explicit Next tap");
   await page.locator("#registrationNextButton").tap();
-  await expect(page.locator("#prototypeAccess")).toBeVisible({ timeout: 5000 });
-  await expect(registration).toBeHidden();
-  console.log("[mobile flow] explicit Next tap opened Prototype Access");
+  const teacherWorkspace = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await expect(teacherWorkspace).toBeVisible({ timeout: 5000 });
+  await expect(teacherWorkspace).toHaveAttribute("data-pe-role", "teacher");
+  console.log("[mobile flow] explicit Next tap opened Teacher Workspace");
   const savedRegistration = await page.evaluate(() => ({
     registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
     role: sessionStorage.getItem("pacificEducationPilotRole"),
