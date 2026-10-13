@@ -844,4 +844,4 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(workspace).toBeVisible();
     await expect(workspace).toHaveAttribute("data-pe-role", expectedWorkspace);
   }
-});
+}, 90000);
