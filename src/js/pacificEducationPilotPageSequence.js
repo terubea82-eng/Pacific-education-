@@ -103,21 +103,28 @@
   }
 
   function init(){
-    document.body.classList.add("pacedu-entry-mode");
+    var body=document.body;
 
     bindWelcomeNext();
 
-    show(1);
+    /*
+     * This legacy entry-page helper must never reset the active single-navigation
+     * flow. Its old unconditional show(1) could briefly expose Welcome while the
+     * single controller was moving from Rules to Registration.
+     */
+    var navigationOwnsFlow=body.getAttribute("data-pe-navigation-owner")==="single";
+    var activeGuidedPage=body.getAttribute("data-pe-active-guided-page");
+    var flowStep=body.getAttribute("data-pe-flow-step");
+    var entryPage=body.getAttribute("data-pac-edu-entry-page");
 
-    window.setTimeout(
-      bindWelcomeNext,
-      300
-    );
+    if(!navigationOwnsFlow && !activeGuidedPage && !flowStep &&
+       (!entryPage || entryPage==="1")){
+      body.classList.add("pacedu-entry-mode");
+      show(1);
+    }
 
-    window.setTimeout(
-      bindWelcomeNext,
-      1000
-    );
+    window.setTimeout(bindWelcomeNext,300);
+    window.setTimeout(bindWelcomeNext,1000);
   }
 
   window.PacificEducationPilotPages={
