@@ -692,7 +692,7 @@ function bindGatewayCaptureFallback(){
       gateway(3);
     }else{
       var agreement=el("paceduRulesAgreement");
-      if(agreement && agreement.checked) guided(1,"pacificEducationIdentityRegistration");
+      if(agreement && agreement.checked) guided(3,"pacificEducationIdentityRegistration");
     }
   },true);
 }
@@ -798,7 +798,7 @@ function init(){
       rulesAccepted=window.sessionStorage.getItem("pacificEducationRulesAccepted")==="yes";
     }catch(e){}
     if(entryRoute==="registration" && rulesAccepted){
-      guided(1,"pacificEducationIdentityRegistration");
+      guided(3,"pacificEducationIdentityRegistration");
     }else{
       gateway(1);
     }
@@ -809,7 +809,7 @@ function init(){
   bind("welcomeNextButton",function(){ gateway(2); });
   bind("paceduVisionNext",function(){ gateway(3); });
   bind("paceduRulesContinue",function(button){
-    if(!button.disabled) guided(1,"pacificEducationIdentityRegistration");
+    if(!button.disabled) guided(3,"pacificEducationIdentityRegistration");
   });
 
   Object.keys(STEPS).forEach(function(id){
