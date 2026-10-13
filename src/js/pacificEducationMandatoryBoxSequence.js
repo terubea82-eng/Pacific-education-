@@ -30,6 +30,21 @@
     var form = get("userRegistrationForm");
     var next = get("registrationNextButton");
     if(!registration || !setupBoxes || !next || !form) return;
+
+    /* Keep a visible Back control beside the Page 4 Next button. It reverses
+       the inner registration steps; from Country it returns to the Rules page. */
+    var back = get("registrationBackButton");
+    if(!back){
+      back = document.createElement("button");
+      back.type = "button";
+      back.id = "registrationBackButton";
+      back.textContent = "⬅️ Back";
+      back.setAttribute("aria-label","Back to the previous registration step");
+      back.style.cssText = "background:#168a3a;color:#fff;border:2px solid #0f642a;border-radius:10px;min-height:52px;min-width:120px;padding:10px 18px;font-weight:800;margin:6px 8px 6px 0;";
+      var nav = get("registrationNextWrapper");
+      if(nav) nav.insertBefore(back, next);
+      else next.parentNode.insertBefore(back,next);
+    }
     if(registration.getAttribute("data-pe-box-sequence-ready")==="true") return;
     registration.setAttribute("data-pe-box-sequence-ready","true");
 
@@ -286,6 +301,20 @@
         },350);
       },false);
     }
+
+    back.addEventListener("click",function(event){
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if(state>0){
+        if(state===3) registrationSaved=false;
+        state=state-1;
+        update();
+        return;
+      }
+      var rulesBack=get("paceduRulesBack");
+      if(rulesBack){ rulesBack.click(); return; }
+      progress.textContent="Use the previous page navigation to return to Rules & Conditions.";
+    },true);
 
     next.addEventListener("click",nextStep,true);
 
