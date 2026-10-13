@@ -301,6 +301,7 @@ function renderPageGuide(targetId){
 }
 
 function enforceSingleVisiblePage(targetId, expectedStep){
+  lockLearningToolsDuringEntry();
   /* Re-assert the one-page contract after legacy registration handlers finish.
      Some older handlers can restore display styles after the navigation click. */
   if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)) return;
@@ -363,6 +364,7 @@ function stopSpeechForPageTransition(targetId){
 }
 
 function guided(step,targetId){
+  lockLearningToolsDuringEntry();
   stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
@@ -370,7 +372,9 @@ function guided(step,targetId){
   document.body.setAttribute("data-pe-active-guided-page",targetId);
   document.body.setAttribute("data-pe-navigation-owner","single");
 
+  lockLearningToolsDuringEntry();
   var ok=revealTarget(targetId);
+  lockLearningToolsDuringEntry();
   if(ok){
     renderPageGuide(targetId);
     var pageInfo=PAGE_GUIDE[targetId];
@@ -388,6 +392,7 @@ function guided(step,targetId){
 }
 
 function gateway(page){
+  lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
@@ -433,6 +438,7 @@ function gateway(page){
   var activePageId=page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules";
   syncNextWrapper(activePageId);
   isolateCurrentPage(activePageId);
+  lockLearningToolsDuringEntry();
   return true;
 }
 
