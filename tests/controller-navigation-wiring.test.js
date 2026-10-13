@@ -68,7 +68,7 @@ test("controller-managed activity and transition buttons have explicit bindings"
 
 test("all-feature visibility cannot override one-page guided flow", () => {
   assert.doesNotMatch(html, /body\\.pe-pilot-all-features:not\\(\\.pe-guided-flow\\) #learningPlatform/);
-  assert.match(html, /body\\.pe-pilot-all-features\\.pe-guided-flow-ended #learningPlatform/);
+  assert.match(html, /body\.pe-pilot-all-features\.pe-guided-flow-ended #learningPlatform/);
   assert.match(html, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) #dailyLesson/);
   assert.match(html, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) \.pacific-flow-next/);
   assert.doesNotMatch(
