@@ -87,7 +87,7 @@
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppMenu,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) header,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #userFirstNavigation,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #learningPlatform,"+
+        /* Learning Tools is intentionally not part of this broad reveal rule. */
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppTools,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationSchoolIdentitySection,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationIdentityRegistration,"+
