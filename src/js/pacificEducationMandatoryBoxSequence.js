@@ -364,7 +364,11 @@
       var card=event.target && event.target.closest ? event.target.closest("#pilotUserRoleCards .pe-user-role-card") : null;
       if(card){
         activateRoleCard(card);
-        /* Let the existing registration listener finish, then refresh Next eligibility. */
+        /* Enable Next synchronously after the capture handler records the selected role.
+           Otherwise a fast second tap can race the deferred UI refresh and hit a stale
+           disabled button even though the role has already been selected. */
+        if(state===2) next.disabled=!selectedRole();
+        /* Let the existing registration listener finish, then refresh the remaining UI. */
         window.setTimeout(update,0);
       }
     },true);
