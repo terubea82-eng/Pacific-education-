@@ -1213,7 +1213,15 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var registration = document.getElementById("pacificEducationIdentityRegistration");
     var recovery = document.getElementById("pacificEducationAccountRecovery");
     var nestedDashboard = document.getElementById("pacificEducationCoverageDashboard");
-    if ((activePage >= 2 && activePage <= 4) ||
+    var vision = document.getElementById("paceduPageVision");
+    var rules = document.getElementById("paceduPageRules");
+    /*
+     * Treat the entry-page number as authoritative only when its matching
+     * destination is actually visible. A stale legacy pe-guided-flow marker
+     * must not block recovery merely because the body still carries step 3.
+     */
+    if ((activePage === 2 && isVisible(vision)) ||
+        (activePage === 3 && isVisible(rules)) ||
         isVisible(registration) || isVisible(recovery) || isVisible(nestedDashboard)) return;
 
     /* First ask the established controller to restore the proper entry page. */
