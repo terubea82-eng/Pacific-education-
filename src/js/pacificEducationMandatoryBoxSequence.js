@@ -253,8 +253,8 @@
         workspace.build(roleName);
         return;
       }
-      progress.textContent="Save Pilot Registration first. After the saved confirmation appears, press the green Next button to continue to Prototype Access.";
-      speak("Save Pilot Registration first. After the saved confirmation appears, press Next to continue to Prototype Access.");
+      progress.textContent="Save Pilot Registration first. After the saved confirmation appears, press the green Next button to open your selected role workspace.";
+      speak("Save Pilot Registration first. After the saved confirmation appears, press Next to open your selected role workspace.");
       return;
     }
 
