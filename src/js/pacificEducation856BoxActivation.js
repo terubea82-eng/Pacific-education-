@@ -114,7 +114,7 @@
     /* Reveal current pilot-facing boxes. Production/payment gates stay protected. */
     [
       "pacificEducationAppMenu","header","userFirstNavigation",
-      "pacificEducationSchoolIdentitySection","learningPlatform","pacificEducationAppTools",
+      "pacificEducationSchoolIdentitySection","pacificEducationAppTools",
       "pacificEducationIdentityRegistration","pacificEducationWebsitePilotChecklist",
       "prototypeAccess","levelSelection","subjectSelection","termSelection","capabilitySelection",
       "dailyLesson","dailyLessonPracticeStage","pacificEducationHomeSubmission",
