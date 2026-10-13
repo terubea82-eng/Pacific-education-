@@ -140,7 +140,13 @@
        back to the first role card (Deaf Learner) while the user was scrolling. */
     var registrationStep=body.classList.contains("pe-guided-flow") &&
       String(body.getAttribute("data-pe-flow-step")||"")==="3";
-    return body.getAttribute("data-pe-active-guided-page")==="pacificEducationIdentityRegistration" ||
+    /* Treat the registration panel's actual rendered visibility as authoritative.
+       Page counters/classes can lag during transitions, so relying only on them
+       allowed focus guidance to steal the user's scroll position on Page 4. */
+    var registrationPanel=document.getElementById("pacificEducationIdentityRegistration");
+    var registrationPanelVisible=registrationPanel && actuallyVisible(registrationPanel,body);
+    return !!registrationPanelVisible ||
+      body.getAttribute("data-pe-active-guided-page")==="pacificEducationIdentityRegistration" ||
       body.classList.contains("pacedu-registration-mode") ||
       registrationStep;
   }
