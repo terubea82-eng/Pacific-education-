@@ -5,6 +5,7 @@ const fs = require("node:fs");
 const html = fs.readFileSync("src/index.html", "utf8");
 const controller = fs.readFileSync("src/js/pacificEducationSingleNavigationController.js", "utf8");
 const voiceNavigation = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
+const boxActivation = fs.readFileSync("src/js/pacificEducation856BoxActivation.js", "utf8");
 const htmlIds = new Set([...html.matchAll(/\bid=["']([^"']+)["']/g)].map((match) => match[1]));
 const controllerCreatedIds = new Set(
   [...controller.matchAll(/(?:button|wrapper|status|audio)\.id="([^"]+)"/g)].map((match) => match[1])
@@ -67,6 +68,8 @@ test("controller-managed activity and transition buttons have explicit bindings"
 });
 
 test("all-feature visibility cannot override one-page guided flow", () => {
+  assert.doesNotMatch(boxActivation, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) #learningPlatform/);
+  assert.match(boxActivation, /Learning Tools is intentionally not part of this broad reveal rule/);
   assert.doesNotMatch(html, /body\\.pe-pilot-all-features:not\\(\\.pe-guided-flow\\) #learningPlatform/);
   assert.match(html, /body\.pe-pilot-all-features\.pe-guided-flow-ended #learningPlatform/);
   assert.match(html, /body:not\(\.pe-guided-flow-ended\) #learningPlatform\{display:none!important\}/);
