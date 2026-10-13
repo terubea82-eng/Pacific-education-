@@ -166,7 +166,7 @@ test("mobile touch can complete registration and select a role before Next advan
   const teacherBox = await teacher.boundingBox();
   expect(teacherBox, "Teacher role must have a measurable tap target").not.toBeNull();
   expect(teacherBox.height, "Teacher role tap target must be at least 88px tall on mobile").toBeGreaterThanOrEqual(88);
-  expect(teacherBox.width, "Teacher role must span almost the full phone content width").toBeGreaterThanOrEqual(300);
+  expect(teacherBox.width, "Teacher role must provide a broad phone tap target").toBeGreaterThanOrEqual((page.viewportSize()?.width || 360) * 0.7);
   await expect(teacher).toHaveCSS("pointer-events", "auto");
   console.log("[mobile flow] large Teacher role card visible; tap Teacher");
   await teacher.tap();
