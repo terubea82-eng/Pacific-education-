@@ -71,6 +71,13 @@
       var cards=document.querySelectorAll("#pilotUserRoleCards .pe-user-role-card[aria-pressed=\"true\"]");
       return !!value || cards.length>0;
     }
+    function selectedRoleName(){
+      var role=get("pilotRegistrationRole");
+      var value=role ? String(role.value||"").trim() : "";
+      if(value) return value;
+      var card=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed=\"true\"]");
+      return card ? String(card.getAttribute("data-role")||"").trim() : "";
+    }
 
     /* Some older interaction-repair passes marked role cards as intentionally
        disabled while their parent form was hidden. Re-enable only the visible
@@ -177,7 +184,7 @@
         progress.textContent="Complete the visible box only, then press Next.";
       }
 
-      next.textContent=state===3 ? (registrationSaved ? "➡️ Next — Prototype Access" : "➡️ Next (save registration first)") : "➡️ Next";
+      next.textContent=state===3 ? (registrationSaved ? "➡️ Next — Open "+(selectedRoleName()||"your")+" Workspace" : "➡️ Next (save registration first)") : "➡️ Next";
       next.disabled =
         (state===0 && !(get("pacificEducationCountrySelect")||{}).value) ||
         (state===1 && !(get("pacificEducationLanguageSelect")||{}).value) ||
@@ -219,12 +226,16 @@
         state=3; update(); return;
       }
       if(registrationSaved){
-        progress.textContent="Registration saved. Opening Prototype Access because you pressed Next.";
-        if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
-          window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
-        }else{
-          progress.textContent="Registration is saved, but guided navigation is not ready. Reload the pilot page and try Next again.";
+        var roleName=selectedRoleName();
+        var workspace=window.PacificEducationSequentialRoleWorkspaces;
+        if(!roleName || !workspace || typeof workspace.build!=="function"){
+          progress.textContent="Registration is saved, but your role-specific workspace is not ready. Reload the pilot page and try Next again.";
+          speak("Registration is saved, but your role-specific workspace is not ready. Reload the pilot page and try Next again.");
+          return;
         }
+        progress.textContent="Registration saved. Opening the "+roleName+" Workspace because you pressed Next.";
+        speak("Registration saved. Opening the "+roleName+" Workspace.");
+        workspace.build(roleName);
         return;
       }
       progress.textContent="Save Pilot Registration first. After the saved confirmation appears, press the green Next button to continue to Prototype Access.";
@@ -264,7 +275,7 @@
           progress.textContent="Registration confirmed and saved. Press the green Next button when you are ready to continue.";
           var registrationStatus=get("pilotRegistrationStatus");
           if(registrationStatus) registrationStatus.textContent="Pilot registration saved for "+roleValue+". Press Next when ready to continue.";
-          next.textContent="➡️ Next — Prototype Access";
+          next.textContent="➡️ Next — Open "+(selectedRoleName()||"your")+" Workspace";
           next.disabled=false;
           if(saveButton){
             saveButton.disabled=true;
