@@ -45,18 +45,15 @@ test("Page 3 Next opens only Registration at the defined guided-flow step", asyn
   page.setDefaultTimeout(8000);
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
 
-  // Pacedu's supported entry flow uses separate Welcome, Vision and Rules
-  // documents before returning to index.html for Registration.
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(page).toHaveURL(/\/vision\.html(?:\?.*)?$/);
-  await page.getByRole("link", { name: /Next.*Rules/i }).click();
-  await expect(page).toHaveURL(/\/rules\.html(?:\?.*)?$/);
+  await expect(page.locator("#paceduPageVision")).toBeVisible();
+  await page.locator("#paceduVisionNext").click();
+  await expect(page.locator("#paceduPageRules")).toBeVisible();
 
-  await page.locator("#rulesAgreement").check();
-  await expect(page.locator("#continueButton")).toBeEnabled();
-  await page.locator("#continueButton").click();
-  await expect(page).toHaveURL(/\/index\.html\?entry=registration$/);
+  await page.locator("#paceduRulesAgreement").check();
+  await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
+  await page.locator("#paceduRulesContinue").click();
 
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
