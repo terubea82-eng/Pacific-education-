@@ -194,7 +194,7 @@
   }
 
   function normalizeRole(value){
-    var role=String(value||"").trim().toLowerCase().replace(/[_]+/g," ").replace(/\\s+/g," ");
+    var role=String(value||"").trim().toLowerCase().replace(/[_]+/g," ").replace(/\s+/g," ");
     var aliases={
       "blind learner":"blind-learner","blind-learner":"blind-learner",
       "deaf learner":"deaf-learner","deaf-learner":"deaf-learner",
@@ -211,7 +211,7 @@
       "owner/control":"owner","owner / control":"owner","owner":"owner",
       "technician":"technician"
     };
-    return aliases[role]||role.replace(/\\s+/g,"-");
+    return aliases[role]||role.replace(/\s+/g,"-");
   }
 
   function getRole(){
