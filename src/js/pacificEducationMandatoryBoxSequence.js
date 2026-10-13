@@ -152,7 +152,7 @@
       var selected=get("pilotSelectedRole");
       if(selected) selected.textContent="Selected role: "+value;
       var status=get("pilotRegistrationStatus");
-      if(status) status.textContent=value+" selected. Complete your name, then press Next to save registration.";
+      if(status) status.textContent=value+" selected. Enter a display name, press Save Pilot Registration, wait for the saved confirmation, then press the green Next button to open your workspace.";
     }
 
     function validName(){
