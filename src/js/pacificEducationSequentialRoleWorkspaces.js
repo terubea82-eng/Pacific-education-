@@ -193,11 +193,41 @@
     }
   }
 
+  function normalizeRole(value){
+    var role=String(value||"").trim().toLowerCase().replace(/[_]+/g," ").replace(/\s+/g," ");
+    var aliases={
+      "blind learner":"blind-learner","blind-learner":"blind-learner",
+      "deaf learner":"deaf-learner","deaf-learner":"deaf-learner",
+      "student":"student","learner":"student",
+      "teacher":"teacher",
+      "parent":"parent","parent/caregiver":"parent","parent / caregiver":"parent",
+      "professional reviewer":"professional","professional":"professional",
+      "ngo/organization":"ngo","ngo / organization":"ngo","ngo":"ngo",
+      "education/government":"education","education / government":"education","education":"education",
+      "community/partner":"community","community / partner":"community","community":"community",
+      "head of school":"head-of-school","head-of-school":"head-of-school",
+      "institution administrator":"institution-admin","institution-admin":"institution-admin",
+      "special education / inclusion":"special-education","special education/inclusion":"special-education","special-education":"special-education",
+      "owner/control":"owner","owner / control":"owner","owner":"owner",
+      "technician":"technician"
+    };
+    return aliases[role]||role.replace(/\s+/g,"-");
+  }
+
   function getRole(){
+    /* The verified registration record is authoritative. A stale companion
+       role marker must not open a different user's workspace. */
     var role="";
-    try{ role=sessionStorage.getItem("pacificEducationPilotRole")||""; }catch(e){}
+    try{
+      var raw=sessionStorage.getItem("pacificEducationPilotRegistration");
+      var record=raw?JSON.parse(raw):null;
+      role=normalizeRole(record && (record.role||record.userRole));
+    }catch(e){}
+    if(role && getRoleSequence(role).length) return role;
+    try{ role=normalizeRole(sessionStorage.getItem("pacificEducationPilotRole")||""); }catch(e){}
+    if(role && getRoleSequence(role).length) return role;
     var select=document.getElementById("pilotRoleSelector");
-    if(!role && select) role=select.value||"";
+    if(select) role=normalizeRole(select.value||"");
     return role;
   }
 
@@ -206,6 +236,24 @@
       var el=document.getElementById(id);
       if(el){el.hidden=true;el.setAttribute("data-pe-protected","true");try{el.style.setProperty("display","none","important");}catch(e){}}
     });
+  }
+
+  function setRoleWorkspaceIsolation(active){
+    /* The legacy pilot activation stylesheet uses display:block!important on
+       every feature section. The hidden attribute alone therefore cannot keep
+       unrelated dashboards out of the sequential role workspace. Add a
+       higher-specificity, scoped isolation rule while this workspace is active. */
+    var style=document.getElementById("pacedu-role-workspace-isolation-style");
+    if(!style){
+      style=document.createElement("style");
+      style.id="pacedu-role-workspace-isolation-style";
+      style.textContent=
+        "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
+        "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
+        "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}";
+      document.head.appendChild(style);
+    }
+    document.body.classList.toggle("pe-sequential-role-workspace-active",!!active);
   }
 
   function hideApplicationChildren(app, except){
@@ -260,6 +308,8 @@
   function build(role){
     var app=document.getElementById("app");
     if(!app) return;
+    var registeredRole=getRole();
+    role=registeredRole && getRoleSequence(registeredRole).length ? registeredRole : normalizeRole(role);
     var sequence=getRoleSequence(role);
     if(!sequence || !sequence.length) return;
     /* Sign Out is a dedicated final page for every role, not an off-screen footer. */
@@ -487,6 +537,7 @@
       LOCAL_SESSION_KEYS.forEach(function(key){try{localStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
+      setRoleWorkspaceIsolation(false);
       shell.remove();
       Array.prototype.forEach.call(app.children,function(el){
         if(el.getAttribute("data-pe-sequential-hidden")==="true"){
@@ -505,6 +556,7 @@
     };
 
     hideApplicationChildren(app,shell);
+    setRoleWorkspaceIsolation(true);
     shell.hidden=false;
     try{history.replaceState({pacificEducationSequential:true,role:role,index:0},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
     renderPage();
