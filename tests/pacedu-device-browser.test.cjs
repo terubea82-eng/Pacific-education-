@@ -473,6 +473,35 @@ test("sequential Parent workspace advances one page at a time through confirmed 
 });
 
 
+test("active teacher workspace hides unrelated student, parent and AI sections", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.route("**/src/js/pacificEducationSingleNavigationController.js*", route => route.abort());
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    sessionStorage.setItem("pacificEducationPilotRegistered", "true");
+    sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Teacher Isolation Test",role:"teacher",pilotOnly:true}));
+    sessionStorage.setItem("pacificEducationPilotRole", "teacher");
+    window.PacificEducationSingleNavigation = undefined;
+    [document.documentElement, document.body].forEach(root => {
+      root.classList.remove("pe-guided-flow", "pe-pilot-all-features", "pe-sequential-role-workspace-active");
+      root.removeAttribute("data-pe-active-guided-page");
+      root.removeAttribute("data-pe-flow-step");
+    });
+    window.PacificEducationSequentialRoleWorkspaces.build("teacher");
+  });
+
+  const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await expect(shell).toBeVisible();
+  await expect(page.locator("#peSequentialTitle")).toContainText("teacher Workspace");
+  await expect(page.locator("#teacherDashboard")).toBeVisible();
+  await expect(page.locator("#learningPlatform")).toBeHidden();
+  await expect(page.locator("#parentDashboard")).toBeHidden();
+  await expect(page.locator("#pacificEducationAIConversation")).toBeHidden();
+  await expect(page.locator("#pacificEducationStudentProgressDashboard")).toBeHidden();
+  await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
+});
+
 test("registration must remain on Page 4 when the real save does not persist", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
