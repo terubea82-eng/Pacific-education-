@@ -372,7 +372,7 @@
     var allPilotBoxes=[
       "pacificEducationMailbox","pacificEducationAppMenu","pacificEducationAccessibilityControls","pilotBanner",
       "pacificEducationTechnicianActivation","pacificEducationTechnicianWorkspace","pacificEducationSchoolIdentitySection",
-      "learningPlatform","pacificEducationAppTools","teacherCalendarSection","pacificEducationAccountRecovery",
+      "pacificEducationAppTools","teacherCalendarSection","pacificEducationAccountRecovery",
       "pacificEducationIdentityRegistration","pacificEducationWebsitePilotChecklist","prototypeAccess",
       "levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage",
       "pacificEducationHomeSubmission","pacificEducationTermBaseline","pacificEducationTransferIntake","assessments",
