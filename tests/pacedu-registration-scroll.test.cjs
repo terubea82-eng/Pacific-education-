@@ -39,3 +39,41 @@ test("registration scrolling remains user-controlled when role cards receive foc
   await expect(registration).toBeVisible();
   await context.close();
 });
+
+
+test("Page 3 Next opens only Registration at the defined guided-flow step", async ({ page }) => {
+  page.setDefaultTimeout(8000);
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+
+  // Pacedu's supported entry flow uses separate Welcome, Vision and Rules
+  // documents before returning to index.html for Registration.
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await page.locator("#welcomeNextButton").click();
+  await expect(page).toHaveURL(/\/vision\.html(?:\?.*)?$/);
+  await page.getByRole("link", { name: /Next.*Rules/i }).click();
+  await expect(page).toHaveURL(/\/rules\.html(?:\?.*)?$/);
+
+  await page.locator("#rulesAgreement").check();
+  await expect(page.locator("#continueButton")).toBeEnabled();
+  await page.locator("#continueButton").click();
+  await expect(page).toHaveURL(/\/index\.html\?entry=registration$/);
+
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+  await expect(registration).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-flow-step")).toBe("3");
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-active-guided-page")).toBe("pacificEducationIdentityRegistration");
+
+  const visiblePages = await page.evaluate(() => [
+    "pacificEducationWelcome",
+    "paceduPageVision",
+    "paceduPageRules",
+    "pacificEducationIdentityRegistration"
+  ].filter(id => {
+    const node = document.getElementById(id);
+    return !!node && !node.hidden && getComputedStyle(node).display !== "none" && getComputedStyle(node).visibility !== "hidden";
+  }));
+  expect(visiblePages, "only Registration may be visible after Page 3 Next").toEqual(["pacificEducationIdentityRegistration"]);
+});
