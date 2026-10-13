@@ -84,7 +84,7 @@ test("all-feature visibility cannot override one-page guided flow", () => {
 test("page changes stop the previous page's audio without replacing the protected voice engine", () => {
   assert.match(controller, /function stopSpeechForPageTransition\(targetId\)/);
   assert.match(controller, /function guided\(step,targetId\)\{\s*lockLearningToolsDuringEntry\(\);\s*stopSpeechForPageTransition\(targetId\)/);
-  assert.match(controller, /function gateway\(page\)\{\s*var targetId=.*?stopSpeechForPageTransition\(targetId\)/s);
+  assert.match(controller, /function gateway\(page\)\{\s*lockLearningToolsDuringEntry\(\);\s*var targetId=.*?stopSpeechForPageTransition\(targetId\)/s);
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
 });
 
