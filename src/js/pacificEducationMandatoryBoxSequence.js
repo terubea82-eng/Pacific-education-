@@ -250,6 +250,40 @@
         }
         progress.textContent="Registration saved. Opening the "+roleName+" Workspace because you pressed Next.";
         speak("Registration saved. Opening the "+roleName+" Workspace.");
+
+        /* End guided-registration isolation before creating the workspace.
+           Otherwise the page-isolation observers can keep enforcing Page 4
+           after the workspace is built, hiding its shell and Back/Next controls. */
+        var body=document.body;
+        if(body){
+          body.setAttribute("data-pe-guided-complete","true");
+          body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
+          body.removeAttribute("data-pe-flow-step");
+          body.removeAttribute("data-pe-active-guided-page");
+        }
+        var entryPages=get("pacificEducationPilotPages");
+        if(entryPages){
+          entryPages.hidden=true;
+          entryPages.style.setProperty("display","none","important");
+        }
+        ["pacificEducationWelcome","paceduPageVision","paceduPageRules"].forEach(function(id){
+          var entryPage=get(id);
+          if(entryPage){
+            entryPage.hidden=true;
+            entryPage.setAttribute("aria-hidden","true");
+            entryPage.style.setProperty("display","none","important");
+          }
+        });
+        ["welcomeNextWrapper","paceduVisionNext","paceduRulesContinue","registrationNextWrapper",
+         "prototypeNextWrapper","levelNextWrapper","subjectNextWrapper","termNextWrapper",
+         "capabilityNextWrapper","dailyNextWrapper","practiceNextWrapper","assessmentNextWrapper",
+         "coverageNextWrapper","teacherCalendarNextWrapper"].forEach(function(id){
+          var wrapper=get(id);
+          if(wrapper) wrapper.style.setProperty("display","none","important");
+        });
+        var menu=get("pacificEducationAppMenu");
+        if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
+
         workspace.build(roleName);
         return;
       }
