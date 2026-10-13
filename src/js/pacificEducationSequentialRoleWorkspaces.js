@@ -193,11 +193,41 @@
     }
   }
 
+  function normalizeRole(value){
+    var role=String(value||"").trim().toLowerCase().replace(/[_]+/g," ").replace(/\\s+/g," ");
+    var aliases={
+      "blind learner":"blind-learner","blind-learner":"blind-learner",
+      "deaf learner":"deaf-learner","deaf-learner":"deaf-learner",
+      "student":"student","learner":"student",
+      "teacher":"teacher",
+      "parent":"parent","parent/caregiver":"parent","parent / caregiver":"parent",
+      "professional reviewer":"professional","professional":"professional",
+      "ngo/organization":"ngo","ngo / organization":"ngo","ngo":"ngo",
+      "education/government":"education","education / government":"education","education":"education",
+      "community/partner":"community","community / partner":"community","community":"community",
+      "head of school":"head-of-school","head-of-school":"head-of-school",
+      "institution administrator":"institution-admin","institution-admin":"institution-admin",
+      "special education / inclusion":"special-education","special education/inclusion":"special-education","special-education":"special-education",
+      "owner/control":"owner","owner / control":"owner","owner":"owner",
+      "technician":"technician"
+    };
+    return aliases[role]||role.replace(/\\s+/g,"-");
+  }
+
   function getRole(){
+    /* The verified registration record is authoritative. A stale companion
+       role marker must not open a different user's workspace. */
     var role="";
-    try{ role=sessionStorage.getItem("pacificEducationPilotRole")||""; }catch(e){}
+    try{
+      var raw=sessionStorage.getItem("pacificEducationPilotRegistration");
+      var record=raw?JSON.parse(raw):null;
+      role=normalizeRole(record && (record.role||record.userRole));
+    }catch(e){}
+    if(role && getRoleSequence(role).length) return role;
+    try{ role=normalizeRole(sessionStorage.getItem("pacificEducationPilotRole")||""); }catch(e){}
+    if(role && getRoleSequence(role).length) return role;
     var select=document.getElementById("pilotRoleSelector");
-    if(!role && select) role=select.value||"";
+    if(select) role=normalizeRole(select.value||"");
     return role;
   }
 
@@ -278,6 +308,8 @@
   function build(role){
     var app=document.getElementById("app");
     if(!app) return;
+    var registeredRole=getRole();
+    role=registeredRole && getRoleSequence(registeredRole).length ? registeredRole : normalizeRole(role);
     var sequence=getRoleSequence(role);
     if(!sequence || !sequence.length) return;
     /* Sign Out is a dedicated final page for every role, not an off-screen footer. */
