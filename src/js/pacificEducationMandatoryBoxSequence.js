@@ -177,12 +177,12 @@
         progress.textContent="Complete the visible box only, then press Next.";
       }
 
-      next.textContent=state===3 ? (registrationSaved ? "➡️ Next" : "✓ Save Registration") : "➡️ Next";
+      next.textContent=state===3 ? (registrationSaved ? "➡️ Next — Prototype Access" : "➡️ Next (save registration first)") : "➡️ Next";
       next.disabled =
         (state===0 && !(get("pacificEducationCountrySelect")||{}).value) ||
         (state===1 && !(get("pacificEducationLanguageSelect")||{}).value) ||
         (state===2 && !selectedRole()) ||
-        (state===3 && !registrationSaved && !validName());
+        (state===3 && !registrationSaved);
 
       /* Some legacy interaction-repair scripts can leave the Save button disabled
          even after the role and display name are complete. This sequence is the
@@ -227,15 +227,9 @@
         }
         return;
       }
-      var save=get("pilotRegistrationSaveButton");
-      if(!save || save.disabled){
-        progress.textContent="Registration is not ready to submit. Complete all required fields and resolve any validation messages before pressing Next.";
-        speak("Registration is not ready to submit. Complete all required fields before pressing Next.");
-        return;
-      }
-      save.click();
-      progress.textContent="Saving registration. This page will remain open; press Next when ready to continue.";
-      speak("Saving registration. This page will remain open. Press Next when ready to continue.");
+      progress.textContent="Save Pilot Registration first. After the saved confirmation appears, press the green Next button to continue to Prototype Access.";
+      speak("Save Pilot Registration first. After the saved confirmation appears, press Next to continue to Prototype Access.");
+      return;
     }
 
     /* Saving confirms the pilot profile only. Navigation is deliberately deferred
