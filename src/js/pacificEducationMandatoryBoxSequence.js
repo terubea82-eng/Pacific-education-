@@ -225,40 +225,45 @@
       save.click();
       progress.textContent="Checking registration before opening the next guided page...";
       speak("Checking registration before opening the next guided page.");
-      window.setTimeout(function(){
-        var registered=false;
-        try{
-          /* A persisted pilot registration record is the source of truth. The
-             older save handler may write that record without updating the
-             companion registered flag, leaving downstream role guards unsure. */
-          var raw=window.sessionStorage.getItem("pacificEducationPilotRegistration");
-          var record=raw ? JSON.parse(raw) : null;
-          var roleValue=String(record && record.role || "").trim();
-          var displayName=String(record && (record.name || record.displayName) || "").trim();
-          var roleField=get("pilotRegistrationRole");
-          var selectedValue=String(roleField && roleField.value || "").trim();
-          var roleCard=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed='true']");
-          if(!selectedValue && roleCard) selectedValue=String(roleCard.getAttribute("data-role")||"").trim();
-          registered=!!(displayName && roleValue && selectedValue && roleValue.toLowerCase()===selectedValue.toLowerCase());
-          if(registered){
-            /* Keep all session markers aligned after verifying the actual saved
-               record; never create a registered flag when the record is absent. */
-            window.sessionStorage.setItem("pacificEducationPilotRegistered","true");
-            window.sessionStorage.setItem("pacificEducationPilotRole",roleValue);
+    }
+
+    /* The visible Save Pilot Registration button must complete the same
+       verified handoff as the sequence's final Next action. Previously, direct
+       taps saved a record and updated its status text but never advanced pages. */
+    var saveButton=get("pilotRegistrationSaveButton");
+    if(saveButton && saveButton.getAttribute("data-pe-sequence-save-handoff")!=="true"){
+      saveButton.setAttribute("data-pe-sequence-save-handoff","true");
+      saveButton.addEventListener("click",function(){
+        window.setTimeout(function(){
+          var registered=false;
+          try{
+            var raw=window.sessionStorage.getItem("pacificEducationPilotRegistration");
+            var record=raw ? JSON.parse(raw) : null;
+            var roleValue=String(record && record.role || "").trim();
+            var displayName=String(record && (record.name || record.displayName) || "").trim();
+            var roleField=get("pilotRegistrationRole");
+            var selectedValue=String(roleField && roleField.value || "").trim();
+            var roleCard=document.querySelector("#pilotUserRoleCards .pe-user-role-card[aria-pressed='true']");
+            if(!selectedValue && roleCard) selectedValue=String(roleCard.getAttribute("data-role")||"").trim();
+            registered=!!(displayName && roleValue && selectedValue && roleValue.toLowerCase()===selectedValue.toLowerCase());
+            if(registered){
+              window.sessionStorage.setItem("pacificEducationPilotRegistered","true");
+              window.sessionStorage.setItem("pacificEducationPilotRole",roleValue);
+            }
+          }catch(e){ registered=false; }
+          if(!registered){
+            progress.textContent="Registration has not been confirmed. Check the required fields and try Save Pilot Registration again.";
+            speak("Registration has not been confirmed. Check the required fields and try again.");
+            return;
           }
-        }catch(e){ registered=false; }
-        if(!registered){
-          progress.textContent="Registration has not been confirmed. Your details were not saved, so Pacedu will keep you on this page. Check the required fields and try Save Registration again.";
-          speak("Registration has not been confirmed. Your details were not saved. Check the required fields and try again.");
-          return;
-        }
-        progress.textContent="Registration confirmed. Opening the next guided page.";
-        if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
-          window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
-        }else{
-          progress.textContent="Registration is saved, but the guided navigation controller is not ready. Reload the pilot page and try again.";
-        }
-      },500);
+          progress.textContent="Registration confirmed. Opening the next guided page.";
+          if(window.PacificEducationSingleNavigation && typeof window.PacificEducationSingleNavigation.go==="function"){
+            window.PacificEducationSingleNavigation.go(2,"prototypeAccess");
+          }else{
+            progress.textContent="Registration is saved, but guided navigation is not ready. Reload the pilot page and try again.";
+          }
+        },350);
+      },false);
     }
 
     next.addEventListener("click",nextStep,true);
