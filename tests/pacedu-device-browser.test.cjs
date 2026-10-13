@@ -794,7 +794,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     ["Education/Government", "education"],
     ["Community/Partner", "community"],
     ["Technician", "technician"],
-    ["Owner/Control", "owner"]
+    ["Owner / Control", "owner"]
   ];
 
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -812,7 +812,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
     await page.locator("#registrationNextButton").click();
 
-    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card").filter({ has: page.locator("strong", { hasText: new RegExp("^" + role.replace(/[.*+?^\x24{}()|[\]\\]/g, "\\$&") + "$") }) });
+    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card[data-role=\"" + role + "\"]");
     await roleCard.click();
     await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
     await page.locator("#pilotRegistrationName").fill("Role Pilot Test");
