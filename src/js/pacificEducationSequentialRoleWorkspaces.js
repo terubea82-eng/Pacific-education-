@@ -503,7 +503,16 @@
       }
     };
 
-    next.onclick=function(){
+    /* The sequential workspace owns this Next control. Bind at the shell in
+       capture phase so legacy page-level delegated handlers cannot swallow or
+       redirect the tap. This also survives replacement of the button node. */
+    next.onclick=null;
+    shell.addEventListener("click",function(event){
+      var clicked=event.target && event.target.closest ? event.target.closest("#peSequentialNext") : null;
+      if(!clicked || clicked!==next) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if(clicked.disabled) return;
       if(index<sequence.length-1){
         if(sequence[index][0]==="assessments" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
           if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
@@ -516,7 +525,7 @@
         speak("This workspace sequence is complete. You may sign out at the bottom.");
         document.getElementById("peSequentialSignOutButton").focus();
       }
-    };
+    },true);
 
     document.getElementById("peSequentialSignOutButton").onclick=function(){
       document.getElementById("peSequentialSignOutConfirm").hidden=false;
