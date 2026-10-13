@@ -750,8 +750,19 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toHaveCount(1);
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toContainText("Registration setup");
   await expect(page.locator("#userRegistrationForm .pe-green-role-hint")).toHaveCount(0);
-  await expect(page.locator("#pilotRegistrationSaveButton")).toHaveText(/Save Pilot Registration/);
+  const saveButton = page.locator("#pilotRegistrationSaveButton");
+  await expect(saveButton).toHaveText(/Save Pilot Registration/);
   await expect(page.locator("#registrationNextButton")).toBeVisible();
-  await expect(page.locator("#pilotRegistrationSaveButton")).toBeVisible();
+  // Save is correctly hidden until the user completes setup and selects a role.
+  await expect(saveButton).toBeHidden();
+  await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await page.locator("#registrationNextButton").click();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+  await page.locator("#registrationNextButton").click();
+  const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
+  await expect(teacher).toBeVisible();
+  await teacher.click();
+  await expect(saveButton).toBeVisible();
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
 });
