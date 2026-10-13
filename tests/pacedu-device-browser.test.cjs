@@ -794,7 +794,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     ["Education/Government", "education"],
     ["Community/Partner", "community"],
     ["Technician", "technician"],
-    ["Owner / Control", "owner"]
+    ["Owner/Control", "owner"]
   ];
 
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
