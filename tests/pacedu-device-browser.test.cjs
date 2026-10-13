@@ -173,8 +173,8 @@ test("mobile touch can complete registration and select a role before Next advan
   await page.locator("#registrationNextButton").tap();
   await page.locator("#pilotRegistrationName").fill("Phone Pilot Test");
   await expect(page.locator("#registrationNextButton")).toBeEnabled();
-  console.log("[mobile flow] name filled; tap Save/Next");
-  await page.locator("#registrationNextButton").tap();
+  console.log("[mobile flow] name filled; tap Save Pilot Registration directly");
+  await page.locator("#pilotRegistrationSaveButton").tap();
   await page.waitForTimeout(700);
   const handoffDiagnostic = await page.evaluate(() => {
     const read = key => { try { return sessionStorage.getItem(key); } catch (_) { return "sessionStorage-unavailable"; } };
