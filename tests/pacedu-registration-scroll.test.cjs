@@ -39,3 +39,44 @@ test("registration scrolling remains user-controlled when role cards receive foc
   await expect(registration).toBeVisible();
   await context.close();
 });
+
+
+test("Page 3 Next opens only Registration at the defined guided-flow step", async ({ page }) => {
+  page.setDefaultTimeout(8000);
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+
+  const welcome = page.locator("#pacificEducationWelcome");
+  const vision = page.locator("#paceduPageVision");
+  const rules = page.locator("#paceduPageRules");
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+
+  await expect(welcome).toBeVisible();
+  await page.locator("#welcomeNextButton").click();
+  await expect(vision).toBeVisible();
+  await expect(welcome).toBeHidden();
+
+  await page.locator("#paceduVisionNext").click();
+  await expect(rules).toBeVisible();
+  await expect(vision).toBeHidden();
+
+  await page.locator("#paceduRulesAgreement").check();
+  await page.locator("#paceduRulesContinue").click();
+
+  await expect(registration).toBeVisible();
+  await expect(rules).toBeHidden();
+  await expect(welcome).toBeHidden();
+  await expect(vision).toBeHidden();
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-flow-step")).toBe("3");
+  await expect.poll(() => page.locator("body").getAttribute("data-pe-active-guided-page")).toBe("pacificEducationIdentityRegistration");
+
+  const visiblePages = await page.evaluate(() => [
+    "pacificEducationWelcome",
+    "paceduPageVision",
+    "paceduPageRules",
+    "pacificEducationIdentityRegistration"
+  ].filter(id => {
+    const node = document.getElementById(id);
+    return !!node && !node.hidden && getComputedStyle(node).display !== "none" && getComputedStyle(node).visibility !== "hidden";
+  }));
+  expect(visiblePages, "only Registration may be visible after Page 3 Next").toEqual(["pacificEducationIdentityRegistration"]);
+});
