@@ -83,10 +83,9 @@
       style.textContent=
         /* Do not override the guided-flow step filter: only the active step must be visible. */
         ""+
-        "body.pe-pilot-all-features.pe-guided-flow #pacificEducationAppMenu,"+
-        "body.pe-pilot-all-features.pe-guided-flow header,"+
-        "body.pe-pilot-all-features.pe-guided-flow #userFirstNavigation,"+
+        /* Navigation chrome must not be forced visible during the single-page guided flow. */
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppMenu,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow) header,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #userFirstNavigation,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #learningPlatform,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppTools,"+
