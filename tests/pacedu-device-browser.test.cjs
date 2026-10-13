@@ -502,6 +502,30 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
 });
 
+test("verified registration role overrides a stale pilot role marker", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.route("**/src/js/pacificEducationSingleNavigationController.js*", route => route.abort());
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    sessionStorage.setItem("pacificEducationPilotRegistered", "true");
+    sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Blind Learner Isolation Test",role:"Blind Learner",pilotOnly:true}));
+    sessionStorage.setItem("pacificEducationPilotRole", "teacher");
+    window.PacificEducationSingleNavigation = undefined;
+    [document.documentElement, document.body].forEach(root => {
+      root.classList.remove("pe-guided-flow", "pe-pilot-all-features", "pe-sequential-role-workspace-active");
+      root.removeAttribute("data-pe-active-guided-page");
+      root.removeAttribute("data-pe-flow-step");
+    });
+    // Simulate a stale role argument: the saved registration must win.
+    window.PacificEducationSequentialRoleWorkspaces.build("teacher");
+  });
+
+  await expect(page.locator("#peSequentialTitle")).toContainText("blind-learner Workspace");
+  await expect(page.locator("#learningPlatform")).toBeVisible();
+  await expect(page.locator("#teacherDashboard")).toBeHidden();
+});
+
 test("registration must remain on Page 4 when the real save does not persist", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
