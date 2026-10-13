@@ -55,7 +55,7 @@ function focusRegistration(){
 }
 function focusWorkspace(){
  var shell=get("pacificEducationSequentialRoleWorkspace"),page=get("peSequentialPage");if(!visible(shell)||!visible(page))return false;
- var title=get("peSequentialTitle"),key="workspace:"+(title?title.textContent:"")+"/"+(page?page.innerHTML.length:"0");
+ var title=get("peSequentialTitle"),key="workspace:"+(title?title.textContent:"");
  if(key!==lastPageKey){lastPageKey=key;completed=new WeakSet();}
  var signOutButton=get("peSequentialSignOutButton"),yes=get("peSequentialSignOutYes"),confirm=get("peSequentialSignOutConfirm");
  if(signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden)return showFocus(signOutButton,"FINAL STEP — Tap Sign Out when you are ready.",shell);
