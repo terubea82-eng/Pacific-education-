@@ -29,6 +29,8 @@ body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppMenu,body.pe
 body.pe-pilot-all-features:not(.pe-guided-flow) .pacific-flow-next{display:flex !important}
 /* Learning Tools is deliberately excluded from the default non-guided reveal to prevent a startup/gateway flash. Show it only after the user explicitly ends the guided flow. */
 body.pe-pilot-all-features.pe-guided-flow-ended #learningPlatform{display:block!important}
+/* Fail closed during all entry-flow transitions: Learning Tools stays hidden unless the user explicitly ends guided flow. This protects against a transient loss of the guided-flow class during registration handoff. */
+body:not(.pe-guided-flow-ended) #learningPlatform{display:none!important}
 body.pe-pilot-all-features #buyPlans,body.pe-pilot-all-features #pacificEducationPaymentLinksAlways,body.pe-pilot-all-features #pacificEducationInstitutionFees,body.pe-pilot-all-features #pacificEducationUniversityFeeWorkflow,body.pe-pilot-all-features #pacificEducationAccessEntitlement{display:none !important}
 
 body.pe-guided-flow[data-pe-flow-step="0"] #pacificEducationWelcome,body.pe-guided-flow[data-pe-flow-step="0"] #pilotBanner{display:block !important}
