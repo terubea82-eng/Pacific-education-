@@ -162,3 +162,21 @@ test("sequential Sign Out confirmation is hidden until the final workspace page"
   assert.match(sequential, /signOutArea\.hidden = item\[0\] !== "paceduSignOutPage"/);
   assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)/);
 });
+
+
+test("Student daily activity starter offers English, Mathematics and Phonics with device-local completion", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /addStudentDailyActivityStarter\(dailyDay,page\)/);
+  assert.match(sequential, /pacificEducationStudentDailyActivityProgressV1/);
+  assert.match(sequential, /value=\\?"Mathematics\\?"/);
+  assert.match(sequential, /value=\\?"Phonics\\?"/);
+  assert.match(sequential, /Mark Activity Complete/);
+});
+
+test("Sign Out preserves saved registration and daily progress while clearing active session state", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /pacificEducationPilotSavedRegistrationV1/);
+  assert.match(sequential, /pacificEducationStudentDailyActivityProgressV1/);
+  assert.doesNotMatch(sequential, /LOCAL_SESSION_KEYS\.forEach\(function\(key\)\{try\{localStorage\.removeItem\(key\)/);
+  assert.match(sequential, /registration and sign-in entry is ready/);
+});
