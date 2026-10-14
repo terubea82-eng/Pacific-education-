@@ -105,7 +105,7 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     }
     window.PacificEducationBreathingFocusGuide.refresh();
   });
-  await expect(page.locator("#mandatoryProbe").locator("xpath=..")).toHaveClass(/pacific-breathing-focus/);
+  await expect(page.locator("#mandatoryProbe")).toHaveClass(/pacific-breathing-focus/);
   await expect(page.locator("#peSequentialNext")).not.toHaveClass(/pacific-next-breathing-ready/);
   await page.locator("#mandatoryProbe").fill("ABC");
   await page.evaluate(() => window.PacificEducationBreathingFocusGuide.refresh());
