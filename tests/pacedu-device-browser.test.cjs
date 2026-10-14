@@ -956,6 +956,8 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialBack")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
   await expect(shell.locator("#peSequentialHear")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
+  await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeHidden();
 
   // Complete the first capability check, then advance through the student
   // sequence to Daily Activities. Assert rendered controls and content, not CSS text.
