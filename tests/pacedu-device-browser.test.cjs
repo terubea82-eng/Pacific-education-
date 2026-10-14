@@ -880,5 +880,42 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("body")).not.toHaveAttribute("data-pe-flow-step");
     await expect(page.locator("#peSequentialBack")).toBeVisible();
     await expect(page.locator("#peSequentialNext")).toBeVisible();
+
+    if (expectedWorkspace === "student") {
+      const title = page.locator("#peSequentialTitle");
+      const nextStep = page.locator("#peSequentialNext");
+      await expect(title).toContainText("Capability & Ability Test");
+      await expect(nextStep).toBeDisabled();
+
+      await page.locator('input[data-pe-cap-answer="a"]').fill("A");
+      await page.locator('input[data-pe-cap-answer="5"]').fill("5");
+      await page.locator('input[data-pe-cap-answer="cat"]').fill("cat");
+      await page.getByRole("button", { name: /Submit Test/ }).click();
+      await expect(nextStep).toBeEnabled();
+      await nextStep.click();
+      await expect(title).toContainText("Capability Result");
+      await expect(nextStep).toBeEnabled();
+      await nextStep.click();
+      await expect(title).toContainText("Class / Level");
+      await expect(nextStep).toBeEnabled();
+      await nextStep.click();
+      await expect(title).toContainText("Subject");
+      await nextStep.click();
+      await expect(title).toContainText("Term");
+      await nextStep.click();
+      await expect(title).toContainText("Learning Capability");
+      await nextStep.click();
+      await expect(title).toContainText("Day 1 of 365");
+      await nextStep.click();
+      await expect(title).toContainText("Practice");
+      await nextStep.click();
+      await expect(title).toContainText("Assessments");
+      await nextStep.click();
+      await expect(title).toContainText("Curriculum Coverage");
+      await nextStep.click();
+      await expect(title).toContainText("My Progress");
+      await nextStep.click();
+      await expect(title).toContainText("Day 2 of 365");
+    }
   }
 });
