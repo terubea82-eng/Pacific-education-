@@ -257,6 +257,10 @@
         var body=document.body;
         if(body){
           body.setAttribute("data-pe-guided-complete","true");
+          /* Mark the guided flow complete as well as removing its active classes.
+             index.html deliberately keeps Learning Tools hidden until this marker
+             exists; omitting it leaves the learner without the existing activity UI. */
+          body.classList.add("pe-guided-flow-ended");
           body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
           body.removeAttribute("data-pe-flow-step");
           body.removeAttribute("data-pe-active-guided-page");
@@ -284,8 +288,66 @@
         var menu=get("pacificEducationAppMenu");
         if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
 
-        workspace.build(roleName);
-        return;
+        try{
+          workspace.build(roleName);
+          var openedWorkspace=get("pacificEducationSequentialRoleWorkspace");
+          if(!openedWorkspace){
+            throw new Error("Sequential role workspace was not created.");
+          }
+          openedWorkspace.hidden=false;
+          openedWorkspace.style.setProperty("display","block","important");
+          openedWorkspace.style.setProperty("visibility","visible","important");
+          return;
+        }catch(workspaceError){
+          /* Do not strand the learner on an empty screen if a legacy runtime
+             throws during workspace construction. Keep an explicit recovery
+             panel with a real retry action; never silently claim success. */
+          var app=get("app");
+          var recovery=get("paceduWorkspaceHandoffRecovery");
+          if(!recovery && app){
+            recovery=document.createElement("section");
+            recovery.id="paceduWorkspaceHandoffRecovery";
+            recovery.setAttribute("role","alert");
+            recovery.style.cssText="display:block!important;visibility:visible!important;padding:20px;border:3px solid #b45309;border-radius:10px;margin:16px 0;";
+            var heading=document.createElement("h2");
+            heading.textContent="Student Workspace is recovering";
+            var message=document.createElement("p");
+            message.textContent="Your registration is saved. The workspace did not finish opening. Press Retry to reopen the selected learning workspace.";
+            var retry=document.createElement("button");
+            retry.type="button";
+            retry.id="paceduWorkspaceHandoffRetry";
+            retry.textContent="Retry Open Workspace";
+            retry.style.cssText="display:inline-block!important;padding:14px 18px;background:#15803d;color:#fff;font-weight:700;border-radius:8px;";
+            retry.addEventListener("click",function(){
+              try{
+                var prior=get("pacificEducationSequentialRoleWorkspace");
+                if(prior) prior.remove();
+                workspace.build(roleName);
+                var rebuilt=get("pacificEducationSequentialRoleWorkspace");
+                if(!rebuilt) throw new Error("Workspace shell was not created.");
+                rebuilt.hidden=false;
+                rebuilt.style.setProperty("display","block","important");
+                rebuilt.style.setProperty("visibility","visible","important");
+                recovery.remove();
+              }catch(retryError){
+                var retryStatus=recovery.querySelector("p");
+                if(retryStatus) retryStatus.textContent="The workspace still could not open. Reload the pilot and retry; your saved registration has not been deleted.";
+              }
+            });
+            recovery.appendChild(heading);
+            recovery.appendChild(message);
+            recovery.appendChild(retry);
+            app.insertBefore(recovery,app.firstChild);
+          }
+          if(recovery){
+            recovery.hidden=false;
+            recovery.style.setProperty("display","block","important");
+            recovery.style.setProperty("visibility","visible","important");
+          }
+          if(progress) progress.textContent="Registration is saved. The workspace needs recovery; use the visible Retry Open Workspace control.";
+          speak("Your registration is saved. The workspace needs recovery. Press Retry Open Workspace.");
+          return;
+        }
       }
       progress.textContent="Save Pilot Registration first. After the saved confirmation appears, press the green Next button to open your selected role workspace.";
       speak("Save Pilot Registration first. After the saved confirmation appears, press Next to open your selected role workspace.");
