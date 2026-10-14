@@ -217,7 +217,8 @@ body.pe-guided-flow.pe-pilot-all-features main > *{display:none !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="1"] #paceduPageVision{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="2"] #paceduPageRules{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="3"] #pacificEducationIdentityRegistration{display:block !important}
-body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="4"] #prototypeAccess{display:block !important}body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="5"] #levelSelection{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="4"] #prototypeAccess{display:block !important}
+body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="5"] #levelSelection{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="6"] #subjectSelection{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="7"] #termSelection{display:block !important}
 body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="8"] #capabilitySelection{display:block !important}
@@ -416,7 +417,8 @@ body.pe-guided-flow #pacificEducationTechnicianActivation {
   display: none !important;
 }
 body.pe-pilot-all-features #userFirstNavigation,
-body.pe-pilot-all-features #pacificEducationAppMenu {  display: none !important;
+body.pe-pilot-all-features #pacificEducationAppMenu {
+  display: none !important;
 }
 /* Guided navigation: Back is green like Next, with a clear breathing cue. */
 .pacedu-entry-actions button[id$="Back"],button[id$="BackButton"],button[id$="backButton"],button[aria-label^="Back"],#peSequentialBack,#paceduVisionBack,#paceduRulesBack,.pacedu-real-back{background:#168a3a!important;color:#fff!important;border:2px solid #0f642a!important;min-height:52px;min-width:120px;border-radius:10px;font-weight:800;animation:peNextBreathing 2s ease-in-out infinite}
@@ -615,7 +617,8 @@ body.pe-pilot-all-features #pacificEducationAppMenu {  display: none !important;
     var refresh=document.getElementById("pacificEducationMailboxRefresh");
     var compose=document.getElementById("pacificEducationMailboxCompose");
     var composer=document.getElementById("pacificEducationMailboxComposer");
-    var send=document.getElementById("pacificEducationMailboxSend");    var cancel=document.getElementById("pacificEducationMailboxCancel");
+    var send=document.getElementById("pacificEducationMailboxSend");
+    var cancel=document.getElementById("pacificEducationMailboxCancel");
     if(refresh)refresh.onclick=render;
     if(compose)compose.onclick=function(){if(composer)composer.hidden=false;};
     if(cancel)cancel.onclick=function(){if(composer)composer.hidden=true;};
@@ -814,7 +817,8 @@ git status</pre>
         else if(window.speakText)window.speakText(announcement);
       }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
     };
-    /* Reliable pilot save handoff: capture the click after country/language       validation has run, so the record exists before any sequence listener
+    /* Reliable pilot save handoff: capture the click after country/language
+       validation has run, so the record exists before any sequence listener
        checks it. Keep the same required fields and exact selected role. */
     if(save.getAttribute("data-pe-reliable-save-bound")!=="true"){
       save.setAttribute("data-pe-reliable-save-bound","true");
@@ -1013,7 +1017,8 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationCurriculumCoverageEngine.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationTeacherReviewQueue.js?v=20261006-protected-wiring"></script>
-<script src="./js/pacificEducationStudentProgressDashboardUI.js?v=20261006-protected-wiring"></script><script src="./js/pacificEducationUserBoxVisualActivation.js?v=20261007-user-box-blue"></script>
+<script src="./js/pacificEducationStudentProgressDashboardUI.js?v=20261006-protected-wiring"></script>
+<script src="./js/pacificEducationUserBoxVisualActivation.js?v=20261007-user-box-blue"></script>
 <script src="./js/pacificEducationWelcomeOnlyVoiceGuard.js?v=20261011-block-conversation-registration"></script><script src="./js/pacificEducationRegistrationVoiceIsolation.js?v=20261012-registration-voice-isolation"></script>
 <script src="./js/pacificEducationStepByStepGuidance.js?v=20261013-registration-role-scroll-lock"></script>
 <script src="./js/pacificEducationPageIsolationRepair.js?v=20261012-page4-isolation-fix"></script>
@@ -1212,7 +1217,8 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var body = document.body;
     var welcome = document.getElementById("pacificEducationWelcome");
     if (!body || !welcome) return;
-    try {      var params = new URLSearchParams(window.location.search);
+    try {
+      var params = new URLSearchParams(window.location.search);
       if (params.get("entry") === "registration" &&
           window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes") return;
     } catch (e) {}
