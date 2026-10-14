@@ -17,6 +17,8 @@ function visible(el){if(!el||el.hidden)return false;var s=window.getComputedStyl
 function labelOf(el){return String(el.getAttribute("aria-label")||el.getAttribute("title")||el.innerText||el.textContent||"").replace(/\s+/g," ").trim();}
 function excluded(el){var t=labelOf(el);return IGNORE.test(t)||/^(🔊|🔇|✉️|📬)/.test(t)||el.matches("[data-audio-command-for],#peSequentialHear,#peSequentialStop,#pacificEducationStopSpeechButton,#pacificEducationWelcomeVoiceButton,#pacificEducationAIPlaybackButton");}
 function controls(root){return Array.prototype.slice.call((root||document).querySelectorAll('input:not([type="hidden"]),select,textarea,button,[role="button"]')).filter(function(el){return visible(el)&&!el.disabled&&!el.readOnly&&!excluded(el)&&String(el.type||"").toLowerCase()!=="checkbox";});}
+function mandatoryFields(root){return Array.prototype.slice.call((root||document).querySelectorAll("input:not([type=hidden]),select,textarea")).filter(function(el){if(!visible(el)||el.disabled||el.readOnly)return false;return el.required||el.getAttribute("aria-required")==="true"||el.getAttribute("data-pe-required")==="true"||el.getAttribute("data-mandatory")==="true"||el.hasAttribute("data-pe-cap-answer")||!!el.closest("#levelSelection,#subjectSelection,#termSelection,#capabilitySelection")||/^(pacificEducationLevel|pacificEducationClassReference|pacificEducationSubject|pacificEducationTerm|pacificEducationCapability)$/.test(el.id);});}
+function fieldComplete(el){if(!el)return true;var type=String(el.type||"").toLowerCase();if(type==="checkbox"||type==="radio")return !!el.checked;var value=String(el.value||"").trim();return !!value&&(!(typeof el.checkValidity==="function")||el.checkValidity());}
 function unlockAll(){Array.prototype.forEach.call(document.querySelectorAll("."+LOCK_CLASS),function(el){el.classList.remove(LOCK_CLASS);el.removeAttribute("aria-disabled");if(el.getAttribute("data-pe-breathing-disabled")==="1"){el.removeAttribute("disabled");el.removeAttribute("data-pe-breathing-disabled");}});}
 function clearVisuals(){if(activeTarget){activeTarget.classList.remove(FOCUS_CLASS);activeTarget.removeAttribute("data-pe-breathing-active");}Array.prototype.forEach.call(document.querySelectorAll("."+LABEL_CLASS),function(el){el.remove();});Array.prototype.forEach.call(document.querySelectorAll("."+READY_CLASS),function(el){el.classList.remove(READY_CLASS);el.removeAttribute("data-pe-breathing-next-ready");});unlockAll();activeTarget=null;activeControl=null;}
 function lockTo(target,root){/* Visual guidance only; preserve existing control and navigation handlers. */}
@@ -35,7 +37,7 @@ function markNextReady(root){var n=nextButton(root);if(n&&!n.disabled&&!n.hidden
 function focusEntry(){
  var gateway=document.querySelector("body.pacedu-entry-mode .pacedu-entry-page");if(!visible(gateway))return false;
  var list=controls(gateway),target=null;
- for(var i=0;i<list.length;i++){var el=list[i];if(el.matches("input,select,textarea")){if(!String(el.value||"").trim()){target=el;break;}completed.add(el);}else if(!completed.has(el)){target=el;break;}}
+ for(var i=0;i<list.length;i++){var el=list[i];if(el.matches("input,select,textarea")){var value=String(el.value||"").trim();var invalid=typeof el.checkValidity==="function"&&!el.checkValidity();var mandatory=el.required||el.getAttribute("aria-required")==="true";if(!value||(mandatory&&invalid)){target=el;break;}completed.add(el);}else if(!completed.has(el)){target=el;break;}}
  if(target)return showFocus(target,target.matches("input,select,textarea")?"CURRENT STEP — Complete this box, then continue.":"CURRENT STEP — Tap this highlighted control.",gateway);
  clearVisuals();markNextReady(gateway);return true;
 }
@@ -48,7 +50,7 @@ function focusRegistration(){
  else if(visible(language)&&!String(language.value||"").trim()){target=language;text="STEP 2 — Select your language here.";}
  else if(visible(open)&&!selected){target=open;text="STEP 3 — Tap to open User Registration.";}
  else if(visible(cards)&&!selected){target=cards;text="STEP 4 — Choose one role in this highlighted box.";}
- else if(visible(name)&&!String(name.value||"").trim()){target=name;text="STEP 5 — Enter a display name or test name.";}
+ else if(visible(name)&&(!String(name.value||"").trim()||(name.required&&typeof name.checkValidity==="function"&&!name.checkValidity()))){target=name;text="STEP 5 — Enter a valid display name or test name.";}
  else if(visible(save)&&!save.disabled){var saved=false;try{saved=!!sessionStorage.getItem("pacificEducationPilotRegistered");}catch(e){}if(!saved){target=save;text="STEP 6 — Save Pilot Registration, then wait for confirmation.";}}
  if(target)return showFocus(target,text,reg);
  var n=get("registrationNextButton");if(n&&!n.disabled){clearVisuals();n.classList.add(READY_CLASS);n.setAttribute("data-pe-breathing-next-ready","true");}return true;
@@ -60,9 +62,9 @@ function focusWorkspace(){
  var signOutButton=get("peSequentialSignOutButton"),yes=get("peSequentialSignOutYes"),confirm=get("peSequentialSignOutConfirm");
  if(signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden)return showFocus(signOutButton,"FINAL STEP — Tap Sign Out when you are ready.",shell);
  if(yes&&visible(yes)&&confirm&&!confirm.hidden)return showFocus(yes,"FINAL STEP — Confirm Sign Out to end this pilot session.",shell);
- var list=controls(page),target=null;
- for(var i=0;i<list.length;i++){var el=list[i];if(el.id==="peSequentialNext"||el.id==="peSequentialBack")continue;if(el.matches("input,select,textarea")){if(!String(el.value||"").trim()){target=el;break;}completed.add(el);}else if(!completed.has(el)){target=el;break;}}
- var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,target.matches("input,select,textarea")?"CURRENT STEP — Enter or select information in this highlighted box.":"CURRENT STEP — Use this highlighted control, then continue.",page);}
+ var list=mandatoryFields(page),target=null;
+ for(var i=0;i<list.length;i++){var el=list[i];if(!fieldComplete(el)){target=el;break;}completed.add(el);}
+ var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,"MANDATORY STEP — Complete this required box correctly before moving to the next one.",page);}
  clearVisuals();if(next&&!next.disabled&&!next.hidden){next.classList.add(READY_CLASS);next.setAttribute("data-pe-breathing-next-ready","true");}return true;
 }
 function choose(){if(focusWorkspace())return;if(focusRegistration())return;if(focusEntry())return;clearVisuals();}
@@ -75,11 +77,11 @@ function refresh(){if(busy)return;busy=true;try{injectStyle();choose();}finally{
 function init(){
  injectStyle();
  document.addEventListener("input",completedAction,true);document.addEventListener("change",completedAction,true);
- document.addEventListener("click",function(event){var n=event.target&&event.target.closest?event.target.closest("#peSequentialNext,#registrationNextButton,#welcomeNextButton,#paceduVisionNext,#paceduRulesContinue,#peSequentialSignOutButton,#peSequentialSignOutYes"):null;if(n){completed=new WeakSet();lastPageKey="";setTimeout(refresh,120);setTimeout(refresh,450);setTimeout(refresh,900);return;}completedAction(event);},true);
+ document.addEventListener("click",function(event){var n=event.target&&event.target.closest?event.target.closest("#peSequentialNext,#registrationNextButton,#welcomeNextButton,#paceduVisionNext,#paceduRulesContinue,#peSequentialSignOutButton,#peSequentialSignOutYes"):null;if(n&&n.id==="peSequentialNext"){var page=get("peSequentialPage"),required=mandatoryFields(page),missing=null;for(var i=0;i<required.length;i++){if(!fieldComplete(required[i])){missing=required[i];break;}}if(missing){event.preventDefault();event.stopImmediatePropagation();showFocus(missing,"MANDATORY STEP — Complete this required box correctly before moving to the next one.",page);return;}}if(n){completed=new WeakSet();lastPageKey="";setTimeout(refresh,120);setTimeout(refresh,450);setTimeout(refresh,900);return;}completedAction(event);},true);
  window.addEventListener("resize",refresh);setTimeout(refresh,250);
  // Catch navigation updates without creating a MutationObserver or changing the protected speech engine.
  if(!refreshTimer)refreshTimer=window.setInterval(function(){var page=get("peSequentialPage"),title=get("peSequentialTitle"),key=page&&title?title.textContent+":"+page.innerHTML.length:"";if(key!==lastPageKey||!activeTarget||!visible(activeTarget))refresh();},700);
 }
-window.PacificEducationBreathingFocusGuide={version:"1.1.1-all-pages-no-observer",refresh:refresh,clear:clearVisuals};
+window.PacificEducationBreathingFocusGuide={version:"1.2.0-mandatory-fields",refresh:refresh,clear:clearVisuals};
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })(window,document);

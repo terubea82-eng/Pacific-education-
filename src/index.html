@@ -209,6 +209,77 @@ body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #paci
 #assessmentNextButton:focus-visible,
 #pilotRegistrationSaveButton:focus-visible,
 #peSequentialNext:focus-visible{outline:3px solid #000!important;outline-offset:3px}
+/* Gentle breathing cue for active guided direction controls across all pages.
+   Hidden-page controls remain invisible; disabled controls do not pulse.
+   Existing registration-box blue breathing and protected #856 voice are untouched. */
+@keyframes paceduDirectionBreathing {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(22,138,58,.12); filter: brightness(1); }
+  50% { box-shadow: 0 0 0 5px rgba(22,138,58,.20); filter: brightness(1.06); }
+}
+.pacific-mandatory-next,
+.pacedu-real-next,
+.pacific-flow-next button:not(.pe-audio-command),
+#paceduVisionNext,
+#paceduRulesContinue,
+#welcomeNextButton,
+#registrationNextButton,
+#prototypeNextButton,
+#levelNextButton,
+#subjectNextButton,
+#termNextButton,
+#capabilityNextButton,
+#dailyNextButton,
+#practiceNextButton,
+#assessmentNextButton,
+#peSequentialNext,
+button[data-pe-back-button="true"] {
+  animation: paceduDirectionBreathing 2.4s ease-in-out infinite;
+}
+button[data-pe-back-button="true"] {
+  background: #168a3a;
+  color: #fff;
+  border: 2px solid #0f642a;
+  font-weight: 800;
+  min-height: 48px;
+  border-radius: 10px;
+}
+.pacific-mandatory-next:disabled,
+.pacedu-real-next:disabled,
+.pacific-flow-next button:disabled,
+#paceduVisionNext:disabled,
+#paceduRulesContinue:disabled,
+#welcomeNextButton:disabled,
+#registrationNextButton:disabled,
+#prototypeNextButton:disabled,
+#levelNextButton:disabled,
+#subjectNextButton:disabled,
+#termNextButton:disabled,
+#capabilityNextButton:disabled,
+#dailyNextButton:disabled,
+#practiceNextButton:disabled,
+#assessmentNextButton:disabled,
+#peSequentialNext:disabled,
+button[data-pe-back-button="true"]:disabled {
+  animation: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: .6;
+  cursor: not-allowed;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pacific-mandatory-next,
+  .pacedu-real-next,
+  .pacific-flow-next button:not(.pe-audio-command),
+  #paceduVisionNext, #paceduRulesContinue, #welcomeNextButton,
+  #registrationNextButton, #prototypeNextButton, #levelNextButton,
+  #subjectNextButton, #termNextButton, #capabilityNextButton,
+  #dailyNextButton, #practiceNextButton, #assessmentNextButton,
+  #peSequentialNext, button[data-pe-back-button="true"] {
+    animation: none !important;
+    box-shadow: 0 0 0 2px rgba(22,138,58,.22);
+    filter: none;
+  }
+}
 /* Final guided-flow precedence: visibility steps mirror PacificEducationSingleNavigation exactly.
    Gateway pages are controlled by pacedu-entry-mode; guided step 1 starts at registration.
    Coverage lives inside teacherCalendarSection, so its parent must remain visible at step 10.
