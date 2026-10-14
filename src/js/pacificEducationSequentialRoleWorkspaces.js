@@ -275,6 +275,12 @@
       style=document.createElement("style");
       style.id="pacedu-role-workspace-isolation-style";
       style.textContent=
+        /* A stale guided-flow rule can hide #app itself after registration. The workspace
+           cannot recover by showing only its child shell, so explicitly restore its
+           containing main/app surfaces while sequential workspace mode is active. */
+        "body.pe-sequential-role-workspace-active main{display:block!important;visibility:visible!important;}"+
+        "body.pe-sequential-role-workspace-active main > #app{display:block!important;visibility:visible!important;}"+
+        "body.pe-sequential-role-workspace-active #app{display:block!important;visibility:visible!important;}"+
         "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
         "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
         "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}";
