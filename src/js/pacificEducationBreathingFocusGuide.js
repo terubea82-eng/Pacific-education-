@@ -62,9 +62,9 @@ function focusWorkspace(){
  var signOutButton=get("peSequentialSignOutButton"),yes=get("peSequentialSignOutYes"),confirm=get("peSequentialSignOutConfirm");
  if(signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden)return showFocus(signOutButton,"FINAL STEP — Tap Sign Out when you are ready.",shell);
  if(yes&&visible(yes)&&confirm&&!confirm.hidden)return showFocus(yes,"FINAL STEP — Confirm Sign Out to end this pilot session.",shell);
- var list=controls(page),target=null;
- for(var i=0;i<list.length;i++){var el=list[i];if(el.id==="peSequentialNext"||el.id==="peSequentialBack")continue;if(el.matches("input,select,textarea")){if(!String(el.value||"").trim()){target=el;break;}completed.add(el);}else if(!completed.has(el)){target=el;break;}}
- var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,target.matches("input,select,textarea")?"CURRENT STEP — Enter or select information in this highlighted box.":"CURRENT STEP — Use this highlighted control, then continue.",page);}
+ var list=mandatoryFields(page),target=null;
+ for(var i=0;i<list.length;i++){var el=list[i];if(!fieldComplete(el)){target=el;break;}completed.add(el);}
+ var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,"MANDATORY STEP — Complete this required box correctly before moving to the next one.",page);}
  clearVisuals();if(next&&!next.disabled&&!next.hidden){next.classList.add(READY_CLASS);next.setAttribute("data-pe-breathing-next-ready","true");}return true;
 }
 function choose(){if(focusWorkspace())return;if(focusRegistration())return;if(focusEntry())return;clearVisuals();}
