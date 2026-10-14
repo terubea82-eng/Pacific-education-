@@ -101,6 +101,7 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     if (page) {
       page.hidden = false;
       page.style.display = "block";
+      page.removeAttribute("aria-hidden");
       page.innerHTML = '<label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"><label for="optionalProbe">Optional note</label><input id="optionalProbe">';
     }
     window.PacificEducationBreathingFocusGuide.refresh();
