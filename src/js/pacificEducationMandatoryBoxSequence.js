@@ -337,7 +337,7 @@
             recovery.appendChild(heading);
             recovery.appendChild(message);
             recovery.appendChild(retry);
-            app.insertBefore(recovery,app.firstChild);
+            document.body.appendChild(recovery);
           }
           if(recovery){
             recovery.hidden=false;
