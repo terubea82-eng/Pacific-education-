@@ -655,6 +655,7 @@ test("integrated Welcome → Vision → Rules → Registration flow never replay
   await expect(page.locator("#paceduPageRules")).toBeVisible();
   await expect(page.locator("#paceduPageVision")).toBeHidden();
   await page.locator("#paceduRulesAgreement").check();
+  const speechCountBeforeRegistration = await page.evaluate(() => (window.__paceduSpeechCalls || []).length);
   await page.locator("#paceduRulesContinue").click();
 
   const registration = page.locator("#pacificEducationIdentityRegistration");
@@ -663,9 +664,10 @@ test("integrated Welcome → Vision → Rules → Registration flow never replay
   await expect(page.locator("#welcomeNextWrapper")).toBeHidden();
   expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
   await page.waitForTimeout(1500);
-  const welcomeCalls = await page.evaluate(() => (window.__paceduSpeechCalls || [])
+  const welcomeCalls = await page.evaluate((startIndex) => (window.__paceduSpeechCalls || [])
+    .slice(startIndex)
     .filter(call => /welcome to (?:pacific education|pacedu)|owner.?s experience|owner of pacific education|21 years.*classroom teaching/i.test(call.text))
-    .map(call => call.text));
+    .map(call => call.text), speechCountBeforeRegistration);
   expect(welcomeCalls, "the Welcome/Owner narration must not start on Registration").toEqual([]);
   await expect(page.locator("#registrationNextButton")).toBeVisible();
 });
@@ -753,12 +755,14 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
   await page.addInitScript(() => {
     window.__paceduWelcomeFlashDetected = false;
     window.__paceduLearningToolsFlashDetected = false;
+    window.__paceduObserveRegistrationTransition = false;
     const isVisible = node => !!node && !node.hidden &&
       node.getAttribute("aria-hidden") !== "true" &&
       getComputedStyle(node).display !== "none" &&
       getComputedStyle(node).visibility !== "hidden" &&
       node.getClientRects().length > 0;
     const inspect = () => {
+      if (!window.__paceduObserveRegistrationTransition) return;
       const welcome = document.getElementById("pacificEducationWelcome");
       const learningTools = document.getElementById("learningPlatform");
       if (isVisible(welcome)) window.__paceduWelcomeFlashDetected = true;
@@ -783,6 +787,7 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
   await expect(page.locator("#paceduPageRules")).toBeVisible();
   await page.locator("#paceduRulesAgreement").check();
   await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
+  await page.evaluate(() => { window.__paceduObserveRegistrationTransition = true; });
   await page.locator("#paceduRulesContinue").click();
 
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
