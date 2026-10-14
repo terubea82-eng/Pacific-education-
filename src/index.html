@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+/* Prevent a Welcome flash on the Rules -> Registration handoff.
+   Run before page content/CSS is parsed so the first rendered frame honours the accepted route. */
+(function () {
+  "use strict";
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("entry") === "registration" &&
+        window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes") {
+      document.documentElement.setAttribute("data-pacedu-registration-entry", "true");
+    }
+  } catch (error) {}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
@@ -12,6 +26,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="canonical" href="https://terubea82-eng.github.io/Pacific-education-/">
 <style>
+/* Route-level fail-closed guard: Welcome must not render on the accepted Registration URL,
+   even before the navigation controller initializes or repairs legacy page state. */
+html[data-pacedu-registration-entry="true"] #pacificEducationWelcome {
+  display: none !important;
+  visibility: hidden !important;
+}
 body{font-family:Arial,sans-serif;margin:0;line-height:1.5}
 /* Prevent the standalone Learning Tools section from flashing before guided-flow isolation initializes. The later explicit post-flow rule can reveal it after setup is complete. */
 #learningPlatform{display:none!important}
