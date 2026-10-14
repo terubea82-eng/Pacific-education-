@@ -897,7 +897,7 @@ test("save confirmation then Next opens the selected role workspace for every re
       await page.locator('input[data-pe-cap-answer="a"]').fill("A");
       await page.locator('input[data-pe-cap-answer="5"]').fill("5");
       await page.locator('input[data-pe-cap-answer="cat"]').fill("cat");
-      await page.getByRole("button", { name: /Submit Test/ }).click();
+      await page.locator('button[aria-label="✓ Submit Test"]').click();
       await expect(nextStep).toBeEnabled();
       await nextStep.click();
       await expect(title).toContainText("Capability Result");
