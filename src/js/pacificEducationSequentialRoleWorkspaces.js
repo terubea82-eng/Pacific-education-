@@ -367,6 +367,53 @@
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
     var dailyDay=1;
 
+
+    /* Student daily activity starter: concrete English, Mathematics and Phonics
+       tasks, with completion saved locally without replacing the existing lesson engine. */
+    function addStudentDailyActivityStarter(day, host){
+      if(!host || document.getElementById("peStudentDailyActivityStarter")) return;
+      var panel=document.createElement("section");
+      panel.id="peStudentDailyActivityStarter";
+      panel.setAttribute("aria-label","Student daily learning activities");
+      panel.style.cssText="margin:16px 0;padding:16px;border:2px solid #15803d;border-radius:10px;";
+      panel.innerHTML="<h3>📚 Student Daily Activities — Day "+day+" of 365</h3>"+
+        "<p>Choose one activity, practise it, then mark it complete. This is a starter activity set; your teacher's class, subject and term instructions still apply.</p>"+
+        "<label for=\"peStudentDailySubject\"><strong>Subject</strong></label> "+
+        "<select id=\"peStudentDailySubject\" style=\"display:block;width:100%;max-width:420px;padding:10px;margin:8px 0\">"+
+        "<option value=\"English\">English</option><option value=\"Mathematics\">Mathematics</option><option value=\"Phonics\">Phonics</option></select>"+
+        "<p><strong>Learning goal</strong></p><p id=\"peStudentDailyGoal\"></p>"+
+        "<p><strong>Learn and practise</strong></p><p id=\"peStudentDailyTask\"></p>"+
+        "<p><strong>Check your understanding</strong></p><p id=\"peStudentDailyCheck\"></p>"+
+        "<button type=\"button\" id=\"peStudentDailyComplete\" style=\"padding:12px 16px;font-weight:700\">✓ Mark Activity Complete</button>"+
+        "<p id=\"peStudentDailyStatus\" role=\"status\" aria-live=\"polite\">Your completion is saved on this device.</p>";
+      host.appendChild(panel);
+      var select=panel.querySelector("#peStudentDailySubject");
+      var goal=panel.querySelector("#peStudentDailyGoal");
+      var task=panel.querySelector("#peStudentDailyTask");
+      var check=panel.querySelector("#peStudentDailyCheck");
+      var status=panel.querySelector("#peStudentDailyStatus");
+      var key="pacificEducationStudentDailyActivityProgressV1";
+      var activities={
+        English:{goal:"Use a greeting and a complete sentence.",task:"Learn: hello, good morning, thank you. Say or write: Good morning. My name is ____.",check:"Which is a greeting: Hello or Chair? Answer: Hello."},
+        Mathematics:{goal:"Count objects and compare small numbers.",task:"Count five safe objects near you. Say or write the numbers 1, 2, 3, 4, 5.",check:"Which number is greater: 3 or 5? Answer: 5."},
+        Phonics:{goal:"Recognise a letter and its starting sound.",task:"Look at the letter A. Practise its name and the beginning sound in apple. Blind learners may listen to a teacher or approved screen reader; deaf learners may use the written word and letter card.",check:"Which word begins with A: apple or sun? Answer: apple."}
+      };
+      function readProgress(){try{return JSON.parse(localStorage.getItem(key)||"{}")||{};}catch(e){return {};}}
+      function entryKey(){return String(day)+":"+select.value;}
+      function paint(){
+        var data=activities[select.value]||activities.English;
+        goal.textContent=data.goal;task.textContent=data.task;check.textContent=data.check;
+        status.textContent=readProgress()[entryKey()] ? "✓ "+select.value+" Day "+day+" activity already completed on this device." : "Complete the activity, then mark it complete. Progress is stored on this device.";
+      }
+      select.addEventListener("change",paint);
+      panel.querySelector("#peStudentDailyComplete").addEventListener("click",function(){
+        var saved=readProgress();saved[entryKey()]={completed:true,day:day,subject:select.value};
+        try{localStorage.setItem(key,JSON.stringify(saved));status.textContent="✓ Saved: "+select.value+" Day "+day+" activity completed on this device.";speak("Daily activity completed. Your progress is saved on this device.");}
+        catch(e){status.textContent="Activity completed for this session, but local storage is unavailable. Please tell your teacher before leaving this page.";}
+      });
+      paint();
+    }
+
     function renderPage(){
       restoreAllMovedTargets();
       var signOutArea=document.getElementById("peSequentialSignOut");
@@ -415,7 +462,7 @@
       if(item[0]==="paceduSignOutPage"){
         var signOutIntro=document.createElement("section");
         signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
-        signOutIntro.innerHTML="<h3>🔴 Sign Out</h3><p>Your role-specific workspace steps are complete. Use <strong>Sign Out</strong> when you have finished, or use Back to return to your previous workspace page.</p><p>Signing out clears this pilot session's registration and role state from this device.</p>";
+        signOutIntro.innerHTML="<h3>🔴 Sign Out</h3><p>Your role-specific workspace steps are complete. Use <strong>Sign Out</strong> when you have finished, or use Back to return to your previous workspace page.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
         page.appendChild(signOutIntro);
         if(signOutArea) page.appendChild(signOutArea);
         next.hidden=true;
@@ -525,6 +572,7 @@
               status.textContent="Phonics Assessment is not connected yet.";
             }
           };
+          addStudentDailyActivityStarter(dailyDay,page);
         }
       }else{
         var missing=document.createElement("div");
@@ -586,6 +634,21 @@
     };
     document.getElementById("peSequentialSignOutYes").onclick=function(){
       try{
+        /* Preserve the saved registration record before clearing active session-only state. */
+        var savedRegistration=null;
+        try{savedRegistration=JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration")||"null");}catch(_){}
+        if(!savedRegistration){
+          savedRegistration={
+            name:String(sessionStorage.getItem("pilotRegistrationName")||"").trim(),
+            role:String(sessionStorage.getItem("pilotRegistrationRole")||role||""),
+            country:String(localStorage.getItem("pacificEducationRegistrationCountryName")||localStorage.getItem("pacificEducationRegistrationCountry")||""),
+            language:String(localStorage.getItem("pacificEducationRegistrationLanguage")||"")
+          };
+        }
+        if(savedRegistration && (savedRegistration.name || savedRegistration.role)){
+          savedRegistration.savedAt=new Date().toISOString();
+          localStorage.setItem("pacificEducationPilotSavedRegistrationV1",JSON.stringify(savedRegistration));
+        }
         sessionStorage.removeItem("pacificEducationPilotRegistration");
         sessionStorage.removeItem("pacificEducationPilotRegistered");
         sessionStorage.removeItem("pacificEducationPilotRole");
@@ -593,7 +656,6 @@
         sessionStorage.removeItem("pilotRegistrationRole");
         sessionStorage.removeItem("pilotRegistrationName");
         SESSION_KEYS.forEach(function(key){try{sessionStorage.removeItem(key);}catch(e){}});
-      LOCAL_SESSION_KEYS.forEach(function(key){try{localStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
       setRoleWorkspaceIsolation(false);
@@ -611,7 +673,7 @@
       }
       try{history.replaceState({pacificEducationSignedOut:true},"","#pacificEducationIdentityRegistration");}catch(e){}
       hideProtected();
-      speak("You are signed out. User Registration is ready for the next user.");
+      speak("You are signed out. Saved registration and learning progress are retained on this device. The registration and sign-in entry is ready.");
     };
 
     hideApplicationChildren(app,shell);
