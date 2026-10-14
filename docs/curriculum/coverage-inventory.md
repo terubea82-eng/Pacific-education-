@@ -101,3 +101,18 @@ These official Ministry publications provide useful starting points for the mapp
 - Distinguish the document's publication date from when it was indexed or uploaded online.
 - If the current applicable document cannot be verified, mark the pathway `awaiting_official_source_verification` and do not describe its content as Fiji Ministry-curriculum-aligned.
 - Official policy context and inclusive education guidance support design decisions but do not replace the specific syllabus/learning outcomes for each subject and level.
+
+
+## Additional official-status finding — National Curriculum Framework review
+
+A further official-source check found that the Fiji Government's **7 October 2025 Cabinet decisions** state that Cabinet endorsed a review of the **2013 Fiji National Curriculum Framework (FNCF)**. This is important version-control context: the 2013 framework should not automatically be treated as unchanged or as the final current framework for new mapping. The announcement confirms endorsement of a review; it does **not** establish that a revised framework has since been published or specify its effective date.
+
+- [Fiji Government — 14th Cabinet Meeting Decisions, 7 October 2025](https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/): review of the 2013 FNCF endorsed.
+- [Ministry of Education Pre-Primary Education Policy](https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf): states that the National Curriculum Framework sets out curriculum philosophy and structure from early childhood to Year 13, and identifies *Na Noda Mataniciva* as the national curriculum guidelines for ages 3–6.
+- [Ministry of Education Annual Report 2022–2023](https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf): records curriculum-review activity for selected Year 12 and Year 13 subjects. This is evidence of review work in that reporting period, not confirmation of the latest syllabus version for every subject.
+
+### Required follow-up
+
+- Ask the Ministry/Curriculum Advisory Services or verify its official publications for the outcome and publication date of the FNCF review.
+- For every syllabus, record whether the source is current, under review, superseded, or not yet verified. Do not infer current status from an old document's continued availability online.
+- Keep the ECE–Year 13 pathway and all individual subject/outcome mappings marked **awaiting official source verification** until the applicable version is confirmed.
