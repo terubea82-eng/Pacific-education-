@@ -98,6 +98,13 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
     const page = document.getElementById("peSequentialPage");
     if (shell) { shell.hidden = false; shell.style.display = "block"; shell.removeAttribute("aria-hidden"); }
+    // This test isolates mandatory-field guidance, not the final sign-out page.
+    // Hide the workspace sign-out action so its higher-priority guidance cannot
+    // mask the required-field focus being asserted below.
+    const signOut = document.getElementById("peSequentialSignOutButton");
+    if (signOut) signOut.hidden = true;
+    const signOutYes = document.getElementById("peSequentialSignOutYes");
+    if (signOutYes) signOutYes.hidden = true;
     if (page) {
       // Make the active page and every ancestor genuinely visible. The
       // runtime guide checks computed visibility, not only the page's own
