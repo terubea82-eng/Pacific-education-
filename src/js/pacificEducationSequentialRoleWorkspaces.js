@@ -14,9 +14,6 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["studentStartLearning","Start Learning"],
-      ["studentAssignedClassContext","My Assigned Class / Year / Teacher"],
-      ["learningPlatform","Learning Tools"],
       ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
       ["pacificEducationInitialCapabilityResult","Capability Result"],
       ["levelSelection","Class / Level"],
@@ -537,7 +534,9 @@
       event.stopImmediatePropagation();
       if(clicked.disabled) return;
       if(index<sequence.length-1){
-        if(sequence[index][0]==="assessments" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+        /* Complete the full daily cycle before advancing to the next day.
+           Curriculum Coverage and My Progress are required parts of every day. */
+        if(sequence[index][0]==="pacificEducationStudentProgressDashboard" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
           if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
         }
         index++;
