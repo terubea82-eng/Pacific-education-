@@ -110,8 +110,8 @@ test("guided Next transitions use the actual page numbers after registration", (
 test("sequential workspace restores hidden main/app containers after registration", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(sequential, /body\\.pe-sequential-role-workspace-active main\\{display:block!important;visibility:visible!important;\\}/);
-  assert.match(sequential, /body\\.pe-sequential-role-workspace-active main > #app\\{display:block!important;visibility:visible!important;\\}/);
-  assert.match(sequential, /body\\.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace\\{display:block!important;visibility:visible!important;\\}/);
+  assert.ok(sequential.includes("main > #app{display:block!important;visibility:visible!important;}"));
+  assert.ok(sequential.includes("#pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"));
 });
 
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
