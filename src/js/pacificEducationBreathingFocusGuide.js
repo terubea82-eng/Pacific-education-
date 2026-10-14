@@ -35,7 +35,7 @@ function markNextReady(root){var n=nextButton(root);if(n&&!n.disabled&&!n.hidden
 function focusEntry(){
  var gateway=document.querySelector("body.pacedu-entry-mode .pacedu-entry-page");if(!visible(gateway))return false;
  var list=controls(gateway),target=null;
- for(var i=0;i<list.length;i++){var el=list[i];if(el.matches("input,select,textarea")){if(!String(el.value||"").trim()){target=el;break;}completed.add(el);}else if(!completed.has(el)){target=el;break;}}
+ for(var i=0;i<list.length;i++){var el=list[i];if(el.matches("input,select,textarea")){var value=String(el.value||"").trim();var invalid=typeof el.checkValidity==="function"&&!el.checkValidity();var mandatory=el.required||el.getAttribute("aria-required")==="true";if(!value||(mandatory&&invalid)){target=el;break;}completed.add(el);}else if(!completed.has(el)){target=el;break;}}
  if(target)return showFocus(target,target.matches("input,select,textarea")?"CURRENT STEP — Complete this box, then continue.":"CURRENT STEP — Tap this highlighted control.",gateway);
  clearVisuals();markNextReady(gateway);return true;
 }
@@ -48,7 +48,7 @@ function focusRegistration(){
  else if(visible(language)&&!String(language.value||"").trim()){target=language;text="STEP 2 — Select your language here.";}
  else if(visible(open)&&!selected){target=open;text="STEP 3 — Tap to open User Registration.";}
  else if(visible(cards)&&!selected){target=cards;text="STEP 4 — Choose one role in this highlighted box.";}
- else if(visible(name)&&!String(name.value||"").trim()){target=name;text="STEP 5 — Enter a display name or test name.";}
+ else if(visible(name)&&(!String(name.value||"").trim()||(name.required&&typeof name.checkValidity==="function"&&!name.checkValidity()))){target=name;text="STEP 5 — Enter a valid display name or test name.";}
  else if(visible(save)&&!save.disabled){var saved=false;try{saved=!!sessionStorage.getItem("pacificEducationPilotRegistered");}catch(e){}if(!saved){target=save;text="STEP 6 — Save Pilot Registration, then wait for confirmation.";}}
  if(target)return showFocus(target,text,reg);
  var n=get("registrationNextButton");if(n&&!n.disabled){clearVisuals();n.classList.add(READY_CLASS);n.setAttribute("data-pe-breathing-next-ready","true");}return true;
