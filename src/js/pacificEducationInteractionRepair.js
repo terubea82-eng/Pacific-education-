@@ -426,10 +426,80 @@
     var daily = document.getElementById("dailyLesson");
     var activityPanel = document.getElementById("dailyLessonActivity");
     var roster = window.PacificEducationTeacherClassRosterContext;
-    if (!daily || !activityPanel || !roster || typeof roster.getClassId !== "function" || typeof roster.getClass !== "function") return false;
-    var classId = String(roster.getClassId() || "").trim();
-    if (!classId || !roster.getClass(classId)) return false;
+    if (!daily || !activityPanel) return false;
     var textNow = String(activityPanel.textContent || "").trim();
+    var hasRosterApi = !!roster && typeof roster.getClassId === "function" && typeof roster.getClass === "function";
+    var classId = hasRosterApi ? String(roster.getClassId() || "").trim() : "";
+    var classRecord = classId && hasRosterApi ? roster.getClass(classId) : null;
+
+    /* Never leave the learner staring at an endless loading message just because
+       a teacher has not assigned a class yet. Offer a clearly labelled local demo
+       practice instead; it is not an assigned lesson and does not affect formal
+       assessment or teacher-recorded progress. */
+    if (!classRecord) {
+      if (textNow && !/loading today's learning activity/i.test(textNow) &&
+          activityPanel.getAttribute("data-pacific-demo-fallback") === "shown") return true;
+      activityPanel.innerHTML = "";
+      activityPanel.setAttribute("data-pacific-demo-fallback", "shown");
+      var demo = document.createElement("section");
+      demo.setAttribute("aria-label", "Unassigned daily practice demonstration");
+      var heading = document.createElement("h3");
+      heading.textContent = "Starter Practice — Demo Only";
+      demo.appendChild(heading);
+      var notice = document.createElement("p");
+      notice.textContent = "No teacher-assigned class is connected yet. You can practise with this sample question; it is not an assigned lesson and will not be sent as formal assessment.";
+      demo.appendChild(notice);
+      var question = document.createElement("p");
+      question.textContent = "Which word is a greeting?";
+      demo.appendChild(question);
+      var choices = document.createElement("div");
+      choices.setAttribute("role", "group");
+      choices.setAttribute("aria-label", "Choose an answer");
+      ["Hello", "Pencil", "Seven", "Green"].forEach(function(value) {
+        var label = document.createElement("label");
+        label.style.cssText = "display:block;margin:8px 0;padding:10px;border:1px solid currentColor;border-radius:6px;";
+        var input = document.createElement("input");
+        input.type = "radio";
+        input.name = "pacificDemoGreetingAnswer";
+        input.value = value;
+        input.style.marginRight = "8px";
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(value));
+        choices.appendChild(label);
+      });
+      demo.appendChild(choices);
+      var submit = document.createElement("button");
+      submit.type = "button";
+      submit.textContent = "Check Demo Answer";
+      submit.style.cssText = "padding:10px 14px;font-weight:700;";
+      demo.appendChild(submit);
+      var feedback = document.createElement("p");
+      feedback.setAttribute("role", "status");
+      feedback.setAttribute("aria-live", "polite");
+      demo.appendChild(feedback);
+      submit.addEventListener("click", function() {
+        var selected = demo.querySelector('input[name="pacificDemoGreetingAnswer"]:checked');
+        if (!selected) {
+          feedback.textContent = "Choose one answer first.";
+          return;
+        }
+        var correct = selected.value === "Hello";
+        feedback.textContent = correct ? "Correct. Hello is a greeting. Demo practice complete." : "Not quite. Try again: a greeting is something you say when meeting someone.";
+        if (correct) {
+          try {
+            localStorage.setItem("pacificEducationDemoDailyPracticeV1", JSON.stringify({
+              day: Number(localStorage.getItem("currentDayNumber") || "1"),
+              activity: "greeting-word",
+              completed: true,
+              demoOnly: true,
+              completedAt: new Date().toISOString()
+            }));
+          } catch (e) {}
+        }
+      });
+      activityPanel.appendChild(demo);
+      return true;
+    }
     if (textNow && textNow.indexOf("Loading today's learning activity") === -1) return true;
     var day = 1;
     try {
