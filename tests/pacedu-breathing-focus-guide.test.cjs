@@ -123,7 +123,7 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     // guide on the next frame so the test observes the rendered fixture.
     window.requestAnimationFrame(() => window.PacificEducationBreathingFocusGuide.refresh());
   });
-  await expect.poll(() => page.evaluate(() => { const input = document.getElementById("mandatoryProbe"); const page = document.getElementById("peSequentialPage"); return !!((input && input.classList.contains("pacific-breathing-focus")) || (page && page.querySelector(".pacific-breathing-focus")) || (input && input.closest(".pacific-breathing-focus"))); })).toBe(true);
+  await expect.poll(() => page.evaluate(() => { const shell = document.getElementById("pacificEducationSequentialRoleWorkspace"); const input = document.getElementById("mandatoryProbe"); const focus = shell && shell.querySelector(".pacific-breathing-focus"); const label = focus && focus.querySelector(".pacific-breathing-focus-label"); return !!(focus && label && /MANDATORY STEP/.test(label.textContent) && input && (focus === input || focus.contains(input) || input.closest(".pacific-breathing-focus") === focus); })).toBe(true);
   await expect(page.locator("#peSequentialNext")).not.toHaveClass(/pacific-next-breathing-ready/);
   const pageTitleBeforeInvalidNext = await page.locator("#peSequentialTitle").textContent();
   await page.locator("#peSequentialNext").evaluate(button => button.click());
