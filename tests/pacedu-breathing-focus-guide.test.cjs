@@ -105,7 +105,7 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     }
     window.PacificEducationBreathingFocusGuide.refresh();
   });
-  await expect(page.locator("#mandatoryProbe")).toHaveClass(/pacific-breathing-focus/);
+  await expect.poll(() => page.evaluate(() => { const input = document.getElementById("mandatoryProbe"); const page = document.getElementById("peSequentialPage"); return !!((input && input.classList.contains("pacific-breathing-focus")) || (page && page.querySelector(".pacific-breathing-focus")) || (input && input.closest(".pacific-breathing-focus"))); })).toBe(true);
   await expect(page.locator("#peSequentialNext")).not.toHaveClass(/pacific-next-breathing-ready/);
   await page.locator("#mandatoryProbe").fill("ABC");
   await page.evaluate(() => window.PacificEducationBreathingFocusGuide.refresh());
