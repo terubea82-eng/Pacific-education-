@@ -81,3 +81,23 @@ Files inspected on main:
 ## Completion gate
 
 Do not claim “complete Fiji curriculum coverage” until every required level/subject has an official-source mapping, usable activity sequences, tested accessibility/differentiation, educator review and recorded validation. CI passing is not proof of physical-device behaviour or Ministry approval.
+
+
+## Official-source register — initial verification
+
+These official Ministry publications provide useful starting points for the mapping exercise. They are **framework/policy references, not proof that every current syllabus or subject outcome has been collected**. Check for newer or replacement documents before mapping specific activities.
+
+| Source | What it establishes for the audit | Status |
+|---|---|---|
+| [Na Noda Mataniciva — Kindergarten Curriculum Guidelines for the Fiji Islands](https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf) | Official early-childhood/kindergarten guideline; the document covers ages 3–6 and foundation areas including physical development, health and wellbeing; learning to know; language, literacy and communication; living and learning together; aesthetics, creativity and the arts; spiritual and moral development. | Located; verify current applicability and any replacement |
+| [Fiji National Education Policy Framework 2024–2033](https://www.education.gov.fj/wp-content/uploads/2024/02/2023-Denarau-Declration.pdf) | Policy context for education and curriculum. | Located; map relevant policy, not individual lesson outcomes |
+| [Teacher's Guide to Disability-Inclusive Education in Fiji](https://www.education.gov.fj/wp-content/uploads/2024/09/SIE-guide-high-res-web-version-1.pdf) | Official inclusion guidance; references the National Curriculum Framework and flexible teaching and assessment approaches, including cultural and multilingual inclusion. | Located; use for accessibility/inclusion design, not as a subject syllabus |
+| [Pre-Primary Education Policy](https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf) | Defines pre-primary/kindergarten context and states that the National Curriculum Framework structures curriculum from early childhood through Year 13. | Located; verify any current updates |
+
+### Source verification still required before curriculum claims
+
+- Obtain/verify the current National Curriculum Framework document and all applicable syllabus, scope-and-sequence and teacher-guide documents by year/level and subject.
+- Record each document's exact title, publisher, version/publication date, effective status, URL and the exact outcome/reference mapped to an activity.
+- Distinguish the document's publication date from when it was indexed or uploaded online.
+- If the current applicable document cannot be verified, mark the pathway `awaiting_official_source_verification` and do not describe its content as Fiji Ministry-curriculum-aligned.
+- Official policy context and inclusive education guidance support design decisions but do not replace the specific syllabus/learning outcomes for each subject and level.
