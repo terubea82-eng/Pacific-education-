@@ -617,6 +617,8 @@
     hideApplicationChildren(app,shell);
     setRoleWorkspaceIsolation(true);
     shell.hidden=false;
+    shell.style.setProperty("display","block","important");
+    shell.style.setProperty("visibility","visible","important");
     try{history.replaceState({pacificEducationSequential:true,role:role,index:0},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
     renderPage();
     hideProtected();

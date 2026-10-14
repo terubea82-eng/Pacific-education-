@@ -883,7 +883,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     const workspace = page.locator("#pacificEducationSequentialRoleWorkspace");
     await expect(workspace).toBeVisible();
     await expect(workspace).toHaveAttribute("data-pe-role", expectedWorkspace);
-    await expect(page.locator("body")).not.toHaveClass(/pe-guided-flow/);
+    await expect(page.locator("body")).not.toHaveClass(/(?:^|\s)pe-guided-flow(?:\s|$)/);
     await expect(page.locator("body")).not.toHaveAttribute("data-pe-flow-step");
     await expect(page.locator("#peSequentialBack")).toBeVisible();
     await expect(page.locator("#peSequentialNext")).toBeVisible();

@@ -107,6 +107,16 @@ test("guided Next transitions use the actual page numbers after registration", (
 });
 
 
+test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
+  const registration = fs.readFileSync("src/js/pacificEducationMandatoryBoxSequence.js", "utf8");
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(registration, /body\.classList\.add\("pe-guided-flow-ended"\)/);
+  assert.match(registration, /paceduWorkspaceHandoffRecovery/);
+  assert.match(registration, /paceduWorkspaceHandoffRetry/);
+  assert.match(registration, /openedWorkspace\.style\.setProperty\("display","block","important"\)/);
+  assert.match(sequential, /shell\.style\.setProperty\("display","block","important"\)/);
+});
+
 test("Learning Tools stays fail-closed throughout guided entry and registration handoff", () => {
   assert.doesNotMatch(boxActivation, /"learningPlatform",/);
   assert.match(controller, /function lockLearningToolsDuringEntry\(\)/);
