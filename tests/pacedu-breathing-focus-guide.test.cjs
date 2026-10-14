@@ -77,3 +77,38 @@ test("breathing guide activates for a sequential teacher workspace and final sig
   await expect(page.locator("#peSequentialSignOutButton")).toContainText("Sign Out");
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
+
+
+test("mandatory fields block the green Next cue while optional fields do not", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded", timeout: 60000 });
+  await expect.poll(() => page.evaluate(() => window.PacificEducationBreathingFocusGuide?.version), { timeout: 8000 }).toBe("1.2.0-mandatory-fields");
+  await page.evaluate(() => {
+    try {
+      sessionStorage.setItem("pacificEducationPilotRegistered", "true");
+      sessionStorage.setItem("pacificEducationPilotRole", "teacher");
+      sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({ name: "Pilot Teacher", role: "teacher", pilotOnly: true }));
+    } catch (_) {}
+    window.PacificEducationSequentialRoleWorkspaces.build("teacher");
+    document.body.classList.remove("pacedu-entry-mode");
+    const entry = document.querySelector(".pacedu-entry-page");
+    if (entry) entry.hidden = true;
+    const registration = document.getElementById("pacificEducationIdentityRegistration");
+    if (registration) registration.hidden = true;
+    const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    const page = document.getElementById("peSequentialPage");
+    if (shell) { shell.hidden = false; shell.style.display = "block"; shell.removeAttribute("aria-hidden"); }
+    if (page) {
+      page.hidden = false;
+      page.style.display = "block";
+      page.innerHTML = '<label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"><label for="optionalProbe">Optional note</label><input id="optionalProbe">';
+    }
+    window.PacificEducationBreathingFocusGuide.refresh();
+  });
+  await expect(page.locator("#mandatoryProbe").locator("xpath=..")).toHaveClass(/pacific-breathing-focus/);
+  await expect(page.locator("#peSequentialNext")).not.toHaveClass(/pacific-next-breathing-ready/);
+  await page.locator("#mandatoryProbe").fill("ABC");
+  await page.evaluate(() => window.PacificEducationBreathingFocusGuide.refresh());
+  await expect(page.locator("#peSequentialNext")).toHaveClass(/pacific-next-breathing-ready/);
+  await expect(page.locator("#optionalProbe")).toHaveValue("");
+});
