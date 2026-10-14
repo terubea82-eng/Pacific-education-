@@ -99,11 +99,25 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     const page = document.getElementById("peSequentialPage");
     if (shell) { shell.hidden = false; shell.style.display = "block"; shell.removeAttribute("aria-hidden"); }
     if (page) {
-      page.hidden = false;
+      // Make the active page and every ancestor genuinely visible. The
+      // runtime guide checks computed visibility, not only the page's own
+      // hidden/aria-hidden flags, so route CSS on a wrapper can otherwise
+      // leave the fixture unreachable.
+      let node = page;
+      while (node && node !== document.body) {
+        node.hidden = false;
+        node.removeAttribute("hidden");
+        node.removeAttribute("aria-hidden");
+        node.style.removeProperty("display");
+        node.style.removeProperty("visibility");
+        node = node.parentElement;
+      }
       page.style.display = "block";
-      page.removeAttribute("aria-hidden");
+      page.style.visibility = "visible";
       page.innerHTML = '<label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"><label for="optionalProbe">Optional note</label><input id="optionalProbe">';
     }
+    // Re-run after layout has applied the visibility changes and explicitly
+    // verify that the required control is visible before checking guidance.
     window.PacificEducationBreathingFocusGuide.refresh();
   });
   await expect.poll(() => page.evaluate(() => { const input = document.getElementById("mandatoryProbe"); const page = document.getElementById("peSequentialPage"); return !!((input && input.classList.contains("pacific-breathing-focus")) || (page && page.querySelector(".pacific-breathing-focus")) || (input && input.closest(".pacific-breathing-focus"))); })).toBe(true);
