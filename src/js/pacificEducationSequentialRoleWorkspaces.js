@@ -14,9 +14,6 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["studentStartLearning","Start Learning"],
-      ["studentAssignedClassContext","My Assigned Class / Year / Teacher"],
-      ["learningPlatform","Learning Tools"],
       ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
       ["pacificEducationInitialCapabilityResult","Capability Result"],
       ["levelSelection","Class / Level"],
@@ -146,13 +143,41 @@
   function saveSequenceOverrides(){
     try{localStorage.setItem(SEQUENCE_STORAGE_KEY,JSON.stringify({version:"1.0.0",roles:ROLE_SEQUENCE_OVERRIDES}));return true;}catch(e){return false;}
   }
+  var STUDENT_MANDATORY_STEPS=[
+    "pacificEducationInitialCapabilityTest",
+    "pacificEducationInitialCapabilityResult",
+    "levelSelection",
+    "subjectSelection",
+    "termSelection",
+    "capabilitySelection",
+    "dailyLesson",
+    "dailyLessonPracticeStage",
+    "assessments",
+    "pacificEducationCoverageDashboard",
+    "pacificEducationStudentProgressDashboard"
+  ];
+  function studentSequenceHasMandatoryOrder(sequence){
+    if(!Array.isArray(sequence)) return false;
+    var cursor=-1;
+    for(var i=0;i<STUDENT_MANDATORY_STEPS.length;i++){
+      var nextIndex=sequence.findIndex(function(step){return Array.isArray(step)&&step[0]===STUDENT_MANDATORY_STEPS[i];});
+      if(nextIndex<=cursor) return false;
+      cursor=nextIndex;
+    }
+    return true;
+  }
   function getRoleSequence(role){
     var sequence=ROLE_SEQUENCE_OVERRIDES[role]||ROLE_SEQUENCE_DEFAULTS[role];
+    /* Old saved sequence overrides must not silently bypass mandatory student steps. */
+    if(role==="student" && !studentSequenceHasMandatoryOrder(sequence)) sequence=ROLE_SEQUENCE_DEFAULTS.student;
     return sequence?cloneSequence(sequence):[];
   }
   function setRoleSequence(role,sequence){
     var check=validateSequence(sequence);
     if(!check.valid) return check;
+    if(role==="student" && !studentSequenceHasMandatoryOrder(sequence)){
+      return {valid:false,errors:["Student sequence must retain the mandatory capability test, result, class/subject/term, daily activity, practice, assessment, curriculum coverage, and progress steps in order."]};
+    }
     ROLE_SEQUENCE_OVERRIDES[role]=cloneSequence(sequence);
     saveSequenceOverrides();
     return {valid:true,sequence:getRoleSequence(role)};
@@ -537,7 +562,9 @@
       event.stopImmediatePropagation();
       if(clicked.disabled) return;
       if(index<sequence.length-1){
-        if(sequence[index][0]==="assessments" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+        /* Complete the full daily cycle before advancing to the next day.
+           Curriculum Coverage and My Progress are required parts of every day. */
+        if(sequence[index][0]==="pacificEducationStudentProgressDashboard" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
           if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
         }
         index++;

@@ -117,18 +117,32 @@ test("Learning Tools stays fail-closed throughout guided entry and registration 
 });
 
 
-test("student sequential workspace begins with Start Learning and assigned-class context", () => {
+test("student sequential workspace begins with mandatory Capability Test and preserves the required learning flow", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   const student = sequential.match(/"student":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(student, "student default sequence must exist");
   const ids = [...student[1].matchAll(/\["([^"]+)","([^"]+)"\]/g)].map((match) => match[1]);
-  assert.deepEqual(ids.slice(0, 4), ["studentStartLearning", "studentAssignedClassContext", "learningPlatform", "pacificEducationInitialCapabilityTest"]);
-  assert.ok(ids.includes("dailyLesson"), "student sequence must include Daily Activities");
-  assert.ok(ids.includes("dailyLessonPracticeStage"), "student sequence must include Practice");
-  assert.ok(ids.includes("assessments"), "student sequence must include Assessments");
-  assert.ok(ids.includes("pacificEducationStudentProgressDashboard"), "student sequence must include My Progress");
-  assert.match(sequential, /item\[0\]==="studentStartLearning"/);
-  assert.match(sequential, /item\[0\]==="studentAssignedClassContext"/);
+  assert.deepEqual(ids.slice(0, 3), ["pacificEducationInitialCapabilityTest", "pacificEducationInitialCapabilityResult", "levelSelection"]);
+  const required = [
+    "pacificEducationInitialCapabilityTest",
+    "pacificEducationInitialCapabilityResult",
+    "levelSelection",
+    "subjectSelection",
+    "termSelection",
+    "capabilitySelection",
+    "dailyLesson",
+    "dailyLessonPracticeStage",
+    "assessments",
+    "pacificEducationCoverageDashboard",
+    "pacificEducationStudentProgressDashboard"
+  ];
+  let previous = -1;
+  for (const id of required) {
+    const index = ids.indexOf(id);
+    assert.ok(index > previous, "mandatory Student step must exist in order: " + id);
+    previous = index;
+  }
+  assert.match(sequential, /studentSequenceHasMandatoryOrder/);
   assert.match(sequential, /does not verify an individual assignment/);
 });
 
