@@ -108,17 +108,20 @@ test("mandatory fields block the green Next cue while optional fields do not", a
         node.hidden = false;
         node.removeAttribute("hidden");
         node.removeAttribute("aria-hidden");
-        node.style.removeProperty("display");
-        node.style.removeProperty("visibility");
+        // A hidden utility class can apply display:none!important. Inline
+        // important styles make this isolated fixture visible regardless of
+        // the entry-route stylesheet while leaving production code untouched.
+        node.style.setProperty("display", "block", "important");
+        node.style.setProperty("visibility", "visible", "important");
         node = node.parentElement;
       }
-      page.style.display = "block";
-      page.style.visibility = "visible";
+      page.style.setProperty("display", "block", "important");
+      page.style.setProperty("visibility", "visible", "important");
       page.innerHTML = '<label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"><label for="optionalProbe">Optional note</label><input id="optionalProbe">';
     }
-    // Re-run after layout has applied the visibility changes and explicitly
-    // verify that the required control is visible before checking guidance.
-    window.PacificEducationBreathingFocusGuide.refresh();
+    // Let the browser apply visibility and layout first, then refresh the
+    // guide on the next frame so the test observes the rendered fixture.
+    window.requestAnimationFrame(() => window.PacificEducationBreathingFocusGuide.refresh());
   });
   await expect.poll(() => page.evaluate(() => { const input = document.getElementById("mandatoryProbe"); const page = document.getElementById("peSequentialPage"); return !!((input && input.classList.contains("pacific-breathing-focus")) || (page && page.querySelector(".pacific-breathing-focus")) || (input && input.closest(".pacific-breathing-focus"))); })).toBe(true);
   await expect(page.locator("#peSequentialNext")).not.toHaveClass(/pacific-next-breathing-ready/);
