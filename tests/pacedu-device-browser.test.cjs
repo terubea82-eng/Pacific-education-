@@ -853,6 +853,13 @@ test("save confirmation then Next opens the selected role workspace for every re
       localStorage.removeItem("pacificEducationPilotRole");
       sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
     });
+    if (expectedWorkspace === "student") {
+      // A stale locally saved sequence must not bypass mandatory Student steps.
+      await page.evaluate(() => localStorage.setItem("paceduSequenceAdjustmentsV1", JSON.stringify({
+        version: "1.0.0",
+        roles: { student: [["dailyLesson", "Day 1"], ["pacificEducationInitialCapabilityTest", "Test"]] }
+      })));
+    }
     await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
     await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
     await page.locator("#registrationNextButton").click();
