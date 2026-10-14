@@ -82,6 +82,6 @@ function init(){
  // Catch navigation updates without creating a MutationObserver or changing the protected speech engine.
  if(!refreshTimer)refreshTimer=window.setInterval(function(){var page=get("peSequentialPage"),title=get("peSequentialTitle"),key=page&&title?title.textContent+":"+page.innerHTML.length:"";if(key!==lastPageKey||!activeTarget||!visible(activeTarget))refresh();},700);
 }
-window.PacificEducationBreathingFocusGuide={version:"1.1.1-all-pages-no-observer",refresh:refresh,clear:clearVisuals};
+window.PacificEducationBreathingFocusGuide={version:"1.2.0-mandatory-fields",refresh:refresh,clear:clearVisuals};
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })(window,document);
