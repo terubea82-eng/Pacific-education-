@@ -965,7 +965,7 @@ test("student registration handoff shows workspace navigation and daily activiti
   await shell.locator('[data-pe-cap-answer="a"]').fill("a");
   await shell.locator('[data-pe-cap-answer="5"]').fill("5");
   await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
-  await shell.getByRole("button", { name: /Submit Test/ }).click();
+  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
   await shell.locator("#peSequentialNext").click();
   await shell.locator("#peSequentialNext").click();
 
