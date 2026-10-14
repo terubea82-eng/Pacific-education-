@@ -98,14 +98,39 @@ test("mandatory fields block the green Next cue while optional fields do not", a
     const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
     const page = document.getElementById("peSequentialPage");
     if (shell) { shell.hidden = false; shell.style.display = "block"; shell.removeAttribute("aria-hidden"); }
+    // This test isolates mandatory-field guidance, not the final sign-out page.
+    // Hide the workspace sign-out action so its higher-priority guidance cannot
+    // mask the required-field focus being asserted below.
+    const signOut = document.getElementById("peSequentialSignOutButton");
+    if (signOut) signOut.hidden = true;
+    const signOutYes = document.getElementById("peSequentialSignOutYes");
+    if (signOutYes) signOutYes.hidden = true;
     if (page) {
-      page.hidden = false;
-      page.style.display = "block";
-      page.innerHTML = '<label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"><label for="optionalProbe">Optional note</label><input id="optionalProbe">';
+      // Make the active page and every ancestor genuinely visible. The
+      // runtime guide checks computed visibility, not only the page's own
+      // hidden/aria-hidden flags, so route CSS on a wrapper can otherwise
+      // leave the fixture unreachable.
+      let node = page;
+      while (node && node !== document.body) {
+        node.hidden = false;
+        node.removeAttribute("hidden");
+        node.removeAttribute("aria-hidden");
+        // A hidden utility class can apply display:none!important. Inline
+        // important styles make this isolated fixture visible regardless of
+        // the entry-route stylesheet while leaving production code untouched.
+        node.style.setProperty("display", "block", "important");
+        node.style.setProperty("visibility", "visible", "important");
+        node = node.parentElement;
+      }
+      page.style.setProperty("display", "block", "important");
+      page.style.setProperty("visibility", "visible", "important");
+      page.innerHTML = '<div class="pe-user-box"><label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"></div><div class="pe-user-box"><label for="optionalProbe">Optional note</label><input id="optionalProbe"></div>';
     }
-    window.PacificEducationBreathingFocusGuide.refresh();
+    // Let the browser apply visibility and layout first, then refresh the
+    // guide on the next frame so the test observes the rendered fixture.
+    window.requestAnimationFrame(() => window.PacificEducationBreathingFocusGuide.refresh());
   });
-  await expect.poll(() => page.evaluate(() => { const input = document.getElementById("mandatoryProbe"); const page = document.getElementById("peSequentialPage"); return !!((input && input.classList.contains("pacific-breathing-focus")) || (page && page.querySelector(".pacific-breathing-focus")) || (input && input.closest(".pacific-breathing-focus"))); })).toBe(true);
+  await expect.poll(() => page.evaluate(() => { const shell = document.getElementById("pacificEducationSequentialRoleWorkspace"); const input = document.getElementById("mandatoryProbe"); const focus = shell && shell.querySelector(".pacific-breathing-focus"); const label = shell && shell.querySelector(".pacific-breathing-focus-label"); return !!(focus && label && /MANDATORY STEP/.test(label.textContent) && input && (focus === input || focus.contains(input) || input.closest(".pacific-breathing-focus") === focus)); })).toBe(true);
   await expect(page.locator("#peSequentialNext")).not.toHaveClass(/pacific-next-breathing-ready/);
   const pageTitleBeforeInvalidNext = await page.locator("#peSequentialTitle").textContent();
   await page.locator("#peSequentialNext").evaluate(button => button.click());
