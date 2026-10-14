@@ -117,7 +117,7 @@ test("mandatory fields block the green Next cue while optional fields do not", a
       }
       page.style.setProperty("display", "block", "important");
       page.style.setProperty("visibility", "visible", "important");
-      page.innerHTML = '<label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"><label for="optionalProbe">Optional note</label><input id="optionalProbe">';
+      page.innerHTML = '<div class="pe-user-box"><label for="mandatoryProbe">Required code</label><input id="mandatoryProbe" required pattern="[A-Z]{3}" value="bad"></div><div class="pe-user-box"><label for="optionalProbe">Optional note</label><input id="optionalProbe"></div>';
     }
     // Let the browser apply visibility and layout first, then refresh the
     // guide on the next frame so the test observes the rendered fixture.
