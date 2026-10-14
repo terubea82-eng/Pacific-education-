@@ -274,19 +274,19 @@
     if(!style){
       style=document.createElement("style");
       style.id="pacedu-role-workspace-isolation-style";
-      style.textContent=
-        /* A stale guided-flow rule can hide #app itself after registration. The workspace
-           cannot recover by showing only its child shell, so explicitly restore its
-           containing main/app surfaces while sequential workspace mode is active. */
-        "body.pe-sequential-role-workspace-active main{display:block!important;visibility:visible!important;}"+
-        "body.pe-sequential-role-workspace-active main > #app{display:block!important;visibility:visible!important;}"+
-        "body.pe-sequential-role-workspace-active #app{display:block!important;visibility:visible!important;}"+
-        "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
-        "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
-        "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
-        "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}";
       document.head.appendChild(style);
     }
+    /* Refresh the rules on every activation. A style element can survive a
+       repeated handoff/rebuild in the same page; leaving its old text in place
+       can retain stale guided-flow visibility rules and hide the new workspace. */
+    style.textContent=
+      "body.pe-sequential-role-workspace-active main{display:block!important;visibility:visible!important;}"+
+      "body.pe-sequential-role-workspace-active main > #app{display:block!important;visibility:visible!important;}"+
+      "body.pe-sequential-role-workspace-active #app{display:block!important;visibility:visible!important;}"+
+      "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
+      "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}";
     document.body.classList.toggle("pe-sequential-role-workspace-active",!!active);
   }
 
@@ -456,6 +456,18 @@
         if(item[0]==="pacificEducationExamCalendarSection" && window.PacificEducationRevisionExamRedistributionUI && typeof window.PacificEducationRevisionExamRedistributionUI.render==="function") window.PacificEducationRevisionExamRedistributionUI.render("pacificEducationExamCalendarSection");
         if(item[0]==="pacificEducationWeekendHolidaySupplementaryActivities" && window.PacificEducationPilotUserWorkspaces && typeof window.PacificEducationPilotUserWorkspaces.ensureWeekendHolidaySupplementarySection==="function") window.PacificEducationPilotUserWorkspaces.ensureWeekendHolidaySupplementarySection();
         target=document.getElementById(item[0]);
+      }
+
+      /* The pilot may be opened before the legacy lesson engine has created its
+         dailyLesson node. Create a real, local starter host for learner roles so
+         the Daily Activities panel can render instead of showing a dead-end
+         "not connected" page with Next disabled. */
+      if(!target && item[0]==="dailyLesson" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+        target=document.createElement("section");
+        target.id="dailyLesson";
+        target.setAttribute("aria-label","Daily learning activities");
+        target.innerHTML="<h3>Daily Learning Activities</h3><p>Choose a starter activity below. Your teacher can confirm your class, subject and term for this pilot.</p>";
+        app.appendChild(target);
       }
       if(target && PROTECTED[item[0]]) target=null;
       title.textContent="STEP "+(index+1)+" — "+(role==="student"?"Student":role==="blind-learner"?"Blind Learner":role==="deaf-learner"?"Deaf Learner":role.replace(/-/g," "))+" Workspace — "+item[1];
