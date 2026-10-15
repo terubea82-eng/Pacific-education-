@@ -330,9 +330,13 @@ function renderPageGuide(targetId){
 
 function enforceSingleVisiblePage(targetId, expectedStep){
   lockLearningToolsDuringEntry();
-  /* Re-assert the one-page contract after legacy registration handlers finish.
-     Some older handlers can restore display styles after the navigation click. */
-  if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)) return;
+  /* The active destination is the navigation authority. Legacy handlers may
+     overwrite the numeric step after Back; reject stale repairs by destination,
+     then restore the matching step for the still-current destination. */
+  if(document.body.getAttribute("data-pe-active-guided-page")!==targetId) return;
+  if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)){
+    document.body.setAttribute("data-pe-flow-step",String(expectedStep));
+  }
   document.body.classList.remove("pacedu-entry-mode");
   if(targetId!=="pacificEducationIdentityRegistration"){
     document.body.classList.remove("pacedu-registration-mode");
