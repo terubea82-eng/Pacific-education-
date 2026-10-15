@@ -432,6 +432,7 @@
     function renderPage(){
       restoreAllMovedTargets();
       var signOutArea=document.getElementById("peSequentialSignOut");
+      shell.removeAttribute("data-pe-final-signout");
       page.innerHTML="";
 
       /* Give every role-workspace page the same short, steady entrance used by
@@ -509,6 +510,7 @@
       next.textContent=index===sequence.length-1?"Finish":"➡️ Next"; next.classList.add("pacific-mandatory-next"); next.setAttribute("aria-label",index===sequence.length-1?"Finish workspace sequence":"Next to "+(sequence[index+1] ? sequence[index+1][1] : "next page"));
       next.hidden=false;
       if(item[0]==="paceduSignOutPage"){
+        shell.setAttribute("data-pe-final-signout","true");
         var signOutIntro=document.createElement("section");
         signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
         signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p>Your workspace is complete. This page will stay here until you deliberately choose to sign out.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
@@ -788,8 +790,8 @@
       if(!shell) return;
       /* Browser Back must not move away from the final Sign Out page.
          Reassert the final history state; only confirmed Sign Out exits it. */
-      if(index===sequence.length-1 && sequence[index] && sequence[index][0]==="paceduSignOutPage"){
-        try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
+      if(shell.getAttribute("data-pe-final-signout")==="true"){
+        try{history.pushState({pacificEducationSequential:true,role:getRole(),finalSignOut:true},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
         return;
       }
       var backButton=document.getElementById("peSequentialBack");
