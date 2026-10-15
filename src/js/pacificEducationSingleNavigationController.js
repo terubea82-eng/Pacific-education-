@@ -871,6 +871,8 @@ function init(){
   auditFeatures();
   observeGuidedPageIsolation();
   observeFeatureChanges();
+  /* Release the first-paint guard only after the single-page route and repair observers are ready. */
+  document.documentElement.setAttribute("data-pacedu-navigation-ready","true");
 }
 
 if(document.readyState==="loading"){
