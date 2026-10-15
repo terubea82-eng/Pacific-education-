@@ -65,7 +65,7 @@ test("first Welcome page stays isolated during startup with no legacy-page flick
   await page.addInitScript(() => {
     window.__paceduStartupPageLeaks = [];
     const selectors = [
-      "#paceduPageVision", "#paceduPageRules", "#pacificEducationIdentityRegistration",
+      "#pacificEducationWelcome", "#paceduPageVision", "#paceduPageRules", "#pacificEducationIdentityRegistration",
       "#prototypeAccess", "#levelSelection", "#subjectSelection", "#termSelection",
       "#capabilitySelection", "#dailyLesson", "#dailyLessonPracticeStage", "#assessments",
       "#teacherCalendarSection", "#learningPlatform"
