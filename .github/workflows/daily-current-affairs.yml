@@ -124,7 +124,7 @@ jobs:
           }).map((a, i) => {
             const applicable = subjects(a.title + ' ' + a.description);
             return {
-              id: 'OFFICIAL-' + Buffer.from(a.url).toString('base64url').slice(0, 48),
+              id: 'OFFICIAL-' + require('crypto').createHash('sha256').update(a.url).digest('hex').slice(0, 24),
               title: a.title,
               url: a.url,
               source: a.source,
