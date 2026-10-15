@@ -187,3 +187,13 @@ test("Sign Out preserves saved registration and daily progress while clearing ac
   assert.doesNotMatch(sequential, /LOCAL_SESSION_KEYS\.forEach\(function\(key\)\{try\{localStorage\.removeItem\(key\)/);
   assert.match(sequential, /registration and sign-in entry is ready/);
 });
+
+test("all guided pages use a short shared reduced-motion-aware entrance transition", () => {
+  assert.match(controller, /function installGuidedTransitionStyle\(\)/);
+  assert.match(controller, /function animateGuidedPageEntry\(targetId\)/);
+  assert.match(controller, /animation:paceduGuidedPageEnter 210ms/);
+  assert.match(controller, /@media\(prefers-reduced-motion:reduce\)/);
+  assert.match(controller, /animateGuidedPageEntry\(targetId\)/);
+  assert.match(controller, /animateGuidedPageEntry\(activePageId\)/);
+  assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
+});
