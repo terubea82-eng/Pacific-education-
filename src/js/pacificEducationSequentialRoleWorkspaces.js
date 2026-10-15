@@ -363,11 +363,11 @@
     shell.innerHTML="<h2 id=\"peSequentialTitle\"></h2><p id=\"peSequentialProgress\" role=\"status\" aria-live=\"polite\"></p><div style=\"display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;\"><button type=\"button\" id=\"peSequentialHear\" style=\"padding:12px 16px;font-weight:700;\">🔊 Hear This Page</button><button type=\"button\" id=\"peSequentialStop\" style=\"padding:12px 16px;font-weight:700;\">🔇 Stop Speech</button></div><div id=\"peSequentialPage\" tabindex=\"-1\"></div><div style=\"margin-top:18px;display:flex;justify-content:flex-start;gap:10px;flex-wrap:wrap;\"><button type=\"button\" id=\"peSequentialBack\" style=\"background:#fff;padding:14px 20px;font-weight:700;border-radius:8px;\">⬅️ Back</button><button type=\"button\" id=\"peSequentialNext\" style=\"background:#15803d;color:#fff;padding:14px 20px;font-weight:700;border-radius:8px;\">➡️ Next</button></div><p id=\"peSequentialStatus\" role=\"status\" aria-live=\"polite\"></p><div id=\"peSequentialSignOut\" hidden style=\"margin-top:28px;padding-top:18px;border-top:2px solid currentColor;\"><button type=\"button\" id=\"peSequentialSignOutButton\" style=\"padding:13px 18px;font-weight:700;\">🔴 Sign Out</button><div id=\"peSequentialSignOutConfirm\" hidden style=\"margin-top:10px;padding:12px;border:2px solid currentColor;\"><p>Are you sure you want to sign out?</p><button type=\"button\" id=\"peSequentialSignOutYes\">✓ Confirm Sign Out</button> <button type=\"button\" id=\"peSequentialSignOutNo\">Cancel</button></div></div>";
     var signOutTopArea=shell.querySelector("#peSequentialSignOut");
     if(signOutTopArea){
-      signOutTopArea.hidden=false;
-      signOutTopArea.style.cssText="position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end;align-items:flex-start;flex-wrap:wrap;gap:8px;margin:0 0 12px;padding:8px;background:#fff;border-bottom:1px solid #d1d5db;";
+      /* Keep Sign Out out of the top reading area until the final page is shown. */
+      signOutTopArea.hidden=true;
+      signOutTopArea.style.cssText="position:static;top:auto;z-index:auto;display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:12px 0 0;background:transparent;border-top:1px solid #d1d5db;";
       var signOutTopButton=signOutTopArea.querySelector("#peSequentialSignOutButton");
       if(signOutTopButton) signOutTopButton.style.cssText="background:#a62e35;color:#fff;padding:10px 14px;font-weight:700;border:0;border-radius:8px;";
-      shell.insertBefore(signOutTopArea,shell.firstChild);
     }
     app.insertBefore(shell,app.firstChild);
 
@@ -521,11 +521,17 @@
           signOutTopArea.style.position="static";
           signOutTopArea.style.top="auto";
           signOutTopArea.style.zIndex="auto";
+          signOutTopArea.hidden=true;
         }
         var signOutIntro=document.createElement("section");
         signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
         signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p>Your workspace is complete. This page will stay here until you deliberately choose to sign out.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
         page.appendChild(signOutIntro);
+        /* Place the Sign Out control after the reading text, never at the top of the workspace. */
+        if(signOutTopArea){
+          signOutTopArea.hidden=false;
+          page.appendChild(signOutTopArea);
+        }
         /* Final page is intentionally locked: no Back, Next, or Finish route.
            Only the explicit Sign Out button and confirmation can end the session. */
         back.hidden=true;
