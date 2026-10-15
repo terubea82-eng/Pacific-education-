@@ -677,7 +677,10 @@ test("registration must remain on Page 4 when the real save does not persist", a
   await expect(registration, "Language Next must stay on Registration").toBeVisible();
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   const teacher = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
-  await teacher.click({ force: true });
+  await expect(teacher, "Teacher role must be visible before the registration test selects it").toBeVisible();
+  await teacher.click();
+  await expect(teacher).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#registrationNextButton"), "Next must enable after a real role selection").toBeEnabled();
   await page.locator("#registrationNextButton").click();
   await expect(registration, "Role Next must stay on Registration").toBeVisible();
   await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
