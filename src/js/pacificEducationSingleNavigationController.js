@@ -431,7 +431,7 @@ function guided(step,targetId){
        Reassert the current destination during the short transition window. Each
        repair verifies the current step, so an old timer cannot override a newer
        user navigation. This is visibility-only and does not touch protected voice. */
-    [0,40,80,120,160,220,300,500,800,1100].forEach(function(delay){
+    [0,40,80,120,160,220,300,500,800,1100,1400,1800].forEach(function(delay){
       window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },delay);
     });
   }
