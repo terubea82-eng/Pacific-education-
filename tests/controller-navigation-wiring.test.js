@@ -191,6 +191,15 @@ test("Sign Out preserves saved registration and daily progress while clearing ac
   assert.match(sequential, /registration and sign-in entry is ready/);
 });
 
+test("role workspace pages use a short reduced-motion-aware entrance transition", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /pacedu-role-page-transition-style/);
+  assert.match(sequential, /animation:paceduRolePageEnter 190ms/);
+  assert.match(sequential, /@media\(prefers-reduced-motion:reduce\)/);
+  assert.match(sequential, /page\.classList\.add\("pacedu-role-page-enter"\)/);
+  assert.match(sequential, /Sign Out selected\. Confirm Sign Out or Cancel/);
+});
+
 test("all guided pages use a short shared reduced-motion-aware entrance transition", () => {
   assert.match(controller, /function installGuidedTransitionStyle\(\)/);
   assert.match(controller, /function animateGuidedPageEntry\(targetId\)/);
