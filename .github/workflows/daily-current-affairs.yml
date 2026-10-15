@@ -107,7 +107,12 @@ jobs:
             for (const a of found) {
               const title = String(a.title || '').trim();
               const url = String(a.url || '').trim();
-              if (!title || !approvedUrl(url)) continue;
+              const publishedTime = Date.parse(String(a.date || ''));
+              const cutoffTime = Date.now() - 180 * 24 * 60 * 60 * 1000;
+              // Treat this as current affairs, not an archive: exclude undated,
+              // malformed, older-than-180-day, and future-dated items.
+              if (!title || !approvedUrl(url) || !Number.isFinite(publishedTime) ||
+                  publishedTime < cutoffTime || publishedTime > Date.now() + 24 * 60 * 60 * 1000) continue;
               // Exclude navigation/noise while keeping education and broad public
               // interest stories useful for teacher-led current-affairs lessons.
               const relevance = (title + ' ' + a.description).toLowerCase();
@@ -127,7 +132,7 @@ jobs:
               title: a.title,
               url: a.url,
               source: a.source,
-              publishedAt: a.date,
+              publishedAt: new Date(Date.parse(a.date)).toISOString(),
               topic: 'Education and current affairs',
               educationalRelevance: 'Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.',
               ageSuitability: 'Teacher/reviewer screening required before student use.',
@@ -137,7 +142,7 @@ jobs:
               approved: false,
               sourceType: 'EDUCATIONAL_CURRENT_AFFAIRS'
             };
-          }).sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt))).slice(0, 30);
+          }).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 30);
           if (items.length === 0) {
             throw new Error('No eligible articles were parsed from official feeds; preserving existing feed.');
           }
