@@ -60,6 +60,54 @@ async function installMutationObserverWatchdog(page) {
   });
 }
 
+test("first Welcome page stays isolated during startup with no legacy-page flicker", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.addInitScript(() => {
+    window.__paceduStartupPageLeaks = [];
+    const selectors = [
+      "#paceduPageVision", "#paceduPageRules", "#pacificEducationIdentityRegistration",
+      "#prototypeAccess", "#levelSelection", "#subjectSelection", "#termSelection",
+      "#capabilitySelection", "#dailyLesson", "#dailyLessonPracticeStage", "#assessments",
+      "#teacherCalendarSection", "#learningPlatform"
+    ];
+    const inspect = () => {
+      if (document.documentElement.getAttribute("data-pacedu-navigation-ready") === "true") return;
+      const visible = selectors.filter(selector => {
+        const node = document.querySelector(selector);
+        if (!node) return false;
+        const style = getComputedStyle(node);
+        const rect = node.getBoundingClientRect();
+        return style.display !== "none" && style.visibility !== "hidden" &&
+          rect.width > 0 && rect.height > 0;
+      });
+      if (visible.length) window.__paceduStartupPageLeaks.push(visible);
+    };
+    const observer = new MutationObserver(inspect);
+    observer.observe(document.documentElement, {
+      childList: true, subtree: true, attributes: true,
+      attributeFilter: ["class", "style", "hidden", "aria-hidden", "data-pe-flow-step",
+        "data-pac-edu-entry-page", "data-pacedu-navigation-ready"]
+    });
+    document.addEventListener("DOMContentLoaded", inspect, { once: true });
+    window.__paceduStartupPageObserver = observer;
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "load" });
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await expect(page.locator("html")).toHaveAttribute("data-pacedu-navigation-ready", "true");
+  await page.waitForTimeout(1400);
+  const leaks = await page.evaluate(() => window.__paceduStartupPageLeaks || []);
+  expect(leaks, "legacy pages must stay hidden until the Welcome route is initialized").toEqual([]);
+  for (const selector of [
+    "#paceduPageVision", "#paceduPageRules", "#pacificEducationIdentityRegistration",
+    "#prototypeAccess", "#levelSelection", "#subjectSelection", "#termSelection",
+    "#capabilitySelection", "#dailyLesson", "#dailyLessonPracticeStage", "#assessments",
+    "#teacherCalendarSection", "#learningPlatform"
+  ]) {
+    await expect(page.locator(selector)).toBeHidden();
+  }
+});
+
 test("live pilot page loads at desktop size without uncaught page errors", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.stack || error.message));
