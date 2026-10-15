@@ -20,7 +20,7 @@ jobs:
           # but the existing JSON is never overwritten unless eligible articles
           # are successfully collected and validated.
           declare -A feeds=(
-            [unesco]="https://www.unesco.org/en/newsroom?format=rss"
+            [unesco]="https://connect.unevoc.unesco.org/unevoc_rss.xml"
             [who]="https://www.who.int/rss-feeds/news-english.xml"
             [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
           )
@@ -140,7 +140,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'Official UNESCO, WHO and UN News RSS/Atom feeds',
+            source: 'Official UNESCO-UNEVOC, WHO and UN News RSS/Atom feeds',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
