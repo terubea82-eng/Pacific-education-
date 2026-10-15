@@ -511,11 +511,17 @@
       if(item[0]==="paceduSignOutPage"){
         var signOutIntro=document.createElement("section");
         signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
-        signOutIntro.innerHTML="<h3>🔴 Sign Out</h3><p>Your role-specific workspace steps are complete. Use <strong>Sign Out</strong> when you have finished, or use Back to return to your previous workspace page.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
+        signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p>Your workspace is complete. This page will stay here until you deliberately choose to sign out.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
         page.appendChild(signOutIntro);
+        /* Final page is intentionally locked: no Back, Next, or Finish route.
+           Only the explicit Sign Out button and confirmation can end the session. */
+        back.hidden=true;
+        back.disabled=true;
+        back.setAttribute("aria-hidden","true");
+        back.setAttribute("tabindex","-1");
         next.hidden=true;
-        status.textContent="Final page — Sign Out. Confirm Sign Out when you are ready.";
-        speak("Final page. Sign Out. Your workspace sequence is complete. Confirm Sign Out when you are ready.");
+        next.disabled=true;
+        status.textContent="Final page — this screen will not move on. Choose Sign Out only when you are ready.";
         return;
       }
       if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
@@ -780,6 +786,12 @@
       if(!state.pacificEducationSequential || state.role!==getRole()) return;
       var shell=document.getElementById("pacificEducationSequentialRoleWorkspace");
       if(!shell) return;
+      /* Browser Back must not move away from the final Sign Out page.
+         Reassert the final history state; only confirmed Sign Out exits it. */
+      if(index===sequence.length-1 && sequence[index] && sequence[index][0]==="paceduSignOutPage"){
+        try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
+        return;
+      }
       var backButton=document.getElementById("peSequentialBack");
       if(backButton && state.index>=0){
         backButton.click();
