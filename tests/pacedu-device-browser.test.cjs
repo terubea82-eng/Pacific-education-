@@ -151,6 +151,9 @@ test("Welcome Next stays in the single-page app and reveals Vision, Rules, then 
 });
 
 test("Back returns to the immediately previous guided page with a matching flow step", async ({ page }) => {
+  // This test exercises eleven pages while the isolation observer and legacy handlers settle.
+  // Give the full sequence enough time on shared/slow CI runners.
+  test.setTimeout(90000);
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "load" });
