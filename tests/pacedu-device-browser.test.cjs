@@ -513,6 +513,8 @@ test("sequential Parent workspace advances one page at a time through confirmed 
     // Exercise the workspace controller independently of the page-isolation
     // controller, which intentionally keeps non-active app pages hidden.
     window.PacificEducationSingleNavigation = undefined;
+    // This focused test intentionally disables the route controller; release its startup-only CSS guard so the workspace controller can be tested independently.
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     // The page-isolation controller may put its state on either the document
     // root or body. Clear both so its CSS cannot hide the focused controller test.
     [document.documentElement, document.body].forEach(root => {
@@ -593,6 +595,8 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
     sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Teacher Isolation Test",role:"teacher",pilotOnly:true}));
     sessionStorage.setItem("pacificEducationPilotRole", "teacher");
     window.PacificEducationSingleNavigation = undefined;
+    // This focused test intentionally disables the route controller; release its startup-only CSS guard so the workspace controller can be tested independently.
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     [document.documentElement, document.body].forEach(root => {
       root.classList.remove("pe-guided-flow", "pe-pilot-all-features", "pe-sequential-role-workspace-active");
       root.removeAttribute("data-pe-active-guided-page");
@@ -632,6 +636,8 @@ test("verified registration role overrides a stale pilot role marker", async ({ 
     sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Blind Learner Isolation Test",role:"Blind Learner",pilotOnly:true}));
     sessionStorage.setItem("pacificEducationPilotRole", "teacher");
     window.PacificEducationSingleNavigation = undefined;
+    // This focused test intentionally disables the route controller; release its startup-only CSS guard so the workspace controller can be tested independently.
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     [document.documentElement, document.body].forEach(root => {
       root.classList.remove("pe-guided-flow", "pe-pilot-all-features", "pe-sequential-role-workspace-active");
       root.removeAttribute("data-pe-active-guided-page");
