@@ -150,6 +150,58 @@ test("Welcome Next stays in the single-page app and reveals Vision, Rules, then 
   expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
 });
 
+test("Back returns to the immediately previous guided page with a matching flow step", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "load" });
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+
+  const pageIds = [
+    "pacificEducationWelcome", "paceduPageVision", "paceduPageRules",
+    "pacificEducationIdentityRegistration", "prototypeAccess", "levelSelection",
+    "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson",
+    "dailyLessonPracticeStage", "assessments", "pacificEducationCoverageDashboard",
+    "teacherCalendarSection"
+  ];
+  const cases = [
+    { current: "pacificEducationIdentityRegistration", step: 3, previous: "paceduPageRules", previousStep: null },
+    { current: "prototypeAccess", step: 4, previous: "pacificEducationIdentityRegistration", previousStep: 3 },
+    { current: "levelSelection", step: 5, previous: "prototypeAccess", previousStep: 4 },
+    { current: "subjectSelection", step: 6, previous: "levelSelection", previousStep: 5 },
+    { current: "termSelection", step: 7, previous: "subjectSelection", previousStep: 6 },
+    { current: "capabilitySelection", step: 8, previous: "termSelection", previousStep: 7 },
+    { current: "dailyLesson", step: 9, previous: "capabilitySelection", previousStep: 8 },
+    { current: "dailyLessonPracticeStage", step: 10, previous: "dailyLesson", previousStep: 9 },
+    { current: "assessments", step: 11, previous: "dailyLessonPracticeStage", previousStep: 10 },
+    { current: "pacificEducationCoverageDashboard", step: 12, previous: "assessments", previousStep: 11 },
+    { current: "teacherCalendarSection", step: 13, previous: "pacificEducationCoverageDashboard", previousStep: 12 }
+  ];
+
+  for (const item of cases) {
+    const entered = await page.evaluate(({ step, current }) =>
+      window.PacificEducationSingleNavigation.go(step, current), item);
+    expect(entered, "controller must enter " + item.current).toBe(true);
+    await expect(page.locator("#" + item.current)).toBeVisible();
+    await page.locator("#pacificEducationBack_" + item.current).click();
+    await expect(page.locator("#" + item.previous)).toBeVisible();
+    if (item.previousStep === null) {
+      await expect(page.locator("body")).toHaveAttribute("data-pac-edu-entry-page", "3");
+    } else {
+      await expect(page.locator("body")).toHaveAttribute("data-pe-flow-step", String(item.previousStep));
+    }
+    await page.waitForTimeout(180);
+    const visiblePages = await page.evaluate(ids => ids.filter(id => {
+      const node = document.getElementById(id);
+      if (!node || node.hidden || node.getAttribute("aria-hidden") === "true") return false;
+      const style = getComputedStyle(node);
+      const rect = node.getBoundingClientRect();
+      return style.display !== "none" && style.visibility !== "hidden" && rect.width > 0 && rect.height > 0;
+    }), pageIds);
+    expect(visiblePages, "only the destination page may remain visible after Back from " + item.current)
+      .toEqual([item.previous]);
+  }
+});
+
 test("blank startup recovery returns to Welcome through the single navigation controller", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
