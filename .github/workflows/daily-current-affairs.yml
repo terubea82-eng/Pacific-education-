@@ -1,5 +1,9 @@
 name: Pacific Education Daily Current Affairs Feed
 on:
+  # Temporary branch-scoped live validation for this draft PR; remove after the feed run is inspected.
+  push:
+    branches:
+      - fix/current-affairs-official-feeds
   schedule:
     - cron: "15 2 * * *"
   workflow_dispatch:
