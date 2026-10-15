@@ -151,6 +151,9 @@ test("Welcome Next stays in the single-page app and reveals Vision, Rules, then 
 });
 
 test("Back returns to the immediately previous guided page with a matching flow step", async ({ page }) => {
+  // This test exercises eleven pages while the isolation observer and legacy handlers settle.
+  // Give the full sequence enough time on shared/slow CI runners.
+  test.setTimeout(90000);
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "load" });
@@ -1026,6 +1029,21 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("#peSequentialBack")).toBeVisible();
     await expect(page.locator("#peSequentialNext")).toBeVisible();
 
+    const roleActivityTitles = {
+      teacher: "Teacher Daily Planning & Review",
+      parent: "Family Learning Support",
+      professional: "Professional Reviewer Activity",
+      ngo: "NGO / Organisation Support Activity",
+      education: "Education / Government Curriculum Review",
+      community: "Community / Partner Learning Support",
+      owner: "Owner — Pilot Governance Review",
+      technician: "Technician — Read-only Diagnostics"
+    };
+    if (roleActivityTitles[expectedWorkspace]) {
+      await expect(workspace.locator("#paceduRoleActivityPack")).toBeVisible();
+      await expect(workspace.locator("#paceduRoleActivityPack")).toContainText(roleActivityTitles[expectedWorkspace]);
+    }
+
     if (expectedWorkspace === "student") {
       const title = page.locator("#peSequentialTitle");
       const nextStep = page.locator("#peSequentialNext");
@@ -1071,6 +1089,8 @@ test("student registration handoff shows workspace navigation and daily activiti
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => {
     try {
+      localStorage.setItem("pacificEducationLevel", "Class 1");
+      localStorage.setItem("pacificEducationSubject", "English");
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Pilot Test Learner",
         role: "Student",
@@ -1124,9 +1144,16 @@ test("student registration handoff shows workspace navigation and daily activiti
     await next.click();
   }
 
-  await expect(shell.locator("#peStudentDailyActivityStarter")).toBeVisible();
-  await expect(shell.locator("#peStudentDailySubject")).toBeVisible();
-  await expect(shell.locator("#peStudentDailyComplete")).toBeVisible();
+  await expect(shell.locator("#paceduRoleActivityPack")).toBeVisible();
+  await expect(shell.locator("#paceduRoleActivityPack")).toContainText("Fiji Year 1 English — Who am I?");
+  await expect(shell.locator("#paceduRoleActivityResponse")).toBeVisible();
+  await expect(shell.locator("#paceduRoleActivityDone")).toBeVisible();
+  await shell.locator("#paceduRoleActivityResponse").fill("Good morning. My name is Pilot Learner. The first letter is P.");
+  await shell.locator("#paceduRoleActivityDone").check();
+  await shell.getByRole("button", { name: "Save Activity on This Device", exact: true }).click();
+  await expect(shell.locator("#paceduRoleActivityStatus")).toContainText("REQUIRES_CURRENT_MINISTRY_VALIDATION");
+  const savedActivity = await page.evaluate(() => JSON.parse(localStorage.getItem("pacificEducationRoleActivityEvidenceV1") || "{}"));
+  expect(Object.values(savedActivity).some(entry => entry.role === "student" && entry.completed && entry.response.includes("Good morning"))).toBe(true);
   await expect(shell.locator("#peSequentialBack")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
 });

@@ -620,7 +620,11 @@
               status.textContent="Phonics Assessment is not connected yet.";
             }
           };
-          addStudentDailyActivityStarter(dailyDay,page);
+          if(window.PacificEducationRoleActivityPacks && typeof window.PacificEducationRoleActivityPacks.render==="function"){
+            window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
+          }else{
+            addStudentDailyActivityStarter(dailyDay,page);
+          }
         }
       }else{
         var missing=document.createElement("div");
@@ -628,6 +632,12 @@
         missing.innerHTML="<strong>"+item[1]+" is not connected yet.</strong><p>This page cannot be completed until its existing pilot feature is connected. No placeholder workspace is presented as a working feature.</p>";
         page.appendChild(missing);
         next.disabled=true;
+      }
+      /* Add one practical, role-specific work task to the relevant workspace page.
+         This is additive: protected access/production gates remain in force. */
+      if(window.PacificEducationRoleActivityPacks && typeof window.PacificEducationRoleActivityPacks.render==="function" &&
+         role!=="student" && role!=="blind-learner" && role!=="deaf-learner"){
+        window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
       /* Keep Next from scrolling the viewport through unrelated page content. */
