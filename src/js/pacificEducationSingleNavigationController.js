@@ -694,6 +694,20 @@ function syncRules(){
 
 /* Capture-phase gateway fallback: make the first three entry buttons navigate even
    if another legacy listener consumes the normal bubbling click. This does not touch voice. */
+/* Keep Welcome fail-closed from the moment Rules becomes active. Legacy click
+ * handlers can briefly restore inline display styles before the single-navigation
+ * capture handler runs; this route-level CSS guard prevents those styles painting
+ * Welcome during Rules -> Registration. It does not alter the protected voice engine.
+ */
+function installWelcomeFlashGuard(){
+  var id="pacedu-welcome-flash-guard";
+  if(el(id)) return;
+  var style=document.createElement("style");
+  style.id=id;
+  style.textContent='body[data-pac-edu-entry-page="3"] #pacificEducationWelcome, body[data-pe-flow-step]:not([data-pe-flow-step="0"]) #pacificEducationWelcome { display:none!important; visibility:hidden!important; }';
+  (document.head||document.documentElement).appendChild(style);
+}
+
 function bindGatewayCaptureFallback(){
   if(document.documentElement.getAttribute("data-pe-gateway-capture-bound")==="true") return;
   document.documentElement.setAttribute("data-pe-gateway-capture-bound","true");
@@ -809,6 +823,7 @@ function observeFeatureChanges(){
 }
 
 function init(){
+  installWelcomeFlashGuard();
   bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
