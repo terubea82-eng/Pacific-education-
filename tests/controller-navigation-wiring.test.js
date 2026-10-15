@@ -124,9 +124,12 @@ test("guided Next transitions use the actual page numbers after registration", (
 });
 
 
-test("final Sign Out page removes sticky positioning so user scrolling stays in control", () => {
+test("final Sign Out button appears below the reading text and never stays at the top", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
-  assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)\{[\s\S]*?signOutTopArea\.style\.position="static"/);
+  assert.match(sequential, /signOutTopArea\.hidden=true/);
+  assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)\{[\s\S]*?page\.appendChild\(signOutIntro\);[\s\S]*?page\.appendChild\(signOutTopArea\)/);
+  assert.doesNotMatch(sequential, /signOutTopArea\.style\.cssText="position:sticky/);
+  assert.doesNotMatch(sequential, /shell\.insertBefore\(signOutTopArea,shell\.firstChild\)/);
   assert.match(sequential, /This page will stay here until you deliberately choose to sign out/);
 });
 
