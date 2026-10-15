@@ -435,6 +435,31 @@ function guided(step,targetId){
   return ok;
 }
 
+function enforceSingleGatewayPage(expectedPage, targetId){
+  /* Legacy registration helpers may restore their display state after Back.
+     Re-assert the selected Welcome/Vision/Rules gateway after those callbacks. */
+  if(!document.body.classList.contains("pacedu-entry-mode") ||
+     document.body.getAttribute("data-pac-edu-entry-page")!==String(expectedPage)) return;
+  document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
+  GUIDED_PAGES.forEach(function(pageId){
+    var node=el(pageId);
+    if(!node) return;
+    node.hidden=true;
+    node.setAttribute("aria-hidden","true");
+    try{node.style.setProperty("display","none","important");}catch(e){}
+  });
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var node=el(pageId);
+    if(!node) return;
+    var active=pageId===targetId;
+    node.hidden=!active;
+    if(active) node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden","true");
+    try{node.style.setProperty("display",active?"block":"none","important");}catch(e){}
+  });
+  lockLearningToolsDuringEntry();
+}
+
 function gateway(page){
   lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
@@ -488,6 +513,9 @@ function gateway(page){
   isolateCurrentPage(activePageId);
   animateGuidedPageEntry(activePageId);
   lockLearningToolsDuringEntry();
+  /* Re-check after legacy handlers and their queued display repairs run. */
+  window.setTimeout(function(){enforceSingleGatewayPage(page,activePageId);},0);
+  window.setTimeout(function(){enforceSingleGatewayPage(page,activePageId);},150);
   return true;
 }
 
