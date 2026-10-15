@@ -516,6 +516,12 @@
       next.hidden=false;
       if(item[0]==="paceduSignOutPage"){
         shell.setAttribute("data-pe-final-signout","true");
+        /* Disable the sticky bar on the final page so scrolling remains user-controlled. */
+        if(signOutTopArea){
+          signOutTopArea.style.position="static";
+          signOutTopArea.style.top="auto";
+          signOutTopArea.style.zIndex="auto";
+        }
         var signOutIntro=document.createElement("section");
         signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
         signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p>Your workspace is complete. This page will stay here until you deliberately choose to sign out.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
