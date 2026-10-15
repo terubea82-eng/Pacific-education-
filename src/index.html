@@ -32,6 +32,14 @@ html[data-pacedu-registration-entry="true"] #pacificEducationWelcome {
   display: none !important;
   visibility: hidden !important;
 }
+/* Persistent lock after leaving Welcome; only the explicit Back control clears it. */
+/* Keep the persistent lock stronger than later guided-step display rules. */
+html[data-pacedu-entry-advanced="true"] body #pacificEducationWelcome,
+html[data-pacedu-entry-advanced="true"] body.pe-guided-flow[data-pe-flow-step] #pacificEducationWelcome,
+html[data-pacedu-entry-advanced="true"] body.pacedu-entry-mode[data-pac-edu-entry-page] #pacificEducationWelcome {
+  display: none !important;
+  visibility: hidden !important;
+}
 body{font-family:Arial,sans-serif;margin:0;line-height:1.5}
 /* Prevent the standalone Learning Tools section from flashing before guided-flow isolation initializes. The later explicit post-flow rule can reveal it after setup is complete. */
 #learningPlatform{display:none!important}

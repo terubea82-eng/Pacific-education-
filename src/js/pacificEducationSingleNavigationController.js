@@ -381,6 +381,7 @@ function lockLearningToolsDuringEntry(){
 function guided(step,targetId){
   lockLearningToolsDuringEntry();
   stopSpeechForPageTransition(targetId);
+  if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
   document.body.setAttribute("data-pe-flow-step",String(step));
@@ -410,6 +411,7 @@ function gateway(page){
   lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
+  if(Number(page)>1) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
@@ -520,7 +522,7 @@ function ensureBackButton(targetId){
     event.preventDefault();
     event.stopPropagation();
     var row=BACK[targetId];
-    if(row[1]==="welcome"){ gateway(1); return; }
+    if(row[1]==="welcome"){ document.documentElement.removeAttribute("data-pacedu-entry-advanced"); gateway(1); return; }
     if(row[1]==="vision"){ gateway(2); return; }
     if(row[1]==="rules"){ gateway(3); return; }
     var map={
