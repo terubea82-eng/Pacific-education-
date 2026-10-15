@@ -54,6 +54,23 @@ test("controller preserves the protected voice engine and does not replace it", 
   assert.match(controller, /var pageInfo=PAGE_GUIDE\[targetId\]/);
 });
 
+test("Back navigation targets use the same flow-step index as their matching Next route", () => {
+  for (const [key, target, step] of [
+    ["registration", "pacificEducationIdentityRegistration", 3],
+    ["prototype", "prototypeAccess", 4],
+    ["level", "levelSelection", 5],
+    ["subject", "subjectSelection", 6],
+    ["term", "termSelection", 7],
+    ["capability", "capabilitySelection", 8],
+    ["daily", "dailyLesson", 9],
+    ["practice", "dailyLessonPracticeStage", 10],
+    ["assessment", "assessments", 11],
+    ["coverage", "pacificEducationCoverageDashboard", 12]
+  ]) {
+    assert.match(controller, new RegExp(key + ":\\[\\\"" + target + "\\\"," + step + "\\]"));
+  }
+});
+
 test("controller-managed activity and transition buttons have explicit bindings", () => {
   for (const id of [
     "dailyActivitiesStartButton",
@@ -189,6 +206,15 @@ test("Sign Out preserves saved registration and daily progress while clearing ac
   assert.match(sequential, /pacificEducationStudentDailyActivityProgressV1/);
   assert.doesNotMatch(sequential, /LOCAL_SESSION_KEYS\.forEach\(function\(key\)\{try\{localStorage\.removeItem\(key\)/);
   assert.match(sequential, /registration and sign-in entry is ready/);
+});
+
+test("role workspace pages use a short reduced-motion-aware entrance transition", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /pacedu-role-page-transition-style/);
+  assert.match(sequential, /animation:paceduRolePageEnter 190ms/);
+  assert.match(sequential, /@media\(prefers-reduced-motion:reduce\)/);
+  assert.match(sequential, /page\.classList\.add\("pacedu-role-page-enter"\)/);
+  assert.match(sequential, /Sign Out selected\. Confirm Sign Out or Cancel/);
 });
 
 test("all guided pages use a short shared reduced-motion-aware entrance transition", () => {

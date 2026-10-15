@@ -330,9 +330,13 @@ function renderPageGuide(targetId){
 
 function enforceSingleVisiblePage(targetId, expectedStep){
   lockLearningToolsDuringEntry();
-  /* Re-assert the one-page contract after legacy registration handlers finish.
-     Some older handlers can restore display styles after the navigation click. */
-  if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)) return;
+  /* The active destination is the navigation authority. Legacy handlers may
+     overwrite the numeric step after Back; reject stale repairs by destination,
+     then restore the matching step for the still-current destination. */
+  if(document.body.getAttribute("data-pe-active-guided-page")!==targetId) return;
+  if(document.body.getAttribute("data-pe-flow-step")!==String(expectedStep)){
+    document.body.setAttribute("data-pe-flow-step",String(expectedStep));
+  }
   document.body.classList.remove("pacedu-entry-mode");
   if(targetId!=="pacificEducationIdentityRegistration"){
     document.body.classList.remove("pacedu-registration-mode");
@@ -423,16 +427,40 @@ function guided(step,targetId){
     renderPageGuide(targetId);
     var pageInfo=PAGE_GUIDE[targetId];
     setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
-    /* Run after click handlers and their queued repairs; never change the protected voice engine. */
-    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
-    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
-    /* Legacy registration helpers may restore their old display state after the save callback. */
-    if(targetId==="prototypeAccess"){
-      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },500);
-      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },1000);
-    }
+    /* Legacy feature handlers can restore a previous panel after navigation.
+       Reassert the current destination during the short transition window. Each
+       repair verifies the current step, so an old timer cannot override a newer
+       user navigation. This is visibility-only and does not touch protected voice. */
+    [0,40,80,120,160,220,300,500,800,1100].forEach(function(delay){
+      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },delay);
+    });
   }
   return ok;
+}
+
+function enforceSingleGatewayPage(expectedPage, targetId){
+  /* Legacy registration helpers may restore their display state after Back.
+     Re-assert the selected Welcome/Vision/Rules gateway after those callbacks. */
+  if(!document.body.classList.contains("pacedu-entry-mode") ||
+     document.body.getAttribute("data-pac-edu-entry-page")!==String(expectedPage)) return;
+  document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
+  GUIDED_PAGES.forEach(function(pageId){
+    var node=el(pageId);
+    if(!node) return;
+    node.hidden=true;
+    node.setAttribute("aria-hidden","true");
+    try{node.style.setProperty("display","none","important");}catch(e){}
+  });
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(pageId){
+    var node=el(pageId);
+    if(!node) return;
+    var active=pageId===targetId;
+    node.hidden=!active;
+    if(active) node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden","true");
+    try{node.style.setProperty("display",active?"block":"none","important");}catch(e){}
+  });
+  lockLearningToolsDuringEntry();
 }
 
 function gateway(page){
@@ -446,6 +474,8 @@ function gateway(page){
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
+  /* Invalidate delayed guided-page repairs before they can reopen the page we just left. */
+  document.body.removeAttribute("data-pe-flow-step");
   document.body.removeAttribute("data-pe-active-guided-page");
   document.body.setAttribute("data-pe-navigation-owner","single");
 
@@ -488,6 +518,9 @@ function gateway(page){
   isolateCurrentPage(activePageId);
   animateGuidedPageEntry(activePageId);
   lockLearningToolsDuringEntry();
+  /* Re-check after legacy handlers and their queued display repairs run. */
+  window.setTimeout(function(){enforceSingleGatewayPage(page,activePageId);},0);
+  window.setTimeout(function(){enforceSingleGatewayPage(page,activePageId);},150);
   return true;
 }
 
@@ -558,16 +591,19 @@ function ensureBackButton(targetId){
     if(row[1]==="vision"){ gateway(2); return; }
     if(row[1]==="rules"){ gateway(3); return; }
     var map={
-      registration:["pacificEducationIdentityRegistration",1],
-      prototype:["prototypeAccess",2],
-      level:["levelSelection",3],
-      subject:["subjectSelection",4],
-      term:["termSelection",5],
-      capability:["capabilitySelection",6],
-      daily:["dailyLesson",7],
-      practice:["dailyLessonPracticeStage",8],
-      assessment:["assessments",9],
-      coverage:["pacificEducationCoverageDashboard",10]
+      /* guided() uses the flow-step index, which is the page number minus one
+         after the Welcome/Vision/Rules gateway. Keep Back in the same index
+         contract as the corresponding Next bindings. */
+      registration:["pacificEducationIdentityRegistration",3],
+      prototype:["prototypeAccess",4],
+      level:["levelSelection",5],
+      subject:["subjectSelection",6],
+      term:["termSelection",7],
+      capability:["capabilitySelection",8],
+      daily:["dailyLesson",9],
+      practice:["dailyLessonPracticeStage",10],
+      assessment:["assessments",11],
+      coverage:["pacificEducationCoverageDashboard",12]
     };
     if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
   });

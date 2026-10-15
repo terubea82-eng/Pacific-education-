@@ -433,6 +433,27 @@
       restoreAllMovedTargets();
       var signOutArea=document.getElementById("peSequentialSignOut");
       page.innerHTML="";
+
+      /* Give every role-workspace page the same short, steady entrance used by
+         the 14 guided pages. The active page is still replaced synchronously,
+         so two workspace pages are never exposed together. Respect reduced motion. */
+      var transitionStyle=document.getElementById("pacedu-role-page-transition-style");
+      if(!transitionStyle){
+        transitionStyle=document.createElement("style");
+        transitionStyle.id="pacedu-role-page-transition-style";
+        transitionStyle.textContent=
+          "#peSequentialPage.pacedu-role-page-enter{animation:paceduRolePageEnter 190ms cubic-bezier(.2,.7,.2,1) both;}"+
+          "@keyframes paceduRolePageEnter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}"+
+          "@media(prefers-reduced-motion:reduce){#peSequentialPage.pacedu-role-page-enter{animation:none!important;transform:none!important;opacity:1!important}}";
+        (document.head||document.documentElement).appendChild(transitionStyle);
+      }
+      page.classList.remove("pacedu-role-page-enter");
+      try{ void page.offsetWidth; }catch(e){}
+      page.classList.add("pacedu-role-page-enter");
+      window.setTimeout(function(){
+        if(page && page.classList) page.classList.remove("pacedu-role-page-enter");
+      },260);
+
       var item=sequence[index];
       /* Keep Sign Out reachable on every workspace step. The dedicated final
          Sign Out page remains in the sequence, but users must not be trapped
