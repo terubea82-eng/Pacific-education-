@@ -60,6 +60,54 @@ async function installMutationObserverWatchdog(page) {
   });
 }
 
+test("first Welcome page stays isolated during startup with no legacy-page flicker", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.addInitScript(() => {
+    window.__paceduStartupPageLeaks = [];
+    const selectors = [
+      "#paceduPageVision", "#paceduPageRules", "#pacificEducationIdentityRegistration",
+      "#prototypeAccess", "#levelSelection", "#subjectSelection", "#termSelection",
+      "#capabilitySelection", "#dailyLesson", "#dailyLessonPracticeStage", "#assessments",
+      "#teacherCalendarSection", "#learningPlatform"
+    ];
+    const inspect = () => {
+      if (document.documentElement.getAttribute("data-pacedu-navigation-ready") === "true") return;
+      const visible = selectors.filter(selector => {
+        const node = document.querySelector(selector);
+        if (!node) return false;
+        const style = getComputedStyle(node);
+        const rect = node.getBoundingClientRect();
+        return style.display !== "none" && style.visibility !== "hidden" &&
+          rect.width > 0 && rect.height > 0;
+      });
+      if (visible.length) window.__paceduStartupPageLeaks.push(visible);
+    };
+    const observer = new MutationObserver(inspect);
+    observer.observe(document.documentElement, {
+      childList: true, subtree: true, attributes: true,
+      attributeFilter: ["class", "style", "hidden", "aria-hidden", "data-pe-flow-step",
+        "data-pac-edu-entry-page", "data-pacedu-navigation-ready"]
+    });
+    document.addEventListener("DOMContentLoaded", inspect, { once: true });
+    window.__paceduStartupPageObserver = observer;
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "load" });
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await expect(page.locator("html")).toHaveAttribute("data-pacedu-navigation-ready", "true");
+  await page.waitForTimeout(1400);
+  const leaks = await page.evaluate(() => window.__paceduStartupPageLeaks || []);
+  expect(leaks, "legacy pages must stay hidden until the Welcome route is initialized").toEqual([]);
+  for (const selector of [
+    "#paceduPageVision", "#paceduPageRules", "#pacificEducationIdentityRegistration",
+    "#prototypeAccess", "#levelSelection", "#subjectSelection", "#termSelection",
+    "#capabilitySelection", "#dailyLesson", "#dailyLessonPracticeStage", "#assessments",
+    "#teacherCalendarSection", "#learningPlatform"
+  ]) {
+    await expect(page.locator(selector)).toBeHidden();
+  }
+});
+
 test("live pilot page loads at desktop size without uncaught page errors", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.stack || error.message));
@@ -465,6 +513,8 @@ test("sequential Parent workspace advances one page at a time through confirmed 
     // Exercise the workspace controller independently of the page-isolation
     // controller, which intentionally keeps non-active app pages hidden.
     window.PacificEducationSingleNavigation = undefined;
+    // This focused test intentionally disables the route controller; release its startup-only CSS guard so the workspace controller can be tested independently.
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     // The page-isolation controller may put its state on either the document
     // root or body. Clear both so its CSS cannot hide the focused controller test.
     [document.documentElement, document.body].forEach(root => {
@@ -545,6 +595,8 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
     sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Teacher Isolation Test",role:"teacher",pilotOnly:true}));
     sessionStorage.setItem("pacificEducationPilotRole", "teacher");
     window.PacificEducationSingleNavigation = undefined;
+    // This focused test intentionally disables the route controller; release its startup-only CSS guard so the workspace controller can be tested independently.
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     [document.documentElement, document.body].forEach(root => {
       root.classList.remove("pe-guided-flow", "pe-pilot-all-features", "pe-sequential-role-workspace-active");
       root.removeAttribute("data-pe-active-guided-page");
@@ -584,6 +636,8 @@ test("verified registration role overrides a stale pilot role marker", async ({ 
     sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({name:"Blind Learner Isolation Test",role:"Blind Learner",pilotOnly:true}));
     sessionStorage.setItem("pacificEducationPilotRole", "teacher");
     window.PacificEducationSingleNavigation = undefined;
+    // This focused test intentionally disables the route controller; release its startup-only CSS guard so the workspace controller can be tested independently.
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     [document.documentElement, document.body].forEach(root => {
       root.classList.remove("pe-guided-flow", "pe-pilot-all-features", "pe-sequential-role-workspace-active");
       root.removeAttribute("data-pe-active-guided-page");

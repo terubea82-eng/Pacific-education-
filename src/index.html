@@ -26,6 +26,25 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="canonical" href="https://terubea82-eng.github.io/Pacific-education-/">
 <style>
+/* First-paint isolation: keep legacy Pacedu pages out of the initial frame while
+   the single-navigation controller chooses the entry page. Welcome remains the
+   only visible page for a normal launch; direct Registration entry remains usable. */
+html:not([data-pacedu-navigation-ready="true"]):not([data-pacedu-registration-entry="true"]) body > :not(#pacificEducationWelcome):not(script):not(style) {
+  display: none !important;
+  visibility: hidden !important;
+}
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > :not(main):not(script):not(style) {
+  display: none !important;
+  visibility: hidden !important;
+}
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main > :not(#pacificEducationIdentityRegistration) {
+  display: none !important;
+  visibility: hidden !important;
+}
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main > #pacificEducationIdentityRegistration {
+  display: block !important;
+  visibility: visible !important;
+}
 /* Route-level fail-closed guard: Welcome must not render on the accepted Registration URL,
    even before the navigation controller initializes or repairs legacy page state. */
 html[data-pacedu-registration-entry="true"] #pacificEducationWelcome {
