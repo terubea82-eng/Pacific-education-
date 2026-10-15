@@ -1296,6 +1296,9 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var body = document.body;
     var welcome = document.getElementById("pacificEducationWelcome");
     if (!body || !welcome) return;
+    /* This is startup recovery only. Never let the fallback restore Welcome
+       after the user has advanced; legacy registration visibility can be stale. */
+    if (document.documentElement.getAttribute("data-pacedu-entry-advanced") === "true") return;
     try {
       var params = new URLSearchParams(window.location.search);
       if (params.get("entry") === "registration" &&
