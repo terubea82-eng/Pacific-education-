@@ -558,16 +558,19 @@ function ensureBackButton(targetId){
     if(row[1]==="vision"){ gateway(2); return; }
     if(row[1]==="rules"){ gateway(3); return; }
     var map={
-      registration:["pacificEducationIdentityRegistration",1],
-      prototype:["prototypeAccess",2],
-      level:["levelSelection",3],
-      subject:["subjectSelection",4],
-      term:["termSelection",5],
-      capability:["capabilitySelection",6],
-      daily:["dailyLesson",7],
-      practice:["dailyLessonPracticeStage",8],
-      assessment:["assessments",9],
-      coverage:["pacificEducationCoverageDashboard",10]
+      /* guided() uses the flow-step index, which is the page number minus one
+         after the Welcome/Vision/Rules gateway. Keep Back in the same index
+         contract as the corresponding Next bindings. */
+      registration:["pacificEducationIdentityRegistration",3],
+      prototype:["prototypeAccess",4],
+      level:["levelSelection",5],
+      subject:["subjectSelection",6],
+      term:["termSelection",7],
+      capability:["capabilitySelection",8],
+      daily:["dailyLesson",9],
+      practice:["dailyLessonPracticeStage",10],
+      assessment:["assessments",11],
+      coverage:["pacificEducationCoverageDashboard",12]
     };
     if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
   });
