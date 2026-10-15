@@ -19,6 +19,7 @@
   ];
 
   var SUBJECT_TASKS = {
+    "English": { goal: "Communicate a clear idea using familiar words.", task: "Say, sign, draw, or write a greeting and one complete sentence about a familiar daily activity. Choose one word and explain what it means.", check: "What is your sentence? Which word did you choose, and what does it mean?", evidence: "Greeting, sentence and vocabulary response" },
     "Mathematics": { goal: "Count, compare and explain a small quantity.", task: "Count five safe objects you can already see. Record the total. Make two groups and explain which group has more. Do not collect or handle unsafe objects.", check: "What is the total? Which group has more, and how do you know?", evidence: "Count, comparison and explanation" },
     "Phonics": { goal: "Recognise a letter and connect it to a sound or word.", task: "Choose a familiar letter. Find or draw two words that begin with it. Say, sign, point to, or write the letter and words. A blind learner may use the approved screen reader or teacher-read prompt; a deaf learner may use printed letters and visual mouth/letter cues.", check: "Can you identify the letter and two words linked to it?", evidence: "Letter and two example words" },
     "Science": { goal: "Observe one feature of the natural world.", task: "From a safe place, observe the sky, a plant, or an animal. Record two things you notice and one question you have. Do not touch unknown plants or animals.", check: "What two things did you observe? What would you like to find out?", evidence: "Two observations and one question" },
