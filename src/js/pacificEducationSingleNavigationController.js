@@ -379,8 +379,8 @@ function lockLearningToolsDuringEntry(){
 }
 
 function guided(step,targetId){
-  if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   lockLearningToolsDuringEntry();
+  if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
@@ -408,8 +408,8 @@ function guided(step,targetId){
 }
 
 function gateway(page){
-  if(Number(page)>1) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   lockLearningToolsDuringEntry();
+  if(Number(page)>1) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
