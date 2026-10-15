@@ -226,6 +226,7 @@ test("final Sign Out page is locked until the user explicitly confirms sign out"
   assert.match(sequential, /if\(shell\.getAttribute\("data-pe-final-signout"\)==="true"\) return;\s*if\(index>0\)/);
   assert.match(sequential, /Defensive lock: even a stale\/programmatic Next click cannot leave the/);
   assert.match(sequential, /Check the final-page lock before inspecting history state/);
+  assert.match(sequential, /var existingWorkspace=document\.getElementById\("pacificEducationSequentialRoleWorkspace"\);\s*if\(existingWorkspace && existingWorkspace\.getAttribute\("data-pe-final-signout"\)==="true"\) return;/);
   assert.match(sequential, /Confirm Sign Out/);
   assert.doesNotMatch(sequential, /use <strong>Sign Out<\/strong> when you have finished, or use Back/);
 });
