@@ -8,6 +8,16 @@
   }
 
   function show(page){
+    var ownerBody=document.body;
+    /* Once the single-navigation controller has advanced past Welcome, a stale
+       legacy call to show(1) must not restore Page 1 during Rules → Registration.
+       The explicit Back-to-Welcome path clears the persistent lock before routing. */
+    if(page===1 && ownerBody &&
+       ownerBody.getAttribute("data-pe-navigation-owner")==="single" &&
+       document.documentElement.getAttribute("data-pacedu-entry-advanced")==="true"){
+      return false;
+    }
+
     document.body.setAttribute(
       "data-pac-edu-entry-page",
       String(page)
