@@ -76,8 +76,7 @@ function installGuidedTransitionStyle(){
   var style=document.createElement("style");
   style.id="pacedu-guided-transition-style";
   style.textContent=
-    ".pacedu-guided-page-enter{animation:pac eduGuidedPageEnter 210ms cubic-bezier(.2,.7,.2,1) both;}" 
-      .replace("pac edu","pacedu")+
+    ".pacedu-guided-page-enter{animation:pac eduGuidedPageEnter 210ms cubic-bezier(.2,.7,.2,1) both;}".replace("pac edu","pacedu")+
     "@keyframes paceduGuidedPageEnter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}" +
     "@media(prefers-reduced-motion:reduce){.pacedu-guided-page-enter{animation:none!important;transform:none!important;opacity:1!important}}";
   (document.head||document.documentElement).appendChild(style);
