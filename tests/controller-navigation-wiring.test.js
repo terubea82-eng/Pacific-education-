@@ -54,6 +54,23 @@ test("controller preserves the protected voice engine and does not replace it", 
   assert.match(controller, /var pageInfo=PAGE_GUIDE\[targetId\]/);
 });
 
+test("Back navigation targets use the same flow-step index as their matching Next route", () => {
+  for (const [key, target, step] of [
+    ["registration", "pacificEducationIdentityRegistration", 3],
+    ["prototype", "prototypeAccess", 4],
+    ["level", "levelSelection", 5],
+    ["subject", "subjectSelection", 6],
+    ["term", "termSelection", 7],
+    ["capability", "capabilitySelection", 8],
+    ["daily", "dailyLesson", 9],
+    ["practice", "dailyLessonPracticeStage", 10],
+    ["assessment", "assessments", 11],
+    ["coverage", "pacificEducationCoverageDashboard", 12]
+  ]) {
+    assert.match(controller, new RegExp(key + ":\\[\\\"" + target + "\\\"," + step + "\\]"));
+  }
+});
+
 test("controller-managed activity and transition buttons have explicit bindings", () => {
   for (const id of [
     "dailyActivitiesStartButton",
