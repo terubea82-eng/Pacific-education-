@@ -430,9 +430,11 @@
     }
 
     function renderPage(){
+      /* Once the final Sign Out page is visible, no incidental render request
+         may replace it. The confirmed Sign Out handler removes the shell instead. */
+      if(shell.getAttribute("data-pe-final-signout")==="true") return;
       restoreAllMovedTargets();
       var signOutArea=document.getElementById("peSequentialSignOut");
-      shell.removeAttribute("data-pe-final-signout");
       page.innerHTML="";
 
       /* Give every role-workspace page the same short, steady entrance used by
@@ -657,6 +659,7 @@
     }
 
     back.onclick=function(){
+      if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(index>0){
         index--;
         try{history.replaceState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
@@ -674,6 +677,9 @@
       if(!clicked || clicked!==next) return;
       event.preventDefault();
       event.stopImmediatePropagation();
+      /* Defensive lock: even a stale/programmatic Next click cannot leave the
+         final Sign Out page. */
+      if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(clicked.disabled) return;
       if(index<sequence.length-1){
         /* Complete the full daily cycle before advancing to the next day.
@@ -785,15 +791,15 @@
 
     window.addEventListener("popstate",function(event){
       var state=event.state||{};
-      if(!state.pacificEducationSequential || state.role!==getRole()) return;
       var shell=document.getElementById("pacificEducationSequentialRoleWorkspace");
       if(!shell) return;
-      /* Browser Back must not move away from the final Sign Out page.
-         Reassert the final history state; only confirmed Sign Out exits it. */
+      /* Check the final-page lock before inspecting history state: Back may
+         point to an older/non-sequential entry, but must not replace this page. */
       if(shell.getAttribute("data-pe-final-signout")==="true"){
         try{history.pushState({pacificEducationSequential:true,role:getRole(),finalSignOut:true},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
         return;
       }
+      if(!state.pacificEducationSequential || state.role!==getRole()) return;
       var backButton=document.getElementById("peSequentialBack");
       if(backButton && state.index>=0){
         backButton.click();
