@@ -124,7 +124,7 @@ test("guided Next transitions use the actual page numbers after registration", (
 });
 
 
-test("sequential workspace restores hidden main/app containers after registration", () => {
+test("final Sign Out page removes sticky positioning so user scrolling stays in control", () => {\n  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");\n  assert.match(sequential, /if\\(item\\[0\\]===\"paceduSignOutPage\"\\)\\{[\\s\\S]*?signOutTopArea\\.style\\.position=\"static\"/);\n  assert.match(sequential, /This page will stay here until you deliberately choose to sign out/);\n});\n\ntest("sequential workspace restores hidden main/app containers after registration", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.ok(sequential.includes("main{display:block!important;visibility:visible!important;}"));
   assert.ok(sequential.includes("main > #app{display:block!important;visibility:visible!important;}"));
