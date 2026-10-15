@@ -570,8 +570,23 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await page.locator("#peSequentialSignOutButton").click();
   await trace("after Sign Out");
   await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
-  // The handler removes the clicked button and its parent workspace immediately.
-  // Dispatch directly so Playwright does not wait on a locator being detached.
+
+  // Cancel must leave the user's current workspace and active session untouched.
+  await page.locator("#peSequentialSignOutNo").click();
+  await expect(page.locator("#peSequentialSignOutConfirm")).toBeHidden();
+  await expect(shell).toBeVisible();
+  const stillActive = await page.evaluate(() => ({
+    registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
+    role: sessionStorage.getItem("pacificEducationPilotRole"),
+    registration: sessionStorage.getItem("pacificEducationPilotRegistration")
+  }));
+  expect(stillActive.registered).toBe("true");
+  expect(stillActive.role).toBe("parent");
+  expect(JSON.parse(stillActive.registration)).toMatchObject({name:"Parent Pilot Test",role:"parent",pilotOnly:true});
+
+  // Only a second, explicit Sign Out followed by Confirm may end the session.
+  await page.locator("#peSequentialSignOutButton").click();
+  await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
   await page.locator("#peSequentialSignOutYes").dispatchEvent("click");
   await trace("after confirm sign out");
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveCount(0);
