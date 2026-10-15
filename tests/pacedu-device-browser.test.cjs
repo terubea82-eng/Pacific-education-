@@ -1078,6 +1078,8 @@ test("student registration handoff shows workspace navigation and daily activiti
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => {
     try {
+      localStorage.setItem("pacificEducationLevel", "Class 1");
+      localStorage.setItem("pacificEducationSubject", "English");
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Pilot Test Learner",
         role: "Student",
@@ -1131,9 +1133,16 @@ test("student registration handoff shows workspace navigation and daily activiti
     await next.click();
   }
 
-  await expect(shell.locator("#peStudentDailyActivityStarter")).toBeVisible();
-  await expect(shell.locator("#peStudentDailySubject")).toBeVisible();
-  await expect(shell.locator("#peStudentDailyComplete")).toBeVisible();
+  await expect(shell.locator("#paceduRoleActivityPack")).toBeVisible();
+  await expect(shell.locator("#paceduRoleActivityPack")).toContainText("Fiji Year 1 English — Who am I?");
+  await expect(shell.locator("#paceduRoleActivityResponse")).toBeVisible();
+  await expect(shell.locator("#paceduRoleActivityDone")).toBeVisible();
+  await shell.locator("#paceduRoleActivityResponse").fill("Good morning. My name is Pilot Learner. The first letter is P.");
+  await shell.locator("#paceduRoleActivityDone").check();
+  await shell.getByRole("button", { name: "Save Activity on This Device" }).click();
+  await expect(shell.locator("#paceduRoleActivityStatus")).toContainText("REQUIRES_CURRENT_MINISTRY_VALIDATION");
+  const savedActivity = await page.evaluate(() => JSON.parse(localStorage.getItem("pacificEducationRoleActivityEvidenceV1") || "{}"));
+  expect(Object.values(savedActivity).some(entry => entry.role === "student" && entry.completed && entry.response.includes("Good morning"))).toBe(true);
   await expect(shell.locator("#peSequentialBack")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
 });
