@@ -215,6 +215,17 @@ test("role activity packs load after the role workspace controller and preserve 
   assert.match(voiceNavigation, /protected #856/i);
 });
 
+test("final Sign Out page is locked until the user explicitly confirms sign out", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /Final Page/);
+  assert.match(sequential, /back\.hidden=true;\s*back\.disabled=true/);
+  assert.match(sequential, /next\.hidden=true;\s*next\.disabled=true/);
+  assert.match(sequential, /Final page — this screen will not move on/);
+  assert.match(sequential, /index===sequence\.length-1 && sequence\[index\].*paceduSignOutPage/);
+  assert.match(sequential, /Confirm Sign Out/);
+  assert.doesNotMatch(sequential, /use <strong>Sign Out<\/strong> when you have finished, or use Back/);
+});
+
 test("Sign Out preserves saved registration and daily progress while clearing active session state", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(sequential, /pacificEducationPilotSavedRegistrationV1/);
