@@ -67,6 +67,33 @@ var GUIDED_PAGES = [
 
 function el(id){ return document.getElementById(id); }
 
+/* Shared, low-motion page entrance for all 14 guided steps.
+ * Visibility remains owned by the single navigation controller; this only animates
+ * the incoming panel after isolation, so it cannot expose two pages at once.
+ */
+function installGuidedTransitionStyle(){
+  if(el("pacedu-guided-transition-style")) return;
+  var style=document.createElement("style");
+  style.id="pacedu-guided-transition-style";
+  style.textContent=
+    ".pacedu-guided-page-enter{animation:paceduGuidedPageEnter 210ms cubic-bezier(.2,.7,.2,1) both;}"+
+    "@keyframes paceduGuidedPageEnter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}" +
+    "@media(prefers-reduced-motion:reduce){.pacedu-guided-page-enter{animation:none!important;transform:none!important;opacity:1!important}}";
+  (document.head||document.documentElement).appendChild(style);
+}
+function animateGuidedPageEntry(targetId){
+  var target=el(targetId);
+  if(!target || !PAGE_GUIDE[targetId]) return;
+  installGuidedTransitionStyle();
+  target.classList.remove("pacedu-guided-page-enter");
+  /* Restart the brief entrance animation without scrolling or changing page height. */
+  try{ void target.offsetWidth; }catch(e){}
+  target.classList.add("pacedu-guided-page-enter");
+  window.setTimeout(function(){
+    if(target && target.classList) target.classList.remove("pacedu-guided-page-enter");
+  },280);
+}
+
 function setStatus(message){
   var a=el("pacificEducationVoiceStatus");
   var b=el("pacificEducationInteractionStatus");
@@ -253,6 +280,7 @@ function revealTarget(targetId){
 
   /* Swap pages without smooth-scrolling through unrelated information. */
   isolateCurrentPage(targetId);
+  animateGuidedPageEntry(targetId);
   refreshFeatureForTarget(targetId);
   return true;
 }
@@ -458,6 +486,7 @@ function gateway(page){
   var activePageId=page===1 ? "pacificEducationWelcome" : page===2 ? "paceduPageVision" : "paceduPageRules";
   syncNextWrapper(activePageId);
   isolateCurrentPage(activePageId);
+  animateGuidedPageEntry(activePageId);
   lockLearningToolsDuringEntry();
   return true;
 }
@@ -829,6 +858,7 @@ function observeFeatureChanges(){
 
 function init(){
   installWelcomeFlashGuard();
+  installGuidedTransitionStyle();
   bindGatewayCaptureFallback();
   if(!document.body.getAttribute("data-pe-single-navigation-started")){
     document.body.setAttribute("data-pe-single-navigation-started","true");
