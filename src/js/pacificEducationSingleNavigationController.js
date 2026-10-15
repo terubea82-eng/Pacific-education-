@@ -423,14 +423,13 @@ function guided(step,targetId){
     renderPageGuide(targetId);
     var pageInfo=PAGE_GUIDE[targetId];
     setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
-    /* Run after click handlers and their queued repairs; never change the protected voice engine. */
-    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },0);
-    window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },150);
-    /* Legacy registration helpers may restore their old display state after the save callback. */
-    if(targetId==="prototypeAccess"){
-      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },500);
-      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },1000);
-    }
+    /* Legacy feature handlers can restore a previous panel after navigation.
+       Reassert the current destination during the short transition window. Each
+       repair verifies the current step, so an old timer cannot override a newer
+       user navigation. This is visibility-only and does not touch protected voice. */
+    [0,40,80,120,160,220,300,500,800,1100].forEach(function(delay){
+      window.setTimeout(function(){ enforceSingleVisiblePage(targetId,step); },delay);
+    });
   }
   return ok;
 }
