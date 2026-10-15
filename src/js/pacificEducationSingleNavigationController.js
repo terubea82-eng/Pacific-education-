@@ -379,6 +379,7 @@ function lockLearningToolsDuringEntry(){
 }
 
 function guided(step,targetId){
+  if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   lockLearningToolsDuringEntry();
   stopSpeechForPageTransition(targetId);
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
@@ -407,6 +408,7 @@ function guided(step,targetId){
 }
 
 function gateway(page){
+  if(Number(page)>1) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
@@ -520,7 +522,7 @@ function ensureBackButton(targetId){
     event.preventDefault();
     event.stopPropagation();
     var row=BACK[targetId];
-    if(row[1]==="welcome"){ gateway(1); return; }
+    if(row[1]==="welcome"){ document.documentElement.removeAttribute("data-pacedu-entry-advanced"); gateway(1); return; }
     if(row[1]==="vision"){ gateway(2); return; }
     if(row[1]==="rules"){ gateway(3); return; }
     var map={
