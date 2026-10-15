@@ -104,8 +104,22 @@
     if (!host || !document || !document.createElement) return false;
     var context = {
       subject: global.localStorage.getItem("pacificEducationSubject") || "English",
-      level: global.localStorage.getItem("pacificEducationLevel") || ""
+      level: global.localStorage.getItem("pacificEducationLevel") || "",
+      term: global.localStorage.getItem("pacificEducationTerm") || "",
+      countryCode: global.localStorage.getItem("pacificEducationCurriculumCountryCode") || global.localStorage.getItem("pacificEducationPilotCountry") || "",
+      classReference: global.localStorage.getItem("pacificEducationClassReference") || global.localStorage.getItem("pacificEducationClassId") || "",
+      capability: global.localStorage.getItem("pacificEducationCapability") || ""
     };
+    try {
+      var classContext = global.PacificEducationTeacherClassRosterContext;
+      if (classContext && typeof classContext.getClassId === "function") {
+        context.classReference = String(classContext.getClassId() || context.classReference || "");
+        if (context.classReference && typeof classContext.getClass === "function") {
+          var assignedClass = classContext.getClass(context.classReference);
+          if (assignedClass && assignedClass.level) context.level = String(assignedClass.level);
+        }
+      }
+    } catch (_) {}
     var activity = getActivity(role, stepId, day, context);
     if (!activity) return false;
     var old = document.getElementById("paceduRoleActivityPack");
@@ -132,7 +146,10 @@
     doneLabel.appendChild(done); doneLabel.appendChild(doneText); card.appendChild(doneLabel);
     var save = document.createElement("button"); save.type = "button"; save.textContent = "Save Activity on This Device"; save.style.cssText = "padding:11px 15px;font-weight:700;"; card.appendChild(save);
     var live = document.createElement("p"); live.id = "paceduRoleActivityStatus"; live.setAttribute("role","status"); live.setAttribute("aria-live","polite"); card.appendChild(live);
-    var key = activity.id + "|" + String(context.level || "level-not-set") + "|" + String(context.subject || "subject-not-set");
+    var key = [
+      activity.id, context.countryCode || "country-not-set", context.classReference || "class-not-set",
+      context.level || "level-not-set", context.subject || "subject-not-set", context.term || "term-not-set"
+    ].join("|");
     var all = readAll(); var prior = all[key];
     if (prior) { input.value = prior.response || ""; done.checked = !!prior.completed; live.textContent = "Saved on this device. Review status: " + (prior.reviewStatus || activity.verificationStatus) + "."; }
     save.addEventListener("click", function () {
@@ -141,8 +158,9 @@
       if (!done.checked) { live.textContent = "Please confirm that you attempted or completed the task before saving."; done.focus(); return; }
       var records = readAll();
       records[key] = {
-        activityId:activity.id, role:role, title:activity.title, level:context.level, subject:context.subject,
-        day:Math.max(1,Number(day)||1), response:response, completed:true,
+        activityId:activity.id, role:role, title:activity.title, countryCode:context.countryCode,
+        classReference:context.classReference, level:context.level, subject:context.subject, term:context.term,
+        capability:context.capability, day:Math.max(1,Number(day)||1), response:response, completed:true,
         evidenceType:activity.evidence, reviewStatus:activity.verificationStatus,
         savedAt:new Date().toISOString(), storage:"local-device-pilot"
       };
