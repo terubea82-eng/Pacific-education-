@@ -23,7 +23,7 @@ jobs:
     permissions:
       contents: write
     env:
-      PACIFIC_SIGNING_READY: ${{ secrets.KEYSTORE_BASE64 != '' && secrets.KEYSTORE_PASSWORD != '' && secrets.KEY_ALIAS != '' && secrets.KEY_PASSWORD != '' }}
+      PACIFIC_SIGNING_READY: ${{ secrets.PACIFIC_KEYSTORE_BASE64 != '' && secrets.PACIFIC_KEYSTORE_PASSWORD != '' && secrets.PACIFIC_KEY_ALIAS != '' && secrets.PACIFIC_KEY_PASSWORD != '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -43,7 +43,7 @@ jobs:
       - name: Restore and validate owner release keystore
         if: ${{ env.PACIFIC_SIGNING_READY == 'true' }}
         env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_BASE64: ${{ secrets.PACIFIC_KEYSTORE_BASE64 }}
         run: |
           set -euo pipefail
           printf '%s' "$KEYSTORE_BASE64" | tr -d '[:space:]' > "${RUNNER_TEMP}/pacific-keystore.b64"
@@ -60,9 +60,9 @@ jobs:
         working-directory: android
         env:
           KEYSTORE_PATH: ${{ runner.temp }}/pacific-education-release.jks
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          KEYSTORE_PASSWORD: ${{ secrets.PACIFIC_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.PACIFIC_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.PACIFIC_KEY_PASSWORD }}
         run: gradle --no-daemon assembleRelease bundleRelease
       - name: Verify signed release APK identity and signature
         if: ${{ env.PACIFIC_SIGNING_READY == 'true' }}
