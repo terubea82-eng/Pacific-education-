@@ -26,10 +26,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="canonical" href="https://terubea82-eng.github.io/Pacific-education-/">
 <style>
-/* First-paint isolation: keep legacy Pacedu pages out of the initial frame while
-   the single-navigation controller chooses the entry page. Welcome remains the
-   only visible page for a normal launch; direct Registration entry remains usable. */
-html:not([data-pacedu-navigation-ready="true"]):not([data-pacedu-registration-entry="true"]) body > :not(#pacificEducationWelcome):not(script):not(style) {
+/* First-paint isolation: keep every page hidden until the single-navigation
+   controller has selected and prepared the one intended entry page. Do not show
+   the legacy Welcome section early; otherwise it flashes before the permanent
+   single-page route is ready. The controller releases this guard only after
+   gateway(1) or the accepted direct-Registration route has been applied. */
+html:not([data-pacedu-navigation-ready="true"]):not([data-pacedu-registration-entry="true"]) body > :not(script):not(style) {
   display: none !important;
   visibility: hidden !important;
 }
