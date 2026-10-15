@@ -408,6 +408,9 @@ function guided(step,targetId){
 }
 
 function gateway(page){
+  /* Fail closed: once guided navigation has advanced, legacy callers may not
+     reopen Welcome. The explicit Back-to-Welcome handler clears this lock first. */
+  if(Number(page)===1 && document.documentElement.getAttribute("data-pacedu-entry-advanced")==="true") return false;
   lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
