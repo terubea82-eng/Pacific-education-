@@ -427,8 +427,10 @@
       if(signOutArea && signOutArea.parentElement===page) shell.appendChild(signOutArea);
       page.innerHTML="";
       var item=sequence[index];
-      /* Keep Sign Out and its confirmation off every learning step. */
-      if(signOutArea) signOutArea.hidden = item[0] !== "paceduSignOutPage";
+      /* Keep Sign Out reachable on every workspace step. The dedicated final
+         Sign Out page remains in the sequence, but users must not be trapped
+         without an exit if a role step is unavailable or cannot advance. */
+      if(signOutArea) signOutArea.hidden = false;
       if(item[0]==="dailyLesson") item=[item[0],"Day "+dailyDay+" of 365"];
       var target=document.getElementById(item[0]);
 
