@@ -191,13 +191,28 @@ test("Sign Out stays top-right and visible on every role workspace page while co
 });
 
 
-test("Student daily activity starter offers English, Mathematics and Phonics with device-local completion", () => {
+test("student daily activities use the curriculum-aware role activity pack", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
-  assert.match(sequential, /addStudentDailyActivityStarter\(dailyDay,page\)/);
-  assert.match(sequential, /pacificEducationStudentDailyActivityProgressV1/);
-  assert.match(sequential, /value=\\?"Mathematics\\?"/);
-  assert.match(sequential, /value=\\?"Phonics\\?"/);
-  assert.match(sequential, /Mark Activity Complete/);
+  const activityPacks = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  assert.match(sequential, /PacificEducationRoleActivityPacks\.render\(role,item\[0\],page,dailyDay\)/);
+  assert.match(activityPacks, /Fiji Year 1 English/);
+  assert.match(activityPacks, /My Friends/);
+  assert.match(activityPacks, /Preparing a Family Feast/);
+  assert.match(activityPacks, /Mathematics/);
+  assert.match(activityPacks, /Phonics/);
+  assert.match(activityPacks, /pacificEducationStudentDailyActivityProgressV1/);
+  assert.match(activityPacks, /Save Activity on This Device/);
+  assert.match(activityPacks, /REQUIRES_CURRENT_MINISTRY_VALIDATION/);
+});
+
+test("role activity packs load after the role workspace controller and preserve protected voice files", () => {
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js[^\n]*pacificEducationRoleActivityPacks\.js/);
+  const activityPacks = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  assert.match(activityPacks, /PENDING_TEACHER_REVIEW/);
+  assert.match(activityPacks, /PENDING_TECHNICAL_REVIEW/);
+  assert.match(activityPacks, /local-device-pilot/);
+  assert.equal((html.match(/pacificEducationRoleActivityPacks\.js/g) || []).length, 1);
+  assert.match(voiceNavigation, /protected #856/i);
 });
 
 test("Sign Out preserves saved registration and daily progress while clearing active session state", () => {
