@@ -340,6 +340,9 @@
   }
 
   function build(role){
+    /* A late registration/role callback must never replace a completed Sign Out screen. */
+    var existingWorkspace=document.getElementById("pacificEducationSequentialRoleWorkspace");
+    if(existingWorkspace && existingWorkspace.getAttribute("data-pe-final-signout")==="true") return;
     var app=document.getElementById("app");
     if(!app) return;
     var registeredRole=getRole();
