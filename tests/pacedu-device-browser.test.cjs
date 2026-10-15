@@ -1033,6 +1033,21 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("#peSequentialBack")).toBeVisible();
     await expect(page.locator("#peSequentialNext")).toBeVisible();
 
+    const roleActivityTitles = {
+      teacher: "Teacher Daily Planning & Review",
+      parent: "Family Learning Support",
+      professional: "Professional Reviewer Activity",
+      ngo: "NGO / Organisation Support Activity",
+      education: "Education / Government Curriculum Review",
+      community: "Community / Partner Learning Support",
+      owner: "Owner — Pilot Governance Review",
+      technician: "Technician — Read-only Diagnostics"
+    };
+    if (roleActivityTitles[expectedWorkspace]) {
+      await expect(workspace.locator("#paceduRoleActivityPack")).toBeVisible();
+      await expect(workspace.locator("#paceduRoleActivityPack")).toContainText(roleActivityTitles[expectedWorkspace]);
+    }
+
     if (expectedWorkspace === "student") {
       const title = page.locator("#peSequentialTitle");
       const nextStep = page.locator("#peSequentialNext");
