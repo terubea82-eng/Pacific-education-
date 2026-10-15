@@ -835,8 +835,9 @@ git status</pre>
 </div>
 <div id="pilotRoleRegistrationFields" hidden>
 <p id="pilotSelectedRole" role="status" aria-live="polite"><strong>Selected role:</strong> none</p>
-<label for="pilotRegistrationName"><strong>Name / display name</strong></label><br>
-<input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your name or test name" style="width:100%;max-width:520px"><br><br>
+<label for="pilotRegistrationName" style="display:block;margin-bottom:8px;font-size:1.1rem"><strong>Name / display name</strong></label>
+<p id="pilotRegistrationNameHelp" style="margin:0 0 8px">Use the large box below to type your name clearly.</p>
+<input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your full name" aria-describedby="pilotRegistrationNameHelp" style="display:block;width:100%;max-width:100%;min-height:64px;padding:14px 16px;font-size:1.25rem;line-height:1.4;border:2px solid #174f63;border-radius:10px;background:#fff;color:#173b49;box-sizing:border-box" /><br><br>
 <label for="pilotRegistrationRole"><strong>Selected user role</strong></label><br>
 <select id="pilotRegistrationRole" aria-label="Selected user role" style="width:100%;max-width:520px" disabled>
 <option value="">Select role</option><option>Student</option><option>Blind Learner</option><option>Deaf Learner</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
