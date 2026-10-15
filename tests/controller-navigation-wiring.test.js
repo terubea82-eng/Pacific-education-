@@ -168,7 +168,7 @@ test("Sign Out stays top-right and visible on every role workspace page while co
   assert.match(sequential, /peSequentialSignOut.*hidden style=/);
   assert.match(sequential, /position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end/);
   assert.match(sequential, /signOutArea\.hidden = false/);
-  assert.match(sequential, /if\\(item\[0\]==="paceduSignOutPage"\\)/);
+  assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)/);
   assert.match(sequential, /peSequentialSignOutConfirm.*hidden/);
   assert.doesNotMatch(sequential, /signOutArea\.hidden = item\[0\] !==/);
 });
