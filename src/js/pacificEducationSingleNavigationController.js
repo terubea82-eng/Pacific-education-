@@ -113,7 +113,9 @@ function safeCall(objectName, method, args){
 
 function ensureVisibleLevelSelectorFallback(){
   var host=el("pacificEducationLevelSelector");
-  if(!host || host.children.length) return;
+  /* A leftover wrapper or hidden placeholder is not a working selector.
+     Only skip recovery when a real select control is already present. */
+  if(!host || host.querySelector("select")) return;
   /* Recovery UI only: keep the class/level page usable if its selector script
      failed to load. This never claims that a teacher assignment was verified. */
   var box=document.createElement("div");
