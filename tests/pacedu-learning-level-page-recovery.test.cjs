@@ -21,6 +21,9 @@ test("Learning Level recovery appears when the existing selector is present but 
   assert.match(controller, /if\(selectorIsVisible\) return/);
   assert.match(controller, /data-pe-level-recovery.*single-navigation/);
   assert.match(controller, /host\.querySelector\("\[data-pe-level-recovery='single-navigation'\]"\)\) return/, "repeated navigation refreshes must not duplicate the recovery selector");
+  assert.match(controller, /Hear Learning Level Instructions/);
+  assert.match(controller, /window\\.PacificEducationSpeech/);
+  assert.match(controller, /Learning Level instructions were sent to the speech engine/);
   assert.match(controller, /Recovery selector is active because the normal selector did not render/);
   assert.match(controller, /This pilot choice does not verify a teacher-assigned class/);
 });
