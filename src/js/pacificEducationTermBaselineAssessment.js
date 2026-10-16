@@ -17,9 +17,56 @@
   ];}
   function speak(text){if(typeof window.speakText==="function")window.speakText(text);else if(window.speechSynthesis){window.speechSynthesis.cancel();window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));}}
   function start(){var c=context(), qs=questions(), answers=[],i=0; var target=document.getElementById("pacificEducationTermBaseline");if(!target)return false;
-    function render(){var q=qs[i];target.innerHTML='<h3>Mandatory Term Baseline Assessment</h3><p>Term: '+c.term+' • '+c.level+'</p><p><strong>Question '+(i+1)+' of '+qs.length+' — '+q.skill+'</strong></p><p>'+q.q+'</p><button type="button" id="peBaselineListen">🔊 Listen</button><label> Answer by voice <input id="peBaselineAudio" type="file" accept="audio/*" capture></label><br><textarea id="peBaselineAnswer" rows="4" style="width:100%" placeholder="Written answer (optional when using audio)"></textarea><br><button type="button" id="peBaselineNext">Save and continue</button><div id="peBaselineStatus" aria-live="polite"></div>';
-      document.getElementById("peBaselineListen").onclick=function(){speak(q.q);};
-      document.getElementById("peBaselineNext").onclick=function(){var a=document.getElementById("peBaselineAnswer").value.trim(),f=document.getElementById("peBaselineAudio").files[0],reader=new FileReader();function done(audio){answers.push({skill:q.skill,question:q.q,answer:a,audioDataUrl:audio||""});i++;if(i<qs.length)render();else finish();}if(f){reader.onload=function(){done(String(reader.result||""));};reader.readAsDataURL(f);}else done("");};
+    function render(){
+      var q=qs[i];
+      /* Build UI with DOM APIs and textContent. Learner/term/question text is
+         data, never HTML, so text containing markup characters stays inert. */
+      while(target.firstChild) target.removeChild(target.firstChild);
+      function add(tag, textValue, parent){
+        var node=document.createElement(tag);
+        if(textValue!==undefined && textValue!==null) node.textContent=String(textValue);
+        (parent||target).appendChild(node);
+        return node;
+      }
+      add("h3","Mandatory Term Baseline Assessment");
+      add("p","Term: "+c.term+" • "+c.level);
+      add("p","Question "+(i+1)+" of "+qs.length+" — "+q.skill);
+      add("p",q.q);
+      var listen=add("button","🔊 Listen");
+      listen.type="button";
+      listen.id="peBaselineListen";
+      listen.onclick=function(){speak(q.q);};
+      var audioLabel=add("label"," Answer by voice ");
+      var audio=document.createElement("input");
+      audio.type="file";
+      audio.accept="audio/*";
+      audio.setAttribute("capture","");
+      audio.id="peBaselineAudio";
+      audioLabel.appendChild(audio);
+      add("br");
+      var answer=document.createElement("textarea");
+      answer.id="peBaselineAnswer";
+      answer.rows=4;
+      answer.style.width="100%";
+      answer.placeholder="Written answer (optional when using audio)";
+      target.appendChild(answer);
+      add("br");
+      var next=add("button","Save and continue");
+      next.type="button";
+      next.id="peBaselineNext";
+      var status=add("div","");
+      status.id="peBaselineStatus";
+      status.setAttribute("aria-live","polite");
+      next.onclick=function(){
+        var a=answer.value.trim(),f=audio.files&&audio.files[0],reader;
+        function done(audioData){answers.push({skill:q.skill,question:q.q,answer:a,audioDataUrl:audioData||""});i++;if(i<qs.length)render();else finish();}
+        if(f){
+          reader=new FileReader();
+          reader.onload=function(){done(String(reader.result||""));};
+          reader.onerror=function(){status.textContent="Audio could not be read. Please try again or provide a written answer.";};
+          reader.readAsDataURL(f);
+        }else done("");
+      };
     }
     function finish(){var answered=answers.filter(function(a){return !!(String(a.answer||"").trim()||String(a.audioDataUrl||""));}).length;var percentage=Math.round((answered/qs.length)*100);var r={id:"baseline-"+c.studentId+"-"+c.term+"-"+Date.now(),studentId:c.studentId,level:c.level,subjectId:c.subjectId,term:c.term,schoolId:localStorage.getItem("pacificEducationSchoolId")||"",answers:answers,percentage:percentage,scorePercentage:percentage,assessmentType:"term-baseline",completedAt:new Date().toISOString(),status:"completed",teacherReviewRequired:true,prototype:true};save(r);target.innerHTML='<h3>Baseline assessment completed</h3><p>Your starting skills evidence has been recorded for the selected term. Teacher review is required.</p>';document.dispatchEvent(new CustomEvent("pacificEducationBaselineCompleted",{detail:r}));}
     render();return true;
