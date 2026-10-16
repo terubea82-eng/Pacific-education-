@@ -621,6 +621,31 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialNext")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
 
+  // Final-page reading and scrolling must remain user-controlled; completion
+  // must not automatically focus the Sign Out button and jump the viewport.
+  await page.evaluate(() => {
+    window.__paceduSignOutFocusCalls = 0;
+    const nativeFocus = HTMLElement.prototype.focus;
+    HTMLElement.prototype.focus = function(...args) {
+      if (this && this.id === "peSequentialSignOutButton") window.__paceduSignOutFocusCalls += 1;
+      return nativeFocus.apply(this, args);
+    };
+  });
+  await page.evaluate(() => {
+    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    window.scrollTo(0, max);
+  });
+  await page.waitForTimeout(180);
+  const bottomScrollY = await page.evaluate(() => window.scrollY);
+  await page.evaluate(() => window.scrollTo(0, Math.max(0, window.scrollY - 120)));
+  await page.waitForTimeout(180);
+  const scrollState = await page.evaluate(() => ({
+    y: window.scrollY,
+    focusCalls: window.__paceduSignOutFocusCalls
+  }));
+  expect(scrollState.focusCalls, "final Sign Out must not be focused automatically").toBe(0);
+  expect(scrollState.y, "user scrolling upward on the final page must not snap back").toBeLessThan(bottomScrollY);
+
   await trace("before Sign Out");
   await page.locator("#peSequentialSignOutButton").click();
   await trace("after Sign Out");
