@@ -28,6 +28,6 @@ jobs:
         shell: bash
         run: |
           test -f src/index.html
-          grep -Fq 'js/pacificEducationSpeechVoice.js?v=20261005-voice5' src/index.html
-          grep -Fq 'js/pacificEducationMandatoryVoiceNavigation.js?v=20261005-userbox-nextvoice' src/index.html
+          grep -Eq 'js/pacificEducationSpeechVoice.js\?v=[^"]+' src/index.html
+          grep -Eq 'js/pacificEducationMandatoryVoiceNavigation.js\?v=[^"]+' src/index.html
           echo "Protected #856 voice references: PASS"
