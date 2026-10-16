@@ -754,7 +754,9 @@
       speak("Sign Out selected. Confirm Sign Out or Cancel.");
     };
     if(signOutCancel) signOutCancel.onclick=function(event){
-      if(event){event.preventDefault();event.stopPropagation();}
+      /* Cancel must also stop other listeners attached to this same button:
+         stopPropagation alone still permits sibling listeners to reopen it. */
+      if(event){event.preventDefault();event.stopImmediatePropagation();}
       setSignOutConfirmationVisible(false);
     };
     document.getElementById("peSequentialSignOutYes").onclick=function(){
