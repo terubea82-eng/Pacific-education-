@@ -200,7 +200,12 @@ test("Back returns to the immediately previous guided page with a matching flow 
       const rect = node.getBoundingClientRect();
       return style.display !== "none" && style.visibility !== "hidden" && rect.width > 0 && rect.height > 0;
     }), pageIds);
-    expect(visiblePages, "only the destination page may remain visible after Back from " + item.current)
+    /* Coverage Dashboard is nested inside Teacher Calendar in the legacy DOM.
+       At guided step 12 its wrapper must remain displayed to contain the dashboard;
+       count the nested dashboard as the page, not its required ancestor wrapper. */
+    const independentVisiblePages = visiblePages.filter(id =>
+      !(item.previous === "pacificEducationCoverageDashboard" && id === "teacherCalendarSection"));
+    expect(independentVisiblePages, "only the destination page may remain visible after Back from " + item.current)
       .toEqual([item.previous]);
   }
 });
@@ -613,6 +618,18 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Child Progress");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 4");
 
+  // Detect the original regression: the focus guide must not call scrollIntoView
+  // for the final Sign Out control when it appears.
+  await page.evaluate(() => {
+    window.__paceduSignOutScrollIntoViewCalls = 0;
+    const nativeScrollIntoView = Element.prototype.scrollIntoView;
+    Element.prototype.scrollIntoView = function(...args) {
+      if (this && (this.id === "peSequentialSignOutButton" || this.id === "peSequentialSignOutYes")) {
+        window.__paceduSignOutScrollIntoViewCalls += 1;
+      }
+      return nativeScrollIntoView.apply(this, args);
+    };
+  });
   await trace("before Next 3");
   await page.locator("#peSequentialNext").click();
   await trace("after Next 3");
@@ -620,6 +637,33 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
   await expect(page.locator("#peSequentialNext")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
+  expect(await page.evaluate(() => window.__paceduSignOutScrollIntoViewCalls),
+    "the focus guide must not auto-scroll the final Sign Out control into view").toBe(0);
+
+  // Final-page reading and scrolling must remain user-controlled; completion
+  // must not automatically focus the Sign Out button and jump the viewport.
+  await page.evaluate(() => {
+    window.__paceduSignOutFocusCalls = 0;
+    const nativeFocus = HTMLElement.prototype.focus;
+    HTMLElement.prototype.focus = function(...args) {
+      if (this && this.id === "peSequentialSignOutButton") window.__paceduSignOutFocusCalls += 1;
+      return nativeFocus.apply(this, args);
+    };
+  });
+  await page.evaluate(() => {
+    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    window.scrollTo(0, max);
+  });
+  await page.waitForTimeout(180);
+  const bottomScrollY = await page.evaluate(() => window.scrollY);
+  await page.evaluate(() => window.scrollTo(0, Math.max(0, window.scrollY - 120)));
+  await page.waitForTimeout(180);
+  const scrollState = await page.evaluate(() => ({
+    y: window.scrollY,
+    focusCalls: window.__paceduSignOutFocusCalls
+  }));
+  expect(scrollState.focusCalls, "final Sign Out must not be focused automatically").toBe(0);
+  expect(scrollState.y, "user scrolling upward on the final page must not snap back").toBeLessThan(bottomScrollY);
 
   await trace("before Sign Out");
   await page.locator("#peSequentialSignOutButton").click();
