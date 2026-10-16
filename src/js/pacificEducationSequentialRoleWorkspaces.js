@@ -306,6 +306,9 @@
     if(!parent) return;
     target.__peSequentialOriginalParent=parent;
     target.__peSequentialOriginalNextSibling=target.nextSibling;
+    target.__peSequentialOriginalDisplay=target.style.getPropertyValue("display");
+    target.__peSequentialOriginalDisplayPriority=target.style.getPropertyPriority("display");
+    target.__peSequentialOriginalAriaHidden=target.getAttribute("aria-hidden");
     target.dataset.peSequentialOriginal="true";
   }
 
@@ -317,6 +320,14 @@
       if(next && next.parentNode===parent) parent.insertBefore(target,next);
       else parent.appendChild(target);
     }
+    /* Restore original inline display and accessibility state when this section
+       leaves the active page. It remains hidden in the inactive application shell. */
+    target.style.removeProperty("display");
+    if(target.__peSequentialOriginalDisplay){
+      target.style.setProperty("display",target.__peSequentialOriginalDisplay,target.__peSequentialOriginalDisplayPriority||"");
+    }
+    if(target.__peSequentialOriginalAriaHidden===null) target.removeAttribute("aria-hidden");
+    else target.setAttribute("aria-hidden",target.__peSequentialOriginalAriaHidden);
     target.hidden=true;
     target.removeAttribute("data-pe-sequential-page");
     target.dataset.peSequentialMoved="false";
@@ -327,15 +338,35 @@
     movedTargets.forEach(restoreMovedTarget);
   }
 
+  function initialiseExistingSelector(target){
+    if(!target) return;
+    var apiName={
+      "levelSelection":"PacificEducationLevelSelector",
+      "subjectSelection":"PacificEducationSubjectSelector",
+      "termSelection":"PacificEducationTermSelector",
+      "capabilitySelection":"PacificEducationCapabilitySelector"
+    }[target.id];
+    var api=apiName && window[apiName];
+    if(api && typeof api.initialise==="function"){
+      try{api.initialise();}catch(error){}
+    }
+  }
+
   function moveTargetIntoPage(target,page){
     if(!target) return false;
     rememberOriginal(target);
+    /* Legacy guided navigation may leave display:none!important and aria-hidden
+       on the moved section. Clear those stale page-hiding states only while the
+       existing selector section is the active sequential workspace page. */
     target.hidden=false;
+    target.removeAttribute("aria-hidden");
     target.removeAttribute("data-pe-sequential-hidden");
+    target.style.removeProperty("display");
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
     if(movedTargets.indexOf(target)===-1) movedTargets.push(target);
     page.appendChild(target);
+    initialiseExistingSelector(target);
     return true;
   }
 
