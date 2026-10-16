@@ -469,7 +469,8 @@
         page.classList.remove("pacedu-role-page-enter");
         page.style.transform="none";
         page.style.animation="none";
-        page.style.overflowAnchor="none";
+        page.style.overflowAnchor="auto";
+        page.style.scrollBehavior="auto";
       }
       /* Keep the Sign Out action hidden until the user reaches its final page.
          Do not keep a duplicate/early red button visible during reading. */
