@@ -724,12 +724,38 @@
       }
     },true);
 
-    document.getElementById("peSequentialSignOutButton").onclick=function(){
-      document.getElementById("peSequentialSignOutConfirm").hidden=false;
+    var signOutConfirm=document.getElementById("peSequentialSignOutConfirm");
+    var signOutButton=document.getElementById("peSequentialSignOutButton");
+    var signOutCancel=document.getElementById("peSequentialSignOutNo");
+    var signOutYes=document.getElementById("peSequentialSignOutYes");
+    function setSignOutConfirmationVisible(visible){
+      if(!signOutConfirm) return;
+      signOutConfirm.hidden=!visible;
+      signOutConfirm.setAttribute("aria-hidden",String(!visible));
+      /* Some legacy pilot styles use display rules with !important. Explicitly
+         synchronize the hidden state with inline important display so Cancel
+         really closes the panel in every role workspace and viewport. */
+      if(visible){
+        signOutConfirm.style.removeProperty("display");
+        signOutConfirm.style.removeProperty("visibility");
+      }else{
+        signOutConfirm.style.setProperty("display","none","important");
+        signOutConfirm.style.setProperty("visibility","hidden","important");
+      }
+    }
+    if(signOutConfirm){
+      signOutConfirm.hidden=true;
+      signOutConfirm.setAttribute("aria-hidden","true");
+      signOutConfirm.style.setProperty("display","none","important");
+      signOutConfirm.style.setProperty("visibility","hidden","important");
+    }
+    if(signOutButton) signOutButton.onclick=function(){
+      setSignOutConfirmationVisible(true);
       speak("Sign Out selected. Confirm Sign Out or Cancel.");
     };
-    document.getElementById("peSequentialSignOutNo").onclick=function(){
-      document.getElementById("peSequentialSignOutConfirm").hidden=true;
+    if(signOutCancel) signOutCancel.onclick=function(event){
+      if(event){event.preventDefault();event.stopPropagation();}
+      setSignOutConfirmationVisible(false);
     };
     document.getElementById("peSequentialSignOutYes").onclick=function(){
       try{
