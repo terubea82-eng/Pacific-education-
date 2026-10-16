@@ -148,9 +148,9 @@ test("sequential workspace restores hidden main/app containers after registratio
 
 test("sequential workspace overrides the more-specific guided-flow rule that hides main children", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
-  assert.match(html, /body\\.pe-guided-flow\\.pe-pilot-all-features main > \\*\\{display:none !important\\}/);
-  assert.match(sequential, /body\\.pe-guided-flow\\.pe-pilot-all-features\\.pe-sequential-role-workspace-active main > #app\\{display:block!important;visibility:visible!important;opacity:1!important;\\}/);
-  assert.match(sequential, /body\\.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace\\{display:block!important;visibility:visible!important;\\}/);
+  assert.match(html, /body\.pe-guided-flow\.pe-pilot-all-features main > \*\{display:none !important\}/);
+  assert.match(sequential, /body\.pe-guided-flow\.pe-pilot-all-features\.pe-sequential-role-workspace-active main > #app\{display:block!important;visibility:visible!important;opacity:1!important;\}/);
+  assert.match(sequential, /body\.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace\{display:block!important;visibility:visible!important;\}/);
 });
 
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
