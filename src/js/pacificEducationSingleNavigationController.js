@@ -131,6 +131,22 @@ function ensureVisibleLevelSelectorFallback(){
           selectorIsVisible=false;
           break;
         }
+        /* overflow:hidden/clip can leave a selector technically rendered but
+           completely outside the visible box. Recover only when fully clipped. */
+        if(node!==existingSelect && (style.overflowX==="hidden" || style.overflowX==="clip" ||
+           style.overflowY==="hidden" || style.overflowY==="clip")){
+          var childRect=existingSelect.getBoundingClientRect();
+          var parentRect=node.getBoundingClientRect();
+          var clipLeft=parentRect.left+(node.clientLeft||0);
+          var clipTop=parentRect.top+(node.clientTop||0);
+          var clipRight=clipLeft+(node.clientWidth||0);
+          var clipBottom=clipTop+(node.clientHeight||0);
+          if(childRect.right<=clipLeft || childRect.left>=clipRight ||
+             childRect.bottom<=clipTop || childRect.top>=clipBottom){
+            selectorIsVisible=false;
+            break;
+          }
+        }
         node=node.parentElement;
       }
     }catch(e){}
