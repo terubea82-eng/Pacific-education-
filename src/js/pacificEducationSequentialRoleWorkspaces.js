@@ -564,7 +564,7 @@
         signOutIntro.id="peSequentialSignOutInformation";
         signOutIntro.setAttribute("aria-label","Sign Out instructions");
         signOutIntro.style.cssText="display:block!important;visibility:visible!important;position:static!important;height:auto!important;max-height:none!important;overflow:visible!important;padding:18px;border:3px solid #15803d;border-radius:10px;margin:0 0 16px;";
-        signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p><strong>Your workspace is complete.</strong> You are at the end of this guided workspace.</p><p><strong>You stay signed in until you choose to sign out.</strong> Nothing is ended just by reading or scrolling this page.</p><p><strong>Saved information:</strong> your saved pilot registration details and completed learning activities are retained on this device.</p><p><strong>To sign out:</strong> select the red Sign Out button below, then select Confirm Sign Out. Select Cancel to close the confirmation and remain in your workspace.</p><p><strong>Page movement:</strong> scroll up and down yourself to read this page. Pacedu must not pull the page toward the Sign Out button or move to another workspace page automatically.</p>";
+        signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p><strong>Your workspace is complete.</strong> This page will stay here until you deliberately choose to sign out.</p><p><strong>You stay signed in until you choose to sign out.</strong> Nothing is ended just by reading or scrolling this page.</p><p><strong>Saved information:</strong> your saved pilot registration details and completed learning activities are retained on this device.</p><p><strong>To sign out:</strong> select the red Sign Out button below, then select Confirm Sign Out. Select Cancel to close the confirmation and remain in your workspace.</p><p><strong>Page movement:</strong> scroll up and down yourself to read this page. Pacedu must not pull the page toward the Sign Out button or move to another workspace page automatically.</p>";
         page.appendChild(signOutIntro);
         /* Restore the real Sign Out and confirmation controls after all reading text. */
         if(signOutTopArea){
@@ -586,7 +586,7 @@
         back.setAttribute("tabindex","-1");
         next.hidden=true;
         next.disabled=true;
-        status.textContent="Final page — scroll up or down yourself. Sign Out occurs only after you choose Sign Out and then Confirm.";
+        status.textContent="Final page — this screen will not move on automatically. Scroll up or down yourself. Sign Out occurs only after you choose Sign Out and then Confirm.";
         status.hidden=false;
         status.style.setProperty("display","block","important");
         status.style.setProperty("visibility","visible","important");
