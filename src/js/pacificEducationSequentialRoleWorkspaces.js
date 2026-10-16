@@ -719,7 +719,8 @@
       }else{
         status.textContent="Workspace sequence complete.";
         speak("This workspace sequence is complete. You may sign out at the bottom.");
-        document.getElementById("peSequentialSignOutButton").focus();
+        /* Do not move keyboard focus or the viewport automatically on completion.
+           The user controls scrolling and chooses Sign Out when ready. */
       }
     },true);
 
