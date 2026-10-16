@@ -636,6 +636,11 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Sign Out");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
   await expect(page.locator("#peSequentialNext")).toBeHidden();
+  await expect(shell.locator("#peSequentialBack")).toBeHidden();
+  await expect(shell.locator("#peSequentialSignOutInformation")).toBeVisible();
+  await expect(shell.locator("#peSequentialSignOutInformation")).toContainText("Your workspace is complete");
+  await expect(shell.locator("#peSequentialSignOutInformation")).toContainText("Saved pilot registration details");
+  await expect(shell.locator("#peSequentialSignOutInformation")).toContainText("select Cancel to close the confirmation");
   await expect(shell.locator("#peSequentialSignOutButton")).toBeVisible();
   expect(await page.evaluate(() => window.__paceduSignOutScrollIntoViewCalls),
     "the focus guide must not auto-scroll the final Sign Out control into view").toBe(0);

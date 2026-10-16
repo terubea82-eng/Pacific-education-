@@ -525,31 +525,71 @@
       next.hidden=false;
       if(item[0]==="paceduSignOutPage"){
         shell.setAttribute("data-pe-final-signout","true");
-        /* Disable the sticky bar on the final page so scrolling remains user-controlled. */
+        shell.setAttribute("data-pe-signout-page-restored","true");
+        /* This is the only page whose viewport must remain fully user-controlled.
+           Keep the final reader in normal document flow: no fixed-height inner
+           scroller, scroll snap, focus jump, or sticky Sign Out bar. */
+        shell.hidden=false;
+        shell.removeAttribute("aria-hidden");
+        shell.style.setProperty("display","block","important");
+        shell.style.setProperty("visibility","visible","important");
+        shell.style.setProperty("position","static","important");
+        shell.style.setProperty("height","auto","important");
+        shell.style.setProperty("max-height","none","important");
+        shell.style.setProperty("overflow","visible","important");
+        shell.style.setProperty("overflow-anchor","none","important");
+        page.hidden=false;
+        page.removeAttribute("aria-hidden");
+        page.style.setProperty("display","block","important");
+        page.style.setProperty("visibility","visible","important");
+        page.style.setProperty("opacity","1","important");
+        page.style.setProperty("position","static","important");
+        page.style.setProperty("height","auto","important");
+        page.style.setProperty("max-height","none","important");
+        page.style.setProperty("overflow","visible","important");
+        page.style.setProperty("overflow-anchor","none","important");
+        page.style.setProperty("scroll-snap-type","none","important");
+        page.style.setProperty("touch-action","pan-y","important");
+        page.style.setProperty("transform","none","important");
+        page.style.setProperty("animation","none","important");
+        page.style.setProperty("scroll-behavior","auto","important");
         if(signOutTopArea){
           signOutTopArea.style.position="static";
           signOutTopArea.style.top="auto";
           signOutTopArea.style.zIndex="auto";
           signOutTopArea.hidden=true;
+          signOutTopArea.style.setProperty("display","none","important");
         }
         var signOutIntro=document.createElement("section");
-        signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
-        signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p>Your workspace is complete. This page will stay here until you deliberately choose to sign out.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
+        signOutIntro.id="peSequentialSignOutInformation";
+        signOutIntro.setAttribute("aria-label","Sign Out instructions");
+        signOutIntro.style.cssText="display:block!important;visibility:visible!important;position:static!important;height:auto!important;max-height:none!important;overflow:visible!important;padding:18px;border:3px solid #15803d;border-radius:10px;margin:0 0 16px;";
+        signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p><strong>Your workspace is complete.</strong> This page will stay here until you deliberately choose to sign out.</p><p><strong>You stay signed in until you choose to sign out.</strong> Nothing is ended just by reading or scrolling this page.</p><p><strong>Saved information:</strong> Saved pilot registration details and completed learning activities are retained on this device.</p><p><strong>To sign out:</strong> select the red Sign Out button below, then select Confirm Sign Out. select Cancel to close the confirmation and remain in your workspace.</p><p><strong>Page movement:</strong> scroll up and down yourself to read this page. Pacedu must not pull the page toward the Sign Out button or move to another workspace page automatically.</p>";
         page.appendChild(signOutIntro);
-        /* Place the Sign Out control after the reading text, never at the top of the workspace. */
+        /* Restore the real Sign Out and confirmation controls after all reading text. */
         if(signOutTopArea){
           signOutTopArea.hidden=false;
+          signOutTopArea.removeAttribute("aria-hidden");
+          signOutTopArea.style.removeProperty("visibility");
+          signOutTopArea.style.setProperty("display","flex","important");
+          signOutTopArea.style.setProperty("position","static","important");
+          signOutTopArea.style.setProperty("height","auto","important");
+          signOutTopArea.style.setProperty("max-height","none","important");
+          signOutTopArea.style.setProperty("overflow","visible","important");
           page.appendChild(signOutTopArea);
         }
-        /* Final page is intentionally locked: no Back, Next, or Finish route.
-           Only the explicit Sign Out button and confirmation can end the session. */
+        /* Final page is a fixed endpoint: Back/Next are not navigation choices here.
+           Earlier pages retain their normal Back/Next behavior. */
         back.hidden=true;
         back.disabled=true;
         back.setAttribute("aria-hidden","true");
         back.setAttribute("tabindex","-1");
         next.hidden=true;
         next.disabled=true;
-        status.textContent="Final page — this screen will not move on. Choose Sign Out only when you are ready.";
+        status.textContent="Final page — this screen will not move on automatically. Scroll up or down yourself. Sign Out occurs only after you choose Sign Out and then Confirm.";
+        status.hidden=false;
+        status.style.setProperty("display","block","important");
+        status.style.setProperty("visibility","visible","important");
         return;
       }
       if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
