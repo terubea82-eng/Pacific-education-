@@ -325,6 +325,14 @@
       else parent.appendChild(target);
     }
     target.hidden=true;
+    if(target.__peSequentialDescendantHiddenState){
+      target.__peSequentialDescendantHiddenState.forEach(function(state){
+        if(!state.el) return;
+        if(state.hiddenAttr===null) state.el.removeAttribute("data-pe-sequential-hidden");
+        else state.el.setAttribute("data-pe-sequential-hidden",state.hiddenAttr);
+      });
+      target.__peSequentialDescendantHiddenState=null;
+    }
     if(target.__peSequentialOriginalDisplay) target.style.setProperty("display",target.__peSequentialOriginalDisplay,target.__peSequentialOriginalDisplayPriority||"");
     else target.style.removeProperty("display");
     if(target.__peSequentialOriginalAriaHidden===null || typeof target.__peSequentialOriginalAriaHidden==="undefined") target.removeAttribute("aria-hidden");
@@ -345,6 +353,14 @@
     target.style.removeProperty("display");
     target.removeAttribute("aria-hidden");
     target.removeAttribute("data-pe-sequential-hidden");
+    /* The guided controller can mark nested controls/hosts as hidden before
+       their parent section is moved. Remove only that stale isolation marker
+       while hosted, and restore each original marker when the page is returned. */
+    target.__peSequentialDescendantHiddenState=[];
+    Array.prototype.forEach.call(target.querySelectorAll("[data-pe-sequential-hidden]"),function(el){
+      target.__peSequentialDescendantHiddenState.push({el:el,hiddenAttr:el.getAttribute("data-pe-sequential-hidden")});
+      el.removeAttribute("data-pe-sequential-hidden");
+    });
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
     if(movedTargets.indexOf(target)===-1) movedTargets.push(target);
