@@ -482,7 +482,7 @@ function renderPageGuide(targetId){
     target.insertBefore(guide,target.firstChild);
   }
   var numberEl=guide.querySelector(".pacedu-page-sequence-number");
-  if(numberEl) numberEl.textContent="Page "+info[0]+" of 14 — "+info[1];
+  if(numberEl) numberEl.textContent="Page "+info[0]+" of 13 — "+info[1];
   guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
 }
 
