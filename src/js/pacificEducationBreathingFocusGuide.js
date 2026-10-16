@@ -59,10 +59,11 @@ function focusFinalSignOut(target,page,pageChanged){
  if(activeTarget===target&&target.classList.contains(FINAL_CLASS))return;
  /* Final Sign Out is a reading surface: do not insert labels, change control dimensions, focus it, or scroll to it. Use outline-only styling so the cue cannot change document height and trigger scroll anchoring. */
  clearVisuals();
- if(page){page.style.setProperty("overflow-anchor","none");}
+ if(page){page.style.setProperty("overflow-anchor","none","important");}
  var shell=get("pacificEducationSequentialRoleWorkspace");
- if(shell){shell.style.setProperty("overflow-anchor","none");}
- try{document.documentElement.style.setProperty("scroll-behavior","auto","important");document.body.style.setProperty("scroll-behavior","auto","important");}catch(e){}
+ if(shell){shell.style.setProperty("overflow-anchor","none","important");}
+ /* Disable viewport scroll anchoring for the whole final reading surface. Anchoring on html/body can otherwise compensate for small layout changes above the reader and move the viewport back toward the bottom. */
+ try{document.documentElement.style.setProperty("overflow-anchor","none","important");document.body.style.setProperty("overflow-anchor","none","important");document.documentElement.style.setProperty("scroll-behavior","auto","important");document.body.style.setProperty("scroll-behavior","auto","important");}catch(e){}
  target.classList.add(FINAL_CLASS);target.setAttribute("data-pe-breathing-active","true");activeTarget=target;activeControl=target;
 }
 function focusWorkspace(){
