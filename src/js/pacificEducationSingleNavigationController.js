@@ -124,7 +124,7 @@ function ensureVisibleLevelSelectorFallback(){
     try{
       selectorIsVisible=existingSelect.getClientRects().length>0;
       var node=existingSelect;
-      while(selectorIsVisible && node && node!==host.parentElement){
+      while(selectorIsVisible && node){
         var style=window.getComputedStyle(node);
         if(style.display==="none" || style.visibility==="hidden" ||
            Number(style.opacity)===0 || node.hidden){
