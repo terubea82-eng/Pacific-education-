@@ -18,3 +18,13 @@ test("sequential role workspace explicitly reveals the active moved page and ret
   assert.match(sequential, /target\.style\.setProperty\("visibility","visible","important"\)/);
   assert.match(sequential, /refreshFeatureForTarget\("levelSelection"\)/);
 });
+
+
+test("sequential workspace provides an independent visible Learning Level recovery if selector rendering fails", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /function ensureSequentialLevelRecovery\(target,page\)/);
+  assert.match(sequential, /data-pe-level-recovery.*sequential/);
+  assert.match(sequential, /peSequentialLearningLevelRecoverySelect/);
+  assert.match(sequential, /if\(item\[0\]==="levelSelection"\) ensureSequentialLevelRecovery\(target,page\)/);
+  assert.match(sequential, /does not verify a teacher-assigned class/);
+});
