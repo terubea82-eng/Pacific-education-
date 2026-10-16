@@ -191,14 +191,15 @@ test("student sequential workspace begins with mandatory Capability Test and pre
   assert.match(sequential, /does not verify an individual assignment/);
 });
 
-test("Sign Out stays top-right and visible on every role workspace page while confirmation starts hidden", () => {
+test("Sign Out stays hidden before the final page and confirmation starts hidden", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(sequential, /peSequentialSignOut.*hidden style=/);
-  assert.match(sequential, /position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end/);
-  assert.match(sequential, /signOutArea\.hidden = false/);
+  assert.match(sequential, /signOutTopArea\.hidden=true/);
+  assert.match(sequential, /if\(signOutArea\) signOutArea\.hidden=true/);
   assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)/);
   assert.match(sequential, /peSequentialSignOutConfirm.*hidden/);
-  assert.doesNotMatch(sequential, /signOutArea\.hidden = item\[0\] !==/);
+  assert.doesNotMatch(sequential, /position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end/);
+  assert.doesNotMatch(sequential, /shell\.insertBefore\(signOutTopArea,shell\.firstChild\)/);
 });
 
 
