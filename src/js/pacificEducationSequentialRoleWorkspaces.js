@@ -365,8 +365,30 @@
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
     if(movedTargets.indexOf(target)===-1) movedTargets.push(target);
+    /* Reassert the active page and its moved feature after legacy CSS/hidden attributes.
+       Some guided-flow rules target the original page tree and can otherwise leave
+       this sequential workspace showing a blank content area. */
+    page.hidden=false;
+    page.removeAttribute("aria-hidden");
+    page.style.setProperty("display","block","important");
+    page.style.setProperty("visibility","visible","important");
+    page.style.setProperty("opacity","1","important");
+    page.style.setProperty("position","relative","important");
+    target.hidden=false;
+    target.removeAttribute("aria-hidden");
+    target.removeAttribute("data-pe-sequential-hidden");
+    target.style.setProperty("display","block","important");
+    target.style.setProperty("visibility","visible","important");
+    target.style.setProperty("opacity","1","important");
     page.appendChild(target);
     initialiseExistingSelector(target);
+    /* Reuse the navigation-owned recovery for a disabled/missing class selector.
+       The fallback is additive and labels its class choice as unverified. */
+    if(target.id==="levelSelection" &&
+       window.PacificEducationSingleNavigation &&
+       typeof window.PacificEducationSingleNavigation.refreshFeatureForTarget==="function"){
+      try{window.PacificEducationSingleNavigation.refreshFeatureForTarget("levelSelection");}catch(e){}
+    }
     return true;
   }
 
