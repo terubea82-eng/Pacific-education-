@@ -306,6 +306,12 @@
     if(!parent) return;
     target.__peSequentialOriginalParent=parent;
     target.__peSequentialOriginalNextSibling=target.nextSibling;
+    /* Guided navigation may leave an inline display:none!important and
+       aria-hidden=true on the section. Preserve those values for restoration,
+       then clear them while the section is hosted as the active workspace page. */
+    target.__peSequentialOriginalDisplay=target.style.getPropertyValue("display");
+    target.__peSequentialOriginalDisplayPriority=target.style.getPropertyPriority("display");
+    target.__peSequentialOriginalAriaHidden=target.getAttribute("aria-hidden");
     target.dataset.peSequentialOriginal="true";
   }
 
@@ -318,6 +324,10 @@
       else parent.appendChild(target);
     }
     target.hidden=true;
+    if(target.__peSequentialOriginalDisplay) target.style.setProperty("display",target.__peSequentialOriginalDisplay,target.__peSequentialOriginalDisplayPriority||"");
+    else target.style.removeProperty("display");
+    if(target.__peSequentialOriginalAriaHidden===null || typeof target.__peSequentialOriginalAriaHidden==="undefined") target.removeAttribute("aria-hidden");
+    else target.setAttribute("aria-hidden",target.__peSequentialOriginalAriaHidden);
     target.removeAttribute("data-pe-sequential-page");
     target.dataset.peSequentialMoved="false";
     target.setAttribute("data-pe-sequential-hidden","true");
@@ -331,6 +341,8 @@
     if(!target) return false;
     rememberOriginal(target);
     target.hidden=false;
+    target.style.removeProperty("display");
+    target.removeAttribute("aria-hidden");
     target.removeAttribute("data-pe-sequential-hidden");
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
