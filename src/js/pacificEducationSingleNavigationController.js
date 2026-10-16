@@ -13,7 +13,8 @@
  */
 
 var STEPS = {
-  prototypeNextButton:  [5, "levelSelection"],
+  /* Skip the blank Learning Level screen in the student journey; keep its feature code intact. */
+  prototypeNextButton:  [6, "subjectSelection"],
   levelNextButton:      [6, "subjectSelection"],
   subjectNextButton:    [7, "termSelection"],
   termNextButton:       [8, "capabilitySelection"],
@@ -36,7 +37,7 @@ var BACK = {
   pacificEducationIdentityRegistration: [3, "rules"],
   prototypeAccess: [4, "registration"],
   levelSelection: [5, "prototype"],
-  subjectSelection: [6, "level"],
+  subjectSelection: [5, "prototype"],
   termSelection: [7, "subject"],
   capabilitySelection: [8, "term"],
   dailyLesson: [9, "capability"],
@@ -264,7 +265,11 @@ function refreshFeatureForTarget(targetId){
     safeCall("PacificEducationLevelSelector","initialise");
     ensureVisibleLevelSelectorFallback();
   }
-  if(targetId==="subjectSelection") safeCall("PacificEducationSubjectSelector","initialise");
+  if(targetId==="subjectSelection"){
+    /* Preserve the saved/default class context while the blank level screen is skipped. */
+    safeCall("PacificEducationLevelSelector","initialise");
+    safeCall("PacificEducationSubjectSelector","initialise");
+  }
   if(targetId==="termSelection") safeCall("PacificEducationTermSelector","initialise");
   if(targetId==="capabilitySelection") safeCall("PacificEducationCapabilitySelector","initialise");
 
@@ -446,14 +451,14 @@ var PAGE_GUIDE = {
   pacificEducationIdentityRegistration:[4,"User registration"],
   prototypeAccess:[5,"Prototype access"],
   levelSelection:[6,"Learning level"],
-  subjectSelection:[7,"Subject"],
-  termSelection:[8,"Term"],
-  capabilitySelection:[9,"Learning capability"],
-  dailyLesson:[10,"Daily lesson"],
-  dailyLessonPracticeStage:[11,"Practice activity"],
-  assessments:[12,"Assessment"],
-  pacificEducationCoverageDashboard:[13,"Coverage and progress"],
-  teacherCalendarSection:[14,"Teacher calendar and review"]
+  subjectSelection:[6,"Subject"],
+  termSelection:[7,"Term"],
+  capabilitySelection:[8,"Learning capability"],
+  dailyLesson:[9,"Daily lesson"],
+  dailyLessonPracticeStage:[10,"Practice activity"],
+  assessments:[11,"Assessment"],
+  pacificEducationCoverageDashboard:[12,"Coverage and progress"],
+  teacherCalendarSection:[13,"Teacher calendar and review"]
 };
 function renderPageGuide(targetId){
   var target=el(targetId);
