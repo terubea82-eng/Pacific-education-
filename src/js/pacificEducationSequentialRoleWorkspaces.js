@@ -358,7 +358,21 @@
    * so a workspace step cannot be empty merely because a feature script failed. */
   function ensureSequentialLevelRecovery(target,page){
     if(!page || (target && target.id!=="levelSelection")) return;
-    if(target && target.querySelector("select:not(:disabled)")) return;
+    /* A selector in the DOM is not enough: legacy CSS can leave it hidden or
+       clipped inside the moved feature. Skip recovery only when a real enabled
+       selector is actually rendered in the active page. */
+    var existingSelect=target && target.querySelector("select:not(:disabled)");
+    if(existingSelect){
+      var selectorIsVisible=false;
+      try{
+        var selectorStyle=window.getComputedStyle(existingSelect);
+        selectorIsVisible=existingSelect.getClientRects().length>0 &&
+          selectorStyle.display!=="none" &&
+          selectorStyle.visibility!=="hidden" &&
+          Number(selectorStyle.opacity)!==0;
+      }catch(e){}
+      if(selectorIsVisible) return;
+    }
     if(page.querySelector("[data-pe-level-recovery='sequential']")) return;
     var panel=document.createElement("section");
     panel.setAttribute("data-pe-level-recovery","sequential");
