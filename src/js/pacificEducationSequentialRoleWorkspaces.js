@@ -432,6 +432,24 @@
       paint();
     }
 
+    function refreshWorkspaceSelector(stepId){
+      /* Guided navigation refreshes these selectors when a page opens. The
+         role workspace must do the same after moving the original section into
+         its single-page host; otherwise the heading can appear with an empty
+         selector if activation ran before the workspace handoff. */
+      var selectorByStep = {
+        levelSelection: "PacificEducationLevelSelector",
+        subjectSelection: "PacificEducationSubjectSelector",
+        termSelection: "PacificEducationTermSelector",
+        capabilitySelection: "PacificEducationCapabilitySelector"
+      };
+      var name = selectorByStep[stepId];
+      var feature = name && window[name];
+      if(feature && typeof feature.initialise === "function"){
+        try{ feature.initialise(); }catch(e){}
+      }
+    }
+
     function renderPage(){
       /* Once the final Sign Out page is visible, no incidental render request
          may replace it. The confirmed Sign Out handler removes the shell instead. */
@@ -648,6 +666,7 @@
         page.appendChild(resultBox);
       }else if(target){
         moveTargetIntoPage(target,page);
+        refreshWorkspaceSelector(item[0]);
 
         /*
          * Student-facing key activity shortcuts.
