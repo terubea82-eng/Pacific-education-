@@ -5,6 +5,7 @@ const fs = require("node:fs");
 const html = fs.readFileSync("src/index.html", "utf8");
 const controller = fs.readFileSync("src/js/pacificEducationSingleNavigationController.js", "utf8");
 const voiceNavigation = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
+const voiceEngine = fs.readFileSync("src/js/pacificEducationSpeechVoice.js", "utf8");
 const boxActivation = fs.readFileSync("src/js/pacificEducation856BoxActivation.js", "utf8");
 const htmlIds = new Set([...html.matchAll(/\bid=["']([^"']+)["']/g)].map((match) => match[1]));
 const controllerCreatedIds = new Set(
