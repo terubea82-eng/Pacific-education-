@@ -124,9 +124,14 @@ test("guided Next transitions use the actual page numbers after registration", (
 });
 
 
-test("final Sign Out page removes sticky positioning so user scrolling stays in control", () => {
+test("final Sign Out button appears below the reading text and never stays at the top", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
-  assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)\{[\s\S]*?signOutTopArea\.style\.position="static"/);
+  assert.match(sequential, /if\(signOutArea\) signOutArea\.hidden=true/);
+  assert.match(sequential, /if\(item\[0\]!=="paceduSignOutPage"\)[\s\S]*?page\.classList\.add\("pacedu-role-page-enter"\)/);
+  assert.match(sequential, /if\(item\[0\]!=="paceduSignOutPage"\)\{[\s\S]*?focusTitle\.focus\(\{preventScroll:true\}\)/);
+  assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)\{[\s\S]*?page\.appendChild\(signOutIntro\);[\s\S]*?page\.appendChild\(signOutTopArea\)/);
+  assert.doesNotMatch(sequential, /signOutTopArea\.style\.cssText="position:sticky/);
+  assert.doesNotMatch(sequential, /shell\.insertBefore\(signOutTopArea,shell\.firstChild\)/);
   assert.match(sequential, /This page will stay here until you deliberately choose to sign out/);
 });
 
@@ -186,14 +191,15 @@ test("student sequential workspace begins with mandatory Capability Test and pre
   assert.match(sequential, /does not verify an individual assignment/);
 });
 
-test("Sign Out stays top-right and visible on every role workspace page while confirmation starts hidden", () => {
+test("Sign Out stays hidden before the final page and confirmation starts hidden", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(sequential, /peSequentialSignOut.*hidden style=/);
-  assert.match(sequential, /position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end/);
-  assert.match(sequential, /signOutArea\.hidden = false/);
+  assert.match(sequential, /signOutTopArea\.hidden=true/);
+  assert.match(sequential, /if\(signOutArea\) signOutArea\.hidden=true/);
   assert.match(sequential, /if\(item\[0\]==="paceduSignOutPage"\)/);
   assert.match(sequential, /peSequentialSignOutConfirm.*hidden/);
-  assert.doesNotMatch(sequential, /signOutArea\.hidden = item\[0\] !==/);
+  assert.doesNotMatch(sequential, /position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end/);
+  assert.doesNotMatch(sequential, /shell\.insertBefore\(signOutTopArea,shell\.firstChild\)/);
 });
 
 

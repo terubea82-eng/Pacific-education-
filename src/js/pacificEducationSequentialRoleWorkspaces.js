@@ -363,11 +363,11 @@
     shell.innerHTML="<h2 id=\"peSequentialTitle\"></h2><p id=\"peSequentialProgress\" role=\"status\" aria-live=\"polite\"></p><div style=\"display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;\"><button type=\"button\" id=\"peSequentialHear\" style=\"padding:12px 16px;font-weight:700;\">🔊 Hear This Page</button><button type=\"button\" id=\"peSequentialStop\" style=\"padding:12px 16px;font-weight:700;\">🔇 Stop Speech</button></div><div id=\"peSequentialPage\" tabindex=\"-1\"></div><div style=\"margin-top:18px;display:flex;justify-content:flex-start;gap:10px;flex-wrap:wrap;\"><button type=\"button\" id=\"peSequentialBack\" style=\"background:#fff;padding:14px 20px;font-weight:700;border-radius:8px;\">⬅️ Back</button><button type=\"button\" id=\"peSequentialNext\" style=\"background:#15803d;color:#fff;padding:14px 20px;font-weight:700;border-radius:8px;\">➡️ Next</button></div><p id=\"peSequentialStatus\" role=\"status\" aria-live=\"polite\"></p><div id=\"peSequentialSignOut\" hidden style=\"margin-top:28px;padding-top:18px;border-top:2px solid currentColor;\"><button type=\"button\" id=\"peSequentialSignOutButton\" style=\"padding:13px 18px;font-weight:700;\">🔴 Sign Out</button><div id=\"peSequentialSignOutConfirm\" hidden style=\"margin-top:10px;padding:12px;border:2px solid currentColor;\"><p>Are you sure you want to sign out?</p><button type=\"button\" id=\"peSequentialSignOutYes\">✓ Confirm Sign Out</button> <button type=\"button\" id=\"peSequentialSignOutNo\">Cancel</button></div></div>";
     var signOutTopArea=shell.querySelector("#peSequentialSignOut");
     if(signOutTopArea){
-      signOutTopArea.hidden=false;
-      signOutTopArea.style.cssText="position:sticky;top:0;z-index:20;display:flex;justify-content:flex-end;align-items:flex-start;flex-wrap:wrap;gap:8px;margin:0 0 12px;padding:8px;background:#fff;border-bottom:1px solid #d1d5db;";
+      /* Keep Sign Out out of the top reading area until the final page is shown. */
+      signOutTopArea.hidden=true;
+      signOutTopArea.style.cssText="position:static;top:auto;z-index:auto;display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:12px 0 0;background:transparent;border-top:1px solid #d1d5db;";
       var signOutTopButton=signOutTopArea.querySelector("#peSequentialSignOutButton");
       if(signOutTopButton) signOutTopButton.style.cssText="background:#a62e35;color:#fff;padding:10px 14px;font-weight:700;border:0;border-radius:8px;";
-      shell.insertBefore(signOutTopArea,shell.firstChild);
     }
     app.insertBefore(shell,app.firstChild);
 
@@ -438,6 +438,8 @@
       if(shell.getAttribute("data-pe-final-signout")==="true") return;
       restoreAllMovedTargets();
       var signOutArea=document.getElementById("peSequentialSignOut");
+      /* Never expose or focus the Sign Out control during earlier steps. */
+      if(signOutArea) signOutArea.hidden=true;
       page.innerHTML="";
 
       /* Give every role-workspace page the same short, steady entrance used by
@@ -453,18 +455,25 @@
           "@media(prefers-reduced-motion:reduce){#peSequentialPage.pacedu-role-page-enter{animation:none!important;transform:none!important;opacity:1!important}}";
         (document.head||document.documentElement).appendChild(transitionStyle);
       }
-      page.classList.remove("pacedu-role-page-enter");
-      try{ void page.offsetWidth; }catch(e){}
-      page.classList.add("pacedu-role-page-enter");
-      window.setTimeout(function(){
-        if(page && page.classList) page.classList.remove("pacedu-role-page-enter");
-      },260);
-
       var item=sequence[index];
-      /* Keep Sign Out reachable on every workspace step. The dedicated final
-         Sign Out page remains in the sequence, but users must not be trapped
-         without an exit if a role step is unavailable or cannot advance. */
-      if(signOutArea) signOutArea.hidden = false;
+      /* Final reading page has no entrance transform/animation or scripted focus.
+         The viewport must remain entirely under the user's control. */
+      if(item[0]!=="paceduSignOutPage"){
+        page.classList.remove("pacedu-role-page-enter");
+        try{ void page.offsetWidth; }catch(e){}
+        page.classList.add("pacedu-role-page-enter");
+        window.setTimeout(function(){
+          if(page && page.classList) page.classList.remove("pacedu-role-page-enter");
+        },260);
+      }else{
+        page.classList.remove("pacedu-role-page-enter");
+        page.style.transform="none";
+        page.style.animation="none";
+        page.style.overflowAnchor="auto";
+        page.style.scrollBehavior="auto";
+      }
+      /* Keep the Sign Out action hidden until the user reaches its final page.
+         Do not keep a duplicate/early red button visible during reading. */
       if(item[0]==="dailyLesson") item=[item[0],"Day "+dailyDay+" of 365"];
       var target=document.getElementById(item[0]);
 
@@ -521,11 +530,17 @@
           signOutTopArea.style.position="static";
           signOutTopArea.style.top="auto";
           signOutTopArea.style.zIndex="auto";
+          signOutTopArea.hidden=true;
         }
         var signOutIntro=document.createElement("section");
         signOutIntro.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;margin-bottom:16px;";
         signOutIntro.innerHTML="<h3>🔴 Sign Out — Final Page</h3><p>Your workspace is complete. This page will stay here until you deliberately choose to sign out.</p><p>Signing out ends the active workspace session. Saved registration details and completed daily activities are retained on this device.</p>";
         page.appendChild(signOutIntro);
+        /* Place the Sign Out control after the reading text, never at the top of the workspace. */
+        if(signOutTopArea){
+          signOutTopArea.hidden=false;
+          page.appendChild(signOutTopArea);
+        }
         /* Final page is intentionally locked: no Back, Next, or Finish route.
            Only the explicit Sign Out button and confirmation can end the session. */
         back.hidden=true;
@@ -659,11 +674,13 @@
         window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
-      /* Keep Next from scrolling the viewport through unrelated page content. */
-      try{
-        var focusTitle=document.getElementById("peSequentialTitle");
-        if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
-      }catch(e){}
+      /* Do not move focus automatically on the final reading page. */
+      if(item[0]!=="paceduSignOutPage"){
+        try{
+          var focusTitle=document.getElementById("peSequentialTitle");
+          if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
+        }catch(e){}
+      }
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
 
