@@ -60,9 +60,10 @@ function focusWorkspace(){
  var title=get("peSequentialTitle"),key="workspace:"+(title?title.textContent:"");
  if(key!==lastPageKey){lastPageKey=key;completed=new WeakSet();}
  var signOutButton=get("peSequentialSignOutButton"),yes=get("peSequentialSignOutYes"),confirm=get("peSequentialSignOutConfirm");
- /* The final page is a reading surface: do not insert focus labels, animate a target, or change layout while the user scrolls. The Sign Out controls remain available for deliberate taps. */
- if(signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden){clearVisuals();return true;}
- if(yes&&visible(yes)&&confirm&&!confirm.hidden){clearVisuals();return true;}
+ /* The Sign Out controls can exist in the DOM while earlier workspace pages are active. Only disable breathing focus on the actual final Sign Out page, so earlier pages still receive their required blue focus or green Next cue. */
+ var isFinalSignOutPage=!!(title&&/Sign Out/i.test(title.textContent));
+ if(isFinalSignOutPage&&signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden){clearVisuals();return true;}
+ if(isFinalSignOutPage&&yes&&visible(yes)&&confirm&&!confirm.hidden){clearVisuals();return true;}
  var list=mandatoryFields(page),target=null;
  for(var i=0;i<list.length;i++){var el=list[i];if(!fieldComplete(el)){target=el;break;}completed.add(el);}
  var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,"MANDATORY STEP — Complete this required box correctly before moving to the next one.",page);}
