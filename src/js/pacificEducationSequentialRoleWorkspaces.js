@@ -352,6 +352,51 @@
     }
   }
 
+  /* Last-resort visible recovery for the Student Learning Level page.
+   * The existing selector and navigation-owned recovery remain first choice.
+   * This separate panel is added only when neither produced an enabled select,
+   * so a workspace step cannot be empty merely because a feature script failed. */
+  function ensureSequentialLevelRecovery(target,page){
+    if(!target || !page || target.id!=="levelSelection") return;
+    if(target.querySelector("select:not(:disabled)")) return;
+    if(page.querySelector("[data-pe-level-recovery='sequential']")) return;
+    var panel=document.createElement("section");
+    panel.setAttribute("data-pe-level-recovery","sequential");
+    panel.setAttribute("aria-label","Learning Level recovery");
+    panel.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;padding:16px;border:2px solid #b45309;border-radius:10px;margin:12px 0;background:#fff;";
+    var heading=document.createElement("h3");
+    heading.textContent="Choose Your Learning Class / Level";
+    var note=document.createElement("p");
+    note.textContent="The normal class selector is not ready. Choose a pilot level to continue; this does not verify a teacher-assigned class.";
+    var label=document.createElement("label");
+    label.textContent="Learning class / level";
+    label.htmlFor="peSequentialLearningLevelRecoverySelect";
+    var select=document.createElement("select");
+    select.id="peSequentialLearningLevelRecoverySelect";
+    select.setAttribute("aria-label","Learning class or level");
+    select.style.cssText="display:block!important;visibility:visible!important;width:100%;max-width:420px;padding:12px;margin:8px 0;background:#fff;color:#111;";
+    for(var level=1;level<=13;level++){
+      var option=document.createElement("option");
+      option.value="Class "+level;
+      option.textContent="Class "+level;
+      select.appendChild(option);
+    }
+    var saved="";
+    try{saved=localStorage.getItem("pacificEducationLevel")||"";}catch(e){}
+    if(/^Class (?:[1-9]|1[0-3])$/.test(saved)) select.value=saved;
+    var status=document.createElement("p");
+    status.setAttribute("role","status");
+    status.setAttribute("aria-live","polite");
+    status.textContent="Pilot recovery is ready. Confirm your assigned class with your teacher.";
+    select.addEventListener("change",function(){
+      try{localStorage.setItem("pacificEducationLevel",select.value);}catch(e){}
+      status.textContent="Selected "+select.value+". Please confirm your assigned class with your teacher.";
+      try{document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged",{detail:{level:select.value,pilotRecovery:true}}));}catch(e){}
+    });
+    panel.appendChild(heading);panel.appendChild(note);panel.appendChild(label);
+    panel.appendChild(select);panel.appendChild(status);page.appendChild(panel);
+  }
+
   function moveTargetIntoPage(target,page){
     if(!target) return false;
     rememberOriginal(target);
@@ -701,6 +746,10 @@
         page.appendChild(resultBox);
       }else if(target){
         moveTargetIntoPage(target,page);
+        /* After the normal selector and navigation recovery have both had a
+           chance to initialise, keep Learning Level usable if no enabled
+           selector was rendered. This fallback lives in the active page itself. */
+        if(item[0]==="levelSelection") ensureSequentialLevelRecovery(target,page);
 
         /*
          * Student-facing key activity shortcuts.
