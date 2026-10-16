@@ -56,6 +56,7 @@ function focusRegistration(){
  var n=get("registrationNextButton");if(n&&!n.disabled){clearVisuals();n.classList.add(READY_CLASS);n.setAttribute("data-pe-breathing-next-ready","true");}return true;
 }
 function focusFinalSignOut(target,page,pageChanged){
+ if(activeTarget===target&&target.classList.contains(FOCUS_CLASS))return;
  /* Keep the final action visually identifiable without inserting a label, changing layout height, focusing it, or scrolling to it. Cancel any smooth scroll left over from the preceding workspace exactly once on entry; never call scrollTo during later refreshes or user scrolling. */
  clearVisuals();if(page){page.style.setProperty("overflow-anchor","none");}
  if(pageChanged){try{document.documentElement.style.setProperty("scroll-behavior","auto","important");document.body.style.setProperty("scroll-behavior","auto","important");var x=window.scrollX,y=window.scrollY;window.scrollTo({left:x,top:y,behavior:"instant"});}catch(e){}}
