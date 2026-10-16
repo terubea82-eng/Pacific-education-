@@ -374,12 +374,35 @@
     if(existingSelect){
       var selectorIsVisible=false;
       try{
-        var selectorStyle=window.getComputedStyle(existingSelect);
-        selectorIsVisible=existingSelect.getClientRects().length>0 &&
-          selectorStyle.display!=="none" &&
-          selectorStyle.visibility!=="hidden" &&
-          Number(selectorStyle.opacity)!==0;
-      }catch(e){}
+        selectorIsVisible=existingSelect.getClientRects().length>0;
+        var node=existingSelect;
+        while(selectorIsVisible && node){
+          var selectorStyle=window.getComputedStyle(node);
+          if(selectorStyle.display==="none" || selectorStyle.visibility==="hidden" ||
+             Number(selectorStyle.opacity)===0 || node.hidden){
+            selectorIsVisible=false;
+            break;
+          }
+          /* Match the navigation controller: a visible-looking select is not
+             usable when an ancestor hides it or clips it entirely. */
+          if(node!==existingSelect &&
+             (selectorStyle.overflowX==="hidden" || selectorStyle.overflowX==="clip" ||
+              selectorStyle.overflowY==="hidden" || selectorStyle.overflowY==="clip")){
+            var childRect=existingSelect.getBoundingClientRect();
+            var parentRect=node.getBoundingClientRect();
+            var clipLeft=parentRect.left+(node.clientLeft||0);
+            var clipTop=parentRect.top+(node.clientTop||0);
+            var clipRight=clipLeft+(node.clientWidth||0);
+            var clipBottom=clipTop+(node.clientHeight||0);
+            if(childRect.right<=clipLeft || childRect.left>=clipRight ||
+               childRect.bottom<=clipTop || childRect.top>=clipBottom){
+              selectorIsVisible=false;
+              break;
+            }
+          }
+          node=node.parentElement;
+        }
+      }catch(e){selectorIsVisible=false;}
       if(selectorIsVisible) return;
     }
     if(page.querySelector("[data-pe-level-recovery='sequential']")) return;
