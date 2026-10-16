@@ -37,8 +37,8 @@ test("sequential workspace provides an independent visible Learning Level recove
   assert.match(sequential, /selectorStyle\.visibility==="hidden"/, "hidden selector or ancestors must trigger recovery");
   assert.match(sequential, /while\(selectorIsVisible && node\)/, "sequential recovery must inspect selector ancestors");
   assert.match(sequential, /node\.hidden/, "hidden ancestors must trigger recovery");
-  assert.match(sequential, /selectorStyle\\.overflowX===\"hidden\"/);
-  assert.match(sequential, /selectorStyle\\.overflowY===\"clip\"/);
+  assert.match(sequential, /selectorStyle\.overflowX==="hidden"/, "horizontal clipping must be checked");
+  assert.match(sequential, /selectorStyle\.overflowY==="clip"/, "vertical clipping must be checked");
   assert.match(sequential, /childRect\.right<=clipLeft/, "fully clipped selectors must trigger recovery");
   assert.match(sequential, /childRect\.bottom<=clipTop/, "fully vertically clipped selectors must trigger recovery");
   assert.match(sequential, /data-pe-level-recovery.*sequential/);
