@@ -207,16 +207,32 @@ function ensureVisibleLevelSelectorFallback(){
     option.value=level;option.textContent=level;select.appendChild(option);
   });
   select.value=levels.indexOf(saved)>=0?saved:"Class 1";
+  var instructions=document.createElement("p");
+  instructions.textContent="Choose your assigned class or level, then continue to Subject. This pilot recovery does not confirm a teacher-assigned class.";
+  var play=document.createElement("button");
+  play.type="button";
+  play.textContent="🔊 Hear Learning Level Instructions";
+  play.setAttribute("aria-label","Hear Learning Level instructions");
+  play.style.cssText="display:block;min-height:44px;padding:10px 14px;margin:10px 0;background:#0b5d7a;color:#fff;border:0;border-radius:7px;font-weight:700;";
   var note=document.createElement("p");
   note.setAttribute("role","status");
   note.setAttribute("aria-live","polite");
   note.textContent="Recovery selector is active because the normal selector did not render. This pilot choice does not verify a teacher-assigned class.";
+  play.addEventListener("click",function(){
+    var speech=window.PacificEducationSpeech;
+    var speak=speech&&typeof speech.speakText==="function"?speech.speakText:
+      (typeof window.speakText==="function"?window.speakText:null);
+    if(!speak){note.textContent="Voice could not start: the Pacedu speech controller is unavailable on this page.";return;}
+    var started=false;
+    try{started=speak("Learning Level. Choose your assigned class or level from the list. Then select Next to continue to Subject. If you are unsure of your assigned class, please ask your teacher.");}catch(e){}
+    note.textContent=started?"Learning Level instructions were sent to the speech engine. If you hear nothing, audio output is still failing.":"Voice could not start. Check the browser or device speech engine.";
+  });
   select.addEventListener("change",function(){
     try{localStorage.setItem("pacificEducationLevel",select.value);}catch(e){}
     note.textContent="Selected "+select.value+". Please confirm your assigned class with your teacher. Continue to Subject when ready.";
     try{document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged",{detail:{level:select.value,pilotRecovery:true}}));}catch(e){}
   });
-  box.appendChild(label);box.appendChild(select);box.appendChild(note);host.appendChild(box);
+  box.appendChild(label);box.appendChild(select);box.appendChild(instructions);box.appendChild(play);box.appendChild(note);host.appendChild(box);
 }
 function ensureVisibleDailyActivityFallback(){
   var host=el("dailyLessonActivity");
