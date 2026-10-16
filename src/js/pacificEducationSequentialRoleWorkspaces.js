@@ -357,8 +357,8 @@
    * This separate panel is added only when neither produced an enabled select,
    * so a workspace step cannot be empty merely because a feature script failed. */
   function ensureSequentialLevelRecovery(target,page){
-    if(!target || !page || target.id!=="levelSelection") return;
-    if(target.querySelector("select:not(:disabled)")) return;
+    if(!page || (target && target.id!=="levelSelection")) return;
+    if(target && target.querySelector("select:not(:disabled)")) return;
     if(page.querySelector("[data-pe-level-recovery='sequential']")) return;
     var panel=document.createElement("section");
     panel.setAttribute("data-pe-level-recovery","sequential");
@@ -600,6 +600,9 @@
         if(item[0]==="pacificEducationWeekendHolidaySupplementaryActivities" && window.PacificEducationPilotUserWorkspaces && typeof window.PacificEducationPilotUserWorkspaces.ensureWeekendHolidaySupplementarySection==="function") window.PacificEducationPilotUserWorkspaces.ensureWeekendHolidaySupplementarySection();
         target=document.getElementById(item[0]);
       }
+      /* If the Learning Level feature section itself is missing, still render a
+         clearly labelled recovery inside the active workspace instead of a blank page. */
+      if(!target && item[0]==="levelSelection") ensureSequentialLevelRecovery(null,page);
 
       /* The pilot may be opened before the legacy lesson engine has created its
          dailyLesson node. Create a real, local starter host for learner roles so
