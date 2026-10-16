@@ -115,11 +115,26 @@ function isRenderedLevelRecoveryHost(host){
   if(!host) return false;
   try{
     if(host.getClientRects().length===0) return false;
+    var hostRect=host.getBoundingClientRect();
+    /* A host can have a client rect but still have no usable area (for example,
+       a legacy wrapper collapsed to zero width/height). Never mount the only
+       recovery selector inside such a host. */
+    if(!(hostRect.width>0 && hostRect.height>0)) return false;
     var node=host;
     while(node){
       var style=window.getComputedStyle(node);
       if(style.display==="none" || style.visibility==="hidden" ||
          Number(style.opacity)===0 || node.hidden) return false;
+      if(node!==host && (style.overflowX==="hidden" || style.overflowX==="clip" ||
+         style.overflowY==="hidden" || style.overflowY==="clip")){
+        var parentRect=node.getBoundingClientRect();
+        var clipLeft=parentRect.left+(node.clientLeft||0);
+        var clipTop=parentRect.top+(node.clientTop||0);
+        var clipRight=clipLeft+(node.clientWidth||0);
+        var clipBottom=clipTop+(node.clientHeight||0);
+        if(hostRect.right<=clipLeft || hostRect.left>=clipRight ||
+           hostRect.bottom<=clipTop || hostRect.top>=clipBottom) return false;
+      }
       node=node.parentElement;
     }
     return true;
@@ -171,10 +186,13 @@ function ensureVisibleLevelSelectorFallback(){
     }catch(e){}
     if(selectorIsVisible) return;
   }
+  /* Do not duplicate the recovery control when navigation refreshes this page. */
+  if(host.querySelector("[data-pe-level-recovery='single-navigation']")) return;
   /* Recovery UI only: keep the class/level page usable if its selector script
      failed to load. This never claims that a teacher assignment was verified. */
   var box=document.createElement("div");
-  box.style.cssText="padding:14px;border:2px solid #b45309;border-radius:8px;margin:12px 0;";
+  box.setAttribute("data-pe-level-recovery","single-navigation");
+  box.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%;min-width:0;box-sizing:border-box;padding:14px;border:2px solid #b45309;border-radius:8px;margin:12px 0;background:#fff;color:#111;";
   var label=document.createElement("label");
   label.htmlFor="paceduLevelSelectorRecovery";
   label.textContent="Choose your learning class / level";
