@@ -155,15 +155,16 @@ function hideOtherGuidedPages(targetId){
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
     if(!page) return;
-    if(pageId===targetId){
-      page.hidden=false;
-      page.removeAttribute("aria-hidden");
-      try{ page.style.setProperty("display","block","important"); }catch(e){}
-      return;
-    }
-    page.hidden=true;
-    page.setAttribute("aria-hidden","true");
-    try{ page.style.setProperty("display","none","important"); }catch(e){}
+    /* Coverage Dashboard is nested inside Teacher Calendar in the legacy DOM.
+       Keep that required ancestor visible as a container, but expose only the
+       dashboard content as the active guided page. */
+    var requiredAncestor=targetId==="pacificEducationCoverageDashboard" &&
+      pageId==="teacherCalendarSection" && page.contains(el(targetId));
+    var visible=pageId===targetId || requiredAncestor;
+    page.hidden=!visible;
+    if(visible) page.removeAttribute("aria-hidden");
+    else page.setAttribute("aria-hidden","true");
+    try{ page.style.setProperty("display",visible?"block":"none","important"); }catch(e){}
   });
 }
 
@@ -344,15 +345,19 @@ function enforceSingleVisiblePage(targetId, expectedStep){
   GUIDED_PAGES.forEach(function(pageId){
     var page=el(pageId);
     if(!page) return;
-    var active=pageId===targetId;
-    if(page.hidden!==!active) page.hidden=!active;
-    if(active){
+    /* Preserve the required DOM ancestor when the Coverage Dashboard is active.
+       The ancestor is a layout container, not a second active page. */
+    var requiredAncestor=targetId==="pacificEducationCoverageDashboard" &&
+      pageId==="teacherCalendarSection" && page.contains(el(targetId));
+    var visible=pageId===targetId || requiredAncestor;
+    if(page.hidden===visible) page.hidden=!visible;
+    if(visible){
       if(page.hasAttribute("aria-hidden")) page.removeAttribute("aria-hidden");
     }else if(page.getAttribute("aria-hidden")!=="true"){
       page.setAttribute("aria-hidden","true");
     }
     try{
-      var wantedDisplay=active?"block":"none";
+      var wantedDisplay=visible?"block":"none";
       if(page.style.getPropertyValue("display")!==wantedDisplay ||
          page.style.getPropertyPriority("display")!=="important"){
         page.style.setProperty("display",wantedDisplay,"important");
