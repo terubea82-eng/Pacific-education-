@@ -55,15 +55,21 @@ function focusRegistration(){
  if(target)return showFocus(target,text,reg);
  var n=get("registrationNextButton");if(n&&!n.disabled){clearVisuals();n.classList.add(READY_CLASS);n.setAttribute("data-pe-breathing-next-ready","true");}return true;
 }
+function focusFinalSignOut(target,page,pageChanged){
+ /* Keep the final action visually identifiable without inserting a label, changing layout height, focusing it, or scrolling to it. Cancel any smooth scroll left over from the preceding workspace exactly once on entry; never call scrollTo during later refreshes or user scrolling. */
+ clearVisuals();if(page){page.style.setProperty("overflow-anchor","none");}
+ if(pageChanged){try{document.documentElement.style.setProperty("scroll-behavior","auto","important");document.body.style.setProperty("scroll-behavior","auto","important");var x=window.scrollX,y=window.scrollY;window.scrollTo({left:x,top:y,behavior:"instant"});}catch(e){}}
+ target.classList.add(FOCUS_CLASS);target.setAttribute("data-pe-breathing-active","true");activeTarget=target;activeControl=target;
+}
 function focusWorkspace(){
  var shell=get("pacificEducationSequentialRoleWorkspace"),page=get("peSequentialPage");if(!visible(shell)||!visible(page))return false;
  var title=get("peSequentialTitle"),key="workspace:"+(title?title.textContent:"");
- if(key!==lastPageKey){lastPageKey=key;completed=new WeakSet();}
+ var pageChanged=key!==lastPageKey;if(pageChanged){lastPageKey=key;completed=new WeakSet();}
  var signOutButton=get("peSequentialSignOutButton"),yes=get("peSequentialSignOutYes"),confirm=get("peSequentialSignOutConfirm");
  /* The Sign Out controls can exist in the DOM while earlier workspace pages are active. Only disable breathing focus on the actual final Sign Out page, so earlier pages still receive their required blue focus or green Next cue. */
  var isFinalSignOutPage=!!(title&&/Sign Out/i.test(title.textContent));
- if(isFinalSignOutPage&&signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden){clearVisuals();return true;}
- if(isFinalSignOutPage&&yes&&visible(yes)&&confirm&&!confirm.hidden){clearVisuals();return true;}
+ if(isFinalSignOutPage&&signOutButton&&visible(signOutButton)&&confirm&&confirm.hidden){focusFinalSignOut(signOutButton,page,pageChanged);return true;}
+ if(isFinalSignOutPage&&yes&&visible(yes)&&confirm&&!confirm.hidden){focusFinalSignOut(yes,page,pageChanged);return true;}
  var list=mandatoryFields(page),target=null;
  for(var i=0;i<list.length;i++){var el=list[i];if(!fieldComplete(el)){target=el;break;}completed.add(el);}
  var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,"MANDATORY STEP — Complete this required box correctly before moving to the next one.",page);}
