@@ -34,7 +34,7 @@ test("sequential workspace provides an independent visible Learning Level recove
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(sequential, /function ensureSequentialLevelRecovery\(target,page\)/);
   assert.match(sequential, /existingSelect\.getClientRects\(\)\.length>0/);
-  assert.match(sequential, /selectorStyle\.visibility!=="hidden"/);
+  assert.match(sequential, /selectorStyle\.visibility==="hidden"/, "hidden selector or ancestors must trigger recovery");
   assert.match(sequential, /while\(selectorIsVisible && node\)/, "sequential recovery must inspect selector ancestors");
   assert.match(sequential, /node\.hidden/, "hidden ancestors must trigger recovery");
   assert.match(sequential, /selectorStyle\\.overflowX===\"hidden\"/);
