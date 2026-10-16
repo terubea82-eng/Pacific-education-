@@ -307,9 +307,6 @@
     if(!parent) return;
     target.__peSequentialOriginalParent=parent;
     target.__peSequentialOriginalNextSibling=target.nextSibling;
-    /* Guided navigation may leave an inline display:none!important and
-       aria-hidden=true on the section. Preserve those values for restoration,
-       then clear them while the section is hosted as the active workspace page. */
     target.__peSequentialOriginalDisplay=target.style.getPropertyValue("display");
     target.__peSequentialOriginalDisplayPriority=target.style.getPropertyPriority("display");
     target.__peSequentialOriginalAriaHidden=target.getAttribute("aria-hidden");
@@ -324,6 +321,14 @@
       if(next && next.parentNode===parent) parent.insertBefore(target,next);
       else parent.appendChild(target);
     }
+    /* Restore original inline display and accessibility state when this section
+       leaves the active page. It remains hidden in the inactive application shell. */
+    target.style.removeProperty("display");
+    if(target.__peSequentialOriginalDisplay){
+      target.style.setProperty("display",target.__peSequentialOriginalDisplay,target.__peSequentialOriginalDisplayPriority||"");
+    }
+    if(target.__peSequentialOriginalAriaHidden===null) target.removeAttribute("aria-hidden");
+    else target.setAttribute("aria-hidden",target.__peSequentialOriginalAriaHidden);
     target.hidden=true;
     if(target.__peSequentialDescendantHiddenState){
       target.__peSequentialDescendantHiddenState.forEach(function(state){
@@ -333,10 +338,6 @@
       });
       target.__peSequentialDescendantHiddenState=null;
     }
-    if(target.__peSequentialOriginalDisplay) target.style.setProperty("display",target.__peSequentialOriginalDisplay,target.__peSequentialOriginalDisplayPriority||"");
-    else target.style.removeProperty("display");
-    if(target.__peSequentialOriginalAriaHidden===null || typeof target.__peSequentialOriginalAriaHidden==="undefined") target.removeAttribute("aria-hidden");
-    else target.setAttribute("aria-hidden",target.__peSequentialOriginalAriaHidden);
     target.removeAttribute("data-pe-sequential-page");
     target.dataset.peSequentialMoved="false";
     target.setAttribute("data-pe-sequential-hidden","true");
@@ -346,25 +347,40 @@
     movedTargets.forEach(restoreMovedTarget);
   }
 
+  function initialiseExistingSelector(target){
+    if(!target) return;
+    var apiName={
+      "levelSelection":"PacificEducationLevelSelector",
+      "subjectSelection":"PacificEducationSubjectSelector",
+      "termSelection":"PacificEducationTermSelector",
+      "capabilitySelection":"PacificEducationCapabilitySelector"
+    }[target.id];
+    var api=apiName && window[apiName];
+    if(api && typeof api.initialise==="function"){
+      try{api.initialise();}catch(error){}
+    }
+  }
+
   function moveTargetIntoPage(target,page){
     if(!target) return false;
     rememberOriginal(target);
+    /* Legacy guided navigation may leave display:none!important and aria-hidden
+       on the moved section. Clear those stale page-hiding states only while the
+       existing selector section is the active sequential workspace page. */
     target.hidden=false;
-    target.style.removeProperty("display");
     target.removeAttribute("aria-hidden");
     target.removeAttribute("data-pe-sequential-hidden");
-    /* The guided controller can mark nested controls/hosts as hidden before
-       their parent section is moved. Remove only that stale isolation marker
-       while hosted, and restore each original marker when the page is returned. */
     target.__peSequentialDescendantHiddenState=[];
     Array.prototype.forEach.call(target.querySelectorAll("[data-pe-sequential-hidden]"),function(el){
       target.__peSequentialDescendantHiddenState.push({el:el,hiddenAttr:el.getAttribute("data-pe-sequential-hidden")});
       el.removeAttribute("data-pe-sequential-hidden");
     });
+    target.style.removeProperty("display");
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
     if(movedTargets.indexOf(target)===-1) movedTargets.push(target);
     page.appendChild(target);
+    initialiseExistingSelector(target);
     return true;
   }
 
@@ -459,24 +475,6 @@
         catch(e){status.textContent="Activity completed for this session, but local storage is unavailable. Please tell your teacher before leaving this page.";}
       });
       paint();
-    }
-
-    function refreshWorkspaceSelector(stepId){
-      /* Guided navigation refreshes these selectors when a page opens. The
-         role workspace must do the same after moving the original section into
-         its single-page host; otherwise the heading can appear with an empty
-         selector if activation ran before the workspace handoff. */
-      var selectorByStep = {
-        levelSelection: "PacificEducationLevelSelector",
-        subjectSelection: "PacificEducationSubjectSelector",
-        termSelection: "PacificEducationTermSelector",
-        capabilitySelection: "PacificEducationCapabilitySelector"
-      };
-      var name = selectorByStep[stepId];
-      var feature = name && window[name];
-      if(feature && typeof feature.initialise === "function"){
-        try{ feature.initialise(); }catch(e){}
-      }
     }
 
     function renderPage(){
@@ -695,7 +693,6 @@
         page.appendChild(resultBox);
       }else if(target){
         moveTargetIntoPage(target,page);
-        refreshWorkspaceSelector(item[0]);
 
         /*
          * Student-facing key activity shortcuts.
