@@ -111,8 +111,9 @@ test("protected #856 voice navigation remains unchanged while guided visibility 
   assert.match(controller, /data-pe-flow-step/);
   assert.match(controller, /function guided\(step,targetId\)/);
 });
-test("guided Next transitions use the actual page numbers after registration", () => {
-  assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
+test("guided Next transitions use the actual page numbers after registration and skip the blank Learning Level screen", () => {
+  assert.match(controller, /prototypeNextButton:\s*\[6,\s*"subjectSelection"\]/);
+  /* Keep the Learning Level Next route available for recovery when that page is opened directly. */
   assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
   assert.match(controller, /subjectNextButton:\s*\[7,\s*"termSelection"\]/);
   assert.match(controller, /termNextButton:\s*\[8,\s*"capabilitySelection"\]/);
