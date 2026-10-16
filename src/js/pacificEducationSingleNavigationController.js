@@ -113,10 +113,45 @@ function safeCall(objectName, method, args){
 
 function ensureVisibleLevelSelectorFallback(){
   var host=el("pacificEducationLevelSelector");
-  /* A leftover wrapper or hidden placeholder is not a working selector.
-     Only skip recovery when a real select control is already present. */
-  /* A disabled class-reference selector is present but cannot help a learner proceed. */
-  if(!host || host.querySelector("select:not(:disabled)")) return;
+  if(!host) return;
+  /* A selector in the DOM is not proof that the learner can use it. Legacy CSS
+     may hide it, make it transparent, or clip it inside a wrapper. Only skip
+     recovery when an enabled selector is rendered and its ancestor chain is
+     not hidden. Keep this check local to Learning Level. */
+  var existingSelect=host.querySelector("select:not(:disabled)");
+  if(existingSelect){
+    var selectorIsVisible=false;
+    try{
+      selectorIsVisible=existingSelect.getClientRects().length>0;
+      var node=existingSelect;
+      while(selectorIsVisible && node && node!==host.parentElement){
+        var style=window.getComputedStyle(node);
+        if(style.display==="none" || style.visibility==="hidden" ||
+           Number(style.opacity)===0 || node.hidden){
+          selectorIsVisible=false;
+          break;
+        }
+        /* overflow:hidden/clip can leave a selector technically rendered but
+           completely outside the visible box. Recover only when fully clipped. */
+        if(node!==existingSelect && (style.overflowX==="hidden" || style.overflowX==="clip" ||
+           style.overflowY==="hidden" || style.overflowY==="clip")){
+          var childRect=existingSelect.getBoundingClientRect();
+          var parentRect=node.getBoundingClientRect();
+          var clipLeft=parentRect.left+(node.clientLeft||0);
+          var clipTop=parentRect.top+(node.clientTop||0);
+          var clipRight=clipLeft+(node.clientWidth||0);
+          var clipBottom=clipTop+(node.clientHeight||0);
+          if(childRect.right<=clipLeft || childRect.left>=clipRight ||
+             childRect.bottom<=clipTop || childRect.top>=clipBottom){
+            selectorIsVisible=false;
+            break;
+          }
+        }
+        node=node.parentElement;
+      }
+    }catch(e){}
+    if(selectorIsVisible) return;
+  }
   /* Recovery UI only: keep the class/level page usable if its selector script
      failed to load. This never claims that a teacher assignment was verified. */
   var box=document.createElement("div");

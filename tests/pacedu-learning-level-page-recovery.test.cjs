@@ -7,6 +7,13 @@ const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspa
 
 test("Learning Level recovery appears when the existing selector is present but disabled", () => {
   assert.match(controller, /host\.querySelector\("select:not\(:disabled\)"\)/);
+  assert.match(controller, /existingSelect\.getClientRects\(\)\.length>0/);
+  assert.match(controller, /style\.visibility==="hidden"/);
+  assert.match(controller, /Number\(style\.opacity\)===0/);
+  assert.match(controller, /style\.overflowX==="hidden"/);
+  assert.match(controller, /style\.overflowY==="clip"/);
+  assert.match(controller, /childRect\.right<=clipLeft/);
+  assert.match(controller, /if\(selectorIsVisible\) return/);
   assert.match(controller, /Recovery selector is active because the normal selector did not render/);
   assert.match(controller, /This pilot choice does not verify a teacher-assigned class/);
 });
