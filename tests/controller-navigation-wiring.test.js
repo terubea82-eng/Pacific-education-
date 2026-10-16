@@ -111,6 +111,15 @@ test("protected #856 voice navigation remains unchanged while guided visibility 
   assert.match(controller, /data-pe-flow-step/);
   assert.match(controller, /function guided\(step,targetId\)/);
 });
+test("Chrome website refreshes cached workspace and protected voice script URLs", () => {
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261017-chrome-workspace-recovery-v1/);
+  assert.match(html, /pacificEducationSpeechVoice\.js\?v=20261017-chrome-voice-cache-refresh-v1/);
+  assert.match(html, /pacificEducationMandatoryVoiceNavigation\.js\?v=20261017-chrome-voice-cache-refresh-v1/);
+  assert.match(html, /pacificEducationUniversalButtonVoice\.js\?v=20261017-chrome-voice-cache-refresh-v1/);
+  assert.match(voiceEngine, /function speakText\(text, options\)/);
+  assert.match(voiceNavigation, /The protected #856 voice controller remains the speech engine foundation/);
+});
+
 test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
   assert.doesNotMatch(controller, /prototypeNextButton:\s*\[6,\s*"subjectSelection"\]/, "registration must not bypass Learning Level");
