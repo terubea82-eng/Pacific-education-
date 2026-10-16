@@ -181,11 +181,15 @@ test("Back returns to the immediately previous guided page with a matching flow 
   ];
 
   for (const item of cases) {
+    console.log("[guided Back diagnostic] enter:", item.current, "step:", item.step);
     const entered = await page.evaluate(({ step, current }) =>
       window.PacificEducationSingleNavigation.go(step, current), item);
+    console.log("[guided Back diagnostic] entered:", item.current, "result:", entered);
     expect(entered, "controller must enter " + item.current).toBe(true);
     await expect(page.locator("#" + item.current)).toBeVisible();
+    console.log("[guided Back diagnostic] click Back:", item.current);
     await page.locator("#pacificEducationBack_" + item.current).click();
+    console.log("[guided Back diagnostic] waiting for previous:", item.previous);
     await expect(page.locator("#" + item.previous)).toBeVisible();
     if (item.previousStep === null) {
       await expect(page.locator("body")).toHaveAttribute("data-pac-edu-entry-page", "3");
