@@ -34,9 +34,20 @@ test("sequential workspace provides an independent visible Learning Level recove
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(sequential, /function ensureSequentialLevelRecovery\(target,page\)/);
   assert.match(sequential, /existingSelect\.getClientRects\(\)\.length>0/);
-  assert.match(sequential, /selectorStyle\.visibility!=="hidden"/);
+  assert.match(sequential, /selectorStyle\.visibility==="hidden"/, "hidden selector or ancestors must trigger recovery");
+  assert.match(sequential, /while\(selectorIsVisible && node\)/, "sequential recovery must inspect selector ancestors");
+  assert.match(sequential, /node\.hidden/, "hidden ancestors must trigger recovery");
+  assert.match(sequential, /selectorStyle\.overflowX==="hidden"/, "horizontal clipping must be checked");
+  assert.match(sequential, /selectorStyle\.overflowY==="clip"/, "vertical clipping must be checked");
+  assert.match(sequential, /childRect\.right<=clipLeft/, "fully clipped selectors must trigger recovery");
+  assert.match(sequential, /childRect\.bottom<=clipTop/, "fully vertically clipped selectors must trigger recovery");
   assert.match(sequential, /data-pe-level-recovery.*sequential/);
   assert.match(sequential, /peSequentialLearningLevelRecoverySelect/);
   assert.match(sequential, /if\(item\[0\]==="levelSelection"\) ensureSequentialLevelRecovery\(target,page\)/);
   assert.match(sequential, /does not verify a teacher-assigned class/);
+});
+
+
+test("sequential recovery treats visibility-check errors as unsafe and shows recovery instead", () => {
+  assert.match(sequential, /catch\(e\)\{selectorIsVisible=false;\}/);
 });

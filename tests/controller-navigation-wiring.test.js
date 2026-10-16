@@ -111,8 +111,10 @@ test("protected #856 voice navigation remains unchanged while guided visibility 
   assert.match(controller, /data-pe-flow-step/);
   assert.match(controller, /function guided\(step,targetId\)/);
 });
-test("guided Next transitions use the actual page numbers after registration", () => {
+test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
+  assert.doesNotMatch(controller, /prototypeNextButton:\s*\[6,\s*"subjectSelection"\]/, "registration must not bypass Learning Level");
+  /* Keep the Learning Level Next route available for recovery when that page is opened directly. */
   assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
   assert.match(controller, /subjectNextButton:\s*\[7,\s*"termSelection"\]/);
   assert.match(controller, /termNextButton:\s*\[8,\s*"capabilitySelection"\]/);
@@ -121,6 +123,8 @@ test("guided Next transitions use the actual page numbers after registration", (
   assert.match(controller, /practiceNextButton:\s*\[11,\s*"assessments"\]/);
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
+  assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-learning-level-recovery-v1/);
 });
 
 
