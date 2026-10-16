@@ -170,7 +170,7 @@ test("Back returns to the immediately previous guided page with a matching flow 
     { current: "pacificEducationIdentityRegistration", step: 3, previous: "paceduPageRules", previousStep: null },
     { current: "prototypeAccess", step: 4, previous: "pacificEducationIdentityRegistration", previousStep: 3 },
     { current: "levelSelection", step: 5, previous: "prototypeAccess", previousStep: 4 },
-    { current: "subjectSelection", step: 6, previous: "levelSelection", previousStep: 5 },
+    { current: "subjectSelection", step: 6, previous: "prototypeAccess", previousStep: 4 },
     { current: "termSelection", step: 7, previous: "subjectSelection", previousStep: 6 },
     { current: "capabilitySelection", step: 8, previous: "termSelection", previousStep: 7 },
     { current: "dailyLesson", step: 9, previous: "capabilitySelection", previousStep: 8 },
