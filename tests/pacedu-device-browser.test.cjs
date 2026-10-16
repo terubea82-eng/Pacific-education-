@@ -1206,3 +1206,46 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialBack")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
 });
+
+test("student Class / Level page restores its existing selector after workspace handoff", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => {
+    try {
+      localStorage.setItem("pacificEducationLevel", "Class 1");
+      localStorage.setItem("pacificEducationSubject", "English");
+      sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
+        name: "Class Level Repair Test",
+        role: "Student",
+        country: "Fiji",
+        language: "en-AU"
+      }));
+      sessionStorage.setItem("pacificEducationPilotRegistered", "true");
+      sessionStorage.setItem("pacificEducationPilotRole", "Student");
+    } catch (_) {}
+  });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSequentialRoleWorkspaces?.build), { timeout: 10000 }).toBe("function");
+  await page.evaluate(() => window.PacificEducationSequentialRoleWorkspaces.build("student"));
+
+  const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
+  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
+  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
+  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability Result");
+
+  // Reproduce the reported failure: the selector host exists but its UI is blank.
+  await page.evaluate(() => {
+    const host = document.getElementById("pacificEducationLevelSelector");
+    if (host) host.innerHTML = "";
+  });
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Class / Level");
+  await expect(shell.locator("#pacificEducationLevelSelector")).toBeVisible();
+  await expect(shell.locator("#pacificEducationLevel")).toBeVisible();
+  expect(await shell.locator("#pacificEducationLevel option").count()).toBeGreaterThan(1);
+  await expect(shell.locator("#pacificEducationLevel")).toHaveValue("Class 1");
+  await expect(shell.locator("#peSequentialNext")).toBeEnabled();
+});

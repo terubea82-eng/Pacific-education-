@@ -286,7 +286,8 @@
       "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
       "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
-      "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}";
+      "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace #peSequentialPage > [data-pe-sequential-page='active']{display:block!important;visibility:visible!important;}";
     document.body.classList.toggle("pe-sequential-role-workspace-active",!!active);
   }
 
@@ -329,6 +330,14 @@
     if(target.__peSequentialOriginalAriaHidden===null) target.removeAttribute("aria-hidden");
     else target.setAttribute("aria-hidden",target.__peSequentialOriginalAriaHidden);
     target.hidden=true;
+    if(target.__peSequentialDescendantHiddenState){
+      target.__peSequentialDescendantHiddenState.forEach(function(state){
+        if(!state.el) return;
+        if(state.hiddenAttr===null) state.el.removeAttribute("data-pe-sequential-hidden");
+        else state.el.setAttribute("data-pe-sequential-hidden",state.hiddenAttr);
+      });
+      target.__peSequentialDescendantHiddenState=null;
+    }
     target.removeAttribute("data-pe-sequential-page");
     target.dataset.peSequentialMoved="false";
     target.setAttribute("data-pe-sequential-hidden","true");
@@ -361,6 +370,11 @@
     target.hidden=false;
     target.removeAttribute("aria-hidden");
     target.removeAttribute("data-pe-sequential-hidden");
+    target.__peSequentialDescendantHiddenState=[];
+    Array.prototype.forEach.call(target.querySelectorAll("[data-pe-sequential-hidden]"),function(el){
+      target.__peSequentialDescendantHiddenState.push({el:el,hiddenAttr:el.getAttribute("data-pe-sequential-hidden")});
+      el.removeAttribute("data-pe-sequential-hidden");
+    });
     target.style.removeProperty("display");
     target.setAttribute("data-pe-sequential-page","active");
     target.dataset.peSequentialMoved="true";
