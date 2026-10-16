@@ -724,10 +724,13 @@
       }
     },true);
 
-    var signOutConfirm=document.getElementById("peSequentialSignOutConfirm");
-    var signOutButton=document.getElementById("peSequentialSignOutButton");
-    var signOutCancel=document.getElementById("peSequentialSignOutNo");
-    var signOutYes=document.getElementById("peSequentialSignOutYes");
+    /* Query within this freshly-built shell. The legacy page may contain
+       duplicate IDs, and document.getElementById can bind Cancel to a stale
+       confirmation panel instead of the visible final-page panel. */
+    var signOutConfirm=shell.querySelector("#peSequentialSignOutConfirm");
+    var signOutButton=shell.querySelector("#peSequentialSignOutButton");
+    var signOutCancel=shell.querySelector("#peSequentialSignOutNo");
+    var signOutYes=shell.querySelector("#peSequentialSignOutYes");
     function setSignOutConfirmationVisible(visible){
       if(!signOutConfirm) return;
       signOutConfirm.hidden=!visible;
@@ -759,7 +762,7 @@
       if(event){event.preventDefault();event.stopImmediatePropagation();}
       setSignOutConfirmationVisible(false);
     };
-    document.getElementById("peSequentialSignOutYes").onclick=function(){
+    if(signOutYes) signOutYes.onclick=function(){
       try{
         /* Preserve the saved registration record before clearing active session-only state. */
         var savedRegistration=null;
