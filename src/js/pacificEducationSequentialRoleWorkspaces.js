@@ -761,11 +761,17 @@
        document-level click handlers can interfere. The button and panel are
        both resolved from this shell, never by a document-wide duplicate ID. */
     if(signOutCancel){
-      shell.addEventListener("click",function(event){
-        var cancel=event.target&&event.target.closest?event.target.closest("#peSequentialSignOutNo"):null;
-        if(cancel!==signOutCancel) return;
-        event.preventDefault();
-        event.stopImmediatePropagation();
+      /* Close on pointerdown as well as click: a legacy document-level click
+         capture listener can stop propagation before the shell sees click.
+         Pointerdown runs earlier in the normal tap sequence, so the visible
+         panel closes before that legacy click path can reopen or preserve it. */
+      function cancelSignOut(event){
+        if(event){event.preventDefault();event.stopPropagation();}
+        setSignOutConfirmationVisible(false);
+      }
+      signOutCancel.addEventListener("pointerdown",cancelSignOut,true);
+      signOutCancel.addEventListener("click",function(event){
+        if(event){event.preventDefault();event.stopImmediatePropagation();}
         setSignOutConfirmationVisible(false);
       },true);
       signOutCancel.onclick=function(event){
