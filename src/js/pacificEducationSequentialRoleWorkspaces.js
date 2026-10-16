@@ -756,12 +756,23 @@
       setSignOutConfirmationVisible(true);
       speak("Sign Out selected. Confirm Sign Out or Cancel.");
     };
-    if(signOutCancel) signOutCancel.onclick=function(event){
-      /* Cancel must also stop other listeners attached to this same button:
-         stopPropagation alone still permits sibling listeners to reopen it. */
-      if(event){event.preventDefault();event.stopImmediatePropagation();}
-      setSignOutConfirmationVisible(false);
-    };
+    /* Handle Cancel at the shell's capture phase as well as on the button.
+       This guarantees the visible workspace confirmation closes before legacy
+       document-level click handlers can interfere. The button and panel are
+       both resolved from this shell, never by a document-wide duplicate ID. */
+    if(signOutCancel){
+      shell.addEventListener("click",function(event){
+        var cancel=event.target&&event.target.closest?event.target.closest("#peSequentialSignOutNo"):null;
+        if(cancel!==signOutCancel) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        setSignOutConfirmationVisible(false);
+      },true);
+      signOutCancel.onclick=function(event){
+        if(event){event.preventDefault();event.stopImmediatePropagation();}
+        setSignOutConfirmationVisible(false);
+      };
+    }
     if(signOutYes) signOutYes.onclick=function(){
       try{
         /* Preserve the saved registration record before clearing active session-only state. */
