@@ -124,7 +124,7 @@ test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
   assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-level-host-recovery-v3/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-level-host-recovery-v4/);
 });
 
 
