@@ -134,6 +134,10 @@
   function registrationIsActive(){
     var body=document.body;
     if(!body) return false;
+    /* The sequential role workspace has its own page-aware focus guide. On the final Sign Out page, stop this legacy document-wide guide from scrolling other controls into view. */
+    var sequentialWorkspace=document.getElementById("pacificEducationSequentialRoleWorkspace");
+    var sequentialTitle=document.getElementById("peSequentialTitle");
+    if(sequentialWorkspace && visible(sequentialWorkspace) && sequentialTitle && /Sign Out/i.test(String(sequentialTitle.textContent||""))) return true;
     /* Registration is guided-flow step 3 even when the page controller has not
        populated data-pe-active-guided-page yet. The old check missed that state,
        so focus/highlight guidance could call scrollIntoView() and snap the phone
