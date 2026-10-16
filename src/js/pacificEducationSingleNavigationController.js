@@ -111,8 +111,102 @@ function safeCall(objectName, method, args){
   return false;
 }
 
+function ensureVisibleLevelSelectorFallback(){
+  var host=el("pacificEducationLevelSelector");
+  if(!host || host.children.length) return;
+  /* Recovery UI only: keep the class/level page usable if its selector script
+     failed to load. This never claims that a teacher assignment was verified. */
+  var box=document.createElement("div");
+  box.style.cssText="padding:14px;border:2px solid #b45309;border-radius:8px;margin:12px 0;";
+  var label=document.createElement("label");
+  label.htmlFor="paceduLevelSelectorRecovery";
+  label.textContent="Choose your learning class / level";
+  var select=document.createElement("select");
+  select.id="paceduLevelSelectorRecovery";
+  select.style.cssText="display:block;width:100%;max-width:420px;padding:12px;margin:8px 0;";
+  var levels=["Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
+  var saved="";
+  try{saved=localStorage.getItem("pacificEducationLevel")||"";}catch(e){}
+  levels.forEach(function(level){
+    var option=document.createElement("option");
+    option.value=level;option.textContent=level;select.appendChild(option);
+  });
+  select.value=levels.indexOf(saved)>=0?saved:"Class 1";
+  var note=document.createElement("p");
+  note.setAttribute("role","status");
+  note.setAttribute("aria-live","polite");
+  note.textContent="Recovery selector is active because the normal selector did not render. This pilot choice does not verify a teacher-assigned class.";
+  select.addEventListener("change",function(){
+    try{localStorage.setItem("pacificEducationLevel",select.value);}catch(e){}
+    note.textContent="Selected "+select.value+". Please confirm your assigned class with your teacher. Continue to Subject when ready.";
+    try{document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged",{detail:{level:select.value,pilotRecovery:true}}));}catch(e){}
+  });
+  box.appendChild(label);box.appendChild(select);box.appendChild(note);host.appendChild(box);
+}
+function ensureVisibleDailyActivityFallback(){
+  var host=el("dailyLessonActivity");
+  if(!host) return;
+  var text=String(host.textContent||"").trim();
+  if(host.querySelector("input,textarea,select,button,[data-pe-activity-card]") ||
+     (text && !/loading today's learning activity/i.test(text))) return;
+  /* Only supply a starter if the existing lesson renderer left its loading
+     placeholder in place. Preserve any real lesson/activity content. */
+  while(host.firstChild) host.removeChild(host.firstChild);
+  var card=document.createElement("section");
+  card.setAttribute("data-pe-activity-card","daily-starter");
+  card.style.cssText="padding:16px;border:2px solid #15803d;border-radius:10px;margin:12px 0;";
+  var heading=document.createElement("h3");heading.textContent="📚 Student Daily Activity — Day 1";
+  var instruction=document.createElement("p");instruction.textContent="Choose a subject, try the task, and save your response on this device. This is a pilot starter activity, not a verified teacher assignment.";
+  var subject=document.createElement("select");
+  subject.setAttribute("aria-label","Daily activity subject");
+  subject.style.cssText="display:block;width:100%;max-width:420px;padding:10px;margin:8px 0;";
+  [["English","English"],["Mathematics","Mathematics"],["Phonics","Phonics"]].forEach(function(pair){
+    var option=document.createElement("option");option.value=pair[0];option.textContent=pair[1];subject.appendChild(option);
+  });
+  var task=document.createElement("p");
+  var answer=document.createElement("textarea");
+  answer.setAttribute("aria-label","Your daily activity answer");
+  answer.placeholder="Write or dictate your answer here";
+  answer.rows=3;answer.style.cssText="display:block;width:100%;max-width:620px;box-sizing:border-box;padding:10px;margin:8px 0;";
+  var save=document.createElement("button");save.type="button";save.textContent="Save Answer";
+  var complete=document.createElement("button");complete.type="button";complete.textContent="✓ Mark Activity Complete";
+  var status=document.createElement("p");status.setAttribute("role","status");status.setAttribute("aria-live","polite");
+  var tasks={
+    English:"Write or say: “Good morning. My name is ____.”",
+    Mathematics:"Count five safe objects you can see. Write the total and the numbers from 1 to 5.",
+    Phonics:"Choose the letter A. Write one familiar word that begins with A, such as apple."
+  };
+  function loadSaved(){
+    try{
+      var key="pacificEducationDailyStarterResponsesV1_"+subject.value;
+      answer.value=localStorage.getItem(key+"_answer")||"";
+      var completed=localStorage.getItem(key+"_completed")==="true";
+      status.textContent=completed?"✓ "+subject.value+" activity completed and saved on this device.":"Starter activity ready. Save your answer when finished.";
+    }catch(e){status.textContent="Starter activity ready for this session.";}
+  }
+  function paintTask(){task.textContent=tasks[subject.value];loadSaved();}
+  subject.addEventListener("change",paintTask);
+  function persist(completed){
+    try{
+      var key="pacificEducationDailyStarterResponsesV1_"+subject.value;
+      localStorage.setItem(key+"_answer",answer.value);
+      localStorage.setItem(key+"_completed",completed?"true":"false");
+      localStorage.setItem(key+"_savedAt",new Date().toISOString());
+      status.textContent=completed?"✓ "+subject.value+" activity marked complete and saved on this device.":"Answer saved on this device.";
+    }catch(e){status.textContent="Storage is unavailable; your answer is not confirmed saved.";}
+  }
+  save.addEventListener("click",function(){persist(false);});
+  complete.addEventListener("click",function(){persist(true);});
+  card.appendChild(heading);card.appendChild(instruction);card.appendChild(subject);card.appendChild(task);
+  var answerLabel=document.createElement("label");answerLabel.textContent="Your answer";answerLabel.htmlFor="paceduDailyStarterAnswer";answer.id="paceduDailyStarterAnswer";
+  card.appendChild(answerLabel);card.appendChild(answer);card.appendChild(save);card.appendChild(complete);card.appendChild(status);
+  host.appendChild(card);paintTask();
+}
 function refreshFeatureForTarget(targetId){
-  if(targetId==="levelSelection") safeCall("PacificEducationLevelSelector","initialise");
+  if(targetId==="levelSelection"){
+    safeCall("PacificEducationLevelSelector","initialise");
+    ensureVisibleLevelSelectorFallback();
+  }
   if(targetId==="subjectSelection") safeCall("PacificEducationSubjectSelector","initialise");
   if(targetId==="termSelection") safeCall("PacificEducationTermSelector","initialise");
   if(targetId==="capabilitySelection") safeCall("PacificEducationCapabilitySelector","initialise");
@@ -121,6 +215,7 @@ function refreshFeatureForTarget(targetId){
     safeCall("PacificEducationCurriculumLessonRenderer","initialise");
     safeCall("PacificEducationCurriculumLessonRenderer","refresh");
     safeCall("PacificEducationStudentProgressDashboardUI","render",["pacificEducationStudentProgressDashboard"]);
+    ensureVisibleDailyActivityFallback();
   }
 
   if(targetId==="dailyLessonPracticeStage"){
@@ -406,9 +501,11 @@ function stopSpeechForPageTransition(targetId){
 function lockLearningToolsDuringEntry(){
   var page=el("learningPlatform");
   if(!page) return;
+  var activeGuidedPage=document.body.getAttribute("data-pe-active-guided-page")||"";
   var inEntry=document.body.classList.contains("pacedu-entry-mode") ||
                document.body.classList.contains("pacedu-registration-mode") ||
-               document.body.classList.contains("pe-guided-flow");
+               (document.body.classList.contains("pe-guided-flow") &&
+                activeGuidedPage==="pacificEducationIdentityRegistration");
   if(!inEntry) return;
   page.hidden=true;
   page.setAttribute("aria-hidden","true");
