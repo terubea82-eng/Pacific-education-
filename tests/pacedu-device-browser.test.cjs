@@ -636,7 +636,7 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Sign Out");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
   await expect(page.locator("#peSequentialNext")).toBeHidden();
-  await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
+  await expect(shell.locator("#peSequentialSignOutButton")).toBeVisible();
   expect(await page.evaluate(() => window.__paceduSignOutScrollIntoViewCalls),
     "the focus guide must not auto-scroll the final Sign Out control into view").toBe(0);
 
@@ -666,13 +666,13 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   expect(scrollState.y, "user scrolling upward on the final page must not snap back").toBeLessThan(bottomScrollY);
 
   await trace("before Sign Out");
-  await page.locator("#peSequentialSignOutButton").click();
+  await shell.locator("#peSequentialSignOutButton").click();
   await trace("after Sign Out");
-  await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
+  await expect(shell.locator("#peSequentialSignOutConfirm")).toBeVisible();
 
   // Cancel must leave the user's current workspace and active session untouched.
-  await page.locator("#peSequentialSignOutNo").click();
-  await expect(page.locator("#peSequentialSignOutConfirm")).toBeHidden();
+  await shell.locator("#peSequentialSignOutNo").click();
+  await expect(shell.locator("#peSequentialSignOutConfirm")).toBeHidden();
   await expect(shell).toBeVisible();
   const stillActive = await page.evaluate(() => ({
     registered: sessionStorage.getItem("pacificEducationPilotRegistered"),
@@ -684,9 +684,9 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   expect(JSON.parse(stillActive.registration)).toMatchObject({name:"Parent Pilot Test",role:"parent",pilotOnly:true});
 
   // Only a second, explicit Sign Out followed by Confirm may end the session.
-  await page.locator("#peSequentialSignOutButton").click();
-  await expect(page.locator("#peSequentialSignOutConfirm")).toBeVisible();
-  await page.locator("#peSequentialSignOutYes").dispatchEvent("click");
+  await shell.locator("#peSequentialSignOutButton").click();
+  await expect(shell.locator("#peSequentialSignOutConfirm")).toBeVisible();
+  await shell.locator("#peSequentialSignOutYes").dispatchEvent("click");
   await trace("after confirm sign out");
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveCount(0);
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
