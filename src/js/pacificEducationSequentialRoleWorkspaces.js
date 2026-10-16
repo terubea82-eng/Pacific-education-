@@ -725,9 +725,18 @@
               status.textContent="Phonics Assessment is not connected yet.";
             }
           };
+          var activityPackRendered=false;
           if(window.PacificEducationRoleActivityPacks && typeof window.PacificEducationRoleActivityPacks.render==="function"){
-            window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
-          }else{
+            /* The activity-pack module can exist without successfully rendering
+               a learner activity (for example, if its role/step context is not
+               recognised). Treat the actual rendered card—not module presence—
+               as the success condition, and always provide a usable starter task
+               when the student page would otherwise be empty. */
+            try{
+              activityPackRendered=window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay)===true;
+            }catch(activityPackError){}
+          }
+          if(!activityPackRendered || !page.querySelector("#paceduRoleActivityPack")){
             addStudentDailyActivityStarter(dailyDay,page);
           }
         }
