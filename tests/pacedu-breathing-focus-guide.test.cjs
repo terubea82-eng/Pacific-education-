@@ -73,7 +73,8 @@ test("breathing guide activates for a sequential teacher workspace and final sig
   });
   await expect(page.locator("#peSequentialTitle")).toContainText("Sign Out");
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
-  await expect.poll(() => page.locator("#peSequentialSignOutButton.pacific-breathing-focus").count(), { timeout: 5000 }).toBe(1);
+  await expect.poll(() => page.locator("#peSequentialSignOutButton.pacific-breathing-final-action").count(), { timeout: 5000 }).toBe(1);
+  await expect(page.locator("#peSequentialSignOutButton")).toHaveCSS("outline-style", "solid");
   await expect(page.locator("#peSequentialSignOutButton")).toContainText("Sign Out");
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });

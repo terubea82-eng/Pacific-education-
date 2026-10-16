@@ -724,14 +724,62 @@
       }
     },true);
 
-    document.getElementById("peSequentialSignOutButton").onclick=function(){
-      document.getElementById("peSequentialSignOutConfirm").hidden=false;
+    /* Query within this freshly-built shell. The legacy page may contain
+       duplicate IDs, and document.getElementById can bind Cancel to a stale
+       confirmation panel instead of the visible final-page panel. */
+    var signOutConfirm=shell.querySelector("#peSequentialSignOutConfirm");
+    var signOutButton=shell.querySelector("#peSequentialSignOutButton");
+    var signOutCancel=shell.querySelector("#peSequentialSignOutNo");
+    var signOutYes=shell.querySelector("#peSequentialSignOutYes");
+    function setSignOutConfirmationVisible(visible){
+      if(!signOutConfirm) return;
+      signOutConfirm.hidden=!visible;
+      signOutConfirm.setAttribute("aria-hidden",String(!visible));
+      /* Some legacy pilot styles use display rules with !important. Explicitly
+         synchronize the hidden state with inline important display so Cancel
+         really closes the panel in every role workspace and viewport. */
+      if(visible){
+        signOutConfirm.style.removeProperty("display");
+        signOutConfirm.style.removeProperty("visibility");
+      }else{
+        signOutConfirm.style.setProperty("display","none","important");
+        signOutConfirm.style.setProperty("visibility","hidden","important");
+      }
+    }
+    if(signOutConfirm){
+      signOutConfirm.hidden=true;
+      signOutConfirm.setAttribute("aria-hidden","true");
+      signOutConfirm.style.setProperty("display","none","important");
+      signOutConfirm.style.setProperty("visibility","hidden","important");
+    }
+    if(signOutButton) signOutButton.onclick=function(){
+      setSignOutConfirmationVisible(true);
       speak("Sign Out selected. Confirm Sign Out or Cancel.");
     };
-    document.getElementById("peSequentialSignOutNo").onclick=function(){
-      document.getElementById("peSequentialSignOutConfirm").hidden=true;
-    };
-    document.getElementById("peSequentialSignOutYes").onclick=function(){
+    /* Handle Cancel at the shell's capture phase as well as on the button.
+       This guarantees the visible workspace confirmation closes before legacy
+       document-level click handlers can interfere. The button and panel are
+       both resolved from this shell, never by a document-wide duplicate ID. */
+    if(signOutCancel){
+      /* Close on pointerdown as well as click: a legacy document-level click
+         capture listener can stop propagation before the shell sees click.
+         Pointerdown runs earlier in the normal tap sequence, so the visible
+         panel closes before that legacy click path can reopen or preserve it. */
+      function cancelSignOut(event){
+        if(event){event.preventDefault();event.stopPropagation();}
+        setSignOutConfirmationVisible(false);
+      }
+      signOutCancel.addEventListener("pointerdown",cancelSignOut,true);
+      signOutCancel.addEventListener("click",function(event){
+        if(event){event.preventDefault();event.stopImmediatePropagation();}
+        setSignOutConfirmationVisible(false);
+      },true);
+      signOutCancel.onclick=function(event){
+        if(event){event.preventDefault();event.stopImmediatePropagation();}
+        setSignOutConfirmationVisible(false);
+      };
+    }
+    if(signOutYes) signOutYes.onclick=function(){
       try{
         /* Preserve the saved registration record before clearing active session-only state. */
         var savedRegistration=null;
