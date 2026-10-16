@@ -178,19 +178,20 @@ function ensureVisibleDailyActivityFallback(){
   };
   function loadSaved(){
     try{
-      var all=JSON.parse(localStorage.getItem("pacificEducationDailyStarterResponsesV1")||"{}")||{};
-      var entry=all[subject.value]||{};
-      answer.value=entry.answer||"";
-      status.textContent=entry.completed?"✓ "+subject.value+" activity completed and saved on this device.":"Starter activity ready. Save your answer when finished.";
+      var key="pacificEducationDailyStarterResponsesV1_"+subject.value;
+      answer.value=localStorage.getItem(key+"_answer")||"";
+      var completed=localStorage.getItem(key+"_completed")==="true";
+      status.textContent=completed?"✓ "+subject.value+" activity completed and saved on this device.":"Starter activity ready. Save your answer when finished.";
     }catch(e){status.textContent="Starter activity ready for this session.";}
   }
   function paintTask(){task.textContent=tasks[subject.value];loadSaved();}
   subject.addEventListener("change",paintTask);
   function persist(completed){
     try{
-      var all=JSON.parse(localStorage.getItem("pacificEducationDailyStarterResponsesV1")||"{}")||{};
-      all[subject.value]={answer:answer.value,completed:!!completed,savedAt:new Date().toISOString()};
-      localStorage.setItem("pacificEducationDailyStarterResponsesV1",JSON.stringify(all));
+      var key="pacificEducationDailyStarterResponsesV1_"+subject.value;
+      localStorage.setItem(key+"_answer",answer.value);
+      localStorage.setItem(key+"_completed",completed?"true":"false");
+      localStorage.setItem(key+"_savedAt",new Date().toISOString());
       status.textContent=completed?"✓ "+subject.value+" activity marked complete and saved on this device.":"Answer saved on this device.";
     }catch(e){status.textContent="Storage is unavailable; your answer is not confirmed saved.";}
   }
