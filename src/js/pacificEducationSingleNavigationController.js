@@ -151,7 +151,7 @@ function ensureVisibleDailyActivityFallback(){
      (text && !/loading today's learning activity/i.test(text))) return;
   /* Only supply a starter if the existing lesson renderer left its loading
      placeholder in place. Preserve any real lesson/activity content. */
-  host.innerHTML="";
+  while(host.firstChild) host.removeChild(host.firstChild);
   var card=document.createElement("section");
   card.setAttribute("data-pe-activity-card","daily-starter");
   card.style.cssText="padding:16px;border:2px solid #15803d;border-radius:10px;margin:12px 0;";
