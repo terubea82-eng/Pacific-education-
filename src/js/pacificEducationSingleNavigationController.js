@@ -500,9 +500,11 @@ function stopSpeechForPageTransition(targetId){
 function lockLearningToolsDuringEntry(){
   var page=el("learningPlatform");
   if(!page) return;
+  var activeGuidedPage=document.body.getAttribute("data-pe-active-guided-page")||"";
   var inEntry=document.body.classList.contains("pacedu-entry-mode") ||
                document.body.classList.contains("pacedu-registration-mode") ||
-               document.body.classList.contains("pe-guided-flow");
+               (document.body.classList.contains("pe-guided-flow") &&
+                activeGuidedPage==="pacificEducationIdentityRegistration");
   if(!inEntry) return;
   page.hidden=true;
   page.setAttribute("aria-hidden","true");
