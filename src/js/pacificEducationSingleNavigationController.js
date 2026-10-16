@@ -111,8 +111,27 @@ function safeCall(objectName, method, args){
   return false;
 }
 
+function isRenderedLevelRecoveryHost(host){
+  if(!host) return false;
+  try{
+    if(host.getClientRects().length===0) return false;
+    var node=host;
+    while(node){
+      var style=window.getComputedStyle(node);
+      if(style.display==="none" || style.visibility==="hidden" ||
+         Number(style.opacity)===0 || node.hidden) return false;
+      node=node.parentElement;
+    }
+    return true;
+  }catch(e){return false;}
+}
+
 function ensureVisibleLevelSelectorFallback(){
   var host=el("pacificEducationLevelSelector");
+  /* Older layouts may omit the selector host, or legacy CSS may hide it.
+     Mount recovery in the active Learning Level page instead of silently
+     returning or appending controls inside an invisible host. */
+  if(!isRenderedLevelRecoveryHost(host)) host=el("levelSelection");
   if(!host) return;
   /* A selector in the DOM is not proof that the learner can use it. Legacy CSS
      may hide it, make it transparent, or clip it inside a wrapper. Only skip
