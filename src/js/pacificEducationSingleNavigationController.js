@@ -37,7 +37,7 @@ var BACK = {
   pacificEducationIdentityRegistration: [3, "rules"],
   prototypeAccess: [4, "registration"],
   levelSelection: [5, "prototype"],
-  subjectSelection: [5, "prototype"],
+  subjectSelection: [4, "prototype"],
   termSelection: [7, "subject"],
   capabilitySelection: [8, "term"],
   dailyLesson: [9, "capability"],
