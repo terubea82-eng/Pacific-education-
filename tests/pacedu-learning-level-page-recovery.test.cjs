@@ -46,3 +46,8 @@ test("sequential workspace provides an independent visible Learning Level recove
   assert.match(sequential, /if\(item\[0\]==="levelSelection"\) ensureSequentialLevelRecovery\(target,page\)/);
   assert.match(sequential, /does not verify a teacher-assigned class/);
 });
+
+
+test("sequential recovery treats visibility-check errors as unsafe and shows recovery instead", () => {
+  assert.match(sequential, /catch\(e\)\{selectorIsVisible=false;\}/);
+});
