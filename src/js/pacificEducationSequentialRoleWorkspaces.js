@@ -356,7 +356,7 @@
       "body.pe-sequential-role-workspace-active main{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active main > #app{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #app{display:block!important;visibility:visible!important;}"+
-      "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus):not(#paceduWorkspaceHandoffRecovery){display:none!important;visibility:hidden!important;}"+
       "body.pe-sequential-role-workspace-active #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pe856AllPilotBoxesMenu{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
