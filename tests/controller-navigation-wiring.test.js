@@ -124,7 +124,7 @@ test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
   assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-learning-level-recovery-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\\.js\\?v=20261017-visible-workspace-guard-v1/);
 });
 
 
@@ -144,6 +144,18 @@ test("sequential workspace restores hidden main/app containers after registratio
   assert.ok(sequential.includes("main{display:block!important;visibility:visible!important;}"));
   assert.ok(sequential.includes("main > #app{display:block!important;visibility:visible!important;}"));
   assert.ok(sequential.includes("#pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"));
+});
+
+test("role workspace content is forced visible and has a recoverable blank-content fallback", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /function enforceWorkspaceVisibility\(\)/);
+  assert.match(sequential, /page\.style\.setProperty\("display","block","important"\)/);
+  assert.match(sequential, /active\.style\.setProperty\("visibility","visible","important"\)/);
+  assert.match(sequential, /Workspace content recovery/);
+  assert.match(sequential, /Retry this workspace page/);
+  assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261017-visible-workspace-guard-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-visible-workspace-guard-v1/);
 });
 
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
