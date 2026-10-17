@@ -116,7 +116,14 @@
       /* Sequential routing remains authoritative after generic activation. */
       safe(function(){
         var role=sessionStorage.getItem("pacificEducationPilotRole")||"";
-        var shell=!!document.getElementById("pacificEducationSequentialRoleWorkspace");
+        var shellElement=document.getElementById("pacificEducationSequentialRoleWorkspace");
+        var shellRole=String(shellElement && shellElement.getAttribute("data-pe-role")||"");
+        /* Registration opens the workspace directly. The activation bridge runs
+           again on load and on its scheduled passes, so it must reuse an existing
+           workspace for the same role instead of rebuilding it and resetting the
+           active page (which can look like a blank/duplicate screen on mobile). */
+        var shellRoleKey=shellRole.toLowerCase().replace(/[^a-z0-9]/g,"");
+        var requestedRoleKey=String(role).toLowerCase().replace(/[^a-z0-9]/g,"");
         /* Single Navigation owns the guided sequence. Do not build a role workspace
            while the user is still inside the mandatory page-by-page flow. */
         var singleOwner=!!(window.PacificEducationSingleNavigation &&
@@ -128,7 +135,7 @@
         if(role && !singleOwner && !guidedFlow && guidedComplete &&
            window.PacificEducationSequentialRoleWorkspaces &&
            typeof window.PacificEducationSequentialRoleWorkspaces.build==="function" &&
-           (!shell || role!==lastRole)){
+           (!shellElement || shellRoleKey!==requestedRoleKey)){
           window.PacificEducationSequentialRoleWorkspaces.build(role);
         }
         lastRole=role;
