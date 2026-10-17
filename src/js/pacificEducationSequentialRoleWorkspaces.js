@@ -644,6 +644,21 @@
         app.appendChild(target);
       }
 
+      /*
+       * A missing legacy Level section must not leave the learner on an empty
+       * sequential page. Create a visible pilot workspace host, then let the
+       * existing selector recovery add its clearly labelled fallback control.
+       * This preserves Class/Level as a required step; it does not bypass
+       * teacher assignment or change protected voice behaviour.
+       */
+      if(!target && item[0]==="levelSelection"){
+        target=document.createElement("section");
+        target.id="levelSelection";
+        target.setAttribute("aria-label","Learning Level Workspace");
+        target.innerHTML="<p>The normal Class / Level controls are not available in this build. The pilot recovery selector will appear below if needed.</p>";
+        app.appendChild(target);
+      }
+
       if(!target){
         if(item[0]==="pacificEducationExternalReviewerPortal" && window.PacificEducationProductionAppShell && typeof window.PacificEducationProductionAppShell.ensureExternalReviewerPortal==="function") window.PacificEducationProductionAppShell.ensureExternalReviewerPortal();
         if((item[0]==="pacificEducationInstitutionSetup" || item[0]==="pacificEducationInstitutionAdvice") && window.PacificEducationInstitutionSetup && typeof window.PacificEducationInstitutionSetup.render==="function") window.PacificEducationInstitutionSetup.render();
@@ -799,6 +814,19 @@
         }
         page.appendChild(resultBox);
       }else if(target){
+        if(item[0]==="levelSelection"){
+          /* Keep a real workspace heading visible even when legacy selector
+             markup is missing or hidden. Preserve existing controls below it. */
+          var levelIntro=document.getElementById("peStudentLearningLevelWorkspaceIntro");
+          if(!levelIntro){
+            levelIntro=document.createElement("section");
+            levelIntro.id="peStudentLearningLevelWorkspaceIntro";
+            levelIntro.setAttribute("aria-label","Student Learning Level Workspace");
+            levelIntro.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;margin:0 0 14px;padding:16px;border:2px solid #15803d;border-radius:10px;background:#fff;color:#111;";
+            levelIntro.innerHTML="<h3 style='margin-top:0'>Student Learning Level Workspace</h3><p>Choose or confirm your Class / Level to continue to Subject, Term and Daily Activities. Your teacher remains responsible for confirming your assigned class.</p><p><strong>Controlled pilot:</strong> use demonstration data only. This page does not authenticate users or verify class assignments.</p>";
+          }
+          target.insertBefore(levelIntro,target.firstChild);
+        }
         moveTargetIntoPage(target,page);
         /* After the normal selector and navigation recovery have both had a
            chance to initialise, keep Learning Level usable if no enabled
