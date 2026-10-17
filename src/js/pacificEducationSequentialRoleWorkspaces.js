@@ -581,6 +581,149 @@
       paint();
     }
 
+    function enforceWorkspaceVisibility(){
+      if(!shell || !page) return;
+      shell.hidden=false;
+      shell.removeAttribute("aria-hidden");
+      shell.style.setProperty("display","block","important");
+      shell.style.setProperty("visibility","visible","important");
+      shell.style.setProperty("opacity","1","important");
+      page.hidden=false;
+      page.removeAttribute("aria-hidden");
+      page.style.setProperty("display","block","important");
+      page.style.setProperty("visibility","visible","important");
+      page.style.setProperty("opacity","1","important");
+      var active=page.querySelector("[data-pe-sequential-page='active']");
+      if(active){
+        active.hidden=false;
+        active.removeAttribute("aria-hidden");
+        active.removeAttribute("data-pe-sequential-hidden");
+        active.style.setProperty("display","block","important");
+        active.style.setProperty("visibility","visible","important");
+        active.style.setProperty("opacity","1","important");
+      }
+      if(!page.firstElementChild && !String(page.textContent||"").trim()){
+        var recovery=document.createElement("section");
+        recovery.setAttribute("data-pe-workspace-visibility-recovery","true");
+        recovery.setAttribute("role","status");
+        recovery.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;padding:16px;margin:12px 0;border:2px solid #b45309;border-radius:10px;background:#fff;color:#17202a;";
+        var heading=document.createElement("h3");
+        heading.textContent="Workspace content recovery";
+        var message=document.createElement("p");
+        message.textContent="This workspace page did not load its content. Try loading this step again. Your registration and saved activity attempts have not been cleared.";
+        var recoveryActions=document.createElement("div");
+        recoveryActions.style.cssText="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;";
+        var retry=document.createElement("button");
+        retry.type="button";
+        retry.textContent="Retry this workspace page";
+        retry.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;";
+        retry.addEventListener("click",function(){ renderPage(); });
+        /* Sign In retries the existing registered role workspace; it does not
+           create a second session or bypass registration. */
+        var signIn=document.createElement("button");
+        signIn.type="button";
+        signIn.textContent="Sign In / Reopen Workspace";
+        signIn.setAttribute("aria-label","Sign in again and reopen the current role workspace");
+        signIn.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;background:#15803d;color:#fff;";
+        signIn.addEventListener("click",function(){ renderPage(); });
+        /* Sign Out only takes the user to the existing final sign-out page.
+           Actual session clearing still requires the existing confirmation. */
+        var signOut=document.createElement("button");
+        signOut.type="button";
+        signOut.textContent="Sign Out";
+        signOut.setAttribute("aria-label","Open the final Sign Out page");
+        signOut.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;background:#a62e35;color:#fff;";
+        signOut.addEventListener("click",function(){
+          index=sequence.length-1;
+          renderPage();
+        });
+        recoveryActions.appendChild(retry);
+        recoveryActions.appendChild(signIn);
+        recoveryActions.appendChild(signOut);
+        recovery.appendChild(heading);
+        recovery.appendChild(message);
+        recovery.appendChild(recoveryActions);
+        page.appendChild(recovery);
+      }
+    }
+
+
+    /* When a legacy role feature exists but renders no usable content, keep the user
+       inside this same workspace page and provide role-aware navigation to the other
+       steps already permitted for that role. This is recovery navigation, not a claim
+       that a missing feature is working, and it never creates another application page. */
+    function roleWorkspaceHasContent(target){
+      if(!target) return false;
+      if(String(target.textContent||"").replace(/\s+/g,"").length) return true;
+      return !!target.querySelector("button,input,select,textarea,a,[role='button']");
+    }
+    function addRoleWorkspaceLanding(role,item,host){
+      if(!host || host.querySelector("[data-pe-role-workspace-recovery='true']")) return;
+      var labels={
+        "student":"Student","blind-learner":"Blind Learner","deaf-learner":"Deaf Learner",
+        "teacher":"Teacher","parent":"Parent / Caregiver","professional":"Professional Reviewer",
+        "ngo":"NGO / Organization","education":"Education / Government","community":"Community / Partner",
+        "head-of-school":"Head of School","institution-admin":"Institution Administrator",
+        "special-education":"Special Education","owner":"Owner","technician":"Technician"
+      };
+      var descriptions={
+        "student":"Open learning level, subject, term, daily activities, practice, assessment and progress tools in the approved order.",
+        "blind-learner":"Open the learner pathway with screen-reader-friendly instructions and voice-guided activity options.",
+        "deaf-learner":"Open the learner pathway with written instructions and visual activity options.",
+        "teacher":"Open class, calendar, learner evidence, assessment and progress tools.",
+        "parent":"Open child progress and teacher communication tools.",
+        "professional":"Open the reviewer portal, evidence registry and pilot verification tools.",
+        "ngo":"Open the pilot overview, program evidence and feedback tools.",
+        "education":"Open curriculum control, evidence traceability and coverage tools.",
+        "community":"Open pilot information and community feedback tools.",
+        "head-of-school":"Open school identity, view-only class lists, exam calendar and curriculum coverage.",
+        "institution-admin":"Open institution setup, institution advice and examination calendar tools.",
+        "special-education":"Open inclusion, learner/class, evidence and progress tools.",
+        "owner":"Open the existing owner access verification step; this pilot does not grant production authority.",
+        "technician":"Open the existing technician access verification step; technician mode remains pilot-only."
+      };
+      var panel=document.createElement("section");
+      panel.setAttribute("data-pe-role-workspace-recovery","true");
+      panel.setAttribute("aria-label",(labels[role]||role)+" workspace recovery and tools");
+      panel.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;box-sizing:border-box;margin:12px 0;padding:16px;border:2px solid #15803d;border-radius:10px;background:#fff;color:#17202a;";
+      var heading=document.createElement("h3");
+      heading.textContent=(labels[role]||role)+" Workspace";
+      var explanation=document.createElement("p");
+      explanation.textContent="The usual feature panel did not display its content on this page. Your workspace recovery menu is shown here instead. "+(descriptions[role]||"Open the tools listed for this role.");
+      var note=document.createElement("p");
+      note.textContent="Choose an available tool below. If a tool itself is not connected, Pacedu will identify it rather than report it as completed. Your saved registration and activity progress are not cleared by this recovery menu.";
+      var list=document.createElement("div");
+      list.setAttribute("aria-label","Available workspace tools");
+      list.style.cssText="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;";
+      var added=0;
+      sequence.forEach(function(step,stepIndex){
+        if(step[0]==="paceduSignOutPage" || stepIndex===index) return;
+        var button=document.createElement("button");
+        button.type="button";
+        button.textContent="Open "+step[1];
+        button.setAttribute("aria-label","Open workspace tool: "+step[1]);
+        button.style.cssText="display:inline-block!important;visibility:visible!important;padding:10px 12px;font-weight:700;border:1px solid #64748b;border-radius:8px;background:#f8fafc;color:#17202a;";
+        button.addEventListener("click",function(){
+          if(shell.getAttribute("data-pe-final-signout")==="true") return;
+          index=stepIndex;
+          try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
+          renderPage();
+        });
+        list.appendChild(button);
+        added++;
+      });
+      var noTools=document.createElement("p");
+      noTools.textContent="No other role tools are configured in this sequence yet. Use Back or Next where available, or return to the User Type Completed page.";
+      panel.appendChild(heading);
+      panel.appendChild(explanation);
+      panel.appendChild(note);
+      if(added) panel.appendChild(list); else panel.appendChild(noTools);
+      host.appendChild(panel);
+    }
+
+    /* Student daily activity starter: concrete English, Mathematics and Phonics
+       tasks, with completion saved locally without replacing the existing lesson engine. */
+
     function renderPage(){
       /* Once the final Sign Out page is visible, no incidental render request
          may replace it. The confirmed Sign Out handler removes the shell instead. */
@@ -828,6 +971,7 @@
           target.insertBefore(levelIntro,target.firstChild);
         }
         moveTargetIntoPage(target,page);
+        if(!roleWorkspaceHasContent(target)) addRoleWorkspaceLanding(role,item,page);
         /* After the normal selector and navigation recovery have both had a
            chance to initialise, keep Learning Level usable if no enabled
            selector was rendered. This fallback lives in the active page itself. */
@@ -914,6 +1058,7 @@
           if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
         }catch(e){}
       }
+      enforceWorkspaceVisibility();
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
 
