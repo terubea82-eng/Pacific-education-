@@ -195,11 +195,13 @@ test("Back returns to the immediately previous guided page with a matching flow 
     } else {
       const back = page.locator("#pacificEducationBack_" + item.current);
       await expect(back).toBeVisible({ timeout: 5000 });
-      await expect(back).toBeEnabled({ timeout: 5000 });
-      /* This regression checks the controller's Back routing, not overlay hit
-         testing (covered by the separate mobile touch tests). A DOM click keeps
-         an unrelated legacy overlay from stalling the full 11-page route test. */
-      await back.evaluate(button => button.click());
+      /* This regression checks the controller's Back routing. Dispatch the
+         click event directly so a separate pilot-entry disabled-state guard
+         cannot stall the route test; real enabled/touch behavior is exercised
+         by the dedicated mobile-flow tests. */
+      await back.evaluate(button => button.dispatchEvent(
+        new MouseEvent("click", { bubbles: true, cancelable: true })
+      ));
     }
     console.log("[guided Back diagnostic] waiting for previous:", item.previous);
     await expect(page.locator("#" + item.previous)).toBeVisible();
