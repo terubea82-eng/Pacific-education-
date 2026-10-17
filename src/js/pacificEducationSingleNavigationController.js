@@ -614,8 +614,8 @@ function lockLearningToolsDuringEntry(){
 
 function guided(step,targetId){
   lockLearningToolsDuringEntry();
-  enforceEntryAppMenuHidden();
   stopSpeechForPageTransition(targetId);
+  enforceEntryAppMenuHidden();
   if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
   document.body.classList.add("pe-guided-flow","pe-pilot-all-features");
@@ -670,9 +670,9 @@ function enforceSingleGatewayPage(expectedPage, targetId){
 
 function gateway(page){
   lockLearningToolsDuringEntry();
-  enforceEntryAppMenuHidden();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
+  enforceEntryAppMenuHidden();
   syncActiveBackButton(null);
   /* Fail closed: once guided navigation has advanced, legacy callers may not
      reopen Welcome. The explicit Back-to-Welcome handler clears this lock first. */
