@@ -610,7 +610,7 @@
        that a missing feature is working, and it never creates another application page. */
     function roleWorkspaceHasContent(target){
       if(!target) return false;
-      if(String(target.textContent||"").replace(/\\s+/g,"").length) return true;
+      if(String(target.textContent||"").replace(/\s+/g,"").length) return true;
       return !!target.querySelector("button,input,select,textarea,a,[role='button']");
     }
     function addRoleWorkspaceLanding(role,item,host){
