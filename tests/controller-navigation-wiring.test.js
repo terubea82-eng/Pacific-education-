@@ -110,6 +110,7 @@ test("protected #856 voice navigation remains unchanged while guided visibility 
   assert.match(voiceNavigation, /var STEP_PAGES = \[/);
   assert.match(controller, /data-pe-flow-step/);
   assert.match(controller, /function guided\(step,targetId\)/);
+  assert.match(controller, /if\(ok\)\{[\s\S]*?ensureBackButton\(targetId\);[\s\S]*?renderPageGuide\(targetId\);/, "active guided page must bind its Back control after feature refresh");
 });
 test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
@@ -124,7 +125,7 @@ test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
   assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-learning-level-recovery-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-level-host-recovery-v5/);
 });
 
 

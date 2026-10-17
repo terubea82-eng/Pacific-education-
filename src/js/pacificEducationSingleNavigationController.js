@@ -115,11 +115,26 @@ function isRenderedLevelRecoveryHost(host){
   if(!host) return false;
   try{
     if(host.getClientRects().length===0) return false;
+    var hostRect=host.getBoundingClientRect();
+    /* A host can have a client rect but still have no usable area (for example,
+       a legacy wrapper collapsed to zero width/height). Never mount the only
+       recovery selector inside such a host. */
+    if(!(hostRect.width>0 && hostRect.height>0)) return false;
     var node=host;
     while(node){
       var style=window.getComputedStyle(node);
       if(style.display==="none" || style.visibility==="hidden" ||
          Number(style.opacity)===0 || node.hidden) return false;
+      if(node!==host && (style.overflowX==="hidden" || style.overflowX==="clip" ||
+         style.overflowY==="hidden" || style.overflowY==="clip")){
+        var parentRect=node.getBoundingClientRect();
+        var clipLeft=parentRect.left+(node.clientLeft||0);
+        var clipTop=parentRect.top+(node.clientTop||0);
+        var clipRight=clipLeft+(node.clientWidth||0);
+        var clipBottom=clipTop+(node.clientHeight||0);
+        if(hostRect.right<=clipLeft || hostRect.left>=clipRight ||
+           hostRect.bottom<=clipTop || hostRect.top>=clipBottom) return false;
+      }
       node=node.parentElement;
     }
     return true;
@@ -141,7 +156,8 @@ function ensureVisibleLevelSelectorFallback(){
   if(existingSelect){
     var selectorIsVisible=false;
     try{
-      selectorIsVisible=existingSelect.getClientRects().length>0;
+      var selectorRect=existingSelect.getBoundingClientRect();
+      selectorIsVisible=existingSelect.getClientRects().length>0 && selectorRect.width>0 && selectorRect.height>0;
       var node=existingSelect;
       while(selectorIsVisible && node){
         var style=window.getComputedStyle(node);
@@ -171,10 +187,13 @@ function ensureVisibleLevelSelectorFallback(){
     }catch(e){}
     if(selectorIsVisible) return;
   }
+  /* Do not duplicate the recovery control when navigation refreshes this page. */
+  if(host.querySelector("[data-pe-level-recovery='single-navigation']")) return;
   /* Recovery UI only: keep the class/level page usable if its selector script
      failed to load. This never claims that a teacher assignment was verified. */
   var box=document.createElement("div");
-  box.style.cssText="padding:14px;border:2px solid #b45309;border-radius:8px;margin:12px 0;";
+  box.setAttribute("data-pe-level-recovery","single-navigation");
+  box.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%;min-width:0;box-sizing:border-box;padding:14px;border:2px solid #b45309;border-radius:8px;margin:12px 0;background:#fff;color:#111;";
   var label=document.createElement("label");
   label.htmlFor="paceduLevelSelectorRecovery";
   label.textContent="Choose your learning class / level";
@@ -189,6 +208,8 @@ function ensureVisibleLevelSelectorFallback(){
     option.value=level;option.textContent=level;select.appendChild(option);
   });
   select.value=levels.indexOf(saved)>=0?saved:"Class 1";
+  var instructions=document.createElement("p");
+  instructions.textContent="Choose your assigned class or level, then continue to Subject. This pilot recovery does not confirm a teacher-assigned class.";
   var note=document.createElement("p");
   note.setAttribute("role","status");
   note.setAttribute("aria-live","polite");
@@ -198,7 +219,7 @@ function ensureVisibleLevelSelectorFallback(){
     note.textContent="Selected "+select.value+". Please confirm your assigned class with your teacher. Continue to Subject when ready.";
     try{document.dispatchEvent(new CustomEvent("pacificEducationSelectionChanged",{detail:{level:select.value,pilotRecovery:true}}));}catch(e){}
   });
-  box.appendChild(label);box.appendChild(select);box.appendChild(note);host.appendChild(box);
+  box.appendChild(label);box.appendChild(select);box.appendChild(instructions);box.appendChild(note);host.appendChild(box);
 }
 function ensureVisibleDailyActivityFallback(){
   var host=el("dailyLessonActivity");
@@ -583,6 +604,9 @@ function guided(step,targetId){
   var ok=revealTarget(targetId);
   lockLearningToolsDuringEntry();
   if(ok){
+    /* Feature refreshes can replace page contents after startup binding. Recreate and bind
+       the active page Back control after the destination has been revealed. */
+    ensureBackButton(targetId);
     renderPageGuide(targetId);
     var pageInfo=PAGE_GUIDE[targetId];
     setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");

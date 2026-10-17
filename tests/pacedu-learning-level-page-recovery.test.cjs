@@ -8,7 +8,10 @@ const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspa
 test("Learning Level recovery appears when the existing selector is present but disabled", () => {
   assert.match(controller, /host\.querySelector\("select:not\(:disabled\)"\)/);
   assert.match(controller, /function isRenderedLevelRecoveryHost\(host\)/);
-  assert.match(controller, /if\(!isRenderedLevelRecoveryHost\(host\)\) host=el\("levelSelection"\)/, "recovery must mount in the active Learning Level page when the selector host is missing or hidden");
+  assert.match(controller, /hostRect\.width>0 && hostRect\.height>0/, "a zero-size selector host must not receive the only recovery control");
+  assert.match(controller, /hostRect\.right<=clipLeft/, "fully clipped selector hosts must be rejected");
+  assert.match(controller, /if\(!isRenderedLevelRecoveryHost\(host\)\) host=el\("levelSelection"\)/, "recovery must mount in the active Learning Level page when the selector host is missing, collapsed, or hidden");
+  assert.match(controller, /selectorRect\.width>0 && selectorRect\.height>0/, "zero-area selectors must not suppress the visible recovery control");
   assert.match(controller, /existingSelect\.getClientRects\(\)\.length>0/);
   assert.match(controller, /style\.visibility==="hidden"/);
   assert.match(controller, /Number\(style\.opacity\)===0/);
@@ -17,6 +20,8 @@ test("Learning Level recovery appears when the existing selector is present but 
   assert.match(controller, /childRect\.right<=clipLeft/);
   assert.match(controller, /while\(selectorIsVisible && node\)/, "visibility check must inspect ancestors above the selector host");
   assert.match(controller, /if\(selectorIsVisible\) return/);
+  assert.match(controller, /data-pe-level-recovery.*single-navigation/);
+  assert.match(controller, /host\.querySelector\("\[data-pe-level-recovery='single-navigation'\]"\)\) return/, "repeated navigation refreshes must not duplicate the recovery selector");
   assert.match(controller, /Recovery selector is active because the normal selector did not render/);
   assert.match(controller, /This pilot choice does not verify a teacher-assigned class/);
 });
