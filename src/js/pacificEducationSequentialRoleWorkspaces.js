@@ -215,10 +215,45 @@
   var movedTargets = [];
   var appMenuOriginalParent = null;
   var appMenuOriginalNextSibling = null;
+  var pilotBoxesMenuOriginalParent = null;
+  var pilotBoxesMenuOriginalNextSibling = null;
 
   /* Keep the global App Menu off the Welcome/registration pages. It is moved
      into the active role workspace only after registration has opened that
      workspace, then restored to its original location on Sign Out. */
+  function restorePilotBoxesMenu(){
+    var panel=document.getElementById("pe856AllPilotBoxesMenu");
+    if(!panel) return;
+    if(pilotBoxesMenuOriginalParent && pilotBoxesMenuOriginalParent.isConnected){
+      if(pilotBoxesMenuOriginalNextSibling && pilotBoxesMenuOriginalNextSibling.parentNode===pilotBoxesMenuOriginalParent){
+        pilotBoxesMenuOriginalParent.insertBefore(panel,pilotBoxesMenuOriginalNextSibling);
+      }else{
+        pilotBoxesMenuOriginalParent.appendChild(panel);
+      }
+    }
+    panel.hidden=false;
+    panel.removeAttribute("aria-hidden");
+    panel.style.removeProperty("display");
+    panel.style.removeProperty("visibility");
+  }
+
+  function placePilotBoxesMenuInWorkspace(shell){
+    var panel=document.getElementById("pe856AllPilotBoxesMenu");
+    if(!panel || !shell) return;
+    if(!pilotBoxesMenuOriginalParent){
+      pilotBoxesMenuOriginalParent=panel.parentNode;
+      pilotBoxesMenuOriginalNextSibling=panel.nextSibling;
+    }
+    var menu=document.getElementById("pacificEducationAppMenu");
+    if(menu && menu.parentNode===shell && menu.nextSibling!==panel) shell.insertBefore(panel,menu.nextSibling);
+    else if(panel.parentNode!==shell) shell.insertBefore(panel,shell.firstChild);
+    panel.hidden=false;
+    panel.removeAttribute("aria-hidden");
+    panel.style.setProperty("display","block","important");
+    panel.style.setProperty("visibility","visible","important");
+    panel.style.setProperty("margin","0 0 14px","important");
+  }
+
   function restoreAppMenu(){
     var menu=document.getElementById("pacificEducationAppMenu");
     if(!menu) return;
@@ -233,6 +268,7 @@
     menu.removeAttribute("aria-hidden");
     menu.style.removeProperty("display");
     menu.style.removeProperty("visibility");
+    restorePilotBoxesMenu();
   }
 
   function placeAppMenuInWorkspace(shell){
@@ -248,6 +284,7 @@
     menu.style.setProperty("display","block","important");
     menu.style.setProperty("visibility","visible","important");
     menu.style.setProperty("margin","0 0 14px","important");
+    placePilotBoxesMenuInWorkspace(shell);
   }
 
   function speak(text){
@@ -320,6 +357,7 @@
       "body.pe-sequential-role-workspace-active main > #app{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #app{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pe856AllPilotBoxesMenu{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
       "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}"+
@@ -541,6 +579,7 @@
     var old=document.getElementById("pacificEducationSequentialRoleWorkspace");
     if(old){
       restoreAppMenu();
+      restorePilotBoxesMenu();
       old.remove();
     }
 
@@ -1235,6 +1274,7 @@
       }catch(e){}
       restoreAllMovedTargets();
       restoreAppMenu();
+      restorePilotBoxesMenu();
       setRoleWorkspaceIsolation(false);
       shell.remove();
       Array.prototype.forEach.call(app.children,function(el){
@@ -1316,7 +1356,7 @@
   else bind();
 
   window.PacificEducationSequentialRoleWorkspaces={
-    version:"1.3.1-workspace-recovery-signin-signout",
+    version:"1.3.2-pilot-boxes-after-registration",
     roles:Object.keys(ROLE_SEQUENCE_DEFAULTS),
     sequenceConfig:{
       get:getRoleSequence,
