@@ -288,3 +288,19 @@ test("all guided pages use a short shared reduced-motion-aware entrance transiti
   assert.match(controller, /animateGuidedPageEntry\(activePageId\)/);
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
 });
+
+test("blank role workspace pages render role-specific recovery tools without creating extra pages", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /function roleWorkspaceHasContent\(target\)/);
+  assert.match(sequential, /function addRoleWorkspaceLanding\(role,item,host\)/);
+  assert.match(sequential, /data-pe-role-workspace-recovery/);
+  assert.match(sequential, /Available workspace tools/);
+  assert.match(sequential, /button\.textContent="Open "\+step\[1\]/);
+  assert.match(sequential, /index=stepIndex;[\s\S]*?renderPage\(\)/);
+  assert.match(sequential, /if\(!roleWorkspaceHasContent\(target\)\) addRoleWorkspaceLanding\(role,item,page\)/);
+  assert.match(sequential, /addRoleWorkspaceLanding\(role,item,page\)/);
+  assert.match(sequential, /Your saved registration and activity progress are not cleared by this recovery menu/);
+  assert.match(sequential, /Technician mode remains pilot-only/);
+  assert.match(sequential, /protected #856 speech controller/);
+  assert.match(sequential, /var key="pacificEducationStudentDailyActivityProgressV1"/);
+});
