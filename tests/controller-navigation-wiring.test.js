@@ -304,7 +304,7 @@ test("blank role workspace pages render role-specific recovery tools without cre
   assert.match(sequential, /if\(!roleWorkspaceHasContent\(target\)\) addRoleWorkspaceLanding\(role,item,page\)/);
   assert.match(sequential, /addRoleWorkspaceLanding\(role,item,page\)/);
   assert.match(sequential, /Your saved registration and activity progress are not cleared by this recovery menu/);
-  assert.match(sequential, /Technician mode remains pilot-only/);
+  assert.match(sequential, /technician mode remains pilot-only/i);
   assert.match(sequential, /protected #856 speech controller/);
   assert.match(sequential, /var key="pacificEducationStudentDailyActivityProgressV1"/);
 });
