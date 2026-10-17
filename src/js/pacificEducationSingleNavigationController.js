@@ -624,10 +624,10 @@ function enforceSingleGatewayPage(expectedPage, targetId){
 }
 
 function gateway(page){
-  syncActiveBackButton(null);
   lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
+  syncActiveBackButton(null);
   /* Fail closed: once guided navigation has advanced, legacy callers may not
      reopen Welcome. The explicit Back-to-Welcome handler clears this lock first. */
   if(Number(page)===1 && document.documentElement.getAttribute("data-pacedu-entry-advanced")==="true") return false;
