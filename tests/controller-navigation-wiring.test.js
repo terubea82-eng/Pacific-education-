@@ -170,6 +170,9 @@ test("Student registration handoff marks guided flow complete and keeps a worksp
   assert.match(registration, /paceduWorkspaceHandoffSignIn/);
   assert.match(registration, /paceduWorkspaceHandoffSignOut/);
   assert.match(registration, /User Type Completed — Workspace Recovery/);
+  assert.match(registration, /app\.appendChild\(recovery\)/);
+  assert.doesNotMatch(registration, /document\.body\.appendChild\(recovery\)/);
+  assert.match(sequential, /:not\(#paceduWorkspaceHandoffRecovery\)\{display:none!important;visibility:hidden!important;\}/);
   assert.match(sequential, /__paceduOpenFinalSignOut=function/);
   assert.match(registration, /openedWorkspace\.style\.setProperty\("display","block","important"\)/);
   assert.match(sequential, /shell\.style\.setProperty\("display","block","important"\)/);

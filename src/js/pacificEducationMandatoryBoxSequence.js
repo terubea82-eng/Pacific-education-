@@ -365,7 +365,10 @@
             recovery.appendChild(retry);
             recovery.appendChild(reopen);
             recovery.appendChild(signOut);
-            document.body.appendChild(recovery);
+            recovery.hidden=false;
+            recovery.removeAttribute("aria-hidden");
+            /* Keep recovery inside the app root so first-paint and app-shell visibility rules cannot hide it. */
+            app.appendChild(recovery);
           }
           if(recovery){
             recovery.hidden=false;
