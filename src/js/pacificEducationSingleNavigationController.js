@@ -604,6 +604,9 @@ function guided(step,targetId){
   var ok=revealTarget(targetId);
   lockLearningToolsDuringEntry();
   if(ok){
+    /* Feature refreshes can replace page contents after startup binding. Recreate and bind
+       the active page Back control after the destination has been revealed. */
+    ensureBackButton(targetId);
     renderPageGuide(targetId);
     var pageInfo=PAGE_GUIDE[targetId];
     setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
