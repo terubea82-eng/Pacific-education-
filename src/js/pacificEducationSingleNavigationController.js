@@ -745,26 +745,35 @@ function ensureBackButton(targetId){
   button.addEventListener("click",function(event){
     event.preventDefault();
     event.stopPropagation();
-    var row=BACK[targetId];
-    if(row[1]==="welcome"){ document.documentElement.removeAttribute("data-pacedu-entry-advanced"); gateway(1); return; }
-    if(row[1]==="vision"){ gateway(2); return; }
-    if(row[1]==="rules"){ gateway(3); return; }
-    var map={
-      /* guided() uses the flow-step index, which is the page number minus one
-         after the Welcome/Vision/Rules gateway. Keep Back in the same index
-         contract as the corresponding Next bindings. */
-      registration:["pacificEducationIdentityRegistration",3],
-      prototype:["prototypeAccess",4],
-      level:["levelSelection",5],
-      subject:["subjectSelection",6],
-      term:["termSelection",7],
-      capability:["capabilitySelection",8],
-      daily:["dailyLesson",9],
-      practice:["dailyLessonPracticeStage",10],
-      assessment:["assessments",11],
-      coverage:["pacificEducationCoverageDashboard",12]
-    };
-    if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
+    event.stopImmediatePropagation();
+    /* Defer page replacement until the click event has fully unwound. Several
+       legacy page observers listen to the same visibility attributes; changing
+       the whole gateway synchronously inside the Back click can stall browser
+       click completion while those observers reconcile. The destination stays
+       explicit and the same single-navigation controller remains authoritative. */
+    window.setTimeout(function(){
+      var row=BACK[targetId];
+      if(!row) return;
+      if(row[1]==="welcome"){ document.documentElement.removeAttribute("data-pacedu-entry-advanced"); gateway(1); return; }
+      if(row[1]==="vision"){ gateway(2); return; }
+      if(row[1]==="rules"){ gateway(3); return; }
+      var map={
+        /* guided() uses the flow-step index, which is the page number minus one
+           after the Welcome/Vision/Rules gateway. Keep Back in the same index
+           contract as the corresponding Next bindings. */
+        registration:["pacificEducationIdentityRegistration",3],
+        prototype:["prototypeAccess",4],
+        level:["levelSelection",5],
+        subject:["subjectSelection",6],
+        term:["termSelection",7],
+        capability:["capabilitySelection",8],
+        daily:["dailyLesson",9],
+        practice:["dailyLessonPracticeStage",10],
+        assessment:["assessments",11],
+        coverage:["pacificEducationCoverageDashboard",12]
+      };
+      if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
+    },0);
   });
 }
 
