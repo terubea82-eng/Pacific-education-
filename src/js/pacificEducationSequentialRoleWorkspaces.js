@@ -213,6 +213,42 @@
   var LOCAL_SESSION_KEYS = ["pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationCurriculumCountryCode","pacificEducationCurriculumCountry"];
   var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
   var movedTargets = [];
+  var appMenuOriginalParent = null;
+  var appMenuOriginalNextSibling = null;
+
+  /* Keep the global App Menu off the Welcome/registration pages. It is moved
+     into the active role workspace only after registration has opened that
+     workspace, then restored to its original location on Sign Out. */
+  function restoreAppMenu(){
+    var menu=document.getElementById("pacificEducationAppMenu");
+    if(!menu) return;
+    if(appMenuOriginalParent && appMenuOriginalParent.isConnected){
+      if(appMenuOriginalNextSibling && appMenuOriginalNextSibling.parentNode===appMenuOriginalParent){
+        appMenuOriginalParent.insertBefore(menu,appMenuOriginalNextSibling);
+      }else{
+        appMenuOriginalParent.appendChild(menu);
+      }
+    }
+    menu.hidden=false;
+    menu.removeAttribute("aria-hidden");
+    menu.style.removeProperty("display");
+    menu.style.removeProperty("visibility");
+  }
+
+  function placeAppMenuInWorkspace(shell){
+    var menu=document.getElementById("pacificEducationAppMenu");
+    if(!menu || !shell) return;
+    if(!appMenuOriginalParent){
+      appMenuOriginalParent=menu.parentNode;
+      appMenuOriginalNextSibling=menu.nextSibling;
+    }
+    shell.insertBefore(menu,shell.firstChild);
+    menu.hidden=false;
+    menu.removeAttribute("aria-hidden");
+    menu.style.setProperty("display","block","important");
+    menu.style.setProperty("visibility","visible","important");
+    menu.style.setProperty("margin","0 0 14px","important");
+  }
 
   function speak(text){
     if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function"){
@@ -503,7 +539,10 @@
     sequence.push(["paceduSignOutPage","Sign Out"]);
 
     var old=document.getElementById("pacificEducationSequentialRoleWorkspace");
-    if(old) old.remove();
+    if(old){
+      restoreAppMenu();
+      old.remove();
+    }
 
     var shell=document.createElement("section");
     shell.id="pacificEducationSequentialRoleWorkspace"; shell.setAttribute("data-pe-role",role);
@@ -519,6 +558,7 @@
       if(signOutTopButton) signOutTopButton.style.cssText="background:#a62e35;color:#fff;padding:10px 14px;font-weight:700;border:0;border-radius:8px;";
     }
     app.insertBefore(shell,app.firstChild);
+    placeAppMenuInWorkspace(shell);
 
     var title=document.getElementById("peSequentialTitle");
     var progress=document.getElementById("peSequentialProgress");
@@ -1194,6 +1234,7 @@
         SESSION_KEYS.forEach(function(key){try{sessionStorage.removeItem(key);}catch(e){}});
       }catch(e){}
       restoreAllMovedTargets();
+      restoreAppMenu();
       setRoleWorkspaceIsolation(false);
       shell.remove();
       Array.prototype.forEach.call(app.children,function(el){
