@@ -146,11 +146,22 @@
     doneLabel.appendChild(done); doneLabel.appendChild(doneText); card.appendChild(doneLabel);
     var save = document.createElement("button"); save.type = "button"; save.textContent = "Save Activity on This Device"; save.style.cssText = "padding:11px 15px;font-weight:700;"; card.appendChild(save);
     var live = document.createElement("p"); live.id = "paceduRoleActivityStatus"; live.setAttribute("role","status"); live.setAttribute("aria-live","polite"); card.appendChild(live);
-    var key = [
+    var legacyKey = [
       activity.id, context.countryCode || "country-not-set", context.classReference || "class-not-set",
       context.level || "level-not-set", context.subject || "subject-not-set", context.term || "term-not-set"
     ].join("|");
+    /* Include the active role in the storage key. Accessible learner roles can
+       share the same subject/day/context, but their attempts must never overwrite
+       or appear as another role's saved work. Migrate only a legacy record whose
+       stored role exactly matches the current role. */
+    var key = ["role:" + role, legacyKey].join("|");
     var all = readAll(); var prior = all[key];
+    if (!prior && all[legacyKey] && all[legacyKey].role === role) {
+      prior = all[legacyKey];
+      all[key] = prior;
+      delete all[legacyKey];
+      writeAll(all);
+    }
     if (prior) { input.value = prior.response || ""; done.checked = !!prior.completed; live.textContent = "Saved on this device. Review status: " + (prior.reviewStatus || activity.verificationStatus) + "."; }
     save.addEventListener("click", function () {
       var response = String(input.value || "").trim();
