@@ -534,6 +534,51 @@
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
     var dailyDay=1;
 
+    /* Visibility guard for real workspace content. A role page must never degrade
+       to voice controls alone when legacy CSS, a stale hidden flag, or a late
+       feature render interferes. This does not change the protected voice engine. */
+    function enforceWorkspaceVisibility(){
+      if(!shell || !page) return;
+      shell.hidden=false;
+      shell.removeAttribute("aria-hidden");
+      shell.style.setProperty("display","block","important");
+      shell.style.setProperty("visibility","visible","important");
+      shell.style.setProperty("opacity","1","important");
+      page.hidden=false;
+      page.removeAttribute("aria-hidden");
+      page.style.setProperty("display","block","important");
+      page.style.setProperty("visibility","visible","important");
+      page.style.setProperty("opacity","1","important");
+      var active=page.querySelector("[data-pe-sequential-page='active']");
+      if(active){
+        active.hidden=false;
+        active.removeAttribute("aria-hidden");
+        active.removeAttribute("data-pe-sequential-hidden");
+        active.style.setProperty("display","block","important");
+        active.style.setProperty("visibility","visible","important");
+        active.style.setProperty("opacity","1","important");
+      }
+      if(!page.firstElementChild && !String(page.textContent||"").trim()){
+        var recovery=document.createElement("section");
+        recovery.setAttribute("data-pe-workspace-visibility-recovery","true");
+        recovery.setAttribute("role","status");
+        recovery.style.cssText="display:block!important;visibility:visible!important;opacity:1!important;padding:16px;margin:12px 0;border:2px solid #b45309;border-radius:10px;background:#fff;color:#17202a;";
+        var heading=document.createElement("h3");
+        heading.textContent="Workspace content recovery";
+        var message=document.createElement("p");
+        message.textContent="This workspace page did not load its content. Try loading this step again. Your registration and saved activity attempts have not been cleared.";
+        var retry=document.createElement("button");
+        retry.type="button";
+        retry.textContent="Retry this workspace page";
+        retry.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;";
+        retry.addEventListener("click",function(){ renderPage(); });
+        recovery.appendChild(heading);
+        recovery.appendChild(message);
+        recovery.appendChild(retry);
+        page.appendChild(recovery);
+      }
+    }
+
 
     /* Student daily activity starter: concrete English, Mathematics and Phonics
        tasks, with completion saved locally without replacing the existing lesson engine. */
@@ -907,6 +952,7 @@
         window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
+      enforceWorkspaceVisibility();
       /* Do not move focus automatically on the final reading page. */
       if(item[0]!=="paceduSignOutPage"){
         try{
