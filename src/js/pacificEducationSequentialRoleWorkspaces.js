@@ -534,9 +534,53 @@
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
     var dailyDay=1;
 
-    /* Visibility guard for real workspace content. A role page must never degrade
-       to voice controls alone when legacy CSS, a stale hidden flag, or a late
-       feature render interferes. This does not change the protected voice engine. */
+
+    /* Student daily activity starter: concrete English, Mathematics and Phonics
+       tasks, with completion saved locally without replacing the existing lesson engine. */
+    function addStudentDailyActivityStarter(day, host){
+      if(!host || document.getElementById("peStudentDailyActivityStarter")) return;
+      var panel=document.createElement("section");
+      panel.id="peStudentDailyActivityStarter";
+      panel.setAttribute("aria-label","Student daily learning activities");
+      panel.style.cssText="margin:16px 0;padding:16px;border:2px solid #15803d;border-radius:10px;";
+      panel.innerHTML="<h3>📚 Student Daily Activities — Day "+day+" of 365</h3>"+
+        "<p>Choose one activity, practise it, then mark it complete. This is a starter activity set; your teacher's class, subject and term instructions still apply.</p>"+
+        "<label for=\"peStudentDailySubject\"><strong>Subject</strong></label> "+
+        "<select id=\"peStudentDailySubject\" style=\"display:block;width:100%;max-width:420px;padding:10px;margin:8px 0\">"+
+        "<option value=\"English\">English</option><option value=\"Mathematics\">Mathematics</option><option value=\"Phonics\">Phonics</option></select>"+
+        "<p><strong>Learning goal</strong></p><p id=\"peStudentDailyGoal\"></p>"+
+        "<p><strong>Learn and practise</strong></p><p id=\"peStudentDailyTask\"></p>"+
+        "<p><strong>Check your understanding</strong></p><p id=\"peStudentDailyCheck\"></p>"+
+        "<button type=\"button\" id=\"peStudentDailyComplete\" style=\"padding:12px 16px;font-weight:700\">✓ Mark Activity Complete</button>"+
+        "<p id=\"peStudentDailyStatus\" role=\"status\" aria-live=\"polite\">Your completion is saved on this device.</p>";
+      host.appendChild(panel);
+      var select=panel.querySelector("#peStudentDailySubject");
+      var goal=panel.querySelector("#peStudentDailyGoal");
+      var task=panel.querySelector("#peStudentDailyTask");
+      var check=panel.querySelector("#peStudentDailyCheck");
+      var status=panel.querySelector("#peStudentDailyStatus");
+      var key="pacificEducationStudentDailyActivityProgressV1";
+      var activities={
+        English:{goal:"Use a greeting and a complete sentence.",task:"Learn: hello, good morning, thank you. Say or write: Good morning. My name is ____.",check:"Which is a greeting: Hello or Chair? Answer: Hello."},
+        Mathematics:{goal:"Count objects and compare small numbers.",task:"Count five safe objects near you. Say or write the numbers 1, 2, 3, 4, 5.",check:"Which number is greater: 3 or 5? Answer: 5."},
+        Phonics:{goal:"Recognise a letter and its starting sound.",task:"Look at the letter A. Practise its name and the beginning sound in apple. Blind learners may listen to a teacher or approved screen reader; deaf learners may use the written word and letter card.",check:"Which word begins with A: apple or sun? Answer: apple."}
+      };
+      function readProgress(){try{return JSON.parse(localStorage.getItem(key)||"{}")||{};}catch(e){return {};}}
+      function entryKey(){return String(day)+":"+select.value;}
+      function paint(){
+        var data=activities[select.value]||activities.English;
+        goal.textContent=data.goal;task.textContent=data.task;check.textContent=data.check;
+        status.textContent=readProgress()[entryKey()] ? "✓ "+select.value+" Day "+day+" activity already completed on this device." : "Complete the activity, then mark it complete. Progress is stored on this device.";
+      }
+      select.addEventListener("change",paint);
+      panel.querySelector("#peStudentDailyComplete").addEventListener("click",function(){
+        var saved=readProgress();saved[entryKey()]={completed:true,day:day,subject:select.value};
+        try{localStorage.setItem(key,JSON.stringify(saved));status.textContent="✓ Saved: "+select.value+" Day "+day+" activity completed on this device.";speak("Daily activity completed. Your progress is saved on this device.");}
+        catch(e){status.textContent="Activity completed for this session, but local storage is unavailable. Please tell your teacher before leaving this page.";}
+      });
+      paint();
+    }
+
     function enforceWorkspaceVisibility(){
       if(!shell || !page) return;
       shell.hidden=false;
@@ -679,49 +723,6 @@
 
     /* Student daily activity starter: concrete English, Mathematics and Phonics
        tasks, with completion saved locally without replacing the existing lesson engine. */
-    function addStudentDailyActivityStarter(day, host){
-      if(!host || document.getElementById("peStudentDailyActivityStarter")) return;
-      var panel=document.createElement("section");
-      panel.id="peStudentDailyActivityStarter";
-      panel.setAttribute("aria-label","Student daily learning activities");
-      panel.style.cssText="margin:16px 0;padding:16px;border:2px solid #15803d;border-radius:10px;";
-      panel.innerHTML="<h3>📚 Student Daily Activities — Day "+day+" of 365</h3>"+
-        "<p>Choose one activity, practise it, then mark it complete. This is a starter activity set; your teacher's class, subject and term instructions still apply.</p>"+
-        "<label for=\"peStudentDailySubject\"><strong>Subject</strong></label> "+
-        "<select id=\"peStudentDailySubject\" style=\"display:block;width:100%;max-width:420px;padding:10px;margin:8px 0\">"+
-        "<option value=\"English\">English</option><option value=\"Mathematics\">Mathematics</option><option value=\"Phonics\">Phonics</option></select>"+
-        "<p><strong>Learning goal</strong></p><p id=\"peStudentDailyGoal\"></p>"+
-        "<p><strong>Learn and practise</strong></p><p id=\"peStudentDailyTask\"></p>"+
-        "<p><strong>Check your understanding</strong></p><p id=\"peStudentDailyCheck\"></p>"+
-        "<button type=\"button\" id=\"peStudentDailyComplete\" style=\"padding:12px 16px;font-weight:700\">✓ Mark Activity Complete</button>"+
-        "<p id=\"peStudentDailyStatus\" role=\"status\" aria-live=\"polite\">Your completion is saved on this device.</p>";
-      host.appendChild(panel);
-      var select=panel.querySelector("#peStudentDailySubject");
-      var goal=panel.querySelector("#peStudentDailyGoal");
-      var task=panel.querySelector("#peStudentDailyTask");
-      var check=panel.querySelector("#peStudentDailyCheck");
-      var status=panel.querySelector("#peStudentDailyStatus");
-      var key="pacificEducationStudentDailyActivityProgressV1";
-      var activities={
-        English:{goal:"Use a greeting and a complete sentence.",task:"Learn: hello, good morning, thank you. Say or write: Good morning. My name is ____.",check:"Which is a greeting: Hello or Chair? Answer: Hello."},
-        Mathematics:{goal:"Count objects and compare small numbers.",task:"Count five safe objects near you. Say or write the numbers 1, 2, 3, 4, 5.",check:"Which number is greater: 3 or 5? Answer: 5."},
-        Phonics:{goal:"Recognise a letter and its starting sound.",task:"Look at the letter A. Practise its name and the beginning sound in apple. Blind learners may listen to a teacher or approved screen reader; deaf learners may use the written word and letter card.",check:"Which word begins with A: apple or sun? Answer: apple."}
-      };
-      function readProgress(){try{return JSON.parse(localStorage.getItem(key)||"{}")||{};}catch(e){return {};}}
-      function entryKey(){return String(day)+":"+select.value;}
-      function paint(){
-        var data=activities[select.value]||activities.English;
-        goal.textContent=data.goal;task.textContent=data.task;check.textContent=data.check;
-        status.textContent=readProgress()[entryKey()] ? "✓ "+select.value+" Day "+day+" activity already completed on this device." : "Complete the activity, then mark it complete. Progress is stored on this device.";
-      }
-      select.addEventListener("change",paint);
-      panel.querySelector("#peStudentDailyComplete").addEventListener("click",function(){
-        var saved=readProgress();saved[entryKey()]={completed:true,day:day,subject:select.value};
-        try{localStorage.setItem(key,JSON.stringify(saved));status.textContent="✓ Saved: "+select.value+" Day "+day+" activity completed on this device.";speak("Daily activity completed. Your progress is saved on this device.");}
-        catch(e){status.textContent="Activity completed for this session, but local storage is unavailable. Please tell your teacher before leaving this page.";}
-      });
-      paint();
-    }
 
     function renderPage(){
       /* Once the final Sign Out page is visible, no incidental render request
@@ -970,8 +971,6 @@
           target.insertBefore(levelIntro,target.firstChild);
         }
         moveTargetIntoPage(target,page);
-        /* Detect an empty legacy feature after it has been moved and made visible.
-           Keep its role-specific recovery tools inside this active page. */
         if(!roleWorkspaceHasContent(target)) addRoleWorkspaceLanding(role,item,page);
         /* After the normal selector and navigation recovery have both had a
            chance to initialise, keep Learning Level usable if no enabled
@@ -1043,7 +1042,6 @@
         missing.style.cssText="padding:16px;border:2px solid #b45309;border-radius:8px;";
         missing.innerHTML="<strong>"+item[1]+" is not connected yet.</strong><p>This page cannot be completed until its existing pilot feature is connected. No placeholder workspace is presented as a working feature.</p>";
         page.appendChild(missing);
-        addRoleWorkspaceLanding(role,item,page);
         next.disabled=true;
       }
       /* Add one practical, role-specific work task to the relevant workspace page.
@@ -1053,7 +1051,6 @@
         window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
-      enforceWorkspaceVisibility();
       /* Do not move focus automatically on the final reading page. */
       if(item[0]!=="paceduSignOutPage"){
         try{
@@ -1061,11 +1058,12 @@
           if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
         }catch(e){}
       }
+      enforceWorkspaceVisibility();
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
 
-    /* Expose the existing final Sign Out page to the registration handoff recovery.
-       This changes only the current workspace index; confirmation still controls sign-out. */
+    /* Allow the registration handoff recovery to reopen the existing final
+       Sign Out step without bypassing its explicit confirmation. */
     shell.__paceduOpenFinalSignOut=function(){
       if(shell.getAttribute("data-pe-final-signout")==="true") return true;
       index=sequence.length-1;
@@ -1275,7 +1273,7 @@
   else bind();
 
   window.PacificEducationSequentialRoleWorkspaces={
-    version:"1.3.1-workspace-recovery-signin-signout",
+    version:"1.3.0-adjustable-sequence",
     roles:Object.keys(ROLE_SEQUENCE_DEFAULTS),
     sequenceConfig:{
       get:getRoleSequence,
