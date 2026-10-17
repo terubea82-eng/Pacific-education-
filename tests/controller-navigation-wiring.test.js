@@ -169,6 +169,7 @@ test("Student registration handoff marks guided flow complete and keeps a worksp
   assert.match(registration, /paceduWorkspaceHandoffRetry/);
   assert.match(registration, /paceduWorkspaceHandoffSignIn/);
   assert.match(registration, /paceduWorkspaceHandoffSignOut/);
+  assert.match(registration, /User Type Completed — Workspace Recovery/);
   assert.match(sequential, /__paceduOpenFinalSignOut=function/);
   assert.match(registration, /openedWorkspace\.style\.setProperty\("display","block","important"\)/);
   assert.match(sequential, /shell\.style\.setProperty\("display","block","important"\)/);
