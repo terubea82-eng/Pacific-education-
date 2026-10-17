@@ -124,7 +124,7 @@ test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
   assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-learning-level-recovery-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-visible-workspace-guard-v1/);
 });
 
 
@@ -146,12 +146,31 @@ test("sequential workspace restores hidden main/app containers after registratio
   assert.ok(sequential.includes("#pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"));
 });
 
+test("role workspace content is forced visible and has a recoverable blank-content fallback", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /function enforceWorkspaceVisibility\(\)/);
+  assert.match(sequential, /page\.style\.setProperty\("display","block","important"\)/);
+  assert.match(sequential, /active\.style\.setProperty\("visibility","visible","important"\)/);
+  assert.match(sequential, /Workspace content recovery/);
+  assert.match(sequential, /Retry this workspace page/);
+  assert.match(sequential, /Sign In \/ Reopen Workspace/);
+  assert.match(sequential, /Open the final Sign Out page/);
+  assert.match(sequential, /index=sequence\.length-1;\s*renderPage\(\);/);
+  assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261017-role-workspace-content-recovery-v3/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-visible-workspace-guard-v1/);
+});
+
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
   const registration = fs.readFileSync("src/js/pacificEducationMandatoryBoxSequence.js", "utf8");
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(registration, /body\.classList\.add\("pe-guided-flow-ended"\)/);
   assert.match(registration, /paceduWorkspaceHandoffRecovery/);
   assert.match(registration, /paceduWorkspaceHandoffRetry/);
+  assert.match(registration, /paceduWorkspaceHandoffSignIn/);
+  assert.match(registration, /paceduWorkspaceHandoffSignOut/);
+  assert.match(registration, /User Type Completed — Workspace Recovery/);
+  assert.match(sequential, /__paceduOpenFinalSignOut=function/);
   assert.match(registration, /openedWorkspace\.style\.setProperty\("display","block","important"\)/);
   assert.match(sequential, /shell\.style\.setProperty\("display","block","important"\)/);
 });
@@ -272,4 +291,20 @@ test("all guided pages use a short shared reduced-motion-aware entrance transiti
   assert.match(controller, /animateGuidedPageEntry\(targetId\)/);
   assert.match(controller, /animateGuidedPageEntry\(activePageId\)/);
   assert.match(controller, /Protected #856 voice is NOT replaced or rewritten here/);
+});
+
+test("blank role workspace pages render role-specific recovery tools without creating extra pages", () => {
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(sequential, /function roleWorkspaceHasContent\(target\)/);
+  assert.match(sequential, /function addRoleWorkspaceLanding\(role,item,host\)/);
+  assert.match(sequential, /data-pe-role-workspace-recovery/);
+  assert.match(sequential, /Available workspace tools/);
+  assert.match(sequential, /button\.textContent="Open "\+step\[1\]/);
+  assert.match(sequential, /index=stepIndex;[\s\S]*?renderPage\(\)/);
+  assert.match(sequential, /if\(!roleWorkspaceHasContent\(target\)\) addRoleWorkspaceLanding\(role,item,page\)/);
+  assert.match(sequential, /addRoleWorkspaceLanding\(role,item,page\)/);
+  assert.match(sequential, /Your saved registration and activity progress are not cleared by this recovery menu/);
+  assert.match(sequential, /technician mode remains pilot-only/i);
+  assert.match(sequential, /protected #856 speech controller/);
+  assert.match(sequential, /var key="pacificEducationStudentDailyActivityProgressV1"/);
 });
