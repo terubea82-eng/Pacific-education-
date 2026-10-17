@@ -101,10 +101,24 @@ function setStatus(message){
   if(b) b.textContent=message;
 }
 
+var appMenuGuardObserver=null;
+function watchEntryAppMenu(){
+  if(appMenuGuardObserver || !document.body || typeof MutationObserver==="undefined") return;
+  appMenuGuardObserver=new MutationObserver(function(records){
+    var menu=el("pacificEducationAppMenu");
+    if(!menu || el("pacificEducationSequentialRoleWorkspace")) return;
+    if(records.some(function(record){return record.target===menu &&
+      (record.attributeName==="hidden" || record.attributeName==="aria-hidden" || record.attributeName==="style");})){
+      enforceEntryAppMenuHidden();
+    }
+  });
+  appMenuGuardObserver.observe(document.body,{subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style"]});
+}
 function enforceEntryAppMenuHidden(){
   /* App Menu belongs to the registered role workspace, never to the guided
      Welcome/Vision/Rules/Registration screens. Other legacy pilot activators
      can clear hidden/display styles, so enforce this from the navigation owner. */
+  watchEntryAppMenu();
   var body=document.body;
   var menu=el("pacificEducationAppMenu");
   if(!body || !menu) return;
