@@ -101,6 +101,35 @@ function setStatus(message){
   if(b) b.textContent=message;
 }
 
+function enforceEntryAppMenuHidden(){
+  /* App Menu belongs to the registered role workspace, never to the guided
+     Welcome/Vision/Rules/Registration screens. Other legacy pilot activators
+     can clear hidden/display styles, so enforce this from the navigation owner. */
+  var body=document.body;
+  var menu=el("pacificEducationAppMenu");
+  if(!body || !menu) return;
+  if(el("pacificEducationSequentialRoleWorkspace")) return;
+  var active=body.getAttribute("data-pe-active-guided-page") || "";
+  var step=body.getAttribute("data-pe-flow-step");
+  var entry=body.classList.contains("pacedu-entry-mode") ||
+    body.classList.contains("pacedu-registration-mode") ||
+    (body.classList.contains("pe-guided-flow") &&
+     (active==="pacificEducationWelcome" || active==="paceduPageVision" ||
+      active==="paceduPageRules" || active==="pacificEducationIdentityRegistration" ||
+      step==="0" || step==="1" || step==="2" || step==="3"));
+  if(!entry) return;
+  if(!menu.hidden) menu.hidden=true;
+  if(menu.getAttribute("aria-hidden")!=="true") menu.setAttribute("aria-hidden","true");
+  if(menu.style.getPropertyValue("display")!=="none" ||
+     menu.style.getPropertyPriority("display")!=="important"){
+    menu.style.setProperty("display","none","important");
+  }
+  if(menu.style.getPropertyValue("visibility")!=="hidden" ||
+     menu.style.getPropertyPriority("visibility")!=="important"){
+    menu.style.setProperty("visibility","hidden","important");
+  }
+}
+
 function safeCall(objectName, method, args){
   try{
     var object=window[objectName];
@@ -571,6 +600,7 @@ function lockLearningToolsDuringEntry(){
 
 function guided(step,targetId){
   lockLearningToolsDuringEntry();
+  enforceEntryAppMenuHidden();
   stopSpeechForPageTransition(targetId);
   if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
@@ -625,6 +655,7 @@ function enforceSingleGatewayPage(expectedPage, targetId){
 
 function gateway(page){
   lockLearningToolsDuringEntry();
+  enforceEntryAppMenuHidden();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
   syncActiveBackButton(null);
