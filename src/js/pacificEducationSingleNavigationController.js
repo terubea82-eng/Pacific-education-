@@ -608,6 +608,7 @@ function guided(step,targetId){
   document.body.setAttribute("data-pe-flow-step",String(step));
   document.body.setAttribute("data-pe-active-guided-page",targetId);
   document.body.setAttribute("data-pe-navigation-owner","single");
+  enforceEntryAppMenuHidden();
 
   lockLearningToolsDuringEntry();
   var ok=revealTarget(targetId);
@@ -666,6 +667,7 @@ function gateway(page){
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
+  enforceEntryAppMenuHidden();
   /* Invalidate delayed guided-page repairs before they can reopen the page we just left. */
   document.body.removeAttribute("data-pe-flow-step");
   document.body.removeAttribute("data-pe-active-guided-page");
