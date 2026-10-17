@@ -315,6 +315,194 @@
       }
     }
 
+
+    /*
+     * Role-specific workspace activities are deliberately stored separately
+     * from formal learner evidence and assessment submissions. This gives each
+     * pilot role something actionable to attempt without fabricating marks or
+     * mixing teacher/reviewer/partner responses into student progress.
+     */
+    var WORKSPACE_ACTIVITY_TASKS = {
+      "teacher": [
+        {id:"plan-learning", title:"Plan a short learning activity", prompt:"Write a short activity for the selected class and subject. Include the learning goal, the task learners will attempt, and how you will check understanding."},
+        {id:"support-learner", title:"Plan learner support", prompt:"Describe one practical way to support a learner who needs more time or a different explanation. Use demo information only."}
+      ],
+      "special-education": [
+        {id:"adapt-access", title:"Adapt an activity for access", prompt:"Describe how you would make today's learning task accessible to a learner who needs additional support."},
+        {id:"support-evidence", title:"Record a support observation", prompt:"Write a brief, respectful observation about a learner's demonstrated skill and one possible next support step. Use demo information only."}
+      ],
+      "parent": [
+        {id:"home-practice", title:"Support learning at home", prompt:"Describe one short, safe activity you could do with a child to practise today's learning. Do not enter a child's real name or private details."},
+        {id:"weekend-plan", title:"Plan a home learning routine", prompt:"Write a simple 10-minute home learning routine using familiar household objects or conversation."}
+      ],
+      "head-of-school": [
+        {id:"review-coverage", title:"Review curriculum coverage", prompt:"List the checks you would make before deciding whether a class has covered its planned learning."},
+        {id:"support-teachers", title:"Plan teacher support", prompt:"Describe one practical way school leadership could help teachers identify learner strengths and learning needs."}
+      ],
+      "institution-admin": [
+        {id:"check-setup", title:"Check academic setup", prompt:"List the items to verify before a class begins: class reference, level, subject, term and approved teaching calendar."},
+        {id:"resolve-conflict", title:"Review a setup conflict", prompt:"Explain how you would flag a duplicate or conflicting class setup without automatically creating a replacement class."}
+      ],
+      "professional": [
+        {id:"review-quality", title:"Review activity quality", prompt:"Review an activity for clear instructions, age-appropriate language, accessibility and a way for the learner to respond. State one improvement."},
+        {id:"review-evidence", title:"Review evidence responsibly", prompt:"Describe what evidence is needed before confirming a learning claim, and what should remain pending review."}
+      ],
+      "ngo": [
+        {id:"plan-support", title:"Plan pilot support", prompt:"Describe one practical resource or service your organisation could offer to support learners or teachers during a controlled pilot."},
+        {id:"report-barrier", title:"Identify an access barrier", prompt:"Describe one possible barrier to learning in a low-connectivity setting and a practical way to reduce it."}
+      ],
+      "education": [
+        {id:"curriculum-alignment", title:"Review curriculum alignment", prompt:"List the checks needed to confirm an activity matches the selected country, level, subject and term."},
+        {id:"evidence-review", title:"Review pilot evidence", prompt:"Explain how to distinguish recorded activity from verified learning evidence and teacher-approved conclusions."}
+      ],
+      "community": [
+        {id:"local-context", title:"Suggest a local learning example", prompt:"Suggest a safe, familiar community example that could help a learner understand a school subject."},
+        {id:"pilot-feedback", title:"Give pilot feedback", prompt:"Describe one thing that would make a learning activity easier to understand or use on a phone."}
+      ],
+      "owner": [
+        {id:"pilot-readiness", title:"Review pilot readiness", prompt:"List the checks needed before a pilot change is accepted: scoped source change, automated checks, deployment status and real-device testing."},
+        {id:"preserve-known-good", title:"Protect working features", prompt:"Describe how you would isolate a reported defect while preserving unrelated working features and the known-good voice baseline."}
+      ],
+      "technician": [
+        {id:"test-navigation", title:"Test workspace navigation", prompt:"Record the role, page, action attempted and expected result when checking that only the intended workspace page is visible."},
+        {id:"report-defect", title:"Prepare a useful defect report", prompt:"Write a short demo defect report with steps to reproduce, expected behaviour, actual behaviour and the test environment. Do not include secrets."}
+      ]
+    };
+
+    function getWorkspaceDailyActivity() {
+      var day = 1, lesson = null;
+      try {
+        var engine = window.PacificEducationDailyLessons;
+        if (engine && typeof engine.getCurrentCoreDay === "function") day = Number(engine.getCurrentCoreDay()) || 1;
+        else day = Number(window.localStorage.getItem("currentDayNumber")) || 1;
+        day = Math.max(1, Math.min(365, Math.floor(day)));
+        if (engine && typeof engine.getDailyLesson === "function") lesson = engine.getDailyLesson(day);
+        else if (typeof window.getDailyLesson === "function") lesson = window.getDailyLesson(day);
+      } catch (e) {}
+      var activity = lesson && lesson.activity;
+      var practice = lesson && lesson.practice;
+      if (activity && typeof activity === "object") {
+        activity = activity.questionText || activity.learnerTask || activity.description || activity.text || "Complete the learning task for today.";
+      }
+      if (practice && typeof practice === "object") {
+        practice = practice.text || practice.description || "Practise the skill and give an example.";
+      }
+      return {
+        day: day,
+        title: String(lesson && lesson.title || "Daily Learning Activity"),
+        activity: String(activity || "Complete the learning task for today."),
+        practice: String(practice || "Practise the skill and give one example.")
+      };
+    }
+
+    function workspaceTasksForRole(role) {
+      var learners = ["student", "blind-learner", "deaf-learner"];
+      if (learners.indexOf(role.id) !== -1) {
+        var daily = getWorkspaceDailyActivity();
+        var accessNote = role.id === "blind-learner"
+          ? " You may type your response or use your preferred accessible response method."
+          : role.id === "deaf-learner"
+            ? " You may type your response or describe the task using visual/text instructions."
+            : "";
+        return [
+          {
+            id:"daily-learning-day-" + daily.day,
+            title:"Day " + daily.day + " of 365 — " + daily.title,
+            prompt:"Today's activity: " + daily.activity + " Your task: write or describe what you learned and give one example." + accessNote
+          },
+          {
+            id:"practice-day-" + daily.day,
+            title:"Practice — Day " + daily.day,
+            prompt:daily.practice + " After practising, write one thing you can now do or explain." + accessNote
+          }
+        ];
+      }
+      var tasks = WORKSPACE_ACTIVITY_TASKS[role.id];
+      if (tasks && tasks.length) return tasks;
+      return [
+        {id:"role-task", title:"Role workspace check", prompt:"Describe one useful task you can complete in the " + role.title + " workspace and how you would confirm it worked."},
+        {id:"role-feedback", title:"Workspace improvement", prompt:"Suggest one practical improvement that would make this pilot workspace clearer or more accessible."}
+      ];
+    }
+
+    function renderWorkspaceActivities(role) {
+      var host = document.getElementById("pacificEducationWorkspaceActivities");
+      if (!host) return;
+      var tasks = workspaceTasksForRole(role);
+      var saved = [];
+      try {
+        var parsed = JSON.parse(window.localStorage.getItem("pacificEducationWorkspaceActivityAttempts") || "[]");
+        if (Array.isArray(parsed)) saved = parsed.filter(function(item) { return item && item.roleId === role.id; });
+      } catch (e) {}
+      host.innerHTML =
+        "<h4>My Activities — Try a task now</h4>" +
+        "<p>These are role-specific controlled-pilot activities. Answers are saved on this device separately from formal learner evidence and assessments. Use test/demo information only.</p>" +
+        '<p id="peWorkspaceActivityCount" role="status" aria-live="polite">Saved workspace attempts for this role: ' + saved.length + '</p>' +
+        '<div id="peWorkspaceActivityCards">' + tasks.map(function(task) {
+          var count = saved.filter(function(item) { return item.taskId === task.id; }).length;
+          return '<article style="margin:10px 0;padding:12px;border:1px solid currentColor;border-radius:8px;">' +
+            '<h5>' + esc(task.title) + '</h5><p>' + esc(task.prompt) + '</p>' +
+            '<form data-workspace-task="' + esc(task.id) + '">' +
+            '<label for="peWorkspaceAnswer-' + esc(task.id) + '">Your response</label>' +
+            '<textarea id="peWorkspaceAnswer-' + esc(task.id) + '" name="response" rows="3" maxlength="2000" required style="display:block;width:100%;box-sizing:border-box;margin:6px 0 10px;"></textarea>' +
+            '<button type="submit">Save Activity Attempt</button> ' +
+            '<span>Previous attempts: ' + count + '</span>' +
+            '</form><p id="peWorkspaceTaskStatus-' + esc(task.id) + '" role="status" aria-live="polite"></p></article>';
+        }).join("") + '</div>' +
+        '<p><strong>Important:</strong> Saving here records a practice attempt only. Formal assessments, curriculum marks and teacher-approved progress remain in their existing protected workflows.</p>';
+
+      Array.prototype.forEach.call(host.querySelectorAll("form[data-workspace-task]"), function(form) {
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          var input = form.querySelector("textarea[name='response']");
+          var response = String(input && input.value || "").trim();
+          var taskId = form.getAttribute("data-workspace-task");
+          var task = tasks.filter(function(item) { return item.id === taskId; })[0];
+          var status = document.getElementById("peWorkspaceTaskStatus-" + taskId);
+          if (!response) {
+            if (status) status.textContent = "Please enter a response before saving.";
+            return;
+          }
+          var records = [];
+          try {
+            var raw = JSON.parse(window.localStorage.getItem("pacificEducationWorkspaceActivityAttempts") || "[]");
+            if (Array.isArray(raw)) records = raw;
+          } catch (e) {}
+          var daily = getWorkspaceDailyActivity();
+          records.push({
+            attemptId:"workspace-attempt-" + Date.now(),
+            roleId:role.id,
+            roleTitle:role.title,
+            taskId:taskId,
+            taskTitle:task ? task.title : "Workspace activity",
+            prompt:task ? task.prompt : "",
+            response:response,
+            dayNumber:daily.day,
+            subject:String(window.localStorage.getItem("pacificEducationSubject") || ""),
+            term:String(window.localStorage.getItem("pacificEducationTerm") || ""),
+            status:"workspace-practice-only",
+            savedAt:new Date().toISOString()
+          });
+          try {
+            window.localStorage.setItem("pacificEducationWorkspaceActivityAttempts", JSON.stringify(records.slice(-500)));
+          } catch (e) {
+            if (status) status.textContent = "This device could not save the attempt. Check available device storage and try again.";
+            return;
+          }
+          var sameRole = records.filter(function(item) { return item && item.roleId === role.id; });
+          var count = document.getElementById("peWorkspaceActivityCount");
+          if (count) count.textContent = "Saved workspace attempts for this role: " + sameRole.length;
+          var cardCount = form.querySelector("span");
+          if (cardCount) {
+            var taskCount = sameRole.filter(function(item) { return item.taskId === taskId; }).length;
+            cardCount.textContent = "Previous attempts: " + taskCount;
+          }
+          if (status) status.textContent = "Attempt saved on this device. It is practice only and has not been treated as a formal assessment.";
+          form.reset();
+        });
+      });
+    }
+
     function renderRole(roleId) {
       var role = roles.filter(function (r) { return r.id === roleId; })[0];
       var gate = document.getElementById("pilotWorkspaceGate");
@@ -490,7 +678,10 @@
           return '<button type="button" data-pilot-target="' + esc(tool[0]) + '" style="display:block;width:100%;text-align:left;padding:12px 14px;border:1px solid currentColor;border-radius:6px;' + (tool[0] === "studentStartLearning" ? "font-size:1.08em;font-weight:bold;" : "") + '">' + esc(tool[1]) + '</button>';
         }).join("") +
         "</nav>" +
-        '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Choose a tool above to continue.</p>';
+        '<p id="pilotWorkspaceStatus" aria-live="polite" style="margin-top:10px;">Choose a tool above to continue.</p>' +
+        '<section id="pacificEducationWorkspaceActivities" aria-label="Workspace activities" style="margin-top:18px;padding:16px;border:2px solid currentColor;border-radius:8px;"></section>';
+
+      renderWorkspaceActivities(role);
 
       var signout=document.createElement("section");
       signout.id="pacificEducationWorkspaceSignOut";
