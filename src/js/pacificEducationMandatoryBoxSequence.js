@@ -334,9 +334,37 @@
                 if(retryStatus) retryStatus.textContent="The workspace still could not open. Reload the pilot and retry; your saved registration has not been deleted.";
               }
             });
+            var reopen=document.createElement("button");
+            reopen.type="button";
+            reopen.id="paceduWorkspaceHandoffSignIn";
+            reopen.textContent="Sign In / Reopen Workspace";
+            reopen.setAttribute("aria-label","Sign in again and reopen the selected role workspace");
+            reopen.style.cssText="display:inline-block!important;margin:8px;padding:14px 18px;background:#15803d;color:#fff;font-weight:700;border-radius:8px;";
+            reopen.addEventListener("click",function(){ retry.click(); });
+            var signOut=document.createElement("button");
+            signOut.type="button";
+            signOut.id="paceduWorkspaceHandoffSignOut";
+            signOut.textContent="Sign Out";
+            signOut.setAttribute("aria-label","Open the existing final Sign Out page");
+            signOut.style.cssText="display:inline-block!important;margin:8px;padding:14px 18px;background:#a62e35;color:#fff;font-weight:700;border-radius:8px;";
+            signOut.addEventListener("click",function(){
+              try{
+                var current=get("pacificEducationSequentialRoleWorkspace");
+                if(!current){ workspace.build(roleName); current=get("pacificEducationSequentialRoleWorkspace"); }
+                if(current && typeof current.__paceduOpenFinalSignOut==="function" && current.__paceduOpenFinalSignOut()){
+                  if(recovery.querySelector("p")) recovery.querySelector("p").textContent="The existing final Sign Out page is open. Confirm Sign Out there only if you want to end this session.";
+                }else if(recovery.querySelector("p")){
+                  recovery.querySelector("p").textContent="The Sign Out page could not open because the workspace is still recovering. Your registration and saved activity progress have not been deleted. Try Sign In / Reopen Workspace again.";
+                }
+              }catch(signOutError){
+                if(recovery.querySelector("p")) recovery.querySelector("p").textContent="The Sign Out page could not open yet. Your registration and saved activity progress have not been deleted.";
+              }
+            });
             recovery.appendChild(heading);
             recovery.appendChild(message);
             recovery.appendChild(retry);
+            recovery.appendChild(reopen);
+            recovery.appendChild(signOut);
             document.body.appendChild(recovery);
           }
           if(recovery){
