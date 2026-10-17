@@ -435,9 +435,15 @@
         update();
         return;
       }
-      var rulesBack=get("paceduRulesBack");
-      if(rulesBack){ rulesBack.click(); return; }
-      progress.textContent="Use the previous page navigation to return to Rules & Conditions.";
+      /* Country is the first registration sub-step. Return directly to Rules
+         through the single navigation controller; clicking Rules' own Back
+         would incorrectly send the user to Vision. */
+      var navigation=window.PacificEducationSingleNavigation;
+      if(navigation && typeof navigation.gateway==="function"){
+        navigation.gateway(3);
+        return;
+      }
+      progress.textContent="Rules & Conditions could not be opened. Please reload the pilot page.";
     },true);
 
     next.addEventListener("click",nextStep,true);

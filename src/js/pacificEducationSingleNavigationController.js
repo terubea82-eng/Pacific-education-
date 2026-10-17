@@ -797,7 +797,9 @@ function syncActiveBackButton(targetId){
   Object.keys(BACK).forEach(function(pageId){
     var button=el("pacificEducationBack_"+pageId);
     if(!button) return;
-    if(pageId===targetId){
+    /* Registration owns its own box-by-box Back button. Do not show the
+       global page Back beside it or users see two competing Back controls. */
+    if(pageId===targetId && targetId!=="pacificEducationIdentityRegistration"){
       if(button.parentNode!==document.body) document.body.appendChild(button);
       button.hidden=false;
       button.removeAttribute("aria-hidden");
