@@ -297,6 +297,10 @@
           openedWorkspace.hidden=false;
           openedWorkspace.style.setProperty("display","block","important");
           openedWorkspace.style.setProperty("visibility","visible","important");
+          /* A prior failed attempt may have left its recovery panel behind. Once
+             the real workspace is present, remove that stale handoff screen. */
+          var staleRecovery=get("paceduWorkspaceHandoffRecovery");
+          if(staleRecovery) staleRecovery.remove();
           return;
         }catch(workspaceError){
           /* Do not strand the learner on an empty screen if a legacy runtime
