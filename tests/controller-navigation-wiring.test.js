@@ -167,6 +167,9 @@ test("Student registration handoff marks guided flow complete and keeps a worksp
   assert.match(registration, /body\.classList\.add\("pe-guided-flow-ended"\)/);
   assert.match(registration, /paceduWorkspaceHandoffRecovery/);
   assert.match(registration, /paceduWorkspaceHandoffRetry/);
+  assert.match(registration, /paceduWorkspaceHandoffSignIn/);
+  assert.match(registration, /paceduWorkspaceHandoffSignOut/);
+  assert.match(sequential, /__paceduOpenFinalSignOut=function/);
   assert.match(registration, /openedWorkspace\.style\.setProperty\("display","block","important"\)/);
   assert.match(sequential, /shell\.style\.setProperty\("display","block","important"\)/);
 });
