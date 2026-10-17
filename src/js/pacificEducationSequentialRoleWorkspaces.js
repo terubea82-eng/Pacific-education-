@@ -1064,6 +1064,15 @@
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
 
+    /* Expose the existing final Sign Out page to the registration handoff recovery.
+       This changes only the current workspace index; confirmation still controls sign-out. */
+    shell.__paceduOpenFinalSignOut=function(){
+      if(shell.getAttribute("data-pe-final-signout")==="true") return true;
+      index=sequence.length-1;
+      renderPage();
+      return shell.getAttribute("data-pe-final-signout")==="true";
+    };
+
     back.onclick=function(){
       if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(index>0){
