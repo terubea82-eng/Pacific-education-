@@ -743,14 +743,11 @@ function ensureBackButton(targetId){
   /* Rebind if a repair or feature insertion replaces this page’s Back node. */
   backBound[id]=button;
   button.addEventListener("click",function(event){
+    /* Run at the target's capture phase so a legacy bubble handler on a reused
+       Back node cannot block the single-navigation action or stall click dispatch. */
     event.preventDefault();
     event.stopPropagation();
     event.stopImmediatePropagation();
-    /* Defer page replacement until the click event has fully unwound. Several
-       legacy page observers listen to the same visibility attributes; changing
-       the whole gateway synchronously inside the Back click can stall browser
-       click completion while those observers reconcile. The destination stays
-       explicit and the same single-navigation controller remains authoritative. */
     window.setTimeout(function(){
       var row=BACK[targetId];
       if(!row) return;
@@ -758,9 +755,6 @@ function ensureBackButton(targetId){
       if(row[1]==="vision"){ gateway(2); return; }
       if(row[1]==="rules"){ gateway(3); return; }
       var map={
-        /* guided() uses the flow-step index, which is the page number minus one
-           after the Welcome/Vision/Rules gateway. Keep Back in the same index
-           contract as the corresponding Next bindings. */
         registration:["pacificEducationIdentityRegistration",3],
         prototype:["prototypeAccess",4],
         level:["levelSelection",5],
@@ -774,7 +768,7 @@ function ensureBackButton(targetId){
       };
       if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
     },0);
-  });
+  },true);
 }
 
 function bindAllBackButtons(){
