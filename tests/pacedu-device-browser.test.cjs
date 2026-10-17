@@ -188,7 +188,13 @@ test("Back returns to the immediately previous guided page with a matching flow 
     expect(entered, "controller must enter " + item.current).toBe(true);
     await expect(page.locator("#" + item.current)).toBeVisible();
     console.log("[guided Back diagnostic] click Back:", item.current);
-    await page.locator("#pacificEducationBack_" + item.current).click();
+    if (item.current === "pacificEducationIdentityRegistration") {
+      await expect(page.locator("#registrationBackButton")).toBeVisible();
+      await expect(page.locator("#pacificEducationBack_pacificEducationIdentityRegistration")).toBeHidden();
+      await page.locator("#registrationBackButton").click();
+    } else {
+      await page.locator("#pacificEducationBack_" + item.current).click();
+    }
     console.log("[guided Back diagnostic] waiting for previous:", item.previous);
     await expect(page.locator("#" + item.previous)).toBeVisible();
     if (item.previousStep === null) {
