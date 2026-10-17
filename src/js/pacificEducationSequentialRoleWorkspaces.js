@@ -1062,6 +1062,15 @@
       speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
     }
 
+    /* Allow the registration handoff recovery to reopen the existing final
+       Sign Out step without bypassing its explicit confirmation. */
+    shell.__paceduOpenFinalSignOut=function(){
+      if(shell.getAttribute("data-pe-final-signout")==="true") return true;
+      index=sequence.length-1;
+      renderPage();
+      return shell.getAttribute("data-pe-final-signout")==="true";
+    };
+
     back.onclick=function(){
       if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(index>0){
