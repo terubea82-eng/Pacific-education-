@@ -567,14 +567,38 @@
         heading.textContent="Workspace content recovery";
         var message=document.createElement("p");
         message.textContent="This workspace page did not load its content. Try loading this step again. Your registration and saved activity attempts have not been cleared.";
+        var recoveryActions=document.createElement("div");
+        recoveryActions.style.cssText="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;";
         var retry=document.createElement("button");
         retry.type="button";
         retry.textContent="Retry this workspace page";
         retry.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;";
         retry.addEventListener("click",function(){ renderPage(); });
+        /* Sign In retries the existing registered role workspace; it does not
+           create a second session or bypass registration. */
+        var signIn=document.createElement("button");
+        signIn.type="button";
+        signIn.textContent="Sign In / Reopen Workspace";
+        signIn.setAttribute("aria-label","Sign in again and reopen the current role workspace");
+        signIn.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;background:#15803d;color:#fff;";
+        signIn.addEventListener("click",function(){ renderPage(); });
+        /* Sign Out only takes the user to the existing final sign-out page.
+           Actual session clearing still requires the existing confirmation. */
+        var signOut=document.createElement("button");
+        signOut.type="button";
+        signOut.textContent="Sign Out";
+        signOut.setAttribute("aria-label","Open the final Sign Out page");
+        signOut.style.cssText="display:inline-block!important;visibility:visible!important;padding:12px 16px;font-weight:700;background:#a62e35;color:#fff;";
+        signOut.addEventListener("click",function(){
+          index=sequence.length-1;
+          renderPage();
+        });
+        recoveryActions.appendChild(retry);
+        recoveryActions.appendChild(signIn);
+        recoveryActions.appendChild(signOut);
         recovery.appendChild(heading);
         recovery.appendChild(message);
-        recovery.appendChild(retry);
+        recovery.appendChild(recoveryActions);
         page.appendChild(recovery);
       }
     }
@@ -1165,7 +1189,7 @@
   else bind();
 
   window.PacificEducationSequentialRoleWorkspaces={
-    version:"1.3.0-adjustable-sequence",
+    version:"1.3.1-workspace-recovery-signin-signout",
     roles:Object.keys(ROLE_SEQUENCE_DEFAULTS),
     sequenceConfig:{
       get:getRoleSequence,
