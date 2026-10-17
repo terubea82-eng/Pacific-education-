@@ -581,6 +581,7 @@ function guided(step,targetId){
 
   lockLearningToolsDuringEntry();
   var ok=revealTarget(targetId);
+  syncActiveBackButton(ok?targetId:null);
   lockLearningToolsDuringEntry();
   if(ok){
     renderPageGuide(targetId);
@@ -626,6 +627,7 @@ function gateway(page){
   lockLearningToolsDuringEntry();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
+  syncActiveBackButton(null);
   /* Fail closed: once guided navigation has advanced, legacy callers may not
      reopen Welcome. The explicit Back-to-Welcome handler clears this lock first. */
   if(Number(page)===1 && document.documentElement.getAttribute("data-pacedu-entry-advanced")==="true") return false;
@@ -785,6 +787,45 @@ function ensureBackButton(targetId){
 
 function bindAllBackButtons(){
   Object.keys(BACK).forEach(ensureBackButton);
+}
+
+function syncActiveBackButton(targetId){
+  /* Portal the one active Back control to document.body. Some legacy page panels
+     create stacking/clipping contexts or overlays that intercept taps even when
+     the button has a high local z-index. A body-level fixed control escapes those
+     contexts; only the active guided page's Back control is shown. */
+  Object.keys(BACK).forEach(function(pageId){
+    var button=el("pacificEducationBack_"+pageId);
+    if(!button) return;
+    if(pageId===targetId){
+      if(button.parentNode!==document.body) document.body.appendChild(button);
+      button.hidden=false;
+      button.removeAttribute("aria-hidden");
+      button.style.setProperty("display","block","important");
+      button.style.position="fixed";
+      button.style.top="max(8px, env(safe-area-inset-top))";
+      button.style.left="8px";
+      button.style.right="auto";
+      button.style.bottom="auto";
+      button.style.zIndex="2147483647";
+      button.style.pointerEvents="auto";
+      button.style.touchAction="manipulation";
+      button.style.minHeight="44px";
+      button.style.padding="10px 16px";
+      button.style.borderRadius="10px";
+      button.style.boxShadow="0 2px 10px rgba(0,0,0,.22)";
+    }else{
+      button.hidden=true;
+      button.setAttribute("aria-hidden","true");
+      button.style.setProperty("display","none","important");
+      button.style.position="relative";
+      button.style.zIndex="60";
+      button.style.top="";
+      button.style.left="";
+      button.style.right="";
+      button.style.bottom="";
+    }
+  });
 }
 
 function ensureCoverageNextButton(){
