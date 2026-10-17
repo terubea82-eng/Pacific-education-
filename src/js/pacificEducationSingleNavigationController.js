@@ -101,6 +101,49 @@ function setStatus(message){
   if(b) b.textContent=message;
 }
 
+var appMenuGuardObserver=null;
+function watchEntryAppMenu(){
+  if(appMenuGuardObserver || !document.body || typeof MutationObserver==="undefined") return;
+  appMenuGuardObserver=new MutationObserver(function(records){
+    var menu=el("pacificEducationAppMenu");
+    if(!menu || el("pacificEducationSequentialRoleWorkspace")) return;
+    if(records.some(function(record){return record.target===menu &&
+      (record.attributeName==="hidden" || record.attributeName==="aria-hidden" || record.attributeName==="style");})){
+      enforceEntryAppMenuHidden();
+    }
+  });
+  appMenuGuardObserver.observe(document.body,{subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style"]});
+}
+function enforceEntryAppMenuHidden(){
+  /* App Menu belongs to the registered role workspace, never to the guided
+     Welcome/Vision/Rules/Registration screens. Other legacy pilot activators
+     can clear hidden/display styles, so enforce this from the navigation owner. */
+  watchEntryAppMenu();
+  var body=document.body;
+  var menu=el("pacificEducationAppMenu");
+  if(!body || !menu) return;
+  if(el("pacificEducationSequentialRoleWorkspace")) return;
+  var active=body.getAttribute("data-pe-active-guided-page") || "";
+  var step=body.getAttribute("data-pe-flow-step");
+  var entry=body.classList.contains("pacedu-entry-mode") ||
+    body.classList.contains("pacedu-registration-mode") ||
+    (body.classList.contains("pe-guided-flow") &&
+     (active==="pacificEducationWelcome" || active==="paceduPageVision" ||
+      active==="paceduPageRules" || active==="pacificEducationIdentityRegistration" ||
+      step==="0" || step==="1" || step==="2" || step==="3"));
+  if(!entry) return;
+  if(!menu.hidden) menu.hidden=true;
+  if(menu.getAttribute("aria-hidden")!=="true") menu.setAttribute("aria-hidden","true");
+  if(menu.style.getPropertyValue("display")!=="none" ||
+     menu.style.getPropertyPriority("display")!=="important"){
+    menu.style.setProperty("display","none","important");
+  }
+  if(menu.style.getPropertyValue("visibility")!=="hidden" ||
+     menu.style.getPropertyPriority("visibility")!=="important"){
+    menu.style.setProperty("visibility","hidden","important");
+  }
+}
+
 function safeCall(objectName, method, args){
   try{
     var object=window[objectName];
@@ -571,6 +614,7 @@ function lockLearningToolsDuringEntry(){
 
 function guided(step,targetId){
   lockLearningToolsDuringEntry();
+  enforceEntryAppMenuHidden();
   stopSpeechForPageTransition(targetId);
   if(Number(step)>0) document.documentElement.setAttribute("data-pacedu-entry-advanced","true");
   document.body.classList.remove("pacedu-entry-mode","pacedu-registration-mode");
@@ -578,6 +622,7 @@ function guided(step,targetId){
   document.body.setAttribute("data-pe-flow-step",String(step));
   document.body.setAttribute("data-pe-active-guided-page",targetId);
   document.body.setAttribute("data-pe-navigation-owner","single");
+  enforceEntryAppMenuHidden();
 
   lockLearningToolsDuringEntry();
   var ok=revealTarget(targetId);
@@ -625,6 +670,7 @@ function enforceSingleGatewayPage(expectedPage, targetId){
 
 function gateway(page){
   lockLearningToolsDuringEntry();
+  enforceEntryAppMenuHidden();
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
   syncActiveBackButton(null);
@@ -635,6 +681,7 @@ function gateway(page){
   document.body.classList.remove("pe-guided-flow","pacedu-registration-mode");
   document.body.classList.add("pacedu-entry-mode");
   document.body.setAttribute("data-pac-edu-entry-page",String(page));
+  enforceEntryAppMenuHidden();
   /* Invalidate delayed guided-page repairs before they can reopen the page we just left. */
   document.body.removeAttribute("data-pe-flow-step");
   document.body.removeAttribute("data-pe-active-guided-page");
