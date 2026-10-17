@@ -310,9 +310,9 @@
             recovery.setAttribute("role","alert");
             recovery.style.cssText="display:block!important;visibility:visible!important;padding:20px;border:3px solid #b45309;border-radius:10px;margin:16px 0;";
             var heading=document.createElement("h2");
-            heading.textContent="Student Workspace is recovering";
+            heading.textContent="User Type Completed — Workspace Recovery";
             var message=document.createElement("p");
-            message.textContent="Your registration is saved. The workspace did not finish opening. Press Retry to reopen the selected learning workspace.";
+            message.textContent="Your selected user type and registration are saved. The role workspace did not finish opening. Use Retry or Sign In / Reopen Workspace to try again, or choose Sign Out to open the existing final Sign Out page.";
             var retry=document.createElement("button");
             retry.type="button";
             retry.id="paceduWorkspaceHandoffRetry";
