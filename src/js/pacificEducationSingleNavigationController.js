@@ -734,11 +734,23 @@ function ensureBackButton(targetId){
     button.style.display="block";
     button.style.pointerEvents="auto";
     button.style.touchAction="manipulation";
+    button.style.position="relative";
+    button.style.zIndex="60";
+    button.style.minHeight="44px";
+    button.style.cursor="pointer";
     button.style.margin="12px 0";
     button.style.padding="10px 16px";
-    button.style.cursor="pointer";
     target.insertBefore(button,target.firstChild);
   }
+  /* Keep the Back control above animated page content and legacy overlays.
+     Re-apply these styles to existing nodes too, since feature repair can reuse
+     a button created by an earlier script before the single controller binds it. */
+  button.style.pointerEvents="auto";
+  button.style.touchAction="manipulation";
+  button.style.position="relative";
+  button.style.zIndex="60";
+  button.style.minHeight="44px";
+  button.style.cursor="pointer";
   if(backBound[id]===button) return;
   /* Rebind if a repair or feature insertion replaces this page’s Back node. */
   backBound[id]=button;
