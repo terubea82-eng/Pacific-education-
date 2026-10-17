@@ -308,3 +308,17 @@ test("blank role workspace pages render role-specific recovery tools without cre
   assert.match(sequential, /protected #856 speech controller/);
   assert.match(sequential, /var key="pacificEducationStudentDailyActivityProgressV1"/);
 });
+
+test("automatic feature activation reuses an existing workspace for the same role", () => {
+  const activation = fs.readFileSync("src/js/pacificEducationAutoFeatureActivation.js", "utf8");
+  assert.ok(activation.includes('var shellElement=document.getElementById("pacificEducationSequentialRoleWorkspace");'));
+  assert.ok(activation.includes('var shellRoleKey=shellRole.toLowerCase().replace(/[^a-z0-9]/g,"");'));
+  assert.ok(activation.includes('(!shellElement || shellRoleKey!==requestedRoleKey)'));
+  assert.ok(!activation.includes('(!shell || role!==lastRole)'));
+});
+
+test("successful registration-to-workspace handoff removes a stale recovery screen", () => {
+  const registration = fs.readFileSync("src/js/pacificEducationMandatoryBoxSequence.js", "utf8");
+  assert.ok(registration.includes('var staleRecovery=get("paceduWorkspaceHandoffRecovery");'));
+  assert.ok(registration.includes('if(staleRecovery) staleRecovery.remove();'));
+});
