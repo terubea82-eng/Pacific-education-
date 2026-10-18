@@ -81,8 +81,16 @@ function observeNavigation(){
  var body=document.body;if(!body||navigationObserver)return;
  navigationObserver=new MutationObserver(function(records){
   if(records.some(function(record){return record.attributeName==="data-pe-active-guided-page"||record.attributeName==="data-pe-flow-step";}))current();
+  /* Registration isolation hides the global shell. When the registration
+     controller ends guided flow and hands off to the role workspace, restore
+     those saved shell states before the workspace applies its own isolation.
+     Without this release the menu/header can remain display:none after Page 4. */
+  if(records.some(function(record){return record.attributeName==="class";}) &&
+     !body.classList.contains("pe-guided-flow") && registrationShellState.length){
+    setRegistrationShellHidden(false);
+  }
  });
- navigationObserver.observe(body,{attributes:true,attributeFilter:["data-pe-active-guided-page","data-pe-flow-step"]});
+ navigationObserver.observe(body,{attributes:true,attributeFilter:["data-pe-active-guided-page","data-pe-flow-step","class"]});
  panelObserver=new MutationObserver(function(records){
   if(!records.some(function(record){return record.attributeName==="hidden"||record.attributeName==="aria-hidden"||record.attributeName==="style";}))return;
   var id=body.getAttribute("data-pe-active-guided-page");if(!id)return;
