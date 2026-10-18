@@ -625,8 +625,12 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   });
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell).toBeVisible();
+  await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — My Workspace");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 5");
+  await expect(page.locator("#peSequentialWorkspaceHome")).toBeVisible();
+  await page.locator("#peSequentialNext").click();
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — My Child");
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 4");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 5");
   await expect(page.locator("#peSequentialPage")).toBeVisible();
   await trace("initial page");
 
@@ -750,6 +754,10 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
 
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell).toBeVisible();
+  await expect(page.locator("#peSequentialTitle")).toContainText("teacher Workspace — My Workspace");
+  await expect(page.locator("#peSequentialWorkspaceHome")).toBeVisible();
+  await expect(page.locator("#teacherDashboard")).toBeHidden();
+  await page.locator("#peSequentialNext").click();
   await expect(page.locator("#peSequentialTitle")).toContainText("teacher Workspace");
   await expect(page.locator("#teacherDashboard")).toBeVisible();
   await expect(page.locator("#learningPlatform")).toBeHidden();
@@ -761,7 +769,7 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   /* Sign Out remains visible at the top-right throughout every role workspace page.
      Regression: Teacher Workspace Next must change the active page, not leave
      the teacher dashboard displayed. The capability test is the required step 2. */
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 1 OF 11");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 12");
   await page.locator("#peSequentialNext").click();
   await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Capability & Platform Test");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 11");
@@ -1101,6 +1109,10 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("body")).not.toHaveAttribute("data-pe-flow-step");
     await expect(page.locator("#peSequentialBack")).toBeVisible();
     await expect(page.locator("#peSequentialNext")).toBeVisible();
+    await expect(page.locator("#peSequentialWorkspaceHome")).toBeVisible();
+    await expect(page.locator("#peSequentialTitle")).toContainText("My Workspace");
+    await page.locator("#peSequentialNext").click();
+    await expect(page.locator("#peSequentialTitle")).not.toContainText("My Workspace");
 
     const roleActivityTitles = {
       teacher: "Teacher Daily Planning & Review",
@@ -1187,6 +1199,9 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialBack")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
   await expect(shell.locator("#peSequentialHear")).toBeVisible();
+  await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
   await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
   await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeHidden();
 
@@ -1253,6 +1268,8 @@ test("student Class / Level page restores its existing selector after workspace 
   await page.evaluate(() => window.PacificEducationSequentialRoleWorkspaces.build("student"));
 
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
+  await shell.locator("#peSequentialNext").click();
   await shell.locator('[data-pe-cap-answer="a"]').fill("a");
   await shell.locator('[data-pe-cap-answer="5"]').fill("5");
   await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
