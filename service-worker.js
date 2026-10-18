@@ -1,7 +1,7 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v23";
+const CACHE_NAME="pacific-education-shell-v24";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
@@ -110,7 +110,9 @@ self.addEventListener("fetch",event=>{
   }
 
   if(isStatic(request)){
-    const cacheKey=new Request(url.origin+url.pathname,{method:"GET"});
+    /* Keep version query strings in the cache key. Otherwise ?v=... script updates
+     still receive the old cached JavaScript on the first load after deployment. */
+    const cacheKey=new Request(url.origin+url.pathname+url.search,{method:"GET"});
     event.respondWith(
       caches.match(cacheKey).then(cached=>{
         const refresh=fetch(request,{cache:"no-store"}).then(response=>{
