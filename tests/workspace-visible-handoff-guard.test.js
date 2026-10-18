@@ -13,7 +13,7 @@ test("visible workspace handoff guard is loaded after page isolation repair", ()
 });
 
 test("handoff guard waits until registration Next handlers have run", () => {
-  assert.match(guard, /closest\("#registrationNextButton"\)/);
+  assert.match(guard, /closest\("#registrationNextButton, #peSequentialNext"\)/);
   assert.match(guard, /setTimeout\(recover, 80\)/);
   assert.match(guard, /setTimeout\(recover, 450\)/);
 });
