@@ -30,6 +30,21 @@
     try { registered = registered || window.sessionStorage.getItem("pacificEducationPilotRegistered") === "true"; } catch (_) {}
     return registered && role ? role : "";
   }
+  function releaseEntryIsolation(){
+    var root = document.documentElement, body = document.body;
+    if (root) { root.setAttribute("data-pacedu-navigation-ready", "true"); root.removeAttribute("data-pacedu-registration-entry"); }
+    if (body) {
+      body.setAttribute("data-pe-guided-complete", "true");
+      body.classList.add("pe-guided-flow-ended");
+      body.classList.remove("pe-guided-flow", "pacedu-entry-mode", "pacedu-registration-mode");
+      body.removeAttribute("data-pe-flow-step");
+      body.removeAttribute("data-pe-active-guided-page");
+    }
+    ["pacificEducationPilotPages", "pacificEducationWelcome", "paceduPageVision", "paceduPageRules", "pacificEducationIdentityRegistration"].forEach(function(id){
+      var node = get(id);
+      if (node) { node.hidden = true; node.setAttribute("aria-hidden", "true"); node.style.setProperty("display", "none", "important"); }
+    });
+  }
   function visible(node){
     if (!node) return false;
     node.hidden = false;
@@ -112,13 +127,15 @@
     }
     back.addEventListener("click", function(){ index = 0; paint(); });
     next.addEventListener("click", function(){ index = index === 0 ? 1 : 0; paint(); });
-    (document.querySelector("main") || document.body || document.documentElement).appendChild(host);
+    releaseEntryIsolation();
+    (document.body || document.documentElement).appendChild(host);
     visible(host); paint();
     return host;
   }
   function recover(){
     var role = savedRole();
     if (!role) return;
+    releaseEntryIsolation();
     var api = window.PacificEducationSequentialRoleWorkspaces;
     var shell = get("pacificEducationSequentialRoleWorkspace");
     if (!shell && api && typeof api.build === "function") {
