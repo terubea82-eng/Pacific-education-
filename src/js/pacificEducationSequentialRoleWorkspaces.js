@@ -574,6 +574,8 @@
     if(!sequence || !sequence.length) return;
     /* Sign Out is a dedicated final page for every role, not an off-screen footer. */
     sequence=cloneSequence(sequence);
+    /* Always start in a real role-aware workspace home before opening tools. */
+    sequence.unshift(["paceduWorkspaceHome","My Workspace"]);
     sequence.push(["paceduSignOutPage","Sign Out"]);
 
     var old=document.getElementById("pacificEducationSequentialRoleWorkspace");
@@ -980,7 +982,46 @@
         status.style.setProperty("visibility","visible","important");
         return;
       }
-      if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
+      if(item[0]==="paceduWorkspaceHome"){
+        var home=document.createElement("section");
+        home.id="peSequentialWorkspaceHome";
+        home.setAttribute("aria-label","Pacedu role workspace home");
+        home.style.cssText="display:block!important;visibility:visible!important;padding:18px;border:2px solid #15803d;border-radius:10px;background:#fff;color:#17202a;";
+        var roleLabels={
+          "student":"Student","blind-learner":"Blind Learner","deaf-learner":"Deaf Learner",
+          "teacher":"Teacher","parent":"Parent / Caregiver","professional":"Professional Reviewer",
+          "ngo":"NGO / Organization","education":"Education / Government","community":"Community / Partner",
+          "head-of-school":"Head of School","institution-admin":"Institution Administrator",
+          "special-education":"Special Education / Inclusion","owner":"Owner / Control","technician":"Technician"
+        };
+        var roleLabel=roleLabels[role]||role.replace(/-/g," ");
+        var welcome=document.createElement("h3");
+        welcome.textContent="Welcome to your Pacedu Workspace";
+        home.appendChild(welcome);
+        var intro=document.createElement("p");
+        intro.textContent="Your registration is saved for the "+roleLabel+" pilot pathway. Use Next to open each workspace tool in the required order. Only the current page is shown.";
+        home.appendChild(intro);
+        var heading=document.createElement("h4");
+        heading.textContent="Your workspace pathway";
+        home.appendChild(heading);
+        var list=document.createElement("ol");
+        list.setAttribute("aria-label","Workspace steps");
+        sequence.slice(1,-1).slice(0,6).forEach(function(step){
+          var li=document.createElement("li");
+          li.textContent=step[1];
+          list.appendChild(li);
+        });
+        home.appendChild(list);
+        var nextStep=document.createElement("p");
+        nextStep.style.cssText="padding:12px;border-left:4px solid #15803d;background:#f0fdf4;";
+        nextStep.textContent="Next step: "+(sequence[1] ? sequence[1][1] : "workspace tools");
+        home.appendChild(nextStep);
+        var pilotNote=document.createElement("p");
+        pilotNote.innerHTML="<strong>Controlled pilot notice:</strong> Use demonstration information only. This workspace does not provide production authentication or verify official learner, school or government records.";
+        home.appendChild(pilotNote);
+        page.appendChild(home);
+        next.disabled=false;
+      }else if(item[0]==="pacificEducationInitialCapabilityTest" || item[0]==="pacificEducationTeacherCapabilityTest"){
         var teacherTest=item[0]==="pacificEducationTeacherCapabilityTest";
         var test=document.createElement("section");
         test.style.cssText="padding:18px;border:3px solid #15803d;border-radius:10px;";
