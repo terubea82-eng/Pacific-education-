@@ -165,7 +165,7 @@
     document.addEventListener("click", function(event){
       var target = event.target;
       if (!target || !target.closest) return;
-      if (!target.closest("#registrationNextButton")) return;
+      if (!target.closest("#registrationNextButton, #peSequentialNext")) return;
       /* Let the existing registration/workspace controllers run first. */
       window.setTimeout(recover, 80);
       window.setTimeout(recover, 450);
