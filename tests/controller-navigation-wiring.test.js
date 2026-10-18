@@ -124,7 +124,7 @@ test("guided Next transitions retain Learning Level after registration", () => {
   assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
   assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
   assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-visible-workspace-guard-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261018-workspace-guard-v2/);
 });
 
 
@@ -158,7 +158,7 @@ test("role workspace content is forced visible and has a recoverable blank-conte
   assert.match(sequential, /index=sequence\.length-1;\s*renderPage\(\);/);
   assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
   assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261017-role-workspace-content-recovery-v3/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261017-visible-workspace-guard-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261018-workspace-guard-v2/);
 });
 
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
