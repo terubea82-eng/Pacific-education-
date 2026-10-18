@@ -13,13 +13,13 @@
  */
 
 var STEPS = {
-  prototypeNextButton:  [5, "levelSelection"],
-  levelNextButton:      [6, "subjectSelection"],
-  subjectNextButton:    [7, "termSelection"],
-  termNextButton:       [8, "capabilitySelection"],
-  capabilityNextButton: [9, "dailyLesson"],
-  dailyNextButton:      [10, "dailyLessonPracticeStage"],
-  practiceNextButton:   [11, "assessments"],
+  prototypeNextButton:  [6, "levelSelection"],
+  levelNextButton:      [7, "subjectSelection"],
+  subjectNextButton:    [8, "termSelection"],
+  termNextButton:       [9, "capabilitySelection"],
+  capabilityNextButton: [10, "dailyLesson"],
+  dailyNextButton:      [11, "dailyLessonPracticeStage"],
+  practiceNextButton:   [12, "assessments"],
   assessmentNextButton: [13, "pacificEducationCoverageDashboard"]
 };
 
@@ -816,7 +816,7 @@ function ensureBackButton(targetId){
       if(row[1]==="vision"){ gateway(2); return; }
       if(row[1]==="rules"){ gateway(3); return; }
       var map={
-        registration:["pacificEducationIdentityRegistration",3],
+        registration:["pacificEducationIdentityRegistration",4],
         prototype:["prototypeAccess",5],
         level:["levelSelection",6],
         subject:["subjectSelection",7],
