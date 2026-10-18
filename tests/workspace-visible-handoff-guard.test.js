@@ -13,9 +13,11 @@ test("visible workspace handoff guard is loaded after page isolation repair", ()
 });
 
 test("handoff guard waits until registration Next handlers have run", () => {
-  assert.match(guard, /closest\("#registrationNextButton, #peSequentialNext"\)/);
-  assert.match(guard, /setTimeout\(recover, 80\)/);
-  assert.match(guard, /setTimeout\(recover, 450\)/);
+  assert.match(guard, /target\.closest\("#registrationNextButton"\)/);
+  assert.match(guard, /target\.closest\("#peSequentialNext"\)/);
+  assert.match(guard, /setTimeout\(recover, 120\)/);
+  assert.match(guard, /setTimeout\(recover, 500\)/);
+  assert.match(guard, /if \(registrationNext && !savedRole\(\)\) return/);
 });
 
 test("handoff guard tries the existing role workspace before creating recovery UI", () => {
