@@ -148,6 +148,12 @@ test("Welcome Next stays in the single-page app and reveals Vision, Rules, then 
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   await expect(page.locator("#paceduPageRules")).toBeHidden();
   expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
+
+  // The delayed startup fallback must not reset an advanced route to Welcome.
+  await page.waitForTimeout(1400);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
 });
 
 test("Back returns to the immediately previous guided page with a matching flow step", async ({ page }) => {
