@@ -1323,9 +1323,8 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var body = document.body;
     var welcome = document.getElementById("pacificEducationWelcome");
     if (!body || !welcome) return;
-    /* This is startup recovery only. Never let the fallback restore Welcome
-       after the user has advanced; legacy registration visibility can be stale. */
-    if (document.documentElement.getAttribute("data-pacedu-entry-advanced") === "true") return;
+    /* Recover only when no legitimate destination is visible. A stale advanced
+       marker must not keep the first-paint guard closed forever after reload. */
     try {
       var params = new URLSearchParams(window.location.search);
       if (params.get("entry") === "registration" &&
@@ -1345,17 +1344,25 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var vision = document.getElementById("paceduPageVision");
     var rules = document.getElementById("paceduPageRules");
     /*
-     * Treat the entry-page number as authoritative only when its matching
-     * destination is actually visible. A stale legacy pe-guided-flow step 3
-     * can make Registration appear visible through CSS while Welcome is blank.
-     * The single-navigation gateway must be allowed to clear that stale mode.
+     * Preserve any genuinely visible destination, including workspace stages.
+     * If the advanced marker survives but every destination is hidden by the
+     * first-paint guard, recover the entry screen instead of leaving a blank page.
      */
     var staleLegacyRegistration = body.classList.contains("pe-guided-flow") &&
       body.getAttribute("data-pe-flow-step") === "3";
+    var workspaceDestinations = [
+      "prototypeAccess", "levelSelection", "subjectSelection", "termSelection",
+      "capabilitySelection", "dailyLesson", "dailyLessonPracticeStage",
+      "assessments", "teacherCalendarSection"
+    ];
+    var visibleWorkspaceDestination = workspaceDestinations.some(function(id) {
+      return isVisible(document.getElementById(id));
+    });
     if ((activePage === 2 && isVisible(vision)) ||
         (activePage === 3 && isVisible(rules)) ||
         ((!staleLegacyRegistration) && isVisible(registration)) ||
-        isVisible(recovery) || isVisible(nestedDashboard)) return;
+        isVisible(recovery) || isVisible(nestedDashboard) ||
+        visibleWorkspaceDestination) return;
 
     /* First ask the established controller to restore the proper entry page. */
     var navigation = window.PacificEducationSingleNavigation;
