@@ -13,14 +13,14 @@
  */
 
 var STEPS = {
-  prototypeNextButton:  [6, "levelSelection"],
-  levelNextButton:      [7, "subjectSelection"],
-  subjectNextButton:    [8, "termSelection"],
-  termNextButton:       [9, "capabilitySelection"],
-  capabilityNextButton: [10, "dailyLesson"],
-  dailyNextButton:      [11, "dailyLessonPracticeStage"],
-  practiceNextButton:   [12, "assessments"],
-  assessmentNextButton: [13, "pacificEducationCoverageDashboard"]
+  prototypeNextButton:  [5, "levelSelection"],
+  levelNextButton:      [6, "subjectSelection"],
+  subjectNextButton:    [7, "termSelection"],
+  termNextButton:       [8, "capabilitySelection"],
+  capabilityNextButton: [9, "dailyLesson"],
+  dailyNextButton:      [10, "dailyLessonPracticeStage"],
+  practiceNextButton:   [11, "assessments"],
+  assessmentNextButton: [12, "pacificEducationCoverageDashboard"]
 };
 
 var GATEWAY = {
@@ -816,16 +816,16 @@ function ensureBackButton(targetId){
       if(row[1]==="vision"){ gateway(2); return; }
       if(row[1]==="rules"){ gateway(3); return; }
       var map={
-        registration:["pacificEducationIdentityRegistration",4],
-        prototype:["prototypeAccess",5],
-        level:["levelSelection",6],
-        subject:["subjectSelection",7],
-        term:["termSelection",8],
-        capability:["capabilitySelection",9],
-        daily:["dailyLesson",10],
-        practice:["dailyLessonPracticeStage",11],
-        assessment:["assessments",12],
-        coverage:["pacificEducationCoverageDashboard",13]
+        registration:["pacificEducationIdentityRegistration",3],
+        prototype:["prototypeAccess",4],
+        level:["levelSelection",5],
+        subject:["subjectSelection",6],
+        term:["termSelection",7],
+        capability:["capabilitySelection",8],
+        daily:["dailyLesson",9],
+        practice:["dailyLessonPracticeStage",10],
+        assessment:["assessments",11],
+        coverage:["pacificEducationCoverageDashboard",12]
       };
       if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
     },0);
@@ -960,19 +960,19 @@ function bindGuidedFeatureButtons(){
   });
 
   bind("dailyActivitiesContinuePracticeButton",function(){
-    guided(11,"dailyLessonPracticeStage");
+    guided(10,"dailyLessonPracticeStage");
   });
 
   bind("practiceContinueAssessmentButton",function(){
-    guided(12,"assessments");
+    guided(11,"assessments");
   });
 
   bind("assessmentContinueCoverageButton",function(){
-    guided(13,"pacificEducationCoverageDashboard");
+    guided(12,"pacificEducationCoverageDashboard");
   });
 
   bind("coverageNextButton",function(button){
-    if(!button.disabled) guided(14,"teacherCalendarSection");
+    if(!button.disabled) guided(13,"teacherCalendarSection");
   });
 
   bind("teacherCalendarNextButton",function(button){
