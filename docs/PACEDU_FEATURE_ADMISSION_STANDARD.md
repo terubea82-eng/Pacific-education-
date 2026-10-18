@@ -34,7 +34,7 @@ A feature is not admitted to main, the published Pages pilot, or an installable 
 
 ## Protected components and change boundaries
 
-- The known-good #856 voice architecture files src/js/pacificEducationMandatoryVoiceNavigation.js and src/js/pacificEducationSpeechVoice.js are protected. Do not modify them in routine feature PRs. A necessary future voice change requires an explicitly scoped owner-approved PR, baseline comparison, targeted tests, and physical audio verification before replacing the known-good APK.
+- The known-good #856 voice architecture files src/js/pacificEducationMandatoryVoiceNavigation.js and src/js/pacificEducationSpeechVoice.js are protected by a fail-closed routine-PR gate. Do not modify them in routine feature PRs. If a voice-baseline change is genuinely required, use a two-stage owner-controlled process: first submit a separate PR that changes the protection gate and documents the reason, baseline comparison, rollback, and required audio tests; obtain owner review and passing checks before merging that gate-change PR. Only then submit the narrowly scoped voice-change PR with targeted regression tests and physical audio verification. Do not combine the gate exemption and voice modification in one PR.
 - Keep owner-controlled release/signing secrets out of source, issues, logs, artifacts, and screenshots. Never commit VPN keys, credentials, keystores, or child records.
 - Browser role selection and localStorage are prototype conveniences, not authentication or authorization.
 - Do not mark current-affairs content approved automatically; teacher review remains a separate control.
