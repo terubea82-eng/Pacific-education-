@@ -638,13 +638,13 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await page.locator("#peSequentialNext").click();
   await trace("after Next 1");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Teacher Communication");
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 4");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 5");
 
   await trace("before Next 2");
   await page.locator("#peSequentialNext").click();
   await trace("after Next 2");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Child Progress");
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 4");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 5");
 
   // Detect the original regression: the focus guide must not call scrollIntoView
   // for the final Sign Out control when it appears.
@@ -662,7 +662,7 @@ test("sequential Parent workspace advances one page at a time through confirmed 
   await page.locator("#peSequentialNext").click();
   await trace("after Next 3");
   await expect(page.locator("#peSequentialTitle")).toContainText("parent Workspace — Sign Out");
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 4 OF 4");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 5 OF 5");
   await expect(page.locator("#peSequentialNext")).toBeHidden();
   await expect(shell.locator("#peSequentialBack")).toBeHidden();
   await expect(shell.locator("#peSequentialSignOutInformation")).toBeVisible();
