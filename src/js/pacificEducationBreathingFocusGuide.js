@@ -80,7 +80,19 @@ function focusWorkspace(){
  var next=get("peSequentialNext");if(target){if(next){next.classList.remove(READY_CLASS);next.removeAttribute("data-pe-breathing-next-ready");}return showFocus(target,"MANDATORY STEP — Complete this required box correctly before moving to the next one.",page);}
  clearVisuals();if(next&&!next.disabled&&!next.hidden){next.classList.add(READY_CLASS);next.setAttribute("data-pe-breathing-next-ready","true");}return true;
 }
-function choose(){if(focusWorkspace())return;if(focusRegistration())return;if(focusEntry())return;clearVisuals();}
+function focusGuidedPage(){
+ var body=document.body;if(!body||!body.classList.contains("pe-guided-flow"))return false;
+ var id=body.getAttribute("data-pe-active-guided-page")||"";
+ if(!id||id==="pacificEducationIdentityRegistration")return false;
+ var root=get(id);if(!visible(root))return false;
+ var n=nextButton(root);
+ if(!n||n.disabled||n.hidden)return false;
+ /* Each guided page gets its own green Next cue. Do not scroll, focus, disable,
+    or replace the page controls; navigation remains owned by the single controller. */
+ clearVisuals();n.classList.add(READY_CLASS);n.setAttribute("data-pe-breathing-next-ready","true");
+ return true;
+}
+function choose(){if(focusWorkspace())return;if(focusRegistration())return;if(focusEntry())return;if(focusGuidedPage())return;clearVisuals();}
 function completedAction(event){
  var el=event.target&&event.target.closest?event.target.closest("input:not([type='hidden']),select,textarea,button,[role='button']"):null;if(!el||excluded(el)||el.disabled)return;
  if(el.matches("input,select,textarea")){if(String(el.value||"").trim())completed.add(el);}else if(!/^(next|back|finish)$/i.test(labelOf(el)))completed.add(el);
