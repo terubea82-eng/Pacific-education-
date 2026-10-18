@@ -1378,7 +1378,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
       var targetId = advancedDestinations[activePage] || "pacificEducationIdentityRegistration";
       var target = document.getElementById(targetId);
       if (!target) target = registration;
-      body.classList.remove("pe-guided-flow", "pe-guided-flow-ended");
+      body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
       body.classList.add("pacedu-entry-mode");
       body.setAttribute("data-pe-navigation-owner", "single");
       if (target === registration) body.classList.add("pacedu-registration-mode");
