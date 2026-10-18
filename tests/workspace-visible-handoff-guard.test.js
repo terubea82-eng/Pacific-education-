@@ -21,7 +21,7 @@ test("handoff guard waits until registration Next handlers have run", () => {
 test("handoff guard tries the existing role workspace before creating recovery UI", () => {
   assert.match(guard, /PacificEducationSequentialRoleWorkspaces/);
   assert.match(guard, /api\.build\(role\)/);
-  assert.match(guard, /paceduSequentialRoleWorkspace/);
+  assert.match(guard, /pacificEducationSequentialRoleWorkspace/);
   assert.match(guard, /paceduRecoveredWorkspaceHome/);
 });
 
