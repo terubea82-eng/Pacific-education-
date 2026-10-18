@@ -262,14 +262,6 @@
           root.setAttribute("data-pacedu-navigation-ready","true");
           root.removeAttribute("data-pacedu-registration-entry");
         }
-        /* Release the direct-Registration first-paint guard only after the user
-           completes registration and opens the workspace. Otherwise its html
-           selector can keep hiding #app after guided body classes are removed. */
-        var root=document.documentElement;
-        if(root){
-          root.setAttribute("data-pacedu-navigation-ready","true");
-          root.removeAttribute("data-pacedu-registration-entry");
-        }
         var body=document.body;
         if(body){
           body.setAttribute("data-pe-guided-complete","true");
