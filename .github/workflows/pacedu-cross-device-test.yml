@@ -3,17 +3,8 @@ name: Pacedu Cross-Device Browser Tests
 on:
   push:
     branches: [main]
-    paths:
-      - "src/**"
-      - "tests/**"
-      - "package.json"
-      - ".github/workflows/pacedu-cross-device-test.yml"
   pull_request:
-    paths:
-      - "src/**"
-      - "tests/**"
-      - "package.json"
-      - ".github/workflows/pacedu-cross-device-test.yml"
+    branches: [main]
   workflow_dispatch:
 
 permissions:
