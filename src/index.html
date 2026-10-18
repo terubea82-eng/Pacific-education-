@@ -1323,9 +1323,8 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var body = document.body;
     var welcome = document.getElementById("pacificEducationWelcome");
     if (!body || !welcome) return;
-    /* This is startup recovery only. Never let the fallback restore Welcome
-       after the user has advanced; legacy registration visibility can be stale. */
-    if (document.documentElement.getAttribute("data-pacedu-entry-advanced") === "true") return;
+    /* Recover only when no legitimate destination is visible. A stale advanced
+       marker must not keep the first-paint guard closed forever after reload. */
     try {
       var params = new URLSearchParams(window.location.search);
       if (params.get("entry") === "registration" &&
@@ -1345,17 +1344,65 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var vision = document.getElementById("paceduPageVision");
     var rules = document.getElementById("paceduPageRules");
     /*
-     * Treat the entry-page number as authoritative only when its matching
-     * destination is actually visible. A stale legacy pe-guided-flow step 3
-     * can make Registration appear visible through CSS while Welcome is blank.
-     * The single-navigation gateway must be allowed to clear that stale mode.
+     * Preserve any genuinely visible destination, including workspace stages.
+     * A blank screen with an advanced marker must recover to the last known
+     * guided destination, never reset to Welcome and replay the first page.
      */
     var staleLegacyRegistration = body.classList.contains("pe-guided-flow") &&
       body.getAttribute("data-pe-flow-step") === "3";
+    var workspaceDestinations = [
+      "prototypeAccess", "levelSelection", "subjectSelection", "termSelection",
+      "capabilitySelection", "dailyLesson", "dailyLessonPracticeStage",
+      "assessments", "teacherCalendarSection"
+    ];
+    var visibleWorkspaceDestination = workspaceDestinations.some(function(id) {
+      return isVisible(document.getElementById(id));
+    });
     if ((activePage === 2 && isVisible(vision)) ||
         (activePage === 3 && isVisible(rules)) ||
         ((!staleLegacyRegistration) && isVisible(registration)) ||
-        isVisible(recovery) || isVisible(nestedDashboard)) return;
+        isVisible(recovery) || isVisible(nestedDashboard) ||
+        visibleWorkspaceDestination) return;
+
+    var entryAdvanced = document.documentElement.getAttribute("data-pacedu-entry-advanced") === "true";
+    if (entryAdvanced) {
+      /* Fail closed against Welcome restoration: recover the advanced route. */
+      var advancedDestinations = {
+        2: "paceduPageVision", 3: "paceduPageRules",
+        4: "pacificEducationIdentityRegistration", 5: "prototypeAccess",
+        6: "levelSelection", 7: "subjectSelection", 8: "termSelection",
+        9: "capabilitySelection", 10: "dailyLesson", 11: "dailyLessonPracticeStage",
+        12: "assessments", 13: "pacificEducationCoverageDashboard",
+        14: "teacherCalendarSection"
+      };
+      var targetId = advancedDestinations[activePage] || "pacificEducationIdentityRegistration";
+      var target = document.getElementById(targetId);
+      if (!target) target = registration;
+      body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
+      body.classList.add("pacedu-entry-mode");
+      body.setAttribute("data-pe-navigation-owner", "single");
+      if (target === registration) body.classList.add("pacedu-registration-mode");
+      var pilotAdvanced = document.getElementById("pacificEducationPilotPages");
+      if (pilotAdvanced) {
+        pilotAdvanced.hidden = false;
+        pilotAdvanced.removeAttribute("aria-hidden");
+        pilotAdvanced.style.setProperty("display", "block", "important");
+      }
+      [welcome, vision, rules, registration, recovery, nestedDashboard].concat(
+        workspaceDestinations.map(function(id) { return document.getElementById(id); })
+      ).forEach(function(node) {
+        if (!node || node === target) return;
+        node.hidden = true;
+        node.setAttribute("aria-hidden", "true");
+        node.style.setProperty("display", "none", "important");
+      });
+      target.hidden = false;
+      target.removeAttribute("aria-hidden");
+      target.style.setProperty("display", "block", "important");
+      target.style.setProperty("visibility", "visible", "important");
+      body.setAttribute("data-pe-initial-entry-fallback", "advanced-destination-restored");
+      return;
+    }
 
     /* First ask the established controller to restore the proper entry page. */
     var navigation = window.PacificEducationSingleNavigation;

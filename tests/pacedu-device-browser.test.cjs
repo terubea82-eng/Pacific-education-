@@ -148,6 +148,12 @@ test("Welcome Next stays in the single-page app and reveals Vision, Rules, then 
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   await expect(page.locator("#paceduPageRules")).toBeHidden();
   expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
+
+  // The delayed startup fallback must not reset an advanced route to Welcome.
+  await page.waitForTimeout(1400);
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
 });
 
 test("Back returns to the immediately previous guided page with a matching flow step", async ({ page }) => {
@@ -1266,4 +1272,77 @@ test("student Class / Level page restores its existing selector after workspace 
   expect(await shell.locator("#pacificEducationLevel option").count()).toBeGreaterThan(1);
   await expect(shell.locator("#pacificEducationLevel")).toHaveValue("Class 1");
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
+});
+
+
+test("registration save keeps Page 4 visible until Next, then recovers the role workspace", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => {
+    try {
+      sessionStorage.clear();
+      sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
+      localStorage.removeItem("pacificEducationPilotRegistration");
+      localStorage.removeItem("pacificEducationPilotRole");
+    } catch (_) {}
+  });
+
+  const pageErrors = [];
+  page.on("pageerror", error => pageErrors.push(error.stack || error.message));
+  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+
+  const registration = page.locator("#pacificEducationIdentityRegistration");
+  const save = page.locator("#pilotRegistrationSaveButton");
+  const next = page.locator("#registrationNextButton");
+  await expect(registration).toBeVisible();
+
+  await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+  await next.click();
+  await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
+  await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+  await next.click();
+
+  const roleCard = page.locator('#pilotUserRoleCards .pe-user-role-card[data-role="Teacher"]');
+  await roleCard.click();
+  await next.click();
+  await page.locator("#pilotRegistrationName").fill("Registration Handoff Diagnostic");
+  await expect(save).toBeEnabled();
+  await expect(next).toBeDisabled();
+
+  await save.click();
+  await expect(save).toHaveText(/Registration Saved/);
+  await expect(next).toBeEnabled();
+  await expect(registration).toBeVisible();
+
+  // A delayed startup/visibility guard must not blank Page 4 after a successful save.
+  await page.waitForTimeout(1600);
+  await expect(registration).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+
+  const visibleGuidedPages = await page.evaluate(() => {
+    const ids = [
+      "pacificEducationWelcome", "paceduPageVision", "paceduPageRules",
+      "pacificEducationIdentityRegistration", "prototypeAccess", "levelSelection",
+      "subjectSelection", "termSelection", "capabilitySelection", "dailyLesson",
+      "dailyLessonPracticeStage", "assessments", "teacherCalendarSection"
+    ];
+    return ids.filter(id => {
+      const node = document.getElementById(id);
+      if (!node || node.hidden || node.getAttribute("aria-hidden") === "true") return false;
+      const style = getComputedStyle(node);
+      const rect = node.getBoundingClientRect();
+      return style.display !== "none" && style.visibility !== "hidden" &&
+        Number(style.opacity) !== 0 && rect.width > 0 && rect.height > 0;
+    });
+  });
+  expect(visibleGuidedPages, "exactly Registration should be visible after saving, before Next")
+    .toEqual(["pacificEducationIdentityRegistration"]);
+
+  await next.click();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
+  await page.waitForTimeout(1400);
+  await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
+  expect(pageErrors, "registration-to-workspace handoff must not throw uncaught errors").toEqual([]);
 });
