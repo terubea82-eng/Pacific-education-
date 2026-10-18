@@ -985,6 +985,12 @@ function bindGuidedFeatureButtons(){
       setStatus("Please complete registration and choose your user role before opening the workspace.");
       return;
     }
+    /* Release the direct-registration first-paint guard when guided setup ends. */
+    var root=document.documentElement;
+    if(root){
+      root.setAttribute("data-pacedu-navigation-ready","true");
+      root.removeAttribute("data-pacedu-registration-entry");
+    }
     document.body.setAttribute("data-pe-guided-complete","true");
     document.body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
     document.body.removeAttribute("data-pe-flow-step");
