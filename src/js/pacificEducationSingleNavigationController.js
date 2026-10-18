@@ -20,7 +20,7 @@ var STEPS = {
   capabilityNextButton: [9, "dailyLesson"],
   dailyNextButton:      [10, "dailyLessonPracticeStage"],
   practiceNextButton:   [11, "assessments"],
-  assessmentNextButton: [12, "pacificEducationCoverageDashboard"]
+  assessmentNextButton: [13, "pacificEducationCoverageDashboard"]
 };
 
 var GATEWAY = {
@@ -817,15 +817,15 @@ function ensureBackButton(targetId){
       if(row[1]==="rules"){ gateway(3); return; }
       var map={
         registration:["pacificEducationIdentityRegistration",3],
-        prototype:["prototypeAccess",4],
-        level:["levelSelection",5],
-        subject:["subjectSelection",6],
-        term:["termSelection",7],
-        capability:["capabilitySelection",8],
-        daily:["dailyLesson",9],
-        practice:["dailyLessonPracticeStage",10],
-        assessment:["assessments",11],
-        coverage:["pacificEducationCoverageDashboard",12]
+        prototype:["prototypeAccess",5],
+        level:["levelSelection",6],
+        subject:["subjectSelection",7],
+        term:["termSelection",8],
+        capability:["capabilitySelection",9],
+        daily:["dailyLesson",10],
+        practice:["dailyLessonPracticeStage",11],
+        assessment:["assessments",12],
+        coverage:["pacificEducationCoverageDashboard",13]
       };
       if(map[row[1]]) guided(map[row[1]][1],map[row[1]][0]);
     },0);
@@ -960,19 +960,19 @@ function bindGuidedFeatureButtons(){
   });
 
   bind("dailyActivitiesContinuePracticeButton",function(){
-    guided(10,"dailyLessonPracticeStage");
+    guided(11,"dailyLessonPracticeStage");
   });
 
   bind("practiceContinueAssessmentButton",function(){
-    guided(11,"assessments");
+    guided(12,"assessments");
   });
 
   bind("assessmentContinueCoverageButton",function(){
-    guided(12,"pacificEducationCoverageDashboard");
+    guided(13,"pacificEducationCoverageDashboard");
   });
 
   bind("coverageNextButton",function(button){
-    if(!button.disabled) guided(13,"teacherCalendarSection");
+    if(!button.disabled) guided(14,"teacherCalendarSection");
   });
 
   bind("teacherCalendarNextButton",function(button){
