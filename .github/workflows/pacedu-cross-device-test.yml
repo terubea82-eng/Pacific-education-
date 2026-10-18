@@ -88,10 +88,10 @@ jobs:
           git fetch origin "$BASE_REF"
           base="origin/$BASE_REF"
           changed="$(git diff --name-only "$base...HEAD")"
-          printf '%s\\n' "$changed"
+          printf '%s\n' "$changed"
           git diff --check "$base...HEAD"
-          if printf '%s\\n' "$changed" | grep -Eq '^src/|^android/'; then
-            if ! printf '%s\\n' "$changed" | grep -Eq '(^tests/|\\.test\\.|(^|/)test[^/]*)'; then
+          if printf '%s\n' "$changed" | grep -Eq '^src/|^android/'; then
+            if ! printf '%s\n' "$changed" | grep -Eq '(^tests/|\.test\.|(^|/)test[^/]*)'; then
               echo "::error::Runtime or Android changes require a changed regression-test file in the same PR."
               exit 1
             fi
