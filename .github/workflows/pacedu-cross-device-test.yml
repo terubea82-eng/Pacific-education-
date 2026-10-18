@@ -31,6 +31,52 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Block routine edits to protected #856 voice baseline
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          set -euo pipefail
+          git fetch origin "$BASE_REF"
+          changed="$(git diff --name-only "origin/$BASE_REF...HEAD")"
+          if printf '%s\\n' "$changed" | grep -Eq '^src/js/pacificEducation(MandatoryVoiceNavigation|SpeechVoice)\\.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright test runner
+        run: npm install --no-save @playwright/test
+      - name: Install Chromium and OS dependencies
+        run: npx playwright install --with-deps chromium
+      - name: Run existing Pacedu software regression suite
+        run: npm test
+      - name: Start local static server
+        shell: bash
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > "$RUNNER_TEMP/pacedu-http.log" 2>&1 &
+          echo $! > "$RUNNER_TEMP/pacedu-http.pid"
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4173/src/index.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/pacedu-http.log"
+          exit 1
+      - name: Test desktop and phone-sized browser behaviour
+        env:
+          PACEDU_TEST_URL: http://127.0.0.1:4173/src/index.html
+          PACEDU_DEVICE_TEST_URL: http://127.0.0.1:4173/src/device-test.html
+        run: npx playwright test tests/pacedu-device-browser.test.cjs tests/pacedu-breathing-focus-guide.test.cjs tests/pacedu-registration-scroll.test.cjs --reporter=line
+      - name: Stop local static server
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/pacedu-http.pid" ]; then kill "$(cat "$RUNNER_TEMP/pacedu-http.pid")" || true; fi
+; then
+            echo "::error::Protected #856 voice files changed. Use a separately owner-reviewed baseline-change PR and verify physical audio before replacing the known-good APK."
+            exit 1
+          fi
+          echo "PASS: protected #856 voice files unchanged."
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -61,3 +107,43 @@ jobs:
         if: always()
         run: |
           if [ -f "$RUNNER_TEMP/pacedu-http.pid" ]; then kill "$(cat "$RUNNER_TEMP/pacedu-http.pid")" || true; fi
+
+  android-debug-build:
+    name: Android debug APK compile (testing only)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Install Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          yes | "${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Set up Gradle 9.7.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "9.7.1"
+      - name: Compile debug APK for testing only
+        working-directory: android
+        run: gradle --no-daemon clean assembleDebug
+      - name: Verify test APK exists and record checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+          apk=android/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$apk"
+          sha256sum "$apk"
+      - name: Upload debug APK as test artifact only
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacedu-debug-apk-test-only
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 7
