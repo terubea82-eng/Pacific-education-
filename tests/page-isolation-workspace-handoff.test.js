@@ -30,3 +30,12 @@ test("startup fallback recovers a blank page when an advanced marker has no visi
   assert.match(index, /visibleWorkspaceDestination = workspaceDestinations\.some/);
   assert.match(index, /visibleWorkspaceDestination\) return/);
 });
+
+test("advanced blank-page fallback restores Registration instead of Welcome", () => {
+  assert.match(index, /var entryAdvanced = document\.documentElement\.getAttribute\("data-pacedu-entry-advanced"\) === "true"/);
+  assert.match(index, /4:\s*"pacificEducationIdentityRegistration"/);
+  assert.match(index, /var targetId = advancedDestinations\[activePage\] \|\| "pacificEducationIdentityRegistration"/);
+  assert.match(index, /target\.hidden = false/);
+  assert.match(index, /target\.style\.setProperty\("display", "block", "important"\)/);
+  assert.match(index, /body\.setAttribute\("data-pe-initial-entry-fallback", "advanced-destination-restored"\)/);
+});
