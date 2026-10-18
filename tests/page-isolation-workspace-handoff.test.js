@@ -24,3 +24,9 @@ test("protected voice script references remain present", () => {
   assert.match(index, /pacificEducationSpeechVoice\.js/);
   assert.match(index, /pacificEducationMandatoryVoiceNavigation\.js/);
 });
+
+test("startup fallback recovers a blank page when an advanced marker has no visible destination", () => {
+  assert.match(index, /Recover only when no legitimate destination is visible/);
+  assert.match(index, /visibleWorkspaceDestination = workspaceDestinations\.some/);
+  assert.match(index, /visibleWorkspaceDestination\) return/);
+});
