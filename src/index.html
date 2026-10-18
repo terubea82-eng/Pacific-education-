@@ -1323,6 +1323,49 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     var body = document.body;
     var welcome = document.getElementById("pacificEducationWelcome");
     if (!body || !welcome) return;
+
+    /*
+     * This fallback also runs on delayed timers. Registration can create the
+     * sequential role workspace between those runs, so preserve that destination
+     * before Welcome/entry recovery changes body classes or hides the app.
+     */
+    var sequentialWorkspace = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    if (sequentialWorkspace && sequentialWorkspace.getAttribute("data-pe-role")) {
+      var root = document.documentElement;
+      if (root) {
+        root.setAttribute("data-pacedu-navigation-ready", "true");
+        root.removeAttribute("data-pacedu-registration-entry");
+      }
+      body.classList.add("pe-guided-flow-ended", "pe-sequential-role-workspace-active");
+      body.classList.remove("pe-guided-flow", "pacedu-entry-mode", "pacedu-registration-mode");
+      body.removeAttribute("data-pe-flow-step");
+      body.removeAttribute("data-pe-active-guided-page");
+      var main = document.querySelector("main");
+      var app = document.getElementById("app");
+      var learningPlatform = document.getElementById("learningPlatform");
+      [main, app, learningPlatform, sequentialWorkspace].forEach(function(node) {
+        if (!node) return;
+        node.hidden = false;
+        node.removeAttribute("aria-hidden");
+        node.style.setProperty("display", "block", "important");
+        node.style.setProperty("visibility", "visible", "important");
+      });
+      var entryPages = document.getElementById("pacificEducationPilotPages");
+      if (entryPages) {
+        entryPages.hidden = true;
+        entryPages.style.setProperty("display", "none", "important");
+      }
+      ["pacificEducationWelcome", "paceduPageVision", "paceduPageRules",
+       "pacificEducationIdentityRegistration", "prototypeAccess"].forEach(function(id) {
+        var node = document.getElementById(id);
+        if (!node || sequentialWorkspace.contains(node)) return;
+        node.hidden = true;
+        node.setAttribute("aria-hidden", "true");
+        node.style.setProperty("display", "none", "important");
+      });
+      return;
+    }
+
     /* Recover only when no legitimate destination is visible. A stale advanced
        marker must not keep the first-paint guard closed forever after reload. */
     try {
