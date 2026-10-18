@@ -69,6 +69,37 @@ jobs:
         run: |
           if [ -f "$RUNNER_TEMP/pacedu-http.pid" ]; then kill "$(cat "$RUNNER_TEMP/pacedu-http.pid")" || true; fi
 
+  feature-admission-gate:
+    name: Pacedu Feature Admission Gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout pull request and base history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Enforce focused changes, regression evidence, and clean diffs
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          set -euo pipefail
+          git fetch origin "$BASE_REF"
+          base="origin/$BASE_REF"
+          changed="$(git diff --name-only "$base...HEAD")"
+          printf '%s\\n' "$changed"
+          git diff --check "$base...HEAD"
+          if printf '%s\\n' "$changed" | grep -Eq '^src/|^android/'; then
+            if ! printf '%s\\n' "$changed" | grep -Eq '(^tests/|\\.test\\.|(^|/)test[^/]*)'; then
+              echo "::error::Runtime or Android changes require a changed regression-test file in the same PR."
+              exit 1
+            fi
+          fi
+          test -s docs/PACEDU_FEATURE_ADMISSION_STANDARD.md
+          test -s .github/pull_request_template.md
+          echo "PASS: diff is clean; admission standard and PR evidence template exist."
+
   android-debug-build:
     name: Android debug APK compile (testing only)
     runs-on: ubuntu-latest
