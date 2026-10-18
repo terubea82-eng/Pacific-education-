@@ -9,12 +9,20 @@
   function get(id){ return document.getElementById(id); }
   function savedRole(){
     var record = null, role = "";
+    /* Registration controllers have used both storage areas across pilot revisions.
+       Read the saved record from session first, then local storage, without overwriting it. */
     try {
       record = JSON.parse(window.sessionStorage.getItem("pacificEducationPilotRegistration") || "null");
-      role = record && (record.role || record.userRole) || "";
     } catch (_) {}
+    if (!record) {
+      try { record = JSON.parse(window.localStorage.getItem("pacificEducationPilotRegistration") || "null"); } catch (_) {}
+    }
+    role = record && (record.role || record.userRole || record.userType) || "";
     if (!role) {
       try { role = window.sessionStorage.getItem("pacificEducationPilotRole") || ""; } catch (_) {}
+    }
+    if (!role) {
+      try { role = window.localStorage.getItem("pacificEducationPilotRole") || ""; } catch (_) {}
     }
     role = String(role || "").trim().toLowerCase().replace(/[_]+/g, " ").replace(/\s+/g, " ");
     var aliases = {
@@ -165,10 +173,16 @@
     document.addEventListener("click", function(event){
       var target = event.target;
       if (!target || !target.closest) return;
-      if (!target.closest("#registrationNextButton, #peSequentialNext")) return;
+      var registrationNext = target.closest("#registrationNextButton");
+      var workspaceNext = target.closest("#peSequentialNext");
+      if (!registrationNext && !workspaceNext) return;
+      /* A Next click earlier in the country/language/role setup must not schedule a
+         delayed recovery that hides Registration after the user saves. Only arm
+         registration handoff when a saved registration already exists at click time. */
+      if (registrationNext && !savedRole()) return;
       /* Let the existing registration/workspace controllers run first. */
-      window.setTimeout(recover, 80);
-      window.setTimeout(recover, 450);
+      window.setTimeout(recover, 120);
+      window.setTimeout(recover, 500);
     }, true);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
