@@ -38,14 +38,12 @@
     ],
     "teacher":[
       ["teacherDashboard","Teacher Workspace"],
-      ["pacificEducationTeacherCapabilityTest","Teacher Capability & Platform Test"],
-      ["pacificEducationTeacherCapabilityResult","Teacher Capability Result"],
-      ["pacificEducationTeacherClassDashboard","My Classes"],
-      ["teacherCalendarSection","Teacher Calendar"],
-      ["pacificEducationTeacherEvidence","Student Evidence"],
-      ["assessments","Assessment Review"],
+      ["pacificEducationTeacherClassDashboard","My Classes and Assignments"],
+      ["pacificEducationTeacherEvidence","Student Learning Evidence"],
+      ["assessments","Assessment and Marking Exceptions"],
       ["pacificEducationCoverageDashboard","Curriculum Coverage"],
-      ["pacificEducationStudentProgressDashboard","Student Progress"],
+      ["pacificEducationStudentProgressDashboard","Student Progress Portfolios"],
+      ["teacherCalendarSection","Revision and Examination Readiness"],
       ["pacificGuardianCommentSection","Teacher/Guardian Communication"]
     ],
     "parent":[
