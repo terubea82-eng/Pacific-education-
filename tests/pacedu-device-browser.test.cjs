@@ -1201,6 +1201,25 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
+
+  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
+  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
+  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
+  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability Result");
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Class / Level");
+
+  const levelControlId = await shell.locator("#peSequentialPage select").evaluateAll(nodes => {
+    const control = nodes.find(node => !node.disabled && node.getClientRects().length > 0);
+    return control ? control.id : "";
+  });
+  expect(levelControlId).not.toBe("");
+  const levelControl = shell.locator("#" + levelControlId);
+  await levelControl.selectOption("Class 2");
+  await expect(levelControl).toHaveValue("Class 5");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
 });
 
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
