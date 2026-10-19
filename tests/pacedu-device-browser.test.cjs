@@ -1186,12 +1186,12 @@ test("student workspace entry requires a session identity and class and carries 
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell.locator("#peStudentWorkspaceEntry")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeDisabled();
-  await shell.locator("#peStudentWorkspaceEntry button").click();
+  await shell.locator("#peStudentWorkspaceEntry").getByRole("button", { name: /Sign In to My Workspace|Confirm Student Session/ }).click();
   await expect(shell.locator("#peStudentWorkspaceEntry [role=status]")).toContainText("Enter a student name");
 
   await shell.locator("#peStudentWorkspaceIdentity").fill("Entry Gate Learner");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 5");
-  await shell.locator("#peStudentWorkspaceEntry button").click();
+  await shell.locator("#peStudentWorkspaceEntry").getByRole("button", { name: /Sign In to My Workspace|Confirm Student Session/ }).click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
@@ -1257,7 +1257,7 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialNext")).toBeDisabled();
   await shell.locator("#peStudentWorkspaceIdentity").fill("Pilot Test Learner");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
-  await shell.locator("#peStudentWorkspaceEntry button").click();
+  await shell.locator("#peStudentWorkspaceEntry").getByRole("button", { name: /Sign In to My Workspace|Confirm Student Session/ }).click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await shell.locator("#peSequentialNext").click();
   await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
@@ -1330,7 +1330,7 @@ test("student Class / Level page restores its existing selector after workspace 
   await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
   await shell.locator("#peStudentWorkspaceIdentity").fill("Class Level Repair Test");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
-  await shell.locator("#peStudentWorkspaceEntry button").click();
+  await shell.locator("#peStudentWorkspaceEntry").getByRole("button", { name: /Sign In to My Workspace|Confirm Student Session/ }).click();
   await shell.locator("#peSequentialNext").click();
   await shell.locator('[data-pe-cap-answer="a"]').fill("a");
   await shell.locator('[data-pe-cap-answer="5"]').fill("5");
