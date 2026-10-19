@@ -218,12 +218,24 @@
   }
   function lockStudentClassSelectors(page,role,context){
     if(!page || role!=="student" || !context) return;
+    /* The class-reference picker is a teacher/setup control, not the student's
+       assigned-class record. Hide it in the student view and use the explicit
+       session class context instead. */
+    var classReference=page.querySelector("#pacificEducationClassReference");
+    var classReferenceLabel=page.querySelector('label[for="pacificEducationClassReference"]');
+    var classReferenceStatus=page.querySelector("#pacificEducationClassStatus");
+    if(classReference) classReference.hidden=true;
+    if(classReferenceLabel) classReferenceLabel.hidden=true;
+    if(classReferenceLabel && classReferenceLabel.nextElementSibling && classReferenceLabel.nextElementSibling.tagName==="BR") classReferenceLabel.nextElementSibling.hidden=true;
+    if(classReferenceStatus) classReferenceStatus.hidden=true;
+    if(classReferenceStatus && classReferenceStatus.nextElementSibling && classReferenceStatus.nextElementSibling.tagName==="HR") classReferenceStatus.nextElementSibling.hidden=true;
     ["#pacificEducationLevel","#peSequentialLearningLevelRecoverySelect","#paceduLevelSelectorRecovery"].forEach(function(selector){
       var control=page.querySelector(selector);
-      if(!control || control.getAttribute("data-pe-student-class-locked")==="true") return;
+      if(!control) return;
       if(Array.prototype.some.call(control.options||[],function(option){return option.value===context.classLevel;})){
         control.value=context.classLevel;
       }
+      if(control.getAttribute("data-pe-student-class-locked")==="true") return;
       control.setAttribute("data-pe-student-class-locked","true");
       control.addEventListener("change",function(event){
         if(event){event.preventDefault();event.stopImmediatePropagation();}
@@ -233,6 +245,12 @@
         if(status) status.textContent="This workspace session stays on "+context.classLevel+". To change the pilot level, sign out and start a new session. Teacher assignment is still unverified.";
       },true);
     });
+    var levelStatus=page.querySelector("#pacificEducationLevelStatus");
+    if(levelStatus) levelStatus.textContent="Current pilot class: "+context.classLevel+". This choice is not a teacher-verified assignment.";
+    var sequentialStatus=page.querySelector("[data-pe-level-recovery='sequential'] [role='status']");
+    if(sequentialStatus) sequentialStatus.textContent="Current pilot class: "+context.classLevel+". Ask your teacher to confirm the assigned class.";
+    var controllerRecoveryStatus=page.querySelector("#paceduLevelSelectorRecovery") && page.querySelector("#paceduLevelSelectorRecovery").parentElement.querySelector('[role="status"]');
+    if(controllerRecoveryStatus) controllerRecoveryStatus.textContent="Current pilot class: "+context.classLevel+". This choice is not a teacher-verified assignment.";
   }
   function renderStudentContextBanner(page,role){
     if(!page || !LEARNER_ROLES[role]) return;
