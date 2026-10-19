@@ -209,7 +209,33 @@
 
   var LEARNER_ROLES = {"student":1,"blind-learner":1,"deaf-learner":1};
   var PROTECTED = {"buyPlans":1,"pacificEducationPaymentLinksAlways":1,"pacificEducationInstitutionFees":1,"pacificEducationUniversityFeeWorkflow":1,"pacificEducationAccessEntitlement":1};
-  var SESSION_KEYS = ["pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
+  var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1";
+  function readStudentContext(){
+    try{
+      var value=JSON.parse(sessionStorage.getItem(STUDENT_CONTEXT_KEY)||"null");
+      return value && value.role==="student" && value.displayName && /^Class (?:[1-9]|1[0-3])$/.test(value.classLevel) ? value : null;
+    }catch(e){return null;}
+  }
+  function renderStudentContextBanner(page){
+    if(!page || !LEARNER_ROLES.student) return;
+    var old=page.querySelector("[data-pe-student-context-banner]");
+    if(old) old.remove();
+    var context=readStudentContext();
+    if(!context) return;
+    var banner=document.createElement("aside");
+    banner.setAttribute("data-pe-student-context-banner","true");
+    banner.setAttribute("aria-label","Current student and class context");
+    banner.style.cssText="display:block;padding:10px 12px;margin:0 0 14px;border-left:4px solid #15803d;border-radius:6px;background:#f0fdf4;color:#17202a;";
+    var strong=document.createElement("strong");
+    strong.textContent="My Workspace: "+context.displayName+" • "+context.classLevel;
+    banner.appendChild(strong);
+    var note=document.createElement("p");
+    note.style.cssText="margin:4px 0 0;font-size:.9em;";
+    note.textContent="Pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
+    banner.appendChild(note);
+    page.insertBefore(banner,page.firstChild);
+  }
+  var SESSION_KEYS = ["paceduActiveStudentContextV1","pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
   var LOCAL_SESSION_KEYS = ["pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationCurriculumCountryCode","pacificEducationCurriculumCountry"];
   var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
   var movedTargets = [];
@@ -968,6 +994,7 @@
           signOutTopArea.style.setProperty("overflow","visible","important");
           page.appendChild(signOutTopArea);
         }
+        renderStudentContextBanner(page);
         /* Final page is a fixed endpoint: Back/Next are not navigation choices here.
            Earlier pages retain their normal Back/Next behavior. */
         back.hidden=true;
@@ -1001,6 +1028,97 @@
         var intro=document.createElement("p");
         intro.textContent="Your registration is saved for the "+roleLabel+" pilot pathway. Use Next to open each workspace tool in the required order. Only the current page is shown.";
         home.appendChild(intro);
+        if(role==="student"){
+          var entryPanel=document.createElement("section");
+          entryPanel.id="peStudentWorkspaceEntry";
+          entryPanel.setAttribute("aria-label","Student sign in and class or year level");
+          entryPanel.style.cssText="display:block;padding:16px;margin:16px 0;border:2px solid #15803d;border-radius:10px;background:#f8fff9;color:#17202a;";
+          var entryHeading=document.createElement("h4");
+          entryHeading.textContent="Student Sign In & My Class / Year Level";
+          entryPanel.appendChild(entryHeading);
+          var entryNote=document.createElement("p");
+          entryNote.textContent="Identify your current pilot session and choose a demonstration class level. This is not secure account authentication and does not confirm your teacher-assigned class.";
+          entryPanel.appendChild(entryNote);
+          var context=readStudentContext();
+          var nameLabel=document.createElement("label");
+          nameLabel.htmlFor="peStudentWorkspaceIdentity";
+          nameLabel.textContent="Student name or pilot learner ID";
+          nameLabel.style.cssText="display:block;font-weight:700;margin:10px 0 5px;";
+          entryPanel.appendChild(nameLabel);
+          var nameInput=document.createElement("input");
+          nameInput.id="peStudentWorkspaceIdentity";
+          nameInput.type="text";
+          nameInput.autocomplete="off";
+          nameInput.maxLength=80;
+          nameInput.placeholder="Enter student name or demo learner ID";
+          nameInput.value=context?context.displayName:"";
+          nameInput.style.cssText="display:block;box-sizing:border-box;width:100%;max-width:520px;padding:12px;border:1px solid #64748b;border-radius:6px;";
+          entryPanel.appendChild(nameInput);
+          var classLabel=document.createElement("label");
+          classLabel.htmlFor="peStudentWorkspaceClass";
+          classLabel.textContent="Class / Year Level";
+          classLabel.style.cssText="display:block;font-weight:700;margin:12px 0 5px;";
+          entryPanel.appendChild(classLabel);
+          var classSelect=document.createElement("select");
+          classSelect.id="peStudentWorkspaceClass";
+          classSelect.setAttribute("aria-label","Choose class or year level");
+          classSelect.style.cssText="display:block;box-sizing:border-box;width:100%;max-width:520px;padding:12px;border:1px solid #64748b;border-radius:6px;background:#fff;";
+          var blankClass=document.createElement("option");
+          blankClass.value="";
+          blankClass.textContent="Select your class level";
+          classSelect.appendChild(blankClass);
+          for(var studentLevel=1;studentLevel<=13;studentLevel++){
+            var classOption=document.createElement("option");
+            classOption.value="Class "+studentLevel;
+            classOption.textContent="Class "+studentLevel;
+            classSelect.appendChild(classOption);
+          }
+          if(context) classSelect.value=context.classLevel;
+          entryPanel.appendChild(classSelect);
+          var assignmentNote=document.createElement("p");
+          assignmentNote.style.cssText="font-size:.9em;padding:10px;border-left:3px solid #b45309;background:#fff7ed;";
+          assignmentNote.textContent="Class assignment status: not verified. Ask your teacher to confirm your assigned class. The choice here is for controlled demonstration only.";
+          entryPanel.appendChild(assignmentNote);
+          var enterButton=document.createElement("button");
+          enterButton.type="button";
+          enterButton.textContent=context?"Confirm Student Session":"Sign In to My Workspace";
+          enterButton.style.cssText="margin:8px 0;padding:12px 16px;border:0;border-radius:7px;background:#15803d;color:#fff;font-weight:700;";
+          entryPanel.appendChild(enterButton);
+          var entryStatus=document.createElement("p");
+          entryStatus.setAttribute("role","status");
+          entryStatus.setAttribute("aria-live","polite");
+          entryStatus.textContent=context?"Student session ready for "+context.classLevel+".":"Enter a student name or demo ID and choose a class level to continue.";
+          entryPanel.appendChild(entryStatus);
+          enterButton.onclick=function(){
+            var displayName=String(nameInput.value||"").trim();
+            var classLevel=String(classSelect.value||"").trim();
+            if(!displayName){
+              entryStatus.textContent="Enter a student name or demonstration learner ID.";
+              nameInput.focus();
+              return;
+            }
+            if(!/^Class (?:[1-9]|1[0-3])$/.test(classLevel)){
+              entryStatus.textContent="Choose a class level before continuing.";
+              classSelect.focus();
+              return;
+            }
+            var savedContext={role:"student",displayName:displayName,classLevel:classLevel,assignmentStatus:"demo-unverified",sessionStartedAt:new Date().toISOString()};
+            try{
+              sessionStorage.setItem(STUDENT_CONTEXT_KEY,JSON.stringify(savedContext));
+              sessionStorage.setItem("pilotRegistrationName",displayName);
+              localStorage.setItem("pacificEducationLevel",classLevel);
+            }catch(e){
+              entryStatus.textContent="This browser could not save the pilot session. Check browser storage settings and try again.";
+              return;
+            }
+            enterButton.textContent="Confirm Student Session";
+            entryStatus.textContent="Student session ready for "+classLevel+". The class choice remains demonstration-only until a teacher confirms the assignment.";
+            next.disabled=false;
+            renderStudentContextBanner(page);
+          };
+          home.appendChild(entryPanel);
+          next.disabled=!context;
+        }
         var heading=document.createElement("h4");
         heading.textContent="Your workspace pathway";
         home.appendChild(heading);
@@ -1173,6 +1291,7 @@
         window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
+      renderStudentContextBanner(page);
       enforceWorkspaceVisibility();
       /* Do not move focus automatically on the final reading page. */
       if(item[0]!=="paceduSignOutPage"){
@@ -1312,6 +1431,7 @@
         sessionStorage.removeItem("pilotRegistrationRole");
         sessionStorage.removeItem("pilotRegistrationName");
         SESSION_KEYS.forEach(function(key){try{sessionStorage.removeItem(key);}catch(e){}});
+        if(LEARNER_ROLES[role]) localStorage.removeItem("pacificEducationLevel");
       }catch(e){}
       restoreAllMovedTargets();
       restoreAppMenu();
