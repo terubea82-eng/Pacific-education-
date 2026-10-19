@@ -28,7 +28,7 @@ test("student identity and chosen class are retained across workspace pages only
   assert.match(sequential, /renderStudentContextBanner\(page,role\)/);
   assert.match(sequential, /My Workspace: "\+context\.displayName\+" • "\+context\.classLevel/);
   assert.match(sequential, /teacher-confirmed class assignment is not verified in this build/);
-  assert.match(sequential, /function lockStudentClassSelectors\\(page,role,context\\)/);
+  assert.match(sequential, /function lockStudentClassSelectors\(page,role,context\)/);
   assert.match(sequential, /This workspace session stays on/);
   assert.match(sequential, /SESSION_KEYS = \["paceduActiveStudentContextV1"/);
 });
