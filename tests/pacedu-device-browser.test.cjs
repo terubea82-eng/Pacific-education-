@@ -1111,6 +1111,12 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("#peSequentialNext")).toBeVisible();
     await expect(page.locator("#peSequentialWorkspaceHome")).toBeVisible();
     await expect(page.locator("#peSequentialTitle")).toContainText("My Workspace");
+    if (expectedWorkspace === "student") {
+      await page.locator("#peStudentWorkspaceIdentity").fill("Role Pilot Test");
+      await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+      await page.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
+      await expect(page.locator("#peSequentialNext")).toBeEnabled();
+    }
     await page.locator("#peSequentialNext").click();
     await expect(page.locator("#peSequentialTitle")).not.toContainText("My Workspace");
 
@@ -1169,6 +1175,54 @@ test("save confirmation then Next opens the selected role workspace for every re
 });
 
 
+test("student workspace entry requires a session identity and class and carries context forward", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.route("**/src/js/pacificEducationSingleNavigationController.js*", route => route.abort());
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSequentialRoleWorkspaces?.build), { timeout: 10000 }).toBe("function");
+  await page.evaluate(() => window.PacificEducationSequentialRoleWorkspaces.build("student"));
+
+  const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
+  await expect(shell.locator("#peStudentWorkspaceEntry")).toBeVisible();
+  await expect(shell.locator("#peSequentialNext")).toBeDisabled();
+  await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
+  await expect(shell.locator("#peStudentWorkspaceEntry [role=status]")).toContainText("Enter a student name");
+
+  await shell.locator("#peStudentWorkspaceIdentity").fill("Entry Gate Learner");
+  await shell.locator("#peStudentWorkspaceClass").selectOption("Class 5");
+  await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
+  await expect(shell.locator("#peSequentialNext")).toBeEnabled();
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("not verified");
+
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
+
+  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
+  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
+  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
+  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability Result");
+  await shell.locator("#peSequentialNext").click();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Class / Level");
+  await expect(shell.locator("#pacificEducationClassReference")).toBeHidden();
+
+  const levelControlId = await shell.locator("#peSequentialPage select").evaluateAll(nodes => {
+    const control = nodes.find(node => !node.disabled && node.getClientRects().length > 0);
+    return control ? control.id : "";
+  });
+  expect(levelControlId).not.toBe("");
+  const levelControl = shell.locator("#" + levelControlId);
+  await levelControl.selectOption("Class 2");
+  await expect(levelControl).toHaveValue("Class 5");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
+});
+
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
@@ -1200,6 +1254,11 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
   await expect(shell.locator("#peSequentialHear")).toBeVisible();
   await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
+  await expect(shell.locator("#peSequentialNext")).toBeDisabled();
+  await shell.locator("#peStudentWorkspaceIdentity").fill("Pilot Test Learner");
+  await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+  await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
+  await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await shell.locator("#peSequentialNext").click();
   await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
   await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
@@ -1269,6 +1328,9 @@ test("student Class / Level page restores its existing selector after workspace 
 
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
+  await shell.locator("#peStudentWorkspaceIdentity").fill("Class Level Repair Test");
+  await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+  await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
   await shell.locator("#peSequentialNext").click();
   await shell.locator('[data-pe-cap-answer="a"]').fill("a");
   await shell.locator('[data-pe-cap-answer="5"]').fill("5");

@@ -302,16 +302,9 @@
       if(countryStatus) countryStatus.textContent="Country is required. Select your country so Pacific Education can lock your registration to the correct curriculum pathway.";
       return false;
     }
-    if (role === "student") {
-      var roster = window.PacificEducationTeacherClassRosterContext;
-      var existingClassId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
-      var existingClass = existingClassId && roster && typeof roster.getClass === "function" ? roster.getClass(existingClassId) : null;
-      if (!existingClass) {
-        var entryStatus = document.getElementById("singlePilotRegistrationStatus");
-        if (entryStatus) entryStatus.textContent = "Select an existing Class Reference before entering this class-based pilot workspace. No class is created automatically.";
-        return false;
-      }
-    }
+    /* Student registration must not be blocked by a missing Class Reference.
+       Individual class assignment is not available in this pilot entry yet; the
+       workspace collects a session-only demonstration level and labels it unverified. */
     var selectedLanguage=language||(document.getElementById("singlePilotLanguage")&&document.getElementById("singlePilotLanguage").value)||"English";
     applyRegistrationLanguage(selectedLanguage);
     safeLanguageSet({interfaceLanguage:selectedLanguage,learningLanguage:selectedLanguage,selectedAt:new Date().toISOString()});
@@ -323,12 +316,8 @@
     if (role === "student") {
       authorizeStudent();
       try {
-        var studentRoster = window.PacificEducationTeacherClassRosterContext;
-        var studentClassId = studentRoster && typeof studentRoster.getClassId === "function" ? String(studentRoster.getClassId() || "").trim() : "";
-        var studentClass = studentClassId && studentRoster && typeof studentRoster.getClass === "function" ? studentRoster.getClass(studentClassId) : null;
-        if (studentClass && studentClass.level) {
-          window.localStorage.setItem("pacificEducationLevel", String(studentClass.level));
-        }
+        /* The student workspace asks for its own session-only class choice.
+           A global teacher roster selection is not proof of individual assignment. */
         if (!window.localStorage.getItem("pacificEducationCapability")) {
           window.localStorage.setItem("pacificEducationCapability", "expected");
         }
