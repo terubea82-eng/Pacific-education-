@@ -216,6 +216,24 @@
       return value && value.role==="student" && value.displayName && /^Class (?:[1-9]|1[0-3])$/.test(value.classLevel) ? value : null;
     }catch(e){return null;}
   }
+  function lockStudentClassSelectors(page,role,context){
+    if(!page || role!=="student" || !context) return;
+    ["#pacificEducationLevel","#peSequentialLearningLevelRecoverySelect","#paceduLevelSelectorRecovery"].forEach(function(selector){
+      var control=page.querySelector(selector);
+      if(!control || control.getAttribute("data-pe-student-class-locked")==="true") return;
+      if(Array.prototype.some.call(control.options||[],function(option){return option.value===context.classLevel;})){
+        control.value=context.classLevel;
+      }
+      control.setAttribute("data-pe-student-class-locked","true");
+      control.addEventListener("change",function(event){
+        if(event){event.preventDefault();event.stopImmediatePropagation();}
+        control.value=context.classLevel;
+        try{localStorage.setItem("pacificEducationLevel",context.classLevel);}catch(e){}
+        var status=control.parentElement && control.parentElement.querySelector('[role="status"]');
+        if(status) status.textContent="This workspace session stays on "+context.classLevel+". To change the pilot level, sign out and start a new session. Teacher assignment is still unverified.";
+      },true);
+    });
+  }
   function renderStudentContextBanner(page,role){
     if(!page || !LEARNER_ROLES[role]) return;
     var old=page.querySelector("[data-pe-student-context-banner]");
@@ -234,6 +252,7 @@
     note.textContent="Pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
     banner.appendChild(note);
     page.insertBefore(banner,page.firstChild);
+    lockStudentClassSelectors(page,role,context);
   }
   var SESSION_KEYS = ["paceduActiveStudentContextV1","pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
   var LOCAL_SESSION_KEYS = ["pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationCurriculumCountryCode","pacificEducationCurriculumCountry"];
@@ -1116,6 +1135,12 @@
             next.disabled=false;
             renderStudentContextBanner(page,role);
           };
+          function requireSessionConfirmation(){
+            next.disabled=true;
+            entryStatus.textContent="You changed the student or class. Press Confirm Student Session before continuing.";
+          }
+          nameInput.addEventListener("input",function(){requireSessionConfirmation();});
+          classSelect.addEventListener("change",function(){requireSessionConfirmation();});
           home.appendChild(entryPanel);
           next.disabled=!context;
         }
