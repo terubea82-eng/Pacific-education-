@@ -1114,7 +1114,7 @@
             enterButton.textContent="Confirm Student Session";
             entryStatus.textContent="Student session ready for "+classLevel+". The class choice remains demonstration-only until a teacher confirms the assignment.";
             next.disabled=false;
-            renderStudentContextBanner(page);
+            renderStudentContextBanner(page,role);
           };
           home.appendChild(entryPanel);
           next.disabled=!context;
@@ -1291,7 +1291,7 @@
         window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
-      renderStudentContextBanner(page);
+      renderStudentContextBanner(page,role);
       enforceWorkspaceVisibility();
       /* Do not move focus automatically on the final reading page. */
       if(item[0]!=="paceduSignOutPage"){
