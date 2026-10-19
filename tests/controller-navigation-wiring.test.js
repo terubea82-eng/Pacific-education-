@@ -86,7 +86,8 @@ test("controller-managed activity and transition buttons have explicit bindings"
 
 test("all-feature visibility cannot override one-page guided flow", () => {
   assert.doesNotMatch(boxActivation, /body\.pe-pilot-all-features:not\(\.pe-guided-flow\) #learningPlatform/);
-  assert.match(boxActivation, /Learning Tools is intentionally not part of this broad reveal rule/);
+  assert.doesNotMatch(boxActivation, /allPilotBoxes\.forEach\(show\)/);
+  assert.match(boxActivation, /\["pacificEducationMailbox","pacificEducationAppMenu","pacificEducationAccessibilityControls","pilotBanner","prototypeAccess"\]\s*\.forEach\(show\)/);
   assert.doesNotMatch(html, /body\\.pe-pilot-all-features:not\\(\\.pe-guided-flow\\) #learningPlatform/);
   assert.match(html, /body\.pe-pilot-all-features\.pe-guided-flow-ended #learningPlatform/);
   assert.match(html, /body:not\(\.pe-guided-flow-ended\) #learningPlatform\{display:none!important\}/);
