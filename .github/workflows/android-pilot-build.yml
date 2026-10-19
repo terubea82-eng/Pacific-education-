@@ -1,17 +1,8 @@
 name: Android Pilot Build
 # Public releases must contain only the signed release APK for the installed app ID.
 on:
+  # Manual-only while the owner has explicitly paused all APK builds.
   workflow_dispatch:
-  push:
-    paths:
-      - "android/**"
-      - "src/**"
-      - "js/**"
-      - "tests/**"
-      - "automation/**"
-      - "package.json"
-      - ".github/workflows/android-pilot-build.yml"
-      - ".github/workflows/pilot-user-readiness-gate.yml"
 permissions:
   contents: write
 concurrency:
