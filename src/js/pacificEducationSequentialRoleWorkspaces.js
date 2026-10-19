@@ -216,8 +216,8 @@
       return value && value.role==="student" && value.displayName && /^Class (?:[1-9]|1[0-3])$/.test(value.classLevel) ? value : null;
     }catch(e){return null;}
   }
-  function renderStudentContextBanner(page){
-    if(!page || !LEARNER_ROLES.student) return;
+  function renderStudentContextBanner(page,role){
+    if(!page || !LEARNER_ROLES[role]) return;
     var old=page.querySelector("[data-pe-student-context-banner]");
     if(old) old.remove();
     var context=readStudentContext();
@@ -994,7 +994,7 @@
           signOutTopArea.style.setProperty("overflow","visible","important");
           page.appendChild(signOutTopArea);
         }
-        renderStudentContextBanner(page);
+        renderStudentContextBanner(page,role);
         /* Final page is a fixed endpoint: Back/Next are not navigation choices here.
            Earlier pages retain their normal Back/Next behavior. */
         back.hidden=true;
