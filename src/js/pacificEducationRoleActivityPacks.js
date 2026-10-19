@@ -257,6 +257,11 @@
             progress[String(day)+":"+context.subject] = {completed:true,day:Number(day)||1,subject:context.subject,activityId:activity.id,reviewStatus:activity.verificationStatus};
             global.localStorage.setItem(progressKey, JSON.stringify(progress));
           }
+          try {
+            if (typeof global.dispatchEvent === "function" && typeof global.CustomEvent === "function") {
+              global.dispatchEvent(new global.CustomEvent("pacificEducationDailyActivitySaved", { detail: { day: Number(day) || 1, subject: context.subject } }));
+            }
+          } catch (_) {}
         } catch (_) {}
       } else live.textContent = "Could not save on this device. Keep your response and tell your teacher or pilot coordinator.";
     });
