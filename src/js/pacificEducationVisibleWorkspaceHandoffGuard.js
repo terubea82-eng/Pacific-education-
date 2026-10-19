@@ -140,23 +140,40 @@
     visible(host); paint();
     return host;
   }
-  function recover(){
+  function recover(registrationHandoff){
     var role = savedRole();
     if (!role) return;
     releaseEntryIsolation();
     var api = window.PacificEducationSequentialRoleWorkspaces;
     var shell = get("pacificEducationSequentialRoleWorkspace");
-    if (!shell && api && typeof api.build === "function") {
+    /* A registration handoff must land on the role's actual workspace home.
+       A stale shell can exist even when the requested role's first page did not
+       render, so shell existence alone is not enough to count as success. Do not
+       apply this reset to ordinary workspace Next clicks. */
+    var shellRole = shell && String(shell.getAttribute("data-pe-role") || "").trim().toLowerCase();
+    var workspaceHome = get("peSequentialWorkspaceHome");
+    if (registrationHandoff && (!shell || shellRole !== role || !workspaceHome) &&
+        api && typeof api.build === "function") {
+      try { api.build(role); } catch (error) {
+        try { console.warn("Pacedu workspace home re-open recovered by visible handoff guard.", error); } catch (_) {}
+      }
+      shell = get("pacificEducationSequentialRoleWorkspace");
+      workspaceHome = get("peSequentialWorkspaceHome");
+    } else if (!shell && api && typeof api.build === "function") {
       try { api.build(role); } catch (error) {
         try { console.warn("Pacedu workspace build recovered by visible handoff guard.", error); } catch (_) {}
       }
       shell = get("pacificEducationSequentialRoleWorkspace");
+      workspaceHome = get("peSequentialWorkspaceHome");
     }
     if (shell) {
       visible(shell);
       var page = get("peSequentialPage");
       if (page) {
         visible(page);
+        /* On the registration handoff, reveal the real role home explicitly.
+           If it is absent, the rebuild above gets first chance to restore it. */
+        if (registrationHandoff && workspaceHome) visible(workspaceHome);
         if (!page.children.length || !(page.textContent || "").trim()) addRecoveryHome(page, role);
       } else {
         standaloneRecovery(role);
@@ -181,8 +198,9 @@
          registration handoff when a saved registration already exists at click time. */
       if (registrationNext && !savedRole()) return;
       /* Let the existing registration/workspace controllers run first. */
-      window.setTimeout(recover, 120);
-      window.setTimeout(recover, 500);
+      var registrationHandoff = !!registrationNext;
+      window.setTimeout(function(){ recover(registrationHandoff); }, 120);
+      window.setTimeout(function(){ recover(registrationHandoff); }, 500);
     }, true);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
