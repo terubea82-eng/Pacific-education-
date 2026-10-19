@@ -84,29 +84,29 @@
         /* Do not override the guided-flow step filter: only the active step must be visible. */
         ""+
         /* Navigation chrome must not be forced visible during the single-page guided flow. */
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppMenu,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) header,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #userFirstNavigation,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationAppMenu,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) header,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #userFirstNavigation,"+
         /* Learning Tools is intentionally not part of this broad reveal rule. */
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppTools,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationSchoolIdentitySection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationIdentityRegistration,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationWebsitePilotChecklist,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #prototypeAccess,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #levelSelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #subjectSelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #termSelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #capabilitySelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #dailyLesson,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #dailyLessonPracticeStage,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #assessments,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #specialEducationDashboard,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #teacherDashboard,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #parentDashboard,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAIConversation,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificGuardianCommentSection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAccountRecovery,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #systemStatus{display:block !important;}";
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationAppTools,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationSchoolIdentitySection,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationIdentityRegistration,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationWebsitePilotChecklist,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #prototypeAccess,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #levelSelection,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #subjectSelection,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #termSelection,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #capabilitySelection,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #dailyLesson,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #dailyLessonPracticeStage,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #assessments,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #specialEducationDashboard,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #teacherDashboard,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #parentDashboard,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationAIConversation,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificGuardianCommentSection,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #pacificEducationAccountRecovery,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow):not(.pe-sequential-role-workspace-active) #systemStatus{display:block !important;}";
       document.head.appendChild(style);
     }
     document.body.classList.add("pe-pilot-all-features");
