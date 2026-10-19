@@ -302,16 +302,9 @@
       if(countryStatus) countryStatus.textContent="Country is required. Select your country so Pacific Education can lock your registration to the correct curriculum pathway.";
       return false;
     }
-    if (role === "student") {
-      var roster = window.PacificEducationTeacherClassRosterContext;
-      var existingClassId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
-      var existingClass = existingClassId && roster && typeof roster.getClass === "function" ? roster.getClass(existingClassId) : null;
-      if (!existingClass) {
-        var entryStatus = document.getElementById("singlePilotRegistrationStatus");
-        if (entryStatus) entryStatus.textContent = "Select an existing Class Reference before entering this class-based pilot workspace. No class is created automatically.";
-        return false;
-      }
-    }
+    /* Student registration must not be blocked by a missing Class Reference.
+       Individual class assignment is not available in this pilot entry yet; the
+       workspace collects a session-only demonstration level and labels it unverified. */
     var selectedLanguage=language||(document.getElementById("singlePilotLanguage")&&document.getElementById("singlePilotLanguage").value)||"English";
     applyRegistrationLanguage(selectedLanguage);
     safeLanguageSet({interfaceLanguage:selectedLanguage,learningLanguage:selectedLanguage,selectedAt:new Date().toISOString()});
@@ -321,14 +314,20 @@
     safeSet("pacificEducationPilotRegistered", "true");
 
     if (role === "student") {
+      /* Do not carry the previous learner's active class into this new session.
+         Saved learning records remain intact; only the active class context resets. */
+      try {
+        sessionStorage.removeItem("paceduActiveStudentContextV1");
+        sessionStorage.removeItem("pilotRegistrationName");
+        localStorage.removeItem("pacificEducationLevel");
+      } catch (e) {}
       authorizeStudent();
       try {
         var studentRoster = window.PacificEducationTeacherClassRosterContext;
         var studentClassId = studentRoster && typeof studentRoster.getClassId === "function" ? String(studentRoster.getClassId() || "").trim() : "";
         var studentClass = studentClassId && studentRoster && typeof studentRoster.getClass === "function" ? studentRoster.getClass(studentClassId) : null;
-        if (studentClass && studentClass.level) {
-          window.localStorage.setItem("pacificEducationLevel", String(studentClass.level));
-        }
+        /* A teacher-selected roster class is not proof of this individual student's assignment.
+           Do not prefill it as the student's class; the student workspace will label demo choice. */
         if (!window.localStorage.getItem("pacificEducationCapability")) {
           window.localStorage.setItem("pacificEducationCapability", "expected");
         }
