@@ -6,7 +6,7 @@
 (function(){
   "use strict";
   var GREEN="#15803d";
-  var steps=[["registrationNextButton","Page 4","Registration","Next"],["welcomeNextButton","Page 1","Welcome","Next"],["prototypeNextButton","Page 5","Prototype Access","Open workspace"]];
+  var steps=[["registrationNextButton","Page 4","Registration setup","Next"],["welcomeNextButton","Page 1","Welcome","Next"],["prototypeNextButton","Page 5","Prototype Access","Open workspace"]];
   function css(){
     if(document.getElementById("pe-green-guided-style"))return;
     var s=document.createElement("style");s.id="pe-green-guided-style";
