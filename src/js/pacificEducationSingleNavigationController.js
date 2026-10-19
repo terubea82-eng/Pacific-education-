@@ -13,7 +13,6 @@
  */
 
 var STEPS = {
-  prototypeNextButton:  [5, "levelSelection"],
   levelNextButton:      [6, "subjectSelection"],
   subjectNextButton:    [7, "termSelection"],
   termNextButton:       [8, "capabilitySelection"],
