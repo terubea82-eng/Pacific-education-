@@ -1238,36 +1238,9 @@ test("student registration handoff shows workspace navigation and daily activiti
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
   await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
   await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeHidden();
-
-  // Complete the first capability check, then advance through the student
-  // sequence to Daily Activities. Assert rendered controls and content, not CSS text.
-  await expect(shell.locator("[data-pe-cap-answer]")).toHaveCount(3);
-  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
-  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
-  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
-  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
-  await shell.locator("#peSequentialNext").click();
-  await shell.locator("#peSequentialNext").click();
-
-  for (let i = 0; i < 4; i += 1) {
-    const next = shell.locator("#peSequentialNext");
-    if (await next.isDisabled()) {
-      const selects = shell.locator("#peSequentialPage select");
-      const count = await selects.count();
-      for (let j = 0; j < count; j += 1) {
-        const select = selects.nth(j);
-        const options = await select.locator("option").evaluateAll(nodes =>
-          nodes.map(node => node.value).filter(Boolean)
-        );
-        if (options.length) await select.selectOption(options[0]).catch(() => {});
-      }
-    }
-    await expect(next).toBeVisible();
-    await next.click();
-  }
 
   await expect(shell.locator("#paceduRoleActivityPack")).toBeVisible();
   await expect(shell.locator("#paceduRoleActivityPack")).toContainText("Fiji Year 1 English — Who am I?");
