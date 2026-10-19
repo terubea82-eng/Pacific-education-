@@ -31,6 +31,32 @@ test("Fiji Year 1 English daily activities follow the eight resource-topic seque
   });
 });
 
+test("all 365 student days provide a structured, meaningful five-step learning cycle", () => {
+  const expectedStages = [
+    "Learn and notice", "Guided practice", "Independent practice",
+    "Apply learning", "Review and reflect"
+  ];
+  const ids = new Set();
+  for (let day = 1; day <= 365; day += 1) {
+    const activity = packs.getStudentActivity(day, { level: "Class 4", subject: "Mathematics" });
+    assert.equal(activity.day, day);
+    assert.equal(activity.learningStage, expectedStages[(day - 1) % 5]);
+    assert.equal(activity.learningStageNumber, ((day - 1) % 5) + 1);
+    assert.equal(activity.learningCycle, Math.floor((day - 1) / 5) + 1);
+    assert.match(activity.title, new RegExp("Day " + day + " of 365"));
+    for (const field of ["goal", "task", "check", "practicePrompt", "successCriteria", "reflectionPrompt", "accessibilityOptions", "evidence", "daySequenceNote"]) {
+      assert.ok(typeof activity[field] === "string" && activity[field].trim().length > 10, "Day " + day + " must include " + field);
+    }
+    assert.match(activity.accessibilityOptions, /sign|screen reader/i);
+    assert.match(activity.daySequenceNote, /does not claim 365 separately ministry-authored lessons/i);
+    ids.add(activity.id);
+  }
+  assert.equal(ids.size, 365, "each day must have its own progress/evidence identity");
+  const last = packs.getStudentActivity(365, { level: "Class 4", subject: "Mathematics" });
+  assert.equal(last.learningStage, "Review and reflect");
+  assert.equal(last.learningCycle, 73);
+});
+
 test("Class 1 English uses Fiji resource-topic reference, not an official approval claim", () => {
   const activity = packs.getActivity("student", "dailyLesson", 9, { level: "Class 1", subject: "English" });
   assert.equal(activity.unit, 1);
