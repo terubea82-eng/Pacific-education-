@@ -682,6 +682,30 @@
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
     var dailyDay=1;
 
+    function studentDailySubject(){
+      var fallbackSelect=page && page.querySelector ? page.querySelector("#peStudentDailySubject") : null;
+      if(fallbackSelect && fallbackSelect.value) return String(fallbackSelect.value);
+      try { return String(window.localStorage.getItem("pacificEducationSubject") || "English"); }
+      catch(e) { return "English"; }
+    }
+    function studentDailyActivitySaved(day){
+      try {
+        var progress=JSON.parse(window.localStorage.getItem("pacificEducationStudentDailyActivityProgressV1") || "{}") || {};
+        var record=progress[String(day)+":"+studentDailySubject()];
+        return !!(record && record.completed === true);
+      } catch(e) { return false; }
+    }
+    function updateStudentDailyGate(){
+      if((role==="student" || role==="blind-learner" || role==="deaf-learner") &&
+         sequence[index] && sequence[index][0]==="dailyLesson"){
+        next.disabled=!studentDailyActivitySaved(dailyDay);
+        if(!next.disabled && status) status.textContent="Daily activity saved on this device. You may continue to Practice.";
+      }
+    }
+    window.addEventListener("pacificEducationDailyActivitySaved",function(){
+      updateStudentDailyGate();
+    });
+
     /* Visibility guard for real workspace content. A role page must never degrade
        to voice controls alone when legacy CSS, a stale hidden flag, or a late
        feature render interferes. This does not change the protected voice engine. */
@@ -841,7 +865,9 @@
         "<p><strong>Learning goal</strong></p><p id=\"peStudentDailyGoal\"></p>"+
         "<p><strong>Learn and practise</strong></p><p id=\"peStudentDailyTask\"></p>"+
         "<p><strong>Check your understanding</strong></p><p id=\"peStudentDailyCheck\"></p>"+
-        "<button type=\"button\" id=\"peStudentDailyComplete\" style=\"padding:12px 16px;font-weight:700\">✓ Mark Activity Complete</button>"+
+        "<label for=\"peStudentDailyResponse\"><strong>Your answer or work (required)</strong></label>"+
+        "<textarea id=\"peStudentDailyResponse\" rows=\"4\" style=\"display:block;width:100%;max-width:100%;box-sizing:border-box;padding:10px;margin:8px 0;font:inherit\" aria-label=\"Your answer or work for today's activity\"></textarea>"+
+        "<button type=\"button\" id=\"peStudentDailyComplete\" style=\"padding:12px 16px;font-weight:700\">✓ Save Work & Mark Activity Complete</button>"+
         "<p id=\"peStudentDailyStatus\" role=\"status\" aria-live=\"polite\">Your completion is saved on this device.</p>";
       host.appendChild(panel);
       var select=panel.querySelector("#peStudentDailySubject");
@@ -864,9 +890,17 @@
       }
       select.addEventListener("change",paint);
       panel.querySelector("#peStudentDailyComplete").addEventListener("click",function(){
-        var saved=readProgress();saved[entryKey()]={completed:true,day:day,subject:select.value};
-        try{localStorage.setItem(key,JSON.stringify(saved));status.textContent="✓ Saved: "+select.value+" Day "+day+" activity completed on this device.";speak("Daily activity completed. Your progress is saved on this device.");}
-        catch(e){status.textContent="Activity completed for this session, but local storage is unavailable. Please tell your teacher before leaving this page.";}
+        var response=String(panel.querySelector("#peStudentDailyResponse").value||"").trim();
+        if(!response){status.textContent="Write, type, sign/describe, or dictate a short answer or work note before marking this activity complete.";panel.querySelector("#peStudentDailyResponse").focus();return;}
+        var saved=readProgress();saved[entryKey()]={completed:true,day:day,subject:select.value,response:response,activityId:"pacedu-fallback-day-"+day+"-"+select.value};
+        try{
+          localStorage.setItem(key,JSON.stringify(saved));
+          status.textContent="✓ Saved: "+select.value+" Day "+day+" work completed on this device.";
+          speak("Daily activity response saved. Your progress is saved on this device.");
+          if(typeof window.dispatchEvent==="function" && typeof window.CustomEvent==="function"){
+            window.dispatchEvent(new window.CustomEvent("pacificEducationDailyActivitySaved",{detail:{day:day,subject:select.value}}));
+          }
+        }catch(e){status.textContent="Could not save the activity on this device. Keep your response and tell your teacher before leaving this page.";}
       });
       paint();
     }
@@ -1344,6 +1378,12 @@
          until the learner explicitly saves a name and demonstration class.
          A later target-visibility recovery must not override this gate. */
       if(role==="student" && item[0]==="paceduWorkspaceHome" && !readStudentContext()) next.disabled=true;
+      /* Daily learning is a required step: the learner must save an actual
+         response for this day and subject before continuing. Prior saved work
+         is respected, and this gate does not alter the protected voice engine. */
+      if((role==="student" || role==="blind-learner" || role==="deaf-learner") && item[0]==="dailyLesson"){
+        next.disabled=!studentDailyActivitySaved(dailyDay);
+      }
       renderStudentContextBanner(page,role);
       enforceWorkspaceVisibility();
       /* Do not move focus automatically on the final reading page. */
