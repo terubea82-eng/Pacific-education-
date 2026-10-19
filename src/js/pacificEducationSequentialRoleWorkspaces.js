@@ -1499,7 +1499,23 @@
       });
       var reg=document.getElementById("pacificEducationIdentityRegistration")||document.getElementById("userRegistrationForm");
       if(reg){
+        /* Guided-page isolation may have left an important display:none and
+           aria-hidden marker on Page 4. Clearing only the hidden property is
+           not enough to make registration visible after a confirmed sign-out. */
         reg.hidden=false;
+        reg.removeAttribute("aria-hidden");
+        reg.removeAttribute("data-pe-sequential-hidden");
+        try{reg.style.removeProperty("display");}catch(e){}
+        try{reg.style.setProperty("display","block","important");}catch(e){}
+        /* Restore any hidden ancestor left by the guided-page isolation pass. */
+        var ancestor=reg.parentElement;
+        while(ancestor && ancestor!==app){
+          ancestor.hidden=false;
+          ancestor.removeAttribute("aria-hidden");
+          ancestor.removeAttribute("data-pe-sequential-hidden");
+          try{ancestor.style.removeProperty("display");}catch(e){}
+          ancestor=ancestor.parentElement;
+        }
         try{reg.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){}
       }
       try{history.replaceState({pacificEducationSignedOut:true},"","#pacificEducationIdentityRegistration");}catch(e){}

@@ -105,7 +105,7 @@
     var lower = value.toLowerCase();
     var response;
 
-    if (/^(hi|hello|hey)\\b/.test(lower)) {
+    if (/^(hi|hello|hey)\b/.test(lower)) {
       response = "Hello. I am Pacific Education AI. You can ask me about learning, daily activities, practice, assessments, accessibility, or using Pacific Education.";
     } else if (lower.indexOf("guardian") !== -1) {
       response = "Pacific Guardian is the owner-accountable governance and oversight layer. Your conversation is with Pacific Education AI; Guardian is not the user-facing conversational assistant.";

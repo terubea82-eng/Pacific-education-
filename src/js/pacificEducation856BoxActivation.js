@@ -81,53 +81,25 @@
       var style=document.createElement("style");
       style.id="pe856-user-box-repair-style";
       style.textContent=
-        /* Do not override the guided-flow step filter: only the active step must be visible. */
-        ""+
-        /* Navigation chrome must not be forced visible during the single-page guided flow. */
+        /* Only the shared shell and role-entry screen are visible before a role workspace opens. */
         "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppMenu,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) header,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #userFirstNavigation,"+
-        /* Learning Tools is intentionally not part of this broad reveal rule. */
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAppTools,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationSchoolIdentitySection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationIdentityRegistration,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationWebsitePilotChecklist,"+
         "body.pe-pilot-all-features:not(.pe-guided-flow) #prototypeAccess,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #levelSelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #subjectSelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #termSelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #capabilitySelection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #dailyLesson,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #dailyLessonPracticeStage,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #assessments,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #specialEducationDashboard,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #teacherDashboard,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #parentDashboard,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAIConversation,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificGuardianCommentSection,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAccountRecovery,"+
-        "body.pe-pilot-all-features:not(.pe-guided-flow) #systemStatus{display:block !important;}";
+        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationAccessibilityControls,"+
+        "body.pe-pilot-all-features:not(.pe-guided-flow) #pacificEducationWorkspaceLiveStatus{display:block !important;}";
       document.head.appendChild(style);
     }
     document.body.classList.add("pe-pilot-all-features");
 
-    /* Reveal current pilot-facing boxes. Production/payment gates stay protected. */
+    /* Keep the initial screen focused: role entry plus shared navigation/accessibility.
+       Feature panels are opened only by the selected role workspace or an explicit menu action. */
     [
-      "pacificEducationAppMenu","header","userFirstNavigation",
-      "pacificEducationSchoolIdentitySection","pacificEducationAppTools",
-      "pacificEducationIdentityRegistration","pacificEducationWebsitePilotChecklist",
-      "prototypeAccess","levelSelection","subjectSelection","termSelection","capabilitySelection",
-      "dailyLesson","dailyLessonPracticeStage","pacificEducationHomeSubmission",
-      "pacificEducationTermBaseline","pacificEducationTransferIntake","assessments",
-      "specialEducationDashboard","teacherDashboard","parentDashboard",
-      "pacificEducationAIConversation","pacificGuardianCommentSection",
-      "pacificEducationAccountRecovery","systemStatus","pacificEducationCoverageDashboard",
-      "pacificEducationStudentProgressDashboard","pacificEducationTeacherClassDashboard",
-      "pacificEducationTeacherEvidence","pacificEducationExternalReviewerPortal",
-      "pacificEducationMailbox","pacificEducationAccessibilityControls"
+      "pacificEducationAppMenu","header","userFirstNavigation","prototypeAccess",
+      "pacificEducationAccessibilityControls","pacificEducationWorkspaceLiveStatus"
     ].forEach(show);
 
-    /* The controlled pilot must never activate real purchasing/production entitlement. */
+        /* The controlled pilot must never activate real purchasing/production entitlement. */
     [
       "buyPlans","pacificEducationPaymentLinksAlways","pacificEducationInstitutionFees",
       "pacificEducationUniversityFeeWorkflow","pacificEducationAccessEntitlement"
@@ -208,18 +180,10 @@
       }
     });
 
-    /* Mandatory pilot activity targets: reveal and keep the complete learning path callable. */
-    [
-      "pacificEducationIdentityRegistration","prototypeAccess","levelSelection","subjectSelection",
-      "termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage","assessments",
-      "teacherCalendarSection","teacherDashboard","parentDashboard","specialEducationDashboard",
-      "pacificEducationCoverageDashboard","pacificEducationStudentProgressDashboard",
-      "pacificEducationTeacherClassDashboard","pacificEducationTeacherEvidence",
-      "pacificEducationExternalReviewerPortal","pacificEducationAIConversation",
-      "pacificGuardianCommentSection","pacificEducationMailbox","systemStatus"
-    ].forEach(show);
+    /* Do not expose every role's feature panels on the entry screen. The role workspace
+       controller reveals the one active page; menu actions reveal an explicitly requested box. */
 
-    /* Registration and guided Next sequence. */
+        /* Registration and guided Next sequence. */
     bind("userRegistrationOpenButton",function(){
       var f=document.getElementById("userRegistrationForm");
       var b=document.getElementById("userRegistrationOpenButton");
@@ -386,7 +350,11 @@
       "pacificEducationInstitutionSetup","pacificEducationInstitutionAdvice","pacificEducationExamCalendarSection",
       "pacificEducationWeekendHolidaySupplementaryActivities"
     ];
-    allPilotBoxes.forEach(show);
+    /* Do not bulk-reveal all pilot boxes here. Doing so defeats role isolation and
+       makes the entry screen render every dashboard at once. Explicit menu/link handlers
+       reveal individual targets through go(targetId). */
+    ["pacificEducationMailbox","pacificEducationAppMenu","pacificEducationAccessibilityControls","pilotBanner","prototypeAccess"]
+      .forEach(show);
     /* Any existing internal link to one of these boxes is a live pilot link. */
     document.querySelectorAll('a[href^="#"]').forEach(function(link){
       var id=(link.getAttribute("href")||"").slice(1);
