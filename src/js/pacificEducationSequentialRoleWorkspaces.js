@@ -1340,6 +1340,10 @@
         window.PacificEducationRoleActivityPacks.render(role,item[0],page,dailyDay);
       }
       if(target) next.disabled=false;
+      /* The student workspace home is a gated entry point. Keep Next disabled
+         until the learner explicitly saves a name and demonstration class.
+         A later target-visibility recovery must not override this gate. */
+      if(role==="student" && item[0]==="paceduWorkspaceHome" && !readStudentContext()) next.disabled=true;
       renderStudentContextBanner(page,role);
       enforceWorkspaceVisibility();
       /* Do not move focus automatically on the final reading page. */
