@@ -520,7 +520,7 @@ function renderPageGuide(targetId){
     target.insertBefore(guide,target.firstChild);
   }
   var numberEl=guide.querySelector(".pacedu-page-sequence-number");
-  if(numberEl) numberEl.textContent="Page "+info[0]+" of 14 — "+info[1];
+  if(numberEl) numberEl.textContent=info[0]<=5?"Page "+info[0]+" of 5 — "+info[1]:"Workspace step — "+info[1];
   guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
 }
 
@@ -631,7 +631,7 @@ function guided(step,targetId){
   if(ok){
     renderPageGuide(targetId);
     var pageInfo=PAGE_GUIDE[targetId];
-    setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" of 14 — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
+    setStatus(pageInfo?"Pacific Education Page "+pageInfo[0]+" — "+pageInfo[1]+" is active. Use the green Next button to continue.":"Pacific Education page is active. Use the green Next button to continue.");
     /* Legacy feature handlers can restore a previous panel after navigation.
        Reassert the current destination during the short transition window. Each
        repair verifies the current step, so an old timer cannot override a newer
@@ -949,6 +949,50 @@ function ensureTeacherCalendarNextButton(){
   }
 }
 
+function openRoleWorkspace(){
+  var role="";
+  try{ role=sessionStorage.getItem("pacificEducationPilotRole")||""; }catch(e){}
+  var roleSelect=el("pilotRegistrationRole");
+  if(!role && roleSelect) role=roleSelect.value||"";
+  if(!role){
+    setStatus("Please complete registration and choose your user role before opening the workspace.");
+    return false;
+  }
+  /* Release the direct-registration first-paint guard only after access is passed. */
+  var root=document.documentElement;
+  if(root){
+    root.setAttribute("data-pacedu-navigation-ready","true");
+    root.removeAttribute("data-pacedu-registration-entry");
+  }
+  document.body.setAttribute("data-pe-guided-complete","true");
+  document.body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
+  document.body.removeAttribute("data-pe-flow-step");
+  document.body.removeAttribute("data-pe-active-guided-page");
+  ALL_NEXT_WRAPPERS.forEach(function(id){
+    var wrapper=el(id);
+    if(wrapper) wrapper.style.setProperty("display","none","important");
+  });
+  var pages=el("pacificEducationPilotPages");
+  if(pages){ pages.hidden=true; pages.style.display="none"; }
+  var menu=el("pacificEducationAppMenu");
+  if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
+  if(window.PacificEducationSequentialRoleWorkspaces &&
+     typeof window.PacificEducationSequentialRoleWorkspaces.build==="function"){
+    window.PacificEducationSequentialRoleWorkspaces.build(role);
+  }else{
+    var workspaces=el("pacificEducationPilotUserWorkspaces");
+    if(workspaces){ workspaces.hidden=false; workspaces.style.removeProperty("display"); }
+  }
+  setStatus("Access complete. Your role-specific PacEdu workspace is ready.");
+  if(window.PacificEducationAutoFeatureActivation &&
+     typeof window.PacificEducationAutoFeatureActivation.run==="function"){
+    window.PacificEducationAutoFeatureActivation.run();
+  }
+  var shell=el("pacificEducationSequentialRoleWorkspace")||el("pacificEducationPilotUserWorkspaces");
+  if(shell){ try{shell.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){} }
+  return true;
+}
+
 function bindGuidedFeatureButtons(){
   bind("dailyActivitiesStartButton",function(){
     var activity=el("dailyLessonActivity");
@@ -976,46 +1020,7 @@ function bindGuidedFeatureButtons(){
   });
 
   bind("teacherCalendarNextButton",function(button){
-    if(button.disabled) return;
-    var role="";
-    try{ role=sessionStorage.getItem("pacificEducationPilotRole")||""; }catch(e){}
-    var roleSelect=el("pilotRegistrationRole");
-    if(!role && roleSelect) role=roleSelect.value||"";
-    if(!role){
-      setStatus("Please complete registration and choose your user role before opening the workspace.");
-      return;
-    }
-    /* Release the direct-registration first-paint guard when guided setup ends. */
-    var root=document.documentElement;
-    if(root){
-      root.setAttribute("data-pacedu-navigation-ready","true");
-      root.removeAttribute("data-pacedu-registration-entry");
-    }
-    document.body.setAttribute("data-pe-guided-complete","true");
-    document.body.classList.remove("pe-guided-flow","pacedu-entry-mode","pacedu-registration-mode");
-    document.body.removeAttribute("data-pe-flow-step");
-    ALL_NEXT_WRAPPERS.forEach(function(id){
-      var wrapper=el(id);
-      if(wrapper) wrapper.style.setProperty("display","none","important");
-    });
-    var pages=el("pacificEducationPilotPages");
-    if(pages){ pages.hidden=true; pages.style.display="none"; }
-    var menu=el("pacificEducationAppMenu");
-    if(menu){ menu.hidden=false; menu.style.removeProperty("display"); }
-    if(window.PacificEducationSequentialRoleWorkspaces &&
-       typeof window.PacificEducationSequentialRoleWorkspaces.build==="function"){
-      window.PacificEducationSequentialRoleWorkspaces.build(role);
-    }else{
-      var workspaces=el("pacificEducationPilotUserWorkspaces");
-      if(workspaces){ workspaces.hidden=false; workspaces.style.removeProperty("display"); }
-    }
-    setStatus("Guided setup complete. Your Pacific Education workspace is ready.");
-    if(window.PacificEducationAutoFeatureActivation &&
-       typeof window.PacificEducationAutoFeatureActivation.run==="function"){
-      window.PacificEducationAutoFeatureActivation.run();
-    }
-    var shell=el("pacificEducationSequentialRoleWorkspace")||el("pacificEducationPilotUserWorkspaces");
-    if(shell){ try{shell.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){} }
+    if(!button.disabled) openRoleWorkspace();
   });
 }
 
@@ -1189,10 +1194,15 @@ function init(){
     if(!button.disabled) guided(3,"pacificEducationIdentityRegistration");
   });
 
+  /* Prototype Access is the final entry gate. Its Next opens the role workspace
+     directly, so learners do not pass through redundant level/subject/term/capability forms. */
+  bind("prototypeNextButton",function(button){
+    if(!button.disabled) openRoleWorkspace();
+  });
   Object.keys(STEPS).forEach(function(id){
-    /* Registration Next belongs exclusively to the mandatory 5-box registration sub-flow.
-       It hands control back to SingleNavigation only after a successful save. */
-    if(id==="welcomeNextButton" || id==="registrationNextButton") return;
+    /* Registration Next belongs exclusively to the mandatory registration sub-flow.
+       Prototype Access is handled above as the workspace handoff. */
+    if(id==="welcomeNextButton" || id==="registrationNextButton" || id==="prototypeNextButton") return;
     var row=STEPS[id];
     bind(id,function(button){
       if(!button.disabled) guided(row[0],row[1]);
