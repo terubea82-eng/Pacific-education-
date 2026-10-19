@@ -56,7 +56,8 @@ jobs:
           need('pilot integrity guard linked',index.includes('pacificEducationPilotIntegrityGuard.js'));
           need('mandatory voice navigation linked',index.includes('pacificEducationMandatoryVoiceNavigation.js'));
           need('country is required',entry.includes('Country is required') && entry.includes('singlePilotCountry'));
-          need('student requires existing Class Reference',entry.includes('existing Class Reference') && entry.includes('No class is created automatically'));
+          need('student registration safely handles an unverified session-only class level',entry.includes('Student registration must not be blocked by a missing Class Reference') && entry.includes('session-only demonstration level') && entry.includes('unverified'));
+          need('teacher class reference is never created automatically',entry.includes('existing Class Reference') && entry.includes('it must not create one'));
           need('365-day coverage generator',engine.includes('for(var d=1;d<=365;d++)'));
           need('text and audio response modes',engine.includes('[\"text\",\"audio\"]'));
           need('teacher school/region coordination',coordinator.includes('school') && coordinator.includes('region') && coordinator.includes('applicableClasses'));
