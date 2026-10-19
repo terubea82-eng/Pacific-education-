@@ -218,17 +218,21 @@
   }
   function lockStudentClassSelectors(page,role,context){
     if(!page || role!=="student" || !context) return;
-    /* The class-reference picker is a teacher/setup control, not the student's
-       assigned-class record. Hide it in the student view and use the explicit
-       session class context instead. */
-    var classReference=page.querySelector("#pacificEducationClassReference");
-    var classReferenceLabel=page.querySelector('label[for="pacificEducationClassReference"]');
-    var classReferenceStatus=page.querySelector("#pacificEducationClassStatus");
-    if(classReference) classReference.hidden=true;
-    if(classReferenceLabel) classReferenceLabel.hidden=true;
-    if(classReferenceLabel && classReferenceLabel.nextElementSibling && classReferenceLabel.nextElementSibling.tagName==="BR") classReferenceLabel.nextElementSibling.hidden=true;
-    if(classReferenceStatus) classReferenceStatus.hidden=true;
-    if(classReferenceStatus && classReferenceStatus.nextElementSibling && classReferenceStatus.nextElementSibling.tagName==="HR") classReferenceStatus.nextElementSibling.hidden=true;
+    /* Scope teacher-only class-reference controls out of the active student
+       view without mutating their hidden state, so the controls return normally
+       when the target section is restored after Sign Out. */
+    var classStyle=document.getElementById("pacedu-student-class-context-style");
+    if(!classStyle){
+      classStyle=document.createElement("style");
+      classStyle.id="pacedu-student-class-context-style";
+      classStyle.textContent=
+        '#pacificEducationSequentialRoleWorkspace[data-pe-role="student"] #peSequentialPage #pacificEducationClassReference,'+
+        '#pacificEducationSequentialRoleWorkspace[data-pe-role="student"] #peSequentialPage label[for="pacificEducationClassReference"],'+
+        '#pacificEducationSequentialRoleWorkspace[data-pe-role="student"] #peSequentialPage label[for="pacificEducationClassReference"] + br,'+
+        '#pacificEducationSequentialRoleWorkspace[data-pe-role="student"] #peSequentialPage #pacificEducationClassStatus,'+
+        '#pacificEducationSequentialRoleWorkspace[data-pe-role="student"] #peSequentialPage #pacificEducationClassStatus + hr{display:none!important;visibility:hidden!important;}';
+      (document.head||document.documentElement).appendChild(classStyle);
+    }
     ["#pacificEducationLevel","#peSequentialLearningLevelRecoverySelect","#paceduLevelSelectorRecovery"].forEach(function(selector){
       var control=page.querySelector(selector);
       if(!control) return;
