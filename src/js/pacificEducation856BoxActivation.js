@@ -180,7 +180,7 @@
       }
     });
 
-    /* Do not expose every role's feature panels on the entry screen. The role workspace
+    /* Learning Tools is intentionally not part of this broad reveal rule. Do not expose every role's feature panels on the entry screen. The role workspace
        controller reveals the one active page; menu actions reveal an explicitly requested box. */
 
         /* Registration and guided Next sequence. */
