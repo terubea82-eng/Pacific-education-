@@ -1070,7 +1070,9 @@
           nameInput.autocomplete="off";
           nameInput.maxLength=80;
           nameInput.placeholder="Enter student name or demo learner ID";
-          nameInput.value=context?context.displayName:"";
+          var registeredStudentName="";
+          try{registeredStudentName=String(sessionStorage.getItem("pilotRegistrationName")||"").trim();}catch(e){}
+          nameInput.value=context?context.displayName:registeredStudentName;
           nameInput.style.cssText="display:block;box-sizing:border-box;width:100%;max-width:520px;padding:12px;border:1px solid #64748b;border-radius:6px;";
           entryPanel.appendChild(nameInput);
           var classLabel=document.createElement("label");
