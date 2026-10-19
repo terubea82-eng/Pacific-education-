@@ -1210,6 +1210,7 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("#peSequentialTitle")).toContainText("Capability Result");
   await shell.locator("#peSequentialNext").click();
   await expect(shell.locator("#peSequentialTitle")).toContainText("Class / Level");
+  await expect(shell.locator("#pacificEducationClassReference")).toBeHidden();
 
   const levelControlId = await shell.locator("#peSequentialPage select").evaluateAll(nodes => {
     const control = nodes.find(node => !node.disabled && node.getClientRects().length > 0);
