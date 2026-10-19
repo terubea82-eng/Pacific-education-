@@ -314,20 +314,10 @@
     safeSet("pacificEducationPilotRegistered", "true");
 
     if (role === "student") {
-      /* Do not carry the previous learner's active class into this new session.
-         Saved learning records remain intact; only the active class context resets. */
-      try {
-        sessionStorage.removeItem("paceduActiveStudentContextV1");
-        sessionStorage.removeItem("pilotRegistrationName");
-        localStorage.removeItem("pacificEducationLevel");
-      } catch (e) {}
       authorizeStudent();
       try {
-        var studentRoster = window.PacificEducationTeacherClassRosterContext;
-        var studentClassId = studentRoster && typeof studentRoster.getClassId === "function" ? String(studentRoster.getClassId() || "").trim() : "";
-        var studentClass = studentClassId && studentRoster && typeof studentRoster.getClass === "function" ? studentRoster.getClass(studentClassId) : null;
-        /* A teacher-selected roster class is not proof of this individual student's assignment.
-           Do not prefill it as the student's class; the student workspace will label demo choice. */
+        /* The student workspace asks for its own session-only class choice.
+           A global teacher roster selection is not proof of individual assignment. */
         if (!window.localStorage.getItem("pacificEducationCapability")) {
           window.localStorage.setItem("pacificEducationCapability", "expected");
         }
