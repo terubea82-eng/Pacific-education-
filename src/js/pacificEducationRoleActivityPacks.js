@@ -112,7 +112,7 @@
     var level = String(context.level || "");
     var number = Math.min(365, Math.max(1, Math.floor(Number(day) || 1)));
     var activity;
-    if ((/year\\s*1|class\\s*1/i).test(level) && subject.toLowerCase() === "english") {
+    if ((/year\s*1|class\s*1/i).test(level) && subject.toLowerCase() === "english") {
       var item = FIJI_YEAR1_ENGLISH[(number - 1) % FIJI_YEAR1_ENGLISH.length];
       activity = {
         id:"fiji-y1-english-unit-" + item.unit + "-day-" + number,
