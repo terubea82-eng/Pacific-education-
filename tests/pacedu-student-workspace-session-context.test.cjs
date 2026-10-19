@@ -16,6 +16,7 @@ test("student workspace home provides a session identity and class-level entry p
   assert.match(sequential, /peStudentWorkspaceEntry/);
   assert.match(sequential, /Student Sign In & My Class \/ Year Level/);
   assert.match(sequential, /peStudentWorkspaceIdentity/);
+  assert.match(sequential, /sessionStorage\.getItem\("pilotRegistrationName"\)/);
   assert.match(sequential, /peStudentWorkspaceClass/);
   assert.match(sequential, /Sign In to My Workspace/);
   assert.match(sequential, /Choose a class level before continuing/);
