@@ -119,7 +119,7 @@ test("Prototype Access opens the role workspace directly after the five-page ent
   /* Legacy setup pages remain available only for compatibility/recovery, not the normal entry path. */
   assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
   assert.match(controller, /dailyNextButton:\s*\[10,\s*"dailyLessonPracticeStage"\]/);
-  assert.match(controller, /"Page "+info\[0\]+" — "+info\[1\]/);
+  assert.match(controller, /numberEl\.textContent=info\[0\]<=5\?"Page "\+info\[0\]\+" of 5 — "\+info\[1\]/);
   assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261020-simple-learning-flow-v1/);
 });
 
