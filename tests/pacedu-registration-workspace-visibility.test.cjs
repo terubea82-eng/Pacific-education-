@@ -88,7 +88,14 @@ test("student registration always opens the visible Student Workspace home befor
     Object.defineProperty(window, "SpeechSynthesisUtterance", { configurable: true, value: FakeUtterance });
     Object.defineProperty(window, "speechSynthesis", { configurable: true, value: synth });
   });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await page.locator("#welcomeNextButton").click();
+  await expect(page.locator("#paceduPageVision")).toBeVisible();
+  await page.locator("#paceduVisionNext").click();
+  await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await page.locator("#paceduRulesAgreement").check();
+  await page.locator("#paceduRulesContinue").click();
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
 
   await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
