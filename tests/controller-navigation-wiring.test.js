@@ -154,7 +154,7 @@ test("role workspace content is forced visible and has a recoverable blank-conte
   assert.match(sequential, /index=sequence\.length-1;\s*renderPage\(\);/);
   assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
   assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261020-simple-learning-flow-v1/);
-  assert.match(html, /pacificEducationSingleNavigationController\\.js\\?v=20261020-simple-learning-flow-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261020-simple-learning-flow-v1/);
 });
 
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
