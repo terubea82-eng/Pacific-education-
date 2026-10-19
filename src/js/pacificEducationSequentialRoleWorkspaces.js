@@ -888,7 +888,7 @@
         goal.textContent=data.goal;task.textContent=data.task;check.textContent=data.check;
         status.textContent=readProgress()[entryKey()] ? "✓ "+select.value+" Day "+day+" activity already completed on this device." : "Complete the activity, then mark it complete. Progress is stored on this device.";
       }
-      select.addEventListener("change",paint);
+      select.addEventListener("change",function(){ paint(); updateStudentDailyGate(); });
       panel.querySelector("#peStudentDailyComplete").addEventListener("click",function(){
         var response=String(panel.querySelector("#peStudentDailyResponse").value||"").trim();
         if(!response){status.textContent="Write, type, sign/describe, or dictate a short answer or work note before marking this activity complete.";panel.querySelector("#peStudentDailyResponse").focus();return;}
