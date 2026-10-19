@@ -1160,6 +1160,11 @@ test("save confirmation then Next opens the selected role workspace for every re
       await expect(title).toContainText("Learning Capability");
       await nextStep.click();
       await expect(title).toContainText("Day 1 of 365");
+      await expect(nextStep).toBeDisabled();
+      await page.locator("#paceduRoleActivityResponse").fill("I completed today's task and can explain my answer.");
+      await page.locator("#paceduRoleActivityDone").check();
+      await page.getByRole("button", { name: "Save Activity on This Device", exact: true }).click();
+      await expect(nextStep).toBeEnabled();
       await nextStep.click();
       await expect(title).toContainText("Practice");
       await nextStep.click();

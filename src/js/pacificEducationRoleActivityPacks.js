@@ -55,14 +55,66 @@
   function escapeText(value) {
     return String(value == null ? "" : value).replace(/[&<>"]/g, function (c) { return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" })[c]; });
   }
+  var DAILY_LEARNING_STAGES = [
+    {
+      name: "Learn and notice",
+      guidance: "First, read, listen to, view, or explore the instructions. Identify the main idea and look at one example. If you are unsure, ask for the instruction in another format.",
+      practice: "Point to, say, sign, select, draw, or write one thing you noticed before starting the main task."
+    },
+    {
+      name: "Guided practice",
+      guidance: "Try the task one step at a time. Use the example or a teacher/approved support prompt, then explain which step helped you.",
+      practice: "Complete one small part of the task with support if needed. Check that part before moving on."
+    },
+    {
+      name: "Independent practice",
+      guidance: "Try the task using your own example and as much independence as is comfortable. It is fine to use approved access tools; do not copy an answer without understanding it.",
+      practice: "Complete the main task, then show or explain one step you worked out yourself."
+    },
+    {
+      name: "Apply learning",
+      guidance: "Use the same idea in a different but familiar situation. Explain, demonstrate, or represent how the idea still works.",
+      practice: "Make one new example or real-life connection that was not used in the first example."
+    },
+    {
+      name: "Review and reflect",
+      guidance: "Look back at your work. Check it against the learning goal, correct one part if needed, and identify what you can now do or what you still need help with.",
+      practice: "Improve one part of your response and name one thing learned or one question for the teacher."
+    }
+  ];
+
+  function addDailyLearningSequence(activity, day, level, subject) {
+    var number = Math.min(365, Math.max(1, Math.floor(Number(day) || 1)));
+    var stageIndex = (number - 1) % DAILY_LEARNING_STAGES.length;
+    var stage = DAILY_LEARNING_STAGES[stageIndex];
+    var cycle = Math.floor((number - 1) / DAILY_LEARNING_STAGES.length) + 1;
+    activity.day = number;
+    activity.learningStage = stage.name;
+    activity.learningStageNumber = stageIndex + 1;
+    activity.learningCycle = cycle;
+    activity.title = "Day " + number + " of 365 — " + activity.title + " — " + stage.name;
+    activity.goal = activity.goal + " Today's focus: " + stage.name.toLowerCase() + ".";
+    activity.task = activity.task + " Daily learning step: " + stage.guidance;
+    activity.practicePrompt = stage.practice;
+    activity.successCriteria = "I can show the learning goal (" + activity.goal + ") through my own response or demonstration.";
+    activity.reflectionPrompt = "What did you learn or improve today? What was difficult, and what would you like help with next?";
+    activity.accessibilityOptions = "Choose an equivalent response method that works for you: speak, sign, point/select, draw, type/write, use suitable tactile or concrete materials, or use an approved screen reader/communication aid. Instructions must not rely on sound or colour alone. Ask a teacher or caregiver for a safe adjustment or extra time when needed.";
+    activity.evidence = activity.evidence + "; daily evidence: learner response or demonstration, one success check, and a brief reflection";
+    activity.daySequenceNote = "Day " + number + " is stage " + (stageIndex + 1) + " of a five-step practice cycle (cycle " + cycle + "). The topic is revisited for spaced practice; this does not claim 365 separately ministry-authored lessons.";
+    activity.subject = subject || activity.subject || "English";
+    activity.level = level || activity.level || "";
+    return activity;
+  }
+
   function learnerActivity(day, context) {
     context = context || {};
     var subject = String(context.subject || "English");
     var level = String(context.level || "");
-    var number = Math.max(1, Number(day) || 1);
+    var number = Math.min(365, Math.max(1, Math.floor(Number(day) || 1)));
+    var activity;
     if ((/year\s*1|class\s*1/i).test(level) && subject.toLowerCase() === "english") {
       var item = FIJI_YEAR1_ENGLISH[(number - 1) % FIJI_YEAR1_ENGLISH.length];
-      return {
+      activity = {
         id:"fiji-y1-english-unit-" + item.unit + "-day-" + number,
         title:"Fiji Year 1 English — " + item.topic,
         goal:item.goal, task:item.task, check:item.check, evidence:item.evidence,
@@ -70,20 +122,23 @@
         curriculumStatus:"REFERENCE TOPIC ONLY — current Ministry curriculum and achievement-indicator validation still required.",
         verificationStatus:"REQUIRES_CURRENT_MINISTRY_VALIDATION", unit:item.unit, subject:subject, level:level
       };
+    } else {
+      var generic = SUBJECT_TASKS[subject] || SUBJECT_TASKS.English || {
+        goal:"Practise the selected subject in a real-life context.",
+        task:"Ask your teacher for today's approved class task. Describe, draw, or write one example connected to the selected subject.",
+        check:"Explain what you learned and how it connects to the selected subject.",
+        evidence:"Learner response"
+      };
+      activity = {
+        id:"pacedu-practical-" + subject.toLowerCase().replace(/[^a-z0-9]+/g,"-") + "-day-" + number,
+        title:subject + " — Practical Daily Activity",
+        goal:generic.goal, task:generic.task, check:generic.check, evidence:generic.evidence,
+        source:"PacEdu original practical pilot activity; not copied from a syllabus.",
+        curriculumStatus:"PENDING TEACHER VERIFICATION against the current Fiji curriculum for the selected year/level, subject and term.",
+        verificationStatus:"PENDING_TEACHER_REVIEW", subject:subject, level:level
+      };
     }
-    var generic = SUBJECT_TASKS[subject] || SUBJECT_TASKS.English || {
-      goal:"Practise the selected subject in a real-life context.",
-      task:"Ask your teacher for today's approved class task. Describe, draw, or write one example connected to the selected subject.",
-      check:"Explain what you learned and how it connects to the selected subject.", evidence:"Learner response"
-    };
-    return {
-      id:"pacedu-practical-" + subject.toLowerCase().replace(/[^a-z0-9]+/g,"-") + "-day-" + number,
-      title:subject + " — Practical Daily Activity " + number,
-      goal:generic.goal, task:generic.task, check:generic.check, evidence:generic.evidence,
-      source:"PacEdu original practical pilot activity; not copied from a syllabus.",
-      curriculumStatus:"PENDING TEACHER VERIFICATION against the current Fiji curriculum for the selected year/level, subject and term.",
-      verificationStatus:"PENDING_TEACHER_REVIEW", subject:subject, level:level
-    };
+    return addDailyLearningSequence(activity, number, level, subject);
   }
   function getActivity(role, stepId, day, context) {
     role = String(role || "").toLowerCase().replace(/_/g,"-");
@@ -132,6 +187,21 @@
     var goal = document.createElement("p"); goal.innerHTML = "<strong>Learning / work goal:</strong> "; goal.appendChild(document.createTextNode(activity.goal)); card.appendChild(goal);
     var task = document.createElement("p"); task.innerHTML = "<strong>Today's task:</strong> "; task.appendChild(document.createTextNode(activity.task)); card.appendChild(task);
     var check = document.createElement("p"); check.innerHTML = "<strong>Record / check:</strong> "; check.appendChild(document.createTextNode(activity.check)); card.appendChild(check);
+    function appendActivityDetail(labelText, value) {
+      if (!value) return;
+      var detail = document.createElement("p");
+      var labelNode = document.createElement("strong");
+      labelNode.textContent = labelText + ": ";
+      detail.appendChild(labelNode);
+      detail.appendChild(document.createTextNode(value));
+      card.appendChild(detail);
+    }
+    appendActivityDetail("Today's learning stage", activity.learningStage ? activity.learningStage + " (step " + activity.learningStageNumber + " of 5; cycle " + activity.learningCycle + ")" : "");
+    appendActivityDetail("Practice prompt", activity.practicePrompt);
+    appendActivityDetail("Success check", activity.successCriteria);
+    appendActivityDetail("Reflection", activity.reflectionPrompt);
+    appendActivityDetail("Accessible ways to respond", activity.accessibilityOptions);
+    appendActivityDetail("Daily sequence", activity.daySequenceNote);
     if (activity.unit) {
       var unit = document.createElement("p"); unit.textContent = "Resource topic unit " + activity.unit + " • " + activity.source; card.appendChild(unit);
     } else {
@@ -172,6 +242,9 @@
         activityId:activity.id, role:role, title:activity.title, countryCode:context.countryCode,
         classReference:context.classReference, level:context.level, subject:context.subject, term:context.term,
         capability:context.capability, day:Math.max(1,Number(day)||1), response:response, completed:true,
+        learningStage:activity.learningStage || "", learningCycle:activity.learningCycle || null,
+        practicePrompt:activity.practicePrompt || "", successCriteria:activity.successCriteria || "",
+        reflectionPrompt:activity.reflectionPrompt || "", accessibilityOptions:activity.accessibilityOptions || "",
         evidenceType:activity.evidence, reviewStatus:activity.verificationStatus,
         savedAt:new Date().toISOString(), storage:"local-device-pilot"
       };
@@ -184,6 +257,11 @@
             progress[String(day)+":"+context.subject] = {completed:true,day:Number(day)||1,subject:context.subject,activityId:activity.id,reviewStatus:activity.verificationStatus};
             global.localStorage.setItem(progressKey, JSON.stringify(progress));
           }
+          try {
+            if (typeof global.dispatchEvent === "function" && typeof global.CustomEvent === "function") {
+              global.dispatchEvent(new global.CustomEvent("pacificEducationDailyActivitySaved", { detail: { day: Number(day) || 1, subject: context.subject } }));
+            }
+          } catch (_) {}
         } catch (_) {}
       } else live.textContent = "Could not save on this device. Keep your response and tell your teacher or pilot coordinator.";
     });
