@@ -1383,6 +1383,9 @@
          is respected, and this gate does not alter the protected voice engine. */
       if((role==="student" || role==="blind-learner" || role==="deaf-learner") && item[0]==="dailyLesson"){
         next.disabled=!studentDailyActivitySaved(dailyDay);
+        if(next.disabled && status){
+          status.textContent="Required daily learning: enter your own answer or work note, confirm that you attempted the activity, then choose Save Activity on This Device. Next unlocks after the work is saved.";
+        }
       }
       renderStudentContextBanner(page,role);
       enforceWorkspaceVisibility();
@@ -1393,7 +1396,11 @@
           if(focusTitle){focusTitle.setAttribute("tabindex","-1");focusTitle.focus({preventScroll:true});}
         }catch(e){}
       }
-      speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
+      if(item[0]==="dailyLesson" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+        speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". This daily learning activity is required. Enter your own response, confirm that you attempted the task, and save your work before pressing Next.");
+      }else{
+        speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this numbered step, then press Next.");
+      }
     }
 
     /* Expose the existing final Sign Out page to the registration handoff recovery.
