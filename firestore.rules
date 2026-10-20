@@ -2,10 +2,63 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Role and privilege fields are not client-managed profile data.
+    // Authoritative role assignment must be performed by a trusted server/admin path.
+    function containsPrivilegedProfileFields(data) {
+      return data.keys().hasAny([
+        'role',
+        'roles',
+        'permissions',
+        'isAdmin',
+        'admin',
+        'owner',
+        'technician',
+        'teacher',
+        'institutionAdmin',
+        'institution-admin',
+        'accessLevel',
+        'accountType',
+        'userType',
+        'isOwner',
+        'isTechnician',
+        'isTeacher',
+        'isGuardian',
+        'isStudent',
+        'claims'
+      ]);
+    }
 
     match /users/{userId} {
-      allow read, create, update: if request.auth != null
+      allow read: if request.auth != null
         && request.auth.uid == userId;
+
+      allow create: if request.auth != null
+        && request.auth.uid == userId
+        && !containsPrivilegedProfileFields(request.resource.data);
+
+      allow update: if request.auth != null
+        && request.auth.uid == userId
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+          'role',
+          'roles',
+          'permissions',
+          'isAdmin',
+          'admin',
+          'owner',
+          'technician',
+          'teacher',
+          'institutionAdmin',
+          'institution-admin',
+          'accessLevel',
+          'accountType',
+          'userType',
+          'isOwner',
+          'isTechnician',
+          'isTeacher',
+          'isGuardian',
+          'isStudent',
+          'claims'
+        ]);
 
       allow delete: if false;
     }
@@ -33,6 +86,23 @@ service cloud.firestore {
         ]);
 
       allow read, update, delete: if false;
+    }
+
+    match /progress/{progressId} {
+      // A client may create only a record owned by its authenticated UID.
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid;
+
+      // Check both the stored owner and the proposed owner. This prevents
+      // an attacker from taking over another user's document by changing uid.
+      allow update: if request.auth != null
+        && resource.data.uid == request.auth.uid
+        && request.resource.data.uid == request.auth.uid;
+
+      allow read: if request.auth != null
+        && resource.data.uid == request.auth.uid;
+
+      allow delete: if false;
     }
   }
 }
