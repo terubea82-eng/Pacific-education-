@@ -105,3 +105,14 @@ test("activities render only on their intended role step and never on unrelated 
   assert.equal(packs.getActivity("blind-learner", "dailyLesson", 1, {level:"Year 1",subject:"English"}).unit, 1);
   assert.equal(packs.getActivity("deaf-learner", "dailyLesson", 1, {level:"Year 1",subject:"English"}).unit, 1);
 });
+
+test("Class 1 English Day 2 contains a targeted lesson and worksheet", () => {
+  const activity = packs.getStudentActivity(2, { level: "Class 1", subject: "English" });
+  assert.match(activity.title, /Greetings and Introducing Myself/);
+  assert.match(activity.task, /Connect to Day 1/);
+  assert.match(activity.task, /Student worksheet/);
+  assert.match(activity.task, /DIFFERENTIATION/);
+  assert.match(activity.check, /not yet demonstrated/);
+  assert.equal(activity.verificationStatus, "PENDING_TEACHER_REVIEW");
+  assert.match(activity.curriculumStatus, /not a claim of Ministry approval/i);
+});
