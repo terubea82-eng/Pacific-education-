@@ -162,3 +162,21 @@ Where a detailed specification already exists, use it rather than creating dupli
 
 - **2026-10-20:** Consolidated owner requirements discussed in the current conversation about national curriculum and language, real-life daily learning, global current affairs, assessment integrity, confidential examinations, Pacific Guardian authority, 24/7 maintenance, API/security protection, child privacy, accessibility, offline continuity, preservation and controlled release.
 - This register must be updated as future owner-approved requirements arise. Merge status and enforcement status must be recorded separately.
+
+## Locked continuation plan — safe PacEdu development
+
+**Status:** OWNER-CONFIRMED DEVELOPMENT RULE (recorded 2026-10-20). This section governs the next development sequence; it does not grant production approval or assert that services are deployed.
+
+1. **Inspect before editing.** Read this register and the relevant stage specification before every change. Establish the current source of truth and deployed state where relevant; do not infer deployment from repository files.
+2. **Preserve the known working baseline.** Prefer narrow, additive changes. Do not delete or replace working pages, role workspaces, registration, navigation, sign-out, offline behavior, accessibility behavior, or protected voice #856 files without a documented need, regression evidence, and required owner approval.
+3. **No unrequested APK builds.** Do not trigger an APK build unless the owner explicitly asks for one. CI and source tests do not count as physical-device verification.
+4. **Verify Firebase read-only before activation.** Inspect actual Firebase Console state and deployed services before implementing or enabling backend integration. The repository's Firebase project ID or dependency alone does not prove an API is deployed. Do not enable services, alter rules, expose secrets, or activate production integration during this discovery step.
+5. **Review authorization before real data.** Review Firestore rules and any backend authorization for role escalation, user-owned profile writes, cross-user reads/writes, student/guardian/teacher relationships, marks, and confidential examination papers. Deny access by default; do not use client-side state as production authority.
+6. **Reuse verified services.** Prefer a suitable existing API/service. Do not create a duplicate API until the existing backend inventory establishes what is missing and why the smallest addition is necessary.
+7. **Keep learning usable and independent.** Preserve existing daily activities, offline-first behavior, progress safeguards, and accessible role workspaces while improving curriculum-grounded, country-aware learning in narrow, tested increments. Current-affairs feeds must not be a prerequisite for daily learning.
+8. **Build Guardian operations only on verified infrastructure.** Hosted monitoring, alerts, and recovery require a configured service, tested permissions, auditability, and failure handling. Never claim 24/7 monitoring or recovery before end-to-end evidence exists.
+9. **Use the existing gates.** Run relevant regression tests and repository security/preservation checks. Do not bypass failing checks or production authorization. Record limitations and rollback/recovery steps in the PR.
+10. **Report evidence honestly.** Distinguish repository inspection, automated test results, actual cloud deployment verification, and owner-confirmed physical-phone testing. No change is considered fixed solely because a PR merged.
+
+**Next approved action:** read-only verification of Firebase Authentication, Firestore, rules, App Check, deployed Functions/Hosting/endpoints, and existing monitoring. After evidence is recorded, propose the smallest safe next change. No production activation or APK build is authorized by this plan.
+
