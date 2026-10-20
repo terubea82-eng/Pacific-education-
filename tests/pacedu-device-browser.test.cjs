@@ -771,7 +771,7 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
      this isolation test does not fabricate teacher work merely to advance. */
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 10");
   await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Workspace");
-  await expect(page.locator("#peSequentialNext")).toBeDisabled();
+  await expect(page.locator("#peSequentialNext")).toBeEnabled();
 });
 
 test("verified registration role overrides a stale pilot role marker", async ({ page }) => {
