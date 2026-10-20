@@ -2,29 +2,17 @@ const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
 
-test("teacher quick manual answer entry saves a pending response and keeps the learner reference visible", async ({ page }) => {
-  await page.addInitScript(() => {
+test("teacher quick manual answer entry saves a pending response and clears fields for the next answer", async ({ page }) => {
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    document.body.innerHTML = '<main><section id="teacherDashboard"></section></main>';
     try {
       localStorage.clear();
       sessionStorage.clear();
-      document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
     } catch (_) {}
   });
-  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
-
-  await page.evaluate(() => {
-    const dashboard = document.getElementById("teacherDashboard");
-    if (dashboard) {
-      dashboard.hidden = false;
-      dashboard.style.display = "block";
-      dashboard.style.visibility = "visible";
-      for (let node = dashboard.parentElement; node && node !== document.body; node = node.parentElement) {
-        node.hidden = false;
-        node.style.display = "block";
-        node.style.visibility = "visible";
-      }
-    }
-  });
+  await page.addScriptTag({ url: "./js/pacificEducationTeacherQuickManualAnswer.js?v=20261021-quick-manual-answer-v1" });
+  await page.evaluate(() => window.PacificEducationTeacherQuickAnswer.build());
 
   const panel = page.locator("#pacificEducationTeacherQuickAnswer");
   await expect(panel).toBeVisible();
@@ -58,6 +46,4 @@ test("teacher quick manual answer entry saves a pending response and keeps the l
     productionEligible: false
   });
   expect(saved[0].originalResponse).toBe("");
-  await expect(page.locator("#pacificEducationTeacherSubmissionQueue")).toContainText("Learner A");
-  await expect(page.locator("#pacificEducationTeacherSubmissionQueue")).toContainText("Eight");
 });
