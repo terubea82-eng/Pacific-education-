@@ -111,6 +111,10 @@ test("users can create ordinary profile data but cannot self-assign a role", asy
     displayName: "Learner C",
     role: "owner",
   }));
+  await assertFails(setDoc(doc(selfAssigningDb, "users/learner-c-custom"), {
+    displayName: "Learner C",
+    customRole: "owner",
+  }));
 });
 
 test("users can update ordinary profile fields but cannot change role fields", async () => {
@@ -127,6 +131,9 @@ test("users can update ordinary profile fields but cannot change role fields", a
   }));
   await assertFails(updateDoc(doc(db, "users/learner-a"), {
     role: "owner",
+  }));
+  await assertFails(updateDoc(doc(db, "users/learner-a"), {
+    customRole: "owner",
   }));
 });
 
