@@ -24,6 +24,9 @@
     "src/js/pacificEducationStudentProgressDashboardUI.js",
     "src/js/pacificEducationFutureSafeFeatureRepair.js"
   ],
+  "protected_policy_documents": [
+    "PACIFIC_GUARDIAN_CONTINUOUS_OPERATIONS_AND_PACEDU_PRESERVATION_CHARTER.md"
+  ],
   "protected_runtime_markers": [
     "PacificEducationSpeech",
     "PacificEducationSequentialRoleWorkspaces",
