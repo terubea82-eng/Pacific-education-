@@ -265,7 +265,7 @@
         var actionCell = cell(row, "");
         actionCell.appendChild(el("strong",statusLabel(r.status)));
         actionCell.appendChild(el("p","Mastery: " + (r.mastery || "NOT_CHECKED")));
-        if (role === "teacher" && r.status === "TEACHER_REVIEW") {
+        if (role === "teacher" && ["TEACHER_REVIEW","MASTERED","NEEDS_REINFORCEMENT"].indexOf(r.status) >= 0) {
           button(actionCell,"Mark mastered",function(){ update(r.id,"MASTERED","MASTERED","Teacher recorded evidence of mastery."); });
           button(actionCell,"Needs reinforcement",function(){ update(r.id,"NEEDS_REINFORCEMENT","NEEDS_REINFORCEMENT","Targeted reinforcement required."); });
           button(actionCell,"Submit to Head of School",function(){ update(r.id,"SCHOOL_REVIEW",r.mastery,"Teacher submitted record for school review."); });
