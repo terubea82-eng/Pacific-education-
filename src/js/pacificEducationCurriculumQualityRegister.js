@@ -97,7 +97,7 @@
     return document.getElementById(id);
   }
   function normalizeIndicatorText(value) {
-    return t(value).toLowerCase().replace(/\\s+/g, " ").trim();
+    return t(value).toLowerCase().replace(/\s+/g, " ").trim();
   }
   function detectRepeatedIndicators(items) {
     items = Array.isArray(items) ? items : [];
