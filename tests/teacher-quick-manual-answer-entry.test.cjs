@@ -24,7 +24,7 @@ test("teacher quick manual answer entry saves a pending response and clears fiel
   await panel.locator("#peQuickAnswerQuestion").fill("How many objects are in the group?");
   await panel.locator("#peQuickAnswerResponse").fill("Eight");
 
-  await panel.getByRole("button", { name: "Save answer & next" }).click();
+  await panel.getByRole("button", { name: "Save answer & next", exact: true }).click();
 
   await expect(panel.locator("#peQuickAnswerStatus")).toContainText("pending teacher review");
   await expect(panel.locator("#peQuickAnswerQuestion")).toHaveValue("");
