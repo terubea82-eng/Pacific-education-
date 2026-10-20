@@ -9,7 +9,6 @@ const {
 } = require("@firebase/rules-unit-testing");
 const {
   collection,
-  deleteDoc,
   doc,
   getDoc,
   getDocs,
@@ -107,8 +106,9 @@ test("users can create ordinary profile data but cannot self-assign a role", asy
   await assertFails(setDoc(doc(db, "users/learner-b"), {
     displayName: "Learner B",
   }));
-  await assertFails(setDoc(doc(db, "users/learner-a-role-attempt"), {
-    displayName: "Learner A",
+  const selfAssigningDb = testEnv.authenticatedContext("learner-c").firestore();
+  await assertFails(setDoc(doc(selfAssigningDb, "users/learner-c"), {
+    displayName: "Learner C",
     role: "owner",
   }));
 });
