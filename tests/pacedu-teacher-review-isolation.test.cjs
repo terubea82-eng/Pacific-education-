@@ -95,3 +95,36 @@ test("reviewing a normal learner response retains the existing adaptive-review b
   const lastReview = JSON.parse(harness.values.get("pacificEducationAdaptiveLastReview"));
   assert.equal(lastReview.status, "needs-practice");
 });
+
+
+test("manual answer assignment is verified only for an exact selected-class roster match", () => {
+  const manualSource = fs.readFileSync("src/js/pacificEducationTeacherQuickManualAnswer.js", "utf8");
+  const values = new Map([
+    ["pacificEducationSelectedClassId", "class-1"],
+    ["pacificEducationPrototypeClassRosters", JSON.stringify({
+      "class-1": { classId: "class-1", level: "Year 1", studentRefs: ["learner-007", "Learner B"] }
+    })]
+  ]);
+  const localStorage = {
+    getItem(key) { return values.has(key) ? values.get(key) : null; },
+    setItem(key, value) { values.set(key, String(value)); },
+    removeItem(key) { values.delete(key); }
+  };
+  const window = { localStorage, dispatchEvent() {} };
+  const document = { getElementById() { return null; }, addEventListener() {} };
+  class FakeCustomEvent { constructor(type, options) { this.type = type; this.detail = options && options.detail; } }
+  vm.runInNewContext(fs.readFileSync("src/js/pacificEducationTeacherClassRosterContext.js", "utf8"), {
+    window, document, localStorage, CustomEvent: FakeCustomEvent, JSON, String, Array, Object
+  });
+  vm.runInNewContext(manualSource, {
+    window, document, localStorage, CustomEvent: FakeCustomEvent, JSON, String, Array, Object, Number, Math, Date
+  });
+  const resolver = window.PacificEducationTeacherQuickAnswer.resolveAssignment;
+  assert.deepEqual(JSON.parse(JSON.stringify(resolver("class-1", "learner-007"))), {
+    assignmentStatus: "verified-roster-match",
+    verifiedClassId: "class-1",
+    verifiedStudentRef: "learner-007"
+  });
+  assert.equal(resolver("Class 1", "learner-007").assignmentStatus, "unverified-manual-reference");
+  assert.equal(resolver("class-1", "Learner not on roster").assignmentStatus, "unverified-manual-reference");
+});
