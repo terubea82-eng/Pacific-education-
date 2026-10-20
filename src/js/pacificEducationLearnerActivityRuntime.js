@@ -74,7 +74,26 @@
     };
   }
 
-  function save(type, response, audio, ctx) {
+  function assessmentPolicy(type, response, ctx, verifiedVoice) {
+    var key = ctx && ctx.answerKey;
+    var hasKey = key !== undefined && key !== null && String(key).trim() !== "";
+    /* Only closed, single-answer objective items are eligible for pilot auto-scoring.
+       Matching and free-response work must remain pending teacher review. */
+    var objective = type === "multiple_choice" || type === "true_false";
+    var autoScored = !verifiedVoice && objective && hasKey;
+    var score = autoScored
+      ? (String(response || "").trim().toLowerCase() === String(key).trim().toLowerCase() ? 100 : 0)
+      : null;
+    return {
+      status: autoScored ? "auto-scored" : "pending-teacher-review",
+      evidenceType: autoScored ? "daily-assessment" : "daily-practice",
+      score: score,
+      assessed: autoScored
+    };
+  }
+
+  function save(type, response, audio, ctx, verifiedVoice) {
+    var outcome = assessmentPolicy(type, response, ctx, verifiedVoice);
     var key = "pacificEducationActivityResponses";
     var items = [];
     try { items = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
@@ -89,7 +108,7 @@
       subject: ctx.subjectId,
       term: ctx.term,
       curriculumContext: ctx,
-      reviewStatus: window.__pacificEducationVerifiedVoiceAttempt ? "pending-teacher-review" : (ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review"),
+      reviewStatus: outcome.status,
       date: new Date().toISOString()
     });
     localStorage.setItem(key, JSON.stringify(items.slice(-500)));
@@ -97,12 +116,10 @@
     var recorder = window.PacificEducationDailyProgressRecorder;
     if (recorder && typeof recorder.record === "function") {
       try {
-        var hasKey = !window.__pacificEducationVerifiedVoiceAttempt && ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "";
-        var score = hasKey ? (String(response || "").trim().toLowerCase() === String(ctx.answerKey).trim().toLowerCase() ? 100 : 0) : null;
         recorder.record({
-          status: hasKey ? "assessed" : "practised",
-          evidenceType: hasKey ? "daily-assessment" : "daily-practice",
-          score: score,
+          status: outcome.assessed ? "assessed" : "practised",
+          evidenceType: outcome.evidenceType,
+          score: outcome.score,
           passingScore: 60,
           activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
           classId: ctx.classId,
@@ -111,7 +128,7 @@
           subjectId: ctx.subjectId,
           term: ctx.term,
           dayNumber: ctx.dayNumber,
-          notes: "Pilot learner response. Review status: " + (hasKey ? "auto-scored" : "pending-teacher-review")
+          notes: "Pilot learner response. Review status: " + outcome.status
         });
       } catch (e) {}
     }
@@ -151,9 +168,9 @@
     var verifiedVoice = !!window.__pacificEducationVerifiedVoiceAttempt;
     readAudio(function(audio) {
       if (verifiedVoice) { try { window.__pacificEducationVerifiedVoiceAttempt = false; } catch (e) {} }
-      save(type, response, audio, ctx);
+      save(type, response, audio, ctx, verifiedVoice);
       resetTemporaryAnswerState();
-      var status = verifiedVoice ? "pending-teacher-review" : (ctx.answerKey !== undefined && ctx.answerKey !== null && String(ctx.answerKey) !== "" ? "auto-scored" : "pending-teacher-review");
+      var status = assessmentPolicy(type, response, ctx, verifiedVoice).status;
       var panel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
       var completion = '<div class="activity"><h3>' + escape(LABELS[type]) + ' complete</h3><p>Your answer and the curriculum question have been recorded.</p>' +
         '<p><strong>Review:</strong> ' + escape(status) + '</p>' +
@@ -439,6 +456,7 @@
       var input = document.getElementById(id);
       if (!input) return;
       complete(type, input.value || "");
-    }
+    },
+    assessmentPolicy: assessmentPolicy
   };
 })(window, document);
