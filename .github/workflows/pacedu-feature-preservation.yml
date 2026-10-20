@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify protected files
+      - name: Verify protected files and governance charter
         shell: bash
         run: |
           set -euo pipefail
@@ -28,11 +28,17 @@ jobs:
           import json, pathlib, sys
           m=json.loads(pathlib.Path(".github/pacedu-protected-features.json").read_text())
           missing=[p for p in m["protected_files"] if not pathlib.Path(p).is_file()]
-          if missing:
-              print("PROTECTED PACEDU FEATURES MISSING:")
-              print("\n".join(" - "+p for p in missing))
+          missing_policy=[p for p in m.get("protected_policy_documents", []) if not pathlib.Path(p).is_file()]
+          if missing or missing_policy:
+              if missing:
+                  print("PROTECTED PACEDU FEATURES MISSING:")
+                  print("\n".join(" - "+p for p in missing))
+              if missing_policy:
+                  print("PROTECTED GOVERNANCE DOCUMENTS MISSING:")
+                  print("\n".join(" - "+p for p in missing_policy))
               sys.exit(1)
-          print(f"PASS: {len(m['protected_files'])} protected Pacedu files are present.")
+          print(f"PASS: {len(m['protected_files'])} protected Pacedu files and {len(m.get('protected_policy_documents', []))} policy documents checked.")
+          print(f"PASS: {len(m.get('protected_policy_documents', []))} protected governance policy documents are present.")
           PY
 
       - name: Verify protected voice/runtime markers
