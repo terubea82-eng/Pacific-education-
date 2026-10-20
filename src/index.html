@@ -1212,6 +1212,84 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 
 }
 
+
+/* Pacedu user-box sizing repair — scoped layout only; preserves field IDs, handlers,
+   breathing-guide sequence, navigation, stored values, and protected voice scripts. */
+.pe-user-box,
+.pe-user-box > *,
+#pacificEducationSequentialRoleWorkspace,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage > *,
+#teacherDashboard,
+#teacherDashboard > * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.pe-user-box input:not([type="checkbox"]):not([type="radio"]),
+.pe-user-box select,
+.pe-user-box textarea,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage input:not([type="checkbox"]):not([type="radio"]),
+#pacificEducationSequentialRoleWorkspace #peSequentialPage select,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage textarea,
+#teacherDashboard input:not([type="checkbox"]):not([type="radio"]),
+#teacherDashboard select,
+#teacherDashboard textarea,
+#pacificEducationDashboardReviewCommentSection textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font: inherit;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  border-radius: 8px;
+}
+.pe-user-box textarea,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage textarea,
+#teacherDashboard textarea {
+  min-height: 7rem;
+  resize: vertical;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.pe-user-box label,
+#pacificEducationSequentialRoleWorkspace #peSequentialPage label,
+#teacherDashboard label {
+  display: block;
+  max-width: 100%;
+  margin-block: 8px 4px;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .pe-user-box,
+  #pacificEducationSequentialRoleWorkspace #peSequentialPage,
+  #teacherDashboard,
+  #pacificEducationDashboardReviewCommentSection {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .pe-user-box input:not([type="checkbox"]):not([type="radio"]),
+  .pe-user-box select,
+  .pe-user-box textarea,
+  #pacificEducationSequentialRoleWorkspace #peSequentialPage input:not([type="checkbox"]):not([type="radio"]),
+  #pacificEducationSequentialRoleWorkspace #peSequentialPage select,
+  #pacificEducationSequentialRoleWorkspace #peSequentialPage textarea,
+  #teacherDashboard input:not([type="checkbox"]):not([type="radio"]),
+  #teacherDashboard select,
+  #teacherDashboard textarea,
+  #pacificEducationDashboardReviewCommentSection textarea {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pe-user-box.pe-sequence-user-active { animation: none !important; }
+}
+
 /* Pacedu mobile layout repair 2026-10-13:
    Keep Next/audio controls compact and in normal flow so they never cover Page 4.
    Only the currently active user box should breathe blue; idle registration cards stay calm. */
