@@ -250,6 +250,8 @@
     appendActivityDetail("Reflection", activity.reflectionPrompt);
     appendActivityDetail("Accessible ways to respond", activity.accessibilityOptions);
     appendActivityDetail("Daily sequence", activity.daySequenceNote);
+    appendActivityDetail("Shared achievement indicator", activity.achievementIndicator);
+    appendActivityDetail("Indicator reference", activity.indicatorId ? activity.indicatorId + " • source: " + (activity.indicatorSourceStatus || "unverified") + " • teacher review required" : "No verified indicator is linked to this task yet; this activity remains a prototype concept focus.");
     if (activity.unit) {
       var unit = document.createElement("p"); unit.textContent = "Resource topic unit " + activity.unit + " • " + activity.source; card.appendChild(unit);
     } else {
