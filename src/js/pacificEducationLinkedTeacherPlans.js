@@ -156,7 +156,7 @@
     var level = node("select");
     level.id = "paceduLinkedPlanLevel";
     level.style.cssText = "display:block;min-height:44px;padding:8px;max-width:100%;";
-    [["", "Use current class selection"], ["ECE","ECE"]].concat(Array.from({length:13}, function (_, i) { return ["Year " + (i + 1), "Year " + (i + 1)]; })).forEach(function (option) {
+    [["", "Use current class selection"], ["ECE","ECE"]].concat(Array.from({length:13}, function (_, i) { return ["Class " + (i + 1), "Class " + (i + 1)]; })).forEach(function (option) {
       var opt = node("option", option[1]); opt.value = option[0]; level.appendChild(opt);
     });
     levelLabel.appendChild(level);
