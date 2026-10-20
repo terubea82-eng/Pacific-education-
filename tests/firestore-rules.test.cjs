@@ -111,7 +111,7 @@ test("users can create ordinary profile data but cannot self-assign a role", asy
     displayName: "Learner C",
     role: "owner",
   }));
-  await assertFails(setDoc(doc(selfAssigningDb, "users/learner-c-custom"), {
+  await assertFails(setDoc(doc(selfAssigningDb, "users/learner-c"), {
     displayName: "Learner C",
     customRole: "owner",
   }));
