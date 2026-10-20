@@ -56,7 +56,7 @@ jobs:
         env:
           PACEDU_TEST_URL: http://127.0.0.1:4173/src/index.html
           PACEDU_DEVICE_TEST_URL: http://127.0.0.1:4173/src/device-test.html
-        run: npx playwright test tests/pacedu-device-browser.test.cjs tests/pacedu-breathing-focus-guide.test.cjs tests/pacedu-registration-scroll.test.cjs tests/pacedu-registration-workspace-visibility.test.cjs tests/student-registration-workspace-handoff.test.cjs --reporter=line
+        run: npx playwright test tests/pacedu-device-browser.test.cjs tests/pacedu-breathing-focus-guide.test.cjs tests/pacedu-registration-scroll.test.cjs tests/pacedu-registration-workspace-visibility.test.cjs tests/student-registration-workspace-handoff.test.cjs tests/teacher-quick-manual-answer-entry.test.cjs --reporter=line
       - name: Stop local static server
         if: always()
         run: |
