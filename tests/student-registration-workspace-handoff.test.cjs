@@ -71,9 +71,23 @@ test("Student registration save and green Next open a visible workspace and dail
   await expect(page.locator("#peSequentialTitle")).toContainText("My Workspace");
   await expect(page.locator("#peSequentialNext")).toBeVisible();
 
+  // Student workspace intentionally gates Next until the learner confirms a
+  // display name and pilot class. Verify that visible gate, then continue.
+  const entry = page.locator("#peStudentWorkspaceEntry");
+  await expect(entry).toBeVisible();
+  await expect(page.locator("#peStudentWorkspaceIdentity")).toBeVisible();
+  await expect(page.locator("#peStudentWorkspaceClass")).toBeVisible();
+  await expect(page.locator("#peSequentialNext")).toBeDisabled();
+  await page.locator("#peStudentWorkspaceIdentity").fill("Student Handoff Test");
+  await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+  await entry.locator("button:not(.pacific-voice-speaker)").click();
+  await expect(page.locator("#peSequentialNext")).toBeEnabled();
+  await expect(page.locator("[data-pe-student-context-banner]")).toContainText("Student Handoff Test");
+  await expect(page.locator("[data-pe-student-context-banner]")).toContainText("Class 1");
+
   // The landing page must proceed to a real daily learning activity, not an empty shell.
   await page.locator("#peSequentialNext").tap();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Today's Daily Learning Activity");
+  await expect(page.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
   const activity = page.locator("#paceduRoleActivityPack, #peStudentDailyActivityStarter");
   await expect(activity).toBeVisible();
   await expect(activity).toContainText(/Learn|Learning goal|Daily Activities/i);
