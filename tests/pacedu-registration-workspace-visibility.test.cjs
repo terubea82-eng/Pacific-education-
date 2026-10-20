@@ -122,7 +122,7 @@ test("student registration always opens the visible Student Workspace home befor
 
   await page.locator("#peStudentWorkspaceIdentity").fill("Student Workspace Visibility Test");
   await page.locator("#peStudentWorkspaceClass").selectOption("Class 8");
-  await page.getByRole("button", { name: "Sign In to My Workspace" }).click();
+  await page.getByRole("button", { name: "Sign In to My Workspace", exact: true }).click();
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
   await page.waitForTimeout(1200);
   await expect(shell).toBeVisible();
