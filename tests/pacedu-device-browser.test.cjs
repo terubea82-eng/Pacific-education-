@@ -772,7 +772,7 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await page.locator("#peSequentialNext").click();
   await expect(page.locator("#peSequentialTitle")).toContainText("My Classes and Assignments");
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 10");
-  await expect(page.locator("#peSequentialPage h3")).toContainText("My Classes and Assignments");
+  await expect(page.locator("#peSequentialPage h3")).toContainText("Teacher Workspace");
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
 });
 
@@ -1148,7 +1148,7 @@ test("save confirmation then Next opens the selected role workspace for every re
       await nextStep.click();
       await expect(title).toContainText("Daily Assessment Record");
       await nextStep.click();
-      await expect(title).toContainText("Curriculum Coverage");
+      await expect(title).toContainText("Learning Coverage");
       await nextStep.click();
       await expect(title).toContainText("My Progress");
       await nextStep.click();
