@@ -26,7 +26,8 @@
   ],
   "protected_policy_documents": [
     "PACIFIC_GUARDIAN_CONTINUOUS_OPERATIONS_AND_PACEDU_PRESERVATION_CHARTER.md",
-    "PACEDU_MASTER_LOCKED_REQUIREMENTS_REGISTER.md"
+    "PACEDU_MASTER_LOCKED_REQUIREMENTS_REGISTER.md",
+    ".github/pull_request_template.md"
   ],
   "protected_runtime_markers": [
     "PacificEducationSpeech",
