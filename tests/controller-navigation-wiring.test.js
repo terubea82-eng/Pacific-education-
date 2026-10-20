@@ -112,20 +112,15 @@ test("protected #856 voice navigation remains unchanged while guided visibility 
   assert.match(controller, /data-pe-flow-step/);
   assert.match(controller, /function guided\(step,targetId\)/);
 });
-test("guided Next transitions retain Learning Level after registration", () => {
-  assert.match(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
-  assert.doesNotMatch(controller, /prototypeNextButton:\s*\[6,\s*"subjectSelection"\]/, "registration must not bypass Learning Level");
-  /* Keep the Learning Level Next route available for recovery when that page is opened directly. */
+test("Prototype Access opens the role workspace directly after the five-page entry flow", () => {
+  assert.match(controller, /bind\("prototypeNextButton",function\(button\)\{\s*if\(!button\.disabled\) openRoleWorkspace\(\);\s*\}\)/);
+  assert.match(controller, /function openRoleWorkspace\(\)/);
+  assert.doesNotMatch(controller, /prototypeNextButton:\s*\[5,\s*"levelSelection"\]/);
+  /* Legacy setup pages remain available only for compatibility/recovery, not the normal entry path. */
   assert.match(controller, /levelNextButton:\s*\[6,\s*"subjectSelection"\]/);
-  assert.match(controller, /subjectNextButton:\s*\[7,\s*"termSelection"\]/);
-  assert.match(controller, /termNextButton:\s*\[8,\s*"capabilitySelection"\]/);
-  assert.match(controller, /capabilityNextButton:\s*\[9,\s*"dailyLesson"\]/);
   assert.match(controller, /dailyNextButton:\s*\[10,\s*"dailyLessonPracticeStage"\]/);
-  assert.match(controller, /practiceNextButton:\s*\[11,\s*"assessments"\]/);
-  assert.match(controller, /assessmentNextButton:\s*\[12,\s*"pacificEducationCoverageDashboard"\]/);
-  assert.match(controller, /guided\(13,"teacherCalendarSection"\)/);
-  assert.match(controller, /"Page "\+info\[0\]\+" of 14/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261018-workspace-guard-v2/);
+  assert.match(controller, /numberEl\.textContent=info\[0\]<=5\?"Page "\+info\[0\]\+" of 5 — "\+info\[1\]/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261020-simple-learning-flow-v1/);
 });
 
 
@@ -158,8 +153,8 @@ test("role workspace content is forced visible and has a recoverable blank-conte
   assert.match(sequential, /Open the final Sign Out page/);
   assert.match(sequential, /index=sequence\.length-1;\s*renderPage\(\);/);
   assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
-  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261019-workspace-home-cache-bust-v1/);
-  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261018-workspace-guard-v2/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261020-simple-learning-flow-v1/);
+  assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261020-simple-learning-flow-v1/);
 });
 
 test("Student registration handoff marks guided flow complete and keeps a workspace recovery action", () => {
@@ -186,19 +181,13 @@ test("Learning Tools stays fail-closed throughout guided entry and registration 
 });
 
 
-test("student sequential workspace begins with mandatory Capability Test and preserves the required learning flow", () => {
+test("student workspace starts at daily learning and retains assessment and portfolio steps", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   const student = sequential.match(/"student":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(student, "student default sequence must exist");
   const ids = [...student[1].matchAll(/\["([^"]+)","([^"]+)"\]/g)].map((match) => match[1]);
-  assert.deepEqual(ids.slice(0, 3), ["pacificEducationInitialCapabilityTest", "pacificEducationInitialCapabilityResult", "levelSelection"]);
+  assert.equal(ids[0], "dailyLesson", "student enters directly at today's activity");
   const required = [
-    "pacificEducationInitialCapabilityTest",
-    "pacificEducationInitialCapabilityResult",
-    "levelSelection",
-    "subjectSelection",
-    "termSelection",
-    "capabilitySelection",
     "dailyLesson",
     "dailyLessonPracticeStage",
     "assessments",
@@ -211,8 +200,14 @@ test("student sequential workspace begins with mandatory Capability Test and pre
     assert.ok(index > previous, "mandatory Student step must exist in order: " + id);
     previous = index;
   }
+  assert.doesNotMatch(student[1], /\["(?:levelSelection|subjectSelection|termSelection|capabilitySelection)"/);
   assert.match(sequential, /studentSequenceHasMandatoryOrder/);
   assert.match(sequential, /does not verify an individual assignment/);
+  const teacher = sequential.match(/"teacher":\s*\[([\s\S]*?)\n    \],/);
+  assert.ok(teacher, "teacher workspace sequence must exist");
+  assert.match(teacher[1], /pacificEducationTeacherClassDashboard/);
+  assert.match(teacher[1], /pacificEducationTeacherEvidence/);
+  assert.match(teacher[1], /Revision and Examination Readiness/);
 });
 
 test("Sign Out stays hidden before the final page and confirmation starts hidden", () => {

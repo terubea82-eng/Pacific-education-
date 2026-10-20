@@ -14,58 +14,36 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
-      ["pacificEducationInitialCapabilityResult","Capability Result"],
-      ["levelSelection","Class / Level"],
-      ["subjectSelection","Subject"],
-      ["termSelection","Term"],
-      ["capabilitySelection","Learning Capability"],
-      ["dailyLesson","Day 1 of 365"],
-      ["dailyLessonPracticeStage","Practice"],
-      ["assessments","Assessments"],
-      ["pacificEducationCoverageDashboard","Curriculum Coverage"],
-      ["pacificEducationStudentProgressDashboard","My Progress"],
+      ["dailyLesson","Today's Daily Learning Activity"],
+      ["dailyLessonPracticeStage","Practice and Feedback"],
+      ["assessments","Daily Assessment Record"],
+      ["pacificEducationCoverageDashboard","Learning Coverage"],
+      ["pacificEducationStudentProgressDashboard","My Progress and Portfolio"],
       ["pacificEducationHomeSubmission","Home Continuity"],
       ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Activities"]
     ],
     "blind-learner":[
-      ["learningPlatform","Voice-Guided Student Workspace"],
-      ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
-      ["pacificEducationInitialCapabilityResult","Capability Result"],
-      ["levelSelection","Class / Level"],
-      ["subjectSelection","Subject"],
-      ["termSelection","Term"],
-      ["capabilitySelection","Capability"],
-      ["dailyLesson","Voice-Guided Daily Activities"],
-      ["dailyLessonPracticeStage","Voice Practice"],
-      ["assessments","Assessments — Original Response Protected"],
-      ["pacificEducationStudentProgressDashboard","My Progress"],
+      ["dailyLesson","Accessible Daily Learning Activity"],
+      ["dailyLessonPracticeStage","Accessible Practice and Feedback"],
+      ["assessments","Daily Assessment Record"],
+      ["pacificEducationStudentProgressDashboard","My Progress and Portfolio"],
       ["pacificEducationHomeSubmission","Home Continuity"]
     ],
     "deaf-learner":[
-      ["learningPlatform","Visual Student Workspace"],
-      ["pacificEducationInitialCapabilityTest","Capability & Ability Test"],
-      ["pacificEducationInitialCapabilityResult","Capability Result"],
-      ["levelSelection","Class / Level"],
-      ["subjectSelection","Subject"],
-      ["termSelection","Term"],
-      ["capabilitySelection","Capability"],
-      ["dailyLesson","Visual Daily Activities"],
-      ["dailyLessonPracticeStage","Visual Practice"],
-      ["assessments","Assessments"],
-      ["pacificEducationStudentProgressDashboard","My Progress"],
+      ["dailyLesson","Visual Daily Learning Activity"],
+      ["dailyLessonPracticeStage","Visual Practice and Feedback"],
+      ["assessments","Daily Assessment Record"],
+      ["pacificEducationStudentProgressDashboard","My Progress and Portfolio"],
       ["pacificEducationHomeSubmission","Home Continuity"]
     ],
     "teacher":[
       ["teacherDashboard","Teacher Workspace"],
-      ["pacificEducationTeacherCapabilityTest","Teacher Capability & Platform Test"],
-      ["pacificEducationTeacherCapabilityResult","Teacher Capability Result"],
-      ["pacificEducationTeacherClassDashboard","My Classes"],
-      ["teacherCalendarSection","Teacher Calendar"],
-      ["pacificEducationTeacherEvidence","Student Evidence"],
-      ["assessments","Assessment Review"],
+      ["pacificEducationTeacherClassDashboard","My Classes and Assignments"],
+      ["pacificEducationTeacherEvidence","Student Learning Evidence"],
+      ["assessments","Assessment and Marking Exceptions"],
       ["pacificEducationCoverageDashboard","Curriculum Coverage"],
-      ["pacificEducationStudentProgressDashboard","Student Progress"],
+      ["pacificEducationStudentProgressDashboard","Student Progress Portfolios"],
+      ["teacherCalendarSection","Revision and Examination Readiness"],
       ["pacificGuardianCommentSection","Teacher/Guardian Communication"]
     ],
     "parent":[
@@ -144,12 +122,6 @@
     try{localStorage.setItem(SEQUENCE_STORAGE_KEY,JSON.stringify({version:"1.0.0",roles:ROLE_SEQUENCE_OVERRIDES}));return true;}catch(e){return false;}
   }
   var STUDENT_MANDATORY_STEPS=[
-    "pacificEducationInitialCapabilityTest",
-    "pacificEducationInitialCapabilityResult",
-    "levelSelection",
-    "subjectSelection",
-    "termSelection",
-    "capabilitySelection",
     "dailyLesson",
     "dailyLessonPracticeStage",
     "assessments",
@@ -795,9 +767,9 @@
         "special-education":"Special Education","owner":"Owner","technician":"Technician"
       };
       var descriptions={
-        "student":"Open learning level, subject, term, daily activities, practice, assessment and progress tools in the approved order.",
-        "blind-learner":"Open the learner pathway with screen-reader-friendly instructions and voice-guided activity options.",
-        "deaf-learner":"Open the learner pathway with written instructions and visual activity options.",
+        "student":"Open today's assigned learning activity, practice, assessment record and progress portfolio without repeated setup forms.",
+        "blind-learner":"Open accessible daily activities, screen-reader-friendly instructions, practice and portfolio progress.",
+        "deaf-learner":"Open visual daily activities, written instructions, practice and portfolio progress.",
         "teacher":"Open class, calendar, learner evidence, assessment and progress tools.",
         "parent":"Open child progress and teacher communication tools.",
         "professional":"Open the reviewer portal, evidence registry and pilot verification tools.",

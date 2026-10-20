@@ -766,15 +766,14 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#pacificEducationStudentProgressDashboard")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
 
-  /* Sign Out remains visible at the top-right throughout every role workspace page.
-     Regression: Teacher Workspace Next must change the active page, not leave
-     the teacher dashboard displayed. The capability test is the required step 2. */
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 12");
+  /* The simplified teacher flow skips the legacy capability test and opens
+     the teacher's class and assignment workspace directly. */
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 10");
   await page.locator("#peSequentialNext").click();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Capability & Platform Test");
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 12");
-  await expect(page.locator("#peSequentialPage h3")).toContainText("Teacher Capability & Platform Test");
-  await expect(page.locator("#peSequentialNext")).toBeDisabled();
+  await expect(page.locator("#peSequentialTitle")).toContainText("My Classes and Assignments");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 10");
+  await expect(page.locator("#peSequentialPage h3")).toContainText("Teacher Workspace");
+  await expect(page.locator("#peSequentialNext")).toBeEnabled();
 });
 
 test("verified registration role overrides a stale pilot role marker", async ({ page }) => {
@@ -1138,27 +1137,6 @@ test("save confirmation then Next opens the selected role workspace for every re
     if (expectedWorkspace === "student") {
       const title = page.locator("#peSequentialTitle");
       const nextStep = page.locator("#peSequentialNext");
-      await expect(title).toContainText("Capability & Ability Test");
-      await expect(nextStep).toBeDisabled();
-
-      await page.locator('input[data-pe-cap-answer="a"]').fill("A");
-      await page.locator('input[data-pe-cap-answer="5"]').fill("5");
-      await page.locator('input[data-pe-cap-answer="cat"]').fill("cat");
-      await page.locator('button[aria-label="✓ Submit Test"]').click();
-      await expect(nextStep).toBeEnabled();
-      await nextStep.click();
-      await expect(title).toContainText("Capability Result");
-      await expect(nextStep).toBeEnabled();
-      await nextStep.click();
-      await expect(title).toContainText("Class / Level");
-      await expect(nextStep).toBeEnabled();
-      await nextStep.click();
-      await expect(title).toContainText("Subject");
-      await nextStep.click();
-      await expect(title).toContainText("Term");
-      await nextStep.click();
-      await expect(title).toContainText("Learning Capability");
-      await nextStep.click();
       await expect(title).toContainText("Day 1 of 365");
       await expect(nextStep).toBeDisabled();
       await page.locator("#paceduRoleActivityResponse").fill("I completed today's task and can explain my answer.");
@@ -1168,9 +1146,9 @@ test("save confirmation then Next opens the selected role workspace for every re
       await nextStep.click();
       await expect(title).toContainText("Practice");
       await nextStep.click();
-      await expect(title).toContainText("Assessments");
+      await expect(title).toContainText("Daily Assessment Record");
       await nextStep.click();
-      await expect(title).toContainText("Curriculum Coverage");
+      await expect(title).toContainText("Learning Coverage");
       await nextStep.click();
       await expect(title).toContainText("My Progress");
       await nextStep.click();
@@ -1203,29 +1181,18 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("not verified");
 
   await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
 
-  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
-  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
-  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
-  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
-  await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability Result");
-  await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Class / Level");
+  await expect(shell.locator("#dailyLesson")).toBeVisible();
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
   await expect(shell.locator("#pacificEducationClassReference")).toBeHidden();
 
-  const levelControlId = await shell.locator("#peSequentialPage select").evaluateAll(nodes => {
-    const control = nodes.find(node => !node.disabled && node.getClientRects().length > 0);
-    return control ? control.id : "";
-  });
-  expect(levelControlId).not.toBe("");
-  const levelControl = shell.locator("#" + levelControlId);
-  await levelControl.selectOption("Class 2");
-  await expect(levelControl).toHaveValue("Class 5");
+  // The selected class travels forward as read-only context; daily activity
+  // pages must not show a second class selector.
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
+  await expect(shell.locator("#peSequentialPage select")).toHaveCount(0);
 });
 
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
@@ -1265,36 +1232,9 @@ test("student registration handoff shows workspace navigation and daily activiti
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability & Ability Test");
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
   await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
   await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeHidden();
-
-  // Complete the first capability check, then advance through the student
-  // sequence to Daily Activities. Assert rendered controls and content, not CSS text.
-  await expect(shell.locator("[data-pe-cap-answer]")).toHaveCount(3);
-  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
-  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
-  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
-  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
-  await shell.locator("#peSequentialNext").click();
-  await shell.locator("#peSequentialNext").click();
-
-  for (let i = 0; i < 4; i += 1) {
-    const next = shell.locator("#peSequentialNext");
-    if (await next.isDisabled()) {
-      const selects = shell.locator("#peSequentialPage select");
-      const count = await selects.count();
-      for (let j = 0; j < count; j += 1) {
-        const select = selects.nth(j);
-        const options = await select.locator("option").evaluateAll(nodes =>
-          nodes.map(node => node.value).filter(Boolean)
-        );
-        if (options.length) await select.selectOption(options[0]).catch(() => {});
-      }
-    }
-    await expect(next).toBeVisible();
-    await next.click();
-  }
 
   await expect(shell.locator("#paceduRoleActivityPack")).toBeVisible();
   await expect(shell.locator("#paceduRoleActivityPack")).toContainText("Fiji Year 1 English — Who am I?");
@@ -1310,7 +1250,7 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialNext")).toBeVisible();
 });
 
-test("student Class / Level page restores its existing selector after workspace handoff", async ({ page }) => {
+test("student workspace skips redundant setup pages and opens daily activity directly", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => {
@@ -1336,26 +1276,14 @@ test("student Class / Level page restores its existing selector after workspace 
   await shell.locator("#peStudentWorkspaceIdentity").fill("Class Level Repair Test");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
-  await shell.locator("#peSequentialNext").click();
-  await shell.locator('[data-pe-cap-answer="a"]').fill("a");
-  await shell.locator('[data-pe-cap-answer="5"]').fill("5");
-  await shell.locator('[data-pe-cap-answer="cat"]').fill("cat");
-  await shell.getByRole("button", { name: "✓ Submit Test", exact: true }).click();
-  await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Capability Result");
-
-  // Reproduce the reported failure: the selector host exists but its UI is blank.
-  await page.evaluate(() => {
-    const host = document.getElementById("pacificEducationLevelSelector");
-    if (host) host.innerHTML = "";
-  });
-  await shell.locator("#peSequentialNext").click();
-  await expect(shell.locator("#peSequentialTitle")).toContainText("Class / Level");
-  await expect(shell.locator("#pacificEducationLevelSelector")).toBeVisible();
-  await expect(shell.locator("#pacificEducationLevel")).toBeVisible();
-  expect(await shell.locator("#pacificEducationLevel option").count()).toBeGreaterThan(1);
-  await expect(shell.locator("#pacificEducationLevel")).toHaveValue("Class 1");
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
+  await shell.locator("#peSequentialNext").click();
+
+  await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
+  await expect(shell.locator("#dailyLesson")).toBeVisible();
+  await expect(shell.locator("#peSequentialPage [data-pe-cap-answer]")).toHaveCount(0);
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 1");
+  await expect(shell.locator("#paceduRoleActivityPack")).toBeVisible();
 });
 
 
