@@ -37,7 +37,7 @@ jobs:
                   print("PROTECTED GOVERNANCE DOCUMENTS MISSING:")
                   print("\n".join(" - "+p for p in missing_policy))
               sys.exit(1)
-          print(f"PASS: {len(m['protected_files'])} protected Pacedu files and {len(missing_policy)} missing policy documents checked.")
+          print(f"PASS: {len(m['protected_files'])} protected Pacedu files and {len(m.get('protected_policy_documents', []))} policy documents checked.")
           print(f"PASS: {len(m.get('protected_policy_documents', []))} protected governance policy documents are present.")
           PY
 
