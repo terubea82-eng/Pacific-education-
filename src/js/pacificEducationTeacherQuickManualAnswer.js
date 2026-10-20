@@ -40,6 +40,29 @@
     return { wrapper: wrapper, control: control };
   }
 
+  function resolveAssignment(classValue, learnerName) {
+    var roster = window.PacificEducationTeacherClassRosterContext;
+    var selectedId = "";
+    var selectedClass = null;
+    try {
+      selectedId = roster && typeof roster.getClassId === "function" ? text(roster.getClassId()) : "";
+      selectedClass = selectedId && roster && typeof roster.getClass === "function" ? roster.getClass(selectedId) : null;
+    } catch (_) {}
+    var students = selectedClass && Array.isArray(selectedClass.studentRefs) ? selectedClass.studentRefs : [];
+    var classMatches = !!(selectedId && selectedClass && text(classValue) === selectedId);
+    var learnerRef = "";
+    students.some(function (ref) {
+      if (text(ref).toLowerCase() === text(learnerName).toLowerCase()) { learnerRef = text(ref); return true; }
+      return false;
+    });
+    var verified = classMatches && !!learnerRef;
+    return {
+      assignmentStatus: verified ? "verified-roster-match" : "unverified-manual-reference",
+      verifiedClassId: verified ? selectedId : null,
+      verifiedStudentRef: verified ? learnerRef : null
+    };
+  }
+
   function build() {
     var host = document.getElementById("teacherDashboard");
     if (!host || document.getElementById(PANEL_ID)) return;
@@ -56,14 +79,24 @@
     explanation.textContent = "For young learners or learners who cannot easily type, the teacher may enter the learner's spoken, signed, selected or demonstrated answer. Saving records the response for review; it does not automatically mark it correct.";
     panel.appendChild(explanation);
 
-    var classRef = text(window.localStorage.getItem("pacificEducationClassReference") || window.localStorage.getItem("pacificEducationClassId"));
-    var classLevel = text(window.localStorage.getItem("pacificEducationLevel") || window.localStorage.getItem("pacificEducationClassLevel"));
+    var rosterContext = window.PacificEducationTeacherClassRosterContext;
+    var selectedClassId = "";
+    var selectedClass = null;
+    try {
+      selectedClassId = rosterContext && typeof rosterContext.getClassId === "function" ? text(rosterContext.getClassId()) : "";
+      selectedClass = selectedClassId && rosterContext && typeof rosterContext.getClass === "function" ? rosterContext.getClass(selectedClassId) : null;
+    } catch (_) {}
+    var classRef = text(window.localStorage.getItem("pacificEducationClassReference") || window.localStorage.getItem("pacificEducationClassId") || selectedClassId);
+    var classLevel = text((selectedClass && selectedClass.level) || window.localStorage.getItem("pacificEducationLevel") || window.localStorage.getItem("pacificEducationClassLevel"));
     var subject = text(window.localStorage.getItem("pacificEducationSubject")) || "English";
     var term = text(window.localStorage.getItem("pacificEducationTerm")) || "Term 1";
     var day = String(Math.max(1, Math.min(365, Number(window.localStorage.getItem("currentDayNumber") || 1) || 1)));
 
     var learner = field("Learner name or reference", "peQuickAnswerLearner", "", true, false);
     var cls = field("Class / class reference", "peQuickAnswerClass", classRef || classLevel, true, false);
+    var assignmentNote = document.createElement("p");
+    assignmentNote.setAttribute("role", "note");
+    assignmentNote.textContent = "Assignment matching: a response is roster-verified only when the entered class matches the selected registered class and the learner reference exactly matches a learner on that class roster. Otherwise it is saved as an unverified manual reference for teacher checking.";
     var subj = field("Subject", "peQuickAnswerSubject", subject, true, false);
     var termField = field("Term", "peQuickAnswerTerm", term, true, false);
     var dayField = field("Learning day (1–365)", "peQuickAnswerDay", day, true, false);
@@ -76,6 +109,7 @@
     [learner, cls, subj, termField, dayField, question, answer].forEach(function (item) {
       panel.appendChild(item.wrapper);
     });
+    panel.appendChild(assignmentNote);
 
     var actions = document.createElement("div");
     actions.style.cssText = "display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;";
@@ -128,6 +162,7 @@
       var responses = read(RESPONSES_KEY, []);
       if (!Array.isArray(responses)) responses = [];
       var now = new Date().toISOString();
+      var assignment = resolveAssignment(classValue, learnerName);
       responses.push({
         responseId: "teacher-manual-" + Date.now(),
         type: "short_answer",
@@ -141,6 +176,9 @@
         learnerNameOrReference: learnerName,
         classId: classValue,
         classLevel: classLevel || classValue,
+        assignmentStatus: assignment.assignmentStatus,
+        verifiedClassId: assignment.verifiedClassId,
+        verifiedStudentRef: assignment.verifiedStudentRef,
         subject: subjectValue,
         term: termValue,
         curriculumContext: {
@@ -226,6 +264,7 @@
 
   window.PacificEducationTeacherQuickAnswer = Object.freeze({
     version: VERSION,
-    build: build
+    build: build,
+    resolveAssignment: resolveAssignment
   });
 })(window, document);
