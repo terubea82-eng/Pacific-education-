@@ -122,6 +122,23 @@
         curriculumStatus:"REFERENCE TOPIC ONLY — current Ministry curriculum and achievement-indicator validation still required.",
         verificationStatus:"REQUIRES_CURRENT_MINISTRY_VALIDATION", unit:item.unit, subject:subject, level:level
       };
+      /* Controlled Class 1 trial: Day 2 teaches greetings using Day 1 evidence.
+         Missing evidence is not treated as mastery; the teacher selects support
+         or extension from observed performance. This is not an official syllabus claim. */
+      if (number === 2) {
+        activity = {
+          id:"pacedu-class1-english-term1-week1-day2-greetings",
+          title:"Class 1 English — Greetings and Introducing Myself",
+          goal:"Use a suitable greeting, respond politely, and introduce yourself with a complete sentence.",
+          task:"DAY 2 TEACHING LESSON (about 30 minutes)\n\n1. Connect to Day 1 (3–5 min): the teacher checks the recorded Day 1 evidence. Do not repeat the identification assessment. If evidence is missing, observe the learner during the lesson before deciding mastery.\n\n2. Model (5 min): teacher says “Good morning!” and models a response. Then model: “Hello. What is your name?” — “My name is ____.” — “Nice to meet you.” Use names the learners choose to share.\n\n3. Guided practice (8–10 min): learners listen, match or select a greeting and response, then practise with the teacher or a partner. Repeat only the step that evidence shows is needed.\n\n4. Student worksheet (8–10 min): A. Complete: “Good ______.” B. Complete: “My name is ______.” C. Match or connect “Hello” with an appropriate greeting response. D. Practise one respectful greeting with a partner or trusted adult. Draw, dictate, point/select, sign, type or write as appropriate.\n\n5. Close (2 min): learner chooses or demonstrates one greeting and one introduction.\n\nDIFFERENTIATION: If Day 1 evidence shows greetings and introductions are already secure, extend with “How are you?” / “I am fine, thank you” and a polite turn-taking conversation. If a skill is not yet secure, model that step with a picture/object cue or short spoken example, then practise it again. Do not label mastery from repetition alone.",
+          check:"Record evidence separately for: (1) recognises or selects a suitable greeting; (2) responds appropriately; (3) introduces themself using “My name is …” or an equivalent accessible response; (4) takes a turn. For each indicator record: demonstrated independently, demonstrated with support, not yet demonstrated, or not observed. Use Day 1 evidence to choose the next step; do not assume mastery if evidence is absent.",
+          evidence:"Teacher-recorded response to greeting, introduction attempt, level of support, and next teaching step.",
+          source:"PacEdu original controlled-pilot lesson. Topic and wording require verification against the current applicable curriculum before claiming official alignment.",
+          curriculumStatus:"PENDING_TEACHER_REVIEW — verify the current Fiji Class 1 / Year 1 Term 1 achievement indicators; not a claim of Ministry approval.",
+          verificationStatus:"PENDING_TEACHER_REVIEW",
+          unit:1, subject:subject, level:level
+        };
+      }
     } else {
       var generic = SUBJECT_TASKS[subject] || SUBJECT_TASKS.English || {
         goal:"Practise the selected subject in a real-life context.",
