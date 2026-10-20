@@ -25,7 +25,8 @@
     "src/js/pacificEducationFutureSafeFeatureRepair.js"
   ],
   "protected_policy_documents": [
-    "PACIFIC_GUARDIAN_CONTINUOUS_OPERATIONS_AND_PACEDU_PRESERVATION_CHARTER.md"
+    "PACIFIC_GUARDIAN_CONTINUOUS_OPERATIONS_AND_PACEDU_PRESERVATION_CHARTER.md",
+    "PACEDU_MASTER_LOCKED_REQUIREMENTS_REGISTER.md"
   ],
   "protected_runtime_markers": [
     "PacificEducationSpeech",
