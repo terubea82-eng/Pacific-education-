@@ -18,6 +18,11 @@ test("teacher quick manual answer entry saves a pending response and keeps the l
       dashboard.hidden = false;
       dashboard.style.display = "block";
       dashboard.style.visibility = "visible";
+      for (let node = dashboard.parentElement; node && node !== document.body; node = node.parentElement) {
+        node.hidden = false;
+        node.style.display = "block";
+        node.style.visibility = "visible";
+      }
     }
   });
 
