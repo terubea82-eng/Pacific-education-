@@ -1,0 +1,62 @@
+name: Pacedu Firestore Security Rules Tests
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "firestore.rules"
+      - "firebase.json"
+      - "tests/firestore-rules.test.cjs"
+      - ".github/workflows/firestore-rules-tests.yml"
+  push:
+    branches: [main]
+    paths:
+      - "firestore.rules"
+      - "firebase.json"
+      - "tests/firestore-rules.test.cjs"
+      - ".github/workflows/firestore-rules-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pacedu-firestore-rules-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  firestore-rules:
+    name: Firestore emulator authorization regression tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Set up Java for the Firestore emulator
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Install locked project dependencies
+        run: npm ci
+
+      - name: Install Firestore rules test tools without changing project manifests
+        run: npm install --no-save --package-lock=false firebase-tools @firebase/rules-unit-testing
+
+      - name: Test Firestore rules in the local emulator
+        run: npx firebase-tools emulators:exec --only firestore --project demo-pacedu-firestore-rules "node --test tests/firestore-rules.test.cjs"
+
+      - name: Confirm Firebase project config matches the existing database region
+        shell: bash
+        run: |
+          set -euo pipefail
+          node -e "const c=require('./firebase.json'); if(c.firestore.location !== 'asia-southeast1') process.exit(1)"
+          echo "PASS: Firestore deployment config targets the existing asia-southeast1 database."
