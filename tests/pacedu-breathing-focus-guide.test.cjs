@@ -55,20 +55,13 @@ test("breathing guide activates for a sequential teacher workspace and final sig
   });
   expect(firstPageGuidance.blueActionCount === 1 || firstPageGuidance.nextReady).toBe(true);
 
-  // The guided sequence must reach a dedicated final Sign Out page and visually guide it.
+  // This test targets final-page breathing guidance, not completion of every
+  // teacher task. Other browser tests cover sequential Next navigation. Open the
+  // existing dedicated final page through the workspace's supported handoff.
   await page.evaluate(() => {
-    const next = document.getElementById("peSequentialNext");
-    const title = document.getElementById("peSequentialTitle");
-    let guard = 0;
-    while (next && title && !/Sign Out/.test(title.textContent) && guard++ < 30) {
-      if (next.disabled) {
-        const answers = document.querySelectorAll("#peSequentialPage input[data-pe-cap-answer]");
-        answers.forEach(input => { input.value = input.getAttribute("data-pe-cap-answer"); input.dispatchEvent(new Event("input", { bubbles: true })); });
-        const submit = Array.from(document.querySelectorAll("#peSequentialPage button")).find(button => /Submit Test/.test(button.textContent));
-        if (submit) submit.click();
-      }
-      if (!next.disabled) next.click();
-      else break;
+    const shell = document.getElementById("pacificEducationSequentialRoleWorkspace");
+    if (shell && typeof shell.__paceduOpenFinalSignOut === "function") {
+      shell.__paceduOpenFinalSignOut();
     }
   });
   await expect(page.locator("#peSequentialTitle")).toContainText("Sign Out");

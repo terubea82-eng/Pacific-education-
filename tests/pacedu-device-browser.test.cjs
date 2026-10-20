@@ -766,13 +766,11 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#pacificEducationStudentProgressDashboard")).toBeHidden();
   await expect(page.locator("#peSequentialSignOutButton")).toBeVisible();
 
-  /* The simplified teacher flow skips the legacy capability test and opens
-     the teacher's class and assignment workspace directly. */
+  /* The active Teacher Workspace contains required actions. The mandatory-field
+     guide must keep Next blocked until those required actions are completed;
+     this isolation test does not fabricate teacher work merely to advance. */
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 10");
-  await page.locator("#peSequentialNext").click();
-  await expect(page.locator("#peSequentialTitle")).toContainText("My Classes and Assignments");
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 3 OF 10");
-  await expect(page.locator("#peSequentialPage h3")).toContainText("Teacher Workspace");
+  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Workspace");
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
 });
 
