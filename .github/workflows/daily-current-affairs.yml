@@ -71,7 +71,7 @@ jobs:
               return {
                 title: tag(b, 'title'),
                 url: link,
-                date: tag(b, 'pubDate') || tag(b, 'published') || tag(b, 'updated') || tag(b, 'date'),
+                date: tag(b, 'pubDate') || tag(b, 'published') || tag(b, 'date'),
                 description: tag(b, 'description') || tag(b, 'summary') || tag(b, 'content')
               };
             });
