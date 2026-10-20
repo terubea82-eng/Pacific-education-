@@ -96,6 +96,52 @@
     }
     return document.getElementById(id);
   }
+  function normalizeIndicatorText(value) {
+    return t(value).toLowerCase().replace(/\s+/g, " ").trim();
+  }
+  function detectRepeatedIndicators(items) {
+    items = Array.isArray(items) ? items : [];
+    var groups = Object.create(null);
+    items.forEach(function (item) {
+      if (!item || item.status === "retired") return;
+      var level = t(item.level);
+      var subject = t(item.subjectId || item.subject);
+      var term = t(item.term);
+      var wording = t(item.indicatorText || item.achievementIndicator);
+      var normalized = normalizeIndicatorText(wording);
+      if (!level || !subject || !normalized || ["Term 1","Term 2","Term 3"].indexOf(term) < 0) return;
+      var key = [level, subject, normalized].join("|");
+      if (!groups[key]) groups[key] = {key:key, level:level, subject:subject, normalized:normalized, indicatorText:wording, terms:[], indicatorIds:[], idsByTerm:Object.create(null), sourceTitles:[], sourceYears:[], sourcePages:[], sourceUrls:[]};
+      var group = groups[key];
+      if (group.terms.indexOf(term) < 0) group.terms.push(term);
+      if (!group.idsByTerm[term]) group.idsByTerm[term] = [];
+      if (item.id && group.indicatorIds.indexOf(String(item.id)) < 0) group.indicatorIds.push(String(item.id));
+      if (item.id && group.idsByTerm[term].indexOf(String(item.id)) < 0) group.idsByTerm[term].push(String(item.id));
+      var sourceTitle = t(item.sourceDocument || item.sourceTitle || item.sourceId);
+      var sourceYear = t(item.sourceYear || (item.source && item.source.year));
+      var sourcePage = t(item.sourcePage || item.page || item.sourceLocation);
+      var sourceUrl = t(item.sourceUrl || item.url);
+      if (sourceTitle && group.sourceTitles.indexOf(sourceTitle) < 0) group.sourceTitles.push(sourceTitle);
+      if (sourceYear && group.sourceYears.indexOf(sourceYear) < 0) group.sourceYears.push(sourceYear);
+      if (sourcePage && group.sourcePages.indexOf(sourcePage) < 0) group.sourcePages.push(sourcePage);
+      if (sourceUrl && group.sourceUrls.indexOf(sourceUrl) < 0) group.sourceUrls.push(sourceUrl);
+    });
+    return Object.keys(groups).map(function (key) {
+      return groups[key];
+    }).filter(function (group) {
+      return group.terms.length > 1;
+    }).map(function (group) {
+      group.terms.sort(function(a,b){return a.localeCompare(b);});
+      group.scanKey = "repeat:" + [group.level, group.subject, group.normalized].join("|");
+      group.occurrences = group.terms.map(function(term){return term + ": " + (group.idsByTerm[term] || []).join(", ");}).join("; ");
+      return group;
+    }).sort(function(a,b){
+      return (a.level + "|" + a.subject + "|" + a.indicatorText).localeCompare(b.level + "|" + b.subject + "|" + b.indicatorText);
+    });
+  }
+  function hasMasteryEvidence(value) {
+    return safeText(value).length >= 8;
+  }
   function makeRecord(data) {
     var country = currentCountry();
     return {
@@ -117,8 +163,11 @@
       occurrences: data.occurrences,
       category: data.category,
       suggestion: data.suggestion,
+      scanKey: data.scanKey || "",
+      indicatorIds: Array.isArray(data.indicatorIds) ? data.indicatorIds.slice() : [],
       status: "TEACHER_REVIEW",
       mastery: "NOT_CHECKED",
+      masteryEvidence: "",
       teacherName: data.teacherName,
       schoolName: data.schoolName,
       schoolReview: "",
@@ -155,7 +204,7 @@
         "Source: " + [r.sourceTitle, r.sourceYear, r.sourcePage, r.sourceUrl].filter(Boolean).join(" | "),
         "Occurrences: " + (r.occurrences || "Not recorded"), "Evidence: " + (r.evidence || "Not recorded"),
         "Classification: " + (r.category || "Not classified"), "Suggested action: " + (r.suggestion || "Not recorded"),
-        "Mastery: " + r.mastery, "Status: " + statusLabel(r.status),
+        "Mastery: " + r.mastery, "Mastery evidence: " + (r.masteryEvidence || "Not recorded"), "Status: " + statusLabel(r.status),
         "School review: " + (r.schoolReview || "Not recorded"), "Authority decision: " + (r.ministryDecision || "Not recorded"), "");
     });
     return out.join("\n");
@@ -245,6 +294,58 @@
       renderRecords();
     });
     button(actions, "Download Register (.txt)", function () { downloadReport(readRecords(), role); });
+    button(actions, "Scan Curriculum for Repeated Indicators", function () {
+      var registry = window.PacificEducationCurriculumAlignmentRegistry;
+      if (!registry || typeof registry.list !== "function") {
+        status.textContent = "Curriculum indicator registry is unavailable. No automatic conclusion was made.";
+        return;
+      }
+      var sourceItems = registry.list();
+      var assigned = sourceItems.filter(function (item) {
+        return item && ["Term 1","Term 2","Term 3"].indexOf(t(item.term)) >= 0;
+      });
+      var repeats = detectRepeatedIndicators(sourceItems);
+      if (!repeats.length) {
+        status.textContent = assigned.length
+          ? "No exact indicator wording was found across different assigned terms. This does not prove that the curriculum has no gaps."
+          : "No term-assigned indicators are available to compare yet. Current UNASSIGNED source indicators cannot establish term-to-term repetition. No records were invented.";
+        return;
+      }
+      var records = readRecords(), added = 0;
+      repeats.forEach(function (item) {
+        if (records.some(function (record) { return record.scanKey === item.scanKey; })) return;
+        var record = makeRecord({
+          level:item.level,
+          subject:item.subject,
+          term:item.terms.join(" → "),
+          recordType:"REPEATED_INDICATOR",
+          indicatorText:item.indicatorText,
+          sourceTitle:item.sourceTitles.join("; ") || "Pacific Education Curriculum Alignment Registry",
+          sourceYear:item.sourceYears.join("; "),
+          sourcePage:item.sourcePages.join("; "),
+          sourceUrl:item.sourceUrls[0] || "",
+          evidence:"Automated exact-wording comparison only. No learner mastery or official curriculum error is inferred. Teacher must verify the source and learner evidence.",
+          occurrences:item.occurrences,
+          category:"EXACT_DUPLICATE",
+          suggestion:"Teacher review required: compare the exact source and teaching sequence. If learner mastery is evidenced, avoid redundant teaching/testing while retaining the indicator; otherwise plan targeted reinforcement.",
+          scanKey:item.scanKey,
+          indicatorIds:item.indicatorIds
+        });
+        record.audit[0].note = "Automatically detected exact wording across assigned terms; teacher review and learner evidence required.";
+        records.push(record);
+        added += 1;
+      });
+      if (!added) {
+        status.textContent = "Repeated indicators were already recorded. No duplicate records were added.";
+        return;
+      }
+      if (!saveRecords(records)) {
+        status.textContent = "Could not save the scan results on this device. No external report was sent.";
+        return;
+      }
+      status.textContent = "Added " + added + " repeated-indicator review record(s) to this device. All remain pending teacher review; no mastery or authority decision was inferred.";
+      renderRecords();
+    });
     panel.appendChild(actions);
 
     var calendar = el("div");
@@ -276,13 +377,39 @@
         var actionCell = cell(row, "");
         actionCell.appendChild(el("strong",statusLabel(r.status)));
         actionCell.appendChild(el("p","Mastery: " + (r.mastery || "NOT_CHECKED")));
+        if (r.masteryEvidence) actionCell.appendChild(el("p","Mastery evidence: " + r.masteryEvidence));
         if (role === "teacher" && ["TEACHER_REVIEW","MASTERED","NEEDS_REINFORCEMENT"].indexOf(r.status) >= 0) {
-          button(actionCell,"Mark mastered",function(){ update(r.id,"MASTERED","MASTERED","Teacher recorded evidence of mastery."); });
-          button(actionCell,"Needs reinforcement",function(){ update(r.id,"NEEDS_REINFORCEMENT","NEEDS_REINFORCEMENT","Targeted reinforcement required."); });
-          button(actionCell,"Submit to Head of School",function(){ update(r.id,"SCHOOL_REVIEW",r.mastery,"Teacher submitted record for school review."); });
+          var masteryEvidence = el("textarea");
+          masteryEvidence.rows = 2;
+          masteryEvidence.placeholder = "Required evidence before marking mastery (e.g. dated work / assessment reference)";
+          masteryEvidence.setAttribute("aria-label","Evidence required to mark indicator mastered");
+          masteryEvidence.style.cssText = "display:block;width:100%;box-sizing:border-box;margin:6px 0;";
+          actionCell.appendChild(masteryEvidence);
+          button(actionCell,"Mark mastered",function(){
+            if (!hasMasteryEvidence(masteryEvidence.value)) {
+              status.textContent = "Add at least 8 characters of specific evidence before marking mastery.";
+              masteryEvidence.focus();
+              return;
+            }
+            update(r.id,"MASTERED","MASTERED",safeText(masteryEvidence.value));
+          });
+          button(actionCell,"Needs reinforcement",function(){ update(r.id,"NEEDS_REINFORCEMENT","NEEDS_REINFORCEMENT","Targeted reinforcement required; add the evidence in the register record."); });
+          button(actionCell,"Submit to Head of School",function(){
+            if (!safeText(r.evidence) && !hasMasteryEvidence(r.masteryEvidence)) {
+              status.textContent = "Add evidence to the record before submitting it for school review.";
+              return;
+            }
+            update(r.id,"SCHOOL_REVIEW",r.mastery,"Teacher submitted record for school review with evidence.");
+          });
         }
         if (role === "head-of-school" && r.status === "SCHOOL_REVIEW") {
-          button(actionCell,"Verify & forward",function(){ update(r.id,"MINISTRY_REVIEW",r.mastery,"Head of School verified the record and marked it for authority review. Local status only; no transmission occurred."); });
+          button(actionCell,"Verify & forward",function(){
+            if (!safeText(r.evidence) && !hasMasteryEvidence(r.masteryEvidence)) {
+              status.textContent = "Evidence is required before forwarding this record for authority review.";
+              return;
+            }
+            update(r.id,"MINISTRY_REVIEW",r.mastery,"Head of School verified source/evidence and marked the record for authority review. Local status only; no transmission occurred.");
+          });
           button(actionCell,"Return for evidence",function(){ update(r.id,"TEACHER_REVIEW",r.mastery,"Returned for further source/evidence checks."); });
         }
         if (role === "education" && (r.status === "MINISTRY_REVIEW" || r.status === "SCHOOL_VERIFIED")) {
@@ -304,6 +431,7 @@
       if (!target) return;
       target.status = nextStatus;
       target.mastery = mastery || target.mastery;
+      if (nextStatus === "MASTERED") target.masteryEvidence = safeText(note);
       if (role === "head-of-school") target.schoolReview = note;
       if (role === "education" && decision) target.ministryDecision = decision;
       target.audit = Array.isArray(target.audit) ? target.audit : [];
@@ -334,6 +462,8 @@
     version:"1.0.0-pilot-local-register",
     getRecords:readRecords,
     exportText:exportText,
+    detectRepeatedIndicators:detectRepeatedIndicators,
+    hasMasteryEvidence:hasMasteryEvidence,
     render:init
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded",init);
