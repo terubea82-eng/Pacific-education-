@@ -106,6 +106,34 @@
     return activity;
   }
 
+  function attachSharedAchievementIndicator(activity, context, day) {
+    context = context || {};
+    var engine = global.PacificEducationAchievementDistributionEngine;
+    if (!engine || typeof engine.buildDailyIndicatorPlan !== "function") return activity;
+    var expectedClass = String(context.classReference || "").trim();
+    if (!expectedClass) return activity;
+    var result = engine.buildDailyIndicatorPlan({
+      classId: expectedClass, level: String(context.level || ""),
+      subjectId: String(context.subject || "English"), term: String(context.term || ""),
+      dayNumber: Math.max(1, Number(day) || 1)
+    });
+    var assignment = result && result.assignment;
+    if (!assignment || !assignment.indicatorId || String(assignment.classId || "") !== expectedClass ||
+        String(assignment.level || "") !== String(context.level || "") ||
+        String(assignment.subjectId || "") !== String(context.subject || "English") ||
+        String(assignment.term || "") !== String(context.term || "")) return activity;
+    activity.indicatorId = assignment.indicatorId;
+    activity.achievementIndicator = assignment.indicatorText;
+    activity.indicatorStrand = assignment.strand || "";
+    activity.indicatorSourceStatus = assignment.sourceStatus || "unverified";
+    activity.indicatorVerificationStatus = "PENDING_TEACHER_REVIEW";
+    activity.indicatorProductionEligible = false;
+    activity.curriculumStatus = String(activity.curriculumStatus || "") +
+      " Shared achievement indicator " + assignment.indicatorId +
+      " is attached for planning only; verify the source and obtain teacher approval before treating it as authoritative.";
+    return activity;
+  }
+
   function learnerActivity(day, context) {
     context = context || {};
     var subject = String(context.subject || "English");
@@ -155,6 +183,7 @@
         verificationStatus:"PENDING_TEACHER_REVIEW", subject:subject, level:level
       };
     }
+    attachSharedAchievementIndicator(activity, context, number);
     return addDailyLearningSequence(activity, number, level, subject);
   }
   function getActivity(role, stepId, day, context) {
@@ -165,12 +194,14 @@
     }
     var pack = ROLE_TASKS[role];
     if (!pack || stepId !== pack.host) return null;
-    return {
+    var roleActivity = {
       id:"role-" + role + "-" + stepId, title:pack.title, goal:pack.goal, task:pack.task,
       check:pack.prompt, evidence:pack.evidence, source:"PacEdu controlled-pilot role activity",
       curriculumStatus:"Role workflow activity; not a claim of official curriculum approval.",
       verificationStatus:pack.status
     };
+    if (role === "teacher") attachSharedAchievementIndicator(roleActivity, context || {}, day);
+    return roleActivity;
   }
   function render(role, stepId, host, day) {
     if (!host || !document || !document.createElement) return false;
@@ -219,6 +250,8 @@
     appendActivityDetail("Reflection", activity.reflectionPrompt);
     appendActivityDetail("Accessible ways to respond", activity.accessibilityOptions);
     appendActivityDetail("Daily sequence", activity.daySequenceNote);
+    appendActivityDetail("Shared achievement indicator", activity.achievementIndicator);
+    appendActivityDetail("Indicator reference", activity.indicatorId ? activity.indicatorId + " • source: " + (activity.indicatorSourceStatus || "unverified") + " • teacher review required" : "No verified indicator is linked to this task yet; this activity remains a prototype concept focus.");
     if (activity.unit) {
       var unit = document.createElement("p"); unit.textContent = "Resource topic unit " + activity.unit + " • " + activity.source; card.appendChild(unit);
     } else {

@@ -249,6 +249,7 @@
 
         var dayNumber = Number.parseInt(filters.dayNumber || 1, 10);
         var result = distribute({
+            classId: filters.classId,
             level: filters.level,
             subjectId: filters.subjectId,
             term: filters.term,

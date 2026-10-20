@@ -116,3 +116,51 @@ test("Class 1 English Day 2 contains a targeted lesson and worksheet", () => {
   assert.equal(activity.verificationStatus, "PENDING_TEACHER_REVIEW");
   assert.match(activity.curriculumStatus, /not a claim of Ministry approval/i);
 });
+
+test("student activity links a matching distributed achievement indicator without claiming approval", () => {
+  const original = window.PacificEducationAchievementDistributionEngine;
+  window.PacificEducationAchievementDistributionEngine = {
+    buildDailyIndicatorPlan(filters) {
+      assert.equal(filters.dayNumber, 2);
+      return { success: true, assignment: {
+        classId: "CLASS-1-A", level: "Class 1", subjectId: "English", term: "Term 1",
+        indicatorId: "C1-ENG-P-002", indicatorText: "Respond to a short spoken message.",
+        strand: "Speaking and Listening", sourceStatus: "unverified", productionEligible: false
+      } };
+    }
+  };
+  try {
+    const activity = packs.getStudentActivity(2, {
+      level: "Class 1", subject: "English", term: "Term 1", classReference: "CLASS-1-A"
+    });
+    assert.equal(activity.indicatorId, "C1-ENG-P-002");
+    assert.equal(activity.achievementIndicator, "Respond to a short spoken message.");
+    assert.equal(activity.indicatorSourceStatus, "unverified");
+    assert.equal(activity.indicatorVerificationStatus, "PENDING_TEACHER_REVIEW");
+    assert.equal(activity.indicatorProductionEligible, false);
+    assert.match(activity.curriculumStatus, /verify the source/i);
+  } finally {
+    if (original === undefined) delete window.PacificEducationAchievementDistributionEngine;
+    else window.PacificEducationAchievementDistributionEngine = original;
+  }
+});
+
+test("student activity refuses a distributed indicator for a different class", () => {
+  const original = window.PacificEducationAchievementDistributionEngine;
+  window.PacificEducationAchievementDistributionEngine = {
+    buildDailyIndicatorPlan() { return { assignment: {
+      classId: "OTHER-CLASS", level: "Class 1", subjectId: "English", term: "Term 1",
+      indicatorId: "WRONG-CLASS", indicatorText: "Must not leak across classes.", sourceStatus: "verified"
+    } }; }
+  };
+  try {
+    const activity = packs.getStudentActivity(1, {
+      level: "Class 1", subject: "English", term: "Term 1", classReference: "CLASS-1-A"
+    });
+    assert.equal(activity.indicatorId, undefined);
+    assert.equal(activity.achievementIndicator, undefined);
+  } finally {
+    if (original === undefined) delete window.PacificEducationAchievementDistributionEngine;
+    else window.PacificEducationAchievementDistributionEngine = original;
+  }
+});
