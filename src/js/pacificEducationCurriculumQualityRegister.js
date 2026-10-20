@@ -215,6 +215,17 @@
     ]);
     var suggestion = makeField(form, "Suggested action for review", "textarea", "suggestion");
     suggestion.placeholder = "Proposed daily activity or curriculum review question; not an official indicator.";
+    recordType.addEventListener("change", function () {
+      if (safeText(suggestion.value)) return;
+      var country = currentCountry();
+      if (recordType.value === "REPEATED_INDICATOR") {
+        suggestion.value = "Compare the exact source wording and teaching sequence. Check whether this is intentional reinforcement or progression. Use recorded learner evidence: if mastery is demonstrated, avoid redundant teaching/testing while retaining the indicator; otherwise plan targeted reinforcement.";
+      } else if (recordType.value === "POSSIBLE_MISSING_INDICATOR") {
+        suggestion.value = "Proposed daily activity for " + country.name + ": identify the suspected skill, check the current official curriculum and related indicators, then draft an objective, teacher modelling, guided practice, independent practice, accessible response options, assessment and evidence fields. This is a proposal only; do not label it an official indicator until authorised verification.";
+      } else {
+        suggestion.value = "Proposed locally relevant daily activity for " + country.name + ": cite the verified country/community need, identify the learner skill to develop, provide instruction and guided/independent practice, include accessible response options and an assessment check, and record the evidence. Keep this supplementary until an authorised curriculum reviewer decides whether a formal indicator is needed.";
+      }
+    });
     var teacher = makeField(form, "Teacher / reporter (optional)", "text", "teacherName");
     var school = makeField(form, "School / institution (optional)", "text", "schoolName");
     panel.appendChild(form);
