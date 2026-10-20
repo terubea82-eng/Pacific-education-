@@ -177,8 +177,49 @@
     });
   }
 
+  function enhanceReviewQueue() {
+    var api = window.PacificEducationTeacherReview;
+    if (!api || typeof api.render !== "function" || api.__quickManualAnswerEnhanced) return;
+    var originalRender = api.render;
+    api.render = function () {
+      var result = originalRender.apply(this, arguments);
+      annotateManualLearners();
+      return result;
+    };
+    api.__quickManualAnswerEnhanced = true;
+  }
+
+  function annotateManualLearners() {
+    var root = document.getElementById("pacificEducationTeacherSubmissionQueue");
+    if (!root) return;
+    var all = read(RESPONSES_KEY, []);
+    if (!Array.isArray(all)) return;
+    var pending = all.map(function (item, index) {
+      item = item || {};
+      item.__quickIndex = index;
+      return item;
+    }).filter(function (item) {
+      return item.reviewStatus === "pending-teacher-review" || !item.reviewStatus;
+    }).slice(-25).reverse();
+    var cards = root.querySelectorAll("article");
+    for (var i = 0; i < cards.length && i < pending.length; i += 1) {
+      var item = pending[i];
+      if (!item.teacherEnteredAnswer || !item.learnerNameOrReference ||
+          cards[i].querySelector(".pe-quick-answer-learner")) continue;
+      var label = document.createElement("p");
+      label.className = "pe-quick-answer-learner";
+      var strong = document.createElement("strong");
+      strong.textContent = "Learner: ";
+      label.appendChild(strong);
+      label.appendChild(document.createTextNode(text(item.learnerNameOrReference)));
+      cards[i].insertBefore(label, cards[i].firstChild ? cards[i].firstChild.nextSibling : null);
+    }
+  }
+
   function init() {
+    enhanceReviewQueue();
     build();
+    annotateManualLearners();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
