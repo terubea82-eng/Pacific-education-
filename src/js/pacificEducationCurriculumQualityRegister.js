@@ -111,10 +111,12 @@
       var normalized = normalizeIndicatorText(wording);
       if (!level || !subject || !normalized || ["Term 1","Term 2","Term 3"].indexOf(term) < 0) return;
       var key = [level, subject, normalized].join("|");
-      if (!groups[key]) groups[key] = {key:key, level:level, subject:subject, normalized:normalized, indicatorText:wording, terms:[], indicatorIds:[], sourceTitles:[], sourceYears:[], sourcePages:[], sourceUrls:[]};
+      if (!groups[key]) groups[key] = {key:key, level:level, subject:subject, normalized:normalized, indicatorText:wording, terms:[], indicatorIds:[], idsByTerm:Object.create(null), sourceTitles:[], sourceYears:[], sourcePages:[], sourceUrls:[]};
       var group = groups[key];
       if (group.terms.indexOf(term) < 0) group.terms.push(term);
+      if (!group.idsByTerm[term]) group.idsByTerm[term] = [];
       if (item.id && group.indicatorIds.indexOf(String(item.id)) < 0) group.indicatorIds.push(String(item.id));
+      if (item.id && group.idsByTerm[term].indexOf(String(item.id)) < 0) group.idsByTerm[term].push(String(item.id));
       var sourceTitle = t(item.sourceDocument || item.sourceTitle || item.sourceId);
       var sourceYear = t(item.sourceYear || (item.source && item.source.year));
       var sourcePage = t(item.sourcePage || item.page || item.sourceLocation);
@@ -131,7 +133,7 @@
     }).map(function (group) {
       group.terms.sort(function(a,b){return a.localeCompare(b);});
       group.scanKey = "repeat:" + [group.level, group.subject, group.normalized].join("|");
-      group.occurrences = group.terms.map(function(term){return term + ": " + group.indicatorIds.join(", ");}).join("; ");
+      group.occurrences = group.terms.map(function(term){return term + ": " + (group.idsByTerm[term] || []).join(", ");}).join("; ");
       return group;
     }).sort(function(a,b){
       return (a.level + "|" + a.subject + "|" + a.indicatorText).localeCompare(b.level + "|" + b.subject + "|" + b.indicatorText);
