@@ -2,62 +2,31 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Role and privilege fields are not client-managed profile data.
-    // Authoritative role assignment must be performed by a trusted server/admin path.
-    function containsPrivilegedProfileFields(data) {
-      return data.keys().hasAny([
-        'role',
-        'roles',
-        'permissions',
-        'isAdmin',
-        'admin',
-        'owner',
-        'technician',
-        'teacher',
-        'institutionAdmin',
-        'institution-admin',
-        'accessLevel',
-        'accountType',
-        'userType',
-        'isOwner',
-        'isTechnician',
-        'isTeacher',
-        'isGuardian',
-        'isStudent',
-        'claims'
-      ]);
-    }
-
+    // Client-managed profile fields are explicitly allowlisted.
+    // Role/permission assignment belongs to a trusted server/admin path.
     match /users/{userId} {
       allow read: if request.auth != null
         && request.auth.uid == userId;
 
       allow create: if request.auth != null
         && request.auth.uid == userId
-        && !containsPrivilegedProfileFields(request.resource.data);
+        && request.resource.data.keys().hasOnly([
+          'displayName',
+          'preferredLanguage',
+          'country',
+          'language',
+          'createdAt',
+          'updatedAt'
+        ]);
 
       allow update: if request.auth != null
         && request.auth.uid == userId
-        && !request.resource.data.diff(resource.data).affectedKeys().hasAny([
-          'role',
-          'roles',
-          'permissions',
-          'isAdmin',
-          'admin',
-          'owner',
-          'technician',
-          'teacher',
-          'institutionAdmin',
-          'institution-admin',
-          'accessLevel',
-          'accountType',
-          'userType',
-          'isOwner',
-          'isTechnician',
-          'isTeacher',
-          'isGuardian',
-          'isStudent',
-          'claims'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'displayName',
+          'preferredLanguage',
+          'country',
+          'language',
+          'updatedAt'
         ]);
 
       allow delete: if false;
