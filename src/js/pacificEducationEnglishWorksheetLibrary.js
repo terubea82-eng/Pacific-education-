@@ -83,10 +83,70 @@
       topic: "Baseline observation (not a pass/fail exam)",
       instructions: "Teacher: use this short diagnostic to identify the learner's current demonstrated skills. Offer accessible response modes and record evidence, not assumptions. Do not assign a permanent level from one task. Mark each item: independent / with support / not yet demonstrated / not observed.",
       tasks: tasks,
+      questionPlan: questionPlan,
       responseLines: 2,
       teacherCheck: "Record observed strengths, support used, items not observed, and the next teaching step. Missing or unclear evidence remains pending; do not infer mastery.",
       differentiationNote: "Use speech, sign, pointing, selection, drawing, tactile materials, large print, keyboard, or approved screen-reader/communication support as appropriate."
     };
+  }
+  function questionPlanFor(level, ability, topic) {
+    var stage = stageFor(classNumber(level));
+    var counts = {
+      early: { support: 4, developing: 5, expected: 6, extension: 6 },
+      foundation: { support: 5, developing: 6, expected: 8, extension: 9 },
+      middle: { support: 6, developing: 8, expected: 10, extension: 12 },
+      "junior-secondary": { support: 8, developing: 10, expected: 12, extension: 15 },
+      senior: { support: 10, developing: 12, expected: 15, extension: 18 }
+    };
+    var t = String(topic || "").toLowerCase();
+    var types;
+    if (/sound|letter|phonics/.test(t)) {
+      types = stage === "early"
+        ? ["listen-and-identify", "picture-match", "oral-response", "letter-or-sound-choice"]
+        : ["multiple-choice", "matching", "fill-in-the-blank", "read-aloud-or-decode", "short-answer"];
+    } else if (/sentence|describing|grammar|paragraph|punctuation/.test(t)) {
+      types = stage === "early"
+        ? ["picture-choice", "sentence-frame", "oral-response", "sequence"]
+        : ["multiple-choice", "fill-in-the-blank", "sentence-correction", "matching", "short-writing"];
+    } else if (/reading|question|vocabulary|review/.test(t)) {
+      types = stage === "early"
+        ? ["listen-and-identify", "picture-choice", "sequence", "oral-response"]
+        : ["multiple-choice", "short-answer", "sequence", "vocabulary-in-context", "evidence-or-inference"];
+    } else {
+      types = stage === "early"
+        ? ["picture-choice", "matching", "oral-response", "sequence"]
+        : ["multiple-choice", "matching", "fill-in-the-blank", "short-answer", "short-writing"];
+    }
+    if (stage === "junior-secondary" || stage === "senior") {
+      types = types.concat(["evidence-or-inference", "editing", "extended-response"]);
+    }
+    var count = counts[stage][ability] || counts.foundation.developing;
+    var questions = [];
+    var stems = {
+      "listen-and-identify": "Listen to the prompt and identify the named sound, word, or idea.",
+      "picture-match": "Match the word or spoken prompt to the correct picture or object.",
+      "picture-choice": "Choose or indicate the picture that best matches the prompt.",
+      "oral-response": "Say, sign, point to, or otherwise communicate one answer.",
+      "letter-or-sound-choice": "Choose or identify the letter or sound heard or shown.",
+      "multiple-choice": "Choose the best answer from the options provided by the teacher.",
+      "matching": "Match each word, meaning, example, or detail to its pair.",
+      "fill-in-the-blank": "Complete the sentence using a suitable word from the word bank or your own vocabulary.",
+      "read-aloud-or-decode": "Read, listen to, or decode the selected word or short sentence.",
+      "short-answer": "Answer the question in a word, phrase, sentence, or accessible response mode.",
+      "sentence-correction": "Correct the sentence and explain or show one change.",
+      "short-writing": "Write or dictate a sentence that uses the day's learning.",
+      "sequence": "Put the words, steps, or events in the correct order.",
+      "vocabulary-in-context": "Use the surrounding words or context to explain the meaning of a word.",
+      "evidence-or-inference": "Give an inference or answer and identify the text detail that supports it.",
+      "editing": "Edit the example for grammar, punctuation, spelling, or clarity.",
+      "extended-response": "Write a longer response with a clear idea and supporting details."
+    };
+    for (var i = 0; i < count; i += 1) {
+      var type = types[i % types.length];
+      questions.push({ number: i + 1, type: type, prompt: stems[type] });
+    }
+    return { count: count, types: types.slice(), questions: questions,
+      note: "Question types are a starting plan based on class stage and topic. Teacher must match them to the verified daily Fiji English achievement indicator before use." };
   }
   function makeWorksheet(level, ability, day) {
     level = LEVELS.indexOf(String(level)) >= 0 ? String(level) : "Class 1";
@@ -100,6 +160,7 @@
       return baseline;
     }
     var n = classNumber(level), stage = stageFor(n), topic = topicFor(day), tasks = [];
+    var questionPlan = questionPlanFor(level, ability, topic);
     var abilityPrefix = {
       support: "SUPPORTED START: use a teacher model, word bank, picture/object cue, sentence frame, or worked example. ",
       developing: "DEVELOPING: try independently first; use one hint or a word bank if needed. ",
@@ -218,6 +279,16 @@
       node("p", "Instructions: " + studentSheet.instructions, sheet);
       var list = node("ol", null, sheet);
       studentSheet.tasks.forEach(function (task) { node("li", task, list).style.marginBottom = "14px"; });
+      if (studentSheet.questionPlan && studentSheet.questionPlan.questions) {
+        node("h3", "Daily questions (" + studentSheet.questionPlan.count + ")", sheet);
+        node("p", "Question types: " + studentSheet.questionPlan.types.join(", ").replace(/-/g, " "), sheet);
+        var questions = node("ol", null, sheet);
+        studentSheet.questionPlan.questions.forEach(function (question) {
+          var item = node("li", question.prompt, questions);
+          item.style.marginBottom = "10px";
+          node("p", "Answer: __________________________________________________________", item);
+        });
+      }
       for (var i = 0; i < studentSheet.responseLines; i += 1) node("p", "________________________________________________________________", sheet).style.margin = "16px 0";
       node("p", "I tried the tasks:  □ Yes   □ I need help with: ______________________________", sheet);
       var guide = node("aside", null, preview); guide.id = "paceduEnglishTeacherGuide";
@@ -267,6 +338,7 @@
     version: "1.0.0",
     levels: LEVELS.slice(),
     abilities: ABILITIES.map(function (a) { return { id:a[0], label:a[1] }; }),
-    getWorksheet: makeWorksheet
+    getWorksheet: makeWorksheet,
+    getQuestionPlan: questionPlanFor
   });
 })(window, document);
