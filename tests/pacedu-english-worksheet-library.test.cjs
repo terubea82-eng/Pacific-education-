@@ -53,6 +53,9 @@ test("Day 1 always generates an initial ability check rather than a teaching wor
     assert.match(worksheet.title, /Initial Ability Check/);
     assert.match(worksheet.instructions, /not a pass\/fail exam/i);
     assert.match(worksheet.teacherCheck, /Missing or unclear evidence remains pending/i);
+    assert.equal(worksheet.questionPlan.count, worksheet.tasks.length);
+    assert.equal(worksheet.questionPlan.questions.length, worksheet.tasks.length);
+    assert.ok(worksheet.questionPlan.questions.every((q, i) => q.number === i + 1 && q.prompt.length > 10));
   }
 });
 

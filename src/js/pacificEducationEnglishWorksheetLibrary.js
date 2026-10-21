@@ -83,7 +83,14 @@
       topic: "Baseline observation (not a pass/fail exam)",
       instructions: "Teacher: use this short diagnostic to identify the learner's current demonstrated skills. Offer accessible response modes and record evidence, not assumptions. Do not assign a permanent level from one task. Mark each item: independent / with support / not yet demonstrated / not observed.",
       tasks: tasks,
-      questionPlan: questionPlan,
+      questionPlan: {
+        count: tasks.length,
+        types: ["initial-observation"],
+        questions: tasks.map(function (task, index) {
+          return { number: index + 1, type: "initial-observation", prompt: task, topic: "Baseline observation", thinkingFocus: "observe-and-record" };
+        }),
+        note: "Initial ability check: record evidence only; this is not a scored question plan."
+      },
       responseLines: 2,
       teacherCheck: "Record observed strengths, support used, items not observed, and the next teaching step. Missing or unclear evidence remains pending; do not infer mastery.",
       differentiationNote: "Use speech, sign, pointing, selection, drawing, tactile materials, large print, keyboard, or approved screen-reader/communication support as appropriate."
