@@ -929,7 +929,10 @@ git status</pre>
     save.onclick=function(){
       var n=name.value.trim(), r=role.value;
       if(!r){status.textContent="Choose your user role first.";return;}
-      if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
+      var registrationCountry=document.getElementById("pacificEducationCountrySelect");
+      var countryCodeForName=String(registrationCountry&&registrationCountry.value||"");
+      var anonymousLearnerAllowed=isLearner(r)&&countryCodeForName!== "FJ";
+      if(!n&&!anonymousLearnerAllowed){status.textContent="Enter a name, or use the pending school-verification route if the required learner identity is unavailable.";name.focus();return;}
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
         status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
@@ -959,12 +962,9 @@ git status</pre>
         var pendingVerification=!!(pendingId&&pendingId.checked);
         if(isLearnerRole&&countryCode==="FJ"&&!enteredLearnerId&&!pendingVerification){
           status.textContent="Fiji student registration requires the correct FEMIS registration ID. If you cannot provide it yet, select the pending school-verification option.";
-          if(learnerId)learnerId.focus();
-          return;
-        }
-        if(isLearnerRole&&countryCode==="FJ"&&enteredLearnerId&&!pendingVerification){
-          status.textContent="The FEMIS ID has been entered but cannot be verified by this pilot form. Continue only through the pending school-verification route; do not treat the ID as confirmed.";
           if(identityStatus)identityStatus.textContent=status.textContent;
+          if(learnerId)learnerId.focus();
+          if(event){event.preventDefault();event.stopImmediatePropagation();}
           return;
         }
         try{
@@ -978,7 +978,8 @@ git status</pre>
         if(!r){status.textContent="Choose your user role first.";return;}
         if(!n){status.textContent="Enter a name or test name.";return;}
         try{
-          sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:countryCode,languageCode:languageCode,identityStatus:isLearnerRole?(countryCode==="FJ"?"pending-authorized-FEMIS-verification":(enteredLearnerId?"pending-authorized-local-ID-verification":"school-approved-reference-needed")):"not-applicable",identityPending:!!(isLearnerRole&&(countryCode==="FJ"||enteredLearnerId||pendingVerification)),learnerIdStored:false}));
+          var learnerRef=isLearnerRole&&countryCode!=="FJ"&&!enteredLearnerId?"PILOT-LEARNER-"+Date.now().toString(36).toUpperCase()+"-"+Math.random().toString(36).slice(2,7).toUpperCase():"";
+          sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:countryCode,languageCode:languageCode,identityStatus:isLearnerRole?(countryCode==="FJ"?"pending-authorized-FEMIS-verification":(enteredLearnerId?"pending-authorized-local-ID-verification":"pilot-reference-pending-school-approval")):"not-applicable",identityPending:!!(isLearnerRole&&(countryCode==="FJ"||enteredLearnerId||pendingVerification)),learnerReference:learnerRef,learnerIdStored:false}));
           sessionStorage.setItem("pacificEducationPilotRole",r);
           status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
         }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
@@ -994,7 +995,7 @@ git status</pre>
     if(country&&!country.getAttribute("data-pe-learner-id-bound")){
       country.setAttribute("data-pe-learner-id-bound","true");
       country.addEventListener("change",function(){
-        if(learnerId){learnerId.value="";learnerId.required=country.value==="FJ"&&isLearner(role&&role.value);}
+        if(learnerId){learnerId.value="";learnerId.required=country.value==="FJ"&&/^(student|blind learner|deaf learner)$/i.test(String(role&&role.value||"").trim());}
         if(pending)pending.checked=false;
         var label=document.getElementById("pilotLearnerOfficialIdLabel");
         if(label)label.textContent=country.value==="FJ"?"Fiji FEMIS registration ID (required)":"Official student registration ID (if required by your country/school)";
@@ -1004,7 +1005,7 @@ git status</pre>
     if(pending&&!pending.getAttribute("data-pe-pending-bound")){
       pending.setAttribute("data-pe-pending-bound","true");
       pending.addEventListener("change",function(){
-        if(learnerId)learnerId.required=!!(country&&country.value==="FJ"&&isLearner(role&&role.value)&&!pending.checked);
+        if(learnerId)learnerId.required=!!(country&&country.value==="FJ"&&/^(student|blind learner|deaf learner)$/i.test(String(role&&role.value||"").trim())&&!pending.checked);
         if(status)status.textContent=pending.checked?"Pending school verification requested. No ID is verified or stored by this pilot form.":"Enter the required learner ID, or request pending school verification if unavailable.";
       });
     }
