@@ -1091,6 +1091,10 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
     await page.locator("#registrationNextButton").click(); // confirm role and open the name step
     await page.locator("#pilotRegistrationName").fill("Role Pilot Test");
+    if (["Student", "Blind Learner", "Deaf Learner"].includes(role)) {
+      // FEMIS verification is not connected in the pilot; use the explicit pending route.
+      await page.locator("#pilotLearnerPendingVerification").check();
+    }
     const save = page.locator("#pilotRegistrationSaveButton");
     const next = page.locator("#registrationNextButton");
     await expect(save).toBeEnabled();
@@ -1150,7 +1154,11 @@ test("save confirmation then Next opens the selected role workspace for every re
       await nextStep.click();
       await expect(title).toContainText("My Progress");
       await nextStep.click();
-      await expect(title).toContainText("Day 2 of 365");
+      // The calendar guard must prevent the learner from opening the next
+      // numbered day by repeatedly pressing Next. The current learning cycle
+      // remains on the progress page until the next scheduled learning day.
+      await expect(title).toContainText("My Progress");
+      await expect(nextStep).toBeDisabled();
     }
   }
 });
@@ -1355,4 +1363,26 @@ test("registration save keeps Page 4 visible until Next, then recovers the role 
   await page.waitForTimeout(1400);
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   expect(pageErrors, "registration-to-workspace handoff must not throw uncaught errors").toEqual([]);
+});
+
+
+test("Teacher Review Comment box is visible and submits a pending pilot review", async ({ page }) => {
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSequentialRoleWorkspaces?.build), { timeout: 10000 }).toBe("function");
+  await expect.poll(() => page.evaluate(() => typeof window.submitPacificEducationDashboardReviewComment), { timeout: 10000 }).toBe("function");
+  await page.evaluate(() => window.PacificEducationSequentialRoleWorkspaces.build("teacher"));
+
+  const section = page.locator("#pacificEducationDashboardReviewCommentSection");
+  const input = page.locator("#pacificEducationDashboardReviewComment");
+  const status = page.locator("#pacificEducationDashboardReviewCommentStatus");
+  await expect(section).toBeVisible();
+  await expect(input).toBeEnabled();
+  await input.fill("Pilot review activation test: teacher feedback submission works.");
+  await section.getByRole("button", { name: "Submit Review Comment", exact: true }).click();
+  await expect(status).toContainText("saved to the pilot review queue");
+  await expect(input).toHaveValue("");
+
+  const queue = await page.evaluate(() => JSON.parse(localStorage.getItem("pacificEducationGuardianReviewQueue") || "[]"));
+  expect(queue.some(item => item.comment === "Pilot review activation test: teacher feedback submission works." &&
+    item.status === "PENDING_GUARDIAN_REVIEW" && item.productionReady === false)).toBe(true);
 });

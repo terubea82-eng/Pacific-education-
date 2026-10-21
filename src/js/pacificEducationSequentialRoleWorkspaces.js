@@ -652,7 +652,24 @@
     var index=0;
     if(hear) hear.onclick=function(){ var item=sequence[index]; speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this page, then press Next."); };
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
-    var dailyDay=1;
+    var dailyDay=(function(){
+      /* Date-driven learning day comes from the teacher-configured calendar.
+         Without a schedule, retain the existing assigned day but never invent a calendar date. */
+      try{
+        var calendar=window.PacEduStudentLearningCalendar;
+        if(calendar && typeof calendar.dayNumberFor==="function" && typeof calendar.readSchedule==="function"){
+          var schedule=calendar.readSchedule();
+          if(schedule){
+            var now=new Date();
+            var today=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
+            var calculated=calendar.dayNumberFor(today,schedule);
+            if(calculated) return calculated;
+          }
+        }
+        var assigned=Number(window.localStorage.getItem("currentDayNumber")||1);
+        return Number.isFinite(assigned)&&assigned>=1&&assigned<=365?Math.floor(assigned):1;
+      }catch(e){return 1;}
+    })();
 
     function studentDailySubject(){
       var fallbackSelect=page && page.querySelector ? page.querySelector("#peStudentDailySubject") : null;
@@ -1411,7 +1428,23 @@
         /* Complete the full daily cycle before advancing to the next day.
            Curriculum Coverage and My Progress are required parts of every day. */
         if(sequence[index][0]==="pacificEducationStudentProgressDashboard" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
-          if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
+          /* Learners must not unlock future numbered activities by tapping Next.
+             The teacher calendar determines the date/day; a new learning day appears
+             when its configured school date arrives. */
+          var calendar=window.PacEduStudentLearningCalendar;
+          var schedule=null;
+          try{schedule=calendar&&typeof calendar.readSchedule==="function"?calendar.readSchedule():null;}catch(e){}
+          if(schedule){
+            status.textContent="Today's learning cycle is complete. Your next numbered activity will unlock automatically on the next scheduled learning day. Weekend and holiday work remains separate.";
+            next.disabled=true;
+            next.textContent="Today's Learning Complete";
+            speak("Today's learning cycle is complete. Your next numbered activity will unlock on the next scheduled learning day.");
+            return;
+          }
+          status.textContent="Today's learning cycle is complete. Ask your teacher to configure the learning calendar before opening another numbered day.";
+          next.disabled=true;
+          next.textContent="Learning Calendar Required";
+          return;
         }
         index++;
         try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
