@@ -1154,7 +1154,11 @@ test("save confirmation then Next opens the selected role workspace for every re
       await nextStep.click();
       await expect(title).toContainText("My Progress");
       await nextStep.click();
-      await expect(title).toContainText("Day 2 of 365");
+      // The calendar guard must prevent the learner from opening the next
+      // numbered day by repeatedly pressing Next. The current learning cycle
+      // remains on the progress page until the next scheduled learning day.
+      await expect(title).toContainText("My Progress");
+      await expect(nextStep).toBeDisabled();
     }
   }
 });
