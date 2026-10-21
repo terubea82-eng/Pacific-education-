@@ -187,10 +187,14 @@
       var chosenDay = Math.max(1, Math.min(365, Math.floor(Number(day.value) || 1)));
       day.value = String(chosenDay);
       currentContext = readContext(chosenDay, chosenLevel, chosenSubject);
-      var activity = getActivity(currentContext);
       content.textContent = "";
       generated = "";
       print.disabled = true; download.disabled = true;
+      if (!chosenLevel) {
+        status.textContent = "Select a class / level before loading matching plans. No plan was generated because the class context is missing.";
+        return;
+      }
+      var activity = getActivity(currentContext);
       if (!activity) {
         status.textContent = "The existing daily activity generator is unavailable. No unmatched plan was created.";
         return;
