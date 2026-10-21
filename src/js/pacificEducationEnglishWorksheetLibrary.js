@@ -265,6 +265,36 @@
     var levelOptions = LEVELS.map(function (v) { return [v, v]; });
     var levelSelect = addSelect(panel, "Class / level", "paceduEnglishWorksheetLevel", levelOptions, levelDefault);
     var abilitySelect = addSelect(panel, "Ability (choose from observed evidence)", [["initial-assessment","Day 1 initial ability check"],["support","Supported start"],["developing","Developing"],["expected","Working at current class goal"],["extension","Extension / deeper challenge"]], "paceduEnglishWorksheetAbility", "developing");
+    /* Defensive recovery: some embedded/mobile browsers or prior page scripts can
+       leave a select visible but with its options removed. Keep this control
+       self-contained; ability bands are explicit teacher choices, not a roster
+       lookup, and must remain available offline. */
+    var abilityChoices = [
+      ["initial-assessment", "Day 1 initial ability check"],
+      ["support", "Supported start"],
+      ["developing", "Developing"],
+      ["expected", "Working at current class goal"],
+      ["extension", "Extension / deeper challenge"]
+    ];
+    if (!abilitySelect || !abilitySelect.options || abilitySelect.options.length !== abilityChoices.length) {
+      if (abilitySelect) {
+        abilitySelect.textContent = "";
+        abilityChoices.forEach(function (choice) {
+          var option = document.createElement("option");
+          option.value = choice[0];
+          option.textContent = choice[1];
+          abilitySelect.appendChild(option);
+        });
+      }
+    }
+    if (abilitySelect) {
+      abilitySelect.setAttribute("aria-label", "Ability level chosen from observed learner evidence");
+      abilitySelect.setAttribute("required", "required");
+      abilitySelect.style.cssText = "display:block!important;visibility:visible!important;position:relative;width:100%;min-height:46px;box-sizing:border-box;padding:10px;margin-top:4px;font:inherit;color:#111;background:#fff;border:2px solid #2563eb;border-radius:6px;opacity:1;";
+      abilitySelect.value = "developing";
+      if (abilitySelect.value !== "developing") abilitySelect.selectedIndex = 2;
+    }
+
     var dayLabel = node("label", "Teaching day (1–365)", panel);
     dayLabel.style.cssText = "display:block;margin:8px 0;font-weight:600;";
     var dayInput = node("input", null, dayLabel); dayInput.id = "paceduEnglishWorksheetDay"; dayInput.type = "number"; dayInput.min = "1"; dayInput.max = "365"; dayInput.step = "1";
