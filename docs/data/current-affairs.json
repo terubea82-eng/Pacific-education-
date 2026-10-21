@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-16T07:08:54.180Z",
+  "generatedAt": "2026-10-21T07:39:03.887Z",
   "source": "Official UNESCO-UNEVOC, WHO and UN News RSS/Atom feeds",
   "items": [
     {
@@ -65,6 +65,29 @@
       "ageSuitability": "Teacher/reviewer screening required before student use.",
       "subjectsApplicable": [
         "Social Science"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-3f409a5d27f5d39ab0022e70",
+      "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
+      "url": "https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response",
+      "source": "WHO",
+      "publishedAt": "2026-10-10T07:49:45.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "English",
+        "Mathematics",
+        "Science",
+        "Health Science",
+        "Social Science",
+        "Geography",
+        "History"
       ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -359,23 +382,6 @@
       "subjectsApplicable": [
         "Social Science",
         "History"
-      ],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-4e13042273167f8dcd18cdcb",
-      "title": "UN leads call to prepare ‘for when digital systems fail’",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167445",
-      "source": "UN News",
-      "publishedAt": "2026-05-05T12:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [
-        "Computer Studies"
       ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
