@@ -24,6 +24,7 @@ test("English worksheets are available for ECE, Kindergarten and Classes 1–13"
     assert.equal(worksheet.day, 2);
     assert.ok(worksheet.title.includes(level));
     assert.ok(worksheet.tasks.length >= 4);
+    assert.ok(worksheet.readingText && worksheet.readingText.length > 20, "worksheet should include its own reading passage");
     assert.ok(worksheet.teacherCheck.length > 20);
     assert.match(worksheet.status, /PENDING_TEACHER_REVIEW/);
     assert.match(worksheet.sourceNote, /verify/i);
