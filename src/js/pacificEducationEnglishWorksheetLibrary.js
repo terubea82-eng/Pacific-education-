@@ -37,6 +37,14 @@
   function topicFor(day) {
     return TOPICS[(Math.max(2, day) - 2) % TOPICS.length];
   }
+  function passageFor(stage, topic, day) {
+    var topicLabel = String(topic || "our learning").replace(/[<>]/g, "");
+    if (stage === "early") return "A child sees " + (day % 2 ? "a red ball" : "a small cat") + ". The child points and says, “I can see it.” We take turns and listen.";
+    if (stage === "foundation") return "Lani and Jo are learning about " + topicLabel.toLowerCase() + ". They read the words carefully. Jo asks a question, and Lani gives an answer. They check the sentence together.";
+    if (stage === "middle") return "Our class explored " + topicLabel.toLowerCase() + " through a short activity. Each learner shared an observation and listened to another idea. The class compared details before writing a clear explanation. They reviewed their work and improved one sentence after feedback.";
+    if (stage === "junior-secondary") return "A school group investigated " + topicLabel.toLowerCase() + " by gathering examples and comparing different viewpoints. The learners recorded the details that supported their conclusions, then discussed which evidence was most useful. They revised their first explanations when new information changed their understanding. Their final report distinguished observations from opinions.";
+    return "A student team examined " + topicLabel.toLowerCase() + " and considered how language shapes the way readers understand an issue. They compared the author's central claim with the evidence provided, noting both useful details and unanswered questions. During peer review, the team identified an unsupported generalisation and replaced it with a more precise statement. Their final response explained the reasoning behind each revision and acknowledged an alternative interpretation.";
+  }
   function dayOneAssessment(level) {
     var n = classNumber(level), stage = stageFor(n);
     var tasks;
@@ -137,6 +145,7 @@
     return {
       title: "Day " + day + " — English Worksheet — " + level + " — " + labelAbility(ability),
       topic: topic,
+      readingText: passageFor(stage, topic, day),
       level: level, ability: ability, day: day,
       instructions: "Student: try each task. You may answer in an accessible way agreed with your teacher. Ask for clarification if needed. This is practice, not a formal examination.",
       tasks: tasks,
@@ -202,6 +211,10 @@
       node("h2", studentSheet.title, sheet);
       node("p", "Name: __________________________________    Date: __________________", sheet);
       node("p", "Topic: " + studentSheet.topic, sheet);
+      if (studentSheet.readingText) {
+        node("h3", "Read / listen to the passage", sheet);
+        node("p", studentSheet.readingText, sheet).style.cssText = "padding:12px;border:1px solid #999;line-height:1.6;";
+      }
       node("p", "Instructions: " + studentSheet.instructions, sheet);
       var list = node("ol", null, sheet);
       studentSheet.tasks.forEach(function (task) { node("li", task, list).style.marginBottom = "14px"; });
