@@ -981,7 +981,7 @@ git status</pre>
           var learnerRef=isLearnerRole&&countryCode!=="FJ"&&!enteredLearnerId?"PILOT-LEARNER-"+Date.now().toString(36).toUpperCase()+"-"+Math.random().toString(36).slice(2,7).toUpperCase():"";
           sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:countryCode,languageCode:languageCode,identityStatus:isLearnerRole?(countryCode==="FJ"?"pending-authorized-FEMIS-verification":(enteredLearnerId?"pending-authorized-local-ID-verification":"pilot-reference-pending-school-approval")):"not-applicable",identityPending:!!(isLearnerRole&&(countryCode==="FJ"||enteredLearnerId||pendingVerification)),learnerReference:learnerRef,learnerIdStored:false}));
           sessionStorage.setItem("pacificEducationPilotRole",r);
-          status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
+          status.textContent=isLearnerRole&&countryCode==="FJ"?"Pilot registration saved for "+r+". FEMIS identity is pending authorized school verification; the ID number was not stored. Press Next to continue learning.":"Pilot registration saved for "+r+". Learner identity remains subject to the applicable school/country verification process. Press Next to open the "+r+" Workspace.";
         }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
       },true);
     }
