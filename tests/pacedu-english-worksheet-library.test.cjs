@@ -4,8 +4,12 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 
 const source = fs.readFileSync("src/js/pacificEducationEnglishWorksheetLibrary.js", "utf8");
+const stored = new Map();
 const window = {
-  localStorage: { getItem() { return null; } },
+  localStorage: {
+    getItem(key) { return stored.has(key) ? stored.get(key) : null; },
+    setItem(key, value) { stored.set(key, String(value)); }
+  },
   PacificEducationRoleActivityPacks: Object.freeze({
     getActivity() { return null; },
     getStudentActivity() { return null; },
@@ -90,4 +94,30 @@ test("daily question count and question types adapt to class stage and demonstra
   assert.ok(earlySupport.questionPlan.types.some(type => /picture|listen|oral/.test(type)));
   assert.ok(middleGoal.questionPlan.types.includes("multiple-choice"));
   assert.ok(seniorExtension.questionPlan.types.includes("evidence-or-inference"));
+});
+
+test("retrieves the class-specific saved capability and maps it to a worksheet band", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-7"; } };
+  stored.set("pacificEducationCapability:class-7", "advanced");
+  stored.set("pacificEducationCapability", "remedial");
+  assert.deepEqual(library.getStoredAbility(), { ability: "extension", source: "class assessment", capability: "advanced" });
+
+  stored.set("pacificEducationCapability:class-7", "remedial");
+  assert.equal(library.getStoredAbility().ability, "support");
+  assert.equal(library.getStoredAbility().source, "class assessment");
+});
+
+test("uses the saved global capability when no class-specific result exists", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-8"; } };
+  stored.set("pacificEducationCapability", "expected");
+  assert.deepEqual(library.getStoredAbility(), { ability: "expected", source: "saved learning capability", capability: "expected" });
+});
+
+test("does not silently force Developing when a saved worksheet choice is the only available category", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = null;
+  stored.set("paceduEnglishWorksheetAbility", "extension");
+  assert.deepEqual(library.getStoredAbility(), { ability: "extension", source: "saved worksheet choice", capability: "" });
 });
