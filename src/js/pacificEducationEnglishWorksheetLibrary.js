@@ -260,6 +260,38 @@
     });
     return select;
   }
+  function storedWorksheetAbility() {
+    var capability = "", source = "no saved capability";
+    try {
+      var roster = global.PacificEducationTeacherClassRosterContext;
+      var classId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
+      if (classId) {
+        capability = String(global.localStorage.getItem("pacificEducationCapability:" + classId) || "").toLowerCase();
+        if (capability) source = "class assessment";
+      }
+      if (!capability) {
+        capability = String(global.localStorage.getItem("pacificEducationCapability") || "").toLowerCase();
+        if (capability) source = "saved learning capability";
+      }
+    } catch (e) {}
+    var mapped = {
+      support: "support",
+      foundation: "support",
+      remedial: "support",
+      developing: "developing",
+      expected: "expected",
+      advanced: "extension",
+      extension: "extension"
+    }[capability];
+    if (mapped) return { ability: mapped, source: source, capability: capability };
+    try {
+      var saved = String(global.localStorage.getItem("paceduEnglishWorksheetAbility") || "").toLowerCase();
+      if (["support", "developing", "expected", "extension"].indexOf(saved) >= 0) {
+        return { ability: saved, source: "saved worksheet choice", capability: "" };
+      }
+    } catch (e) {}
+    return { ability: "developing", source: "default; no saved category found", capability: "" };
+  }
   function addTeacherPanel(card) {
     if (!card || card.querySelector("#paceduEnglishWorksheetBuilder")) return;
     var panel = node("section", null, card);
@@ -271,7 +303,8 @@
     if (LEVELS.indexOf(levelDefault) < 0) levelDefault = "Class 1";
     var levelOptions = LEVELS.map(function (v) { return [v, v]; });
     var levelSelect = addSelect(panel, "Class / level", "paceduEnglishWorksheetLevel", levelOptions, levelDefault);
-    var abilitySelect = addSelect(panel, "Ability (choose from observed evidence)", [["initial-assessment","Day 1 initial ability check"],["support","Supported start"],["developing","Developing"],["expected","Working at current class goal"],["extension","Extension / deeper challenge"]], "paceduEnglishWorksheetAbility", "developing");
+    var retrievedAbility = storedWorksheetAbility();
+    var abilitySelect = addSelect(panel, "Ability (choose from observed evidence)", [["initial-assessment","Day 1 initial ability check"],["support","Supported start"],["developing","Developing"],["expected","Working at current class goal"],["extension","Extension / deeper challenge"]], "paceduEnglishWorksheetAbility", retrievedAbility.ability);
     /* Defensive recovery: some embedded/mobile browsers or prior page scripts can
        leave a select visible but with its options removed. Keep this control
        self-contained; ability bands are explicit teacher choices, not a roster
@@ -295,12 +328,15 @@
       }
     }
     if (abilitySelect) {
-      abilitySelect.setAttribute("aria-label", "Ability level chosen from observed learner evidence");
+      abilitySelect.setAttribute("aria-label", "Ability level retrieved from saved learning evidence; teacher may adjust");
       abilitySelect.setAttribute("required", "required");
       abilitySelect.style.cssText = "display:block!important;visibility:visible!important;position:relative;width:100%;min-height:46px;box-sizing:border-box;padding:10px;margin-top:4px;font:inherit;color:#111;background:#fff;border:2px solid #2563eb;border-radius:6px;opacity:1;";
-      abilitySelect.value = "developing";
-      if (abilitySelect.value !== "developing") abilitySelect.selectedIndex = 2;
     }
+    var abilityStatus = node("p", "Retrieved category: " + labelAbility(retrievedAbility.ability) + " (" + retrievedAbility.source + "). Change it only when current learner evidence supports a different band.", panel);
+    abilityStatus.id = "paceduEnglishWorksheetAbilityStatus";
+    abilityStatus.setAttribute("role", "status");
+    abilityStatus.setAttribute("aria-live", "polite");
+    abilityStatus.style.cssText = "margin:6px 0;color:#374151;font-size:0.95em;";
 
     var dayLabel = node("label", "Teaching day (1–365)", panel);
     dayLabel.style.cssText = "display:block;margin:8px 0;font-weight:600;";
@@ -350,10 +386,23 @@
       node("p", studentSheet.sourceNote + " Status: " + studentSheet.status + ".", guide);
       printButton.disabled = false;
     }
+    if (Number(dayInput.value) === 1) abilitySelect.value = "initial-assessment";
+    abilitySelect.addEventListener("change", function () {
+      if (abilitySelect.value !== "initial-assessment") {
+        try { global.localStorage.setItem("paceduEnglishWorksheetAbility", abilitySelect.value); } catch (e) {}
+        abilityStatus.textContent = "Selected for this worksheet: " + labelAbility(abilitySelect.value) + ". Teacher choice; verify against current learner evidence.";
+      }
+    });
     previewButton.addEventListener("click", renderPreview);
     dayInput.addEventListener("change", function () {
-      if (Number(dayInput.value) === 1) abilitySelect.value = "initial-assessment";
-      else if (abilitySelect.value === "initial-assessment") abilitySelect.value = "developing";
+      if (Number(dayInput.value) === 1) {
+        abilitySelect.value = "initial-assessment";
+        abilityStatus.textContent = "Day 1 uses the initial ability check; it does not assume an ability category.";
+      } else if (abilitySelect.value === "initial-assessment") {
+        var currentAbility = storedWorksheetAbility();
+        abilitySelect.value = currentAbility.ability;
+        abilityStatus.textContent = "Retrieved category: " + labelAbility(currentAbility.ability) + " (" + currentAbility.source + ").";
+      }
     });
     printButton.addEventListener("click", function () {
       if (!studentSheet) renderPreview();
@@ -390,6 +439,7 @@
     levels: LEVELS.slice(),
     abilities: ABILITIES.map(function (a) { return { id:a[0], label:a[1] }; }),
     getWorksheet: makeWorksheet,
-    getQuestionPlan: questionPlanFor
+    getQuestionPlan: questionPlanFor,
+    getStoredAbility: storedWorksheetAbility
   });
 })(window, document);
