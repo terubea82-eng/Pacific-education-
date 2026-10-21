@@ -122,28 +122,42 @@
     }
     var count = counts[stage][ability] || counts.foundation.developing;
     var questions = [];
-    var stems = {
-      "listen-and-identify": "Listen to the prompt and identify the named sound, word, or idea.",
-      "picture-match": "Match the word or spoken prompt to the correct picture or object.",
-      "picture-choice": "Choose or indicate the picture that best matches the prompt.",
-      "oral-response": "Say, sign, point to, or otherwise communicate one answer.",
-      "letter-or-sound-choice": "Choose or identify the letter or sound heard or shown.",
-      "multiple-choice": "Choose the best answer from the options provided by the teacher.",
-      "matching": "Match each word, meaning, example, or detail to its pair.",
-      "fill-in-the-blank": "Complete the sentence using a suitable word from the word bank or your own vocabulary.",
-      "read-aloud-or-decode": "Read, listen to, or decode the selected word or short sentence.",
-      "short-answer": "Answer the question in a word, phrase, sentence, or accessible response mode.",
-      "sentence-correction": "Correct the sentence and explain or show one change.",
-      "short-writing": "Write or dictate a sentence that uses the day's learning.",
-      "sequence": "Put the words, steps, or events in the correct order.",
-      "vocabulary-in-context": "Use the surrounding words or context to explain the meaning of a word.",
-      "evidence-or-inference": "Give an inference or answer and identify the text detail that supports it.",
-      "editing": "Edit the example for grammar, punctuation, spelling, or clarity.",
-      "extended-response": "Write a longer response with a clear idea and supporting details."
+    if (stage !== "early") types = types.concat(["cause-and-effect", "prediction", "compare-and-choose"]);
+    if (stage === "junior-secondary" || stage === "senior") types = types.concat(["decision-and-justify", "source-check"]);
+    var prompts = {
+      "listen-and-identify": ["Listen. Which sound or word did you hear?", "Listen again. What clue helped you choose?"],
+      "picture-match": ["Match the word to the picture that fits best.", "What detail shows that your match is correct?"],
+      "picture-choice": ["Which picture best fits the prompt? What helped you decide?", "Choose the picture that does not fit. Explain with a word, sign, or point."],
+      "oral-response": ["Tell, sign, point to, or select one answer. How do you know?", "Give one reason for your choice in a way that works for you."],
+      "letter-or-sound-choice": ["Which letter or sound matches the example?", "Which other word starts or ends with the same sound?"],
+      "multiple-choice": ["Choose the best answer. Which clue makes it the best choice?", "Which option is correct, and why are one or two other options less suitable?"],
+      "matching": ["Match each item to its best partner. Explain one match.", "Find a pair that belongs together. What is the link?"],
+      "fill-in-the-blank": ["Complete the sentence so the meaning is clear.", "Choose a word that fits. How would the meaning change with a different word?"],
+      "read-aloud-or-decode": ["Read, listen to, or decode the word or sentence. What clue helped?", "Try the word in the sentence. Does it make sense? Explain or show why."],
+      "short-answer": ["What is the key idea? Give one detail that supports your answer.", "What can you work out from the information? Point to a clue."],
+      "sentence-correction": ["Correct the sentence so the reader understands it.", "Make the sentence clearer. Explain or show what you changed and why."],
+      "short-writing": ["Write one clear sentence to explain your idea.", "Write a sentence that gives a reason or solves the problem in the prompt."],
+      "sequence": ["Put the steps or events in order. What would go wrong if the order changed?", "What should happen next? Give a clue that supports your choice."],
+      "vocabulary-in-context": ["What does the word most likely mean here? Which nearby clue helps?", "Choose a similar word. Would it keep the same meaning in this sentence?"],
+      "evidence-or-inference": ["What can you infer? Give the exact detail that helped you decide.", "Which detail best supports your idea? Explain why another detail is weaker."],
+      "editing": ["Find and fix an error that affects meaning.", "Improve the sentence. Which change makes it clearer for the reader?"],
+      "extended-response": ["Explain your view with a reason and an example.", "Consider another view. Which idea is stronger, and what evidence supports it?"],
+      "cause-and-effect": ["What caused this? Which detail tells you?", "What may happen because of this action? Explain the link."],
+      "prediction": ["What do you think will happen next? Give one clue.", "If one detail changed, how might the outcome change?"],
+      "compare-and-choose": ["Compare the two choices. Which fits the goal better, and why?", "What is one important difference? How does it affect your choice?"],
+      "decision-and-justify": ["Choose the best action for this situation. Give two reasons and consider one risk.", "Which solution is fairest or most useful? Support your choice with evidence."],
+      "source-check": ["Who created this message, and what might they want the reader to do?", "What information would you check before trusting this claim? Name a useful source."]
     };
+    var questions = [];
     for (var i = 0; i < count; i += 1) {
       var type = types[i % types.length];
-      questions.push({ number: i + 1, type: type, prompt: stems[type] });
+      var variants = prompts[type] || prompts["short-answer"];
+      var prompt = variants[Math.floor(i / types.length) % variants.length];
+      if (stage === "early") {
+        prompt = prompt.replace(/Explain with a word, sign, or point\./g, "Show your choice by speaking, signing, pointing, or selecting.")
+          .replace(/Give two reasons and consider one risk\./g, "Give one reason using words, signs, pictures, or choices.");
+      }
+      questions.push({ number: i + 1, type: type, prompt: prompt, topic: topic, thinkingFocus: /cause|prediction/.test(type) ? "predict-and-explain" : /compare|decision|source/.test(type) ? "reason-and-judge" : /evidence|inference|short-answer/.test(type) ? "use-clues" : "apply-and-check" });
     }
     return { count: count, types: types.slice(), questions: questions,
       note: "Question types are a starting plan based on class stage and topic. Teacher must match them to the verified daily Fiji English achievement indicator before use." };
