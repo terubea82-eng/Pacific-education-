@@ -45,7 +45,7 @@ test("Student registration save and green Next open a visible workspace and dail
 
   await page.locator("#pilotRegistrationName").fill("Student Handoff Test");
   await expect(page.locator("#pilotLearnerIdentityFields")).toBeVisible();
-  await expect(page.locator("#pilotLearnerOfficialId")).toBeRequired();
+  await expect(page.locator("#pilotLearnerOfficialId")).toHaveJSProperty("required", true);
   await expect(next).toBeDisabled();
   // The pilot has no authorized FEMIS verification service yet. Test the safe
   // pending route instead of inventing or persisting a real learner ID.
