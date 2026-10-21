@@ -31,7 +31,7 @@ test("linked teacher plans require an explicit class before generating a plan", 
   await expect(status).toContainText("Select a class / level");
   await expect(content).toBeEmpty();
   expect(await page.evaluate(() => window.__pacEduActivityCalls)).toBe(0);
-  await expect(page.locator("#pacEduLinkedPlanLevel")).toHaveCount(0);
+  await expect(page.locator("#paceduLinkedPlanLevel")).toHaveCount(0);
 
   const level = page.locator("#paceduLinkedPlanLevel");
   await level.selectOption("Class 4");
