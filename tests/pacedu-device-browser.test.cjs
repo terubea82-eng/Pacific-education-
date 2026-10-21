@@ -1091,6 +1091,10 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
     await page.locator("#registrationNextButton").click(); // confirm role and open the name step
     await page.locator("#pilotRegistrationName").fill("Role Pilot Test");
+    if (["Student", "Blind Learner", "Deaf Learner"].includes(role)) {
+      // FEMIS verification is not connected in the pilot; use the explicit pending route.
+      await page.locator("#pilotLearnerPendingVerification").check();
+    }
     const save = page.locator("#pilotRegistrationSaveButton");
     const next = page.locator("#registrationNextButton");
     await expect(save).toBeEnabled();
