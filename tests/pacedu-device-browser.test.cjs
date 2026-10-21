@@ -1364,3 +1364,25 @@ test("registration save keeps Page 4 visible until Next, then recovers the role 
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   expect(pageErrors, "registration-to-workspace handoff must not throw uncaught errors").toEqual([]);
 });
+
+
+test("Teacher Review Comment box is visible and submits a pending pilot review", async ({ page }) => {
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSequentialRoleWorkspaces?.build), { timeout: 10000 }).toBe("function");
+  await expect.poll(() => page.evaluate(() => typeof window.submitPacificEducationDashboardReviewComment), { timeout: 10000 }).toBe("function");
+  await page.evaluate(() => window.PacificEducationSequentialRoleWorkspaces.build("teacher"));
+
+  const section = page.locator("#pacificEducationDashboardReviewCommentSection");
+  const input = page.locator("#pacificEducationDashboardReviewComment");
+  const status = page.locator("#pacificEducationDashboardReviewCommentStatus");
+  await expect(section).toBeVisible();
+  await expect(input).toBeEnabled();
+  await input.fill("Pilot review activation test: teacher feedback submission works.");
+  await section.getByRole("button", { name: "Submit Review Comment", exact: true }).click();
+  await expect(status).toContainText("saved to the pilot review queue");
+  await expect(input).toHaveValue("");
+
+  const queue = await page.evaluate(() => JSON.parse(localStorage.getItem("pacificEducationGuardianReviewQueue") || "[]"));
+  expect(queue.some(item => item.comment === "Pilot review activation test: teacher feedback submission works." &&
+    item.status === "PENDING_GUARDIAN_REVIEW" && item.productionReady === false)).toBe(true);
+});
