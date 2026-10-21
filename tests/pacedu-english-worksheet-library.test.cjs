@@ -68,3 +68,23 @@ test("teacher dashboard renderer is wrapped without replacing the existing activ
   assert.equal(typeof window.PacificEducationRoleActivityPacks.getStudentActivity, "function");
   assert.equal(window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", {}, 2), true);
 });
+
+test("daily question count and question types adapt to class stage and demonstrated ability", () => {
+  const earlySupport = library.getWorksheet("Kindergarten", "support", 2);
+  const earlyExtension = library.getWorksheet("Kindergarten", "extension", 2);
+  const middleGoal = library.getWorksheet("Class 5", "expected", 2);
+  const seniorExtension = library.getWorksheet("Class 13", "extension", 2);
+  assert.equal(earlySupport.questionPlan.count, 4);
+  assert.equal(earlyExtension.questionPlan.count, 6);
+  assert.equal(middleGoal.questionPlan.count, 10);
+  assert.equal(seniorExtension.questionPlan.count, 18);
+  for (const worksheet of [earlySupport, earlyExtension, middleGoal, seniorExtension]) {
+    assert.equal(worksheet.questionPlan.questions.length, worksheet.questionPlan.count);
+    assert.ok(worksheet.questionPlan.types.length >= 4);
+    assert.ok(worksheet.questionPlan.questions.every((q, i) => q.number === i + 1 && q.prompt.length > 10));
+    assert.match(worksheet.questionPlan.note, /verified daily Fiji English achievement indicator/i);
+  }
+  assert.ok(earlySupport.questionPlan.types.some(type => /picture|listen|oral/.test(type)));
+  assert.ok(middleGoal.questionPlan.types.includes("multiple-choice"));
+  assert.ok(seniorExtension.questionPlan.types.includes("evidence-or-inference"));
+});

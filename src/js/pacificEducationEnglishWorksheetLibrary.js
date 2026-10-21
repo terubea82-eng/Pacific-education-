@@ -83,10 +83,84 @@
       topic: "Baseline observation (not a pass/fail exam)",
       instructions: "Teacher: use this short diagnostic to identify the learner's current demonstrated skills. Offer accessible response modes and record evidence, not assumptions. Do not assign a permanent level from one task. Mark each item: independent / with support / not yet demonstrated / not observed.",
       tasks: tasks,
+      questionPlan: questionPlan,
       responseLines: 2,
       teacherCheck: "Record observed strengths, support used, items not observed, and the next teaching step. Missing or unclear evidence remains pending; do not infer mastery.",
       differentiationNote: "Use speech, sign, pointing, selection, drawing, tactile materials, large print, keyboard, or approved screen-reader/communication support as appropriate."
     };
+  }
+  function questionPlanFor(level, ability, topic) {
+    var stage = stageFor(classNumber(level));
+    var counts = {
+      early: { support: 4, developing: 5, expected: 6, extension: 6 },
+      foundation: { support: 5, developing: 6, expected: 8, extension: 9 },
+      middle: { support: 6, developing: 8, expected: 10, extension: 12 },
+      "junior-secondary": { support: 8, developing: 10, expected: 12, extension: 15 },
+      senior: { support: 10, developing: 12, expected: 15, extension: 18 }
+    };
+    var t = String(topic || "").toLowerCase();
+    var types;
+    if (/sound|letter|phonics/.test(t)) {
+      types = stage === "early"
+        ? ["listen-and-identify", "picture-match", "oral-response", "letter-or-sound-choice"]
+        : ["multiple-choice", "matching", "fill-in-the-blank", "read-aloud-or-decode", "short-answer"];
+    } else if (/sentence|describing|grammar|paragraph|punctuation/.test(t)) {
+      types = stage === "early"
+        ? ["picture-choice", "sentence-frame", "oral-response", "sequence"]
+        : ["multiple-choice", "fill-in-the-blank", "sentence-correction", "matching", "short-writing"];
+    } else if (/reading|question|vocabulary|review/.test(t)) {
+      types = stage === "early"
+        ? ["listen-and-identify", "picture-choice", "sequence", "oral-response"]
+        : ["multiple-choice", "short-answer", "sequence", "vocabulary-in-context", "evidence-or-inference"];
+    } else {
+      types = stage === "early"
+        ? ["picture-choice", "matching", "oral-response", "sequence"]
+        : ["multiple-choice", "matching", "fill-in-the-blank", "short-answer", "short-writing"];
+    }
+    if (stage === "junior-secondary" || stage === "senior") {
+      types = types.concat(["evidence-or-inference", "editing", "extended-response"]);
+    }
+    var count = counts[stage][ability] || counts.foundation.developing;
+    var questions = [];
+    if (stage !== "early") types = types.concat(["cause-and-effect", "prediction", "compare-and-choose"]);
+    if (stage === "junior-secondary" || stage === "senior") types = types.concat(["decision-and-justify", "source-check"]);
+    var prompts = {
+      "listen-and-identify": ["Listen. Which sound or word did you hear?", "Listen again. What clue helped you choose?"],
+      "picture-match": ["Match the word to the picture that fits best.", "What detail shows that your match is correct?"],
+      "picture-choice": ["Which picture best fits the prompt? What helped you decide?", "Choose the picture that does not fit. Explain with a word, sign, or point."],
+      "oral-response": ["Tell, sign, point to, or select one answer. How do you know?", "Give one reason for your choice in a way that works for you."],
+      "letter-or-sound-choice": ["Which letter or sound matches the example?", "Which other word starts or ends with the same sound?"],
+      "multiple-choice": ["Choose the best answer. Which clue makes it the best choice?", "Which option is correct, and why are one or two other options less suitable?"],
+      "matching": ["Match each item to its best partner. Explain one match.", "Find a pair that belongs together. What is the link?"],
+      "fill-in-the-blank": ["Complete the sentence so the meaning is clear.", "Choose a word that fits. How would the meaning change with a different word?"],
+      "read-aloud-or-decode": ["Read, listen to, or decode the word or sentence. What clue helped?", "Try the word in the sentence. Does it make sense? Explain or show why."],
+      "short-answer": ["What is the key idea? Give one detail that supports your answer.", "What can you work out from the information? Point to a clue."],
+      "sentence-correction": ["Correct the sentence so the reader understands it.", "Make the sentence clearer. Explain or show what you changed and why."],
+      "short-writing": ["Write one clear sentence to explain your idea.", "Write a sentence that gives a reason or solves the problem in the prompt."],
+      "sequence": ["Put the steps or events in order. What would go wrong if the order changed?", "What should happen next? Give a clue that supports your choice."],
+      "vocabulary-in-context": ["What does the word most likely mean here? Which nearby clue helps?", "Choose a similar word. Would it keep the same meaning in this sentence?"],
+      "evidence-or-inference": ["What can you infer? Give the exact detail that helped you decide.", "Which detail best supports your idea? Explain why another detail is weaker."],
+      "editing": ["Find and fix an error that affects meaning.", "Improve the sentence. Which change makes it clearer for the reader?"],
+      "extended-response": ["Explain your view with a reason and an example.", "Consider another view. Which idea is stronger, and what evidence supports it?"],
+      "cause-and-effect": ["What caused this? Which detail tells you?", "What may happen because of this action? Explain the link."],
+      "prediction": ["What do you think will happen next? Give one clue.", "If one detail changed, how might the outcome change?"],
+      "compare-and-choose": ["Compare the two choices. Which fits the goal better, and why?", "What is one important difference? How does it affect your choice?"],
+      "decision-and-justify": ["Choose the best action for this situation. Give two reasons and consider one risk.", "Which solution is fairest or most useful? Support your choice with evidence."],
+      "source-check": ["Who created this message, and what might they want the reader to do?", "What information would you check before trusting this claim? Name a useful source."]
+    };
+    var questions = [];
+    for (var i = 0; i < count; i += 1) {
+      var type = types[i % types.length];
+      var variants = prompts[type] || prompts["short-answer"];
+      var prompt = variants[Math.floor(i / types.length) % variants.length];
+      if (stage === "early") {
+        prompt = prompt.replace(/Explain with a word, sign, or point\./g, "Show your choice by speaking, signing, pointing, or selecting.")
+          .replace(/Give two reasons and consider one risk\./g, "Give one reason using words, signs, pictures, or choices.");
+      }
+      questions.push({ number: i + 1, type: type, prompt: prompt, topic: topic, thinkingFocus: /cause|prediction/.test(type) ? "predict-and-explain" : /compare|decision|source/.test(type) ? "reason-and-judge" : /evidence|inference|short-answer/.test(type) ? "use-clues" : "apply-and-check" });
+    }
+    return { count: count, types: types.slice(), questions: questions,
+      note: "Question types are a starting plan based on class stage and topic. Teacher must match them to the verified daily Fiji English achievement indicator before use." };
   }
   function makeWorksheet(level, ability, day) {
     level = LEVELS.indexOf(String(level)) >= 0 ? String(level) : "Class 1";
@@ -100,6 +174,7 @@
       return baseline;
     }
     var n = classNumber(level), stage = stageFor(n), topic = topicFor(day), tasks = [];
+    var questionPlan = questionPlanFor(level, ability, topic);
     var abilityPrefix = {
       support: "SUPPORTED START: use a teacher model, word bank, picture/object cue, sentence frame, or worked example. ",
       developing: "DEVELOPING: try independently first; use one hint or a word bank if needed. ",
@@ -218,6 +293,16 @@
       node("p", "Instructions: " + studentSheet.instructions, sheet);
       var list = node("ol", null, sheet);
       studentSheet.tasks.forEach(function (task) { node("li", task, list).style.marginBottom = "14px"; });
+      if (studentSheet.questionPlan && studentSheet.questionPlan.questions) {
+        node("h3", "Daily questions (" + studentSheet.questionPlan.count + ")", sheet);
+        node("p", "Question types: " + studentSheet.questionPlan.types.join(", ").replace(/-/g, " "), sheet);
+        var questions = node("ol", null, sheet);
+        studentSheet.questionPlan.questions.forEach(function (question) {
+          var item = node("li", question.prompt, questions);
+          item.style.marginBottom = "10px";
+          node("p", "Answer: __________________________________________________________", item);
+        });
+      }
       for (var i = 0; i < studentSheet.responseLines; i += 1) node("p", "________________________________________________________________", sheet).style.margin = "16px 0";
       node("p", "I tried the tasks:  □ Yes   □ I need help with: ______________________________", sheet);
       var guide = node("aside", null, preview); guide.id = "paceduEnglishTeacherGuide";
@@ -267,6 +352,7 @@
     version: "1.0.0",
     levels: LEVELS.slice(),
     abilities: ABILITIES.map(function (a) { return { id:a[0], label:a[1] }; }),
-    getWorksheet: makeWorksheet
+    getWorksheet: makeWorksheet,
+    getQuestionPlan: questionPlanFor
   });
 })(window, document);
