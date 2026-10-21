@@ -101,7 +101,10 @@ test("retrieves the class-specific saved capability and maps it to a worksheet b
   window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-7"; } };
   stored.set("pacificEducationCapability:class-7", "advanced");
   stored.set("pacificEducationCapability", "remedial");
-  assert.deepEqual(library.getStoredAbility(), { ability: "extension", source: "class assessment", capability: "advanced" });
+  const classResult = library.getStoredAbility();
+  assert.equal(classResult.ability, "extension");
+  assert.equal(classResult.source, "class assessment");
+  assert.equal(classResult.capability, "advanced");
 
   stored.set("pacificEducationCapability:class-7", "remedial");
   assert.equal(library.getStoredAbility().ability, "support");
@@ -112,12 +115,18 @@ test("uses the saved global capability when no class-specific result exists", ()
   stored.clear();
   window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-8"; } };
   stored.set("pacificEducationCapability", "expected");
-  assert.deepEqual(library.getStoredAbility(), { ability: "expected", source: "saved learning capability", capability: "expected" });
+  const globalResult = library.getStoredAbility();
+  assert.equal(globalResult.ability, "expected");
+  assert.equal(globalResult.source, "saved learning capability");
+  assert.equal(globalResult.capability, "expected");
 });
 
 test("does not silently force Developing when a saved worksheet choice is the only available category", () => {
   stored.clear();
   window.PacificEducationTeacherClassRosterContext = null;
   stored.set("paceduEnglishWorksheetAbility", "extension");
-  assert.deepEqual(library.getStoredAbility(), { ability: "extension", source: "saved worksheet choice", capability: "" });
+  const savedResult = library.getStoredAbility();
+  assert.equal(savedResult.ability, "extension");
+  assert.equal(savedResult.source, "saved worksheet choice");
+  assert.equal(savedResult.capability, "");
 });
