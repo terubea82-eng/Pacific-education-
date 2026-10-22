@@ -42,7 +42,10 @@ test("student learning level is not self-selected and waits for marked evidence"
   assert.match(selector, /var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1"/);
   assert.match(selector, /if \(activeStudentContext\(\)\) return false/);
   assert.match(selector, /s\.disabled = true/);
-  assert.match(selector, /Awaiting a verified student reference, at least 5 teacher-marked daily activities, and a teacher-marked term examination/);
+  assert.match(selector, /function studentRecommendation\(context\)/);
+  assert.match(selector, /result\.status === "recommendation-ready"/);
+  assert.match(selector, /Teacher review is required before this is confirmed/);
+  assert.match(selector, /The current level is only a neutral starting point/);
   assert.match(selector, /Never inherit another child's globally saved ability/);
 });
 
