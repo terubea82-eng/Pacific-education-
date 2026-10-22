@@ -21,6 +21,8 @@ test("student workspace home provides a session identity and class-level entry p
   assert.match(sequential, /peStudentWorkspaceClass/);
   assert.match(sequential, /Sign In to My Workspace/);
   assert.match(sequential, /Choose a class level before continuing/);
+  assert.match(sequential, /peStudentWorkspaceStudentReference/);
+  assert.match(sequential, /Names alone cannot match learning evidence/);
   assert.match(sequential, /next\.disabled=!context/);
 });
 
@@ -47,7 +49,8 @@ test("student learning level is not self-selected and waits for marked evidence"
 test("student class selection does not pretend a global roster choice is an individual assignment", () => {
   assert.match(entry, /A global teacher roster selection is not proof of individual assignment/);
   assert.doesNotMatch(entry, /localStorage\.setItem\("pacificEducationLevel", String\(studentClass\.level\)\)/);
-  assert.match(sequential, /assignmentStatus:"demo-unverified"/);
+  assert.match(sequential, /assignmentStatus:verifiedClassId\?"roster-matched-prototype":"demo-unverified"/);
+  assert.match(sequential, /identityVerified:!!verifiedClassId/);
 });
 
 test("student sign-out clears the active student context and active class, not saved progress", () => {
@@ -58,6 +61,7 @@ test("student sign-out clears the active student context and active class, not s
 
 test("updated entry scripts receive a cache-busting query while preserving the existing navigation check", () => {
   assert.match(html, /pacificEducationEvidenceBasedAbility\.js\?v=20261023-evidence-based-ability-v1/);
-  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261020-simple-learning-flow-v1&student-session-context=20261020-v1/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261023-verified-learner-context-v2/);
+  assert.match(html, /pacificEducationLearnerActivityRuntime\.js\?v=20261023-verified-learner-evidence-v2/);
   assert.match(html, /pacificEducationSinglePilotEntry\.js\?v=20261006-single-entry-2&student-session-context=20261019-v1/);
 });
