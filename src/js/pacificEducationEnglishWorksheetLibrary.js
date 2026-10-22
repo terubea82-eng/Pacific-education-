@@ -43,7 +43,6 @@
       teacherReview:"Teacher checks each response, records independent / with support / not yet demonstrated / not observed, gives feedback, and confirms the next step. This sample content needs local curriculum and language review before classroom use.",
       status:"PENDING_TEACHER_REVIEW"};
   }
-  var englishMakeWorksheet = makeWorksheet;
   function makeWorksheet(level, ability, day, subject) {
     var selectedSubject = SUBJECTS.some(function(s){return s[0]===subject;}) ? subject : "English";
     var worksheet = englishMakeWorksheet(level, ability, day);
@@ -263,7 +262,7 @@
     return { count: count, types: types.slice(), questions: questions,
       note: "Question types are a starting plan based on class stage and topic. Teacher must match them to the verified daily Fiji English achievement indicator before use." };
   }
-  function makeWorksheet(level, ability, day) {
+  function makeEnglishWorksheet(level, ability, day) {
     level = LEVELS.indexOf(String(level)) >= 0 ? String(level) : "Class 1";
     ability = ABILITIES.some(function (a) { return a[0] === ability; }) ? ability : "developing";
     day = clampDay(day);
