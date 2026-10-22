@@ -34,6 +34,8 @@
     return validCapability(v) ? v : "expected";
   }
   function set(v) {
+    /* Students do not self-select an ability level; PacEdu derives a provisional recommendation from marked evidence. */
+    if (activeStudentContext()) return false;
     if (!validCapability(v)) return false;
     try {
       var context = activeStudentContext();
@@ -58,7 +60,9 @@
     h.textContent = "";
     var l = document.createElement("label");
     l.htmlFor = "pacificEducationCapability";
-    l.textContent = "Ability (choose from observed evidence)";
+    l.textContent = activeStudentContext()
+      ? "Learning level — set by PacEdu from marked evidence"
+      : "Ability guidance (teacher / general pilot use)";
     var s = document.createElement("select");
     s.id = "pacificEducationCapability";
     s.setAttribute("aria-describedby", "pacificEducationCapabilityGuidance");
@@ -69,6 +73,11 @@
       s.appendChild(o);
     });
     s.value = get();
+    if (activeStudentContext()) {
+      s.disabled = true;
+      s.hidden = true;
+      s.setAttribute("aria-hidden", "true");
+    }
     var info = document.createElement("div");
     info.id = "pacificEducationCapabilityGuidance";
     info.setAttribute("role", "status");
@@ -76,10 +85,11 @@
     info.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;margin:10px 0;padding:12px;border:2px solid #7bb9e8;border-radius:8px;background:#eef8ff;color:#17324d;line-height:1.5;white-space:normal;";
     function showGuidance() {
       var context = activeStudentContext();
-      var prefix = context
-        ? "Ability guidance for " + context.displayName + " (" + context.classLevel + "). "
-        : "General ability guidance. ";
-      info.textContent = prefix + (GUIDANCE[s.value] || GUIDANCE.expected);
+      if (context) {
+        info.textContent = "Awaiting a verified student reference, at least 5 teacher-marked daily activities, and a teacher-marked term examination. Your teacher reviews PacEdu's provisional recommendation. This is not a permanent label.";
+        return;
+      }
+      info.textContent = "General ability guidance. " + (GUIDANCE[s.value] || GUIDANCE.expected);
     }
     s.addEventListener("change", function () {
       set(s.value);
