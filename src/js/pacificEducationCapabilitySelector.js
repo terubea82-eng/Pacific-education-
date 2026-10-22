@@ -107,6 +107,8 @@
     });
     s.addEventListener("click", showGuidance);
     s.addEventListener("focus", showGuidance);
+    window.addEventListener("pacificEducationStudentChanged", showGuidance);
+    document.addEventListener("pacificEducationCoverageRefresh", showGuidance);
     h.appendChild(l);
     h.appendChild(document.createElement("br"));
     h.appendChild(s);
