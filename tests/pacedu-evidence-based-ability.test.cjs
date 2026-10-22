@@ -91,3 +91,18 @@ test("teacher adjustments require a reason and are recorded against the same lea
   assert.equal(reviewed.review.status, "adjusted");
   assert.equal(reviewed.review.finalLevel, "developing");
 });
+
+test("repeat attempts on the same daily activity count only once", () => {
+  const { api, storage } = harness();
+  storage.setItem("pacificEducationActivityResponses", JSON.stringify([
+    activity("STU-001", 1, "teacher-approved"),
+    activity("STU-001", 1, "teacher-needs-practice"),
+    activity("STU-001", 2, "teacher-approved"),
+    activity("STU-001", 3, "teacher-approved"),
+    activity("STU-001", 4, "teacher-approved")
+  ]));
+  api.recordTermMark({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English", mark: 45, maximum: 50 });
+  const result = api.evaluate({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English" });
+  assert.equal(result.markedActivities, 4);
+  assert.equal(result.status, "awaiting-evidence");
+});
