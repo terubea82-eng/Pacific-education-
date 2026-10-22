@@ -45,6 +45,43 @@
     if (stage === "junior-secondary") return "A school group investigated " + topicLabel.toLowerCase() + " by gathering examples and comparing different viewpoints. The learners recorded the details that supported their conclusions, then discussed which evidence was most useful. They revised their first explanations when new information changed their understanding. Their final report distinguished observations from opinions.";
     return "A student team examined " + topicLabel.toLowerCase() + " and considered how language shapes the way readers understand an issue. They compared the author's central claim with the evidence provided, noting both useful details and unanswered questions. During peer review, the team identified an unsupported generalisation and replaced it with a more precise statement. Their final response explained the reasoning behind each revision and acknowledged an alternative interpretation.";
   }
+  function picturePromptFor(topic, stage) {
+    var t = String(topic || "reading").toLowerCase();
+    if (/water|environment|community|people/.test(t)) return "Illustration prompt: learners caring for their community and environment.";
+    if (/sound|letter|word|vocabulary/.test(t)) return "Illustration prompt: a learner exploring letters, words, and a book.";
+    if (/sequence|instruction/.test(t)) return "Illustration prompt: three simple panels showing an activity in order.";
+    if (/question|reading|meaning|review/.test(t)) return "Illustration prompt: a learner reading a passage and thinking about its meaning.";
+    if (/sentence|paragraph|describing/.test(t)) return "Illustration prompt: a learner building a sentence from word cards.";
+    return stage === "early"
+      ? "Illustration prompt: a child exploring a familiar object with a teacher."
+      : "Illustration prompt: learners working together on a class reading task.";
+  }
+  function renderPicturePrompt(parent, topic, stage) {
+    var figure = node("figure", null, parent);
+    figure.style.cssText = "margin:12px 0;padding:12px;border:1px solid #cbd5e1;border-radius:8px;background:#f8fafc;color:#111827;";
+    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("viewBox", "0 0 320 120");
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", picturePromptFor(topic, stage));
+    svg.style.cssText = "display:block;width:100%;max-width:320px;height:auto;margin:auto;";
+    function shape(tag, attrs) {
+      var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+      Object.keys(attrs).forEach(function (key) { el.setAttribute(key, attrs[key]); });
+      svg.appendChild(el); return el;
+    }
+    shape("rect", {x:1,y:1,width:318,height:118,rx:10,fill:"#eaf5ff",stroke:"#94a3b8"});
+    shape("circle", {cx:275,cy:25,r:13,fill:"#fbbf24"});
+    shape("path", {d:"M20 95 Q55 76 90 95 T160 95 T230 95 T300 95",fill:"none",stroke:"#65a30d","stroke-width":3});
+    shape("rect", {x:94,y:38,width:54,height:48,rx:3,fill:"#ffffff",stroke:"#2563eb","stroke-width":2});
+    shape("path", {d:"M121 40 V84 M98 47 Q110 44 121 50 Q132 44 144 47 V80 Q132 77 121 83 Q110 77 98 80 Z",fill:"none",stroke:"#2563eb","stroke-width":2});
+    shape("circle", {cx:55,cy:48,r:12,fill:"#f2c9a5",stroke:"#7c4a2d"});
+    shape("path", {d:"M39 83 Q40 62 55 62 Q70 62 71 83 Z",fill:"#0f766e",stroke:"#115e59","stroke-width":2});
+    shape("path", {d:"M74 66 L91 57",stroke:"#7c4a2d","stroke-width":4,"stroke-linecap":"round"});
+    var caption = node("figcaption", picturePromptFor(topic, stage), figure);
+    caption.style.cssText = "margin-top:8px;font-size:0.95em;";
+    figure.insertBefore(svg, caption);
+    return figure;
+  }
   function dayOneAssessment(level) {
     var n = classNumber(level), stage = stageFor(n);
     var tasks;
@@ -81,6 +118,7 @@
     return {
       title: "Day 1 — English Initial Ability Check — " + level,
       topic: "Baseline observation (not a pass/fail exam)",
+      picturePrompt: picturePromptFor("familiar learning", stage),
       instructions: "Teacher: use this short diagnostic to identify the learner's current demonstrated skills. Offer accessible response modes and record evidence, not assumptions. Do not assign a permanent level from one task. Mark each item: independent / with support / not yet demonstrated / not observed.",
       tasks: tasks,
       questionPlan: {
@@ -227,6 +265,7 @@
     return {
       title: "Day " + day + " — English Worksheet — " + level + " — " + labelAbility(ability),
       topic: topic,
+      picturePrompt: picturePromptFor(topic, stage),
       readingText: passageFor(stage, topic, day),
       level: level, ability: ability, day: day,
       instructions: "Student: try each task. You may answer in an accessible way agreed with your teacher. Ask for clarification if needed. This is practice, not a formal examination.",
@@ -377,6 +416,7 @@
       node("h2", studentSheet.title, sheet);
       node("p", "Name: __________________________________    Date: __________________", sheet);
       node("p", "Topic: " + studentSheet.topic, sheet);
+      renderPicturePrompt(sheet, studentSheet.topic, stageFor(classNumber(studentSheet.level)));
       if (studentSheet.readingText) {
         node("h3", "Read / listen to the passage", sheet);
         node("p", studentSheet.readingText, sheet).style.cssText = "padding:12px;border:1px solid #999;line-height:1.6;";
