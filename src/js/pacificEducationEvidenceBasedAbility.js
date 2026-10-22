@@ -31,13 +31,18 @@
   function term() { try{return text(localStorage.getItem("pacificEducationTerm"))||"Term 1";}catch(e){return "Term 1";} }
   function subject() { try{return text(localStorage.getItem("pacificEducationSubject"))||"English";}catch(e){return "English";} }
   function markedActivities(studentId,classId,termValue,subjectValue) {
-    return read(RESPONSE_KEY,[]).filter(function(x) {
-      if(!x || !same(x.studentId,studentId) || !same(x.classId,classId)) return false;
-      if(x.reviewStatus!=="teacher-approved" && x.reviewStatus!=="teacher-needs-practice") return false;
+    var unique={};
+    read(RESPONSE_KEY,[]).forEach(function(x) {
+      if(!x || !same(x.studentId,studentId) || !same(x.classId,classId)) return;
+      if(x.reviewStatus!=="teacher-approved" && x.reviewStatus!=="teacher-needs-practice") return;
       /* Evidence without an explicit matching term/subject cannot be safely attributed. */
-      if(!same(x.term,termValue) || !same(x.subject,subjectValue)) return false;
-      return true;
+      if(!same(x.term,termValue) || !same(x.subject,subjectValue)) return;
+      /* Count distinct activities, not repeated attempts on the same activity/day. */
+      var activityKey=text(x.activityId) || (Number(x.day)>0 ? "day-"+String(x.day)+"-"+text(x.type||"daily-activity") : "");
+      if(!activityKey) return;
+      unique[activityKey]=x;
     });
+    return Object.keys(unique).map(function(key){return unique[key];});
   }
   function examMarks(studentId,classId,termValue,subjectValue) {
     return read(EXAM_KEY,[]).filter(function(x) {
