@@ -35,8 +35,14 @@
       "Hindi": {topic:"Language, reading and expression", passage:"Learners practise understanding a short message, identifying familiar words, and responding respectfully. The teacher should provide accurate Hindi text and examples appropriate to the learners and lesson goal; this template does not invent translations.", qs:[["What should the teacher verify before use?","Accuracy of the language examples","The page colour only","The longest answer","Nothing",0],["What skill is practised?","Reading and expression","Only multiplication","Plant growth","Running speed",0],["How should a learner respond?","In an accessible agreed way","Only in one fixed mode","Without understanding","By guessing every time",0]]}
     };
     var item = bank[subject] || bank.English;
+    var stagePassage = item.passage;
+    if (stage === "early") stagePassage = "Look at the picture and talk about the activity. " + item.passage.split(".").slice(0,2).join(".") + ".";
+    else if (stage === "foundation") stagePassage = item.passage.split(".").slice(0,3).join(".") + ".";
+    else if (stage === "junior-secondary" || stage === "senior") stagePassage += " Explain why the evidence matters, identify one limitation, and suggest a practical improvement for a real situation in your school or community.";
+    if (ability === "support") stagePassage = "Read or listen with support. " + stagePassage;
+    if (ability === "extension") stagePassage += " Extension: compare another possible approach and justify which option is most effective, using evidence.";
     var questions = item.qs.map(function(q,i){ return {number:i+1,type:"multiple-choice",prompt:q[0],options:q.slice(1,5),answerIndex:q[5],answer:q[q[5]+1]}; });
-    return {subject:subject,topic:item.topic,readingText:item.passage,questions:questions,
+    return {subject:subject,topic:item.topic,readingText:stagePassage,questions:questions,
       tasks:["Read, listen to, or access the passage in an agreed accessible format.","Answer the questions and show evidence for your choices.","Review your answers and explain one thing you learned."],
       answerKey:questions.map(function(q){return {number:q.number,answer:q.answer};}),
       abilityGuidance:({support:"Teacher models the first item; offer read-aloud, picture/word cues, fewer choices at a time, and a sentence frame.",developing:"Learner attempts independently first; offer one hint or word bank if needed.",expected:"Learner answers independently and points to evidence or shows working.",extension:"Learner justifies answers, creates a similar question, or evaluates an alternative."})[ability],
