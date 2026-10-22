@@ -27,10 +27,31 @@
   function validCapability(value) {
     return C.some(function (item) { return item.id === value; });
   }
+  function studentRecommendation(context) {
+    if (!context || context.identityVerified !== true || !context.studentId || !context.classId) return null;
+    var engine = window.PacificEducationEvidenceBasedAbility;
+    if (!engine || typeof engine.evaluate !== "function") return null;
+    try {
+      return engine.evaluate({
+        studentId: context.studentId,
+        classId: context.classId,
+        term: window.localStorage.getItem("pacificEducationTerm") || "Term 1",
+        subject: window.localStorage.getItem("pacificEducationSubject") || "English"
+      });
+    } catch (error) { return null; }
+  }
   function get() {
     var context = activeStudentContext();
-    /* Never inherit another child's globally saved ability when a student session is active. */
-    var v = context ? context.capability : window.localStorage.getItem("pacificEducationCapability");
+    /* Student sessions never read the device-wide ability key. */
+    if (context) {
+      var result = studentRecommendation(context);
+      if (result && result.status === "recommendation-ready") {
+        var recommended = result.finalLevel || result.recommendation;
+        if (validCapability(recommended)) return recommended;
+      }
+      return validCapability(context.capability) ? context.capability : "expected";
+    }
+    var v = window.localStorage.getItem("pacificEducationCapability");
     return validCapability(v) ? v : "expected";
   }
   function set(v) {
@@ -86,7 +107,25 @@
     function showGuidance() {
       var context = activeStudentContext();
       if (context) {
-        info.textContent = "Awaiting a verified student reference, at least 5 teacher-marked daily activities, and a teacher-marked term examination. Your teacher reviews PacEdu's provisional recommendation. This is not a permanent label.";
+        if (context.identityVerified !== true || !context.studentId || !context.classId) {
+          info.textContent = "Learning level is not yet recommended. Enter the exact school-issued learner reference and ask the teacher to add it to the correct class roster. PacEdu will not match by name or count unverified work.";
+          return;
+        }
+        var result = studentRecommendation(context);
+        if (!result) {
+          info.textContent = "Evidence service is not available yet. The current level is only a neutral starting point; no ability recommendation has been made.";
+          return;
+        }
+        if (result.status === "recommendation-ready") {
+          info.textContent = "Provisional PacEdu recommendation: " + (result.recommendationLabel || result.recommendation) +
+            ". Based on " + result.markedActivities + " teacher-marked daily activities and a term examination (" +
+            result.examPercentage + "%). Teacher review is required before this is confirmed. " +
+            (result.review && result.review.status ? "Teacher review: " + result.review.status + "." : "Awaiting teacher review.") +
+            " This is not a diagnosis or permanent label.";
+          return;
+        }
+        info.textContent = (result.message || "Awaiting sufficient marked learning evidence.") +
+          " The current level is only a neutral starting point, not an ability judgement. Your teacher reviews any provisional recommendation.";
         return;
       }
       info.textContent = "General ability guidance. " + (GUIDANCE[s.value] || GUIDANCE.expected);
@@ -97,6 +136,14 @@
     });
     s.addEventListener("click", showGuidance);
     s.addEventListener("focus", showGuidance);
+    document.addEventListener("pacificEducationEvidenceBasedAbilityUpdated", function() {
+      showGuidance();
+      if (window.PacificEducationCurriculumLessonRenderer &&
+          typeof window.PacificEducationCurriculumLessonRenderer.refresh === "function") {
+        try { window.PacificEducationCurriculumLessonRenderer.refresh(); } catch (error) {}
+      }
+    });
+    document.addEventListener("pacificEducationTermExaminationMarked", showGuidance);
     h.appendChild(l);
     h.appendChild(document.createElement("br"));
     h.appendChild(s);
