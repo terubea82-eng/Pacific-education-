@@ -16,13 +16,53 @@
     remedial: "Remedial / Re-teaching: reteach the missing step in a different accessible way, model it, practise together, and check again without penalty.",
     extension: "Extension / Challenge: after the core task, invite the learner to justify a choice, compare alternatives, solve a new problem, or create an example."
   };
-  function get() {
-    var v = window.localStorage.getItem("pacificEducationCapability");
-    return C.some(function (x) { return x.id === v; }) ? v : "expected";
+  function selectedStudentScope() {
+    try {
+      var context = window.PacificEducationStudentCoverageContext;
+      var roster = window.PacificEducationTeacherClassRosterContext;
+      if (!context || typeof context.getStudentId !== "function" ||
+          !roster || typeof roster.getClassId !== "function") return null;
+      var studentId = String(context.getStudentId() || "").trim();
+      var classId = String(roster.getClassId() || "").trim();
+      if (!studentId || !classId) return null;
+      if (typeof roster.getStudents === "function") {
+        var students = roster.getStudents(classId) || [];
+        if (!students.some(function (id) { return String(id) === studentId; })) return null;
+      }
+      return { studentId: studentId, classId: classId };
+    } catch (e) { return null; }
   }
+  function studentStorageKey(scope) {
+    return "pacificEducationCapability:student:" +
+      encodeURIComponent(scope.classId) + ":" + encodeURIComponent(scope.studentId);
+  }
+  function getRecord() {
+    var scope = selectedStudentScope();
+    var v = null;
+    var source = "general";
+    try {
+      if (scope) {
+        v = window.localStorage.getItem(studentStorageKey(scope));
+        if (v) source = "student";
+      }
+      if (!v) {
+        v = window.localStorage.getItem("pacificEducationCapability");
+        source = "general";
+      }
+    } catch (e) { v = null; }
+    if (!C.some(function (x) { return x.id === v; })) {
+      return { capability: "expected", source: "default", linked: false };
+    }
+    return { capability: v, source: source, linked: source === "student" };
+  }
+  function get() { return getRecord().capability; }
   function set(v) {
     if (!C.some(function (x) { return x.id === v; })) return false;
-    window.localStorage.setItem("pacificEducationCapability", v);
+    var scope = selectedStudentScope();
+    try {
+      if (scope) window.localStorage.setItem(studentStorageKey(scope), v);
+      else window.localStorage.setItem("pacificEducationCapability", v);
+    } catch (e) { return false; }
     if (window.PacificEducationCurriculumLessonRenderer &&
         typeof window.PacificEducationCurriculumLessonRenderer.refresh === "function") {
       window.PacificEducationCurriculumLessonRenderer.refresh();
@@ -52,7 +92,14 @@
     info.setAttribute("aria-live", "polite");
     info.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;margin:10px 0;padding:12px;border:2px solid #7bb9e8;border-radius:8px;background:#eef8ff;color:#17324d;line-height:1.5;white-space:normal;";
     function showGuidance() {
-      info.textContent = GUIDANCE[s.value] || GUIDANCE.expected;
+      var record = getRecord();
+      s.value = record.capability;
+      var scope = selectedStudentScope();
+      var linkStatus = scope ?
+        (record.linked ? "Saved for the selected student in this class. " :
+          "No ability record is saved for this student yet; this is a general/default value until an observed result is saved. ") :
+        "No student-and-class selection is active; changes will be saved as a general setting, not linked to an individual child. ";
+      info.textContent = linkStatus + (GUIDANCE[s.value] || GUIDANCE.expected);
     }
     s.addEventListener("change", function () {
       set(s.value);
