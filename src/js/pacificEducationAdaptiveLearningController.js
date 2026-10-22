@@ -56,6 +56,17 @@
     } catch (e) { return ""; }
   }
 
+  function selectedStudentId() {
+    try {
+      var context = window.PacificEducationStudentCoverageContext;
+      return context && typeof context.getStudentId === "function" ? String(context.getStudentId() || "").trim() : "";
+    } catch (e) { return ""; }
+  }
+
+  function studentCapabilityKey(classId, studentId) {
+    return CAPABILITY_KEY + ":student:" + encodeURIComponent(classId) + ":" + encodeURIComponent(studentId);
+  }
+
   function currentContext() {
     var day = 1;
     try {
@@ -63,6 +74,7 @@
     } catch (e) {}
     return {
       classId: selectedClassId(),
+      studentId: selectedStudentId(),
       level: (function(){ try { return (function(){var rr=window.PacificEducationTeacherClassRosterContext;var id=selectedClassId();var cc=rr&&typeof rr.getClass==="function"?rr.getClass(id):null;return cc&&cc.level?String(cc.level):"";})(); } catch(e){ return ""; } })(),
       subject: (function(){ try { return localStorage.getItem("pacificEducationSubject") || "English"; } catch(e){ return "English"; } })(),
       term: (function(){ try { return localStorage.getItem("pacificEducationTerm") || "Term 1"; } catch(e){ return "Term 1"; } })(),
@@ -76,13 +88,15 @@
     var context = currentContext();
     if (!context.classId) return {success:false,error:"Class Reference required",prototype:true};
     if (result && result.classId && String(result.classId) !== String(context.classId)) return {success:false,error:"Assessment belongs to a different Class Reference",prototype:true};
+    if (!context.studentId) return {success:false,error:"Select the learner from the class roster before updating ability from assessment evidence",prototype:true};
+    if (result && result.studentId && String(result.studentId) !== context.studentId) return {success:false,error:"Assessment belongs to a different learner",prototype:true};
     var passed = result && (result.passed === true || result.pass === true);
     if (!passed && Number.isFinite(score)) passed = score >= 60;
 
     try {
-      localStorage.setItem(CAPABILITY_KEY + ":" + context.classId, capability);
-      localStorage.setItem("pacificEducationAdaptiveLastScore:" + context.classId, score === null ? "" : String(score));
-      localStorage.setItem("pacificEducationAdaptiveLearningStatus:" + context.classId,
+      localStorage.setItem(studentCapabilityKey(context.classId, context.studentId), capability);
+      localStorage.setItem("pacificEducationAdaptiveLastScore:" + context.classId + ":" + context.studentId, score === null ? "" : String(score));
+      localStorage.setItem("pacificEducationAdaptiveLearningStatus:" + context.classId + ":" + context.studentId,
         capability === "remedial"
           ? "Targeted re-teaching recommended"
           : capability === "developing"
@@ -90,7 +104,7 @@
             : capability === "advanced"
               ? "Extension activity recommended"
               : "Independent expected-level learning recommended");
-      localStorage.setItem("pacificEducationAdaptiveNextActivity:" + context.classId,
+      localStorage.setItem("pacificEducationAdaptiveNextActivity:" + context.classId + ":" + context.studentId,
         capability === "remedial"
           ? "Remedial / Re-teaching"
           : capability === "developing"
@@ -98,7 +112,7 @@
             : capability === "advanced"
               ? "Extension / Challenge"
               : "Independent Practice");
-      localStorage.setItem(LAST_SIGNATURE_KEY + ":" + context.classId, JSON.stringify(result));
+      localStorage.setItem(LAST_SIGNATURE_KEY + ":" + context.classId + ":" + context.studentId, JSON.stringify(result));
     } catch (e) {}
 
     document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated", {
@@ -115,6 +129,9 @@
               ? "Extension / Challenge"
               : "Independent Practice",
         context: context,
+        classId: context.classId,
+        studentId: context.studentId,
+        source: "assessment-evidence",
         prototype: true
       }
     }));
@@ -139,6 +156,8 @@
       capability: capability,
       capabilityLabel: capabilityLabel(capability),
       score: score,
+      classId: context.classId,
+      studentId: context.studentId,
       nextActivity: capability === "remedial"
         ? "Remedial / Re-teaching"
         : capability === "developing"
@@ -176,7 +195,7 @@
     var signature;
     try { signature = JSON.stringify(result); } catch (e) { signature = String(result); }
     var previous = "";
-    try { previous = localStorage.getItem(LAST_SIGNATURE_KEY + ":" + selectedClassId()) || ""; } catch (e) {}
+    try { previous = localStorage.getItem(LAST_SIGNATURE_KEY + ":" + selectedClassId() + ":" + selectedStudentId()) || ""; } catch (e) {}
     if (signature === previous) return null;
     return saveAdaptation(result);
   }
@@ -206,8 +225,12 @@
   }
 
   function refreshSelectors() {
+    var classId = selectedClassId();
+    var studentId = selectedStudentId();
+    var capability = "expected";
+    try { if (classId && studentId) capability = localStorage.getItem(studentCapabilityKey(classId, studentId)) || localStorage.getItem(CAPABILITY_KEY + ":" + classId) || "expected"; } catch(e) {}
     document.dispatchEvent(new CustomEvent("pacificEducationCapabilityChanged", {
-      detail: { capability: (function(){ var id=selectedClassId(); try { return id ? (localStorage.getItem(CAPABILITY_KEY + ":" + id) || "expected") : "expected"; } catch(e){ return "expected"; } })(), classId: selectedClassId(), prototype: true }
+      detail: { capability: capability, classId: classId, studentId: studentId, prototype: true }
     }));
     if (typeof window.displayDailyLesson === "function") {
       try { window.displayDailyLesson(); } catch (e) {}
