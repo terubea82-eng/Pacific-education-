@@ -337,6 +337,24 @@
     abilityStatus.setAttribute("role", "status");
     abilityStatus.setAttribute("aria-live", "polite");
     abilityStatus.style.cssText = "margin:6px 0;color:#374151;font-size:0.95em;";
+    var abilityInfo = node("div", null, panel);
+    abilityInfo.id = "paceduEnglishWorksheetAbilityInfo";
+    abilityInfo.setAttribute("role", "status");
+    abilityInfo.setAttribute("aria-live", "polite");
+    abilityInfo.style.cssText = "margin:8px 0 12px;padding:12px;border:1px solid #93c5fd;border-left:5px solid #2563eb;border-radius:8px;background:#eff6ff;color:#111827;line-height:1.5;";
+    var abilityDescriptions = {
+      "initial-assessment": "Day 1 check: observe what the learner can do now. Record evidence; do not assign a band from one task.",
+      support: "Supported start: use a teacher model, pictures or objects, a word bank, a sentence frame, and guided practice.",
+      developing: "Developing: the learner is building the skill. Invite an independent attempt first, then offer a hint or word bank if needed.",
+      expected: "Working at current class goal: practise the current learning goal, then check the work against clear success criteria.",
+      extension: "Extension / deeper challenge: after the core task, ask the learner to explain reasoning, compare alternatives, or create a new example."
+    };
+    function showAbilityInfo() {
+      abilityInfo.textContent = "About this ability: " + (abilityDescriptions[abilitySelect.value] || abilityDescriptions.developing);
+    }
+    abilitySelect.addEventListener("click", showAbilityInfo);
+    abilitySelect.addEventListener("focus", showAbilityInfo);
+    showAbilityInfo();
 
     var dayLabel = node("label", "Teaching day (1–365)", panel);
     dayLabel.style.cssText = "display:block;margin:8px 0;font-weight:600;";
@@ -391,6 +409,7 @@
       if (abilitySelect.value !== "initial-assessment") {
         try { global.localStorage.setItem("paceduEnglishWorksheetAbility", abilitySelect.value); } catch (e) {}
         abilityStatus.textContent = "Selected for this worksheet: " + labelAbility(abilitySelect.value) + ". Teacher choice; verify against current learner evidence.";
+        showAbilityInfo();
       }
     });
     previewButton.addEventListener("click", renderPreview);
