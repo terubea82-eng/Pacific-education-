@@ -9,6 +9,7 @@
   var EXAM_KEY = "pacificEducationTermExaminationMarksV1";
   var REVIEW_KEY = "pacificEducationAbilityReviewRecordsV1";
   var MIN_MARKED_ACTIVITIES = 5;
+  var panelTerm = null, panelSubject = null;
   var LEVELS = [
     {id:"foundation",label:"Foundation / targeted support"},
     {id:"developing",label:"Developing"},
@@ -33,8 +34,8 @@
     return read(RESPONSE_KEY,[]).filter(function(x) {
       if(!x || !same(x.studentId,studentId) || !same(x.classId,classId)) return false;
       if(x.reviewStatus!=="teacher-approved" && x.reviewStatus!=="teacher-needs-practice") return false;
-      if(termValue && x.term && !same(x.term,termValue)) return false;
-      if(subjectValue && x.subject && !same(x.subject,subjectValue)) return false;
+      /* Evidence without an explicit matching term/subject cannot be safely attributed. */
+      if(!same(x.term,termValue) || !same(x.subject,subjectValue)) return false;
       return true;
     });
   }
@@ -69,9 +70,10 @@
     }
     var percentage=Math.round(Number(exam.mark)/Number(exam.maximum)*100);
     var recommendation;
-    if(percentage>=80 && ratio>=0.8) recommendation="advanced";
+    if(percentage>=90 && ratio>=0.9) recommendation="extension";
+    else if(percentage>=80 && ratio>=0.8) recommendation="advanced";
     else if(percentage>=60 && ratio>=0.6) recommendation="expected";
-    else if(percentage<40 || ratio<0.4) recommendation="foundation";
+    else if(percentage<40 || ratio<0.4) recommendation="remedial";
     else recommendation="developing";
     var review=latestReview(studentId,classId,termValue,subjectValue);
     return {status:"recommendation-ready",message:"Provisional recommendation only; teacher review is required.",studentId:studentId,classId:classId,term:termValue,subject:subjectValue,markedActivities:activities.length,minimumActivities:MIN_MARKED_ACTIVITIES,approvedActivities:approvedCount,needsPractice:practiceCount,activityApprovalRate:Math.round(ratio*100),examMark:Number(exam.mark),examMaximum:Number(exam.maximum),examPercentage:percentage,recommendation:recommendation,recommendationLabel:labelFor(recommendation),review:review,finalLevel:review&&review.finalLevel?review.finalLevel:null,reviewStatus:review?review.status:"pending-teacher-review",prototype:true};
@@ -125,11 +127,14 @@
     if(!classId) { node("p","Select an existing Class Reference and its roster before entering examination marks."); dashboard.insertBefore(panel,dashboard.firstChild); return; }
     var refs=Array.isArray(ctx.studentRefs)?ctx.studentRefs:[];
     if(!refs.length) { node("p","No student references are available in the selected class. PacEdu will not infer student identity from a name."); dashboard.insertBefore(panel,dashboard.firstChild); return; }
+    panelTerm=panelTerm||term();
+    panelSubject=panelSubject||subject();
     var selected=window.PacificEducationStudentCoverageContext&&typeof window.PacificEducationStudentCoverageContext.getStudentId==="function"?text(window.PacificEducationStudentCoverageContext.getStudentId()):"";
     var form=node("form",undefined);
     form.addEventListener("submit",function(e){
       e.preventDefault();
-      var result=recordTermMark({studentId:student.value,classId:classId,term:termSelect.value,subject:subjectSelect.value,examTitle:title.value,mark:mark.value,maximum:maximum.value});
+      panelTerm=termSelect.value; panelSubject=subjectSelect.value;
+      var result=recordTermMark({studentId:student.value,classId:classId,term:panelTerm,subject:panelSubject,examTitle:title.value,mark:mark.value,maximum:maximum.value});
       status.textContent=result.success?"Term examination mark saved. PacEdu will evaluate evidence for this student.":result.error;
       renderTeacherPanel();
     });
@@ -141,10 +146,10 @@
     var title=node("input"); title.type="text"; title.required=true; title.maxLength=120; title.placeholder="e.g. Term 2 English examination"; title.value="Term examination"; title.style.cssText="display:block;width:100%;max-width:520px;padding:10px;margin:4px 0 10px;";
     var titleLabel=node("label","Examination name",form); titleLabel.appendChild(title);
     var termLabel=node("label","Term",form),termSelect=document.createElement("select"); termSelect.style.cssText="display:block;padding:10px;margin:4px 0 10px;";
-    ["Term 1","Term 2","Term 3","Term 4"].forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v;termSelect.appendChild(o);}); termSelect.value=term();
+    ["Term 1","Term 2","Term 3","Term 4"].forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v;termSelect.appendChild(o);}); termSelect.value=panelTerm; termSelect.addEventListener("change",function(){panelTerm=termSelect.value;renderTeacherPanel();});
     termLabel.appendChild(termSelect);
     var subjectLabel=node("label","Subject",form),subjectSelect=document.createElement("select"); subjectSelect.style.cssText="display:block;padding:10px;margin:4px 0 10px;";
-    ["English","Mathematics","Science","Social Science","Health & Physical Education","Arts","Technology","Other / Integrated Learning"].forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v;subjectSelect.appendChild(o);}); subjectSelect.value=subject();
+    ["English","Mathematics","Science","Social Science","Health & Physical Education","Arts","Technology","Other / Integrated Learning"].forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v;subjectSelect.appendChild(o);}); subjectSelect.value=panelSubject; subjectSelect.addEventListener("change",function(){panelSubject=subjectSelect.value;renderTeacherPanel();});
     subjectLabel.appendChild(subjectSelect);
     var markLabel=node("label","Mark earned",form),mark=document.createElement("input"); mark.type="number";mark.min="0";mark.step="any";mark.required=true;mark.placeholder="e.g. 35";mark.style.cssText="display:block;padding:10px;margin:4px 0 10px;";markLabel.appendChild(mark);
     var maxLabel=node("label","Maximum mark",form),maximum=document.createElement("input"); maximum.type="number";maximum.min="1";maximum.step="any";maximum.required=true;maximum.value="50";maximum.style.cssText="display:block;padding:10px;margin:4px 0 10px;";maxLabel.appendChild(maximum);
@@ -152,9 +157,9 @@
     var status=node("p","",panel);status.id="paceduAbilityExamMarkStatus";status.setAttribute("role","status");status.setAttribute("aria-live","polite");
     panel.appendChild(form);
     var list=node("div",undefined,panel);list.id="paceduAbilityRecommendationList";
-    var heading=node("h4","Evidence and recommendations",list);
+    node("h4","Evidence and recommendations",list);
     refs.forEach(function(ref){
-      var result=evaluate({studentId:String(ref),classId:classId,term:term(),subject:subject()});
+      var result=evaluate({studentId:String(ref),classId:classId,term:panelTerm,subject:panelSubject});
       var card=node("article",undefined,list);card.style.cssText="padding:10px;margin:8px 0;border:1px solid #b5c7d5;border-radius:8px;background:white;";
       node("h4","Student reference: "+String(ref),card);
       node("p","Teacher-marked daily activities: "+String(result.markedActivities||0)+" / "+MIN_MARKED_ACTIVITIES+" minimum",card);
@@ -169,7 +174,7 @@
         var reasonLabel=node("label","Reason (required if changed)",reviewForm),reason=document.createElement("input");reason.type="text";reason.maxLength=300;reason.placeholder="Reason for adjustment";reason.style.cssText="display:block;width:100%;max-width:520px;padding:8px;margin:4px 0 8px;";reasonLabel.appendChild(reason);
         var reviewStatus=node("p",result.reviewStatus==="confirmed"?"Teacher confirmed: "+labelFor(result.finalLevel):result.reviewStatus==="adjusted"?"Teacher adjusted to: "+labelFor(result.finalLevel):"Teacher review pending",reviewForm);
         var reviewButton=node("button","Save teacher review",reviewForm);reviewButton.type="button";
-        reviewButton.addEventListener("click",function(){var saved=reviewRecommendation({studentId:String(ref),classId:classId,term:term(),subject:subject(),finalLevel:level.value,reason:reason.value});reviewStatus.textContent=saved.success?(saved.review.status==="confirmed"?"Teacher confirmed: ":"Teacher adjusted to: ")+labelFor(saved.review.finalLevel):saved.error;if(saved.success)renderTeacherPanel();});
+        reviewButton.addEventListener("click",function(){var saved=reviewRecommendation({studentId:String(ref),classId:classId,term:panelTerm,subject:panelSubject,finalLevel:level.value,reason:reason.value});reviewStatus.textContent=saved.success?(saved.review.status==="confirmed"?"Teacher confirmed: ":"Teacher adjusted to: ")+labelFor(saved.review.finalLevel):saved.error;if(saved.success)renderTeacherPanel();});
       }
     });
     dashboard.insertBefore(panel,dashboard.firstChild);
