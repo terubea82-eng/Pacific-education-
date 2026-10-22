@@ -45,13 +45,29 @@
     reader.readAsDataURL(file);
   }
 
+  function verifiedLearnerContext() {
+    var context=null,roster=window.PacificEducationTeacherClassRosterContext;
+    try { context=JSON.parse(window.sessionStorage.getItem("paceduActiveStudentContextV1")||"null"); } catch(e) {}
+    if(!context || context.role!=="student" || context.identityVerified!==true ||
+       !context.studentId || !context.studentReference || !context.classId ||
+       context.assignmentStatus!=="roster-matched-prototype" ||
+       !roster || typeof roster.getClass!=="function") return null;
+    var assigned=roster.getClass(context.classId);
+    if(!assigned || String(assigned.level||"")!==String(context.classLevel||"") ||
+       !Array.isArray(assigned.studentRefs) || assigned.studentRefs.indexOf(String(context.studentReference))<0) return null;
+    return {studentId:String(context.studentId),classId:String(context.classId),level:String(assigned.level||""),studentReference:String(context.studentReference)};
+  }
+
   function contextFrom(lesson, day) {
+    var learner=verifiedLearnerContext();
     var roster = window.PacificEducationTeacherClassRosterContext;
-    var classId = roster && typeof roster.getClassId === "function" ? roster.getClassId() : null;
+    var classId = learner ? learner.classId : null;
     var source = lesson && lesson.activity ? lesson.activity : (lesson || {});
     return {
+      studentId: learner ? learner.studentId : null,
+      identityStatus: learner ? "roster-matched-prototype" : "awaiting-verified-learner-and-class",
       classId: classId,
-      level: (function(){var rr=window.PacificEducationTeacherClassRosterContext;var cc=classId&&rr&&typeof rr.getClass==="function"?rr.getClass(classId):null;return cc&&cc.level?String(cc.level):"";})(),
+      level: learner ? learner.level : "",
       subjectId: lesson && lesson.subjectId || localStorage.getItem("pacificEducationSubject") || "English",
       term: lesson && lesson.term || localStorage.getItem("pacificEducationTerm") || "Term 1",
       dayNumber: Number(day) || 1,
@@ -99,6 +115,9 @@
     try { items = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
     items.push({
       type: type,
+      activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
+      studentId: ctx.studentId || null,
+      identityStatus: ctx.identityStatus || "awaiting-verified-learner-and-class",
       day: ctx.dayNumber,
       response: response || "",
       questionText: ctx.questionText,
