@@ -89,7 +89,7 @@ jobs:
             try {
               const u = new URL(String(value || ''));
               if (!(u.hostname === 'who.int' || u.hostname.endsWith('.who.int'))) return null;
-              const m = u.pathname.match(/\\/news\\/item\\/(\\d{2})-(\\d{2})-(\\d{4})(?:-|\\/|$)/i);
+              const m = u.pathname.match(/\/news\/item\/(\d{2})-(\d{2})-(\d{4})(?:-|\/|$)/i);
               return m ? m[3] + '-' + m[2] + '-' + m[1] : null;
             } catch (_) { return null; }
           }
