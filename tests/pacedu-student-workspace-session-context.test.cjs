@@ -36,10 +36,11 @@ test("student identity and chosen class are retained across workspace pages only
   assert.match(sequential, /This workspace session stays on/);
   assert.match(sequential, /SESSION_KEYS = \["paceduActiveStudentContextV1"/);
 });
-test("ability selection and visible guidance are scoped to the active student's name and class", () => {
+test("student learning level is not self-selected and waits for marked evidence", () => {
   assert.match(selector, /var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1"/);
-  assert.match(selector, /context\.capability/);
-  assert.match(selector, /Ability guidance for " \+ context\.displayName \+ " \(" \+ context\.classLevel \+ "\)\./);
+  assert.match(selector, /if \(activeStudentContext\(\)\) return false/);
+  assert.match(selector, /s\.disabled = true/);
+  assert.match(selector, /Awaiting a verified student reference, at least 5 teacher-marked daily activities, and a teacher-marked term examination/);
   assert.match(selector, /Never inherit another child's globally saved ability/);
 });
 
@@ -56,6 +57,7 @@ test("student sign-out clears the active student context and active class, not s
 });
 
 test("updated entry scripts receive a cache-busting query while preserving the existing navigation check", () => {
+  assert.match(html, /pacificEducationEvidenceBasedAbility\.js\?v=20261023-evidence-based-ability-v1/);
   assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261020-simple-learning-flow-v1&student-session-context=20261020-v1/);
   assert.match(html, /pacificEducationSinglePilotEntry\.js\?v=20261006-single-entry-2&student-session-context=20261019-v1/);
 });
