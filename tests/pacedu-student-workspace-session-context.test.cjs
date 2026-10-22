@@ -64,6 +64,7 @@ test("student sign-out clears the active student context and active class, not s
 
 test("updated entry scripts receive a cache-busting query while preserving the existing navigation check", () => {
   assert.match(html, /pacificEducationEvidenceBasedAbility\.js\?v=20261023-evidence-based-ability-v1/);
+  assert.match(html, /pacificEducationCapabilitySelector\.js\?v=20261023-evidence-based-ability-v2/);
   assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261023-verified-learner-context-v2/);
   assert.match(html, /pacificEducationLearnerActivityRuntime\.js\?v=20261023-verified-learner-evidence-v2/);
   assert.match(html, /pacificEducationSinglePilotEntry\.js\?v=20261006-single-entry-2&student-session-context=20261019-v1/);
