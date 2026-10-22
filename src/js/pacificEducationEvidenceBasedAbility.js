@@ -196,8 +196,23 @@
     if(info)info.textContent=textValue;
   }
   function refresh() { updateStudentGuidance(); renderTeacherPanel(); }
+  function observeStudentSessionBanner() {
+    if(!window.MutationObserver || !document.body) return;
+    var observer=new window.MutationObserver(function(records) {
+      var found=false;
+      records.forEach(function(record) {
+        Array.prototype.forEach.call(record.addedNodes||[],function(node) {
+          if(found || !node || node.nodeType!==1) return;
+          if((node.matches && node.matches("[data-pe-student-context-banner]")) ||
+             (node.querySelector && node.querySelector("[data-pe-student-context-banner]"))) found=true;
+        });
+      });
+      if(found) { observer.disconnect(); updateStudentGuidance(); }
+    });
+    observer.observe(document.body,{childList:true,subtree:true});
+  }
   window.PacificEducationEvidenceBasedAbility=Object.freeze({version:VERSION,evaluate:evaluate,recordTermMark:recordTermMark,reviewRecommendation:reviewRecommendation,refresh:refresh,minimumMarkedActivities:MIN_MARKED_ACTIVITIES,levels:LEVELS});
-  document.addEventListener("DOMContentLoaded",refresh);
+  document.addEventListener("DOMContentLoaded",function(){refresh();observeStudentSessionBanner();});
   document.addEventListener("pacificEducationTeacherReviewCompleted",refresh);
   document.addEventListener("pacificEducationDailyProgressRecorded",refresh);
   document.addEventListener("pacificEducationStudentChanged",refresh);
