@@ -159,8 +159,8 @@
       home.push({
         submissionId: "audio-activity-" + Date.now(),
         classId: ctx.classId,
-        studentId: "pilot-student-demo",
-        studentName: "Student",
+        studentId: ctx.studentId || null,
+        studentName: (function(){try{var c=JSON.parse(sessionStorage.getItem("paceduActiveStudentContextV1")||"null");return c&&c.identityVerified===true?String(c.displayName||"Student"):"Student";}catch(e){return "Student";}})(),
         classLevel: ctx.level,
         subject: ctx.subjectId,
         term: ctx.term,
