@@ -4,6 +4,7 @@ const fs = require("node:fs");
 
 const entry = fs.readFileSync("src/js/pacificEducationSinglePilotEntry.js", "utf8");
 const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+const selector = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
 const html = fs.readFileSync("src/index.html", "utf8");
 
 test("student registration can continue when a Class Reference has not been created", () => {
@@ -34,6 +35,12 @@ test("student identity and chosen class are retained across workspace pages only
   assert.match(sequential, /Current pilot class:/);
   assert.match(sequential, /This workspace session stays on/);
   assert.match(sequential, /SESSION_KEYS = \["paceduActiveStudentContextV1"/);
+});
+test("ability selection and visible guidance are scoped to the active student's name and class", () => {
+  assert.match(selector, /var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1"/);
+  assert.match(selector, /context\.capability/);
+  assert.match(selector, /Ability guidance for " \+ context\.displayName \+ " \(" \+ context\.classLevel \+ "\)\./);
+  assert.match(selector, /Never inherit another child's globally saved ability/);
 });
 
 test("student class selection does not pretend a global roster choice is an individual assignment", () => {
