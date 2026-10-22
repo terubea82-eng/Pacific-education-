@@ -409,6 +409,7 @@
       if (abilitySelect.value !== "initial-assessment") {
         try { global.localStorage.setItem("paceduEnglishWorksheetAbility", abilitySelect.value); } catch (e) {}
         abilityStatus.textContent = "Selected for this worksheet: " + labelAbility(abilitySelect.value) + ". Teacher choice; verify against current learner evidence.";
+        showAbilityInfo();
       }
     });
     previewButton.addEventListener("click", renderPreview);
