@@ -82,6 +82,28 @@ jobs:
               return u.protocol === 'https:' && allowedHosts.some(h => u.hostname === h || u.hostname.endsWith('.' + h));
             } catch (_) { return false; }
           }
+          // Some publisher feeds expose an updated timestamp in their publication
+          // field. WHO article URLs encode the original publication date as
+          // /news/item/DD-MM-YYYY-...; reject any feed date that contradicts it.
+          function urlPublicationDate(value) {
+            try {
+              const u = new URL(String(value || ''));
+              if (!(u.hostname === 'who.int' || u.hostname.endsWith('.who.int'))) return null;
+              const m = u.pathname.match(/\\/news\\/item\\/(\\d{2})-(\\d{2})-(\\d{4})(?:-|\\/|$)/i);
+              return m ? m[3] + '-' + m[2] + '-' + m[1] : null;
+            } catch (_) { return null; }
+          }
+          function dateMatchesUrlPublicationDate(value, timestamp) {
+            const expected = urlPublicationDate(value);
+            return !expected || new Date(timestamp).toISOString().slice(0, 10) === expected;
+          }
+          // Regression guard: this 2020 WHO article must never be accepted with
+          // the 2026 update timestamp previously emitted by the feed.
+          const whoRegressionUrl = 'https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response';
+          if (dateMatchesUrlPublicationDate(whoRegressionUrl, Date.parse('2026-10-10T07:49:45.000Z')) ||
+              !dateMatchesUrlPublicationDate(whoRegressionUrl, Date.parse('2020-08-27T00:00:00.000Z'))) {
+            throw new Error('WHO publication-date regression test failed.');
+          }
           function subjects(text) {
             const t = String(text || '').toLowerCase(), s = [];
             if (/literacy|reading|language|english|teacher|school|education|learning/.test(t)) s.push('English');
@@ -109,6 +131,12 @@ jobs:
               // malformed, older-than-180-day, and future-dated items.
               if (!title || !approvedUrl(url) || !Number.isFinite(publishedTime) ||
                   publishedTime < cutoffTime || publishedTime > Date.now() + 24 * 60 * 60 * 1000) continue;
+              if (!dateMatchesUrlPublicationDate(url, publishedTime)) {
+                console.warn('Rejected feed date that conflicts with publisher URL date: ' + url +
+                  ' (feed=' + new Date(publishedTime).toISOString() +
+                  ', URL=' + urlPublicationDate(url) + ')');
+                continue;
+              }
               // Exclude navigation/noise while keeping education and broad public
               // interest stories useful for teacher-led current-affairs lessons.
               const relevance = (title + ' ' + a.description).toLowerCase();
