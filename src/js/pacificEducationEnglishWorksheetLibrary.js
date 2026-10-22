@@ -45,7 +45,7 @@
   }
   function makeWorksheet(level, ability, day, subject) {
     var selectedSubject = SUBJECTS.some(function(s){return s[0]===subject;}) ? subject : "English";
-    var worksheet = englishMakeWorksheet(level, ability, day);
+    var worksheet = makeEnglishWorksheet(level, ability, day);
     worksheet.subject = selectedSubject;
     if (day !== 1 && selectedSubject !== "English") {
       var content = subjectActivity(selectedSubject, level, ability, day, stageFor(classNumber(level)), topicFor(day));
