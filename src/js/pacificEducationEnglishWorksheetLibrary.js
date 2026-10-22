@@ -20,6 +20,95 @@
     ["Music", "Music"], ["Digital Literacy", "Digital Literacy"],
     ["iTaukei Language", "iTaukei Language"], ["Hindi", "Hindi"]
   ];
+  function subjectTasksFor(subject, stage, ability, topic) {
+    var tasks = {
+      "English": {
+        early:["Name, point to, sign, or select two things in the picture; communicate one detail.","Listen to or read a short sentence and match it to a picture or object.","Retell one part using words, signs, pictures, or communication support."],
+        foundation:["Identify who or what the passage is about.","Find one word or sentence that supports an answer.","Write, dictate, sign, or select one clear sentence about the topic."],
+        middle:["State the main idea and select two supporting details.","Explain one word using clues from the passage.","Write a short paragraph and revise one sentence using feedback."],
+        junior:["Summarise the passage and distinguish fact from opinion where possible.","Point to evidence for an inference and explain the connection.","Write a structured paragraph with claim, evidence, and explanation."],
+        senior:["Analyse the central claim, audience, and strength of evidence.","Identify an assumption or limitation affecting interpretation.","Write a reasoned response considering an alternative interpretation."]
+      },
+      "Mathematics": {
+        early:["Count or move objects to show a small group.","Match numerals to quantities and show how you counted.","Make a group with one more or one less and compare."],
+        foundation:["Use counters, drawings, or number sentences to solve the sharing problem.","Show the calculation in two ways and check the answer.","Create a similar sharing problem using classroom objects."],
+        middle:["Represent the problem with a diagram and calculation.","Explain why the operation fits and estimate the result.","Change one number and describe how the answer changes."],
+        junior:["Show a complete solution and define the quantities used.","Check the result using an inverse operation or second strategy.","Create a related problem and explain its assumptions."],
+        senior:["Compare two solution methods for efficiency and accuracy.","State assumptions, units, and limits on the result.","Extend the problem, solve it, and justify the method."]
+      },
+      "Science": {
+        early:["Observe the plant or picture and communicate one thing you notice.","Sort picture cards into same and different.","Predict what might happen next and show or tell why."],
+        foundation:["Identify what changes and what stays the same in the investigation.","Record observations using words, pictures, marks, or an accessible format.","Compare a prediction with observed evidence."],
+        middle:["Name the variable changed and the conditions kept the same.","Record results in a simple table or labelled drawing.","Write a conclusion and identify one possible source of error."],
+        junior:["Form a testable question and identify variables to change and control.","Explain how repeated observations could improve reliability.","Use results to support a conclusion and suggest a fair-test improvement."],
+        senior:["Evaluate method, controls, sample size, and possible bias.","Separate observed results from explanations inferred from them.","Propose a revised investigation and justify how it strengthens evidence."]
+      },
+      "Social Studies": {
+        early:["Identify a shared place in a picture or local community.","Show one safe way to care for that place.","Role-play or communicate how to seek help with a problem."],
+        foundation:["Name two shared places and one responsibility for each.","Sort helpful and harmful actions and explain one choice.","Suggest a fair class rule for caring for a shared place."],
+        middle:["Describe a community issue and identify who is affected.","Compare two possible responses and one benefit of each.","Plan a small action and decide how to review its effect."],
+        junior:["Identify different stakeholder viewpoints in a local issue.","Separate evidence from opinion and identify a missing perspective.","Recommend an action considering fairness, resources, and consequences."],
+        senior:["Analyse causes and effects using more than one perspective.","Evaluate the reliability and limits of information sources.","Defend a practical recommendation and address a counterargument."]
+      },
+      "Healthy Living": {
+        early:["Choose a picture showing a healthy routine and communicate why.","Practise the routine using pretend items or safe demonstration.","Identify a trusted adult who can help when unwell or unsafe."],
+        foundation:["Put a handwashing or safe-water routine in the correct order.","Identify a barrier to the routine and ask for support.","Make a simple daily healthy-routine plan."],
+        middle:["Explain how a daily choice can affect wellbeing and safety.","Compare two routines and identify which is safer and why.","Create a realistic reminder and decide how to check its usefulness."],
+        junior:["Explain links between a health choice, risk, and protective action.","Assess a health message for evidence and misleading claims.","Develop an inclusive routine for different needs."],
+        senior:["Evaluate a health claim and distinguish evidence from unsupported advice.","Analyse social or environmental barriers without blaming individuals.","Propose an evidence-informed action and a way to evaluate its impact."]
+      },
+      "Physical Education": {
+        early:["Practise or adapt one safe movement in a clear space.","Identify a stop signal and demonstrate how to respond.","Take turns in a movement game and communicate how it felt."],
+        foundation:["Perform or adapt a warm-up movement safely.","Follow a short movement sequence and identify the next step.","Describe one way to include a teammate with different movement needs."],
+        middle:["Practise a skill and record one strength and one next step.","Apply a game rule and explain how it supports safety or fairness.","Adapt the activity so everyone can participate."],
+        junior:["Set a specific skill goal and record practice evidence.","Analyse how technique, space, rules, or teamwork affected performance.","Suggest an adjustment that improves safety, inclusion, or fair play."],
+        senior:["Design a safe practice plan with a measurable goal and review point.","Use observation evidence to evaluate performance and note limitations.","Justify adaptations for different participants and risks."]
+      },
+      "Arts and Crafts": {
+        early:["Choose materials by texture, shape, or colour and communicate the choice.","Make a simple design using safe materials or an accessible alternative.","Show one feature of the finished work and what it represents."],
+        foundation:["Sketch or arrange a design before making it.","Test how two materials or shapes fit and adjust the design.","Explain one choice made during the making process."],
+        middle:["Create a design communicating an idea using two elements.","Test the construction and record one change after checking it.","Evaluate the finished work against its purpose."],
+        junior:["Plan a prototype and identify materials, constraints, and safety needs.","Test the prototype, document a problem, and revise it.","Explain how form, material, and audience influence the design."],
+        senior:["Compare design concepts against clear criteria.","Evaluate material use, accessibility, durability, and environmental impact.","Present a justified design and reflect on trade-offs."]
+      },
+      "Music": {
+        early:["Show a steady beat by tapping, moving, or indicating it.","Copy a short sound or movement pattern and take a turn leading.","Choose or communicate a sound matching a mood or idea."],
+        foundation:["Repeat a short rhythm pattern using an accessible mode.","Identify when a pattern repeats or changes.","Create and share a two-part pattern."],
+        middle:["Perform or record a rhythm and mark its repeated section.","Compare two patterns and describe how they differ.","Create a short piece with a clear beginning and ending."],
+        junior:["Use rhythm, tempo, dynamics, or texture in a short composition.","Explain how a musical choice changes the effect on a listener.","Revise the piece after feedback and describe the improvement."],
+        senior:["Analyse how musical elements support mood, structure, or meaning.","Compare interpretations using audible or notated evidence.","Plan a piece for a stated audience and justify artistic choices."]
+      },
+      "Digital Literacy": {
+        early:["Sort picture cards into public and private information.","Practise asking a trusted adult before opening an unfamiliar link.","Show one safe way to use a device or shared resource."],
+        foundation:["Identify personal information that should not be posted publicly.","Compare a trusted class resource with an unfamiliar message.","Create a safe-use reminder using text, drawing, or symbols."],
+        middle:["Check a source for author, date, purpose, and supporting evidence.","Identify a suspicious-message feature and a safe next step.","Explain why passwords and private details should not be shared."],
+        junior:["Compare two sources and justify which is more reliable.","Explain how to verify a potentially misleading message.","Draft a safe digital workflow that protects personal information."],
+        senior:["Evaluate source credibility, bias, evidence, and currency.","Analyse a privacy or security scenario and propose safeguards.","Design a digital-literacy guide and justify its advice."]
+      },
+      "iTaukei Language": {
+        early:["With teacher-verified local examples, match a familiar word to an object.","Respond to a short greeting in an accessible communication mode.","Select or indicate one familiar expression with support."],
+        foundation:["Use verified iTaukei words to match familiar objects and actions.","Identify the meaning of a locally checked phrase.","Create a simple response using verified vocabulary."],
+        middle:["Identify the main idea of a locally verified short text.","Identify familiar vocabulary in context and ask about an unfamiliar word.","Compose a short response using teacher-reviewed examples."],
+        junior:["Summarise a verified text and support the summary with details.","Discuss expressions only where accurate local resources are available.","Prepare a response and review language accuracy with the teacher."],
+        senior:["Analyse purpose, audience, and meaning in a verified text.","Discuss language variation using locally validated examples.","Revise a response with a fluent speaker or qualified teacher checking accuracy."]
+      },
+      "Hindi": {
+        early:["With teacher-verified Hindi examples, match a familiar word to an object.","Respond to a short greeting in an accessible communication mode.","Select or indicate one familiar expression with support."],
+        foundation:["Use verified Hindi words to match familiar objects and actions.","Identify the meaning of a locally checked phrase.","Create a simple response using verified vocabulary."],
+        middle:["Identify the main idea of a teacher-verified short text.","Identify familiar vocabulary in context and ask about an unfamiliar word.","Compose a short response using teacher-reviewed examples."],
+        junior:["Summarise a verified text and support the summary with details.","Discuss word choice using accurate examples and suitable references.","Prepare a response and review language accuracy with the teacher."],
+        senior:["Analyse purpose, audience, and meaning in a verified text.","Compare interpretations using evidence and reliable language references.","Revise a response with a proficient speaker or qualified teacher checking accuracy."]
+      }
+    };
+    var stageKey = stage === "early" ? "early" : stage === "foundation" ? "foundation" : stage === "middle" ? "middle" : stage === "junior-secondary" ? "junior" : "senior";
+    var selected = (tasks[subject] || tasks.English)[stageKey].slice();
+    if (ability === "support") selected[0] = "Supported start: " + selected[0] + " The teacher may model the first step and offer accessible choices.";
+    if (ability === "developing") selected[1] += " Offer one hint if needed, then allow an independent attempt.";
+    if (ability === "expected") selected[2] += " Complete independently where possible and show the evidence or process.";
+    if (ability === "extension") selected[2] += " Extension: compare an alternative and justify which is more effective.";
+    selected.push("Teacher records: independent / with support / not yet demonstrated / not observed, then gives one specific next step.");
+    return selected;
+  }
   function subjectActivity(subject, level, ability, day, stage, topic) {
     var bank = {
       "English": {topic:"Reading comprehension and communication", passage:"Read the short text carefully. A class group planned a useful activity. Each learner shared an idea, listened to others, and checked the information before making a decision. They explained their choice with details from the text.", qs:[["What did the learners do before deciding?","They checked information","They left the class","They ignored each other","They guessed without listening",0],["Which action shows cooperation?","Listening to others","Hiding the plan","Skipping the task","Changing the topic",0],["What supports a good answer?","Details from the text","A random guess","The longest option","A friend’s name",0]]},
@@ -43,7 +132,7 @@
     if (ability === "extension") stagePassage += " Extension: compare another possible approach and justify which option is most effective, using evidence.";
     var questions = item.qs.map(function(q,i){ return {number:i+1,type:"multiple-choice",prompt:q[0],options:q.slice(1,5),answerIndex:q[5],answer:q[q[5]+1]}; });
     return {subject:subject,topic:item.topic,readingText:stagePassage,questions:questions,
-      tasks:["Read, listen to, or access the passage in an agreed accessible format.","Answer the questions and show evidence for your choices.","Review your answers and explain one thing you learned."],
+      tasks:subjectTasksFor(subject, stage, ability, topic),
       answerKey:questions.map(function(q){return {number:q.number,answer:q.answer};}),
       abilityGuidance:({support:"Teacher models the first item; offer read-aloud, picture/word cues, fewer choices at a time, and a sentence frame.",developing:"Learner attempts independently first; offer one hint or word bank if needed.",expected:"Learner answers independently and points to evidence or shows working.",extension:"Learner justifies answers, creates a similar question, or evaluates an alternative."})[ability],
       teacherReview:"Teacher checks each response, records independent / with support / not yet demonstrated / not observed, gives feedback, and confirms the next step. This sample content needs local curriculum and language review before classroom use.",
