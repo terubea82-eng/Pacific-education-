@@ -123,12 +123,15 @@
         var approvedHomeRecords = getApprovedHomeAssessments(studentId, classContext.classId);
 
         var adaptiveCapability = "expected";
-        var adaptiveStatus = "Independent expected-level learning recommended";
-        var adaptiveNext = "Independent Practice";
+        var adaptiveStatus = "No assessment-based ability update recorded yet";
+        var adaptiveNext = "Complete the assigned activity and assessment";
         try {
-            adaptiveCapability = localStorage.getItem("pacificEducationCapability") || "expected";
-            adaptiveStatus = localStorage.getItem("pacificEducationAdaptiveLearningStatus") || adaptiveStatus;
-            adaptiveNext = localStorage.getItem("pacificEducationAdaptiveNextActivity") || adaptiveNext;
+            var adaptiveStudentKey = encodeURIComponent(String(studentId));
+            var adaptiveClassKey = encodeURIComponent(String(classContext.classId));
+            var linkedCapabilityKey = "pacificEducationCapability:student:" + adaptiveClassKey + ":" + adaptiveStudentKey;
+            adaptiveCapability = localStorage.getItem(linkedCapabilityKey) || localStorage.getItem("pacificEducationCapability:" + classContext.classId) || "expected";
+            adaptiveStatus = localStorage.getItem("pacificEducationAdaptiveLearningStatus:" + classContext.classId + ":" + studentId) || adaptiveStatus;
+            adaptiveNext = localStorage.getItem("pacificEducationAdaptiveNextActivity:" + classContext.classId + ":" + studentId) || adaptiveNext;
         } catch (ignoreAdaptive) {}
 
         var reviewPath = "No teacher review recorded yet";
