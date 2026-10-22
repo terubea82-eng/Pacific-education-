@@ -5,6 +5,7 @@ const fs = require("node:fs");
 const entry = fs.readFileSync("src/js/pacificEducationSinglePilotEntry.js", "utf8");
 const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
 const selector = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+const runtime = fs.readFileSync("src/js/pacificEducationLearnerActivityRuntime.js", "utf8");
 const html = fs.readFileSync("src/index.html", "utf8");
 
 test("student registration can continue when a Class Reference has not been created", () => {
@@ -38,6 +39,15 @@ test("student identity and chosen class are retained across workspace pages only
   assert.match(sequential, /This workspace session stays on/);
   assert.match(sequential, /SESSION_KEYS = \["paceduActiveStudentContextV1"/);
 });
+test("activity evidence is attributed only to a current roster-matched learner", () => {
+  assert.match(runtime, /function verifiedLearnerContext\(\)/);
+  assert.match(runtime, /context\.identityVerified!==true/);
+  assert.match(runtime, /assigned\.studentRefs\.indexOf\(String\(context\.studentReference\)\)<0/);
+  assert.match(runtime, /studentId: ctx\.studentId \|\| null/);
+  assert.match(runtime, /identityStatus: ctx\.identityStatus/);
+  assert.doesNotMatch(runtime, /studentId: "pilot-student-demo"/);
+});
+
 test("student learning level is not self-selected and waits for marked evidence", () => {
   assert.match(selector, /var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1"/);
   assert.match(selector, /if \(activeStudentContext\(\)\) return false/);
