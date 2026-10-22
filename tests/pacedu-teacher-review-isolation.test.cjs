@@ -78,9 +78,13 @@ test("reviewing a teacher-entered answer records the individual decision without
   assert.equal(manualEvent.detail.status, "approved");
 });
 
-test("reviewing a normal learner response retains the existing adaptive-review behaviour", () => {
+test("reviewing one normal learner response does not assign a shared ability level", () => {
   const harness = createHarness([{
     type: "short_answer",
+    studentId: "STU-001",
+    classId: "CLASS-REF-1",
+    subject: "English",
+    term: "Term 1",
     day: 3,
     questionText: "What did you learn?",
     response: "I learned to greet people.",
@@ -89,11 +93,14 @@ test("reviewing a normal learner response retains the existing adaptive-review b
 
   harness.api.review(0, "needs-practice");
 
-  assert.equal(harness.values.get("pacificEducationCapability"), "remedial");
-  assert.equal(harness.values.get("pacificEducationAdaptiveLearningStatus"), "Teacher review recommends targeted re-teaching before progressing");
-  assert.equal(harness.values.get("pacificEducationAdaptiveNextActivity"), "Remedial / Re-teaching");
-  const lastReview = JSON.parse(harness.values.get("pacificEducationAdaptiveLastReview"));
-  assert.equal(lastReview.status, "needs-practice");
+  assert.equal(harness.values.get("pacificEducationCapability"), "existing-learner-capability");
+  assert.equal(harness.values.get("pacificEducationAdaptiveLearningStatus"), "existing-learner-status");
+  assert.equal(harness.values.get("pacificEducationAdaptiveNextActivity"), "existing-next-activity");
+  assert.deepEqual(JSON.parse(harness.values.get("pacificEducationAdaptiveLastReview")), { responseId: "existing-review" });
+  const evidenceEvent = harness.events.find((event) => event.type === "pacificEducationEvidenceBasedAbilityUpdated");
+  assert.ok(evidenceEvent);
+  assert.equal(evidenceEvent.detail.studentId, "STU-001");
+  assert.equal(evidenceEvent.detail.status, "needs-practice");
 });
 
 
