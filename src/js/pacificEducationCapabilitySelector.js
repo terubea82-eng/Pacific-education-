@@ -16,13 +16,36 @@
     remedial: "Remedial / Re-teaching: reteach the missing step in a different accessible way, model it, practise together, and check again without penalty.",
     extension: "Extension / Challenge: after the core task, invite the learner to justify a choice, compare alternatives, solve a new problem, or create an example."
   };
+  var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1";
+  function activeStudentContext() {
+    try {
+      var context = JSON.parse(window.sessionStorage.getItem(STUDENT_CONTEXT_KEY) || "null");
+      return context && context.role === "student" && context.displayName &&
+        /^Class (?:[1-9]|1[0-3])$/.test(context.classLevel) ? context : null;
+    } catch (error) { return null; }
+  }
+  function validCapability(value) {
+    return C.some(function (item) { return item.id === value; });
+  }
   function get() {
-    var v = window.localStorage.getItem("pacificEducationCapability");
-    return C.some(function (x) { return x.id === v; }) ? v : "expected";
+    var context = activeStudentContext();
+    /* Never inherit another child's globally saved ability when a student session is active. */
+    var v = context ? context.capability : window.localStorage.getItem("pacificEducationCapability");
+    return validCapability(v) ? v : "expected";
   }
   function set(v) {
-    if (!C.some(function (x) { return x.id === v; })) return false;
-    window.localStorage.setItem("pacificEducationCapability", v);
+    if (!validCapability(v)) return false;
+    try {
+      var context = activeStudentContext();
+      if (context) {
+        context.capability = v;
+        window.sessionStorage.setItem(STUDENT_CONTEXT_KEY, JSON.stringify(context));
+      }
+      /* Retain this key for existing lesson-renderer integrations and non-student pilot use. */
+      window.localStorage.setItem("pacificEducationCapability", v);
+    } catch (error) {
+      return false;
+    }
     if (window.PacificEducationCurriculumLessonRenderer &&
         typeof window.PacificEducationCurriculumLessonRenderer.refresh === "function") {
       window.PacificEducationCurriculumLessonRenderer.refresh();
@@ -52,7 +75,11 @@
     info.setAttribute("aria-live", "polite");
     info.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;margin:10px 0;padding:12px;border:2px solid #7bb9e8;border-radius:8px;background:#eef8ff;color:#17324d;line-height:1.5;white-space:normal;";
     function showGuidance() {
-      info.textContent = GUIDANCE[s.value] || GUIDANCE.expected;
+      var context = activeStudentContext();
+      var prefix = context
+        ? "Ability guidance for " + context.displayName + " (" + context.classLevel + "). "
+        : "General ability guidance. ";
+      info.textContent = prefix + (GUIDANCE[s.value] || GUIDANCE.expected);
     }
     s.addEventListener("change", function () {
       set(s.value);
