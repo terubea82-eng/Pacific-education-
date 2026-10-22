@@ -109,6 +109,8 @@
     s.addEventListener("focus", showGuidance);
     window.addEventListener("pacificEducationStudentChanged", showGuidance);
     document.addEventListener("pacificEducationCoverageRefresh", showGuidance);
+    document.addEventListener("pacificEducationCapabilityChanged", showGuidance);
+    document.addEventListener("pacificEducationAdaptiveLearningUpdated", showGuidance);
     h.appendChild(l);
     h.appendChild(document.createElement("br"));
     h.appendChild(s);
