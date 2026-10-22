@@ -13,6 +13,62 @@
     ["expected", "Working at current class goal"],
     ["extension", "Extension / deeper challenge"]
   ];
+  var SUBJECTS = [
+    ["English", "English"], ["Mathematics", "Mathematics"], ["Science", "Science"],
+    ["Social Studies", "Social Studies"], ["Healthy Living", "Healthy Living"],
+    ["Physical Education", "Physical Education"], ["Arts and Crafts", "Arts and Crafts"],
+    ["Music", "Music"], ["Digital Literacy", "Digital Literacy"],
+    ["iTaukei Language", "iTaukei Language"], ["Hindi", "Hindi"]
+  ];
+  function subjectActivity(subject, level, ability, day, stage, topic) {
+    var bank = {
+      "English": {topic:"Reading comprehension and communication", passage:"Read the short text carefully. A class group planned a useful activity. Each learner shared an idea, listened to others, and checked the information before making a decision. They explained their choice with details from the text.", qs:[["What did the learners do before deciding?","They checked information","They left the class","They ignored each other","They guessed without listening",0],["Which action shows cooperation?","Listening to others","Hiding the plan","Skipping the task","Changing the topic",0],["What supports a good answer?","Details from the text","A random guess","The longest option","A friend’s name",0]]},
+      "Mathematics": {topic:"Everyday problem solving", passage:"A school group has 24 books to share equally among 4 tables. Each table should receive the same number of books. Learners can use grouping, drawing, repeated subtraction, or division to show their thinking.", qs:[["How many books go to each table?","4","5","6","8",2],["Which operation can solve the sharing problem?","Division","Only addition","Spelling","Drawing letters",0],["How many books are shared altogether?","20","24","28","4",1]]},
+      "Science": {topic:"Observation and fair testing", passage:"A learner places one plant in sunlight and another similar plant in a dark cupboard. Both plants receive the same amount of water. The learner records changes each day and compares the results.", qs:[["What is the learner comparing?","Plants in different light conditions","Two kinds of books","Different classroom sounds","Two maps",0],["What should stay the same for a fair test?","Amount of water","Light condition","Plant location","The question",0],["Why record changes each day?","To track evidence over time","To decorate the page","To avoid observing","To guess the result",0]]},
+      "Social Studies": {topic:"Community and shared responsibility", passage:"People in a community use shared spaces such as roads, markets, parks, and schools. Community members can keep these places safe by following agreed rules, caring for facilities, and listening respectfully when problems are discussed.", qs:[["Which is a shared community space?","A public park","A private diary","One person’s pocket","A personal password",0],["What helps solve community problems?","Respectful discussion","Ignoring everyone","Damaging facilities","Spreading rumours",0],["Who can help care for shared spaces?","Community members","Only visitors","Nobody","Only children",0]]},
+      "Healthy Living": {topic:"Healthy daily choices", passage:"Healthy routines include drinking safe water, eating a variety of foods, washing hands with soap, resting, and asking a trusted adult for help when unwell. Different people may need different support to follow a routine.", qs:[["When is handwashing with soap useful?","Before eating and after using the toilet","Only once a month","Never","Only when playing",0],["Which is a healthy routine?","Drinking safe water","Skipping all rest","Sharing dirty cups","Ignoring illness",0],["Who can a learner ask for help when unwell?","A trusted adult","A stranger online","Nobody","An unknown caller",0]]},
+      "Physical Education": {topic:"Movement, safety and teamwork", passage:"Before a game, the class checks the playing area, listens to the rules, and warms up gently. During play, learners take turns, respect boundaries, and stop if someone is hurt or feels unsafe.", qs:[["Why warm up before activity?","To prepare the body for movement","To avoid all movement","To make rules disappear","To choose a winner early",0],["What should learners do if someone is hurt?","Stop and get appropriate help","Continue regardless","Hide the injury","Blame a teammate",0],["Which behaviour supports teamwork?","Taking turns","Refusing every turn","Ignoring safety rules","Changing rules secretly",0]]},
+      "Arts and Crafts": {topic:"Planning and making", passage:"An artist plans a design, chooses suitable materials, and tests how pieces fit together. The artist works safely, reuses useful materials where possible, and explains how the finished work communicates an idea.", qs:[["What should happen before making?","Plan the design","Throw away all materials","Ignore the idea","Skip safety",0],["Why test how pieces fit?","To check whether the design works","To make the task longer","To hide the materials","To avoid planning",0],["What can an artwork communicate?","An idea","Only a number","Nothing by definition","A timetable only",0]]},
+      "Music": {topic:"Rhythm and listening", passage:"A group practises a steady beat by clapping or tapping. They listen for when the pattern repeats and take turns leading. Learners who do not clap can tap, use an instrument, move, or indicate the beat another accessible way.", qs:[["What is a steady beat?","A regular pulse","A silent picture","A written paragraph","A random page",0],["What should group members do?","Listen and take turns","Play over everyone","Ignore the pattern","Stop all practice",0],["How can learners show the beat accessibly?","Tap, move, use an instrument, or indicate it","Only clap","Only write an essay","No response is allowed",0]]},
+      "Digital Literacy": {topic:"Safe and responsible technology use", passage:"Before sharing information online, a learner checks whether the source is trustworthy and whether personal details are included. Strong passwords should be private. If a message seems suspicious, the learner asks a trusted adult or teacher.", qs:[["What should remain private?","A password","A public weather report","A class topic","A library title",0],["What should you do with a suspicious message?","Check with a trusted adult or teacher","Share it with everyone","Send your password","Click every link",0],["Why check a source?","To judge whether information is trustworthy","To make the screen brighter","To skip reading","To reveal private details",0]]},
+      "iTaukei Language": {topic:"Language, listening and expression", passage:"Learners practise understanding a short message, identifying familiar words, and responding respectfully. The teacher should select accurate iTaukei words and examples appropriate to the local dialect and lesson goal; this template does not invent translations.", qs:[["What should the teacher verify before use?","Accuracy of the language examples","The page colour only","The longest answer","Nothing",0],["What skill is practised?","Listening and expression","Only multiplication","Plant growth","Running speed",0],["How should a learner respond?","In an accessible agreed way","Only in one fixed mode","Without understanding","By guessing every time",0]]},
+      "Hindi": {topic:"Language, reading and expression", passage:"Learners practise understanding a short message, identifying familiar words, and responding respectfully. The teacher should provide accurate Hindi text and examples appropriate to the learners and lesson goal; this template does not invent translations.", qs:[["What should the teacher verify before use?","Accuracy of the language examples","The page colour only","The longest answer","Nothing",0],["What skill is practised?","Reading and expression","Only multiplication","Plant growth","Running speed",0],["How should a learner respond?","In an accessible agreed way","Only in one fixed mode","Without understanding","By guessing every time",0]]}
+    };
+    var item = bank[subject] || bank.English;
+    var questions = item.qs.map(function(q,i){ return {number:i+1,type:"multiple-choice",prompt:q[0],options:q.slice(1,5),answerIndex:q[5],answer:q[q[5]+1]}; });
+    return {subject:subject,topic:item.topic,readingText:item.passage,questions:questions,
+      tasks:["Read, listen to, or access the passage in an agreed accessible format.","Answer the questions and show evidence for your choices.","Review your answers and explain one thing you learned."],
+      answerKey:questions.map(function(q){return {number:q.number,answer:q.answer};}),
+      abilityGuidance:({support:"Teacher models the first item; offer read-aloud, picture/word cues, fewer choices at a time, and a sentence frame.",developing:"Learner attempts independently first; offer one hint or word bank if needed.",expected:"Learner answers independently and points to evidence or shows working.",extension:"Learner justifies answers, creates a similar question, or evaluates an alternative."})[ability],
+      teacherReview:"Teacher checks each response, records independent / with support / not yet demonstrated / not observed, gives feedback, and confirms the next step. This sample content needs local curriculum and language review before classroom use.",
+      status:"PENDING_TEACHER_REVIEW"};
+  }
+  var englishMakeWorksheet = makeWorksheet;
+  function makeWorksheet(level, ability, day, subject) {
+    var selectedSubject = SUBJECTS.some(function(s){return s[0]===subject;}) ? subject : "English";
+    var worksheet = englishMakeWorksheet(level, ability, day);
+    worksheet.subject = selectedSubject;
+    if (day !== 1 && selectedSubject !== "English") {
+      var content = subjectActivity(selectedSubject, level, ability, day, stageFor(classNumber(level)), topicFor(day));
+      Object.keys(content).forEach(function(k){worksheet[k]=content[k];});
+      worksheet.title = "Day " + day + " — " + selectedSubject + " Activity — " + level + " — " + labelAbility(ability);
+      worksheet.picturePrompt = "Illustration prompt: learners exploring " + selectedSubject.toLowerCase() + " through a safe, age-appropriate classroom activity."; 
+    } else if (day === 1 && selectedSubject !== "English") {
+      worksheet.subject = selectedSubject;
+      worksheet.title = "Day 1 — " + selectedSubject + " Initial Ability Check — " + level;
+      worksheet.topic = selectedSubject + " baseline observation";
+      worksheet.tasks = ["Complete a short teacher-selected task for " + selectedSubject + " using an accessible response mode.","Show what you can do independently, then try one supported example.","Teacher records evidence, support needed, and skills not yet observed."];
+      worksheet.teacherCheck = "Teacher must select a genuine class-appropriate " + selectedSubject + " diagnostic task, record evidence, and confirm the learner pathway. This generic prompt is not a scored assessment."; 
+    }
+    if (day !== 1 && selectedSubject === "English") {
+      var englishContent = subjectActivity("English", level, ability, day, stageFor(classNumber(level)), topicFor(day));
+      worksheet.questions = englishContent.questions;
+      worksheet.answerKey = englishContent.answerKey;
+      worksheet.abilityGuidance = englishContent.abilityGuidance;
+      worksheet.teacherReview = englishContent.teacherReview;
+    }
+    return worksheet;
+  }
   var TOPICS = [
     "Greetings and introductions", "Sounds and letters", "Everyday words",
     "Sentence building", "People and community", "Instructions and sequence",
@@ -338,6 +394,7 @@
     panel.style.cssText = "margin-top:18px;padding:14px;border:2px solid #2563eb;border-radius:10px;";
     node("h3", "English Daily Worksheets — Preview Before Printing", panel);
     node("p", "Choose the class, learner's current demonstrated ability, and day. Day 1 opens the initial ability check; Day 2 onwards provides differentiated practice.", panel);
+    var subjectSelect = addSelect(panel, "Subject", "paceduDailySubject", SUBJECTS, "English");
     var levelDefault = global.localStorage.getItem("pacificEducationLevel") || "Class 1";
     if (LEVELS.indexOf(levelDefault) < 0) levelDefault = "Class 1";
     var levelOptions = LEVELS.map(function (v) { return [v, v]; });
@@ -409,19 +466,20 @@
       var day = clampDay(dayInput.value);
       dayInput.value = String(day);
       var ability = day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value;
-      studentSheet = makeWorksheet(levelSelect.value, ability, day);
+      studentSheet = makeWorksheet(levelSelect.value, ability, day, subjectSelect.value);
       preview.textContent = "";
       var sheet = node("article", null, preview); sheet.id = "paceduEnglishStudentPrintSheet"; sheet.className = "pacedu-print-student-sheet";
       sheet.style.cssText = "background:white;color:#111;padding:18px;border:1px solid #888;margin-top:12px;";
       node("h2", studentSheet.title, sheet);
       node("p", "Name: __________________________________    Date: __________________", sheet);
-      node("p", "Topic: " + studentSheet.topic, sheet);
+      node("p", "Subject: " + (studentSheet.subject || "English") + " · Topic: " + studentSheet.topic, sheet);
       renderPicturePrompt(sheet, studentSheet.topic, stageFor(classNumber(studentSheet.level)));
       if (studentSheet.readingText) {
         node("h3", "Read / listen to the passage", sheet);
         node("p", studentSheet.readingText, sheet).style.cssText = "padding:12px;border:1px solid #999;line-height:1.6;";
       }
-      node("p", "Instructions: " + studentSheet.instructions, sheet);
+      node("p", "Instructions: " + (studentSheet.instructions || "Complete each activity. You may use an accessible response mode agreed with your teacher."), sheet);
+      if (studentSheet.abilityGuidance) node("p", "Ability guidance: " + studentSheet.abilityGuidance, sheet);
       var list = node("ol", null, sheet);
       studentSheet.tasks.forEach(function (task) { node("li", task, list).style.marginBottom = "14px"; });
       if (studentSheet.questionPlan && studentSheet.questionPlan.questions) {
@@ -434,6 +492,11 @@
           node("p", "Answer: __________________________________________________________", item);
         });
       }
+      if (studentSheet.questions && studentSheet.questions.length) {
+        node("h3", "Multiple-choice questions", sheet);
+        var mcq = node("ol", null, sheet);
+        studentSheet.questions.forEach(function(q){ var li=node("li",q.prompt,mcq); var ol=node("ol",null,li); ol.type="A"; q.options.forEach(function(option){node("li",option,ol);}); node("p","Your answer: ______",li); });
+      }
       for (var i = 0; i < studentSheet.responseLines; i += 1) node("p", "________________________________________________________________", sheet).style.margin = "16px 0";
       node("p", "I tried the tasks:  □ Yes   □ I need help with: ______________________________", sheet);
       var guide = node("aside", null, preview); guide.id = "paceduEnglishTeacherGuide";
@@ -442,6 +505,8 @@
       node("p", studentSheet.teacherCheck, guide);
       node("p", studentSheet.differentiationNote, guide);
       node("p", studentSheet.sourceNote + " Status: " + studentSheet.status + ".", guide);
+      if (studentSheet.answerKey) { node("h4", "Answer key — teacher only", guide); studentSheet.answerKey.forEach(function(a){node("p","Q"+a.number+": "+a.answer,guide);}); }
+      if (studentSheet.teacherReview) node("p", studentSheet.teacherReview, guide);
       printButton.disabled = false;
     }
     if (Number(dayInput.value) === 1) abilitySelect.value = "initial-assessment";
