@@ -1183,7 +1183,7 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
-  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("not verified");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("prototype");
 
   await shell.locator("#peSequentialNext").click();
   await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
@@ -1266,6 +1266,9 @@ test("student workspace skips redundant setup pages and opens daily activity dir
     try {
       localStorage.setItem("pacificEducationLevel", "Class 1");
       localStorage.setItem("pacificEducationSubject", "English");
+      localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+        "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Class Level Repair Test",
         role: "Student",
