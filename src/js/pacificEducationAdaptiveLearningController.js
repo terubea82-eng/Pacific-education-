@@ -89,7 +89,8 @@
     if (!context.classId) return {success:false,error:"Class Reference required",prototype:true};
     if (result && result.classId && String(result.classId) !== String(context.classId)) return {success:false,error:"Assessment belongs to a different Class Reference",prototype:true};
     if (!context.studentId) return {success:false,error:"Select the learner from the class roster before updating ability from assessment evidence",prototype:true};
-    if (result && result.studentId && String(result.studentId) !== context.studentId) return {success:false,error:"Assessment belongs to a different learner",prototype:true};
+    if (!result || !result.studentId) return {success:false,error:"Assessment must identify the learner before ability can be updated",prototype:true};
+    if (String(result.studentId) !== context.studentId) return {success:false,error:"Assessment belongs to a different learner",prototype:true};
     var passed = result && (result.passed === true || result.pass === true);
     if (!passed && Number.isFinite(score)) passed = score >= 60;
 
