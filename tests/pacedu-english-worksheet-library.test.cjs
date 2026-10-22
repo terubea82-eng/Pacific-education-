@@ -140,3 +140,60 @@ test("does not silently force Developing when a saved worksheet choice is the on
   assert.equal(savedResult.source, "saved worksheet choice");
   assert.equal(savedResult.capability, "");
 });
+
+const capabilitySource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+
+test("ability selector stores and retrieves a separate ability for each selected student", () => {
+  const abilityStore = new Map();
+  const selectorWindow = {
+    localStorage: {
+      getItem(key) { return abilityStore.has(key) ? abilityStore.get(key) : null; },
+      setItem(key, value) { abilityStore.set(key, String(value)); }
+    },
+    PacificEducationStudentCoverageContext: { getStudentId() { return "student-a"; } },
+    PacificEducationTeacherClassRosterContext: {
+      getClassId() { return "class-7"; },
+      getStudents(classId) { return classId === "class-7" ? ["student-a", "student-b"] : []; }
+    }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(capabilitySource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  const selector = selectorWindow.PacificEducationCapabilitySelector;
+  assert.equal(selector.setCapability("developing"), true);
+  assert.equal(selector.getCapability(), "developing");
+  assert.equal(abilityStore.get("pacificEducationCapability:student:class-7:student-a"), "developing");
+  assert.equal(abilityStore.has("pacificEducationCapability"), false);
+
+  selectorWindow.PacificEducationStudentCoverageContext = { getStudentId() { return "student-b"; } };
+  assert.equal(selector.getCapability(), "expected");
+  assert.equal(selector.setCapability("advanced"), true);
+  assert.equal(abilityStore.get("pacificEducationCapability:student:class-7:student-b"), "advanced");
+
+  selectorWindow.PacificEducationStudentCoverageContext = { getStudentId() { return "student-a"; } };
+  assert.equal(selector.getCapability(), "developing");
+});
+
+test("ability selector falls back to general setting without a valid selected student", () => {
+  const abilityStore = new Map();
+  const selectorWindow = {
+    localStorage: {
+      getItem(key) { return abilityStore.has(key) ? abilityStore.get(key) : null; },
+      setItem(key, value) { abilityStore.set(key, String(value)); }
+    },
+    PacificEducationStudentCoverageContext: { getStudentId() { return "not-in-roster"; } },
+    PacificEducationTeacherClassRosterContext: {
+      getClassId() { return "class-7"; },
+      getStudents() { return ["student-a"]; }
+    }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(capabilitySource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  const selector = selectorWindow.PacificEducationCapabilitySelector;
+  assert.equal(selector.setCapability("extension"), true);
+  assert.equal(abilityStore.get("pacificEducationCapability"), "extension");
+  assert.equal(selector.getCapability(), "extension");
+});
