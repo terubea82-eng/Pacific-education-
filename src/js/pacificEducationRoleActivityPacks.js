@@ -314,15 +314,28 @@
     var levelName = String(context && context.level || "selected class");
     activity.id = "pacedu-daily-" + levelName.toLowerCase().replace(/[^a-z0-9]+/g, "-") +
       "-" + subject.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-ability-" + (index + 1) + "-day-" + (Number(day) || 1);
-    activity.title = levelName + " " + subject + " — Daily Activity";
-    activity.goal = "Practise " + subject.toLowerCase() + " skills at the learner's current demonstrated level.";
-    activity.task = "Day " + (Number(day) || 1) + ": " + task;
-    activity.check = [
-      "With support, the learner attempts the task and shows one step.",
-      "The learner completes the task with prompts and explains one choice.",
-      "The learner completes the task independently and explains the result.",
-      "The learner completes the task, explains the reasoning and applies it in a new way."
-    ][index];
+    /* Keep the existing subject-specific lesson as the main activity. Add the
+       four-level task as differentiated practice instead of replacing the lesson. */
+    var hasSpecificLesson = Boolean(activity.title && activity.task && activity.goal && activity.check);
+    if (!hasSpecificLesson) {
+      activity.title = levelName + " " + subject + " — Daily Activity";
+      activity.goal = "Practise " + subject.toLowerCase() + " skills at the learner's current demonstrated level.";
+      activity.task = "Day " + (Number(day) || 1) + ": " + task;
+      activity.check = [
+        "With support, the learner attempts the task and shows one step.",
+        "The learner completes the task with prompts and explains one choice.",
+        "The learner completes the task independently and explains the result.",
+        "The learner completes the task, explains the reasoning and applies it in a new way."
+      ][index];
+    } else {
+      activity.task += "\\n\\nAbility-level practice (" + ["Foundation", "Developing", "Expected", "Advanced"][index] + "): " + task;
+      activity.check += " Ability-level check: " + [
+        "With support, the learner attempts the task and shows one step.",
+        "The learner completes the task with prompts and explains one choice.",
+        "The learner completes the task independently and explains the result.",
+        "The learner completes the task, explains the reasoning and applies it in a new way."
+      ][index];
+    }
     activity.evidence = "Learner response, completion, support needed and teacher observation";
     activity.source = "Original PacEdu differentiated activity draft; teacher review required.";
     activity.curriculumStatus = "PENDING_TEACHER_REVIEW — check against the current Fiji syllabus, term plan and achievement indicators for this class and subject. Not Ministry-approved.";
