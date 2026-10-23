@@ -131,14 +131,24 @@ test("retrieves the class-specific saved capability and maps it to a worksheet b
   assert.equal(library.getStoredAbility().source, "class assessment");
 });
 
-test("uses the saved global capability when no class-specific result exists", () => {
+test("uses the saved global capability only when no class is selected", () => {
   stored.clear();
-  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-8"; } };
+  window.PacificEducationTeacherClassRosterContext = null;
   stored.set("pacificEducationCapability", "expected");
   const globalResult = library.getStoredAbility();
   assert.equal(globalResult.ability, "expected");
   assert.equal(globalResult.source, "saved learning capability");
   assert.equal(globalResult.capability, "expected");
+});
+
+test("a selected class does not inherit a general ability without class evidence", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-8"; } };
+  stored.set("pacificEducationCapability", "advanced");
+  const classResult = library.getStoredAbility();
+  assert.equal(classResult.ability, "initial-assessment");
+  assert.equal(classResult.source, "no saved learner evidence; Day 1 check required");
+  assert.equal(classResult.hasEvidence, false);
 });
 
 test("does not silently force Developing when a saved worksheet choice is the only available category", () => {
