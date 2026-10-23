@@ -34,10 +34,9 @@
     var classes=rosterClasses(),items=[];
     Object.keys(classes).forEach(function(id){
       var c=classes[id]||{};
-      var classSubject=String(c.subject||"").trim();
-      if(!classSubject||classSubject.toLowerCase()===subject.toLowerCase()){
-        items.push({id:id,label:String(c.className||c.level||id),level:String(c.level||c.className||"")});
-      }
+      /* Class choices are shared across subjects. A roster's optional subject
+         field must never hide a class when the teacher changes the subject. */
+      items.push({id:id,label:String(c.className||c.level||id),level:String(c.level||c.className||"")});
     });
     if(!items.length){
       items.push({id:"",label:"ECE",level:"ECE"});
@@ -64,6 +63,18 @@
           level.value=item.level;
         }
         if(subjectSelect)subjectSelect.value=subject;
+        /* Keep the selected subject/class as one shared context for the learner
+           activity, workplan, lesson plan and existing teacher-review controls. */
+        try{
+          window.localStorage.setItem("pacificEducationSubject",subject);
+          window.localStorage.setItem("pacificEducationLevel",item.level);
+          window.localStorage.setItem("pacificEducationClassLevel",item.level);
+          if(item.id)window.localStorage.setItem("pacificEducationClassId",item.id);
+        }catch(e){}
+        var planningSubject=document.getElementById("paceduTeacherPlanningSubject");
+        if(planningSubject)planningSubject.value=subject;
+        var planningClass=document.getElementById("paceduTeacherPlanningClass");
+        if(planningClass)planningClass.value=item.level;
         if(panel){
           panel.hidden=false;
           panel.removeAttribute("aria-hidden");
@@ -96,7 +107,7 @@
     if(planSubject&&planSubject.parentElement)planSubject.parentElement.style.display="none";
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
     if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
-    var hint=node("p","Tap a subject to display its classes. Daily activities are generated from the existing PacEdu activity library and remain subject to teacher review.");
+    var hint=node("p","One linked workflow: choose a subject, choose any class (ECE–Class 13), then review that class's matching student worksheet, teacher workplan and lesson plan. Print / Save as PDF or download the plan. All generated content requires teacher review.");
     hint.setAttribute("role","note");
     grid.parentNode.insertBefore(hint,grid.nextSibling);
   }
