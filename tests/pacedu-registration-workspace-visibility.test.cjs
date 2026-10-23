@@ -39,7 +39,7 @@ test("direct Registration handoff releases startup guard and reveals the role wo
   await expect(page.locator("#teacherDashboard")).toBeVisible();
 });
 
-test("guided Rules to Registration opens the teacher-only workspace and keeps it visible after startup recovery", async ({ page }) => {
+test("guided Rules to Registration opens the role workspace and keeps it visible after startup recovery", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => {
     class FakeUtterance { constructor(text) { this.text = text; this.lang = ""; this.rate = 1; this.volume = 1; this.voice = null; } }
@@ -70,8 +70,8 @@ test("guided Rules to Registration opens the teacher-only workspace and keeps it
 
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
-  // Guided handoff opens the teacher-only daily workspace directly; the general App Menu stays hidden.
-  await expect(page.locator("#pacificEducationAppMenu")).toBeHidden();
+  // The guided handoff must reveal the role workspace; the App Menu remains available after registration.
+  await expect(page.locator("#pacificEducationAppMenu")).toBeVisible();
   await expect(page.locator("#teacherDashboard")).toBeVisible();
   await expect(page.locator("#peSequentialBack")).toBeVisible();
   await expect(page.locator("#peSequentialNext")).toBeVisible();
