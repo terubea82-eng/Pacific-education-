@@ -267,8 +267,7 @@
       if (classId) {
         capability = String(global.localStorage.getItem("pacificEducationCapability:" + classId) || "").toLowerCase();
         if (capability) source = "class assessment";
-      }
-      if (!capability) {
+      } else {
         capability = String(global.localStorage.getItem("pacificEducationCapability") || "").toLowerCase();
         if (capability) source = "saved learning capability";
       }
