@@ -46,7 +46,7 @@ test("student activities are differentiated into four groups for all supported c
     for (const activity of activities) {
       assert.ok(activity, level + " " + subject + " activity exists");
       assert.match(activity.curriculumStatus, /PENDING_TEACHER_REVIEW/);
-      assert.match(activity.task, /Day 2:/);
+      assert.match(activity.task, /Day 2:/);\n      assert.ok(activity.nextLevelPractice, "next-step practice is provided");\n      assert.ok(activity.progressionSuccessCriteria, "next-step success check is provided");\n      assert.match(activity.promotionRule, /teacher reviews the evidence/);
     }
     assert.equal(new Set(activities.map(activity => activity.task)).size, 4,
       level + " " + subject + " tasks differ by ability");
@@ -64,5 +64,5 @@ test("ability labels map to four task groups without presenting them as official
   assert.match(foundation.task, /with prompts|with support/i);
   assert.match(advanced.task, /compare|justify|support/i);
   assert.equal(foundation.verificationStatus, "PENDING_TEACHER_REVIEW");
-  assert.equal(advanced.verificationStatus, "PENDING_TEACHER_REVIEW");
+  assert.equal(advanced.verificationStatus, "PENDING_TEACHER_REVIEW");\n  assert.equal(foundation.nextAbility, "Developing");\n  assert.equal(advanced.nextAbility, "Advanced transfer");\n  assert.notEqual(foundation.nextLevelPractice, foundation.task);
 });
