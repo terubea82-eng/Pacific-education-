@@ -29,10 +29,19 @@ test("photo evidence uses the active activity identity and exact subject/term co
   assert.match(camera, /term: String\(ctx\.term/);
 });
 
-test("teacher queue safely previews submitted image evidence for manual review", () => {
+test("teacher queue previews only strictly validated local image data", () => {
   assert.match(queue, /function safePhoto/);
   assert.match(queue, /Student work photo — teacher review required/);
   assert.match(queue, /Photo evidence is not automatically marked/);
+  assert.match(queue, /img\.setAttribute\("src",photo\)/);
+});
+
+test("teacher queue renders submitted text as text and avoids HTML injection sinks", () => {
+  assert.match(queue, /textContent=String\(text\)/);
+  assert.match(queue, /root\.replaceChildren\(wrap\)/);
+  assert.doesNotMatch(queue, /\.innerHTML\s*=/);
+  assert.doesNotMatch(queue, /onclick\s*=/i);
+  assert.match(queue, /addEventListener\("click"/);
 });
 
 test("camera evidence module is loaded after the learner activity runtime", () => {
