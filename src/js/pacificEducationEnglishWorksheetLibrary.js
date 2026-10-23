@@ -5,7 +5,7 @@
  */
 (function (global, document) {
   "use strict";
-  var LEVELS = ["ECE", "Kindergarten"];
+  var LEVELS = ["ECE"];
   for (var i = 1; i <= 13; i += 1) LEVELS.push("Class " + i);
   var ABILITIES = [
     ["support", "Supported start"],
@@ -22,8 +22,7 @@
   function clampDay(day) { return Math.max(1, Math.min(365, Math.floor(Number(day) || 1))); }
   function classNumber(level) {
     var s = String(level || "");
-    if (/^ECE$/i.test(s)) return -1;
-    if (/kindergarten/i.test(s)) return 0;
+    if (/^(ece|kindergarten)$/i.test(s)) return -1;
     var m = s.match(/(?:class|year)\s*(\d+)/i);
     return m ? Math.max(1, Math.min(13, Number(m[1]))) : 1;
   }
@@ -170,7 +169,7 @@
       note: "Question types are a starting plan based on class stage and topic. Teacher must match them to the verified daily Fiji English achievement indicator before use." };
   }
   function makeWorksheet(level, ability, day) {
-    level = LEVELS.indexOf(String(level)) >= 0 ? String(level) : "Class 1";
+    level = /^kindergarten$/i.test(String(level || "").trim()) ? "ECE" : (LEVELS.indexOf(String(level)) >= 0 ? String(level) : "Class 1");
     ability = ABILITIES.some(function (a) { return a[0] === ability; }) ? ability : "developing";
     day = clampDay(day);
     if (day === 1) {
@@ -283,23 +282,36 @@
       advanced: "extension",
       extension: "extension"
     }[capability];
-    if (mapped) return { ability: mapped, source: source, capability: capability };
+    if (mapped) return { ability: mapped, source: source, capability: capability, hasEvidence: source === "class assessment" || source === "saved learning capability" };
     try {
       var saved = String(global.localStorage.getItem("paceduEnglishWorksheetAbility") || "").toLowerCase();
       if (["support", "developing", "expected", "extension"].indexOf(saved) >= 0) {
-        return { ability: saved, source: "saved worksheet choice", capability: "" };
+        return { ability: saved, source: "saved worksheet choice", capability: "", hasEvidence: true };
       }
     } catch (e) {}
-    return { ability: "developing", source: "default; no saved category found", capability: "" };
+    return { ability: "initial-assessment", source: "no saved learner evidence; Day 1 check required", capability: "", hasEvidence: false };
   }
   function addTeacherPanel(card) {
     if (!card || card.querySelector("#paceduEnglishWorksheetBuilder")) return;
+    var openButton = node("button", "📘 English — Daily Activities for All Classes", card);
+    openButton.id = "paceduOpenEnglishDailyActivities";
+    openButton.type = "button";
+    openButton.setAttribute("aria-expanded", "false");
+    openButton.style.cssText = "display:block;width:100%;min-height:48px;margin:12px 0;padding:12px;text-align:left;font-weight:700;border:2px solid #2563eb;border-radius:8px;background:#eff6ff;color:#111827;";
     var panel = node("section", null, card);
     panel.id = "paceduEnglishWorksheetBuilder";
+    panel.hidden = true;
     panel.style.cssText = "margin-top:18px;padding:14px;border:2px solid #2563eb;border-radius:10px;";
+    openButton.addEventListener("click", function () {
+      panel.hidden = !panel.hidden;
+      openButton.setAttribute("aria-expanded", panel.hidden ? "false" : "true");
+      openButton.textContent = panel.hidden ? "📘 English — Daily Activities for All Classes" : "📘 Close English Daily Activities";
+      if (!panel.hidden) panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     node("h3", "English Daily Worksheets — Preview Before Printing", panel);
-    node("p", "Choose the class, learner's current demonstrated ability, and day. Day 1 opens the initial ability check; Day 2 onwards provides differentiated practice.", panel);
+    node("p", "Choose ECE or Class 1–13, then the teaching day. Day 1 checks current skills. From Day 2, choose a band only from observed learner evidence. Preview and print the selected class worksheet.", panel);
     var levelDefault = global.localStorage.getItem("pacificEducationLevel") || "Class 1";
+    if (/^kindergarten$/i.test(levelDefault)) levelDefault = "ECE";
     if (LEVELS.indexOf(levelDefault) < 0) levelDefault = "Class 1";
     var levelOptions = LEVELS.map(function (v) { return [v, v]; });
     var levelSelect = addSelect(panel, "Class / level", "paceduEnglishWorksheetLevel", levelOptions, levelDefault);
@@ -332,7 +344,7 @@
       abilitySelect.setAttribute("required", "required");
       abilitySelect.style.cssText = "display:block!important;visibility:visible!important;position:relative;width:100%;min-height:46px;box-sizing:border-box;padding:10px;margin-top:4px;font:inherit;color:#111;background:#fff;border:2px solid #2563eb;border-radius:6px;opacity:1;";
     }
-    var abilityStatus = node("p", "Retrieved category: " + labelAbility(retrievedAbility.ability) + " (" + retrievedAbility.source + "). Change it only when current learner evidence supports a different band.", panel);
+    var abilityStatus = node("p", retrievedAbility.hasEvidence ? "Retrieved category: " + labelAbility(retrievedAbility.ability) + " (" + retrievedAbility.source + "). Change it only when current learner evidence supports a different band." : "No saved learner evidence yet. Day 1 is the initial ability check; do not infer a band from a default.", panel);
     abilityStatus.id = "paceduEnglishWorksheetAbilityStatus";
     abilityStatus.setAttribute("role", "status");
     abilityStatus.setAttribute("aria-live", "polite");
@@ -350,10 +362,16 @@
       extension: "Extension / deeper challenge: after the core task, ask the learner to explain reasoning, compare alternatives, or create a new example."
     };
     function showAbilityInfo() {
-      abilityInfo.textContent = "About this ability: " + (abilityDescriptions[abilitySelect.value] || abilityDescriptions.developing);
+      var selected = abilitySelect.value || "initial-assessment";
+      abilityInfo.textContent = "About this ability: " + (abilityDescriptions[selected] || abilityDescriptions["initial-assessment"]);
+      abilityInfo.style.display = "block";
+      abilityInfo.style.visibility = "visible";
     }
     abilitySelect.addEventListener("click", showAbilityInfo);
     abilitySelect.addEventListener("focus", showAbilityInfo);
+    abilitySelect.addEventListener("change", showAbilityInfo);
+    abilitySelect.addEventListener("input", showAbilityInfo);
+    abilitySelect.addEventListener("pointerup", showAbilityInfo);
     showAbilityInfo();
 
     var dayLabel = node("label", "Teaching day (1–365)", panel);
@@ -369,6 +387,12 @@
     function renderPreview() {
       var day = clampDay(dayInput.value);
       dayInput.value = String(day);
+      var savedEvidence = storedWorksheetAbility();
+      if (day > 1 && !savedEvidence.hasEvidence && abilitySelect.value === "initial-assessment") {
+        preview.textContent = "Complete the Day 1 initial ability check and record the learner evidence before creating a Day 2–365 ability worksheet.";
+        printButton.disabled = true;
+        return;
+      }
       var ability = day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value;
       studentSheet = makeWorksheet(levelSelect.value, ability, day);
       preview.textContent = "";
@@ -408,7 +432,7 @@
     abilitySelect.addEventListener("change", function () {
       if (abilitySelect.value !== "initial-assessment") {
         try { global.localStorage.setItem("paceduEnglishWorksheetAbility", abilitySelect.value); } catch (e) {}
-        abilityStatus.textContent = "Selected for this worksheet: " + labelAbility(abilitySelect.value) + ". Teacher choice; verify against current learner evidence.";
+        abilityStatus.textContent = "Selected for this worksheet: " + labelAbility(abilitySelect.value) + ". Confirm this matches recorded daily activity and term-assessment evidence; teacher review is required.";
         showAbilityInfo();
       }
     });
