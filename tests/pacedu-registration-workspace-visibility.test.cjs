@@ -35,7 +35,7 @@ test("direct Registration handoff releases startup guard and reveals the role wo
   await expect(page.locator("#peSequentialWorkspaceHome")).toBeVisible();
   await expect(page.locator("#peSequentialWorkspaceHome")).toContainText("Teacher");
   await page.locator("#peSequentialNext").click();
-  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Workspace");
+  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Daily Activities");
   await expect(page.locator("#teacherDashboard")).toBeVisible();
 });
 
