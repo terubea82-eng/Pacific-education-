@@ -152,6 +152,14 @@
       worksheet.title = "Day 1 — " + selectedSubject + " Initial Ability Check — " + level;
       worksheet.topic = selectedSubject + " baseline observation";
       worksheet.tasks = ["Complete a short teacher-selected task for " + selectedSubject + " using an accessible response mode.","Show what you can do independently, then try one supported example.","Teacher records evidence, support needed, and skills not yet observed."];
+      worksheet.questionPlan = {
+        count: worksheet.tasks.length,
+        types: ["initial-observation"],
+        questions: worksheet.tasks.map(function (task, index) {
+          return { number: index + 1, type: "initial-observation", prompt: task, topic: worksheet.topic, thinkingFocus: "observe-and-record" };
+        }),
+        note: "Subject-specific initial observation; teacher supplies the genuine class-appropriate task."
+      };
       worksheet.teacherCheck = "Teacher must select a genuine class-appropriate " + selectedSubject + " diagnostic task, record evidence, and confirm the learner pathway. This generic prompt is not a scored assessment."; 
     }
     if (day !== 1 && selectedSubject === "English") {
