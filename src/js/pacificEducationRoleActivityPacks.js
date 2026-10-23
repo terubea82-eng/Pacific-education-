@@ -485,6 +485,8 @@
     appendActivityDetail("Practice prompt", activity.practicePrompt);
     appendActivityDetail("Success check", activity.successCriteria);
     appendActivityDetail("Current ability level", activity.currentAbility);
+    appendActivityDetail("Ability evidence status", activity.abilityEvidenceStatus || "INSUFFICIENT_EVIDENCE");
+    appendActivityDetail("Ability evidence note", activity.abilityEvidenceMessage || "Use subject-specific reviewed evidence before personalising revision; missing work is not low ability.");
     appendActivityDetail("Next ability goal", activity.nextAbility);
     appendActivityDetail("Practice to build the next level", activity.nextLevelPractice);
     appendActivityDetail("Next-step success check", activity.progressionSuccessCriteria);
