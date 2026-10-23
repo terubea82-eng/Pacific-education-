@@ -36,6 +36,14 @@ test("teacher queue previews only strictly validated local image data", () => {
   assert.match(queue, /img\.setAttribute\("src",photo\)/);
 });
 
+test("teacher review queue shows learner name and reference for camera evidence", () => {
+  assert.match(queue, /x\.studentName\|\|x\.displayName\|\|x\.learnerNameOrReference/);
+  assert.match(queue, /x\.studentReference\|\|x\.learnerReference/);
+  assert.match(queue, /pe-review-learner-identity/);
+  assert.match(queue, /Learner reference:/);
+  assert.match(camera, /studentReference: learner\.studentReference/);
+});
+
 test("teacher queue renders submitted text as text and avoids HTML injection sinks", () => {
   assert.match(queue, /textContent=String\(text\)/);
   assert.match(queue, /root\.replaceChildren\(wrap\)/);
