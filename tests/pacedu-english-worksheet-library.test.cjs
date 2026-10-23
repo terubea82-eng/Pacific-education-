@@ -185,6 +185,29 @@ test("ability selector stores and retrieves a separate ability for each selected
   assert.equal(selector.getCapability(), "developing");
 });
 
+test("a selected child never inherits the general ability setting", () => {
+  const abilityStore = new Map([["pacificEducationCapability", "advanced"]]);
+  const selectorWindow = {
+    localStorage: {
+      getItem(key) { return abilityStore.has(key) ? abilityStore.get(key) : null; },
+      setItem(key, value) { abilityStore.set(key, String(value)); }
+    },
+    PacificEducationStudentCoverageContext: { getStudentId() { return "student-a"; } },
+    PacificEducationTeacherClassRosterContext: {
+      getClassId() { return "class-7"; },
+      getStudents() { return ["student-a", "student-b"]; }
+    }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(capabilitySource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  const selector = selectorWindow.PacificEducationCapabilitySelector;
+  assert.equal(selector.getCapability(), "expected");
+  assert.equal(abilityStore.get("pacificEducationCapability"), "advanced");
+  assert.equal(abilityStore.has("pacificEducationCapability:student:class-7:student-a"), false);
+});
+
 test("ability selector falls back to general setting without a valid selected student", () => {
   const abilityStore = new Map();
   const selectorWindow = {
