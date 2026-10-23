@@ -476,6 +476,7 @@
       if (!input) return;
       complete(type, input.value || "");
     },
-    assessmentPolicy: assessmentPolicy
+    assessmentPolicy: assessmentPolicy,
+    currentContext: function() { return Object.assign({}, active.context || {}, {type: active.type, dayNumber: active.day, activityId: "daily-activity-" + String(active.type || "activity") + "-day-" + String(active.day || 1)}); }
   };
 })(window, document);
