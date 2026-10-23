@@ -300,3 +300,42 @@ test("only an assigned teacher can write a valid review and clients cannot delet
     reviewedAt: new Date(),
   }));
 });
+
+
+test("private photo storage permits assigned learner upload and assigned teacher read only", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  await seedClassMembership("class-1", "teacher-a", "teacher");
+  await seedClassMembership("class-2", "teacher-outsider", "teacher");
+
+  const objectPath = "learnerWork/class-1/student-a/submission-storage-a/photo.jpg";
+  const studentStorage = testEnv.authenticatedContext("student-a").storage();
+  const teacherStorage = testEnv.authenticatedContext("teacher-a").storage();
+  const outsiderStorage = testEnv.authenticatedContext("teacher-outsider").storage();
+  const studentObject = ref(studentStorage, objectPath);
+  const imageBytes = new Uint8Array([255, 216, 255, 217]);
+
+  await assertSucceeds(uploadBytes(studentObject, imageBytes, { contentType: "image/jpeg" }));
+  await assertSucceeds(getBytes(ref(teacherStorage, objectPath)));
+  await assertFails(getBytes(ref(outsiderStorage, objectPath)));
+});
+
+test("private photo storage rejects cross-learner upload, oversized file, and unsupported content type", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  const studentStorage = testEnv.authenticatedContext("student-a").storage();
+
+  await assertFails(uploadBytes(
+    ref(studentStorage, "learnerWork/class-1/student-b/foreign/photo.jpg"),
+    new Uint8Array([255, 216, 255, 217]),
+    { contentType: "image/jpeg" },
+  ));
+  await assertFails(uploadBytes(
+    ref(studentStorage, "learnerWork/class-1/student-a/too-large/photo.jpg"),
+    new Uint8Array(8 * 1024 * 1024 + 1),
+    { contentType: "image/jpeg" },
+  ));
+  await assertFails(uploadBytes(
+    ref(studentStorage, "learnerWork/class-1/student-a/not-jpeg/photo.jpg"),
+    new Uint8Array([1, 2, 3]),
+    { contentType: "text/plain" },
+  ));
+});
