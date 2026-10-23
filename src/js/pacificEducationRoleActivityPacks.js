@@ -186,11 +186,129 @@
     attachSharedAchievementIndicator(activity, context, number);
     return addDailyLearningSequence(activity, number, level, subject);
   }
+
+  /* Four-level daily differentiation for every Fiji school level.
+     Original PacEdu tasks are curriculum-aware drafts, not official syllabus claims.
+     Four learner levels describe observed task support; teachers confirm using evidence. */
+  var FOUR_ABILITY_TASKS = {
+    English: {
+      ECE: ["Match or point to a picture and name it with support.", "Name a familiar object and say a word about it.", "Say or write one clear sentence about a familiar object.", "Tell a short story about the object and explain one detail."],
+      Y1_2: ["Match pictures to words; trace or copy a word with support.", "Read familiar words and complete a sentence using a word bank.", "Read a short passage and answer who/what/where questions.", "Write a short paragraph and explain a word choice."],
+      Y3_5: ["Read a short text with prompts; identify a person or place.", "Read a paragraph and answer direct questions using clues.", "Summarise the main idea and support it with two details.", "Compare two characters or ideas and justify an interpretation."],
+      Y6_8: ["Use a text guide to find key facts and unfamiliar words.", "Answer literal and simple inferential questions with prompts.", "Write a structured paragraph with evidence from a text.", "Compare viewpoints and support a conclusion with evidence."],
+      Y9_10: ["Use a scaffold to identify a text's main claim and evidence.", "Explain the main idea and identify supporting evidence.", "Write a structured response using relevant evidence and clear paragraphs.", "Evaluate the writer's purpose, evidence and possible bias."],
+      Y11_13: ["Use a planning frame to identify the issue and key evidence.", "Explain an argument and select relevant supporting points.", "Develop a coherent analytical response with evidence and citations where required.", "Evaluate competing interpretations and defend a reasoned conclusion."]
+    },
+    Mathematics: {
+      ECE: ["Count or match up to three objects with adult support.", "Count a small set and match it to a numeral.", "Count, compare two sets and explain which has more.", "Make a repeating pattern and explain its rule."],
+      Y1_2: ["Count objects one by one and match totals to numerals.", "Solve simple addition or subtraction using objects.", "Solve a class-level number problem and show the steps.", "Create a related number problem and explain another solution."],
+      Y3_5: ["Use objects or a number line to solve a guided problem.", "Solve a one-step problem and show a model or calculation.", "Solve a multi-step problem and check the answer.", "Compare strategies and explain why one is efficient."],
+      Y6_8: ["Use a worked example to identify the correct operation.", "Solve a familiar ratio, fraction, measurement or number task with prompts.", "Solve a multi-step class-level problem and show working.", "Create and solve a harder real-life problem; justify assumptions."],
+      Y9_10: ["Identify known values and choose an operation with a scaffold.", "Solve a class-level algebra, geometry, statistics or number problem.", "Model a practical problem, show working and interpret the result.", "Compare models, test assumptions and explain limitations."],
+      Y11_13: ["Use a formula sheet or worked example to set up the problem.", "Apply the relevant method and check units or values.", "Solve a subject-level problem and interpret the result in context.", "Compare methods, justify assumptions and evaluate the result."]
+    },
+    Science: {
+      ECE: ["Point to or name one plant, animal or weather feature.", "Sort familiar pictures into two groups and say why.", "Observe one safe object and describe two features.", "Suggest a simple question about what might change and why."],
+      Y1_2: ["Match a picture to a simple living/non-living example.", "Observe a plant or weather picture and record one fact.", "Record two observations and ask a testable question.", "Predict what may happen and explain the reason."],
+      Y3_5: ["Use a picture or word bank to identify an observation.", "Record observations in a table with support.", "Make a prediction, observe safely and compare results.", "Use results to explain a pattern and suggest a fair test."],
+      Y6_8: ["Follow a labelled diagram to identify the main parts.", "Describe a process and record results using a template.", "Plan a fair test, identify variables and explain findings.", "Evaluate the method and propose an improvement using evidence."],
+      Y9_10: ["Use a diagram or formula prompt to identify key variables.", "Explain a scientific process using a labelled diagram.", "Interpret data and support a conclusion with evidence.", "Evaluate data quality, uncertainty and alternative explanations."],
+      Y11_13: ["Use a scaffold to identify variables, units and relevant concepts.", "Apply a subject concept to explain a data set or process.", "Analyse results and construct an evidence-based explanation.", "Evaluate methodology, uncertainty and implications of the findings."]
+    },
+    "Social Science": {
+      ECE: ["Identify a familiar place or community helper in a picture.", "Name one way a helper supports the community.", "Describe two community roles and why they matter.", "Compare two roles and explain how they work together."],
+      Y1_2: ["Match a community helper to a picture of their work.", "Describe one place in the community and its use.", "Explain how people help keep a community safe and fair.", "Suggest a practical improvement for a shared place."],
+      Y3_5: ["Use a map or picture with support to locate a feature.", "Describe a local place and one change people make to it.", "Compare two ways people use resources or work together.", "Use simple evidence to explain a community issue and response."],
+      Y6_8: ["Use a map key or source prompt to find information.", "Describe causes or effects of a local or historical event.", "Compare sources or viewpoints and support a conclusion.", "Evaluate a proposed community response using evidence."],
+      Y9_10: ["Use a source guide to identify place, event or viewpoint.", "Explain a cause-and-effect relationship using a source.", "Compare evidence and explain a social, historical or geographic issue.", "Assess competing explanations and justify a conclusion."],
+      Y11_13: ["Use a planning frame to identify the issue and source.", "Explain a relevant concept and select supporting evidence.", "Analyse sources and construct a reasoned argument.", "Evaluate evidence, perspective and policy options; defend a conclusion."]
+    },
+    Health: {
+      ECE: ["Choose a picture showing a safe or healthy action.", "Show or name one handwashing step.", "Put handwashing steps in order with picture cues.", "Explain when handwashing helps and teach the steps to someone."],
+      Y1_2: ["Identify a healthy routine from picture choices.", "Put handwashing or toothbrushing steps in order.", "Explain why a daily hygiene routine matters.", "Create a simple reminder that teaches a healthy routine."],
+      Y3_5: ["Use a prompt to identify a safe choice.", "Describe steps for a healthy routine and when to use it.", "Compare choices and explain likely effects on wellbeing.", "Design a practical health message and explain its audience."],
+      Y6_8: ["Use a checklist to identify a safe, healthy action.", "Explain how a routine can reduce a common health risk.", "Assess a scenario and justify a safe response.", "Evaluate health information and design a clear prevention message."],
+      Y9_10: ["Identify a risk and one protective action from a scenario.", "Explain links between choices and health outcomes.", "Use evidence to assess a health scenario and recommend action.", "Evaluate claims and develop an evidence-aware health message."],
+      Y11_13: ["Use a framework to identify risks and support options.", "Explain a health issue and identify reliable information needs.", "Assess options and justify a safe, practical recommendation.", "Evaluate evidence quality and propose a feasible health promotion plan."]
+    },
+    Agriculture: {
+      ECE: ["Point to or name a plant and one thing it needs.", "Match a plant picture to water, light or soil.", "Draw a plant and name two things it needs to grow.", "Compare two plant pictures and explain a visible difference."],
+      Y1_2: ["Identify a seed, leaf or root using a picture.", "List two plant needs and describe a safe observation.", "Record a plant observation over time and explain a change.", "Suggest a simple way to care for a plant and explain why."],
+      Y3_5: ["Use a diagram to identify plant parts.", "Record plant growth observations in a simple table.", "Compare growth conditions and support a conclusion.", "Plan a small safe growing activity and identify what to measure."],
+      Y6_8: ["Label a crop or plant diagram with a word bank.", "Explain how water, soil and light affect plant growth.", "Plan and record a fair comparison of growing conditions.", "Use results to recommend a sustainable growing practice."],
+      Y9_10: ["Use a guide to identify a crop need or farm input.", "Explain one factor affecting crop growth or soil health.", "Analyse observations and recommend a suitable practice.", "Compare practices for sustainability, cost and local conditions."],
+      Y11_13: ["Use a planning frame to identify the production question.", "Explain relevant production factors and gather suitable evidence.", "Analyse data and justify an agricultural recommendation.", "Evaluate a production plan for sustainability, cost, risk and evidence."]
+    },
+    Arts: {
+      ECE: ["Make marks or choose colours with support.", "Copy a simple line, shape or rhythm.", "Create a repeated pattern and name what repeats.", "Change the pattern and explain how the change affects it."],
+      Y1_2: ["Choose materials and copy a simple pattern.", "Create a pattern using two shapes, colours or sounds.", "Create and describe an artwork or rhythm with a clear pattern.", "Develop a variation and explain the choices made."],
+      Y3_5: ["Follow a model to create one design element.", "Combine shapes, colours, movement or sound for a purpose.", "Create a complete work and explain its main idea.", "Compare two design choices and revise the work with reasons."],
+      Y6_8: ["Use a checklist to plan a basic composition.", "Use elements of art or performance to communicate an idea.", "Create, present and reflect on a finished work.", "Evaluate how choices communicate meaning to an audience."],
+      Y9_10: ["Use a planning template to select a technique.", "Create a work that communicates a stated theme.", "Refine a work using feedback and explain the decisions.", "Compare techniques and evaluate their effect on the audience."],
+      Y11_13: ["Use a brief to plan a manageable creative outcome.", "Apply selected techniques to express an intended idea.", "Develop and critique a portfolio piece with a clear rationale.", "Evaluate artistic choices, context and audience response with evidence."]
+    },
+    Technology: {
+      ECE: ["Choose a safe object that solves a simple need.", "Draw or describe a useful object and name its purpose.", "Design an organiser and label two parts.", "Suggest a change that makes the design easier to use."],
+      Y1_2: ["Choose a safe material from picture options.", "Draw a simple tool or organiser and label its use.", "Plan a design for a classroom need and explain its parts.", "Compare two designs and choose one with a reason."],
+      Y3_5: ["Identify a problem using a teacher prompt.", "Sketch a solution and label materials and parts.", "Build or model only with permission, then test against criteria.", "Use test results to improve the design and explain why."],
+      Y6_8: ["Use a checklist to identify a user need.", "Plan a design with materials, steps and safety rules.", "Test a model against criteria and record results.", "Improve the model using evidence, cost and sustainability."],
+      Y9_10: ["Use a brief to identify a problem and user.", "Create a design with labelled parts and constraints.", "Test a prototype and justify changes using results.", "Compare design options against safety, usability and resource criteria."],
+      Y11_13: ["Use a project brief to define a need and constraints.", "Develop a design plan with specifications and safety checks.", "Test and evaluate a prototype against measurable criteria.", "Optimise the design and justify trade-offs with evidence."]
+    }
+  };
+  function abilityBand(value) {
+    var v = String(value || "").toLowerCase();
+    if (v === "foundation" || v === "remedial" || v === "re-teaching") return 0;
+    if (v === "developing") return 1;
+    if (v === "expected" || v === "expected-level") return 2;
+    if (v === "advanced" || v === "extension") return 3;
+    return 2;
+  }
+  function levelBand(level) {
+    var s = String(level || "").toLowerCase();
+    if (/kindy|kindergarten|early childhood|year k|\bk\b/.test(s)) return "ECE";
+    var n = Number((s.match(/\d+/) || [])[0]);
+    if (!Number.isFinite(n)) return "Y1_2";
+    if (n <= 2) return "Y1_2";
+    if (n <= 5) return "Y3_5";
+    if (n <= 8) return "Y6_8";
+    if (n <= 10) return "Y9_10";
+    return "Y11_13";
+  }
+  function applyFourAbilityActivity(activity, context, day) {
+    var subject = String(context && context.subject || "English");
+    var pack = FOUR_ABILITY_TASKS[subject] || FOUR_ABILITY_TASKS.English;
+    var band = levelBand(context && context.level);
+    var index = abilityBand(context && context.capability);
+    var task = pack[band][index];
+    var levelName = String(context && context.level || "selected class");
+    activity.id = "pacedu-daily-" + levelName.toLowerCase().replace(/[^a-z0-9]+/g, "-") +
+      "-" + subject.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-ability-" + (index + 1) + "-day-" + (Number(day) || 1);
+    activity.title = levelName + " " + subject + " — Daily Activity";
+    activity.goal = "Practise " + subject.toLowerCase() + " skills at the learner's current demonstrated level.";
+    activity.task = "Day " + (Number(day) || 1) + ": " + task;
+    activity.check = [
+      "With support, the learner attempts the task and shows one step.",
+      "The learner completes the task with prompts and explains one choice.",
+      "The learner completes the task independently and explains the result.",
+      "The learner completes the task, explains the reasoning and applies it in a new way."
+    ][index];
+    activity.evidence = "Learner response, completion, support needed and teacher observation";
+    activity.source = "Original PacEdu differentiated activity draft; teacher review required.";
+    activity.curriculumStatus = "PENDING_TEACHER_REVIEW — check against the current Fiji syllabus, term plan and achievement indicators for this class and subject. Not Ministry-approved.";
+    activity.verificationStatus = "PENDING_TEACHER_REVIEW";
+    activity.capabilityGroup = index + 1;
+    activity.accessibilityOptions = "Respond by speaking, signing, pointing, drawing, typing or writing. Offer screen-reader-compatible text, verbal description of visuals, captions and clear printed instructions as needed.";
+    activity.successCriteria = activity.check;
+    activity.reflectionPrompt = "What was easy? What will you practise next?";
+    return activity;
+  }
+
   function getActivity(role, stepId, day, context) {
     role = String(role || "").toLowerCase().replace(/_/g,"-");
     if (role === "student" || role === "blind-learner" || role === "deaf-learner") {
       if (stepId !== "dailyLesson") return null;
-      return learnerActivity(day, context);
+      return applyFourAbilityActivity(learnerActivity(day, context), context || {}, day);
     }
     var pack = ROLE_TASKS[role];
     if (!pack || stepId !== pack.host) return null;
