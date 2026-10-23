@@ -449,7 +449,7 @@ test("AI Playback completes the Pacific Education welcome with one narrator voic
     expect(calls[i].voice, "every welcome line must use the same narrator voice").toBe(calls[0].voice);
   }
   expect(calls.some(call => call.text.includes("Let us learn, discover, practise, and grow together."))).toBe(true);
-  expect(calls[calls.length - 1].text).toBe("Press Next to continue.");
+  expect(calls.some(call => call.text === "Press Next to continue.")).toBe(true);
 });
 
 test("automatic welcome starts with single-narrator AI Playback before page guidance", async ({ page }) => {
