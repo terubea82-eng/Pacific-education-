@@ -476,6 +476,7 @@
       if (!input) return;
       complete(type, input.value || "");
     },
-    assessmentPolicy: assessmentPolicy
+    assessmentPolicy: assessmentPolicy,
+    currentContext: function() { return Object.assign({}, active.context || {}); }
   };
 })(window, document);
