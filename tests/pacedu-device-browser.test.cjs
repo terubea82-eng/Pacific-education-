@@ -1110,6 +1110,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(page.locator("#peSequentialTitle")).toContainText("My Workspace");
     if (expectedWorkspace === "student") {
       await page.locator("#peStudentWorkspaceIdentity").fill("Role Pilot Test");
+      await page.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
       await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
       await page.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
       await expect(page.locator("#peSequentialNext")).toBeEnabled();
@@ -1162,21 +1163,27 @@ test("student workspace entry requires a session identity and class and carries 
   await page.route("**/src/js/pacificEducationSingleNavigationController.js*", route => route.abort());
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await expect.poll(() => page.evaluate(() => typeof window.PacificEducationSequentialRoleWorkspaces?.build), { timeout: 10000 }).toBe("function");
-  await page.evaluate(() => window.PacificEducationSequentialRoleWorkspaces.build("student"));
+  await page.evaluate(() => {
+    localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+      "TEST-CLASS-5": { classId: "TEST-CLASS-5", level: "Class 5", studentRefs: ["TEST-STUDENT-005"], prototype: true, productionEligible: false }
+    }));
+    window.PacificEducationSequentialRoleWorkspaces.build("student");
+  });
 
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell.locator("#peStudentWorkspaceEntry")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeDisabled();
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
-  await expect(shell.locator("#peStudentWorkspaceEntry [role=status]")).toContainText("Enter a student name");
+  await expect(shell.locator("#peStudentWorkspaceEntry [role=status]")).toContainText("Enter the student's display name");
 
   await shell.locator("#peStudentWorkspaceIdentity").fill("Entry Gate Learner");
+  await shell.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-005");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 5");
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
-  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("not verified");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("prototype");
 
   await shell.locator("#peSequentialNext").click();
   await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
@@ -1200,6 +1207,9 @@ test("student registration handoff shows workspace navigation and daily activiti
     try {
       localStorage.setItem("pacificEducationLevel", "Class 1");
       localStorage.setItem("pacificEducationSubject", "English");
+      localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+        "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Pilot Test Learner",
         role: "Student",
@@ -1226,6 +1236,7 @@ test("student registration handoff shows workspace navigation and daily activiti
   await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
   await expect(shell.locator("#peSequentialNext")).toBeDisabled();
   await shell.locator("#peStudentWorkspaceIdentity").fill("Pilot Test Learner");
+  await shell.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
@@ -1255,6 +1266,9 @@ test("student workspace skips redundant setup pages and opens daily activity dir
     try {
       localStorage.setItem("pacificEducationLevel", "Class 1");
       localStorage.setItem("pacificEducationSubject", "English");
+      localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+        "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Class Level Repair Test",
         role: "Student",
@@ -1272,6 +1286,7 @@ test("student workspace skips redundant setup pages and opens daily activity dir
   const shell = page.locator("#pacificEducationSequentialRoleWorkspace");
   await expect(shell.locator("#peSequentialWorkspaceHome")).toBeVisible();
   await shell.locator("#peStudentWorkspaceIdentity").fill("Class Level Repair Test");
+  await shell.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
   await shell.locator("#peStudentWorkspaceClass").selectOption("Class 1");
   await shell.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();

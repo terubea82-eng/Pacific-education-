@@ -15,7 +15,12 @@ test("Student registration save and green Next open a visible workspace and dail
   page.on("pageerror", error => errors.push(error.stack || error.message));
 
   await page.addInitScript(() => {
-    try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
+    try {
+      sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
+      localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+        "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
+    } catch (_) {}
   });
   await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
   // Disable animation only in the test so touch targets remain stable.
@@ -77,8 +82,10 @@ test("Student registration save and green Next open a visible workspace and dail
   await expect(entry).toBeVisible();
   await expect(page.locator("#peStudentWorkspaceIdentity")).toBeVisible();
   await expect(page.locator("#peStudentWorkspaceClass")).toBeVisible();
+  await expect(page.locator("#peStudentWorkspaceStudentReference")).toBeVisible();
   await expect(page.locator("#peSequentialNext")).toBeDisabled();
   await page.locator("#peStudentWorkspaceIdentity").fill("Student Handoff Test");
+  await page.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
   await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
   await entry.locator("button:not(.pacific-voice-speaker)").click();
   await expect(page.locator("#peSequentialNext")).toBeEnabled();

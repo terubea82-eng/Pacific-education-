@@ -243,7 +243,7 @@
     banner.appendChild(strong);
     var note=document.createElement("p");
     note.style.cssText="margin:4px 0 0;font-size:.9em;";
-    note.textContent="Pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
+    note.textContent="Class context prototype: pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
     banner.appendChild(note);
     page.insertBefore(banner,page.firstChild);
     lockStudentClassSelectors(page,role,context);
@@ -1097,12 +1097,26 @@
           nameInput.type="text";
           nameInput.autocomplete="off";
           nameInput.maxLength=80;
-          nameInput.placeholder="Enter student name or demo learner ID";
+          nameInput.placeholder="Enter student display name";
           var registeredStudentName="";
           try{registeredStudentName=String(sessionStorage.getItem("pilotRegistrationName")||"").trim();}catch(e){}
           nameInput.value=context?context.displayName:registeredStudentName;
           nameInput.style.cssText="display:block;box-sizing:border-box;width:100%;max-width:520px;padding:12px;border:1px solid #64748b;border-radius:6px;";
           entryPanel.appendChild(nameInput);
+          var studentRefLabel=document.createElement("label");
+          studentRefLabel.htmlFor="peStudentWorkspaceStudentReference";
+          studentRefLabel.textContent="School-issued student reference (required for evidence matching)";
+          studentRefLabel.style.cssText="display:block;font-weight:700;margin:10px 0 5px;";
+          entryPanel.appendChild(studentRefLabel);
+          var studentRefInput=document.createElement("input");
+          studentRefInput.id="peStudentWorkspaceStudentReference";
+          studentRefInput.type="text";
+          studentRefInput.autocomplete="off";
+          studentRefInput.maxLength=80;
+          studentRefInput.placeholder="Enter the exact school / F.E.M.I.S. ID";
+          studentRefInput.value=context&&context.studentReference?context.studentReference:"";
+          studentRefInput.style.cssText="display:block;box-sizing:border-box;width:100%;max-width:520px;padding:12px;border:1px solid #64748b;border-radius:6px;";
+          entryPanel.appendChild(studentRefInput);
           var classLabel=document.createElement("label");
           classLabel.htmlFor="peStudentWorkspaceClass";
           classLabel.textContent="Class / Year Level";
@@ -1140,10 +1154,16 @@
           entryPanel.appendChild(entryStatus);
           enterButton.onclick=function(){
             var displayName=String(nameInput.value||"").trim();
+            var studentReference=String(studentRefInput.value||"").trim();
             var classLevel=String(classSelect.value||"").trim();
             if(!displayName){
-              entryStatus.textContent="Enter a student name or demonstration learner ID.";
+              entryStatus.textContent="Enter the student's display name.";
               nameInput.focus();
+              return;
+            }
+            if(!studentReference){
+              entryStatus.textContent="Enter the exact school-issued student reference. Names alone cannot match learning evidence.";
+              studentRefInput.focus();
               return;
             }
             if(!/^Class (?:[1-9]|1[0-3])$/.test(classLevel)){
@@ -1151,7 +1171,20 @@
               classSelect.focus();
               return;
             }
-            var savedContext={role:"student",displayName:displayName,classLevel:classLevel,assignmentStatus:"demo-unverified",sessionStartedAt:new Date().toISOString()};
+            var verifiedClassId="";
+            var roster=window.PacificEducationTeacherClassRosterContext;
+            if(roster&&typeof roster.getClasses==="function"){
+              var classes=roster.getClasses()||{};
+              Object.keys(classes).some(function(id){
+                var record=classes[id];
+                if(record&&String(record.level||"")===classLevel&&Array.isArray(record.studentRefs)&&record.studentRefs.indexOf(studentReference)>=0){
+                  verifiedClassId=String(record.classId||id);
+                  return true;
+                }
+                return false;
+              });
+            }
+            var savedContext={role:"student",displayName:displayName,studentReference:studentReference,studentId:verifiedClassId?studentReference:null,classId:verifiedClassId||null,classLevel:classLevel,assignmentStatus:verifiedClassId?"roster-matched-prototype":"demo-unverified",identityVerified:!!verifiedClassId,sessionStartedAt:new Date().toISOString()};
             try{
               sessionStorage.setItem(STUDENT_CONTEXT_KEY,JSON.stringify(savedContext));
               sessionStorage.setItem("pilotRegistrationName",displayName);
@@ -1161,7 +1194,7 @@
               return;
             }
             enterButton.textContent="Confirm Student Session";
-            entryStatus.textContent="Student session ready for "+classLevel+". The class choice remains demonstration-only until a teacher confirms the assignment.";
+            entryStatus.textContent=verifiedClassId?"Student reference matches the local pilot class roster. This is prototype roster matching, not official F.E.M.I.S. verification.":"Student session ready for "+classLevel+". No matching class roster reference was found, so evidence-based recommendations remain locked until the teacher roster is corrected.";
             next.disabled=false;
             renderStudentContextBanner(page,role);
           };
@@ -1170,6 +1203,7 @@
             entryStatus.textContent="You changed the student or class. Press Confirm Student Session before continuing.";
           }
           nameInput.addEventListener("input",function(){requireSessionConfirmation();});
+          studentRefInput.addEventListener("input",function(){requireSessionConfirmation();});
           classSelect.addEventListener("change",function(){requireSessionConfirmation();});
           home.appendChild(entryPanel);
           next.disabled=!context;

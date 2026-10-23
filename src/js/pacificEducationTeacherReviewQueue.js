@@ -21,23 +21,25 @@ function render(){
  root.innerHTML=html;
 }
 function applyAdaptiveReview(item,status){
- /* A teacher-entered response belongs to the named learner, but this local pilot
-    record does not establish a verified learner session. Never change the shared
-    device-wide adaptive pathway from this review. Persist the decision on the
-    response record and emit a learner-scoped event for future roster wiring. */
+ /* A single reviewed activity is evidence, not a complete ability classification.
+    Keep the result on the learner's response record. PacEdu's evidence engine
+    waits for sufficient marked daily work plus a marked term examination. */
  if(item && item.teacherEnteredAnswer){
   document.dispatchEvent(new CustomEvent("pacificEducationTeacherManualAnswerReviewed",{detail:{status:status,responseId:item.responseId||null,learnerNameOrReference:item.learnerNameOrReference||"",classId:item.classId||null,subject:item.subject||"",term:item.term||"",day:Number(item.day)||0,prototype:true}}));
   return;
  }
- var capability=status==="approved"?"expected":"remedial";
- try{
-  localStorage.setItem("pacificEducationCapability",capability);
-  localStorage.setItem("pacificEducationAdaptiveLearningStatus",status==="approved"?"Teacher-approved evidence — continue expected-level mixed learning":"Teacher review recommends targeted re-teaching before progressing");
-  localStorage.setItem("pacificEducationAdaptiveNextActivity",status==="approved"?"Independent Practice":"Remedial / Re-teaching");
-  localStorage.setItem("pacificEducationAdaptiveLastReview",JSON.stringify({status:status,day:Number(item.day)||0,type:item.type||"",questionText:item.questionText||"",studentId:item.studentId||null,classId:item.classId||null,reviewedAt:new Date().toISOString()}));
- }catch(e){}
- document.dispatchEvent(new CustomEvent("pacificEducationAdaptiveLearningUpdated",{detail:{capability:capability,capabilityLabel:status==="approved"?"Expected-level":"Remedial / Re-teaching",score:null,reviewStatus:status,nextActivity:status==="approved"?"Independent Practice":"Remedial / Re-teaching",context:item.curriculumContext||{},teacherReviewed:true,prototype:true}}));
- if(typeof window.displayDailyLesson==="function"){try{window.displayDailyLesson();}catch(e){}}
+ document.dispatchEvent(new CustomEvent("pacificEducationEvidenceBasedAbilityUpdated",{detail:{
+  status:status,
+  responseId:item&&item.responseId||null,
+  studentId:item&&item.studentId||null,
+  classId:item&&item.classId||null,
+  subject:item&&item.subject||"",
+  term:item&&item.term||"",
+  day:Number(item&&item.day)||0,
+  teacherReviewed:true,
+  provisionalOnly:true,
+  prototype:true
+ }}));
 }
 function review(index,status){
  var a=read(KEY); if(!a[index])return;

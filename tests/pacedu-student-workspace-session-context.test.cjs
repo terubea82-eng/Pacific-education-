@@ -4,6 +4,8 @@ const fs = require("node:fs");
 
 const entry = fs.readFileSync("src/js/pacificEducationSinglePilotEntry.js", "utf8");
 const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+const selector = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+const runtime = fs.readFileSync("src/js/pacificEducationLearnerActivityRuntime.js", "utf8");
 const html = fs.readFileSync("src/index.html", "utf8");
 
 test("student registration can continue when a Class Reference has not been created", () => {
@@ -20,6 +22,8 @@ test("student workspace home provides a session identity and class-level entry p
   assert.match(sequential, /peStudentWorkspaceClass/);
   assert.match(sequential, /Sign In to My Workspace/);
   assert.match(sequential, /Choose a class level before continuing/);
+  assert.match(sequential, /peStudentWorkspaceStudentReference/);
+  assert.match(sequential, /Names alone cannot match learning evidence/);
   assert.match(sequential, /next\.disabled=!context/);
 });
 
@@ -35,11 +39,31 @@ test("student identity and chosen class are retained across workspace pages only
   assert.match(sequential, /This workspace session stays on/);
   assert.match(sequential, /SESSION_KEYS = \["paceduActiveStudentContextV1"/);
 });
+test("activity evidence is attributed only to a current roster-matched learner", () => {
+  assert.match(runtime, /function verifiedLearnerContext\(\)/);
+  assert.match(runtime, /context\.identityVerified!==true/);
+  assert.match(runtime, /assigned\.studentRefs\.indexOf\(String\(context\.studentReference\)\)<0/);
+  assert.match(runtime, /studentId: ctx\.studentId \|\| null/);
+  assert.match(runtime, /identityStatus: ctx\.identityStatus/);
+  assert.doesNotMatch(runtime, /studentId: "pilot-student-demo"/);
+});
+
+test("student learning level is not self-selected and waits for marked evidence", () => {
+  assert.match(selector, /var STUDENT_CONTEXT_KEY = "paceduActiveStudentContextV1"/);
+  assert.match(selector, /if \(activeStudentContext\(\)\) return false/);
+  assert.match(selector, /s\.disabled = true/);
+  assert.match(selector, /function studentRecommendation\(context\)/);
+  assert.match(selector, /result\.status === "recommendation-ready"/);
+  assert.match(selector, /Teacher review is required before this is confirmed/);
+  assert.match(selector, /The current level is only a neutral starting point/);
+  assert.match(selector, /Never inherit another child's globally saved ability/);
+});
 
 test("student class selection does not pretend a global roster choice is an individual assignment", () => {
   assert.match(entry, /A global teacher roster selection is not proof of individual assignment/);
   assert.doesNotMatch(entry, /localStorage\.setItem\("pacificEducationLevel", String\(studentClass\.level\)\)/);
-  assert.match(sequential, /assignmentStatus:"demo-unverified"/);
+  assert.match(sequential, /assignmentStatus:verifiedClassId\?"roster-matched-prototype":"demo-unverified"/);
+  assert.match(sequential, /identityVerified:!!verifiedClassId/);
 });
 
 test("student sign-out clears the active student context and active class, not saved progress", () => {
@@ -49,6 +73,9 @@ test("student sign-out clears the active student context and active class, not s
 });
 
 test("updated entry scripts receive a cache-busting query while preserving the existing navigation check", () => {
-  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261020-simple-learning-flow-v1&student-session-context=20261020-v1/);
+  assert.match(html, /pacificEducationEvidenceBasedAbility\.js\?v=20261023-evidence-based-ability-v1/);
+  assert.match(html, /pacificEducationCapabilitySelector\.js\?v=20261023-evidence-based-ability-v2/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261023-verified-learner-context-v2/);
+  assert.match(html, /pacificEducationLearnerActivityRuntime\.js\?v=20261023-verified-learner-evidence-v2/);
   assert.match(html, /pacificEducationSinglePilotEntry\.js\?v=20261006-single-entry-2&student-session-context=20261019-v1/);
 });
