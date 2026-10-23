@@ -337,10 +337,19 @@
     activity.progressionTargetGroup = bridge.targetGroup;
     activity.progressionSuccessCriteria = bridge.criterion;
     activity.promotionRule = progression.promotionRule;
-    activity.accessibilityOptions = "Respond by speaking, signing, pointing, drawing, typing or writing. Offer screen-reader-compatible text, verbal description of visuals, captions and clear printed instructions as needed.";
+    activity.learningPhilosophy = "Start from demonstrated learning; teach explicitly; practise with suitable support; give kind, specific feedback; check understanding; and build the next skill. Ability groups are flexible, not permanent labels.";
+    activity.priorKnowledgePrompt = "Before teaching, ask the learner to show or explain what they already know about this skill. Record the response without penalty.";
+    activity.teachingExample = "Show one clear example, think aloud through the steps, and check understanding before asking the learner to work alone.";
+    activity.guidedPractice = "Complete one example together. Use prompts, concrete materials, a model or accessible alternatives as needed; gradually reduce help when the learner is ready.";
+    activity.independentPractice = "Ask the learner to try the daily task independently where possible, or with their usual access support. Record what they did and how much help was needed.";
+    activity.feedbackPrompt = "Name one thing the learner did well, explain one specific next step, and let the learner try again.";
+    activity.reteachRule = "If the learner cannot yet show the key skill, use a different example or teaching method, practise the missing step, and check again before increasing difficulty.";
+    activity.masteryRule = "Look for consistent evidence across more than one activity and context. One completed tick or one score alone is not enough to change the ability group.";
+    activity.accessibilityOptions = "Keep the learning goal meaningful. Allow speaking, signing, pointing, drawing, typing or writing; provide screen-reader-compatible text, verbal descriptions, captions, clear print and extra processing time as needed.";
     activity.successCriteria = activity.check;
-    activity.reflectionPrompt = "What was easy? What will you practise next?";
-    activity.daySequenceNote = "Learn the skill, practise with the right support, show what you can do, then try the next-step task. Teacher checks evidence before changing the ability group.";
+    activity.reflectionPrompt = "What did I learn? What helped me? What will I practise next?";
+    activity.daySequenceNote = "Check prior knowledge → teach and model → practise together → try the task → give feedback → check evidence → practise again or try the next-step task.";
+
     return activity;
   }
 
@@ -402,6 +411,14 @@
       detail.appendChild(document.createTextNode(value));
       card.appendChild(detail);
     }
+    appendActivityDetail("Learning approach", activity.learningPhilosophy);
+    appendActivityDetail("1. Check what the learner knows", activity.priorKnowledgePrompt);
+    appendActivityDetail("2. Teach and show an example", activity.teachingExample);
+    appendActivityDetail("3. Practise together", activity.guidedPractice);
+    appendActivityDetail("4. Learner tries the task", activity.independentPractice);
+    appendActivityDetail("5. Feedback and another try", activity.feedbackPrompt);
+    appendActivityDetail("If the learner is not ready", activity.reteachRule);
+    appendActivityDetail("How to check mastery", activity.masteryRule);
     appendActivityDetail("Today's learning stage", activity.learningStage ? activity.learningStage + " (step " + activity.learningStageNumber + " of 5; cycle " + activity.learningCycle + ")" : "");
     appendActivityDetail("Practice prompt", activity.practicePrompt);
     appendActivityDetail("Success check", activity.successCriteria);
@@ -456,6 +473,12 @@
         classReference:context.classReference, level:context.level, subject:context.subject, term:context.term,
         capability:context.capability, day:Math.max(1,Number(day)||1), response:response, completed:true,
         learningStage:activity.learningStage || "", learningCycle:activity.learningCycle || null,
+        currentAbility:activity.currentAbility || "", nextAbility:activity.nextAbility || "",
+        nextLevelPractice:activity.nextLevelPractice || "", progressionLabel:activity.progressionLabel || "",
+        priorKnowledgePrompt:activity.priorKnowledgePrompt || "", teachingExample:activity.teachingExample || "",
+        guidedPractice:activity.guidedPractice || "", independentPractice:activity.independentPractice || "",
+        feedbackPrompt:activity.feedbackPrompt || "", reteachRule:activity.reteachRule || "",
+        masteryRule:activity.masteryRule || "", promotionRule:activity.promotionRule || "",
         practicePrompt:activity.practicePrompt || "", successCriteria:activity.successCriteria || "",
         reflectionPrompt:activity.reflectionPrompt || "", accessibilityOptions:activity.accessibilityOptions || "",
         evidenceType:activity.evidence, reviewStatus:activity.verificationStatus,
