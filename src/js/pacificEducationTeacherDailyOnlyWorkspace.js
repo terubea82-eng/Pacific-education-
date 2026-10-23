@@ -110,6 +110,38 @@
     var hint=node("p","One linked workflow: choose a subject, choose any class (ECE–Class 13), then review that class's matching student worksheet, teacher workplan and lesson plan. Print / Save as PDF or download the plan. All generated content requires teacher review.");
     hint.setAttribute("role","note");
     grid.parentNode.insertBefore(hint,grid.nextSibling);
+    renderDailyLearningOnly(host,grid,list,planPanel);
+  }
+  /* Keep the teacher step focused on learner activities and their matching
+     workplans/lesson plans. Preserve the existing subject/class controls and
+     linked-plan generator; remove unrelated teacher forms from this workspace
+     without touching registration, role routing, global mailbox, or voice code. */
+  function renderDailyLearningOnly(host,grid,list,planPanel){
+    if(!host||!grid||!list)return;
+    var oldShell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
+    if(oldShell)return;
+    var shell=node("section");
+    shell.id="paceduTeacherDailyLearningOnlyShell";
+    shell.setAttribute("aria-label","Student daily activities and matching workplans");
+    shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
+    var heading=node("h2","Student Daily Activities & Workplans");
+    heading.style.cssText="margin-top:0;";
+    shell.appendChild(heading);
+    var intro=node("p","Choose a subject, then a class, to open the matching student daily activity, teacher workplan and lesson plan. Review before teaching; print or download the matching plan when ready.");
+    intro.setAttribute("role","note");
+    shell.appendChild(intro);
+    shell.appendChild(node("h3","1. Choose a Subject"));
+    shell.appendChild(grid);
+    shell.appendChild(node("h3","2. Choose a Class"));
+    shell.appendChild(list);
+    host.textContent="";
+    host.appendChild(shell);
+    if(planPanel){
+      planPanel.hidden=true;
+      planPanel.setAttribute("aria-hidden","true");
+      planPanel.style.removeProperty("display");
+      shell.appendChild(planPanel);
+    }
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
   else init();
