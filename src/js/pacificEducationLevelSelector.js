@@ -56,6 +56,10 @@
     function getStoredLevel() {
         var value = window.localStorage.getItem("pacificEducationLevel");
         var levels = getConfiguredLevels();
+        if (/^kindergarten$/i.test(String(value || "").trim()) && levels.indexOf("ECE") !== -1) {
+            window.localStorage.setItem("pacificEducationLevel", "ECE");
+            return "ECE";
+        }
         if (levels.indexOf(value) !== -1) return value;
         var legacy = {"Form 1":"Class 7","Form 2":"Class 8","Form 3":"Class 9","Form 4":"Class 10","Form 5":"Class 11","Form 6":"Class 12","Form 7":"Class 13"};
         if (legacy[value]) { window.localStorage.setItem("pacificEducationLevel", legacy[value]); return legacy[value]; }
