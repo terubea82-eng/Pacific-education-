@@ -275,6 +275,36 @@
     if (n <= 10) return "Y9_10";
     return "Y11_13";
   }
+  function nextAbilityStep(subject, band, index) {
+    var pack = FOUR_ABILITY_TASKS[String(subject || "English")] || FOUR_ABILITY_TASKS.English;
+    var tasks = pack[band] || pack.Y1_2;
+    if (index < 3) {
+      return {
+        label: ["Foundation to Developing", "Developing to Expected", "Expected to Advanced"][index],
+        task: tasks[index + 1],
+        targetGroup: index + 2,
+        criterion: [
+          "Complete the current task with fewer prompts, then try the next task with a word bank, model or adult cue.",
+          "Complete the current task with light prompts, then try the next task and explain one choice.",
+          "Complete the current task independently, then try the next task and support the answer with a reason or evidence."
+        ][index]
+      };
+    }
+    return {
+      label: "Advanced practice and transfer",
+      task: tasks[3],
+      targetGroup: 4,
+      criterion: "Complete the task independently, explain the reasoning, and apply the skill to a new example. Extend depth and independence rather than moving beyond the learner's class curriculum."
+    };
+  }
+  function progressionStatus(context, index) {
+    var names = ["Foundation", "Developing", "Expected", "Advanced"];
+    return {
+      currentAbility: names[index],
+      nextAbility: index < 3 ? names[index + 1] : "Advanced transfer",
+      promotionRule: "Move up only after the learner demonstrates the current skill consistently across more than one activity and the teacher reviews the evidence. Do not promote from one tick or one score alone."
+    };
+  }
   function applyFourAbilityActivity(activity, context, day) {
     var subject = String(context && context.subject || "English");
     var pack = FOUR_ABILITY_TASKS[subject] || FOUR_ABILITY_TASKS.English;
@@ -298,9 +328,19 @@
     activity.curriculumStatus = "PENDING_TEACHER_REVIEW — check against the current Fiji syllabus, term plan and achievement indicators for this class and subject. Not Ministry-approved.";
     activity.verificationStatus = "PENDING_TEACHER_REVIEW";
     activity.capabilityGroup = index + 1;
+    var bridge = nextAbilityStep(subject, band, index);
+    var progression = progressionStatus(context, index);
+    activity.currentAbility = progression.currentAbility;
+    activity.nextAbility = progression.nextAbility;
+    activity.nextLevelPractice = bridge.task;
+    activity.progressionLabel = bridge.label;
+    activity.progressionTargetGroup = bridge.targetGroup;
+    activity.progressionSuccessCriteria = bridge.criterion;
+    activity.promotionRule = progression.promotionRule;
     activity.accessibilityOptions = "Respond by speaking, signing, pointing, drawing, typing or writing. Offer screen-reader-compatible text, verbal description of visuals, captions and clear printed instructions as needed.";
     activity.successCriteria = activity.check;
     activity.reflectionPrompt = "What was easy? What will you practise next?";
+    activity.daySequenceNote = "Learn the skill, practise with the right support, show what you can do, then try the next-step task. Teacher checks evidence before changing the ability group.";
     return activity;
   }
 
@@ -365,6 +405,11 @@
     appendActivityDetail("Today's learning stage", activity.learningStage ? activity.learningStage + " (step " + activity.learningStageNumber + " of 5; cycle " + activity.learningCycle + ")" : "");
     appendActivityDetail("Practice prompt", activity.practicePrompt);
     appendActivityDetail("Success check", activity.successCriteria);
+    appendActivityDetail("Current ability level", activity.currentAbility);
+    appendActivityDetail("Next ability goal", activity.nextAbility);
+    appendActivityDetail("Practice to build the next level", activity.nextLevelPractice);
+    appendActivityDetail("Next-step success check", activity.progressionSuccessCriteria);
+    appendActivityDetail("Ability change rule", activity.promotionRule);
     appendActivityDetail("Reflection", activity.reflectionPrompt);
     appendActivityDetail("Accessible ways to respond", activity.accessibilityOptions);
     appendActivityDetail("Daily sequence", activity.daySequenceNote);
