@@ -264,10 +264,17 @@
     try {
       var roster = global.PacificEducationTeacherClassRosterContext;
       var classId = roster && typeof roster.getClassId === "function" ? String(roster.getClassId() || "").trim() : "";
-      if (classId) {
+      var studentContext = global.PacificEducationStudentCoverageContext;
+      var studentId = studentContext && typeof studentContext.getStudentId === "function" ? String(studentContext.getStudentId() || "").trim() : "";
+      if (classId && studentId) {
+        capability = String(global.localStorage.getItem("pacificEducationCapability:student:" +
+          encodeURIComponent(classId) + ":" + encodeURIComponent(studentId)) || "").toLowerCase();
+        if (capability) source = "student assessment";
+      }
+      if (classId && !capability) {
         capability = String(global.localStorage.getItem("pacificEducationCapability:" + classId) || "").toLowerCase();
         if (capability) source = "class assessment";
-      } else {
+      } else if (!classId) {
         capability = String(global.localStorage.getItem("pacificEducationCapability") || "").toLowerCase();
         if (capability) source = "saved learning capability";
       }
@@ -281,7 +288,7 @@
       advanced: "extension",
       extension: "extension"
     }[capability];
-    if (mapped) return { ability: mapped, source: source, capability: capability, hasEvidence: source === "class assessment" || source === "saved learning capability" };
+    if (mapped) return { ability: mapped, source: source, capability: capability, hasEvidence: source === "student assessment" || source === "class assessment" || source === "saved learning capability" };
     try {
       var saved = String(global.localStorage.getItem("paceduEnglishWorksheetAbility") || "").toLowerCase();
       if (["support", "developing", "expected", "extension"].indexOf(saved) >= 0) {
