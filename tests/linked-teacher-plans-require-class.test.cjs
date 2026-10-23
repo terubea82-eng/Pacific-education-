@@ -34,7 +34,8 @@ test("linked teacher plans require an explicit class before generating a plan", 
   const loadButton = page.getByRole("button", { name: "Load Matching Plans", exact: true });
 
   await expect(status).toContainText("Select a class / level");
-  await expect(content).toBeEmpty();
+  await expect(content).not.toContainText("Test daily activity");
+  await expect(content.locator("#paceduLinkedPlanPreview")).toHaveCount(0);
   await expect(level).toHaveCount(1);
   await expect(level).toHaveValue("");
   expect(await page.evaluate(() => window.__pacEduActivityCalls)).toBe(0);
@@ -46,6 +47,9 @@ test("linked teacher plans require an explicit class before generating a plan", 
 
   await expect(status).toContainText("Matching workplan and lesson plan ready for Day 1");
   await expect(content).toContainText("Class / level: Class 4");
+  await expect(content.locator("#paceduLinkedDailyActivityColumn")).toContainText("Student Daily Activity");
+  await expect(content.locator("#paceduLinkedWorkplanColumn")).toContainText("Matching Teacher Workplan & Lesson Plan");
+  await expect(content.locator("#paceduLinkedPlanPreview")).toContainText("PACEDU — LINKED TEACHER WORKPLAN & LESSON PLAN");
   expect(await page.evaluate(() => window.__pacEduActivityCalls)).toBe(1);
   await expect(printButton).toBeEnabled();
   await expect(downloadButton).toBeEnabled();

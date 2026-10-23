@@ -257,12 +257,45 @@
     }
   };
   function abilityBand(value) {
-    var v = String(value || "").toLowerCase();
+    var v = String(value || "").toLowerCase().trim();
     if (v === "foundation" || v === "remedial" || v === "re-teaching") return 0;
     if (v === "developing") return 1;
-    if (v === "expected" || v === "expected-level") return 2;
+    if (v === "expected" || v === "expected-level" || v === "secure") return 2;
     if (v === "advanced" || v === "extension") return 3;
-    return 2;
+    return -1;
+  }
+  function getCurrentDemonstratedAbility(context) {
+    context = context || {};
+    var records = readAll(), matches = [], approved = {
+      "APPROVED": true, "TEACHER_APPROVED": true, "TEACHER_REVIEWED": true, "REVIEWED": true
+    };
+    Object.keys(records).forEach(function (key) {
+      var record = records[key] || {};
+      var role = String(record.role || "").toLowerCase();
+      var status = String(record.reviewStatus || record.status || "").toUpperCase();
+      if (["student", "blind-learner", "deaf-learner"].indexOf(role) < 0 || !approved[status]) return;
+      if (String(record.subject || "").toLowerCase() !== String(context.subject || "").toLowerCase()) return;
+      if (context.classReference && String(record.classReference || "") !== String(context.classReference)) return;
+      if (context.level && String(record.level || "").toLowerCase() !== String(context.level).toLowerCase()) return;
+      var value = record.teacherReviewedAbility || record.demonstratedAbility || record.reviewedAbility || record.masteryLevel;
+      var band = abilityBand(value);
+      if (band < 0 || record.teacherReviewedAbilityConfirmed === false) return;
+      matches.push({ band: band, savedAt: String(record.reviewedAt || record.savedAt || ""), activityId: String(record.activityId || key) });
+    });
+    matches.sort(function (a, b) { return a.savedAt.localeCompare(b.savedAt); });
+    var recent = matches.slice(-3), counts = [0, 0, 0, 0];
+    recent.forEach(function (item) { counts[item.band] += 1; });
+    var best = -1, bestCount = 0;
+    counts.forEach(function (count, index) { if (count > bestCount) { best = index; bestCount = count; } });
+    if (recent.length < 2 || bestCount < 2) {
+      return { status: "INSUFFICIENT_EVIDENCE", level: "Insufficient evidence", evidenceCount: recent.length, message: "Complete a short subject check and/or collect teacher-reviewed work before assigning a revision level." };
+    }
+    return {
+      status: "DEMONSTRATED",
+      level: ["Foundation", "Developing", "Expected", "Advanced"][best],
+      evidenceCount: bestCount,
+      message: "Based on consistent, teacher-reviewed evidence in this subject; reassess as new work is completed."
+    };
   }
   function levelBand(level) {
     var s = String(level || "").toLowerCase();
@@ -309,25 +342,29 @@
     var subject = String(context && context.subject || "English");
     var pack = FOUR_ABILITY_TASKS[subject] || FOUR_ABILITY_TASKS.English;
     var band = levelBand(context && context.level);
-    var index = abilityBand(context && context.capability);
-    var task = pack[band][index];
+    var demonstrated = getCurrentDemonstratedAbility(context);
+    var index = demonstrated.status === "DEMONSTRATED" ? abilityBand(demonstrated.level) : -1;
+    var hasAbilityEvidence = index >= 0;
+    var task = hasAbilityEvidence ? pack[band][index] : "";
     var levelName = String(context && context.level || "selected class");
     activity.id = "pacedu-daily-" + levelName.toLowerCase().replace(/[^a-z0-9]+/g, "-") +
-      "-" + subject.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-ability-" + (index + 1) + "-day-" + (Number(day) || 1);
+      "-" + subject.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-" +
+      (hasAbilityEvidence ? "ability-" + (index + 1) : "ability-unassessed") + "-day-" + (Number(day) || 1);
     /* Keep the existing subject-specific lesson as the main activity. Add the
        four-level task as differentiated practice instead of replacing the lesson. */
     var hasSpecificLesson = Boolean(activity.title && activity.task && activity.goal && activity.check);
     if (!hasSpecificLesson) {
       activity.title = levelName + " " + subject + " — Daily Activity";
-      activity.goal = "Practise " + subject.toLowerCase() + " skills at the learner's current demonstrated level.";
-      activity.task = "Day " + (Number(day) || 1) + ": " + task;
-      activity.check = [
+      activity.goal = "Practise " + subject.toLowerCase() + " skills; personalise revision only after enough subject-specific evidence is available.";
+      activity.task = hasAbilityEvidence ? ("Day " + (Number(day) || 1) + ": " + task) :
+        ("Day " + (Number(day) || 1) + ": complete a short check against the stated learning objective, then review the evidence before selecting a revision level.");
+      activity.check = hasAbilityEvidence ? [
         "With support, the learner attempts the task and shows one step.",
         "The learner completes the task with prompts and explains one choice.",
         "The learner completes the task independently and explains the result.",
         "The learner completes the task, explains the reasoning and applies it in a new way."
-      ][index];
-    } else {
+      ][index] : "Record the response and support needed; do not infer ability from missing or insufficient evidence.";
+    } else if (hasAbilityEvidence) {
       activity.task += "\\n\\nAbility-level practice (" + ["Foundation", "Developing", "Expected", "Advanced"][index] + "): " + task;
       activity.check += " Ability-level check: " + [
         "With support, the learner attempts the task and shows one step.",
@@ -340,9 +377,21 @@
     activity.source = "Original PacEdu differentiated activity draft; teacher review required.";
     activity.curriculumStatus = "PENDING_TEACHER_REVIEW — check against the current Fiji syllabus, term plan and achievement indicators for this class and subject. Not Ministry-approved.";
     activity.verificationStatus = "PENDING_TEACHER_REVIEW";
-    activity.capabilityGroup = index + 1;
-    var bridge = nextAbilityStep(subject, band, index);
-    var progression = progressionStatus(context, index);
+    activity.capabilityGroup = hasAbilityEvidence ? index + 1 : null;
+    var bridge = hasAbilityEvidence ? nextAbilityStep(subject, band, index) : {
+      label: "Evidence needed before revision placement",
+      task: "Complete a short check for this subject and combine it with other reviewed work before choosing the next revision activity.",
+      targetGroup: null,
+      criterion: "Do not assign a revision level until there is sufficient subject-specific evidence; missing work or sickness is not evidence of low ability."
+    };
+    var progression = hasAbilityEvidence ? progressionStatus(context, index) : {
+      currentAbility: "Insufficient evidence",
+      nextAbility: "Determine after subject-specific evidence is reviewed",
+      promotionRule: "Use consistent evidence from more than one activity or assessment. Missing work and one score alone do not establish ability."
+    };
+    activity.abilityEvidenceStatus = demonstrated.status;
+    activity.abilityEvidenceCount = demonstrated.evidenceCount;
+    activity.abilityEvidenceMessage = demonstrated.message;
     activity.currentAbility = progression.currentAbility;
     activity.nextAbility = progression.nextAbility;
     activity.nextLevelPractice = bridge.task;
@@ -436,6 +485,8 @@
     appendActivityDetail("Practice prompt", activity.practicePrompt);
     appendActivityDetail("Success check", activity.successCriteria);
     appendActivityDetail("Current ability level", activity.currentAbility);
+    appendActivityDetail("Ability evidence status", activity.abilityEvidenceStatus || "INSUFFICIENT_EVIDENCE");
+    appendActivityDetail("Ability evidence note", activity.abilityEvidenceMessage || "Use subject-specific reviewed evidence before personalising revision; missing work is not low ability.");
     appendActivityDetail("Next ability goal", activity.nextAbility);
     appendActivityDetail("Practice to build the next level", activity.nextLevelPractice);
     appendActivityDetail("Next-step success check", activity.progressionSuccessCriteria);
@@ -522,7 +573,8 @@
     version:"1.0.0",
     getActivity:getActivity,
     render:render,
-    getStudentActivity:function(day, context){return learnerActivity(day,context);},
+    getStudentActivity:function(day, context){return applyFourAbilityActivity(learnerActivity(day,context), context || {}, day);},
+    getCurrentDemonstratedAbility:getCurrentDemonstratedAbility,
     roles:Object.freeze(Object.keys(ROLE_TASKS))
   });
 })(window, document);

@@ -205,9 +205,9 @@ test("student workspace starts at daily learning and retains assessment and port
   assert.match(sequential, /does not verify an individual assignment/);
   const teacher = sequential.match(/"teacher":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(teacher, "teacher workspace sequence must exist");
-  assert.match(teacher[1], /pacificEducationTeacherClassDashboard/);
-  assert.match(teacher[1], /pacificEducationTeacherEvidence/);
-  assert.match(teacher[1], /Revision and Examination Readiness/);
+  const teacherIds = [...teacher[1].matchAll(/\["([^"]+)","([^"]+)"\]/g)].map((match) => match[1]);
+  assert.deepEqual(teacherIds, ["teacherDashboard"], "teacher workspace contains only daily activities");
+  assert.doesNotMatch(teacher[1], /pacificEducationTeacherClassDashboard|pacificEducationTeacherEvidence|pacificEducationTeacherAssessments|pacificEducationTeacherCoverage|Revision and Examination Readiness/);
 });
 
 test("Sign Out stays hidden before the final page and confirmation starts hidden", () => {

@@ -769,8 +769,8 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   /* The active Teacher Workspace contains required actions. The mandatory-field
      guide must keep Next blocked until those required actions are completed;
      this isolation test does not fabricate teacher work merely to advance. */
-  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 10");
-  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Workspace");
+  await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 3");
+  await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Daily Activities");
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
 });
 
