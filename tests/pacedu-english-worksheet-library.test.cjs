@@ -20,8 +20,10 @@ const window = {
 vm.runInNewContext(source, { window, document: {}, Math, String, Number, Object });
 const library = window.PacificEducationEnglishWorksheetLibrary;
 
-test("English worksheets are available for ECE, Kindergarten and Classes 1–13", () => {
-  assert.equal(library.levels.length, 15);
+test("English worksheets are available for ECE and Classes 1–13 without a duplicate Kindergarten option", () => {
+  assert.equal(library.levels.length, 14);
+  assert.ok(library.levels.includes("ECE"));
+  assert.equal(library.levels.includes("Kindergarten"), false);
   for (const level of library.levels) {
     const worksheet = library.getWorksheet(level, "developing", 2);
     assert.equal(worksheet.level, level);
@@ -63,7 +65,8 @@ test("Day 1 always generates an initial ability check rather than a teaching wor
   }
 });
 
-test("day and level inputs are bounded safely", () => {
+test("day and level inputs are bounded safely and legacy Kindergarten maps to ECE", () => {
+  assert.equal(library.getWorksheet("Kindergarten", "developing", 2).level, "ECE");
   assert.equal(library.getWorksheet("unknown", "bad", 999).day, 365);
   assert.equal(library.getWorksheet("unknown", "bad", 999).level, "Class 1");
   assert.equal(library.getWorksheet("Class 13", "extension", -5).day, 1);
@@ -94,6 +97,13 @@ test("daily question count and question types adapt to class stage and demonstra
   assert.ok(earlySupport.questionPlan.types.some(type => /picture|listen|oral/.test(type)));
   assert.ok(middleGoal.questionPlan.types.includes("multiple-choice"));
   assert.ok(seniorExtension.questionPlan.types.includes("evidence-or-inference"));
+});
+
+test("English button opens the daily worksheet builder for ECE and Classes 1–13", () => {
+  assert.match(source, /paceduOpenEnglishDailyActivities/);
+  assert.match(source, /English — Daily Activities for All Classes/);
+  assert.match(source, /var levelOptions = LEVELS\.map/);
+  assert.match(source, /paceduEnglishWorksheetBuilder/);
 });
 
 test("ability selector explains each band when tapped or changed", () => {
