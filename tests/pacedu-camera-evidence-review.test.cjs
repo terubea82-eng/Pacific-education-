@@ -18,7 +18,7 @@ test("camera evidence requires roster-matched learner and class context", () => 
 test("photo submissions remain pending and never claim automatic marking", () => {
   assert.match(camera, /reviewStatus: "pending-teacher-review"/);
   assert.match(camera, /autoMarkStatus: "not-auto-marked"/);
-  assert.match(camera, /not automatically marked or sent to another device/);
+  assert.match(camera, /not automatically marked correct or sent to another device/);
   assert.match(camera, /Photo evidence pending teacher review; not auto-marked/);
 });
 
