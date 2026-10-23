@@ -225,6 +225,9 @@
       addLine(activityColumn, "Assessment / check", activity.check);
       addLine(activityColumn, "Evidence", activity.evidence);
       addLine(activityColumn, "Current demonstrated ability", activity.currentAbility || "Insufficient evidence — assess before assigning a revision level");
+      addLine(activityColumn, "Ability evidence status", activity.abilityEvidenceStatus || "INSUFFICIENT_EVIDENCE");
+      addLine(activityColumn, "Ability evidence note", activity.abilityEvidenceMessage || "Use subject-specific work and reviewed assessment evidence; absence or missing work is not low ability.");
+      addLine(activityColumn, "Revision readiness", activity.abilityEvidenceStatus === "DEMONSTRATED" ? "Ready for level-matched revision" : "Gather evidence before assigning a revision level");
       addLine(activityColumn, "Next ability goal", activity.nextAbility || "Set after reviewing evidence");
       addLine(activityColumn, "Curriculum status", activity.curriculumStatus || "Teacher verification required");
       addLine(activityColumn, "Current affairs", news ? text(news.title) + " (approved enrichment)" : "No approved matching item; daily learning continues normally.");
