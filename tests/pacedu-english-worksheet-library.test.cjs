@@ -17,7 +17,7 @@ const window = {
     roles: Object.freeze(["teacher", "student"])
   })
 };
-vm.runInNewContext(source, { window, document: {}, Math, String, Number, Object });
+vm.runInNewContext(source, { window, document: {}, Math, String, Number, Object, encodeURIComponent });
 const library = window.PacificEducationEnglishWorksheetLibrary;
 
 test("English worksheets are available for ECE and Classes 1–13 without a duplicate Kindergarten option", () => {
@@ -129,6 +129,20 @@ test("retrieves the class-specific saved capability and maps it to a worksheet b
   stored.set("pacificEducationCapability:class-7", "remedial");
   assert.equal(library.getStoredAbility().ability, "support");
   assert.equal(library.getStoredAbility().source, "class assessment");
+});
+
+test("retrieves the selected child's saved ability before class or general values", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-7"; } };
+  window.PacificEducationStudentCoverageContext = { getStudentId() { return "student-a"; } };
+  stored.set("pacificEducationCapability:student:class-7:student-a", "foundation");
+  stored.set("pacificEducationCapability:class-7", "advanced");
+  stored.set("pacificEducationCapability", "expected");
+  const result = library.getStoredAbility();
+  assert.equal(result.ability, "support");
+  assert.equal(result.source, "student assessment");
+  assert.equal(result.capability, "foundation");
+  window.PacificEducationStudentCoverageContext = null;
 });
 
 test("uses the saved global capability only when no class is selected", () => {
