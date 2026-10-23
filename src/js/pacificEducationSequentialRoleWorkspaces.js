@@ -243,7 +243,7 @@
     banner.appendChild(strong);
     var note=document.createElement("p");
     note.style.cssText="margin:4px 0 0;font-size:.9em;";
-    note.textContent="Pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
+    note.textContent="Prototype: pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
     banner.appendChild(note);
     page.insertBefore(banner,page.firstChild);
     lockStudentClassSelectors(page,role,context);
