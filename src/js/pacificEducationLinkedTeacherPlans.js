@@ -178,7 +178,15 @@
     panel.appendChild(controls);
     var status = node("p", "Choose the class level and day, then load the matching plan.");
     status.id = "paceduLinkedPlanStatus"; status.setAttribute("role", "status"); status.setAttribute("aria-live", "polite"); panel.appendChild(status);
-    var content = node("div"); content.id = "paceduLinkedPlanContent"; panel.appendChild(content);
+    var content = node("div"); content.id = "paceduLinkedPlanContent";
+    content.style.cssText = "display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;align-items:start;";
+    var activityColumn = node("section"); activityColumn.id = "paceduLinkedDailyActivityColumn";
+    activityColumn.style.cssText = "min-width:0;padding:12px;border:1px solid #c8d7e2;border-radius:8px;overflow-wrap:anywhere;";
+    activityColumn.appendChild(node("h4", "Student Daily Activity"));
+    var planColumn = node("section"); planColumn.id = "paceduLinkedWorkplanColumn";
+    planColumn.style.cssText = "min-width:0;padding:12px;border:1px solid #c8d7e2;border-radius:8px;overflow-wrap:anywhere;";
+    planColumn.appendChild(node("h4", "Matching Teacher Workplan & Lesson Plan"));
+    content.appendChild(activityColumn); content.appendChild(planColumn); panel.appendChild(content);
     var generated = "";
     var currentContext = null;
     refresh.addEventListener("click", function () {
@@ -187,7 +195,9 @@
       var chosenDay = Math.max(1, Math.min(365, Math.floor(Number(day.value) || 1)));
       day.value = String(chosenDay);
       currentContext = readContext(chosenDay, chosenLevel, chosenSubject);
-      content.textContent = "";
+      activityColumn.textContent = ""; planColumn.textContent = "";
+      activityColumn.appendChild(node("h4", "Student Daily Activity"));
+      planColumn.appendChild(node("h4", "Matching Teacher Workplan & Lesson Plan"));
       generated = "";
       print.disabled = true; download.disabled = true;
       if (!chosenLevel) {
@@ -202,18 +212,24 @@
       var news = approvedCurrentAffair(currentContext);
       generated = planText(currentContext, activity, news);
       var heading = node("h4", "Day " + chosenDay + " — " + (activity.title || chosenSubject + " activity"));
-      content.appendChild(heading);
-      addLine(content, "Activity ID", activity.id);
-      addLine(content, "Class / level", currentContext.level || "Not selected");
-      addLine(content, "Subject", currentContext.subject);
-      addLine(content, "Learning objective", activity.goal);
-      addLine(content, "Learner activity", activity.task);
-      addLine(content, "Assessment / check", activity.check);
-      addLine(content, "Evidence", activity.evidence);
-      addLine(content, "Curriculum status", activity.curriculumStatus || "Teacher verification required");
-      addLine(content, "Current affairs", news ? text(news.title) + " (approved enrichment)" : "No approved matching item; daily learning continues normally.");
+      activityColumn.appendChild(heading);
+      addLine(activityColumn, "Activity ID", activity.id);
+      addLine(activityColumn, "Class / level", currentContext.level || "Not selected");
+      addLine(activityColumn, "Subject", currentContext.subject);
+      addLine(activityColumn, "Learning objective", activity.goal);
+      addLine(activityColumn, "Learner activity", activity.task);
+      addLine(activityColumn, "Assessment / check", activity.check);
+      addLine(activityColumn, "Evidence", activity.evidence);
+      addLine(activityColumn, "Current demonstrated ability", activity.currentAbility || "Insufficient evidence — assess before assigning a revision level");
+      addLine(activityColumn, "Next ability goal", activity.nextAbility || "Set after reviewing evidence");
+      addLine(activityColumn, "Curriculum status", activity.curriculumStatus || "Teacher verification required");
+      addLine(activityColumn, "Current affairs", news ? text(news.title) + " (approved enrichment)" : "No approved matching item; daily learning continues normally.");
       var note = node("p", "Plan status: PENDING_TEACHER_REVIEW. The plan reuses the selected daily activity; verify curriculum mapping and complete teaching evidence after the lesson.");
-      note.setAttribute("role", "note"); content.appendChild(note);
+      note.setAttribute("role", "note"); activityColumn.appendChild(note);
+      var preview = node("pre", generated);
+      preview.id = "paceduLinkedPlanPreview";
+      preview.style.cssText = "white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:.92em;margin:8px 0;";
+      planColumn.appendChild(preview);
       status.textContent = "Matching workplan and lesson plan ready for Day " + chosenDay + ". Review before teaching; after-lesson evidence fields are in the printable copy.";
       print.disabled = false; download.disabled = false;
     });
@@ -225,7 +241,7 @@
       var old = document.getElementById("paceduLinkedPlanPrintableText");
       if (old) old.parentNode.removeChild(old);
       pre.id = "paceduLinkedPlanPrintableText";
-      content.appendChild(pre);
+      planColumn.appendChild(pre);
       document.body.classList.add("pacedu-linked-plan-printing");
       var cleanup = function () {
         document.body.classList.remove("pacedu-linked-plan-printing");
