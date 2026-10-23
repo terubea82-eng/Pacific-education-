@@ -304,10 +304,12 @@
     openButton.type = "button";
     openButton.setAttribute("aria-expanded", "false");
     openButton.style.cssText = "display:block;width:100%;min-height:48px;margin:12px 0;padding:12px;text-align:left;font-weight:700;border:2px solid #2563eb;border-radius:8px;background:#eff6ff;color:#111827;";
+    card.insertBefore(openButton, card.children[1] || null);
     var panel = node("section", null, card);
     panel.id = "paceduEnglishWorksheetBuilder";
     panel.hidden = true;
     panel.style.cssText = "margin-top:18px;padding:14px;border:2px solid #2563eb;border-radius:10px;";
+    card.insertBefore(panel, openButton.nextSibling);
     openButton.addEventListener("click", function () {
       panel.hidden = !panel.hidden;
       openButton.setAttribute("aria-expanded", panel.hidden ? "false" : "true");
