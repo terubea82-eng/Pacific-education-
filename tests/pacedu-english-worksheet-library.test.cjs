@@ -175,6 +175,13 @@ test("does not silently force Developing when a saved worksheet choice is the on
   assert.equal(savedResult.capability, "");
 });
 
+const levelSelectorSource = fs.readFileSync("src/js/pacificEducationLevelSelector.js", "utf8");
+
+test("legacy saved Kindergarten level migrates to ECE", () => {
+  assert.match(levelSelectorSource, /kindergarten\$\/i\.test/);
+  assert.match(levelSelectorSource, /setItem\("pacificEducationLevel", "ECE"\)/);
+});
+
 const capabilitySource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
 
 test("ability selector stores and retrieves a separate ability for each selected student", () => {
