@@ -15,15 +15,18 @@ const {
   setDoc,
   updateDoc,
 } = require("firebase/firestore");
+const { ref, uploadBytes, getBytes } = require("firebase/storage");
 
 const projectId = "demo-pacedu-firestore-rules";
 const rules = fs.readFileSync(path.join(__dirname, "..", "firestore.rules"), "utf8");
+const storageRules = fs.readFileSync(path.join(__dirname, "..", "storage.rules"), "utf8");
 let testEnv;
 
 before(async () => {
   testEnv = await initializeTestEnvironment({
     projectId,
     firestore: { rules },
+    storage: { rules: storageRules },
   });
 });
 
