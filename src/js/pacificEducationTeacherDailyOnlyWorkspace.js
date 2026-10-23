@@ -54,7 +54,6 @@
         var panel=document.getElementById("pacificEducationLinkedTeacherPlans");
         var level=document.getElementById("paceduLinkedPlanLevel");
         var subjectSelect=document.getElementById("paceduLinkedPlanSubject");
-        var refresh=document.getElementById("paceduLinkedPlanStatus")&&document.querySelector("#pacificEducationLinkedTeacherPlans button");
         if(item.id){
           var roster=window.PacificEducationTeacherClassRosterContext;
           if(roster&&typeof roster.setClassId==="function")roster.setClassId(item.id);
@@ -66,6 +65,9 @@
         }
         if(subjectSelect)subjectSelect.value=subject;
         if(panel){
+          panel.hidden=false;
+          panel.removeAttribute("aria-hidden");
+          panel.style.removeProperty("display");
           var refreshButton=Array.prototype.find.call(panel.querySelectorAll("button"),function(btn){return /load matching plans/i.test(btn.textContent||"");});
           if(refreshButton)refreshButton.click();
           panel.scrollIntoView({behavior:"smooth",block:"start"});
@@ -92,10 +94,11 @@
     list.style.cssText="margin:12px 0;";
     var planSubject=document.getElementById("paceduLinkedPlanSubject");
     if(planSubject&&planSubject.parentElement)planSubject.parentElement.style.display="none";
-    var hint=node("p","Select a subject above to display its classes. Daily activities are generated from the existing PacEdu activity library and remain subject to teacher review.");
+    var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
+    if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
+    var hint=node("p","Tap a subject to display its classes. Daily activities are generated from the existing PacEdu activity library and remain subject to teacher review.");
     hint.setAttribute("role","note");
     grid.parentNode.insertBefore(hint,grid.nextSibling);
-    selectSubject("English");
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
   else init();
