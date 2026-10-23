@@ -37,14 +37,7 @@
       ["pacificEducationHomeSubmission","Home Continuity"]
     ],
     "teacher":[
-      ["teacherDashboard","Teacher Workspace"],
-      ["pacificEducationTeacherClassDashboard","My Classes and Assignments"],
-      ["pacificEducationTeacherEvidence","Student Learning Evidence"],
-      ["assessments","Assessment and Marking Exceptions"],
-      ["pacificEducationCoverageDashboard","Curriculum Coverage"],
-      ["pacificEducationStudentProgressDashboard","Student Progress Portfolios"],
-      ["teacherCalendarSection","Revision and Examination Readiness"],
-      ["pacificGuardianCommentSection","Teacher/Guardian Communication"]
+      ["teacherDashboard","Teacher Daily Activities"]
     ],
     "parent":[
       ["parentDashboard","My Child"],
