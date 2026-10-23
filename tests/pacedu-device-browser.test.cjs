@@ -1241,7 +1241,7 @@ test("student registration handoff shows workspace navigation and daily activiti
   await shell.locator("#paceduRoleActivityResponse").fill("Good morning. My name is Pilot Learner. The first letter is P.");
   await shell.locator("#paceduRoleActivityDone").check();
   await shell.getByRole("button", { name: "Save Activity on This Device", exact: true }).click();
-  await expect(shell.locator("#paceduRoleActivityStatus")).toContainText("REQUIRES_CURRENT_MINISTRY_VALIDATION");
+  await expect(shell.locator("#paceduRoleActivityStatus")).toContainText("PENDING_TEACHER_REVIEW");
   const savedActivity = await page.evaluate(() => JSON.parse(localStorage.getItem("pacificEducationRoleActivityEvidenceV1") || "{}"));
   expect(Object.values(savedActivity).some(entry => entry.role === "student" && entry.completed && entry.response.includes("Good morning"))).toBe(true);
   await expect(shell.locator("#peSequentialBack")).toBeVisible();
