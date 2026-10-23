@@ -22,9 +22,16 @@ function render(){
   var index=x.__index, article=node("article");
   article.setAttribute("data-pe-review-index",String(index));
   article.style.cssText="border:1px solid #ccc;padding:12px;margin:8px 0";
-  if(x.teacherEnteredAnswer&&x.learnerNameOrReference){
-   var learner=node("p");learner.className="pe-quick-answer-learner";learner.appendChild(node("strong","Learner:"));learner.appendChild(document.createTextNode(" "+String(x.learnerNameOrReference)));article.appendChild(learner);
-  }
+  /* Show identity on every learner response so the teacher can match work to the correct roster entry. */
+  var learnerLabel=String(x.studentName||x.displayName||x.learnerNameOrReference||"").trim();
+  var learnerRef=String(x.studentReference||x.learnerReference||"").trim();
+  var learnerId=String(x.studentId||"").trim();
+  var learnerLine=node("p");learnerLine.className="pe-review-learner-identity";
+  learnerLine.appendChild(node("strong","Learner:"));
+  learnerLine.appendChild(document.createTextNode(" "+(learnerLabel||"Name not recorded")));
+  if(learnerRef) learnerLine.appendChild(document.createTextNode(" · Learner reference: "+learnerRef));
+  else if(learnerId) learnerLine.appendChild(document.createTextNode(" · Student ID: "+learnerId));
+  article.appendChild(learnerLine);
   var day=node("p");day.appendChild(node("strong","Day "+(Number(x.day)||0)+" — "+String(x.type||"activity")));article.appendChild(day);
   appendText(article,"p","Question:",x.questionText||"");
   appendText(article,"p","Answer:",x.response||"");
