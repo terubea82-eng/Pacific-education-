@@ -170,7 +170,7 @@
       };
       items.push(record);
       try {
-        window.localStorage.setItem(RESPONSE_KEY, JSON.stringify(items.slice(-100)));
+        window.localStorage.setItem(RESPONSE_KEY, JSON.stringify(items));
       } catch (e) {
         status.textContent = "PacEdu could not save this photo on the device. Free storage and try a smaller photo. It has not been submitted.";
         return;
