@@ -5,7 +5,7 @@ const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.
 test("teacher subject selection shows every class and links the class to matching printable plans", async ({ page }) => {
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => {
-    document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"></div><div id="paceduTeacherClassList"></div></section></main>';
+    document.body.innerHTML = '<main><section id="teacherDashboard"><section id="pacificEducationTeacherQuickAnswer">Quick Manual Answer Entry</section><section id="teacherPerformancePanel">Teacher Daily Activity & Performance</section><div id="paceduTeacherSubjectGrid"></div><div id="paceduTeacherClassList"></div></section></main>';
     localStorage.clear();
     window.PacificEducationTeacherClassRosterContext = {
       getClasses() {
@@ -37,6 +37,10 @@ test("teacher subject selection shows every class and links the class to matchin
   });
   await page.addScriptTag({ url: "./js/pacificEducationLinkedTeacherPlans.js?v=linked-workflow-test" });
   await page.addScriptTag({ url: "./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=linked-workflow-test" });
+
+  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("Student Daily Activities & Workplans");
+  await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toHaveCount(0);
+  await expect(page.locator("#teacherPerformancePanel")).toHaveCount(0);
 
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 1");
