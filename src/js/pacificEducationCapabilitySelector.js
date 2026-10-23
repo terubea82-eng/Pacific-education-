@@ -44,14 +44,14 @@
       if (scope) {
         v = window.localStorage.getItem(studentStorageKey(scope));
         if (v) source = "student";
-      }
-      if (!v) {
+        /* Never borrow a general setting when a specific child is selected. */
+      } else {
         v = window.localStorage.getItem("pacificEducationCapability");
-        source = "general";
+        if (v) source = "general";
       }
     } catch (e) { v = null; }
     if (!C.some(function (x) { return x.id === v; })) {
-      return { capability: "expected", source: "default", linked: false };
+      return { capability: "expected", source: scope ? "no learner evidence yet" : "default", linked: false };
     }
     return { capability: v, source: source, linked: source === "student" };
   }
@@ -97,7 +97,7 @@
       var scope = selectedStudentScope();
       var linkStatus = scope ?
         (record.linked ? "Saved for the selected student in this class. " :
-          "No ability record is saved for this student yet; this is a general/default value until an observed result is saved. ") :
+          "No ability result is saved for this student yet. Use Day 1 evidence first; do not copy another learner's or a general ability setting. ") :
         "No student-and-class selection is active; changes will be saved as a general setting, not linked to an individual child. ";
       info.textContent = linkStatus + (GUIDANCE[s.value] || GUIDANCE.expected);
     }
@@ -107,6 +107,8 @@
     });
     s.addEventListener("click", showGuidance);
     s.addEventListener("focus", showGuidance);
+    s.addEventListener("input", showGuidance);
+    s.addEventListener("pointerup", showGuidance);
     window.addEventListener("pacificEducationStudentChanged", showGuidance);
     document.addEventListener("pacificEducationCoverageRefresh", showGuidance);
     document.addEventListener("pacificEducationCapabilityChanged", showGuidance);

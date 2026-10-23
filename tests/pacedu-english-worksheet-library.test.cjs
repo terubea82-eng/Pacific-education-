@@ -17,11 +17,13 @@ const window = {
     roles: Object.freeze(["teacher", "student"])
   })
 };
-vm.runInNewContext(source, { window, document: {}, Math, String, Number, Object });
+vm.runInNewContext(source, { window, document: {}, Math, String, Number, Object, encodeURIComponent });
 const library = window.PacificEducationEnglishWorksheetLibrary;
 
-test("English worksheets are available for ECE, Kindergarten and Classes 1–13", () => {
-  assert.equal(library.levels.length, 15);
+test("English worksheets are available for ECE and Classes 1–13 without a duplicate Kindergarten option", () => {
+  assert.equal(library.levels.length, 14);
+  assert.ok(library.levels.includes("ECE"));
+  assert.equal(library.levels.includes("Kindergarten"), false);
   for (const level of library.levels) {
     const worksheet = library.getWorksheet(level, "developing", 2);
     assert.equal(worksheet.level, level);
@@ -63,7 +65,8 @@ test("Day 1 always generates an initial ability check rather than a teaching wor
   }
 });
 
-test("day and level inputs are bounded safely", () => {
+test("day and level inputs are bounded safely and legacy Kindergarten maps to ECE", () => {
+  assert.equal(library.getWorksheet("Kindergarten", "developing", 2).level, "ECE");
   assert.equal(library.getWorksheet("unknown", "bad", 999).day, 365);
   assert.equal(library.getWorksheet("unknown", "bad", 999).level, "Class 1");
   assert.equal(library.getWorksheet("Class 13", "extension", -5).day, 1);
@@ -96,6 +99,13 @@ test("daily question count and question types adapt to class stage and demonstra
   assert.ok(seniorExtension.questionPlan.types.includes("evidence-or-inference"));
 });
 
+test("English button opens the daily worksheet builder for ECE and Classes 1–13", () => {
+  assert.match(source, /paceduOpenEnglishDailyActivities/);
+  assert.match(source, /English — Daily Activities for All Classes/);
+  assert.match(source, /var levelOptions = LEVELS\.map/);
+  assert.match(source, /paceduEnglishWorksheetBuilder/);
+});
+
 test("ability selector explains each band when tapped or changed", () => {
   assert.match(source, /paceduEnglishWorksheetAbilityInfo/);
   assert.match(source, /abilitySelect\.addEventListener\("click", showAbilityInfo\)/);
@@ -121,14 +131,38 @@ test("retrieves the class-specific saved capability and maps it to a worksheet b
   assert.equal(library.getStoredAbility().source, "class assessment");
 });
 
-test("uses the saved global capability when no class-specific result exists", () => {
+test("retrieves the selected child's saved ability before class or general values", () => {
   stored.clear();
-  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-8"; } };
+  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-7"; } };
+  window.PacificEducationStudentCoverageContext = { getStudentId() { return "student-a"; } };
+  stored.set("pacificEducationCapability:student:class-7:student-a", "foundation");
+  stored.set("pacificEducationCapability:class-7", "advanced");
+  stored.set("pacificEducationCapability", "expected");
+  const result = library.getStoredAbility();
+  assert.equal(result.ability, "support");
+  assert.equal(result.source, "student assessment");
+  assert.equal(result.capability, "foundation");
+  window.PacificEducationStudentCoverageContext = null;
+});
+
+test("uses the saved global capability only when no class is selected", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = null;
   stored.set("pacificEducationCapability", "expected");
   const globalResult = library.getStoredAbility();
   assert.equal(globalResult.ability, "expected");
   assert.equal(globalResult.source, "saved learning capability");
   assert.equal(globalResult.capability, "expected");
+});
+
+test("a selected class does not inherit a general ability without class evidence", () => {
+  stored.clear();
+  window.PacificEducationTeacherClassRosterContext = { getClassId() { return "class-8"; } };
+  stored.set("pacificEducationCapability", "advanced");
+  const classResult = library.getStoredAbility();
+  assert.equal(classResult.ability, "initial-assessment");
+  assert.equal(classResult.source, "no saved learner evidence; Day 1 check required");
+  assert.equal(classResult.hasEvidence, false);
 });
 
 test("does not silently force Developing when a saved worksheet choice is the only available category", () => {
@@ -139,6 +173,13 @@ test("does not silently force Developing when a saved worksheet choice is the on
   assert.equal(savedResult.ability, "extension");
   assert.equal(savedResult.source, "saved worksheet choice");
   assert.equal(savedResult.capability, "");
+});
+
+const levelSelectorSource = fs.readFileSync("src/js/pacificEducationLevelSelector.js", "utf8");
+
+test("legacy saved Kindergarten level migrates to ECE", () => {
+  assert.match(levelSelectorSource, /kindergarten\$\/i\.test/);
+  assert.match(levelSelectorSource, /setItem\("pacificEducationLevel", "ECE"\)/);
 });
 
 const capabilitySource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
@@ -173,6 +214,29 @@ test("ability selector stores and retrieves a separate ability for each selected
 
   selectorWindow.PacificEducationStudentCoverageContext = { getStudentId() { return "student-a"; } };
   assert.equal(selector.getCapability(), "developing");
+});
+
+test("a selected child never inherits the general ability setting", () => {
+  const abilityStore = new Map([["pacificEducationCapability", "advanced"]]);
+  const selectorWindow = {
+    localStorage: {
+      getItem(key) { return abilityStore.has(key) ? abilityStore.get(key) : null; },
+      setItem(key, value) { abilityStore.set(key, String(value)); }
+    },
+    PacificEducationStudentCoverageContext: { getStudentId() { return "student-a"; } },
+    PacificEducationTeacherClassRosterContext: {
+      getClassId() { return "class-7"; },
+      getStudents() { return ["student-a", "student-b"]; }
+    }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(capabilitySource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  const selector = selectorWindow.PacificEducationCapabilitySelector;
+  assert.equal(selector.getCapability(), "expected");
+  assert.equal(abilityStore.get("pacificEducationCapability"), "advanced");
+  assert.equal(abilityStore.has("pacificEducationCapability:student:class-7:student-a"), false);
 });
 
 test("ability selector falls back to general setting without a valid selected student", () => {
