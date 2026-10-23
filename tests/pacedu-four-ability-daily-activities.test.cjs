@@ -47,6 +47,14 @@ test("student activities are differentiated into four groups for all supported c
       assert.ok(activity, level + " " + subject + " activity exists");
       assert.match(activity.curriculumStatus, /PENDING_TEACHER_REVIEW/);
       assert.match(activity.task, /Day 2:/);\n      assert.ok(activity.nextLevelPractice, "next-step practice is provided");\n      assert.ok(activity.progressionSuccessCriteria, "next-step success check is provided");\n      assert.match(activity.promotionRule, /teacher reviews the evidence/);
+      assert.ok(activity.learningPhilosophy, "educational philosophy is stated");
+      assert.ok(activity.priorKnowledgePrompt, "prior knowledge is checked");
+      assert.ok(activity.teachingExample, "explicit teaching is included");
+      assert.ok(activity.guidedPractice, "supported practice is included");
+      assert.ok(activity.independentPractice, "learner attempt is included");
+      assert.ok(activity.feedbackPrompt, "feedback and another try are included");
+      assert.ok(activity.reteachRule, "reteaching is planned if the learner is not ready");
+      assert.ok(activity.masteryRule, "mastery uses more than one piece of evidence");
     }
     assert.equal(new Set(activities.map(activity => activity.task)).size, 4,
       level + " " + subject + " tasks differ by ability");
