@@ -1,5 +1,5 @@
 (function(window,document){"use strict";
-var DEFAULT_LEVELS=["Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
+var DEFAULT_LEVELS=["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12","Class 13"];
 var DEFAULT_TERMS=["Term 1","Term 2","Term 3"];
 var DEFAULT_SUBJECTS=[
 "English","Mathematics","Science","Basic Science","Elementary Science","Biology","Chemistry","Physics",
