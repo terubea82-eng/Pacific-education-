@@ -1,10 +1,11 @@
-name: Pacedu Firestore Security Rules Tests
+name: Pacedu Firebase Security Rules Tests
 
 on:
   pull_request:
     branches: [main]
     paths:
       - "firestore.rules"
+      - "storage.rules"
       - "firebase.json"
       - "tests/firestore-rules.test.cjs"
       - ".github/workflows/firestore-rules-tests.yml"
@@ -12,6 +13,7 @@ on:
     branches: [main]
     paths:
       - "firestore.rules"
+      - "storage.rules"
       - "firebase.json"
       - "tests/firestore-rules.test.cjs"
       - ".github/workflows/firestore-rules-tests.yml"
@@ -21,14 +23,14 @@ permissions:
   contents: read
 
 concurrency:
-  group: pacedu-firestore-rules-${{ github.ref }}
+  group: pacedu-firebase-security-rules-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  firestore-rules:
-    name: Firestore emulator authorization regression tests
+  firebase-rules:
+    name: Firestore and Storage authorization regression tests
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,7 +41,7 @@ jobs:
           node-version: "22"
           cache: npm
 
-      - name: Set up Java for the Firestore emulator
+      - name: Set up Java for Firebase emulators
         uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -48,15 +50,15 @@ jobs:
       - name: Install locked project dependencies
         run: npm ci
 
-      - name: Install Firestore rules test tools without changing project manifests
+      - name: Install Firebase rules test tools without changing project manifests
         run: npm install --no-save --package-lock=false firebase-tools @firebase/rules-unit-testing
 
-      - name: Test Firestore rules in the local emulator
-        run: npx firebase-tools emulators:exec --only firestore --project demo-pacedu-firestore-rules "node --test tests/firestore-rules.test.cjs"
+      - name: Test Firestore and Storage rules in local emulators
+        run: npx firebase-tools emulators:exec --only firestore,storage --project demo-pacedu-firestore-rules "node --test tests/firestore-rules.test.cjs"
 
-      - name: Confirm Firebase project config matches the existing database region
+      - name: Confirm Firebase project configuration
         shell: bash
         run: |
           set -euo pipefail
-          node -e "const c=require('./firebase.json'); if(c.firestore.location !== 'asia-southeast1') process.exit(1)"
-          echo "PASS: Firestore deployment config targets the existing asia-southeast1 database."
+          node -e "const c=require('./firebase.json'); if(c.firestore.location !== 'asia-southeast1' || c.firestore.rules !== 'firestore.rules' || c.storage.rules !== 'storage.rules') process.exit(1)"
+          echo "PASS: Firestore region is unchanged and both security rule files are registered."

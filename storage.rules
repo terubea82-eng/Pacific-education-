@@ -1,0 +1,33 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function hasClassRole(classId, uid, expectedRole) {
+      return request.auth != null
+        && firestore.exists(/databases/(default)/documents/classes/$(classId)/members/$(uid))
+        && firestore.get(/databases/(default)/documents/classes/$(classId)/members/$(uid)).data.role == expectedRole
+        && firestore.get(/databases/(default)/documents/classes/$(classId)/members/$(uid)).data.active == true;
+    }
+
+    // Private photo evidence. A learner can upload once to their own unique
+    // submission path; only that learner and an active teacher assigned to
+    // the same class can read it. Clients cannot overwrite or delete evidence.
+    match /learnerWork/{classId}/{studentUid}/{submissionId}/photo.jpg {
+      allow create: if request.auth != null
+        && request.auth.uid == studentUid
+        && hasClassRole(classId, studentUid, 'student')
+        && request.resource.size > 0
+        && request.resource.size <= 8388608
+        && request.resource.contentType == 'image/jpeg';
+      allow get: if request.auth != null
+        && ((request.auth.uid == studentUid && hasClassRole(classId, request.auth.uid, 'student'))
+          || hasClassRole(classId, request.auth.uid, 'teacher'));
+      allow list, update, delete: if false;
+    }
+
+    // No other object path is client-accessible.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -2,8 +2,22 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Client-managed profile fields are explicitly allowlisted.
-    // Role/permission assignment belongs to a trusted server/admin path.
+    // Class membership is provisioned by a trusted administrator/server.
+    // Clients must never create or change their own role or active status.
+    function hasClassRole(classId, expectedRole) {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/classes/$(classId)/members/$(request.auth.uid))
+        && get(/databases/$(database)/documents/classes/$(classId)/members/$(request.auth.uid)).data.role == expectedRole
+        && get(/databases/$(database)/documents/classes/$(classId)/members/$(request.auth.uid)).data.active == true;
+    }
+
+    match /classes/{classId}/members/{memberUid} {
+      // Users can read their own membership only. Trusted admin/server writes
+      // use the Admin SDK and are not granted by these client rules.
+      allow get: if request.auth != null && request.auth.uid == memberUid;
+      allow list, create, update, delete: if false;
+    }
+
     match /users/{userId} {
       allow read: if request.auth != null
         && request.auth.uid == userId;
@@ -58,18 +72,93 @@ service cloud.firestore {
     }
 
     match /progress/{progressId} {
-      // A client may create only a record owned by its authenticated UID.
       allow create: if request.auth != null
         && request.resource.data.uid == request.auth.uid;
 
-      // Check both the stored owner and the proposed owner. This prevents
-      // an attacker from taking over another user's document by changing uid.
       allow update: if request.auth != null
         && resource.data.uid == request.auth.uid
         && request.resource.data.uid == request.auth.uid;
 
       allow read: if request.auth != null
         && resource.data.uid == request.auth.uid;
+
+      allow delete: if false;
+    }
+
+    // Cross-device teacher review metadata. The image itself must be uploaded
+    // to the matching private Storage path; never put base64 photo data in
+    // Firestore documents. Storage rules and authenticated client integration
+    // must be deployed/tested before this path is enabled in the app.
+    match /learnerSubmissions/{submissionId} {
+      function assignedStudent(classId) {
+        return hasClassRole(classId, 'student');
+      }
+
+      function assignedTeacher(classId) {
+        return hasClassRole(classId, 'teacher');
+      }
+
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasAll([
+          'studentUid', 'studentReference', 'studentName', 'classId',
+          'classLevel', 'subject', 'term', 'activityId', 'day',
+          'responseMode', 'reviewStatus', 'storagePath',
+          'photoContentType', 'photoSizeBytes', 'createdAt'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'studentUid', 'studentReference', 'studentName', 'classId',
+          'classLevel', 'subject', 'term', 'activityId', 'day',
+          'responseMode', 'reviewStatus', 'storagePath',
+          'photoContentType', 'photoSizeBytes', 'createdAt'
+        ])
+        && request.resource.data.studentUid == request.auth.uid
+        && request.resource.data.classId is string
+        && request.resource.data.classId.size() > 0
+        && assignedStudent(request.resource.data.classId)
+        && request.resource.data.studentReference is string
+        && request.resource.data.studentReference.size() > 0
+        && request.resource.data.studentReference.size() <= 100
+        && request.resource.data.studentName is string
+        && request.resource.data.studentName.size() > 0
+        && request.resource.data.studentName.size() <= 120
+        && request.resource.data.classLevel is string
+        && request.resource.data.classLevel.size() <= 40
+        && request.resource.data.subject is string
+        && request.resource.data.subject.size() > 0
+        && request.resource.data.subject.size() <= 80
+        && request.resource.data.term is string
+        && request.resource.data.term.size() <= 40
+        && request.resource.data.activityId is string
+        && request.resource.data.activityId.size() > 0
+        && request.resource.data.activityId.size() <= 160
+        && request.resource.data.day is int
+        && request.resource.data.day >= 1
+        && request.resource.data.day <= 365
+        && request.resource.data.responseMode == 'photo-evidence'
+        && request.resource.data.reviewStatus == 'pending-teacher-review'
+        && request.resource.data.storagePath == 'learnerWork/' + request.resource.data.classId + '/' + request.auth.uid + '/' + submissionId + '/photo.jpg'
+        && request.resource.data.photoContentType == 'image/jpeg'
+        && request.resource.data.photoSizeBytes is int
+        && request.resource.data.photoSizeBytes > 0
+        && request.resource.data.photoSizeBytes <= 8388608
+        && request.resource.data.createdAt is timestamp;
+
+      allow get, list: if request.auth != null
+        && (resource.data.studentUid == request.auth.uid
+          || assignedTeacher(resource.data.classId));
+
+      allow update: if request.auth != null
+        && assignedTeacher(resource.data.classId)
+        && request.resource.data.studentUid == resource.data.studentUid
+        && request.resource.data.classId == resource.data.classId
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'reviewStatus', 'teacherFeedback', 'reviewedBy', 'reviewedAt'
+        ])
+        && request.resource.data.reviewStatus in ['approved', 'needs-practice']
+        && request.resource.data.reviewedBy == request.auth.uid
+        && request.resource.data.reviewedAt is timestamp
+        && request.resource.data.teacherFeedback is string
+        && request.resource.data.teacherFeedback.size() <= 1000;
 
       allow delete: if false;
     }

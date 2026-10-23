@@ -15,15 +15,18 @@ const {
   setDoc,
   updateDoc,
 } = require("firebase/firestore");
+const { ref, uploadBytes, getBytes } = require("firebase/storage");
 
 const projectId = "demo-pacedu-firestore-rules";
 const rules = fs.readFileSync(path.join(__dirname, "..", "firestore.rules"), "utf8");
+const storageRules = fs.readFileSync(path.join(__dirname, "..", "storage.rules"), "utf8");
 let testEnv;
 
 before(async () => {
   testEnv = await initializeTestEnvironment({
     projectId,
     firestore: { rules },
+    storage: { rules: storageRules },
   });
 });
 
@@ -165,4 +168,177 @@ test("unlisted collections remain denied by default", async () => {
     uid: "learner-a",
     title: "Should not be writable",
   }));
+});
+
+
+async function seedClassMembership(classId, uid, role, active = true) {
+  await testEnv.withSecurityRulesDisabled(async (context) => {
+    await setDoc(doc(context.firestore(), "classes", classId, "members", uid), {
+      role,
+      active,
+    });
+  });
+}
+
+function validPhotoSubmission(overrides = {}) {
+  return {
+    studentUid: "student-a",
+    studentReference: "FJ-001",
+    studentName: "Learner A",
+    classId: "class-1",
+    classLevel: "Year 4",
+    subject: "English",
+    term: "Term 1",
+    activityId: "english-day-1",
+    day: 1,
+    responseMode: "photo-evidence",
+    reviewStatus: "pending-teacher-review",
+    storagePath: "learnerWork/class-1/student-a/submission-a/photo.jpg",
+    photoContentType: "image/jpeg",
+    photoSizeBytes: 204800,
+    createdAt: new Date(),
+    ...overrides,
+  };
+}
+
+test("learner can create and read their own pending photo-review metadata", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  const db = testEnv.authenticatedContext("student-a").firestore();
+  await assertSucceeds(setDoc(
+    doc(db, "learnerSubmissions/submission-a"),
+    validPhotoSubmission(),
+  ));
+  await assertSucceeds(getDoc(doc(db, "learnerSubmissions/submission-a")));
+});
+
+test("learner cannot submit as another student or use an unassigned class", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  const db = testEnv.authenticatedContext("student-a").firestore();
+  await assertFails(setDoc(
+    doc(db, "learnerSubmissions/impersonation"),
+    validPhotoSubmission({ studentUid: "student-b" }),
+  ));
+  await assertFails(setDoc(
+    doc(db, "learnerSubmissions/unassigned"),
+    validPhotoSubmission({ classId: "class-unknown" }),
+  ));
+});
+
+test("photo metadata rejects unsafe paths, oversized images, and client-chosen review status", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  const db = testEnv.authenticatedContext("student-a").firestore();
+  await assertFails(setDoc(
+    doc(db, "learnerSubmissions/wrong-path"),
+    validPhotoSubmission({ storagePath: "learnerWork/class-1/student-b/private.jpg" }),
+  ));
+  await assertFails(setDoc(
+    doc(db, "learnerSubmissions/oversized"),
+    validPhotoSubmission({ photoSizeBytes: 9 * 1024 * 1024 }),
+  ));
+  await assertFails(setDoc(
+    doc(db, "learnerSubmissions/self-approved"),
+    validPhotoSubmission({ reviewStatus: "approved" }),
+  ));
+  await assertFails(setDoc(
+    doc(db, "learnerSubmissions/base64"),
+    validPhotoSubmission({ photoContentType: "text/plain" }),
+  ));
+});
+
+test("assigned teacher can read and review a submission but cannot change learner identity", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  await seedClassMembership("class-1", "teacher-a", "teacher");
+  await testEnv.withSecurityRulesDisabled(async (context) => {
+    await setDoc(doc(context.firestore(), "learnerSubmissions/submission-a"), validPhotoSubmission());
+  });
+  const teacherDb = testEnv.authenticatedContext("teacher-a").firestore();
+  await assertSucceeds(getDoc(doc(teacherDb, "learnerSubmissions/submission-a")));
+  await assertSucceeds(updateDoc(doc(teacherDb, "learnerSubmissions/submission-a"), {
+    reviewStatus: "approved",
+    teacherFeedback: "Clear work. Well done.",
+    reviewedBy: "teacher-a",
+    reviewedAt: new Date(),
+  }));
+  await assertFails(updateDoc(doc(teacherDb, "learnerSubmissions/submission-a"), {
+    studentUid: "teacher-a",
+  }));
+});
+
+test("unassigned teacher and another learner cannot read the submission", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  await seedClassMembership("class-2", "teacher-outsider", "teacher");
+  await testEnv.withSecurityRulesDisabled(async (context) => {
+    await setDoc(doc(context.firestore(), "learnerSubmissions/submission-a"), validPhotoSubmission());
+  });
+  const outsiderDb = testEnv.authenticatedContext("teacher-outsider").firestore();
+  const otherLearnerDb = testEnv.authenticatedContext("student-b").firestore();
+  await assertFails(getDoc(doc(outsiderDb, "learnerSubmissions/submission-a")));
+  await assertFails(getDoc(doc(otherLearnerDb, "learnerSubmissions/submission-a")));
+});
+
+test("only an assigned teacher can write a valid review and clients cannot delete submissions", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  await seedClassMembership("class-1", "teacher-a", "teacher");
+  await testEnv.withSecurityRulesDisabled(async (context) => {
+    await setDoc(doc(context.firestore(), "learnerSubmissions/submission-a"), validPhotoSubmission());
+  });
+  const studentDb = testEnv.authenticatedContext("student-a").firestore();
+  const teacherDb = testEnv.authenticatedContext("teacher-a").firestore();
+  await assertFails(updateDoc(doc(studentDb, "learnerSubmissions/submission-a"), {
+    reviewStatus: "approved",
+    teacherFeedback: "Self-approved",
+    reviewedBy: "student-a",
+    reviewedAt: new Date(),
+  }));
+  await assertFails(updateDoc(doc(teacherDb, "learnerSubmissions/submission-a"), {
+    reviewStatus: "approved",
+    teacherFeedback: "Wrong reviewer",
+    reviewedBy: "teacher-b",
+    reviewedAt: new Date(),
+  }));
+  await assertFails(updateDoc(doc(teacherDb, "learnerSubmissions/submission-a"), {
+    reviewStatus: "auto-marked",
+    teacherFeedback: "Not allowed",
+    reviewedBy: "teacher-a",
+    reviewedAt: new Date(),
+  }));
+});
+
+
+test("private photo storage permits assigned learner upload and assigned teacher read only", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  await seedClassMembership("class-1", "teacher-a", "teacher");
+  await seedClassMembership("class-2", "teacher-outsider", "teacher");
+
+  const objectPath = "learnerWork/class-1/student-a/submission-storage-a/photo.jpg";
+  const studentStorage = testEnv.authenticatedContext("student-a").storage();
+  const teacherStorage = testEnv.authenticatedContext("teacher-a").storage();
+  const outsiderStorage = testEnv.authenticatedContext("teacher-outsider").storage();
+  const studentObject = ref(studentStorage, objectPath);
+  const imageBytes = new Uint8Array([255, 216, 255, 217]);
+
+  await assertSucceeds(uploadBytes(studentObject, imageBytes, { contentType: "image/jpeg" }));
+  await assertSucceeds(getBytes(ref(teacherStorage, objectPath)));
+  await assertFails(getBytes(ref(outsiderStorage, objectPath)));
+});
+
+test("private photo storage rejects cross-learner upload, oversized file, and unsupported content type", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  const studentStorage = testEnv.authenticatedContext("student-a").storage();
+
+  await assertFails(uploadBytes(
+    ref(studentStorage, "learnerWork/class-1/student-b/foreign/photo.jpg"),
+    new Uint8Array([255, 216, 255, 217]),
+    { contentType: "image/jpeg" },
+  ));
+  await assertFails(uploadBytes(
+    ref(studentStorage, "learnerWork/class-1/student-a/too-large/photo.jpg"),
+    new Uint8Array(8 * 1024 * 1024 + 1),
+    { contentType: "image/jpeg" },
+  ));
+  await assertFails(uploadBytes(
+    ref(studentStorage, "learnerWork/class-1/student-a/not-jpeg/photo.jpg"),
+    new Uint8Array([1, 2, 3]),
+    { contentType: "text/plain" },
+  ));
 });
