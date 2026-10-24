@@ -1,5 +1,11 @@
 name: Pacific Education Daily Current Affairs Feed
 on:
+  # Run after a change to this workflow lands on main, so feed-source fixes
+  # are tested immediately instead of waiting for the next scheduled run.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/daily-current-affairs.yml"
   schedule:
     - cron: "15 2 * * *"
   workflow_dispatch:
