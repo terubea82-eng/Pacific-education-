@@ -20,7 +20,7 @@ jobs:
           # but the existing JSON is never overwritten unless eligible articles
           # are successfully collected and validated.
           declare -A feeds=(
-            [unesco]="https://www.unesco.org/en/newsroom?format=rss"
+            [unesco]="https://connect.unevoc.unesco.org/unevoc_news.xml"
             [who]="https://www.who.int/rss-feeds/news-english.xml"
             [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
           )
