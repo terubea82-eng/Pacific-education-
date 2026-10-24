@@ -116,22 +116,37 @@ jobs:
             return [...new Set(s)];
           }
           const all = [];
+          const diagnostics = {};
           for (const source of sources) {
+            const counts = {
+              parsed: 0, missingTitle: 0, rejectedUrl: 0, invalidDate: 0,
+              tooOld: 0, futureDate: 0, urlDateMismatch: 0, irrelevant: 0, accepted: 0
+            };
+            diagnostics[source.label] = counts;
             const path = '/tmp/feed-' + source.key + '.xml';
-            if (!fs.existsSync(path)) continue;
+            if (!fs.existsSync(path)) {
+              console.warn(source.label + ': feed file missing');
+              continue;
+            }
             const xml = fs.readFileSync(path, 'utf8');
             const found = entries(xml);
+            counts.parsed = found.length;
             console.log(source.label + ': parsed ' + found.length + ' feed entries');
             for (const a of found) {
               const title = String(a.title || '').trim();
               const url = String(a.url || '').trim();
               const publishedTime = Date.parse(String(a.date || ''));
-              const cutoffTime = Date.now() - 180 * 24 * 60 * 60 * 1000;
+              const now = Date.now();
+              const cutoffTime = now - 180 * 24 * 60 * 60 * 1000;
+              if (!title) { counts.missingTitle++; continue; }
+              if (!approvedUrl(url)) { counts.rejectedUrl++; continue; }
+              if (!Number.isFinite(publishedTime)) { counts.invalidDate++; continue; }
               // Treat this as current affairs, not an archive: exclude undated,
               // malformed, older-than-180-day, and future-dated items.
-              if (!title || !approvedUrl(url) || !Number.isFinite(publishedTime) ||
-                  publishedTime < cutoffTime || publishedTime > Date.now() + 24 * 60 * 60 * 1000) continue;
+              if (publishedTime < cutoffTime) { counts.tooOld++; continue; }
+              if (publishedTime > now + 24 * 60 * 60 * 1000) { counts.futureDate++; continue; }
               if (!dateMatchesUrlPublicationDate(url, publishedTime)) {
+                counts.urlDateMismatch++;
                 console.warn('Rejected feed date that conflicts with publisher URL date: ' + url +
                   ' (feed=' + new Date(publishedTime).toISOString() +
                   ', URL=' + urlPublicationDate(url) + ')');
@@ -140,9 +155,14 @@ jobs:
               // Exclude navigation/noise while keeping education and broad public
               // interest stories useful for teacher-led current-affairs lessons.
               const relevance = (title + ' ' + a.description).toLowerCase();
-              if (!/education|school|learning|teacher|child|children|health|science|climate|environment|culture|heritage|poverty|community|development|digital|technology|literacy|university|student|students|humanitarian|sustainable|gender|disaster|water|food|public health/.test(relevance)) continue;
+              if (!/education|school|learning|teacher|child|children|health|science|climate|environment|culture|heritage|poverty|community|development|digital|technology|literacy|university|student|students|humanitarian|sustainable|gender|disaster|water|food|public health/.test(relevance)) {
+                counts.irrelevant++;
+                continue;
+              }
+              counts.accepted++;
               all.push({ ...a, url, title, source: source.label });
             }
+            console.log(source.label + ' filter counts: ' + JSON.stringify(counts));
           }
           const seen = new Set();
           const items = all.filter(a => {
