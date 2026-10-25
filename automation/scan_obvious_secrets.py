@@ -8,7 +8,7 @@ PATTERN = re.compile(
     r"sk_live_[A-Za-z0-9]+|"
     r"sk_test_[A-Za-z0-9]+|"
     r"AIza[0-9A-Za-z_-]{20,}|"
-    r"password\\s*=\\s*[\\\"'][^\\\"']+[\\\"'])",
+    r"password\s*=\s*[\"'][^\"']+[\"'])",
     re.IGNORECASE,
 )
 
@@ -26,14 +26,14 @@ for path in Path(".").rglob("*"):
     text = path.read_text(encoding="utf-8", errors="ignore")
     for line_no, line in enumerate(text.splitlines(), 1):
         # Firebase web apiKey values are public client identifiers, not credentials by themselves.
-        if path.name == "pacificEducationFirebase.js" and re.search(r"apiKey\\s*:", line, re.IGNORECASE):
+        if path.name == "pacificEducationFirebase.js" and re.search(r"apiKey\s*:", line, re.IGNORECASE):
             continue
         if PATTERN.search(line):
             findings.append(f"{path}:{line_no}: {line.strip()}")
 
 if findings:
     print("Potential obvious committed secret patterns found:")
-    print("\\n".join(findings))
+    print("\n".join(findings))
     sys.exit(1)
 
 print("No obvious committed secret patterns found in repository source files.")
