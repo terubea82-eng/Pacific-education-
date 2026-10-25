@@ -181,19 +181,14 @@ test("Learning Tools stays fail-closed throughout guided entry and registration 
 });
 
 
-test("student workspace starts at daily learning and retains assessment and portfolio steps", () => {
+test("student workspace keeps only the simple daily activity, practice and learning check", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   const student = sequential.match(/"student":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(student, "student default sequence must exist");
   const ids = [...student[1].matchAll(/\["([^"]+)","([^"]+)"\]/g)].map((match) => match[1]);
   assert.equal(ids[0], "dailyLesson", "student enters directly at today's activity");
-  const required = [
-    "dailyLesson",
-    "dailyLessonPracticeStage",
-    "assessments",
-    "pacificEducationCoverageDashboard",
-    "pacificEducationStudentProgressDashboard"
-  ];
+  const required = ["dailyLesson", "dailyLessonPracticeStage", "assessments"];
+  assert.deepEqual(ids, required, "young learners should not have to navigate separate coverage, portfolio, home or weekend pages");
   let previous = -1;
   for (const id of required) {
     const index = ids.indexOf(id);
@@ -202,7 +197,7 @@ test("student workspace starts at daily learning and retains assessment and port
   }
   assert.doesNotMatch(student[1], /\["(?:levelSelection|subjectSelection|termSelection|capabilitySelection)"/);
   assert.match(sequential, /studentSequenceHasMandatoryOrder/);
-  assert.match(sequential, /does not verify an individual assignment/);
+  assert.match(sequential, /Your teacher will confirm your class\./);
   const teacher = sequential.match(/"teacher":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(teacher, "teacher workspace sequence must exist");
   const teacherIds = [...teacher[1].matchAll(/\["([^"]+)","([^"]+)"\]/g)].map((match) => match[1]);
