@@ -125,6 +125,15 @@
         status(saveDraft(data) ? "Private listing draft saved on this device only. It has not been published and no order, payment or payout can happen in PacEdu yet." : "Could not save listing draft. Copy the details before leaving.");
       });
     }
+    var roleSelect = document.getElementById("pilotRoleSelector");
+    if (roleSelect && !roleSelect.dataset.paceduSkillsEarnRefresh) {
+      roleSelect.dataset.paceduSkillsEarnRefresh = "true";
+      roleSelect.addEventListener("change", function () {
+        var existing = document.getElementById(ID);
+        if (existing) existing.remove();
+        render();
+      });
+    }
   }
   function init() { render(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
