@@ -154,7 +154,7 @@
   for (var f=3;f<=7;f+=1) levels.push("Form "+f);
   function stage(level) {
     if(level==="ECE") return "early";
-    var m=String(level).match(/(Class|Form) (\\d+)/), n=m?Number(m[2]):1;
+    var m=String(level).match(/[0-9]+/), n=m?Number(m[0]):1;
     if(/^Form/.test(level)) return n<=4?"junior":"senior";
     return n<=2?"foundation":n<=5?"middle":"upper";
   }
@@ -164,7 +164,7 @@
     var index=Math.max(0,(Math.floor((Number(day)||2)-2))%pack.length);
     var chosen=pack[index];
     var st=stage(level), questions=chosen.questions.map(function(q,i){
-      var opts=q[2].slice(), answer=q[1];
+      var opts=[q[1]].concat(q[2]).slice(0,4), answer=q[1];
       if(st==="early" && i>1) return {number:i+1,type:"Oral / picture response",prompt:q[0],options:[],answer:answer,why:q[4]};
       return {number:i+1,type:"Multiple choice",prompt:q[0],options:opts,answer:answer,correctOption:q[3],why:q[4]};
     });
