@@ -197,6 +197,8 @@ test("student workspace keeps only the simple daily activity, practice and learn
   }
   assert.doesNotMatch(student[1], /\["(?:levelSelection|subjectSelection|termSelection|capabilitySelection)"/);
   assert.match(sequential, /studentSequenceHasMandatoryOrder/);
+  assert.match(sequential, /data-pe-role=student[^"]*#pacificEducationAppMenu[^"]*#pe856AllPilotBoxesMenu/);
+  assert.match(sequential, /Your teacher will confirm your class\./);
   assert.match(sequential, /Your teacher will confirm your class\./);
   const teacher = sequential.match(/"teacher":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(teacher, "teacher workspace sequence must exist");
