@@ -28,7 +28,7 @@ test("every listed subject produces four concrete questions with answer explanat
     assert.equal(worksheet.questions.length, 4, subject);
     assert.equal(worksheet.answerKey.length, 4, subject);
     assert.ok(worksheet.readingText.length > 20, subject);
-    assert.ok(worksheet.questions.every(q => q.prompt && q.options && q.answer && q.why), subject);
+    assert.ok(worksheet.questions.every(q => q.prompt && q.options && q.answer && q.why && q.options[q.correctOption] === q.answer), subject);
     assert.ok(worksheet.answerKey.every(a => a.answer && a.explanation), subject);
     assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
   }
