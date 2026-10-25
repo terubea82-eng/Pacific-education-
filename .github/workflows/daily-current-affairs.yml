@@ -26,7 +26,7 @@ jobs:
           # but the existing JSON is never overwritten unless eligible articles
           # are successfully collected and validated.
           declare -A feeds=(
-            [unesco]="https://connect.unevoc.unesco.org/unevoc_news.xml"
+            [unesco]="https://www.unesco.org/en/newsroom"
             [who]="https://www.who.int/rss-feeds/news-english.xml"
             [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
           )
@@ -68,6 +68,41 @@ jobs:
           }
           function entries(xml) {
             const blocks = xml.match(/<(?:item|entry)\b[^>]*>[\s\S]*?<\/(?:item|entry)\s*>/gi) || [];
+            if (!blocks.length && /unesco\.org\/en\/newsroom/i.test(xml.slice(0, 5000))) {
+              // UNESCO's newsroom endpoint is currently HTML rather than RSS/XML.
+              // Read only article links from the official newsroom and require a
+              // nearby publication date; normal URL, freshness and relevance checks
+              // below still apply before any item is accepted.
+              const htmlItems = [];
+              const anchors = [...xml.matchAll(/<a\b([^>]*?)href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi)];
+              const datePattern = /datetime=["']([^"']+)["']|\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/gi;
+              for (const m of anchors) {
+                const href = m[2].replace(/&amp;/g, '&');
+                if (!/^\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href)) continue;
+                const title = decode(m[4]);
+                if (!title || title.length < 12 || /^(read more|learn more|more)$/i.test(title)) continue;
+                const start = Math.max(0, m.index - 450);
+                const end = Math.min(xml.length, m.index + m[0].length + 700);
+                const neighborhood = xml.slice(start, end);
+                const dates = [];
+                for (const dm of neighborhood.matchAll(datePattern)) {
+                  const raw = dm[1] || dm[2];
+                  const timestamp = Date.parse(raw);
+                  if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
+                }
+                dates.sort((a, b) => a.distance - b.distance);
+                if (!dates.length) continue;
+                htmlItems.push({
+                  title,
+                  url: new URL(href, 'https://www.unesco.org').toString(),
+                  date: new Date(dates[0].timestamp).toISOString(),
+                  description: title
+                });
+              }
+              const unique = new Map();
+              for (const item of htmlItems) if (!unique.has(item.url)) unique.set(item.url, item);
+              return [...unique.values()];
+            }
             return blocks.map(b => {
               let link = tag(b, 'link');
               if (!link) {
