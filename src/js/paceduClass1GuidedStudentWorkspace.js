@@ -75,7 +75,7 @@
   function render() {
     var role = activeRole();
     var target = document.getElementById("dailyLesson") || document.getElementById("studentStartLearning");
-    if (!target || (role && role !== "student" && role !== "blind-learner" && role !== "deaf-learner")) return;
+    if (!target || ["student", "blind-learner", "deaf-learner"].indexOf(role) === -1) return;
     if (document.getElementById(PANEL_ID)) return;
     addStyles();
     var panel = el("section");
