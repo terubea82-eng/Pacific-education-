@@ -28,7 +28,7 @@ test("every listed subject produces four concrete questions with answer explanat
     assert.equal(worksheet.questions.length, 4, subject);
     assert.equal(worksheet.answerKey.length, 4, subject);
     assert.ok(worksheet.readingText.length > 20, subject);
-    assert.ok(worksheet.questions.every(q => q.prompt && q.options && q.answer && q.why && q.options[q.correctOption] === q.answer), subject);
+    assert.ok(worksheet.questions.every(q => q.prompt && q.options && q.answer && q.why && (q.options.length ? q.options[q.correctOption] === q.answer : q.type === "Oral / picture response")), subject);
     assert.ok(worksheet.answerKey.every(a => a.answer && a.explanation), subject);
     assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
   }
@@ -71,4 +71,36 @@ test("Fijian language packs require verified teacher-provided text rather than i
     assert.ok(worksheet.readingText.includes("Teacher: insert"));
     assert.ok(worksheet.sourceNote.includes("current Fiji Ministry syllabus"));
   }
+});
+
+test("all Fiji levels and four ability bands return complete differentiated worksheets", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  assert.deepEqual(JSON.parse(JSON.stringify(api.levels)), [
+    "ECE", "Class 1", "Class 2", "Class 3", "Class 4", "Class 5", "Class 6", "Class 7", "Class 8",
+    "Form 3", "Form 4", "Form 5", "Form 6", "Form 7"
+  ]);
+  for (const level of api.levels) {
+    for (const subject of api.subjects) {
+      for (const ability of ["support", "developing", "expected", "extension"]) {
+        const worksheet = api.getWorksheet(level, subject, 2, ability);
+        assert.equal(worksheet.level, level);
+        assert.equal(worksheet.subject, subject);
+        assert.equal(worksheet.ability, ability);
+        assert.equal(worksheet.questions.length, 4);
+        assert.equal(worksheet.answerKey.length, 4);
+        assert.ok(worksheet.tasks.length >= 3);
+        assert.ok(worksheet.sourceNote.includes("source mapping pending"));
+        for (const q of worksheet.questions) {
+          if (q.options.length) assert.equal(q.options[q.correctOption], q.answer);
+          else assert.equal(q.type, "Oral / picture response");
+        }
+      }
+    }
+  }
+});
+
+test("Class 1 English Day 2 starts with the planned introduction activity", () => {
+  const worksheet = load().PacEduDailyWorksheetContent.getWorksheet("Class 1", "English", 2, "expected");
+  assert.equal(worksheet.topic, "Who am I? — Class 1 Term 1 Week 1");
+  assert.equal(worksheet.answerKey[0].answer, "Class 1");
 });
