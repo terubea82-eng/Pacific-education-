@@ -62,6 +62,11 @@ test("day one diagnostic is not overwritten and wrapper exposes the daily bank",
     "Day 1 diagnostic must be preserved");
   assert.equal(window.PacificEducationEnglishWorksheetLibrary.dailyContentEnhanced, true);
   assert.equal(typeof window.PacificEducationEnglishWorksheetLibrary.getDailyContentWorksheet, "function");
+  const practice = window.PacificEducationEnglishWorksheetLibrary.getWorksheet("Class 1", "developing", 2, "English");
+  assert.ok(practice.passage.length > 20);
+  assert.equal(practice.questionPlan.count, 4);
+  assert.equal(practice.answerKey.length, 4);
+  assert.ok(Array.isArray(practice.teacherReview));
 });
 
 test("Fijian language packs require verified teacher-provided text rather than invented translations", () => {
