@@ -9,6 +9,14 @@
     { id: "remedial", name: "Remedial / Re-teaching" },
     { id: "extension", name: "Extension / Challenge" }
   ];
+  /* Four achievement bands are shown to teachers. Remedial and extension remain
+     supported internally for older records and activity differentiation. */
+  var ABILITY_BANDS = C.slice(0, 4);
+  function displayBand(value) {
+    if (value === "remedial") return "foundation";
+    if (value === "extension") return "advanced";
+    return ABILITY_BANDS.some(function (item) { return item.id === value; }) ? value : "expected";
+  }
   var GUIDANCE = {
     foundation: "Foundation: start with clear modelling, familiar examples, pictures or objects, and short guided steps. Record what the learner can do independently and what support helps.",
     developing: "Developing: let the learner try first, then offer a hint, word bank, worked example, or guided practice when needed.",
@@ -80,6 +88,22 @@
     var source = "general";
     try {
       if (scope) {
+        /* Evidence-derived recommendations take precedence over the teacher's
+           one-time starting band once enough marked work and a term exam exist. */
+        var engine = window.PacificEducationEvidenceBasedAbility;
+        if (engine && typeof engine.evaluate === "function") {
+          var result = engine.evaluate({
+            studentId: scope.studentId,
+            classId: scope.classId,
+            term: window.localStorage.getItem("pacificEducationTerm") || "Term 1",
+            subject: window.localStorage.getItem("pacificEducationSubject") || "English"
+          });
+          var recommended = result && result.status === "recommendation-ready"
+            ? (result.finalLevel || result.recommendation) : null;
+          if (validCapability(recommended)) {
+            return { capability: recommended, source: "PacEdu evidence recommendation", linked: true, recommendation: result };
+          }
+        }
         v = window.localStorage.getItem(studentStorageKey(scope));
         if (v) source = "student";
         /* Never borrow a general setting when a specific child is selected. */
@@ -138,13 +162,13 @@
     var s = document.createElement("select");
     s.id = "pacificEducationCapability";
     s.setAttribute("aria-describedby", "pacificEducationCapabilityGuidance");
-    C.forEach(function (x) {
+    ABILITY_BANDS.forEach(function (x) {
       var o = document.createElement("option");
       o.value = x.id;
       o.textContent = x.name;
       s.appendChild(o);
     });
-    s.value = get();
+    s.value = displayBand(get());
     if (activeStudentContext()) {
       s.disabled = true;
       s.hidden = true;
@@ -158,7 +182,7 @@
     function showGuidance() {
       var learner = activeStudentContext();
       var record = getRecord();
-      s.value = record.capability;
+      s.value = displayBand(record.capability);
       if (learner) {
         if (learner.identityVerified !== true || !learner.studentId || !learner.classId) {
           info.textContent = "Learning level is not yet recommended. Enter the exact school-issued learner reference and use a matching class roster. PacEdu will not match by name or count unverified work.";
@@ -179,10 +203,15 @@
       }
       var scope = selectedStudentScope();
       var linkStatus = scope ?
-        (record.linked ? "Saved for the selected student in this class. " :
-          "No ability result is saved for this student yet. Use Day 1 evidence first; do not copy another learner's or a general ability setting. ") :
+        (record.source === "PacEdu evidence recommendation"
+          ? "PacEdu provisional recommendation uses this student's marked daily work and term exam. Teacher review is still required. "
+          : record.linked ? "Saved starting band for the selected student in this class. "
+          : "No ability result is saved for this student yet. Use Day 1 evidence first; do not copy another learner's or a general ability setting. ") :
         "No student-and-class selection is active; changes will be saved as a general setting, not linked to an individual child. ";
-      info.textContent = linkStatus + (GUIDANCE[s.value] || GUIDANCE.expected);
+      if (record.recommendation && record.recommendation.bandRule) linkStatus += record.recommendation.bandRule + " ";
+      info.textContent = linkStatus +
+        "Four ability bands: Foundation, Developing, Expected-level and Advanced. Re-teaching and extension are support strategies, not separate ability bands. " +
+        (GUIDANCE[s.value] || GUIDANCE.expected);
     }
     s.addEventListener("change", function () {
       set(s.value);
@@ -210,6 +239,7 @@
   }
   window.PacificEducationCapabilitySelector = Object.freeze({
     capabilities: C,
+    abilityBands: ABILITY_BANDS,
     getCapability: get,
     setCapability: set,
     initialise: init

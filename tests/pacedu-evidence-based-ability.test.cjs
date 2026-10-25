@@ -57,7 +57,8 @@ test("recommendation waits for five teacher-marked daily activities and a teache
   assert.equal(saved.success, true);
   const result = api.evaluate({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English" });
   assert.equal(result.status, "recommendation-ready");
-  assert.equal(result.recommendation, "extension");
+  assert.equal(result.recommendation, "advanced");
+  assert.match(result.bandRule, /at least 80%/);
   assert.equal(result.reviewStatus, "pending-teacher-review");
 });
 
@@ -111,4 +112,78 @@ test("student capability context does not require a display name", () => {
   const selector = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
   assert.match(selector, /context && context\.role === "student" \? context : null/);
   assert.match(selector, /learner\.displayName \|\| "this learner"/);
+});
+
+
+test("teacher-facing ability selector shows four bands and keeps support strategies out of the band list", () => {
+  const selectorSource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+  const selectorWindow = {
+    localStorage: { getItem() { return null; }, setItem() {} }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(selectorSource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  const selector = selectorWindow.PacificEducationCapabilitySelector;
+  assert.deepEqual(
+    Array.from(selector.abilityBands, item => item.id),
+    ["foundation", "developing", "expected", "advanced"]
+  );
+  assert.equal(selector.capabilities.some(item => item.id === "remedial"), true);
+  assert.equal(selector.capabilities.some(item => item.id === "extension"), true);
+});
+
+
+test("evidence engine recommends only four ability bands using transparent percentage thresholds", () => {
+  const cases = [
+    { mark: 15, expected: "foundation" },
+    { mark: 25, expected: "developing" },
+    { mark: 35, expected: "expected" },
+    { mark: 45, expected: "advanced" }
+  ];
+  for (const item of cases) {
+    const { api, storage } = harness();
+    storage.setItem("pacificEducationActivityResponses", JSON.stringify([
+      activity("STU-001", 1, "teacher-approved"),
+      activity("STU-001", 2, "teacher-approved"),
+      activity("STU-001", 3, "teacher-approved"),
+      activity("STU-001", 4, "teacher-approved"),
+      activity("STU-001", 5, "teacher-approved")
+    ]));
+    api.recordTermMark({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English", mark: item.mark, maximum: 50 });
+    const result = api.evaluate({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English" });
+    assert.equal(result.recommendation, item.expected);
+    assert.ok(result.bandRule.includes("%"));
+    assert.equal(["foundation", "developing", "expected", "advanced"].includes(result.recommendation), true);
+  }
+});
+
+
+test("teacher ability selector prefers the selected learner's marked-evidence recommendation", () => {
+  const selectorSource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+  const values = new Map();
+  let evaluations = 0;
+  const selectorWindow = {
+    localStorage: { getItem(key) { return values.has(key) ? values.get(key) : null; }, setItem(key, value) { values.set(key, String(value)); } },
+    sessionStorage: { getItem() { return null; } },
+    PacificEducationStudentCoverageContext: { getStudentId() { return "STU-001"; } },
+    PacificEducationTeacherClassRosterContext: {
+      getClassId() { return "CLASS-REF-1"; },
+      getStudents() { return ["STU-001"]; }
+    },
+    PacificEducationEvidenceBasedAbility: {
+      evaluate(input) {
+        evaluations += 1;
+        assert.equal(input.studentId, "STU-001");
+        assert.equal(input.classId, "CLASS-REF-1");
+        return { status: "recommendation-ready", recommendation: "advanced", bandRule: "Advanced requires both evidence measures." };
+      }
+    }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(selectorSource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  assert.equal(selectorWindow.PacificEducationCapabilitySelector.getCapability(), "advanced");
+  assert.equal(evaluations, 1);
 });

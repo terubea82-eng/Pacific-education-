@@ -180,10 +180,13 @@
   ];
   function clampDay(day) { return Math.max(1, Math.min(365, Math.floor(Number(day) || 1))); }
   function classNumber(level) {
-    var s = String(level || "");
+    var s = String(level || "").trim();
     if (/^(ece|kindergarten)$/i.test(s)) return -1;
     var m = s.match(/(?:class|year)\s*(\d+)/i);
-    return m ? Math.max(1, Math.min(13, Number(m[1]))) : 1;
+    if (m) return Math.max(1, Math.min(8, Number(m[1])));
+    var form = s.match(/form\s*(\d+)/i);
+    if (form) return Math.max(9, Math.min(13, Number(form[1]) + 6));
+    return 1;
   }
   function stageFor(n) {
     if (n <= 0) return "early";
@@ -277,7 +280,7 @@
       title: "Day 1 — English Initial Ability Check — " + level,
       picturePrompt: picturePromptFor("familiar learning", stage),
       topic: "Baseline observation (not a pass/fail exam)",
-      instructions: "Teacher: use this short diagnostic to identify the learner's current demonstrated skills. Offer accessible response modes and record evidence, not assumptions. Do not assign a permanent level from one task. Mark each item: independent / with support / not yet demonstrated / not observed.",
+      instructions: "Teacher: use this short diagnostic to identify the learner's current demonstrated skills. Offer accessible response modes and record evidence, not assumptions. Do not assign a permanent level from one task. Mark each item: independent / with support / not yet demonstrated / not observed. This is not a pass/fail exam.",
       tasks: tasks,
       questionPlan: {
         count: tasks.length,
@@ -427,6 +430,7 @@
       level: level, ability: ability, day: day,
       instructions: "Student: try each task. You may answer in an accessible way agreed with your teacher. Ask for clarification if needed. This is practice, not a formal examination.",
       tasks: tasks,
+      questionPlan: questionPlan,
       responseLines: stage === "early" ? 2 : stage === "foundation" ? 3 : stage === "middle" ? 5 : 7,
       teacherCheck: "Check the learning goal using the learner's actual response. Record: independent / with support / not yet demonstrated / not observed. Give feedback and a retry opportunity; do not mark missing evidence as mastery.",
       differentiationNote: "Support and extension are options based on demonstrated skill and current evidence, not a fixed label. Adjust text length, vocabulary, response mode, and time while preserving the learning goal.",
