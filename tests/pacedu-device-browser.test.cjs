@@ -1121,11 +1121,14 @@ test("save confirmation then Next opens the selected role workspace for every re
       await page.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
       await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
       await page.evaluate(() => {
+        localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+        localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
         localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
           "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
         }));
         localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
-          "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+          "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+          "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
         }));
       });
       await page.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
@@ -1243,7 +1246,7 @@ test("student activity pack stays locked until matching teacher release", async 
     }));
     window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", document.getElementById("approval-gate-test-host"), 1);
   });
-  await expect(page.locator("#paceduRoleActivityPack #paceduRoleActivityResponse")).toBeVisible();
+  await expect(page.locator("#approval-gate-test-host #paceduRoleActivityPack #paceduRoleActivityResponse")).toBeVisible();
 });
 
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
