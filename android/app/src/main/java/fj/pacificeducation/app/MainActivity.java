@@ -12,6 +12,7 @@ import android.speech.tts.TextToSpeech;
 import android.speech.tts.Voice;
 import android.speech.tts.UtteranceProgressListener;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -42,6 +43,7 @@ public final class MainActivity extends Activity {
             "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
 
     private WebView webView;
+    private boolean webPageReady = false;
     private SharedPreferences prefs;
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
@@ -66,6 +68,8 @@ public final class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        // Keep the display awake while PacEdu is in the foreground; Android releases this when the app is backgrounded.
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         textToSpeech = new TextToSpeech(this, status -> {
             nativeTtsInitializationFinished = true;
             if (status == TextToSpeech.SUCCESS && textToSpeech != null) {
@@ -98,8 +102,14 @@ public final class MainActivity extends Activity {
                 pendingNativeSpeech = "";
                 notifyWebVoiceStatus("AI Playback unavailable: Android could not initialize its text-to-speech engine.");
             }
+            // TTS may initialize after onResume; restore only after the engine is ready.
+            if (ttsReady && prefs.getBoolean(VOICE_RESUME_ACTIVE, false) && !prefs.getBoolean(VOICE_RESUME_STOPPED, false)) {
+                restoreNativeConversationResume();
+            }
         });
-        showNativeHome();
+        // Reopen the learning platform after an accidental close if voice playback was in progress.
+        if (prefs.getBoolean(VOICE_RESUME_ACTIVE, false) && !prefs.getBoolean(VOICE_RESUME_STOPPED, false)) showWebPlatform();
+        else showNativeHome();
     }
 
     private void selectPreferredVoice() {
@@ -174,7 +184,8 @@ public final class MainActivity extends Activity {
     }
 
     private void restoreNativeConversationResume() {
-        if (prefs == null || nativeConversationActive) return;
+        // Wait for the hosted page so registration-entry guards inspect the actual URL.
+        if (prefs == null || !ttsReady || textToSpeech == null || nativeConversationActive || webView == null || !webPageReady) return;
         if (!prefs.getBoolean(VOICE_RESUME_ACTIVE, false) || prefs.getBoolean(VOICE_RESUME_STOPPED, false)) return;
         String json = prefs.getString(VOICE_RESUME_JSON, "");
         if (json == null || json.trim().isEmpty()) return;
@@ -238,6 +249,9 @@ public final class MainActivity extends Activity {
     }
     private boolean speakConversationNative(String json) {
         if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
+        // Keep the complete dialogue available for crash/close recovery before speaking.
+        nativeConversationJson = json;
+        nativeConversationIntentionalStop = false;
         try {
             JSONArray lines = new JSONArray(json);
             if (lines.length() == 0) return false;
@@ -336,6 +350,7 @@ public final class MainActivity extends Activity {
         @JavascriptInterface
         public boolean speakConversation(String json) {
             if (json == null || json.trim().isEmpty()) return false;
+            if (nativeConversationActive && json.equals(nativeConversationJson)) return true;
             if (ttsReady && textToSpeech != null) return speakConversationNative(json);
             if (nativeTtsInitializationFinished || textToSpeech == null) {
                 notifyWebVoiceStatus("AI Playback unavailable: Android text-to-speech is not ready. Check the phone's Text-to-speech engine and English voice data.");
@@ -540,6 +555,7 @@ public final class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                webPageReady = false;
                 view.setVisibility(View.VISIBLE);
                 super.onPageStarted(view, url, favicon);
             }
@@ -547,12 +563,18 @@ public final class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
+                webPageReady = true;
                 // The hosted JavaScript single-navigation controller owns all page
                 // transitions. Do not intercept the Welcome Next button here: an
                 // Android-only click handler can bypass Vision/Mission and Rules.
+                // Keep the phone awake while PacEdu is visible when the WebView supports Screen Wake Lock.
+                // Android FLAG_KEEP_SCREEN_ON above remains the primary native safeguard.
+                view.evaluateJavascript("(function(){function hold(){try{if(document.visibilityState==='visible'&&navigator.wakeLock&&navigator.wakeLock.request){navigator.wakeLock.request('screen').then(function(lock){window.__pacEduWakeLock=lock;lock.addEventListener('release',function(){if(document.visibilityState==='visible')setTimeout(hold,250);});}).catch(function(){});}}catch(e){}}document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')hold();else if(window.__pacEduWakeLock){try{window.__pacEduWakeLock.release();}catch(e){}window.__pacEduWakeLock=null;}});hold();})();", null);
                 // Inject the native adapter after remotely hosted page scripts load.
                 // The APK opens GitHub Pages, so branch-only JavaScript is not bundled.
                 // Keep the protected #856 speech controller intact.
+                // Resume only after the actual hosted URL is known and native TTS is ready.
+                restoreNativeConversationResume();
                 view.evaluateJavascript("(function(){function install(){try{var s=window.PacificEducationSpeech,b=window.PacificEducationNativeTTS;if(!s||!b||typeof b.speakConversation!=='function')return false;if(s.__pacNativeAndroidBridgeOverride)return true;var previous=s.speakConversation;s.speakConversation=function(lines,done){if(!Array.isArray(lines)||!lines.length)return false;try{var payload=JSON.stringify(lines.map(function(x){return {speaker:String(x&&x.speaker||''),text:String(x&&x.text||'')};}));var accepted=b.speakConversation(payload);if(accepted){var st=document.getElementById('pacificEducationVoiceStatus');if(st)st.textContent=(typeof b.available==='function'&&!b.available())?'AI Playback: preparing the Android voice engine…':'AI Playback: native Android voice active.';return true;}var st2=document.getElementById('pacificEducationVoiceStatus');if(st2)st2.textContent='Android voice engine did not accept AI Playback. Check Android Text-to-speech settings and retry.';return previous(lines,done);}catch(e){try{return previous(lines,done);}catch(_){return false;}}};s.__pacNativeAndroidBridgeOverride=true;return true;}catch(_){return false;}}var attempts=0;function installWithRetry(){attempts++;if(install()||attempts>=40)return;setTimeout(installWithRetry,250);}installWithRetry();})();", null);;
             }
         });
