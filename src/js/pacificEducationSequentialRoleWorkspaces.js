@@ -651,6 +651,16 @@
     if(hear) hear.onclick=function(){ var item=sequence[index]; speak("Step "+(index+1)+" of "+sequence.length+". "+item[1]+". Follow this page, then press Next."); };
     if(stop) stop.onclick=function(){ try{ if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.stopSpeech==="function") window.PacificEducationSpeech.stopSpeech(); else if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} };
     var dailyDay=1;
+    try{
+      var savedDailyDay=Number(window.localStorage.getItem("pacificEducationCurrentDay")||window.localStorage.getItem("currentDayNumber")||"1");
+      if(Number.isInteger(savedDailyDay)&&savedDailyDay>=1&&savedDailyDay<=365) dailyDay=savedDailyDay;
+    }catch(e){}
+    function persistDailyDay(day){
+      try{
+        window.localStorage.setItem("pacificEducationCurrentDay",String(day));
+        window.localStorage.setItem("currentDayNumber",String(day));
+      }catch(e){}
+    }
 
     function studentDailySubject(){
       var fallbackSelect=page && page.querySelector ? page.querySelector("#peStudentDailySubject") : null;
@@ -1440,10 +1450,17 @@
       if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(clicked.disabled) return;
       if(index<sequence.length-1){
-        /* Complete the full daily cycle before advancing to the next day.
-           Curriculum Coverage and My Progress are required parts of every day. */
-        if(sequence[index][0]==="pacificEducationStudentProgressDashboard" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
-          if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
+        /* Standard students complete Daily Activity, Practice and Check My
+           Learning before advancing. Accessible learner flows retain their
+           existing progress-review checkpoint before the next day. */
+        var dailyCycleComplete=(role==="student"&&sequence[index][0]==="assessments") ||
+          ((role==="blind-learner"||role==="deaf-learner")&&sequence[index][0]==="pacificEducationStudentProgressDashboard");
+        if(dailyCycleComplete&&dailyDay<365){
+          dailyDay++;
+          persistDailyDay(dailyDay);
+          index=sequence.findIndex(function(x){return x[0]==="dailyLesson";});
+          renderPage();
+          return;
         }
         index++;
         try{history.pushState({pacificEducationSequential:true,role:role,index:index},"","#pacificEducationSequentialRoleWorkspace");}catch(e){}
