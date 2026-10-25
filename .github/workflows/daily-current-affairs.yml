@@ -49,6 +49,7 @@ jobs:
           node <<'NODE'
           const fs = require('fs');
           const { URL } = require('url');
+          const { execFileSync } = require('child_process');
           const sources = [
             { key: 'unesco', label: 'UNESCO', host: 'unesco.org' },
             { key: 'who', label: 'WHO', host: 'who.int' },
@@ -94,27 +95,38 @@ jobs:
                   if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
                 }
                 dates.sort((a, b) => a.distance - b.distance);
-                // The newsroom HTML fallback can place a modified date near an
-                // article link. Never promote that nearby timestamp to publication
-                // date unless it agrees with a date explicitly included in the
-                // linked headline. If either signal is missing or they disagree,
-                // fail closed and leave the item out for manual verification.
-                const titleDateMatch = title.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
-                if (!titleDateMatch || !dates.length) {
-                  console.warn('Skipping UNESCO item without independently matching title and nearby dates: ' + href);
+                const articleUrl = new URL(href, 'https://www.unesco.org').toString();
+                // The newsroom card may expose a modified/event date. Use only
+                // the linked article's explicit original publication metadata;
+                // never substitute dateModified or a nearby card timestamp.
+                let articleHtml = '';
+                try {
+                  articleHtml = execFileSync('curl', [
+                    '--silent', '--show-error', '--fail', '--location',
+                    '--connect-timeout', '8', '--max-time', '15',
+                    '--user-agent', 'PacificEducationPilot/1.0 (educational current-affairs feed)',
+                    '--header', 'Accept: text/html',
+                    articleUrl
+                  ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 2 * 1024 * 1024 });
+                } catch (_) {
+                  console.warn('Skipping UNESCO item because article metadata could not be fetched: ' + articleUrl);
                   continue;
                 }
-                const titleTimestamp = Date.parse(titleDateMatch[1]);
-                const nearbyTimestamp = dates[0].timestamp;
-                if (!Number.isFinite(titleTimestamp) ||
-                    new Date(titleTimestamp).toISOString().slice(0, 10) !== new Date(nearbyTimestamp).toISOString().slice(0, 10)) {
-                  console.warn('Skipping UNESCO item with conflicting title and nearby dates: ' + href);
+                const publicationMatches = [
+                  ...articleHtml.matchAll(/"datePublished"\\s*:\\s*"([^"]+)"/gi),
+                  ...articleHtml.matchAll(/<meta\\b[^>]*(?:property|name)=["'](?:article:published_time|datePublished)["'][^>]*content=["']([^"']+)["'][^>]*>/gi)
+                ];
+                const publicationValues = publicationMatches.map(match => match[1])
+                  .filter(value => /^\\d{4}-\\d{2}-\\d{2}/.test(value));
+                const publicationTimestamp = publicationValues.length ? Date.parse(publicationValues[0]) : NaN;
+                if (!Number.isFinite(publicationTimestamp)) {
+                  console.warn('Skipping UNESCO item without explicit datePublished metadata: ' + articleUrl);
                   continue;
                 }
                 htmlItems.push({
                   title,
-                  url: new URL(href, 'https://www.unesco.org').toString(),
-                  date: new Date(titleTimestamp).toISOString(),
+                  url: articleUrl,
+                  date: new Date(publicationTimestamp).toISOString(),
                   description: title
                 });
               }
@@ -253,7 +265,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'UNESCO official newsroom HTML fallback (date cross-check required), WHO RSS and UN News RSS feeds',
+            source: 'UNESCO newsroom links validated against article datePublished metadata, WHO RSS and UN News RSS feeds',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
