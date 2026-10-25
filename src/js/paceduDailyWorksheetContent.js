@@ -7,11 +7,11 @@
   "use strict";
   var packs = {
     "English": [
-      {topic:"A rainy school morning", passage:"Rain fell before school. Mere put her books in a waterproof bag. She walked carefully with her aunt and arrived safely. The class dried the wet desk before reading.", questions:[
-        ["Why did Mere use a waterproof bag?","To help keep her books dry",["To make the rain fall","To carry fish","To hide her books"],0,"The passage says she used it before walking in the rain."],
-        ["Who walked with Mere?","Her aunt",["Her teacher","Her cousin","Nobody"],0,"The passage states that she walked with her aunt."],
-        ["What did the class do before reading?","Dried the wet desk",["Went swimming","Closed the school","Planted a tree"],0,"This is stated in the final sentence."],
-        ["Choose the best title.","A Rainy School Morning",["A Football Final","A Market Day","A Night at Sea"],0,"The title covers the main events."]
+      {topic:"Who am I? — Class 1 Term 1 Week 1", passage:"Lani is in Class 1. She greets her teacher and says, “Good morning. My name is Lani.” She carries a book and a pencil. Lani listens when her classmates speak and takes turns sharing ideas.", questions:[
+        ["Which class is Lani in?","Class 1",["Class 2","Form 3","ECE"],0,"The first sentence says Lani is in Class 1."],
+        ["Which greeting does Lani use?","Good morning",["Good night","Goodbye forever","See you next year"],0,"The passage quotes her greeting."],
+        ["Name one item Lani carries.","A book",["A cooking pot","A fishing net","A football goal"],0,"The passage names a book and a pencil."],
+        ["Which action shows respectful listening?","Taking turns sharing ideas",["Speaking over everyone","Ignoring classmates","Hiding the class books"],0,"The final sentence describes listening and taking turns."]
       ]},
       {topic:"Sharing at the market", passage:"At the market, Saki bought 3 ripe bananas and 2 pawpaw slices. He put the fruit in a reusable bag. He shared one banana with his sister and kept the rest for the journey home.", questions:[
         ["Where did Saki buy the fruit?","At the market",["At the library","At the airport","At the clinic"],0,"The first words tell us where."],
