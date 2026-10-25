@@ -14,13 +14,9 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["dailyLesson","Today's Daily Learning Activity"],
-      ["dailyLessonPracticeStage","Practice and Feedback"],
-      ["assessments","Daily Assessment Record"],
-      ["pacificEducationCoverageDashboard","Learning Coverage"],
-      ["pacificEducationStudentProgressDashboard","My Progress and Portfolio"],
-      ["pacificEducationHomeSubmission","Home Continuity"],
-      ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Activities"]
+      ["dailyLesson","Today’s Daily Activity"],
+      ["dailyLessonPracticeStage","Practice"],
+      ["assessments","Check My Learning"]
     ],
     "blind-learner":[
       ["dailyLesson","Accessible Daily Learning Activity"],
@@ -117,9 +113,7 @@
   var STUDENT_MANDATORY_STEPS=[
     "dailyLesson",
     "dailyLessonPracticeStage",
-    "assessments",
-    "pacificEducationCoverageDashboard",
-    "pacificEducationStudentProgressDashboard"
+    "assessments"
   ];
   function studentSequenceHasMandatoryOrder(sequence){
     if(!Array.isArray(sequence)) return false;
@@ -141,7 +135,7 @@
     var check=validateSequence(sequence);
     if(!check.valid) return check;
     if(role==="student" && !studentSequenceHasMandatoryOrder(sequence)){
-      return {valid:false,errors:["Student sequence must retain the mandatory capability test, result, class/subject/term, daily activity, practice, assessment, curriculum coverage, and progress steps in order."]};
+      return {valid:false,errors:["Student sequence must keep Daily Activity, Practice, and Check My Learning in that order."]};
     }
     ROLE_SEQUENCE_OVERRIDES[role]=cloneSequence(sequence);
     saveSequenceOverrides();
@@ -215,9 +209,9 @@
       },true);
     });
     var levelStatus=page.querySelector("#pacificEducationLevelStatus");
-    if(levelStatus) levelStatus.textContent="Current pilot class: "+context.classLevel+". This choice is not a teacher-verified assignment.";
+    if(levelStatus) levelStatus.textContent="Your class is "+context.classLevel+". Your teacher will confirm it.";
     var sequentialStatus=page.querySelector("[data-pe-level-recovery='sequential'] [role='status']");
-    if(sequentialStatus) sequentialStatus.textContent="Current pilot class: "+context.classLevel+". Ask your teacher to confirm the assigned class.";
+    if(sequentialStatus) sequentialStatus.textContent="Your class is "+context.classLevel+". Ask your teacher if this is wrong.";
     var controllerRecoveryStatus=page.querySelector("#paceduLevelSelectorRecovery") && page.querySelector("#paceduLevelSelectorRecovery").parentElement.querySelector('[role="status"]');
     if(controllerRecoveryStatus) controllerRecoveryStatus.textContent="Current pilot class: "+context.classLevel+". This choice is not a teacher-verified assignment.";
   }
@@ -236,7 +230,7 @@
     banner.appendChild(strong);
     var note=document.createElement("p");
     note.style.cssText="margin:4px 0 0;font-size:.9em;";
-    note.textContent="Class context prototype: pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
+    note.textContent="Your teacher will confirm your class.";
     banner.appendChild(note);
     page.insertBefore(banner,page.firstChild);
     lockStudentClassSelectors(page,role,context);
@@ -400,8 +394,9 @@
       "body.pe-sequential-role-workspace-active #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pe856AllPilotBoxesMenu{display:none!important;visibility:hidden!important;}"+
       "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
-      "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}"+
-      "body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace #peSequentialPage > [data-pe-sequential-page='active']{display:block!important;visibility:visible!important;}";
+      "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden=\\'true\\']{display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace[data-pe-role=student] #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace[data-pe-role=student] #pe856AllPilotBoxesMenu,body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace[data-pe-role=blind-learner] #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace[data-pe-role=blind-learner] #pe856AllPilotBoxesMenu,body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace[data-pe-role=deaf-learner] #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace[data-pe-role=deaf-learner] #pe856AllPilotBoxesMenu{display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #pacificEducationSequentialRoleWorkspace #peSequentialPage > [data-pe-sequential-page=\\'active\\']{display:block!important;visibility:visible!important;}";
     document.body.classList.toggle("pe-sequential-role-workspace-active",!!active);
   }
 
@@ -640,6 +635,16 @@
     }
     app.insertBefore(shell,app.firstChild);
     placeAppMenuInWorkspace(shell);
+    /* Learners should not see technical global menus; accessibility and voice controls remain available. */
+    if(LEARNER_ROLES[role]){
+      ["pacificEducationAppMenu","pe856AllPilotBoxesMenu"].forEach(function(id){
+        var menu=document.getElementById(id);
+        if(!menu)return;
+        menu.hidden=true;
+        menu.setAttribute("aria-hidden","true");
+        try{menu.style.setProperty("display","none","important");menu.style.setProperty("visibility","hidden","important");}catch(e){}
+      });
+    }
 
     var title=document.getElementById("peSequentialTitle");
     var progress=document.getElementById("peSequentialProgress");
@@ -1443,9 +1448,10 @@
       if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(clicked.disabled) return;
       if(index<sequence.length-1){
-        /* Complete the full daily cycle before advancing to the next day.
-           Curriculum Coverage and My Progress are required parts of every day. */
-        if(sequence[index][0]==="pacificEducationStudentProgressDashboard" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+        /* Learners finish one simple cycle, then go straight to the next day.
+           Detailed coverage and portfolio records remain available to authorised
+           teacher workflows, not as extra navigation steps for young learners. */
+        if(sequence[index][0]==="assessments" && LEARNER_ROLES[role]){
           if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
         }
         index++;
