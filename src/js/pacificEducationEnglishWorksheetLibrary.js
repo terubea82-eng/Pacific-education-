@@ -6,7 +6,7 @@
 (function (global, document) {
   "use strict";
   var LEVELS = ["ECE"];
-  for (var i = 1; i <= 13; i += 1) LEVELS.push("Class " + i);
+  for (var i = 1; i <= 8; i += 1) LEVELS.push("Class " + i);\n  for (var form = 3; form <= 7; form += 1) LEVELS.push("Form " + form);
   var ABILITIES = [
     ["support", "Supported start"],
     ["developing", "Developing"],
@@ -182,7 +182,9 @@
     var s = String(level || "");
     if (/^(ece|kindergarten)$/i.test(s)) return -1;
     var m = s.match(/(?:class|year)\s*(\d+)/i);
-    return m ? Math.max(1, Math.min(13, Number(m[1]))) : 1;
+    if (m) return Math.max(1, Math.min(8, Number(m[1])));
+    var form = s.match(/form\s*(\d+)/i);
+    return form ? Math.max(9, Math.min(13, Number(form[1]) + 6)) : 1;
   }
   function stageFor(n) {
     if (n <= 0) return "early";
