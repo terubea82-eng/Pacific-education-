@@ -627,6 +627,17 @@
     }
     app.insertBefore(shell,app.firstChild);
     placeAppMenuInWorkspace(shell);
+    /* Learners should not see the technical global menus; accessibility and
+       Hear This Page / Stop Speech controls remain available in their workspace. */
+    if(LEARNER_ROLES[role]){
+      ["pacificEducationAppMenu","pe856AllPilotBoxesMenu"].forEach(function(id){
+        var menu=document.getElementById(id);
+        if(!menu)return;
+        menu.hidden=true;
+        menu.setAttribute("aria-hidden","true");
+        try{menu.style.setProperty("display","none","important");menu.style.setProperty("visibility","hidden","important");}catch(e){}
+      });
+    }
 
     var title=document.getElementById("peSequentialTitle");
     var progress=document.getElementById("peSequentialProgress");
