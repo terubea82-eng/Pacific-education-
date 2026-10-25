@@ -11,10 +11,13 @@
   var MIN_MARKED_ACTIVITIES = 5;
   var panelTerm = null, panelSubject = null;
   var LEVELS = [
-    {id:"foundation",label:"Foundation / targeted support"},
+    {id:"foundation",label:"Foundation"},
     {id:"developing",label:"Developing"},
     {id:"expected",label:"Expected-level"},
-    {id:"advanced",label:"Advanced"},
+    {id:"advanced",label:"Advanced"}
+  ];
+  /* Legacy intervention values remain readable but are not ability bands. */
+  var LEGACY_LEVELS = [
     {id:"remedial",label:"Remedial / re-teaching"},
     {id:"extension",label:"Extension / challenge"}
   ];
@@ -74,16 +77,25 @@
       return {status:"awaiting-evidence",message:"Awaiting at least "+MIN_MARKED_ACTIVITIES+" teacher-marked daily activities and a teacher-marked term examination.",studentId:studentId,classId:classId,term:termValue,subject:subjectValue,markedActivities:activities.length,minimumActivities:MIN_MARKED_ACTIVITIES,approvedActivities:approvedCount,needsPractice:practiceCount,examMark:exam?Number(exam.mark):null,examMaximum:exam?Number(exam.maximum):null,examPercentage:exam?Math.round(Number(exam.mark)/Number(exam.maximum)*100):null,recommendation:null,review:latestReview(studentId,classId,termValue,subjectValue),prototype:true};
     }
     var percentage=Math.round(Number(exam.mark)/Number(exam.maximum)*100);
-    var recommendation;
-    if(percentage>=90 && ratio>=0.9) recommendation="extension";
-    else if(percentage>=80 && ratio>=0.8) recommendation="advanced";
-    else if(percentage>=60 && ratio>=0.6) recommendation="expected";
-    else if(percentage<40 || ratio<0.4) recommendation="remedial";
-    else recommendation="developing";
+    var activityApprovalRate=Math.round(ratio*100);
+    var recommendation, bandRule;
+    if(percentage>=80 && ratio>=0.8) {
+      recommendation="advanced";
+      bandRule="Advanced: term exam at least 80% and teacher-approved daily activity rate at least 80%.";
+    } else if(percentage>=60 && ratio>=0.6) {
+      recommendation="expected";
+      bandRule="Expected-level: term exam at least 60% and teacher-approved daily activity rate at least 60%.";
+    } else if(percentage>=40 && ratio>=0.4) {
+      recommendation="developing";
+      bandRule="Developing: term exam at least 40% and teacher-approved daily activity rate at least 40%, but the higher-band conditions are not both met.";
+    } else {
+      recommendation="foundation";
+      bandRule="Foundation: the term exam or teacher-approved daily activity rate is below 40%; provide targeted teaching support and gather fresh evidence.";
+    }
     var review=latestReview(studentId,classId,termValue,subjectValue);
-    return {status:"recommendation-ready",message:"Provisional recommendation only; teacher review is required.",studentId:studentId,classId:classId,term:termValue,subject:subjectValue,markedActivities:activities.length,minimumActivities:MIN_MARKED_ACTIVITIES,approvedActivities:approvedCount,needsPractice:practiceCount,activityApprovalRate:Math.round(ratio*100),examMark:Number(exam.mark),examMaximum:Number(exam.maximum),examPercentage:percentage,recommendation:recommendation,recommendationLabel:labelFor(recommendation),review:review,finalLevel:review&&review.finalLevel?review.finalLevel:null,reviewStatus:review?review.status:"pending-teacher-review",prototype:true};
+    return {status:"recommendation-ready",message:"Provisional recommendation only; teacher review is required.",studentId:studentId,classId:classId,term:termValue,subject:subjectValue,markedActivities:activities.length,minimumActivities:MIN_MARKED_ACTIVITIES,approvedActivities:approvedCount,needsPractice:practiceCount,activityApprovalRate:activityApprovalRate,examMark:Number(exam.mark),examMaximum:Number(exam.maximum),examPercentage:percentage,recommendation:recommendation,recommendationLabel:labelFor(recommendation),bandRule:bandRule,review:review,finalLevel:review&&review.finalLevel?review.finalLevel:null,reviewStatus:review?review.status:"pending-teacher-review",prototype:true};
   }
-  function labelFor(id) { var x=LEVELS.find(function(v){return v.id===id;}); return x?x.label:"Pending evidence"; }
+  function labelFor(id) { var x=LEVELS.concat(LEGACY_LEVELS).find(function(v){return v.id===id;}); return x?x.label:"Pending evidence"; }
   function recordTermMark(input) {
     input=input||{};
     var studentId=text(input.studentId),classId=text(input.classId),termValue=text(input.term)||term(),subjectValue=text(input.subject)||subject();
@@ -103,7 +115,7 @@
     var result=evaluate(input);
     if(result.status!=="recommendation-ready") return {success:false,error:"A recommendation cannot be reviewed until the required evidence is available.",result:result};
     var finalLevel=text(input.finalLevel)||result.recommendation;
-    if(!LEVELS.some(function(x){return x.id===finalLevel;})) return {success:false,error:"Choose a valid learning recommendation."};
+    if(!LEVELS.concat(LEGACY_LEVELS).some(function(x){return x.id===finalLevel;})) return {success:false,error:"Choose a valid learning recommendation."};
     var reason=text(input.reason);
     var status=finalLevel===result.recommendation?"confirmed":"adjusted";
     if(status==="adjusted"&&!reason) return {success:false,error:"Record a reason when adjusting PacEdu's recommendation."};
