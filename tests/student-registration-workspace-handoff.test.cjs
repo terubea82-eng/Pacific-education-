@@ -89,6 +89,16 @@ test("Student registration save and green Next open a visible workspace and dail
   await page.locator("#peStudentWorkspaceIdentity").fill("Student Handoff Test");
   await page.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
   await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+  await page.evaluate(() => {
+    // This happy-path fixture represents a teacher-released Class 1 activity.
+    localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationSubject", "English");
+    localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+      "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+      "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+    }));
+  });
   await entry.locator("button:not(.pacific-voice-speaker)").click();
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
   await expect(page.locator("[data-pe-student-context-banner]")).toContainText("Student Handoff Test");
