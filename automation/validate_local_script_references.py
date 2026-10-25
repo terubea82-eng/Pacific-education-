@@ -19,8 +19,10 @@ missing = []
 checked_files = 0
 checked_refs = 0
 
+SKIP_DIRS = {".git", "node_modules", "vendor", "dist", "build", ".next", "coverage"}
+
 for html in sorted(ROOT.rglob("*.html")):
-    if ".git" in html.parts or html in EXCLUDED_HTML or html.name.endswith(EXCLUDED_SUFFIXES):
+    if any(part in SKIP_DIRS for part in html.parts) or html in EXCLUDED_HTML or html.name.endswith(EXCLUDED_SUFFIXES):
         continue
     checked_files += 1
     text = html.read_text(encoding="utf-8", errors="strict")
