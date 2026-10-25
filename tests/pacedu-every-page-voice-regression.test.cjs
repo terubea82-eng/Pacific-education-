@@ -2,34 +2,45 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 
-const voice = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
+const repair = fs.readFileSync("src/js/pacificEducationEveryPageVoiceRepair.js", "utf8");
+const protectedController = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
 const index = fs.readFileSync("src/index.html", "utf8");
 
-test("guided voice page map follows the real Welcome-to-workspace order", () => {
+test("additive voice repair maps every guided step to the actual page sequence", () => {
   const expected = [
-    'step:0,id:"pacificEducationWelcome"',
-    'step:1,id:"paceduPageVision"',
-    'step:2,id:"paceduPageRules"',
-    'step:3,id:"pacificEducationIdentityRegistration"',
-    'step:4,id:"prototypeAccess"',
-    'step:5,id:"levelSelection"',
-    'step:6,id:"subjectSelection"',
-    'step:7,id:"termSelection"',
-    'step:8,id:"capabilitySelection"',
-    'step:9,id:"dailyLesson"',
-    'step:10,id:"dailyLessonPracticeStage"',
-    'step:11,id:"assessments"',
-    'step:12,id:"teacherCalendarSection"'
+    '[0,"pacificEducationWelcome"',
+    '[1,"paceduPageVision"',
+    '[2,"paceduPageRules"',
+    '[3,"pacificEducationIdentityRegistration"',
+    '[4,"prototypeAccess"',
+    '[5,"levelSelection"',
+    '[6,"subjectSelection"',
+    '[7,"termSelection"',
+    '[8,"capabilitySelection"',
+    '[9,"dailyLesson"',
+    '[10,"dailyLessonPracticeStage"',
+    '[11,"assessments"',
+    '[12,"teacherCalendarSection"'
   ];
-  for (const mapping of expected) assert.ok(voice.includes(mapping), "missing mapping: " + mapping);
+  for (const mapping of expected) assert.ok(repair.includes(mapping), "missing mapping: " + mapping);
 });
 
-test("voice visibility check excludes pages hidden by an ancestor", () => {
-  assert.match(voice, /while\(node&&node\.nodeType===1\)/);
-  assert.match(voice, /node\.hidden\|\|node\.getAttribute\("aria-hidden"\)==="true"/);
-  assert.match(voice, /s\.display==="none"\|\|s\.visibility==="hidden"/);
+test("every workspace receives a Hear Instructions control and hidden ancestors are respected", () => {
+  assert.match(repair, /data-pe-every-page-voice-button/);
+  assert.match(repair, /workspaces\.forEach/);
+  assert.match(repair, /for\(var n=el;n&&n\.nodeType===1;n=n\.parentElement\)/);
+  assert.match(repair, /n\.hidden\|\|n\.getAttribute\("aria-hidden"\)==="true"/);
 });
 
-test("the updated voice controller is cache-busted in the application shell", () => {
-  assert.match(index, /pacificEducationMandatoryVoiceNavigation\.js\?v=20261025-every-page-voice-fix/);
+test("protected #856 mandatory voice controller is not modified by the repair", () => {
+  assert.match(protectedController, /function announceCurrentStep/);
+  assert.match(protectedController, /window\.PacificEducationMandatoryVoiceNavigation/);
+  assert.doesNotMatch(protectedController, /20261025-every-page-voice-fix/);
+});
+
+test("the additive voice repair is loaded after the protected controller", () => {
+  const protectedAt = index.indexOf("pacificEducationMandatoryVoiceNavigation.js?v=20261005-userbox-nextvoice");
+  const repairAt = index.indexOf("pacificEducationEveryPageVoiceRepair.js?v=20261025-every-page-voice-fix");
+  assert.ok(protectedAt >= 0, "protected controller script missing");
+  assert.ok(repairAt > protectedAt, "additive repair must load after protected controller");
 });
