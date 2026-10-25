@@ -1,5 +1,6 @@
 (function(window, document) {
   "use strict";
+  var hostObserver = null, renderedHost = null, refreshCurrent = null;
   var C = [
     { id: "foundation", name: "Foundation" },
     { id: "developing", name: "Developing" },
@@ -107,7 +108,26 @@
   }
   function init() {
     var h = document.getElementById("pacificEducationCapabilitySelector");
-    if (!h) return;
+    if (!h) {
+      /* The guided flow can reveal this host after the script first loads.
+         Retry when it is inserted instead of silently leaving the ability box blank. */
+      if (!hostObserver && document.body && typeof window.MutationObserver === "function") {
+        hostObserver = new window.MutationObserver(function () {
+          if (document.getElementById("pacificEducationCapabilitySelector")) {
+            hostObserver.disconnect();
+            hostObserver = null;
+            init();
+          }
+        });
+        hostObserver.observe(document.body, { childList: true, subtree: true });
+      }
+      return false;
+    }
+    if (hostObserver) { hostObserver.disconnect(); hostObserver = null; }
+    if (renderedHost === h && h.querySelector("#pacificEducationCapability")) {
+      if (refreshCurrent) refreshCurrent();
+      return true;
+    }
     h.textContent = "";
     var l = document.createElement("label");
     l.htmlFor = "pacificEducationCapability";
@@ -169,7 +189,11 @@
     s.addEventListener("focus", showGuidance);
     s.addEventListener("input", showGuidance);
     s.addEventListener("pointerup", showGuidance);
+    refreshCurrent = showGuidance;
+    renderedHost = h;
     window.addEventListener("pacificEducationStudentChanged", showGuidance);
+    document.addEventListener("pacificEducationStudentChanged", showGuidance);
+    window.addEventListener("storage", showGuidance);
     document.addEventListener("pacificEducationCoverageRefresh", showGuidance);
     document.addEventListener("pacificEducationCapabilityChanged", showGuidance);
     document.addEventListener("pacificEducationAdaptiveLearningUpdated", showGuidance);
