@@ -71,7 +71,7 @@ test("guided Rules to Registration opens the role workspace and keeps it visible
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
   // The guided handoff must reveal the role workspace; the App Menu remains available after registration.
-  await expect(page.locator("#pacificEducationAppMenu")).toBeVisible();
+  await expect(page.locator("#pacificEducationAppMenu")).toBeHidden();
   await expect(page.locator("#teacherDashboard")).toBeHidden();
   await expect(page.locator("#peSequentialBack")).toBeVisible();
   await expect(page.locator("#peSequentialNext")).toBeVisible();
