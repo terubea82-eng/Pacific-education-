@@ -1145,11 +1145,7 @@ test("save confirmation then Next opens the selected role workspace for every re
       await nextStep.click();
       await expect(title).toContainText("Practice");
       await nextStep.click();
-      await expect(title).toContainText("Daily Assessment Record");
-      await nextStep.click();
-      await expect(title).toContainText("Learning Coverage");
-      await nextStep.click();
-      await expect(title).toContainText("My Progress");
+      await expect(title).toContainText("Check My Learning");
       await nextStep.click();
       await expect(title).toContainText("Day 2 of 365");
     }
