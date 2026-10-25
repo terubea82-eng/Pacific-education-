@@ -72,31 +72,11 @@
   function init(){
     /* Never rewrite the protected guided-page map; #856 owns step IDs and narration. */
     installWorkspaceControls();
-    var last={};
-    var spokenWorkspaces=Object.create(null);
-    workspaces.forEach(function(item){var el=document.getElementById(item[0]);last[item[0]]=visible(el);});
-    var observer=new MutationObserver(function(records){
-      installWorkspaceControls();
-      var changed=[];
-      records.forEach(function(record){
-        var el=record.target&&record.target.nodeType===1?record.target:null;
-        if(!el)return;
-        workspaces.forEach(function(item){
-          var host=document.getElementById(item[0]);
-          if(host&&(host===el||host.contains(el)))changed.push(item);
-        });
-      });
-      var seen={};
-      changed.forEach(function(item){
-        if(seen[item[0]])return;seen[item[0]]=true;
-        var host=document.getElementById(item[0]),now=visible(host),was=last[item[0]];
-        last[item[0]]=now;
-        /* Do not auto-speak when a workspace appears. The protected mandatory
-           navigation controller owns page narration; this script adds a manual
-           replay button only. The active workspace uses its own Back/Next flow. */
-      });
-    });
-    if(document.body)observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style","class","data-pe-flow-step"]});
+    /* Workspace controls are installed once and reinstalled only when new DOM
+       content appears. This helper never auto-narrates; the protected controller
+       owns automatic page speech, and replay is always an explicit user action. */
+    var observer=new MutationObserver(function(){installWorkspaceControls();});
+    if(document.body)observer.observe(document.body,{childList:true,subtree:true});
     /* The protected controller owns guided-step announcements; do not start a second narrator here. */
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
