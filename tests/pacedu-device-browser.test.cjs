@@ -1249,7 +1249,10 @@ test("student activity pack stays locked until matching teacher release", async 
     }));
     window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", document.getElementById("approval-gate-test-host"), 1);
   });
-  await expect(page.locator("#approval-gate-test-host #paceduRoleActivityPack #paceduRoleActivityResponse")).toBeVisible();
+  const releasedCard = page.locator("#approval-gate-test-host #paceduRoleActivityPack");
+  await expect(releasedCard).not.toContainText("must approve and release");
+  await expect(releasedCard.locator("#paceduRoleActivityResponse")).toHaveCount(1);
+  await expect(releasedCard.locator("#paceduRoleActivityDone")).toHaveCount(1);
 });
 
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
