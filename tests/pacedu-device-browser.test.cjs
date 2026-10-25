@@ -1183,7 +1183,7 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("#peSequentialNext")).toBeEnabled();
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Entry Gate Learner");
   await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Class 5");
-  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("prototype");
+  await expect(shell.locator("[data-pe-student-context-banner]")).toContainText("Your teacher will confirm your class.");
 
   await shell.locator("#peSequentialNext").click();
   await expect(shell.locator("#peSequentialTitle")).toContainText("Day 1 of 365");
