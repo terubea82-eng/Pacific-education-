@@ -252,6 +252,10 @@
           "pacificEducationProductionReleaseEvidenceRegistry","pacificEducationProductionReleaseEvidenceGate",
           "pacificEducationFinalProductionAuthorizationEvidenceRegistry","publicationStatus",
           "pacificEducationOfflineSyncStatus"
+        ],
+        technician: [
+          "systemStatus","pacificEducationWebsitePilotChecklist","pacificEducationOfflineSyncStatus",
+          "publicationStatus","pacificEducationProductionReleaseChecklist","pacificEducationProductionReleaseEvidenceRegistry"
         ]
       };
 
@@ -461,6 +465,13 @@
           ["pacificEducationProductionReleaseEvidenceGate","5. Release Evidence Gate"],
           ["publicationStatus","6. Publication Status"],
           ["pacificEducationOfflineSyncStatus","7. Offline / Sync Status"]
+        ],
+        technician: [
+          ["systemStatus","1. System Status"],
+          ["pacificEducationWebsitePilotChecklist","2. Pilot Checklist"],
+          ["pacificEducationOfflineSyncStatus","3. Offline / Sync Status"],
+          ["publicationStatus","4. Publication Status"],
+          ["pacificEducationProductionReleaseChecklist","5. Release Checklist"]
         ]
       };
 
@@ -546,12 +557,19 @@
       };
       document.getElementById("pacificEducationSignOutYes").onclick=function(){
         try{sessionStorage.removeItem("pacificEducationPilotRegistration");sessionStorage.removeItem("pacificEducationPilotRole");sessionStorage.removeItem("pacificEducationActiveRole");sessionStorage.removeItem("pacificEducationPilotRegistered");sessionStorage.removeItem("pilotRegistrationRole");sessionStorage.removeItem("pilotRegistrationName");}catch(e){}
+        /* Clear role-scoped visibility before returning to registration. */
+        try {
+          var roleSelect=document.getElementById("pilotRoleSelector");
+          if(roleSelect) roleSelect.value="";
+          setRoleVisibility("");
+          renderRole("");
+        } catch(e) {}
         var ws=document.getElementById("pacificEducationPilotUserWorkspaces");
         if(ws) ws.hidden=true;
         var reg=document.getElementById("pacificEducationIdentityRegistration")||document.getElementById("userRegistrationForm");
         if(reg){reg.hidden=false;try{reg.scrollIntoView({behavior:"smooth",block:"start"});}catch(e){}}
         var status=document.getElementById("pacificEducationSignOutStatus");
-        if(status) status.textContent="Signed out successfully. User Registration is ready for the next user.";
+        if(status) status.textContent="Signed out successfully. Role tools are closed. User Registration is ready for the next pilot user.";
         if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function") window.PacificEducationSpeech.speakText("You are signed out. User Registration is ready for the next user.");
       };
 
