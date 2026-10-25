@@ -9,16 +9,18 @@
 
   var STEP_PAGES = [
     {step:0,id:"pacificEducationWelcome",label:"Welcome",text:"Welcome to Pacific Education. We are pleased to welcome you. Pacific Education helps learners learn, discover, practise and grow. Press Next to continue."},
-    {step:1,id:"pacificEducationIdentityRegistration",label:"Registration",text:"Welcome to User Registration. Please complete each required box carefully. Enter your information one box at a time. When all required information is complete, review it and select Next to continue."},
-    {step:2,id:"prototypeAccess",label:"Pilot Access",text:"Welcome to Pacific Education pilot access. Please review the pilot information and instructions. When you are ready to continue, select Next."},
-    {step:3,id:"levelSelection",label:"Learning Level",text:"Welcome to Learning Level. Please choose the class or form that matches your current learning programme. Review your selection, then select Next to choose your subject."},
-    {step:4,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Please choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
-    {step:5,id:"termSelection",label:"Term",text:"Welcome to Term Selection. Please choose the school term for your learning activities. Your daily activities, practice and assessments will follow the selected term. Select Next when ready."},
-    {step:6,id:"capabilitySelection",label:"Learning Capability",text:"Welcome to Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
-    {step:7,id:"dailyLesson",label:"Daily Activities",text:"Welcome to Daily Activities. Complete the activity for the current learning day. Listen to the question and instructions whenever you need help, then enter your answer and continue."},
-    {step:8,id:"dailyLessonPracticeStage",label:"Practice",text:"Welcome to Practice. Complete the practice task carefully. Use the Hear Instructions control whenever you need the question or choices read aloud."},
-    {step:9,id:"assessments",label:"Assessments",text:"Welcome to Assessments. Follow the spoken instructions, review each question and choice carefully, then submit your response when you are ready."},
-    {step:10,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Welcome to Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
+    {step:1,id:"paceduPageVision",label:"Vision, Mission and Purpose",text:"Welcome to the Pacific Education vision, mission and purpose. This page explains why Pacific Education supports accessible learning, teachers, learners and families. Listen carefully, then select Next to continue."},
+    {step:2,id:"paceduPageRules",label:"Rules",text:"Welcome to the Pacific Education rules. Please review the safety, respectful-use and learning rules. Follow the instructions on this page, then select Next to continue."},
+    {step:3,id:"pacificEducationIdentityRegistration",label:"Registration",text:"Welcome to Registration. Complete each required box carefully. Enter your information one box at a time, review it, and select Next when you are ready."},
+    {step:4,id:"prototypeAccess",label:"Pilot Access",text:"Welcome to Pacific Education pilot access. Please review the pilot information and instructions. When you are ready to continue, select Next."},
+    {step:5,id:"levelSelection",label:"Learning Level",text:"Welcome to Learning Level. Choose the class or form that matches the learner's current programme. Review your selection, then select Next."},
+    {step:6,id:"subjectSelection",label:"Subject",text:"Welcome to Subject Selection. Choose the subject you want to study. Listen to the available choices if you need help, then select Next."},
+    {step:7,id:"termSelection",label:"Term",text:"Welcome to Term Selection. Choose the school term for your learning activities. Select Next when ready."},
+    {step:8,id:"capabilitySelection",label:"Learning Capability",text:"Welcome to Learning Capability. Choose the learning pathway or capability you are working on. Review your choice, then select Next."},
+    {step:9,id:"dailyLesson",label:"Daily Activities",text:"Welcome to Daily Activities. Complete the activity for the current learning day. Listen to the question and instructions whenever you need help, then enter your answer and continue."},
+    {step:10,id:"dailyLessonPracticeStage",label:"Practice",text:"Welcome to Practice. Complete the practice task carefully. Use Hear Instructions whenever you need the question or choices read aloud."},
+    {step:11,id:"assessments",label:"Assessments",text:"Welcome to Assessments. Follow the spoken instructions, review each question and choice carefully, then submit your response when you are ready."},
+    {step:12,id:"teacherCalendarSection",label:"Teacher Calendar and Review",text:"Welcome to Teacher Calendar and Review. Authorised teachers can manage school dates, teaching days, holidays, revision and examinations. Review information carefully before saving changes."}
   ];
 
   var WORKSPACE_PAGES = [
@@ -84,9 +86,15 @@
   function currentStep(){var b=document.body;if(!b)return null;var n=Number(b.getAttribute("data-pe-flow-step"));return Number.isFinite(n)?n:null;}
   function pageForStep(step){for(var i=0;i<STEP_PAGES.length;i++)if(STEP_PAGES[i].step===step)return STEP_PAGES[i];return null;}
   function visibleElement(id){
-    var e=document.getElementById(id);if(!e||e.hidden)return null;
-    var s=window.getComputedStyle?window.getComputedStyle(e):null;
-    if(s&&(s.display==="none"||s.visibility==="hidden"))return null;return e;
+    var e=document.getElementById(id);if(!e)return null;
+    var node=e;
+    while(node&&node.nodeType===1){
+      if(node.hidden||node.getAttribute("aria-hidden")==="true")return null;
+      var s=window.getComputedStyle?window.getComputedStyle(node):null;
+      if(s&&(s.display==="none"||s.visibility==="hidden"||s.visibility==="collapse"))return null;
+      node=node.parentElement;
+    }
+    return e;
   }
 
   function ensureTopRightVoiceControls(){
@@ -207,11 +215,19 @@
     var lastId="";
     function scan(){
       installBoxVoice();
+      var activeId="";
       for(var i=0;i<WORKSPACE_PAGES.length;i++){
-        var item=WORKSPACE_PAGES[i],el=visibleElement(item[0]);if(!el)continue;
-        if(item[0]===lastId)return;
-        lastId=item[0];addVoiceControl(el,item[2]);speak(item[2]);return;
+        var item=WORKSPACE_PAGES[i],el=visibleElement(item[0]);
+        if(!el)continue;
+        activeId=item[0];
+        if(item[0]!==lastId){
+          lastId=item[0];
+          addVoiceControl(el,item[2]);
+          speak(item[2]);
+        }
+        return;
       }
+      if(!activeId)lastId="";
     }
     var observer=new MutationObserver(function(){clearTimeout(observer._timer);observer._timer=setTimeout(scan,120);});
     observer.observe(body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","style","class"]});
