@@ -1441,9 +1441,10 @@
       if(shell.getAttribute("data-pe-final-signout")==="true") return;
       if(clicked.disabled) return;
       if(index<sequence.length-1){
-        /* Complete the full daily cycle before advancing to the next day.
-           Curriculum Coverage and My Progress are required parts of every day. */
-        if(sequence[index][0]==="pacificEducationStudentProgressDashboard" && (role==="student" || role==="blind-learner" || role==="deaf-learner")){
+        /* Learners finish one simple cycle, then go straight to the next day.
+           Detailed coverage and portfolio records remain available to authorised
+           teacher workflows, not as extra navigation steps for young learners. */
+        if(sequence[index][0]==="assessments" && LEARNER_ROLES[role]){
           if(dailyDay<365){ dailyDay++; index=sequence.findIndex(function(x){return x[0]==="dailyLesson";}); renderPage(); return; }
         }
         index++;
