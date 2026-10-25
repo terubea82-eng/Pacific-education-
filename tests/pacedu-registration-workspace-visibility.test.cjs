@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
 
-test("direct Registration handoff releases startup guard and reveals the role workspace and App Menu", async ({ page }) => {
+test("direct Registration handoff releases startup guard and keeps the role workspace uncluttered", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => {
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
@@ -70,8 +70,8 @@ test("guided Rules to Registration opens the role workspace and keeps it visible
 
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
-  // The guided handoff must reveal the role workspace; the App Menu remains available after registration.
-  await expect(page.locator("#pacificEducationAppMenu")).toBeVisible();
+  // Keep the main learner/teacher flow uncluttered; role navigation is provided by the sequential workspace.
+  await expect(page.locator("#pacificEducationAppMenu")).toBeHidden();
   await expect(page.locator("#teacherDashboard")).toBeHidden();
   await expect(page.locator("#peSequentialBack")).toBeVisible();
   await expect(page.locator("#peSequentialNext")).toBeVisible();
