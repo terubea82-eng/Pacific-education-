@@ -88,6 +88,22 @@
     var source = "general";
     try {
       if (scope) {
+        /* Evidence-derived recommendations take precedence over the teacher's
+           one-time starting band once enough marked work and a term exam exist. */
+        var engine = window.PacificEducationEvidenceBasedAbility;
+        if (engine && typeof engine.evaluate === "function") {
+          var result = engine.evaluate({
+            studentId: scope.studentId,
+            classId: scope.classId,
+            term: window.localStorage.getItem("pacificEducationTerm") || "Term 1",
+            subject: window.localStorage.getItem("pacificEducationSubject") || "English"
+          });
+          var recommended = result && result.status === "recommendation-ready"
+            ? (result.finalLevel || result.recommendation) : null;
+          if (validCapability(recommended)) {
+            return { capability: recommended, source: "PacEdu evidence recommendation", linked: true, recommendation: result };
+          }
+        }
         v = window.localStorage.getItem(studentStorageKey(scope));
         if (v) source = "student";
         /* Never borrow a general setting when a specific child is selected. */
@@ -187,9 +203,12 @@
       }
       var scope = selectedStudentScope();
       var linkStatus = scope ?
-        (record.linked ? "Saved for the selected student in this class. " :
-          "No ability result is saved for this student yet. Use Day 1 evidence first; do not copy another learner's or a general ability setting. ") :
+        (record.source === "PacEdu evidence recommendation"
+          ? "PacEdu provisional recommendation uses this student's marked daily work and term exam. Teacher review is still required. "
+          : record.linked ? "Saved starting band for the selected student in this class. "
+          : "No ability result is saved for this student yet. Use Day 1 evidence first; do not copy another learner's or a general ability setting. ") :
         "No student-and-class selection is active; changes will be saved as a general setting, not linked to an individual child. ";
+      if (record.recommendation && record.recommendation.bandRule) linkStatus += record.recommendation.bandRule + " ";
       info.textContent = linkStatus +
         "Four ability bands: Foundation, Developing, Expected-level and Advanced. Re-teaching and extension are support strategies, not separate ability bands. " +
         (GUIDANCE[s.value] || GUIDANCE.expected);
