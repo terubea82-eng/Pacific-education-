@@ -172,6 +172,68 @@
       note:"This is a differentiated draft activity, not yet a complete official curriculum-aligned activity pack. Do not publish as verified until the curriculum trace is filled and teacher review passes."
     };
   }
+  function installTeacherPanel() {
+    var host = global.document && global.document.getElementById("paceduTeacherDailyLearningOnlyShell");
+    if (!host || global.document.getElementById("paceduFijiWeeklyCurriculumPanel")) return;
+    var doc = global.document;
+    function el(tag, text, parent) { var n = doc.createElement(tag); if (text != null) n.textContent = text; if (parent) parent.appendChild(n); return n; }
+    function select(label, id, options, parent) {
+      var wrap = el("label", label, parent); wrap.style.cssText = "display:block;margin:8px 0;font-weight:600;";
+      var s = el("select", null, wrap); s.id = id; s.style.cssText = "display:block;width:100%;min-height:42px;padding:8px;font:inherit;";
+      options.forEach(function (o) { var opt = el("option", o.label, s); opt.value = o.value; });
+      return s;
+    }
+    var panel = el("section", null, host); panel.id = "paceduFijiWeeklyCurriculumPanel";
+    panel.setAttribute("aria-label","Fiji weekly differentiated activity preview");
+    panel.style.cssText = "margin-top:16px;padding:14px;border:1px solid #c8d7e2;border-radius:10px;";
+    el("h3","Fiji Weekly Activities — differentiated preview",panel);
+    el("p","Choose class, subject, teaching block, week and learner ability to preview practical activities and questions. These are drafts until linked to the current official syllabus outcome and reviewed by the teacher.",panel);
+    var level = select("Class / level","paceduFijiCurriculumLevel",LEVELS.map(function(x){return {value:x,label:x};}),panel);
+    var subject = select("Subject","paceduFijiCurriculumSubject",SUBJECTS.map(function(x){return {value:x,label:x};}),panel);
+    var termOptions = ["T1","T2","T3","ASSESSMENT","INTERVENTION","REVISION","EXAMS"].map(function(x){return {value:x,label:x==="T1"?"Term 1":x==="T2"?"Term 2":x==="T3"?"Term 3":x==="ASSESSMENT"?"Assessment window":x==="INTERVENTION"?"Intervention":x==="REVISION"?"Revision":"Examinations"};});
+    var term = select("Term / learning block","paceduFijiCurriculumTerm",termOptions,panel);
+    var week = select("Week","paceduFijiCurriculumWeek",[],panel);
+    var ability = select("Ability band","paceduFijiCurriculumAbility",ABILITIES.map(function(x){return {value:x.id,label:x.label};}),panel);
+    function refreshWeeks() {
+      week.textContent = "";
+      WEEKS.filter(function(x){return x[0]===term.value;}).forEach(function(x){
+        var opt=el("option","Week "+x[1]+" — "+x[2],week); opt.value=String(x[1]);
+      });
+    }
+    term.addEventListener("change",refreshWeeks); refreshWeeks();
+    var button = el("button","Preview weekly activity and questions",panel);
+    button.type="button"; button.style.cssText="padding:11px 14px;margin:8px 0;font:inherit;font-weight:700;";
+    var output = el("div",null,panel); output.id="paceduFijiWeeklyCurriculumPreview"; output.setAttribute("aria-live","polite");
+    button.addEventListener("click",function(){
+      var result=getWeeklyActivity({level:level.value,subject:subject.value,term:term.value,week:week.value,ability:ability.value});
+      output.textContent="";
+      el("h4",result.topic || result.message || "Activity",output);
+      if(result.status==="NOT_FOUND") return;
+      el("p","Status: draft — official syllabus mapping still required.",output);
+      el("p","Learning focus: "+result.focus,output);
+      el("p","Learning task: "+result.learningTask.task,output);
+      el("p","Class expectation: "+result.learningTask.expectation,output);
+      el("h4","Student questions",output);
+      var list=el("ol",null,output);
+      result.questions.forEach(function(q){el("li",q.prompt+" ["+q.type+"]",list);});
+      el("h4","Teacher verification before assigning",output);
+      var checks=el("ul",null,output);
+      result.teacherChecks.forEach(function(c){el("li",c,checks);});
+      el("p",result.note,output);
+    });
+  }
+  function observeTeacherPanel() {
+    if (!global.document) return;
+    installTeacherPanel();
+    if (global.MutationObserver && global.document.body) {
+      var observer = new global.MutationObserver(function(){ installTeacherPanel(); });
+      observer.observe(global.document.body,{childList:true,subtree:true});
+    }
+  }
+  if (global.document) {
+    if (global.document.readyState === "loading") global.document.addEventListener("DOMContentLoaded",observeTeacherPanel);
+    else observeTeacherPanel();
+  }
   global.PacEduFijiCurriculumActivities = Object.freeze({
     version:"0.1.0-pilot-framework",
     levels:LEVELS.slice(), subjects:SUBJECTS.slice(),
