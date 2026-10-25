@@ -101,11 +101,9 @@
         if(seen[item[0]])return;seen[item[0]]=true;
         var host=document.getElementById(item[0]),now=visible(host),was=last[item[0]];
         last[item[0]]=now;
-        /* Avoid repeat narration when a workspace is re-rendered; learners can replay explicitly. */
-        if(now&&!was&&!spokenWorkspaces[item[0]]){
-          spokenWorkspaces[item[0]]=true;
-          speak(item[2]);
-        }
+        /* Do not auto-speak when a workspace appears. The protected mandatory
+           navigation controller owns page narration; this script adds a manual
+           replay button only, preventing two narrators from blocking Next. */
       });
     });
     if(document.body)observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style","class","data-pe-flow-step"]});
