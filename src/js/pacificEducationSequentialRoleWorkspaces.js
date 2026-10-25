@@ -243,7 +243,7 @@
   }
   var SESSION_KEYS = ["paceduActiveStudentContextV1","pacificEducationPilotRegistration","pacificEducationPilotRole","pacificEducationActiveRole","pilotRegistrationRole","pilotRegistrationName","pacificEducationPilotCountry","pacificEducationPilotCountryName","pacificEducationPilotRegistered","pacificEducationUserRegistrationLanguageV1"];
   var LOCAL_SESSION_KEYS = ["pacificEducationRegistrationCountryCode","pacificEducationRegistrationCountry","pacificEducationRegistrationLanguage","pacificEducationVoiceLocale","pacificEducationCurriculumCountryCode","pacificEducationCurriculumCountry"];
-  var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationAppMenu":1,"pacificEducationWorkspaceLiveStatus":1};
+  var SHARED = {"pacificEducationAIPlaybackButton":1,"pacificEducationWelcomeVoiceButton":1,"pacificEducationStopSpeechButton":1,"pacificEducationAccessibilityControls":1,"pacificEducationWorkspaceLiveStatus":1};
   var movedTargets = [];
   var appMenuOriginalParent = null;
   var appMenuOriginalNextSibling = null;
@@ -304,19 +304,27 @@
   }
 
   function placeAppMenuInWorkspace(shell){
+    /* The sequential role workspace replaces the legacy App Menu. Keep the
+       menu out of the learner/teacher task flow; restore it only when the
+       sequential workspace is explicitly closed or torn down. */
     var menu=document.getElementById("pacificEducationAppMenu");
-    if(!menu || !shell) return;
-    if(!appMenuOriginalParent){
-      appMenuOriginalParent=menu.parentNode;
-      appMenuOriginalNextSibling=menu.nextSibling;
+    if(menu){
+      if(!appMenuOriginalParent){
+        appMenuOriginalParent=menu.parentNode;
+        appMenuOriginalNextSibling=menu.nextSibling;
+      }
+      menu.hidden=true;
+      menu.setAttribute("aria-hidden","true");
+      menu.style.setProperty("display","none","important");
+      menu.style.setProperty("visibility","hidden","important");
     }
-    shell.insertBefore(menu,shell.firstChild);
-    menu.hidden=false;
-    menu.removeAttribute("aria-hidden");
-    menu.style.setProperty("display","block","important");
-    menu.style.setProperty("visibility","visible","important");
-    menu.style.setProperty("margin","0 0 14px","important");
-    placePilotBoxesMenuInWorkspace(shell);
+    var legacy=document.getElementById("pe856AllPilotBoxesMenu");
+    if(legacy){
+      legacy.hidden=true;
+      legacy.setAttribute("aria-hidden","true");
+      legacy.style.setProperty("display","none","important");
+      legacy.style.setProperty("visibility","hidden","important");
+    }
   }
 
   function speak(text){
@@ -388,8 +396,8 @@
       "body.pe-sequential-role-workspace-active main{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active main > #app{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #app{display:block!important;visibility:visible!important;}"+
-      "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAppMenu):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
-      "body.pe-sequential-role-workspace-active #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pe856AllPilotBoxesMenu{display:block!important;visibility:visible!important;}"+
+      "body.pe-sequential-role-workspace-active #app > :not(#pacificEducationSequentialRoleWorkspace):not(#pacificEducationAccessibilityControls):not(#pacificEducationWorkspaceLiveStatus){display:none!important;visibility:hidden!important;}"+
+      "body.pe-sequential-role-workspace-active #pacificEducationAppMenu,body.pe-sequential-role-workspace-active #pe856AllPilotBoxesMenu{display:none!important;visibility:hidden!important;}"+
       "body.pe-sequential-role-workspace-active #app > #pacificEducationSequentialRoleWorkspace{display:block!important;visibility:visible!important;}"+
       "body.pe-sequential-role-workspace-active #pacificEducationWelcomeVoiceButton,body.pe-sequential-role-workspace-active #pacificEducationAIPlaybackButton{display:none!important;visibility:hidden!important;}"+
       "body.pe-sequential-role-workspace-active #app [data-pe-sequential-hidden='true']{display:none!important;visibility:hidden!important;}"+
