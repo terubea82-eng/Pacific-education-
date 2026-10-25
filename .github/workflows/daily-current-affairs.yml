@@ -66,7 +66,7 @@ jobs:
               .replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
           }
           function tag(block, name) {
-            const re = new RegExp('<(?:[\\w.-]+:)?' + name + '\b[^>]*>([\s\\S]*?)<\\/(?:[\\w.-]+:)?' + name + '\s*>', 'i');
+            const re = new RegExp('<(?:[\\w.-]+:)?' + name + '\\b[^>]*>([\\s\\S]*?)<\\/(?:[\\w.-]+:)?' + name + '\\s*>', 'i');
             const m = block.match(re);
             return m ? decode(m[1]) : '';
           }
