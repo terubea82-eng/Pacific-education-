@@ -98,8 +98,9 @@
       '<input id="paceduClass1LearnerId" autocomplete="off" placeholder="Enter your learner ID" aria-describedby="paceduClass1IdHelp">' +
       '<p id="paceduClass1IdHelp">Ask your teacher if you need help. Your teacher will check your ID and class.</p></section>' +
       '<section aria-labelledby="paceduTaskHeading"><h3 id="paceduTaskHeading">4. Do my activity</h3>' +
-      '<p id="paceduClass1Task">Choose a subject, then open the activity your teacher has approved.</p>' +
-      '<button type="button" id="paceduClass1StartTask">Open my activity</button></section>' +
+      '<p id="paceduClass1Task">Choose English, Mathematics or Phonics. PacEdu will open the available practice task below.</p>' +
+      '<p id="paceduClass1ApprovalNote">This pilot shows starter practice activities. Teacher approval and individual assignment are not yet verified by this guide.</p>' +
+      '<button type="button" id="paceduClass1StartTask">Open available activity</button></section>' +
       '<section aria-labelledby="paceduFinishHeading"><h3 id="paceduFinishHeading">5. Send my work</h3>' +
       '<p>Write, speak or show your answer. Send it to your teacher for checking.</p>' +
       '<p>Feedback appears after your teacher reviews it.</p></section>';
