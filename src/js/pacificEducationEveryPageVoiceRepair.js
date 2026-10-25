@@ -82,6 +82,7 @@
     patchGuidedPages();
     installWorkspaceControls();
     var last={};
+    var spokenWorkspaces=Object.create(null);
     workspaces.forEach(function(item){var el=document.getElementById(item[0]);last[item[0]]=visible(el);});
     var observer=new MutationObserver(function(records){
       patchGuidedPages();
@@ -100,15 +101,15 @@
         if(seen[item[0]])return;seen[item[0]]=true;
         var host=document.getElementById(item[0]),now=visible(host),was=last[item[0]];
         last[item[0]]=now;
-        if(now&&!was)speak(item[2]);
+        /* Avoid repeat narration when a workspace is re-rendered; learners can replay explicitly. */
+        if(now&&!was&&!spokenWorkspaces[item[0]]){
+          spokenWorkspaces[item[0]]=true;
+          speak(item[2]);
+        }
       });
     });
     if(document.body)observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style","class","data-pe-flow-step"]});
-    var api=window.PacificEducationMandatoryVoiceNavigation;
-    if(api&&typeof api.announceCurrentStep==="function"){
-      var step=Number(document.body&&document.body.getAttribute("data-pe-flow-step"));
-      if(step>0)api.announceCurrentStep("step");
-    }
+    /* The protected controller owns guided-step announcements; do not start a second narrator here. */
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 })(window,document);
