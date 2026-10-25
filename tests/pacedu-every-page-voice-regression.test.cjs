@@ -35,12 +35,24 @@ test("every workspace receives a Hear Instructions control and hidden ancestors 
 test("protected #856 mandatory voice controller is not modified by the repair", () => {
   assert.match(protectedController, /function announceCurrentStep/);
   assert.match(protectedController, /window\.PacificEducationMandatoryVoiceNavigation/);
-  assert.doesNotMatch(protectedController, /20261025-every-page-voice-fix/);
+  assert.doesNotMatch(protectedController, /20261025-every-page-voice-fix-v2/);
 });
 
 test("the additive voice repair is loaded after the protected controller", () => {
   const protectedAt = index.indexOf("pacificEducationMandatoryVoiceNavigation.js?v=20261005-userbox-nextvoice");
-  const repairAt = index.indexOf("pacificEducationEveryPageVoiceRepair.js?v=20261025-every-page-voice-fix");
+  const repairAt = index.indexOf("pacificEducationEveryPageVoiceRepair.js?v=20261025-every-page-voice-fix-v2");
   assert.ok(protectedAt >= 0, "protected controller script missing");
   assert.ok(repairAt > protectedAt, "additive repair must load after protected controller");
+});
+
+
+test("automatic workspace narration is not repeated on every rerender", () => {
+  assert.match(repair, /spokenWorkspaces=Object\.create\(null\)/);
+  assert.match(repair, /now&&!was&&!spokenWorkspaces\[item\[0\]\]/);
+  assert.match(repair, /learners can replay explicitly/);
+});
+
+test("the additive repair does not duplicate the protected guided-step narrator", () => {
+  assert.doesNotMatch(repair, /announceCurrentStep\("step"\)/);
+  assert.match(repair, /protected controller owns guided-step announcements/);
 });
