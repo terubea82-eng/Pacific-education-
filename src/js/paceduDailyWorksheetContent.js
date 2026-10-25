@@ -282,6 +282,7 @@
     levels:levels.slice(),
     subjects:Object.keys(packs),
     getWorksheet:make,
+    getCurriculumWorksheet:getCurriculumWorksheet,
     hasAnswerKey:function(level,subject,day,ability){var w=make(level,subject,day,ability);return w.questions.length===4&&w.answerKey.length===4&&w.answerKey.every(function(a){return !!a.answer&&!!a.explanation;});}
   });
 })(window);
