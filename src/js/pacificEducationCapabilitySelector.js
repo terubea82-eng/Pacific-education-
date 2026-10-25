@@ -21,7 +21,10 @@
   function activeStudentContext() {
     try {
       var context = JSON.parse(window.sessionStorage.getItem(STUDENT_CONTEXT_KEY) || "null");
-      return context && context.role === "student" && context.displayName ? context : null;
+      /* Student names may be optional in some country workflows. A role-scoped
+       * session is a learner context even when identity display text is absent;
+       * the verified student/class IDs remain the evidence gate. */
+      return context && context.role === "student" ? context : null;
     } catch (error) { return null; }
   }
   function validCapability(value) {
@@ -168,7 +171,7 @@
         }
         if (evidence.status === "recommendation-ready") {
           var level = evidence.finalLevel || evidence.recommendation;
-          info.textContent = "PacEdu provisional recommendation for " + learner.displayName + " (" + (learner.classLevel || "class not recorded") + "): " + (evidence.finalLevelLabel || evidence.recommendationLabel || level) + ". Teacher review is required before this is confirmed.";
+          info.textContent = "PacEdu provisional recommendation for " + (learner.displayName || "this learner") + " (" + (learner.classLevel || "class not recorded") + "): " + (evidence.finalLevelLabel || evidence.recommendationLabel || level) + ". Teacher review is required before this is confirmed.";
         } else {
           info.textContent = (evidence.message || "Awaiting teacher-marked learning evidence.") + " The current level is only a neutral starting point; this is not a diagnosis or permanent label.";
         }

@@ -106,3 +106,9 @@ test("repeat attempts on the same daily activity count only once", () => {
   assert.equal(result.markedActivities, 4);
   assert.equal(result.status, "awaiting-evidence");
 });
+
+test("student capability context does not require a display name", () => {
+  const selector = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+  assert.match(selector, /context && context\.role === "student" \? context : null/);
+  assert.match(selector, /learner\.displayName \|\| "this learner"/);
+});
