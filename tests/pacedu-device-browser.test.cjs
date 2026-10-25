@@ -1241,8 +1241,11 @@ test("student activity pack stays locked until matching teacher release", async 
   await expect(card.locator("#paceduRoleActivityResponse")).toHaveCount(0);
 
   await page.evaluate(() => {
+    localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
     localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
-      "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+      "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+      "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
     }));
     window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", document.getElementById("approval-gate-test-host"), 1);
   });
@@ -1256,11 +1259,14 @@ test("student registration handoff shows workspace navigation and daily activiti
     try {
       localStorage.setItem("pacificEducationLevel", "Class 1");
       localStorage.setItem("pacificEducationSubject", "English");
+      localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+      localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
       localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
         "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
       }));
       localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
-        "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+        "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+        "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
       }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Pilot Test Learner",
