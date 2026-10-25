@@ -79,13 +79,12 @@
     });
   }
   function init(){
-    patchGuidedPages();
+    /* Never rewrite the protected guided-page map; #856 owns step IDs and narration. */
     installWorkspaceControls();
     var last={};
     var spokenWorkspaces=Object.create(null);
     workspaces.forEach(function(item){var el=document.getElementById(item[0]);last[item[0]]=visible(el);});
     var observer=new MutationObserver(function(records){
-      patchGuidedPages();
       installWorkspaceControls();
       var changed=[];
       records.forEach(function(record){
