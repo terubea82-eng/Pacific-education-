@@ -900,7 +900,7 @@ git status</pre>
       if(saved){
         name.value=saved.name||"";
         selectRole(saved.role||"");
-        status.textContent="Pilot registration saved for this browser test session. You may review it below.";
+        status.textContent="Registration is saved for this open app session only. It does not sync to another device.";
       }
     }catch(_){}
     save.onclick=function(){
@@ -909,7 +909,7 @@ git status</pre>
       if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
       try{
         sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
-        status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
+        status.textContent="Registration saved for this open app session only. It does not sync to another device. Press Next to open your workspace.";
         /* Registration is complete, but the role workspace must not bypass the
            single page-by-page navigation authority. MandatoryBoxSequence hands
            control back to SingleNavigation after this successful save. */
@@ -944,7 +944,7 @@ git status</pre>
         try{
           sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:countryCode,languageCode:languageCode}));
           sessionStorage.setItem("pacificEducationPilotRole",r);
-          status.textContent="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
+          status.textContent="Registration saved for this open app session only. It does not sync to another device. Press Next to open your workspace.";
         }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
       },true);
     }
