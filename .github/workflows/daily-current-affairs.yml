@@ -66,7 +66,7 @@ jobs:
               .replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
           }
           function tag(block, name) {
-            const re = new RegExp('<(?:[\\w.-]+:)?' + name + '\\b[^>]*>([\\s\\S]*?)<\\/(?:[\\w.-]+:)?' + name + '\\s*>', 'i');
+            const re = new RegExp('<(?:[\\w.-]+:)?' + name + '\b[^>]*>([\s\\S]*?)<\\/(?:[\\w.-]+:)?' + name + '\s*>', 'i');
             const m = block.match(re);
             return m ? decode(m[1]) : '';
           }
@@ -113,11 +113,11 @@ jobs:
                   continue;
                 }
                 const publicationMatches = [
-                  ...articleHtml.matchAll(/"datePublished"\\s*:\\s*"([^"]+)"/gi),
-                  ...articleHtml.matchAll(/<meta\\b[^>]*(?:property|name)=["'](?:article:published_time|datePublished)["'][^>]*content=["']([^"']+)["'][^>]*>/gi)
+                  ...articleHtml.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi),
+                  ...articleHtml.matchAll(/<meta\b[^>]*(?:property|name)=["'](?:article:published_time|datePublished)["'][^>]*content=["']([^"']+)["'][^>]*>/gi)
                 ];
                 const publicationValues = publicationMatches.map(match => match[1])
-                  .filter(value => /^\\d{4}-\\d{2}-\\d{2}/.test(value));
+                  .filter(value => /^\d{4}-\d{2}-\d{2}/.test(value));
                 const publicationTimestamp = publicationValues.length ? Date.parse(publicationValues[0]) : NaN;
                 if (!Number.isFinite(publicationTimestamp)) {
                   console.warn('Skipping UNESCO item without explicit datePublished metadata: ' + articleUrl);
