@@ -20,9 +20,13 @@ const window = {
 vm.runInNewContext(source, { window, document: {}, Math, String, Number, Object, encodeURIComponent });
 const library = window.PacificEducationEnglishWorksheetLibrary;
 
-test("English worksheets are available for ECE and Classes 1–13 without a duplicate Kindergarten option", () => {
+test("English worksheets use Fiji labels ECE, Classes 1–8 and Forms 3–7 without a duplicate Kindergarten option", () => {
   assert.equal(library.levels.length, 14);
   assert.ok(library.levels.includes("ECE"));
+  assert.ok(library.levels.includes("Class 8"));
+  assert.ok(library.levels.includes("Form 3"));
+  assert.ok(library.levels.includes("Form 7"));
+  assert.equal(library.levels.includes("Class 13"), false);
   assert.equal(library.levels.includes("Kindergarten"), false);
   for (const level of library.levels) {
     const worksheet = library.getWorksheet(level, "developing", 2);
@@ -69,7 +73,10 @@ test("day and level inputs are bounded safely and legacy Kindergarten maps to EC
   assert.equal(library.getWorksheet("Kindergarten", "developing", 2).level, "ECE");
   assert.equal(library.getWorksheet("unknown", "bad", 999).day, 365);
   assert.equal(library.getWorksheet("unknown", "bad", 999).level, "Class 1");
-  assert.equal(library.getWorksheet("Class 13", "extension", -5).day, 1);
+  const legacyClass13 = library.getWorksheet("Class 13", "extension", -5);
+  assert.equal(legacyClass13.day, 1);
+  assert.equal(legacyClass13.level, "Class 1");
+  assert.equal(library.getWorksheet("Form 7", "extension", 2).level, "Form 7");
 });
 
 test("teacher dashboard renderer is wrapped without replacing the existing activity renderer", () => {
@@ -83,7 +90,7 @@ test("daily question count and question types adapt to class stage and demonstra
   const earlySupport = library.getWorksheet("Kindergarten", "support", 2);
   const earlyExtension = library.getWorksheet("Kindergarten", "extension", 2);
   const middleGoal = library.getWorksheet("Class 5", "expected", 2);
-  const seniorExtension = library.getWorksheet("Class 13", "extension", 2);
+  const seniorExtension = library.getWorksheet("Form 7", "extension", 2);
   assert.equal(earlySupport.questionPlan.count, 4);
   assert.equal(earlyExtension.questionPlan.count, 6);
   assert.equal(middleGoal.questionPlan.count, 10);
@@ -99,7 +106,7 @@ test("daily question count and question types adapt to class stage and demonstra
   assert.ok(seniorExtension.questionPlan.types.includes("evidence-or-inference"));
 });
 
-test("English button opens the daily worksheet builder for ECE and Classes 1–13", () => {
+test("English button opens the daily worksheet builder for ECE, Classes 1–8 and Forms 3–7", () => {
   assert.match(source, /paceduOpenEnglishDailyActivities/);
   assert.match(source, /English — Daily Activities for All Classes/);
   assert.match(source, /var levelOptions = LEVELS\.map/);
