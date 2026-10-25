@@ -85,8 +85,11 @@
       '<h2>My Learning Today</h2><p>Hello! Let’s learn one step at a time.</p>' +
       '<section aria-labelledby="paceduBreathingHeading"><h3 id="paceduBreathingHeading">1. Get ready</h3>' +
       '<p>Take three gentle breaths. You can skip this.</p><div class="pacedu-breathe-orb" aria-hidden="true"></div>' +
-      '<p id="paceduBreathingStatus" role="status" aria-live="polite">Breathe in gently, then breathe out slowly. Follow the circle.</p>' +
+      '<p id="paceduBreathingInstructions">Breathe in gently. Breathe out slowly. Repeat three times if you wish. You can skip this step and register or learn without delay.</p>' +
+      '<p id="paceduBreathingStatus" role="status" aria-live="polite">Text instructions are always available. Voice is optional.</p>' +
       '<button type="button" id="paceduBreathingToggle">Start breathing</button> ' +
+      '<button type="button" id="paceduBreathingRead">Read instructions aloud</button> ' +
+      '<button type="button" id="paceduBreathingStopVoice">Stop voice</button> ' +
       '<button type="button" id="paceduBreathingSkip">Skip breathing</button></section>' +
       '<hr><section aria-labelledby="paceduSubjectHeading"><h3 id="paceduSubjectHeading">2. Choose your subject</h3>' +
       '<div class="pacedu-subjects" id="paceduClass1Subjects"></div></section>' +
@@ -119,7 +122,35 @@
       subjectHost.appendChild(button);
     });
     document.getElementById("paceduBreathingToggle").addEventListener("click", startBreathing);
-    document.getElementById("paceduBreathingSkip").addEventListener("click", function () { stopBreathing(false); });
+    document.getElementById("paceduBreathingRead").addEventListener("click", function () {
+      var instructions = "Get ready to learn. Breathe in gently. Breathe out slowly. Repeat three times if you wish. You can skip this step at any time.";
+      var status = document.getElementById("paceduBreathingStatus");
+      var runtime = window.PacificEducationAccessibilityRuntime;
+      if (runtime && typeof runtime.speak === "function") {
+        var result = runtime.speak(instructions);
+        if (status) status.textContent = result && result.success
+          ? "Reading the breathing instructions aloud. The text remains visible."
+          : "Voice is unavailable. Please use the written instructions. You can continue without voice.";
+      } else if (window.speechSynthesis && window.SpeechSynthesisUtterance) {
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(new window.SpeechSynthesisUtterance(instructions));
+        if (status) status.textContent = "Reading the breathing instructions aloud. The text remains visible.";
+      } else if (status) {
+        status.textContent = "Voice is unavailable. Please use the written instructions. You can continue without voice.";
+      }
+    });
+    document.getElementById("paceduBreathingStopVoice").addEventListener("click", function () {
+      var runtime = window.PacificEducationAccessibilityRuntime;
+      if (runtime && typeof runtime.stopSpeaking === "function") runtime.stopSpeaking();
+      else if (window.speechSynthesis) window.speechSynthesis.cancel();
+      var status = document.getElementById("paceduBreathingStatus");
+      if (status) status.textContent = "Voice stopped. The written instructions remain available.";
+    });
+    document.getElementById("paceduBreathingSkip").addEventListener("click", function () {
+      stopBreathing(false);
+      var status = document.getElementById("paceduBreathingStatus");
+      if (status) status.textContent = "Breathing skipped. Continue to registration or learning whenever you are ready.";
+    });
     document.getElementById("paceduClass1StartTask").addEventListener("click", function () {
       var idInput = document.getElementById("paceduClass1LearnerId");
       var id = idInput ? idInput.value.trim() : "";
