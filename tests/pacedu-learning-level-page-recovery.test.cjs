@@ -8,6 +8,10 @@ const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspa
 test("Learning Level recovery appears when the existing selector is present but disabled", () => {
   assert.match(controller, /host\.querySelector\("select:not\(:disabled\)"\)/);
   assert.match(controller, /function isRenderedLevelRecoveryHost\(host\)/);
+  assert.match(controller, /hostRect\.width>0 && hostRect\.height>0/, "zero-size selector hosts must trigger recovery");
+  assert.match(controller, /selectorRect\.width>0 && selectorRect\.height>0/, "zero-size selectors must not suppress recovery");
+  assert.match(controller, /data-pe-level-recovery.*single-navigation/);
+  assert.match(controller, /host\.querySelector\("\[data-pe-level-recovery='single-navigation'\]"\)\) return/, "refreshes must not duplicate the fallback control");
   assert.match(controller, /if\(!isRenderedLevelRecoveryHost\(host\)\) host=el\("levelSelection"\)/, "recovery must mount in the active Learning Level page when the selector host is missing or hidden");
   assert.match(controller, /existingSelect\.getClientRects\(\)\.length>0/);
   assert.match(controller, /style\.visibility==="hidden"/);
