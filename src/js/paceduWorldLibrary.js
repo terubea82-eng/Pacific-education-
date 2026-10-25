@@ -48,8 +48,9 @@
   }
   function render() {
     if (!document.body || document.getElementById(PANEL_ID)) return;
+    /* Keep the library out of the learner's daily activity page. It is available
+       from teacher tools / the learning platform so student work stays uncluttered. */
     var anchors = [
-      document.getElementById("dailyLesson"),
       document.getElementById("teacherDashboard"),
       document.getElementById("learningPlatform")
     ].filter(Boolean);
