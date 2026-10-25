@@ -97,7 +97,7 @@
       '<section class="pw-card"><h3>Your CV</h3><textarea id="pwCv" class="pw-output" rows="14" aria-label="Generated CV" placeholder="Your CV draft will appear here."></textarea><button type="button" id="pwDownloadCv">Download CV (.txt)</button></section>' +
       '<section class="pw-card"><h3>Your cover letter</h3><textarea id="pwLetter" class="pw-output" rows="14" aria-label="Generated cover letter" placeholder="Your cover letter draft will appear here."></textarea><button type="button" id="pwDownloadLetter">Download cover letter (.txt)</button></section>' +
       '</div>' +
-      '<section class="pw-card" style="margin-top:12px"><h3>Application advice</h3><ul>' +
+      '<section class="pw-card" style="margin-top:12px"><h3>Application advice</h3><h4>Vacancy match check</h4><p id="pwMatchAdvice" role="status" aria-live="polite">Generate your documents to see requirements to review. This is a simple keyword guide, not an eligibility decision.</p><ul>' +
       '<li>Match your examples to the vacancy requirements.</li><li>Never claim a qualification or experience you do not have.</li>' +
       '<li>Check the employer using an official registry or official website where available.</li><li>Confirm pay, duties, location, contract and any work-permit requirements.</li>' +
       '<li>Do not pay recruitment fees or share banking passwords, one-time codes or identity documents with an unverified contact.</li>' +
@@ -137,39 +137,32 @@
         status("Enter your name, job title and at least one real skill, qualification or experience before generating documents.");
         return;
       }
-      var cv = [
-        d.pwName,
-        d.pwContact,
-        d.pwCountry ? "Target country: " + d.pwCountry : "",
-        "",
-        "PROFILE",
-        d.pwSummary || "Profile: Add a short, truthful summary of your relevant strengths.",
-        "",
-        "SKILLS",
-        d.pwSummary || "Add skills relevant to the job.",
-        "",
-        "EDUCATION AND TRAINING",
-        d.pwEducation || "Add relevant education or training, if any.",
-        "",
-        "WORK AND PRACTICAL EXPERIENCE",
-        d.pwExperience || "Add relevant paid, volunteer, community or practical experience, if any.",
-        "",
-        "ACHIEVEMENTS AND WORK EXAMPLES",
-        d.pwAchievements || "Add examples you can explain or demonstrate.",
-        "",
-        "TARGET ROLE",
-        d.pwJob + (d.pwEmployer ? " — " + d.pwEmployer : ""),
-        "",
-        "Review all details and remove anything inaccurate before using this CV."
-      ].filter(function (line) { return line !== null; }).join("\n");
+      var cvLines = [d.pwName];
+      if (d.pwContact) cvLines.push(d.pwContact);
+      if (d.pwCountry) cvLines.push("Target country: " + d.pwCountry);
+      cvLines.push("", "TARGET ROLE", d.pwJob + (d.pwEmployer ? " — " + d.pwEmployer : ""));
+      if (d.pwSummary) cvLines.push("", "PROFILE AND SKILLS", d.pwSummary);
+      if (d.pwEducation) cvLines.push("", "EDUCATION AND TRAINING", d.pwEducation);
+      if (d.pwExperience) cvLines.push("", "WORK AND PRACTICAL EXPERIENCE", d.pwExperience);
+      if (d.pwAchievements) cvLines.push("", "ACHIEVEMENTS AND WORK EXAMPLES", d.pwAchievements);
+      var cv = cvLines.join("\n");
+
       var evidence = (d.pwSummary + " " + d.pwEducation + " " + d.pwExperience + " " + d.pwAchievements).toLowerCase();
       var requirements = d.pwAdvertisement.split(/[\n•;]+/).map(function (x) { return x.trim(); }).filter(Boolean).slice(0, 8);
       var matching = requirements.length ? requirements.map(function (req) {
         var words = req.toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length > 4; });
         var found = words.some(function (word) { return evidence.indexOf(word) !== -1; });
-        return (found ? "Possible match to discuss: " : "Check whether you can meet: ") + req;
-      }) : ["Add the vacancy's key requirements to tailor this letter more precisely."];
-      var letter = [
+        return (found ? "Possible keyword match — verify with your own example: " : "Review this requirement and add honest evidence if you have it: ") + req;
+      }) : ["Paste the key requirements from the vacancy to review how your real skills and experience relate to the job."];
+      var advice = document.getElementById("pwMatchAdvice");
+      if (advice) advice.textContent = matching.join("\n");
+
+      var background = [];
+      if (d.pwSummary) background.push("My relevant skills and strengths include " + d.pwSummary + ".");
+      if (d.pwEducation) background.push("My education and training includes " + d.pwEducation + ".");
+      if (d.pwExperience) background.push("My practical experience includes " + d.pwExperience + ".");
+      if (d.pwAchievements) background.push("An example of my work or achievement is " + d.pwAchievements + ".");
+      var letterLines = [
         d.pwName,
         d.pwContact,
         d.pwCountry,
@@ -182,23 +175,18 @@
         "",
         "Dear Hiring Manager,",
         "",
-        "I am applying for the " + d.pwJob + (d.pwEmployer ? " position at " + d.pwEmployer : " position") + ". My relevant background includes " +
-          (d.pwSummary || d.pwExperience || d.pwEducation) + ".",
+        "I am applying for the " + d.pwJob + (d.pwEmployer ? " position at " + d.pwEmployer : " position") + ".",
         "",
-        d.pwExperience ? "My practical experience includes: " + d.pwExperience : "I am ready to explain how my training, skills and practical examples relate to this role.",
-        "",
-        d.pwAchievements ? "An example of my work or achievement is: " + d.pwAchievements : "I can discuss examples of my work and how I would contribute to the team.",
-        "",
-        "Vacancy points to check and personalise:",
-        matching.map(function (x) { return "• " + x; }).join("\n"),
+        background.join(" "),
         "",
         "Thank you for considering my application. I would welcome the opportunity to discuss my suitability for the role.",
         "",
         "Yours sincerely,",
-        d.pwName,
-        "",
-        "Before sending, replace or remove any wording that does not accurately describe you, and address the letter to the correct employer/contact if known."
-      ].join("\n");
+        d.pwName
+      ];
+      var letter = letterLines.filter(function (line, index) {
+        return line !== null && line !== undefined && !(line === "" && letterLines[index - 1] === "");
+      }).join("\n");
       document.getElementById("pwCv").value = cv;
       document.getElementById("pwLetter").value = letter;
       status("Drafts prepared on this device only. Review and correct them; PacEdu has not sent an application.");
