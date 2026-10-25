@@ -204,7 +204,23 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     return c;
   }
   function approvalKey(c){return [c.classId||"unassigned",c.subject||"subject-not-set",c.term||"term-not-set",c.day||"1"].join("|");}
-  function isTeacherApproved(c){return !!approvalRead()[approvalKey(c||approvalContext())];}
+  function isTeacherApproved(c){
+    var record=approvalRead()[approvalKey(c||approvalContext())];
+    return !!(record && record.approved === true);
+  }
+  /* Shared pilot gate for every student-facing activity renderer. Fail closed
+     when a learner class is unknown; localStorage approval is pilot-only and
+     is not a production authorization boundary. */
+  function isTeacherApprovedForStudent(studentContext, day){
+    studentContext=studentContext||{};
+    var c=approvalContext();
+    c.classId=String(studentContext.classReference||studentContext.classId||c.classId||"").trim();
+    c.subject=String(studentContext.subject||c.subject||"").trim();
+    c.term=String(studentContext.term||c.term||"").trim();
+    c.day=String(Number(day)||Number(studentContext.day)||Number(c.day)||1);
+    if(!c.classId||!c.subject)return false;
+    return isTeacherApproved(c);
+  }
   function approvalRole(){
     try{
       var r=sessionStorage.getItem("pacificEducationActiveRole");
@@ -276,7 +292,9 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
   function refreshApprovalUI(){bindTeacherApproval();applyStudentApprovalGate();protectActivityRenderer();}
 
   window.PacificEducationTeacherDailyActivityCoordinator={
-    request:request, context:context, render:render, version:"2.0.0-school-region-coordination"
+    request:request, context:context, render:render,
+    isTeacherApprovedForStudent:isTeacherApprovedForStudent,
+    version:"2.1.0-shared-student-approval-gate"
   };
   function init(){ render(); refreshApprovalUI(); [300,1000,2500].forEach(function(ms){setTimeout(refreshApprovalUI,ms);}); }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
