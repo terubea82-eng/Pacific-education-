@@ -70,7 +70,7 @@ test("guided Rules to Registration opens the role workspace and keeps it visible
 
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
-  // Keep the main learner/teacher flow uncluttered; role navigation is provided by the sequential workspace.
+  // The sequential workspace is the only main-flow navigation; keep the legacy App Menu hidden.
   await expect(page.locator("#pacificEducationAppMenu")).toBeHidden();
   await expect(page.locator("#teacherDashboard")).toBeHidden();
   await expect(page.locator("#peSequentialBack")).toBeVisible();
