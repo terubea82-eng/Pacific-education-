@@ -204,6 +204,9 @@
     term.addEventListener("change",refreshWeeks); refreshWeeks();
     var button = el("button","Preview weekly activity and questions",panel);
     button.type="button"; button.style.cssText="padding:11px 14px;margin:8px 0;font:inherit;font-weight:700;";
+    var printButton = el("button","Print student worksheet",panel);
+    printButton.type="button"; printButton.disabled=true;
+    printButton.style.cssText="padding:11px 14px;margin:8px 0;font:inherit;font-weight:700;";
     var output = el("div",null,panel); output.id="paceduFijiWeeklyCurriculumPreview"; output.setAttribute("aria-live","polite");
     button.textContent="Preview daily worksheet";
     button.addEventListener("click",function(){
@@ -231,6 +234,7 @@
         el("p",daily.teacherCheck,guide);
         el("p",daily.curriculumNote,guide);
         el("p",daily.sourceNote,guide);
+        printButton.disabled=false;
         return;
       }
       var result=getWeeklyActivity({level:level.value,subject:subject.value,term:term.value,week:week.value,ability:ability.value});
@@ -247,6 +251,16 @@
       var checks=el("ul",null,output);
       result.teacherChecks.forEach(function(c){el("li",c,checks);});
       el("p",result.note,output);
+      printButton.disabled=false;
+    });
+    printButton.addEventListener("click",function(){
+      if(printButton.disabled || !output.firstChild) return;
+      var style=el("style",null,doc.head);
+      style.textContent='@media print{body.pacedu-print-daily-worksheet *{visibility:hidden!important}body.pacedu-print-daily-worksheet #paceduFijiWeeklyCurriculumPreview,body.pacedu-print-daily-worksheet #paceduFijiWeeklyCurriculumPreview *{visibility:visible!important}body.pacedu-print-daily-worksheet #paceduFijiWeeklyCurriculumPreview{position:absolute!important;left:0!important;top:0!important;width:100%!important;padding:0!important;margin:0!important;border:0!important;background:#fff!important;color:#111!important}body.pacedu-print-daily-worksheet #paceduFijiWeeklyCurriculumPreview details{display:none!important}body.pacedu-print-daily-worksheet #paceduFijiWeeklyCurriculumPanel button{display:none!important}}';
+      doc.body.classList.add("pacedu-print-daily-worksheet");
+      function cleanup(){doc.body.classList.remove("pacedu-print-daily-worksheet");if(style.parentNode)style.parentNode.removeChild(style);global.removeEventListener("afterprint",cleanup);}
+      global.addEventListener("afterprint",cleanup);
+      global.print();
     });
   }
   function observeTeacherPanel() {
