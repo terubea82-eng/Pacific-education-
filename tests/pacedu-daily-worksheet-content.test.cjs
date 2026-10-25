@@ -132,3 +132,13 @@ test("term-week-day scheduler returns concrete worksheets with explicit curricul
   }
   assert.equal(api.getCurriculumWorksheet({term:"T3",week:6,day:1}).status, "NOT_FOUND");
 });
+
+
+test("teacher weekly planner selects a day and displays the daily example, questions and teacher key", () => {
+  const planner = fs.readFileSync("src/js/paceduFijiCurriculumWeeklyActivities.js", "utf8");
+  assert.match(planner, /paceduFijiCurriculumDay/);
+  assert.match(planner, /getCurriculumWorksheet/);
+  assert.match(planner, /Practice example:/);
+  assert.match(planner, /Teacher answer key and curriculum check/);
+  assert.match(planner, /daily\.questions\.forEach/);
+});
