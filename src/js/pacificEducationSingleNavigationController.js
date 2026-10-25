@@ -157,6 +157,9 @@ function isRenderedLevelRecoveryHost(host){
   if(!host) return false;
   try{
     if(host.getClientRects().length===0) return false;
+    var hostRect=host.getBoundingClientRect();
+    /* A nonzero client-rect count does not guarantee usable space. */
+    if(!(hostRect.width>0 && hostRect.height>0)) return false;
     var node=host;
     while(node){
       var style=window.getComputedStyle(node);
@@ -183,7 +186,8 @@ function ensureVisibleLevelSelectorFallback(){
   if(existingSelect){
     var selectorIsVisible=false;
     try{
-      selectorIsVisible=existingSelect.getClientRects().length>0;
+      var selectorRect=existingSelect.getBoundingClientRect();
+      selectorIsVisible=existingSelect.getClientRects().length>0 && selectorRect.width>0 && selectorRect.height>0;
       var node=existingSelect;
       while(selectorIsVisible && node){
         var style=window.getComputedStyle(node);
@@ -213,9 +217,12 @@ function ensureVisibleLevelSelectorFallback(){
     }catch(e){}
     if(selectorIsVisible) return;
   }
+  /* Avoid duplicate fallback controls when navigation refreshes the page. */
+  if(host.querySelector("[data-pe-level-recovery='single-navigation']")) return;
   /* Recovery UI only: keep the class/level page usable if its selector script
      failed to load. This never claims that a teacher assignment was verified. */
   var box=document.createElement("div");
+  box.setAttribute("data-pe-level-recovery","single-navigation");
   box.style.cssText="padding:14px;border:2px solid #b45309;border-radius:8px;margin:12px 0;";
   var label=document.createElement("label");
   label.htmlFor="paceduLevelSelectorRecovery";
