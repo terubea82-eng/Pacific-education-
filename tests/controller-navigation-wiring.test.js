@@ -153,7 +153,7 @@ test("role workspace content is forced visible and has a recoverable blank-conte
   assert.match(sequential, /Open the final Sign Out page/);
   assert.match(sequential, /index=sequence\.length-1;\s*renderPage\(\);/);
   assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
-  assert.match(html, /pacificEducationSequentialRoleWorkspaces\\.js\\?v=20261025-child-workspace-simple-v5/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261025-child-workspace-simple-v5/);
   assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261025-zero-area-recovery-v2/);
 });
 
