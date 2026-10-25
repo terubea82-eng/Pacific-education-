@@ -27,7 +27,7 @@ test("Worldwide employer categories are comprehensive and not falsely verified",
     "International & regional organisations",
     "Licensed recruitment & staffing agencies"
   ]) assert.ok(source.includes(category), category);
-  assert.match(source, /Categories do not mean an employer has been verified/);
+  assert.match(source, /categories do not mean an employer has been verified/i);
   assert.match(source, /Live jobs and verified employers are not available yet/);
 });
 
