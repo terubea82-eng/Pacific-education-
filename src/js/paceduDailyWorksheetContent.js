@@ -218,6 +218,7 @@
       T1: { label: "Term 1", weeks: 10 },
       T2: { label: "Term 2", weeks: 10 },
       T3: { label: "Term 3", weeks: 5 },
+      ASSESSMENT: { label: "Assessment window", weeks: 1 },
       INTERVENTION: { label: "Intervention", weeks: 5 },
       REVISION: { label: "Revision", weeks: 2 },
       EXAMS: { label: "School-approved examination period", weeks: 2 }
