@@ -193,6 +193,7 @@
     var termOptions = ["T1","T2","T3","ASSESSMENT","INTERVENTION","REVISION","EXAMS"].map(function(x){return {value:x,label:x==="T1"?"Term 1":x==="T2"?"Term 2":x==="T3"?"Term 3":x==="ASSESSMENT"?"Assessment window":x==="INTERVENTION"?"Intervention":x==="REVISION"?"Revision":"Examinations"};});
     var term = select("Term / learning block","paceduFijiCurriculumTerm",termOptions,panel);
     var week = select("Week","paceduFijiCurriculumWeek",[],panel);
+    var day = select("Teaching day","paceduFijiCurriculumDay",[1,2,3,4,5].map(function(x){return {value:String(x),label:"Day "+x};}),panel);
     var ability = select("Ability band","paceduFijiCurriculumAbility",ABILITIES.map(function(x){return {value:x.id,label:x.label};}),panel);
     function refreshWeeks() {
       week.textContent = "";
@@ -204,9 +205,35 @@
     var button = el("button","Preview weekly activity and questions",panel);
     button.type="button"; button.style.cssText="padding:11px 14px;margin:8px 0;font:inherit;font-weight:700;";
     var output = el("div",null,panel); output.id="paceduFijiWeeklyCurriculumPreview"; output.setAttribute("aria-live","polite");
+    button.textContent="Preview daily worksheet";
     button.addEventListener("click",function(){
-      var result=getWeeklyActivity({level:level.value,subject:subject.value,term:term.value,week:week.value,ability:ability.value});
       output.textContent="";
+      var dailyApi=global.PacEduDailyWorksheetContent;
+      var daily=dailyApi && typeof dailyApi.getCurriculumWorksheet==="function"
+        ? dailyApi.getCurriculumWorksheet({level:level.value,subject:subject.value,term:term.value,week:week.value,day:day.value,ability:ability.value})
+        : null;
+      if(daily && daily.status==="NOT_FOUND"){el("p",daily.message,output);return;}
+      if(daily){
+        el("h4",daily.title,output);
+        el("p","Curriculum theme: "+daily.curriculumSchedule.teachingTheme,output);
+        el("p","Practice example: "+daily.readingText,output);
+        el("p","Worked guidance: "+daily.answerKey[0].explanation,output);
+        el("p",daily.instructions,output);
+        el("h4","Student questions",output);
+        var list=el("ol",null,output);
+        daily.questions.forEach(function(q){
+          var li=el("li",q.prompt,list);
+          if(q.options.length){var opts=el("ul",null,li);q.options.forEach(function(v,i){el("li",String.fromCharCode(65+i)+". "+v,opts);});}
+        });
+        var guide=el("details",null,output);
+        el("summary","Teacher answer key and curriculum check",guide);
+        daily.answerKey.forEach(function(a){el("p",a.number+". "+a.answer+" — "+a.explanation,guide);});
+        el("p",daily.teacherCheck,guide);
+        el("p",daily.curriculumNote,guide);
+        el("p",daily.sourceNote,guide);
+        return;
+      }
+      var result=getWeeklyActivity({level:level.value,subject:subject.value,term:term.value,week:week.value,ability:ability.value});
       el("h4",result.topic || result.message || "Activity",output);
       if(result.status==="NOT_FOUND") return;
       el("p","Status: draft — official syllabus mapping still required.",output);
@@ -214,8 +241,8 @@
       el("p","Learning task: "+result.learningTask.task,output);
       el("p","Class expectation: "+result.learningTask.expectation,output);
       el("h4","Student questions",output);
-      var list=el("ol",null,output);
-      result.questions.forEach(function(q){el("li",q.prompt+" ["+q.type+"]",list);});
+      var fallbackList=el("ol",null,output);
+      result.questions.forEach(function(q){el("li",q.prompt+" ["+q.type+"]",fallbackList);});
       el("h4","Teacher verification before assigning",output);
       var checks=el("ul",null,output);
       result.teacherChecks.forEach(function(c){el("li",c,checks);});
