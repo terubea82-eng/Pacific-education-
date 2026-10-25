@@ -29,7 +29,7 @@
     "Mathematics": [
       {topic:"Sharing books equally", passage:"The library has 24 storybooks. A teacher shares them equally among 4 reading tables.", questions:[
         ["How many books does each table receive?","6",["4","5","8"],0,"24 ÷ 4 = 6."],
-        ["Which number sentence matches the sharing?","24 ÷ 4 = 6",["24 + 4 = 6","24 − 4 = 6","4 × 6 = 24 is false"],0,"Division represents equal sharing; 4 × 6 = 24 also checks it."],
+        ["Which number sentence matches the sharing?","24 ÷ 4 = 6",["24 + 4 = 6","24 − 4 = 6","4 × 5 = 24"],0,"Division represents equal sharing; 4 × 6 = 24 also checks it."],
         ["How can you check the answer?","4 × 6 = 24",["6 − 4 = 24","24 + 6 = 4","4 ÷ 24 = 6"],0,"Multiplication checks the equal groups."],
         ["If one more table is added and the 24 books are shared among 6 tables, how many per table?","4",["3","5","6"],0,"24 ÷ 6 = 4."]
       ]},
