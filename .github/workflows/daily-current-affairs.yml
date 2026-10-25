@@ -11,6 +11,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: pacedu-current-affairs-feed
+  cancel-in-progress: false
 jobs:
   refresh-current-affairs:
     runs-on: ubuntu-latest
@@ -247,4 +250,20 @@ jobs:
           git add docs/data/current-affairs.json
           git diff --cached --quiet && exit 0
           git commit -m "Refresh daily educational current affairs feed"
-          git push
+          # main may advance while the feed is being generated. Rebase the
+          # feed-only commit on the latest main and retry non-fast-forward
+          # pushes; never force-push or auto-resolve a content conflict.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Current-affairs feed conflicts with newer main changes; refusing to overwrite."
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "::warning::main advanced during feed publication (attempt ${attempt}/3); retrying."
+          done
+          echo "::error::Could not publish feed after three safe retries."
+          exit 1
