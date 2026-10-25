@@ -62,9 +62,27 @@
       var control=event.target&&event.target.closest?event.target.closest("button,[role='button']"):null;
       if(control && /hear|listen|play|speak|voice/i.test(String(control.getAttribute("aria-label")||control.textContent||""))) manualVoiceUntil=Date.now()+1800;
     },true);
+    function wrapManualReplay(){
+      var controller=window.PacificEducationMandatoryVoiceNavigation;
+      if(!controller || typeof controller.speak!=="function" || controller.speak.__peShortDirective) return;
+      var originalSpeak=controller.speak;
+      var manualSpeak=function(raw){
+        if(Date.now()<=manualVoiceUntil){
+          manualVoiceUntil=0;
+          var text=shortPageDirective(raw);
+          if(!text) return false;
+          var engine=window.PacificEducationSpeech;
+          if(engine && typeof engine.speakText==="function") return engine.speakText(text);
+        }
+        return originalSpeak.apply(this,arguments);
+      };
+      manualSpeak.__peShortDirective=true; manualSpeak.__peOriginal=originalSpeak;
+      controller.speak=manualSpeak;
+    }
     wrapSpeechObject();
-    window.setTimeout(wrapSpeechObject,300);
-    window.setTimeout(wrapSpeechObject,1000);
+    wrapManualReplay();
+    window.setTimeout(function(){wrapSpeechObject();wrapManualReplay();},300);
+    window.setTimeout(function(){wrapSpeechObject();wrapManualReplay();},1000);
   }
 
   function visible(el){
