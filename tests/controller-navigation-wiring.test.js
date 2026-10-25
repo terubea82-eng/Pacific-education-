@@ -153,7 +153,7 @@ test("role workspace content is forced visible and has a recoverable blank-conte
   assert.match(sequential, /Open the final Sign Out page/);
   assert.match(sequential, /index=sequence\.length-1;\s*renderPage\(\);/);
   assert.match(sequential, /enforceWorkspaceVisibility\(\);/);
-  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261023-verified-learner-context-v2/);
+  assert.match(html, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261025-child-workspace-simple-v5/);
   assert.match(html, /pacificEducationSingleNavigationController\.js\?v=20261025-zero-area-recovery-v2/);
 });
 
@@ -181,27 +181,15 @@ test("Learning Tools stays fail-closed throughout guided entry and registration 
 });
 
 
-test("student workspace starts at daily learning and retains assessment and portfolio steps", () => {
+test("student workspace contains only daily activity, practice and learning check", () => {
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   const student = sequential.match(/"student":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(student, "student default sequence must exist");
   const ids = [...student[1].matchAll(/\["([^"]+)","([^"]+)"\]/g)].map((match) => match[1]);
-  assert.equal(ids[0], "dailyLesson", "student enters directly at today's activity");
-  const required = [
-    "dailyLesson",
-    "dailyLessonPracticeStage",
-    "assessments",
-    "pacificEducationCoverageDashboard",
-    "pacificEducationStudentProgressDashboard"
-  ];
-  let previous = -1;
-  for (const id of required) {
-    const index = ids.indexOf(id);
-    assert.ok(index > previous, "mandatory Student step must exist in order: " + id);
-    previous = index;
-  }
-  assert.doesNotMatch(student[1], /\["(?:levelSelection|subjectSelection|termSelection|capabilitySelection)"/);
+  assert.deepEqual(ids, ["dailyLesson", "dailyLessonPracticeStage", "assessments"]);
   assert.match(sequential, /studentSequenceHasMandatoryOrder/);
+  assert.match(sequential, /sequence=sequence\.filter\(function\(step\)\{return Array\.isArray\(step\)&&STUDENT_MANDATORY_STEPS\.indexOf\(step\[0\]\)!==-1;\}\)/);
+  assert.match(sequential, /Student workspaces may contain only Daily Activity, Practice, and Check My Learning/);
   assert.match(sequential, /does not verify an individual assignment/);
   const teacher = sequential.match(/"teacher":\s*\[([\s\S]*?)\n    \],/);
   assert.ok(teacher, "teacher workspace sequence must exist");
