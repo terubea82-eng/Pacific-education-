@@ -1213,6 +1213,39 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("#peSequentialPage select")).toHaveCount(0);
 });
 
+test("student activity pack stays locked until matching teacher release", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() =>
+    typeof window.PacificEducationRoleActivityPacks?.render === "function" &&
+    typeof window.PacificEducationTeacherDailyActivityCoordinator?.isTeacherApprovedForStudent === "function"
+  ), { timeout: 10000 }).toBe(true);
+
+  await page.evaluate(() => {
+    localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationSubject", "English");
+    localStorage.removeItem("pacificEducationTerm");
+    localStorage.setItem("currentDayNumber", "1");
+    const host = document.createElement("div");
+    host.id = "approval-gate-test-host";
+    document.body.appendChild(host);
+    window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", host, 1);
+  });
+
+  const card = page.locator("#paceduRoleActivityPack");
+  await expect(card).toContainText("must approve and release");
+  await expect(card.locator("#paceduRoleActivityResponse")).toHaveCount(0);
+
+  await page.evaluate(() => {
+    localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+      "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+    }));
+    window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", document.getElementById("approval-gate-test-host"), 1);
+  });
+  await expect(page.locator("#paceduRoleActivityPack #paceduRoleActivityResponse")).toBeVisible();
+});
+
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
