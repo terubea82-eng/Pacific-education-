@@ -141,4 +141,7 @@ test("teacher weekly planner selects a day and displays the daily example, quest
   assert.match(planner, /Practice example:/);
   assert.match(planner, /Teacher answer key and curriculum check/);
   assert.match(planner, /daily\.questions\.forEach/);
+  assert.match(planner, /Print student worksheet/);
+  assert.match(planner, /pacedu-print-daily-worksheet/);
+  assert.match(planner, /#paceduFijiWeeklyCurriculumPreview details\{display:none!important\}/);
 });
