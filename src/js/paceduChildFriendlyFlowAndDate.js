@@ -39,9 +39,13 @@
     dateNode.style.cssText="margin:8px 0;padding:8px 12px;max-width:960px;border-radius:8px;background:#eef5ff;color:#183153;font-size:1rem;font-weight:600;";
    }
   }
-  dateNode.textContent="Today: "+localDate();
-  dateNode.title="Date comes from this device. School calendar dates are set separately by your teacher.";
-  dateNode.hidden=false;
+  /* MutationObserver also sees our own DOM writes. Keep this operation
+     idempotent so unchanged date text cannot trigger an observer loop. */
+  var todayText="Today: "+localDate();
+  if(dateNode.textContent!==todayText)dateNode.textContent=todayText;
+  var dateTitle="Date comes from this device. School calendar dates are set separately by your teacher.";
+  if(dateNode.title!==dateTitle)dateNode.title=dateTitle;
+  if(dateNode.hidden)dateNode.hidden=false;
   if(dateNode.parentNode!==daily)daily.insertBefore(dateNode,daily.firstChild);
  }
  function removeExtraHelpBox(){
