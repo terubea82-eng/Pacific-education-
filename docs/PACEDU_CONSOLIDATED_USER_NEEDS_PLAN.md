@@ -85,3 +85,32 @@ A feature is complete only when:
 7. Conduct an owner-approved pilot acceptance review before any production or payment activation.
 
 **Status note (2026-10-25):** This checklist is a consolidated requirements record, not proof that all items are implemented. Existing feature PRs remain separate and must be tested and merged individually.
+
+## Verified repository snapshot — 2026-10-25
+
+The following checks were inspected on `main` commit `2ecd11d2750916aba8f4f48b4a1f62c05b8daca4`. GitHub reported success for the current commit's listed checks, including Chromium desktop/phone viewport tests, clean-install/dependency audit, CodeQL, build, pilot safety preflight, protected-feature verification, offline-sync, QA and deployment. This is a repository/automation result, not a claim that every school workflow or physical Android device was independently tested.
+
+### Present in the current page and repository
+
+- The main HTML includes the daily worksheet content, Fiji weekly activity map, education resources, Worldwide Jobs/CV helper, Skills & Earn workspace, World Library, Class 1 guided workspace and evidence-based ability selector scripts.
+- The current World Library attaches to teacher/learning-tools areas rather than inserting its panel into the learner's daily activity section.
+- The current every-page voice helper installs explicit “Hear Instructions” controls and leaves automatic page narration to the protected controller; it does not start a competing narrator.
+- The main guided flow hides the legacy App Menu and broad user-first navigation while the focused role workflow is active.
+- The current ability selector has four displayed bands (Foundation, Developing, Expected-level, Advanced), keeps re-teaching/extension as support strategies, and requires linked marked evidence before presenting a student recommendation as ready.
+- The consolidated requirements file was merged through PR #257. The current-main commit checked above also has successful automated security/dependency checks.
+
+### Still not safe to claim as complete
+
+- **Official curriculum coverage:** daily questions are original starter content. The full ECE–Form 7 curriculum, all achievement indicators and official school term/week mapping are not proven complete. Each subject/level/week needs source-backed mapping and educator review.
+- **Cross-device persistence:** browser/local prototype storage is not the same as a production Firebase-backed, authorized multi-device record. Confirm Firebase rules, authentication, per-role permissions, sync conflict handling, backup and deletion before entering real child data.
+- **Assessment:** automatic scoring is appropriate only for validated objective question types. Images, voice and open responses need teacher review unless a validated rubric and safe, measured model are introduced. Recommendations remain provisional until required evidence and teacher review are present.
+- **Identity and assignments:** a local roster match or entered identifier is not proof against an authoritative school/FEMIS source. Do not label an ID, class assignment or evidence as verified unless the actual trusted verification path succeeded.
+- **External information:** resource links may change; current-affairs items marked pending teacher review must stay unapproved until reviewed. The Jobs/CV and Skills & Earn tools are local drafting/prototype helpers, not live vacancy verification, job placement, a marketplace or payment service.
+- **Production and device release:** the repository still describes the project as a controlled pilot, not production-approved. A successful build/deployment check does not confirm the installed Android package, real device voice engine, offline sync or school acceptance. Do not build/install an APK without owner approval.
+
+### Safe next actions
+
+1. Keep the current passing `main` stable; do not revive closed stale PR branches wholesale.
+2. Use the passing current-main checks as the baseline. For each needed feature change, make one small PR and rerun the current-head browser, security and regression checks.
+3. Prioritize an authorized Firebase data-flow/rules review and a teacher-approved curriculum source-mapping process before production or real student records.
+4. Do a role-by-role acceptance check (teacher, student, school leader, caregiver and technician) on phone-sized screens. Record actual observations and fix only reproducible defects.
