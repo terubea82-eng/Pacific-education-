@@ -11,7 +11,8 @@ const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"))
 test("Worldwide Jobs workspace builds CV and job-specific cover-letter drafts", () => {
   assert.match(source, /Prepare my CV and cover letter/);
   assert.match(source, /function buildDocuments\(\)/);
-  assert.match(source, /Vacancy points to check and personalise/);
+  assert.match(source, /Possible keyword match/);
+  assert.match(source, /id="pwMatchAdvice"/);
   assert.match(source, /Download CV/);
   assert.match(source, /Download cover letter/);
 });
