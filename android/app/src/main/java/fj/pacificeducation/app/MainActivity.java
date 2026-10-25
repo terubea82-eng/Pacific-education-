@@ -12,6 +12,7 @@ import android.speech.tts.TextToSpeech;
 import android.speech.tts.Voice;
 import android.speech.tts.UtteranceProgressListener;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -66,6 +67,8 @@ public final class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        // Keep the display awake while PacEdu is in the foreground; Android releases this when the app is backgrounded.
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         textToSpeech = new TextToSpeech(this, status -> {
             nativeTtsInitializationFinished = true;
             if (status == TextToSpeech.SUCCESS && textToSpeech != null) {
@@ -98,8 +101,14 @@ public final class MainActivity extends Activity {
                 pendingNativeSpeech = "";
                 notifyWebVoiceStatus("AI Playback unavailable: Android could not initialize its text-to-speech engine.");
             }
+            // TTS may initialize after onResume; restore only after the engine is ready.
+            if (ttsReady && prefs.getBoolean(VOICE_RESUME_ACTIVE, false) && !prefs.getBoolean(VOICE_RESUME_STOPPED, false)) {
+                restoreNativeConversationResume();
+            }
         });
-        showNativeHome();
+        // Reopen the learning platform after an accidental close if voice playback was in progress.
+        if (prefs.getBoolean(VOICE_RESUME_ACTIVE, false) && !prefs.getBoolean(VOICE_RESUME_STOPPED, false)) showWebPlatform();
+        else showNativeHome();
     }
 
     private void selectPreferredVoice() {
@@ -174,7 +183,7 @@ public final class MainActivity extends Activity {
     }
 
     private void restoreNativeConversationResume() {
-        if (prefs == null || nativeConversationActive) return;
+        if (prefs == null || !ttsReady || textToSpeech == null || nativeConversationActive) return;
         if (!prefs.getBoolean(VOICE_RESUME_ACTIVE, false) || prefs.getBoolean(VOICE_RESUME_STOPPED, false)) return;
         String json = prefs.getString(VOICE_RESUME_JSON, "");
         if (json == null || json.trim().isEmpty()) return;
@@ -238,6 +247,9 @@ public final class MainActivity extends Activity {
     }
     private boolean speakConversationNative(String json) {
         if (!ttsReady || textToSpeech == null || json == null || json.trim().isEmpty()) return false;
+        // Keep the complete dialogue available for crash/close recovery before speaking.
+        nativeConversationJson = json;
+        nativeConversationIntentionalStop = false;
         try {
             JSONArray lines = new JSONArray(json);
             if (lines.length() == 0) return false;
@@ -336,6 +348,7 @@ public final class MainActivity extends Activity {
         @JavascriptInterface
         public boolean speakConversation(String json) {
             if (json == null || json.trim().isEmpty()) return false;
+            if (nativeConversationActive && json.equals(nativeConversationJson)) return true;
             if (ttsReady && textToSpeech != null) return speakConversationNative(json);
             if (nativeTtsInitializationFinished || textToSpeech == null) {
                 notifyWebVoiceStatus("AI Playback unavailable: Android text-to-speech is not ready. Check the phone's Text-to-speech engine and English voice data.");
@@ -550,6 +563,9 @@ public final class MainActivity extends Activity {
                 // The hosted JavaScript single-navigation controller owns all page
                 // transitions. Do not intercept the Welcome Next button here: an
                 // Android-only click handler can bypass Vision/Mission and Rules.
+                // Keep the phone awake while PacEdu is visible when the WebView supports Screen Wake Lock.
+                // Android FLAG_KEEP_SCREEN_ON above remains the primary native safeguard.
+                view.evaluateJavascript("(function(){function hold(){try{if(document.visibilityState==='visible'&&navigator.wakeLock&&navigator.wakeLock.request){navigator.wakeLock.request('screen').then(function(lock){window.__pacEduWakeLock=lock;lock.addEventListener('release',function(){if(document.visibilityState==='visible')setTimeout(hold,250);});}).catch(function(){});}}catch(e){}}document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')hold();else if(window.__pacEduWakeLock){try{window.__pacEduWakeLock.release();}catch(e){}window.__pacEduWakeLock=null;}});hold();})();", null);
                 // Inject the native adapter after remotely hosted page scripts load.
                 // The APK opens GitHub Pages, so branch-only JavaScript is not bundled.
                 // Keep the protected #856 speech controller intact.
