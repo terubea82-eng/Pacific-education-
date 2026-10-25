@@ -78,7 +78,7 @@ jobs:
               const datePattern = /datetime=["']([^"']+)["']|\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/gi;
               for (const m of anchors) {
                 const href = m[2].replace(/&amp;/g, '&');
-                if (!/^\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href)) continue;
+                if (!/^(?:https:\/\/www\.unesco\.org)?\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href)) continue;
                 const title = decode(m[4]);
                 if (!title || title.length < 12 || /^(read more|learn more|more)$/i.test(title)) continue;
                 const start = Math.max(0, m.index - 450);
