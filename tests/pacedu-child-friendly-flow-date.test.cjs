@@ -21,14 +21,14 @@ test("page-specific spoken guidance remains available without a second instructi
   }
   assert.match(voice, /Hear Instructions/);
   assert.doesNotMatch(flow, /What to do:/);
-  assert.doesNotMatch(flow, /paceduSimplePageHelp.*createElement/s);
+  assert.doesNotMatch(flow, /createElement\\("section"\\)/);
 });
 
 test("automatic date appears only inside the visible daily activity", () => {
   assert.match(flow, /getElementById\\("dailyLesson"\\)/);
   assert.match(flow, /daily\\.insertBefore\\(dateNode,daily\\.firstChild\\)/);
   assert.match(flow, /removeExtraHelpBox/);
-  assert.match(flow, /daily\\.parentNode/);
+  assert.match(flow, /if\\(!daily\\|\\|!visible\\(daily\\)\\)/);
 });
 
 test("automatic date script is loaded in the app with a refreshed cache key", () => {
