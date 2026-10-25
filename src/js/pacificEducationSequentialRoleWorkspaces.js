@@ -14,13 +14,9 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["dailyLesson","Today's Daily Learning Activity"],
-      ["dailyLessonPracticeStage","Practice and Feedback"],
-      ["assessments","Daily Assessment Record"],
-      ["pacificEducationCoverageDashboard","Learning Coverage"],
-      ["pacificEducationStudentProgressDashboard","My Progress and Portfolio"],
-      ["pacificEducationHomeSubmission","Home Continuity"],
-      ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Activities"]
+      ["dailyLesson","Today's Daily Activity"],
+      ["dailyLessonPracticeStage","Practice"],
+      ["assessments","Check My Learning"]
     ],
     "blind-learner":[
       ["dailyLesson","Accessible Daily Learning Activity"],
@@ -117,31 +113,32 @@
   var STUDENT_MANDATORY_STEPS=[
     "dailyLesson",
     "dailyLessonPracticeStage",
-    "assessments",
-    "pacificEducationCoverageDashboard",
-    "pacificEducationStudentProgressDashboard"
+    "assessments"
   ];
   function studentSequenceHasMandatoryOrder(sequence){
-    if(!Array.isArray(sequence)) return false;
-    var cursor=-1;
+    if(!Array.isArray(sequence)||sequence.length!==STUDENT_MANDATORY_STEPS.length) return false;
     for(var i=0;i<STUDENT_MANDATORY_STEPS.length;i++){
-      var nextIndex=sequence.findIndex(function(step){return Array.isArray(step)&&step[0]===STUDENT_MANDATORY_STEPS[i];});
-      if(nextIndex<=cursor) return false;
-      cursor=nextIndex;
+      if(!Array.isArray(sequence[i])||sequence[i][0]!==STUDENT_MANDATORY_STEPS[i]) return false;
     }
     return true;
   }
   function getRoleSequence(role){
     var sequence=ROLE_SEQUENCE_OVERRIDES[role]||ROLE_SEQUENCE_DEFAULTS[role];
-    /* Old saved sequence overrides must not silently bypass mandatory student steps. */
-    if(role==="student" && !studentSequenceHasMandatoryOrder(sequence)) sequence=ROLE_SEQUENCE_DEFAULTS.student;
+    /* Migrate stale student overrides by keeping only the three activity steps. */
+    if(role==="student"&&Array.isArray(sequence)){
+      sequence=sequence.filter(function(step){return Array.isArray(step)&&STUDENT_MANDATORY_STEPS.indexOf(step[0])!==-1;});
+    }
+    if(role==="student"&&!studentSequenceHasMandatoryOrder(sequence)) sequence=ROLE_SEQUENCE_DEFAULTS.student;
     return sequence?cloneSequence(sequence):[];
   }
   function setRoleSequence(role,sequence){
     var check=validateSequence(sequence);
     if(!check.valid) return check;
-    if(role==="student" && !studentSequenceHasMandatoryOrder(sequence)){
-      return {valid:false,errors:["Student sequence must retain the mandatory capability test, result, class/subject/term, daily activity, practice, assessment, curriculum coverage, and progress steps in order."]};
+    if(role==="student"&&sequence.some(function(step){return STUDENT_MANDATORY_STEPS.indexOf(step[0])===-1;})){
+      return {valid:false,errors:["Student workspaces may contain only Daily Activity, Practice, and Check My Learning."]};
+    }
+    if(role==="student"&&!studentSequenceHasMandatoryOrder(sequence)){
+      return {valid:false,errors:["Student sequence must contain Daily Activity, Practice, and Check My Learning in that order."]};
     }
     ROLE_SEQUENCE_OVERRIDES[role]=cloneSequence(sequence);
     saveSequenceOverrides();
