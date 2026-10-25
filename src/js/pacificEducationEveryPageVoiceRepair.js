@@ -93,7 +93,7 @@
         last[item[0]]=now;
         /* Do not auto-speak when a workspace appears. The protected mandatory
            navigation controller owns page narration; this script adds a manual
-           replay button only, preventing two narrators from blocking Next. */
+           replay button only. The active workspace uses its own Back/Next flow. */
       });
     });
     if(document.body)observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","aria-hidden","style","class","data-pe-flow-step"]});
