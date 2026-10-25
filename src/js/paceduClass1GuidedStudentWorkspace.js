@@ -7,7 +7,7 @@
   var STYLE_ID = "paceduClass1GuideStyles";
   var PANEL_ID = "paceduClass1GuidedLearning";
   var KEY = "pacedu.class1.breathing.cycles.v1";
-  var SUBJECTS = ["English", "Mathematics", "Phonics", "Science", "Social Science", "Health", "Agriculture", "Arts", "Technology"];
+  var SUBJECTS = ["English", "Mathematics", "Phonics"];
   var cycles = 0, timer = null, running = false;
 
   function activeRole() {
@@ -115,8 +115,15 @@
         subjectHost.querySelectorAll("button").forEach(function (b) {
           b.setAttribute("aria-pressed", b.textContent === chosen ? "true" : "false");
         });
-        document.getElementById("paceduClass1Task").textContent =
-          "Open the " + chosen + " activity assigned to you by your teacher. Read, listen or look at the instructions, then try your best.";
+        var task = document.getElementById("paceduClass1Task");
+        var dailySubject = target.querySelector("#peStudentDailySubject");
+        if (dailySubject && Array.prototype.some.call(dailySubject.options, function (option) { return option.value === chosen; })) {
+          dailySubject.value = chosen;
+          dailySubject.dispatchEvent(new Event("change", { bubbles: true }));
+          task.textContent = chosen + " selected. The matching practice activity is shown below in this workspace.";
+        } else {
+          task.textContent = chosen + " selected. Open the available activity below to load its practice task.";
+        }
         try { localStorage.setItem("pacificEducationSubject", chosen); } catch (e) {}
       });
       subjectHost.appendChild(button);
@@ -154,19 +161,32 @@
     document.getElementById("paceduClass1StartTask").addEventListener("click", function () {
       var idInput = document.getElementById("paceduClass1LearnerId");
       var id = idInput ? idInput.value.trim() : "";
+      var task = document.getElementById("paceduClass1Task");
+      var dailySubject = target.querySelector("#peStudentDailySubject");
+      var response = target.querySelector("#peStudentDailyResponse");
+      var availableTask = target.querySelector("#peStudentDailyTask");
       try {
         if (id) localStorage.setItem("pacedu.pendingLearnerIdForTeacherCheck", id);
         localStorage.setItem("pacificEducationSubject", chosen);
       } catch (e) {}
-      var existing = target.querySelector("#dailyLessonStartButton, #startDailyLessonButton, [data-action='start-daily-lesson']");
-      if (existing && existing !== this) existing.click();
-      else {
-        var task = document.getElementById("paceduClass1Task");
-        task.textContent = id
-          ? "Your subject is selected. Your learner ID is saved on this device for teacher checking. Open the teacher-approved activity below."
-          : "Please enter your school learner ID or ask your teacher to help. Then open the teacher-approved activity below.";
-        if (!id && idInput) idInput.focus();
+      if (dailySubject && Array.prototype.some.call(dailySubject.options, function (option) { return option.value === chosen; })) {
+        dailySubject.value = chosen;
+        dailySubject.dispatchEvent(new Event("change", { bubbles: true }));
       }
+      if (availableTask) {
+        task.textContent = chosen + " practice activity is open below. " +
+          (id ? "Your learner ID was saved on this device for teacher checking. " : "Enter your school learner ID above and ask your teacher to check it. ") +
+          "This is starter practice; teacher approval is not confirmed here.";
+        if (response) {
+          response.focus();
+          response.scrollIntoView({ behavior: "smooth", block: "center" });
+        } else {
+          availableTask.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      } else {
+        task.textContent = "The daily practice activity is not loaded yet. Open the Daily Learning Activity step, then try again. Teacher approval is not confirmed by this guide.";
+      }
+      if (!id && idInput) idInput.focus();
     });
   }
   function init() {
