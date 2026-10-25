@@ -5,6 +5,85 @@
 (function(window, document){
   "use strict";
   var active=null, panel=null, timer=null, lastTarget=null, lastMessage="";
+  var lastDirective="", lastDirectiveAt=0, manualVoiceUntil=0;
+
+  /* One short page directive is the automatic voice baseline. The highlighted
+     step guide remains visual; it must not narrate every focus, click or box. */
+  function currentPageIsWelcome(){
+    var page=document.getElementById("pacificEducationWelcome");
+    return !!(page && !page.hidden && (!window.getComputedStyle || window.getComputedStyle(page).display!=="none"));
+  }
+  function shortPageDirective(raw){
+    var text=String(raw||"").replace(/\s+/g," ").trim();
+    if(!text) return "";
+    if(/^Step\s+\d+\s+of\s+\d+\s+on\s+/i.test(text)) return "";
+    var daily=text.match(/^Step\s+\d+\s+of\s+\d+\.\s+(.+?)\.\s+This daily learning activity is required\./i);
+    if(daily) return daily[1]+". Complete today's activity and save your work before pressing Next.";
+    var sequential=text.match(/^Step\s+\d+\s+of\s+\d+\.\s+(.+?)\.\s+Follow this numbered step, then press Next\.?$/i);
+    if(sequential) return sequential[1]+". Follow this page, then press Next.";
+    if(/^Please\s+(?:enter|choose|select|provide|tap)\b/i.test(text) && /\b(?:this box|this selection box|this text area|this answer space|highlighted box|highlighted button|highlighted item|next box)\b/i.test(text)) return "";
+    if(/^Step\s+\d+\s+of\s+\d+\s*:/i.test(text)) return "";
+    if(/^Welcome to /i.test(text) && !currentPageIsWelcome()){
+      var sentences=text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)||[text];
+      text=sentences.slice(0,2).join(" ").replace(/\s+/g," ").trim();
+      if(text.length>190) text=text.slice(0,187).replace(/\s+\S*$/,"")+"...";
+    }
+    return text;
+  }
+  function installShortVoiceDirective(){
+    function wrapSpeechObject(){
+      var engine=window.PacificEducationSpeech;
+      if(engine && typeof engine.speakText==="function" && !engine.speakText.__peShortDirective){
+        var original=engine.speakText;
+        var wrapped=function(raw){
+          var text=shortPageDirective(raw);
+          if(!text) return false;
+          var now=Date.now(), manual=now<=manualVoiceUntil;
+          if(!manual && text===lastDirective && now-lastDirectiveAt<5000) return false;
+          if(manual) manualVoiceUntil=0;
+          lastDirective=text; lastDirectiveAt=now;
+          return original.call(this,text);
+        };
+        wrapped.__peShortDirective=true; wrapped.__peOriginal=original; engine.speakText=wrapped;
+      }
+      if(typeof window.speakText==="function" && !window.speakText.__peShortDirective){
+        var globalOriginal=window.speakText;
+        var globalWrapped=function(raw){
+          var text=shortPageDirective(raw);
+          if(!text) return false;
+          /* The speech-object wrapper owns de-duplication. Avoid double-filtering
+             here because the global helper commonly delegates to that object. */
+          return globalOriginal.call(this,text);
+        };
+        globalWrapped.__peShortDirective=true; globalWrapped.__peOriginal=globalOriginal; window.speakText=globalWrapped;
+      }
+    }
+    document.addEventListener("click",function(event){
+      var control=event.target&&event.target.closest?event.target.closest("button,[role='button']"):null;
+      if(control && /hear|listen|play|speak|voice/i.test(String(control.getAttribute("aria-label")||control.textContent||""))) manualVoiceUntil=Date.now()+1800;
+    },true);
+    function wrapManualReplay(){
+      var controller=window.PacificEducationMandatoryVoiceNavigation;
+      if(!controller || typeof controller.speak!=="function" || controller.speak.__peShortDirective) return;
+      var originalSpeak=controller.speak;
+      var manualSpeak=function(raw){
+        if(Date.now()<=manualVoiceUntil){
+          manualVoiceUntil=0;
+          var text=shortPageDirective(raw);
+          if(!text) return false;
+          var engine=window.PacificEducationSpeech;
+          if(engine && typeof engine.speakText==="function") return engine.speakText(text);
+        }
+        return originalSpeak.apply(this,arguments);
+      };
+      manualSpeak.__peShortDirective=true; manualSpeak.__peOriginal=originalSpeak;
+      controller.speak=manualSpeak;
+    }
+    wrapSpeechObject();
+    wrapManualReplay();
+    window.setTimeout(function(){wrapSpeechObject();wrapManualReplay();},300);
+    window.setTimeout(function(){wrapSpeechObject();wrapManualReplay();},1000);
+  }
 
   function visible(el){
     if(!el || el.hidden) return false;
@@ -12,16 +91,9 @@
     return !(s && (s.display==="none" || s.visibility==="hidden"));
   }
   function speak(text){
-    text=String(text||"").replace(/\s+/g," ").trim();
-    if(!text || text===lastMessage) return;
-    lastMessage=text;
-    try{
-      if(window.PacificEducationMandatoryVoiceNavigation && typeof window.PacificEducationMandatoryVoiceNavigation.speak==="function"){
-        window.PacificEducationMandatoryVoiceNavigation.speak(text);
-      }else if(window.PacificEducationSpeech && typeof window.PacificEducationSpeech.speakText==="function"){
-        window.PacificEducationSpeech.speakText(text);
-      }
-    }catch(e){}
+    /* The guide is visual-only. Page voice comes from the shared page directive,
+       and users can replay it with Hear This Page / Hear Instructions controls. */
+    return false;
   }
   function currentStep(){
     var n=Number(document.body && document.body.getAttribute("data-pe-flow-step"));
@@ -211,6 +283,6 @@
     new MutationObserver(refresh).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["hidden","style","class","data-pe-flow-step"]});
     refresh();
   }
-  function init(){install();}
+  function init(){installShortVoiceDirective();install();}
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
 })(window,document);
