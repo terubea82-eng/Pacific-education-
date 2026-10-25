@@ -84,7 +84,7 @@
     var heading = el("h3", "Submit a photo of your work");
     heading.id = "paceduCameraEvidenceHeading";
     section.appendChild(heading);
-    section.appendChild(el("p", "Take a clear photo of this activity or select one from your gallery. PacEdu stores it on this device for teacher review. A photo is evidence only; it is not automatically marked correct or sent to another device."));
+    section.appendChild(el("p", "Optional: take a clear photo of this activity only if your teacher asks for photo evidence. A camera is not needed to register or use PacEdu. The photo stays on this device for now; it is not sent to your teacher or another device. Do not include faces or private information. A photo is evidence only and is not automatically marked correct."));
     var label = el("label", "Camera photo or image: ");
     var input = el("input");
     input.type = "file";
