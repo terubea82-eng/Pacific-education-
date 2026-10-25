@@ -66,21 +66,16 @@
     panel.className = "pw-panel";
     panel.setAttribute("data-open", "false");
 
-    var sectorOptions = EMPLOYER_TYPES.map(function (v) {
-      return '<option value="' + v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;") + '">' +
-        v.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</option>";
-    }).join("");
     panel.innerHTML =
       "<h2>Find work and prepare your application</h2>" +
       "<p>Prepare a CV and a letter for a specific job. Use truthful information and review every draft before sharing it.</p>" +
-      '<p class="pw-note"><strong>Pilot status:</strong> CV and cover-letter drafting works on this device. Verified live vacancies, employer identity checks, account-based applications and employer posting are not connected yet. Do not pay anyone to unlock a job through this prototype.</p>' +
+      '<p class="pw-note"><strong>Before you start:</strong> PacEdu can prepare your CV and cover letter on this device. Live jobs and verified employers are not available yet. Check the vacancy yourself and send your application yourself. Never pay to unlock a job.</p>' +
       '<div class="pw-grid">' +
       '<section class="pw-card"><h3>1. Your details</h3>' +
       '<label for="pwName">Name to show on your CV</label><input id="pwName" maxlength="100" autocomplete="name" placeholder="Your name">' +
       '<label for="pwCountry">Country where you want work</label><input id="pwCountry" maxlength="80" autocomplete="country-name" placeholder="e.g. Fiji">' +
       '<label for="pwJob">Job title</label><input id="pwJob" maxlength="140" placeholder="e.g. Office Assistant">' +
       '<label for="pwEmployer">Employer name (if known)</label><input id="pwEmployer" maxlength="160" placeholder="Employer shown in the advertisement">' +
-      '<label for="pwSector">Employer type</label><select id="pwSector">' + sectorOptions + '</select>' +
       '<label for="pwContact">Contact details you choose to share</label><input id="pwContact" maxlength="180" placeholder="Email or phone (optional)">' +
       '</section>' +
       '<section class="pw-card"><h3>2. Your background</h3>' +
@@ -102,7 +97,7 @@
       '<li>Check the employer using an official registry or official website where available.</li><li>Confirm pay, duties, location, contract and any work-permit requirements.</li>' +
       '<li>Do not pay recruitment fees or share banking passwords, one-time codes or identity documents with an unverified contact.</li>' +
       '<li>Read and approve both documents before you send them yourself.</li></ul>' +
-      '<p><strong>Employer categories planned for verification:</strong> Government/public service; state-owned enterprises; private businesses; education/research; NGOs/charities; international/regional organisations; licensed recruitment agencies; self-employed/household employers. Categories do not mean an employer has been verified.</p></section>';
+      '<details><summary>Employer types PacEdu plans to support</summary><p>Government and public services; state-owned enterprises; private businesses; education and research; NGOs and charities; international and regional organisations; licensed recruitment agencies; self-employed and household employers.</p><p>These categories do not mean an employer has been verified.</p></details></section>';
     root.appendChild(toggle);
     root.appendChild(panel);
     var nav = document.getElementById("userFirstNavigation");
@@ -115,7 +110,7 @@
       if (open) panel.scrollIntoView({ behavior: "auto", block: "start" });
     });
 
-    var fields = ["pwName","pwCountry","pwJob","pwEmployer","pwSector","pwContact","pwSummary","pwEducation","pwExperience","pwAchievements","pwAdvertisement"];
+    var fields = ["pwName","pwCountry","pwJob","pwEmployer","pwContact","pwSummary","pwEducation","pwExperience","pwAchievements","pwAdvertisement"];
     var data = readDraft();
     fields.forEach(function (id) {
       var field = document.getElementById(id);
