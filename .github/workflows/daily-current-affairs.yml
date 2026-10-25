@@ -99,7 +99,7 @@ jobs:
                 // date unless it agrees with a date explicitly included in the
                 // linked headline. If either signal is missing or they disagree,
                 // fail closed and leave the item out for manual verification.
-                const titleDateMatch = title.match(/\\b(\\d{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4})\\b/i);
+                const titleDateMatch = title.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
                 if (!titleDateMatch || !dates.length) {
                   console.warn('Skipping UNESCO item without independently matching title and nearby dates: ' + href);
                   continue;
