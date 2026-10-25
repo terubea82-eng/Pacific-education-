@@ -181,7 +181,7 @@
       node("h4","Student reference: "+String(ref),card);
       node("p","Teacher-marked daily activities: "+String(result.markedActivities||0)+" / "+MIN_MARKED_ACTIVITIES+" minimum",card);
       if(result.examPercentage!==undefined&&result.examPercentage!==null) node("p","Term examination: "+result.examPercentage+"%",card);
-      node("p",result.recommendation?("PacEdu provisional recommendation: "+result.recommendationLabel):result.message,card);
+      node("p",result.recommendation?("PacEdu provisional recommendation: "+result.recommendationLabel+". "+(result.bandRule||"")+" Exam result: "+result.examPercentage+"%; teacher-approved daily activity rate: "+result.activityApprovalRate+"%."):result.message,card);
       if(result.recommendation) {
         var reviewForm=node("div",undefined,card);
         var levelLabel=node("label","Teacher-confirmed level",reviewForm);
