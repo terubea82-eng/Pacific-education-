@@ -838,7 +838,7 @@ git status</pre>
 <p id="pilotSelectedRole" role="status" aria-live="polite"><strong>Selected role:</strong> none</p>
 <label for="pilotRegistrationName" style="display:block;margin-bottom:8px;font-size:1.1rem"><strong>Name / display name</strong></label>
 <p id="pilotRegistrationNameHelp" style="margin:0 0 8px">Use the large box below to type your name clearly.</p>
-<input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your full name" aria-describedby="pilotRegistrationNameHelp" style="display:block;width:100%;max-width:100%;min-height:64px;padding:14px 16px;font-size:1.25rem;line-height:1.4;border:2px solid #174f63;border-radius:10px;background:#fff;color:#173b49;box-sizing:border-box" /><br><br>
+<input id="pilotRegistrationName" type="text" autocomplete="name" maxlength="100" placeholder="Enter your full name" aria-describedby="pilotRegistrationNameHelp" style="display:block;width:100%;max-width:100%;min-height:64px;padding:14px 16px;font-size:1.25rem;line-height:1.4;border:2px solid #174f63;border-radius:10px;background:#fff;color:#173b49;box-sizing:border-box" /><br><br><div id="pilotLearnerIdentityFields" hidden style="border:2px solid #0f766e;border-radius:10px;padding:12px;margin:8px 0 16px"><label for="pilotLearnerOfficialId"><strong id="pilotLearnerOfficialIdLabel">Official student registration ID</strong></label><p id="pilotLearnerOfficialIdHelp">Use the official learner ID required by your country or school. This pilot does not verify or store the entered ID.</p><input id="pilotLearnerOfficialId" type="text" autocomplete="off" maxlength="80" placeholder="Enter official student ID" aria-describedby="pilotLearnerOfficialIdHelp" style="display:block;width:100%;min-height:56px;padding:12px;font-size:1.1rem;border:2px solid #174f63;border-radius:8px" /><label style="display:flex;gap:10px;align-items:flex-start;margin-top:12px"><input id="pilotLearnerPendingVerification" type="checkbox" style="width:24px;height:24px;flex:0 0 auto" /><span><strong>My school must confirm my ID / I cannot provide it yet.</strong><br><small>This requests authorized school verification; it does not confirm identity.</small></span></label><p id="pilotLearnerIdentityStatus" role="status" aria-live="polite">Select your country and learner role to see the ID requirement.</p></div>
 <label for="pilotRegistrationRole"><strong>Selected user role</strong></label><br>
 <select id="pilotRegistrationRole" aria-label="Selected user role" style="width:100%;max-width:520px" disabled>
 <option value="">Select role</option><option>Student</option><option>Blind Learner</option><option>Deaf Learner</option><option>Teacher</option><option>Parent/Caregiver</option><option>Professional Reviewer</option><option>NGO/Organization</option><option>Education/Government</option><option>Community/Partner</option><option>Technician</option><option>Owner/Control</option>
@@ -876,8 +876,29 @@ git status</pre>
     var name=document.getElementById("pilotRegistrationName"), role=document.getElementById("pilotRegistrationRole"), save=document.getElementById("pilotRegistrationSaveButton"), status=document.getElementById("pilotRegistrationStatus"), fields=document.getElementById("pilotRoleRegistrationFields"), selected=document.getElementById("pilotSelectedRole");
     if(!name||!role||!save||!status)return;
     var cards=document.querySelectorAll(".pe-user-role-card");
+    var identityFields=document.getElementById("pilotLearnerIdentityFields");
+    var learnerId=document.getElementById("pilotLearnerOfficialId");
+    var pendingId=document.getElementById("pilotLearnerPendingVerification");
+    var identityStatus=document.getElementById("pilotLearnerIdentityStatus");
+    var identityLabel=document.getElementById("pilotLearnerOfficialIdLabel");
+    var countrySelect=document.getElementById("pacificEducationCountrySelect");
+    function isLearner(value){return /^(student|blind learner|deaf learner)$/i.test(String(value||"").trim());}
+    function refreshLearnerIdentity(){
+      var learner=isLearner(role.value), country=String(countrySelect&&countrySelect.value||"");
+      if(identityFields)identityFields.hidden=!learner;
+      if(learnerId){
+        learnerId.required=!!(learner&&country==="FJ"&&!(pendingId&&pendingId.checked));
+        learnerId.setAttribute("aria-required",String(learner&&country==="FJ"&&!(pendingId&&pendingId.checked)));
+        learnerId.placeholder=country==="FJ"?"Enter your FEMIS registration ID":"Enter official student ID if required";
+      }
+      if(identityLabel)identityLabel.textContent=country==="FJ"?"Fiji FEMIS registration ID (required)":"Official student registration ID (if required by your country/school)";
+      if(identityStatus){
+        identityStatus.textContent=!learner?"Learner ID is only requested for student and accessible learner roles.":country==="FJ"?"Fiji learners must enter their FEMIS ID or request pending school verification. This pilot cannot verify or store the ID.":"Use the official ID required by your country/school. If none is required or available, PacEdu can issue a temporary pilot reference pending school approval.";
+      }
+    }
     function selectRole(value){
       role.value=value;
+      refreshLearnerIdentity();
       if(fields)fields.hidden=false;
       if(selected){
         selected.textContent="";
@@ -904,21 +925,44 @@ git status</pre>
       }
     }catch(_){}
     save.onclick=function(){
-      var n=name.value.trim(), r=role.value;
+      var n=name.value.trim(), r=role.value, country=String(countrySelect&&countrySelect.value||"");
+      var language=document.getElementById("pacificEducationLanguageSelect");
+      var languageCode=String(language&&language.value||"");
+      var learner=isLearner(r), enteredId=String(learnerId&&learnerId.value||"").trim();
       if(!r){status.textContent="Choose your user role first.";return;}
-      if(!n){status.textContent="Enter a name or test name.";name.focus();return;}
+      if(!n&&!(learner&&country!=="FJ")){status.textContent="Enter your name, or use the pending school-verification route if your required learner identity is unavailable.";name.focus();return;}
       try{
-        sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true}));
-        status.textContent="Registration saved for this open app session only. It does not sync to another device. Press Next to open your workspace.";
-        /* Registration is complete, but the role workspace must not bypass the
-           single page-by-page navigation authority. MandatoryBoxSequence hands
-           control back to SingleNavigation after this successful save. */
-        try{ sessionStorage.setItem("pacificEducationPilotRole",r); }catch(_){}
-        var announcement="Pilot registration saved for "+r+". Press Next to open the "+r+" Workspace.";
+        if(!country)country=localStorage.getItem("pacificEducationRegistrationCountryCode")||"";
+        if(!languageCode)languageCode=localStorage.getItem("pacificEducationRegistrationLanguage")||"";
+      }catch(_){}
+      if(!country||!languageCode){status.textContent="Choose your country and language before saving registration.";return;}
+      var identityStatusValue="not-applicable", learnerReference="";
+      if(learner){
+        if(country==="FJ")identityStatusValue="pending-authorized-FEMIS-verification";
+        else if(enteredId)identityStatusValue="pending-authorized-local-ID-verification";
+        else {identityStatusValue="pilot-reference-pending-school-approval";learnerReference="PILOT-LEARNER-"+Date.now().toString(36).toUpperCase();}
+      }
+      try{
+        sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:country,languageCode:languageCode,identityStatus:identityStatusValue,identityPending:learner,learnerReference:learnerReference,learnerIdStored:false}));
+        sessionStorage.setItem("pacificEducationPilotRole",r);
+        if(learnerId)learnerId.value="";
+        if(pendingId)pendingId.checked=false;
+        status.textContent=learner&&country==="FJ"?"Pilot registration saved. FEMIS identity is pending authorized school verification; the ID was not verified or stored. Press Next to continue.":"Registration saved for this open app session only. Learner identity remains subject to school/country verification. Press Next to open your workspace.";
+        if(identityStatus)identityStatus.textContent=status.textContent;
+        var announcement=learner&&country==="FJ"?"Registration saved. Your FEMIS identity is pending authorized school verification. Press Next to continue.":"Registration saved. Press Next to open your workspace.";
         if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(announcement);
         else if(window.speakText)window.speakText(announcement);
-      }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
+      }catch(_){status.textContent="Registration could not be saved in this browser.";}
     };
+    if(countrySelect&&!countrySelect.getAttribute("data-pe-learner-id-bound")){
+      countrySelect.setAttribute("data-pe-learner-id-bound","true");
+      countrySelect.addEventListener("change",function(){if(learnerId)learnerId.value="";if(pendingId)pendingId.checked=false;refreshLearnerIdentity();});
+    }
+    if(pendingId&&!pendingId.getAttribute("data-pe-pending-id-bound")){
+      pendingId.setAttribute("data-pe-pending-id-bound","true");
+      pendingId.addEventListener("change",refreshLearnerIdentity);
+    }
+    refreshLearnerIdentity();
     /* Reliable pilot save handoff: capture the click after country/language
        validation has run, so the record exists before any sequence listener
        checks it. Keep the same required fields and exact selected role. */
@@ -935,17 +979,23 @@ git status</pre>
           if(!countryCode) countryCode=localStorage.getItem("pacificEducationRegistrationCountryCode")||"";
           if(!languageCode) languageCode=localStorage.getItem("pacificEducationRegistrationLanguage")||"";
         }catch(_){}
+        var learnerRole=isLearner(r);
+        var enteredId=String(learnerId&&learnerId.value||"").trim();
+        var pending=!!(pendingId&&pendingId.checked);
         if(!countryCode||!languageCode){
           status.textContent="Choose your country and language before saving registration.";
+          if(event){event.preventDefault();event.stopImmediatePropagation();}
           return;
         }
-        if(!r){status.textContent="Choose your user role first.";return;}
-        if(!n){status.textContent="Enter a name or test name.";return;}
-        try{
-          sessionStorage.setItem(key,JSON.stringify({name:n,role:r,registeredAt:new Date().toISOString(),pilotOnly:true,countryCode:countryCode,languageCode:languageCode}));
-          sessionStorage.setItem("pacificEducationPilotRole",r);
-          status.textContent="Registration saved for this open app session only. It does not sync to another device. Press Next to open your workspace.";
-        }catch(_){status.textContent="Pilot registration could not be saved in this browser.";}
+        if(!r){status.textContent="Choose your user role first.";if(event){event.preventDefault();event.stopImmediatePropagation();}return;}
+        if(!n&&!(learnerRole&&countryCode!=="FJ")){status.textContent="Enter your name, or use the pending school-verification route if your required learner identity is unavailable.";if(event){event.preventDefault();event.stopImmediatePropagation();}return;}
+        if(learnerRole&&countryCode==="FJ"&&!enteredId&&!pending){
+          status.textContent="Fiji learner registration requires a FEMIS ID or an explicit pending school-verification request.";
+          if(identityStatus)identityStatus.textContent=status.textContent;
+          if(learnerId)learnerId.focus();
+          if(event){event.preventDefault();event.stopImmediatePropagation();}
+          return;
+        }
       },true);
     }
   }
