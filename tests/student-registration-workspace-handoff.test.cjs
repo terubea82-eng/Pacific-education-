@@ -49,6 +49,8 @@ test("Student registration save and green Next open a visible workspace and dail
   await next.tap();
 
   await page.locator("#pilotRegistrationName").fill("Student Handoff Test");
+  // The pilot has no authorized FEMIS verification service yet; explicitly request school verification.
+  await page.locator("#pilotLearnerPendingVerification").check();
   await expect(next).toBeDisabled();
   await page.locator("#pilotRegistrationSaveButton").tap();
 
