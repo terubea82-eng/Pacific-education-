@@ -1,4 +1,4 @@
-name: PacEdu Defensive Technician and Security Preflight
+name: Pacific Guardian Main Control - Defensive Technician and Security Preflight
 
 on:
   pull_request:
@@ -24,31 +24,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: npm
-
       - name: Install exact locked dependencies
         run: npm ci
-
       - name: Run PacEdu regression test suite
         run: npm test
-
       - name: Scan for obvious committed secrets
         run: python3 automation/scan_obvious_secrets.py
-
       - name: Validate local script references
         run: python3 automation/validate_local_script_references.py
-
       - name: Audit installed dependency tree
         shell: bash
         run: |
           set -euo pipefail
           npm audit --audit-level=high
-
       - name: Verify pilot remains restricted and production remains blocked
         shell: bash
         run: |
@@ -56,7 +49,6 @@ jobs:
           python3 - <<'PY'
           import json
           from pathlib import Path
-
           gate = Path("src/js/pacificEducationProductionFinalGate.js").read_text()
           readiness = Path("src/js/pacificEducationPilotReadinessSelfCheck.js").read_text()
           auth_path = Path("release/production-authorization.json")
@@ -71,17 +63,17 @@ jobs:
               assert auth.get("productionEligible") is not True, "unexpected production eligibility record"
           print("PASS: production stays blocked; pilot and external-review boundaries remain active.")
           PY
-
       - name: Publish a safe check summary
         if: always()
         shell: bash
         run: |
           {
-            echo "## PacEdu defensive preflight"
+            echo "## Pacific Guardian main control preflight"
             echo
-            echo "- Commit: `$GITHUB_SHA`"
-            echo "- Trigger: `$GITHUB_EVENT_NAME`"
-            echo "- This workflow is read-only: it does not deploy, change permissions, access production data, or approve a release."
-            echo "- CodeQL and Firebase emulator rules tests remain separate required checks."
-            echo "- A passing automated run does not replace independent penetration testing, Android device testing, privacy/safeguarding review, backups/restore drills, or owner approval."
+            echo "Commit: $GITHUB_SHA"
+            echo "Trigger: $GITHUB_EVENT_NAME"
+            echo "Guardian coordinates defensive checks but remains read-only."
+            echo "It does not deploy, change permissions, access production data, self-approve, or merge changes."
+            echo "CodeQL and Firebase emulator rules tests remain separate checks."
+            echo "Green automation does not replace independent security review, Android device testing, privacy/safeguarding review, backups/restore drills, or owner approval."
           } >> "$GITHUB_STEP_SUMMARY"
