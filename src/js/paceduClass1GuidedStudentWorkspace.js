@@ -1,0 +1,206 @@
+/* PacEdu — Class 1 friendly guided learner workspace.
+ * Additive only: leaves registration, role routing, learner evidence, offline records,
+ * and protected #856 voice controllers intact.
+ */
+(function (window, document) {
+  "use strict";
+  var STYLE_ID = "paceduClass1GuideStyles";
+  var PANEL_ID = "paceduClass1GuidedLearning";
+  var KEY = "pacedu.class1.breathing.cycles.v1";
+  var SUBJECTS = ["English", "Mathematics", "Phonics"];
+  var cycles = 0, timer = null, running = false;
+
+  function activeRole() {
+    var select = document.getElementById("pilotRoleSelector");
+    if (select && select.value) return String(select.value).toLowerCase();
+    try {
+      return String(localStorage.getItem("pacificEducationRole") || localStorage.getItem("pilotRole") || "").toLowerCase();
+    } catch (e) { return ""; }
+  }
+  function addStyles() {
+    if (document.getElementById(STYLE_ID)) return;
+    var style = document.createElement("style");
+    style.id = STYLE_ID;
+    style.textContent =
+      "#" + PANEL_ID + "{border:2px solid #b8d8ee;border-radius:16px;padding:16px;margin:0 0 16px;background:#f5fbff;color:#17324d;font-size:18px;line-height:1.5}" +
+      "#" + PANEL_ID + " h2,#" + PANEL_ID + " h3{margin:.3em 0 .6em}" +
+      "#" + PANEL_ID + " button,#" + PANEL_ID + " input,#" + PANEL_ID + " select{font:inherit;min-height:48px;max-width:100%;box-sizing:border-box;border-radius:10px;padding:10px;border:2px solid #7aaed0}" +
+      "#" + PANEL_ID + " button{background:#fff;font-weight:700;touch-action:manipulation}" +
+      "#" + PANEL_ID + " .pacedu-subjects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}" +
+      "#" + PANEL_ID + " .pacedu-subjects button[aria-pressed=true]{background:#d7f0df;border-color:#237448}" +
+      "#" + PANEL_ID + " .pacedu-breathe-orb{width:94px;height:94px;border-radius:50%;background:#b8e4d2;border:3px solid #347d65;margin:10px auto;animation:paceduClass1Breathe 8s ease-in-out 3;}" +
+      "@keyframes paceduClass1Breathe{0%,100%{transform:scale(.72);background:#d8ecff}50%{transform:scale(1);background:#b8e4d2}}" +
+      "@media(prefers-reduced-motion:reduce){#" + PANEL_ID + " .pacedu-breathe-orb{animation:none}}" +
+      "@media(max-width:360px){#" + PANEL_ID + "{padding:11px;font-size:16px}}";
+    document.head.appendChild(style);
+  }
+  function el(tag, text, cls) {
+    var node = document.createElement(tag);
+    if (text != null) node.textContent = text;
+    if (cls) node.className = cls;
+    return node;
+  }
+  function stopBreathing(save) {
+    running = false;
+    if (timer) window.clearInterval(timer);
+    timer = null;
+    var orb = document.querySelector("#" + PANEL_ID + " .pacedu-breathe-orb");
+    var status = document.getElementById("paceduBreathingStatus");
+    var button = document.getElementById("paceduBreathingToggle");
+    if (orb) orb.style.animationPlayState = "paused";
+    if (button) button.textContent = "Start breathing";
+    if (status) status.textContent = save ? "Well done. You can start your learning now." : "Breathing paused. You can continue when ready.";
+    if (save) {
+      try { localStorage.setItem(KEY, "0"); } catch (e) {}
+    }
+  }
+  function startBreathing() {
+    if (running) { stopBreathing(false); return; }
+    running = true;
+    cycles = 0;
+    var orb = document.querySelector("#" + PANEL_ID + " .pacedu-breathe-orb");
+    var status = document.getElementById("paceduBreathingStatus");
+    var button = document.getElementById("paceduBreathingToggle");
+    if (orb) { orb.style.animation = "none"; void orb.offsetWidth; orb.style.animation = "paceduClass1Breathe 8s ease-in-out 3"; orb.style.animationPlayState = "running"; }
+    if (button) button.textContent = "Pause breathing";
+    if (status) status.textContent = "Breathe in gently as the circle grows. Breathe out as it gets smaller.";
+    try { localStorage.setItem(KEY, "0"); } catch (e) {}
+    if (timer) window.clearInterval(timer);
+    timer = window.setInterval(function () {
+      cycles += 1;
+      try { localStorage.setItem(KEY, String(Math.min(cycles, 3))); } catch (e) {}
+      if (cycles >= 3) stopBreathing(true);
+    }, 8000);
+  }
+  function render() {
+    var role = activeRole();
+    var target = document.getElementById("dailyLesson") || document.getElementById("studentStartLearning");
+    if (!target || ["student", "blind-learner", "deaf-learner"].indexOf(role) === -1) return;
+    if (document.getElementById(PANEL_ID)) return;
+    addStyles();
+    var panel = el("section");
+    panel.id = PANEL_ID;
+    panel.setAttribute("aria-label", "Simple student daily learning guide");
+    panel.innerHTML =
+      '<h2>My Learning Today</h2><p>Hello! Let’s learn one step at a time.</p>' +
+      '<section aria-labelledby="paceduBreathingHeading"><h3 id="paceduBreathingHeading">1. Get ready</h3>' +
+      '<p>Take three gentle breaths. You can skip this.</p><div class="pacedu-breathe-orb" aria-hidden="true"></div>' +
+      '<p id="paceduBreathingInstructions">Breathe in gently. Breathe out slowly. Repeat three times if you wish. You can skip this step and register or learn without delay.</p>' +
+      '<p id="paceduBreathingStatus" role="status" aria-live="polite">Text instructions are always available. Voice is optional.</p>' +
+      '<button type="button" id="paceduBreathingToggle">Start breathing</button> ' +
+      '<button type="button" id="paceduBreathingRead">Read instructions aloud</button> ' +
+      '<button type="button" id="paceduBreathingStopVoice">Stop voice</button> ' +
+      '<button type="button" id="paceduBreathingSkip">Skip breathing</button></section>' +
+      '<hr><section aria-labelledby="paceduSubjectHeading"><h3 id="paceduSubjectHeading">2. Choose your subject</h3>' +
+      '<div class="pacedu-subjects" id="paceduClass1Subjects"></div></section>' +
+      '<section aria-labelledby="paceduLearnerHeading"><h3 id="paceduLearnerHeading">3. My learning details</h3>' +
+      '<label for="paceduClass1LearnerId">My school learner ID</label><br>' +
+      '<input id="paceduClass1LearnerId" autocomplete="off" placeholder="Enter your learner ID" aria-describedby="paceduClass1IdHelp">' +
+      '<p id="paceduClass1IdHelp">Ask your teacher if you need help. Your teacher will check your ID and class.</p></section>' +
+      '<section aria-labelledby="paceduTaskHeading"><h3 id="paceduTaskHeading">4. Do my activity</h3>' +
+      '<p id="paceduClass1Task">Choose English, Mathematics or Phonics. PacEdu will open the available practice task below.</p>' +
+      '<p id="paceduClass1ApprovalNote">This pilot shows starter practice activities. Teacher approval and individual assignment are not yet verified by this guide.</p>' +
+      '<button type="button" id="paceduClass1StartTask">Open available activity</button></section>' +
+      '<section aria-labelledby="paceduFinishHeading"><h3 id="paceduFinishHeading">5. Send my work</h3>' +
+      '<p>Write, speak or show your answer. Send it to your teacher for checking.</p>' +
+      '<p>Feedback appears after your teacher reviews it.</p></section>';
+    target.insertBefore(panel, target.firstChild);
+    var subjectHost = document.getElementById("paceduClass1Subjects");
+    var chosen = "English";
+    SUBJECTS.forEach(function (subject) {
+      var button = el("button", subject);
+      button.type = "button";
+      button.setAttribute("aria-pressed", subject === chosen ? "true" : "false");
+      button.addEventListener("click", function () {
+        chosen = subject;
+        subjectHost.querySelectorAll("button").forEach(function (b) {
+          b.setAttribute("aria-pressed", b.textContent === chosen ? "true" : "false");
+        });
+        var task = document.getElementById("paceduClass1Task");
+        var dailySubject = target.querySelector("#peStudentDailySubject");
+        if (dailySubject && Array.prototype.some.call(dailySubject.options, function (option) { return option.value === chosen; })) {
+          dailySubject.value = chosen;
+          dailySubject.dispatchEvent(new Event("change", { bubbles: true }));
+          task.textContent = chosen + " selected. The matching practice activity is shown below in this workspace.";
+        } else {
+          task.textContent = chosen + " selected. Open the available activity below to load its practice task.";
+        }
+        try { localStorage.setItem("pacificEducationSubject", chosen); } catch (e) {}
+      });
+      subjectHost.appendChild(button);
+    });
+    document.getElementById("paceduBreathingToggle").addEventListener("click", startBreathing);
+    document.getElementById("paceduBreathingRead").addEventListener("click", function () {
+      var instructions = "Get ready to learn. Breathe in gently. Breathe out slowly. Repeat three times if you wish. You can skip this step at any time.";
+      var status = document.getElementById("paceduBreathingStatus");
+      var runtime = window.PacificEducationAccessibilityRuntime;
+      if (runtime && typeof runtime.speak === "function") {
+        var result = runtime.speak(instructions);
+        if (status) status.textContent = result && result.success
+          ? "Reading the breathing instructions aloud. The text remains visible."
+          : "Voice is unavailable. Please use the written instructions. You can continue without voice.";
+      } else if (window.speechSynthesis && window.SpeechSynthesisUtterance) {
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(new window.SpeechSynthesisUtterance(instructions));
+        if (status) status.textContent = "Reading the breathing instructions aloud. The text remains visible.";
+      } else if (status) {
+        status.textContent = "Voice is unavailable. Please use the written instructions. You can continue without voice.";
+      }
+    });
+    document.getElementById("paceduBreathingStopVoice").addEventListener("click", function () {
+      var runtime = window.PacificEducationAccessibilityRuntime;
+      if (runtime && typeof runtime.stopSpeaking === "function") runtime.stopSpeaking();
+      else if (window.speechSynthesis) window.speechSynthesis.cancel();
+      var status = document.getElementById("paceduBreathingStatus");
+      if (status) status.textContent = "Voice stopped. The written instructions remain available.";
+    });
+    document.getElementById("paceduBreathingSkip").addEventListener("click", function () {
+      stopBreathing(false);
+      var status = document.getElementById("paceduBreathingStatus");
+      if (status) status.textContent = "Breathing skipped. Continue to registration or learning whenever you are ready.";
+    });
+    document.getElementById("paceduClass1StartTask").addEventListener("click", function () {
+      var idInput = document.getElementById("paceduClass1LearnerId");
+      var id = idInput ? idInput.value.trim() : "";
+      var task = document.getElementById("paceduClass1Task");
+      var dailySubject = target.querySelector("#peStudentDailySubject");
+      var response = target.querySelector("#peStudentDailyResponse");
+      var availableTask = target.querySelector("#peStudentDailyTask");
+      try {
+        if (id) localStorage.setItem("pacedu.pendingLearnerIdForTeacherCheck", id);
+        localStorage.setItem("pacificEducationSubject", chosen);
+      } catch (e) {}
+      if (dailySubject && Array.prototype.some.call(dailySubject.options, function (option) { return option.value === chosen; })) {
+        dailySubject.value = chosen;
+        dailySubject.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+      if (availableTask) {
+        task.textContent = chosen + " practice activity is open below. " +
+          (id ? "Your learner ID was saved on this device for teacher checking. " : "Enter your school learner ID above and ask your teacher to check it. ") +
+          "This is starter practice; teacher approval is not confirmed here.";
+        if (response) {
+          response.focus();
+          response.scrollIntoView({ behavior: "smooth", block: "center" });
+        } else {
+          availableTask.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      } else {
+        task.textContent = "The daily practice activity is not loaded yet. Open the Daily Learning Activity step, then try again. Teacher approval is not confirmed by this guide.";
+      }
+      if (!id && idInput) idInput.focus();
+    });
+  }
+  function init() {
+    render();
+    var selector = document.getElementById("pilotRoleSelector");
+    if (selector && !selector.dataset.paceduClass1Guide) {
+      selector.dataset.paceduClass1Guide = "true";
+      selector.addEventListener("change", function () { window.setTimeout(render, 0); });
+    }
+    window.setTimeout(render, 600);
+    window.setTimeout(render, 1500);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+  window.addEventListener("load", init);
+})(window, document);
