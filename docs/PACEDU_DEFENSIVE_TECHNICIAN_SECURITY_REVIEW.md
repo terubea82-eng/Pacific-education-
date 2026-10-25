@@ -1,23 +1,28 @@
-# PacEdu Defensive Technician and Ethical Security Review
+# Pacific Guardian Main Control: Defensive Technician and Ethical Security Review
 
-## Purpose
-This is a controlled, defensive maintenance plan for the PacEdu pilot. Automated checks run read-only and report findings; they do not self-edit production, access real student records, change repository permissions, or deploy releases.
+## Purpose and operating mode
+Pacific Guardian is designated as PacEdu's primary defensive check coordinator for repository changes and the controlled pilot. Its authority is bounded by repository permissions, branch protections, evidence requirements and owner approval. This does not claim a deployed 24/7 security operations centre.
 
-## Automated checks
-- Run the existing Node regression suite.
-- Scan tracked source/configuration for obvious committed secret patterns.
-- Validate local script references.
-- Run the package-lock-based dependency audit and fail on high/critical reported advisories.
-- Verify the production authorization gate remains fail-closed.
-- Continue using the separate CodeQL scan and Firebase Firestore/Storage emulator rules tests.
-- Run daily and on every pull request to main; allow a repository owner to start a manual run.
+## Main-control responsibilities
+- Coordinate read-only regression, secret-pattern, local-reference, dependency and production-boundary checks.
+- Keep existing CodeQL and Firebase Firestore/Storage emulator rules tests as independent checks; a green Guardian run does not substitute for them.
+- Track failures by workflow, exact commit and first failing step.
+- Prepare minimal, isolated fixes on branches and open reviewable pull requests.
+- Require tests and Pacific Guardian traceability before a proposed change is treated as ready for review.
+- Preserve protected voice files, working registration/navigation, offline behavior and owner-controlled release boundaries.
+
+## Authority limits
+- The main-control workflow has only repository contents: read permission.
+- It does not access production learner data, change repository permissions, expose secrets, auto-fix source, self-approve, self-merge, or deploy.
+- Authentication/authorization, learner data, marking, safeguarding, privacy, payments, database, infrastructure and release decisions require the applicable human or specialist review.
+- Production remains fail-closed until the existing release gate's evidence and independent approval requirements are satisfied.
 
 ## Technician triage order
 1. Identify the failing workflow, exact commit, and first failing step.
 2. Reproduce with synthetic/demo data and preserve logs that do not expose secrets or child information.
 3. Make the smallest isolated fix on a branch; never overwrite protected voice files or unrelated working features.
 4. Add a regression test for the failure.
-5. Rerun the full relevant checks and confirm the protected-feature and voice locks pass.
+5. Rerun the full relevant checks and confirm protected-feature and voice locks pass.
 6. Ask the owner to review and merge. No bot should self-approve or self-merge.
 
 ## Authorised ethical security testing
@@ -39,3 +44,6 @@ This is a controlled, defensive maintenance plan for the PacEdu pilot. Automated
 
 ## Honest limits
 A green workflow is not proof that PacEdu is fully secure or fully functional. Static scans can miss flaws; automated tests cannot verify real-world usability, all device TTS engines, legal compliance or curriculum authority approval. Do not enable real payments or production child-data services until the existing production release gate's independent evidence requirements are satisfied.
+
+## Activation boundary
+This workflow becomes active in the repository only after the pull request is reviewed and merged, and its GitHub Actions workflow is enabled. Required branch protection/status checks must be configured in repository settings by an authorized repository administrator; source files alone cannot establish those settings.
