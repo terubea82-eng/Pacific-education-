@@ -53,5 +53,19 @@ test("teacher queue renders submitted text as text and avoids HTML injection sin
 });
 
 test("camera evidence module is loaded after the learner activity runtime", () => {
-  assert.match(index, /pacificEducationLearnerActivityRuntime\.js[^<]*<\/script><script src="js\/pacificEducationCameraEvidence\.js\?v=20261023-camera-evidence-review-v1"/);
+  assert.match(index, /pacificEducationLearnerActivityRuntime\.js[^<]*<\/script><script src="js\/pacificEducationCameraEvidence\.js\?v=20261025-camera-optional-privacy-v2"/);
+});
+
+
+test("camera is optional and never required for registration", () => {
+  assert.match(camera, /Optional: take a clear photo/);
+  assert.match(camera, /A camera is not needed to register or use PacEdu/);
+  assert.match(camera, /it is not sent to your teacher or another device/);
+  assert.match(camera, /Do not include faces or private information/);
+});
+
+test("registration save message discloses session-only storage and no cross-device sync", () => {
+  assert.match(index, /Registration saved for this open app session only/);
+  assert.match(index, /Registration is saved for this open app session only/);
+  assert.match(index, /does not sync to another device/);
 });
