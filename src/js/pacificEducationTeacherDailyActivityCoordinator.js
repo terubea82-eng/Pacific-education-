@@ -271,14 +271,25 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     }
     var approve=document.getElementById("pacificEducationApproveDailyActivity"),revoke=document.getElementById("pacificEducationRevokeDailyActivity");
     if(approve&&approve.getAttribute("data-bound")!=="true"){approve.setAttribute("data-bound","true");approve.onclick=function(){
-      var c=approvalContext(),all=approvalRead();all[approvalKey(c)]={approved:true,approvedAt:new Date().toISOString(),approvedBy:"pilot-teacher",context:c};write(APPROVAL_KEY,all);
-      refreshApprovalUI();announceApproval("Today's Daily Activity has been approved and released. Students may now attempt it.");
+      var c=approvalContext();
+      if(!c.classId||!c.subject){
+        announceApproval("Choose the correct class and subject before approving today's activity. No student access has been released.");
+        refreshApprovalUI();
+        return;
+      }
+      var all=approvalRead();all[approvalKey(c)]={approved:true,approvedAt:new Date().toISOString(),approvedBy:"pilot-teacher",context:c};write(APPROVAL_KEY,all);
+      refreshApprovalUI();announceApproval("Today's Daily Activity has been approved and released for the selected class and subject.");
     };}
     if(revoke&&revoke.getAttribute("data-bound")!=="true"){revoke.setAttribute("data-bound","true");revoke.onclick=function(){
       var c=approvalContext(),all=approvalRead();delete all[approvalKey(c)];write(APPROVAL_KEY,all);
       refreshApprovalUI();announceApproval("Student access to today's Daily Activity has been revoked.");
     };}
-    function refreshApprovalUI(){var ok=isTeacherApproved(),s=document.getElementById("pacificEducationDailyApprovalStatus");if(s)s.textContent=ok?"Approved and released for students.":"Waiting for teacher approval. Students remain locked.";if(approve)approve.disabled=ok;if(revoke)revoke.disabled=!ok;}
+    function refreshApprovalUI(){
+      var c=approvalContext(),ok=isTeacherApproved(c),ready=!!(c.classId&&c.subject),s=document.getElementById("pacificEducationDailyApprovalStatus");
+      if(s)s.textContent=ok?"Approved and released for the selected class and subject.":ready?"Waiting for teacher approval. Students remain locked.":"Select a class and subject first. Students remain locked until you approve the correct activity.";
+      if(approve)approve.disabled=ok||!ready;
+      if(revoke)revoke.disabled=!ok;
+    }
     refreshApprovalUI();
   }
   function protectActivityRenderer(){
