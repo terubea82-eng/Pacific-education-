@@ -157,3 +157,33 @@ test("evidence engine recommends only four ability bands using transparent perce
     assert.equal(["foundation", "developing", "expected", "advanced"].includes(result.recommendation), true);
   }
 });
+
+
+test("teacher ability selector prefers the selected learner's marked-evidence recommendation", () => {
+  const selectorSource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+  const values = new Map();
+  let evaluations = 0;
+  const selectorWindow = {
+    localStorage: { getItem(key) { return values.has(key) ? values.get(key) : null; }, setItem(key, value) { values.set(key, String(value)); } },
+    sessionStorage: { getItem() { return null; } },
+    PacificEducationStudentCoverageContext: { getStudentId() { return "STU-001"; } },
+    PacificEducationTeacherClassRosterContext: {
+      getClassId() { return "CLASS-REF-1"; },
+      getStudents() { return ["STU-001"]; }
+    },
+    PacificEducationEvidenceBasedAbility: {
+      evaluate(input) {
+        evaluations += 1;
+        assert.equal(input.studentId, "STU-001");
+        assert.equal(input.classId, "CLASS-REF-1");
+        return { status: "recommendation-ready", recommendation: "advanced", bandRule: "Advanced requires both evidence measures." };
+      }
+    }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(selectorSource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  assert.equal(selectorWindow.PacificEducationCapabilitySelector.getCapability(), "advanced");
+  assert.equal(evaluations, 1);
+});
