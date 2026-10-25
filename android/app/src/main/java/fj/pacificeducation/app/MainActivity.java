@@ -43,6 +43,7 @@ public final class MainActivity extends Activity {
             "Welcome to Pacific Education. We are pleased to welcome you. Learn, discover, practise and grow with us.";
 
     private WebView webView;
+    private boolean webPageReady = false;
     private SharedPreferences prefs;
     private TextToSpeech textToSpeech;
     private boolean ttsReady = false;
@@ -183,7 +184,8 @@ public final class MainActivity extends Activity {
     }
 
     private void restoreNativeConversationResume() {
-        if (prefs == null || !ttsReady || textToSpeech == null || nativeConversationActive) return;
+        // Wait for the hosted page so registration-entry guards inspect the actual URL.
+        if (prefs == null || !ttsReady || textToSpeech == null || nativeConversationActive || webView == null || !webPageReady) return;
         if (!prefs.getBoolean(VOICE_RESUME_ACTIVE, false) || prefs.getBoolean(VOICE_RESUME_STOPPED, false)) return;
         String json = prefs.getString(VOICE_RESUME_JSON, "");
         if (json == null || json.trim().isEmpty()) return;
@@ -553,6 +555,7 @@ public final class MainActivity extends Activity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                webPageReady = false;
                 view.setVisibility(View.VISIBLE);
                 super.onPageStarted(view, url, favicon);
             }
@@ -560,6 +563,7 @@ public final class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
+                webPageReady = true;
                 // The hosted JavaScript single-navigation controller owns all page
                 // transitions. Do not intercept the Welcome Next button here: an
                 // Android-only click handler can bypass Vision/Mission and Rules.
@@ -569,6 +573,8 @@ public final class MainActivity extends Activity {
                 // Inject the native adapter after remotely hosted page scripts load.
                 // The APK opens GitHub Pages, so branch-only JavaScript is not bundled.
                 // Keep the protected #856 speech controller intact.
+                // Resume only after the actual hosted URL is known and native TTS is ready.
+                restoreNativeConversationResume();
                 view.evaluateJavascript("(function(){function install(){try{var s=window.PacificEducationSpeech,b=window.PacificEducationNativeTTS;if(!s||!b||typeof b.speakConversation!=='function')return false;if(s.__pacNativeAndroidBridgeOverride)return true;var previous=s.speakConversation;s.speakConversation=function(lines,done){if(!Array.isArray(lines)||!lines.length)return false;try{var payload=JSON.stringify(lines.map(function(x){return {speaker:String(x&&x.speaker||''),text:String(x&&x.text||'')};}));var accepted=b.speakConversation(payload);if(accepted){var st=document.getElementById('pacificEducationVoiceStatus');if(st)st.textContent=(typeof b.available==='function'&&!b.available())?'AI Playback: preparing the Android voice engine…':'AI Playback: native Android voice active.';return true;}var st2=document.getElementById('pacificEducationVoiceStatus');if(st2)st2.textContent='Android voice engine did not accept AI Playback. Check Android Text-to-speech settings and retry.';return previous(lines,done);}catch(e){try{return previous(lines,done);}catch(_){return false;}}};s.__pacNativeAndroidBridgeOverride=true;return true;}catch(_){return false;}}var attempts=0;function installWithRetry(){attempts++;if(install()||attempts>=40)return;setTimeout(installWithRetry,250);}installWithRetry();})();", null);;
             }
         });
