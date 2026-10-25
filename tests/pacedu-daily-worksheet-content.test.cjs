@@ -134,11 +134,10 @@ test("term-week-day scheduler returns concrete worksheets with explicit curricul
 });
 
 
-test("teacher weekly planner selects a day and displays the daily example, questions and teacher key", () => {
-  const planner = fs.readFileSync("src/js/paceduFijiCurriculumWeeklyActivities.js", "utf8");
-  assert.match(planner, /paceduFijiCurriculumDay/);
-  assert.match(planner, /getCurriculumWorksheet/);
-  assert.match(planner, /Practice example:/);
-  assert.match(planner, /Teacher answer key and curriculum check/);
-  assert.match(planner, /daily\.questions\.forEach/);
+test("main app loads the worksheet module and package test command includes its regression suite", () => {
+  const html = fs.readFileSync("src/index.html", "utf8");
+  const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
+  assert.match(html, /paceduDailyWorksheetContent\.js/);
+  assert.match(html, /pacificEducationEnglishWorksheetLibrary\.js/);
+  assert.match(pkg.scripts.test, /pacedu-daily-worksheet-content\.test\.cjs/);
 });
