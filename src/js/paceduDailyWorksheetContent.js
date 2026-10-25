@@ -209,6 +209,55 @@
       sourceNote:"PacEdu original content. Curriculum source mapping pending: link this worksheet to the current Fiji Ministry syllabus strand, outcome/achievement indicator, class, term and teaching week before calling it officially curriculum-aligned."
     };
   }
+  function getCurriculumWorksheet(options) {
+    options = options || {};
+    var block = String(options.term || "T1").toUpperCase();
+    var week = Math.max(1, Number(options.week) || 1);
+    var day = Math.max(1, Math.min(5, Number(options.day) || 1));
+    var blockMap = {
+      T1: { label: "Term 1", weeks: 10 },
+      T2: { label: "Term 2", weeks: 10 },
+      T3: { label: "Term 3", weeks: 5 },
+      INTERVENTION: { label: "Intervention", weeks: 5 },
+      REVISION: { label: "Revision", weeks: 2 },
+      EXAMS: { label: "School-approved examination period", weeks: 2 }
+    };
+    var selected = blockMap[block];
+    if (!selected || week > selected.weeks) {
+      return { status: "NOT_FOUND", message: "Choose a valid term, week and learning block." };
+    }
+    var curriculumMap = global.PacEduFijiCurriculumActivities;
+    var distribution = curriculumMap && curriculumMap.weeklyDistribution;
+    var curriculumWeek = distribution && distribution.filter(function (item) {
+      return String(item.term).toUpperCase() === block && Number(item.week) === week;
+    })[0] || null;
+    var level = levels.indexOf(options.level) >= 0 ? options.level : "Class 1";
+    var subject = Object.prototype.hasOwnProperty.call(packs, options.subject) ? options.subject : "English";
+    var ability = ["support", "developing", "expected", "extension"].indexOf(options.ability) >= 0 ? options.ability : "developing";
+    // Day 1 is reserved by the existing registration flow for baseline identification.
+    // This API is for subsequent scheduled teaching worksheets, so the selected daily
+    // worksheet remains separate and never overwrites that diagnostic.
+    var scheduledDay = 2 + ((week - 1) * 5) + (day - 1);
+    var worksheet = make(level, subject, scheduledDay, ability);
+    worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
+    worksheet.curriculumSchedule = {
+      country: "Fiji",
+      term: selected.label,
+      termId: block,
+      week: week,
+      day: day,
+      teachingTheme: curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
+      suggestedFocus: curriculumWeek ? curriculumWeek.focus : "Use the current school-approved scheme of work.",
+      syllabusTitle: null,
+      syllabusVersion: null,
+      strand: null,
+      achievementIndicator: null,
+      pageOrSection: null,
+      verificationStatus: "NOT_YET_MAPPED"
+    };
+    worksheet.curriculumNote = "The weekly theme is a planning framework, not proof of official syllabus alignment. A teacher must verify the current Fiji Ministry syllabus, exact strand and achievement indicator before assigning this as curriculum-verified.";
+    return worksheet;
+  }
   function install() {
     var lib=global.PacificEducationEnglishWorksheetLibrary;
     if(!lib||typeof lib.getWorksheet!=="function"||lib.dailyContentEnhanced) return false;
