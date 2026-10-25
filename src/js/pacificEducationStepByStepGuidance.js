@@ -115,7 +115,7 @@
     panel.id="pacificEducationStepGuide";
     panel.setAttribute("aria-live","polite");
     panel.setAttribute("role","status");
-    panel.style.cssText="position:fixed;left:10px;right:10px;bottom:10px;z-index:99998;max-width:760px;margin:auto;padding:12px 14px;border:3px solid currentColor;border-radius:12px;background:Canvas;color:CanvasText;box-shadow:0 4px 16px rgba(0,0,0,.24);font-weight:700;line-height:1.35;display:none;";
+    panel.style.cssText="position:fixed;left:10px;right:10px;bottom:10px;z-index:99998;max-width:760px;margin:auto;padding:12px 14px;border:3px solid currentColor;border-radius:12px;background:Canvas;color:CanvasText;box-shadow:0 4px 16px rgba(0,0,0,.24);font-weight:700;line-height:1.35;display:none;pointer-events:none;";
     document.body.appendChild(panel);
     return panel;
   }
