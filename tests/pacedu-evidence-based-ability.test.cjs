@@ -57,7 +57,8 @@ test("recommendation waits for five teacher-marked daily activities and a teache
   assert.equal(saved.success, true);
   const result = api.evaluate({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English" });
   assert.equal(result.status, "recommendation-ready");
-  assert.equal(result.recommendation, "extension");
+  assert.equal(result.recommendation, "advanced");
+  assert.match(result.bandRule, /at least 80%/);
   assert.equal(result.reviewStatus, "pending-teacher-review");
 });
 
@@ -130,4 +131,29 @@ test("teacher-facing ability selector shows four bands and keeps support strateg
   );
   assert.equal(selector.capabilities.some(item => item.id === "remedial"), true);
   assert.equal(selector.capabilities.some(item => item.id === "extension"), true);
+});
+
+
+test("evidence engine recommends only four ability bands using transparent percentage thresholds", () => {
+  const cases = [
+    { mark: 15, expected: "foundation" },
+    { mark: 25, expected: "developing" },
+    { mark: 35, expected: "expected" },
+    { mark: 45, expected: "advanced" }
+  ];
+  for (const item of cases) {
+    const { api, storage } = harness();
+    storage.setItem("pacificEducationActivityResponses", JSON.stringify([
+      activity("STU-001", 1, "teacher-approved"),
+      activity("STU-001", 2, "teacher-approved"),
+      activity("STU-001", 3, "teacher-approved"),
+      activity("STU-001", 4, "teacher-approved"),
+      activity("STU-001", 5, "teacher-approved")
+    ]));
+    api.recordTermMark({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English", mark: item.mark, maximum: 50 });
+    const result = api.evaluate({ studentId: "STU-001", classId: "CLASS-REF-1", term: "Term 1", subject: "English" });
+    assert.equal(result.recommendation, item.expected);
+    assert.ok(result.bandRule.includes("%"));
+    assert.equal(["foundation", "developing", "expected", "advanced"].includes(result.recommendation), true);
+  }
 });
