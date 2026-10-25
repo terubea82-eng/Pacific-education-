@@ -56,15 +56,6 @@
     }
     return true;
   }
-  function patchGuidedPages(){
-    var api=window.PacificEducationMandatoryVoiceNavigation;
-    if(!api||!Array.isArray(api.pages))return false;
-    guided.forEach(function(entry){
-      var page=api.pages.find(function(p){return Number(p.step)===entry[0];});
-      if(page){page.id=entry[1];page.label=page.label||entry[1];page.text=entry[2];}
-    });
-    return true;
-  }
   function installWorkspaceControls(){
     workspaces.forEach(function(item){
       var host=document.getElementById(item[0]);if(!host||host.getAttribute("data-pe-all-page-voice")==="true")return;
