@@ -33,9 +33,7 @@
    if(!dateNode){
     dateNode=document.createElement("p");dateNode.id="paceduAutomaticToday";
     dateNode.setAttribute("role","status");
-    dateNode.style.cssText="margin:8px auto;padding:8px 12px;max-width:960px;border-radius:8px;background:#eef5ff;color:#183153;font-size:1rem;font-weight:600;";
-    var main=document.querySelector("main")||document.body;
-    main.insertBefore(dateNode,main.firstChild);
+    dateNode.style.cssText="margin:8px 0;padding:8px 12px;max-width:960px;border-radius:8px;background:#eef5ff;color:#183153;font-size:1rem;font-weight:600;";
    }
   }
   dateNode.textContent="Today: "+localDate();
@@ -63,8 +61,7 @@
    if(!helpNode){
     helpNode=document.createElement("section");helpNode.id="paceduSimplePageHelp";
     helpNode.style.cssText="margin:8px auto;padding:12px;max-width:960px;border:1px solid #b8cbe3;border-radius:10px;background:#fff;";
-    var date=document.getElementById("paceduAutomaticToday");
-    if(date&&date.parentNode)date.parentNode.insertBefore(helpNode,date.nextSibling);
+    helpNode.style.order="0";
    }
   }
   var active=null;
@@ -74,6 +71,10 @@
   }
   if(!active){if(helpNode)helpNode.hidden=true;lastPage="";return;}
   helpNode.hidden=false;
+  /* Keep the date and help inside the currently visible page, not in a shell
+     that guided-flow isolation may hide. */
+  active.el.insertBefore(helpNode,active.el.firstChild);
+  if(dateNode&&dateNode.parentNode!==active.el)active.el.insertBefore(dateNode,helpNode);
   if(lastPage===active.page[0])return;
   lastPage=active.page[0];
   helpNode.replaceChildren();
