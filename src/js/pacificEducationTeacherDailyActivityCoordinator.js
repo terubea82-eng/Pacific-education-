@@ -204,7 +204,23 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     return c;
   }
   function approvalKey(c){return [c.classId||"unassigned",c.subject||"subject-not-set",c.term||"term-not-set",c.day||"1"].join("|");}
-  function isTeacherApproved(c){return !!approvalRead()[approvalKey(c||approvalContext())];}
+  function isTeacherApproved(c){
+    var record=approvalRead()[approvalKey(c||approvalContext())];
+    return !!(record && record.approved === true);
+  }
+  /* Shared pilot gate for every student-facing activity renderer. Fail closed
+     when a learner class is unknown; localStorage approval is pilot-only and
+     is not a production authorization boundary. */
+  function isTeacherApprovedForStudent(studentContext, day){
+    studentContext=studentContext||{};
+    var c=approvalContext();
+    c.classId=String(studentContext.classReference||studentContext.classId||c.classId||"").trim();
+    c.subject=String(studentContext.subject||c.subject||"").trim();
+    c.term=String(studentContext.term||c.term||"").trim();
+    c.day=String(Number(day)||Number(studentContext.day)||Number(c.day)||1);
+    if(!c.classId||!c.subject)return false;
+    return isTeacherApproved(c);
+  }
   function approvalRole(){
     try{
       var r=sessionStorage.getItem("pacificEducationActiveRole");
@@ -219,8 +235,12 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     if(window.PacificEducationAccessibilityRuntime&&typeof window.PacificEducationAccessibilityRuntime.announce==="function"){try{window.PacificEducationAccessibilityRuntime.announce(text);}catch(e){}}
     else if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function"){try{window.PacificEducationSpeech.speakText(text);}catch(e){}}
   }
+  function isLearnerRole(){
+    var role=approvalRole().replace(/_/g,"-").replace(/\s+/g,"-");
+    return ["student","blind-learner","deaf-learner"].indexOf(role)>=0;
+  }
   function applyStudentApprovalGate(){
-    if(approvalRole()!=="student")return;
+    if(!isLearnerRole())return;
     var daily=document.getElementById("dailyLesson"); if(!daily)return;
     var c=approvalContext(), ok=isTeacherApproved(c), activity=document.getElementById("dailyLessonActivity");
     var start=document.getElementById("dailyActivitiesStartButton"), practice=document.getElementById("dailyActivitiesContinuePracticeButton");
@@ -251,21 +271,32 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     }
     var approve=document.getElementById("pacificEducationApproveDailyActivity"),revoke=document.getElementById("pacificEducationRevokeDailyActivity");
     if(approve&&approve.getAttribute("data-bound")!=="true"){approve.setAttribute("data-bound","true");approve.onclick=function(){
-      var c=approvalContext(),all=approvalRead();all[approvalKey(c)]={approved:true,approvedAt:new Date().toISOString(),approvedBy:"pilot-teacher",context:c};write(APPROVAL_KEY,all);
-      refreshApprovalUI();announceApproval("Today's Daily Activity has been approved and released. Students may now attempt it.");
+      var c=approvalContext();
+      if(!c.classId||!c.subject){
+        announceApproval("Choose the correct class and subject before approving today's activity. No student access has been released.");
+        refreshApprovalUI();
+        return;
+      }
+      var all=approvalRead();all[approvalKey(c)]={approved:true,approvedAt:new Date().toISOString(),approvedBy:"pilot-teacher",context:c};write(APPROVAL_KEY,all);
+      refreshApprovalUI();announceApproval("Today's Daily Activity has been approved and released for the selected class and subject.");
     };}
     if(revoke&&revoke.getAttribute("data-bound")!=="true"){revoke.setAttribute("data-bound","true");revoke.onclick=function(){
       var c=approvalContext(),all=approvalRead();delete all[approvalKey(c)];write(APPROVAL_KEY,all);
       refreshApprovalUI();announceApproval("Student access to today's Daily Activity has been revoked.");
     };}
-    function refreshApprovalUI(){var ok=isTeacherApproved(),s=document.getElementById("pacificEducationDailyApprovalStatus");if(s)s.textContent=ok?"Approved and released for students.":"Waiting for teacher approval. Students remain locked.";if(approve)approve.disabled=ok;if(revoke)revoke.disabled=!ok;}
+    function refreshApprovalUI(){
+      var c=approvalContext(),ok=isTeacherApproved(c),ready=!!(c.classId&&c.subject),s=document.getElementById("pacificEducationDailyApprovalStatus");
+      if(s)s.textContent=ok?"Approved and released for the selected class and subject.":ready?"Waiting for teacher approval. Students remain locked.":"Select a class and subject first. Students remain locked until you approve the correct activity.";
+      if(approve)approve.disabled=ok||!ready;
+      if(revoke)revoke.disabled=!ok;
+    }
     refreshApprovalUI();
   }
   function protectActivityRenderer(){
     if(!window.PacificEducationActivity||typeof window.PacificEducationActivity.render!=="function")return;if(window.PacificEducationActivity.__teacherApprovalGate)return;
     var original=window.PacificEducationActivity.render;
     window.PacificEducationActivity.render=function(type,day,lesson){
-      if(approvalRole()==="student"){
+      if(isLearnerRole()){
         var c=approvalContext();c.day=String(Number(day)||Number(c.day)||1);
         if(!isTeacherApproved(c)){applyStudentApprovalGate();announceApproval("This Daily Activity is locked. Your teacher must approve and release it before you can attempt it.");return false;}
       }
@@ -276,7 +307,9 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
   function refreshApprovalUI(){bindTeacherApproval();applyStudentApprovalGate();protectActivityRenderer();}
 
   window.PacificEducationTeacherDailyActivityCoordinator={
-    request:request, context:context, render:render, version:"2.0.0-school-region-coordination"
+    request:request, context:context, render:render,
+    isTeacherApprovedForStudent:isTeacherApprovedForStudent,
+    version:"2.1.0-shared-student-approval-gate"
   };
   function init(){ render(); refreshApprovalUI(); [300,1000,2500].forEach(function(ms){setTimeout(refreshApprovalUI,ms);}); }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();

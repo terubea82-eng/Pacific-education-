@@ -99,7 +99,7 @@
       '<p id="paceduClass1IdHelp">Ask your teacher if you need help. Your teacher will check your ID and class.</p></section>' +
       '<section aria-labelledby="paceduTaskHeading"><h3 id="paceduTaskHeading">4. Do my activity</h3>' +
       '<p id="paceduClass1Task">Choose English, Mathematics or Phonics. PacEdu will open the available practice task below.</p>' +
-      '<p id="paceduClass1ApprovalNote">This pilot shows starter practice activities. Teacher approval and individual assignment are not yet verified by this guide.</p>' +
+      '<p id="paceduClass1ApprovalNote">Your teacher must approve and release today’s activity before you can open it.</p>' +
       '<button type="button" id="paceduClass1StartTask">Open available activity</button></section>' +
       '<section aria-labelledby="paceduFinishHeading"><h3 id="paceduFinishHeading">5. Send my work</h3>' +
       '<p>Write, speak or show your answer. Send it to your teacher for checking.</p>' +
@@ -160,6 +160,19 @@
       if (status) status.textContent = "Breathing skipped. Continue to registration or learning whenever you are ready.";
     });
     document.getElementById("paceduClass1StartTask").addEventListener("click", function () {
+      var approval = window.PacificEducationTeacherDailyActivityCoordinator;
+      var approved = !!(approval && typeof approval.isTeacherApprovedForStudent === "function" &&
+        approval.isTeacherApprovedForStudent({
+          classReference: localStorage.getItem("pacificEducationClassReference") || localStorage.getItem("pacificEducationClassId") || "",
+          subject: chosen,
+          term: localStorage.getItem("pacificEducationTerm") || ""
+        }, localStorage.getItem("currentDayNumber") || "1"));
+      var task = document.getElementById("paceduClass1Task");
+      if (!approved) {
+        task.textContent = "Waiting for teacher approval. Your teacher must confirm your class, subject and release today’s activity before you can open it.";
+        document.getElementById("paceduClass1ApprovalNote").textContent = "Activity locked until your teacher approves and releases it.";
+        return;
+      }
       var idInput = document.getElementById("paceduClass1LearnerId");
       var id = idInput ? idInput.value.trim() : "";
       var task = document.getElementById("paceduClass1Task");
@@ -175,9 +188,8 @@
         dailySubject.dispatchEvent(new Event("change", { bubbles: true }));
       }
       if (availableTask) {
-        task.textContent = chosen + " practice activity is open below. " +
-          (id ? "Your learner ID was saved on this device for teacher checking. " : "Enter your school learner ID above and ask your teacher to check it. ") +
-          "This is starter practice; teacher approval is not confirmed here.";
+        task.textContent = chosen + " teacher-approved activity is open below. " +
+          (id ? "Your learner ID was saved on this device for teacher checking." : "Enter your school learner ID above and ask your teacher to check it.");
         if (response) {
           response.focus();
           response.scrollIntoView({ behavior: "smooth", block: "center" });

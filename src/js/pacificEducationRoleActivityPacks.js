@@ -452,10 +452,32 @@
         }
       }
     } catch (_) {}
-    var activity = getActivity(role, stepId, day, context);
-    if (!activity) return false;
     var old = document.getElementById("paceduRoleActivityPack");
     if (old && old.parentNode) old.parentNode.removeChild(old);
+    var learnerRole = ["student", "blind-learner", "deaf-learner"].indexOf(String(role || "").toLowerCase()) >= 0;
+    if (learnerRole) {
+      var approval = global.PacificEducationTeacherDailyActivityCoordinator;
+      var approved = !!(approval && typeof approval.isTeacherApprovedForStudent === "function" &&
+        approval.isTeacherApprovedForStudent(context, day));
+      if (!approved) {
+        var locked = document.createElement("section");
+        locked.id = "paceduRoleActivityPack";
+        locked.setAttribute("role", "status");
+        locked.setAttribute("aria-live", "polite");
+        locked.setAttribute("aria-label", "Daily activity awaiting teacher approval");
+        locked.style.cssText = "margin:16px 0;padding:16px;border:2px solid #b7791f;border-radius:10px;max-width:100%;box-sizing:border-box;";
+        var lockedHeading = document.createElement("h3");
+        lockedHeading.textContent = "Today's activity";
+        locked.appendChild(lockedHeading);
+        var lockedMessage = document.createElement("p");
+        lockedMessage.textContent = "Your teacher must approve and release today's activity before you can view or attempt it. If your class is not shown, ask your teacher to confirm your class and subject.";
+        locked.appendChild(lockedMessage);
+        host.appendChild(locked);
+        return true;
+      }
+    }
+    var activity = getActivity(role, stepId, day, context);
+    if (!activity) return false;
     var card = document.createElement("section");
     card.id = "paceduRoleActivityPack";
     card.setAttribute("aria-label", activity.title);

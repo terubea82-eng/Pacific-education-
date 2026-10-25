@@ -1120,6 +1120,17 @@ test("save confirmation then Next opens the selected role workspace for every re
       await page.locator("#peStudentWorkspaceIdentity").fill("Role Pilot Test");
       await page.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
       await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+      await page.evaluate(() => {
+        localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+        localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
+        localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+          "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+        }));
+        localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+          "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+          "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+        }));
+      });
       await page.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
       await expect(page.locator("#peSequentialNext")).toBeEnabled();
     }
@@ -1205,6 +1216,45 @@ test("student workspace entry requires a session identity and class and carries 
   await expect(shell.locator("#peSequentialPage select")).toHaveCount(0);
 });
 
+test("student activity pack stays locked until matching teacher release", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await expect.poll(() => page.evaluate(() =>
+    typeof window.PacificEducationRoleActivityPacks?.render === "function" &&
+    typeof window.PacificEducationTeacherDailyActivityCoordinator?.isTeacherApprovedForStudent === "function"
+  ), { timeout: 10000 }).toBe(true);
+
+  await page.evaluate(() => {
+    localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationSubject", "English");
+    localStorage.removeItem("pacificEducationTerm");
+    localStorage.setItem("currentDayNumber", "1");
+    const host = document.createElement("div");
+    host.id = "approval-gate-test-host";
+    document.body.appendChild(host);
+    window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", host, 1);
+  });
+
+  const card = page.locator("#paceduRoleActivityPack");
+  await expect(card).toContainText("must approve and release");
+  await expect(card.locator("#paceduRoleActivityResponse")).toHaveCount(0);
+
+  await page.evaluate(() => {
+    localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
+    localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+      "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+      "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+    }));
+    window.PacificEducationRoleActivityPacks.render("student", "dailyLesson", document.getElementById("approval-gate-test-host"), 1);
+  });
+  const releasedCard = page.locator("#approval-gate-test-host #paceduRoleActivityPack");
+  await expect(releasedCard).not.toContainText("must approve and release");
+  await expect(releasedCard.locator("#paceduRoleActivityResponse")).toHaveCount(1);
+  await expect(releasedCard.locator("#paceduRoleActivityDone")).toHaveCount(1);
+});
+
 test("student registration handoff shows workspace navigation and daily activities", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
@@ -1212,8 +1262,14 @@ test("student registration handoff shows workspace navigation and daily activiti
     try {
       localStorage.setItem("pacificEducationLevel", "Class 1");
       localStorage.setItem("pacificEducationSubject", "English");
+      localStorage.setItem("pacificEducationClassReference", "TEST-CLASS-1");
+      localStorage.setItem("pacificEducationClassId", "TEST-CLASS-1");
       localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
         "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
+      localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+        "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" },
+        "Class 1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
       }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Pilot Test Learner",
@@ -1273,6 +1329,9 @@ test("student workspace skips redundant setup pages and opens daily activity dir
       localStorage.setItem("pacificEducationSubject", "English");
       localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
         "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
+      localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+        "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
       }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Class Level Repair Test",
