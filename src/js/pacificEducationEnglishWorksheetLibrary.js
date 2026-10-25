@@ -602,7 +602,8 @@
         return;
       }
       var ability = day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value;
-      studentSheet = (global.PacEduDailyWorksheetContent && typeof global.PacEduDailyWorksheetContent.getWorksheet === "function" && day > 1)\n        ? global.PacEduDailyWorksheetContent.getWorksheet(levelSelect.value, subjectSelect.value, day, ability)\n        : makeWorksheet(levelSelect.value, ability, day, subjectSelect.value);
+      studentSheet = (global.PacEduDailyWorksheetContent && typeof global.PacEduDailyWorksheetContent.getWorksheet === "function" && day > 1)
+        ? global.PacEduDailyWorksheetContent.getWorksheet(levelSelect.value, subjectSelect.value, day, ability)\n        : makeWorksheet(levelSelect.value, ability, day, subjectSelect.value);
       preview.textContent = "";
       var sheet = node("article", null, preview); sheet.id = "paceduEnglishStudentPrintSheet"; sheet.className = "pacedu-print-student-sheet";
       sheet.style.cssText = "background:white;color:#111;padding:18px;border:1px solid #888;margin-top:12px;";
