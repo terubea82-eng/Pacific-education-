@@ -128,6 +128,9 @@
           return copy;
         }):lines;
         var combined=(Array.isArray(safeLines)?safeLines:[]).map(function(item){return String(item&&item.text||"");}).join(" ");
+        /* Keep Welcome playback limited to its introduction: the guided-box sequence can enqueue hundreds of automatic step prompts. */
+        var isInjectedWelcomeStep=/\\bstep\\s+\\d+\\s+of\\s+\\d+\\s+on\\s+welcome\\b/i.test(combined);
+        if(isInjectedWelcomeStep&&pageOne())return false;
         var isWelcomeConversation=/welcome to (?:pacedu|pacific education)|owner of pacific education|owner'?s experience|21 years(?: of)? (?:practical )?classroom teaching experience|modern education platform created to support learners/i.test(combined);
         if(isWelcomeConversation&&!pageOne()){
           clearPersistedWelcomeConversation();
