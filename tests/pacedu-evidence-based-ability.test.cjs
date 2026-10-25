@@ -112,3 +112,22 @@ test("student capability context does not require a display name", () => {
   assert.match(selector, /context && context\.role === "student" \? context : null/);
   assert.match(selector, /learner\.displayName \|\| "this learner"/);
 });
+
+
+test("teacher-facing ability selector shows four bands and keeps support strategies out of the band list", () => {
+  const selectorSource = fs.readFileSync("src/js/pacificEducationCapabilitySelector.js", "utf8");
+  const selectorWindow = {
+    localStorage: { getItem() { return null; }, setItem() {} }
+  };
+  const selectorDocument = { readyState: "loading", addEventListener() {} };
+  vm.runInNewContext(selectorSource, {
+    window: selectorWindow, document: selectorDocument, Object, String, encodeURIComponent
+  });
+  const selector = selectorWindow.PacificEducationCapabilitySelector;
+  assert.deepEqual(
+    Array.from(selector.abilityBands, item => item.id),
+    ["foundation", "developing", "expected", "advanced"]
+  );
+  assert.equal(selector.capabilities.some(item => item.id === "remedial"), true);
+  assert.equal(selector.capabilities.some(item => item.id === "extension"), true);
+});
