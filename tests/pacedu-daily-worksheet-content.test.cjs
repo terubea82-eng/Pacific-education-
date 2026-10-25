@@ -104,3 +104,31 @@ test("Class 1 English Day 2 starts with the planned introduction activity", () =
   assert.equal(worksheet.topic, "Who am I? — Class 1 Term 1 Week 1");
   assert.equal(worksheet.answerKey[0].answer, "Class 1");
 });
+
+
+test("term-week-day scheduler returns concrete worksheets with explicit curriculum verification fields", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  assert.equal(typeof api.getCurriculumWorksheet, "function");
+  for (const term of [
+    ["T1", 10], ["T2", 10], ["T3", 5],
+    ["INTERVENTION", 5], ["REVISION", 2], ["EXAMS", 2]
+  ]) {
+    for (let week = 1; week <= term[1]; week += 1) {
+      for (let day = 1; day <= 5; day += 1) {
+        const worksheet = api.getCurriculumWorksheet({
+          level: "Class 1", subject: "English", term: term[0],
+          week, day, ability: "developing"
+        });
+        assert.notEqual(worksheet.status, "NOT_FOUND");
+        assert.equal(worksheet.curriculumSchedule.termId, term[0]);
+        assert.equal(worksheet.curriculumSchedule.week, week);
+        assert.equal(worksheet.curriculumSchedule.day, day);
+        assert.equal(worksheet.questions.length, 4);
+        assert.equal(worksheet.answerKey.length, 4);
+        assert.equal(worksheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
+        assert.equal(worksheet.curriculumSchedule.achievementIndicator, null);
+      }
+    }
+  }
+  assert.equal(api.getCurriculumWorksheet({term:"T3",week:6,day:1}).status, "NOT_FOUND");
+});
