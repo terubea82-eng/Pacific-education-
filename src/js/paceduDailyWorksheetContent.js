@@ -267,8 +267,26 @@
     Object.keys(lib).forEach(function(k){enhanced[k]=lib[k];});
     enhanced.getWorksheet=function(level,ability,day,subject) {
       if(Number(day)===1) return original(level,ability,day,subject);
+      var base=original(level,ability,day,subject);
       var real=make(level,subject||"English",day,ability||"developing");
-      return real;
+      var merged={};
+      Object.keys(base||{}).forEach(function(k){merged[k]=base[k];});
+      Object.keys(real).forEach(function(k){merged[k]=real[k];});
+      /* Preserve field names used by existing teacher/worksheet views while adding
+         the new concrete passage, questions and explanatory answer key. */
+      merged.passage=real.readingText;
+      merged.questionPlan={
+        count:real.questions.length,
+        types:real.questions.map(function(q){return q.type;}),
+        questions:real.questions.map(function(q){return {
+          number:q.number,type:q.type,prompt:q.prompt,topic:real.topic,
+          options:q.options.slice(),answer:q.answer,thinkingFocus:"read-apply-check"
+        };}),
+        note:"Original PacEdu practice questions; teacher review and official curriculum mapping are still required."
+      };
+      merged.abilityGuidance=real.tasks.slice();
+      merged.teacherReview=[real.teacherCheck,real.curriculumNote||real.sourceNote];
+      return merged;
     };
     enhanced.getDailyContentWorksheet=make;
     enhanced.dailyContentEnhanced=true;
