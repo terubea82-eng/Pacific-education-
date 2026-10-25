@@ -28,7 +28,7 @@ test("direct Registration handoff releases startup guard and keeps the role work
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toHaveAttribute("data-pe-role", "teacher");
   await expect(page.locator("html")).toHaveAttribute("data-pacedu-navigation-ready", "true");
   await expect(page.locator("html")).not.toHaveAttribute("data-pacedu-registration-entry");
-  await expect(page.locator("#pacificEducationAppMenu")).toBeVisible();
+  await expect(page.locator("#pacificEducationAppMenu")).toBeHidden();
   await expect(page.locator("#peSequentialBack")).toBeVisible();
   await expect(page.locator("#peSequentialNext")).toBeVisible();
   await expect(page.locator("#peSequentialTitle")).toContainText("My Workspace");
