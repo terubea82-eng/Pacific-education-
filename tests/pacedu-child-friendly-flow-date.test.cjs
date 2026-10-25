@@ -13,6 +13,8 @@ test("automatic current date uses device-local date and refreshes after resume",
   assert.ok(flow.includes("pageshow"));
   assert.ok(flow.includes("visibilitychange"));
   assert.ok(flow.includes("School calendar dates are set separately"));
+  assert.ok(flow.includes("if(dateNode.textContent!==todayText)dateNode.textContent=todayText"));
+  assert.ok(flow.includes("if(dateNode.parentNode!==daily)daily.insertBefore(dateNode,daily.firstChild)"));
 });
 
 test("page-specific spoken guidance remains available without a second instruction box", () => {
