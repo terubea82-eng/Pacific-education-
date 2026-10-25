@@ -51,10 +51,8 @@
         var globalWrapped=function(raw){
           var text=shortPageDirective(raw);
           if(!text) return false;
-          var now=Date.now(), manual=now<=manualVoiceUntil;
-          if(!manual && text===lastDirective && now-lastDirectiveAt<5000) return false;
-          if(manual) manualVoiceUntil=0;
-          lastDirective=text; lastDirectiveAt=now;
+          /* The speech-object wrapper owns de-duplication. Avoid double-filtering
+             here because the global helper commonly delegates to that object. */
           return globalOriginal.call(this,text);
         };
         globalWrapped.__peShortDirective=true; globalWrapped.__peOriginal=globalOriginal; window.speakText=globalWrapped;
