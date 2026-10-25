@@ -6,7 +6,8 @@
 (function (global, document) {
   "use strict";
   var LEVELS = ["ECE"];
-  for (var i = 1; i <= 8; i += 1) LEVELS.push("Class " + i);\n  for (var form = 3; form <= 7; form += 1) LEVELS.push("Form " + form);
+  for (var i = 1; i <= 8; i += 1) LEVELS.push("Class " + i);
+  for (var form = 3; form <= 7; form += 1) LEVELS.push("Form " + form);
   var ABILITIES = [
     ["support", "Supported start"],
     ["developing", "Developing"],
