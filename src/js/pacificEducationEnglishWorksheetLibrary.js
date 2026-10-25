@@ -180,10 +180,13 @@
   ];
   function clampDay(day) { return Math.max(1, Math.min(365, Math.floor(Number(day) || 1))); }
   function classNumber(level) {
-    var s = String(level || "");
+    var s = String(level || "").trim();
     if (/^(ece|kindergarten)$/i.test(s)) return -1;
     var m = s.match(/(?:class|year)\s*(\d+)/i);
-    return m ? Math.max(1, Math.min(13, Number(m[1]))) : 1;
+    if (m) return Math.max(1, Math.min(8, Number(m[1])));
+    var form = s.match(/form\s*(\d+)/i);
+    if (form) return Math.max(9, Math.min(13, Number(form[1]) + 6));
+    return 1;
   }
   function stageFor(n) {
     if (n <= 0) return "early";
