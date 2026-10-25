@@ -15,7 +15,7 @@ test("registration shell is restored when guided flow ends for workspace handoff
 });
 
 test("handoff assets and offline cache are versioned", () => {
-  assert.match(index, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261025-child-workspace-simple-v2/);
+  assert.match(index, /pacificEducationSequentialRoleWorkspaces\.js\?v=20261025-child-workspace-simple-v3/);
   assert.match(index, /pacificEducationMandatoryBoxSequence\.js\?v=20261018-registration-handoff-shell-release-v1/);
   assert.match(index, /pacificEducationPageIsolationRepair\.js\?v=20261018-workspace-handoff-shell-release-v1/);
   assert.match(serviceWorker, /const CACHE_NAME="pacific-education-shell-v25";/);
