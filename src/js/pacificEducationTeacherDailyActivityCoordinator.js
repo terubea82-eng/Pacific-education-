@@ -235,8 +235,12 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     if(window.PacificEducationAccessibilityRuntime&&typeof window.PacificEducationAccessibilityRuntime.announce==="function"){try{window.PacificEducationAccessibilityRuntime.announce(text);}catch(e){}}
     else if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function"){try{window.PacificEducationSpeech.speakText(text);}catch(e){}}
   }
+  function isLearnerRole(){
+    var role=approvalRole().replace(/_/g,"-").replace(/\s+/g,"-");
+    return ["student","blind-learner","deaf-learner"].indexOf(role)>=0;
+  }
   function applyStudentApprovalGate(){
-    if(approvalRole()!=="student")return;
+    if(!isLearnerRole())return;
     var daily=document.getElementById("dailyLesson"); if(!daily)return;
     var c=approvalContext(), ok=isTeacherApproved(c), activity=document.getElementById("dailyLessonActivity");
     var start=document.getElementById("dailyActivitiesStartButton"), practice=document.getElementById("dailyActivitiesContinuePracticeButton");
@@ -281,7 +285,7 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
     if(!window.PacificEducationActivity||typeof window.PacificEducationActivity.render!=="function")return;if(window.PacificEducationActivity.__teacherApprovalGate)return;
     var original=window.PacificEducationActivity.render;
     window.PacificEducationActivity.render=function(type,day,lesson){
-      if(approvalRole()==="student"){
+      if(isLearnerRole()){
         var c=approvalContext();c.day=String(Number(day)||Number(c.day)||1);
         if(!isTeacherApproved(c)){applyStudentApprovalGate();announceApproval("This Daily Activity is locked. Your teacher must approve and release it before you can attempt it.");return false;}
       }
