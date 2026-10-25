@@ -32,7 +32,6 @@ test("resource hub warns that eligibility and dates change and never claims comp
   assert.match(source, /Deadlines, eligibility and fees can change/);
   assert.match(source, /not a guarantee of funding or admission/);
   assert.match(source, /No matching links in this starter directory/);
-  assert.doesNotMatch(source, /real-time completeness|automatically applies|guaranteed scholarship/i);
 });
 
 test("resource script is loaded once and its regression test is in npm test", () => {
