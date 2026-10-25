@@ -1120,6 +1120,14 @@ test("save confirmation then Next opens the selected role workspace for every re
       await page.locator("#peStudentWorkspaceIdentity").fill("Role Pilot Test");
       await page.locator("#peStudentWorkspaceStudentReference").fill("TEST-STUDENT-001");
       await page.locator("#peStudentWorkspaceClass").selectOption("Class 1");
+      await page.evaluate(() => {
+        localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
+          "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+        }));
+        localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+          "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+        }));
+      });
       await page.locator("#peStudentWorkspaceEntry button:not(.pacific-voice-speaker)").click();
       await expect(page.locator("#peSequentialNext")).toBeEnabled();
     }
@@ -1215,6 +1223,9 @@ test("student registration handoff shows workspace navigation and daily activiti
       localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
         "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
       }));
+      localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+        "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
+      }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Pilot Test Learner",
         role: "Student",
@@ -1273,6 +1284,9 @@ test("student workspace skips redundant setup pages and opens daily activity dir
       localStorage.setItem("pacificEducationSubject", "English");
       localStorage.setItem("pacificEducationPrototypeClassRosters", JSON.stringify({
         "TEST-CLASS-1": { classId: "TEST-CLASS-1", level: "Class 1", studentRefs: ["TEST-STUDENT-001"], prototype: true, productionEligible: false }
+      }));
+      localStorage.setItem("pacificEducationTeacherDailyApprovalsV1", JSON.stringify({
+        "TEST-CLASS-1|English|term-not-set|1": { approved: true, approvedBy: "test-fixture" }
       }));
       sessionStorage.setItem("pacificEducationPilotRegistration", JSON.stringify({
         name: "Class Level Repair Test",
