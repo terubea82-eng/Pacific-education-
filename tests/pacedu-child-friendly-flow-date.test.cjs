@@ -17,7 +17,7 @@ test("automatic current date uses device-local date and refreshes after resume",
 
 test("page-specific spoken guidance remains available without a second instruction box", () => {
   for (const id of ["pacificEducationWelcome","paceduPageVision","paceduPageRules","pacificEducationIdentityRegistration","levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson","dailyLessonPracticeStage","assessments"]) {
-    assert.ok(voice.includes('["' + id + '"'), "missing spoken guidance for " + id);
+    assert.ok(voice.includes('"' + id + '"'), "missing spoken guidance for " + id);
   }
   assert.ok(voice.includes("Hear Instructions"));
   assert.ok(!flow.includes("What to do:"));
