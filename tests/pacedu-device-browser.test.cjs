@@ -1156,6 +1156,7 @@ test("save confirmation then Next opens the selected role workspace for every re
       await expect(title).toContainText("Check My Learning");
       await nextStep.click();
       await expect(title).toContainText("Day 2 of 365");
+      await expect.poll(() => page.evaluate(() => localStorage.getItem("pacificEducationCurrentDay"))).toBe("2");
     }
   }
 });
