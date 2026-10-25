@@ -14,13 +14,9 @@
    */
   var ROLE_SEQUENCE_DEFAULTS = {
     "student":[
-      ["dailyLesson","Today's Daily Learning Activity"],
-      ["dailyLessonPracticeStage","Practice and Feedback"],
-      ["assessments","Daily Assessment Record"],
-      ["pacificEducationCoverageDashboard","Learning Coverage"],
-      ["pacificEducationStudentProgressDashboard","My Progress and Portfolio"],
-      ["pacificEducationHomeSubmission","Home Continuity"],
-      ["pacificEducationWeekendHolidaySupplementaryActivities","Weekend & Holiday Activities"]
+      ["dailyLesson","Today’s Daily Activity"],
+      ["dailyLessonPracticeStage","Practice"],
+      ["assessments","Check My Learning"]
     ],
     "blind-learner":[
       ["dailyLesson","Accessible Daily Learning Activity"],
@@ -117,9 +113,7 @@
   var STUDENT_MANDATORY_STEPS=[
     "dailyLesson",
     "dailyLessonPracticeStage",
-    "assessments",
-    "pacificEducationCoverageDashboard",
-    "pacificEducationStudentProgressDashboard"
+    "assessments"
   ];
   function studentSequenceHasMandatoryOrder(sequence){
     if(!Array.isArray(sequence)) return false;
@@ -141,7 +135,7 @@
     var check=validateSequence(sequence);
     if(!check.valid) return check;
     if(role==="student" && !studentSequenceHasMandatoryOrder(sequence)){
-      return {valid:false,errors:["Student sequence must retain the mandatory capability test, result, class/subject/term, daily activity, practice, assessment, curriculum coverage, and progress steps in order."]};
+      return {valid:false,errors:["Student sequence must keep Daily Activity, Practice, and Check My Learning in that order."]};
     }
     ROLE_SEQUENCE_OVERRIDES[role]=cloneSequence(sequence);
     saveSequenceOverrides();
@@ -215,11 +209,11 @@
       },true);
     });
     var levelStatus=page.querySelector("#pacificEducationLevelStatus");
-    if(levelStatus) levelStatus.textContent="Current pilot class: "+context.classLevel+". This choice is not a teacher-verified assignment.";
+    if(levelStatus) levelStatus.textContent="Your class is "+context.classLevel+". Your teacher will confirm it.";
     var sequentialStatus=page.querySelector("[data-pe-level-recovery='sequential'] [role='status']");
-    if(sequentialStatus) sequentialStatus.textContent="Current pilot class: "+context.classLevel+". Ask your teacher to confirm the assigned class.";
+    if(sequentialStatus) sequentialStatus.textContent="Your class is "+context.classLevel+". Ask your teacher if this is wrong.";
     var controllerRecoveryStatus=page.querySelector("#paceduLevelSelectorRecovery") && page.querySelector("#paceduLevelSelectorRecovery").parentElement.querySelector('[role="status"]');
-    if(controllerRecoveryStatus) controllerRecoveryStatus.textContent="Current pilot class: "+context.classLevel+". This choice is not a teacher-verified assignment.";
+    if(controllerRecoveryStatus) controllerRecoveryStatus.textContent="Your class is "+context.classLevel+". Your teacher will confirm it.";
   }
   function renderStudentContextBanner(page,role){
     if(!page || !LEARNER_ROLES[role]) return;
@@ -236,7 +230,7 @@
     banner.appendChild(strong);
     var note=document.createElement("p");
     note.style.cssText="margin:4px 0 0;font-size:.9em;";
-    note.textContent="Class context prototype: pilot class choice only — teacher-confirmed class assignment is not verified in this build.";
+    note.textContent="Your teacher will confirm your class.";
     banner.appendChild(note);
     page.insertBefore(banner,page.firstChild);
     lockStudentClassSelectors(page,role,context);
