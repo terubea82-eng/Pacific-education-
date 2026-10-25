@@ -94,11 +94,27 @@ jobs:
                   if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
                 }
                 dates.sort((a, b) => a.distance - b.distance);
-                if (!dates.length) continue;
+                // The newsroom HTML fallback can place a modified date near an
+                // article link. Never promote that nearby timestamp to publication
+                // date unless it agrees with a date explicitly included in the
+                // linked headline. If either signal is missing or they disagree,
+                // fail closed and leave the item out for manual verification.
+                const titleDateMatch = title.match(/\\b(\\d{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4})\\b/i);
+                if (!titleDateMatch || !dates.length) {
+                  console.warn('Skipping UNESCO item without independently matching title and nearby dates: ' + href);
+                  continue;
+                }
+                const titleTimestamp = Date.parse(titleDateMatch[1]);
+                const nearbyTimestamp = dates[0].timestamp;
+                if (!Number.isFinite(titleTimestamp) ||
+                    new Date(titleTimestamp).toISOString().slice(0, 10) !== new Date(nearbyTimestamp).toISOString().slice(0, 10)) {
+                  console.warn('Skipping UNESCO item with conflicting title and nearby dates: ' + href);
+                  continue;
+                }
                 htmlItems.push({
                   title,
                   url: new URL(href, 'https://www.unesco.org').toString(),
-                  date: new Date(dates[0].timestamp).toISOString(),
+                  date: new Date(titleTimestamp).toISOString(),
                   description: title
                 });
               }
@@ -237,7 +253,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'Official UNESCO-UNEVOC, WHO and UN News RSS/Atom feeds',
+            source: 'UNESCO official newsroom HTML fallback (date cross-check required), WHO RSS and UN News RSS feeds',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
