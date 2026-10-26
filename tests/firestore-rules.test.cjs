@@ -216,6 +216,7 @@ test("learner can submit photo evidence without a display name", async () => {
   const db = testEnv.authenticatedContext("student-a").firestore();
   const submission = validPhotoSubmission();
   delete submission.studentName;
+  submission.storagePath = "learnerWork/class-1/student-a/submission-no-name/photo.jpg";
   await assertSucceeds(setDoc(doc(db, "learnerSubmissions/submission-no-name"), submission));
 });
 
