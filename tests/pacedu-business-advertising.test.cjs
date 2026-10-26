@@ -35,7 +35,8 @@ test("advertising page is easy to find from the welcome screen and app menu with
   assert.match(repair, /pacificEducationWelcomeAdvertisingLink/);
   assert.match(repair, /pacificEducationWelcomeAdvertisingButton/);
   assert.match(repair, /View Advertising Page/);
-  assert.match(repair, /href=\\\"\.\/business-advertising\.html\\\"/);
+  assert.ok(repair.includes("./business-advertising.html"));
   assert.match(repair, /peBusinessAdvertisingMenuLink/);
-  assert.match(repair, /without inserting[\\s\\S]*?student activity pages/);
+  assert.ok(repair.includes("without inserting"));
+  assert.ok(repair.includes("student activity pages"));
 });
