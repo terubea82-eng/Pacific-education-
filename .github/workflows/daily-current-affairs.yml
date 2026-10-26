@@ -51,7 +51,7 @@ jobs:
             for feed_url in "${candidates[@]}"; do
               if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
                 --retry 1 --retry-all-errors --retry-delay 2 \
-                --user-agent 'PacificEducationPilot/1.0 (educational current-affairs feed)' \
+                --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \
                 --header 'Accept: application/rss+xml, application/atom+xml, application/xml, text/xml, text/html, */*' \
                 "$feed_url" -o "/tmp/feed-$source.xml"; then
                 # UNESCO and WHO newsroom endpoints are intentionally parsed as
