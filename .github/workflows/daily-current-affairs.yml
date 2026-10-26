@@ -72,17 +72,6 @@ jobs:
               rm -f "/tmp/feed-$source.xml"
             fi
           done
-                fetched=true
-                break
-              fi
-              echo "$source candidate did not return recognizable RSS/Atom/XML: $feed_url"
-              rm -f "/tmp/feed-$source.xml"
-            done
-            if [ "$fetched" != true ]; then
-              echo "::warning::No usable official feed endpoint found for $source; trying remaining sources."
-              rm -f "/tmp/feed-$source.xml"
-            fi
-          done
 
           node <<'NODE'
           const fs = require('fs');
