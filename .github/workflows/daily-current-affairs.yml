@@ -72,9 +72,9 @@ jobs:
             const m = block.match(re);
             return m ? decode(m[1]) : '';
           }
-          function entries(xml) {
+          function entries(xml, sourceKey) {
             const blocks = xml.match(/<(?:item|entry)\b[^>]*>[\s\S]*?<\/(?:item|entry)\s*>/gi) || [];
-            if (!blocks.length && /unesco\.org\/en\/newsroom|who\.int\/westernpacific\/newsroom/i.test(xml.slice(0, 5000))) {
+            if (!blocks.length && (sourceKey === 'unesco' || sourceKey === 'whoPacific')) {
               // UNESCO's newsroom endpoint is currently HTML rather than RSS/XML.
               // Read only article links from the official newsroom and require a
               // nearby publication date; normal URL, freshness and relevance checks
@@ -215,7 +215,7 @@ jobs:
               continue;
             }
             const xml = fs.readFileSync(path, 'utf8');
-            const found = entries(xml);
+            const found = entries(xml, source.key);
             counts.parsed = found.length;
             console.log(source.label + ': parsed ' + found.length + ' feed entries');
             for (const a of found) {
