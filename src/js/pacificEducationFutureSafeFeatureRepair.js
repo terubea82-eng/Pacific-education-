@@ -72,6 +72,29 @@
     }
   }
 
+  function ensureBusinessAdvertisingLink(){
+    var ws=el("pacificEducationPilotUserWorkspaces");
+    if(ws&&!el("pacificEducationBusinessAdvertisingLink")){
+      var section=document.createElement("section");
+      section.id="pacificEducationBusinessAdvertisingLink";
+      section.setAttribute("aria-label","Business advertising");
+      section.setAttribute("data-pe-future-safe","true");
+      section.innerHTML="<h3>Business & Product Advertising</h3><p>Explore business offers or prepare a local-only advertising draft for owner review.</p><p><a href='./business-advertising.html' rel='noopener'>Open PacEdu Business Advertising</a></p>";
+      ws.appendChild(section);
+    }
+    var menu=el("pacificEducationAppMenu");
+    if(menu&&!el("peBusinessAdvertisingMenuLink")){
+      var nav=menu.querySelector('nav[aria-label="App menu links"]');
+      if(nav){
+        var link=document.createElement("a");
+        link.id="peBusinessAdvertisingMenuLink";
+        link.href="./business-advertising.html";
+        link.textContent="Business & Product Advertising";
+        nav.appendChild(link);
+      }
+    }
+  }
+
   function ensureWorkspaceSignOut(){
     var ws=el("pacificEducationPilotUserWorkspaces");
     if(!ws||el("pacificEducationWorkspaceSignOut"))return;
