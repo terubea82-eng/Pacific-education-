@@ -62,5 +62,5 @@ test("sponsor and donor leads are clearly prospective and protected from commerc
     assert.ok(page.includes(url), "missing official prospective funding link: " + url);
   }
   assert.match(page, /target="_blank" rel="noopener noreferrer"/);
-  assert.match(page, /assessment, student marks, teacher decisions/);
+  assert.match(page, /assessment, student marks and teacher decisions/);
 });
