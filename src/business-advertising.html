@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b5d7a">
+  <title>PacEdu Business Advertising</title>
+  <meta name="description" content="PacEdu business and product advertising directory prototype.">
+  <style>
+    :root{font-family:Arial,sans-serif;color:#17313a;background:#f4f8fa;line-height:1.5}
+    *{box-sizing:border-box}body{margin:0}header{background:#0b5d7a;color:#fff;padding:22px 16px}
+    main{max-width:980px;margin:auto;padding:16px}h1,h2{line-height:1.2}section,.ad-card{background:#fff;border:1px solid #ccd9de;border-radius:12px;padding:16px;margin:16px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .ad-card{margin:0}.tag{display:inline-block;border:1px solid #6d8790;border-radius:20px;padding:2px 9px;font-size:.85rem}
+    label{display:block;font-weight:700;margin:12px 0 4px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid #879da5;border-radius:7px}
+    button,.link-button{display:inline-block;background:#0b5d7a;color:#fff;border:0;border-radius:7px;padding:11px 14px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
+    .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
+  </style>
+</head>
+<body>
+<header>
+  <p><strong>Pacific Education · PacEdu</strong></p>
+  <h1>Business & Product Advertising</h1>
+  <p>Discover useful local services, products and education-related offers.</p>
+</header>
+<main>
+  <section aria-labelledby="directoryHeading">
+    <h2 id="directoryHeading">Explore the directory</h2>
+    <p class="muted">Listings will appear here after owner review. The examples below explain the types of businesses PacEdu intends to support; they are not real offers.</p>
+    <div class="grid" id="paceduBusinessDirectory">
+      <article class="ad-card"><span class="tag">Example category</span><h3>School supplies</h3><p>Exercise books, pencils, bags and classroom materials.</p><p class="muted">Sample category only — no seller or price verified.</p></article>
+      <article class="ad-card"><span class="tag">Example category</span><h3>Technology & connectivity</h3><p>Devices, repairs, internet and digital learning services.</p><p class="muted">Sample category only — no seller or price verified.</p></article>
+      <article class="ad-card"><span class="tag">Example category</span><h3>Training & services</h3><p>Skills courses, tutoring, printing and community services.</p><p class="muted">Sample category only — no seller or price verified.</p></article>
+    </div>
+    <p id="paceduBusinessDirectoryStatus" class="status" role="status" aria-live="polite">No approved live business listings are connected in this pilot prototype.</p>
+  </section>
+
+  <section aria-labelledby="sponsorsHeading">
+    <h2 id="sponsorsHeading">Sponsors, donors & education partners</h2>
+    <p>PacEdu welcomes discussions with organisations that may support accessible education, school technology and community learning. <strong>No organisation listed below is a confirmed PacEdu sponsor or partner.</strong> These are prospective funding leads only; inclusion does not mean endorsement, an application, approval or an existing relationship.</p>
+    <div class="notice"><strong>Owner-controlled funding:</strong> Sponsorship, donations and purchases do not transfer PacEdu ownership, equity, voting rights, management control or intellectual property. Any funding offer requires verification, written terms, owner approval and appropriate safeguarding and financial checks. Student information and assessment results are never advertising assets.</div>
+    <div class="grid" aria-label="Prospective funding organisations, not confirmed partners">
+      <article class="ad-card"><span class="tag">Prospective lead · not a partner</span><h3>Vodafone ATH Fiji Foundation</h3><p>Potential fit to explore: digital inclusion, technology access and community education.</p><p><a href="https://www.vodafone.com.fj/foundation" target="_blank" rel="noopener noreferrer">Visit official foundation website</a></p></article>
+      <article class="ad-card"><span class="tag">Prospective lead · not a partner</span><h3>Westpac Fiji</h3><p>Potential fit to explore: education, opportunity and community development. Check current eligibility and application requirements directly.</p><p><a href="https://www.westpac.com.fj/contact-us/sponsorship/" target="_blank" rel="noopener noreferrer">Visit official sponsorship page</a></p></article>
+      <article class="ad-card"><span class="tag">Prospective lead · not a partner</span><h3>FIJI Water Foundation</h3><p>Potential fit to explore: eligible school and community projects. Grant rounds and eligibility can change; confirm current status before applying.</p><p><a href="https://www.fijiwaterfoundation.org/" target="_blank" rel="noopener noreferrer">Visit official foundation website</a></p></article>
+      <article class="ad-card"><span class="tag">Prospective lead · not a partner</span><h3>FMF Foods Limited</h3><p>Potential fit to explore: school-community support and education-related initiatives.</p><p><a href="https://www.fmf.com.fj/solutions-1" target="_blank" rel="noopener noreferrer">Visit official website</a></p></article>
+    </div>
+    <h3>What pilot users should know</h3>
+    <ul>
+      <li>These organisations have not been confirmed as PacEdu sponsors; do not interpret these links as a recommendation to buy their products or services.</li>
+      <li>Any future sponsorship will be disclosed clearly and kept separate from teaching, learning activities, assessment, student marks and teacher decisions.</li>
+      <li>PacEdu will not sell or share student personal information for sponsorship or advertising.</li>
+      <li>Any donation or grant must have a written purpose, transparent reporting and no control over PacEdu ownership, curriculum decisions or student results.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="advertiseHeading">
+    <h2 id="advertiseHeading">Advertise your business or product</h2>
+    <p>Send a listing draft for review. Include a working website, product page or checkout/payment link if you have one.</p>
+    <div class="notice"><strong>Pilot protection:</strong> This form saves a draft on this device only. It does not publish an advert, send your details to PacEdu, collect money or verify a payment link. Do not enter bank passwords, card details or sensitive personal information.</div>
+    <form id="paceduBusinessAdvertForm">
+      <label for="businessName">Business or seller name *</label><input id="businessName" name="businessName" required maxlength="100" autocomplete="organization">
+      <label for="contactName">Contact person (optional)</label><input id="contactName" name="contactName" maxlength="100" autocomplete="name">
+      <label for="businessCategory">Category *</label>
+      <select id="businessCategory" name="category" required>
+        <option value="">Choose a category</option><option>Education and training</option><option>Books and school supplies</option><option>Technology and connectivity</option><option>Uniforms and equipment</option><option>Food and local products</option><option>Professional services</option><option>Community and nonprofit</option><option>Other</option>
+      </select>
+      <label for="businessLocation">Country / town or service area *</label><input id="businessLocation" name="location" required maxlength="120" placeholder="e.g. Suva, Fiji">
+      <label for="businessDescription">Short advert / product description *</label><textarea id="businessDescription" name="description" required maxlength="600" rows="4" placeholder="Describe what you offer, price if known, and how customers can contact you."></textarea>
+      <label for="businessWebsite">Website or product link (optional)</label><input id="businessWebsite" name="website" type="url" inputmode="url" placeholder="https://example.com">
+      <label for="businessPaymentLink">Checkout or payment link (optional)</label><input id="businessPaymentLink" name="paymentLink" type="url" inputmode="url" placeholder="https://…">
+      <label for="advertiserEmail">Business contact email (optional)</label><input id="advertiserEmail" name="email" type="email" maxlength="160" autocomplete="email">
+      <div class="actions"><button type="submit">Save listing draft</button><button type="button" id="paceduBusinessClearDraft" style="background:#465b63">Clear this device's draft</button></div>
+      <p id="paceduBusinessFormStatus" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section aria-labelledby="revenueHeading">
+    <h2 id="revenueHeading">PacEdu advertising packages</h2>
+    <p>Proposed international prices in US dollars (USD). These are recommendations for owner review, not live offers. No advertiser is charged until PacEdu approves the prices, terms and payment setup.</p>
+    <div class="grid" aria-label="Proposed monthly advertising packages">
+      <article class="ad-card"><span class="tag">Proposed</span><h3>Starter · $5/month</h3><p>For microbusinesses, individual sellers and new businesses.</p><ul><li>One business or product listing</li><li>Contact details and website or checkout link</li><li>Standard directory placement</li></ul></article>
+      <article class="ad-card"><span class="tag">Proposed</span><h3>Growth · $15/month</h3><p>For shops, service providers and small online stores.</p><ul><li>Up to five listings</li><li>Logo or product photos</li><li>Website and customer payment links</li></ul></article>
+      <article class="ad-card"><span class="tag">Proposed</span><h3>Professional · $39/month</h3><p>For established businesses with several products or services.</p><ul><li>Up to 20 listings</li><li>Rotating featured placement</li><li>Basic campaign summary</li></ul></article>
+      <article class="ad-card"><span class="tag">Proposed</span><h3>Enterprise · $99/month</h3><p>For larger brands, distributors and multi-location businesses.</p><ul><li>Larger listing portfolio</li><li>Priority campaign placement</li><li>Multiple locations or markets</li><li>Monthly campaign report</li></ul></article>
+    </div>
+    <h3>Proposed annual prices</h3>
+    <p>Starter $50/year · Growth $150/year · Professional $390/year · Enterprise $990/year. These equal ten monthly payments, subject to final approval and clear renewal/cancellation terms.</p>
+    <section aria-labelledby="revenueEstimateHeading">
+      <h3 id="revenueEstimateHeading">Estimate possible subscription income</h3>
+      <p>Enter how many paying advertisers you might have in each package. This is a planning estimate only, not actual revenue or a forecast guarantee. All values start at zero.</p>
+      <div class="grid">
+        <div><label for="estimateStarter">Starter subscribers ($5/month)</label><input id="estimateStarter" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="estimateGrowth">Growth subscribers ($15/month)</label><input id="estimateGrowth" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="estimateProfessional">Professional subscribers ($39/month)</label><input id="estimateProfessional" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="estimateEnterprise">Enterprise subscribers ($99/month)</label><input id="estimateEnterprise" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+      </div>
+      <p><strong>Estimated monthly gross subscription revenue:</strong> <output id="estimateMonthlyRevenue" aria-live="polite">$0.00</output></p>
+      <p><strong>Simple 12-month gross equivalent:</strong> <output id="estimateAnnualRevenue">$0.00</output></p>
+      <p class="muted">Gross estimates before discounts, unpaid invoices, cancellations, taxes, refunds and payment-provider fees. Promotions and annual plans are not included. This calculator does not collect data or process payments.</p>
+    </section>
+    <h3>Optional promotions</h3>
+    <ul><li>Featured advert for 7 days: $10</li><li>Featured advert for 30 days: $25</li><li>Promote one product for 7 days: $5</li><li>Sponsored category for 7 days: $49</li><li>International campaign for 30 days: $99–$299, depending on scope</li><li>National or regional campaigns: quote after scope is agreed</li></ul>
+    <h3>Education and community access</h3>
+    <p>Consider free basic listings for eligible schools, scholarships, registered charities and public-interest education programmes. Sponsored placements must be labelled clearly and must not influence educational assessment or student results.</p>
+    <p><strong>Advertising fee:</strong> All prices above are proposed only and require PacEdu owner approval before sales begin.</p>
+    <p><strong>Payment setup:</strong> PacEdu must configure and test its own trusted payment provider and server-side payment verification before collecting advertising fees. Advertisers' checkout links are separate and do not pay PacEdu.</p>
+    <p class="muted">No advertising package is for sale through this prototype, and no payment is currently processed here. Prices exclude any applicable taxes and provider fees until these are assessed and disclosed.</p>
+  </section>
+  <p><a href="./index.html">Return to PacEdu</a></p>
+</main>
+<footer><small>PacEdu controlled pilot · Advertisements require review · No endorsement or payment guarantee is implied.</small></footer>
+<script src="./js/paceduBusinessAdvertising.js?v=20261026-business-advertising"></script>
+</body>
+</html>
