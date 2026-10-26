@@ -29,13 +29,21 @@ jobs:
           # but the existing JSON is never overwritten unless eligible articles
           # are successfully collected and validated.
           declare -A feeds=(
+            [fijiOne]="https://fijionenews.com.fj/feed/"
+            [fijiTimes]="https://www.fijitimes.com.fj/feed/"
+            [fijiSun]="https://fijisun.com.fj/category/fiji-news/feed/"
+            [fbc]="https://www.fbcnews.com.fj/feed/"
+            [rnzPacific]="https://www.rnz.co.nz/rss/pacific.xml"
             [unesco]="https://www.unesco.org/en/newsroom"
             [who]="https://www.who.int/rss-feeds/news-english.xml"
             [whoNewsroom]="https://www.who.int/news-room"
             [whoPacific]="https://www.who.int/westernpacific/newsroom"
             [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
+            [bbc]="https://feeds.bbci.co.uk/news/world/rss.xml"
+            [dw]="https://rss.dw.com/rdf/rss-en-all"
+            [alJazeera]="https://www.aljazeera.com/xml/rss/all.xml"
           )
-          for source in unesco who whoNewsroom whoPacific un; do
+          for source in fijiOne fijiTimes fijiSun fbc rnzPacific unesco who whoNewsroom whoPacific un bbc dw alJazeera; do
             echo "Fetching official feed: $source"
             if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
               --retry 2 --retry-all-errors --retry-delay 3 \
@@ -53,13 +61,21 @@ jobs:
           const { URL } = require('url');
           const { execFileSync } = require('child_process');
           const sources = [
-            { key: 'unesco', label: 'UNESCO', host: 'unesco.org' },
-            { key: 'who', label: 'WHO', host: 'who.int' },
-            { key: 'whoNewsroom', label: 'WHO Newsroom', host: 'who.int' },
-            { key: 'whoPacific', label: 'WHO Western Pacific', host: 'who.int' },
-            { key: 'un', label: 'UN News', host: 'un.org' }
+            { key: 'fijiOne', label: 'Fiji One News (Fiji TV)', host: 'fijionenews.com.fj', region: 'FIJI' },
+            { key: 'fijiTimes', label: 'The Fiji Times', host: 'fijitimes.com.fj', region: 'FIJI' },
+            { key: 'fijiSun', label: 'Fiji Sun', host: 'fijisun.com.fj', region: 'FIJI' },
+            { key: 'fbc', label: 'FBC News', host: 'fbcnews.com.fj', region: 'FIJI' },
+            { key: 'rnzPacific', label: 'RNZ Pacific', host: 'rnz.co.nz', region: 'PACIFIC' },
+            { key: 'unesco', label: 'UNESCO', host: 'unesco.org', region: 'GLOBAL' },
+            { key: 'who', label: 'WHO', host: 'who.int', region: 'GLOBAL' },
+            { key: 'whoNewsroom', label: 'WHO Newsroom', host: 'who.int', region: 'GLOBAL' },
+            { key: 'whoPacific', label: 'WHO Western Pacific', host: 'who.int', region: 'PACIFIC' },
+            { key: 'un', label: 'UN News', host: 'un.org', region: 'GLOBAL' },
+            { key: 'bbc', label: 'BBC News World', host: 'bbci.co.uk', region: 'GLOBAL' },
+            { key: 'dw', label: 'Deutsche Welle', host: 'dw.com', region: 'GLOBAL' },
+            { key: 'alJazeera', label: 'Al Jazeera English', host: 'aljazeera.com', region: 'GLOBAL' }
           ];
-          const allowedHosts = ['unesco.org', 'unicef.org', 'un.org', 'who.int'];
+          const allowedHosts = ['fijionenews.com.fj', 'fijitimes.com.fj', 'fijisun.com.fj', 'fbcnews.com.fj', 'rnz.co.nz', 'bbc.co.uk', 'bbci.co.uk', 'dw.com', 'aljazeera.com', 'unesco.org', 'unicef.org', 'un.org', 'who.int'];
           function decode(s) {
             return String(s || '')
               .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
@@ -281,11 +297,13 @@ jobs:
             const combinedText = a.title + ' ' + a.description;
             const applicable = subjects(combinedText);
             const levelRecommendations = applicableLevels(combinedText);
+            const sourceMeta = sources.find(s => s.label === a.source) || {};
             return {
               id: 'OFFICIAL-' + require('crypto').createHash('sha256').update(a.url).digest('hex').slice(0, 24),
               title: a.title,
               url: a.url,
               source: a.source,
+              countryOrRegion: sourceMeta.region || 'GLOBAL',
               publishedAt: new Date(Date.parse(a.date)).toISOString(),
               topic: 'Education and current affairs',
               educationalRelevance: 'Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.',
@@ -297,7 +315,11 @@ jobs:
               approved: false,
               sourceType: 'EDUCATIONAL_CURRENT_AFFAIRS'
             };
-          }).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 30);
+          }).sort((a, b) => {
+            const rank = { FIJI: 0, PACIFIC: 1, GLOBAL: 2 };
+            return (rank[a.countryOrRegion] ?? 2) - (rank[b.countryOrRegion] ?? 2) ||
+              Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
+          }).slice(0, 30);
           if (items.length === 0) {
             throw new Error('No eligible articles were parsed from official feeds; preserving existing feed.');
           }
@@ -319,7 +341,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'UNESCO, WHO global and Western Pacific newsroom dates, WHO RSS and UN News RSS feeds; all items date- and relevance-validated',
+            source: 'Fiji One News (Fiji TV), The Fiji Times, Fiji Sun, FBC News, RNZ Pacific, BBC News World, Deutsche Welle, Al Jazeera English, UNESCO, WHO and UN News; all items source-, date- and relevance-validated. Fiji-first, Pacific-second ordering; teacher approval required.',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
