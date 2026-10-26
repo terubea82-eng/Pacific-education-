@@ -28,31 +28,42 @@ jobs:
           # Each source is isolated: a temporarily unavailable feed is skipped,
           # but the existing JSON is never overwritten unless eligible articles
           # are successfully collected and validated.
-          declare -A feeds=(
-            [fijiOne]="https://fijionenews.com.fj/feed/"
-            [fijiTimes]="https://www.fijitimes.com.fj/feed/"
-            [fijiSun]="https://fijisun.com.fj/category/fiji-news/feed/"
-            [fbc]="https://www.fbcnews.com.fj/feed/"
-            [rnzPacific]="https://www.rnz.co.nz/rss/pacific.xml"
-            [unesco]="https://www.unesco.org/en/newsroom"
-            [who]="https://www.who.int/rss-feeds/news-english.xml"
-            [whoNewsroom]="https://www.who.int/news-room"
-            [whoPacific]="https://www.who.int/westernpacific/newsroom"
-            [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
-            [bbc]="https://feeds.bbci.co.uk/news/world/rss.xml"
-            [dw]="https://rss.dw.com/rdf/rss-en-all"
-            [alJazeera]="https://www.aljazeera.com/xml/rss/all.xml"
-          )
           for source in fijiOne fijiTimes fijiSun fbc rnzPacific unesco who whoNewsroom whoPacific un bbc dw alJazeera; do
+            # Try known publisher feed variants for Fiji outlets. Some WordPress
+            # hosts redirect /feed/ to HTML or block one path while ?feed=rss2 works.
+            case "$source" in
+              fijiOne) candidates=("https://fijionenews.com.fj/feed/") ;;
+              fijiTimes) candidates=("https://www.fijitimes.com.fj/feed" "https://www.fijitimes.com.fj/feed/" "https://www.fijitimes.com.fj/?feed=rss2") ;;
+              fijiSun) candidates=("https://fijisun.com.fj/category/fiji-news/feed" "https://fijisun.com.fj/category/fiji-news/feed/" "https://fijisun.com.fj/?cat=300&feed=rss2" "https://fijisun.com.fj/?feed=rss2") ;;
+              fbc) candidates=("https://www.fbcnews.com.fj/feed/") ;;
+              rnzPacific) candidates=("https://www.rnz.co.nz/rss/pacific.xml") ;;
+              unesco) candidates=("https://www.unesco.org/en/newsroom") ;;
+              who) candidates=("https://www.who.int/rss-feeds/news-english.xml") ;;
+              whoNewsroom) candidates=("https://www.who.int/news-room") ;;
+              whoPacific) candidates=("https://www.who.int/westernpacific/newsroom") ;;
+              un) candidates=("https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml") ;;
+              bbc) candidates=("https://feeds.bbci.co.uk/news/world/rss.xml") ;;
+              dw) candidates=("https://rss.dw.com/rdf/rss-en-all") ;;
+              alJazeera) candidates=("https://www.aljazeera.com/xml/rss/all.xml") ;;
+            esac
             echo "Fetching official feed: $source"
-            if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
-              --retry 2 --retry-all-errors --retry-delay 3 \
-              --user-agent 'PacificEducationPilot/1.0 (educational current-affairs feed)' \
-              --header 'Accept: application/rss+xml, application/atom+xml, application/xml, text/xml, */*' \
-              "${feeds[$source]}" -o "/tmp/feed-$source.xml"; then
-              echo "$source feed downloaded"
-            else
-              echo "::warning::Could not download $source feed; trying remaining official feeds."
+            fetched=false
+            for feed_url in "${candidates[@]}"; do
+              if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
+                --retry 1 --retry-all-errors --retry-delay 2 \
+                --user-agent 'PacificEducationPilot/1.0 (educational current-affairs feed)' \
+                --header 'Accept: application/rss+xml, application/atom+xml, application/xml, text/xml, */*' \
+                "$feed_url" -o "/tmp/feed-$source.xml" &&
+                grep -Eiq '<(rss|feed|rdf:RDF|item|entry)([[:space:]>])' "/tmp/feed-$source.xml"; then
+                echo "$source feed accepted from $feed_url"
+                fetched=true
+                break
+              fi
+              echo "$source candidate did not return recognizable RSS/Atom/XML: $feed_url"
+              rm -f "/tmp/feed-$source.xml"
+            done
+            if [ "$fetched" != true ]; then
+              echo "::warning::No usable official feed endpoint found for $source; trying remaining sources."
               rm -f "/tmp/feed-$source.xml"
             fi
           done
