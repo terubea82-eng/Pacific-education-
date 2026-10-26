@@ -34,7 +34,7 @@ test("advertising page is easy to find from the welcome screen and app menu with
   const repair = fs.readFileSync("src/js/pacificEducationFutureSafeFeatureRepair.js", "utf8");
   const index = fs.readFileSync("src/index.html", "utf8");
   assert.match(repair, /pacificEducationWelcomeAdvertisingLink/);
-  assert.match(index, /pacificEducationFutureSafeFeatureRepair\\.js\\?v=20261026-advertising-visibility/);
+  assert.ok(index.includes("pacificEducationFutureSafeFeatureRepair.js?v=20261026-advertising-visibility"));
   assert.match(repair, /pacificEducationWelcomeAdvertisingButton/);
   assert.match(repair, /View Advertising Page/);
   assert.ok(repair.includes("./business-advertising.html"));
