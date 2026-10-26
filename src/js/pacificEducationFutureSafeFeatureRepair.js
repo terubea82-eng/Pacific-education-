@@ -157,6 +157,7 @@
     ensureFeatureTargets();
     ensureReviewerScript();
     ensureWorkspaceSignOut();
+    ensureBusinessAdvertisingLink();
     addLauncherLinks();
     document.body.setAttribute("data-pe-future-safe-repair",VERSION);
   }
