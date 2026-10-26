@@ -73,6 +73,23 @@
   }
 
   function ensureBusinessAdvertisingLink(){
+    /* Give every visitor a clear route from the welcome page, without inserting
+       adverts into student activity pages or changing the protected entry flow. */
+    var welcome=el("pacificEducationWelcome");
+    if(welcome&&!el("pacificEducationWelcomeAdvertisingLink")){
+      var card=document.createElement("section");
+      card.id="pacificEducationWelcomeAdvertisingLink";
+      card.setAttribute("aria-label","Business and product advertising");
+      card.setAttribute("data-pe-future-safe","true");
+      card.style.cssText="margin:18px 0;padding:16px;border:2px solid #0b5d7a;border-radius:14px;background:#f0f9fc;color:#17313a;";
+      card.innerHTML="<h2>🌐 Business &amp; Product Advertising</h2>"+
+        "<p>Browse business and product advertising information, see proposed USD packages, or learn how to promote a business to PacEdu users worldwide.</p>"+
+        "<p><a id=\\"pacificEducationWelcomeAdvertisingButton\\" href=\\"./business-advertising.html\\" style=\\"display:inline-block;background:#0b5d7a;color:#fff;padding:12px 16px;border-radius:8px;font-weight:700;text-decoration:none;\\">View Advertising Page</a></p>"+
+        "<p style=\\"font-size:.92em;\\">Advertising is separate from learning and assessment. Packages remain proposed until owner approval and secure payment setup.</p>";
+      var next=el("welcomeNextWrapper");
+      if(next&&next.parentNode===welcome)welcome.insertBefore(card,next);
+      else welcome.appendChild(card);
+    }
     var ws=el("pacificEducationPilotUserWorkspaces");
     if(ws&&!el("pacificEducationBusinessAdvertisingLink")){
       var section=document.createElement("section");
