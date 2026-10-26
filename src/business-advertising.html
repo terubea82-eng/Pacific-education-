@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b5d7a">
+  <title>PacEdu Business Advertising</title>
+  <meta name="description" content="PacEdu business and product advertising directory prototype.">
+  <style>
+    :root{font-family:Arial,sans-serif;color:#17313a;background:#f4f8fa;line-height:1.5}
+    *{box-sizing:border-box}body{margin:0}header{background:#0b5d7a;color:#fff;padding:22px 16px}
+    main{max-width:980px;margin:auto;padding:16px}h1,h2{line-height:1.2}section,.ad-card{background:#fff;border:1px solid #ccd9de;border-radius:12px;padding:16px;margin:16px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .ad-card{margin:0}.tag{display:inline-block;border:1px solid #6d8790;border-radius:20px;padding:2px 9px;font-size:.85rem}
+    label{display:block;font-weight:700;margin:12px 0 4px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid #879da5;border-radius:7px}
+    button,.link-button{display:inline-block;background:#0b5d7a;color:#fff;border:0;border-radius:7px;padding:11px 14px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
+    .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
+  </style>
+</head>
+<body>
+<header>
+  <p><strong>Pacific Education · PacEdu</strong></p>
+  <h1>Business & Product Advertising</h1>
+  <p>Discover useful local services, products and education-related offers.</p>
+</header>
+<main>
+  <section aria-labelledby="directoryHeading">
+    <h2 id="directoryHeading">Explore the directory</h2>
+    <p class="muted">Listings will appear here after owner review. The examples below explain the types of businesses PacEdu intends to support; they are not real offers.</p>
+    <div class="grid" id="paceduBusinessDirectory">
+      <article class="ad-card"><span class="tag">Example category</span><h3>School supplies</h3><p>Exercise books, pencils, bags and classroom materials.</p><p class="muted">Sample category only — no seller or price verified.</p></article>
+      <article class="ad-card"><span class="tag">Example category</span><h3>Technology & connectivity</h3><p>Devices, repairs, internet and digital learning services.</p><p class="muted">Sample category only — no seller or price verified.</p></article>
+      <article class="ad-card"><span class="tag">Example category</span><h3>Training & services</h3><p>Skills courses, tutoring, printing and community services.</p><p class="muted">Sample category only — no seller or price verified.</p></article>
+    </div>
+    <p id="paceduBusinessDirectoryStatus" class="status" role="status" aria-live="polite">No approved live business listings are connected in this pilot prototype.</p>
+  </section>
+
+  <section aria-labelledby="advertiseHeading">
+    <h2 id="advertiseHeading">Advertise your business or product</h2>
+    <p>Send a listing draft for review. Include a working website, product page or checkout/payment link if you have one.</p>
+    <div class="notice"><strong>Pilot protection:</strong> This form saves a draft on this device only. It does not publish an advert, send your details to PacEdu, collect money or verify a payment link. Do not enter bank passwords, card details or sensitive personal information.</div>
+    <form id="paceduBusinessAdvertForm">
+      <label for="businessName">Business or seller name *</label><input id="businessName" name="businessName" required maxlength="100" autocomplete="organization">
+      <label for="contactName">Contact person (optional)</label><input id="contactName" name="contactName" maxlength="100" autocomplete="name">
+      <label for="businessCategory">Category *</label>
+      <select id="businessCategory" name="category" required>
+        <option value="">Choose a category</option><option>Education and training</option><option>Books and school supplies</option><option>Technology and connectivity</option><option>Uniforms and equipment</option><option>Food and local products</option><option>Professional services</option><option>Community and nonprofit</option><option>Other</option>
+      </select>
+      <label for="businessLocation">Country / town or service area *</label><input id="businessLocation" name="location" required maxlength="120" placeholder="e.g. Suva, Fiji">
+      <label for="businessDescription">Short advert / product description *</label><textarea id="businessDescription" name="description" required maxlength="600" rows="4" placeholder="Describe what you offer, price if known, and how customers can contact you."></textarea>
+      <label for="businessWebsite">Website or product link (optional)</label><input id="businessWebsite" name="website" type="url" inputmode="url" placeholder="https://example.com">
+      <label for="businessPaymentLink">Checkout or payment link (optional)</label><input id="businessPaymentLink" name="paymentLink" type="url" inputmode="url" placeholder="https://…">
+      <label for="advertiserEmail">Business contact email (optional)</label><input id="advertiserEmail" name="email" type="email" maxlength="160" autocomplete="email">
+      <div class="actions"><button type="submit">Save listing draft</button><button type="button" id="paceduBusinessClearDraft" style="background:#465b63">Clear this device's draft</button></div>
+      <p id="paceduBusinessFormStatus" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section aria-labelledby="revenueHeading">
+    <h2 id="revenueHeading">PacEdu advertising packages</h2>
+    <p>Businesses can request a quote for a featured listing, product promotion or sponsored education-resource placement.</p>
+    <ul><li>Standard business listing</li><li>Featured product or service placement</li><li>Time-limited sponsored campaign</li></ul>
+    <p><strong>Advertising fee:</strong> To be set and approved by the PacEdu owner before sales begin.</p>
+    <p><strong>Payment setup:</strong> PacEdu must configure and test its own trusted payment provider and server-side payment verification before collecting advertising fees. Advertisers' checkout links are separate and do not pay PacEdu.</p>
+    <p class="muted">No advertising package is for sale through this prototype, and no payment is currently processed here.</p>
+  </section>
+  <p><a href="./index.html">Return to PacEdu</a></p>
+</main>
+<footer><small>PacEdu controlled pilot · Advertisements require review · No endorsement or payment guarantee is implied.</small></footer>
+<script src="./js/paceduBusinessAdvertising.js?v=20261026-business-advertising"></script>
+</body>
+</html>
