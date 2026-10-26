@@ -168,9 +168,53 @@ jobs:
                   // WHO article URL dates represent the original publication date;
                   // RSS timestamps can reflect later updates to older articles.
                   publicationTimestamp = Date.parse(urlDate + 'T00:00:00.000Z');
+                } else if (isUnescoArticle) {
+                  // Fail closed for UNESCO: newsroom-card dates can be modified,
+                  // event, or update dates. Only article-level original publication
+                  // metadata is eligible; never use dateModified or nearby dates.
+                  let articleHtml = '';
+                  try {
+                    articleHtml = execFileSync('curl', [
+                      '--silent', '--show-error', '--fail', '--location',
+                      '--connect-timeout', '8', '--max-time', '15',
+                      '--user-agent', 'PacificEducationPilot/1.0 (educational current-affairs feed)',
+                      '--header', 'Accept: text/html',
+                      articleUrl
+                    ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 2 * 1024 * 1024 });
+                  } catch (_) {
+                    console.warn('Skipping UNESCO item because article metadata could not be fetched: ' + articleUrl);
+                    continue;
+                  }
+                  const publicationValues = [
+                    ...[...articleHtml.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi)].map(match => match[1])
+                  ];
+                  for (const metaMatch of articleHtml.matchAll(/<meta\b[^>]*>/gi)) {
+                    const tagText = metaMatch[0];
+                    const keyMatch = tagText.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i);
+                    const contentMatch = tagText.match(/content\s*=\s*["']([^"']+)["']/i);
+                    if (keyMatch && contentMatch &&
+                        /^(?:article:published_time|datePublished)$/i.test(keyMatch[1].trim())) {
+                      publicationValues.push(contentMatch[1].trim());
+                    }
+                  }
+                  const parsedPublicationDates = publicationValues.map(value => {
+                    const text = String(value).trim();
+                    const datePart = text.match(/^(\d{4}-\d{2}-\d{2})(?:T|\s|$)/);
+                    const timestamp = Date.parse(text);
+                    if (!datePart || !Number.isFinite(timestamp)) return null;
+                    return { date: datePart[1], timestamp };
+                  });
+                  const validPublicationDates = parsedPublicationDates.filter(Boolean);
+                  const distinctPublicationDates = [...new Set(validPublicationDates.map(value => value.date))];
+                  if (!publicationValues.length ||
+                      validPublicationDates.length !== publicationValues.length ||
+                      distinctPublicationDates.length !== 1) {
+                    console.warn('Skipping UNESCO item because datePublished metadata is missing, invalid, or conflicting: ' + articleUrl);
+                    continue;
+                  }
+                  publicationTimestamp = validPublicationDates[0].timestamp;
                 } else if (Number.isFinite(titleDateTimestamp)) {
-                  // UNESCO cards often include the publication date in the same
-                  // link text as the headline; prefer this direct association.
+                  // Keep direct title-associated dates for non-UNESCO HTML sources.
                   publicationTimestamp = Date.parse(new Date(titleDateTimestamp).toISOString().slice(0, 10) + 'T00:00:00.000Z');
                 } else {
                   if (!dates.length || dates[0].distance > 700) {
