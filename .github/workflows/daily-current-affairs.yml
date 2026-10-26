@@ -33,8 +33,8 @@ jobs:
             # hosts redirect /feed/ to HTML or block one path while ?feed=rss2 works.
             case "$source" in
               fijiOne) candidates=("https://fijionenews.com.fj/feed/") ;;
-              fijiTimes) candidates=("https://www.fijitimes.com.fj/feed" "https://www.fijitimes.com.fj/feed/" "https://www.fijitimes.com.fj/?feed=rss2") ;;
-              fijiSun) candidates=("https://fijisun.com.fj/category/fiji-news/feed" "https://fijisun.com.fj/category/fiji-news/feed/" "https://fijisun.com.fj/?cat=300&feed=rss2" "https://fijisun.com.fj/?feed=rss2") ;;
+              fijiTimes) candidates=("https://www.fijitimes.com.fj/feed" "https://www.fijitimes.com.fj/feed/" "https://www.fijitimes.com.fj/?feed=rss2" "https://feeds.feedburner.com/fijitimes" "http://feeds.feedburner.com/fijitimes") ;;
+              fijiSun) candidates=("https://fijisun.com.fj/category/fiji-news/feed" "https://fijisun.com.fj/category/fiji-news/feed/" "https://fijisun.com.fj/tag/fiji-news/feed/" "https://fijisun.com.fj/?cat=300&feed=rss2" "https://fijisun.com.fj/?feed=rss2" "https://fijisun.com.fj/feed/" "https://fijisun.com.fj/feed") ;;
               fbc) candidates=("https://www.fbcnews.com.fj/feed/") ;;
               rnzPacific) candidates=("https://www.rnz.co.nz/rss/pacific.xml") ;;
               unesco) candidates=("https://www.unesco.org/en/newsroom") ;;
