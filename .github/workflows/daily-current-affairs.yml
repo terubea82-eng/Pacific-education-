@@ -112,15 +112,36 @@ jobs:
                   console.warn('Skipping UNESCO item because article metadata could not be fetched: ' + articleUrl);
                   continue;
                 }
-                const publicationMatches = [
-                  ...articleHtml.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi),
-                  ...articleHtml.matchAll(/<meta\b[^>]*(?:property|name)=["'](?:article:published_time|datePublished)["'][^>]*content=["']([^"']+)["'][^>]*>/gi)
+                // Read datePublished from JSON-LD and publication meta tags. Parse
+                // meta attributes independently of their order, and fail closed if
+                // the publisher exposes conflicting original-publication dates.
+                const publicationValues = [
+                  ...[...articleHtml.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi)].map(match => match[1])
                 ];
-                const publicationValues = publicationMatches.map(match => match[1])
-                  .filter(value => /^\d{4}-\d{2}-\d{2}/.test(value));
-                const publicationTimestamp = publicationValues.length ? Date.parse(publicationValues[0]) : NaN;
+                for (const metaMatch of articleHtml.matchAll(/<meta\b[^>]*>/gi)) {
+                  const tagText = metaMatch[0];
+                  const keyMatch = tagText.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i);
+                  const contentMatch = tagText.match(/content\s*=\s*["']([^"']+)["']/i);
+                  if (keyMatch && contentMatch &&
+                      /^(?:article:published_time|datePublished)$/i.test(keyMatch[1].trim())) {
+                    publicationValues.push(contentMatch[1].trim());
+                  }
+                }
+                const validPublicationDates = publicationValues
+                  .map(value => {
+                    const match = String(value).trim().match(/^(\d{4}-\d{2}-\d{2})(?:T|\s|$)/);
+                    if (!match || !Number.isFinite(Date.parse(value))) return null;
+                    return { date: match[1], timestamp: Date.parse(value) };
+                  })
+                  .filter(Boolean);
+                const distinctPublicationDates = [...new Set(validPublicationDates.map(value => value.date))];
+                if (!validPublicationDates.length || distinctPublicationDates.length !== 1) {
+                  console.warn('Skipping UNESCO item because datePublished metadata is missing, invalid, or conflicting: ' + articleUrl);
+                  continue;
+                }
+                const publicationTimestamp = validPublicationDates[0].timestamp;
                 if (!Number.isFinite(publicationTimestamp)) {
-                  console.warn('Skipping UNESCO item without explicit datePublished metadata: ' + articleUrl);
+                  console.warn('Skipping UNESCO item with invalid datePublished metadata: ' + articleUrl);
                   continue;
                 }
                 htmlItems.push({
