@@ -71,11 +71,11 @@ jobs:
             { key: 'whoNewsroom', label: 'WHO Newsroom', host: 'who.int', region: 'GLOBAL' },
             { key: 'whoPacific', label: 'WHO Western Pacific', host: 'who.int', region: 'PACIFIC' },
             { key: 'un', label: 'UN News', host: 'un.org', region: 'GLOBAL' },
-            { key: 'bbc', label: 'BBC News World', host: 'bbci.co.uk', region: 'GLOBAL' },
+            { key: 'bbc', label: 'BBC News World', host: 'bbc.co.uk', region: 'GLOBAL' },
             { key: 'dw', label: 'Deutsche Welle', host: 'dw.com', region: 'GLOBAL' },
             { key: 'alJazeera', label: 'Al Jazeera English', host: 'aljazeera.com', region: 'GLOBAL' }
           ];
-          const allowedHosts = ['fijionenews.com.fj', 'fijitimes.com.fj', 'fijisun.com.fj', 'fbcnews.com.fj', 'rnz.co.nz', 'bbc.co.uk', 'bbci.co.uk', 'dw.com', 'aljazeera.com', 'unesco.org', 'unicef.org', 'un.org', 'who.int'];
+          const allowedHosts = ['fijionenews.com.fj', 'fijitimes.com.fj', 'fijisun.com.fj', 'fbcnews.com.fj', 'fbc.com.fj', 'rnz.co.nz', 'bbc.com', 'bbc.co.uk', 'bbci.co.uk', 'dw.com', 'aljazeera.com', 'unesco.org', 'unicef.org', 'un.org', 'who.int'];
           function decode(s) {
             return String(s || '')
               .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
@@ -279,7 +279,7 @@ jobs:
               // Exclude navigation/noise while keeping education and broad public
               // interest stories useful for teacher-led current-affairs lessons.
               const relevance = (title + ' ' + a.description).toLowerCase();
-              if (!/education|school|learning|teacher|child|children|health|healthcare|medicine|medical|diagnostic|donor|vaccine|vaccination|disease|cancer|malaria|obesity|nutrition|maternal|reproductive|science|climate|environment|culture|heritage|poverty|community|development|digital|technology|literacy|university|student|students|humanitarian|sustainable|gender|disaster|water|food|public health/.test(relevance)) {
+              if (!/education|school|learning|teacher|child|children|health|healthcare|medicine|medical|diagnostic|donor|vaccine|vaccination|disease|cancer|malaria|obesity|nutrition|maternal|reproductive|science|climate|environment|culture|heritage|poverty|community|development|digital|technology|literacy|university|student|students|humanitarian|sustainable|gender|disaster|water|food|public health|agriculture|farming|farmers|fisheries|fishing|transport|infrastructure|tourism|economy|economic|jobs|employment|parliament|law|court|election|cyclone|flood|weather|energy|electricity|business|trade|exports|sports|sport|athlete|research|wildlife|ocean|marine|biodiversity|housing|road|roads|public service|budget|tax/.test(relevance)) {
                 counts.irrelevant++;
                 continue;
               }
@@ -289,9 +289,15 @@ jobs:
             console.log(source.label + ' filter counts: ' + JSON.stringify(counts));
           }
           const seen = new Set();
+          const sourceCounts = new Map();
           const items = all.filter(a => {
             if (seen.has(a.url)) return false;
             seen.add(a.url);
+            // Prevent one publisher from filling the daily list. This leaves room
+            // for Fiji, Pacific and international perspectives together.
+            const count = sourceCounts.get(a.source) || 0;
+            if (count >= 3) return false;
+            sourceCounts.set(a.source, count + 1);
             return true;
           }).map((a, i) => {
             const combinedText = a.title + ' ' + a.description;
