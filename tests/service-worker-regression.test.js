@@ -23,3 +23,8 @@ test("navigation pages keep separate offline cache entries and preserve the app 
   assert.ok(serviceWorker.includes('"/Pacific-education-/src/business-advertising.html"'));
   assert.ok(serviceWorker.includes('"/Pacific-education-/src/js/paceduBusinessAdvertising.js?v=20261026-business-advertising"'));
 });
+
+test("cache status correctly reports versioned core assets", () => {
+  assert.ok(serviceWorker.includes("return cachedUrl.pathname+cachedUrl.search;"));
+  assert.ok(serviceWorker.includes("var assetUrl=new URL(url,self.location.origin);return {url:url,cached:urls.indexOf(assetUrl.pathname+assetUrl.search)>=0};"));
+});

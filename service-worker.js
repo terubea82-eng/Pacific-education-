@@ -73,8 +73,8 @@ self.addEventListener("install",event=>{
 self.addEventListener("message",event=>{
   if(event.data&&event.data.type===CACHE_STATUS_MESSAGE){
     event.waitUntil(caches.open(CACHE_NAME).then(function(cache){return cache.keys();}).then(function(keys){
-      var urls=keys.map(function(request){return new URL(request.url).pathname;});
-      if(event.ports&&event.ports[0])event.ports[0].postMessage({cacheName:CACHE_NAME,entryCached:urls.indexOf(ENTRY)>=0,coreCached:CORE_ASSETS.map(function(url){return {url:url,cached:urls.indexOf(url)>=0};}),cachedCount:urls.length});
+      var urls=keys.map(function(request){var cachedUrl=new URL(request.url);return cachedUrl.pathname+cachedUrl.search;});
+      if(event.ports&&event.ports[0])event.ports[0].postMessage({cacheName:CACHE_NAME,entryCached:urls.indexOf(ENTRY)>=0,coreCached:CORE_ASSETS.map(function(url){var assetUrl=new URL(url,self.location.origin);return {url:url,cached:urls.indexOf(assetUrl.pathname+assetUrl.search)>=0};}),cachedCount:urls.length});
     }));
   }
 });
