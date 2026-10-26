@@ -1,7 +1,7 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v25";
+const CACHE_NAME="pacific-education-shell-v26";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
@@ -21,6 +21,8 @@ const CORE_ASSETS=[
   "/Pacific-education-/src/js/pacificEducationPerformanceMonitor.js",
   "/Pacific-education-/src/js/pacificEducationPilotRuntimeRepair.js",
   "/Pacific-education-/src/js/pacificEducationFrontPageRepair.js",
+  "/Pacific-education-/src/business-advertising.html",
+  "/Pacific-education-/src/js/paceduBusinessAdvertising.js?v=20261026-business-advertising",
   "/Pacific-education-/js/pacificEducationAccessibilitySupport.js"
 ];
 
@@ -94,17 +96,34 @@ self.addEventListener("fetch",event=>{
   if(url.origin!==self.location.origin)return;
 
   if(request.mode==="navigate"||request.destination==="document"){
-    event.respondWith(
-      fetchWithTimeout(request,NAVIGATION_TIMEOUT_MS).then(response=>{
-        if(response.ok){
-          return injectRuntimeRepair(response).then(function(repaired){
-            const copy=repaired.clone();
-            caches.open(CACHE_NAME).then(cache=>cache.put(ENTRY,copy));
-            return repaired;
+    /* Cache each HTML route under its own path. A secondary page must never
+       overwrite the offline app entry in ENTRY. Query parameters are excluded
+       so stateful entry URLs share the stable HTML shell without storing state. */
+    const navigationCacheKey=new Request(url.origin+url.pathname,{method:"GET"});
+    const appRoot=ENTRY.replace(/src\/index\.html$/,"");
+    const isAppEntry=url.pathname===ENTRY||url.pathname===appRoot||url.pathname===appRoot+"index.html";
+    function offlineNavigationResponse(fallbackResponse){
+      return caches.match(navigationCacheKey).then(function(cached){
+        if(cached)return cached;
+        if(isAppEntry){
+          return caches.match(ENTRY).then(function(entry){
+            return entry||fallbackResponse||new Response("Pacific Education is offline or the connection is taking too long.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
           });
         }
-        return response;
-      }).catch(()=>caches.match(ENTRY).then(cached=>cached||new Response("Pacific Education is offline or the connection is taking too long.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}})))
+        return fallbackResponse||new Response("This Pacific Education page is not cached for offline use. Connect to the internet and open it once.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
+      }).catch(function(){
+        return fallbackResponse||new Response("Pacific Education is offline or the connection is taking too long.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
+      });
+    }
+    event.respondWith(
+      fetchWithTimeout(request,NAVIGATION_TIMEOUT_MS).then(response=>{
+        if(!response.ok)return offlineNavigationResponse(response);
+        return injectRuntimeRepair(response).then(function(repaired){
+          const copy=repaired.clone();
+          caches.open(CACHE_NAME).then(cache=>cache.put(navigationCacheKey,copy)).catch(()=>{});
+          return repaired;
+        });
+      }).catch(()=>offlineNavigationResponse(null))
     );
     return;
   }
