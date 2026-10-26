@@ -29,11 +29,12 @@ jobs:
           # but the existing JSON is never overwritten unless eligible articles
           # are successfully collected and validated.
           declare -A feeds=(
-            [unesco]="https://www.unesco.org/en/newsroom?format=rss"
+            [unesco]="https://www.unesco.org/en/newsroom"
+            [unevoc]="https://connect.unevoc.unesco.org/unevoc_rss.xml"
             [who]="https://www.who.int/rss-feeds/news-english.xml"
             [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
           )
-          for source in unesco who un; do
+          for source in unesco unevoc who un; do
             echo "Fetching official feed: $source"
             if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
               --retry 2 --retry-all-errors --retry-delay 3 \
@@ -52,6 +53,7 @@ jobs:
           const { execFileSync } = require('child_process');
           const sources = [
             { key: 'unesco', label: 'UNESCO', host: 'unesco.org' },
+            { key: 'unevoc', label: 'UNESCO-UNEVOC', host: 'unesco.org' },
             { key: 'who', label: 'WHO', host: 'who.int' },
             { key: 'un', label: 'UN News', host: 'un.org' }
           ];
@@ -286,7 +288,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'UNESCO newsroom links validated against article datePublished metadata, WHO RSS and UN News RSS feeds',
+            source: 'UNESCO newsroom links validated against article datePublished metadata, official UNESCO-UNEVOC RSS, WHO RSS and UN News RSS feeds',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
