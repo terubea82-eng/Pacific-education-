@@ -203,12 +203,15 @@ jobs:
           function subjects(text) {
             const t = String(text || '').toLowerCase(), s = [];
             if (/literacy|reading|language|english|teacher|school|education|learning/.test(t)) s.push('English');
-            if (/math|mathematics|number|data/.test(t)) s.push('Mathematics');
-            if (/science|health|disease|medicine|medical|diagnostic|donor|vaccine|vaccination|climate|environment|disaster|pandemic|cancer|malaria|obesity|nutrition|healthcare|maternal|reproductive/.test(t)) s.push('Science', 'Health Science');
+            if (/math|mathematics|number|data|statistics/.test(t)) s.push('Mathematics');
+            if (/science|health|disease|medicine|medical|diagnostic|donor|vaccine|vaccination|climate|environment|disaster|pandemic|cancer|malaria|obesity|nutrition|healthcare|maternal|reproductive|marine|ocean|biodiversity|wildlife|energy|food|hunger|cholera|agriculture|water/.test(t)) s.push('Science', 'Health Science');
             if (/technology|digital|internet|computer|artificial intelligence|\bai\b/.test(t)) s.push('Computer Studies');
-            if (/community|society|government|poverty|displacement|children|child rights/.test(t)) s.push('Social Science');
-            if (/place|country|climate|environment|migration/.test(t)) s.push('Geography');
+            if (/community|society|government|poverty|displacement|children|child rights|humanitarian|aid|conflict|war|gaza|sudan|sustainable development|development gap|food security|hunger|cities|goals/.test(t)) s.push('Social Science');
+            if (/place|country|climate|environment|migration|marine|ocean|biodiversity|water|energy|agriculture|cities|gaza|sudan|central african republic/.test(t)) s.push('Geography');
             if (/history|heritage|conflict|war|culture/.test(t)) s.push('History');
+            // Every source item is intended for teacher-led discussion. Keep an
+            // explicit curriculum route even when a topic is not yet classified.
+            if (!s.length) s.push('Social Science');
             return [...new Set(s)];
           }
           const all = [];
