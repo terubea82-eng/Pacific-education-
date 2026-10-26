@@ -52,10 +52,26 @@ jobs:
               if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
                 --retry 1 --retry-all-errors --retry-delay 2 \
                 --user-agent 'PacificEducationPilot/1.0 (educational current-affairs feed)' \
-                --header 'Accept: application/rss+xml, application/atom+xml, application/xml, text/xml, */*' \
-                "$feed_url" -o "/tmp/feed-$source.xml" &&
-                grep -Eiq '<(rss|feed|rdf:RDF|item|entry)([[:space:]>])' "/tmp/feed-$source.xml"; then
-                echo "$source feed accepted from $feed_url"
+                --header 'Accept: application/rss+xml, application/atom+xml, application/xml, text/xml, text/html, */*' \
+                "$feed_url" -o "/tmp/feed-$source.xml"; then
+                # UNESCO and WHO newsroom endpoints are intentionally parsed as
+                # official HTML article listings by entries(); do not reject them
+                # merely because they are not RSS. All other sources must return XML.
+                if [[ "$source" == "unesco" || "$source" == "whoNewsroom" || "$source" == "whoPacific" ]] ||
+                   grep -Eiq '<(rss|feed|rdf:RDF|item|entry)([[:space:]>])' "/tmp/feed-$source.xml"; then
+                  echo "$source endpoint accepted from $feed_url"
+                  fetched=true
+                  break
+                fi
+              fi
+              echo "$source candidate did not return usable content: $feed_url"
+              rm -f "/tmp/feed-$source.xml"
+            done
+            if [ "$fetched" != true ]; then
+              echo "::warning::No usable official feed endpoint found for $source; trying remaining sources."
+              rm -f "/tmp/feed-$source.xml"
+            fi
+          done
                 fetched=true
                 break
               fi
@@ -67,6 +83,7 @@ jobs:
               rm -f "/tmp/feed-$source.xml"
             fi
           done
+
           node <<'NODE'
           const fs = require('fs');
           const { URL } = require('url');
