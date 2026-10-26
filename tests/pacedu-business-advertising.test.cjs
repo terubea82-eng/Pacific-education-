@@ -29,3 +29,13 @@ test("revenue estimator is local-only, starts at zero and excludes payment proce
   assert.match(script, /monthly \* 12/);
   assert.match(page, /does not collect data or process payments/);
 });
+
+test("advertising page is easy to find from the welcome screen and app menu without entering student activities", () => {
+  const repair = fs.readFileSync("src/js/pacificEducationFutureSafeFeatureRepair.js", "utf8");
+  assert.match(repair, /pacificEducationWelcomeAdvertisingLink/);
+  assert.match(repair, /pacificEducationWelcomeAdvertisingButton/);
+  assert.match(repair, /View Advertising Page/);
+  assert.match(repair, /href=\\\"\.\/business-advertising\.html\\\"/);
+  assert.match(repair, /peBusinessAdvertisingMenuLink/);
+  assert.match(repair, /without inserting[\\s\\S]*?student activity pages/);
+});
