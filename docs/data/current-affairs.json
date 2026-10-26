@@ -1,23 +1,8 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-26T05:10:08.916Z",
+  "generatedAt": "2026-10-26T05:10:40.077Z",
   "source": "UNESCO newsroom listing dates, WHO RSS and UN News RSS feeds; all items date- and relevance-validated",
   "items": [
-    {
-      "id": "OFFICIAL-393b04fdee2ff5cc18bed400",
-      "title": "Tracing marine life from a water sample: eDNA sampling begins in the Crozet Archipelago 23 October 2026",
-      "url": "https://www.unesco.org/en/articles/tracing-marine-life-water-sample-edna-sampling-begins-crozet-archipelago",
-      "source": "UNESCO",
-      "publishedAt": "2026-10-24T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
     {
       "id": "OFFICIAL-a1dd16c6a74645266144d6e0",
       "title": "Soil mapping aims to boost agricultural production in Kenya",
@@ -31,6 +16,38 @@
         "Science",
         "Health Science",
         "Geography"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-393b04fdee2ff5cc18bed400",
+      "title": "Tracing marine life from a water sample: eDNA sampling begins in the Crozet Archipelago",
+      "url": "https://www.unesco.org/en/articles/tracing-marine-life-water-sample-edna-sampling-begins-crozet-archipelago",
+      "source": "UNESCO",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-f8774d21de78d030be87932d",
+      "title": "UNESCO Intangible Cultural Heritage: 64 practices to be examined, as countries join forces to safeguard living heritage across borders",
+      "url": "https://www.unesco.org/en/articles/unesco-intangible-cultural-heritage-64-practices-be-examined-countries-join-forces-safeguard-living",
+      "source": "UNESCO",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "History"
       ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -128,6 +145,23 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
+      "id": "OFFICIAL-c83b398fa190d39853cf9a2e",
+      "title": "Gender gaps in education narrow globally, yet early marriage remains a major barrier to girls’ education, new UNESCO report shows",
+      "url": "https://www.unesco.org/en/articles/gender-gaps-education-narrow-globally-yet-early-marriage-remains-major-barrier-girls-education-new",
+      "source": "UNESCO",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "English"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
       "id": "OFFICIAL-f482e781a6cee55f1d880b60",
       "title": "Who gets to shape AI? UN debate centres on power, trust and inclusion",
       "url": "https://news.un.org/feed/view/en/story/2026/09/1168498",
@@ -198,24 +232,6 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-5f919d5b593df92e365ce4a0",
-      "title": "UNESCO and Norway strengthen their partnership through new agreement to advance education, culture and freedom of expression 16 September 2026",
-      "url": "https://www.unesco.org/en/articles/unesco-and-norway-strengthen-their-partnership-through-new-agreement-advance-education-culture-and",
-      "source": "UNESCO",
-      "publishedAt": "2026-09-25T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [
-        "English",
-        "History"
-      ],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
       "id": "OFFICIAL-7a341ba0dff8e669c9a2df40",
       "title": "Right to development: A blueprint for unmet promises",
       "url": "https://news.un.org/feed/view/en/story/2026/09/1168405",
@@ -251,11 +267,29 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
+      "id": "OFFICIAL-5f919d5b593df92e365ce4a0",
+      "title": "UNESCO and Norway strengthen their partnership through new agreement to advance education, culture and freedom of expression",
+      "url": "https://www.unesco.org/en/articles/unesco-and-norway-strengthen-their-partnership-through-new-agreement-advance-education-culture-and",
+      "source": "UNESCO",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "English",
+        "History"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
       "id": "OFFICIAL-b281d7752effd1ba06d34aa0",
-      "title": "Odesa : UNESCO condemns renewed attack on World Heritage property 15 August 2026",
+      "title": "Odesa : UNESCO condemns renewed attack on World Heritage property",
       "url": "https://www.unesco.org/en/articles/odesa-unesco-condemns-renewed-attack-world-heritage-property",
       "source": "UNESCO",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "publishedAt": "2026-08-15T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
@@ -269,10 +303,10 @@
     },
     {
       "id": "OFFICIAL-0f2756d19daae2f6836a91ad",
-      "title": "Five years on: UNESCO calls for the full restoration of the right to education for Afghan girls and women 11 August 2026",
+      "title": "Five years on: UNESCO calls for the full restoration of the right to education for Afghan girls and women",
       "url": "https://www.unesco.org/en/articles/five-years-unesco-calls-full-restoration-right-education-afghan-girls-and-women",
       "source": "UNESCO",
-      "publishedAt": "2026-08-15T00:00:00.000Z",
+      "publishedAt": "2026-08-11T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
