@@ -84,10 +84,10 @@ jobs:
                 const href = m[2].replace(/&amp;/g, '&');
                 if (!/^(?:https:\/\/www\.unesco\.org)?\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href)) continue;
                 const titleWithDate = decode(m[4]);
-                const titleDateMatch = titleWithDate.match(/\\b(\\d{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4})\\b/i);
+                const titleDateMatch = titleWithDate.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
                 const titleDateTimestamp = titleDateMatch ? Date.parse(titleDateMatch[1]) : NaN;
                 const title = titleWithDate
-                  .replace(/\\s+\\d{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4}\\s*$/i, '')
+                  .replace(/\s+\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}\s*$/i, '')
                   .trim();
                 if (!title || title.length < 12 || /^(read more|learn more|more)$/i.test(title)) continue;
                 const start = Math.max(0, m.index - 450);
