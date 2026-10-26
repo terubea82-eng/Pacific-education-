@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-26T05:14:24.990Z",
+  "generatedAt": "2026-10-26T05:15:05.956Z",
   "source": "UNESCO, WHO global and Western Pacific newsroom dates, WHO RSS and UN News RSS feeds; all items date- and relevance-validated",
   "items": [
     {
@@ -32,6 +32,60 @@
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
       "subjectsApplicable": [],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-3fe5d4e38946873f5a0f8777",
+      "title": "WHO launches working papers on traditional medicine",
+      "url": "https://www.who.int/news/item/23-10-2026-who-launches-working-papers-on-traditional-medicine",
+      "source": "WHO Newsroom",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-73eb9274647e4817480bc7bd",
+      "title": "WHO and ENHYPEN join efforts to inspire young blood donors globally",
+      "url": "https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally",
+      "source": "WHO Newsroom",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-dca05e09a6defd6e8ba06451",
+      "title": "Global Diagnostics Coalition calls for collective action to close the diagnostic gap",
+      "url": "https://www.who.int/news/item/22-10-2026-global-diagnostics-coalition-calls-for-collective-action-to-close-the-diagnostic-gap",
+      "source": "WHO Newsroom",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
@@ -84,6 +138,42 @@
       "ageSuitability": "Teacher/reviewer screening required before student use.",
       "subjectsApplicable": [
         "History"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-7f0c6ab165321bbb6ef37ed3",
+      "title": "UAE Integrative Medicine Council announces commitments to advance evidence-based integrative medicine",
+      "url": "https://www.who.int/news/item/21-10-2026-united-arab-emirates-announces-national-commitments-to-advance-evidence-based-integrative-medicine",
+      "source": "WHO Newsroom",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science"
+      ],
+      "levelsApplicable": [],
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-720402a3105f015c1f1a3bd3",
+      "title": "Western Pacific countries show strong interest in working together on access to essential medicines",
+      "url": "https://www.who.int/westernpacific/news/item/21-10-2026-western-pacific-countries-show-strong-interest-in-working-together-on-access-to-essential-medicines",
+      "source": "WHO Western Pacific",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Teacher/reviewer screening required before student use.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science"
       ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -427,76 +517,6 @@
         "Science",
         "Health Science",
         "Geography"
-      ],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-2cd1228a3a7563a9a7941b4a",
-      "title": "‘Shared blueprint for peace’: Development goals deliver for billions, but challenges remain",
-      "url": "https://news.un.org/feed/view/en/story/2026/07/1167888",
-      "source": "UN News",
-      "publishedAt": "2026-07-07T12:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [
-        "Social Science",
-        "History"
-      ],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-52f315acbc50cd699d315e35",
-      "title": "When AI hurts people, who’s to blame? Global experts grapple with accountability",
-      "url": "https://news.un.org/feed/view/en/story/2026/07/1167886",
-      "source": "UN News",
-      "publishedAt": "2026-07-07T12:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [
-        "Computer Studies",
-        "History"
-      ],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-31381d48759d7f93490fca96",
-      "title": "Young people value partnership and parenthood but barriers block their dreams",
-      "url": "https://news.un.org/feed/view/en/story/2026/07/1167885",
-      "source": "UN News",
-      "publishedAt": "2026-07-07T12:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [],
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-12233b4e4881ea40250f389c",
-      "title": "Khalida Popal and Javier Zanetti among football stars appointed UN Champions",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167582",
-      "source": "UN News",
-      "publishedAt": "2026-05-24T12:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [
-        "History"
       ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
