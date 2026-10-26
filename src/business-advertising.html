@@ -69,6 +69,19 @@
     </div>
     <h3>Proposed annual prices</h3>
     <p>Starter $50/year · Growth $150/year · Professional $390/year · Enterprise $990/year. These equal ten monthly payments, subject to final approval and clear renewal/cancellation terms.</p>
+    <section aria-labelledby="revenueEstimateHeading">
+      <h3 id="revenueEstimateHeading">Estimate possible subscription income</h3>
+      <p>Enter how many paying advertisers you might have in each package. This is a planning estimate only, not actual revenue or a forecast guarantee. All values start at zero.</p>
+      <div class="grid">
+        <div><label for="estimateStarter">Starter subscribers ($5/month)</label><input id="estimateStarter" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="estimateGrowth">Growth subscribers ($15/month)</label><input id="estimateGrowth" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="estimateProfessional">Professional subscribers ($39/month)</label><input id="estimateProfessional" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="estimateEnterprise">Enterprise subscribers ($99/month)</label><input id="estimateEnterprise" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></div>
+      </div>
+      <p><strong>Estimated monthly gross subscription revenue:</strong> <output id="estimateMonthlyRevenue" aria-live="polite">$0.00</output></p>
+      <p><strong>Simple 12-month gross equivalent:</strong> <output id="estimateAnnualRevenue">$0.00</output></p>
+      <p class="muted">Gross estimates before discounts, unpaid invoices, cancellations, taxes, refunds and payment-provider fees. Promotions and annual plans are not included. This calculator does not collect data or process payments.</p>
+    </section>
     <h3>Optional promotions</h3>
     <ul><li>Featured advert for 7 days: $10</li><li>Featured advert for 30 days: $25</li><li>Promote one product for 7 days: $5</li><li>Sponsored category for 7 days: $49</li><li>International campaign for 30 days: $99–$299, depending on scope</li><li>National or regional campaigns: quote after scope is agreed</li></ul>
     <h3>Education and community access</h3>
