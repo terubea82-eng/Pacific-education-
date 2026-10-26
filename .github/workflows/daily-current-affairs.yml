@@ -49,6 +49,7 @@ jobs:
           node <<'NODE'
           const fs = require('fs');
           const { URL } = require('url');
+          const { execFileSync } = require('child_process');
           const sources = [
             { key: 'unesco', label: 'UNESCO', host: 'unesco.org' },
             { key: 'who', label: 'WHO', host: 'who.int' },
@@ -94,11 +95,59 @@ jobs:
                   if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
                 }
                 dates.sort((a, b) => a.distance - b.distance);
-                if (!dates.length) continue;
+                const articleUrl = new URL(href, 'https://www.unesco.org').toString();
+                // The newsroom card may expose a modified/event date. Use only
+                // the linked article's explicit original publication metadata;
+                // never substitute dateModified or a nearby card timestamp.
+                let articleHtml = '';
+                try {
+                  articleHtml = execFileSync('curl', [
+                    '--silent', '--show-error', '--fail', '--location',
+                    '--connect-timeout', '8', '--max-time', '15',
+                    '--user-agent', 'PacificEducationPilot/1.0 (educational current-affairs feed)',
+                    '--header', 'Accept: text/html',
+                    articleUrl
+                  ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 2 * 1024 * 1024 });
+                } catch (_) {
+                  console.warn('Skipping UNESCO item because article metadata could not be fetched: ' + articleUrl);
+                  continue;
+                }
+                // Read datePublished from JSON-LD and publication meta tags. Parse
+                // meta attributes independently of their order, and fail closed if
+                // the publisher exposes conflicting original-publication dates.
+                const publicationValues = [
+                  ...[...articleHtml.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi)].map(match => match[1])
+                ];
+                for (const metaMatch of articleHtml.matchAll(/<meta\b[^>]*>/gi)) {
+                  const tagText = metaMatch[0];
+                  const keyMatch = tagText.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i);
+                  const contentMatch = tagText.match(/content\s*=\s*["']([^"']+)["']/i);
+                  if (keyMatch && contentMatch &&
+                      /^(?:article:published_time|datePublished)$/i.test(keyMatch[1].trim())) {
+                    publicationValues.push(contentMatch[1].trim());
+                  }
+                }
+                const validPublicationDates = publicationValues
+                  .map(value => {
+                    const match = String(value).trim().match(/^(\d{4}-\d{2}-\d{2})(?:T|\s|$)/);
+                    if (!match || !Number.isFinite(Date.parse(value))) return null;
+                    return { date: match[1], timestamp: Date.parse(value) };
+                  })
+                  .filter(Boolean);
+                const distinctPublicationDates = [...new Set(validPublicationDates.map(value => value.date))];
+                if (!validPublicationDates.length || distinctPublicationDates.length !== 1) {
+                  console.warn('Skipping UNESCO item because datePublished metadata is missing, invalid, or conflicting: ' + articleUrl);
+                  continue;
+                }
+                const publicationTimestamp = validPublicationDates[0].timestamp;
+                if (!Number.isFinite(publicationTimestamp)) {
+                  console.warn('Skipping UNESCO item with invalid datePublished metadata: ' + articleUrl);
+                  continue;
+                }
                 htmlItems.push({
                   title,
-                  url: new URL(href, 'https://www.unesco.org').toString(),
-                  date: new Date(dates[0].timestamp).toISOString(),
+                  url: articleUrl,
+                  date: new Date(publicationTimestamp).toISOString(),
                   description: title
                 });
               }
@@ -237,7 +286,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'Official UNESCO-UNEVOC, WHO and UN News RSS/Atom feeds',
+            source: 'UNESCO newsroom links validated against article datePublished metadata, WHO RSS and UN News RSS feeds',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
