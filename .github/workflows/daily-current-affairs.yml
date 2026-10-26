@@ -91,7 +91,9 @@ jobs:
                 const titleDateMatch = titleWithDate.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
                 const titleDateTimestamp = titleDateMatch ? Date.parse(titleDateMatch[1]) : NaN;
                 const title = titleWithDate
+                  .replace(/^\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}\s*/i, '')
                   .replace(/\s+\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}\s*$/i, '')
+                  .replace(/^(?:(?:joint\s+)?news release|media release|departmental update|feature story|commentary|speech)\s+/i, '')
                   .trim();
                 if (!title || title.length < 12 || /^(read more|learn more|more)$/i.test(title)) continue;
                 const start = Math.max(0, m.index - 450);
@@ -104,7 +106,7 @@ jobs:
                   if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
                 }
                 dates.sort((a, b) => a.distance - b.distance);
-                const articleUrl = new URL(href, 'https://www.unesco.org').toString();
+                const articleUrl = new URL(href, isWhoPacificArticle ? 'https://www.who.int' : 'https://www.unesco.org').toString();
                 // The newsroom card may expose a modified/event date. Use only
                 // the linked article's explicit original publication metadata;
                 // never substitute dateModified or a nearby card timestamp.
