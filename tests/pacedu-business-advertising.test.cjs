@@ -27,5 +27,5 @@ test("revenue estimator is local-only, starts at zero and excludes payment proce
   assert.match(page, /planning estimate only/);
   assert.match(script, /estimateFields/);
   assert.match(script, /monthly \* 12/);
-  assert.match(script, /does not collect data or process payments/);
+  assert.match(page, /does not collect data or process payments/);
 });
