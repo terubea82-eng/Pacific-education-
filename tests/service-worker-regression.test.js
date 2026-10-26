@@ -15,11 +15,11 @@ test("service worker cache keys preserve asset version query strings", () => {
 });
 
 test("navigation pages keep separate offline cache entries and preserve the app entry", () => {
-  assert.match(serviceWorker, /const navigationCacheKey\\s*=\\s*new Request\\(url\\.origin\\+url\\.pathname/);
-  assert.match(serviceWorker, /cache\\.put\\(navigationCacheKey,copy\\)/);
-  assert.match(serviceWorker, /caches\\.match\\(navigationCacheKey\\)/);
-  assert.match(serviceWorker, /if\\(isAppEntry\\)/);
-  assert.doesNotMatch(serviceWorker, /cache\\.put\\(ENTRY,copy\\)/);
-  assert.match(serviceWorker, /src\\/business-advertising\\.html/);
-  assert.match(serviceWorker, /paceduBusinessAdvertising\\.js\\?v=20261026-business-advertising/);
+  assert.ok(serviceWorker.includes("const navigationCacheKey=new Request(url.origin+url.pathname"));
+  assert.ok(serviceWorker.includes("cache=>cache.put(navigationCacheKey,copy)"));
+  assert.ok(serviceWorker.includes("caches.match(navigationCacheKey)"));
+  assert.ok(serviceWorker.includes("if(isAppEntry)"));
+  assert.ok(!serviceWorker.includes("cache.put(ENTRY,copy)"));
+  assert.ok(serviceWorker.includes('"/Pacific-education-/src/business-advertising.html"'));
+  assert.ok(serviceWorker.includes('"/Pacific-education-/src/js/paceduBusinessAdvertising.js?v=20261026-business-advertising"'));
 });
