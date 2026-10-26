@@ -52,6 +52,35 @@
     form.reset();
     status.textContent = "This device's saved draft was cleared.";
   });
+  var estimateFields = [
+    { id: "estimateStarter", price: 5 },
+    { id: "estimateGrowth", price: 15 },
+    { id: "estimateProfessional", price: 39 },
+    { id: "estimateEnterprise", price: 99 }
+  ];
+  var monthlyOutput = document.getElementById("estimateMonthlyRevenue");
+  var annualOutput = document.getElementById("estimateAnnualRevenue");
+  function updateRevenueEstimate() {
+    if (!monthlyOutput || !annualOutput) return;
+    var monthly = 0;
+    estimateFields.forEach(function (item) {
+      var field = document.getElementById(item.id);
+      if (!field) return;
+      var count = Number(field.value);
+      if (!Number.isFinite(count) || count < 0) count = 0;
+      count = Math.min(1000000, Math.floor(count));
+      monthly += count * item.price;
+    });
+    var formatter = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+    monthlyOutput.textContent = formatter.format(monthly);
+    annualOutput.textContent = formatter.format(monthly * 12);
+  }
+  estimateFields.forEach(function (item) {
+    var field = document.getElementById(item.id);
+    if (field) field.addEventListener("input", updateRevenueEstimate);
+  });
+  updateRevenueEstimate();
+
   try {
     var saved = JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "null");
     if (saved && saved.status === "PENDING_OWNER_REVIEW") {
