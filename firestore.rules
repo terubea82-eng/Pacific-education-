@@ -100,7 +100,7 @@ service cloud.firestore {
 
       allow create: if request.auth != null
         && request.resource.data.keys().hasAll([
-          'studentUid', 'studentReference', 'studentName', 'classId',
+          'studentUid', 'studentReference', 'classId',
           'classLevel', 'subject', 'term', 'activityId', 'day',
           'responseMode', 'reviewStatus', 'storagePath',
           'photoContentType', 'photoSizeBytes', 'createdAt'
@@ -118,9 +118,9 @@ service cloud.firestore {
         && request.resource.data.studentReference is string
         && request.resource.data.studentReference.size() > 0
         && request.resource.data.studentReference.size() <= 100
-        && request.resource.data.studentName is string
-        && request.resource.data.studentName.size() > 0
-        && request.resource.data.studentName.size() <= 120
+        && (!request.resource.data.keys().hasAny(['studentName'])
+          || (request.resource.data.studentName is string
+            && request.resource.data.studentName.size() <= 120))
         && request.resource.data.classLevel is string
         && request.resource.data.classLevel.size() <= 40
         && request.resource.data.subject is string
