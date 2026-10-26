@@ -19,3 +19,13 @@ test("business draft form validates web links and remains local-only", () => {
   assert.match(script, /PENDING_OWNER_REVIEW/);
   assert.doesNotMatch(script, /fetch\s*\(|XMLHttpRequest|paymentIntent|stripe\.confirm/);
 });
+
+test("revenue estimator is local-only, starts at zero and excludes payment processing", () => {
+  for (const id of ["estimateStarter", "estimateGrowth", "estimateProfessional", "estimateEnterprise", "estimateMonthlyRevenue", "estimateAnnualRevenue"]) {
+    assert.ok(page.includes('id="' + id + '"'), "missing estimator element: " + id);
+  }
+  assert.match(page, /planning estimate only/);
+  assert.match(script, /estimateFields/);
+  assert.match(script, /monthly \* 12/);
+  assert.match(script, /does not collect data or process payments/);
+});
