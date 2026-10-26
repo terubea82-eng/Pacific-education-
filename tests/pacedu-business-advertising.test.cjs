@@ -42,3 +42,25 @@ test("advertising page is easy to find from the welcome screen and app menu with
   assert.ok(repair.includes("without inserting"));
   assert.ok(repair.includes("student activity pages"));
 });
+
+test("sponsor and donor leads are clearly prospective and protected from commercial influence", () => {
+  for (const phrase of [
+    "Sponsors, donors & education partners",
+    "No organisation listed below is a confirmed PacEdu sponsor or partner",
+    "Prospective lead · not a partner",
+    "do not transfer PacEdu ownership, equity, voting rights, management control or intellectual property",
+    "student personal information for sponsorship or advertising"
+  ]) {
+    assert.ok(page.includes(phrase), "missing sponsor safeguard: " + phrase);
+  }
+  for (const url of [
+    "https://www.vodafone.com.fj/foundation",
+    "https://www.westpac.com.fj/contact-us/sponsorship/",
+    "https://www.fijiwaterfoundation.org/",
+    "https://www.fmf.com.fj/solutions-1"
+  ]) {
+    assert.ok(page.includes(url), "missing official prospective funding link: " + url);
+  }
+  assert.match(page, /target="_blank" rel="noopener noreferrer"/);
+  assert.match(page, /assessment, student marks, teacher decisions/);
+});
