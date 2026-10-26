@@ -31,10 +31,11 @@ jobs:
           declare -A feeds=(
             [unesco]="https://www.unesco.org/en/newsroom"
             [who]="https://www.who.int/rss-feeds/news-english.xml"
+            [whoNewsroom]="https://www.who.int/news-room"
             [whoPacific]="https://www.who.int/westernpacific/newsroom"
             [un]="https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml"
           )
-          for source in unesco who whoPacific un; do
+          for source in unesco who whoNewsroom whoPacific un; do
             echo "Fetching official feed: $source"
             if curl --silent --show-error --fail --location --connect-timeout 15 --max-time 45 \
               --retry 2 --retry-all-errors --retry-delay 3 \
@@ -54,6 +55,7 @@ jobs:
           const sources = [
             { key: 'unesco', label: 'UNESCO', host: 'unesco.org' },
             { key: 'who', label: 'WHO', host: 'who.int' },
+            { key: 'whoNewsroom', label: 'WHO Newsroom', host: 'who.int' },
             { key: 'whoPacific', label: 'WHO Western Pacific', host: 'who.int' },
             { key: 'un', label: 'UN News', host: 'un.org' }
           ];
@@ -74,7 +76,7 @@ jobs:
           }
           function entries(xml, sourceKey) {
             const blocks = xml.match(/<(?:item|entry)\b[^>]*>[\s\S]*?<\/(?:item|entry)\s*>/gi) || [];
-            if (!blocks.length && (sourceKey === 'unesco' || sourceKey === 'whoPacific')) {
+            if (!blocks.length && (sourceKey === 'unesco' || sourceKey === 'whoNewsroom' || sourceKey === 'whoPacific')) {
               // UNESCO's newsroom endpoint is currently HTML rather than RSS/XML.
               // Read only article links from the official newsroom and require a
               // nearby publication date; normal URL, freshness and relevance checks
@@ -86,7 +88,8 @@ jobs:
                 const href = m[2].replace(/&amp;/g, '&');
                 const isUnescoArticle = /^(?:https:\/\/www\.unesco\.org)?\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href);
                 const isWhoPacificArticle = /^(?:https:\/\/www\.who\.int)?\/westernpacific\/news\/item\//i.test(href);
-                if (!isUnescoArticle && !isWhoPacificArticle) continue;
+                const isWhoGlobalArticle = /^(?:https:\/\/www\.who\.int)?\/news\/item\/\d{2}-\d{2}-\d{4}(?:-|\/|$)/i.test(href);
+                if (!isUnescoArticle && !isWhoPacificArticle && !(sourceKey === 'whoNewsroom' && isWhoGlobalArticle)) continue;
                 const titleWithDate = decode(m[4]);
                 const titleDateMatch = titleWithDate.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
                 const titleDateTimestamp = titleDateMatch ? Date.parse(titleDateMatch[1]) : NaN;
@@ -106,7 +109,7 @@ jobs:
                   if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
                 }
                 dates.sort((a, b) => a.distance - b.distance);
-                const articleUrl = new URL(href, isWhoPacificArticle ? 'https://www.who.int' : 'https://www.unesco.org').toString();
+                const articleUrl = new URL(href, (isWhoPacificArticle || isWhoGlobalArticle) ? 'https://www.who.int' : 'https://www.unesco.org').toString();
                 // The newsroom card may expose a modified/event date. Use only
                 // the linked article's explicit original publication metadata;
                 // never substitute dateModified or a nearby card timestamp.
@@ -116,7 +119,12 @@ jobs:
                 // Keep the nearest publisher-supplied date and fail closed when
                 // there is no date or equally-near dates conflict.
                 let publicationTimestamp;
-                if (Number.isFinite(titleDateTimestamp)) {
+                const urlDate = urlPublicationDate(articleUrl);
+                if ((isWhoPacificArticle || isWhoGlobalArticle) && urlDate) {
+                  // WHO article URL dates represent the original publication date;
+                  // RSS timestamps can reflect later updates to older articles.
+                  publicationTimestamp = Date.parse(urlDate + 'T00:00:00.000Z');
+                } else if (Number.isFinite(titleDateTimestamp)) {
                   // UNESCO cards often include the publication date in the same
                   // link text as the headline; prefer this direct association.
                   publicationTimestamp = Date.parse(new Date(titleDateTimestamp).toISOString().slice(0, 10) + 'T00:00:00.000Z');
@@ -281,7 +289,7 @@ jobs:
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
-            source: 'UNESCO and WHO Western Pacific newsroom dates, WHO RSS and UN News RSS feeds; all items date- and relevance-validated',
+            source: 'UNESCO, WHO global and Western Pacific newsroom dates, WHO RSS and UN News RSS feeds; all items date- and relevance-validated',
             items
           };
           fs.writeFileSync('docs/data/current-affairs.json', JSON.stringify(out, null, 2) + '\n');
