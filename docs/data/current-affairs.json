@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-26T05:15:05.956Z",
+  "generatedAt": "2026-10-26T05:16:02.146Z",
   "source": "UNESCO, WHO global and Western Pacific newsroom dates, WHO RSS and UN News RSS feeds; all items date- and relevance-validated",
   "items": [
     {
@@ -31,7 +31,11 @@
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Geography"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
@@ -189,7 +193,10 @@
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
+      "subjectsApplicable": [
+        "Social Science",
+        "Geography"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
@@ -333,6 +340,9 @@
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
       "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Social Science",
         "History"
       ],
       "levelsApplicable": [],
@@ -385,7 +395,10 @@
       "ageSuitability": "Teacher/reviewer screening required before student use.",
       "subjectsApplicable": [
         "English",
-        "Social Science"
+        "Science",
+        "Health Science",
+        "Social Science",
+        "Geography"
       ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -453,7 +466,11 @@
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Social Science"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
@@ -468,7 +485,9 @@
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
+      "subjectsApplicable": [
+        "Social Science"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
@@ -483,7 +502,12 @@
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Social Science",
+        "Geography"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
@@ -498,7 +522,9 @@
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Teacher/reviewer screening required before student use.",
-      "subjectsApplicable": [],
+      "subjectsApplicable": [
+        "Social Science"
+      ],
       "levelsApplicable": [],
       "verificationStatus": "PENDING_TEACHER_REVIEW",
       "approved": false,
