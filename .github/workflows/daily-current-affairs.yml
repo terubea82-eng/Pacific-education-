@@ -33,8 +33,8 @@ jobs:
             # hosts redirect /feed/ to HTML or block one path while ?feed=rss2 works.
             case "$source" in
               fijiOne) candidates=("https://fijionenews.com.fj/feed/") ;;
-              fijiTimes) candidates=("https://www.fijitimes.com.fj/feed" "https://www.fijitimes.com.fj/feed/" "https://www.fijitimes.com.fj/?feed=rss2" "https://feeds.feedburner.com/fijitimes" "http://feeds.feedburner.com/fijitimes") ;;
-              fijiSun) candidates=("https://fijisun.com.fj/category/fiji-news/feed" "https://fijisun.com.fj/category/fiji-news/feed/" "https://fijisun.com.fj/tag/fiji-news/feed/" "https://fijisun.com.fj/?cat=300&feed=rss2" "https://fijisun.com.fj/?feed=rss2" "https://fijisun.com.fj/feed/" "https://fijisun.com.fj/feed") ;;
+              fijiTimes) candidates=("https://www.fijitimes.com.fj/feed" "https://www.fijitimes.com.fj/feed/" "https://www.fijitimes.com.fj/?feed=rss2" "https://www.fijitimes.com.fj/category/news/" "https://www.fijitimes.com.fj/") ;;
+              fijiSun) candidates=("https://fijisun.com.fj/category/fiji-news/feed" "https://fijisun.com.fj/tag/fiji-news/feed/" "https://fijisun.com.fj/news" "https://fijisun.com.fj/") ;;
               fbc) candidates=("https://www.fbcnews.com.fj/feed/") ;;
               rnzPacific) candidates=("https://www.rnz.co.nz/rss/pacific.xml") ;;
               unesco) candidates=("https://www.unesco.org/en/newsroom") ;;
@@ -58,6 +58,7 @@ jobs:
                 # official HTML article listings by entries(); do not reject them
                 # merely because they are not RSS. All other sources must return XML.
                 if [[ "$source" == "unesco" || "$source" == "whoNewsroom" || "$source" == "whoPacific" ]] ||
+                   [[ "$feed_url" == "https://www.fijitimes.com.fj/category/news/" || "$feed_url" == "https://www.fijitimes.com.fj/" || "$feed_url" == "https://fijisun.com.fj/news" || "$feed_url" == "https://fijisun.com.fj/" ]] ||
                    grep -Eiq '<(rss|feed|rdf:RDF|item|entry)([[:space:]>])' "/tmp/feed-$source.xml"; then
                   echo "$source endpoint accepted from $feed_url"
                   fetched=true
@@ -109,20 +110,22 @@ jobs:
           }
           function entries(xml, sourceKey) {
             const blocks = xml.match(/<(?:item|entry)\b[^>]*>[\s\S]*?<\/(?:item|entry)\s*>/gi) || [];
-            if (!blocks.length && (sourceKey === 'unesco' || sourceKey === 'whoNewsroom' || sourceKey === 'whoPacific')) {
+            if (!blocks.length && ['unesco', 'whoNewsroom', 'whoPacific', 'fijiTimes', 'fijiSun'].includes(sourceKey)) {
               // UNESCO's newsroom endpoint is currently HTML rather than RSS/XML.
               // Read only article links from the official newsroom and require a
               // nearby publication date; normal URL, freshness and relevance checks
               // below still apply before any item is accepted.
               const htmlItems = [];
               const anchors = [...xml.matchAll(/<a\b([^>]*?)href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi)];
-              const datePattern = /datetime=["']([^"']+)["']|\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/gi;
+              const datePattern = /datetime=["']([^"']+)["']|\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b|\b(\d+\s+(?:minutes?|hours?|days?|weeks?)\s+ago)\b|\b(yesterday)\b/gi;
               for (const m of anchors) {
                 const href = m[2].replace(/&amp;/g, '&');
                 const isUnescoArticle = /^(?:https:\/\/www\.unesco\.org)?\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href);
                 const isWhoPacificArticle = /^(?:https:\/\/www\.who\.int)?\/westernpacific\/news\/item\//i.test(href);
                 const isWhoGlobalArticle = /^(?:https:\/\/www\.who\.int)?\/news\/item\/\d{2}-\d{2}-\d{4}(?:-|\/|$)/i.test(href);
-                if (!isUnescoArticle && !isWhoPacificArticle && !(sourceKey === 'whoNewsroom' && isWhoGlobalArticle)) continue;
+                const isFijiTimesArticle = sourceKey === 'fijiTimes' && /^(?:https:\/\/www\.fijitimes\.com\.fj)?\/(?:news|sport|sports|business|world|opinion|letters-to-the-editor)\/.+/i.test(href);
+                const isFijiSunArticle = sourceKey === 'fijiSun' && /^(?:https:\/\/fijisun\.com\.fj)?\/(?:news|sports|sport|business|living|opinion)\/.+/i.test(href);
+                if (!isUnescoArticle && !isWhoPacificArticle && !(sourceKey === 'whoNewsroom' && isWhoGlobalArticle) && !isFijiTimesArticle && !isFijiSunArticle) continue;
                 const titleWithDate = decode(m[4]);
                 const titleDateMatch = titleWithDate.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
                 const titleDateTimestamp = titleDateMatch ? Date.parse(titleDateMatch[1]) : NaN;
@@ -137,12 +140,20 @@ jobs:
                 const neighborhood = xml.slice(start, end);
                 const dates = [];
                 for (const dm of neighborhood.matchAll(datePattern)) {
-                  const raw = dm[1] || dm[2];
-                  const timestamp = Date.parse(raw);
+                  const raw = dm[1] || dm[2] || dm[3] || dm[4];
+                  let timestamp = Date.parse(raw);
+                  const relative = raw.match(/^(\d+)\s+(minute|hour|day|week)s?\s+ago$/i);
+                  if (relative) {
+                    const units = { minute: 60000, hour: 3600000, day: 86400000, week: 604800000 };
+                    timestamp = Date.now() - Number(relative[1]) * units[relative[2].toLowerCase()];
+                  } else if (/^yesterday$/i.test(raw)) {
+                    timestamp = Date.now() - 86400000;
+                  }
                   if (Number.isFinite(timestamp)) dates.push({ raw, timestamp, distance: Math.abs(start + dm.index - m.index) });
                 }
                 dates.sort((a, b) => a.distance - b.distance);
-                const articleUrl = new URL(href, (isWhoPacificArticle || isWhoGlobalArticle) ? 'https://www.who.int' : 'https://www.unesco.org').toString();
+                const articleBase = isWhoPacificArticle || isWhoGlobalArticle ? 'https://www.who.int' : isFijiTimesArticle ? 'https://www.fijitimes.com.fj' : isFijiSunArticle ? 'https://fijisun.com.fj' : 'https://www.unesco.org';
+                const articleUrl = new URL(href, articleBase).toString();
                 // The newsroom card may expose a modified/event date. Use only
                 // the linked article's explicit original publication metadata;
                 // never substitute dateModified or a nearby card timestamp.
@@ -163,7 +174,7 @@ jobs:
                   publicationTimestamp = Date.parse(new Date(titleDateTimestamp).toISOString().slice(0, 10) + 'T00:00:00.000Z');
                 } else {
                   if (!dates.length || dates[0].distance > 700) {
-                    console.warn('Skipping UNESCO newsroom item because no nearby publisher date was found: ' + articleUrl);
+                    console.warn('Skipping ' + sourceKey + ' HTML newsroom item because no nearby publisher date was found: ' + articleUrl);
                     continue;
                   }
                   const nearestDistance = dates[0].distance;
@@ -171,13 +182,13 @@ jobs:
                     .filter(value => value.distance === nearestDistance)
                     .map(value => new Date(value.timestamp).toISOString().slice(0, 10)))];
                   if (nearestDates.length !== 1) {
-                    console.warn('Skipping UNESCO newsroom item because nearby publication dates conflict: ' + articleUrl);
+                    console.warn('Skipping ' + sourceKey + ' HTML newsroom item because nearby publication dates conflict: ' + articleUrl);
                     continue;
                   }
                   publicationTimestamp = Date.parse(nearestDates[0] + 'T00:00:00.000Z');
                 }
                 if (!Number.isFinite(publicationTimestamp)) {
-                  console.warn('Skipping UNESCO newsroom item with invalid newsroom date: ' + articleUrl);
+                  console.warn('Skipping ' + sourceKey + ' HTML newsroom item with invalid newsroom date: ' + articleUrl);
                   continue;
                 }
                 htmlItems.push({
