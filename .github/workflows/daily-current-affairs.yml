@@ -362,7 +362,8 @@ jobs:
           git commit -m "Refresh daily educational current affairs feed"
           # main may advance while the feed is being generated. Rebase the
           # feed-only commit on the latest main and retry non-fast-forward
-          # pushes; never force-push or auto-resolve a content conflict.
+          # pushes; never force-push. Only a conflict with another automated
+          # feed refresh may be resolved automatically, and only for this JSON file.
           for attempt in 1 2 3; do
             git fetch origin main
             if ! git rebase origin/main; then
