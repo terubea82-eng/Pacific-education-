@@ -83,7 +83,12 @@ jobs:
               for (const m of anchors) {
                 const href = m[2].replace(/&amp;/g, '&');
                 if (!/^(?:https:\/\/www\.unesco\.org)?\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href)) continue;
-                const title = decode(m[4]);
+                const titleWithDate = decode(m[4]);
+                const titleDateMatch = titleWithDate.match(/\\b(\\d{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4})\\b/i);
+                const titleDateTimestamp = titleDateMatch ? Date.parse(titleDateMatch[1]) : NaN;
+                const title = titleWithDate
+                  .replace(/\\s+\\d{1,2}\\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4}\\s*$/i, '')
+                  .trim();
                 if (!title || title.length < 12 || /^(read more|learn more|more)$/i.test(title)) continue;
                 const start = Math.max(0, m.index - 450);
                 const end = Math.min(xml.length, m.index + m[0].length + 700);
@@ -104,19 +109,26 @@ jobs:
                 // this article link on UNESCO's own newsroom listing instead.
                 // Keep the nearest publisher-supplied date and fail closed when
                 // there is no date or equally-near dates conflict.
-                if (!dates.length || dates[0].distance > 700) {
-                  console.warn('Skipping UNESCO newsroom item because no nearby publisher date was found: ' + articleUrl);
-                  continue;
+                let publicationTimestamp;
+                if (Number.isFinite(titleDateTimestamp)) {
+                  // UNESCO cards often include the publication date in the same
+                  // link text as the headline; prefer this direct association.
+                  publicationTimestamp = Date.parse(new Date(titleDateTimestamp).toISOString().slice(0, 10) + 'T00:00:00.000Z');
+                } else {
+                  if (!dates.length || dates[0].distance > 700) {
+                    console.warn('Skipping UNESCO newsroom item because no nearby publisher date was found: ' + articleUrl);
+                    continue;
+                  }
+                  const nearestDistance = dates[0].distance;
+                  const nearestDates = [...new Set(dates
+                    .filter(value => value.distance === nearestDistance)
+                    .map(value => new Date(value.timestamp).toISOString().slice(0, 10)))];
+                  if (nearestDates.length !== 1) {
+                    console.warn('Skipping UNESCO newsroom item because nearby publication dates conflict: ' + articleUrl);
+                    continue;
+                  }
+                  publicationTimestamp = Date.parse(nearestDates[0] + 'T00:00:00.000Z');
                 }
-                const nearestDistance = dates[0].distance;
-                const nearestDates = [...new Set(dates
-                  .filter(value => value.distance === nearestDistance)
-                  .map(value => new Date(value.timestamp).toISOString().slice(0, 10)))];
-                if (nearestDates.length !== 1) {
-                  console.warn('Skipping UNESCO newsroom item because nearby publication dates conflict: ' + articleUrl);
-                  continue;
-                }
-                const publicationTimestamp = Date.parse(nearestDates[0] + 'T00:00:00.000Z');
                 if (!Number.isFinite(publicationTimestamp)) {
                   console.warn('Skipping UNESCO newsroom item with invalid newsroom date: ' + articleUrl);
                   continue;
