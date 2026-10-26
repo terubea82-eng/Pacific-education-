@@ -123,7 +123,7 @@ jobs:
                 const isUnescoArticle = /^(?:https:\/\/www\.unesco\.org)?\/(?:en\/)?(?:articles|news|press-releases|statements|press-invitations)\//i.test(href);
                 const isWhoPacificArticle = /^(?:https:\/\/www\.who\.int)?\/westernpacific\/news\/item\//i.test(href);
                 const isWhoGlobalArticle = /^(?:https:\/\/www\.who\.int)?\/news\/item\/\d{2}-\d{2}-\d{4}(?:-|\/|$)/i.test(href);
-                const isFijiTimesArticle = sourceKey === 'fijiTimes' && /^(?:https:\/\/www\.fijitimes\.com\.fj)?\/(?:news|sport|sports|business|world|opinion|letters-to-the-editor)\/.+/i.test(href);
+                const isFijiTimesArticle = sourceKey === 'fijiTimes' && /^(?:https:\/\/www\.fijitimes\.com\.fj)?\/(?!category\/|author\/|tag\/|page\/|search\/|wp-content\/|wp-json\/|feed\/|login\/|subscribe\/|about\/|contact\/)[a-z0-9][^?#]*\/?$/i.test(href);
                 const isFijiSunArticle = sourceKey === 'fijiSun' && /^(?:https:\/\/fijisun\.com\.fj)?\/(?:news|sports|sport|business|living|opinion)\/.+/i.test(href);
                 if (!isUnescoArticle && !isWhoPacificArticle && !(sourceKey === 'whoNewsroom' && isWhoGlobalArticle) && !isFijiTimesArticle && !isFijiSunArticle) continue;
                 const titleWithDate = decode(m[4]);
@@ -191,8 +191,11 @@ jobs:
                   console.warn('Skipping ' + sourceKey + ' HTML newsroom item with invalid newsroom date: ' + articleUrl);
                   continue;
                 }
+                const headingMatches = [...neighborhood.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/gi)];
+                const headingTitles = headingMatches.map(h => decode(h[1])).filter(t => t.length >= 12 && !/^(read more|learn more|more)$/i.test(t));
+                const preferredTitle = headingTitles.length ? headingTitles[headingTitles.length - 1] : title;
                 htmlItems.push({
-                  title,
+                  title: preferredTitle,
                   url: articleUrl,
                   date: new Date(publicationTimestamp).toISOString(),
                   description: title
