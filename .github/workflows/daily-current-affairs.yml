@@ -366,9 +366,23 @@ jobs:
           for attempt in 1 2 3; do
             git fetch origin main
             if ! git rebase origin/main; then
-              git rebase --abort || true
-              echo "::error::Current-affairs feed conflicts with newer main changes; refusing to overwrite."
-              exit 1
+              conflicted="$(git diff --name-only --diff-filter=U)"
+              path_commit="$(git log -1 --format=%s origin/main -- docs/data/current-affairs.json)"
+              # Concurrent scheduled refreshes can both update only this generated
+              # JSON. Resolve that one file only when main's latest change to it
+              # was another automated feed refresh. Never resolve unrelated or
+              # manually edited conflicts automatically.
+              if [ "$conflicted" = "docs/data/current-affairs.json" ] &&
+                 [ "$path_commit" = "Refresh daily educational current affairs feed" ]; then
+                echo "::warning::Concurrent automated feed refresh detected; keeping this run's freshly validated feed."
+                git checkout --theirs -- docs/data/current-affairs.json
+                git add docs/data/current-affairs.json
+                GIT_EDITOR=true git rebase --continue
+              else
+                git rebase --abort || true
+                echo "::error::Feed conflict is not a safe concurrent automated refresh; refusing to overwrite."
+                exit 1
+              fi
             fi
             if git push origin HEAD:main; then
               exit 0
