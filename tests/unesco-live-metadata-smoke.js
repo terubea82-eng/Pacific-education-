@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 
-// Live smoke test for UNESCO's real newsroom and article metadata.
-// Mirrors the strict datePublished acceptance rule used by the feed workflow.
+// Live smoke test exercises the same extraction function used by the feed workflow.
 const { execFileSync } = require('node:child_process');
 const assert = require('node:assert/strict');
+const { extractOriginalPublicationDate } = require('../automation/unesco-publication-date');
 
 const newsroomUrl = 'https://www.unesco.org/en/newsroom';
 const userAgent = 'PacificEducationPilot/1.0 (educational current-affairs feed)';
@@ -19,43 +19,31 @@ function fetchHtml(url) {
   ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 2 * 1024 * 1024 });
 }
 
-function publicationValues(html) {
-  const values = [...html.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi)]
-    .map(match => match[1]);
-  for (const tagMatch of html.matchAll(/<meta\b[^>]*>/gi)) {
-    const tag = tagMatch[0];
-    const property = tag.match(/\bproperty\s*=\s*["']([^"']+)["']/i)?.[1];
-    const name = tag.match(/\bname\s*=\s*["']([^"']+)["']/i)?.[1];
-    const content = tag.match(/\bcontent\s*=\s*["']([^"']+)["']/i)?.[1];
-    if (content && [property, name].filter(Boolean)
-      .some(key => /^(?:article:published_time|datePublished)$/i.test(key.trim()))) {
-      values.push(content.trim());
-    }
-  }
-  return values;
-}
-
-function validOriginalPublicationDate(values) {
-  if (!values.length) return false;
-  const parsed = values.map(value => {
-    const text = String(value).trim();
-    const match = text.match(/^(\d{4}-\d{2}-\d{2})(?:T|\s|$)/);
-    const timestamp = Date.parse(text);
-    if (!match || !Number.isFinite(timestamp)) return null;
-    const day = Date.parse(match[1] + 'T00:00:00.000Z');
-    if (!Number.isFinite(day) || new Date(day).toISOString().slice(0, 10) !== match[1]) return null;
-    return { date: match[1], timestamp };
-  });
-  if (parsed.some(value => value === null)) return false;
-  return new Set(parsed.map(value => value.date)).size === 1;
-}
-
-// Guard against JavaScript Date.parse normalizing impossible calendar dates.
-assert.equal(validOriginalPublicationDate(['2024-02-29T10:00:00Z']), true);
-assert.equal(validOriginalPublicationDate(['2023-02-29T10:00:00Z']), false);
-assert.equal(validOriginalPublicationDate(['2024-02-31T10:00:00Z']), false);
-assert.equal(validOriginalPublicationDate(['2024-01-10T10:00:00Z', '2024-01-11T10:00:00Z']), false);
-assert.equal(validOriginalPublicationDate([]), false);
+// Unit/regression cases run before making network requests.
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-02-29T10:00:00Z"}</script>'
+), '2024-02-29');
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2023-02-29T10:00:00Z"}</script>'
+), null);
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-02-31T10:00:00Z"}</script>'
+), null);
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2026-10-10T00:30:00+14:00"}</script>'
+), '2026-10-10', 'preserve the publisher calendar date across timezone offsets');
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-01-10T10:00:00Z"}</script>' +
+  '<script type="application/ld+json">{"@type":"Organization","datePublished":"2020-01-01T00:00:00Z"}</script>'
+), '2024-01-10', 'ignore unrelated organization metadata');
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-01-10T10:00:00Z"}</script>' +
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-01-11T10:00:00Z"}</script>'
+), null, 'reject conflicting article publication dates');
+assert.equal(extractOriginalPublicationDate(
+  '<meta property="article:published_time" content="2024-03-01T08:00:00Z">'
+), '2024-03-01', 'allow publisher meta fallback when typed article metadata is absent');
+assert.equal(extractOriginalPublicationDate('<html><body>No publication metadata</body></html>'), null);
 
 const newsroom = fetchHtml(newsroomUrl);
 const candidates = new Set();
@@ -75,20 +63,20 @@ for (const url of [...candidates].slice(0, 12)) {
   checked++;
   try {
     const html = fetchHtml(url);
-    const values = publicationValues(html);
-    if (validOriginalPublicationDate(values)) {
+    const publicationDate = extractOriginalPublicationDate(html);
+    if (publicationDate) {
       accepted++;
-      console.log('PASS: original publication metadata validated for ' + url);
+      console.log('PASS: primary article publication date validated for ' + url + ' (' + publicationDate + ')');
       break;
     }
-    console.warn('SKIP: missing, invalid, or conflicting datePublished metadata: ' + url);
+    console.warn('SKIP: missing, invalid, or conflicting primary article publication metadata: ' + url);
   } catch (error) {
     console.warn('SKIP: UNESCO article could not be fetched (' + String(error.message || error) + '): ' + url);
   }
 }
 if (!accepted) {
   throw new Error('Live UNESCO smoke test failed: no article among ' + checked +
-    ' newsroom links exposed consistent, valid original datePublished metadata.');
+    ' newsroom links exposed valid original publication metadata.');
 }
 console.log('UNESCO live metadata smoke test passed; checked ' + checked +
   ' article page(s), validated ' + accepted + ' real article page(s).');
