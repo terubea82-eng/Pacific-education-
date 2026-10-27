@@ -159,3 +159,8 @@ A copy of *Year 1 English — Language, Literacy and Communication* was located 
 - Available planning blocks are Term 1 (10 weeks), Term 2 (10 weeks), Term 3 (5 weeks), assessment window (1 week), intervention (5 weeks), revision (2 weeks) and school-approved examination period (2 weeks). These are configurable planning slots; they are **not certified as the official current Fiji school calendar**.
 - Each generated scheduled worksheet remains marked DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING with verificationStatus: NOT_YET_MAPPED. A qualified Fiji English teacher must link the exact current syllabus title/version, strand/outcome or achievement-indicator reference, page/section and review record before official alignment can be claimed.
 - The worksheet generator provides a structured starting bank for all supported levels and four ability bands; it does **not** prove that every daily activity for the entire school year has been authored, quality-reviewed or mapped to every official indicator. Production eligibility remains false.
+
+
+### English source register
+
+See [English curriculum mapping register](english-curriculum-mapping-register.md). The Class 1 Term 1 Week 1 candidate source is traceable in the teacher guide, but remains unverified because the located copy is hosted by a third party. All other class/form mappings remain pending current authorized syllabus and exact outcome/indicator review. No class/form is certified as fully mapped.
