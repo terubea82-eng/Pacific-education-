@@ -237,6 +237,22 @@
           el("p","Worked example: "+daily.dailyLesson.workedExample,output);
           el("h5","Audio narration transcript",output);
           el("p",daily.dailyLesson.audioNarration.transcript,output);
+          var listenButton=el("button","▶ Listen to lesson",output);
+          listenButton.type="button";
+          listenButton.style.cssText="padding:10px 14px;margin:6px 6px 6px 0;font:inherit;font-weight:700;";
+          listenButton.addEventListener("click",function(){
+            if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText==="function"){
+              global.PacificEducationSpeech.speakText(daily.dailyLesson.audioNarration.transcript,{allowRepeat:true});
+            } else {
+              el("p","PacEdu narrator is not available in this browser. Use the displayed narration transcript or ask the teacher to read it aloud.",output);
+            }
+          });
+          var stopButton=el("button","Stop audio",output);
+          stopButton.type="button";
+          stopButton.style.cssText="padding:10px 14px;margin:6px;font:inherit;";
+          stopButton.addEventListener("click",function(){
+            if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.stopSpeech==="function") global.PacificEducationSpeech.stopSpeech();
+          });
           el("p","Audio status: narration script prepared for the existing PacEdu narrator; this update does not create a rendered video or guarantee audio playback on every device.",output);
           el("h5","Curriculum alignment record",output);
           el("p","Draft concept: "+daily.dailyLesson.curriculumAlignment.draftConcept,output);
