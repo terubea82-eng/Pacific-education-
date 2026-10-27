@@ -524,6 +524,68 @@
       var source = document.createElement("p"); source.textContent = activity.source; card.appendChild(source);
     }
     var status = document.createElement("p"); status.textContent = activity.curriculumStatus; status.setAttribute("role","note"); card.appendChild(status);
+    if (learnerRole && global.PacEduDailyWorksheetContent &&
+        typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function") {
+      var lessonLevel = global.PacEduDailyWorksheetContent.levels.indexOf(context.level) >= 0 ? context.level : "Class 1";
+      var lessonSubject = global.PacEduDailyWorksheetContent.subjects.indexOf(context.subject) >= 0 ? context.subject : "English";
+      var lessonTermRaw = String(context.term || global.localStorage.getItem("pacificEducationTerm") || "T1").toUpperCase();
+      var lessonTerm = /^(T1|T2|T3|ASSESSMENT|INTERVENTION|REVISION|EXAMS)$/.test(lessonTermRaw) ? lessonTermRaw :
+        (/2/.test(lessonTermRaw) ? "T2" : (/3/.test(lessonTermRaw) ? "T3" : "T1"));
+      var storedWeek = Number(global.localStorage.getItem("pacificEducationWeek") || global.localStorage.getItem("pacificEducationTeachingWeek") || "1");
+      var lessonWeek = Math.max(1, Math.min(lessonTerm === "T3" ? 5 : lessonTerm === "INTERVENTION" ? 5 : lessonTerm === "REVISION" || lessonTerm === "EXAMS" ? 2 : 10, storedWeek || 1));
+      var lessonDay = ((Math.max(1, Number(day) || 1) - 1) % 5) + 1;
+      var lessonAbility = ["support","developing","expected","extension"].indexOf(context.capability) >= 0 ? context.capability : "developing";
+      var lesson = global.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+        level:lessonLevel, subject:lessonSubject, term:lessonTerm, week:lessonWeek, day:lessonDay, ability:lessonAbility
+      });
+      if (lesson && lesson.dailyLesson) {
+        var lessonPanel = document.createElement("section");
+        lessonPanel.setAttribute("aria-label","Step-by-step see read and hear lesson");
+        lessonPanel.style.cssText="margin:14px 0;padding:14px;border:1px solid #b7c9d6;border-radius:9px;";
+        var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
+        var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
+        var intention = document.createElement("p"); intention.textContent="Learning intention: "+lesson.dailyLesson.learningIntention; lessonPanel.appendChild(intention);
+        var frames = document.createElement("ol");
+        lesson.dailyLesson.steps.forEach(function(step){
+          var li=document.createElement("li");
+          var strong=document.createElement("strong"); strong.textContent=step.mode+": "; li.appendChild(strong);
+          li.appendChild(document.createTextNode(step.onScreen+" Learner action: "+step.learnerAction));
+          var narrationLine=document.createElement("p"); narrationLine.textContent="Narration: "+step.narration; li.appendChild(narrationLine);
+          frames.appendChild(li);
+        });
+        lessonPanel.appendChild(frames);
+        var textHeading=document.createElement("h5"); textHeading.textContent="Read the example"; lessonPanel.appendChild(textHeading);
+        var passage=document.createElement("p"); passage.textContent=lesson.dailyLesson.learnerText.passage; lessonPanel.appendChild(passage);
+        var model=document.createElement("p"); model.textContent="Worked example: "+lesson.dailyLesson.workedExample; lessonPanel.appendChild(model);
+        var listen=document.createElement("button"); listen.type="button"; listen.textContent="▶ Listen to lesson"; listen.style.cssText="padding:10px 14px;margin:5px 8px 5px 0;font:inherit;font-weight:700;";
+        listen.addEventListener("click",function(){
+          if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText==="function") global.PacificEducationSpeech.speakText(lesson.dailyLesson.audioNarration.transcript,{allowRepeat:true});
+          else { var msg=document.createElement("p"); msg.textContent="Audio is unavailable here. Read the narration transcript or ask your teacher to read it aloud."; lessonPanel.appendChild(msg); }
+        });
+        lessonPanel.appendChild(listen);
+        var stopListen=document.createElement("button"); stopListen.type="button"; stopListen.textContent="Stop audio"; stopListen.style.cssText="padding:10px 14px;margin:5px;font:inherit;";
+        stopListen.addEventListener("click",function(){if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.stopSpeech==="function") global.PacificEducationSpeech.stopSpeech();});
+        lessonPanel.appendChild(stopListen);
+        var transcriptHeading=document.createElement("h5"); transcriptHeading.textContent="Audio transcript"; lessonPanel.appendChild(transcriptHeading);
+        var transcript=document.createElement("p"); transcript.textContent=lesson.dailyLesson.audioNarration.transcript; lessonPanel.appendChild(transcript);
+        var questionsHeading=document.createElement("h5"); questionsHeading.textContent="Try these questions"; lessonPanel.appendChild(questionsHeading);
+        var questions=document.createElement("ol");
+        lesson.questions.forEach(function(question){
+          var q=document.createElement("li"); q.textContent=question.prompt;
+          if(question.options && question.options.length){
+            var choices=document.createElement("ul");
+            question.options.forEach(function(option,index){var choice=document.createElement("li");choice.textContent=String.fromCharCode(65+index)+". "+option;choices.appendChild(choice);});
+            q.appendChild(choices);
+          }
+          questions.appendChild(q);
+        });
+        lessonPanel.appendChild(questions);
+        var alignment=document.createElement("p");
+        alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". Exact official achievement indicator: not yet mapped; teacher review is required.";
+        lessonPanel.appendChild(alignment);
+        card.appendChild(lessonPanel);
+      }
+    }
     var label = document.createElement("label"); label.textContent = "Your response / work note (avoid private or sensitive information)";
     var input = document.createElement("textarea"); input.id = "paceduRoleActivityResponse"; input.rows = 4; input.style.cssText = "display:block;width:100%;max-width:100%;box-sizing:border-box;padding:10px;margin:8px 0;font:inherit;"; input.setAttribute("aria-label", label.textContent); label.appendChild(input); card.appendChild(label);
     var doneLabel = document.createElement("label"); doneLabel.style.cssText = "display:flex;gap:8px;align-items:flex-start;margin:10px 0;";
