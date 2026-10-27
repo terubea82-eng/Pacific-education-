@@ -209,14 +209,253 @@
       sourceNote:"PacEdu original content. Curriculum source mapping pending: link this worksheet to the current Fiji Ministry syllabus strand, outcome/achievement indicator, class, term and teaching week before calling it officially curriculum-aligned."
     };
   }
+  function englishLevelExpectation(level) {
+    var expectations = {
+      "ECE": { target:"Listen, take turns, identify a sound or picture, and communicate an idea orally, by gesture or drawing.", output:"Show, say, sign, select or draw one response; writing is optional.", lines:2 },
+      "Class 1": { target:"Recognise familiar words and letter-sounds, answer direct questions, and build a clear simple sentence.", output:"Write or dictate one complete sentence with support as needed.", lines:3 },
+      "Class 2": { target:"Read a short text, sequence three ideas, use capital letters and full stops, and answer direct questions.", output:"Write 2–3 connected sentences and check sentence beginnings and endings.", lines:4 },
+      "Class 3": { target:"Identify the main idea, use context to explain a word, and select a supporting detail.", output:"Write a short paragraph with a main idea and one relevant detail.", lines:5 },
+      "Class 4": { target:"Summarise a short text, infer a simple unstated idea, and support an answer with text evidence.", output:"Write a paragraph with a main idea, evidence and a concluding sentence.", lines:6 },
+      "Class 5": { target:"Compare information, organise paragraphs, and explain how details support a conclusion.", output:"Write two linked paragraphs and revise vocabulary or sentence structure.", lines:7 },
+      "Class 6": { target:"Distinguish fact from opinion, infer meaning, and explain how language choices shape a text.", output:"Write a structured response with a claim, two details and a conclusion.", lines:8 },
+      "Class 7": { target:"Compare viewpoints, assess the relevance of evidence, and organise writing for a stated purpose.", output:"Write a developed response that compares two ideas and justifies a conclusion.", lines:9 },
+      "Class 8": { target:"Evaluate evidence, analyse purpose and audience, and use cohesive devices in extended writing.", output:"Write a structured multi-paragraph response with evidence and a considered conclusion.", lines:10 },
+      "Form 3": { target:"Analyse purpose, audience, viewpoint and supporting details in different text types.", output:"Write a structured analytical paragraph with a claim, evidence and explanation.", lines:10 },
+      "Form 4": { target:"Compare how two texts organise ideas, represent viewpoints and use language for effect.", output:"Write a comparative response with a clear thesis and relevant textual evidence.", lines:11 },
+      "Form 5": { target:"Interpret complex ideas, evaluate evidence and explain the relationship between language and meaning.", output:"Write an extended response with a defensible interpretation and supporting evidence.", lines:12 },
+      "Form 6": { target:"Synthesize information from more than one source and adapt register to purpose and audience.", output:"Write a coherent essay or report, cite supplied sources and acknowledge limitations.", lines:13 },
+      "Form 7": { target:"Evaluate competing interpretations, synthesise evidence and qualify a conclusion for a defined audience.", output:"Write a sustained, evidence-based response with a counterpoint and qualified conclusion.", lines:14 }
+    };
+    return expectations[level] || expectations["Class 1"];
+  }
+
+  function makeScheduledEnglishContent(level, ability, theme, focus, weekDay) {
+    var st = stage(level);
+    var levelExpectation = englishLevelExpectation(level);
+    var safeTheme = String(theme || "our learning").replace(/[<>]/g, "").trim() || "our learning";
+    var safeFocus = String(focus || "read, discuss and explain").replace(/[<>]/g, "").trim();
+    var dayFocus = [
+      "Read or listen and identify the main topic",
+      "Learn and use important words",
+      "Sequence ideas and connect sentences",
+      "Answer with a detail or evidence",
+      "Review and create an independent response"
+    ][Math.max(0, Math.min(4, Number(weekDay) - 1))];
+    var passage;
+    if (st === "early") {
+      passage = "Today we learn about " + safeTheme.toLowerCase() + ". We look, listen, share, and take turns. We can care for our school and help one another. " + dayFocus + ".";
+    } else if (st === "foundation") {
+      passage = "Our class is learning about " + safeTheme.toLowerCase() + ". We listened to an example, shared one idea, and looked for a useful detail. We used the detail to explain our answer. " + safeFocus + ". Today we will " + dayFocus.toLowerCase() + ".";
+    } else if (st === "middle") {
+      passage = "During a class activity about " + safeTheme.toLowerCase() + ", learners recorded observations and compared ideas. They used details from the text or activity to explain what they noticed. When two answers differed, they checked the evidence before choosing a conclusion. The class wrote a short explanation and revised one sentence after feedback. " + safeFocus + ". The daily focus is to " + dayFocus.toLowerCase() + ".";
+    } else if (st === "upper") {
+      passage = "A class inquiry into " + safeTheme.toLowerCase() + " began with a question. Learners gathered relevant information, recorded examples, and compared their first ideas with evidence. Some details supported the original view, while others showed that it needed to be refined. The group discussed how to distinguish an observation from an opinion and wrote a conclusion that matched the evidence. " + safeFocus + ". The daily focus is to " + dayFocus.toLowerCase() + ".";
+    } else if (st === "junior") {
+      passage = "A student group investigated " + safeTheme.toLowerCase() + " after noticing that people described the issue differently. They compared relevant information, checked which details supported each interpretation, and separated observations from opinions. Their first conclusion was adjusted when one piece of evidence did not support it. The final response explained the reasoning and identified what further information would improve confidence. " + safeFocus + ". The daily focus is to " + dayFocus.toLowerCase() + ".";
+    } else {
+      passage = "In a study of " + safeTheme.toLowerCase() + ", students considered how a claim was shaped by purpose, audience, and available evidence. They compared supporting details with an alternative interpretation and noted a limitation in the information. Rather than treating one example as proof of a general rule, they qualified their conclusion and identified what additional evidence would be needed. Their final response stated a defensible claim, supported it, and acknowledged uncertainty. " + safeFocus + ". The daily focus is to " + dayFocus.toLowerCase() + ".";
+    }
+
+    function question(number, prompt, answer, distractors, explanation, type) {
+      return {
+        number: number,
+        type: type || "Multiple choice",
+        prompt: prompt,
+        options: distractors && distractors.length ? [answer].concat(distractors).slice(0, 4) : [],
+        answer: answer,
+        correctOption: 0,
+        why: explanation
+      };
+    }
+    var questions;
+    if (st === "early") {
+      questions = [
+        question(1, "Point to, say, sign, or select the topic of today's learning.", safeTheme, [], "Accept an accessible response that identifies the topic.", "Oral / picture response"),
+        question(2, "What should learners do when another person is speaking?", "Listen and take turns", ["Shout over the speaker", "Walk away without listening", "Hide the learning materials"], "The passage says learners listen, share and take turns."),
+        question(3, "Name or show one helpful action from the passage.", "Care for our school and help one another", ["Damage shared things", "Ignore everyone", "Touch unsafe objects"], "The passage describes caring for school and helping one another."),
+        question(4, "Show, draw, sign, or tell one detail you noticed.", "Any relevant detail from the passage", [], "Accept a relevant detail; teacher records the response mode.", "Oral / picture response")
+      ];
+    } else if (st === "foundation") {
+      questions = [
+        question(1, "What is the class learning about?", safeTheme, ["A sports score", "A shopping bill", "A weather forecast"], "The first sentence names the learning topic."),
+        question(2, "What did the learners do before explaining an answer?", "Shared an idea and looked for a detail", ["Copied without reading", "Ignored the example", "Changed the subject"], "The passage says they shared an idea and looked for a detail."),
+        question(3, "Why did they use a detail?", "To explain their answer", ["To decorate the page", "To avoid the task", "To hide a mistake"], "The passage links the detail to explaining an answer."),
+        question(4, "Write or dictate one clear sentence about the topic.", "Answers vary; sentence relates to the topic", [], "Teacher checks meaning, a clear sentence, and appropriate support.", "Short answer")
+      ];
+    } else if (st === "middle") {
+      questions = [
+        question(1, "What is the main idea of the passage?", "Learners use details and evidence to explain ideas about " + safeTheme.toLowerCase(), ["Learners should guess without checking", "The passage is only about sport", "Feedback should never change writing"], "The passage repeatedly describes using details, checking evidence and revising."),
+        question(2, "What did the class do when answers differed?", "Checked the evidence before choosing a conclusion", ["Chose the longest answer", "Stopped listening", "Ignored all details"], "This action is stated directly in the passage."),
+        question(3, "Why did the class revise a sentence?", "To improve it after feedback", ["To remove all evidence", "To make it harder to read", "To avoid the topic"], "The final sentence says they revised after feedback."),
+        question(4, "Write 4–6 connected sentences explaining the topic and one supporting detail.", "Answers vary; include a relevant idea and supporting detail", [], "Teacher checks connection between the idea and its supporting detail.", "Short writing")
+      ];
+    } else if (st === "upper") {
+      questions = [
+        question(1, "Why did learners compare their first ideas with evidence?", "To decide whether their ideas needed refining", ["To prove the first idea must be right", "To avoid recording information", "To replace evidence with opinion"], "The passage says some details showed the original view needed refinement."),
+        question(2, "Which statement best distinguishes observation from opinion?", "An observation records what was noticed; an opinion expresses a view", ["They always mean the same thing", "An opinion is automatically evidence", "An observation never needs recording"], "The group discussed distinguishing observations from opinions."),
+        question(3, "What made the conclusion stronger?", "It matched the evidence", ["It was chosen before checking", "It ignored different details", "It was the longest sentence"], "The passage says the conclusion matched the evidence."),
+        question(4, "Write a paragraph with a claim, evidence and conclusion about the topic.", "Answers vary; claim is supported by relevant evidence", [], "Teacher checks the claim-evidence link and the conclusion.", "Extended writing")
+      ];
+    } else if (st === "junior") {
+      questions = [
+        question(1, "Why did the group compare different descriptions of the issue?", "People described the issue differently", ["There was no question to investigate", "The group refused to read", "All information was identical"], "The opening sentence gives the reason for comparing descriptions."),
+        question(2, "What caused the group to adjust its first conclusion?", "A piece of evidence did not support it", ["The conclusion was too short", "The group wanted no evidence", "The topic changed to sport"], "The passage states that one piece of evidence did not support the first conclusion."),
+        question(3, "What further information would be useful?", "Reliable additional evidence relevant to the issue", ["An unrelated rumour", "A claim with no source", "A repeated guess"], "Further relevant information would improve confidence."),
+        question(4, "Write a structured paragraph using a claim, evidence and explanation; note one information gap.", "Answers vary; include a defensible claim, relevant evidence and a limitation", [], "Teacher checks reasoning and whether the limitation follows from the passage.", "Extended writing")
+      ];
+    } else {
+      questions = [
+        question(1, "What makes the final response defensible?", "It states a claim, supports it with evidence and acknowledges uncertainty", ["It treats one example as universal proof", "It ignores alternative interpretations", "It makes a claim without reasons"], "The passage describes a qualified claim supported by evidence."),
+        question(2, "Why should a limitation in the information be identified?", "It shows what the evidence cannot establish", ["It guarantees the claim is false", "It removes the need for sources", "It proves every view is equal"], "A limitation clarifies the strength and reach of a conclusion."),
+        question(3, "What is a sound response to an alternative interpretation?", "Compare its evidence and explain the reasoning", ["Dismiss it without checking", "Repeat the claim louder", "Assume it is always wrong"], "The passage says students compared supporting details with an alternative interpretation."),
+        question(4, "Write a reasoned response to the topic, using a claim, evidence, counterpoint and qualified conclusion.", "Answers vary; reasoning should be evidence-based and acknowledge a relevant counterpoint", [], "Teacher reviews argument quality, evidence, register and acknowledgement of uncertainty.", "Extended writing")
+      ];
+    }
+
+    var tasks;
+    if (st === "early") tasks = [
+      "Listen to the passage. Point, say, sign, select, or draw one idea.",
+      "Match a picture or object to a word connected to the topic.",
+      "Retell or show one thing you noticed."
+    ];
+    else if (st === "foundation") tasks = [
+      "Read or listen to the passage. Point to the sentence that names the topic.",
+      "Answer the direct questions and use a word from the passage.",
+      "Write, dictate, or select one clear sentence about the topic."
+    ];
+    else if (st === "middle") tasks = [
+      "Read the passage and underline or identify a detail that supports the main idea.",
+      "Answer the questions and explain how one detail supports your answer.",
+      "Write a short paragraph and revise one sentence after feedback."
+    ];
+    else if (st === "upper") tasks = [
+      "Read the passage and identify the main idea, evidence and one distinction between observation and opinion.",
+      "Answer the questions using relevant details from the passage.",
+      "Write a conclusion that matches the evidence and explain one revision."
+    ];
+    else if (st === "junior") tasks = [
+      "Annotate the passage for the issue, viewpoints, evidence and information gap.",
+      "Answer the questions and cite a detail that supports your interpretation.",
+      "Write a structured response with claim, evidence, explanation and a limitation."
+    ];
+    else tasks = [
+      "Analyse the claim, purpose, audience, evidence and limitation in the passage.",
+      "Answer the questions and compare the evidence with an alternative interpretation.",
+      "Write a reasoned response with claim, evidence, counterpoint and qualified conclusion."
+    ];
+    var bandPrefix = {
+      support: "SUPPORTED START: teacher models Question 1; use read-aloud, pictures, a word bank or a sentence frame.",
+      developing: "DEVELOPING: try independently first; ask for one hint or word bank if needed.",
+      expected: "CORE PRACTICE: complete independently where possible and check each answer against the text.",
+      extension: "EXTENSION: complete the core work, then create a related question or justify an alternative interpretation."
+    }[ability] || "DEVELOPING: try independently first.";
+    tasks.push("Class-level target: " + levelExpectation.target, levelExpectation.output);
+    tasks.unshift(bandPrefix);
+    return {
+      topic: safeTheme + " — " + dayFocus,
+      readingText: passage + "\n\nClass-level practice target: " + levelExpectation.target,
+      questions: questions,
+      answerKey: questions.map(function (q) { return {number:q.number,answer:q.answer,explanation:q.why}; }),
+      tasks: tasks,
+      instructions: "Original PacEdu English practice. Read, listen, or use an accessible response mode. This is practice, not an official examination.",
+      responseLines: levelExpectation.lines,
+      teacherCheck: "Check the learner's actual response and record independent / with support / not yet demonstrated / not observed. Auto-mark selected-choice items only; review constructed responses using teacher judgement.",
+      teacherReview: "The scheduled theme and focus are planning suggestions. Confirm the current Fiji syllabus and exact achievement indicator before formal assignment.",
+      differentiationNote: "Use the selected ability band to adjust scaffolding and challenge; bands are flexible and not permanent labels.",
+      sourceNote: "Original PacEdu practice content; official Fiji syllabus outcome mapping pending.",
+      status: "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING"
+    };
+  }
+
+  function makeDailyLesson(level, subject, ability, termLabel, week, day, worksheet, weeklyTopic, suggestedFocus) {
+    var dayFocus = [
+      "notice and identify the key idea",
+      "follow a model and explain the example",
+      "practise the skill with support as needed",
+      "apply the skill to a new example",
+      "review the skill and explain what the evidence shows"
+    ][Math.max(0, Math.min(4, Number(day) - 1))];
+    var topicLabel = String(weeklyTopic || (termLabel + " Week " + week)).replace(/\s+/g, " ").trim();
+    var concept = topicLabel + " — " + subject + ": " + dayFocus + " (" + String(worksheet.topic || suggestedFocus || "daily practice") + ")";
+    var stageName = stage(level);
+    var levelObjectives = {
+      "ECE":"Explore with play, pictures, objects, movement and one guided response.",
+      "Class 1":"Identify the main idea or skill using a familiar example and a short response.",
+      "Class 2":"Describe and sequence two or three parts of the example, then check the response.",
+      "Class 3":"Classify information or steps and give one reason for the choice.",
+      "Class 4":"Explain the concept with an example and one supporting detail or worked step.",
+      "Class 5":"Compare two examples and justify a choice with relevant evidence or working.",
+      "Class 6":"Explain a relationship, pattern or cause using subject vocabulary and evidence.",
+      "Class 7":"Compare methods or viewpoints and explain which evidence supports the conclusion.",
+      "Class 8":"Evaluate evidence or methods, identify a limitation, and explain a considered conclusion.",
+      "Form 3":"Apply the concept to an unfamiliar example and explain the relationship using subject vocabulary.",
+      "Form 4":"Compare two models, texts, methods or perspectives and justify the stronger explanation.",
+      "Form 5":"Interpret complex examples, evaluate evidence and explain a limitation or alternative.",
+      "Form 6":"Synthesize information or methods, state assumptions and support a structured conclusion.",
+      "Form 7":"Evaluate competing explanations, qualify a conclusion and justify it with evidence and limitations."
+    };
+    var classLevelObjective = levelObjectives[level] || levelObjectives["Class 1"];
+    var learnerAction = stageName === "early"
+      ? "Look, listen, point, match, move, speak, sign, draw or select an answer."
+      : stageName === "foundation"
+        ? "Look at the example, read or listen to the short text, then answer with words, pictures or a sentence."
+        : stageName === "middle"
+          ? "Read or inspect the example, identify the important detail, solve the task and explain one choice."
+          : "Examine the example, identify evidence or working, justify a conclusion and apply the concept to a new case.";
+    var exampleText = worksheet.readingText || worksheet.passage || worksheet.topic || concept;
+    var firstQuestion = worksheet.questions && worksheet.questions[0];
+    var firstAnswer = worksheet.answerKey && worksheet.answerKey[0];
+    var workedExample = firstQuestion
+      ? firstQuestion.prompt + (firstAnswer ? " Model answer: " + firstAnswer.answer + ". " + (firstAnswer.explanation || "") : "")
+      : "Teacher demonstrates one safe, accurate example of " + concept + " and explains the steps.";
+    var narration = "Welcome. Today we are learning " + concept + " in " + subject + ". "
+      + "Step 1. Look at the example on screen. " + exampleText + " "
+      + "Step 2. Read the key idea and listen to the example. "
+      + "Step 3. Watch the teacher model one answer: " + workedExample + " "
+      + "Step 4. Try the activity yourself. " + learnerAction + " "
+      + "Step 5. Check your work, explain your thinking, and ask your teacher for help if needed.";
+    return {
+      title: subject + " — " + level + " — " + termLabel + ", Week " + week + ", Day " + day,
+      learningConcept: concept,
+      learningIntention: "We are learning to " + dayFocus + " through " + String(worksheet.topic || subject + " example") + ".",
+      classLevelObjective: classLevelObjective,
+      successCriteria: [
+        "I can identify or demonstrate the main idea or skill in the example.",
+        "I can try the activity using an accessible response method.",
+        "I can show evidence, working or an explanation that matches my class task."
+      ],
+      workedExample: workedExample,
+      steps: [
+        {step:1, mode:"SEE / VIDEO FRAME", onScreen:"Show a clear picture, object, diagram or short subject demonstration connected to: " + concept + ".", learnerAction:"Look closely and notice one important detail.", narration:"Step 1. Look at the example. What do you notice?"},
+        {step:2, mode:"READ", onScreen:"Display the learning intention, key words and example text: " + exampleText, learnerAction:"Read the text or follow along while it is read aloud.", narration:"Step 2. Read the key idea and example. Pause when you meet an unfamiliar word."},
+        {step:3, mode:"HEAR / AUDIO", onScreen:"Highlight each key word as the narrator reads the worked example.", learnerAction:"Listen once, then replay or read the transcript at your own pace.", narration:"Step 3. Listen to the worked example: " + workedExample},
+        {step:4, mode:"TRY", onScreen:"Show the activity question and a step-by-step model; then remove the model for the learner's attempt.", learnerAction:learnerAction, narration:"Step 4. Now try the activity yourself. You may speak, write, point, draw, use objects, or use another response method agreed with your teacher."},
+        {step:5, mode:"CHECK / REFLECT", onScreen:"Show the success criteria and invite the learner to explain or demonstrate one answer.", learnerAction:"Check your work and identify one thing you understand or want help with.", narration:"Step 5. Check your answer. Explain how you know, then ask for feedback if you need it."}
+      ],
+      videoStoryboard: {format:"5-frame storyboard for a short lesson video; not a rendered video file", frames:5, captions:"Use each step's onScreen text as the on-screen caption; display key words and the example while narration plays."},
+      audioNarration: {status:"SCRIPT_READY_FOR_PACEDU_NARRATOR", language:"Use the learner's school-approved language and voice setting.", transcript:narration},
+      learnerText: {status:"TEXT_READY", passage:exampleText, workedExample:workedExample, instructions:learnerAction},
+      curriculumAlignment: {
+        country:"Fiji", level:level, subject:subject, term:termLabel, week:week, day:day,
+        draftConcept:concept, suggestedFocus:suggestedFocus || concept,
+        officialSyllabusTitle:null, officialSyllabusVersion:null, strand:null,
+        achievementIndicator:null, officialReference:null, reviewedBy:null, reviewedOn:null,
+        verificationStatus:"NOT_YET_MAPPED",
+        rule:"Do not invent an official achievement indicator. A qualified teacher must enter the exact current authorized syllabus reference before this lesson can be labelled curriculum-aligned."
+      },
+      abilityBand:ability,
+      accessibility:"Provide captions/transcript, adjustable text size, pause/replay controls in the player, and alternatives to sound or video such as text, pictures, objects and teacher read-aloud."
+    };
+  }
+
   function getCurriculumWorksheet(options) {
     options = options || {};
     var block = String(options.term || "T1").toUpperCase();
     var week = Math.max(1, Number(options.week) || 1);
     var day = Math.max(1, Math.min(5, Number(options.day) || 1));
     var blockMap = {
-      T1: { label: "Term 1", weeks: 10 },
-      T2: { label: "Term 2", weeks: 10 },
+      T1: { label: "Term 1", weeks: 9 },
+      T2: { label: "Term 2", weeks: 9 },
       T3: { label: "Term 3", weeks: 5 },
       ASSESSMENT: { label: "Assessment window", weeks: 1 },
       INTERVENTION: { label: "Intervention", weeks: 5 },
@@ -240,7 +479,62 @@
     // worksheet remains separate and never overwrites that diagnostic.
     var scheduledDay = 2 + ((week - 1) * 5) + (day - 1);
     var worksheet = make(level, subject, scheduledDay, ability);
+    if (subject === "English") {
+      var scheduledEnglish = makeScheduledEnglishContent(
+        level, ability,
+        curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
+        curriculumWeek ? curriculumWeek.focus : "Use the current school-approved scheme of work.",
+        day
+      );
+      Object.keys(scheduledEnglish).forEach(function (key) { worksheet[key] = scheduledEnglish[key]; });
+    }
+    worksheet.dailyLesson = makeDailyLesson(
+      level, subject, ability, selected.label, week, day, worksheet,
+      curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
+      curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
+    );
+    var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
+    var classReference = String(options.classReference || "").trim();
+    var indicatorTerm = String(options.curriculumTerm || options.term || "").trim();
+    if (classReference && indicatorEngine && typeof indicatorEngine.buildDailyIndicatorPlan === "function") {
+      try {
+        var indicatorResult = indicatorEngine.buildDailyIndicatorPlan({
+          classId: classReference, level: level, subjectId: subject,
+          term: indicatorTerm, dayNumber: Math.max(1, Number(options.dayNumber) || (2 + ((week - 1) * 5) + (day - 1)))
+        });
+        var assignment = indicatorResult && indicatorResult.assignment;
+        if (assignment && assignment.indicatorId &&
+            String(assignment.classId || "") === classReference &&
+            String(assignment.level || "") === level &&
+            String(assignment.subjectId || "") === subject &&
+            String(assignment.term || "") === indicatorTerm) {
+          worksheet.dailyLesson.curriculumAlignment.candidateIndicator = {
+            id: String(assignment.indicatorId),
+            text: String(assignment.indicatorText || ""),
+            strand: String(assignment.strand || ""),
+            sourceStatus: String(assignment.sourceStatus || "unverified"),
+            productionEligible: assignment.productionEligible === true,
+            status: "PENDING_TEACHER_REVIEW"
+          };
+          worksheet.dailyLesson.curriculumAlignment.rule += " A matching class-specific indicator candidate is attached for teacher review only; it is not treated as verified by this generator.";
+        }
+      } catch (indicatorError) {
+        /* Missing or unavailable indicator services must not break daily lessons. */
+      }
+    }
     worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
+    var candidateSource = null;
+    if (level === "Class 1" && block === "T1" && week === 1) {
+      candidateSource = {
+        title: "Year 1 English — Language, Literacy and Communication",
+        issuingBody: "Curriculum Development Unit, Ministry of Education, Heritage and Arts, Fiji (as stated in the resource)",
+        statedVersion: "2013; revised 2019; reprinted 2020 (verify against current authorized copy)",
+        reference: "Unit 1, \"Who am I?\" (resource p. 5); S/s and A/a activities (resource pp. 6–7)",
+        url: "https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/",
+        authorityStatus: "THIRD_PARTY_HOSTED_COPY_REQUIRES_AUTHORIZED_SOURCE_CHECK"
+      };
+      worksheet.sourceNote = "Original PacEdu English practice; candidate reference: Year 1 English — Language, Literacy and Communication, Unit 1 (resource p. 5), S/s and A/a (pp. 6–7). Copy located on a third-party host; compare with the current authorized school/FEMIS/Ministry copy. Official outcome mapping remains pending.";
+    }
     worksheet.curriculumSchedule = {
       country: "Fiji",
       term: selected.label,
@@ -249,14 +543,26 @@
       day: day,
       teachingTheme: curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
       suggestedFocus: curriculumWeek ? curriculumWeek.focus : "Use the current school-approved scheme of work.",
+      candidateSource: candidateSource,
       syllabusTitle: null,
       syllabusVersion: null,
       strand: null,
       achievementIndicator: null,
       pageOrSection: null,
+      reviewer: null,
+      reviewDate: null,
       verificationStatus: "NOT_YET_MAPPED"
     };
-    worksheet.curriculumNote = "The weekly theme is a planning framework, not proof of official syllabus alignment. A teacher must verify the current Fiji Ministry syllabus, exact strand and achievement indicator before assigning this as curriculum-verified.";
+    worksheet.curriculumNote = candidateSource
+      ? "Candidate source reference is supplied for teacher comparison only. The copy is hosted off the Ministry domain; confirm the current authorized resource, exact syllabus outcome/indicator, page and weekly placement. Do not mark curriculum-verified until reviewed."
+      : "The weekly theme is a planning framework, not proof of official syllabus alignment. A teacher must verify the current Fiji Ministry syllabus, exact strand and achievement indicator before assigning this as curriculum-verified.";
+    if (!options.skipTermPlan && global.PacEduTermLearningPlan) {
+      worksheet.termLearningPlan = global.PacEduTermLearningPlan.getTermPlan({level:level,subject:subject,term:block,ability:ability});
+      worksheet.revisionPaper = global.PacEduTermLearningPlan.getRevisionPaper({level:level,subject:subject,term:block,ability:ability});
+      if (global.PacEduPracticeExamPaper && typeof global.PacEduPracticeExamPaper.getPaper === "function") {
+        worksheet.practiceExamPaper = global.PacEduPracticeExamPaper.getPaper({level:level,subject:subject,term:block,ability:ability});
+      }
+    }
     return worksheet;
   }
   function install() {

@@ -29,8 +29,8 @@
     ["T1",6,"Weather and observations","observe, record and describe"],
     ["T1",7,"Plants, animals and living things","notice features, needs and differences"],
     ["T1",8,"Our community and helpers","roles, services and cooperation"],
-    ["T1",9,"Patterns, shapes and numbers around us","identify, extend and explain patterns"],
-    ["T1",10,"Term 1 consolidation","mixed practice and evidence check"],
+    ["T1",9,"Patterns, shapes, numbers and Term 1 consolidation","identify, extend and explain patterns; review priority learning and evidence"],
+    
     ["T2",1,"Stories and information texts","literal meaning, vocabulary and retelling"],
     ["T2",2,"Communication and instructions","listen/read, follow and give clear directions"],
     ["T2",3,"Materials and their uses","properties, grouping and safe use"],
@@ -39,8 +39,7 @@
     ["T2",6,"Culture, language and respectful exchange","verified language examples and perspectives"],
     ["T2",7,"Movement, rhythm and creative expression","practise, repeat, perform and reflect"],
     ["T2",8,"Safety, wellbeing and help-seeking","recognise risk and choose safe actions"],
-    ["T2",9,"Design, making and technology","plan, test, improve and explain"],
-    ["T2",10,"Term 2 consolidation","mixed practice and evidence check"],
+    ["T2",9,"Design, making, technology and Term 2 consolidation","plan, test, improve, explain and review priority learning"],
     ["T3",1,"Read, investigate and explain","use details or observations to support an answer"],
     ["T3",2,"Compare solutions and perspectives","similarities, differences and reasons"],
     ["T3",3,"Apply skills to a Fiji-life problem","choose a strategy and show working"],
@@ -220,6 +219,52 @@
         el("h4",daily.title,output);
         el("p","Curriculum theme: "+daily.curriculumSchedule.teachingTheme,output);
         el("p","Practice example: "+daily.readingText,output);
+        if (daily.dailyLesson) {
+          el("h4","Step-by-step lesson: see, read and hear",output);
+          el("p","Learning intention: "+daily.dailyLesson.learningIntention,output);
+          el("p",level.value+" learning target: "+daily.dailyLesson.classLevelObjective,output);
+          el("p","Concept: "+daily.dailyLesson.learningConcept,output);
+          el("h5","Video storyboard and learner steps",output);
+          var lessonSteps=el("ol",null,output);
+          daily.dailyLesson.steps.forEach(function(step){
+            var li=el("li",null,lessonSteps);
+            el("strong",step.mode+": ",li);
+            el("span",step.onScreen+" Learner: "+step.learnerAction,li);
+            el("p","Narration: "+step.narration,li);
+          });
+          el("h5","Read-along text and worked example",output);
+          el("p",daily.dailyLesson.learnerText.passage,output);
+          el("p","Worked example: "+daily.dailyLesson.workedExample,output);
+          el("h5","Audio narration transcript",output);
+          el("p",daily.dailyLesson.audioNarration.transcript,output);
+          var listenButton=el("button","▶ Listen to lesson",output);
+          listenButton.type="button";
+          listenButton.style.cssText="padding:10px 14px;margin:6px 6px 6px 0;font:inherit;font-weight:700;";
+          listenButton.addEventListener("click",function(){
+            if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText==="function"){
+              global.PacificEducationSpeech.speakText(daily.dailyLesson.audioNarration.transcript,{allowRepeat:true});
+            } else {
+              el("p","PacEdu narrator is not available in this browser. Use the displayed narration transcript or ask the teacher to read it aloud.",output);
+            }
+          });
+          var stopButton=el("button","Stop audio",output);
+          stopButton.type="button";
+          stopButton.style.cssText="padding:10px 14px;margin:6px;font:inherit;";
+          stopButton.addEventListener("click",function(){
+            if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.stopSpeech==="function") global.PacificEducationSpeech.stopSpeech();
+          });
+          el("p","Audio status: narration script prepared for the existing PacEdu narrator; this update does not create a rendered video or guarantee audio playback on every device.",output);
+          el("h5","Curriculum alignment record",output);
+          el("p","Draft concept: "+daily.dailyLesson.curriculumAlignment.draftConcept,output);
+          el("p","Official achievement indicator: "+(daily.dailyLesson.curriculumAlignment.achievementIndicator || "NOT YET MAPPED — teacher must enter exact current official reference"),output);
+          if (daily.dailyLesson.curriculumAlignment.candidateIndicator) {
+            var candidate=daily.dailyLesson.curriculumAlignment.candidateIndicator;
+            el("p","Candidate indicator for review only: "+candidate.id+" — "+candidate.text+" • strand: "+candidate.strand+" • source status: "+candidate.sourceStatus+". Not yet verified.",output);
+          }
+          el("p","Alignment status: "+daily.dailyLesson.curriculumAlignment.verificationStatus,output);
+          var criteria=el("ul",null,output);
+          daily.dailyLesson.successCriteria.forEach(function(c){el("li",c,criteria);});
+        }
         el("p","Worked guidance: "+daily.answerKey[0].explanation,output);
         el("p",daily.instructions,output);
         el("h4","Student questions",output);

@@ -15,6 +15,27 @@ vm.runInNewContext(source, { window, document: {}, Date, Math, JSON, String, Obj
 
 const packs = window.PacificEducationRoleActivityPacks;
 
+test("approved learner workspace exposes the five-step see-read-hear lesson and uses PacEdu's protected narrator", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(renderer, /if \(learnerRole && global\.PacEduDailyWorksheetContent/);
+  assert.match(renderer, /getCurriculumWorksheet/);
+  assert.match(renderer, /see|read|hear/i);
+  assert.match(renderer, /audioNarration\.transcript/);
+  assert.match(renderer, /global\.PacificEducationSpeech\.speakText/);
+  assert.match(renderer, /global\.PacificEducationSpeech\.stopSpeech/);
+  assert.match(renderer, /verificationStatus/);
+  assert.match(sequential, /isTeacherApprovedForStudent/);
+  assert.match(renderer, /official achievement indicator: not yet mapped/i);
+});
+
+test("unsupported learner subjects are not silently shown English content", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  assert.match(renderer, /lessonSubjectAliases/);
+  assert.match(renderer, /if \(global\.PacEduDailyWorksheetContent\.subjects\.indexOf\(lessonSubject\) < 0\) lessonSubject = ""/);
+  assert.match(renderer, /PacEdu will not substitute an English lesson/);
+});
+
 test("Fiji Year 1 English daily activities follow the eight resource-topic sequence", () => {
   const expected = [
     "Who am I?", "My Friends", "My School", "Getting Ready for School",
@@ -163,4 +184,18 @@ test("student activity refuses a distributed indicator for a different class", (
     if (original === undefined) delete window.PacificEducationAchievementDistributionEngine;
     else window.PacificEducationAchievementDistributionEngine = original;
   }
+});
+
+test("saved learner work carries dated assignment context into the teacher review queue without storing an unverified FEMIS ID", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  const queue = fs.readFileSync("src/js/pacificEducationTeacherReviewQueue.js", "utf8");
+  assert.match(renderer, /var reviewKey = "pacificEducationActivityResponses"/);
+  assert.match(renderer, /assignmentId:assignmentId/);
+  assert.match(renderer, /learnerIdentityStatus:/);
+  assert.match(renderer, /reviewStatus:"pending-teacher-review"/);
+  assert.match(renderer, /teacher review queue could not be updated/i);
+  assert.match(queue, /Learner ID verification:/);
+  assert.match(queue, /Assignment reference:/);
+  assert.match(queue, /Prepared \/ submitted:/);
+  assert.doesNotMatch(renderer, /studentId:\s*enteredId/);
 });
