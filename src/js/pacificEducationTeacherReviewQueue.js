@@ -42,6 +42,9 @@ function render(){
    article.appendChild(node("p","Photo evidence is not automatically marked. Check readability and the answer against the activity criteria."));
   }
   appendText(article,"p","Context:",(x.classLevel||"")+" / "+(x.subject||"")+" / "+(x.term||""));
+  if(x.assignmentId)appendText(article,"p","Assignment reference:",x.assignmentId);
+  if(x.preparedDate||x.savedAt)appendText(article,"p","Prepared / submitted:",(x.preparedDate||"date unavailable")+" / "+(x.savedAt||"submission time unavailable"));
+  if(x.learnerIdentityStatus)appendText(article,"p","Learner ID verification:",x.learnerIdentityStatus+(x.learnerIdentityPending?" — pending; do not treat as verified":""));
   if(x.teacherEnteredAnswer)appendText(article,"p","Assignment:",x.assignmentStatus==="verified-roster-match"?"Roster verified":"UNVERIFIED — check learner and class reference");
   var label=node("label","Teacher guidance ");
   var textarea=node("textarea");textarea.id="trq-"+index;textarea.rows=2;textarea.style.width="100%";label.appendChild(textarea);article.appendChild(label);
