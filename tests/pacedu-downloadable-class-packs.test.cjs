@@ -33,7 +33,7 @@ test('download pack includes 45 dated Term 1 daily activities and assessment pra
  assert.match(p.html,/Revision question/);
  assert.match(p.html,/Mock practice examination — not an official or past paper/);
  assert.match(p.html,/NOT_YET_MAPPED/);
- assert.match(p.html,/Marking criteria/);
+ assert.match(p.html,/Subject-specific marking criteria/);
  assert.doesNotMatch(p.html,/FEMIS-123456/);
 });
 
@@ -44,7 +44,7 @@ test('Term 3 pack uses 25 planned daily slots and keeps class-wide packs free of
  assert.equal(p.level,'Form 7');
  assert.equal(p.subject,'Science');
  assert.equal(p.ability,'extension');
- assert.match(p.html,/Term 3/);
+ assert.match(p.html,/T3/);
  assert.match(p.html,/Teacher review/);
  assert.doesNotMatch(p.html,/studentId|FEMIS ID/i);
 });
