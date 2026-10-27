@@ -1,4 +1,4 @@
-/* PacEdu English worksheet library and teacher preview/print panel.
+/* PacEdu multi-subject daily worksheet library and teacher preview/print panel.
  * Original pilot content: differentiated by demonstrated skill, not age alone.
  * Day 1 is diagnostic evidence gathering; Days 2–365 are practice sequences.
  * Curriculum source alignment and teacher approval remain pending until verified.
@@ -424,7 +424,7 @@
       ];
     }
     return {
-      title: "Day " + day + " — English Worksheet — " + level + " — " + labelAbility(ability),
+      title: "Day " + day + " — " + (subject || "English") + " Worksheet — " + level + " — " + labelAbility(ability), 
       topic: topic,
       readingText: passageFor(stage, topic, day),
       level: level, ability: ability, day: day,
@@ -514,11 +514,11 @@
     openButton.addEventListener("click", function () {
       panel.hidden = !panel.hidden;
       openButton.setAttribute("aria-expanded", panel.hidden ? "false" : "true");
-      openButton.textContent = panel.hidden ? "📘 English — Daily Activities for All Classes" : "📘 Close English Daily Activities";
+      openButton.textContent = panel.hidden ? "📚 All Subjects — Daily Activities" : "📚 Close Daily Activities";
       if (!panel.hidden) panel.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     node("h3", "Daily Subject Worksheets — Preview Before Printing", panel);
-    node("p", "English daily practice is available for ECE, Classes 1–8 and Forms 3–7. Choose a term, week and day to build the worksheet. Day 1 is a separate initial ability check. Daily activities are original practice drafts; official Fiji syllabus outcomes still require educator verification.", panel);
+    node("p", "Daily practice is available for ECE, Classes 1–8 and Forms 3–7 across the listed subjects. Choose a subject, class/form, term, week, day and evidence-based ability band. Day 1 is a separate initial ability check. Activities are original practice drafts until the current Fiji syllabus outcomes are verified by an educator.", panel);
     var subjectSelect = addSelect(panel, "Subject", "paceduDailySubject", SUBJECTS, "English");
     var levelDefault = global.localStorage.getItem("pacificEducationLevel") || "Class 1";
     if (/^kindergarten$/i.test(levelDefault)) levelDefault = "ECE";
@@ -636,24 +636,24 @@
     function renderPreview() {
       var day = clampDay(dayInput.value);
       dayInput.value = String(day);
-      var isEnglishSchedule = subjectSelect.value === "English" &&
+      var isCurriculumSchedule = !!(
         global.PacEduDailyWorksheetContent &&
-        typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function";
+        typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function");
       var savedEvidence = storedWorksheetAbility();
-      if (((isEnglishSchedule && !initialCheckToggle.checked) || day > 1) &&
+      if (((isCurriculumSchedule && !initialCheckToggle.checked) || day > 1) &&
           !savedEvidence.hasEvidence && abilitySelect.value === "initial-assessment" && !initialCheckToggle.checked) {
         preview.textContent = "Complete the Day 1 initial ability check and record learner evidence, or select a teaching band based on observed evidence, before creating a daily practice worksheet.";
         printButton.disabled = true;
         return;
       }
-      var ability = isEnglishSchedule
+      var ability = isCurriculumSchedule
         ? (initialCheckToggle.checked ? "initial-assessment" : (abilitySelect.value === "initial-assessment" ? savedEvidence.ability : abilitySelect.value))
         : (day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value);
-      if (isEnglishSchedule && initialCheckToggle.checked) {
-        studentSheet = makeWorksheet(levelSelect.value, "initial-assessment", 1, "English");
-      } else if (isEnglishSchedule) {
+      if (isCurriculumSchedule && initialCheckToggle.checked) {
+        studentSheet = makeWorksheet(levelSelect.value, "initial-assessment", 1, subjectSelect.value);
+      } else if (isCurriculumSchedule) {
         studentSheet = global.PacEduDailyWorksheetContent.getCurriculumWorksheet({
-          level: levelSelect.value, subject: "English", term: termSelect.value,
+          level: levelSelect.value, subject: subjectSelect.value, term: termSelect.value,
           week: Number(weekSelect.value), day: Number(weekDaySelect.value), ability: ability
         });
       } else {
