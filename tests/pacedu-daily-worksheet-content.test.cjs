@@ -193,3 +193,20 @@ test("English curriculum worksheet carries candidate source metadata without fal
   assert.equal(other.curriculumSchedule.candidateSource, null);
   assert.equal(other.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
 });
+
+
+test("English practice targets progress specifically by class from ECE through Form 7", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const levels = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
+  const targets = levels.map(level => {
+    const worksheet = api.getCurriculumWorksheet({level,subject:"English",term:"T1",week:1,day:2,ability:"expected"});
+    assert.ok(worksheet.tasks.some(task => task.startsWith("Class-level target: ")), level);
+    assert.ok(worksheet.tasks.some(task => task.includes("Write") || task.includes("Show,")), level);
+    assert.match(worksheet.readingText, /Class-level practice target:/, level);
+    assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
+    return worksheet.tasks.find(task => task.startsWith("Class-level target: "));
+  });
+  assert.equal(new Set(targets).size, levels.length);
+  assert.equal(api.getCurriculumWorksheet({level:"ECE",subject:"English",term:"T1",week:1,day:2,ability:"expected"}).responseLines, 2);
+  assert.equal(api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T1",week:1,day:2,ability:"expected"}).responseLines, 14);
+});
