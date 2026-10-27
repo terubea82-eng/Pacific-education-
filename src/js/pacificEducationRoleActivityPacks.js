@@ -524,6 +524,10 @@
       var source = document.createElement("p"); source.textContent = activity.source; card.appendChild(source);
     }
     var status = document.createElement("p"); status.textContent = activity.curriculumStatus; status.setAttribute("role","note"); card.appendChild(status);
+    if (String(role || "").toLowerCase() === "teacher" && global.PacEduDownloadableClassPacks &&
+        typeof global.PacEduDownloadableClassPacks.renderControls === "function") {
+      global.PacEduDownloadableClassPacks.renderControls(card, context);
+    }
     if (learnerRole && global.PacEduDailyWorksheetContent &&
         typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function") {
       var rawLessonLevel = String(context.level || "");
