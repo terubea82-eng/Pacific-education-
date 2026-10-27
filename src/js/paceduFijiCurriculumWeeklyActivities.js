@@ -257,6 +257,10 @@
           el("h5","Curriculum alignment record",output);
           el("p","Draft concept: "+daily.dailyLesson.curriculumAlignment.draftConcept,output);
           el("p","Official achievement indicator: "+(daily.dailyLesson.curriculumAlignment.achievementIndicator || "NOT YET MAPPED — teacher must enter exact current official reference"),output);
+          if (daily.dailyLesson.curriculumAlignment.candidateIndicator) {
+            var candidate=daily.dailyLesson.curriculumAlignment.candidateIndicator;
+            el("p","Candidate indicator for review only: "+candidate.id+" — "+candidate.text+" • strand: "+candidate.strand+" • source status: "+candidate.sourceStatus+". Not yet verified.",output);
+          }
           el("p","Alignment status: "+daily.dailyLesson.curriculumAlignment.verificationStatus,output);
           var criteria=el("ul",null,output);
           daily.dailyLesson.successCriteria.forEach(function(c){el("li",c,criteria);});
