@@ -143,6 +143,36 @@ test("every scheduled subject and supported level receives a five-step see-read-
   }
 });
 
+test("a matching class-specific indicator is attached only as a candidate until reviewed", () => {
+  const window = load();
+  window.PacificEducationAchievementDistributionEngine = {
+    buildDailyIndicatorPlan(filters) {
+      assert.equal(filters.classId, "CLASS-1-A");
+      assert.equal(filters.level, "Class 1");
+      assert.equal(filters.subjectId, "English");
+      assert.equal(filters.term, "Term 1");
+      return {assignment:{
+        classId:"CLASS-1-A",level:"Class 1",subjectId:"English",term:"Term 1",
+        indicatorId:"C1-ENG-P-002",indicatorText:"Respond to a short spoken message.",
+        strand:"Speaking and Listening",sourceStatus:"unverified",productionEligible:false
+      }};
+    }
+  };
+  const worksheet = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+    level:"Class 1",subject:"English",term:"T1",curriculumTerm:"Term 1",
+    week:1,day:2,dayNumber:2,ability:"developing",classReference:"CLASS-1-A"
+  });
+  assert.equal(worksheet.dailyLesson.curriculumAlignment.candidateIndicator.id,"C1-ENG-P-002");
+  assert.equal(worksheet.dailyLesson.curriculumAlignment.candidateIndicator.status,"PENDING_TEACHER_REVIEW");
+  assert.equal(worksheet.dailyLesson.curriculumAlignment.achievementIndicator,null);
+  assert.equal(worksheet.dailyLesson.curriculumAlignment.verificationStatus,"NOT_YET_MAPPED");
+  const mismatched = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+    level:"Class 1",subject:"English",term:"T1",curriculumTerm:"Term 1",
+    week:1,day:2,dayNumber:2,ability:"developing",classReference:"OTHER-CLASS"
+  });
+  assert.equal(mismatched.dailyLesson.curriculumAlignment.candidateIndicator,undefined);
+});
+
 test("Class 1 English Day 2 starts with the planned introduction activity", () => {
   const worksheet = load().PacEduDailyWorksheetContent.getWorksheet("Class 1", "English", 2, "expected");
   assert.equal(worksheet.topic, "Who am I? — Class 1 Term 1 Week 1");
