@@ -353,7 +353,7 @@
     tasks.unshift(bandPrefix);
     return {
       topic: safeTheme + " — " + dayFocus,
-      readingText: passage + "\\n\\nClass-level practice target: " + levelExpectation.target,
+      readingText: passage + "\n\nClass-level practice target: " + levelExpectation.target,
       questions: questions,
       answerKey: questions.map(function (q) { return {number:q.number,answer:q.answer,explanation:q.why}; }),
       tasks: tasks,
