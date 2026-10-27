@@ -559,6 +559,9 @@
     if (!options.skipTermPlan && global.PacEduTermLearningPlan) {
       worksheet.termLearningPlan = global.PacEduTermLearningPlan.getTermPlan({level:level,subject:subject,term:block,ability:ability});
       worksheet.revisionPaper = global.PacEduTermLearningPlan.getRevisionPaper({level:level,subject:subject,term:block,ability:ability});
+      if (global.PacEduPracticeExamPaper && typeof global.PacEduPracticeExamPaper.getPaper === "function") {
+        worksheet.practiceExamPaper = global.PacEduPracticeExamPaper.getPaper({level:level,subject:subject,term:block,ability:ability});
+      }
     }
     return worksheet;
   }
