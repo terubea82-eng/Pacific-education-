@@ -39,7 +39,7 @@
     ["T2",6,"Culture, language and respectful exchange","verified language examples and perspectives"],
     ["T2",7,"Movement, rhythm and creative expression","practise, repeat, perform and reflect"],
     ["T2",8,"Safety, wellbeing and help-seeking","recognise risk and choose safe actions"],
-    ["T2",9,"Design, making and technology","plan, test, improve and explain"],
+    ["T2",9,"Design, making, technology and Term 2 consolidation","plan, test, improve, explain and review priority learning"],
     ["T2",10,"Term 2 consolidation","mixed practice and evidence check"],
     ["T3",1,"Read, investigate and explain","use details or observations to support an answer"],
     ["T3",2,"Compare solutions and perspectives","similarities, differences and reasons"],
