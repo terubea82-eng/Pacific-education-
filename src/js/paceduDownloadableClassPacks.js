@@ -48,13 +48,13 @@ function build(options){
   var sheet=api.getCurriculumWorksheet({level:level,subject:subject,term:term,week:w,day:d,ability:ability,skipTermPlan:true});
   if(!sheet||sheet.status==="NOT_FOUND"){missing++;continue;}
   var lesson=sheet.dailyLesson||{},qs=sheet.questions||[],keys=sheet.answerKey||[];
-  sections.push("<section class=\"worksheet\"><h2>"+esc(term+" · Week "+w+" · Day "+d)+" — "+esc(sheet.title||subject+" daily activity")+"</h2>"+
+  sections.push("<section class=\"worksheet\"><h2>"+esc(term+" · Week "+w+" · Day "+d)+" — "+esc(sheet.topic||subject+" daily activity")+"</h2>"+
    "<p><strong>Prepared by PacEdu:</strong> "+esc(dateStamp(prepared))+" · <strong>Class:</strong> "+esc(level)+" · <strong>Subject:</strong> "+esc(subject)+" · <strong>Ability group:</strong> "+esc(band.label)+"</p>"+
-   "<p><strong>Learning focus:</strong> "+esc(lesson.learningIntention||sheet.goal||sheet.topic||"Use the teacher-approved class scheme of work.")+"</p>"+
-   "<p><strong>Concept / indicator:</strong> "+esc(sheet.concept||sheet.curriculumSchedule&&sheet.curriculumSchedule.suggestedFocus||"Teacher to verify")+" <em>— official indicator mapping: "+esc(sheet.curriculumSchedule&&sheet.curriculumSchedule.verificationStatus||"NOT_YET_MAPPED")+"</em></p>"+
-   "<h3>See / visual example</h3><p>"+esc(lesson.visualStoryboard||lesson.visualPrompt||lesson.example||"Teacher: add a suitable visual or real-object example.")+"</p>"+
-   "<h3>Read</h3><p>"+esc(lesson.readingText||lesson.text||lesson.workedExample||"Read the teacher-approved worked example.")+"</p>"+
-   "<h3>Hear / narration</h3><p>"+esc(lesson.audioNarration&&lesson.audioNarration.transcript||lesson.narration||lesson.audioTranscript||"Teacher may read the instructions aloud; provide a written transcript.")+"</p>"+
+   "<p><strong>Learning focus:</strong> "+esc(lesson.classLevelObjective||lesson.learnerAction||sheet.topic||"Use the teacher-approved class scheme of work.")+"</p>"+
+   "<p><strong>Concept / indicator:</strong> "+esc(lesson.concept||sheet.curriculumSchedule&&sheet.curriculumSchedule.suggestedFocus||"Teacher to verify")+" <em>— official indicator mapping: "+esc(sheet.curriculumSchedule&&sheet.curriculumSchedule.verificationStatus||"NOT_YET_MAPPED")+"</em></p>"+
+   "<h3>See / visual example</h3><p>"+esc(lesson.visualExample||lesson.exampleText||lesson.concept||sheet.passage||sheet.topic||"Teacher: add a suitable visual or real-object example.")+"</p>"+
+   "<h3>Read</h3><p>"+esc(lesson.exampleText||sheet.readingText||sheet.passage||lesson.workedExample||"Read the teacher-approved worked example.")+"</p>"+
+   "<h3>Hear / narration</h3><p>"+esc(lesson.narration||lesson.workedExample||"Teacher may read the instructions aloud; provide a written transcript.")+"</p>"+
    "<h3>Try</h3>"+listQuestions(qs,keys)+
    "<h3>Subject-specific marking criteria</h3>"+criteriaHtml(subject)+"<p><strong>Ability guidance ("+esc(band.label)+"):</strong> "+esc(band.guidance)+"</p><p>Accept accessible equivalent evidence where the learning outcome allows it; note prompts and accommodations used.</p>"+
    "<p><strong>Teacher review:</strong> verify source, class fit, answers and current achievement indicator before assigning. Do not infer ability from missing work or an unclear image.</p></section>");
