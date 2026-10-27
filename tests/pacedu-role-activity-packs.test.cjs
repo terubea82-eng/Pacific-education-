@@ -29,6 +29,13 @@ test("approved learner workspace exposes the five-step see-read-hear lesson and 
   assert.match(renderer, /official achievement indicator: not yet mapped/i);
 });
 
+test("unsupported learner subjects are not silently shown English content", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  assert.match(renderer, /lessonSubjectAliases/);
+  assert.match(renderer, /if \(global\.PacEduDailyWorksheetContent\.subjects\.indexOf\(lessonSubject\) < 0\) lessonSubject = ""/);
+  assert.match(renderer, /PacEdu will not substitute an English lesson/);
+});
+
 test("Fiji Year 1 English daily activities follow the eight resource-topic sequence", () => {
   const expected = [
     "Who am I?", "My Friends", "My School", "Getting Ready for School",
