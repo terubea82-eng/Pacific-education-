@@ -29,7 +29,7 @@
     ["T1",6,"Weather and observations","observe, record and describe"],
     ["T1",7,"Plants, animals and living things","notice features, needs and differences"],
     ["T1",8,"Our community and helpers","roles, services and cooperation"],
-    ["T1",9,"Patterns, shapes and numbers around us","identify, extend and explain patterns"],
+    ["T1",9,"Patterns, shapes, numbers and Term 1 consolidation","identify, extend and explain patterns; review priority learning and evidence"],
     
     ["T2",1,"Stories and information texts","literal meaning, vocabulary and retelling"],
     ["T2",2,"Communication and instructions","listen/read, follow and give clear directions"],
