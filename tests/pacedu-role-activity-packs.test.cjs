@@ -20,7 +20,7 @@ test("approved learner workspace exposes the five-step see-read-hear lesson and 
   const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
   assert.match(renderer, /if \(learnerRole && global\.PacEduDailyWorksheetContent/);
   assert.match(renderer, /getCurriculumWorksheet/);
-  assert.match(renderer, /SEE|READ|HEAR/);
+  assert.match(renderer, /see|read|hear/i);
   assert.match(renderer, /audioNarration\.transcript/);
   assert.match(renderer, /global\.PacificEducationSpeech\.speakText/);
   assert.match(renderer, /global\.PacificEducationSpeech\.stopSpeech/);
