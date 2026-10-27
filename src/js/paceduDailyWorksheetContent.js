@@ -367,6 +367,61 @@
     };
   }
 
+  function makeDailyLesson(level, subject, ability, termLabel, week, day, worksheet, suggestedFocus) {
+    var concept = String(worksheet.topic || suggestedFocus || subject + " learning").replace(/\\s+/g, " ").trim();
+    var stageName = stage(level);
+    var learnerAction = stageName === "early"
+      ? "Look, listen, point, match, move, speak, sign, draw or select an answer."
+      : stageName === "foundation"
+        ? "Look at the example, read or listen to the short text, then answer with words, pictures or a sentence."
+        : stageName === "middle"
+          ? "Read or inspect the example, identify the important detail, solve the task and explain one choice."
+          : "Examine the example, identify evidence or working, justify a conclusion and apply the concept to a new case.";
+    var exampleText = worksheet.readingText || worksheet.passage || worksheet.topic || concept;
+    var firstQuestion = worksheet.questions && worksheet.questions[0];
+    var firstAnswer = worksheet.answerKey && worksheet.answerKey[0];
+    var workedExample = firstQuestion
+      ? firstQuestion.prompt + (firstAnswer ? " Model answer: " + firstAnswer.answer + ". " + (firstAnswer.explanation || "") : "")
+      : "Teacher demonstrates one safe, accurate example of " + concept + " and explains the steps.";
+    var narration = "Welcome. Today we are learning " + concept + " in " + subject + ". "
+      + "Step 1. Look at the example on screen. " + exampleText + " "
+      + "Step 2. Read the key idea and listen to the example. "
+      + "Step 3. Watch the teacher model one answer: " + workedExample + " "
+      + "Step 4. Try the activity yourself. " + learnerAction + " "
+      + "Step 5. Check your work, explain your thinking, and ask your teacher for help if needed.";
+    return {
+      title: subject + " — " + level + " — " + termLabel + ", Week " + week + ", Day " + day,
+      learningConcept: concept,
+      learningIntention: "We are learning to " + String(suggestedFocus || concept).replace(/[.!?]+$/, "") + ".",
+      successCriteria: [
+        "I can identify or demonstrate the main idea or skill in the example.",
+        "I can try the activity using an accessible response method.",
+        "I can show evidence, working or an explanation that matches my class task."
+      ],
+      workedExample: workedExample,
+      steps: [
+        {step:1, mode:"SEE / VIDEO FRAME", onScreen:"Show a clear picture, object, diagram or short subject demonstration connected to: " + concept + ".", learnerAction:"Look closely and notice one important detail.", narration:"Step 1. Look at the example. What do you notice?"},
+        {step:2, mode:"READ", onScreen:"Display the learning intention, key words and example text: " + exampleText, learnerAction:"Read the text or follow along while it is read aloud.", narration:"Step 2. Read the key idea and example. Pause when you meet an unfamiliar word."},
+        {step:3, mode:"HEAR / AUDIO", onScreen:"Highlight each key word as the narrator reads the worked example.", learnerAction:"Listen once, then replay or read the transcript at your own pace.", narration:"Step 3. Listen to the worked example: " + workedExample},
+        {step:4, mode:"TRY", onScreen:"Show the activity question and a step-by-step model; then remove the model for the learner's attempt.", learnerAction:learnerAction, narration:"Step 4. Now try the activity yourself. You may speak, write, point, draw, use objects, or use another response method agreed with your teacher."},
+        {step:5, mode:"CHECK / REFLECT", onScreen:"Show the success criteria and invite the learner to explain or demonstrate one answer.", learnerAction:"Check your work and identify one thing you understand or want help with.", narration:"Step 5. Check your answer. Explain how you know, then ask for feedback if you need it."}
+      ],
+      videoStoryboard: {format:"5-frame storyboard for a short lesson video; not a rendered video file", frames:5, captions:"Use each step's onScreen text as the on-screen caption; display key words and the example while narration plays."},
+      audioNarration: {status:"SCRIPT_READY_FOR_PACEDU_NARRATOR", language:"Use the learner's school-approved language and voice setting.", transcript:narration},
+      learnerText: {status:"TEXT_READY", passage:exampleText, workedExample:workedExample, instructions:learnerAction},
+      curriculumAlignment: {
+        country:"Fiji", level:level, subject:subject, term:termLabel, week:week, day:day,
+        draftConcept:concept, suggestedFocus:suggestedFocus || concept,
+        officialSyllabusTitle:null, officialSyllabusVersion:null, strand:null,
+        achievementIndicator:null, officialReference:null, reviewedBy:null, reviewedOn:null,
+        verificationStatus:"NOT_YET_MAPPED",
+        rule:"Do not invent an official achievement indicator. A qualified teacher must enter the exact current authorized syllabus reference before this lesson can be labelled curriculum-aligned."
+      },
+      abilityBand:ability,
+      accessibility:"Provide captions/transcript, adjustable text size, pause/replay controls in the player, and alternatives to sound or video such as text, pictures, objects and teacher read-aloud."
+    };
+  }
+
   function getCurriculumWorksheet(options) {
     options = options || {};
     var block = String(options.term || "T1").toUpperCase();
@@ -407,6 +462,10 @@
       );
       Object.keys(scheduledEnglish).forEach(function (key) { worksheet[key] = scheduledEnglish[key]; });
     }
+    worksheet.dailyLesson = makeDailyLesson(
+      level, subject, ability, selected.label, week, day, worksheet,
+      curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
+    );
     worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
     var candidateSource = null;
     if (level === "Class 1" && block === "T1" && week === 1) {
