@@ -1,8 +1,74 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-27T18:54:16.301Z",
+  "generatedAt": "2026-10-27T19:20:09.677Z",
   "source": "Fiji One News (Fiji TV), The Fiji Times, Fiji Sun, FBC News, RNZ Pacific, BBC News World, Deutsche Welle, Al Jazeera English, UNESCO, WHO and UN News; all items source-, date- and relevance-validated. Fiji-first, Pacific-second ordering; teacher approval required.",
   "items": [
+    {
+      "id": "OFFICIAL-b1f6fd2a20db5ec5de27ef7b",
+      "title": "Early action can prevent disability",
+      "url": "https://www.fbcnews.com.fj/news/early-action-can-prevent-disability/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-27T18:00:41.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Social Science",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-cf1db2f5c9fa2af67ceab10b",
+      "title": "Nadarivatu questions unverified resource payments",
+      "url": "https://www.fbcnews.com.fj/news/nadarivatu-questions-unverified-resource-payments/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-27T17:59:46.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Geography"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
     {
       "id": "OFFICIAL-e515bb3432582fb505583573",
       "title": "Tractor Boosts Matuku Farmers’ Production",
@@ -96,69 +162,6 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-c72b365182a6b04322eab897",
-      "title": "Pennsylvania measles cases rise to 1,360, state health department says",
-      "url": "https://www.fbcnews.com.fj/world/pennsylvania-measles-cases-rise-to-1360-state-health-department-says/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-27T05:46:39.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Mathematics",
-        "Science",
-        "Health Science"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-b9f23f295adf6219c73c6f8b",
-      "title": "Naitasiri youth revive Bilibili tradition",
-      "url": "https://www.fbcnews.com.fj/news/naitasiri-youth-revive-bilibili-tradition/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-27T05:05:09.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science",
-        "History"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
       "id": "OFFICIAL-28afc93263140bebe5863c84",
       "title": "Borehole Projects Improve Water Access for Bua Schools",
       "url": "https://fijionenews.com.fj/borehole-projects-improve-water-access-for-bua-schools/",
@@ -190,7 +193,7 @@
     },
     {
       "id": "OFFICIAL-6f318f78e96a248063754253",
-      "title": "Follow Supreme Court opinion – Rokomokoti",
+      "title": "Follow Supreme Court Opinion Rokomokoti",
       "url": "https://www.fijitimes.com.fj/follow-supreme-court-opinion-rokomokoti/",
       "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
@@ -252,7 +255,7 @@
     },
     {
       "id": "OFFICIAL-5d29567e6cf9199cf6cadc59",
-      "title": "Dry spell impacts farmers",
+      "title": "Dry Spell Impacts Farmers",
       "url": "https://www.fijitimes.com.fj/dry-spell-impacts-farmers/",
       "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
@@ -314,7 +317,7 @@
     },
     {
       "id": "OFFICIAL-90b741a1e0cf4f9581eb1854",
-      "title": "Proposal to connect farmers to resort supply chains",
+      "title": "Proposal To Connect Farmers To Resort Supply Chains",
       "url": "https://www.fijitimes.com.fj/proposal-to-connect-farmers-to-resort-supply-chains/",
       "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
@@ -467,7 +470,7 @@
     },
     {
       "id": "OFFICIAL-ffa2acf60d9ccb151cdfb59a",
-      "title": "WHO Western Pacific Member States agree to urgently accelerate progress on key health priorities",
+      "title": "2026 News release WHO Western Pacific Member States agree to urgently accelerate progress on key health priorities",
       "url": "https://www.who.int/westernpacific/news/item/22-10-2026-who-western-pacific-member-states-agree-to-urgently-accelerate-progress-on-key-health-priorities",
       "source": "WHO Western Pacific",
       "countryOrRegion": "PACIFIC",
@@ -495,7 +498,7 @@
     },
     {
       "id": "OFFICIAL-303acf1a3eca4d6ae85f7d85",
-      "title": "Institute of Philanthropy and WHO launch partnership to advance healthy ageing in the Western Pacific",
+      "title": "2026 News release Institute of Philanthropy and WHO launch partnership to advance healthy ageing in the Western Pacific",
       "url": "https://www.who.int/westernpacific/news/item/22-10-2026-institute-of-philanthropy-and-who-launch-partnership-to-advance-healthy-ageing-in-the-western-pacific",
       "source": "WHO Western Pacific",
       "countryOrRegion": "PACIFIC",
@@ -522,30 +525,28 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-7cb9d29cc1435140b999c2e7",
-      "title": "The WhatsApp ‘general’ behind Lula’s election comeback in Brazil",
-      "url": "https://www.aljazeera.com/news/2026/10/27/the-whatsapp-general-behind-lulas-election-comeback-in-brazil?traffic_source=rss",
+      "id": "OFFICIAL-3e7b46f1912de6765bb1d7f5",
+      "title": "US’s RFK Jr claims Arabs ‘don’t produce science’: Why he’s very, very wrong",
+      "url": "https://www.aljazeera.com/news/2026/10/27/uss-rfk-jr-claims-arabs-dont-produce-science-why-hes-very-very-wrong?traffic_source=rss",
       "source": "Al Jazeera English",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-27T18:35:05.000Z",
+      "publishedAt": "2026-10-27T19:12:35.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Social Science"
+        "Mathematics",
+        "Science",
+        "Health Science"
       ],
       "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
         "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Class 6"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -553,12 +554,12 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-6bfb276e291fb9241cd22686",
-      "title": "‘If they’re honest’: Trump casts latest suspicion on US midterm elections",
-      "url": "https://www.aljazeera.com/news/2026/10/27/if-theyre-honest-trump-casts-latest-suspicion-on-us-midterm-elections?traffic_source=rss",
+      "id": "OFFICIAL-7cead34be074710e3d4564bb",
+      "title": "Trump says he’ll respect US midterm results if elections are ‘honest’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/trump-says-hell-respect-us-midterm-results-if-elections-are?traffic_source=rss",
       "source": "Al Jazeera English",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-27T18:24:13.000Z",
+      "publishedAt": "2026-10-27T19:11:27.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -728,7 +729,7 @@
     },
     {
       "id": "OFFICIAL-3fe5d4e38946873f5a0f8777",
-      "title": "Latest news from WHO",
+      "title": "2026 Departmental update WHO launches working papers on traditional medicine",
       "url": "https://www.who.int/news/item/23-10-2026-who-launches-working-papers-on-traditional-medicine",
       "source": "WHO Newsroom",
       "countryOrRegion": "GLOBAL",
@@ -759,7 +760,7 @@
     },
     {
       "id": "OFFICIAL-73eb9274647e4817480bc7bd",
-      "title": "WHO and ENHYPEN join efforts to inspire young blood donors globally",
+      "title": "2026 News release WHO and ENHYPEN join efforts to inspire young blood donors globally",
       "url": "https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally",
       "source": "WHO Newsroom",
       "countryOrRegion": "GLOBAL",
@@ -787,7 +788,7 @@
     },
     {
       "id": "OFFICIAL-dca05e09a6defd6e8ba06451",
-      "title": "Global Diagnostics Coalition calls for collective action to close the diagnostic gap",
+      "title": "2026 Departmental update Global Diagnostics Coalition calls for collective action to close the diagnostic gap",
       "url": "https://www.who.int/news/item/22-10-2026-global-diagnostics-coalition-calls-for-collective-action-to-close-the-diagnostic-gap",
       "source": "WHO Newsroom",
       "countryOrRegion": "GLOBAL",
@@ -852,7 +853,7 @@
     },
     {
       "id": "OFFICIAL-c83b398fa190d39853cf9a2e",
-      "title": "Press Releases",
+      "title": "Gender gaps in education narrow globally, yet early marriage remains a major barrier to girls’ education, new UNESCO report shows 8 October 2026",
       "url": "https://www.unesco.org/en/articles/gender-gaps-education-narrow-globally-yet-early-marriage-remains-major-barrier-girls-education-new",
       "source": "UNESCO",
       "countryOrRegion": "GLOBAL",
@@ -879,7 +880,7 @@
     },
     {
       "id": "OFFICIAL-5f919d5b593df92e365ce4a0",
-      "title": "UNESCO and Norway strengthen their partnership through new agreement to advance education, culture and freedom of expression",
+      "title": "UNESCO and Norway strengthen their partnership through new agreement to advance education, culture and freedom of expression 16 September 2026",
       "url": "https://www.unesco.org/en/articles/unesco-and-norway-strengthen-their-partnership-through-new-agreement-advance-education-culture-and",
       "source": "UNESCO",
       "countryOrRegion": "GLOBAL",
