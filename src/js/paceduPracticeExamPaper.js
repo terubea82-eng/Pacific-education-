@@ -5,7 +5,7 @@ function getPaper(options){
  options=options||{};
  var api=global.PacEduTermLearningPlan;
  if(!api||typeof api.getRevisionPaper!=="function")return {status:"NOT_READY",questions:[],answerKey:[]};
- var paper=api.getRevisionPaper(options);
+ options.paperType = "exam"; var paper=api.getRevisionPaper(options);
  return Object.assign({},paper,{
   title:paper.term+" "+paper.subject+" Practice Examination",
   instructions:"Mock practice only, built from the term revision question bank. This is not an official or past examination paper. Teacher must check the current syllabus, question suitability and answer key.",
