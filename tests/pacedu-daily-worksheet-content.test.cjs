@@ -178,3 +178,18 @@ test("scheduled English worksheets provide level-appropriate reading and four an
   assert.match(ece.tasks[0], /SUPPORTED START/);
   assert.match(form7.tasks[0], /EXTENSION/);
 });
+
+
+test("English curriculum worksheet carries candidate source metadata without falsely certifying alignment", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const candidate = api.getCurriculumWorksheet({level:"Class 1",subject:"English",term:"T1",week:1,day:2,ability:"developing"});
+  assert.equal(candidate.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
+  assert.equal(candidate.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
+  assert.equal(candidate.curriculumSchedule.candidateSource.title, "Year 1 English — Language, Literacy and Communication");
+  assert.match(candidate.curriculumSchedule.candidateSource.url, /^https:\/\//);
+  assert.match(candidate.curriculumSchedule.candidateSource.authorityStatus, /THIRD_PARTY_HOSTED_COPY/);
+  assert.match(candidate.sourceNote, /current authorized school\/FEMIS\/Ministry copy/);
+  const other = api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T2",week:3,day:1,ability:"extension"});
+  assert.equal(other.curriculumSchedule.candidateSource, null);
+  assert.equal(other.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
+});
