@@ -54,12 +54,18 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
   }
 
   function newsFor(ctx){
-    var item = null;
+    var cfg = window.PacificEducationCountryConfig;
+    var picker = window.PacificEducationClassStoryDifferentiation;
+    if(!cfg || !picker) return null;
     try {
-      var cfg = window.PacificEducationCountryConfig;
-      if(cfg && typeof cfg.getDailyEducationalCurrentAffair === "function") item = cfg.getDailyEducationalCurrentAffair(ctx);
-    } catch(e){}
-    return item;
+      var list = typeof cfg.getCurrentAffairs === "function" ? cfg.getCurrentAffairs(ctx.countryCode) : [];
+      var selected = picker.selectStory(list, ctx.level, ctx.subject);
+      if(selected) return selected;
+      // A single-item provider is supported only if it passes the same strict
+      // approval, class-level, subject and basic sensitivity checks.
+      var daily = typeof cfg.getDailyEducationalCurrentAffair === "function" ? cfg.getDailyEducationalCurrentAffair(ctx) : null;
+      return picker.isSuitableStory(daily, ctx.level, ctx.subject) ? daily : null;
+    } catch(e){ return null; }
   }
 
   function generate(ctx){
@@ -75,9 +81,11 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
       requestType:"TEACHER_REQUESTED_COORDINATED_DAILY_ACTIVITY",
       countryCode:ctx.countryCode,country:ctx.country,schoolId:ctx.schoolId,school:ctx.school,
       classId:ctx.classId,level:ctx.level,subject:ctx.subject,term:ctx.term,day:ctx.day,
-      teachingConcept:concept,sourceType:sourceType,
+      teachingConcept:concept,achievementIndicator:concept,sourceType:sourceType,
       currentAffairsId:news && (news.id||news.sourceId) || null,
       currentAffairsTitle:news && news.title || null,
+      currentAffairsUrl:news && news.url || null,
+      currentAffairsStory:news || null,
       learningObjective:"Learn and demonstrate the scheduled curriculum concept in a meaningful real-world context.",
       teacherActivity:activity,
       performanceTask:"Student explains, demonstrates, solves or produces evidence showing understanding of the shared concept.",
@@ -108,12 +116,20 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
   }
   function differentiatedPlan(base,x){
     var level=String(x.level||base.level||"Class 1");
+    var picker=window.PacificEducationClassStoryDifferentiation;
+    var indicator=String(base.achievementIndicator||base.teachingConcept||"Teacher-selected daily learning concept");
+    var groups=picker&&typeof picker.buildAbilityActivities==="function"
+      ? picker.buildAbilityActivities({level:level,subject:base.subject,sharedConcept:base.teachingConcept,achievementIndicator:indicator,story:base.currentAffairsStory||null})
+      : [];
     return {
       classId:x.classId,level:level,section:x.section||"",
-      sharedConcept:base.teachingConcept,
+      sharedConcept:base.teachingConcept,sharedAchievementIndicator:indicator,
+      currentAffairsId:base.currentAffairsId||null,currentAffairsTitle:base.currentAffairsTitle||null,
+      currentAffairsUrl:base.currentAffairsUrl||null,
+      abilityActivities:groups,
       activity:"Teacher-guided "+level+" activity applying the shared curriculum concept to an age-appropriate real-world context.",
-      performanceTask:"Learner demonstrates understanding at the appropriate level and submits text or audio evidence.",
-      assessment:"Teacher checks the same curriculum concept/indicator using differentiated difficulty and method.",
+      performanceTask:"Learner demonstrates the same achievement indicator at an appropriate support level and submits text or audio evidence.",
+      assessment:"All four ability groups work toward the same achievement indicator; scaffolding, complexity and response method may differ.",
       status:"PENDING_TEACHER_REVIEW"
     };
   }
