@@ -185,3 +185,17 @@ test("student activity refuses a distributed indicator for a different class", (
     else window.PacificEducationAchievementDistributionEngine = original;
   }
 });
+
+test("saved learner work carries dated assignment context into the teacher review queue without storing an unverified FEMIS ID", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  const queue = fs.readFileSync("src/js/pacificEducationTeacherReviewQueue.js", "utf8");
+  assert.match(renderer, /var reviewKey = "pacificEducationActivityResponses"/);
+  assert.match(renderer, /assignmentId:assignmentId/);
+  assert.match(renderer, /learnerIdentityStatus:/);
+  assert.match(renderer, /reviewStatus:"pending-teacher-review"/);
+  assert.match(renderer, /teacher review queue could not be updated/i);
+  assert.match(queue, /Learner ID verification:/);
+  assert.match(queue, /Assignment reference:/);
+  assert.match(queue, /Prepared \/ submitted:/);
+  assert.doesNotMatch(renderer, /studentId:\s*enteredId/);
+});
