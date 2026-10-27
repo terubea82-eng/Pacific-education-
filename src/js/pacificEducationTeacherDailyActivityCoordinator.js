@@ -148,7 +148,9 @@ return {countryCode:countryCode,country:country,school:school,schoolId:schoolId,
         if(cfg&&typeof cfg.upsertDailyActivity==="function")cfg.upsertDailyActivity({
           id:"TDA-"+item.id+"-"+x.classId,countryCode:item.countryCode,country:item.country,
           classReference:x.classId,level:x.level,subject:item.subject,term:item.term,day:item.day,
-          teachingConcept:item.teachingConcept,sourceType:item.sourceType,currentAffairsId:item.currentAffairsId,
+          teachingConcept:item.teachingConcept,achievementIndicator:item.achievementIndicator||item.teachingConcept,
+          sourceType:item.sourceType,currentAffairsId:item.currentAffairsId,currentAffairsTitle:item.currentAffairsTitle,
+          currentAffairsUrl:item.currentAffairsUrl,abilityActivities:plan.abilityActivities,
           activity:plan.activity,performance:plan.performanceTask,assessment:plan.assessment,
           status:"PENDING_TEACHER_REVIEW",coordinationGroup:key,
           verification:"AI Generated → Curriculum Mapped → Pending Teacher/Reviewer Verification"
