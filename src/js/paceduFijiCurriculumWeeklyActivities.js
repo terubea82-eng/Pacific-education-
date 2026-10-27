@@ -220,6 +220,31 @@
         el("h4",daily.title,output);
         el("p","Curriculum theme: "+daily.curriculumSchedule.teachingTheme,output);
         el("p","Practice example: "+daily.readingText,output);
+        if (daily.dailyLesson) {
+          el("h4","Step-by-step lesson: see, read and hear",output);
+          el("p","Learning intention: "+daily.dailyLesson.learningIntention,output);
+          el("p","Concept: "+daily.dailyLesson.learningConcept,output);
+          el("h5","Video storyboard and learner steps",output);
+          var lessonSteps=el("ol",null,output);
+          daily.dailyLesson.steps.forEach(function(step){
+            var li=el("li",null,lessonSteps);
+            el("strong",step.mode+": ",li);
+            el("span",step.onScreen+" Learner: "+step.learnerAction,li);
+            el("p","Narration: "+step.narration,li);
+          });
+          el("h5","Read-along text and worked example",output);
+          el("p",daily.dailyLesson.learnerText.passage,output);
+          el("p","Worked example: "+daily.dailyLesson.workedExample,output);
+          el("h5","Audio narration transcript",output);
+          el("p",daily.dailyLesson.audioNarration.transcript,output);
+          el("p","Audio status: narration script prepared for the existing PacEdu narrator; this update does not create a rendered video or guarantee audio playback on every device.",output);
+          el("h5","Curriculum alignment record",output);
+          el("p","Draft concept: "+daily.dailyLesson.curriculumAlignment.draftConcept,output);
+          el("p","Official achievement indicator: "+(daily.dailyLesson.curriculumAlignment.achievementIndicator || "NOT YET MAPPED — teacher must enter exact current official reference"),output);
+          el("p","Alignment status: "+daily.dailyLesson.curriculumAlignment.verificationStatus,output);
+          var criteria=el("ul",null,output);
+          daily.dailyLesson.successCriteria.forEach(function(c){el("li",c,criteria);});
+        }
         el("p","Worked guidance: "+daily.answerKey[0].explanation,output);
         el("p",daily.instructions,output);
         el("h4","Student questions",output);
