@@ -538,7 +538,7 @@
       var lessonTermRaw = String(context.term || global.localStorage.getItem("pacificEducationTerm") || "T1").toUpperCase();
       var lessonTerm = /^(T1|T2|T3|ASSESSMENT|INTERVENTION|REVISION|EXAMS)$/.test(lessonTermRaw) ? lessonTermRaw :
         (/2/.test(lessonTermRaw) ? "T2" : (/3/.test(lessonTermRaw) ? "T3" : "T1"));
-      var storedWeek = Number(global.localStorage.getItem("pacificEducationWeek") || global.localStorage.getItem("pacificEducationTeachingWeek") || "1");
+      var storedWeek = Number(global.localStorage.getItem("pacificEducationWeek") || global.localStorage.getItem("pacificEducationTeachingWeek") || String(Math.ceil(Math.max(1,Number(day)||1)/5)));
       var lessonWeek = Math.max(1, Math.min(lessonTerm === "T3" ? 5 : lessonTerm === "INTERVENTION" ? 5 : lessonTerm === "REVISION" || lessonTerm === "EXAMS" ? 2 : 10, storedWeek || 1));
       var lessonDay = ((Math.max(1, Number(day) || 1) - 1) % 5) + 1;
       var lessonAbility = ["support","developing","expected","extension"].indexOf(context.capability) >= 0 ? context.capability : "developing";
