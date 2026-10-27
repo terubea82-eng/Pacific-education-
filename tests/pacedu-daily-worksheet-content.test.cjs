@@ -128,9 +128,8 @@ test("every scheduled subject and supported level receives a five-step see-read-
       assert.equal(worksheet.subject, subject);
       assert.ok(worksheet.dailyLesson, level + " / " + subject);
       assert.equal(worksheet.dailyLesson.steps.length, 5);
-      assert.deepEqual(worksheet.dailyLesson.steps.map(x => x.mode), [
-        "SEE / VIDEO FRAME", "READ", "HEAR / AUDIO", "TRY", "CHECK / REFLECT"
-      ]);
+      assert.equal(Array.from(worksheet.dailyLesson.steps, x => x.mode).join("|"),
+        ["SEE / VIDEO FRAME", "READ", "HEAR / AUDIO", "TRY", "CHECK / REFLECT"].join("|"));
       assert.ok(worksheet.dailyLesson.audioNarration.transcript.length > 80);
       assert.ok(worksheet.dailyLesson.learnerText.passage.length > 10);
       assert.ok(worksheet.dailyLesson.workedExample.length > 10);
