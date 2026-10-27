@@ -139,12 +139,12 @@ jobs:
                 const titleWithDate = decode(m[4]);
                 const titleDateMatch = titleWithDate.match(/\b(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b/i);
                 const titleDateTimestamp = titleDateMatch ? Date.parse(titleDateMatch[1]) : NaN;
-                const title = titleWithDate
-                  .replace(/^\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}\s*/i, '')
-                  .replace(/\s+\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}\s*$/i, '')
-                  .replace(/^(?:(?:joint\s+)?news release|media release|departmental update|feature story|commentary|speech)\s+/i, '')
-                  .trim();
-                if (!title || title.length < 12 || /^(read more|learn more|more)$/i.test(title)) continue;
+                const { normalizeArticleTitle } = require('./automation/current-affairs-title');
+                const title = normalizeArticleTitle(titleWithDate, href);
+                if (!title) {
+                  console.warn('Skipping HTML newsroom link without a usable article title: ' + href);
+                  continue;
+                }
                 const start = Math.max(0, m.index - 450);
                 const end = Math.min(xml.length, m.index + m[0].length + 700);
                 const neighborhood = xml.slice(start, end);
@@ -226,9 +226,9 @@ jobs:
                   console.warn('Skipping ' + sourceKey + ' HTML newsroom item with invalid newsroom date: ' + articleUrl);
                   continue;
                 }
-                const headingMatches = [...neighborhood.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/gi)];
-                const headingTitles = headingMatches.map(h => decode(h[1])).filter(t => t.length >= 12 && !/^(read more|learn more|more)$/i.test(t));
-                const preferredTitle = headingTitles.length ? headingTitles[headingTitles.length - 1] : title;
+                // Use the linked article's own label or its URL slug. Nearby
+                // headings can belong to unrelated page navigation or other cards.
+                const preferredTitle = title;
                 htmlItems.push({
                   title: preferredTitle,
                   url: articleUrl,
