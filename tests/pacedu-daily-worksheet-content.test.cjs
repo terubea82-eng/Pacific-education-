@@ -116,6 +116,33 @@ test("the scheduled curriculum workspace uses the selected subject, not a hard-c
   }
 });
 
+test("every scheduled subject and supported level receives a five-step see-read-hear lesson with an honest curriculum trace", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const levels = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
+  for (const level of levels) {
+    for (const subject of api.subjects) {
+      const worksheet = api.getCurriculumWorksheet({
+        level, subject, term: "T1", week: 1, day: 2, ability: "developing"
+      });
+      assert.equal(worksheet.level, level);
+      assert.equal(worksheet.subject, subject);
+      assert.ok(worksheet.dailyLesson, level + " / " + subject);
+      assert.equal(worksheet.dailyLesson.steps.length, 5);
+      assert.deepEqual(worksheet.dailyLesson.steps.map(x => x.mode), [
+        "SEE / VIDEO FRAME", "READ", "HEAR / AUDIO", "TRY", "CHECK / REFLECT"
+      ]);
+      assert.ok(worksheet.dailyLesson.audioNarration.transcript.length > 80);
+      assert.ok(worksheet.dailyLesson.learnerText.passage.length > 10);
+      assert.ok(worksheet.dailyLesson.workedExample.length > 10);
+      assert.equal(worksheet.dailyLesson.curriculumAlignment.level, level);
+      assert.equal(worksheet.dailyLesson.curriculumAlignment.subject, subject);
+      assert.equal(worksheet.dailyLesson.curriculumAlignment.achievementIndicator, null);
+      assert.equal(worksheet.dailyLesson.curriculumAlignment.verificationStatus, "NOT_YET_MAPPED");
+      assert.match(worksheet.dailyLesson.curriculumAlignment.rule, /Do not invent an official achievement indicator/);
+    }
+  }
+});
+
 test("Class 1 English Day 2 starts with the planned introduction activity", () => {
   const worksheet = load().PacEduDailyWorksheetContent.getWorksheet("Class 1", "English", 2, "expected");
   assert.equal(worksheet.topic, "Who am I? — Class 1 Term 1 Week 1");
