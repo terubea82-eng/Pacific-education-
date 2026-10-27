@@ -744,7 +744,32 @@
         savedAt:new Date().toISOString(), storage:"local-device-pilot"
       };
       if (writeAll(records)) {
-        live.textContent = "Saved on this device. Status: " + activity.verificationStatus + ". This is not teacher approval or an official curriculum result.";
+        var reviewLinked = false;
+        try {
+          var reviewKey = "pacificEducationActivityResponses";
+          var reviewRows = JSON.parse(global.localStorage.getItem(reviewKey) || "[]");
+          if (!Array.isArray(reviewRows)) reviewRows = [];
+          reviewRows.push({
+            responseId:"pe-response-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2,8),
+            assignmentId:assignmentId, activityId:activity.id, title:activity.title,
+            studentName:learnerRegistration && learnerRegistration.name || "",
+            learnerNameOrReference:learnerRegistration && learnerRegistration.name || "",
+            learnerReference:learnerRegistration && learnerRegistration.learnerReference || "",
+            learnerIdentityStatus:learnerRegistration && learnerRegistration.identityStatus || "identity-not-available",
+            learnerIdentityPending:!!(learnerRegistration && learnerRegistration.identityPending),
+            classReference:context.classReference, classLevel:context.level, subject:context.subject,
+            term:context.term, capability:context.capability, day:Math.max(1,Number(day)||1),
+            type:"daily-activity", questionText:activity.title, response:response,
+            preparedDate:preparedAt.slice(0,10), savedAt:preparedAt,
+            reviewStatus:"pending-teacher-review", evidenceType:activity.evidence,
+            source:"PacEdu learner workspace; local pilot"
+          });
+          global.localStorage.setItem(reviewKey, JSON.stringify(reviewRows.slice(-500)));
+          reviewLinked = true;
+        } catch (_) {}
+        live.textContent = reviewLinked
+          ? "Saved on this device and added to the teacher review queue. Learner identity remains subject to verification; this is not teacher approval or an official curriculum result."
+          : "Saved on this device, but the teacher review queue could not be updated. Tell your teacher or pilot coordinator; do not assume the submission was received.";
         try {
           var progressKey = "pacificEducationStudentDailyActivityProgressV1";
           if (role === "student" || role === "blind-learner" || role === "deaf-learner") {
