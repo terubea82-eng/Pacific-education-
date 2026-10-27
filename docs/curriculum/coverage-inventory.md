@@ -116,3 +116,19 @@ A further official-source check found that the Fiji Government's **7 October 202
 - Ask the Ministry/Curriculum Advisory Services or verify its official publications for the outcome and publication date of the FNCF review.
 - For every syllabus, record whether the source is current, under review, superseded, or not yet verified. Do not infer current status from an old document's continued availability online.
 - Keep the ECE–Year 13 pathway and all individual subject/outcome mappings marked **awaiting official source verification** until the applicable version is confirmed.
+
+
+## 27 October 2026 — source discovery and implementation gate
+
+A further source search located the Ministry-hosted **Early Childhood Education Curriculum Framework (November 2024)** and the Ministry Annual Report for 2022–2023, which describes revised literacy/numeracy curriculum work and syllabus resources for Years 1–4. These sources help prioritize collection but do not supply a verified, complete English indicator map for every level.
+
+- [Early Childhood Education Curriculum Framework — November 2024](https://iga-infra-moe-website-file-ir.s3.eu-west-1.amazonaws.com/uploads/Early_Childhood_Education_Curriculum_Framework_en.pdf): ECE framework source located; verify issuing authority, current applicability, exact page-level outcomes, and whether it supersedes or supplements *Na Noda Mataniciva* before mapping.
+- [Ministry of Education Annual Report 2022–2023](https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf): reports revised literacy/numeracy curriculum work and Year 1–4 syllabus/guide resources; it is a report about curriculum work, not itself a substitute for the current English syllabus and achievement indicators.
+
+### Implementation status
+
+- Curriculum import validation now requires source title, authority, version, document ID, URL/reference, page or section, and a schedule evidence reference before accepting a candidate mapping.
+- Accepted candidates remain prototype-only and are never marked production-eligible by the importer.
+- Supported mapping levels are limited to ECE, Class 1–8, and Form 3–7. Term, week and day values are range-checked; week/day placements require a schedule evidence reference.
+- Educator review is still required to certify the exact official source/version and indicator. Do not use a source placeholder or a teacher-proposed sequence as proof of official term/week placement.
+- **Coverage remains incomplete.** No current, source-verified Class 1 English indicator has been approved by this code change. The Class 1 English Term 1 Week 1 Day 2 material must remain a practice candidate until a teacher checks the applicable official syllabus and source reference.
