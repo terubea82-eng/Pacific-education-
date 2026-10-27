@@ -15,6 +15,20 @@ vm.runInNewContext(source, { window, document: {}, Date, Math, JSON, String, Obj
 
 const packs = window.PacificEducationRoleActivityPacks;
 
+test("approved learner workspace exposes the five-step see-read-hear lesson and uses PacEdu's protected narrator", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  const sequential = fs.readFileSync("src/js/pacificEducationSequentialRoleWorkspaces.js", "utf8");
+  assert.match(renderer, /if \(learnerRole && global\.PacEduDailyWorksheetContent/);
+  assert.match(renderer, /getCurriculumWorksheet/);
+  assert.match(renderer, /SEE|READ|HEAR/);
+  assert.match(renderer, /audioNarration\.transcript/);
+  assert.match(renderer, /global\.PacificEducationSpeech\.speakText/);
+  assert.match(renderer, /global\.PacificEducationSpeech\.stopSpeech/);
+  assert.match(renderer, /verificationStatus/);
+  assert.match(sequential, /isTeacherApprovedForStudent/);
+  assert.match(renderer, /official achievement indicator: not yet mapped/i);
+});
+
 test("Fiji Year 1 English daily activities follow the eight resource-topic sequence", () => {
   const expected = [
     "Who am I?", "My Friends", "My School", "Getting Ready for School",
