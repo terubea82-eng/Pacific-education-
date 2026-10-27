@@ -34,7 +34,7 @@ function getRevisionPaper(options){
   for(var w=Math.max(1,t.weeks-1);w<=t.weeks;w++)for(var d=1;d<=5;d++){
    var sheet=api.getCurriculumWorksheet({level:options.level,subject:options.subject,term:id,week:w,day:d,ability:options.ability,skipTermPlan:true});
    if(!sheet||sheet.status==="NOT_FOUND")continue;
-   (sheet.questions||[]).forEach(function(q,i){if(qs.length>=20)return;var n=qs.length+1,k=(sheet.answerKey||[])[i]||{};
+   (sheet.questions||[]).forEach(function(q,i){if(qs.length>=20||i>=2)return;var n=qs.length+1,k=(sheet.answerKey||[])[i]||{};
     qs.push({number:n,week:w,day:d,prompt:q.prompt||q.question||q.text||"Answer the subject question.",options:Array.isArray(q.options)?q.options.slice():[],type:q.options&&q.options.length?"Multiple choice":"Short response"});
     keys.push({number:n,answer:k.answer||q.answer||"",explanation:k.explanation||"Review the worked example and explain your reasoning."});
    });
