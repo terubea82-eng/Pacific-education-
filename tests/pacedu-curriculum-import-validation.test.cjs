@@ -22,12 +22,12 @@ function validRecord(overrides = {}) {
     day: 2,
     indicatorText: "Candidate learning outcome text for educator review.",
     documentId: "FJ-MOE-ENG-C1-SOURCE-001",
-    sourceReference: "https://www.education.gov.fj/source-document.pdf",
+    sourceReference: "https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/",
     sourceTitle: "Candidate English syllabus document",
-    sourceVersion: "version to be confirmed",
-    sourceAuthority: "Fiji Ministry of Education — pending confirmation",
-    sourcePage: "page to be checked",
-    scheduleEvidenceReference: "teacher-sequence-review-pending",
+    sourceVersion: "2013; revised 2019; reprinted 2020",
+    sourceAuthority: "Curriculum Development Unit, Ministry of Education, Heritage and Arts, Fiji",
+    sourcePage: "5–7",
+    scheduleEvidenceReference: "teacher-proposed-sequence-not-official-timetable",
     validationStatus: "pending-source-review",
     ...overrides
   };
