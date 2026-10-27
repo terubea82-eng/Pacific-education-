@@ -114,6 +114,6 @@ test("import workspace itself rejects untraceable records and preserves schedule
   assert.equal(saved.success, true);
   assert.equal(saved.item.week, 1);
   assert.equal(saved.item.day, 2);
-  assert.equal(saved.item.scheduleEvidenceReference, "teacher-sequence-review-pending");
+  assert.equal(saved.item.scheduleEvidenceReference, "teacher-proposed-sequence-not-official-timetable");
   assert.equal(saved.item.productionEligible, false);
 });
