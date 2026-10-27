@@ -454,8 +454,8 @@
     var week = Math.max(1, Number(options.week) || 1);
     var day = Math.max(1, Math.min(5, Number(options.day) || 1));
     var blockMap = {
-      T1: { label: "Term 1", weeks: 10 },
-      T2: { label: "Term 2", weeks: 10 },
+      T1: { label: "Term 1", weeks: 9 },
+      T2: { label: "Term 2", weeks: 9 },
       T3: { label: "Term 3", weeks: 5 },
       ASSESSMENT: { label: "Assessment window", weeks: 1 },
       INTERVENTION: { label: "Intervention", weeks: 5 },
@@ -556,6 +556,10 @@
     worksheet.curriculumNote = candidateSource
       ? "Candidate source reference is supplied for teacher comparison only. The copy is hosted off the Ministry domain; confirm the current authorized resource, exact syllabus outcome/indicator, page and weekly placement. Do not mark curriculum-verified until reviewed."
       : "The weekly theme is a planning framework, not proof of official syllabus alignment. A teacher must verify the current Fiji Ministry syllabus, exact strand and achievement indicator before assigning this as curriculum-verified.";
+    if (!options.skipTermPlan && global.PacEduTermLearningPlan) {
+      worksheet.termLearningPlan = global.PacEduTermLearningPlan.getTermPlan({level:level,subject:subject,term:block,ability:ability});
+      worksheet.revisionPaper = global.PacEduTermLearningPlan.getRevisionPaper({level:level,subject:subject,term:block,ability:ability});
+    }
     return worksheet;
   }
   function install() {
