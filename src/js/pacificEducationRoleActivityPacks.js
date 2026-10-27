@@ -536,7 +536,9 @@
       var lessonDay = ((Math.max(1, Number(day) || 1) - 1) % 5) + 1;
       var lessonAbility = ["support","developing","expected","extension"].indexOf(context.capability) >= 0 ? context.capability : "developing";
       var lesson = global.PacEduDailyWorksheetContent.getCurriculumWorksheet({
-        level:lessonLevel, subject:lessonSubject, term:lessonTerm, week:lessonWeek, day:lessonDay, ability:lessonAbility
+        level:lessonLevel, subject:lessonSubject, term:lessonTerm, curriculumTerm:context.term || lessonTerm,
+        week:lessonWeek, day:lessonDay, dayNumber:Math.max(1,Number(day)||1),
+        ability:lessonAbility, classReference:context.classReference
       });
       if (lesson && lesson.dailyLesson) {
         var lessonPanel = document.createElement("section");
@@ -581,7 +583,10 @@
         });
         lessonPanel.appendChild(questions);
         var alignment=document.createElement("p");
-        alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". Exact official achievement indicator: not yet mapped; teacher review is required.";
+        var candidateIndicator=lesson.dailyLesson.curriculumAlignment.candidateIndicator;
+        alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". "+
+          (candidateIndicator ? "Candidate indicator for teacher review: "+candidateIndicator.id+" — "+candidateIndicator.text+"; strand: "+candidateIndicator.strand+"; source status: "+candidateIndicator.sourceStatus+". This is not verified alignment." :
+          "Exact official achievement indicator: not yet mapped; teacher review is required.");
         lessonPanel.appendChild(alignment);
         card.appendChild(lessonPanel);
       }
