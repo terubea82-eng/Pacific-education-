@@ -145,3 +145,36 @@ test("teacher weekly planner selects a day and displays the daily example, quest
   assert.match(planner, /pacedu-print-daily-worksheet/);
   assert.match(planner, /#paceduFijiWeeklyCurriculumPreview details\{display:none!important\}/);
 });
+
+
+test("scheduled English worksheets provide level-appropriate reading and four answer-keyed questions", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const levels = ["ECE","Class 1","Class 3","Class 6","Class 8","Form 3","Form 5","Form 7"];
+  for (const level of levels) {
+    for (const ability of ["support","developing","expected","extension"]) {
+      for (let day = 1; day <= 5; day += 1) {
+        const worksheet = api.getCurriculumWorksheet({
+          level, subject: "English", term: "T1", week: 1, day, ability
+        });
+        assert.equal(worksheet.level, level);
+        assert.equal(worksheet.subject, "English");
+        assert.equal(worksheet.ability, ability);
+        assert.equal(worksheet.questions.length, 4);
+        assert.equal(worksheet.answerKey.length, 4);
+        assert.ok(worksheet.readingText.length > 40);
+        assert.ok(worksheet.topic.includes(["main topic","important words","connect sentences","evidence","independent response"][day-1]));
+        assert.equal(worksheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
+        assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
+        assert.ok(worksheet.answerKey.every(item => item.answer && item.explanation));
+        for (const question of worksheet.questions) {
+          if (question.options.length) assert.equal(question.options[question.correctOption], question.answer);
+        }
+      }
+    }
+  }
+  const ece = api.getCurriculumWorksheet({level:"ECE",subject:"English",term:"T1",week:1,day:1,ability:"support"});
+  const form7 = api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T1",week:1,day:1,ability:"extension"});
+  assert.notEqual(ece.readingText, form7.readingText);
+  assert.match(ece.tasks[0], /SUPPORTED START/);
+  assert.match(form7.tasks[0], /EXTENSION/);
+});
