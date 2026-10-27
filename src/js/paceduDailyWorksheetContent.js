@@ -209,8 +209,29 @@
       sourceNote:"PacEdu original content. Curriculum source mapping pending: link this worksheet to the current Fiji Ministry syllabus strand, outcome/achievement indicator, class, term and teaching week before calling it officially curriculum-aligned."
     };
   }
+  function englishLevelExpectation(level) {
+    var expectations = {
+      "ECE": { target:"Listen, take turns, identify a sound or picture, and communicate an idea orally, by gesture or drawing.", output:"Show, say, sign, select or draw one response; writing is optional.", lines:2 },
+      "Class 1": { target:"Recognise familiar words and letter-sounds, answer direct questions, and build a clear simple sentence.", output:"Write or dictate one complete sentence with support as needed.", lines:3 },
+      "Class 2": { target:"Read a short text, sequence three ideas, use capital letters and full stops, and answer direct questions.", output:"Write 2–3 connected sentences and check sentence beginnings and endings.", lines:4 },
+      "Class 3": { target:"Identify the main idea, use context to explain a word, and select a supporting detail.", output:"Write a short paragraph with a main idea and one relevant detail.", lines:5 },
+      "Class 4": { target:"Summarise a short text, infer a simple unstated idea, and support an answer with text evidence.", output:"Write a paragraph with a main idea, evidence and a concluding sentence.", lines:6 },
+      "Class 5": { target:"Compare information, organise paragraphs, and explain how details support a conclusion.", output:"Write two linked paragraphs and revise vocabulary or sentence structure.", lines:7 },
+      "Class 6": { target:"Distinguish fact from opinion, infer meaning, and explain how language choices shape a text.", output:"Write a structured response with a claim, two details and a conclusion.", lines:8 },
+      "Class 7": { target:"Compare viewpoints, assess the relevance of evidence, and organise writing for a stated purpose.", output:"Write a developed response that compares two ideas and justifies a conclusion.", lines:9 },
+      "Class 8": { target:"Evaluate evidence, analyse purpose and audience, and use cohesive devices in extended writing.", output:"Write a structured multi-paragraph response with evidence and a considered conclusion.", lines:10 },
+      "Form 3": { target:"Analyse purpose, audience, viewpoint and supporting details in different text types.", output:"Write a structured analytical paragraph with a claim, evidence and explanation.", lines:10 },
+      "Form 4": { target:"Compare how two texts organise ideas, represent viewpoints and use language for effect.", output:"Write a comparative response with a clear thesis and relevant textual evidence.", lines:11 },
+      "Form 5": { target:"Interpret complex ideas, evaluate evidence and explain the relationship between language and meaning.", output:"Write an extended response with a defensible interpretation and supporting evidence.", lines:12 },
+      "Form 6": { target:"Synthesize information from more than one source and adapt register to purpose and audience.", output:"Write a coherent essay or report, cite supplied sources and acknowledge limitations.", lines:13 },
+      "Form 7": { target:"Evaluate competing interpretations, synthesise evidence and qualify a conclusion for a defined audience.", output:"Write a sustained, evidence-based response with a counterpoint and qualified conclusion.", lines:14 }
+    };
+    return expectations[level] || expectations["Class 1"];
+  }
+
   function makeScheduledEnglishContent(level, ability, theme, focus, weekDay) {
     var st = stage(level);
+    var levelExpectation = englishLevelExpectation(level);
     var safeTheme = String(theme || "our learning").replace(/[<>]/g, "").trim() || "our learning";
     var safeFocus = String(focus || "read, discuss and explain").replace(/[<>]/g, "").trim();
     var dayFocus = [
@@ -328,15 +349,16 @@
       expected: "CORE PRACTICE: complete independently where possible and check each answer against the text.",
       extension: "EXTENSION: complete the core work, then create a related question or justify an alternative interpretation."
     }[ability] || "DEVELOPING: try independently first.";
+    tasks.push("Class-level target: " + levelExpectation.target, levelExpectation.output);
     tasks.unshift(bandPrefix);
     return {
       topic: safeTheme + " — " + dayFocus,
-      readingText: passage,
+      readingText: passage + "\\n\\nClass-level practice target: " + levelExpectation.target,
       questions: questions,
       answerKey: questions.map(function (q) { return {number:q.number,answer:q.answer,explanation:q.why}; }),
       tasks: tasks,
       instructions: "Original PacEdu English practice. Read, listen, or use an accessible response mode. This is practice, not an official examination.",
-      responseLines: st === "early" ? 2 : st === "foundation" ? 3 : st === "middle" ? 5 : 7,
+      responseLines: levelExpectation.lines,
       teacherCheck: "Check the learner's actual response and record independent / with support / not yet demonstrated / not observed. Auto-mark selected-choice items only; review constructed responses using teacher judgement.",
       teacherReview: "The scheduled theme and focus are planning suggestions. Confirm the current Fiji syllabus and exact achievement indicator before formal assignment.",
       differentiationNote: "Use the selected ability band to adjust scaffolding and challenge; bands are flexible and not permanent labels.",
