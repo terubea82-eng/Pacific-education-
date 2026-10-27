@@ -554,6 +554,7 @@
         var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
         var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
         var intention = document.createElement("p"); intention.textContent="Learning intention: "+lesson.dailyLesson.learningIntention; lessonPanel.appendChild(intention);
+        var levelObjective = document.createElement("p"); levelObjective.textContent=lessonLevel+" learning target: "+lesson.dailyLesson.classLevelObjective; lessonPanel.appendChild(levelObjective);
         var player=document.createElement("section");
         player.setAttribute("aria-label","Step-by-step lesson player");
         player.style.cssText="padding:12px;border:1px solid #9bb4c4;border-radius:8px;margin:10px 0;";
