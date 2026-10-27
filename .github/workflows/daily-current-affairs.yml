@@ -206,6 +206,11 @@ jobs:
                     const datePart = text.match(/^(\d{4}-\d{2}-\d{2})(?:T|\s|$)/);
                     const timestamp = Date.parse(text);
                     if (!datePart || !Number.isFinite(timestamp)) return null;
+                    // Date.parse may normalize impossible dates (for example, 31 February).
+                    // Round-trip the calendar date separately so invalid dates fail closed.
+                    const calendarTimestamp = Date.parse(datePart[1] + 'T00:00:00.000Z');
+                    if (!Number.isFinite(calendarTimestamp) ||
+                        new Date(calendarTimestamp).toISOString().slice(0, 10) !== datePart[1]) return null;
                     return { date: datePart[1], timestamp };
                   });
                   const validPublicationDates = parsedPublicationDates.filter(Boolean);
