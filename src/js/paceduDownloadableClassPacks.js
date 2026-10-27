@@ -12,6 +12,23 @@ var ABILITIES=[
  {id:"expected",label:"Expected",guidance:"Complete the class-level task independently and explain or check the method."},
  {id:"extension",label:"Extension",guidance:"Add transfer to an unfamiliar example, comparison, justification or second method."}
 ];
+var SUBJECT_CRITERIA={
+ "English":[["Meaning and comprehension","Understand the text, question or spoken prompt."],["Vocabulary and language","Use suitable words, sentence structure and language features."],["Evidence and task completion","Use relevant details and complete the requested task."],["Communication","Communicate clearly in an appropriate spoken, signed, written or accessible form."]],
+ "Mathematics":[["Accuracy","Correct answer and appropriate units or notation."],["Method and working","Steps, calculations or strategy are shown where required."],["Representation","Suitable objects, diagram, table, equation or model."],["Reasoning and checking","Explain the method and check whether the result makes sense."]],
+ "Science":[["Scientific understanding","Use accurate subject concepts and terms."],["Observation and recording","Record relevant observations or data clearly."],["Method and safety","Use a suitable method and follow safety instructions."],["Evidence and conclusion","Link the conclusion to observations or data."]],
+ "Social Studies":[["Concept accuracy","Explain the relevant people, place, event or community concept accurately."],["Use of sources","Use relevant maps, timelines, sources or information."],["Explanation and evidence","Explain relationships, causes, effects or viewpoints with evidence."],["Context and communication","Apply learning respectfully to a suitable local or wider context."]],
+ "Healthy Living":[["Health knowledge","Identify accurate health, wellbeing or safety information."],["Safe decision","Choose a safe, suitable action for the scenario."],["Steps and explanation","Describe practical steps and explain why they help."],["Application","Apply learning to an age-appropriate real-life situation."]],
+ "Physical Education":[["Movement skill","Demonstrate the taught movement or skill at the learner's level."],["Understanding","Follow relevant rules, instructions or tactics."],["Safety and cooperation","Use safe practice and work respectfully with others."],["Effort and reflection","Participate appropriately and identify one improvement."]],
+ "Arts and Crafts":[["Idea and intention","Show a clear idea or purpose for the work."],["Technique and elements","Use suitable art, craft, design or performance elements."],["Making and completion","Complete the task using materials safely and appropriately."],["Reflection","Describe choices, meaning or a possible improvement."]],
+ "Music":[["Rhythm and pitch","Demonstrate the taught rhythm, pitch or sound pattern."],["Technique and control","Use an appropriate voice, instrument, body or digital method."],["Expression and participation","Participate and communicate the intended musical idea."],["Listening and reflection","Notice a feature and describe or demonstrate an improvement."]],
+ "Digital Literacy":[["Task and concept","Complete the intended digital task or explain the concept accurately."],["Process and problem-solving","Follow steps, select a suitable tool and resolve a simple problem."],["Safety and responsibility","Protect personal information and use technology respectfully."],["Output and explanation","Present the result clearly and explain key choices."]],
+ "iTaukei Language":[["Meaning and comprehension","Understand the taught spoken, written or visual language."],["Vocabulary and structure","Use suitable iTaukei words and language patterns for the level."],["Language skill","Demonstrate the assigned listening, speaking, reading or writing skill."],["Communication and context","Communicate meaning appropriately and respectfully in context."]],
+ "Hindi":[["Meaning and comprehension","Understand the taught spoken, written or visual Hindi."],["Vocabulary and structure","Use suitable vocabulary and language patterns for the level."],["Language skill","Demonstrate the assigned listening, speaking, reading or writing skill."],["Communication and context","Communicate meaning appropriately and respectfully in context."]]
+};
+function criteriaHtml(subject){
+ var items=SUBJECT_CRITERIA[subject]||[["Accuracy","Use correct subject knowledge."],["Process","Show the steps, method or practical process."],["Evidence","Support the response with relevant evidence or demonstration."],["Communication","Explain or present the result clearly."]];
+ return "<p>Suggested scoring per criterion: 0 = not yet demonstrated; 1 = beginning / substantial support; 2 = developing / partly independent; 3 = meets the task criterion independently. Maximum 12 points if all four criteria apply. Teachers must adapt the scale for ECE, practical, oral, performance and syllabus-specific outcomes; do not apply it mechanically.</p><ol>"+items.map(function(x){return "<li><strong>"+esc(x[0])+"</strong>: "+esc(x[1])+"</li>";}).join("")+"</ol>";
+}
 function esc(v){return String(v==null?"":v).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch];});}
 function dateStamp(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 function selectedApi(){return global.PacEduDailyWorksheetContent&&global.PacEduTermLearningPlan;}
@@ -39,7 +56,7 @@ function build(options){
    "<h3>Read</h3><p>"+esc(lesson.readingText||lesson.text||lesson.workedExample||"Read the teacher-approved worked example.")+"</p>"+
    "<h3>Hear / narration</h3><p>"+esc(lesson.audioNarration&&lesson.audioNarration.transcript||lesson.narration||lesson.audioTranscript||"Teacher may read the instructions aloud; provide a written transcript.")+"</p>"+
    "<h3>Try</h3>"+listQuestions(qs,keys)+
-   "<h3>Marking criteria</h3><ul><li>Subject accuracy and correct response, judged against the checked answer key.</li><li>Working, method, evidence or practical demonstration where the task requires it.</li><li>Reasoning, explanation and communication appropriate to the selected class level.</li><li>Use the "+esc(band.label)+" support guidance: "+esc(band.guidance)+"</li><li>Accept accessible equivalent evidence where the learning outcome allows it; note prompts and accommodations used.</li></ul>"+
+   "<h3>Subject-specific marking criteria</h3>"+criteriaHtml(subject)+"<p><strong>Ability guidance ("+esc(band.label)+"):</strong> "+esc(band.guidance)+"</p><p>Accept accessible equivalent evidence where the learning outcome allows it; note prompts and accommodations used.</p>"+
    "<p><strong>Teacher review:</strong> verify source, class fit, answers and current achievement indicator before assigning. Do not infer ability from missing work or an unclear image.</p></section>");
  }
  var plan=global.PacEduTermLearningPlan;
@@ -72,5 +89,5 @@ function renderControls(container,context){
  button.addEventListener("click",function(){try{var p=download({level:level.value,subject:subject.value,term:term.value,ability:ability.value});status.textContent="Pack prepared "+p.preparedDate+": "+p.dailyActivities+" daily activities; "+p.missingSlots+" unavailable slots. Check the downloaded file. Official syllabus mapping and marking criteria still require teacher review.";}catch(e){status.textContent="Could not prepare the pack: "+String(e&&e.message||e);}});
  container.appendChild(panel);return true;
 }
-global.PacEduDownloadableClassPacks=Object.freeze({subjects:SUBJECTS.slice(),levels:LEVELS.slice(),abilities:ABILITIES.slice(),build:build,download:download,renderControls:renderControls});
+global.PacEduDownloadableClassPacks=Object.freeze({subjects:SUBJECTS.slice(),levels:LEVELS.slice(),abilities:ABILITIES.slice(),criteria:SUBJECT_CRITERIA,build:build,download:download,renderControls:renderControls});
 })(window,document);
