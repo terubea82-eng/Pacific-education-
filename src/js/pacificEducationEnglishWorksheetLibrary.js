@@ -603,6 +603,13 @@
     var weekDaySelect = addSelect(scheduleControls, "Teaching day in week (1–5)", "paceduEnglishWorksheetWeekDay", [
       ["1","Day 1"],["2","Day 2"],["3","Day 3"],["4","Day 4"],["5","Day 5"]
     ], "1");
+    var initialCheckRow = node("label", null, scheduleControls);
+    initialCheckRow.style.cssText = "display:flex;align-items:center;gap:8px;margin:10px 0;font-weight:600;";
+    var initialCheckToggle = node("input", null, initialCheckRow);
+    initialCheckToggle.type = "checkbox";
+    initialCheckToggle.id = "paceduEnglishInitialAbilityCheck";
+    initialCheckToggle.style.cssText = "width:22px;height:22px;flex:0 0 auto;";
+    initialCheckRow.appendChild(document.createTextNode("Preview Day 1 initial ability check"));
     node("p", "The initial ability check is separate. These choices select a practice slot; they do not certify an official Fiji term timetable or achievement indicator.", scheduleControls)
       .style.cssText = "font-size:.92em;margin:8px 0;color:#334155;";
     function syncScheduleControls() {
@@ -633,15 +640,18 @@
         global.PacEduDailyWorksheetContent &&
         typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function";
       var savedEvidence = storedWorksheetAbility();
-      if ((isEnglishSchedule || day > 1) && !savedEvidence.hasEvidence && abilitySelect.value === "initial-assessment") {
+      if (((isEnglishSchedule && !initialCheckToggle.checked) || day > 1) &&
+          !savedEvidence.hasEvidence && abilitySelect.value === "initial-assessment" && !initialCheckToggle.checked) {
         preview.textContent = "Complete the Day 1 initial ability check and record learner evidence, or select a teaching band based on observed evidence, before creating a daily practice worksheet.";
         printButton.disabled = true;
         return;
       }
       var ability = isEnglishSchedule
-        ? (abilitySelect.value === "initial-assessment" ? savedEvidence.ability : abilitySelect.value)
+        ? (initialCheckToggle.checked ? "initial-assessment" : (abilitySelect.value === "initial-assessment" ? savedEvidence.ability : abilitySelect.value))
         : (day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value);
-      if (isEnglishSchedule) {
+      if (isEnglishSchedule && initialCheckToggle.checked) {
+        studentSheet = makeWorksheet(levelSelect.value, "initial-assessment", 1, "English");
+      } else if (isEnglishSchedule) {
         studentSheet = global.PacEduDailyWorksheetContent.getCurriculumWorksheet({
           level: levelSelect.value, subject: "English", term: termSelect.value,
           week: Number(weekSelect.value), day: Number(weekDaySelect.value), ability: ability
