@@ -190,10 +190,12 @@ jobs:
                   ];
                   for (const metaMatch of articleHtml.matchAll(/<meta\b[^>]*>/gi)) {
                     const tagText = metaMatch[0];
-                    const keyMatch = tagText.match(/(?:property|name)\s*=\s*["']([^"']+)["']/i);
-                    const contentMatch = tagText.match(/content\s*=\s*["']([^"']+)["']/i);
-                    if (keyMatch && contentMatch &&
-                        /^(?:article:published_time|datePublished)$/i.test(keyMatch[1].trim())) {
+                    const propertyMatch = tagText.match(/\bproperty\s*=\s*["']([^"']+)["']/i);
+                    const nameMatch = tagText.match(/\bname\s*=\s*["']([^"']+)["']/i);
+                    const contentMatch = tagText.match(/\bcontent\s*=\s*["']([^"']+)["']/i);
+                    const publicationKey = (propertyMatch?.[1] || nameMatch?.[1] || '').trim();
+                    if (publicationKey && contentMatch &&
+                        /^(?:article:published_time|datePublished)$/i.test(publicationKey)) {
                       publicationValues.push(contentMatch[1].trim());
                     }
                   }
