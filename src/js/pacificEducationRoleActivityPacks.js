@@ -719,8 +719,16 @@
       if (!response) { live.textContent = "Please enter your response or work note before saving."; input.focus(); return; }
       if (!done.checked) { live.textContent = "Please confirm that you attempted or completed the task before saving."; done.focus(); return; }
       var records = readAll();
+      var learnerRegistration = null;
+      try { learnerRegistration = JSON.parse(global.sessionStorage.getItem("pacificEducationPilotRegistration") || "null"); } catch (_) {}
+      var preparedAt = new Date().toISOString();
+      var assignmentId = [context.classReference || "class-pending", context.level || "level-pending", context.subject || "subject-pending", context.term || "term-pending", "day-" + (Math.max(1,Number(day)||1)), preparedAt.slice(0,10)].join(":");
       records[key] = {
-        activityId:activity.id, role:role, title:activity.title, countryCode:context.countryCode,
+        activityId:activity.id, assignmentId:assignmentId, preparedDate:preparedAt.slice(0,10),
+        learnerReference:learnerRegistration && learnerRegistration.learnerReference || "",
+        learnerIdentityStatus:learnerRegistration && learnerRegistration.identityStatus || "identity-not-available",
+        learnerIdentityPending:!!(learnerRegistration && learnerRegistration.identityPending),
+        role:role, title:activity.title, countryCode:context.countryCode,
         classReference:context.classReference, level:context.level, subject:context.subject, term:context.term,
         capability:context.capability, day:Math.max(1,Number(day)||1), response:response, completed:true,
         learningStage:activity.learningStage || "", learningCycle:activity.learningCycle || null,
