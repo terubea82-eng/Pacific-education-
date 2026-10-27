@@ -35,6 +35,27 @@ The workspace supports ECE, Classes 1–8 and Forms 3–7. Fiji public education
 7. Use school-approved term dates, assessment scope and examination timetable. The app’s default week counts are planning slots, not an official calendar.
 8. Do not copy substantial text from syllabus/guide books into PacEdu. Create original activities and cite the source that informs the learning target.
 
+## Multi-subject daily lesson delivery contract
+
+The scheduled worksheet generator now attaches a structured five-step lesson package for every subject template it currently supports and every supported level (ECE, Classes 1–8 and Forms 3–7):
+
+1. **See** — storyboard/frame instruction and visible demonstration prompt.
+2. **Read** — displayed example text and key learning intention.
+3. **Hear** — narration transcript that can be played through the existing PacEdu narrator when the device/browser voice engine is available.
+4. **Try** — learner action and subject-specific questions, with response options appropriate to the current template.
+5. **Check and reflect** — success criteria and a next-step feedback prompt.
+
+The package contains a video storyboard specification, not a rendered video file. Captions, a readable transcript, pause/replay controls and accessible non-audio alternatives should be retained in any future media player. Audio playback depends on the device/browser and is not guaranteed in every environment.
+
+### Indicator-to-activity mapping rules
+
+- The worksheet stores a draft concept, the daily example, questions, model answer/explanation, five-step lesson, and a curriculum-trace record together.
+- When a class-specific achievement-indicator service returns an exact match for class reference, level, subject and term, PacEdu may attach it as a candidate indicator for teacher review. A candidate is not an official alignment claim, even if its source field says “verified”; the lesson remains NOT_YET_MAPPED until the required review record is complete.
+- Do not generate, infer, or invent official indicator IDs from a topic or generic focus statement. If no matching indicator is available, show “not yet mapped” and require teacher review rather than substituting another subject's lesson.
+- The learner view is released only through the existing teacher-approval gate. Its question list omits the answer key; the worked example is explicitly modelled instruction. Teacher-only keys remain in the teacher preview.
+- A subject without a dedicated content template must not silently receive English content. The teacher must provide/verify a subject-specific example and outcome before that subject is represented as curriculum-aligned.
+- Current term/week/day selectors are planning slots unless linked to the school's approved calendar and scheme of work. The school’s actual syllabus and approved teaching sequence take precedence.
+
 ## Work remaining before “complete”
 
 - Obtain/compare the current authorized English syllabus and curriculum circulars for each class/form, including any revised secondary English curriculum that applies to the school.
