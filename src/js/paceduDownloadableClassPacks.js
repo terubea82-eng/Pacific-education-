@@ -31,7 +31,7 @@ function criteriaHtml(subject){
 }
 function esc(v){return String(v==null?"":v).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch];});}
 function dateStamp(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-function selectedApi(){return global.PacEduDailyWorksheetContent&&global.PacEduTermLearningPlan;}
+function selectedApi(){return global.PacEduDailyWorksheetContent&&typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet==="function"?global.PacEduDailyWorksheetContent:null;}
 function listQuestions(items,keys){
  if(!items||!items.length)return "<p>No questions were returned by the current subject template. Teacher must add and verify subject-specific questions before use.</p>";
  return "<ol>"+items.map(function(q,i){var key=keys&&keys[i]||{};var opts=q.options&&q.options.length?"<ul>"+q.options.map(function(o){return "<li>"+esc(o)+"</li>";}).join("")+"</ul>":"";return "<li>"+esc(q.prompt||q.question||q.text||"Teacher: enter the approved question.")+opts+(keys?"<p><strong>Teacher answer / marking note:</strong> "+esc(key.answer||key.explanation||"Review against the approved subject rubric.")+" "+esc(key.explanation||"")+"</p>":"")+"</li>";}).join("")+"</ol>";
