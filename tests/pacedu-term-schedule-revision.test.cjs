@@ -4,10 +4,12 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 const termSource = fs.readFileSync("src/js/paceduTermLearningPlan.js", "utf8");
 const worksheetSource = fs.readFileSync("src/js/paceduDailyWorksheetContent.js", "utf8");
+const examSource = fs.readFileSync("src/js/paceduPracticeExamPaper.js", "utf8");
 
 function load() {
   const window = {};
   vm.runInNewContext(termSource, { window, Object, Array, String, Number, Math });
+  vm.runInNewContext(examSource, { window, Object, Array, String, Number, Math });
   vm.runInNewContext(worksheetSource, { window, Object, Array, String, Number, Math, RegExp });
   return window;
 }
@@ -40,4 +42,23 @@ test("revision papers are subject-, class- and ability-specific practice papers"
   assert.equal(form7.level, "Form 7");
   assert.equal(form7.ability, "extension");
   assert.ok(form7.questions.length > 0);
+});
+
+test("practice examination paper is separate from the revision label and never claims official status", () => {
+  const window = load();
+  const paper = window.PacEduPracticeExamPaper.getPaper({level:"Form 5",subject:"Science",term:"T3",ability:"expected"});
+  assert.match(paper.title, /Practice Examination/);
+  assert.equal(paper.paperType, "practice-exam");
+  assert.equal(paper.officialExamPaper, false);
+  assert.equal(paper.status, "PRACTICE_EXAM_REQUIRES_TEACHER_REVIEW");
+  assert.ok(paper.questions.length > 0);
+});
+
+test("learner subject workspace provides term/week navigation and holds revision until the final teaching week", () => {
+  const renderer = fs.readFileSync("src/js/pacificEducationRoleActivityPacks.js", "utf8");
+  assert.match(renderer, /Choose term and teaching week/);
+  assert.match(renderer, /Open selected week/);
+  assert.match(renderer, /lessonWeek === \(lesson\.termLearningPlan \? lesson\.termLearningPlan\.weeks/);
+  assert.match(renderer, /End of term practice examination/);
+  assert.match(renderer, /not an official or past examination paper/i);
 });
