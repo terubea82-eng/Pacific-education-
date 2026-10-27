@@ -16,7 +16,7 @@
     var TERMS=["Term 1","Term 2","Term 3","Term 4"];
 
     function read(){try{var x=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(x)?x:[];}catch(e){return [];}}
-    function isPlaceholder(value){return /\\b(?:pending|placeholder|to be confirmed|to be checked|todo|tbd|example\\.com)\\b/i.test(String(value||""));}
+    function isPlaceholder(value){return /\b(?:pending|placeholder|to be confirmed|to be checked|todo|tbd|example\.com)\b/i.test(String(value||""));}
     function write(list){localStorage.setItem(KEY,JSON.stringify(list.slice(-MAX)));}
 
     function normalize(input){
@@ -56,7 +56,7 @@
         if(TERMS.indexOf(item.term)===-1)errors.push("term must be Term 1, Term 2, Term 3, or Term 4");
         if(!item.sourcePage&&!item.sourceSection)errors.push("sourcePage or sourceSection is required");
         if((item.sourcePage&&isPlaceholder(item.sourcePage))||(item.sourceSection&&isPlaceholder(item.sourceSection)))errors.push("sourcePage/sourceSection cannot be placeholder text");
-        if(item.sourceReference&&!/^https?:\\/\\//i.test(String(item.sourceReference).trim()))errors.push("sourceReference must be an HTTP(S) URL or stable document URL");
+        if(item.sourceReference&&!/^https?:\/\//i.test(String(item.sourceReference).trim()))errors.push("sourceReference must be an HTTP(S) URL or stable document URL");
         if(item.week!==null&&(!Number.isInteger(item.week)||item.week<1||item.week>13))errors.push("week must be an integer from 1 to 13");
         if(item.day!==null&&(!Number.isInteger(item.day)||item.day<1||item.day>5))errors.push("day must be an integer from 1 to 5");
         return {valid:errors.length===0,errors:errors};
