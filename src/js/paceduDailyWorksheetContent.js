@@ -378,17 +378,23 @@
     var topicLabel = String(weeklyTopic || (termLabel + " Week " + week)).replace(/\s+/g, " ").trim();
     var concept = topicLabel + " — " + subject + ": " + dayFocus + " (" + String(worksheet.topic || suggestedFocus || "daily practice") + ")";
     var stageName = stage(level);
-    var classLevelObjective = stageName === "early"
-      ? "Explore the concept through play, pictures, objects, movement and one guided response."
-      : stageName === "foundation"
-        ? "Identify and describe the concept with a concrete example and a short spoken, selected or written response."
-        : stageName === "middle"
-          ? "Explain the concept using an example and one supporting detail or worked step."
-          : stageName === "upper"
-            ? "Apply the concept to a new example, show evidence or working, and explain the reasoning."
-            : stageName === "junior"
-              ? "Apply the concept to an unfamiliar example and explain the relationship using subject vocabulary."
-              : "Analyse or evaluate the concept using evidence, assumptions and limitations appropriate to the task.";
+    var levelObjectives = {
+      "ECE":"Explore with play, pictures, objects, movement and one guided response.",
+      "Class 1":"Identify the main idea or skill using a familiar example and a short response.",
+      "Class 2":"Describe and sequence two or three parts of the example, then check the response.",
+      "Class 3":"Classify information or steps and give one reason for the choice.",
+      "Class 4":"Explain the concept with an example and one supporting detail or worked step.",
+      "Class 5":"Compare two examples and justify a choice with relevant evidence or working.",
+      "Class 6":"Explain a relationship, pattern or cause using subject vocabulary and evidence.",
+      "Class 7":"Compare methods or viewpoints and explain which evidence supports the conclusion.",
+      "Class 8":"Evaluate evidence or methods, identify a limitation, and explain a considered conclusion.",
+      "Form 3":"Apply the concept to an unfamiliar example and explain the relationship using subject vocabulary.",
+      "Form 4":"Compare two models, texts, methods or perspectives and justify the stronger explanation.",
+      "Form 5":"Interpret complex examples, evaluate evidence and explain a limitation or alternative.",
+      "Form 6":"Synthesize information or methods, state assumptions and support a structured conclusion.",
+      "Form 7":"Evaluate competing explanations, qualify a conclusion and justify it with evidence and limitations."
+    };
+    var classLevelObjective = levelObjectives[level] || levelObjectives["Class 1"];
     var learnerAction = stageName === "early"
       ? "Look, listen, point, match, move, speak, sign, draw or select an answer."
       : stageName === "foundation"
