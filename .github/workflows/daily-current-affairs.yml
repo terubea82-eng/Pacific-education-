@@ -193,45 +193,15 @@ jobs:
                     console.warn('Skipping UNESCO item because article metadata could not be fetched: ' + articleUrl);
                     continue;
                   }
-                  const publicationValues = [
-                    ...[...articleHtml.matchAll(/"datePublished"\s*:\s*"([^"]+)"/gi)].map(match => match[1])
-                  ];
-                  for (const metaMatch of articleHtml.matchAll(/<meta\b[^>]*>/gi)) {
-                    const tagText = metaMatch[0];
-                    const propertyMatch = tagText.match(/\bproperty\s*=\s*["']([^"']+)["']/i);
-                    const nameMatch = tagText.match(/\bname\s*=\s*["']([^"']+)["']/i);
-                    const contentMatch = tagText.match(/\bcontent\s*=\s*["']([^"']+)["']/i);
-                    const publicationKeys = [propertyMatch?.[1], nameMatch?.[1]]
-                      .filter(Boolean)
-                      .map(value => value.trim());
-                    if (contentMatch &&
-                        publicationKeys.some(key => /^(?:article:published_time|datePublished)$/i.test(key))) {
-                      publicationValues.push(contentMatch[1].trim());
-                    }
-                  }
-                  const parsedPublicationDates = publicationValues.map(value => {
-                    const text = String(value).trim();
-                    const datePart = text.match(/^(\d{4}-\d{2}-\d{2})(?:T|\s|$)/);
-                    const timestamp = Date.parse(text);
-                    if (!datePart || !Number.isFinite(timestamp)) return null;
-                    // Date.parse may normalize impossible dates (for example, 31 February).
-                    // Round-trip the calendar date separately so invalid dates fail closed.
-                    const calendarTimestamp = Date.parse(datePart[1] + 'T00:00:00.000Z');
-                    if (!Number.isFinite(calendarTimestamp) ||
-                        new Date(calendarTimestamp).toISOString().slice(0, 10) !== datePart[1]) return null;
-                    return { date: datePart[1], timestamp };
-                  });
-                  const validPublicationDates = parsedPublicationDates.filter(Boolean);
-                  const distinctPublicationDates = [...new Set(validPublicationDates.map(value => value.date))];
-                  if (!publicationValues.length ||
-                      validPublicationDates.length !== publicationValues.length ||
-                      distinctPublicationDates.length !== 1) {
-                    console.warn('Skipping UNESCO item because datePublished metadata is missing, invalid, or conflicting: ' + articleUrl);
+                  const { extractOriginalPublicationDate } = require('./automation/unesco-publication-date');
+                  const publicationDate = extractOriginalPublicationDate(articleHtml);
+                  if (!publicationDate) {
+                    console.warn('Skipping UNESCO item because primary article publication metadata is missing, invalid, or conflicting: ' + articleUrl);
                     continue;
                   }
                   // Preserve the publisher's validated calendar date; converting the original
                   // timestamp to UTC can shift dates when metadata contains timezone offsets.
-                  publicationTimestamp = Date.parse(validPublicationDates[0].date + 'T00:00:00.000Z');
+                  publicationTimestamp = Date.parse(publicationDate + 'T00:00:00.000Z');
                 } else if (Number.isFinite(titleDateTimestamp)) {
                   // Keep direct title-associated dates for non-UNESCO HTML sources.
                   publicationTimestamp = Date.parse(new Date(titleDateTimestamp).toISOString().slice(0, 10) + 'T00:00:00.000Z');
