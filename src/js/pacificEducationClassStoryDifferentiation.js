@@ -8,6 +8,18 @@
 
   function text(value) { return String(value == null ? "" : value).trim(); }
   function normalized(value) { return text(value).toLowerCase().replace(/\s+/g, " "); }
+  function normalizedLevel(value) {
+    var level = normalized(value);
+    var formMatch = level.match(/^form\s*([3-7])$/);
+    if (formMatch) return "class " + (Number(formMatch[1]) + 6);
+    return level;
+  }
+  function normalizedSubject(value) {
+    var subject = normalized(value);
+    if (subject === "health") return "health science";
+    if (subject === "maths") return "mathematics";
+    return subject;
+  }
   function approved(item) {
     var status = normalized(item && item.verificationStatus).toUpperCase();
     return !!item && item.approved === true &&
@@ -18,8 +30,8 @@
     if (!approved(item)) return false;
     var levels = Array.isArray(item.levelsApplicable) ? item.levelsApplicable : [];
     var subjects = Array.isArray(item.subjectsApplicable) ? item.subjectsApplicable : [];
-    if (levels.length && !levels.some(function (v) { return normalized(v) === normalized(level); })) return false;
-    if (subjects.length && !subjects.some(function (v) { return normalized(v) === normalized(subject); })) return false;
+    if (levels.length && !levels.some(function (v) { return normalizedLevel(v) === normalizedLevel(level); })) return false;
+    if (subjects.length && !subjects.some(function (v) { return normalizedSubject(v) === normalizedSubject(subject); })) return false;
     var storyText = text(item.title) + " " + text(item.description) + " " + text(item.educationalRelevance);
     // Avoid recommending sensitive stories to ECE–Class 6. Older classes still
     // require explicit teacher approval and an age-appropriate discussion plan.
