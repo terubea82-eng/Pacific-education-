@@ -211,6 +211,15 @@ test("learner can create and read their own pending photo-review metadata", asyn
   await assertSucceeds(getDoc(doc(db, "learnerSubmissions/submission-a")));
 });
 
+test("learner can submit photo evidence without a display name", async () => {
+  await seedClassMembership("class-1", "student-a", "student");
+  const db = testEnv.authenticatedContext("student-a").firestore();
+  const submission = validPhotoSubmission();
+  delete submission.studentName;
+  submission.storagePath = "learnerWork/class-1/student-a/submission-no-name/photo.jpg";
+  await assertSucceeds(setDoc(doc(db, "learnerSubmissions/submission-no-name"), submission));
+});
+
 test("learner cannot submit as another student or use an unassigned class", async () => {
   await seedClassMembership("class-1", "student-a", "student");
   const db = testEnv.authenticatedContext("student-a").firestore();
