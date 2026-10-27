@@ -229,7 +229,9 @@ jobs:
                     console.warn('Skipping UNESCO item because datePublished metadata is missing, invalid, or conflicting: ' + articleUrl);
                     continue;
                   }
-                  publicationTimestamp = validPublicationDates[0].timestamp;
+                  // Preserve the publisher's validated calendar date; converting the original
+                  // timestamp to UTC can shift dates when metadata contains timezone offsets.
+                  publicationTimestamp = Date.parse(validPublicationDates[0].date + 'T00:00:00.000Z');
                 } else if (Number.isFinite(titleDateTimestamp)) {
                   // Keep direct title-associated dates for non-UNESCO HTML sources.
                   publicationTimestamp = Date.parse(new Date(titleDateTimestamp).toISOString().slice(0, 10) + 'T00:00:00.000Z');
