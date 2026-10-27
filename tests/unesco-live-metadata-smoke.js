@@ -22,6 +22,11 @@ assert.equal(
   'A Community Builds Safe Water Access'
 );
 assert.equal(
+  normalizeArticleTitle('A &amp;lt; meaningful title example', '/en/articles/a-community-title-example'),
+  'A &lt; meaningful title example',
+  'decode HTML entities only once'
+);
+assert.equal(
   normalizeArticleTitle('Newsroom', '/en/newsroom'),
   null,
   'do not publish a generic title when the URL provides no article slug'
