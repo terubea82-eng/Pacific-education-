@@ -20,36 +20,32 @@ Every level below is **not yet verified against official curriculum sources** by
 
 | Level | Content inventory status | Official source/version | Educator review |
 |---|---|---|---|
-| Early Childhood Education (ECE) | Not audited | To verify | Pending |
-| Kindergarten | Not audited | To verify | Pending |
-| Class 1 | Partial prototype indicated in master specification; content coverage not audited | To verify | Pending |
-| Class 2 | Not audited | To verify | Pending |
-| Class 3 | Not audited | To verify | Pending |
-| Class 4 | Not audited | To verify | Pending |
-| Class 5 | Not audited | To verify | Pending |
-| Class 6 | Not audited | To verify | Pending |
-| Class 7 | Not audited | To verify | Pending |
-| Class 8 | Not audited | To verify | Pending |
-| Class 9 | Not audited | To verify | Pending |
-| Class 10 | Not audited | To verify | Pending |
-| Class 11 | Not audited | To verify | Pending |
-| Class 12 | Not audited | To verify | Pending |
-| Class 13 | Not audited | To verify | Pending |
+| ECE | Prototype worksheet support exists; official learning-outcome mapping pending | Verify current ECE guideline and applicable outcomes | Pending |
+| Class 1 | English and multi-subject practice prototypes; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 2 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 3 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 4 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 5 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 6 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 7 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Class 8 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Form 3 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Form 4 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Form 5 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Form 6 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
+| Form 7 | Multi-subject practice prototype; official outcome mapping pending | To verify by subject and current syllabus | Pending |
 
 ## Subject and learning-domain inventory
 
-The following are audit categories, **not a representation of the official Fiji subject list**. Confirm the exact subject names, year applicability, and learning outcomes against current official sources.
+### Subject prototype coverage
 
-- Languages and literacy, including the required language(s) for the level
-- Mathematics and numeracy
-- Science and inquiry
-- Social studies, history, geography and civic learning where applicable
-- Digital and information literacy where applicable
-- Health, physical education and wellbeing
-- Arts, music, creativity and practical expression
-- Technology, design and practical/vocational learning where applicable
-- Life skills, community and environmental learning
-- Level-specific senior secondary and examination pathways
+The current daily worksheet bank exposes these 11 subject areas: **English, Mathematics, Science, Social Studies, Healthy Living, Physical Education, Arts and Crafts, Music, Digital Literacy, iTaukei Language, and Hindi**. Each currently has original practice examples, four answer-keyed questions, and four support/challenge bands. The workspace can schedule these by supported level, term, week and day.
+
+This is **not yet the complete official Fiji subject catalogue**. In particular, subject choices and syllabus requirements can differ by level, school, language pathway and senior-secondary examination option. Do not silently substitute English content for a missing subject. Before adding a subject as curriculum-verified, confirm its current official name and applicable levels, then add subject-specific examples and answer keys, source references, educator review and tests.
+
+Subject families still requiring an official level-by-level inventory include (where offered/applicable): additional languages; history and geography; agriculture; business studies, commerce, accounting and economics; biology, chemistry and physics; technology, technical/vocational subjects; home economics and food/nutrition; religious or values education; and any school- or examination-specific options. This list is a discovery checklist, not a claim that each item is an official subject at every level.
+
+For each verified subject/level combination, record the official source title, issuing authority, publication/version, effective date, exact learning outcome/reference, activity IDs, accessibility alternatives, assessment evidence, educator reviewer and review date.
 
 For each verified subject/level combination, record the official source title, issuing authority, publication/version, effective date, exact learning outcome/reference, activity IDs, accessibility alternatives, assessment evidence, educator reviewer and review date.
 
