@@ -201,7 +201,7 @@ test("term-week-day scheduler returns concrete worksheets with explicit curricul
   const api = load().PacEduDailyWorksheetContent;
   assert.equal(typeof api.getCurriculumWorksheet, "function");
   for (const term of [
-    ["T1", 10], ["T2", 10], ["T3", 5], ["ASSESSMENT", 1],
+    ["T1", 9], ["T2", 9], ["T3", 5], ["ASSESSMENT", 1],
     ["INTERVENTION", 5], ["REVISION", 2], ["EXAMS", 2]
   ]) {
     for (let week = 1; week <= term[1]; week += 1) {
@@ -222,6 +222,8 @@ test("term-week-day scheduler returns concrete worksheets with explicit curricul
     }
   }
   assert.equal(api.getCurriculumWorksheet({term:"T3",week:6,day:1}).status, "NOT_FOUND");
+  assert.equal(api.getCurriculumWorksheet({term:"T1",week:10,day:1}).status, "NOT_FOUND");
+  assert.equal(api.getCurriculumWorksheet({term:"T2",week:10,day:1}).status, "NOT_FOUND");
 });
 
 
