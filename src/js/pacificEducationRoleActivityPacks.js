@@ -554,15 +554,41 @@
         var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
         var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
         var intention = document.createElement("p"); intention.textContent="Learning intention: "+lesson.dailyLesson.learningIntention; lessonPanel.appendChild(intention);
-        var frames = document.createElement("ol");
-        lesson.dailyLesson.steps.forEach(function(step){
-          var li=document.createElement("li");
-          var strong=document.createElement("strong"); strong.textContent=step.mode+": "; li.appendChild(strong);
-          li.appendChild(document.createTextNode(step.onScreen+" Learner action: "+step.learnerAction));
-          var narrationLine=document.createElement("p"); narrationLine.textContent="Narration: "+step.narration; li.appendChild(narrationLine);
-          frames.appendChild(li);
+        var player=document.createElement("section");
+        player.setAttribute("aria-label","Step-by-step lesson player");
+        player.style.cssText="padding:12px;border:1px solid #9bb4c4;border-radius:8px;margin:10px 0;";
+        var stepCounter=document.createElement("p"); stepCounter.setAttribute("aria-live","polite"); player.appendChild(stepCounter);
+        var frameHeading=document.createElement("h5"); player.appendChild(frameHeading);
+        var frameCaption=document.createElement("p"); frameCaption.style.cssText="font-size:1.05em;line-height:1.5;"; player.appendChild(frameCaption);
+        var frameAction=document.createElement("p"); player.appendChild(frameAction);
+        var frameNarration=document.createElement("p"); player.appendChild(frameNarration);
+        var playerControls=document.createElement("div"); playerControls.style.cssText="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;";
+        var previousStep=document.createElement("button"); previousStep.type="button"; previousStep.textContent="← Previous step"; previousStep.style.cssText="padding:10px;font:inherit;"; playerControls.appendChild(previousStep);
+        var nextStep=document.createElement("button"); nextStep.type="button"; nextStep.textContent="Next step →"; nextStep.style.cssText="padding:10px;font:inherit;font-weight:700;"; playerControls.appendChild(nextStep);
+        var hearStep=document.createElement("button"); hearStep.type="button"; hearStep.textContent="▶ Hear this step"; hearStep.style.cssText="padding:10px;font:inherit;"; playerControls.appendChild(hearStep);
+        var stopStep=document.createElement("button"); stopStep.type="button"; stopStep.textContent="Stop audio"; stopStep.style.cssText="padding:10px;font:inherit;"; playerControls.appendChild(stopStep);
+        player.appendChild(playerControls);
+        var activeStep=0;
+        function paintLessonStep(){
+          var step=lesson.dailyLesson.steps[activeStep];
+          stepCounter.textContent="Step "+(activeStep+1)+" of "+lesson.dailyLesson.steps.length;
+          frameHeading.textContent=step.mode;
+          frameCaption.textContent=step.onScreen;
+          frameAction.textContent="Your action: "+step.learnerAction;
+          frameNarration.textContent="Read / narration: "+step.narration;
+          previousStep.disabled=activeStep===0;
+          nextStep.disabled=activeStep===lesson.dailyLesson.steps.length-1;
+        }
+        previousStep.addEventListener("click",function(){if(activeStep>0){activeStep-=1;paintLessonStep();}});
+        nextStep.addEventListener("click",function(){if(activeStep<lesson.dailyLesson.steps.length-1){activeStep+=1;paintLessonStep();}});
+        hearStep.addEventListener("click",function(){
+          var step=lesson.dailyLesson.steps[activeStep];
+          if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText==="function") global.PacificEducationSpeech.speakText(step.narration,{allowRepeat:true});
+          else {frameNarration.textContent="Audio unavailable. Read this narration or ask your teacher to read it aloud: "+step.narration;}
         });
-        lessonPanel.appendChild(frames);
+        stopStep.addEventListener("click",function(){if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.stopSpeech==="function") global.PacificEducationSpeech.stopSpeech();});
+        paintLessonStep();
+        lessonPanel.appendChild(player);
         var textHeading=document.createElement("h5"); textHeading.textContent="Read the example"; lessonPanel.appendChild(textHeading);
         var passage=document.createElement("p"); passage.textContent=lesson.dailyLesson.learnerText.passage; lessonPanel.appendChild(passage);
         var model=document.createElement("p"); model.textContent="Worked example: "+lesson.dailyLesson.workedExample; lessonPanel.appendChild(model);
