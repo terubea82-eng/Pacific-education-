@@ -90,3 +90,30 @@ test("supports only ECE, Classes 1–8 and Forms 3–7", () => {
   }
   assert.equal(engine.validate([validRecord({ level: "Kindergarten" })]).valid, false);
 });
+
+
+test("import workspace itself rejects untraceable records and preserves schedule evidence", () => {
+  const workspaceSource = fs.readFileSync("src/js/pacificEducationCurriculumAlignmentImportWorkspace.js", "utf8");
+  const store = new Map();
+  const window = {
+    localStorage: {
+      getItem(key) { return store.has(key) ? store.get(key) : null; },
+      setItem(key, value) { store.set(key, String(value)); },
+      removeItem(key) { store.delete(key); }
+    }
+  };
+  const document = { dispatchEvent() {} };
+  function CustomEvent(name, options) { this.type = name; this.detail = options.detail; }
+  vm.runInNewContext(workspaceSource, {
+    window, document, localStorage: window.localStorage, CustomEvent,
+    Date, JSON, String, Number, Object, Array, Math
+  });
+  const workspace = window.PacificEducationCurriculumAlignmentImportWorkspace;
+  assert.equal(workspace.add({ id: "bad", indicatorId: "x", level: "Class 1", subjectId: "English", term: "Term 1", indicatorText: "candidate" }).success, false);
+  const saved = workspace.add(validRecord());
+  assert.equal(saved.success, true);
+  assert.equal(saved.item.week, 1);
+  assert.equal(saved.item.day, 2);
+  assert.equal(saved.item.scheduleEvidenceReference, "teacher-sequence-review-pending");
+  assert.equal(saved.item.productionEligible, false);
+});
