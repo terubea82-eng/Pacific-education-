@@ -616,6 +616,36 @@
           questions.appendChild(q);
         });
         lessonPanel.appendChild(questions);
+        if (lesson.termLearningPlan) {
+          var plan = lesson.termLearningPlan;
+          var planSection = document.createElement("section");
+          planSection.setAttribute("aria-label","Term learning pathway");
+          planSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
+          var planTitle=document.createElement("h5"); planTitle.textContent=plan.term+" pathway: "+plan.weeks+" weeks / "+plan.teachingDays+" daily learning slots"; planSection.appendChild(planTitle);
+          var planNote=document.createElement("p"); planNote.textContent=plan.purpose+" Ability group: "+plan.abilityLabel+". "+plan.differentiation+" Official indicator mapping: "+plan.curriculumStatus+"."; planSection.appendChild(planNote);
+          var weeksList=document.createElement("ol");
+          plan.weeksPlan.forEach(function(weekPlan){var item=document.createElement("li");item.textContent=weekPlan.title+" — Day 1 introduce; Day 2 model; Day 3 guided practice; Day 4 apply independently; Day 5 review and evidence.";weeksList.appendChild(item);});
+          planSection.appendChild(weeksList);
+          lessonPanel.appendChild(planSection);
+        }
+        if (lesson.revisionPaper && lesson.revisionPaper.questions && lesson.revisionPaper.questions.length) {
+          var revisionSection=document.createElement("section");
+          revisionSection.setAttribute("aria-label","End of term revision practice");
+          revisionSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
+          var revisionTitle=document.createElement("h5"); revisionTitle.textContent=lesson.revisionPaper.title+" ("+lesson.revisionPaper.questionCount+" questions)"; revisionSection.appendChild(revisionTitle);
+          var revisionNote=document.createElement("p"); revisionNote.textContent="Practice paper from the final two teaching weeks. It is not an official examination paper; teacher review and syllabus mapping are required."; revisionSection.appendChild(revisionNote);
+          var revisionQuestions=document.createElement("ol");
+          lesson.revisionPaper.questions.forEach(function(question){var item=document.createElement("li");item.textContent=question.prompt;if(question.options&&question.options.length){var opts=document.createElement("ul");question.options.forEach(function(option,index){var opt=document.createElement("li");opt.textContent=String.fromCharCode(65+index)+". "+option;opts.appendChild(opt);});item.appendChild(opts);}revisionQuestions.appendChild(item);});
+          revisionSection.appendChild(revisionQuestions);
+          if (!learnerRole) {
+            var keyDetails=document.createElement("details");
+            var keySummary=document.createElement("summary"); keySummary.textContent="Teacher answer key and explanations"; keyDetails.appendChild(keySummary);
+            var keyList=document.createElement("ol");
+            lesson.revisionPaper.answerKey.forEach(function(entry){var item=document.createElement("li");item.textContent=entry.answer+" — "+entry.explanation;keyList.appendChild(item);});
+            keyDetails.appendChild(keyList);revisionSection.appendChild(keyDetails);
+          }
+          lessonPanel.appendChild(revisionSection);
+        }
         var alignment=document.createElement("p");
         var candidateIndicator=lesson.dailyLesson.curriculumAlignment.candidateIndicator;
         alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". "+
