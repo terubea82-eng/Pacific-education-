@@ -386,6 +386,18 @@
       Object.keys(scheduledEnglish).forEach(function (key) { worksheet[key] = scheduledEnglish[key]; });
     }
     worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
+    var candidateSource = null;
+    if (level === "Class 1" && block === "T1" && week === 1) {
+      candidateSource = {
+        title: "Year 1 English — Language, Literacy and Communication",
+        issuingBody: "Curriculum Development Unit, Ministry of Education, Heritage and Arts, Fiji (as stated in the resource)",
+        statedVersion: "2013; revised 2019; reprinted 2020 (verify against current authorized copy)",
+        reference: "Unit 1, \"Who am I?\" (resource p. 5); S/s and A/a activities (resource pp. 6–7)",
+        url: "https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/",
+        authorityStatus: "THIRD_PARTY_HOSTED_COPY_REQUIRES_AUTHORIZED_SOURCE_CHECK"
+      };
+      worksheet.sourceNote = "Original PacEdu English practice; candidate reference: Year 1 English — Language, Literacy and Communication, Unit 1 (resource p. 5), S/s and A/a (pp. 6–7). Copy located on a third-party host; compare with the current authorized school/FEMIS/Ministry copy. Official outcome mapping remains pending.";
+    }
     worksheet.curriculumSchedule = {
       country: "Fiji",
       term: selected.label,
@@ -394,14 +406,19 @@
       day: day,
       teachingTheme: curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
       suggestedFocus: curriculumWeek ? curriculumWeek.focus : "Use the current school-approved scheme of work.",
+      candidateSource: candidateSource,
       syllabusTitle: null,
       syllabusVersion: null,
       strand: null,
       achievementIndicator: null,
       pageOrSection: null,
+      reviewer: null,
+      reviewDate: null,
       verificationStatus: "NOT_YET_MAPPED"
     };
-    worksheet.curriculumNote = "The weekly theme is a planning framework, not proof of official syllabus alignment. A teacher must verify the current Fiji Ministry syllabus, exact strand and achievement indicator before assigning this as curriculum-verified.";
+    worksheet.curriculumNote = candidateSource
+      ? "Candidate source reference is supplied for teacher comparison only. The copy is hosted off the Ministry domain; confirm the current authorized resource, exact syllabus outcome/indicator, page and weekly placement. Do not mark curriculum-verified until reviewed."
+      : "The weekly theme is a planning framework, not proof of official syllabus alignment. A teacher must verify the current Fiji Ministry syllabus, exact strand and achievement indicator before assigning this as curriculum-verified.";
     return worksheet;
   }
   function install() {
