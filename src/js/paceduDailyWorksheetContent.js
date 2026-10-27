@@ -367,9 +367,28 @@
     };
   }
 
-  function makeDailyLesson(level, subject, ability, termLabel, week, day, worksheet, suggestedFocus) {
-    var concept = String(worksheet.topic || suggestedFocus || subject + " learning").replace(/\\s+/g, " ").trim();
+  function makeDailyLesson(level, subject, ability, termLabel, week, day, worksheet, weeklyTopic, suggestedFocus) {
+    var dayFocus = [
+      "notice and identify the key idea",
+      "follow a model and explain the example",
+      "practise the skill with support as needed",
+      "apply the skill to a new example",
+      "review the skill and explain what the evidence shows"
+    ][Math.max(0, Math.min(4, Number(day) - 1))];
+    var topicLabel = String(weeklyTopic || (termLabel + " Week " + week)).replace(/\s+/g, " ").trim();
+    var concept = topicLabel + " — " + subject + ": " + dayFocus + " (" + String(worksheet.topic || suggestedFocus || "daily practice") + ")";
     var stageName = stage(level);
+    var classLevelObjective = stageName === "early"
+      ? "Explore the concept through play, pictures, objects, movement and one guided response."
+      : stageName === "foundation"
+        ? "Identify and describe the concept with a concrete example and a short spoken, selected or written response."
+        : stageName === "middle"
+          ? "Explain the concept using an example and one supporting detail or worked step."
+          : stageName === "upper"
+            ? "Apply the concept to a new example, show evidence or working, and explain the reasoning."
+            : stageName === "junior"
+              ? "Apply the concept to an unfamiliar example and explain the relationship using subject vocabulary."
+              : "Analyse or evaluate the concept using evidence, assumptions and limitations appropriate to the task.";
     var learnerAction = stageName === "early"
       ? "Look, listen, point, match, move, speak, sign, draw or select an answer."
       : stageName === "foundation"
@@ -392,7 +411,8 @@
     return {
       title: subject + " — " + level + " — " + termLabel + ", Week " + week + ", Day " + day,
       learningConcept: concept,
-      learningIntention: "We are learning to " + String(suggestedFocus || concept).replace(/[.!?]+$/, "") + ".",
+      learningIntention: "We are learning to " + dayFocus + " through " + String(worksheet.topic || subject + " example") + ".",
+      classLevelObjective: classLevelObjective,
       successCriteria: [
         "I can identify or demonstrate the main idea or skill in the example.",
         "I can try the activity using an accessible response method.",
@@ -464,6 +484,7 @@
     }
     worksheet.dailyLesson = makeDailyLesson(
       level, subject, ability, selected.label, week, day, worksheet,
+      curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
       curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
     );
     var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
