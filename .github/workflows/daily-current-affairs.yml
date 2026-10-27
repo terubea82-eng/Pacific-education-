@@ -193,9 +193,11 @@ jobs:
                     const propertyMatch = tagText.match(/\bproperty\s*=\s*["']([^"']+)["']/i);
                     const nameMatch = tagText.match(/\bname\s*=\s*["']([^"']+)["']/i);
                     const contentMatch = tagText.match(/\bcontent\s*=\s*["']([^"']+)["']/i);
-                    const publicationKey = (propertyMatch?.[1] || nameMatch?.[1] || '').trim();
-                    if (publicationKey && contentMatch &&
-                        /^(?:article:published_time|datePublished)$/i.test(publicationKey)) {
+                    const publicationKeys = [propertyMatch?.[1], nameMatch?.[1]]
+                      .filter(Boolean)
+                      .map(value => value.trim());
+                    if (contentMatch &&
+                        publicationKeys.some(key => /^(?:article:published_time|datePublished)$/i.test(key))) {
                       publicationValues.push(contentMatch[1].trim());
                     }
                   }
