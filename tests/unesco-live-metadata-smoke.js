@@ -5,6 +5,27 @@
 const { execFileSync } = require('node:child_process');
 const assert = require('node:assert/strict');
 const { extractOriginalPublicationDate } = require('../automation/unesco-publication-date');
+const { normalizeArticleTitle } = require('../automation/current-affairs-title');
+
+// Article-title regression cases: generic navigation labels must not become story titles.
+assert.equal(
+  normalizeArticleTitle('Press Releases', '/en/articles/khaled-el-enany-nominated-unescos-executive-board-post-director-general'),
+  'Khaled El Enany Nominated Unescos Executive Board Post Director General'
+);
+assert.equal(
+  normalizeArticleTitle('A Meaningful Fiji Story About Water', '/news/water-story'),
+  'A Meaningful Fiji Story About Water',
+  'retain descriptive publisher-provided titles'
+);
+assert.equal(
+  normalizeArticleTitle('Read more', '/en/articles/a-community-builds-safe-water-access'),
+  'A Community Builds Safe Water Access'
+);
+assert.equal(
+  normalizeArticleTitle('Newsroom', '/en/newsroom'),
+  null,
+  'do not publish a generic title when the URL provides no article slug'
+);
 
 const newsroomUrl = 'https://www.unesco.org/en/newsroom';
 const userAgent = 'PacificEducationPilot/1.0 (educational current-affairs feed)';
