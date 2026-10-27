@@ -9,11 +9,13 @@ const GENERIC_TITLES = new Set([
 function cleanTitle(value) {
   return String(value || '')
     .replace(/<[^>]*>/g, ' ')
-    .replace(/&amp;/gi, '&')
+    // Decode named entities in one pass: decode ampersands last so
+    // double-encoded input cannot be unescaped twice.
     .replace(/&quot;/gi, '"')
     .replace(/&#39;|&apos;/gi, "'")
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
+    .replace(/&amp;/gi, '&')
     .replace(/\s+/g, ' ')
     .replace(/^\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+/i, '')
     .replace(/\s+\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s*$/i, '')
