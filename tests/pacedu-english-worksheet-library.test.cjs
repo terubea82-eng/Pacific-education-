@@ -268,3 +268,29 @@ test("ability selector falls back to general setting without a valid selected st
   assert.equal(abilityStore.get("pacificEducationCapability"), "extension");
   assert.equal(selector.getCapability(), "extension");
 });
+
+
+test("English teacher workspace exposes curriculum-scheduled Term/Week/Day controls for every Fiji level", () => {
+  assert.match(source, /paceduEnglishCurriculumScheduleControls/);
+  assert.match(source, /paceduEnglishWorksheetTerm/);
+  assert.match(source, /paceduEnglishWorksheetWeek/);
+  assert.match(source, /paceduEnglishWorksheetWeekDay/);
+  assert.match(source, /getCurriculumWorksheet\(/);
+  assert.match(source, /ECE, Classes 1–8 and Forms 3–7/);
+  assert.match(source, /curriculumSchedule\.verificationStatus/);
+  assert.match(source, /exact strand and achievement-indicator reference/);
+});
+
+test("English workspace keeps the Day 1 initial ability check separate from scheduled practice", () => {
+  assert.match(source, /paceduEnglishInitialAbilityCheck/);
+  assert.match(source, /initialCheckToggle\.checked\) \{/);
+  assert.match(source, /makeWorksheet\(levelSelect\.value, "initial-assessment", 1, "English"\)/);
+  assert.match(source, /The initial ability check is separate/);
+});
+
+test("English curriculum schedule selectors expose valid week ranges without claiming official mapping", () => {
+  assert.match(source, /T1:10,T2:10,T3:5,ASSESSMENT:1,INTERVENTION:5,REVISION:2,EXAMS:2/);
+  assert.match(source, /verificationStatus/);
+  assert.match(source, /NOT_YET_MAPPED/);
+  assert.match(source, /do not certify an official Fiji term timetable or achievement indicator/);
+});
