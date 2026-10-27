@@ -28,6 +28,21 @@ test("basic sensitivity screen does not recommend a crime story to ECE–Class 6
   assert.equal(api.selectStory([sensitive], "Class 7", "English").id, sensitive.id);
 });
 
+test("Fiji Form 3–7 and Health subject aliases match feed recommendations", () => {
+  const formStory = { ...approvedStory, levelsApplicable: ["Class 9"], subjectsApplicable: ["Health Science"] };
+  assert.equal(api.selectStory([formStory], "Form 3", "Health").id, formStory.id);
+});
+
+test("the live teacher coordinator loads the selector and persists ability-group plans", () => {
+  const html = fs.readFileSync("src/index.html", "utf8");
+  const coordinator = fs.readFileSync("src/js/pacificEducationTeacherDailyActivityCoordinator.js", "utf8");
+  assert.match(html, /pacificEducationClassStoryDifferentiation\.js/);
+  assert.ok(html.indexOf("pacificEducationClassStoryDifferentiation.js") < html.indexOf("pacificEducationTeacherDailyActivityCoordinator.js"));
+  assert.match(coordinator, /picker\.selectStory\(list, ctx\.level, ctx\.subject\)/);
+  assert.match(coordinator, /abilityActivities:plan\.abilityActivities/);
+  assert.match(coordinator, /All four ability groups work toward the same achievement indicator/);
+});
+
 test("all four ability groups use one shared story and one achievement indicator", () => {
   const groups = api.buildAbilityActivities({
     level: "Class 4", subject: "English",
