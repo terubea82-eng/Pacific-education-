@@ -43,3 +43,10 @@ The workspace supports ECE, Classes 1–8 and Forms 3–7. Fiji public education
 - Generate and quality-review every required daily worksheet for the approved school calendar, with separate answer keys/rubrics.
 - Test teacher approval, learner assignment, student access, evidence submission, marking, and progress tracking end to end.
 - Keep production eligibility disabled until all required mappings and review records pass validation.
+
+
+### Additional secondary English candidate source
+
+- *Revised Secondary English Curriculum (RSEC) Teachers Guide — Years 9 and 10* is available as a third-party-hosted copy. The document identifies the Fiji Ministry Curriculum Advisory Services team and Fiji Program Support Facility as preparers and describes three strands, basic skill-building/reading, student-centred approaches and formative/summative assessment. [Candidate copy](https://fliphtml5.com/gjgbb/naau/RSEC_Teachers_Guide_Year_9_%26_10/).
+- Treat this as a candidate reference only until checked against the current authorized FEMIS/Ministry copy and the school’s applicable RSEC rollout/version. It does not certify Form 3–4 week/day placement or replace syllabus outcomes.
+- The 2025 secondary English curriculum circular surfaced in research describes differing implementation arrangements by year and school cohort, so the workspace must not assume one secondary sequence applies to every school. [Search result for Circular No. 19-25](https://www.studocu.com/row/document/nakawa-vocational-training-college/english/circular-no-19-25-2025-secondary-english-curriculum/117881613). Confirm the actual current circular and applicable school cohort through authorized channels before using it for mapping.
