@@ -41,6 +41,9 @@ test("the live teacher coordinator loads the selector and persists ability-group
   assert.match(coordinator, /picker\.selectStory\(list, ctx\.level, ctx\.subject\)/);
   assert.match(coordinator, /abilityActivities:plan\.abilityActivities/);
   assert.match(coordinator, /All four ability groups work toward the same achievement indicator/);
+  assert.match(coordinator, /var plans=Array\.isArray\(i\.classPlans\)/);
+  assert.match(coordinator, /Shared achievement indicator:/);
+  assert.match(coordinator, /No approved suitable story; use local context/);
 });
 
 test("all four ability groups use one shared story and one achievement indicator", () => {
