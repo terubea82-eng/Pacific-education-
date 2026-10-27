@@ -476,3 +476,13 @@ jobs:
           done
           echo "::error::Could not publish feed after three safe retries."
           exit 1
+
+  unesco-live-metadata-smoke:
+    name: Live UNESCO original publication metadata smoke test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch real UNESCO newsroom and validate article datePublished metadata
+        run: node tests/unesco-live-metadata-smoke.js
