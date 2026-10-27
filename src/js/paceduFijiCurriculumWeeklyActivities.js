@@ -223,6 +223,7 @@
         if (daily.dailyLesson) {
           el("h4","Step-by-step lesson: see, read and hear",output);
           el("p","Learning intention: "+daily.dailyLesson.learningIntention,output);
+          el("p",level.value+" learning target: "+daily.dailyLesson.classLevelObjective,output);
           el("p","Concept: "+daily.dailyLesson.learningConcept,output);
           el("h5","Video storyboard and learner steps",output);
           var lessonSteps=el("ol",null,output);
