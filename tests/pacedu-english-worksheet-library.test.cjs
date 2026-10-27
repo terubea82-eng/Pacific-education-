@@ -284,7 +284,7 @@ test("English teacher workspace exposes curriculum-scheduled Term/Week/Day contr
 test("English workspace keeps the Day 1 initial ability check separate from scheduled practice", () => {
   assert.match(source, /paceduEnglishInitialAbilityCheck/);
   assert.match(source, /initialCheckToggle\.checked\) \{/);
-  assert.match(source, /makeWorksheet\(levelSelect\.value, "initial-assessment", 1, "English"\)/);
+  assert.match(source, /makeWorksheet\(levelSelect\.value, "initial-assessment", 1, subjectSelect\.value\)/);
   assert.match(source, /The initial ability check is separate/);
 });
 
