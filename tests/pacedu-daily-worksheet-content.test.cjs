@@ -99,6 +99,23 @@ test("all Fiji levels and four ability bands return complete differentiated work
   }
 });
 
+test("the scheduled curriculum workspace uses the selected subject, not a hard-coded English worksheet", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const library = fs.readFileSync("src/js/pacificEducationEnglishWorksheetLibrary.js", "utf8");
+  assert.match(library, /var isCurriculumSchedule/);
+  assert.match(library, /subject: subjectSelect\.value, term: termSelect\.value/);
+  assert.match(library, /makeWorksheet\(levelSelect\.value, "initial-assessment", 1, subjectSelect\.value\)/);
+  for (const subject of api.subjects) {
+    const worksheet = api.getCurriculumWorksheet({
+      level: "Class 4", subject, term: "T1", week: 2, day: 3, ability: "developing"
+    });
+    assert.equal(worksheet.subject, subject);
+    assert.equal(worksheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
+    assert.equal(worksheet.questions.length, 4);
+    assert.equal(worksheet.answerKey.length, 4);
+  }
+});
+
 test("Class 1 English Day 2 starts with the planned introduction activity", () => {
   const worksheet = load().PacEduDailyWorksheetContent.getWorksheet("Class 1", "English", 2, "expected");
   assert.equal(worksheet.topic, "Who am I? — Class 1 Term 1 Week 1");
