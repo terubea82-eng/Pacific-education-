@@ -150,3 +150,12 @@ A copy of *Year 1 English — Language, Literacy and Communication* was located 
 - Each day includes four flexible instructional levels and teacher evidence notes; the materials permit oral, pointing, drawing, word-card, or written responses.
 - The Days 6–10 sequence is a teacher-proposed practice continuation, **not** a verified official Fiji term/week timetable or indicator mapping.
 - Coverage is now ten original starter/practice days across the two worksheet files. It is still not a complete term, and official indicator/source version and educator approval remain pending. Production eligibility remains false.
+
+
+### English Daily Activities workspace — term/week/day scheduling (27 October 2026)
+
+- The existing teacher-facing **English — Daily Activities for All Classes** panel now has a Fiji-level selector for ECE, Classes 1–8 and Forms 3–7, four flexible ability bands, a separate Day 1 initial ability check, and term/block, week and teaching-day selectors.
+- For scheduled English practice, the workspace calls the daily worksheet content API and renders a printable student worksheet with questions and a separate teacher guide/answer key. Day 1 remains a distinct observation check.
+- Available planning blocks are Term 1 (10 weeks), Term 2 (10 weeks), Term 3 (5 weeks), assessment window (1 week), intervention (5 weeks), revision (2 weeks) and school-approved examination period (2 weeks). These are configurable planning slots; they are **not certified as the official current Fiji school calendar**.
+- Each generated scheduled worksheet remains marked DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING with verificationStatus: NOT_YET_MAPPED. A qualified Fiji English teacher must link the exact current syllabus title/version, strand/outcome or achievement-indicator reference, page/section and review record before official alignment can be claimed.
+- The worksheet generator provides a structured starting bank for all supported levels and four ability bands; it does **not** prove that every daily activity for the entire school year has been authored, quality-reviewed or mapped to every official indicator. Production eligibility remains false.
