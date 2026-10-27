@@ -24,6 +24,12 @@ assert.equal(extractOriginalPublicationDate(
   '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-02-29T10:00:00Z"}</script>'
 ), '2024-02-29');
 assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2024-02-29T10:00:00Z"}--!></script>'
+), '2024-02-29', 'support JSON-LD blocks closed with the HTML --!> comment terminator');
+assert.equal(extractOriginalPublicationDate(
+  '<script type="application/ld+json"><!--{"@type":"NewsArticle","datePublished":"2024-02-29T10:00:00Z"}--!></script>'
+), '2024-02-29', 'support JSON-LD wrapped in HTML comments using --!>');
+assert.equal(extractOriginalPublicationDate(
   '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2023-02-29T10:00:00Z"}</script>'
 ), null);
 assert.equal(extractOriginalPublicationDate(
