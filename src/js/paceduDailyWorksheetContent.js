@@ -466,6 +466,35 @@
       level, subject, ability, selected.label, week, day, worksheet,
       curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
     );
+    var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
+    var classReference = String(options.classReference || "").trim();
+    var indicatorTerm = String(options.curriculumTerm || options.term || "").trim();
+    if (classReference && indicatorEngine && typeof indicatorEngine.buildDailyIndicatorPlan === "function") {
+      try {
+        var indicatorResult = indicatorEngine.buildDailyIndicatorPlan({
+          classId: classReference, level: level, subjectId: subject,
+          term: indicatorTerm, dayNumber: Math.max(1, Number(options.dayNumber) || (2 + ((week - 1) * 5) + (day - 1)))
+        });
+        var assignment = indicatorResult && indicatorResult.assignment;
+        if (assignment && assignment.indicatorId &&
+            String(assignment.classId || "") === classReference &&
+            String(assignment.level || "") === level &&
+            String(assignment.subjectId || "") === subject &&
+            String(assignment.term || "") === indicatorTerm) {
+          worksheet.dailyLesson.curriculumAlignment.candidateIndicator = {
+            id: String(assignment.indicatorId),
+            text: String(assignment.indicatorText || ""),
+            strand: String(assignment.strand || ""),
+            sourceStatus: String(assignment.sourceStatus || "unverified"),
+            productionEligible: assignment.productionEligible === true,
+            status: "PENDING_TEACHER_REVIEW"
+          };
+          worksheet.dailyLesson.curriculumAlignment.rule += " A matching class-specific indicator candidate is attached for teacher review only; it is not treated as verified by this generator.";
+        }
+      } catch (indicatorError) {
+        /* Missing or unavailable indicator services must not break daily lessons. */
+      }
+    }
     worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
     var candidateSource = null;
     if (level === "Class 1" && block === "T1" && week === 1) {
