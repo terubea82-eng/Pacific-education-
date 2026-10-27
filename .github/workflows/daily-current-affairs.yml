@@ -354,18 +354,35 @@ jobs:
             }
             console.log(source.label + ' filter counts: ' + JSON.stringify(counts));
           }
+          // Deduplicate and cap each publisher at three eligible articles, then
+          // select round-robin across sources before applying Fiji-first ordering.
+          // This prevents a high-volume global publisher from crowding every
+          // lower-volume source out of the 30-item daily feed.
           const seen = new Set();
-          const sourceCounts = new Map();
-          const items = all.filter(a => {
-            if (seen.has(a.url)) return false;
-            seen.add(a.url);
-            // Prevent one publisher from filling the daily list. This leaves room
-            // for Fiji, Pacific and international perspectives together.
-            const count = sourceCounts.get(a.source) || 0;
-            if (count >= 3) return false;
-            sourceCounts.set(a.source, count + 1);
-            return true;
-          }).map((a, i) => {
+          const perSource = new Map(sources.map(source => [source.label, []]));
+          for (const article of all) {
+            if (seen.has(article.url)) continue;
+            seen.add(article.url);
+            const queue = perSource.get(article.source) || [];
+            if (queue.length >= 3) continue;
+            queue.push(article);
+            perSource.set(article.source, queue);
+          }
+          const selected = [];
+          let round = 0;
+          while (selected.length < 30) {
+            let addedThisRound = false;
+            for (const source of sources) {
+              const candidate = (perSource.get(source.label) || [])[round];
+              if (!candidate) continue;
+              selected.push(candidate);
+              addedThisRound = true;
+              if (selected.length === 30) break;
+            }
+            if (!addedThisRound) break;
+            round++;
+          }
+          const items = selected.map(a => {
             const combinedText = a.title + ' ' + a.description;
             const applicable = subjects(combinedText);
             const levelRecommendations = applicableLevels(combinedText);
@@ -391,7 +408,14 @@ jobs:
             const rank = { FIJI: 0, PACIFIC: 1, GLOBAL: 2 };
             return (rank[a.countryOrRegion] ?? 2) - (rank[b.countryOrRegion] ?? 2) ||
               Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
-          }).slice(0, 30);
+          });
+          const selectedCounts = Object.fromEntries(sources.map(source => [
+            source.label, items.filter(item => item.source === source.label).length
+          ]));
+          console.log('Final selected counts by source: ' + JSON.stringify(selectedCounts));
+          console.log('Eligible source representation: ' +
+            sources.filter(source => (perSource.get(source.label) || []).length > 0)
+              .map(source => source.label + '=' + selectedCounts[source.label]).join('; '));
           if (items.length === 0) {
             throw new Error('No eligible articles were parsed from official feeds; preserving existing feed.');
           }
