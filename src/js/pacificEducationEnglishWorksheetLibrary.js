@@ -724,6 +724,16 @@
       if (studentSheet.curriculumNote) node("p", studentSheet.curriculumNote, guide);
       if (studentSheet.curriculumSchedule) {
         node("p", "Teacher check: record the current authorized syllabus title/version, exact strand and achievement-indicator reference, page/section, and reviewer before marking this activity curriculum-verified.", guide);
+        var candidateSource = studentSheet.curriculumSchedule.candidateSource;
+        if (candidateSource) {
+          node("p", "Candidate source (teacher verification required): " + candidateSource.title + ". " +
+            candidateSource.issuingBody + ". " + candidateSource.statedVersion + ". Reference: " +
+            candidateSource.reference + ". Source-copy status: " + candidateSource.authorityStatus, guide);
+          var candidateLink = node("a", "Open candidate source for teacher comparison", guide);
+          candidateLink.href = candidateSource.url;
+          candidateLink.target = "_blank";
+          candidateLink.rel = "noopener noreferrer";
+        }
       }
       printButton.disabled = false;
     }
