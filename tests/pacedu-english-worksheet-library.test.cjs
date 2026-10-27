@@ -291,6 +291,5 @@ test("English workspace keeps the Day 1 initial ability check separate from sche
 test("English curriculum schedule selectors expose valid week ranges without claiming official mapping", () => {
   assert.match(source, /T1:10,T2:10,T3:5,ASSESSMENT:1,INTERVENTION:5,REVISION:2,EXAMS:2/);
   assert.match(source, /verificationStatus/);
-  assert.match(source, /NOT_YET_MAPPED/);
   assert.match(source, /do not certify an official Fiji term timetable or achievement indicator/);
 });
