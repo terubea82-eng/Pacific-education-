@@ -518,7 +518,7 @@
       if (!panel.hidden) panel.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     node("h3", "Daily Subject Worksheets — Preview Before Printing", panel);
-    node("p", "Choose a subject and ECE or Class 1–13, then the teaching day. Day 1 is an initial observation check. From Day 2, use recorded learner evidence and teacher review. Preview before printing; language and curriculum alignment remain pending teacher verification.", panel);
+    node("p", "English daily practice is available for ECE, Classes 1–8 and Forms 3–7. Choose a term, week and day to build the worksheet. Day 1 is a separate initial ability check. Daily activities are original practice drafts; official Fiji syllabus outcomes still require educator verification.", panel);
     var subjectSelect = addSelect(panel, "Subject", "paceduDailySubject", SUBJECTS, "English");
     var levelDefault = global.localStorage.getItem("pacificEducationLevel") || "Class 1";
     if (/^kindergarten$/i.test(levelDefault)) levelDefault = "ECE";
@@ -589,6 +589,38 @@
     var dayInput = node("input", null, dayLabel); dayInput.id = "paceduEnglishWorksheetDay"; dayInput.type = "number"; dayInput.min = "1"; dayInput.max = "365"; dayInput.step = "1";
     dayInput.value = String(Math.max(1, Math.min(365, Number(global.localStorage.getItem("currentDayNumber") || 1) || 1)));
     dayInput.style.cssText = "display:block;width:100%;box-sizing:border-box;min-height:42px;padding:8px;margin-top:4px;font:inherit;";
+
+    /* English uses the term/week/day curriculum planner. The legacy day-number
+       field remains available for other subject previews and is hidden for English. */
+    var scheduleControls = node("div", null, panel);
+    scheduleControls.id = "paceduEnglishCurriculumScheduleControls";
+    scheduleControls.style.cssText = "margin:10px 0;padding:12px;border:1px solid #93c5fd;border-radius:8px;background:#f8fbff;";
+    var termSelect = addSelect(scheduleControls, "Term / learning block", "paceduEnglishWorksheetTerm", [
+      ["T1","Term 1"],["T2","Term 2"],["T3","Term 3"],
+      ["ASSESSMENT","Assessment window"],["INTERVENTION","Intervention"],["REVISION","Revision"],["EXAMS","School-approved examination period"]
+    ], "T1");
+    var weekSelect = addSelect(scheduleControls, "Week", "paceduEnglishWorksheetWeek", [["1","Week 1"]], "1");
+    var weekDaySelect = addSelect(scheduleControls, "Teaching day in week (1–5)", "paceduEnglishWorksheetWeekDay", [
+      ["1","Day 1"],["2","Day 2"],["3","Day 3"],["4","Day 4"],["5","Day 5"]
+    ], "1");
+    node("p", "The initial ability check is separate. These choices select a practice slot; they do not certify an official Fiji term timetable or achievement indicator.", scheduleControls)
+      .style.cssText = "font-size:.92em;margin:8px 0;color:#334155;";
+    function syncScheduleControls() {
+      var block = termSelect.value;
+      var maximum = ({T1:10,T2:10,T3:5,ASSESSMENT:1,INTERVENTION:5,REVISION:2,EXAMS:2})[block] || 1;
+      var prior = Number(weekSelect.value) || 1;
+      weekSelect.textContent = "";
+      for (var wi = 1; wi <= maximum; wi += 1) {
+        var option = node("option", "Week " + wi, weekSelect);
+        option.value = String(wi);
+      }
+      weekSelect.value = String(Math.min(prior, maximum));
+      scheduleControls.hidden = subjectSelect.value !== "English";
+      dayLabel.hidden = subjectSelect.value === "English";
+    }
+    termSelect.addEventListener("change", syncScheduleControls);
+    subjectSelect.addEventListener("change", syncScheduleControls);
+    syncScheduleControls();
     var actions = node("div", null, panel); actions.style.cssText = "display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;";
     var previewButton = node("button", "Preview Worksheet", actions); previewButton.type = "button"; previewButton.style.cssText = "padding:11px 14px;font-weight:700;";
     var printButton = node("button", "Print Student Worksheet", actions); printButton.type = "button"; printButton.disabled = true; printButton.style.cssText = "padding:11px 14px;font-weight:700;";
@@ -597,14 +629,31 @@
     function renderPreview() {
       var day = clampDay(dayInput.value);
       dayInput.value = String(day);
+      var isEnglishSchedule = subjectSelect.value === "English" &&
+        global.PacEduDailyWorksheetContent &&
+        typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function";
       var savedEvidence = storedWorksheetAbility();
-      if (day > 1 && !savedEvidence.hasEvidence && abilitySelect.value === "initial-assessment") {
-        preview.textContent = "Complete the Day 1 initial ability check and record the learner evidence before creating a Day 2–365 ability worksheet.";
+      if ((isEnglishSchedule || day > 1) && !savedEvidence.hasEvidence && abilitySelect.value === "initial-assessment") {
+        preview.textContent = "Complete the Day 1 initial ability check and record learner evidence, or select a teaching band based on observed evidence, before creating a daily practice worksheet.";
         printButton.disabled = true;
         return;
       }
-      var ability = day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value;
-      studentSheet = makeWorksheet(levelSelect.value, ability, day, subjectSelect.value);
+      var ability = isEnglishSchedule
+        ? (abilitySelect.value === "initial-assessment" ? savedEvidence.ability : abilitySelect.value)
+        : (day === 1 || abilitySelect.value === "initial-assessment" ? "initial-assessment" : abilitySelect.value);
+      if (isEnglishSchedule) {
+        studentSheet = global.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+          level: levelSelect.value, subject: "English", term: termSelect.value,
+          week: Number(weekSelect.value), day: Number(weekDaySelect.value), ability: ability
+        });
+      } else {
+        studentSheet = makeWorksheet(levelSelect.value, ability, day, subjectSelect.value);
+      }
+      if (!studentSheet || studentSheet.status === "NOT_FOUND") {
+        preview.textContent = studentSheet && studentSheet.message ? studentSheet.message : "This worksheet slot is not available.";
+        printButton.disabled = true;
+        return;
+      }
       preview.textContent = "";
       var sheet = node("article", null, preview); sheet.id = "paceduEnglishStudentPrintSheet"; sheet.className = "pacedu-print-student-sheet";
       sheet.style.cssText = "background:white;color:#111;padding:18px;border:1px solid #888;margin-top:12px;";
@@ -612,6 +661,11 @@
       node("p", "Name: __________________________________    Date: __________________", sheet);
       node("p", "Subject: " + (studentSheet.subject || subjectSelect.value), sheet);
       node("p", "Topic: " + studentSheet.topic, sheet);
+      if (studentSheet.curriculumSchedule) {
+        node("p", "Planning slot: " + studentSheet.curriculumSchedule.term + " · Week " +
+          studentSheet.curriculumSchedule.week + " · Teaching day " + studentSheet.curriculumSchedule.day, sheet);
+        node("p", "Curriculum verification: " + studentSheet.curriculumSchedule.verificationStatus, sheet);
+      }
       renderPicturePrompt(sheet, studentSheet.topic, stageFor(classNumber(levelSelect.value)));
       if (studentSheet.readingText) {
         node("h3", "Read / listen to the passage", sheet);
@@ -657,6 +711,10 @@
       }
       node("p", studentSheet.differentiationNote, guide);
       node("p", studentSheet.sourceNote + " Status: " + studentSheet.status + ".", guide);
+      if (studentSheet.curriculumNote) node("p", studentSheet.curriculumNote, guide);
+      if (studentSheet.curriculumSchedule) {
+        node("p", "Teacher check: record the current authorized syllabus title/version, exact strand and achievement-indicator reference, page/section, and reviewer before marking this activity curriculum-verified.", guide);
+      }
       printButton.disabled = false;
     }
     if (Number(dayInput.value) === 1) abilitySelect.value = "initial-assessment";
