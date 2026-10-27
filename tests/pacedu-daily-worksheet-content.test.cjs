@@ -142,6 +142,24 @@ test("every scheduled subject and supported level receives a five-step see-read-
   }
 });
 
+test("daily concept focus changes by day and each supported class has its own learning target", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const levels = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
+  const objectives = levels.map(level => api.getCurriculumWorksheet({
+    level,subject:"Mathematics",term:"T1",week:2,day:3,ability:"expected"
+  }).dailyLesson.classLevelObjective);
+  assert.equal(new Set(objectives).size, levels.length);
+  const dailyConcepts = [1,2,3,4,5].map(day => api.getCurriculumWorksheet({
+    level:"Class 4",subject:"Science",term:"T1",week:2,day,ability:"developing"
+  }).dailyLesson.learningConcept);
+  assert.equal(new Set(dailyConcepts).size, 5);
+  const learner = api.getCurriculumWorksheet({
+    level:"Class 4",subject:"Science",term:"T1",week:2,day:4,ability:"developing"
+  }).dailyLesson;
+  assert.match(learner.learningIntention, /apply the skill to a new example/i);
+  assert.match(learner.classLevelObjective, /Class 4|Explain the concept/i);
+});
+
 test("a matching class-specific indicator is attached only as a candidate until reviewed", () => {
   const window = load();
   window.PacificEducationAchievementDistributionEngine = {
