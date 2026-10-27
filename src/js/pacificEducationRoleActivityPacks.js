@@ -526,8 +526,15 @@
     var status = document.createElement("p"); status.textContent = activity.curriculumStatus; status.setAttribute("role","note"); card.appendChild(status);
     if (learnerRole && global.PacEduDailyWorksheetContent &&
         typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function") {
-      var lessonLevel = global.PacEduDailyWorksheetContent.levels.indexOf(context.level) >= 0 ? context.level : "Class 1";
-      var lessonSubject = global.PacEduDailyWorksheetContent.subjects.indexOf(context.subject) >= 0 ? context.subject : "English";
+      var rawLessonLevel = String(context.level || "");
+      var yearMatch = rawLessonLevel.match(/^Year\\s+([1-8])$/i);
+      if (yearMatch) rawLessonLevel = "Class " + yearMatch[1];
+      var lessonLevel = global.PacEduDailyWorksheetContent.levels.indexOf(rawLessonLevel) >= 0 ? rawLessonLevel : "Class 1";
+      var requestedLessonSubject = String(context.subject || "English");
+      var lessonSubjectAliases = {"Maths":"Mathematics","Social Science":"Social Studies","Health":"Healthy Living","Arts":"Arts and Crafts"};
+      var lessonSubject = lessonSubjectAliases[requestedLessonSubject] || requestedLessonSubject;
+      if (global.PacEduDailyWorksheetContent.subjects.indexOf(lessonSubject) < 0) lessonSubject = "";
+      if (lessonSubject) {
       var lessonTermRaw = String(context.term || global.localStorage.getItem("pacificEducationTerm") || "T1").toUpperCase();
       var lessonTerm = /^(T1|T2|T3|ASSESSMENT|INTERVENTION|REVISION|EXAMS)$/.test(lessonTermRaw) ? lessonTermRaw :
         (/2/.test(lessonTermRaw) ? "T2" : (/3/.test(lessonTermRaw) ? "T3" : "T1"));
@@ -589,6 +596,12 @@
           "Exact official achievement indicator: not yet mapped; teacher review is required.");
         lessonPanel.appendChild(alignment);
         card.appendChild(lessonPanel);
+      }
+      } else {
+        var unsupportedLesson = document.createElement("p");
+        unsupportedLesson.setAttribute("role","note");
+        unsupportedLesson.textContent="A dedicated see-read-hear lesson template is not available yet for "+requestedLessonSubject+". PacEdu will not substitute an English lesson. The approved activity above remains available; the teacher must supply and verify this subject's example and syllabus indicator.";
+        card.appendChild(unsupportedLesson);
       }
     }
     var label = document.createElement("label"); label.textContent = "Your response / work note (avoid private or sensitive information)";
