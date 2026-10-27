@@ -21,7 +21,7 @@ assert.ok(api.levels.includes("Class 8"), "upper primary levels are included");
 assert.ok(api.levels.includes("Form 7"), "Form 7 is included");
 assert.equal(api.abilities.length, 4, "four ability bands are present");
 assert.ok(api.subjects.includes("English") && api.subjects.includes("Mathematics"), "core subjects exist");
-assert.equal(api.weeklyDistribution.length, 35, "weekly year/block distribution has 35 entries");
+assert.equal(api.weeklyDistribution.length, 33, "nine-week Term 1 and Term 2 plus five-week Term 3 and support blocks have 33 entries");
 for (const term of ["T1", "T2", "T3", "ASSESSMENT", "INTERVENTION", "REVISION", "EXAMS"]) {
   assert.ok(api.weeklyDistribution.some(w => w.term === term), "missing distribution block: " + term);
 }
@@ -41,4 +41,4 @@ for (const level of api.levels) {
 }
 const invalid = api.getWeeklyActivity({term:"T1",week:99});
 assert.equal(invalid.status, "NOT_FOUND");
-console.log("PASS: 35 weekly blocks; ECE–Form 7 levels; 11 subjects; 4 ability bands; activity/question generation and curriculum-verification guard.");
+console.log("PASS: 33 weekly blocks; ECE–Form 7 levels; 11 subjects; 4 ability bands; activity/question generation and curriculum-verification guard.");
