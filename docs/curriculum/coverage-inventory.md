@@ -132,3 +132,13 @@ A further source search located the Ministry-hosted **Early Childhood Education 
 - Supported mapping levels are limited to ECE, Class 1–8, and Form 3–7. Term, week and day values are range-checked; week/day placements require a schedule evidence reference.
 - Educator review is still required to certify the exact official source/version and indicator. Do not use a source placeholder or a teacher-proposed sequence as proof of official term/week placement.
 - **Coverage remains incomplete.** No current, source-verified Class 1 English indicator has been approved by this code change. The Class 1 English Term 1 Week 1 Day 2 material must remain a practice candidate until a teacher checks the applicable official syllabus and source reference.
+
+
+### Class 1 English — source-informed starter pack (27 October 2026)
+
+A copy of *Year 1 English — Language, Literacy and Communication* was located on a third-party flipbook host. The resource itself states Curriculum Development Unit, Ministry of Education, Heritage and Arts, Fiji; 2013, revised 2019, reprinted 2020. Unit 1 “Who am I?” is shown on resource page 5, and S/s and A/a phonics activities on pages 6–7. [Source copy](https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/).
+
+- Original, printable daily worksheets have been added in `docs/curriculum/english-class-1-daily-worksheet-pack.md` for a proposed five-day starter: diagnostic, self-introduction, S/s, A/a, and review.
+- This supports **source-informed practice**, not full official verification. The located copy is hosted off the Ministry domain; a teacher must compare with the current authorized school/FEMIS or Ministry copy, record exact indicator IDs/wording and approve the daily sequence.
+- The Term 1 / Week 1 placement remains a proposed planning slot, not a verified official timetable. No claim is made that the worksheets cover the full syllabus or all required indicators.
+- Curriculum verification status remains pending educator review; production eligibility remains false.
