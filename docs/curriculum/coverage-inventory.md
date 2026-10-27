@@ -142,3 +142,11 @@ A copy of *Year 1 English — Language, Literacy and Communication* was located 
 - This supports **source-informed practice**, not full official verification. The located copy is hosted off the Ministry domain; a teacher must compare with the current authorized school/FEMIS or Ministry copy, record exact indicator IDs/wording and approve the daily sequence.
 - The Term 1 / Week 1 placement remains a proposed planning slot, not a verified official timetable. No claim is made that the worksheets cover the full syllabus or all required indicators.
 - Curriculum verification status remains pending educator review; production eligibility remains false.
+
+
+### Class 1 English — daily practice continuation (27 October 2026)
+
+- Added five more original practice worksheets for Days 6–10 in [Class 1 English daily worksheet pack, Days 6–10](english-class-1-daily-worksheet-pack-days-6-10.md): classroom vocabulary, first sounds, word order, story sequencing, and review.
+- Each day includes four flexible instructional levels and teacher evidence notes; the materials permit oral, pointing, drawing, word-card, or written responses.
+- The Days 6–10 sequence is a teacher-proposed practice continuation, **not** a verified official Fiji term/week timetable or indicator mapping.
+- Coverage is now ten original starter/practice days across the two worksheet files. It is still not a complete term, and official indicator/source version and educator approval remain pending. Production eligibility remains false.
