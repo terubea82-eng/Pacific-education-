@@ -35,7 +35,7 @@ function extractPublicationValues(html) {
     /<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
   )) {
     try {
-      collectArticleDates(JSON.parse(match[1].replace(/^\s*<!--|-->\s*$/g, '')), articleValues);
+      collectArticleDates(JSON.parse(match[1].replace(/^\s*<!--|(?:-->|--!>)\s*$/g, '')), articleValues);
     } catch (_) {
       // Ignore malformed unrelated JSON-LD blocks; a valid primary article
       // record or explicit publisher meta value may still be present.
