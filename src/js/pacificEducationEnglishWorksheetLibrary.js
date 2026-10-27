@@ -424,7 +424,7 @@
       ];
     }
     return {
-      title: "Day " + day + " — " + (subject || "English") + " Worksheet — " + level + " — " + labelAbility(ability), 
+      title: "Day " + day + " — English Worksheet — " + level + " — " + labelAbility(ability),
       topic: topic,
       readingText: passageFor(stage, topic, day),
       level: level, ability: ability, day: day,
