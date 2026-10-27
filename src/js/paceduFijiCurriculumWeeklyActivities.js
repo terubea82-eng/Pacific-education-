@@ -30,7 +30,7 @@
     ["T1",7,"Plants, animals and living things","notice features, needs and differences"],
     ["T1",8,"Our community and helpers","roles, services and cooperation"],
     ["T1",9,"Patterns, shapes and numbers around us","identify, extend and explain patterns"],
-    ["T1",10,"Term 1 consolidation","mixed practice and evidence check"],
+    
     ["T2",1,"Stories and information texts","literal meaning, vocabulary and retelling"],
     ["T2",2,"Communication and instructions","listen/read, follow and give clear directions"],
     ["T2",3,"Materials and their uses","properties, grouping and safe use"],
