@@ -16,6 +16,8 @@
 
     function workspace(){return window.PacificEducationCurriculumAlignmentImportWorkspace||null;}
 
+    function isPlaceholder(value){return /\\b(?:pending|placeholder|to be confirmed|to be checked|todo|tbd|example\\.com)\\b/i.test(String(value||""));}
+
     function validateRecord(item,seen){
         var errors=[];
         REQUIRED.forEach(function(k){if(!item||!String(item[k]||"").trim())errors.push(k+" is required");});
@@ -32,8 +34,12 @@
         }
         ["documentId","sourceReference","sourceTitle","sourceVersion","sourceAuthority"].forEach(function(k){
             if(!String(item[k]||"").trim())errors.push(k+" is required for source traceability");
+            else if(isPlaceholder(item[k]))errors.push(k+" cannot be placeholder text");
         });
         if(!String(item.sourcePage||"").trim()&&!String(item.sourceSection||"").trim())errors.push("sourcePage or sourceSection is required");
+        if((item.sourcePage&&isPlaceholder(item.sourcePage))||(item.sourceSection&&isPlaceholder(item.sourceSection)))errors.push("sourcePage/sourceSection cannot be placeholder text");
+        if(item.sourceReference&&!/^https?:\\/\\//i.test(String(item.sourceReference).trim()))errors.push("sourceReference must be an HTTP(S) URL or stable document URL");
+        if(item.scheduleEvidenceReference&&isPlaceholder(item.scheduleEvidenceReference))errors.push("scheduleEvidenceReference cannot be placeholder text");
         if(!String(item.scheduleEvidenceReference||"").trim())errors.push("scheduleEvidenceReference is required to support term/week placement");
         if(item.id&&seen[item.id])errors.push("duplicate id: "+item.id);
         if(/verified|officially[-_ ]aligned|ministry[-_ ]approved/i.test(String(item.validationStatus||item.status||""))){
