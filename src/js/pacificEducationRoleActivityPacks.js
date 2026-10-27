@@ -553,6 +553,20 @@
         lessonPanel.style.cssText="margin:14px 0;padding:14px;border:1px solid #b7c9d6;border-radius:9px;";
         var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
         var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
+        var scheduleNav=document.createElement("section");
+        scheduleNav.setAttribute("aria-label","Choose term and teaching week");
+        scheduleNav.style.cssText="margin:10px 0;padding:10px;border:1px solid #c8d5de;border-radius:8px;";
+        var scheduleLabel=document.createElement("label");scheduleLabel.textContent="Term: ";scheduleLabel.style.cssText="display:inline-block;margin:4px 8px 4px 0;";
+        var termSelect=document.createElement("select");termSelect.style.cssText="padding:8px;font:inherit;";
+        [["T1","Term 1 — 9 weeks"],["T2","Term 2 — 9 weeks"],["T3","Term 3 — 5 weeks"]].forEach(function(opt){var option=document.createElement("option");option.value=opt[0];option.textContent=opt[1];if(opt[0]===lessonTerm)option.selected=true;termSelect.appendChild(option);});
+        scheduleLabel.appendChild(termSelect);scheduleNav.appendChild(scheduleLabel);
+        var weekLabel=document.createElement("label");weekLabel.textContent="Week: ";weekLabel.style.cssText="display:inline-block;margin:4px 8px 4px 0;";
+        var weekSelect=document.createElement("select");weekSelect.style.cssText="padding:8px;font:inherit;";
+        function populateWeeks(){while(weekSelect.firstChild)weekSelect.removeChild(weekSelect.firstChild);var maxWeek=termSelect.value==="T3"?5:9;for(var wi=1;wi<=maxWeek;wi++){var option=document.createElement("option");option.value=String(wi);option.textContent="Week "+wi;if(wi===Math.min(maxWeek,Number(lessonWeek)||1))option.selected=true;weekSelect.appendChild(option);}}
+        termSelect.addEventListener("change",populateWeeks);weekLabel.appendChild(weekSelect);scheduleNav.appendChild(weekLabel);
+        var openWeek=document.createElement("button");openWeek.type="button";openWeek.textContent="Open selected week";openWeek.style.cssText="padding:9px 12px;font:inherit;font-weight:700;margin:4px;";
+        openWeek.addEventListener("click",function(){global.localStorage.setItem("pacificEducationTerm",termSelect.value);global.localStorage.setItem("pacificEducationWeek",weekSelect.value);global.localStorage.setItem("pacificEducationTeachingWeek",weekSelect.value);render(role,stepId,host,day);});
+        scheduleNav.appendChild(openWeek);lessonPanel.appendChild(scheduleNav);populateWeeks();
         var intention = document.createElement("p"); intention.textContent="Learning intention: "+lesson.dailyLesson.learningIntention; lessonPanel.appendChild(intention);
         var levelObjective = document.createElement("p"); levelObjective.textContent=lessonLevel+" learning target: "+lesson.dailyLesson.classLevelObjective; lessonPanel.appendChild(levelObjective);
         var player=document.createElement("section");
@@ -628,7 +642,7 @@
           planSection.appendChild(weeksList);
           lessonPanel.appendChild(planSection);
         }
-        if (lesson.revisionPaper && lesson.revisionPaper.questions && lesson.revisionPaper.questions.length) {
+        if (lesson.revisionPaper && lesson.revisionPaper.questions && lesson.revisionPaper.questions.length && lessonWeek === (lesson.termLearningPlan ? lesson.termLearningPlan.weeks : lessonWeek)) {
           var revisionSection=document.createElement("section");
           revisionSection.setAttribute("aria-label","End of term revision practice");
           revisionSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
@@ -645,6 +659,16 @@
             keyDetails.appendChild(keyList);revisionSection.appendChild(keyDetails);
           }
           lessonPanel.appendChild(revisionSection);
+        } else if (lesson.termLearningPlan && lessonWeek < lesson.termLearningPlan.weeks) {
+          var revisionLocked=document.createElement("p");revisionLocked.setAttribute("role","note");revisionLocked.textContent="Term revision and the practice examination become available in Week "+lesson.termLearningPlan.weeks+", after this term's scheduled daily activities.";lessonPanel.appendChild(revisionLocked);
+        }
+        if (lesson.practiceExamPaper && lesson.practiceExamPaper.questions && lesson.practiceExamPaper.questions.length && lessonWeek === (lesson.termLearningPlan ? lesson.termLearningPlan.weeks : lessonWeek)) {
+          var examSection=document.createElement("section");examSection.setAttribute("aria-label","End of term practice examination");examSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
+          var examTitle=document.createElement("h5");examTitle.textContent=lesson.practiceExamPaper.title+" ("+lesson.practiceExamPaper.questionCount+" questions)";examSection.appendChild(examTitle);
+          var examNote=document.createElement("p");examNote.textContent="Mock practice only, not an official or past examination paper. Teacher review and syllabus mapping are required.";examSection.appendChild(examNote);
+          var examQuestions=document.createElement("ol");lesson.practiceExamPaper.questions.forEach(function(question){var item=document.createElement("li");item.textContent=question.prompt;if(question.options&&question.options.length){var opts=document.createElement("ul");question.options.forEach(function(option,index){var opt=document.createElement("li");opt.textContent=String.fromCharCode(65+index)+". "+option;opts.appendChild(opt);});item.appendChild(opts);}examQuestions.appendChild(item);});examSection.appendChild(examQuestions);
+          if (!learnerRole) {var examKey=document.createElement("details");var examKeySummary=document.createElement("summary");examKeySummary.textContent="Teacher answer key and explanations";examKey.appendChild(examKeySummary);var examKeyList=document.createElement("ol");lesson.practiceExamPaper.answerKey.forEach(function(entry){var item=document.createElement("li");item.textContent=entry.answer+" — "+entry.explanation;examKeyList.appendChild(item);});examKey.appendChild(examKeyList);examSection.appendChild(examKey);}
+          lessonPanel.appendChild(examSection);
         }
         var alignment=document.createElement("p");
         var candidateIndicator=lesson.dailyLesson.curriculumAlignment.candidateIndicator;
