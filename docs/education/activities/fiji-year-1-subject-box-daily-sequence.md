@@ -167,3 +167,29 @@ Add a subject box only after confirming the school offers it and the applicable 
 6. Student release is blocked until teacher approval.
 7. Cross-country tests prove that curriculum IDs, terms, dates, language and exam formats do not leak between countries.
 8. No changes overwrite existing working workspace behaviour; integrate incrementally behind tests.
+
+
+## Verification correction and release gate — 28 October 2026
+
+This is a teacher-review draft, not a complete verified list of Year 1 subjects and not an official achievement-indicator map.
+
+- The Higher Education Commission describes six ECE Foundation Areas of Learning and Development and seven primary/secondary Key Learning Areas. This is framework-level information, not a class-by-class subject timetable: https://nic.hec.org.fj/school-education
+- The Ministry's Free Educational Resources policy has an appendix explicitly labelled **2016 textbook list**. Its Year 1 entries (including English, Mathematics, Healthy Living, Elementary Science, Social Studies and several language resources) are historical discovery clues only; they do not prove today's subject list or a school's current syllabus adoption: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- The Ministry annual-report material describes revised Years 1–4 English and Mathematics literacy/numeracy curriculum development, so the system must record the exact adopted version: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- A Parliamentary statement on 25 May 2026 said the comprehensive review of the 2013 National Curriculum Framework had been launched and that the revised framework was still to be submitted for Cabinet endorsement after consultation. Do not claim the revised framework is final/adopted without a later official notice: https://www.parliament.gov.fj/wp-content/uploads/2026/06/Daily-Hansard-Monday-25th-May-2026.pdf
+
+### Required subject-box fix
+1. Load the school's confirmed curriculum version, class timetable and subject list before displaying subject boxes.
+2. Never show all draft boxes as mandatory by default. Healthy Living, Science, Social Studies, Arts, PE and language streams must match the actual class/school configuration and current syllabus.
+3. Use the historical 2016 list only to help discover sources, never as proof of current alignment.
+4. For Forms/Years 9–13, require the specific class, subject/elective, syllabus version and applicable examination specification. Do not reuse Year 1 subjects or tasks.
+5. Keep ECE labelled ECE and use the school's approved foundation-area structure.
+6. An activity stays `outcome-mapping-pending` until the official source, adopted version, class, subject, exact outcome/indicator ID and wording, page/section, reviewer and review date are recorded. A broad framework page is not enough.
+7. Until verified, these are optional teacher-reviewed drafts, not mandatory curriculum coverage or official exam preparation. Label original assessment items “PacEdu practice”; do not imply they are national exam papers.
+8. This Markdown file alone does not integrate live subject boxes, generate dates, publish downloads or alter student-release controls. Those remain separate code changes requiring tests.
+
+### Additional acceptance tests
+9. Historical sources cannot pass the formal-alignment gate without confirmation of current school adoption.
+10. Subjects absent from the selected class/school configuration remain hidden.
+11. Missing official outcome/version/page keeps status at `outcome-mapping-pending`.
+12. Missing calendar or timetable shows “configuration needed”; never invent dates or subject choices.
