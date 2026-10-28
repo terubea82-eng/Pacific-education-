@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "policy": "docs/education/country-adaptive-education-change-policy.md",
+  "monitoringStatus": "starter-registry-not-yet-connected-to-live-crawler",
+  "defaultCountry": "FJ",
+  "curriculumProfiles": [
+    {
+      "countryCode": "FJ",
+      "countryName": "Fiji",
+      "framework": {
+        "name": "Fiji National Curriculum Framework",
+        "version": "2013",
+        "status": "working-framework-until-authorised-replacement-takes-effect",
+        "sourceUrl": "https://www.education.gov.fj/"
+      },
+      "sources": [
+        {
+          "id": "fiji-education",
+          "publisher": "Fiji Ministry of Education",
+          "url": "https://www.education.gov.fj/",
+          "topics": [
+            "curriculum",
+            "assessment",
+            "school-policy"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-government",
+          "publisher": "Fiji Government",
+          "url": "https://www.fiji.gov.fj/",
+          "topics": [
+            "government-policy",
+            "national-development",
+            "education"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-parliament",
+          "publisher": "Parliament of Fiji",
+          "url": "https://www.parliament.gov.fj/",
+          "topics": [
+            "legislation",
+            "parliamentary-process"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-health",
+          "publisher": "Fiji Ministry of Health",
+          "url": "https://www.health.gov.fj/",
+          "topics": [
+            "public-health",
+            "health-education"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-environment",
+          "publisher": "Fiji Ministry responsible for Environment and Climate",
+          "url": "https://mecc.gov.fj/",
+          "topics": [
+            "environment",
+            "climate",
+            "biodiversity"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-statistics",
+          "publisher": "Fiji Bureau of Statistics",
+          "url": "https://www.statsfiji.gov.fj/",
+          "topics": [
+            "statistics",
+            "population",
+            "economy"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-met",
+          "publisher": "Fiji Meteorological Service",
+          "url": "https://www.met.gov.fj/",
+          "topics": [
+            "weather",
+            "climate",
+            "disaster-readiness"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-ndmo",
+          "publisher": "Fiji National Disaster Management Office",
+          "url": "https://www.ndmo.gov.fj/",
+          "topics": [
+            "disaster-risk",
+            "emergency-preparedness"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-fined",
+          "publisher": "FinED Fiji",
+          "url": "https://www.nfitfiji.com/",
+          "topics": [
+            "financial-literacy",
+            "consumer-protection",
+            "saving",
+            "borrowing",
+            "insurance"
+          ],
+          "authority": "national-education-programme",
+          "priority": 2
+        }
+      ]
+    }
+  ],
+  "requiredSourceFields": [
+    "id",
+    "publisher",
+    "url",
+    "topics",
+    "authority",
+    "priority"
+  ],
+  "publicationStates": [
+    "discovered",
+    "developing-verify",
+    "draft-activity",
+    "teacher-reviewed",
+    "approved",
+    "published",
+    "retired"
+  ],
+  "abilityBands": [
+    "supported-start",
+    "developing",
+    "working-at-class-goal",
+    "extension"
+  ],
+  "notes": [
+    "Seed list, not exhaustive country coverage.",
+    "Root URLs may not expose feeds/change logs; validate before enabling monitoring.",
+    "A source link alone does not verify a curriculum outcome."
+  ]
+}
