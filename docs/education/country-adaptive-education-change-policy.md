@@ -115,3 +115,79 @@ Every activity should retain country, curriculum version, topic/source, source d
 ## Implementation boundary
 
 This policy and starter source register are documentation/configuration scaffolding. A live scheduled crawler, durable change detection, automatic content generation/publication and all-country coverage require separate implementation, tests, source-by-source validation and deployment. Do not describe these as active until those checks pass.
+
+
+## Global problem-solving and practical citizenship learning (mandatory)
+
+PacEdu learning should help students investigate problems affecting their own community, country, region and other nations. The aim is informed, peaceful, evidence-based problem-solving—not memorising headlines, blaming groups, or assuming one solution works everywhere. Use the UN Sustainable Development Goals as one broad discovery framework, alongside each country's own priorities and curriculum.
+
+### Required issue coverage
+
+The issue discovery system should cover all relevant areas, not just the examples below:
+- Food security, crop and vegetable prices, farming, fisheries, nutrition and food waste.
+- Poverty, inequality, household costs, housing, homelessness and access to essential services.
+- Education access, literacy, numeracy, school attendance, inclusion, disability access and teacher support.
+- Physical and mental well-being, disease prevention, sanitation, clean water and safe health information.
+- Employment, wages, working conditions, vocational skills, entrepreneurship and changing labour-market needs.
+- Transport, roads, public infrastructure, connectivity, energy reliability and affordable energy.
+- Climate change, cyclones, floods, drought, disaster preparedness, coastal change and community resilience.
+- Waste, pollution, biodiversity, forests, soil, oceans, freshwater and responsible resource use.
+- Digital access, online scams, misinformation, privacy, cybersecurity, AI literacy and responsible technology.
+- Personal and community safety, child protection, violence prevention, accessibility and emergency readiness.
+- Public services, consumer protection, fair access, public spending, accountability, laws and rights.
+- Culture, language, heritage, social inclusion, peaceful cooperation and international development.
+- Any new or emerging issue supported by credible evidence, including issues identified by students and communities.
+
+This list is a discovery taxonomy, not a claim that every issue exists in every country or that every report is reliable. Relevance, urgency, affected groups and local evidence must be assessed.
+
+### Required student investigation cycle
+
+Every suitable issue-based learning sequence should guide students through:
+1. **Identify:** State the problem clearly and identify who is affected, where, when and how seriously.
+2. **Gather evidence:** Use observations, safe interviews with consent, class surveys that protect privacy, official statistics, credible research and reliable local reporting. Record source, date, units and sample limitations.
+3. **Check reliability:** Separate verified facts from claims, opinions, estimates, predictions and proposals. Compare more than one credible source where possible.
+4. **Investigate causes:** Build a cause map and distinguish root causes, contributing factors and symptoms. Do not treat correlation as proof of cause or assume a person or group is to blame without evidence.
+5. **Hear different perspectives:** Consider residents, students, workers, businesses, farmers, public agencies and affected or disadvantaged groups respectfully.
+6. **Develop options:** Produce more than one feasible response, including prevention and short- and long-term actions.
+7. **Compare trade-offs:** Estimate cost, labour, materials, time, environmental impact, fairness, risks, maintenance and who pays or benefits. Identify unintended consequences.
+8. **Choose and plan:** Justify a proposal with evidence, responsibilities, resources, partners, timeline, permissions and safeguarding measures.
+9. **Take safe action:** Complete an age-appropriate practical activity, prototype, garden, audit, awareness resource, design, service project or proposal. Obtain adult supervision and permission where needed.
+10. **Measure results:** Define indicators before action; compare baseline and follow-up; report what changed, what did not, costs, limitations and next steps.
+11. **Share responsibly:** Present findings to the class or appropriate community partners, protect private information, cite sources and invite constructive feedback.
+12. **Review and improve:** Revise the solution when evidence shows it is ineffective, unsafe, unaffordable or unfair.
+
+### Age and ability adaptation
+
+- ECE and early primary: noticing and describing problems, picture sorting, counting, simple planting, observation, sharing and supervised care.
+- Upper primary: surveys with teacher support, measurements, charts, simple budgets, interviews with permission and small group solutions.
+- Secondary: source evaluation, statistics, causal reasoning, cost-benefit comparisons, scientific investigations, prototypes, business/community plans and evidence-based presentations.
+- Senior secondary: more advanced data analysis, systems thinking, policy options, financial modelling, research methods, feasibility and evaluation—within curriculum and safeguarding requirements.
+
+Provide the same core issue at four ability bands: Supported Start, Developing, Working at Class Goal and Extension. Differentiate reading load, scaffolding, data complexity and independence without lowering dignity or excluding students from meaningful participation.
+
+### Practical action and safety rules
+
+Students may conduct school/community gardens, food-waste audits, water-use observations, accessibility checks, recycling projects, local-price comparisons, safe public-information campaigns, energy-saving measurements and supervised prototypes. They may write evidence-based recommendations to relevant authorities.
+
+Students must not be instructed to trespass, handle hazardous waste or chemicals, confront suspected offenders, investigate private individuals, publish personal data, provide medical/legal diagnoses, conduct unsafe fieldwork, or undertake political campaigning on behalf of the school. Activities involving money, vulnerable people, public facilities or sensitive topics require appropriate adult oversight, permissions and safeguarding.
+
+### Local and international comparison
+
+For a local issue, begin with the selected country and community. For a cross-country comparison, use comparable definitions, time periods, units and population groups; explain when the data are not comparable. Students should ask what can be learned from another country and what must be adapted to local climate, laws, culture, resources and needs. Never copy a proposed solution without checking feasibility and unintended effects.
+
+### Evidence-to-action record
+
+Each issue or student project should record:
+- issue ID, country/community, topic and date identified;
+- problem statement and affected population;
+- source links, publication dates, evidence type, data units and reliability limitations;
+- confirmed facts, uncertainties and alternative explanations;
+- possible causes and evidence supporting each cause;
+- options considered and their costs, risks, benefits, fairness and environmental effects;
+- selected action and reason for selection;
+- curriculum version, class, subject, learning objectives and verified achievement indicator or `outcome-mapping-pending`;
+- ability band, materials, adult-supervision needs, permissions and safety checks;
+- baseline, success indicators, follow-up results, student reflection and review status;
+- teacher/editor review, last-updated date and version history.
+
+PacEdu may automatically discover and classify candidate issues and draft age-appropriate learning activities. It must not claim a national problem has been solved, that an intervention caused a change, or that a proposal is official policy without suitable evidence and verification. National-level impact claims require stronger evidence than a single classroom project.
