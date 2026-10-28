@@ -273,24 +273,34 @@
     else if(ability==="expected") tasks.unshift("CORE PRACTICE: complete independently and check each answer.");
     else if(ability==="extension") tasks.unshift("EXTENSION: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
     var key=questions.map(function(q){return {number:q.number,answer:q.answer,explanation:q.why};});
-    var examples = questions.map(function(q, i) {
-      return {
-        number: i + 1,
-        format: "text",
-        prompt: q.prompt,
-        workedAnswer: q.answer,
-        explanation: q.why,
-        alternatives: ["picture-or-object", "audio-read-aloud", "short-video-when-needed"],
-        showBeforeQuestion: true
-      };
-    });
+    var displaySubject = (subject==="Science" && /^Form [34]$/.test(level)) ? "Basic Science" : subject;
+    var workedExamples = {
+      "Science": {prompt:"A learner says, ‘The soil feels damp.’ Is this an observation or a prediction?",workedAnswer:"It is an observation.",explanation:"The learner is describing what can be noticed now. A prediction says what may happen next."},
+      "Chemistry": {prompt:"A learner separates sand from water using filter paper. Which method is being used?",workedAnswer:"Filtration.",explanation:"The filter traps insoluble sand while water passes through."},
+      "Biology": {prompt:"A green plant makes its own food using light. What is the plant in a food chain?",workedAnswer:"A producer.",explanation:"A producer makes its own food, usually using energy from sunlight."},
+      "Physics": {prompt:"A learner walks 10 metres in 2 seconds. What is the average speed?",workedAnswer:"5 metres per second.",explanation:"Speed = distance ÷ time, so 10 ÷ 2 = 5 m/s."},
+      "Agriculture": {prompt:"A learner measures a seedling on Monday and again on Friday. Why record both dates?",workedAnswer:"To compare growth over time.",explanation:"Dated observations show whether and how the plant changed."},
+      "Technology": {prompt:"A learner tests a model bridge and it bends. What should happen next?",workedAnswer:"Use the test result to improve and test the design again.",explanation:"Testing provides evidence for a useful design change."},
+      "Mathematics": {prompt:"A basket has 3 coconuts and another has 2. How many coconuts are there altogether?",workedAnswer:"5 coconuts.",explanation:"3 + 2 = 5."},
+      "English": {prompt:"Example: ‘The children plant seeds.’ Who performs the action?",workedAnswer:"The children.",explanation:"The subject tells who or what the sentence is about."}
+    };
+    var workedExample=workedExamples[subject]||{prompt:"Read the task carefully and identify what it asks you to do. Give one clear answer, then check it against the example.",workedAnswer:"A clear answer that addresses the task.",explanation:"The example shows the steps to follow; use the same steps with your own question."};
+    var examples = [{
+      number:0,format:"text",prompt:workedExample.prompt,workedAnswer:workedExample.workedAnswer,
+      explanation:workedExample.explanation,
+      alternatives:["picture-or-object","audio-read-aloud"],showBeforeQuestion:true,
+      label:"Worked example — study this before starting"
+    }];
     return {
-      title:"Day "+day+" — "+subject+" Daily Worksheet — "+level+" — "+ability,
-      level:level,subject:subject,ability:ability,day:Number(day)||2,topic:chosen.topic,
+      title:"Day "+day+" — "+displaySubject+" Daily Worksheet — "+level+" — "+ability,
+      level:level,subject:displaySubject,contentSubject:subject,ability:ability,day:Number(day)||2,topic:chosen.topic,
       readingText:chosen.passage,
-      instructions:"Original PacEdu practice worksheet. Complete the questions, show working where needed, and ask the teacher to explain unfamiliar words. This is practice, not an official examination.",
+      instructions:"STUDENT INSTRUCTIONS: 1. Read or listen to the topic. 2. Study the worked example and how the answer is explained. 3. Answer each activity in order. 4. Show your steps, draw or point if writing is difficult, and check your work. 5. Submit your answers for PacEdu marking and teacher review. Do not copy the example as an answer unless the question asks for it. This is original practice, not an official examination.",
+      activitySequence:["Read or listen to the topic","Study the worked example","Complete Activities 1–4 in order","Check your answers","Submit for PacEdu feedback and teacher review"],
       tasks:tasks,
       examples:examples,
+      workedExample:workedExample,
+      examplePlacement:"before_questions",
       abilityGroupRules:{
         support:"Use objects, picture cues, read-aloud and teacher modelling; complete fewer steps at a time.",
         developing:"Use a worked example, word bank or number line, then try a similar item independently.",
