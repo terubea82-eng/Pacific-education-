@@ -203,12 +203,17 @@
             throw new Error("Invalid skill status.");
         }
 
-        const record = getStudentRecord(studentId);
+        const classId = selectedClassId();
+        if (!classId) {
+            throw new Error("Class Reference is required.");
+        }
 
+        const record = getStudentRecord(studentId);
         const previous = record.skills[skill.skillId] || null;
 
         record.skills[skill.skillId] = {
             skillId: skill.skillId,
+            classId,
             name: skill.name || skill.skillId,
             category: skill.category || "learning_skills",
             subject: skill.subject || null,
