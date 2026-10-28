@@ -632,6 +632,17 @@
     subjects:Object.keys(packs),
     getWorksheet:make,
     getCurriculumWorksheet:getCurriculumWorksheet,
+    getAllAbilityWorksheets:function(level,subject,day){
+      var groups=["support","developing","expected","extension"];
+      return groups.map(function(ability){return make(level,subject,day,ability);});
+    },
+    getAllSubjectAbilityWorksheets:function(level,day){
+      return Object.keys(packs).map(function(subject){
+        return {subject:subject,groups:["support","developing","expected","extension"].map(function(ability){
+          return make(level,subject,day,ability);
+        })};
+      });
+    },
     hasAnswerKey:function(level,subject,day,ability){var w=make(level,subject,day,ability);return w.questions.length===4&&w.answerKey.length===4&&w.answerKey.every(function(a){return !!a.answer&&!!a.explanation;});}
   });
 })(window);
