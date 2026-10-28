@@ -10,8 +10,8 @@ Fiji's assessment policy calls for a comprehensive range of formative and summat
 
 ## Day 1 flow
 
-1. **Teacher opens the class and subject box.** PacEdu selects the learner's registered class, the school's enabled subject, the previous class's prerequisite outcomes and the school's current curriculum version. It must not invent a subject, outcome, date or school timetable.
-2. **Give a short check (about five minutes per subject).** Use a small set of prerequisite tasks. Mix item types only when suitable: multiple choice, matching, short response, a small calculation, reading, picture selection or an oral/practical prompt. Keep the instructions simple and age-appropriate.
+1. **Teacher opens the Day 1 integrated baseline.** PacEdu selects the learner's registered class, the curriculum and school-approved subject list, then builds one short worksheet sampling prerequisite outcomes from the previous class across the enabled subjects. It must not invent a subject or outcome.
+2. **Give one integrated check (about five minutes total).** Include a very small number of short, accessible items per subject. The total should be a screening sample, not a full assessment of every outcome. Use multiple choice, matching, a short response, a small calculation, a brief reading item, picture selection or an oral/practical prompt where appropriate. For reliable subject placement, use follow-up mini-checks in a subject when Day 1 evidence is too thin.
 3. **Special handling for ECE / first-time learners.** Use observation, pictures, oral prompts, matching, counting objects and practical play. Do not assume a formal previous-class worksheet or penalise a child for not having attended formal schooling.
 4. **Teacher captures and confirms.** The teacher captures the completed paper or records an oral/practical response, confirms the learner's internal ID and subject, and checks that the image is readable. Never put a student's FEMIS ID in a public filename or URL.
 5. **PacEdu marks against the approved rubric.** Objective answers may be machine-scored after image-quality and recognition checks. Handwriting, unclear marks, oral-language nuances and open-ended answers with low confidence are sent to the teacher for confirmation; PacEdu must not silently guess.
@@ -20,11 +20,11 @@ Fiji's assessment policy calls for a comprehensive range of formative and summat
 
 ## Suggested timing
 
-- 30 seconds: learner identification and instructions
-- 3 minutes 30 seconds: short prerequisite items/tasks
-- 1 minute: review/submit or teacher observation record
+- 30 seconds: learner identification and simple instructions
+- About 3 minutes 30 seconds: a compact set of mixed-subject prerequisite items
+- About 1 minute: teacher checks completion, captures/submits the paper and records any observation
 
-Five minutes is a target, not a reason to rush a learner who needs an accommodation, accessible format, language support, additional time or practical/oral response. Such accommodations must be recorded, and the result should remain comparable only where the task and support make that comparison fair.
+**Five minutes is the total screening target, not five minutes per subject.** Because this gives only a small sample from each subject, PacEdu must mark low-confidence or insufficient subject evidence as **Not enough evidence yet** and schedule a short subject-specific follow-up rather than pretending it can confidently place every learner in every subject from too few items. Five minutes is a target, not a reason to rush a learner who needs an accommodation, accessible format, language support, additional time or practical/oral response. Such accommodations must be recorded, and the result should remain comparable only where the task and support make that comparison fair.
 
 ## Ability pathways per subject
 
@@ -36,6 +36,10 @@ Use these as supportive instructional pathways, not fixed labels:
 - **Extension** — shows secure prerequisite understanding and is ready for deeper reasoning or transfer tasks.
 
 Do not assign a group solely from one overall percentage or compare students against one another. Use the item-level evidence, outcome importance, task difficulty, confidence and teacher review. If evidence is insufficient or the image cannot be read, show **Not enough evidence yet** and request another short check rather than forcing a group.
+
+## One integrated paper, separate subject results
+
+The worksheet is one paper for the child, but its answer key and marking rubric must tag every item to its subject and prerequisite skill/outcome. PacEdu calculates a separate result for each subject; it must not combine all answers into one overall score to decide placement. If the five-minute sample contains too few items for a reliable decision in a subject, that subject remains provisional until a follow-up check or additional classroom evidence is available.
 
 ## One child, multiple subject profiles
 
@@ -69,16 +73,18 @@ Keep the original Day 1 record for progress comparison; append later evidence ra
 
 ## Acceptance tests
 
-1. A new Class/Year 1 learner is offered a suitable prior-learning check without assuming every child completed ECE.
-2. A subject has its own check, result, ability pathway and history.
-3. A learner can have different pathways in different subjects.
-4. Unreadable image, uncertain OCR or missing rubric results in teacher review / insufficient evidence, not guessed marks.
-5. A teacher approval is required before the result drives the student's differentiated activity release.
-6. Later evidence can change the pathway while preserving the Day 1 baseline and audit history.
-7. No single percentage cutoff or peer ranking determines a permanent group.
-8. Missing official outcome mapping or country/framework mismatch prevents a claim of official alignment.
-9. Accessibility accommodations and oral/practical alternatives are supported.
-10. No student's FEMIS ID appears in public URLs or filenames.
+1. A new Class/Year 1 learner is offered a suitable integrated prior-learning check without assuming every child completed ECE.
+2. The child receives one combined Day 1 paper covering configured previous-class subjects, with every item tagged to a subject and prerequisite outcome.
+3. PacEdu calculates separate subject results, not just one overall score.
+4. A subject has its own profile, ability pathway and history; insufficient evidence triggers a follow-up rather than forced placement.
+5. A learner can have different pathways in different subjects.
+6. Unreadable image, uncertain OCR or missing rubric results in teacher review / insufficient evidence, not guessed marks.
+7. A teacher approval is required before the result drives the student's differentiated activity release.
+8. Later evidence can change the pathway while preserving the Day 1 baseline and audit history.
+9. No single percentage cutoff or peer ranking determines a permanent group.
+10. Missing official outcome mapping or country/framework mismatch prevents a claim of official alignment.
+11. Accessibility accommodations and oral/practical alternatives are supported.
+12. No student's FEMIS ID appears in public URLs or filenames.
 
 ## Reference basis
 
