@@ -4,6 +4,7 @@ const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.
 
 test("teacher subject/class workspace offers only two resource types and safely checks reviewed evidence", async ({ page }) => {
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.setContent("<!doctype html><html><head><meta charset=\"utf-8\"></head><body></body></html>");
   await page.evaluate(() => {
     document.body.className = ""; document.body.removeAttribute("data-pe-flow-step"); document.documentElement.removeAttribute("data-pacedu-entry-advanced");
     document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="English" aria-pressed="true">English</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="class-a" aria-pressed="true">Class 1</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><button>Print / Save as PDF</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
@@ -38,12 +39,13 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await expect(panel.getByRole("button", { name: "Prepare Developing pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
   await expect(panel.getByRole("button", { name: "Prepare Working at class goal pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true })).toBeEnabled();
   await expect(panel.getByRole("button", { name: "Prepare Extension / deeper challenge pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await panel.getByRole("button", { name: "Download Working at class goal worksheets (1 learner(s))", exact: true }).click();
+  await panel.getByRole("button", { name: "Prepare Working at class goal pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
 });
 
 test("all four ability packs remain available when no reviewed evidence exists", async ({ page }) => {
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.setContent("<!doctype html><html><head><meta charset=\"utf-8\"></head><body></body></html>");
   await page.evaluate(() => {
     document.body.className = ""; document.body.removeAttribute("data-pe-flow-step"); document.documentElement.removeAttribute("data-pacedu-entry-advanced");
     document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="Science" aria-pressed="true">Science</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="class-b" aria-pressed="true">Form 4</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><button>Print / Save as PDF</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
