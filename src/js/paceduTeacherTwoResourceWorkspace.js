@@ -70,6 +70,13 @@
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
     panel.appendChild(node("h3", subject + " — " + selectedClass.textContent.trim()));
     panel.appendChild(node("p", "Only two resource types are provided here. Use a learner's latest reviewed evidence when available; missing or pending work does not mean low ability."));
+    /* Keep the visible workspace to the two requested resource types.
+       Existing linked-plan actions remain callable by the resource-1 buttons. */
+    Array.prototype.forEach.call(planPanel.querySelectorAll("button"), function (b) {
+      var label = String(b.textContent || "").trim().toLowerCase();
+      if (label === "download plan (.txt)") b.hidden = true;
+      if (label === "print / save as pdf") b.hidden = true;
+    });
     var instructions = node("section");
     instructions.setAttribute("aria-label", "Resource type 1: teacher instructions");
     instructions.appendChild(node("h4", "1. Teacher Instructions — Read or Print"));
