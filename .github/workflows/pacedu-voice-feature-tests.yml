@@ -5,7 +5,8 @@ on:
     paths:
       - "src/js/paceduVoiceSwitchEveryPage.js"
       - "src/js/pacificEducationVoiceNextDirective.js"
-      - "src/js/pacificEducationEveryPageVoiceRepair.js"\n      - "src/js/paceduDailyWorksheetContent.js"
+      - "src/js/pacificEducationEveryPageVoiceRepair.js"
+      - "src/js/paceduDailyWorksheetContent.js"
       - "src/js/pacificEducationMandatoryVoiceNavigation.js"
       - "src/index.html"
       - "tests/pacedu-voice-switch-every-page.test.cjs"
