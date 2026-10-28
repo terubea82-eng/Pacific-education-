@@ -150,6 +150,178 @@
   "notes": [
     "Seed list, not exhaustive country coverage.",
     "Root URLs may not expose feeds/change logs; validate before enabling monitoring.",
-    "A source link alone does not verify a curriculum outcome."
+    "A source link alone does not verify a curriculum outcome.",
+    "Global research sources are discovery starting points; they do not prove that any specific recommendation has been verified or mapped to a country's curriculum."
+  ],
+  "researchDiscoverySources": [
+    {
+      "id": "unicef-pacific-research",
+      "publisher": "UNICEF Pacific",
+      "url": "https://www.unicef.org/pacificislands/research-and-reports",
+      "topics": [
+        "child-rights",
+        "education",
+        "child-poverty",
+        "health",
+        "climate-resilience"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "unicef-pacific-education",
+      "publisher": "UNICEF Pacific Education",
+      "url": "https://www.unicef.org/pacificislands/what-we-do/education",
+      "topics": [
+        "foundational-learning",
+        "inclusive-education",
+        "climate-education",
+        "teacher-support"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "who-global",
+      "publisher": "World Health Organization",
+      "url": "https://www.who.int/",
+      "topics": [
+        "public-health",
+        "health-education",
+        "climate-health"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "unesco-global",
+      "publisher": "UNESCO",
+      "url": "https://www.unesco.org/",
+      "topics": [
+        "education",
+        "literacy",
+        "science",
+        "culture",
+        "digital-literacy"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "world-bank-global",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/",
+      "topics": [
+        "poverty",
+        "jobs",
+        "skills",
+        "economic-development",
+        "climate-resilience"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "fao-global",
+      "publisher": "Food and Agriculture Organization",
+      "url": "https://www.fao.org/",
+      "topics": [
+        "food-security",
+        "agriculture",
+        "nutrition",
+        "fisheries"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "ilo-global",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/",
+      "topics": [
+        "employment",
+        "work-skills",
+        "worker-rights"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "undp-global",
+      "publisher": "United Nations Development Programme",
+      "url": "https://www.undp.org/",
+      "topics": [
+        "sustainable-development",
+        "governance",
+        "resilience"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "world-bank-data",
+      "publisher": "World Bank Data",
+      "url": "https://data.worldbank.org/",
+      "topics": [
+        "development-indicators",
+        "poverty",
+        "economy",
+        "health",
+        "education"
+      ],
+      "authority": "official-statistical-database",
+      "priority": 2
+    },
+    {
+      "id": "unesco-statistics",
+      "publisher": "UNESCO Institute for Statistics",
+      "url": "https://uis.unesco.org/",
+      "topics": [
+        "education-statistics",
+        "literacy",
+        "school-participation"
+      ],
+      "authority": "official-statistical-database",
+      "priority": 2
+    }
+  ],
+  "evidenceRecordRequiredFields": [
+    "sourceUrl",
+    "title",
+    "publisher",
+    "publicationDate",
+    "countryOrPopulationStudied",
+    "evidenceType",
+    "finding",
+    "limitations",
+    "sourceRecommendation",
+    "problemCauseAnalysis",
+    "solutionOptions",
+    "expectedBenefit",
+    "countryCode",
+    "curriculumVersion",
+    "achievementIndicatorOrMappingPending",
+    "classSubject",
+    "abilityBandVersions",
+    "reviewStatus",
+    "lastReviewed"
+  ],
+  "evidenceTypes": [
+    "measured-result",
+    "association",
+    "research-interpretation",
+    "recommendation",
+    "policy-proposal",
+    "law-or-regulation"
+  ],
+  "reviewStatuses": [
+    "discovered",
+    "evidence-review-pending",
+    "draft-activity",
+    "outcome-mapping-pending",
+    "teacher-reviewed",
+    "approved",
+    "published",
+    "retired"
   ]
 }
