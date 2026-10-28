@@ -194,12 +194,26 @@
     else if(ability==="expected") tasks.unshift("CORE PRACTICE: complete independently and check each answer.");
     else if(ability==="extension") tasks.unshift("EXTENSION: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
     var key=questions.map(function(q){return {number:q.number,answer:q.answer,explanation:q.why};});
+    var examples = questions.map(function(q, i) {
+      return {
+        number: i + 1,
+        format: "text",
+        prompt: q.prompt,
+        workedAnswer: q.answer,
+        explanation: q.why,
+        alternatives: ["picture-or-object", "audio-read-aloud", "short-video-when-needed"],
+        showBeforeQuestion: true
+      };
+    });
     return {
       title:"Day "+day+" — "+subject+" Daily Worksheet — "+level+" — "+ability,
       level:level,subject:subject,ability:ability,day:Number(day)||2,topic:chosen.topic,
       readingText:chosen.passage,
       instructions:"Original PacEdu practice worksheet. Complete the questions, show working where needed, and ask the teacher to explain unfamiliar words. This is practice, not an official examination.",
       tasks:tasks,
+      examples:examples,
+      exampleRequiredBeforeEachQuestion:true,
+      exampleFormats:["text", "picture-or-object", "audio-read-aloud", "short-video-when-needed"],
       questions:questions,
       answerKey:key,
       responseLines:st==="early"?2:st==="foundation"?3:st==="middle"?5:7,
