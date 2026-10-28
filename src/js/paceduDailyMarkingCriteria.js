@@ -88,6 +88,13 @@
   ];
   function text(v) { return String(v == null ? "" : v).trim(); }
   function clamp(n,min,max) { return Math.max(min,Math.min(max,n)); }
+  function normalizeTerm(value) {
+    var v=text(value).toLowerCase().replace(/\\s+/g,"");
+    if(v==="t1"||v==="term1")return "T1";
+    if(v==="t2"||v==="term2")return "T2";
+    if(v==="t3"||v==="term3")return "T3";
+    return text(value)||"T1";
+  }
   function levelStage(level) {
     if (level === "ECE") return "early-years";
     var m = text(level).match(/(Class|Form)\s+(\d+)/i);
@@ -145,13 +152,16 @@
       };
     });
     var maxMarks = qCriteria.reduce(function (sum,q) { return sum + q.maxMarks; },0);
+    var familyParts=[text(options.country)||"Fiji",text(options.curriculumVersion)||"NOT_CONFIRMED",level,subject,normalizeTerm(options.term),ability];
+    var familyId="PACEDU-CRITERIA-FAMILY-"+familyParts.join("-").replace(/[^A-Z0-9-]/gi,"-").toUpperCase();
     return {
       schemaVersion:VERSION,
-      criteriaId:"PACEDU-RUBRIC-"+[text(options.country)||"COUNTRY",text(options.level)||"LEVEL",text(options.subject)||"SUBJECT",text(options.term)||"TERM",text(options.week)||"WEEK",text(options.day)||"DAY",ability,text(options.activityId)||"ACTIVITY"].join("-").replace(/[^A-Z0-9-]/gi,"-").toUpperCase(),
+      criteriaId:"PACEDU-RUBRIC-"+[text(options.country)||"COUNTRY",text(options.level)||"LEVEL",text(options.subject)||"SUBJECT",normalizeTerm(options.term),text(options.week)||"WEEK",text(options.day)||"DAY",ability,text(options.activityId)||"ACTIVITY"].join("-").replace(/[^A-Z0-9-]/gi,"-").toUpperCase(),
+      criteriaFamilyId:familyId,
       status:"DRAFT_REQUIRES_TEACHER_REVIEW",
       country:text(options.country)||"Fiji",
       curriculumVersion:text(options.curriculumVersion)||"NOT_CONFIRMED",
-      level:level,stage:levelStage(level),subject:subject,term:text(options.term)||"Term 1",
+      level:level,stage:levelStage(level),subject:subject,term:normalizeTerm(options.term),
       week:Number(options.week)||null,day:Number(options.day)||null,
       activityId:text(options.activityId)||null,achievementIndicator:text(options.achievementIndicator)||null,
       curriculumMappingStatus:text(options.curriculumMappingStatus)||"NOT_YET_MAPPED",
@@ -169,7 +179,7 @@
         {id:"expected",label:"Working at class goal",guide:"Practise transfer to a fresh task and maintain spaced revision."},
         {id:"extension",label:"Extension / deeper challenge",guide:"Use unfamiliar applications, justification or comparison while checking core accuracy."}
       ]},
-      links:{dailyWorksheet:{activityId:text(options.activityId)||null,criteriaId:null},revisionPaper:{status:"USE_SAME_INDICATOR_MAP_AND_CRITERIA_VERSION"},examPaper:{status:"USE_TERM_COVERAGE_MAP_AND_TEACHER-APPROVED_MARK_SCHEME"}},
+      links:{criteriaFamilyId:familyId,dailyWorksheet:{activityId:text(options.activityId)||null,criteriaId:null},revisionPaper:{criteriaFamilyId:familyId,status:"USE_SAME_INDICATOR_MAP_AND_CRITERIA_VERSION"},examPaper:{criteriaFamilyId:familyId,status:"USE_TERM_COVERAGE_MAP_AND_TEACHER-APPROVED_MARK_SCHEME"}},
       warning:"Suggested marking framework only, not an official Ministry rubric. Verify the current syllabus outcome and the actual question/answer key before use. Open-ended, oral, creative, practical and performance responses require teacher review."
     };
   }
