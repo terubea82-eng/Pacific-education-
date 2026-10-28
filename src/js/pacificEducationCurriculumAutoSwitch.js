@@ -1,14 +1,18 @@
 (function (window, document) {
   "use strict";
-  var MANIFEST_URL = "./data/curriculum/active-frameworks.json";
+  var MANIFEST_URL = "https://terubea82-eng.github.io/Pacific-education-/src/data/curriculum/active-frameworks.json";
   var STATE_KEY = "paceduCurriculumSelectionV1";
+  var MANIFEST_CACHE_KEY = "paceduCurriculumManifestCacheV1";
   var lastManifest = null;
 
   function safeJson(value) {
     try { return JSON.parse(value); } catch (error) { return null; }
   }
+  function safeRead(key) {
+    try { return window.localStorage.getItem(key); } catch (error) { return null; }
+  }
   function readCountry() {
-    var saved = safeJson(window.localStorage.getItem(STATE_KEY));
+    var saved = safeJson(safeRead(STATE_KEY));
     if (saved && saved.countryCode) return String(saved.countryCode).toUpperCase();
     var selectors = document.querySelectorAll("[name='country'], [name='countryCode'], #country, #countrySelect, [data-country-selector]");
     for (var i = 0; i < selectors.length; i += 1) {
@@ -17,7 +21,7 @@
     }
     var keys = ["pacificEducationCoreState", "pacificEducationRegistration", "paceduRegistration", "pacificEducationUserProfile"];
     for (var k = 0; k < keys.length; k += 1) {
-      var data = safeJson(window.localStorage.getItem(keys[k]));
+      var data = safeJson(safeRead(keys[k]));
       if (!data || typeof data !== "object") continue;
       var candidate = data.countryCode || data.country_code || data.country || (data.identity && (data.identity.countryCode || data.identity.country));
       if (candidate) return String(candidate).trim().toUpperCase();
@@ -148,7 +152,7 @@
     emit("pacedu:curriculum-framework-changing", active);
     var packUrl = profile.approvedContentPackUrl;
     if (profile.releaseStatus === "approved" && packUrl) {
-      return window.fetch(packUrl, { cache: "no-store", credentials: "same-origin" }).then(function (response) {
+      return window.fetch(new URL(packUrl, MANIFEST_URL).toString(), { cache: "no-store" }).then(function (response) {
         if (!response.ok) throw new Error("Approved curriculum pack could not be fetched: HTTP " + response.status);
         return response.json();
       }).then(function (pack) {
@@ -171,21 +175,63 @@
     emit("pacedu:curriculum-ready", active);
     return Promise.resolve(active);
   }
+  function validManifest(manifest) {
+    return !!(manifest && manifest.schemaVersion === 1 && manifest.countries && manifest.defaultCountry);
+  }
+  function bundledFijiBaseline() {
+    return {
+      schemaVersion: 1,
+      defaultCountry: "FJ",
+      countries: {
+        FJ: {
+          enabled: true,
+          countryName: "Fiji",
+          frameworkName: "Fiji National Curriculum Framework",
+          frameworkVersion: "2013",
+          frameworkStatus: "offline-bundled-baseline",
+          effectiveFrom: null,
+          officialSourceUrl: "https://www.education.gov.fj/",
+          mappingStatus: "outcome-mapping-pending",
+          releaseStatus: "baseline",
+          approvedContentPackUrl: null
+        }
+      }
+    };
+  }
   function load(reason) {
-    return window.fetch(MANIFEST_URL, { cache: "no-store", credentials: "same-origin" })
+    return window.fetch(MANIFEST_URL, { cache: "no-store" })
       .then(function (response) {
         if (!response.ok) throw new Error("Curriculum manifest fetch failed: HTTP " + response.status);
         return response.json();
       })
       .then(function (manifest) {
-        if (!manifest || manifest.schemaVersion !== 1 || !manifest.countries || !manifest.defaultCountry) {
-          throw new Error("Curriculum manifest schema is invalid.");
-        }
+        if (!validManifest(manifest)) throw new Error("Curriculum manifest schema is invalid.");
         lastManifest = manifest;
+        try { window.localStorage.setItem(MANIFEST_CACHE_KEY, JSON.stringify(manifest)); } catch (error) {}
         return activate(manifest, readCountry());
       })
       .catch(function (error) {
-        setStatus("manifest-unavailable", "Curriculum update check is unavailable. Existing approved content was not replaced.");
+        var cached = safeJson(safeRead(MANIFEST_CACHE_KEY));
+        if (validManifest(cached)) {
+          lastManifest = cached;
+          var active = activate(cached, readCountry());
+          setStatus("manifest-cached-offline", "Using the last saved curriculum manifest. Updates will be checked when online.");
+          emit("pacedu:curriculum-load-error", { reason: reason || "startup", mode: "cached-manifest", error: String(error && error.message || error) });
+          return active;
+        }
+        var country = String(readCountry() || "FJ").toUpperCase();
+        if (country === "FJ" || country === "FIJI") {
+          var fallback = bundledFijiBaseline();
+          lastManifest = fallback;
+          var baseline = activate(fallback, "FJ");
+          setStatus("manifest-offline-baseline", "Offline: using Fiji's bundled 2013 framework baseline. No future framework changes can be checked until connected.");
+          emit("pacedu:curriculum-load-error", { reason: reason || "startup", mode: "bundled-fiji-baseline", error: String(error && error.message || error) });
+          return baseline;
+        }
+        setStatus("manifest-unavailable", "Curriculum update check is unavailable. This country's curriculum is not loaded; Fiji content will not be substituted.");
+        window.PacEduActiveCurriculum = { countryCode: country, frameworkVersion: null, mappingStatus: "manifest-unavailable", status: "manifest-unavailable" };
+        installWorksheetGuard();
+        renderFrameworkStatus(window.PacEduActiveCurriculum);
         emit("pacedu:curriculum-load-error", { reason: reason || "startup", error: String(error && error.message || error) });
         return null;
       });
