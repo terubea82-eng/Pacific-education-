@@ -13,7 +13,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
     window.PacificEducationTeacherClassRosterContext = {
       getClass(id) { return id === "class-a" ? { level: "Class 1", studentRefs: ["FEMIS-1", "FEMIS-2"] } : null; }
     };
-    window.PacEduDownloadableClassPacks = { renderControls(holder) {
+    window.PacEduDownloadableClassPacks = { download(options) { window.__downloadedAbility = options.ability; return { dailyActivities: 45 }; }, renderControls(holder) {
       const section = document.createElement("section");
       const h = document.createElement("h4"); h.textContent = "Download class activities and assessment pack";
       const p = document.createElement("p"); p.textContent = "Draft pack note";
@@ -33,4 +33,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(59))).toBe("developing");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(79))).toBe("expected");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(80))).toBe("extension");
+  await expect(panel.getByRole("button", { name: "Download Working at class goal worksheets (1 learner(s))" })).toBeVisible();
+  await panel.getByRole("button", { name: "Download Working at class goal worksheets (1 learner(s))" }).click();
+  expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
 });
