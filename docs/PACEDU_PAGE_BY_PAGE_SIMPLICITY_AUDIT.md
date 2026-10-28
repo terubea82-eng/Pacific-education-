@@ -84,3 +84,9 @@ At the time this audit was written, GitHub Actions reported the voice-feature re
 2. Add tests asserting examples exist for each generated worksheet across supported subjects, levels and ability bands.
 3. Audit voice IDs against actual dynamically rendered workspace IDs and test each route before editing the voice map.
 4. Run the new commit's voice tests, broader regression workflows, and cross-device/browser checks; wait for CodeQL and browser results before considering merge.
+
+## User requirement: examples can be text, picture, video, or audio
+
+Every activity should include a concrete example presented in one or more suitable formats: readable text, picture/illustration, short video, or audio/read-aloud. Choose the format for the age, subject and accessibility needs; Class 1 activities should default to a short spoken/text example and use a picture or real object when it helps. Do not require video or internet to complete an activity: the text/example fallback should remain available offline. Audio and video must have clear controls, captions or text alternatives where appropriate, and must not autoplay over the existing single narrator.
+
+The current worksheet generator has question prompts, answers and explanations, but a dedicated example object per activity has not yet been implemented or tested. This remains an open implementation item; the teacher instruction text alone does not satisfy it. Before calling this complete, implement examples as data attached to each generated activity, render the available format in the student workspace, and add tests across all supported subjects, levels and ability bands. Confirm offline fallback and voice coexistence in browser tests.
