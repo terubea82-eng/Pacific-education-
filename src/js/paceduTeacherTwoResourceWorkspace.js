@@ -90,7 +90,7 @@
     print.style.cssText = "display:block;margin-top:8px;min-height:44px;padding:10px;";
     print.addEventListener("click", function () {
       var existing = Array.prototype.find.call(planPanel.querySelectorAll("button"), function (b) {
-        return /print \/ save as pdf/i.test(b.textContent || "");
+        return String(b.textContent || "").trim().toLowerCase() === "print / save as pdf";
       });
       if (existing && !existing.disabled) existing.click();
       else {
