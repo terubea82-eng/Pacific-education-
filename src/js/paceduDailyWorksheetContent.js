@@ -249,8 +249,8 @@
     });
     var tasks;
     if(st==="early") tasks=[
-      "Teacher reads the short story aloud. Point, say, sign, select, or draw one thing you noticed.",
-      "Use pictures or objects to show one answer. The teacher may model the first item.",
+      "PacEdu reads the short passage aloud when audio is available. Point, say, sign, select, or draw one thing you noticed.",
+      "Use the example, picture prompts, or available objects to show one answer. PacEdu displays the steps before you begin.",
       "Tell or show one safe, helpful action connected to the topic."
     ];
     else if(st==="foundation") tasks=[
@@ -268,7 +268,7 @@
       "Answer all four questions and justify at least two answers using evidence or working.",
       "Create one related question and provide a correct answer with reasoning."
     ];
-    if(ability==="support") tasks.unshift("SUPPORTED START: teacher models Question 1; use read-aloud, pictures, a word bank or concrete objects, then try the next question.");
+    if(ability==="support") tasks.unshift("SUPPORTED START: PacEdu shows a worked example first. Use read-aloud, picture cues, a word bank or objects, then try the next question.");
     else if(ability==="developing") tasks.unshift("DEVELOPING: try independently first; ask for one hint only if needed.");
     else if(ability==="expected") tasks.unshift("CORE PRACTICE: complete independently and check each answer.");
     else if(ability==="extension") tasks.unshift("EXTENSION: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
@@ -312,7 +312,7 @@
       questions:questions,
       answerKey:key,
       responseLines:st==="early"?2:st==="foundation"?3:st==="middle"?5:7,
-      teacherCheck:"Mark from the actual response. Record independent / with support / not yet demonstrated / not observed, then give one specific next step. For ECE, accept suitable oral, signed, picture, object or practical evidence.",
+      teacherCheck:"PacEdu should compare the submitted response with the answer guide where the question is auto-markable and return a clear next step. Practical, oral, signed, picture or open-ended evidence must be flagged for teacher review rather than falsely auto-scored. For ECE, accept suitable oral, signed, picture, object or practical evidence.",
       differentiationNote:"Ability bands change support and challenge, not a learner's worth or permanent identity. Recheck using fresh evidence and teacher judgement.",
       status:"DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING",
       sourceNote:"PacEdu original content. Curriculum source mapping pending: link this worksheet to the current Fiji Ministry syllabus strand, outcome/achievement indicator, class, term and teaching week before calling it officially curriculum-aligned."
