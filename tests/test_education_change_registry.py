@@ -176,10 +176,13 @@ class EducationChangeRegistryTests(unittest.TestCase):
             module.MANIFEST = manifest_path
             module.REGISTRY = registry_path
             module.RELEASE_DIR = release_dir
-            result = module.activate(today=date(2026, 10, 28), write=False)
+            result = module.activate(today=date(2026, 10, 28), write=True)
             self.assertTrue(result["changed"])
             self.assertEqual(result["countriesChanged"][0]["frameworkVersion"], "2027")
             self.assertEqual(result["countriesChanged"][0]["effectiveFrom"], "2026-10-01")
+            activated = json.loads(manifest_path.read_text(encoding="utf-8"))["countries"]["FJ"]
+            self.assertEqual(activated["frameworkVersion"], "2027")
+            self.assertEqual(activated["frameworkHistory"][0]["frameworkVersion"], "2013")
 
     def test_future_release_does_not_activate(self):
         script = ROOT / "automation" / "curriculum_release_activation.py"
