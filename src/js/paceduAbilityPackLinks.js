@@ -3,7 +3,7 @@
  */
 (function (global, document) {
   "use strict";
-  var BRANCH = "feat/pacedu-worksheet-packs-clean-20261028";
+  var BRANCH = "main";
   var ROOT = "https://github.com/terubea82-eng/Pacific-education-/blob/" + BRANCH + "/docs/worksheets/";
   var FILES = {
     "Class 1|English": "class1-english-ability-pack.md",
