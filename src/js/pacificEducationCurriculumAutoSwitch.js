@@ -239,6 +239,10 @@
   function chooseCountry(countryCode) {
     var code = String(countryCode || "").trim().toUpperCase();
     if (lastManifest) code = normalizeCountry(code, lastManifest);
+    else if (!/^[A-Z]{2,3}$/.test(code)) {
+      try { window.localStorage.setItem(STATE_KEY, JSON.stringify({ countryCode: code, selectedAt: new Date().toISOString() })); } catch (error) {}
+      return load("country-selection");
+    }
     if (!/^[A-Z]{2,3}$/.test(code)) return Promise.reject(new Error("Use a valid ISO country code or a country configured in PacEdu."));
     try { window.localStorage.setItem(STATE_KEY, JSON.stringify({ countryCode: code, selectedAt: new Date().toISOString() })); }
     catch (error) { /* Session may be private; still attempt a runtime switch. */ }
