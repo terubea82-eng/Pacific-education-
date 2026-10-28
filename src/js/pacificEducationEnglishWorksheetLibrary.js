@@ -685,7 +685,18 @@
       var list = node("ol", null, sheet);
       studentSheet.tasks.forEach(function (task) { node("li", task, list).style.marginBottom = "14px"; });
       if (studentSheet.questions && studentSheet.questions.length) {
-        node("h3", "Subject questions", sheet);
+        node("h3", "Look at the example first", sheet);
+        var exampleList = node("ol", null, sheet);
+        studentSheet.questions.forEach(function (question, questionIndex) {
+          var example = studentSheet.examples && studentSheet.examples[questionIndex];
+          var exampleItem = node("li", null, exampleList);
+          exampleItem.style.marginBottom = "12px";
+          node("p", "Example: " + (example ? example.prompt : question.prompt), exampleItem);
+          node("p", "Worked answer: " + (example ? example.workedAnswer : (question.answer || "Ask your teacher to model one answer.")), exampleItem);
+          if (example && example.explanation) node("p", "Why: " + example.explanation, exampleItem);
+          node("p", "You can use words, a picture or object, or ask for the text to be read aloud. A short video may be used when available; written instructions always remain.", exampleItem);
+        });
+        node("h3", "Now try the questions", sheet);
         var subjectQuestions = node("ol", null, sheet);
         studentSheet.questions.forEach(function (question) {
           var item = node("li", question.prompt, subjectQuestions);
