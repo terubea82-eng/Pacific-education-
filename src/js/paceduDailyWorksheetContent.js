@@ -160,11 +160,13 @@
     "Biology": ["Form 3","Form 4","Form 5","Form 6","Form 7"]
   };
   function subjectsForLevel(level) {
-    var isForm = /^Form /.test(String(level));
+    var match = String(level).match(/^Form (\\d+)$/);
+    var form = match ? Number(match[1]) : 0;
     return Object.keys(packs).filter(function(subject) {
-      return !isForm ? subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology"
-        : subject !== "Science";
-    });
+      if (form >= 3 && form <= 4) return subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology";
+      if (form >= 5 && form <= 7) return subject !== "Science";
+      return subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology";
+    }).concat(form >= 5 && form <= 7 ? ["Chemistry","Physics","Biology"] : []);
   }
   function stage(level) {
     if(level==="ECE") return "early";
@@ -657,6 +659,12 @@
     levels:levels.slice(),
     subjects:Object.keys(packs).concat(["Chemistry","Physics","Biology"]),
     getSubjectsForLevel:subjectsForLevel,
+    secondaryScienceStructure:[
+      {forms:["Form 3","Form 4"],subject:"Science",label:"Basic Science"},
+      {forms:["Form 5","Form 6","Form 7"],subject:"Chemistry",label:"Chemistry"},
+      {forms:["Form 5","Form 6","Form 7"],subject:"Biology",label:"Biology"},
+      {forms:["Form 5","Form 6","Form 7"],subject:"Physics",label:"Physics"}
+    ],
     scienceSubjectsForForms:["Chemistry","Physics","Biology"],
     getWorksheet:make,
     getCurriculumWorksheet:getCurriculumWorksheet,
