@@ -64,3 +64,16 @@ test("daily worksheets provide short action-based teacher steps for all supporte
   assert.match(daily, /worksheet\.dailyLesson\.teacherInstructions = worksheet\.teacherInstructions\.slice\(\)/);
   assert.match(daily, /SHORT_NUMBERED_ACTION_STEPS/);
 });
+
+
+test("every generated worksheet question has a worked example and accessible format options", () => {
+  const daily = fs.readFileSync("src/js/paceduDailyWorksheetContent.js", "utf8");
+  assert.match(daily, /var examples = questions\.map\(function\(q, i\)/);
+  assert.match(daily, /workedAnswer: q\.answer/);
+  assert.match(daily, /explanation: q\.why/);
+  assert.match(daily, /showBeforeQuestion: true/);
+  assert.match(daily, /exampleRequiredBeforeEachQuestion:true/);
+  for (const format of ["text", "picture-or-object", "audio-read-aloud", "short-video-when-needed"]) {
+    assert.ok(daily.includes(format), "missing example format: " + format);
+  }
+});
