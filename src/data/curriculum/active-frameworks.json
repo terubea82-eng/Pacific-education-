@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "defaultCountry": "FJ",
+  "manifestPolicy": "Only an approved, version-matched pack may be loaded into the live curriculum runtime. Framework changes are never activated from page hashes alone.",
+  "countries": {
+    "FJ": {
+      "enabled": true,
+      "countryName": "Fiji",
+      "frameworkName": "Fiji National Curriculum Framework",
+      "frameworkVersion": "2013",
+      "frameworkStatus": "current-working-framework-until-official-replacement-is-formally-in-force",
+      "effectiveFrom": null,
+      "officialSourceUrl": "https://www.education.gov.fj/",
+      "reviewEvidence": [
+        "https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/",
+        "https://www.parliament.gov.fj/wp-content/uploads/2026/06/Daily-Hansard-Monday-25th-May-2026.pdf"
+      ],
+      "mappingStatus": "outcome-mapping-pending",
+      "releaseStatus": "baseline",
+      "approvedContentPackUrl": null,
+      "note": "Framework baseline only. Class/subject outcome mapping requires current official syllabus evidence and reviewer approval."
+    }
+  }
+}
