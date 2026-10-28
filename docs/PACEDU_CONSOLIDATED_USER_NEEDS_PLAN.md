@@ -10,6 +10,7 @@
 - Do not build or install an APK unless the owner explicitly requests it. No claim of physical-device verification unless performed.
 - Keep the pilot owner-controlled. No production-ready, legally compliant, Ministry-approved, or official-curriculum-complete claims without evidence.
 - Avoid unnecessary help panels, menus, duplicate prompts and technical wording in learner workspaces. Sign-out remains explicit and confirmed by the user, never automatic.
+- **Class 1 usability acceptance rule:** a Class 1 learner must be able to use every learner-facing page with minimal adult help: one clear task at a time, short familiar words, large tappable controls, optional spoken instructions with reliable Next/Back/Repeat/Stop/Mute, an example before each activity, one question at a time where practical, kind retry feedback, visible save/offline status, and no teacher/admin controls or other learners' data. Remove duplicate prompts and unnecessary text only after checking dependencies and regression tests; do not delete functional/security content blindly.
 
 ## P0 — Pilot reliability, safety and access
 
