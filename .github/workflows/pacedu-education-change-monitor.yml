@@ -29,6 +29,9 @@ jobs:
           restore-keys: |
             pacedu-education-source-state-
 
+      - name: Validate monitor registry and script
+        run: python3 tests/test_education_change_registry.py
+
       - name: Fetch configured education sources and detect changes
         id: monitor
         run: |
@@ -38,8 +41,8 @@ jobs:
           import json, os
           data = json.load(open('/tmp/pacedu-education-monitor.json', encoding='utf-8'))
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as out:
-              out.write('changed_count=' + str(len(data['changed'])) + '\\n')
-              out.write('error_count=' + str(len(data['errors'])) + '\\n')
+              out.write('changed_count=' + str(len(data['changed'])) + '\n')
+              out.write('error_count=' + str(len(data['errors'])) + '\n')
           PY
 
       - name: Save latest source fingerprints
