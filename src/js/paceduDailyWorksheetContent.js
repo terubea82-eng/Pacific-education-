@@ -237,6 +237,38 @@
     if(/^Form/.test(level)) return n<=4?"junior":"senior";
     return n<=2?"foundation":n<=5?"middle":"upper";
   }
+  function classLearningTarget(level, subject) {
+    var n = level === "ECE" ? 0 : Number((String(level).match(/\d+/)||[1])[0]);
+    var isForm = /^Form/.test(level);
+    var stageName = isForm ? (n <= 4 ? "junior-secondary" : "senior-secondary") : n <= 1 ? "early-primary" : n <= 3 ? "developing-primary" : n <= 5 ? "consolidating-primary" : "upper-primary";
+    var targets = {
+      "early-primary":"Recognise, name, match, sort and communicate a simple idea using familiar examples.",
+      "developing-primary":"Describe a pattern, follow a short process, and answer who/what/where/when questions.",
+      "consolidating-primary":"Compare examples, explain a reason, record evidence and solve a familiar multi-step task.",
+      "upper-primary":"Infer, organise information, justify choices and solve unfamiliar but supported problems.",
+      "junior-secondary":"Investigate, interpret evidence, explain cause and effect, and justify a conclusion.",
+      "senior-secondary":"Analyse data or claims, evaluate methods and limitations, and transfer knowledge to unfamiliar problems."
+    };
+    return {
+      stage:stageName,
+      target:targets[stageName] || targets["developing-primary"],
+      classLevel:level,
+      subject:subject,
+      advancementRule:"Move to a more challenging activity only after evidence across several tasks shows the learner can do the current skill independently. A single correct answer is not enough. If the learner struggles, keep the class learning goal and provide a smaller step, a new example, and another attempt.",
+      masteryEvidence:["accurate attempt","reason or working shown","independent attempt on a fresh similar task","retention checked again on a later day"],
+      note:"This is a PacEdu learning progression guide, not a claim that the official syllabus outcome has been verified."
+    };
+  }
+  function abilityPathway(ability, stageName) {
+    var levels = {
+      support:{step:"Model one step, show the worked example, offer picture/object/read-aloud support, then let the learner try a similar item.",success:"Complete a small part accurately and explain or show one step with support."},
+      developing:{step:"Give one prompt or hint, then fade it; use a similar item with changed details.",success:"Complete most core steps with less prompting and explain one choice."},
+      expected:{step:"Set the class-level task; require the learner to show working or evidence and check an answer.",success:"Complete the core skill independently and apply it to a fresh similar item."},
+      extension:{step:"Use a changed condition, unfamiliar example, compare-two-methods task, or explain-and-defend prompt.",success:"Transfer the skill to a new situation and justify the reasoning with evidence."}
+    };
+    var result=levels[ability]||levels.developing;
+    return {name:ability,teachingStep:result.step,successEvidence:result.success,progression:"Support → Developing → Expected → Extension; learners can move at different rates and may revisit support without penalty."};
+  }
   function make(level, subject, day, ability) {
     level=levels.indexOf(level)>=0?level:"Class 1";
     var pack=(packs[subject]||packs.English);
@@ -318,6 +350,9 @@
     return {
       title:"Day "+day+" — "+displaySubject+" Daily Worksheet — "+level+" — "+ability,
       level:level,subject:displaySubject,contentSubject:subject,ability:ability,day:Number(day)||2,topic:chosen.topic,
+      classLearningTarget:classLearningTarget(level,displaySubject),
+      abilityPathway:abilityPathway(ability,stage(level)),
+      learningSequence:["worked example","supported similar attempt","independent core practice","reasoning or evidence","transfer challenge when ready"],
       readingText:chosen.passage,
       instructions:"STUDENT INSTRUCTIONS: 1. Read or listen to the topic. 2. Study the worked example and how the answer is explained. 3. Answer each activity in order. 4. Show your steps, draw or point if writing is difficult, and check your work. 5. Submit your answers for PacEdu marking and teacher review. Do not copy the example as an answer unless the question asks for it. This is original practice, not an official examination.",
       activitySequence:["Read or listen to the topic","Study the worked example and explanation","Try the first similar activity","Complete the remaining activities in order","Check your work and explain one answer","Submit for PacEdu feedback and teacher review"],
