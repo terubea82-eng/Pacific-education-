@@ -87,7 +87,11 @@ function renderControls(container,context){
  var button=document.createElement("button");button.type="button";button.textContent="Download daily activities + revision + practice exam";button.style.cssText="display:block;width:100%;padding:12px;margin-top:12px;font:inherit;font-weight:700;";panel.appendChild(button);
  var status=document.createElement("p");status.setAttribute("role","status");status.setAttribute("aria-live","polite");panel.appendChild(status);
  button.addEventListener("click",function(){try{var p=download({level:level.value,subject:subject.value,term:term.value,ability:ability.value});status.textContent="Pack prepared "+p.preparedDate+": "+p.dailyActivities+" daily activities; "+p.missingSlots+" unavailable slots. Check the downloaded file. Official syllabus mapping and marking criteria still require teacher review.";}catch(e){status.textContent="Could not prepare the pack: "+String(e&&e.message||e);}});
- container.appendChild(panel);return true;
+ container.appendChild(panel);
+ if(global.PacEduAbilityPackLinks&&typeof global.PacEduAbilityPackLinks.renderControls==="function"){
+  global.PacEduAbilityPackLinks.renderControls(panel,{level:level,subject:subject});
+ }
+ return true;
 }
 global.PacEduDownloadableClassPacks=Object.freeze({subjects:SUBJECTS.slice(),levels:LEVELS.slice(),abilities:ABILITIES.slice(),criteria:SUBJECT_CRITERIA,build:build,download:download,renderControls:renderControls});
 })(window,document);
