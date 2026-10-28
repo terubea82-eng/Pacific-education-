@@ -1,0 +1,167 @@
+/* PacEdu — two-resource teacher subject/class workspace.
+ * Keeps teacher instructions and ability worksheets together after subject -> class selection.
+ * Learner evidence is used only when an explicit reviewed mark exists for the same roster learner.
+ * Camera photos remain pending until reviewed; no AI-marking claim is made.
+ */
+(function (window, document) {
+  "use strict";
+  var PANEL_ID = "paceduTeacherTwoResourcePanel";
+  var RESPONSE_KEY = "pacificEducationActivityResponses";
+  var BANDS = [
+    { id: "support", label: "Supported start" },
+    { id: "developing", label: "Developing" },
+    { id: "expected", label: "Working at class goal" },
+    { id: "extension", label: "Extension / deeper challenge" }
+  ];
+  function node(tag, value) {
+    var el = document.createElement(tag);
+    if (value != null) el.textContent = value;
+    return el;
+  }
+  function readResponses() {
+    try {
+      var value = JSON.parse(window.localStorage.getItem(RESPONSE_KEY) || "[]");
+      return Array.isArray(value) ? value : [];
+    } catch (_) { return []; }
+  }
+  function priorReviewedEvidence(studentRef, classId, subject) {
+    var rows = readResponses();
+    var valid = rows.filter(function (r) {
+      var status = String(r.reviewStatus || r.markingStatus || "").toLowerCase();
+      var reviewed = ["teacher-reviewed", "reviewed", "teacher-approved", "marked"].indexOf(status) >= 0 ||
+        r.teacherReviewed === true || r.teacherApproved === true;
+      var rawMark = r.markPercent != null ? r.markPercent : r.scorePercent != null ? r.scorePercent :
+        r.mark != null ? r.mark : r.score != null ? r.score : null;
+      var hasMark = rawMark !== null && rawMark !== "" && Number.isFinite(Number(rawMark));
+      return reviewed && hasMark &&
+        String(r.studentReference || r.studentRef || "") === String(studentRef) &&
+        String(r.classId || "") === String(classId) &&
+        String(r.subject || r.subjectId || "").toLowerCase() === String(subject || "").toLowerCase();
+    });
+    if (!valid.length) return null;
+    valid.sort(function (a, b) {
+      return Number(b.day || b.dayNumber || 0) - Number(a.day || a.dayNumber || 0);
+    });
+    return valid[0];
+  }
+  function bandFor(mark) {
+    var n = Number(mark);
+    if (!Number.isFinite(n)) return null;
+    if (n < 40) return "support";
+    if (n < 60) return "developing";
+    if (n < 80) return "expected";
+    return "extension";
+  }
+  function render() {
+    var list = document.getElementById("paceduTeacherClassList");
+    var planPanel = document.getElementById("pacificEducationLinkedTeacherPlans");
+    if (!list || !planPanel || document.getElementById(PANEL_ID)) return;
+    var selectedClass = list.querySelector('[data-pacedu-teacher-class][aria-pressed="true"]');
+    if (!selectedClass) return;
+    var subjectButton = document.querySelector('[data-pacedu-teacher-subject][aria-pressed="true"]');
+    var subject = subjectButton ? subjectButton.getAttribute("data-pacedu-teacher-subject") : "English";
+    var classId = selectedClass.getAttribute("data-pacedu-teacher-class") || "";
+    var roster = window.PacificEducationTeacherClassRosterContext;
+    var classInfo = null;
+    try { classInfo = roster && classId && roster.getClass ? roster.getClass(classId) : null; } catch (_) {}
+    var panel = node("section");
+    panel.id = PANEL_ID;
+    panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
+    panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
+    panel.appendChild(node("h3", subject + " — " + selectedClass.textContent.trim()));
+    panel.appendChild(node("p", "Only two resource types are provided here. Use a learner's latest reviewed evidence when available; missing or pending work does not mean low ability."));
+    var instructions = node("section");
+    instructions.setAttribute("aria-label", "Resource type 1: teacher instructions");
+    instructions.appendChild(node("h4", "1. Teacher Instructions — Read or Print"));
+    instructions.appendChild(node("p", "Daily teaching instructions, lesson/workplan, activity examples, achievement-indicator reference, assessment check and access adjustments. Official indicator alignment must be verified before teaching."));
+    var load = node("button", "Load today's teacher instructions");
+    load.type = "button";
+    load.addEventListener("click", function () {
+      var loadButton = Array.prototype.find.call(planPanel.querySelectorAll("button"), function (b) {
+        return /load matching plans/i.test(b.textContent || "");
+      });
+      if (loadButton) loadButton.click();
+      var status = document.getElementById("paceduLinkedPlanStatus");
+      if (status) status.textContent = "Teacher instructions loaded. Check the achievement-indicator verification status before teaching.";
+    });
+    instructions.appendChild(load);
+    var print = node("button", "Print teacher instructions / Save as PDF");
+    print.type = "button";
+    print.style.cssText = "display:block;margin-top:8px;min-height:44px;padding:10px;";
+    print.addEventListener("click", function () {
+      var existing = Array.prototype.find.call(planPanel.querySelectorAll("button"), function (b) {
+        return /print \/ save as pdf/i.test(b.textContent || "");
+      });
+      if (existing && !existing.disabled) existing.click();
+      else {
+        var loadButton = Array.prototype.find.call(planPanel.querySelectorAll("button"), function (b) {
+          return /load matching plans/i.test(b.textContent || "");
+        });
+        if (loadButton) loadButton.click();
+        var status = document.getElementById("paceduLinkedPlanStatus");
+        if (status) status.textContent = "Load matching plans first, then print the teacher instructions.";
+      }
+    });
+    instructions.appendChild(print);
+    panel.appendChild(instructions);
+    var worksheets = node("section");
+    worksheets.setAttribute("aria-label", "Resource type 2: student ability worksheets");
+    worksheets.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
+    worksheets.appendChild(node("h4", "2. Student Ability Worksheets — Download Separately"));
+    worksheets.appendChild(node("p", "Choose the class, subject, term and one ability group to download its printable worksheet pack. Class-wide files never include learner IDs."));
+    var evidence = node("div");
+    evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
+    var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
+    if (!students.length) {
+      evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
+    } else {
+      var rosterList = node("ul");
+      students.forEach(function (ref) {
+        var row = node("li");
+        var mark = priorReviewedEvidence(ref, classId, subject);
+        var rawMark = mark && (mark.markPercent != null ? mark.markPercent : mark.scorePercent != null ? mark.scorePercent : mark.mark != null ? mark.mark : mark.score);
+        var band = mark ? BANDS.filter(function (b) { return b.id === bandFor(rawMark); })[0] : null;
+        row.textContent = String(ref) + " — " + (mark ?
+          "Reviewed mark found (Day " + String(mark.day || mark.dayNumber || "?") + "); provisional worksheet recommendation: " + (band ? band.label : "manual review required") :
+          "No reviewed mark found for this subject; ability group remains unconfirmed.");
+        rosterList.appendChild(row);
+      });
+      evidence.appendChild(rosterList);
+    }
+    worksheets.appendChild(evidence);
+    var api = window.PacEduDownloadableClassPacks;
+    if (api && typeof api.renderControls === "function") {
+      var holder = node("div");
+      api.renderControls(holder, { level: String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim()), subject: subject, term: "T1", capability: "support" });
+      var draftLinks = holder.querySelectorAll('[aria-label="Differentiated worksheet draft"]');
+      Array.prototype.forEach.call(draftLinks, function (x) { x.hidden = true; });
+      var packPanel = holder.firstElementChild;
+      if (packPanel) {
+        var title = packPanel.querySelector("h4");
+        if (title) title.textContent = "Download selected class and ability worksheets";
+        var note = packPanel.querySelector("p");
+        if (note) note.textContent = "Choose the class, subject, term and one of the four ability groups, then download the printable HTML worksheet pack. Preparation date is automatic.";
+        worksheets.appendChild(holder);
+      } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
+    } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
+    panel.appendChild(worksheets);
+    planPanel.appendChild(panel);
+  }
+  function reset() {
+    var old = document.getElementById(PANEL_ID);
+    if (old && old.parentNode) old.parentNode.removeChild(old);
+  }
+  document.addEventListener("click", function (event) {
+    var classButton = event.target && event.target.closest ? event.target.closest("[data-pacedu-teacher-class]") : null;
+    var subjectButton = event.target && event.target.closest ? event.target.closest("[data-pacedu-teacher-subject]") : null;
+    if (classButton || subjectButton) {
+      reset();
+      window.setTimeout(render, 0);
+    }
+  });
+  window.PacEduTeacherTwoResourceWorkspace = Object.freeze({
+    render: render,
+    priorReviewedEvidence: priorReviewedEvidence,
+    recommendedBand: bandFor
+  });
+})(window, document);
