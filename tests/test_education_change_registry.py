@@ -2,6 +2,7 @@ import json
 import subprocess
 import sys
 import tempfile
+import shutil
 import unittest
 from pathlib import Path
 from urllib.parse import urlparse
@@ -16,7 +17,7 @@ class EducationChangeRegistryTests(unittest.TestCase):
         self.assertEqual(data["defaultCountry"], "FJ")
         profile = data["curriculumProfiles"][0]
         self.assertEqual(profile["framework"]["version"], "2013")
-        self.assertIn("takes-effect", profile["framework"]["status"])
+        self.assertIn("replacement-is-formally-in-force", profile["framework"]["status"])
         self.assertGreaterEqual(len(profile["sources"]), 5)
         for source in profile["sources"]:
             self.assertEqual(urlparse(source["url"]).scheme, "https")
@@ -110,9 +111,26 @@ class EducationChangeRegistryTests(unittest.TestCase):
         index = (ROOT / "src" / "index.html").read_text(encoding="utf-8")
         self.assertIn("pacificEducationCurriculumAutoSwitch.js", index)
 
-    def test_monitor_script_compiles(self):
-        result = subprocess.run([sys.executable, "-m", "py_compile", str(MONITOR)], capture_output=True, text=True)
+    def test_automation_scripts_compile(self):
+        scripts = [
+            MONITOR,
+            ROOT / "automation" / "curriculum_pack_generator.py",
+            ROOT / "automation" / "curriculum_release_activation.py"
+        ]
+        for script in scripts:
+            result = subprocess.run([sys.executable, "-m", "py_compile", str(script)], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, str(script) + ": " + result.stderr)
+        if shutil.which("node"):
+            runtime = ROOT / "src" / "js" / "pacificEducationCurriculumAutoSwitch.js"
+            result = subprocess.run(["node", "--check", str(runtime)], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_activation_without_release_records_does_not_change_baseline(self):
+        script = ROOT / "automation" / "curriculum_release_activation.py"
+        result = subprocess.run([sys.executable, str(script), "--check-only"], capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
+        data = json.loads(result.stdout)
+        self.assertFalse(data["changed"])
 
 if __name__ == "__main__":
     unittest.main()
