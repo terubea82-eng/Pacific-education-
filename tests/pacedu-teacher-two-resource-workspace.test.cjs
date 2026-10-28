@@ -2,9 +2,17 @@ const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
 
-test("teacher subject/class workspace offers only two resource types and safely checks reviewed evidence", async ({ page }) => {
+async function openIsolatedFixture(page) {
+  await page.route("**/src/index.html*", route => route.fulfill({
+    status: 200,
+    contentType: "text/html; charset=utf-8",
+    body: "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"></head><body></body></html>"
+  }));
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
-  await page.setContent("<!doctype html><html><head><meta charset=\"utf-8\"></head><body></body></html>");
+}
+
+test("teacher subject/class workspace offers only two resource types and safely checks reviewed evidence", async ({ page }) => {
+  await openIsolatedFixture(page);
   await page.evaluate(() => {
     document.body.className = ""; document.body.removeAttribute("data-pe-flow-step"); document.documentElement.removeAttribute("data-pacedu-entry-advanced");
     document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="English" aria-pressed="true">English</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="class-a" aria-pressed="true">Class 1</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><button>Print / Save as PDF</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
@@ -44,8 +52,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
 });
 
 test("all four ability packs remain available when no reviewed evidence exists", async ({ page }) => {
-  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
-  await page.setContent("<!doctype html><html><head><meta charset=\"utf-8\"></head><body></body></html>");
+  await openIsolatedFixture(page);
   await page.evaluate(() => {
     document.body.className = ""; document.body.removeAttribute("data-pe-flow-step"); document.documentElement.removeAttribute("data-pacedu-entry-advanced");
     document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="Science" aria-pressed="true">Science</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="class-b" aria-pressed="true">Form 4</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><button>Print / Save as PDF</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
