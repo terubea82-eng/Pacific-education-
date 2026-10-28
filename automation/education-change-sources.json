@@ -56,11 +56,12 @@
         {
           "id": "fiji-government",
           "publisher": "Fiji Government",
-          "url": "https://www.fiji.gov.fj/",
+          "url": "https://www.fiji.gov.fj/cabinet-releases/",
           "topics": [
             "government-policy",
             "national-development",
-            "education"
+            "education",
+            "curriculum-framework-commencement"
           ],
           "authority": "official-government",
           "priority": 1
@@ -71,7 +72,9 @@
           "url": "https://www.parliament.gov.fj/",
           "topics": [
             "legislation",
-            "parliamentary-process"
+            "parliamentary-process",
+            "curriculum-review",
+            "framework-commencement"
           ],
           "authority": "official-government",
           "priority": 1
