@@ -167,6 +167,8 @@ def main():
         print(json.dumps({"status": "error", "error": str(error)}))
         return 2
     print(json.dumps(result, ensure_ascii=False))
+    if result.get("rejected"):
+        return 2
     return 0
 
 
