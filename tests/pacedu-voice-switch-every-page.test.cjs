@@ -35,3 +35,22 @@ test("voice-switch runtime loads after existing page voice repair", () => {
   assert.ok(repairAt >= 0, "existing voice repair script missing");
   assert.ok(switchAt > repairAt, "voice switch must load after existing voice scripts");
 });
+
+const commands = fs.readFileSync("src/js/pacificEducationVoiceNextDirective.js", "utf8");
+
+test("global voice commands support Back, Repeat, and Stop alongside Next", () => {
+  assert.match(commands, /function commandBack\(\)/);
+  assert.match(commands, /function commandRepeat\(\)/);
+  assert.match(commands, /function commandStopSpeech\(\)/);
+  assert.match(commands, /\^\(back\|go back\|previous\|previous page\|back page\)\$/);
+  assert.match(commands, /\^\(repeat\|repeat instructions\|repeat page\|read instructions again\)\$/);
+  assert.match(commands, /\^\(stop\|stop speaking\|stop speech\|mute speech\)\$/);
+  assert.match(commands, /function startGlobal\(\)/);
+});
+
+test("voice commands route Back through existing back controls and Repeat through current page voice", () => {
+  assert.match(commands, /querySelectorAll\("\[data-pe-back-button\],button,a,\[role='button'\]"\)/);
+  assert.match(commands, /PacificEducationMandatoryVoiceNavigation\.announceCurrentStep\(\)/);
+  assert.match(commands, /data-pe-every-page-voice-button/);
+  assert.match(commands, /PacEduVoiceSwitch\.stop\(\)/);
+});
