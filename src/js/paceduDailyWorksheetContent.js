@@ -240,18 +240,6 @@
   function make(level, subject, day, ability) {
     level=levels.indexOf(level)>=0?level:"Class 1";
     var pack=(packs[subject]||packs.English);
-    if (subject === "Chemistry" || subject === "Physics" || subject === "Biology") {
-      /* Until subject-specific packs are authored and reviewed, do not silently reuse
-         general English questions as Science content. Return a transparent draft shell. */
-      return {
-        status:"DRAFT_NEEDS_SUBJECT_CONTENT",
-        level:level, subject:subject, day:day, ability:ability,
-        topic:subject+" — subject-specific worksheet required",
-        instructions:"This is a subject allocation placeholder, not a completed worksheet. Add Form-specific questions, worked examples, answers and verified syllabus indicators before student release.",
-        questions:[], examples:[], answerKey:[],
-        curriculumVerified:false
-      };
-    }
     var index=Math.max(0,(Math.floor((Number(day)||2)-2))%pack.length);
     var chosen=pack[index];
     var st=stage(level), questions=chosen.questions.map(function(q,i){
