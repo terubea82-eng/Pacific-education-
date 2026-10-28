@@ -152,6 +152,20 @@
   var levels = ["ECE"];
   for (var c=1;c<=8;c+=1) levels.push("Class "+c);
   for (var f=3;f<=7;f+=1) levels.push("Form "+f);
+  /* High-school Science is split into distinct Chemistry, Physics and Biology subjects.
+     Keep general Science for ECE and primary classes. */
+  var SCIENCE_SUBJECT_LEVELS = {
+    "Chemistry": ["Form 3","Form 4","Form 5","Form 6","Form 7"],
+    "Physics": ["Form 3","Form 4","Form 5","Form 6","Form 7"],
+    "Biology": ["Form 3","Form 4","Form 5","Form 6","Form 7"]
+  };
+  function subjectsForLevel(level) {
+    var isForm = /^Form /.test(String(level));
+    return Object.keys(packs).filter(function(subject) {
+      return !isForm ? subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology"
+        : subject !== "Science";
+    });
+  }
   function stage(level) {
     if(level==="ECE") return "early";
     var m=String(level).match(/[0-9]+/), n=m?Number(m[0]):1;
@@ -161,6 +175,18 @@
   function make(level, subject, day, ability) {
     level=levels.indexOf(level)>=0?level:"Class 1";
     var pack=(packs[subject]||packs.English);
+    if (subject === "Chemistry" || subject === "Physics" || subject === "Biology") {
+      /* Until subject-specific packs are authored and reviewed, do not silently reuse
+         general English questions as Science content. Return a transparent draft shell. */
+      return {
+        status:"DRAFT_NEEDS_SUBJECT_CONTENT",
+        level:level, subject:subject, day:day, ability:ability,
+        topic:subject+" — subject-specific worksheet required",
+        instructions:"This is a subject allocation placeholder, not a completed worksheet. Add Form-specific questions, worked examples, answers and verified syllabus indicators before student release.",
+        questions:[], examples:[], answerKey:[],
+        curriculumVerified:false
+      };
+    }
     var index=Math.max(0,(Math.floor((Number(day)||2)-2))%pack.length);
     var chosen=pack[index];
     var st=stage(level), questions=chosen.questions.map(function(q,i){
@@ -629,7 +655,9 @@
   }
   global.PacEduDailyWorksheetContent=Object.freeze({
     levels:levels.slice(),
-    subjects:Object.keys(packs),
+    subjects:Object.keys(packs).concat(["Chemistry","Physics","Biology"]),
+    getSubjectsForLevel:subjectsForLevel,
+    scienceSubjectsForForms:["Chemistry","Physics","Biology"],
     getWorksheet:make,
     getCurriculumWorksheet:getCurriculumWorksheet,
     getAllAbilityWorksheets:function(level,subject,day){
