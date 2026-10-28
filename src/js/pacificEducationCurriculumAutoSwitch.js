@@ -212,7 +212,7 @@
   document.addEventListener("visibilitychange", function () { if (!document.hidden) load("page-visible"); });
   if (window.MutationObserver && document.body) {
     var statusObserver = new MutationObserver(function () {
-      if (window.PacEduActiveCurriculum) renderFrameworkStatus(window.PacEduActiveCurriculum);
+      if (window.PacEduActiveCurriculum && !document.getElementById("paceduActiveCurriculumStatus")) renderFrameworkStatus(window.PacEduActiveCurriculum);
     });
     statusObserver.observe(document.body, { childList: true, subtree: true });
   }
