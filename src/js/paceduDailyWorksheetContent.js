@@ -147,17 +147,80 @@
         ["What if a translation is uncertain?","Verify it before teaching or marking",["Guess and call it official","Hide the uncertainty","Mark all answers wrong"],0,"Verification prevents teaching incorrect language."],
         ["What belongs in the teacher key?","Verified meaning and acceptable alternatives",["Unverified guesses","Learner passwords","No marking guidance"],0,"The key needs verified answers."]
       ]}
+    ],
+    "Science": [
+      {topic:"Scientific skills and safety", passage:"A class investigates which materials absorb water. The learners predict, test equal-sized pieces safely, observe what happens, and record results. They change one factor at a time and do not taste or touch unknown substances.", questions:[
+        ["What should learners do before testing?","Make a prediction",["Change every factor", "Taste the materials", "Hide the results"],0,"A prediction states what may happen."],
+        ["Why use equal-sized pieces?","To make the comparison fair",["To change the weather", "To avoid recording", "To guarantee one result"],0,"Keeping sizes equal helps control the test."],
+        ["What is an observation?","What the learner notices or measures",["A guess only", "A rule copied without testing", "A secret"],0,"Observations are recorded evidence."],
+        ["What should learners do with an unknown substance?","Do not touch or taste it; tell the teacher",["Taste it", "Smell it closely", "Take it home"],0,"Unknown substances must be handled safely."]
+      ]},
+      {topic:"Living things and their environment", passage:"A school garden contains plants, insects, soil, water and sunlight. Plants need suitable conditions to grow. Living things interact with one another and with non-living parts of the environment.", questions:[
+        ["Which item is living?","A plant",["A stone", "Sunlight", "Water"],0,"Plants grow and carry out life processes."],
+        ["Name one non-living part of the garden.","Soil",["An insect", "A plant", "A worm"],0,"Soil is non-living but supports life."],
+        ["Why should observations be recorded?","To keep evidence for comparison",["To replace evidence with guesses", "To hide changes", "To stop learning"],0,"Records help compare what was observed."],
+        ["Give one way to care for the garden.","Avoid damaging plants and use water carefully",["Pull up all plants", "Leave rubbish", "Waste water"],0,"Care protects the shared environment."]
+      ]},
+      {topic:"Materials, forces and energy", passage:"A student pushes a toy trolley across a smooth floor and a rough mat. The trolley travels differently because the surfaces create different amounts of friction. The student repeats the test and records the distance.", questions:[
+        ["What is a force?","A push or a pull",["A colour", "A living thing", "A type of food"],0,"Forces can change motion or shape."],
+        ["What is friction?","A force that resists movement between surfaces",["A kind of plant", "A light source", "A measurement of time"],0,"Friction acts between surfaces in contact."],
+        ["Why repeat the test?","To check whether the result is consistent",["To avoid measurements", "To change the question", "To guarantee a preferred answer"],0,"Repeated trials help check reliability."],
+        ["What should be recorded?","The distance travelled and the surface used",["Only a favourite answer", "Nothing", "A made-up number"],0,"A record should include relevant evidence."]
+      ]}
+    ],
+    "Chemistry": [
+      {topic:"Form 5–7 Chemistry: particles and substances", passage:"Matter has mass and occupies space. A pure substance has characteristic properties. In a mixture, substances are physically combined and may often be separated by physical methods such as filtration or evaporation.", questions:[
+        ["What is matter?","Something that has mass and occupies space",["Only a gas", "Only living things", "Anything without mass"],0,"Matter has mass and occupies space."],
+        ["Which method can separate sand from water?","Filtration",["Magnetising water", "Freezing the sand only", "Adding more sand"],0,"A filter traps insoluble sand while water passes through."],
+        ["Is salt water a pure substance or a mixture?","A mixture",["A single element", "A vacuum", "A single atom"],0,"Salt and water are physically combined."],
+        ["What should be done before a school chemistry practical?","Follow teacher instructions and safety rules",["Taste chemicals", "Mix unknown chemicals", "Work without supervision"],0,"Laboratory safety comes first."]
+      ]},
+      {topic:"Form 5–7 Chemistry: atoms and the periodic table", passage:"An element contains one type of atom. The periodic table arranges elements by atomic number. Chemical symbols are short forms of element names, for example O for oxygen and Na for sodium.", questions:[
+        ["What does an element contain?","One type of atom",["Many unrelated mixtures", "Only water", "No particles"],0,"An element is made of one type of atom."],
+        ["What does O represent?","Oxygen",["Gold", "Sodium", "Iron"],0,"O is the chemical symbol for oxygen."],
+        ["What determines an element's atomic number?","The number of protons",["The number of cups", "Its colour", "The room temperature"],0,"Atomic number equals proton number."],
+        ["Why use chemical symbols?","They provide a standard short form for elements",["They replace all safety rules", "They show a substance is safe to taste", "They change an element"],0,"Symbols are internationally used shorthand."]
+      ]}
+    ],
+    "Biology": [
+      {topic:"Form 5–7 Biology: cells and life processes", passage:"Cells are the basic structural units of living organisms. Many plant cells have a cell wall, cell membrane, cytoplasm and nucleus. Cells carry out processes needed for life.", questions:[
+        ["What is the basic unit of life?","The cell",["The habitat", "The population only", "The ecosystem"],0,"Cells are the basic units of living organisms."],
+        ["Which structure surrounds a plant cell and provides support?","Cell wall",["Chlorophyll only", "Blood vessel", "Bone"],0,"The cell wall supports and protects plant cells."],
+        ["What is one role of the cell membrane?","Controls movement of substances into and out of the cell",["Makes all food by itself", "Stores all bones", "Stops every substance"],0,"The membrane regulates exchange."],
+        ["Why use a microscope?","To view structures too small to see clearly unaided",["To measure rainfall only", "To weigh a person", "To heat samples"],0,"Microscopes magnify small structures."]
+      ]},
+      {topic:"Form 5–7 Biology: ecosystems and food relationships", passage:"Green plants make food using light energy. Animals obtain energy by eating plants or other animals. Organisms interact with each other and with non-living factors in an ecosystem.", questions:[
+        ["What is a producer in a food chain?","An organism such as a green plant that makes its own food",["An animal that hunts", "A rock", "A decomposing plastic bag"],0,"Green plants are producers."],
+        ["What is a food chain used to show?","How energy passes between organisms",["The distance between islands", "Only water temperature", "A list of school rules"],0,"Food chains show feeding and energy relationships."],
+        ["Name one non-living ecosystem factor.","Water",["A bird", "A tree", "An insect"],0,"Water is non-living and affects organisms."],
+        ["What can happen if a habitat is damaged?","Organisms may lose food or shelter",["Every organism improves automatically", "Nothing can change", "All pollution disappears"],0,"Habitat damage can affect survival."]
+      ]}
+    ],
+    "Physics": [
+      {topic:"Form 5–7 Physics: measurement and motion", passage:"Physics uses measurements and models to describe the natural world. Speed is calculated by dividing distance travelled by time taken. Measurements should include suitable units.", questions:[
+        ["How is average speed calculated?","Distance divided by time",["Time divided by mass", "Distance multiplied by colour", "Mass plus time"],0,"Speed = distance ÷ time."],
+        ["A learner travels 100 metres in 20 seconds. What is the average speed?","5 m/s",["2 m/s", "20 m/s", "120 m/s"],0,"100 ÷ 20 = 5 metres per second."],
+        ["Which is a unit of distance?","Metre",["Second", "Kilogram per second", "Degree Celsius only"],0,"The metre measures length."],
+        ["Why repeat a measurement?","To check reliability and reduce the effect of random error",["To remove all units", "To change the answer", "To avoid recording"],0,"Repeated measurements can reveal variation."]
+      ]},
+      {topic:"Form 5–7 Physics: forces and energy", passage:"A force is a push or pull. A resultant force can change an object's motion. Energy can be transferred between stores and transformed from one form to another.", questions:[
+        ["What can an unbalanced resultant force do?","Change an object's motion",["Make mass disappear", "Turn a solid into a name", "Stop gravity everywhere"],0,"A resultant force can change velocity."],
+        ["Which is an example of energy transfer?","Electrical energy heating a kettle",["A label changing colour only", "A number being written", "A ruler lying still"],0,"Electrical energy is transferred into thermal energy."],
+        ["What is the SI unit of force?","Newton",["Metre", "Second", "Litre"],0,"Force is measured in newtons."],
+        ["Why should practical measurements be recorded with units?","So the quantities are clear and comparable",["To make results secret", "To remove the measurement", "To guess the answer"],0,"Units state what a measurement means."]
+      ]}
     ]
   };
   var levels = ["ECE"];
   for (var c=1;c<=8;c+=1) levels.push("Class "+c);
   for (var f=3;f<=7;f+=1) levels.push("Form "+f);
-  /* High-school Science is split into distinct Chemistry, Physics and Biology subjects.
-     Keep general Science for ECE and primary classes. */
+  /* Fiji subject progression: Basic Science through Form 4 (Years 9–10);
+     separate Chemistry, Biology and Physics for Forms 5–7 (Years 11–13). */
   var SCIENCE_SUBJECT_LEVELS = {
-    "Chemistry": ["Form 3","Form 4","Form 5","Form 6","Form 7"],
-    "Physics": ["Form 3","Form 4","Form 5","Form 6","Form 7"],
-    "Biology": ["Form 3","Form 4","Form 5","Form 6","Form 7"]
+    "Science": ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4"],
+    "Chemistry": ["Form 5","Form 6","Form 7"],
+    "Physics": ["Form 5","Form 6","Form 7"],
+    "Biology": ["Form 5","Form 6","Form 7"]
   };
   function subjectsForLevel(level) {
     var match = String(level).match(/^Form (\\d+)$/);
