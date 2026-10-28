@@ -191,3 +191,40 @@ Each issue or student project should record:
 - teacher/editor review, last-updated date and version history.
 
 PacEdu may automatically discover and classify candidate issues and draft age-appropriate learning activities. It must not claim a national problem has been solved, that an intervention caused a change, or that a proposal is official policy without suitable evidence and verification. National-level impact claims require stronger evidence than a single classroom project.
+
+
+## Mandatory curriculum-outcome alignment for every learning item
+
+**No PacEdu worksheet, daily activity, project, practical task, revision question, mock examination or examination item may be labelled curriculum-aligned unless it is linked to a verified learning outcome, achievement indicator, concept or skill in the applicable country, curriculum version, class/year/form and subject.**
+
+Each learning item must store:
+- country and jurisdiction, school year/class/form, subject and applicable curriculum framework/version;
+- official syllabus or curriculum source URL and source document/version/date;
+- exact outcome/achievement-indicator identifier and exact wording when available, with page/section reference where possible;
+- the concept/skill being taught and the intended student learning objective;
+- the activity steps and explanation of how they teach or practise that outcome;
+- assessment question or performance task, answer guidance/rubric and explicit success criteria;
+- accommodations and versions for Supported Start, Developing, Working at Class Goal and Extension, all targeting the same core outcome unless the curriculum explicitly specifies progression;
+- evidence to collect, review status, reviewer, last-verified date and change history.
+
+### Alignment validation and fail-safe behaviour
+
+1. Verify the curriculum and syllabus for the selected country, school level, subject and applicable effective date using an authoritative source.
+2. Match the activity to the exact outcome/indicator. A broad topic match alone is not sufficient.
+3. Confirm the activity actually teaches the outcome and the assessment measures it. For example, an activity that asks students only to memorise a definition must not claim to assess analysis, investigation or problem-solving.
+4. Confirm age/grade suitability, prerequisite knowledge, progression, accessibility, safety and local relevance.
+5. When the official outcome cannot be verified, label the item outcome-mapping-pending and do not label it officially curriculum-aligned or use it to claim mastery of that outcome. It may be offered only as a clearly labelled supplemental/current-affairs exploration with teacher review, without displacing required curriculum learning.
+6. Do not invent indicator numbers, quote unofficial wording as official, or reuse one country's indicator as if it belonged to another country's curriculum.
+7. Where an activity legitimately integrates several subjects, record the primary outcome and each additional verified outcome separately. Do not add subject tags without an educationally meaningful link.
+8. Recheck mappings when a syllabus changes. Preserve historical activity and assessment records against the curriculum version that applied when assigned; migrate future activities only after mapping and required review.
+9. Require tests to detect missing mappings, invalid curriculum versions, mismatched class/subject, missing assessment criteria and unverified official claims. Block release of a formal curriculum-aligned pack when required mappings are missing.
+
+### Distinguish curriculum learning from real-world enrichment
+
+A real-world issue such as high vegetable prices can be used across subjects, but each activity must have its own outcome link. A Mathematics activity might assess calculations or data interpretation; an English task might assess reading, speaking or persuasive writing; a Science investigation might assess plant needs or experimental observation; Social Studies might assess community needs or resource use. These are examples of possible connections, not claims about exact Fiji indicators. Verify the applicable syllabus before assigning official outcome codes.
+
+The national-problem-solving programme must therefore enrich and contextualise the curriculum—not replace it with unrelated activities. If a real-world problem does not directly fit an available outcome, label it as an enrichment activity or wait for educator mapping; do not force a false curriculum match.
+
+### Publication gate
+
+The release gate for any formal daily plan, worksheet pack or assessment is: **verified curriculum source + exact outcome/indicator + meaningful activity alignment + matching assessment criteria + class/subject validation + safety/accessibility review**. If any required check fails, keep the item in draft/review status and show the reason. This is a product requirement; it must not be described as enforced by the live app until implemented and tested.
