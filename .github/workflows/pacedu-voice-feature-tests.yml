@@ -1,0 +1,26 @@
+name: PacEdu Voice Feature Regression Tests
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/js/paceduVoiceSwitchEveryPage.js"
+      - "src/js/pacificEducationVoiceNextDirective.js"
+      - "src/js/pacificEducationEveryPageVoiceRepair.js"
+      - "src/js/paceduDailyWorksheetContent.js"
+      - "src/js/pacificEducationMandatoryVoiceNavigation.js"
+      - "src/index.html"
+      - "tests/pacedu-voice-switch-every-page.test.cjs"
+      - "package.json"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  voice-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run PacEdu voice regression tests
+        run: node --test tests/pacedu-voice-switch-every-page.test.cjs tests/pacedu-every-page-voice-regression.test.cjs tests/universal-button-voice-regression.test.js tests/speech-engine-runtime.test.js tests/controller-navigation-wiring.test.js
