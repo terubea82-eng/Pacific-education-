@@ -709,6 +709,23 @@
           }
           node("p", "Answer: __________________________________________________________", item);
         });
+      } else if (studentSheet.questions && studentSheet.questions.length) {
+        node("h3", "Examples first — then try", sheet);
+        var curriculumExamples = node("ol", null, sheet);
+        studentSheet.questions.forEach(function (question, exampleIndex) {
+          var example = studentSheet.examples && studentSheet.examples[exampleIndex];
+          var row = node("li", null, curriculumExamples);
+          node("p", "Example: " + (example ? example.prompt : question.prompt), row);
+          node("p", "Model: " + (example ? example.workedAnswer : "Ask your teacher to model one example."), row);
+          if (example && example.explanation) node("p", example.explanation, row);
+          node("p", "You may use words, a picture or object, or ask for the text to be read aloud. A short video may be used when available; written instructions remain available.", row);
+        });
+        node("h3", "Now answer", sheet);
+        var curriculumQuestions = node("ol", null, sheet);
+        studentSheet.questions.forEach(function (question) {
+          var item = node("li", question.prompt, curriculumQuestions);
+          node("p", "Your answer: ______________________________________________", item);
+        });
       } else if (studentSheet.questionPlan && studentSheet.questionPlan.questions) {
         node("h3", "Daily questions (" + studentSheet.questionPlan.count + ")", sheet);
         node("p", "Question types: " + studentSheet.questionPlan.types.join(", ").replace(/-/g, " "), sheet);
