@@ -224,6 +224,7 @@
         record.skills[storageKey] = {
             skillId: skill.skillId,
             classId,
+            name: skill.name || skill.skillId,
             category: skill.category || "learning_skills",
             subject: skill.subject || null,
             status:
@@ -246,7 +247,7 @@
             action: "SKILL_UPDATED",
             skillId: skill.skillId,
             previousStatus: previous ? previous.status : null,
-            newStatus: record.skills[skill.skillId].status,
+            newStatus: record.skills[storageKey].status,
             timestamp: now()
         });
 
@@ -254,7 +255,7 @@
         data[studentId] = record;
         safeWrite(data);
 
-        return record.skills[skill.skillId];
+        return record.skills[storageKey];
     }
 
     function getSkill(studentId, skillId) {
