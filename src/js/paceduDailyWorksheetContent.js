@@ -212,6 +212,12 @@
       instructions:"Original PacEdu practice worksheet. Complete the questions, show working where needed, and ask the teacher to explain unfamiliar words. This is practice, not an official examination.",
       tasks:tasks,
       examples:examples,
+      abilityGroupRules:{
+        support:"Use objects, picture cues, read-aloud and teacher modelling; complete fewer steps at a time.",
+        developing:"Use a worked example, word bank or number line, then try a similar item independently.",
+        expected:"Complete the class-level task independently and explain or check the answer.",
+        extension:"Solve a harder or changed problem and explain why the method works."
+      },
       exampleRequiredBeforeEachQuestion:true,
       exampleFormats:["text", "picture-or-object", "audio-read-aloud", "short-video-when-needed"],
       questions:questions,
