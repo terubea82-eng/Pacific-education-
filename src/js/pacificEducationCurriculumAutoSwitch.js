@@ -204,8 +204,19 @@
     chooseCountry: chooseCountry,
     getActive: function () { return window.PacEduActiveCurriculum || null; }
   });
+  window.PacEduActiveCurriculum = { countryCode: readCountry(), frameworkVersion: null, mappingStatus: "loading", status: "loading" };
+  installWorksheetGuard();
   bindCountrySelectors();
   load("startup");
   window.addEventListener("focus", function () { load("window-focus"); });
   document.addEventListener("visibilitychange", function () { if (!document.hidden) load("page-visible"); });
+  if (window.MutationObserver && document.body) {
+    var statusObserver = new MutationObserver(function () {
+      if (window.PacEduActiveCurriculum) renderFrameworkStatus(window.PacEduActiveCurriculum);
+    });
+    statusObserver.observe(document.body, { childList: true, subtree: true });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.PacEduActiveCurriculum) renderFrameworkStatus(window.PacEduActiveCurriculum);
+  });
 })(window, document);
