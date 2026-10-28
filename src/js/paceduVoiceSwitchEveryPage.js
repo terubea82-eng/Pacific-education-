@@ -73,7 +73,7 @@
     return !!(body && body.classList.contains("pe-guided-flow") && body.getAttribute("data-pe-active-guided-page"));
   }
   function announceVisibleWorkspace(){
-    if(activeGuidedPage()) return;
+    if(activeGuidedPage()){ announceVisibleWorkspace.lastKey=""; return; }
     for(var i=0;i<workspaces.length;i++){
       var item=workspaces[i],el=document.getElementById(item[0]);
       if(el&&visible(el)){
