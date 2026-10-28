@@ -1,0 +1,25 @@
+name: Pacedu Device Evidence Validator Tests
+
+on:
+  push:
+    paths:
+      - "tests/device-bridge/**"
+      - ".github/workflows/pacedu-device-evidence-tests.yml"
+  pull_request:
+    paths:
+      - "tests/device-bridge/**"
+      - ".github/workflows/pacedu-device-evidence-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-validator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fail-closed evidence tests
+        run: python3 -m unittest discover -s tests/device-bridge -p "test_*.py" -v
+      - name: Compile validator
+        run: python3 -m py_compile tests/device-bridge/verify_device_evidence.py
