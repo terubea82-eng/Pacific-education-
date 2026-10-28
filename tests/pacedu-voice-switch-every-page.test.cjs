@@ -93,3 +93,16 @@ test("weekly curriculum activities include examples and teacher instructions", (
   assert.match(renderer, /Examples first — then try/);
   assert.match(renderer, /Now answer/);
 });
+
+
+test("daily worksheets scaffold thinking from worked example to independent and higher-order application", () => {
+  const daily = fs.readFileSync("src/js/paceduDailyWorksheetContent.js", "utf8");
+  assert.match(daily, /progressionByStage =/);
+  assert.match(daily, /abilityChallenge =/);
+  assert.match(daily, /questionLimit = ability === "support" \? 2/);
+  assert.match(daily, /ability === "developing" \? Math\.min\(3, questions\.length\)/);
+  assert.match(daily, /stretchPrompt = ability === "extension"/);
+  assert.match(daily, /thinkingDevelopment:/);
+  assert.match(daily, /Transfer the learning to a new situation/);
+  assert.match(daily, /Keep worksheet task instructions accurate/);
+});
