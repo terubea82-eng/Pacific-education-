@@ -114,8 +114,8 @@
     var worksheets = node("section");
     worksheets.setAttribute("aria-label", "Resource type 2: student ability worksheets");
     worksheets.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
-    worksheets.appendChild(node("h4", "2. Student Ability Worksheets — Download Separately"));
-    worksheets.appendChild(node("p", "Choose the class, subject, term and one ability group to download its printable worksheet pack. Class-wide files never include learner IDs."));
+    worksheets.appendChild(node("h4", "2. Daily Activities + Revision + Practice Exam — By Ability"));
+    worksheets.appendChild(node("p", "Choose a term, then prepare a separate printable pack for any of the four ability groups. Each pack includes daily activities, term revision practice and a mock practice examination for this selected class and subject. Class-wide files never include learner IDs."));
     var evidence = node("div");
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
@@ -152,30 +152,29 @@
       if (/^T[123]$/.test(savedTerm)) termSelect.value = savedTerm;
       termLabel.appendChild(termSelect);
       worksheets.appendChild(termLabel);
-      var groupHeading = node("h5", "Download only the groups supported by reviewed evidence");
+      var groupHeading = node("h5", "Prepare a pack for any ability group");
       worksheets.appendChild(groupHeading);
       var groupStatus = node("p", "");
       groupStatus.setAttribute("role", "status");
       groupStatus.setAttribute("aria-live", "polite");
       if (!students.length) {
-        groupStatus.textContent = "Link this class to its registered learner roster before printing individual ability assignments.";
+        groupStatus.textContent = "You can prepare all four class-wide packs now. Link the learner roster and review baseline evidence before assigning individual students.";
       } else if (!Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
-        groupStatus.textContent = "No reviewed marks are available for this subject yet. Use the teacher instructions and baseline assessment first; PacEdu will not guess an ability group.";
+        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use the baseline assessment and teacher review before assigning learners.";
       } else {
-        groupStatus.textContent = "Counts below include only roster learners with an explicitly reviewed mark for this subject. Missing or pending evidence is excluded.";
+        groupStatus.textContent = "Counts show only learners with an explicitly reviewed mark for this subject. They are informational only: a pack can be prepared even when its count is zero. Missing or pending evidence never means low ability.";
       }
       worksheets.appendChild(groupStatus);
       BANDS.forEach(function (band) {
         var count = groupCounts[band.id] || 0;
-        var button = node("button", count ? "Download " + band.label + " worksheets (" + count + " learner(s))" : band.label + " — no reviewed learners in this group");
+        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam" + (count ? " (" + count + " reviewed learner(s))" : " (no reviewed marks yet)"));
         button.type = "button";
-        button.disabled = !students.length || count === 0;
+        button.disabled = false;
         button.style.cssText = "display:block;width:100%;min-height:46px;padding:10px;margin:7px 0;text-align:left;";
         button.addEventListener("click", function () {
-          if (!count) return;
           try {
             var pack = api.download({ level: levelValue, subject: subject, term: termSelect.value, ability: band.id });
-            groupStatus.textContent = "Prepared " + pack.dailyActivities + " activities for " + band.label + ". Check the downloaded file and verify syllabus mapping before assigning.";
+            groupStatus.textContent = "Prepared " + pack.dailyActivities + " daily activities plus term revision practice and a mock practice examination for " + band.label + ". " + (pack.missingSlots ? pack.missingSlots + " daily slots were unavailable. " : "") + "Review the answer guidance and verify current Fiji syllabus mapping before assigning.";
           } catch (error) {
             groupStatus.textContent = "Could not prepare this worksheet pack: " + String(error && error.message || error);
           }
@@ -183,7 +182,7 @@
         worksheets.appendChild(button);
       });
       if (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
-        var baseline = node("p", "For a new class or Day 1 baseline, the teacher must review the baseline activity and deliberately select an appropriate ability group. Do not treat absent work as a low score.");
+        var baseline = node("p", "For a new class or Day 1 baseline, prepare any ability pack as needed, then review the baseline activity before assigning individual learners. Do not treat absent work as a low score.");
         worksheets.appendChild(baseline);
       }
     } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
