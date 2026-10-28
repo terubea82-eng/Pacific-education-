@@ -35,12 +35,82 @@
     if (message) document.documentElement.setAttribute("data-pacedu-curriculum-message", message);
     else document.documentElement.removeAttribute("data-pacedu-curriculum-message");
   }
+  function findApprovedLesson(active, options) {
+    var pack = active && active.content;
+    if (!pack || pack.releaseStatus !== "approved" || pack.studentReady !== true ||
+        String(pack.countryCode || "").toUpperCase() !== String(active.countryCode || "").toUpperCase() ||
+        String(pack.frameworkVersion || "") !== String(active.frameworkVersion || "")) return null;
+    var lessons = Array.isArray(pack.dailyLessons) ? pack.dailyLessons : [];
+    var match = lessons.find(function (lesson) {
+      return lesson && lesson.approvedForStudents === true &&
+        String(lesson.classLevel || "") === String(options.level || "") &&
+        String(lesson.subjectName || "") === String(options.subject || "") &&
+        String(lesson.term || "T1").toUpperCase() === String(options.term || "T1").toUpperCase() &&
+        Number(lesson.week) === Number(options.week || 1) &&
+        Number(lesson.day) === Number(options.day || 1) &&
+        String(lesson.ability || "developing") === String(options.ability || "developing");
+    });
+    return match && match.worksheet && typeof match.worksheet === "object" ? match.worksheet : null;
+  }
+  function blockedWorksheet(active) {
+    return {
+      status: "CURRICULUM_PACK_REQUIRED",
+      title: "Curriculum content update required",
+      message: "PacEdu has selected " + (active.countryName || active.countryCode) + " framework " +
+        (active.frameworkVersion || "unverified") + ", but a matching approved lesson is not available for this class and subject. Ask the teacher/administrator to finish curriculum mapping and approval. Old-country or old-framework content will not be substituted.",
+      level: "", subject: "", questions: [], answerKey: [],
+      curriculumSchedule: { teachingTheme: "Approved curriculum pack required" },
+      curriculumAlignment: { verificationStatus: "REVIEW_REQUIRED" }
+    };
+  }
+  function installWorksheetGuard() {
+    var api = window.PacEduDailyWorksheetContent;
+    if (!api || typeof api.getCurriculumWorksheet !== "function" || api.__curriculumAutoSwitchGuard) return;
+    var original = api.getCurriculumWorksheet;
+    var enhanced = {};
+    Object.keys(api).forEach(function (key) { enhanced[key] = api[key]; });
+    enhanced.getCurriculumWorksheet = function (options) {
+      options = options || {};
+      var active = window.PacEduActiveCurriculum;
+      if (!active) return original(options);
+      var newFramework = String(active.frameworkVersion || "") !== "2013";
+      var nonFiji = String(active.countryCode || "").toUpperCase() !== "FJ";
+      if (active.content) {
+        var approvedLesson = findApprovedLesson(active, options);
+        return approvedLesson || blockedWorksheet(active);
+      }
+      if (nonFiji || newFramework) return blockedWorksheet(active);
+      return original(options);
+    };
+    enhanced.__curriculumAutoSwitchGuard = true;
+    window.PacEduDailyWorksheetContent = Object.freeze(enhanced);
+  }
+  function renderFrameworkStatus(active) {
+    var host = document.getElementById("paceduTeacherDailyLearningOnlyShell") ||
+      document.getElementById("paceduRoleActivityPack");
+    if (!host) return;
+    var status = document.getElementById("paceduActiveCurriculumStatus");
+    if (!status) {
+      status = document.createElement("p");
+      status.id = "paceduActiveCurriculumStatus";
+      status.setAttribute("role", "status");
+      status.setAttribute("aria-live", "polite");
+      status.style.cssText = "font-size:0.9em;margin:6px 0;padding:6px 0;border-bottom:1px solid #d7dfe5;";
+      host.insertBefore(status, host.firstChild);
+    }
+    status.textContent = "Curriculum: " + (active.countryName || active.countryCode) + " — " +
+      (active.frameworkName || "Framework") + " " + (active.frameworkVersion || "unverified") +
+      " · " + (active.mappingStatus || "mapping status unknown") +
+      (active.content ? " · approved content pack loaded" : "");
+  }
   function activate(manifest, requestedCountry) {
     var code = String(requestedCountry || manifest.defaultCountry || "FJ").toUpperCase();
     var profile = manifest.countries && manifest.countries[code];
     if (!profile || profile.enabled !== true) {
       var missing = { countryCode: code, status: "country-curriculum-not-configured", frameworkVersion: null, content: null };
       window.PacEduActiveCurriculum = missing;
+      installWorksheetGuard();
+      renderFrameworkStatus(missing);
       setStatus("country-curriculum-not-configured", "Curriculum setup is required for " + code + ".");
       emit("pacedu:curriculum-ready", missing);
       return missing;
@@ -59,6 +129,8 @@
       content: null
     };
     window.PacEduActiveCurriculum = active;
+    installWorksheetGuard();
+    renderFrameworkStatus(active);
     document.documentElement.setAttribute("data-pacedu-country", code);
     document.documentElement.setAttribute("data-pacedu-framework-version", active.frameworkVersion || "unverified");
     setStatus(active.mappingStatus, active.frameworkName + " " + active.frameworkVersion + " — " + active.mappingStatus + ".");
@@ -74,6 +146,8 @@
         }
         active.content = pack;
         window.PacEduActiveCurriculum = active;
+        installWorksheetGuard();
+        renderFrameworkStatus(active);
         setStatus(active.mappingStatus, active.frameworkName + " " + active.frameworkVersion + " loaded.");
         emit("pacedu:curriculum-ready", active);
         return active;
