@@ -68,6 +68,10 @@
         return ctx && ctx.classId ? String(ctx.classId) : null;
     }
 
+    function classSkillKey(classId, skillId) {
+        return JSON.stringify([String(classId), String(skillId)]);
+    }
+
     function now() {
         return new Date().toISOString();
     }
@@ -209,9 +213,13 @@
         }
 
         const record = getStudentRecord(studentId);
-        const previous = record.skills[skill.skillId] || null;
+        // Scope identical skill IDs to their class; preserve compatible legacy records.
+        const storageKey = classSkillKey(classId, skill.skillId);
+        const legacy = record.skills[skill.skillId] || null;
+        const previous = record.skills[storageKey] ||
+            (legacy && String(legacy.classId || "") === classId ? legacy : null);
 
-        record.skills[skill.skillId] = {
+        record.skills[storageKey] = {
             skillId: skill.skillId,
             classId,
             name: skill.name || skill.skillId,
@@ -237,7 +245,7 @@
             action: "SKILL_UPDATED",
             skillId: skill.skillId,
             previousStatus: previous ? previous.status : null,
-            newStatus: record.skills[skill.skillId].status,
+            newStatus: record.skills[storageKey].status,
             timestamp: now()
         });
 
@@ -245,21 +253,30 @@
         data[studentId] = record;
         safeWrite(data);
 
-        return record.skills[skill.skillId];
+        return record.skills[storageKey];
     }
 
     function getSkill(studentId, skillId) {
         const classId = selectedClassId();
         if (!classId) return null;
         const record = getStudentRecord(studentId);
-        return record.skills[skillId] && String(record.skills[skillId].classId || "") === classId ? record.skills[skillId] : null;
+        const scoped = record.skills[classSkillKey(classId, skillId)];
+        if (scoped && String(scoped.classId || "") === classId) return scoped;
+        const legacy = record.skills[skillId];
+        return legacy && String(legacy.classId || "") === classId ? legacy : null;
     }
 
     function getAllSkills(studentId) {
         const classId = selectedClassId();
         if (!classId) return [];
         const record = getStudentRecord(studentId);
-        return Object.values(record.skills).filter(function(skill){ return String(skill.classId || "") === classId; });
+        const unique = new Map();
+        Object.values(record.skills).forEach(function(skill) {
+            if (String(skill.classId || "") === classId) {
+                unique.set(classSkillKey(classId, skill.skillId), skill);
+            }
+        });
+        return Array.from(unique.values());
     }
 
     function getEvidence(studentId) {
