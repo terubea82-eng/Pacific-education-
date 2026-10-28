@@ -7,7 +7,7 @@
   "use strict";
   var PANEL_ID = "paceduTeacherClassRegistrationPanel";
   var LINK_ID = "paceduTeacherClassRegistrationLink";
-  var LEVELS = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
+  var LEVELS = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"];
   var COUNTRIES = [
     ["FJ","Fiji"],["PG","Papua New Guinea"],["SB","Solomon Islands"],["VU","Vanuatu"],
     ["WS","Samoa"],["TO","Tonga"],["KI","Kiribati"],["TV","Tuvalu"],["NR","Nauru"],
@@ -108,6 +108,7 @@
       var result = r.createClass(id, level.value, teacherRef.input.value.trim(), "");
       if (!result || !result.success) { status.textContent = result && result.error || "Could not create class."; return; }
       var info = result.class || {};
+      if (typeof r.setClassId === "function") r.setClassId(id);
       info.country = country.value; info.schoolName = schoolName.input.value.trim();
       info.schoolRegistrationReference = schoolNumber.input.value.trim();
       info.className = level.value; info.level = level.value;
