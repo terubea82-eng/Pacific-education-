@@ -54,3 +54,13 @@ test("voice commands route Back through existing back controls and Repeat throug
   assert.match(commands, /data-pe-every-page-voice-button/);
   assert.match(commands, /PacEduVoiceSwitch\.stop\(\)/);
 });
+
+test("daily worksheets provide short action-based teacher steps for all supported subjects", () => {
+  const daily = fs.readFileSync("src/js/paceduDailyWorksheetContent.js", "utf8");
+  for (const subject of ["English", "Mathematics", "Science", "Social Studies", "Healthy Living", "Physical Education", "Arts and Crafts", "Music", "Digital Literacy", "iTaukei Language", "Hindi"]) {
+    assert.match(daily, new RegExp('"' + subject.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + '": \\['));
+  }
+  assert.match(daily, /worksheet\.teacherInstructions =/);
+  assert.match(daily, /worksheet\.dailyLesson\.teacherInstructions = worksheet\.teacherInstructions\.slice\(\)/);
+  assert.match(daily, /SHORT_NUMBERED_ACTION_STEPS/);
+});
