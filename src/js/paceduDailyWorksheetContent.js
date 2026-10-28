@@ -272,6 +272,26 @@
     else if(ability==="developing") tasks.unshift("DEVELOPING: try independently first; ask for one hint only if needed.");
     else if(ability==="expected") tasks.unshift("CORE PRACTICE: complete independently and check each answer.");
     else if(ability==="extension") tasks.unshift("EXTENSION: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
+    /* Every worksheet follows a gentle-to-challenging learning path.
+       The example teaches the method first; the child then practises with support,
+       works independently, and finally applies or explains the idea. */
+    var progressionByStage = {
+      early: ["Look at or listen to the worked example.", "Try one activity using pictures, objects, pointing, speaking, signing or drawing.", "Show one thing you noticed or learned."],
+      foundation: ["Study the worked example and say what the steps show.", "Try a similar question with a cue or word bank if needed.", "Answer independently, then explain your choice in a short sentence."],
+      middle: ["Study the worked example and identify the method.", "Complete a similar task and show the steps.", "Apply the idea to a new example and explain how you checked it."],
+      junior: ["Study the worked example and identify the evidence or rule.", "Solve a similar question independently.", "Apply the idea to a changed situation and justify the answer."],
+      senior: ["Analyse the worked example, including why the method is suitable.", "Solve the core questions and show evidence or calculations.", "Evaluate a limitation, compare a second approach, or transfer the concept to an unfamiliar situation."]
+    };
+    var abilityChallenge = {
+      support: "Work through one step at a time. Use the worked example, picture/object cues, read-aloud, or a word bank; then attempt the next similar item independently.",
+      developing: "Use the worked example as a guide, complete a similar item, then try the remaining core questions with fewer prompts.",
+      expected: "Complete the core questions independently, show your method, and explain how you checked one answer.",
+      extension: "Complete the core questions, then solve a changed or unfamiliar example, compare methods, or explain why a plausible wrong answer is incorrect."
+    };
+    var activityProgression = (progressionByStage[st] || progressionByStage.middle).slice();
+    var questionLimit = ability === "support" ? 2 : ability === "developing" ? Math.min(3, questions.length) : questions.length;
+    if (questions.length > questionLimit) questions = questions.slice(0, questionLimit);
+    var stretchPrompt = ability === "extension" ? "CHALLENGE: Change one condition in the problem. Predict how the result will change, solve or test it, and explain your reasoning using evidence." : "";
     var key=questions.map(function(q){return {number:q.number,answer:q.answer,explanation:q.why};});
     var displaySubject = (subject==="Science" && /^Form [34]$/.test(level)) ? "Basic Science" : subject;
     var workedExamples = {
@@ -296,7 +316,12 @@
       level:level,subject:displaySubject,contentSubject:subject,ability:ability,day:Number(day)||2,topic:chosen.topic,
       readingText:chosen.passage,
       instructions:"STUDENT INSTRUCTIONS: 1. Read or listen to the topic. 2. Study the worked example and how the answer is explained. 3. Answer each activity in order. 4. Show your steps, draw or point if writing is difficult, and check your work. 5. Submit your answers for PacEdu marking and teacher review. Do not copy the example as an answer unless the question asks for it. This is original practice, not an official examination.",
-      activitySequence:["Read or listen to the topic","Study the worked example","Complete Activities 1–4 in order","Check your answers","Submit for PacEdu feedback and teacher review"],
+      activitySequence:["Read or listen to the topic","Study the worked example and explanation","Try the first similar activity","Complete the remaining activities in order","Check your work and explain one answer","Submit for PacEdu feedback and teacher review"],
+      learningProgression:activityProgression,
+      abilityChallenge:abilityChallenge[ability]||abilityChallenge.developing,
+      stretchPrompt:stretchPrompt,
+      thinkingDevelopment:["Notice and identify","Apply a demonstrated method","Explain using a reason or evidence","Transfer the learning to a new situation"],
+      questionCount:questions.length,
       tasks:tasks,
       examples:examples,
       workedExample:workedExample,
