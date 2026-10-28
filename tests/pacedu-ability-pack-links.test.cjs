@@ -5,7 +5,7 @@ const vm = require('node:vm');
 
 function loadLinks() {
   const window = {};
-  const document = { createElement(tag) { return { tagName: tag, children: [], attrs: {}, style: '',
+  const document = { createElement(tag) { return { tagName: tag, children: [], attrs: {}, style: {},
     appendChild(child) { this.children.push(child); },
     setAttribute(k, v) { this.attrs[k] = v; },
     removeAttribute(k) { delete this.attrs[k]; },
