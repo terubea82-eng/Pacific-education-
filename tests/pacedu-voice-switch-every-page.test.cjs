@@ -104,5 +104,5 @@ test("daily worksheets scaffold thinking from worked example to independent and 
   assert.match(daily, /stretchPrompt = ability === "extension"/);
   assert.match(daily, /thinkingDevelopment:/);
   assert.match(daily, /Transfer the learning to a new situation/);
-  assert.match(daily, /Keep worksheet task instructions accurate/);
+  assert.match(daily, /task\.replace\(\/all four questions\/gi, "all questions shown"\)/);
 });
