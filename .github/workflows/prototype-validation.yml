@@ -32,6 +32,13 @@ jobs:
           done
           test "$failed" -eq 0
 
+      - name: Validate curriculum auto-switch and release pipeline
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tests/test_education_change_registry.py
+          python3 automation/curriculum_release_activation.py --check-only
+
       - name: Validate local script references across repository HTML
         shell: bash
         run: |
