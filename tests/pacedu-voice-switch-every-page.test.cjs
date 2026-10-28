@@ -106,3 +106,15 @@ test("daily worksheets scaffold thinking from worked example to independent and 
   assert.match(daily, /Transfer the learning to a new situation/);
   assert.match(daily, /task\.replace\(\/all four questions\/gi, "all questions shown"\)/);
 });
+
+
+test("each class worksheet includes learning targets and evidence-based ability advancement", () => {
+  const daily = fs.readFileSync("src/js/paceduDailyWorksheetContent.js", "utf8");
+  assert.match(daily, /function classLearningTarget\(level, subject\)/);
+  assert.match(daily, /function abilityPathway\(ability, stageName\)/);
+  assert.match(daily, /classLearningTarget:classLearningTarget\(level,displaySubject\)/);
+  assert.match(daily, /abilityPathway:abilityPathway\(ability,stage\(level\)\)/);
+  assert.match(daily, /a single correct answer is not enough/i);
+  assert.match(daily, /independent attempt on a fresh similar task/);
+  assert.match(daily, /Support → Developing → Expected → Extension/);
+});
