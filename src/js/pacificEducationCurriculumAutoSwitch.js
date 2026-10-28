@@ -103,8 +103,19 @@
       " · " + (active.mappingStatus || "mapping status unknown") +
       (active.content ? " · approved content pack loaded" : "");
   }
+  function normalizeCountry(value, manifest) {
+    var raw = String(value || manifest.defaultCountry || "FJ").trim();
+    var upper = raw.toUpperCase();
+    if (manifest.countries && manifest.countries[upper]) return upper;
+    var codes = Object.keys(manifest.countries || {});
+    for (var i = 0; i < codes.length; i += 1) {
+      var profile = manifest.countries[codes[i]];
+      if (String(profile.countryName || "").trim().toUpperCase() === upper) return codes[i];
+    }
+    return upper;
+  }
   function activate(manifest, requestedCountry) {
-    var code = String(requestedCountry || manifest.defaultCountry || "FJ").toUpperCase();
+    var code = normalizeCountry(requestedCountry, manifest);
     var profile = manifest.countries && manifest.countries[code];
     if (!profile || profile.enabled !== true) {
       var missing = { countryCode: code, status: "country-curriculum-not-configured", frameworkVersion: null, content: null };
@@ -181,7 +192,8 @@
   }
   function chooseCountry(countryCode) {
     var code = String(countryCode || "").trim().toUpperCase();
-    if (!/^[A-Z]{2,3}$/.test(code)) return Promise.reject(new Error("Use a valid ISO country code."));
+    if (lastManifest) code = normalizeCountry(code, lastManifest);
+    if (!/^[A-Z]{2,3}$/.test(code)) return Promise.reject(new Error("Use a valid ISO country code or a country configured in PacEdu."));
     try { window.localStorage.setItem(STATE_KEY, JSON.stringify({ countryCode: code, selectedAt: new Date().toISOString() })); }
     catch (error) { /* Session may be private; still attempt a runtime switch. */ }
     if (lastManifest) return Promise.resolve(activate(lastManifest, code));
