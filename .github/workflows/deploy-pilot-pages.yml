@@ -57,6 +57,12 @@ jobs:
           grep -q 'PacificEducationSequentialRoleWorkspaces' src/js/pacificEducationSequentialRoleWorkspaces.js
           echo "PASS: Pacedu activation, sequential routing, and #856 voice wiring are protected."
 
+      - name: Validate curriculum auto-switch and generation safeguards
+        run: |
+          set -euo pipefail
+          python3 tests/test_education_change_registry.py
+          python3 automation/curriculum_release_activation.py --check-only
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
