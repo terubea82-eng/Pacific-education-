@@ -35,7 +35,8 @@ test('teacher controls explain review status and hide unavailable links', () => 
   const link = box.children.find(x => x.tagName === 'a');
   const status = box.children[box.children.length - 1];
   assert.match(link.href, /class1-english-ability-pack\.md$/);
-  assert.match(status.textContent, /teacher review/i);
+  assert.match(status.textContent, /A matching draft is available/i);
+  assert.match(box.children[1].textContent, /teacher review/i);
   level.value = 'Class 5';
   level.listeners.change();
   assert.equal(link.hidden, true);
