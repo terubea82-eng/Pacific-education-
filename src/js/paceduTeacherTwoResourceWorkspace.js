@@ -119,6 +119,8 @@
     var evidence = node("div");
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
+    var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
+    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
       evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
     } else {
@@ -128,6 +130,7 @@
         var mark = priorReviewedEvidence(ref, classId, subject);
         var rawMark = mark && (mark.markPercent != null ? mark.markPercent : mark.scorePercent != null ? mark.scorePercent : mark.mark != null ? mark.mark : mark.score);
         var band = mark ? BANDS.filter(function (b) { return b.id === bandFor(rawMark); })[0] : null;
+        if (band) groupCounts[band.id] += 1;
         row.textContent = String(ref) + " — " + (mark ?
           "Reviewed mark found (Day " + String(mark.day || mark.dayNumber || "?") + "); provisional worksheet recommendation: " + (band ? band.label : "manual review required") :
           "No reviewed mark found for this subject; ability group remains unconfirmed.");
@@ -137,19 +140,52 @@
     }
     worksheets.appendChild(evidence);
     var api = window.PacEduDownloadableClassPacks;
-    if (api && typeof api.renderControls === "function") {
-      var holder = node("div");
-      api.renderControls(holder, { level: String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim()), subject: subject, term: "T1", capability: "support" });
-      var draftLinks = holder.querySelectorAll('[aria-label="Differentiated worksheet draft"]');
-      Array.prototype.forEach.call(draftLinks, function (x) { x.hidden = true; });
-      var packPanel = holder.firstElementChild;
-      if (packPanel) {
-        var title = packPanel.querySelector("h4");
-        if (title) title.textContent = "Download selected class and ability worksheets";
-        var note = packPanel.querySelector("p");
-        if (note) note.textContent = "Choose the class, subject, term and one of the four ability groups, then download the printable HTML worksheet pack. Preparation date is automatic.";
-        worksheets.appendChild(holder);
-      } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
+    if (api && typeof api.download === "function") {
+      var termLabel = node("label", "Term for today's worksheets");
+      termLabel.style.cssText = "display:block;margin:10px 0;font-weight:600;";
+      var termSelect = node("select");
+      termSelect.style.cssText = "display:block;width:100%;padding:10px;margin-top:5px;font:inherit;";
+      [["T1","Term 1 — 9 weeks"],["T2","Term 2 — 9 weeks"],["T3","Term 3 — 5 weeks"]].forEach(function (item) {
+        var option = node("option", item[1]); option.value = item[0]; termSelect.appendChild(option);
+      });
+      var savedTerm = String(window.localStorage.getItem("pacificEducationTerm") || "T1");
+      if (/^T[123]$/.test(savedTerm)) termSelect.value = savedTerm;
+      termLabel.appendChild(termSelect);
+      worksheets.appendChild(termLabel);
+      var groupHeading = node("h5", "Download only the groups supported by reviewed evidence");
+      worksheets.appendChild(groupHeading);
+      var groupStatus = node("p", "");
+      groupStatus.setAttribute("role", "status");
+      groupStatus.setAttribute("aria-live", "polite");
+      if (!students.length) {
+        groupStatus.textContent = "Link this class to its registered learner roster before printing individual ability assignments.";
+      } else if (!Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
+        groupStatus.textContent = "No reviewed marks are available for this subject yet. Use the teacher instructions and baseline assessment first; PacEdu will not guess an ability group.";
+      } else {
+        groupStatus.textContent = "Counts below include only roster learners with an explicitly reviewed mark for this subject. Missing or pending evidence is excluded.";
+      }
+      worksheets.appendChild(groupStatus);
+      BANDS.forEach(function (band) {
+        var count = groupCounts[band.id] || 0;
+        var button = node("button", count ? "Download " + band.label + " worksheets (" + count + " learner(s))" : band.label + " — no reviewed learners in this group");
+        button.type = "button";
+        button.disabled = !students.length || count === 0;
+        button.style.cssText = "display:block;width:100%;min-height:46px;padding:10px;margin:7px 0;text-align:left;";
+        button.addEventListener("click", function () {
+          if (!count) return;
+          try {
+            var pack = api.download({ level: levelValue, subject: subject, term: termSelect.value, ability: band.id });
+            groupStatus.textContent = "Prepared " + pack.dailyActivities + " activities for " + band.label + ". Check the downloaded file and verify syllabus mapping before assigning.";
+          } catch (error) {
+            groupStatus.textContent = "Could not prepare this worksheet pack: " + String(error && error.message || error);
+          }
+        });
+        worksheets.appendChild(button);
+      });
+      if (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
+        var baseline = node("p", "For a new class or Day 1 baseline, the teacher must review the baseline activity and deliberately select an appropriate ability group. Do not treat absent work as a low score.");
+        worksheets.appendChild(baseline);
+      }
     } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
     panel.appendChild(worksheets);
     planPanel.appendChild(panel);
