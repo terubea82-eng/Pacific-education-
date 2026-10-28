@@ -274,7 +274,7 @@
       week.value=String(Math.min(old,max));
     });
     var generate=node("button","Generate marking guide",panel);generate.type="button";generate.style.cssText="min-height:44px;padding:10px 14px;margin:8px 8px 8px 0;font:inherit;font-weight:700";
-    var print=node("button","Print / Save as PDF",panel);print.type="button";print.style.cssText="min-height:44px;padding:10px 14px;margin:8px 0;font:inherit";
+    var print=node("button","Print Marking Guide / Save as PDF",panel);print.type="button";print.style.cssText="min-height:44px;padding:10px 14px;margin:8px 0;font:inherit";
     var out=node("div",null,panel);out.id="paceduDailyMarkingCriteriaOutput";out.setAttribute("aria-live","polite");
     generate.addEventListener("click",function(){
       out.textContent="";
