@@ -228,8 +228,8 @@
     return Object.keys(packs).filter(function(subject) {
       if (form >= 3 && form <= 4) return subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology";
       if (form >= 5 && form <= 7) return subject !== "Science";
-      return subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology";
-    }).concat(form >= 5 && form <= 7 ? ["Chemistry","Physics","Biology"] : []);
+      return subject !== "Chemistry" && subject !== "Physics" && subject !== "Biology" && subject !== "Science";
+    });
   }
   function stage(level) {
     if(level==="ECE") return "early";
