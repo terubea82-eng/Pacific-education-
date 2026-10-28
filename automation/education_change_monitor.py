@@ -27,10 +27,10 @@ MAX_BYTES = 2_000_000
 
 
 def clean_html(raw):
-    raw = re.sub(r"(?is)<(script|style|noscript).*?>.*?</\\1>", " ", raw)
+    raw = re.sub(r"(?is)<(script|style|noscript).*?>.*?</\1>", " ", raw)
     raw = re.sub(r"(?s)<!--.*?-->", " ", raw)
     raw = re.sub(r"(?s)<[^>]+>", " ", raw)
-    return re.sub(r"\\s+", " ", unescape(raw)).strip()
+    return re.sub(r"\s+", " ", unescape(raw)).strip()
 
 
 def main():
@@ -90,7 +90,7 @@ def main():
                     new_state[sid] = previous[sid]
 
     STATE.parent.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps(new_state, indent=2) + "\\n", encoding="utf-8")
+    STATE.write_text(json.dumps(new_state, indent=2) + "\n", encoding="utf-8")
     lines = ["# PacEdu education-source monitor report", "", f"- Checked at (UTC): {checked_at}",
              f"- Sources configured: {sum(len(p.get('sources', [])) for p in registry.get('curriculumProfiles', []))}",
              f"- Successful checks: {len(new_state)}", f"- Changed/new baseline pages: {len(changed)}", f"- Fetch/validation errors: {len(errors)}", "",
@@ -108,7 +108,7 @@ def main():
     else:
         lines.append("None.")
     lines += ["", "## Safety boundary", "", "This report does not extract full articles, determine policy effective dates, generate lessons, or publish content. A reviewer must verify the authoritative item and classify its status."]
-    REPORT.write_text("\\n".join(lines) + "\\n", encoding="utf-8")
+    REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps({"changed": changed, "errors": errors, "statePath": str(STATE), "reportPath": str(REPORT)}))
     return 0 if new_state else 1
 
