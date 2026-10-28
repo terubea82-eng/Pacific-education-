@@ -577,14 +577,40 @@
         setText("specialEducationReviewQueueStatus", queue.length ? String(queue.length) + " item(s) require authorized review." : "No pending mandatory review items.");
         var host = document.getElementById("specialEducationReviewEvidence");
         if (host) {
-            host.innerHTML = queue.slice(-10).reverse().map(function(r){
-                return "<article><strong>Day " + String(r.day || "") + "</strong> — " +
-                    String(r.activityType || r.type || "Learning activity") +
-                    "<br><small>Class: " + String(r.classLevel || "") + " | Subject: " + String(r.subject || "") +
-                    " | Term: " + String(r.term || "") + "</small>" +
-                    (r.audioDataUrl ? "<p>🎧 Audio evidence available for authorized review.</p>" : "") +
-                    "<p>Status: " + String(r.reviewStatus || r.status || "pending") + "</p></article>";
-            }).join("") || "<p>No pending audio/home evidence requires Special Education review.</p>";
+            /* Build evidence rows with text nodes so stored/user-provided
+               values can never be interpreted as executable HTML. */
+            host.replaceChildren();
+            var evidenceItems = queue.slice(-10).reverse();
+            if (!evidenceItems.length) {
+                var emptyMessage = document.createElement("p");
+                emptyMessage.textContent = "No pending audio/home evidence requires Special Education review.";
+                host.appendChild(emptyMessage);
+            } else {
+                evidenceItems.forEach(function(r) {
+                    var article = document.createElement("article");
+                    var heading = document.createElement("strong");
+                    heading.textContent = "Day " + String(r.day || "");
+                    article.appendChild(heading);
+                    article.appendChild(document.createTextNode(" — " + String(r.activityType || r.type || "Learning activity")));
+
+                    var details = document.createElement("small");
+                    details.textContent = "Class: " + String(r.classLevel || "") + " | Subject: " + String(r.subject || "") + " | Term: " + String(r.term || "");
+                    var detailsLine = document.createElement("div");
+                    detailsLine.appendChild(details);
+                    article.appendChild(detailsLine);
+
+                    if (r.audioDataUrl) {
+                        var audioNotice = document.createElement("p");
+                        audioNotice.textContent = "🎧 Audio evidence available for authorized review.";
+                        article.appendChild(audioNotice);
+                    }
+
+                    var status = document.createElement("p");
+                    status.textContent = "Status: " + String(r.reviewStatus || r.status || "pending");
+                    article.appendChild(status);
+                    host.appendChild(article);
+                });
+            }
         }
     }
 
