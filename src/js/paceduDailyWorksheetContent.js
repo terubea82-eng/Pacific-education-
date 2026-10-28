@@ -292,6 +292,10 @@
     var questionLimit = ability === "support" ? 2 : ability === "developing" ? Math.min(3, questions.length) : questions.length;
     if (questions.length > questionLimit) questions = questions.slice(0, questionLimit);
     var stretchPrompt = ability === "extension" ? "CHALLENGE: Change one condition in the problem. Predict how the result will change, solve or test it, and explain your reasoning using evidence." : "";
+    tasks = tasks.map(function(task) {
+      return task.replace(/all four questions/gi, "all questions shown")
+                 .replace(/the four questions/gi, "the questions shown");
+    });
     var key=questions.map(function(q){return {number:q.number,answer:q.answer,explanation:q.why};});
     var displaySubject = (subject==="Science" && /^Form [34]$/.test(level)) ? "Basic Science" : subject;
     var workedExamples = {
