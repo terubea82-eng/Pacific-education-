@@ -89,7 +89,7 @@
   function text(v) { return String(v == null ? "" : v).trim(); }
   function clamp(n,min,max) { return Math.max(min,Math.min(max,n)); }
   function normalizeTerm(value) {
-    var v=text(value).toLowerCase().replace(/\\s+/g,"");
+    var v=text(value).toLowerCase().replace(/\s+/g,"");
     if(v==="t1"||v==="term1")return "T1";
     if(v==="t2"||v==="term2")return "T2";
     if(v==="t3"||v==="term3")return "T3";
