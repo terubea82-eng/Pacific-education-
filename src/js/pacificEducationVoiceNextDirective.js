@@ -40,7 +40,7 @@
       recognition.onresult = function (event) {
         var transcript = ""; try { transcript = event.results[0][0].transcript || ""; } catch (_) {}
         if (matchesNextCommand(transcript)) { setStatus("Voice directive accepted: Next."); stopListening(); var nextButton = document.getElementById(nextId); if (nextButton) nextButton.click(); }
-        else { setStatus("Voice directive not recognized. Please say Next, then try again."); stopListening(); if (window.speakText) window.speakText("Please say Next to continue."); }
+        else { setStatus("Voice directive not recognized. Say Next, Back, Repeat, or Stop, then try again."); stopListening(); if (window.speakText) window.speakText("Please say Next to continue."); }
       };
       recognition.onerror = function (event) { stopListening(); var error = event && event.error ? event.error : "unknown"; if (error === "not-allowed" || error === "service-not-allowed") setStatus("Microphone permission is required for Voice Next. You can still use the Next button."); else setStatus("Voice directive could not be heard. Please try again or use Next."); };
       recognition.onend = function () { if (listening) { listening = false; if (button) button.textContent = "🎙️ Voice Next — Say “Next”"; } };
@@ -48,6 +48,35 @@
     } catch (error) { stopListening(); setStatus("Voice directive could not start. Please use the Next button."); return false; }
   }
 
+  function commandBack() {
+    var candidates=[].slice.call(document.querySelectorAll("[data-pe-back-button],button,a,[role='button']"));
+    var button=candidates.find(function(el){
+      if(!el||el.disabled||el.hidden||el.getAttribute("aria-hidden")==="true")return false;
+      var s=String(el.getAttribute("aria-label")||el.textContent||"").replace(/\\s+/g," ").trim().toLowerCase();
+      if(el.hasAttribute("data-pe-back-button"))return true;
+      return /^(back|previous|go back|previous page)$/.test(s);
+    });
+    if(button){button.click();return true;}
+    speakAndUpdate("Back is not available on this page. You can use the page buttons.");
+    return false;
+  }
+  function commandRepeat() {
+    if(window.PacificEducationMandatoryVoiceNavigation && typeof window.PacificEducationMandatoryVoiceNavigation.announceCurrentStep==="function" && document.body.classList.contains("pe-guided-flow")){
+      window.PacificEducationMandatoryVoiceNavigation.announceCurrentStep();return true;
+    }
+    var buttons=[].slice.call(document.querySelectorAll("[data-pe-every-page-voice-button]"));
+    var visible=buttons.find(function(b){return b&&!b.hidden&&b.getAttribute("aria-hidden")!=="true"&&b.offsetParent!==null;});
+    if(visible){visible.click();return true;}
+    if(window.PacEduVoiceSwitch&&typeof window.PacEduVoiceSwitch.announceVisibleWorkspace==="function"){window.PacEduVoiceSwitch.announceVisibleWorkspace();return true;}
+    speakAndUpdate("Page instructions are not available to repeat here.");return false;
+  }
+  function commandStopSpeech() {
+    if(window.PacEduVoiceSwitch&&typeof window.PacEduVoiceSwitch.stop==="function")window.PacEduVoiceSwitch.stop();
+    else if(window.PacificEducationMandatoryVoiceNavigation&&typeof window.PacificEducationMandatoryVoiceNavigation.stop==="function")window.PacificEducationMandatoryVoiceNavigation.stop();
+    else if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.stopSpeech==="function")window.PacificEducationSpeech.stopSpeech();
+    else if(window.speechSynthesis)window.speechSynthesis.cancel();
+    updateGlobalUI("🎙️ Start Voice Control","Speech stopped. Voice commands remain available; say Start Voice Control to listen again.");
+  }
   function globalCommand(text) {
     var normalized = String(text || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
     if (/^(install|install pacific education|download pacific education)$/.test(normalized)) {
@@ -60,6 +89,9 @@
     if (choose) { speakAndUpdate(chooseOption(Number(choose[1])) ? "Option " + choose[1] + " selected." : "That option is not available."); return; }
     if (/^(start voice|start listening|voice on)$/.test(normalized)) { startGlobal(); return; }
     if (/^(stop listening|voice off|stop voice control)$/.test(normalized)) { stopGlobal(); return; }
+    if (/^(back|go back|previous|previous page|back page)$/.test(normalized)) { commandBack(); return; }
+    if (/^(repeat|repeat instructions|repeat page|read instructions again)$/.test(normalized)) { commandRepeat(); return; }
+    if (/^(stop|stop speaking|stop speech|mute speech)$/.test(normalized)) { commandStopSpeech(); return; }
     if (/^(next|next step|continue|go next|next stage|move next|move to next)$/.test(normalized)) {
       var next = document.querySelector(".pacific-flow-next button:not([hidden])"); if (next) { next.click(); return; }
       var ids = ["welcomeNextButton","registrationNextButton","prototypeNextButton","levelNextButton","subjectNextButton","termNextButton","capabilityNextButton","dailyNextButton","practiceNextButton","assessmentNextButton"];
@@ -82,7 +114,7 @@
     if(globalListening) return true; globalStopRequested=false;
     try {
       globalRecognition=new SpeechRecognition(); globalRecognition.lang="en-US"; globalRecognition.continuous=false; globalRecognition.interimResults=false; globalRecognition.maxAlternatives=2;
-      globalRecognition.onstart=function(){globalListening=true;updateGlobalUI("🎙️ Voice Control: Listening","Voice control listening. Say Next, Read, Read Choices, or Sign Out.");};
+      globalRecognition.onstart=function(){globalListening=true;updateGlobalUI("🎙️ Voice Control: Listening","Voice control listening. Say Next, Back, Repeat, Stop, Read, or Read Choices.");};
       globalRecognition.onresult=function(event){for(var i=event.resultIndex;i<event.results.length;i++){if(event.results[i].isFinal)globalCommand(event.results[i][0].transcript);}};
       globalRecognition.onerror=function(event){globalListening=false;if(globalRestart)clearTimeout(globalRestart);var error=event&&event.error?event.error:"unknown";if(error==="not-allowed"||error==="service-not-allowed")updateGlobalUI("🎙️ Start Voice Control","Allow microphone access, then press Start Voice Control.");else if(error==="audio-capture")updateGlobalUI("🎙️ Start Voice Control","Microphone could not be opened. Check the microphone permission and try again.");else if(error==="no-speech")updateGlobalUI("🎙️ Start Voice Control","No speech was detected. Press Start Voice Control and try again.");else if(error==="network")updateGlobalUI("🎙️ Start Voice Control","Voice recognition needs a supported network service. You can still use the buttons.");else updateGlobalUI("🎙️ Start Voice Control","Voice control could not listen. Press Start Voice Control to try again.");};
       globalRecognition.onend=function(){globalListening=false;if(globalRestart)clearTimeout(globalRestart);updateGlobalUI("🎙️ Start Voice Control","Voice control ready. Press Start Voice Control for the next command.");};
