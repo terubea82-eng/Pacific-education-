@@ -1,0 +1,57 @@
+const test = require("node:test");
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+
+const runtime = fs.readFileSync("src/js/paceduVoiceSwitchEveryPage.js", "utf8");
+const index = fs.readFileSync("src/index.html", "utf8");
+const protectedVoice = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
+
+test("global Voice On/Mute control is accessible and remembers the preference", () => {
+  assert.match(runtime, /paceduVoiceSwitch/);
+  assert.match(runtime, /aria-pressed/);
+  assert.match(runtime, /aria-label/);
+  assert.match(runtime, /localStorage\.setItem\(KEY,next\?"true":"false"\)/);
+  assert.match(runtime, /Voice On — Mute/);
+  assert.match(runtime, /Voice Muted — Turn On/);
+});
+
+test("mute stops current speech and blocks future speech through shared speech entry points", () => {
+  assert.match(runtime, /if\(!next\) stop\(\)/);
+  assert.match(runtime, /if\(!enabled\(\)\) return false/);
+  assert.match(runtime, /window\.PacificEducationSpeech/);
+  assert.match(runtime, /window\.speakText/);
+});
+
+test("workspace narration is page-specific and does not compete with guided-page narration", () => {
+  assert.match(runtime, /activeGuidedPage\(\)/);
+  assert.match(runtime, /rawSpeak\(item\[2\]\)/);
+  assert.match(runtime, /announceVisibleWorkspace\.lastKey/);
+  assert.match(protectedVoice, /function announceCurrentStep/);
+});
+
+test("voice-switch runtime loads after existing page voice repair", () => {
+  const repairAt = index.indexOf("pacificEducationEveryPageVoiceRepair.js?v=20261025-every-page-voice-fix-v2");
+  const switchAt = index.indexOf("paceduVoiceSwitchEveryPage.js?v=20261028-voice-switch-v1");
+  assert.ok(repairAt >= 0, "existing voice repair script missing");
+  assert.ok(switchAt > repairAt, "voice switch must load after existing voice scripts");
+});
+
+const commands = fs.readFileSync("src/js/pacificEducationVoiceNextDirective.js", "utf8");
+
+test("global voice commands support Back, Repeat, and Stop alongside Next", () => {
+  assert.match(commands, /function commandBack\(\)/);
+  assert.match(commands, /function commandRepeat\(\)/);
+  assert.match(commands, /function commandStopSpeech\(\)/);
+  assert.match(commands, /\^\(back\|go back\|previous\|previous page\|back page\)\$/);
+  assert.match(commands, /\^\(repeat\|repeat instructions\|repeat page\|read instructions again\)\$/);
+  assert.match(commands, /\^\(stop\|stop speaking\|stop speech\|mute speech\)\$/);
+  assert.match(commands, /function startGlobal\(\)/);
+});
+
+test("voice commands route Back through existing back controls and Repeat through current page voice", () => {
+  assert.match(commands, /querySelectorAll\("\[data-pe-back-button\],button,a,\[role='button'\]"\)/);
+  assert.match(commands, /PacificEducationMandatoryVoiceNavigation\.announceCurrentStep\(\)/);
+  assert.match(commands, /data-pe-every-page-voice-button/);
+  assert.match(commands, /PacEduVoiceSwitch\.stop\(\)/);
+});
+
