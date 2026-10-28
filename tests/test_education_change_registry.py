@@ -189,10 +189,25 @@ class EducationChangeRegistryTests(unittest.TestCase):
 
     def test_activation_without_release_records_does_not_change_baseline(self):
         script = ROOT / "automation" / "curriculum_release_activation.py"
-        result = subprocess.run([sys.executable, str(script), "--check-only"], capture_output=True, text=True)
-        self.assertEqual(result.returncode, 0, result.stderr)
-        data = json.loads(result.stdout)
-        self.assertFalse(data["changed"])
+        spec = importlib.util.spec_from_file_location("pacedu_empty_release_activation_test", script)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            manifest_path = root / "src/data/curriculum/active-frameworks.json"
+            registry_path = root / "automation/education-change-sources.json"
+            release_dir = root / "automation/curriculum-releases"
+            manifest_path.parent.mkdir(parents=True)
+            registry_path.parent.mkdir(parents=True)
+            manifest_path.write_text(json.dumps({"schemaVersion": 1, "defaultCountry": "FJ", "countries": {}}), encoding="utf-8")
+            registry_path.write_text(json.dumps({"curriculumProfiles": []}), encoding="utf-8")
+            module.ROOT = root
+            module.MANIFEST = manifest_path
+            module.REGISTRY = registry_path
+            module.RELEASE_DIR = release_dir
+            result = module.activate(today=date(2026, 10, 28), write=False)
+            self.assertFalse(result["changed"])
+            self.assertEqual(result["reason"], "no curriculum release records")
 
 if __name__ == "__main__":
     unittest.main()
