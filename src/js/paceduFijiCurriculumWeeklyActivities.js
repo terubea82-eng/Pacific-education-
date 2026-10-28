@@ -149,12 +149,40 @@
     if (!week) return {status:"NOT_FOUND",message:"No week exists for this term/week selection. Choose a listed teaching, assessment, intervention, revision or exam block."};
     var item = {term:week[0],week:week[1],title:week[2],focus:week[3]};
     var core = (SUBJECT_FOCUS[subject] || SUBJECT_FOCUS.English)[0];
+    var questions = makeQuestions(subject,ability,item,level);
+    var examples = questions.map(function (question, index) {
+      var answer;
+      if (subject === "Mathematics") answer = "Show your method with counters, a drawing or numbers; check the result another way.";
+      else if (subject === "Science") answer = "Example: observe a real object or plant, describe one feature, and record what you notice.";
+      else if (subject === "Social Studies") answer = "Example: name a familiar community place or helper and explain one way they help people.";
+      else if (subject === "Healthy Living") answer = "Example: wash hands with clean water and soap before eating; explain why this helps.";
+      else if (subject === "Physical Education") answer = "Example: demonstrate the movement slowly, keep space between learners, and stop when asked.";
+      else if (subject === "Arts and Crafts") answer = "Example: sketch the plan first, use safe/reused materials, then describe one feature.";
+      else if (subject === "Music") answer = "Example: clap a pattern such as clap-clap-pause, then repeat it steadily.";
+      else if (subject === "Digital Literacy") answer = "Example: do not share a password; ask a trusted teacher before opening an unknown link.";
+      else if (subject === "iTaukei Language" || subject === "Hindi") answer = "Example: ask the teacher to model and verify the local word or phrase before using it.";
+      else answer = "Example: use a short text or picture, find one detail, and answer in a clear sentence.";
+      return {
+        number:index+1, format:"text", prompt:"Model for: " + question.prompt,
+        workedAnswer:answer, explanation:"This is a sample method. Use the exact class lesson and verified achievement indicator.",
+        alternatives:["picture-or-object","audio-read-aloud","short-video-when-needed"],
+        showBeforeQuestion:true
+      };
+    });
     return {
       status:"DRAFT_NEEDS_CURRICULUM_VERIFICATION",
       level:level, stage:levelStage(level), subject:subject, ability:ability,
       term:item.term, week:item.week, topic:item.title, focus:item.focus,
       learningTask:abilityTasks(subject,ability,core,level),
-      questions:makeQuestions(subject,ability,item,level),
+      questions:questions,
+      examples:examples,
+      teacherInstructions:[
+        "Read the learning intention and name the achievement indicator for this lesson.",
+        "Show the example before learners attempt the matching question.",
+        "Use text, a picture/object, read-aloud audio, or a short video when available; do not autoplay media.",
+        "Give support, developing, core or extension prompts based on current evidence.",
+        "Check the learner's own work and record one next step; do not mark the sample answer as learner evidence."
+      ],
       lessonSequence:[
         "Introduce the week's focus with a familiar Fiji-life example and state the learning intention.",
         "Model one example; let learners practise with accessible materials or text.",
