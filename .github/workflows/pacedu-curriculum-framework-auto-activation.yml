@@ -14,6 +14,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: pacedu-curriculum-framework-activation
@@ -21,6 +23,8 @@ concurrency:
 
 jobs:
   validate-and-activate:
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -40,9 +44,11 @@ jobs:
         run: python3 automation/curriculum_release_activation.py
 
       - name: Commit active framework manifest when changed
+        id: commit
         run: |
           set -euo pipefail
           if git diff --quiet -- src/data/curriculum/active-frameworks.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No curriculum activation due."
             exit 0
           fi
@@ -51,3 +57,19 @@ jobs:
           git add src/data/curriculum/active-frameworks.json
           git commit -m "curriculum: activate verified framework release"
           git push origin main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Configure Pages for framework activation
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload site with new active framework manifest
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy active framework to GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
