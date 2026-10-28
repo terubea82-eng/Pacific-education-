@@ -77,3 +77,14 @@ test("every generated worksheet question has a worked example and accessible for
     assert.ok(daily.includes(format), "missing example format: " + format);
   }
 });
+
+
+test("weekly curriculum activities include examples and teacher instructions", () => {
+  const curriculum = fs.readFileSync("src/js/paceduFijiCurriculumWeeklyActivities.js", "utf8");
+  const renderer = fs.readFileSync("src/js/pacificEducationEnglishWorksheetLibrary.js", "utf8");
+  assert.match(curriculum, /var examples = questions\.map/);
+  assert.match(curriculum, /teacherInstructions:\[/);
+  assert.match(curriculum, /showBeforeQuestion:true/);
+  assert.match(renderer, /Examples first — then try/);
+  assert.match(renderer, /Now answer/);
+});
