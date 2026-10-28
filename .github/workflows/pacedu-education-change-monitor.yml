@@ -1,0 +1,75 @@
+name: PacEdu Education Change Source Monitor
+
+on:
+  schedule:
+    - cron: "23 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: pacedu-education-change-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore last source fingerprints
+        uses: actions/cache/restore@v4
+        with:
+          path: /tmp/pacedu-education-state.json
+          key: pacedu-education-source-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            pacedu-education-source-state-
+
+      - name: Fetch configured education sources and detect changes
+        id: monitor
+        run: |
+          set -euo pipefail
+          python3 automation/education_change_monitor.py | tee /tmp/pacedu-education-monitor.json
+          python3 - <<'PY'
+          import json, os
+          data = json.load(open('/tmp/pacedu-education-monitor.json', encoding='utf-8'))
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as out:
+              out.write('changed_count=' + str(len(data['changed'])) + '\\n')
+              out.write('error_count=' + str(len(data['errors'])) + '\\n')
+          PY
+
+      - name: Save latest source fingerprints
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /tmp/pacedu-education-state.json
+          key: pacedu-education-source-state-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Upload monitor report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacedu-education-source-monitor-report
+          path: /tmp/pacedu-education-report.md
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Open review issue when a source changes or cannot be checked
+        if: steps.monitor.outputs.changed_count != '0' || steps.monitor.outputs.error_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          title="Education source monitor review — ${{ github.run_id }}"
+          body="$(cat /tmp/pacedu-education-report.md)"
+          gh issue create --repo "$REPO" --title "$title" --body "$body" --label "education-change-review" || gh issue create --repo "$REPO" --title "$title" --body "$body"
+
+      - name: Explain first-run baseline
+        if: steps.monitor.outputs.changed_count != '0'
+        run: |
+          echo "New/changed pages are review leads only. Do not treat them as verified curriculum changes without opening and checking the source."
