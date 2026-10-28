@@ -43,5 +43,7 @@ const revision = window.PacEduTermLearningPlan.getRevisionPaper();
 const exam = window.PacEduPracticeExamPaper.getPaper();
 assert.ok(revision.markingCriteriaId);
 assert.ok(exam.markingCriteriaId);
+assert.equal(daily.markingCriteria.criteriaFamilyId, revision.markingCriteria.criteriaFamilyId);
+assert.equal(revision.markingCriteria.criteriaFamilyId, exam.markingCriteria.criteriaFamilyId);
 assert.equal(revision.markingCriteria.links.dailyWorksheet.criteriaId, revision.markingCriteriaId);
 console.log("PacEdu daily marking criteria regression tests passed.");
