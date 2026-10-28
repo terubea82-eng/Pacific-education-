@@ -12,7 +12,7 @@
     ["FJ","Fiji"],["PG","Papua New Guinea"],["SB","Solomon Islands"],["VU","Vanuatu"],
     ["WS","Samoa"],["TO","Tonga"],["KI","Kiribati"],["TV","Tuvalu"],["NR","Nauru"],
     ["FM","Federated States of Micronesia"],["MH","Marshall Islands"],["PW","Palau"],
-    ["AU","Australia"],["NZ","New Zealand"],["OTHER","Other country"]
+    ["NC","New Caledonia"],["PF","French Polynesia"],["GU","Guam"],["AS","American Samoa"],["CK","Cook Islands"],["NU","Niue"],["TK","Tokelau"],["AU","Australia"],["NZ","New Zealand"],["OTHER","Other country"]
   ];
   function el(tag, text) { var n = document.createElement(tag); if (text != null) n.textContent = text; return n; }
   function style(n, css) { n.style.cssText = css; return n; }
