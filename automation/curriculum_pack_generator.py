@@ -95,7 +95,7 @@ def main():
     output = generate(source)
     path = Path(args.output)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    path.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"status": "draft-generated", "output": str(path), "outcomeCount": sum(len(s["outcomes"]) for s in output["subjects"])}))
 
 
