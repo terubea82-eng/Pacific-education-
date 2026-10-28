@@ -1,0 +1,53 @@
+name: PacEdu Curriculum Framework Auto Activation
+
+on:
+  schedule:
+    - cron: "11 19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "automation/curriculum-releases/**"
+      - "automation/curriculum_release_activation.py"
+      - "src/data/curriculum/generated/**"
+      - "src/data/curriculum/active-frameworks.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pacedu-curriculum-framework-activation
+  cancel-in-progress: false
+
+jobs:
+  validate-and-activate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate release records and tests
+        run: |
+          set -euo pipefail
+          python3 tests/test_education_change_registry.py
+          python3 automation/curriculum_release_activation.py --check-only
+
+      - name: Activate verified releases whose effective date has arrived
+        run: python3 automation/curriculum_release_activation.py
+
+      - name: Commit active framework manifest when changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- src/data/curriculum/active-frameworks.json; then
+            echo "No curriculum activation due."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/curriculum/active-frameworks.json
+          git commit -m "curriculum: activate verified framework release"
+          git push origin main
