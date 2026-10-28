@@ -70,3 +70,17 @@ Every learner-facing page should be understandable to a Class 1 learner: one cle
 ## Current verification snapshot
 
 At the time this audit was written, GitHub Actions reported the voice-feature regression workflow and several existing preservation/security workflows as successful on the checked commit. CodeQL and cross-device browser tests were still in progress. This is not a full pass for every page; re-check the newest branch commit's results before merge.
+
+## Second-pass findings from the current feature branch
+
+- `src/index.html` contains 86 script elements and 45 section blocks in the static parse. The static parse found no duplicate HTML IDs. This is not by itself a reason to delete scripts: many provide role checks, routing, accessibility, offline behavior or specific workspaces.
+- The existing voice repair map contains 13 guided-page narration entries, and every one of those IDs exists in the static HTML. The separate workspace voice-switch list has 17 entries; IDs `studentProgressDashboard`, `pacificEducationExternalReviewerPortal`, `pacificEducationWeekendHolidaySupplementaryActivities`, and `pacificEducationExamCalendarSection` do not appear as literal IDs in the HTML snapshot, and one entry is `hidden`. These may be dynamically created or stale. Verify runtime creation and route ownership before changing the list; don't assume every missing static ID is broken.
+- The worksheet generator currently returns tasks, questions, answers and explanations, but the main `make()` result does not include a dedicated per-activity `example` field. Some task text mentions a worked example or teacher modelling, which does not guarantee a concrete example is shown before every activity. This is a confirmed content gap to address with subject-specific examples and regression tests.
+- Voice command source contains Back, Repeat and Stop handlers, but source inspection alone cannot prove they choose the correct visible control or that Repeat always speaks again. Those need browser-level checks.
+
+### Second-pass action order
+
+1. Fix the example gap additively in the worksheet generator, with examples appropriate to each subject and learning stage; don't change existing question/answer structure unnecessarily.
+2. Add tests asserting examples exist for each generated worksheet across supported subjects, levels and ability bands.
+3. Audit voice IDs against actual dynamically rendered workspace IDs and test each route before editing the voice map.
+4. Run the new commit's voice tests, broader regression workflows, and cross-device/browser checks; wait for CodeQL and browser results before considering merge.
