@@ -10,8 +10,35 @@
       "framework": {
         "name": "Fiji National Curriculum Framework",
         "version": "2013",
-        "status": "working-framework-until-authorised-replacement-takes-effect",
-        "sourceUrl": "https://www.education.gov.fj/"
+        "status": "current-working-framework-until-official-replacement-is-formally-in-force",
+        "sourceUrl": "https://www.education.gov.fj/",
+        "reviewStatus": "comprehensive-review-announced-2026; replacement-not-yet-verified-as-in-force",
+        "authority": "Fiji Ministry of Education / Cabinet official publication",
+        "currentFrameworkEvidence": [
+          {
+            "id": "cabinet-review-endorsement",
+            "url": "https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/",
+            "meaning": "Cabinet endorsed review of the 2013 Fiji National Curriculum Framework; review endorsement is not itself replacement-framework commencement."
+          },
+          {
+            "id": "ministry-statement-in-parliament",
+            "url": "https://www.parliament.gov.fj/wp-content/uploads/2026/06/Daily-Hansard-Monday-25th-May-2026.pdf",
+            "meaning": "Ministry reported the comprehensive review had launched and the revised framework would be submitted for Cabinet endorsement; this statement does not establish that a replacement is already in force."
+          }
+        ],
+        "replacementActivationPolicy": {
+          "trigger": "Official Ministry/Cabinet publication explicitly confirms the replacement framework and its effective date or commencement.",
+          "automaticActions": [
+            "Create a new immutable framework version record and archive the prior version.",
+            "Mark prior version superseded only from the official effective date.",
+            "Revalidate all class, subject, language, outcome, assessment and term mappings against the new framework and published syllabuses.",
+            "Flag changed, withdrawn, added and unmapped outcomes.",
+            "Regenerate draft daily activities, revision tasks, practice assessments, answer guides and rubrics from approved mappings.",
+            "Run curriculum integrity tests and produce a migration report for school administrators."
+          ],
+          "publicationGate": "Do not silently replace live student content. Stage the new mapping, require official-source verification and curriculum reviewer/school adoption approval, then publish versioned changes with an audit trail.",
+          "fallback": "If the official effective date, adopted syllabus, or outcome mapping is unclear, retain the last approved version and alert the owner; do not guess."
+        }
       },
       "sources": [
         {
