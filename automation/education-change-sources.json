@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "policy": "docs/education/country-adaptive-education-change-policy.md",
-  "monitoringStatus": "starter-registry-not-yet-connected-to-live-crawler",
+  "monitoringStatus": "scheduled-official-source-fingerprint-monitor-and-review-gated-framework-activation-in-proposal-branch-not-live-until-merge",
   "defaultCountry": "FJ",
   "curriculumProfiles": [
     {
