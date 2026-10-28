@@ -66,14 +66,19 @@ test("daily worksheets provide short action-based teacher steps for all supporte
 });
 
 
-test("every generated worksheet question has a worked example and accessible format options", () => {
+test("daily worksheets provide a separate worked example before the activities and clear student steps", () => {
   const daily = fs.readFileSync("src/js/paceduDailyWorksheetContent.js", "utf8");
-  assert.match(daily, /var examples = questions\.map\(function\(q, i\)/);
-  assert.match(daily, /workedAnswer: q\.answer/);
-  assert.match(daily, /explanation: q\.why/);
-  assert.match(daily, /showBeforeQuestion: true/);
-  assert.match(daily, /exampleRequiredBeforeEachQuestion:true/);
-  for (const format of ["text", "picture-or-object", "audio-read-aloud", "short-video-when-needed"]) {
+  assert.match(daily, /var workedExamples =/);
+  assert.match(daily, /var workedExample=workedExamples\[subject\]/);
+  assert.match(daily, /workedAnswer:workedExample\.workedAnswer/);
+  assert.match(daily, /explanation:workedExample\.explanation/);
+  assert.match(daily, /label:"Worked example — study this before starting"/);
+  assert.match(daily, /examplePlacement:"before_questions"/);
+  assert.match(daily, /STUDENT INSTRUCTIONS: 1\. Read or listen to the topic/);
+  assert.match(daily, /activitySequence:/);
+  assert.match(daily, /var displaySubject = \(subject==="Science" && \/\^Form \[34\]\$\//);
+  assert.match(daily, /"Basic Science"/);
+  for (const format of ["text", "picture-or-object", "audio-read-aloud"]) {
     assert.ok(daily.includes(format), "missing example format: " + format);
   }
 });
