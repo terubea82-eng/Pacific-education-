@@ -1,0 +1,18 @@
+{
+  "releaseId": "REPLACE-WITH-UNIQUE-RELEASE-ID",
+  "countryCode": "FJ",
+  "countryName": "Fiji",
+  "frameworkName": "REPLACE-WITH-OFFICIAL-FRAMEWORK-NAME",
+  "frameworkVersion": "REPLACE-WITH-OFFICIAL-VERSION",
+  "effectiveDate": "YYYY-MM-DD",
+  "officialNoticeUrl": "https://www.education.gov.fj/REPLACE-WITH-OFFICIAL-NOTICE",
+  "officialPublisher": "Fiji Ministry of Education",
+  "verificationStatus": "pending",
+  "releaseStatus": "draft",
+  "schoolAdoptionStatus": "pending",
+  "reviewedBy": "REPLACE-WITH-CURRICULUM-REVIEWER",
+  "approvedBy": "REPLACE-WITH-DIFFERENT-APPROVER",
+  "reviewedAt": "YYYY-MM-DDTHH:MM:SSZ",
+  "approvedContentPackPath": "src/data/curriculum/generated/FJ/REPLACE-WITH-VERSION/activities.json",
+  "notes": "Example only. This file must not be placed in automation/curriculum-releases until official evidence and the fully reviewed student-ready content pack exist."
+}
