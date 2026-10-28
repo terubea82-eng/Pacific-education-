@@ -234,14 +234,70 @@
     wrapApi("PacEduPracticeExamPaper",["getPaper"],"exam");
     return !!(global.PacEduDailyWorksheetContent && global.PacEduTermLearningPlan && global.PacEduPracticeExamPaper);
   }
+  function installPanel() {
+    var doc=global.document;
+    if(!doc || doc.getElementById("paceduDailyMarkingCriteriaPanel")) return;
+    var host=doc.getElementById("paceduTeacherDailyLearningOnlyShell") || doc.getElementById("teacherDashboard");
+    if(!host) return;
+    function node(tag, value, parent) { var n=doc.createElement(tag); if(value!=null)n.textContent=value; if(parent)parent.appendChild(n); return n; }
+    function select(labelText,id,values,parent) {
+      var label=node("label",labelText,parent);label.style.cssText="display:block;margin:8px 0;font-weight:600";
+      var s=node("select",null,label);s.id=id;s.style.cssText="display:block;width:100%;min-height:42px;padding:8px;margin-top:4px;font:inherit";
+      values.forEach(function(v){var o=node("option",v.label||v,s);o.value=v.value||v;});return s;
+    }
+    var panel=node("section",null,host);panel.id="paceduDailyMarkingCriteriaPanel";
+    panel.style.cssText="margin:12px 0;padding:14px;border:1px solid #9ab8c7;border-radius:10px";
+    node("h3","Daily Marking Criteria",panel);
+    node("p","Generate a marking guide linked to the selected daily worksheet. The same criteria ID is attached to revision and practice-exam outputs. Draft criteria must be checked against the real task and approved syllabus outcome.",panel);
+    var api=global.PacEduDailyWorksheetContent;
+    var levels=(api&&api.levels||["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 1","Form 2","Form 3","Form 4","Form 5","Form 6","Form 7"]).map(function(v){return {value:v,label:v};});
+    var subjects=(api&&api.subjects||Object.keys(SUBJECTS)).map(function(v){return {value:v,label:v};});
+    var lv=select("Class / level","paceduMarkingLevel",levels,panel);
+    var sub=select("Subject","paceduMarkingSubject",subjects,panel);
+    var ab=select("Ability group","paceduMarkingAbility",Object.keys(ABILITIES).map(function(k){return {value:k,label:ABILITIES[k].label};}),panel);
+    var term=select("Term","paceduMarkingTerm",[{value:"T1",label:"Term 1"},{value:"T2",label:"Term 2"},{value:"T3",label:"Term 3"}],panel);
+    var week=select("Week","paceduMarkingWeek",Array.from({length:9},function(_,i){return {value:String(i+1),label:"Week "+(i+1)};}),panel);
+    var day=select("Day","paceduMarkingDay",Array.from({length:5},function(_,i){return {value:String(i+1),label:"Day "+(i+1)};}),panel);
+    term.addEventListener("change",function(){
+      var max=term.value==="T3"?5:9,old=Number(week.value)||1;week.textContent="";
+      for(var i=1;i<=max;i++){var o=node("option","Week "+i,week);o.value=String(i);}
+      week.value=String(Math.min(old,max));
+    });
+    var generate=node("button","Generate marking guide",panel);generate.type="button";generate.style.cssText="min-height:44px;padding:10px 14px;margin:8px 8px 8px 0;font:inherit;font-weight:700";
+    var print=node("button","Print / Save as PDF",panel);print.type="button";print.style.cssText="min-height:44px;padding:10px 14px;margin:8px 0;font:inherit";
+    var out=node("div",null,panel);out.id="paceduDailyMarkingCriteriaOutput";out.setAttribute("aria-live","polite");
+    generate.addEventListener("click",function(){
+      out.textContent="";
+      var worksheetApi=global.PacEduDailyWorksheetContent;
+      var opts={level:lv.value,subject:sub.value,term:term.value,week:Number(week.value),day:Number(day.value),ability:ab.value};
+      var sheet=worksheetApi&&typeof worksheetApi.getCurriculumWorksheet==="function"?worksheetApi.getCurriculumWorksheet(opts):null;
+      var rubric=sheet&&sheet.markingCriteria?sheet.markingCriteria:build(opts);
+      node("h4",rubric.level+" · "+rubric.subject+" · "+rubric.term+" · Week "+(rubric.week||opts.week)+" Day "+(rubric.day||opts.day),out);
+      node("p","Ability: "+rubric.abilityLabel+" — "+rubric.abilityGuidance,out);
+      node("p","Criteria ID: "+rubric.criteriaId+" · Total marks: "+rubric.totalMarks+" · Status: "+rubric.status,out);
+      node("p","Curriculum mapping: "+rubric.curriculumMappingStatus+". This is not an official Ministry marking scheme until verified.",out);
+      node("h4","Marking criteria",out);
+      rubric.criteria.forEach(function(c){node("p",c.name+" ("+c.weightPercent+"%): "+c.descriptor,out);});
+      if(rubric.questionCriteria.length){
+        node("h4","Question-by-question guide",out);
+        rubric.questionCriteria.forEach(function(q){node("p","Q"+q.questionNumber+" ("+q.maxMarks+" mark"+(q.maxMarks===1?"":"s")+") — "+q.type+": "+q.prompt+" | "+q.scoringMode+". "+q.teacherNote,out);});
+      } else node("p","No questions were returned for this selection. Review the worksheet source before using this guide.",out);
+      node("h4","Feedback and revision",out);
+      rubric.feedbackRules.forEach(function(rule){node("p","• "+rule,out);});
+      node("p",rubric.warning,out);
+      try{global.localStorage.setItem("pacEduLastGeneratedMarkingCriteria",JSON.stringify(rubric));}catch(e){}
+    });
+    print.addEventListener("click",function(){if(!out.textContent.trim())generate.click();if(typeof global.print==="function")global.print();});
+  }
   global.PacEduDailyMarkingCriteria=Object.freeze({
     version:VERSION,abilities:ABILITIES,subjects:Object.keys(SUBJECTS),
-    build:build,attach:attach,scoreObjective:scoreObjective,install:install,
+    build:build,attach:attach,scoreObjective:scoreObjective,install:install,installPanel:installPanel,
     getCriteria:function(options){return build(options||{});}
   });
   if(global.document){
-    if(global.document.readyState==="loading")global.document.addEventListener("DOMContentLoaded",install);
-    else install();
-    if(typeof global.setInterval==="function"){var tries=0;var timer=global.setInterval(function(){tries++;if(install()||tries>=40)global.clearInterval(timer);},100);}
+    if(global.document.readyState==="loading")global.document.addEventListener("DOMContentLoaded",function(){install();installPanel();});
+    else {install();installPanel();}
+    if(global.MutationObserver && global.document.body){var observer=new global.MutationObserver(function(){install();installPanel();});observer.observe(global.document.body,{childList:true,subtree:true});}
+    if(typeof global.setInterval==="function"){var tries=0;var timer=global.setInterval(function(){tries++;install();installPanel();if((global.PacEduDailyWorksheetContent&&global.PacEduTermLearningPlan&&global.PacEduPracticeExamPaper&&global.document.getElementById("paceduDailyMarkingCriteriaPanel"))||tries>=40)global.clearInterval(timer);},100);}
   } else { install(); }
 })(window);
