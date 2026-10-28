@@ -493,6 +493,28 @@
       curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
       curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
     );
+    /* Short, action-based teacher steps shared across every supported subject. */
+    var teacherStepsBySubject = {
+      "English": ["Show the text or example.", "Read it aloud if needed.", "Ask the questions.", "Check answers and give one clear correction."],
+      "Mathematics": ["Show the worked example.", "Model the steps.", "Let learners solve the questions.", "Check the working and answers."],
+      "Science": ["Show the materials or observation.", "Explain the safe steps.", "Ask learners to observe and record.", "Check evidence before conclusions."],
+      "Social Studies": ["Introduce the place, person or issue.", "Explain the key idea.", "Ask learners to compare or describe.", "Check answers and reasons."],
+      "Healthy Living": ["Show the health or safety example.", "Explain the safe choice.", "Ask learners to practise or choose.", "Check understanding."],
+      "Physical Education": ["Explain the skill and safety rule.", "Demonstrate the movement.", "Let learners practise safely.", "Check participation and technique."],
+      "Arts and Crafts": ["Show the materials and example.", "Explain the making steps.", "Let learners create safely.", "Review the work and one improvement."],
+      "Music": ["Model the sound or rhythm.", "Practise it together.", "Let learners repeat or create a pattern.", "Listen and give one helpful tip."],
+      "Digital Literacy": ["Show the tool or digital example.", "Explain safe use.", "Guide learners through the task.", "Check the result and safe choices."],
+      "iTaukei Language": ["Model the approved word or phrase.", "Say it together.", "Let learners practise speaking, listening or writing.", "Check meaning and pronunciation respectfully."],
+      "Hindi": ["Model the approved word or phrase.", "Say or read it together.", "Let learners practise the task.", "Check meaning and give one correction."]
+    };
+    worksheet.teacherInstructions = (teacherStepsBySubject[subject] || [
+      "Show the example.", "Explain the task.", "Guide learners through the questions.", "Check answers."
+    ]).slice();
+    worksheet.teacherInstructionStyle = "SHORT_NUMBERED_ACTION_STEPS";
+    if (worksheet.dailyLesson && typeof worksheet.dailyLesson === "object") {
+      worksheet.dailyLesson.teacherInstructions = worksheet.teacherInstructions.slice();
+      worksheet.dailyLesson.teacherInstructionStyle = "SHORT_NUMBERED_ACTION_STEPS";
+    }
     var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
     var classReference = String(options.classReference || "").trim();
     var indicatorTerm = String(options.curriculumTerm || options.term || "").trim();
