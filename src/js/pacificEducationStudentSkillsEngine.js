@@ -68,6 +68,10 @@
         return ctx && ctx.classId ? String(ctx.classId) : null;
     }
 
+    function classSkillKey(classId, skillId) {
+        return JSON.stringify([String(classId), String(skillId)]);
+    }
+
     function now() {
         return new Date().toISOString();
     }
@@ -209,12 +213,17 @@
         }
 
         const record = getStudentRecord(studentId);
-        const previous = record.skills[skill.skillId] || null;
+        // Scope each skill key by class so identical skill IDs in different
+        // classes cannot overwrite one another. Keep the legacy lookup only
+        // for reading/migrating a matching class record.
+        const storageKey = classSkillKey(classId, skill.skillId);
+        const legacy = record.skills[skill.skillId] || null;
+        const previous = record.skills[storageKey] ||
+            (legacy && String(legacy.classId || "") === classId ? legacy : null);
 
-        record.skills[skill.skillId] = {
+        record.skills[storageKey] = {
             skillId: skill.skillId,
             classId,
-            name: skill.name || skill.skillId,
             category: skill.category || "learning_skills",
             subject: skill.subject || null,
             status:
@@ -252,14 +261,28 @@
         const classId = selectedClassId();
         if (!classId) return null;
         const record = getStudentRecord(studentId);
-        return record.skills[skillId] && String(record.skills[skillId].classId || "") === classId ? record.skills[skillId] : null;
+        const scoped = record.skills[classSkillKey(classId, skillId)];
+        if (scoped && String(scoped.classId || "") === classId) return scoped;
+
+        // Backward compatibility for older records saved under skillId alone.
+        const legacy = record.skills[skillId];
+        return legacy && String(legacy.classId || "") === classId ? legacy : null;
     }
 
     function getAllSkills(studentId) {
         const classId = selectedClassId();
         if (!classId) return [];
         const record = getStudentRecord(studentId);
-        return Object.values(record.skills).filter(function(skill){ return String(skill.classId || "") === classId; });
+        const skills = Object.values(record.skills).filter(function(skill) {
+            return String(skill.classId || "") === classId;
+        });
+        // Legacy records may also be reachable through a scoped key; expose
+        // each class/skill pair once.
+        const unique = new Map();
+        skills.forEach(function(skill) {
+            unique.set(classSkillKey(classId, skill.skillId), skill);
+        });
+        return Array.from(unique.values());
     }
 
     function getEvidence(studentId) {
