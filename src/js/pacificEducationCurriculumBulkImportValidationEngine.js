@@ -1,51 +1,72 @@
 /*
  * Pacific Education — Curriculum Bulk Import Validation Engine
- * Version 1.0.0
- * PROTOTYPE ONLY.
+ * Version 1.1.0
+ * PROTOTYPE ONLY. Validation never certifies official curriculum content.
  *
- * Validates imported curriculum alignment records before linking.
- * It detects missing fields, duplicate IDs, missing source/document/evidence
- * and does not certify official curriculum content.
+ * Source and schedule provenance must be explicit before a mapping can enter
+ * the review queue. Official alignment still requires educator verification.
  */
 (function(window){
     "use strict";
 
-    var VERSION="1.0.0";
+    var VERSION="1.1.0";
     var REQUIRED=["id","indicatorId","level","subjectId","term","indicatorText"];
+    var LEVELS=["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
+    var TERMS=["Term 1","Term 2","Term 3","Term 4"];
 
     function workspace(){return window.PacificEducationCurriculumAlignmentImportWorkspace||null;}
+
+    function isPlaceholder(value){return /\b(?:pending|placeholder|to be confirmed|to be checked|todo|tbd|example\.com)\b/i.test(String(value||""));}
 
     function validateRecord(item,seen){
         var errors=[];
         REQUIRED.forEach(function(k){if(!item||!String(item[k]||"").trim())errors.push(k+" is required");});
-        if(item&&item.sourceReference&&!item.documentId)errors.push("documentId missing for source reference");
-        if(item&&item.evidenceReference&&!item.sourceReference)errors.push("sourceReference missing for evidence reference");
-        if(item&&item.id&&seen[item.id])errors.push("duplicate id: "+item.id);
+        if(!item)return {valid:false,errors:errors};
+        if(LEVELS.indexOf(String(item.level||""))===-1)errors.push("level is not a supported Fiji ECE/Class 1–8/Form 3–7 level");
+        if(TERMS.indexOf(String(item.term||""))===-1)errors.push("term must be Term 1, Term 2, Term 3, or Term 4");
+        if(item.week!==undefined&&item.week!==null&&item.week!==""){
+            if(!Number.isInteger(Number(item.week))||Number(item.week)<1||Number(item.week)>13)errors.push("week must be an integer from 1 to 13");
+            if(!String(item.scheduleEvidenceReference||"").trim())errors.push("scheduleEvidenceReference is required for a week claim");
+        }
+        if(item.day!==undefined&&item.day!==null&&item.day!==""){
+            if(!Number.isInteger(Number(item.day))||Number(item.day)<1||Number(item.day)>5)errors.push("day must be an integer from 1 to 5");
+            if(!String(item.scheduleEvidenceReference||"").trim())errors.push("scheduleEvidenceReference is required for a day claim");
+        }
+        ["documentId","sourceReference","sourceTitle","sourceVersion","sourceAuthority"].forEach(function(k){
+            if(!String(item[k]||"").trim())errors.push(k+" is required for source traceability");
+            else if(isPlaceholder(item[k]))errors.push(k+" cannot be placeholder text");
+        });
+        if(!String(item.sourcePage||"").trim()&&!String(item.sourceSection||"").trim())errors.push("sourcePage or sourceSection is required");
+        if((item.sourcePage&&isPlaceholder(item.sourcePage))||(item.sourceSection&&isPlaceholder(item.sourceSection)))errors.push("sourcePage/sourceSection cannot be placeholder text");
+        if(item.sourceReference&&!/^https?:\/\//i.test(String(item.sourceReference).trim()))errors.push("sourceReference must be an HTTP(S) URL or stable document URL");
+        if(item.scheduleEvidenceReference&&isPlaceholder(item.scheduleEvidenceReference))errors.push("scheduleEvidenceReference cannot be placeholder text");
+        if(!String(item.scheduleEvidenceReference||"").trim())errors.push("scheduleEvidenceReference is required to support term/week placement");
+        if(item.id&&seen[item.id])errors.push("duplicate id: "+item.id);
+        if(/verified|officially[-_ ]aligned|ministry[-_ ]approved/i.test(String(item.validationStatus||item.status||""))){
+            errors.push("import cannot self-certify curriculum alignment; educator review is required");
+        }
         return {valid:errors.length===0,errors:errors};
     }
 
     function validate(records){
         records=Array.isArray(records)?records:[];
-        var seen={}, valid=[], invalid=[];
+        var seen={}, results=[], duplicateIds={};
         records.forEach(function(item){
             var result=validateRecord(item,seen);
-            if(item&&item.id)seen[item.id]=true;
-            (result.valid?valid:invalid).push({
-                id:item&&item.id?item.id:"",
-                indicatorId:item&&item.indicatorId?item.indicatorId:"",
-                valid:result.valid,
-                errors:result.errors
-            });
+            if(item&&item.id){
+                if(seen[item.id])duplicateIds[item.id]=true;
+                seen[item.id]=true;
+            }
+            results.push({id:item&&item.id?item.id:"",indicatorId:item&&item.indicatorId?item.indicatorId:"",valid:result.valid,errors:result.errors});
         });
+        var validCount=results.filter(function(x){return x.valid;}).length;
         return {
-            valid:invalid.length===0,
+            valid:validCount===records.length,
             total:records.length,
-            validRecords:valid.length,
-            invalidRecords:invalid.length,
-            duplicateIds:Object.keys(seen).filter(function(id){
-                return records.filter(function(x){return x&&x.id===id;}).length>1;
-            }),
-            results:valid.concat(invalid),
+            validRecords:validCount,
+            invalidRecords:records.length-validCount,
+            duplicateIds:Object.keys(duplicateIds),
+            results:results,
             prototype:true,
             productionEligible:false
         };
@@ -66,12 +87,13 @@
             var result=w.add(item);
             if(result.success)imported.push(result.item);
         });
-        return {success:true,validation:check,imported:imported,productionEligible:false,prototype:true};
+        return {success:imported.length===records.length,validation:check,imported:imported,productionEligible:false,prototype:true};
     }
 
     window.PacificEducationCurriculumBulkImportValidationEngine=Object.freeze({
         name:"PacificEducationCurriculumBulkImportValidationEngine",
         version:VERSION,
+        supportedLevels:LEVELS.slice(),
         validate:validate,
         validateWorkspace:validateWorkspace,
         importBatch:importBatch,

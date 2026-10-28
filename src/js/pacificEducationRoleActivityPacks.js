@@ -524,6 +524,171 @@
       var source = document.createElement("p"); source.textContent = activity.source; card.appendChild(source);
     }
     var status = document.createElement("p"); status.textContent = activity.curriculumStatus; status.setAttribute("role","note"); card.appendChild(status);
+    if (String(role || "").toLowerCase() === "teacher" && global.PacEduDownloadableClassPacks &&
+        typeof global.PacEduDownloadableClassPacks.renderControls === "function") {
+      global.PacEduDownloadableClassPacks.renderControls(card, context);
+    }
+    if (learnerRole && global.PacEduDailyWorksheetContent &&
+        typeof global.PacEduDailyWorksheetContent.getCurriculumWorksheet === "function") {
+      var rawLessonLevel = String(context.level || "");
+      var yearMatch = rawLessonLevel.match(/^Year\\s+([1-8])$/i);
+      if (yearMatch) rawLessonLevel = "Class " + yearMatch[1];
+      var lessonLevel = global.PacEduDailyWorksheetContent.levels.indexOf(rawLessonLevel) >= 0 ? rawLessonLevel : "Class 1";
+      var requestedLessonSubject = String(context.subject || "English");
+      var lessonSubjectAliases = {"Maths":"Mathematics","Social Science":"Social Studies","Health":"Healthy Living","Arts":"Arts and Crafts"};
+      var lessonSubject = lessonSubjectAliases[requestedLessonSubject] || requestedLessonSubject;
+      if (global.PacEduDailyWorksheetContent.subjects.indexOf(lessonSubject) < 0) lessonSubject = "";
+      if (lessonSubject) {
+      var lessonTermRaw = String(context.term || global.localStorage.getItem("pacificEducationTerm") || "T1").toUpperCase();
+      var lessonTerm = /^(T1|T2|T3|ASSESSMENT|INTERVENTION|REVISION|EXAMS)$/.test(lessonTermRaw) ? lessonTermRaw :
+        (/2/.test(lessonTermRaw) ? "T2" : (/3/.test(lessonTermRaw) ? "T3" : "T1"));
+      var storedWeek = Number(global.localStorage.getItem("pacificEducationWeek") || global.localStorage.getItem("pacificEducationTeachingWeek") || String(Math.ceil(Math.max(1,Number(day)||1)/5)));
+      var lessonWeek = Math.max(1, Math.min(lessonTerm === "T3" ? 5 : lessonTerm === "INTERVENTION" ? 5 : lessonTerm === "REVISION" || lessonTerm === "EXAMS" ? 2 : 9, storedWeek || 1));
+      var lessonDay = ((Math.max(1, Number(day) || 1) - 1) % 5) + 1;
+      var lessonAbility = ["support","developing","expected","extension"].indexOf(context.capability) >= 0 ? context.capability : "developing";
+      var lesson = global.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+        level:lessonLevel, subject:lessonSubject, term:lessonTerm, curriculumTerm:context.term || lessonTerm,
+        week:lessonWeek, day:lessonDay, dayNumber:Math.max(1,Number(day)||1),
+        ability:lessonAbility, classReference:context.classReference
+      });
+      if (lesson && lesson.dailyLesson) {
+        var lessonPanel = document.createElement("section");
+        lessonPanel.setAttribute("aria-label","Step-by-step see read and hear lesson");
+        lessonPanel.style.cssText="margin:14px 0;padding:14px;border:1px solid #b7c9d6;border-radius:9px;";
+        var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
+        var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
+        var scheduleNav=document.createElement("section");
+        scheduleNav.setAttribute("aria-label","Choose term and teaching week");
+        scheduleNav.style.cssText="margin:10px 0;padding:10px;border:1px solid #c8d5de;border-radius:8px;";
+        var scheduleLabel=document.createElement("label");scheduleLabel.textContent="Term: ";scheduleLabel.style.cssText="display:inline-block;margin:4px 8px 4px 0;";
+        var termSelect=document.createElement("select");termSelect.style.cssText="padding:8px;font:inherit;";
+        [["T1","Term 1 — 9 weeks"],["T2","Term 2 — 9 weeks"],["T3","Term 3 — 5 weeks"]].forEach(function(opt){var option=document.createElement("option");option.value=opt[0];option.textContent=opt[1];if(opt[0]===lessonTerm)option.selected=true;termSelect.appendChild(option);});
+        scheduleLabel.appendChild(termSelect);scheduleNav.appendChild(scheduleLabel);
+        var weekLabel=document.createElement("label");weekLabel.textContent="Week: ";weekLabel.style.cssText="display:inline-block;margin:4px 8px 4px 0;";
+        var weekSelect=document.createElement("select");weekSelect.style.cssText="padding:8px;font:inherit;";
+        function populateWeeks(){while(weekSelect.firstChild)weekSelect.removeChild(weekSelect.firstChild);var maxWeek=termSelect.value==="T3"?5:9;for(var wi=1;wi<=maxWeek;wi++){var option=document.createElement("option");option.value=String(wi);option.textContent="Week "+wi;if(wi===Math.min(maxWeek,Number(lessonWeek)||1))option.selected=true;weekSelect.appendChild(option);}}
+        termSelect.addEventListener("change",populateWeeks);weekLabel.appendChild(weekSelect);scheduleNav.appendChild(weekLabel);
+        var openWeek=document.createElement("button");openWeek.type="button";openWeek.textContent="Open selected week";openWeek.style.cssText="padding:9px 12px;font:inherit;font-weight:700;margin:4px;";
+        openWeek.addEventListener("click",function(){global.localStorage.setItem("pacificEducationTerm",termSelect.value);global.localStorage.setItem("pacificEducationWeek",weekSelect.value);global.localStorage.setItem("pacificEducationTeachingWeek",weekSelect.value);render(role,stepId,host,day);});
+        scheduleNav.appendChild(openWeek);lessonPanel.appendChild(scheduleNav);populateWeeks();
+        var intention = document.createElement("p"); intention.textContent="Learning intention: "+lesson.dailyLesson.learningIntention; lessonPanel.appendChild(intention);
+        var levelObjective = document.createElement("p"); levelObjective.textContent=lessonLevel+" learning target: "+lesson.dailyLesson.classLevelObjective; lessonPanel.appendChild(levelObjective);
+        var player=document.createElement("section");
+        player.setAttribute("aria-label","Step-by-step lesson player");
+        player.style.cssText="padding:12px;border:1px solid #9bb4c4;border-radius:8px;margin:10px 0;";
+        var stepCounter=document.createElement("p"); stepCounter.setAttribute("aria-live","polite"); player.appendChild(stepCounter);
+        var frameHeading=document.createElement("h5"); player.appendChild(frameHeading);
+        var frameCaption=document.createElement("p"); frameCaption.style.cssText="font-size:1.05em;line-height:1.5;"; player.appendChild(frameCaption);
+        var frameAction=document.createElement("p"); player.appendChild(frameAction);
+        var frameNarration=document.createElement("p"); player.appendChild(frameNarration);
+        var playerControls=document.createElement("div"); playerControls.style.cssText="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;";
+        var previousStep=document.createElement("button"); previousStep.type="button"; previousStep.textContent="← Previous step"; previousStep.style.cssText="padding:10px;font:inherit;"; playerControls.appendChild(previousStep);
+        var nextStep=document.createElement("button"); nextStep.type="button"; nextStep.textContent="Next step →"; nextStep.style.cssText="padding:10px;font:inherit;font-weight:700;"; playerControls.appendChild(nextStep);
+        var hearStep=document.createElement("button"); hearStep.type="button"; hearStep.textContent="▶ Hear this step"; hearStep.style.cssText="padding:10px;font:inherit;"; playerControls.appendChild(hearStep);
+        var stopStep=document.createElement("button"); stopStep.type="button"; stopStep.textContent="Stop audio"; stopStep.style.cssText="padding:10px;font:inherit;"; playerControls.appendChild(stopStep);
+        player.appendChild(playerControls);
+        var activeStep=0;
+        function paintLessonStep(){
+          var step=lesson.dailyLesson.steps[activeStep];
+          stepCounter.textContent="Step "+(activeStep+1)+" of "+lesson.dailyLesson.steps.length;
+          frameHeading.textContent=step.mode;
+          frameCaption.textContent=step.onScreen;
+          frameAction.textContent="Your action: "+step.learnerAction;
+          frameNarration.textContent="Read / narration: "+step.narration;
+          previousStep.disabled=activeStep===0;
+          nextStep.disabled=activeStep===lesson.dailyLesson.steps.length-1;
+        }
+        previousStep.addEventListener("click",function(){if(activeStep>0){activeStep-=1;paintLessonStep();}});
+        nextStep.addEventListener("click",function(){if(activeStep<lesson.dailyLesson.steps.length-1){activeStep+=1;paintLessonStep();}});
+        hearStep.addEventListener("click",function(){
+          var step=lesson.dailyLesson.steps[activeStep];
+          if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText==="function") global.PacificEducationSpeech.speakText(step.narration,{allowRepeat:true});
+          else {frameNarration.textContent="Audio unavailable. Read this narration or ask your teacher to read it aloud: "+step.narration;}
+        });
+        stopStep.addEventListener("click",function(){if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.stopSpeech==="function") global.PacificEducationSpeech.stopSpeech();});
+        paintLessonStep();
+        lessonPanel.appendChild(player);
+        var textHeading=document.createElement("h5"); textHeading.textContent="Read the example"; lessonPanel.appendChild(textHeading);
+        var passage=document.createElement("p"); passage.textContent=lesson.dailyLesson.learnerText.passage; lessonPanel.appendChild(passage);
+        var model=document.createElement("p"); model.textContent="Worked example: "+lesson.dailyLesson.workedExample; lessonPanel.appendChild(model);
+        var listen=document.createElement("button"); listen.type="button"; listen.textContent="▶ Listen to lesson"; listen.style.cssText="padding:10px 14px;margin:5px 8px 5px 0;font:inherit;font-weight:700;";
+        listen.addEventListener("click",function(){
+          if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.speakText==="function") global.PacificEducationSpeech.speakText(lesson.dailyLesson.audioNarration.transcript,{allowRepeat:true});
+          else { var msg=document.createElement("p"); msg.textContent="Audio is unavailable here. Read the narration transcript or ask your teacher to read it aloud."; lessonPanel.appendChild(msg); }
+        });
+        lessonPanel.appendChild(listen);
+        var stopListen=document.createElement("button"); stopListen.type="button"; stopListen.textContent="Stop audio"; stopListen.style.cssText="padding:10px 14px;margin:5px;font:inherit;";
+        stopListen.addEventListener("click",function(){if(global.PacificEducationSpeech && typeof global.PacificEducationSpeech.stopSpeech==="function") global.PacificEducationSpeech.stopSpeech();});
+        lessonPanel.appendChild(stopListen);
+        var transcriptHeading=document.createElement("h5"); transcriptHeading.textContent="Audio transcript"; lessonPanel.appendChild(transcriptHeading);
+        var transcript=document.createElement("p"); transcript.textContent=lesson.dailyLesson.audioNarration.transcript; lessonPanel.appendChild(transcript);
+        var questionsHeading=document.createElement("h5"); questionsHeading.textContent="Try these questions"; lessonPanel.appendChild(questionsHeading);
+        var questions=document.createElement("ol");
+        lesson.questions.forEach(function(question){
+          var q=document.createElement("li"); q.textContent=question.prompt;
+          if(question.options && question.options.length){
+            var choices=document.createElement("ul");
+            question.options.forEach(function(option,index){var choice=document.createElement("li");choice.textContent=String.fromCharCode(65+index)+". "+option;choices.appendChild(choice);});
+            q.appendChild(choices);
+          }
+          questions.appendChild(q);
+        });
+        lessonPanel.appendChild(questions);
+        if (lesson.termLearningPlan) {
+          var plan = lesson.termLearningPlan;
+          var planSection = document.createElement("section");
+          planSection.setAttribute("aria-label","Term learning pathway");
+          planSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
+          var planTitle=document.createElement("h5"); planTitle.textContent=plan.term+" pathway: "+plan.weeks+" weeks / "+plan.teachingDays+" daily learning slots"; planSection.appendChild(planTitle);
+          var planNote=document.createElement("p"); planNote.textContent=plan.purpose+" Ability group: "+plan.abilityLabel+". "+plan.differentiation+" Official indicator mapping: "+plan.curriculumStatus+"."; planSection.appendChild(planNote);
+          var weeksList=document.createElement("ol");
+          plan.weeksPlan.forEach(function(weekPlan){var item=document.createElement("li");item.textContent=weekPlan.title+" — Day 1 introduce; Day 2 model; Day 3 guided practice; Day 4 apply independently; Day 5 review and evidence.";weeksList.appendChild(item);});
+          planSection.appendChild(weeksList);
+          lessonPanel.appendChild(planSection);
+        }
+        if (lesson.revisionPaper && lesson.revisionPaper.questions && lesson.revisionPaper.questions.length && lessonWeek === (lesson.termLearningPlan ? lesson.termLearningPlan.weeks : lessonWeek)) {
+          var revisionSection=document.createElement("section");
+          revisionSection.setAttribute("aria-label","End of term revision practice");
+          revisionSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
+          var revisionTitle=document.createElement("h5"); revisionTitle.textContent=lesson.revisionPaper.title+" ("+lesson.revisionPaper.questionCount+" questions)"; revisionSection.appendChild(revisionTitle);
+          var revisionNote=document.createElement("p"); revisionNote.textContent="Practice paper from the final two teaching weeks. It is not an official examination paper; teacher review and syllabus mapping are required."; revisionSection.appendChild(revisionNote);
+          var revisionQuestions=document.createElement("ol");
+          lesson.revisionPaper.questions.forEach(function(question){var item=document.createElement("li");item.textContent=question.prompt;if(question.options&&question.options.length){var opts=document.createElement("ul");question.options.forEach(function(option,index){var opt=document.createElement("li");opt.textContent=String.fromCharCode(65+index)+". "+option;opts.appendChild(opt);});item.appendChild(opts);}revisionQuestions.appendChild(item);});
+          revisionSection.appendChild(revisionQuestions);
+          if (!learnerRole) {
+            var keyDetails=document.createElement("details");
+            var keySummary=document.createElement("summary"); keySummary.textContent="Teacher answer key and explanations"; keyDetails.appendChild(keySummary);
+            var keyList=document.createElement("ol");
+            lesson.revisionPaper.answerKey.forEach(function(entry){var item=document.createElement("li");item.textContent=entry.answer+" — "+entry.explanation;keyList.appendChild(item);});
+            keyDetails.appendChild(keyList);revisionSection.appendChild(keyDetails);
+          }
+          lessonPanel.appendChild(revisionSection);
+        } else if (lesson.termLearningPlan && lessonWeek < lesson.termLearningPlan.weeks) {
+          var revisionLocked=document.createElement("p");revisionLocked.setAttribute("role","note");revisionLocked.textContent="Term revision and the practice examination become available in Week "+lesson.termLearningPlan.weeks+", after this term's scheduled daily activities.";lessonPanel.appendChild(revisionLocked);
+        }
+        if (lesson.practiceExamPaper && lesson.practiceExamPaper.questions && lesson.practiceExamPaper.questions.length && lessonWeek === (lesson.termLearningPlan ? lesson.termLearningPlan.weeks : lessonWeek)) {
+          var examSection=document.createElement("section");examSection.setAttribute("aria-label","End of term practice examination");examSection.style.cssText="margin:14px 0;padding:12px;border:1px solid #b7c9d6;border-radius:8px;";
+          var examTitle=document.createElement("h5");examTitle.textContent=lesson.practiceExamPaper.title+" ("+lesson.practiceExamPaper.questionCount+" questions)";examSection.appendChild(examTitle);
+          var examNote=document.createElement("p");examNote.textContent="Mock practice only, not an official or past examination paper. Teacher review and syllabus mapping are required.";examSection.appendChild(examNote);
+          var examQuestions=document.createElement("ol");lesson.practiceExamPaper.questions.forEach(function(question){var item=document.createElement("li");item.textContent=question.prompt;if(question.options&&question.options.length){var opts=document.createElement("ul");question.options.forEach(function(option,index){var opt=document.createElement("li");opt.textContent=String.fromCharCode(65+index)+". "+option;opts.appendChild(opt);});item.appendChild(opts);}examQuestions.appendChild(item);});examSection.appendChild(examQuestions);
+          if (!learnerRole) {var examKey=document.createElement("details");var examKeySummary=document.createElement("summary");examKeySummary.textContent="Teacher answer key and explanations";examKey.appendChild(examKeySummary);var examKeyList=document.createElement("ol");lesson.practiceExamPaper.answerKey.forEach(function(entry){var item=document.createElement("li");item.textContent=entry.answer+" — "+entry.explanation;examKeyList.appendChild(item);});examKey.appendChild(examKeyList);examSection.appendChild(examKey);}
+          lessonPanel.appendChild(examSection);
+        }
+        var alignment=document.createElement("p");
+        var candidateIndicator=lesson.dailyLesson.curriculumAlignment.candidateIndicator;
+        alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". "+
+          (candidateIndicator ? "Candidate indicator for teacher review: "+candidateIndicator.id+" — "+candidateIndicator.text+"; strand: "+candidateIndicator.strand+"; source status: "+candidateIndicator.sourceStatus+". This is not verified alignment." :
+          "Exact official achievement indicator: not yet mapped; teacher review is required.");
+        lessonPanel.appendChild(alignment);
+        card.appendChild(lessonPanel);
+      }
+      } else {
+        var unsupportedLesson = document.createElement("p");
+        unsupportedLesson.setAttribute("role","note");
+        unsupportedLesson.textContent="A dedicated see-read-hear lesson template is not available yet for "+requestedLessonSubject+". PacEdu will not substitute an English lesson. The approved activity above remains available; the teacher must supply and verify this subject's example and syllabus indicator.";
+        card.appendChild(unsupportedLesson);
+      }
+    }
     var label = document.createElement("label"); label.textContent = "Your response / work note (avoid private or sensitive information)";
     var input = document.createElement("textarea"); input.id = "paceduRoleActivityResponse"; input.rows = 4; input.style.cssText = "display:block;width:100%;max-width:100%;box-sizing:border-box;padding:10px;margin:8px 0;font:inherit;"; input.setAttribute("aria-label", label.textContent); label.appendChild(input); card.appendChild(label);
     var doneLabel = document.createElement("label"); doneLabel.style.cssText = "display:flex;gap:8px;align-items:flex-start;margin:10px 0;";
@@ -554,8 +719,16 @@
       if (!response) { live.textContent = "Please enter your response or work note before saving."; input.focus(); return; }
       if (!done.checked) { live.textContent = "Please confirm that you attempted or completed the task before saving."; done.focus(); return; }
       var records = readAll();
+      var learnerRegistration = null;
+      try { learnerRegistration = JSON.parse(global.sessionStorage.getItem("pacificEducationPilotRegistration") || "null"); } catch (_) {}
+      var preparedAt = new Date().toISOString();
+      var assignmentId = [context.classReference || "class-pending", context.level || "level-pending", context.subject || "subject-pending", context.term || "term-pending", "day-" + (Math.max(1,Number(day)||1)), preparedAt.slice(0,10)].join(":");
       records[key] = {
-        activityId:activity.id, role:role, title:activity.title, countryCode:context.countryCode,
+        activityId:activity.id, assignmentId:assignmentId, preparedDate:preparedAt.slice(0,10),
+        learnerReference:learnerRegistration && learnerRegistration.learnerReference || "",
+        learnerIdentityStatus:learnerRegistration && learnerRegistration.identityStatus || "identity-not-available",
+        learnerIdentityPending:!!(learnerRegistration && learnerRegistration.identityPending),
+        role:role, title:activity.title, countryCode:context.countryCode,
         classReference:context.classReference, level:context.level, subject:context.subject, term:context.term,
         capability:context.capability, day:Math.max(1,Number(day)||1), response:response, completed:true,
         learningStage:activity.learningStage || "", learningCycle:activity.learningCycle || null,
@@ -571,7 +744,32 @@
         savedAt:new Date().toISOString(), storage:"local-device-pilot"
       };
       if (writeAll(records)) {
-        live.textContent = "Saved on this device. Status: " + activity.verificationStatus + ". This is not teacher approval or an official curriculum result.";
+        var reviewLinked = false;
+        try {
+          var reviewKey = "pacificEducationActivityResponses";
+          var reviewRows = JSON.parse(global.localStorage.getItem(reviewKey) || "[]");
+          if (!Array.isArray(reviewRows)) reviewRows = [];
+          reviewRows.push({
+            responseId:"pe-response-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2,8),
+            assignmentId:assignmentId, activityId:activity.id, title:activity.title,
+            studentName:learnerRegistration && learnerRegistration.name || "",
+            learnerNameOrReference:learnerRegistration && learnerRegistration.name || "",
+            learnerReference:learnerRegistration && learnerRegistration.learnerReference || "",
+            learnerIdentityStatus:learnerRegistration && learnerRegistration.identityStatus || "identity-not-available",
+            learnerIdentityPending:!!(learnerRegistration && learnerRegistration.identityPending),
+            classReference:context.classReference, classLevel:context.level, subject:context.subject,
+            term:context.term, capability:context.capability, day:Math.max(1,Number(day)||1),
+            type:"daily-activity", questionText:activity.title, response:response,
+            preparedDate:preparedAt.slice(0,10), savedAt:preparedAt,
+            reviewStatus:"pending-teacher-review", evidenceType:activity.evidence,
+            source:"PacEdu learner workspace; local pilot"
+          });
+          global.localStorage.setItem(reviewKey, JSON.stringify(reviewRows.slice(-500)));
+          reviewLinked = true;
+        } catch (_) {}
+        live.textContent = reviewLinked
+          ? "Saved on this device and added to the teacher review queue. Learner identity remains subject to verification; this is not teacher approval or an official curriculum result."
+          : "Saved on this device, but the teacher review queue could not be updated. Tell your teacher or pilot coordinator; do not assume the submission was received.";
         try {
           var progressKey = "pacificEducationStudentDailyActivityProgressV1";
           if (role === "student" || role === "blind-learner" || role === "deaf-learner") {
