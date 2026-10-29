@@ -389,6 +389,19 @@ jobs:
             if (!addedThisRound) break;
             round++;
           }
+          // Preserve explicit teacher review decisions for unchanged article URLs.
+          // Newly collected URLs remain pending; never auto-approve a new article.
+          const previousFeedPath = 'docs/data/current-affairs.json';
+          let previousItems = [];
+          try {
+            const previousFeed = JSON.parse(fs.readFileSync(previousFeedPath, 'utf8'));
+            previousItems = Array.isArray(previousFeed) ? previousFeed :
+              (Array.isArray(previousFeed.items) ? previousFeed.items :
+               Array.isArray(previousFeed.articles) ? previousFeed.articles : []);
+          } catch (error) {
+            console.warn('Could not read prior current-affairs feed for review preservation: ' + error.message);
+          }
+          const previousByUrl = new Map(previousItems.filter(item => item && item.url).map(item => [item.url, item]));
           const items = selected.map(a => {
             const combinedText = a.title + ' ' + a.description;
             const applicable = subjects(combinedText);
@@ -411,6 +424,22 @@ jobs:
               approved: false,
               sourceType: 'EDUCATIONAL_CURRENT_AFFAIRS'
             };
+          }).map(item => {
+            const previous = previousByUrl.get(item.url);
+            if (previous && previous.approved === true &&
+                previous.verificationStatus === 'APPROVED_BY_TEACHER' &&
+                previous.levelRecommendationBasis === 'TEACHER_REVIEWED') {
+              return {
+                ...item,
+                approved: true,
+                verificationStatus: 'APPROVED_BY_TEACHER',
+                levelRecommendationBasis: 'TEACHER_REVIEWED',
+                ageSuitability: previous.ageSuitability || item.ageSuitability,
+                levelsApplicable: Array.isArray(previous.levelsApplicable) && previous.levelsApplicable.length
+                  ? previous.levelsApplicable : item.levelsApplicable
+              };
+            }
+            return item;
           }).sort((a, b) => {
             const rank = { FIJI: 0, PACIFIC: 1, GLOBAL: 2 };
             return (rank[a.countryOrRegion] ?? 2) - (rank[b.countryOrRegion] ?? 2) ||
@@ -435,8 +464,14 @@ jobs:
                 item.levelsApplicable.some(level => !validLevels.has(level))) {
               throw new Error('Current-affairs item has invalid Fiji level mapping: ' + item.url);
             }
-            if (item.approved !== false || item.verificationStatus !== 'PENDING_TEACHER_REVIEW') {
-              throw new Error('Current-affairs item must remain pending teacher review: ' + item.url);
+            const approvedByTeacher = item.approved === true &&
+              item.verificationStatus === 'APPROVED_BY_TEACHER' &&
+              item.levelRecommendationBasis === 'TEACHER_REVIEWED';
+            const pendingReview = item.approved === false &&
+              item.verificationStatus === 'PENDING_TEACHER_REVIEW' &&
+              item.levelRecommendationBasis === 'AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW';
+            if (!approvedByTeacher && !pendingReview) {
+              throw new Error('Current-affairs item has an invalid review state: ' + item.url);
             }
           }
           console.log('Curriculum mapping check passed: ' + items.length +
