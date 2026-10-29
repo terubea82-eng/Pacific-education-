@@ -2,6 +2,7 @@ name: Pacific Education Daily Current Affairs Feed
 on:
   # Run after a change to this workflow lands on main, so feed-source fixes
   # are tested immediately instead of waiting for the next scheduled run.
+  # Refresh trigger: run the feed after this controlled workflow update.
   push:
     branches: [main]
     paths:
