@@ -1,47 +1,15 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-29T15:20:45.171Z",
+  "generatedAt": "2026-10-29T20:57:33.008Z",
   "source": "Fiji One News (Fiji TV), The Fiji Times, Fiji Sun, FBC News, RNZ Pacific, BBC News World, Deutsche Welle, Al Jazeera English, UNESCO, WHO and UN News; all items source-, date- and relevance-validated. Fiji-first, Pacific-second ordering; teacher approval required.",
   "items": [
     {
-      "id": "OFFICIAL-0c1853e68b681916fb92dc8a",
-      "title": "No late applications will be accepted",
-      "url": "https://www.fbcnews.com.fj/news/no-late-applications-will-be-accepted/",
-      "source": "FBC News",
+      "id": "OFFICIAL-6bf3190175599c8173213f42",
+      "title": "Were Election Promises Made Just To Win Votes Balawa",
+      "url": "https://www.fijitimes.com.fj/were-election-promises-made-just-to-win-votes-balawa/",
+      "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T05:15:11.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "English",
-        "Social Science",
-        "History"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-0e6dccad583cc95e3d9601a8",
-      "title": "Reserved seats for persons with disability",
-      "url": "https://www.fbcnews.com.fj/news/reserved-seats-for-persons-with-disability/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T05:10:49.000Z",
+      "publishedAt": "2026-10-30T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -61,9 +29,102 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-a2e2944340818e22903fc6dd",
+      "title": "Mallam calls for greater corporate support for boxing",
+      "url": "https://www.fbcnews.com.fj/sports/mallam-calls-for-greater-corporate-support-for-boxing/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-29T19:41:34.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-3573cc7a9ae131115c4dcfe1",
+      "title": "Migration and health crises threaten Fiji’s workforce",
+      "url": "https://www.fbcnews.com.fj/news/migration-and-health-crises-threaten-fijis-workforce/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-29T19:05:18.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Social Science",
+        "Geography",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-b368e287e838b42dee43cad5",
+      "title": "Fijian women join international climate research",
+      "url": "https://www.fbcnews.com.fj/news/fijian-women-join-international-climate-research/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-29T19:03:07.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Geography"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -161,37 +222,6 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-4922b13a7b871790de871cfe",
-      "title": "Employment Bills Set For Parliament",
-      "url": "https://www.fijitimes.com.fj/employment-bills-set-for-parliament/",
-      "source": "The Fiji Times",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
       "id": "OFFICIAL-01126f855e31bc22dc0ddd2c",
       "title": "Crops Wither Incomes Fall As Dry Spell Hits Farmers",
       "url": "https://fijisun.com.fj/news/nation/crops-wither-incomes-fall-as-dry-spell-hits-farmers",
@@ -223,19 +253,25 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-55078bead5a006ebff54b348",
-      "title": "Gender Inequality Drives Abuse Kuruleca",
-      "url": "https://www.fijitimes.com.fj/gender-inequality-drives-abuse-kuruleca/",
+      "id": "OFFICIAL-4922b13a7b871790de871cfe",
+      "title": "Employment Bills Set For Parliament",
+      "url": "https://www.fijitimes.com.fj/employment-bills-set-for-parliament/",
       "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
       "publishedAt": "2026-10-29T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
         "Class 9",
         "Class 10",
         "Class 11",
@@ -275,45 +311,12 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-5566fb5169068155f345d082",
-      "title": "Navua Boosts Cancer Awareness",
-      "url": "https://www.fijitimes.com.fj/navua-boosts-cancer-awareness/",
+      "id": "OFFICIAL-55078bead5a006ebff54b348",
+      "title": "Gender Inequality Drives Abuse Kuruleca",
+      "url": "https://www.fijitimes.com.fj/gender-inequality-drives-abuse-kuruleca/",
       "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
       "publishedAt": "2026-10-29T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Class 4 and above; teacher should use sensitive, non-graphic health education language and avoid personal medical advice.",
-      "subjectsApplicable": [
-        "Science",
-        "Health Science",
-        "Social Science",
-        "History"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-be3b706a55983d6a3dd026ae",
-      "title": "Fiji anti-corruption chief shoots down speculation linking her to drug investigation",
-      "url": "https://www.rnz.co.nz/news/pacific/2206699/fiji-anti-corruption-chief-shoots-down-speculation-linking-her-to-drug-investigation",
-      "source": "RNZ Pacific",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-28T05:31:16.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
@@ -330,6 +333,37 @@
       "levelRecommendationBasis": "TEACHER_REVIEWED",
       "verificationStatus": "APPROVED_BY_TEACHER",
       "approved": true,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-52408b2b43260a38b74def9b",
+      "title": "Cyclone Watch Service activated as South Pacific cyclone season begins",
+      "url": "https://www.rnz.co.nz/news/pacific/2231511/cyclone-watch-service-activated-as-south-pacific-cyclone-season-begins",
+      "source": "RNZ Pacific",
+      "countryOrRegion": "PACIFIC",
+      "publishedAt": "2026-10-29T18:23:23.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -356,34 +390,6 @@
         "Class 11",
         "Class 12",
         "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-2a72f805326beb6859637c98",
-      "title": "Malo ni - it's Tokelau Language Week in Aotearoa",
-      "url": "https://www.rnz.co.nz/news/pacific/2204381/malo-ni-it-s-tokelau-language-week-in-aotearoa",
-      "source": "RNZ Pacific",
-      "countryOrRegion": "PACIFIC",
-      "publishedAt": "2026-10-28T01:54:50.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suitable for teacher-guided learning when adapted to the learner's level; use respectful, inclusive language and explain unfamiliar terms.",
-      "subjectsApplicable": [
-        "English",
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
       ],
       "levelRecommendationBasis": "TEACHER_REVIEWED",
       "verificationStatus": "APPROVED_BY_TEACHER",
@@ -479,15 +485,135 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-3495d6de527e056e2810bb33",
-      "title": "As US midterms approach, farmers decide what to plant and how to vote",
-      "url": "https://www.aljazeera.com/economy/2026/10/29/as-us-midterms-approach-farmers-decide-what-to-plant-and-how-to-vote?traffic_source=rss",
-      "source": "Al Jazeera English",
+      "id": "OFFICIAL-a313ce040543f690d53f022a",
+      "title": "Justice for Maya women in Guatemala, girls back in school in India, restored land in Mali: The UN has named its 2026 SDG Action Award winners",
+      "url": "https://www.dw.com/en/justice-for-maya-women-in-guatemala-girls-back-in-school-in-india-restored-land-in-mali-the-un-has-named-its-2026-sdg-action-award-winners/a-79801727?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T14:25:16.000Z",
+      "publishedAt": "2026-10-29T20:53:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher-guided current-affairs learning; adapt vocabulary and context to the class level and distinguish reported facts from commentary.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "English",
+        "Social Science",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-af11012ee96efea31f3cdaed",
+      "title": "Israel election result shows no overall majority as vote count complete",
+      "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete?traffic_source=rss",
+      "source": "Al Jazeera English",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T20:22:04.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-e3d5295b05923d1a7382f5ce",
+      "title": "Cornell begins no confidence vote over handling of alleged gang rape",
+      "url": "https://www.aljazeera.com/news/2026/10/29/cornell-begins-no-confidence-vote-over-handling-of-alleged-gang-rape?traffic_source=rss",
+      "source": "Al Jazeera English",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T19:23:33.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "English"
+      ],
+      "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-12576777a1434821029f137e",
+      "title": "Northern Marianas tourism industry warns US travel suspension could deepen economic crisis",
+      "url": "https://www.rnz.co.nz/news/pacific/2231512/northern-marianas-tourism-industry-warns-us-travel-suspension-could-deepen-economic-crisis",
+      "source": "RNZ Pacific",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T18:23:23.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-823294e6b2ac4f833a58a7eb",
+      "title": "Israel election: Authorities dispute Netanyahu’s fraud claims",
+      "url": "https://www.dw.com/en/israel-election-authorities-dispute-netanyahu-s-fraud-claims/a-79799574?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T17:32:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Social Science"
       ],
@@ -504,34 +630,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-09f672f517cf7480a8dd8bae",
-      "title": "Human trafficking victims stranded in Guinea-Bissau",
-      "url": "https://www.dw.com/en/human-trafficking-victims-stranded-in-guinea-bissau/a-79785558?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T14:20:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
-      "subjectsApplicable": [
-        "Geography"
-      ],
-      "levelsApplicable": [
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -540,7 +641,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
       "source": "BBC News World",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T13:49:04.000Z",
+      "publishedAt": "2026-10-29T15:47:20.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
@@ -560,29 +661,34 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-af9280c4dcec4b782c1ebb08",
-      "title": "The megadonors financing the US midterms to influence policy",
-      "url": "https://www.aljazeera.com/video/money-works/2026/10/29/the-megadonors-financing-the-us-midterms-to-influence-policy?traffic_source=rss",
-      "source": "Al Jazeera English",
+      "id": "OFFICIAL-42b4ece9731dcdba134236ea",
+      "title": "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
+      "url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News World",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T13:26:07.000Z",
+      "publishedAt": "2026-10-29T14:58:28.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Science",
-        "Health Science"
+        "Social Science"
       ],
       "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
         "Class 9",
         "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -612,56 +718,6 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-d256b996c32fa0ebcc5be4d3",
-      "title": "Shadow fleet sanctions: Can the EU act if the US pulls back?",
-      "url": "https://www.dw.com/en/shadow-fleet-sanctions-can-the-eu-act-if-the-us-pulls-back/a-79787035?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T12:01:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-3283afce80ae71008d6b9cd2",
-      "title": "El Salvador to send over 2,000 soldiers to Haiti for rescue",
-      "url": "https://www.fbcnews.com.fj/world/el-salvador-to-send-over-2000-soldiers-to-haiti-for-rescue/",
-      "source": "FBC News",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T06:00:19.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
       "id": "OFFICIAL-6b5cc53bf2223547b37412c5",
       "title": "2026 Departmental update Message by the Director of the Department of Immunization, Vaccines and Biologicals at WHO - October 2026",
       "url": "https://www.who.int/news/item/29-10-2026-message-by-the-director-of-the-department-of-immunization--vaccines-and-biologicals-at-who---october-2026",
@@ -677,69 +733,6 @@
       ],
       "levelsApplicable": [
         "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-01a87b805935f23a27eb253b",
-      "title": "2026 Departmental update WHO advises coexistence of digital and non-digital ship-related health documents",
-      "url": "https://www.who.int/news/item/28-10-2026-who-advises-coexistence-of-digital-and-non-digital-ship-related-health-documents",
-      "source": "WHO Newsroom",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher-guided current-affairs learning; adapt vocabulary and context to the class level and distinguish reported facts from commentary.",
-      "subjectsApplicable": [
-        "Science",
-        "Health Science",
-        "Computer Studies"
-      ],
-      "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-b89f258f09d102d8a8a14eae",
-      "title": "2026 Departmental update Climate change is a growing health emergency, Lancet Countdown warns",
-      "url": "https://www.who.int/news/item/28-10-2026-climate-change-is-a-growing-health-emergency--lancet-countdown-warns",
-      "source": "WHO Newsroom",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Teacher-guided current-affairs learning; adapt vocabulary and context to the class level and distinguish reported facts from commentary.",
-      "subjectsApplicable": [
-        "Science",
-        "Health Science",
-        "Social Science",
-        "Geography",
-        "History"
-      ],
-      "levelsApplicable": [
         "Class 4",
         "Class 5",
         "Class 6",
@@ -817,6 +810,40 @@
       "levelRecommendationBasis": "TEACHER_REVIEWED",
       "verificationStatus": "APPROVED_BY_TEACHER",
       "approved": true,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-04ca4e74b0f109d264e9b19c",
+      "title": "COP17: The world has a plan to save nature. Is it working?",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168618",
+      "source": "UN News",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-17T12:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Social Science",
+        "Geography",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
