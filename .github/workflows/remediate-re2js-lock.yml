@@ -37,8 +37,12 @@ jobs:
           node - <<'NODE'
           const lock = require('./package-lock.json');
           const version = lock.packages?.['node_modules/re2js']?.version;
-          if (version !== '2.8.7') throw new Error('Expected re2js 2.8.7, got ' + version);
-          console.log('Verified re2js ' + version + ' in package-lock.json');
+          const parts = String(version || '').split('.').map(Number);
+          const patched = parts.length === 3 &&
+            (parts[0] > 2 || (parts[0] === 2 &&
+              (parts[1] > 8 || (parts[1] === 8 && parts[2] >= 7))));
+          if (!patched) throw new Error('Expected re2js >=2.8.7, got ' + version);
+          console.log('Verified patched re2js ' + version + ' in package-lock.json');
           NODE
           changed="$(git diff --name-only)"
           if [ "$changed" != "package-lock.json" ]; then
