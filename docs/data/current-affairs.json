@@ -155,9 +155,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
