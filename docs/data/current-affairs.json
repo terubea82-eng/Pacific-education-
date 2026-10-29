@@ -1,39 +1,8 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-29T08:30:12.755Z",
+  "generatedAt": "2026-10-29T08:38:52.772Z",
   "source": "Fiji One News (Fiji TV), The Fiji Times, Fiji Sun, FBC News, RNZ Pacific, BBC News World, Deutsche Welle, Al Jazeera English, UNESCO, WHO and UN News; all items source-, date- and relevance-validated. Fiji-first, Pacific-second ordering; teacher approval required.",
   "items": [
-    {
-      "id": "OFFICIAL-3283afce80ae71008d6b9cd2",
-      "title": "El Salvador to send over 2,000 soldiers to Haiti for rescue",
-      "url": "https://www.fbcnews.com.fj/world/el-salvador-to-send-over-2000-soldiers-to-haiti-for-rescue/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T06:00:19.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
     {
       "id": "OFFICIAL-0c1853e68b681916fb92dc8a",
       "title": "No late applications will be accepted",
@@ -524,6 +493,36 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
+      "id": "OFFICIAL-3078997d101e7a7e70b42510",
+      "title": "‘Economic incentives are limited’: What does Russia really offer Africa?",
+      "url": "https://www.aljazeera.com/features/2026/10/29/wagners-shadow-looms-as-russia-reshapes-african-military-alliances?traffic_source=rss",
+      "source": "Al Jazeera English",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T08:14:34.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
       "id": "OFFICIAL-9a64319e1a4f186633813db2",
       "title": "Neymar handed two-game Santos suspension for covering mouth in argument",
       "url": "https://www.aljazeera.com/sports/2026/10/29/neymar-handed-two-game-santos-suspension-for-covering-mouth-in-argument?traffic_source=rss",
@@ -579,12 +578,12 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-6fbecc0ff0fdebbb677dca1f",
-      "title": "El Salvador pledges more than 2,000 soldiers as Haiti delays elections",
-      "url": "https://www.aljazeera.com/news/2026/10/29/el-salvador-pledges-more-than-2000-soldiers-as-haiti-delays-elections?traffic_source=rss",
-      "source": "Al Jazeera English",
+      "id": "OFFICIAL-be8720e236508d3bf816f301",
+      "title": "India news: 'Cockroaches' back Gandhi's rally against election chief",
+      "url": "https://www.dw.com/en/india-news-cockroaches-back-gandhi-s-rally-against-election-chief/live-79791890?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T07:36:38.000Z",
+      "publishedAt": "2026-10-29T07:22:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -610,12 +609,12 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-be8720e236508d3bf816f301",
-      "title": "India news: 'Cockroaches' back Gandhi's rally against election chief",
-      "url": "https://www.dw.com/en/india-news-cockroaches-back-gandhi-s-rally-against-election-chief/live-79791890?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
+      "id": "OFFICIAL-3283afce80ae71008d6b9cd2",
+      "title": "El Salvador to send over 2,000 soldiers to Haiti for rescue",
+      "url": "https://www.fbcnews.com.fj/world/el-salvador-to-send-over-2000-soldiers-to-haiti-for-rescue/",
+      "source": "FBC News",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T07:22:00.000Z",
+      "publishedAt": "2026-10-29T06:00:19.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
