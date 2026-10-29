@@ -1,0 +1,62 @@
+name: Temporary re2js security lock remediation
+
+on:
+  push:
+    branches:
+      - fix/re2js-security-20261029
+    paths:
+      - .github/workflows/remediate-re2js-lock.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-transitive-lock:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout remediation branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install current locked dependencies
+        run: npm ci
+      - name: Update only the vulnerable transitive re2js lock entry
+        run: npm update re2js --package-lock-only --ignore-scripts --no-audit
+      - name: Install exact updated lockfile
+        run: npm ci
+      - name: Verify patched version and narrow diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const lock = require('./package-lock.json');
+          const version = lock.packages?.['node_modules/re2js']?.version;
+          if (version !== '2.8.7') throw new Error('Expected re2js 2.8.7, got ' + version);
+          console.log('Verified re2js ' + version + ' in package-lock.json');
+          NODE
+          changed="$(git diff --name-only)"
+          if [ "$changed" != "package-lock.json" ]; then
+            echo "Refusing broad dependency changes; changed paths:"
+            printf '%s\n' "$changed"
+            exit 1
+          fi
+      - name: Require clean high-severity audit
+        run: npm audit --audit-level=high
+      - name: Run full regression suite
+        run: npm test
+      - name: Commit the verified lockfile only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "pacific-education-bot"
+          git config user.email "actions@github.com"
+          git add package-lock.json
+          git diff --cached --quiet && { echo "No lockfile patch produced"; exit 1; }
+          git commit -m "fix: patch vulnerable re2js transitive dependency"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
