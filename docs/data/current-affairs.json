@@ -12,26 +12,20 @@
       "publishedAt": "2026-10-30T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Upper-secondary discussion: election promises, accountability and constitutional reform. Present competing views neutrally; teacher should verify local context.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
         "Class 9",
         "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -43,22 +37,20 @@
       "publishedAt": "2026-10-29T19:41:34.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Suitable for primary and lower-secondary discussion of sport, sponsorship, rules and responsible participation.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6"
+        "Class 6",
+        "Class 7",
+        "Class 8"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -70,7 +62,7 @@
       "publishedAt": "2026-10-29T19:05:18.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Upper-secondary only: discuss workforce migration and public-health issues sensitively, without stigma.",
       "subjectsApplicable": [
         "Science",
         "Health Science",
@@ -79,20 +71,15 @@
         "History"
       ],
       "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
         "Class 9",
         "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -104,14 +91,13 @@
       "publishedAt": "2026-10-29T19:03:07.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Suitable for upper primary through secondary: climate research, ocean science, and women's participation in science.",
       "subjectsApplicable": [
         "Science",
         "Health Science",
         "Geography"
       ],
       "levelsApplicable": [
-        "Class 4",
         "Class 5",
         "Class 6",
         "Class 7",
@@ -122,9 +108,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -344,12 +330,11 @@
       "publishedAt": "2026-10-29T18:23:23.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Suitable for upper primary through secondary: cyclone preparedness and weather services. Teacher should check current official warnings before using as safety advice.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "Class 3",
         "Class 4",
         "Class 5",
         "Class 6",
@@ -361,9 +346,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -493,15 +478,13 @@
       "publishedAt": "2026-10-29T20:53:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Suitable for upper primary and secondary discussion of gender equality, education, land restoration and sustainable development.",
       "subjectsApplicable": [
         "English",
         "Social Science",
         "History"
       ],
       "levelsApplicable": [
-        "Class 4",
-        "Class 5",
         "Class 6",
         "Class 7",
         "Class 8",
@@ -511,9 +494,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -525,25 +508,18 @@
       "publishedAt": "2026-10-29T20:22:04.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Upper-secondary current-affairs discussion only. Politically sensitive; compare multiple reputable reports and distinguish confirmed results from claims.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -555,18 +531,14 @@
       "publishedAt": "2026-10-29T19:23:33.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "RESTRICTED: sensitive sexual-violence allegations and an ongoing institutional/legal dispute. Do not show in general student feeds; requires explicit teacher review and safeguarding context.",
       "subjectsApplicable": [
         "English"
       ],
       "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
+        "Class 11",
+        "Class 12",
+        "Class 13"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -582,16 +554,12 @@
       "publishedAt": "2026-10-29T18:23:23.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Suitable for upper primary and secondary discussion of tourism, travel policy, employment and economic effects.",
       "subjectsApplicable": [
         "Social Science",
         "History"
       ],
       "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
         "Class 8",
         "Class 9",
         "Class 10",
@@ -599,9 +567,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -613,26 +581,18 @@
       "publishedAt": "2026-10-29T17:32:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Upper-secondary discussion only. Allegations are disputed; clearly distinguish claims from evidence and include multiple perspectives.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -669,26 +629,20 @@
       "publishedAt": "2026-10-29T14:58:28.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Secondary discussion of elections, political messaging and democratic transitions; teacher should verify the context and encourage balanced sources.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
         "Class 9",
         "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -821,7 +775,7 @@
       "publishedAt": "2026-10-17T12:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "ageSuitability": "Suitable for upper primary and secondary: biodiversity, conservation and evaluating progress toward environmental goals.",
       "subjectsApplicable": [
         "Science",
         "Health Science",
@@ -830,8 +784,6 @@
         "History"
       ],
       "levelsApplicable": [
-        "Class 4",
-        "Class 5",
         "Class 6",
         "Class 7",
         "Class 8",
@@ -841,9 +793,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
