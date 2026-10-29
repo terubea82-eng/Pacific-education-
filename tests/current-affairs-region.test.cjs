@@ -13,6 +13,14 @@ test('foreign event in a Fiji publisher headline is not mislabeled as Fiji', () 
     inferCurrentAffairsRegion("Cyclone Arnab makes landfall in India’s Andhra Pradesh", 'GLOBAL'),
     'GLOBAL'
   );
+  assert.equal(
+    inferCurrentAffairsRegion('El Salvador to send over 2,000 soldiers to Haiti for rescue', 'FIJI'),
+    'GLOBAL'
+  );
+  assert.equal(
+    inferCurrentAffairsRegion('Haiti delays elections after security crisis', 'FIJI'),
+    'GLOBAL'
+  );
 });
 
 test('explicit Fiji story location overrides a Pacific publisher fallback', () => {
