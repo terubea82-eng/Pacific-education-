@@ -7,6 +7,8 @@ on:
     paths:
       - ".github/workflows/daily-current-affairs.yml"
       - "automation/unesco-publication-date.js"
+      - "automation/current-affairs-region.js"
+      - "tests/current-affairs-region.test.cjs"
   schedule:
     - cron: "15 2 * * *"
   workflow_dispatch:
@@ -15,6 +17,8 @@ on:
     paths:
       - ".github/workflows/daily-current-affairs.yml"
       - "automation/unesco-publication-date.js"
+      - "automation/current-affairs-region.js"
+      - "tests/current-affairs-region.test.cjs"
       - "tests/unesco-live-metadata-smoke.js"
 permissions:
   contents: write
@@ -29,6 +33,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate story-region classification before publishing
+        run: node --test tests/current-affairs-region.test.cjs
       - name: Fetch and validate official education and public-interest RSS feeds
         run: |
           set -euo pipefail
@@ -88,6 +94,7 @@ jobs:
           const fs = require('fs');
           const { URL } = require('url');
           const { execFileSync } = require('child_process');
+          const { inferCurrentAffairsRegion } = require('./automation/current-affairs-region');
           const sources = [
             { key: 'fijiOne', label: 'Fiji One News (Fiji TV)', host: 'fijionenews.com.fj', region: 'FIJI' },
             { key: 'fijiTimes', label: 'The Fiji Times', host: 'fijitimes.com.fj', region: 'FIJI' },
@@ -392,7 +399,7 @@ jobs:
               title: a.title,
               url: a.url,
               source: a.source,
-              countryOrRegion: sourceMeta.region || 'GLOBAL',
+              countryOrRegion: inferCurrentAffairsRegion(a.title, sourceMeta.region),
               publishedAt: new Date(Date.parse(a.date)).toISOString(),
               topic: 'Education and current affairs',
               educationalRelevance: 'Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.',
@@ -490,5 +497,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+      - name: Validate story-region regression cases
+        run: node --test tests/current-affairs-region.test.cjs
       - name: Fetch real UNESCO newsroom and validate article datePublished metadata
         run: node tests/unesco-live-metadata-smoke.js
