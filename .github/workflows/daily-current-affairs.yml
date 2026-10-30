@@ -437,6 +437,9 @@ jobs:
                 verificationStatus: 'APPROVED_BY_TEACHER',
                 levelRecommendationBasis: 'TEACHER_REVIEWED',
                 ageSuitability: previous.ageSuitability || item.ageSuitability,
+                educationalRelevance: previous.educationalRelevance || item.educationalRelevance,
+                subjectsApplicable: Array.isArray(previous.subjectsApplicable) && previous.subjectsApplicable.length
+                  ? previous.subjectsApplicable : item.subjectsApplicable,
                 levelsApplicable: Array.isArray(previous.levelsApplicable) && previous.levelsApplicable.length
                   ? previous.levelsApplicable : item.levelsApplicable
               };
