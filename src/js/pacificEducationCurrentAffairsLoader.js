@@ -10,7 +10,10 @@
       items.forEach(function(item){
         if(!item||!item.id||!item.title||!item.url)return;
         var copy=Object.assign({},item);
-        copy.verificationStatus=copy.verificationStatus||"PENDING_TEACHER_REVIEW";
+        // The public feed is an editorial review queue, not publication approval.
+        // Never trust legacy approval markers in generated JSON at load time.
+        copy.verificationStatus="PENDING_TEACHER_REVIEW";
+        copy.levelRecommendationBasis="AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW";
         copy.approved=false;
         copy.sourceType="EDUCATIONAL_CURRENT_AFFAIRS";
         try{cfg.upsertEducationalCurrentAffair(copy);count++;}catch(e){}
