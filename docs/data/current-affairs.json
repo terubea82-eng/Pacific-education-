@@ -1,8 +1,67 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-10-29T21:10:31.878Z",
+  "generatedAt": "2026-10-30T00:34:55.643Z",
   "source": "Fiji One News (Fiji TV), The Fiji Times, Fiji Sun, FBC News, RNZ Pacific, BBC News World, Deutsche Welle, Al Jazeera English, UNESCO, WHO and UN News; all items source-, date- and relevance-validated. Fiji-first, Pacific-second ordering; teacher approval required.",
   "items": [
+    {
+      "id": "OFFICIAL-0505af8c5b17ba71191f2ddf",
+      "title": "Naruma and Boginisoko return for Nadi",
+      "url": "https://www.fbcnews.com.fj/sports/rugby/naruma-and-boginisoko-return-for-nadi/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-30T00:25:06.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Mathematics",
+        "Science",
+        "Health Science",
+        "Geography"
+      ],
+      "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-9259bb10ecc59c94ec17359a",
+      "title": "Timely support for RFMF",
+      "url": "https://www.fbcnews.com.fj/sports/timely-support-for-rfmf/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-30T00:13:31.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science",
+        "Health Science",
+        "Geography"
+      ],
+      "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
     {
       "id": "OFFICIAL-6bf3190175599c8173213f42",
       "title": "Were Election Promises Made Just To Win Votes Balawa",
@@ -29,128 +88,12 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-a2e2944340818e22903fc6dd",
-      "title": "Mallam calls for greater corporate support for boxing",
-      "url": "https://www.fbcnews.com.fj/sports/mallam-calls-for-greater-corporate-support-for-boxing/",
+      "id": "OFFICIAL-2550d2c8fdb2971306a736cb",
+      "title": "Trump administration bolsters bid to block Alaska Senate certification",
+      "url": "https://www.fbcnews.com.fj/world/trump-administration-bolsters-bid-to-block-alaska-senate-certification/",
       "source": "FBC News",
       "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T19:41:34.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suitable for primary and lower-secondary discussion of sport, sponsorship, rules and responsible participation.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-3573cc7a9ae131115c4dcfe1",
-      "title": "Migration and health crises threaten Fiji’s workforce",
-      "url": "https://www.fbcnews.com.fj/news/migration-and-health-crises-threaten-fijis-workforce/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T19:05:18.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper-secondary only: discuss workforce migration and public-health issues sensitively, without stigma.",
-      "subjectsApplicable": [
-        "Science",
-        "Health Science",
-        "Social Science",
-        "Geography",
-        "History"
-      ],
-      "levelsApplicable": [
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-b368e287e838b42dee43cad5",
-      "title": "Fijian women join international climate research",
-      "url": "https://www.fbcnews.com.fj/news/fijian-women-join-international-climate-research/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T19:03:07.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suitable for upper primary through secondary: climate research, ocean science, and women's participation in science.",
-      "subjectsApplicable": [
-        "Science",
-        "Health Science",
-        "Geography"
-      ],
-      "levelsApplicable": [
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-3d9b87c610e90cf31f41c9fa",
-      "title": "Matuku Community Takes Charge of Road Maintenance",
-      "url": "https://fijionenews.com.fj/matuku-community-takes-charge-of-road-maintenance/",
-      "source": "Fiji One News (Fiji TV)",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T04:02:12.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science",
-        "History"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-4532d892dd3ea9c19869c7d6",
-      "title": "TSLS launches five-year strategic plan",
-      "url": "https://fijionenews.com.fj/tsls-launches-five-year-strategic-plan/",
-      "source": "Fiji One News (Fiji TV)",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T02:41:29.000Z",
+      "publishedAt": "2026-10-29T23:40:08.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -170,18 +113,49 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-5c76ba0303eb3fbb8e353a9e",
-      "title": "TSLS faces concerns over 33,070 non-completions",
-      "url": "https://fijionenews.com.fj/tsls-faces-concerns-over-33070-non-completions/",
+      "id": "OFFICIAL-e5af5ce60420cc4f0af3ddb2",
+      "title": "Tailevu Council Targets Economic Growth to Address Poverty and Social Issues",
+      "url": "https://fijionenews.com.fj/tailevu-council-targets-economic-growth-to-address-poverty-and-social-issues/",
       "source": "Fiji One News (Fiji TV)",
       "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T02:39:52.000Z",
+      "publishedAt": "2026-10-29T22:57:01.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-a79a78fb238af30caaf58b2b",
+      "title": "TSLS faces concerns over 33,070 non-completions",
+      "url": "https://fijionenews.com.fj/tsls-faces-concerns-over-33070-non-completions-2/",
+      "source": "Fiji One News (Fiji TV)",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-29T22:20:09.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -202,18 +176,18 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-01126f855e31bc22dc0ddd2c",
-      "title": "Crops Wither Incomes Fall As Dry Spell Hits Farmers",
-      "url": "https://fijisun.com.fj/news/nation/crops-wither-incomes-fall-as-dry-spell-hits-farmers",
-      "source": "Fiji Sun",
+      "id": "OFFICIAL-0f1a683b97447750d54dda20",
+      "title": "Tailevu City Project to Drive Provincial Development and Create Jobs",
+      "url": "https://fijionenews.com.fj/tailevu-city-project-to-drive-provincial-development-and-create-jobs/",
+      "source": "Fiji One News (Fiji TV)",
       "countryOrRegion": "FIJI",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "publishedAt": "2026-10-29T22:00:18.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -233,9 +207,40 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-aedad0f693ea6b98eeb11a22",
+      "title": "Students Forced To Climb Hills For Internet Signal In Bua Village",
+      "url": "https://fijisun.com.fj/news/nation/students-forced-to-climb-hills-for-internet-signal-in-bua-village",
+      "source": "Fiji Sun",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Computer Studies"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -270,30 +275,33 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-a5a886ee654bac67da3bb5d4",
-      "title": "At 40, single mum returns to classroom for her three children",
-      "url": "https://fijisun.com.fj/news/education/at-40-single-mum-returns-to-classroom-for-her-three-children",
+      "id": "OFFICIAL-e6ae2e3692f1873a73563b86",
+      "title": "Tailevu Plans Economic Revival For Rural Communities",
+      "url": "https://fijisun.com.fj/news/nation/tailevu-plans-economic-revival-for-rural-communities",
       "source": "Fiji Sun",
       "countryOrRegion": "FIJI",
       "publishedAt": "2026-10-29T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suitable for teacher-guided learning when adapted to the learner's level; use respectful, inclusive language and explain unfamiliar terms.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6"
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -310,6 +318,37 @@
         "Social Science"
       ],
       "levelsApplicable": [
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "TEACHER_REVIEWED",
+      "verificationStatus": "APPROVED_BY_TEACHER",
+      "approved": true,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-01126f855e31bc22dc0ddd2c",
+      "title": "Crops wither, incomes fall as dry spell hits farmers",
+      "url": "https://fijisun.com.fj/news/nation/crops-wither-incomes-fall-as-dry-spell-hits-farmers",
+      "source": "Fiji Sun",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
         "Class 9",
         "Class 10",
         "Class 11",
@@ -470,6 +509,98 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
+      "id": "OFFICIAL-8abe5993f6ad3f1e20efb642",
+      "title": "What does bourbon have to do with the US midterms?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/what-does-bourbon-have-to-do-with-the-us-midterms?traffic_source=rss",
+      "source": "Al Jazeera English",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-30T00:08:50.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science",
+        "History"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-341dec501c5c4281b6f24424",
+      "title": "France braces for ‘very high risk’ of disorder at Halloween protests",
+      "url": "https://www.aljazeera.com/news/2026/10/29/france-braces-for-very-high-risk-of-disorder-at-halloween-protests?traffic_source=rss",
+      "source": "Al Jazeera English",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T23:52:30.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-69d62b81bc06a9e3a682d47a",
+      "title": "Israeli election: Netanyahu, main rival fall short of majority after all votes counted",
+      "url": "https://www.dw.com/en/israeli-election-netanyahu-main-rival-fall-short-of-majority-after-all-votes-counted/live-79713839?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-10-29T23:10:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
+        "Class 11",
+        "Class 12",
+        "Class 13"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
       "id": "OFFICIAL-a313ce040543f690d53f022a",
       "title": "Justice for Maya women in Guatemala, girls back in school in India, restored land in Mali: The UN has named its 2026 SDG Action Award winners",
       "url": "https://www.dw.com/en/justice-for-maya-women-in-guatemala-girls-back-in-school-in-india-restored-land-in-mali-the-un-has-named-its-2026-sdg-action-award-winners/a-79801727?maca=en-rss-en-all-1573-rdf",
@@ -500,50 +631,33 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-af11012ee96efea31f3cdaed",
-      "title": "Israel election result shows no overall majority as vote count complete",
-      "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete?traffic_source=rss",
-      "source": "Al Jazeera English",
+      "id": "OFFICIAL-0429e0fa053cab362ba1a1c7",
+      "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+      "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News World",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T20:22:04.000Z",
+      "publishedAt": "2026-10-29T20:21:54.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper-secondary current-affairs discussion only. Politically sensitive; compare multiple reputable reports and distinguish confirmed results from claims.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Social Science"
       ],
       "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Class 9",
+        "Class 10",
         "Class 11",
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-e3d5295b05923d1a7382f5ce",
-      "title": "Cornell begins no confidence vote over handling of alleged gang rape",
-      "url": "https://www.aljazeera.com/news/2026/10/29/cornell-begins-no-confidence-vote-over-handling-of-alleged-gang-rape?traffic_source=rss",
-      "source": "Al Jazeera English",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T19:23:33.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "For teacher-led senior-secondary discussion of institutional accountability, student safeguarding, fair process, and how news reports distinguish allegations, institutional responses, and ongoing investigations.",
-      "ageSuitability": "TEACHER-MEDIATED ONLY: Class 11–13. Use a brief, non-graphic summary; state clearly that the sexual-violence claims are allegations and investigations/legal proceedings are ongoing. Present the university response and differing views fairly. Do not show graphic details or ask students to disclose personal experiences; follow school safeguarding procedures and provide appropriate support information.",
-      "subjectsApplicable": [
-        "English",
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -574,54 +688,6 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-823294e6b2ac4f833a58a7eb",
-      "title": "Israel election: Authorities dispute Netanyahu’s fraud claims",
-      "url": "https://www.dw.com/en/israel-election-authorities-dispute-netanyahu-s-fraud-claims/a-79799574?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T17:32:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper-secondary discussion only. Allegations are disputed; clearly distinguish claims from evidence and include multiple perspectives.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-d1f92f29ac2ee13c2aefbe27",
-      "title": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News World",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T15:47:20.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
       "id": "OFFICIAL-42b4ece9731dcdba134236ea",
       "title": "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
       "url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss",
@@ -633,32 +699,6 @@
       "ageSuitability": "Secondary discussion of elections, political messaging and democratic transitions; teacher should verify the context and encourage balanced sources.",
       "subjectsApplicable": [
         "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
-      ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-8dd76e232746e9c2ead8bdeb",
-      "title": "Philippine police obtain warrant to search Thomas Markle's devices",
-      "url": "https://www.bbc.co.uk/news/articles/cm0j06y3pn75o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News World",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-10-29T13:25:07.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Upper secondary only; teacher must present a neutral, age-appropriate summary, distinguish reported facts from allegations or opinion, and provide discussion support. Do not show graphic or distressing details.",
-      "subjectsApplicable": [
-        "Social Science",
-        "History"
       ],
       "levelsApplicable": [
         "Class 9",
