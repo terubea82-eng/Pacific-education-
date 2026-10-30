@@ -34,7 +34,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "HOLD_FULL_SOURCE_UNAVAILABLE",
+        "note": "The exact original source page could not be accessed in this review. Related or secondary reports are not a substitute for checking the full article. Do not create a student-facing lesson until the exact source and context are verified."
+      }
     },
     {
       "articleId": "OFFICIAL-9259bb10ecc59c94ec17359a",
@@ -54,7 +58,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "HOLD_FULL_SOURCE_UNAVAILABLE",
+        "note": "The exact original source page could not be accessed in this review. Related or secondary reports are not a substitute for checking the full article. Do not create a student-facing lesson until the exact source and context are verified."
+      }
     },
     {
       "articleId": "OFFICIAL-2550d2c8fdb2971306a736cb",
@@ -81,7 +89,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_CORROBORATED_CONDITIONAL",
+        "note": "Reuters/FBC reporting corroborates the Alaska DOJ certification lawsuit and the competing claims. Present as a developing pre-election legal dispute; attribute allegations and include denials and Alaska officials' objections."
+      }
     },
     {
       "articleId": "OFFICIAL-f6a720231802a27a89d88ce5",
@@ -110,7 +122,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_CORROBORATED_SAFEGUARDING_REQUIRED",
+        "note": "Fiji One/Fiji Village reporting corroborates the fatal Nabua crash and police investigation. Use only a short non-graphic road-safety lesson; omit victim-identifying details and distressing imagery."
+      }
     },
     {
       "articleId": "OFFICIAL-e5af5ce60420cc4f0af3ddb2",
@@ -144,7 +160,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_VERIFIED_PROPOSALS_ONLY",
+        "note": "Full Fiji One report describes the proposed Tailevu City development hub at Vuniivi, with council/community facilities and commercial facilities. Describe plans as proposed, not completed."
+      }
     },
     {
       "articleId": "OFFICIAL-a79a78fb238af30caaf58b2b",
@@ -172,7 +192,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_CORROBORATED_DATA_DEFINITIONS_REQUIRED",
+        "note": "Fiji One reports 33,070 non-completions/terminated awards and approximately FJ$235m associated. Separate counts for graduates and active scholarship recipients are different categories. Require original TSLS definitions and reporting period before presenting figures as final; avoid blaming students."
+      }
     },
     {
       "articleId": "OFFICIAL-aedad0f693ea6b98eeb11a22",
@@ -206,7 +230,12 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_VERIFIED_TITLE_CORRECTION_REQUIRED",
+        "note": "Accessible Fiji Sun report title is “No signal, no updates for remote Bua village.” Correct the live-feed display title before release. Lesson: connectivity inequity and safe access; do not encourage climbing hills or unsafe travel."
+      },
+      "recommendedCorrectedTitle": "No signal, no updates for remote Bua village"
     },
     {
       "articleId": "OFFICIAL-e6ae2e3692f1873a73563b86",
@@ -240,7 +269,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_VERIFIED_DISTINCT_STORY",
+        "note": "Fiji Sun report describes Waidewara bridge, Wainibuka growth centres and cocoa-to-chocolate proposals. Distinct from Fiji One's proposed Tailevu City hub; retain as separate candidate, with all projects labelled proposed."
+      }
     },
     {
       "articleId": "OFFICIAL-8abe5993f6ad3f1e20efb642",
@@ -267,7 +300,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "HOLD_FULL_SOURCE_UNAVAILABLE",
+        "note": "The exact original source page could not be accessed in this review. Related or secondary reports are not a substitute for checking the full article. Do not create a student-facing lesson until the exact source and context are verified."
+      }
     },
     {
       "articleId": "OFFICIAL-341dec501c5c4281b6f24424",
@@ -294,7 +331,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "SOURCE_CORROBORATED_TIME_SENSITIVE",
+        "note": "Reuters corroborates the French Interior Ministry's advance high-risk assessment and planned security deployment for 31 October. As at 30 October, these are forecasts/plans, not reports of events that have happened; update after the date before any retrospective lesson."
+      }
     },
     {
       "articleId": "OFFICIAL-69d62b81bc06a9e3a682d47a",
@@ -321,7 +362,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "RESULTS_CORROBORATED_BALANCED_CONTEXT_REQUIRED",
+        "note": "Final Israeli election results corroborated: neither bloc reached the 61-seat majority; reports show Netanyahu bloc 53, opposition bloc 48 and Arab-led parties 19. Teach representation/coalition formation neutrally and distinguish allegations from verified findings."
+      }
     },
     {
       "articleId": "OFFICIAL-0429e0fa053cab362ba1a1c7",
@@ -348,7 +393,11 @@
       "teacherDecision": "APPROVED_WITH_CONDITIONS",
       "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
       "teacherReviewedAt": "2026-10-30",
-      "teacherApprovalRequired": false
+      "teacherApprovalRequired": false,
+      "sourceVerification": {
+        "status": "HOLD_ORIGINAL_SOURCE_UNAVAILABLE",
+        "note": "The exact original source page could not be accessed in this review. Related or secondary reports are not a substitute for checking the full article. Do not create a student-facing lesson until the exact source and context are verified."
+      }
     }
   ],
   "reconciliation": {
@@ -359,5 +408,19 @@
     "publicationGate": "CLOSED_PENDING_SOURCE_FACT_SAFEGUARDING_DUPLICATE_AND_CURRICULUM_CHECKS",
     "liveFeedMutation": false,
     "note": "Editorial decisions are recorded in this review file only. They do not set live-feed approved=true or permit student publication."
+  },
+  "completionCheck": {
+    "checkedAt": "2026-10-30",
+    "records": 12,
+    "sourceCorroboratedOrVerified": 8,
+    "heldForOriginalSourceVerification": 4,
+    "requiredLiveFeedChanges": [
+      "Correct Bua story display title to “No signal, no updates for remote Bua village”.",
+      "Keep all 12 candidate items approved=false and PENDING_TEACHER_REVIEW until each publication gate is passed."
+    ],
+    "currentDecision": "APPROVED_WITH_CONDITIONS for all 12 by user instruction",
+    "releaseDecision": "NOT_CLEARED_FOR_STUDENT_PUBLICATION",
+    "reason": "Editorial decision is recorded, but four exact original source pages remain unavailable and the other items retain story-specific factual, safeguarding, or date-sensitive conditions.",
+    "liveFeedChanged": false
   }
 }
