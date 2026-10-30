@@ -168,11 +168,11 @@
         "Form 6",
         "Form 7"
       ],
-      "rationale": "Useful for tertiary pathways, interpreting large numbers, public investment and informed course choices. Include context about support and barriers; do not blame individual students. Source check: Fiji One reports 33,070 non-completions/terminated awards and approximately FJ$235 million associated with those cases. A separate Fiji Sun report mentions 33,546 graduates and 22,676 active scholarship recipients; those are different categories and must not be presented as a conflicting count of non-completions. Verify the underlying TSLS definitions and reporting period before teaching the figures.",
-      "teacherDecision": null,
-      "teacherReviewedBy": null,
-      "teacherReviewedAt": null,
-      "teacherApprovalRequired": true
+      "rationale": "Useful for tertiary pathways, interpreting large numbers, public investment and informed course choices. Include context about support and barriers; do not blame individual students. Source check: Fiji One reports 33,070 non-completions/terminated awards and approximately FJ$235 million associated with those cases. A separate Fiji Sun report mentions 33,546 graduates and 22,676 active scholarship recipients; those are different categories and must not be presented as a conflicting count of non-completions. Verify the underlying TSLS definitions and reporting period before teaching the figures. Teacher decision recorded: approved with conditions on 2026-10-30. Student-facing material must explain the reporting period and definitions, use the figure only with attribution, avoid blaming students, and be checked against the original TSLS statement before publication.",
+      "teacherDecision": "APPROVED_WITH_CONDITIONS",
+      "teacherReviewedBy": "Authorised PacEdu teacher reviewer (user-confirmed)",
+      "teacherReviewedAt": "2026-10-30",
+      "teacherApprovalRequired": false
     },
     {
       "articleId": "OFFICIAL-aedad0f693ea6b98eeb11a22",
