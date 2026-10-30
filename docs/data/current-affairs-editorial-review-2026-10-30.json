@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "reviewCreatedAt": "2026-10-30",
+  "feedGeneratedAt": "2026-10-30T00:36:57.386Z",
+  "purpose": "Editorial screening suggestions only. This file does not approve articles or alter the live feed.",
+  "approvalRule": "Only an authorised teacher may approve an article after reading the full source and confirming suitability. Until then, keep approved=false and verificationStatus=PENDING_TEACHER_REVIEW.",
+  "subjectBoxes": [
+    "English",
+    "Mathematics",
+    "Phonics",
+    "Science",
+    "Social Science",
+    "Health",
+    "Agriculture",
+    "Arts",
+    "Technology"
+  ],
+  "records": [
+    {
+      "articleId": "OFFICIAL-0505af8c5b17ba71191f2ddf",
+      "title": "Naruma and Boginisoko return for Nadi",
+      "source": "FBC News",
+      "url": "https://www.fbcnews.com.fj/sports/rugby/naruma-and-boginisoko-return-for-nadi/",
+      "publishedAt": "2026-10-30T00:25:06.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "HOLD_FOR_TEACHER_REVIEW",
+      "proposedSubjects": [],
+      "proposedLevels": [],
+      "rationale": "Sports report. Hold until the full report supports a clear curriculum objective; do not invent subject links.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-9259bb10ecc59c94ec17359a",
+      "title": "Timely support for RFMF",
+      "source": "FBC News",
+      "url": "https://www.fbcnews.com.fj/sports/timely-support-for-rfmf/",
+      "publishedAt": "2026-10-30T00:13:31.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "HOLD_FOR_TEACHER_REVIEW",
+      "proposedSubjects": [],
+      "proposedLevels": [],
+      "rationale": "The headline does not explain the support being provided. Verify the full report and context before assigning subjects or levels.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-2550d2c8fdb2971306a736cb",
+      "title": "Trump administration bolsters bid to block Alaska Senate certification",
+      "source": "FBC News",
+      "url": "https://www.fbcnews.com.fj/world/trump-administration-bolsters-bid-to-block-alaska-senate-certification/",
+      "publishedAt": "2026-10-29T23:40:08.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "SENIOR_LEVEL_TEACHER_MEDIATED_ONLY",
+      "proposedSubjects": [
+        "Social Science",
+        "English"
+      ],
+      "proposedLevels": [
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Potential civic-literacy lesson on elections, institutions and legal processes. Present claims and responses fairly; distinguish allegations, court action and confirmed facts.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-f6a720231802a27a89d88ce5",
+      "title": "Nabua crash claims life of motorist",
+      "source": "Fiji One News (Fiji TV)",
+      "url": "https://fijionenews.com.fj/nabua-crash-claims-life-of-motorist/",
+      "publishedAt": "2026-10-29T23:31:32.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "HOLD_FOR_SAFEGUARDING_REVIEW",
+      "proposedSubjects": [
+        "Health",
+        "Social Science"
+      ],
+      "proposedLevels": [
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "A fatal-crash story needs a non-graphic teacher-written road-safety summary. Do not show distressing images or identify victims unnecessarily.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-e5af5ce60420cc4f0af3ddb2",
+      "title": "Tailevu Council Targets Economic Growth to Address Poverty and Social Issues",
+      "source": "Fiji One News (Fiji TV)",
+      "url": "https://fijionenews.com.fj/tailevu-council-targets-economic-growth-to-address-poverty-and-social-issues/",
+      "publishedAt": "2026-10-29T22:57:01.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "CONDITIONAL_INCLUDE_AFTER_DUPLICATE_CHECK",
+      "proposedSubjects": [
+        "Social Science",
+        "English",
+        "Mathematics"
+      ],
+      "proposedLevels": [
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Can support local development, community needs, poverty, budgeting and interpreting evidence. Verify claims and compare with the other Tailevu rural-development report.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-a79a78fb238af30caaf58b2b",
+      "title": "TSLS faces concerns over 33,070 non-completions",
+      "source": "Fiji One News (Fiji TV)",
+      "url": "https://fijionenews.com.fj/tsls-faces-concerns-over-33070-non-completions-2/",
+      "publishedAt": "2026-10-29T22:20:09.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "CONDITIONAL_INCLUDE",
+      "proposedSubjects": [
+        "English",
+        "Mathematics",
+        "Social Science"
+      ],
+      "proposedLevels": [
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Useful for tertiary pathways, interpreting large numbers, public investment and informed course choices. Include context about support and barriers; do not blame individual students.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-aedad0f693ea6b98eeb11a22",
+      "title": "Students Forced To Climb Hills For Internet Signal In Bua Village",
+      "source": "Fiji Sun",
+      "url": "https://fijisun.com.fj/news/nation/students-forced-to-climb-hills-for-internet-signal-in-bua-village",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "CONDITIONAL_INCLUDE",
+      "proposedSubjects": [
+        "Technology",
+        "Social Science",
+        "English"
+      ],
+      "proposedLevels": [
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Useful for digital access, infrastructure and equitable education. Explain that climbing hills is an unsafe circumstance to address, not advice for students.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-e6ae2e3692f1873a73563b86",
+      "title": "Tailevu Plans Economic Revival For Rural Communities",
+      "source": "Fiji Sun",
+      "url": "https://fijisun.com.fj/news/nation/tailevu-plans-economic-revival-for-rural-communities",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "HOLD_FOR_DUPLICATE_AND_FACT_CHECK",
+      "proposedSubjects": [
+        "Social Science",
+        "English",
+        "Mathematics"
+      ],
+      "proposedLevels": [
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Compare the full report with the Tailevu Council poverty/economic-growth story. Retain both only if they contain distinct facts and learning objectives.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-8abe5993f6ad3f1e20efb642",
+      "title": "What does bourbon have to do with the US midterms?",
+      "source": "Al Jazeera English",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/what-does-bourbon-have-to-do-with-the-us-midterms?traffic_source=rss",
+      "publishedAt": "2026-10-30T00:08:50.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "SENIOR_LEVEL_TEACHER_MEDIATED_ONLY",
+      "proposedSubjects": [
+        "Social Science",
+        "English"
+      ],
+      "proposedLevels": [
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "If used, focus on campaign finance, business influence and political communication. Do not promote alcohol or show drinking imagery.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-341dec501c5c4281b6f24424",
+      "title": "France braces for ‘very high risk’ of disorder at Halloween protests",
+      "source": "Al Jazeera English",
+      "url": "https://www.aljazeera.com/news/2026/10/29/france-braces-for-very-high-risk-of-disorder-at-halloween-protests?traffic_source=rss",
+      "publishedAt": "2026-10-29T23:52:30.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "SENIOR_LEVEL_TEACHER_MEDIATED_ONLY",
+      "proposedSubjects": [
+        "Social Science",
+        "English"
+      ],
+      "proposedLevels": [
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Use only a calm, non-graphic teacher summary about peaceful protest, civic rights and public safety. Exclude alarming footage and unverified predictions.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-69d62b81bc06a9e3a682d47a",
+      "title": "Israeli election: Netanyahu, main rival fall short of majority after all votes counted",
+      "source": "Deutsche Welle",
+      "url": "https://www.dw.com/en/israeli-election-netanyahu-main-rival-fall-short-of-majority-after-all-votes-counted/live-79713839?maca=en-rss-en-all-1573-rdf",
+      "publishedAt": "2026-10-29T23:10:00.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "SENIOR_LEVEL_TEACHER_MEDIATED_ONLY",
+      "proposedSubjects": [
+        "Social Science",
+        "English"
+      ],
+      "proposedLevels": [
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "Potential lesson on election results, representation and coalition formation. Verify final results and provide neutral context.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    },
+    {
+      "articleId": "OFFICIAL-0429e0fa053cab362ba1a1c7",
+      "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+      "source": "BBC News World",
+      "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-29T20:21:54.000Z",
+      "liveFeedStatus": {
+        "approved": false,
+        "verificationStatus": "PENDING_TEACHER_REVIEW",
+        "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW"
+      },
+      "editorialRecommendation": "HOLD_FOR_DUPLICATE_AND_BALANCE_REVIEW",
+      "proposedSubjects": [
+        "Social Science",
+        "English"
+      ],
+      "proposedLevels": [
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "rationale": "This is an attributed political accusation and may overlap with the Israeli election report. Do not present the allegation as fact; compare reports and include responses and independent verification.",
+      "teacherDecision": null,
+      "teacherReviewedBy": null,
+      "teacherReviewedAt": null,
+      "teacherApprovalRequired": true
+    }
+  ]
+}
