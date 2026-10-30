@@ -505,20 +505,18 @@ jobs:
             git fetch origin main
             if ! git rebase origin/main; then
               conflicted="$(git diff --name-only --diff-filter=U)"
-              path_commit="$(git log -1 --format=%s origin/main -- docs/data/current-affairs.json)"
-              # Concurrent scheduled refreshes can both update only this generated
-              # JSON. Resolve that one file only when main's latest change to it
-              # was another automated feed refresh. Never resolve unrelated or
-              # manually edited conflicts automatically.
-              if [ "$conflicted" = "docs/data/current-affairs.json" ] &&
-                 [ "$path_commit" = "Refresh daily educational current affairs feed" ]; then
-                echo "::warning::Concurrent automated feed refresh detected; keeping this run's freshly validated feed."
-                git checkout --theirs -- docs/data/current-affairs.json
+              # Only the generated feed may be reconciled automatically.
+              # Keep this run's validated articles while restoring teacher-approved
+              # metadata from the latest main version for matching article URLs.
+              if [ "$conflicted" = "docs/data/current-affairs.json" ]; then
+                git show :2:docs/data/current-affairs.json > /tmp/main-feed.json
+                git show :3:docs/data/current-affairs.json > /tmp/generated-feed.json
+                node -e 'const fs=require("fs"); const main=JSON.parse(fs.readFileSync("/tmp/main-feed.json","utf8")); const next=JSON.parse(fs.readFileSync("/tmp/generated-feed.json","utf8")); const arr=x=>Array.isArray(x)?x:(x.items||x.articles||[]); const approved=new Map(arr(main).filter(x=>x&&x.url&&x.approved===true&&x.verificationStatus==="APPROVED_BY_TEACHER"&&x.levelRecommendationBasis==="TEACHER_REVIEWED").map(x=>[x.url,x])); next.items=arr(next).map(x=>{const p=approved.get(x.url); return p?{...x,approved:true,verificationStatus:"APPROVED_BY_TEACHER",levelRecommendationBasis:"TEACHER_REVIEWED",ageSuitability:p.ageSuitability||x.ageSuitability,educationalRelevance:p.educationalRelevance||x.educationalRelevance,subjectsApplicable:p.subjectsApplicable?.length?p.subjectsApplicable:x.subjectsApplicable,levelsApplicable:p.levelsApplicable?.length?p.levelsApplicable:x.levelsApplicable}:x}); fs.writeFileSync("docs/data/current-affairs.json",JSON.stringify(next,null,2)+"\\n"); console.log("Preserved teacher-approved metadata for matching URLs.");'
                 git add docs/data/current-affairs.json
                 GIT_EDITOR=true git rebase --continue
               else
                 git rebase --abort || true
-                echo "::error::Feed conflict is not a safe concurrent automated refresh; refusing to overwrite."
+                echo "::error::Conflict includes a non-feed file; refusing to overwrite."
                 exit 1
               fi
             fi
