@@ -48,9 +48,9 @@ test("each class level supports four differentiated ability bands", () => {
       const worksheet = library.getWorksheet(level, ability.id, 8);
       assert.equal(worksheet.level, level);
       assert.equal(worksheet.ability, ability.id);
-      assert.ok(worksheet.tasks.some(task => task.includes(ability.id === "support" ? "SUPPORTED START" :
+      assert.ok(worksheet.tasks.some(task => task.includes(ability.id === "support" ? "FOUNDATION" :
         ability.id === "developing" ? "DEVELOPING" :
-        ability.id === "expected" ? "CLASS-GOAL PRACTICE" : "EXTENSION")));
+        ability.id === "expected" ? "CLASS-GOAL PRACTICE" : "ADVANCED")));
     }
   }
 });
@@ -118,7 +118,7 @@ test("ability selector explains each band when tapped or changed", () => {
   assert.match(source, /abilitySelect\.addEventListener\("click", showAbilityInfo\)/);
   assert.match(source, /abilitySelect\.addEventListener\("focus", showAbilityInfo\)/);
   assert.match(source, /abilitySelect\.addEventListener\("change", function\s*\(\)/);
-  for (const phrase of ["Supported start:", "DEVELOPING:", "CLASS-GOAL PRACTICE:", "EXTENSION:"]) {
+  for (const phrase of ["Foundation:", "DEVELOPING:", "CLASS-GOAL PRACTICE:", "ADVANCED:"]) {
     assert.ok(source.includes(phrase), "ability information should explain " + phrase);
   }
 });
