@@ -10,10 +10,10 @@
   for (var c = 1; c <= 8; c += 1) LEVELS.push("Class " + c);
   for (var f = 3; f <= 7; f += 1) LEVELS.push("Form " + f);
   var ABILITIES = [
-    { id: "support", label: "Supported start", rule: "Model one example, reduce reading load, use concrete/picture cues and provide a sentence frame." },
+    { id: "support", label: "Foundation", rule: "Model one example, reduce reading load, use concrete/picture cues and provide a sentence frame." },
     { id: "developing", label: "Developing", rule: "Give a short hint or word bank, then ask the learner to try independently." },
-    { id: "expected", label: "Working at current class goal", rule: "Complete the core task independently and show the evidence or working." },
-    { id: "extension", label: "Extension / deeper challenge", rule: "Add a new condition, compare methods, justify an answer or create a related example." }
+    { id: "expected", label: "Expected", rule: "Complete the core task independently and show the evidence or working." },
+    { id: "extension", label: "Advanced", rule: "Add a new condition, compare methods, justify an answer or create a related example." }
   ];
   var SUBJECTS = [
     "English", "Mathematics", "Science", "Social Studies", "Healthy Living",
@@ -90,7 +90,7 @@
     if (ability === "support") task = "SUPPORTED: " + core + " Teacher models the first step; learner may use objects, picture cues, read-aloud, word bank or sentence frame.";
     if (ability === "developing") task = "DEVELOPING: " + core + " Offer one prompt if needed, then ask the learner to complete a similar item independently.";
     if (ability === "expected") task = "CORE: " + core + " Learner completes independently and checks the answer or working.";
-    if (ability === "extension") task = "EXTENSION: " + core + " Add a changed condition or new example; ask the learner to compare options and justify the best answer.";
+    if (ability === "extension") task =  "ADVANCED: " + core + " Add a changed condition or new example; ask the learner to compare options and justify the best answer.";
     return { band: band.label, adjustment: band.rule, task: task, expectation: classExpectation(level) };
   }
   function makeQuestions(subject, ability, week, level) {
