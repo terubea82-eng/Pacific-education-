@@ -50,7 +50,7 @@ test("each class level supports four differentiated ability bands", () => {
       assert.equal(worksheet.ability, ability.id);
       assert.ok(worksheet.tasks.some(task => task.includes(ability.id === "support" ? "FOUNDATION" :
         ability.id === "developing" ? "DEVELOPING" :
-        ability.id === "expected" ? "CLASS-GOAL PRACTICE" : "ADVANCED")));
+        ability.id === "expected" ? "EXPECTED" : "ADVANCED")));
     }
   }
 });
