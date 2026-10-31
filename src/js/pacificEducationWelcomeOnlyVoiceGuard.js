@@ -151,10 +151,13 @@
       globalWrapped.__peWelcomeGuard=true;globalWrapped.__peOriginal=originalGlobal;window.speakText=globalWrapped;
     }
   }
+  /* The speech engine is loaded before this guard in src/index.html. Wrap it once
+     at startup instead of observing the entire document tree: the app's frequent
+     DOM updates otherwise cause an observer callback storm on startup. */
   wrapSpeechObject();
-  var observer=new MutationObserver(function(){wrapSpeechObject();sanitizeRegistrationStatus();});
-  if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true});
-  setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},250);setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},1000);setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},2500);
+  setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},250);
+  setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},1000);
+  setTimeout(function(){wrapSpeechObject();sanitizeRegistrationStatus();},2500);
 
   /* A welcome conversation may already be speaking when the user presses Next.
      The old guard blocked a new welcome call on Registration, but did not cancel
@@ -178,7 +181,8 @@
     wasOnWelcomePage=onWelcome;
   }
   var pageTransitionObserver=new MutationObserver(cancelWelcomeWhenLeavingPageOne);
+  /* Navigation writes the active step/class on body. Watching that single node is
+     sufficient and avoids reacting to every descendant's content/visibility edits. */
   if(document.body)pageTransitionObserver.observe(document.body,{attributes:true,attributeFilter:["class","data-pe-flow-step"]});
-  if(document.documentElement)pageTransitionObserver.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","class"]});
   setTimeout(cancelWelcomeWhenLeavingPageOne,0);
 })(window,document);
