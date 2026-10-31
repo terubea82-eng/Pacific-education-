@@ -23,6 +23,17 @@ test('foreign event in a Fiji publisher headline is not mislabeled as Fiji', () 
   );
 });
 
+test('explicit UK and EU events in Fiji publisher feeds are classified globally', () => {
+  assert.equal(
+    inferCurrentAffairsRegion('King Charles sorrow over slavery faces test as reparations movement gains ground', 'FIJI'),
+    'GLOBAL'
+  );
+  assert.equal(
+    inferCurrentAffairsRegion('EU fees that hit cheap Shein, Temu parcels could raise €6 billion', 'FIJI'),
+    'GLOBAL'
+  );
+});
+
 test('explicit Fiji story location overrides a Pacific publisher fallback', () => {
   assert.equal(
     inferCurrentAffairsRegion('Fiji anti-corruption chief responds to drug investigation', 'PACIFIC'),
