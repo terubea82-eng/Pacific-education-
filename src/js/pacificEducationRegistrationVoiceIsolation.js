@@ -150,8 +150,9 @@
   window.addEventListener("pageshow",enforce);
   window.addEventListener("focus",enforce);
   var observer=new MutationObserver(enforce);
-  if(document.body)observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","data-pe-flow-step"]});
-  if(document.documentElement)observer.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:["hidden","class","data-pe-flow-step"]});
+  /* Registration visibility and route state are represented on body. Avoid a
+     subtree-wide observer; button/status updates must not retrigger isolation. */
+  if(document.body)observer.observe(document.body,{attributes:true,attributeFilter:["class","hidden","data-pe-flow-step"]});
   enforce();
   window.setTimeout(enforce,0);
   window.setTimeout(enforce,250);
