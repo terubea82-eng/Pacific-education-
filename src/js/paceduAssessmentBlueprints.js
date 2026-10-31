@@ -8,10 +8,10 @@
   for (var c=1;c<=8;c+=1) levels.push("Class "+c);
   for (var f=3;f<=7;f+=1) levels.push("Form "+f);
   var abilities = [
-    {id:"support",label:"Supported start"},
+    {id:"support",label:"Foundation"},
     {id:"developing",label:"Developing"},
-    {id:"expected",label:"At class goal"},
-    {id:"extension",label:"Extension"}
+    {id:"expected",label:"Expected"},
+    {id:"extension",label:"Advanced"}
   ];
   var formats = ["Multiple choice","Matching","True / false","Short answer","Reading / source response","Show working / practical task","Explain or justify"];
   var defaultBlueprint = [
