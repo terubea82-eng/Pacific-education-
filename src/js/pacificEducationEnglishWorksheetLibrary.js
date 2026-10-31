@@ -9,10 +9,10 @@
   for (var i = 1; i <= 8; i += 1) LEVELS.push("Class " + i);
   for (var form = 3; form <= 7; form += 1) LEVELS.push("Form " + form);
   var ABILITIES = [
-    ["support", "Supported start"],
+    ["support", "Foundation"],
     ["developing", "Developing"],
-    ["expected", "Working at current class goal"],
-    ["extension", "Extension / deeper challenge"]
+    ["expected", "Expected"],
+    ["extension", "Advanced"]
   ];
   var SUBJECTS = [
     ["English", "English"], ["Mathematics", "Mathematics"], ["Science", "Science"],
@@ -382,10 +382,10 @@
     var n = classNumber(level), stage = stageFor(n), topic = topicFor(day), tasks = [];
     var questionPlan = questionPlanFor(level, ability, topic);
     var abilityPrefix = {
-      support: "SUPPORTED START: use a teacher model, word bank, picture/object cue, sentence frame, or worked example. ",
+      support: "FOUNDATION: use a teacher model, word bank, picture/object cue, sentence frame, or worked example. ",
       developing: "DEVELOPING: try independently first; use one hint or a word bank if needed. ",
       expected: "CLASS-GOAL PRACTICE: complete independently, then check your work against the success criteria. ",
-      extension: "EXTENSION: complete the core task, then justify your choices, compare alternatives, or create a new example. "
+      extension: "ADVANCED: complete the core task, then justify your choices, compare alternatives, or create a new example. "
     }[ability];
     if (stage === "early") {
       tasks = [
@@ -526,17 +526,17 @@
     var levelOptions = LEVELS.map(function (v) { return [v, v]; });
     var levelSelect = addSelect(panel, "Class / level", "paceduEnglishWorksheetLevel", levelOptions, levelDefault);
     var retrievedAbility = storedWorksheetAbility();
-    var abilitySelect = addSelect(panel, "Ability (choose from observed evidence)", [["initial-assessment","Day 1 initial ability check"],["support","Supported start"],["developing","Developing"],["expected","Working at current class goal"],["extension","Extension / deeper challenge"]], "paceduEnglishWorksheetAbility", retrievedAbility.ability);
+    var abilitySelect = addSelect(panel, "Ability (choose from observed evidence)", [["initial-assessment","Day 1 initial ability check"],["support","Foundation"],["developing","Developing"],["expected","Expected"],["extension","Advanced"]], "paceduEnglishWorksheetAbility", retrievedAbility.ability);
     /* Defensive recovery: some embedded/mobile browsers or prior page scripts can
        leave a select visible but with its options removed. Keep this control
        self-contained; ability bands are explicit teacher choices, not a roster
        lookup, and must remain available offline. */
     var abilityChoices = [
       ["initial-assessment", "Day 1 initial ability check"],
-      ["support", "Supported start"],
+      ["support", "Foundation"],
       ["developing", "Developing"],
-      ["expected", "Working at current class goal"],
-      ["extension", "Extension / deeper challenge"]
+      ["expected", "Expected"],
+      ["extension", "Advanced"]
     ];
     if (!abilitySelect || !abilitySelect.options || abilitySelect.options.length !== abilityChoices.length) {
       if (abilitySelect) {
