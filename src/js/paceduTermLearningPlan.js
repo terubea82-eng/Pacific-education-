@@ -14,10 +14,10 @@ var DAYS = [
   {name:"Review and evidence",goal:"Correct errors and show what has been learned."}
 ];
 var BANDS = {
- support:{label:"Supported start",guidance:"Use short instructions, pictures, objects, worked steps and fewer choices."},
+ support:{label:"Foundation",guidance:"Use short instructions, pictures, objects, worked steps and fewer choices."},
  developing:{label:"Developing",guidance:"Use a model and guided questions, then reduce prompts."},
  expected:{label:"Expected",guidance:"Complete the core task independently and explain the method."},
- extension:{label:"Extension",guidance:"Compare methods, justify decisions and solve a more complex task."}
+ extension:{label:"Advanced",guidance:"Compare methods, justify decisions and solve a more complex task."}
 };
 function termId(value){value=String(value||"T1").toUpperCase();return TERMS[value]?value:"T1";}
 function getTermPlan(options){

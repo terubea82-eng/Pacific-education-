@@ -52,8 +52,8 @@ test("levels and four ability bands produce differentiated directions", () => {
   const api = load().PacEduDailyWorksheetContent;
   const support = api.getWorksheet("ECE", "English", 2, "support");
   const extension = api.getWorksheet("Form 7", "English", 2, "extension");
-  assert.ok(support.tasks[0].includes("SUPPORTED START"));
-  assert.ok(extension.tasks[0].includes("EXTENSION"));
+  assert.ok(support.tasks[0].includes("FOUNDATION"));
+  assert.ok(extension.tasks[0].includes("ADVANCED"));
   assert.equal(support.responseLines, 2);
   assert.equal(extension.responseLines, 7);
 });
@@ -270,8 +270,8 @@ test("scheduled English worksheets provide level-appropriate reading and four an
   const ece = api.getCurriculumWorksheet({level:"ECE",subject:"English",term:"T1",week:1,day:1,ability:"support"});
   const form7 = api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T1",week:1,day:1,ability:"extension"});
   assert.notEqual(ece.readingText, form7.readingText);
-  assert.match(ece.tasks[0], /SUPPORTED START/);
-  assert.match(form7.tasks[0], /EXTENSION/);
+  assert.match(ece.tasks[0], /FOUNDATION/);
+  assert.match(form7.tasks[0], /ADVANCED/);
 });
 
 

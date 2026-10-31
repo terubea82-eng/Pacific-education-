@@ -7,10 +7,10 @@
   "use strict";
   var VERSION = "1.0.0";
   var ABILITIES = {
-    support: {label:"Supported start", focus:"Recognise or demonstrate the core idea with models, pictures, objects, read-aloud or worked steps.", prompt:"Use a short step, visual cue, word bank or worked example; record the support used."},
+    support: {label:"Foundation", focus:"Recognise or demonstrate the core idea with models, pictures, objects, read-aloud or worked steps.", prompt:"Use a short step, visual cue, word bank or worked example; record the support used."},
     developing: {label:"Developing", focus:"Complete the core task with a model or limited prompt, then try independently.", prompt:"Give one planned prompt if needed; record whether the learner completes the next step independently."},
-    expected: {label:"Working at class goal", focus:"Apply the taught learning independently in a familiar task.", prompt:"Score the stated success criteria and accept equivalent correct methods or wording where appropriate."},
-    extension: {label:"Extension / deeper challenge", focus:"Transfer learning to a new situation, compare methods or justify a decision.", prompt:"Award extension marks only for the stated reasoning/transfer criterion, not for extra writing alone."}
+    expected: {label:"Expected", focus:"Apply the taught learning independently in a familiar task.", prompt:"Score the stated success criteria and accept equivalent correct methods or wording where appropriate."},
+    extension: {label:"Advanced", focus:"Transfer learning to a new situation, compare methods or justify a decision.", prompt:"Award advanced-level marks only for the stated reasoning/transfer criterion, not for extra writing alone."}
   };
   var SUBJECTS = {
     "English": [
@@ -174,10 +174,10 @@
         "Record support or accessibility adjustments used; do not count missing work as zero without the school's approved rule."
       ],
       progression:{rule:"Use this activity as one piece of evidence only. Do not change a learner's ability group from one worksheet alone.",bands:[
-        {id:"support",label:"Supported start",guide:"Re-teach the prerequisite with concrete examples and guided practice."},
+        {id:"support",label:"Foundation",guide:"Re-teach the prerequisite with concrete examples and guided practice."},
         {id:"developing",label:"Developing",guide:"Repeat the core skill with a model and then a new independent item."},
-        {id:"expected",label:"Working at class goal",guide:"Practise transfer to a fresh task and maintain spaced revision."},
-        {id:"extension",label:"Extension / deeper challenge",guide:"Use unfamiliar applications, justification or comparison while checking core accuracy."}
+        {id:"expected",label:"Expected",guide:"Practise transfer to a fresh task and maintain spaced revision."},
+        {id:"extension",label:"Advanced",guide:"Use unfamiliar applications, justification or comparison while checking core accuracy."}
       ]},
       links:{criteriaFamilyId:familyId,dailyWorksheet:{activityId:text(options.activityId)||null,criteriaId:null},revisionPaper:{criteriaFamilyId:familyId,status:"USE_SAME_INDICATOR_MAP_AND_CRITERIA_VERSION"},examPaper:{criteriaFamilyId:familyId,status:"USE_TERM_COVERAGE_MAP_AND_TEACHER-APPROVED_MARK_SCHEME"}},
       warning:"Suggested marking framework only, not an official Ministry rubric. Verify the current syllabus outcome and the actual question/answer key before use. Open-ended, oral, creative, practical and performance responses require teacher review."
