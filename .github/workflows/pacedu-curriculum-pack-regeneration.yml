@@ -1,0 +1,62 @@
+name: PacEdu Curriculum Pack Draft Regeneration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "automation/curriculum-outcomes/**.json"
+      - "automation/curriculum_pack_generator.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pacedu-curriculum-pack-regeneration
+  cancel-in-progress: false
+
+jobs:
+  regenerate-drafts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate inputs and regenerate draft activity packs
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          inputs=(automation/curriculum-outcomes/*.json)
+          if [ "${#inputs[@]}" -eq 0 ]; then
+            echo "No verified curriculum outcome mapping files supplied; no packs generated."
+            exit 0
+          fi
+          for input in "${inputs[@]}"; do
+            country="$(python3 -c 'import json,sys; print(str(json.load(open(sys.argv[1]))["countryCode"]).upper())' "$input")"
+            version="$(python3 -c 'import json,re,sys; print(re.sub(r"[^A-Za-z0-9._-]+","-",str(json.load(open(sys.argv[1]))["frameworkVersion"])).strip("-"))' "$input")"
+            if [[ ! "$country" =~ ^[A-Z]{2,3}$ || -z "$version" ]]; then
+              echo "Invalid country/version in $input" >&2
+              exit 1
+            fi
+            output="src/data/curriculum/generated/$country/$version/draft-activities.json"
+            python3 automation/curriculum_pack_generator.py --input "$input" --output "$output"
+          done
+          python3 tests/test_education_change_registry.py
+
+      - name: Commit regenerated draft packs
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- src/data/curriculum/generated; then
+            echo "Generated draft packs are unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/curriculum/generated
+          git commit -m "curriculum: regenerate draft activity packs from verified outcomes"
+          git push origin main
