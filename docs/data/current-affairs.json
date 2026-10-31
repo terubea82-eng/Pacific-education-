@@ -426,9 +426,9 @@
         "Class 5",
         "Class 6"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -454,9 +454,9 @@
         "Class 5",
         "Class 6"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -786,9 +786,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -815,9 +815,9 @@
         "Class 5",
         "Class 6"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -849,9 +849,9 @@
         "Class 12",
         "Class 13"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -876,9 +876,9 @@
         "Class 5",
         "Class 6"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
@@ -904,9 +904,9 @@
         "Class 5",
         "Class 6"
       ],
-      "levelRecommendationBasis": "TEACHER_REVIEWED",
-      "verificationStatus": "APPROVED_BY_TEACHER",
-      "approved": true,
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     }
   ]
