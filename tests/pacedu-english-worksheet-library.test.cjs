@@ -118,7 +118,7 @@ test("ability selector explains each band when tapped or changed", () => {
   assert.match(source, /abilitySelect\.addEventListener\("click", showAbilityInfo\)/);
   assert.match(source, /abilitySelect\.addEventListener\("focus", showAbilityInfo\)/);
   assert.match(source, /abilitySelect\.addEventListener\("change", function\s*\(\)/);
-  for (const phrase of ["Foundation:", "DEVELOPING:", "CLASS-GOAL PRACTICE:", "ADVANCED:"]) {
+  for (const phrase of ["FOUNDATION:", "DEVELOPING:", "EXPECTED:", "ADVANCED:"]) {
     assert.ok(source.includes(phrase), "ability information should explain " + phrase);
   }
 });
