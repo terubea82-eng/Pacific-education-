@@ -32,6 +32,7 @@ test("all four ability groups receive distinct daily, drill, revision and exam-p
     assert.ok(r.abilityActivities.evidence.rule.includes("missing"));
   }
   assert.equal(new Set(results.map(r=>r.abilityActivities.daily.steps[0])).size,4);
+  assert.deepEqual(results.map(r=>r.abilityActivities.bandLabel), ["Foundation", "Developing", "Expected", "Advanced"]);
 });
 
 test("subject-specific daily tasks are supplied across supported subjects",()=>{
