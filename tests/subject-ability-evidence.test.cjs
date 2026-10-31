@@ -66,3 +66,70 @@ test("subject revision ability requires repeated teacher-reviewed evidence for t
   expect(result.activity.currentAbility).toBe("Developing");
   expect(result.activity.task).toContain("Ability-level practice (Developing)");
 });
+
+
+test("subject ability evidence cannot be combined across different classes", async ({ page }) => {
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    const records = {
+      "class-a-one": {
+        role: "student", subject: "English", level: "Class 4", classReference: "class-4-a",
+        reviewStatus: "TEACHER_APPROVED", teacherReviewedAbility: "Developing",
+        reviewedAt: "2026-10-20T10:00:00.000Z"
+      },
+      "class-b-one": {
+        role: "student", subject: "English", level: "Class 4", classReference: "class-4-b",
+        reviewStatus: "TEACHER_APPROVED", teacherReviewedAbility: "Advanced",
+        reviewedAt: "2026-10-21T10:00:00.000Z"
+      },
+      "class-b-two": {
+        role: "student", subject: "English", level: "Class 4", classReference: "class-4-b",
+        reviewStatus: "TEACHER_APPROVED", teacherReviewedAbility: "Advanced",
+        reviewedAt: "2026-10-22T10:00:00.000Z"
+      }
+    };
+    localStorage.setItem("pacificEducationRoleActivityEvidenceV1", JSON.stringify(records));
+  });
+  await page.addScriptTag({ url: "./js/pacificEducationRoleActivityPacks.js?v=class-isolation-test" });
+  const result = await page.evaluate(() => ({
+    classA: window.PacificEducationRoleActivityPacks.getCurrentDemonstratedAbility({
+      subject: "English", level: "Class 4", classReference: "class-4-a"
+    }),
+    classB: window.PacificEducationRoleActivityPacks.getCurrentDemonstratedAbility({
+      subject: "English", level: "Class 4", classReference: "class-4-b"
+    })
+  }));
+  expect(result.classA.status).toBe("INSUFFICIENT_EVIDENCE");
+  expect(result.classA.evidenceCount).toBe(1);
+  expect(result.classB.status).toBe("DEMONSTRATED");
+  expect(result.classB.level).toBe("Advanced");
+  expect(result.classB.evidenceCount).toBe(2);
+});
+
+test("subject ability remains unassigned when class reference is missing", async ({ page }) => {
+  await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    localStorage.setItem("pacificEducationRoleActivityEvidenceV1", JSON.stringify({
+      "class-a-one": {
+        role: "student", subject: "English", level: "Class 4", classReference: "class-4-a",
+        reviewStatus: "TEACHER_APPROVED", teacherReviewedAbility: "Expected",
+        reviewedAt: "2026-10-20T10:00:00.000Z"
+      },
+      "class-b-one": {
+        role: "student", subject: "English", level: "Class 4", classReference: "class-4-b",
+        reviewStatus: "TEACHER_APPROVED", teacherReviewedAbility: "Expected",
+        reviewedAt: "2026-10-21T10:00:00.000Z"
+      }
+    }));
+  });
+  await page.addScriptTag({ url: "./js/pacificEducationRoleActivityPacks.js?v=missing-class-test" });
+  const result = await page.evaluate(() =>
+    window.PacificEducationRoleActivityPacks.getCurrentDemonstratedAbility({
+      subject: "English", level: "Class 4"
+    })
+  );
+  expect(result.status).toBe("INSUFFICIENT_EVIDENCE");
+  expect(result.level).toBe("Insufficient evidence");
+  expect(result.evidenceCount).toBe(0);
+  expect(result.message).toContain("Select a class");
+});

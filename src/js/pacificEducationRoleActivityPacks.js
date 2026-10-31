@@ -266,6 +266,15 @@
   }
   function getCurrentDemonstratedAbility(context) {
     context = context || {};
+    var classReference = String(context.classReference || "").trim();
+    if (!classReference) {
+      return {
+        status: "INSUFFICIENT_EVIDENCE",
+        level: "Insufficient evidence",
+        evidenceCount: 0,
+        message: "Select a class before assigning subject ability. Evidence must be reviewed within that class."
+      };
+    }
     var records = readAll(), matches = [], approved = {
       "APPROVED": true, "TEACHER_APPROVED": true, "TEACHER_REVIEWED": true, "REVIEWED": true
     };
@@ -275,7 +284,7 @@
       var status = String(record.reviewStatus || record.status || "").toUpperCase();
       if (["student", "blind-learner", "deaf-learner"].indexOf(role) < 0 || !approved[status]) return;
       if (String(record.subject || "").toLowerCase() !== String(context.subject || "").toLowerCase()) return;
-      if (context.classReference && String(record.classReference || "") !== String(context.classReference)) return;
+      if (String(record.classReference || "").trim() !== classReference) return;
       if (context.level && String(record.level || "").toLowerCase() !== String(context.level).toLowerCase()) return;
       var value = record.teacherReviewedAbility || record.demonstratedAbility || record.reviewedAbility || record.masteryLevel;
       var band = abilityBand(value);
