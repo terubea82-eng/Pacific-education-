@@ -20,7 +20,7 @@ assert.ok(api.levels.includes("ECE"), "ECE label is preserved");
 assert.ok(api.levels.includes("Class 8"), "upper primary levels are included");
 assert.ok(api.levels.includes("Form 7"), "Form 7 is included");
 assert.equal(api.abilities.length, 4, "four ability bands are present");
-assert.deepEqual(api.abilities.map(band => band.label), ["Foundation", "Developing", "Expected", "Advanced"]);
+assert.deepEqual(Array.from(api.abilities, band => band.label), ["Foundation", "Developing", "Expected", "Advanced"]);
 assert.ok(api.subjects.includes("English") && api.subjects.includes("Mathematics"), "core subjects exist");
 assert.equal(api.weeklyDistribution.length, 33, "nine-week Term 1 and Term 2 plus five-week Term 3 and support blocks have 33 entries");
 for (const term of ["T1", "T2", "T3", "ASSESSMENT", "INTERVENTION", "REVISION", "EXAMS"]) {
