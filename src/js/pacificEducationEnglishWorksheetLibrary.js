@@ -384,7 +384,7 @@
     var abilityPrefix = {
       support: "FOUNDATION: use a teacher model, word bank, picture/object cue, sentence frame, or worked example. ",
       developing: "DEVELOPING: try independently first; use one hint or a word bank if needed. ",
-      expected: "CLASS-GOAL PRACTICE: complete independently, then check your work against the success criteria. ",
+      expected: "EXPECTED: complete independently, then check your work against the success criteria. ",
       extension: "ADVANCED: complete the core task, then justify your choices, compare alternatives, or create a new example. "
     }[ability];
     if (stage === "early") {
