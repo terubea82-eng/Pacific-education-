@@ -89,7 +89,7 @@
     var task = core;
     if (ability === "support") task = "SUPPORTED: " + core + " Teacher models the first step; learner may use objects, picture cues, read-aloud, word bank or sentence frame.";
     if (ability === "developing") task = "DEVELOPING: " + core + " Offer one prompt if needed, then ask the learner to complete a similar item independently.";
-    if (ability === "expected") task = "CORE: " + core + " Learner completes independently and checks the answer or working.";
+    if (ability === "expected") task = "EXPECTED: " + core + " Learner completes independently and checks the answer or working.";
     if (ability === "extension") task =  "ADVANCED: " + core + " Add a changed condition or new example; ask the learner to compare options and justify the best answer.";
     return { band: band.label, adjustment: band.rule, task: task, expectation: classExpectation(level) };
   }
