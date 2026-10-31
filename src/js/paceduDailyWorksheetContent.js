@@ -191,7 +191,7 @@
     ];
     if(ability==="support") tasks.unshift("FOUNDATION: teacher models Question 1; use read-aloud, pictures, a word bank or concrete objects, then try the next question.");
     else if(ability==="developing") tasks.unshift("DEVELOPING: try independently first; ask for one hint only if needed.");
-    else if(ability==="expected") tasks.unshift("CORE PRACTICE: complete independently and check each answer.");
+    else if(ability==="expected") tasks.unshift("EXPECTED: complete independently and check each answer.");
     else if(ability==="extension") tasks.unshift("ADVANCED: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
     var key=questions.map(function(q){return {number:q.number,answer:q.answer,explanation:q.why};});
     return {
@@ -346,7 +346,7 @@
     var bandPrefix = {
       support: "FOUNDATION: teacher models Question 1; use read-aloud, pictures, a word bank or a sentence frame.",
       developing: "DEVELOPING: try independently first; ask for one hint or word bank if needed.",
-      expected: "CORE PRACTICE: complete independently where possible and check each answer against the text.",
+      expected: "EXPECTED: complete independently where possible and check each answer against the text.",
       extension: "ADVANCED: complete the core work, then create a related question or justify an alternative interpretation."
     }[ability] || "DEVELOPING: try independently first.";
     tasks.push("Class-level target: " + levelExpectation.target, levelExpectation.output);
