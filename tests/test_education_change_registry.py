@@ -281,5 +281,51 @@ class EducationChangeRegistryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate"):
             module.validate_school_calendar(calendar)
 
+
+    def test_generator_creates_complete_dated_lesson_plan_contract_as_unapproved_draft(self):
+        spec = importlib.util.spec_from_file_location("pacedu_lesson_draft_contract_test", ROOT / "automation" / "curriculum_pack_generator.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        source = {
+            "countryCode": "FJ", "frameworkName": "Fiji National Curriculum Framework",
+            "frameworkVersion": "2013", "officialSourceUrl": "https://www.education.gov.fj/",
+            "releaseStatus": "draft", "officialPublicationDate": None,
+            "officialEffectiveDate": None, "sourceVerifiedAt": "2026-11-01T09:00:00Z",
+            "schoolCalendar": {
+                "schoolYear": "2027", "calendarVersion": "school-2027-v1",
+                "approvalStatus": "approved", "approvedBy": "school-principal",
+                "approvedAt": "2026-11-01T09:00:00Z",
+                "teachingDays": [
+                    {"date": "2027-01-25", "term": 1, "week": 1, "day": 1},
+                    {"date": "2027-01-26", "term": 1, "week": 1, "day": 2},
+                    {"date": "2027-01-27", "term": 1, "week": 1, "day": 3},
+                    {"date": "2027-01-28", "term": 1, "week": 1, "day": 4},
+                    {"date": "2027-01-29", "term": 1, "week": 1, "day": 5}
+                ]
+            },
+            "subjects": [{"classLevel": "Class 1", "subjectName": "English", "outcomes": [{
+                "outcomeId": "ENG-C1-01", "outcomeText": "Recognise initial sounds in familiar words.",
+                "sourcePage": "p. 12", "verificationStatus": "verified", "term": 1, "week": 1
+            }]}]
+        }
+        pack = module.generate(source)
+        outcome = pack["subjects"][0]["outcomes"][0]
+        self.assertEqual(len(outcome["lessonDrafts"]), 5)
+        lesson = outcome["lessonDrafts"][0]
+        self.assertEqual(lesson["lessonDate"], "2027-01-25")
+        self.assertEqual(lesson["schoolYear"], "2027")
+        self.assertEqual(lesson["frameworkVersion"], "2013")
+        self.assertIsNone(lesson["officialPublicationDate"])
+        self.assertEqual(lesson["completionStatus"], "incomplete-draft-content-required")
+        self.assertFalse(lesson["studentReleaseAllowed"])
+        required = {
+            "topic", "learningObjective", "teachingMaterials", "teacherInstructions",
+            "studentInstructions", "subjectSpecificWorksheet", "assessmentMethod",
+            "markingGuide", "accessibilityAdaptations", "remediation"
+        }
+        self.assertEqual(set(lesson["sections"]), required)
+        self.assertTrue(all(section["status"] == "authoring-required" and section["content"] is None
+                            for section in lesson["sections"].values()))
+
 if __name__ == "__main__":
     unittest.main()
