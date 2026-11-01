@@ -132,6 +132,9 @@ def generate(data):
                 "outcomeId": outcome["outcomeId"],
                 "outcomeText": outcome["outcomeText"],
                 "sourcePage": outcome["sourcePage"],
+                "preparationStatus": "incomplete-draft-content-required",
+                "requiredSections": ["topic", "learningObjective", "teachingMaterials", "teacherInstructions", "studentInstructions", "subjectSpecificWorksheet", "assessmentMethod", "markingGuide", "accessibilityAdaptations", "remediation"],
+                "teacherApprovalRequired": True,
                 "verificationStatus": "verified-source-input-review-still-required",
                 "dailySequence": scheduled_sequence(calendar_index, outcome.get("term"), outcome.get("week")),
                 "abilityPathways": {
