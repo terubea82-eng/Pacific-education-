@@ -194,7 +194,7 @@ A concept is not considered fully distributed for a given level/subject until al
 **Current status:** This document establishes a separate concept-distribution plan for all 14 requested boxes. It does not claim that all 14 are prescribed at every level, nor that all daily concepts are officially mapped. Agriculture, Phonics and Rotuman in particular require subject-specific content development and/or approved language/curriculum resources before release. Senior-secondary subject names must follow the actual approved course catalogue for each year and school.
 
 
-## Individual level concept register — all 14 levels
+## Individual level concept register — all 14 levels across the subject boxes
 
 This register expands the earlier grouped bands so the teacher can select one exact level inside each separate subject box. These are **draft level-specific concept sequences**, not quoted Ministry achievement indicators. They are not yet the 115-day Term 1–3 map. Each line must be reconciled to the current syllabus outcome before it is turned into a daily activity; do not generate a worksheet from a pending line.
 
@@ -218,6 +218,22 @@ This register expands the earlier grouped bands so the teacher can select one ex
 - **ECE:** line, colour, sound, movement, imaginative play.\n- **Class 1:** drawing, pattern, rhythm, singing, role play.\n- **Class 2:** colour, texture, beat, drama and making.\n- **Class 3:** visual elements, melody, movement, simple performance.\n- **Class 4:** composition, art forms, rhythm, drama roles.\n- **Class 5:** design, music structure, dance and performance.\n- **Class 6:** visual communication, technique, critique.\n- **Class 7:** composition, performance, audience and reflection.\n- **Class 8:** selected visual arts/music/drama strands.\n- **Form 3:** course-specific creation, interpretation and response.\n- **Form 4:** approved senior arts pathway.\n- **Form 5:** specialist arts technique and analysis.\n- **Form 6:** independent portfolio/performance development.\n- **Form 7:** advanced portfolio, performance and critical reflection.\n
 ### Technology box
 - **ECE:** safe tools, construction play, everyday systems.\n- **Class 1:** needs, materials, simple mechanisms, safe tool use.\n- **Class 2:** sequence instructions, design and test simple model.\n- **Class 3:** structures, materials, simple systems, digital safety.\n- **Class 4:** design brief, tools, construction, testing.\n- **Class 5:** technical drawing basics, mechanisms, digital literacy.\n- **Class 6:** design process, systems, prototype evaluation.\n- **Class 7:** materials, structures, data/digital systems, documentation.\n- **Class 8:** approved basic/applied technology or ICT pathway.\n- **Form 3:** design/make/test/evaluate within selected course.\n- **Form 4:** approved computing/technical/design option.\n- **Form 5:** course-specific technical design and documentation.\n- **Form 6:** advanced computing/technical project work where prescribed.\n- **Form 7:** senior technical project and evaluation per syllabus.\n
+### Computer Studies box
+- **ECE:** recognise familiar digital devices; identify safe handling; follow a simple teacher-led instruction sequence.
+- **Class 1:** identify device parts and purposes; practise safe touch/mouse actions; follow one- and two-step instructions.
+- **Class 2:** keyboard/touch input; locate letters and numbers; open and close a supervised activity; order simple steps.
+- **Class 3:** enter short text; recognise files and folders; save and retrieve teacher-guided work.
+- **Class 4:** create and edit a simple document; format text; enter and organise small sets of data.
+- **Class 5:** create a short presentation; organise files; represent simple data in a table or chart; practise digital citizenship.
+- **Class 6:** use spreadsheet cells and simple formulas; search with guidance; protect personal information and passwords.
+- **Class 7:** write and trace algorithms; use flowcharts; identify and correct simple errors; assess information reliability.
+- **Class 8:** introductory programming; computational problem-solving; networks and cyber safety; document a digital project.
+- **Form 3:** exact approved Computer Studies/ICT foundations, systems and data concepts as prescribed.
+- **Form 4:** programming, databases, networks or other strands only where confirmed in the current course syllabus.
+- **Form 5:** senior course-specific computing concepts and practical outcomes.
+- **Form 6:** advanced programming, systems, data or project work only as prescribed.
+- **Form 7:** senior project completion, evaluation and examination outcomes as prescribed.
+
 ### Vosa Vakaviti box
 - **ECE:** listening, greetings, familiar oral vocabulary.\n- **Class 1:** greetings, turn-taking, simple phrases.\n- **Class 2:** oral vocabulary, sound patterns, retelling.\n- **Class 3:** short stories, vocabulary, sentence patterns.\n- **Class 4:** reading short texts, spelling, oral description.\n- **Class 5:** comprehension, grammar, short writing.\n- **Class 6:** narrative/descriptive writing, oral communication.\n- **Class 7:** text comprehension, language structures, cultural texts.\n- **Class 8:** approved language strands and formal communication.\n- **Form 3:** literature and language analysis per syllabus.\n- **Form 4:** course-specific iTaukei language/literature.\n- **Form 5:** advanced text analysis and writing.\n- **Form 6:** independent research and extended writing.\n- **Form 7:** senior language/literature outcomes per syllabus.\n
 ### Fiji Hindi box
@@ -258,4 +274,4 @@ Financial education should be visible as a tagged concept strand within the rele
 - **Agriculture:** farm costs, yield, pricing, simple records and enterprise planning where prescribed.
 Do not create loan, insurance, investment or banking advice as a student task without age-appropriate safeguarding and teacher review.
 
-**Updated subject-box count:** 15 planning boxes, including Computer Studies as its own box. The 14-level register above still needs a Computer Studies entry for every level and must be reconciled with official Fiji course prescriptions before release.
+**Updated subject-box count:** 15 planning boxes, including Computer Studies as its own box. The Computer Studies level register is now listed separately for every level; all level entries still require reconciliation with official Fiji course prescriptions before release.
