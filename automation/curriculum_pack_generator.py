@@ -89,6 +89,10 @@ def validate_school_calendar(calendar):
 
 def scheduled_sequence(calendar_index, term, week):
     sequence = []
+    if term is not None and (not isinstance(term, int) or isinstance(term, bool) or term not in (1, 2, 3)):
+        raise ValueError("Outcome term must be 1, 2 or 3.")
+    if week is not None and (not isinstance(week, int) or isinstance(week, bool) or week < 1 or week > (9 if term in (1, 2) else 5)):
+        raise ValueError("Outcome week is outside the configured term length.")
     activities = [
         ("diagnostic", "Check prior knowledge relevant to this outcome; adapt the prompt to the class and subject."),
         ("teach-and-model", "Teach the exact outcome using an age-appropriate local example and a worked demonstration."),
@@ -97,7 +101,7 @@ def scheduled_sequence(calendar_index, term, week):
         ("checkpoint-and-correction", "Check the outcome, correct errors and assign a next step.")
     ]
     for day_number, (lesson_type, task) in enumerate(activities, 1):
-        lesson_date = calendar_index["dates"].get((term, week, day_number)) if calendar_index else None
+        lesson_date = calendar_index["dates"].get((term, week, day_number)) if calendar_index and term and week else None
         sequence.append({"term": term, "week": week, "day": day_number, "lessonDate": lesson_date,
                          "schedulingStatus": "scheduled" if lesson_date else "unscheduled-calendar-date-required",
                          "type": lesson_type, "task": task})
@@ -129,7 +133,7 @@ def generate(data):
                 "outcomeText": outcome["outcomeText"],
                 "sourcePage": outcome["sourcePage"],
                 "verificationStatus": "verified-source-input-review-still-required",
-                "dailySequence": scheduled_sequence(calendar_index, 1, 1),
+                "dailySequence": scheduled_sequence(calendar_index, outcome.get("term"), outcome.get("week")),
                 "abilityPathways": {
                     "supported-start": {"adaptation": "Concrete example, vocabulary preview, small steps and guided first item; keep the same learning goal where appropriate."},
                     "developing": {"adaptation": "Prompts, partial examples and moderate practice, gradually removing support."},
