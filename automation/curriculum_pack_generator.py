@@ -89,6 +89,8 @@ def validate_school_calendar(calendar):
 
 def scheduled_sequence(calendar_index, term, week):
     sequence = []
+    if (term is None) != (week is None):
+        raise ValueError("Outcome term and week must be supplied together.")
     if term is not None and (not isinstance(term, int) or isinstance(term, bool) or term not in (1, 2, 3)):
         raise ValueError("Outcome term must be 1, 2 or 3.")
     if week is not None and (not isinstance(week, int) or isinstance(week, bool) or week < 1 or week > (9 if term in (1, 2) else 5)):
