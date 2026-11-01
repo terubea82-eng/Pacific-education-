@@ -43,8 +43,69 @@ def validate_source(data):
                 raise ValueError("Only outcomes explicitly marked verified can be used as generator inputs.")
 
 
+def validate_school_calendar(calendar):
+    """Validate approved teaching dates; missing calendars deliberately remain unscheduled."""
+    if calendar is None:
+        return None
+    if not isinstance(calendar, dict):
+        raise ValueError("schoolCalendar must be an approved calendar object.")
+    for field in ("schoolYear", "calendarVersion", "approvedBy", "approvedAt", "teachingDays"):
+        if not calendar.get(field):
+            raise ValueError("schoolCalendar is missing required field: " + field)
+    if calendar.get("approvalStatus") != "approved":
+        raise ValueError("schoolCalendar must have approvalStatus=approved.")
+    if not isinstance(calendar["teachingDays"], list) or not calendar["teachingDays"]:
+        raise ValueError("schoolCalendar.teachingDays must be a non-empty list.")
+    try:
+        datetime.fromisoformat(str(calendar["approvedAt"]).replace("Z", "+00:00"))
+    except ValueError as error:
+        raise ValueError("schoolCalendar.approvedAt must be an ISO timestamp.") from error
+    indexed, seen_dates, previous_date = {}, set(), None
+    for entry in calendar["teachingDays"]:
+        if not isinstance(entry, dict):
+            raise ValueError("Every school calendar teaching day must be an object.")
+        for field in ("date", "term", "week", "day"):
+            if field not in entry:
+                raise ValueError("School calendar teaching day is missing " + field)
+        try:
+            lesson_date = date.fromisoformat(str(entry["date"]))
+        except (TypeError, ValueError) as error:
+            raise ValueError("School calendar dates must use YYYY-MM-DD.") from error
+        term, week, day = entry["term"], entry["week"], entry["day"]
+        if any(not isinstance(value, int) or isinstance(value, bool) or value < 1 for value in (term, week, day)):
+            raise ValueError("School calendar term, week and day must be positive integers.")
+        if term not in (1, 2, 3) or week > (9 if term in (1, 2) else 5) or day > 5:
+            raise ValueError("School calendar term/week/day is outside configured planning bounds.")
+        key = (term, week, day)
+        if key in indexed or lesson_date.isoformat() in seen_dates:
+            raise ValueError("School calendar contains a duplicate teaching day or date.")
+        if previous_date and lesson_date <= previous_date:
+            raise ValueError("School calendar teaching dates must be in strictly increasing order.")
+        indexed[key] = lesson_date.isoformat()
+        seen_dates.add(lesson_date.isoformat())
+        previous_date = lesson_date
+    return {"schoolYear": calendar["schoolYear"], "calendarVersion": calendar["calendarVersion"],
+            "approvedBy": calendar["approvedBy"], "approvedAt": calendar["approvedAt"], "dates": indexed}
+
+def scheduled_sequence(calendar_index, term, week):
+    sequence = []
+    activities = [
+        ("diagnostic", "Check prior knowledge relevant to this outcome; adapt the prompt to the class and subject."),
+        ("teach-and-model", "Teach the exact outcome using an age-appropriate local example and a worked demonstration."),
+        ("guided-practice", "Practise the outcome with feedback, then gradually remove prompts."),
+        ("independent-application", "Apply the outcome independently in a familiar context; require evidence appropriate to the subject."),
+        ("checkpoint-and-correction", "Check the outcome, correct errors and assign a next step.")
+    ]
+    for day_number, (lesson_type, task) in enumerate(activities, 1):
+        lesson_date = calendar_index["dates"].get((term, week, day_number)) if calendar_index else None
+        sequence.append({"term": term, "week": week, "day": day_number, "lessonDate": lesson_date,
+                         "schedulingStatus": "scheduled" if lesson_date else "unscheduled-calendar-date-required",
+                         "type": lesson_type, "task": task})
+    return sequence
+
 def generate(data):
     validate_source(data)
+    calendar_index = validate_school_calendar(data.get("schoolCalendar"))
     result = {
         "schemaVersion": 1,
         "countryCode": data["countryCode"].upper(),
@@ -52,6 +113,10 @@ def generate(data):
         "frameworkName": data.get("frameworkName", "National curriculum framework"),
         "releaseStatus": "draft",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "school": data.get("school", {}),
+        "schoolCalendar": ({"schoolYear": calendar_index["schoolYear"], "calendarVersion": calendar_index["calendarVersion"], "approvalStatus": "approved", "approvedBy": calendar_index["approvedBy"], "approvedAt": calendar_index["approvedAt"]} if calendar_index else None),
+        "schedulingStatus": "calendar-approved" if calendar_index else "setup-required-school-calendar-missing",
+        "setupWarnings": [] if calendar_index else ["Add an approved school calendar; lessons remain unscheduled and no dates have been inferred."],
         "officialSourceUrl": data["officialSourceUrl"],
         "approvalRequired": True,
         "subjects": []
@@ -64,13 +129,7 @@ def generate(data):
                 "outcomeText": outcome["outcomeText"],
                 "sourcePage": outcome["sourcePage"],
                 "verificationStatus": "verified-source-input-review-still-required",
-                "dailySequence": [
-                    {"day": 1, "type": "diagnostic", "task": "Check prior knowledge relevant to this outcome; adapt the prompt to the class and subject."},
-                    {"day": 2, "type": "teach-and-model", "task": "Teach the exact outcome using an age-appropriate local example and a worked demonstration."},
-                    {"day": 3, "type": "guided-practice", "task": "Practise the outcome with feedback, then gradually remove prompts."},
-                    {"day": 4, "type": "independent-application", "task": "Apply the outcome independently in a familiar context; require evidence appropriate to the subject."},
-                    {"day": 5, "type": "checkpoint-and-correction", "task": "Check the outcome, correct errors and assign a next step."}
-                ],
+                "dailySequence": scheduled_sequence(calendar_index, 1, 1),
                 "abilityPathways": {
                     "supported-start": {"adaptation": "Concrete example, vocabulary preview, small steps and guided first item; keep the same learning goal where appropriate."},
                     "developing": {"adaptation": "Prompts, partial examples and moderate practice, gradually removing support."},
