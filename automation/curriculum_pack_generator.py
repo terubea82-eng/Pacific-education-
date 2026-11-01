@@ -109,6 +109,59 @@ def scheduled_sequence(calendar_index, term, week):
                          "type": lesson_type, "task": task})
     return sequence
 
+
+def build_lesson_draft(data, subject, outcome, sequence_item):
+    """Create a fully labelled lesson-plan structure without pretending placeholders are authored content."""
+    required = {
+        "topic": "Use the verified outcome to identify the lesson topic.",
+        "learningObjective": "Rewrite the verified outcome as a clear, measurable student objective; retain the source wording.",
+        "teachingMaterials": "Select subject- and level-appropriate materials; record locally available alternatives.",
+        "teacherInstructions": "Write ordered teaching steps, including explanation, modelling and checks for understanding.",
+        "studentInstructions": "Write short, accessible, step-by-step directions for the learner.",
+        "subjectSpecificWorksheet": "Author questions/tasks that directly assess this subject outcome.",
+        "assessmentMethod": "Specify how the teacher will collect evidence of learning.",
+        "markingGuide": "Provide correct answers or performance criteria and a transparent marking guide.",
+        "accessibilityAdaptations": "Provide suitable text, audio, visual, tactile and other access alternatives.",
+        "remediation": "Specify a next teaching step for learners who have not yet met the objective."
+    }
+    sections = {
+        key: {"status": "authoring-required", "authoringPrompt": prompt, "content": None}
+        for key, prompt in required.items()
+    }
+    return {
+        "lessonId": "-".join(str(x) for x in (
+            data.get("countryCode", "XX"), subject.get("classLevel", "level"),
+            subject.get("subjectName", "subject"), outcome.get("outcomeId", "outcome"),
+            sequence_item.get("term") or "T?", sequence_item.get("week") or "W?",
+            sequence_item.get("day") or "D?"
+        )).replace(" ", "-"),
+        "school": data.get("school", {}),
+        "schoolYear": (data.get("schoolCalendar") or {}).get("schoolYear") or data.get("schoolYear"),
+        "countryCode": str(data.get("countryCode", "")).upper(),
+        "frameworkName": data.get("frameworkName", "National curriculum framework"),
+        "frameworkVersion": str(data.get("frameworkVersion", "")),
+        "officialPublicationDate": data.get("officialPublicationDate"),
+        "officialEffectiveDate": data.get("officialEffectiveDate"),
+        "sourceVerifiedAt": data.get("sourceVerifiedAt"),
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "curriculumDates": {"officialPublicationDate": data.get("officialPublicationDate"), "officialEffectiveDate": data.get("officialEffectiveDate"), "sourceVerifiedAt": data.get("sourceVerifiedAt"), "unavailableDatesMustRemainNull": True},
+        "classLevel": subject.get("classLevel"),
+        "subjectName": subject.get("subjectName"),
+        "outcomeId": outcome.get("outcomeId"),
+        "outcomeText": outcome.get("outcomeText"),
+        "sourcePage": outcome.get("sourcePage"),
+        "term": sequence_item.get("term"),
+        "week": sequence_item.get("week"),
+        "day": sequence_item.get("day"),
+        "lessonDate": sequence_item.get("lessonDate"),
+        "schedulingStatus": sequence_item.get("schedulingStatus"),
+        "lessonType": sequence_item.get("type"),
+        "sections": sections,
+        "completionStatus": "incomplete-draft-content-required",
+        "teacherApprovalRequired": True,
+        "studentReleaseAllowed": False
+    }
+
 def generate(data):
     validate_source(data)
     calendar_index = validate_school_calendar(data.get("schoolCalendar"))
@@ -139,6 +192,7 @@ def generate(data):
                 "teacherApprovalRequired": True,
                 "verificationStatus": "verified-source-input-review-still-required",
                 "dailySequence": scheduled_sequence(calendar_index, outcome.get("term"), outcome.get("week")),
+                "lessonDrafts": [],
                 "abilityPathways": {
                     "supported-start": {"adaptation": "Concrete example, vocabulary preview, small steps and guided first item; keep the same learning goal where appropriate."},
                     "developing": {"adaptation": "Prompts, partial examples and moderate practice, gradually removing support."},
@@ -149,6 +203,7 @@ def generate(data):
                 "practiceAssessment": {"label": "PacEdu practice assessment — not an official examination paper", "items": [], "authoringStatus": "questions-and-mark-scheme-required"},
                 "markingRubric": {"status": "rubric-required", "criteria": ["accuracy", "method or evidence", "explanation where appropriate"], "doNotInventGradeBoundaries": True}
             }
+            outcome_pack["lessonDrafts"] = [build_lesson_draft(data, subject, outcome, item) for item in outcome_pack["dailySequence"]]
             subject_pack["outcomes"].append(outcome_pack)
         result["subjects"].append(subject_pack)
     return result
