@@ -1,10 +1,12 @@
 # Pacific Education — 1-Month Controlled Pilot
 
-**Pilot period:** September 21, 2026 – October 21, 2026
+**Pilot period:** November 1, 2026 – December 1, 2026 (no-fee controlled school pilot; payments remain disabled)
 
 Pacific Education is being prepared as a **controlled one-month prototype pilot** covering learning, assessment, dashboards, curriculum-alignment workflows, accessibility, offline/low-bandwidth prototype behavior, and education relationship services.
 
 The initial pilot term is one month. **If a genuine need arises, the owner may extend the controlled pilot for up to a total of three months by explicit owner approval; an extension does not authorize production release.**
+
+**Post-pilot plan:** December 2026 is reserved for reviewing feedback and improving the prototype. January 1, 2027 is a target for payment-readiness planning only; it does not enable payment collection or authorize production. All production, privacy, safeguarding, security, curriculum and independent-review gates remain fail-closed until their evidence is verified and the required approvals are recorded.
 
 
 ## Pilot access
