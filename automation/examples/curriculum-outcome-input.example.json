@@ -1,0 +1,21 @@
+{
+  "countryCode": "FJ",
+  "frameworkName": "Fiji National Curriculum Framework",
+  "frameworkVersion": "2013",
+  "officialSourceUrl": "https://www.education.gov.fj/",
+  "releaseStatus": "draft",
+  "subjects": [
+    {
+      "classLevel": "Class 1",
+      "subjectName": "English",
+      "outcomes": [
+        {
+          "outcomeId": "REPLACE-WITH-OFFICIAL-ID",
+          "outcomeText": "REPLACE-WITH-EXACT-OFFICIAL-OUTCOME-TEXT",
+          "sourcePage": "REPLACE-WITH-PAGE-OR-SECTION",
+          "verificationStatus": "pending"
+        }
+      ]
+    }
+  ]
+}
