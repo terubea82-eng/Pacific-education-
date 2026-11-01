@@ -11,7 +11,7 @@ For each selected level and subject, the teacher follows the sequence from the l
 
 The sequences below are **concept families and planning progressions**, not claims that every concept is prescribed at every level. Before a daily activity is released as Fiji-curriculum aligned, attach the exact current Ministry syllabus/framework title, version/year, level, subject, strand, outcome/achievement indicator, page/section, source URL, reviewer and review date. If that evidence is unavailable, label the lesson **DRAFT — curriculum mapping pending**.
 
-## 14 separate subject boxes
+## 15 separate subject boxes
 
 ### 1. English
 - **ECE:** listening and turn-taking; oral vocabulary; rhyme and sound awareness; picture talk; mark-making and emergent writing.
@@ -167,7 +167,7 @@ This is a planning demonstration, not an official claim that these are the presc
 | Phonics | Sound awareness/target sound | Hear → identify → blend/segment → read/spell → quick check |
 | Basic Science | Observation and evidence | Observe → describe → record → compare → explain from evidence |
 | Social Science | Self, community and place | Identify → describe roles → locate a place → compare responsibilities → share conclusion |
-| Health | Personal hygiene and safety | Notice routine → model steps → practise safely → choose safe action → reflect |
+| Healthy Living | Personal hygiene and safety | Notice routine → model steps → practise safely → choose safe action → reflect |
 | Agriculture | Plant needs and care | Observe seed/plant → identify needs → prepare safe planting → care/record → review growth |
 | Home Economics | Food hygiene and healthy choices | Identify safe practice → model handwashing → sort food choices → apply to a meal scenario → check |
 | Arts | Elements of art and expression | Explore → practise a technique → create → share/respond → reflect |
@@ -229,3 +229,33 @@ This register expands the earlier grouped bands so the teacher can select one ex
 ### Required day-level mapping before completion
 
 For each of the 14 levels above and each subject box, create 23 week records (Term 1 Weeks 1–9; Term 2 Weeks 1–9; Term 3 Weeks 1–5), each with five day records. Every day record must carry the exact Ministry achievement indicator/outcome reference, concept, teacher activity, student task, accessible alternative, Copper/Bronze/Silver/Gold differentiation, and evidence/check. The 9–9–5 calendar is a planning structure only and must be reconciled with each school's approved calendar. No day is marked curriculum-aligned until its source reference is verified.
+
+
+### 15. Computer Studies
+- **ECE:** identify digital devices in the environment; basic safe handling; recognise that devices follow instructions. Device use is optional and must not disadvantage learners without access.
+- **Class 1:** device parts and purposes; safe start/stop with teacher support; mouse/touch actions; simple ordered instructions.
+- **Class 2:** keyboard and touch input; letters/numbers; opening and closing a supervised learning activity; simple step sequences.
+- **Class 3:** file and folder awareness; saving teacher-provided work; basic text entry; safe classroom device routines.
+- **Class 4:** document creation and editing; simple formatting; data entry; responsible use of shared devices.
+- **Class 5:** presentation basics; tables and simple charts; file naming and retrieval; introduction to digital citizenship.
+- **Class 6:** spreadsheets and simple formulas; information search with teacher guidance; passwords and privacy.
+- **Class 7:** algorithms, flowcharts and debugging; structured data; evaluating the reliability of digital information.
+- **Class 8:** introductory programming concepts; computational problem-solving; networks and cyber safety; project documentation.
+- **Form 3:** approved Computer Studies/ICT syllabus foundations, computer systems, data representation and algorithmic thinking where prescribed.
+- **Form 4:** programming/problem-solving, databases, networks or other exact syllabus strands; confirm the current course prescription.
+- **Form 5:** senior Computer Studies/Computing course strands and practical assessment exactly as prescribed.
+- **Form 6:** advanced course-specific programming, systems, data or project concepts as prescribed.
+- **Form 7:** senior course completion, independent project, evaluation and examination outcomes as prescribed.
+- **Daily evidence:** a saved digital artefact, algorithm/flowchart, practical demonstration, or documented troubleshooting step.
+- **Boundary:** Computer Studies is a separate subject box from Technology. Technology covers design, materials, tools and practical systems; Computer Studies covers computing concepts, digital systems and computational thinking. Do not treat basic device familiarity as the whole Computer Studies syllabus.
+
+### Financial education — cross-curricular mapping
+Financial education should be visible as a tagged concept strand within the relevant subject boxes unless the Ministry's current subject catalogue identifies a separate examinable subject for the selected level:
+- **Mathematics:** money, operations, percentages, rates, budgeting calculations, interest and interpreting financial data at the appropriate level.
+- **Social Science:** needs/wants, economic choices, work, trade, saving, lending, consumer rights and community economic systems.
+- **Home Economics:** household budgets, comparing prices, planning resources, needs versus wants and responsible consumer decisions.
+- **Computer Studies/Technology:** safe digital transactions, privacy, scams and evaluating online financial information, only at an age-appropriate level.
+- **Agriculture:** farm costs, yield, pricing, simple records and enterprise planning where prescribed.
+Do not create loan, insurance, investment or banking advice as a student task without age-appropriate safeguarding and teacher review.
+
+**Updated subject-box count:** 15 planning boxes, including Computer Studies as its own box. The 14-level register above still needs a Computer Studies entry for every level and must be reconciled with official Fiji course prescriptions before release.
