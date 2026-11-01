@@ -3,7 +3,7 @@
 **Status:** Working concept-distribution draft; not an official syllabus or approved achievement-indicator map.  
 **Curriculum scope:** ECE, Classes 1–8, Forms 3–7.  
 **Term planning frame:** Term 1 = 9 weeks; Term 2 = 9 weeks; Term 3 = 5 weeks. Five teaching-day slots per week are planning slots and must be adjusted to the approved school calendar.  
-**Binding structure:** Use only these nine existing subject boxes: English, Mathematics, Phonics, Science, Social Science, Health, Agriculture, Arts and Technology. All class levels, concepts, daily teacher activities, student worksheets, four ability versions, revision and examinations must be nested inside the relevant one of these boxes. Do not add subject boxes or parallel content areas. Basic Science and Social Science are never combined. Agriculture and Home Economics are never combined. A subject with unverified or missing level-specific content remains marked pending; another subject's content must never be substituted.
+**Binding structure:** Use 15 separate subject boxes: English, Mathematics, Phonics, Science, Social Science, Health, Agriculture, Arts, Technology, Home Economics, Computer Studies, Vosa Vakaviti, Fiji Hindi, Urdu and Rotuman. All class levels, concepts, daily teacher activities, student worksheets, four ability versions, revision and examinations must be nested inside the relevant box. Do not put concepts or daily activities in a separate parallel box. Basic Science and Social Science are never combined. Agriculture and Home Economics are never combined. A subject with unverified or missing level-specific content remains marked pending; another subject's content must never be substituted.
 
 ## How to use this distribution
 
@@ -11,7 +11,7 @@ For each selected level and subject, the teacher follows the sequence from the l
 
 The sequences below are **concept families and planning progressions**, not claims that every concept is prescribed at every level. Before a daily activity is released as Fiji-curriculum aligned, attach the exact current Ministry syllabus/framework title, version/year, level, subject, strand, outcome/achievement indicator, page/section, source URL, reviewer and review date. If that evidence is unavailable, label the lesson **DRAFT — curriculum mapping pending**.
 
-## The nine existing subject boxes only
+## 15 separate subject boxes
 
 ### 1. English
 - **ECE:** listening and turn-taking; oral vocabulary; rhyme and sound awareness; picture talk; mark-making and emergent writing.
@@ -114,6 +114,63 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Boundary:** Technology is separate from Arts and Agriculture; do not use digital-literacy questions as a substitute for practical technology concepts.
 
 
+### 10. Home Economics
+- **ECE:** home cleanliness, safe helping routines, recognizing everyday foods and household safety.
+- **Classes 1–2:** personal and home hygiene, food groups, safe eating routines, clothing care and household safety.
+- **Classes 3–5:** balanced meals, food hygiene, simple textiles, family needs, basic budgeting and consumer choices.
+- **Classes 6–8:** meal planning, food preparation principles, textiles/clothing skills, household resource management and budgeting.
+- **Forms 3–4:** nutrition, food preparation and hygiene, textiles, family resource management and practical design only as prescribed.
+- **Forms 5–7:** senior Home Economics/Food and Nutrition options and practical assessment according to the selected approved syllabus.
+- **Daily evidence:** meal plan, safe process sequence, budget, textile/design task or reflection.
+- **Boundary:** Home Economics is a separate box from Health and Agriculture; use its own approved course outcomes.
+
+### 11. Computer Studies
+- **ECE:** recognize digital devices, safe handling and simple teacher-led instruction sequences.
+- **Classes 1–2:** device parts and purposes, keyboard/touch input, simple ordered instructions and supervised device routines.
+- **Classes 3–5:** text entry, files/folders, saving work, documents, presentations, tables and simple charts.
+- **Classes 6–8:** spreadsheets, algorithms, flowcharts, debugging, introductory programming, networks, privacy and cyber safety.
+- **Forms 3–4:** approved Computer Studies/ICT foundations, systems, data, algorithms, programming or databases as prescribed.
+- **Forms 5–7:** senior course-specific computing, programming, systems, data and project outcomes as prescribed.
+- **Daily evidence:** saved digital artefact, algorithm/flowchart, practical demonstration or troubleshooting record.
+- **Boundary:** Computer Studies is a separate box from Technology; use the actual approved course syllabus and avoid duplicating practical design outcomes.
+
+### 12. Vosa Vakaviti (iTaukei)
+- **ECE:** listening, greetings, familiar oral vocabulary, songs and stories from trusted fluent educators.
+- **Classes 1–2:** oral vocabulary, sound awareness, simple phrases, listening and retelling; script conventions only as taught in approved resources.
+- **Classes 3–5:** short texts, vocabulary, sentence patterns, spelling, oral presentation and short writing.
+- **Classes 6–8:** comprehension, language structures, narrative/descriptive writing, oral communication and literature.
+- **Forms 3–7:** prescribed iTaukei language/literature strands, text analysis and formal writing according to the approved course.
+- **Daily evidence:** listen/speak/read/write task reviewed by a competent Vosa Vakaviti educator.
+- **Language safety:** dialect, orthography, translations and cultural content require fluent educator approval.
+
+### 13. Fiji Hindi
+- **ECE:** listening, greetings, familiar oral vocabulary, rhymes and stories validated by a fluent teacher.
+- **Classes 1–2:** oral language, sound awareness, vocabulary, simple phrases and the script used by the approved programme.
+- **Classes 3–5:** sentence building, reading comprehension, spelling, descriptions, recounts and oral storytelling.
+- **Classes 6–8:** grammar and usage, extended reading, formal/informal communication, paragraphs and reports.
+- **Forms 3–7:** exact approved Hindi course/variety, script and literature requirements; Fiji Hindi and standard Hindi must not be assumed interchangeable.
+- **Daily evidence:** oral, reading or writing task reviewed by a competent Fiji Hindi educator.
+- **Language safety:** specify variety and script; fluent review is required for all examples.
+
+### 14. Urdu
+- **ECE:** listening, greetings and familiar oral vocabulary modelled by a fluent speaker.
+- **Classes 1–2:** sound awareness, Urdu letter recognition, right-to-left directionality and letter joining.
+- **Classes 3–5:** connected words and sentences, vocabulary, spelling, basic grammar and short descriptions/stories.
+- **Classes 6–8:** comprehension, grammar, paragraph writing, formal/informal communication and age-appropriate literature.
+- **Forms 3–7:** approved Urdu language/literature progression, text analysis and extended writing where the course is offered.
+- **Daily evidence:** script, reading, writing or oral task reviewed by a qualified Urdu educator.
+- **Language safety:** right-to-left layout, joining forms, script font and fluent review are mandatory.
+
+### 15. Rotuman
+- **ECE:** listening, greetings and familiar words from trusted fluent-speaker resources.
+- **Classes 1–2:** oral vocabulary, sound awareness, familiar phrases, listening and retelling.
+- **Classes 3–5:** vocabulary, sentence patterns, oral storytelling and reading/writing only where approved orthography and materials are available.
+- **Classes 6–8:** comprehension, language structures, narrative/descriptive communication and community-reviewed cultural texts.
+- **Forms 3–7:** formal sequence only where an approved Rotuman course, teacher and materials are confirmed; otherwise mark formal syllabus mapping pending.
+- **Daily evidence:** oral language and community-reviewed text tasks.
+- **Language safety:** orthography, pronunciation, cultural content and examples require Rotuman fluent-speaker/educator approval.
+
+
 ## Daily distribution pattern
 
 Use the following repeatable five-day structure **for each subject independently**. The named concept is selected from that subject's level-appropriate progression above; the five days must not be treated as five unrelated subjects.
@@ -126,7 +183,7 @@ Use the following repeatable five-day structure **for each subject independently
 | Day 4 | Extend, compare, explain or solve a new example using the same concept | Explanation, design, solution or performance |
 | Day 5 | Review and short concept check; correct misconceptions; record next step | Exit check and teacher evidence note |
 
-### Example: Term 1, Week 1 — concept distribution across all nine subject boxes
+### Example: Term 1, Week 1 — concept distribution across all 15 subject boxes
 
 This is a planning demonstration inside the nine existing boxes, not an official claim that these are the prescribed Week 1 outcomes for every class/form. Teachers must select the age-appropriate concept from the relevant progression and then attach the official outcome.
 
@@ -164,7 +221,7 @@ A concept is not considered fully distributed for a given level/subject until al
 **Current status:** This document is restricted to the nine subject boxes supplied by the user. It does not claim that all 14 are prescribed at every level, nor that all daily concepts are officially mapped. Agriculture, Phonics and Rotuman in particular require subject-specific content development and/or approved language/curriculum resources before release. Senior-secondary subject names must follow the actual approved course catalogue for each year and school.
 
 
-## Individual level concept register — all 14 levels inside the nine existing subject boxes
+## Individual level concept register — all 14 levels inside the 15 subject boxes
 
 This register expands the earlier grouped bands so the teacher can select one exact level inside each separate subject box. These are **draft level-specific concept sequences**, not quoted Ministry achievement indicators. They are not yet the 115-day Term 1–3 map. Each line must be reconciled to the current syllabus outcome before it is turned into a daily activity; do not generate a worksheet from a pending line.
 
@@ -198,8 +255,8 @@ Financial education should be visible as a tagged concept strand within the rele
 - **Mathematics:** money, operations, percentages, rates, budgeting calculations, interest and interpreting financial data at the appropriate level.
 - **Social Science:** needs/wants, economic choices, work, trade, saving, lending, consumer rights and community economic systems.
 - **Home Economics:** household budgets, comparing prices, planning resources, needs versus wants and responsible consumer decisions.
-- **Computer Studies/Technology:** safe digital transactions, privacy, scams and evaluating online financial information, only at an age-appropriate level.
+- **Computer Studies:** safe digital transactions, privacy, scams and evaluating online financial information, only at an age-appropriate level.
 - **Agriculture:** farm costs, yield, pricing, simple records and enterprise planning where prescribed.
 Do not create loan, insurance, investment or banking advice as a student task without age-appropriate safeguarding and teacher review.
 
-**Subject-box count: nine only.** Computer/digital concepts stay within Technology; financial literacy stays within relevant Mathematics, Social Science, Health and Agriculture concepts; Home Economics-related content stays within Health or the relevant existing box; language pathways stay within English. None of these creates an additional box.
+**Subject-box count: 15.** Home Economics, Computer Studies, Vosa Vakaviti, Fiji Hindi, Urdu and Rotuman are separate boxes in addition to the original nine. Financial literacy may also be tagged within relevant Mathematics, Social Science, Health and Agriculture lessons, without replacing its own outcome where applicable.
