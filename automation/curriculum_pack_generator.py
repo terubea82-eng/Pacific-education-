@@ -8,7 +8,7 @@ templates. Output remains draft until reviewed and explicitly approved.
 import argparse
 import json
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 COUNTRY_RE = re.compile(r"^[A-Z]{2,3}$")
