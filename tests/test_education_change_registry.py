@@ -213,5 +213,73 @@ class EducationChangeRegistryTests(unittest.TestCase):
             self.assertFalse(result["changed"])
             self.assertEqual(result["reason"], "no curriculum release records")
 
+
+    def test_generator_keeps_missing_calendar_unscheduled(self):
+        spec = importlib.util.spec_from_file_location("pacedu_calendar_generator_test", ROOT / "automation" / "curriculum_pack_generator.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        source = {
+            "countryCode": "FJ", "frameworkVersion": "2013",
+            "officialSourceUrl": "https://www.education.gov.fj/", "releaseStatus": "draft",
+            "subjects": [{"classLevel": "Class 1", "subjectName": "English", "outcomes": [{
+                "outcomeId": "E1", "outcomeText": "Recognise letters", "sourcePage": "p. 1",
+                "verificationStatus": "verified", "term": 1, "week": 1
+            }]}]
+        }
+        pack = module.generate(source)
+        outcome = pack["subjects"][0]["outcomes"][0]
+        self.assertEqual(pack["schedulingStatus"], "setup-required-school-calendar-missing")
+        self.assertIsNone(outcome["dailySequence"][0]["lessonDate"])
+        self.assertEqual(outcome["dailySequence"][0]["schedulingStatus"], "unscheduled-calendar-date-required")
+        self.assertEqual(outcome["preparationStatus"], "incomplete-draft-content-required")
+
+    def test_generator_uses_only_approved_school_calendar_dates(self):
+        spec = importlib.util.spec_from_file_location("pacedu_calendar_generator_valid_test", ROOT / "automation" / "curriculum_pack_generator.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        source = {
+            "countryCode": "FJ", "frameworkVersion": "2013",
+            "officialSourceUrl": "https://www.education.gov.fj/", "releaseStatus": "draft",
+            "schoolCalendar": {
+                "schoolYear": "2027", "calendarVersion": "school-2027-v1",
+                "approvalStatus": "approved", "approvedBy": "school-principal",
+                "approvedAt": "2026-11-01T09:00:00Z",
+                "teachingDays": [
+                    {"date": "2027-01-25", "term": 1, "week": 1, "day": 1},
+                    {"date": "2027-01-26", "term": 1, "week": 1, "day": 2},
+                    {"date": "2027-01-27", "term": 1, "week": 1, "day": 3},
+                    {"date": "2027-01-28", "term": 1, "week": 1, "day": 4},
+                    {"date": "2027-01-29", "term": 1, "week": 1, "day": 5}
+                ]
+            },
+            "subjects": [{"classLevel": "Class 1", "subjectName": "English", "outcomes": [{
+                "outcomeId": "E1", "outcomeText": "Recognise letters", "sourcePage": "p. 1",
+                "verificationStatus": "verified", "term": 1, "week": 1
+            }]}]
+        }
+        pack = module.generate(source)
+        lessons = pack["subjects"][0]["outcomes"][0]["dailySequence"]
+        self.assertEqual(pack["schedulingStatus"], "calendar-approved")
+        self.assertEqual([item["lessonDate"] for item in lessons],
+                         ["2027-01-25", "2027-01-26", "2027-01-27", "2027-01-28", "2027-01-29"])
+        self.assertTrue(all(item["schedulingStatus"] == "scheduled" for item in lessons))
+
+    def test_generator_rejects_unapproved_or_duplicate_school_calendar(self):
+        spec = importlib.util.spec_from_file_location("pacedu_calendar_generator_invalid_test", ROOT / "automation" / "curriculum_pack_generator.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        calendar = {
+            "schoolYear": "2027", "calendarVersion": "v1",
+            "approvalStatus": "pending", "approvedBy": "principal",
+            "approvedAt": "2026-11-01T09:00:00Z",
+            "teachingDays": [{"date": "2027-01-25", "term": 1, "week": 1, "day": 1}]
+        }
+        with self.assertRaisesRegex(ValueError, "approvalStatus=approved"):
+            module.validate_school_calendar(calendar)
+        calendar["approvalStatus"] = "approved"
+        calendar["teachingDays"].append({"date": "2027-01-25", "term": 1, "week": 1, "day": 2})
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            module.validate_school_calendar(calendar)
+
 if __name__ == "__main__":
     unittest.main()
