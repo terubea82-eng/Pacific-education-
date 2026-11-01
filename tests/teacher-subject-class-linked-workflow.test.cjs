@@ -35,12 +35,23 @@ test("teacher subject selection shows every class and links the class to matchin
       }
     };
   });
+  await page.addScriptTag({ url: "./js/paceduFijiNineSubjectMapping.js?v=linked-workflow-test" });
   await page.addScriptTag({ url: "./js/pacificEducationLinkedTeacherPlans.js?v=linked-workflow-test" });
   await page.addScriptTag({ url: "./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=linked-workflow-test" });
 
   await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("Student Daily Activities & Workplans");
+  await expect(page.locator("#paceduTeacherSubjectGrid button")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Home Economics");
+  await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Rotuman");
   await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toHaveCount(0);
   await expect(page.locator("#teacherPerformancePanel")).toHaveCount(0);
+
+  await page.getByRole("button", { name: "Agriculture", exact: true }).click();
+  await expect(page.locator("#paceduTeacherClassList")).toContainText("Form 7");
+  await expect(page.locator("#paceduTeacherClassList")).not.toContainText("Form 1");
+  await page.getByRole("button", { name: "Class 1", exact: true }).click();
+  await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("content is not yet available");
+  await expect(page.locator("#pacificEducationLinkedTeacherPlans")).toBeHidden();
 
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 1");

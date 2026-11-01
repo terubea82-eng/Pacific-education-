@@ -4,7 +4,7 @@
  */
 (function(window,document){
   "use strict";
-  var SUBJECTS=["English","Mathematics","Phonics","Science","Social Science","Health","Agriculture","Arts","Technology"];
+  var SUBJECTS=["English","Mathematics","Phonics","Science","Social Science","Health","Agriculture","Arts","Technology","Home Economics","Computer Studies","Vosa Vakaviti (iTaukei)","Fiji Hindi","Urdu","Rotuman"];
   var hostId="teacherDashboard";
   function node(tag,text){var el=document.createElement(tag);if(text!=null)el.textContent=text;return el;}
   function rosterClasses(){
@@ -40,11 +40,16 @@
     });
     if(!items.length){
       items.push({id:"",label:"ECE",level:"ECE"});
-      for(var i=1;i<=13;i++)items.push({id:"",label:"Class "+i,level:"Class "+i});
+      for(var i=1;i<=8;i++)items.push({id:"",label:"Class "+i,level:"Class "+i});
+      for(var f=3;f<=7;f++)items.push({id:"",label:"Form "+f,level:"Form "+f});
       var note=node("p","No registered class list is connected yet. These level choices open the existing pilot daily-activity planner; they do not create school records.");
       note.style.cssText="font-size:.9em;";
       list.appendChild(note);
     }
+    var mappingNotice=node("p","Select a class to check whether this subject has its own matching learning content.");
+    mappingNotice.id="paceduTeacherSubjectMappingNotice";
+    mappingNotice.setAttribute("role","status");
+    list.appendChild(mappingNotice);
     var gridClasses=node("div");
     gridClasses.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:10px 0 16px;";
     items.forEach(function(item){
@@ -75,6 +80,23 @@
         if(planningSubject)planningSubject.value=subject;
         var planningClass=document.getElementById("paceduTeacherPlanningClass");
         if(planningClass)planningClass.value=item.level;
+        var mappingApi=window.PacEduFijiSubjectMapping||window.PacEduFijiNineSubjectMapping;
+        var mapping=mappingApi&&typeof mappingApi.resolve==="function"?mappingApi.resolve(subject,item.level):null;
+        if(mappingNotice){
+          mappingNotice.textContent=mapping?mapping.note:"Subject mapping status is unavailable. Ask the curriculum reviewer before using generated content.";
+        }
+        var contentUnavailable=!!(mapping&&(mapping.status==="missing"||mapping.status==="level-gap"||mapping.contentStatus==="CONTENT_NOT_AVAILABLE"));
+        if(contentUnavailable){
+          if(panel){panel.hidden=true;panel.setAttribute("aria-hidden","true");}
+          if(mappingNotice)mappingNotice.textContent="Learning content is not yet available for "+subject+" — "+item.level+". No other subject's worksheet will be substituted. "+(mapping.note||"");
+          list.querySelectorAll("[data-pacedu-teacher-class]").forEach(function(x){x.setAttribute("aria-pressed","false");});
+          b.setAttribute("aria-pressed","true");
+          b.style.background="#fff3cd";
+          return;
+        }
+        if(mapping&&mapping.status==="partial"&&mappingNotice){
+          mappingNotice.textContent="PARTIAL CONTENT — teacher review required. "+mapping.note;
+        }
         if(panel){
           panel.hidden=false;
           panel.removeAttribute("aria-hidden");
@@ -107,7 +129,7 @@
     if(planSubject&&planSubject.parentElement)planSubject.parentElement.style.display="none";
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
     if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
-    var hint=node("p","One linked workflow: choose a subject, choose any class (ECE–Class 13), then review that class's matching student worksheet, teacher workplan and lesson plan. Print / Save as PDF or download the plan. All generated content requires teacher review.");
+    var hint=node("p","One linked workflow: choose a subject, choose any class (ECE, Classes 1–8 and Forms 3–7), then review that class's matching student worksheet, teacher workplan and lesson plan. Print / Save as PDF or download the plan. All generated content requires teacher review.");
     hint.setAttribute("role","note");
     grid.parentNode.insertBefore(hint,grid.nextSibling);
     renderDailyLearningOnly(host,grid,list,planPanel);
