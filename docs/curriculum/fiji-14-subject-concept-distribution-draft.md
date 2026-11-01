@@ -59,14 +59,14 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Daily evidence:** source/map interpretation, timeline, community case study, or supported explanation.
 - **Boundary:** Social Science is not Science and must not receive science worksheets.
 
-### 6. Health
+### 6. Healthy Living
 - **ECE:** body awareness; hygiene routines; safe play; feelings; trusted adults.
 - **Classes 1–2:** handwashing; food and water safety; body care; feelings and friendships; road and playground safety.
 - **Classes 3–5:** nutrition; physical activity; personal safety; disease prevention; emotional wellbeing; help-seeking and respectful relationships.
 - **Classes 6–8:** puberty and development with age-appropriate, approved resources; mental wellbeing; substance-use prevention; consent, boundaries and online safety; community health.
 - **Forms 3–7:** evidence-based health literacy; health decisions; relationships and safety; public-health information; risk reduction and help-seeking, aligned to approved programme requirements.
 - **Daily evidence:** scenario decision, safety plan, health message, or reflection with privacy protected.
-- **Boundary:** Health is separate from Basic Science; health topics must use reliable public-health sources and age-appropriate safeguarding.
+- **Boundary:** Healthy Living is separate from Basic Science; Healthy Living topics must use reliable public-health sources and age-appropriate safeguarding.
 
 ### 7. Agriculture
 - **ECE:** observing seeds and plants; caring for a small garden; identifying useful plants.
