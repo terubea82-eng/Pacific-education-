@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "policy": "docs/education/country-adaptive-education-change-policy.md",
+  "monitoringStatus": "scheduled-official-source-fingerprint-monitor-and-review-gated-framework-activation-in-proposal-branch-not-live-until-merge",
+  "defaultCountry": "FJ",
+  "curriculumProfiles": [
+    {
+      "countryCode": "FJ",
+      "countryName": "Fiji",
+      "framework": {
+        "name": "Fiji National Curriculum Framework",
+        "version": "2013",
+        "status": "current-working-framework-until-official-replacement-is-formally-in-force",
+        "sourceUrl": "https://www.education.gov.fj/",
+        "reviewStatus": "comprehensive-review-announced-2026; replacement-not-yet-verified-as-in-force",
+        "authority": "Fiji Ministry of Education / Cabinet official publication",
+        "currentFrameworkEvidence": [
+          {
+            "id": "cabinet-review-endorsement",
+            "url": "https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/",
+            "meaning": "Cabinet endorsed review of the 2013 Fiji National Curriculum Framework; review endorsement is not itself replacement-framework commencement."
+          },
+          {
+            "id": "ministry-statement-in-parliament",
+            "url": "https://www.parliament.gov.fj/wp-content/uploads/2026/06/Daily-Hansard-Monday-25th-May-2026.pdf",
+            "meaning": "Ministry reported the comprehensive review had launched and the revised framework would be submitted for Cabinet endorsement; this statement does not establish that a replacement is already in force."
+          }
+        ],
+        "replacementActivationPolicy": {
+          "trigger": "Official Ministry/Cabinet publication explicitly confirms the replacement framework and its effective date or commencement.",
+          "automaticActions": [
+            "Create a new immutable framework version record and archive the prior version.",
+            "Mark prior version superseded only from the official effective date.",
+            "Revalidate all class, subject, language, outcome, assessment and term mappings against the new framework and published syllabuses.",
+            "Flag changed, withdrawn, added and unmapped outcomes.",
+            "Regenerate draft daily activities, revision tasks, practice assessments, answer guides and rubrics from approved mappings.",
+            "Run curriculum integrity tests and produce a migration report for school administrators."
+          ],
+          "publicationGate": "Do not silently replace live student content. Stage the new mapping, require official-source verification and curriculum reviewer/school adoption approval, then publish versioned changes with an audit trail.",
+          "fallback": "If the official effective date, adopted syllabus, or outcome mapping is unclear, retain the last approved version and alert the owner; do not guess."
+        }
+      },
+      "sources": [
+        {
+          "id": "fiji-education",
+          "publisher": "Fiji Ministry of Education",
+          "url": "https://www.education.gov.fj/",
+          "topics": [
+            "curriculum",
+            "assessment",
+            "school-policy"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-government",
+          "publisher": "Fiji Government",
+          "url": "https://www.fiji.gov.fj/cabinet-releases/",
+          "topics": [
+            "government-policy",
+            "national-development",
+            "education",
+            "curriculum-framework-commencement"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-parliament",
+          "publisher": "Parliament of Fiji",
+          "url": "https://www.parliament.gov.fj/",
+          "topics": [
+            "legislation",
+            "parliamentary-process",
+            "curriculum-review",
+            "framework-commencement"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-health",
+          "publisher": "Fiji Ministry of Health",
+          "url": "https://www.health.gov.fj/",
+          "topics": [
+            "public-health",
+            "health-education"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-environment",
+          "publisher": "Fiji Ministry responsible for Environment and Climate",
+          "url": "https://mecc.gov.fj/",
+          "topics": [
+            "environment",
+            "climate",
+            "biodiversity"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-statistics",
+          "publisher": "Fiji Bureau of Statistics",
+          "url": "https://www.statsfiji.gov.fj/",
+          "topics": [
+            "statistics",
+            "population",
+            "economy"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-met",
+          "publisher": "Fiji Meteorological Service",
+          "url": "https://www.met.gov.fj/",
+          "topics": [
+            "weather",
+            "climate",
+            "disaster-readiness"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-ndmo",
+          "publisher": "Fiji National Disaster Management Office",
+          "url": "https://www.ndmo.gov.fj/",
+          "topics": [
+            "disaster-risk",
+            "emergency-preparedness"
+          ],
+          "authority": "official-government",
+          "priority": 1
+        },
+        {
+          "id": "fiji-fined",
+          "publisher": "FinED Fiji",
+          "url": "https://www.nfitfiji.com/",
+          "topics": [
+            "financial-literacy",
+            "consumer-protection",
+            "saving",
+            "borrowing",
+            "insurance"
+          ],
+          "authority": "national-education-programme",
+          "priority": 2
+        }
+      ]
+    }
+  ],
+  "requiredSourceFields": [
+    "id",
+    "publisher",
+    "url",
+    "topics",
+    "authority",
+    "priority"
+  ],
+  "publicationStates": [
+    "discovered",
+    "developing-verify",
+    "draft-activity",
+    "teacher-reviewed",
+    "approved",
+    "published",
+    "retired"
+  ],
+  "abilityBands": [
+    "supported-start",
+    "developing",
+    "working-at-class-goal",
+    "extension"
+  ],
+  "notes": [
+    "Seed list, not exhaustive country coverage.",
+    "Root URLs may not expose feeds/change logs; validate before enabling monitoring.",
+    "A source link alone does not verify a curriculum outcome.",
+    "Global research sources are discovery starting points; they do not prove that any specific recommendation has been verified or mapped to a country's curriculum."
+  ],
+  "researchDiscoverySources": [
+    {
+      "id": "unicef-pacific-research",
+      "publisher": "UNICEF Pacific",
+      "url": "https://www.unicef.org/pacificislands/research-and-reports",
+      "topics": [
+        "child-rights",
+        "education",
+        "child-poverty",
+        "health",
+        "climate-resilience"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "unicef-pacific-education",
+      "publisher": "UNICEF Pacific Education",
+      "url": "https://www.unicef.org/pacificislands/what-we-do/education",
+      "topics": [
+        "foundational-learning",
+        "inclusive-education",
+        "climate-education",
+        "teacher-support"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "who-global",
+      "publisher": "World Health Organization",
+      "url": "https://www.who.int/",
+      "topics": [
+        "public-health",
+        "health-education",
+        "climate-health"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "unesco-global",
+      "publisher": "UNESCO",
+      "url": "https://www.unesco.org/",
+      "topics": [
+        "education",
+        "literacy",
+        "science",
+        "culture",
+        "digital-literacy"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "world-bank-global",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/",
+      "topics": [
+        "poverty",
+        "jobs",
+        "skills",
+        "economic-development",
+        "climate-resilience"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "fao-global",
+      "publisher": "Food and Agriculture Organization",
+      "url": "https://www.fao.org/",
+      "topics": [
+        "food-security",
+        "agriculture",
+        "nutrition",
+        "fisheries"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "ilo-global",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/",
+      "topics": [
+        "employment",
+        "work-skills",
+        "worker-rights"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "undp-global",
+      "publisher": "United Nations Development Programme",
+      "url": "https://www.undp.org/",
+      "topics": [
+        "sustainable-development",
+        "governance",
+        "resilience"
+      ],
+      "authority": "intergovernmental-research",
+      "priority": 2
+    },
+    {
+      "id": "world-bank-data",
+      "publisher": "World Bank Data",
+      "url": "https://data.worldbank.org/",
+      "topics": [
+        "development-indicators",
+        "poverty",
+        "economy",
+        "health",
+        "education"
+      ],
+      "authority": "official-statistical-database",
+      "priority": 2
+    },
+    {
+      "id": "unesco-statistics",
+      "publisher": "UNESCO Institute for Statistics",
+      "url": "https://uis.unesco.org/",
+      "topics": [
+        "education-statistics",
+        "literacy",
+        "school-participation"
+      ],
+      "authority": "official-statistical-database",
+      "priority": 2
+    }
+  ],
+  "evidenceRecordRequiredFields": [
+    "sourceUrl",
+    "title",
+    "publisher",
+    "publicationDate",
+    "countryOrPopulationStudied",
+    "evidenceType",
+    "finding",
+    "limitations",
+    "sourceRecommendation",
+    "problemCauseAnalysis",
+    "solutionOptions",
+    "expectedBenefit",
+    "countryCode",
+    "curriculumVersion",
+    "achievementIndicatorOrMappingPending",
+    "classSubject",
+    "abilityBandVersions",
+    "reviewStatus",
+    "lastReviewed"
+  ],
+  "evidenceTypes": [
+    "measured-result",
+    "association",
+    "research-interpretation",
+    "recommendation",
+    "policy-proposal",
+    "law-or-regulation"
+  ],
+  "reviewStatuses": [
+    "discovered",
+    "evidence-review-pending",
+    "draft-activity",
+    "outcome-mapping-pending",
+    "teacher-reviewed",
+    "approved",
+    "published",
+    "retired"
+  ]
+}
