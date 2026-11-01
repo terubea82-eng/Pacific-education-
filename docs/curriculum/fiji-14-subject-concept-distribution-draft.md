@@ -245,13 +245,110 @@ This register expands the earlier grouped bands so the teacher can select one ex
 ### Technology box
 - **ECE:** safe tools, construction play, everyday systems.\n- **Class 1:** needs, materials, simple mechanisms, safe tool use.\n- **Class 2:** sequence instructions, design and test simple model.\n- **Class 3:** structures, materials, simple systems, digital safety.\n- **Class 4:** design brief, tools, construction, testing.\n- **Class 5:** technical drawing basics, mechanisms, digital literacy.\n- **Class 6:** design process, systems, prototype evaluation.\n- **Class 7:** materials, structures, data/digital systems, documentation.\n- **Class 8:** approved basic/applied technology or ICT pathway.\n- **Form 3:** design/make/test/evaluate within selected course.\n- **Form 4:** approved computing/technical/design option.\n- **Form 5:** course-specific technical design and documentation.\n- **Form 6:** advanced computing/technical project work where prescribed.\n- **Form 7:** senior technical project and evaluation per syllabus.\n
 
+### Home Economics box
+- **ECE:** home cleanliness, safe helping routines, familiar foods.
+- **Class 1:** handwashing, food groups, clothing care, household safety.
+- **Class 2:** safe food routines, personal hygiene, simple household responsibilities.
+- **Class 3:** balanced meals, food hygiene, family needs.
+- **Class 4:** meal planning, textiles and simple budgeting.
+- **Class 5:** nutrition, consumer choices and household resources.
+- **Class 6:** food preparation, textiles, budgeting and safety.
+- **Class 7:** family resource management, design and evaluation.
+- **Class 8:** nutrition, food preparation and textiles as prescribed.
+- **Form 3:** consumer/resource management and practical skills.
+- **Form 4:** approved Home Economics/Food and Nutrition strands.
+- **Form 5:** course-specific nutrition, food science or textiles.
+- **Form 6:** advanced practical planning and evaluation.
+- **Form 7:** senior course-specific project and assessment.
+
+### Computer Studies box
+- **ECE:** recognize digital devices, safe handling and simple instruction sequences.
+- **Class 1:** device parts, safe touch/mouse actions and simple instructions.
+- **Class 2:** keyboard/touch input, letters/numbers and supervised activities.
+- **Class 3:** text entry, files/folders and saving guided work.
+- **Class 4:** create/edit documents and enter simple data.
+- **Class 5:** presentations, tables, charts and file organization.
+- **Class 6:** spreadsheets, simple formulas, search and privacy.
+- **Class 7:** algorithms, flowcharts, debugging and information reliability.
+- **Class 8:** introductory programming, networks, cyber safety and projects.
+- **Form 3:** approved computing foundations, systems and data concepts.
+- **Form 4:** programming, databases or networks where prescribed.
+- **Form 5:** senior course-specific computing and practical outcomes.
+- **Form 6:** advanced programming, systems, data or project work.
+- **Form 7:** senior project completion, evaluation and examinations.
+
+### Vosa Vakaviti box
+- **ECE:** listening, greetings and familiar oral vocabulary.
+- **Class 1:** greetings, turn-taking and simple phrases.
+- **Class 2:** oral vocabulary, sound patterns and retelling.
+- **Class 3:** short stories, vocabulary and sentence patterns.
+- **Class 4:** reading short texts, spelling and oral description.
+- **Class 5:** comprehension, grammar and short writing.
+- **Class 6:** narrative/descriptive writing and oral communication.
+- **Class 7:** text comprehension, language structures and cultural texts.
+- **Class 8:** approved language strands and formal communication.
+- **Form 3:** literature and language analysis per syllabus.
+- **Form 4:** course-specific iTaukei language/literature.
+- **Form 5:** advanced text analysis and writing.
+- **Form 6:** independent research and extended writing.
+- **Form 7:** senior language/literature outcomes per syllabus.
+
+### Fiji Hindi box
+- **ECE:** listening, greetings and familiar oral words.
+- **Class 1:** oral vocabulary, simple phrases and sound awareness.
+- **Class 2:** simple sentences, familiar words and listening.
+- **Class 3:** short-text reading, vocabulary and sentence building.
+- **Class 4:** comprehension, spelling and short recount.
+- **Class 5:** grammar, paragraphs and oral storytelling.
+- **Class 6:** extended reading and formal/informal communication.
+- **Class 7:** reports, grammar and cultural texts.
+- **Class 8:** approved Hindi variety, script and language strands.
+- **Form 3:** comprehension, grammar and writing per syllabus.
+- **Form 4:** course-specific Fiji Hindi/standard Hindi as specified.
+- **Form 5:** literature and analytical writing per syllabus.
+- **Form 6:** independent text analysis and extended writing.
+- **Form 7:** senior language/literature outcomes per syllabus.
+
+### Urdu box
+- **ECE:** listening, greetings and oral vocabulary.
+- **Class 1:** sound awareness, letter recognition and right-to-left direction.
+- **Class 2:** letter forms/joining, simple words and oral language.
+- **Class 3:** connected words, basic reading and spelling.
+- **Class 4:** sentences, vocabulary and simple grammar.
+- **Class 5:** short stories, comprehension and paragraph building.
+- **Class 6:** grammar, comprehension and formal/informal use.
+- **Class 7:** extended reading and paragraph/text writing.
+- **Class 8:** approved Urdu script and language strands.
+- **Form 3:** literature and writing per syllabus.
+- **Form 4:** course-specific Urdu language/literature.
+- **Form 5:** advanced grammar, text analysis and writing.
+- **Form 6:** independent reading and extended composition.
+- **Form 7:** senior Urdu outcomes per approved syllabus.
+
+### Rotuman box
+- **ECE:** listening, greetings and familiar words.
+- **Class 1:** oral vocabulary, simple phrases and sound awareness.
+- **Class 2:** retelling and familiar oral expressions.
+- **Class 3:** vocabulary and sentence patterns with fluent model.
+- **Class 4:** oral storytelling and community-checked texts.
+- **Class 5:** reading/writing only with approved orthography/materials.
+- **Class 6:** language structures and comprehension with local review.
+- **Class 7:** narrative/descriptive communication and cultural texts.
+- **Class 8:** formal course only if approved syllabus and teacher exist.
+- **Form 3:** approved Rotuman course outcomes if offered.
+- **Form 4:** otherwise enrichment only; no invented syllabus.
+- **Form 5:** otherwise enrichment only; community-reviewed resources.
+- **Form 6:** formal study only with approved course documentation.
+- **Form 7:** formal study only with approved course documentation.
+
+
 ### Required day-level mapping before completion
 
-For each of the 14 levels above and each subject box, create 23 week records (Term 1 Weeks 1–9; Term 2 Weeks 1–9; Term 3 Weeks 1–5), each with five day records. Every day record must carry the exact Ministry achievement indicator/outcome reference, concept, teacher activity, student task, accessible alternative, Copper/Bronze/Silver/Gold differentiation, and evidence/check. The 9–9–5 calendar is a planning structure only and must be reconciled with each school's approved calendar. No day is marked curriculum-aligned until its source reference is verified.
+For each of the 14 levels above and each of the 15 subject boxes, create 23 week records (Term 1 Weeks 1–9; Term 2 Weeks 1–9; Term 3 Weeks 1–5), each with five day records. Every day record must carry the exact Ministry achievement indicator/outcome reference, concept, teacher activity, student task, accessible alternative, Copper/Bronze/Silver/Gold differentiation, and evidence/check. The 9–9–5 calendar is a planning structure only and must be reconciled with each school's approved calendar. No day is marked curriculum-aligned until its source reference is verified.
 
 
 ### Financial education — cross-curricular mapping
-Financial education should be visible as a tagged concept strand within the relevant subject boxes unless the Ministry's current subject catalogue identifies a separate examinable subject for the selected level:
+Financial education should be visible as a tagged concept strand within relevant subject boxes, while retaining any separately prescribed outcome in its approved course:
 - **Mathematics:** money, operations, percentages, rates, budgeting calculations, interest and interpreting financial data at the appropriate level.
 - **Social Science:** needs/wants, economic choices, work, trade, saving, lending, consumer rights and community economic systems.
 - **Home Economics:** household budgets, comparing prices, planning resources, needs versus wants and responsible consumer decisions.
