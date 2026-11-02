@@ -22,7 +22,7 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Forms 5–7:** critical interpretation; synthesis across texts; rhetorical choices; research and source evaluation; extended analytical and persuasive writing.
 - **Daily evidence:** reading response, oral explanation, or a purposeful piece of writing.
 
-**Embedded language pathways inside this English box (not separate boxes):** Vosa Vakaviti, Fiji Hindi, Urdu and Rotuman language learning may be included here only where the school offers the language and has approved materials and a competent teacher. Keep each language clearly labeled as a pathway within English; verify orthography, script, dialect and examples with fluent educators. Do not invent translations or claim an unverified syllabus outcome.
+**Separate language boxes:** Vosa Vakaviti, Fiji Hindi, Urdu and Rotuman each have their own subject box and must never be nested inside English. Each language box contains only its own approved concepts, daily activities, worksheets, four ability versions, revision and examinations. Verify orthography, script, dialect and examples with fluent educators; do not invent translations or claim an unverified syllabus outcome.
 
 ### 2. Mathematics
 - **ECE:** sorting; matching; one-to-one counting; comparing more/less; repeating patterns; shape and position.
@@ -50,10 +50,10 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Classes 3–5:** life cycles; habitats; human body systems at age-appropriate depth; states/properties of matter; forces; light/sound; water and environment.
 - **Classes 6–8:** cells and organisation at introductory level; ecosystems; mixtures/material change; energy; electricity; forces; Earth/space and scientific investigation.
 - **Forms 3–4:** integrated/basic science concepts and practical investigation as specified by the applicable syllabus; variables, fair tests, measurement, evidence and safety.
-- **Forms 5–7:** keep the Basic Science box only where the approved course uses that title; otherwise expose the prescribed Biology, Chemistry and Physics as distinct course boxes, not as invented Basic Science content.
+- **Forms 5–7:** use the exact approved senior science courses and outcomes (including Biology and Chemistry where offered); do not invent or assume a course. Keep these course selections within the PacEdu Science subject area unless an officially required separate course-box structure is approved.
 - **Daily evidence:** observation, labelled model, safe investigation record, or evidence-based explanation.
 
-**Box name rule:** retain the user's label **Science**. Use the exact official science strand/course for the learner's level; do not create a separate Basic Science box or place senior Biology/Chemistry/Physics content here unless the approved level/course calls for it.
+**Box name rule:** retain the PacEdu subject-box label **Science**. For Classes 1–8 and Forms 3–4, use Basic Science content and exact applicable syllabus outcomes. For Forms 5–7, use only the officially prescribed senior science course outcomes, including Biology and Chemistry where offered. Do not invent course titles or place unverified senior content in the learner's programme.
 
 ### 5. Social Science
 - **ECE:** self and family; classroom roles; belonging; places around us; caring and sharing.
@@ -73,7 +73,7 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Forms 3–7:** evidence-based health literacy; health decisions; relationships and safety; public-health information; risk reduction and help-seeking, aligned to approved programme requirements.
 - **Daily evidence:** scenario decision, safety plan, health message, or reflection with privacy protected.
 
-**Embedded Home Economics-related learning:** age-appropriate nutrition, food hygiene, meal choices, household safety and personal/family wellbeing belong within this Health box when they match the approved Health outcomes. Do not create a Home Economics box.
+**Separate Home Economics box:** nutrition, food hygiene, meal choices, household safety, textiles, household management and practical family-life learning belong in the Home Economics box when they match its approved outcomes. Health retains its own health and wellbeing outcomes; Agriculture retains its own agricultural outcomes. Do not merge these three boxes.
 - **Boundary:** Healthy Living is separate from Basic Science; Healthy Living topics must use reliable public-health sources and age-appropriate safeguarding.
 
 ### 7. Agriculture
@@ -110,7 +110,7 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Forms 5–7:** approved technical, computing, design, graphics or vocational subjects appear as their actual course names, not one invented generic course.
 - **Daily evidence:** design brief, annotated plan, prototype, safe-use demonstration, or test/evaluation record.
 
-**Embedded computing and digital-literacy concepts:** device use, files, data, algorithms, programming, networks, digital safety and computational thinking remain inside this Technology box. Do not create a Computer Studies box. Distinguish digital/computing outcomes from practical materials, tools and design outcomes within the same box.
+**Separate Computer Studies box:** device use, files, data, algorithms, programming, networks, digital safety and computational thinking belong in the Computer Studies box when supported by its approved syllabus. Technology retains its own practical design, materials, tools, systems and making outcomes. Do not merge Computer Studies into Technology.
 - **Boundary:** Technology is separate from Arts and Agriculture; do not use digital-literacy questions as a substitute for practical technology concepts.
 
 
@@ -218,7 +218,7 @@ A concept is not considered fully distributed for a given level/subject until al
 9. Safety, language and cultural review is completed where relevant.
 10. Reviewer and approval status are recorded.
 
-**Current status:** This document is restricted to the nine subject boxes supplied by the user. It does not claim that all 14 are prescribed at every level, nor that all daily concepts are officially mapped. Agriculture, Phonics and Rotuman in particular require subject-specific content development and/or approved language/curriculum resources before release. Senior-secondary subject names must follow the actual approved course catalogue for each year and school.
+**Current status:** This draft defines 15 distinct PacEdu subject boxes. It does not claim that every subject is prescribed at every level or offered by every school, and it does not claim that all daily concepts are officially mapped. A box with missing syllabus evidence, approved materials or a competent educator remains visibly pending; never move its content into another subject. Senior-secondary course names and offerings must follow the applicable approved course catalogue for each year and school.
 
 
 ## Individual level concept register — all 14 levels inside the 15 subject boxes
