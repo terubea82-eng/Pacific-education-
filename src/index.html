@@ -15,6 +15,26 @@
   } catch (error) {}
 })();
 </script>
+<script>
+/* PacEdu entry gate: show the business advertising landing page before the existing Welcome flow.
+   The advertising page sets a one-use session flag when the visitor chooses Continue or Skip.
+   Existing registration, voice and learning controllers remain unchanged. */
+(function () {
+  "use strict";
+  try {
+    var passed = window.sessionStorage.getItem("paceduBusinessLandingPassed") === "yes";
+    if (passed) {
+      window.sessionStorage.removeItem("paceduBusinessLandingPassed");
+      return;
+    }
+    if (/\/src\/index\.html$/.test(window.location.pathname)) {
+      window.location.replace(new URL("business-advertising.html", window.location.href).href);
+    }
+  } catch (error) {
+    /* If session storage is unavailable, leave the existing app usable rather than block entry. */
+  }
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
