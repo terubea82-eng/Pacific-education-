@@ -50,10 +50,10 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Classes 3–5:** life cycles; habitats; human body systems at age-appropriate depth; states/properties of matter; forces; light/sound; water and environment.
 - **Classes 6–8:** cells and organisation at introductory level; ecosystems; mixtures/material change; energy; electricity; forces; Earth/space and scientific investigation.
 - **Forms 3–4:** integrated/basic science concepts and practical investigation as specified by the applicable syllabus; variables, fair tests, measurement, evidence and safety.
-- **Forms 5–7:** keep the Basic Science box only where the approved course uses that title; otherwise expose the prescribed Biology, Chemistry and Physics as distinct course boxes, not as invented Basic Science content.
+- **Forms 5–7:** use the exact approved senior science courses and outcomes (including Biology and Chemistry where offered); do not invent or assume a course. Keep these course selections within the PacEdu Science subject area unless an officially required separate course-box structure is approved.
 - **Daily evidence:** observation, labelled model, safe investigation record, or evidence-based explanation.
 
-**Box name rule:** retain the user's label **Science**. Use the exact official science strand/course for the learner's level; do not create a separate Basic Science box or place senior Biology/Chemistry/Physics content here unless the approved level/course calls for it.
+**Box name rule:** retain the PacEdu subject-box label **Science**. For Classes 1–8 and Forms 3–4, use Basic Science content and exact applicable syllabus outcomes. For Forms 5–7, use only the officially prescribed senior science course outcomes, including Biology and Chemistry where offered. Do not invent course titles or place unverified senior content in the learner's programme.
 
 ### 5. Social Science
 - **ECE:** self and family; classroom roles; belonging; places around us; caring and sharing.
@@ -110,7 +110,7 @@ The sequences below are **concept families and planning progressions**, not clai
 - **Forms 5–7:** approved technical, computing, design, graphics or vocational subjects appear as their actual course names, not one invented generic course.
 - **Daily evidence:** design brief, annotated plan, prototype, safe-use demonstration, or test/evaluation record.
 
-**Embedded computing and digital-literacy concepts:** device use, files, data, algorithms, programming, networks, digital safety and computational thinking remain inside this Technology box. Do not create a Computer Studies box. Distinguish digital/computing outcomes from practical materials, tools and design outcomes within the same box.
+**Separate Computer Studies box:** device use, files, data, algorithms, programming, networks, digital safety and computational thinking belong in the Computer Studies box when supported by its approved syllabus. Technology retains its own practical design, materials, tools, systems and making outcomes. Do not merge Computer Studies into Technology.
 - **Boundary:** Technology is separate from Arts and Agriculture; do not use digital-literacy questions as a substitute for practical technology concepts.
 
 
