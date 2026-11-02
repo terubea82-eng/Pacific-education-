@@ -37,6 +37,7 @@ test("teacher subject selection shows every class and links the class to matchin
   });
   await page.addScriptTag({ url: "./js/paceduFijiNineSubjectMapping.js?v=linked-workflow-test" });
   await page.addScriptTag({ url: "./js/pacificEducationLinkedTeacherPlans.js?v=linked-workflow-test" });
+  await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js?v=linked-workflow-test" });
   await page.addScriptTag({ url: "./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=linked-workflow-test" });
 
   await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("Student Daily Activities & Workplans");
@@ -68,8 +69,9 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduLinkedDailyActivityColumn")).toContainText("Science worksheet for Class 2");
   await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("Subject: Science");
   await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("Class / level: Class 2");
-  await expect(page.getByRole("button", { name: "Print / Save as PDF", exact: true })).toBeEnabled();
-  await expect(page.getByRole("button", { name: "Download Plan (.txt)", exact: true })).toBeEnabled();
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Teacher Instructions");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Daily Activities + Revision + Practice Exam");
+  await expect(page.getByRole("button", { name: "Print teacher instructions / Save as PDF", exact: true })).toBeEnabled();
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationSubject"))).toBe("Science");
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationClassLevel"))).toBe("Class 2");
 });
