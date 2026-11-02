@@ -127,9 +127,11 @@
     list.style.cssText="margin:12px 0;";
     var planSubject=document.getElementById("paceduLinkedPlanSubject");
     if(planSubject&&planSubject.parentElement)planSubject.parentElement.style.display="none";
+    var planLevel=document.getElementById("paceduLinkedPlanLevel");
+    if(planLevel&&planLevel.parentElement)planLevel.parentElement.style.display="none";
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
     if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
-    var hint=node("p","One linked workflow: choose a subject, choose any class (ECE, Classes 1–8 and Forms 3–7), then review that class's matching student worksheet, teacher workplan and lesson plan. Print / Save as PDF or download the plan. All generated content requires teacher review.");
+    var hint=node("p","Choose a subject, then a class. The selected class opens its student activities, teacher lesson plans, four ability worksheets, revision and practice exams together. All generated content requires teacher review.");
     hint.setAttribute("role","note");
     grid.parentNode.insertBefore(hint,grid.nextSibling);
     renderDailyLearningOnly(host,grid,list,planPanel);
