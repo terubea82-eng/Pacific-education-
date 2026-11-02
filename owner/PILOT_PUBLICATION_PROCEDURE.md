@@ -1,7 +1,7 @@
 # Pacific Education — 1-Month Controlled Pilot Publication Procedure
 
 **Release type:** Controlled prototype pilot  
-**Pilot period:** September 21, 2026 – October 21, 2026  
+**Pilot period:** November 1, 2026 – December 1, 2026 (no-fee; payments disabled)  
 **Repository:** terubea82-eng/Pacific-education-  
 **Default branch:** main  
 **Extension rule:** The initial pilot is one month. If a genuine need arises, the owner may explicitly extend the controlled pilot, up to a maximum total duration of three months.

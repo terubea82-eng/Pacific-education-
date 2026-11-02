@@ -6,7 +6,7 @@
 - Version name: `1.0.1-pilot`
 - Version code: `2`
 - Compile/target SDK: `36`
-- Controlled pilot: 21 September 2026 to 21 October 2026, with owner-approved extension up to 21 December 2026.
+- Controlled pilot: 1 November 2026 to 1 December 2026 (no-fee; payments disabled). Any extension requires documented need and explicit Owner approval, with a maximum total pilot duration of three months.
 
 Google Play requires submitted new apps and updates to target Android 16 (API 36) or higher from 31 August 2026. citeturn0search0
 

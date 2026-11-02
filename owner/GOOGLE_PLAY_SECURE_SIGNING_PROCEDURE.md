@@ -52,7 +52,7 @@ Pacific Education remains owner-controlled. Signing, testing, distribution, infr
 
 ## Pilot boundary
 
-Initial controlled pilot period: 21 September 2026 – 21 October 2026.
+Initial controlled pilot period: 1 November 2026 – 1 December 2026 (no-fee; payments disabled).
 
 The owner may explicitly extend the controlled pilot up to a total of three months if genuine need arises. An extension does not authorize production release.
 

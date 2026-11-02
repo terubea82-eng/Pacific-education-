@@ -6,7 +6,7 @@
 
 ## 1. Pilot boundary
 
-The current repository describes the initial controlled prototype pilot as **September 21, 2026 to October 21, 2026**, with an owner-approved extension only if a genuine need arises, up to a total of three months.
+The current repository defines the no-fee controlled school pilot as **November 1, 2026 to December 1, 2026**, with payments disabled. Any extension requires documented genuine need and explicit Owner approval, up to a maximum total duration of three months.
 
 The pilot is for demonstration, testing, curriculum-alignment work and authorized feedback. It is not a production education service.
 

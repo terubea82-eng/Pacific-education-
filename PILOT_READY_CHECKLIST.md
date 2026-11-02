@@ -76,4 +76,4 @@ A tester should record:
 
 This repository is configured for a **controlled pilot**, not an unrestricted production launch. The pilot can proceed through the live web URL and, after a successful Android workflow run, the generated APK artifact.
 
-Initial controlled pilot period: **September 21–October 21, 2026**. Any extension requires genuine documented need and explicit owner approval, up to a maximum total of three months; no automatic extension.
+Initial controlled pilot period: **November 1–December 1, 2026** (no-fee controlled school pilot; payments remain disabled). Any extension requires genuine documented need and explicit owner approval, up to a maximum total of three months; no automatic extension.

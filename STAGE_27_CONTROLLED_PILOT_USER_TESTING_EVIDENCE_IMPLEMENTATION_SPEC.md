@@ -6,7 +6,7 @@
 Test learning workflows, usability, safety, reliability, curriculum alignment and authorized feedback. Pilot success is not production or legal approval.
 
 ## 2. Governance
-Record owner approval, scope, dates, participants/roles, inclusion and exclusion criteria, support, incident handling, data limits and stop conditions. Current planned pilot period is 21 September 2026 to 21 October 2026; any extension requires explicit owner approval and documented need.
+Record owner approval, scope, dates, participants/roles, inclusion and exclusion criteria, support, incident handling, data limits and stop conditions. Current planned pilot period is 1 November 2026 to 1 December 2026 (no-fee; payments disabled); any extension requires documented need and explicit Owner approval, up to a maximum total duration of three months.
 
 ## 3. Test areas
 Access; lessons/progression; assessments/marks; student-teacher-parent relationships; accessibility; low-bandwidth/offline; security/privacy/safeguarding; support/recovery; safe payment testing; curriculum alignment; communication controls.

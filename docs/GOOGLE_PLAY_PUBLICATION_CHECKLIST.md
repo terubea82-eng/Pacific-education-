@@ -3,8 +3,8 @@
 **Prepared:** September 23, 2026
 **Release:** 1.0.1-pilot / versionCode 2
 **Package:** fj.pacificeducation.app
-**Pilot:** Controlled one-month pilot, September 21–October 21, 2026
-**Maximum pilot extension:** owner-approved total of three months, through December 21, 2026
+**Pilot:** Controlled one-month no-fee school pilot, November 1–December 1, 2026 (payments disabled)
+**Maximum pilot duration:** three months total from November 1, 2026, only with documented need and explicit Owner approval; no automatic extension.
 
 ## A. Repository and Android release
 

@@ -29,7 +29,7 @@ For a new personal Google Play developer account created after 13 November 2023:
 
 ## Pilot boundary
 The Pacific Education owner-controlled pilot is separate from Google's testing requirement.
-- Initial controlled pilot period: 21 September 2026 – 21 October 2026.
+- Initial controlled pilot period: 1 November 2026 – 1 December 2026 (no-fee; payments disabled).
 - The owner may explicitly extend the controlled pilot up to a total of three months if genuine need arises.
 - An extension does not authorize production release.
 - Do not enter real child sensitive information, passwords, payment credentials, or exact child location into the prototype.

@@ -26,9 +26,9 @@ Stage 30 is recorded as blocked until mandatory evidence and approvals are verif
 
 ### B. Pilot-date consistency
 
-The repository README defines the initial controlled pilot as **September 21, 2026–October 21, 2026**, with an owner-approved extension up to a total of three months if genuinely required.
+The original September 21–October 21, 2026 pilot window has been superseded. The current README defines the no-fee controlled school pilot as **November 1, 2026–December 1, 2026**, with payments disabled. Any extension requires documented genuine need and explicit Owner approval, up to a maximum total duration of three months.
 
-The Master Control pilot transition date was corrected to match that current repository definition.
+December 2026 is reserved for reviewing pilot feedback and improving the prototype. January 1, 2027 is a payment-readiness planning target only; it does not authorize payment collection or production release.
 
 A pilot closing automatically must never mean automatic production approval.
 
