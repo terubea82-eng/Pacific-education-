@@ -15,6 +15,9 @@
     label{display:block;font-weight:700;margin:12px 0 4px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid #879da5;border-radius:7px}
     button,.link-button{display:inline-block;background:#0b5d7a;color:#fff;border:0;border-radius:7px;padding:11px 14px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
     button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
+    .entry-showcase{background:linear-gradient(120deg,#dff4ff,#eefaf2);padding:22px 16px;border-bottom:1px solid #ccd9de}
+    .showcase-inner{max-width:980px;margin:auto}.entry-showcase h2{font-size:clamp(1.4rem,4vw,2rem);margin:8px 0}
+    .entry-showcase p{max-width:760px}.entry-showcase .tag{background:#fff;color:#17313a}
     .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
   </style>
@@ -25,6 +28,18 @@
   <h1>Business & Product Advertising</h1>
   <p>Discover useful local services, products and education-related offers.</p>
 </header>
+<section class="entry-showcase" aria-labelledby="showcaseHeading">
+  <div class="showcase-inner">
+    <p class="tag">PACEDU BUSINESS SHOWCASE</p>
+    <h2 id="showcaseHeading">Discover businesses, products and services</h2>
+    <p id="paceduShowcaseText" aria-live="polite">School supplies and learning materials — sample category showcase.</p>
+    <p class="muted">Showcase examples only. No business shown here is a confirmed advertiser or sponsor. Live adverts will appear only after owner review and approval.</p>
+    <div class="actions">
+      <a class="link-button" href="./index.html" id="paceduContinueToLearning">Continue to Pacific Education</a>
+      <a class="link-button" href="./index.html" id="paceduSkipAdvertising" style="background:#465b63">Skip advertisements</a>
+    </div>
+  </div>
+</section>
 <main>
   <section aria-labelledby="directoryHeading">
     <h2 id="directoryHeading">Explore the directory</h2>
@@ -112,6 +127,29 @@
   <p><a href="./index.html">Return to PacEdu</a></p>
 </main>
 <footer><small>PacEdu controlled pilot · Advertisements require review · No endorsement or payment guarantee is implied.</small></footer>
+<script>
+(function () {
+  "use strict";
+  var slides = [
+    "School supplies and learning materials — sample category showcase.",
+    "Technology, devices and connectivity — sample category showcase.",
+    "Local products, training and community services — sample category showcase."
+  ];
+  var index = 0;
+  var text = document.getElementById("paceduShowcaseText");
+  if (text) window.setInterval(function () {
+    index = (index + 1) % slides.length;
+    text.textContent = slides[index];
+  }, 4500);
+  function continueToApp(event) {
+    try { window.sessionStorage.setItem("paceduBusinessLandingPassed", "yes"); } catch (error) {}
+  }
+  ["paceduContinueToLearning", "paceduSkipAdvertising"].forEach(function (id) {
+    var link = document.getElementById(id);
+    if (link) link.addEventListener("click", continueToApp);
+  });
+})();
+</script>
 <script src="./js/paceduBusinessAdvertising.js?v=20261026-business-advertising"></script>
 </body>
 </html>
