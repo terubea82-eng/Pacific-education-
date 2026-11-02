@@ -31,7 +31,7 @@ function loadPacks() {
 test("student activities are differentiated into four groups for all supported class bands", () => {
   const packs = loadPacks();
   const cases = [
-    ["Kindergarten", "English"],
+    ["ECE", "English"],
     ["Year 1", "Mathematics"],
     ["Year 4", "Science"],
     ["Year 8", "Social Science"],
@@ -46,7 +46,10 @@ test("student activities are differentiated into four groups for all supported c
     for (const activity of activities) {
       assert.ok(activity, level + " " + subject + " activity exists");
       assert.match(activity.curriculumStatus, /PENDING_TEACHER_REVIEW/);
-      assert.match(activity.task, /Day 2:/);\n      assert.ok(activity.nextLevelPractice, "next-step practice is provided");\n      assert.ok(activity.progressionSuccessCriteria, "next-step success check is provided");\n      assert.match(activity.promotionRule, /teacher reviews the evidence/);
+      assert.match(activity.task, /Day 2:/);
+      assert.ok(activity.nextLevelPractice, "next-step practice is provided");
+      assert.ok(activity.progressionSuccessCriteria, "next-step success check is provided");
+      assert.match(activity.promotionRule, /teacher reviews the evidence/);
       assert.ok(activity.learningPhilosophy, "educational philosophy is stated");
       assert.ok(activity.priorKnowledgePrompt, "prior knowledge is checked");
       assert.ok(activity.teachingExample, "explicit teaching is included");
@@ -72,5 +75,8 @@ test("ability labels map to four task groups without presenting them as official
   assert.match(foundation.task, /with prompts|with support/i);
   assert.match(advanced.task, /compare|justify|support/i);
   assert.equal(foundation.verificationStatus, "PENDING_TEACHER_REVIEW");
-  assert.equal(advanced.verificationStatus, "PENDING_TEACHER_REVIEW");\n  assert.equal(foundation.nextAbility, "Developing");\n  assert.equal(advanced.nextAbility, "Advanced transfer");\n  assert.notEqual(foundation.nextLevelPractice, foundation.task);
+  assert.equal(advanced.verificationStatus, "PENDING_TEACHER_REVIEW");
+  assert.equal(foundation.nextAbility, "Developing");
+  assert.equal(advanced.nextAbility, "Advanced transfer");
+  assert.notEqual(foundation.nextLevelPractice, foundation.task);
 });

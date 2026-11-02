@@ -1,0 +1,3 @@
+name: Pacific Education CodeQL configuration
+paths-ignore:
+  - src/js/src/js/pacificEducationCountryGdpPricingBrokenLineTest.js
