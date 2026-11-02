@@ -11,7 +11,7 @@ test("teacher subject selection shows every class and links the class to matchin
       getClasses() {
         return {
           englishClass: { className: "Class 1", level: "Class 1", subject: "English" },
-          scienceClass: { className: "Class 2", level: "Class 2", subject: "Science" }
+          scienceClass: { className: "Class 2", level: "Class 2", subject: "English" }
         };
       },
       setClassId(id) { window.__selectedTeacherClass = id; },
@@ -65,6 +65,8 @@ test("teacher subject selection shows every class and links the class to matchin
 
   await expect(page.locator("#paceduLinkedPlanStatus")).toContainText("Matching workplan and lesson plan ready");
   await expect(page.locator("#paceduLinkedPlanSubject")).toHaveValue("Science");
+  await expect(page.locator("#paceduLinkedPlanSubject option")).toHaveCount(15);
+  await expect(page.locator("#paceduLinkedPlanLevel option")).toContainText(["Form 3", "Form 4", "Form 5", "Form 6", "Form 7"]);
   await expect(page.locator("#paceduLinkedPlanLevel")).toHaveValue("Class 2");
   await expect(page.locator("#paceduLinkedDailyActivityColumn")).toContainText("Science worksheet for Class 2");
   await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("Subject: Science");
