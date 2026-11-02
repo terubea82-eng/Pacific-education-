@@ -8,7 +8,7 @@
 
   var PANEL_ID = "pacificEducationLinkedTeacherPlans";
   var STYLE_ID = "pacificEducationLinkedTeacherPlansPrintStyle";
-  var SUBJECTS = ["English", "Mathematics", "Phonics", "Science", "Social Science", "Health", "Agriculture", "Arts", "Technology"];
+  var SUBJECTS = ["English", "Mathematics", "Phonics", "Science", "Social Science", "Health", "Agriculture", "Arts", "Technology", "Home Economics", "Computer Studies", "Vosa Vakaviti (iTaukei)", "Fiji Hindi", "Urdu", "Rotuman"];
 
   function text(value) { return String(value == null ? "" : value).trim(); }
   function node(tag, value) {
@@ -43,7 +43,6 @@
           var cls = roster.getClass(classId);
           if (cls) {
             ctx.level = text(cls.level || cls.className || ctx.level);
-            ctx.subject = text(cls.subject || ctx.subject);
           }
         }
       }
@@ -160,7 +159,7 @@
     var level = node("select");
     level.id = "paceduLinkedPlanLevel";
     level.style.cssText = "display:block;min-height:44px;padding:8px;max-width:100%;";
-    [["", "Use current class selection"], ["ECE","ECE"]].concat(Array.from({length:13}, function (_, i) { return ["Class " + (i + 1), "Class " + (i + 1)]; })).forEach(function (option) {
+    [["", "Use current class selection"], ["ECE","ECE"]].concat(Array.from({length:8}, function (_, i) { return ["Class " + (i + 1), "Class " + (i + 1)]; })).concat(Array.from({length:5}, function (_, i) { return ["Form " + (i + 3), "Form " + (i + 3)]; })).forEach(function (option) {
       var opt = node("option", option[1]); opt.value = option[0]; level.appendChild(opt);
     });
     levelLabel.appendChild(level);
