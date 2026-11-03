@@ -4,6 +4,13 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
+const {
+  PACEDU_SUBJECTS,
+  CURRICULUM_LEVELS,
+  mapCurrentAffairsSubjects,
+  applicableLevels,
+  canPreserveTeacherApproval
+} = require('../automation/current-affairs-curriculum');
 
 const source = fs.readFileSync('src/js/pacificEducationCurrentAffairsLoader.js', 'utf8');
 
@@ -77,13 +84,6 @@ test('current-affairs loader demotes legacy approval markers until teacher revie
   assert.equal(approvedSource.verificationStatus, 'APPROVED_BY_TEACHER');
 });
 
-const {
-  PACEDU_SUBJECTS,
-  CURRICULUM_LEVELS,
-  mapCurrentAffairsSubjects,
-  applicableLevels,
-  canPreserveTeacherApproval
-} = require('../automation/current-affairs-curriculum');
 
 test('current-affairs mapping uses only the 15 PacEdu Fiji subjects and ECE–Form 7 levels', () => {
   assert.deepEqual(Array.from(CURRICULUM_LEVELS), [
