@@ -4,7 +4,25 @@
  */
 (function(global,document){
 "use strict";
-var SUBJECTS=["English","Mathematics","Science","Social Studies","Healthy Living","Physical Education","Arts and Crafts","Music","Digital Literacy","iTaukei Language","Hindi"];
+var SUBJECTS=["English","Mathematics","Phonics","Science","Social Science","Health","Agriculture","Arts","Technology","Home Economics","Computer Studies","Vosa Vakaviti (iTaukei)","Fiji Hindi","Urdu","Rotuman"];
+var SUBJECT_SOURCE=Object.freeze({
+ "English":"English",
+ "Mathematics":"Mathematics",
+ "Science":"Science",
+ "Social Science":"Social Studies",
+ "Health":"Healthy Living",
+ "Arts":"Arts and Crafts",
+ "Technology":"Digital Literacy"
+});
+function resolveSubject(subject,level){
+ var source=SUBJECT_SOURCE[subject]||"";
+ var note=source?"Subject-specific pilot worksheet content is available as a draft; verify the exact Fiji syllabus outcome before teaching.":"No separate worksheet bank is available for this subject yet. Do not substitute another subject's worksheet.";
+ if(subject==="Science" && /^Form [5-7]$/.test(String(level||""))){
+   source="";
+   note="Form 5–7 require the selected Biology, Chemistry or other approved science syllabus. The generic Science worksheet bank is not a valid substitute.";
+ }
+ return {subject:subject,sourceSubject:source,available:!!source,note:note};
+}
 var LEVELS=["ECE"];for(var c=1;c<=8;c++)LEVELS.push("Class "+c);for(var f=3;f<=7;f++)LEVELS.push("Form "+f);
 var ABILITIES=[
  {id:"support",label:"Support",guidance:"Use short instructions, concrete objects or pictures, model one step, allow oral/sign/point/draw responses and record prompts used."},
@@ -39,13 +57,18 @@ function listQuestions(items,keys){
 function build(options){
  options=options||{};var api=selectedApi();if(!api)throw new Error("PacEdu lesson and term modules are not ready.");
  var level=LEVELS.indexOf(options.level)>=0?options.level:"Class 1";
- var subject=SUBJECTS.indexOf(options.subject)>=0?options.subject:"English";
+ var subject=SUBJECTS.indexOf(options.subject)>=0?options.subject:"";if(!subject)throw new Error("Select one of the 15 subject boxes.");var subjectResolution=resolveSubject(subject,level),sourceSubject=subjectResolution.sourceSubject;
  var ability=ABILITIES.some(function(a){return a.id===options.ability;})?options.ability:"developing";
  var term=/^T[123]$/.test(options.term||"")?options.term:"T1";
  var weeks=term==="T3"?5:9,prepared=new Date(),band=ABILITIES.filter(function(a){return a.id===ability;})[0];
  var sections=[],missing=0;
+ if(!subjectResolution.available){
+  missing=weeks*5;
+  var unavailableHtml="<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>PacEdu worksheet status</title></head><body><h1>"+esc(subject)+" — "+esc(level)+"</h1><p>"+esc(subjectResolution.note)+"</p><p>No student worksheet has been generated. A subject specialist must prepare and review this subject's own daily content first.</p><p>Curriculum status: CONTENT_NOT_AVAILABLE; no other subject has been substituted.</p></body></html>";
+  return {html:unavailableHtml,filename:"PacEdu_"+level.replace(/[^A-Za-z0-9]+/g,"-")+"_"+subject.replace(/[^A-Za-z0-9]+/g,"-")+"_"+term+"_"+ability+"_CONTENT-NOT-AVAILABLE.html",preparedDate:dateStamp(prepared),level:level,subject:subject,term:term,ability:ability,dailyActivities:0,missingSlots:missing,contentStatus:"CONTENT_NOT_AVAILABLE"};
+ }
  for(var w=1;w<=weeks;w++)for(var d=1;d<=5;d++){
-  var sheet=api.getCurriculumWorksheet({level:level,subject:subject,term:term,week:w,day:d,ability:ability,skipTermPlan:true});
+  var sheet=api.getCurriculumWorksheet({level:level,subject:sourceSubject,term:term,week:w,day:d,ability:ability,skipTermPlan:true});
   if(!sheet||sheet.status==="NOT_FOUND"){missing++;continue;}
   var lesson=sheet.dailyLesson||{},qs=sheet.questions||[],keys=sheet.answerKey||[];
   sections.push("<section class=\"worksheet\"><h2>"+esc(term+" · Week "+w+" · Day "+d)+" — "+esc(sheet.topic||subject+" daily activity")+"</h2>"+
@@ -62,8 +85,8 @@ function build(options){
    "<p><strong>Teacher review:</strong> verify source, class fit, answers and current achievement indicator before assigning. Do not infer ability from missing work or an unclear image.</p></section>");
  }
  var plan=global.PacEduTermLearningPlan;
- var revision=plan&&plan.getRevisionPaper?plan.getRevisionPaper({level:level,subject:subject,term:term,ability:ability}):null;
- var exam=global.PacEduPracticeExamPaper&&global.PacEduPracticeExamPaper.getPaper?global.PacEduPracticeExamPaper.getPaper({level:level,subject:subject,term:term,ability:ability}):null;
+ var revision=plan&&plan.getRevisionPaper?plan.getRevisionPaper({level:level,subject:sourceSubject,term:term,ability:ability}):null;
+ var exam=global.PacEduPracticeExamPaper&&global.PacEduPracticeExamPaper.getPaper?global.PacEduPracticeExamPaper.getPaper({level:level,subject:sourceSubject,term:term,ability:ability}):null;
  var rubric=global.PacEduAssessmentBlueprints&&global.PacEduAssessmentBlueprints.buildBlueprint?global.PacEduAssessmentBlueprints.buildBlueprint({level:level,subject:subject,paperType:"Revision paper"}):null;
  var extras="";
  if(revision)extras+="<section class=\"worksheet\"><h2>End-of-term revision practice</h2><p>Prepared by PacEdu: "+esc(dateStamp(prepared))+" · "+esc(level)+" · "+esc(subject)+" · "+esc(band.label)+"</p><p>Draft status: "+esc(revision.status)+"; not an official paper.</p>"+listQuestions(revision.questions,revision.answerKey)+"</section>";
@@ -88,12 +111,14 @@ function renderControls(container,context){
  var ability=select("Ability group:",abilities,ABILITIES.some(function(x){return x.id===context.capability;})?context.capability:"developing");
  var button=document.createElement("button");button.type="button";button.textContent="Download daily activities + revision + practice exam";button.style.cssText="display:block;width:100%;padding:12px;margin-top:12px;font:inherit;font-weight:700;";panel.appendChild(button);
  var status=document.createElement("p");status.setAttribute("role","status");status.setAttribute("aria-live","polite");panel.appendChild(status);
- button.addEventListener("click",function(){try{var p=download({level:level.value,subject:subject.value,term:term.value,ability:ability.value});status.textContent="Pack prepared "+p.preparedDate+": "+p.dailyActivities+" daily activities; "+p.missingSlots+" unavailable slots. Check the downloaded file. Official syllabus mapping and marking criteria still require teacher review.";}catch(e){status.textContent="Could not prepare the pack: "+String(e&&e.message||e);}});
+ function refreshAvailability(){var resolved=resolveSubject(subject.value,level.value);button.disabled=!resolved.available;status.textContent=resolved.note;}
+ subject.addEventListener("change",refreshAvailability);level.addEventListener("change",refreshAvailability);refreshAvailability();
+ button.addEventListener("click",function(){try{if(!resolveSubject(subject.value,level.value).available){refreshAvailability();return;}var p=download({level:level.value,subject:subject.value,term:term.value,ability:ability.value});status.textContent="Pack prepared "+p.preparedDate+": "+p.dailyActivities+" daily activities; "+p.missingSlots+" unavailable slots. Check the downloaded file. Official syllabus mapping and marking criteria still require teacher review.";}catch(e){status.textContent="Could not prepare the pack: "+String(e&&e.message||e);}});
  container.appendChild(panel);
  if(global.PacEduAbilityPackLinks&&typeof global.PacEduAbilityPackLinks.renderControls==="function"){
   global.PacEduAbilityPackLinks.renderControls(panel,{level:level,subject:subject});
  }
  return true;
 }
-global.PacEduDownloadableClassPacks=Object.freeze({subjects:SUBJECTS.slice(),levels:LEVELS.slice(),abilities:ABILITIES.slice(),criteria:SUBJECT_CRITERIA,build:build,download:download,renderControls:renderControls});
+global.PacEduDownloadableClassPacks=Object.freeze({subjects:SUBJECTS.slice(),levels:LEVELS.slice(),abilities:ABILITIES.slice(),criteria:SUBJECT_CRITERIA,resolveSubject:resolveSubject,build:build,download:download,renderControls:renderControls});
 })(window,document);
