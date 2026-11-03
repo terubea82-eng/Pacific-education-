@@ -39,9 +39,9 @@ test('download pack includes 45 dated Term 1 daily activities and assessment pra
 
 test('Term 3 pack uses 25 planned daily slots and keeps class-wide packs free of learner IDs',()=>{
  const api=loadPack();
- const p=api.build({level:'Form 7',subject:'Science',term:'T3',ability:'extension'});
+ const p=api.build({level:'Form 4',subject:'Science',term:'T3',ability:'extension'});
  assert.equal(p.dailyActivities,25);
- assert.equal(p.level,'Form 7');
+ assert.equal(p.level,'Form 4');
  assert.equal(p.subject,'Science');
  assert.equal(p.ability,'extension');
  assert.match(p.html,/T3/);
@@ -64,14 +64,7 @@ test('subject-box names route to their own approved draft source labels',()=>{
  for (const subject of ['English','Mathematics','Science','Social Science','Health','Arts','Technology']) {
    const p=api.build({level:'Class 2',subject,term:'T1',ability:'developing'});
    assert.equal(p.dailyActivities,45,subject+' should provide its own mapped draft worksheet sequence');
-   assert.match(p.html,new RegExp('Subject:</strong> '+subject.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\test('unsupported class, subject or ability cannot create arbitrary selectors',()=>{
- const api=loadPack();
- const p=api.build({level:'Random',subject:'Random',term:'T2',ability:'random'});
- assert.equal(p.level,'Class 1');
- assert.equal(p.subject,'English');
- assert.equal(p.ability,'developing');
- assert.equal(p.dailyActivities,45);
-});')));
+   assert.ok(p.html.includes('<strong>Subject:</strong> '+subject),subject+' should remain the visible subject-box label');
  }
 });
 
