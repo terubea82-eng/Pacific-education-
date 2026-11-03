@@ -149,6 +149,90 @@
       ]}
     ]
   };
+  /* Four distinct PacEdu practice banks. These are original draft activities,
+     not imported Ministry syllabus outcomes; teachers must map and review them. */
+  Object.assign(packs, {
+    "Phonics": [
+      {topic:"Hear and identify initial sounds",passage:"A learner says sun, sock and sand slowly. The words begin with the same sound. The learner listens first, then says the sound and matches it to the letter s.",questions:[
+        ["Which sound begins sun, sock and sand?","/s/",["/m/","/t/","/p/"],0,"All three words begin with the /s/ sound."],
+        ["Which word begins with /m/?","map",["sun","sock","sand"],0,"Map begins with /m/."],
+        ["What should a learner do before choosing a sound?","Listen to the beginning of the word",["Guess from the last letter","Count the pictures only","Skip the word"],0,"Listening to the first sound supports accurate identification."],
+        ["Which letter commonly represents /s/ in these words?","s",["m","t","p"],0,"The words shown use s for the initial /s/ sound."]
+      ]},
+      {topic:"Blend sounds to read a word",passage:"A teacher models the sounds /c/ /a/ /t/. The learner says each sound, then blends them smoothly to read cat. The learner repeats the process with map and sun.",questions:[
+        ["Which word is made by blending /c/ /a/ /t/?","cat",["cap","can","cut"],0,"The three sounds blend to make cat."],
+        ["What does blending mean?","Joining sounds to read a word",["Removing every vowel","Naming only the last letter","Counting syllables without saying sounds"],0,"Blending joins phonemes in sequence."],
+        ["Which word can be blended from /m/ /a/ /p/?","map",["mat","man","mop"],0,"The final sound /p/ makes map."],
+        ["What is a useful first step when a word is unfamiliar?","Say the grapheme sounds in order",["Guess without looking","Ignore the letters","Change the word"],0,"Sounding through the graphemes supports decoding."]
+      ]},
+      {topic:"Segment sounds for spelling",passage:"To spell fish, a learner listens for /f/ /i/ /sh/. The learner says the sounds in order and chooses the letters that represent them. The teacher reminds the learner that sh represents one sound.",questions:[
+        ["How many sounds are heard in fish?","Three",["Two","Four","Five"],0,"Fish has /f/, /i/ and /sh/."],
+        ["Which letters represent the final sound in fish?","sh",["s","h","ch"],0,"The digraph sh represents the final sound."],
+        ["What is segmenting?","Breaking a spoken word into its sounds",["Joining two sentences","Counting only written letters","Changing the meaning"],0,"Segmenting identifies the phonemes in a word."],
+        ["Which word also begins with /f/?","fan",["ship","map","sun"],0,"Fan begins with /f/."]
+      ]}
+    ],
+    "Agriculture": [
+      {topic:"Needs of a healthy garden plant",passage:"A school garden grows bean plants. Learners loosen the soil, water carefully, check for sunlight and observe new leaves. They do not pull up a plant to measure its growth.",questions:[
+        ["Which item is needed by a growing bean plant?","Water",["Plastic toys","Paint","A metal spoon"],0,"Water is one of the basic needs of a plant."],
+        ["Why should learners observe new leaves?","To record evidence of plant growth",["To stop the plant growing","To change the soil colour","To count classroom chairs"],0,"New leaves can be recorded as evidence of growth."],
+        ["Which action is safer for checking growth?","Observe and measure without damaging the plant",["Pull the plant out each day","Break the stem","Remove all leaves"],0,"Non-destructive observation protects the plant."],
+        ["What is a useful garden record?","Date and plant observations",["A guess with no date","An unrelated shopping list","A private password"],0,"Dated observations help compare growth over time."]
+      ]},
+      {topic:"Preparing soil safely",passage:"Before planting, a class checks the garden area with the teacher. Learners remove safe plant debris using suitable tools and adult guidance. They do not handle unknown chemicals, sharp waste or animal droppings.",questions:[
+        ["Who should guide the class before garden work?","The teacher",["A younger child alone","An unknown visitor","Nobody"],0,"The passage says the class checks the area with the teacher."],
+        ["What should learners do with unknown chemicals?","Do not touch them; tell the teacher",["Smell them closely","Mix them together","Pour them on plants"],0,"Unknown chemicals may be hazardous."],
+        ["Why prepare soil before planting?","To make a suitable place for seeds or seedlings",["To hide tools","To make the area unsafe","To prevent all water entering"],0,"Soil preparation supports planting."],
+        ["Which tool practice is appropriate?","Use suitable tools with instruction and care",["Wave tools near others","Leave sharp tools on a path","Use a damaged tool"],0,"Safe tool use requires guidance and care."]
+      ]},
+      {topic:"Harvesting and handling produce",passage:"A class harvests mature vegetables with adult guidance. Learners wash produce using safe water, remove damaged items and keep food away from soil and dirty surfaces.",questions:[
+        ["When should produce be harvested?","When it is mature and ready",["Before it has grown","Whenever the soil is wet","Only after it has spoiled"],0,"The passage says mature vegetables are harvested."],
+        ["What should be used to wash produce?","Safe water",["Unknown liquid","Dirty drain water","Paint"],0,"Safe water is stated in the passage."],
+        ["Why keep food away from dirty surfaces?","To reduce contamination",["To change its shape","To make it grow again","To avoid washing"],0,"Clean handling helps reduce contamination."],
+        ["Who should guide harvesting with tools?","An adult or teacher",["A learner without instruction","A person who is not present","Nobody"],0,"The passage specifies adult guidance."]
+      ]}
+    ],
+    "Home Economics": [
+      {topic:"Food hygiene before preparation",passage:"Before preparing a snack, Mere washes her hands with soap and safe water. She cleans the work surface, uses clean utensils and keeps raw and ready-to-eat foods separate.",questions:[
+        ["What should Mere do before preparing food?","Wash her hands with soap and safe water",["Touch her face then handle food","Use dirty utensils","Skip cleaning"],0,"Handwashing is the first hygiene step described."],
+        ["Why use clean utensils?","To reduce the risk of contamination",["To change the food colour","To make food cook instantly","To avoid washing hands"],0,"Clean utensils help prevent contamination."],
+        ["What should be kept separate?","Raw and ready-to-eat foods",["Clean plates and clean cups","Different clean spoons","Food and a shopping list"],0,"Separation reduces cross-contamination risk."],
+        ["Which is a clean preparation surface?","A washed and sanitised work surface",["A rubbish bin lid","A dirty floor","A surface with unknown chemicals"],0,"Food should be prepared on a properly cleaned surface."]
+      ]},
+      {topic:"Planning a balanced, affordable snack",passage:"A family plans a snack using foods that are available, affordable and suitable for their needs and culture. They include fruit when available and provide safe drinking water. They check reliable health advice for individual needs.",questions:[
+        ["What should guide a family's snack plan?","Needs, affordability, availability and culture",["Only food colour","An online rumour","A fixed menu for every person"],0,"The passage names these factors."],
+        ["Which drink is provided?","Safe drinking water",["Cleaning liquid","Unknown liquid","Paint"],0,"Safe drinking water is directly stated."],
+        ["Why check reliable health advice?","Needs can differ between people",["Every person has identical needs","Advice is never useful","To avoid planning"],0,"The passage notes individual needs."],
+        ["Which is a sensible planning action?","Compare available foods and costs",["Buy without checking the budget","Ignore household needs","Waste ingredients"],0,"Comparing choices supports affordable planning."]
+      ]},
+      {topic:"Safe use of household equipment",passage:"A learner uses a kitchen tool only after the teacher explains its purpose and safe handling. Hot surfaces and sharp tools are handled by an adult or under close supervision. Equipment is cleaned and stored safely after use.",questions:[
+        ["What should happen before using a kitchen tool?","Receive instructions about its purpose and safe handling",["Use it without looking","Share it while running","Test it on another person"],0,"Instruction comes before use."],
+        ["Who should handle hot surfaces or sharp tools?","An adult or learner under close supervision",["A learner alone without training","A person who cannot see the tool","Nobody should follow safety rules"],0,"The passage requires adult handling or close supervision."],
+        ["What should happen after use?","Clean and store equipment safely",["Leave it on the floor","Hide it in food","Leave it switched on"],0,"The passage says equipment is cleaned and stored safely."],
+        ["What is the main purpose of safety rules?","Prevent injury and use equipment responsibly",["Make tasks confusing","Encourage careless handling","Replace teacher guidance"],0,"Safety rules reduce risk."]
+      ]}
+    ],
+    "Computer Studies": [
+      {topic:"Parts of a computer system",passage:"A computer system can include input devices, a processor, storage and output devices. A keyboard enters text, a processor carries out instructions, storage keeps data, and a screen displays information.",questions:[
+        ["Which device is used to enter text?","Keyboard",["Screen","Speaker","Projector"],0,"A keyboard is an input device."],
+        ["What does storage do?","Keeps data",["Displays pictures only","Prints paper","Moves a cursor"],0,"Storage keeps data for later use."],
+        ["Which part displays information?","Screen",["Keyboard","Mouse pad","Microphone"],0,"A screen is an output device."],
+        ["What does a processor do?","Carries out instructions",["Washes the computer","Prints every file","Supplies drinking water"],0,"The processor executes instructions."]
+      ]},
+      {topic:"Files, folders and saving work",passage:"A learner creates a document, gives it a clear file name and saves it in the correct class folder. The learner checks that the saved file can be opened before closing the program.",questions:[
+        ["Why give a file a clear name?","To make it easier to identify later",["To delete it automatically","To share a password","To change the screen size"],0,"A clear name helps locate the file."],
+        ["Where should class work be saved?","In the correct class folder",["In a random unknown folder","Only in the recycle bin","Inside an unrelated picture"],0,"The passage says to use the correct class folder."],
+        ["What should the learner do before closing the program?","Check that the file was saved and can be opened",["Switch off without saving","Delete the folder","Rename someone else's work"],0,"Checking helps confirm the work is saved."],
+        ["Which is a suitable file name?","Class5_Science_Weather",["Untitled??","password123","newnewfinalmaybe"],0,"A descriptive name identifies class, subject and topic."]
+      ]},
+      {topic:"Digital safety and privacy",passage:"A learner keeps passwords private, asks a trusted teacher before opening an unfamiliar link and does not share personal details with strangers. If a message feels unsafe, the learner stops and tells a trusted adult.",questions:[
+        ["Who should know a learner's password?","The learner and authorised trusted support where necessary",["Everyone in the class","Unknown online users","People sending suspicious messages"],0,"Passwords should be kept private and protected."],
+        ["What should happen before opening an unfamiliar link?","Ask a trusted teacher or adult",["Click immediately","Send it to everyone","Enter personal details"],0,"The passage recommends checking first."],
+        ["What should a learner do with an unsafe message?","Stop and tell a trusted adult",["Reply with private information","Forward it to strangers","Ignore all safety concerns"],0,"The passage gives this safe response."],
+        ["Which information should not be shared with strangers?","Personal details",["A public classroom topic","A general subject name","A fictional character"],0,"Personal details should be protected."]
+      ]}
+    ]
+  });
   var levels = ["ECE"];
   for (var c=1;c<=8;c+=1) levels.push("Class "+c);
   for (var f=3;f<=7;f+=1) levels.push("Form "+f);
