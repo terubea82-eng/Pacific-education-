@@ -140,6 +140,7 @@
     }
     worksheets.appendChild(evidence);
     var api = window.PacEduDownloadableClassPacks;
+    var worksheetAvailability = api && typeof api.resolveSubject === "function" ? api.resolveSubject(subject, levelValue) : { available: true, note: "" };
     if (api && typeof api.download === "function") {
       var termLabel = node("label", "Term for today's worksheets");
       termLabel.style.cssText = "display:block;margin:10px 0;font-weight:600;";
@@ -165,7 +166,7 @@
         groupStatus.textContent = "Counts show only learners with an explicitly reviewed mark for this subject. They are informational only: a pack can be prepared even when its count is zero. Missing or pending evidence never means low ability.";
       }
       worksheets.appendChild(groupStatus);
-      BANDS.forEach(function (band) {
+      if (worksheetAvailability.available) BANDS.forEach(function (band) {
         var count = groupCounts[band.id] || 0;
         var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam" + (count ? " (" + count + " reviewed learner(s))" : " (no reviewed marks yet)"));
         button.type = "button";
@@ -181,7 +182,11 @@
         });
         worksheets.appendChild(button);
       });
-      if (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
+      else {
+        groupStatus.textContent = worksheetAvailability.note || "Subject-specific daily worksheets are not available yet. No other subject will be substituted.";
+        groupStatus.setAttribute("data-content-status", "CONTENT_NOT_AVAILABLE");
+      }
+      if (worksheetAvailability.available && (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; }))) {
         var baseline = node("p", "For a new class or Day 1 baseline, prepare any ability pack as needed, then review the baseline activity before assigning individual learners. Do not treat absent work as a low score.");
         worksheets.appendChild(baseline);
       }
