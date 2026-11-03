@@ -18,7 +18,7 @@
   var SUBJECTS = [
     "English", "Mathematics", "Science", "Social Studies", "Healthy Living",
     "Physical Education", "Arts and Crafts", "Music", "Digital Literacy",
-    "iTaukei Language", "Hindi"
+    "iTaukei Language", "Hindi", "Phonics", "Agriculture", "Home Economics", "Computer Studies"
   ];
   var WEEKS = [
     ["T1",1,"Getting to know ourselves and our learning","identity, baseline evidence and classroom routines"],
@@ -67,7 +67,11 @@
     "Music": ["copy or create a rhythm/sound pattern and show where it repeats", "vary rhythm, tempo or dynamics and explain the effect"],
     "Digital Literacy": ["sort safe and private information; practise asking before opening unknown content", "check source, purpose and date; choose a safe response to a suspicious message"],
     "iTaukei Language": ["use teacher-verified local words/text for listening, matching and short response", "read or listen to a teacher-verified text and respond with suitable vocabulary"],
-    "Hindi": ["use teacher-verified Hindi words/text for listening, matching and short response", "read or listen to a teacher-verified text and respond with suitable vocabulary"]
+    "Hindi": ["use teacher-verified Hindi words/text for listening, matching and short response", "read or listen to a teacher-verified text and respond with suitable vocabulary"],
+    "Phonics": ["hear, identify, blend and segment the target speech sounds; connect sounds with graphemes", "decode and encode words using the taught sound-spelling pattern"],
+    "Agriculture": ["observe a local crop, soil, garden or farm practice safely and record evidence", "apply safe planting, care, harvesting or resource-management steps"],
+    "Home Economics": ["apply food hygiene, nutrition, household-resource or personal-safety knowledge to a practical scenario", "plan, demonstrate or evaluate a safe and suitable household task"],
+    "Computer Studies": ["identify computing hardware, software, data or file-management concepts", "apply a computing process and explain safe, responsible digital practice"]
   };
   function levelStage(level) {
     if (level === "ECE") return "early";
