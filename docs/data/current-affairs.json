@@ -23,11 +23,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -46,8 +46,8 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science",
-        "Geography"
+        "Health",
+        "Social Science"
       ],
       "levelsApplicable": [
         "Class 3",
@@ -56,11 +56,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -87,11 +87,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -109,7 +109,7 @@
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Geography"
+        "Social Science"
       ],
       "levelsApplicable": [
         "Class 3",
@@ -118,11 +118,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -140,7 +140,7 @@
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Geography"
+        "Social Science"
       ],
       "levelsApplicable": [
         "Class 3",
@@ -149,11 +149,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -207,11 +207,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -238,11 +238,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -269,11 +269,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -300,11 +300,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -331,11 +331,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -362,11 +362,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -385,7 +385,7 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science"
+        "Health"
       ],
       "levelsApplicable": [
         "ECE",
@@ -421,11 +421,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -444,7 +444,7 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science"
+        "Health"
       ],
       "levelsApplicable": [
         "ECE",
@@ -472,7 +472,7 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science"
+        "Health"
       ],
       "levelsApplicable": [
         "ECE",
@@ -535,11 +535,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -593,11 +593,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -624,11 +624,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -647,8 +647,8 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science",
-        "Geography"
+        "Health",
+        "Social Science"
       ],
       "levelsApplicable": [
         "ECE",
@@ -684,11 +684,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -715,11 +715,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -745,11 +745,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -776,11 +776,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -799,9 +799,8 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science",
-        "Social Science",
-        "Geography"
+        "Health",
+        "Social Science"
       ],
       "levelsApplicable": [
         "ECE",
@@ -837,11 +836,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -860,7 +859,7 @@
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
         "Science",
-        "Health Science"
+        "Health"
       ],
       "levelsApplicable": [
         "Class 4",
@@ -868,11 +867,11 @@
         "Class 6",
         "Class 7",
         "Class 8",
-        "Class 9",
-        "Class 10",
-        "Class 11",
-        "Class 12",
-        "Class 13"
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
