@@ -85,7 +85,8 @@
         if(mappingNotice){
           mappingNotice.textContent=mapping?mapping.note:"Subject mapping status is unavailable. Ask the curriculum reviewer before using generated content.";
         }
-        var contentUnavailable=!!(mapping&&(mapping.status==="missing"||mapping.status==="level-gap"||mapping.contentStatus==="CONTENT_NOT_AVAILABLE"));
+        var packResolver=window.PacEduDownloadableClassPacks&&typeof window.PacEduDownloadableClassPacks.resolveSubject==="function"?window.PacEduDownloadableClassPacks.resolveSubject(subject,item.level):null;
+        var contentUnavailable=!!(mapping&&(mapping.status==="missing"||mapping.status==="level-gap"||mapping.contentStatus==="CONTENT_NOT_AVAILABLE"))||!!(packResolver&&!packResolver.available);
         if(contentUnavailable){
           if(panel){panel.hidden=true;panel.setAttribute("aria-hidden","true");}
           if(mappingNotice)mappingNotice.textContent="Learning content is not yet available for "+subject+" — "+item.level+". No other subject's worksheet will be substituted. "+(mapping.note||"");
