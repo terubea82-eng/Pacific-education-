@@ -39,9 +39,9 @@ test('download pack includes 45 dated Term 1 daily activities and assessment pra
 
 test('Term 3 pack uses 25 planned daily slots and keeps class-wide packs free of learner IDs',()=>{
  const api=loadPack();
- const p=api.build({level:'Form 7',subject:'Science',term:'T3',ability:'extension'});
+ const p=api.build({level:'Form 4',subject:'Science',term:'T3',ability:'extension'});
  assert.equal(p.dailyActivities,25);
- assert.equal(p.level,'Form 7');
+ assert.equal(p.level,'Form 4');
  assert.equal(p.subject,'Science');
  assert.equal(p.ability,'extension');
  assert.match(p.html,/T3/);
@@ -49,11 +49,41 @@ test('Term 3 pack uses 25 planned daily slots and keeps class-wide packs free of
  assert.doesNotMatch(p.html,/studentId|FEMIS ID/i);
 });
 
-test('unsupported class, subject or ability cannot create arbitrary selectors',()=>{
+test('unsupported class, subject or ability cannot silently fall back to English',()=>{
  const api=loadPack();
- const p=api.build({level:'Random',subject:'Random',term:'T2',ability:'random'});
+ assert.throws(()=>api.build({level:'Random',subject:'Random',term:'T2',ability:'random'}),/Select one of the 15 subject boxes/);
+ const p=api.build({level:'Class 1',subject:'English',term:'T2',ability:'random'});
  assert.equal(p.level,'Class 1');
  assert.equal(p.subject,'English');
  assert.equal(p.ability,'developing');
  assert.equal(p.dailyActivities,45);
+});
+
+test('subject-box names route to their own approved draft source labels',()=>{
+ const api=loadPack();
+ for (const subject of ['English','Mathematics','Science','Social Science','Health','Arts','Technology']) {
+   const p=api.build({level:'Class 2',subject,term:'T1',ability:'developing'});
+   assert.equal(p.dailyActivities,45,subject+' should provide its own mapped draft worksheet sequence');
+   assert.ok(p.html.includes('<strong>Subject:</strong> '+subject),subject+' should remain the visible subject-box label');
+ }
+});
+
+test('missing subject boxes remain unavailable and never substitute English worksheets',()=>{
+ const api=loadPack();
+ for (const subject of ['Phonics','Agriculture','Home Economics','Computer Studies','Vosa Vakaviti (iTaukei)','Fiji Hindi','Urdu','Rotuman']) {
+   const p=api.build({level:'Class 1',subject,term:'T1',ability:'support'});
+   assert.equal(p.dailyActivities,0,subject);
+   assert.equal(p.missingSlots,45,subject);
+   assert.equal(p.contentStatus,'CONTENT_NOT_AVAILABLE',subject);
+   assert.match(p.html,/no other subject has been substituted/i);
+ }
+});
+
+test('Form 5 to Form 7 Science requires a specific approved science subject pack',()=>{
+ const api=loadPack();
+ for (const level of ['Form 5','Form 6','Form 7']) {
+   const p=api.build({level,subject:'Science',term:'T1',ability:'extension'});
+   assert.equal(p.dailyActivities,0);
+   assert.equal(p.contentStatus,'CONTENT_NOT_AVAILABLE');
+ }
 });
