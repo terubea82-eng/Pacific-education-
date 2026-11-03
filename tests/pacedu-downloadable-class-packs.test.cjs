@@ -75,7 +75,7 @@ test('missing subject boxes remain unavailable and never substitute English work
    assert.equal(p.dailyActivities,0,subject);
    assert.equal(p.missingSlots,45,subject);
    assert.equal(p.contentStatus,'CONTENT_NOT_AVAILABLE',subject);
-   assert.match(p.html,/No other subject has been substituted/);
+   assert.match(p.html,/no other subject has been substituted/i);
  }
 });
 
