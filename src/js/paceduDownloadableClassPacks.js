@@ -7,6 +7,10 @@
 var SUBJECTS=["English","Mathematics","Phonics","Science","Social Science","Health","Agriculture","Arts","Technology","Home Economics","Computer Studies","Vosa Vakaviti (iTaukei)","Fiji Hindi","Urdu","Rotuman"];
 var SUBJECT_SOURCE=Object.freeze({
  "English":"English",
+ "Phonics":"Phonics",
+ "Agriculture":"Agriculture",
+ "Home Economics":"Home Economics",
+ "Computer Studies":"Computer Studies",
  "Mathematics":"Mathematics",
  "Science":"Science",
  "Social Science":"Social Studies",
