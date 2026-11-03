@@ -97,6 +97,7 @@ jobs:
           const { URL } = require('url');
           const { execFileSync } = require('child_process');
           const { inferCurrentAffairsRegion } = require('./automation/current-affairs-region');
+          const { mapCurrentAffairsSubjects, applicableLevels, CURRICULUM_LEVELS, PACEDU_SUBJECTS, canPreserveTeacherApproval } = require('./automation/current-affairs-curriculum');
           const sources = [
             { key: 'fijiOne', label: 'Fiji One News (Fiji TV)', host: 'fijionenews.com.fj', region: 'FIJI' },
             { key: 'fijiTimes', label: 'The Fiji Times', host: 'fijitimes.com.fj', region: 'FIJI' },
@@ -291,29 +292,6 @@ jobs:
               !dateMatchesUrlPublicationDate(whoRegressionUrl, Date.parse('2020-08-27T00:00:00.000Z'))) {
             throw new Error('WHO publication-date regression test failed.');
           }
-          function subjects(text) {
-            const t = String(text || '').toLowerCase(), s = [];
-            if (/literacy|reading|language|english|teacher|school|education|learning/.test(t)) s.push('English');
-            if (/math|mathematics|number|data|statistics/.test(t)) s.push('Mathematics');
-            if (/science|health|disease|medicine|medical|diagnostic|donor|vaccine|vaccination|climate|environment|disaster|pandemic|cancer|malaria|obesity|nutrition|healthcare|maternal|reproductive|marine|ocean|biodiversity|wildlife|energy|food|hunger|cholera|agriculture|water/.test(t)) s.push('Science', 'Health Science');
-            if (/technology|digital|internet|computer|artificial intelligence|\\bai\\b/.test(t)) s.push('Computer Studies');
-            if (/community|society|government|poverty|displacement|children|child rights|humanitarian|aid|conflict|war|gaza|sudan|sustainable development|development gap|food security|hunger|cities|goals/.test(t)) s.push('Social Science');
-            if (/place|country|climate|environment|migration|marine|ocean|biodiversity|water|energy|agriculture|cities|gaza|sudan|central african republic/.test(t)) s.push('Geography');
-            if (/history|heritage|conflict|war|culture/.test(t)) s.push('History');
-            if (!s.length) s.push('Social Science');
-            return [...new Set(s)];
-          }
-          const CURRICULUM_LEVELS = ['ECE', ...Array.from({length: 13}, (_, i) => 'Class ' + (i + 1))];
-          function applicableLevels(text) {
-            const t = String(text || '').toLowerCase();
-            // Topic-based screening suggestions only; never assert official
-            // curriculum alignment. Teacher approval and age adaptation remain mandatory.
-            const concrete = /children|school|education|food|water|farming|agriculture|soil|animal|wildlife|marine life|ocean|community|weather|health|blood donor|nutrition|environment|culture|sport/.test(t);
-            const specialist = /diagnostic|diagnostics|coalition|policy|governance|diplomacy|conflict|war|humanitarian|economic|economy|research|data|traditional medicine|global development|leadership|sustainable development|technology|artificial intelligence|displacement|reproductive health/.test(t);
-            if (concrete && !specialist) return CURRICULUM_LEVELS.slice(0, 7); // ECE–Class 6
-            if (specialist) return CURRICULUM_LEVELS.slice(4); // Class 4–13
-            return CURRICULUM_LEVELS.slice(3); // Class 3–13
-          }
           const all = [];
           const diagnostics = {};
           for (const source of sources) {
@@ -406,7 +384,7 @@ jobs:
           const previousByUrl = new Map(previousItems.filter(item => item && item.url).map(item => [item.url, item]));
           const items = selected.map(a => {
             const combinedText = a.title + ' ' + a.description;
-            const applicable = subjects(combinedText);
+            const applicable = mapCurrentAffairsSubjects(combinedText);
             const levelRecommendations = applicableLevels(combinedText);
             const sourceMeta = sources.find(s => s.label === a.source) || {};
             return {
@@ -428,9 +406,7 @@ jobs:
             };
           }).map(item => {
             const previous = previousByUrl.get(item.url);
-            if (previous && previous.approved === true &&
-                previous.verificationStatus === 'APPROVED_BY_TEACHER' &&
-                previous.levelRecommendationBasis === 'TEACHER_REVIEWED') {
+            if (canPreserveTeacherApproval(previous)) {
               return {
                 ...item,
                 approved: true,
@@ -461,9 +437,11 @@ jobs:
             throw new Error('No eligible articles were parsed from official feeds; preserving existing feed.');
           }
           const validLevels = new Set(CURRICULUM_LEVELS);
+          const validSubjects = new Set(PACEDU_SUBJECTS);
           for (const item of items) {
-            if (!Array.isArray(item.subjectsApplicable) || item.subjectsApplicable.length === 0) {
-              throw new Error('Current-affairs item missing subject mapping: ' + item.url);
+            if (!Array.isArray(item.subjectsApplicable) || item.subjectsApplicable.length === 0 ||
+                item.subjectsApplicable.some(subject => !validSubjects.has(subject))) {
+              throw new Error('Current-affairs item has a missing or unsupported Fiji subject mapping: ' + item.url);
             }
             if (!Array.isArray(item.levelsApplicable) || item.levelsApplicable.length === 0 ||
                 item.levelsApplicable.some(level => !validLevels.has(level))) {
@@ -480,7 +458,7 @@ jobs:
             }
           }
           console.log('Curriculum mapping check passed: ' + items.length +
-            ' items have subjects, valid ECE–Class 13 recommendations, and pending-review protection.');
+            ' items have subjects, valid ECE–Form 7 recommendations, and pending-review protection.');
           const out = {
             version: '1.0.0',
             generatedAt: new Date().toISOString(),
