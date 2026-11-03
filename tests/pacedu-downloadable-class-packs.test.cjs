@@ -68,9 +68,15 @@ test('subject-box names route to their own approved draft source labels',()=>{
  }
 });
 
-test('missing subject boxes remain unavailable and never substitute English worksheets',()=>{
+test('four new subject boxes use their own banks while unverified language boxes remain unavailable',()=>{
  const api=loadPack();
- for (const subject of ['Phonics','Agriculture','Home Economics','Computer Studies','Vosa Vakaviti (iTaukei)','Fiji Hindi','Urdu','Rotuman']) {
+ for (const subject of ['Phonics','Agriculture','Home Economics','Computer Studies']) {
+   const p=api.build({level:'Class 1',subject,term:'T1',ability:'support'});
+   assert.equal(p.dailyActivities,45,subject);
+   assert.equal(p.missingSlots,0,subject);
+   assert.ok(p.html.includes('<strong>Subject:</strong> '+subject),subject);
+ }
+ for (const subject of ['Vosa Vakaviti (iTaukei)','Fiji Hindi','Urdu','Rotuman']) {
    const p=api.build({level:'Class 1',subject,term:'T1',ability:'support'});
    assert.equal(p.dailyActivities,0,subject);
    assert.equal(p.missingSlots,45,subject);
