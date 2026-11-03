@@ -33,15 +33,15 @@ function mapCurrentAffairsSubjects(text) {
   if (/science|climate|environment|disaster|pandemic|marine|ocean|biodiversity|wildlife|energy|water/.test(value)) subjects.push("Science");
   if (/health|disease|medicine|medical|diagnostic|donor|vaccine|vaccination|cancer|malaria|obesity|nutrition|healthcare|maternal|reproductive|cholera|public health/.test(value)) subjects.push("Health");
   if (/technology|engineering|design|innovation|manufacturing/.test(value)) subjects.push("Technology");
-  if (/digital|internet|computer|artificial intelligence|\\bai\\b/.test(value)) subjects.push("Computer Studies");
+  if (/digital|internet|computer|artificial intelligence|\bai\b/.test(value)) subjects.push("Computer Studies");
   if (/agriculture|farming|farmers|crops?|soil|livestock|fisheries|fishing/.test(value)) subjects.push("Agriculture");
   if (/community|society|government|poverty|displacement|children|child rights|humanitarian|aid|conflict|war|gaza|sudan|sustainable development|development gap|food security|hunger|cities|goals|migration|place|country|history|heritage|economy|economic|business|trade|exports|jobs|employment|parliament|law|court|election|transport|infrastructure|tourism|budget|tax|public service|housing|roads?|sport|athlete/.test(value)) subjects.push("Social Science");
-  if (/\\barts?\\b|artwork|music|dance|craft|performance|culture|heritage/.test(value)) subjects.push("Arts");
+  if (/\barts?\b|artwork|music|dance|craft|performance|culture|heritage/.test(value)) subjects.push("Arts");
   if (/home economics|food preparation|sewing|household management/.test(value)) subjects.push("Home Economics");
   if (/vosa vakaviti|itaukei|i-taukei/.test(value)) subjects.push("Vosa Vakaviti (iTaukei)");
   if (/fiji hindi|hindustani/.test(value)) subjects.push("Fiji Hindi");
-  if (/\\burdu\\b/.test(value)) subjects.push("Urdu");
-  if (/\\brotuman\\b/.test(value)) subjects.push("Rotuman");
+  if (/\burdu\b/.test(value)) subjects.push("Urdu");
+  if (/\brotuman\b/.test(value)) subjects.push("Rotuman");
   if (!subjects.length) subjects.push("Social Science");
   return [...new Set(subjects)];
 }
