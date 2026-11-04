@@ -4,12 +4,13 @@
 This monitor detects source-page changes only. It does not claim that a curriculum
 changed or publish lessons. Human review must classify each alert.
 """
+import gzip
 import hashlib
+import io
 import json
 import os
 import re
 import sys
-import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -31,6 +32,26 @@ def clean_html(raw):
     raw = re.sub(r"(?s)<!--.*?-->", " ", raw)
     raw = re.sub(r"(?s)<[^>]+>", " ", raw)
     return re.sub(r"\s+", " ", unescape(raw)).strip()
+
+
+def read_html_response(response):
+    """Read bounded HTML and decode gzip before extracting page text."""
+    raw = response.read(MAX_BYTES + 1)
+    if len(raw) > MAX_BYTES:
+        raise ValueError("Source response exceeded the configured size limit")
+
+    encoding = str(response.headers.get("Content-Encoding", "")).strip().lower()
+    if encoding in ("gzip", "x-gzip") or (not encoding and raw.startswith(b"\x1f\x8b")):
+        with gzip.GzipFile(fileobj=io.BytesIO(raw)) as compressed:
+            body = compressed.read(MAX_BYTES + 1)
+    elif encoding in ("", "identity"):
+        body = raw
+    else:
+        raise ValueError("Unsupported Content-Encoding: " + encoding)
+
+    if len(body) > MAX_BYTES:
+        raise ValueError("Decompressed source response exceeded the configured size limit")
+    return body.decode("utf-8", errors="replace")
 
 
 def main():
@@ -55,7 +76,11 @@ def main():
             if not sid or parsed.scheme != "https" or not parsed.netloc:
                 errors.append({"id": sid or "missing-id", "url": url, "error": "Rejected non-HTTPS or invalid source URL"})
                 continue
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"})
+            req = urllib.request.Request(url, headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Encoding": "gzip"
+            })
             try:
                 with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as response:
                     final_url = response.geturl()
@@ -65,10 +90,7 @@ def main():
                     content_type = response.headers.get("Content-Type", "")
                     if "text/html" not in content_type and "application/xhtml+xml" not in content_type:
                         raise ValueError("Source root did not return HTML; configure a verified feed/API endpoint")
-                    body = response.read(MAX_BYTES + 1)
-                    if len(body) > MAX_BYTES:
-                        body = body[:MAX_BYTES]
-                    text = clean_html(body.decode("utf-8", errors="replace"))
+                    text = clean_html(read_html_response(response))
                     if not text:
                         raise ValueError("No readable page text")
                     digest = hashlib.sha256(text.encode("utf-8")).hexdigest()

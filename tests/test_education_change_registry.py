@@ -1,3 +1,4 @@
+import gzip
 import json
 import importlib.util
 import subprocess
@@ -5,6 +6,7 @@ import sys
 import tempfile
 import shutil
 import unittest
+from unittest.mock import patch
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -326,6 +328,62 @@ class EducationChangeRegistryTests(unittest.TestCase):
         self.assertEqual(set(lesson["sections"]), required)
         self.assertTrue(all(section["status"] == "authoring-required" and section["content"] is None
                             for section in lesson["sections"].values()))
+
+
+    def test_monitor_decompresses_gzip_html_before_hashing(self):
+        spec = importlib.util.spec_from_file_location("pacedu_education_monitor_gzip_test", MONITOR)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            registry_path = root / "sources.json"
+            state_path = root / "state.json"
+            report_path = root / "report.md"
+            source_url = "https://stats.example.gov/"
+            registry_path.write_text(json.dumps({
+                "curriculumProfiles": [{
+                    "countryCode": "FJ",
+                    "sources": [{
+                        "id": "fiji-stats",
+                        "publisher": "Fiji Bureau of Statistics",
+                        "url": source_url
+                    }]
+                }]
+            }), encoding="utf-8")
+            module.REGISTRY = registry_path
+            module.STATE = state_path
+            module.REPORT = report_path
+
+            payload = gzip.compress(
+                b"<html><title>Fiji Bureau of Statistics</title><body>Population data</body></html>"
+            )
+
+            class FakeResponse:
+                headers = {
+                    "Content-Type": "text/html; charset=utf-8",
+                    "Content-Encoding": "gzip"
+                }
+
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, exc_type, exc_value, traceback):
+                    return False
+
+                def geturl(self):
+                    return source_url
+
+                def read(self, size=-1):
+                    return payload if size < 0 else payload[:size]
+
+            with patch.object(module.urllib.request, "urlopen", return_value=FakeResponse()) as mocked:
+                self.assertEqual(module.main(), 0)
+
+            saved = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertEqual(saved["fiji-stats"]["title"], "Fiji Bureau of Statistics Population data")
+            request = mocked.call_args.args[0]
+            self.assertEqual(request.get_header("Accept-encoding"), "gzip")
 
 if __name__ == "__main__":
     unittest.main()
