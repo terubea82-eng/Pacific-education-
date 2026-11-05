@@ -1,5 +1,5 @@
 /* PacEdu — two-resource teacher subject/class workspace.
- * Keeps teacher instructions and ability worksheets together after subject -> class selection.
+ * Keeps teacher instructions, ability worksheets and activity-linked teaching aids together after subject -> class selection.
  * Learner evidence is used only when an explicit reviewed mark exists for the same roster learner.
  * Camera photos remain pending until reviewed; no AI-marking claim is made.
  */
@@ -192,6 +192,56 @@
       }
     } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
     panel.appendChild(worksheets);
+
+    var aids = node("section");
+    aids.setAttribute("aria-label", "Teacher resource library and teaching aid builder");
+    aids.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
+    aids.appendChild(node("h4", "3. Teacher Resource & Teaching Aid Builder"));
+    aids.appendChild(node("p", "Prepare a resource brief linked to this subject, class and learning objective: teaching cards, charts, diagrams, worked examples or visual prompts. Use verified curriculum content only. Every draft is marked PENDING_TEACHER_REVIEW until checked."));
+    var aidTypeLabel = node("label", "Choose a teaching aid");
+    var aidType = node("select");
+    [["card","Teaching card"],["chart","Chart"],["diagram","Diagram"],["worked-example","Worked example"],["visual-prompt","Visual prompt"]].forEach(function (item) {
+      var option=node("option",item[1]); option.value=item[0]; aidType.appendChild(option);
+    });
+    aidTypeLabel.appendChild(aidType);
+    aids.appendChild(aidTypeLabel);
+    var indicatorLabel=node("label","Verified achievement indicator / curriculum reference");
+    var indicator=node("input"); indicator.type="text"; indicator.maxLength=240; indicator.placeholder="Enter the official indicator reference";
+    indicatorLabel.appendChild(indicator); aids.appendChild(indicatorLabel);
+    var objectiveLabel=node("label","Learning objective and resource notes");
+    var objective=node("textarea"); objective.rows=4; objective.maxLength=1800; objective.placeholder="Enter the approved learning objective, key facts, worked steps or visual description. Do not invent curriculum content.";
+    objectiveLabel.appendChild(objective); aids.appendChild(objectiveLabel);
+    var aidStatus=node("p","Draft only — PENDING_TEACHER_REVIEW. This builder does not verify the curriculum source or publish the resource.");
+    aidStatus.setAttribute("role","status"); aidStatus.setAttribute("aria-live","polite"); aids.appendChild(aidStatus);
+    var aidDownload=node("button","Download teaching aid brief (.txt)"); aidDownload.type="button";
+    aidDownload.addEventListener("click",function(){
+      if(!indicator.value.trim()||!objective.value.trim()){
+        aidStatus.textContent="Enter the verified curriculum reference and learning objective before downloading.";
+        return;
+      }
+      var term=String(window.localStorage.getItem("pacificEducationTerm")||"T1");
+      var content=[
+        "PACEDU TEACHER RESOURCE BRIEF",
+        "Status: PENDING_TEACHER_REVIEW",
+        "Subject: "+subject,
+        "Class: "+levelValue,
+        "Term: "+term,
+        "Resource type: "+aidType.options[aidType.selectedIndex].text,
+        "Curriculum reference: "+indicator.value.trim(),
+        "Learning objective and resource notes:",
+        objective.value.trim(),
+        "",
+        "Teacher check: verify the official source, class, term, week, day and objective before use."
+      ].join("\n");
+      var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
+      var url=window.URL.createObjectURL(blob);
+      var link=node("a","Download resource brief"); link.href=url; link.download="PacEdu-"+subject.replace(/[^a-z0-9]+/gi,"-")+"-"+String(levelValue).replace(/[^a-z0-9]+/gi,"-")+"-teaching-aid.txt";
+      aids.appendChild(link); link.click(); link.remove();
+      window.setTimeout(function(){window.URL.revokeObjectURL(url);},1000);
+      aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW until checked.";
+    });
+    aids.appendChild(aidDownload);
+    panel.appendChild(aids);
     planPanel.appendChild(panel);
   }
   function reset() {
