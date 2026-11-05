@@ -11,6 +11,7 @@ var SUBJECT_SOURCE=Object.freeze({
  "Agriculture":"Agriculture",
  "Home Economics":"Home Economics",
  "Computer Studies":"Computer Studies",
+ "Vosa Vakaviti (iTaukei)":"iTaukei Language",
  "Mathematics":"Mathematics",
  "Science":"Science",
  "Social Science":"Social Studies",
