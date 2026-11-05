@@ -21,6 +21,11 @@
     .video-ad-panel .muted{font-size:.94rem}
     button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
     .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
+
+    .pacedu-catalogue{background:#fff;border:2px solid #0b5d7a;border-radius:12px;padding:16px;margin:16px 0}
+    .pacedu-catalogue-card{border:1px solid #b9cbd1;border-radius:10px;padding:14px;background:#f7fbfc}
+    .pacedu-catalogue-card a{display:inline-block;margin:6px 8px 0 0}
+    .verification-note{border-left:4px solid #b77b00;background:#fff7e5;padding:10px 12px}
     .pacedu-live-screen{margin:16px auto;padding:16px;background:#092f40;color:#fff;border-radius:14px;overflow:hidden}
     .pacedu-live-screen h2{margin:0 0 6px}.pacedu-live-screen p{margin:4px 0}
     .pacedu-ad-track{display:flex;gap:14px;overflow-x:auto;padding:12px 2px;scroll-snap-type:x mandatory;scrollbar-width:thin}
@@ -54,7 +59,7 @@
   <h2 id="paceduLiveHeading">PacEdu Global Product Advertising Screen</h2>
   <p>Business adverts are displayed in a horizontal moving gallery after registration, payment confirmation and PacEdu approval.</p>
   <div class="ad-track" id="paceduAdTrack" aria-label="Side-moving product advert preview" style="display:flex;gap:14px;overflow-x:auto;padding:12px 2px;scroll-snap-type:x mandatory">
-    <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Your product advert appears here</strong><small>Register your business and submit a product video to start review.</small><a class="link-button" href="#advertiseHeading">Business registration →</a></article>
+    <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Your product advert appears here</strong><small>Register your business and submit a product video to start review. Approved adverts will have a separate product catalogue link.</small><a class="link-button" href="#advertiseHeading">Business registration →</a></article>
     <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Clear product display</strong><small>Approved product video, original language and English interpretation.</small><span>PacEdu reviewed advert</span></article>
     <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Global business reach</strong><small>Choose the country and advertising package that fits your business.</small><a href="#packagePayment">View advertising packages →</a></article>
   </div>
@@ -64,6 +69,17 @@
   <a class="link-button" href="#advertiseHeading">Register your business</a>
 </section>
 <main>
+<section class="pacedu-catalogue" id="paceduBusinessCatalogues" aria-labelledby="catalogueHeading">
+  <h2 id="catalogueHeading">Business product catalogues</h2>
+  <p>Choose a business advert to open that business's separate product catalogue. Customers can read product descriptions, options, prices, delivery details and the shop's own checkout information.</p>
+  <div class="pacedu-catalogue-card" id="paceduCatalogueEmptyState">
+    <strong>Business catalogues will appear here after approval.</strong>
+    <p>No verified business catalogue is connected to this pilot page yet. We will not display invented shops, products, prices or payment links.</p>
+    <a class="link-button" href="#advertiseHeading">Register a business catalogue</a>
+  </div>
+  <p class="verification-note"><strong>Customer payment safety:</strong> Pay the shop or business through its own verified checkout—not through an advertiser's typed bank details or an unverified link. PacEdu must check the business identity, catalogue ownership and payment destination before showing a “Verified business” label. A verified listing is not a guarantee that every product or transaction is risk-free.</p>
+</section>
+
   <section aria-labelledby="directoryHeading">
     <h2 id="directoryHeading">Explore the directory</h2>
     <p class="muted">Listings will appear here after owner review. The examples below explain the types of businesses PacEdu intends to support; they are not real offers.</p>
@@ -166,8 +182,8 @@
         <option value="">Choose one</option><option value="qualified-human">Qualified human translator</option><option value="native-speaker-reviewed">Reviewed by a fluent/native speaker</option><option value="machine-human-reviewed">Machine translation, then human reviewed</option><option value="machine-unreviewed">Machine translation, not yet human reviewed</option>
       </select>
       <p class="muted">PacEdu must preserve the original-language advert and display its English interpretation alongside it. Machine translation must be labelled and should not be treated as certified or legally accurate. Where meaning, safety, pricing, health claims or legal conditions matter, require competent human review before publication.</p>
-      <label for="businessWebsite">Website or product link (optional)</label><input id="businessWebsite" name="website" type="url" inputmode="url" placeholder="https://example.com">
-      <label for="businessPaymentLink">Checkout or payment link (optional)</label><input id="businessPaymentLink" name="paymentLink" type="url" inputmode="url" placeholder="https://…">
+      <label for="businessWebsite">Official business website (optional)</label><input id="businessWebsite" name="website" type="url" inputmode="url" placeholder="https://example.com"><label for="businessCatalogueLink">Business product catalogue link (optional)</label><input id="businessCatalogueLink" name="catalogueLink" type="url" inputmode="url" placeholder="https://yourshop.example/catalogue"><p class="muted">This link will be shown as a separate “View product catalogue” link on your approved advert after PacEdu verifies the business and catalogue.</p>
+      <label for="businessPaymentLink">Official shop checkout / customer payment link (optional)</label><input id="businessPaymentLink" name="paymentLink" type="url" inputmode="url" placeholder="https://…"><p class="muted">This is where customers pay your business for its products. It is separate from PacEdu advertising fees. PacEdu will only display it after checking the destination and business ownership.</p>
       <label for="advertiserEmail">Business contact email (optional)</label><input id="advertiserEmail" name="email" type="email" maxlength="160" autocomplete="email">
       <div class="actions"><button type="submit">Save listing draft</button><button type="button" id="paceduBusinessClearDraft" style="background:#465b63">Clear this device's draft</button></div>
       <p id="paceduBusinessFormStatus" class="status" role="status" aria-live="polite"></p>
