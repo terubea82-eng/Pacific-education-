@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
-<meta name="pacific-education-pilot-build" content="864-opening-controls-delegated-recovery-20261105">
+<meta name="pacific-education-pilot-build" content="865-mobile-click-target-recovery-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
@@ -641,6 +641,8 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   }
   function bindRefresh() {
     var button = document.getElementById("pacificEducationRefreshButton");
+    /* Opening-page refresh buttons are handled by the independent document
+       delegate, even when the legacy footer button is not present yet. */
     if (!button) return;
     button.disabled = false;
     button.removeAttribute("aria-disabled");
@@ -759,10 +761,13 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
     document.documentElement.setAttribute("data-pe-opening-delegation-bound", "true");
     document.addEventListener("click", function(event) {
       var node = event.target;
-      while (node && node !== document && node.nodeType === 1 &&
-        !(node.hasAttribute("data-pacedu-opening-refresh") ||
-          node.id === "welcomeNextButton" || node.id === "paceduVisionNext")) {
-        node = node.parentElement;
+      /* Some mobile browsers report a text node or nested icon as the target.
+         Normalize it before walking up to the actual control. */
+      if (node && node.nodeType !== 1) node = node.parentElement || node.parentNode;
+      while (node && node !== document &&
+        !(node.hasAttribute && (node.hasAttribute("data-pacedu-opening-refresh") ||
+          node.id === "welcomeNextButton" || node.id === "paceduVisionNext"))) {
+        node = node.parentElement || node.parentNode;
       }
       if (!node || node === document) return;
       if (node.hasAttribute("data-pacedu-opening-refresh")) {
