@@ -15,7 +15,7 @@
     { id:"parent", title:"Parent / Caregiver", access:"Linked-child overview plus automatic Weekend & Holiday Supplementary Activities only", actions:["Open weekend/holiday assignment","Seek teacher help","Send feedback"] },
     { id:"professional", title:"Professional Reviewer", access:"Controlled review evidence and findings", actions:["Review evidence","Record finding","View review status"] },
     { id:"ngo", title:"NGO / Organization", access:"Program-level pilot participation and feedback", actions:["Program overview","Pilot feedback","Request support"] },
-    { id:"education", title:"Education / Government", access:"Pilot-level education evidence and reporting view", actions:["Pilot overview","Evidence review","Feedback"] },
+    { id:"education", title:"Education Officer / Ministry", access:"Authorized curriculum subject access, curriculum evidence and education oversight", actions:["Open education subjects","Review curriculum evidence","View coverage"] },
     { id:"community", title:"Community / Partner", access:"General education services and pilot feedback", actions:["Explore services","Submit feedback","Pilot information"] },
     { id:"owner", title:"Owner / Control", access:"Owner-controlled pilot oversight and release evidence", actions:["Pilot status","Evidence register","Release gates"] },
     { id:"technician", title:"Technician", access:"Controlled technical workspace for builds, deployment, diagnostics and approved Termux workflow", actions:["GitHub repository","GitHub Actions / builds","Live Pages","Firebase Console","Termux workflow"] }
@@ -218,8 +218,7 @@
           "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationWeekendHolidaySupplementaryActivities","pacificEducationExamCalendarSection"
         ],
         "special-education": [
-          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection",
-          "specialEducationDashboard","dailyLesson","assessments","pacificEducationHomeSubmission",
+          "specialEducationDashboard","specialEducationReviewEvidence",
           "pacificEducationStudentProgressDashboard","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
         ],
         "institution-admin": [
@@ -240,9 +239,9 @@
           "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
         ],
         education: [
-          "learningPlatform","pacificEducationCurriculumMasterControlStatus",
-          "pacificEducationCurriculumEvidenceRegistry","pacificEducationCurriculumEvidenceTraceability","pacificEducationExamCalendarSection",
-          "pacificEducationCoverageDashboard"
+          "learningPlatform","levelSelection","subjectSelection","termSelection","capabilitySelection","dailyLesson","assessments",
+          "pacificEducationCurriculumMasterControlStatus","pacificEducationCurriculumEvidenceRegistry",
+          "pacificEducationCurriculumEvidenceTraceability","pacificEducationExamCalendarSection","pacificEducationCoverageDashboard"
         ],
         community: [
           "learningPlatform","pacificEducationWebsitePilotChecklist","pacificGuardianCommentSection","pacificEducationExamCalendarSection"
@@ -295,7 +294,7 @@
             parentDashboard:["parent"],
             dailyLesson:["student","blind-learner","teacher","special-education"],
             assessments:["student","blind-learner","teacher","special-education"],
-            learningPlatform:["student","blind-learner","teacher","special-education","parent","professional","ngo","education","community"],
+            learningPlatform:["student","blind-learner","deaf-learner","teacher","education"],
             buyPlans:["owner","community","ngo","education","professional"]
           }
           var rolesForLink = roleDashboardMap[id];
@@ -306,7 +305,7 @@
       // Student Platform owns the learner flow; keep Daily Activities hidden until Student is selected.
       var dailySection = document.getElementById("dailyLesson");
       if (dailySection) {
-        dailySection.hidden = roleId !== "student" && roleId !== "blind-learner" && roleId !== "teacher" && roleId !== "special-education";
+        dailySection.hidden = roleId !== "student" && roleId !== "blind-learner" && roleId !== "deaf-learner" && roleId !== "teacher" && roleId !== "education";
       }
 
       var learningNav = document.querySelector('#learningPlatform nav[aria-label="Learning tools"]');
@@ -412,11 +411,8 @@
         ],
         "special-education": [
           ["specialEducationDashboard","1. Inclusion Dashboard"],
-          ["pacificEducationTeacherClassDashboard","2. Learner / Class"],
-          ["dailyLesson","3. Daily Learning"],
-          ["assessments","4. Assessments"],
-          ["specialEducationReviewEvidence","5. Review Evidence"],
-          ["pacificEducationHomeSubmission","6. Home Evidence"]
+          ["specialEducationReviewEvidence","2. Authorized Inclusion Review Evidence"],
+          ["pacificEducationStudentProgressDashboard","3. Approved Learner Support Progress"]
         ],
         parent: [
           ["parentDashboard","1. Parent Dashboard & Child Class"],
@@ -436,10 +432,16 @@
           ["pacificGuardianCommentSection","4. Feedback"]
         ],
         education: [
-          ["pacificEducationCurriculumMasterControlStatus","1. Curriculum Control"],
-          ["pacificEducationCurriculumEvidenceRegistry","2. Evidence Registry"],
-          ["pacificEducationCurriculumEvidenceTraceability","3. Evidence Traceability"],
-          ["pacificEducationCoverageDashboard","4. Coverage"]
+          ["learningPlatform","1. Education Subject Area"],
+          ["levelSelection","2. Class / Level"],
+          ["subjectSelection","3. Subject Boxes"],
+          ["termSelection","4. Term & Teaching Day"],
+          ["dailyLesson","5. Curriculum Daily Activities"],
+          ["assessments","6. Assessment Overview"],
+          ["pacificEducationCurriculumMasterControlStatus","7. Curriculum Control"],
+          ["pacificEducationCurriculumEvidenceRegistry","8. Evidence Registry"],
+          ["pacificEducationCurriculumEvidenceTraceability","9. Evidence Traceability"],
+          ["pacificEducationCoverageDashboard","10. Coverage"]
         ],
         community: [
           ["learningPlatform","1. Education Services"],
