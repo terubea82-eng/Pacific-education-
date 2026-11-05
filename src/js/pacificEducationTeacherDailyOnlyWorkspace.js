@@ -135,9 +135,12 @@
            The shared learner activity keeps the selected subject/class context above. */
         var dailySection=document.getElementById("dailyLesson");
         if(dailySection&&selectedCard){
+          var oldDailyHeading=document.getElementById("paceduTeacherSelectedDailyHeading");
+          if(oldDailyHeading)oldDailyHeading.remove();
           dailySection.hidden=false;
           dailySection.setAttribute("aria-label",subject+" — "+item.level+" Daily Activities");
           var dailyHeading=node("h3",subject+" — "+item.level+" Daily Activities");
+          dailyHeading.id="paceduTeacherSelectedDailyHeading";
           selectedCard.appendChild(dailyHeading);
           selectedCard.appendChild(dailySection);
         }
