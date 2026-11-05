@@ -106,7 +106,15 @@
       "click",
       function(e){
         if(e)e.preventDefault();
-        show(2);
+        /* Keep the legacy button listener aligned with the single navigation owner.
+           The old show(2) route opens Registration directly and conflicts with the
+           current Welcome -> Vision -> Rules sequence. */
+        var navigation=window.PacificEducationSingleNavigation;
+        if(navigation && typeof navigation.gateway==="function"){
+          navigation.gateway(2);
+        }else{
+          show(2);
+        }
       },
       false
     );
