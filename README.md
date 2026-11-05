@@ -1,5 +1,9 @@
 # Pacific Education — 1-Month Controlled Pilot
 
+## PacEdu master project blueprint
+
+The consolidated product requirements, decisions, safeguards, current implementation status and development order are maintained in [docs/PACEDU-MASTER-PROJECT-BLUEPRINT.md](docs/PACEDU-MASTER-PROJECT-BLUEPRINT.md). This is the shared reference for the business advertising portal and the education platform. It distinguishes implemented prototype features from work still requiring implementation and verification.
+
 **Pilot period:** November 1, 2026 – December 1, 2026 (no-fee controlled school pilot; payments remain disabled)
 
 Pacific Education is being prepared as a **controlled one-month prototype pilot** covering learning, assessment, dashboards, curriculum-alignment workflows, accessibility, offline/low-bandwidth prototype behavior, and education relationship services.
