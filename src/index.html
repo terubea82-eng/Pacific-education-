@@ -580,7 +580,15 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
     button.setAttribute("data-pe-refresh-bound", "true");
     button.addEventListener("click", function(event) {
       event.preventDefault();
-      window.location.reload();
+      /* Explicitly ask the service worker for a fresh network copy.
+         A normal reload can otherwise fall back to the saved HTML shell. */
+      try {
+        var refreshUrl = new URL(window.location.href);
+        refreshUrl.searchParams.set("pacedu_refresh", String(Date.now()));
+        window.location.replace(refreshUrl.toString());
+      } catch (error) {
+        window.location.reload();
+      }
     }, true);
   }
   function bindEarlyNext() {
