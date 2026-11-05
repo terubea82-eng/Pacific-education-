@@ -33,13 +33,16 @@ for (const level of api.levels) {
 assert.deepEqual(Array.from(api.resolve("Social Science", "Class 4").worksheetSourceSubjects), ["Social Studies"]);
 assert.deepEqual(Array.from(api.resolve("Health", "Class 4").worksheetSourceSubjects), ["Healthy Living", "Physical Education"]);
 assert.deepEqual(Array.from(api.resolve("Arts", "Class 4").worksheetSourceSubjects), ["Arts and Crafts", "Music"]);
-assert.equal(api.resolve("Phonics", "Class 1").contentStatus, "CONTENT_PARTIAL");
+assert.equal(api.resolve("Phonics", "Class 1").contentStatus, "CONTENT_AVAILABLE_DRAFT");
 assert.equal(api.resolve("Science", "Form 6").contentStatus, "CONTENT_PARTIAL");
-for (const subject of ["Agriculture", "Home Economics", "Urdu", "Rotuman"]) {
+for (const subject of ["Agriculture", "Home Economics", "Computer Studies"]) {
+  assert.equal(api.resolve(subject, "Class 3").contentStatus, "CONTENT_AVAILABLE_DRAFT");
+  assert.deepEqual(Array.from(api.resolve(subject, "Class 3").worksheetSourceSubjects), [subject]);
+}
+for (const subject of ["Urdu", "Rotuman"]) {
   assert.equal(api.resolve(subject, "Class 3").contentStatus, "CONTENT_NOT_AVAILABLE");
   assert.equal(api.resolve(subject, "Class 3").worksheetSourceSubjects.length, 0);
 }
-assert.equal(api.resolve("Computer Studies", "Class 3").contentStatus, "CONTENT_PARTIAL");
 assert.equal(api.resolve("Vosa Vakaviti (iTaukei)", "Class 3").contentStatus, "CONTENT_PARTIAL");
 assert.equal(api.resolve("Fiji Hindi", "Class 3").contentStatus, "CONTENT_PARTIAL");
 assert.equal(api.resolve("English", "Form 1").status, "level-gap");

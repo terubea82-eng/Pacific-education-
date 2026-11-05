@@ -7,6 +7,10 @@
 var SUBJECTS=["English","Mathematics","Phonics","Science","Social Science","Health","Agriculture","Arts","Technology","Home Economics","Computer Studies","Vosa Vakaviti (iTaukei)","Fiji Hindi","Urdu","Rotuman"];
 var SUBJECT_SOURCE=Object.freeze({
  "English":"English",
+ "Phonics":"Phonics",
+ "Agriculture":"Agriculture",
+ "Home Economics":"Home Economics",
+ "Computer Studies":"Computer Studies",
  "Mathematics":"Mathematics",
  "Science":"Science",
  "Social Science":"Social Studies",
@@ -41,7 +45,11 @@ var SUBJECT_CRITERIA={
  "Music":[["Rhythm and pitch","Demonstrate the taught rhythm, pitch or sound pattern."],["Technique and control","Use an appropriate voice, instrument, body or digital method."],["Expression and participation","Participate and communicate the intended musical idea."],["Listening and reflection","Notice a feature and describe or demonstrate an improvement."]],
  "Digital Literacy":[["Task and concept","Complete the intended digital task or explain the concept accurately."],["Process and problem-solving","Follow steps, select a suitable tool and resolve a simple problem."],["Safety and responsibility","Protect personal information and use technology respectfully."],["Output and explanation","Present the result clearly and explain key choices."]],
  "iTaukei Language":[["Meaning and comprehension","Understand the taught spoken, written or visual language."],["Vocabulary and structure","Use suitable iTaukei words and language patterns for the level."],["Language skill","Demonstrate the assigned listening, speaking, reading or writing skill."],["Communication and context","Communicate meaning appropriately and respectfully in context."]],
- "Hindi":[["Meaning and comprehension","Understand the taught spoken, written or visual Hindi."],["Vocabulary and structure","Use suitable vocabulary and language patterns for the level."],["Language skill","Demonstrate the assigned listening, speaking, reading or writing skill."],["Communication and context","Communicate meaning appropriately and respectfully in context."]]
+ "Hindi":[["Meaning and comprehension","Understand the taught spoken, written or visual Hindi."],["Vocabulary and structure","Use suitable vocabulary and language patterns for the level."],["Language skill","Demonstrate the assigned listening, speaking, reading or writing skill."],["Communication and context","Communicate meaning appropriately and respectfully in context."]],
+ "Phonics":[["Sound identification","Identify the taught phoneme accurately in spoken words."],["Sound–grapheme link","Select or write the grapheme that represents the taught sound."],["Blending or segmenting","Blend sounds to decode or segment sounds to encode a word."],["Transfer and fluency","Apply the taught pattern to an unfamiliar suitable word; record prompts used."]],
+ "Agriculture":[["Knowledge and observation","Identify the relevant plant, soil, crop or farm concept."],["Practical process","Describe or demonstrate the correct sequence for the task."],["Safety and care","Use safe tools, hygiene and environmental care appropriate to the activity."],["Evidence and reflection","Record observations and explain one result or improvement."]],
+ "Home Economics":[["Knowledge and planning","Identify the relevant food, nutrition, household or resource concept."],["Practical skill","Complete or sequence the task using an appropriate method."],["Hygiene and safety","Apply food, equipment and personal safety requirements."],["Reasoning and reflection","Explain choices in relation to needs, culture, resources and the task."]],
+ "Computer Studies":[["Computing concept","Identify or explain the relevant hardware, software, data or system concept."],["Digital process","Follow a logical sequence to complete the computing task."],["Accuracy and troubleshooting","Produce a correct result and identify or resolve a simple problem."],["Safety and responsibility","Protect privacy, use devices responsibly and explain safe choices."]]
 };
 function criteriaHtml(subject){
  var items=SUBJECT_CRITERIA[subject]||[["Accuracy","Use correct subject knowledge."],["Process","Show the steps, method or practical process."],["Evidence","Support the response with relevant evidence or demonstration."],["Communication","Explain or present the result clearly."]];
