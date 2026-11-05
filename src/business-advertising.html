@@ -15,6 +15,10 @@
     label{display:block;font-weight:700;margin:12px 0 4px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid #879da5;border-radius:7px}
     button,.link-button{display:inline-block;background:#0b5d7a;color:#fff;border:0;border-radius:7px;padding:11px 14px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
     .pacedu-business-flow{max-width:980px;margin:14px auto 0;padding:10px 16px;background:#eaf4f7;border:1px solid #b9d4dc;border-radius:10px}.pacedu-business-flow p{margin:0 0 6px;font-weight:700;color:#174f63}.pacedu-business-flow .actions{margin:0}.pacedu-business-flow a{display:inline-block}
+    main>section[aria-labelledby="directoryHeading"],main>section[aria-labelledby="sponsorsHeading"],main>section[aria-labelledby="revenueHeading"]{display:none!important}
+    .video-ad-panel{border:2px solid #0b5d7a;border-radius:12px;padding:14px;margin:16px 0;background:#f1f8fb}
+    .video-ad-panel video{display:block;width:100%;max-height:360px;background:#102b35;border-radius:8px;margin-top:10px}
+    .video-ad-panel .muted{font-size:.94rem}
     button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
     .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
@@ -23,8 +27,9 @@
 <body>
 <header>
   <p><strong>Pacific Education · PacEdu</strong></p>
-  <h1>Business & Product Advertising</h1>
-  <p>Discover useful local services, products and education-related offers.</p>
+  <h1>Global Business Registration & Product Video Ads</h1>
+  <p>Register your business and submit product videos for review and advertising on PacEdu.</p>
+  <p><strong>Page 1 · Business registration and product video advertisements only</strong></p>
 </header>
 <nav class="pacedu-business-flow" aria-label="PacEdu entry navigation">
   <p><strong>PacEdu entry · Page 1 of 5 · Business advertisements</strong></p>
@@ -108,7 +113,16 @@
       <label><input id="languageRespectConfirmation" name="languageRespectConfirmation" type="checkbox" required style="width:auto;margin-right:8px">I confirm that this advert respects the target community's language identity and includes the applicable official, recognised or legally protected local-language version(s), as well as any language version required by law. I will provide accurate translations and comply with local rules. *</label>
       <label for="otherAdLanguages">Additional languages for international customers (optional)</label><input id="otherAdLanguages" name="otherAdLanguages" maxlength="250" placeholder="e.g. English, Hindi, Mandarin">
       <label for="businessLocation">Business location / town or service area *</label><input id="businessLocation" name="location" required maxlength="120" placeholder="e.g. Suva, Fiji">
-      <label for="businessDescription">Original advert text in the target community's language *</label><textarea id="businessDescription" name="description" required maxlength="2000" rows="5" placeholder="Write the advert in the original local or required language, preserving its script and wording."></textarea>
+      <div class="video-ad-panel" aria-labelledby="videoAdHeading">
+<h3 id="videoAdHeading">🎥 Product video advertisement</h3>
+<p>Choose a short video showing your real product or service. PacEdu must review and approve it before public display.</p>
+<label for="businessProductVideo">Select product video (MP4 or WebM, up to 50 MB)</label>
+<input id="businessProductVideo" name="productVideo" type="file" accept="video/mp4,video/webm" aria-describedby="businessVideoHelp">
+<p id="businessVideoHelp" class="muted">This prototype previews the video on this device only. It does not upload, publish, livestream or charge for the advert.</p>
+<video id="businessProductVideoPreview" controls playsinline hidden></video>
+<p id="businessVideoStatus" class="status" role="status" aria-live="polite">No product video selected.</p>
+</div>
+<label for="businessDescription">Original advert text in the target community's language *</label><textarea id="businessDescription" name="description" required maxlength="2000" rows="5" placeholder="Write the advert in the original local or required language, preserving its script and wording."></textarea>
       <label for="englishInterpretation">English interpretation of the complete advert *</label><textarea id="englishInterpretation" name="englishInterpretation" required maxlength="2500" rows="5" placeholder="Provide a clear English translation of the original advert, including important product details, conditions and calls to action."></textarea>
       <label for="translationMethod">How was the English interpretation prepared? *</label>
       <select id="translationMethod" name="translationMethod" required>
@@ -169,6 +183,26 @@
     });
   })();
   </script>
-  <script src="./js/paceduBusinessAdvertising.js?v=20261105-usd-fees"></script>
+  <script>
+(function(){
+var picker=document.getElementById("businessProductVideo");
+var preview=document.getElementById("businessProductVideoPreview");
+var status=document.getElementById("businessVideoStatus");
+var currentUrl="";
+if(!picker||!preview||!status)return;
+picker.addEventListener("change",function(){
+var file=picker.files&&picker.files[0];
+if(currentUrl){URL.revokeObjectURL(currentUrl);currentUrl="";}
+preview.pause();preview.removeAttribute("src");preview.load();preview.hidden=true;
+if(!file){status.textContent="No product video selected.";return;}
+if(!["video/mp4","video/webm"].includes(file.type)){picker.value="";status.textContent="Please select an MP4 or WebM video.";return;}
+if(file.size>50*1024*1024){picker.value="";status.textContent="The video is larger than 50 MB. Choose a smaller video.";return;}
+currentUrl=URL.createObjectURL(file);preview.src=currentUrl;preview.hidden=false;
+status.textContent="Video ready for local preview: "+file.name+". It has not been uploaded or published.";
+});
+window.addEventListener("beforeunload",function(){if(currentUrl)URL.revokeObjectURL(currentUrl);});
+})();
+</script>
+<script src="./js/paceduBusinessAdvertising.js?v=20261105-usd-fees"></script>
 </body>
 </html>
