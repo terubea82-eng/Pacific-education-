@@ -47,10 +47,12 @@
       var packCard=node("section");
       packCard.id="paceduClass1EnglishWorksheetPackLink";
       packCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
-      var packTitle=node("h4","Class 1 English — Daily Worksheet Pack (Days 1–5)");
-      var packStatus=node("p","TEACHER REVIEW REQUIRED — source-informed practice worksheets; official curriculum indicators and sequence are not yet verified.");
-      var packLink=node("a","Open Class 1 English worksheet pack");
-      packLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
+      var packTitle=node("h4","Class 1 English — Downloadable Daily Activities (Days 1–5)");
+      var packStatus=node("p","This activity pack is linked to the English subject box. TEACHER REVIEW REQUIRED — official curriculum indicators and sequence are not yet verified.");
+      var packLink=node("a","Download Class 1 English Daily Activities");
+      packLink.href="https://github.com/terubea82-eng/Pacific-education-/raw/refs/heads/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
+      packLink.setAttribute("download","PacEdu-Class-1-English-Daily-Activities.md");
+      packLink.setAttribute("aria-label","Download Class 1 English daily activities for Days 1 to 5");
       packLink.target="_blank";
       packLink.rel="noopener noreferrer";
       packLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
