@@ -18,6 +18,26 @@
     }
     return parsed.href;
   }
+  var targetCountryField = document.getElementById("advertTargetCountry");
+  var languageGuidance = document.getElementById("paceduLanguageGuidance");
+  var verifiedLanguageNotes = {
+    "Fiji": "Verified constitutional status: English, Fijian (iTaukei) and Hindustani have equal status. This does not establish that all three must appear in every private advert. Check product-specific and sector rules. Source: Fiji Constitution, section 4 — https://www.fiji.gov.fj/fijian-constitution/",
+    "France": "Verified rule: French is required for public-facing inscriptions and announcements placed on public roads, in places open to the public or on public transport. This specific rule should not be treated as a complete rule for every online advert. Check the applicable consumer, product and digital-advertising rules. Source: French Language Law, Article 3 — https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006421211/",
+    "South Africa": "Verified constitutional status: 12 official languages — Sepedi, Sesotho, Setswana, siSwati, Tshivenda, Xitsonga, Afrikaans, English, isiNdebele, isiXhosa and isiZulu. This does not mean every private advert must use all 12. Check audience, province and applicable consumer rules. Source: Constitution, section 6 — https://www.justice.gov.za/legislation/constitution/chp01.html",
+    "United Arab Emirates": "Verified consumer-information rules: Arabic is required on invoices and specified e-commerce product/service information. Dubai has a separate outdoor-advertising decree requiring Arabic as the main language for covered adverts. Do not apply the Dubai rule automatically to every advert or emirate. Sources: UAE Government consumer protection — https://u.ae/en/information-and-services/justice-safety-and-the-law/consumer-protection ; Dubai Decree 6/2020 — https://dlp.dubai.gov.ae/Legislation%20Reference/2020/Decree%20No.%20%286%29%20of%202020%20Regulating%20Advertisements%20in%20the%20Emirate%20of%20Dubai.pdf",
+    "Canada": "Verified national status: English and French are Canada's federal official languages; this does not by itself mean every private advertisement must be bilingual. Province-specific rules matter. If targeting Québec, check its French-language requirements separately. Sources: Government of Canada — https://www.canada.ca/en/canadian-heritage/services/how-rights-protected/guide-canadian-charter-rights-freedoms.html ; Québec Government — https://www.quebec.ca/en/culture/langue-francaise",
+    "Other country or territory": "No verified country-specific language note is currently available in this PacEdu pilot. Do not guess. Check the relevant government, consumer-protection and advertising regulator sources before submitting."
+  };
+  function updateLanguageGuidance() {
+    if (!languageGuidance || !targetCountryField) return;
+    var country = targetCountryField.value;
+    languageGuidance.textContent = verifiedLanguageNotes[country] ||
+      (country ? "No country-specific legal advertising-language note has been verified in this PacEdu pilot yet. Do not assume the country's official language is legally required for every private advert. Check current national and local laws, product labelling rules and advertising-regulator guidance before submitting." :
+      "Choose a target country to view PacEdu's currently verified language notes. A country's official languages are not automatically mandatory for every private advertisement. If your advert targets a province, state, emirate or region, enter that area in the business location and check its local rules.");
+  }
+  if (targetCountryField) targetCountryField.addEventListener("change", updateLanguageGuidance);
+  updateLanguageGuidance();
+
   function getValues() {
     var data = new FormData(form);
     return {
