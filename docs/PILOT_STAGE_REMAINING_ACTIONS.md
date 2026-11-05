@@ -51,6 +51,15 @@ This document is an evidence checklist only. It does not authorize production. N
 
 ## Current automated evidence
 
-Latest checked `main` commit: `88e87df80331e9bff3290e7c7146720df46bab52`.
+Latest checked `main` commit: `b0b564adeff241c98c36586ffbc81deecae064fa`.
+
+## 5 November 2026 repository review update
+
+- Current Affairs refresh run 41910016689 completed successfully; the generated feed contains 30 entries, all `PENDING_TEACHER_REVIEW`, with zero automatically approved.
+- GitHub Pages deployment run 41910452492 completed successfully for the refreshed feed.
+- Education source monitor run 41936337199 completed successfully and opened review issue #334: six of nine configured sources were checked successfully, three pages changed, and three sources returned fetch/validation errors. These are review leads, not confirmed curriculum changes.
+- Curriculum framework activation run 41940334240 passed its checks and reported no curriculum release records; the active Fiji 2013 framework baseline was not changed.
+- The latest full application regression, CodeQL and cross-device checks completed successfully on commit `701095948743f0e7539c77dbd8d59d0aed864b69`. The later `b0b564a` update changes the current-affairs data file; it does not represent a new full application regression run.
+- Production authorization remains blocked and fail-closed. No curriculum, teacher approval, pilot-user, Android-device, privacy, safeguarding, accessibility, payment or Owner-authorization evidence is inferred from these automated runs.
 
 Latest observed automated checks include successful GitHub Pages deployment and successful Stage 15 QA Regression. These automated results do not replace the human, specialist, curriculum, safeguarding, privacy, accessibility, payment, or independent-review evidence listed above.
