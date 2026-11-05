@@ -17,6 +17,10 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* Request a fresh entry page once whenever this page is opened; remove the cache-bypass marker after the response arrives. */
+(function(){try{var u=new URL(window.location.href);if(!u.searchParams.has("pacedu_refresh")){u.searchParams.set("pacedu_refresh",String(Date.now()));window.location.replace(u.toString());}else{u.searchParams.delete("pacedu_refresh");window.history.replaceState(null,"",u.pathname+u.search+u.hash);}}catch(e){}})();
+</script>
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
 <meta name="pacific-education-pilot-build" content="865-mobile-click-target-recovery-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
