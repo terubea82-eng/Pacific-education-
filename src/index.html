@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
-<meta name="pacific-education-pilot-build" content="861-auto-refresh-on-open-20261105">
+<meta name="pacific-education-pilot-build" content="862-entry-buttons-auto-refresh-recovery-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
@@ -437,18 +437,21 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
   "use strict";
   var registration=null;
   var reloadPending=false;
-  var lastControllerUrl="";
+  var initialController=null;
   function refreshWhenNewVersionControlsPage(){
     if(reloadPending)return;
     reloadPending=true;
+    /* A service-worker update keeps the same scriptURL. Detect the new
+       controller object, not a URL change, and reload only after the first
+       controller has already claimed this page. */
     try{
       var current=navigator.serviceWorker&&navigator.serviceWorker.controller;
-      var currentUrl=current?current.scriptURL:"";
-      var previous=sessionStorage.getItem("pacedu-auto-refresh-controller")||"";
-      if(currentUrl)sessionStorage.setItem("pacedu-auto-refresh-controller",currentUrl);
-      if(previous&&currentUrl&&previous!==currentUrl)window.location.reload();
-      else reloadPending=false;
-    }catch(e){reloadPending=false;}
+      if(initialController&&current&&current!==initialController){
+        window.location.reload();
+        return;
+      }
+    }catch(e){}
+    reloadPending=false;
   }
   function checkForUpdate(){
     if(!registration||!navigator.onLine)return;
@@ -456,18 +459,17 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
   }
   function register(){
     if(!("serviceWorker"in navigator))return;
-    var controller=navigator.serviceWorker.controller;
-    if(controller)lastControllerUrl=controller.scriptURL;
-    try{if(controller)sessionStorage.setItem("pacedu-auto-refresh-controller",controller.scriptURL);}catch(e){}
+    initialController=navigator.serviceWorker.controller||null;
     navigator.serviceWorker.addEventListener("controllerchange",function(){
-      var current=navigator.serviceWorker.controller;
-      var nextUrl=current?current.scriptURL:"";
-      if(lastControllerUrl&&nextUrl&&lastControllerUrl!==nextUrl){
-        lastControllerUrl=nextUrl;
+      var current=navigator.serviceWorker.controller||null;
+      if(!initialController&&current){
+        /* First install/first claim: the network-loaded page is already current. */
+        initialController=current;
+        return;
+      }
+      if(initialController&&current&&current!==initialController){
+        initialController=current;
         refreshWhenNewVersionControlsPage();
-      }else if(!lastControllerUrl&&nextUrl){
-        lastControllerUrl=nextUrl;
-        try{sessionStorage.setItem("pacedu-auto-refresh-controller",nextUrl);}catch(e){}
       }
     });
     navigator.serviceWorker.register("../service-worker.js",{updateViaCache:"none"}).then(function(reg){
@@ -478,9 +480,6 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
         if(document.visibilityState==="visible")checkForUpdate();
       });
       window.addEventListener("online",checkForUpdate);
-      if(reg.waiting&&navigator.serviceWorker.controller){
-        try{reg.waiting.postMessage({type:"PACEDU_ACTIVATE_UPDATE"});}catch(e){}
-      }
     }).catch(function(){});
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register,{once:true});
@@ -1386,7 +1385,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261018-registration-handoff-shell-release-v1"></script>
 <script src="./js/pacificEducationBreathingFocusGuide.js?v=20261016-final-signout-scroll-stable-v8"></script>
 <script src="./js/pacificEducationConversationContract.js?v=20261009-conversation-contract-v1"></script>
-<script src="./js/pacificEducationSingleNavigationController.js?v=20261105-first-page-blank-recovery-v3"></script>
+<script src="./js/pacificEducationSingleNavigationController.js?v=20261105-entry-navigation-recovery-v4"></script>
 <script src="./js/pacificEducationAutoFeatureActivation.js?v=20261006-auto-feature-activation-v1"></script>
 <script src="./js/pacificEducationCurriculumCoverageEngine.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
