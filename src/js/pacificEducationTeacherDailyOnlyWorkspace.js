@@ -209,7 +209,10 @@
   function cleanTeacherStepTwo(){
     var host=document.getElementById(hostId);
     var shell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
-    if(!host||!shell)return;
+    var grid=document.getElementById("paceduTeacherSubjectGrid");
+    if(!host||!shell||!grid)return;
+    /* Only remove explicitly identified extra panels. Never remove an ancestor
+       section based on its text: it may contain the subject grid itself. */
     [
       "paceduAssessmentBlueprintPanel","paceduFijiWeeklyCurriculumPanel",
       "paceduFijiWeeklyCurriculumPreview","paceduWorldLibraryToggle",
@@ -219,17 +222,13 @@
       "paceduLinkedPlanContent","paceduLinkedPlanPreview",
       "paceduLinkedPlanPrintableText","paceduLinkedDailyActivityColumn",
       "paceduLinkedWorkplanColumn"
-    ].forEach(function(id){var el=document.getElementById(id);if(el&&host.contains(el))el.remove();});
-    host.querySelectorAll("h2,h3,h4,p,button,a,label").forEach(function(el){
-      if(el.closest("#paceduTeacherSubjectGrid"))return;
-      var t=(el.textContent||"").trim();
-      if(/Teacher Assessment & Revision Planner|Create a differentiated practice set|Teacher Daily Planning & Review|Open World Library|Download class activities and assessment pack|Separate Daily Student Activities|Weekly Classwork Activity Book|Differentiated worksheet draft|Open matching worksheet draft|Your response \/ work note|I have completed this role task|Save Activity on This Device/i.test(t)){
-        var block=el.closest("section,article,fieldset")||el;
-        if(block!==shell&&block!==grid&&host.contains(block))block.remove();
-      }
+    ].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&host.contains(el)&&!el.contains(grid)&&!el.contains(shell))el.remove();
     });
-    /* Remove role-activity and extra resource panels by their stable IDs/classes. */
-    host.querySelectorAll('[id*="paceduRoleActivity"],[id*="paceduAssessment"],[id*="paceduFijiWeekly"],[id*="paceduWorldLibrary"],[id*="paceduSeparateDaily"],[id*="paceduDailyResource"]').forEach(function(el){el.remove();});
+    host.querySelectorAll('[id*="paceduRoleActivity"],[id*="paceduAssessment"],[id*="paceduFijiWeekly"],[id*="paceduWorldLibrary"],[id*="paceduSeparateDaily"],[id*="paceduDailyResource"]').forEach(function(el){
+      if(el!==grid&&el!==shell&&!el.contains(grid)&&!el.contains(shell))el.remove();
+    });
   }
   function observeCleanTeacherStepTwo(){
     cleanTeacherStepTwo();
