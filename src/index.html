@@ -684,6 +684,17 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       visionNext.removeAttribute("aria-disabled");
       visionNext.style.pointerEvents = "auto";
       visionNext.style.touchAction = "manipulation";
+      visionNext.style.position = "relative";
+      visionNext.style.zIndex = "100";
+      if (window.MutationObserver && visionNext.getAttribute("data-pe-next-unlock-observer") !== "true") {
+        visionNext.setAttribute("data-pe-next-unlock-observer", "true");
+        new MutationObserver(function() {
+          if (visionNext.disabled || visionNext.hasAttribute("aria-disabled")) {
+            visionNext.disabled = false;
+            visionNext.removeAttribute("aria-disabled");
+          }
+        }).observe(visionNext, { attributes: true, attributeFilter: ["disabled", "aria-disabled"] });
+      }
     }
     if (welcomeNext && welcomeNext.getAttribute("data-pe-early-next-bound") !== "true") {
       welcomeNext.setAttribute("data-pe-early-next-bound", "true");
