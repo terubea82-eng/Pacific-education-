@@ -41,6 +41,37 @@ function save(title,options,body,kind){
  a.href=url;a.download=["PacEdu",options.level,options.subject,options.term,"Week-"+options.week,"Day-"+options.day,kind,stamp()].join("_").replace(/[^A-Za-z0-9_.-]+/g,"-")+".html";
  a.style.display="none";document.body.appendChild(a);a.click();a.remove();global.setTimeout(function(){global.URL.revokeObjectURL(url);},1500);
 }
+function weeklyBookDownload(options,group){
+ var resolver=global.PacEduDownloadableClassPacks;
+ var resolved=resolver&&resolver.resolveSubject?resolver.resolveSubject(options.subject,options.level):null;
+ if(!resolved||!resolved.available)throw new Error(resolved&&resolved.note||"This subject does not yet have its own practice bank. No other subject will be substituted.");
+ var api=global.PacEduDailyWorksheetContent;
+ if(!api||typeof api.getCurriculumWorksheet!=="function")throw new Error("Daily classwork content is not ready.");
+ var pages=[];
+ for(var d=1;d<=5;d++){
+  var sheet=api.getCurriculumWorksheet({level:options.level,subject:resolved.sourceSubject,term:options.term,week:options.week,day:d,ability:group.id,skipTermPlan:true});
+  if(!sheet||sheet.status==="NOT_FOUND")throw new Error("A complete five-day activity book is not available for Day "+d+".");
+  var lesson=sheet.dailyLesson||{},activities=sheet.abilityActivities||{},daily=activities.daily||{},questions=sheet.questions||[];
+  var objective=lesson.classLevelObjective||lesson.learnerAction||sheet.topic||"Teacher-approved objective required";
+  var criteria=lesson.successCriteria||[];
+  var success=typeof daily.successCheck==="string"?daily.successCheck:(Array.isArray(criteria)?criteria.join("; "):"Explain, demonstrate, point, draw or write what you learned.");
+  var page="<section class=\"day\"><h2>Day "+d+" — "+esc(sheet.title||sheet.topic||"Daily classwork")+"</h2>"+
+   "<h3>Learning objective</h3><p>"+esc(objective)+"</p>"+
+   "<h3>Learning focus</h3><p>"+esc(lesson.learningConcept||lesson.concept||sheet.topic||"Teacher to confirm")+"</p>"+
+   "<h3>Learn and practise</h3><p>"+esc(lesson.exampleText||lesson.workedExample||sheet.readingText||"Teacher models a suitable example.")+"</p>"+
+   "<p>"+esc(daily.subjectTask||lesson.learnerAction||sheet.instructions||"Complete the classwork activity.")+"</p><ol>"+(daily.steps||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ol>"+
+   "<h3>Classwork</h3><ol>"+questions.map(function(q){return "<li>"+esc(q.prompt||q.question||q.text||"Complete the task.")+(q.options&&q.options.length?"<ul>"+q.options.map(function(v,i){return "<li>"+String.fromCharCode(65+i)+". "+esc(v)+"</li>";}).join("")+"</ul>":"")+"<p>Answer: __________________________________________________</p></li>";}).join("")+"</ol>"+
+   "<h3>Show what you learned</h3><p>"+esc(success)+"</p><p>Teacher feedback: ______________________________________________</p></section>";
+  pages.push(page);
+ }
+ var title="PacEdu "+options.level+" "+options.subject+" — "+group.name+" Classwork Activity Book";
+ var meta="<p><strong>Country:</strong> Fiji · <strong>Class:</strong> "+esc(options.level)+" · <strong>Subject:</strong> "+esc(options.subject)+"</p><p><strong>Term:</strong> "+esc(options.term)+" · <strong>Week:</strong> "+esc(options.week)+" · <strong>Ability pathway:</strong> "+esc(group.name)+" ("+esc(group.label)+")</p><p><strong>Book:</strong> Five daily classwork activities · Student copy</p>";
+ var html="<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>"+esc(title)+"</title><style>body{font:16px/1.55 Arial,sans-serif;max-width:850px;margin:auto;padding:20px;color:#17212b}.meta{background:#f2f5f7;padding:12px;border-radius:8px}.day{page-break-after:always;break-after:page;padding:10px 0}.day:last-of-type{page-break-after:auto}li{margin:9px 0}.status{border:1px solid #9a6b00;padding:10px;margin-top:18px}@media print{body{max-width:none;padding:10mm}}</style></head><body><h1>"+esc(title)+"</h1><div class=\"meta\">"+meta+"</div>"+pages.join("")+"<p class=\"status\"><strong>Curriculum status:</strong> PENDING_TEACHER_REVIEW. Original PacEdu classwork draft; verify the current Fiji syllabus outcome, achievement indicator, term placement and school adoption before formal alignment claims or student release.</p></body></html>";
+ var blob=new Blob([html],{type:"text/html;charset=utf-8"}),url=global.URL.createObjectURL(blob),a=node("a");
+ a.href=url;a.download=["PacEdu",options.level,options.subject,options.term,"Week-"+options.week,"Classwork-Activity-Book",group.name,stamp()].join("_").replace(/[^A-Za-z0-9_.-]+/g,"-")+".html";
+ a.style.display="none";document.body.appendChild(a);a.click();a.remove();global.setTimeout(function(){global.URL.revokeObjectURL(url);},1500);
+ return {days:pages.length,filename:a.download};
+}
 function learnerDownload(options,group,shared){
  var sheet=getSheet({level:options.level,subject:options.subject,sourceSubject:shared.resolved.sourceSubject,term:options.term,week:options.week,day:options.day,ability:group.id});
  if(!sheet||sheet.status==="NOT_FOUND")throw new Error("This ability group's daily activity is not available.");
@@ -81,11 +112,16 @@ function renderControls(container,context){
  var studentGrid=node("div");studentGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;";
  GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Activity");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o={level:level.value,subject:subject.value,term:term.value,week:Number(weeks.value),day:Number(day.value)};learnerDownload(o,g,commonData(o));status.textContent=g.name+" student activity download started.";}catch(e){status.textContent="Student file not prepared: "+String(e.message||e);}});studentGrid.appendChild(b);});
  box.appendChild(studentGrid);
+ box.appendChild(node("h5","Weekly Classwork Activity Book — five daily pages"));
+ box.appendChild(node("p","Download a separate five-day classwork book for the selected ability group. Each day has its own learning focus, example, classwork questions and answer space."));
+ var bookGrid=node("div");bookGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;";
+ GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Classwork Book");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var result=weeklyBookDownload({level:level.value,subject:subject.value,term:term.value,week:Number(weeks.value)},g);status.textContent=g.name+" five-day classwork activity book download started ("+result.days+" daily pages).";}catch(e){status.textContent="Classwork book not prepared: "+String(e.message||e);}});bookGrid.appendChild(b);});
+ box.appendChild(bookGrid);
  box.appendChild(node("h5","Teacher files — download separately"));
  var teacherGrid=node("div");teacherGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;";
  var status=node("p","Curriculum mapping remains pending teacher review. No official Fiji curriculum alignment is claimed.");status.setAttribute("role","status");status.setAttribute("aria-live","polite");
  TEACHER_FILES.forEach(function(f){var b=node("button","Download "+f.label);b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o={level:level.value,subject:subject.value,term:term.value,week:Number(weeks.value),day:Number(day.value)};teacherDownload(o,f,commonData(o));status.textContent=f.label+" download started.";}catch(e){status.textContent="Teacher file not prepared: "+String(e.message||e);}});teacherGrid.appendChild(b);});
  box.appendChild(teacherGrid);box.appendChild(status);container.appendChild(box);return true;
 }
-global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),renderControls:renderControls});
+global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),downloadWeeklyBook:weeklyBookDownload,renderControls:renderControls});
 })(window,document);
