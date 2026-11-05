@@ -131,6 +131,16 @@
         if(mapping&&mapping.status==="partial"&&mappingNotice){
           mappingNotice.textContent="PARTIAL CONTENT — teacher review required. "+mapping.note;
         }
+        /* Keep the selected class's daily learning inside its own subject box.
+           The shared learner activity keeps the selected subject/class context above. */
+        var dailySection=document.getElementById("dailyLesson");
+        if(dailySection&&selectedCard){
+          dailySection.hidden=false;
+          dailySection.setAttribute("aria-label",subject+" — "+item.level+" Daily Activities");
+          var dailyHeading=node("h3",subject+" — "+item.level+" Daily Activities");
+          selectedCard.appendChild(dailyHeading);
+          selectedCard.appendChild(dailySection);
+        }
         if(panel){
           panel.hidden=false;
           panel.removeAttribute("aria-hidden");
