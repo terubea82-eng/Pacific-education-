@@ -21,6 +21,18 @@
     .video-ad-panel .muted{font-size:.94rem}
     button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
     .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
+    .pacedu-live-screen{margin:16px auto;padding:16px;background:#092f40;color:#fff;border-radius:14px;overflow:hidden}
+    .pacedu-live-screen h2{margin:0 0 6px}.pacedu-live-screen p{margin:4px 0}
+    .pacedu-ad-track{display:flex;gap:14px;overflow-x:auto;padding:12px 2px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+    .pacedu-ad-slide{flex:0 0 min(78vw,300px);min-height:150px;border-radius:12px;padding:14px;background:linear-gradient(135deg,#e4f6ff,#d9f1e3);color:#17313a;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:space-between}
+    .pacedu-ad-slide strong{font-size:1.1rem}.pacedu-ad-slide small{color:#405c65}
+    .pacedu-live-screen .screen-note{font-size:.9rem;color:#e4f4f8}
+    .package-panel{border:2px solid #0b5d7a;background:#f1f8fb;border-radius:12px;padding:14px;margin:14px 0}
+    .package-panel .payment-state{font-weight:700;color:#8a4b00}
+    #paceduLiveVideo{display:none;width:100%;max-height:250px;object-fit:contain;background:#071d26;border-radius:8px}
+    @keyframes paceduSlideHint{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}
+    .pacedu-slide-hint{animation:paceduSlideHint 2.8s ease-in-out infinite}
+
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
   </style>
 </head>
@@ -38,6 +50,19 @@
     <a class="link-button" href="./index.html?entry=welcome">Next: Welcome →</a>
   </div>
 </nav>
+<section class="pacedu-live-screen" aria-labelledby="paceduLiveHeading">
+  <h2 id="paceduLiveHeading">PacEdu Global Product Advertising Screen</h2>
+  <p>Business adverts are displayed in a horizontal moving gallery after registration, payment confirmation and PacEdu approval.</p>
+  <div class="ad-track" id="paceduAdTrack" aria-label="Side-moving product advert preview" style="display:flex;gap:14px;overflow-x:auto;padding:12px 2px;scroll-snap-type:x mandatory">
+    <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Your product advert appears here</strong><small>Register your business and submit a product video to start review.</small><a class="link-button" href="#advertiseHeading">Business registration →</a></article>
+    <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Clear product display</strong><small>Approved product video, original language and English interpretation.</small><span>PacEdu reviewed advert</span></article>
+    <article class="pacedu-ad-slide" style="flex:0 0 min(78vw,300px);scroll-snap-align:start"><strong>Global business reach</strong><small>Choose the country and advertising package that fits your business.</small><a href="#packagePayment">View advertising packages →</a></article>
+  </div>
+  <video id="paceduLiveVideo" controls playsinline></video>
+  <p class="screen-note">Preview only: this pilot screen does not yet publish adverts to other visitors or stream live broadcasts. Only fictional AI-generated people may be used in PacEdu promotional imagery.</p>
+  <p class="pacedu-slide-hint">Swipe sideways to view each advert panel →</p>
+  <a class="link-button" href="#advertiseHeading">Register your business</a>
+</section>
 <main>
   <section aria-labelledby="directoryHeading">
     <h2 id="directoryHeading">Explore the directory</h2>
@@ -74,6 +99,18 @@
     <p>Send a listing draft for review. Include a working website, product page or checkout/payment link if you have one.</p>
     <div class="notice"><strong>Pilot protection:</strong> This form saves a draft on this device only. It does not publish an advert, send your details to PacEdu, collect money or verify a payment link. Do not enter bank passwords, card details or sensitive personal information.</div>
     <form id="paceduBusinessAdvertForm">
+
+      <div class="package-panel" id="packagePayment" aria-labelledby="packagePaymentHeading">
+        <h3 id="packagePaymentHeading">Choose an advertising package for PacEdu</h3>
+        <p>Select a proposed package and billing period. The amount is shown in US dollars.</p>
+        <label for="paceduAdPackage">Advertising package *</label>
+        <select id="paceduAdPackage" name="paceduAdPackage"><option value="starter">Starter — US$5/month or US$50/year</option><option value="growth">Growth — US$15/month or US$150/year</option><option value="professional">Professional — US$39/month or US$390/year</option><option value="enterprise">Enterprise — US$99/month or US$990/year</option></select>
+        <label for="paceduBillingPeriod">Billing period *</label>
+        <select id="paceduBillingPeriod" name="paceduBillingPeriod"><option value="monthly">Monthly</option><option value="annual">Annual (12 months)</option></select>
+        <p><strong>Selected PacEdu advertising fee:</strong> <output id="paceduSelectedFee">US$5.00 per month</output></p>
+        <p class="payment-state" id="paceduPaymentState" role="status" aria-live="polite">Payment is not connected yet. No payment will be taken.</p>
+        <p class="muted">After secure payment integration is activated, this selection will connect to PacEdu's own checkout. Advertiser product checkout links are separate and pay the business, not PacEdu. Never enter card or bank details into this form.</p>
+      </div>
       <label for="businessName">Business or seller name *</label><input id="businessName" name="businessName" required maxlength="100" autocomplete="organization">
       <label for="contactName">Contact person (optional)</label><input id="contactName" name="contactName" maxlength="100" autocomplete="name">
       <label for="businessCategory">Category *</label>
@@ -204,5 +241,16 @@ window.addEventListener("beforeunload",function(){if(currentUrl)URL.revokeObject
 })();
 </script>
 <script src="./js/paceduBusinessAdvertising.js?v=20261105-usd-fees"></script>
+
+<script>
+(function(){
+ var packageSelect=document.getElementById("paceduAdPackage"),period=document.getElementById("paceduBillingPeriod"),fee=document.getElementById("paceduSelectedFee");
+ var amounts={starter:{monthly:5,annual:50},growth:{monthly:15,annual:150},professional:{monthly:39,annual:390},enterprise:{monthly:99,annual:990}};
+ function updateFee(){if(!packageSelect||!period||!fee)return;var p=period.value;fee.textContent="US$"+amounts[packageSelect.value][p].toFixed(2)+" per "+(p==="annual"?"12 months":"month");}
+ if(packageSelect&&period){packageSelect.addEventListener("change",updateFee);period.addEventListener("change",updateFee);updateFee();}
+ var picker=document.getElementById("businessProductVideo"),screenVideo=document.getElementById("paceduLiveVideo");
+ if(picker&&screenVideo)picker.addEventListener("change",function(){var f=picker.files&&picker.files[0];if(!f)return;if(screenVideo.dataset.objectUrl)URL.revokeObjectURL(screenVideo.dataset.objectUrl);var u=URL.createObjectURL(f);screenVideo.dataset.objectUrl=u;screenVideo.src=u;screenVideo.style.display="block";screenVideo.load();});
+})();
+</script>
 </body>
 </html>
