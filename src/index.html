@@ -899,7 +899,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 <div class="pacedu-entry-grid">
 <section><h2>🌍 Country and telephone code</h2>
 <label for="paceduWelcomeCountry"><strong>Your country</strong></label>
-<select id="paceduWelcomeCountry" style="width:100%;padding:12px">
+<select id="paceduWelcomeCountry" style="width:100%;padding:12px" onchange="var p=this.value.split('|');document.getElementById('paceduWelcomeCountryCode').textContent=p[0]?p[0]+' country calling code: '+(p[1]||'check local code')+' — confirm again during registration.':'Country code will appear here.'">
 <option value="">Choose your country</option>
 <option value="Fiji|+679">Fiji (+679)</option><option value="Papua New Guinea|+675">Papua New Guinea (+675)</option><option value="Solomon Islands|+677">Solomon Islands (+677)</option><option value="Vanuatu|+678">Vanuatu (+678)</option><option value="Samoa|+685">Samoa (+685)</option><option value="Tonga|+676">Tonga (+676)</option><option value="Tuvalu|+688">Tuvalu (+688)</option><option value="Kiribati|+686">Kiribati (+686)</option><option value="Australia|+61">Australia (+61)</option><option value="New Zealand|+64">New Zealand (+64)</option><option value="France|+33">France (+33)</option><option value="United Kingdom|+44">United Kingdom (+44)</option><option value="United States|+1">United States (+1)</option><option value="India|+91">India (+91)</option><option value="Other|">Other country</option>
 </select><p id="paceduWelcomeCountryCode" role="status" aria-live="polite">Country code will appear here. Confirm your country during registration.</p>
