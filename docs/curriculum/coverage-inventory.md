@@ -116,9 +116,10 @@ A further official-source check found that the Fiji Government's **7 October 202
 
 ## 27 October 2026 — source discovery and implementation gate
 
-A further source search located the Ministry-hosted **Early Childhood Education Curriculum Framework (November 2024)** and the Ministry Annual Report for 2022–2023, which describes revised literacy/numeracy curriculum work and syllabus resources for Years 1–4. These sources help prioritize collection but do not supply a verified, complete English indicator map for every level.
+A source-quality recheck found that the PDF previously described here as a Fiji **Early Childhood Education Curriculum Framework (November 2024)** is actually a Bahrain framework: the PDF identifies the Kingdom of Bahrain and its education system. It is not a valid Fiji curriculum source and must not be used for PacEdu Fiji mapping. Fiji ECE mapping must use Fiji-authorised ECE materials, including *Na Noda Mataniciva*, and confirm any current revision/adoption directly with the Ministry.
 
-- [Early Childhood Education Curriculum Framework — November 2024](https://iga-infra-moe-website-file-ir.s3.eu-west-1.amazonaws.com/uploads/Early_Childhood_Education_Curriculum_Framework_en.pdf): ECE framework source located; verify issuing authority, current applicability, exact page-level outcomes, and whether it supersedes or supplements *Na Noda Mataniciva* before mapping.
+- [Fiji Ministry, Na Noda Mataniciva](https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf): Fiji ECE curriculum guidance and six Foundation Areas of Learning and Development; confirm current adoption/revision before mapping.
+- [Fiji Ministry, Years 3–4 Literacy Guide](https://www.education.gov.fj/wp-content/uploads/2022/06/Literacy_Guide_-for_years_34.pdf): official teaching guidance for literacy activities, reading assessment and lesson planning; use only for the relevant levels and confirm the current school-adopted syllabus.
 - [Ministry of Education Annual Report 2022–2023](https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf): reports revised literacy/numeracy curriculum work and Year 1–4 syllabus/guide resources; it is a report about curriculum work, not itself a substitute for the current English syllabus and achievement indicators.
 
 ### Implementation status
