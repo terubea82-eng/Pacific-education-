@@ -174,8 +174,9 @@ body.pacedu-registration-mode #pacificEducationIdentityRegistration{display:bloc
 body.pacedu-registration-mode #pacificEducationAccountRecovery{display:none!important}
 body.pacedu-registration-mode #guidedFlowEndWrapper{display:none!important}
 body.pacedu-registration-mode #pacificEducationAppMenu,body.pacedu-registration-mode #pe856AllPilotBoxesMenu,body.pacedu-entry-mode #pacificEducationAppMenu,body.pacedu-entry-mode #pe856AllPilotBoxesMenu{display:none!important}
-body.pacedu-registration-mode > #pacificEducationMailbox,body.pacedu-registration-mode > #pacificEducationAppMenu,body.pacedu-registration-mode > #pacificEducationAccessibilityControls,body.pacedu-registration-mode > #pilotBanner,body.pacedu-registration-mode > header,body.pacedu-registration-mode > #pacificEducationRefreshNotice{display:none!important}
-body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #pacificEducationAppMenu,body.pacedu-entry-mode > #pacificEducationAccessibilityControls,body.pacedu-entry-mode > #pilotBanner,body.pacedu-entry-mode > header,body.pacedu-entry-mode > #pacificEducationRefreshNotice{display:none!important}
+body.pacedu-registration-mode > #pacificEducationMailbox,body.pacedu-registration-mode > #pacificEducationAppMenu,body.pacedu-registration-mode > #pacificEducationAccessibilityControls,body.pacedu-registration-mode > #pilotBanner,body.pacedu-registration-mode > header{display:none!important}
+body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #pacificEducationAppMenu,body.pacedu-entry-mode > #pacificEducationAccessibilityControls,body.pacedu-entry-mode > #pilotBanner,body.pacedu-entry-mode > header{display:none!important}
+body.pacedu-entry-mode > #pacificEducationRefreshNotice,body.pacedu-registration-mode > #pacificEducationRefreshNotice{display:block!important;visibility:visible!important}
 .pacedu-entry-card{max-width:980px;margin:0 auto;padding:20px;border:2px solid #174f63;border-radius:18px;background:#fff;box-shadow:0 8px 28px rgba(0,0,0,.08)}
 .pacedu-entry-illustration{margin:-4px -4px 18px;overflow:hidden;border-radius:14px}
 .pacedu-entry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -530,49 +531,96 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 @media(prefers-reduced-motion:reduce){#pacificEducationRegistrationBox.pacedu-user-registration-box.pacific-breathing-focus,#pacificEducationRegistrationBox.pacedu-user-registration-box[data-pe-breathing-active="true"]{animation:none;box-shadow:0 0 0 2px rgba(37,99,235,.16)}}
 </style>
 <script id="pacedu-head-first-page-emergency-recovery">
-/* Independent first-page failsafe: if navigation initialization fails, do not leave
-   the app hidden behind the first-paint isolation lock. */
+/* Early entry bootstrap: reveal Welcome as soon as its markup exists, without
+   waiting for the many legacy scripts at the end of the page. Also keep the
+   visible Refresh control and the first two Next actions independently usable. */
 (function(window, document) {
   "use strict";
-  function recoverFirstPageIfUninitialized() {
-    var root = document.documentElement;
-    var body = document.body;
-    if (!root || !body || root.getAttribute("data-pacedu-navigation-ready") === "true") return;
-    var params;
+  var started = false;
+  function isDirectRegistration() {
     try {
-      params = new URLSearchParams(window.location.search);
-      if (params.get("entry") === "registration" &&
-          window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes") return;
-    } catch (e) {}
-    var welcome = document.getElementById("pacificEducationWelcome");
-    if (!welcome) return;
-    root.setAttribute("data-pacedu-navigation-ready", "true");
-    root.removeAttribute("data-pacedu-registration-entry");
+      return new URLSearchParams(window.location.search).get("entry") === "registration" &&
+        window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes";
+    } catch (e) { return false; }
+  }
+  function showPage(id, pageNumber) {
+    var body = document.body, root = document.documentElement;
+    if (!body || !root) return false;
+    var target = document.getElementById(id);
+    if (!target) return false;
     body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
     body.classList.add("pacedu-entry-mode");
-    body.setAttribute("data-pac-edu-entry-page", "1");
+    body.setAttribute("data-pac-edu-entry-page", String(pageNumber));
     body.setAttribute("data-pe-navigation-owner", "single");
+    body.setAttribute("data-pe-single-navigation-started", "true");
     body.removeAttribute("data-pe-flow-step");
     body.removeAttribute("data-pe-active-guided-page");
+    root.setAttribute("data-pacedu-navigation-ready", "true");
+    root.removeAttribute("data-pacedu-registration-entry");
+    var welcome = document.getElementById("pacificEducationWelcome");
     var pilot = document.getElementById("pacificEducationPilotPages");
+    [welcome, document.getElementById("paceduPageVision"), document.getElementById("paceduPageRules")].forEach(function(node) {
+      if (!node) return;
+      var active = node === target;
+      node.hidden = !active;
+      if (active) node.removeAttribute("aria-hidden"); else node.setAttribute("aria-hidden", "true");
+      node.style.setProperty("display", active ? "block" : "none", "important");
+      if (active) node.style.setProperty("visibility", "visible", "important");
+    });
     if (pilot) {
-      pilot.hidden = true;
-      pilot.setAttribute("aria-hidden", "true");
-      pilot.style.setProperty("display", "none", "important");
+      pilot.hidden = pageNumber === 1;
+      pilot.style.setProperty("display", pageNumber === 1 ? "none" : "block", "important");
     }
-    welcome.hidden = false;
-    welcome.removeAttribute("aria-hidden");
-    welcome.style.setProperty("display", "block", "important");
-    welcome.style.setProperty("visibility", "visible", "important");
-    body.setAttribute("data-pe-initial-entry-fallback", "head-emergency-welcome-restored");
+    body.setAttribute("data-pe-initial-entry-fallback", "early-head-entry-bootstrap");
+    return true;
   }
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function() {
-      window.setTimeout(recoverFirstPageIfUninitialized, 1800);
-    }, { once: true });
-  } else {
-    window.setTimeout(recoverFirstPageIfUninitialized, 1800);
+  function bindRefresh() {
+    var button = document.getElementById("pacificEducationRefreshButton");
+    if (!button || button.getAttribute("data-pe-refresh-bound") === "true") return;
+    button.setAttribute("data-pe-refresh-bound", "true");
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.location.reload();
+    }, true);
   }
+  function bindEarlyNext() {
+    var welcomeNext = document.getElementById("welcomeNextButton");
+    if (welcomeNext && welcomeNext.getAttribute("data-pe-early-next-bound") !== "true") {
+      welcomeNext.setAttribute("data-pe-early-next-bound", "true");
+      welcomeNext.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        var nav = window.PacificEducationSingleNavigation;
+        if (nav && typeof nav.gateway === "function") nav.gateway(2);
+        else showPage("paceduPageVision", 2);
+      }, true);
+    }
+    var visionNext = document.getElementById("paceduVisionNext");
+    if (visionNext && visionNext.getAttribute("data-pe-early-next-bound") !== "true") {
+      visionNext.setAttribute("data-pe-early-next-bound", "true");
+      visionNext.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        var nav = window.PacificEducationSingleNavigation;
+        if (nav && typeof nav.gateway === "function") nav.gateway(3);
+        else showPage("paceduPageRules", 3);
+      }, true);
+    }
+  }
+  function boot() {
+    if (isDirectRegistration()) return;
+    bindRefresh();
+    if (!started && document.getElementById("pacificEducationWelcome")) {
+      started = showPage("pacificEducationWelcome", 1);
+    }
+    bindEarlyNext();
+  }
+  boot();
+  if (window.MutationObserver && document.documentElement) {
+    var observer = new MutationObserver(boot);
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+  }
+  document.addEventListener("DOMContentLoaded", boot, { once: true });
 })(window, document);
 </script>
 </head>
