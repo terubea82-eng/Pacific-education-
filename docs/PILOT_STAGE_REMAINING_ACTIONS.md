@@ -5,7 +5,7 @@
 ## Verified in repository
 
 - GitHub Pages deployment completed successfully on `main`.
-- Stage 15 QA Regression completed successfully on the latest `main` commit.
+- The latest full application regression evidence remains the successful run on commit `701095948743f0e7539c77dbd8d59d0aed864b69`; the latest `main` commit is documentation-only and did not change application code.
 - The Firebase web integration is intentionally inactive during the controlled pilot.
 - Prototype access remains synthetic and is not production authentication.
 - The production authorization boundary remains blocked until required evidence is supplied.
@@ -51,7 +51,22 @@ This document is an evidence checklist only. It does not authorize production. N
 
 ## Current automated evidence
 
-Latest checked `main` commit: `b0b564adeff241c98c36586ffbc81deecae064fa`.
+Latest checked `main` commit: `6755dd5068291940ad9271c41c02ff183b4e7a1a`.
+
+The following ten GitHub Actions runs completed successfully against that commit on 5 November 2026:
+
+- Pilot Preflight — run 41950150534.
+- Feature Preservation Gate — run 41950150514.
+- Pacific Guardian Main Control — run 41950150473.
+- Pilot Recheck — run 41950150424.
+- Pilot User Readiness Gate — run 41950150419.
+- Pilot Pages deployment — run 41950150412.
+- Prototype Validation — run 41950150408.
+- CodeQL Security Scan — run 41950150403.
+- Protected Voice Lock — run 41950150399.
+- GitHub Pages build and deployment — run 41950149928.
+
+These are automated workflow results only; they do not establish real-user, Android-device, accessibility, curriculum, privacy, safeguarding, or production readiness.
 
 ## 5 November 2026 repository review update
 
@@ -59,7 +74,8 @@ Latest checked `main` commit: `b0b564adeff241c98c36586ffbc81deecae064fa`.
 - GitHub Pages deployment run 41910452492 completed successfully for the refreshed feed.
 - Education source monitor run 41936337199 completed successfully and opened review issue #334: six of nine configured sources were checked successfully, three pages changed, and three sources returned fetch/validation errors. These are review leads, not confirmed curriculum changes.
 - Curriculum framework activation run 41940334240 passed its checks and reported no curriculum release records; the active Fiji 2013 framework baseline was not changed.
-- The latest full application regression, CodeQL and cross-device checks completed successfully on commit `701095948743f0e7539c77dbd8d59d0aed864b69`. The later `b0b564a` update changes the current-affairs data file; it does not represent a new full application regression run.
-- Production authorization remains blocked and fail-closed. No curriculum, teacher approval, pilot-user, Android-device, privacy, safeguarding, accessibility, payment or Owner-authorization evidence is inferred from these automated runs.
+- Latest full application regression, CodeQL and cross-device evidence previously completed successfully on commit `701095948743f0e7539c77dbd8d59d0aed864b69`. The subsequent `b0b564a` and `6755dd5` updates did not constitute a new full application regression; `6755dd5` changed this evidence document only.
+- Pull request #331, “Add four independent subject worksheet banks,” remains open and unmerged. It requires review before any integration claim.
+- Production authorization remains blocked and fail-closed. No curriculum, teacher approval, pilot-user, Android-device, privacy, safeguarding, accessibility, payment or Owner-authorization evidence is inferred from automated runs.
 
-Latest observed automated checks include successful GitHub Pages deployment and successful Stage 15 QA Regression. These automated results do not replace the human, specialist, curriculum, safeguarding, privacy, accessibility, payment, or independent-review evidence listed above.
+These automated results do not replace the human, specialist, curriculum, safeguarding, privacy, accessibility, payment, or independent-review evidence listed above.
