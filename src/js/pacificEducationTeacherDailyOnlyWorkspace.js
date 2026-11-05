@@ -177,19 +177,15 @@
     var heading=node("h2","Student Daily Activities & Workplans");
     heading.style.cssText="margin-top:0;";
     shell.appendChild(heading);
-    var intro=node("p","Choose a subject, then a class, to open the matching student daily activity, teacher workplan and lesson plan. Review before teaching; print or download the matching plan when ready.");
-    intro.setAttribute("role","note");
-    shell.appendChild(intro);
-    shell.appendChild(node("h3","1. Choose a Subject"));
+    shell.appendChild(node("h2","Subject Boxes"));
     shell.appendChild(grid);
     host.textContent="";
     host.appendChild(shell);
-    if(planPanel){
-      planPanel.hidden=true;
-      planPanel.setAttribute("aria-hidden","true");
-      planPanel.style.removeProperty("display");
-      shell.appendChild(planPanel);
-    }
+    /* Keep the area below the subject boxes clear. Class choices and matching
+       resources are inserted inside the selected subject card by selectSubject().
+       The linked-plan panel remains hidden here rather than appearing below. */
+    if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
+    list.textContent="";
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
   else init();
