@@ -186,10 +186,10 @@
     shell.id="paceduTeacherDailyLearningOnlyShell";
     shell.setAttribute("aria-label","Student daily activities and matching workplans");
     shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
-    var heading=node("h2","Student Daily Activities & Workplans");
+    var heading=node("h2","My Teaching Workspace — Daily Activities & Workplans");
     heading.style.cssText="margin-top:0;";
     shell.appendChild(heading);
-    shell.appendChild(node("h2","Subject Boxes"));
+    shell.appendChild(node("h2","My Teaching Subject Boxes"));
     shell.appendChild(grid);
     host.textContent="";
     host.appendChild(shell);
