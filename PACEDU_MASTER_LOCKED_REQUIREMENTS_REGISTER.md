@@ -180,3 +180,10 @@ Where a detailed specification already exists, use it rather than creating dupli
 
 **Next approved action:** read-only verification of Firebase Authentication, Firestore, rules, App Check, deployed Functions/Hosting/endpoints, and existing monitoring. After evidence is recorded, propose the smallest safe next change. No production activation or APK build is authorized by this plan.
 
+## H. Education subject-area access boundary
+
+- **EDU-ACCESS-001 — Restricted subject boxes:** only authenticated Students (including Blind/Deaf Learner student pathways), Teachers and approved Education Officers/Ministry accounts may access English, Mathematics, Phonics and other education subject boxes. Parents/Caregivers, businesses, NGOs, community/partners, reviewers, technicians and all other roles are denied unless the Owner approves a documented policy change.
+- **EDU-ACCESS-002 — Least-privilege workspaces:** Students see only their assigned learning and own progress; Teachers see only their authorized classes, subject activities, lesson plans, worksheets, teaching aids, marking and learner records; Education Officers see authorized curriculum/subject/coverage material and do not automatically inherit a teacher's private professional workspace or unrestricted student records.
+- **EDU-ACCESS-003 — Class-linked resources:** each subject box must connect the selected class/level to the matching daily activities, lesson/workplan, worksheet, marking guidance and approved teacher resources. Subject, class, term, week, day and learning objective must match. Missing or unverified material must be clearly flagged and must never be replaced with another subject's content.
+- **EDU-ACCESS-004 — Server enforcement:** client-side role visibility is not security. Every production data read/write and downloadable protected resource must verify authenticated identity, approved role, school/class membership, country boundary and resource ownership on the server/Firebase rules. Default deny; test every disallowed role and cross-class access before production.
+
