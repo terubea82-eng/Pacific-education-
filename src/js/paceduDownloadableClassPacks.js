@@ -22,9 +22,19 @@ var SUBJECT_SOURCE=Object.freeze({
 function resolveSubject(subject,level){
  var source=SUBJECT_SOURCE[subject]||"";
  var note=source?"Subject-specific pilot worksheet content is available as a draft; verify the exact Fiji syllabus outcome before teaching.":"No separate worksheet bank is available for this subject yet. Do not substitute another subject's worksheet.";
- if(subject==="Science" && /^Form [5-7]$/.test(String(level||""))){
-   source="";
-   note="Form 5–7 require the selected Biology, Chemistry or other approved science syllabus. The generic Science worksheet bank is not a valid substitute.";
+ if(subject==="Science"){
+   if(/^Class [1-6]$/.test(String(level||""))){
+     note="Elementary Science practice draft. Confirm the exact current school syllabus and achievement indicator before teaching.";
+   }else if(level==="Class 7" || /^Form [3-4]$/.test(String(level||""))){
+     note="Basic Science practice draft. Confirm the exact current school syllabus and achievement indicator before teaching.";
+   }else{
+     source="";
+     note=level==="Class 8"
+       ?"Class 8 Science course naming and syllabus mapping require school/Ministry confirmation. Do not substitute a generic Science worksheet."
+       :/^Form [5-7]$/.test(String(level||""))
+         ?"Select the senior science course actually offered (for example Biology or Chemistry where prescribed). The generic Science worksheet bank is not a valid substitute."
+         :"ECE requires play-based discovery and observation activities, not this generic written Science worksheet bank.";
+   }
  }
  return {subject:subject,sourceSubject:source,available:!!source,note:note};
 }
