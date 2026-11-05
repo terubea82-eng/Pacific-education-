@@ -22,7 +22,7 @@
     var grid=document.getElementById("paceduTeacherSubjectGrid");
     var list=document.getElementById("paceduTeacherClassList");
     if(!grid||!list)return;
-    grid.querySelectorAll("button").forEach(function(b){
+    grid.querySelectorAll("[data-pacedu-teacher-subject]").forEach(function(b){
       var active=b.getAttribute("data-pacedu-teacher-subject")===subject;
       b.setAttribute("aria-pressed",active?"true":"false");
       b.style.background=active?"#d8efff":"#f7fcff";
@@ -139,9 +139,15 @@
     grid.setAttribute("data-ready","true");
     grid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:14px 0;";
     SUBJECTS.forEach(function(subject){
+      var card=node("section");
+      card.className="pacedu-teacher-subject-card";
+      card.style.cssText="min-width:0;padding:10px;border:1px solid #c8d7e2;border-radius:11px;background:#fff;box-sizing:border-box;";
       var b=makeButton(subject,"subject",subject);
+      b.style.width="100%";
+      b.setAttribute("aria-expanded","false");
       b.addEventListener("click",function(){selectSubject(subject);});
-      grid.appendChild(b);
+      card.appendChild(b);
+      grid.appendChild(card);
     });
     list.style.cssText="margin:12px 0;";
     var planSubject=document.getElementById("paceduLinkedPlanSubject");
@@ -150,9 +156,6 @@
     if(planLevel&&planLevel.parentElement)planLevel.parentElement.style.display="none";
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
     if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
-    var hint=node("p","Choose a subject, then a class. The selected class opens its student activities, teacher lesson plans, four ability worksheets, revision and practice exams together. All generated content requires teacher review.");
-    hint.setAttribute("role","note");
-    grid.parentNode.insertBefore(hint,grid.nextSibling);
     renderDailyLearningOnly(host,grid,list,planPanel);
   }
   /* Keep the teacher step focused on learner activities and their matching
@@ -175,8 +178,6 @@
     shell.appendChild(intro);
     shell.appendChild(node("h3","1. Choose a Subject"));
     shell.appendChild(grid);
-    shell.appendChild(node("h3","2. Choose a Class"));
-    shell.appendChild(list);
     host.textContent="";
     host.appendChild(shell);
     if(planPanel){
