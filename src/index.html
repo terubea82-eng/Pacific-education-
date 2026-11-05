@@ -430,7 +430,49 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
 }
 
 </style>
-<script>(function(){function register(){if("serviceWorker"in navigator)navigator.serviceWorker.register("../service-worker.js").catch(function(){});}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register);else register();})();</script><style id="pacedu-clean-role-aware-screens">
+<script id="pacedu-automatic-refresh-manager">
+(function(){
+  "use strict";
+  var registration=null;
+  var hadController=!!(navigator.serviceWorker&&navigator.serviceWorker.controller);
+  var reloadPending=false;
+  function refreshWhenNewVersionControlsPage(){
+    if(reloadPending||!hadController)return;
+    reloadPending=true;
+    try{
+      var key="pacedu-auto-refresh-controller-change";
+      if(sessionStorage.getItem(key)==="yes")return;
+      sessionStorage.setItem(key,"yes");
+    }catch(e){}
+    window.location.reload();
+  }
+  function checkForUpdate(){
+    if(!registration||!navigator.onLine)return;
+    try{registration.update().catch(function(){});}catch(e){}
+  }
+  function register(){
+    if(!("serviceWorker"in navigator))return;
+    navigator.serviceWorker.register("../service-worker.js",{updateViaCache:"none"}).then(function(reg){
+      registration=reg;
+      checkForUpdate();
+      window.setInterval(checkForUpdate,60000);
+      document.addEventListener("visibilitychange",function(){
+        if(document.visibilityState==="visible")checkForUpdate();
+      });
+      window.addEventListener("online",checkForUpdate);
+      if(reg.waiting&&navigator.serviceWorker.controller){
+        try{reg.waiting.postMessage({type:"PACEDU_ACTIVATE_UPDATE"});}catch(e){}
+      }
+    }).catch(function(){});
+    navigator.serviceWorker.addEventListener("controllerchange",function(){
+      if(!hadController){hadController=true;return;}
+      refreshWhenNewVersionControlsPage();
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register,{once:true});
+  else register();
+})();
+</script><style id="pacedu-clean-role-aware-screens">
 /* Pacedu clean guided screens — role workspaces reveal only their active target. */
 /* Keep pilot/governance/technical surfaces out of the ordinary user flow by default. */
 #systemStatus,
