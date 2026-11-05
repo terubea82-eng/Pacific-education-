@@ -5,6 +5,18 @@
 
 This document brings together the user's agreed PacEdu requirements across business advertising, entry journey, registration, workspaces, teaching and learning, accessibility, curriculum, safeguarding, technical architecture and pilot planning. It is the central product reference for future development. It does not certify that every listed feature is implemented.
 
+## 0. Five-page public entry and workspace journey
+
+The intended user-facing entry journey is five connected pages. Existing guided learning steps (class, subject, term, capability, daily activity, practice, assessment and coverage) remain substeps inside Page 5; do not replace the existing single-navigation controller with a second router.
+
+1. **Page 1 — Business advertising:** separate business registration, product/video preview, advertising package information in US dollars, catalogue links shown only after approval, and clear payment/approval status. The current video is a device-local preview; it is not a live public broadcast. Business drafts/payment are not backend-connected.
+2. **Page 2 — Welcome, country and language:** PacEdu introduction, country/calling-code selection, preferred language, accessible welcome voice, and a clear route to the next page. Translation must not be claimed as active unless a verified translation service is connected.
+3. **Page 3 — Workspaces and rules:** explain Student, Teacher, Education Officer and Parent/Family workspaces; display the role access boundary; require acceptance of rules before registration. Parent/Family access is progress/support only, not subject-box access.
+4. **Page 4 — One education-user registration:** one registration box for education user roles, country and language; business advertisers remain on Page 1. The current pilot profile is a prototype/local record, not secure production account creation.
+5. **Page 5 — Education workspaces and learning:** student learning, teacher personal professional workspace and approved Education Officer curriculum workspace. Subject/class/term/daily activity, practice, assessment, coverage, teacher plans, worksheets and teacher resources stay linked to the same approved curriculum objective.
+
+The Page 5 education subject area is available only to authenticated Students (including Blind/Deaf learner pathways), Teachers and approved Education Officers/Ministry accounts. The UI role gate is not production security: Firebase/server-side authorization must enforce every read, write and protected download.
+
 ## 1. Product purpose and boundaries
 
 PacEdu is an owner-controlled education and opportunity platform for learners, teachers, families, schools, education communities and separately registered business advertisers. The education experience must remain education-first. Business advertising and commercial checkout must be separated from teaching, student records, marks and assessment.
