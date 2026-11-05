@@ -203,7 +203,50 @@
     }
     list.textContent="";
   }
+  /* STEP 2 clean view: keep the subject boxes and their class selector only.
+     Suppress the extra assessment, planning, library, role-task and resource
+     panels named in the pilot review. Other app pages and shared modules remain intact. */
+  function cleanTeacherStepTwo(){
+    var host=document.getElementById(hostId);
+    var shell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
+    if(!host||!shell)return;
+    [
+      "paceduAssessmentBlueprintPanel","paceduFijiWeeklyCurriculumPanel",
+      "paceduFijiWeeklyCurriculumPreview","paceduWorldLibraryToggle",
+      "paceduWorldLibraryPanel","paceduRoleActivityPack",
+      "paceduRoleActivityResponse","paceduRoleActivityDone",
+      "paceduRoleActivityStatus","paceduLinkedPlanStatus",
+      "paceduLinkedPlanContent","paceduLinkedPlanPreview",
+      "paceduLinkedPlanPrintableText","paceduLinkedDailyActivityColumn",
+      "paceduLinkedWorkplanColumn"
+    ].forEach(function(id){var el=document.getElementById(id);if(el&&host.contains(el))el.remove();});
+    host.querySelectorAll("h2,h3,h4,p,button,a,label").forEach(function(el){
+      if(el.closest("#paceduTeacherSubjectGrid"))return;
+      var t=(el.textContent||"").trim();
+      if(/Teacher Assessment & Revision Planner|Create a differentiated practice set|Teacher Daily Planning & Review|Open World Library|Download class activities and assessment pack|Separate Daily Student Activities|Weekly Classwork Activity Book|Differentiated worksheet draft|Open matching worksheet draft|Your response \/ work note|I have completed this role task|Save Activity on This Device/i.test(t)){
+        var block=el.closest("section,article,fieldset")||el;
+        if(block!==shell&&block!==grid&&host.contains(block))block.remove();
+      }
+    });
+    /* Remove role-activity and extra resource panels by their stable IDs/classes. */
+    host.querySelectorAll('[id*="paceduRoleActivity"],[id*="paceduAssessment"],[id*="paceduFijiWeekly"],[id*="paceduWorldLibrary"],[id*="paceduSeparateDaily"],[id*="paceduDailyResource"]').forEach(function(el){el.remove();});
+  }
+  function observeCleanTeacherStepTwo(){
+    cleanTeacherStepTwo();
+    if(window.MutationObserver&&document.body){
+      var cleaning=false;
+      var observer=new MutationObserver(function(){
+        if(cleaning)return;
+        cleaning=true;
+        cleanTeacherStepTwo();
+        cleaning=false;
+      });
+      observer.observe(document.getElementById(hostId)||document.body,{childList:true,subtree:true});
+    }
+  }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
   else init();
-  window.addEventListener("load",init);
+  window.addEventListener("load",function(){init();observeCleanTeacherStepTwo();});
+  if(document.readyState!=="loading")observeCleanTeacherStepTwo();
+  else document.addEventListener("DOMContentLoaded",observeCleanTeacherStepTwo);
 })(window,document);
