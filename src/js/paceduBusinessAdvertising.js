@@ -52,6 +52,8 @@
       languageRespectConfirmation: form.elements.namedItem("languageRespectConfirmation").checked,
       otherAdLanguages: String(data.get("otherAdLanguages") || "").trim(),
       description: String(data.get("description") || "").trim(),
+      englishInterpretation: String(data.get("englishInterpretation") || "").trim(),
+      translationMethod: String(data.get("translationMethod") || "").trim(),
       website: safeHttpUrl(String(data.get("website") || "").trim(), "Website link"),
       paymentLink: safeHttpUrl(String(data.get("paymentLink") || "").trim(), "Payment link"),
       email: String(data.get("email") || "").trim(),
@@ -64,7 +66,7 @@
     if (!form.reportValidity()) return;
     try {
       var draft = getValues();
-      if (!draft.businessName || !draft.category || !draft.location || !draft.targetCountry || !draft.requiredAdLanguages || !draft.languageRespectConfirmation || !draft.description) {
+      if (!draft.businessName || !draft.category || !draft.location || !draft.targetCountry || !draft.requiredAdLanguages || !draft.languageRespectConfirmation || !draft.description || !draft.englishInterpretation || !draft.translationMethod) {
         throw new Error("Complete all required fields before saving.");
       }
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(draft));
@@ -110,7 +112,7 @@
   try {
     var saved = JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "null");
     if (saved && saved.status === "PENDING_OWNER_REVIEW") {
-      ["businessName","contactName","category","location","targetCountry","otherTargetCountry","requiredAdLanguages","legalAdLanguages","languageRespectConfirmation","otherAdLanguages","description","website","paymentLink","email"].forEach(function (key) {
+      ["businessName","contactName","category","location","targetCountry","otherTargetCountry","requiredAdLanguages","legalAdLanguages","languageRespectConfirmation","otherAdLanguages","description","englishInterpretation","translationMethod","website","paymentLink","email"].forEach(function (key) {
         var field = form.elements.namedItem(key);
         if (field && typeof saved[key] === "string") field.value = saved[key];
         if (field && field.type === "checkbox") field.checked = saved[key] === true;
