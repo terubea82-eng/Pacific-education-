@@ -9,4 +9,5 @@ test("repository root opens the Tech Edu landing page and provides a direct PacE
   await expect(page).toHaveTitle(/Tech Edu/);
   await expect(page.getByRole("link", { name: /Get Started with Pacific Education/ })).toBeVisible();
   await expect(page.locator('a[href="./src/index.html"]').first()).toBeVisible();
+  await expect(page.getByRole("link", { name: /Pilot Privacy Policy/ })).toHaveAttribute("href", "./privacy-policy.html");
 });
