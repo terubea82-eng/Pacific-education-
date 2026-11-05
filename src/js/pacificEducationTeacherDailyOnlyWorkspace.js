@@ -31,6 +31,24 @@
     list.textContent="";
     var title=node("h3",subject+" — Choose a Class");
     list.appendChild(title);
+    /* Show the Class 1 English starter pack as soon as English is selected,
+       within the Step 2 subject-selection area, before class selection. */
+    if(subject==="English"){
+      var packCard=node("section");
+      packCard.id="paceduClass1EnglishWorksheetPackLink";
+      packCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
+      var packTitle=node("h4","Class 1 English — Daily Worksheet Pack (Days 1–5)");
+      var packStatus=node("p","TEACHER REVIEW REQUIRED — source-informed practice worksheets; official curriculum indicators and sequence are not yet verified.");
+      var packLink=node("a","Open Class 1 English worksheet pack");
+      packLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
+      packLink.target="_blank";
+      packLink.rel="noopener noreferrer";
+      packLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
+      packCard.appendChild(packTitle);
+      packCard.appendChild(packStatus);
+      packCard.appendChild(packLink);
+      list.appendChild(packCard);
+    }
     var classes=rosterClasses(),items=[];
     Object.keys(classes).forEach(function(id){
       var c=classes[id]||{};
@@ -86,27 +104,6 @@
           mappingNotice.textContent=mapping?mapping.note:"Subject mapping status is unavailable. Ask the curriculum reviewer before using generated content.";
         }
         var packResolver=window.PacEduDownloadableClassPacks&&typeof window.PacEduDownloadableClassPacks.resolveSubject==="function"?window.PacEduDownloadableClassPacks.resolveSubject(subject,item.level):null;
-        /* The source-informed Class 1 English starter pack is linked only in
-           the teacher workspace and remains pending teacher/curriculum review. */
-        if(subject==="English" && item.level==="Class 1"){
-          var packCard=document.getElementById("paceduClass1EnglishWorksheetPackLink");
-          if(!packCard){
-            packCard=node("section");
-            packCard.id="paceduClass1EnglishWorksheetPackLink";
-            packCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
-            var packTitle=node("h4","Class 1 English — Daily Worksheet Pack (Days 1–5)");
-            var packStatus=node("p","TEACHER REVIEW REQUIRED — source-informed practice worksheets; official curriculum indicators and sequence are not yet verified.");
-            var packLink=node("a","Open Class 1 English worksheet pack");
-            packLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
-            packLink.target="_blank";
-            packLink.rel="noopener noreferrer";
-            packLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
-            packCard.appendChild(packTitle);
-            packCard.appendChild(packStatus);
-            packCard.appendChild(packLink);
-          }
-          list.appendChild(packCard);
-        }
         var contentUnavailable=!!(mapping&&(mapping.status==="missing"||mapping.status==="level-gap"||mapping.contentStatus==="CONTENT_NOT_AVAILABLE"))||!!(packResolver&&!packResolver.available);
         if(contentUnavailable){
           if(panel){panel.hidden=true;panel.setAttribute("aria-hidden","true");}
