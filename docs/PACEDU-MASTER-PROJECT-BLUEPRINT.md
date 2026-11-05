@@ -94,6 +94,8 @@ Country/language lists must be reviewed for completeness and accuracy. Do not la
 
 ## 5. Page 3 — Workspaces
 
+Each role must have its own clearly separated workspace, with personal data and actions scoped to the signed-in and authorized account. The Teacher Workspace is a personal professional workspace: it contains the teacher profile, assigned classes, subject boxes, daily teaching, planning, worksheets, marking and learner progress. Teachers select a subject box and then a class; resources must match both. The Student Workspace contains the learner's own class, subjects, daily activities, worksheets, practice, assessment and progress. The Parent/Family Workspace contains only the approved learner information the parent is authorized to see. A visual screen or browser-side role selection is not a security boundary; account-specific data requires server-side authorization.
+
 Provide simple, distinct entry points:
 - **Student Workspace:** class, subjects, daily activities, worksheets, learning progress and assessments.
 - **Teacher Workspace:** assigned classes and subjects, daily teaching activities, lesson plans, teaching aids, worksheets, marking and performance records.
