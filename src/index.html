@@ -1599,7 +1599,11 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
      * Emergency DOM fallback mirrors gateway(1)'s state. Do not set
      * pe-guided-flow/data-pe-flow-step here: that is a separate navigation
      * mode and can conflict with the active-page isolation controller.
+     * Crucially, release the first-paint guard before restoring Welcome;
+     * otherwise the body remains hidden when the navigation controller failed.
      */
+    document.documentElement.setAttribute("data-pacedu-navigation-ready", "true");
+    document.documentElement.removeAttribute("data-pacedu-registration-entry");
     body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
     body.classList.add("pacedu-entry-mode");
     body.setAttribute("data-pac-edu-entry-page", "1");
