@@ -123,6 +123,9 @@ function renderControls(container,context){
  subject.addEventListener("change",refreshAvailability);level.addEventListener("change",refreshAvailability);refreshAvailability();
  button.addEventListener("click",function(){try{if(!resolveSubject(subject.value,level.value).available){refreshAvailability();return;}var p=download({level:level.value,subject:subject.value,term:term.value,ability:ability.value});status.textContent="Pack prepared "+p.preparedDate+": "+p.dailyActivities+" daily activities; "+p.missingSlots+" unavailable slots. Check the downloaded file. Official syllabus mapping and marking criteria still require teacher review.";}catch(e){status.textContent="Could not prepare the pack: "+String(e&&e.message||e);}});
  container.appendChild(panel);
+ if(global.PacEduSeparateDailyResourceDownloads&&typeof global.PacEduSeparateDailyResourceDownloads.renderControls==="function"){
+  global.PacEduSeparateDailyResourceDownloads.renderControls(panel,context||{});
+ }
  if(global.PacEduAbilityPackLinks&&typeof global.PacEduAbilityPackLinks.renderControls==="function"){
   global.PacEduAbilityPackLinks.renderControls(panel,{level:level,subject:subject});
  }
