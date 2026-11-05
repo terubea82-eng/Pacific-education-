@@ -1,7 +1,7 @@
 /* PACIFIC EDUCATION — PERFORMANCE/OFFLINE SERVICE WORKER */
 "use strict";
 
-const CACHE_NAME="pacific-education-shell-v26";
+const CACHE_NAME="pacific-education-shell-v27";
 const ENTRY="/Pacific-education-/src/index.html";
 const CACHE_STATUS_MESSAGE="PACIFIC_CACHE_STATUS";
 const NAVIGATION_TIMEOUT_MS=6000;
@@ -115,15 +115,27 @@ self.addEventListener("fetch",event=>{
         return fallbackResponse||new Response("Pacific Education is offline or the connection is taking too long.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
       });
     }
+    const forceFreshNavigation=url.searchParams.has("pacedu_refresh");
     event.respondWith(
-      fetchWithTimeout(request,NAVIGATION_TIMEOUT_MS).then(response=>{
-        if(!response.ok)return offlineNavigationResponse(response);
+      fetchWithTimeout(request,forceFreshNavigation?20000:NAVIGATION_TIMEOUT_MS).then(response=>{
+        if(!response.ok){
+          if(forceFreshNavigation)return response;
+          return offlineNavigationResponse(response);
+        }
         return injectRuntimeRepair(response).then(function(repaired){
           const copy=repaired.clone();
           caches.open(CACHE_NAME).then(cache=>cache.put(navigationCacheKey,copy)).catch(()=>{});
           return repaired;
         });
-      }).catch(()=>offlineNavigationResponse(null))
+      }).catch(function(){
+        if(forceFreshNavigation){
+          return new Response(
+            '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PacEdu refresh</title><body style="font-family:Arial,sans-serif;padding:24px;line-height:1.5"><h1>PacEdu could not reach the latest page</h1><p>Please check your internet connection, then try Refresh Now again.</p><p><a href="/Pacific-education-/src/index.html">Return to PacEdu</a></p></body></html>',
+            {status:503,headers:{"Content-Type":"text/html; charset=utf-8"}}
+          );
+        }
+        return offlineNavigationResponse(null);
+      })
     );
     return;
   }
