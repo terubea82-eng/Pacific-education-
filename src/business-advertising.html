@@ -42,6 +42,7 @@
     .pacedu-slide-hint{animation:paceduSlideHint 2.8s ease-in-out infinite}
 
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
+    .business-registration-box{border:2px solid #0b5d7a;border-radius:12px;padding:14px;margin:12px 0}.business-registration-box legend{padding:0 8px;color:#0b5d7a;font-size:1.08rem}.business-registration-box select[multiple]{min-height:190px}
   </style>
 </head>
 <body>
@@ -118,6 +119,7 @@
     <p>Send a listing draft for review. Include a working website, product page or checkout/payment link if you have one.</p>
     <div class="notice"><strong>Pilot protection:</strong> This form saves a draft on this device only. It does not publish an advert, send your details to PacEdu, collect money or verify a payment link. Do not enter bank passwords, card details or sensitive personal information.</div>
     <form id="paceduBusinessAdvertForm">
+      <fieldset class="business-registration-box"><legend><strong>ONE MANDATORY BUSINESS REGISTRATION BOX</strong></legend><p class="muted">Complete this one form to register your business, choose advertising languages and submit your advertisement for review. You do not need a separate registration for each language.</p>
 
       <div class="package-panel" id="packagePayment" aria-labelledby="packagePaymentHeading">
         <h3 id="packagePaymentHeading">Choose an advertising package for PacEdu</h3>
@@ -160,14 +162,17 @@
         <option value="Other country or territory">Other country or territory — enter below</option>
       </select>
       <label for="otherTargetCountry">Other country / territory (if not listed)</label><input id="otherTargetCountry" name="otherTargetCountry" maxlength="100" placeholder="Enter country or territory">
-      <label for="requiredAdLanguages">Local and legally applicable language version(s) included in this advert *</label>
-      <input id="requiredAdLanguages" name="requiredAdLanguages" required maxlength="250" placeholder="e.g. French; English; iTaukei">
+      <label for="requiredAdLanguages">Languages to use for this advertisement * (select all that apply)</label>
+      <select id="requiredAdLanguages" name="requiredAdLanguages" multiple required size="12" aria-describedby="paceduLanguageTranslationRule"><option>English</option><option>Fijian / iTaukei</option><option>Fiji Hindi</option><option>Hindi</option><option>Urdu</option><option>Rotuman</option><option>Tok Pisin</option><option>Hiri Motu</option><option>Bislama</option><option>Samoan</option><option>Tongan</option><option>Tuvaluan</option><option>Kiribati / Gilbertese</option><option>Maori</option><option>Australian English</option><option>New Zealand English</option><option>French</option><option>German</option><option>Spanish</option><option>Portuguese</option><option>Italian</option><option>Dutch</option><option>Swedish</option><option>Norwegian</option><option>Polish</option><option>Ukrainian</option><option>Russian</option><option>Arabic</option><option>Persian / Farsi</option><option>Turkish</option><option>Mandarin Chinese</option><option>Cantonese</option><option>Japanese</option><option>Korean</option><option>Thai</option><option>Vietnamese</option><option>Indonesian</option><option>Malay</option><option>Filipino / Tagalog</option><option>Bengali</option><option>Tamil</option><option>Telugu</option><option>Punjabi</option><option>Nepali</option><option>Swahili</option><option>Amharic</option><option>Yoruba</option><option>Hausa</option><option>Zulu</option><option>Other — specify below</option></select>
+      <p class="muted">On a phone, tap each language you want to include. Select more than one where needed.</p>
+      <label for="otherAdLanguages">Other language(s) not listed (optional)</label><input id="otherAdLanguages" name="otherAdLanguages" maxlength="250" placeholder="Enter language names">
       <label for="legalAdLanguages">Additional language(s) required by law for this advert (if applicable)</label>
       <input id="legalAdLanguages" name="legalAdLanguages" maxlength="250" placeholder="Enter the languages required by the applicable law, or write 'To be verified'">
       <p class="muted">Enter every language required for the selected target market. Requirements vary by country, product category and advert type. The advertiser must verify current local law and provide accurate translations. PacEdu review is not legal certification.</p>
       <div class="notice" id="paceduLanguageGuidance" role="status" aria-live="polite">Choose a target country to view PacEdu's currently verified language notes. A country's official languages are not automatically mandatory for every private advertisement. If your advert targets a province, state, emirate or region, enter that area in the business location and check its local rules.</div>
       <label><input id="languageRespectConfirmation" name="languageRespectConfirmation" type="checkbox" required style="width:auto;margin-right:8px">I confirm that this advert respects the target community's language identity and includes the applicable official, recognised or legally protected local-language version(s), as well as any language version required by law. I will provide accurate translations and comply with local rules. *</label>
-      <label for="otherAdLanguages">Additional languages for international customers (optional)</label><input id="otherAdLanguages" name="otherAdLanguages" maxlength="250" placeholder="e.g. English, Hindi, Mandarin">
+      <label for="additionalLanguageVersions">Advertisement text in each additional selected language (if different from the original) *</label><textarea id="additionalLanguageVersions" name="additionalLanguageVersions" rows="5" maxlength="5000" placeholder="Label each version with its language name, then provide the complete advert text. If you selected only one language, write “No additional version”."></textarea>
+      <p class="muted">PacEdu keeps the original wording and every submitted language version together. Each version must have a matching English translation below before it can be approved for international display.</p>
       <label for="businessLocation">Business location / town or service area *</label><input id="businessLocation" name="location" required maxlength="120" placeholder="e.g. Suva, Fiji">
       <div class="video-ad-panel" aria-labelledby="videoAdHeading">
 <h3 id="videoAdHeading">🎥 Product video advertisement</h3>
@@ -179,7 +184,8 @@
 <p id="businessVideoStatus" class="status" role="status" aria-live="polite">No product video selected.</p>
 </div>
 <label for="businessDescription">Original advert text in the target community's language *</label><textarea id="businessDescription" name="description" required maxlength="2000" rows="5" placeholder="Write the advert in the original local or required language, preserving its script and wording."></textarea>
-      <label for="englishInterpretation">English interpretation of the complete advert *</label><textarea id="englishInterpretation" name="englishInterpretation" required maxlength="2500" rows="5" placeholder="Provide a clear English translation of the original advert, including important product details, conditions and calls to action."></textarea>
+      <label for="englishInterpretation">English translation of the complete advertisement and all selected language versions *</label><textarea id="englishInterpretation" name="englishInterpretation" required maxlength="5000" rows="7" placeholder="Provide the full, accurate English meaning of the original advert and every additional language version, including product details, prices, conditions and calls to action. Label sections if needed."></textarea>
+      <p class="notice" id="paceduLanguageTranslationRule">MANDATORY PACEDU LANGUAGE RULE: Keep the advertisement in the selected original/local languages and provide its complete English translation. PacEdu’s pilot form collects the translations from the advertiser; automatic translation and independent translation verification are not connected yet. Do not publish until the English meaning has been checked.</p>
       <label for="translationMethod">How was the English interpretation prepared? *</label>
       <select id="translationMethod" name="translationMethod" required>
         <option value="">Choose one</option><option value="qualified-human">Qualified human translator</option><option value="native-speaker-reviewed">Reviewed by a fluent/native speaker</option><option value="machine-human-reviewed">Machine translation, then human reviewed</option><option value="machine-unreviewed">Machine translation, not yet human reviewed</option>
@@ -190,6 +196,7 @@
       <label for="advertiserEmail">Business contact email (optional)</label><input id="advertiserEmail" name="email" type="email" maxlength="160" autocomplete="email">
       <div class="actions"><button type="submit">Save listing draft</button><button type="button" id="paceduBusinessClearDraft" style="background:#465b63">Clear this device's draft</button></div>
       <p id="paceduBusinessFormStatus" class="status" role="status" aria-live="polite"></p>
+          </fieldset>
     </form>
   </section>
 
