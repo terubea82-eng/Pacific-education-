@@ -41,6 +41,9 @@
     list.textContent="";
     var title=node("h3",subject+" — Choose a Class");
     list.appendChild(title);
+    var resourceGuide=node("p","Choose the matching class to open its daily activities, lesson/workplan and approved teacher resources. Worksheets and teaching aids must match the same subject, class, term and learning objective.");
+    resourceGuide.setAttribute("role","note");
+    list.appendChild(resourceGuide);
     /* Show the Class 1 English starter pack as soon as English is selected,
        within the Step 2 subject-selection area, before class selection. */
     if(subject==="English"){
@@ -186,7 +189,7 @@
     shell.id="paceduTeacherDailyLearningOnlyShell";
     shell.setAttribute("aria-label","Student daily activities and matching workplans");
     shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
-    var heading=node("h2","My Teaching Workspace — Daily Activities & Workplans");
+    var heading=node("h2","My Teaching Workspace — Subject Boxes, Daily Activities & Teacher Resources");
     heading.style.cssText="margin-top:0;";
     shell.appendChild(heading);
     shell.appendChild(node("h2","My Teaching Subject Boxes"));
