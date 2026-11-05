@@ -77,7 +77,13 @@ function installGuidedTransitionStyle(){
   style.textContent=
     ".pacedu-guided-page-enter{animation:paceduGuidedPageEnter 210ms cubic-bezier(.2,.7,.2,1) both;}"+
     "@keyframes paceduGuidedPageEnter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}" +
-    "@media(prefers-reduced-motion:reduce){.pacedu-guided-page-enter{animation:none!important;transform:none!important;opacity:1!important}}";
+    ".pacedu-page-sequence-guide{animation:paceduGuideBreathe 2.8s ease-in-out infinite;border-color:#0877b9!important;box-shadow:0 0 0 2px rgba(8,119,185,.10)}"+
+    ".pacedu-guide-current-box{animation:paceduBoxBreathe 3.2s ease-in-out infinite;border-color:#0877b9!important;box-shadow:0 0 0 3px rgba(8,119,185,.12)}"+
+    ".pacedu-guide-next,.pacedu-guide-back{animation:paceduButtonBreathe 3s ease-in-out infinite;box-shadow:0 0 0 3px rgba(22,163,74,.16)}"+
+    "@keyframes paceduGuideBreathe{0%,100%{box-shadow:0 0 0 2px rgba(8,119,185,.08)}50%{box-shadow:0 0 0 5px rgba(8,119,185,.22)}}"+
+    "@keyframes paceduBoxBreathe{0%,100%{box-shadow:0 0 0 2px rgba(8,119,185,.08)}50%{box-shadow:0 0 0 5px rgba(8,119,185,.20)}}"+
+    "@keyframes paceduButtonBreathe{0%,100%{box-shadow:0 0 0 2px rgba(22,163,74,.10)}50%{box-shadow:0 0 0 5px rgba(22,163,74,.28)}}"+
+    "@media(prefers-reduced-motion:reduce){.pacedu-guided-page-enter,.pacedu-page-sequence-guide,.pacedu-guide-current-box,.pacedu-guide-next,.pacedu-guide-back{animation:none!important;transform:none!important;opacity:1!important}}";
   (document.head||document.documentElement).appendChild(style);
 }
 function animateGuidedPageEntry(targetId){
@@ -528,6 +534,13 @@ function renderPageGuide(targetId){
   var numberEl=guide.querySelector(".pacedu-page-sequence-number");
   if(numberEl) numberEl.textContent=info[0]<=5?"Page "+info[0]+" of 5 — "+info[1]:"Workspace step — "+info[1];
   guide.setAttribute("data-pac-edu-sequence-page",String(info[0]));
+  guide.classList.add("pacedu-page-sequence-guide");
+  var nextButton=target.querySelector("button[id$=\"Next\"],button[id$=\"Continue\"],.pacific-flow-next button");
+  if(nextButton) nextButton.classList.add("pacedu-guide-next");
+  var backButton=target.querySelector("button[id^=\"pacificEducationBack_\"]");
+  if(backButton) backButton.classList.add("pacedu-guide-back");
+  var focusBox=target.querySelector(".pacedu-entry-card, #pacificEducationCountriesBox, #pacificEducationLanguageBox, .pacedu-agreement, #pilotRegistrationRole");
+  if(focusBox) focusBox.classList.add("pacedu-guide-current-box");
 }
 
 function enforceSingleVisiblePage(targetId, expectedStep){
@@ -679,7 +692,7 @@ function gateway(page){
   var targetId=page===1?GATEWAY.welcome:page===2?GATEWAY.vision:GATEWAY.rules;
   stopSpeechForPageTransition(targetId);
   enforceEntryAppMenuHidden();
-  syncActiveBackButton(null);
+  syncActiveBackButton(page===2?"paceduPageVision":page===3?"paceduPageRules":null);
   /* Fail closed: once guided navigation has advanced, legacy callers may not
      reopen Welcome. The explicit Back-to-Welcome handler clears this lock first. */
   if(Number(page)===1 && document.documentElement.getAttribute("data-pacedu-entry-advanced")==="true") return false;
@@ -1138,7 +1151,7 @@ var FEATURE_REGISTRY = {
 };
 
 function auditFeatures(){
-  var report={version:"2.3.0",owner:"single",features:{},missingRequired:[],checkedAt:(new Date()).toISOString()};
+  var report={version:"2.4.0",owner:"single",features:{},missingRequired:[],checkedAt:(new Date()).toISOString()};
   Object.keys(FEATURE_REGISTRY).forEach(function(key){
     var spec=FEATURE_REGISTRY[key], present=[], missing=[];
     spec.ids.forEach(function(id){ (el(id)?present:missing).push(id); });
