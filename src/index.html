@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
-<meta name="pacific-education-pilot-build" content="862-entry-buttons-auto-refresh-recovery-20261105">
+<meta name="pacific-education-pilot-build" content="863-opening-refresh-business-ads-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
@@ -431,6 +431,16 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
   display: none !important;
 }
 
+
+/* Simple opening-page refresh and business-advertising strip. */
+.pacedu-opening-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin:12px auto 18px;padding:12px 14px;max-width:1040px;border:2px solid #17627a;border-radius:14px;background:#eef9fc;color:#123b49}
+.pacedu-opening-tools p{margin:0;flex:1 1 230px;font-size:.95rem}
+.pacedu-opening-tools strong{display:block}
+.pacedu-opening-tools .pacedu-opening-actions{display:flex;flex-wrap:wrap;gap:8px}
+.pacedu-opening-tools button,.pacedu-opening-tools a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 15px;border:2px solid #14566b;border-radius:10px;background:#fff;color:#123b49;font-weight:700;text-decoration:none;cursor:pointer;touch-action:manipulation}
+.pacedu-opening-tools a{background:#14566b;color:#fff}
+.pacedu-opening-tools button:focus-visible,.pacedu-opening-tools a:focus-visible{outline:4px solid #f2bd42;outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){.pacedu-opening-tools button{animation:paceduRefreshBreath 3.2s ease-in-out infinite}@keyframes paceduRefreshBreath{0%,100%{box-shadow:0 0 0 0 rgba(20,86,107,.08)}50%{box-shadow:0 0 0 5px rgba(20,86,107,.13)}}}
 </style>
 <script id="pacedu-automatic-refresh-manager">
 (function(){
@@ -638,6 +648,21 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
     button.style.touchAction = "manipulation";
     button.style.position = "relative";
     button.style.zIndex = "100";
+    /* Also bind refresh controls placed directly on Welcome, Vision and Rules. */
+    if (document.documentElement.getAttribute("data-pe-opening-refresh-bound") !== "true") {
+      document.documentElement.setAttribute("data-pe-opening-refresh-bound", "true");
+      document.addEventListener("click", function(event) {
+        var node = event.target;
+        while (node && node !== document && !(node.getAttribute && node.hasAttribute("data-pacedu-opening-refresh"))) node = node.parentNode;
+        if (!node || node === document) return;
+        event.preventDefault();
+        try {
+          var refreshUrl = new URL(window.location.href);
+          refreshUrl.searchParams.set("pacedu_refresh", String(Date.now()));
+          window.location.replace(refreshUrl.toString());
+        } catch (error) { window.location.reload(); }
+      }, true);
+    }
     if (button.getAttribute("data-pe-refresh-bound") === "true") return;
     button.setAttribute("data-pe-refresh-bound", "true");
     button.addEventListener("click", function(event) {
@@ -761,7 +786,14 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   } catch (e) {}
 })();
 </script>
-<section id="pacificEducationWelcome" aria-label="Pacific Education welcome">
+<section id="pacificEducationWelcome" aria-label="Pacific Education welcome"><div class="pacedu-opening-tools" aria-label="PacEdu page refresh and business advertisements">
+  <p><strong>🔄 Refresh PacEdu</strong>Reload this opening page to check for the latest version. <span>📢 Business advertising is open to approved global businesses.</span></p>
+  <div class="pacedu-opening-actions">
+    <button type="button" data-pacedu-opening-refresh>↻ Refresh page</button>
+    <a href="./business-advertising.html">Explore business ads</a>
+  </div>
+</div>
+
 <div id="pacificEducationWelcomeContent" class="pacedu-welcome-only">
 <div class="pacedu-welcome-hero" role="img" aria-label="A Pacific island student reading a book on a beach while facing the sea under a bright sun">
 <svg viewBox="0 0 900 520" aria-hidden="true">
@@ -811,6 +843,14 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 
 <section id="pacificEducationPilotPages" aria-label="Pacific Education pilot welcome pages" hidden>
   <article id="paceduPageVision" class="pacedu-entry-page" aria-labelledby="paceduVisionTitle">
+<div class="pacedu-opening-tools" aria-label="PacEdu page refresh and business advertisements">
+  <p><strong>🔄 Refresh PacEdu</strong>Reload this opening page to check for the latest version. <span>📢 Business advertising is open to approved global businesses.</span></p>
+  <div class="pacedu-opening-actions">
+    <button type="button" data-pacedu-opening-refresh>↻ Refresh page</button>
+    <a href="./business-advertising.html">Explore business ads</a>
+  </div>
+</div>
+
     <div class="pacedu-entry-card">
       <div class="pacedu-entry-illustration" role="img" aria-label="Pacific island, ocean, school and learning technology illustration">
         <svg viewBox="0 0 900 300" aria-hidden="true">
@@ -843,6 +883,14 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   </article>
 
   <article id="paceduPageRules" class="pacedu-entry-page" aria-labelledby="paceduRulesTitle" hidden>
+<div class="pacedu-opening-tools" aria-label="PacEdu page refresh and business advertisements">
+  <p><strong>🔄 Refresh PacEdu</strong>Reload this opening page to check for the latest version. <span>📢 Business advertising is open to approved global businesses.</span></p>
+  <div class="pacedu-opening-actions">
+    <button type="button" data-pacedu-opening-refresh>↻ Refresh page</button>
+    <a href="./business-advertising.html">Explore business ads</a>
+  </div>
+</div>
+
     <div class="pacedu-entry-card">
       <h1 id="paceduRulesTitle">🔐 Pacedu Rules & Conditions</h1>
       <p>Review the pilot rules, then tick the agreement to continue.</p>
