@@ -99,9 +99,9 @@
       count = Math.min(1000000, Math.floor(count));
       monthly += count * item.price;
     });
-    var formatter = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
-    monthlyOutput.textContent = formatter.format(monthly);
-    annualOutput.textContent = formatter.format(monthly * 12);
+    var formatter = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    monthlyOutput.textContent = "US$" + formatter.format(monthly);
+    annualOutput.textContent = "US$" + formatter.format(monthly * 12);
   }
   estimateFields.forEach(function (item) {
     var field = document.getElementById(item.id);
