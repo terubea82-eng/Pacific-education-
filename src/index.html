@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
-<meta name="pacific-education-pilot-build" content="856-voice5-next-left-20261005">
+<meta name="pacific-education-pilot-build" content="857-navigation-refresh-repair-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
@@ -615,7 +615,14 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   }
   function bindRefresh() {
     var button = document.getElementById("pacificEducationRefreshButton");
-    if (!button || button.getAttribute("data-pe-refresh-bound") === "true") return;
+    if (!button) return;
+    button.disabled = false;
+    button.removeAttribute("aria-disabled");
+    button.style.pointerEvents = "auto";
+    button.style.touchAction = "manipulation";
+    button.style.position = "relative";
+    button.style.zIndex = "100";
+    if (button.getAttribute("data-pe-refresh-bound") === "true") return;
     button.setAttribute("data-pe-refresh-bound", "true");
     button.addEventListener("click", function(event) {
       event.preventDefault();
@@ -632,6 +639,18 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   }
   function bindEarlyNext() {
     var welcomeNext = document.getElementById("welcomeNextButton");
+    if (welcomeNext) {
+      welcomeNext.disabled = false;
+      welcomeNext.removeAttribute("aria-disabled");
+      welcomeNext.style.pointerEvents = "auto";
+      welcomeNext.style.touchAction = "manipulation";
+    }
+    if (visionNext) {
+      visionNext.disabled = false;
+      visionNext.removeAttribute("aria-disabled");
+      visionNext.style.pointerEvents = "auto";
+      visionNext.style.touchAction = "manipulation";
+    }
     if (welcomeNext && welcomeNext.getAttribute("data-pe-early-next-bound") !== "true") {
       welcomeNext.setAttribute("data-pe-early-next-bound", "true");
       welcomeNext.addEventListener("click", function(event) {
