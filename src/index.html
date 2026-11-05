@@ -639,6 +639,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   }
   function bindEarlyNext() {
     var welcomeNext = document.getElementById("welcomeNextButton");
+    var visionNext = document.getElementById("paceduVisionNext");
     if (welcomeNext) {
       welcomeNext.disabled = false;
       welcomeNext.removeAttribute("aria-disabled");
@@ -661,7 +662,6 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
         else showPage("paceduPageVision", 2);
       }, true);
     }
-    var visionNext = document.getElementById("paceduVisionNext");
     if (visionNext && visionNext.getAttribute("data-pe-early-next-bound") !== "true") {
       visionNext.setAttribute("data-pe-early-next-bound", "true");
       visionNext.addEventListener("click", function(event) {
