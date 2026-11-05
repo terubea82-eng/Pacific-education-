@@ -49,10 +49,11 @@ function weeklyBookDownload(options,group){
  if(!api||typeof api.getCurriculumWorksheet!=="function")throw new Error("Daily classwork content is not ready.");
  var pages=[];
  for(var d=1;d<=5;d++){
+  var base=api.getCurriculumWorksheet({level:options.level,subject:resolved.sourceSubject,term:options.term,week:options.week,day:d,ability:"expected",skipTermPlan:true});
   var sheet=api.getCurriculumWorksheet({level:options.level,subject:resolved.sourceSubject,term:options.term,week:options.week,day:d,ability:group.id,skipTermPlan:true});
-  if(!sheet||sheet.status==="NOT_FOUND")throw new Error("A complete five-day activity book is not available for Day "+d+".");
-  var lesson=sheet.dailyLesson||{},activities=sheet.abilityActivities||{},daily=activities.daily||{},questions=sheet.questions||[];
-  var objective=lesson.classLevelObjective||lesson.learnerAction||sheet.topic||"Teacher-approved objective required";
+  if(!base||base.status==="NOT_FOUND"||!sheet||sheet.status==="NOT_FOUND")throw new Error("A complete five-day activity book is not available for Day "+d+".");
+  var lesson=sheet.dailyLesson||{},baseLesson=base.dailyLesson||{},activities=sheet.abilityActivities||{},daily=activities.daily||{},questions=sheet.questions||[];
+  var objective=baseLesson.classLevelObjective||baseLesson.learnerAction||base.topic||"Teacher-approved objective required";
   var criteria=lesson.successCriteria||[];
   var success=typeof daily.successCheck==="string"?daily.successCheck:(Array.isArray(criteria)?criteria.join("; "):"Explain, demonstrate, point, draw or write what you learned.");
   var page="<section class=\"day\"><h2>Day "+d+" — "+esc(sheet.title||sheet.topic||"Daily classwork")+"</h2>"+
