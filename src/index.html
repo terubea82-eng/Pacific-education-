@@ -177,6 +177,8 @@ body.pacedu-registration-mode #pacificEducationAppMenu,body.pacedu-registration-
 body.pacedu-registration-mode > #pacificEducationMailbox,body.pacedu-registration-mode > #pacificEducationAppMenu,body.pacedu-registration-mode > #pacificEducationAccessibilityControls,body.pacedu-registration-mode > #pilotBanner,body.pacedu-registration-mode > header{display:none!important}
 body.pacedu-entry-mode > #pacificEducationMailbox,body.pacedu-entry-mode > #pacificEducationAppMenu,body.pacedu-entry-mode > #pacificEducationAccessibilityControls,body.pacedu-entry-mode > #pilotBanner,body.pacedu-entry-mode > header{display:none!important}
 body.pacedu-entry-mode > #pacificEducationRefreshNotice,body.pacedu-registration-mode > #pacificEducationRefreshNotice{display:block!important;visibility:visible!important}
+/* Keep the manual refresh control visible even while entry-flow isolation hides later page sections. */
+body.pacedu-entry-mode #pacificEducationPilotPages ~ #pacificEducationRefreshNotice,body.pacedu-registration-mode #pacificEducationRefreshNotice{display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
 .pacedu-entry-card{max-width:980px;margin:0 auto;padding:20px;border:2px solid #174f63;border-radius:18px;background:#fff;box-shadow:0 8px 28px rgba(0,0,0,.08)}
 .pacedu-entry-illustration{margin:-4px -4px 18px;overflow:hidden;border-radius:14px}
 .pacedu-entry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
