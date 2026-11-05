@@ -46,14 +46,13 @@ The sequences below are **concept families and planning progressions**, not clai
 
 ### 4. Science
 - **ECE:** noticing living/non-living things; senses; weather; materials; movement; caring for surroundings.
-- **Classes 1–2:** living things and needs; body and senses; local plants/animals; materials and properties; pushes/pulls; weather observations.
-- **Classes 3–5:** life cycles; habitats; human body systems at age-appropriate depth; states/properties of matter; forces; light/sound; water and environment.
-- **Classes 6–8:** cells and organisation at introductory level; ecosystems; mixtures/material change; energy; electricity; forces; Earth/space and scientific investigation.
-- **Forms 3–4:** integrated/basic science concepts and practical investigation as specified by the applicable syllabus; variables, fair tests, measurement, evidence and safety.
-- **Forms 5–7:** use the exact approved senior science courses and outcomes (including Biology and Chemistry where offered); do not invent or assume a course. Keep these course selections within the PacEdu Science subject area unless an officially required separate course-box structure is approved.
-- **Daily evidence:** observation, labelled model, safe investigation record, or evidence-based explanation.
+- **Classes 1–6:** use the user-required course label **Elementary Science** in the Science box; the exact current school syllabus, year-level outcomes and topic sequence still require official confirmation.
+- **Class 7–Form 4:** use the user-required course label **Basic Science** in the Science box; confirm the exact current syllabus and outcomes for each level before scheduling.
+- **Forms 5–7:** use only the senior science course(s) actually selected and offered by the school, such as Biology or Chemistry where prescribed. Never substitute a generic Science worksheet for a selected senior course.
+- **ECE:** use integrated, play-based discovery and observation under the approved Fiji ECE guidance; do not use a formal secondary-style Science worksheet.
+- **Daily evidence:** observation, labelled model, safe investigation record, or evidence-based explanation appropriate to the selected level.
 
-**Box name rule:** retain the PacEdu subject-box label **Science**. For Classes 1–8 and Forms 3–4, use Basic Science content and exact applicable syllabus outcomes. For Forms 5–7, use only the officially prescribed senior science course outcomes, including Biology and Chemistry where offered. Do not invent course titles or place unverified senior content in the learner's programme.
+**Box name rule:** retain the PacEdu subject-box label **Science**. Display Elementary Science for Classes 1–6, Basic Science for Class 7–Form 4, and the actual approved senior course name for Forms 5–7. These are PacEdu naming rules pending confirmation against the exact current school-adopted syllabus; do not label draft content officially curriculum-verified.
 
 ### 5. Social Science
 - **ECE:** self and family; classroom roles; belonging; places around us; caring and sharing.
