@@ -32,6 +32,7 @@
     var selectedButton=grid.querySelector('[data-pacedu-teacher-subject="'+subject+'"]');
     var selectedCard=selectedButton&&selectedButton.parentNode;
     if(selectedCard)selectedCard.appendChild(list);
+    list.hidden=false;
     list.textContent="";
     var title=node("h3",subject+" — Choose a Class");
     list.appendChild(title);
@@ -153,6 +154,10 @@
       card.appendChild(b);
       grid.appendChild(card);
     });
+    /* Keep the class/resource panel in the subject-box area from initial load.
+       It starts hidden inside the first card, then moves into the selected card. */
+    list.hidden=true;
+    if(grid.firstElementChild)grid.firstElementChild.appendChild(list);
     list.style.cssText="margin:12px 0;";
     var planSubject=document.getElementById("paceduLinkedPlanSubject");
     if(planSubject&&planSubject.parentElement)planSubject.parentElement.style.display="none";
