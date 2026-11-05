@@ -1059,6 +1059,32 @@ function installWelcomeFlashGuard(){
   (document.head||document.documentElement).appendChild(style);
 }
 
+function showGatewayFallback(page){
+  var body=document.body;
+  if(!body)return false;
+  var targetId=page===2?GATEWAY.vision:GATEWAY.rules;
+  var pilot=el("pacificEducationPilotPages");
+  body.classList.remove("pe-guided-flow","pe-guided-flow-ended","pacedu-registration-mode");
+  body.classList.add("pacedu-entry-mode");
+  body.setAttribute("data-pac-edu-entry-page",String(page));
+  body.setAttribute("data-pe-navigation-owner","single");
+  body.removeAttribute("data-pe-flow-step");
+  body.removeAttribute("data-pe-active-guided-page");
+  if(pilot){pilot.hidden=false;pilot.style.display="";}
+  [GATEWAY.welcome,GATEWAY.vision,GATEWAY.rules].forEach(function(id){
+    var node=el(id);
+    if(!node)return;
+    var active=id===targetId;
+    node.hidden=!active;
+    if(active)node.removeAttribute("aria-hidden");
+    else node.setAttribute("aria-hidden","true");
+    node.style.setProperty("display",active?"block":"none","important");
+    if(active)node.style.setProperty("visibility","visible","important");
+  });
+  setStatus(page===2?"Vision page opened using navigation recovery. Press Next for Rules & Conditions.":"Rules & Conditions opened using navigation recovery.");
+  return !!el(targetId);
+}
+
 function bindGatewayCaptureFallback(){
   if(document.documentElement.getAttribute("data-pe-gateway-capture-bound")==="true") return;
   document.documentElement.setAttribute("data-pe-gateway-capture-bound","true");
@@ -1069,13 +1095,22 @@ function bindGatewayCaptureFallback(){
     var id=node.id;
     if(id==="welcomeNextButton" && node.tagName==="A" && node.getAttribute("href")) return;
     if(id!=="welcomeNextButton" && id!=="paceduVisionNext" && id!=="paceduRulesContinue") return;
-    if(node.disabled) return;
+    if(id==="welcomeNextButton" || id==="paceduVisionNext"){
+      /* The first two Next actions are always available; recover from a stray
+         disabled state left by an older page-repair script. */
+      node.disabled=false;
+      node.removeAttribute("aria-disabled");
+      node.style.pointerEvents="auto";
+      node.style.touchAction="manipulation";
+    }else if(node.disabled){
+      return;
+    }
     event.preventDefault();
     event.stopImmediatePropagation();
     if(id==="welcomeNextButton"){
-      gateway(2);
+      try{if(gateway(2)!==true)showGatewayFallback(2);}catch(error){showGatewayFallback(2);}
     }else if(id==="paceduVisionNext"){
-      gateway(3);
+      try{if(gateway(3)!==true)showGatewayFallback(3);}catch(error){showGatewayFallback(3);}
     }else{
       var agreement=el("paceduRulesAgreement");
       if(agreement && agreement.checked) guided(3,"pacificEducationIdentityRegistration");
