@@ -14,6 +14,7 @@
     .ad-card{margin:0}.tag{display:inline-block;border:1px solid #6d8790;border-radius:20px;padding:2px 9px;font-size:.85rem}
     label{display:block;font-weight:700;margin:12px 0 4px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid #879da5;border-radius:7px}
     button,.link-button{display:inline-block;background:#0b5d7a;color:#fff;border:0;border-radius:7px;padding:11px 14px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+    .pacedu-business-flow{max-width:980px;margin:14px auto 0;padding:10px 16px;background:#eaf4f7;border:1px solid #b9d4dc;border-radius:10px}.pacedu-business-flow p{margin:0 0 6px;font-weight:700;color:#174f63}.pacedu-business-flow .actions{margin:0}.pacedu-business-flow a{display:inline-block}
     button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2b544;outline-offset:2px}
     .muted{color:#4d6269}.notice{border-left:4px solid #b77b00;padding:10px 12px;background:#fff7e5}
     .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.status{min-height:1.5em}footer{padding:20px;text-align:center}
@@ -25,6 +26,13 @@
   <h1>Business & Product Advertising</h1>
   <p>Discover useful local services, products and education-related offers.</p>
 </header>
+<nav class="pacedu-business-flow" aria-label="PacEdu entry navigation">
+  <p><strong>PacEdu entry · Page 1 of 5 · Business advertisements</strong></p>
+  <div class="actions">
+    <button type="button" id="paceduBusinessRefresh">↻ Refresh page</button>
+    <a class="link-button" href="./index.html?entry=welcome">Next: Welcome →</a>
+  </div>
+</nav>
 <main>
   <section aria-labelledby="directoryHeading">
     <h2 id="directoryHeading">Explore the directory</h2>
@@ -151,6 +159,16 @@
   <p><a href="./index.html">Return to PacEdu</a></p>
 </main>
 <footer><small>PacEdu controlled pilot · Advertisements require review · No endorsement or payment guarantee is implied.</small></footer>
-<script src="./js/paceduBusinessAdvertising.js?v=20261105-usd-fees"></script>
+<script>
+  (function(){
+    var refresh=document.getElementById("paceduBusinessRefresh");
+    if(refresh)refresh.addEventListener("click",function(){
+      var url=new URL(window.location.href);
+      url.searchParams.set("pacedu_refresh",String(Date.now()));
+      window.location.assign(url.toString());
+    });
+  })();
+  </script>
+  <script src="./js/paceduBusinessAdvertising.js?v=20261105-usd-fees"></script>
 </body>
 </html>
