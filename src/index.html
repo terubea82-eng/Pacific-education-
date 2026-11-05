@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
-<meta name="pacific-education-pilot-build" content="857-navigation-refresh-repair-20261105">
+<meta name="pacific-education-pilot-build" content="858-page2-next-direct-recovery-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
@@ -637,6 +637,39 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       }
     }, true);
   }
+  function openEntryPage(page) {
+    var ids = ["pacificEducationWelcome", "paceduPageVision", "paceduPageRules"];
+    var pilot = document.getElementById("pacificEducationPilotPages");
+    var body = document.body;
+    if (!body) return false;
+    try {
+      var nav = window.PacificEducationSingleNavigation;
+      if (nav && typeof nav.gateway === "function") nav.gateway(page);
+    } catch (error) {}
+    body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
+    body.classList.add("pacedu-entry-mode");
+    body.setAttribute("data-pac-edu-entry-page", String(page));
+    body.setAttribute("data-pe-navigation-owner", "single");
+    body.removeAttribute("data-pe-flow-step");
+    body.removeAttribute("data-pe-active-guided-page");
+    if (pilot) { pilot.hidden = false; pilot.style.display = "block"; }
+    ids.forEach(function(id, index) {
+      var section = document.getElementById(id);
+      if (!section) return;
+      var active = index + 1 === page;
+      section.hidden = !active;
+      if (active) section.removeAttribute("aria-hidden");
+      else section.setAttribute("aria-hidden", "true");
+      section.style.setProperty("display", active ? "block" : "none", "important");
+      section.style.setProperty("visibility", active ? "visible" : "hidden", "important");
+    });
+    var activePage = document.getElementById(ids[page - 1]);
+    if (activePage) {
+      activePage.scrollIntoView({ behavior: "auto", block: "start" });
+      return true;
+    }
+    return false;
+  }
   function bindEarlyNext() {
     var welcomeNext = document.getElementById("welcomeNextButton");
     var visionNext = document.getElementById("paceduVisionNext");
@@ -657,9 +690,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       welcomeNext.addEventListener("click", function(event) {
         event.preventDefault();
         event.stopImmediatePropagation();
-        var nav = window.PacificEducationSingleNavigation;
-        if (nav && typeof nav.gateway === "function") nav.gateway(2);
-        else showPage("paceduPageVision", 2);
+        openEntryPage(2);
       }, true);
     }
     if (visionNext && visionNext.getAttribute("data-pe-early-next-bound") !== "true") {
@@ -667,9 +698,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       visionNext.addEventListener("click", function(event) {
         event.preventDefault();
         event.stopImmediatePropagation();
-        var nav = window.PacificEducationSingleNavigation;
-        if (nav && typeof nav.gateway === "function") nav.gateway(3);
-        else showPage("paceduPageRules", 3);
+        openEntryPage(3);
       }, true);
     }
   }
