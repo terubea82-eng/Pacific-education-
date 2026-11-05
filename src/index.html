@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pacific Education — Learn • Discover • Practise • Grow</title>
-<meta name="pacific-education-pilot-build" content="860-breathing-guided-navigation-20261105">
+<meta name="pacific-education-pilot-build" content="861-auto-refresh-on-open-20261105">
 <meta name="description" content="Pacific Education supports accessible, structured learning for learners, teachers, parents and education communities across the Pacific.">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
@@ -436,12 +436,19 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
 (function(){
   "use strict";
   var registration=null;
-  var hadController=!!(navigator.serviceWorker&&navigator.serviceWorker.controller);
   var reloadPending=false;
+  var lastControllerUrl="";
   function refreshWhenNewVersionControlsPage(){
-    if(reloadPending||!hadController)return;
+    if(reloadPending)return;
     reloadPending=true;
-    window.location.reload();
+    try{
+      var current=navigator.serviceWorker&&navigator.serviceWorker.controller;
+      var currentUrl=current?current.scriptURL:"";
+      var previous=sessionStorage.getItem("pacedu-auto-refresh-controller")||"";
+      if(currentUrl)sessionStorage.setItem("pacedu-auto-refresh-controller",currentUrl);
+      if(previous&&currentUrl&&previous!==currentUrl)window.location.reload();
+      else reloadPending=false;
+    }catch(e){reloadPending=false;}
   }
   function checkForUpdate(){
     if(!registration||!navigator.onLine)return;
@@ -449,6 +456,20 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
   }
   function register(){
     if(!("serviceWorker"in navigator))return;
+    var controller=navigator.serviceWorker.controller;
+    if(controller)lastControllerUrl=controller.scriptURL;
+    try{if(controller)sessionStorage.setItem("pacedu-auto-refresh-controller",controller.scriptURL);}catch(e){}
+    navigator.serviceWorker.addEventListener("controllerchange",function(){
+      var current=navigator.serviceWorker.controller;
+      var nextUrl=current?current.scriptURL:"";
+      if(lastControllerUrl&&nextUrl&&lastControllerUrl!==nextUrl){
+        lastControllerUrl=nextUrl;
+        refreshWhenNewVersionControlsPage();
+      }else if(!lastControllerUrl&&nextUrl){
+        lastControllerUrl=nextUrl;
+        try{sessionStorage.setItem("pacedu-auto-refresh-controller",nextUrl);}catch(e){}
+      }
+    });
     navigator.serviceWorker.register("../service-worker.js",{updateViaCache:"none"}).then(function(reg){
       registration=reg;
       checkForUpdate();
@@ -461,10 +482,6 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
         try{reg.waiting.postMessage({type:"PACEDU_ACTIVATE_UPDATE"});}catch(e){}
       }
     }).catch(function(){});
-    navigator.serviceWorker.addEventListener("controllerchange",function(){
-      if(!hadController){hadController=true;return;}
-      refreshWhenNewVersionControlsPage();
-    });
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",register,{once:true});
   else register();
