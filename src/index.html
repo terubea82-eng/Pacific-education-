@@ -439,11 +439,6 @@ body.pe-guided-flow.pe-pilot-all-features[data-pe-flow-step="13"] #teacherCalend
   function refreshWhenNewVersionControlsPage(){
     if(reloadPending||!hadController)return;
     reloadPending=true;
-    try{
-      var key="pacedu-auto-refresh-controller-change";
-      if(sessionStorage.getItem(key)==="yes")return;
-      sessionStorage.setItem(key,"yes");
-    }catch(e){}
     window.location.reload();
   }
   function checkForUpdate(){
