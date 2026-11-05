@@ -11,7 +11,6 @@ var SUBJECT_SOURCE=Object.freeze({
  "Agriculture":"Agriculture",
  "Home Economics":"Home Economics",
  "Computer Studies":"Computer Studies",
- "Vosa Vakaviti (iTaukei)":"iTaukei Language",
  "Mathematics":"Mathematics",
  "Science":"Science",
  "Social Science":"Social Studies",
@@ -22,6 +21,7 @@ var SUBJECT_SOURCE=Object.freeze({
 function resolveSubject(subject,level){
  var source=SUBJECT_SOURCE[subject]||"";
  var note=source?"Subject-specific pilot worksheet content is available as a draft; verify the exact Fiji syllabus outcome before teaching.":"No separate worksheet bank is available for this subject yet. Do not substitute another subject's worksheet.";
+ if(subject==="Vosa Vakaviti (iTaukei)") note="A candidate iTaukei-language bank exists, but a fluent Vosa Vakaviti educator must verify vocabulary, orthography and curriculum outcomes before a student worksheet pack can be generated. No other subject will be substituted.";
  if(subject==="Science"){
    if(/^Class [1-6]$/.test(String(level||""))){
      note="Elementary Science practice draft. Confirm the exact current school syllabus and achievement indicator before teaching.";

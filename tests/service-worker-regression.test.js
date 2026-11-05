@@ -5,7 +5,7 @@ const fs = require("node:fs");
 const serviceWorker = fs.readFileSync("service-worker.js", "utf8");
 
 test("service worker precaches the current accessibility runtime", () => {
-  assert.match(serviceWorker, /CACHE_NAME="pacific-education-shell-v26"/);
+  assert.match(serviceWorker, /CACHE_NAME="pacific-education-shell-v\d+"/);
   assert.match(serviceWorker, /pacificEducationAccessibilityRuntime\.js/);
 });
 

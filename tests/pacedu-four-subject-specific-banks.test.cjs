@@ -45,7 +45,8 @@ test("each new subject box resolves only to its own worksheet bank", () => {
   const window = load();
   for (const subject of newSubjects) {
     const resolved = window.PacEduFijiSubjectMapping.resolve(subject, "Class 4");
-    assert.equal(resolved.status, "mapped");
+    assert.equal(resolved.status, "partial");
+    assert.equal(resolved.contentStatus, "CONTENT_PARTIAL");
     assert.deepEqual(Array.from(resolved.worksheetSourceSubjects), [subject]);
     const download = window.PacEduDownloadableClassPacks.resolveSubject(subject, "Class 4");
     assert.equal(download.available, true);
