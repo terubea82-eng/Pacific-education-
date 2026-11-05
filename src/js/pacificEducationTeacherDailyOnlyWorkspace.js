@@ -25,9 +25,13 @@
     grid.querySelectorAll("[data-pacedu-teacher-subject]").forEach(function(b){
       var active=b.getAttribute("data-pacedu-teacher-subject")===subject;
       b.setAttribute("aria-pressed",active?"true":"false");
+      b.setAttribute("aria-expanded",active?"true":"false");
       b.style.background=active?"#d8efff":"#f7fcff";
       b.style.borderColor=active?"#1877b7":"#7bb9e8";
     });
+    var selectedButton=grid.querySelector('[data-pacedu-teacher-subject="'+subject+'"]');
+    var selectedCard=selectedButton&&selectedButton.parentNode;
+    if(selectedCard)selectedCard.appendChild(list);
     list.textContent="";
     var title=node("h3",subject+" — Choose a Class");
     list.appendChild(title);
