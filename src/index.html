@@ -529,6 +529,52 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 @keyframes paceduRegistrationBoxPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,99,235,.12)}50%{box-shadow:0 0 0 5px rgba(37,99,235,.22)}}
 @media(prefers-reduced-motion:reduce){#pacificEducationRegistrationBox.pacedu-user-registration-box.pacific-breathing-focus,#pacificEducationRegistrationBox.pacedu-user-registration-box[data-pe-breathing-active="true"]{animation:none;box-shadow:0 0 0 2px rgba(37,99,235,.16)}}
 </style>
+<script id="pacedu-head-first-page-emergency-recovery">
+/* Independent first-page failsafe: if navigation initialization fails, do not leave
+   the app hidden behind the first-paint isolation lock. */
+(function(window, document) {
+  "use strict";
+  function recoverFirstPageIfUninitialized() {
+    var root = document.documentElement;
+    var body = document.body;
+    if (!root || !body || root.getAttribute("data-pacedu-navigation-ready") === "true") return;
+    var params;
+    try {
+      params = new URLSearchParams(window.location.search);
+      if (params.get("entry") === "registration" &&
+          window.sessionStorage.getItem("pacificEducationRulesAccepted") === "yes") return;
+    } catch (e) {}
+    var welcome = document.getElementById("pacificEducationWelcome");
+    if (!welcome) return;
+    root.setAttribute("data-pacedu-navigation-ready", "true");
+    root.removeAttribute("data-pacedu-registration-entry");
+    body.classList.remove("pe-guided-flow", "pe-guided-flow-ended", "pacedu-registration-mode");
+    body.classList.add("pacedu-entry-mode");
+    body.setAttribute("data-pac-edu-entry-page", "1");
+    body.setAttribute("data-pe-navigation-owner", "single");
+    body.removeAttribute("data-pe-flow-step");
+    body.removeAttribute("data-pe-active-guided-page");
+    var pilot = document.getElementById("pacificEducationPilotPages");
+    if (pilot) {
+      pilot.hidden = true;
+      pilot.setAttribute("aria-hidden", "true");
+      pilot.style.setProperty("display", "none", "important");
+    }
+    welcome.hidden = false;
+    welcome.removeAttribute("aria-hidden");
+    welcome.style.setProperty("display", "block", "important");
+    welcome.style.setProperty("visibility", "visible", "important");
+    body.setAttribute("data-pe-initial-entry-fallback", "head-emergency-welcome-restored");
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function() {
+      window.setTimeout(recoverFirstPageIfUninitialized, 1800);
+    }, { once: true });
+  } else {
+    window.setTimeout(recoverFirstPageIfUninitialized, 1800);
+  }
+})(window, document);
+</script>
 </head>
 <body>
 <script>
@@ -1174,7 +1220,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261018-registration-handoff-shell-release-v1"></script>
 <script src="./js/pacificEducationBreathingFocusGuide.js?v=20261016-final-signout-scroll-stable-v8"></script>
 <script src="./js/pacificEducationConversationContract.js?v=20261009-conversation-contract-v1"></script>
-<script src="./js/pacificEducationSingleNavigationController.js?v=20261025-zero-area-recovery-v2"></script>
+<script src="./js/pacificEducationSingleNavigationController.js?v=20261105-first-page-blank-recovery-v3"></script>
 <script src="./js/pacificEducationAutoFeatureActivation.js?v=20261006-auto-feature-activation-v1"></script>
 <script src="./js/pacificEducationCurriculumCoverageEngine.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
