@@ -190,21 +190,55 @@
   window.addEventListener("load",scheduleInit,{once:true});
 
   /*
-   * Watch for the teacher dashboard being mounted/replaced by the role
-   * workspace. This is the missing lifecycle connection: subject buttons and
-   * class choices must be rendered when that destination actually exists,
-   * not only during the initial page load.
+   * Observe only the Teacher Dashboard and its immediate parent. The dashboard
+   * is a static page section; role navigation hides/shows it, while a local
+   * observer handles replacement of its subject/class containers. A parent
+   * observer handles the dashboard node itself being replaced. This avoids
+   * reacting to unrelated app-wide DOM changes (the source of runaway calls).
    */
-  if(window.MutationObserver && document.documentElement){
-    var observer=new MutationObserver(function(){
+  if(window.MutationObserver){
+    var dashboardObserver=null;
+    var parentObserver=null;
+    var observedHost=null;
+    var observedParent=null;
+    var observerQueued=false;
+    function checkTeacherDashboard(){
+      observerQueued=false;
       var host=document.getElementById(hostId);
+      if(!host)return;
+      if(host!==observedHost){
+        if(dashboardObserver)dashboardObserver.disconnect();
+        if(parentObserver)parentObserver.disconnect();
+        observedHost=host;
+        observedParent=host.parentNode;
+        dashboardObserver=new MutationObserver(function(){
+          var current=document.getElementById(hostId);
+          var grid=current&&current.querySelector("#paceduTeacherSubjectGrid");
+          var list=current&&current.querySelector("#paceduTeacherClassList");
+          if(current&&grid&&list&&
+             (!grid.querySelector('[data-pacedu-teacher-subject]') ||
+              grid.getAttribute("data-ready")!=="true"))queueTeacherCheck();
+        });
+        dashboardObserver.observe(host,{childList:true,subtree:true});
+        if(observedParent){
+          parentObserver=new MutationObserver(function(){
+            if(document.getElementById(hostId)!==observedHost)queueTeacherCheck();
+          });
+          parentObserver.observe(observedParent,{childList:true});
+        }
+      }
       var grid=document.getElementById("paceduTeacherSubjectGrid");
       var list=document.getElementById("paceduTeacherClassList");
-      if(host&&grid&&list &&
+      if(grid&&list&&
          (!grid.querySelector('[data-pacedu-teacher-subject]') ||
-          !grid.getAttribute("data-ready") || !list.isConnected))scheduleInit();
-    });
-    observer.observe(document.documentElement,{childList:true,subtree:true});
+          grid.getAttribute("data-ready")!=="true" || !list.isConnected))scheduleInit();
+    }
+    function queueTeacherCheck(){
+      if(observerQueued)return;
+      observerQueued=true;
+      window.setTimeout(checkTeacherDashboard,40);
+    }
+    checkTeacherDashboard();
   }
   window.PacEduTeacherDailyOnlyWorkspace=Object.freeze({refresh:init});
 })(window,document);

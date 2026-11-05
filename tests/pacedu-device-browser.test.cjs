@@ -772,6 +772,21 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 3");
   await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Daily Activities");
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
+  await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("English");
+  await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Mathematics");
+
+  // Replacing the two local controls must trigger only the dashboard observer
+  // and restore the subject buttons without observing unrelated page changes.
+  await page.evaluate(() => {
+    const grid=document.getElementById("paceduTeacherSubjectGrid");
+    const list=document.getElementById("paceduTeacherClassList");
+    grid.replaceWith(Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"}));
+    list.replaceWith(Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"}));
+  });
+  await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
+  const observerRunaways = await page.evaluate(() => window.__paceduObserverRunaways || []);
+  expect(observerRunaways, "Teacher Dashboard observers must not run away").toEqual([]);
 });
 
 test("verified registration role overrides a stale pilot role marker", async ({ page }) => {
