@@ -117,7 +117,18 @@
   }
   function init(){
     var host=document.getElementById(hostId),grid=document.getElementById("paceduTeacherSubjectGrid"),list=document.getElementById("paceduTeacherClassList");
-    if(!host||!grid||!list||grid.getAttribute("data-ready")==="true")return;
+    if(!host||!grid||!list)return;
+    /*
+     * The teacher workspace can be inserted or rebuilt by the sequential-role
+     * router after the page's first DOM-ready pass. Treat an empty/replaced
+     * subject grid as not initialised, rather than trusting a stale marker.
+     */
+    if(grid.getAttribute("data-ready")==="true" &&
+       grid.querySelector('[data-pacedu-teacher-subject]') &&
+       list.isConnected)return;
+    grid.removeAttribute("data-ready");
+    grid.textContent="";
+    list.textContent="";
     grid.setAttribute("data-ready","true");
     grid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:14px 0;";
     SUBJECTS.forEach(function(subject){
@@ -168,7 +179,32 @@
       shell.appendChild(planPanel);
     }
   }
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
-  else init();
-  window.addEventListener("load",init);
+  var initQueued=false;
+  function scheduleInit(){
+    if(initQueued)return;
+    initQueued=true;
+    window.setTimeout(function(){initQueued=false;init();},0);
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",scheduleInit,{once:true});
+  else scheduleInit();
+  window.addEventListener("load",scheduleInit,{once:true});
+
+  /*
+   * Watch for the teacher dashboard being mounted/replaced by the role
+   * workspace. This is the missing lifecycle connection: subject buttons and
+   * class choices must be rendered when that destination actually exists,
+   * not only during the initial page load.
+   */
+  if(window.MutationObserver && document.documentElement){
+    var observer=new MutationObserver(function(){
+      var host=document.getElementById(hostId);
+      var grid=document.getElementById("paceduTeacherSubjectGrid");
+      var list=document.getElementById("paceduTeacherClassList");
+      if(host&&grid&&list &&
+         (!grid.querySelector('[data-pacedu-teacher-subject]') ||
+          !grid.getAttribute("data-ready") || !list.isConnected))scheduleInit();
+    });
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+  }
+  window.PacEduTeacherDailyOnlyWorkspace=Object.freeze({refresh:init});
 })(window,document);
