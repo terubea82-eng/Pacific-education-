@@ -21,6 +21,7 @@
   function selectSubject(subject){
     var grid=document.getElementById("paceduTeacherSubjectGrid");
     var list=document.getElementById("paceduTeacherClassList");
+    var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
     if(!grid||!list)return;
     grid.querySelectorAll("[data-pacedu-teacher-subject]").forEach(function(b){
       var active=b.getAttribute("data-pacedu-teacher-subject")===subject;
@@ -31,7 +32,11 @@
     });
     var selectedButton=grid.querySelector('[data-pacedu-teacher-subject="'+subject+'"]');
     var selectedCard=selectedButton&&selectedButton.parentNode;
-    if(selectedCard)selectedCard.appendChild(list);
+    if(selectedCard){
+      selectedCard.appendChild(list);
+      if(planPanel)selectedCard.appendChild(planPanel);
+    }
+    if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
     list.hidden=false;
     list.textContent="";
     var title=node("h3",subject+" — Choose a Class");
@@ -186,10 +191,14 @@
     shell.appendChild(grid);
     host.textContent="";
     host.appendChild(shell);
-    /* Keep the area below the subject boxes clear. Class choices and matching
-       resources are inserted inside the selected subject card by selectSubject().
-       The linked-plan panel remains hidden here rather than appearing below. */
-    if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
+    /* Move the linked-plan/resource panel into the first subject card before
+       clearing the dashboard. The grid (including its hidden panel) is then
+       moved into the clean shell, so nothing is left below the subject boxes. */
+    if(planPanel){
+      planPanel.hidden=true;
+      planPanel.setAttribute("aria-hidden","true");
+      if(grid.firstElementChild)grid.firstElementChild.appendChild(planPanel);
+    }
     list.textContent="";
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
