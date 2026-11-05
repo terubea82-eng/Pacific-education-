@@ -97,9 +97,13 @@ Country/language lists must be reviewed for completeness and accuracy. Do not la
 Each role must have its own clearly separated workspace, with personal data and actions scoped to the signed-in and authorized account. The Teacher Workspace is a personal professional workspace: it contains the teacher profile, assigned classes, subject boxes, daily teaching, planning, worksheets, marking and learner progress. Teachers select a subject box and then a class; resources must match both. The Student Workspace contains the learner's own class, subjects, daily activities, worksheets, practice, assessment and progress. The Parent/Family Workspace contains only the approved learner information the parent is authorized to see. A visual screen or browser-side role selection is not a security boundary; account-specific data requires server-side authorization.
 
 Provide simple, distinct entry points:
-- **Student Workspace:** class, subjects, daily activities, worksheets, learning progress and assessments.
-- **Teacher Workspace:** assigned classes and subjects, daily teaching activities, lesson plans, teaching aids, worksheets, marking and performance records.
-- **Parent/Family access:** appropriate learner progress and communications, with permissions and privacy controls.
+- **Student Workspace:** the learner's assigned class and approved subject boxes, daily activities, worksheets, learning progress and assessments.
+- **Teacher Workspace:** the teacher's personal professional workspace, assigned classes and subject boxes. Each subject box opens the matching class, daily activities, lesson/workplan, worksheets, marking guidance and approved teacher resources.
+- **Education Officer / Ministry Workspace:** authorized education subject boxes and class/term curriculum views, plus curriculum evidence and coverage oversight. This is not access to a teacher's private profile, personal notes or unrelated learner records.
+- **Parent/Family access:** approved learner progress and communications only; no entry to the education subject boxes.
+- **All other roles:** no access to English, Mathematics, Phonics or other teaching/learning subject boxes unless a separately approved role is explicitly added to this access policy.
+
+**Education subject-area access policy:** only authenticated Students (including Blind and Deaf Learner student pathways), Teachers and approved Education Officers/Ministry accounts may enter the education subject area. Parents/Caregivers, businesses, NGOs, community/partner users, reviewers, technicians and other roles must be denied. The UI role gate is a navigation safeguard only; production access must also be enforced by Firebase/server-side authorization on every read and write.
 
 The main learner journey should not be cluttered with a general App Menu. Keep navigation linear and role-appropriate. Teacher Teaching Workspace should follow Teacher Workspace: teachers resume work, identify assigned classes/subjects, open teaching rooms, teach, assess and print differentiated worksheets.
 
@@ -172,7 +176,8 @@ Do not revert to the earlier 10-week term plan. Do not invent concepts to fill a
 
 ## 8. Daily teaching, worksheets and assessment
 
-- Teacher Workspace STEP 2 of 3 should place classes and daily activities inside subject boxes. Keep the teacher work-plan nearby; place each worksheet in the matching subject box for the same day and class.
+- Teacher Workspace STEP 2 of 3 should place classes and daily activities inside subject boxes. Selecting a subject opens the teacher's assigned classes; selecting a class opens that subject/class's daily activities, lesson plan/workplan, worksheets, marking guidance and matching approved teaching resources together. Keep the teacher work-plan nearby; place each worksheet in the matching subject box for the same day and class.
+- Student and authorized Education Officer views use the same subject/class/curriculum alignment, but expose only the records and actions appropriate to their role. A student sees their own assigned learning; an Education Officer sees approved curriculum and coverage material, not a teacher's private workspace.
 - Student worksheets must be real, printable and downloadable—not merely descriptive placeholders.
 - Each worksheet must match the exact approved concept and achievement indicator for the learner's class, term, week and day.
 - Link worksheets and progress to the registered learner identity, school, class and country, subject to privacy and safeguarding approval.
