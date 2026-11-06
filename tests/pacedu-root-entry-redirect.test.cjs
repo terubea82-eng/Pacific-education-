@@ -31,6 +31,13 @@ test("default PacEdu entry opens business Page 1, then Welcome Page 2 and Worksp
   await expect.poll(() => page.evaluate(() => localStorage.getItem("pacificEducationRegistrationCountryCode"))).toBe("FJ");
   await expect.poll(() => page.evaluate(() => localStorage.getItem("pacificEducationRegistrationLanguage"))).toBe("ur");
 
+  await page.locator("#paceduWelcomeBack").click();
+  await page.waitForURL((url) => /\/src\/business-advertising\.html$/.test(url.pathname), { timeout: 15000 });
+  await page.getByRole("link", { name: /Next: Welcome/ }).click();
+  await page.waitForURL((url) => /\/src\/index\.html$/.test(url.pathname) && url.searchParams.get("entry") === "welcome", { timeout: 15000 });
+  await expect(page.locator("#paceduWelcomeCountry")).toBeVisible();
+  await expect(page.locator("#paceduWelcomeLanguage")).toBeVisible();
+
   await page.locator("#welcomeNextButton").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
   await expect(page.locator("#paceduPageRules")).toContainText("Workspaces and rules");
