@@ -34,7 +34,19 @@ assert.deepEqual(Array.from(api.resolve("Social Science", "Class 4").worksheetSo
 assert.deepEqual(Array.from(api.resolve("Health", "Class 4").worksheetSourceSubjects), ["Healthy Living", "Physical Education"]);
 assert.deepEqual(Array.from(api.resolve("Arts", "Class 4").worksheetSourceSubjects), ["Arts and Crafts", "Music"]);
 assert.equal(api.resolve("Phonics", "Class 1").contentStatus, "CONTENT_PARTIAL");
-assert.equal(api.resolve("Science", "Form 6").contentStatus, "CONTENT_PARTIAL");
+assert.equal(api.resolve("Science", "Class 1").label, "Elementary Science");
+assert.equal(api.resolve("Science", "Class 6").label, "Elementary Science");
+assert.equal(api.resolve("Science", "Class 7").label, "Basic Science");
+assert.equal(api.resolve("Science", "Form 4").label, "Basic Science");
+assert.equal(api.resolve("Science", "Class 1").contentStatus, "CONTENT_PARTIAL");
+assert.equal(api.resolve("Science", "Class 7").contentStatus, "CONTENT_PARTIAL");
+for (const level of ["Class 8", "Form 5", "Form 6", "Form 7"]) {
+  const blocked = api.resolve("Science", level);
+  assert.equal(blocked.status, "level-gap", level + " must not receive generic Science content");
+  assert.equal(blocked.contentStatus, "CONTENT_NOT_AVAILABLE", level + " requires an approved course mapping");
+  assert.equal(blocked.worksheetSourceSubjects.length, 0, level + " must not substitute a generic worksheet");
+  assert.equal(blocked.weeklyActivitySourceSubjects.length, 0, level + " must not substitute generic weekly activities");
+}
 for (const subject of ["Agriculture", "Home Economics", "Computer Studies"]) {
   assert.equal(api.resolve(subject, "Class 3").contentStatus, "CONTENT_PARTIAL");
   assert.deepEqual(Array.from(api.resolve(subject, "Class 3").worksheetSourceSubjects), [subject]);
