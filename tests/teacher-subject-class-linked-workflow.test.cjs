@@ -86,4 +86,19 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.getByRole("button", { name: "Print teacher instructions / Save as PDF", exact: true })).toBeEnabled();
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationSubject"))).toBe("Science");
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationClassLevel"))).toBe("Class 2");
+
+  // Simulate the dashboard renderer replacing both controls after initial load.
+  await page.evaluate(() => {
+    const grid=document.getElementById("paceduTeacherSubjectGrid");
+    const list=document.getElementById("paceduTeacherClassList");
+    grid.replaceWith(Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"}));
+    list.replaceWith(Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"}));
+  });
+  await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid #paceduTeacherClassList")).toHaveCount(1);
+  expect(await page.evaluate(() => {
+    const grid=document.getElementById("paceduTeacherSubjectGrid");
+    const list=document.getElementById("paceduTeacherClassList");
+    return !!(grid&&list&&grid.contains(list));
+  })).toBe(true);
 });
