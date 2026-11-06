@@ -31,7 +31,7 @@ var GATEWAY = {
 /* One page-back authority for the complete pilot sequence. */
 var BACK = {
   paceduPageVision: [1, "welcome"],
-  paceduPageRules: [2, "vision"],
+  paceduPageRules: [1, "welcome"],
   pacificEducationIdentityRegistration: [3, "rules"],
   prototypeAccess: [4, "registration"],
   levelSelection: [5, "prototype"],
@@ -495,9 +495,9 @@ function revealTarget(targetId){
 
 /* Visible page-by-page sequence guide. This is navigation UI only; it does not change speech. */
 var PAGE_GUIDE = {
-  pacificEducationWelcome:[1,"Welcome"],
-  paceduPageVision:[2,"Pacific Education vision"],
-  paceduPageRules:[3,"Pilot rules and agreement"],
+  pacificEducationWelcome:[2,"Welcome, country and language"],
+  paceduPageVision:[2,"Welcome, country and language"],
+  paceduPageRules:[3,"Workspaces and rules"],
   pacificEducationIdentityRegistration:[4,"User registration"],
   prototypeAccess:[5,"Prototype access"],
   levelSelection:[6,"Learning level"],
@@ -1121,7 +1121,7 @@ function bindGatewayCaptureFallback(){
     event.preventDefault();
     event.stopImmediatePropagation();
     if(id==="welcomeNextButton"){
-      try{if(gateway(2)!==true)showGatewayFallback(2);}catch(error){showGatewayFallback(2);}
+      try{if(gateway(3)!==true)showGatewayFallback(3);}catch(error){showGatewayFallback(3);}
     }else if(id==="paceduVisionNext"){
       try{if(gateway(3)!==true)showGatewayFallback(3);}catch(error){showGatewayFallback(3);}
     }else{
@@ -1242,7 +1242,7 @@ function init(){
 
   document.body.setAttribute("data-pe-navigation-owner","single");
 
-  bind("welcomeNextButton",function(){ gateway(2); });
+  bind("welcomeNextButton",function(){ gateway(3); });
   bind("paceduVisionNext",function(){ gateway(3); });
   bind("paceduRulesContinue",function(button){
     if(!button.disabled) guided(3,"pacificEducationIdentityRegistration");
