@@ -321,7 +321,8 @@
         dashboardObserver.observe(host,{childList:true,subtree:true});
         if(observedParent){
           parentObserver=new MutationObserver(function(){
-            if(document.getElementById(hostId)!==observedHost)queueTeacherCheck();
+            var current=document.getElementById(hostId);
+            if(current!==observedHost || (current && current.parentNode!==observedParent))queueTeacherCheck();
           });
           parentObserver.observe(observedParent,{childList:true});
         }
