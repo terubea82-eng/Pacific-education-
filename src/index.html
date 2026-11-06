@@ -21,7 +21,8 @@
 (function(){
   try{
     var params=new URLSearchParams(window.location.search);
-    if(!params.has("entry") && !window.location.hash){
+    var entry=params.get("entry")||"";
+    if(entry!=="welcome" && entry!=="registration" && !window.location.hash){
       window.location.replace("./business-advertising.html");
     }
   }catch(error){}
