@@ -855,6 +855,7 @@ function bindAllBackButtons(){
   Object.keys(BACK).forEach(ensureBackButton);
   /* The legacy in-page Back buttons remain visible alongside the single
      page-level Back control. Route both through the same current page owner. */
+  bind("paceduWelcomeBack",function(){ window.location.href="./business-advertising.html"; });
   bind("paceduVisionBack",function(){
     document.documentElement.removeAttribute("data-pacedu-entry-advanced");
     gateway(1);
