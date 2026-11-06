@@ -939,13 +939,16 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       var code=countryCodes[countryName]||"OTHER";
       try{
         localStorage.setItem("pacificEducationWelcomeCountryName",countryName);
+        localStorage.setItem("pacificEducationWelcomeCountryCode",code);
         localStorage.setItem("pacificEducationRegistrationCountryCode",code);
         localStorage.setItem("pacificEducationCurriculumCountryCode",code);
         localStorage.setItem("pacificEducationRegistrationCountry",countryName);
       }catch(e){}
       if(registrationCountry&&registrationCountry.value!==code){
+        registrationCountry.setAttribute("data-pe-welcome-sync","true");
         registrationCountry.value=code;
         registrationCountry.dispatchEvent(new Event("change",{bubbles:true}));
+        registrationCountry.removeAttribute("data-pe-welcome-sync");
       }
     }
     function syncWelcomeLanguage(){
@@ -954,11 +957,14 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       var code=languageCodes[languageName]||"other";
       try{
         localStorage.setItem("pacificEducationWelcomeLanguageName",languageName);
+        localStorage.setItem("pacificEducationWelcomeLanguageCode",code);
         localStorage.setItem("pacificEducationRegistrationLanguage",code);
       }catch(e){}
       if(registrationLanguage&&registrationLanguage.value!==code){
+        registrationLanguage.setAttribute("data-pe-welcome-sync","true");
         registrationLanguage.value=code;
         registrationLanguage.dispatchEvent(new Event("change",{bubbles:true}));
+        registrationLanguage.removeAttribute("data-pe-welcome-sync");
       }
     }
     if(welcomeCountry)welcomeCountry.addEventListener("change",syncWelcomeCountry);
