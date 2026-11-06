@@ -208,37 +208,129 @@
     var indicatorLabel=node("label","Verified achievement indicator / curriculum reference");
     var indicator=node("input"); indicator.type="text"; indicator.maxLength=240; indicator.placeholder="Enter the official indicator reference";
     indicatorLabel.appendChild(indicator); aids.appendChild(indicatorLabel);
+    function aidField(labelText,tagName,placeholder,rows){
+      var label=node("label",labelText);
+      label.style.cssText="display:block;margin:9px 0;font-weight:600;";
+      var control=node(tagName);
+      control.style.cssText="display:block;width:100%;max-width:100%;box-sizing:border-box;min-height:42px;padding:9px;margin-top:4px;border:1px solid #8aa5b8;border-radius:6px;font:inherit;";
+      if(placeholder)control.placeholder=placeholder;
+      if(tagName==="textarea"){control.rows=rows||3;control.maxLength=2400;}
+      else control.maxLength=240;
+      label.appendChild(control);aids.appendChild(label);return control;
+    }
+    var activityId=aidField("Activity ID this resource belongs to","input","Enter the exact daily activity ID");
+    var weekSelect=aidField("Teaching week","select","");
+    function syncAidWeeks(){
+      var maxWeeks=String(termSelect&&termSelect.value||window.localStorage.getItem("pacificEducationTerm")||"T1")==="T3"?5:9;
+      var previous=weekSelect.value;
+      weekSelect.textContent="";
+      for(var w=1;w<=maxWeeks;w++){var wo=node("option","Week "+w);wo.value=String(w);weekSelect.appendChild(wo);}
+      if(Number(previous)>0&&Number(previous)<=maxWeeks)weekSelect.value=previous;
+    }
+    syncAidWeeks();
+    if(termSelect)termSelect.addEventListener("change",syncAidWeeks);
+    var daySelect=aidField("Teaching day","select","");
+    for(var d=1;d<=5;d++){var dayOption=node("option","Day "+d);dayOption.value=String(d);daySelect.appendChild(dayOption);}
+    var aidTitle=aidField("Teaching aid title","input","Give the card, chart, diagram or worked example a clear title");
     var objectiveLabel=node("label","Learning objective and resource notes");
+    objectiveLabel.style.cssText="display:block;margin:9px 0;font-weight:600;";
     var objective=node("textarea"); objective.rows=4; objective.maxLength=1800; objective.placeholder="Enter the approved learning objective, key facts, worked steps or visual description. Do not invent curriculum content.";
+    objective.style.cssText="display:block;width:100%;box-sizing:border-box;padding:9px;margin-top:4px;font:inherit;";
     objectiveLabel.appendChild(objective); aids.appendChild(objectiveLabel);
-    var aidStatus=node("p","Draft only — PENDING_TEACHER_REVIEW. This builder does not verify the curriculum source or publish the resource.");
+    var teacherInstructions=aidField("Teacher instructions","textarea","Explain how the teacher should introduce and use this aid",4);
+    var studentVersion=aidField("Student version / accessible description","textarea","Describe what the learner sees, reads, hears or handles",4);
+    var sourceLicence=aidField("Source and licence / ownership","input","e.g. Original PacEdu draft or exact source and licence");
+    var formats=node("fieldset");
+    formats.style.cssText="margin:10px 0;padding:10px;border:1px solid #9bb0bd;border-radius:8px;";
+    formats.appendChild(node("legend","Accessible formats available"));
+    var formatInputs=[];
+    [["large-print","Large print"],["screen-reader-text","Screen-reader text"],["tactile","Tactile / touch format"],["verbal-description","Verbal description"],["captions","Captions"]].forEach(function(item){
+      var label=node("label",item[1]);label.style.cssText="display:flex;gap:8px;align-items:center;margin:7px 0;";
+      var check=node("input");check.type="checkbox";check.value=item[0];check.style.cssText="width:22px;height:22px;flex:0 0 auto;";
+      label.insertBefore(check,label.firstChild);formats.appendChild(label);formatInputs.push(check);
+    });
+    aids.appendChild(formats);
+    var teacherNote=aidField("Accessibility and adaptation note","textarea","Explain any adjustment or alternative response format",3);
+    var aidStatus=node("p","Draft only — PENDING_TEACHER_REVIEW. Saved drafts stay on this device. The builder does not verify curriculum sources or publish resources.");
     aidStatus.setAttribute("role","status"); aidStatus.setAttribute("aria-live","polite"); aids.appendChild(aidStatus);
+    function buildAidRecord(){
+      var term=String(termSelect&&termSelect.value||window.localStorage.getItem("pacificEducationTerm")||"T1");
+      var selectedFormats=formatInputs.filter(function(x){return x.checked;}).map(function(x){return x.value;});
+      var missing=[];
+      [[activityId,"activity ID"],[aidTitle,"teaching aid title"],[indicator,"curriculum reference"],[objective,"learning objective"],[teacherInstructions,"teacher instructions"],[studentVersion,"student version / accessible description"],[sourceLicence,"source and licence / ownership"],[teacherNote,"accessibility note"]].forEach(function(pair){if(!String(pair[0].value||"").trim())missing.push(pair[1]);});
+      if(!selectedFormats.length)missing.push("at least one accessible format");
+      if(!Number(weekSelect.value)||!Number(daySelect.value))missing.push("teaching week and day");
+      if(missing.length){aidStatus.textContent="Complete these required resource fields first: "+missing.join(", ")+". No draft has been saved.";return null;}
+      return {
+        id:String(activityId.value).trim()+"-AID-"+Date.now(),
+        activityId:String(activityId.value).trim(),
+        subject:subject,
+        level:levelValue,
+        term:term,
+        week:Number(weekSelect.value),
+        day:Number(daySelect.value),
+        resourceType:aidType.value,
+        title:String(aidTitle.value).trim(),
+        achievementIndicator:String(indicator.value).trim(),
+        learningObjective:String(objective.value).trim(),
+        teacherInstructions:String(teacherInstructions.value).trim(),
+        studentVersion:String(studentVersion.value).trim(),
+        sourceLicence:String(sourceLicence.value).trim(),
+        accessibilityFormats:selectedFormats,
+        teacherNote:String(teacherNote.value).trim(),
+        reviewStatus:"PENDING_TEACHER_REVIEW",
+        curriculumVerification:"NOT_YET_MAPPED",
+        approved:false,
+        published:false,
+        createdAt:(new Date()).toISOString()
+      };
+    }
+    var saveAid=node("button","Save teaching aid draft on this device");saveAid.type="button";
+    saveAid.style.cssText="display:block;width:100%;min-height:46px;padding:10px;margin:8px 0;font:inherit;font-weight:700;";
+    saveAid.addEventListener("click",function(){
+      var record=buildAidRecord();if(!record)return;
+      try{
+        var key="paceduTeacherTeachingAidDraftsV1";
+        var rows=JSON.parse(window.localStorage.getItem(key)||"[]");
+        if(!Array.isArray(rows))rows=[];
+        rows.push(record);
+        window.localStorage.setItem(key,JSON.stringify(rows));
+        aidStatus.textContent="Saved on this device: "+record.title+" — PENDING_TEACHER_REVIEW. It is not approved, uploaded or published.";
+      }catch(error){aidStatus.textContent="This device could not save the draft. No upload or publication occurred.";}
+    });
+    aids.appendChild(saveAid);
     var aidDownload=node("button","Download teaching aid brief (.txt)"); aidDownload.type="button";
     aidDownload.addEventListener("click",function(){
-      if(!indicator.value.trim()||!objective.value.trim()){
-        aidStatus.textContent="Enter the verified curriculum reference and learning objective before downloading.";
-        return;
-      }
-      var term=String(window.localStorage.getItem("pacificEducationTerm")||"T1");
+      var record=buildAidRecord();if(!record)return;
       var content=[
         "PACEDU TEACHER RESOURCE BRIEF",
         "Status: PENDING_TEACHER_REVIEW",
-        "Subject: "+subject,
-        "Class: "+levelValue,
-        "Term: "+term,
-        "Resource type: "+aidType.options[aidType.selectedIndex].text,
-        "Curriculum reference: "+indicator.value.trim(),
+        "Activity ID: "+record.activityId,
+        "Subject: "+record.subject,
+        "Class: "+record.level,
+        "Term / week / day: "+record.term+" / "+record.week+" / "+record.day,
+        "Resource type: "+record.resourceType,
+        "Title: "+record.title,
+        "Curriculum reference: "+record.achievementIndicator,
         "Learning objective and resource notes:",
-        objective.value.trim(),
+        record.learningObjective,
+        "Teacher instructions:",record.teacherInstructions,
+        "Student version / accessible description:",record.studentVersion,
+        "Source and licence / ownership:",record.sourceLicence,
+        "Accessible formats: "+record.accessibilityFormats.join(", "),
+        "Accessibility note:",record.teacherNote,
         "",
-        "Teacher check: verify the official source, class, term, week, day and objective before use."
+        "Curriculum verification: NOT_YET_MAPPED",
+        "Approval: No",
+        "Publication: No",
+        "Teacher check: verify the official source, exact class, term, week, day and objective before use."
       ].join("\n");
       var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
       var url=window.URL.createObjectURL(blob);
       var link=node("a","Download resource brief"); link.href=url; link.download="PacEdu-"+subject.replace(/[^a-z0-9]+/gi,"-")+"-"+String(levelValue).replace(/[^a-z0-9]+/gi,"-")+"-teaching-aid.txt";
       aids.appendChild(link); link.click(); link.remove();
       window.setTimeout(function(){window.URL.revokeObjectURL(url);},1000);
-      aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW until checked.";
+      aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW; it is not approved or published.";
     });
     aids.appendChild(aidDownload);
     panel.appendChild(aids);
