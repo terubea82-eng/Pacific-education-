@@ -56,11 +56,11 @@ html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="
   display: none !important;
   visibility: hidden !important;
 }
-html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main > :not(#pacificEducationIdentityRegistration) {
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main :not(#pacificEducationIdentityRegistration):not(:has(#pacificEducationIdentityRegistration)) {
   display: none !important;
   visibility: hidden !important;
 }
-html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main > #pacificEducationIdentityRegistration {
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main #pacificEducationIdentityRegistration {
   display: block !important;
   visibility: visible !important;
 }
