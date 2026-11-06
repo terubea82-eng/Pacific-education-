@@ -64,11 +64,18 @@
     var roster = window.PacificEducationTeacherClassRosterContext;
     var classInfo = null;
     try { classInfo = roster && classId && roster.getClass ? roster.getClass(classId) : null; } catch (_) {}
+    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
+    var subjectLabel = subject;
+    var subjectMappingApi = window.PacEduFijiSubjectMapping || window.PacEduFijiNineSubjectMapping;
+    try {
+      var subjectMapping = subjectMappingApi && typeof subjectMappingApi.resolve === "function" ? subjectMappingApi.resolve(subject, levelValue) : null;
+      if(subjectMapping && subjectMapping.label) subjectLabel = subjectMapping.label;
+    } catch (_) {}
     var panel = node("section");
     panel.id = PANEL_ID;
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
-    panel.appendChild(node("h3", subject + " — " + selectedClass.textContent.trim()));
+    panel.appendChild(node("h3", subjectLabel + " — " + selectedClass.textContent.trim()));
     panel.appendChild(node("p", "Only two resource types are provided here. Use a learner's latest reviewed evidence when available; missing or pending work does not mean low ability."));
     /* Keep the visible workspace to the two requested resource types.
        Existing linked-plan actions remain callable by the resource-1 buttons. */
@@ -120,7 +127,6 @@
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
     var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
-    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
       evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
     } else {
@@ -264,7 +270,8 @@
       return {
         id:String(activityId.value).trim()+"-AID-"+Date.now(),
         activityId:String(activityId.value).trim(),
-        subject:subject,
+        subject:subjectLabel,
+        subjectKey:subject,
         level:levelValue,
         term:term,
         week:Number(weekSelect.value),
@@ -307,6 +314,7 @@
         "Status: PENDING_TEACHER_REVIEW",
         "Activity ID: "+record.activityId,
         "Subject: "+record.subject,
+        "Internal subject key: "+record.subjectKey,
         "Class: "+record.level,
         "Term / week / day: "+record.term+" / "+record.week+" / "+record.day,
         "Resource type: "+record.resourceType,
@@ -327,7 +335,7 @@
       ].join("\n");
       var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
       var url=window.URL.createObjectURL(blob);
-      var link=node("a","Download resource brief"); link.href=url; link.download="PacEdu-"+subject.replace(/[^a-z0-9]+/gi,"-")+"-"+String(levelValue).replace(/[^a-z0-9]+/gi,"-")+"-teaching-aid.txt";
+      var link=node("a","Download resource brief"); link.href=url; link.download="PacEdu-"+subjectLabel.replace(/[^a-z0-9]+/gi,"-")+"-"+String(levelValue).replace(/[^a-z0-9]+/gi,"-")+"-teaching-aid.txt";
       aids.appendChild(link); link.click(); link.remove();
       window.setTimeout(function(){window.URL.revokeObjectURL(url);},1000);
       aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW; it is not approved or published.";
