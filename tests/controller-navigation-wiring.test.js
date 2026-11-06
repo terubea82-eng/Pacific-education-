@@ -321,8 +321,9 @@ test("five-page public journey starts with business advertising and combines wel
   assert.match(controller, /paceduPageRules:\[3,"Workspaces and rules"\]/);
   assert.match(controller, /paceduPageRules: \[1, "welcome"\]/);
   assert.match(controller, /bind\("welcomeNextButton",function\(\)\{ gateway\(3\); \}\)/);
-  assert.match(controller, /bind\("paceduRulesBack",function\(\)\{[\s\S]*?gateway\(1\);/);
+  assert.match(controller, /\["paceduVisionBack","paceduRulesBack"\]\.forEach/);
+  assert.match(controller, /legacyBack\.hidden=true/);
   assert.match(controller, /bind\("paceduWelcomeBack",function\(\)\{ window\.location\.href="\.\/business-advertising\.html"; \}\)/);
-  assert.match(controller, /bind\("paceduVisionBack",function\(\)\{[\s\S]*?gateway\(1\);/);
+
   assert.match(controller, /if\(gateway\(3\)!==true\)showGatewayFallback\(3\)/);
 });
