@@ -212,6 +212,7 @@
     if(oldShell)return;
     var shell=node("section");
     shell.id="paceduTeacherDailyLearningOnlyShell";
+    shell.setAttribute("data-pacedu-step-two-clean","true");
     shell.setAttribute("aria-label","Student daily activities and matching workplans");
     shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
     var heading=node("h2","My Teaching Workspace — Subject Boxes, Daily Activities & Teacher Resources");
