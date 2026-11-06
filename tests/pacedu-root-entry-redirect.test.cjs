@@ -26,6 +26,11 @@ test("default PacEdu entry opens business Page 1, then Welcome Page 2 and Worksp
   await expect(page.locator("#paceduWelcomeCountry")).toBeVisible();
   await expect(page.locator("#paceduWelcomeLanguage")).toBeVisible();
 
+  await page.locator("#paceduWelcomeCountry").selectOption("Fiji|+679");
+  await page.locator("#paceduWelcomeLanguage").selectOption({ label: "Urdu" });
+  await expect.poll(() => page.evaluate(() => localStorage.getItem("pacificEducationRegistrationCountryCode"))).toBe("FJ");
+  await expect.poll(() => page.evaluate(() => localStorage.getItem("pacificEducationRegistrationLanguage"))).toBe("ur");
+
   await page.locator("#welcomeNextButton").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
   await expect(page.locator("#paceduPageRules")).toContainText("Workspaces and rules");
@@ -33,4 +38,14 @@ test("default PacEdu entry opens business Page 1, then Welcome Page 2 and Worksp
   await page.locator("#pacificEducationBack_paceduPageRules").click();
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await expect(page.locator("#paceduWelcomeCountry")).toBeVisible();
+
+  await page.locator("#welcomeNextButton").click();
+  await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await page.locator("#paceduRulesAgreement").check();
+  await page.locator("#paceduRulesContinue").click();
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#pacificEducationCountrySelect")).toHaveValue("FJ");
+  await expect(page.locator("#pacificEducationLanguageSelect")).toHaveValue("ur");
+  await expect(page.locator("#pacificEducationCountryStatus")).toContainText("Fiji");
+  await expect(page.locator("#pacificEducationLanguageStatus")).toContainText("Urdu");
 });
