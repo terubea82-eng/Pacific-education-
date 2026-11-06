@@ -172,7 +172,8 @@
     });
     /* A stale data-ready flag is not proof that the subject grid still exists.
        Recover an empty/partial grid instead of leaving Teacher Step 2 blank. */
-    if(grid.getAttribute("data-ready")==="true"&&completeGrid)return;
+    if(grid.getAttribute("data-ready")==="true"&&completeGrid&&
+       host.contains(list)&&grid.contains(list))return;
     grid.textContent="";
     grid.removeAttribute("data-ready");
     grid.setAttribute("data-ready","true");
