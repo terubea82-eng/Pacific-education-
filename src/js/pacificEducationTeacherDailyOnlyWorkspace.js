@@ -212,7 +212,12 @@
   function renderDailyLearningOnly(host,grid,list,planPanel){
     if(!host||!grid||!list)return;
     var oldShell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
-    if(oldShell)return;
+    if(oldShell){
+      /* If the role router rebuilt only the subject grid, reattach the existing
+         linked-plan panel to the first subject box instead of losing teacher tools. */
+      if(planPanel&&!grid.contains(planPanel)&&grid.firstElementChild)grid.firstElementChild.appendChild(planPanel);
+      return;
+    }
     var shell=node("section");
     shell.id="paceduTeacherDailyLearningOnlyShell";
     shell.setAttribute("aria-label","Student daily activities and matching workplans");
