@@ -7,6 +7,16 @@ test("teacher subject selection shows every class and links the class to matchin
   await page.evaluate(() => {
     document.body.innerHTML = '<main><section id="teacherDashboard"><section id="pacificEducationTeacherQuickAnswer">Quick Manual Answer Entry</section><section id="teacherPerformancePanel">Teacher Daily Activity & Performance</section><div id="paceduTeacherSubjectGrid" data-ready="true"></div><div id="paceduTeacherClassList"></div></section></main>';
     localStorage.clear();
+    /* Simulate a stale "ready" grid whose buttons survived but whose class
+       selector was replaced outside the subject grid by dashboard rendering. */
+    const grid=document.getElementById("paceduTeacherSubjectGrid");
+    grid.setAttribute("data-ready","true");
+    ["English","Mathematics","Phonics","Science","Social Science","Health","Agriculture","Arts","Technology","Home Economics","Computer Studies","Vosa Vakaviti (iTaukei)","Fiji Hindi","Urdu","Rotuman"].forEach(subject=>{
+      const button=document.createElement("button");
+      button.setAttribute("data-pacedu-teacher-subject",subject);
+      button.textContent=subject;
+      grid.appendChild(button);
+    });
     window.PacificEducationTeacherClassRosterContext = {
       getClasses() {
         return {
