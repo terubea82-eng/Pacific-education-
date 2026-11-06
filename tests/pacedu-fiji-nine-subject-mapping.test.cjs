@@ -3,6 +3,7 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 
 const source = fs.readFileSync("src/js/paceduFijiNineSubjectMapping.js", "utf8");
+const teacherWorkspace = fs.readFileSync("src/js/pacificEducationTeacherDailyOnlyWorkspace.js", "utf8");
 const window = {};
 vm.runInNewContext(source, { window, Object, String, Array });
 const api = window.PacEduFijiSubjectMapping;
@@ -61,3 +62,8 @@ assert.equal(api.resolve("English", "Form 1").status, "level-gap");
 assert.equal(api.resolve("unknown", "Class 1").status, "SUBJECT_NOT_MAPPED");
 
 console.log("PASS: exact 15 Fiji subject boxes; ECE, Classes 1–8, Forms 3–7; explicit partial/missing content; legacy API alias; no unsupported subject substitution.");
+
+assert.match(teacherWorkspace, /var displaySubject=mapping&&mapping\.label\?mapping\.label:subject/);
+assert.match(teacherWorkspace, /selectedButton\.textContent=displaySubject/);
+assert.match(teacherWorkspace, /displaySubject\+" — "\+item\.level\+" Daily Activities"/);
+console.log("PASS: teacher subject box uses the level-specific Fiji science label and keeps generic senior science content blocked.");
