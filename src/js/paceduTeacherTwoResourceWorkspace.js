@@ -147,7 +147,7 @@
     worksheets.appendChild(evidence);
     var api = window.PacEduDownloadableClassPacks;
     var worksheetAvailability = api && typeof api.resolveSubject === "function" ? api.resolveSubject(subject, levelValue) : { available: true, note: "" };
-    var aidCreationBlocked=!!(subjectMapping&&(subjectMapping.status==="missing"||subjectMapping.status==="level-gap"||subjectMapping.contentStatus==="CONTENT_NOT_AVAILABLE"))||!worksheetAvailability.available;
+    var aidCreationBlocked=!!(subjectMapping&&(subjectMapping.status==="missing"||subjectMapping.status==="level-gap"||subjectMapping.contentStatus==="CONTENT_NOT_AVAILABLE"))||!worksheetAvailability||!worksheetAvailability.available;
     if(aidCreationBlocked){
       worksheets.appendChild(node("p","Teaching-aid creation is locked for this subject and class until an approved curriculum mapping and matching content are available. No other subject's material will be substituted."));
       panel.appendChild(worksheets);
