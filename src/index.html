@@ -916,6 +916,71 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
     target.appendChild(sections[0]);
     target.appendChild(sections[1]);
     target.setAttribute("data-ready","true");
+    var welcomeCountry=document.getElementById("paceduWelcomeCountry");
+    var welcomeLanguage=document.getElementById("paceduWelcomeLanguage");
+    var registrationCountry=document.getElementById("pacificEducationCountrySelect");
+    var registrationLanguage=document.getElementById("pacificEducationLanguageSelect");
+    var countryCodes={
+      "Fiji":"FJ","Papua New Guinea":"PG","Solomon Islands":"SB","Vanuatu":"VU",
+      "Samoa":"WS","Tonga":"TO","Tuvalu":"TV","Kiribati":"KI",
+      "Australia":"AU","New Zealand":"NZ","France":"OTHER",
+      "United Kingdom":"OTHER","United States":"OTHER","India":"OTHER","Other":"OTHER"
+    };
+    var languageCodes={
+      "English":"en-AU","Vosa Vakaviti / iTaukei":"fj","Hindi":"hi","Urdu":"ur",
+      "French":"fr","Fijian Hindi":"hi","Tok Pisin":"tpi","Hiri Motu":"ho",
+      "Bislama":"bi","Samoan":"sm","Tongan":"to","Tuvaluan":"tvl",
+      "Kiribati / Gilbertese":"gil","Other language":"other",
+      "Mandarin Chinese":"other","Arabic":"other","Spanish":"other"
+    };
+    function syncWelcomeCountry(){
+      if(!welcomeCountry||!welcomeCountry.value)return;
+      var countryName=welcomeCountry.value.split("|")[0];
+      var code=countryCodes[countryName]||"OTHER";
+      try{
+        localStorage.setItem("pacificEducationWelcomeCountryName",countryName);
+        localStorage.setItem("pacificEducationRegistrationCountryCode",code);
+        localStorage.setItem("pacificEducationCurriculumCountryCode",code);
+        localStorage.setItem("pacificEducationRegistrationCountry",countryName);
+      }catch(e){}
+      if(registrationCountry&&registrationCountry.value!==code){
+        registrationCountry.value=code;
+        registrationCountry.dispatchEvent(new Event("change",{bubbles:true}));
+      }
+    }
+    function syncWelcomeLanguage(){
+      if(!welcomeLanguage||!welcomeLanguage.value)return;
+      var languageName=welcomeLanguage.options[welcomeLanguage.selectedIndex].textContent;
+      var code=languageCodes[languageName]||"other";
+      try{
+        localStorage.setItem("pacificEducationWelcomeLanguageName",languageName);
+        localStorage.setItem("pacificEducationRegistrationLanguage",code);
+      }catch(e){}
+      if(registrationLanguage&&registrationLanguage.value!==code){
+        registrationLanguage.value=code;
+        registrationLanguage.dispatchEvent(new Event("change",{bubbles:true}));
+      }
+    }
+    if(welcomeCountry)welcomeCountry.addEventListener("change",syncWelcomeCountry);
+    if(welcomeLanguage)welcomeLanguage.addEventListener("change",syncWelcomeLanguage);
+    try{
+      var savedCountry=localStorage.getItem("pacificEducationWelcomeCountryName")||"";
+      if(savedCountry&&welcomeCountry){
+        Array.prototype.some.call(welcomeCountry.options,function(option){
+          if(option.value.split("|")[0]===savedCountry){welcomeCountry.value=option.value;return true;}
+          return false;
+        });
+        syncWelcomeCountry();
+      }
+      var savedLanguage=localStorage.getItem("pacificEducationWelcomeLanguageName")||"";
+      if(savedLanguage&&welcomeLanguage){
+        Array.prototype.some.call(welcomeLanguage.options,function(option){
+          if(option.textContent===savedLanguage){welcomeLanguage.value=option.value;return true;}
+          return false;
+        });
+        syncWelcomeLanguage();
+      }
+    }catch(e){}
   }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",moveChoices);
   else moveChoices();
