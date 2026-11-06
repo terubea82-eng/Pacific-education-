@@ -74,7 +74,7 @@
     if(kind==="country"){
       announce(s.countryCode?"Country selected: "+countryName(s.countryCode)+".":"Please choose your country.");
     }else{
-      announce(s.languageCode?"Language selected: "+(s.language.options[s.language.selectedIndex]||{}).text+".":"Please choose your language.");
+      announce(s.languageCode?"Language selected: "+languageName(s.languageCode,s.language)+".":"Please choose your language.");
     }
   }
   function restore(){
