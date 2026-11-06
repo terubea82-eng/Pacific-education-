@@ -853,17 +853,17 @@ function ensureBackButton(targetId){
 
 function bindAllBackButtons(){
   Object.keys(BACK).forEach(ensureBackButton);
-  /* The legacy in-page Back buttons remain visible alongside the single
-     page-level Back control. Route both through the same current page owner. */
+  /* Keep exactly one Back control visible on each guided page. The old static
+     Vision/Rules Back buttons would duplicate the active page-level control. */
+  ["paceduVisionBack","paceduRulesBack"].forEach(function(id){
+    var legacyBack=el(id);
+    if(legacyBack){
+      legacyBack.hidden=true;
+      legacyBack.setAttribute("aria-hidden","true");
+      legacyBack.style.setProperty("display","none","important");
+    }
+  });
   bind("paceduWelcomeBack",function(){ window.location.href="./business-advertising.html"; });
-  bind("paceduVisionBack",function(){
-    document.documentElement.removeAttribute("data-pacedu-entry-advanced");
-    gateway(1);
-  });
-  bind("paceduRulesBack",function(){
-    document.documentElement.removeAttribute("data-pacedu-entry-advanced");
-    gateway(1);
-  });
 }
 
 function syncActiveBackButton(targetId){
