@@ -170,7 +170,15 @@
   }
   function init(){
     var host=document.getElementById(hostId),grid=document.getElementById("paceduTeacherSubjectGrid"),list=document.getElementById("paceduTeacherClassList");
-    if(!host||!grid||!list||grid.getAttribute("data-ready")==="true")return;
+    if(!host||!grid||!list)return;
+    /* The role workspace may be inserted or rebuilt after the first DOM-ready
+       pass. Reinitialise only when the local subject controls are genuinely gone. */
+    if(grid.getAttribute("data-ready")==="true" &&
+       grid.querySelector('[data-pacedu-teacher-subject]') &&
+       list.isConnected)return;
+    grid.removeAttribute("data-ready");
+    grid.textContent="";
+    list.textContent="";
     grid.setAttribute("data-ready","true");
     grid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:14px 0;";
     SUBJECTS.forEach(function(subject){
@@ -266,9 +274,64 @@
       observer.observe(document.getElementById(hostId)||document.body,{childList:true,subtree:true});
     }
   }
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
-  else init();
-  window.addEventListener("load",function(){init();observeCleanTeacherStepTwo();});
+  var initQueued=false;
+  function scheduleInit(){
+    if(initQueued)return;
+    initQueued=true;
+    window.setTimeout(function(){initQueued=false;init();},0);
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",scheduleInit,{once:true});
+  else scheduleInit();
+  window.addEventListener("load",function(){scheduleInit();observeCleanTeacherStepTwo();},{once:true});
   if(document.readyState!=="loading")observeCleanTeacherStepTwo();
   else document.addEventListener("DOMContentLoaded",observeCleanTeacherStepTwo);
+
+  /* Watch only the teacher dashboard and its immediate parent. This recovers
+     subject/class controls when the role router replaces that workspace, without
+     observing unrelated app-wide mutations. */
+  if(window.MutationObserver){
+    var dashboardObserver=null;
+    var parentObserver=null;
+    var observedHost=null;
+    var observedParent=null;
+    var observerQueued=false;
+    function checkTeacherDashboard(){
+      observerQueued=false;
+      var host=document.getElementById(hostId);
+      if(!host)return;
+      if(host!==observedHost){
+        if(dashboardObserver)dashboardObserver.disconnect();
+        if(parentObserver)parentObserver.disconnect();
+        observedHost=host;
+        observedParent=host.parentNode;
+        dashboardObserver=new MutationObserver(function(){
+          var current=document.getElementById(hostId);
+          var grid=current&&current.querySelector("#paceduTeacherSubjectGrid");
+          var list=current&&current.querySelector("#paceduTeacherClassList");
+          if(current&&grid&&list&&
+             (!grid.querySelector('[data-pacedu-teacher-subject]') ||
+              grid.getAttribute("data-ready")!=="true"))queueTeacherCheck();
+        });
+        dashboardObserver.observe(host,{childList:true,subtree:true});
+        if(observedParent){
+          parentObserver=new MutationObserver(function(){
+            if(document.getElementById(hostId)!==observedHost)queueTeacherCheck();
+          });
+          parentObserver.observe(observedParent,{childList:true});
+        }
+      }
+      var grid=document.getElementById("paceduTeacherSubjectGrid");
+      var list=document.getElementById("paceduTeacherClassList");
+      if(grid&&list&&
+         (!grid.querySelector('[data-pacedu-teacher-subject]') ||
+          grid.getAttribute("data-ready")!=="true" || !list.isConnected))scheduleInit();
+    }
+    function queueTeacherCheck(){
+      if(observerQueued)return;
+      observerQueued=true;
+      window.setTimeout(checkTeacherDashboard,40);
+    }
+    checkTeacherDashboard();
+  }
+  window.PacEduTeacherDailyOnlyWorkspace=Object.freeze({refresh:init});
 })(window,document);
