@@ -305,7 +305,7 @@
       observerQueued=false;
       var host=document.getElementById(hostId);
       if(!host)return;
-      if(host!==observedHost){
+      if(host!==observedHost || host.parentNode!==observedParent){
         if(dashboardObserver)dashboardObserver.disconnect();
         if(parentObserver)parentObserver.disconnect();
         observedHost=host;
