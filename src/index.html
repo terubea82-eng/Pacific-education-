@@ -15,6 +15,18 @@
   } catch (error) {}
 })();
 </script>
+<script>
+/* The public journey begins on the separate Page 1 business-advertising screen.
+   Explicit entry routes (welcome/registration) and deep links remain available. */
+(function(){
+  try{
+    var params=new URLSearchParams(window.location.search);
+    if(!params.has("entry") && !window.location.hash){
+      window.location.replace("./business-advertising.html");
+    }
+  }catch(error){}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -875,6 +887,11 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 <p>Pacedu is designed to connect learning, daily activities, practice, assessment, progress and education support in one step-by-step platform.</p>
 <p>Its purpose is to help make meaningful education more accessible across Pacific communities, support teachers and families, and help learners continue learning even when circumstances or connectivity are difficult.</p>
 </section>
+<section id="paceduWelcomeCountryLanguage" class="pacedu-entry-card" aria-label="Choose your country and preferred language" style="margin:18px 0 0;padding:16px;border:2px solid #174f63;border-radius:14px;background:#fff;">
+<h2>🌍 Your Country and Language</h2>
+<p>Choose your country and preferred language before continuing. These choices guide registration; automatic translation is not claimed as active.</p>
+<div id="paceduWelcomeCountryLanguageChoices" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;"></div>
+</section>
 <div id="pacificEducationWelcomeVoice" aria-live="polite">
 <p><strong>Voice welcome:</strong> Hear the introduction, use AI Playback, or say <strong>Next</strong> to continue.</p>
 <button type="button" id="pacificEducationAIPlaybackButton" aria-label="Play single-narrator AI Playback about Pacific Education" style="background:#000;color:#fff;border:2px solid #000;border-radius:8px;font-weight:700;padding:12px 16px;">▶️ AI Playback — Pacific Education</button>
@@ -884,8 +901,26 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 <p><a href="./device-test.html" id="pacificEducationDeviceTestLink">📱 Test this phone or computer speaker and browser</a></p>
 </div>
 </div>
-<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" class="pacific-mandatory-next pacedu-real-next" aria-label="Next: Pacific Education Vision, Mission and Purpose">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Say Next</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
+<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" class="pacific-mandatory-next pacedu-real-next" aria-label="Next: Workspaces and rules">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Say Next</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
 </section>
+<script>
+/* Reuse the existing country/language controls on Page 2; do not duplicate IDs
+   or create a second registration selector. Run before navigation initializes. */
+(function(){
+  function moveChoices(){
+    var source=document.querySelector("#paceduPageVision .pacedu-entry-grid");
+    var target=document.getElementById("paceduWelcomeCountryLanguageChoices");
+    if(!source||!target||target.getAttribute("data-ready")==="true") return;
+    var sections=source.querySelectorAll(":scope > section");
+    if(sections.length<2) return;
+    target.appendChild(sections[0]);
+    target.appendChild(sections[1]);
+    target.setAttribute("data-ready","true");
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",moveChoices);
+  else moveChoices();
+})();
+</script>
 
 <section id="pacificEducationPilotPages" aria-label="Pacific Education pilot welcome pages" hidden>
   <article id="paceduPageVision" class="pacedu-entry-page" aria-labelledby="paceduVisionTitle">
