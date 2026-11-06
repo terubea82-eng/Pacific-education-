@@ -779,6 +779,12 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   // Replacing the two local controls must recover the subject buttons without
   // observing unrelated page changes or creating an app-wide observer loop.
   await page.evaluate(() => {
+    const host=document.getElementById("teacherDashboard");
+    const movedParent=document.createElement("section");
+    movedParent.id="paceduTeacherDashboardMovedParent";
+    host.parentNode.appendChild(movedParent);
+    movedParent.appendChild(host);
+
     const grid=document.getElementById("paceduTeacherSubjectGrid");
     const replacementGrid=Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"});
     const replacementList=Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"});
