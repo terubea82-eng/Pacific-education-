@@ -116,3 +116,27 @@ test("all four ability packs remain available when no reviewed evidence exists",
   expect(await page.evaluate(() => window.__downloadedPack)).toEqual({ level: "Form 4", subject: "Science", term: "T1", ability: "support" });
   await expect(panel).toContainText("Prepared 25 daily activities plus term revision practice and a mock practice examination");
 });
+
+
+test("unmapped senior Science cannot open generic worksheets or teaching-aid creation", async ({ page }) => {
+  await openIsolatedFixture(page);
+  await page.evaluate(() => {
+    document.body.className = "";
+    document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="Science" aria-pressed="true">Science</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="form-6" aria-pressed="true">Form 6</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
+    window.PacificEducationTeacherClassRosterContext = {
+      getClass(id) { return id === "form-6" ? { level: "Form 6", studentRefs: [] } : null; }
+    };
+    window.PacEduDownloadableClassPacks = {
+      resolveSubject() { return { available: true, note: "fixture resolver only" }; },
+      download() { throw new Error("Generic senior Science pack must not be generated"); }
+    };
+  });
+  await page.addScriptTag({ url: "./js/paceduFijiNineSubjectMapping.js" });
+  await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
+  await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
+  const panel = page.locator("#paceduTeacherTwoResourcePanel");
+  await expect(panel.getByRole("heading", { name: /Senior Science — approved course required — Form 6/ })).toBeVisible();
+  await expect(panel).toContainText("Teaching-aid creation is locked");
+  await expect(panel.getByRole("button", { name: /Save teaching aid draft/ })).toHaveCount(0);
+  await expect(panel.getByRole("button", { name: /Prepare .* pack/ })).toHaveCount(0);
+});
