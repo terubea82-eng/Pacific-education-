@@ -945,7 +945,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
         localStorage.setItem("pacificEducationCurriculumCountryCode",code);
         localStorage.setItem("pacificEducationRegistrationCountry",countryName);
       }catch(e){}
-      if(registrationCountry&&registrationCountry.value!==code){
+      if(registrationCountry){
         registrationCountry.setAttribute("data-pe-welcome-sync","true");
         registrationCountry.value=code;
         registrationCountry.dispatchEvent(new Event("change",{bubbles:true}));
@@ -961,7 +961,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
         localStorage.setItem("pacificEducationWelcomeLanguageCode",code);
         localStorage.setItem("pacificEducationRegistrationLanguage",code);
       }catch(e){}
-      if(registrationLanguage&&registrationLanguage.value!==code){
+      if(registrationLanguage){
         registrationLanguage.setAttribute("data-pe-welcome-sync","true");
         registrationLanguage.value=code;
         registrationLanguage.dispatchEvent(new Event("change",{bubbles:true}));
