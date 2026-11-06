@@ -105,7 +105,7 @@
   function installPanel(){
     var doc=global.document;
     var host=doc&&doc.getElementById("paceduTeacherDailyLearningOnlyShell");
-    if(!host||doc.getElementById("paceduAssessmentBlueprintPanel"))return;
+    if(!host||host.getAttribute("data-pacedu-step-two-clean")==="true"||doc.getElementById("paceduAssessmentBlueprintPanel"))return;
     function node(tag,txt,parent){var n=doc.createElement(tag);if(txt!=null)n.textContent=txt;if(parent)parent.appendChild(n);return n;}
     function select(label,id,values,parent){var l=node("label",label,parent);l.style.cssText="display:block;margin:8px 0;font-weight:600";var s=node("select",null,l);s.id=id;s.style.cssText="display:block;width:100%;min-height:42px;padding:8px;font:inherit";values.forEach(function(v){var o=node("option",v.label,s);o.value=v.value;});return s;}
     var panel=node("section",null,host);panel.id="paceduAssessmentBlueprintPanel";panel.style.cssText="margin-top:16px;padding:14px;border:1px solid #c8d7e2;border-radius:10px";
