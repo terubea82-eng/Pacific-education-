@@ -49,6 +49,40 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await expect(panel.getByRole("button", { name: "Prepare Advanced pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
   await panel.getByRole("button", { name: "Prepare Expected pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
+
+  await expect(panel.getByRole("heading", { name: "3. Teacher Resource & Teaching Aid Builder", exact: true })).toBeVisible();
+  await panel.getByRole("button", { name: "Save teaching aid draft on this device" }).click();
+  await expect(panel).toContainText("Complete these required resource fields first");
+  expect(await page.evaluate(() => localStorage.getItem("paceduTeacherTeachingAidDraftsV1"))).toBeNull();
+
+  await panel.getByLabel("Activity ID this resource belongs to").fill("EN-C1-T1-W1-D1");
+  await panel.getByLabel("Teaching aid title").fill("Letter S teaching card");
+  await panel.getByLabel("Verified achievement indicator / curriculum reference").fill("Teacher to verify official indicator reference");
+  await panel.getByLabel("Learning objective and resource notes").fill("Identify the letter S and its sound.");
+  await panel.getByLabel("Teacher instructions").fill("Model the letter S and its sound.");
+  await panel.getByLabel("Student version / accessible description").fill("Large letter S card with a spoken description.");
+  await panel.getByLabel("Source and licence / ownership").fill("Original PacEdu draft; teacher review required.");
+  await panel.getByLabel("Accessibility and adaptation note").fill("Offer large print, screen-reader text and verbal description.");
+  await panel.getByLabel("Large print").check();
+  await panel.getByLabel("Screen-reader text").check();
+  await panel.getByLabel("Verbal description").check();
+  await panel.getByRole("button", { name: "Save teaching aid draft on this device" }).click();
+  await expect(panel).toContainText("PENDING_TEACHER_REVIEW. It is not approved, uploaded or published.");
+  const savedAid = await page.evaluate(() => JSON.parse(localStorage.getItem("paceduTeacherTeachingAidDraftsV1") || "[]")[0]);
+  expect(savedAid).toMatchObject({
+    activityId: "EN-C1-T1-W1-D1",
+    subject: "English",
+    level: "Class 1",
+    term: "T1",
+    week: 1,
+    day: 1,
+    title: "Letter S teaching card",
+    reviewStatus: "PENDING_TEACHER_REVIEW",
+    curriculumVerification: "NOT_YET_MAPPED",
+    approved: false,
+    published: false
+  });
+  expect(savedAid.accessibilityFormats).toEqual(["large-print", "screen-reader-text", "verbal-description"]);
 });
 
 test("all four ability packs remain available when no reviewed evidence exists", async ({ page }) => {
