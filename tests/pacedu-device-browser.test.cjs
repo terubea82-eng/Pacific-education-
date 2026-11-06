@@ -780,9 +780,10 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   // observing unrelated page changes or creating an app-wide observer loop.
   await page.evaluate(() => {
     const grid=document.getElementById("paceduTeacherSubjectGrid");
-    const list=document.getElementById("paceduTeacherClassList");
-    grid.replaceWith(Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"}));
-    list.replaceWith(Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"}));
+    const replacementGrid=Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"});
+    const replacementList=Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"});
+    replacementGrid.appendChild(replacementList);
+    grid.replaceWith(replacementGrid);
   });
   await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
   const observerRunaways = await page.evaluate(() => window.__paceduObserverRunaways || []);
