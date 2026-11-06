@@ -782,10 +782,13 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
     const grid=document.getElementById("paceduTeacherSubjectGrid");
     const replacementGrid=Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"});
     const replacementList=Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"});
+    const replacementPlans=Object.assign(document.createElement("section"),{id:"pacificEducationLinkedTeacherPlans"});
     replacementGrid.appendChild(replacementList);
+    replacementGrid.appendChild(replacementPlans);
     grid.replaceWith(replacementGrid);
   });
   await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid .pacedu-teacher-subject-card #pacificEducationLinkedTeacherPlans")).toHaveCount(1);
   const observerRunaways = await page.evaluate(() => window.__paceduObserverRunaways || []);
   expect(observerRunaways, "Teacher Dashboard observers must not run away").toEqual([]);
 });
