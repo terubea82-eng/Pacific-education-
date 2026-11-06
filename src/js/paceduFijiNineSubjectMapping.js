@@ -46,18 +46,36 @@
     if (!subject) return { status:"SUBJECT_NOT_MAPPED", subject:subjectId || "", level:level || "" };
     var support = levelSupport(level);
     var status = subject.status;
+    var displayLabel = subject.label;
+    var note = subject.note;
+    var contentStatus = subject.status === "missing" ? "CONTENT_NOT_AVAILABLE" :
+      (subject.status === "partial" ? "CONTENT_PARTIAL" : "CONTENT_AVAILABLE_DRAFT");
+    if (subject.id === "Science") {
+      if (/^Class [1-6]$/.test(String(level || ""))) {
+        displayLabel = "Elementary Science";
+        note = "Class 1–6: display and review this subject as Elementary Science. The current official syllabus outcomes and daily sequence still require teacher verification.";
+      } else if (/^Class 7$|^Form [3-4]$/.test(String(level || ""))) {
+        displayLabel = "Basic Science";
+        note = "Class 7–Form 4: display and review this subject as Basic Science. The current official syllabus outcomes and daily sequence still require teacher verification.";
+      } else {
+        status = "level-gap";
+        contentStatus = "CONTENT_NOT_AVAILABLE";
+        displayLabel = /^Form [5-7]$/.test(String(level || "")) ?
+          "Senior Science — approved course required" : "Science — curriculum mapping required";
+        note = "A generic Science worksheet is blocked for this level. Form 5–7 requires a separately selected, currently approved senior course (for example Biology or Chemistry where offered); Class 8 also requires explicit curriculum mapping. No other subject or course will be substituted.";
+      }
+    }
     if (!support.worksheetEngine || !support.weeklyActivityEngine) status = "level-gap";
     return {
       subject:subject.id,
-      label:subject.label,
+      label:displayLabel,
       level:level,
       status:status,
-      contentStatus:subject.status === "missing" ? "CONTENT_NOT_AVAILABLE" :
-        (subject.status === "partial" ? "CONTENT_PARTIAL" : "CONTENT_AVAILABLE_DRAFT"),
-      worksheetSourceSubjects:subject.worksheet.slice(),
-      weeklyActivitySourceSubjects:subject.weekly.slice(),
+      contentStatus:contentStatus,
+      worksheetSourceSubjects:status === "level-gap" ? [] : subject.worksheet.slice(),
+      weeklyActivitySourceSubjects:status === "level-gap" ? [] : subject.weekly.slice(),
       levelSupport:support,
-      note:subject.note,
+      note:note,
       curriculumVerification:"NOT_YET_MAPPED"
     };
   }
