@@ -177,7 +177,7 @@
   }
   function installTeacherPanel() {
     var host = global.document && global.document.getElementById("paceduTeacherDailyLearningOnlyShell");
-    if (!host || global.document.getElementById("paceduFijiWeeklyCurriculumPanel")) return;
+    if (!host || host.getAttribute("data-pacedu-step-two-clean")==="true" || global.document.getElementById("paceduFijiWeeklyCurriculumPanel")) return;
     var doc = global.document;
     function el(tag, text, parent) { var n = doc.createElement(tag); if (text != null) n.textContent = text; if (parent) parent.appendChild(n); return n; }
     function select(label, id, options, parent) {
