@@ -853,6 +853,16 @@ function ensureBackButton(targetId){
 
 function bindAllBackButtons(){
   Object.keys(BACK).forEach(ensureBackButton);
+  /* The legacy in-page Back buttons remain visible alongside the single
+     page-level Back control. Route both through the same current page owner. */
+  bind("paceduVisionBack",function(){
+    document.documentElement.removeAttribute("data-pacedu-entry-advanced");
+    gateway(1);
+  });
+  bind("paceduRulesBack",function(){
+    document.documentElement.removeAttribute("data-pacedu-entry-advanced");
+    gateway(1);
+  });
 }
 
 function syncActiveBackButton(targetId){
