@@ -30,6 +30,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
       section.append(h, p); holder.appendChild(section);
     }};
   });
+  await page.addScriptTag({ url: "./js/paceduTeachingAidQualityGate.js" });
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
@@ -68,6 +69,8 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await panel.getByLabel("Verbal description").check();
   await panel.getByRole("button", { name: "Save teaching aid draft on this device" }).click();
   await expect(panel).toContainText("PENDING_TEACHER_REVIEW. It is not approved, uploaded or published.");
+  await expect(panel).toContainText("Quality gate: PENDING_SOURCE");
+  await expect(panel).toContainText("Verified pre-revision Fiji curriculum source");
   const savedAid = await page.evaluate(() => JSON.parse(localStorage.getItem("paceduTeacherTeachingAidDraftsV1") || "[]")[0]);
   expect(savedAid).toMatchObject({
     activityId: "EN-C1-T1-W1-D1",
@@ -79,6 +82,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
     title: "Letter S teaching card",
     reviewStatus: "PENDING_TEACHER_REVIEW",
     curriculumVerification: "NOT_YET_MAPPED",
+    qualityGateStatus: "PENDING_SOURCE",
     approved: false,
     published: false
   });
