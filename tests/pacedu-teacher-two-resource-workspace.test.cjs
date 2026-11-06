@@ -96,9 +96,11 @@ test("all four ability packs remain available when no reviewed evidence exists",
     };
     window.PacEduDownloadableClassPacks = { download(options) { window.__downloadedPack = options; return { dailyActivities: 25, missingSlots: 0 }; } };
   });
+  await page.addScriptTag({ url: "./js/paceduFijiNineSubjectMapping.js" });
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
+  await expect(panel.getByRole("heading", { name: /Basic Science — Form 4/ })).toBeVisible();
   const labels = [
     "Prepare Foundation pack: daily activities + revision + mock exam (no reviewed marks yet)",
     "Prepare Developing pack: daily activities + revision + mock exam (no reviewed marks yet)",
