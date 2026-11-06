@@ -30,6 +30,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
       section.append(h, p); holder.appendChild(section);
     }};
   });
+  await page.addScriptTag({ url: "./js/paceduTeachingAidQualityGate.js" });
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
@@ -49,6 +50,43 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await expect(panel.getByRole("button", { name: "Prepare Advanced pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
   await panel.getByRole("button", { name: "Prepare Expected pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
+
+  await expect(panel.getByRole("heading", { name: "3. Teacher Resource & Teaching Aid Builder", exact: true })).toBeVisible();
+  await panel.getByRole("button", { name: "Save teaching aid draft on this device" }).click();
+  await expect(panel).toContainText("Complete these required resource fields first");
+  expect(await page.evaluate(() => localStorage.getItem("paceduTeacherTeachingAidDraftsV1"))).toBeNull();
+
+  await panel.getByLabel("Activity ID this resource belongs to").fill("EN-C1-T1-W1-D1");
+  await panel.getByLabel("Teaching aid title").fill("Letter S teaching card");
+  await panel.getByLabel("Verified achievement indicator / curriculum reference").fill("Teacher to verify official indicator reference");
+  await panel.getByLabel("Learning objective and resource notes").fill("Identify the letter S and its sound.");
+  await panel.getByLabel("Teacher instructions").fill("Model the letter S and its sound.");
+  await panel.getByLabel("Student version / accessible description").fill("Large letter S card with a spoken description.");
+  await panel.getByLabel("Source and licence / ownership").fill("Original PacEdu draft; teacher review required.");
+  await panel.getByLabel("Accessibility and adaptation note").fill("Offer large print, screen-reader text and verbal description.");
+  await panel.getByLabel("Large print").check();
+  await panel.getByLabel("Screen-reader text").check();
+  await panel.getByLabel("Verbal description").check();
+  await panel.getByRole("button", { name: "Save teaching aid draft on this device" }).click();
+  await expect(panel).toContainText("PENDING_TEACHER_REVIEW. It is not approved, uploaded or published.");
+  await expect(panel).toContainText("Quality gate: PENDING_SOURCE");
+  await expect(panel).toContainText("Verified pre-revision Fiji curriculum source");
+  const savedAid = await page.evaluate(() => JSON.parse(localStorage.getItem("paceduTeacherTeachingAidDraftsV1") || "[]")[0]);
+  expect(savedAid).toMatchObject({
+    activityId: "EN-C1-T1-W1-D1",
+    subject: "English",
+    level: "Class 1",
+    term: "T1",
+    week: 1,
+    day: 1,
+    title: "Letter S teaching card",
+    reviewStatus: "PENDING_TEACHER_REVIEW",
+    curriculumVerification: "NOT_YET_MAPPED",
+    qualityGateStatus: "PENDING_SOURCE",
+    approved: false,
+    published: false
+  });
+  expect(savedAid.accessibilityFormats).toEqual(["large-print", "screen-reader-text", "verbal-description"]);
 });
 
 test("all four ability packs remain available when no reviewed evidence exists", async ({ page }) => {
@@ -62,9 +100,11 @@ test("all four ability packs remain available when no reviewed evidence exists",
     };
     window.PacEduDownloadableClassPacks = { download(options) { window.__downloadedPack = options; return { dailyActivities: 25, missingSlots: 0 }; } };
   });
+  await page.addScriptTag({ url: "./js/paceduFijiNineSubjectMapping.js" });
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
+  await expect(panel.getByRole("heading", { name: /Basic Science — Form 4/ })).toBeVisible();
   const labels = [
     "Prepare Foundation pack: daily activities + revision + mock exam (no reviewed marks yet)",
     "Prepare Developing pack: daily activities + revision + mock exam (no reviewed marks yet)",
@@ -75,4 +115,28 @@ test("all four ability packs remain available when no reviewed evidence exists",
   await panel.getByRole("button", { name: labels[0], exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedPack)).toEqual({ level: "Form 4", subject: "Science", term: "T1", ability: "support" });
   await expect(panel).toContainText("Prepared 25 daily activities plus term revision practice and a mock practice examination");
+});
+
+
+test("unmapped senior Science cannot open generic worksheets or teaching-aid creation", async ({ page }) => {
+  await openIsolatedFixture(page);
+  await page.evaluate(() => {
+    document.body.className = "";
+    document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="Science" aria-pressed="true">Science</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="form-6" aria-pressed="true">Form 6</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
+    window.PacificEducationTeacherClassRosterContext = {
+      getClass(id) { return id === "form-6" ? { level: "Form 6", studentRefs: [] } : null; }
+    };
+    window.PacEduDownloadableClassPacks = {
+      resolveSubject() { return { available: true, note: "fixture resolver only" }; },
+      download() { throw new Error("Generic senior Science pack must not be generated"); }
+    };
+  });
+  await page.addScriptTag({ url: "./js/paceduFijiNineSubjectMapping.js" });
+  await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
+  await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
+  const panel = page.locator("#paceduTeacherTwoResourcePanel");
+  await expect(panel.getByRole("heading", { name: /Senior Science — approved course required — Form 6/ })).toBeVisible();
+  await expect(panel).toContainText("Teaching-aid creation is locked");
+  await expect(panel.getByRole("button", { name: /Save teaching aid draft/ })).toHaveCount(0);
+  await expect(panel.getByRole("button", { name: /Prepare .* pack/ })).toHaveCount(0);
 });
