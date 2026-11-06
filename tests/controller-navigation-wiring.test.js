@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 
 const html = fs.readFileSync("src/index.html", "utf8");
+const businessPage = fs.readFileSync("src/business-advertising.html", "utf8");
 const controller = fs.readFileSync("src/js/pacificEducationSingleNavigationController.js", "utf8");
 const voiceNavigation = fs.readFileSync("src/js/pacificEducationMandatoryVoiceNavigation.js", "utf8");
 const boxActivation = fs.readFileSync("src/js/pacificEducation856BoxActivation.js", "utf8");
@@ -305,4 +306,20 @@ test("successful registration-to-workspace handoff removes a stale recovery scre
   const registration = fs.readFileSync("src/js/pacificEducationMandatoryBoxSequence.js", "utf8");
   assert.ok(registration.includes('var staleRecovery=get("paceduWorkspaceHandoffRecovery");'));
   assert.ok(registration.includes('if(staleRecovery) staleRecovery.remove();'));
+});
+
+
+test("five-page public journey starts with business advertising and combines welcome with country/language", () => {
+  assert.match(html, /window\.location\.replace\("\.\/business-advertising\.html"\)/);
+  assert.match(businessPage, /Page 1 of 5/);
+  assert.match(businessPage, /href="\.\/index\.html\?entry=welcome"/);
+  assert.match(html, /id="paceduWelcomeCountryLanguageChoices"/);
+  assert.match(html, /function moveChoices\(\)/);
+  assert.match(html, /target\.appendChild\(sections\[0\]\)/);
+  assert.match(html, /target\.appendChild\(sections\[1\]\)/);
+  assert.match(controller, /pacificEducationWelcome:\[2,"Welcome, country and language"\]/);
+  assert.match(controller, /paceduPageRules:\[3,"Workspaces and rules"\]/);
+  assert.match(controller, /paceduPageRules: \[1, "welcome"\]/);
+  assert.match(controller, /bind\("welcomeNextButton",function\(\)\{ gateway\(3\); \}\)/);
+  assert.match(controller, /if\(gateway\(3\)!==true\)showGatewayFallback\(3\)/);
 });
