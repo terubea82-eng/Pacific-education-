@@ -163,7 +163,18 @@
   }
   function init(){
     var host=document.getElementById(hostId),grid=document.getElementById("paceduTeacherSubjectGrid"),list=document.getElementById("paceduTeacherClassList");
-    if(!host||!grid||!list||grid.getAttribute("data-ready")==="true")return;
+    if(!host||!grid||!list)return;
+    var existingButtons=grid.querySelectorAll("[data-pacedu-teacher-subject]");
+    var completeGrid=existingButtons.length===SUBJECTS.length&&SUBJECTS.every(function(subject){
+      return Array.prototype.some.call(existingButtons,function(button){
+        return button.getAttribute("data-pacedu-teacher-subject")===subject;
+      });
+    });
+    /* A stale data-ready flag is not proof that the subject grid still exists.
+       Recover an empty/partial grid instead of leaving Teacher Step 2 blank. */
+    if(grid.getAttribute("data-ready")==="true"&&completeGrid)return;
+    grid.textContent="";
+    grid.removeAttribute("data-ready");
     grid.setAttribute("data-ready","true");
     grid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:14px 0;";
     SUBJECTS.forEach(function(subject){
