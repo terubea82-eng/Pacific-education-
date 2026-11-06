@@ -35,7 +35,7 @@ test("default PacEdu entry opens business Page 1, then Welcome Page 2 and Worksp
   await expect(page.locator("#paceduPageRules")).toBeVisible();
   await expect(page.locator("#paceduPageRules")).toContainText("Workspaces and rules");
 
-  await page.locator("#pacificEducationBack_paceduPageRules").click();
+  await page.locator("#paceduRulesBack").click();
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await expect(page.locator("#paceduWelcomeCountry")).toBeVisible();
 
