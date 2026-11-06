@@ -36,10 +36,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  browser-tests:
-    name: Chromium desktop and phone viewport tests
+  regression:
+    name: PacEdu software regression suite
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Run existing Pacedu software regression suite
+        run: npm test
+
+  browser-tests:
+    name: Chromium ${{ matrix.group_name }} viewport tests
+    needs: regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - group_name: device interactions
+            tests: tests/pacedu-device-browser.test.cjs
+          - group_name: entry and accessibility
+            tests: tests/pacedu-root-entry-redirect.test.cjs tests/pacedu-breathing-focus-guide.test.cjs
+          - group_name: registration flow
+            tests: tests/pacedu-registration-scroll.test.cjs tests/pacedu-registration-workspace-visibility.test.cjs tests/student-registration-workspace-handoff.test.cjs
+          - group_name: teacher workspace
+            tests: tests/teacher-quick-manual-answer-entry.test.cjs tests/linked-teacher-plans-require-class.test.cjs tests/pacedu-teacher-two-resource-workspace.test.cjs
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -52,8 +79,6 @@ jobs:
       - name: Install Chromium browser
         timeout-minutes: 5
         run: npx playwright install chromium
-      - name: Run existing Pacedu software regression suite
-        run: npm test
       - name: Start local static server
         shell: bash
         run: |
@@ -69,7 +94,7 @@ jobs:
         env:
           PACEDU_TEST_URL: http://127.0.0.1:4173/src/index.html?entry=welcome
           PACEDU_DEVICE_TEST_URL: http://127.0.0.1:4173/src/device-test.html
-        run: npx playwright test tests/pacedu-root-entry-redirect.test.cjs tests/pacedu-device-browser.test.cjs tests/pacedu-breathing-focus-guide.test.cjs tests/pacedu-registration-scroll.test.cjs tests/pacedu-registration-workspace-visibility.test.cjs tests/student-registration-workspace-handoff.test.cjs tests/teacher-quick-manual-answer-entry.test.cjs tests/linked-teacher-plans-require-class.test.cjs tests/pacedu-teacher-two-resource-workspace.test.cjs --reporter=line
+        run: npx playwright test ${{ matrix.tests }} --reporter=line
       - name: Stop local static server
         if: always()
         run: |
