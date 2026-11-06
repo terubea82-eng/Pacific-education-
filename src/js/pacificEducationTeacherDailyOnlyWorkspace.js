@@ -258,18 +258,46 @@
       if(el!==grid&&el!==shell&&!el.contains(grid)&&!el.contains(shell))el.remove();
     });
   }
+  var teacherStepTwoObserver=null;
+  var teacherStepTwoInitQueued=false;
+  function queueTeacherStepTwoInit(){
+    if(teacherStepTwoInitQueued)return;
+    teacherStepTwoInitQueued=true;
+    window.setTimeout(function(){
+      teacherStepTwoInitQueued=false;
+      var host=document.getElementById(hostId);
+      var grid=document.getElementById("paceduTeacherSubjectGrid");
+      var list=document.getElementById("paceduTeacherClassList");
+      if(!host||!grid||!list)return;
+      var buttons=grid.querySelectorAll("[data-pacedu-teacher-subject]");
+      var complete=buttons.length===SUBJECTS.length&&SUBJECTS.every(function(subject){
+        return Array.prototype.some.call(buttons,function(button){
+          return button.getAttribute("data-pacedu-teacher-subject")===subject;
+        });
+      });
+      /* Re-run the existing builder only when a dashboard mutation has
+         detached/replaced part of the subject-and-class workflow. */
+      if(grid.getAttribute("data-ready")!=="true"||!complete||
+         !host.contains(list)||!grid.contains(list))init();
+      cleanTeacherStepTwo();
+    },0);
+  }
   function observeCleanTeacherStepTwo(){
     cleanTeacherStepTwo();
-    if(window.MutationObserver&&document.body){
-      var cleaning=false;
-      var observer=new MutationObserver(function(){
-        if(cleaning)return;
-        cleaning=true;
-        cleanTeacherStepTwo();
-        cleaning=false;
-      });
-      observer.observe(document.getElementById(hostId)||document.body,{childList:true,subtree:true});
-    }
+    if(!window.MutationObserver||!document.body||teacherStepTwoObserver)return;
+    var cleaning=false;
+    teacherStepTwoObserver=new MutationObserver(function(){
+      if(cleaning)return;
+      cleaning=true;
+      cleanTeacherStepTwo();
+      cleaning=false;
+      queueTeacherStepTwoInit();
+    });
+    /* Observe the body so a replaced Teacher Dashboard host is detected too.
+       The queued check is bounded: a rebuild is followed by one validation
+       pass, and no rebuild occurs once all subject buttons and the class
+       selector are back in their required locations. */
+    teacherStepTwoObserver.observe(document.body,{childList:true,subtree:true});
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
   else init();
