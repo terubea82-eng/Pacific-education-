@@ -292,16 +292,72 @@
         createdAt:(new Date()).toISOString()
       };
     }
+    var aidGateStatus=node("p","Quality gate: not checked yet.");
+    aidGateStatus.setAttribute("role","status");aidGateStatus.setAttribute("aria-live","polite");aids.appendChild(aidGateStatus);
+    var aidGateDetails=node("ul");
+    aidGateDetails.setAttribute("aria-label","Teaching-aid quality gate requirements still missing");
+    aids.appendChild(aidGateDetails);
+    function validateAidDraft(record){
+      var gate=window.PacEduTeachingAidQualityGate;
+      if(!gate||typeof gate.validateActivity!=="function")return null;
+      var objectiveText=record.learningObjective;
+      var activity={
+        id:record.activityId,subject:record.subject,level:record.level,term:record.term,
+        week:record.week,day:record.day,learningObjective:objectiveText,
+        curriculum:{verificationStatus:"PENDING_SOURCE",sourceTitle:"",sourceVersion:"",outcomeOrConcept:"",achievementIndicator:record.achievementIndicator,indicatorStatus:"PENDING_SOURCE"},
+        examples:{worked:"",guided:"",independent:""},
+        abilityGroups:{
+          Copper:{learningObjective:objectiveText,instructions:""},
+          Bronze:{learningObjective:objectiveText,instructions:""},
+          Silver:{learningObjective:objectiveText,instructions:""},
+          Gold:{learningObjective:objectiveText,instructions:""}
+        },
+        worksheet:{id:"",content:""},teacherWorkplan:"",lessonPlan:"",
+        assessment:{method:"",markingGuidance:""},
+        accessibility:{formats:record.accessibilityFormats,teacherNote:record.teacherNote},
+        teachingAids:[{
+          id:record.id,title:record.title,type:record.resourceType,subject:record.subject,
+          level:record.level,term:record.term,week:record.week,day:record.day,
+          activityId:record.activityId,learningObjective:objectiveText,
+          teacherInstructions:record.teacherInstructions,studentVersion:record.studentVersion,
+          sourceLicence:record.sourceLicence,reviewStatus:"READY_FOR_TEACHER_REVIEW",
+          accessibilityFormats:record.accessibilityFormats,indicator:record.achievementIndicator
+        }]
+      };
+      return gate.validateActivity(activity);
+    }
+    function showGateResult(result){
+      aidGateDetails.textContent="";
+      if(!result){
+        aidGateStatus.textContent="Quality gate unavailable. Draft remains PENDING_TEACHER_REVIEW.";
+        return;
+      }
+      aidGateStatus.textContent="Quality gate: "+result.status+". "+result.missing.length+" activity requirement(s) and "+result.missingTeachingAids.length+" teaching-aid requirement(s) still need attention. No release is permitted.";
+      result.missing.concat(result.missingTeachingAids).forEach(function(item){
+        var li=node("li",item);aidGateDetails.appendChild(li);
+      });
+    }
     var saveAid=node("button","Save teaching aid draft on this device");saveAid.type="button";
     saveAid.style.cssText="display:block;width:100%;min-height:46px;padding:10px;margin:8px 0;font:inherit;font-weight:700;";
     saveAid.addEventListener("click",function(){
       var record=buildAidRecord();if(!record)return;
+      var gateResult=validateAidDraft(record);
+      if(gateResult){
+        record.qualityGateStatus=gateResult.status;
+        record.qualityGateMissing=gateResult.missing.slice();
+        record.qualityGateMissingTeachingAids=gateResult.missingTeachingAids.slice();
+      }else{
+        record.qualityGateStatus="NOT_CHECKED";
+        record.qualityGateMissing=[];
+        record.qualityGateMissingTeachingAids=[];
+      }
       try{
         var key="paceduTeacherTeachingAidDraftsV1";
         var rows=JSON.parse(window.localStorage.getItem(key)||"[]");
         if(!Array.isArray(rows))rows=[];
         rows.push(record);
         window.localStorage.setItem(key,JSON.stringify(rows));
+        showGateResult(gateResult);
         aidStatus.textContent="Saved on this device: "+record.title+" — PENDING_TEACHER_REVIEW. It is not approved, uploaded or published.";
       }catch(error){aidStatus.textContent="This device could not save the draft. No upload or publication occurred.";}
     });
