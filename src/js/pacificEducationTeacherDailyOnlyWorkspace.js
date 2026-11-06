@@ -215,7 +215,8 @@
     if(oldShell){
       /* If the role router rebuilt only the subject grid, reattach the existing
          linked-plan panel to the first subject box instead of losing teacher tools. */
-      if(planPanel&&!grid.contains(planPanel)&&grid.firstElementChild)grid.firstElementChild.appendChild(planPanel);
+      var firstSubjectCard=grid.querySelector(".pacedu-teacher-subject-card");
+      if(planPanel&&firstSubjectCard&&!firstSubjectCard.contains(planPanel))firstSubjectCard.appendChild(planPanel);
       return;
     }
     var shell=node("section");
