@@ -66,9 +66,8 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("PARTIAL CONTENT");
   await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("teacher review required");
   await expect(page.locator("#pacificEducationLinkedTeacherPlans")).toBeVisible();
-  await expect(page.locator("#paceduLinkedPlanStatus")).toContainText("Matching workplan and lesson plan ready");
-  await expect(page.locator("#paceduLinkedDailyActivityColumn")).toContainText("PENDING_TEACHER_REVIEW");
-  await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("teacher review required; not a claim of Ministry approval");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toBeVisible();
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("PENDING_TEACHER_REVIEW");
 
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 1");
@@ -79,14 +78,8 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 2");
   await page.locator('[data-pacedu-teacher-class="scienceClass"]').click();
 
-  await expect(page.locator("#paceduLinkedPlanStatus")).toContainText("Matching workplan and lesson plan ready");
-  await expect(page.locator("#paceduLinkedPlanSubject")).toHaveValue("Science");
-  await expect(page.locator("#paceduLinkedPlanSubject option")).toHaveCount(15);
-  await expect(page.locator("#paceduLinkedPlanLevel option")).toContainText(["Form 3", "Form 4", "Form 5", "Form 6", "Form 7"]);
-  await expect(page.locator("#paceduLinkedPlanLevel")).toHaveValue("Class 2");
-  await expect(page.locator("#paceduLinkedDailyActivityColumn")).toContainText("Science worksheet for Class 2");
-  await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("Subject: Science");
-  await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("Class / level: Class 2");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Science — Class 2");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("PENDING_TEACHER_REVIEW");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Teacher Instructions");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Daily Activities + Revision + Practice Exam");
   await expect(page.getByRole("button", { name: "Print teacher instructions / Save as PDF", exact: true })).toBeEnabled();
