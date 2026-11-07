@@ -50,7 +50,8 @@ test("teacher subject selection shows every class and links the class to matchin
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js?v=linked-workflow-test" });
   await page.addScriptTag({ url: "./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=linked-workflow-test" });
 
-  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("Student Daily Activities & Workplans");
+  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toHaveAttribute("aria-label", "Student daily activities and matching workplans");
+  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("My Teaching Workspace");
   await expect(page.locator("#paceduTeacherSubjectGrid button")).toHaveCount(15);
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Home Economics");
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Rotuman");

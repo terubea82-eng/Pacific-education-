@@ -607,6 +607,12 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 (function(window, document) {
   "use strict";
   var started = false;
+  var observer = null;
+  function stopObserver() {
+    if (!observer) return;
+    observer.disconnect();
+    observer = null;
+  }
   function isDirectRegistration() {
     try {
       return new URLSearchParams(window.location.search).get("entry") === "registration" &&
@@ -800,19 +806,26 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
   }
   function boot() {
     bindOpeningDelegation();
-    if (isDirectRegistration()) return;
+    if (isDirectRegistration()) {
+      stopObserver();
+      return;
+    }
     bindRefresh();
     if (!started && document.getElementById("pacificEducationWelcome")) {
       started = showPage("pacificEducationWelcome", 1);
+      if (started) stopObserver();
     }
     bindEarlyNext();
   }
   boot();
-  if (window.MutationObserver && document.documentElement) {
-    var observer = new MutationObserver(boot);
+  if (!started && !isDirectRegistration() && window.MutationObserver && document.documentElement) {
+    observer = new MutationObserver(boot);
     observer.observe(document.documentElement, { childList: true, subtree: true });
   }
-  document.addEventListener("DOMContentLoaded", boot, { once: true });
+  document.addEventListener("DOMContentLoaded", function() {
+    boot();
+    stopObserver();
+  }, { once: true });
 })(window, document);
 </script>
 </head>
@@ -956,7 +969,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 <div class="pacedu-entry-actions">
 <button type="button" id="paceduRulesVoice">🔊 Hear Rules</button>
 <button type="button" id="paceduRulesBack">⬅️ Back</button>
-<a class="pacedu-real-next" id="paceduRulesContinueLink" href="?entry=registration" onclick="try{if(!document.getElementById('paceduRulesAgreement').checked){event.preventDefault();document.getElementById('paceduRulesStatus').textContent='Please tick the agreement first.';return;}sessionStorage.setItem('pacificEducationRulesAccepted','yes');}catch(e){}">➡️ Register or sign in</a>
+<button type="button" class="pacedu-real-next" id="paceduRulesContinue" disabled>➡️ Next — Registration</button>
 </div>
 <p>After registration and any required approval, PacEdu opens your authorised workspace. Workspace access is not activated by this information page alone.</p>
 </div>

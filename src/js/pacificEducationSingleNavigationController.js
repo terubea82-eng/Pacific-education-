@@ -1098,6 +1098,15 @@ function showGatewayFallback(page){
   return !!el(targetId);
 }
 
+function rememberRulesAcceptance(){
+  try{
+    window.sessionStorage.setItem("pacificEducationRulesAccepted","yes");
+    var route=new URL(window.location.href);
+    route.searchParams.set("entry","registration");
+    window.history.replaceState(window.history.state,"",route.pathname+route.search+route.hash);
+  }catch(e){}
+}
+
 function bindGatewayCaptureFallback(){
   if(document.documentElement.getAttribute("data-pe-gateway-capture-bound")==="true") return;
   document.documentElement.setAttribute("data-pe-gateway-capture-bound","true");
@@ -1126,7 +1135,10 @@ function bindGatewayCaptureFallback(){
       try{if(gateway(3)!==true)showGatewayFallback(3);}catch(error){showGatewayFallback(3);}
     }else{
       var agreement=el("paceduRulesAgreement");
-      if(agreement && agreement.checked) guided(3,"pacificEducationIdentityRegistration");
+      if(agreement && agreement.checked){
+        rememberRulesAcceptance();
+        guided(3,"pacificEducationIdentityRegistration");
+      }
     }
   },true);
 }
@@ -1245,7 +1257,10 @@ function init(){
   bind("welcomeNextButton",function(){ gateway(2); });
   bind("paceduVisionNext",function(){ gateway(3); });
   bind("paceduRulesContinue",function(button){
-    if(!button.disabled) guided(3,"pacificEducationIdentityRegistration");
+    if(!button.disabled){
+      rememberRulesAcceptance();
+      guided(3,"pacificEducationIdentityRegistration");
+    }
   });
 
   /* Prototype Access is the final entry gate. Its Next opens the role workspace

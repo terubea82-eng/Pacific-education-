@@ -145,6 +145,8 @@ test("Welcome Next stays in the single-page app and reveals Vision, Rules, then 
   await page.locator("#paceduRulesAgreement").check();
   await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
   await page.locator("#paceduRulesContinue").click();
+  expect(new URL(page.url()).searchParams.get("entry")).toBe("registration");
+  expect(await page.evaluate(() => sessionStorage.getItem("pacificEducationRulesAccepted"))).toBe("yes");
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   await expect(page.locator("#paceduPageRules")).toBeHidden();
   expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);

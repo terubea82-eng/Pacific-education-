@@ -6,8 +6,8 @@ const rootURL = new URL("../index.html", appURL).toString();
 test("repository root opens the Tech Edu landing page and provides a direct PacEdu route", async ({ page }) => {
   await page.goto(rootURL, { waitUntil: "domcontentloaded", timeout: 15000 });
   await page.waitForURL((url) => /\/tech-edu\.html$/.test(url.pathname), { timeout: 15000 });
-  await expect(page).toHaveTitle(/Tech Edu/);
-  await expect(page.getByRole("link", { name: /Get Started with Pacific Education/ })).toBeVisible();
-  await expect(page.locator('a[href="./src/index.html"]').first()).toBeVisible();
+  await expect(page).toHaveTitle(/PacEdu Business Advertising/);
+  await expect(page.getByRole("link", { name: /Education platform/ })).toHaveAttribute("href", "./src/index.html?entry=welcome");
+  await expect(page.locator('a[href="./src/index.html?entry=welcome"]').first()).toBeVisible();
   await expect(page.getByRole("link", { name: /Pilot Privacy Policy/ })).toHaveAttribute("href", "./privacy-policy.html");
 });
