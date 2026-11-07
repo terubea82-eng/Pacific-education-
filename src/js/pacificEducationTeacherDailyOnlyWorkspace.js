@@ -247,10 +247,7 @@
       "paceduFijiWeeklyCurriculumPreview","paceduWorldLibraryToggle",
       "paceduWorldLibraryPanel","paceduRoleActivityPack",
       "paceduRoleActivityResponse","paceduRoleActivityDone",
-      "paceduRoleActivityStatus","paceduLinkedPlanStatus",
-      "paceduLinkedPlanContent","paceduLinkedPlanPreview",
-      "paceduLinkedPlanPrintableText","paceduLinkedDailyActivityColumn",
-      "paceduLinkedWorkplanColumn"
+      "paceduRoleActivityStatus"
     ].forEach(function(id){
       var el=document.getElementById(id);
       if(el&&host.contains(el)&&!el.contains(grid)&&!el.contains(shell))el.remove();
