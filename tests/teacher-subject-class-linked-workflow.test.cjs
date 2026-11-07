@@ -97,11 +97,15 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
   await expect(page.locator("#paceduTeacherSubjectGrid #paceduTeacherClassList")).toHaveCount(1);
   await expect(page.locator("#paceduTeacherSubjectGrid #pacificEducationLinkedTeacherPlans")).toHaveCount(1);
-  await expect(page.locator("#paceduLinkedPlanStatus")).toBeVisible();
+  /* Recovery deliberately hides the old plan until the teacher reselects a class. */
+  await expect(page.locator("#paceduLinkedPlanStatus")).toBeHidden();
   expect(await page.evaluate(() => {
     const grid=document.getElementById("paceduTeacherSubjectGrid");
     const list=document.getElementById("paceduTeacherClassList");
     const plans=document.getElementById("pacificEducationLinkedTeacherPlans");
     return !!(grid&&list&&plans&&grid.contains(list)&&grid.contains(plans));
   })).toBe(true);
+  await page.getByRole("button", { name: "Science", exact: true }).click();
+  await page.locator('[data-pacedu-teacher-class="scienceClass"]').click();
+  await expect(page.locator("#paceduLinkedPlanStatus")).toBeVisible();
 });
