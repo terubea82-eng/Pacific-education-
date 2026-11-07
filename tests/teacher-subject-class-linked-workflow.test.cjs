@@ -63,7 +63,8 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Form 7");
   await expect(page.locator("#paceduTeacherClassList")).not.toContainText("Form 1");
   await page.getByRole("button", { name: "Class 1", exact: true }).click();
-  await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("content is not yet available");
+  await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("PARTIAL CONTENT");
+  await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("teacher review required");
   await expect(page.locator("#pacificEducationLinkedTeacherPlans")).toBeHidden();
 
   await page.getByRole("button", { name: "English", exact: true }).click();
