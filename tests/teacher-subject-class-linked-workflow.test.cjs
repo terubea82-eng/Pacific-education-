@@ -65,7 +65,10 @@ test("teacher subject selection shows every class and links the class to matchin
   await page.getByRole("button", { name: "Class 1", exact: true }).click();
   await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("PARTIAL CONTENT");
   await expect(page.locator("#paceduTeacherSubjectMappingNotice")).toContainText("teacher review required");
-  await expect(page.locator("#pacificEducationLinkedTeacherPlans")).toBeHidden();
+  await expect(page.locator("#pacificEducationLinkedTeacherPlans")).toBeVisible();
+  await expect(page.locator("#paceduLinkedPlanStatus")).toContainText("Matching workplan and lesson plan ready");
+  await expect(page.locator("#paceduLinkedDailyActivityColumn")).toContainText("PENDING_TEACHER_REVIEW");
+  await expect(page.locator("#paceduLinkedPlanPreview")).toContainText("teacher review required; not a claim of Ministry approval");
 
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 1");
