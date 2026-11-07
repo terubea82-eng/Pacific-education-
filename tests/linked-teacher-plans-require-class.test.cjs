@@ -3,6 +3,8 @@ const { test, expect } = require("@playwright/test");
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
 
 test("linked teacher plans require an explicit class before generating a plan", async ({ page }) => {
+  /* Isolate this planner contract from the separate Step 2 workspace observer. */
+  await page.route("**/pacificEducationTeacherDailyOnlyWorkspace.js*", route => route.abort());
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => {
     document.body.innerHTML = '<main><section id="teacherDashboard"></section></main>';
