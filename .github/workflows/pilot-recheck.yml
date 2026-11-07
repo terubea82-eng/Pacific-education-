@@ -151,6 +151,7 @@ jobs:
           root_ok=false
           src_ok=false
           workspace_ok=false
+          english_pack_ok=false
           for attempt in $(seq 1 12); do
             root_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-root.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/?pilot_recheck=$GITHUB_RUN_ID" || true)
             src_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-src.html -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/src/index.html?pilot_recheck=$GITHUB_RUN_ID" || true)
@@ -160,26 +161,31 @@ jobs:
             echo "Portal asset: https://terubea82-eng.github.io/Pacific-education-/js/pacificEducationExternalReviewerPortal.js"
             portal_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-reviewer.js -w "%{http_code}" "https://terubea82-eng.github.io/Pacific-education-/js/pacificEducationExternalReviewerPortal.js?pilot_recheck=$GITHUB_RUN_ID" || true)
             echo "Attempt $attempt: reviewer_portal_js=$portal_code"
-            if [ "$root_code" = "200" ] && [ "$src_code" = "200" ] && [ "$workspace_code" = "200" ] && [ "$portal_code" = "200" ]; then
+            english_pack_code=$(curl -sSL --connect-timeout 10 --max-time 30 -o /tmp/pacific-class1-english.md -w "%{http_code}" "https://raw.githubusercontent.com/terubea82-eng/Pacific-education-/refs/heads/main/docs/curriculum/english-class-1-daily-worksheet-pack.md?pilot_recheck=$GITHUB_RUN_ID" || true)
+            echo "Attempt $attempt: class1_english_pack=$english_pack_code"
+            if [ "$root_code" = "200" ] && [ "$src_code" = "200" ] && [ "$workspace_code" = "200" ] && [ "$portal_code" = "200" ] && [ "$english_pack_code" = "200" ]; then
               echo "Live HTTP checks passed. Content checks are reported separately for CDN/cache diagnostics."
               grep -qi "Pacific Education" /tmp/pacific-root.html || echo "::warning::Root content marker not yet visible on live CDN."
               grep -qi "Pilot User Workspaces" /tmp/pacific-workspaces.js || echo "::warning::Pilot workspace marker not yet visible in the live workspace script."
               grep -qi "External Professional Review Portal" /tmp/pacific-reviewer.js || echo "::warning::Reviewer portal marker not yet visible on live CDN."
+              grep -qi "Class 1 English" /tmp/pacific-class1-english.md || echo "::warning::Class 1 English pack marker not yet visible on raw GitHub CDN."
               root_ok=true
               src_ok=true
               workspace_ok=true
+              english_pack_ok=true
               break
             fi
             sleep 15
           done
-          if [ "$root_ok" != "true" ] || [ "$src_ok" != "true" ] || [ "$workspace_ok" != "true" ]; then
-            echo "::error::GitHub Pages root, guided pilot page, workspace script or Professional Reviewer portal asset was not reachable within the retry window."
+          if [ "$root_ok" != "true" ] || [ "$src_ok" != "true" ] || [ "$workspace_ok" != "true" ] || [ "$english_pack_ok" != "true" ]; then
+            echo "::error::GitHub Pages root, guided pilot page, workspace script, Professional Reviewer portal asset or Class 1 English pack was not reachable within the retry window."
             exit 1
           fi
           echo "GitHub Pages root HTTP status: $root_code"
           echo "GitHub Pages /src/index.html HTTP status: $src_code"
           echo "Pilot workspace script HTTP status: $workspace_code"
           echo "Professional Reviewer portal asset HTTP status: $portal_code"
+          echo "Class 1 English daily activity pack HTTP status: $english_pack_code"
 
       - name: Publish recheck summary
         run: |
@@ -192,7 +198,7 @@ jobs:
             echo "- Pilot integrity guard: PASS"
             echo "- Production gate remains BLOCKED: PASS"
             echo "- Pilot boundary remains separate from production authorization: PASS"
-            echo "- GitHub Pages root, guided page, workspace script and reviewer portal asset: verified by live HTTP checks"
+            echo "- GitHub Pages root, guided page, workspace script, reviewer portal asset and Class 1 English daily activity pack: verified by live HTTP checks"
             echo ""
             echo "Pilot URL: https://terubea82-eng.github.io/Pacific-education-/"
           } >> "$GITHUB_STEP_SUMMARY"
