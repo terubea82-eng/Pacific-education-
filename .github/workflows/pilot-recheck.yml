@@ -168,7 +168,7 @@ jobs:
               grep -qi "Pacific Education" /tmp/pacific-root.html || echo "::warning::Root content marker not yet visible on live CDN."
               grep -qi "Pilot User Workspaces" /tmp/pacific-workspaces.js || echo "::warning::Pilot workspace marker not yet visible in the live workspace script."
               grep -qi "External Professional Review Portal" /tmp/pacific-reviewer.js || echo "::warning::Reviewer portal marker not yet visible on live CDN."
-              grep -qi "Class 1 English" /tmp/pacific-class1-english.md || echo "::warning::Class 1 English pack marker not yet visible on raw GitHub CDN."
+              grep -qi "English Class 1" /tmp/pacific-class1-english.md || echo "::warning::Class 1 English pack marker not yet visible on raw GitHub CDN."
               root_ok=true
               src_ok=true
               workspace_ok=true
