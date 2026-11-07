@@ -53,7 +53,7 @@
       var packTitle=node("h4","Class 1 English — Downloadable Daily Activities (Days 1–5)");
       var packStatus=node("p","This activity pack is linked to the English subject box. TEACHER REVIEW REQUIRED — official curriculum indicators and sequence are not yet verified.");
       var packLink=node("a","Download Class 1 English Daily Activities");
-      packLink.href="https://github.com/terubea82-eng/Pacific-education-/raw/refs/heads/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
+      packLink.href="https://raw.githubusercontent.com/terubea82-eng/Pacific-education-/refs/heads/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
       packLink.setAttribute("download","PacEdu-Class-1-English-Daily-Activities.md");
       packLink.setAttribute("aria-label","Download Class 1 English daily activities for Days 1 to 5");
       packLink.target="_blank";
