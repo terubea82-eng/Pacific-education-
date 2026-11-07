@@ -493,7 +493,8 @@ test("device speaker diagnostic invokes speech and presents an honest result", a
   await expect(page.getByRole("heading", { name: "Test this phone or computer" })).toBeVisible();
   await expect(page.locator("#deviceFacts")).toContainText("Speech API: available");
   await page.getByRole("button", { name: "Test this device's speaker" }).click();
-  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBe(1);
+  /* The first and second speech requests can both finish before Playwright polls. */
+  await expect.poll(() => page.evaluate(() => window.__paceduSpeechCalls.length)).toBeGreaterThanOrEqual(1);
   await expect(page.locator("#status")).toContainText("Pacedu voice engine request sent");
   await expect(page.locator("#speechFacts")).toContainText("Yes, I heard the sound");
   await expect(page.locator("#speechFacts")).toContainText("No sound heard");
