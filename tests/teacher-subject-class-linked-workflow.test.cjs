@@ -52,7 +52,7 @@ test("teacher subject selection shows every class and links the class to matchin
 
   await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toHaveAttribute("aria-label", "Student daily activities and matching workplans");
   await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("My Teaching Workspace");
-  await expect(page.locator("#paceduTeacherSubjectGrid > .pacedu-teacher-subject-card > button")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid button[data-pacedu-teacher-subject]")).toHaveCount(15);
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Home Economics");
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Rotuman");
   await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toHaveCount(0);
