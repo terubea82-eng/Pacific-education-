@@ -96,9 +96,12 @@ test("teacher subject selection shows every class and links the class to matchin
   });
   await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
   await expect(page.locator("#paceduTeacherSubjectGrid #paceduTeacherClassList")).toHaveCount(1);
+  await expect(page.locator("#paceduTeacherSubjectGrid #pacificEducationLinkedTeacherPlans")).toHaveCount(1);
+  await expect(page.locator("#paceduLinkedPlanStatus")).toBeVisible();
   expect(await page.evaluate(() => {
     const grid=document.getElementById("paceduTeacherSubjectGrid");
     const list=document.getElementById("paceduTeacherClassList");
-    return !!(grid&&list&&grid.contains(list));
+    const plans=document.getElementById("pacificEducationLinkedTeacherPlans");
+    return !!(grid&&list&&plans&&grid.contains(list)&&grid.contains(plans));
   })).toBe(true);
 });
