@@ -163,7 +163,17 @@
   }
   function init(){
     var host=document.getElementById(hostId),grid=document.getElementById("paceduTeacherSubjectGrid"),list=document.getElementById("paceduTeacherClassList");
-    if(!host||!grid||!list)return;
+    if(!host)return;
+    if(!grid){
+      grid=node("div");
+      grid.id="paceduTeacherSubjectGrid";
+      var existingShell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
+      (existingShell||host).appendChild(grid);
+    }
+    if(!list){
+      list=node("div");
+      list.id="paceduTeacherClassList";
+    }
     var existingButtons=grid.querySelectorAll("[data-pacedu-teacher-subject]");
     var completeGrid=existingButtons.length===SUBJECTS.length&&SUBJECTS.every(function(subject){
       return Array.prototype.some.call(existingButtons,function(button){
@@ -199,6 +209,11 @@
     var planLevel=document.getElementById("paceduLinkedPlanLevel");
     if(planLevel&&planLevel.parentElement)planLevel.parentElement.style.display="none";
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
+    if(!planPanel&&window.PacificEducationLinkedTeacherPlans&&
+       typeof window.PacificEducationLinkedTeacherPlans.render==="function"){
+      try{window.PacificEducationLinkedTeacherPlans.render();}catch(e){}
+      planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
+    }
     if(planPanel){planPanel.hidden=true;planPanel.setAttribute("aria-hidden","true");}
     renderDailyLearningOnly(host,grid,list,planPanel);
   }
@@ -208,23 +223,25 @@
      without touching registration, role routing, global mailbox, or voice code. */
   function renderDailyLearningOnly(host,grid,list,planPanel){
     if(!host||!grid||!list)return;
-    var oldShell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
-    if(oldShell)return;
-    var shell=node("section");
-    shell.id="paceduTeacherDailyLearningOnlyShell";
-    shell.setAttribute("data-pacedu-step-two-clean","true");
-    shell.setAttribute("aria-label","Student daily activities and matching workplans");
-    shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
-    var heading=node("h2","My Teaching Workspace — Subject Boxes, Daily Activities & Teacher Resources");
-    heading.style.cssText="margin-top:0;";
-    shell.appendChild(heading);
-    shell.appendChild(node("h2","My Teaching Subject Boxes"));
-    shell.appendChild(grid);
-    host.textContent="";
-    host.appendChild(shell);
-    /* Move the linked-plan/resource panel into the first subject card before
-       clearing the dashboard. The grid (including its hidden panel) is then
-       moved into the clean shell, so nothing is left below the subject boxes. */
+    var shell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
+    if(!shell){
+      shell=node("section");
+      shell.id="paceduTeacherDailyLearningOnlyShell";
+      shell.setAttribute("data-pacedu-step-two-clean","true");
+      shell.setAttribute("aria-label","Student daily activities and matching workplans");
+      shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
+      var heading=node("h2","My Teaching Workspace — Subject Boxes, Daily Activities & Teacher Resources");
+      heading.style.cssText="margin-top:0;";
+      shell.appendChild(heading);
+      shell.appendChild(node("h2","My Teaching Subject Boxes"));
+      shell.appendChild(grid);
+      host.textContent="";
+      host.appendChild(shell);
+    }else if(!shell.contains(grid)){
+      shell.appendChild(grid);
+    }
+    /* Keep the linked-plan/resource panel inside the subject boxes even when
+       a dashboard renderer has replaced the grid and the original panel. */
     if(planPanel){
       planPanel.hidden=true;
       planPanel.setAttribute("aria-hidden","true");
@@ -266,16 +283,16 @@
       var host=document.getElementById(hostId);
       var grid=document.getElementById("paceduTeacherSubjectGrid");
       var list=document.getElementById("paceduTeacherClassList");
-      if(!host||!grid||!list)return;
-      var buttons=grid.querySelectorAll("[data-pacedu-teacher-subject]");
-      var complete=buttons.length===SUBJECTS.length&&SUBJECTS.every(function(subject){
+      if(!host)return;
+      var buttons=grid?grid.querySelectorAll("[data-pacedu-teacher-subject]"):[];
+      var complete=!!grid&&buttons.length===SUBJECTS.length&&SUBJECTS.every(function(subject){
         return Array.prototype.some.call(buttons,function(button){
           return button.getAttribute("data-pacedu-teacher-subject")===subject;
         });
       });
-      /* Re-run the existing builder only when a dashboard mutation has
-         detached/replaced part of the subject-and-class workflow. */
-      if(grid.getAttribute("data-ready")!=="true"||!complete||
+      /* Re-run the existing builder when the dashboard replaces either
+         control, including when the class selector has been detached. */
+      if(!grid||!list||grid.getAttribute("data-ready")!=="true"||!complete||
          !host.contains(list)||!grid.contains(list))init();
       cleanTeacherStepTwo();
     },0);
