@@ -1048,7 +1048,7 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
 
 
 
-test("save confirmation then Next opens the selected role workspace for every registration role", async ({ page }) => {
+test("save confirmation then Next opens the selected role workspace for every public registration role", async ({ page }) => {
   test.setTimeout(90000);
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
@@ -1061,9 +1061,7 @@ test("save confirmation then Next opens the selected role workspace for every re
     ["Professional Reviewer", "professional"],
     ["NGO/Organization", "ngo"],
     ["Education/Government", "education"],
-    ["Community/Partner", "community"],
-    ["Technician", "technician"],
-    ["Owner/Control", "owner"]
+    ["Community/Partner", "community"]
   ];
 
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -1171,6 +1169,43 @@ test("save confirmation then Next opens the selected role workspace for every re
       await expect(title).toContainText("Day 2 of 365");
       await expect.poll(() => page.evaluate(() => localStorage.getItem("pacificEducationCurrentDay"))).toBe("2");
     }
+  }
+});
+
+
+test("Technician and Owner/Control require an invitation and cannot self-register", async ({ page }) => {
+  test.setTimeout(90000);
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+
+  for (const role of ["Technician — restricted approval", "Owner/Control — invitation only"]) {
+    await page.goto(baseURL, { waitUntil: "domcontentloaded" });
+    await page.evaluate(() => {
+      sessionStorage.clear();
+      sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
+    });
+    await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+    await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
+    await page.locator("#registrationNextButton").click();
+    await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
+    await page.locator("#registrationNextButton").click();
+
+    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card").filter({ hasText: role });
+    await expect(roleCard).toHaveCount(1);
+    await roleCard.click();
+    await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();
+    await expect(page.locator("#pilotRegistrationRole")).toHaveValue(role);
+    await page.locator("#registrationNextButton").click();
+    await page.locator("#pilotRegistrationName").fill("Restricted Role Test");
+
+    const save = page.locator("#pilotRegistrationSaveButton");
+    const next = page.locator("#registrationNextButton");
+    await expect(save).toBeEnabled();
+    await expect(next).toBeDisabled();
+    await save.click();
+    await expect(page.locator("#pilotRegistrationStatus")).toContainText(/cannot be self-registered|invitation|authorization/i);
+    await expect(next).toBeDisabled();
+    expect(await page.evaluate(() => sessionStorage.getItem("pacificEducationPilotRegistration"))).toBeNull();
   }
 });
 

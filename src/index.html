@@ -1210,6 +1210,8 @@ git status</pre>
     var identityLabel=document.getElementById("pilotLearnerOfficialIdLabel");
     var countrySelect=document.getElementById("pacificEducationCountrySelect");
     function isLearner(value){return /^(student|blind learner|deaf learner)$/i.test(String(value||"").trim());}
+    function isRestrictedRole(value){return /^(?:technician|owner\/control)\b/i.test(String(value||"").trim());}
+    function restrictedRoleMessage(value){return String(value||"This role").trim()+" is restricted and cannot be self-registered. An invitation and separate authorization are required; no registration was saved.";}
     function refreshLearnerIdentity(){
       var learner=isLearner(role.value), country=String(countrySelect&&countrySelect.value||"");
       if(identityFields)identityFields.hidden=!learner;
@@ -1238,9 +1240,10 @@ git status</pre>
         var active=card.getAttribute("data-role")===value;
         card.setAttribute("aria-pressed",String(active));
       });
-      status.textContent=value+" registration selected. Complete the registration boxes below.";
-      if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText("You selected "+value+" registration. Complete the registration boxes below.");
-      else if(window.speakText)window.speakText("You selected "+value+" registration. Complete the registration boxes below.");
+      var selectionMessage=isRestrictedRole(value)?restrictedRoleMessage(value):value+" registration selected. Complete the registration boxes below.";
+      status.textContent=selectionMessage;
+      if(window.PacificEducationSpeech&&typeof window.PacificEducationSpeech.speakText==="function")window.PacificEducationSpeech.speakText(selectionMessage);
+      else if(window.speakText)window.speakText(selectionMessage);
     }
     cards.forEach(function(card){card.addEventListener("click",function(){selectRole(card.getAttribute("data-role")||"");});});
     try{
@@ -1257,6 +1260,7 @@ git status</pre>
       var languageCode=String(language&&language.value||"");
       var learner=isLearner(r), enteredId=String(learnerId&&learnerId.value||"").trim();
       if(!r){status.textContent="Choose your user role first.";return;}
+      if(isRestrictedRole(r)){status.textContent=restrictedRoleMessage(r);return;}
       if(!n&&!(learner&&country!=="FJ")){status.textContent="Enter your name, or use the pending school-verification route if your required learner identity is unavailable.";name.focus();return;}
       try{
         if(!country)country=localStorage.getItem("pacificEducationRegistrationCountryCode")||"";
@@ -1298,6 +1302,11 @@ git status</pre>
       save.addEventListener("click",function(event){
         if(event && event.defaultPrevented) return;
         var n=String(name.value||"").trim(), r=String(role.value||"").trim();
+        if(isRestrictedRole(r)){
+          status.textContent=restrictedRoleMessage(r);
+          if(event){event.preventDefault();event.stopImmediatePropagation();}
+          return;
+        }
         var country=document.getElementById("pacificEducationCountrySelect");
         var language=document.getElementById("pacificEducationLanguageSelect");
         var countryCode=String(country&&country.value||"");
