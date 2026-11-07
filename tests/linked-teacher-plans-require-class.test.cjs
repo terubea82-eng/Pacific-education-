@@ -27,6 +27,15 @@ test("linked teacher plans require an explicit class before generating a plan", 
     };
   });
   await page.addScriptTag({ url: "./js/pacificEducationLinkedTeacherPlans.js?v=class-required-test" });
+  // The full teacher workspace keeps this panel tucked into a subject box until class selection.
+  // This isolated generator test opens it explicitly to verify the generator's own class gate.
+  await page.evaluate(() => {
+    const panel = document.getElementById("pacificEducationLinkedTeacherPlans");
+    if (panel) {
+      panel.hidden = false;
+      panel.setAttribute("aria-hidden", "false");
+    }
+  });
 
   const status = page.locator("#paceduLinkedPlanStatus");
   const content = page.locator("#paceduLinkedPlanContent");
