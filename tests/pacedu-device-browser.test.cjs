@@ -1102,6 +1102,23 @@ test("save confirmation then Next opens the selected role workspace for every re
     await expect(save).toBeEnabled();
     await expect(next).toBeDisabled();
     await save.click();
+    await page.waitForTimeout(450);
+    const saveDiagnostic = await page.evaluate(() => {
+      let record = null;
+      try { record = JSON.parse(sessionStorage.getItem("pacificEducationPilotRegistration") || "null"); } catch (_) {}
+      return {
+        name: (document.querySelector("#pilotRegistrationName") || {}).value || "",
+        role: (document.querySelector("#pilotRegistrationRole") || {}).value || "",
+        country: (document.querySelector("#pacificEducationCountrySelect") || {}).value || "",
+        language: (document.querySelector("#pacificEducationLanguageSelect") || {}).value || "",
+        pendingVerification: !!(document.querySelector("#pilotLearnerPendingVerification") || {}).checked,
+        registrationStatus: (document.querySelector("#pilotRegistrationStatus") || {}).textContent || "",
+        sequenceStatus: (document.querySelector("#peBoxSequenceProgress") || {}).textContent || "",
+        record,
+        contextValidation: window.PacificEducationRegistrationContext && window.PacificEducationRegistrationContext.validate()
+      };
+    });
+    console.log("[PacEdu registration save diagnostic]", role, JSON.stringify(saveDiagnostic));
     await expect(save).toHaveText(/Registration Saved/);
     await expect(next).toBeEnabled();
     await next.click();
