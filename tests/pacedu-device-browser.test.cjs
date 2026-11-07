@@ -1190,7 +1190,7 @@ test("Technician and Owner/Control require an invitation and cannot self-registe
     await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
     await page.locator("#registrationNextButton").click();
 
-    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card").filter({ hasText: role });
+    const roleCard = page.locator("#pilotUserRoleCards .pe-user-role-card[data-role=\"" + role + "\"]");
     await expect(roleCard).toHaveCount(1);
     await roleCard.click();
     await expect(page.locator("#pilotRoleRegistrationFields")).toBeVisible();

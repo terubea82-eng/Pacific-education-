@@ -21,7 +21,8 @@ test("teacher subject selection shows every class and links the class to matchin
       getClasses() {
         return {
           englishClass: { className: "Class 1", level: "Class 1", subject: "English" },
-          scienceClass: { className: "Class 2", level: "Class 2", subject: "English" }
+          scienceClass: { className: "Class 2", level: "Class 2", subject: "English" },
+          agricultureForm7Class: { className: "Form 7", level: "Form 7", subject: "Agriculture" }
         };
       },
       setClassId(id) { window.__selectedTeacherClass = id; },
