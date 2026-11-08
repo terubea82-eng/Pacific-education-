@@ -78,7 +78,7 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#paceduTeacherClassList")).toContainText("Class 2");
   await page.locator('[data-pacedu-teacher-class="scienceClass"]').click();
   await expect(page.locator('#paceduTeacherSubjectGrid [data-pacedu-teacher-subject="Science"]')).toHaveText("Elementary Science");
-  await expect(page.locator("#paceduTeacherSelectedDailyHeading")).toHaveText("Elementary Science — Class 2 Daily Activities");
+  await expect(page.locator("#paceduTeacherClassList h3")).toHaveText("Elementary Science — Choose a Class");
 
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Science — Class 2");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("PENDING_TEACHER_REVIEW");
