@@ -111,7 +111,8 @@ function renderControls(container,context){
  var weeks=select("Week:",Array.from({length:9},function(_,i){return {value:String(i+1),label:"Week "+(i+1)};}),"1");
  var day=select("Day:",Array.from({length:5},function(_,i){return {value:String(i+1),label:"Day "+(i+1)};}),"1");
  function selectedOptions(){return {level:context.useSelectedContext?context.level:level.value,subject:context.useSelectedContext?context.subject:subject.value,term:term.value,week:Number(weeks.value),day:Number(day.value)};}
- term.addEventListener("change",function(){var max=term.value==="T3"?5:9;weeks.textContent="";for(var i=1;i<=max;i++){var o=node("option","Week "+i);o.value=String(i);weeks.appendChild(o);}weeks.value="1";});
+ function updateWeeks(){var max=term.value==="T3"?5:9;weeks.textContent="";for(var i=1;i<=max;i++){var o=node("option","Week "+i);o.value=String(i);weeks.appendChild(o);}weeks.value="1";}
+ term.addEventListener("change",updateWeeks);updateWeeks();
  var studentHeading=node("h5","Student files — download separately");box.appendChild(studentHeading);
  var studentGrid=node("div");studentGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;";
  GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Activity");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o=selectedOptions();learnerDownload(o,g,commonData(o));status.textContent=g.name+" student activity download started.";}catch(e){status.textContent="Student file not prepared: "+String(e.message||e);}});studentGrid.appendChild(b);});
@@ -124,7 +125,7 @@ function renderControls(container,context){
  box.appendChild(node("h5","Teacher files — download separately"));
  var teacherGrid=node("div");teacherGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;";
  var status=node("p","Curriculum mapping remains pending teacher review. No official Fiji curriculum alignment is claimed.");status.setAttribute("role","status");status.setAttribute("aria-live","polite");
- TEACHER_FILES.forEach(function(f){var b=node("button","Download "+f.label);b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o={level:level.value,subject:subject.value,term:term.value,week:Number(weeks.value),day:Number(day.value)};teacherDownload(o,f,commonData(o));status.textContent=f.label+" download started.";}catch(e){status.textContent="Teacher file not prepared: "+String(e.message||e);}});teacherGrid.appendChild(b);});
+ TEACHER_FILES.forEach(function(f){var b=node("button","Download "+f.label);b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o=selectedOptions();teacherDownload(o,f,commonData(o));status.textContent=f.label+" download started.";}catch(e){status.textContent="Teacher file not prepared: "+String(e.message||e);}});teacherGrid.appendChild(b);});
  box.appendChild(teacherGrid);box.appendChild(status);container.appendChild(box);return true;
 }
 global.PacEduSeparateDailyResourceDownloads=Object.freeze({groups:GROUPS.map(function(g){return {id:g.id,name:g.name};}),teacherFiles:TEACHER_FILES.map(function(f){return f.id;}),downloadWeeklyBook:weeklyBookDownload,renderControls:renderControls});
