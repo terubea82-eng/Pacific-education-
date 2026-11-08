@@ -25,6 +25,8 @@ test("student, classwork and teacher downloads all use the shared selected conte
 test("term-specific week limits initialise correctly and review status remains pending", () => {
   assert.match(downloads, /function updateWeeks\(\).*term\.value==="T3"\?5:9/);
   assert.match(downloads, /term\.addEventListener\("change",updateWeeks\);updateWeeks\(\)/);
+  assert.match(downloads, /var rawTerm=String\(context\.term\|\|\(global\.localStorage&&global\.localStorage\.getItem\("pacificEducationTerm"\)\)\|\|"T1"\)/);
+  assert.match(downloads, /"Term 1":"T1","Term 2":"T2","Term 3":"T3"/);
   assert.match(downloads, /select\("Day:"/);
   assert.match(downloads, /PENDING_TEACHER_REVIEW/);
 });
