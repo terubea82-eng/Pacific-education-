@@ -69,7 +69,7 @@
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
     panel.appendChild(node("h3", subject + " — " + selectedClass.textContent.trim()));
-    panel.appendChild(node("p", "Only two resource types are provided here. Use a learner's latest reviewed evidence when available; missing or pending work does not mean low ability."));
+    panel.appendChild(node("p", "Use the learner's latest reviewed evidence when available; missing or pending work does not mean low ability. Daily downloads and teaching aids stay linked to the selected subject and class."));
     /* Keep the visible workspace to the two requested resource types.
        Existing linked-plan actions remain callable by the resource-1 buttons. */
     Array.prototype.forEach.call(planPanel.querySelectorAll("button"), function (b) {
@@ -198,6 +198,16 @@
     aids.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
     aids.appendChild(node("h4", "3. Teacher Resource & Teaching Aid Builder"));
     aids.appendChild(node("p", "Prepare a resource brief linked to this subject, class and learning objective: teaching cards, charts, diagrams, worked examples or visual prompts. Use verified curriculum content only. Every draft is marked PENDING_TEACHER_REVIEW until checked."));
+    var dailyDownloadsHost=node("div");
+    var dailyDownloadsApi=window.PacEduSeparateDailyResourceDownloads;
+    if(dailyDownloadsApi&&typeof dailyDownloadsApi.renderControls==="function"){
+      var dailyDownloadTerm="T1";
+      try{dailyDownloadTerm=String(window.localStorage.getItem("pacificEducationTerm")||"T1");}catch(_){}
+      dailyDownloadsApi.renderControls(dailyDownloadsHost,{level:levelValue,subject:subject,term:dailyDownloadTerm,useSelectedContext:true});
+      aids.appendChild(dailyDownloadsHost);
+    }else{
+      aids.appendChild(node("p","Activity-linked daily downloads are not available in this session."));
+    }
     var aidTypeLabel = node("label", "Choose a teaching aid");
     var aidType = node("select");
     [["card","Teaching card"],["chart","Chart"],["diagram","Diagram"],["worked-example","Worked example"],["visual-prompt","Visual prompt"]].forEach(function (item) {
