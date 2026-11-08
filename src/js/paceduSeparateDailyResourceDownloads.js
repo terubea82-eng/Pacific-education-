@@ -103,20 +103,23 @@ function renderControls(container,context){
  box.appendChild(node("h4","Separate Daily Student Activities & Teacher Resources"));
  box.appendChild(node("p","Choose the exact lesson. Each student group downloads its own file; teacher plans, notes, answers and teaching aids download separately. All four groups share the same learning objective."));
  function select(label,values,chosen){var wrap=node("label",label);wrap.style.cssText="display:block;margin:8px 0;font-weight:600;";var s=node("select");s.style.cssText="display:block;width:100%;padding:9px;margin-top:4px;font:inherit;";values.forEach(function(v){var o=node("option",v.label);o.value=v.value;if(v.value===chosen)o.selected=true;s.appendChild(o);});wrap.appendChild(s);box.appendChild(wrap);return s;}
- var level=select("Class / level:",(global.PacEduDownloadableClassPacks.levels||[]).map(function(x){return {value:x,label:x};}),context.level||"Class 1");
- var subject=select("Subject:",(global.PacEduDownloadableClassPacks.subjects||[]).map(function(x){return {value:x,label:x};}),context.subject||"English");
- var term=select("Term:",[{value:"T1",label:"Term 1"},{value:"T2",label:"Term 2"},{value:"T3",label:"Term 3"}],context.term||"T1");
+ if(context.useSelectedContext&&(!context.level||!context.subject))return false;
+ var level=context.useSelectedContext?null:select("Class / level:",(global.PacEduDownloadableClassPacks.levels||[]).map(function(x){return {value:x,label:x};}),context.level||"Class 1");
+ var subject=context.useSelectedContext?null:select("Subject:",(global.PacEduDownloadableClassPacks.subjects||[]).map(function(x){return {value:x,label:x};}),context.subject||"English");
+ var savedTerm=context.term||(global.localStorage&&global.localStorage.getItem("pacificEducationTerm"))||"T1";
+ var term=select("Term:",[{value:"T1",label:"Term 1"},{value:"T2",label:"Term 2"},{value:"T3",label:"Term 3"}],savedTerm);
  var weeks=select("Week:",Array.from({length:9},function(_,i){return {value:String(i+1),label:"Week "+(i+1)};}),"1");
  var day=select("Day:",Array.from({length:5},function(_,i){return {value:String(i+1),label:"Day "+(i+1)};}),"1");
+ function selectedOptions(){return {level:context.useSelectedContext?context.level:level.value,subject:context.useSelectedContext?context.subject:subject.value,term:term.value,week:Number(weeks.value),day:Number(day.value)};}
  term.addEventListener("change",function(){var max=term.value==="T3"?5:9;weeks.textContent="";for(var i=1;i<=max;i++){var o=node("option","Week "+i);o.value=String(i);weeks.appendChild(o);}weeks.value="1";});
  var studentHeading=node("h5","Student files — download separately");box.appendChild(studentHeading);
  var studentGrid=node("div");studentGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;";
- GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Activity");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o={level:level.value,subject:subject.value,term:term.value,week:Number(weeks.value),day:Number(day.value)};learnerDownload(o,g,commonData(o));status.textContent=g.name+" student activity download started.";}catch(e){status.textContent="Student file not prepared: "+String(e.message||e);}});studentGrid.appendChild(b);});
+ GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Activity");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o=selectedOptions();learnerDownload(o,g,commonData(o));status.textContent=g.name+" student activity download started.";}catch(e){status.textContent="Student file not prepared: "+String(e.message||e);}});studentGrid.appendChild(b);});
  box.appendChild(studentGrid);
  box.appendChild(node("h5","Weekly Classwork Activity Book — five daily pages"));
  box.appendChild(node("p","Download a separate five-day classwork book for the selected ability group. Each day has its own learning focus, example, classwork questions and answer space."));
  var bookGrid=node("div");bookGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;";
- GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Classwork Book");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var result=weeklyBookDownload({level:level.value,subject:subject.value,term:term.value,week:Number(weeks.value)},g);status.textContent=g.name+" five-day classwork activity book download started ("+result.days+" daily pages).";}catch(e){status.textContent="Classwork book not prepared: "+String(e.message||e);}});bookGrid.appendChild(b);});
+ GROUPS.forEach(function(g){var b=node("button","Download "+g.name+" Classwork Book");b.type="button";b.style.cssText="min-height:46px;padding:10px;font:inherit;font-weight:700;";b.addEventListener("click",function(){try{var o=selectedOptions();var result=weeklyBookDownload({level:o.level,subject:o.subject,term:o.term,week:o.week},g);status.textContent=g.name+" five-day classwork activity book download started ("+result.days+" daily pages).";}catch(e){status.textContent="Classwork book not prepared: "+String(e.message||e);}});bookGrid.appendChild(b);});
  box.appendChild(bookGrid);
  box.appendChild(node("h5","Teacher files — download separately"));
  var teacherGrid=node("div");teacherGrid.style.cssText="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;";
