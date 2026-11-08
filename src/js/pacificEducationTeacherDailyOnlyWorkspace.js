@@ -25,6 +25,8 @@
     if(!grid||!list)return;
     grid.querySelectorAll("[data-pacedu-teacher-subject]").forEach(function(b){
       var active=b.getAttribute("data-pacedu-teacher-subject")===subject;
+      /* Restore the stable box name before a class-specific display label is applied. */
+      b.textContent=b.getAttribute("data-pacedu-teacher-subject")||b.textContent;
       b.setAttribute("aria-pressed",active?"true":"false");
       b.setAttribute("aria-expanded",active?"true":"false");
       b.style.background=active?"#d8efff":"#f7fcff";
@@ -115,6 +117,10 @@
         if(planningClass)planningClass.value=item.level;
         var mappingApi=window.PacEduFijiSubjectMapping||window.PacEduFijiNineSubjectMapping;
         var mapping=mappingApi&&typeof mappingApi.resolve==="function"?mappingApi.resolve(subject,item.level):null;
+        var displaySubject=mapping&&mapping.label?mapping.label:subject;
+        if(selectedButton)selectedButton.textContent=displaySubject;
+        var listTitle=list.querySelector("h3");
+        if(listTitle)listTitle.textContent=displaySubject+" — Choose a Class";
         if(mappingNotice){
           mappingNotice.textContent=mapping?mapping.note:"Subject mapping status is unavailable. Ask the curriculum reviewer before using generated content.";
         }
@@ -138,8 +144,8 @@
           var oldDailyHeading=document.getElementById("paceduTeacherSelectedDailyHeading");
           if(oldDailyHeading)oldDailyHeading.remove();
           dailySection.hidden=false;
-          dailySection.setAttribute("aria-label",subject+" — "+item.level+" Daily Activities");
-          var dailyHeading=node("h3",subject+" — "+item.level+" Daily Activities");
+          dailySection.setAttribute("aria-label",displaySubject+" — "+item.level+" Daily Activities");
+          var dailyHeading=node("h3",displaySubject+" — "+item.level+" Daily Activities");
           dailyHeading.id="paceduTeacherSelectedDailyHeading";
           selectedCard.appendChild(dailyHeading);
           selectedCard.appendChild(dailySection);
