@@ -106,7 +106,8 @@ function renderControls(container,context){
  if(context.useSelectedContext&&(!context.level||!context.subject))return false;
  var level=context.useSelectedContext?null:select("Class / level:",(global.PacEduDownloadableClassPacks.levels||[]).map(function(x){return {value:x,label:x};}),context.level||"Class 1");
  var subject=context.useSelectedContext?null:select("Subject:",(global.PacEduDownloadableClassPacks.subjects||[]).map(function(x){return {value:x,label:x};}),context.subject||"English");
- var savedTerm=context.term||(global.localStorage&&global.localStorage.getItem("pacificEducationTerm"))||"T1";
+ var rawTerm=String(context.term||(global.localStorage&&global.localStorage.getItem("pacificEducationTerm"))||"T1");
+ var savedTerm=/^T[123]$/.test(rawTerm)?rawTerm:({"Term 1":"T1","Term 2":"T2","Term 3":"T3"}[rawTerm]||"T1");
  var term=select("Term:",[{value:"T1",label:"Term 1"},{value:"T2",label:"Term 2"},{value:"T3",label:"Term 3"}],savedTerm);
  var weeks=select("Week:",Array.from({length:9},function(_,i){return {value:String(i+1),label:"Week "+(i+1)};}),"1");
  var day=select("Day:",Array.from({length:5},function(_,i){return {value:String(i+1),label:"Day "+(i+1)};}),"1");
