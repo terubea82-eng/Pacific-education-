@@ -133,20 +133,17 @@ test("live pilot page loads at desktop size without uncaught page errors", async
   expect(errors, "uncaught JavaScript errors").toEqual([]);
 });
 
-test("Welcome Next stays in the single-page app and reveals Vision, Rules, then Registration", async ({ page }) => {
+test("Welcome Next stays in the single-page app and reveals Workspaces and Rules, then Registration", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "load" });
 
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
-  expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
-
-  await page.locator("#paceduVisionNext").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await expect(page.locator("#paceduPageVision")).toBeHidden();
+  expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
 
   await page.locator("#paceduRulesAgreement").check();
   await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
@@ -1216,7 +1213,7 @@ test("Technician and Owner/Control require an invitation and cannot self-registe
       sessionStorage.clear();
       sessionStorage.setItem("pacificEducationRulesAccepted", "yes");
     });
-    await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+    await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
     await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
     await page.locator("#registrationNextButton").click();
     await page.locator("#pacificEducationLanguageSelect").selectOption("en-AU");
