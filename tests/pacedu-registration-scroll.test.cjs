@@ -43,7 +43,7 @@ test("registration scrolling remains user-controlled when role cards receive foc
 });
 
 
-test("Page 3 Next opens only Registration at the defined guided-flow step", async ({ page }) => {
+test("Welcome Next opens Page 3 Rules before the Registration handoff", async ({ page }) => {
   page.setDefaultTimeout(8000);
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
 
