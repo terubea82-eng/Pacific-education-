@@ -3,6 +3,12 @@ const { test, expect } = require("@playwright/test");
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
 const deviceURL = process.env.PACEDU_DEVICE_TEST_URL || "http://127.0.0.1:4173/src/device-test.html";
 
+function entryURL(entry) {
+  const url = new URL(baseURL);
+  url.searchParams.set("entry", entry);
+  return url.toString();
+}
+
 async function installSpeechHarness(page) {
   await page.addInitScript(() => {
     const calls = [];
@@ -269,7 +275,7 @@ test("Registration voice removes the legacy welcome phrase before speech playbac
   await page.addInitScript(() => {
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
   });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
   await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
   await expect(page.locator("#pacificEducationWelcomeVoiceButton")).toBeHidden();
   await expect(page.locator("#pacificEducationAIPlaybackButton")).toBeHidden();
@@ -324,7 +330,7 @@ test("mobile touch can complete registration and select a role before Next advan
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
   });
   console.log("[mobile flow] opening registration entry");
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
   // Keep real touch hit-testing, but remove perpetual breathing transforms from this
   // automated interaction test: Playwright requires a stationary target before tap().
   // The production UI animations remain unchanged for actual phone users.
@@ -775,6 +781,31 @@ test("active teacher workspace hides unrelated student, parent and AI sections",
   await expect(page.locator("#peSequentialProgress")).toContainText("STEP 2 OF 3");
   await expect(page.locator("#peSequentialTitle")).toContainText("Teacher Daily Activities");
   await expect(page.locator("#peSequentialNext")).toBeEnabled();
+  await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("English");
+  await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Mathematics");
+
+  // Replacing the two local controls must recover the subject buttons without
+  // observing unrelated page changes or creating an app-wide observer loop.
+  await page.evaluate(() => {
+    const host=document.getElementById("teacherDashboard");
+    const movedParent=document.createElement("section");
+    movedParent.id="paceduTeacherDashboardMovedParent";
+    host.parentNode.appendChild(movedParent);
+    movedParent.appendChild(host);
+
+    const grid=document.getElementById("paceduTeacherSubjectGrid");
+    const replacementGrid=Object.assign(document.createElement("div"),{id:"paceduTeacherSubjectGrid"});
+    const replacementList=Object.assign(document.createElement("div"),{id:"paceduTeacherClassList"});
+    const replacementPlans=Object.assign(document.createElement("section"),{id:"pacificEducationLinkedTeacherPlans"});
+    replacementGrid.appendChild(replacementList);
+    replacementGrid.appendChild(replacementPlans);
+    grid.replaceWith(replacementGrid);
+  });
+  await expect(page.locator("#paceduTeacherSubjectGrid [data-pacedu-teacher-subject]")).toHaveCount(15);
+  await expect(page.locator("#paceduTeacherSubjectGrid .pacedu-teacher-subject-card #pacificEducationLinkedTeacherPlans")).toHaveCount(1);
+  const observerRunaways = await page.evaluate(() => window.__paceduObserverRunaways || []);
+  expect(observerRunaways, "Teacher Dashboard observers must not run away").toEqual([]);
 });
 
 test("verified registration role overrides a stale pilot role marker", async ({ page }) => {
@@ -814,7 +845,7 @@ test("registration must remain on Page 4 when the real save does not persist", a
       return original.call(this, key, value);
     };
   });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
   await page.addStyleTag({ content: "*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
@@ -1005,7 +1036,7 @@ test("Page 4 registration guidance has one clear green-step banner and no inject
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(() => { try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {} });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
   await expect(page.locator("#registrationNextWrapper .pe-green-guide")).toHaveCount(1);
@@ -1080,7 +1111,7 @@ test("save confirmation then Next opens the selected role workspace for every pu
         roles: { student: [["dailyLesson", "Day 1"], ["pacificEducationInitialCapabilityTest", "Test"]] }
       })));
     }
-    await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+    await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
     await page.locator("#pacificEducationCountrySelect").selectOption("FJ");
     await page.locator("#registrationNextButton").click();
     await expect(page.locator("#pacificEducationLanguageBox")).toBeVisible();
@@ -1417,7 +1448,7 @@ test("registration save keeps Page 4 visible until Next, then recovers the role 
 
   const pageErrors = [];
   page.on("pageerror", error => pageErrors.push(error.stack || error.message));
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(entryURL("registration"), { waitUntil: "domcontentloaded" });
 
   const registration = page.locator("#pacificEducationIdentityRegistration");
   const save = page.locator("#pilotRegistrationSaveButton");

@@ -7,11 +7,13 @@
   "use strict";
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
+  /* Stable internal keys preserve existing pack-builder compatibility;
+     learner-facing names follow the approved PacEdu order. */
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "support", label: "Copper" },
+    { id: "developing", label: "Bronze" },
+    { id: "expected", label: "Silver" },
+    { id: "extension", label: "Gold" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
@@ -24,7 +26,7 @@
       return Array.isArray(value) ? value : [];
     } catch (_) { return []; }
   }
-  function priorReviewedEvidence(studentRef, classId, subject) {
+  function reviewedEvidenceFor(studentRef, classId, subject) {
     var rows = readResponses();
     var valid = rows.filter(function (r) {
       var status = String(r.reviewStatus || r.markingStatus || "").toLowerCase();
@@ -32,26 +34,25 @@
         r.teacherReviewed === true || r.teacherApproved === true;
       var rawMark = r.markPercent != null ? r.markPercent : r.scorePercent != null ? r.scorePercent :
         r.mark != null ? r.mark : r.score != null ? r.score : null;
-      var hasMark = rawMark !== null && rawMark !== "" && Number.isFinite(Number(rawMark));
+      var numericMark = rawMark === null || rawMark === "" ? NaN : Number(rawMark);
+      var hasMark = Number.isFinite(numericMark) && numericMark >= 0 && numericMark <= 100;
       return reviewed && hasMark &&
         String(r.studentReference || r.studentRef || "") === String(studentRef) &&
         String(r.classId || "") === String(classId) &&
         String(r.subject || r.subjectId || "").toLowerCase() === String(subject || "").toLowerCase();
     });
-    if (!valid.length) return null;
     valid.sort(function (a, b) {
       return Number(b.day || b.dayNumber || 0) - Number(a.day || a.dayNumber || 0);
     });
-    return valid[0];
+    return valid;
   }
-  function bandFor(mark) {
-    var n = Number(mark);
-    if (!Number.isFinite(n)) return null;
-    if (n < 40) return "support";
-    if (n < 60) return "developing";
-    if (n < 80) return "expected";
-    return "extension";
+  function priorReviewedEvidence(studentRef, classId, subject) {
+    var valid = reviewedEvidenceFor(studentRef, classId, subject);
+    return valid.length ? valid[0] : null;
   }
+  /* No numerical placement thresholds or minimum evidence count have been
+     approved. A single mark must never auto-place a learner. */
+  function bandFor() { return null; }
   function render() {
     var list = document.getElementById("paceduTeacherClassList");
     var planPanel = document.getElementById("pacificEducationLinkedTeacherPlans");
@@ -64,12 +65,19 @@
     var roster = window.PacificEducationTeacherClassRosterContext;
     var classInfo = null;
     try { classInfo = roster && classId && roster.getClass ? roster.getClass(classId) : null; } catch (_) {}
+    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
+    var subjectLabel = subject;
+    var subjectMappingApi = window.PacEduFijiSubjectMapping || window.PacEduFijiNineSubjectMapping;
+    try {
+      var subjectMapping = subjectMappingApi && typeof subjectMappingApi.resolve === "function" ? subjectMappingApi.resolve(subject, levelValue) : null;
+      if(subjectMapping && subjectMapping.label) subjectLabel = subjectMapping.label;
+    } catch (_) {}
     var panel = node("section");
     panel.id = PANEL_ID;
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
-    panel.appendChild(node("h3", subject + " — " + selectedClass.textContent.trim()));
-    panel.appendChild(node("p", "Use the learner's latest reviewed evidence when available; missing or pending work does not mean low ability. Daily downloads and teaching aids stay linked to the selected subject and class."));
+    panel.appendChild(node("h3", subjectLabel + " — " + selectedClass.textContent.trim()));
+    panel.appendChild(node("p", "Only two resource types are provided here. A reviewed 0–100 mark may suggest a provisional worksheet group; it never assigns a learner. Confirm placement only after the Day 1 baseline and sufficient reviewed evidence. Missing, pending or invalid work stays unconfirmed and never means low ability."));
     /* Keep the visible workspace to the two requested resource types.
        Existing linked-plan actions remain callable by the resource-1 buttons. */
     Array.prototype.forEach.call(planPanel.querySelectorAll("button"), function (b) {
@@ -120,20 +128,21 @@
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
     var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
-    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
       evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
     } else {
       var rosterList = node("ul");
       students.forEach(function (ref) {
         var row = node("li");
-        var mark = priorReviewedEvidence(ref, classId, subject);
-        var rawMark = mark && (mark.markPercent != null ? mark.markPercent : mark.scorePercent != null ? mark.scorePercent : mark.mark != null ? mark.mark : mark.score);
-        var band = mark ? BANDS.filter(function (b) { return b.id === bandFor(rawMark); })[0] : null;
-        if (band) groupCounts[band.id] += 1;
+        var reviewedRows = reviewedEvidenceFor(ref, classId, subject);
+        var mark = reviewedRows.length ? reviewedRows[0] : null;
+        var hasDayOne = reviewedRows.some(function (r) {
+          return Number(r.day || r.dayNumber || 0) === 1;
+        });
         row.textContent = String(ref) + " — " + (mark ?
-          "Reviewed mark found (Day " + String(mark.day || mark.dayNumber || "?") + "); provisional worksheet recommendation: " + (band ? band.label : "manual review required") :
-          "No reviewed mark found for this subject; ability group remains unconfirmed.");
+          "Reviewed evidence: " + reviewedRows.length + " record(s); Day 1 reviewed record: " +
+          (hasDayOne ? "present" : "not found") + "; ability placement remains unconfirmed for teacher review." :
+          "No valid teacher-reviewed evidence found for this subject; ability group remains unconfirmed.");
         rosterList.appendChild(row);
       });
       evidence.appendChild(rosterList);
@@ -141,6 +150,13 @@
     worksheets.appendChild(evidence);
     var api = window.PacEduDownloadableClassPacks;
     var worksheetAvailability = api && typeof api.resolveSubject === "function" ? api.resolveSubject(subject, levelValue) : { available: true, note: "" };
+    var aidCreationBlocked=!!(subjectMapping&&(subjectMapping.status==="missing"||subjectMapping.status==="level-gap"||subjectMapping.contentStatus==="CONTENT_NOT_AVAILABLE"))||!worksheetAvailability||!worksheetAvailability.available;
+    if(aidCreationBlocked){
+      worksheets.appendChild(node("p","Teaching-aid creation is locked for this subject and class until an approved curriculum mapping and matching content are available. No other subject's material will be substituted."));
+      panel.appendChild(worksheets);
+      planPanel.appendChild(panel);
+      return;
+    }
     if (api && typeof api.download === "function") {
       var termLabel = node("label", "Term for today's worksheets");
       termLabel.style.cssText = "display:block;margin:10px 0;font-weight:600;";
@@ -159,16 +175,13 @@
       groupStatus.setAttribute("role", "status");
       groupStatus.setAttribute("aria-live", "polite");
       if (!students.length) {
-        groupStatus.textContent = "You can prepare all four class-wide packs now. Link the learner roster and review baseline evidence before assigning individual students.";
-      } else if (!Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
-        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use the baseline assessment and teacher review before assigning learners.";
+        groupStatus.textContent = "All four class-wide practice packs remain available. Link the roster and complete the Day 1 baseline before considering individual placement.";
       } else {
-        groupStatus.textContent = "Counts show only learners with an explicitly reviewed mark for this subject. They are informational only: a pack can be prepared even when its count is zero. Missing or pending evidence never means low ability.";
+        groupStatus.textContent = "Reviewed records are shown for teacher consideration only. No learner is automatically placed. The approved minimum evidence rule and placement thresholds are not configured; a teacher must review the Day 1 baseline and sufficient evidence before recording any group. Missing, pending or invalid work never means low ability.";
       }
       worksheets.appendChild(groupStatus);
       if (worksheetAvailability.available) BANDS.forEach(function (band) {
-        var count = groupCounts[band.id] || 0;
-        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam" + (count ? " (" + count + " reviewed learner(s))" : " (no reviewed marks yet)"));
+        var button = node("button", "Prepare " + band.label + " class-wide pack: daily activities + revision + mock exam");
         button.type = "button";
         button.disabled = false;
         button.style.cssText = "display:block;width:100%;min-height:46px;padding:10px;margin:7px 0;text-align:left;";
@@ -218,37 +231,187 @@
     var indicatorLabel=node("label","Verified achievement indicator / curriculum reference");
     var indicator=node("input"); indicator.type="text"; indicator.maxLength=240; indicator.placeholder="Enter the official indicator reference";
     indicatorLabel.appendChild(indicator); aids.appendChild(indicatorLabel);
+    function aidField(labelText,tagName,placeholder,rows){
+      var label=node("label",labelText);
+      label.style.cssText="display:block;margin:9px 0;font-weight:600;";
+      var control=node(tagName);
+      control.style.cssText="display:block;width:100%;max-width:100%;box-sizing:border-box;min-height:42px;padding:9px;margin-top:4px;border:1px solid #8aa5b8;border-radius:6px;font:inherit;";
+      if(placeholder)control.placeholder=placeholder;
+      if(tagName==="textarea"){control.rows=rows||3;control.maxLength=2400;}
+      else control.maxLength=240;
+      label.appendChild(control);aids.appendChild(label);return control;
+    }
+    var activityId=aidField("Activity ID this resource belongs to","input","Enter the exact daily activity ID");
+    var weekSelect=aidField("Teaching week","select","");
+    function syncAidWeeks(){
+      var maxWeeks=String(termSelect&&termSelect.value||window.localStorage.getItem("pacificEducationTerm")||"T1")==="T3"?5:9;
+      var previous=weekSelect.value;
+      weekSelect.textContent="";
+      for(var w=1;w<=maxWeeks;w++){var wo=node("option","Week "+w);wo.value=String(w);weekSelect.appendChild(wo);}
+      if(Number(previous)>0&&Number(previous)<=maxWeeks)weekSelect.value=previous;
+    }
+    syncAidWeeks();
+    if(termSelect)termSelect.addEventListener("change",syncAidWeeks);
+    var daySelect=aidField("Teaching day","select","");
+    for(var d=1;d<=5;d++){var dayOption=node("option","Day "+d);dayOption.value=String(d);daySelect.appendChild(dayOption);}
+    var aidTitle=aidField("Teaching aid title","input","Give the card, chart, diagram or worked example a clear title");
     var objectiveLabel=node("label","Learning objective and resource notes");
+    objectiveLabel.style.cssText="display:block;margin:9px 0;font-weight:600;";
     var objective=node("textarea"); objective.rows=4; objective.maxLength=1800; objective.placeholder="Enter the approved learning objective, key facts, worked steps or visual description. Do not invent curriculum content.";
+    objective.style.cssText="display:block;width:100%;box-sizing:border-box;padding:9px;margin-top:4px;font:inherit;";
     objectiveLabel.appendChild(objective); aids.appendChild(objectiveLabel);
-    var aidStatus=node("p","Draft only — PENDING_TEACHER_REVIEW. This builder does not verify the curriculum source or publish the resource.");
+    var teacherInstructions=aidField("Teacher instructions","textarea","Explain how the teacher should introduce and use this aid",4);
+    var studentVersion=aidField("Student version / accessible description","textarea","Describe what the learner sees, reads, hears or handles",4);
+    var sourceLicence=aidField("Source and licence / ownership","input","e.g. Original PacEdu draft or exact source and licence");
+    var formats=node("fieldset");
+    formats.style.cssText="margin:10px 0;padding:10px;border:1px solid #9bb0bd;border-radius:8px;";
+    formats.appendChild(node("legend","Accessible formats available"));
+    var formatInputs=[];
+    [["large-print","Large print"],["screen-reader-text","Screen-reader text"],["tactile","Tactile / touch format"],["verbal-description","Verbal description"],["captions","Captions"]].forEach(function(item){
+      var label=node("label",item[1]);label.style.cssText="display:flex;gap:8px;align-items:center;margin:7px 0;";
+      var check=node("input");check.type="checkbox";check.value=item[0];check.style.cssText="width:22px;height:22px;flex:0 0 auto;";
+      label.insertBefore(check,label.firstChild);formats.appendChild(label);formatInputs.push(check);
+    });
+    aids.appendChild(formats);
+    var teacherNote=aidField("Accessibility and adaptation note","textarea","Explain any adjustment or alternative response format",3);
+    var aidStatus=node("p","Draft only — PENDING_TEACHER_REVIEW. Saved drafts stay on this device. The builder does not verify curriculum sources or publish resources.");
     aidStatus.setAttribute("role","status"); aidStatus.setAttribute("aria-live","polite"); aids.appendChild(aidStatus);
-    var aidDownload=node("button","Download teaching aid brief (.txt)"); aidDownload.type="button";
-    aidDownload.addEventListener("click",function(){
-      if(!indicator.value.trim()||!objective.value.trim()){
-        aidStatus.textContent="Enter the verified curriculum reference and learning objective before downloading.";
+    function buildAidRecord(){
+      var term=String(termSelect&&termSelect.value||window.localStorage.getItem("pacificEducationTerm")||"T1");
+      var selectedFormats=formatInputs.filter(function(x){return x.checked;}).map(function(x){return x.value;});
+      var missing=[];
+      [[activityId,"activity ID"],[aidTitle,"teaching aid title"],[indicator,"curriculum reference"],[objective,"learning objective"],[teacherInstructions,"teacher instructions"],[studentVersion,"student version / accessible description"],[sourceLicence,"source and licence / ownership"],[teacherNote,"accessibility note"]].forEach(function(pair){if(!String(pair[0].value||"").trim())missing.push(pair[1]);});
+      if(!selectedFormats.length)missing.push("at least one accessible format");
+      if(!Number(weekSelect.value)||!Number(daySelect.value))missing.push("teaching week and day");
+      if(missing.length){aidStatus.textContent="Complete these required resource fields first: "+missing.join(", ")+". No draft has been saved.";return null;}
+      return {
+        id:String(activityId.value).trim()+"-AID-"+Date.now(),
+        activityId:String(activityId.value).trim(),
+        subject:subjectLabel,
+        subjectKey:subject,
+        level:levelValue,
+        term:term,
+        week:Number(weekSelect.value),
+        day:Number(daySelect.value),
+        resourceType:aidType.value,
+        title:String(aidTitle.value).trim(),
+        achievementIndicator:String(indicator.value).trim(),
+        learningObjective:String(objective.value).trim(),
+        teacherInstructions:String(teacherInstructions.value).trim(),
+        studentVersion:String(studentVersion.value).trim(),
+        sourceLicence:String(sourceLicence.value).trim(),
+        accessibilityFormats:selectedFormats,
+        teacherNote:String(teacherNote.value).trim(),
+        reviewStatus:"PENDING_TEACHER_REVIEW",
+        curriculumVerification:"NOT_YET_MAPPED",
+        approved:false,
+        published:false,
+        createdAt:(new Date()).toISOString()
+      };
+    }
+    var aidGateStatus=node("p","Quality gate: not checked yet.");
+    aidGateStatus.setAttribute("role","status");aidGateStatus.setAttribute("aria-live","polite");aids.appendChild(aidGateStatus);
+    var aidGateDetails=node("ul");
+    aidGateDetails.setAttribute("aria-label","Teaching-aid quality gate requirements still missing");
+    aids.appendChild(aidGateDetails);
+    function validateAidDraft(record){
+      var gate=window.PacEduTeachingAidQualityGate;
+      if(!gate||typeof gate.validateActivity!=="function")return null;
+      var objectiveText=record.learningObjective;
+      var activity={
+        id:record.activityId,subject:record.subject,level:record.level,term:record.term,
+        week:record.week,day:record.day,learningObjective:objectiveText,
+        curriculum:{verificationStatus:"PENDING_SOURCE",sourceTitle:"",sourceVersion:"",outcomeOrConcept:"",achievementIndicator:record.achievementIndicator,indicatorStatus:"PENDING_SOURCE"},
+        examples:{worked:"",guided:"",independent:""},
+        abilityGroups:{
+          Copper:{learningObjective:objectiveText,instructions:""},
+          Bronze:{learningObjective:objectiveText,instructions:""},
+          Silver:{learningObjective:objectiveText,instructions:""},
+          Gold:{learningObjective:objectiveText,instructions:""}
+        },
+        worksheet:{id:"",content:""},teacherWorkplan:"",lessonPlan:"",
+        assessment:{method:"",markingGuidance:""},
+        accessibility:{formats:record.accessibilityFormats,teacherNote:record.teacherNote},
+        teachingAids:[{
+          id:record.id,title:record.title,type:record.resourceType,subject:record.subject,
+          level:record.level,term:record.term,week:record.week,day:record.day,
+          activityId:record.activityId,learningObjective:objectiveText,
+          teacherInstructions:record.teacherInstructions,studentVersion:record.studentVersion,
+          sourceLicence:record.sourceLicence,reviewStatus:"READY_FOR_TEACHER_REVIEW",
+          accessibilityFormats:record.accessibilityFormats,indicator:record.achievementIndicator
+        }]
+      };
+      return gate.validateActivity(activity);
+    }
+    function showGateResult(result){
+      aidGateDetails.textContent="";
+      if(!result){
+        aidGateStatus.textContent="Quality gate unavailable. Draft remains PENDING_TEACHER_REVIEW.";
         return;
       }
-      var term=String(window.localStorage.getItem("pacificEducationTerm")||"T1");
+      aidGateStatus.textContent="Quality gate: "+result.status+". "+result.missing.length+" activity requirement(s) and "+result.missingTeachingAids.length+" teaching-aid requirement(s) still need attention. No release is permitted.";
+      result.missing.concat(result.missingTeachingAids).forEach(function(item){
+        var li=node("li",item);aidGateDetails.appendChild(li);
+      });
+    }
+    var saveAid=node("button","Save teaching aid draft on this device");saveAid.type="button";
+    saveAid.style.cssText="display:block;width:100%;min-height:46px;padding:10px;margin:8px 0;font:inherit;font-weight:700;";
+    saveAid.addEventListener("click",function(){
+      var record=buildAidRecord();if(!record)return;
+      var gateResult=validateAidDraft(record);
+      if(gateResult){
+        record.qualityGateStatus=gateResult.status;
+        record.qualityGateMissing=gateResult.missing.slice();
+        record.qualityGateMissingTeachingAids=gateResult.missingTeachingAids.slice();
+      }else{
+        record.qualityGateStatus="NOT_CHECKED";
+        record.qualityGateMissing=[];
+        record.qualityGateMissingTeachingAids=[];
+      }
+      try{
+        var key="paceduTeacherTeachingAidDraftsV1";
+        var rows=JSON.parse(window.localStorage.getItem(key)||"[]");
+        if(!Array.isArray(rows))rows=[];
+        rows.push(record);
+        window.localStorage.setItem(key,JSON.stringify(rows));
+        showGateResult(gateResult);
+        aidStatus.textContent="Saved on this device: "+record.title+" — PENDING_TEACHER_REVIEW. It is not approved, uploaded or published.";
+      }catch(error){aidStatus.textContent="This device could not save the draft. No upload or publication occurred.";}
+    });
+    aids.appendChild(saveAid);
+    var aidDownload=node("button","Download teaching aid brief (.txt)"); aidDownload.type="button";
+    aidDownload.addEventListener("click",function(){
+      var record=buildAidRecord();if(!record)return;
       var content=[
         "PACEDU TEACHER RESOURCE BRIEF",
         "Status: PENDING_TEACHER_REVIEW",
-        "Subject: "+subject,
-        "Class: "+levelValue,
-        "Term: "+term,
-        "Resource type: "+aidType.options[aidType.selectedIndex].text,
-        "Curriculum reference: "+indicator.value.trim(),
+        "Activity ID: "+record.activityId,
+        "Subject: "+record.subject,
+        "Internal subject key: "+record.subjectKey,
+        "Class: "+record.level,
+        "Term / week / day: "+record.term+" / "+record.week+" / "+record.day,
+        "Resource type: "+record.resourceType,
+        "Title: "+record.title,
+        "Curriculum reference: "+record.achievementIndicator,
         "Learning objective and resource notes:",
-        objective.value.trim(),
+        record.learningObjective,
+        "Teacher instructions:",record.teacherInstructions,
+        "Student version / accessible description:",record.studentVersion,
+        "Source and licence / ownership:",record.sourceLicence,
+        "Accessible formats: "+record.accessibilityFormats.join(", "),
+        "Accessibility note:",record.teacherNote,
         "",
-        "Teacher check: verify the official source, class, term, week, day and objective before use."
+        "Curriculum verification: NOT_YET_MAPPED",
+        "Approval: No",
+        "Publication: No",
+        "Teacher check: verify the official source, exact class, term, week, day and objective before use."
       ].join("\n");
       var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
       var url=window.URL.createObjectURL(blob);
-      var link=node("a","Download resource brief"); link.href=url; link.download="PacEdu-"+subject.replace(/[^a-z0-9]+/gi,"-")+"-"+String(levelValue).replace(/[^a-z0-9]+/gi,"-")+"-teaching-aid.txt";
+      var link=node("a","Download resource brief"); link.href=url; link.download="PacEdu-"+subjectLabel.replace(/[^a-z0-9]+/gi,"-")+"-"+String(levelValue).replace(/[^a-z0-9]+/gi,"-")+"-teaching-aid.txt";
       aids.appendChild(link); link.click(); link.remove();
       window.setTimeout(function(){window.URL.revokeObjectURL(url);},1000);
-      aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW until checked.";
+      aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW; it is not approved or published.";
     });
     aids.appendChild(aidDownload);
     panel.appendChild(aids);
@@ -269,6 +432,7 @@
   window.PacEduTeacherTwoResourceWorkspace = Object.freeze({
     render: render,
     priorReviewedEvidence: priorReviewedEvidence,
+    reviewedEvidenceFor: reviewedEvidenceFor,
     recommendedBand: bandFor
   });
 })(window, document);
