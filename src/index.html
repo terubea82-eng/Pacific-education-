@@ -768,7 +768,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       welcomeNext.addEventListener("click", function(event) {
         event.preventDefault();
         event.stopImmediatePropagation();
-        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(2);}else{openEntryPage(2);}
+        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(3);}else{openEntryPage(2);}
       }, true);
     }
     if (visionNext && visionNext.getAttribute("data-pe-early-next-bound") !== "true") {
@@ -807,7 +807,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       if (node.id === "welcomeNextButton") {
         event.preventDefault();
         event.stopImmediatePropagation();
-        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(2);}else{openEntryPage(2);}
+        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(3);}else{openEntryPage(2);}
         return;
       }
       if (node.id === "paceduVisionNext") {
