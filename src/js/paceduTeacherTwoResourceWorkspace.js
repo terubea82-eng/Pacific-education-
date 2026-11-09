@@ -7,11 +7,13 @@
   "use strict";
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
+  /* Stable internal keys preserve existing pack-builder compatibility;
+     learner-facing names follow the approved PacEdu order. */
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "support", label: "Copper" },
+    { id: "developing", label: "Bronze" },
+    { id: "expected", label: "Silver" },
+    { id: "extension", label: "Gold" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
@@ -32,7 +34,9 @@
         r.teacherReviewed === true || r.teacherApproved === true;
       var rawMark = r.markPercent != null ? r.markPercent : r.scorePercent != null ? r.scorePercent :
         r.mark != null ? r.mark : r.score != null ? r.score : null;
-      var hasMark = rawMark !== null && rawMark !== "" && Number.isFinite(Number(rawMark));
+      var numericMark = rawMark === null || rawMark === "" ? NaN : Number(rawMark);
+      /* Percentages outside the valid 0–100 range are not placement evidence. */
+      var hasMark = Number.isFinite(numericMark) && numericMark >= 0 && numericMark <= 100;
       return reviewed && hasMark &&
         String(r.studentReference || r.studentRef || "") === String(studentRef) &&
         String(r.classId || "") === String(classId) &&
@@ -76,7 +80,7 @@
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
     panel.appendChild(node("h3", subjectLabel + " — " + selectedClass.textContent.trim()));
-    panel.appendChild(node("p", "Only two resource types are provided here. Use a learner's latest reviewed evidence when available; missing or pending work does not mean low ability."));
+    panel.appendChild(node("p", "Only two resource types are provided here. A reviewed 0–100 mark may suggest a provisional worksheet group; it never assigns a learner. Confirm placement only after the Day 1 baseline and sufficient reviewed evidence. Missing, pending or invalid work stays unconfirmed and never means low ability."));
     /* Keep the visible workspace to the two requested resource types.
        Existing linked-plan actions remain callable by the resource-1 buttons. */
     Array.prototype.forEach.call(planPanel.querySelectorAll("button"), function (b) {
