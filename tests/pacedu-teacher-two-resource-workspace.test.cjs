@@ -66,7 +66,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await panel.getByLabel("Teaching aid title").fill("Letter S teaching card");
   await panel.getByLabel("Verified achievement indicator / curriculum reference").fill("Teacher to verify official indicator reference");
   await panel.getByLabel("Learning objective and resource notes").fill("Identify the letter S and its sound.");
-  await panel.getByLabel("Teacher instructions").fill("Model the letter S and its sound.");
+  await panel.getByRole("textbox", { name: "Teacher instructions", exact: true }).fill("Model the letter S and its sound.");
   await panel.getByLabel("Student version / accessible description").fill("Large letter S card with a spoken description.");
   await panel.getByLabel("Source and licence / ownership").fill("Original PacEdu draft; teacher review required.");
   await panel.getByLabel("Accessibility and adaptation note").fill("Offer large print, screen-reader text and verbal description.");
