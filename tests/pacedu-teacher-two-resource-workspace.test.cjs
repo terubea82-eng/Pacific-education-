@@ -37,6 +37,8 @@ test("teacher subject/class workspace offers only two resource types and safely 
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
   await expect(panel.getByRole("heading", { name: "1. Teacher Instructions — Read or Print", exact: true })).toBeVisible();
   await expect(panel.getByRole("heading", { name: "2. Daily Activities + Revision + Practice Exam — By Ability", exact: true })).toBeVisible();
+  await expect(panel).toContainText("it never assigns a learner");
+  await expect(panel).toContainText("Day 1 baseline and sufficient reviewed evidence");
   await expect(panel).toContainText("FEMIS-1");
   await expect(panel).toContainText("provisional worksheet recommendation: Silver");
   await expect(panel).toContainText("FEMIS-2");
