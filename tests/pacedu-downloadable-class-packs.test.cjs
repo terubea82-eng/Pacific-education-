@@ -28,7 +28,7 @@ test('download pack includes 45 dated Term 1 daily activities and assessment pra
  const p=api.build({level:'Class 1',subject:'English',term:'T1',ability:'support'});
  assert.equal(p.dailyActivities,45);
  assert.equal(p.missingSlots,0);
- assert.match(p.filename,/Class-1_English_T1_support_/);
+ assert.match(p.filename,/Class-1_English_T1_Copper_/);
  assert.match(p.html,/Prepared by PacEdu/);
  assert.match(p.html,/Revision question/);
  assert.match(p.html,/Mock practice examination — not an official or past paper/);
