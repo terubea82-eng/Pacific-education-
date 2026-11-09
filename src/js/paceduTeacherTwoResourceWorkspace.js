@@ -59,6 +59,7 @@
     var roster = window.PacificEducationTeacherClassRosterContext;
     var classInfo = null;
     try { classInfo = roster && classId && roster.getClass ? roster.getClass(classId) : null; } catch (_) {}
+    var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     var panel = node("section");
     panel.id = PANEL_ID;
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
