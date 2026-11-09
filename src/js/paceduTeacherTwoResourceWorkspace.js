@@ -77,7 +77,7 @@
     panel.setAttribute("aria-label", "Teacher instructions and student ability worksheets");
     panel.style.cssText = "margin:14px 0;padding:14px;border:2px solid #7bb9e8;border-radius:12px;";
     panel.appendChild(node("h3", subjectLabel + " — " + selectedClass.textContent.trim()));
-    panel.appendChild(node("p", "Daily downloads and teaching aids stay linked to the selected subject and class. No learner is automatically placed; a reviewed 0–100 mark is evidence for teacher review only. Confirm placement only after the Day 1 baseline and sufficient reviewed evidence. Missing, pending or invalid work stays unconfirmed and never means low ability."));
+    panel.appendChild(node("p", "Daily downloads and teaching aids stay linked to the selected subject and class. A reviewed 0–100 mark is evidence for teacher review only; it never assigns a learner. Confirm placement only after the Day 1 baseline and sufficient reviewed evidence. Missing, pending or invalid work stays unconfirmed and never means low ability."));
     /* Keep the visible workspace to the two requested resource types.
        Existing linked-plan actions remain callable by the resource-1 buttons. */
     Array.prototype.forEach.call(planPanel.querySelectorAll("button"), function (b) {
