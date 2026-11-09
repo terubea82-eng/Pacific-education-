@@ -41,6 +41,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await expect(panel).toContainText("provisional worksheet recommendation: Silver");
   await expect(panel).toContainText("FEMIS-2");
   await expect(panel).toContainText("No reviewed mark found");
+  await expect(panel).toContainText("FEMIS-3 — No reviewed mark found");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(39))).toBe("support");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(59))).toBe("developing");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(79))).toBe("expected");
