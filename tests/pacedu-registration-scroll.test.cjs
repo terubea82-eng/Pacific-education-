@@ -1,6 +1,8 @@
 const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
+const registrationURL = new URL(baseURL);
+registrationURL.searchParams.set("entry", "registration");
 
 test("registration scrolling remains user-controlled when role cards receive focus", async ({ browser }) => {
   const context = await browser.newContext({
@@ -13,7 +15,7 @@ test("registration scrolling remains user-controlled when role cards receive foc
   await page.addInitScript(() => {
     try { sessionStorage.setItem("pacificEducationRulesAccepted", "yes"); } catch (_) {}
   });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded" });
+  await page.goto(registrationURL.toString(), { waitUntil: "domcontentloaded" });
   const registration = page.locator("#pacificEducationIdentityRegistration");
   await expect(registration).toBeVisible();
 
@@ -47,9 +49,8 @@ test("Page 3 Next opens only Registration at the defined guided-flow step", asyn
 
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await page.locator("#paceduVisionNext").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
 
   await page.locator("#paceduRulesAgreement").check();
   await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
