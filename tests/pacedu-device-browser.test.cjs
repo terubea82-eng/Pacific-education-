@@ -877,7 +877,7 @@ test("registration must remain on Page 4 when the real save does not persist", a
 });
 
 
-test("integrated Welcome → Vision → Rules → Registration flow never replays the welcome narration", async ({ page }) => {
+test("integrated Welcome → Workspaces and Rules → Registration flow never replays the welcome narration", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -885,10 +885,8 @@ test("integrated Welcome → Vision → Rules → Registration flow never replay
   await expect.poll(() => page.evaluate(() => window.__pacificEducationWelcomeCompleted), { timeout: 10000 }).toBe(true);
 
   await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
-  await page.locator("#paceduVisionNext").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await expect(page.locator("#paceduPageVision")).toBeHidden();
   await page.locator("#paceduRulesAgreement").check();
   const speechCountBeforeRegistration = await page.evaluate(() => (window.__paceduSpeechCalls || []).length);
@@ -952,7 +950,7 @@ test("Page isolation keeps the Coverage Dashboard independent from Teacher Calen
 });
 
 
-test("gateway Next follows Welcome → Vision → Rules → Registration without stale pages", async ({ page }) => {
+test("gateway Next follows Welcome → Workspaces and Rules → Registration without stale pages", async ({ page }) => {
   await installSpeechHarness(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
@@ -960,13 +958,10 @@ test("gateway Next follows Welcome → Vision → Rules → Registration without
   await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
   await expect(page.locator("#welcomeNextWrapper")).toBeVisible();
   await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
-  expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
-
-  await page.locator("#paceduVisionNext").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
   await expect(page.locator("#paceduPageVision")).toBeHidden();
+  expect(new URL(page.url()).pathname).toMatch(/\/src\/index\.html$/);
   await page.locator("#paceduRulesAgreement").check();
   await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
   await page.locator("#paceduRulesContinue").click();
@@ -1011,9 +1006,8 @@ test("Rules Next opens Registration without briefly restoring Welcome", async ({
 
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.locator("#welcomeNextButton").click();
-  await expect(page.locator("#paceduPageVision")).toBeVisible();
-  await page.locator("#paceduVisionNext").click();
   await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#paceduPageVision")).toBeHidden();
   await page.locator("#paceduRulesAgreement").check();
   await expect(page.locator("#paceduRulesContinue")).toBeEnabled();
   await page.evaluate(() => { window.__paceduObserveRegistrationTransition = true; });
