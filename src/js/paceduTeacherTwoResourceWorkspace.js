@@ -142,7 +142,7 @@
         row.textContent = String(ref) + " — " + (mark ?
           "Reviewed evidence: " + reviewedRows.length + " record(s); Day 1 reviewed record: " +
           (hasDayOne ? "present" : "not found") + "; ability placement remains unconfirmed for teacher review." :
-          "No valid teacher-reviewed evidence found for this subject; ability group remains unconfirmed.");
+          "No reviewed mark found for this subject; no valid teacher-reviewed evidence is available, so the ability group remains unconfirmed.");
         rosterList.appendChild(row);
       });
       evidence.appendChild(rosterList);
