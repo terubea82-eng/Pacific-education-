@@ -45,9 +45,14 @@ jobs:
           arch: x86_64
           profile: pixel_2
           disable-animations: true
+          shell: bash
           script: |
             set -euo pipefail
+            echo 'WEBVIEW_RECOVERY_GATE=REQUIRED'
+            echo 'Phase 1: write fictional IndexedDB survival record'
             cd android
             gradle --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart
             adb shell am force-stop fj.pacificeducation.app.debug
+            echo 'Phase 2: process force-stopped; relaunching for independent read'
             gradle --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#readRecordAfterProcessRestart
+            echo 'WEBVIEW_RECOVERY_GATE=PASSED; expected marker PACEDU_WEBVIEW_PERSISTED recovered as READ_OK'
