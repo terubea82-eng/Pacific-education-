@@ -20,10 +20,13 @@
     var auth=options.auth, submitCallable=options.submitCallable, queueStore=options.queueStore;
     var getSubmissionContext=options.getSubmissionContext, makeUuid=options.makeUuid;
     var enabled=options.enabled===true;
-    function dependenciesReady(){
+    function enqueueDependenciesReady(){
+      return !!(auth&&queueStore&&typeof queueStore.put==="function"&&
+        typeof getSubmissionContext==="function");
+    }
+    function syncDependenciesReady(){
       return !!(auth&&typeof submitCallable==="function"&&queueStore&&
-        typeof queueStore.put==="function"&&typeof queueStore.list==="function"&&
-        typeof queueStore.acknowledge==="function"&&typeof getSubmissionContext==="function");
+        typeof queueStore.list==="function"&&typeof queueStore.acknowledge==="function");
     }
     function currentUser(){
       var user=auth&&auth.currentUser;
@@ -36,7 +39,7 @@
     }
     async function enqueue(response){
       if(!enabled)return result(false,"STAGING_ADAPTER_DISABLED");
-      if(!dependenciesReady())return result(false,"ADAPTER_DEPENDENCIES_MISSING");
+      if(!enqueueDependenciesReady())return result(false,"ADAPTER_DEPENDENCIES_MISSING");
       if(!currentUser())return result(false,"AUTHENTICATION_REQUIRED");
       if(!response||typeof response!=="object"||Array.isArray(response)||
         typeof response.completed!=="boolean"||
@@ -61,7 +64,7 @@
     }
     async function sync(){
       if(!enabled)return result(false,"STAGING_ADAPTER_DISABLED",{queuePreserved:true});
-      if(!dependenciesReady())return result(false,"ADAPTER_DEPENDENCIES_MISSING",{queuePreserved:true});
+      if(!syncDependenciesReady())return result(false,"ADAPTER_DEPENDENCIES_MISSING",{queuePreserved:true});
       var user=currentUser();
       if(!user)return result(false,"AUTHENTICATION_REQUIRED",{queuePreserved:true});
       try{if(typeof user.getIdToken!=="function")return result(false,"FIREBASE_AUTH_TOKEN_UNAVAILABLE",{queuePreserved:true});await user.getIdToken();}
