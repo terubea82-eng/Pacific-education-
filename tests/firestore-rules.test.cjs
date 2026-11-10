@@ -273,6 +273,12 @@ test("assigned teacher can read and review a submission but cannot change learne
     reviewedAt: new Date(),
   }));
   await assertFails(updateDoc(doc(teacherDb, "learnerSubmissions/submission-a"), {
+    reviewStatus: "needs-practice",
+    teacherFeedback: "Second review attempt",
+    reviewedBy: "teacher-a",
+    reviewedAt: new Date(),
+  }));
+  await assertFails(updateDoc(doc(teacherDb, "learnerSubmissions/submission-a"), {
     studentUid: "teacher-a",
   }));
 });
