@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /progress/{progressId} {
+      // Staging contract: learner submissions must use the trusted callable.
+      allow get, list: if request.auth != null
+        && resource.data.uid == request.auth.uid;
+      allow create, update, delete: if false;
+    }
+    match /users/{userId} {
+      allow get: if request.auth != null && request.auth.uid == userId;
+      allow list, create, update, delete: if false;
+    }
+    match /classes/{classId}/members/{memberUid} {
+      allow get: if request.auth != null && request.auth.uid == memberUid;
+      allow list, create, update, delete: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
