@@ -55,3 +55,25 @@ test("durable queue fails closed without IndexedDB and never falls back to local
   const store=DurableStore.create({indexedDB:null});
   await assert.rejects(store.put(makeItem(4)),/INDEXEDDB_UNAVAILABLE/);
 });
+
+test("durable queue rejects extra identity fields, invalid context and oversized response",async()=>{
+  const dbName="pacedu-validation-"+Date.now();
+  const store=DurableStore.create({dbName});
+  const valid=makeItem(5);
+  await assert.rejects(store.put({...valid,uid:"client-controlled"}),/INVALID_QUEUE_ITEM/);
+  await assert.rejects(store.put({...valid,classId:"bad class"}),/INVALID_QUEUE_ITEM/);
+  await assert.rejects(store.put({...valid,response:{completed:true,answerText:"x".repeat(4001)}}),/INVALID_QUEUE_ITEM/);
+  assert.equal((await store.list()).length,0);
+  await store.close();
+});
+
+test("duplicate event ID cannot overwrite an existing durable learner response",async()=>{
+  const dbName="pacedu-duplicate-"+Date.now();
+  const store=DurableStore.create({dbName});
+  const original=makeItem(6);
+  await store.put(original);
+  await assert.rejects(store.put({...original,response:{completed:false,answerText:"replacement"}}));
+  const [saved]=await store.list();
+  assert.deepEqual(saved,original);
+  await store.close();
+});
