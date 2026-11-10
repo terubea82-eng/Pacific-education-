@@ -66,16 +66,16 @@ if [[ ! -f "$APK_PATH" ]]; then
   echo "::error::Gradle debug APK file is missing: $APK_PATH"
   exit 1
 fi
-RUNTIME_PACKAGE="$(sed -n 's/.*PACEDU_TARGET_PACKAGE=//p' "$WRITER_LOG" | tail -n 1)"
-RUNTIME_APK_PATH="$(sed -n 's/.*PACEDU_TARGET_APK_PATH=//p' "$WRITER_LOG" | tail -n 1)"
-TEST_PACKAGE="$(sed -n 's/.*PACEDU_TEST_PACKAGE=//p' "$WRITER_LOG" | tail -n 1)"
+RUNTIME_PACKAGE="$(sed -n 's/.*PACEDU_TARGET_PACKAGE=//p' "$LOGCAT_LOG" | tail -n 1)"
+RUNTIME_APK_PATH="$(sed -n 's/.*PACEDU_TARGET_APK_PATH=//p' "$LOGCAT_LOG" | tail -n 1)"
+TEST_PACKAGE="$(sed -n 's/.*PACEDU_TEST_PACKAGE=//p' "$LOGCAT_LOG" | tail -n 1)"
 echo "INSTRUMENTATION_TARGET_PACKAGE=$RUNTIME_PACKAGE"
 echo "INSTRUMENTATION_TARGET_APK_PATH=$RUNTIME_APK_PATH"
 echo "INSTRUMENTATION_TEST_PACKAGE=$TEST_PACKAGE"
 if [[ -z "$RUNTIME_PACKAGE" || -z "$RUNTIME_APK_PATH" ]]; then
   echo "::error::Writer instrumentation did not emit its in-process target package identity."
   echo "WRITER_LOG_PACKAGE_MARKERS_BEGIN"
-  grep -E 'PACEDU_(TARGET_PACKAGE|TARGET_APK_PATH|TEST_PACKAGE|INSTRUMENTATION_PACKAGE_ENTRY)' "$WRITER_LOG" || true
+  grep -E 'PACEDU_(TARGET_PACKAGE|TARGET_APK_PATH|TEST_PACKAGE|INSTRUMENTATION_PACKAGE_ENTRY)' "$LOGCAT_LOG" || true
   echo "WRITER_LOG_PACKAGE_MARKERS_END"
   exit 1
 fi
