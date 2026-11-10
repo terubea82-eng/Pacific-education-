@@ -72,17 +72,13 @@ service cloud.firestore {
     }
 
     match /progress/{progressId} {
-      allow create: if request.auth != null
-        && request.resource.data.uid == request.auth.uid;
-
-      allow update: if request.auth != null
-        && resource.data.uid == request.auth.uid
-        && request.resource.data.uid == request.auth.uid;
-
-      allow read: if request.auth != null
+      // Progress is authoritative education data. Browser clients may read
+      // only their own records; writes must come from a trusted server using
+      // the Admin SDK after authentication, relationship and policy checks.
+      allow get, list: if request.auth != null
         && resource.data.uid == request.auth.uid;
 
-      allow delete: if false;
+      allow create, update, delete: if false;
     }
 
     // Cross-device teacher review metadata. The image itself must be uploaded
