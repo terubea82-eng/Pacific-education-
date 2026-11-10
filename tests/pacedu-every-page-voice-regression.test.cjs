@@ -20,8 +20,8 @@ test("additive voice repair maps every guided step to the actual page sequence",
     '[9,"dailyLesson"',
     '[10,"dailyLessonPracticeStage"',
     '[11,"assessments"',
-    '[12,"pacificEducationCoverageDashboard",
-    '[13,"teacherCalendarSection''
+    '[12,"pacificEducationCoverageDashboard"',
+    '[13,"teacherCalendarSection"''
   ];
   for (const mapping of expected) assert.ok(repair.includes(mapping), "missing mapping: " + mapping);
 });
