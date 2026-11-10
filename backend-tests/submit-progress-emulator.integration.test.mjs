@@ -33,6 +33,18 @@ before(async () => {
       curriculumVersion: "FJ-NCF-test", subjectId: "English", term: "Term 1", week: 1, day: 1
     });
   });
+
+  // Verify fixture provisioning against the same Firestore emulator before invoking Functions.
+  await testEnv.withSecurityRulesDisabled(async context => {
+    const db = context.firestore();
+    const account = await getDoc(doc(db, "accountControl", uid));
+    const membership = await getDoc(doc(db, "classes", "fictional-class-a", "members", uid));
+    const activity = await getDoc(doc(db, "approvedActivities", "fictional-english-day-1"));
+    assert.equal(account.exists(), true, "fictional account fixture must exist in emulator");
+    assert.deepEqual(account.data(), { role: "student", status: "active" });
+    assert.equal(membership.exists(), true, "fictional membership fixture must exist in emulator");
+    assert.equal(activity.exists(), true, "fictional approved activity fixture must exist in emulator");
+  });
 });
 
 after(async () => {
