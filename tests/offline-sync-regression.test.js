@@ -162,3 +162,44 @@ test("invalid or unresolved-conflict acknowledgements preserve the entire queue"
   assert.equal(blocked.reason, "MANUAL_CONFLICT_REVIEW_REQUIRED");
   assert.equal(runtime.getQueueStatus().count, 2);
 });
+
+
+test("offline queue rejects missing lesson identity and non-boolean completion", () => {
+  const { window } = loadPrototype();
+  const runtime = window.PacificEducationOfflineRuntime;
+  for (const item of [
+    { dayNumber: 1, completed: true },
+    { lessonId: "", dayNumber: 1, completed: true },
+    { lessonId: "math-1", dayNumber: 1, completed: "false" },
+    { lessonId: "math-1", dayNumber: 1, completed: 0 }
+  ]) {
+    const result = runtime.queueProgress(item);
+    assert.equal(result.success, false);
+    assert.equal(result.reason, "INVALID_PROTOTYPE_QUEUE_ITEM");
+  }
+  assert.equal(runtime.getQueueStatus().count, 0);
+});
+
+test("different offline event types are not incorrectly deduplicated", () => {
+  const { window } = loadPrototype();
+  const runtime = window.PacificEducationOfflineRuntime;
+  const progress = runtime.queueProgress({
+    type: "progress", lessonId: "math-1", dayNumber: 1, completed: true
+  });
+  const completion = runtime.queueProgress({
+    type: "lesson_completion", lessonId: "math-1", dayNumber: 1, completed: true
+  });
+  assert.equal(progress.success, true);
+  assert.equal(completion.success, true);
+  assert.equal(completion.duplicate, false);
+  assert.equal(runtime.getQueueStatus().count, 2);
+});
+
+test("offline queue rejects delimiter characters in lesson identifiers", () => {
+  const { window } = loadPrototype();
+  const result = window.PacificEducationOfflineRuntime.queueProgress({
+    lessonId: "math|1", dayNumber: 1, completed: true
+  });
+  assert.equal(result.success, false);
+  assert.equal(result.reason, "INVALID_PROTOTYPE_QUEUE_ITEM");
+});
