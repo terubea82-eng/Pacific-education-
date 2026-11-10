@@ -1,6 +1,7 @@
 name: PacEdu Android WebView Persistence Resilience
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - backend/trusted-sync-staging-20261110
