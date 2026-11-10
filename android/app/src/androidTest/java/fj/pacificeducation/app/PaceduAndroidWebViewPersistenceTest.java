@@ -87,13 +87,37 @@ public final class PaceduAndroidWebViewPersistenceTest {
             });
             if (failure.get() != null) throw failure.get();
             assertNotNull(target.get());
+            waitForHostedPageReady(scenario);
             action.run(target.get());
         }
     }
 
+    private void waitForHostedPageReady(ActivityScenario<MainActivity> scenario) throws Exception {
+        long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(45);
+        while (System.nanoTime() < deadline) {
+            AtomicReference<Boolean> ready = new AtomicReference<>(false);
+            scenario.onActivity(activity -> {
+                try {
+                    Field field = MainActivity.class.getDeclaredField("webPageReady");
+                    field.setAccessible(true);
+                    ready.set(field.getBoolean(activity));
+                } catch (Exception e) {
+                    throw new IllegalStateException("Unable to inspect WebView page readiness", e);
+                }
+            });
+            if (Boolean.TRUE.equals(ready.get())) return;
+            Thread.sleep(200);
+        }
+        throw new AssertionError("Timed out waiting for MainActivity WebView onPageFinished");
+    }
+
     private void loadHtmlOnUiThread(WebView webView, String html) {
-        androidx.test.platform.app.InstrumentationRegistry.getInstrumentation().runOnMainSync(
-                () -> webView.loadDataWithBaseURL(TEST_ORIGIN, html, "text/html", "UTF-8", null));
+        androidx.test.platform.app.InstrumentationRegistry.getInstrumentation().runOnMainSync(() -> {
+            // The hosted APP_URL navigation must finish before the deterministic probe
+            // page is installed; stop any remaining navigation before replacing it.
+            webView.stopLoading();
+            webView.loadDataWithBaseURL(TEST_ORIGIN, html, "text/html", "UTF-8", null);
+        });
     }
 
     private String waitForResult(WebView webView) throws Exception {
