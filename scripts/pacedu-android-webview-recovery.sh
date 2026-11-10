@@ -14,28 +14,54 @@ echo PHASE=INDEXEDDB_WRITE_TEST_PASSED
 echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK
 
 echo "PHASE=INSPECT_INSTALLED_PACKAGES_AFTER_WRITER"
-adb shell pm list packages -3 | sort
+echo "EMULATOR_ALL_PACKAGES_BEGIN"
+adb shell pm list packages | tr -d '\\r' | sort
+echo "EMULATOR_ALL_PACKAGES_END"
+echo "EMULATOR_THIRD_PARTY_PACKAGES_BEGIN"
+adb shell pm list packages -3 | tr -d '\\r' | sort
+echo "EMULATOR_THIRD_PARTY_PACKAGES_END"
+echo "EMULATOR_INSTRUMENTATION_PACKAGES_BEGIN"
+adb shell pm list instrumentation | tr -d '\\r' | sort
+echo "EMULATOR_INSTRUMENTATION_PACKAGES_END"
+echo "EMULATOR_PACKAGES_WITH_APK_PATHS_BEGIN"
+adb shell pm list packages -f | tr -d '\\r' | sort
+echo "EMULATOR_PACKAGES_WITH_APK_PATHS_END"
 
 APK_METADATA="android/app/build/outputs/apk/debug/output-metadata.json"
 if [[ ! -f "$APK_METADATA" ]]; then
   echo "::error::Gradle debug APK output metadata is missing: $APK_METADATA"
   exit 1
 fi
-APP_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["applicationId"])' "$APK_METADATA")"
-if [[ -z "$APP_ID" ]]; then
-  echo "::error::Gradle debug APK applicationId is empty."
+read -r APP_ID APK_OUTPUT < <(python3 -c 'import json,sys; m=json.load(open(sys.argv[1], encoding="utf-8")); e=m["elements"][0]; print(m["applicationId"], e["outputFile"])' "$APK_METADATA")
+if [[ -z "$APP_ID" || -z "$APK_OUTPUT" ]]; then
+  echo "::error::Gradle debug APK metadata did not provide applicationId and outputFile."
   exit 1
 fi
+APK_PATH="android/app/build/outputs/apk/debug/$APK_OUTPUT"
 echo "GRADLE_DEBUG_APK_APPLICATION_ID=$APP_ID"
+echo "GRADLE_DEBUG_APK_PATH=$APK_PATH"
+if [[ ! -f "$APK_PATH" ]]; then
+  echo "::error::Gradle debug APK file is missing: $APK_PATH"
+  exit 1
+fi
+if command -v aapt >/dev/null 2>&1; then
+  echo "GRADLE_DEBUG_APK_BADGING_BEGIN"
+  aapt dump badging "$APK_PATH" | head -n 3
+  echo "GRADLE_DEBUG_APK_BADGING_END"
+else
+  echo "AAPT_NOT_AVAILABLE=YES"
+fi
 echo "PHASE=VERIFY_DEBUG_PACKAGE_INSTALLED"
-if ! adb shell pm list packages -3 | sed 's/^package://' | tr -d '\\r' | grep -Fxq "$APP_ID"; then
-  echo "::error::Gradle debug APK applicationId $APP_ID is not present in the emulator package list."
+ALL_PACKAGES="$(adb shell pm list packages | tr -d '\\r')"
+if ! grep -Fxq "package:$APP_ID" <<< "$ALL_PACKAGES"; then
+  echo "::error::Gradle debug APK applicationId $APP_ID is absent from the complete emulator package inventory."
+  echo "DIAGNOSTIC_BASE_PACKAGE=fj.pacificeducation.app"
+  adb shell pm path fj.pacificeducation.app || true
+  echo "DIAGNOSTIC_DEBUG_PACKAGE=$APP_ID"
+  adb shell pm path "$APP_ID" || true
   exit 1
 fi
-if ! adb shell pm path "$APP_ID" | grep -q '^package:'; then
-  echo "::error::Gradle debug APK applicationId $APP_ID has no installed APK path."
-  exit 1
-fi
+adb shell pm path "$APP_ID"
 if ! adb shell pidof "$APP_ID" >/dev/null 2>&1; then
   echo "::error::Expected Android debug package $APP_ID has no running process before force-stop."
   exit 1
