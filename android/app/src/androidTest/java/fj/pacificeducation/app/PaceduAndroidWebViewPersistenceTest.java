@@ -5,6 +5,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 import android.webkit.WebView;
+import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.util.Log;
 
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -20,6 +24,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 @RunWith(AndroidJUnit4.class)
 public final class PaceduAndroidWebViewPersistenceTest {
+    private static final String TAG = "PacEduWebViewPersistence";
     private static final String TEST_ORIGIN = "https://pacedu.test/";
     private static final String DATABASE_NAME = "pacedu-android-webview-resilience-v1";
 
@@ -30,6 +35,7 @@ public final class PaceduAndroidWebViewPersistenceTest {
      */
     @Test
     public void writeRecordBeforeProcessRestart() throws Exception {
+        logRuntimePackageIdentity();
         withRealPacEduWebView(webView -> {
             String html = "<!doctype html><meta charset='utf-8'><script>"
                     + "window.__paceduProbe='PENDING';"
@@ -63,6 +69,34 @@ public final class PaceduAndroidWebViewPersistenceTest {
             loadHtmlOnUiThread(webView, html);
             assertEquals("\"READ_OK\"", waitForResult(webView));
         });
+    }
+
+
+    /*
+     * Capture package identity while the instrumentation target is installed,
+     * before Gradle performs any post-test uninstall/cleanup.
+     */
+    private void logRuntimePackageIdentity() throws Exception {
+        android.app.Instrumentation instrumentation =
+                androidx.test.platform.app.InstrumentationRegistry.getInstrumentation();
+        Context targetContext = instrumentation.getTargetContext();
+        Context testContext = instrumentation.getContext();
+        PackageManager packageManager = targetContext.getPackageManager();
+        ApplicationInfo targetInfo = packageManager.getApplicationInfo(
+                targetContext.getPackageName(), 0);
+
+        Log.i(TAG, "PACEDU_TARGET_PACKAGE=" + targetContext.getPackageName());
+        Log.i(TAG, "PACEDU_TARGET_APK_PATH=" + targetInfo.sourceDir);
+        Log.i(TAG, "PACEDU_TEST_PACKAGE=" + testContext.getPackageName());
+        Log.i(TAG, "PACEDU_TARGET_PACKAGE_VISIBLE="
+                + (packageManager.getApplicationInfo(targetContext.getPackageName(), 0) != null));
+        for (ApplicationInfo installed : packageManager.getInstalledApplications(0)) {
+            if (installed.packageName.equals(targetContext.getPackageName())
+                    || installed.packageName.equals(testContext.getPackageName())) {
+                Log.i(TAG, "PACEDU_INSTRUMENTATION_PACKAGE_ENTRY="
+                        + installed.packageName + "|" + installed.sourceDir);
+            }
+        }
     }
 
     private interface WebViewAction { void run(WebView webView) throws Exception; }
