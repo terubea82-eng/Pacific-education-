@@ -19,7 +19,7 @@ jobs:
   android-webview-process-restart:
     name: Real Android WebView IndexedDB process-restart test
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 45
     steps:
       - name: Checkout staging branch
         uses: actions/checkout@v7
@@ -45,14 +45,23 @@ jobs:
           arch: x86_64
           profile: pixel_2
           disable-animations: true
-          shell: bash
+          emulator-boot-timeout: 600
           script: |
-            set -euo pipefail
+            bash -euo pipefail <<'PACEDU_BASH'
             echo 'WEBVIEW_RECOVERY_GATE=REQUIRED'
-            echo 'Phase 1: write fictional IndexedDB survival record'
+            echo 'PHASE=EMULATOR_DEVICE_READY_WAIT'
+            timeout 120s adb wait-for-device
+            timeout 180s bash -c 'until [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d "\\r")" = "1" ]; do sleep 2; done'
+            echo 'PHASE=EMULATOR_BOOT_CONFIRMED'
             cd android
-            gradle --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart
-            adb shell am force-stop fj.pacificeducation.app.debug
-            echo 'Phase 2: process force-stopped; relaunching for independent read'
-            gradle --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#readRecordAfterProcessRestart
+            echo 'PHASE=INDEXEDDB_WRITE_TEST_START'
+            timeout --signal=TERM --kill-after=30s 15m gradle --no-daemon --console=plain :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart
+            echo 'PHASE=INDEXEDDB_WRITE_TEST_PASSED'
+            echo 'PHASE=ANDROID_FORCE_STOP_START'
+            timeout --signal=TERM --kill-after=10s 45s adb shell am force-stop fj.pacificeducation.app.debug
+            echo 'PHASE=ANDROID_FORCE_STOP_CONFIRMED'
+            echo 'PHASE=INDEXEDDB_RECOVERY_TEST_START'
+            timeout --signal=TERM --kill-after=30s 15m gradle --no-daemon --console=plain :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#readRecordAfterProcessRestart
+            echo 'PHASE=INDEXEDDB_RECOVERY_TEST_PASSED'
             echo 'WEBVIEW_RECOVERY_GATE=PASSED; expected marker PACEDU_WEBVIEW_PERSISTED recovered as READ_OK'
+            PACEDU_BASH
