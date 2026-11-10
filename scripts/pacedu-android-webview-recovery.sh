@@ -15,16 +15,16 @@ echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK
 
 echo "PHASE=INSPECT_INSTALLED_PACKAGES_AFTER_WRITER"
 echo "EMULATOR_ALL_PACKAGES_BEGIN"
-adb shell pm list packages | tr -d '\\r' | sort
+adb shell pm list packages | tr -d '\r' | sort
 echo "EMULATOR_ALL_PACKAGES_END"
 echo "EMULATOR_THIRD_PARTY_PACKAGES_BEGIN"
-adb shell pm list packages -3 | tr -d '\\r' | sort
+adb shell pm list packages -3 | tr -d '\r' | sort
 echo "EMULATOR_THIRD_PARTY_PACKAGES_END"
 echo "EMULATOR_INSTRUMENTATION_PACKAGES_BEGIN"
-adb shell pm list instrumentation | tr -d '\\r' | sort
+adb shell pm list instrumentation | tr -d '\r' | sort
 echo "EMULATOR_INSTRUMENTATION_PACKAGES_END"
 echo "EMULATOR_PACKAGES_WITH_APK_PATHS_BEGIN"
-adb shell pm list packages -f | tr -d '\\r' | sort
+adb shell pm list packages -f | tr -d '\r' | sort
 echo "EMULATOR_PACKAGES_WITH_APK_PATHS_END"
 
 APK_METADATA="android/app/build/outputs/apk/debug/output-metadata.json"
@@ -52,7 +52,7 @@ else
   echo "AAPT_NOT_AVAILABLE=YES"
 fi
 echo "PHASE=VERIFY_DEBUG_PACKAGE_INSTALLED"
-ALL_PACKAGES="$(adb shell pm list packages | tr -d '\\r')"
+ALL_PACKAGES="$(adb shell pm list packages | tr -d '\r')"
 if ! grep -Fxq "package:$APP_ID" <<< "$ALL_PACKAGES"; then
   echo "::error::Gradle debug APK applicationId $APP_ID is absent from the complete emulator package inventory."
   echo "DIAGNOSTIC_BASE_PACKAGE=fj.pacificeducation.app"
