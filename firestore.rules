@@ -144,6 +144,7 @@ service cloud.firestore {
           || assignedTeacher(resource.data.classId));
 
       allow update: if request.auth != null
+        && resource.data.reviewStatus == 'pending-teacher-review'
         && assignedTeacher(resource.data.classId)
         && request.resource.data.studentUid == resource.data.studentUid
         && request.resource.data.classId == resource.data.classId
