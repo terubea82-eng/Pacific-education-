@@ -33,7 +33,7 @@
           resolve(db);
         };
         request.onerror=function(){dbPromise=null;reject(request.error||new Error("INDEXEDDB_OPEN_FAILED"));};
-        request.onblocked=function(){reject(new Error("INDEXEDDB_OPEN_BLOCKED"));};
+        request.onblocked=function(){dbPromise=null;reject(new Error("INDEXEDDB_OPEN_BLOCKED"));};
       });
       return dbPromise;
     }
@@ -50,16 +50,23 @@
       });});
     }
     function validate(item){
-      if(!item||typeof item!=="object"||typeof item.eventId!=="string"||
+      if(!item||typeof item!=="object"||Array.isArray(item)||
+        Object.keys(item).some(function(k){return ["eventId","classId","activityId","queuedAt","response"].indexOf(k)===-1;})||
+        typeof item.eventId!=="string"||
         !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(item.eventId)||
-        typeof item.classId!=="string"||typeof item.activityId!=="string"||
-        typeof item.queuedAt!=="string"||!item.response||typeof item.response.completed!=="boolean")
+        typeof item.classId!=="string"||!/^[A-Za-z0-9_-]{1,128}$/.test(item.classId)||
+        typeof item.activityId!=="string"||!/^[A-Za-z0-9_-]{1,128}$/.test(item.activityId)||
+        typeof item.queuedAt!=="string"||Number.isNaN(Date.parse(item.queuedAt))||
+        !item.response||typeof item.response!=="object"||Array.isArray(item.response)||
+        Object.keys(item.response).some(function(k){return ["completed","answerText"].indexOf(k)===-1;})||
+        typeof item.response.completed!=="boolean"||
+        (item.response.answerText!==undefined&&(typeof item.response.answerText!=="string"||item.response.answerText.length>4000)))
         throw new Error("INVALID_QUEUE_ITEM");
       return JSON.parse(JSON.stringify(item));
     }
     return Object.freeze({
       put:function(item){var safe;try{safe=validate(item);}catch(e){return Promise.reject(e);}
-        return transaction("readwrite",function(os){os.put(safe);});
+        return transaction("readwrite",function(os){os.add(safe);});
       },
       list:function(){return transaction("readonly",function(os){
         var req=os.getAll();return new Promise(function(resolve,reject){
