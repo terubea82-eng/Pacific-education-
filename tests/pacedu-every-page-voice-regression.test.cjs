@@ -20,7 +20,8 @@ test("additive voice repair maps every guided step to the actual page sequence",
     '[9,"dailyLesson"',
     '[10,"dailyLessonPracticeStage"',
     '[11,"assessments"',
-    '[12,"teacherCalendarSection"'
+    '[12,"pacificEducationCoverageDashboard",
+    '[13,"teacherCalendarSection''
   ];
   for (const mapping of expected) assert.ok(repair.includes(mapping), "missing mapping: " + mapping);
 });
@@ -56,4 +57,18 @@ test("workspace narration is manual replay only and does not compete with protec
 test("the additive repair does not duplicate the protected guided-step narrator", () => {
   assert.doesNotMatch(repair, /announceCurrentStep\("step"\)/);
   assert.match(repair, /protected controller owns guided-step announcements/);
+});
+
+test("guided page replay covers both Coverage and the final Teacher Calendar page", () => {
+  assert.match(repair, /\[12,"pacificEducationCoverageDashboard"/);
+  assert.match(repair, /\[13,"teacherCalendarSection"/);
+  assert.match(repair, /function installGuidedPageControls/);
+  assert.match(repair, /data-pe-guided-page-voice/);
+  assert.match(repair, /installGuidedPageControls\(\)/);
+});
+
+test("guided page replay is manual and does not replace protected automatic narration", () => {
+  assert.match(repair, /button\.addEventListener\("click",function\(event\).*speak\(item\[2\]\)/);
+  assert.match(repair, /protected controller owns guided-step announcements/);
+  assert.doesNotMatch(protectedController, /data-pe-guided-page-voice/);
 });
