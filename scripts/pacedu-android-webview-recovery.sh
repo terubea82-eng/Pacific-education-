@@ -13,11 +13,22 @@ timeout --signal=TERM --kill-after=30s 15m gradle -p android --no-daemon --conso
 echo PHASE=INDEXEDDB_WRITE_TEST_PASSED
 echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK
 
+APP_ID="fj.pacificeducation.app.debug"
+echo "PHASE=VERIFY_DEBUG_PACKAGE_INSTALLED"
+if ! adb shell pm path "$APP_ID" | grep -q '^package:'; then
+  echo "::error::Expected Android debug package $APP_ID is not installed."
+  exit 1
+fi
+if ! adb shell pidof "$APP_ID" >/dev/null 2>&1; then
+  echo "::error::Expected Android debug package $APP_ID has no running process before force-stop."
+  exit 1
+fi
+
 echo PHASE=PACEDU_APP_FORCE_STOP_START
-adb shell am force-stop fj.pacificeducation.app
+adb shell am force-stop "$APP_ID"
 stopped=false
 for attempt in {1..15}; do
-  if ! adb shell pidof fj.pacificeducation.app >/dev/null 2>&1; then
+  if ! adb shell pidof "$APP_ID" >/dev/null 2>&1; then
     stopped=true
     break
   fi
