@@ -43,6 +43,19 @@ test("enqueue derives no UID from caller and stores only callable contract field
   assert.deepEqual(Object.keys(item).sort(),["activityId","classId","eventId","queuedAt","response"].sort());
 });
 
+test("enqueue validates trusted context before requiring callable sync dependencies",async()=>{
+  const f=fixture();
+  const enqueueOnly=Adapter.create({enabled:true,auth:f.auth,queueStore:f.queueStore,
+    getSubmissionContext:async()=>({classId:"fictional-class-a",activityId:"fictional-english-day-1"}),
+    makeUuid:()=>"550e8400-e29b-41d4-a716-446655440012"
+  });
+  const queued=await enqueueOnly.enqueue({completed:true});
+  assert.equal(queued.success,true);
+  const sync=await enqueueOnly.sync();
+  assert.equal(sync.reason,"ADAPTER_DEPENDENCIES_MISSING");
+  assert.equal((await f.queueStore.list()).length,1);
+});
+
 test("unauthenticated enqueue is rejected without queue mutation",async()=>{
   const f=fixture();f.auth.currentUser=null;
   const result=await f.adapter.enqueue({completed:true});
