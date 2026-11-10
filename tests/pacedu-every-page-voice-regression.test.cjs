@@ -72,3 +72,25 @@ test("guided page replay is manual and does not replace protected automatic narr
   assert.match(repair, /protected controller owns guided-step announcements/);
   assert.doesNotMatch(protectedController, /data-pe-guided-page-voice/);
 });
+
+
+test("voice command directive does not install a competing step-by-step guide", () => {
+  const voiceNext = fs.readFileSync("src/js/pacificEducationVoiceNextDirective.js", "utf8");
+  const stepGuide = fs.readFileSync("src/js/pacificEducationStepByStepGuidance.js", "utf8");
+  assert.doesNotMatch(voiceNext, /function guideHighlight|function guideCandidates|function guidePanelEnsure/);
+  assert.doesNotMatch(voiceNext, /data-pe-step-guide-installed/);
+  assert.doesNotMatch(voiceNext, /pacificEducationStepGuide/);
+  assert.match(stepGuide, /function install\(\)/);
+  assert.match(stepGuide, /data-pe-step-guide-installed/);
+  assert.match(voiceNext, /initGlobalVoiceUI\(\)/);
+  assert.doesNotMatch(voiceNext, /installGuide\(\);/);
+});
+
+test("voice command directive retains Next, Back, Repeat and Stop Speech commands", () => {
+  const voiceNext = fs.readFileSync("src/js/pacificEducationVoiceNextDirective.js", "utf8");
+  for (const command of ["commandBack", "commandRepeat", "commandStopSpeech", "matchesNextCommand"]) {
+    assert.match(voiceNext, new RegExp("function " + command + "\\("));
+  }
+  assert.match(voiceNext, /Start Voice Control/);
+  assert.match(voiceNext, /stopGlobal/);
+});
