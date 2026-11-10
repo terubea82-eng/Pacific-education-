@@ -50,6 +50,7 @@ public final class PaceduAndroidWebViewPersistenceTest {
                     + "</script>";
             loadHtmlOnUiThread(webView, html);
             assertEquals("\"WRITE_OK\"", waitForResult(webView));
+            Log.i(TAG, "PACEDU_INDEXEDDB_WRITE=WRITE_OK");
         });
     }
 
@@ -68,6 +69,7 @@ public final class PaceduAndroidWebViewPersistenceTest {
                     + "</script>";
             loadHtmlOnUiThread(webView, html);
             assertEquals("\"READ_OK\"", waitForResult(webView));
+            Log.i(TAG, "PACEDU_INDEXEDDB_READ=READ_OK");
         });
     }
 
