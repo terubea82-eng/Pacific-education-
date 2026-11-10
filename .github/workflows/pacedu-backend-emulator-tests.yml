@@ -30,8 +30,6 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: backend-tests/package-lock.json
       - name: Install test dependencies
         working-directory: backend-tests
         run: npm install --no-audit --no-fund
