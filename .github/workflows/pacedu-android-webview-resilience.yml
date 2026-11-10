@@ -37,6 +37,24 @@ jobs:
         with:
           gradle-version: "9.7.1"
 
+      - name: Initialize and verify ADB server before emulator launch
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          echo "PHASE=ADB_SERVER_START"
+          adb version
+          adb start-server
+          echo "PHASE=ADB_SERVER_READINESS_CHECK"
+          timeout --signal=TERM --kill-after=5s 30s bash -Eeuo pipefail -c '
+            until adb devices -l >/tmp/pacedu-adb-devices.txt 2>/tmp/pacedu-adb-error.txt; do
+              cat /tmp/pacedu-adb-error.txt || true
+              sleep 2
+            done
+            cat /tmp/pacedu-adb-devices.txt
+          '
+          adb devices -l
+          echo "PHASE=ADB_SERVER_READY"
+
       - name: Run against Android Emulator WebView
         uses: reactivecircus/android-emulator-runner@v2
         with:
