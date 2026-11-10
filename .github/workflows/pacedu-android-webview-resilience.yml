@@ -1,0 +1,53 @@
+name: PacEdu Android WebView Persistence Resilience
+
+on:
+  push:
+    branches:
+      - backend/trusted-sync-staging-20261110
+    paths:
+      - "android/**"
+      - ".github/workflows/pacedu-android-webview-resilience.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pacedu-android-webview-resilience
+  cancel-in-progress: false
+
+jobs:
+  android-webview-process-restart:
+    name: Real Android WebView IndexedDB process-restart test
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v7
+        with:
+          ref: backend/trusted-sync-staging-20261110
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle 9.7.1
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: "9.7.1"
+
+      - name: Run against Android Emulator WebView
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          disable-animations: true
+          script: |
+            set -euo pipefail
+            cd android
+            gradle --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart
+            adb shell am force-stop fj.pacificeducation.app.debug
+            gradle --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#readRecordAfterProcessRestart
