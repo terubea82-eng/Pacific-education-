@@ -10,7 +10,28 @@ adb shell settings put global verifier_verify_adb_installs 0
 
 echo PHASE=INDEXEDDB_WRITE_TEST_START
 WRITER_LOG="${RUNNER_TEMP:-/tmp}/pacedu-writer-instrumentation.log"
+LOGCAT_LOG="android/app/build/outputs/logs/pacedu-webview-logcat.txt"
+mkdir -p "$(dirname "$LOGCAT_LOG")"
+adb logcat -c
+echo PHASE=ANDROID_LOGCAT_CAPTURE_START
+adb logcat -v threadtime -s PacEduWebViewPersistence:I '*:S' > "$LOGCAT_LOG" 2>&1 &
+LOGCAT_PID=$!
+cleanup_logcat() {
+  if kill -0 "$LOGCAT_PID" 2>/dev/null; then
+    kill "$LOGCAT_PID" 2>/dev/null || true
+    wait "$LOGCAT_PID" 2>/dev/null || true
+  fi
+}
+trap cleanup_logcat EXIT
+sleep 2
+if ! kill -0 "$LOGCAT_PID" 2>/dev/null; then
+  echo "::error::Android Logcat capture did not remain running."
+  exit 1
+fi
 timeout --signal=TERM --kill-after=30s 15m gradle -p android --no-daemon --console=plain :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart 2>&1 | tee "$WRITER_LOG"
+cleanup_logcat
+trap - EXIT
+echo PHASE=ANDROID_LOGCAT_CAPTURE_COMPLETE
 echo PHASE=INDEXEDDB_WRITE_TEST_PASSED
 echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK
 
