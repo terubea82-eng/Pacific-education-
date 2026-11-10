@@ -9,7 +9,8 @@ adb shell settings put global package_verifier_enable 0
 adb shell settings put global verifier_verify_adb_installs 0
 
 echo PHASE=INDEXEDDB_WRITE_TEST_START
-timeout --signal=TERM --kill-after=30s 15m gradle -p android --no-daemon --console=plain :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart
+WRITER_LOG="${RUNNER_TEMP:-/tmp}/pacedu-writer-instrumentation.log"
+timeout --signal=TERM --kill-after=30s 15m gradle -p android --no-daemon --console=plain :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart 2>&1 | tee "$WRITER_LOG"
 echo PHASE=INDEXEDDB_WRITE_TEST_PASSED
 echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK
 
@@ -44,23 +45,25 @@ if [[ ! -f "$APK_PATH" ]]; then
   echo "::error::Gradle debug APK file is missing: $APK_PATH"
   exit 1
 fi
-if command -v aapt >/dev/null 2>&1; then
-  echo "GRADLE_DEBUG_APK_BADGING_BEGIN"
-  aapt dump badging "$APK_PATH" | head -n 3
-  echo "GRADLE_DEBUG_APK_BADGING_END"
-else
-  echo "AAPT_NOT_AVAILABLE=YES"
-fi
-echo "PHASE=VERIFY_DEBUG_PACKAGE_INSTALLED"
-ALL_PACKAGES="$(adb shell pm list packages | tr -d '\r')"
-if ! grep -Fxq "package:$APP_ID" <<< "$ALL_PACKAGES"; then
-  echo "::error::Gradle debug APK applicationId $APP_ID is absent from the complete emulator package inventory."
-  echo "DIAGNOSTIC_BASE_PACKAGE=fj.pacificeducation.app"
-  adb shell pm path fj.pacificeducation.app || true
-  echo "DIAGNOSTIC_DEBUG_PACKAGE=$APP_ID"
-  adb shell pm path "$APP_ID" || true
+RUNTIME_PACKAGE="$(sed -n 's/.*PACEDU_TARGET_PACKAGE=//p' "$WRITER_LOG" | tail -n 1)"
+RUNTIME_APK_PATH="$(sed -n 's/.*PACEDU_TARGET_APK_PATH=//p' "$WRITER_LOG" | tail -n 1)"
+TEST_PACKAGE="$(sed -n 's/.*PACEDU_TEST_PACKAGE=//p' "$WRITER_LOG" | tail -n 1)"
+echo "INSTRUMENTATION_TARGET_PACKAGE=$RUNTIME_PACKAGE"
+echo "INSTRUMENTATION_TARGET_APK_PATH=$RUNTIME_APK_PATH"
+echo "INSTRUMENTATION_TEST_PACKAGE=$TEST_PACKAGE"
+if [[ -z "$RUNTIME_PACKAGE" || -z "$RUNTIME_APK_PATH" ]]; then
+  echo "::error::Writer instrumentation did not emit its in-process target package identity."
+  echo "WRITER_LOG_PACKAGE_MARKERS_BEGIN"
+  grep -E 'PACEDU_(TARGET_PACKAGE|TARGET_APK_PATH|TEST_PACKAGE|INSTRUMENTATION_PACKAGE_ENTRY)' "$WRITER_LOG" || true
+  echo "WRITER_LOG_PACKAGE_MARKERS_END"
   exit 1
 fi
+if [[ "$RUNTIME_PACKAGE" != "$APP_ID" ]]; then
+  echo "::error::Instrumentation target package $RUNTIME_PACKAGE does not match Gradle APK applicationId $APP_ID."
+  exit 1
+fi
+echo "PACKAGE_IDENTITY_GATE=PASSED"
+echo "PHASE=VERIFY_DEBUG_PACKAGE_INSTALLED"
 adb shell pm path "$APP_ID"
 if ! adb shell pidof "$APP_ID" >/dev/null 2>&1; then
   echo "::error::Expected Android debug package $APP_ID has no running process before force-stop."
