@@ -1,8 +1,130 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-11-10T09:44:58.191Z",
+  "generatedAt": "2026-11-10T20:49:42.551Z",
   "source": "Fiji One News (Fiji TV), The Fiji Times, Fiji Sun, FBC News, RNZ Pacific, BBC News World, Deutsche Welle, Al Jazeera English, UNESCO, WHO and UN News; all items source-, date- and relevance-validated. Fiji-first, Pacific-second ordering; teacher approval required.",
   "items": [
+    {
+      "id": "OFFICIAL-1f405f22502522d41626758d",
+      "title": "‘Devil’s number’ 666 banned from Fiji election candidate list",
+      "url": "https://www.fijitimes.com.fj/devils-number-666-banned-from-fiji-election-candidate-list/",
+      "source": "The Fiji Times",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Mathematics",
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-0eefad1273bad9e9dc94fa91",
+      "title": "Residents fear as bushfires spread through Naulu",
+      "url": "https://www.fbcnews.com.fj/news/residents-naulu/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-11-10T19:00:15.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Health",
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-c6c068728fb088b71280a4ae",
+      "title": "Law society questions electoral amendment impact",
+      "url": "https://www.fbcnews.com.fj/news/law-society-questions-electoral-amendment-impact/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-11-10T18:58:33.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-267aa34446f570a5ff8f1a54",
+      "title": "22 organizations seek business excellence recognition",
+      "url": "https://www.fbcnews.com.fj/news/22-organizations-seek-business-excellence-recognition/",
+      "source": "FBC News",
+      "countryOrRegion": "FIJI",
+      "publishedAt": "2026-11-10T18:50:18.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science",
+        "Arts"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
     {
       "id": "OFFICIAL-2d7c6d54baeed9505a397388",
       "title": "A Journey of Resilience Behind Faith Work Enterprise",
@@ -89,48 +211,17 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-9251b166b9a44f397077c87e",
-      "title": "Crops wither as dry spell bites",
-      "url": "https://www.fbcnews.com.fj/news/crops-wither-as-dry-spell-bites/",
-      "source": "FBC News",
+      "id": "OFFICIAL-eaa430bb451045704bebd646",
+      "title": "At 29 Isoa Nasova Builds His Future Through Farming",
+      "url": "https://fijisun.com.fj/news/nation/at-29-isoa-nasova-builds-his-future-through-farming",
+      "source": "Fiji Sun",
       "countryOrRegion": "FIJI",
-      "publishedAt": "2026-11-10T05:00:44.000Z",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Agriculture",
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-d88d5f354d0ffc9e90a8d479",
-      "title": "Jewish women showcase style beyond stereotypes",
-      "url": "https://www.fbcnews.com.fj/entertainment/jewish-women-showcase-style-beyond-stereotypes/",
-      "source": "FBC News",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-11-10T05:00:40.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
+        "Agriculture"
       ],
       "levelsApplicable": [
         "ECE",
@@ -174,9 +265,9 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-fce3d368625cdf99a5710f09",
-      "title": "Fake Accounts No Shield From Justice Court Warns In Landmark Ruling",
-      "url": "https://fijisun.com.fj/news/courts-and-law/fake-accounts-no-shield-from-justice-court-warns-in-landmark-ruling",
+      "id": "OFFICIAL-d13279cc5a867771e4f5128c",
+      "title": "El Nio Water Shortages Trigger Assistance At 69 Locations",
+      "url": "https://fijisun.com.fj/news/nation/el-nio-water-shortages-trigger-assistance-at-69-locations",
       "source": "Fiji Sun",
       "countryOrRegion": "FIJI",
       "publishedAt": "2026-11-10T00:00:00.000Z",
@@ -184,19 +275,16 @@
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Social Science"
+        "Science"
       ],
       "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
+        "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
+        "Class 6"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -205,7 +293,7 @@
     },
     {
       "id": "OFFICIAL-0ce165db52916c7c6302375c",
-      "title": "High Court Dismisses Stay Applications for Prof. Biman Prasad and Tanya Waqanika",
+      "title": "High Court Dismisses Stay Applications For Prof Biman Prasad And Tanya Waqanika",
       "url": "https://www.fijitimes.com.fj/high-court-dismisses-stay-applications-for-prof-biman-prasad-and-tanya-waqanika/",
       "source": "The Fiji Times",
       "countryOrRegion": "FIJI",
@@ -235,36 +323,9 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-54699bc2187b1c3aa7249a87",
-      "title": "Viral Classroom Vandalism Video Traced To All Saints Secondary School Labasa",
-      "url": "https://www.fijitimes.com.fj/viral-classroom-vandalism-video-traced-to-all-saints-secondary-school-labasa/",
-      "source": "The Fiji Times",
-      "countryOrRegion": "FIJI",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "English"
-      ],
-      "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-f8dda5c8a50d4e97bd837c5d",
-      "title": "Remandee dies after alleged hot-water attack at Suva prison",
-      "url": "https://fijisun.com.fj/news/nation/remandee-dies-after-alleged-hot-water-attack-at-suva-prison",
+      "id": "OFFICIAL-7b041631e337590c6dbaef5e",
+      "title": "Rabuka Wants All 21 Peoples Alliance Mps To Contest Election",
+      "url": "https://fijisun.com.fj/news/politics/rabuka-wants-all-21-peoples-alliance-mps-to-contest-election",
       "source": "Fiji Sun",
       "countryOrRegion": "FIJI",
       "publishedAt": "2026-11-10T00:00:00.000Z",
@@ -272,16 +333,82 @@
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Science"
+        "Social Science"
       ],
       "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
         "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6"
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-d4dc139dc4fe996cb95cbe51",
+      "title": "Marshall Islands fisheries chief Glen Joseph to lead regional fisheries body",
+      "url": "https://www.rnz.co.nz/news/pacific/2530560/marshall-islands-fisheries-chief-glen-joseph-to-lead-regional-fisheries-body",
+      "source": "RNZ Pacific",
+      "countryOrRegion": "PACIFIC",
+      "publishedAt": "2026-11-10T20:21:01.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Agriculture"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-3feb49a1b37a5ccf0fee83f3",
+      "title": "Pacific artists use photography and storytelling to challenge global leaders at COP31",
+      "url": "https://www.rnz.co.nz/news/pacific/2526930/pacific-artists-use-photography-and-storytelling-to-challenge-global-leaders-at-cop31",
+      "source": "RNZ Pacific",
+      "countryOrRegion": "PACIFIC",
+      "publishedAt": "2026-11-10T18:38:12.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -309,67 +436,6 @@
         "Class 4",
         "Class 5",
         "Class 6"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-2459f2c0ffd430b19563f423",
-      "title": "COP31 opens in Türkiye as global temperature flirts with 1.5°C line",
-      "url": "https://www.rnz.co.nz/news/pacific/2498963/cop31-opens-in-turkiye-as-global-temperature-flirts-with-1-point-5-degreesc-line",
-      "source": "RNZ Pacific",
-      "countryOrRegion": "PACIFIC",
-      "publishedAt": "2026-11-10T01:40:42.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Science"
-      ],
-      "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-0c3105bba1bec359a6f65329",
-      "title": "Marape unveils 'no more than three children' policy to manage PNG's high birth rate",
-      "url": "https://www.rnz.co.nz/news/pacific/2463213/marape-unveils-no-more-than-three-children-policy-to-manage-png-s-high-birth-rate",
-      "source": "RNZ Pacific",
-      "countryOrRegion": "PACIFIC",
-      "publishedAt": "2026-11-09T00:19:09.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -431,76 +497,17 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-30b45508b039ec64b9559bc7",
-      "title": "California voters reject billionaire tax",
-      "url": "https://www.aljazeera.com/news/2026/11/10/california-voters-reject-billionaire-tax?traffic_source=rss",
+      "id": "OFFICIAL-05502925159fa53a17ad5a66",
+      "title": "Netanyahu and Eisenkot push for new government after election deadlock",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/netanyahu-and-eisenkot-push-for-new-government-after-election-deadlock?traffic_source=rss",
       "source": "Al Jazeera English",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T08:38:26.000Z",
+      "publishedAt": "2026-11-10T20:39:46.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Health",
         "Social Science"
-      ],
-      "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-b02a3b4458c06c5bc248eaaa",
-      "title": "Why electrification is the climate game changer we need",
-      "url": "https://www.dw.com/en/why-electrification-is-the-climate-game-changer-we-need/a-79615979?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T08:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Science",
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-f18921dc147df0cc6c21793e",
-      "title": "Will Australia push for fossil fuel exit at UN talks?",
-      "url": "https://www.dw.com/en/will-australia-push-for-fossil-fuel-exit-at-un-talks/a-79782066?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T07:43:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Science"
       ],
       "levelsApplicable": [
         "Class 3",
@@ -521,54 +528,29 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-d20acffda55add2385133ba2",
-      "title": "India news: New Delhi ready to mediate Black Sea food corridors, says Ukraine's Zelenskyy",
-      "url": "https://www.dw.com/en/india-news-new-delhi-ready-to-mediate-black-sea-food-corridors-says-ukraine-s-zelenskyy/live-79906023?maca=en-rss-en-all-1573-rdf",
-      "source": "Deutsche Welle",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T06:52:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-6cfcda2fdd3473f1ac3effc3",
-      "title": "Palestine Weekly: West Bank on fire – and Gaza’s tents under water",
-      "url": "https://www.aljazeera.com/news/2026/11/10/palestine-weekly-west-bank-on-fire-and-gazas-tents-under?traffic_source=rss",
+      "id": "OFFICIAL-dfd39e47e761b4342271f5d3",
+      "title": "US voters want Democrats focused on ending Iran war, lowering costs: Poll",
+      "url": "https://www.aljazeera.com/news/2026/11/10/most-americans-want-democrats-focused-on-ending-iran-war-lowering-costs?traffic_source=rss",
       "source": "Al Jazeera English",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T06:37:13.000Z",
+      "publishedAt": "2026-11-10T20:07:01.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Science",
         "Social Science"
       ],
       "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6"
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -576,12 +558,12 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-af3176b50f0f3a28b9bb220a",
-      "title": "Kamikamica defends Australia deals",
-      "url": "https://www.fbcnews.com.fj/news/kamikamica-defends-australia-deals/",
-      "source": "FBC News",
+      "id": "OFFICIAL-398aefbc22c06b376ced94c2",
+      "title": "UK Privy Council overrules Trinidad and Tobago gay sex law",
+      "url": "https://www.dw.com/en/uk-privy-council-overrules-trinidad-and-tobago-gay-sex-law/a-79912163?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T04:59:26.000Z",
+      "publishedAt": "2026-11-10T19:21:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
@@ -607,21 +589,142 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-7cac2a0794bc52e65e0c2f23",
-      "title": "Qantas to outsource 850 local jobs with most roles moving to India",
-      "url": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
+      "id": "OFFICIAL-207a4fa17cf57c0712f3b607",
+      "title": "Anti-homosexuality laws in Trinidad and Tobago overturned",
+      "url": "https://www.bbc.co.uk/news/articles/cm0e0evlpp87o?at_medium=RSS&at_campaign=rss",
       "source": "BBC News World",
       "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-10T01:55:22.000Z",
+      "publishedAt": "2026-11-10T18:04:18.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Computer Studies",
         "Social Science"
       ],
       "levelsApplicable": [
         "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-953b7b55e573f6b0a4b64a6d",
+      "title": "Victims of Nazi war in Poland call on Germany for support",
+      "url": "https://www.dw.com/en/victims-of-nazi-war-in-poland-call-on-germany-for-support/a-79909311?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-11-10T17:53:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-79d2d8b7c1cd87ddbaaf828c",
+      "title": "Israel's new parliament sworn in as leaders compete to form government",
+      "url": "https://www.bbc.co.uk/news/articles/crd939lpzjp9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News World",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-11-10T17:03:16.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-af1eb0f1fbea412d956fc40b",
+      "title": "Board of Peace says Israel's aid response after Gaza floods 'insufficent'",
+      "url": "https://www.bbc.co.uk/news/articles/cw4g1g4ll5m1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC News World",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-11-10T15:21:18.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
+        "Class 3",
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 7",
+        "Class 8",
+        "Form 3",
+        "Form 4",
+        "Form 5",
+        "Form 6",
+        "Form 7"
+      ],
+      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
+      "verificationStatus": "PENDING_TEACHER_REVIEW",
+      "approved": false,
+      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
+    },
+    {
+      "id": "OFFICIAL-ce44b0b7f20da4fe2989b099",
+      "title": "Japan watches for signs of change in Trump's foreign policy priorities",
+      "url": "https://www.dw.com/en/japan-watches-for-signs-of-change-in-trump-s-foreign-policy-priorities/a-79909398?maca=en-rss-en-all-1573-rdf",
+      "source": "Deutsche Welle",
+      "countryOrRegion": "GLOBAL",
+      "publishedAt": "2026-11-10T13:31:00.000Z",
+      "topic": "Education and current affairs",
+      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
+      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
+      "subjectsApplicable": [
+        "Social Science"
+      ],
+      "levelsApplicable": [
         "Class 4",
         "Class 5",
         "Class 6",
@@ -667,30 +770,27 @@
       "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
     },
     {
-      "id": "OFFICIAL-b31dd78a9357fb46abfa0eb2",
-      "title": "Woman Jailed Three Years For Fake Australia Jobs Scheme",
-      "url": "https://fijisun.com.fj/news/courts-and-law/woman-jailed-three-years-for-fake-australia-jobs-scheme",
-      "source": "Fiji Sun",
+      "id": "OFFICIAL-bb29b986f975789fb7dc58e0",
+      "title": "2026 Departmental update From commitments to implementation: ATACH Day at COP31 delivers practical solutions for climate and health",
+      "url": "https://www.who.int/news/item/10-11-2026-from-commitments-to-implementation--atach-day-at-cop31-delivers-practical-solutions-for-climate-and-health",
+      "source": "WHO Newsroom",
       "countryOrRegion": "GLOBAL",
       "publishedAt": "2026-11-10T00:00:00.000Z",
       "topic": "Education and current affairs",
       "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
       "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
       "subjectsApplicable": [
-        "Social Science"
+        "Science",
+        "Health"
       ],
       "levelsApplicable": [
+        "ECE",
+        "Class 1",
+        "Class 2",
         "Class 3",
         "Class 4",
         "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
+        "Class 6"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
@@ -719,94 +819,6 @@
         "Class 4",
         "Class 5",
         "Class 6"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-afdc6ec15c3be9fd1f75ee00",
-      "title": "France accuses Iran of supermarket fridge hacking",
-      "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News World",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-09T20:20:08.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "ECE",
-        "Class 1",
-        "Class 2",
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-563627d5634d0b2195786c72",
-      "title": "Trump questions midterm elections integrity after previously accepting results",
-      "url": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC News World",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-09T17:47:29.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Social Science"
-      ],
-      "levelsApplicable": [
-        "Class 3",
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
-      ],
-      "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
-      "verificationStatus": "PENDING_TEACHER_REVIEW",
-      "approved": false,
-      "sourceType": "EDUCATIONAL_CURRENT_AFFAIRS"
-    },
-    {
-      "id": "OFFICIAL-87c4aa46b70504c3924c5498",
-      "title": "2026 Departmental update New WHO policy options call for stronger integration of health and care workforce",
-      "url": "https://www.who.int/news/item/09-11-2026-new-who-policy-options-call-for-stronger-integration-of-health-and-care-workforce",
-      "source": "WHO Newsroom",
-      "countryOrRegion": "GLOBAL",
-      "publishedAt": "2026-11-09T00:00:00.000Z",
-      "topic": "Education and current affairs",
-      "educationalRelevance": "Potentially useful for teacher-led discussion of education, health, science, environment, culture, children, or sustainable development.",
-      "ageSuitability": "Suggested levels are topic-screening guidance only; teacher must adapt language, context and task before approval.",
-      "subjectsApplicable": [
-        "Health"
-      ],
-      "levelsApplicable": [
-        "Class 4",
-        "Class 5",
-        "Class 6",
-        "Class 7",
-        "Class 8",
-        "Form 3",
-        "Form 4",
-        "Form 5",
-        "Form 6",
-        "Form 7"
       ],
       "levelRecommendationBasis": "AUTOMATED_TOPIC_SCREENING_PENDING_TEACHER_REVIEW",
       "verificationStatus": "PENDING_TEACHER_REVIEW",
