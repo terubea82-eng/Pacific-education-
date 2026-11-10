@@ -41,18 +41,23 @@ jobs:
         shell: bash
         run: |
           set -Eeuo pipefail
+          SDK_ROOT="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-/usr/local/lib/android/sdk}}"
+          export PATH="$SDK_ROOT/platform-tools:$SDK_ROOT/emulator:$PATH"
+          ADB="$SDK_ROOT/platform-tools/adb"
+          test -x "$ADB"
           echo "PHASE=ADB_SERVER_START"
-          adb version
-          adb start-server
+          "$ADB" version
+          "$ADB" start-server
           echo "PHASE=ADB_SERVER_READINESS_CHECK"
           timeout --signal=TERM --kill-after=5s 30s bash -Eeuo pipefail -c '
-            until adb devices -l >/tmp/pacedu-adb-devices.txt 2>/tmp/pacedu-adb-error.txt; do
+            ADB_BIN="'"$ADB"'"
+            until "$ADB_BIN" devices -l >/tmp/pacedu-adb-devices.txt 2>/tmp/pacedu-adb-error.txt; do
               cat /tmp/pacedu-adb-error.txt || true
               sleep 2
             done
             cat /tmp/pacedu-adb-devices.txt
           '
-          adb devices -l
+          "$ADB" devices -l
           echo "PHASE=ADB_SERVER_READY"
 
       - name: Run against Android Emulator WebView
