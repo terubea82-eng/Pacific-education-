@@ -48,14 +48,13 @@ test("unauthenticated users cannot read or write protected collections", async (
   }));
 });
 
-test("a learner can create and read their own progress", async () => {
+test("a learner cannot create authoritative progress from the client", async () => {
   const db = testEnv.authenticatedContext("learner-a").firestore();
-  await assertSucceeds(setDoc(doc(db, "progress/learner-a-day-1"), {
+  await assertFails(setDoc(doc(db, "progress/learner-a-day-1"), {
     uid: "learner-a",
     activityId: "day-1",
-    completed: false,
+    completed: true,
   }));
-  await assertSucceeds(getDoc(doc(db, "progress/learner-a-day-1")));
 });
 
 test("a learner cannot read another learner's progress", async () => {
@@ -86,17 +85,22 @@ test("a learner cannot take over another learner's progress by changing uid", as
   }));
 });
 
-test("a learner can update their own progress but cannot transfer ownership", async () => {
+test("a learner can read their server-written progress but cannot modify it", async () => {
+  await testEnv.withSecurityRulesDisabled(async (context) => {
+    await setDoc(doc(context.firestore(), "progress/owned-record"), {
+      uid: "learner-a",
+      activityId: "day-1",
+      completed: true,
+    });
+  });
   const db = testEnv.authenticatedContext("learner-a").firestore();
-  await assertSucceeds(setDoc(doc(db, "progress/owned-record"), {
-    uid: "learner-a",
+  await assertSucceeds(getDoc(doc(db, "progress/owned-record")));
+  await assertFails(updateDoc(doc(db, "progress/owned-record"), {
     completed: false,
   }));
-  await assertSucceeds(updateDoc(doc(db, "progress/owned-record"), {
+  await assertFails(setDoc(doc(db, "progress/new-client-record"), {
+    uid: "learner-a",
     completed: true,
-  }));
-  await assertFails(updateDoc(doc(db, "progress/owned-record"), {
-    uid: "learner-b",
   }));
 });
 
