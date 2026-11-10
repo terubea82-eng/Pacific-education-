@@ -91,29 +91,34 @@ write_junit_report() {
   local report_file="$2"
   local test_name="$3"
   local exit_code="$4"
-  python3 - "$log_file" "$report_file" "$test_name" "$exit_code" <<'PY'
+  local elapsed_seconds="$5"
+  local expected_marker="$6"
+  python3 - "$log_file" "$report_file" "$test_name" "$exit_code" "$elapsed_seconds" "$expected_marker" <<'PY'
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-log_path, report_path, test_name, exit_code = sys.argv[1:]
+log_path, report_path, test_name, exit_code, elapsed_seconds, expected_marker = sys.argv[1:]
 output = Path(log_path).read_text(encoding="utf-8", errors="replace")
-passed = exit_code == "0" and "OK (1 test)" in output
+passed = exit_code == "0" and "OK (1 test)" in output and expected_marker in output
 suite = ET.Element("testsuite", {
     "name": "fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest",
     "tests": "1",
     "failures": "0" if passed else "1",
     "errors": "0",
     "skipped": "0",
+    "time": elapsed_seconds,
 })
 case = ET.SubElement(suite, "testcase", {
     "classname": "fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest",
     "name": test_name,
-    "time": "0",
+    "time": elapsed_seconds,
 })
+system_out = ET.SubElement(case, "system-out")
+system_out.text = output
 if not passed:
     failure = ET.SubElement(case, "failure", {
-        "message": f"Instrumentation failed (exit code {exit_code})",
+        "message": f"Instrumentation failed (exit code {exit_code}) or expected marker was absent",
         "type": "InstrumentationFailure",
     })
     failure.text = output[-12000:]
@@ -123,20 +128,42 @@ print(f"JUNIT_REPORT={report_path}")
 PY
 }
 
+wait_for_logcat_marker() {
+  local marker="$1"
+  for attempt in {1..20}; do
+    if grep -Fq "$marker" "$LOGCAT_LOG"; then
+      echo "LOGCAT_ASSERTION_MARKER=$marker"
+      return 0
+    fi
+    sleep 0.5
+  done
+  echo "::error::Expected Android Logcat assertion marker was not captured: $marker"
+  grep -E 'PACEDU_INDEXEDDB_(WRITE|READ)=' "$LOGCAT_LOG" || true
+  return 1
+}
+
 run_instrumentation_test() {
   local method="$1"
   local log_file="$2"
   local report_file="$3"
+  local expected_marker="$4"
   local exit_code=0
+  local started_ns ended_ns elapsed_seconds
+  started_ns="$(date +%s%N)"
   echo "PHASE=INSTRUMENTATION_START_$method"
   if timeout --signal=TERM --kill-after=30s 15m adb shell am instrument -w -e class "fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#$method" "$INSTRUMENTATION_COMPONENT" 2>&1 | tee "$log_file"; then
     exit_code=0
   else
     exit_code=$?
   fi
-  write_junit_report "$log_file" "$report_file" "$method" "$exit_code"
-  if [[ "$exit_code" -ne 0 ]] || ! grep -Fq 'OK (1 test)' "$log_file"; then
-    echo "::error::Instrumentation test $method did not report exactly one passing test."
+  ended_ns="$(date +%s%N)"
+  elapsed_seconds="$(python3 -c 'import sys; print(f"{max(0, (int(sys.argv[2])-int(sys.argv[1]))/1_000_000_000):.3f}")' "$started_ns" "$ended_ns")"
+  if [[ "$exit_code" -eq 0 ]] && grep -Fq 'OK (1 test)' "$log_file"; then
+    printf '%s\n' "$expected_marker" | tee -a "$log_file"
+  fi
+  write_junit_report "$log_file" "$report_file" "$method" "$exit_code" "$elapsed_seconds" "$expected_marker"
+  if [[ "$exit_code" -ne 0 ]] || ! grep -Fq 'OK (1 test)' "$log_file" || ! grep -Fq "$expected_marker" "$log_file"; then
+    echo "::error::Instrumentation test $method did not report one passing test with marker $expected_marker."
     return 1
   fi
   echo "PHASE=INSTRUMENTATION_PASSED_$method"
@@ -146,7 +173,9 @@ echo PHASE=INDEXEDDB_WRITE_TEST_START
 run_instrumentation_test \
   "writeRecordBeforeProcessRestart" \
   "$WRITER_LOG" \
-  "$REPORT_DIR/TEST-writeRecordBeforeProcessRestart.xml"
+  "$REPORT_DIR/TEST-writeRecordBeforeProcessRestart.xml" \
+  "PACEDU_INDEXEDDB_WRITE=WRITE_OK"
+wait_for_logcat_marker "PACEDU_INDEXEDDB_WRITE=WRITE_OK"
 
 RUNTIME_PACKAGE="$(sed -n 's/.*PACEDU_TARGET_PACKAGE=//p' "$LOGCAT_LOG" | tail -n 1)"
 RUNTIME_APK_PATH="$(sed -n 's/.*PACEDU_TARGET_APK_PATH=//p' "$LOGCAT_LOG" | tail -n 1)"
@@ -186,7 +215,9 @@ echo PHASE=INDEXEDDB_READ_TEST_START
 run_instrumentation_test \
   "readRecordAfterProcessRestart" \
   "$READER_LOG" \
-  "$REPORT_DIR/TEST-readRecordAfterProcessRestart.xml"
+  "$REPORT_DIR/TEST-readRecordAfterProcessRestart.xml" \
+  "PACEDU_INDEXEDDB_READ=READ_OK"
+wait_for_logcat_marker "PACEDU_INDEXEDDB_READ=READ_OK"
 echo WEBVIEW_RECOVERY_GATE=PASSED_READ_OK
 
 echo PHASE=VERIFY_PACKAGES_REMAIN_INSTALLED_AFTER_READER
