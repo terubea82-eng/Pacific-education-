@@ -9,14 +9,14 @@ var VERSION="1.3.0",QUEUE_KEY="pacificEducationOfflineProgressQueue";
 var ALLOWED_TYPES={progress:true,lesson_completion:true};
 function q(){try{var v=JSON.parse(localStorage.getItem(QUEUE_KEY)||"[]");return Array.isArray(v)?v:[];}catch(e){return[];}}
 function save(x){try{localStorage.setItem(QUEUE_KEY,JSON.stringify(x));return true;}catch(e){return false;}}
-function safeString(v,max){if(typeof v!=="string")return null;var t=v.trim();if(!t||t.length>max||/[<>"'\`\r\n]/.test(t))return null;return t;}
+function safeString(v,max){if(typeof v!=="string")return null;var t=v.trim();if(!t||t.length>max||/[<>"'\`|\r\n]/.test(t))return null;return t;}
 function safeDay(v){var n=Number(v);return Number.isInteger(n)&&n>=1&&n<=365?n:null;}
 function queueProgress(item){
  item=item&&typeof item==="object"?item:{};
- var type=safeString(item.type,32)||"progress",lessonId=safeString(item.lessonId,128),dayNumber=safeDay(item.dayNumber);
- if(!ALLOWED_TYPES[type]||dayNumber===null)return{success:false,reason:"INVALID_PROTOTYPE_QUEUE_ITEM",prototype:true};
- var safe={type:type,lessonId:lessonId,dayNumber:dayNumber,completed:Boolean(item.completed),queuedAt:new Date().toISOString()};
- var list=q(),duplicate=list.some(function(x){return x&&x.lessonId===safe.lessonId&&x.dayNumber===safe.dayNumber&&x.completed===safe.completed;});
+ var type=item.type===undefined||item.type===null||item.type===""?"progress":safeString(item.type,32),lessonId=safeString(item.lessonId,128),dayNumber=safeDay(item.dayNumber);
+ if(!type||!ALLOWED_TYPES[type]||!lessonId||dayNumber===null||typeof item.completed!=="boolean")return{success:false,reason:"INVALID_PROTOTYPE_QUEUE_ITEM",prototype:true};
+ var safe={type:type,lessonId:lessonId,dayNumber:dayNumber,completed:item.completed,queuedAt:new Date().toISOString()};
+ var list=q(),duplicate=list.some(function(x){return x&&x.type===safe.type&&x.lessonId===safe.lessonId&&x.dayNumber===safe.dayNumber&&x.completed===safe.completed;});
  if(!duplicate)list.push(safe);
  return{success:save(list),queued:safe,duplicate:duplicate,count:list.length,prototype:true};
 }
