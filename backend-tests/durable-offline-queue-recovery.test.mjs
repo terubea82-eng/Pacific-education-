@@ -1,3 +1,4 @@
+import "fake-indexeddb/auto";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
@@ -5,12 +6,11 @@ const require=createRequire(import.meta.url);
 const Adapter=require("../src/js/pacificEducationAuthenticatedOfflineSyncAdapter.js");
 const DurableStore=require("../src/js/pacificEducationIndexedDbOfflineQueueStore.js");
 
-const idbAvailable=typeof indexedDB!=="undefined";
 function makeItem(n){return{eventId:"550e8400-e29b-41d4-a716-4466554400"+String(n).padStart(2,"0"),
   classId:"fictional-class-a",activityId:"fictional-english-day-1",queuedAt:"2026-11-10T00:00:00.000Z",
   response:{completed:true,answerText:"fictional learner answer"}};}
 
-test("durable IndexedDB queue survives store close and reopen", {skip:!idbAvailable}, async()=>{
+test("durable IndexedDB queue survives store close and reopen", async()=>{
   const dbName="pacedu-recovery-"+Date.now()+"-"+Math.random();
   const first=DurableStore.create({dbName});
   await first.put(makeItem(1));
@@ -25,7 +25,7 @@ test("durable IndexedDB queue survives store close and reopen", {skip:!idbAvaila
   await reopened.close();
 });
 
-test("network interruption leaves unacknowledged durable queue item for restart recovery", {skip:!idbAvailable}, async()=>{
+test("network interruption leaves unacknowledged durable queue item for restart recovery", async()=>{
   const dbName="pacedu-network-recovery-"+Date.now()+"-"+Math.random();
   let store=DurableStore.create({dbName});
   const item=makeItem(3);
@@ -53,8 +53,5 @@ test("network interruption leaves unacknowledged durable queue item for restart 
 
 test("durable queue fails closed without IndexedDB and never falls back to localStorage",async()=>{
   const store=DurableStore.create({indexedDB:null});
-  // Explicit null is treated as unavailable in environments without a global IndexedDB.
-  if(!idbAvailable){
-    await assert.rejects(store.put(makeItem(4)),/INDEXEDDB_UNAVAILABLE/);
-  }
+  await assert.rejects(store.put(makeItem(4)),/INDEXEDDB_UNAVAILABLE/);
 });
