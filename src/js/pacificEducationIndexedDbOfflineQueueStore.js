@@ -12,7 +12,7 @@
   var DB_VERSION=1, STORE="pendingSubmissions";
   function create(options){
     options=options||{};
-    var idb=options.indexedDB||(typeof indexedDB!=="undefined"?indexedDB:null);
+    var idb=Object.prototype.hasOwnProperty.call(options,"indexedDB")?options.indexedDB:(typeof indexedDB!=="undefined"?indexedDB:null);
     var dbName=options.dbName||"pacedu-offline-queue-staging";
     var dbPromise=null, closed=false;
     function open(){
