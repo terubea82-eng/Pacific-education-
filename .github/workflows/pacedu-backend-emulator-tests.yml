@@ -1,0 +1,42 @@
+name: PacEdu Backend Emulator Security Tests
+
+on:
+  pull_request:
+    paths:
+      - "firestore.rules"
+      - "storage.rules"
+      - "firebase.staging.json"
+      - "backend-tests/**"
+      - ".github/workflows/pacedu-backend-emulator-tests.yml"
+  push:
+    branches:
+      - "backend/**"
+    paths:
+      - "firestore.rules"
+      - "storage.rules"
+      - "firebase.staging.json"
+      - "backend-tests/**"
+      - ".github/workflows/pacedu-backend-emulator-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  emulator-security-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend-tests/package-lock.json
+      - name: Install test dependencies
+        working-directory: backend-tests
+        run: npm install --no-audit --no-fund
+      - name: Run Firestore rules tests in isolated emulators
+        working-directory: backend-tests
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
+        run: npx firebase emulators:exec --config ../firebase.staging.json --project demo-pacedu-staging --only auth,firestore,storage "npm test"
