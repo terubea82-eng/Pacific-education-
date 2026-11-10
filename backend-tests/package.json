@@ -2,9 +2,11 @@
   "name": "pacedu-backend-emulator-tests",
   "private": true,
   "type": "module",
-  "engines": { "node": "22" },
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
-    "test": "node --test --test-concurrency=1 firestore.rules.test.mjs submit-progress-core.test.mjs submit-progress-emulator.integration.test.mjs"
+    "test": "node --test --test-concurrency=1 firestore.rules.test.mjs submit-progress-core.test.mjs submit-progress-emulator.integration.test.mjs authenticated-offline-sync-adapter.test.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.0",
