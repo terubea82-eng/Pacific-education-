@@ -42,7 +42,7 @@ public final class PaceduAndroidWebViewPersistenceTest {
                     + "tx.oncomplete=function(){window.__paceduProbe='WRITE_OK';db.close();};"
                     + "tx.onerror=function(){window.__paceduProbe='WRITE_ERROR';};};"
                     + "</script>";
-            webView.loadDataWithBaseURL(TEST_ORIGIN, html, "text/html", "UTF-8", null);
+            loadHtmlOnUiThread(webView, html);
             assertEquals("\"WRITE_OK\"", waitForResult(webView));
         });
     }
@@ -60,7 +60,7 @@ public final class PaceduAndroidWebViewPersistenceTest {
                     + "q.onsuccess=function(){window.__paceduProbe=q.result&&q.result.marker==='PACEDU_WEBVIEW_PERSISTED'?'READ_OK':'RECORD_MISSING';db.close();};"
                     + "q.onerror=function(){window.__paceduProbe='READ_ERROR';};};"
                     + "</script>";
-            webView.loadDataWithBaseURL(TEST_ORIGIN, html, "text/html", "UTF-8", null);
+            loadHtmlOnUiThread(webView, html);
             assertEquals("\"READ_OK\"", waitForResult(webView));
         });
     }
@@ -89,6 +89,11 @@ public final class PaceduAndroidWebViewPersistenceTest {
             assertNotNull(target.get());
             action.run(target.get());
         }
+    }
+
+    private void loadHtmlOnUiThread(WebView webView, String html) {
+        androidx.test.platform.app.InstrumentationRegistry.getInstrumentation().runOnMainSync(
+                () -> webView.loadDataWithBaseURL(TEST_ORIGIN, html, "text/html", "UTF-8", null));
     }
 
     private String waitForResult(WebView webView) throws Exception {
