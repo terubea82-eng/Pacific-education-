@@ -13,10 +13,27 @@ timeout --signal=TERM --kill-after=30s 15m gradle -p android --no-daemon --conso
 echo PHASE=INDEXEDDB_WRITE_TEST_PASSED
 echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK
 
-APP_ID="fj.pacificeducation.app.debug"
+echo "PHASE=INSPECT_INSTALLED_PACKAGES_AFTER_WRITER"
+adb shell pm list packages -3 | sort
+
+APK_METADATA="android/app/build/outputs/apk/debug/output-metadata.json"
+if [[ ! -f "$APK_METADATA" ]]; then
+  echo "::error::Gradle debug APK output metadata is missing: $APK_METADATA"
+  exit 1
+fi
+APP_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["applicationId"])' "$APK_METADATA")"
+if [[ -z "$APP_ID" ]]; then
+  echo "::error::Gradle debug APK applicationId is empty."
+  exit 1
+fi
+echo "GRADLE_DEBUG_APK_APPLICATION_ID=$APP_ID"
 echo "PHASE=VERIFY_DEBUG_PACKAGE_INSTALLED"
+if ! adb shell pm list packages -3 | sed 's/^package://' | tr -d '\\r' | grep -Fxq "$APP_ID"; then
+  echo "::error::Gradle debug APK applicationId $APP_ID is not present in the emulator package list."
+  exit 1
+fi
 if ! adb shell pm path "$APP_ID" | grep -q '^package:'; then
-  echo "::error::Expected Android debug package $APP_ID is not installed."
+  echo "::error::Gradle debug APK applicationId $APP_ID has no installed APK path."
   exit 1
 fi
 if ! adb shell pidof "$APP_ID" >/dev/null 2>&1; then
