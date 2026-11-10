@@ -122,3 +122,13 @@ jobs:
             PACEDU_SCRIPT
 
       - name: Preserve Android instrumentation reports and emulator logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacedu-android-webview-recovery-reports
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            android/app/build/outputs/androidTest-results/connected/debug/**/*.xml
+            android/app/build/reports/androidTests/connected/debug/**
+            android/app/build/outputs/logs/**
