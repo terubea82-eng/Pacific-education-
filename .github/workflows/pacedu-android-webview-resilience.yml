@@ -60,6 +60,19 @@ jobs:
           "$ADB" devices -l
           echo "PHASE=ADB_SERVER_READY"
 
+      - name: Enable KVM access for hosted Linux runner
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if [[ ! -e /dev/kvm ]]; then
+            echo "::error::KVM device /dev/kvm is unavailable on this runner."
+            exit 1
+          fi
+          sudo chmod 666 /dev/kvm
+          test -r /dev/kvm
+          test -w /dev/kvm
+          echo "KVM_DEVICE_ACCESS=READY"
+
       - name: Run against Android Emulator WebView
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -68,6 +81,7 @@ jobs:
           arch: x86_64
           profile: pixel_2
           disable-animations: true
+          disable-linux-hardware-acceleration: false
           emulator-boot-timeout: 600
           script: |
             bash -euo pipefail -c 'set -Eeuo pipefail; echo WEBVIEW_WRITE_GATE=REQUIRED; echo PHASE=EMULATOR_DEVICE_READY_WAIT; timeout 120s adb wait-for-device; timeout 180s bash -c "until [ \"\$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d \"\\\\r\")\" = \"1\" ]; do sleep 2; done"; echo PHASE=EMULATOR_BOOT_CONFIRMED; adb shell settings put global package_verifier_enable 0; adb shell settings put global verifier_verify_adb_installs 0; echo PHASE=INDEXEDDB_WRITE_TEST_START; timeout --signal=TERM --kill-after=30s 15m gradle -p android --no-daemon --console=plain :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=fj.pacificeducation.app.PaceduAndroidWebViewPersistenceTest#writeRecordBeforeProcessRestart; echo PHASE=INDEXEDDB_WRITE_TEST_PASSED; echo WEBVIEW_WRITE_GATE=PASSED_WRITE_OK'
