@@ -119,3 +119,26 @@ test("assessment planner exposes the indicator-linked evidence builder", () => {
   assert.deepEqual(Array.from(result.indicatorIds), ["I-1"]);
   assert.equal(result.formalAssessmentEligible, false);
 });
+
+test("Copper-to-Gold ability variants retain the same exact daily indicator ID", () => {
+  const window = load();
+  window.PacEduAchievementDistributionRuntime.importDistributionCsv(headers.join(",") + "\n" + makeRow());
+  const ids = ["support", "developing", "expected", "extension"].map(ability => {
+    const worksheet = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+      level: "Class 1", subject: "English", term: "T1", week: 1, day: 2, ability
+    });
+    return Array.from(worksheet.indicatorIds).join(",");
+  });
+  assert.deepEqual(ids, Array(4).fill("FJ-C1-ENG-001"));
+});
+
+test("missing exact daily slots remain unassigned instead of borrowing another day's indicator", () => {
+  const window = load();
+  window.PacEduAchievementDistributionRuntime.importDistributionCsv(headers.join(",") + "\n" + makeRow());
+  const worksheet = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+    level: "Class 1", subject: "English", term: "T1", week: 1, day: 3, ability: "developing"
+  });
+  assert.deepEqual(Array.from(worksheet.indicatorIds), []);
+  assert.equal(worksheet.indicatorMappingStatus, "NO_APPROVED_INDICATOR_SLOT");
+  assert.equal(worksheet.assessmentMapping.formalAssessmentEligible, false);
+});
