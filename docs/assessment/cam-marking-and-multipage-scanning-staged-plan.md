@@ -221,3 +221,68 @@ Require independent checks of marking accuracy, subgroup fairness, privacy, acce
 ## 13. Current implementation boundary
 
 This document is a staging specification only. No scanner integration, camera capture flow, OCR service, marking model, batch upload endpoint, Firebase change, student result write, teacher report, production deployment or APK replacement has been implemented or activated. No real student scans should be used during development.
+
+
+## Addendum — Mandatory Student ID and Script Matching
+
+**Requirement status:** Mandatory design requirement for the CAM/scanner workflow. Staging specification only; not implemented.
+
+### 1. Student identity is the required destination key
+- Every enrolled learner must have a unique, stable PacEdu Student ID (UID-backed identity), scoped to the authorised jurisdiction/school and active enrolment.
+- The Student ID is the destination identity for assessment marks and approved feedback. Names, class labels, handwritten names and seat numbers are not sufficient identity keys.
+- Do not expose raw internal database UIDs in printed documents or QR payloads. Use an opaque, random, assessment-specific script token that resolves server-side to the student and assessment within the authorised school/assessment scope.
+- A script token must not allow a person who scans it to view a student's profile or results.
+
+### 2. Assessment-specific script identification
+When a teacher assigns an assessment, PacEdu creates a unique script record linked to:
+- Student ID;
+- school/jurisdiction and class;
+- subject and curriculum version;
+- activity/assessment ID and date/session;
+- question IDs and indicator IDs;
+- expected page count and script version.
+
+PacEdu prints a QR code or barcode and human-readable fallback code on each page, together with page number and total pages (for example, 2 of 5). The token is unique to that learner's particular assessment attempt, not a permanent public student identifier.
+
+### 3. Multi-page scan matching
+For every scanned page:
+1. Read the script token and page number.
+2. Resolve the token using a trusted server-side lookup.
+3. Confirm the scanner/teacher is authorised for that school, class and assessment.
+4. Confirm the script is active and belongs to the expected assessment.
+5. Group pages by script token and order them by page number.
+6. Detect duplicate, missing, damaged, unreadable or out-of-range pages.
+7. Compare the resolved Student ID, class, subject, assessment and expected page count.
+8. Quarantine any ambiguous or mismatched script for teacher correction.
+
+Never guess a student identity from handwriting or OCR. If a code is absent, damaged, duplicated or conflicts with the roster, stop automatic marking and require the teacher to select and confirm the correct learner and assessment before any marks are written.
+
+### 4. Safe mark and feedback routing
+- Store provisional marks against the exact Student ID + assessment attempt + question ID + rubric version.
+- Store the source scan page/response region and marking method with each result.
+- Prevent duplicate batch uploads from creating duplicate attempts or marks through idempotent script and question keys.
+- Keep automated marks provisional until applicable confidence checks pass and required teacher approval is recorded.
+- After approval, publish only that learner's own marks, corrections and teacher-approved comments to that learner's private student platform.
+- A teacher's class overview is permission-scoped; one learner/parent account must never see another learner's results.
+- Corrections create an auditable new version; never silently overwrite the original mark history.
+
+### 5. Required teacher review screen
+Show the original page, detected script code, resolved learner identity, class/subject/assessment, page count, question response, suggested mark and confidence together. Require explicit confirmation for unmatched scripts, identity corrections, missing pages and any low-confidence recognition. Provide a clear “hold — do not publish” state.
+
+### 6. Mandatory security and acceptance tests
+Before pilot release, prove:
+- Every page is routed to the correct Student ID under valid enrolment and assessment permissions.
+- A forged, copied, expired, revoked or wrong-assessment token is rejected or quarantined.
+- Similar student names do not cause cross-assignment.
+- Missing, duplicate, mixed-student and out-of-order pages are detected.
+- A teacher cannot scan or publish results outside their authorised school/class scope.
+- Students can retrieve only their own released marks and comments.
+- Parents/guardians, if enabled, see only records explicitly authorised for their linked child.
+- Duplicate uploads do not duplicate marks.
+- Teacher corrections and publication events are fully audited.
+- Ambiguous identity always fails closed: no mark or comment is written to any student's platform.
+
+### 7. Delivery placement
+This is part of Stage 3 CAM implementation, after verified Student IDs, learner/task/question links, curriculum indicator IDs and versioned answer keys exist. Build identity and script-token matching before automated marking. Then add scan ingestion, page grouping, provisional marking, teacher approval and student feedback release. The Global Library and user-capacity stages remain in their already locked order.
+
+**Current boundary:** This addendum is a staging requirement only. No student IDs, scripts, marks, comments, Firebase records or production systems were changed.
