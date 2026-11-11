@@ -609,13 +609,57 @@
     });
     var distributionRuntime = global.PacEduAchievementDistributionRuntime;
     var distributionTerm = indicatorTermForBlock(block);
-    var distributionLink = distributionRuntime && typeof distributionRuntime.linkDailyActivity === "function"
-      ? distributionRuntime.linkDailyActivity(worksheet, {
-          level: level, subjectId: subject, term: distributionTerm, week: week, day: day
-        })
-      : { indicatorIds: [], indicatorMappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED", indicatorAssignment: null,
-          assessmentMapping: { indicatorIds: [], evidenceTypes: [], mappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED",
-            formalAssessmentEligible: false, serverAuthorizationRequired: true } };
+    var distributionFilters = {
+      level: level, subjectId: subject, term: distributionTerm, week: week, day: day
+    };
+    var distributionLink;
+    if (distributionRuntime && typeof distributionRuntime.linkDailyActivity === "function") {
+      distributionLink = distributionRuntime.linkDailyActivity(worksheet, distributionFilters);
+    } else {
+      /* Preserve the earlier candidate-only curriculum engine contract while the
+         new CSV distribution runtime is unavailable. Never promote this legacy
+         candidate to a validated indicator or formal assessment mapping. */
+      var legacyEngine = global.PacificEducationAchievementDistributionEngine;
+      var legacyPlan = legacyEngine && typeof legacyEngine.buildDailyIndicatorPlan === "function"
+        ? legacyEngine.buildDailyIndicatorPlan({
+            classId: String(options.classReference || ""),
+            level: level, subjectId: subject, term: distributionTerm, week: week, day: day
+          })
+        : null;
+      var legacyAssignment = legacyPlan && legacyPlan.assignment;
+      if (legacyAssignment && legacyAssignment.classId === String(options.classReference || "")) {
+        var candidate = {
+          indicatorId: legacyAssignment.indicatorId,
+          indicatorText: legacyAssignment.indicatorText,
+          strand: legacyAssignment.strand || "",
+          sourceStatus: legacyAssignment.sourceStatus || "unverified",
+          reviewStatus: "PENDING_TEACHER_REVIEW",
+          mappingStatus: "PENDING_TEACHER_REVIEW",
+          formalAssessmentEligible: false
+        };
+        distributionLink = {
+          indicatorIds: [candidate.indicatorId],
+          indicatorMappingStatus: "PENDING_TEACHER_REVIEW",
+          indicatorAssignment: candidate,
+          assessmentMapping: {
+            indicatorIds: [candidate.indicatorId], evidenceTypes: [],
+            mappingStatus: "PENDING_TEACHER_REVIEW",
+            formalAssessmentEligible: false, serverAuthorizationRequired: true
+          }
+        };
+      } else {
+        distributionLink = {
+          indicatorIds: [],
+          indicatorMappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED",
+          indicatorAssignment: null,
+          assessmentMapping: {
+            indicatorIds: [], evidenceTypes: [],
+            mappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED",
+            formalAssessmentEligible: false, serverAuthorizationRequired: true
+          }
+        };
+      }
+    }
     worksheet.indicatorIds = distributionLink.indicatorIds || [];
     worksheet.indicatorMappingStatus = distributionLink.indicatorMappingStatus;
     worksheet.indicatorAssignment = distributionLink.indicatorAssignment || null;
