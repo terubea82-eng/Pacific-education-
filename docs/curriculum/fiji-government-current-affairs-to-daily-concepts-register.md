@@ -97,3 +97,49 @@ On 12 November 2026, the official news index displayed the 3 November Bill and P
 - Do not force a government update into a subject or day where it does not match.
 - Keep unverified syllabus mappings as **SOURCE NOT YET LOCATED** / **DRAFT — CURRICULUM MAPPING PENDING**.
 - Stage 1 remains **IN_PROGRESS** until all required official controlled curriculum sources and their effective status are verified.
+
+
+## Provisional source records — Cabinet meetings of 13 and 20 October 2026
+
+**Review date:** 12 November 2026.  
+**Source limitation:** The official Cabinet release index and the official search-indexed text for both releases were retrieved. Direct page opening timed out during this pass. The text below is therefore recorded as **OFFICIAL_SEARCH_INDEX_TEXT_REVIEWED — DIRECT_PAGE_FETCH_TIMEOUT**. It is not marked as direct-page-open verified. Re-open the underlying official pages and confirm the complete text before turning any detail into a learner-facing activity.
+
+### Cabinet 18th meeting — 13 October 2026
+
+- **Issuer:** Cabinet of the Republic of Fiji.
+- **Publication date:** 14 October 2026.
+- **Exact title:** *Decisions of the 18th Cabinet Meeting held on 13 October 2026*.
+- **Official URL:** https://www.fiji.gov.fj/decisions-of-the-18th-cabinet-meeting-held-on-13-october-2026/
+- **Verification status:** Official release listed on the Government Cabinet Releases index; search-indexed full-text content reviewed; direct page fetch timed out.
+- **Items recorded from the indexed official text:**
+
+| Item | Update and status as stated in the indexed release | Possible subject connection (not an indicator assignment) |
+|---|---|---|
+| 1 | Shipbuilding and ship-repair facility in Lautoka: Cabinet endorsed feasibility-study outcomes and the preferred site; the next phase involves procurement/partner processes. This is a proposed project, not an operating facility. | Mathematics, Technology, Social Science, English — cost estimates, infrastructure, ports, skills and proposal analysis |
+| 2 | State House centenary: Cabinet endorsed proposed November 2026 commemorations of the 100th anniversary of State House and associated Government buildings. | Social Science, Arts, English — history, public institutions, heritage and event communication |
+| 3 | National intelligence architecture: Cabinet endorsed reform proposals and a six-month review partnership to assess options. This is a review/reform process, not evidence that a new structure is already implemented. | Social Science, Computer Studies, English — institutions, information governance, accountability and source evaluation; sensitive details excluded |
+| 4 | Fiji Maritime Security Strategy 2026–2035: Cabinet endorsed the strategy; implementation is phased and subject to planning, budgets and appropriation. | Social Science, Science, Technology, Mathematics — maritime geography, environment, infrastructure resilience and data |
+| 5 | Fiji–Philippines policy consultations: Cabinet endorsed an MOU framework for regular foreign-policy consultations and possible cooperation. | English, Social Science — diplomacy, agreements, regional relationships and formal communication |
+| 6 | National pineapple branding: Cabinet endorsed a three-year MOU between the Ministry of Agriculture and Waterways and Pacific Trade Invest New Zealand to develop branding and export opportunities. | Agriculture, Mathematics, English, Social Science, Technology — production data, markets, packaging, quality and export planning |
+
+### Cabinet 19th meeting — 20 October 2026
+
+- **Issuer:** Cabinet of the Republic of Fiji.
+- **Publication date:** 22 October 2026.
+- **Exact title:** *Decisions of the 19th Cabinet Meeting held on 20 October 2026*.
+- **Official URL:** https://www.fiji.gov.fj/decisions-of-the-19th-cabinet-meeting-held-on-20-october-2026/
+- **Verification status:** Official release listed on the Government Cabinet Releases index; search-indexed full-text content reviewed; direct page fetch timed out.
+- **Items recorded from the indexed official text:**
+
+| Item | Update and status as stated in the indexed release | Possible subject connection (not an indicator assignment) |
+|---|---|---|
+| 1 | National Alcohol and Drug Recovery Centre: Cabinet approved preliminary project preparations with KOICA assistance and a reported grant commitment. This is a preparation-stage project, not a completed or operating centre. | Health, Social Science, English — public health, services, interpreting official information; use carefully age-appropriate content and safeguarding review |
+| 2 | Mineral Exploration and Mining Bill 2026 and Mine Safety Management Bill 2026: Cabinet endorsed review outcomes and proposed Bills; consultation with the Bose Levu Vakaturaga was to occur before tabling. These are proposed Bills, not enacted laws. | Science, Technology, Social Science, English — minerals, environmental impacts, workplace safety and legislative process |
+| 3 | Nadi city proposal: Cabinet endorsed a proposal to declare Nadi a city, with formal declaration anticipated for December 2026. At the time of the release this was not yet a formal declaration. | Mathematics, Social Science, Technology — population/development data, urban planning, maps and public services |
+| 4 | Fiji’s Seventh National Report on Biodiversity: Cabinet endorsed the report following consultations and technical validation. | Science, Agriculture, Social Science, Mathematics — ecosystems, conservation, monitoring and interpreting environmental data |
+| 5 | Additional PAFCO guarantee: Cabinet endorsed an additional FJD $20 million Government guarantee proposal for PAFCO operations and upgrades. The 3 November Government release subsequently described the Government as seeking Parliament’s approval; do not describe the guarantee as approved by Parliament, paid or drawn down without a later authoritative record. | Mathematics, Agriculture/food systems, Technology, Social Science, English — finance, food processing, quality standards, employment and conditional language |
+
+**Reconciliation note — PAFCO:** The 19th Cabinet release is recorded as Cabinet endorsement of the proposed guarantee. The 3 November Government news release is recorded separately as the Government seeking Parliament's approval. These are distinct steps in the process and must not be collapsed into a claim that the funds were paid or the guarantee fully implemented.
+
+**Recheck before lesson use:** Directly open each official Cabinet release, compare the complete page against these provisional records, capture any omitted items or corrections, and update this status to DIRECT_PAGE_VERIFIED only after that check. Until then, these records may guide source discovery but must not supply detailed assessed facts to a student activity.
+
