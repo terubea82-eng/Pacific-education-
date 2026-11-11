@@ -106,6 +106,13 @@
     dayField.control.step = "1";
     var question = field("Question or task", "peQuickAnswerQuestion", "", true, true);
     var answer = field("Learner's answer (teacher-entered)", "peQuickAnswerResponse", "", true, true);
+    /* Class, subject, term and day are inherited from the selected subject box.
+       Keep those context fields in the saved record, but do not burden the teacher
+       with entering the same information again. */
+    [cls, subj, termField, dayField].forEach(function (item) {
+      item.wrapper.hidden = true;
+      item.wrapper.setAttribute("aria-hidden", "true");
+    });
     [learner, cls, subj, termField, dayField, question, answer].forEach(function (item) {
       panel.appendChild(item.wrapper);
     });
