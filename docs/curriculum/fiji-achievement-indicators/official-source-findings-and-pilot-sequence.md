@@ -229,3 +229,29 @@ The Ministry's Policy on Free Educational Resources (approved 1 December 2015) s
 - **Reconfirmed:** the 2015 Free Educational Resources policy lists resource categories and requires approval for school reproduction; its Appendix A is a historical 2016 resource list, not a current curriculum.
 - **Still not obtained:** the detailed revised Year 1–4 Literacy/Numeracy syllabus and guides; current Year 5–8 subject syllabuses and scope-and-sequence; current Year 9–13 subject syllabuses and assessment specifications; and the final revised ECE guideline with effective date.
 - **Release decision:** do not generate the full daily worksheet bank or publish formal curriculum alignment for any uncovered level/subject. Keep those slots `SOURCE NOT YET LOCATED` or `PENDING_TEACHER_REVIEW`. Existing verified Year 6/8 PE entries remain provisional until current-status confirmation.
+
+
+## 10. Secondary resource inventory — additional level-by-level evidence (12 November 2026)
+
+### Source — Appendix B, Secondary School Prescribed Textbook List 2016
+
+- Official Ministry-hosted URL: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- Relevant appendix pages: printed pages 14–21 (PDF text lines 1267–2505).
+- This is a **2016 prescribed textbook/resource inventory**, not a current syllabus, current subject entitlement list, scope-and-sequence or achievement-indicator bank. It is included only to guide requests for the correct subject-specific documents.
+- Year 9 inventory includes English, Mathematics, Basic Science, Social Science, Commercial Studies, Vosa Vakaviti, Hindi, Music, Physical Education, Art and Craft, Urdu and Rotuman resources.
+- Year 10 inventory includes English, Mathematics, Basic Science, Social Science, Commercial Studies, Vosa Vakaviti, Hindi, Rotuman and Urdu resources.
+- Year 11 inventory includes English, Mathematics, Biology, Chemistry, Physics, Accounting, Economics and other language/arts resources.
+- Year 12 inventory includes English, Mathematics, Biology, Chemistry, Physics, Accounting, Economics and Geography resources.
+- Year 13 inventory includes English, Mathematics, Biology, Chemistry, Physics, Accounting, Economics and Geography resources.
+- The appendix contains mixed Year/Form terminology in resource titles (for example, a Form 3 Mathematics textbook in the Year 9 section and Form 5/6/7 titles in later sections). This is evidence that legacy Year/Form labels have been used together in resource catalogues; it is **not** a sufficient formal equivalence table for PacEdu's current source-level schema.
+- The Ministry's policy text states that school reproduction of Ministry free resources requires Permanent Secretary approval for teaching and learning. PacEdu must obtain written permission for any wider digital adaptation, hosting or redistribution beyond the permitted school-use scope, and confirm whether the 2015 policy has since been superseded.
+
+### Source requests refined from this inventory
+
+Request the current, effective versions of:
+1. Year 9 and Year 10 English, Mathematics, Basic Science, Social Science, Commercial Studies, languages, Music, Physical Education and Art/Craft syllabuses, scope-and-sequence and teacher guides.
+2. Year 11–13 English, Mathematics, Biology, Chemistry, Physics, Accounting, Economics, Geography and all other currently offered subject syllabuses, assessment specifications and teacher guides.
+3. The Ministry's current formal Year/Form level equivalence table, if one exists, before mapping the user's legacy Class/Form labels to current Fiji Year labels.
+4. The latest subject-by-subject status register, including superseded, revised, trial and effective syllabus versions.
+
+**Distribution decision:** No indicators are inferred from textbook titles, exam subject names or the 2016 inventory. All Year 9–13 indicator slots remain **SOURCE NOT YET LOCATED** until a current syllabus/teacher guide with exact outcomes is obtained and reviewed.
