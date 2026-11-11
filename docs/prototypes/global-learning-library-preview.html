@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PacEdu Global Learning Library — prototype</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,sans-serif;background:#f4f7fb;color:#172033}
+*{box-sizing:border-box}body{margin:0}main{max-width:900px;margin:auto;padding:20px}
+header,.panel{background:#fff;border:1px solid #dce3ed;border-radius:16px;padding:18px;margin-bottom:16px}
+h1{font-size:1.5rem;margin:0 0 8px}h2{font-size:1.1rem;margin:0 0 12px}
+p{line-height:1.5}.muted{color:#526174}.notice{background:#fff7df;border-left:4px solid #b7791f;padding:12px;border-radius:8px}
+nav,.filters,.actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+button,input,select{font:inherit;padding:10px 12px;border:1px solid #aab7c8;border-radius:9px;background:#fff;color:inherit}
+button[aria-pressed=true]{background:#183b66;color:white;border-color:#183b66}
+input{min-width:180px;flex:1}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+article{border:1px solid #dce3ed;border-radius:12px;padding:14px;background:#fff}
+article h3{margin:0 0 6px;font-size:1rem}.tag{display:inline-block;background:#edf2f8;padding:3px 8px;border-radius:20px;font-size:.8rem;margin:2px}
+.small{font-size:.9rem}.hidden{display:none}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #edaa35;outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="muted">PACEDU · SEPARATE LEARNING LIBRARY</p>
+<h1>Global Learning Library</h1>
+<p>Explore approved educational stories and learning resources. You can always return to your daily activity.</p>
+<div class="notice small"><strong>Prototype only:</strong> sample titles are fictional placeholders. No real books, videos, accounts, payments or learner data are connected.</div>
+</header>
+<section class="panel" aria-labelledby="daily-heading">
+<h2 id="daily-heading">Recommended for today’s learning</h2>
+<p id="recommendation">Class 4 · English · Reading for meaning</p>
+<p class="small muted">Optional support for the selected learning objective. It does not replace teacher instructions or required activities.</p>
+<button type="button" id="continueDaily">Return to daily activity</button>
+</section>
+<section class="panel">
+<h2>Browse the library</h2>
+<nav aria-label="Collection">
+<button type="button" data-collection="Fiction" aria-pressed="true">Fiction</button>
+<button type="button" data-collection="Non-fiction" aria-pressed="false">Non-fiction</button>
+</nav>
+<nav aria-label="Resource format">
+<button type="button" data-format="All" aria-pressed="true">All formats</button>
+<button type="button" data-format="Read" aria-pressed="false">Read</button>
+<button type="button" data-format="Listen" aria-pressed="false">Listen</button>
+<button type="button" data-format="Watch" aria-pressed="false">Watch</button>
+</nav>
+<div class="filters">
+<label>Search <input id="search" type="search" placeholder="Search titles or subjects"></label>
+<label>Language <select id="language"><option value="All">All languages</option><option>English</option><option>Fijian</option><option>Hindi</option></select></label>
+<label>Level <select id="level"><option value="All">All levels</option><option>Primary</option><option>Secondary</option></select></label>
+</div>
+<div id="resourceList" class="cards" aria-live="polite"></div>
+<p id="empty" class="muted hidden">No sample resources match those filters.</p>
+</section>
+<section class="panel">
+<h2>Continue learning</h2>
+<p id="continueItem" class="muted">No sample resource opened yet.</p>
+<h2>Saved resources</h2>
+<ul id="savedList"><li class="muted">No saved sample resources yet.</li></ul>
+</section>
+<footer class="muted small">Design preview only. Before release: verify copyright and licence, educational quality, age suitability, accessibility, country availability and server-side access entitlements.</footer>
+</main>
+<script>
+(function(){
+ const resources=[
+ {id:1,title:"The River That Remembered",collection:"Fiction",format:"Read",language:"English",level:"Primary",subject:"English",access:"Free sample"},
+ {id:2,title:"A Garden in the Island Village",collection:"Fiction",format:"Listen",language:"Fijian",level:"Primary",subject:"English",access:"Preview"},
+ {id:3,title:"How Rainwater Travels",collection:"Non-fiction",format:"Watch",language:"English",level:"Primary",subject:"Science",access:"Paid label demo"},
+ {id:4,title:"Healthy Habits at School",collection:"Non-fiction",format:"Read",language:"Hindi",level:"Primary",subject:"Healthy Living",access:"Free sample"},
+ {id:5,title:"Ideas for a Greener Office",collection:"Non-fiction",format:"Listen",language:"English",level:"Secondary",subject:"Business",access:"Preview"},
+ {id:6,title:"The Clever Coconut Crab",collection:"Fiction",format:"Read",language:"English",level:"Secondary",subject:"English",access:"Free sample"}
+ ];
+ let collection="Fiction",format="All",saved=[],lastOpened=null;
+ const $=id=>document.getElementById(id);
+ function render(){
+  const q=$("search").value.trim().toLowerCase(),lang=$("language").value,lvl=$("level").value;
+  const matches=resources.filter(r=>r.collection===collection&&(format==="All"||r.format===format)&&(lang==="All"||r.language===lang)&&(lvl==="All"||r.level===lvl)&&(!q||(r.title+" "+r.subject).toLowerCase().includes(q)));
+  $("resourceList").innerHTML="";
+  matches.forEach(r=>{
+   const card=document.createElement("article");
+   const h=document.createElement("h3");h.textContent=r.title;card.append(h);
+   const p=document.createElement("p");p.className="small muted";p.textContent=r.subject+" · "+r.level+" · "+r.language;card.append(p);
+   const tags=document.createElement("p");tags.innerHTML='<span class="tag"></span><span class="tag"></span>';tags.children[0].textContent=r.format;tags.children[1].textContent=r.access;card.append(tags);
+   const actions=document.createElement("div");actions.className="actions";
+   const open=document.createElement("button");open.textContent="Open sample";open.addEventListener("click",()=>{lastOpened=r;$("continueItem").textContent=r.title+" · "+r.format+" · sample only";});
+   const save=document.createElement("button");save.textContent=saved.includes(r.id)?"Saved":"Save";save.setAttribute("aria-pressed",String(saved.includes(r.id)));save.addEventListener("click",()=>{saved=saved.includes(r.id)?saved.filter(x=>x!==r.id):[...saved,r.id];renderSaved();render();});
+   actions.append(open,save);card.append(actions);$("resourceList").append(card);
+  });
+  $("empty").classList.toggle("hidden",matches.length!==0);
+ }
+ function renderSaved(){
+  $("savedList").innerHTML="";
+  const items=resources.filter(r=>saved.includes(r.id));
+  if(!items.length){const li=document.createElement("li");li.className="muted";li.textContent="No saved sample resources yet."; $("savedList").append(li);return;}
+  items.forEach(r=>{const li=document.createElement("li");li.textContent=r.title;$("savedList").append(li);});
+ }
+ document.querySelectorAll("[data-collection]").forEach(b=>b.addEventListener("click",()=>{collection=b.dataset.collection;document.querySelectorAll("[data-collection]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render();}));
+ document.querySelectorAll("[data-format]").forEach(b=>b.addEventListener("click",()=>{format=b.dataset.format;document.querySelectorAll("[data-format]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render();}));
+ ["search","language","level"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
+ $("continueDaily").addEventListener("click",()=>alert("Prototype: this would return to the learner's daily activity."));
+ render();renderSaved();
+})();
+</script>
+</body>
+</html>
