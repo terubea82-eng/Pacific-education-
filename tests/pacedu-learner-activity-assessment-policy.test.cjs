@@ -91,3 +91,13 @@ test("optional audio mirror storage failure does not invalidate the already-save
   assert.ok(primaryWrite >= 0 && audioMirrorWrite > primaryWrite);
   assert.ok(source.includes("A failure to mirror audio into the optional home-submissions list must"));
 });
+
+test("saved learner response records preserve exact activity, question, and sequence identity", () => {
+  assert.ok(source.includes("activityId: ctx.activityId || (\"daily-activity-\" + type + \"-day-\" + ctx.dayNumber)"));
+  assert.ok(source.includes("questionId: ctx.questionId || null"));
+  assert.ok(source.includes("questionSequenceId: ctx.sequenceId || null"));
+  assert.ok(source.includes("questionSequencePosition: ctx.sequencePosition"));
+  assert.ok(source.includes("questionSequenceVersion: ctx.sequenceVersion"));
+  assert.ok(source.includes("sequenceId: source.sequenceId || lesson && lesson.questionSequenceId || null"));
+  assert.ok(source.includes("activityId: (active.context && active.context.activityId)"));
+});
