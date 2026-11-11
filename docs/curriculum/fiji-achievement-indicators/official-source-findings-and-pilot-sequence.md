@@ -1177,7 +1177,7 @@ The report states that the Curriculum Development Unit, working with Senior Curr
 
 ### B. Year 11 Mathematics pathway evidence
 
-The report describes piloting a Year 11 Life Skills Mathematics curriculum in 21 schools. It distinguishes two Mathematics types in its then-current programme description:
+The report describes piloting a Year 11 Life Skills Mathematics curriculum in 21 schools. A later Ministry Annual Report for 2021–2022 supersedes the pilot-only status: it reports that Year 11 Life Mathematics was rolled out in all schools after the successful pilot, while Year 12 Life Mathematics was piloted in 21 schools in 2022. It also reports five hours of parallel Mathematics classes per week and that students could move from Pure to Life Mathematics subject to performance and career-choice considerations. The 2021–2022 report is a later implementation-status source, but it still does not supply the controlled current syllabus or prove the 2026 pathway rules. The earlier 2020–2021 report distinguishes two Mathematics types in its then-current programme description:
 - Life Skills Mathematics; and
 - Applied Mathematics (described in the report as the current Secondary Mathematics Curriculum at that time).
 
@@ -1196,3 +1196,32 @@ Request from Curriculum Advisory Services / authorised school FEMIS or Moodle ac
 Do not merge Life Skills, Applied, Pure or any other Mathematics pathways. Do not allocate the 2020–2021 pilot content to 2026 learners until the Ministry confirms the applicable current pathway and supplies its controlled syllabus.
 
 **Stage 1 remains IN_PROGRESS.** This annual report strengthens the source-acquisition map but supplies no current Mathematics achievement-indicator bank and does not close the primary English/Mathematics source gaps.
+
+
+## 14. Later Ministry Annual Report — Life Mathematics implementation update (12 November 2026)
+
+**Source:** Fiji Ministry of Education, *Annual Report 2021–2022*, official Parliament-hosted PDF.  
+**Official URL:** https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-EducationHeritage-and-Arts-Annual-Report-2021%E2%80%932022.pdf  
+**Retrieval status:** Official PDF search-indexed text returned the relevant Mathematics implementation passage on 12 November 2026. This is report-level evidence; no current syllabus text or indicator schedule is reproduced here.
+
+### Verified implementation update
+
+The report states:
+- Year 11 Life Mathematics was rolled out in all schools after the successful 2021 pilot.
+- Year 12 Life Mathematics was piloted in 21 schools in 2022.
+- Year 11 students in the report's 2022 reporting context took either Life Mathematics or Pure Mathematics, with selection based on Year 10 Mathematics marks and/or career choices.
+- Schools provided five hours of parallel Mathematics classes per week.
+- Students taking Pure Mathematics could switch to Life Mathematics based on performance and changes in career or employment aspirations.
+
+### PacEdu interpretation and safeguards
+
+**Classification:** LATER_OFFICIAL_IMPLEMENTATION_REPORT — HISTORICAL_2021_2022_STATUS — CURRENT_2026_SYLLABUS_AND_RULES_NOT_CONFIRMED.
+
+1. This later report corrects the earlier pilot-only description: Year 11 Life Mathematics had been rolled out nationally in the report's 2022 context, not merely piloted in 21 schools.
+2. Year 12 Life Mathematics was at pilot stage in 2022. This report alone does not establish the date or conditions of any subsequent national rollout.
+3. The five-hour weekly parallel-class statement is historical implementation evidence, not a verified current contact-hour rule for every school or pathway in 2026.
+4. Do not treat Year 11 selection/switching rules in the 2021–2022 report as current admission or pathway rules without a later Ministry circular.
+5. Obtain the current controlled Life Mathematics and Pure Mathematics syllabuses for Years 11–13, prerequisites, subject-selection/switching rules, weekly contact hours, assessment/examination specifications and all superseding circulars.
+6. Keep Life Mathematics and Pure Mathematics as distinct pathways in PacEdu. Do not merge their outcomes or use one pathway's assessment rubric for the other.
+
+**Updated finding:** Official evidence now supports Year 11 Life Mathematics national rollout by the 2021–2022 reporting period and a Year 12 pilot in 2022. It does not close the current Years 11–13 Mathematics source gap, and it does not provide any achievement-indicator bank. Stage 1 remains IN_PROGRESS.
