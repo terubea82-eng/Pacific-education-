@@ -1367,3 +1367,35 @@ Cabinet endorsed a review of the 2013 Fiji National Curriculum Framework and est
 **Classification:** HISTORICAL_PROGRAMME_EVIDENCE — CURRENT_SECONDARY_MATHEMATICS_PRESCRIPTIONS_NOT_VERIFIED.
 
 **Stage 1 remains IN_PROGRESS.** No new secondary Mathematics indicator, approved daily activity or pathway distribution is added.
+
+
+## 21. Year 6 and Year 8 achievement-indicator extraction — Ministry 2015 Term 3 guide (12 November 2026)
+
+**Controlled source opened:** Fiji Ministry of Education, Curriculum Development Unit, *Teachers Guide for Y6 & Y8 Teachers — Term 3*, first edition 2015. Official Ministry PDF: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf.
+
+The guide explicitly says it supports lessons after the external examination and carries a Ministry copyright notice. School classroom reproduction is permitted with acknowledgement; other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services. PacEdu therefore stores source references and concise original summaries, not a wholesale copy of the guide.
+
+### Extracted indicator register
+
+A new source-backed index was created at:
+
+`docs/curriculum/fiji-achievement-indicators/year6-year8-2015-guide-source-backed-indicator-register.md`
+
+It records 11 coded PE indicator candidates:
+- Year 6: PE 6.1.1.1a and PE 6.1.2.2a–d.
+- Year 8: PE 8.1.1.1a, PE 8.1.1.1b and PE 8.1.2.2a–d.
+
+It also records Year 6 and Year 8 English reading achievement evidence and Financial Education/Citizenship/Culture source leads where the guide's tables do not provide a separate unique indicator code. The index explicitly avoids inventing codes.
+
+### Source and mapping boundaries
+
+1. The 11 PE records are transcribed candidates from the accessible Ministry PDF, not proof of current 2026 applicability.
+2. Keep educator review pending and do not set `VALIDATED` until CAS/current syllabus status, exact code/table mapping and post-examination scope are confirmed.
+3. The guide's PE allocation is 10 × 45-minute practical periods and is presented as suggested Term 3 Weeks 5–9 activity after external examination. Do not allocate it to the full 115-day timetable or pre-exam teaching.
+4. English and other subject achievement statements remain un-coded until controlled documents confirm formal indicator IDs.
+5. Road Safety RS6/RS8 code rows are excluded from validated import because the extracted table appears to repeat code labels across different statements; inspect the page image and confirm the code hierarchy before import.
+6. The new index is linked from the folder README. No 115-day slots were populated and no new activity pack was created from these historical statements.
+
+**Classification:** SOURCE_PDF_OPENED_AND_TRANSCRIBED — CURRENT_APPLICABILITY_AND_EDUCATOR_VALIDATION_PENDING.
+
+**Stage 1 remains IN_PROGRESS.**
