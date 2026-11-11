@@ -1022,3 +1022,68 @@ A search result for a third-party-hosted copy identifies a Ministry-issued Years
 5. Do not create the 115-day timetable until source coverage, pathway prerequisites, contact hours and national examination windows have been reconciled.
 
 **Stage 1 remains IN_PROGRESS.** This additional review improves the acquisition map but does not provide a complete verified English or Mathematics indicator bank for ECE–Year 13.
+
+
+## 10. Science and Social Science source leads — 12 November 2026
+
+**Scope:** additional Stage 1 source acquisition pass for Elementary Science, Basic Science, Social Studies/Social Science and secondary science subjects. This section records source status and retrieval leads only. It does not approve a new indicator or establish that a third-party copy is the current controlled edition.
+
+### A. Ministry Annual Report 2022–2023 — controlled primary resources and access route
+
+- Issuer: Fiji Ministry of Education.
+- Official report URL: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- Verified report content: the Ministry states that revised Years 1–4 syllabus and Literacy/Numeracy guides were supplied to schools, and that curriculum documents such as syllabi were uploaded to FEMIS and Moodle.
+- Report location: curriculum and assessment section, around the report's printed pages 100–101 (PDF text around lines 4967–4979).
+- Limitation: this is evidence of a controlled-document distribution/access route, not the content or status of Science or Social Science syllabi. The reported revised Year 1–4 package is described in the context of literacy and numeracy; do not assume that it covers Elementary Science or all learning areas.
+
+**PacEdu status:** OFFICIAL_DOCUMENT_ACCESS_ROUTE_CONFIRMED — SUBJECT_SPECIFIC_SCIENCE_AND_SOCIAL_SCIENCE_CONTENT_NOT_RETRIEVED.
+
+### B. Historical primary subject-resource inventory
+
+- Source: Ministry of Education, *Policy on Free Educational Resources* (Ministry-hosted PDF), Appendix A.
+- URL: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- The appendix lists historical Elementary Science resources for Years 1–6 and Social Studies resources for Years 3–6; the same historical list identifies Basic Science and Social Science resources at other levels.
+- Use: a subject/level discovery checklist only. It is a 2016 resource list, not a current syllabus, not an achievement-indicator register, and not proof that a title or subject structure remains current.
+
+**PacEdu status:** HISTORICAL_RESOURCE_LEAD_ONLY — CURRENT_SUBJECT_PRESCRIPTIONS_NOT_VERIFIED.
+
+### C. Year 9–10 Social Science — official supporting resource, not complete syllabus
+
+- Source: Fijian Elections Office, *My Election, My Fiji* civic education resource.
+- Official URL: https://idee.feo.org.fj/my-election-my-fiji/
+- The FEO describes the resource as a mandatory component of the Year 9 and Year 10 Social Science curriculum in secondary schools. It identifies a Student Workbook, Teacher Guide and supporting materials, and says the development involved the FEO, Ministry of Education and UNDP under the VOTE Fiji project, with teacher/student review and classroom testing.
+- Use: verified evidence of a specific Social Science curriculum component and its associated teacher/student materials. It is not the full Years 9–10 Social Science syllabus or the complete indicator bank. Obtain the actual workbook/teacher guide, version/effective date and the Ministry's full syllabus and mapping instructions before extracting or mapping outcomes.
+
+**PacEdu status:** OFFICIAL_CURRICULUM_COMPONENT_REPORTED — RESOURCE_CONTENT_AND_FULL_SYLLABUS_NOT_YET_RETRIEVED.
+
+### D. Secondary Science and Social Science historical retrieval leads
+
+The following surfaced in search as third-party hosted copies or historical materials and are not accepted as canonical controlled sources:
+
+- Year 9 Basic Science textbook, credited to Ministry of Education authorship and copyright, hosted by FlipHTML5: https://fliphtml5.com/gjgbb/fcov/Year_9_Basic_Science_Textbook/. It contains science skills, safety and investigation topics, but a textbook is not the syllabus/indicator schedule and the hosting copy is not Ministry-controlled.
+- Years 9–10 Social Science Syllabi, described as a 2014 trial version and hosted by Scribd: https://www.scribd.com/document/649887372/Year-9-10-Social-Science-Syllabi. The trial label and third-party hosting mean it cannot establish current status.
+- Year 8 Social Science pupil book, revised edition 2021, hosted by FlipHTML5: https://fliphtml5.com/gjgbb/dboy/Year_8_Social_Science_/. This is a textbook lead, not a current controlled syllabus or indicator schedule.
+- Year 4 Elementary Science book, described as a revised 2023 Ministry resource, hosted by FlipHTML5: https://fliphtml5.com/gjgbb/qpxi/YEAR_4_ELEMENTARY_SCIENCE_%282022_REVISED%29/. The copy's internal imprint describes a Ministry revised edition, but third-party hosting and absent controlled distribution/effective-status confirmation prevent canonical use.
+
+**PacEdu status:** THIRD_PARTY_COPY_RETRIEVAL_LEADS — NOT_CANONICAL; DO_NOT_IMPORT_AS_CURRENT_INDICATORS.
+
+### E. Required Science and Social Science acquisition
+
+| Subject/pathway | Evidence now located | Still required before indicator mapping |
+|---|---|---|
+| Elementary Science, Years 1–6 | Historical Ministry resource list; third-party copy lead for Year 4 revised 2023 book | Ministry-controlled current syllabus/prescription, year-level scope and sequence, teacher guide, exact outcome/indicator schedule and implementation date for each year |
+| Basic Science, Years 7–10 (confirm exact Ministry year nomenclature) | Historical resource-list evidence; third-party Year 9 textbook lead | Current controlled syllabus, year-level guide, scope and sequence, assessment requirements and current status |
+| Secondary sciences, Years 11–13 | Ministry annual reports identify science subjects and exam pathways, but no complete current subject prescription retrieved in this pass | Current Biology, Chemistry, Physics and other applicable subject syllabi, prerequisites, practical requirements, assessment/examination specifications and effective dates |
+| Social Studies/Social Science, primary | Historical Ministry resource-list evidence for Years 3–6; Year 8 revised textbook copy is a third-party lead | Current controlled year-specific syllabus, scope and sequence, teacher guides and outcome/indicator schedules |
+| Social Science, Years 9–10 | FEO confirms *My Election, My Fiji* is a mandatory curriculum component; historical 2014 trial syllabus copy is not canonical | Current Ministry-controlled full syllabus and implementation circular; obtain FEO workbook/teacher guide version and map the mandatory component to approved outcomes |
+| History/Geography, Years 11–13 | Ministry annual reports list these as secondary examination subjects | Current year-specific syllabi, assessment/exam specifications and current subject-selection requirements |
+
+### F. Source and copyright safeguards
+
+1. Obtain controlled copies from the Ministry's Curriculum Advisory Services, FEMIS/Moodle or an authorised school channel; record who supplied the file, date accessed, version, effective date and any access restriction.
+2. Do not treat a textbook, pupil book, resource list, trial syllabus, radio/video lesson or third-party upload as a complete syllabus or current indicator bank.
+3. For the FEO civic resource, retain its distinct source authority and map it only after confirming the Ministry's current Social Science syllabus and the resource's permitted reuse conditions.
+4. Before importing, paraphrasing at scale, scanning, reproducing or distributing any Ministry/FEO/EQAP content through PacEdu, obtain the applicable written permission or licence and retain attribution/source metadata.
+5. Keep every missing class/subject combination marked SOURCE NOT YET LOCATED. No invented indicator wording, no unsupported daily activities and no 115-day allocations.
+
+**Stage 1 remains IN_PROGRESS.** This pass identifies one official Year 9–10 Social Science curriculum component and useful controlled-source acquisition routes, but does not establish a complete current Science or Social Science indicator inventory for ECE–Year 13.
