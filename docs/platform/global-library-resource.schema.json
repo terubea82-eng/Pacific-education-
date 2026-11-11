@@ -1,0 +1,496 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pacific-education.example/schemas/global-library-resource.schema.json",
+  "title": "PacEdu Global Library Resource",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "resourceId",
+    "title",
+    "resourceType",
+    "collection",
+    "format",
+    "language",
+    "educationalPurpose",
+    "ageGuidance",
+    "availability",
+    "rights",
+    "review",
+    "publicationStatus",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "resourceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "creator": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "resourceType": {
+      "enum": [
+        "book",
+        "short_read",
+        "audiobook",
+        "audio_lesson",
+        "educational_video",
+        "interactive_resource"
+      ]
+    },
+    "collection": {
+      "enum": [
+        "fiction",
+        "non_fiction"
+      ]
+    },
+    "format": {
+      "enum": [
+        "read",
+        "listen",
+        "watch",
+        "interactive"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "minLength": 2
+    },
+    "additionalLanguages": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "educationalPurpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200
+    },
+    "subjects": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "topics": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "ageGuidance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumAge",
+        "maximumAge",
+        "reviewStatus"
+      ],
+      "properties": {
+        "minimumAge": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "maximumAge": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "readingLevel": {
+          "type": "string"
+        },
+        "contentAdvisory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewStatus": {
+          "enum": [
+            "pending",
+            "approved",
+            "restricted",
+            "rejected"
+          ]
+        }
+      }
+    },
+    "curriculumMappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "jurisdiction",
+          "curriculumLabel",
+          "mappingStatus"
+        ],
+        "properties": {
+          "jurisdiction": {
+            "type": "string",
+            "minLength": 2
+          },
+          "curriculumLabel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "frameworkVersion": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "learningObjectiveId": {
+            "type": "string"
+          },
+          "mappingStatus": {
+            "enum": [
+              "supplementary",
+              "pending_review",
+              "verified",
+              "withdrawn"
+            ]
+          },
+          "reviewerId": {
+            "type": "string"
+          },
+          "reviewedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sourceEvidence": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "dailyLearningLinks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "activityId",
+          "linkType",
+          "status"
+        ],
+        "properties": {
+          "activityId": {
+            "type": "string"
+          },
+          "linkType": {
+            "enum": [
+              "recommended",
+              "prerequisite",
+              "revision",
+              "extension"
+            ]
+          },
+          "learningObjectiveId": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "suggested",
+              "teacher_approved",
+              "withdrawn"
+            ]
+          },
+          "approvedBy": {
+            "type": "string"
+          },
+          "approvedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "textAvailable": {
+          "type": "boolean"
+        },
+        "audioAvailable": {
+          "type": "boolean"
+        },
+        "captionsAvailable": {
+          "type": "boolean"
+        },
+        "transcriptAvailable": {
+          "type": "boolean"
+        },
+        "screenReaderReviewed": {
+          "type": "boolean"
+        },
+        "keyboardAccessible": {
+          "type": "boolean"
+        },
+        "adjustableText": {
+          "type": "boolean"
+        },
+        "signLanguageAvailable": {
+          "type": "boolean"
+        },
+        "offlinePermitted": {
+          "type": "boolean"
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sourceType": {
+          "enum": [
+            "pacEdu_hosted",
+            "licensed_hosted",
+            "authorised_external_link",
+            "authorised_embed"
+          ]
+        },
+        "sourceUri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "storageObjectId": {
+          "type": "string"
+        },
+        "durationSeconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "estimatedReadingMinutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fileSizeBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "downloadAllowed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rightsCategory",
+        "evidenceReference",
+        "territories",
+        "permittedUses",
+        "status"
+      ],
+      "properties": {
+        "rightsCategory": {
+          "enum": [
+            "pacEdu_owned",
+            "public_domain_verified",
+            "open_licensed",
+            "direct_permission",
+            "external_link_only"
+          ]
+        },
+        "licenceName": {
+          "type": "string"
+        },
+        "licenceVersion": {
+          "type": "string"
+        },
+        "attributionText": {
+          "type": "string"
+        },
+        "evidenceReference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "territories": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "permittedUses": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "stream",
+              "display",
+              "download",
+              "offline_cache",
+              "translate",
+              "adapt",
+              "read_aloud",
+              "embed"
+            ]
+          }
+        },
+        "expiryDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewDueDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "enum": [
+            "pending_verification",
+            "verified",
+            "restricted",
+            "expired",
+            "disputed",
+            "withdrawn"
+          ]
+        }
+      }
+    },
+    "availability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "freeAccess",
+        "paidPlanIds",
+        "sponsorAgreementIds"
+      ],
+      "properties": {
+        "freeAccess": {
+          "type": "boolean"
+        },
+        "paidPlanIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "sponsorAgreementIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowedCountries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "blockedCountries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "previewPermitted": {
+          "type": "boolean"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "educationalStatus",
+        "safetyStatus"
+      ],
+      "properties": {
+        "educationalStatus": {
+          "enum": [
+            "pending",
+            "approved",
+            "rejected",
+            "recheck_required"
+          ]
+        },
+        "safetyStatus": {
+          "enum": [
+            "pending",
+            "approved",
+            "restricted",
+            "rejected",
+            "recheck_required"
+          ]
+        },
+        "educatorReviewerId": {
+          "type": "string"
+        },
+        "safetyReviewerId": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reviewNotes": {
+          "type": "string"
+        }
+      }
+    },
+    "publicationStatus": {
+      "enum": [
+        "draft",
+        "pending_review",
+        "published",
+        "quarantined",
+        "withdrawn",
+        "expired"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

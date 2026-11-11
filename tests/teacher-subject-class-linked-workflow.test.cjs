@@ -5,7 +5,7 @@ const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.
 test("teacher subject selection shows every class and links the class to matching printable plans", async ({ page }) => {
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => {
-    document.body.innerHTML = '<main><section id="teacherDashboard"><section id="pacificEducationTeacherQuickAnswer">Quick Manual Answer Entry</section><section id="teacherPerformancePanel">Teacher Daily Activity & Performance</section><div id="paceduTeacherSubjectGrid" data-ready="true"></div><div id="paceduTeacherClassList"></div></section></main>';
+    document.body.innerHTML = '<main><section id="teacherDashboard"><section id="pacificEducationTeacherQuickAnswer"><input id="peQuickAnswerClass"><input id="peQuickAnswerSubject"><input id="peQuickAnswerTerm"><input id="peQuickAnswerDay"></section><section id="teacherPerformancePanel">Teacher Daily Activity & Performance</section><div id="paceduTeacherSubjectGrid" data-ready="true"></div><div id="paceduTeacherClassList"></div></section></main>';
     localStorage.clear();
     /* Simulate a stale "ready" grid whose buttons survived but whose class
        selector was replaced outside the subject grid by dashboard rendering. */
@@ -52,11 +52,12 @@ test("teacher subject selection shows every class and links the class to matchin
   await page.addScriptTag({ url: "./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=linked-workflow-test" });
 
   await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toHaveAttribute("aria-label", "Student daily activities and matching workplans");
-  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("My Teaching Workspace");
+  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("Choose a Subject");
   await expect(page.locator("#paceduTeacherSubjectGrid button[data-pacedu-teacher-subject]")).toHaveCount(15);
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Home Economics");
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Rotuman");
-  await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toHaveCount(0);
+  await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toHaveCount(1);
+  await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toBeHidden();
   await expect(page.locator("#teacherPerformancePanel")).toHaveCount(0);
 
   await page.getByRole("button", { name: "Agriculture", exact: true }).click();
@@ -82,8 +83,17 @@ test("teacher subject selection shows every class and links the class to matchin
 
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Science — Class 2");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("PENDING_TEACHER_REVIEW");
+  await expect(page.locator("#pacificEducationTeacherQuickAnswer")).toBeVisible();
+  await expect(page.locator("#paceduTeacherSubjectGrid .pacedu-teacher-subject-card #pacificEducationTeacherQuickAnswer")).toHaveCount(1);
+  await expect(page.locator("#peQuickAnswerClass")).toHaveValue("scienceClass");
+  await expect(page.locator("#peQuickAnswerSubject")).toHaveValue("Science");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Teacher Instructions");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Daily Activities + Revision + Practice Exam");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Gold");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Silver");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Bronze");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Copper");
+  await expect(page.locator('#paceduTeacherTwoResourcePanel [aria-label="Teacher resource library and teaching aid builder"]')).toBeHidden();
   await expect(page.getByRole("button", { name: "Print teacher instructions / Save as PDF", exact: true })).toBeEnabled();
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationSubject"))).toBe("Science");
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationClassLevel"))).toBe("Class 2");

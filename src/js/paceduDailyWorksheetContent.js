@@ -532,6 +532,9 @@
     };
   }
 
+  function indicatorTermForBlock(block) {
+    return block === "T1" ? "Term 1" : block === "T2" ? "Term 2" : block === "T3" ? "Term 3" : String(block || "");
+  }
   function getCurriculumWorksheet(options) {
     options = options || {};
     var block = String(options.term || "T1").toUpperCase();
@@ -562,7 +565,7 @@
     // This API is for subsequent scheduled teaching worksheets, so the selected daily
     // worksheet remains separate and never overwrites that diagnostic.
     var scheduledDay = 2 + ((week - 1) * 5) + (day - 1);
-    var worksheet = make(level, subject, scheduledDay, ability);
+    var worksheet = make(level, subject, scheduledDay, ability, options);
     if (subject === "English") {
       var scheduledEnglish = makeScheduledEnglishContent(
         level, ability,
@@ -577,36 +580,150 @@
       curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
       curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
     );
-    var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
-    var classReference = String(options.classReference || "").trim();
-    var indicatorTerm = String(options.curriculumTerm || options.term || "").trim();
-    if (classReference && indicatorEngine && typeof indicatorEngine.buildDailyIndicatorPlan === "function") {
-      try {
-        var indicatorResult = indicatorEngine.buildDailyIndicatorPlan({
-          classId: classReference, level: level, subjectId: subject,
-          term: indicatorTerm, dayNumber: Math.max(1, Number(options.dayNumber) || (2 + ((week - 1) * 5) + (day - 1)))
-        });
-        var assignment = indicatorResult && indicatorResult.assignment;
-        if (assignment && assignment.indicatorId &&
-            String(assignment.classId || "") === classReference &&
-            String(assignment.level || "") === level &&
-            String(assignment.subjectId || "") === subject &&
-            String(assignment.term || "") === indicatorTerm) {
-          worksheet.dailyLesson.curriculumAlignment.candidateIndicator = {
-            id: String(assignment.indicatorId),
-            text: String(assignment.indicatorText || ""),
-            strand: String(assignment.strand || ""),
-            sourceStatus: String(assignment.sourceStatus || "unverified"),
-            productionEligible: assignment.productionEligible === true,
-            status: "PENDING_TEACHER_REVIEW"
-          };
-          worksheet.dailyLesson.curriculumAlignment.rule += " A matching class-specific indicator candidate is attached for teacher review only; it is not treated as verified by this generator.";
-        }
-      } catch (indicatorError) {
-        /* Missing or unavailable indicator services must not break daily lessons. */
+    /* Stable, ability-neutral question identity for safe learner resume.
+       Increment the sequence version if the approved question order/content is deliberately replaced. */
+    var activityScope = [level, subject, block, "week-" + week, "day-" + day].map(function (part) {
+      return String(part || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    }).join(":");
+    var activityId = "pacedu-fiji-daily-v1:" + activityScope;
+    var questionSequenceVersion = 1;
+    var questionSequenceId = activityId + ":sequence-v" + questionSequenceVersion;
+    worksheet.activityId = activityId;
+    worksheet.questionSequenceId = questionSequenceId;
+    worksheet.questionSequenceVersion = questionSequenceVersion;
+    worksheet.questions = (worksheet.questions || []).map(function (question, index) {
+      return Object.assign({}, question, {
+        questionId: activityId + ":question:" + String(index + 1),
+        sequenceId: questionSequenceId,
+        sequencePosition: index + 1,
+        sequenceVersion: questionSequenceVersion
+      });
+    });
+    worksheet.answerKey = (worksheet.answerKey || []).map(function (entry, index) {
+      return Object.assign({}, entry, {
+        questionId: worksheet.questions[index] && worksheet.questions[index].questionId || "",
+        sequenceId: questionSequenceId,
+        sequencePosition: index + 1,
+        sequenceVersion: questionSequenceVersion
+      });
+    });
+    var distributionRuntime = global.PacEduAchievementDistributionRuntime;
+    var distributionTerm = indicatorTermForBlock(block);
+    var distributionFilters = {
+      jurisdiction: String(options.jurisdiction || options.country || "Fiji"),
+      level: level, subjectId: subject, term: distributionTerm, week: week, day: day
+    };
+    var distributionLink;
+    if (distributionRuntime && typeof distributionRuntime.linkDailyActivity === "function") {
+      distributionLink = distributionRuntime.linkDailyActivity(worksheet, distributionFilters);
+    } else {
+      /* Preserve the earlier candidate-only curriculum engine contract while the
+         new CSV distribution runtime is unavailable. Never promote this legacy
+         candidate to a validated indicator or formal assessment mapping. */
+      var legacyEngine = global.PacificEducationAchievementDistributionEngine;
+      var legacyPlan = legacyEngine && typeof legacyEngine.buildDailyIndicatorPlan === "function"
+        ? legacyEngine.buildDailyIndicatorPlan({
+            classId: String(options.classReference || ""),
+            level: level, subjectId: subject, term: distributionTerm, week: week, day: day
+          })
+        : null;
+      var legacyAssignment = legacyPlan && legacyPlan.assignment;
+      if (legacyAssignment && legacyAssignment.classId === String(options.classReference || "")) {
+        var candidate = {
+          indicatorId: legacyAssignment.indicatorId,
+          indicatorText: legacyAssignment.indicatorText,
+          strand: legacyAssignment.strand || "",
+          sourceStatus: legacyAssignment.sourceStatus || "unverified",
+          reviewStatus: "PENDING_TEACHER_REVIEW",
+          mappingStatus: "PENDING_TEACHER_REVIEW",
+          formalAssessmentEligible: false
+        };
+        distributionLink = {
+          indicatorIds: [candidate.indicatorId],
+          indicatorMappingStatus: "PENDING_TEACHER_REVIEW",
+          indicatorAssignment: candidate,
+          assessmentMapping: {
+            indicatorIds: [candidate.indicatorId], evidenceTypes: [],
+            mappingStatus: "PENDING_TEACHER_REVIEW",
+            formalAssessmentEligible: false, serverAuthorizationRequired: true
+          }
+        };
+      } else {
+        distributionLink = {
+          indicatorIds: [],
+          indicatorMappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED",
+          indicatorAssignment: null,
+          assessmentMapping: {
+            indicatorIds: [], evidenceTypes: [],
+            mappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED",
+            formalAssessmentEligible: false, serverAuthorizationRequired: true
+          }
+        };
       }
     }
-    worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
+    worksheet.indicatorIds = distributionLink.indicatorIds || [];
+    worksheet.indicatorMappingStatus = distributionLink.indicatorMappingStatus;
+    worksheet.indicatorAssignment = distributionLink.indicatorAssignment || null;
+    worksheet.assessmentMapping = distributionLink.assessmentMapping;
+    /* Protected curriculum-first gate: no learner-facing daily questions or tasks
+       are released until this exact jurisdiction/level/subject/day slot has a
+       source-verified, educator-validated prescribed concept/indicator. */
+    var curriculumGatePassed = !!worksheet.indicatorAssignment &&
+      worksheet.indicatorAssignment.mappingStatus === "VALIDATED" &&
+      worksheet.indicatorAssignment.serverAuthorized === true &&
+      worksheet.indicatorAssignment.jurisdictionProfileStatus === "APPROVED_WITH_LIMITS" &&
+      !!worksheet.indicatorAssignment.indicatorId &&
+      !!worksheet.indicatorAssignment.indicatorText &&
+      !!worksheet.indicatorAssignment.sourceDocumentTitle &&
+      !!worksheet.indicatorAssignment.issuingAuthority &&
+      !!worksheet.indicatorAssignment.sourceVersion &&
+      !!worksheet.indicatorAssignment.sourceLocation;
+    if (!curriculumGatePassed) {
+      worksheet.questions = [];
+      worksheet.answerKey = [];
+      worksheet.tasks = [];
+      worksheet.dailyLesson.activities = [];
+      worksheet.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
+      worksheet.curriculumGate = {
+        passed: false,
+        serverAuthorizationRequired: true,
+        serverAuthorized: false,
+        jurisdictionProfileStatus: "PENDING_SERVER_REVIEW",
+        reason: "A verified prescribed concept/indicator and educator validation are required before daily activities can be released.",
+        requiredFirst: ["jurisdiction", "level", "subject", "official issuing authority", "prescription title and version", "source page or section", "concept/indicator ID and text", "educator validation"],
+        formalAssessmentEligible: false
+      };
+      worksheet.curriculumNote = "Daily activity release is locked until the applicable mandated educational prescription or authorised institutional curriculum is verified and the concept/indicator is approved.";
+    }
+    if (curriculumGatePassed) {
+      worksheet.curriculumGate = {passed:true,sourceStatus:worksheet.indicatorAssignment.sourceStatus,reviewStatus:worksheet.indicatorAssignment.reviewStatus,serverAuthorized:true,jurisdictionProfileStatus:"APPROVED_WITH_LIMITS"};
+      worksheet.learnerReleaseEligible = true;
+    }
+    worksheet.questions = worksheet.questions.map(function (question) {
+      return Object.assign({}, question, {
+        indicatorIds: worksheet.indicatorIds.slice(),
+        indicatorMappingStatus: worksheet.indicatorMappingStatus
+      });
+    });
+    if (worksheet.indicatorAssignment) {
+      var mapped = worksheet.indicatorAssignment;
+      worksheet.dailyLesson.curriculumAlignment.candidateIndicator = {
+        id: mapped.indicatorId,
+        text: mapped.indicatorText,
+        strand: mapped.strand || "",
+        sourceStatus: mapped.sourceStatus,
+        reviewStatus: mapped.reviewStatus,
+        status: mapped.mappingStatus,
+        productionEligible: false
+      };
+      worksheet.dailyLesson.curriculumAlignment.achievementIndicator = mapped.mappingStatus === "VALIDATED"
+        ? mapped.indicatorText : null;
+      worksheet.dailyLesson.curriculumAlignment.verificationStatus = mapped.mappingStatus;
+      worksheet.dailyLesson.curriculumAlignment.rule += " The exact class/subject/term/week/day distribution slot is linked; formal assessment still requires trusted server-side authorization.";
+    } else {
+      worksheet.dailyLesson.curriculumAlignment.rule += " No indicator has been imported for this exact class/subject/term/week/day slot. Do not infer or invent one.";
+    }
+    worksheet.status = curriculumGatePassed ? "DRAFT_READY_FOR_TEACHER_REVIEW" : "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
     var candidateSource = null;
     if (level === "Class 1" && block === "T1" && week === 1) {
       candidateSource = {
@@ -620,7 +737,7 @@
       worksheet.sourceNote = "Original PacEdu English practice; candidate reference: Year 1 English — Language, Literacy and Communication, Unit 1 (resource p. 5), S/s and A/a (pp. 6–7). Copy located on a third-party host; compare with the current authorized school/FEMIS/Ministry copy. Official outcome mapping remains pending.";
     }
     worksheet.curriculumSchedule = {
-      country: "Fiji",
+      country: String(options.jurisdiction || options.country || "Fiji"),
       term: selected.label,
       termId: block,
       week: week,
@@ -647,7 +764,47 @@
         worksheet.practiceExamPaper = global.PacEduPracticeExamPaper.getPaper({level:level,subject:subject,term:block,ability:ability});
       }
     }
+    if (!curriculumGatePassed) {
+      /* Retain schedule/provenance metadata for teachers, but release no learner work. */
+      worksheet.learnerReleaseEligible = false;
+      worksheet.questions = [];
+      worksheet.answerKey = [];
+      worksheet.tasks = [];
+      worksheet.readingText = "";
+      worksheet.topic = "Curriculum source pending";
+      if (worksheet.dailyLesson) {
+        worksheet.dailyLesson.activities = [];
+        worksheet.dailyLesson.steps = [];
+        worksheet.dailyLesson.learningConcept = "";
+        worksheet.dailyLesson.learningIntention = "";
+        worksheet.dailyLesson.classLevelObjective = "";
+        worksheet.dailyLesson.workedExample = "";
+        if (worksheet.dailyLesson.learnerText) worksheet.dailyLesson.learnerText.passage = "";
+        if (worksheet.dailyLesson.audioNarration) worksheet.dailyLesson.audioNarration.transcript = "";
+      }
+      worksheet.termLearningPlan = null;
+      worksheet.revisionPaper = null;
+      worksheet.practiceExamPaper = null;
+    }
     return worksheet;
+  }
+  function getBlockedWorksheet(level, subject, day, ability, options) {
+    var real = make(level, subject, day, ability, options);
+    real.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
+    real.curriculumGate = {
+      passed: false,
+      reason: "A verified prescribed concept/indicator and trusted jurisdiction approval are required before learner release.",
+      serverAuthorizationRequired: true,
+      serverAuthorized: false,
+      jurisdictionProfileStatus: "PENDING_SERVER_REVIEW"
+    };
+    real.questions = [];
+    real.answerKey = [];
+    real.tasks = [];
+    real.readingText = "";
+    real.topic = "Curriculum source pending";
+    real.learnerReleaseEligible = false;
+    return real;
   }
   function install() {
     var lib=global.PacificEducationEnglishWorksheetLibrary;
@@ -655,10 +812,8 @@
     var original=lib.getWorksheet;
     var enhanced={};
     Object.keys(lib).forEach(function(k){enhanced[k]=lib[k];});
-    enhanced.getWorksheet=function(level,ability,day,subject) {
-      if(Number(day)===1) return original(level,ability,day,subject);
-      var real=make(level,subject||"English",day,ability||"developing");
-      return real;
+    enhanced.getWorksheet=function(level,ability,day,subject,options) {
+      return getBlockedWorksheet(level,subject||"English",day,ability||"developing",options);
     };
     enhanced.getDailyContentWorksheet=make;
     enhanced.dailyContentEnhanced=true;
@@ -672,7 +827,7 @@
   global.PacEduDailyWorksheetContent=Object.freeze({
     levels:levels.slice(),
     subjects:Object.keys(packs),
-    getWorksheet:make,
+    getWorksheet:getBlockedWorksheet,
     getCurriculumWorksheet:getCurriculumWorksheet,
     hasAnswerKey:function(level,subject,day,ability){var w=make(level,subject,day,ability);return w.questions.length===4&&w.answerKey.length===4&&w.answerKey.every(function(a){return !!a.answer&&!!a.explanation;});}
   });

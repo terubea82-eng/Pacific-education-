@@ -72,6 +72,11 @@
       term: lesson && lesson.term || localStorage.getItem("pacificEducationTerm") || "Term 1",
       dayNumber: Number(day) || 1,
       activityTitle: source.activityTitle || lesson && lesson.title || "Daily Activity",
+      activityId: source.activityId || lesson && (lesson.activityId || lesson.id) || "daily-activity-" + (Number(day) || 1),
+      questionId: source.questionId || source.id || "question-1",
+      sequenceId: source.sequenceId || lesson && lesson.questionSequenceId || null,
+      sequencePosition: Number.isInteger(Number(source.sequencePosition)) ? Number(source.sequencePosition) : null,
+      sequenceVersion: Number.isInteger(Number(source.sequenceVersion)) ? Number(source.sequenceVersion) : (Number.isInteger(Number(lesson && lesson.questionSequenceVersion)) ? Number(lesson.questionSequenceVersion) : null),
       questionText: source.questionText || source.learnerTask || source.description || "Complete today's learning activity.",
       audioText: source.audioText || source.questionText || source.learnerTask || "",
       answerKey: source.answerKey,
@@ -88,6 +93,37 @@
       stageType: lesson && lesson.stageType || null,
       responseMode: "text-or-audio"
     };
+  }
+
+  function draftStorageKey(ctx, type) {
+    if (!ctx || !ctx.studentId || !ctx.classId || ctx.identityStatus !== "roster-matched-prototype") return "";
+    return "paceduLearnerDraftV1:" + encodeURIComponent([
+      ctx.studentId, ctx.classId, ctx.level, ctx.subjectId, ctx.term,
+      ctx.dayNumber, ctx.activityId, ctx.questionId, type
+    ].join("|"));
+  }
+
+  function readDraft(ctx, type) {
+    var key = draftStorageKey(ctx, type);
+    if (!key) return null;
+    try {
+      var draft = JSON.parse(localStorage.getItem(key) || "null");
+      return draft && draft.activityId === ctx.activityId && draft.questionId === ctx.questionId && draft.type === type ? draft : null;
+    } catch (e) { return null; }
+  }
+
+  function writeDraft(ctx, type, draft) {
+    var key = draftStorageKey(ctx, type);
+    if (!key) return false;
+    try { localStorage.setItem(key, JSON.stringify(draft)); return true; }
+    catch (e) { return false; }
+  }
+
+  function clearDraft(ctx, type) {
+    var key = draftStorageKey(ctx, type);
+    if (!key) return false;
+    try { localStorage.removeItem(key); return true; }
+    catch (e) { return false; }
   }
 
   function assessmentPolicy(type, response, ctx, verifiedVoice) {
@@ -115,7 +151,11 @@
     try { items = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
     items.push({
       type: type,
-      activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
+      activityId: ctx.activityId || ("daily-activity-" + type + "-day-" + ctx.dayNumber),
+      questionId: ctx.questionId || null,
+      questionSequenceId: ctx.sequenceId || null,
+      questionSequencePosition: ctx.sequencePosition,
+      questionSequenceVersion: ctx.sequenceVersion,
       studentId: ctx.studentId || null,
       identityStatus: ctx.identityStatus || "awaiting-verified-learner-and-class",
       day: ctx.dayNumber,
@@ -130,7 +170,11 @@
       reviewStatus: outcome.status,
       date: new Date().toISOString()
     });
-    localStorage.setItem(key, JSON.stringify(items.slice(-500)));
+    try {
+      localStorage.setItem(key, JSON.stringify(items.slice(-500)));
+    } catch (storageError) {
+      return false;
+    }
 
     var recorder = window.PacificEducationDailyProgressRecorder;
     if (recorder && typeof recorder.record === "function") {
@@ -140,7 +184,11 @@
           evidenceType: outcome.evidenceType,
           score: outcome.score,
           passingScore: 60,
-          activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
+          activityId: ctx.activityId || ("daily-activity-" + type + "-day-" + ctx.dayNumber),
+          questionId: ctx.questionId || null,
+          questionSequenceId: ctx.sequenceId || null,
+          questionSequencePosition: ctx.sequencePosition,
+          questionSequenceVersion: ctx.sequenceVersion,
           classId: ctx.classId,
           assessmentId: "daily-activity-" + type,
           level: ctx.level,
@@ -172,8 +220,12 @@
         status: "pending-special-education-review",
         submittedAt: new Date().toISOString()
       });
-      localStorage.setItem(homeKey, JSON.stringify(home.slice(-100)));
+      /* The primary response record above is authoritative for this pilot.
+         A failure to mirror audio into the optional home-submissions list must
+         not turn an already-saved answer into a failed submission. */
+      try { localStorage.setItem(homeKey, JSON.stringify(home.slice(-100))); } catch (homeStorageError) {}
     }
+    return true;
   }
 
   function resetTemporaryAnswerState() {
@@ -187,7 +239,25 @@
     var verifiedVoice = !!window.__pacificEducationVerifiedVoiceAttempt;
     readAudio(function(audio) {
       if (verifiedVoice) { try { window.__pacificEducationVerifiedVoiceAttempt = false; } catch (e) {} }
-      save(type, response, audio, ctx, verifiedVoice);
+      /* Fail closed: this pilot has no server-verifiable, learner-specific special-education
+         voice authorisation source. Never accept microphone or uploaded audio until one exists. */
+      if (verifiedVoice || audio) {
+        var voicePanel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
+        var voiceStatus = document.getElementById("peActivityDraftStatus");
+        if (voiceStatus) voiceStatus.textContent = "Voice answer not submitted. A teacher-authorisation service must verify permission for this learner first. Your text answer and Listen control remain available.";
+        else if (voicePanel) voicePanel.setAttribute("aria-label", "Voice answer locked pending teacher authorisation");
+        return;
+      }
+      var saved = save(type, response, audio, ctx, verifiedVoice);
+      if (!saved) {
+        var savePanel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
+        if (savePanel) {
+          var saveStatus = document.getElementById("peActivityDraftStatus");
+          if (saveStatus) saveStatus.textContent = "PacEdu could not confirm that your answer was saved. Your unfinished answer has been kept on this device. Check your device storage and try Submit Answer again.";
+        }
+        return;
+      }
+      clearDraft(ctx, type);
       resetTemporaryAnswerState();
       var status = assessmentPolicy(type, response, ctx, verifiedVoice).status;
       var panel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
@@ -202,7 +272,11 @@
         var continueButton = document.getElementById("peContinueLearning");
         if (continueButton) continueButton.addEventListener("click", function() {
           resetTemporaryAnswerState();
-          if (typeof window.startDailyLesson === "function") window.startDailyLesson();
+          if (typeof window.PaceduDailyQuestionSequenceContinue === "function") {
+            var continueSequence=window.PaceduDailyQuestionSequenceContinue;
+            window.PaceduDailyQuestionSequenceContinue=null;
+            continueSequence();
+          } else if (typeof window.startDailyLesson === "function") window.startDailyLesson();
         });
         panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
       } else if (typeof window.showLesson === "function") {
@@ -221,8 +295,8 @@
     var prompt = active.context.questionText;
     var audio = active.context.audioText || prompt;
     var title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + LABELS[type];
-    var audioButton = '<button type="button" id="peActivityListen" aria-label="Listen to the activity question">🔊 Listen to question</button><button type="button" id="peActivityRecord" aria-label="Record your voice answer">🎙️ Record voice answer</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
-    var audioFile = '<label> 🎤 Attach an audio recording (optional) <input id="peActivityAudio" type="file" accept="audio/*"></label>';
+    var audioButton = '<button type="button" id="peActivityListen" aria-label="Listen to the activity question">🔊 Listen to question</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
+    var audioFile = '<p class="pe-voice-answer-lock" role="status">Voice answers are temporarily unavailable until a teacher-authorisation service can verify permission for this learner. You can still listen, type an answer, or ask your teacher to record a paper answer.</p>';
 
     var curriculumInfo = ""; if (active.context.achievementIndicator || active.context.concept || active.context.strand || active.context.subStrand) { curriculumInfo += '<div class="pe-daily-curriculum-context" aria-label="Daily curriculum alignment">'; if (active.context.achievementIndicator) curriculumInfo += '<p><strong>Achievement Indicator:</strong> ' + escape(active.context.achievementIndicator) + '</p>'; if (active.context.strand) curriculumInfo += '<p><strong>Strand:</strong> ' + escape(active.context.strand) + '</p>'; if (active.context.subStrand) curriculumInfo += '<p><strong>Sub-strand / Concept:</strong> ' + escape(active.context.subStrand) + '</p>'; if (active.context.activitySequence) curriculumInfo += '<p><strong>Activity Progression:</strong> Activity ' + escape(String(active.context.activitySequence)) + '</p>'; curriculumInfo += '</div>'; }
     var body = '<div class="activity">' + curriculumInfo + '<p>' + escape(prompt) + '</p>' + audioButton + audioFile;
@@ -276,10 +350,9 @@
       body += '<p>' + instruction + '</p><textarea id="peWrittenAnswer" rows="' + rows + '" maxlength="' + (type === "short_answer" ? 500 : 2000) + '" placeholder="' + (type === "short_answer" ? "Type your short answer here." : "Type your long answer here. Include an explanation or example.") + '"></textarea><button type="button" id="peActivitySubmit">Submit Answer</button>';
     }
 
+    body += '<p id="peActivityDraftStatus" role="status" aria-live="polite"></p>';
     body += '<div class="pe-response-mode" style="margin-top:14px;padding:12px;border:2px solid currentColor;">' +
-      '<p><strong>Response options:</strong> Answer by text or audio. Audio may be used for any question type during the pilot.</p>' +
-      '<button type="button" id="peActivitySubmitVoice">🎙️ Submit Voice Answer</button>' +
-      '<span id="peActivityVoiceSubmitStatus" aria-live="polite"></span>' +
+      '<p><strong>Response options:</strong> Type your answer here, or ask your teacher to enter your paper answer. Listening to the question remains available to everyone.</p>' +
       '</div>';
     body += '</div>';
     var activityPanel = active.context.renderTargetId ? document.getElementById(active.context.renderTargetId) : document.getElementById("dailyLessonActivity");
@@ -389,6 +462,7 @@
         if (choiceSubmit) choiceSubmit.disabled = !selectedChoice;
         var selection = document.getElementById("peMultipleChoiceSelection");
         if (selection) selection.textContent = "Selected: " + selectedChoice + ". Tap Submit Selected Answer to record it.";
+        persistCurrentDraft();
       });
     }
     if (choiceSubmit) {
@@ -441,6 +515,7 @@
       yes.style.outline = "3px solid currentColor";
       no.style.outline = "";
       updateTrueFalseSelection();
+      persistCurrentDraft();
     });
     if (no) no.addEventListener("click", function() {
       tfSelected = "False";
@@ -448,8 +523,62 @@
       no.style.outline = "3px solid currentColor";
       yes.style.outline = "";
       updateTrueFalseSelection();
+      persistCurrentDraft();
     });
     updateTrueFalseSelection();
+
+    var draftStatus = document.getElementById("peActivityDraftStatus");
+    var savedDraft = readDraft(active.context, type);
+    function persistCurrentDraft() {
+      var draft = {
+        type: type,
+        activityId: active.context.activityId,
+        questionId: active.context.questionId,
+        questionText: active.context.questionText,
+        updatedAt: new Date().toISOString(),
+        response: "",
+        matchingAnswers: [],
+        selectedChoice: selectedChoice || "",
+        trueFalse: tfSelected || ""
+      };
+      var written = document.getElementById("peWrittenAnswer");
+      if (written) draft.response = String(written.value || "");
+      var matchFields = document.querySelectorAll(".peMatchAnswer");
+      for (var di = 0; di < matchFields.length; di += 1) draft.matchingAnswers.push(String(matchFields[di].value || ""));
+      var hasWork = !!draft.response.trim() || draft.matchingAnswers.some(function(value) { return !!String(value || "").trim(); }) || !!draft.selectedChoice || !!draft.trueFalse;
+      if (!hasWork) return;
+      var stored = writeDraft(active.context, type, draft);
+      if (draftStatus) draftStatus.textContent = stored ? "Unfinished answer saved on this device. You can return to this activity on this device." : "This answer draft could not be saved. Please keep this page open and submit your work before leaving.";
+    }
+
+    if (savedDraft) {
+      var restoreWritten = document.getElementById("peWrittenAnswer");
+      if (restoreWritten) restoreWritten.value = String(savedDraft.response || "");
+      var restoreMatches = document.querySelectorAll(".peMatchAnswer");
+      for (var ri = 0; ri < restoreMatches.length; ri += 1) restoreMatches[ri].value = String((savedDraft.matchingAnswers || [])[ri] || "");
+      selectedChoice = String(savedDraft.selectedChoice || "");
+      for (var rci = 0; rci < choiceButtons.length; rci += 1) {
+        var isSelected = !!selectedChoice && choiceButtons[rci].textContent === selectedChoice;
+        choiceButtons[rci].setAttribute("aria-pressed", isSelected ? "true" : "false");
+        choiceButtons[rci].classList.toggle("selected", isSelected);
+      }
+      if (choiceSubmit) choiceSubmit.disabled = !selectedChoice;
+      tfSelected = String(savedDraft.trueFalse || "");
+      if (yes) { yes.setAttribute("aria-pressed", tfSelected === "True" ? "true" : "false"); yes.style.outline = tfSelected === "True" ? "3px solid currentColor" : ""; }
+      if (no) { no.setAttribute("aria-pressed", tfSelected === "False" ? "true" : "false"); no.style.outline = tfSelected === "False" ? "3px solid currentColor" : ""; }
+      updateTrueFalseSelection();
+      if (draftStatus) draftStatus.textContent = "Your unfinished answer has been restored from this device. Continue where you stopped.";
+    } else if (draftStorageKey(active.context, type)) {
+      if (draftStatus) draftStatus.textContent = "Your unfinished text and selected answers will be saved on this device as you work.";
+    } else if (draftStatus) {
+      draftStatus.textContent = "Automatic draft recovery is unavailable until this learner has a verified class identity. Submit your answer before leaving this page.";
+    }
+
+    var draftInputs = document.querySelectorAll("#peWrittenAnswer, .peMatchAnswer");
+    for (var dpi = 0; dpi < draftInputs.length; dpi += 1) {
+      draftInputs[dpi].addEventListener("input", persistCurrentDraft);
+      draftInputs[dpi].addEventListener("change", persistCurrentDraft);
+    }
     if (tfSubmit && (yes || no)) tfSubmit.addEventListener("click", function() {
       if (!tfSelected) return;
       tfSubmit.disabled = true;
@@ -477,6 +606,6 @@
       complete(type, input.value || "");
     },
     assessmentPolicy: assessmentPolicy,
-    currentContext: function() { return Object.assign({}, active.context || {}, {type: active.type, dayNumber: active.day, activityId: "daily-activity-" + String(active.type || "activity") + "-day-" + String(active.day || 1)}); }
+    currentContext: function() { return Object.assign({}, active.context || {}, {type: active.type, dayNumber: active.day, activityId: (active.context && active.context.activityId) || ("daily-activity-" + String(active.type || "activity") + "-day-" + String(active.day || 1))}); }
   };
 })(window, document);

@@ -22,7 +22,9 @@
     var grid=document.getElementById("paceduTeacherSubjectGrid");
     var list=document.getElementById("paceduTeacherClassList");
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
+    var answerPanel=document.getElementById("pacificEducationTeacherQuickAnswer");
     if(!grid||!list)return;
+    if(answerPanel){answerPanel.hidden=true;answerPanel.setAttribute("aria-hidden","true");}
     grid.querySelectorAll("[data-pacedu-teacher-subject]").forEach(function(b){
       var active=b.getAttribute("data-pacedu-teacher-subject")===subject;
       /* Restore the stable box name before a class-specific display label is applied. */
@@ -111,6 +113,18 @@
           window.localStorage.setItem("pacificEducationClassLevel",item.level);
           if(item.id)window.localStorage.setItem("pacificEducationClassId",item.id);
         }catch(e){}
+        /* Keep manual answer entry inside the selected subject/class only.
+           The teacher form stays hidden until a valid subject and class are selected. */
+        if(answerPanel){
+          var answerClass=document.getElementById("peQuickAnswerClass");
+          var answerSubject=document.getElementById("peQuickAnswerSubject");
+          var answerTerm=document.getElementById("peQuickAnswerTerm");
+          var answerDay=document.getElementById("peQuickAnswerDay");
+          if(answerClass)answerClass.value=item.id||item.level;
+          if(answerSubject)answerSubject.value=subject;
+          if(answerTerm)answerTerm.value=window.localStorage.getItem("pacificEducationTerm")||"Term 1";
+          if(answerDay)answerDay.value=window.localStorage.getItem("currentDayNumber")||"1";
+        }
         var planningSubject=document.getElementById("paceduTeacherPlanningSubject");
         if(planningSubject)planningSubject.value=subject;
         var planningClass=document.getElementById("paceduTeacherPlanningClass");
@@ -149,6 +163,11 @@
           dailyHeading.id="paceduTeacherSelectedDailyHeading";
           selectedCard.appendChild(dailyHeading);
           selectedCard.appendChild(dailySection);
+        }
+        if(answerPanel&&selectedCard){
+          selectedCard.appendChild(answerPanel);
+          answerPanel.hidden=false;
+          answerPanel.removeAttribute("aria-hidden");
         }
         if(panel){
           panel.hidden=false;
@@ -230,21 +249,31 @@
   function renderDailyLearningOnly(host,grid,list,planPanel){
     if(!host||!grid||!list)return;
     var shell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
+    /* Capture the manual-answer panel before replacing the old dashboard
+       contents. Moving it first prevents the simple shell from deleting it. */
+    var answerPanel=document.getElementById("pacificEducationTeacherQuickAnswer");
     if(!shell){
       shell=node("section");
       shell.id="paceduTeacherDailyLearningOnlyShell";
       shell.setAttribute("data-pacedu-step-two-clean","true");
       shell.setAttribute("aria-label","Student daily activities and matching workplans");
       shell.style.cssText="margin:12px 0;padding:14px;border:1px solid #c8d7e2;border-radius:12px;box-sizing:border-box;";
-      var heading=node("h2","My Teaching Workspace — Subject Boxes, Daily Activities & Teacher Resources");
+      var heading=node("h2","Choose a Subject");
       heading.style.cssText="margin-top:0;";
       shell.appendChild(heading);
-      shell.appendChild(node("h2","My Teaching Subject Boxes"));
       shell.appendChild(grid);
+      if(answerPanel)shell.appendChild(answerPanel);
       host.textContent="";
       host.appendChild(shell);
     }else if(!shell.contains(grid)){
       shell.appendChild(grid);
+    }
+    /* Keep manual answer entry inside the subject workspace, hidden until a
+       valid class is selected. */
+    if(answerPanel){
+      if(!shell.contains(answerPanel))shell.appendChild(answerPanel);
+      answerPanel.hidden=true;
+      answerPanel.setAttribute("aria-hidden","true");
     }
     /* Keep the linked-plan/resource panel inside the subject boxes even when
        a dashboard renderer has replaced the grid and the original panel. */

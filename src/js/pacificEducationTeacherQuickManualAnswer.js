@@ -106,6 +106,15 @@
     dayField.control.step = "1";
     var question = field("Question or task", "peQuickAnswerQuestion", "", true, true);
     var answer = field("Learner's answer (teacher-entered)", "peQuickAnswerResponse", "", true, true);
+    /* Class, subject, term and day are inherited from the selected subject box.
+       Keep those context fields in the saved record, but do not burden the teacher
+       with entering the same information again. */
+    [cls, subj, termField, dayField].forEach(function (item) {
+      item.control.required = false;
+      item.control.type = "hidden";
+      item.wrapper.hidden = true;
+      item.wrapper.setAttribute("aria-hidden", "true");
+    });
     [learner, cls, subj, termField, dayField, question, answer].forEach(function (item) {
       panel.appendChild(item.wrapper);
     });
@@ -163,6 +172,14 @@
       if (!Array.isArray(responses)) responses = [];
       var now = new Date().toISOString();
       var assignment = resolveAssignment(classValue, learnerName);
+      var currentClass = null;
+      try {
+        var currentRoster = window.PacificEducationTeacherClassRosterContext;
+        currentClass = currentRoster && typeof currentRoster.getClass === "function" ?
+          currentRoster.getClass(classValue) : null;
+      } catch (_) {}
+      var currentClassLevel = text(currentClass && (currentClass.level || currentClass.className)) ||
+        text(window.localStorage.getItem("pacificEducationClassLevel")) || classValue;
       responses.push({
         responseId: "teacher-manual-" + Date.now(),
         type: "short_answer",
@@ -175,7 +192,7 @@
         teacherEnteredAt: now,
         learnerNameOrReference: learnerName,
         classId: classValue,
-        classLevel: classLevel || classValue,
+        classLevel: currentClassLevel,
         assignmentStatus: assignment.assignmentStatus,
         verifiedClassId: assignment.verifiedClassId,
         verifiedStudentRef: assignment.verifiedStudentRef,
@@ -183,7 +200,7 @@
         term: termValue,
         curriculumContext: {
           classId: classValue,
-          level: classLevel || classValue,
+          level: currentClassLevel,
           subjectId: subjectValue,
           term: termValue,
           dayNumber: dayValue,

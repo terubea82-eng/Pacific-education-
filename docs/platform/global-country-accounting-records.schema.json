@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pacific-education.example/schemas/global-country-accounting-records.schema.json",
+  "title": "PacEdu Global Country Accounting Records (Design Only)",
+  "description": "A proposed data-contract for future implementation. This schema does not implement authentication, authorization, payment processing, legal compliance, or database security. Do not use it as proof of Owner-only access.",
+  "oneOf": [
+    { "$ref": "#/$defs/countryUserCountSnapshot" },
+    { "$ref": "#/$defs/countryAgreement" },
+    { "$ref": "#/$defs/invoiceSnapshot" },
+    { "$ref": "#/$defs/paymentEvent" }
+  ],
+  "$defs": {
+    "countryCode": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code. Validate jurisdiction-specific subdivisions separately."
+    },
+    "currencyCode": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217 currency code."
+    },
+    "nonNegativeInteger": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amountMinorUnits", "currency"],
+      "properties": {
+        "amountMinorUnits": { "type": "integer", "minimum": 0 },
+        "currency": { "$ref": "#/$defs/currencyCode" }
+      }
+    },
+    "countryUserCountSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recordType", "snapshotId", "registrationCountry", "reportingWindow", "generatedAt", "metricDefinitions", "counts"],
+      "properties": {
+        "recordType": { "const": "countryUserCountSnapshot" },
+        "snapshotId": { "type": "string", "minLength": 1 },
+        "registrationCountry": { "$ref": "#/$defs/countryCode" },
+        "reportingWindow": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "string", "format": "date-time" },
+            "to": { "type": "string", "format": "date-time" }
+          }
+        },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "metricDefinitions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["activeWindowDays", "deduplicationPolicyVersion"],
+          "properties": {
+            "activeWindowDays": { "type": "integer", "minimum": 1 },
+            "deduplicationPolicyVersion": { "type": "string", "minLength": 1 }
+          }
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["uniqueRegistered", "verified", "active", "students", "individualLearners", "teachers", "parents", "educationOfficers", "businessAccounts", "suspended", "closed"],
+          "properties": {
+            "uniqueRegistered": { "$ref": "#/$defs/nonNegativeInteger" },
+            "verified": { "$ref": "#/$defs/nonNegativeInteger" },
+            "active": { "$ref": "#/$defs/nonNegativeInteger" },
+            "students": { "$ref": "#/$defs/nonNegativeInteger" },
+            "individualLearners": { "$ref": "#/$defs/nonNegativeInteger" },
+            "teachers": { "$ref": "#/$defs/nonNegativeInteger" },
+            "parents": { "$ref": "#/$defs/nonNegativeInteger" },
+            "educationOfficers": { "$ref": "#/$defs/nonNegativeInteger" },
+            "businessAccounts": { "$ref": "#/$defs/nonNegativeInteger" },
+            "suspended": { "$ref": "#/$defs/nonNegativeInteger" },
+            "closed": { "$ref": "#/$defs/nonNegativeInteger" }
+          }
+        },
+        "qualityStatus": { "enum": ["verified", "provisional", "needs_reconciliation"] }
+      }
+    },
+    "countryAgreement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recordType", "agreementId", "contractingEntity", "billingCountry", "status", "coveredCohortDefinition", "billableStudentDefinition", "rate", "billingPeriod", "effectiveFrom", "approvedByOwner"],
+      "properties": {
+        "recordType": { "const": "countryAgreement" },
+        "agreementId": { "type": "string", "minLength": 1 },
+        "contractingEntity": { "type": "string", "minLength": 1 },
+        "billingCountry": { "$ref": "#/$defs/countryCode" },
+        "status": { "enum": ["draft", "pending_approval", "active", "expired", "suspended", "terminated"] },
+        "coveredCohortDefinition": { "type": "string", "minLength": 1 },
+        "billableStudentDefinition": { "enum": ["registered", "verified", "enrolled", "active", "explicit_roster"] },
+        "rate": { "$ref": "#/$defs/money" },
+        "billingPeriod": { "enum": ["monthly", "termly", "quarterly", "annually", "custom"] },
+        "customBillingPeriodDescription": { "type": "string" },
+        "effectiveFrom": { "type": "string", "format": "date" },
+        "effectiveTo": { "type": ["string", "null"], "format": "date" },
+        "exchangeRateMethod": { "type": "string" },
+        "approvedByOwner": { "type": "boolean" },
+        "agreementDocumentReference": { "type": "string" }
+      }
+    },
+    "invoiceSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recordType", "invoiceId", "agreementId", "periodStart", "periodEnd", "snapshotAt", "billableStudentCount", "rate", "subtotal", "adjustments", "totalDue", "amountReceived", "outstanding", "status"],
+      "properties": {
+        "recordType": { "const": "invoiceSnapshot" },
+        "invoiceId": { "type": "string", "minLength": 1 },
+        "agreementId": { "type": "string", "minLength": 1 },
+        "periodStart": { "type": "string", "format": "date" },
+        "periodEnd": { "type": "string", "format": "date" },
+        "snapshotAt": { "type": "string", "format": "date-time" },
+        "billableStudentCount": { "$ref": "#/$defs/nonNegativeInteger" },
+        "rate": { "$ref": "#/$defs/money" },
+        "subtotal": { "$ref": "#/$defs/money" },
+        "adjustments": { "type": "array", "items": { "$ref": "#/$defs/money" } },
+        "totalDue": { "$ref": "#/$defs/money" },
+        "amountReceived": { "$ref": "#/$defs/money" },
+        "outstanding": { "$ref": "#/$defs/money" },
+        "status": { "enum": ["draft", "issued", "partially_paid", "paid", "overdue", "disputed", "void", "refunded"] },
+        "reconciliationReference": { "type": "string" }
+      }
+    },
+    "paymentEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recordType", "paymentEventId", "invoiceId", "eventType", "amount", "occurredAt", "verificationStatus", "sourceReference"],
+      "properties": {
+        "recordType": { "const": "paymentEvent" },
+        "paymentEventId": { "type": "string", "minLength": 1 },
+        "invoiceId": { "type": "string", "minLength": 1 },
+        "eventType": { "enum": ["payment_received", "payment_failed", "refund_issued", "chargeback", "manual_adjustment"] },
+        "amount": { "$ref": "#/$defs/money" },
+        "occurredAt": { "type": "string", "format": "date-time" },
+        "verificationStatus": { "enum": ["unverified", "provider_verified", "finance_authorised", "rejected"] },
+        "sourceReference": { "type": "string", "minLength": 1 },
+        "authorisedBy": { "type": "string" },
+        "auditReason": { "type": "string" }
+      }
+    }
+  }
+}
