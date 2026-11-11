@@ -84,3 +84,10 @@ test("a failed primary response save keeps the unfinished draft for retry", () =
   assert.ok(source.includes("if (!saved) {"));
   assert.ok(source.includes("Your unfinished answer has been kept on this device"));
 });
+
+test("optional audio mirror storage failure does not invalidate the already-saved primary answer", () => {
+  const audioMirrorWrite = source.indexOf("try { localStorage.setItem(homeKey, JSON.stringify(home.slice(-100))); } catch (homeStorageError) {}");
+  const primaryWrite = source.indexOf("localStorage.setItem(key, JSON.stringify(items.slice(-500)));");
+  assert.ok(primaryWrite >= 0 && audioMirrorWrite > primaryWrite);
+  assert.ok(source.includes("A failure to mirror audio into the optional home-submissions list must"));
+});
