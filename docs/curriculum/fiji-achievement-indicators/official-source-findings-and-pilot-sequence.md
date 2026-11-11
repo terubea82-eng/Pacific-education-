@@ -468,3 +468,37 @@ This search pass located further official EQAP-hosted SPFSC documents. These are
 **Copyright:** EQAP/SPC PDFs commonly state that all rights are reserved and no part may be reproduced without prior permission of the EQAP Director. PacEdu should seek written permission for digital/commercial reuse. Until then, store source metadata, page references and concise paraphrases; do not copy full prescription text, tables or illustrations into the product.
 
 **Coverage boundary:** This is only a Form Seven candidate-source inventory. It does not establish complete Form Seven subject coverage, does not fill Years 1–12 or ECE, and does not approve a 115-day distribution. All candidate sources remain CURRENT_STATUS_TO_CONFIRM until formally checked.
+
+## 14. Owner-approved prescription selection rule for daily activities (12 November 2026)
+
+**Decision:** Daily activities must be built from the newest applicable Fiji educational prescription that is officially issued and confirmed as effective for the relevant level, subject and school year. If no newer effective prescription can be obtained or verified, PacEdu may use the latest reliable older prescription as an interim teaching source, revised into age-appropriate daily activities and clearly labelled with its original edition and interim status.
+
+### Source priority
+
+1. **Current official Fiji prescription:** use the newest version issued or formally adopted by the Fiji Ministry of Education for that exact level and subject.
+2. **Current officially adopted EQAP/SPFSC prescription or syllabus:** for Form Seven/SPFSC subjects, use the newest version confirmed as adopted and effective in Fiji. A newer EQAP publication is not automatically proof of Fiji adoption.
+3. **Latest reliable older prescription:** where the current document is unavailable or its status cannot yet be confirmed, use the latest verifiable earlier prescription as an interim basis. Record the gap and request confirmation/copy from the Ministry or EQAP.
+4. **No suitable prescription located:** do not invent or silently substitute concepts. Mark the subject/level SOURCE NOT YET LOCATED and prepare no activity that claims official prescription alignment until an authorised source is obtained.
+
+### How older prescriptions may be revised for daily teaching
+
+- Preserve the source's prescribed concepts, learning outcomes, progression and prerequisite knowledge; do not replace them with unrelated or invented concepts.
+- Unpack each concept into clear knowledge, skills and attitudes, then write observable learner indicators linked to the source page/section/outcome code.
+- Modernise examples, local Fiji contexts, accessible formats, question wording, activity methods and assistive response options without changing the prescribed learning expectation.
+- Sequence activities from prerequisite understanding to increasing complexity and practical application.
+- Label each record with its source edition and INTERIM_OLDER_PRESCRIPTION_REVISED; never label it as the newest/current prescription unless officially confirmed.
+- Keep newer and older editions as separate records. Where they differ, use the confirmed effective edition; if effective status is unresolved, keep the mapping PENDING_TEACHER_REVIEW and record the discrepancy.
+- Apply the same approved concept/indicator to Copper, Bronze, Silver and Gold activities. Scaffold the support and challenge, not the curriculum objective.
+- Only after the concept inventory and progression have been checked should indicators be allocated to the 45 + 45 + 25 instructional days.
+
+### Required status values
+
+- CURRENT_FIJI_PRESCRIPTION_VERIFIED — newest applicable version and Fiji effective status confirmed.
+- NEWER_VERSION_STATUS_UNCONFIRMED — a newer candidate exists, but formal Fiji adoption/effective status is not yet confirmed.
+- INTERIM_OLDER_PRESCRIPTION_REVISED — latest reliable older version used to prepare activities while confirmation or access to a newer version is pending.
+- SOURCE NOT YET LOCATED — no reliable applicable prescription found.
+- PENDING_TEACHER_REVIEW — concept unpacking, indicator, sequence or daily allocation still needs qualified Fiji educator validation.
+
+**Pilot safeguard:** Interim older-source activities may be prepared for teacher review and controlled pilot use, but must display their source edition and interim status to teachers. They must not be represented to schools, parents or learners as confirmed alignment to a newer prescription. Formal curriculum-alignment claims and formal assessment eligibility remain disabled until source status and teacher approval are recorded.
+
+**Owner instruction:** Apply this rule across all PacEdu subjects and levels. Prioritise locating and extracting the newest effective prescriptions first; where that cannot be verified in time, continue building useful daily activities from the latest reliable older prescription, revised as described above. This is the approved source-selection approach for the staging curriculum workflow; it does not authorise merging the pull request or deploying changes to production.
