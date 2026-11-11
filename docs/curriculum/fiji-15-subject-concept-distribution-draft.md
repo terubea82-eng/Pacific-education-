@@ -7,7 +7,7 @@
 
 ## How to use this distribution
 
-For each selected level and subject, the teacher follows the sequence from the learner's current point. A daily lesson uses one clearly named concept, one learning intention, a short explanation/model, guided practice, independent task, and a check for understanding. The same concept is differentiated through four flexible support levels (Copper/Foundation, Bronze/Supported, Silver/Developing, Gold/Extension); the learning outcome stays the same.
+For each selected level and subject, the teacher follows the sequence from the learner's current point. A daily lesson uses one clearly named concept, one learning intention, a short explanation/model, guided practice, independent task, and a check for understanding. The same concept is differentiated through four flexible support levels (Copper, Bronze, Silver and Gold); the learning outcome stays the same.
 
 The sequences below are **concept families and planning progressions**, not claims that every concept is prescribed at every level. Before a daily activity is released as Fiji-curriculum aligned, attach the exact current Ministry syllabus/framework title, version/year, level, subject, strand, outcome/achievement indicator, page/section, source URL, reviewer and review date. If that evidence is unavailable, label the lesson **DRAFT — curriculum mapping pending**.
 
