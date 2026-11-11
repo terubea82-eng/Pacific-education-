@@ -1,3 +1,9 @@
+> **Prescription-only rule (current):** Use [the Fiji prescription-only master register](fiji-prescription-only-indicator-master-register.md) as the sole intake gate for new indicator records across ECE–Form 7. Historical guides, NFIT programme outcomes, teacher-created packs, framework summaries, textbooks and third-party mappings are retained for audit only; they are not accepted as current prescriptions without formal Ministry/CAS confirmation. Do not import those candidate records into the active indicator bank or daily distribution.
+
+## Current master register
+
+[fiji-prescription-only-indicator-master-register.md](fiji-prescription-only-indicator-master-register.md) — level-by-level source intake for ECE, Years 1–8 and Forms 3–7; current controlled prescriptions only. Current intake remains incomplete; no new indicators are accepted until the controlled source and effective status are verified.
+
 # Fiji Curriculum Achievement Indicators — Teacher Reference Folder
 
 **Status:** staging source register + blank distribution template. Partial source-backed records are documented in `official-source-findings-and-pilot-sequence.md` and `year6-year8-2015-guide-source-backed-indicator-register.md`, `financial-education-years1-8-outcome-candidates.md`, `financial-education-years9-12-outcome-candidates.md`, and `ministry-year6-year8-financial-education-achievement-candidates.md`. The NFIT registers include 28 internal, paraphrased FinEd learning-outcome candidates for Years 1–8 and 24 secondary outcome clusters for Years 9–12. The Ministry Term 3 guide register adds Year 6/8 achievement evidence. These are not unique Ministry-coded indicators; current applicability and educator validation remain pending. This is not a complete ECE–Form 7 indicator bank; no complete class/subject distribution is claimed.
