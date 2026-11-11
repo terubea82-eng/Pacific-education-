@@ -495,11 +495,13 @@ function revealTarget(targetId){
 
 /* Visible page-by-page sequence guide. This is navigation UI only; it does not change speech. */
 var PAGE_GUIDE = {
-  pacificEducationWelcome:[1,"Welcome"],
-  paceduPageVision:[2,"Pacific Education vision"],
-  paceduPageRules:[3,"Pilot rules and agreement"],
-  pacificEducationIdentityRegistration:[4,"User registration"],
-  prototypeAccess:[5,"Prototype access"],
+  /* Business advertising is the separate public Page 1; the in-app
+     entry sequence therefore begins with Welcome on Page 2. */
+  pacificEducationWelcome:[2,"Welcome"],
+  paceduPageVision:[3,"Country and language"],
+  paceduPageRules:[4,"Workspaces and rules"],
+  pacificEducationIdentityRegistration:[5,"User registration"],
+  prototypeAccess:[6,"Workspace access"],
   levelSelection:[6,"Learning level"],
   subjectSelection:[7,"Subject"],
   termSelection:[8,"Term"],
