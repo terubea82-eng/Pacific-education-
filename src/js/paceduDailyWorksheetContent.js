@@ -688,9 +688,8 @@
         formalAssessmentEligible: false
       };
       worksheet.curriculumNote = "Daily activity release is locked until the applicable mandated educational prescription or authorised institutional curriculum is verified and the concept/indicator is approved.";
-      return worksheet;
     }
-    worksheet.curriculumGate = {passed:true,sourceStatus:worksheet.indicatorAssignment.sourceStatus,reviewStatus:worksheet.indicatorAssignment.reviewStatus};
+    if (curriculumGatePassed) worksheet.curriculumGate = {passed:true,sourceStatus:worksheet.indicatorAssignment.sourceStatus,reviewStatus:worksheet.indicatorAssignment.reviewStatus};
     worksheet.questions = worksheet.questions.map(function (question) {
       return Object.assign({}, question, {
         indicatorIds: worksheet.indicatorIds.slice(),
@@ -715,7 +714,7 @@
     } else {
       worksheet.dailyLesson.curriculumAlignment.rule += " No indicator has been imported for this exact class/subject/term/week/day slot. Do not infer or invent one.";
     }
-    worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
+    worksheet.status = curriculumGatePassed ? "DRAFT_READY_FOR_TEACHER_REVIEW" : "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
     var candidateSource = null;
     if (level === "Class 1" && block === "T1" && week === 1) {
       candidateSource = {
@@ -756,6 +755,16 @@
         worksheet.practiceExamPaper = global.PacEduPracticeExamPaper.getPaper({level:level,subject:subject,term:block,ability:ability});
       }
     }
+    if (!curriculumGatePassed) {
+      /* Retain schedule/provenance metadata for teachers, but release no learner work. */
+      worksheet.questions = [];
+      worksheet.answerKey = [];
+      worksheet.tasks = [];
+      worksheet.dailyLesson.activities = [];
+      worksheet.termLearningPlan = null;
+      worksheet.revisionPaper = null;
+      worksheet.practiceExamPaper = null;
+    }
     return worksheet;
   }
   function install() {
@@ -764,9 +773,8 @@
     var original=lib.getWorksheet;
     var enhanced={};
     Object.keys(lib).forEach(function(k){enhanced[k]=lib[k];});
-    enhanced.getWorksheet=function(level,ability,day,subject) {
-      if(Number(day)===1) return original(level,ability,day,subject);
-      var real=make(level,subject||"English",day,ability||"developing");
+    enhanced.getWorksheet=function(level,ability,day,subject,options) {
+      var real=make(level,subject||"English",day,ability||"developing",options);
       return real;
     };
     enhanced.getDailyContentWorksheet=make;
