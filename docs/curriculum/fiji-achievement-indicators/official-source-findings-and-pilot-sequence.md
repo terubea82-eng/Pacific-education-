@@ -1473,3 +1473,37 @@ The source provides learning-outcome headings and evidence statements, not uniqu
 **Classification:** HISTORICAL_CURRICULUM_LINKED_OUTCOMES — CURRENT_STATUS_AND_REPLACEMENT_PENDING.
 
 **Stage 1 remains IN_PROGRESS.**
+
+
+## 24. Ministry Financial Education achievement evidence — Years 6 and 8 (historical Term 3 guide) (12 November 2026)
+
+### Official source evidence
+
+- Fiji Ministry of Education, Curriculum Development Unit, *Y6 & Y8 Teachers Guide — T3*.
+- Official PDF: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
+- Search-indexed page 11 contains a Year 6 Financial Education section on income and wealth. Readable achievement evidence includes identifying income/wealth sources and types, jobs/pay, taxes, wealth values, reading currencies, calculating exchange rates and income from wealth, and explaining wealth accumulation through saving/work/profit.
+- Search-indexed page 12 contains a Year 8 Financial Education section. Readable achievements include identifying earned/unearned income, enterprise, gifts/loans, interpreting payslips/remittance receipts/bank-statement entries and deductions, explaining remittances' household role, identifying expenses across life stages and explaining budgets for spending/saving.
+- Page 12 extraction truncates the final budgeting achievement statement. Page 11 multi-column text order is not fully reliable. Visual page verification is still required before treating either page as a complete, validated record.
+- The guide is a Term 3 teacher guide; its broader context is post-examination support. It is not a complete year-long syllabus or a pre-exam sequence.
+
+### Register created
+
+New file: `docs/curriculum/fiji-achievement-indicators/ministry-year6-year8-financial-education-achievement-candidates.md`.
+
+It records nine Year 6 internal candidate records and seven Year 8 internal candidate records from the readable source text. These are PacEdu internal IDs, not Ministry codes. It explicitly preserves extraction limitations and current-status uncertainty.
+
+### Relationship to other FinEd sources
+
+The separate NFIT Years 1–8 and Years 9–12 registers remain separate. The Ministry Term 3 teacher guide and NFIT learning-outcomes PDFs may be related programme materials, but their version/equivalence has not been verified. Do not merge or deduplicate them into a single authoritative indicator schedule until CAS confirms provenance and current prescription status.
+
+### Safeguards
+
+- Treat this as historical evidence pending Ministry confirmation; do not allocate it to the 115-day timetable.
+- Use fictional financial examples only; do not collect household income, bank details, remittance data or hardship information from learners.
+- Verify current Fiji tax, banking, remittance and exchange-rate information from authorised sources before any activity.
+- No personal financial advice or financial product promotion to children.
+- Page-image review and educator approval are required.
+
+**Classification:** MINISTRY_GUIDE_ACHIEVEMENT_EVIDENCE — EXTRACTION_PARTIAL — CURRENT_STATUS_PENDING.
+
+**Stage 1 remains IN_PROGRESS.**
