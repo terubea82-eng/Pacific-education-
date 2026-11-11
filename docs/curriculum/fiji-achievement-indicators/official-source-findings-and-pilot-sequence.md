@@ -1225,3 +1225,19 @@ The report states:
 6. Keep Life Mathematics and Pure Mathematics as distinct pathways in PacEdu. Do not merge their outcomes or use one pathway's assessment rubric for the other.
 
 **Updated finding:** Official evidence now supports Year 11 Life Mathematics national rollout by the 2021–2022 reporting period and a Year 12 pilot in 2022. It does not close the current Years 11–13 Mathematics source gap, and it does not provide any achievement-indicator bank. Stage 1 remains IN_PROGRESS.
+
+
+## 15. First indicator-led daily activity pack created (12 November 2026)
+
+**Activity file:** [Fiji Year 6 and Year 8 PE — indicator-led 10-day pilot draft](../daily-activities/fiji-year6-year8-pe-indicator-led-10-day-pilot-draft.md).
+
+- The first PacEdu daily-activity pack has been authored from the eight Year 6/Year 8 PE indicator IDs transcribed in Source A above.
+- The source guide's 10 × 45-minute PE allocation is used as the planning frame; this is not represented as a Ministry-prescribed day-by-day timetable.
+- Each daily activity includes its indicator anchor, learning intention, teacher model, worked example, guided and independent practice, evidence, success check, Copper/Bronze/Silver/Gold scaffolds and safety/accessibility notes.
+- The activity pack is original PacEdu instructional writing. It does not reproduce the Ministry guide's lesson text.
+- **Release status:** every activity remains `PENDING_TEACHER_REVIEW`. The 2015 guide's current effective status is not confirmed; this pack cannot be presented as a confirmed 2026 curriculum requirement until the Ministry/Curriculum Advisory Services confirms applicability.
+- This first pack does not fill any missing year/subject source gap. No indicators have been invented for other classes or subjects.
+
+**Process rule now applied:** verified prescription indicator → original daily activity → differentiated practice with the same learning objective → evidence and success criteria → teacher review. If the controlled source or effective status is missing, PacEdu must hold the activity as `SOURCE_NOT_YET_VERIFIED` / `PENDING_TEACHER_REVIEW`, not generate a falsely curriculum-aligned lesson.
+
+**Stage 1 remains IN_PROGRESS.**
