@@ -502,3 +502,38 @@ This search pass located further official EQAP-hosted SPFSC documents. These are
 **Pilot safeguard:** Interim older-source activities may be prepared for teacher review and controlled pilot use, but must display their source edition and interim status to teachers. They must not be represented to schools, parents or learners as confirmed alignment to a newer prescription. Formal curriculum-alignment claims and formal assessment eligibility remain disabled until source status and teacher approval are recorded.
 
 **Owner instruction:** Apply this rule across all PacEdu subjects and levels. Prioritise locating and extracting the newest effective prescriptions first; where that cannot be verified in time, continue building useful daily activities from the latest reliable older prescription, revised as described above. This is the approved source-selection approach for the staging curriculum workflow; it does not authorise merging the pull request or deploying changes to production.
+## 15. Protected global curriculum-first gate — owner instruction (12 November 2026)
+
+**Mandatory rule for every PacEdu jurisdiction and institution:** PacEdu must first identify the prescribed concepts or learning indicators from the educational curriculum/prescription mandated or formally authorised for that learner's country, jurisdiction, level, subject and programme. Only then may it create the daily activities and worksheets that teach those concepts. This applies to all countries and all recognised educational institutions using PacEdu; Fiji is the first implementation case, not the global limit.
+
+### Which authority controls the curriculum?
+
+- Follow the applicable national or subnational Ministry/regulator curriculum where it is legally mandated for the school or learner.
+- For an examination or qualification programme, follow the authorised examination/qualification body's current prescription where that programme governs the subject and level.
+- For an institution-specific programme, use that institution's formally approved curriculum only where it has authority to set that programme; it must still comply with applicable national law, regulator requirements and accreditation conditions.
+- Where requirements conflict, record the conflict and obtain a written ruling from the responsible regulator/authority. Do not let PacEdu choose whichever syllabus is easiest.
+- A textbook, commercial course, third-party website, teacher-created scheme or AI-generated topic is not a mandated prescription merely because it is educational. It may support teaching but cannot replace the controlling curriculum.
+
+### Locked creation sequence
+
+1. Identify the learner's jurisdiction/country, institution or programme, official level/year, subject and applicable school/academic year.
+2. Locate the controlling educational prescription and verify issuing authority, document title, edition/version, effective date/status and source page/section.
+3. Extract the prescribed concepts/outcomes/indicators first, preserving source IDs and progression. Where a source uses concepts rather than coded indicators, retain the concept and create a clearly labelled PacEdu unpacked indicator linked to it.
+4. If a newer edition is not available or its effective status cannot be confirmed, use the latest reliable older prescription as an interim source, revise teaching examples and activity methods without changing the prescribed learning expectation, and visibly label the source edition and interim status.
+5. Have a qualified, authorised educator review the concept-to-indicator unpacking and sequence. Keep unresolved records pending and do not release them as approved.
+6. Only after steps 1–5 may PacEdu generate daily activities, worksheets, worked examples, question banks, teacher notes, differentiated Copper/Bronze/Silver/Gold versions and assessment evidence.
+7. Distribute the validated indicators across the approved instructional calendar and prerequisites. The Fiji 45 + 45 + 25 pattern applies only where the Fiji school calendar/programme requires it; other jurisdictions must use their own approved calendar.
+
+### Hard-stop behaviour
+
+- No verified concept/indicator for the exact jurisdiction + level + subject + day slot means no learner-facing daily activity is released.
+- Missing source, unclear authority, conflicting editions, absent source location or missing educator validation means `BLOCKED_CURRICULUM_SOURCE_REQUIRED` or `PENDING_TEACHER_REVIEW`, not a guessed lesson.
+- Interim older prescriptions may support teacher-reviewed pilot activities only when the source and its authority are verified and the interim status is visible. Do not claim current-edition alignment.
+- Copper, Bronze, Silver and Gold may vary scaffolding, language load, supports and extension; they must retain the same approved prescribed learning objective.
+- Formal assessment remains separately disabled until trusted server-side authorisation and the applicable institution's assessment approval are present.
+
+### Staging implementation note
+
+On the PacEdu staging branch, the distribution importer has been widened from Fiji-only jurisdiction labels to country/jurisdiction-neutral labels, and the daily worksheet generator now returns a blocked curriculum status with no questions or tasks when the exact daily slot lacks a source-verified, educator-validated indicator. The first-day legacy worksheet bypass has been removed so it cannot skip the gate. This is a prototype client-side safeguard, not a security boundary: production must enforce the same checks on trusted server-side services before any activity is released or learner data is written.
+
+**Owner decision:** This curriculum-first gate is mandatory across PacEdu. Do not bypass it to populate empty days. If no valid prescription has yet been located, the correct next action is to obtain the authorised source and extract its concepts first.
