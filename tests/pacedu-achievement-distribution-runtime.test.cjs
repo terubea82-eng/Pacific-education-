@@ -64,24 +64,26 @@ test("distribution CSV imports exact day slots and skips blank planning rows", (
   assert.equal(found.status, "VALIDATED");
 });
 
-test("daily worksheet receives the exact matching indicator and assessment evidence metadata", () => {
-  const window = load();
-  window.PacEduAchievementDistributionRuntime.importDistributionCsv(headers.join(",") + "\n" + makeRow());
-  const worksheet = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
-    level: "Class 1", subject: "English", term: "T1", week: 1, day: 2, ability: "developing"
+test("browser-imported indicators remain non-authoritative and cannot release learner content", () => {
+  const window=load();
+  window.PacEduAchievementDistributionRuntime.importDistributionCsv(headers.join(",")+"\n"+makeRow());
+  const worksheet=window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+    level:"Class 1",subject:"English",term:"T1",week:1,day:2,ability:"developing"
   });
-  assert.deepEqual(Array.from(worksheet.indicatorIds), ["FJ-C1-ENG-001"]);
-  assert.equal(worksheet.indicatorMappingStatus, "VALIDATED");
-  assert.equal(worksheet.dailyLesson.curriculumAlignment.candidateIndicator.id, "FJ-C1-ENG-001");
-  assert.equal(worksheet.questions[0].indicatorIds[0], "FJ-C1-ENG-001");
-  assert.equal(worksheet.assessmentMapping.formalAssessmentEligible, false);
-  const evidence = window.PacEduAssessmentBlueprints.buildIndicatorLinkedEvidence(worksheet, [
-    { questionId: worksheet.questions[0].questionId, response: "Good morning" }
-  ]);
-  assert.deepEqual(Array.from(evidence.indicatorIds), ["FJ-C1-ENG-001"]);
-  assert.equal(evidence.formalAssessmentEligible, false);
-  assert.equal(evidence.serverAuthorizationRequired, true);
-  assert.equal(evidence.requiresTeacherReview, true);
+  assert.deepEqual(Array.from(worksheet.indicatorIds),["FJ-C1-ENG-001"]);
+  assert.equal(worksheet.indicatorMappingStatus,"VALIDATED");
+  assert.equal(worksheet.indicatorAssignment.serverAuthorized,false);
+  assert.equal(worksheet.indicatorAssignment.jurisdictionProfileStatus,"PENDING_SERVER_REVIEW");
+  assert.equal(worksheet.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(worksheet.questions.length,0);
+  assert.equal(worksheet.answerKey.length,0);
+  assert.equal(worksheet.dailyLesson.steps.length,0);
+  assert.equal(worksheet.assessmentMapping.formalAssessmentEligible,false);
+  const evidence=window.PacEduAssessmentBlueprints.buildIndicatorLinkedEvidence(worksheet,[]);
+  assert.deepEqual(Array.from(evidence.indicatorIds),["FJ-C1-ENG-001"]);
+  assert.equal(evidence.formalAssessmentEligible,false);
+  assert.equal(evidence.serverAuthorizationRequired,true);
+  assert.equal(evidence.requiresTeacherReview,true);
 });
 
 test("pending or incomplete source review never becomes a validated indicator", () => {
@@ -150,4 +152,37 @@ test("runtime clearly reports when no distribution file has been imported", () =
   });
   assert.equal(result.status, "DISTRIBUTION_FILE_NOT_IMPORTED");
   assert.equal(result.assignment, null);
+});
+
+
+test("distribution records support multiple jurisdictions without cross-country slot reuse", () => {
+  const window=load();
+  const rows=[
+    makeRow({country:"Fiji",class_level:"Class 1",indicator_id:"FJ-001"}),
+    makeRow({country:"Exampleland",class_level:"Grade 1",indicator_id:"EX-001"})
+  ];
+  const result=window.PacEduAchievementDistributionRuntime.importDistributionCsv(headers.join(",")+"\n"+rows.join("\n"));
+  assert.equal(result.success,true);
+  assert.equal(result.imported,2);
+  const fiji=window.PacEduAchievementDistributionRuntime.getDailyAssignment({jurisdiction:"Fiji",level:"Class 1",subjectId:"English",term:"Term 1",week:1,day:2});
+  const other=window.PacEduAchievementDistributionRuntime.getDailyAssignment({jurisdiction:"Exampleland",level:"Grade 1",subjectId:"English",term:"Term 1",week:1,day:2});
+  assert.equal(fiji.assignment.indicatorId,"FJ-001");
+  assert.equal(other.assignment.indicatorId,"EX-001");
+  assert.equal(window.PacEduAchievementDistributionRuntime.getDailyAssignment({level:"Grade 1",subjectId:"English",term:"Term 1",week:1,day:2}).status,"DISTRIBUTION_FILE_NOT_IMPORTED");
+});
+
+test("browser CSV approval fields cannot simulate trusted server or legal jurisdiction approval", () => {
+  const window=load();
+  window.PacEduAchievementDistributionRuntime.importDistributionCsv(headers.join(",")+"\n"+makeRow({
+    source_status:"CURRENT_AUTHORITY_PRESCRIPTION_VERIFIED",
+    educator_review_status:"VALIDATED",
+    approved_by:"named-reviewer",
+    approved_at:"2026-11-12T08:00:00Z"
+  }));
+  const w=window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+    level:"Class 1",subject:"English",term:"T1",week:1,day:2,ability:"expected"
+  });
+  assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(w.indicatorAssignment.serverAuthorized,false);
+  assert.equal(w.indicatorAssignment.jurisdictionProfileStatus,"PENDING_SERVER_REVIEW");
 });
