@@ -55,11 +55,11 @@ test("teacher subject/class workspace offers only two resource types and safely 
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(59))).toBe("developing");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(79))).toBe("expected");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(80))).toBe("extension");
-  await expect(panel.getByRole("button", { name: "Prepare Copper pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await expect(panel.getByRole("button", { name: "Prepare Bronze pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await expect(panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await expect(panel.getByRole("button", { name: "Prepare Gold pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true }).click();
+  await expect(panel.getByRole("button", { name: "Prepare Copper pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Bronze pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Gold pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true })).toBeEnabled();
+  await panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
 });
 
@@ -78,10 +78,10 @@ test("all four ability packs remain available when no reviewed evidence exists",
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
   const labels = [
-    "Prepare Copper pack: daily activities + revision + mock exam (no reviewed marks yet)",
-    "Prepare Bronze pack: daily activities + revision + mock exam (no reviewed marks yet)",
-    "Prepare Silver pack: daily activities + revision + mock exam (no reviewed marks yet)",
-    "Prepare Gold pack: daily activities + revision + mock exam (no reviewed marks yet)"
+    "Prepare Copper pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)",
+    "Prepare Bronze pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)",
+    "Prepare Silver pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)",
+    "Prepare Gold pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)"
   ];
   for (const label of labels) await expect(panel.getByRole("button", { name: label, exact: true })).toBeEnabled();
   await panel.getByRole("button", { name: labels[0], exact: true }).click();
