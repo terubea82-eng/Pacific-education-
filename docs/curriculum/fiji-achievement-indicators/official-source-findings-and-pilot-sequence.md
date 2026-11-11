@@ -283,3 +283,41 @@ Request the current, effective versions of:
 - For each Year 9–13 subject, obtain the current endorsed syllabus, learning outcomes/indicators, scope-and-sequence, assessment/examination specification, effective date and any replacement notice from the Ministry's responsible subject section.
 - Keep Forms 3–7 as PacEdu display aliases only until an official Year-to-Form equivalence table is confirmed. Do not map a Year 10 historical textbook entry to a Form 4 indicator by assumption.
 - No secondary daily activity is to be marked as officially aligned solely because its subject title appears in an old textbook inventory.
+
+
+## 11. Clarification: use Fiji Educational Prescriptions as the primary concept source (12 November 2026)
+
+The project owner clarified that the concepts to be identified and distributed are written in the Fiji Ministry of Education's **Educational Prescriptions** published on the Ministry website. This clarification governs the next extraction phase and supersedes treating the limited teacher-guide examples in this register as the starting point for the whole curriculum.
+
+### Source and planning interpretation
+
+- The Ministry's School Standards Monitoring and Inspection Policy asks whether current prescriptions are available, accessible and used by teachers, and whether each school's Scheme of Work (SOW) is aligned to the prescription. This confirms that prescriptions are a primary classroom planning reference. Official URL: https://www.education.gov.fj/wp-content/uploads/2022/11/Schools_Standard_Monitoring_and_Inspection_Policy-_Reviewed_2014.pdf
+- The Ministry's *Na Noda Mataniciva* guideline explicitly explains that teachers unpack detailed sub-strand outcomes to identify the concepts, skills and attitudes; these become the focus of teaching and planning. Official URL: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf
+- Therefore, PacEdu's extraction model must capture the concepts stated in each current Educational Prescription and unpack them into teachable/assessable learning indicators, while retaining a traceable link to the exact prescription outcome and source location. The indicators are not to be invented independently or substituted with broad NCF outcomes.
+
+### Required extraction fields for every prescription entry
+
+1. Fiji official level/year and subject exactly as written.
+2. Educational Prescription document title, version/edition, issuing authority and effective year/date.
+3. Strand/sub-strand/topic or unit exactly as named in the prescription.
+4. Exact prescribed concept / outcome / learning expectation (verbatim only where legally permitted; otherwise a concise faithful paraphrase).
+5. Source page, section, table or outcome code.
+6. Unpacked concept(s), knowledge, skill(s) and attitude(s), clearly distinguished from source wording.
+7. PacEdu learning indicator written as observable learner performance and explicitly linked to the source concept/outcome.
+8. Prerequisite / progression relationship where supported by the prescription.
+9. Suggested evidence and assessment method that genuinely measures the stated concept.
+10. Proposed term/week/day placement in the 45 + 45 + 25 day calendar, with teacher-review status.
+11. Version/effective-status check and reviewer approval.
+
+### Distribution rule
+
+- Extract the complete concept inventory from each available current prescription first, across ECE and every official Fiji year/level and subject.
+- Deduplicate repeated concepts without erasing meaningful progression or level-specific differences.
+- Map concepts to indicators only after extraction; then sequence indicators according to the prescription's order, prerequisites and increasing complexity.
+- Distribute the approved indicators across the 115 instructional days only after the full subject-level coverage and school calendar are checked.
+- Keep missing prescription files marked `SOURCE NOT YET LOCATED`; keep extracted but not yet validated mappings `PENDING_TEACHER_REVIEW`.
+- Do not use the old 2015 PE guide, historical textbook lists, annual reports or broad NCF outcomes as substitutes for a missing current Educational Prescription.
+
+### Immediate next source task
+
+Locate and catalogue every current Educational Prescription PDF or document on the Ministry's official website, then extract its level, subject, version and prescribed concepts. The current search indexed Ministry references to prescriptions but did not yet surface a complete public directory or the full prescription documents. This is a source-access gap, not evidence that the prescriptions do not exist. Request authorised copies from the Ministry / Curriculum Advisory Services or use files supplied by the project owner; never request account passwords or bypass restricted Ministry access.
