@@ -74,7 +74,7 @@
         errors.push("Row " + rowNumber + ": week is outside the " + r.term + " distribution.");
         return;
       }
-      var slot = key(r.class_level, r.subject_id, r.term, r.week, r.day);
+      var slot = key(r.country, r.class_level, r.subject_id, r.term, r.week, r.day);
       if (seen[slot]) {
         errors.push("Row " + rowNumber + ": duplicate class/subject/term/week/day assignment; resolve it before import.");
         return;
@@ -174,7 +174,7 @@
   function coverageSummary(filters) {
     filters = filters || {};
     var matching = rows.filter(function (r) {
-      return (!filters.level || r.level === filters.level) &&
+      return (!filters.jurisdiction || r.jurisdiction === filters.jurisdiction) &&\n        (!filters.level || r.level === filters.level) &&
         (!filters.subjectId || r.subjectId === filters.subjectId) &&
         (!filters.term || r.term === filters.term);
     });
