@@ -411,3 +411,67 @@ Each record stores its source, creator, Student ID, attempt ID, date, assessment
 This home-revision pathway is included within Stage 3, after the verified curriculum indicator, worksheet, Student ID, question and answer-key foundations are ready. Build and test teacher daily CAM and home revision as separate role-based flows over shared safe scanning infrastructure. Do not merge their record types or approval authority. National examination marking remains separate and restricted. Stage 4 Global Library and Stage 5 capacity/personal-information space remain in the locked order.
 
 **Current boundary:** Documentation only. No parent/student account permissions, scans, practice attempts, marks, comments, school records, Firebase data, production systems or APKs were changed.
+
+
+## Addendum — Mandatory Approved Marking Criteria for All Legal CAM Users
+
+**Requirement status:** Mandatory design rule for every CAM/scanner marking pathway. Only legally authorised PacEdu users may initiate or access marking functions, and every mark must be grounded in the applicable approved marking criteria.
+
+### A. Approved criteria are required before marking
+
+- Every markable activity, worksheet, revision paper or assessment must have an identified marking guide, answer key or rubric appropriate to its subject, level, curriculum/jurisdiction and assessment version.
+- The criteria must define question IDs, maximum marks, correct responses, accepted alternative wording, keyword/similar-word credit where appropriate, partial-credit rules, method/working marks where appropriate, and treatment of blank, illegible or out-of-scope responses.
+- Extended writing, oral, creative, investigative and practical tasks require suitable subject-specific rubrics and human judgement where automated recognition cannot reliably apply the criteria.
+- Link each criterion to the relevant curriculum indicator/concept and retain its source, approval authority, version, effective date and permitted use.
+- Bloom taxonomy may classify the cognitive demand of questions; it does not replace subject-specific marking criteria. Where an official syllabus uses another framework such as SOLO, preserve that framework and use Bloom as an additional design aid only where appropriate.
+- Criteria must be reviewed and approved by the authorised subject/assessment authority before CAM uses them for scored marking. A teacher-created guide may be used for that teacher's authorised classroom assessment only after the required school approval. It must not be represented as an official national marking scheme.
+- If no approved or appropriately authorised criteria exist, CAM may scan, organise and save the work, but must not issue a scored mark. Route it to the authorised teacher/assessment owner to create or approve criteria first.
+
+### B. Legal-user access and permissions
+
+- Marking functions require an authenticated PacEdu account and a server-side role/permission check on every relevant action; merely having a valid account is not sufficient.
+- Teachers may mark only their assigned/authorised classes, subjects and classroom assessments.
+- Parents/guardians may use home-practice marking only for a child securely linked to their account and only with resources and criteria permitted for home use.
+- Students may attempt work and view permitted self-assessment feedback; student access does not grant authority to approve teacher or national marks.
+- National examiners and moderators require separate, individually granted examination-authority appointments and permissions in the restricted National Examiners Workspace.
+- Users must not share accounts or credentials. Access is logged and can be revoked. Apply least privilege, guardian-link verification, age-appropriate consent and privacy requirements.
+- No parent, teacher or student gains national examiner authority merely by being a legal PacEdu user.
+
+### C. Same standards where authorised, distinct assessment status
+
+- Where the same approved marking guide is licensed and authorised for both classroom and home practice, CAM should apply the same answer criteria and mark allocation consistently.
+- A home-practice mark remains HOME_PRACTICE / SELF-ASSESSMENT, attributed to the parent/student and not teacher-verified.
+- A teacher-approved classroom mark remains TEACHER_ASSESSMENT.
+- A national examination mark remains NATIONAL_EXAMINATION, under examination-authority control.
+- A shared rubric does not make the three record types interchangeable and does not give home users access to confidential, embargoed or restricted national answer keys.
+- Preserve the exact criteria/rubric version used for every suggested and confirmed mark, including any later correction.
+
+### D. CAM marking and approval behaviour
+
+1. Confirm the user's role, school/guardian relationship and access to the selected child, class, activity and marking guide.
+2. Confirm that the marking guide is approved, in force and authorised for that use.
+3. Scan/upload and securely match pages to the correct learner and assessment attempt.
+4. Compare each response with the criteria. Display the source response, criterion, suggested mark, rationale and confidence.
+5. Hold uncertain handwriting, OCR, identity, missing pages, unsupported question types and disputed answers for human review.
+6. Attribute every manual amendment to the person making it and preserve the original suggestion.
+7. Apply the correct approval path: parent/student confirmation for home practice; teacher approval for classroom records; examiner/moderator/chief examiner authority for national examinations.
+8. Publish or share only according to that record type's permissions and release rules.
+
+### E. Mandatory fail-safe rules and acceptance tests
+
+- No applicable approved/authorised marking guide: no scored auto-marking.
+- Expired, withdrawn, superseded or wrong-version guide: block scoring until the correct version is selected.
+- Unauthorised user, class, child, assessment or answer key: deny access and log the attempt.
+- No guessed identity or guessed mark where confidence is inadequate.
+- Alternative answers receive credit only when included in the approved criteria or accepted by an authorised human reviewer under the relevant policy.
+- A CAM suggestion never becomes an official teacher or national result without the required approval.
+- Home self-assessment never becomes teacher-verified merely because a parent confirms it.
+- National examination criteria and unreleased keys remain restricted to authorised examination personnel.
+- Test that the same response and same criteria version produce consistent suggested marks, and that criteria version changes are auditable.
+- Test that corrections, overrides, approvals, access denials and publication events are recorded with actor, time and reason.
+
+### F. Locked delivery placement
+
+This requirement applies across Stage 3 CAM pathways: daily teacher marking, parent/student home revision and restricted national examination marking. Build the criteria register, approval/version controls and legal-user permission checks before enabling scored CAM. Complete verified curriculum indicators, question IDs, Student IDs and worksheet/answer-key foundations first. Keep the Global Library (Stage 4) and user capacity/personal-information space (Stage 5) in their existing locked order.
+
+**Current boundary:** Documentation only. No marking guides were approved, no user permissions or accounts changed, and no scans, marks, student records, Firebase data, production systems or APKs were modified.
