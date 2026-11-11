@@ -11,7 +11,8 @@ function getPaper(options){
   instructions:"Mock practice only, built from the term revision question bank. This is not an official or past examination paper. Teacher must check the current syllabus, question suitability and answer key.",
   status:paper.status==="BLOCKED_CURRICULUM_SOURCE_REQUIRED"?"BLOCKED_CURRICULUM_SOURCE_REQUIRED":"PRACTICE_EXAM_REQUIRES_TEACHER_REVIEW",
   officialExamPaper:false,
-  paperType:"practice-exam",\n  learnerReleaseEligible:false
+  paperType:"practice-exam",
+  learnerReleaseEligible:false
  });
 }
 global.PacEduPracticeExamPaper=Object.freeze({getPaper:getPaper});
