@@ -610,6 +610,7 @@
     var distributionRuntime = global.PacEduAchievementDistributionRuntime;
     var distributionTerm = indicatorTermForBlock(block);
     var distributionFilters = {
+      jurisdiction: String(options.jurisdiction || options.country || "Fiji"),
       level: level, subjectId: subject, term: distributionTerm, week: week, day: day
     };
     var distributionLink;
@@ -730,7 +731,7 @@
       worksheet.sourceNote = "Original PacEdu English practice; candidate reference: Year 1 English — Language, Literacy and Communication, Unit 1 (resource p. 5), S/s and A/a (pp. 6–7). Copy located on a third-party host; compare with the current authorized school/FEMIS/Ministry copy. Official outcome mapping remains pending.";
     }
     worksheet.curriculumSchedule = {
-      country: "Fiji",
+      country: String(options.jurisdiction || options.country || "Fiji"),
       term: selected.label,
       termId: block,
       week: week,
@@ -788,6 +789,13 @@
     Object.keys(lib).forEach(function(k){enhanced[k]=lib[k];});
     enhanced.getWorksheet=function(level,ability,day,subject,options) {
       var real=make(level,subject||"English",day,ability||"developing",options);
+      real.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
+      real.curriculumGate = {passed:false,reason:"A verified prescribed concept/indicator and trusted jurisdiction approval are required before learner release."};
+      real.questions = [];
+      real.answerKey = [];
+      real.tasks = [];
+      real.readingText = "";
+      real.topic = "Curriculum source pending";
       return real;
     };
     enhanced.getDailyContentWorksheet=make;
