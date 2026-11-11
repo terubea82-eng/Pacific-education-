@@ -1256,6 +1256,15 @@ function init(){
 
   document.body.setAttribute("data-pe-navigation-owner","single");
 
+  /* Legacy startup repairs can rebuild the Welcome panel after the first gateway render.
+     Re-attach its visible sequence guide whenever this idempotent initializer runs. */
+  if(document.body.classList.contains("pacedu-entry-mode")){
+    var currentEntryPage=document.body.getAttribute("data-pac-edu-entry-page");
+    var currentEntryTarget=currentEntryPage==="1"?GATEWAY.welcome:
+      currentEntryPage==="2"?GATEWAY.vision:currentEntryPage==="3"?GATEWAY.rules:"";
+    if(currentEntryTarget) renderPageGuide(currentEntryTarget);
+  }
+
   bind("welcomeNextButton",function(){ gateway(2); });
   bind("paceduVisionNext",function(){ gateway(3); });
   bind("paceduRulesContinue",function(button){
