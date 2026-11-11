@@ -548,3 +548,43 @@ Browser-imported CSV rows remain untrusted reference data. Even when their sourc
 Revision papers and practice examination papers must follow the same curriculum-first gate. A generic term calendar may be shown as planning metadata, but no questions, readings, worked examples or answer keys may be released to learners until the exact prescribed concepts/indicators have passed the trusted gate and required educator review.
 
 **Status:** global policy and staging safeguards are recorded; global curriculum ingestion, jurisdiction profiles, trusted server approval, legal certification and production readiness remain incomplete.
+
+## 17. Follow-up source verification — 12 November 2026
+
+### Source F — Ministry Annual Report 2022–2023: revised Years 1–4 curriculum availability
+
+- Official parliamentary-hosted report: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- The report describes the revised curriculum as concept-based, with curriculum learning outcomes (CLOs) introduced and consolidated across the year and elaborations explaining the ideas to teach in logical sequence.
+- It records that 648 final Year 1–4 syllabus and Literacy/Numeracy guides were supplied to primary schools, while 250 draft copies were provided to 90 trial schools. It also says curriculum documents, including syllabuses, were uploaded to FEMIS/Moodle.
+- **What this establishes:** authoritative evidence that revised Years 1–4 syllabus materials exist and were distributed to schools.
+- **What it does not establish:** the exact subject-by-subject current effective edition, complete wording of every CLO/elaboration, or permission for PacEdu to republish the materials.
+- **Required next step:** obtain the controlled/authorised copies from a Fiji school or Ministry-authorised channel, record the cover/version/effective date and subject, then extract concepts/CLOs/elaborations from the actual documents. Do not substitute a third-party mirror.
+
+### Source G — Year 4 Elementary Science, revised edition 2023 (unverified public mirror)
+
+- A public third-party flipbook search result is titled “Year 4 Elementary Science (2022 Revised)” and its visible front matter identifies Curriculum Advisory Services, Ministry of Education, a revised edition dated 2023, and Ministry copyright.
+- Discovery link: https://fliphtml5.com/gjgbb/qpxi/YEAR_4_ELEMENTARY_SCIENCE_%282022_REVISED%29/
+- **Status: LEAD ONLY — NOT AN APPROVED SOURCE COPY.** The document was found on a third-party hosting site, not an official Ministry repository. Its apparent Ministry front matter is not sufficient to authenticate completeness, integrity, current effective status or reuse rights.
+- Do not transcribe its contents into the approved indicator bank or build learner worksheets from this mirror. Request the matching authorised Ministry/school copy and verify its version, pagination and permission terms first.
+- This is a useful acquisition target for the Year 4 Elementary Science source inventory, not a validated indicator source.
+
+### Source H — Ministry Policy in National Curriculum Assessment and Reporting
+
+- Official Ministry-hosted policy: https://www.education.gov.fj/wp-content/uploads/2022/11/POLICY-IN-NATIONAL-CURRICULUM-ASSESSMENT-AND-REPORTING.pdf
+- The policy directs assessment from Pre-school through Class 2, Class 3–8, and Forms 3–4 toward learning and development rather than student selection/ranking. It identifies ranking/selection at Forms 5–6 for the Fiji School Leaving Certificate examinations and Form 7 for the Fiji Seventh Form Certificate examinations.
+- Apply this distinction to PacEdu reporting and assessment design; do not create competitive class rankings for the levels where the policy says assessment is for learning and development.
+- This is assessment-policy evidence, not a source of subject learning indicators.
+
+### Curriculum status clarification
+
+The Fiji National Curriculum Framework remains the framework reference in this register, but a framework review has been publicly reported. A framework review announcement is not proof that a replacement framework has been formally approved and brought into effect. Separately, revised subject materials may exist for particular levels and learning areas. PacEdu must therefore track framework version and subject-prescription version as distinct fields; never assume one status automatically determines the other.
+
+### Source acquisition queue — next extraction targets
+
+1. Obtain authorised Years 1–4 revised Literacy/Numeracy syllabuses and guides from FEMIS/Moodle or a school/Ministry-authorised source; extract each subject's CLOs, concepts and elaborations exactly with page/section references.
+2. Obtain the authorised Year 4 Elementary Science revised 2023 document and verify whether the public mirror matches it; then extract its prescribed concepts/CLOs and any explicit achievement indicators.
+3. Confirm the current ECE Na Noda Mataniciva revision status and obtain the authorised effective copy before completing ECE extraction.
+4. Continue the Form 7 Agriculture 2019 prescription inventory row by row, and verify all other upper-secondary subject prescriptions and effective versions individually.
+5. Continue Year 6 and Year 8 PE as interim 2015-source records only until current-status confirmation is obtained.
+
+**No new indicator records or 115-day allocations are added by this follow-up.** It improves source provenance and identifies the next controlled documents to acquire. The approved indicator bank remains partial, and all unverified class/subject/day slots remain blocked.
