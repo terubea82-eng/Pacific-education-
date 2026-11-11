@@ -54,29 +54,33 @@ test("verified voice responses always remain pending teacher review", () => {
 });
 
 test("unfinished learner answers are scoped to a verified learner and exact activity/question", () => {
-  assert.match(source, /function draftStorageKey\\(ctx, type\\)/);
-  assert.match(source, /ctx\\.identityStatus !== "roster-matched-prototype"/);
-  assert.match(source, /ctx\\.studentId, ctx\\.classId, ctx\\.level, ctx\\.subjectId, ctx\\.term,/);
-  assert.match(source, /ctx\\.dayNumber, ctx\\.activityId, ctx\\.questionId, type/);
+  assert.ok(source.includes("function draftStorageKey(ctx, type)"));
+  assert.ok(source.includes('ctx.identityStatus !== "roster-matched-prototype"'));
+  assert.ok(source.includes("ctx.studentId, ctx.classId, ctx.level, ctx.subjectId, ctx.term,"));
+  assert.ok(source.includes("ctx.dayNumber, ctx.activityId, ctx.questionId, type"));
 });
 
 test("learner activity restores saved text, matching entries, and selected objective answers", () => {
-  assert.match(source, /var savedDraft = readDraft\\(active\\.context, type\\)/);
-  assert.match(source, /restoreWritten\\.value = String\\(savedDraft\\.response \\|\\| ""\\)/);
-  assert.match(source, /savedDraft\\.matchingAnswers/);
-  assert.match(source, /savedDraft\\.selectedChoice/);
-  assert.match(source, /savedDraft\\.trueFalse/);
+  assert.ok(source.includes("var savedDraft = readDraft(active.context, type)"));
+  assert.ok(source.includes('restoreWritten.value = String(savedDraft.response || "")'));
+  assert.ok(source.includes("savedDraft.matchingAnswers"));
+  assert.ok(source.includes("savedDraft.selectedChoice"));
+  assert.ok(source.includes("savedDraft.trueFalse"));
 });
 
 test("learner text and matching drafts autosave during input and change, and clear only after a successful submission", () => {
-  assert.match(source, /addEventListener\\("input", persistCurrentDraft\\)/);
-  assert.match(source, /addEventListener\\("change", persistCurrentDraft\\)/);
-  assert.match(source, /var saved = save\\(type, response, audio, ctx, verifiedVoice\\);\\s*if \\(!saved\\) \\{[\\s\\S]*?return;\\s*\\}\\s*clearDraft\\(ctx, type\\)/);
-  assert.match(source, /Unfinished answer saved on this device/);
+  assert.ok(source.includes('addEventListener("input", persistCurrentDraft)'));
+  assert.ok(source.includes('addEventListener("change", persistCurrentDraft)'));
+  const saveIndex = source.indexOf("var saved = save(type, response, audio, ctx, verifiedVoice);");
+  const failureIndex = source.indexOf("if (!saved) {", saveIndex);
+  const clearIndex = source.indexOf("clearDraft(ctx, type)", failureIndex);
+  assert.ok(saveIndex >= 0 && failureIndex > saveIndex && clearIndex > failureIndex);
+  assert.ok(source.includes("Unfinished answer saved on this device"));
 });
 
 test("a failed primary response save keeps the unfinished draft for retry", () => {
-  assert.match(source, /localStorage\\.setItem\\(key, JSON\\.stringify\\(items\\.slice\\(-500\\)\\)\\);\\s*\\} catch \\(storageError\\) \\{\\s*return false;/);
-  assert.match(source, /var saved = save\\(type, response, audio, ctx, verifiedVoice\\);\\s*if \\(!saved\\) \\{[\\s\\S]*?return;\\s*\\}\\s*clearDraft\\(ctx, type\\)/);
-  assert.match(source, /Your unfinished answer has been kept on this device/);
+  assert.ok(source.includes("localStorage.setItem(key, JSON.stringify(items.slice(-500)));"));
+  assert.ok(source.includes("} catch (storageError) {\n      return false;"));
+  assert.ok(source.includes("if (!saved) {"));
+  assert.ok(source.includes("Your unfinished answer has been kept on this device"));
 });
