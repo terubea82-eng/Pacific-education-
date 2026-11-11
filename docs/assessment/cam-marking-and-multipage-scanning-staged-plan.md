@@ -286,3 +286,63 @@ Before pilot release, prove:
 This is part of Stage 3 CAM implementation, after verified Student IDs, learner/task/question links, curriculum indicator IDs and versioned answer keys exist. Build identity and script-token matching before automated marking. Then add scan ingestion, page grouping, provisional marking, teacher approval and student feedback release. The Global Library and user-capacity stages remain in their already locked order.
 
 **Current boundary:** This addendum is a staging requirement only. No student IDs, scripts, marks, comments, Firebase records or production systems were changed.
+
+
+## Addendum — Separate Daily Teacher Marking from National Examination Marking
+
+**Requirement status:** Mandatory staged design requirement. The daily CAM page is part of the authorised Teacher Workspace. It is not restricted to national examiners. The National Examiners Workspace remains separately restricted.
+
+### A. Daily classroom CAM and multi-page marking — Teacher Workspace
+
+Authorised teachers can use the CAM/scanner page for routine classroom assessment, including daily activities, worksheets, homework, class exercises, topic tests and Term 3 revision.
+
+Daily workflow:
+1. Teacher selects the authorised school, class, subject, date and assigned activity/assessment.
+2. PacEdu loads the relevant class roster and Student IDs; only enrolled learners for that class and assessment are eligible.
+3. Teacher scans with a phone camera, uploads a multi-page PDF/image batch, or uploads files from a compatible document scanner.
+4. PacEdu reads each assessment-specific script token, matches it to the correct Student ID and assessment attempt, groups and orders pages, and flags missing, duplicate, mixed, damaged or unreadable pages.
+5. PacEdu suggests marks only where a valid answer key/rubric and supported response type exist. It links each response to its question ID and curriculum indicator ID.
+6. Teacher reviews the original response beside the suggested mark, marking rationale, answer key/rubric and confidence. Subjective, practical, creative, oral and low-confidence responses require human judgement.
+7. Teacher amends, accepts or rejects suggestions and approves the daily result.
+8. Approved marks and teacher comments are routed to the matching student's private platform. No result is published for unresolved identity or page mismatches.
+9. PacEdu updates the learner's assessment history and indicator progress, identifying strengths, misconceptions and revision needs for the teacher. Recommendations remain advisory and do not silently change the curriculum plan or ability placement.
+
+Teachers may mark only learners, classes and assessments within their permissions. Teacher approval is required before daily marks/comments are released to students. Where school policy requires a second check, keep the result pending until that check is completed.
+
+### B. National examination marking — restricted National Examiners Workspace
+
+National examinations use a separate assessment type, separate access roles, separate script allocation and confidential marking records:
+1. Scripts are scanned and matched to assessment-specific tokens and Student IDs; identity details should be masked from markers where feasible.
+2. Allocated national examiners mark against the authorised national scheme and rubric.
+3. Senior examiners/moderators perform required second marking, sampling and discrepancy resolution.
+4. The chief examiner or authorised examination authority certifies the official result.
+5. Only certified, versioned results transfer to the authorised teacher platform for identity, subject, session and completeness verification.
+6. Teachers cannot alter certified national marks. Any suspected error is referred through the formal examination authority review/appeal process.
+7. Results are released to student platforms only under the examination authority's release instruction and applicable school verification requirements.
+
+### C. Shared technical foundations, separate authority boundaries
+
+Both pathways may reuse the secure scanning engine, page-quality checks, script-token resolution, page ordering, Student ID matching, audit logging and private result-routing service. They must not share permissions or approval authority:
+- Daily classroom results: teacher-controlled marking and teacher approval.
+- National examination results: examiner marking, moderation and examination-authority certification; teacher verification is limited to correct record routing and discrepancy reporting.
+- National examiner-only scripts, draft marks, examiner comments, confidential answer keys and unreleased results must never become visible in ordinary Teacher or Student Workspaces.
+- Daily classroom marks must never be represented as certified national examination results.
+
+### D. Acceptance tests before implementation/pilot
+
+- An authorised teacher can open the daily CAM page and mark a permitted class batch.
+- A teacher cannot access another school's or unauthorised class's scripts.
+- A multi-page daily batch correctly routes every script to its Student ID and assessment attempt.
+- Missing, duplicate, mixed, out-of-order and ambiguous pages are held for correction.
+- Suggested marks remain provisional until teacher approval; student platforms show only approved daily results.
+- National examiner workspace is inaccessible to ordinary teachers and students.
+- National marks cannot be changed by teacher accounts after certification.
+- Only the authorised examination release process publishes national results.
+- Daily and national assessment records remain visibly and technically distinguishable.
+- Every scan, amendment, approval, transfer, verification, hold and release is auditable.
+
+### E. Locked delivery sequence
+
+This distinction is a requirements addition to the existing CAM phase within Stage 3 (student worksheets and teacher guides). Do not start the scanner implementation before the relevant verified indicators, question IDs, answer keys/rubrics, Student IDs, enrolments and permission model are ready. Build daily teacher marking first as the ordinary classroom workflow; build the restricted national marking pathway as a separate authorised workflow using shared safe infrastructure only. Global Library (Stage 4) and user-capacity/personal-information space (Stage 5) remain in the locked order.
+
+**Current boundary:** Documentation only. No teacher accounts, examiner accounts, scans, learner records, marks, comments, Firebase data, production systems or APKs were changed.
