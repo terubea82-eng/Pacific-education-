@@ -81,12 +81,14 @@ test("Form 5–7 generic Science restriction and language safeguards remain inta
   }
 });
 
-test("new subject curriculum worksheet stays clearly marked for official mapping", () => {
-  const window = load();
-  const sheet = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
-    level: "Class 4", subject: "Agriculture", term: "T1", week: 1, day: 2, ability: "developing", skipTermPlan: true
+test("new subject worksheet remains blocked until its official concept and indicator are validated", () => {
+  const window=load();
+  const sheet=window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
+    level:"Class 4",subject:"Agriculture",term:"T1",week:1,day:2,ability:"developing",skipTermPlan:true
   });
-  assert.equal(sheet.subject, "Agriculture");
-  assert.equal(sheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
-  assert.equal(sheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
+  assert.equal(sheet.subject,"Agriculture");
+  assert.equal(sheet.curriculumSchedule.verificationStatus,"NOT_YET_MAPPED");
+  assert.equal(sheet.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(sheet.questions.length,0);
+  assert.equal(sheet.answerKey.length,0);
 });
