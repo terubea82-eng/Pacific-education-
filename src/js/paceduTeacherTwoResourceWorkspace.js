@@ -8,10 +8,10 @@
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "extension", label: "Gold" },
+    { id: "expected", label: "Silver" },
+    { id: "developing", label: "Bronze" },
+    { id: "support", label: "Copper" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
@@ -251,6 +251,10 @@
       aidStatus.textContent="Teaching aid brief downloaded. Status remains PENDING_TEACHER_REVIEW until checked.";
     });
     aids.appendChild(aidDownload);
+    /* Keep the advanced teaching-aid builder available in code, but off this
+       simple page so teachers see only workplans, ability activities and answers. */
+    aids.hidden = true;
+    aids.setAttribute("aria-hidden", "true");
     panel.appendChild(aids);
     planPanel.appendChild(panel);
   }
