@@ -1153,3 +1153,46 @@ A further Ministry-domain search did not locate a current controlled Year 1–8 
 
 **Stage 1 remains IN_PROGRESS.** The new English source is a limited historical post-exam support guide; it does not close the English source gap. No verified Mathematics indicator bank was found in this pass.
 
+
+
+## 13. Ministry Annual Report 2020–2021 — Mathematics pathway and primary syllabus revision evidence (12 November 2026)
+
+**Source:** Fiji Ministry of Education, Heritage & Arts, *Annual Report 2020–2021*.  
+**Official Ministry-hosted PDF:** https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf  
+**Retrieval status:** Relevant report text was returned through the official Ministry PDF's search-indexed text on 12 November 2026. Direct PDF opening timed out in this retrieval pass. This entry therefore records report-level evidence only; no page-image inspection or syllabus text extraction is claimed.
+
+### A. Years 1–8 English and Mathematics
+
+The report states that the Curriculum Development Unit, working with Senior Curriculum Staff for English and Mathematics at primary level, made changes to the Years 1–8 syllabus. It identifies the curriculum-document structure as:
+- Fiji National Curriculum Framework;
+- curriculum framework scope-and-sequence overviews;
+- year-level scope and sequence; and
+- teacher guides.
+
+**What this establishes:** the Ministry reported primary English and Mathematics syllabus changes and identifies the associated document package that PacEdu must obtain.
+
+**What it does not establish:** the report excerpt does not provide the actual year-level CLOs, strand/sub-strand outcomes, achievement indicators, complete sequence, edition/effective date or current supersession status. It cannot be used as the indicator bank.
+
+**PacEdu status:** OFFICIAL_PRIMARY_SYLLABUS_REVISION_REPORTED — CURRENT_CONTROLLED_DOCUMENTS_AND_INDICATORS_NOT_RETRIEVED.
+
+### B. Year 11 Mathematics pathway evidence
+
+The report describes piloting a Year 11 Life Skills Mathematics curriculum in 21 schools. It distinguishes two Mathematics types in its then-current programme description:
+- Life Skills Mathematics; and
+- Applied Mathematics (described in the report as the current Secondary Mathematics Curriculum at that time).
+
+The report's wording and date matter: this is evidence of a 2020–2021 pilot and pathway distinction, not proof of the present 2026 pathway names, implementation status, or the current Year 11–13 syllabus set. It does not provide the detailed outcomes or examination requirements.
+
+**PacEdu status:** HISTORICAL_OFFICIAL_PATHWAY_PILOT_EVIDENCE — CURRENT_PATHWAY_STATUS_AND_SYLLABUSES_NOT_CONFIRMED.
+
+### C. Acquisition action
+
+Request from Curriculum Advisory Services / authorised school FEMIS or Moodle access:
+1. Current Years 1–8 English and Mathematics framework, scope-and-sequence overviews, each year-level scope and sequence, teacher guides, and implementation/supersession circulars.
+2. Current Years 9–10 Mathematics syllabus, scope and sequence, assessment requirements and effective-status circular.
+3. Current Years 11–13 Mathematics pathway list and each pathway's syllabus, prerequisites, contact hours, assessment/examination specifications and amendments.
+4. Written confirmation of whether the Year 11 Life Skills Mathematics pilot became an implemented pathway, was renamed, was replaced, or remains limited to particular schools/years.
+
+Do not merge Life Skills, Applied, Pure or any other Mathematics pathways. Do not allocate the 2020–2021 pilot content to 2026 learners until the Ministry confirms the applicable current pathway and supplies its controlled syllabus.
+
+**Stage 1 remains IN_PROGRESS.** This annual report strengthens the source-acquisition map but supplies no current Mathematics achievement-indicator bank and does not close the primary English/Mathematics source gaps.
