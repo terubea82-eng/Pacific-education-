@@ -149,7 +149,7 @@
         var option = node("option", item[1]); option.value = item[0]; termSelect.appendChild(option);
       });
       var savedTerm = String(window.localStorage.getItem("pacificEducationTerm") || "T1").trim();
-      var savedTermMatch = savedTerm.match(/^T([123])$/i) || savedTerm.match(/^Term\\s*([123])$/i);
+      var savedTermMatch = savedTerm.match(/^T([123])$/i) || savedTerm.match(/^Term\s*([123])$/i);
       termSelect.value = savedTermMatch ? "T" + savedTermMatch[1] : "T1";
       function syncTermContext() {
         var termLabelValue = "Term " + termSelect.value.slice(1);
