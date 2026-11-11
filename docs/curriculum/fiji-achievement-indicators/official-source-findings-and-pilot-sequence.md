@@ -195,3 +195,37 @@ For Year 6 and Year 8, retain the same core learning focus but adjust depth, ind
 - Year 5–8 primary outcomes and all Year 9–13 secondary subject outcomes remain to be retrieved from current controlled syllabus/teacher-guide copies. Do not backfill these gaps with the 2007 NCF, the 2016 resource inventory, or historic guides.
 - ECE remains dependent on confirmation of the post-2025 revision and its effective date.
 - For the 115-day distribution, preserve the exact source level and subject. Do not distribute broad framework MLOs across 115 days as if they were specific subject indicators. A qualified Fiji educator must approve sequencing, prerequisites, assessment windows and school calendar alignment.
+
+
+## 8. Ministry disability-inclusive assessment guidance — design requirements, not curriculum indicators (12 November 2026)
+
+### Source J — A Teacher's Guide to Disability-Inclusive Education in Fiji (Ministry of Education, 2023)
+
+- Official Ministry-hosted URL: https://www.education.gov.fj/wp-content/uploads/2024/09/SIE-guide-high-res-web-version-1.pdf
+- Citation in the guide: Sprunt et al. (2023), *A Teacher's Guide to Disability-Inclusive Education in Fiji*, Ministry of Education.
+- Relevant printed pages: 54–60, especially section 7.1 and 7.4.
+- The guide says assessment tools and strategies should be flexible for students with disabilities. It gives examples such as written assignments, posters and class presentations, and says summative assessments should provide reasonable accommodations.
+- It distinguishes assessment for learning, as learning and of learning; it recommends using varied evidence such as observation, checklists, anecdotal records, informal quizzes, interviews/conversations, self-assessment, work samples, and oral/written responses.
+- For Deaf or hard-of-hearing learners, examples include extra time, interpreter support where appropriate, and alternative response modes such as drawing, oral presentation or signing when the assessed construct is subject knowledge rather than writing/reading comprehension.
+- For blind or low-vision learners, examples include Braille/tactile paper, accessible digital copies, screen-reader software, extra time and large print. Graphs/tables should not be assessed in inaccessible formats if learners have not been taught to access them; an alternative question may assess the same understanding.
+- The guide says adjustments must be individualised and discussed with the child, caregiver and teacher before being finalised. These are guidance examples, not blanket automatic permissions for voice input or a substitute for teacher authorisation.
+
+### PacEdu implementation rule derived from Source J
+
+1. Keep the official curriculum outcome and assessed learning construct unchanged when providing an accommodation, unless a teacher-authorised modification is documented.
+2. Store the student's approved response mode/accommodation separately from the indicator record (for example: keyboard, speech-to-text, signed response with interpreter, Braille/tactile, screen reader, drawing, oral response).
+3. Do not treat speech-to-text or a scribe as automatically appropriate for literacy/writing outcomes; the accommodation must not supply the skill being assessed.
+4. Make audio, speech, screen-reader, tactile and alternative response options available only in ways consistent with the learner's documented needs and teacher approval.
+5. Keep evidence of the response mode, accommodation, teacher approval and any human review with the assessment record.
+6. These inclusion requirements may shape worksheet presentation and evidence collection across ECE–Year 13, but they do not create or replace curriculum indicators.
+
+### Copyright and reuse checkpoint
+
+The Ministry's Policy on Free Educational Resources (approved 1 December 2015) states that school reproduction of Ministry free resources requires Permanent Secretary approval for teaching and learning, and that the resources remain Ministry property under school custody. This is a caution against copying whole guides, textbook pages, illustrations or large blocks of source content into PacEdu. Before commercial or public digital distribution, obtain written Ministry permission or use independently authored activities aligned to properly cited outcomes, with legal review of the applicable copyright terms. The policy itself is a historical 2015 policy; confirm whether it has been superseded before relying on it as the current legal position.
+
+## 9. Source register status after this research pass
+
+- **Newly verified:** the Ministry's 2023 disability-inclusive guide provides concrete flexible-assessment and reasonable-accommodation guidance (not indicator data).
+- **Reconfirmed:** the 2015 Free Educational Resources policy lists resource categories and requires approval for school reproduction; its Appendix A is a historical 2016 resource list, not a current curriculum.
+- **Still not obtained:** the detailed revised Year 1–4 Literacy/Numeracy syllabus and guides; current Year 5–8 subject syllabuses and scope-and-sequence; current Year 9–13 subject syllabuses and assessment specifications; and the final revised ECE guideline with effective date.
+- **Release decision:** do not generate the full daily worksheet bank or publish formal curriculum alignment for any uncovered level/subject. Keep those slots `SOURCE NOT YET LOCATED` or `PENDING_TEACHER_REVIEW`. Existing verified Year 6/8 PE entries remain provisional until current-status confirmation.
