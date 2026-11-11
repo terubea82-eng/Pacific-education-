@@ -172,3 +172,26 @@ For Year 6 and Year 8, retain the same core learning focus but adjust depth, ind
 4. Obtain the current revised ECE guideline and its effective date; the 2022-hosted ECE guideline cannot be presumed to be the final post-2025 revision.
 5. Ask the Ministry Curriculum Advisory Services / relevant subject sections for the current controlled copies and written permission conditions for PacEdu's intended digital adaptation and distribution.
 6. Continue to label all uncovered class/subject combinations **SOURCE NOT YET LOCATED**. No 115-day subject allocation is approved until its source outcomes, prerequisite order, calendar and teacher reviewer are documented.
+
+
+## 7. Curriculum revision status and current-year nomenclature — additional verification (12 November 2026)
+
+### Source H — Ministry of Education Annual Report 2022–2023 (published on Parliament's official website)
+
+- Official URL: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- The report describes a revised primary Literacy and Numeracy curriculum, including clarified curriculum learning outcomes (CLOs), elaborations, explicit literacy/numeracy, formative assessment, and out-of-phase learner planning.
+- It reports that final Year 1–4 syllabus and Literacy/Numeracy Guides were supplied to 648 schools, while 250 draft copies were supplied to 90 trial schools in Phase 1 (Years 1–4).
+- This is a significant version-control warning: the NCF is a framework, and older Year 1–8 English/Mathematics resources and teacher guides may not represent the revised literacy/numeracy curriculum now in use. The annual report is not itself the full syllabus or indicator bank.
+
+### Source I — Ministry/NIC official school education description (retrieved 12 November 2026)
+
+- URL: https://nic.hec.org.fj/school-education
+- Describes the current school structure as ECE, Year 1–8 primary, and Year 9–13 secondary.
+- This means PacEdu must not assume that the user's legacy labels "Class 1–8" and "Form 3–7" can be imported as official source labels without an explicit conversion table. Keep Fiji source labels (ECE / Year 1–8 / Year 9–13) in the source record; PacEdu may show the user's preferred Class/Form labels as display aliases only after Ministry equivalence is confirmed.
+
+### Coverage decision
+
+- The revised Year 1–4 Literacy/Numeracy materials are now the first priority for primary indicator extraction. The report establishes that final copies were distributed, but the controlled copies appear to be supplied to schools through Ministry channels (FEMIS/Moodle) rather than reliably exposed as public PDF downloads in this search.
+- Year 5–8 primary outcomes and all Year 9–13 secondary subject outcomes remain to be retrieved from current controlled syllabus/teacher-guide copies. Do not backfill these gaps with the 2007 NCF, the 2016 resource inventory, or historic guides.
+- ECE remains dependent on confirmation of the post-2025 revision and its effective date.
+- For the 115-day distribution, preserve the exact source level and subject. Do not distribute broad framework MLOs across 115 days as if they were specific subject indicators. A qualified Fiji educator must approve sequencing, prerequisites, assessment windows and school calendar alignment.
