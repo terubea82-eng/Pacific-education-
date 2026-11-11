@@ -1,4 +1,5 @@
 /* PacEdu — two-resource teacher subject/class workspace.
+ * Simple-page presentation: Gold, Silver, Bronze and Copper stay together in the selected subject.
  * Keeps teacher instructions, ability worksheets and activity-linked teaching aids together after subject -> class selection.
  * Learner evidence is used only when an explicit reviewed mark exists for the same roster learner.
  * Camera photos remain pending until reviewed; no AI-marking claim is made.
