@@ -35,6 +35,10 @@ The current student-download renderer needs a focused review and improvement bef
 11. **Teacher approval:** no learner activity is released until the responsible teacher approves the exact class, subject, term, week, day, objective, question set and answer key/rubric.
 12. **School calendar:** actual dates come from the school's configured calendar and timetable. If absent, show that setup is required; never invent dates.
 
+## 2A. First focused worksheet fix completed in staging
+
+The separate daily student worksheet and five-day classwork-book renderer now formats any multiple-choice option list as A, B, C and D. It refuses a question with anything other than four non-empty options and reports that teacher correction is required. Non-MCQ questions remain unchanged. A focused automated test file covers these cases. This is a narrow rendering safeguard; it does not yet prove that every content-bank question, class, subject or day is complete or teacher-approved.
+
 ## 3. Required worksheet layout
 
 Each daily worksheet should be short, clear and mobile-first, with a print-friendly version:
