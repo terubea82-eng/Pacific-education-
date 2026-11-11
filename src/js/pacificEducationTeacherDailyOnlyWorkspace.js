@@ -22,7 +22,9 @@
     var grid=document.getElementById("paceduTeacherSubjectGrid");
     var list=document.getElementById("paceduTeacherClassList");
     var planPanel=document.getElementById("pacificEducationLinkedTeacherPlans");
+    var answerPanel=document.getElementById("pacificEducationTeacherQuickAnswer");
     if(!grid||!list)return;
+    if(answerPanel){answerPanel.hidden=true;answerPanel.setAttribute("aria-hidden","true");}
     grid.querySelectorAll("[data-pacedu-teacher-subject]").forEach(function(b){
       var active=b.getAttribute("data-pacedu-teacher-subject")===subject;
       /* Restore the stable box name before a class-specific display label is applied. */
@@ -111,6 +113,18 @@
           window.localStorage.setItem("pacificEducationClassLevel",item.level);
           if(item.id)window.localStorage.setItem("pacificEducationClassId",item.id);
         }catch(e){}
+        /* Keep manual answer entry inside the selected subject/class only.
+           The teacher form stays hidden until a valid subject and class are selected. */
+        if(answerPanel){
+          var answerClass=document.getElementById("peQuickAnswerClass");
+          var answerSubject=document.getElementById("peQuickAnswerSubject");
+          var answerTerm=document.getElementById("peQuickAnswerTerm");
+          var answerDay=document.getElementById("peQuickAnswerDay");
+          if(answerClass)answerClass.value=item.id||item.level;
+          if(answerSubject)answerSubject.value=subject;
+          if(answerTerm)answerTerm.value=window.localStorage.getItem("pacificEducationTerm")||"Term 1";
+          if(answerDay)answerDay.value=window.localStorage.getItem("currentDayNumber")||"1";
+        }
         var planningSubject=document.getElementById("paceduTeacherPlanningSubject");
         if(planningSubject)planningSubject.value=subject;
         var planningClass=document.getElementById("paceduTeacherPlanningClass");
@@ -149,6 +163,11 @@
           dailyHeading.id="paceduTeacherSelectedDailyHeading";
           selectedCard.appendChild(dailyHeading);
           selectedCard.appendChild(dailySection);
+        }
+        if(answerPanel&&selectedCard){
+          selectedCard.appendChild(answerPanel);
+          answerPanel.hidden=false;
+          answerPanel.removeAttribute("aria-hidden");
         }
         if(panel){
           panel.hidden=false;
@@ -245,6 +264,15 @@
       host.appendChild(shell);
     }else if(!shell.contains(grid)){
       shell.appendChild(grid);
+    }
+    /* Preserve the existing manual answer form instead of deleting it when
+       the dashboard is simplified. It is moved into the selected subject box
+       after the teacher chooses a class. */
+    var answerPanel=document.getElementById("pacificEducationTeacherQuickAnswer");
+    if(answerPanel){
+      if(!shell.contains(answerPanel))shell.appendChild(answerPanel);
+      answerPanel.hidden=true;
+      answerPanel.setAttribute("aria-hidden","true");
     }
     /* Keep the linked-plan/resource panel inside the subject boxes even when
        a dashboard renderer has replaced the grid and the original panel. */
