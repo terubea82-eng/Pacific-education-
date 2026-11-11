@@ -115,48 +115,30 @@ test("the scheduled curriculum workspace retains subject metadata but blocks unv
   }
 });
 
-test("every scheduled subject and supported level receives a five-step see-read-hear lesson with an honest curriculum trace", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const levels = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
-  for (const level of levels) {
-    for (const subject of api.subjects) {
-      const worksheet = api.getCurriculumWorksheet({
-        level, subject, term: "T1", week: 1, day: 2, ability: "developing"
-      });
-      assert.equal(worksheet.level, level);
-      assert.equal(worksheet.subject, subject);
-      assert.ok(worksheet.dailyLesson, level + " / " + subject);
-      assert.equal(worksheet.dailyLesson.steps.length, 5);
-      assert.equal(Array.from(worksheet.dailyLesson.steps, x => x.mode).join("|"),
-        ["SEE / VIDEO FRAME", "READ", "HEAR / AUDIO", "TRY", "CHECK / REFLECT"].join("|"));
-      assert.ok(worksheet.dailyLesson.audioNarration.transcript.length > 80);
-      assert.ok(worksheet.dailyLesson.learnerText.passage.length > 10);
-      assert.ok(worksheet.dailyLesson.workedExample.length > 10);
-      assert.equal(worksheet.dailyLesson.curriculumAlignment.level, level);
-      assert.equal(worksheet.dailyLesson.curriculumAlignment.subject, subject);
-      assert.equal(worksheet.dailyLesson.curriculumAlignment.achievementIndicator, null);
-      assert.equal(worksheet.dailyLesson.curriculumAlignment.verificationStatus, "NOT_YET_MAPPED");
-      assert.match(worksheet.dailyLesson.curriculumAlignment.rule, /Do not invent an official achievement indicator/);
-    }
+test("daily lesson metadata remains available while unverified learner content is suppressed", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const level of api.levels) for(const subject of api.subjects){
+    const w=api.getCurriculumWorksheet({level,subject,term:"T1",week:1,day:2,ability:"developing"});
+    assert.ok(w.dailyLesson);
+    assert.equal(w.dailyLesson.curriculumAlignment.level,level);
+    assert.equal(w.dailyLesson.curriculumAlignment.subject,subject);
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.dailyLesson.steps.length,0);
+    assert.equal(w.dailyLesson.learnerText.passage,"");
+    assert.equal(w.questions.length,0);
   }
 });
 
-test("daily concept focus changes by day and each supported class has its own learning target", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const levels = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
-  const objectives = levels.map(level => api.getCurriculumWorksheet({
-    level,subject:"Mathematics",term:"T1",week:2,day:3,ability:"expected"
-  }).dailyLesson.classLevelObjective);
-  assert.equal(new Set(objectives).size, levels.length);
-  const dailyConcepts = [1,2,3,4,5].map(day => api.getCurriculumWorksheet({
-    level:"Class 4",subject:"Science",term:"T1",week:2,day,ability:"developing"
-  }).dailyLesson.learningConcept);
-  assert.equal(new Set(dailyConcepts).size, 5);
-  const learner = api.getCurriculumWorksheet({
-    level:"Class 4",subject:"Science",term:"T1",week:2,day:4,ability:"developing"
-  }).dailyLesson;
-  assert.match(learner.learningIntention, /apply the skill to a new example/i);
-  assert.match(learner.classLevelObjective, /Class 4|Explain the concept/i);
+test("unverified curriculum slots do not expose daily concepts or learner targets", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const day of [1,2,3,4,5]){
+    const w=api.getCurriculumWorksheet({level:"Class 4",subject:"Science",term:"T1",week:2,day,ability:"developing"});
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.dailyLesson.learningConcept,"");
+    assert.equal(w.dailyLesson.learningIntention,"");
+    assert.equal(w.dailyLesson.classLevelObjective,"");
+    assert.equal(w.questions.length,0);
+  }
 });
 
 test("an unvalidated legacy indicator candidate cannot release learner activities", () => {
