@@ -239,6 +239,15 @@
     var verifiedVoice = !!window.__pacificEducationVerifiedVoiceAttempt;
     readAudio(function(audio) {
       if (verifiedVoice) { try { window.__pacificEducationVerifiedVoiceAttempt = false; } catch (e) {} }
+      /* Fail closed: this pilot has no server-verifiable, learner-specific special-education
+         voice authorisation source. Never accept microphone or uploaded audio until one exists. */
+      if (verifiedVoice || audio) {
+        var voicePanel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
+        var voiceStatus = document.getElementById("peActivityDraftStatus");
+        if (voiceStatus) voiceStatus.textContent = "Voice answer not submitted. A teacher-authorisation service must verify permission for this learner first. Your text answer and Listen control remain available.";
+        else if (voicePanel) voicePanel.setAttribute("aria-label", "Voice answer locked pending teacher authorisation");
+        return;
+      }
       var saved = save(type, response, audio, ctx, verifiedVoice);
       if (!saved) {
         var savePanel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
@@ -286,8 +295,8 @@
     var prompt = active.context.questionText;
     var audio = active.context.audioText || prompt;
     var title = (lesson && lesson.title ? lesson.title : "Daily Activity") + " — " + LABELS[type];
-    var audioButton = '<button type="button" id="peActivityListen" aria-label="Listen to the activity question">🔊 Listen to question</button><button type="button" id="peActivityRecord" aria-label="Record your voice answer">🎙️ Record voice answer</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
-    var audioFile = '<label> 🎤 Attach an audio recording (optional) <input id="peActivityAudio" type="file" accept="audio/*"></label>';
+    var audioButton = '<button type="button" id="peActivityListen" aria-label="Listen to the activity question">🔊 Listen to question</button><span id="peActivityRecordStatus" aria-live="polite"></span>';
+    var audioFile = '<p class="pe-voice-answer-lock" role="status">Voice answers are temporarily unavailable until a teacher-authorisation service can verify permission for this learner. You can still listen, type an answer, or ask your teacher to record a paper answer.</p>';
 
     var curriculumInfo = ""; if (active.context.achievementIndicator || active.context.concept || active.context.strand || active.context.subStrand) { curriculumInfo += '<div class="pe-daily-curriculum-context" aria-label="Daily curriculum alignment">'; if (active.context.achievementIndicator) curriculumInfo += '<p><strong>Achievement Indicator:</strong> ' + escape(active.context.achievementIndicator) + '</p>'; if (active.context.strand) curriculumInfo += '<p><strong>Strand:</strong> ' + escape(active.context.strand) + '</p>'; if (active.context.subStrand) curriculumInfo += '<p><strong>Sub-strand / Concept:</strong> ' + escape(active.context.subStrand) + '</p>'; if (active.context.activitySequence) curriculumInfo += '<p><strong>Activity Progression:</strong> Activity ' + escape(String(active.context.activitySequence)) + '</p>'; curriculumInfo += '</div>'; }
     var body = '<div class="activity">' + curriculumInfo + '<p>' + escape(prompt) + '</p>' + audioButton + audioFile;
@@ -343,9 +352,7 @@
 
     body += '<p id="peActivityDraftStatus" role="status" aria-live="polite"></p>';
     body += '<div class="pe-response-mode" style="margin-top:14px;padding:12px;border:2px solid currentColor;">' +
-      '<p><strong>Response options:</strong> Answer by text or audio. Audio may be used for any question type during the pilot.</p>' +
-      '<button type="button" id="peActivitySubmitVoice">🎙️ Submit Voice Answer</button>' +
-      '<span id="peActivityVoiceSubmitStatus" aria-live="polite"></span>' +
+      '<p><strong>Response options:</strong> Type your answer here, or ask your teacher to enter your paper answer. Listening to the question remains available to everyone.</p>' +
       '</div>';
     body += '</div>';
     var activityPanel = active.context.renderTargetId ? document.getElementById(active.context.renderTargetId) : document.getElementById("dailyLessonActivity");
