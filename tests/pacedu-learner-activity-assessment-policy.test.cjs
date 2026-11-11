@@ -110,3 +110,16 @@ test("learner runtime advances a worksheet sequence only after the answer save s
   const continueIndex = source.indexOf("continueSequence();");
   assert.ok(saveIndex >= 0 && failureIndex > saveIndex && continueIndex > failureIndex);
 });
+
+test("daily voice answers fail closed until learner-specific teacher permission can be verified", () => {
+  const protocol = fs.readFileSync("src/js/pacificEducationBlindAttemptProtocol.js", "utf8");
+  assert.match(source, /Voice answers are temporarily unavailable until a teacher-authorisation service can verify permission for this learner/);
+  assert.match(source, /if \(verifiedVoice \|\| audio\)/);
+  assert.match(source, /Voice answer not submitted/);
+  assert.doesNotMatch(source, /id="peActivityRecord"/);
+  assert.doesNotMatch(source, /id="peActivitySubmitVoice"/);
+  assert.match(source, /id="peActivityListen"/);
+  assert.match(protocol, /Voice answers are locked until a teacher-authorisation service can verify permission for this learner/);
+  assert.doesNotMatch(protocol, /id="peBlindListenAnswer"/);
+  assert.match(protocol, /verified teacher authorisation/);
+});
