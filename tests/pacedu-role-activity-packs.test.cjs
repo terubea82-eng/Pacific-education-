@@ -206,6 +206,9 @@ test("daily worksheet questions open one-by-one in the interactive learner runti
   assert.match(source, /PacificEducationActivity\.render\(questionType/);
   assert.match(source, /questionSequenceId/);
   assert.match(source, /response\.studentId/);
+  assert.match(source, /sequenceStudent\.studentReference/);
+  assert.match(source, /sequenceStudent\.assignmentStatus==="roster-matched-prototype"/);
+  assert.match(source, /sequenceAssignedClass\.studentRefs\.indexOf/);
   assert.match(source, /first unanswered question/);
   assert.match(source, /answerEntry\.answer/);
 });
