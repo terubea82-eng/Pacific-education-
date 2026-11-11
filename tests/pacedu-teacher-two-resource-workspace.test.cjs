@@ -35,18 +35,19 @@ test("teacher subject/class workspace offers only two resource types and safely 
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
   await expect(panel.getByRole("heading", { name: "1. Teacher Instructions — Read or Print", exact: true })).toBeVisible();
   await expect(panel.getByRole("heading", { name: "2. Daily Activities + Revision + Practice Exam — By Ability", exact: true })).toBeVisible();
+  await expect(panel.locator('[aria-label="Teacher resource library and teaching aid builder"]')).toBeHidden();
   await expect(panel).toContainText("FEMIS-1");
-  await expect(panel).toContainText("provisional worksheet recommendation: Expected");
+  await expect(panel).toContainText("provisional worksheet recommendation: Silver");
   await expect(panel).toContainText("FEMIS-2");
   await expect(panel).toContainText("No reviewed mark found");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(39))).toBe("support");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(59))).toBe("developing");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(79))).toBe("expected");
   expect(await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.recommendedBand(80))).toBe("extension");
-  await expect(panel.getByRole("button", { name: "Prepare Foundation pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await expect(panel.getByRole("button", { name: "Prepare Developing pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await expect(panel.getByRole("button", { name: "Prepare Expected pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true })).toBeEnabled();
-  await expect(panel.getByRole("button", { name: "Prepare Advanced pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Copper pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Bronze pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true })).toBeEnabled();
+  await expect(panel.getByRole("button", { name: "Prepare Gold pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
   await panel.getByRole("button", { name: "Prepare Expected pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
 });
@@ -66,10 +67,10 @@ test("all four ability packs remain available when no reviewed evidence exists",
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
   const labels = [
-    "Prepare Foundation pack: daily activities + revision + mock exam (no reviewed marks yet)",
-    "Prepare Developing pack: daily activities + revision + mock exam (no reviewed marks yet)",
-    "Prepare Expected pack: daily activities + revision + mock exam (no reviewed marks yet)",
-    "Prepare Advanced pack: daily activities + revision + mock exam (no reviewed marks yet)"
+    "Prepare Copper pack: daily activities + revision + mock exam (no reviewed marks yet)",
+    "Prepare Bronze pack: daily activities + revision + mock exam (no reviewed marks yet)",
+    "Prepare Silver pack: daily activities + revision + mock exam (no reviewed marks yet)",
+    "Prepare Gold pack: daily activities + revision + mock exam (no reviewed marks yet)"
   ];
   for (const label of labels) await expect(panel.getByRole("button", { name: label, exact: true })).toBeEnabled();
   await panel.getByRole("button", { name: labels[0], exact: true }).click();
