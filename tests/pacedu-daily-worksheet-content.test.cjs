@@ -198,6 +198,34 @@ test("Class 1 English Day 2 starts with the planned introduction activity", () =
   assert.equal(worksheet.answerKey[0].answer, "Class 1");
 });
 
+test("scheduled daily questions have stable ability-neutral IDs and matching answer-key links", () => {
+  const api = load().PacEduDailyWorksheetContent;
+  const options = {level:"Class 1",subject:"English",term:"T1",week:1,day:2};
+  const support = api.getCurriculumWorksheet(Object.assign({}, options, {ability:"support"}));
+  const extension = api.getCurriculumWorksheet(Object.assign({}, options, {ability:"extension"}));
+  assert.equal(support.questionSequenceVersion, 1);
+  assert.equal(support.questionSequenceId, extension.questionSequenceId);
+  assert.equal(support.activityId, extension.activityId);
+  assert.equal(support.questions.length, 4);
+  assert.equal(support.answerKey.length, 4);
+  for (let index = 0; index < support.questions.length; index += 1) {
+    const question = support.questions[index];
+    const key = support.answerKey[index];
+    assert.ok(question.questionId);
+    assert.equal(question.sequenceId, support.questionSequenceId);
+    assert.equal(question.sequencePosition, index + 1);
+    assert.equal(question.sequenceVersion, support.questionSequenceVersion);
+    assert.equal(key.questionId, question.questionId);
+    assert.equal(key.sequenceId, question.sequenceId);
+    assert.equal(key.sequencePosition, question.sequencePosition);
+    assert.equal(key.sequenceVersion, question.sequenceVersion);
+    assert.equal(question.prompt, extension.questions[index].prompt);
+  }
+  const nextDay = api.getCurriculumWorksheet(Object.assign({}, options, {day:3,ability:"support"}));
+  assert.notEqual(nextDay.activityId, support.activityId);
+  assert.notEqual(nextDay.questionSequenceId, support.questionSequenceId);
+});
+
 
 test("term-week-day scheduler returns concrete worksheets with explicit curriculum verification fields", () => {
   const api = load().PacEduDailyWorksheetContent;
