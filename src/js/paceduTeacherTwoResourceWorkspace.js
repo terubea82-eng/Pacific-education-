@@ -121,6 +121,7 @@
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
     var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
+    var hasReviewedEvidence = false;
     var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
       evidence.appendChild(node("p", "No learner references are connected to this class roster yet. Do not assign an individual ability group until the roster is linked."));
@@ -129,11 +130,9 @@
       students.forEach(function (ref) {
         var row = node("li");
         var mark = priorReviewedEvidence(ref, classId, subject);
-        var rawMark = mark && (mark.markPercent != null ? mark.markPercent : mark.scorePercent != null ? mark.scorePercent : mark.mark != null ? mark.mark : mark.score);
-        var band = mark ? BANDS.filter(function (b) { return b.id === bandFor(rawMark); })[0] : null;
-        if (band) groupCounts[band.id] += 1;
+        if (mark) hasReviewedEvidence = true;
         row.textContent = String(ref) + " — " + (mark ?
-          "Reviewed mark found (Day " + String(mark.day || mark.dayNumber || "?") + "); provisional worksheet recommendation: " + (band ? band.label : "manual review required") :
+          "Teacher-reviewed evidence recorded (Day " + String(mark.day || mark.dayNumber || "?") + "); group placement still requires repeated skill evidence and teacher review." :
           "No reviewed mark found for this subject; ability group remains unconfirmed.");
         rosterList.appendChild(row);
       });
@@ -161,10 +160,10 @@
       groupStatus.setAttribute("aria-live", "polite");
       if (!students.length) {
         groupStatus.textContent = "You can prepare all four class-wide packs now. Link the learner roster and review baseline evidence before assigning individual students.";
-      } else if (!Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; })) {
-        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use the baseline assessment and teacher review before assigning learners.";
+      } else if (!hasReviewedEvidence) {
+        groupStatus.textContent = "No reviewed marks are available for this subject yet. All four class-wide practice packs remain available; use a baseline assessment and review repeated skill evidence before considering group placement.";
       } else {
-        groupStatus.textContent = "Counts show only learners with an explicitly reviewed mark for this subject. They are informational only: a pack can be prepared even when its count is zero. Missing or pending evidence never means low ability.";
+        groupStatus.textContent = "Reviewed evidence exists, but one mark does not assign a learner to a group. Review repeated skill evidence and the support used before confirming a subject-specific pathway. All four class-wide packs remain available.";
       }
       worksheets.appendChild(groupStatus);
       if (worksheetAvailability.available) BANDS.forEach(function (band) {
@@ -187,7 +186,7 @@
         groupStatus.textContent = worksheetAvailability.note || "Subject-specific daily worksheets are not available yet. No other subject will be substituted.";
         groupStatus.setAttribute("data-content-status", "CONTENT_NOT_AVAILABLE");
       }
-      if (worksheetAvailability.available && (!students.length || !Object.keys(groupCounts).some(function (id) { return groupCounts[id] > 0; }))) {
+      if (worksheetAvailability.available && (!students.length || !hasReviewedEvidence)) {
         var baseline = node("p", "For a new class or Day 1 baseline, prepare any ability pack as needed, then review the baseline activity before assigning individual learners. Do not treat absent work as a low score.");
         worksheets.appendChild(baseline);
       }
