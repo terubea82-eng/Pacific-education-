@@ -52,3 +52,25 @@ test("verified voice responses always remain pending teacher review", () => {
   assert.equal(result.score, null);
   assert.equal(result.assessed, false);
 });
+
+test("unfinished learner answers are scoped to a verified learner and exact activity/question", () => {
+  assert.match(source, /function draftStorageKey\(ctx, type\)/);
+  assert.match(source, /ctx\.identityStatus !== "roster-matched-prototype"/);
+  assert.match(source, /ctx\.studentId, ctx\.classId, ctx\.level, ctx\.subjectId, ctx\.term,/);
+  assert.match(source, /ctx\.dayNumber, ctx\.activityId, ctx\.questionId, type/);
+});
+
+test("learner activity restores saved text, matching entries, and selected objective answers", () => {
+  assert.match(source, /var savedDraft = readDraft\(active\.context, type\)/);
+  assert.match(source, /restoreWritten\.value = String\(savedDraft\.response \|\| ""\)/);
+  assert.match(source, /savedDraft\.matchingAnswers/);
+  assert.match(source, /savedDraft\.selectedChoice/);
+  assert.match(source, /savedDraft\.trueFalse/);
+});
+
+test("learner text and matching drafts autosave during input and change, and clear only after submission", () => {
+  assert.match(source, /addEventListener\("input", persistCurrentDraft\)/);
+  assert.match(source, /addEventListener\("change", persistCurrentDraft\)/);
+  assert.match(source, /save\(type, response, audio, ctx, verifiedVoice\);\s*clearDraft\(ctx, type\)/);
+  assert.match(source, /Unfinished answer saved on this device/);
+});
