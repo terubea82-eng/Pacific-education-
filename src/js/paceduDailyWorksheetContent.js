@@ -577,6 +577,33 @@
       curriculumWeek ? curriculumWeek.topic : selected.label + " Week " + week,
       curriculumWeek ? curriculumWeek.focus : selected.label + " Week " + week + " " + subject + " concept practice"
     );
+    /* Stable, ability-neutral question identity for safe learner resume.
+       Increment the sequence version if the approved question order/content is deliberately replaced. */
+    var activityScope = [level, subject, block, "week-" + week, "day-" + day].map(function (part) {
+      return String(part || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    }).join(":");
+    var activityId = "pacedu-fiji-daily-v1:" + activityScope;
+    var questionSequenceVersion = 1;
+    var questionSequenceId = activityId + ":sequence-v" + questionSequenceVersion;
+    worksheet.activityId = activityId;
+    worksheet.questionSequenceId = questionSequenceId;
+    worksheet.questionSequenceVersion = questionSequenceVersion;
+    worksheet.questions = (worksheet.questions || []).map(function (question, index) {
+      return Object.assign({}, question, {
+        questionId: activityId + ":question:" + String(index + 1),
+        sequenceId: questionSequenceId,
+        sequencePosition: index + 1,
+        sequenceVersion: questionSequenceVersion
+      });
+    });
+    worksheet.answerKey = (worksheet.answerKey || []).map(function (entry, index) {
+      return Object.assign({}, entry, {
+        questionId: worksheet.questions[index] && worksheet.questions[index].questionId || "",
+        sequenceId: questionSequenceId,
+        sequencePosition: index + 1,
+        sequenceVersion: questionSequenceVersion
+      });
+    });
     var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
     var classReference = String(options.classReference || "").trim();
     var indicatorTerm = String(options.curriculumTerm || options.term || "").trim();
