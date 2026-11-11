@@ -760,7 +760,18 @@
       worksheet.questions = [];
       worksheet.answerKey = [];
       worksheet.tasks = [];
-      worksheet.dailyLesson.activities = [];
+      worksheet.readingText = "";
+      worksheet.topic = "Curriculum source pending";
+      if (worksheet.dailyLesson) {
+        worksheet.dailyLesson.activities = [];
+        worksheet.dailyLesson.steps = [];
+        worksheet.dailyLesson.learningConcept = "";
+        worksheet.dailyLesson.learningIntention = "";
+        worksheet.dailyLesson.classLevelObjective = "";
+        worksheet.dailyLesson.workedExample = "";
+        if (worksheet.dailyLesson.learnerText) worksheet.dailyLesson.learnerText.passage = "";
+        if (worksheet.dailyLesson.audioNarration) worksheet.dailyLesson.audioNarration.transcript = "";
+      }
       worksheet.termLearningPlan = null;
       worksheet.revisionPaper = null;
       worksheet.practiceExamPaper = null;
