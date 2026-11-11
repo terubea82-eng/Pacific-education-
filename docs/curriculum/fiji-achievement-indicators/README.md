@@ -1,6 +1,6 @@
 # Fiji Curriculum Achievement Indicators — Teacher Reference Folder
 
-**Status:** staging template only. No achievement-indicator text is populated or claimed as Ministry-verified.
+**Status:** staging source register + blank distribution template. A partial set of source-backed records and a teacher-designed 25-day sequence are now documented in `official-source-findings-and-pilot-sequence.md`. This is not a complete ECE–Form 7 indicator bank; no complete class/subject distribution is claimed.
 
 ## Purpose
 
@@ -14,13 +14,13 @@ Provide one controlled reference folder for teachers and authorised curriculum p
 - School-year distribution: Term 1 = 9 weeks; Term 2 = 9 weeks; Term 3 = 5 weeks; five teaching days per week.
 - Total: 45 + 45 + 25 = **115 teaching-day slots per selected class and subject**.
 
-The framework baseline is not a substitute for the current official subject syllabus, scope-and-sequence or achievement-indicator document. Do not populate or publish an indicator until its exact wording and source location are verified.
+The framework baseline is not a substitute for the current official subject syllabus, scope-and-sequence or achievement-indicator document. Do not populate or publish an indicator until its exact wording and source location are verified. The initial source findings file records what has been verified so far and explicitly lists the missing levels and subjects.
 
 ## Folder contents
 
 | File | Purpose |
 |---|---|
-| `README.md` | Governance, visibility and daily-activity linking rules |
+| `README.md` | Governance, visibility and daily-activity linking rules |\n| `official-source-findings-and-pilot-sequence.md` | Partial official-source register, extracted Year 6/8 PE indicators, a labelled teacher-designed 25-day safety sequence, and missing-source coverage list |
 | `fiji-achievement-indicator-day-slots.csv` | Blank 115-day distribution template for one class + subject |
 | `achievement-indicator-record.schema.json` | Machine-readable required-field contract for each indicator record |
 
