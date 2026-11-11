@@ -102,7 +102,7 @@ On 12 November 2026, the official news index displayed the 3 November Bill and P
 ## Provisional source records — Cabinet meetings of 13 and 20 October 2026
 
 **Review date:** 12 November 2026.  
-**Source limitation:** The official Cabinet release index and the official search-indexed text for both releases were retrieved. Direct page opening timed out during this pass. The text below is therefore recorded as **OFFICIAL_SEARCH_INDEX_TEXT_REVIEWED — DIRECT_PAGE_FETCH_TIMEOUT**. It is not marked as direct-page-open verified. Re-open the underlying official pages and confirm the complete text before turning any detail into a learner-facing activity.
+**Verification update — 12 November 2026:** The official Fiji Government search-indexed page text for both releases has now been retrieved in full, including all six items in the 18th meeting and all five items in the 19th meeting. Direct page opening still timed out. Status: **OFFICIAL_GOVERNMENT_PAGE_TEXT_RETRIEVED_VIA_SEARCH_INDEX — DIRECT_PAGE_FETCH_TIMEOUT**. This is stronger than a short search snippet, but it is not a direct-page-open verification. Keep this distinction in the audit trail; re-open the page when available before using detailed figures in an assessed student activity.
 
 ### Cabinet 18th meeting — 13 October 2026
 
@@ -141,5 +141,21 @@ On 12 November 2026, the official news index displayed the 3 November Bill and P
 
 **Reconciliation note — PAFCO:** The 19th Cabinet release is recorded as Cabinet endorsement of the proposed guarantee. The 3 November Government news release is recorded separately as the Government seeking Parliament's approval. These are distinct steps in the process and must not be collapsed into a claim that the funds were paid or the guarantee fully implemented.
 
-**Recheck before lesson use:** Directly open each official Cabinet release, compare the complete page against these provisional records, capture any omitted items or corrections, and update this status to DIRECT_PAGE_VERIFIED only after that check. Until then, these records may guide source discovery but must not supply detailed assessed facts to a student activity.
+**Recheck before assessed lesson use:** Directly open each official Cabinet release when retrieval is available, compare the complete page against these records, and capture any corrections. Until direct verification is complete, use the records only for source discovery or teacher-reviewed current-affairs context; do not base assessed questions on precise financial figures or other details that have not been independently checked.
+
+
+
+### Verification audit note — 12 November 2026
+
+The Government search index returned the full official page text for both Cabinet releases during this pass, including the complete six-item 18th meeting and five-item 19th meeting. Direct opens of the underlying URLs continued to time out. The records above are therefore no longer based solely on abbreviated search snippets, but remain labelled as search-index retrieval rather than direct-page verification.
+
+**Important precision corrections:**
+- Cabinet 18: the Lautoka shipbuilding/repair facility remains a proposal following feasibility work; Cabinet endorsed the study outcomes and preferred site, not a completed construction contract.
+- Cabinet 18: the maritime strategy is Cabinet-endorsed; delivery remains subject to planning, budgets and appropriation.
+- Cabinet 18: the Fiji–Philippines policy-consultation MOU and pineapple-branding MOU are Cabinet-endorsed arrangements; do not state that every proposed activity or export outcome has already occurred.
+- Cabinet 19: the National Alcohol and Drug Recovery Centre is at preliminary project-preparation stage, not operating.
+- Cabinet 19: the Mineral Exploration and Mining Bill 2026 and Mine Safety Management Bill 2026 are proposed Bills, not enacted Acts; the Cabinet text says consultation was to occur before tabling.
+- Cabinet 19: Nadi city status was a proposal with formal declaration anticipated for December 2026; do not teach it as already declared without checking a later official notice.
+- Cabinet 19: the biodiversity report was Cabinet-endorsed.
+- Cabinet 19: the additional PAFCO guarantee was Cabinet-endorsed. The later 3 November Government release described the Government as seeking Parliament's approval. Do not call it paid, drawn down or fully implemented without an authoritative later record.
 
