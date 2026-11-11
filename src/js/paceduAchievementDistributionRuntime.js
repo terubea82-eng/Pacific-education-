@@ -61,7 +61,8 @@
         skipped += 1;
         return;
       }
-      if (r.country !== "Fiji" || !r.class_level || !r.subject_id ||
+      var validLevel = r.class_level === "ECE" || /^Class [1-8]$/.test(r.class_level) || /^Form [3-7]$/.test(r.class_level);
+      if (r.country !== "Fiji" || !r.framework_version || !validLevel || !r.subject_id ||
           !/^Term [123]$/.test(r.term) || !/^\d+$/.test(r.week) ||
           !/^\d+$/.test(r.day) || Number(r.day) < 1 || Number(r.day) > 5 ||
           !r.indicator_id || !r.indicator_text) {
@@ -83,7 +84,8 @@
         r.educator_review_status === "VALIDATED" &&
         !!r.source_document_title && !!r.issuing_authority &&
         !!r.source_version && !!r.source_page_or_section &&
-        (r.source_url.indexOf("https://") === 0 || r.source_url.indexOf("http://") === 0) && !!r.approved_by && !!r.approved_at;
+        (r.source_url.indexOf("https://") === 0 || r.source_url.indexOf("http://") === 0) &&
+        !!r.approved_by && !!r.approved_at && !isNaN(Date.parse(r.approved_at));
       accepted.push({
         jurisdiction: "Fiji",
         curriculumVersion: r.framework_version,
@@ -117,8 +119,8 @@
       });
       if (!verified) pending += 1;
     });
-    rows = accepted;
-    return { success: errors.length === 0, imported: accepted.length, pendingReview: pending, skippedBlankSlots: skipped, errors: errors, prototype: true };
+    rows = errors.length ? [] : accepted;
+    return { success: errors.length === 0, imported: errors.length ? 0 : accepted.length, pendingReview: errors.length ? 0 : pending, skippedBlankSlots: skipped, errors: errors, prototype: true };
   }
 
   function getDailyAssignment(filters) {
