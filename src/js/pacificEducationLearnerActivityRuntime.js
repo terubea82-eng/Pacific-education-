@@ -209,7 +209,10 @@
         status: "pending-special-education-review",
         submittedAt: new Date().toISOString()
       });
-      /* The primary response record above is authoritative for this pilot.\n         A failure to mirror audio into the optional home-submissions list must\n         not turn an already-saved answer into a failed submission. */\n      try { localStorage.setItem(homeKey, JSON.stringify(home.slice(-100))); } catch (homeStorageError) {}
+      /* The primary response record above is authoritative for this pilot.
+         A failure to mirror audio into the optional home-submissions list must
+         not turn an already-saved answer into a failed submission. */
+      try { localStorage.setItem(homeKey, JSON.stringify(home.slice(-100))); } catch (homeStorageError) {}
     }
     return true;
   }
