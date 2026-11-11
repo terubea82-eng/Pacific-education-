@@ -110,6 +110,8 @@
        Keep those context fields in the saved record, but do not burden the teacher
        with entering the same information again. */
     [cls, subj, termField, dayField].forEach(function (item) {
+      item.control.required = false;
+      item.control.type = "hidden";
       item.wrapper.hidden = true;
       item.wrapper.setAttribute("aria-hidden", "true");
     });
