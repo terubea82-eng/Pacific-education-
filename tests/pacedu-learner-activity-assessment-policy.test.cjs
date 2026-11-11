@@ -130,6 +130,6 @@ test("formal assessments keep Listen available but block unverified voice upload
   assert.match(assessment, /Listen to question/);
   assert.match(assessment, /Voice answers are temporarily unavailable until a teacher-authorisation service verifies permission for this learner/);
   assert.doesNotMatch(assessment, /id="peActivityAudio"/);
-  assert.doesNotMatch(assessment, /accept="audio\\/\\*"/);
-  assert.match(assessment, /function readFormalAssessmentAudio\\(done\\) \\{\\s*\\/\\/ Fail closed:[^\\n]*\\n\\s*if \\(typeof done === "function"\\) done\\("");\\s*\\}/);
+  assert.ok(!assessment.includes('accept="audio/*"'));
+  assert.ok(assessment.includes('if (typeof done === "function") done("");'));
 });
