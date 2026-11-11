@@ -168,7 +168,8 @@ test("distribution records support multiple jurisdictions without cross-country 
   const other=window.PacEduAchievementDistributionRuntime.getDailyAssignment({jurisdiction:"Exampleland",level:"Grade 1",subjectId:"English",term:"Term 1",week:1,day:2});
   assert.equal(fiji.assignment.indicatorId,"FJ-001");
   assert.equal(other.assignment.indicatorId,"EX-001");
-  assert.equal(window.PacEduAchievementDistributionRuntime.getDailyAssignment({level:"Grade 1",subjectId:"English",term:"Term 1",week:1,day:2}).status,"DISTRIBUTION_FILE_NOT_IMPORTED");
+  assert.equal(window.PacEduAchievementDistributionRuntime.getDailyAssignment({level:"Grade 1",subjectId:"English",term:"Term 1",week:1,day:2}).status,"NO_APPROVED_INDICATOR_SLOT");
+  assert.equal(window.PacEduAchievementDistributionRuntime.getDailyAssignment({level:"Class 1",subjectId:"English",term:"Term 1",week:1,day:2}).status,"DUPLICATE_ASSIGNMENT");
 });
 
 test("browser CSV approval fields cannot simulate trusted server or legal jurisdiction approval", () => {
