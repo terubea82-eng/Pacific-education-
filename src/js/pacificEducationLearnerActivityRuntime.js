@@ -74,6 +74,9 @@
       activityTitle: source.activityTitle || lesson && lesson.title || "Daily Activity",
       activityId: source.activityId || lesson && (lesson.activityId || lesson.id) || "daily-activity-" + (Number(day) || 1),
       questionId: source.questionId || source.id || "question-1",
+      sequenceId: source.sequenceId || lesson && lesson.questionSequenceId || null,
+      sequencePosition: Number.isInteger(Number(source.sequencePosition)) ? Number(source.sequencePosition) : null,
+      sequenceVersion: Number.isInteger(Number(source.sequenceVersion)) ? Number(source.sequenceVersion) : (Number.isInteger(Number(lesson && lesson.questionSequenceVersion)) ? Number(lesson.questionSequenceVersion) : null),
       questionText: source.questionText || source.learnerTask || source.description || "Complete today's learning activity.",
       audioText: source.audioText || source.questionText || source.learnerTask || "",
       answerKey: source.answerKey,
@@ -148,7 +151,11 @@
     try { items = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
     items.push({
       type: type,
-      activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
+      activityId: ctx.activityId || ("daily-activity-" + type + "-day-" + ctx.dayNumber),
+      questionId: ctx.questionId || null,
+      questionSequenceId: ctx.sequenceId || null,
+      questionSequencePosition: ctx.sequencePosition,
+      questionSequenceVersion: ctx.sequenceVersion,
       studentId: ctx.studentId || null,
       identityStatus: ctx.identityStatus || "awaiting-verified-learner-and-class",
       day: ctx.dayNumber,
@@ -177,7 +184,11 @@
           evidenceType: outcome.evidenceType,
           score: outcome.score,
           passingScore: 60,
-          activityId: "daily-activity-" + type + "-day-" + ctx.dayNumber,
+          activityId: ctx.activityId || ("daily-activity-" + type + "-day-" + ctx.dayNumber),
+          questionId: ctx.questionId || null,
+          questionSequenceId: ctx.sequenceId || null,
+          questionSequencePosition: ctx.sequencePosition,
+          questionSequenceVersion: ctx.sequenceVersion,
           classId: ctx.classId,
           assessmentId: "daily-activity-" + type,
           level: ctx.level,
@@ -584,6 +595,6 @@
       complete(type, input.value || "");
     },
     assessmentPolicy: assessmentPolicy,
-    currentContext: function() { return Object.assign({}, active.context || {}, {type: active.type, dayNumber: active.day, activityId: "daily-activity-" + String(active.type || "activity") + "-day-" + String(active.day || 1)}); }
+    currentContext: function() { return Object.assign({}, active.context || {}, {type: active.type, dayNumber: active.day, activityId: (active.context && active.context.activityId) || ("daily-activity-" + String(active.type || "activity") + "-day-" + String(active.day || 1))}); }
   };
 })(window, document);
