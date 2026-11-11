@@ -48,8 +48,8 @@
     });
   }
 
-  function key(level, subject, term, week, day) {
-    return [level, subject, term, Number(week), Number(day)].join("|").toLowerCase();
+  function key(jurisdiction, level, subject, term, week, day) {
+    return [jurisdiction, level, subject, term, Number(week), Number(day)].join("|").toLowerCase();
   }
 
   function importDistributionCsv(text) {
@@ -129,7 +129,8 @@
     filters = filters || {};
     if (!rows.length) return { status: "DISTRIBUTION_FILE_NOT_IMPORTED", assignment: null };
     var matches = rows.filter(function (r) {
-      return r.level === String(filters.level || "") &&
+      return (!filters.jurisdiction || r.jurisdiction === String(filters.jurisdiction)) &&
+        r.level === String(filters.level || "") &&
         r.subjectId === String(filters.subjectId || "") &&
         r.term === String(filters.term || "") &&
         r.week === Number(filters.week) &&
