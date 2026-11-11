@@ -932,3 +932,38 @@ For every class/year/form and every subject offered in the Fiji pilot:
 7. Only then approve the canonical indicator register and proceed to full 115-day distribution.
 
 **Stage 1 remains IN_PROGRESS.** The public-source review confirms important framework and assessment rules, but it does not provide a complete, publicly verified ECE–Form 7 subject-by-subject indicator set. No indicator gaps should be filled with invented codes or teacher-designed outcomes.
+
+
+## 8. English and Mathematics priority-source review — 12 November 2026
+
+**Scope:** first subject pair for the next Stage 1 acquisition pass. This is a source-status finding, not a completed English or Mathematics indicator inventory.
+
+### Official evidence located
+
+**Ministry Annual Report 2020–2021**  
+URL: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+
+The Ministry-hosted report's indexed text states that the Curriculum Development Unit, working with Senior Curriculum Staff for English and Mathematics at primary level, made changes to the Year 1–8 syllabus. It also identifies a resource architecture comprising the Fiji National Curriculum Framework, scope-and-sequence overviews, year-level scope and sequence, and teacher guides. The PDF could not be opened reliably in this retrieval pass; therefore no page-specific syllabus outcomes, indicator codes or exact wording have been extracted.
+
+**Status:** OFFICIAL_CHANGE_REPORTED — DETAILED_SYLLABUS_CONTENT_NOT_RETRIEVED.
+
+### Subject acquisition register
+
+| Subject | Level coverage required | Evidence located | Current PacEdu status | Next required evidence |
+|---|---|---|---|---|
+| English | ECE; Years 1–8; Years 9–13 | Ministry report confirms changes to the primary Years 1–8 syllabus; Ministry Years 3–4 Literacy Guide is a support resource, not a complete current syllabus | SOURCE_PARTIAL; NO_COMPLETE_INDICATOR_BANK | Current effective syllabus/prescription, scope and sequence, year-level guides and indicator/CLO schedule for each level; current secondary syllabus and examination specification |
+| Mathematics | ECE; Years 1–8; Years 9–13 | Ministry report confirms changes to the primary Years 1–8 syllabus; older resource list confirms historical mathematics resources, not current outcomes | SOURCE_PARTIAL; NO_COMPLETE_INDICATOR_BANK | Current effective syllabus/prescription, scope and sequence, year-level guides and indicator/CLO schedule for each level; current secondary syllabus and examination specification |
+
+### Rules for the English and Mathematics extraction
+
+1. Do not infer current outcomes from textbook titles, old resource lists, literacy strategies or annual-report summaries.
+2. Obtain the controlled current source through authorised Ministry/school access where the Ministry report indicates that curriculum documents are held on FEMIS/Moodle.
+3. For each level and strand, record exact source title, issuer, edition, effective date, page/section, strand/sub-strand, outcome or indicator code, exact wording where permitted, prerequisites and assessment evidence.
+4. Distinguish curriculum learning outcomes (CLOs), elaborations, achievement indicators, teacher objectives and lesson activities. They are not interchangeable.
+5. Preserve the source's original code and wording in the restricted source register; any PacEdu paraphrase must retain a source locator and copyright/permission status.
+6. Keep every level/strand with missing controlled evidence marked SOURCE NOT YET LOCATED. No worksheet, CAM rubric, ability placement or timetable allocation may be generated from an unverified outcome.
+7. Because the Ministry's Policy on Free Educational Resources governs reproduction and reuse, obtain written permission/clarification for PacEdu's proposed digital adaptation and distribution before importing protected content into the platform.
+
+### Stage 1 decision
+
+English and Mathematics are confirmed as the first priority subjects for source acquisition, but neither has a complete verified ECE–Form 7 indicator set in this register. The Ministry report is evidence of primary syllabus revision work, not a substitute for the revised syllabus itself. Stage 1 remains IN_PROGRESS; no 115-day allocation is approved by this review.
