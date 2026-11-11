@@ -58,12 +58,14 @@ test("levels and four ability bands produce differentiated directions", () => {
   assert.equal(extension.responseLines, 7);
 });
 
-test("day one diagnostic is not overwritten and wrapper exposes the daily bank", () => {
-  const window = load();
-  assert.equal(window.PacificEducationEnglishWorksheetLibrary.getWorksheet("Class 1", "initial-assessment", 1, "English").title,
-    "Day 1 diagnostic must be preserved");
-  assert.equal(window.PacificEducationEnglishWorksheetLibrary.dailyContentEnhanced, true);
-  assert.equal(typeof window.PacificEducationEnglishWorksheetLibrary.getDailyContentWorksheet, "function");
+test("day one cannot bypass the curriculum-first gate", () => {
+  const window=load();
+  const dayOne=window.PacificEducationEnglishWorksheetLibrary.getWorksheet("Class 1","developing",1,"English");
+  assert.equal(window.PacificEducationEnglishWorksheetLibrary.dailyContentEnhanced,true);
+  assert.equal(typeof window.PacificEducationEnglishWorksheetLibrary.getDailyContentWorksheet,"function");
+  assert.equal(dayOne.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(dayOne.questions.length,0);
+  assert.equal(dayOne.tasks.length,0);
 });
 
 test("Fijian language packs require verified teacher-provided text rather than invented translations", () => {
@@ -101,20 +103,15 @@ test("all Fiji levels and four ability bands return complete differentiated work
   }
 });
 
-test("the scheduled curriculum workspace uses the selected subject, not a hard-coded English worksheet", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const library = fs.readFileSync("src/js/pacificEducationEnglishWorksheetLibrary.js", "utf8");
-  assert.match(library, /var isCurriculumSchedule/);
-  assert.match(library, /subject: subjectSelect\.value, term: termSelect\.value/);
-  assert.match(library, /makeWorksheet\(levelSelect\.value, "initial-assessment", 1, subjectSelect\.value\)/);
-  for (const subject of api.subjects) {
-    const worksheet = api.getCurriculumWorksheet({
-      level: "Class 4", subject, term: "T1", week: 2, day: 3, ability: "developing"
-    });
-    assert.equal(worksheet.subject, subject);
-    assert.equal(worksheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
-    assert.equal(worksheet.questions.length, 4);
-    assert.equal(worksheet.answerKey.length, 4);
+test("the scheduled curriculum workspace retains subject metadata but blocks unverified learner content", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const subject of api.subjects){
+    const w=api.getCurriculumWorksheet({level:"Class 4",subject,term:"T1",week:2,day:3,ability:"developing"});
+    assert.equal(w.subject,subject);
+    assert.equal(w.curriculumSchedule.verificationStatus,"NOT_YET_MAPPED");
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.questions.length,0);
+    assert.equal(w.tasks.length,0);
   }
 });
 
@@ -162,34 +159,18 @@ test("daily concept focus changes by day and each supported class has its own le
   assert.match(learner.classLevelObjective, /Class 4|Explain the concept/i);
 });
 
-test("a matching class-specific indicator is attached only as a candidate until reviewed", () => {
-  const window = load();
-  window.PacificEducationAchievementDistributionEngine = {
-    buildDailyIndicatorPlan(filters) {
-      assert.equal(filters.classId, "CLASS-1-A");
-      assert.equal(filters.level, "Class 1");
-      assert.equal(filters.subjectId, "English");
-      assert.equal(filters.term, "Term 1");
-      return {assignment:{
-        classId:"CLASS-1-A",level:"Class 1",subjectId:"English",term:"Term 1",
-        indicatorId:"C1-ENG-P-002",indicatorText:"Respond to a short spoken message.",
-        strand:"Speaking and Listening",sourceStatus:"unverified",productionEligible:false
-      }};
-    }
-  };
-  const worksheet = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
-    level:"Class 1",subject:"English",term:"T1",curriculumTerm:"Term 1",
-    week:1,day:2,dayNumber:2,ability:"developing",classReference:"CLASS-1-A"
-  });
-  assert.equal(worksheet.dailyLesson.curriculumAlignment.candidateIndicator.id,"C1-ENG-P-002");
-  assert.equal(worksheet.dailyLesson.curriculumAlignment.candidateIndicator.status,"PENDING_TEACHER_REVIEW");
-  assert.equal(worksheet.dailyLesson.curriculumAlignment.achievementIndicator,null);
-  assert.equal(worksheet.dailyLesson.curriculumAlignment.verificationStatus,"NOT_YET_MAPPED");
-  const mismatched = window.PacEduDailyWorksheetContent.getCurriculumWorksheet({
-    level:"Class 1",subject:"English",term:"T1",curriculumTerm:"Term 1",
-    week:1,day:2,dayNumber:2,ability:"developing",classReference:"OTHER-CLASS"
-  });
-  assert.equal(mismatched.dailyLesson.curriculumAlignment.candidateIndicator,undefined);
+test("an unvalidated legacy indicator candidate cannot release learner activities", () => {
+  const window=load();
+  window.PacificEducationAchievementDistributionEngine={buildDailyIndicatorPlan(){return {assignment:{
+    classId:"CLASS-1-A",level:"Class 1",subjectId:"English",term:"Term 1",
+    indicatorId:"C1-ENG-P-002",indicatorText:"Respond to a short spoken message.",
+    strand:"Speaking and Listening",sourceStatus:"unverified",productionEligible:false
+  }};}};
+  const w=window.PacEduDailyWorksheetContent.getCurriculumWorksheet({level:"Class 1",subject:"English",term:"T1",curriculumTerm:"Term 1",week:1,day:2,dayNumber:2,ability:"developing",classReference:"CLASS-1-A"});
+  assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(w.indicatorMappingStatus,"PENDING_TEACHER_REVIEW");
+  assert.equal(w.questions.length,0);
+  assert.equal(w.answerKey.length,0);
 });
 
 test("Class 1 English Day 2 starts with the planned introduction activity", () => {
@@ -198,62 +179,34 @@ test("Class 1 English Day 2 starts with the planned introduction activity", () =
   assert.equal(worksheet.answerKey[0].answer, "Class 1");
 });
 
-test("scheduled daily questions have stable ability-neutral IDs and matching answer-key links", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const options = {level:"Class 1",subject:"English",term:"T1",week:1,day:2};
-  const support = api.getCurriculumWorksheet(Object.assign({}, options, {ability:"support"}));
-  const extension = api.getCurriculumWorksheet(Object.assign({}, options, {ability:"extension"}));
-  assert.equal(support.questionSequenceVersion, 1);
-  assert.equal(support.questionSequenceId, extension.questionSequenceId);
-  assert.equal(support.activityId, extension.activityId);
-  assert.equal(support.questions.length, 4);
-  assert.equal(support.answerKey.length, 4);
-  for (let index = 0; index < support.questions.length; index += 1) {
-    const question = support.questions[index];
-    const key = support.answerKey[index];
-    assert.ok(question.questionId);
-    assert.equal(question.sequenceId, support.questionSequenceId);
-    assert.equal(question.sequencePosition, index + 1);
-    assert.equal(question.sequenceVersion, support.questionSequenceVersion);
-    assert.equal(key.questionId, question.questionId);
-    assert.equal(key.sequenceId, question.sequenceId);
-    assert.equal(key.sequencePosition, question.sequencePosition);
-    assert.equal(key.sequenceVersion, question.sequenceVersion);
-    assert.equal(question.prompt, extension.questions[index].prompt);
-  }
-  const nextDay = api.getCurriculumWorksheet(Object.assign({}, options, {day:3,ability:"support"}));
-  assert.notEqual(nextDay.activityId, support.activityId);
-  assert.notEqual(nextDay.questionSequenceId, support.questionSequenceId);
+test("unverified daily slots expose no learner questions or answer keys", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  const opts={level:"Class 1",subject:"English",term:"T1",week:1,day:2};
+  const a=api.getCurriculumWorksheet(Object.assign({},opts,{ability:"support"}));
+  const b=api.getCurriculumWorksheet(Object.assign({},opts,{ability:"extension"}));
+  assert.equal(a.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(b.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(a.questions.length,0);
+  assert.equal(a.answerKey.length,0);
+  assert.equal(a.activityId,b.activityId);
+  assert.equal(a.questionSequenceId,b.questionSequenceId);
 });
 
 
-test("term-week-day scheduler returns concrete worksheets with explicit curriculum verification fields", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  assert.equal(typeof api.getCurriculumWorksheet, "function");
-  for (const term of [
-    ["T1", 9], ["T2", 9], ["T3", 5], ["ASSESSMENT", 1],
-    ["INTERVENTION", 5], ["REVISION", 2], ["EXAMS", 2]
-  ]) {
-    for (let week = 1; week <= term[1]; week += 1) {
-      for (let day = 1; day <= 5; day += 1) {
-        const worksheet = api.getCurriculumWorksheet({
-          level: "Class 1", subject: "English", term: term[0],
-          week, day, ability: "developing"
-        });
-        assert.notEqual(worksheet.status, "NOT_FOUND");
-        assert.equal(worksheet.curriculumSchedule.termId, term[0]);
-        assert.equal(worksheet.curriculumSchedule.week, week);
-        assert.equal(worksheet.curriculumSchedule.day, day);
-        assert.equal(worksheet.questions.length, 4);
-        assert.equal(worksheet.answerKey.length, 4);
-        assert.equal(worksheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
-        assert.equal(worksheet.curriculumSchedule.achievementIndicator, null);
-      }
+test("term-week-day scheduler retains calendar metadata but blocks unverified activities", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const term of [["T1",9],["T2",9],["T3",5],["ASSESSMENT",1],["INTERVENTION",5],["REVISION",2],["EXAMS",2]]){
+    for(let week=1;week<=term[1];week+=1) for(let day=1;day<=5;day+=1){
+      const w=api.getCurriculumWorksheet({level:"Class 1",subject:"English",term:term[0],week,day,ability:"developing"});
+      assert.equal(w.curriculumSchedule.termId,term[0]);
+      assert.equal(w.curriculumSchedule.week,week);
+      assert.equal(w.curriculumSchedule.day,day);
+      assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+      assert.equal(w.questions.length,0);
+      assert.equal(w.answerKey.length,0);
     }
   }
-  assert.equal(api.getCurriculumWorksheet({term:"T3",week:6,day:1}).status, "NOT_FOUND");
-  assert.equal(api.getCurriculumWorksheet({term:"T1",week:10,day:1}).status, "NOT_FOUND");
-  assert.equal(api.getCurriculumWorksheet({term:"T2",week:10,day:1}).status, "NOT_FOUND");
+  assert.equal(api.getCurriculumWorksheet({term:"T3",week:6,day:1}).status,"NOT_FOUND");
 });
 
 
@@ -270,68 +223,41 @@ test("teacher weekly planner selects a day and displays the daily example, quest
 });
 
 
-test("scheduled English worksheets provide level-appropriate reading and four answer-keyed questions", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const levels = ["ECE","Class 1","Class 3","Class 6","Class 8","Form 3","Form 5","Form 7"];
-  for (const level of levels) {
-    for (const ability of ["support","developing","expected","extension"]) {
-      for (let day = 1; day <= 5; day += 1) {
-        const worksheet = api.getCurriculumWorksheet({
-          level, subject: "English", term: "T1", week: 1, day, ability
-        });
-        assert.equal(worksheet.level, level);
-        assert.equal(worksheet.subject, "English");
-        assert.equal(worksheet.ability, ability);
-        assert.equal(worksheet.questions.length, 4);
-        assert.equal(worksheet.answerKey.length, 4);
-        assert.ok(worksheet.readingText.length > 40);
-        assert.ok(worksheet.topic.includes(["main topic","important words","connect sentences","evidence","independent response"][day-1]));
-        assert.equal(worksheet.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
-        assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
-        assert.ok(worksheet.answerKey.every(item => item.answer && item.explanation));
-        for (const question of worksheet.questions) {
-          if (question.options.length) assert.equal(question.options[question.correctOption], question.answer);
-        }
-      }
+test("scheduled English slots remain blocked until their official indicators are validated", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const level of ["ECE","Class 1","Class 3","Class 6","Class 8","Form 3","Form 5","Form 7"]){
+    for(const ability of ["support","developing","expected","extension"]) for(let day=1;day<=5;day+=1){
+      const w=api.getCurriculumWorksheet({level,subject:"English",term:"T1",week:1,day,ability});
+      assert.equal(w.level,level);
+      assert.equal(w.ability,ability);
+      assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+      assert.equal(w.questions.length,0);
+      assert.equal(w.answerKey.length,0);
+      assert.equal(w.readingText,"");
+      assert.equal(w.dailyLesson.steps.length,0);
     }
   }
-  const ece = api.getCurriculumWorksheet({level:"ECE",subject:"English",term:"T1",week:1,day:1,ability:"support"});
-  const form7 = api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T1",week:1,day:1,ability:"extension"});
-  assert.notEqual(ece.readingText, form7.readingText);
-  assert.match(ece.tasks[0], /FOUNDATION/);
-  assert.match(form7.tasks[0], /ADVANCED/);
 });
 
 
-test("English curriculum worksheet carries candidate source metadata without falsely certifying alignment", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const candidate = api.getCurriculumWorksheet({level:"Class 1",subject:"English",term:"T1",week:1,day:2,ability:"developing"});
-  assert.equal(candidate.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
-  assert.equal(candidate.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
-  assert.equal(candidate.curriculumSchedule.candidateSource.title, "Year 1 English — Language, Literacy and Communication");
-  assert.match(candidate.curriculumSchedule.candidateSource.url, /^https:\/\//);
-  assert.match(candidate.curriculumSchedule.candidateSource.authorityStatus, /THIRD_PARTY_HOSTED_COPY/);
-  assert.match(candidate.sourceNote, /current authorized school\/FEMIS\/Ministry copy/);
-  const other = api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T2",week:3,day:1,ability:"extension"});
-  assert.equal(other.curriculumSchedule.candidateSource, null);
-  assert.equal(other.curriculumSchedule.verificationStatus, "NOT_YET_MAPPED");
+test("English candidate source metadata is retained while learner content remains blocked", () => {
+  const w=load().PacEduDailyWorksheetContent.getCurriculumWorksheet({level:"Class 1",subject:"English",term:"T1",week:1,day:2,ability:"developing"});
+  assert.equal(w.curriculumSchedule.verificationStatus,"NOT_YET_MAPPED");
+  assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(w.curriculumSchedule.candidateSource.title,"Year 1 English — Language, Literacy and Communication");
+  assert.match(w.curriculumSchedule.candidateSource.url,/^https:\/\//);
+  assert.equal(w.questions.length,0);
 });
 
 
-test("English practice targets progress specifically by class from ECE through Form 7", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const levels = ["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"];
-  const targets = levels.map(level => {
-    const worksheet = api.getCurriculumWorksheet({level,subject:"English",term:"T1",week:1,day:2,ability:"expected"});
-    assert.ok(worksheet.tasks.some(task => task.startsWith("Class-level target: ")), level);
-    assert.ok(worksheet.tasks.some(task => task.includes("Write") || task.includes("Show,")), level);
-    assert.match(worksheet.readingText, /Class-level practice target:/, level);
-    assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
-    return worksheet.tasks.find(task => task.startsWith("Class-level target: "));
-  });
-  assert.equal(new Set(targets).size, levels.length);
-  assert.equal(api.getCurriculumWorksheet({level:"ECE",subject:"English",term:"T1",week:1,day:2,ability:"expected"}).responseLines, 2);
-  assert.equal(api.getCurriculumWorksheet({level:"Form 7",subject:"English",term:"T1",week:1,day:2,ability:"expected"}).responseLines, 14);
+test("all levels remain protected until their prescribed indicators are approved", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const level of api.levels){
+    const w=api.getCurriculumWorksheet({level,subject:"English",term:"T1",week:1,day:2,ability:"expected"});
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED",level);
+    assert.equal(w.curriculumGate.passed,false,level);
+    assert.equal(w.questions.length,0,level);
+  }
 });
 
 test("term plan follows nine weeks in Terms 1 and 2 and five weeks in Term 3", () => {
@@ -345,20 +271,13 @@ test("term plan follows nine weeks in Terms 1 and 2 and five weeks in Term 3", (
   assert.match(api.getTermPlan({term:"T1"}).note, /current authorised Fiji syllabus/i);
 });
 
-test("revision practice is generated by class, subject and ability without claiming official exam status", () => {
-  const window = load();
-  for (const subject of ["English","Mathematics","Science","Social Studies","Healthy Living","Physical Education","Arts and Crafts","Music","Digital Literacy","iTaukei Language","Hindi"]) {
-    const paper = window.PacEduTermLearningPlan.getRevisionPaper({level:"Class 4",subject,term:"T2",ability:"support"});
-    assert.equal(paper.subject, subject);
-    assert.equal(paper.term, "Term 2");
-    assert.equal(paper.ability, "support");
-    assert.equal(paper.officialExamPaper, false);
-    assert.equal(paper.status, "PRACTICE_PAPER_REQUIRES_TEACHER_REVIEW");
-    assert.ok(paper.questions.length > 0, subject);
-    assert.equal(paper.questions.length, paper.answerKey.length, subject);
+test("revision practice remains disabled without a validated prescribed indicator", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const level of api.levels) for(const subject of api.subjects){
+    const w=api.getCurriculumWorksheet({level,subject,term:"REVISION",week:1,day:1,ability:"developing"});
+    if(w.status==="NOT_FOUND") continue;
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.revisionPaper,null);
+    assert.equal(w.questions.length,0);
   }
-  const form7 = window.PacEduTermLearningPlan.getRevisionPaper({level:"Form 7",subject:"Mathematics",term:"T3",ability:"extension"});
-  assert.equal(form7.level,"Form 7");
-  assert.equal(form7.ability,"extension");
-  assert.ok(form7.questions.length > 0);
 });
