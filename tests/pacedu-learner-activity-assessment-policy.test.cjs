@@ -74,3 +74,9 @@ test("learner text and matching drafts autosave during input and change, and cle
   assert.match(source, /save\(type, response, audio, ctx, verifiedVoice\);\s*clearDraft\(ctx, type\)/);
   assert.match(source, /Unfinished answer saved on this device/);
 });
+
+test("a failed primary response save keeps the unfinished draft for retry", () => {
+  assert.match(source, /localStorage\.setItem\(key, JSON\.stringify\(items\.slice\(-500\)\)\);\s*\} catch \(storageError\) \{\s*return false;/);
+  assert.match(source, /var saved = save\(type, response, audio, ctx, verifiedVoice\);\s*if \(!saved\) \{[\s\S]*?return;\s*\}\s*clearDraft\(ctx, type\)/);
+  assert.match(source, /Your unfinished answer has been kept on this device/);
+});
