@@ -163,7 +163,11 @@
       reviewStatus: outcome.status,
       date: new Date().toISOString()
     });
-    localStorage.setItem(key, JSON.stringify(items.slice(-500)));
+    try {
+      localStorage.setItem(key, JSON.stringify(items.slice(-500)));
+    } catch (storageError) {
+      return false;
+    }
 
     var recorder = window.PacificEducationDailyProgressRecorder;
     if (recorder && typeof recorder.record === "function") {
@@ -207,6 +211,7 @@
       });
       localStorage.setItem(homeKey, JSON.stringify(home.slice(-100)));
     }
+    return true;
   }
 
   function resetTemporaryAnswerState() {
@@ -220,7 +225,15 @@
     var verifiedVoice = !!window.__pacificEducationVerifiedVoiceAttempt;
     readAudio(function(audio) {
       if (verifiedVoice) { try { window.__pacificEducationVerifiedVoiceAttempt = false; } catch (e) {} }
-      save(type, response, audio, ctx, verifiedVoice);
+      var saved = save(type, response, audio, ctx, verifiedVoice);
+      if (!saved) {
+        var savePanel = ctx.renderTargetId ? document.getElementById(ctx.renderTargetId) : document.getElementById("dailyLessonActivity");
+        if (savePanel) {
+          var saveStatus = document.getElementById("peActivityDraftStatus");
+          if (saveStatus) saveStatus.textContent = "PacEdu could not confirm that your answer was saved. Your unfinished answer has been kept on this device. Check your device storage and try Submit Answer again.";
+        }
+        return;
+      }
       clearDraft(ctx, type);
       resetTemporaryAnswerState();
       var status = assessmentPolicy(type, response, ctx, verifiedVoice).status;
