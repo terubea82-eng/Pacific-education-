@@ -18,20 +18,20 @@
 - Official Ministry-hosted URL: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
 - Source pages: printed pages 3–5.
 - Context: Year 6 and Year 8 Physical Education content; Term 3 teacher guide. The guide describes practical delivery and a 10 × 45-minute allocation for the PE sections.
-- Use status: exact source text and indicator codes below are extracted for curriculum mapping; day-level allocation still requires educator review.
+- Use status: indicator IDs are transcribed; descriptions below are concise working paraphrases, not verbatim Ministry text. Day-level allocation still requires educator review.
 
 | Level | Subject | Indicator ID | Official indicator wording |
 |---|---|---|---|
-| Year 6 | Physical Education | PE 6.1.1.1a | Study and demonstrate the relationship between fitness and training methods. |
-| Year 6 | Physical Education | PE 6.1.2.2a | Demonstrate types of aerobic and anaerobic training. |
-| Year 6 | Physical Education | PE 6.1.2.2b | Describe and show training effects on fitness. |
-| Year 6 | Physical Education | PE 6.1.2.2c | Analyse and explain fitness through various types of training. |
-| Year 6 | Physical Education | PE 6.1.2.2d | Explore and perform basic first aid in sports injuries. |
-| Year 8 | Physical Education | PE 8.1.1.1a | Study and demonstrate the skills in different sports. |
-| Year 8 | Physical Education | PE 8.1.2.2a | Investigate the types of skills similar and different in sports. |
-| Year 8 | Physical Education | PE 8.1.2.2b | Describe and take part in skills learning and execution. |
+| Year 6 | Physical Education | PE 6.1.1.1a | Examine and demonstrate how fitness relates to training methods. |
+| Year 6 | Physical Education | PE 6.1.2.2a | Demonstrate aerobic and anaerobic training approaches. |
+| Year 6 | Physical Education | PE 6.1.2.2b | Describe and demonstrate how training affects fitness. |
+| Year 6 | Physical Education | PE 6.1.2.2c | Analyse how different training methods develop fitness. |
+| Year 6 | Physical Education | PE 6.1.2.2d | Explore and demonstrate basic first-aid responses to sports injuries. |
+| Year 8 | Physical Education | PE 8.1.1.1a | Practise and demonstrate skills used across different sports. |
+| Year 8 | Physical Education | PE 8.1.2.2a | Investigate skills that are shared or differ between sports. |
+| Year 8 | Physical Education | PE 8.1.2.2b | Describe and participate in learning and performing sports skills. |
 
-**Important:** These records are for Year 6 and Year 8 PE only. Do not relabel them as Class 1–5, Class 7, Forms 3–7, or as other subjects. The guide is a 2015 document; verify that the Ministry still treats it as current before formal alignment.
+**Important:** These records are for Year 6 and Year 8 PE only. The indicator IDs are retained exactly; descriptions are paraphrased to avoid republishing the teacher guide. Do not relabel them as Class 1–5, Class 7, Forms 3–7, or as other subjects. The guide is a 2015 document; verify that the Ministry still treats it as current before formal alignment.
 
 ### Source B — Year 6 and Year 8 Teachers Guide, Term 3 (2015): disaster-awareness content
 
@@ -52,6 +52,27 @@ The guide sequences the 25 lessons in five blocks: lessons 1–5 discuss disaste
 - The guide recommends prediction, read-aloud/shared reading, comprehension questions grounded in the text, identifying where answers appear in the text, five new sight words, syllable work, word analysis and writing/comprehension tasks.
 - The guide describes reading-development stages and ongoing observation/checklists. These are useful planning and diagnostic references, but should not be converted into invented official indicator codes.
 - Day-by-day lesson design based on this guide must be labelled as a teacher-designed sequence until matched to the applicable current Year 3/4 English syllabus outcomes.
+
+
+
+### Source D — Na Noda Mataniciva: ECE outcomes (Ministry-hosted guideline)
+
+- Official Ministry-hosted URL: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf
+- The guideline says the FALD framework also informs Classes 1 and 2. It explains that teachers should plan from the more detailed sub-strand outcomes and unpack the concepts, skills and attitudes rather than treating the broad FALD statements as daily indicators.
+- The six FALD and their broad outcome focus are recorded below as concise paraphrases:
+
+| FALD | Broad outcome focus (paraphrased) | Example sub-strand focus |
+|---|---|---|
+| Physical Development, Health and Well-being | Build physical skills and begin healthy, active and safe routines. | Gross/fine/perceptual-motor development; nutrition; hygiene; safe practices. |
+| Learning to Know | Observe, explore, investigate, communicate, question, solve problems and use logical thinking. | Inquiry and investigation; representing and symbolic thinking; early mathematics. |
+| Language, Literacy and Communication | Communicate effectively in the child's first language and develop early literacy foundations. | Listening/responding; speaking/communicating; becoming a reader and writer. |
+| Living and Learning Together | Contribute positively to personal and others' social and emotional well-being and learning. | Sense of self; relationships; culture and respect for diversity; emotions and behaviour. |
+| Aesthetics, Creativity and the Arts | Develop observation and expression, and grow in describing, interpreting, appreciating, creating and reflecting. | Music, movement and drama; art and craft; aesthetics. |
+| Moral and Spiritual Development | Develop awareness of beliefs and practices, a sense of right and wrong, and responsible behaviour towards people and the environment. | Spiritual awareness; moral development. |
+
+**ECE example outcome:** the guideline's gross-motor sub-strand includes progressively improving throwing, catching and kicking accuracy. A teacher-designed activity may practise these through safe, age-appropriate play, but the outcome must be recorded as an ECE sub-strand outcome, not assigned an invented numerical indicator code.
+
+**ECE source limitation:** The Ministry announced in September 2025 that Na Noda Mataniciva was being updated with UNICEF support for early literacy and numeracy. This register records the Ministry-hosted guideline located during this review; it does not claim that this is the completed revised edition. Confirm the current version before final ECE pilot approval.
 
 ## 3. Proposed 25-day pilot sequence — Year 6 and Year 8 cross-curricular disaster awareness
 
