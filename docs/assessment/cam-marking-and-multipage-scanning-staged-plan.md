@@ -346,3 +346,68 @@ Both pathways may reuse the secure scanning engine, page-quality checks, script-
 This distinction is a requirements addition to the existing CAM phase within Stage 3 (student worksheets and teacher guides). Do not start the scanner implementation before the relevant verified indicators, question IDs, answer keys/rubrics, Student IDs, enrolments and permission model are ready. Build daily teacher marking first as the ordinary classroom workflow; build the restricted national marking pathway as a separate authorised workflow using shared safe infrastructure only. Global Library (Stage 4) and user-capacity/personal-information space (Stage 5) remain in the locked order.
 
 **Current boundary:** Documentation only. No teacher accounts, examiner accounts, scans, learner records, marks, comments, Firebase data, production systems or APKs were changed.
+
+
+## Addendum — Parent/Student Home Revision CAM and Separate Parent Records
+
+**Requirement status:** Mandatory staged design requirement. Parents and students may use a home/self-study marking pathway for revision papers and practice work. These records must remain distinct from teacher classroom assessment records and from certified national examination results.
+
+### A. Parent Platform home-revision pathway
+
+Parents and students may, subject to account permissions and age-appropriate safeguards:
+- Open assigned or approved revision papers, practice worksheets and permitted past-paper resources.
+- Attempt questions at home or another location using paper, camera scan, PDF/image upload or accessible response methods supported by PacEdu.
+- Scan multi-page work and have PacEdu group pages using assessment-specific script tokens or a parent/student-confirmed home-practice record.
+- Use an approved answer key or marking guide for supported objective questions, where the resource licence and assessment rules permit it.
+- Receive suggested marks, worked explanations, correction prompts and revision guidance.
+- Have the student or parent confirm/enter self-marked results and comments.
+- View progress over time within the linked Parent Platform, including completed practice, strengths, topics needing revision and next suggested practice.
+
+The platform must label these as HOME PRACTICE / SELF-ASSESSMENT — NOT TEACHER-VERIFIED. AI-generated suggestions are guidance, not official marks. If the student or parent changes an auto-suggested mark, retain the suggested value and the confirmed value separately with their source.
+
+### B. Student identity and parent-child access
+
+- Every home-practice record is linked to the correct PacEdu Student ID and a distinct practice attempt ID.
+- A parent can access only a child whose account is securely linked and authorised through PacEdu's guardian relationship and applicable consent/age rules.
+- A parent with multiple linked children must choose the child before starting a scan; the chosen child and Student ID are shown for confirmation before saving.
+- Never infer the child from a handwritten name, device, location or previous scan.
+- Students may access their own permitted practice records. Parent visibility and student visibility follow age-appropriate privacy rules and the configured guardian permissions.
+- A parent cannot view another family's learner data or access teacher-only notes, confidential national scripts, examiner comments or unreleased results.
+
+### C. Keep records separate and clearly labelled
+
+Maintain separate record types and storage/access policies:
+1. TEACHER_ASSESSMENT: teacher-assigned classroom activity, teacher-marked/approved, part of the authorised school learning record.
+2. HOME_PRACTICE: parent/student-started revision, self-assessment or assisted practice, stored in the Parent Platform and never silently copied into official teacher marks.
+3. NATIONAL_EXAMINATION: confidential examiner-marked script and certified result, governed by the national examination authority.
+
+Each record stores its source, creator, Student ID, attempt ID, date, assessment/resource ID, question/indicator links where available, marking-guide version, suggested mark, confirmed mark, comments, and approval/verification status. Home-practice progress may be shared with the teacher only through an explicit, permission-controlled sharing action or school-approved policy, and must retain its HOME_PRACTICE label and provenance. It must not alter official teacher marks, ability placement, attendance or national results automatically.
+
+### D. Safe home marking behaviour
+
+- Auto-mark only supported objective or reliably structured responses using the exact approved key/rubric version.
+- For essays, creative writing, practical work, oral work, ambiguous handwriting and uncertain OCR, provide explanations or a draft suggestion but label it unverified; invite teacher review only if the parent/student explicitly shares it or school policy permits.
+- Show answer explanations after the attempt or according to the resource's release rules; protect restricted examination materials and embargoed keys.
+- Provide accessible text/audio instructions and support permitted text/voice response modes without forcing voice recording.
+- Save progress safely across disconnection and resume the same home-practice attempt without duplicating marks.
+- Let parents add observations or comments, but label them as parent observations rather than teacher judgements.
+- Do not claim that home self-marking proves mastery or replaces teacher assessment.
+
+### E. Acceptance tests
+
+- Parent can access only securely linked child accounts and can confirm the selected child before saving a home scan.
+- Student can access only their own permitted home-practice records.
+- A home scan is always saved as HOME_PRACTICE, never as TEACHER_ASSESSMENT or NATIONAL_EXAMINATION.
+- Self-marked and AI-suggested marks remain visibly distinct from teacher-approved marks.
+- Home records cannot overwrite, edit or approve teacher records or certified national results.
+- Sharing a home record with a teacher is explicit, auditable and does not change its origin or label.
+- Uncertain student identity, missing pages or mismatched assessment tokens cause a hold, not a guessed match.
+- Parent comments and observations remain attributed to the parent.
+- Offline/resume and duplicate-upload tests prove that practice attempts are not lost or duplicated.
+- Restricted past papers, answer keys and national examination materials respect their licence, access and release controls.
+
+### F. Locked delivery sequence
+
+This home-revision pathway is included within Stage 3, after the verified curriculum indicator, worksheet, Student ID, question and answer-key foundations are ready. Build and test teacher daily CAM and home revision as separate role-based flows over shared safe scanning infrastructure. Do not merge their record types or approval authority. National examination marking remains separate and restricted. Stage 4 Global Library and Stage 5 capacity/personal-information space remain in the locked order.
+
+**Current boundary:** Documentation only. No parent/student account permissions, scans, practice attempts, marks, comments, school records, Firebase data, production systems or APKs were changed.
