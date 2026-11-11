@@ -387,3 +387,84 @@ A search-indexed EQAP document list also surfaced SPFSC English, History, Accoun
 4. Extract every SLO with its exact code, level, strand/sub-strand, page, prerequisite and assessment type. Preserve source order and skill level.
 5. Do not distribute all Form 7 SLOs evenly over 115 days. First confirm teaching weeks, assessment calendar, prerequisite Year 12 outcomes and internal/external assessment requirements.
 6. The 2019 Agriculture prescription is a strong first example of the requested source type, but no full ECE–Form 7 indicator bank is complete. No missing level or subject is to be backfilled by inference.
+
+
+## 13. Additional SPFSC Form Seven prescription sources located (12 November 2026)
+
+This search pass located further official EQAP-hosted SPFSC documents. These are senior secondary / Form Seven examination sources and must not be used for ECE–Year 12 or treated as Ministry-issued prescriptions without confirming Fiji adoption and current effective status.
+
+### Source O — SPFSC English Prescription (EQAP, 2019 aligned edition)
+
+- Official EQAP URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20English%20Prescription.pdf
+- Document: *South Pacific Form Seven Certificate — English Prescription*.
+- The preamble says the prescription specifies SPFSC English examination requirements. It describes unpacked learning outcomes by strand and sub-strand to guide teachers on what students need to learn and achieve by year-end.
+- The course aims include understanding, using and creating oral and written texts; developing speaking, listening, reading, writing, presenting and viewing; appreciating texts; and making appropriate language choices across contexts.
+- The prescription includes internal and external assessment; the preamble records a 40% internal assessment component in its described assessment structure.
+- Current-version check required: the URL is the 2019-aligned prescription, while a separate 2023 SPFSC English syllabus is also published by EQAP. Do not assume the 2019 PDF remains the controlling version until EQAP/Fiji confirms which is in force.
+
+### Source P — SPFSC History Prescription (EQAP, 2019 aligned edition)
+
+- Official EQAP URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20History%20Prescription.pdf
+- Document title surfaced as *South Pacific Form Seven Certificate — History Prescription*.
+- It is a candidate Form Seven source. Full outcome extraction and current-version confirmation remain outstanding.
+
+### Source Q — SPFSC French (Second Language) Prescription (EQAP, 2019 aligned edition)
+
+- Official EQAP URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20French%20Prescription.pdf
+- The preamble says it specifies SPFSC French examination requirements. General outcomes include communicating about certainty/uncertainty and possibility/probability; developing and supporting a point of view; recounting events to inform, persuade or entertain; communicating the same information in different ways and contexts; and responding to texts from French-speaking cultures.
+- The prescription refers to appendices with achievement objectives, examples, language focus, vocabulary, and suggested learning/assessment activities.
+- Current-version check required before formal use.
+
+### Source R — SPFSC Chemistry Prescription (EQAP, 2019 aligned edition)
+
+- Official EQAP URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20Chemistry%20Prescription.pdf
+- The preamble identifies matter's composition and properties and the changes it undergoes as the central subject focus. It emphasises linking observable/macroscopic phenomena, particle-level explanations (atoms, ions and molecules) and symbolic representations, with practical applications in everyday life.
+- It states prior Year 12 Senior Secondary Certificate (or equivalent) outcomes are required knowledge.
+- The URL is a 2019-aligned prescription. A separate 2017 edition had previously been located; confirm the authoritative effective edition and any later replacement before import.
+
+### Source S — SPFSC Physics Prescription (EQAP, 2019 aligned edition)
+
+- Official EQAP URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20Physics%20Prescription.pdf
+- Search-indexed assessment details identify Mechanics, Waves, Electricity and Electromagnetism, and Atomic and Nuclear Physics. The prescription includes practical investigation, quantitative data, processing/analysis, discussion and evaluation.
+- This is a candidate Form Seven source; extract exact strand outcomes and verify current version before distribution.
+
+### Source T — SPFSC Biology Prescription (EQAP, 2019 aligned edition) and 2023 syllabus
+
+- 2019-aligned prescription URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20Biology%20Prescription.pdf
+- Separate 2023 syllabus URL: https://eqap.spc.int/sites/default/files/resources/2023-06/SPFSC%20Biology%20Syllabus_2023_Final_EQAP_SR%20Corrected.pdf
+- The 2023 syllabus edition history records January 2023 as the fifth edition. It gives strand topics including Animal Behaviour, Gene Expression, Biotechnology Applications, and Processes and Patterns of Evolution; it specifies 70% external and 30% internal assessment and suggested teaching time/weightings.
+- The separate 2019 prescription has a strand/time/weighting table. Do not merge content across the two editions. Use the 2023 fifth edition as the newer candidate, but confirm formal Fiji adoption and effective status with EQAP/Ministry.
+
+### Source U — SPFSC Chemistry 2017 and Biology 2023 version comparison
+
+- Chemistry 2017 PDF: https://eqap.spc.int/sites/default/files/resources/2018-05/SPFSC-2017-Aligned-Chemistry-Prescription_FinalFinalDraft.pdf
+- Chemistry 2019-aligned PDF: URL in Source R above.
+- Biology 2023 fifth-edition PDF: URL in Source T above.
+- Version rule: where EQAP hosts multiple editions, retain each as a separate source record. The newest publication date is a candidate current version, not proof of Fiji adoption. Confirm with the responsible Fiji Ministry section / EQAP before marking CURRENT_APPROVED.
+
+### Source V — SPFSC English 2023 syllabus, separate from the 2019 prescription
+
+- Official EQAP URL: https://eqap.spc.int/sites/default/files/resources/2023-06/SPFSC%20English%20Syllabus_2023_Final_EQAP_SR%20Checked.pdf
+- The edition history in the PDF lists January 2023 as the sixth edition, after January 2020 fifth edition and February 2019 fourth edition.
+- This newer syllabus and the 2019 prescription must remain separate records until the Ministry/EQAP confirms which is the currently adopted assessment specification and how the two documents relate.
+
+### Form Seven source register — candidate inventory after this pass
+
+| Subject | Candidate source(s) found | Status |
+|---|---|---|
+| Agricultural Science | 2019 aligned prescription, 4th edition | Located; full SLO extraction incomplete; current Fiji adoption and reuse permission unconfirmed. |
+| English | 2019 aligned prescription; 2023 syllabus, 6th edition | Both located; version/adoption relationship requires confirmation. |
+| French (Second Language) | 2019 aligned prescription | Located; current version/adoption unconfirmed. |
+| History | 2019 aligned prescription | Located; detailed extraction and current version unconfirmed. |
+| Chemistry | 2017 prescription; 2019 aligned prescription | Multiple editions located; controlling version unconfirmed. |
+| Physics | 2019 aligned prescription; 2020 syllabus candidate | Located; controlling version unconfirmed. |
+| Biology | 2019 aligned prescription; 2023 syllabus, 5th edition | Newer syllabus located; current Fiji adoption to confirm. |
+| Economics | 2023 syllabus candidate | Located in prior source search; current Fiji adoption to confirm. |
+| Geography | 2023–2025 syllabus candidate | Located in prior source search; confirm 2026 replacement/current status. |
+| Accounting | EQAP index/search lead only | Exact official source file not yet verified. |
+| Information Technology | EQAP index/search lead only | Exact official source file not yet verified. |
+| Mathematics (Calculus / Statistics) | EQAP index/search lead only | Exact official source file not yet verified. |
+
+**Copyright:** EQAP/SPC PDFs commonly state that all rights are reserved and no part may be reproduced without prior permission of the EQAP Director. PacEdu should seek written permission for digital/commercial reuse. Until then, store source metadata, page references and concise paraphrases; do not copy full prescription text, tables or illustrations into the product.
+
+**Coverage boundary:** This is only a Form Seven candidate-source inventory. It does not establish complete Form Seven subject coverage, does not fill Years 1–12 or ECE, and does not approve a 115-day distribution. All candidate sources remain CURRENT_STATUS_TO_CONFIRM until formally checked.
