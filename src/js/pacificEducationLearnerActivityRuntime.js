@@ -263,7 +263,11 @@
         var continueButton = document.getElementById("peContinueLearning");
         if (continueButton) continueButton.addEventListener("click", function() {
           resetTemporaryAnswerState();
-          if (typeof window.startDailyLesson === "function") window.startDailyLesson();
+          if (typeof window.PaceduDailyQuestionSequenceContinue === "function") {
+            var continueSequence=window.PaceduDailyQuestionSequenceContinue;
+            window.PaceduDailyQuestionSequenceContinue=null;
+            continueSequence();
+          } else if (typeof window.startDailyLesson === "function") window.startDailyLesson();
         });
         panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
       } else if (typeof window.showLesson === "function") {
