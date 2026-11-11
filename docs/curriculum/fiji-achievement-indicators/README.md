@@ -77,6 +77,34 @@ Copper, Bronze, Silver and Gold may change scaffolding, reading load, prompts or
 
 Never infer approval from a file existing, a CI check passing, or an activity being generated. Keep a versioned audit trail when an indicator or mapping changes.
 
+## Daily activity and assessment linkage
+
+The distribution CSV is the controlled planning source for the exact class + subject + term + week + day slot. The runtime bridge in `src/js/paceduAchievementDistributionRuntime.js` imports a completed CSV and performs exact-slot matching; it does not round-robin or guess an indicator.
+
+When a matching row is imported, the daily worksheet receives:
+- `indicatorIds[]` and the exact indicator text/source/review status;
+- the same indicator ID on every question in that daily worksheet;
+- an assessment mapping record with the expected evidence types and mapping status;
+- the activity ID and stable question IDs so response evidence can be traced back to the activity and indicator.
+
+The assessment evidence builder carries the activity ID, question-sequence ID, indicator IDs and response records into a draft assessment-evidence record. This is evidence linkage only; it does not itself mark a learner as achieving an indicator or authorise a formal examination.
+
+### Import and release rules
+
+- The CSV importer checks the exact template headers, Fiji jurisdiction, class, subject, term, week/day range, indicator ID/text and duplicate daily slots.
+- Empty planning slots are skipped and remain unassigned. The importer never fills them with invented indicators.
+- A row is considered mapped/validated for the prototype only when source status is `SOURCE_VERIFIED`, educator review is `VALIDATED`, source title/authority/version/page-or-section/URL are present, and reviewer plus approval timestamp are recorded.
+- All other imported rows remain `PENDING_TEACHER_REVIEW`; they may be shown as candidates but must not be presented as verified curriculum alignment.
+- A duplicate or malformed slot is reported for correction and must not be treated as a valid daily assignment.
+- The current importer is a staging runtime API, not yet a teacher-facing upload screen or trusted server import. Do not claim the blank CSV is automatically loaded into the app.
+- Formal assessment eligibility remains false in the browser prototype. Trusted server-side curriculum approval, teacher authorization, assessment scope and audit checks are required before any result can count as an official school assessment.
+
+### Assessment use
+
+For a formative daily activity, record evidence against the linked indicator: correct response, method/working, explanation, practical demonstration, oral/sign/point/draw response, or teacher observation as appropriate to the task. Record whether support or accommodation was used, but do not treat disability accommodations as a lower achievement level.
+
+A term test or examination must explicitly list its covered indicator IDs and may assess only outcomes that were taught, approved and included in the school's assessment scope. Unmapped indicators, unapproved questions, and unreviewed subjective/practical evidence remain pending teacher review. Keep the learner response, marking decision, teacher/reviewer, date, rubric/key version and any moderation history traceable.
+
 ## Important safeguards
 
 - This folder is a template, not a completed Fiji curriculum database.
