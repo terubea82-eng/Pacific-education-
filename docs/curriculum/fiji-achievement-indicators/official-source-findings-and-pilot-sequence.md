@@ -1241,3 +1241,55 @@ The report states:
 **Process rule now applied:** verified prescription indicator → original daily activity → differentiated practice with the same learning objective → evidence and success criteria → teacher review. If the controlled source or effective status is missing, PacEdu must hold the activity as `SOURCE_NOT_YET_VERIFIED` / `PENDING_TEACHER_REVIEW`, not generate a falsely curriculum-aligned lesson.
 
 **Stage 1 remains IN_PROGRESS.**
+
+
+## 16. Secondary English curriculum status — official programme evidence and source boundary (12 November 2026)
+
+### Source I — Fiji Revised Secondary English Curriculum (RSEC), Year 11 advisor brief
+
+- Issuer/platform: Australian Government Department of Foreign Affairs and Trade (DFAT), AusConnect; opportunity posted 22 September 2026 and closed 30 September 2026.
+- Official URL: https://ausconnect.dfat.gov.au/opportunities/revised-secondary-english-curriculum-rsec-advisor-yr-11-australia-fiji-education-fiji-program
+- The brief states that Fiji's Ministry of Education had developed and rolled out English curriculum frameworks for Years 9 and 10. It describes a need to extend the framework to Year 11 before extending to Years 12 and 13.
+- The Year 11 assignment was to support development of a comprehensive curriculum package, including content, instructional/learning materials and assessment tools. It says the framework should follow existing achievement indicators and build on Years 9–10 competencies.
+- The brief identifies Ministry Curriculum Advisory Services (CAS), the Examination and Assessment Unit (EAU), the AFEP secondary English team and a Year 11 technical working group as relevant authorities/partners.
+
+**What this establishes:** RSEC English Years 9–10 had been developed and rolled out according to the September 2026 programme brief; Year 11 English package development was still being commissioned/planned in that brief.
+
+**What it does not establish:** It does not supply the controlled Year 9/10 achievement-indicator schedule, prove the exact schools/terms in which each framework is currently implemented, or establish that a Year 11 package has since been completed and approved. It says Years 12–13 are future extension work; do not infer their new RSEC status.
+
+### Third-party copy lead — RSEC Years 9–10 Teacher Guide
+
+A search surfaced a July 2025 FlipHTML5 copy titled *Revised Secondary English Curriculum — Teachers Guide*, credited in the displayed document to Ministry Curriculum Advisory Services and dated ©2024. It is a third-party-hosted copy, not an authenticated Ministry-controlled download. It is a retrieval lead only: do not extract, import, reproduce, or create PacEdu lessons from its indicator content until the Ministry-controlled copy, version, effective date and permitted-use conditions are obtained and checked.
+
+### PacEdu classification and next action
+
+**Classification:** OFFICIAL_PROGRAMME_STATUS_CONFIRMED — CONTROLLED_INDICATOR_DOCUMENT_NOT_RETRIEVED.
+
+1. Request the current controlled RSEC Years 9–10 English framework, achievement indicators, year/unit sequence, teacher guide, assessment specifications and implementation circular from CAS / authorised school FEMIS-Moodle access.
+2. Request written confirmation of the status and effective date of the Year 11 English package, and the planned/current status of Years 12–13.
+3. Keep Years 9–10 English source records as `SOURCE_NOT_YET_RETRIEVED` until the actual controlled framework and indicator schedule are obtained. Do not treat the advisor brief as a syllabus.
+4. Do not create Year 11–13 RSEC activities from the job description or third-party teacher-guide copy.
+
+**Stage 1 remains IN_PROGRESS.** This source narrows the acquisition task but does not add any new approved English indicator or daily activity.
+
+## 17. Primary Years 1–8 Literacy and Numeracy source-access route — official report detail (12 November 2026)
+
+**Source:** Fiji Ministry of Education, *Annual Report 2022–2023*, official Parliament-hosted PDF: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf. Relevant report text appears in the curriculum section around PDF printed page 102 / report lines 4902–5008.
+
+### Verified status distinctions
+
+- The report states that revised Years 1–4 English and Mathematics (Literacy and Numeracy) curriculum implementation began in all primary schools in 2023.
+- It states that final Years 1–4 syllabus and Literacy/Numeracy Guides were supplied to all primary schools (648 copies reported).
+- It states that the revised Years 5–8 curriculum was still in Phase 2 trial at the time of the 2022–2023 report.
+- It says curriculum documents such as syllabuses were uploaded to FEMIS and Moodle for schools.
+- The report describes the revised curriculum as concept-based, with CLOs introduced/consolidated at planned times, logical sequencing/elaborations, formative assessment, and explicit literacy/numeracy progression.
+
+### PacEdu use and safeguards
+
+1. Years 1–4: treat the revised Literacy/Numeracy package as officially reported implemented from 2023, but still obtain the actual current controlled syllabus, year-level scope-and-sequence, achievement indicators/CLOs, teacher guide and subsequent amendments before extracting daily activity anchors.
+2. Years 5–8: do not assume the Phase 2 trial draft became the final national curriculum. Obtain the final approved package and implementation circular/effective date.
+3. FEMIS/Moodle is the Ministry-reported access route. A third-party textbook or flipbook is not a substitute for the controlled files.
+4. A teacher-designed activity can only be called prescription-aligned when linked to its exact controlled CLO/indicator, level, subject, source version and page/section.
+5. The 2022–2023 report is historical implementation evidence, not proof of the current 2026 version or later supersession.
+
+**Stage 1 remains IN_PROGRESS.** This update clarifies the official acquisition route and year-band status; it does not supply a new Mathematics or English indicator bank.
