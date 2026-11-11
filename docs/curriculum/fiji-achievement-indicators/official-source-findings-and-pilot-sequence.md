@@ -321,3 +321,69 @@ The project owner clarified that the concepts to be identified and distributed a
 ### Immediate next source task
 
 Locate and catalogue every current Educational Prescription PDF or document on the Ministry's official website, then extract its level, subject, version and prescribed concepts. The current search indexed Ministry references to prescriptions but did not yet surface a complete public directory or the full prescription documents. This is a source-access gap, not evidence that the prescriptions do not exist. Request authorised copies from the Ministry / Curriculum Advisory Services or use files supplied by the project owner; never request account passwords or bypass restricted Ministry access.
+
+
+## 12. EQAP / Pacific Community prescription discovery and first structured extraction (12 November 2026)
+
+### Source N — South Pacific Form Seven Certificate (SPFSC) Agricultural Science Prescription, 4th edition, February 2019
+
+- Publisher/authority: Educational Quality and Assessment Programme (EQAP), Pacific Community (SPC), Suva, Fiji.
+- Official source URL: https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20Agriculture%20Prescription.pdf
+- Document title: *South Pacific Form Seven Certificate — Agricultural Science Prescription*.
+- Edition history printed in document: January 2005 first edition; April 2017 second edition; February 2019 fourth edition.
+- Scope: Form Seven / SPFSC Agricultural Science examination. This is a senior secondary/Form 7 source, not an ECE or primary source.
+- Structure: Major Learning Outcomes (MLOs) at strand level; Key Learning Outcomes (KLOs) at sub-strand level; Specific Learning Outcomes (SLOs) unpacked from KLOs. Each SLO combines a cognitive skill with a content component and is assigned skill level 1–4 using SOLO taxonomy (printed page 6).
+- The prescription states that SLOs must be read with their explanatory notes and that related Year 12 national outcomes are prerequisite knowledge.
+- Copyright: EQAP/SPC 2019; the document states that no part may be reproduced without prior permission from the EQAP Director. PacEdu must seek written permission before reproducing prescription text or codes at scale in a commercial platform. This register records source metadata and concise paraphrases only.
+
+### Verified Form 7 Agricultural Science concept map
+
+| Prescription location | Strand / sub-strand | Outcome reference | Concept focus (concise paraphrase) | Source skill progression |
+|---|---|---|---|---|
+| Printed pp. 7–8 | Strand 1: Primary Production; 1.1 Market Opportunities in Primary Production | KLO 1.1; SLO codes agr1.1.1.1–agr1.1.4.9 (individual codes listed in source) | Seasonality; import competition; market quality requirements; market access; storage/shelf life; transport; market channels and systems; local market products; supply/demand; seasonal product changes; market opportunities and consumer needs. | Source moves from basic identification/definition through description and explanation to discussion/recommendation. |
+| Printed pp. 9–10 | Strand 1; 1.2 Market Controls in Primary Production | KLO 1.2; SLO codes agr1.2.1.*–agr1.2.4.* | Biosecurity and quarantine; import/export controls; grower and marketing organisations; regional/international trade agreements; national controls, regulations and policy. | Identify/name → describe → explain → discuss/recommend. |
+| Printed pp. 11–12 | Strand 1; 1.3 Processing of a Primary Product (internal assessment) | KLO 1.3; SLO codes Agr1.3.1.*–Agr1.3.4.* | Plan and carry out a community primary-product investigation: purpose/question/rationale, hypothesis and variables, methods, data collection, logbook, data processing, interpretation, conclusions, referencing and evaluation. | State → describe/collect/process → explain/analyse → discuss/evaluate. |
+| Printed pp. 12–14 | Strand 2: Sustainable Primary Production; 2.1 Management Practices; 2.2 Husbandry/Agronomy Practices; 2.3 Global Issues Affecting Primary Production | MLO 2 and corresponding KLO/SLO tables | Sustainable production management; husbandry and agronomy; global issues affecting production. | Exact source outcomes and codes must be transcribed/validated individually before distribution. |
+| Printed pp. 15–19 | Strand 3: Production Management; 3.1 Schedule of Operations; 3.2 Factors Influencing Schedule; 3.3 Analysis of Agricultural Production (internal assessment) | MLO 3 and corresponding KLO/SLO tables | Scheduling operations, analysing factors that influence schedules, and analysing agricultural production. | Exact source outcomes and codes must be transcribed/validated individually before distribution. |
+
+**Important extraction note:** The prescription itself lists three strands in its content-components table and detailed sub-strands in the contents. Preserve the document's own structure and codes. Do not normalise apparent code/typographical inconsistencies until a second reviewer checks the PDF image and table. The first table above is a concept index, not the complete SLO inventory; full row-by-row extraction remains required.
+
+### Demonstrated source-native learning indicator record
+
+This is an example of how PacEdu will store the prescription's own specific learning outcome, not a new teacher-invented indicator:
+
+- Fiji source level: Form Seven / SPFSC
+- Subject: Agricultural Science
+- Strand: Primary Production
+- Sub-strand: Market Opportunities in Primary Production
+- Source outcome code: agr1.1.1.1
+- Source meaning (brief paraphrase): define seasonality in relation to primary production
+- Source skill level: 1
+- Printed source page: 7
+- Source version: EQAP/SPC 4th edition, February 2019
+- PacEdu status: SOURCE_VERIFIED; current/effective status still requires EQAP confirmation; redistribution permission not yet granted.
+
+### Other EQAP prescription / syllabus leads located
+
+The following public EQAP-hosted documents were discovered. They are candidate sources and must be checked for Fiji adoption, level, edition/effective date and whether the document is a prescription or syllabus before import:
+
+| Candidate source | Document/version information surfaced | Next validation |
+|---|---|---|
+| French | SPFSC French Prescription, 4th edition, February 2019; https://eqap.spc.int/sites/default/files/resources/2019-04/SPFSC%202019%20Aligned%20French%20Prescription.pdf | Confirm Form 7/Fiji adoption and current status. |
+| Agriculture | SPFSC Agriculture Prescription, 4th edition, February 2019; URL above. | Extract all strands/KLO/SLO rows and confirm status. |
+| Chemistry | SPFSC Chemistry Prescription, 3rd edition, April 2017; https://eqap.spc.int/sites/default/files/resources/2018-05/SPFSC-2017-Aligned-Chemistry-Prescription_FinalFinalDraft.pdf | Locate any replacement; confirm effective status before use. |
+| Biology | SPFSC Biology Syllabus, 5th edition, January 2023; https://eqap.spc.int/sites/default/files/resources/2023-06/SPFSC%20Biology%20Syllabus_2023_Final_EQAP_SR%20Corrected.pdf | Confirm Fiji adoption, effective date and whether it supersedes an earlier prescription. |
+| Physics | SPFSC Physics Syllabus, 5th edition, January 2020; https://eqap.spc.int/sites/default/files/resources/2021-02/SPFSC%20Physics%20Syllabus.pdf | Locate any replacement and confirm current Fiji use. |
+| Economics | SPFSC Economics Syllabus, 2023; https://eqap.spc.int/sites/default/files/resources/2023-06/SPFSC%20Economics%20Syllabus%20_2023_Final_EQAP_SR%20Checked.pdf | Confirm current Fiji adoption and exact Form 7 subject scope. |
+| Geography | SPFSC Geography Syllabus, 2023–2025; https://eqap.spc.int/sites/default/files/resources/2024-05/SPFSC%20Geography%20Syllabus%202023-2025_Final_EQAP_SR%20Checked.pdf | Verify the end date and whether a 2026 replacement exists. |
+
+A search-indexed EQAP document list also surfaced SPFSC English, History, Accounting, Information Technology, Mathematics Calculus, Mathematics Statistics and other prescriptions, but only as titles in a third-party document index. Those are discovery leads, not accepted source records. Obtain the files from EQAP/SPC or an official Fiji Ministry source and confirm the latest edition before importing.
+
+### Scope boundary and next actions
+
+1. These EQAP SPFSC documents are Form Seven / senior secondary materials. They cannot fill Years 1–12, ECE or other Form/Year gaps.
+2. Continue searching Ministry sources and controlled Ministry school resources for ECE–Year 12 and subject-specific prescriptions.
+3. For SPFSC/Form 7, catalogue every candidate subject prescription/syllabus, then verify the current version with EQAP and Fiji Ministry Curriculum Advisory Services.
+4. Extract every SLO with its exact code, level, strand/sub-strand, page, prerequisite and assessment type. Preserve source order and skill level.
+5. Do not distribute all Form 7 SLOs evenly over 115 days. First confirm teaching weeks, assessment calendar, prerequisite Year 12 outcomes and internal/external assessment requirements.
+6. The 2019 Agriculture prescription is a strong first example of the requested source type, but no full ECE–Form 7 indicator bank is complete. No missing level or subject is to be backfilled by inference.
