@@ -588,3 +588,56 @@ The Fiji National Curriculum Framework remains the framework reference in this r
 5. Continue Year 6 and Year 8 PE as interim 2015-source records only until current-status confirmation is obtained.
 
 **No new indicator records or 115-day allocations are added by this follow-up.** It improves source provenance and identifies the next controlled documents to acquire. The approved indicator bank remains partial, and all unverified class/subject/day slots remain blocked.
+
+
+## 18. Pilot operating decision — use available verified prescriptions and update with Ministry guidance (12 November 2026)
+
+**Owner direction:** PacEdu should not pause the Fiji pilot solely because a newer curriculum document is not publicly accessible. Use the reliable Fiji prescriptions and educational resources already located, subject to the controls below. Ministry of Education advice and authorised revised documents received during the pilot will be used to correct and improve the mappings.
+
+### A. Source-use rules for pilot preparation
+
+1. **Current authorised prescription available:** use it as the primary source after checking its issuing authority, edition, effective status, level, subject and source location.
+2. **Newer edition known to exist but controlled copy not yet obtained:** record the newer edition as “known to exist — authorised copy pending”. Use the latest reliable older Ministry/EQAP prescription only as an explicitly labelled interim basis, and do not claim alignment to the unavailable newer edition.
+3. **Older source with current status uncertain:** it may support teacher-reviewed pilot preparation only where its authority and contents can be verified. Mark INTERIM_SOURCE_CURRENT_STATUS_UNCONFIRMED.
+4. **Teaching guide, literacy guide or resource list rather than a prescription:** use it to inform teaching methods and examples, but do not convert its recommendations into official syllabus indicators. Label resulting learning focus as PACEDU_TEACHER_DESIGNED_FROM_SUPPORT_RESOURCE.
+5. **No reliable source:** leave the relevant class/subject/day slot visibly pending. Do not invent an official concept, code or indicator to fill it.
+6. Keep the original source code and page/section. PacEdu may write a plain-language paraphrase and a proposed teachable indicator, but the record must distinguish source text, PacEdu paraphrase and educator-approved activity objective.
+
+### B. Pilot content labels
+
+Use clear, teacher-visible labels:
+- CURRENT_OFFICIAL_SOURCE_VERIFIED — effective source and exact record verified.
+- INTERIM_OFFICIAL_SOURCE — authentic official older source used pending confirmation of current status or receipt of a newer authorised copy.
+- SUPPORT_RESOURCE_ONLY — useful Ministry/EQAP teaching resource, not a syllabus prescription.
+- PACEDU_TEACHER_DESIGNED — activity sequence or unpacking created by PacEdu from a stated source; not itself an official Ministry indicator.
+- MINISTRY_REVIEW_REQUESTED — submitted for Ministry guidance; not yet endorsed.
+- MINISTRY_ADVICE_RECEIVED_PENDING_RECORD — advice received but written record, scope or authorised confirmation still being documented.
+- MINISTRY_CONFIRMED — only after written or otherwise formally traceable confirmation from the authorised Ministry officer, with date, scope, document/version and conditions recorded.
+- RETIRED_OR_SUPERSEDED — retained for audit and not assigned to new work.
+
+Do not display “Ministry approved” based on informal comments, a pilot visit, a teacher's assumption or the mere absence of an objection.
+
+### C. Ministry pilot feedback and update loop
+
+For each pilot class/subject, keep a review log with:
+- jurisdiction, class/year, subject, term/week/day and linked indicator/activity IDs;
+- source title, issuing authority, edition, effective status, page/section and access date;
+- the exact issue or question raised by the teacher or Ministry reviewer;
+- reviewer role/office and date (record personal details only where necessary and authorised);
+- advice or requested correction, including whether it changes a concept, indicator interpretation, sequence, teaching method, assessment or accessibility accommodation;
+- evidence supplied (approved document, circular, written email/minute or authorised meeting record);
+- decision: accept, reject, defer or request clarification;
+- impact assessment on existing worksheets, marking guides, learner evidence and other classes;
+- reviewer, approval date, new version and rollback reference.
+
+Apply corrections first in staging. Preserve the old mapping and learner evidence for audit; do not silently overwrite previously taught or assessed content. Re-run curriculum mapping, worksheet, accessibility, privacy and regression tests. Where Ministry advice changes a prescribed expectation, require an authorised source or traceable written confirmation before marking the new expectation MINISTRY_CONFIRMED. Where advice is pedagogical rather than a formal curriculum change, record it as teaching guidance and do not relabel the official indicator.
+
+### D. Pilot readiness and honesty
+
+- Teachers may pilot only the content whose source and interim status are visible and which has passed the required educator review and school/pilot permission.
+- A pilot worksheet built from an interim source must say that it is an interim PacEdu teaching resource, not a newly issued Ministry syllabus or official examination.
+- Keep formal assessment eligibility disabled unless the applicable school/Ministry assessment authority and trusted server-side approval requirements are satisfied.
+- The 115-day pattern remains a planning framework for Fiji only where the approved school calendar supports it. Allocate indicators in sequence after source review; never fill empty slots by evenly spreading or repeating outcomes without educator approval.
+- Ministry feedback is a planned pilot improvement mechanism, not a substitute for the source verification, child-safety, accessibility, copyright, privacy or school approval gates.
+
+**Implementation boundary:** This section records the pilot operating rule. It does not certify that the Ministry has endorsed PacEdu, any interim indicator, any worksheet, or the proposed 115-day distribution.
