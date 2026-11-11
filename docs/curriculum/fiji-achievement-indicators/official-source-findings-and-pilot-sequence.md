@@ -1118,3 +1118,38 @@ The following surfaced in search as third-party hosted copies or historical mate
 
 This is a verified Ministry-hosted support resource for English/Phonics teaching design in lower primary. It improves the teacher-support evidence base but **does not close** the missing current controlled English syllabus, year-level scope-and-sequence, achievement-indicator/CLO schedules, or Mathematics source gaps. Stage 1 remains **IN_PROGRESS**. Continue to request the current controlled source package through Curriculum Advisory Services and authorised school/FEMIS/Moodle access.
 
+
+
+## 12. Ministry Year 6 & Year 8 Teacher's Guide — limited English indicator examples, 12 November 2026
+
+**Exact title:** *Teachers Guide for Y6 & Y8 Teachers — Term 3*.  
+**Issuer:** Fiji Ministry of Education, Curriculum Development Unit.  
+**Edition/date:** First edition 2015.  
+**Official Ministry-hosted PDF:** https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf  
+**Verification:** Ministry-hosted PDF opened; title/copyright and relevant English pages reviewed on 12 November 2026.
+
+### Source scope and copyright
+
+The guide says it is intended to help Year 6 and Year 8 teachers plan lessons **after the external examination**. It is a Term 3 post-examination guide, not the complete annual syllabus or the current full-year scope-and-sequence. The Ministry copyright notice states that schools may reproduce it for classroom purposes with acknowledgement; other uses must be referred to the Permanent Secretary through the Director Curriculum Advisory Services.
+
+### English evidence located
+
+- **Year 6:** Sub-strand EN 6.1, Text-Types, Media, Everyday Communication and Literary Texts. Content Learning Outcome EN 6.1.1: “Evaluate a range of written texts and make meaning out of it.” The guide's suggested achievement indicators include identifying text types, discussing main ideas, using skimming/scanning to identify main points, summarising, reading fluently with understanding, using new vocabulary correctly, forming words from roots, answering comprehension questions and writing complete-sentence responses. PDF printed page 7.
+- **Year 8:** The guide includes a Year 8 English Reading Skills section on literary-text response, including analysing stories, characters, settings, genres and readers' responses. The PDF presents this as a teaching/achievement guide rather than a complete, clearly coded current-year indicator schedule. PDF printed pages 8–9.
+
+### PacEdu classification and limits
+
+**Classification:** MINISTRY_HOSTED_HISTORICAL_POST_EXAM_SUPPORT_GUIDE — LIMITED_ENGLISH_OUTCOME_EXAMPLE — CURRENT_STATUS_NOT_CONFIRMED.
+
+1. These are genuine Ministry-published English outcome/achievement-guide examples and are useful retrieval evidence. They are not approved as the current complete Year 6/8 English indicator bank.
+2. Do not allocate them to Term 1, Term 2 or pre-exam Term 3 daily lessons: the guide expressly targets post-examination Term 3.
+3. Do not infer that EN 6.1.1 remains current or that the Year 8 material is complete/current. Obtain current controlled syllabus, scope-and-sequence and implementation circular from Ministry/Curriculum Advisory Services or authorised school FEMIS/Moodle access.
+4. Keep exact source code/title/page metadata in the restricted source register. Any reproduction or commercial/digital adaptation requires Ministry permission/clarification beyond the classroom-use permission.
+5. This guide does **not** supply a Mathematics indicator bank. Mathematics remains SOURCE_PARTIAL / CONTROLLED_DOCUMENT_NOT_RETRIEVED.
+
+### Mathematics acquisition result — this pass
+
+A further Ministry-domain search did not locate a current controlled Year 1–8 Mathematics syllabus or complete year-level indicator bank. The Ministry Annual Report 2022–2023 confirms that revised syllabus and Literacy/Numeracy guides were distributed for Years 1–4 and that curriculum documents were uploaded to FEMIS/Moodle, but it does not itself provide the Mathematics outcomes. Continue seeking the controlled Years 1–4 package and the current Years 5–8 and secondary pathway documents. Do not use old textbook/resource lists as a substitute.
+
+**Stage 1 remains IN_PROGRESS.** The new English source is a limited historical post-exam support guide; it does not close the English source gap. No verified Mathematics indicator bank was found in this pass.
+
