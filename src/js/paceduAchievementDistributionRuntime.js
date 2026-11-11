@@ -62,8 +62,8 @@
         return;
       }
       if (r.country !== "Fiji" || !r.class_level || !r.subject_id ||
-          !/^Term [123]$/.test(r.term) || !/^\\d+$/.test(r.week) ||
-          !/^\\d+$/.test(r.day) || Number(r.day) < 1 || Number(r.day) > 5 ||
+          !/^Term [123]$/.test(r.term) || !/^\d+$/.test(r.week) ||
+          !/^\d+$/.test(r.day) || Number(r.day) < 1 || Number(r.day) > 5 ||
           !r.indicator_id || !r.indicator_text) {
         errors.push("Row " + rowNumber + ": class, subject, term, week, day, indicator ID and exact indicator text are required.");
         return;
@@ -83,7 +83,7 @@
         r.educator_review_status === "VALIDATED" &&
         !!r.source_document_title && !!r.issuing_authority &&
         !!r.source_version && !!r.source_page_or_section &&
-        /^https?:\\/\\//i.test(r.source_url) && !!r.approved_by && !!r.approved_at;
+        (r.source_url.indexOf("https://") === 0 || r.source_url.indexOf("http://") === 0) && !!r.approved_by && !!r.approved_at;
       accepted.push({
         jurisdiction: "Fiji",
         curriculumVersion: r.framework_version,
