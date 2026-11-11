@@ -356,3 +356,45 @@ Financial education should be visible as a tagged concept strand within relevant
 Do not create loan, insurance, investment or banking advice as a student task without age-appropriate safeguarding and teacher review.
 
 **Subject-box count: 15.** Home Economics, Computer Studies, Vosa Vakaviti, Fiji Hindi, Urdu and Rotuman are separate boxes in addition to the original nine. Financial literacy may also be tagged within relevant Mathematics, Social Science, Health and Agriculture lessons, without replacing its own outcome where applicable.
+
+
+## Government updates integrated with the daily concept/indicator distribution
+
+**Mandatory daily-activity rule:** PacEdu must check relevant official Fiji Government, Ministry, Parliament and authorised public-agency updates when preparing or refreshing daily activities. Government updates are a real-life application/context layer, not a replacement for the approved curriculum indicator or concept.
+
+### Daily matching sequence
+
+1. Select the learner's level, subject box, term/week/day and the verified indicator/outcome (or clearly labelled PacEdu concept while official mapping is pending).
+2. Search the dated Government Update Register for a relevant, current and age-appropriate item.
+3. Match the update to the indicator only when it genuinely strengthens the same knowledge or skill. Examples: a climate-risk announcement can contextualise weather data, rainfall measurement, maps, disaster preparedness or environmental science; a digital-agriculture strategy can contextualise farm records, data, technology and agricultural sustainability; a public-health update can contextualise health literacy and interpreting information.
+4. Add a short factual context paragraph, source date/link and one learning task. The main learning intention and assessment evidence must still assess the day's indicator/concept.
+5. If no genuine match exists, do not force one. Keep the update in the current-affairs register/library for a later suitable lesson. A daily lesson does not need a news item merely to fill a slot.
+6. Re-check the source before reuse. Mark whether it is a proposal, Cabinet endorsement, approved policy/strategy, bill, Act, operational programme or completed action. Update or retire the classroom summary when the status changes.
+7. Keep controversial public-policy content factual and balanced. Learners examine evidence, institutions and differing documented views; activities must not campaign for or against a party, official, Bill or policy.
+8. Use age-appropriate language and avoid exposing children to sensitive details. Child protection, violence, health, drugs, disasters and personal safety content requires safeguarding review and suitable referral information.
+9. Preserve copyright and licence restrictions. Link to official source material and create original PacEdu questions; do not reproduce protected government documents wholesale without permission.
+10. Label every activity with both its curriculum provenance and its current-affairs provenance. If the indicator is not verified, the activity remains DRAFT — CURRICULUM MAPPING PENDING even if the government update is official.
+
+### Required fields on a daily activity
+
+- Curriculum: jurisdiction; level; subject box; term/week/day; syllabus/framework title and version; strand; exact indicator/outcome code and source locator (or PACEDU_CONCEPT_PENDING_SOURCE); reviewer; approval state.
+- Government context: issuing authority; exact title; publication date; source URL; update category; current legal/administrative status; date last checked; factual summary; age/safeguarding review.
+- Learning design: indicator-linked learning intention; why this update is relevant; teacher explanation; worked example; learner task; accessible text/audio/sign/tactile alternatives as appropriate; Copper/Bronze/Silver/Gold scaffolds; answer guide/rubric; evidence and next-step revision.
+- Audit: source version/check date; activity author; reviewer; changes made when the update changes; status history.
+
+### Example matching rules
+
+| Official update theme | Subject boxes it may support | Example concept connection (only if the verified daily indicator matches) |
+|---|---|---|
+| Fiji's revised tropical-cyclone anticipatory-action framework | Science, Mathematics, Social Science, Health, Technology | Weather/rainfall data, measurement, maps, community preparedness, risk communication and safe systems |
+| National E-Agriculture Strategy 2026–2031 | Agriculture, Mathematics, Computer Studies, Technology, English | Farm records, data tables, digital services, climate-smart production, reading an official strategy summary |
+| 10-Year Education Sector Strategic Plan 2025/26–2034/35 | English, Mathematics, Social Science, Computer Studies | Reading policy information, interpreting indicators/data, education access and systems |
+| National Action Plan to Prevent Violence Against Children 2026–2031 | Health, Social Science, English, Computer Studies | Child-safe help-seeking, rights and responsibilities, evaluating public information; safeguarding review required |
+| Public geothermal exploration information | Science, Mathematics, Social Science, Technology | Energy resources, maps, interpreting data, renewable-energy systems |
+| Asbestos-safety partnership | Science, Health, Technology, English | Hazard identification, safe environments, reading safety instructions; do not ask learners to handle or identify asbestos |
+| PAFCO modernisation proposal | Mathematics, Social Science, Agriculture/food systems, English, Technology | Reading a proposal, employment/economic activity, food processing, production and data; clearly label the guarantee as proposed until approval is confirmed |
+| Rights of Indigenous Peoples Bill passage | Social Science, English, Arts/languages | Parliament and law-making, rights, consultation, cultural heritage and source-based civic literacy; keep the activity neutral and accurately distinguish passage from commencement/implementation |
+
+**Important:** These are possible cross-curricular links, not claims that every listed subject has an official indicator for the topic. Do not add a topic to a subject's assessment unless its current approved syllabus outcome supports it.
+
+**Distribution control:** The current concept progressions in this file remain draft concept families. The complete 14-level × 15-subject × 115-day indicator distribution cannot be declared finished until the required controlled syllabus/indicator sources are verified. Preserve missing-source states; do not invent or silently substitute indicators.
