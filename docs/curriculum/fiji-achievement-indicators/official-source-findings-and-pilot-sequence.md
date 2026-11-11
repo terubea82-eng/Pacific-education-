@@ -1087,3 +1087,34 @@ The following surfaced in search as third-party hosted copies or historical mate
 5. Keep every missing class/subject combination marked SOURCE NOT YET LOCATED. No invented indicator wording, no unsupported daily activities and no 115-day allocations.
 
 **Stage 1 remains IN_PROGRESS.** This pass identifies one official Year 9–10 Social Science curriculum component and useful controlled-source acquisition routes, but does not establish a complete current Science or Social Science indicator inventory for ECE–Year 13.
+
+
+## 11. Ministry-hosted Years 3–4 Literacy Guide — verified support resource, 12 November 2026
+
+**Source:** Fiji Ministry of Education, Heritage & Arts, *Literacy Guide for Lower Primary — Years 3 & 4*.  
+**Official Ministry-hosted PDF:** https://www.education.gov.fj/wp-content/uploads/2022/06/Literacy_Guide_-for_years_34.pdf  
+**Verification:** Ministry-hosted PDF opened and its foreword, daily-guide contents, reading-progress section, sample planning section and rights notice reviewed on 12 November 2026. The guide's closing note identifies January 2017 and says the package was developed/piloted in Year 1–4 classes and reviewed for use in Fiji primary schools.
+
+### What the official guide supports
+
+- It describes itself as a practical lower-primary literacy guide aligned to the syllabus; it is a teaching/implementation support resource, not a replacement for the current English syllabus or a complete indicator register.
+- Its daily teaching structure includes oral-language activity, shared reading, five new sight words, phonics/word activities, and reading/writing activities.
+- It includes language and phonics activities, reading-progress checklists, a sample two-week planning overview, guidance for struggling readers and a teacher observation/coaching checklist.
+- The guide describes regular observation and recording of reading progress, use of reading stages and targeted teaching when learners are not progressing.
+- It supports practical teacher planning and assessment of reading development, but the specific checklists must not be treated as newly issued national achievement indicators or as an automatic PacEdu ability-placement rule.
+
+### PacEdu source classification and boundaries
+
+**Classification:** CURRENT_MINISTRY_HOSTED_SUPPORT_RESOURCE — NOT_A_COMPLETE_CURRENT_SYLLABUS_OR_INDICATOR_BANK.
+
+1. Use the guide as a reference for original PacEdu teacher-planning ideas and accessible literacy activity design for the relevant lower-primary years, subject to the exact current syllabus outcome being verified separately.
+2. Do not copy its entire daily guide, checklists, sample plans, or assessment tool into PacEdu without checking the licence and obtaining written permission where required.
+3. The rights notice permits partial reproduction for scientific, educational or research purposes with AQEP and source acknowledgement; whole-document reproduction or translation requires written permission. Commercial/profit reproduction rights are reserved. PacEdu is a digital platform with paid features, so obtain written Ministry/AQEP permission before reproducing or adapting substantial content for distribution.
+4. Keep the guide's reading-stage terminology distinct from PacEdu's four ability groups. PacEdu placement remains evidence-based and uses only the locked group names **Copper, Bronze, Silver and Gold**; do not rename the guide's reading stages as PacEdu groups.
+5. Its guidance on reading checks and progress records may inform the design of teacher-facing diagnostic tools only after local review, accessibility review, privacy safeguards and validation. Do not use the guide's checklist as a medical diagnosis or as a substitute for specialist assessment.
+6. The guide's dyslexia-related pages contain sensitive screening prompts and referral guidance. Any PacEdu adaptation must be reviewed by qualified inclusive-education professionals, avoid diagnostic claims, and protect learner/parent information.
+
+### Stage 1 impact
+
+This is a verified Ministry-hosted support resource for English/Phonics teaching design in lower primary. It improves the teacher-support evidence base but **does not close** the missing current controlled English syllabus, year-level scope-and-sequence, achievement-indicator/CLO schedules, or Mathematics source gaps. Stage 1 remains **IN_PROGRESS**. Continue to request the current controlled source package through Curriculum Advisory Services and authorised school/FEMIS/Moodle access.
+
