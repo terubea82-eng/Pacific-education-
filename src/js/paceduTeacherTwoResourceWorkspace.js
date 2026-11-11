@@ -193,6 +193,49 @@
       }
     } else worksheets.appendChild(node("p", "The worksheet download builder is not available in this session."));
     panel.appendChild(worksheets);
+    /* Progressive Cognitive Learning Pathway: framework only. It never invents
+       curriculum objectives, current-affairs facts, questions or answer keys. */
+    var pathway = node("section");
+    pathway.id = "paceduProgressiveCognitiveLearningPathway";
+    pathway.setAttribute("aria-label", "Progressive Cognitive Learning Pathway");
+    pathway.style.cssText = "margin-top:14px;padding-top:12px;border-top:1px solid #c8d7e2;";
+    var pathwayDetails = node("details");
+    var pathwaySummary = node("summary", "3. Progressive Cognitive Learning Pathway — open teacher guide");
+    pathwaySummary.style.cssText = "min-height:44px;padding:10px 0;font-weight:700;cursor:pointer;";
+    pathwayDetails.appendChild(pathwaySummary);
+    pathwayDetails.appendChild(node("p", "Use the same approved class learning objective for Copper, Bronze, Silver and Gold. Change the amount of support and depth of thinking, not the curriculum sequence. Start each day from evidence of the previous activity."));
+    var bloom = node("ol");
+    [
+      "Remember — retrieve key facts, words or steps",
+      "Understand — explain, describe or interpret in the learner's own words",
+      "Apply — use the learning in a familiar or new situation",
+      "Analyse — compare, classify, find patterns, causes or evidence",
+      "Evaluate — judge options and give reasons using evidence",
+      "Create — design, compose, investigate or produce an original response"
+    ].forEach(function (label) { bloom.appendChild(node("li", label)); });
+    pathwayDetails.appendChild(node("h5", "Thinking sequence — Bloom's revised taxonomy"));
+    pathwayDetails.appendChild(bloom);
+    var groupPath = node("ul");
+    [
+      "Copper — foundation access: pictures, oral responses, word banks, worked examples and one clear step at a time; build recall and understanding first",
+      "Bronze — guided development: explain in short sentences, sort and compare, apply to familiar examples, and give a simple reason",
+      "Silver — independent application: apply to less familiar situations, analyse evidence and cause/effect, and justify a choice",
+      "Gold — extended challenge: evaluate evidence, solve open-ended problems, create original work and defend conclusions"
+    ].forEach(function (label) { groupPath.appendChild(node("li", label)); });
+    pathwayDetails.appendChild(node("h5", "Differentiation — one objective, four routes"));
+    pathwayDetails.appendChild(groupPath);
+    pathwayDetails.appendChild(node("p", "Consecutive lesson cycle: check prior learning → teach and model → practise with support → apply → explain or analyse → justify or create → record evidence → plan the next day's step. Do not force all six thinking levels into every short lesson."));
+    pathwayDetails.appendChild(node("h5", "Writing and composition planner"));
+    pathwayDetails.appendChild(node("p", "Understand the topic → brainstorm ideas → group related ideas → make an outline → draft → revise meaning and order → edit spelling and punctuation → publish. Adjust the length and support to the learner's class and approved objective."));
+    pathwayDetails.appendChild(node("h5", "Question bank and answer bank — required teacher checks"));
+    pathwayDetails.appendChild(node("p", "Before release, each item should record: question ID and version; class; subject; term/week/day; approved learning objective; skill; Bloom level; difficulty; question type; marks; acceptable answer(s); explanation; rubric; common misconception; source; and teacher approval. Multiple-choice questions must have exactly A, B, C and D."));
+    pathwayDetails.appendChild(node("p", "Objective items may be auto-marked only against a reviewed answer key. Essays, compositions, explanations, drawings, practical and oral work require rubric-guided teacher review. Manual answer entry remains available."));
+    pathwayDetails.appendChild(node("h5", "Current-affairs reading — verified source required"));
+    pathwayDetails.appendChild(node("p", "Use dated Fiji/Pacific and international education or subject sources. Record publisher, publication date, source link and learning objective. Keep every new reading and related question marked PENDING_TEACHER_REVIEW with approved=false until a teacher checks its accuracy and age suitability. No live facts or source links are invented by this guide."));
+    pathwayDetails.appendChild(node("h5", "Progress and next-step report"));
+    pathwayDetails.appendChild(node("p", "Record evidence by skill across consecutive activities, including what the learner did independently and what support was used. Recommend the next skill step for teacher review. Missing work is not a low score; one mark must not promote or demote a learner or assign a permanent group."));
+    pathway.appendChild(pathwayDetails);
+    panel.appendChild(pathway);
 
     var aids = node("section");
     aids.setAttribute("aria-label", "Teacher resource library and teaching aid builder");
