@@ -664,6 +664,33 @@
     worksheet.indicatorMappingStatus = distributionLink.indicatorMappingStatus;
     worksheet.indicatorAssignment = distributionLink.indicatorAssignment || null;
     worksheet.assessmentMapping = distributionLink.assessmentMapping;
+    /* Protected curriculum-first gate: no learner-facing daily questions or tasks
+       are released until this exact jurisdiction/level/subject/day slot has a
+       source-verified, educator-validated prescribed concept/indicator. */
+    var curriculumGatePassed = !!worksheet.indicatorAssignment &&
+      worksheet.indicatorAssignment.mappingStatus === "VALIDATED" &&
+      !!worksheet.indicatorAssignment.indicatorId &&
+      !!worksheet.indicatorAssignment.indicatorText &&
+      !!worksheet.indicatorAssignment.sourceDocumentTitle &&
+      !!worksheet.indicatorAssignment.issuingAuthority &&
+      !!worksheet.indicatorAssignment.sourceVersion &&
+      !!worksheet.indicatorAssignment.sourceLocation;
+    if (!curriculumGatePassed) {
+      worksheet.questions = [];
+      worksheet.answerKey = [];
+      worksheet.tasks = [];
+      worksheet.dailyLesson.activities = [];
+      worksheet.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
+      worksheet.curriculumGate = {
+        passed: false,
+        reason: "A verified prescribed concept/indicator and educator validation are required before daily activities can be released.",
+        requiredFirst: ["jurisdiction", "level", "subject", "official issuing authority", "prescription title and version", "source page or section", "concept/indicator ID and text", "educator validation"],
+        formalAssessmentEligible: false
+      };
+      worksheet.curriculumNote = "Daily activity release is locked until the applicable mandated educational prescription or authorised institutional curriculum is verified and the concept/indicator is approved.";
+      return worksheet;
+    }
+    worksheet.curriculumGate = {passed:true,sourceStatus:worksheet.indicatorAssignment.sourceStatus,reviewStatus:worksheet.indicatorAssignment.reviewStatus};
     worksheet.questions = worksheet.questions.map(function (question) {
       return Object.assign({}, question, {
         indicatorIds: worksheet.indicatorIds.slice(),
