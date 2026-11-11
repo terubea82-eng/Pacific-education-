@@ -101,3 +101,12 @@ test("saved learner response records preserve exact activity, question, and sequ
   assert.ok(source.includes("sequenceId: source.sequenceId || lesson && lesson.questionSequenceId || null"));
   assert.ok(source.includes("activityId: (active.context && active.context.activityId)"));
 });
+
+test("learner runtime advances a worksheet sequence only after the answer save succeeds and the learner continues", () => {
+  assert.ok(source.includes('typeof window.PaceduDailyQuestionSequenceContinue === "function"'));
+  assert.ok(source.includes("continueSequence();"));
+  const saveIndex = source.indexOf("var saved = save(type, response, audio, ctx, verifiedVoice);");
+  const failureIndex = source.indexOf("if (!saved) {", saveIndex);
+  const continueIndex = source.indexOf("continueSequence();");
+  assert.ok(saveIndex >= 0 && failureIndex > saveIndex && continueIndex > failureIndex);
+});
