@@ -1,6 +1,6 @@
 # Fiji Curriculum Achievement Indicators — Teacher Reference Folder
 
-**Status:** staging source register + blank distribution template. Partial source-backed records are documented in `official-source-findings-and-pilot-sequence.md` and `year6-year8-2015-guide-source-backed-indicator-register.md`. The latter records 11 coded Year 6/8 PE candidates from a historical Ministry guide plus un-coded English/other achievement evidence. Current applicability and educator validation remain pending. This is not a complete ECE–Form 7 indicator bank; no complete class/subject distribution is claimed.
+**Status:** staging source register + blank distribution template. Partial source-backed records are documented in `official-source-findings-and-pilot-sequence.md` and `year6-year8-2015-guide-source-backed-indicator-register.md`, and `financial-education-years1-8-outcome-candidates.md`. The first records 11 coded Year 6/8 PE candidates from a historical Ministry guide plus un-coded English/other achievement evidence. The second records 28 internal, paraphrased FinEd learning-outcome candidates across Years 1–8 (not Ministry-coded indicators). Current applicability and educator validation remain pending. This is not a complete ECE–Form 7 indicator bank; no complete class/subject distribution is claimed.
 
 ## Purpose
 
@@ -20,7 +20,7 @@ The framework baseline is not a substitute for the current official subject syll
 
 | File | Purpose |
 |---|---|
-| `README.md` | Governance, visibility and daily-activity linking rules |\n| `official-source-findings-and-pilot-sequence.md` | Partial official-source register, source-status findings, a labelled teacher-designed 25-day safety sequence, and missing-source coverage list |\n| `year6-year8-2015-guide-source-backed-indicator-register.md` | 11 coded Year 6/8 PE indicator candidates plus un-coded English and other achievement evidence from the Ministry's 2015 Term 3 guide; current status and educator review pending |
+| `README.md` | Governance, visibility and daily-activity linking rules |\n| `official-source-findings-and-pilot-sequence.md` | Partial official-source register, source-status findings, a labelled teacher-designed 25-day safety sequence, and missing-source coverage list |\n| `year6-year8-2015-guide-source-backed-indicator-register.md` | 11 coded Year 6/8 PE indicator candidates plus un-coded English and other achievement evidence from the Ministry's 2015 Term 3 guide; current status and educator review pending |\n| `financial-education-years1-8-outcome-candidates.md` | 28 internal paraphrased FinEd learning-outcome candidates across Years 1–8 from the 2015 NFIT learning-outcomes document; not Ministry-coded indicators; current status pending |
 | `fiji-achievement-indicator-day-slots.csv` | Blank 115-day distribution template for one class + subject |
 | `achievement-indicator-record.schema.json` | Machine-readable required-field contract for each indicator record |
 
