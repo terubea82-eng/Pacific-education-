@@ -120,7 +120,6 @@
     var evidence = node("div");
     evidence.setAttribute("aria-label", "Learner roster and previous-day reviewed evidence");
     var students = classInfo && Array.isArray(classInfo.studentRefs) ? classInfo.studentRefs : [];
-    var groupCounts = { support: 0, developing: 0, expected: 0, extension: 0 };
     var hasReviewedEvidence = false;
     var levelValue = String(classInfo && (classInfo.level || classInfo.className) || selectedClass.textContent.trim());
     if (!students.length) {
@@ -167,8 +166,7 @@
       }
       worksheets.appendChild(groupStatus);
       if (worksheetAvailability.available) BANDS.forEach(function (band) {
-        var count = groupCounts[band.id] || 0;
-        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam" + (count ? " (" + count + " reviewed learner(s))" : " (no reviewed marks yet)"));
+        var button = node("button", "Prepare " + band.label + " pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)");
         button.type = "button";
         button.disabled = false;
         button.style.cssText = "display:block;width:100%;min-height:46px;padding:10px;margin:7px 0;text-align:left;";
