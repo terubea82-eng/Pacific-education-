@@ -643,7 +643,15 @@
         lessonPanel.appendChild(questionSequence);
         var sequenceStudent=null;
         try { sequenceStudent=JSON.parse(global.sessionStorage.getItem("paceduActiveStudentContextV1")||"null"); } catch(sequenceIdentityError) {}
-        var sequenceVerified=!!(sequenceStudent && sequenceStudent.role==="student" && sequenceStudent.identityVerified===true && sequenceStudent.studentId && sequenceStudent.classId);
+        var sequenceRoster=global.PacificEducationTeacherClassRosterContext;
+        var sequenceAssignedClass=null;
+        try { sequenceAssignedClass=sequenceStudent && sequenceStudent.classId && sequenceRoster && typeof sequenceRoster.getClass==="function" ? sequenceRoster.getClass(sequenceStudent.classId) : null; } catch(sequenceRosterError) {}
+        var sequenceVerified=!!(sequenceStudent && sequenceStudent.role==="student" && sequenceStudent.identityVerified===true &&
+          sequenceStudent.studentId && sequenceStudent.studentReference && sequenceStudent.classId &&
+          sequenceStudent.assignmentStatus==="roster-matched-prototype" && sequenceAssignedClass &&
+          String(sequenceAssignedClass.level||"")===String(sequenceStudent.classLevel||"") &&
+          Array.isArray(sequenceAssignedClass.studentRefs) &&
+          sequenceAssignedClass.studentRefs.indexOf(String(sequenceStudent.studentReference))>=0);
         var sequenceResponses=[];
         try { sequenceResponses=JSON.parse(global.localStorage.getItem("pacificEducationActivityResponses")||"[]"); } catch(sequenceReadError) { sequenceResponses=[]; }
         if (!Array.isArray(sequenceResponses)) sequenceResponses=[];
