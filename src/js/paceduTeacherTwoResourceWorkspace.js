@@ -148,8 +148,17 @@
       [["T1","Term 1 — 9 weeks"],["T2","Term 2 — 9 weeks"],["T3","Term 3 — 5 weeks"]].forEach(function (item) {
         var option = node("option", item[1]); option.value = item[0]; termSelect.appendChild(option);
       });
-      var savedTerm = String(window.localStorage.getItem("pacificEducationTerm") || "T1");
-      if (/^T[123]$/.test(savedTerm)) termSelect.value = savedTerm;
+      var savedTerm = String(window.localStorage.getItem("pacificEducationTerm") || "T1").trim();
+      var savedTermMatch = savedTerm.match(/^T([123])$/i) || savedTerm.match(/^Term\\s*([123])$/i);
+      termSelect.value = savedTermMatch ? "T" + savedTermMatch[1] : "T1";
+      function syncTermContext() {
+        var termLabelValue = "Term " + termSelect.value.slice(1);
+        try { window.localStorage.setItem("pacificEducationTerm", termLabelValue); } catch (_) {}
+        var quickAnswerTerm = document.getElementById("peQuickAnswerTerm");
+        if (quickAnswerTerm) quickAnswerTerm.value = termLabelValue;
+      }
+      syncTermContext();
+      termSelect.addEventListener("change", syncTermContext);
       termLabel.appendChild(termSelect);
       worksheets.appendChild(termLabel);
       var groupHeading = node("h5", "Prepare a pack for any ability group");
