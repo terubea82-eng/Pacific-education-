@@ -123,3 +123,13 @@ test("daily voice answers fail closed until learner-specific teacher permission 
   assert.doesNotMatch(protocol, /id="peBlindListenAnswer"/);
   assert.match(protocol, /verified teacher authorisation/);
 });
+
+
+test("formal assessments keep Listen available but block unverified voice uploads", () => {
+  const assessment = fs.readFileSync("src/js/assessments.js", "utf8");
+  assert.match(assessment, /Listen to question/);
+  assert.match(assessment, /Voice answers are temporarily unavailable until a teacher-authorisation service verifies permission for this learner/);
+  assert.doesNotMatch(assessment, /id="peActivityAudio"/);
+  assert.doesNotMatch(assessment, /accept="audio\\/\\*"/);
+  assert.match(assessment, /function readFormalAssessmentAudio\\(done\\) \\{\\s*\\/\\/ Fail closed:[^\\n]*\\n\\s*if \\(typeof done === "function"\\) done\\("");\\s*\\}/);
+});
