@@ -537,3 +537,14 @@ This search pass located further official EQAP-hosted SPFSC documents. These are
 On the PacEdu staging branch, the distribution importer has been widened from Fiji-only jurisdiction labels to country/jurisdiction-neutral labels, and the daily worksheet generator now returns a blocked curriculum status with no questions or tasks when the exact daily slot lacks a source-verified, educator-validated indicator. The first-day legacy worksheet bypass has been removed so it cannot skip the gate. This is a prototype client-side safeguard, not a security boundary: production must enforce the same checks on trusted server-side services before any activity is released or learner data is written.
 
 **Owner decision:** This curriculum-first gate is mandatory across PacEdu. Do not bypass it to populate empty days. If no valid prescription has yet been located, the correct next action is to obtain the authorised source and extract its concepts first.
+## 16. Global rollout limitation and trusted-release boundary (12 November 2026)
+
+The jurisdiction-neutral CSV foundation does not mean PacEdu is already ready to serve every country's school levels. Fiji is the first curriculum implementation. Other countries must have an approved jurisdiction profile, official level/subject catalogue, effective prescription register, calendar, language and local legal review before their learner activities can be generated.
+
+Browser-imported CSV rows remain untrusted reference data. Even when their source metadata and educator review fields are filled, they do not constitute trusted server authorisation or approval of the jurisdiction profile. The current staging assignment explicitly records `serverAuthorized: false` and `jurisdictionProfileStatus: PENDING_SERVER_REVIEW`. Therefore browser-only imports cannot unlock learner-facing worksheets.
+
+**Trusted release requires a future server-side adapter** to authenticate the reviewer, verify the approved jurisdiction profile and institution authority, validate the source/licence and indicator record, enforce tenant/role permissions, and return a signed or otherwise trusted assignment with `serverAuthorized: true` and `jurisdictionProfileStatus: APPROVED_WITH_LIMITS`. These values must never be accepted from ordinary client input. The client-side gate is an additional usability safeguard, not the security boundary.
+
+Revision papers and practice examination papers must follow the same curriculum-first gate. A generic term calendar may be shown as planning metadata, but no questions, readings, worked examples or answer keys may be released to learners until the exact prescribed concepts/indicators have passed the trusted gate and required educator review.
+
+**Status:** global policy and staging safeguards are recorded; global curriculum ingestion, jurisdiction profiles, trusted server approval, legal certification and production readiness remain incomplete.
