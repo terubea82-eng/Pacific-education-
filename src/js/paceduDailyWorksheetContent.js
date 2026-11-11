@@ -532,6 +532,9 @@
     };
   }
 
+  function indicatorTermForBlock(block) {
+    return block === "T1" ? "Term 1" : block === "T2" ? "Term 2" : block === "T3" ? "Term 3" : String(block || "");
+  }
   function getCurriculumWorksheet(options) {
     options = options || {};
     var block = String(options.term || "T1").toUpperCase();
@@ -604,34 +607,42 @@
         sequenceVersion: questionSequenceVersion
       });
     });
-    var indicatorEngine = global.PacificEducationAchievementDistributionEngine;
-    var classReference = String(options.classReference || "").trim();
-    var indicatorTerm = String(options.curriculumTerm || options.term || "").trim();
-    if (classReference && indicatorEngine && typeof indicatorEngine.buildDailyIndicatorPlan === "function") {
-      try {
-        var indicatorResult = indicatorEngine.buildDailyIndicatorPlan({
-          classId: classReference, level: level, subjectId: subject,
-          term: indicatorTerm, dayNumber: Math.max(1, Number(options.dayNumber) || (2 + ((week - 1) * 5) + (day - 1)))
-        });
-        var assignment = indicatorResult && indicatorResult.assignment;
-        if (assignment && assignment.indicatorId &&
-            String(assignment.classId || "") === classReference &&
-            String(assignment.level || "") === level &&
-            String(assignment.subjectId || "") === subject &&
-            String(assignment.term || "") === indicatorTerm) {
-          worksheet.dailyLesson.curriculumAlignment.candidateIndicator = {
-            id: String(assignment.indicatorId),
-            text: String(assignment.indicatorText || ""),
-            strand: String(assignment.strand || ""),
-            sourceStatus: String(assignment.sourceStatus || "unverified"),
-            productionEligible: assignment.productionEligible === true,
-            status: "PENDING_TEACHER_REVIEW"
-          };
-          worksheet.dailyLesson.curriculumAlignment.rule += " A matching class-specific indicator candidate is attached for teacher review only; it is not treated as verified by this generator.";
-        }
-      } catch (indicatorError) {
-        /* Missing or unavailable indicator services must not break daily lessons. */
-      }
+    var distributionRuntime = global.PacEduAchievementDistributionRuntime;
+    var distributionTerm = indicatorTermForBlock(block);
+    var distributionLink = distributionRuntime && typeof distributionRuntime.linkDailyActivity === "function"
+      ? distributionRuntime.linkDailyActivity(worksheet, {
+          level: level, subjectId: subject, term: distributionTerm, week: week, day: day
+        })
+      : { indicatorIds: [], indicatorMappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED", indicatorAssignment: null,
+          assessmentMapping: { indicatorIds: [], evidenceTypes: [], mappingStatus: "DISTRIBUTION_FILE_NOT_IMPORTED",
+            formalAssessmentEligible: false, serverAuthorizationRequired: true } };
+    worksheet.indicatorIds = distributionLink.indicatorIds || [];
+    worksheet.indicatorMappingStatus = distributionLink.indicatorMappingStatus;
+    worksheet.indicatorAssignment = distributionLink.indicatorAssignment || null;
+    worksheet.assessmentMapping = distributionLink.assessmentMapping;
+    worksheet.questions = worksheet.questions.map(function (question) {
+      return Object.assign({}, question, {
+        indicatorIds: worksheet.indicatorIds.slice(),
+        indicatorMappingStatus: worksheet.indicatorMappingStatus
+      });
+    });
+    if (worksheet.indicatorAssignment) {
+      var mapped = worksheet.indicatorAssignment;
+      worksheet.dailyLesson.curriculumAlignment.candidateIndicator = {
+        id: mapped.indicatorId,
+        text: mapped.indicatorText,
+        strand: mapped.strand || "",
+        sourceStatus: mapped.sourceStatus,
+        reviewStatus: mapped.reviewStatus,
+        status: mapped.mappingStatus,
+        productionEligible: false
+      };
+      worksheet.dailyLesson.curriculumAlignment.achievementIndicator = mapped.mappingStatus === "VALIDATED"
+        ? mapped.indicatorText : null;
+      worksheet.dailyLesson.curriculumAlignment.verificationStatus = mapped.mappingStatus;
+      worksheet.dailyLesson.curriculumAlignment.rule += " The exact class/subject/term/week/day distribution slot is linked; formal assessment still requires trusted server-side authorization.";
+    } else {
+      worksheet.dailyLesson.curriculumAlignment.rule += " No indicator has been imported for this exact class/subject/term/week/day slot. Do not infer or invent one.";
     }
     worksheet.status = "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING";
     var candidateSource = null;
