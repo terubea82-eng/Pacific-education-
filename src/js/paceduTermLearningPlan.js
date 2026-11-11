@@ -41,9 +41,10 @@ function getRevisionPaper(options){
    });
   }
  }
+ var approvedCount=qs.length;
  return {title:t.label+" "+(options.subject||"Subject")+" Revision Practice",level:options.level||"Class 1",subject:options.subject||"English",term:t.label,
- ability:options.ability||"developing",instructions:"Complete after the term's daily activities. Teacher must review questions and answer key.",questions:qs,answerKey:keys,questionCount:qs.length,
- status:"PRACTICE_PAPER_REQUIRES_TEACHER_REVIEW",officialExamPaper:false,sourceWeeks:options.paperType==="exam"?[t.weeks]:[Math.max(1,t.weeks-1),t.weeks],curriculumMappingStatus:"NOT_YET_MAPPED"};
+ ability:options.ability||"developing",instructions:approvedCount?"Complete after the term's approved daily activities. Teacher must review questions and answer key.":"No revision paper is released until prescribed concepts/indicators are validated and trusted jurisdiction approval is present.",questions:qs,answerKey:keys,questionCount:approvedCount,
+ status:approvedCount?"PRACTICE_PAPER_REQUIRES_TEACHER_REVIEW":"BLOCKED_CURRICULUM_SOURCE_REQUIRED",officialExamPaper:false,sourceWeeks:options.paperType==="exam"?[t.weeks]:[Math.max(1,t.weeks-1),t.weeks],curriculumMappingStatus:"NOT_YET_MAPPED",learnerReleaseEligible:false};
 }
 global.PacEduTermLearningPlan=Object.freeze({terms:TERMS,stages:DAYS,abilityBands:BANDS,getTermPlan:getTermPlan,getRevisionPaper:getRevisionPaper});
 })(window);
