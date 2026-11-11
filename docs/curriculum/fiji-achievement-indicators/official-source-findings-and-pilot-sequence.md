@@ -823,3 +823,38 @@ The entries below preserve source codes and skill levels while paraphrasing outc
 - The inventory above is a first transcription/paraphrase pass, not a certified complete code list. Reconcile every row against the PDF page image, especially rows in the merged tables on pages 11–16.
 - This syllabus describes a regional South Pacific Form Seven Certificate. Confirm its applicability to the specific Fiji pilot school and the latest effective EQAP syllabus before final approval.
 - No daily activity, worksheet or 115-day allocation is unlocked by this extraction alone. Each selected SLO still needs source-page verification, school/programme applicability, educator validation and a timetable that respects the 28-week suggested course duration.
+
+
+## 20. Agriculture 2023–2025 extraction validation log (12 November 2026)
+
+**Validation status: TEXT_REVIEWED_PARTIAL; VISUAL_PAGE_CHECK_BLOCKED; NOT_CANONICAL_APPROVED.**
+
+The official EQAP PDF text was opened and reviewed at the source lines covering printed pages 9–22. Attempts to retrieve page images for printed pages 10–18 returned HTTP 403, so visual table-cell verification could not be completed in this pass. The existing section 19 inventory remains a first transcription/paraphrase register only.
+
+### Text findings confirmed from the source
+
+- The syllabus is the South Pacific Form Seven Certificate Agriculture programme and its printed edition history identifies January 2023 as the fifth edition. The cover states 2023–2025; current 2026 effective status and Fiji school adoption remain unconfirmed.
+- The course specifies 28 weeks at five hours per week (140 hours).
+- It defines the three strands and seven sub-strands; MLO/KLO/SLO hierarchy; SOLO skill levels 1–4.
+- The assessment section states 70% external assessment and 30% internal assessment. Internal assessment comprises a 20% practical investigation (sub-strand 1.3) and a 10% case study (sub-strand 3.3).
+- The practical investigation requires a student logbook, teacher checks and an individual investigation/report. The case study is also an internal assessment task. These must not be treated as ordinary auto-marked daily worksheet questions.
+- The current section 19 table contains 154 candidate SLO rows when its nine sub-strand row counts are added (30 + 17 + 8 + 17 + 15 + 21 + 22 + 18 + 6). This is a count of the draft register, not a certified source total.
+
+### Table-extraction risks requiring visual or authoritative confirmation
+
+1. **Printed page 12, sub-strand 1.2:** the text extraction repeats SLO 15 and its outcome text when rows 16 and 17 appear. The associated codes and skill levels are separately visible in the extracted sequence, but the table must be checked visually before canonical import.
+2. **Printed page 14, sub-strand 2.1:** SLO 12 is repeated across the water-management and green-economy rows in extracted text. The later outcome/code pairs are readable, but repeated row carry-over makes a text-only reconstruction unsafe.
+3. **Printed page 15, sub-strand 2.2:** the fertilizer/feed application row is repeated across subsequent rows. The hygiene, genetic-selection and certified-seed outcomes and codes can be read in sequence, but their row boundaries and SLO numbering need visual confirmation.
+4. **Printed page 18, sub-strand 3.1:** the market-quality outcome is repeated alongside SLO 20 and the international-marketing rows. Confirm row boundaries and the code-to-outcome pairing visually.
+5. **Printed page 19, sub-strand 3.2:** SLO 13 is repeated while the trade-agreement and regulation/policy rows follow. Confirm the row boundaries before canonical import.
+6. **Printed page 20, sub-strand 3.3:** the source text prints the code exactly as `Agr.3.3.4.1` for the trends/relationships/patterns outcome. Preserve this punctuation in the raw-source-code field until EQAP confirms whether it is intentional or a typographical error. Do not silently normalise it to `Agr3.3.4.1`.
+
+### PacEdu handling decision
+
+- Keep all section 19 records in a **candidate / pending source verification** state. Do not generate daily activities, worksheets, formal assessments or 115-day allocations from this table yet.
+- Preserve the exact printed code in a raw field, and store any normalised search key separately with an explicit review flag. Never overwrite source spelling.
+- Do not reproduce EQAP tables, full outcome wording, examination questions or illustrations in PacEdu without written permission from the EQAP Director. The register uses concise paraphrases and metadata only.
+- Before release, obtain a page-image or second-authoritative-copy check for pages 10–20; reconcile every code, SOLO level, SLO number, strand/sub-strand and assessment type; then obtain confirmation of current 2026 applicability to the pilot school.
+- The 28-week/140-hour programme duration and its internal/external assessment structure must be reconciled with the school's timetable. It must not be forced into the general 115-day calendar.
+
+This validation log records source-reading progress only. It does not certify the 154 candidate rows, confirm Ministry endorsement, establish current Fiji adoption, grant reproduction rights or unlock learner-facing content.
