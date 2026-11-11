@@ -52,7 +52,7 @@ test("teacher subject selection shows every class and links the class to matchin
   await page.addScriptTag({ url: "./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=linked-workflow-test" });
 
   await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toHaveAttribute("aria-label", "Student daily activities and matching workplans");
-  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("My Teaching Workspace");
+  await expect(page.locator("#paceduTeacherDailyLearningOnlyShell")).toContainText("Choose a Subject");
   await expect(page.locator("#paceduTeacherSubjectGrid button[data-pacedu-teacher-subject]")).toHaveCount(15);
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Home Economics");
   await expect(page.locator("#paceduTeacherSubjectGrid")).toContainText("Rotuman");
@@ -89,6 +89,11 @@ test("teacher subject selection shows every class and links the class to matchin
   await expect(page.locator("#peQuickAnswerSubject")).toHaveValue("Science");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Teacher Instructions");
   await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Daily Activities + Revision + Practice Exam");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Gold");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Silver");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Bronze");
+  await expect(page.locator("#paceduTeacherTwoResourcePanel")).toContainText("Copper");
+  await expect(page.locator('#paceduTeacherTwoResourcePanel [aria-label="Teacher resource library and teaching aid builder"]')).toBeHidden();
   await expect(page.getByRole("button", { name: "Print teacher instructions / Save as PDF", exact: true })).toBeEnabled();
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationSubject"))).toBe("Science");
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationClassLevel"))).toBe("Class 2");
