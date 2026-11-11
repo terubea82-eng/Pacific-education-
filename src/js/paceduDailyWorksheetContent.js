@@ -565,7 +565,7 @@
     // This API is for subsequent scheduled teaching worksheets, so the selected daily
     // worksheet remains separate and never overwrites that diagnostic.
     var scheduledDay = 2 + ((week - 1) * 5) + (day - 1);
-    var worksheet = make(level, subject, scheduledDay, ability);
+    var worksheet = make(level, subject, scheduledDay, ability, options);
     if (subject === "English") {
       var scheduledEnglish = makeScheduledEnglishContent(
         level, ability,
@@ -668,7 +668,7 @@
        are released until this exact jurisdiction/level/subject/day slot has a
        source-verified, educator-validated prescribed concept/indicator. */
     var curriculumGatePassed = !!worksheet.indicatorAssignment &&
-      worksheet.indicatorAssignment.mappingStatus === "VALIDATED" &&
+      worksheet.indicatorAssignment.mappingStatus === "VALIDATED" &&\n      worksheet.indicatorAssignment.serverAuthorized === true &&\n      worksheet.indicatorAssignment.jurisdictionProfileStatus === "APPROVED_WITH_LIMITS" &&
       !!worksheet.indicatorAssignment.indicatorId &&
       !!worksheet.indicatorAssignment.indicatorText &&
       !!worksheet.indicatorAssignment.sourceDocumentTitle &&
