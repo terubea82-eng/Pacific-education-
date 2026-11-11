@@ -781,6 +781,24 @@
     }
     return worksheet;
   }
+  function getBlockedWorksheet(level, subject, day, ability, options) {
+    var real = make(level, subject, day, ability, options);
+    real.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
+    real.curriculumGate = {
+      passed: false,
+      reason: "A verified prescribed concept/indicator and trusted jurisdiction approval are required before learner release.",
+      serverAuthorizationRequired: true,
+      serverAuthorized: false,
+      jurisdictionProfileStatus: "PENDING_SERVER_REVIEW"
+    };
+    real.questions = [];
+    real.answerKey = [];
+    real.tasks = [];
+    real.readingText = "";
+    real.topic = "Curriculum source pending";
+    real.learnerReleaseEligible = false;
+    return real;
+  }
   function install() {
     var lib=global.PacificEducationEnglishWorksheetLibrary;
     if(!lib||typeof lib.getWorksheet!=="function"||lib.dailyContentEnhanced) return false;
@@ -788,15 +806,7 @@
     var enhanced={};
     Object.keys(lib).forEach(function(k){enhanced[k]=lib[k];});
     enhanced.getWorksheet=function(level,ability,day,subject,options) {
-      var real=make(level,subject||"English",day,ability||"developing",options);
-      real.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
-      real.curriculumGate = {passed:false,reason:"A verified prescribed concept/indicator and trusted jurisdiction approval are required before learner release."};
-      real.questions = [];
-      real.answerKey = [];
-      real.tasks = [];
-      real.readingText = "";
-      real.topic = "Curriculum source pending";
-      return real;
+      return getBlockedWorksheet(level,subject||"English",day,ability||"developing",options);
     };
     enhanced.getDailyContentWorksheet=make;
     enhanced.dailyContentEnhanced=true;
@@ -810,7 +820,7 @@
   global.PacEduDailyWorksheetContent=Object.freeze({
     levels:levels.slice(),
     subjects:Object.keys(packs),
-    getWorksheet:make,
+    getWorksheet:getBlockedWorksheet,
     getCurriculumWorksheet:getCurriculumWorksheet,
     hasAnswerKey:function(level,subject,day,ability){var w=make(level,subject,day,ability);return w.questions.length===4&&w.answerKey.length===4&&w.answerKey.every(function(a){return !!a.answer&&!!a.explanation;});}
   });
