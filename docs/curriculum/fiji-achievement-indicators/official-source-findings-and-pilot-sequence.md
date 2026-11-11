@@ -1293,3 +1293,18 @@ A search surfaced a July 2025 FlipHTML5 copy titled *Revised Secondary English C
 5. The 2022–2023 report is historical implementation evidence, not proof of the current 2026 version or later supersession.
 
 **Stage 1 remains IN_PROGRESS.** This update clarifies the official acquisition route and year-band status; it does not supply a new Mathematics or English indicator bank.
+
+
+## 18. Fiji National Curriculum Framework review — Cabinet decision and transition safeguard (12 November 2026)
+
+**Source:** Fiji Government, *14th Cabinet Meeting Decisions — 7 October 2025*, official government website: https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/
+
+Cabinet endorsed a review of the 2013 Fiji National Curriculum Framework and established a taskforce to oversee initial planning for that review.
+
+**PacEdu interpretation:**
+1. This is a decision to review the framework and begin planning; it is not evidence that a replacement framework has been completed, approved, commenced or superseded the existing framework.
+2. Continue to use only the applicable, ready and officially effective Fiji prescriptions. Do not import draft review material as a mandatory curriculum.
+3. For each new or revised prescription, record the issuing authority, approval/effective date, transition arrangements, year/level coverage and any superseded document before changing PacEdu daily activities.
+4. The existing 2013 framework should remain tagged `REVIEW_STATUS_PENDING_CONFIRMATION` for transition monitoring; do not describe it as replaced based on this Cabinet decision alone.
+
+**Stage 1 remains IN_PROGRESS.** This is a governance/status update, not a source of subject achievement indicators or daily activities.
