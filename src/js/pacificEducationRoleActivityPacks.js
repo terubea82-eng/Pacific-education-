@@ -698,6 +698,8 @@
               sequenceVersion:question.sequenceVersion || lesson.questionSequenceVersion,
               questionText:question.prompt, audioText:question.prompt,
               answerKey:answerEntry.answer, options:question.options||[],
+              indicatorIds:Array.isArray(question.indicatorIds)?question.indicatorIds.slice():[],
+              indicatorMappingStatus:question.indicatorMappingStatus||lesson.indicatorMappingStatus||"NOT_MAPPED",
               subjectId:lessonSubject, term:lessonTerm, renderTargetId:"paceduDailyQuestionAnswer"
             };
             global.PaceduDailyQuestionSequenceContinue=function(){
@@ -797,8 +799,12 @@
       try { learnerRegistration = JSON.parse(global.sessionStorage.getItem("pacificEducationPilotRegistration") || "null"); } catch (_) {}
       var preparedAt = new Date().toISOString();
       var assignmentId = [context.classReference || "class-pending", context.level || "level-pending", context.subject || "subject-pending", context.term || "term-pending", "day-" + (Math.max(1,Number(day)||1)), preparedAt.slice(0,10)].join(":");
+      var lessonIndicatorIds = Array.isArray(lesson && lesson.indicatorIds) ? lesson.indicatorIds.slice() : [];
+      var lessonIndicatorStatus = lesson && lesson.indicatorMappingStatus || "NOT_MAPPED";
+      var lessonAssessmentMapping = lesson && lesson.assessmentMapping || null;
       records[key] = {
         activityId:activity.id, assignmentId:assignmentId, preparedDate:preparedAt.slice(0,10),
+        indicatorIds:lessonIndicatorIds, indicatorMappingStatus:lessonIndicatorStatus, assessmentMapping:lessonAssessmentMapping,
         learnerReference:learnerRegistration && learnerRegistration.learnerReference || "",
         learnerIdentityStatus:learnerRegistration && learnerRegistration.identityStatus || "identity-not-available",
         learnerIdentityPending:!!(learnerRegistration && learnerRegistration.identityPending),
@@ -834,6 +840,7 @@
             classReference:context.classReference, classLevel:context.level, subject:context.subject,
             term:context.term, capability:context.capability, day:Math.max(1,Number(day)||1),
             type:"daily-activity", questionText:activity.title, response:response,
+            indicatorIds:lessonIndicatorIds, indicatorMappingStatus:lessonIndicatorStatus, assessmentMapping:lessonAssessmentMapping,
             preparedDate:preparedAt.slice(0,10), savedAt:preparedAt,
             reviewStatus:"pending-teacher-review", evidenceType:activity.evidence,
             source:"PacEdu learner workspace; local pilot"
