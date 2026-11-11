@@ -565,7 +565,7 @@
         lessonPanel.setAttribute("aria-label","Step-by-step see read and hear lesson");
         lessonPanel.style.cssText="margin:14px 0;padding:14px;border:1px solid #b7c9d6;border-radius:9px;";
         var lessonHeading = document.createElement("h4"); lessonHeading.textContent="Learn in steps: See • Read • Hear • Try • Check"; lessonPanel.appendChild(lessonHeading);
-        var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". Your teacher must confirm the exact current syllabus indicator and assigned week; this draft is not labelled officially aligned."; lessonPanel.appendChild(lessonNotice);
+        var lessonNotice = document.createElement("p"); lessonNotice.textContent="Practice lesson example for "+lessonLevel+" "+lessonSubject+". The indicator distribution link is shown below when an exact class, subject, term, week and day record has been imported. Browser-imported mapping remains a prototype reference and does not authorize formal assessment."; lessonPanel.appendChild(lessonNotice);
         var scheduleNav=document.createElement("section");
         scheduleNav.setAttribute("aria-label","Choose term and teaching week");
         scheduleNav.style.cssText="margin:10px 0;padding:10px;border:1px solid #c8d5de;border-radius:8px;";
@@ -752,9 +752,13 @@
         }
         var alignment=document.createElement("p");
         var candidateIndicator=lesson.dailyLesson.curriculumAlignment.candidateIndicator;
-        alignment.textContent="Curriculum trace: "+lesson.dailyLesson.curriculumAlignment.verificationStatus+". "+
-          (candidateIndicator ? "Candidate indicator for teacher review: "+candidateIndicator.id+" — "+candidateIndicator.text+"; strand: "+candidateIndicator.strand+"; source status: "+candidateIndicator.sourceStatus+". This is not verified alignment." :
-          "Exact official achievement indicator: not yet mapped; teacher review is required.");
+        var mappingStatus=lesson.indicatorMappingStatus||"NO_APPROVED_INDICATOR_SLOT";
+        alignment.textContent="Curriculum trace: "+mappingStatus+". "+
+          (candidateIndicator ? "Indicator "+candidateIndicator.id+" — "+candidateIndicator.text+"; strand: "+candidateIndicator.strand+"; source status: "+candidateIndicator.sourceStatus+"; educator review: "+(candidateIndicator.reviewStatus||"PENDING")+". "+
+            (mappingStatus==="VALIDATED" ? "Source and educator review fields are recorded in this imported prototype distribution; trusted server confirmation is still required before formal assessment." : "This indicator remains pending review and must not be described as verified.") :
+          "No indicator is assigned to this exact class, subject, term, week and day slot. Do not borrow another day's indicator or invent one.")+
+          " Assessment evidence is linked to the indicator ID where available; formal assessment eligibility remains disabled until trusted server authorization.";
+
         lessonPanel.appendChild(alignment);
         card.appendChild(lessonPanel);
       }
