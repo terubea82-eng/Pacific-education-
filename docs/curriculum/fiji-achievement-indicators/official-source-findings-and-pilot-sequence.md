@@ -255,3 +255,31 @@ Request the current, effective versions of:
 4. The latest subject-by-subject status register, including superseded, revised, trial and effective syllabus versions.
 
 **Distribution decision:** No indicators are inferred from textbook titles, exam subject names or the 2016 inventory. All Year 9–13 indicator slots remain **SOURCE NOT YET LOCATED** until a current syllabus/teacher guide with exact outcomes is obtained and reviewed.
+
+
+## 10. Secondary TEST curriculum version-control evidence (12 November 2026)
+
+### Source K — Ministry Annual Report 2019–2020
+
+- Official Ministry-hosted URL: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2019%E2%80%932020.pdf
+- Search-indexed Ministry report text states that curriculum working committees reviewed Year 9 and Year 11 TEST curricula and developed teaching resources; it says the new Year 9 curriculum/textbooks were endorsed by the Curriculum Council and implemented in secondary schools in 2019, with reviewed Year 11 resources also in 2019.
+- This is historical status evidence only. It does not provide the full current syllabus, indicator list, or confirm whether subsequent revisions have superseded those documents.
+
+### Source L — Ministry Annual Report 2020–2021 (secondary TEST review)
+
+- Official Ministry-hosted URL: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+- Search-indexed report text states that Senior Education Officers coordinated analysis and preparation for review of Year 12 Applied Economics, Applied Technology, Technical Drawing, Home Economics and Office Technology syllabuses, and Year 13 Chemistry; it also notes review/amendment of TEST textbooks across Years 9–13.
+- This shows continuing secondary syllabus/resource review activity in 2020–2021. It is not proof that every named syllabus was finalised, approved, or implemented, and it is not an indicator source.
+
+### Source M — Policy on Free Educational Resources, Appendix B (2016 prescribed textbook list)
+
+- Same official Ministry URL as Source E: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- Appendix B includes a Year 10 list with English, Mathematics, Basic Science, Social Science, Commercial Studies and language resources. The Appendix is explicitly a 2016 textbook list and therefore only a historical resource-discovery aid.
+- The listed Year 10 subjects and titles must not be treated as a current curriculum mandate or as evidence that their 2016 outcomes remain in force.
+
+### Secondary coverage decision
+
+- Secondary curriculum cannot be completed by carrying forward the 2016 Appendix B list or the 2019–2021 annual-report status notes.
+- For each Year 9–13 subject, obtain the current endorsed syllabus, learning outcomes/indicators, scope-and-sequence, assessment/examination specification, effective date and any replacement notice from the Ministry's responsible subject section.
+- Keep Forms 3–7 as PacEdu display aliases only until an official Year-to-Form equivalence table is confirmed. Do not map a Year 10 historical textbook entry to a Form 4 indicator by assumption.
+- No secondary daily activity is to be marked as officially aligned solely because its subject title appears in an old textbook inventory.
