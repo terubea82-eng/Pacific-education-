@@ -193,18 +193,12 @@
     var box=document.createElement("section"); box.id="peBlindAttemptProtocol";
     box.setAttribute("aria-label","Blind learner voice answer confirmation");
     box.style.cssText="margin:14px 0;padding:16px;border:3px solid #000;border-radius:8px;background:#fff;";
-    box.innerHTML="<h3>Blind User Voice Answer Protection</h3>"+
-      "<p><strong>Listen → Speak → Read Back → Confirm → Submit</strong></p>"+
-      "<p>PacEdu will not silently correct your words. You must confirm the words heard before they are submitted.</p>"+
-      '<button type="button" id="peBlindListenAnswer" style="min-height:56px;padding:12px;font-weight:800;">🎙️ Speak Answer</button> '+
-      '<button type="button" id="peBlindConfirm" disabled style="min-height:52px;padding:12px;">✓ Confirm</button> '+
-      '<button type="button" id="peBlindChange" disabled style="min-height:52px;padding:12px;">↻ Change</button> <button type="button" id="peBlindSpell" style="min-height:52px;padding:12px;">🔤 Spell Word</button>'+
-      '<p id="peBlindAttemptStatus" role="status" aria-live="assertive">Ready. Speak Answer starts the protected voice process.</p>';
+    box.innerHTML="<h3>Accessible Answer Options</h3>"+
+      "<p>PacEdu keeps the question available through the Listen control. Voice answers are locked until a teacher-authorisation service can verify permission for this learner.</p>"+
+      "<p>You may use the written answer area, an approved communication aid, or ask your teacher to enter a paper response. Your work will not be marked wrong because a response is missing.</p>"+
+      '<p id="peBlindAttemptStatus" role="status" aria-live="polite">Voice answer is waiting for verified teacher authorisation. Listen and text response remain available.</p>';
     panel.insertBefore(box,panel.firstChild);
-    document.getElementById("peBlindListenAnswer").addEventListener("click",startRecognition);
-    document.getElementById("peBlindConfirm").addEventListener("click",submitConfirmed);
-    document.getElementById("peBlindChange").addEventListener("click",changeAnswer); document.getElementById("peBlindSpell").addEventListener("click",spellWord);
-    speak("Blind answer protection is ready. Speak Answer starts listening. I will read back exactly what I heard before submission.",true);
+    speak("Accessible answer options are ready. You can listen to the question and use the written answer area. Voice answers are waiting for verified teacher authorisation.",true);
   }
   function wrapRender(){
     if(!window.PacificEducationActivity||typeof window.PacificEducationActivity.render!=="function")return;
@@ -217,7 +211,7 @@
       active.question=String(source.questionText||source.learnerTask||source.description||lesson&&lesson.title||"Daily Activity");
       active.transcript=""; active.awaiting=false; active.audioDataUrl=""; active.spelling="";
       setTimeout(install,50);
-      setTimeout(function(){announce("Question "+active.day+" is ready. Listen to the question, then speak your answer when ready.");},120);
+      setTimeout(function(){announce("Question "+active.day+" is ready. Listen to the question and use the written answer area. Voice answers require verified teacher authorisation.");},120);
       return result;
     };
     window.PacificEducationActivity.__blindProtocolWrapped=true;
