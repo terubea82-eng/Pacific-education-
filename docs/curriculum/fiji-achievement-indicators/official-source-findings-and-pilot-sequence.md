@@ -1308,3 +1308,34 @@ Cabinet endorsed a review of the 2013 Fiji National Curriculum Framework and est
 4. The existing 2013 framework should remain tagged `REVIEW_STATUS_PENDING_CONFIRMATION` for transition monitoring; do not describe it as replaced based on this Cabinet decision alone.
 
 **Stage 1 remains IN_PROGRESS.** This is a governance/status update, not a source of subject achievement indicators or daily activities.
+
+
+## 19. Years 1–8 literacy/numeracy review and later assessment context — status evidence only (12 November 2026)
+
+### Source A — 2024 report of Ministry curriculum-review progress
+
+- Publisher: FBC News, 10 February 2024.
+- URL: https://www.fbcnews.com.fj/news/curriculum-review-in-progress/
+- The report quotes the Ministry's Permanent Secretary as saying the review of English and Mathematics/literacy and numeracy for Classes 1–8 had been completed in 2024, while literacy and numeracy for Years 9 and 10 were being piloted.
+- The report does not publish the controlled Years 1–8 syllabus, year-by-year achievement indicators/CLO schedule, approval instrument, effective date, school rollout circular, or version history.
+- The report's phrase "review completed" must not be interpreted as proof that every reviewed year-band package was approved, issued and implemented.
+
+### Source B — 2026 Year 5 and Year 7 assessment results context
+
+- Publisher: Fiji Sun, 20 August 2026.
+- URL: https://fijisun.com.fj/news/education/year-5-year-7-literacy-results-improve-but-numeracy-declines
+- The article reports statements by the Minister concerning 2025 Year 5 and Year 7 literacy/numeracy results and says the Ministry intended to use assessment results to strengthen teaching, curriculum and support.
+- This is assessment/performance context, not a curriculum prescription. It provides no achievement-indicator schedule, syllabus, or approved daily teaching sequence.
+- Do not turn a reported performance gap into a new official indicator or assume a particular concept is mandated solely from an aggregate result.
+
+### Reconciliation and PacEdu action
+
+1. Keep the 2022–2023 Ministry Annual Report as historical evidence of Years 1–4 implementation and Years 5–8 Phase 2 trial status at that report's date.
+2. Record the 2024 FBC report as a later statement that the Years 1–8 review was completed, but classify the underlying controlled packages and formal adoption/effective dates as not yet retrieved.
+3. Do not infer that the Years 5–8 trial became an approved national prescription without a controlled final syllabus and implementation circular.
+4. For Years 1–8 English and Mathematics, acquire the current year-specific syllabus, CLO/achievement-indicator schedule, scope-and-sequence, teacher guide, assessment guidance, approval/effective date and amendment/supersession record from CAS or authorised FEMIS/Moodle access.
+5. Keep the 2026 assessment article as contextual evidence only. It may inform a separate diagnostic/support research question after primary source verification, but it cannot create or replace curriculum indicators.
+
+**Classification:** REVIEW_REPORTED_COMPLETE — FORMAL_APPROVAL_AND_CONTROLLED_PACKAGE_NOT_VERIFIED.
+
+**Stage 1 remains IN_PROGRESS.** No new official indicator, approved daily activity or year-level concept distribution is added by these reports.
