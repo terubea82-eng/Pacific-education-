@@ -1339,3 +1339,31 @@ Cabinet endorsed a review of the 2013 Fiji National Curriculum Framework and est
 **Classification:** REVIEW_REPORTED_COMPLETE — FORMAL_APPROVAL_AND_CONTROLLED_PACKAGE_NOT_VERIFIED.
 
 **Stage 1 remains IN_PROGRESS.** No new official indicator, approved daily activity or year-level concept distribution is added by these reports.
+
+
+## 20. Secondary Mathematics pathway — historical Ministry programme evidence, current package still unverified (12 November 2026)
+
+### Source A — Ministry Annual Report 2020–2021
+
+- Publisher: Fiji Ministry of Education, Heritage and Arts.
+- Official Ministry PDF: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+- The Ministry report's indexed text states that the secondary mathematics curriculum was to accommodate two types: Life Skills Mathematics and Applied Mathematics; it describes Life Skills Mathematics Year 11 as being piloted in 21 schools during the report year.
+- This is historical programme evidence only. It does not establish the present 2026 subject names, whether the pilot was adopted nationally, the current Year 11–13 pathway, or current syllabus/indicator versions. The report PDF could not be opened directly in this source check, so the relevant text remains search-indexed and requires page-level verification.
+
+### Source B — Ministry Annual Report 2018–2019
+
+- Publisher: Fiji Ministry of Education, Heritage and Arts.
+- Official Ministry PDF: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2018%E2%80%932019.pdf
+- Search-indexed report text records Year 13 Mathematics among the new syllabi for which teachers were trained, and Year 9 Mathematics among subjects covered by seamless-transition workshops.
+- This confirms historical curriculum activity, not current Year 9 or Year 13 prescriptions or current assessment pathways.
+
+### PacEdu acquisition and mapping safeguards
+
+1. Do not assume the older Life Skills/Applied Mathematics labels are still the current Year 11–13 pathways. Do not substitute "Pure Mathematics" unless a current controlled Ministry prescription confirms that exact pathway and its scope.
+2. Obtain the current approved Year 9–13 Mathematics syllabus/package for each pathway, including subject names, prerequisites, achievement indicators/CLOs, scope-and-sequence, contact hours, assessment specifications, effective dates and supersession records.
+3. Verify the relationship between Year 11, Year 12 and Year 13 subject choices and national examination requirements before allocating concepts or hours.
+4. Keep historical annual reports as source leads only. Do not create new secondary Mathematics daily activities from annual-report descriptions or textbook/resource lists.
+
+**Classification:** HISTORICAL_PROGRAMME_EVIDENCE — CURRENT_SECONDARY_MATHEMATICS_PRESCRIPTIONS_NOT_VERIFIED.
+
+**Stage 1 remains IN_PROGRESS.** No new secondary Mathematics indicator, approved daily activity or pathway distribution is added.
