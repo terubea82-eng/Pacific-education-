@@ -142,3 +142,12 @@ test("missing exact daily slots remain unassigned instead of borrowing another d
   assert.equal(worksheet.indicatorMappingStatus, "NO_APPROVED_INDICATOR_SLOT");
   assert.equal(worksheet.assessmentMapping.formalAssessmentEligible, false);
 });
+
+test("runtime clearly reports when no distribution file has been imported", () => {
+  const window = load();
+  const result = window.PacEduAchievementDistributionRuntime.getDailyAssignment({
+    level: "Class 1", subjectId: "English", term: "Term 1", week: 1, day: 2
+  });
+  assert.equal(result.status, "DISTRIBUTION_FILE_NOT_IMPORTED");
+  assert.equal(result.assignment, null);
+});
