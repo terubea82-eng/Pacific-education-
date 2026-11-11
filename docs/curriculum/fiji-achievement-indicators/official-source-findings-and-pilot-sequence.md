@@ -1399,3 +1399,39 @@ It also records Year 6 and Year 8 English reading achievement evidence and Finan
 **Classification:** SOURCE_PDF_OPENED_AND_TRANSCRIBED — CURRENT_APPLICABILITY_AND_EDUCATOR_VALIDATION_PENDING.
 
 **Stage 1 remains IN_PROGRESS.**
+
+
+## 22. Financial Education learning outcomes — Years 1–8 (NFIT Fiji, 2015) (12 November 2026)
+
+### Source evidence
+
+- NFIT Fiji source: *Financial Education strands, sub-strands and learning outcomes for Years 1–8*, dated 14 May 2015.
+- PDF: https://www.nfitfiji.com/wp-content/uploads/FinED-Fiji-Learning-Outcomes-Primary-School.pdf
+- The source table is organised by strands/sub-strands and four year bands: Years 1–2, 3–4, 5–6 and 7–8. It links Financial Education to Mathematics, English and Social Studies/Social Sciences.
+- NFIT's lesson-plan page describes the Fiji FinED project as integrating and strengthening Financial Education within Fiji primary and secondary curricula, and says FinEd was embedded within the National Curriculum Framework.
+- Supporting 2012 Year 7/8 teacher manual identifies the FinED Fiji project as a partnership involving the Ministry of Education, Young Enterprise Trust and PFIP and includes a financial education framework and competency indicators/concepts.
+- This is curriculum-linked programme evidence from 2012–2015, not confirmation that the schedule remains effective in 2026. No current Ministry circular or supersession record was retrieved.
+
+### Register created
+
+New file: `docs/curriculum/fiji-achievement-indicators/financial-education-years1-8-outcome-candidates.md`
+
+The file records 28 internal PacEdu paraphrased learning-outcome candidates across seven sub-strands:
+- Managing Money: Money; Spending and budgeting; Saving; Credit.
+- Income and wealth: Income.
+- Planning Ahead: Financial planning; Financial risk.
+
+The source supplies no unique formal indicator codes for these bullets. PacEdu IDs are internal references only and must not be represented as Ministry codes. The new file is linked from the indicator-folder README.
+
+### Use restrictions and next steps
+
+1. Preserve the source's four year bands; do not split a band outcome into separate year-specific official indicators without controlled Ministry documents.
+2. Treat the listed Fiji-dollar thresholds as source-era context and verify relevance before designing current tasks.
+3. Do not require children to disclose household income, debt, remittances, banking or hardship information. Use fictional examples and age-appropriate safety.
+4. Keep this cross-curricular and do not automatically create a compulsory stand-alone Commercial Studies subject from this source.
+5. Obtain CAS confirmation whether these outcomes remain in the current curriculum or have been revised, withdrawn, replaced or integrated into newer subject syllabuses.
+6. No 115-day allocation or daily activity was created from these unconfirmed historical outcomes.
+
+**Classification:** SOURCE_DOCUMENT_OPENED — 28 PARAPHRASED YEAR-BAND OUTCOME CANDIDATES — CURRENT_STATUS_PENDING.
+
+**Stage 1 remains IN_PROGRESS.**
