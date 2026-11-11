@@ -9,6 +9,12 @@ test("teacher quick manual answer entry saves a pending response and clears fiel
     try {
       localStorage.clear();
       sessionStorage.clear();
+      localStorage.setItem("pacificEducationClassReference", "Class 4");
+      localStorage.setItem("pacificEducationLevel", "Class 4");
+      localStorage.setItem("pacificEducationClassLevel", "Class 4");
+      localStorage.setItem("pacificEducationSubject", "Mathematics");
+      localStorage.setItem("pacificEducationTerm", "Term 2");
+      localStorage.setItem("currentDayNumber", "12");
     } catch (_) {}
   });
   await page.addScriptTag({ url: "./js/pacificEducationTeacherQuickManualAnswer.js?v=20261021-quick-manual-answer-v1" });
@@ -16,11 +22,11 @@ test("teacher quick manual answer entry saves a pending response and clears fiel
 
   const panel = page.locator("#pacificEducationTeacherQuickAnswer");
   await expect(panel).toBeVisible();
+  await expect(panel.locator("#peQuickAnswerClass")).toHaveValue("Class 4");
+  await expect(panel.locator("#peQuickAnswerSubject")).toHaveValue("Mathematics");
+  await expect(panel.locator("#peQuickAnswerTerm")).toHaveValue("Term 2");
+  await expect(panel.locator("#peQuickAnswerDay")).toHaveValue("12");
   await panel.locator("#peQuickAnswerLearner").fill("Learner A");
-  await panel.locator("#peQuickAnswerClass").fill("Class 4");
-  await panel.locator("#peQuickAnswerSubject").fill("Mathematics");
-  await panel.locator("#peQuickAnswerTerm").fill("Term 2");
-  await panel.locator("#peQuickAnswerDay").fill("12");
   await panel.locator("#peQuickAnswerQuestion").fill("How many objects are in the group?");
   await panel.locator("#peQuickAnswerResponse").fill("Eight");
 
