@@ -125,6 +125,7 @@
 
   function getDailyAssignment(filters) {
     filters = filters || {};
+    if (!rows.length) return { status: "DISTRIBUTION_FILE_NOT_IMPORTED", assignment: null };
     var matches = rows.filter(function (r) {
       return r.level === String(filters.level || "") &&
         r.subjectId === String(filters.subjectId || "") &&
