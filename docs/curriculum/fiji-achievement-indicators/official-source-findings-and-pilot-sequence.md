@@ -130,3 +130,45 @@ For Year 6 and Year 8, retain the same core learning focus but adjust depth, ind
 - Forms 5–7: obtain current subject-specific syllabuses and examination/assessment specifications.
 
 **Release rule:** This file is a verified starting register, not a completed curriculum database. The full ECE–Form 7 indicator bank and all 115-day subject distributions remain incomplete until the missing official sources are obtained, checked and reviewed by qualified Fiji educators.
+
+
+## 6. Additional Ministry evidence found — resource and syllabus inventory (12 November 2026)
+
+### Source E — Policy on Free Educational Resources (Ministry-hosted; approved 1 December 2015)
+
+- Official URL: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- Relevant printed pages: 4–5 (policy paragraphs 4.1–4.12) and Appendix A (printed pages 7 onward).
+- The policy identifies syllabi, teacher guides, pupil workbooks, supplementary notes, examination papers and solutions as Ministry educational-resource categories. It states that Ministry resources are for student learning / teacher teaching and that reproduction of free resources by a school requires Permanent Secretary approval for teaching and learning.
+- Appendix A is explicitly a **2016 textbook/resource list**, not a current syllabus or indicator catalogue. It provides a useful discovery inventory of historical resource titles and levels. It must not be treated as proof that a listed subject, title, syllabus or indicator is still current.
+
+### Historical resource inventory visible in Appendix A
+
+| Level group | Resource/subject evidence in the 2016 list | What this establishes — and what it does not |
+|---|---|---|
+| Year 1 | English, Mathematics, Healthy Living, Elementary Science, Vosa Vakaviti, Hindi, Urdu, Rotuman and Performing/Visual Arts resources are listed. | Historical resource availability only; no current indicator wording or complete subject mandate. |
+| Year 2 | English, Mathematics, Healthy Living, Elementary Science, Vosa Vakaviti, Hindi, Urdu, Rotuman and Performing/Visual Arts resources are listed. | Same limitation. |
+| Years 3–6 | English, Mathematics, Healthy Living, Elementary Science, Social Studies, Vosa Vakaviti, Hindi, Urdu, Rotuman and Performing/Visual Arts resources are listed. | Same limitation; do not infer every strand or current subject offering. |
+| Year 7 | English, Mathematics, Healthy Living, Basic Science, Social Science, Vosa Vakaviti, Hindi, Urdu and Rotuman resources are listed. | Historical resource evidence; subject-level current status still requires current syllabus confirmation. |
+
+### Source F — Ministry Annual Report 2020–2021
+
+- Official URL: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+- Search-indexed report text states that the Curriculum Development Unit / Senior Curriculum Staff for English and Mathematics made changes to the Year 1–8 syllabus and refers to a resource structure of curriculum framework, scope-and-sequence overviews, year-level scope and sequence, and teacher guides.
+- This is evidence that Year 1–8 English and Mathematics syllabus materials were revised after older resource lists. The report itself is not the detailed syllabus and supplies no complete indicator wording. The PDF could not be opened reliably in this retrieval pass, so no page-specific indicator extraction is claimed.
+
+### Source G — Ministry Annual Reports 2016–2017 and 2018–2019 (secondary/TEST curriculum status evidence)
+
+- Official URLs:
+  - https://www.education.gov.fj/wp-content/uploads/2022/06/MEHA-Annual-Report-2016-2017.pdf
+  - https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2018%E2%80%932019.pdf
+- These reports describe ongoing syllabus reviews/development for TEST subjects including Agricultural Science, Computer Studies, Home Economics, Office Technology, Introduction to Technology, Basic Technology, Basic Graphics Technology and Primary Enterprise Education. The 2018–2019 report also records Year 9/11 subject reviews and examination activity for Years 10, 12 and 13.
+- These are historical programme-status reports, not current subject syllabuses or indicator lists. They are useful for locating the responsible subject sections and identifying where version/effective-date checks are especially important.
+
+### Research decision and next source requests
+
+1. Do not use the 2016 resource list or annual reports as a substitute for detailed subject indicators.
+2. Prioritise the Ministry's current Year 1–8 English and Mathematics scope-and-sequence and teacher guides, then current year-level subject guides for other primary learning areas.
+3. Obtain current subject syllabuses, scope-and-sequence and teacher guides for secondary Years 9–13 (PacEdu Form 3–7 mapping must confirm Fiji's year/form equivalence with the Ministry's current nomenclature before importing).
+4. Obtain the current revised ECE guideline and its effective date; the 2022-hosted ECE guideline cannot be presumed to be the final post-2025 revision.
+5. Ask the Ministry Curriculum Advisory Services / relevant subject sections for the current controlled copies and written permission conditions for PacEdu's intended digital adaptation and distribution.
+6. Continue to label all uncovered class/subject combinations **SOURCE NOT YET LOCATED**. No 115-day subject allocation is approved until its source outcomes, prerequisite order, calendar and teacher reviewer are documented.
