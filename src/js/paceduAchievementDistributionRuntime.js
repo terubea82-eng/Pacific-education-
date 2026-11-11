@@ -37,7 +37,7 @@
     if (!lines.length) throw new Error("The indicator distribution file is empty.");
     var headers = splitCsvLine(lines[0]).map(function (x) { return x.trim(); });
     if (HEADERS.some(function (name, index) { return headers[index] !== name; }) || headers.length !== HEADERS.length) {
-      throw new Error("The distribution file does not match the approved Fiji indicator CSV template.");
+      throw new Error("The distribution file does not match the approved cross-jurisdiction indicator CSV template.");
     }
     return lines.slice(1).map(function (line, index) {
       var values = splitCsvLine(line);
@@ -61,8 +61,8 @@
         skipped += 1;
         return;
       }
-      var validLevel = r.class_level === "ECE" || /^Class [1-8]$/.test(r.class_level) || /^Form [3-7]$/.test(r.class_level);
-      if (r.country !== "Fiji" || !r.framework_version || !validLevel || !r.subject_id ||
+      var validLevel = !!r.class_level && r.class_level.length <= 80;
+      if (!r.country || !r.framework_version || !validLevel || !r.subject_id ||
           !/^Term [123]$/.test(r.term) || !/^\d+$/.test(r.week) ||
           !/^\d+$/.test(r.day) || Number(r.day) < 1 || Number(r.day) > 5 ||
           !r.indicator_id || !r.indicator_text) {
@@ -80,14 +80,14 @@
         return;
       }
       seen[slot] = true;
-      var verified = r.source_status === "SOURCE_VERIFIED" &&
+      var verified = ["SOURCE_VERIFIED","CURRENT_FIJI_PRESCRIPTION_VERIFIED","CURRENT_AUTHORITY_PRESCRIPTION_VERIFIED","INTERIM_OLDER_PRESCRIPTION_REVISED"].indexOf(r.source_status) >= 0 &&
         r.educator_review_status === "VALIDATED" &&
         !!r.source_document_title && !!r.issuing_authority &&
         !!r.source_version && !!r.source_page_or_section &&
         (r.source_url.indexOf("https://") === 0 || r.source_url.indexOf("http://") === 0) &&
         !!r.approved_by && !!r.approved_at && !isNaN(Date.parse(r.approved_at));
       accepted.push({
-        jurisdiction: "Fiji",
+        jurisdiction: r.country,
         curriculumVersion: r.framework_version,
         level: r.class_level,
         subjectId: r.subject_id,
