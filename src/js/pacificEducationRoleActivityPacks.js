@@ -654,7 +654,7 @@
              String(response.activityId||"")===String(lesson.activityId||"") &&
              String(response.questionSequenceId||"")===String(lesson.questionSequenceId||"") &&
              Number(response.questionSequenceVersion)===Number(lesson.questionSequenceVersion) &&
-             response.questionId && String(response.response||"").trim()!=="") completedQuestionIds[String(response.questionId)]=true;
+             response.questionId && (String(response.response||"").trim()!=="" || String(response.audioDataUrl||"").trim()!=="")) completedQuestionIds[String(response.questionId)]=true;
         });
         var activeQuestionIndex=0;
         while(activeQuestionIndex<lesson.questions.length && completedQuestionIds[String(lesson.questions[activeQuestionIndex].questionId||"")]) activeQuestionIndex++;
