@@ -437,7 +437,9 @@
     tasks.unshift(bandPrefix);
     return {
       topic: safeTheme + " — " + dayFocus,
-      readingText: passage + "\n\nClass-level practice target: " + levelExpectation.target,
+      readingText: passage + "
+
+Class-level practice target: " + levelExpectation.target,
       questions: questions,
       answerKey: questions.map(function (q) { return {number:q.number,answer:q.answer,explanation:q.why}; }),
       tasks: tasks,
@@ -692,7 +694,10 @@
       };
       worksheet.curriculumNote = "Daily activity release is locked until the applicable mandated educational prescription or authorised institutional curriculum is verified and the concept/indicator is approved.";
     }
-    if (curriculumGatePassed) worksheet.curriculumGate = {passed:true,sourceStatus:worksheet.indicatorAssignment.sourceStatus,reviewStatus:worksheet.indicatorAssignment.reviewStatus};
+    if (curriculumGatePassed) {
+      worksheet.curriculumGate = {passed:true,sourceStatus:worksheet.indicatorAssignment.sourceStatus,reviewStatus:worksheet.indicatorAssignment.reviewStatus,serverAuthorized:true,jurisdictionProfileStatus:"APPROVED_WITH_LIMITS"};
+      worksheet.learnerReleaseEligible = true;
+    }
     worksheet.questions = worksheet.questions.map(function (question) {
       return Object.assign({}, question, {
         indicatorIds: worksheet.indicatorIds.slice(),
