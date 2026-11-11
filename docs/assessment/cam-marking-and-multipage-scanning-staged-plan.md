@@ -475,3 +475,64 @@ This home-revision pathway is included within Stage 3, after the verified curric
 This requirement applies across Stage 3 CAM pathways: daily teacher marking, parent/student home revision and restricted national examination marking. Build the criteria register, approval/version controls and legal-user permission checks before enabling scored CAM. Complete verified curriculum indicators, question IDs, Student IDs and worksheet/answer-key foundations first. Keep the Global Library (Stage 4) and user capacity/personal-information space (Stage 5) in their existing locked order.
 
 **Current boundary:** Documentation only. No marking guides were approved, no user permissions or accounts changed, and no scans, marks, student records, Firebase data, production systems or APKs were modified.
+
+
+## Addendum — Student and Parent Visibility of Approved Daily Progress
+
+**Requirement status:** Mandatory staged design requirement. Students see their own released daily learning results in the Student Platform. They do not enter or receive access to the Teacher Workspace. Parents see only the information permitted for their securely linked child.
+
+### A. Student Platform — private personal progress
+
+After the teacher approves a daily classroom result, PacEdu should publish the approved result to that learner's own Student Platform, subject to school policy and any required release setting. The student view should include:
+- Daily activity status and approved marks, with marks by question or indicator where appropriate.
+- Teacher-approved comments, corrections, worked explanations and next steps.
+- Concepts/indicators achieved, still developing or needing revision, with evidence and date.
+- Subject-by-subject learning history and progress across the 9/9/5 terms.
+- Term 3 revision priorities, practice completion and improvement over time.
+- Practical-learning evidence and teacher feedback where the activity requires demonstration, investigation, observation or project work.
+- A clear pending status when work is scanned, awaiting teacher review, moderated or not yet released.
+
+Use clear, age-appropriate language and simple visual progress displays. Avoid public rankings, shaming labels, comparisons that expose classmates, or implying that one mark defines a learner. Students can see only their own permitted records.
+
+### B. Distinguish record origins and approval states
+
+The Student Platform must never make unlike records look equivalent:
+- TEACHER_ASSESSMENT: show as teacher-marked/teacher-approved classroom work.
+- HOME_PRACTICE: show separately as home practice or self-assessment, not teacher-verified; retain the parent/student source.
+- NATIONAL_EXAMINATION: show only the official certified result after the examination authority's release instruction; do not show draft marks or confidential examiner comments.
+
+A teacher-approved daily mark may update the student's learning history and indicator progress. A home-practice result must not silently change official attainment, ability placement or teacher assessment records. National examination results must not be released early or modified through ordinary teacher/student workflows.
+
+### C. Parent Platform
+
+A parent/guardian may see the linked child's teacher-approved daily progress and feedback only where guardian permissions, age rules and school policy permit. The parent view should distinguish teacher-approved classroom results from the parent's own HOME_PRACTICE records. Parent observations remain attributed to the parent. A parent cannot see another child's records unless that child is separately and validly linked and authorised.
+
+### D. Teacher Workspace remains separate
+
+Teachers retain their authorised class-level view: individual learner records, assessment history, indicator coverage, class patterns and intervention needs. Students and parents must not access this workspace, class rosters, other learners' marks, internal teacher notes, draft comments or confidential assessment material. Role checks must be enforced server-side, not merely by hiding a menu or page.
+
+### E. Corrections, accessibility and safe release
+
+- Publish only after the required teacher approval; unresolved identity/page mismatches and provisional CAM marks remain hidden from the student's official daily-results view.
+- Record every correction, approval, reopening and release with actor, timestamp, reason and prior value; never silently overwrite history.
+- Keep text readable and navigation simple, with optional audio reading and accessible controls. Integrate with PacEdu's existing single-narrator voice/navigation design; do not introduce a second automatic narrator.
+- Preserve offline progress safely and resume the same attempt without duplicate results.
+- Do not display an estimated grade or mastery claim as final where evidence is incomplete.
+
+### F. Acceptance tests
+
+- A student account can see its own released daily marks/comments and cannot retrieve another student's records by changing an ID or URL.
+- Student and parent accounts cannot access Teacher Workspace APIs, class rosters, internal notes or examiner-only content.
+- A daily result is invisible to the student until the required teacher approval/release state is reached.
+- HOME_PRACTICE remains separately labelled and cannot overwrite TEACHER_ASSESSMENT.
+- NATIONAL_EXAMINATION remains hidden until the authority's official release instruction.
+- Parent visibility is limited to securely linked and authorised children.
+- A correction updates the displayed current result while preserving an auditable history.
+- Audio/text accessibility works without creating a second automatic narrator or disrupting Next/Back navigation.
+- No public class ranking or disclosure of another learner's marks is shown.
+
+### G. Locked delivery placement
+
+Implement this as part of Stage 3, after verified indicators, student worksheets, question IDs, approved marking criteria, Student ID matching and teacher approval workflows are ready. First validate the teacher-approved daily result pipeline; then connect the Student Platform personal view and permission-scoped Parent Platform view. Keep HOME_PRACTICE and NATIONAL_EXAMINATION states separate. Do not move the Global Library (Stage 4) or capacity/personal-information space (Stage 5) ahead of the locked sequence.
+
+**Current boundary:** Documentation only. No student or parent views, result APIs, account permissions, learner records, marks, Firebase data, production systems or APKs were changed.
