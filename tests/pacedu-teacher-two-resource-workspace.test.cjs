@@ -48,7 +48,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await expect(panel.getByRole("button", { name: "Prepare Bronze pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
   await expect(panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true })).toBeEnabled();
   await expect(panel.getByRole("button", { name: "Prepare Gold pack: daily activities + revision + mock exam (no reviewed marks yet)", exact: true })).toBeEnabled();
-  await panel.getByRole("button", { name: "Prepare Expected pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true }).click();
+  await panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (1 reviewed learner(s))", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
 });
 
