@@ -632,17 +632,74 @@
         var transcriptHeading=document.createElement("h5"); transcriptHeading.textContent="Audio transcript"; lessonPanel.appendChild(transcriptHeading);
         var transcript=document.createElement("p"); transcript.textContent=lesson.dailyLesson.audioNarration.transcript; lessonPanel.appendChild(transcript);
         var questionsHeading=document.createElement("h5"); questionsHeading.textContent="Try these questions"; lessonPanel.appendChild(questionsHeading);
-        var questions=document.createElement("ol");
-        lesson.questions.forEach(function(question){
-          var q=document.createElement("li"); q.textContent=question.prompt;
-          if(question.options && question.options.length){
-            var choices=document.createElement("ul");
-            question.options.forEach(function(option,index){var choice=document.createElement("li");choice.textContent=String.fromCharCode(65+index)+". "+option;choices.appendChild(choice);});
-            q.appendChild(choices);
-          }
-          questions.appendChild(q);
+        var questionSequence=document.createElement("section");
+        questionSequence.setAttribute("aria-label","Saved daily question sequence");
+        var questionProgress=document.createElement("p"); questionProgress.setAttribute("aria-live","polite"); questionSequence.appendChild(questionProgress);
+        var questionPrompt=document.createElement("p"); questionSequence.appendChild(questionPrompt);
+        var questionChoices=document.createElement("ol"); questionSequence.appendChild(questionChoices);
+        var questionAttempt=document.createElement("button"); questionAttempt.type="button"; questionAttempt.textContent="Attempt this question"; questionSequence.appendChild(questionAttempt);
+        var questionAnswerHost=document.createElement("div"); questionAnswerHost.id="paceduDailyQuestionAnswer"; questionSequence.appendChild(questionAnswerHost);
+        var questionResumeNote=document.createElement("p"); questionResumeNote.setAttribute("role","status"); questionSequence.appendChild(questionResumeNote);
+        lessonPanel.appendChild(questionSequence);
+        var sequenceStudent=null;
+        try { sequenceStudent=JSON.parse(global.sessionStorage.getItem("paceduActiveStudentContextV1")||"null"); } catch(sequenceIdentityError) {}
+        var sequenceVerified=!!(sequenceStudent && sequenceStudent.role==="student" && sequenceStudent.identityVerified===true && sequenceStudent.studentId && sequenceStudent.classId);
+        var sequenceResponses=[];
+        try { sequenceResponses=JSON.parse(global.localStorage.getItem("pacificEducationActivityResponses")||"[]"); } catch(sequenceReadError) { sequenceResponses=[]; }
+        if (!Array.isArray(sequenceResponses)) sequenceResponses=[];
+        var completedQuestionIds={};
+        if (sequenceVerified) sequenceResponses.forEach(function(response){
+          if(response && String(response.studentId||"")===String(sequenceStudent.studentId) &&
+             String(response.classId||"")===String(sequenceStudent.classId) &&
+             String(response.activityId||"")===String(lesson.activityId||"") &&
+             String(response.questionSequenceId||"")===String(lesson.questionSequenceId||"") &&
+             Number(response.questionSequenceVersion)===Number(lesson.questionSequenceVersion) &&
+             response.questionId && String(response.response||"").trim()!=="") completedQuestionIds[String(response.questionId)]=true;
         });
-        lessonPanel.appendChild(questions);
+        var activeQuestionIndex=0;
+        while(activeQuestionIndex<lesson.questions.length && completedQuestionIds[String(lesson.questions[activeQuestionIndex].questionId||"")]) activeQuestionIndex++;
+        if(activeQuestionIndex>0) questionResumeNote.textContent="Your saved work was found. Continuing from the first unanswered question.";
+        function openDailyQuestion(index){
+          if(index>=lesson.questions.length){
+            questionProgress.textContent="All questions in this sequence have a saved response. Ask your teacher to review your work.";
+            questionPrompt.textContent="";
+            questionChoices.textContent="";
+            questionAttempt.hidden=true;
+            questionAnswerHost.textContent="";
+            return;
+          }
+          activeQuestionIndex=index;
+          var question=lesson.questions[index];
+          var answerEntry=lesson.answerKey && lesson.answerKey[index] || {};
+          questionProgress.textContent="Question "+(index+1)+" of "+lesson.questions.length;
+          questionPrompt.textContent=question.prompt;
+          while(questionChoices.firstChild) questionChoices.removeChild(questionChoices.firstChild);
+          (question.options||[]).forEach(function(option,optionIndex){var item=document.createElement("li");item.textContent=String.fromCharCode(65+optionIndex)+". "+option;questionChoices.appendChild(item);});
+          questionAnswerHost.textContent="";
+          questionAttempt.hidden=false;
+          questionAttempt.onclick=function(){
+            if(!global.PacificEducationActivity || typeof global.PacificEducationActivity.render!=="function"){
+              questionResumeNote.textContent="The interactive answer screen is unavailable. Please ask your teacher for help."; return;
+            }
+            questionAttempt.hidden=true;
+            var questionType=(question.options||[]).length===4 ? "multiple_choice" : "short_answer";
+            var questionContext={
+              activityId:lesson.activityId, questionId:question.questionId,
+              sequenceId:question.sequenceId || lesson.questionSequenceId,
+              sequencePosition:question.sequencePosition || index+1,
+              sequenceVersion:question.sequenceVersion || lesson.questionSequenceVersion,
+              questionText:question.prompt, audioText:question.prompt,
+              answerKey:answerEntry.answer, options:question.options||[],
+              subjectId:lessonSubject, term:lessonTerm, renderTargetId:"paceduDailyQuestionAnswer"
+            };
+            global.PaceduDailyQuestionSequenceContinue=function(){
+              completedQuestionIds[String(question.questionId||"")]=true;
+              openDailyQuestion(index+1);
+            };
+            global.PacificEducationActivity.render(questionType,Math.max(1,Number(day)||1),questionContext);
+          };
+        }
+        openDailyQuestion(activeQuestionIndex);
         if (lesson.termLearningPlan) {
           var plan = lesson.termLearningPlan;
           var planSection = document.createElement("section");
