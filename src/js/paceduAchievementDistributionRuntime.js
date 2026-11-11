@@ -114,6 +114,8 @@
         reviewNotes: r.review_notes,
         mappingStatus: verified ? "VALIDATED" : "PENDING_TEACHER_REVIEW",
         sourceVerified: verified,
+        serverAuthorized: false,
+        jurisdictionProfileStatus: "PENDING_SERVER_REVIEW",
         formalAssessmentEligible: false,
         rowNumber: rowNumber
       });
