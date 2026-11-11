@@ -1474,3 +1474,31 @@ test("registration save keeps Page 4 visible until Next, then recovers the role 
   await expect(page.locator("#pacificEducationSequentialRoleWorkspace")).toBeVisible();
   expect(pageErrors, "registration-to-workspace handoff must not throw uncaught errors").toEqual([]);
 });
+
+test("five-page public entry numbering matches the Welcome-to-Registration sequence", async ({ page }) => {
+  await installSpeechHarness(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(baseURL, { waitUntil: "load" });
+
+  const guide = page.locator(".pacedu-page-sequence-number");
+  await expect(page.locator("#pacificEducationWelcome")).toBeVisible();
+  await expect(guide).toHaveText("Page 2 of 5 — Welcome");
+
+  await page.locator("#welcomeNextButton").click();
+  await expect(page.locator("#paceduPageVision")).toBeVisible();
+  await expect(page.locator("#pacificEducationWelcome")).toBeHidden();
+  await expect(page.locator("#paceduPageVision .pacedu-page-sequence-number"))
+    .toHaveText("Page 3 of 5 — Country and language");
+
+  await page.locator("#paceduVisionNext").click();
+  await expect(page.locator("#paceduPageRules")).toBeVisible();
+  await expect(page.locator("#paceduPageRules .pacedu-page-sequence-number"))
+    .toHaveText("Page 4 of 5 — Workspaces and rules");
+
+  await page.locator("#paceduRulesAgreement").check();
+  await page.locator("#paceduRulesContinue").click();
+  await expect(page.locator("#pacificEducationIdentityRegistration")).toBeVisible();
+  await expect(page.locator("#pacificEducationIdentityRegistration .pacedu-page-sequence-number"))
+    .toHaveText("Page 5 of 5 — User registration");
+  await expect(page.locator("#paceduPageRules")).toBeHidden();
+});
