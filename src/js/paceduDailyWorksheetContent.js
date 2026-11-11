@@ -686,6 +686,9 @@
       worksheet.status = "BLOCKED_CURRICULUM_SOURCE_REQUIRED";
       worksheet.curriculumGate = {
         passed: false,
+        serverAuthorizationRequired: true,
+        serverAuthorized: false,
+        jurisdictionProfileStatus: "PENDING_SERVER_REVIEW",
         reason: "A verified prescribed concept/indicator and educator validation are required before daily activities can be released.",
         requiredFirst: ["jurisdiction", "level", "subject", "official issuing authority", "prescription title and version", "source page or section", "concept/indicator ID and text", "educator validation"],
         formalAssessmentEligible: false
@@ -763,6 +766,7 @@
     }
     if (!curriculumGatePassed) {
       /* Retain schedule/provenance metadata for teachers, but release no learner work. */
+      worksheet.learnerReleaseEligible = false;
       worksheet.questions = [];
       worksheet.answerKey = [];
       worksheet.tasks = [];
