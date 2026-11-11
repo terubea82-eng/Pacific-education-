@@ -967,3 +967,58 @@ The Ministry-hosted report's indexed text states that the Curriculum Development
 ### Stage 1 decision
 
 English and Mathematics are confirmed as the first priority subjects for source acquisition, but neither has a complete verified ECE–Form 7 indicator set in this register. The Ministry report is evidence of primary syllabus revision work, not a substitute for the revised syllabus itself. Stage 1 remains IN_PROGRESS; no 115-day allocation is approved by this review.
+
+
+## 9. Secondary English and Mathematics pathway evidence — 12 November 2026
+
+**Purpose:** refine the source-acquisition plan after a further search for current secondary materials. This section records source leads and curriculum distinctions; it does not approve any new indicator for the canonical bank.
+
+### A. Revised Secondary English Curriculum (RSEC)
+
+An Australian Government DFAT programme listing for a Ministry-led curriculum advisory role states that Fiji has developed and rolled out English curriculum frameworks for Years 9 and 10 and that support was being sought to extend the framework to Year 11, with Years 12–13 considered in the progression work. This is useful corroborating evidence that the secondary English pathway is being revised in stages.
+
+- Source: Australia Fiji Education Fiji Program / DFAT AusConnect, “Revised Secondary English Curriculum (RSEC) Advisor Yr 11”.
+- URL: https://ausconnect.dfat.gov.au/opportunities/revised-secondary-english-curriculum-rsec-advisor-yr-11
+- Source class: government programme/job listing; corroborating status evidence, not the curriculum prescription itself.
+- PacEdu status: RSEC_Y9_Y10_FRAMEWORK_REPORTED — CONTROLLED_SYLLABUS_AND_EFFECTIVE_INSTRUCTIONS_NOT_RETRIEVED; Years 11–13 current package must be checked separately.
+
+**Required next evidence:** Ministry-controlled Years 9–10 RSEC frameworks, scope-and-sequence, teacher guide, assessment specification, issue/effective date and implementation circular; then the current Year 11–13 English syllabus/curriculum and current national examination requirements. Do not assume a Year 9–10 framework automatically supersedes every existing Years 9–13 literature, writing or assessment circular.
+
+### B. Mathematics pathway distinction in Years 11–13
+
+The Ministry of Education Annual Report 2022–2023 describes two Mathematics pathways for Years 11–13: **Life Mathematics** and **Pure Mathematics**. It states that the Year 12 Life Mathematics curriculum was rolled out following a pilot in the preceding year. This is important for PacEdu subject selection and progression: a single generic upper-secondary Mathematics indicator bank would be inaccurate.
+
+- Source: Ministry of Education Annual Report 2022–2023, hosted by Parliament.
+- URL: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- Source class: official Ministry annual report; confirms pathway existence and implementation report, not the detailed current syllabus or complete indicator schedule.
+- PacEdu status: Y11_Y13_MATHS_PATHWAYS_REPORTED — DETAILED_CURRENT_SYLLABI_NOT_RETRIEVED.
+
+**Required next evidence:** current effective Life Mathematics and Pure Mathematics syllabus documents for each applicable year, prerequisites, subject-choice rules, scope-and-sequence, assessment/examination specifications and any later amendments. Keep each pathway distinct in the register and timetable. Do not merge outcomes or infer that the Year 12 Life Mathematics rollout establishes current Year 11 or Year 13 content.
+
+### C. Years 9–10 Mathematics and primary English/Mathematics
+
+A search result for a third-party-hosted copy identifies a Ministry-issued Years 9–10 Mathematics syllabus first edition 2015. It is not a Ministry-controlled source in this review and is historical; it is therefore only a retrieval lead. The Ministry Annual Report 2020–2021 reports primary Years 1–8 English and Mathematics syllabus changes, but the detailed current controlled documents remain unavailable in this public-source pass.
+
+**Status:** Years 1–8 English/Mathematics = PRIMARY_REVISION_REPORTED; CURRENT_CONTROLLED_CONTENT_NOT_RETRIEVED. Years 9–10 Mathematics = HISTORICAL_2015_DOCUMENT_LEAD; CURRENT_STATUS_NOT_CONFIRMED.
+
+### D. Updated English/Mathematics acquisition matrix
+
+| Pathway | Source status | Required before PacEdu mapping |
+|---|---|---|
+| ECE language/literacy and early mathematics | Na Noda Mataniciva is interim; revised edition/effective date not verified | Current ECE guidelines, FALD/sub-strand outcomes and Ministry implementation direction |
+| Years 1–8 English | Ministry reports primary syllabus changes; current detailed controlled package not retrieved | Current syllabus/CLOs, year-level scope and sequence, teacher guides, assessment materials |
+| Years 1–8 Mathematics | Ministry reports primary syllabus changes; current detailed controlled package not retrieved | Current syllabus/CLOs, year-level scope and sequence, teacher guides, assessment materials |
+| Years 9–10 English | RSEC framework rollout reported by DFAT programme listing | Ministry-controlled framework, guide, scope and sequence, assessment specification and circular |
+| Years 11–13 English | Senior extension/review needs confirmation; legacy coverage circulars may coexist | Current year-specific syllabus, literature/writing coverage, exam specification and superseding circulars |
+| Years 9–10 Mathematics | Historical 2015 syllabus copy is a lead only | Ministry-controlled current syllabus and implementation status |
+| Years 11–13 Mathematics | Life and Pure pathways reported in Ministry annual report | Current pathway-specific syllabus, prerequisites, assessment and examination documents |
+
+### E. Source-control decision
+
+1. Treat the DFAT RSEC listing and Ministry annual report as evidence that curriculum changes/pathways exist, not as outcome sources.
+2. Do not use third-party-hosted copies as the canonical source. Obtain controlled copies from the Ministry or an authorised school/FEMIS/Moodle channel and confirm that the edition is effective for the intended pilot year.
+3. Preserve existing year-specific Ministry circulars as potentially operative until the Ministry confirms whether they remain in force or have been superseded.
+4. Build separate English and Mathematics pathway identifiers in the eventual data model so a learner's selected curriculum pathway determines the correct approved indicators.
+5. Do not create the 115-day timetable until source coverage, pathway prerequisites, contact hours and national examination windows have been reconciled.
+
+**Stage 1 remains IN_PROGRESS.** This additional review improves the acquisition map but does not provide a complete verified English or Mathematics indicator bank for ECE–Year 13.
