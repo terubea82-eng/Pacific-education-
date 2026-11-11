@@ -249,6 +249,9 @@
   function renderDailyLearningOnly(host,grid,list,planPanel){
     if(!host||!grid||!list)return;
     var shell=document.getElementById("paceduTeacherDailyLearningOnlyShell");
+    /* Capture the manual-answer panel before replacing the old dashboard
+       contents. Moving it first prevents the simple shell from deleting it. */
+    var answerPanel=document.getElementById("pacificEducationTeacherQuickAnswer");
     if(!shell){
       shell=node("section");
       shell.id="paceduTeacherDailyLearningOnlyShell";
@@ -259,15 +262,14 @@
       heading.style.cssText="margin-top:0;";
       shell.appendChild(heading);
       shell.appendChild(grid);
+      if(answerPanel)shell.appendChild(answerPanel);
       host.textContent="";
       host.appendChild(shell);
     }else if(!shell.contains(grid)){
       shell.appendChild(grid);
     }
-    /* Preserve the existing manual answer form instead of deleting it when
-       the dashboard is simplified. It is moved into the selected subject box
-       after the teacher chooses a class. */
-    var answerPanel=document.getElementById("pacificEducationTeacherQuickAnswer");
+    /* Keep manual answer entry inside the subject workspace, hidden until a
+       valid class is selected. */
     if(answerPanel){
       if(!shell.contains(answerPanel))shell.appendChild(answerPanel);
       answerPanel.hidden=true;
