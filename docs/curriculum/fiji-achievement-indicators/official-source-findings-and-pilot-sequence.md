@@ -858,3 +858,77 @@ The official EQAP PDF text was opened and reviewed at the source lines covering 
 - The 28-week/140-hour programme duration and its internal/external assessment structure must be reconciled with the school's timetable. It must not be forced into the general 115-day calendar.
 
 This validation log records source-reading progress only. It does not certify the 154 candidate rows, confirm Ministry endorsement, establish current Fiji adoption, grant reproduction rights or unlock learner-facing content.
+
+
+## 7. Source-status check — 12 November 2026
+
+This update records a further check of public institutional and official sources. It does not complete the indicator inventory and does not establish that any revised framework or syllabus has taken legal effect.
+
+### A. Institutional school-structure reference
+
+**Source:** National Institute of Education / Higher Education Commission, “School Education”  
+**URL:** https://nic.hec.org.fj/school-education  
+**Access checked:** 12 November 2026
+
+The institutional overview describes:
+- ECCE for ages 3–6 using Na Noda Mataniciva guidelines;
+- primary education as Year 1–8;
+- secondary education as Year 9–13;
+- six Foundation Areas of Learning and Development for ECE and seven Key Learning Areas for primary/secondary;
+- Fiji's named national assessment/examination progression.
+
+**Use:** framework and level-structure cross-check only. This page is not a substitute for a detailed syllabus or subject-specific achievement-indicator source.
+
+### B. Ministry policy — assessment and reporting
+
+**Source:** Ministry of Education, *Policy in National Curriculum Assessment and Reporting*  
+**Official URL:** https://www.education.gov.fj/wp-content/uploads/2022/11/POLICY-IN-NATIONAL-CURRICULUM-ASSESSMENT-AND-REPORTING.pdf  
+**Access checked:** 12 November 2026
+
+Relevant requirements include valid and reliable assessment; use of formative and summative evidence over time; explicit assessment criteria; moderation; regular reporting to parents/guardians; equitable and developmentally appropriate assessment; and accurate records of student achievement. The policy also distinguishes assessment for learning/development from selection/ranking at specified levels.
+
+**PacEdu implication:** indicator coverage and learner progress should be supported by multiple appropriate forms of evidence over time. A single CAM scan or worksheet score must not be treated as proof of full mastery. Keep criteria explicit, moderation and teacher judgement available, and progress reporting descriptive and age-appropriate. Do not apply ranking as a default progress feature.
+
+**Status limitation:** this policy is an assessment/reporting authority, not a source of subject indicators. Before configuring exact grade scales, reporting periods or high-stakes exam behaviour, verify the current policy and any later circulars with the Ministry.
+
+### C. Cabinet decision — 2013 Framework review
+
+**Source:** Fiji Government, *14th Cabinet Meeting Decisions — 7 October 2025* (published 9 October 2025)  
+**Official URL:** https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/  
+**Access checked:** 12 November 2026
+
+Cabinet endorsed a review of the 2013 Fiji National Curriculum Framework and stated that a taskforce had been established for initial planning.
+
+**PacEdu status rule:** retain the verified 2013 framework as the framework reference where applicable, but label it as under review. Do not claim a replacement framework is effective unless PacEdu obtains the approved instrument, publication/effective date and implementation direction from the Ministry. Monitor for transition instructions and record any new official prescriptions separately.
+
+### D. Revised Years 1–4 curriculum — access limitation
+
+The Ministry's 2022–2023 Annual Report records revised Years 1–4 syllabus and Literacy/Numeracy guides supplied to schools and indicates that curriculum documents were placed on FEMIS/Moodle. Publicly available report:
+https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+
+**Use:** evidence that revised controlled resources exist; not the detailed indicator content itself. PacEdu must obtain and verify the actual current Year 1–4 subject documents through authorised school/Ministry channels before coding the full indicator bank. Do not substitute the annual-report description for the syllabus.
+
+### E. Source status decisions
+
+| Material | PacEdu status | Permitted use |
+|---|---|---|
+| 2013 Fiji National Curriculum Framework | FRAMEWORK_REFERENCE_UNDER_REVIEW | Framework structure only, pending approved replacement or Ministry transition direction |
+| Ministry assessment/reporting policy located above | OFFICIAL_POLICY_SOURCE — CURRENT_STATUS_TO_CONFIRM | Assessment design principles; confirm later amendments before high-stakes configuration |
+| 2015 Year 6/8 PE teacher guide | INTERIM_OFFICIAL_SOURCE | Use only for the exact Year 6/8 PE material already transcribed, pending current-version confirmation |
+| Na Noda Mataniciva guideline located above | INTERIM_OFFICIAL_SOURCE — REVISION_STATUS_TO_CONFIRM | ECE planning reference only; obtain the completed/current edition before final ECE pilot sign-off |
+| Revised Years 1–4 curriculum described in Ministry annual report | OFFICIAL_RESOURCE_EXISTENCE_CONFIRMED — CONTENT_NOT_YET_VERIFIED | Request controlled syllabus/guides; no indicator coding from the annual-report summary |
+| Form 7 Agriculture EQAP/SPC 2023–2025 syllabus | OFFICIAL_REGIONAL_SOURCE — FIJI_ADOPTION_AND_2026_STATUS_TO_CONFIRM | Preserve exact syllabus requirements for provisional mapping; verify Fiji adoption, current edition and permission before reuse |
+| Teacher-designed sequences and cross-curricular examples | PACEDU_TEACHER_DESIGNED | Use as draft teaching aids only; never present as official Ministry indicators |
+
+### F. Required source acquisition before Stage 1 can be declared complete
+
+For every class/year/form and every subject offered in the Fiji pilot:
+1. Obtain the latest effective official syllabus/prescription, scope and sequence, teacher guide and any approved outcome/indicator schedule.
+2. Record issuing authority, exact title, edition, issue/effective date, jurisdiction, level, subject, page/section and controlled source location.
+3. Transcribe exact indicator codes and wording where permitted; otherwise record a concise paraphrase with source locator and copyright restrictions.
+4. Check for superseding circulars, revised editions, trial-only documents and school-specific implementation directions.
+5. Reconcile differences across syllabus, teacher guide and assessment framework; do not resolve conflicts by guesswork.
+6. Have a Fiji curriculum reviewer confirm ambiguous or missing outcomes.
+7. Only then approve the canonical indicator register and proceed to full 115-day distribution.
+
+**Stage 1 remains IN_PROGRESS.** The public-source review confirms important framework and assessment rules, but it does not provide a complete, publicly verified ECE–Form 7 subject-by-subject indicator set. No indicator gaps should be filled with invented codes or teacher-designed outcomes.
