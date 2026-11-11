@@ -15,7 +15,8 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await openIsolatedFixture(page);
   await page.evaluate(() => {
     document.body.className = ""; document.body.removeAttribute("data-pe-flow-step"); document.documentElement.removeAttribute("data-pacedu-entry-advanced");
-    document.body.innerHTML = '<main><section id="teacherDashboard"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="English" aria-pressed="true">English</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="class-a" aria-pressed="true">Class 1</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><button>Print / Save as PDF</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
+    document.body.innerHTML = '<main><section id="teacherDashboard"><input id="peQuickAnswerTerm" type="hidden" value="Term 1"><div id="paceduTeacherSubjectGrid"><button data-pacedu-teacher-subject="English" aria-pressed="true">English</button></div><div id="paceduTeacherClassList"><button data-pacedu-teacher-class="class-a" aria-pressed="true">Class 1</button></div><section id="pacificEducationLinkedTeacherPlans"><button>Load Matching Plans</button><button>Print / Save as PDF</button><div id="paceduLinkedPlanStatus"></div></section></section></main>';
+    localStorage.setItem("pacificEducationTerm", "Term 2");
     localStorage.setItem("pacificEducationActivityResponses", JSON.stringify([
       { studentReference: "FEMIS-1", classId: "class-a", subject: "English", day: 2, markPercent: 75, reviewStatus: "teacher-reviewed" },
       { studentReference: "FEMIS-2", classId: "class-a", subject: "English", day: 2, markPercent: 10, reviewStatus: "pending-teacher-review" }
@@ -23,7 +24,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
     window.PacificEducationTeacherClassRosterContext = {
       getClass(id) { return id === "class-a" ? { level: "Class 1", studentRefs: ["FEMIS-1", "FEMIS-2"] } : null; }
     };
-    window.PacEduDownloadableClassPacks = { download(options) { window.__downloadedAbility = options.ability; return { dailyActivities: 45 }; }, renderControls(holder) {
+    window.PacEduDownloadableClassPacks = { download(options) { window.__downloadedAbility = options.ability; window.__downloadedTerm = options.term; return { dailyActivities: 45 }; }, renderControls(holder) {
       const section = document.createElement("section");
       const h = document.createElement("h4"); h.textContent = "Download class activities and assessment pack";
       const p = document.createElement("p"); p.textContent = "Draft pack note";
@@ -33,6 +34,13 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
+  await expect(panel.locator("select")).toHaveValue("T2");
+  await expect(page.locator("#peQuickAnswerTerm")).toHaveValue("Term 2");
+  expect(await page.evaluate(() => localStorage.getItem("pacificEducationTerm"))).toBe("Term 2");
+  await panel.locator("select").selectOption("T3");
+  await expect(page.locator("#peQuickAnswerTerm")).toHaveValue("Term 3");
+  expect(await page.evaluate(() => localStorage.getItem("pacificEducationTerm"))).toBe("Term 3");
+  await panel.locator("select").selectOption("T2");
   await expect(panel.getByRole("heading", { name: "1. Teacher Instructions — Read or Print", exact: true })).toBeVisible();
   await expect(panel.getByRole("heading", { name: "2. Daily Activities + Revision + Practice Exam — By Ability", exact: true })).toBeVisible();
   const pathway = panel.locator("#paceduProgressiveCognitiveLearningPathway");
@@ -61,6 +69,7 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await expect(panel.getByRole("button", { name: "Prepare Gold pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true })).toBeEnabled();
   await panel.getByRole("button", { name: "Prepare Silver pack: daily activities + revision + mock exam (class-wide practice; not an individual placement)", exact: true }).click();
   expect(await page.evaluate(() => window.__downloadedAbility)).toBe("expected");
+  expect(await page.evaluate(() => window.__downloadedTerm)).toBe("T2");
 });
 
 test("all four ability packs remain available when no reviewed evidence exists", async ({ page }) => {
