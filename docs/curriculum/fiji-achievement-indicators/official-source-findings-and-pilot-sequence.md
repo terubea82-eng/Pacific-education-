@@ -1435,3 +1435,41 @@ The source supplies no unique formal indicator codes for these bullets. PacEdu I
 **Classification:** SOURCE_DOCUMENT_OPENED — 28 PARAPHRASED YEAR-BAND OUTCOME CANDIDATES — CURRENT_STATUS_PENDING.
 
 **Stage 1 remains IN_PROGRESS.**
+
+
+## 23. Financial Education learning outcomes — Years 9–12 (NFIT Fiji, 2015) (12 November 2026)
+
+### Source evidence
+
+- Source: *FinED Fiji Learning Outcomes: Years 9 to 12*, hosted by NFIT Fiji, dated 30 March 2015.
+- PDF: https://www.nfitfiji.com/wp-content/uploads/FinED-Fiji-Learning-Outcomes-Secondary.pdf
+- It explicitly labels Year 9 Commercial Studies — Personal Finance I as one term, and Year 10 Commercial Studies — Personal Finance II as one term.
+- It places additional learning outcomes in Years 11–12 Economics, Accounting, English and Mathematics, without distinguishing which outcomes belong specifically to Year 11 versus Year 12.
+- The source itself states that the Ministry would continue revising the learning outcomes. It is therefore a historical source lead, not proof of the current 2026 prescription.
+
+### Register created
+
+New file: `docs/curriculum/fiji-achievement-indicators/financial-education-years9-12-outcome-candidates.md`.
+
+It contains 24 internal paraphrased outcome clusters:
+- Year 9 Commercial Studies / Personal Finance I: 8.
+- Year 10 Commercial Studies / Personal Finance II: 6.
+- Years 11–12 Economics: 5.
+- Years 11–12 Accounting: 2.
+- Years 11–12 English: 2.
+- Years 11–12 Mathematics: 1.
+
+The source provides learning-outcome headings and evidence statements, not unique formal Ministry indicator codes. PacEdu IDs are internal only. It has no Year 13 schedule.
+
+### Legal and curriculum safeguards
+
+1. The English section refers to the UK Consumer Credit Act 1974. Do not present that as Fiji law; use only current Fiji legislation/regulator guidance after legal verification.
+2. Verify current Fiji banking, tax, TIN, credit and payment-system information before creating activities.
+3. Do not ask students to reveal household income, debt, remittances, bank details or family hardship; use fictional scenarios.
+4. Preserve the source's one-term Year 9 and Year 10 allocation as historical only; do not assume it remains the current timetable.
+5. Keep Years 11–12 outcomes grouped together until a controlled syllabus confirms the year split.
+6. No 115-day timetable allocation or activity generation was made from these historical outcomes.
+
+**Classification:** HISTORICAL_CURRICULUM_LINKED_OUTCOMES — CURRENT_STATUS_AND_REPLACEMENT_PENDING.
+
+**Stage 1 remains IN_PROGRESS.**
