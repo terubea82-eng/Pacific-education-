@@ -34,13 +34,14 @@ test("teacher subject/class workspace offers only two resource types and safely 
   await page.addScriptTag({ url: "./js/paceduTeacherTwoResourceWorkspace.js" });
   await page.evaluate(() => window.PacEduTeacherTwoResourceWorkspace.render());
   const panel = page.locator("#paceduTeacherTwoResourcePanel");
-  await expect(panel.locator("select")).toHaveValue("T2");
+  const termSelect = panel.getByLabel("Term for today's worksheets");
+  await expect(termSelect).toHaveValue("T2");
   await expect(page.locator("#peQuickAnswerTerm")).toHaveValue("Term 2");
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationTerm"))).toBe("Term 2");
-  await panel.locator("select").selectOption("T3");
+  await termSelect.selectOption("T3");
   await expect(page.locator("#peQuickAnswerTerm")).toHaveValue("Term 3");
   expect(await page.evaluate(() => localStorage.getItem("pacificEducationTerm"))).toBe("Term 3");
-  await panel.locator("select").selectOption("T2");
+  await termSelect.selectOption("T2");
   await expect(panel.getByRole("heading", { name: "1. Teacher Instructions — Read or Print", exact: true })).toBeVisible();
   await expect(panel.getByRole("heading", { name: "2. Daily Activities + Revision + Practice Exam — By Ability", exact: true })).toBeVisible();
   const pathway = panel.locator("#paceduProgressiveCognitiveLearningPathway");
