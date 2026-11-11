@@ -9,9 +9,9 @@ function getPaper(options){
  return Object.assign({},paper,{
   title:paper.term+" "+paper.subject+" Practice Examination",
   instructions:"Mock practice only, built from the term revision question bank. This is not an official or past examination paper. Teacher must check the current syllabus, question suitability and answer key.",
-  status:"PRACTICE_EXAM_REQUIRES_TEACHER_REVIEW",
+  status:paper.status==="BLOCKED_CURRICULUM_SOURCE_REQUIRED"?"BLOCKED_CURRICULUM_SOURCE_REQUIRED":"PRACTICE_EXAM_REQUIRES_TEACHER_REVIEW",
   officialExamPaper:false,
-  paperType:"practice-exam"
+  paperType:"practice-exam",\n  learnerReleaseEligible:false
  });
 }
 global.PacEduPracticeExamPaper=Object.freeze({getPaper:getPaper});
