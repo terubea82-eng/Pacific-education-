@@ -39,6 +39,16 @@ The current student-download renderer needs a focused review and improvement bef
 
 The separate daily student worksheet and five-day classwork-book renderer now formats any multiple-choice option list as A, B, C and D. It refuses a question with anything other than four non-empty options and reports that teacher correction is required. Non-MCQ questions remain unchanged. A focused automated test file covers these cases. This is a narrow rendering safeguard; it does not yet prove that every content-bank question, class, subject or day is complete or teacher-approved.
 
+## 2B. Achievement indicator distribution connected to worksheets and assessment
+
+A staging runtime bridge now reads an explicitly imported copy of the Fiji 115-slot distribution CSV and matches an indicator by the exact class/level + subject + term + week + day. It does not use round-robin allocation or invent missing indicators.
+
+When a matching row exists, the daily worksheet and each question carry the indicator ID and mapping status. The learner activity response and teacher review queue also carry the linked indicator IDs and assessment mapping metadata. The assessment blueprint module exposes a builder for evidence records containing activity ID, question sequence ID, indicator IDs and learner response records.
+
+The importer rejects malformed rows, duplicate daily slots and out-of-range weeks; blank template slots remain unassigned. Rows without verified source details and educator approval remain pending. Formal assessment eligibility remains disabled in the browser prototype and requires trusted server-side curriculum and teacher authorization.
+
+**Important current limitation:** the Fiji CSV is still a blank planning template, not a populated official indicator distribution. The new runtime API can import a completed CSV, but a teacher/authorized-reviewer upload screen and trusted server-side import/approval flow are not yet implemented. Therefore no current learner worksheet can honestly claim an official achievement-indicator match until authorised records are supplied and imported.
+
 ## 3. Required worksheet layout
 
 Each daily worksheet should be short, clear and mobile-first, with a print-friendly version:
