@@ -641,3 +641,185 @@ Apply corrections first in staging. Preserve the old mapping and learner evidenc
 - Ministry feedback is a planned pilot improvement mechanism, not a substitute for the source verification, child-safety, accessibility, copyright, privacy or school approval gates.
 
 **Implementation boundary:** This section records the pilot operating rule. It does not certify that the Ministry has endorsed PacEdu, any interim indicator, any worksheet, or the proposed 115-day distribution.
+
+
+## 19. Newer regional Form Seven Agriculture source — 2023 syllabus extraction (12 November 2026)
+
+### Source I — South Pacific Form Seven Certificate Agriculture Syllabus 2023–2025
+
+- Issuer: Educational Quality and Assessment Programme (EQAP), Pacific Community (SPC).
+- Official source: https://eqap.spc.int/sites/default/files/resources/2024-05/SPFSC%20Agriculture%20Syllabus%202023-2025%20Final_EQAP_SR%20Corrected.pdf
+- Edition history printed in the document: January 2023, 5th edition; copyright EQAP/SPC 2023.
+- Printed source pages used in this extraction: 7–19 (PDF page labels 7–19).
+- The document defines requirements for the South Pacific Form Seven Certificate Agriculture programme. It is a regional certificate syllabus, not by itself proof that every Fiji school offers this subject or that the 2023–2025 edition remains the current 2026 prescription. Confirm the Fiji school/programme's qualification and EQAP's current effective edition before describing it as current Fiji Form 7 alignment.
+- Copyright notice reserves reproduction and requires prior permission from the EQAP Director. PacEdu records codes and concise paraphrases for mapping; it must not republish full syllabus tables or examination material without permission.
+- The syllabus uses Major Learning Outcomes, Key Learning Outcomes and Specific Learning Outcomes. Its SLO skill levels are based on SOLO taxonomy, not Bloom's taxonomy. PacEdu must preserve the source's SOLO level separately; Bloom-style question design is an additional instructional design layer and must not be substituted for the official skill-level field.
+- Suggested course duration: 28 weeks at 5 hours per week (140 hours). Therefore do not squeeze this programme into a 23-week/115-school-day timetable without written school/programme approval and a documented timetable reconciliation. The syllabus' suggested duration takes precedence for this qualification-specific subject.
+
+### Extracted coded SLO inventory — concise PacEdu paraphrases
+
+The entries below preserve source codes and skill levels while paraphrasing outcome intent. They are not new Ministry indicators.
+
+| Strand / sub-strand | SLO code | SOLO skill level | PacEdu paraphrase of prescribed outcome focus | Printed page |
+|---|---|---:|---|---:|
+| 1.1 Schedule of operations | Agr1.1.3.1 | 3 | Explain why a schedule of operations is needed. | 10 |
+| 1.1 Schedule of operations | Agr1.1.1.1 | 1 | Identify site-selection factors in a stated context. | 10 |
+| 1.1 Schedule of operations | Agri1.1.2.1 | 2 | List site-selection steps in the operations schedule. | 10 |
+| 1.1 Schedule of operations | Agri1.1.2.2 | 2 | Outline the intended results of site selection. | 10 |
+| 1.1 Schedule of operations | Agri1.1.3.2 | 3 | Explain why site-selection requirements matter. | 10 |
+| 1.1 Schedule of operations | Agr1.1.4.1 | 4 | Evaluate site selection and recommend improvements to an unsuitable site. | 10 |
+| 1.1 Schedule of operations | Agri1.1.2.3 | 2 | Describe cultivar or breed selection as an operations step. | 10 |
+| 1.1 Schedule of operations | Agr1.1.3.3 | 3 | Explain the significance of cultivar or breed choice. | 10 |
+| 1.1 Schedule of operations | Agr1.1.4.2 | 4 | Evaluate biodiversity effects of cultivar/breed selection and recommend mitigation. | 10 |
+| 1.1 Schedule of operations | Agri1.1.2.4 | 2 | Describe available planting-material types. | 10 |
+| 1.1 Schedule of operations | Agr1.1.3.4 | 3 | Explain why planting-material availability matters. | 11 |
+| 1.1 Schedule of operations | Agri1.1.3.5 | 3 | Distinguish sexual and asexual plant reproduction. | 11 |
+| 1.1 Schedule of operations | Agri1.1.3.6 | 3 | Distinguish vegetative reproduction structures such as rhizomes, suckers, stem tubers and corms. | 11 |
+| 1.1 Schedule of operations | Agri1.1.4.3 | 4 | Evaluate how planting-material availability affects production. | 11 |
+| 1.1 Schedule of operations | Agr1.1.4.4 | 4 | Evaluate quality planting material and recommend conditions for high yield. | 11 |
+| 1.1 Schedule of operations | Agri1.1.1.2 | 1 | Identify a management practice used in a selected primary product. | 11 |
+| 1.1 Schedule of operations | Agri1.1.2.5 | 2 | Describe management practices in production. | 11 |
+| 1.1 Schedule of operations | Agr1.1.3.7 | 3 | Explain the effectiveness of production management practices. | 11 |
+| 1.1 Schedule of operations | Agri1.1.3.8 | 3 | Explain differences among crop rotation, intercropping, alley cropping, fallowing, monoculture and agroforestry. | 11 |
+| 1.1 Schedule of operations | Agr1.1.3.9 | 3 | Explain why timing of management practices affects productivity. | 11 |
+| 1.1 Schedule of operations | Agr1.1.4.5 | 4 | Evaluate management practices and recommend improvements. | 11 |
+| 1.1 Schedule of operations | Agri1.1.2.6 | 2 | Describe soil/crop preparation and planting/rearing in establishment. | 11 |
+| 1.1 Schedule of operations | Agr1.1.3.10 | 3 | Explain the importance of establishment processes. | 11 |
+| 1.1 Schedule of operations | Agr1.1.3.11 | 3 | Explain how water, pest/disease, weed, fertility, light and temperature management affect production. | 11 |
+| 1.1 Schedule of operations | Agr1.1.4.6 | 4 | Recommend suitable establishment conditions. | 11 |
+| 1.1 Schedule of operations | Agr1.1.4.7 | 4 | Recommend suitable harvest/slaughter timing and methods. | 11 |
+| 1.1 Schedule of operations | Agr1.1.4.8 | 4 | Recommend suitable management conditions for production. | 11 |
+| 1.1 Schedule of operations | Agr1.1.2.7 | 2 | Describe grading/sorting, packaging/handling and storage after harvest. | 11 |
+| 1.1 Schedule of operations | Agr1.1.3.12 | 3 | Explain why post-harvest processes matter. | 11 |
+| 1.1 Schedule of operations | Agr1.1.4.9 | 4 | Evaluate post-harvest effects on quality and recommend ways to reduce harm. | 11 |
+| 1.2 Factors influencing operations | Agr1.2.1.1 | 1 | Identify production resources in a situation. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.2.1 | 2 | Give examples of primary and secondary products. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.4.1 | 4 | Evaluate how land, labour, capital and technology/entrepreneurship affect production. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.1.2 | 1 | Identify land as a production resource. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.2.2 | 2 | Describe ways of obtaining land for farming. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.3.1 | 3 | Explain how land availability affects an operations step. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.4.2 | 4 | Evaluate land-availability problems and propose ways to reduce their effects. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.1.3 | 1 | Identify labour as a production resource. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.2.3 | 2 | List types of labour used in primary production. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.3.2 | 3 | Explain how labour availability affects operations steps. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.4.3 | 4 | Discuss ways to reduce the effects of labour shortages. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.1.4 | 1 | Identify capital as a production resource. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.2.4 | 2 | List sources of capital for primary production. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.3.3 | 3 | Explain how capital affects operations steps. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.4.4 | 4 | Evaluate how to maximise returns on production capital. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.2.5 | 2 | Describe recent technologies and their agricultural/marketing value. | 12 |
+| 1.2 Factors influencing operations | Agr1.2.4.5 | 4 | Evaluate the value of specialist or technical advice. | 12 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.1.1 | 1 | State an investigation hypothesis. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.1.2 | 1 | State the investigation background/rationale. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.2.1 | 2 | Describe the investigation method. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.4.1 | 4 | Design a field-trial plan using an appropriate research approach. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.4.2 | 4 | Conduct a field trial to collect product-performance or technology-testing evidence. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.4.3 | 4 | Evaluate reliability/validity and distinguish sound from unsound reasoning. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.3.1 | 3 | Draw a data-supported conclusion linked to the hypothesis and suggest improvements. | 13 |
+| 1.3 Field experimentation (internal assessment) | Agr1.3.2.2 | 2 | List references and acknowledgements. | 13 |
+| 2.1 Analysis of management practices | Agr2.1.1.1 | 1 | Identify sustainable agriculture in a given situation. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.3.1 | 3 | Explain practices that help maintain sustainable production. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.4.1 | 4 | Evaluate a management practice's sustainability contribution and suggest improvement. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.1.2 | 1 | Identify genetic resources used in sustainable production. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.2.1 | 2 | Describe genetic-resource management practices. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.3.2 | 3 | Explain how genetic-resource management supports sustainable production. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.4.2 | 4 | Evaluate genetic-resource management and propose a sustainable plan. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.2.2 | 2 | List waste-management practices used in sustainable production. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.3.3 | 3 | Explain how waste-management practices support sustainability. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.4.3 | 4 | Discuss benefits of waste-management practices. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.3.4 | 3 | Explain soil-management practices that support sustainable production. | 14 |
+| 2.1 Analysis of management practices | Agr2.1.4.4 | 4 | Recommend improvements to sustainable soil management. | 15 |
+| 2.1 Analysis of management practices | Agr2.1.3.5 | 3 | Explain water-management practices for sustainable production. | 15 |
+| 2.1 Analysis of management practices | Agr2.1.4.5 | 4 | Recommend improvements to water management. | 15 |
+| 2.1 Analysis of management practices | Agr2.1.2.3 | 2 | Describe the green-economy concept. | 15 |
+| 2.1 Analysis of management practices | Agr2.1.3.6 | 3 | Explain links between the green economy and the UN 2030 Sustainable Development Goals. | 15 |
+| 2.1 Analysis of management practices | Agr2.1.4.6 | 4 | Discuss local green jobs and their community significance. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.1.1 | 1 | Identify pests, diseases and weeds affecting long-term production. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.2.1 | 2 | Describe control methods for pests, diseases and weeds. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.3.1 | 3 | Explain suitability of pest, disease and weed controls. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.4.1 | 4 | Recommend viable, sustainable pest/disease/weed management. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.1.2 | 1 | Identify an example of crop rotation. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.3.2 | 3 | Explain why crop rotation supports long-term production. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.4.2 | 4 | Evaluate crop rotation and recommend cost-effective sustainable approaches. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.3.3 | 3 | Explain how fertiliser/feed application supports long-term production. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.4.3 | 4 | Evaluate fertiliser/feed application methods and recommend alternatives. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.2.2 | 2 | List hygiene practices for sustainable production. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.4.4 | 4 | Justify hygiene practices using evidence of effectiveness. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.2.3 | 2 | Describe the importance of genetic selection. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.3.4 | 3 | Explain how genetic selection supports long-term production. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.3.5 | 3 | Explain the importance of certified seeds in production. | 15 |
+| 2.2 Husbandry/agronomy practices | Agr2.2.4.5 | 4 | Discuss ways to resolve long-term seed-use issues. | 15 |
+| 2.3 Global issues | Agr2.3.1.1 | 1 | Identify invasive species affecting local production. | 16 |
+| 2.3 Global issues | Agr2.3.3.1 | 3 | Analyse effects of invasive species on local production. | 16 |
+| 2.3 Global issues | Agr2.3.3.2 | 3 | Explain advantages and disadvantages of introducing new species. | 16 |
+| 2.3 Global issues | Agr2.3.4.1 | 4 | Evaluate impacts of invasive plants, animals or insects on local production. | 16 |
+| 2.3 Global issues | Agr2.3.2.1 | 2 | Describe the relevance of genetic engineering to local production. | 16 |
+| 2.3 Global issues | Agr2.3.2.2 | 2 | Describe features of genetic engineering used in local production. | 16 |
+| 2.3 Global issues | Agr2.3.3.3 | 3 | Explain advantages and disadvantages of genetic engineering. | 16 |
+| 2.3 Global issues | Agr2.3.4.2 | 4 | Recommend viable alternatives to genetic engineering. | 16 |
+| 2.3 Global issues | Agr2.3.2.3 | 2 | Describe organic husbandry in local production. | 16 |
+| 2.3 Global issues | Agr2.3.3.4 | 3 | Explain organic husbandry practices used in local production. | 16 |
+| 2.3 Global issues | Agr2.3.4.3 | 4 | Evaluate factors affecting organic husbandry and recommend ways to maximise benefits. | 16 |
+| 2.3 Global issues | Agr2.3.2.4 | 2 | Describe pollution types affecting local production. | 16 |
+| 2.3 Global issues | Agr2.3.3.5 | 3 | Explain a specific pollution type affecting local production. | 16 |
+| 2.3 Global issues | Agr2.3.4.4 | 4 | Recommend cost-effective pollution controls. | 16 |
+| 2.3 Global issues | Agr2.3.1.2 | 1 | Identify biodiversity in a natural environment. | 16 |
+| 2.3 Global issues | Agr2.3.3.6 | 3 | Explain methods of conserving genetic resources. | 16 |
+| 2.3 Global issues | Agr2.3.3.7 | 3 | Explain how biodiversity/genetic-resource conservation supports production. | 16 |
+| 2.3 Global issues | Agr2.3.4.5 | 4 | Recommend ways to support biodiversity and sustainable use in production. | 16 |
+| 2.3 Global issues | Agr2.3.2.5 | 2 | List global agricultural issues affecting local production. | 16 |
+| 2.3 Global issues | Agr2.3.3.8 | 3 | Compare strengths and weaknesses of actions addressing global agricultural issues. | 16 |
+| 2.3 Global issues | Agr2.3.4.6 | 4 | Evaluate actions that reduce negative effects of global agricultural issues. | 16 |
+| 3.1 Market opportunities | Agr3.1.2.1 | 2 | Describe seasonality in primary production. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.1 | 3 | Explain how seasonality affects primary-product supply. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.2 | 3 | Use graphs to explain seasonal effects on supply and price. | 17 |
+| 3.1 Market opportunities | Agri3.1.2.2 | 2 | Describe effects of import competition on primary production. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.3 | 3 | Explain how import competition influences primary production. | 17 |
+| 3.1 Market opportunities | Agr3.1.4.1 | 4 | Recommend ways to manage import competition effects. | 17 |
+| 3.1 Market opportunities | Agr3.1.1.1 | 1 | Identify market access in a primary-production context. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.4 | 3 | Explain how market access influences production. | 17 |
+| 3.1 Market opportunities | Agr3.1.4.2 | 4 | Recommend ways to manage and improve market access. | 17 |
+| 3.1 Market opportunities | Agr3.1.2.3 | 2 | Describe storage and shelf-life effects on primary production. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.5 | 3 | Explain ways to extend storage and shelf life. | 17 |
+| 3.1 Market opportunities | Agr3.1.4.3 | 4 | Recommend storage/shelf-life management approaches. | 17 |
+| 3.1 Market opportunities | Agr3.1.1.2 | 1 | State transport modes used in primary production. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.6 | 3 | Explain how transport modes affect production levels. | 17 |
+| 3.1 Market opportunities | Agr3.1.1.3 | 1 | State available marketing channels in a given context. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.7 | 3 | Explain how marketing channels influence production. | 17 |
+| 3.1 Market opportunities | Agr3.1.4.4 | 4 | Recommend ways to improve/manage marketing channels. | 17 |
+| 3.1 Market opportunities | Agr3.1.2.4 | 2 | List market-quality requirements for primary products. | 17 |
+| 3.1 Market opportunities | Agr3.1.3.8 | 3 | Explain the importance and production effects of market-quality requirements. | 18 |
+| 3.1 Market opportunities | Agr3.1.4.5 | 4 | Recommend ways to meet and improve market-quality requirements. | 18 |
+| 3.1 Market opportunities | Agr3.1.1.4 | 1 | Identify an international-marketing role in a given context. | 18 |
+| 3.1 Market opportunities | Agr3.1.4.6 | 4 | Discuss benefits of expanding international markets for local producers. | 18 |
+| 3.2 Market controls | Agr3.2.1.1 | 1 | Identify grower organisations serving local/export markets. | 18 |
+| 3.2 Market controls | Agr3.2.3.1 | 3 | Explain effects of grower organisations on local production and exports. | 18 |
+| 3.2 Market controls | Agr3.2.4.1 | 4 | Recommend ways to manage grower-organisation influence. | 18 |
+| 3.2 Market controls | Agr3.2.1.2 | 1 | Identify supply and demand in a market situation. | 18 |
+| 3.2 Market controls | Agr3.2.2.1 | 2 | Describe factors affecting supply and demand. | 18 |
+| 3.2 Market controls | Agr3.2.3.2 | 3 | Graphically illustrate supply/demand effects for a primary product. | 18 |
+| 3.2 Market controls | Agr3.2.1.3 | 1 | Identify relevant biosecurity regulations in a given situation. | 18 |
+| 3.2 Market controls | Agr3.2.2.2 | 2 | Describe requirements of relevant biosecurity regulations. | 18 |
+| 3.2 Market controls | Agr3.2.3.3 | 3 | Explain how quarantine/biosecurity regulations affect local production. | 18 |
+| 3.2 Market controls | Agr3.2.4.2 | 4 | Recommend ways to manage biosecurity effects on exports. | 18 |
+| 3.2 Market controls | Agr3.2.1.4 | 1 | Identify local-product import/export controls. | 18 |
+| 3.2 Market controls | Agr3.2.3.4 | 3 | Explain reasons for import/export controls. | 19 |
+| 3.2 Market controls | Agr3.2.4.3 | 4 | Recommend ways to manage the impact of import/export controls. | 19 |
+| 3.2 Market controls | Agr3.2.3.5 | 3 | Explain how regional/international trade agreements affect local/export products. | 19 |
+| 3.2 Market controls | Agr3.2.4.4 | 4 | Recommend ways to manage trade-agreement effects. | 19 |
+| 3.2 Market controls | Agr3.2.2.3 | 2 | Describe effects of local/national regulation and policy on production. | 19 |
+| 3.2 Market controls | Agr3.2.3.6 | 3 | Explain how local/national controls and policy affect local and export production. | 19 |
+| 3.2 Market controls | Agr3.2.4.5 | 4 | Recommend ways to manage regulatory/policy effects. | 19 |
+| 3.3 Agricultural production case study (internal assessment) | Agr3.3.1.1 | 1 | State the background/context of a case-study report. | 20 |
+| 3.3 Agricultural production case study (internal assessment) | Agr3.3.2.1 | 2 | Describe primary and secondary information sources. | 20 |
+| 3.3 Agricultural production case study (internal assessment) | Agr.3.3.4.1 | 4 | Evaluate trends, relationships and patterns relevant to the study. | 20 |
+| 3.3 Agricultural production case study (internal assessment) | Agr3.3.4.2 | 4 | Justify recommendations and interpret/present findings. | 20 |
+| 3.3 Agricultural production case study (internal assessment) | Agr3.3.3.1 | 3 | Draw conclusions linked to collected data and the study aim. | 20 |
+| 3.3 Agricultural production case study (internal assessment) | Agr3.3.2.2 | 2 | Acknowledge and reference information sources appropriately. | 20 |
+
+### Extraction quality and next checks
+
+- The source's extracted text has several merged/duplicated table rows and inconsistent code spellings (for example, Agri/Agr prefixes and one printed Agr.3.3.4.1). Preserve source spellings exactly in the raw register; flag ambiguous rows for visual PDF-page verification before importing into the canonical CSV.
+- The inventory above is a first transcription/paraphrase pass, not a certified complete code list. Reconcile every row against the PDF page image, especially rows in the merged tables on pages 11–16.
+- This syllabus describes a regional South Pacific Form Seven Certificate. Confirm its applicability to the specific Fiji pilot school and the latest effective EQAP syllabus before final approval.
+- No daily activity, worksheet or 115-day allocation is unlocked by this extraction alone. Each selected SLO still needs source-page verification, school/programme applicability, educator validation and a timetable that respects the 28-week suggested course duration.
