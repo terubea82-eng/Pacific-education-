@@ -21,41 +21,39 @@ function load() {
   return window;
 }
 
-test("every listed subject produces four concrete questions with answer explanations", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  assert.ok(api.subjects.length >= 10);
-  for (const subject of api.subjects) {
-    const worksheet = api.getWorksheet("Class 1", subject, 2, "developing");
-    assert.equal(worksheet.subject, subject);
-    assert.equal(worksheet.questions.length, 4, subject);
-    assert.equal(worksheet.answerKey.length, 4, subject);
-    assert.ok(worksheet.readingText.length > 20, subject);
-    assert.ok(worksheet.questions.every(q => q.prompt && q.options && q.answer && q.why && (q.options.length ? q.options[q.correctOption] === q.answer : q.type === "Oral / picture response")), subject);
-    assert.ok(worksheet.answerKey.every(a => a.answer && a.explanation), subject);
-    assert.equal(worksheet.status, "DRAFT_REQUIRES_OFFICIAL_OUTCOME_MAPPING");
+test("every listed subject is blocked from learner release until its prescription is validated", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  assert.ok(api.subjects.length>=10);
+  for(const subject of api.subjects){
+    const w=api.getWorksheet("Class 1",subject,2,"developing");
+    assert.equal(w.subject,subject);
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.questions.length,0);
+    assert.equal(w.answerKey.length,0);
+    assert.equal(w.readingText,"");
+    assert.equal(w.learnerReleaseEligible,false);
   }
 });
 
-test("Maths answer keys calculate correctly for market money and rainfall examples", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const market = api.getWorksheet("Class 1", "Mathematics", 3, "expected");
-  assert.equal(market.topic, "Market money");
-  assert.equal(market.questions[0].answer, "$12");
-  assert.equal(market.questions[1].answer, "$8");
-  const rain = api.getWorksheet("Form 5", "Mathematics", 4, "expected");
-  assert.equal(rain.topic, "Rainfall data");
-  assert.equal(rain.questions[1].answer, "16 mm");
-  assert.equal(rain.questions[3].answer, "4 mm");
+test("unverified mathematics examples are not exposed as daily learner activities", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const [day,ability] of [[3,"expected"],[4,"expected"]]){
+    const w=api.getWorksheet("Class 1","Mathematics",day,ability);
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.questions.length,0);
+    assert.equal(w.answerKey.length,0);
+  }
 });
 
-test("levels and four ability bands produce differentiated directions", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  const support = api.getWorksheet("ECE", "English", 2, "support");
-  const extension = api.getWorksheet("Form 7", "English", 2, "extension");
-  assert.ok(support.tasks[0].includes("FOUNDATION"));
-  assert.ok(extension.tasks[0].includes("ADVANCED"));
-  assert.equal(support.responseLines, 2);
-  assert.equal(extension.responseLines, 7);
+test("all four ability bands remain blocked until a shared prescribed objective is approved", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const ability of ["support","developing","expected","extension"]){
+    const w=api.getWorksheet("ECE","English",2,ability);
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.questions.length,0);
+    assert.equal(w.tasks.length,0);
+    assert.equal(w.curriculumGate.serverAuthorizationRequired,true);
+  }
 });
 
 test("day one cannot bypass the curriculum-first gate", () => {
@@ -68,38 +66,28 @@ test("day one cannot bypass the curriculum-first gate", () => {
   assert.equal(dayOne.tasks.length,0);
 });
 
-test("Fijian language packs require verified teacher-provided text rather than invented translations", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  for (const subject of ["iTaukei Language", "Hindi"]) {
-    const worksheet = api.getWorksheet("Class 4", subject, 2, "developing");
-    assert.ok(worksheet.readingText.includes("Teacher: insert"));
-    assert.ok(worksheet.sourceNote.includes("current Fiji Ministry syllabus"));
+test("Fijian language packs do not release unverified translations or learner text", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  for(const subject of ["iTaukei Language","Hindi"]){
+    const w=api.getWorksheet("Class 4",subject,2,"developing");
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.readingText,"");
+    assert.equal(w.questions.length,0);
+    assert.equal(w.learnerReleaseEligible,false);
   }
 });
 
-test("all Fiji levels and four ability bands return complete differentiated worksheets", () => {
-  const api = load().PacEduDailyWorksheetContent;
-  assert.deepEqual(JSON.parse(JSON.stringify(api.levels)), [
-    "ECE", "Class 1", "Class 2", "Class 3", "Class 4", "Class 5", "Class 6", "Class 7", "Class 8",
-    "Form 3", "Form 4", "Form 5", "Form 6", "Form 7"
-  ]);
-  for (const level of api.levels) {
-    for (const subject of api.subjects) {
-      for (const ability of ["support", "developing", "expected", "extension"]) {
-        const worksheet = api.getWorksheet(level, subject, 2, ability);
-        assert.equal(worksheet.level, level);
-        assert.equal(worksheet.subject, subject);
-        assert.equal(worksheet.ability, ability);
-        assert.equal(worksheet.questions.length, 4);
-        assert.equal(worksheet.answerKey.length, 4);
-        assert.ok(worksheet.tasks.length >= 3);
-        assert.ok(worksheet.sourceNote.includes("source mapping pending"));
-        for (const q of worksheet.questions) {
-          if (q.options.length) assert.equal(q.options[q.correctOption], q.answer);
-          else assert.equal(q.type, "Oral / picture response");
-        }
-      }
-    }
+test("all Fiji levels and ability bands are subject to the same curriculum-first lock", () => {
+  const api=load().PacEduDailyWorksheetContent;
+  assert.deepEqual(JSON.parse(JSON.stringify(api.levels)),["ECE","Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Form 3","Form 4","Form 5","Form 6","Form 7"]);
+  for(const level of api.levels) for(const subject of api.subjects) for(const ability of ["support","developing","expected","extension"]){
+    const w=api.getWorksheet(level,subject,2,ability);
+    assert.equal(w.level,level);
+    assert.equal(w.subject,subject);
+    assert.equal(w.ability,ability);
+    assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+    assert.equal(w.questions.length,0);
+    assert.equal(w.answerKey.length,0);
   }
 });
 
@@ -155,10 +143,12 @@ test("an unvalidated legacy indicator candidate cannot release learner activitie
   assert.equal(w.answerKey.length,0);
 });
 
-test("Class 1 English Day 2 starts with the planned introduction activity", () => {
-  const worksheet = load().PacEduDailyWorksheetContent.getWorksheet("Class 1", "English", 2, "expected");
-  assert.equal(worksheet.topic, "Who am I? — Class 1 Term 1 Week 1");
-  assert.equal(worksheet.answerKey[0].answer, "Class 1");
+test("Class 1 English Day 2 is blocked until its exact prescribed indicator is validated", () => {
+  const w=load().PacEduDailyWorksheetContent.getWorksheet("Class 1","English",2,"expected");
+  assert.equal(w.status,"BLOCKED_CURRICULUM_SOURCE_REQUIRED");
+  assert.equal(w.topic,"Curriculum source pending");
+  assert.equal(w.answerKey.length,0);
+  assert.equal(w.questions.length,0);
 });
 
 test("unverified daily slots expose no learner questions or answer keys", () => {
