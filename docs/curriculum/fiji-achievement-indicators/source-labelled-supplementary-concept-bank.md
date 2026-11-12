@@ -3071,3 +3071,96 @@ Use the current issue date and original source with every dataset; distinguish o
 - Any school WASH assessment must be carried out by authorised adults using current approved standards, not by children.
 - **Worksheet gate:** NOT YET AUTHORISED. First obtain a controlled current Ministry copy and determine whether the 2012 school WASH standards have been superseded; obtain current Fiji National Drinking Water Quality Standards; map concepts to approved Fiji NCF and official Ministry indicators; confirm levels and prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 153 — Fiji Ministry of Health: Communicable-disease surveillance, outbreak communication and environmental-health concepts
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Healthy Living; Elementary Science; Basic Science; Social Science; Mathematics; English; Computer Studies  
+**Level:** LEVEL_NOT_SPECIFIED pending approved Fiji NCF and Ministry mapping  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — Fiji Communicable Disease Surveillance and Outbreak Response Guidelines (December 2016)
+
+- **Issuer:** Ministry of Health and Medical Services, Republic of Fiji.
+- **Technical revision:** December 2016; the Ministry PDF cover identifies the 2016 edition. The PDF is hosted on the official Ministry domain.
+- **Official PDF:** https://www.health.gov.fj/wp-content/uploads/2018/08/Fiji-Communicable-Disease-Surveillance-and-Outbreak-Response-Guidelines-2016-1.pdf
+- **Inspected locations:** §1.3–1.5, printed pp.16–24; §2.1–2.4, printed pp.28–38; §2.12, printed pp.53–54; §3.3, printed pp.74–78; §3.5, printed pp.82–84; §4.5, printed pp.101–104; §4.7, printed pp.107–110; selected disease transmission tables in §§4.3, 4.6 and 4.12.
+- **Version caution:** This is a 2016 operational public-health guideline, not a current clinical manual or student syllabus. The Ministry's current Guidelines index also lists a separate 2016 Communicable Disease Surveillance and Outbreak Response Guidelines entry, but the continued current operational status and subsequent amendments or replacement must be confirmed with the Ministry before operational use. Do not use old disease thresholds, diagnostic criteria, treatment details, or case definitions as current health advice.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_PUBLIC_HEALTH_GUIDELINE; HISTORICAL_TECHNICAL_SOURCE; CURRENT_VERSION_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source A**
+1. **Communicable disease and prevention** — the guideline distinguishes communicable disease prevention, surveillance and response; source §1 and §2.1, printed pp.15–16, 28. Evidence: learner distinguishes prevention, monitoring and response in a fictional scenario.
+2. **Outbreak as a change from expected patterns** — outbreak recognition depends on comparison with expected disease occurrence and verified information; source §1.1–1.3, printed pp.16–17. Evidence: learner compares fictional weekly counts and describes an unusual increase without declaring an outbreak.
+3. **Surveillance as systematic observation** — disease surveillance collects information over time to identify patterns and guide public-health work; source §2.1, printed p.28. Evidence: learner explains why consistent records over time are more useful than isolated anecdotes.
+4. **Data quality and verification** — increases must be checked for data-quality issues, reporting changes and changed definitions; source §1.3, printed pp.16–17. Evidence: learner identifies missing dates, duplicate records and changed categories in a mock dataset.
+5. **Time, place and person as data dimensions** — descriptive epidemiology organises information by when, where and who; source §1.5, printed pp.20–22. Evidence: learner sorts fictional, anonymised records into time, place and person fields.
+6. **Tables and line lists** — structured tables organise observations for comparison; source §1.5, printed pp.20–21. Evidence: learner completes a fictional table using anonymous case IDs and non-identifying variables.
+7. **Epidemic curves and time-series graphs** — a curve plots counts over time and can help describe a pattern; source §1.5, printed pp.21–22. Evidence: learner constructs and interprets a simple bar chart from fictional data, with labelled axes and units.
+8. **Spot maps and spatial patterns** — maps can display where events are reported relative to landmarks; source §1.5, printed p.22. Evidence: learner interprets a fictional map using invented locations and a legend, without plotting real patient addresses.
+9. **Rates, counts and averages are different** — the guideline discusses incidence and moving averages; source §1.3, printed pp.16–17. Evidence: learner distinguishes a count from a rate and calculates a simple average from mock values.
+10. **Local patterns can be hidden in national totals** — divisional or local data may reveal a pattern that a national total conceals; source §1.3, printed pp.16–17. Evidence: learner compares fictional division-level counts with a national total and explains why disaggregation matters.
+11. **Evidence, hypothesis and uncertainty** — hypotheses about source, transmission and exposure must be assessed against evidence; source §1.5, printed pp.22–24. Evidence: learner separates observation, possible explanation and confirmed fact in a case study.
+12. **Environmental pathways and disease risk** — environmental conditions can influence transmission pathways; source §1.5 and Figure 3, printed pp.22–23. Evidence: learner traces a fictional environmental pathway on a diagram without visiting hazardous sites.
+13. **Prevention can interrupt exposure pathways** — public-health controls can target sources, transmission routes or exposure; source §1.5, printed p.24. Evidence: learner matches safe, general prevention examples to a simplified pathway diagram.
+14. **Water, sanitation and disease prevention** — the guideline includes sanitation and water-purification measures among possible public-health controls; source §1.5, printed p.24. Evidence: learner explains how safe water and sanitation can reduce some exposure risks without attempting water treatment.
+15. **Mosquito vectors and disease transmission** — the dengue section describes Aedes mosquitoes as vectors; source §4.5, printed pp.101–104. Evidence: learner explains the meaning of vector and labels a simple mosquito-to-human transmission diagram.
+16. **Mosquito breeding environments** — vector control is part of prevention and environmental health; source §1.5, printed p.19, and §4.5, printed pp.101–104. Evidence: learner identifies, in safe photographs or fictional illustrations, containers that can collect standing water; no learner handles waste or enters unsafe sites.
+17. **Animal reservoirs and environmental contamination** — the leptospirosis section describes animal reservoirs and environmental exposure through contaminated freshwater, floodwater, soil or mud; source §4.7, printed pp.107–110. Evidence: learner traces a fictional animal-to-environment exposure pathway and identifies why contaminated floodwater must be avoided.
+18. **Rainfall, flooding and changing exposure risks** — the guideline links environmental conditions and post-disaster settings with disease patterns; source §1.1 and Figure 3, printed pp.16, 23. Evidence: learner interprets a fictional rainfall and risk timeline without forecasting disease or entering floodwater.
+19. **Food and water contamination pathways** — selected disease sections describe food- and water-borne transmission; source §§4.3, 4.6 and 4.12, printed pp.96–100, 105–107, 125–128. Evidence: learner identifies safe, general contamination pathways in a fictional food/water flow diagram.
+20. **Laboratory testing and confirmation** — the guideline distinguishes surveillance information from laboratory investigation and confirmation; source §2.6, printed pp.42–44, and disease sections. Evidence: learner explains why a laboratory result is different from a guess or symptom description.
+21. **Public-health communication** — messages should be accurate, timely, consistent and understandable to the public; source §2.12, printed pp.53–54. Evidence: learner edits a fictional public-information notice for clarity, source attribution and non-alarming language.
+22. **Communication and early care-seeking** — public messages can encourage people who are unwell to seek appropriate health services; source §2.12, printed p.54. Evidence: learner identifies a safe referral statement in a fictional health message; no diagnosis or treatment advice is created by learners.
+23. **Preparedness, response, recovery and review** — outbreak communication and response are organised across phases; source §2.12, printed pp.53–54, and §2.13, printed p.58. Evidence: learner orders a fictional public-information timeline into preparation, response, recovery and review.
+24. **Community partnership and coordination** — public-health communication involves relevant authorities, community leaders, schools and other stakeholders; source §2.12, printed pp.53–54. Evidence: learner identifies the appropriate responsible adult or public agency in a fictional coordination scenario.
+25. **Post-event evaluation and learning** — review after an outbreak can identify lessons and improve future preparedness; source §2.13, printed p.58. Evidence: learner writes a short reflection identifying what worked, what evidence is missing and one improvement.
+
+### Source B — Ministry of Health and Medical Services: Environmental Health and Communicable Diseases programme pages
+
+- **Issuer:** Ministry of Health and Medical Services, Government of Fiji.
+- **Current Ministry pages:** https://www.health.gov.fj/communicable-diseases-cd/ and https://www.health.gov.fj/our-work/
+- **Inspected locations:** Communicable Diseases page, paragraphs describing surveillance, laboratory confirmation, public-health communication and research; Environmental Health section describing pollution, unsanitary conditions, poor water quality, improper waste management, vector breeding and poor food quality; listed environmental-health programme areas.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_PROGRAMME_INFORMATION; CURRENT_WEB_REFERENCE; NOT A STUDENT SYLLABUS.
+- **PacEdu-derived concepts from Source B:**
+26. **Environmental health risk factors** — pollution, unsanitary conditions, poor water quality, improper waste management, vector breeding and poor food quality are identified as environmental-health concerns. Evidence: learner categorises fictional environmental-health examples and explains one possible exposure pathway.
+27. **Environmental health and public wellbeing** — environmental-health services promote and protect health-supportive environments. Evidence: learner explains how a clean and safe shared environment can support wellbeing without blaming individuals or communities.
+28. **Laboratory services and public-health evidence** — laboratory services support diagnosis, confirmation and surveillance. Evidence: learner distinguishes a public report, a laboratory test and a confirmed result using fictional examples.
+29. **Research and quality assurance** — public-health programmes use research, quality assurance and collaboration. Evidence: learner identifies why methods and data quality matter when comparing results.
+30. **Interagency communication** — communicable-disease work uses communication networks between departments and stakeholders. Evidence: learner maps responsible organisations in a fictional response diagram without assuming students have official reporting roles.
+
+### Source C — Fiji Ministry of Health and Medical Services, Public Advisory No.17 (22 February 2026): Leptospirosis precaution advisory
+
+- **Issuer:** Ministry of Health and Medical Services, Government of Fiji.
+- **Publication date:** 22 February 2026.
+- **Official advisory:** https://www.health.gov.fj/ministry-urges-general-public-to-take-precaution-against-leptospirosis/
+- **Inspected locations:** advisory paragraphs 1–6.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_PUBLIC_HEALTH_ADVISORY; DATED_CURRENT_AFFAIRS_CASE_STUDY; EVENT-SPECIFIC.
+- **PacEdu-derived concepts from Source C:**
+31. **Risk communication after a serious event** — a public advisory communicates a risk and precaution message after suspected cases and a public-health investigation. Evidence: learner identifies issuer, date, event, evidence status and intended audience in a source-analysis task.
+32. **Rainfall and environmental exposure** — the advisory notes increased concern after heavy rain and describes an investigation linked to freshwater swimming. Evidence: learner analyses a fictional rainfall/exposure timeline and distinguishes association from proof of cause.
+33. **Suspected versus confirmed information** — the advisory uses the wording “suspected” and reports that investigations are underway. Evidence: learner distinguishes suspected, investigated and confirmed claims in a short media-literacy exercise.
+34. **Health information source checking** — public-health information should be attributed to the issuing Ministry and dated. Evidence: learner checks the authoring agency, date and link before using a public advisory in a report.
+35. **Respectful reporting and privacy** — a serious public-health event should be discussed without identifying affected children or repeating distressing details. Evidence: learner rewrites a fictional report to remove identifying and sensational information.
+
+### Source D — Ministry of Health and Medical Services, Fiji Leptospirosis, Typhoid and Dengue public information page
+
+- **Issuer:** Ministry of Health and Medical Services, Government of Fiji.
+- **Official page:** https://www.health.gov.fj/ltds/
+- **Inspected information:** disease overview panels for leptospirosis, typhoid fever and dengue fever.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_PUBLIC_INFORMATION; CURRENT_WEB_PAGE; CONTENT/UPDATE DATE NOT CLEARLY DISPLAYED.
+- **PacEdu-derived concept:**
+36. **Disease-information comparison and source currency** — Ministry disease information pages can be compared for cause, prevention theme and publication/update date. Evidence: learner makes a source-comparison table and flags when a date is not shown. Do not copy undated clinical details as current treatment or diagnosis guidance.
+
+### Source limitations and safeguards
+
+- The 2016 guideline is an operational document for health workers and outbreak-response teams. It is not a school textbook, a student diagnostic manual, or a current clinical guideline.
+- Disease-specific case definitions, outbreak thresholds, incubation periods, laboratory methods, treatment, medicines, isolation, quarantine, and official notification procedures must not be taught as learner instructions or reused as current clinical facts without Ministry confirmation.
+- Learners must not diagnose classmates, collect illness histories, identify suspected cases, keep health registers, notify authorities on behalf of the Ministry, sample blood/stool/water, visit outbreak sites, handle mosquitoes or animals, or conduct field investigations.
+- Use fictional, anonymised datasets; no names, addresses, phone numbers, GPS coordinates, household details, or real school illness records. Never map real patient locations or identify affected children.
+- Disease case studies must be age-appropriate, non-graphic, non-stigmatising and trauma-aware. Do not imply that a person or community is responsible for disease.
+- Use current Ministry advisories only with their date and context; an old advisory is not evidence of today's outbreak status. Any numerical disease counts or thresholds must be time-stamped and sourced.
+- **Worksheet gate:** NOT YET AUTHORISED. Verify the current Ministry communicable-disease guideline and clinical/public-health advice; confirm the current Ministry education curriculum mapping and age suitability; obtain current prevention materials; set levels and prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
