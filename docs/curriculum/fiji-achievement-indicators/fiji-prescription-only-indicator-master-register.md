@@ -384,3 +384,15 @@ Before a daily worksheet is drafted, every proposed indicator/concept must have 
 Each concept record must carry a stable ID, current prescription code/wording if verified, subject/year/strand, historical source list, current/superseded/withdrawn/draft/historical status, reuse permissions, teaching-use note and worksheet eligibility. Historical material is provenance, not proof of current mandatory status. A verified current prescription takes precedence. Where no current controlled prescription is verified, do not call the concept mandatory. A supplementary worksheet may be considered separately only after rights review and teacher validation and must be labelled supplementary. All worksheet drafts remain PENDING_TEACHER_REVIEW until teacher approval.
 
 This rule is locked for all subjects and levels ECE–Year 13/Form 7. No untraceable concept may be used to create a PacEdu daily worksheet.
+
+## Historical lineage sources added (12 November 2026)
+
+Four additional Fiji historical/reference sources are indexed, bringing the source-labelled bank to 18 records:
+- **English Year 4 resource book (2013; 2019 workgroup amendments indicated):** historical themes include family/culture, health/safety, environment, entertainment, science/technology and careers. Themes only; not indicators. Third-party-hosted; Ministry classroom reproduction notice requires acknowledgement and other uses referred to Ministry.
+- **Years 9–10 English syllabus (historical CDU-attributed copy):** explicitly says essential concepts, skills and attitudes were selected from old prescriptions and incorporated into the syllabus. Records older strands Listening & Speaking, Reading & Viewing, Writing & Shaping. Strong historical lineage lead; authenticate edition and exact prior prescription before linking individual outcomes.
+- **Fiji Mathematics curriculum history article:** scholarly source reports a 1988 Ministry Forms 5–6 Mathematics prescription and historical concept themes including arithmetic, fractions, decimals, measurement, money, ratio, proportion, averages and percentages. Research only; use to locate the original prescription, not as active indicator authority.
+- **Mathematics for Class 8/Form II, revised 1998:** bibliographic lead for a historical Ministry Curriculum Development Unit textbook. Actual contents were not available, so no concepts extracted.
+
+These records support the newly locked requirement to identify older sources for each individual concept. The source-lineage process must obtain original pages and exact wording before recording a one-to-one relationship. A thematic similarity is not proof of equivalence.
+
+Active current prescription status remains unchanged: 0 verified controlled prescription sources accepted; 0 active prescribed indicators. No worksheets generated from historical sources.
