@@ -362,3 +362,24 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Lineage/use:** This is the strongest official search lead for obtaining the original Years 1–8 English and Mathematics documents. It also shows that senior Mathematics pathway labels changed over time: do not assume the 2020–2021 “Life Skills/Applied” pilot labels are interchangeable with the later 2022–2023 “Life/Pure” labels. Verify the actual approved syllabus version and effective date before mapping indicators.
 - **Status and reuse:** Official annual report, descriptive evidence only. It does not contain the full scope-and-sequence or indicator texts.
 - **Source link:** https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+
+
+## 28. Fiji Ministry of Education — Annual Report 2022–2023, Years 1–8 Literacy and Numeracy curriculum implementation
+
+- **Source identity:** Ministry of Education, Annual Report 2022–2023, Parliamentary Paper No. 109/24; official report hosted by the Parliament of Fiji.
+- **Level/subjects:** Years 1–8 Literacy and Numeracy, with documented Phase 1 Years 1–4 and Phase 2 Years 5–8.
+- **Source classification:** `OFFICIAL_CURRICULUM_STATUS_AND_IMPLEMENTATION_EVIDENCE`; not the underlying syllabus/indicator text.
+- **Verified information:** The report says Year 1–4 revised curriculum documents were trialled in 90 selected schools, draft documents were edited after feedback, final copies were printed, and implementation began in all primary schools in 2023. It records 648 final syllabuses and Literacy/Numeracy Guides for Years 1–4 supplied to primary schools, plus 250 draft copies for the trial phase. It says Years 5–8 were then in Phase 2 trial. The report describes year-level scope-and-sequence documents, elaborations, teaching guidance, concept-based learning, and formative assessment. It also states that curriculum documents such as syllabuses were uploaded to FEMIS and Moodle.
+- **Lineage/use:** This supersedes reliance on the 2020–2021 package as the sole primary literacy/numeracy source. Retrieve the final approved Years 1–4 syllabus/guide and the final status of Years 5–8 Phase 2 documents from authorised Ministry channels. Do not treat a Phase 2 trial draft as final. Exact CLOs and elaborations must be extracted from the actual controlled documents, not reconstructed from this annual report.
+- **Status and reuse:** Official annual report; implementation/status evidence only. The underlying syllabus files may be access-controlled on FEMIS/Moodle. Seek Ministry permission before external reproduction/adaptation.
+- **Source link:** https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+
+## 29. Fiji Ministry of Education, Curriculum Development Unit — Year 1 English: Language, Literacy and Communication (2013; revised 2019; reprinted 2020)
+
+- **Source identity:** Year 1 English — Language, Literacy and Communication; document identifies Curriculum Development Unit, Ministry of Education, Heritage and Arts, 2013, revised 2019, reprinted 2020. Accessible copy is hosted on FlipHTML5 by an individual uploader, not the Ministry website.
+- **Level/subject:** Year 1, English / Language, Literacy and Communication.
+- **Source classification:** `HISTORICAL_OR_VERSIONED_TEACHER_RESOURCE_LEAD`; not assumed to be the latest Years 1–4 revised literacy syllabus.
+- **Verified information:** Accessible document metadata identifies the edition history and copyright owner as the Ministry's Curriculum Advisory Services. The copyright notice says the resource was issued free to schools and sets limits on reproduction.
+- **Lineage/use:** Preserve as a Year 1 English historical lineage source. Compare its exact outcomes and concepts with the final Years 1–4 revised Literacy and Numeracy syllabus/guide and any subsequent authorised English materials. Do not use this older book as the current Year 1 prescription where the later revised package governs.
+- **Status and reuse:** Ministry-attributed edition hosted by a third party; authenticity and full version completeness should be confirmed against a Ministry copy. Classroom reproduction conditions do not automatically permit PacEdu external/commercial redistribution or adaptation.
+- **Source link:** https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/
