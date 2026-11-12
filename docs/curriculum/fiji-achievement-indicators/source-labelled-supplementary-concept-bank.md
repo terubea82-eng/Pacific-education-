@@ -3982,3 +3982,90 @@ Use the current issue date and original source with every dataset; distinguish o
 - Do not reproduce source photographs, maps, figures or substantial text without rights clearance. Create original PacEdu illustrations and use appropriately licensed images.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: verify current national species inventories and IUCN/BirdLife records; retrieve current species recovery plans and official plant conservation references; check CITES/legal notices; complete rights review; map concepts to approved Fiji NCF and official achievement indicators; assign level/prerequisites; complete teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+## Record 161 — Fiji freshwater ecosystems, native freshwater fish, wetlands and catchment biodiversity concepts
+
+**Record type:** FIJI_PRIMARY_TEXT_CONCEPT / PACEDU_DERIVED_CONCEPT / SUPPLEMENTARY_CONTEXT_ONLY  
+**Status:** Research-derived concepts only; not official student achievement indicators, CLOs or achievement standards.  
+**Extraction date:** 12 November 2026.  
+**Subject mapping:** Elementary Science; Basic Science; Social Science; Mathematics; Agriculture; Technology; English.  
+**Level:** LEVEL_NOT_SPECIFIED pending mapping to approved Fiji NCF outcomes and official achievement indicators.  
+**Worksheet gate:** NOT YET AUTHORISED.
+
+### Source register and evidence limits
+
+1. **Fiji National Biodiversity Threat Assessment — BIODEV2030/IUCN national report (2021).** Freshwater Realm section, report p. 28 onward; describes Fiji freshwater systems as rivers, creeks, streams, springs, lakes, peat swamps, ponds and dams; discusses major river systems, freshwater wetlands, freshwater fish and macroinvertebrates. The report cites estimates of 166 freshwater/estuarine fish species and 13 endemic species from earlier research. Treat all totals as dated estimates, not a current inventory. Source: https://www.biodev2030.org/wp-content/uploads/sites/2/2021/11/FIJI-Final-Report-on-National-Biodiversity-Threat-Assessment_BIODEV-2030.pdf
+2. **Copeland, Boseto and Jenkins (2016), “Freshwater ichthyofauna of the Pacific-Asia Biodiversity Transect (PABITRA) Gateway in Viti Levu, Fiji,” Pacific Conservation Biology 22(3), 236–241.** Abstract and study summary describe transect-based surveys, 21 indigenous fish species across three sites, six new occurrence records and one new species to the known Fiji fauna at the time. This is a peer-reviewed historical study, not a current national checklist. DOI: https://doi.org/10.1071/PC14928 ; repository record: https://repository.usp.ac.fj/id/eprint/9039/
+3. **Institute of Applied Sciences, University of the South Pacific — Diversity, distribution and abundance of Fijian freshwater fish.** Project summary reports survey effort at 40 Viti Levu, five Vanua Levu and 21 Taveuni sites; collected specimens and combined survey/museum records. Its summary's totals and taxonomic groupings are study-specific and should not be mixed uncritically with other inventories. Source: https://ias.usp.ac.fj/diversity-distribution-and-abundance-of-fijian-freshwater-fish/
+4. **Jenkins, A.P., “Freshwater and estuarine fishes of Fiji: current taxonomic knowledge and priorities for conservation,” proceedings of the Fiji Islands Conservation Summit.** The proceedings summary describes historical taxonomic knowledge, fish families, indigenous/non-indigenous distinctions and endemicity. Treat figures as the author's snapshot at the time of the proceedings, not a current official list. Source: https://fiji.wcs.org/Portals/82/FICSF%20Proceedings.pdf
+5. **Ministry of Environment and Climate Change, Fiji National State of the Environment Report 2026 status notice (16 September 2026).** The notice says a national validation workshop was held on 3 September 2026 and the report was at an important validation stage. It is not itself the final State of Environment report and supplies no verified final freshwater indicators. Source: https://mecc.gov.fj/fijis-state-of-the-environment-report/
+6. **Fiji National Biodiversity Strategy and Action Plan 2026–2030 (NBSAP), Fiji Environment Data Portal, released 1 September 2026.** Provides national biodiversity goals, targets and ecosystem restoration/protection context. Use as national strategy context, not as year-level learning outcomes. Source: https://fiji-data.sprep.org/dataset/fiji-national-biodiversity-strategy-and-action-plan-2026-2030
+
+### Extracted concept bank
+
+All concepts below are PACEDU_DERIVED_CONCEPT unless explicitly identified as contextual. They are paraphrased learning-content candidates, not quotations or official curriculum standards.
+
+1. Distinguish freshwater, brackish-water and marine environments by salinity and location.
+2. Identify rivers, creeks, streams, springs, lakes, ponds, dams and peat swamps as different freshwater-system types.
+3. Explain how rainfall, slope, elevation and catchment shape influence the movement of water through an island landscape.
+4. Trace a simple catchment pathway from upland rainfall through streams and rivers to an estuary or coast.
+5. Identify the Rewa, Ba, Navua, Sigatoka and Dreketi as major Fiji river systems named in the assessment; locate them on a sourced map.
+6. Explain the relationship between headwaters, tributaries, main channels, floodplains and estuaries.
+7. Compare flowing-water and still-water habitats using observable features in supplied photographs or datasets.
+8. Explain why freshwater wetlands can be ecologically important even where they occupy a small proportion of land area.
+9. Describe how freshwater habitats provide living space, feeding areas, breeding areas or migration pathways for organisms.
+10. Distinguish native, endemic, introduced, established and uncertain-occurrence species using clear definitions.
+11. Explain that a species can be native to Fiji without being endemic to Fiji.
+12. Describe why island freshwater fish diversity includes species with marine ancestry and life stages linked to both freshwater and the sea.
+13. Explain the general concept of fish migration between freshwater, estuarine and marine environments without assuming every species follows the same life cycle.
+14. Recognise gobies and gudgeons as groups represented in Fiji freshwater and estuarine fish research; avoid treating common names as a complete taxonomic identification.
+15. Explain how species identification uses observable characteristics, scientific names, comparison keys and expert-verified records.
+16. Explain why scientific names help reduce confusion caused by different local or common names.
+17. Interpret a simple species table showing scientific name, common name, habitat, native/introduced status and evidence source.
+18. Distinguish a species occurrence record from proof that a species is widespread, abundant or currently established.
+19. Explain why museum specimens, field observations and verified photographs can contribute to biodiversity knowledge.
+20. Describe the purpose of a biodiversity survey and the need to record date, site, method and observer.
+21. Explain the purpose of a transect as a repeatable way to observe organisms or habitat changes along a defined route.
+22. Compare biodiversity observations across sites while accounting for differences in survey effort and methods.
+23. Interpret simple counts, tables and bar charts of species observations without treating sample counts as total population estimates.
+24. Calculate simple totals, differences, proportions or percentages from a clearly labelled fictional freshwater survey dataset.
+25. Explain why repeat surveys and consistent methods are important when monitoring biodiversity over time.
+26. Identify freshwater macroinvertebrates as small invertebrate animals living in or associated with freshwater habitats.
+27. Describe how macroinvertebrate groups can be used in ecological studies as evidence about freshwater habitat conditions, while noting that interpretation requires suitable methods and expertise.
+28. Explain how water quality, sediment, flow alteration, pollution and habitat disturbance can affect freshwater organisms.
+29. Describe how land use in a catchment can influence runoff, erosion, sediment movement and downstream water habitats.
+30. Explain the difference between a natural disturbance and a human-caused pressure, using sourced examples and careful evidence.
+31. Describe how introduced freshwater species may interact with native species through competition, predation or habitat change; use Fiji-specific evidence and avoid unsupported claims about every introduced species.
+32. Explain why historical estimates of species totals can change when new surveys, specimens, taxonomic revisions or identification methods become available.
+33. Compare two dated biodiversity sources and identify why their totals may differ in scope, date, habitat definition or taxonomic treatment.
+34. Explain why a Data Deficient or uncertain record does not mean that a species is common, safe or absent.
+35. Describe the role of protected forests, catchment management and community conservation in maintaining freshwater habitat.
+36. Explain the ridge-to-reef concept: activities in upland catchments can affect rivers, estuaries, coastal waters and marine ecosystems.
+37. Identify how restoration planning can consider ecosystem condition, local knowledge, land tenure, community participation and monitoring.
+38. Communicate a freshwater conservation finding using a labelled diagram, short report, accessible oral explanation or data display, with source attribution.
+39. Distinguish a national biodiversity strategy target from a measured achievement; a target is not evidence that the outcome has already been reached.
+40. Explain why the 2026 State of the Environment validation notice is a progress update and not a substitute for the final report.
+
+### Observable evidence candidates
+
+- Learner labels a catchment diagram with headwaters, tributary, river, estuary and coast.
+- Learner sorts example organisms or records into native, endemic, introduced and uncertain categories when evidence is supplied.
+- Learner interprets a dated fish survey table and identifies its study sites and limitations.
+- Learner creates a bar chart from a fictional dataset and states what the sample does and does not show.
+- Learner compares two dated sources and gives at least two reasons their reported species totals may differ.
+- Learner explains one pathway by which catchment land use can affect downstream freshwater habitat.
+- Learner distinguishes a national conservation target from verified measured progress.
+- Learner presents a short source-attributed conservation explanation in an accessible format.
+
+### Source currency, rights and safety controls
+
+- The 2021 biodiversity assessment, 2016 PABITRA paper and summit proceedings are historical research sources. Their species totals, taxonomy, distribution and threat classifications must not be presented as current without checking a current authoritative inventory and current taxonomic treatment.
+- The 2026 State of the Environment page is a validation-stage announcement, not the completed report. Update this record when the final report and underlying freshwater datasets become publicly available.
+- FishBase and other secondary checklist pages may assist cross-checking but are not substitutes for a current Fiji government or expert-verified national inventory. Conflicting totals must be preserved with source date, habitat scope and method rather than forced into one number.
+- No learner fish capture, electrofishing, netting, trapping, specimen collection, handling, feeding, transport, release or aquarium stocking. No water sampling from unsafe sites and no entry into rivers, dams, wetlands or private/customary lands for this learning activity.
+- Use supplied, licensed photographs, maps and fictional or properly attributed datasets. Do not disclose sensitive species locations, breeding sites or customary resource information.
+- No water-quality certification, species identification for regulatory decisions, biosecurity decision or ecological diagnosis by learners.
+- Do not reproduce copyrighted article text, photographs, figures or maps beyond permitted quotation. Create original diagrams and use licensed media.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: retrieve the final Fiji State of Environment Report 2026 and freshwater data; verify current species inventory and taxonomy with authoritative Fiji sources; check rights; map to approved Fiji NCF and official achievement indicators; assign level/prerequisites; complete teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
