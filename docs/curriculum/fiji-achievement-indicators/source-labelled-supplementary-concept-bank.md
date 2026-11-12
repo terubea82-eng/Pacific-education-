@@ -4387,3 +4387,105 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - Use SPREP/Ramsar source records with attribution; review individual dataset and image licences before reuse. Create original PacEdu diagrams rather than copying protected maps or photographs.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: obtain and inspect full 2026 NWRMSP, implementation plan and IWRM plan; verify current Ramsar site information sheets and boundaries; verify groundwater policy and legislation status; inspect the full rural water-point survey and metadata; complete rights review; map to approved Fiji NCF/official indicators; assign levels/prerequisites; complete teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 164 — Fiji 2026 National Water Policy and Integrated Water Resources Management Plan: detailed concepts
+
+- **Record status:** ADDED; full 55-page policy, 16-page implementation plan and 102-page IWRM Plan inspected through their official PDF text, including definitions, objectives, data systems, water quality, watershed management, groundwater, flood/drought planning and implementation schedules.
+- **Record type:** FIJI_OFFICIAL_POLICY_CONCEPT / FIJI_OFFICIAL_IMPLEMENTATION_PLAN_CONCEPT / PACEDU_DERIVED_CONCEPT.
+- **Concept count:** 40 numbered concepts.
+- **Official indicator status:** These are not official student achievement indicators, CLOs or achievement standards. They are concepts derived from government policy and planning material. The implementation plan's actions and milestones are government implementation tasks, not student outcomes.
+- **Suggested subjects:** Elementary Science; Basic Science; Mathematics; Social Science; Technology; Healthy Living; Agriculture; English; Home Economics; Commercial Studies.
+- **Level:** LEVEL_NOT_SPECIFIED; age and prerequisite allocation requires approved Fiji curriculum mapping.
+
+### Source A — National Water Resources Management and Sanitation Policy 2026
+
+- **Issuer:** Government of Fiji, Department of Water and Sewerage, Ministry of Public Works, Meteorological Services and Transport.
+- **Document:** 55 pages; official document library PDF.
+- **URL:** https://library-fiji-dws.akvo.org/documents/national-water-resources-management-and-sanitation-policy-2026.pdf
+- **Inspected sections:** Definitions pp. 7–8; background, objectives and principles pp. 9–17; water services pp. 18–27; water resources information pp. 28–30; water resources planning pp. 30–32; watershed management pp. 32–35; water quality pp. 45–46; implementation/monitoring/evaluation pp. 52–53.
+- **Source-specific facts:** Policy defines water services, surface water, groundwater, aquifer, water source, safe water, sanitation, IWRM and rainwater harvesting. It distinguishes water services from water resources; assigns surface-water/hydrological information responsibilities to FMS and groundwater monitoring/assessment responsibilities to MRD; describes GEDSI and environmental/social safeguards; and sets a ten-year implementation period with annual progress reporting.
+- **Classification:** FIJI_OFFICIAL_NATIONAL_POLICY_2026; CURRENT_POLICY_DOCUMENT; NOT_A_CURRICULUM_SYLLABUS.
+
+### Source B — NWRMSP Implementation Plan 2026–2035
+
+- **Issuer:** Government of Fiji, Department of Water and Sewerage.
+- **Document:** 16 pages; official document library PDF.
+- **URL:** https://library-fiji-dws.akvo.org/documents/nwrmsp-implementation-plan-2026-2035.pdf
+- **Inspected sections:** Implementation schedule, pp. 4–11, including urban/rural services, Water Committees, rural water/sanitation, water-quality monitoring, surface-water and groundwater data, groundwater management legislation and surface-water allocation.
+- **Source-specific facts:** The plan sets out agency actions, completion dates, resources and dependencies. It includes rural water committees, women’s representation on committees, a National Drinking Water Quality Committee, water-quality databases, streamflow data upgrades, groundwater data upgrades, proposed groundwater legislation and allocation frameworks.
+- **Limitations:** Dates and actions are planned milestones, not proof that an item has been completed. The plan uses proposed legislation and prospective institutional arrangements; check implementation status before making current legal claims.
+- **Classification:** FIJI_OFFICIAL_IMPLEMENTATION_PLAN_2026_2035; SCHEDULED_ACTIONS_NOT_COMPLETION_EVIDENCE.
+
+### Source C — Fiji Integrated Water Resources Management Plan 2026
+
+- **Issuer:** Government of Fiji, Department of Water and Sewerage.
+- **Document:** 102 pages; official document library PDF.
+- **URL:** https://library-fiji-dws.akvo.org/documents/fiji-integrated-water-resources-management-plan-2026.pdf
+- **Inspected sections:** Water-quality information and monitoring pp. 22–26; data exchange/access pp. 26–27; groundwater allocation pp. 39–40; integrated flood-risk management pp. 43–55; drought planning pp. 68–74; watershed management pp. 66–88.
+- **Source-specific facts:** Plan describes nine priority programmes; ambient water quality; water-data coordination; groundwater baseline and quality monitoring; groundwater allocation and drilling regulation proposals; integrated flood-risk management; drought monitoring/early warning; and watershed planning/implementation.
+- **Limitations:** The plan contains proposed programmes and legislation. Statements describing future actions must not be presented as enacted laws, completed monitoring programmes or present operational capabilities.
+- **Classification:** FIJI_OFFICIAL_IWRM_PLAN_2026; IMPLEMENTATION_FRAMEWORK; PROPOSED_ACTIONS_STATUS_CHECK_REQUIRED.
+
+### PacEdu-derived concepts
+
+1. **Water services and water resources** — distinguish services that deliver water and sanitation from the natural water resources being managed. Evidence: learner sorts examples into service or resource categories.
+2. **Surface-water examples** — identify rivers, streams, lakes, lagoons and reservoirs as surface-water examples in the policy glossary. Evidence: learner labels a diagram.
+3. **Groundwater definition** — describe groundwater as water beneath the ground surface in soil pore spaces and rock fractures. Evidence: learner identifies the groundwater zone in a cross-section.
+4. **Aquifer definition** — explain an aquifer as an underground formation that stores and transmits groundwater. Evidence: learner distinguishes aquifer, water table and borehole in a supplied diagram.
+5. **Water-source concept** — explain that a water source can be surface water or groundwater used for a beneficial purpose. Evidence: learner identifies the source in a fictional supply chain.
+6. **Rainwater harvesting** — explain the collection and storage of rainwater for later use. Evidence: learner sequences roof, gutter, first-flush/diversion concept, storage and use in a schematic; no construction or drinking-water certification.
+7. **Water reticulation** — describe the network of pipes, pumps and service reservoirs that delivers treated water to users. Evidence: learner labels a simplified reticulation diagram.
+8. **Sanitation and wastewater** — distinguish sanitation services from drinking-water supply and explain the safe management of human waste and domestic wastewater at a conceptual level. Evidence: learner traces a fictional sanitation pathway.
+9. **Safe-water standard concept** — understand that safe drinking water is defined by compliance with the applicable drinking-water quality standard, not appearance or taste. Evidence: learner explains why clear water cannot be certified safe by sight.
+10. **Integrated Water Resources Management** — describe IWRM as coordinated management of water, land and related resources with equity and sustainability considerations. Evidence: learner maps interactions across a catchment.
+11. **Water-demand drivers** — identify population, industry, commerce, tourism, agriculture and household infrastructure as factors that can affect demand. Evidence: learner compares fictional demand scenarios.
+12. **Water quantity and quality** — distinguish availability/volume from water-quality condition; explain why both matter in water planning. Evidence: learner analyses a two-variable scenario.
+13. **Surface-water and groundwater data roles** — identify the policy's assigned agency roles: FMS for surface-water/hydrological information and MRD for groundwater information. Evidence: learner matches an information task to the stated agency in a source-based card.
+14. **Data integration and coordination** — explain why separately managed surface-water and groundwater datasets may need coordinated use. Evidence: learner links two dataset cards to a common planning question.
+15. **Data quality assurance** — identify validation, completeness, consistent methods and long-term monitoring as ways to improve reliability. Evidence: learner finds missing metadata in a fictional water record.
+16. **Confidential and sensitive information** — explain that environmental data access may need to protect confidential, commercial or sensitive information. Evidence: learner selects an appropriate public summary rather than disclosing restricted coordinates or records.
+17. **Water resources assessment** — describe assessment of water quantity, variability and quality as evidence for planning. Evidence: learner identifies the three assessment dimensions in a case study.
+18. **Water allocation concept** — understand allocation as deciding how much water may be taken, where and for which uses, subject to sustainability and governance. Evidence: learner compares a fictional allocation scenario without making legal decisions.
+19. **Domestic-use priority** — identify the policy principle that domestic water access receives priority in water management. Evidence: learner explains the principle in a fictional competing-demand case.
+20. **Water efficiency and conservation** — identify reducing wastage, reuse and efficient use as conservation approaches. Evidence: learner calculates hypothetical water savings from supplied data.
+21. **Water-system losses** — distinguish leakage and distribution losses from household consumption. Evidence: learner interprets a simplified water-balance diagram.
+22. **Point-source pollution** — explain pollution from an identifiable discharge point, such as a pipe or outfall, using policy examples. Evidence: learner identifies a point source on a fictional map.
+23. **Diffuse pollution** — explain that runoff from multiple land areas can carry pollutants into streams without one identifiable discharge point. Evidence: learner traces a fictional runoff pathway.
+24. **Sedimentation and turbidity** — explain how erosion and suspended solids can affect water clarity and aquatic habitat. Evidence: learner interprets a source-labelled diagram; no water sampling.
+25. **Agricultural runoff** — identify how nutrients, soil and agricultural chemicals may move from land into waterways. Evidence: learner builds a cause-pathway-impact sequence using a fictional farm landscape.
+26. **Wastewater and receiving waters** — explain why wastewater discharge quality and receiving-water conditions are monitored. Evidence: learner labels a treatment/discharge monitoring diagram.
+27. **Ambient water quality** — distinguish the natural condition of rivers, streams and groundwater from treated drinking-water quality at a supply point. Evidence: learner sorts dataset descriptions by type.
+28. **Water-quality parameters** — identify the IWRM Plan's listed ambient parameters: dissolved oxygen, electrical conductivity, nitrogen/nitrate, phosphorus and pH. Evidence: learner matches parameter names to teacher-provided descriptions; no student testing or interpretation as health certification.
+29. **Monitoring programme design** — explain why representative sites, consistent sampling methods, repeated measurements and laboratory analysis are important to a monitoring programme. Evidence: learner critiques a fictional sampling design.
+30. **Water-quality database** — describe why monitoring records from multiple agencies may need coordinated databases and common data practices. Evidence: learner identifies duplicate or missing fields in a fictional table.
+31. **Groundwater allocation and abstraction** — understand that sustainable groundwater planning considers aquifer capacity, water balance, use and environmental needs. Evidence: learner interprets a conceptual aquifer-balance diagram; no permit or extraction decisions.
+32. **Groundwater drilling standards** — recognise that bore construction standards and technical oversight are intended to reduce failure and contamination risks. Evidence: learner identifies why a poorly sealed bore can create a pathway for contamination.
+33. **Conjunctive water use** — explain the planning concept of using groundwater alongside surface water or rainwater where appropriate. Evidence: learner compares two fictional supply strategies.
+34. **Integrated flood-risk management** — explain that flood risk management considers the whole catchment, land use, people, infrastructure, ecosystems and flood measures. Evidence: learner annotates a fictional floodplain map.
+35. **Floodplain and exposure** — identify floodplains as low-lying land beside river channels and distinguish flood hazard from people/assets exposed to it. Evidence: learner labels a floodplain diagram and identifies exposed assets.
+36. **Flood maps and uncertainty** — explain that flood maps are based on studies and assumptions and must be interpreted with source, date, scale and official guidance. Evidence: learner identifies missing map metadata; never makes personal evacuation decisions.
+37. **Drought monitoring and triggers** — explain why drought planning may include status monitoring, warning criteria, response arrangements and location-based plans. Evidence: learner orders a fictional warning-planning sequence.
+38. **Watershed planning and implementation** — distinguish investigation and planning from the ongoing implementation and monitoring of catchment measures. Evidence: learner sequences the plan-making and management phases.
+39. **Community participation and mutual obligations** — understand that watershed planning involves government, communities and stakeholders, with voluntary agreement, consultation and shared responsibilities described in the policy. Evidence: learner identifies inclusive consultation steps in a fictional case.
+40. **GEDSI and accessible water services** — explain why water and sanitation planning should consider gender equality, disability access, remote communities and participation in decisions. Evidence: learner identifies accessibility barriers in a fictional facility plan and proposes inclusive design considerations.
+
+### Policy and plan status distinctions
+
+- The policy's objectives and principles are policy directions; they are not proof that every service is already universally available or that every proposed regulatory framework is operational.
+- The Implementation Plan schedule includes future and ongoing activities. A target year, named responsible agency or budget line does not prove completion.
+- The IWRM Plan discusses proposed groundwater allocation and a Groundwater Management Act. Do not tell learners that a proposed Act is already in force. Verify enacted law and commencement notices separately before legal instruction.
+- The policy's proposed and planned water monitoring systems should not be confused with a fully operating nationwide monitoring network. Distinguish existing monitoring, identified gaps, planned improvements and target outcomes.
+- Policy references to water-quality sampling and possible community/school monitoring do not authorise PacEdu to direct learners to collect samples, test natural waters or certify safety.
+
+### Safeguards, rights and curriculum mapping
+
+- All 40 entries are **PACEDU_DERIVED_CONCEPT**, not official Fiji student achievement indicators, CLOs or achievement standards.
+- No learner sampling, handling wastewater, entering waterways, operating bores, drilling, adjusting water infrastructure, or making water allocation, permit, flood warning or drought response decisions.
+- Use teacher-provided extracts, fictional data, licensed images and original diagrams. Do not disclose confidential water records, sensitive groundwater locations, private bore coordinates, customary knowledge or vulnerable infrastructure locations.
+- No learner water-safety certification, testing or tasting. Current drinking-water advice remains with responsible authorities and qualified laboratories.
+- The official PDFs are accessible through the document library, but no blanket open licence was confirmed during this review. Review copyright and reproduction permissions before copying substantial text, tables, maps or graphics into PacEdu.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: complete approved Fiji NCF and CAS indicator mapping; assign age/level/prerequisites; verify implementation status and any later policy/legislative updates; review rights; approve teacher-facing source extracts; complete teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
