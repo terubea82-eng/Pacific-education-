@@ -635,3 +635,13 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **PacEdu action:** retain the source distinction. Do not infer that the revised resource replaces the whole subject or that every activity is a mandatory achievement indicator. Obtain the current controlled Social Science prescription, Ministry/CAS implementation circular, and actual revised workbook/Teacher Guide with edition/version and effective date. Map exact CLOs/indicators only after those are verified.
 - **Rights and accessibility:** no open reuse licence was identified. Copying/adaptation remains `BLOCKED_RIGHTS_REVIEW`. FEO launch remarks described audiobook and Braille versions as planned; delivery remains unverified. The website accessibility toolbar does not establish that the workbook files are accessible.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; no indicator activated and no worksheet generated.
+
+
+## Record 52 — Cabinet endorsement to review the Fiji National Curriculum Framework 2013 (7 October 2025)
+
+- **Official source:** Fiji Government, *14th Cabinet Meeting Decisions – 7 October 2025*, https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/ . Cabinet endorsed a review of the 2013 Fiji National Curriculum Framework (FNCF) and established a taskforce for initial planning. The stated review aims include keeping education effective, relevant and inclusive; meeting learning expectations; benchmarking internationally; improving monitoring, evaluation and assessment; integrating technology; and strengthening curriculum responsiveness.
+- **Evidence classification:** official government policy/process decision about a framework review. It is not a completed revised framework, syllabus, subject prescription, achievement indicator, or approval to replace current prescriptions.
+- **PacEdu consequence:** retain the existing controlled prescription as the operational source unless and until the Ministry formally issues and identifies a superseding document with an effective date. Do not pre-empt the taskforce or convert Cabinet's broad review aims into learner indicators or daily worksheet outcomes.
+- **Monitoring fields:** seek taskforce terms of reference, consultation papers, draft framework, Cabinet approval of any final framework, Ministry/CAS implementation circulars, subject syllabi and transition dates. Record publication/version and effective date for every superseding instrument.
+- **Classification:** `OFFICIAL_CURRICULUM_REVIEW_DECISION`; not a prescription.
+- **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; no indicator activated.
