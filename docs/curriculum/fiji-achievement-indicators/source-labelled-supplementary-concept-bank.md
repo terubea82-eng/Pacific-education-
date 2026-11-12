@@ -4069,3 +4069,99 @@ All concepts below are PACEDU_DERIVED_CONCEPT unless explicitly identified as co
 - Do not reproduce copyrighted article text, photographs, figures or maps beyond permitted quotation. Create original diagrams and use licensed media.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: retrieve the final Fiji State of Environment Report 2026 and freshwater data; verify current species inventory and taxonomy with authoritative Fiji sources; check rights; map to approved Fiji NCF and official achievement indicators; assign level/prerequisites; complete teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 161 — Fiji freshwater biodiversity, river catchments, wetlands and aquatic ecosystem connectivity
+
+- **Record status:** ADDED; source review completed for the cited sections; full current national inventory and final 2026 State of the Environment report remain pending.
+- **Record type:** FIJI_PRIMARY_TEXT_CONCEPT / PACEDU_DERIVED_CONCEPT / SUPPLEMENTARY_CONTEXT_ONLY.
+- **Concept count:** 32.
+- **Official indicator status:** None of the 32 entries below is represented as an official student achievement indicator, CLO or achievement standard. They are derived learning concepts based on Fiji research and national assessment material.
+- **Suggested subjects:** Elementary Science; Basic Science; Social Science; Mathematics; Agriculture; Technology; English.
+- **Level:** LEVEL_NOT_SPECIFIED. Age/level allocation and prerequisites must be mapped against approved Fiji curriculum documents before use.
+
+### Source A — Rapid Resource Assessment Report of the Waimanu River Catchment, Fiji (December 2021)
+
+- **Authors/preparer:** Conservation International.
+- **Publisher:** GEF Pacific International Waters Ridge to Reef Regional Project, Pacific Community (SPC), Suva, Fiji.
+- **Prepared for:** Ministry of Environment and Waterways.
+- **URL:** https://www.pacific-r2r.org/sites/default/files/2022-01/RapCA_FJ_01_RAPID%20RESOURCE%20ASSESSMENT%20WAIMANU%20CATCHMENT_high%20res%20%281%29.pdf
+- **Inspected sections:** pp. 8–15 (flora, birds, freshwater fish, benthic macroinvertebrates and aquatic flora); pp. 17–19 (ecosystem services, Freshwater Health Index, governance); pp. 22–25 (invasive species, development, natural hazards, policy gaps and conclusions).
+- **Rights:** SPC copyright 2021. Partial reproduction/translation permitted for scientific, educational or research purposes with acknowledgement; whole-document reproduction/translation requires written permission. Original SPC artwork must not be altered or separately published without permission.
+- **Limitations:** A rapid catchment assessment, not a complete national freshwater inventory. Some observations are survey records, estimates or inferred likelihoods; the report explicitly notes gaps in catchment invasive-species surveys and insufficient data for parts of the freshwater ecosystem vitality assessment.
+- **Classification:** FIJI_CATCHMENT_ASSESSMENT; HISTORICAL_BASELINE; SPC_PARTIAL_EDUCATIONAL_REUSE_TERMS; CURRENT_STATUS_CHECK_REQUIRED.
+
+### Source B — Fiji National Biodiversity Threat Assessment: Ranking Major Threats Impacting Fiji’s Biodiversity
+
+- **Authors:** Mark O’Brien, Nunia Moko, Dick Watling, Melania Segaidina and Clare Morrison.
+- **Project context:** BIODEV2030 / IUCN programme; report acknowledges Ministry of Environment and Ministry of Forestry feedback.
+- **URL:** https://www.biodev2030.org/wp-content/uploads/sites/2/2021/11/FIJI-Final-Report-on-National-Biodiversity-Threat-Assessment_BIODEV-2030.pdf
+- **Inspected sections:** Executive Summary and contents; freshwater realm in the biodiversity status/trends section; threats and limitations sections.
+- **Key limitation:** The report identifies gaps in species lists, marine representation and geographic threat data. Findings are an assessment snapshot, not a current official species census or a set of school curriculum outcomes.
+- **Classification:** FIJI_NATIONAL_THREAT_ASSESSMENT; HISTORICAL_RESEARCH; CURRENT_DATA_CHECK_REQUIRED; RIGHTS_REVIEW_REQUIRED.
+
+### Source C — Fiji’s State of the Environment Report 2026 (Ministry of Environment and Climate Change update, 16 September 2026)
+
+- **Issuer:** Fiji Ministry of Environment and Climate Change.
+- **URL:** https://mecc.gov.fj/fijis-state-of-the-environment-report/
+- **Inspected content:** Ministry reports a national validation workshop on 3 September 2026; the report is still being validated and is not yet described as final or publicly disseminated. The Ministry states that datasets, environmental indicators, trends, limitations and evidence gaps are being checked and that validation does not mean every dataset is automatically accepted.
+- **Classification:** OFFICIAL_CURRENT_PROCESS_UPDATE; FINAL_REPORT_PENDING. Do not treat the draft findings as final or cite unpublished figures as settled facts.
+
+### PacEdu-derived concepts from Source A
+
+1. **Freshwater ecosystem types** — distinguish rivers, creeks, streams, springs, lakes, ponds, dams and freshwater wetlands. Evidence: learner classifies supplied ecosystem descriptions.
+2. **Catchment concept** — explain how rainfall and land shape direct water into a connected drainage area. Evidence: learner labels a simplified catchment diagram.
+3. **River source-to-mouth sequence** — identify headwaters, upper, middle and lower reaches and the river mouth. Evidence: learner orders a river profile and labels the reaches.
+4. **Freshwater-to-marine connectivity** — explain that some Fiji aquatic species use both freshwater and marine environments during their life cycles. Evidence: learner traces a supplied migration diagram.
+5. **Diadromous life histories** — interpret the general idea of migration between fresh and salt water without assuming all fish share the same pattern. Evidence: learner distinguishes a diadromous life-cycle diagram from a freshwater-resident one.
+6. **Native, endemic and introduced freshwater species** — distinguish the three terms when reading a species record. Evidence: learner correctly categorises fictional or source-labelled examples.
+7. **Freshwater fish diversity** — recognise that Fiji rivers contain multiple fish families and ecological groups; avoid treating an old total as a current inventory. Evidence: learner interprets a dated summary and notes its date.
+8. **Goby and gudgeon groups** — use supplied Fiji examples to understand that common group names can represent diverse species. Evidence: learner matches common/group names to a supplied classification card.
+9. **Freshwater eel diversity** — recognise that more than one eel species may occur and that reported distributions can vary along a catchment. Evidence: learner reads a source-labelled distribution diagram.
+10. **Benthic macroinvertebrates** — define bottom-dwelling aquatic invertebrates and identify their place in a freshwater food web. Evidence: learner classifies illustrated organisms without collecting them.
+11. **Freshwater indicator organisms** — understand that the presence and composition of aquatic organisms can contribute evidence about ecosystem condition, while requiring suitable sampling and interpretation. Evidence: learner explains what a fictional indicator table can and cannot show.
+12. **Endemic freshwater invertebrates** — recognise that Fiji has freshwater invertebrate groups reported as endemic, including damselflies and spring snails. Evidence: learner identifies an endemic example from an authorised source card.
+13. **Aquatic vegetation** — identify aquatic plants as part of freshwater habitat and ecosystem function. Evidence: learner labels a simplified aquatic habitat diagram.
+14. **Riparian vegetation** — explain the role of vegetation beside rivers in stabilising banks and supporting habitat. Evidence: learner compares two supplied riverbank diagrams.
+15. **Riverbank erosion and sediment** — describe how disturbed riverbanks and soil movement can increase sediment entering waterways. Evidence: learner sequences a cause-and-effect diagram.
+16. **Water quality and aquatic life** — explain that water quality conditions influence aquatic organisms and habitat suitability. Evidence: learner interprets a fictional water-quality scenario without declaring water safe to drink.
+17. **Natural flow and aquatic habitat** — recognise that changes to river flow can alter habitat conditions. Evidence: learner compares two supplied flow diagrams.
+18. **Barriers to aquatic migration** — identify dams, weirs and poorly designed culverts as potential barriers for migratory aquatic organisms. Evidence: learner marks a barrier on a fictional river-connectivity map.
+19. **Invasive aquatic organisms** — identify introduced species such as tilapia and water hyacinth as examples discussed in the Waimanu assessment, while checking current distribution before making present-day claims. Evidence: learner separates source-dated records from verified current observations.
+20. **Forest cover and freshwater biodiversity** — explain the relationship between catchment forest condition, river habitat and aquatic biodiversity. Evidence: learner interprets a simplified forested-versus-cleared catchment comparison.
+21. **Land-use pressures** — identify logging, agriculture expansion, road construction, mining or development as potential pressures on catchments when supported by a source. Evidence: learner matches a pressure to a plausible pathway.
+22. **Pollution and freshwater ecosystems** — explain how pollutants entering waterways can affect aquatic habitats and people. Evidence: learner traces a fictional land-to-stream pollution pathway.
+23. **Eutrophication and nutrient enrichment** — describe how excess nutrients can contribute to ecological changes in freshwater systems. Evidence: learner orders a simple cause-and-effect sequence; no field chemical handling.
+24. **Freshwater ecosystem services** — identify provisioning, regulating and cultural benefits that freshwater ecosystems may provide. Evidence: learner sorts examples into a supplied ecosystem-services framework.
+25. **Freshwater Health Index concept** — understand that the FHI brings ecosystem vitality, ecosystem services, and governance/stakeholder dimensions together. Evidence: learner identifies the three dimensions in a diagram; does not calculate an official FHI score.
+26. **Environmental indicators and data sufficiency** — recognise that an indicator requires defined measures and adequate evidence; missing data must be reported rather than guessed. Evidence: learner identifies a missing-data warning in a fictional assessment.
+27. **Catchment governance and stakeholders** — identify that catchment management involves communities, landowners, government agencies and technical partners. Evidence: learner maps roles in a fictional planning case.
+28. **Integrated catchment management** — explain why decisions about forests, farms, roads, rivers and coastal waters need to be considered together. Evidence: learner connects upstream and downstream impacts in a systems diagram.
+29. **Community knowledge and consultation** — recognise the importance of local knowledge and consultation in environmental planning, without publishing confidential customary information. Evidence: learner identifies respectful consultation steps in a fictional scenario.
+30. **Conservation priorities and trade-offs** — compare options for protecting habitat, water supply and livelihoods using supplied evidence rather than unsupported assumptions. Evidence: learner gives a reasoned comparison using a source-labelled data card.
+31. **Research uncertainty and survey limitations** — distinguish confirmed observations, estimates, likely presence and unassessed areas. Evidence: learner labels each statement with the correct evidence status.
+32. **Environmental reporting and validation** — explain why environmental datasets and indicators are checked before a national report is finalised. Evidence: learner orders a simplified data-validation process and identifies unresolved evidence.
+
+### Source B derived concept reinforcement
+
+- **Biodiversity threat pathways:** compare habitat loss/fragmentation, invasive species and biological resource use as broad threat categories identified by the national assessment; do not imply the relative ranking is current without a newer assessment.
+- **Evidence-based threat assessment:** distinguish literature review, mapped metrics and expert elicitation as different evidence inputs.
+- **Assessment limitations:** explain why incomplete species lists, weak geographic coverage and under-represented ecosystems affect confidence in conclusions.
+- **Sector links:** analyse how agriculture, forestry, fisheries, transport and coastal development may influence biodiversity through different pathways.
+
+These reinforcement concepts are supplementary to the 32 numbered entries and are not official achievement indicators.
+
+### Safeguards, rights and curriculum mapping
+
+- All 32 numbered entries and the Source B reinforcements are **PACEDU_DERIVED_CONCEPT**, not official Fiji achievement indicators, CLOs or achievement standards.
+- The 2021 Waimanu assessment is a catchment-specific rapid assessment. Do not generalise its observations or estimates to every Fiji river or claim they represent current national distributions.
+- Historical national species totals from the threat assessment must be date-labelled and not presented as current without an updated authoritative inventory.
+- The 2026 State of the Environment report was still undergoing validation in the Ministry update inspected. Do not describe it as final or use draft/unpublished data as settled classroom facts.
+- Do not direct learners to collect fish, eels, frogs, invertebrates, plants or water samples; enter rivers, wetlands, dams or catchments; handle wildlife; or conduct water-quality certification. Use licensed media, teacher-provided datasets and fictional data.
+- No tasting or drinking of water from natural sources. No chemical reagents, electrical equipment, river crossings, wading, boats or unsupervised field activity.
+- Do not disclose sensitive species locations, private land information or customary resource knowledge. Any field activity requires landowner/community permission, a risk assessment, trained supervision and accessible alternatives.
+- Attribute SPC material correctly. Its stated partial educational-reuse permission does not permit copying the whole report, altering SPC artwork or separately publishing original figures. Obtain permission for substantial reproduction and review rights for all other sources.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: current Fiji freshwater species inventory and threatened-status check; final 2026 State of the Environment report when released; source rights review; approved Fiji NCF/official indicator mapping; level/prerequisite assignment; teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
