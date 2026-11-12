@@ -2151,3 +2151,65 @@ The following preserves each source CLO code and records a concise paraphrase of
 - Lineage: broad continuity candidates only; no item-level links verified.
 - Rights: secondary paper/bibliography used for research and source discovery; do not reproduce Link books or prescription content until rights and controlled-copy status are checked.
 - No current prescription activation; no daily worksheet authorised; CAS contact remains DEFERRED_UNTIL_PILOT.
+
+
+## Record 137 — Fiji Ministry Years 10 English Syllabus (2014): Year 10 CLOs and achievement-indicator concepts extracted
+
+### Source identity and status
+
+- **Source:** *English Syllabi Years 9 & 10*, Ministry of Education, Curriculum Development Unit, Fiji, 2014.
+- **Inspected copy:** https://theseeproject.org/wp-content/uploads/2015/05/l2_year910_english_syllabi.pdf
+- **Printed pages inspected:** pp.28–40 (PDF lines 829–1395).
+- **Authority and copyright:** Title page identifies Ministry/CDU; Ministry copyright 2014. Classroom reproduction permitted with CDU acknowledgement; other use must be referred to Permanent Secretary through Director CAS. PacEdu adaptation/reproduction remains BLOCKED_RIGHTS_REVIEW.
+- **Status:** HISTORICAL_OFFICIAL_PRESCRIPTION_SOURCE; PRESCRIPTION_CONTENT_EXTRACTED; CURRENT_STATUS_UNCONFIRMED. This is the same 2014 syllabus as Record 135, not a separate edition.
+- **Scope:** Year 10 English only. Keep separate from Year 9 (Record 135).
+
+### Year 10 coded CLOs and extracted indicator concepts
+
+The actions below are concise paraphrases of the source's achievement-indicator column. Scope examples are kept separate and are not themselves indicators.
+
+**Strand 1 — Listening and Speaking (printed pp.28–32)**
+
+1. **EN.10.1.1.1 — Media text:** examine media texts; determine tone, purpose, audience, context and jargon; compare features and synthesise meaning. Scope examples: audio/audio-visual texts, TV broadcasts, panel discussions, interviews, YouTube essay-writing videos, movies and mobile phones. Concepts: media listening; critical comparison; register/jargon; audience and purpose.
+2. **EN.10.1.1.2 — Everyday communication:** discuss everyday communication; analyse purpose, audience and context; apply effective communication in formal and informal speech. Scope: partner/group work, instructions, procedures, questioning, interviews, church gatherings, dialogue, singing, prayer, oral presentations, recitals, vote of thanks, farewell speech, text messages, email/Skype, voice messages, radio and telephone. Concepts: conversational fluency; formal/informal register; practical oral interaction; digital communication.
+3. **EN.10.1.1.3 — Literary text:** plan, research and present oral work; listen attentively; examine literary texts and identify purpose, audience and context; compare fiction and non-fiction characteristics. Scope: storybooks, magazines, articles. Concepts: literary listening; oral research/presentation; genre comparison.
+4. **EN.10.1.2.1 — Grammar and persuasion:** identify parts of speech and their functions; apply persuasive techniques in oral and written activities; identify characters, setting, plot and relate themes (the source table carries the final clause across a page break). Scope: nouns, adjectives, verbs, adverbs, pronouns, prepositions, subject–verb agreement, tenses, articles, connectives, word order and word forms. Concepts: grammar in context; persuasion; narrative elements.
+5. **EN.10.1.2.2 — Sentence and language concepts:** study sentence types and their functions; apply language concepts orally and in writing to create meaning and engage an audience. Scope: simple, compound, complex and compound-complex sentences; idioms; figures/features of speech; jargon; emotive vocabulary. Concepts: sentence variety; rhetorical language; audience engagement.
+6. **EN.10.1.3.1 — Social oral communication:** explore oral communication for social purposes; choose and discuss an oral genre and identify its context. Scope: oral registers, talanoa, family gatherings, village functions, New Year/Christmas celebrations and intercultural gatherings. Concepts: social register; oral genres; cultural context.
+7. **Code ambiguity — oral genres and strategies:** the printed table at pp.31–32 labels a row EN.10.1.4.1 for analysing oral genres/register in formal and informal contexts, then repeats EN.10.1.4.1 for selecting strategies to make sense of creative text. Do not silently correct or merge these. Store both rows with SOURCE_CODE_AMBIGUOUS pending controlled-copy verification. Their indicator actions concern (a) addresser/addressee relationship and cultural norms; (b) describing oral genres and registers, analysing purpose/audience/context, and evaluating values/attitudes. Scope includes oral history, speeches, conferences, debates, impromptu speaking, critique, group/interpersonal communication, self-talk/soliloquy, novels, short stories, poems, drama, fiction and non-fiction.
+8. **EN.10.1.4.2 — Oral-language strategies:** describe and dramatise oral-language learning processes/strategies; identify and evaluate appropriate strategies. Scope: recounting, storytelling, responding to instructions, giving opinions, replying to requests, asking questions and following instructions. Concepts: oral-language strategy selection; retelling; questioning; instruction-following.
+
+**Strand 2 — Reading and Viewing (printed pp.33–37)**
+
+9. **EN.10.2.1.1 — Media texts:** examine media texts and assess purpose/audience/context; analyse meaning, themes and values; read for pleasure and information. Scope: print/visual texts, newspapers, magazines, newsletters, billboards, posters, documentaries and career articles. Concepts: critical media reading; theme/value interpretation; informational and recreational reading.
+10. **EN.10.2.1.2 — Everyday communication:** analyse everyday transactions for purpose/audience/context; dramatise appropriate everyday communication; investigate and describe accounting concepts used in accounting processes (source wording). Scope: classroom instructions, bus conversations, doctor visits and telephone calls. Concepts: functional reading; transaction literacy; role-play; accounting vocabulary in context.
+11. **EN.10.2.1.3 — Literary texts:** examine language conventions and explain how they contribute to text meaning and context. Scope: fiction/non-fiction, library books, dictionaries, movies, documentaries, news, articles, passages, summaries and magazines. Concepts: literary comprehension; language conventions; meaning/context.
+12. **EN.10.2.2.1 — Figurative/literary features:** explore figurative language in print/visual texts and discuss author intention; evaluate text content/context; connect texts to personal experience. Scope: figures of speech, emotive vocabulary, idioms, slang and jargon. Concepts: figurative language; authorial purpose; context; reader response.
+13. **EN.10.2.2.2 — Language conventions:** analyse parts of speech in genres and apply them in reading/writing. Scope: parts of speech, sentence structure, grammar/mechanics, pronouns, prepositions, past/present/future time, direct/reported speech and question tags. Concepts: grammar in genres; mechanics; tense; reported speech; question forms.
+14. **EN.10.2.2.3 — Text, audience and purpose:** critically examine the relationship between text, audience and purpose; evaluate mass-media functions and compare features. Scope: mass media, fiction/non-fiction, documentaries, newspaper articles and appropriate print/visual/religious texts. Concepts: media purpose; audience; genre comparison; critical literacy.
+15. **EN.10.2.3.1 — Media and audience:** assess how media text types relate to purpose/audience and create an appropriate media text. Scope: print, visual, audio and multimedia. Concepts: media roles; audience design; multimodal literacy.
+16. **EN.10.2.4.1 — Literature as integrated reading:** examine literary genres and use an appropriate integrated approach to support reading. Scope: short stories, novels, poems and drama. Concepts: genre selection; integrated reading; literary interpretation.
+
+**Strand 3 — Writing and Shaping (printed pp.38–40)**
+
+17. **EN.10.3.1.1 — Purposeful writing:** examine written materials for purpose/context; write appropriate text types using their features; compare and contrast published writing. Scope: paragraphs, expository essays, narratives, descriptions, personal letters, letters to editor and business letters. Concepts: purpose-driven writing; genre conventions; comparison.
+18. **EN.10.3.1.2 — Writing plans:** examine/use planning strategies; use varied sentence types and sequence ideas with examples. Scope: application letters, emails, literature essays, diaries, conversation, newsletters and stories. Concepts: planning; sequencing; sentence variety; supporting examples.
+19. **EN.10.3.2.1 — Media conventions:** examine and use media conventions/techniques in writing; compare and contrast texts. Scope: print media, letters to editor, formal writing, reports, book reviews, journals, diary entries and articles. Concepts: media conventions; formal writing; report/review/journal genres.
+20. **EN.10.3.2.2 — Precision and elaboration:** elaborate ideas with precise/effective language; use figurative language and emotion in different writing styles. Scope: recount, descriptive and imaginative writing. Concepts: elaboration; precision; figurative language; expressive style.
+21. **EN.10.3.3.1 — Context and purpose:** explore reasons for writing in varied situations and use appropriate techniques/styles; study and integrate writing processes and strategies. Scope: invitations, enquiries, letters of thanks and refusals. Concepts: functional writing; audience/context; writing process.
+22. **EN.10.3.4.1 — Language varieties:** examine features of language varieties, compare similarities/differences and evaluate context. Scope: conversation, sports commentary, religion, science and research. Concepts: register; language variation; domain-specific language; contextual analysis.
+
+### Source-quality and lineage notes
+
+- The printed table contains apparent structural/code anomalies: EN.10.1.4.1 appears twice with different descriptions; one strand/sub-strand heading appears inconsistent with the row content; some indicator text crosses page breaks. Preserve source codes exactly as printed and flag ambiguity rather than silently repairing it.
+- The syllabus says the 2014 Years 9–10 concepts, skills and attitudes were selected from older prescriptions, but does not name the editions or map specific predecessor statements (printed p.3; see Record 135 and Record 136).
+- Record 136 supplies only broad historical evidence that a Forms I–IV prescription existed and that Link 3/4 were Ministry-prescribed texts. No exact older indicator match has been verified for any Year 10 entry.
+- All 22 Year 10 entries retain LINEAGE_NOT_YET_FOUND at item level. The source's general claim of older-source influence is not item-level lineage evidence.
+- The 2024 Revised Secondary English Curriculum Teacher Guide is a later lead, but no exact crosswalk from these 2014 Year 10 CLOs/indicators to 2024 Achievement Standards/CLOs has yet been established.
+
+### PacEdu handling
+
+- Store each Year 10 CLO and its indicator actions as an independently traceable entry, preserving the printed code, strand, sub-strand, page and separate scope examples.
+- Status: HISTORICAL_OFFICIAL_PRESCRIPTION_SOURCE; PRESCRIPTION_CONTENT_EXTRACTED; CURRENT_STATUS_UNCONFIRMED; LINEAGE_NOT_YET_FOUND; BLOCKED_RIGHTS_REVIEW.
+- Keep ambiguous code rows flagged SOURCE_CODE_AMBIGUOUS until a controlled source resolves them.
+- No current mandatory worksheet authorised. No CAS contact now; CAS contact remains DEFERRED_UNTIL_PILOT.
