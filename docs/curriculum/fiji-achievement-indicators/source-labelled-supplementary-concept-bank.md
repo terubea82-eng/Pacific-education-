@@ -3257,3 +3257,105 @@ Use the current issue date and original source with every dataset; distinguish o
 - Food preparation activities require school risk assessment, food-safety controls, allergy checks and competent supervision. Do not use spoiled food, raw animal products or unsafe equipment.
 - **Worksheet gate:** NOT YET AUTHORISED. Obtain and inspect the Ministry primary PDFs; confirm the current 2024/2018 Food and Health Guidelines edition; verify the latest School Food and Canteen Policy and toolkit status with the Ministry; cross-check current Food Safety Regulations; map concepts to approved Fiji NCF and official Ministry indicators; set levels/prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 155 — Fiji crop production, farm management, soil capability and sustainable agriculture
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Agriculture; Elementary Science; Basic Science; Mathematics; Commercial Studies; Technology; Social Science; English  
+**Level:** LEVEL_NOT_SPECIFIED pending approved Fiji NCF and Ministry year-level mapping  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — Ministry of Agriculture, Crop Farmer's Guide: A Farmer's Guide to a Better Harvest (2020 edition)
+
+- **Issuer:** Ministry of Agriculture, Government of Fiji.
+- **Edition:** Updated edition 2020; preface identifies it as an update of the 2009 edition and says it includes disaster-risk/climate-change tips and common Fiji weeds.
+- **Official PDF:** https://www.agriculture.gov.fj/documents/booklets/CFG_Contents%20Final%202020.pdf
+- **Inspected locations:** preface, printed p.2; crop contents, printed p.1; Amaranthus, printed pp.1–2; Avocado, printed pp.3–4; selected crop profiles and guide structure.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_AGRICULTURAL_TECHNICAL_GUIDE; 2020 EDITION; CURRENT_VERSION_CHECK_REQUIRED.
+- **Rights note:** Ministry publication; access to the PDF does not itself grant permission for wholesale copying, adaptation or commercial redistribution. Extract concepts and cite source; do not reproduce its tables, crop text or pesticide schedules.
+
+**PacEdu-derived concepts from Source A**
+1. **Crop diversity in Fiji** — the guide profiles root crops, vegetables, cereals, pulses, fruit trees, spices and other crops; source contents, printed p.1 and preface p.2. Evidence: learner classifies familiar Fiji crops by broad crop group using teacher-approved picture cards.
+2. **Crop identification and scientific naming** — crop profiles pair common names with botanical names; source Amaranthus and Avocado profiles, printed pp.1 and 3. Evidence: learner matches selected common crop names to supplied botanical names, with spelling support.
+3. **Crop variety and selection** — profiles identify recommended varieties or local selections; source Amaranthus p.1 and Avocado p.3. Evidence: learner compares two fictional variety cards and identifies that variety selection depends on crop purpose and conditions.
+4. **Planting season and crop calendar** — crop profiles provide planting or fruiting seasons; source Amaranthus p.1 and Avocado p.3. Evidence: learner reads a fictional crop calendar and orders seasonal activities.
+5. **Seed and planting material** — crop guides describe seed rates, seedlings, nursery raising and transplanting; source Amaranthus p.1 and Avocado pp.3–4. Evidence: learner sequences a diagram of seed, seedling, nursery and transplant stages.
+6. **Germination and plant establishment** — the guide records germination timing and early crop establishment; source Amaranthus p.1. Evidence: learner records fictional daily germination observations in a table and identifies a pattern.
+7. **Plant spacing and area** — crop profiles specify row and within-row spacing; source Amaranthus p.1 and Avocado p.3. Evidence: learner calculates plant positions on a paper grid using fictional spacing values, not a real planting prescription.
+8. **Soil analysis before nutrient application** — the guide repeatedly recommends soil analysis before planting or fertiliser application; source Amaranthus p.1 and Avocado p.3. Evidence: learner explains why a soil test can inform a decision and distinguishes a test result from a guess.
+9. **Organic matter, manure and mulch** — the guide discusses poultry manure and mulch as soil-management inputs; source Amaranthus p.1 and Avocado p.3. Evidence: learner compares illustrated organic-material examples and explains the general role of mulch in protecting soil moisture.
+10. **Weed competition and crop management** — crop profiles include weed-management considerations; source crop profile format and Amaranthus p.1. Evidence: learner identifies weeds as plants growing where they are not wanted in a fictional crop bed and describes non-chemical prevention concepts.
+11. **Plant disease recognition as observation** — the guide identifies crop disease examples and discusses drainage and removal of affected plants; source Avocado p.3 and contents p.1. Evidence: learner distinguishes an observed plant symptom from a confirmed diagnosis; no disease diagnosis or treatment by learners.
+12. **Insect pests and crop damage** — the guide includes pest profiles and crop-protection sections; source crop profile format and contents p.1. Evidence: learner interprets a safe photograph showing plant damage and records observations without handling insects or applying controls.
+13. **Drainage and waterlogging** — crop profiles note the effect of drainage and prolonged waterlogging; source Avocado p.3. Evidence: learner interprets a fictional field diagram and identifies why drainage conditions matter to plant growth.
+14. **Harvest maturity and timing** — profiles include harvest timing and maturity descriptions; source Amaranthus p.1 and contents. Evidence: learner orders crop-growth stages and selects a stated harvest stage from a fictional profile.
+15. **Yield and production measurement** — crop profiles present yields and units such as tonnes per hectare; source Amaranthus p.1 and Avocado p.3. Evidence: learner reads a supplied yield table, identifies units and compares fictional values without assuming they are guaranteed.
+16. **Food value of crops** — profiles include dietary fibre, minerals and vitamins; source Amaranthus p.1 and Avocado p.3. Evidence: learner links a crop with a food-value statement from an approved nutrition source.
+17. **Staggered planting and continuous supply** — the Amaranthus profile describes staged planting and new planting after harvests; source p.1. Evidence: learner sequences a fictional staggered planting calendar and explains how timing can spread harvest periods.
+18. **Crop responses to flood and drought conditions** — the guide includes disaster-risk and climate tips for crop profiles; source preface p.2 and Amaranthus/Avocado profiles. Evidence: learner compares fictional crop-planning choices for wet and dry conditions without treating them as universal advice.
+19. **Mulch and soil-moisture conservation** — the guide links mulch or crop cover with reduced moisture loss; source Amaranthus p.1. Evidence: learner explains a diagram comparing bare and covered soil.
+20. **Crop production and food security** — the preface identifies staple crops such as dalo, cassava, yam, kumala, dalo-ni-tana, breadfruit and rice as important to household diets; source p.2. Evidence: learner explains how crop diversity can support household and community food availability using a fictional example.
+21. **Agricultural information requires extension advice** — the guide says it should be complemented by advice from Agricultural Field Officers and food specialists; source preface p.2. Evidence: learner identifies an appropriate expert source for a fictional crop-production question.
+
+### Source B — Fiji Farm Management Manual 2014
+
+- **Issuer:** Ministry of Agriculture, Government of Fiji.
+- **Edition/date:** 2014; revised manual, technical Part I, financial Part II and reference appendices.
+- **Official PDF:** https://www.agriculture.gov.fj/documents/farmmanagementmanual.pdf
+- **Inspected locations:** contents and Minister's message, printed pp.1–4; crop technical sections pp.9–77; weed and pest control pp.78–96; financial sections pp.191–302; farm budgeting pp.357–363; weights and measures pp.343–350; land-use classification pp.539–580.
+- **Status caution:** The Minister's message explicitly describes the manual as a changing document requiring review as conditions change, including commodity prices and input costs. Its crop rates, yields, prices, budgets and technical schedules are historical 2014 values and must not be presented as current recommendations.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_FARM_MANAGEMENT_MANUAL; HISTORICAL_TECHNICAL_AND_FINANCIAL_REFERENCE; CURRENT_VERSION_CHECK_REQUIRED.
+- **Rights note:** The manual states it is Ministry property and copyrighted. Extract concepts and cite; do not copy tables, reproduce pages or create derivative commercial copies without permission.
+
+**PacEdu-derived concepts from Source B**
+22. **Farming as a managed production system** — the manual organises farm resources, technical production, finance and markets; source Minister's message and foreword, printed pp.3–5. Evidence: learner draws a simple input–production–output diagram.
+23. **Farm resources: land, labour and capital** — the foreword identifies these as core agricultural resources; source p.5. Evidence: learner classifies fictional farm examples into land, labour and capital.
+24. **Crop and livestock enterprise comparison** — manual separates crop, livestock and farm expenditure/revenue sections; source contents pp.1–2. Evidence: learner compares two fictional farm enterprises using supplied data.
+25. **Farm records and performance monitoring** — the manual includes record keeping to measure performance and improve efficiency; source foreword p.5 and Part II §11, pp.291–302. Evidence: learner completes a fictional farm record with date, activity, quantity and unit.
+26. **Income, expenditure and gross margin** — the manual includes crop revenue, livestock revenue, expenditure and gross-margin analysis; source contents pp.1–2 and §§5–10, pp.191–290. Evidence: learner calculates revenue minus listed variable costs in a fictional exercise, with all values clearly labelled practice data.
+27. **Budgeting and financial planning** — farm budgeting is included as a separate tool; source Appendix 6A, pp.357–363. Evidence: learner prepares a simple fictional budget and checks totals.
+28. **Weights, measures and unit conversion** — the manual contains a weights-and-measures appendix; source Appendix 4, pp.343–350. Evidence: learner converts simple mass, area or volume units using supplied conversion facts.
+29. **Land capability and crop suitability** — the manual includes land-use classification; source Appendix 11, pp.539–580. Evidence: learner interprets a fictional land-capability map and explains that not every crop suits every site.
+30. **Market access and farm planning** — the manual links farm plans with production, marketing and project proposals; source Minister's message, pp.3–4. Evidence: learner traces a fictional product path from farm to market.
+31. **Climate and price changes affect farm decisions** — the Minister's message notes changing climate, commodity prices and input costs affect gross margins; source pp.3–4. Evidence: learner compares two fictional budget scenarios and explains how changed costs affect the result.
+32. **Farming systems analysis** — the manual includes a farming-systems development approach and standardised reporting; source foreword pp.5–6 and Appendices 2A–2B, pp.309–321. Evidence: learner identifies how several connected farm activities can be studied together.
+
+### Source C — Fiji Non-Sugar Agriculture Sector Policy 2025–2035
+
+- **Issuer:** Ministry of Agriculture and Waterways, Government of Fiji.
+- **Policy period:** 2025–2035.
+- **Official PDF:** https://www.agriculture.gov.fj/documents/Policy/FIJI%20NON-SUGAR%20AGRICULTURE%20SECTOR%20POLICY%202025-2035.pdf
+- **Inspected content:** policy outcome/indicator table, including Policy 3 Value Chains and Policy 4 Soil & Water Management; official PDF search text was available but full PDF open timed out. Detailed page-by-page verification remains pending.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_SECTOR_POLICY; CURRENT_POLICY_DIRECTION; FULL_PAGE_CROSSCHECK_PENDING.
+- **Policy concepts from inspected official table:**
+33. **Agricultural production indicators** — the policy tracks crop and livestock production volumes as measurable outcomes; source Policy 3 outcome/indicator table. Evidence: learner reads a mock production dataset and distinguishes crop volume from livestock volume.
+34. **Market linkages and value chains** — policy aims to improve market links and domestic supply to tourism/export markets; source Policy 3. Evidence: learner maps a fictional value chain from grower to buyer and identifies where value is added.
+35. **Soil and water management** — policy promotes conservation and sustainable management of land and water; source Policy 4. Evidence: learner identifies soil and water protection practices in a fictional farm scenario.
+36. **Climate-smart agriculture** — policy indicator refers to farmer knowledge and skills in sustainable resource management and climate-smart practices; source Policy 4 outcome/indicator table. Evidence: learner compares fictional production choices for changing rainfall and heat conditions.
+37. **Farmer knowledge and skills as an outcome** — the policy tracks increased farmer knowledge and skills in sustainable resource management; source Policy 4. Evidence: learner explains why training and evidence-based decisions can improve resource management.
+38. **Policy indicators, baseline and target** — the policy table uses outcomes, indicators, baselines and 2035 targets; source policy results framework. Evidence: learner distinguishes an indicator, baseline and target using a fictional non-personal example.
+
+### Source D — Fiji soil and crop evaluation / soil capability research catalogue
+
+- **Host and contributors:** Fiji Soil Information System / Manaaki Whenua Landcare Research and Fiji partners; catalogue includes Ministry of Agriculture publications and research.
+- **Scientific publications page:** https://fiji-psp.landcareresearch.co.nz/en/resources/scientific-publications
+- **Crop suitability tool:** https://fiji-psp.landcareresearch.co.nz/crop-suitability
+- **Specific source listed:** Fiji Department of Agriculture, Land Use Planning Section, Land Resource Planning & Development (2012), *Land Use Capability Classification System: A Fiji Guideline for the Classification of Land for Agriculture*, 40 pp.
+- **Other Fiji soil sources listed:** Leslie (1997), *An Introduction to the Soils of Fiji*; Leslie (2012), *A Reference Manual for Utilising and Managing the Soil Resources of Fiji*; Seru et al. (1997), *Understanding Fiji's Soils*; crop-soil fertility research and Fiji soil survey publications.
+- **Classification:** FIJI_SOIL_RESEARCH_CATALOGUE; MIXED_PRIMARY_AND_SECONDARY_RESEARCH; SOURCE_DOCUMENT_RETRIEVAL_PENDING.
+- **PacEdu-derived concepts grounded in the crop-suitability tool:** crop suitability is evaluated by comparing soil attributes and land qualities with crop requirements; the tool reports suitability classes from highly suitable to not suitable for selected Fiji crops. Evidence: learner interprets a teacher-supplied fictional suitability matrix and explains why site conditions matter.
+- **Additional concept:** soil maps and land capability classifications provide evidence for land-use planning. Evidence: learner interprets a map legend and compares two fictional sites. Do not make real land allocation or customary land recommendations.
+
+### Safety, rights, version and curriculum safeguards
+
+- The 2020 Crop Farmer's Guide and 2014 Farm Management Manual contain pesticide and herbicide products, application rates, mixing instructions and chemical schedules. These are deliberately **not** extracted as learner competencies or instructions. Learners must not handle, mix, apply, transport or recommend agricultural chemicals.
+- No learner should operate tractors, powered machinery, pumps, cutting tools, harvesting forks, sprayers or farm equipment. Avoid field activities involving steep slopes, rivers, drains, livestock, bees, unknown plants, mould, pesticides or contaminated soil.
+- Crop calendars, planting rates, spacing, fertiliser amounts, yields, pest controls and prices are crop-, site-, season- and edition-specific. Treat all numeric values from the 2014 manual and 2020 guide as historical reference values until current Ministry technical advice confirms them.
+- Do not use the 2014 manual's gross margins, prices or input costs as current market data. Any economics task must use dated, clearly labelled practice data or a current, attributable dataset.
+- Respect customary land rights, land tenure, community consent and local knowledge. Do not ask learners to disclose family land ownership, lease terms or sensitive village land information.
+- Ministry policy outcome indicators are sector performance measures, not automatically student learning indicators. All entries in this record are PacEdu-derived concepts.
+- **Worksheet gate:** NOT YET AUTHORISED. Obtain current Ministry crop and farm technical guides; confirm current status of the 2025–2035 Non-Sugar Agriculture Sector Policy and its detailed indicator pages; retrieve and inspect the Fiji Land Use Capability Classification 2012 source; map concepts to approved Fiji NCF and official Ministry indicators; set year levels/prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
