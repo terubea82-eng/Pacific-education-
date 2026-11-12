@@ -3604,3 +3604,135 @@ Use the current issue date and original source with every dataset; distinguish o
 - Fisheries surveillance and enforcement data can be sensitive. Use fictional datasets only; do not reproduce vessel identities, personal data or operational enforcement details in learner activities.
 - **Worksheet gate:** NOT YET AUTHORISED. Obtain and page-check the full Aquaculture Development Plan 2024–2028; verify Aquaculture Act commencement notice and regulations; retrieve the current consolidated Fisheries Act and relevant regulations; check current National Fisheries Policy implementation/successor status; map concepts to approved Fiji NCF and official Ministry achievement indicators; assign levels/prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 158 — Fiji mangroves, coral reefs, biodiversity, coastal resilience and marine pollution concepts
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Elementary Science; Basic Science; Social Science; Agriculture; Healthy Living; Mathematics; Technology; English  
+**Level:** LEVEL_NOT_SPECIFIED pending approved Fiji NCF and Ministry year-level mapping  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — A Mangrove Management Guideline: Community-based Management Guideline for Mangrove Rehabilitation and Restoration in Fiji (October 2022)
+
+- **Author/preparation:** Senilolia H. Tuiwawa, Conservation International Fiji Program, prepared for the Ministry of Forestry; funded through the International Tropical Timber Organization (ITTO).
+- **Partners acknowledged:** Ministry of Forestry, ITTO, Conservation International, University of the South Pacific and Pacific Community.
+- **PDF:** https://www.itto.int/files/itto_project_db_input/3081/Technical/A%20Mangrove%20Management%20Guideline-08-12-22.pdf
+- **Inspected sections:** contents and credit, printed pp.i–ii; objective and Fiji context, pp.18–22; social/economic value, pp.23–27; degradation pressures, pp.27 onward; forest types and species, pp.36–39; rehabilitation principles, pp.41–43; planning and consultation, pp.46–50; regeneration and planting stages, pp.50–60; monitoring/evaluation, pp.60–62; using the guideline, pp.64–65.
+- **Classification:** FIJI_GOVERNMENT_COMMISSIONED_TECHNICAL_GUIDELINE; COMMUNITY_BASED_MANAGEMENT; 2022 EDITION; CURRENT_POLICY_AND_LEGAL_FRAMEWORK_CHECK_REQUIRED.
+- **Rights:** The document states © 2022 Ministry of Forestry; photographs are separately owned by Conservation International Fiji and ITTO. Do not reproduce its photographs, maps, diagrams or tables without permission. Extract concepts with attribution only.
+
+**PacEdu-derived concepts from Source A**
+1. **Mangrove habitat and distribution** — the guideline describes mangroves as coastal and estuarine forest ecosystems and discusses their distribution in Fiji and Oceania; printed pp.13–18. Evidence: learner identifies mangroves as coastal/intertidal habitats on a supplied Fiji map.
+2. **Mangrove species diversity** — the guide identifies multiple mangrove species occurring in Fiji; printed pp.14 and 38–39. Evidence: learner matches selected Fiji mangrove names to teacher-approved illustrations.
+3. **Mangrove forest types** — the guide describes Rhizophora, Bruguiera and mixed forest types; printed pp.36–38. Evidence: learner compares simplified forest-profile diagrams.
+4. **Mangrove root adaptations** — the guide describes aerial/stilt roots, prop roots and pneumatophores in different mangrove groups; printed p.39. Evidence: learner labels root features on an illustration and links them to a tidal/muddy habitat.
+5. **Mangroves and tidal environments** — the guide locates mangrove systems along sheltered shorelines, deltas, bays and estuaries; printed pp.14–15. Evidence: learner distinguishes an estuary, river mouth and open-coast setting on a diagram.
+6. **Mangrove nursery habitat** — the guide describes mangrove nursery and feeding functions for fish and other fauna; printed pp.23–25. Evidence: learner traces a simple food-web or life-stage relationship between mangrove habitat and aquatic organisms.
+7. **Mangroves and coastal protection** — the guide links mangrove vegetation with reduced wave impacts, shoreline protection and reduced flooding effects; printed pp.24–26. Evidence: learner interprets a fictional shoreline cross-section showing vegetation and wave exposure.
+8. **Mangroves and carbon storage** — the guide describes carbon sequestration and climate-related value; printed p.26. Evidence: learner explains in simple terms how vegetation stores carbon as it grows, using a teacher-approved diagram.
+9. **Mangroves and community livelihoods** — the guide discusses traditional/cultural use, food security and livelihoods; printed pp.23–24. Evidence: learner identifies several ways a healthy mangrove ecosystem can support community wellbeing without disclosing family resource use.
+10. **Drivers of mangrove degradation** — the guide identifies development, infrastructure, dredging, dumping, clearing and overharvesting as pressures; printed pp.27–30 and 36–38. Evidence: learner classifies fictional pressures as habitat disturbance, pollution or resource extraction.
+11. **Land-based impacts on coastal habitats** — the guide connects catchment and development activity with impacts on mangroves and nearby coastal systems; degradation section. Evidence: learner traces a fictional pathway from land disturbance to sediment entering coastal water.
+12. **Mangrove ecology and site conditions** — the guide emphasises understanding local ecology and normal hydrology before restoration; printed pp.41–43. Evidence: learner explains why restoration choices must consider water movement and site conditions.
+13. **Natural regeneration** — the guide explains how propagules from parent trees or nearby forest can establish naturally; printed pp.42–43 and 50. Evidence: learner sequences a diagram from propagule dispersal to attachment and seedling growth.
+14. **Natural regeneration versus planting** — the guide says natural regeneration should be facilitated where conditions allow and planting may be considered where regeneration is inadequate; printed pp.42–43 and 50. Evidence: learner compares two fictional restoration scenarios and identifies why site assessment is needed first.
+15. **Propagules and seedling development** — the guide distinguishes propagules, seedlings, nursery raising and replanting; printed pp.42–43 and 54–58. Evidence: learner labels stages in a teacher-provided plant development sequence.
+16. **Restoration planning** — the guide presents planning, implementation and monitoring/evaluation as connected phases; printed pp.46–62. Evidence: learner orders the phases in a fictional conservation project.
+17. **Community consultation and informed consent** — the guide requires community involvement, consultation and informed consent for planting initiatives; printed pp.42 and 46–50. Evidence: learner identifies consent and community discussion as prerequisites in a fictional project.
+18. **Customary rights and governance** — the guide includes traditional rights ownership, traditional authorities, government agencies and stakeholders; printed pp.20–22. Evidence: learner recognises that conservation planning must respect customary rights and consult the appropriate authorities.
+19. **Land-use mapping** — the guide includes consultation-based land-use mapping to understand resources and local knowledge; printed pp.48–50. Evidence: learner interprets a fictional map legend and identifies land, water and habitat features.
+20. **Vegetation monitoring** — the guide includes vegetation assessment and monitoring templates; printed pp.60–62. Evidence: learner reads a fictional table of seedling counts and calculates a simple change over time.
+21. **Faunal monitoring** — the guide includes presence/absence assessment of fauna; printed pp.61–62. Evidence: learner interprets a fictional species-observation table and distinguishes not observed from absent.
+22. **Restoration success and adaptive management** — the guide describes monitoring as a way to identify trends and improve interventions; printed pp.60–62. Evidence: learner compares fictional monitoring results and recommends that project managers review their approach.
+
+### Source B — Fiji National Biodiversity Strategy and Action Plan 2026–2030 (NBSAP)
+
+- **Publisher:** Ministry of Environment and Climate Change, Fiji; hosted by the Fiji Environment Data Portal / SPREP.
+- **Dataset release/modified:** 1 September 2026.
+- **Portal record:** https://fiji-data.sprep.org/dataset/fiji-national-biodiversity-strategy-and-action-plan-2026-2030
+- **Underlying strategy source:** https://ort.cbd.int/nbsaps/79567C52-671F-AB6C-7439-76385EBD1D09
+- **Cabinet endorsement:** 22 April 2026, as stated in the dataset record.
+- **Inspected content:** strategy vision and four goals; national targets and whole-of-government/whole-of-society implementation; monitoring, financing and reporting.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_BIODIVERSITY_STRATEGY; 2026–2030; CURRENT_NATIONAL_STRATEGY.
+- **Rights/licence:** SPREP portal lists SPREP Public Licence. Check the licence terms and underlying CBD strategy rights before reproducing substantial text or graphics.
+
+**PacEdu-derived concepts from Source B**
+23. **Biodiversity conservation and restoration** — NBSAP sets goals to protect and restore biodiversity; portal summary. Evidence: learner distinguishes protection of an existing habitat from restoration of a degraded habitat.
+24. **Ecosystem services and human wellbeing** — NBSAP connects biodiversity with resilient ecosystems, livelihoods, food security and economic wellbeing; portal summary. Evidence: learner matches ecosystem examples to benefits using teacher-approved cards.
+25. **Habitat degradation and restoration targets** — NBSAP includes national targets for restoring degraded ecosystems; portal summary. Evidence: learner interprets a fictional baseline and restoration target graph, clearly distinguishing a target from an achieved result.
+26. **Protected terrestrial and marine areas** — NBSAP includes a target to protect and effectively manage 30% of terrestrial and marine areas by 2030; portal summary. Evidence: learner reads a fictional percentage chart and explains the meaning of a protected-area target.
+27. **Invasive species and biodiversity pressure** — NBSAP identifies invasive species among pressures on biodiversity; portal summary. Evidence: learner explains why introduced species can affect native ecosystems using a fictional case.
+28. **Pollution and unsustainable resource use** — NBSAP identifies pollution and unsustainable resource use as biodiversity pressures; portal summary. Evidence: learner classifies fictional pressures and links each to an ecosystem impact.
+29. **Fair sharing of benefits** — NBSAP includes equitable sharing of benefits from genetic resources; portal summary. Evidence: learner discusses fairness and consent in a fictional community biodiversity-research scenario.
+30. **National biodiversity indicators and reporting** — NBSAP establishes targets and a framework for implementation, monitoring, financing and reporting; portal summary. Evidence: learner distinguishes a target, an indicator, monitoring evidence and a report.
+31. **Collaborative environmental governance** — NBSAP uses a whole-of-government and whole-of-society approach involving resource owners, communities, agencies, academia and other partners; portal summary. Evidence: learner identifies different roles in a fictional conservation partnership.
+
+### Source C — Fiji National Action Plan for Coral Reef Conservation (launched 8 October 2026)
+
+- **Government lead:** Fiji Ministry of Environment and Climate Change.
+- **Development partners:** Wildlife Conservation Society Fiji Program and Global Environment Facility.
+- **Launch report:** WCS Fiji, 8 October 2026, https://fiji.wcs.org/Blog/articleType/ArticleView/articleId/26712/Fijis-Coral-Reef-Conservation-Action-Plan-Launched-at-Pre-COP31.aspx
+- **Plan document link:** WCS Fiji resource page, https://fiji.wcs.org/Resources/Management-Plans.aspx
+- **Inspected content:** launch report describes a five-year national plan, coordinated conservation and restoration, climate-resilient reef prioritisation using climate/oceanographic/reef data, community and customary resource-owner participation, and ridge-to-reef links with mangrove rehabilitation, degraded catchments and erosion-prone riparian areas.
+- **Classification:** FIJI_GOVERNMENT_NATIONAL_ACTION_PLAN; LAUNCHED_8_OCTOBER_2026; FULL_PLAN_TEXT_AND_TARGETS_PENDING_RETRIEVAL.
+- **Caution:** The launch report is not the full action plan. The approximately 30% climate-resilient reef figure describes the spatial prioritisation analysis, not the proportion already protected or restored.
+
+**PacEdu-derived concepts from Source C**
+32. **Coral reef ecosystems and biodiversity** — the plan describes reefs as supporting marine biodiversity, food security, livelihoods and coastal protection; launch report. Evidence: learner explains at least two ecosystem roles using a labelled reef diagram.
+33. **Coral reef conservation and restoration** — plan priorities include protecting, restoring and sustainably managing reefs; launch report. Evidence: learner distinguishes protection, rehabilitation and restoration in a fictional scenario.
+34. **Climate-resilient reef prioritisation** — the plan used climate, oceanographic and reef data to identify priority areas; launch report. Evidence: learner interprets a fictional suitability map and identifies the data layers used.
+35. **Ridge-to-reef connections** — the plan links reef health to mangrove rehabilitation, catchments and erosion-prone riparian areas; launch report. Evidence: learner traces a fictional land-to-river-to-coast-to-reef pathway.
+36. **Coral reef pressures and resilience** — plan responds to climate change and other pressures; launch report. Evidence: learner compares fictional reef conditions under warming, sedimentation and habitat damage.
+37. **Community and customary resource-owner participation** — plan brings government, communities, traditional resource owners, conservation organisations and researchers together; launch report. Evidence: learner identifies why community knowledge, participation and consent matter.
+38. **Spatial prioritisation and map interpretation** — plan uses spatial analysis to prioritise reefs for conservation; launch report. Evidence: learner reads a fictional map scale, legend and priority layer.
+39. **Coral conservation as a long-term programme** — the action plan sets a five-year national planning horizon; launch report. Evidence: learner organises fictional actions into short-, medium- and longer-term stages.
+
+### Source D — Ministry of Environment and Climate Change, Protecting Fiji's Ocean Heritage
+
+- **Issuer:** Ministry of Environment and Climate Change, Fiji.
+- **Official page:** https://mecc.gov.fj/protecting-fijis-ocean-heritage/
+- **Inspected sections:** Fiji ocean and climate context; ocean warming, acidification, sea-level rise and changing weather; coral reef protection; sustainable fisheries; marine protected areas; mangrove restoration; ridge-to-reef management; community engagement.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_PUBLIC_INFORMATION; CURRENT_WEB_RESOURCE; STATISTICS_AND_CONTENT_DATE_CHECK_REQUIRED.
+- **Caution:** The page contains headline climate figures but does not provide the underlying datasets in the inspected section. Do not turn its warming or sea-level figures into undated current classroom facts; use the relevant Fiji Meteorological Service or peer-reviewed dataset with period and method stated.
+
+**PacEdu-derived concepts from Source D**
+40. **Ocean warming and coral bleaching** — page links rising sea temperatures with coral bleaching and reef impacts; sections on climate impacts. Evidence: learner describes a simplified cause-and-effect diagram for bleaching.
+41. **Ocean acidification and calcifying organisms** — page links carbon dioxide absorption with ocean acidification and risks to corals and shellfish; section on acidification. Evidence: learner interprets a teacher-provided pH comparison and explains that lower pH means more acidic conditions.
+42. **Sea-level rise and coastal impacts** — page links sea-level rise with erosion, flooding and saltwater intrusion; section on sea-level rise. Evidence: learner identifies these possible impacts on a fictional coastal cross-section.
+43. **Changing rainfall and sediment runoff** — page links changing weather and rainfall with runoff, sedimentation and storm impacts; section on changing weather patterns. Evidence: learner traces a fictional rainfall-runoff-sediment pathway.
+44. **Marine protected areas and ecosystem resilience** — page describes MPAs as a conservation tool for biodiversity and resilience; ocean initiatives section. Evidence: learner explains a protected area's purpose using a fictional map.
+45. **Coral gardening and reef monitoring as managed interventions** — page identifies coral gardening, restoration and monitoring programmes; coral reef protection section. Evidence: learner distinguishes observation/monitoring from a restoration intervention; no coral handling.
+46. **Mangroves as carbon stores, coastal barriers and fish nurseries** — page identifies these ecosystem functions; mangrove restoration section. Evidence: learner matches mangrove ecosystem functions to illustrations.
+47. **Community engagement in conservation** — page identifies education, capacity building and participatory management; community engagement section. Evidence: learner identifies respectful ways communities can participate in conservation planning.
+
+### Source E — Ministry of Environment and Climate Change, Waste and Pollution Control Unit
+
+- **Issuer:** Ministry of Environment and Climate Change, Fiji.
+- **Official page:** https://mecc.gov.fj/waste-and-pollution-control/
+- **Inspected content:** national solid-waste, liquid-waste, hazardous-waste and air-pollution management; pollution prevention; environmental permits and monitoring; single-use plastic import consent; Naboro sanitary landfill; agency coordination.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_AGENCY_PUBLIC_INFORMATION; CURRENT_WEB_RESOURCE; CURRENT_RULES_AND_REGULATIONS_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source E**
+48. **Types of pollution and waste streams** — Unit covers solid, liquid and hazardous waste and air pollution; overview. Evidence: learner classifies fictional examples into waste/pollution categories.
+49. **Land-based waste pathways to the sea** — the Unit's mandate includes waste and pollution prevention; combine with Ministry ridge-to-reef information. Evidence: learner traces a fictional litter or wastewater pathway from settlement to drain, river and coast.
+50. **Pollution prevention and public health** — Unit's stated purpose includes environmental protection and safeguarding public health; overview. Evidence: learner explains why waste prevention can protect both ecosystems and people.
+51. **Environmental regulation and public agency roles** — Unit issues permits, monitors compliance and coordinates national systems; overview. Evidence: learner identifies that regulated discharge and inspections are responsibilities of authorised agencies, not learners.
+52. **Single-use plastic controls** — Ministry page describes consent requirements for importers of single-use plastics; overview. Evidence: learner distinguishes reducing plastic waste from the separate legal process for importing controlled goods; no legal advice.
+53. **Waste infrastructure and sanitary landfill concepts** — page identifies Naboro as Fiji's sanitary landfill; overview. Evidence: learner compares fictional waste-management pathways and identifies the role of managed disposal infrastructure.
+
+### Safeguards, rights and curriculum mapping
+
+- These are PacEdu-derived concepts, not official Fiji student achievement indicators. The NBSAP targets and coral action-plan priorities are national policy outcomes, not classroom standards.
+- The full Fiji National Action Plan for Coral Reef Conservation must be retrieved and checked before extracting detailed targets, indicators or implementation commitments. The WCS launch report is only a summary.
+- The Mangrove Guideline is a technical and community-management reference. Its recommendations do not replace current laws, agency approvals, landowner permissions or local customary protocols.
+- Mangrove planting is not automatically appropriate at every site. The guideline emphasises normal hydrology, site ecology, informed consent and natural regeneration where suitable. Do not turn its planting schedules, species selection or survival benchmarks into universal instructions.
+- Do not take learners onto reefs, mangrove mudflats, tidal channels, shorelines, boats, estuaries, rivers or restoration sites without separate risk assessment, permissions, trained supervision and accessibility arrangements. Use diagrams, photographs and fictional datasets by default.
+- Learners must not collect coral, mangrove propagules, seedlings, shells, marine organisms or samples; climb or walk on coral; disturb roots or mudflats; handle wildlife; or plant/replant mangroves as an unsupervised class activity.
+- Respect customary tenure, traditional authorities, community protocols, informed consent and equitable participation. Do not disclose or collect household fishing, land, qoliqoli, resource-use or location information.
+- Do not reproduce copyrighted photographs, maps, diagrams or tables from the 2022 Mangrove Guideline or WCS action-plan materials without permission. Use original PacEdu diagrams and properly licensed sources.
+- Treat climate statistics as dated observations requiring their underlying source, period, location and method. Never present a target or modelled prioritisation result as a completed conservation outcome.
+- **Worksheet gate:** NOT YET AUTHORISED. Retrieve the full Coral Reef Conservation Action Plan; verify current legal and policy instruments for mangrove/coastal management; map concepts to approved Fiji NCF and official Ministry achievement indicators; assign year levels/prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
