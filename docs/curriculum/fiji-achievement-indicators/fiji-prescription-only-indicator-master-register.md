@@ -299,3 +299,39 @@ For each level and subject, obtain: (a) approved syllabus/prescription; (b) indi
 ### Safety boundary
 
 This is a documentation-only staging update. No merge, production deployment, Firebase write, learner or payment record change, or APK replacement is authorised by this audit. CI must be checked separately and must not be described as passed unless a relevant workflow run and its result are verified.
+
+
+## Official Ministry document inspection — 12 November 2026 (continued)
+
+### Important primary-source finding: Years 6 and 8 Term 3 guide
+
+The Ministry-hosted PDF titled "Teachers Guide for Y6 & Y8 Teachers-Term3", published by the Curriculum Development Unit and marked First edition 2015, was inspected directly:
+https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
+
+The guide explicitly says it assists Year 6 and Year 8 teachers to design lessons after the external examination (printed page 1 / PDF lines 100–104). Its tables contain content learning outcomes, achievement indicators, scope/content and some coded outcomes (for example PE 6.1.1.1a and PE 8.1.1.1b; printed pages 3–5 / PDF lines 255–304 and 365–480). This is useful evidence of the format and existence of achievement-indicator material, but its post-examination Term 3 purpose and 2015 first-edition date mean it is not proof of the current full-year controlled prescription. Do not import these rows into the active bank as current indicators without CAS confirming their current status, applicable subject/year scope, amendments and effective dates.
+
+### Free Educational Resources policy and access safeguards
+
+The Ministry-hosted Policy on Free Educational Resources identifies CAS as policy owner, defines free resources to include syllabi, teacher guides and workbooks, and says students may take textbooks and supplementary notes/workbooks home for revision (sections 4.7–4.8; printed pages 4–5). It also requires approval for school reproduction and warns against copyright infringement (sections 4.12–4.13; printed page 5).
+https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+
+This policy is relevant to PacEdu resource-access and copyright workflow design, not a source of curriculum indicators. PacEdu must not assume permission to reproduce Ministry or third-party materials beyond the policy's stated conditions and applicable copyright law.
+
+### Subject inventory leads — not accepted prescriptions
+
+- The Ministry policy appendix lists primary subjects/resources including English, Mathematics, Healthy Living, Elementary Science, Social Studies, Vosa Vakaviti, Hindi, Urdu, Rotuman, Performing Arts and Visual Arts. The appendix is a 2016 resource list; it is not evidence that every listed item is a current prescription or that its linked resource remains current.
+- A third-party-hosted Year 9–10 Social Science syllabus labels itself a 2014 trial version. Exclude it from the active indicator bank pending the current controlled CAS copy.
+- A third-party-hosted Years 5–6 Elementary Science syllabus labels itself a 2015 trial version. Exclude it from the active indicator bank pending current controlled confirmation.
+- A Ministry strategic plan confirms the broad Year 1–8 primary and Year 9–13 secondary structure, but does not supply indicator schedules.
+
+### Register decisions
+
+1. Record the Y6/Y8 Term 3 guide as an official historical candidate with a precise limitation; do not promote its indicators.
+2. Record the Free Educational Resources policy as an access/copyright policy, not curriculum prescription.
+3. Add the primary subject/resource list as an inventory lead only.
+4. Keep Social Science Y9–10 and Elementary Science Y5–6 trial copies excluded until CAS verifies the current controlled editions.
+5. Active current controlled prescription count remains zero; active prescription indicator count remains zero. Daily activities and 115-day distribution remain blocked pending complete, current, approved prescriptions, scope-and-sequence and contact-hour validation.
+
+### Required next evidence
+
+Request from CAS the current controlled subject-by-year prescriptions for Science, Social Science and all remaining primary/secondary subjects, including exact indicator codes and wording, approval and effective dates, amendment/supersession history, and permission terms for digital reproduction. Also request confirmation whether the Y6/Y8 Term 3 guide remains in force for any limited post-examination purpose.
