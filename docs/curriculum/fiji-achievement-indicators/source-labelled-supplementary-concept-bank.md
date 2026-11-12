@@ -462,3 +462,13 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Related official policy lead:** 2023 Denarau Declaration / Fiji National Education Policy Framework 2024–2033 proposes review of LANA and consideration of LANA at Years 3, 5 and 7, and a national remedial strategy. These are policy strategies/proposals, not an enacted syllabus.
 - **Status:** Official consultation evidence; proposals require subsequent adoption/implementation verification.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW` for context only; no prescribed indicators may be derived from this paper.
+
+
+## Record 37 — Schools Standard Monitoring and Inspection Policy (reviewed 2014): prescription-alignment control
+
+- **Source:** Fiji Ministry of Education, *Schools Standard Monitoring and Inspection Policy*, effective 5 March 2014, review date 5 March 2017; Ministry-hosted PDF: https://www.education.gov.fj/wp-content/uploads/2022/11/Schools_Standard_Monitoring_and_Inspection_Policy-_Reviewed_2014.pdf
+- **Classification:** Official historical school-monitoring policy; procedural/quality-assurance reference, not a curriculum prescription and not an achievement-indicator source.
+- **Traceable locations:** Printed p.9 states effective date 5 March 2014 and review date 5 March 2017. Appendix 1, Primary School Internal/External Review Inspection Template, printed pp.1–2, lists “Prescription” and “Scheme of Work” among tools of teaching and requires entries to be aligned to the prescription. The primary teacher inspection form also asks whether current prescriptions are available, accessible and used by teachers, and whether schemes of work align to prescription (Appendix 3; PDF text around lines 2500–2550; verify printed page in PDF view).
+- **Interpretation limit:** The policy's stated review date was 5 March 2017. Its current legal/administrative status must be confirmed before PacEdu describes it as presently binding. It does, however, document the Ministry's prescription-first monitoring model in this historical policy.
+- **PacEdu control:** Require every mandatory indicator to carry a traceable approved prescription reference and require daily lesson/activity mapping to that indicator. Never infer an indicator from the inspection template itself.
+- **Worksheet eligibility:** SUPPLEMENTARY_ONLY as a governance/provenance reference; no indicators activated.
