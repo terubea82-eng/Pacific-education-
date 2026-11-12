@@ -344,3 +344,14 @@ A separate reference-only bank has been created at `docs/curriculum/fiji-achieve
 Recommended design: maintain separate `prescribed_indicators`, `reference_outcomes`, `supplementary_concepts`, `activity_mappings`, and `worksheet_versions` records. Each record must retain source title, authority/publisher, URL, date/version, page/section, level/subject, verification state and reuse rights. A supplementary worksheet may be drafted only after teacher validation and rights review and must be labelled “SUPPLEMENTARY — NOT A SUBSTITUTE FOR THE FIJI PRESCRIPTION”. Official daily worksheets remain blocked until current controlled prescriptions are verified.
 
 Current controlled Fiji prescription sources accepted: 0. Active prescribed indicators: 0. Source-labelled reference/supplementary records: 7. Approved daily worksheets from active prescriptions: 0. No indicator was promoted from a guideline, annual report, third-party host, trial syllabus or regional resource.
+
+
+## Additional Fiji FinED learning-outcome sources — 12 November 2026
+
+Two additional Fiji Financial Education programme sources have been indexed in the supplementary concept bank (now 9 source-labelled records):
+
+- Primary Years 1–8: official programme learning outcomes arranged by year bands and strands, with curriculum links to Mathematics, English, Social Studies and Social Sciences. Themes include money, budgeting, saving, credit, income, financial planning and financial risk. Store as programme reference outcomes, not active prescription indicators until CAS confirms current adoption, exact controlled version, revisions and effective date.
+- Forms Five and Six / Years 11–12: a historical programme manual records financial-education competency indicators and concepts, and states that selected learning outcomes were integrated into Accounting, Economics, English and Mathematics prescriptions at the time. Treat this as a high-value CAS verification lead, not proof of current 2026 placement.
+
+Source pages and links are recorded in `docs/curriculum/fiji-achievement-indicators/source-labelled-supplementary-concept-bank.md`. No source outcomes have been promoted into the active prescribed indicator bank. Current controlled Fiji prescription sources accepted remain 0; active prescribed indicators remain 0. Daily worksheets from the active prescription bank remain blocked. A separate supplementary worksheet may be developed only after teacher validation and reuse-rights review, with explicit supplementary labelling.
+
