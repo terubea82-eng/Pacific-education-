@@ -159,3 +159,46 @@ Never store a third-party concept as a prescribed indicator. Never allow a works
 - **Status:** Historical programme manual. It explicitly names prescription placement but is not itself sufficient proof of current controlled subject prescriptions or current Year 11–12 subject status. Keep as a lead and supplementary reference pending CAS confirmation of exact current syllabuses, learning outcomes, amendments and approved edition.
 - **Reuse:** Do not copy assessment tasks or manual content wholesale; verify copyright/reuse permission.
 
+## 10. Fiji Ministry of Education — Revised Secondary English Curriculum Teacher's Guide, Years 9–10 (2024)
+
+- **Source identity:** Ministry of Education Curriculum Advisory Services (CAS), prepared in partnership with Fiji Program Support Facility / Australia Fiji Education Program; guide identifies Ministry copyright 2024. The copy located in this search is hosted on a third-party flipbook platform, not the Ministry's controlled document repository.
+- **Level/subject:** Years 9–10, English.
+- **Source classification:** `CURRICULUM_GUIDE_CONCEPT`; high-priority current/revised curriculum verification lead, not an activated prescription record.
+- **Verified structure:** The guide explains that Achievement Standards, Content Learning Outcomes (CLOs) and Learning Objectives state what is to be taught and expected by the end of a year. Model units include Dry Run Tasks (formative), Performance Tasks (summative) and assessment rubrics.
+- **Verified concept/strand headings:** Language; Text Types; Critical Literacy. The guide also discusses inclusion of diverse voices and perspectives and critical literacy relating to social inclusion and climate change.
+- **Status:** The document is attributed to CAS and dated 2024, but its current controlled status, amendments, school rollout and exact approved version must be confirmed against the Ministry/FEMIS controlled copy before its outcomes are treated as mandatory active prescription indicators.
+- **Reuse:** Respect the Ministry and third-party copyright notices. Do not copy model units or tasks wholesale without confirming reuse permission.
+- **Source link:** https://fliphtml5.com/gjgbb/naau/RSEC_Teachers_Guide_Year_9_%26_10/
+
+## 11. Fiji Ministry of Education — Year 4 Elementary Science (revised edition 2023; resource identifies 2022 review)
+
+- **Source identity:** Curriculum Advisory Services / Ministry of Education; resource front matter identifies Ministry ownership, revised edition 2023, and a 2022 teacher workgroup review. The located copy is hosted on a third-party flipbook platform.
+- **Level/subject:** Year 4, Elementary Science.
+- **Source classification:** `OFFICIAL_REFERENCE_RESOURCE`; Ministry resource lead, current controlled status not yet verified.
+- **Verified strand and sub-strand concepts:** Living Things and Environment (Structure and Life Processes; Living Together; Biodiversity, Relationship and Sustainability); Matter (Investigating Matter; Materials; Reactions); Energy (Energy Source and Transfer; Energy Transformation, Use and Conservation; Forces); Earth and Beyond (Our Solar System; Our Changing Earth).
+- **Additional verified concept examples:** habitats and habitat needs; living/non-living distinctions; plant and animal dependence on air, water and food; camouflage and protective adaptations; habitat conditions including temperature, moisture, exposure and light.
+- **Status:** The resource is explicitly Ministry/CAS-owned and carries a 2023 revised-edition statement, but the Ministry-hosted controlled copy, any superseding syllabus, and current Year 4 prescription alignment still require confirmation. Do not activate as a prescribed indicator yet.
+- **Reuse:** The resource states that schools may reproduce it for classroom purposes with Ministry/Curriculum Development Unit acknowledgement; other uses require referral to the Ministry. PacEdu's external/commercial distribution needs separate written permission.
+- **Source link:** https://fliphtml5.com/gjgbb/qpxi/YEAR_4_ELEMENTARY_SCIENCE_%282022_REVISED%29/
+
+## 12. Fiji Ministry of Education — Year 1 Moral Values and Civic Education Teacher's Guide (2022)
+
+- **Source identity:** Ministry of Education, Heritage and Arts / Curriculum Development and Advisory Unit (CDAU); guide identifies itself as a 2022 teacher's guide based on Years 1–3 Moral Values and Civic Education syllabi (2022). Located copy is hosted on a third-party flipbook platform.
+- **Level/subject:** Year 1, Moral Values and Civic Education.
+- **Source classification:** `CURRICULUM_GUIDE_CONCEPT`; Ministry-issued teacher-guide lead, current controlled status to be confirmed.
+- **Verified lesson objective/concept examples:** classroom rules and positive behaviour; identifying right and wrong; fair choices and fairness; sharing chores and caring for the school/community; respect for people and animals; teamwork, cooperation, communication and respect for different opinions; personal hygiene and handwashing.
+- **Status:** The guide states it is based on 2022 Years 1–3 syllabi and was issued free to schools. Verify the current syllabus and controlled Ministry edition before promoting any objective to active prescription status.
+- **Reuse:** The guide states schools may reproduce it for classroom purposes with CDAU copyright acknowledgement; other use must be referred to the Permanent Secretary. PacEdu's external/commercial reuse requires written permission.
+- **Source link:** https://fliphtml5.com/gjgbb/pcux/Year_1_Moral_Values_And_Civic_Education_Teacher_s_Guide/
+
+## 13. Fiji Ministry of Education — A Teacher's Guide to Disability-Inclusive Education in Fiji (updated edition; cited 2023)
+
+- **Source identity:** Ministry of Education; Ministry-owned guide, updated from a 2015 handbook using experience gathered over seven years and consultation in May 2022; citation in the PDF is 2023. Ministry-hosted PDF.
+- **Level/subject:** Cross-curricular teacher practice; inclusive education and assessment, including reasonable adjustments for learners with disabilities.
+- **Source classification:** `OFFICIAL_TEACHER_GUIDANCE`; teaching-practice and accessibility guidance, not a subject prescription or achievement-indicator bank.
+- **Verified teaching concepts:** assessment for learning during teaching (e.g. observation records, informal quizzes, interviews/conversations, self-assessment, student work and oral/written responses); assessment of learning at the end of teaching; plan summative assessment before teaching so curriculum intentions and outcomes are clear; make reasonable adjustments in both learning and assessment; consult the learner, caregiver and teacher when finalising adaptations.
+- **Accessibility note:** The guide contains specific guidance for deafness and hearing loss. PacEdu should use it to inform accessible lesson delivery and assessment design, while checking each student's individual adjustment needs.
+- **Status:** Official Ministry-hosted teacher guidance; confirm whether a newer edition or circular supersedes it before treating it as the latest operational guide.
+- **Reuse:** Ministry copyright allows school educational-purpose reproduction with CDAU acknowledgement; other uses require referral to the Permanent Secretary. PacEdu redistribution or commercial reuse needs permission.
+- **Source link:** https://www.education.gov.fj/wp-content/uploads/2024/09/SIE-guide-high-res-web-version-1.pdf
+
