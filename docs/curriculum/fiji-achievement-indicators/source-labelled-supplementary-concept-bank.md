@@ -4626,3 +4626,68 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - The report is accessible online, but no blanket licence for reproducing its tables, photos, figures or substantial text was confirmed. Use original paraphrases and check rights before reproducing any source material.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; current Ministry policy/standard verification; rights review; safeguarding review; teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+
+---
+
+## Record 167 — Fiji School Health Policy: whole-school wellness, health partnerships and school-health information
+
+**Record status:** APPENDED — source-inspected supplementary concept extraction  
+**Concept count:** 30  
+**Classification:** All concepts are `PACEDU_DERIVED_CONCEPT`; none is an official Fiji achievement indicator, CLO or achievement standard.  
+**Curriculum status:** `LEVEL_NOT_SPECIFIED` pending mapping to approved Fiji NCF/CAS documents.  
+**Primary policy date:** 23 September 2016. The policy itself specifies review every two years; current operational status and subsequent amendments were not confirmed in this review.  
+**Worksheet gate:** NOT YET AUTHORISED.  
+**CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+### Sources inspected
+
+1. **Fiji School Health Policy (2016).** Ministry of Health and Medical Services and Ministry of Education, Heritage & Arts, Fiji; approved by both Ministers on 23 September 2016. Official Ministry of Education PDF: https://www.education.gov.fj/wp-content/uploads/2022/06/National_School_Health_Policy.pdf. Inspected pp.3–13: policy goal/objectives, policy statements, background, definitions, governance, school roles, workforce, health-information systems, service delivery, implementation and review date. Key sections: pp.3–5 (objectives, coordination, disability, safety and policy context); p.6 (definitions); pp.8–9 (governance and school responsibilities); pp.10–11 (workforce, information systems and service delivery); p.12 (implementation and review).
+2. **Fiji Government, “Better Hygiene, Brighter Future for Niusawa Primary Students,” 13 February 2026.** https://www.fiji.gov.fj/better-hygiene-brighter-future-for-niusawa-primary-students/. Inspected the official government report describing a planned WASH facility upgrade at Niusawa Primary School, Taveuni, a Ministry of Health and Medical Services contribution of construction materials, the role of the school community/parent-teacher association, and public promotion of handwashing. The article says the facility upgrade was planned; it does not establish that construction was completed.
+3. **Fiji Ministry of Health and Medical Services, Resources and Guidelines pages.** https://www.health.gov.fj/resources/ and https://www.health.gov.fj/our-work/. Used only as a current navigation check for Ministry publications and programme areas; these pages do not by themselves establish that the 2016 School Health Policy remains current.
+
+### Extracted concepts for later curriculum mapping
+
+1. **Whole-child health:** describe health and wellbeing as including physical, mental, emotional and social dimensions, not only absence of illness. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science, Social Science. Policy p.6.
+2. **Wellness across development:** explain that wellbeing changes across stages of development and includes individual and community dimensions. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science. Policy p.6.
+3. **School health programme:** identify school health as a coordinated set of activities intended to support learners' health, safety and wellbeing. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science. Policy p.6.
+4. **Whole-school approach:** explain that health promotion is supported by curriculum, school planning, school environment, leadership and partnerships rather than a single isolated lesson. `PACEDU_DERIVED_CONCEPT`; Social Science, Healthy Living, English. Policy pp.3–5, 8–9.
+5. **Health and education connection:** describe how health, safety and wellbeing can affect a learner's ability to participate in education, while avoiding assumptions about any individual learner. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science.
+6. **Cross-sector collaboration:** explain why education and health authorities may coordinate expertise and services to support school wellbeing. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Policy pp.3, 8–9.
+7. **Shared responsibilities:** distinguish the responsibilities of national ministries, divisional officers, school health teams and school leaders as described in a policy document. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Policy pp.8–9.
+8. **School health team roles:** identify examples of professional roles named in the policy, including nursing, environmental health, oral health and dietetics; do not imply that every school has all these professionals on site. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science. Policy pp.6, 10.
+9. **Referral pathways:** understand at a general level that school health teams may refer a child or family to an appropriate health facility when required; learners do not diagnose or make clinical referrals. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science. Policy p.11.
+10. **Health promotion versus clinical care:** distinguish general health education and prevention activities from diagnosis and treatment delivered by qualified health professionals. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living.
+11. **Food safety in school settings:** identify school food sales, canteens and food provided at boarding schools as matters that require health and safety arrangements. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science. Policy p.5.
+12. **WASH as a school-health component:** explain the connection between water, sanitation, hygiene and a safe school environment. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living, Technology. Policy p.5.
+13. **Disability inclusion in school health:** recognise that school health policies and environments must consider learners with disabilities and different access needs. `PACEDU_DERIVED_CONCEPT`; Social Science, Healthy Living, Technology. Policy p.5.
+14. **Safety and security around schools:** identify physical safety and security in and around school grounds as part of a health-supporting environment. `PACEDU_DERIVED_CONCEPT`; Social Science, Healthy Living. Policy p.5.
+15. **Equitable access across school types:** examine how access barriers can arise for learners in different school settings, including private schools, without stereotyping or assuming current service gaps. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Policy p.5.
+16. **Permission and consent:** explain why appropriate parental/guardian consent and school authorisation may be required for some school health activities; do not collect consent or personal health information in classroom exercises. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Policy p.5.
+17. **Time allocation for wellbeing:** recognise that a school programme needs sufficient planned time and coordination to achieve its objectives. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Policy p.5.
+18. **School strategic and annual plans:** explain how a school may include health and wellness priorities in its planning documents. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Policy p.9.
+19. **School health focal point:** understand the concept of a designated school contact or officer who coordinates school-health activities; verify present arrangements locally before naming a role as current. `PACEDU_DERIVED_CONCEPT`; Social Science. Policy p.9.
+20. **Student and teacher participation:** describe the policy's expectation that students and teachers engage in school health activities, while distinguishing participation from responsibility for clinical or compliance tasks. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Healthy Living. Policy p.9.
+21. **Stakeholder engagement:** identify families, school communities, government bodies and civil-society partners as possible participants in coordinated school-wellness work. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Policy pp.8–9.
+22. **Health workforce planning:** explain that programmes depend on suitable staff, skills and resources, and that staffing needs may vary between communities and divisions. `PACEDU_DERIVED_CONCEPT`; Social Science, Mathematics. Policy p.10.
+23. **Reliable supplies and technologies:** understand that a programme may depend on appropriate materials, technologies and reliable supplies; distinguish policy commitments from proof of actual availability. `PACEDU_DERIVED_CONCEPT`; Science, Technology, Social Science. Policy p.10.
+24. **Health-information accuracy:** explain why school-health information should be accurate and consistent before it is used for planning or reporting. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies, English. Policy pp.10–11.
+25. **Information sharing with safeguards:** understand that agencies may exchange relevant information to coordinate services, while protecting personal, confidential and sensitive learner information. `PACEDU_DERIVED_CONCEPT`; Computer Studies, Social Science, English. Policy p.10.
+26. **Information systems and interoperability:** explain the purpose of linking or coordinating information systems, using PHIS and FEMIS as examples named in the 2016 policy; do not assume a planned integration is fully operational today. `PACEDU_DERIVED_CONCEPT`; Computer Studies, Mathematics, Social Science. Policy pp.10–11.
+27. **Standardised records:** explain how a common school-health card or consistent register format can improve comparability and continuity of records. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Computer Studies. Policy p.11.
+28. **Monitoring, reporting and evaluation:** distinguish routine monitoring, reporting and evaluation, and explain how evidence can inform recommendations for improvement. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Social Science. Policy pp.8–9, 11.
+29. **Handwashing behaviour and enabling facilities:** explain that hygiene behaviour is supported by access to functioning water and handwashing facilities; the Niusawa Primary School report illustrates how infrastructure improvements may enable handwashing. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living, Social Science. Fiji Government article, 13 February 2026.
+30. **Community-supported school improvement:** describe how school leadership, parent-teacher associations, families and government support can contribute to identifying needs and improving school facilities. `PACEDU_DERIVED_CONCEPT`; Social Science, English. Fiji Government article, 13 February 2026.
+
+### Source interpretation and currency controls
+
+- The 2016 policy expressly states that it should be reviewed every two years or when necessary (p.12). The copy inspected is dated 23 September 2016. A Ministry website hosting the PDF in 2022 is not proof that the policy was reviewed, renewed or remains the current operational instrument in 2026.
+- The policy's organisational names, designated roles, committee structure, reporting expectations and references to PHIS/FEMIS are statements in the 2016 document. Verify current ministry structures, school procedures, data systems and legal authorities before presenting them as current instructions.
+- The policy names multiple health topics and programmes. This record extracts broad concepts only; it does not replace the current Fiji curriculum, clinical guidance, child-protection requirements or school operational rules.
+- The 13 February 2026 Niusawa report describes an upgrade that was planned following donation of construction materials. It does not prove the works were completed, that facilities are now functional, or that the school is representative of rural Fiji.
+- The Government article's reference to seven steps of handwashing is recorded as public-health communication, not a substitute for an approved illustrated handwashing procedure. Any detailed step sequence should be sourced from a current authoritative Fiji/WHO guide and checked before lesson creation.
+- Do not ask learners to disclose health conditions, undergo screening, administer medicines, inspect school compliance, collect health records or undertake clinical tasks. School health assessment, consent processes, referral and programme monitoring remain with authorised adults and qualified personnel.
+- Use fictional case studies and aggregated, non-identifying data. Do not expose individual learner health records, disability information, immunisation status or other confidential information.
+- No blanket licence for reproducing the policy PDF or government article photographs/graphics was confirmed. Use original paraphrases and verify rights before copying substantial text, tables, photographs or artwork.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; verify current policy and operational structures; rights review; safeguarding/privacy review; teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`.
