@@ -407,3 +407,15 @@ Three source records were added, bringing the source-labelled concept bank to 21
 **English/Mathematics verification lead:** the Ministry's 2020–2021 Annual Report records a Years 1–8 literacy/numeracy syllabus package with the Fiji National Curriculum Framework, scope-and-sequence overviews, year-level scope and sequence, and teacher guides. This is evidence that a structured primary package existed; obtain and authenticate the actual controlled files and revision dates before accepting individual indicators.
 
 Current controlled prescription sources accepted remain 0; active prescribed indicators remain 0. No worksheet has been created from the trial syllabuses or third-party crosswalk.
+
+
+## Additional senior Mathematics and official curriculum-status leads (12 November 2026)
+
+Three source-labelled records have been added to the source bank, bringing it to 24 records:
+- **Mathematics Syllabi Years 11–12 (2014/2015 trial copy):** third-party-hosted copy identifies a trial version and a structured progression/course-content layout. Historical lead only; it must be compared with approved subsequent Life and Pure Mathematics syllabuses. The 2022–2023 Ministry Annual Report confirms that Year 12 Life Mathematics was later rolled out following a pilot and distinguishes Life from Pure Mathematics. See official report: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- **Ministry Annual Report 2022–2023:** official status/lineage evidence for Ministry curriculum responsibilities, resource development, teacher training, assessment and the Year 12 Life Mathematics pathway. It is not a prescription and contains no accepted active indicator in this register.
+- **Policy on Free Educational Resources:** official inventory of prescribed textbooks/resources, including Year 10 Basic Science and Social Science. It helps locate approved resources but is not a learning-outcome or achievement-indicator source.
+
+**Important senior Mathematics control:** do not combine Life Mathematics and Pure Mathematics into one undifferentiated Year 12 indicator set. Retrieve the approved pathway-specific syllabuses and verify their effective versions before accepting indicators.
+
+Current controlled prescription sources accepted remain 0; active prescribed indicators remain 0. No worksheet has been created from the trial Mathematics copy, annual report or resource inventory.
