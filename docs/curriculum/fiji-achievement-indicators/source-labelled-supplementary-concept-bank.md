@@ -3736,3 +3736,119 @@ Use the current issue date and original source with every dataset; distinguish o
 - Treat climate statistics as dated observations requiring their underlying source, period, location and method. Never present a target or modelled prioritisation result as a completed conservation outcome.
 - **Worksheet gate:** NOT YET AUTHORISED. Retrieve the full Coral Reef Conservation Action Plan; verify current legal and policy instruments for mangrove/coastal management; map concepts to approved Fiji NCF and official Ministry achievement indicators; assign year levels/prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 159 — Fiji native biodiversity, invasive alien species, species protection and biosecurity concepts
+
+- **Record status:** SOURCE-REVIEWED SUPPLEMENTARY CONCEPTS; not an official student achievement-indicator set.
+- **Concept count:** 40 PacEdu-derived concepts.
+- **Subjects:** Elementary Science; Basic Science; Social Science; Agriculture; Technology; Mathematics; English.
+- **Level:** LEVEL_NOT_SPECIFIED. Map only after approved Fiji curriculum and official year-level indicators are checked.
+- **Prerequisites:** Basic living/non-living classification, habitat, organism, simple observation and comparison; adjust only after curriculum mapping.
+- **Evidence approach:** Use teacher-provided photographs, original diagrams, fictional case studies and de-identified datasets. No field collection, handling, release, transport or eradication activity.
+
+### Source A — Fiji Agricultural Journal, Volume 60, Issue 1 (July 2023)
+
+- **Issuer:** Ministry of Agriculture & Waterways, Government of Fiji; journal editorial board and contributing researchers.
+- **Journal PDF:** https://www.agriculture.gov.fj/documents/booklets/FAJ%202023%20Website.pdf
+- **Copyright:** © Ministry of Agriculture, Republic of Fiji, 2023. The journal contains authored research and species-list material; do not assume all figures, photographs or article text are freely reusable. Extract concepts in PacEdu's own wording and complete rights review before reproducing source material.
+- **Inspected sections:** pp. 3–9, “White and Black list of Fiji’s Invasive Alien Species”; journal contents pp. 1–2. Additional article titles are listed in the contents but not fully extracted here.
+- **Lead article authors:** Senilolia H. Tuiwawa, Alivereti N. Naikatini, Marika V. Tuiwawa, Hilda Waqa-Sakiti and Lekima Copeland.
+- **Important version limitation:** Article reports the technical committee's reviewed 74-taxon list, derived from a 2020 consultation and published in 2023. Its authors explicitly say the list is not exhaustive and should be updated, preferably every five years. Do not present it as the current 2026 authoritative list without checking the newer national framework and BAF data.
+- **Classification:** FIJI_RESEARCH_PUBLICATION_CONCEPT; HISTORICAL_LIST_REQUIRES_CURRENT_VERSION_CHECK.
+
+**PacEdu-derived concepts from Source A**
+
+1. **Native range and introduced range** — compare an organism's natural geographical range with a place where people or natural pathways have introduced it. Evidence: learner distinguishes native-range and introduced-range examples on a fictional map.
+2. **Introduced organism versus invasive organism** — presence outside a native range alone is not enough; the article's Fiji definition includes establishment, spread and harmful effects. Evidence: learner sorts case cards and explains why introduction and invasion are not synonyms.
+3. **Naturalisation and establishment** — explain how an introduced organism may survive and reproduce in a new environment. Evidence: learner orders a fictional establishment sequence.
+4. **Spread and abundance** — describe how distribution and population abundance can change over time. Evidence: learner interprets a teacher-provided time-series graph.
+5. **Harm to native biodiversity** — connect invasive organisms with pressures on native species and ecological relationships. Evidence: learner completes a simple food-web impact diagram.
+6. **Ecosystem services and human well-being** — consider ecological, social, economic and health dimensions of biological invasions. Evidence: learner sorts fictional impacts into environmental, livelihood and wellbeing categories.
+7. **Habitat vulnerability** — compare how abiotic conditions, disturbance and interactions among organisms can affect susceptibility to invasion. Evidence: learner compares two fictional habitat profiles.
+8. **Species-specific and habitat-specific effects** — recognise that a species may not have the same impact in every habitat. Evidence: learner avoids making a universal claim from one case study.
+9. **Taxonomic groups and biodiversity recording** — classify recorded organisms into broad groups such as plants, fish, mammals, birds, land invertebrates and herpetofauna. Evidence: learner organises a supplied dataset into categories.
+10. **Scientific names and common names** — understand that scientific names help distinguish organisms when local/common names vary. Evidence: learner matches a small teacher-checked name set without independently identifying wild organisms.
+11. **Evidence-based species classification** — explain why expert review, taxonomic knowledge and field evidence are used to assess invasive status. Evidence: learner identifies evidence needed before making a classification.
+12. **White-list and black-list categories as source-specific terms** — interpret the journal's 2023 categories accurately: black-listed taxa were described as widespread/problematic, while white-listed taxa were potential or habitat-limited risks in that paper. Evidence: learner explains the paper's definitions and notes that categories are not permission to import or move species.
+13. **Uncertainty and missing biodiversity data** — identify how limited field observations or incomplete data affect confidence in a species assessment. Evidence: learner marks missing data and avoids treating unknown status as proof of safety.
+14. **Monitoring and repeat assessment** — explain why species lists and conservation observations need periodic review. Evidence: learner compares two dated fictional monitoring records.
+15. **Protected areas as biodiversity monitoring locations** — understand the role of protected-area networks in observing ecological change. Evidence: learner interprets a fictional monitoring-site map; no site visit implied.
+16. **Awareness and public communication** — communicate why invasive-species awareness is relevant to biodiversity protection. Evidence: learner prepares an original, evidence-based short message using teacher-verified facts.
+17. **Population distribution tables** — read counts by organism group and status category from a supplied table. Evidence: learner accurately describes a chart without assuming counts equal total national abundance.
+18. **Data limitations in published checklists** — distinguish a checklist's recorded taxa from a complete inventory of all organisms present. Evidence: learner writes a limitation statement for a supplied dataset.
+
+### Source B — Fiji National Biodiversity Strategy and Action Plan 2026–2030 (NBSAP)
+
+- **Issuer/publisher:** Ministry of Environment and Climate Change, Fiji; hosted on Fiji Environment Data Portal / SPREP.
+- **Portal record:** https://fiji-data.sprep.org/dataset/fiji-national-biodiversity-strategy-and-action-plan-2026-2030
+- **Underlying strategy:** https://ort.cbd.int/nbsaps/79567C52-671F-AB6C-7439-76385EBD1D09
+- **Portal release/modified:** 1 September 2026. Cabinet endorsement: 22 April 2026.
+- **Licence:** SPREP Public Licence is displayed on the portal record. Confirm the licence terms and any underlying-document restrictions before reusing substantial text, maps, images or tables.
+- **Inspected content:** Portal abstract and metadata. Full strategy text and target-by-target pages have not yet been extracted in this record.
+- **Classification:** FIJI_NATIONAL_POLICY_CONTEXT; FULL_DOCUMENT_AND_TARGET_LEVEL_REVIEW_PENDING.
+
+**PacEdu-derived concepts from Source B**
+
+19. **Biodiversity as variation in life** — introduce biodiversity as a conservation concept across organisms and ecosystems. Evidence: learner groups examples by organism and habitat.
+20. **Protect, restore and sustainably use biodiversity** — distinguish protection of existing ecosystems, restoration of degraded areas and sustainable use. Evidence: learner sorts fictional actions into the three categories.
+21. **Ecosystem resilience** — explain at an introductory level how healthy and connected ecosystems can better withstand and recover from pressures. Evidence: learner compares two fictional ecosystem scenarios.
+22. **Habitat degradation as a pressure** — identify habitat damage or decline as a threat to biodiversity. Evidence: learner annotates a fictional before-and-after habitat diagram.
+23. **Climate change and biodiversity** — describe how changing climate conditions can affect habitats, species and ecological relationships. Evidence: learner interprets a teacher-provided cause-and-effect model.
+24. **Pollution and unsustainable resource use** — connect pollution and unsustainable use with biodiversity pressures. Evidence: learner traces a fictional pressure-impact pathway.
+25. **Species conservation and threatened-species recovery** — understand that conservation may require targeted measures for species at risk. Evidence: learner explains the purpose of a fictional recovery plan without handling wildlife.
+26. **Terrestrial and marine conservation areas** — compare land and sea conservation settings and the need for effective management. Evidence: learner reads a fictional map legend and compares area types.
+27. **Restoration targets versus completed outcomes** — distinguish a national target or planned percentage from measured achievement. Evidence: learner labels a chart as target, baseline or observed result.
+28. **Fair sharing of benefits from genetic resources** — introduce the idea that benefits arising from use of genetic resources should be shared fairly, including with relevant communities and knowledge holders. Evidence: learner analyses a fictional fair-benefit scenario; no collection of traditional knowledge.
+29. **Collaborative biodiversity governance** — identify the roles of government, resource owners, communities, researchers and civil society in coordinated conservation. Evidence: learner matches stakeholder roles to a fictional planning task.
+30. **Monitoring, financing and reporting** — recognise that national strategies need monitoring, resources and transparent reporting. Evidence: learner identifies what a simple fictional progress report should contain.
+
+### Source C — Fiji National Invasive Species Framework and Strategic Action Plan (NISFSAP), Cabinet release
+
+- **Issuer:** Fiji Cabinet / Fiji Government.
+- **Cabinet decision:** 21 April 2026; public release dated 22 April 2026.
+- **Official source:** https://www.fiji.gov.fj/decisions-of-the-7th-cabinet-meeting-held-on-21-april-2026-2/
+- **Inspected sections:** “National Framework to Strengthen Response to Invasive Species” and “National Biodiversity Strategy 2026–2030”.
+- **What the release confirms:** Cabinet endorsed a five-year NISFSAP for coordinated prevention, control and eradication of invasive alien species. The release reports over 650 non-native species and more than 400 described as invasive; these are Cabinet-release figures and need underlying dataset, date and method before classroom statistical use.
+- **Classification:** OFFICIAL_FIJI_CABINET_POLICY_ANNOUNCEMENT; FULL_NISFSAP_TEXT_AND_IMPLEMENTATION_TARGETS_PENDING.
+
+**PacEdu-derived concepts from Source C**
+
+31. **Prevention, control and eradication as distinct management approaches** — compare stopping introduction, reducing impacts after establishment and removing a population where feasible. Evidence: learner classifies fictional management scenarios.
+32. **Pathways of introduction** — identify how trade, travel, tourism and movement between islands may create pathways for organisms to spread. Evidence: learner traces a fictional pathway diagram.
+33. **National coordination for invasive-species management** — explain why agencies and communities need coordinated roles. Evidence: learner creates a simple stakeholder map.
+34. **Inter-island biosecurity awareness** — recognise that movement within an island nation can also spread organisms and pests. Evidence: learner identifies prevention checkpoints in a fictional transport scenario.
+35. **Risk prioritisation** — compare potential harm, spread, feasibility and conservation importance when deciding which risks need attention first. Evidence: learner ranks fictional cases using teacher-provided criteria.
+36. **Food security and invasive species** — explain how invasive organisms may affect crops, livestock, fisheries or food systems. Evidence: learner builds a simple cause-and-effect chain using fictional examples.
+37. **Trade-offs in management decisions** — recognise that control choices require evidence, safety, ecological assessment and authorised decision-making. Evidence: learner identifies why an untrained person should not attempt control or eradication.
+
+### Source D — Biosecurity Act 2008 information and measures summary
+
+- **Issuer:** Fiji Trade Portal, Ministry of Trade, Co-operatives, Micro, Small and Medium Enterprises, and Communications; legal instrument administered by the Biosecurity Authority of Fiji (BAF).
+- **Official information page:** https://www.fijitradeportal.gov.fj/en-gb/site/display/2
+- **Act download:** linked from the portal; consolidated legal text, amendments, regulations and current notices have not been independently checked for this record.
+- **Inspected sections:** portal summary and measures table covering phytosanitary certification, approved premises, animal/animal-product import permits, plant/plant-product requirements and export veterinary health certification.
+- **Classification:** FIJI_LEGAL_SOURCE_CONCEPT; CURRENT_CONSOLIDATED_LAW_AND_REGULATIONS_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source D**
+
+38. **Biosecurity and prevention of pest/disease entry and spread** — explain the general purpose of biosecurity controls for plants, animals and related products. Evidence: learner describes a fictional prevention sequence.
+39. **Declaration and authorised inspection** — understand that regulated plant and animal items may need declaration, permits, inspection or treatment by authorised officers. Evidence: learner identifies the appropriate authorised role in a fictional travel/import scenario; no legal advice or real import guidance.
+40. **Phytosanitary and veterinary certification** — distinguish plant-health and animal-health certification as formal processes for regulated trade. Evidence: learner matches fictional certificate labels to broad purpose, without preparing or issuing certificates.
+
+### Curriculum, rights, currency and safety controls
+
+- All 40 entries are **PACEDU_DERIVED_CONCEPT**, not official achievement indicators, CLOs or achievement standards. No source above supplies verified year-level outcomes for this record.
+- The 2023 journal's white/black list is not exhaustive and was recommended for periodic update. Do not use its list to label a species' present-day legal status, safety, import eligibility or current invasive status without BAF/MECC confirmation.
+- The 2026 NBSAP and NISFSAP are national strategies, not classroom syllabi. Retrieve and inspect the full NISFSAP and full NBSAP targets before extracting specific national targets, indicator wording or performance claims.
+- Cabinet's reported totals (650+ non-native, 400+ invasive) require the underlying current inventory, definition, reference date and methodology before use in student calculations or public-facing claims.
+- The Biosecurity Act portal summary is not a substitute for the current consolidated Act, regulations, amendments, commencement notices or BAF directions. Do not teach legal compliance as a definitive rule from this summary alone.
+- Do not direct learners to collect, identify by handling, transport, release, feed, trap, poison, dissect, eradicate or biologically control plants, animals, insects, reptiles, fish, pathogens or other organisms. No student-led species control or import/export decisions.
+- Do not encourage learners to approach suspected invasive iguanas, mongoose, cane toads, ants, snakes, feral animals or unknown plants. Use teacher-verified photographs and safe fictional data.
+- Do not enter forests, protected areas, farms, waterways, islands or private/customary lands for survey work without permissions, risk assessment, trained supervision, accessibility planning and community protocols.
+- Respect customary ownership, traditional knowledge, community consent and benefit-sharing. Do not solicit or publish sensitive species locations, rare-species nests, sacred sites or customary resource information.
+- Use original PacEdu diagrams and data tables; do not copy journal photographs, tables, maps or substantial text without rights clearance. SPREP Public Licence applies only as stated by the portal and should be checked before reuse.
+- **Worksheet gate:** NOT YET AUTHORISED. Required first: retrieve full NISFSAP; inspect full NBSAP targets; verify current BAF/MECC species inventory and legal controls; check rights; map each concept to approved Fiji NCF and official achievement indicators; assign level/prerequisite; complete teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
