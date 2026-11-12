@@ -4554,3 +4554,75 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - No copying of substantial report text, maps, tables, photographs or graphics until rights and permitted reuse have been checked. Summarise concepts in original wording and cite sources.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; verification against the full original survey and current datasets; rights review; teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+
+---
+
+## Record 166 — Fiji school menstrual health, dignity, participation and WASH evidence
+
+**Record status:** APPENDED — source-inspected supplementary concept extraction  
+**Concept count:** 30  
+**Classification:** All concepts are `PACEDU_DERIVED_CONCEPT`; none is an official Fiji achievement indicator, CLO or achievement standard.  
+**Curriculum status:** `LEVEL_NOT_SPECIFIED` pending mapping to approved Fiji NCF/CAS documents.  
+**Source age:** Research conducted May–September 2016; report published November 2017. Historical evidence only; do not present as current national prevalence or current facility status.  
+**Worksheet gate:** NOT YET AUTHORISED.  
+**CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+### Primary source inspected
+
+**Francois, Maria Carmelita; Amber Lauff; Brooke Yamakoshi (2017), _WASH in Schools Empowers Girls’ Education in Fiji: An Assessment of Menstrual Hygiene Management_.** UNICEF Pacific, Suva, November 2017; research conducted in seven schools in Ba, Lautoka and Ra between May and September 2016. PDF: https://www.unicef.org/pacificislands/media/766/file/WASH-in-Schools-Empowers-Girls-Education.pdf. UNICEF report landing page: https://www.unicef.org/pacificislands/reports/wash-schools-empowers-girls-education-fiji.
+
+**Inspected evidence locations:** executive summary pp.3–4; school WASH context and Three Star Approach pp.7–8; curriculum context p.8; study design and ethics pp.12–16; limitations p.16; reported challenges pp.17–19; WASH facilities and historical facility observations pp.21–23; management of sanitary materials and recommendations pp.23–27.
+
+### Extracted concepts for later curriculum mapping
+
+1. **Menstruation as a normal biological process:** explain menstruation in accurate, respectful, age-appropriate scientific language and distinguish biological facts from myths. `PACEDU_DERIVED_CONCEPT`; Elementary Science, Basic Science, Healthy Living. Source pp.3–4, 17–21.
+2. **Menstrual cycle vocabulary:** recognise and correctly use age-appropriate terms for menstruation, menstrual cycle and puberty; detailed cycle teaching requires approved curriculum alignment. `PACEDU_DERIVED_CONCEPT`; Science, English, Healthy Living. Source pp.17–21.
+3. **Puberty and body changes:** describe puberty as a developmental process involving physical and emotional changes, without ridicule or judgement. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living. Source pp.8, 20–21.
+4. **Menstrual health literacy:** distinguish reliable biological information from inaccurate explanations, rumours and myths. `PACEDU_DERIVED_CONCEPT`; Science, English, Healthy Living. Source pp.17–21.
+5. **Preparedness and planning:** explain how understanding a menstrual cycle and having access to suitable materials can support personal preparation; do not require learners to disclose or track their own cycles. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Mathematics. Source pp.20–21.
+6. **Menstrual materials:** identify that people may use different menstrual materials and that suitability, availability, privacy and safe management matter; do not prescribe a product or require personal disclosure. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science. Source pp.18–19, 23–24.
+7. **Handwashing and personal hygiene:** explain the role of water and soap in hygienic handwashing before and after relevant sanitation activities. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science. Source pp.18–19, 21–22.
+8. **Private changing space:** identify privacy as a functional requirement of school facilities for changing and managing menstruation. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science, Technology. Source pp.3–4, 21–23.
+9. **Safe and dignified facility location:** explain how location, visibility, access and personal safety affect whether a facility can be used with dignity. `PACEDU_DERIVED_CONCEPT`; Social Science, Healthy Living, Technology. Source pp.18–19, 21–23.
+10. **Facility functionality versus existence:** distinguish a toilet that exists from one that is functional, clean, private and usable. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science, Technology. Source pp.7–8, 21–23.
+11. **Toilet access and user numbers:** interpret a toilet-to-student ratio as a quantitative measure; any standard used in a lesson must be checked against the currently approved Fiji standard before use. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Source pp.21–22.
+12. **Sanitary-waste disposal:** explain why used menstrual materials require an appropriate disposal pathway and should not be flushed into toilets designed for flush/pour-flush systems. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living, Technology. Source pp.21–23.
+13. **Waste-bin provision:** identify an appropriate covered or designated disposal bin as one element of a dignified menstrual-health facility; do not instruct learners to handle used materials. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Technology. Source pp.21–23.
+14. **Water, soap and toilet-paper continuity:** explain that a facility's usefulness depends on reliable supplies as well as the physical structure. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science. Source pp.18–19, 21–23.
+15. **Cleanliness and maintenance systems:** describe the importance of planned cleaning, maintenance and replenishment, distinguishing a written policy from evidence that tasks were completed. `PACEDU_DERIVED_CONCEPT`; Social Science, English, Mathematics. Source pp.21–23.
+16. **Gender-responsive school facilities:** explain why sanitation facilities and privacy arrangements should respond to users' different needs without reinforcing stereotypes or discrimination. `PACEDU_DERIVED_CONCEPT`; Social Science, Healthy Living. Source pp.7–8, 21–23.
+17. **Dignity and non-stigmatising language:** communicate about menstruation without shame, teasing, humiliation, blame or exclusion. `PACEDU_DERIVED_CONCEPT`; English, Healthy Living, Social Science. Source pp.3–4, 17–21.
+18. **Peer respect and bystander behaviour:** identify teasing, rumours and ridicule as barriers to learning and participation, and practise respectful responses using fictional scenarios. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Healthy Living. Source pp.17–21.
+19. **Shared health literacy:** explain why accurate menstrual-health knowledge is relevant to all learners, not only those who menstruate, while respecting privacy and choice. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living, Social Science. Source pp.3–4, 8, 17–21.
+20. **Participation and attendance:** interpret how inadequate facilities, unavailable supplies, stigma or discomfort may affect attendance, concentration and participation; do not assume these factors explain an individual learner's absence. `PACEDU_DERIVED_CONCEPT`; Social Science, English, Mathematics. Source pp.3–4, 17–19.
+21. **Participation in PE and sport:** recognise that safe, private facilities and respectful school support can affect a learner's confidence to participate in physical education and school activities. `PACEDU_DERIVED_CONCEPT`; PE, Healthy Living, Social Science. Source pp.3–4, 17–19.
+22. **Menstrual pain as a health topic:** recognise that some people experience discomfort or pain during menstruation and that individual experiences vary; do not diagnose, prescribe treatment or require learners to disclose symptoms. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living. Source pp.3–4, 17–19.
+23. **Social-ecological influences on health:** identify how personal knowledge, family, peers, teachers, school facilities and wider social norms can interact to shape health experiences. `PACEDU_DERIVED_CONCEPT`; Social Science, Healthy Living. Source pp.12–15.
+24. **Participatory problem-solving:** use fictional scenarios, drawings or anonymous case studies to identify barriers and propose respectful improvements to a school environment. `PACEDU_DERIVED_CONCEPT`; English, Arts, Technology, Social Science. Source pp.14–16.
+25. **Qualitative research methods:** distinguish an in-depth interview, focus-group discussion and structured observation by their purpose and type of evidence. `PACEDU_DERIVED_CONCEPT`; English, Social Science. Source pp.12–16.
+26. **Research ethics with children:** explain informed consent/assent, voluntary participation, privacy, confidentiality and the duty to avoid harm in research involving children. `PACEDU_DERIVED_CONCEPT`; Social Science, English, Digital Literacy. Source pp.12–16.
+27. **Evidence triangulation:** explain how interview accounts, group discussions, observation records and field notes can be compared to check or contextualise findings. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Social Science. Source pp.15–16.
+28. **Sample size and representativeness:** explain why a seven-school study in three Western Division sub-districts cannot be treated as a national prevalence survey. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Social Science. Source pp.3–4, 10–16.
+29. **Historical data and source dates:** identify the survey/research year, publication date, location, sample and source before using statistics; do not reuse the report's 2015–2017 figures as current conditions. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Computer Studies. Source pp.3–4, 6–16.
+30. **Disaster resilience of school WASH:** explain how cyclones and floods can damage facilities, interrupt supplies and reduce privacy, and why resilient planning and continuity arrangements matter. `PACEDU_DERIVED_CONCEPT`; Science, Social Science, Technology. Source pp.5–8, 17–19, 21–23.
+
+### Historical figures — context only, not current indicators
+
+- The research involved seven selected schools in Ba, Lautoka and Ra; data were collected May–September 2016. The study included 151 participants (75 girls, 42 boys and 34 teachers) and structured observations of facilities. This is a small, purposive qualitative study, not a nationally representative survey.
+- The report observed 98 toilets across the seven study schools and described functionality, cleanliness, lighting and bin availability. Those figures describe only the selected schools at the time of the 2016 fieldwork; they must not be represented as current national statistics.
+- The report records the historical Fiji WASH school standard of one toilet closet per 20 girls and one per 33 boys. These figures are quoted as the 2017 report's account of the then-applicable standard only. Do not teach them as current requirements until the current Ministry-approved standard is checked.
+- The report's historical findings describe barriers involving knowledge gaps, stigma, limited privacy, inconsistent water/soap/material supplies, facility location and disposal arrangements. These are findings from the study sample, not claims about every Fiji school or every learner.
+- The report's 2017 description of curriculum coverage identifies Healthy Living and Physical Education and Science as subjects covering puberty and menstruation at that time. This does not establish the current syllabus or year-level placement; map against approved current Fiji curriculum documents before curriculum use.
+
+### Safeguards, rights and curriculum mapping
+
+- All 30 entries are `PACEDU_DERIVED_CONCEPT`, not official Fiji student achievement indicators, CLOs or achievement standards.
+- No learner is to be asked to reveal menstrual status, cycle dates, symptoms, personal hygiene practices, family beliefs or private health experiences. No personal cycle-tracking tasks, public disclosures, role-play humiliation or gender-based teasing.
+- Teach with accurate, respectful, age-appropriate language and fictional scenarios. Do not diagnose pain, prescribe medication or provide individual clinical advice.
+- Do not ask learners to inspect toilets, handle sanitary waste, clean contaminated facilities or assess another learner's hygiene. School facility inspections and maintenance remain with authorised adults.
+- Respect privacy, cultural diversity, disability access and individual choice. Provide safe pathways for a learner seeking help through the school's designated safeguarding/health staff without requiring disclosure in class.
+- This is a UNICEF report published in 2017, based on 2016 fieldwork. Verify current Fiji School Health Policy, current Ministry WASH standards and current curriculum before using any policy claim, facility ratio or lesson placement.
+- The report is accessible online, but no blanket licence for reproducing its tables, photos, figures or substantial text was confirmed. Use original paraphrases and check rights before reproducing any source material.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; current Ministry policy/standard verification; rights review; safeguarding review; teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`.
