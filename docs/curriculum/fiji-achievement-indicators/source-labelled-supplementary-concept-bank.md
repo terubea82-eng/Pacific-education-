@@ -5765,3 +5765,48 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Worksheet gate:** `NOT YET AUTHORISED`; requires current ECE curriculum confirmation, rights clearance, accessible communication design, developmental mapping and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
 - **Use restriction:** ECE language/literacy curriculum outcomes and progress expectations only; do not extend these directly as Class 1–Form 7 indicators.
+
+
+## Record 187 — Fiji Years 3–4 reading progress and observable literacy skills
+
+- **Source:** Fiji Ministry of Education, Heritage and Arts, *Literacy Guide for Lower Primary — Years 3 & 4*, official Ministry-hosted PDF.
+- **Official source:** https://www.education.gov.fj/wp-content/uploads/2022/06/Literacy_Guide_-for_years_34.pdf
+- **Source locations:** printed pp. 38–45 (reading levels and checklists); pp. 56–59 (reading development stages); table of contents and lesson structure pp. 4–5.
+- **Source type:** Ministry teacher guide aligned to the lower-primary syllabus, containing reading-stage assessment checklists. It is not itself a subject syllabus.
+- **Classification:** 18 `OFFICIAL_ASSESSMENT_CHECKLIST_SKILL` entries, paraphrased from the Ministry guide; 6 `PACEDU_DERIVED_CONCEPT` entries for activity sequencing and evidence capture. Do not label checklist items as formally numbered syllabus achievement indicators.
+- **Official reading-stage context:** The guide associates Early Fluent Reader with Year 3 and Independent Reader with the end of Year 3–Year 4, while recognising that children in the same class may be at different reading stages. Use this as a progress framework, not a rigid age/grade cut-off or a reason to hold a learner back.
+- **Observable reading skills paraphrased from the Ministry checklists:**
+  1. Read a familiar text with increasing accuracy rather than relying only on memorised pictures.
+  2. Use phonics and letter–sound knowledge to attempt unfamiliar words.
+  3. Break longer words into syllables or meaningful sound parts when decoding.
+  4. Recognise and use common blends and spelling patterns in words.
+  5. Identify rhyming words and notice sound patterns in words.
+  6. Read with phrasing rather than treating every word as an isolated item.
+  7. Pause at sentence boundaries and respond to punctuation.
+  8. Read aloud with developing fluency and expression appropriate to meaning.
+  9. Notice an error and attempt to self-correct when a word or sentence does not make sense.
+  10. Answer questions about explicitly stated information in a text.
+  11. Identify key characters, setting and main events in a narrative.
+  12. Describe the sequence or main plot of a story.
+  13. Use details in a text to make a reasonable inference.
+  14. Explain or represent the main idea of a passage, including through an appropriate drawing or other response.
+  15. Identify text types and recognise features such as headings, labels, captions and paragraph structure.
+  16. Decode unfamiliar vocabulary using phonics and use sentence context to work out likely meaning.
+  17. Read independently and silently for an increasing period where the text is accessible.
+  18. Use reference tools such as a dictionary or glossary to support understanding.
+- **PacEdu-derived activity-design concepts:**
+  19. Build a reading lesson around one shared text with a clearly stated daily focus (e.g. prediction, characters, structure, vocabulary, punctuation or comprehension).
+  20. Collect separate evidence for decoding, fluency, comprehension, vocabulary and reading habits rather than using one score as a proxy for all reading skills.
+  21. Use a text at an appropriate instructional level and adjust text complexity when evidence shows the text is too easy or too difficult.
+  22. Recheck reading progress over time and use observed patterns of error to plan targeted teaching.
+  23. Use varied text forms (narrative, poem, letter, report, procedure and article) to teach structure and purpose.
+  24. Credit a learner’s explanation, pointing, accessible selection or other valid response when the intended construct is comprehension rather than spoken performance.
+- **Subject mapping:** English — Reading and Viewing, phonics/word recognition, vocabulary, comprehension and text features. Related literacy may support other subjects but this guide does not establish Science, Mathematics or Social Science outcomes.
+- **Level mapping:** Years 3–4. The guide notes that reading stages vary within a class and describes progress beyond these year levels as well; do not treat its sample stage labels or words-per-minute values as universal high-stakes cut-offs.
+- **Observable evidence for future activities:** a dated teacher record of decoding attempts, fluency/phrasing, self-correction, answers to literal and inferential questions, retell/summary, vocabulary-in-context and independent reading behaviours. Evidence should be gathered over time, not from one timed test alone.
+- **Accessibility safeguards:** provide accessible print/digital text, suitable font and spacing, read-aloud or assistive technology when these do not invalidate the specific skill being assessed. Do not make visual tracking, oral speech or handwriting mandatory where they are not the learning target. Separate listening comprehension from independent decoding/reading.
+- **Assessment safeguards:** the guide’s checklist is a teacher assessment aid, not a diagnosis tool. Do not use its reading behaviours to diagnose dyslexia or another condition; refer concerns through approved school support processes. Avoid public ranking, shame, punitive timed reading or labelling children by a single stage.
+- **Rights:** no clear licence for commercial reproduction is established from the accessible source text. `RIGHTS_REVIEW_REQUIRED`; paraphrase and cite only until Ministry/CAS permissions and current terms are confirmed. Do not copy checklist tables, text passages or illustrations into PacEdu.
+- **Currentness:** `CURRENT_VERSION_CHECK_REQUIRED`. Confirm the guide remains aligned with the currently approved Years 3–4 English curriculum and any updated reading progress standards.
+- **Worksheet gate:** `NOT YET AUTHORISED`; requires current syllabus alignment, rights clearance, accessible assessment design and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
