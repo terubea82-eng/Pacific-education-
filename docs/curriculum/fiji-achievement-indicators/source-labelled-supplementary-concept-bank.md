@@ -202,3 +202,13 @@ Never store a third-party concept as a prescribed indicator. Never allow a works
 - **Reuse:** Ministry copyright allows school educational-purpose reproduction with CDAU acknowledgement; other uses require referral to the Permanent Secretary. PacEdu redistribution or commercial reuse needs permission.
 - **Source link:** https://www.education.gov.fj/wp-content/uploads/2024/09/SIE-guide-high-res-web-version-1.pdf
 
+## 14. Fiji Ministry of Education — Year 4 Moral Values and Civic Education Teacher's Guide (2022)
+
+- **Source identity:** Curriculum Development and Advisory Unit (CDAU), Ministry of Education, Heritage and Arts; guide identifies Ministry copyright dated 30 September 2022 and says it was issued free to schools.
+- **Level/subject:** Year 4, Moral Values and Civic Education; the foreword says the curriculum was expanded to Years 4–6 after implementation at Years 1–3.
+- **Source classification:** `OFFICIAL_REFERENCE_RESOURCE`; Ministry-issued teacher-guide record, but the controlled current syllabus/version must still be verified.
+- **Verified strand and sub-strand concepts:** Character Building (Making Choices and Decisions; Good Manners; Discipline); Relationship (Love; Respect). The guide introduction identifies four broad strands: character building; relationships; health, wellbeing and safety; and citizenship.
+- **Status:** This is a strong Fiji-issued teacher resource and a direct lead for the Years 4–6 MCE syllabus. Confirm the current controlled syllabus, any later amendment and the applicable year-level guide before activating exact indicators.
+- **Reuse:** The guide is issued for school education purposes; the Ministry copyright and source acknowledgements apply. PacEdu's external redistribution, adaptation or commercial use requires permission.
+- **Source link:** https://fliphtml5.com/gjgbb/syau/Year_4_MCE_Teacher_s_Guide/
+
