@@ -2213,3 +2213,47 @@ The actions below are concise paraphrases of the source's achievement-indicator 
 - Status: HISTORICAL_OFFICIAL_PRESCRIPTION_SOURCE; PRESCRIPTION_CONTENT_EXTRACTED; CURRENT_STATUS_UNCONFIRMED; LINEAGE_NOT_YET_FOUND; BLOCKED_RIGHTS_REVIEW.
 - Keep ambiguous code rows flagged SOURCE_CODE_AMBIGUOUS until a controlled source resolves them.
 - No current mandatory worksheet authorised. No CAS contact now; CAS contact remains DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 138 — 1973 Regional Curriculum Workshop: Forms 1–4 English outline, weekly topics and skills (historical source; draft/workshop evidence)
+
+**Source:** *Regional Curriculum Workshop: Final Workshop Report*, University of the South Pacific, School of Education, Suva; UNESCO-sponsored, January 2–19, 1973; published 1973. English Language Work Group report by D. McKeating, Senior Education Officer, Secondary English, Fiji Department of Education (printed pp.99–118); ERIC ED088771. Full source: https://files.eric.ed.gov/fulltext/ED088771.pdf. Inspected PDF lines covering printed pp.99–118 and appendices A and D.
+
+**Source authority and limitation:** This is a regional workshop report, not the final Fiji-approved Forms 1–4 syllabus. The report states that an outline Forms 1–4 syllabus had been prepared by a UNDP English specialist before the workshop. Participants discussed and modified the outline and produced trial materials. The workshop's draft and recommendations must not be represented as an approved Fiji prescription. Classification: HISTORICAL_LINEAGE_REFERENCE / WORKSHOP_DRAFT_EVIDENCE; not PRESCRIPTION_VERIFIED. Rights for PacEdu reproduction/adaptation have not been established; BLOCKED_RIGHTS_REVIEW.
+
+### Extracted curriculum concepts and skills (not current mandatory indicators)
+
+1. **Weekly thematic language learning:** Form 1 topics included self/family, school, houses, natural disasters, animals, illness, hospitals, sports, transport, road safety, town/city life, fishing, sea/leisure, festivals, islands, legends, measurement and careers. Form 2 topics included legends, animals/food/clothing, careers, earthquakes/volcanoes, disability, leisure, cinema, space, food/cooking, sea economy, phosphate mining, time, clothes, examinations, shopping, floods/droughts/fires, sugar production, communications and exploration (printed pp.105–107). These are historical topic contexts, not transferable as current mandatory content without review.
+2. **Vocabulary acquisition and revision:** revise known vocabulary from Tate Oral English Course; introduce selected new vocabulary from L. A. Hill's 2,075 headword list based on Michael West's General Service List (printed pp.101–102).
+3. **Prepositions and adverbial particles:** revise primary-course items and teach selected new items (p.101).
+4. **Grammar and sentence structures:** revise known structures and teach new structures drawing on A. S. Hornby's *A Guide to Patterns and Usage* (p.101).
+5. **Error recognition and correction:** identify common errors in pupils' written work and plan corrective work (p.101).
+6. **Phonemic discrimination and speech:** ear-and-speech training using contrasting phoneme pairs (p.101).
+7. **Aural comprehension:** listen to and understand spoken passages; the outline includes dedicated aural-comprehension work (pp.101–102, 117–118).
+8. **Oral language and composition:** teach new vocabulary and structures orally before written work; prepare oral work and then compose/write (pp.102–103, 116–118).
+9. **Reading fluency and rapid reading comprehension:** practise rapid/speed reading and answer comprehension tasks (pp.101–102, 104, 117–118).
+10. **Intensive reading and close comprehension:** read longer passages and answer searching questions requiring attention to detail and exact meaning (pp.103, 116–118).
+11. **Written composition:** develop written composition after preparatory oral work; sample work included composition passages (pp.104, 117–119).
+12. **Note-taking:** the questionnaire explicitly asks whether note-taking using simpler material would be useful or possible at Form 1 (p.115); this is a discussion prompt, not a confirmed syllabus requirement.
+13. **Reading resource development:** extensive reading materials were recommended to supplement existing published readers (p.117).
+14. **Regional and cultural adaptation:** participants recommended including vocabulary of regional significance and preparing alternative units where cultural backgrounds differed (p.117).
+
+### Teaching sequence and time allocation recorded in the draft
+
+The initial weekly allocation assumed seven 40-minute periods: ear/speech training 5 × 10 minutes; aural comprehension 1 × 20 minutes; oral and written composition 2 × 30 minutes; rapid reading comprehension 1 × 30 minutes; revision/corrective work 2 × 30 minutes; new vocabulary/idioms/structures 2 × 30 minutes (printed p.102). The workshop later recommended a sequence integrating oral work, written reinforcement, speed reading, composition, aural comprehension and intensive reading (pp.117–118). These are historical planning recommendations, not current timetable requirements.
+
+### Historical lineage value for Records 135 and 137
+
+- Provides broad historical predecessor evidence for the existence of a Forms 1–4 English outline and for the domains of vocabulary, structures/grammar, phonemic contrast, oral language, listening, reading comprehension, composition and corrective work.
+- Record 135/137 (2014 Years 9–10 English syllabus) states that its concepts, skills and attitudes were selected from older prescriptions. This 1973 workshop report is a plausible earlier source in that history, but it does **not** prove that any particular 2014 CLO or achievement indicator descends from a specific 1973 item.
+- Keep all 2014 item-level lineage fields as LINEAGE_NOT_YET_FOUND unless a controlled older prescription or an exact textual match is located.
+- Record 132 (1966 SPC Junior Series Reader Book 1) and Record 128 (1991 historical ESL paper) provide additional context for oral-language/graded-reader history. Do not infer that the 1973 outline is the exact Fiji final prescription or that its Form 1–2 vocabulary/weekly topics match the later 2014 syllabus.
+
+### PacEdu handling
+
+- Store the 14 concepts separately as historical source entries with page references; keep draft recommendations, workshop discussion prompts and actual syllabus-outline components distinguishable.
+- Status: HISTORICAL_LINEAGE_REFERENCE; WORKSHOP_DRAFT_EVIDENCE; SUPPLEMENTARY_ONLY; CURRENT_STATUS_UNCONFIRMED; BLOCKED_RIGHTS_REVIEW.
+- Do not promote any entry to current mandatory curriculum or create daily worksheets from this record alone.
+- CAS contact remains DEFERRED_UNTIL_PILOT.
