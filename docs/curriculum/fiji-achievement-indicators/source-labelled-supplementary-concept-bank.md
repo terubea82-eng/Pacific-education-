@@ -3852,3 +3852,133 @@ Use the current issue date and original source with every dataset; distinguish o
 - Use original PacEdu diagrams and data tables; do not copy journal photographs, tables, maps or substantial text without rights clearance. SPREP Public Licence applies only as stated by the portal and should be checked before reuse.
 - **Worksheet gate:** NOT YET AUTHORISED. Required first: retrieve full NISFSAP; inspect full NBSAP targets; verify current BAF/MECC species inventory and legal controls; check rights; map each concept to approved Fiji NCF and official achievement indicators; assign level/prerequisite; complete teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 160 — Fiji native plants, forest biodiversity, threatened birds, endemic reptiles and species recovery concepts
+
+- **Record status:** SOURCE-REVIEWED SUPPLEMENTARY CONCEPTS; not an official student achievement-indicator set.
+- **Concept count:** 38 PacEdu-derived concepts.
+- **Subjects:** Elementary Science; Basic Science; Social Science; Agriculture; Mathematics; Technology; English.
+- **Level:** LEVEL_NOT_SPECIFIED; map to approved Fiji curriculum outcomes before assigning year levels.
+- **Prerequisite suggestions:** Habitat, organism, adaptation, life cycle, food web, simple map and graph reading; verify against official curriculum before use.
+- **Evidence approach:** Use original diagrams, authorised photographs, teacher-prepared fictional maps and dated datasets. No field collection, species handling, forest access or wildlife observation trips implied.
+
+### Source A — Convention on Biological Diversity, Fiji country profile
+
+- **Publisher:** Convention on Biological Diversity (CBD).
+- **Official country profile:** https://www.cbd.int/countries/profile/default.shtml?country=fj
+- **Inspected content:** Fiji biodiversity profile; reported vascular plant, reptile and marine habitat information.
+- **Version limitation:** The page includes national overview figures without a clearly visible common reference date in the inspected extract. Figures are contextual only and must not be presented as a current census.
+- **Classification:** INTERNATIONAL_TREATY_BODY_COUNTRY_PROFILE; DATE_AND_METHOD_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source A**
+
+1. **Native flora diversity** — distinguish native plants from introduced plants using teacher-verified examples. Evidence: learner sorts supplied examples and explains the meaning of native.
+2. **Vascular plant groups** — introduce ferns and seed plants as broad plant groupings in biodiversity records. Evidence: learner classifies supplied plant illustrations into broad groups.
+3. **Plant species counts and uncertainty** — understand that published totals are estimates that depend on taxonomy, survey coverage and the date of assessment. Evidence: learner adds a date/source note to a supplied biodiversity statistic.
+4. **Endemism** — explain that an endemic species is naturally restricted to a particular geographical area. Evidence: learner distinguishes endemic, native-but-wider-ranging and introduced examples.
+5. **Island biogeography** — explore how island separation and habitat availability can influence species distributions. Evidence: learner compares fictional island maps and species-presence tables.
+6. **Habitat diversity** — compare forest, freshwater, estuary, mangrove, seagrass and reef habitats as different ecological settings. Evidence: learner matches organisms to source-supported habitat descriptions.
+7. **Knowledge gaps in marine biodiversity** — recognise that a large number of recorded species does not mean all species are known. Evidence: learner identifies sampling and taxonomic gaps in a fictional survey summary.
+
+### Source B — Fiji National Biodiversity Threat Assessment (BIODEV2030)
+
+- **Authors/partners:** BIODEV2030 Fiji assessment; report hosted by BIODEV2030 programme.
+- **Report PDF:** https://www.biodev2030.org/wp-content/uploads/sites/2/2021/11/FIJI-Final-Report-on-National-Biodiversity-Threat-Assessment_BIODEV-2030.pdf
+- **Inspected content:** report's threatened-bird table and associated assessment text. It cites BirdLife International 2021 and IUCN Red List trend information.
+- **Version limitation:** 2021 status snapshots are historical. Never present these species categories or trends as current without checking the current IUCN/BirdLife species assessment.
+- **Classification:** FIJI_BIODIVERSITY_ASSESSMENT; HISTORICAL_STATUS_SNAPSHOT; CURRENT_SPECIES_STATUS_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source B**
+
+8. **Threatened-species categories** — introduce Critically Endangered, Endangered and Vulnerable as categories used by the cited assessment. Evidence: learner interprets a teacher-provided legend and states its assessment date.
+9. **Near Threatened versus threatened categories** — distinguish Near Threatened from CR, EN and VU in the cited table. Evidence: learner groups example status labels without claiming they are current.
+10. **Population trend language** — interpret increasing, decreasing and stable as trend descriptions, not direct population counts. Evidence: learner explains a simple trend arrow and identifies what it does not tell us.
+11. **Bird diversity and endemicity** — understand that Fiji has distinctive native and endemic bird life. Evidence: learner identifies endemism from a verified species profile.
+12. **Habitat dependence of birds** — connect bird species with forest, coastal, wetland or island habitats only where the selected species source supports the relationship. Evidence: learner matches a small teacher-verified set of species and habitat cards.
+13. **Threat assessment and evidence** — explain why conservation status requires evidence about population, distribution, threats and trend. Evidence: learner identifies evidence fields in a fictional species assessment.
+14. **Time-stamped conservation status** — compare two assessments only when dates and assessment authorities are provided. Evidence: learner labels the dates and avoids treating an older category as current.
+15. **Conservation prioritisation** — explain why species with high extinction risk may need focused conservation action. Evidence: learner justifies a fictional priority using supplied criteria rather than personal opinion alone.
+
+### Source C — National Trust of Fiji, Sovi Basin protected area
+
+- **Issuer:** National Trust of Fiji (NTF).
+- **Official page:** https://nationaltrust.org.fj/sovi-basin/
+- **Inspected content:** Sovi Basin described as Fiji's largest terrestrial protected area; page reports 16,344 hectares, forest, rivers and streams, and records of globally threatened species. It names examples including Degeneria vitiensis, Acmopyle sahniana and the Long-legged Warbler.
+- **Access restriction:** NTF explicitly states Sovi Basin is not open to recreational visitors; research requests require an application.
+- **Classification:** FIJI_PROTECTED_AREA_MANAGER_INFORMATION; SITE_ACCESS_RESTRICTED; SPECIES_STATUS_AND_AREA_STATISTICS_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source C**
+
+16. **Protected-area purpose** — explain how a protected area can conserve habitats and species. Evidence: learner describes the purpose using an original fictional protected-area map.
+17. **Forest ecosystem components** — identify relationships among vegetation, rivers, streams, birds, insects and other forest organisms. Evidence: learner constructs a simple forest ecosystem web from supplied examples.
+18. **Area measurement and scale** — interpret hectares and compare a protected-area area with a teacher-provided familiar area. Evidence: learner reads an area figure with units and source date.
+19. **Species records within a protected landscape** — understand that a protected area may support multiple taxa and threatened species. Evidence: learner organises a supplied species list by broad group.
+20. **Conservation lease and co-management** — introduce the role of landowners, conservation organisations and management committees in a conservation arrangement. Evidence: learner identifies stakeholder roles from a fictional scenario.
+21. **Protected-site access and research permission** — understand that conservation sites may have access restrictions and research permit processes. Evidence: learner identifies why permission and site rules must be followed; no application or visit required.
+
+### Source D — National Trust of Fiji, Iguana Programme
+
+- **Issuer:** National Trust of Fiji.
+- **Official programme page:** https://nationaltrust.org.fj/iguana/
+- **Inspected content:** NTF describes its work since 2009 with partners on captive breeding and reintroduction of crested iguanas, surveys on other islands, forest restoration and a recovery plan. The page names Fiji's native iguanas, including Brachylophus vitiensis, B. bulabula and B. fasciatus, with the programme's species overview.
+- **Version limitation:** Conservation status and programme progress must be checked against current IUCN and Fiji government sources.
+- **Classification:** FIJI_CONSERVATION_PROGRAMME_INFORMATION; CURRENT_STATUS_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source D**
+
+22. **Endemic reptile diversity** — recognise Fiji's distinctive native iguana group using teacher-verified images and names. Evidence: learner distinguishes a Fiji native iguana example from a fictional introduced reptile example.
+23. **Arboreal habitat use** — explain the meaning of arboreal and relate tree-dwelling behaviour to forest habitat. Evidence: learner labels a supplied forest cross-section.
+24. **Herbivory and feeding relationships** — describe plant material as food for herbivorous iguanas, based on programme information. Evidence: learner constructs a simple producer-consumer food relationship.
+25. **Captive breeding and reintroduction** — distinguish captive breeding, release/reintroduction and habitat protection as different conservation actions. Evidence: learner orders a fictional conservation programme sequence.
+26. **Recovery planning** — understand that a species recovery plan coordinates actions, monitoring and partners. Evidence: learner identifies components of a fictional recovery-plan outline.
+27. **Community participation in conservation** — recognise that local community support can contribute to conservation programme success. Evidence: learner proposes a respectful, non-invasive awareness activity for a fictional community.
+28. **Forest restoration and species recovery** — explain why restoring suitable native forest can support a forest-dependent species. Evidence: learner links habitat quality to a fictional species recovery scenario.
+
+### Source E — Ministry of Environment and Climate Change, Fiji's native iguanas and CITES
+
+- **Issuer:** Ministry of Environment and Climate Change, Fiji.
+- **Official article:** https://mecc.gov.fj/fiji-secures-broad-support-as-cites-defers-breeding-registration-for-native-iguanas/
+- **Inspected content:** recent MECC report on CITES discussions, lawful acquisition and traceability, international trade concerns and Fiji's position regarding native iguanas. The article states that the crested iguana is endemic and Critically Endangered and describes Fiji's request for consultation before permits are issued in specified circumstances.
+- **Version/date note:** The article is a recent ministry update (reported as published in the week of this research, November 2026). International permit decisions and CITES proceedings may change; check the latest official notice before using legal or trade details.
+- **Classification:** FIJI_OFFICIAL_MINISTRY_AND_CITES_POLICY_UPDATE; TIME_SENSITIVE; CURRENT_CITES_NOTICE_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source E**
+
+29. **Wildlife trade and conservation risk** — explain why international trade can create risks for threatened native species. Evidence: learner identifies conservation risks in a fictional trade scenario.
+30. **Legal acquisition and traceability** — understand at a general level that lawful wildlife trade requires evidence of origin and traceable records. Evidence: learner identifies missing provenance information in a fictional case; not legal advice.
+31. **CITES and international cooperation** — introduce CITES as an international framework relevant to trade in listed wildlife. Evidence: learner explains why countries cooperate to regulate international wildlife trade.
+32. **Precautionary decision-making** — explain why authorities may defer or scrutinise a decision where species conservation evidence or lawful origin is uncertain. Evidence: learner identifies a cautious option in a fictional case.
+33. **Difference between conservation breeding and commercial trade** — distinguish a conservation programme's stated purpose from a commercial trade proposal. Evidence: learner compares two fictional case descriptions without assuming either is authorised.
+
+### Source F — Fiji Agricultural Journal, Volume 60, Issue 1 (July 2023), herpetofauna survey article
+
+- **Issuer:** Ministry of Agriculture & Waterways, Fiji.
+- **Journal PDF:** https://www.agriculture.gov.fj/documents/booklets/FAJ%20Vol%2060%20Issue%201%20July%202023%20Master%20File%20for%20Web.pdf
+- **Inspected content:** article “An Assessment of the invasiveness of introduced Herpetofauna on Qamea and Matagi Islands”; table of reptiles and amphibians recorded during 2019 and 2020 surveys, with local name, species, distribution and Red List columns.
+- **Version limitation:** Survey locations and 2019–2020 observations are a dated study, not a complete current national checklist.
+- **Rights:** Journal copyright and article/figure rights require review before reuse.
+- **Classification:** FIJI_RESEARCH_SURVEY; HISTORICAL_SITE_DATA; RIGHTS_REVIEW_REQUIRED.
+
+**PacEdu-derived concepts from Source F**
+
+34. **Herpetofauna as a scientific grouping** — explain that herpetofauna includes reptiles and amphibians. Evidence: learner sorts supplied species cards into the two broad groups.
+35. **Native, endemic and introduced distribution labels** — interpret these distinct labels in a dated species table. Evidence: learner reads the distribution column and explains the terms.
+36. **Island survey transects** — understand that researchers use planned survey routes or transects to record observations. Evidence: learner interprets a fictional transect map and identifies its sampling limits.
+37. **Presence records versus population estimates** — distinguish a species being recorded at a survey site from knowing its total population size. Evidence: learner writes a limitation statement for a presence-only table.
+38. **Comparing survey seasons and years** — recognise that survey timing and repeat observations influence what researchers record. Evidence: learner compares two fictional survey dates and identifies missing seasonal information.
+
+### Safeguards, rights and curriculum mapping
+
+- All 38 entries are **PACEDU_DERIVED_CONCEPT**, not official Fiji achievement indicators, CLOs or achievement standards.
+- CBD country-profile figures and the 2021 BIODEV2030 threatened-bird table are historical/contextual snapshots. Do not use their totals or threat categories as current without a current authoritative species assessment.
+- Sovi Basin is explicitly not open for recreational visits. Do not propose class trips or field exercises there; research access is permit-based.
+- Species locations, nest sites, roosts and sensitive habitat coordinates must not be published or collected by learners.
+- Do not capture, handle, feed, tag, transport, breed, release, trade or approach iguanas, birds, reptiles, amphibians or other wildlife. No student wildlife surveys, captive-breeding activity or reintroduction.
+- No learners enter forests, protected areas, islands, farms or customary lands without landowner/community permission, risk assessment, trained supervision and accessibility planning. Use supplied media and fictional data by default.
+- Treat all trade, CITES, permit and protected-species statements as informational only. Current legal rules and notices must be checked with MECC/BAF/CITES authorities; learners must not make permit or trade decisions.
+- Do not reproduce source photographs, maps, figures or substantial text without rights clearance. Create original PacEdu illustrations and use appropriately licensed images.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: verify current national species inventories and IUCN/BirdLife records; retrieve current species recovery plans and official plant conservation references; check CITES/legal notices; complete rights review; map concepts to approved Fiji NCF and official achievement indicators; assign level/prerequisites; complete teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
