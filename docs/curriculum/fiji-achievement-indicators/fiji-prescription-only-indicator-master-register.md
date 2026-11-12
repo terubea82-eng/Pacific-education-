@@ -419,3 +419,13 @@ Three source-labelled records have been added to the source bank, bringing it to
 **Important senior Mathematics control:** do not combine Life Mathematics and Pure Mathematics into one undifferentiated Year 12 indicator set. Retrieve the approved pathway-specific syllabuses and verify their effective versions before accepting indicators.
 
 Current controlled prescription sources accepted remain 0; active prescribed indicators remain 0. No worksheet has been created from the trial Mathematics copy, annual report or resource inventory.
+
+
+## Pre-primary policy, national policy framework and Mathematics version-control findings (12 November 2026)
+
+Three additional official records were indexed in the source bank (27 records total):
+- **National Pre-Primary Education Policy (2025):** authoritative policy defines PPE as the one-year programme for five-year-olds before Year 1 and says covered programmes must use the approved Ministry curriculum. It identifies Na Noda Mataniciva as national guidelines for ages 3–6 and the 2013 NCF as spanning early childhood to Year 13. PacEdu must distinguish the broader 3–6 Mataniciva guidance from the five-year-old pre-primary year; obtain approved curriculum outcome pages before making indicator claims. Official source: https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf
+- **2023 Denarau Declaration / Fiji National Education Policy Framework 2024–2033:** official policy framework supports NCF review and policy priorities such as climate, financial and digital literacy. It is not itself a subject/year prescription; do not convert policy themes into mandatory indicators without approved curriculum wording. Official source: https://www.education.gov.fj/wp-content/uploads/2024/02/2023-Denarau-Declration.pdf
+- **Ministry Annual Report 2020–2021:** confirms a Years 1–8 literacy/numeracy package with NCF, scope-and-sequence overviews, year-level scope and sequences and teacher guides. It also describes a Year 11 Mathematics pilot using “Life Skills Mathematics” and “Applied Mathematics”. This differs in naming from the 2022–2023 report's “Life Mathematics” and “Pure Mathematics” labels. Treat as a version-control warning: retrieve approved pathway syllabuses and establish effective dates; do not merge labels or indicator sets by assumption.
+
+Current controlled subject prescription sources accepted remain 0; active prescribed indicators remain 0. No worksheets have been created from policy documents or annual-report descriptions.
