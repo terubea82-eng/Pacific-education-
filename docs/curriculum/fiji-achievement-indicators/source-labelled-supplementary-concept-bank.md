@@ -1622,3 +1622,130 @@ These are not subject content indicators and do not replace a prescription's own
 The Number/Operations, Patterns/Algebra, Measurement/Shape, Data/Statistics/Probability and mathematical-thinking entries in Record 124 are cross-level supplementary concept candidates from USP NRR and Fiji historical research. They are not yet assigned to Fiji classes or marked mandatory. The next work is to inspect source modules/pages and match each candidate to the relevant Fiji controlled prescription and older lineage before preparing class-specific daily activities.
 
 **Sources:** Fiji Ministry of Education and Heritage Arts, Annual Report 2022–2023, section “The Revised Curriculum,” reporting final Years 1–4 syllabi and Literacy/Numeracy Guides supplied to schools and draft trial copies: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf ; USP Numeracy Resource Repository, scope, content, cognitive components, blocks and licence notice: https://www.usp.ac.fj/usp-stemp/nrr/ .
+
+## Record 126 — Extracted Fiji Year 6/8 English, Year 6/8 PE and Year 6 Mathematics content from Ministry teaching resources
+
+**Purpose:** Actual source-content extraction for the teaching bank. This record captures content and indicators visible in the inspected source pages. It is not a declaration that the 2015 teaching guide or the 2020/2021 textbook is the current mandatory prescription in 2026.
+
+### Source A — Fiji Ministry of Education, Teachers Guide for Y6 & Y8, Term 3 (2015)
+
+- **Official source URL:** https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
+- **Publisher:** Curriculum Development Unit, Fiji Ministry of Education.
+- **Edition/date:** First edition 2015.
+- **Printed pages inspected:** cover/front matter; pp. 1–8.
+- **Source purpose statement:** compiled to assist Year 6 and Year 8 teachers to design lessons after the external examination (printed p.1). It is therefore a Term 3 post-examination guide, not proof of the complete annual syllabus.
+- **Rights:** Ministry copyright; classroom reproduction permitted with CDU acknowledgement; other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services. PacEdu digital adaptation/reuse is BLOCKED_RIGHTS_REVIEW pending permission.
+- **Current status:** PENDING_SOURCE_REVIEW as to current applicability and lineage; retain as an official historical teaching resource, not PRESCRIPTION_VERIFIED.
+
+#### A1. English — Year 6 Reading Skills
+
+- **Source locator:** printed p.7; section heading “ENGLISH READING SKILLS-Y6”; sub-strand EN 6.1.
+- **Content Learning Outcome:** EN 6.1.1 — “Evaluate a range of written texts and make meaning out of it.”
+- **Achievement-indicator concepts extracted from the source list:**
+  1. Identify different text types.
+  2. Discuss the main ideas in a passage.
+  3. Use skimming and scanning to identify main points.
+  4. Summarise a story.
+  5. Read fluently with understanding.
+  6. Use new vocabulary correctly in a sentence.
+  7. Form new words from a root word.
+  8. Answer comprehension questions correctly.
+  9. Write comprehension answers in complete sentences.
+- **Text-type concepts:** narrative; descriptive; procedural/instructional; fiction; non-fiction.
+- **Vocabulary concepts:** synonyms; antonyms; parts of speech; spelling; word meaning.
+- **Reading modes and oral-language teaching concepts:** group reading; choral reading; modelled reading; individual reading; topic discussion; oral presentation; dialogue and role-play.
+- **PacEdu interpretation / observable evidence (derived, not official wording):** learner identifies a text's type and main idea, locates key information using skimming/scanning, retells or summarises the text, reads with understanding, explains unfamiliar vocabulary, builds related words from a root, and writes a complete-sentence response supported by the passage.
+- **Level:** Year 6 explicitly stated.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND. Search for the earlier Year 6 English syllabus/prescription and older teacher guides before any worksheet is authorised.
+- **Status:** Official Ministry teaching-guide content; historical Term 3 guide; not yet verified as current 2026 prescription. PENDING_SOURCE_REVIEW; no worksheet authorised.
+
+#### A2. English — Year 8 Reading / Literary Texts
+
+- **Source locator:** printed pp. 8–9; heading “YEAR 8 ENGLISH READING SKILLS” begins on p.8.
+- **Source outcomes/concepts extracted:**
+  1. Share, reflect on, clarify and evaluate opinions and arguments about literary texts.
+  2. Recognise, explain and analyse how stories, characters, settings and experiences are reflected in literary genres and discuss the appeal of those genres.
+  3. Identify characters, themes and settings in poems and short stories.
+  4. Rank or prioritise ideas by importance.
+  5. Compare and contrast ideas, characters, tone, audience and special features.
+  6. Present interpretations in chart, poster, song or video form.
+  7. Discuss and prepare costumes and dramatise a poem or story using relevant sound/music.
+  8. Discuss characters, themes and settings and present findings in a class newspaper.
+  9. Explore and present interpretations of a prescribed drama text.
+- **Text concepts named by source:** poems; short stories; myths and legends; novel; drama; readers' theatre; creative writing. The guide names specific literary works; PacEdu must not reproduce those works or assume they remain prescribed.
+- **PacEdu interpretation / observable evidence (derived):** learner supports an interpretation with details from the text, compares literary elements, explains how genre shapes reader response, and communicates an interpretation in an appropriate oral, written or visual form.
+- **Level:** Year 8 explicitly stated.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND.
+- **Status:** PENDING_SOURCE_REVIEW; guide is a Term 3 resource, not proof of current Year 8 prescription. No worksheet authorised.
+
+#### A3. Physical Education — Year 6
+
+- **Source locator:** printed p.4; section “PEMAC - PHYSICAL EDUCATION”, “Training and safety”; PE 6.0 Fitness training method and safety.
+- **Source outcomes/indicator concepts:**
+  1. PE 6.1.1.1a — study and demonstrate the relationship between fitness and training methods.
+  2. PE 6.1.2.2a — demonstrate types of aerobic and anaerobic training.
+  3. PE 6.1.2.2b — describe and show training effects on fitness.
+  4. PE 6.1.2.2c — analyse and explain fitness through various types of training.
+  5. PE 6.1.2.2d — explore and perform basic first aid in sports injuries.
+- **Concepts/content:** aerobic activities (walking, cycling, running, cross-country running, rowing); anaerobic activities (sprinting, skipping rope, weights, swimming); training methods; sport-specific fitness; running, kicking, tagging, evading, jumping, throwing, stretching; plyometric, isometric, isotonic and isokinetic training terms; cuts/wounds, dislocations, fractures and concussion as sports-injury topics.
+- **PacEdu interpretation / observable evidence (derived):** learner classifies examples of aerobic and anaerobic activity, demonstrates safe exercises, explains how training relates to fitness and sport, and identifies when an injury requires appropriate first-aid support. First-aid activity requires a qualified/safe teaching plan and must not ask children to perform risky treatment.
+- **Level:** Year 6 explicitly stated.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND.
+- **Status:** PENDING_SOURCE_REVIEW; official guide content but current prescription alignment and safety review remain outstanding.
+
+#### A4. Physical Education — Year 8
+
+- **Source locator:** printed pp. 4–5; “Skill learning and Participation”.
+- **Source outcomes/indicator concepts:**
+  1. PE 8.1.1.1a — study and demonstrate skills in different sports.
+  2. PE 8.1.2.2a — investigate similarities and differences between skills used in sports.
+  3. PE 8.1.2.2b — describe and take part in skills learning and execution.
+  4. PE 8.1.1.1b — explore and design skills needed in a chosen activity.
+  5. PE 8.1.2.2c — analyse and demonstrate skills relevant to chosen sports.
+  6. PE 8.1.2.2d — explore and perform basic skills in chosen sports.
+- **Skill concepts:** catching, passing, kicking, dribbling, running, jumping, twisting, falling, rucking, batting, skipping and evading; eye-hand coordination; arm/leg movement; stepping and control; force transfer; body position and ball placement.
+- **Sport contexts named:** soccer, rugby, cricket, hockey, badminton, running and skipping.
+- **PacEdu interpretation / observable evidence (derived):** learner demonstrates selected sport skills safely, compares how skills are used across sports, explains why a skill is needed in a chosen activity and participates constructively in a team.
+- **Level:** Year 8 explicitly stated.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND.
+- **Status:** PENDING_SOURCE_REVIEW; current prescription alignment and safe adaptation still require review.
+
+### Source B — Fiji Ministry of Education, Year 6 Mathematics Activity Book
+
+- **Source identity:** Ministry of Education, Fiji, Year 6 Maths Activity Book; © 2014; front matter identifies revised versions 2020 and 2021; produced by the Curriculum Advisory Service Unit.
+- **Inspected copy:** third-party Scribd-hosted text copy; use the Ministry identity/title-page details as attribution, but obtain the controlled Ministry copy for definitive pagination/version verification.
+- **Source URL inspected:** https://www.scribd.com/document/986450967/y6-Mathematics-Textbook
+- **Source page structure:** five strands — Number and Numeration (begins p.5); Algebra (p.41); Measurement (p.46); Geometry (p.71); Chance and Data (p.83).
+- **Rights:** source says Ministry copyright; schools may reproduce in part or full for classroom purposes only with CDU acknowledgement; any other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services. PacEdu app adaptation/reuse is BLOCKED_RIGHTS_REVIEW pending permission.
+- **Current status:** official Ministry resource identity is visible, but current controlled edition and whether each item remains part of the current mandatory prescription are not verified. Keep as a reference resource, not PRESCRIPTION_VERIFIED.
+
+#### B1. Number and Numeration — extracted Year 6 indicators/concepts
+
+- **Source locator:** printed pp. 6–17, especially pp. 7–17.
+- **Source achievement-indicator wording/concepts visible in inspected pages:**
+  1. Identify and write numbers up to six digits.
+  2. Write prime factors and identify composite numbers up to 100.
+  3. Round numbers to the nearest thousand and hundred thousand (the explanation also gives nearest ten thousand).
+  4. Express numbers in ascending and descending order.
+  5. Explain properties of sets, including unions, intersections, null/empty and equivalent sets, cardinal numbers and Venn diagrams.
+  6. Add and subtract six-digit numbers using place value.
+  7. Show commutative and associative properties of addition and multiplication.
+  8. Multiply two- to six-digit numbers by two-digit numbers.
+  9. Multiply numbers by 10, 100 and 1,000.
+  10. Identify and generate equivalent fractions.
+  11. Add and subtract fractions by using common denominators and simplifying where appropriate.
+- **Concepts visible in examples and practice:** number names and numerals; expanded form; place value; prime factorisation; composite numbers; rounding; ordering; set membership; union and intersection notation; null sets; carrying and regrouping; borrowing; commutative and associative laws; distributive/expanded multiplication methods; powers of ten; fraction equivalence; numerator/denominator; common denominators; simplifying fractions.
+- **PacEdu interpretation / observable evidence (derived):** learner represents six-digit numbers in words, numerals and expanded form; classifies prime/composite numbers; rounds and orders numbers; represents sets in Venn diagrams; calculates with place-value strategies; explains operation properties; multiplies using place-value decomposition; and generates equivalent fractions and performs fraction operations.
+- **Level:** Year 6 explicitly stated.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND for each item. Search the earlier Fiji Year 6/primary Mathematics prescriptions and prior activity books; do not assume this 2014/2020/2021 book itself proves its lineage.
+- **Status:** Ministry resource content, but not current prescription verified. PENDING_SOURCE_REVIEW; direct digital reproduction/adaptation BLOCKED_RIGHTS_REVIEW.
+
+### Source lineage and worksheet gate for Record 126
+
+- The sources above are now content-extracted, but no older source lineage has yet been confirmed for the listed English, PE or Mathematics entries.
+- Do not create daily mandatory worksheets from these entries yet. First locate the earlier Fiji prescriptions/syllabi and map each indicator/concept to the exact earlier source and page; separately verify the current controlled prescription and current scope-and-sequence.
+- The Year 6 Mathematics book and Y6/Y8 Teacher Guide contain Ministry classroom-reproduction notices. These do not automatically authorise PacEdu commercial/digital adaptation. Keep reuse blocked pending rights review.
+- For every future worksheet mapping, retain source wording separately from PacEdu explanation; identify the year/subject; use a worked example, guided and independent practice, application, evidence and prerequisites only after lineage/current-prescription checks; set review state PENDING_TEACHER_REVIEW.
+- CAS contact remains DEFERRED_UNTIL_PILOT, as instructed.
+
+**Sources:** Ministry Y6 & Y8 Teachers Guide, Term 3 (2015), printed pp. 1–8: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf ; Ministry Year 6 Maths Activity Book (2014; revised 2020/2021), inspected text copy: https://www.scribd.com/document/986450967/y6-Mathematics-Textbook .
