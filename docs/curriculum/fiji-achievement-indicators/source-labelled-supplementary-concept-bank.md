@@ -383,3 +383,15 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Lineage/use:** Preserve as a Year 1 English historical lineage source. Compare its exact outcomes and concepts with the final Years 1–4 revised Literacy and Numeracy syllabus/guide and any subsequent authorised English materials. Do not use this older book as the current Year 1 prescription where the later revised package governs.
 - **Status and reuse:** Ministry-attributed edition hosted by a third party; authenticity and full version completeness should be confirmed against a Ministry copy. Classroom reproduction conditions do not automatically permit PacEdu external/commercial redistribution or adaptation.
 - **Source link:** https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/
+
+
+## Record 30 — Ministry Years 3 & 4 Literacy Guide (official teacher guidance)
+
+- **Issuing authority / source:** Fiji Ministry of Education, Heritage & Arts; Ministry-hosted PDF, “Years 3 & 4” (Literacy Guide for Lower Primary), https://www.education.gov.fj/wp-content/uploads/2022/06/Literacy_Guide_-for_years_34.pdf
+- **Classification:** Official Ministry teacher guide aligned to the syllabus; not itself a controlled prescription or proof that each activity is a mandatory achievement indicator.
+- **Document evidence:** Foreword says the guide is aligned to the syllabus and provides practical strategies for teachers; developed with AQEP and piloted in 85 primary schools. PDF pp. 3–5 describes the daily guide; pp. 36–37 contains Fiji-language phonics; pp. 40 onward includes reading assessment/checklists.
+- **Teaching concepts to index (not activated as prescribed indicators):** oral language and description; shared reading; prediction and comprehension; sight-word learning; phonics and word analysis; sentence construction; reading fluency; reading comprehension; writing and dictation; monitoring reading progress.
+- **Teaching routine evidence:** daily guide sequences oral language, shared reading, five new sight words, phonics/word activities, and reading/writing activities. Treat as teacher implementation guidance and check alignment against the applicable approved year-level syllabus before use.
+- **Historical relationship:** complements earlier primary literacy/phonics materials; exact concept-by-concept lineage to current Years 1–4 final syllabuses remains pending.
+- **Status / reuse:** Official Ministry-hosted guide; edition/version date not explicit in retrieved front matter. Copyright and adaptation permissions must be checked before reproducing or adapting its text in PacEdu.
+- **Worksheet eligibility:** `SUPPLEMENTARY_ONLY` pending current prescription crosswalk, rights review and teacher review. Do not present the guide's activity sequence as a legal prescription.
