@@ -335,3 +335,12 @@ This policy is relevant to PacEdu resource-access and copyright workflow design,
 ### Required next evidence
 
 Request from CAS the current controlled subject-by-year prescriptions for Science, Social Science and all remaining primary/secondary subjects, including exact indicator codes and wording, approval and effective dates, amendment/supersession history, and permission terms for digital reproduction. Also request confirmation whether the Y6/Y8 Term 3 guide remains in force for any limited post-examination purpose.
+
+
+## Source-labelled supplementary concept bank — 12 November 2026
+
+A separate reference-only bank has been created at `docs/curriculum/fiji-achievement-indicators/source-labelled-supplementary-concept-bank.md` (7 source-labelled records). It preserves official ECE guideline concepts, RSEC Years 9–10 English guide concepts and distinct achievement-standard/CLO terminology, primary Years 1–8 package metadata, the 2016 primary subject-resource inventory, the official assessment/reporting policy concepts, a third-party 2018 Year 13 Biology trial lead, and a UNESCO/USP Pacific ESD resource. These records are explicitly NOT active prescribed indicators.
+
+Recommended design: maintain separate `prescribed_indicators`, `reference_outcomes`, `supplementary_concepts`, `activity_mappings`, and `worksheet_versions` records. Each record must retain source title, authority/publisher, URL, date/version, page/section, level/subject, verification state and reuse rights. A supplementary worksheet may be drafted only after teacher validation and rights review and must be labelled “SUPPLEMENTARY — NOT A SUBSTITUTE FOR THE FIJI PRESCRIPTION”. Official daily worksheets remain blocked until current controlled prescriptions are verified.
+
+Current controlled Fiji prescription sources accepted: 0. Active prescribed indicators: 0. Source-labelled reference/supplementary records: 7. Approved daily worksheets from active prescriptions: 0. No indicator was promoted from a guideline, annual report, third-party host, trial syllabus or regional resource.
