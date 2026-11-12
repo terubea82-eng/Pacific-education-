@@ -407,3 +407,13 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Historical lineage:** 2015 CDU guide; predecessor/successor syllabus lineage and current status not yet established.
 - **Rights:** Ministry copyright notice permits schools to reproduce in part or full for classroom purposes only with acknowledgement; any other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services (PDF p.i). PacEdu reuse/adaptation is therefore blocked pending written permission.
 - **Worksheet eligibility:** `BLOCKED_RIGHTS_REVIEW` for reproduction/adaptation; concept indexing only. Also requires current prescription crosswalk and teacher review.
+
+
+## Record 32 — Ministry Annual Report 2020–2021: primary curriculum revision and senior Mathematics pilot
+
+- **Primary source:** Fiji Ministry of Education, Heritage and Arts, *Annual Report 2020–2021*, Ministry-hosted PDF, https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+- **Classification:** Official annual-report evidence of curriculum development and implementation; not a syllabus or achievement-indicator source.
+- **Primary Years 1–8:** p.50 reports changes to the Years 1–8 English and Mathematics syllabus and identifies the package components as the Fiji National Curriculum Framework, scope-and-sequence overviews, year-level scope and sequences, and teacher guides. Actual controlled documents and approval/version details must still be retrieved.
+- **Senior Mathematics:** p.52 reports a Year 11 pilot of “Life Skills Mathematics” in 21 schools and contrasts it with the then-current “Applied Mathematics” curriculum. Do not assume these labels are identical to later Life Mathematics and Pure Mathematics pathways; verify the approved syllabus, change history and effective date.
+- **Status:** Official historical implementation evidence; no indicator activation.
+- **Worksheet eligibility:** `PENDING_SOURCE_REVIEW` as a source-location lead only; no worksheet may be generated from this annual report.
