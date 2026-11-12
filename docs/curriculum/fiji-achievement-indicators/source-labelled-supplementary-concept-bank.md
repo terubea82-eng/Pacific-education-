@@ -2998,3 +2998,76 @@ Use the current issue date and original source with every dataset; distinguish o
 - Respect privacy and customary/community knowledge. Use fictional or anonymised locations and avoid collecting household water bills, addresses, water-source security details or sensitive customary information.
 - **Worksheet gate:** NOT YET AUTHORISED. First verify current consolidated legislation and commencement/amendment notices; obtain the current Fiji National Drinking Water Quality Standards and relevant current technical guidance; map each concept to approved Fiji NCF and official Ministry indicators; set year levels and prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 152 — Fiji Ministry of Education: Minimum Standards on Water, Sanitation and Hygiene (WASH) in Schools Infrastructure
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED LEARNING CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Source title:** *Minimum Standards on Water, Sanitation and Hygiene (WASH) in Schools Infrastructure*  
+**Issuer:** Ministry of Education, National Heritage, Culture & Arts, Government of Fiji  
+**Lead author:** Eng. Liliane Sandra Kente  
+**Date:** September 2012  
+**Source copy:** https://livelearn.org/assets/media/docs/resources/Fiji_MEHA_WinS_Standards.pdf  
+**Source quality:** Ministry-authored document, located in a non-Ministry host. Obtain a controlled Ministry copy and confirm current status before relying on it as a current school-facility standard.  
+**Inspected source locations:** pp.8–13 (purpose, policy context, school health, learning, gender, community and lifelong skills); pp.14–16 (water); pp.17–22 (sanitation, accessibility, waste and drainage); pp.23 (hygiene promotion); pp.24–28 (assessment checklist); pp.31–35 (water-quality parameter tables).  
+**Classification:** FIJI_PRIMARY_GOVERNMENT_TECHNICAL_GUIDE; HISTORICAL_SCHOOL_WASH_STANDARD; CURRENT_VERSION_CHECK_REQUIRED; RIGHTS_REVIEW_REQUIRED.  
+**Level:** LEVEL_NOT_SPECIFIED pending mapping to approved Fiji NCF and current Ministry year-level indicators.  
+**Subjects:** Healthy Living; Elementary Science; Basic Science; Social Science; Mathematics; English; Technology; Arts; Agriculture.
+
+### Source-derived concepts and observable evidence
+
+1. **Water sources in Fiji** — the guide identifies WAF supply, wells, springs, rainwater, rivers, streams and oceans as water sources; source §3.1, printed p.14. Evidence: learner classifies illustrated source types and distinguishes surface water, groundwater and harvested rainwater.
+2. **Water quantity and water quality are different** — the guide treats availability in quantity and quality as separate planning concerns; source §3.1, printed p.14. Evidence: learner explains the difference using a fictional data table with litres and test results.
+3. **Potable and non-potable water** — drinking water and water intended for other uses must not be confused; source §§3.1.1–3.1.2, printed pp.14–15. Evidence: learner classifies labelled fictional water-use scenarios and explains why a non-drinking-water label matters.
+4. **Safe drinking-water access at school** — the guide calls for safe drinking-water access and hygienic drinking arrangements; source §3.1.1, Standard 1, printed p.14. Evidence: learner identifies safe-access features on an illustrated school plan; learners do not inspect or certify real water.
+5. **Water-quality indicators** — the guide refers to physical and microbiological parameters and directs readers to its annex; source §3.1.1, Standard 2, and Annex 1, printed pp.14, 31–35. Evidence: learner groups supplied example results into physical appearance, chemical/physical measurements and microbiological evidence without deciding that real water is safe.
+6. **Contamination and risk contexts** — the guide identifies suspected contamination and risk contexts such as flooding, mining and intensive agriculture; source §3.1.1, printed p.14. Evidence: learner traces a fictional contamination pathway from land use to a water source.
+7. **Non-potable water purposes** — water not intended for drinking may be used for handwashing, body washing and cleaning; source §3.1.2, printed p.15. Evidence: learner matches non-drinking uses to a labelled water supply in a fictional school diagram.
+8. **Clear identification of non-potable water** — the guide requires non-potable supplies to be clearly identified and warns against drinking them; source §3.1.2, printed p.15. Evidence: learner interprets a clear pictorial sign and explains its purpose.
+9. **Water storage and supply resilience** — school water supply systems include storage and may incorporate rainwater harvesting; source §3.1.3, Standard 5, printed p.16. Evidence: learner labels a rainwater harvesting and storage diagram and identifies the purpose of a reserve.
+10. **Rainfall variability and water planning** — the guide connects rainwater supply with Fiji's variable rainfall cycle; source §3.1, printed p.14, and §3.1.3, printed p.16. Evidence: learner reads a fictional monthly rainfall chart and describes how seasonal variation affects stored water.
+11. **Sanitation and health** — sanitation facilities support health, attendance, learning and staff working conditions; source §3.2, printed p.17. Evidence: learner explains a simple cause-and-effect relationship between sanitation access, health and school participation.
+12. **Sanitation facility planning and ratios** — the guide discusses facility quantities in relation to school populations; source §3.2.1, Standard 6, printed pp.17–18. Evidence: learner solves a fictional ratio/counting task. Historic facility ratios are not to be presented as current mandatory construction rules.
+13. **Privacy, dignity and equal access** — separate and private sanitation arrangements are addressed for girls and boys; source §3.2.1, printed p.17. Evidence: learner identifies privacy and dignity features in a fictional facility plan using respectful, non-stigmatising language.
+14. **Accessible sanitation design** — the guide includes an accessible toilet cubicle for children with special needs and accessible hygiene facilities; source §3.2.1 and Annex 3, printed pp.17, 37–38. Evidence: learner identifies access barriers and proposes a design improvement on a diagram. The 2012 wheelchair-specific example must not be treated as a complete current accessibility standard.
+15. **Age-appropriate facility design** — the guide addresses child-sized toilet and washbasin dimensions for Classes 1–3; source §3.2.1, printed pp.17–18. Evidence: learner compares labelled design drawings and explains why facilities should be usable by children of different ages. Do not use the historical dimensions as current building specifications.
+16. **Menstrual hygiene facilities and dignity** — the guide discusses sanitary materials, disposal and shower provision; source §§3.2.1–3.2.2 and §3.3, printed pp.18–19, 23. Evidence: learner identifies respectful, private and hygienic facility features in an age-appropriate, non-stigmatising scenario.
+17. **Cleanable, ventilated and well-lit facilities** — sanitation quality includes hygiene, cleanable surfaces, ventilation and lighting; source §3.2.2, Standard 9, printed p.19. Evidence: learner identifies features that make a fictional facility safer and easier to maintain.
+18. **Drainage and stagnant-water prevention** — the guide addresses runoff, drainage and avoiding stagnant water; source §3.2.2 and Standard 12, printed pp.19, 22. Evidence: learner interprets a fictional site diagram and identifies where drainage problems could create stagnant pools.
+19. **Waste separation** — the guide calls for separation of biodegradable and non-biodegradable waste; source §3.2.4, Standard 11, printed p.21. Evidence: learner sorts clean, safe picture cards into waste categories and explains the difference.
+20. **Composting and waste recovery** — composting is identified as a possible approach for biodegradable waste; source §3.2.4, Standard 11, printed p.21. Evidence: learner sequences a diagram showing how suitable plant material can become compost. No handling of unknown or contaminated waste.
+21. **Hygiene practices as teachable skills** — hygiene education includes handwashing, toilet use, cleaning, hygienic items and waste disposal; source §3.3, Standard 13, printed p.23. Evidence: learner sequences illustrated handwashing steps and selects appropriate hygiene actions for a fictional routine.
+22. **Hygiene behaviour and role modelling** — the guide discusses monitoring hygiene practices and positive examples from adults; source §3.3, Standard 14, printed p.23. Evidence: learner identifies supportive hygiene role-modelling in a short scenario without publicly judging or shaming classmates.
+23. **Fairness and non-discrimination in shared tasks** — cleaning and waste activities should be organised fairly, transparently and without discrimination; source §3.3, printed p.23. Evidence: learner reviews a fictional duty rota and identifies unequal allocation or unfair treatment.
+24. **Hygiene tasks must not be punishment** — the guide explicitly says school cleaning activities should not be used as punishment; source §3.3, printed p.23. Evidence: learner distinguishes a fair shared-care routine from a punitive or humiliating task in a fictional case.
+25. **School WASH assessment and evidence** — the assessment checklist asks about water quality, quantity, toilets, cleaning, waste and hygiene promotion; source §4, printed pp.24–28. Evidence: learner categorises sample checklist questions and distinguishes observation from a technical test.
+26. **Water-quality data and units** — Annex 1 names parameters including pH, colour, turbidity, residual chlorine, total dissolved solids, conductivity, thermotolerant coliforms, E. coli and total coliforms; source Annex 1, printed p.31. Evidence: learner matches parameter names to supplied units or plain-language descriptions using mock data only.
+27. **Microorganisms and health** — the glossary and water-quality annex distinguish microorganisms and microbiological indicators; source definitions, printed pp.6–7, and Annex 1, printed p.31. Evidence: learner explains that microorganisms are not all visible and that laboratory testing is needed for microbiological safety.
+28. **School environment and solid-waste management** — the guide includes cleanliness, waste disposal and environmental management; source §§3.2.2–3.2.4 and checklist §4.4, printed pp.19–22, 27. Evidence: learner identifies safe waste-management features on a fictional school-site illustration.
+29. **Water, sanitation and learning conditions** — the guide links adequate facilities to attendance, learning and lifelong skills; source §§2.1–2.6, printed pp.12–13. Evidence: learner constructs a simple cause-and-effect map showing how WASH supports participation and wellbeing.
+30. **Gender-responsive and inclusive WASH planning** — the guide includes a dedicated gender discussion and considers different school users; source §2.4 and §3.2.1, printed pp.13, 17–18. Evidence: learner evaluates a fictional school plan for privacy, equal access and inclusion without stereotyping.
+
+### Separate classification: school-facility standards versus learner learning concepts
+
+- The document's Standards 1–14 and its assessment checklist are **school infrastructure/service standards and facility assessment criteria**, not student learning achievement indicators.
+- The 30 numbered concepts above are PacEdu paraphrases for possible curriculum mapping. They are not official Ministry CLOs, year-level outcomes or assessment standards.
+- Annex 1 contains historical water-quality values adopted from the Fiji National Drinking Water Quality Standards as cited by the 2012 guide. Do not copy those numerical limits into new learner materials as current standards until the current Ministry of Health standard and any revisions are obtained and checked.
+- The guide's construction dimensions, toilet ratios, storage tank capacities and water-quantity recommendations are historical technical requirements. Do not use them as current design or compliance advice without confirmation by the relevant Fiji authorities.
+- The source itself lists the Fiji National Drinking Water Standards as a 2011 reference (printed p.29). This record does not claim that the 2011 standard or the 2012 WASH document remains current.
+
+### Current corroboration and follow-up sources
+
+- Water Authority of Fiji, current public water-quality information: https://waterauthority.com.fj/awareness-safety/water-safety/ . WAF says its National Water Quality Laboratory collects samples, analyses results and monitors drinking-water quality against WHO guidance or Fiji National Drinking Water Quality Standards. This is a current institutional description, not the numerical standard itself.
+- Ministry of Health and Medical Services, *Guidelines for Climate-Resilient and Environmentally Sustainable Health Care Facilities in Fiji* (©2020): https://www.health.gov.fj/wp-content/uploads/2021/03/Guide-for-CRESHCF.pdf . This is a healthcare-facility guide, not a school standard, but its WASH sections provide supplementary concepts about water safety plans, storage, emergency monitoring, maintenance and climate resilience. Do not apply healthcare-facility checklist requirements directly to schools.
+- Ministry of Health and Medical Services, Public Advisory #40, 21 September 2026, Batiki water crisis: https://www.health.gov.fj/rise-in-diarrhoea-cases-on-batiki-island-sparks-emergency-ministry-of-health-response-to-el-nino-water-crisis/ . This is a dated current-affairs case study for drought, rainwater storage, water supply resilience, hygiene and public-health communication. The advisory's instructions are time- and event-specific; do not generalise them as a permanent national protocol.
+
+### Safety, rights, curriculum and review safeguards
+
+- No learner should test, certify, taste or drink unknown water; handle sewage, wastewater, sanitary waste, chemicals, disinfectants or contaminated samples; enter tanks, wells, drains, septic systems or treatment sites; or inspect private toilet facilities.
+- Use safe classroom diagrams, mock water-quality datasets, photographs with appropriate rights, fictional school plans and non-sensitive case studies. All hygiene instruction must protect dignity and privacy.
+- Never make a learner responsible for auditing classmates' bodies, menstrual status, hygiene, disability or family circumstances. No public rankings, shame, punishment or discriminatory cleaning rota.
+- Any school WASH assessment must be carried out by authorised adults using current approved standards, not by children.
+- **Worksheet gate:** NOT YET AUTHORISED. First obtain a controlled current Ministry copy and determine whether the 2012 school WASH standards have been superseded; obtain current Fiji National Drinking Water Quality Standards; map concepts to approved Fiji NCF and official Ministry indicators; confirm levels and prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
