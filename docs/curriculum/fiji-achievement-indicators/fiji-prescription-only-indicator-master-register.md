@@ -471,3 +471,8 @@ The Ministry-hosted *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for 
 ## Record 32 — Annual Report 2020–2021: Mathematics version-control evidence
 
 The Ministry's 2020–2021 Annual Report, pp.50 and 52, is an official record of curriculum revision, not a prescription. Page 50 identifies the Years 1–8 English/Mathematics package components (NCF, scope-and-sequence overviews, year-level sequences and teacher guides). Page 52 records a Year 11 pilot called “Life Skills Mathematics” and the existing “Applied Mathematics” curriculum. These names must not be treated as interchangeable with later pathway labels without checking approved syllabus versions and effective dates. Source: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf. No indicator wording is activated from this report.
+
+
+## Record 33 — Policy on Free Educational Resources (2015)
+
+The Ministry-hosted policy was approved 1 December 2015. It defines Ministry free educational resources to include textbooks, teacher guides, workbooks, syllabi and examination materials (p.4); allows students to take textbooks, notes and workbooks home for revision (p.5); and requires Permanent Secretary approval for school reproduction of free resources (p.5). Appendix A lists Mathematics Year 1 and Year 2 Ministry resources (pp.7–8). This is resource-policy evidence, not a prescription or indicator source. It is not blanket PacEdu reuse permission. Source: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf.
