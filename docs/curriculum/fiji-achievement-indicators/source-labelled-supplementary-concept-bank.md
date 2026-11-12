@@ -2028,3 +2028,25 @@ The source presents activity prompts rather than coded achievement-indicator sta
 - **Next required source:** locate the actual controlled Y1–Y8 English syllabus and scope-and-sequence documents produced by this revision, then inspect the Year 1 outcomes/indicators and compare their exact wording with Records 131 and 132.
 
 **Source:** Fiji Ministry of Education, Heritage and Arts, *Annual Report 2020–2021*, pp.49–51, https://www.parliament.gov.fj/wp-content/uploads/2023/09/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf .
+
+
+## Record 134 — Fiji revised Primary Years 1–8 Literacy and Numeracy curriculum: official implementation and controlled-source access trail (2022–2023)
+
+- **Source:** Fiji Ministry of Education, *Annual Report 2022–2023*, Chapter 5 / curriculum implementation section, printed report pages around 99–101 (PDF text lines 4902–5008): https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- **Authority:** Ministry of Education, Fiji; official annual report tabled as Parliamentary Paper No. 109/24.
+- **Source type:** OFFICIAL_CURRICULUM_IMPLEMENTATION_EVIDENCE / CONTROLLED_SOURCE_ACCESS_LEAD; not a syllabus and not a source of individual achievement indicators.
+- **Actual evidence extracted from the report:**
+  1. The Ministry initially engaged the Fiji Program Support Facility in 2019 to develop scope-and-sequence documents for Primary Years 1–8 Literacy and Numeracy (report lines 4902–4908).
+  2. The stated process reviewed ECE–Year 8 curriculum, scoped and sequenced the existing curriculum to identify gaps/inconsistencies, revised syllabi, developed year-level scope-and-sequence documents with elaborations, and revised teacher guides (lines 4911–4921).
+  3. Phase 1 Years 1–4 documents were trialled in 90 schools; the report says final copies were printed and implementation rolled out after teacher and Head of School training (lines 4922–4928).
+  4. At the time of the report, Years 5–8 were in Phase 2 trial (line 4929). Do not treat this 2022–23 status as proof of their present status.
+  5. The report says the revised documents articulate when CLOs are introduced and consolidated and unpack CLOs into sequential yearly elaborations; they also provide guidance for out-of-phase learners (lines 4955–4966).
+  6. It states that curriculum documents such as syllabi were uploaded to FEMIS and Moodle (line 4972). This identifies the Ministry-controlled access route to pursue; it does not establish that PacEdu has access or permission.
+  7. The report records 648 final Years 1–4 syllabi and Literacy/Numeracy Guides supplied to primary schools, with 250 draft copies for the 90-school trial phase (line 4979).
+  8. It states that Years 1–4 implementation began in all primary schools in 2023 (line 5008).
+- **What was not extracted:** No exact English or Mathematics CLO wording, achievement indicator codes, year-level elaborations, contact hours or subject-specific page references are reproduced in this annual report section. None may be invented from the process description.
+- **Source status:** OFFICIAL_IMPLEMENTATION_CONFIRMED; PRESCRIPTION_CONTENT_NOT_YET_ACQUIRED. This is stronger evidence than Record 133 that the Years 1–4 final package was implemented, but it still does not provide the actual prescription content.
+- **Older-source lineage:** The report says current syllabi were reviewed and scope-and-sequence gaps/inconsistencies identified (lines 4914–4919), but it does not identify the exact older syllabus editions or map any individual outcome to an earlier source. Keep each detailed indicator's lineage LINEAGE_NOT_YET_FOUND until the actual old and revised syllabus texts are compared.
+- **PacEdu action:** Next obtain the controlled final Years 1–4 English and Mathematics syllabus, scope-and-sequence and teacher-guide files from the Ministry/FEMIS/Moodle source. For each CLO and elaboration, capture exact text, code, year, strand, page, and the superseded source it replaces or develops. Then repeat the same process for Years 5–8 only after confirming their final approved rollout/version. Do not substitute the 2013/2019 Year 1 English resource book, 2015 Term 3 teacher guide, or third-party curriculum maps for these controlled files.
+- **Reuse:** Annual report is public evidence; the underlying syllabus and guide copyright/reuse conditions must be reviewed separately. No digital reproduction/adaptation rights are implied.
+- **Worksheet gate:** No daily worksheet authorised from this record. No CAS contact now; CAS_CONTACT = DEFERRED_UNTIL_PILOT.
