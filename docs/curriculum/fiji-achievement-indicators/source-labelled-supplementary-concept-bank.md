@@ -3164,3 +3164,96 @@ Use the current issue date and original source with every dataset; distinguish o
 - Use current Ministry advisories only with their date and context; an old advisory is not evidence of today's outbreak status. Any numerical disease counts or thresholds must be time-stamped and sourced.
 - **Worksheet gate:** NOT YET AUTHORISED. Verify the current Ministry communicable-disease guideline and clinical/public-health advice; confirm the current Ministry education curriculum mapping and age suitability; obtain current prevention materials; set levels and prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 154 — Fiji Food and Health Guidelines, school canteen guidance and nutrition education concepts
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Healthy Living; Elementary Science; Basic Science; Agriculture; Home Economics; Commercial Studies; Mathematics; English  
+**Level:** LEVEL_NOT_SPECIFIED pending approved Fiji NCF and Ministry year-level mapping  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — Food and Health Guidelines for Fiji
+
+- **Issuer:** Fiji Ministry of Health and Medical Services, National Food and Nutrition Centre.
+- **Ministry resource listing:** https://www.health.gov.fj/our-work/ (lists “Food and Health Guidelines for Fiji” under Ministry resources for health workers).
+- **Official PDF URL linked by Ministry page:** https://www.health.gov.fj/wp-content/uploads/2014/09/2_Food-and-Health-Guidelines-for-Fiji.pdf
+- **Edition caution:** The Ministry link is hosted in a 2014 upload directory. FAO's Fiji dietary-guidelines profile describes the 2018 edition as the version developed by the National Food and Nutrition Centre and reports that a further review process was under way in 2021. The Ministry-linked PDF could not be parsed in this source review, so its precise edition, pagination and detailed wording remain **PENDING_PRIMARY_PDF_REVIEW**. Do not pretend that its page-level contents have been inspected.
+- **Corroborating source:** FAO, “Food-based dietary guidelines — Fiji”, https://www.fao.org/nutrition/education/dietary-guidelines/regions/fiji/en/ . FAO identifies the 2018 Fiji Food and Health Guidelines, their intended audience (healthy general public), the pineapple food guide and ten messages.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_GUIDELINE_METADATA; FAO_SECONDARY_GUIDELINE_PROFILE; EXACT_MINISTRY_PDF_EDITION_AND_PAGE_CROSSCHECK_PENDING.
+
+**PacEdu-derived concepts grounded in the FAO profile of Fiji's 2018 guidelines**
+1. **Variety across food groups** — the national food guide encourages a variety of foods from the three food groups in meals; source: FAO Fiji FBDG profile, messages section, lines 42–47. Evidence: learner classifies familiar local foods into the three groups as represented in the verified guide and builds a fictional balanced-meal example.
+2. **Local foods and food diversity** — “go local” and variety of local foods are central messages; source: FAO profile, lines 39–44. Evidence: learner identifies local food examples from a teacher-approved list and compares seasonal availability without ranking families' diets.
+3. **Salt, sugar, fat and oil awareness** — guideline message encourages choosing and preparing food and drinks with less salt, sugar, fat and oil; source: FAO profile, line 44. Evidence: learner compares mock product labels or recipe cards and identifies where these ingredients appear.
+4. **Fruit and vegetable variety** — the guide promotes more local fruits and vegetables; source: FAO profile, lines 45–47. Evidence: learner groups fruits and vegetables by visible features, season or local availability using safe pictures.
+5. **Healthy snacks** — the national messages include choosing healthy snacks; source: FAO profile, line 47. Evidence: learner compares fictional snack options using a balanced-choice explanation rather than moral labels.
+6. **Healthy meals and snacks for children** — the guidelines include a message to give children healthy meals and snacks; source: FAO profile, line 49. Evidence: learner designs a fictional school snack using accessible, culturally familiar options.
+7. **Clean and safe drinking water** — drinking clean and safe water is a dietary-guideline message; source: FAO profile, line 51. Evidence: learner distinguishes drinking-water safety from appearance and explains that only approved water sources should be used.
+8. **Growing food** — growing one's own food is included in the national message set and food-guide design; source: FAO profile, lines 39–40 and 52. Evidence: learner sequences the basic needs of a plant and plans a small hypothetical food garden.
+9. **Physical activity and wellbeing** — physical activity is part of the food guide and healthy-weight message; source: FAO profile, lines 39–45. Evidence: learner identifies examples of safe, inclusive movement and explains how activity complements healthy eating.
+10. **Breastfeeding as an infant-feeding public-health message** — the guideline includes exclusive breastfeeding for the first six months; source: FAO profile, line 48. Evidence: age-appropriate learner task identifies that infant-feeding decisions belong with caregivers and qualified health workers; no learner is asked to advise or assess a parent.
+11. **Food guide as a visual communication tool** — Fiji uses a pineapple-shaped food guide to communicate multiple food and lifestyle messages; source: FAO profile, lines 39–40 and 57–59. Evidence: learner interprets symbols, key messages and layout in an infographic.
+12. **Guideline audience and limits** — the 2018 guidelines are directed to the healthy general public; source: FAO profile, lines 32–37. Evidence: learner distinguishes general public guidance from individualised clinical diet advice.
+
+### Source B — School Canteen Guidelines (2nd Edition, 2013)
+
+- **Issuer:** Fiji Ministry of Health and Medical Services / National Food and Nutrition Centre, in collaboration with the Ministry of Education, Heritage and Arts.
+- **Official Ministry resource listing:** https://www.health.gov.fj/our-work/ (lists “School Canteen Guidelines (2nd Edition)”).
+- **Official PDF linked by Ministry page:** https://www.health.gov.fj/wp-content/uploads/2014/09/3_School-Canteen-Guidelines_2nd-Edition-2013.pdf
+- **Edition:** Second edition, 2013, as stated by the Ministry resource listing.
+- **Current status:** FAO's Fiji school-food profile says the 2013 guidelines and the 2017 School Food and Canteen Policy are under review, and the 2023 School Canteen Toolkit was still described as a final draft awaiting policy alignment. Treat 2013 recommendations as historical guidance, not confirmed current school canteen rules.
+- **FAO corroborating profile:** https://www.fao.org/platforms/school-food/around-the-world/asia-and-the-pacific/fiji/en
+- **Inspected detail:** The Ministry-hosted PDF could not be parsed in this review. The concepts below are restricted to the contents and purpose explicitly summarised in FAO's Fiji school-food profile; exact 2013 page and clause crosswalk remains PENDING_PRIMARY_PDF_REVIEW.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_SCHOOL_GUIDANCE_METADATA; FAO_SECONDARY_POLICY_PROFILE; HISTORICAL_GUIDANCE; CURRENT_POLICY_REVIEW_REQUIRED.
+
+**PacEdu-derived concepts grounded in the school-food profile**
+13. **Healthy school food environment** — school canteens and food services influence foods available to learners; source: FAO Fiji school-food profile, “School Food” and “Objectives”. Evidence: learner identifies features of a supportive school food environment in a fictional school map.
+14. **Food groups in school meals** — profile identifies starchy foods, animal and plant protein, fruits and vegetables, dairy and non-dairy sources; source: FAO profile, “Main characteristics”. Evidence: learner sorts illustrated foods into these broad groups and creates a fictional balanced menu.
+15. **Food safety and hygiene in food service** — school canteen guidance includes food safety and hygiene; source: FAO profile, “Other guidance included”. Evidence: learner sequences general clean-hands, clean-surfaces and safe-service principles from picture cards; no food handling in an unsafe classroom setting.
+16. **Canteen management** — the guidance includes canteen management as a distinct topic; source: FAO profile, “Other guidance included”. Evidence: learner identifies roles, record keeping and planning in a fictional canteen case.
+17. **Costing and budgeting for food choices** — the profile identifies costing as part of canteen management; source: FAO profile, “Other guidance included”. Evidence: learner calculates the total cost of a fictional menu using supplied prices and a fixed budget.
+18. **Food marketing and consumer awareness** — the school canteen guidance includes marketing; source: FAO profile, “Other guidance included”. Evidence: learner analyses fictional food advertisements for persuasive language, price claims and missing information.
+19. **Whole-school approach to healthy eating** — the profile describes a whole-school approach involving canteens, school communities and education; source: FAO profile, “Objectives” and “Implementation”. Evidence: learner maps how a fictional school can communicate consistent food messages without policing individual students.
+20. **School and community participation** — profile describes engagement with students, parents and school communities; source: FAO profile, “Implementation”. Evidence: learner prepares a respectful suggestion for a fictional school food committee.
+21. **School food policy and review** — the profile reports that schools are advised to develop school-level canteen policies; source: FAO profile, “Implementation”. Evidence: learner identifies the purpose of a clear, accessible school food policy in a mock case. Do not present the old guidance as current compliance law.
+22. **School gardens and food education** — the Ministry dietetics programme lists school gardens alongside school health, lunches and canteens; source: Ministry of Health, Dietetics and Nutrition programme page, https://www.health.gov.fj/dietetics-and-nutrition/ . Evidence: learner plans a fictional garden bed and matches crops to growing conditions using teacher-approved local examples.
+23. **Food service roles and nutrition expertise** — the Ministry identifies public-health dietitians' work with school health, school lunches, canteens and gardens; source: Ministry Dietetics and Nutrition page. Evidence: learner distinguishes the role of a dietitian from that of a teacher, cook or canteen operator.
+24. **Nutrition education as a shared health responsibility** — Ministry programme information links dietetics, health promotion and school programmes; source: Ministry Dietetics and Nutrition page and Ministry Our Work page. Evidence: learner identifies appropriate trusted adults and official information sources for nutrition questions.
+
+### Source C — Ministry of Health and Medical Services: current public healthy-eating information
+
+- **Issuer:** Fiji Ministry of Health and Medical Services.
+- **Official page:** https://www.health.gov.fj/healthy-eating/
+- **Current page inspected:** healthy-eating information; no clear publication or revision date is displayed. The page is current as retrieved but individual statistics on it are historical.
+- **Source classification:** FIJI_PRIMARY_GOVERNMENT_PUBLIC_INFORMATION; DATE_NOT_DISPLAYED; CURRENT_PAGE_CONTENT_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source C**
+25. **Balance of health, energy and body-building foods** — the Ministry page describes healthy eating in terms of balanced amounts of health, energy and body-building foods; source “What is Healthy eating?”, paragraphs 1–2. Evidence: learner explains the three functional food categories using examples from Fiji.
+26. **Everyday foods and occasional foods** — the page recommends keeping fried and sugary foods and drinks as treats rather than everyday foods; source “What is Healthy eating?” and “Myths about Healthy Eating”. Evidence: learner compares fictional weekly menu patterns without labelling a child or family's food choices as bad.
+27. **Portion and serving concepts** — the Ministry page discusses the amount of food and gives public-facing fruit and vegetable serving messages; source “How much should I be eating each day?” and preceding guidance. Evidence: learner interprets a serving-size picture and compares quantities; do not prescribe individual calorie targets.
+28. **Nutrition claims and food labels** — the page cautions that label claims such as “low fat” or “high in Vitamin C” may distract from salt, sugar and fat content; source “Myths about Healthy Eating”. Evidence: learner identifies a marketing claim and checks the actual nutrition information panel on a mock label.
+29. **Fresh and minimally packaged local foods** — the page highlights local produce and foods with little or no packaging; source “Myths about Healthy Eating”. Evidence: learner compares food packaging and identifies fresh local examples, without implying that all packaged foods are unhealthy.
+30. **Nutrition and non-communicable disease literacy** — the page links dietary patterns and physical activity with NCD risk and discusses diabetes, obesity and cancer. Evidence: learner explains that health is influenced by multiple factors and avoids attributing disease to an individual's appearance or worth. Historical statistics on this page must not be presented as current prevalence.
+31. **Dietary diversity across cultural food traditions** — the Ministry page recognises local foods including dalo, rice, grains, lentils, legumes, meat, fish and dairy; source “Myths about Healthy Eating”. Evidence: learner builds a diverse fictional menu using culturally varied Fiji food examples and respectful terminology.
+
+### Source D — Food Safety Regulations 2009 (supplementary legal-source cross-reference)
+
+- **Title:** Food Safety Regulations 2009.
+- **Official legal portal listing:** https://fijitradeportal.gov.fj/en-gb/site/display/166
+- **Related principal Act:** Food Safety Act 2003, previously catalogued in Record 144.
+- **Status caution:** Verify current consolidated regulations, amendments and applicable requirements before any compliance-focused learning. This record does not extract new legal duties or reproduce numerical food-temperature requirements.
+- **Use in this record:** Legal source cross-reference only. Food hygiene concepts above are drawn from public health and school-food guidance, not represented as legal requirements from the Regulations.
+
+### Version, rights and educational safeguards
+
+- FAO's profile identifies the 2018 Fiji Food and Health Guidelines as a national public-health guideline and reports that a review process was underway in 2021. The Ministry page currently links a PDF from a 2014 upload directory. The exact edition of that linked file must be checked before it is treated as the 2018 edition.
+- FAO reports the 2013 School Canteen Guidelines and 2017 School Food and Canteen Policy were under review, with the 2023 toolkit still in draft/finalisation at the time of its profile. Do not treat those historic materials as confirmed current operational rules.
+- Do not use historic nutrition prevalence statistics, adult calorie examples, or serving targets as current individual dietary prescriptions. Avoid weight stigma, body comparisons, restrictive dieting, calorie counting for children, or public weighing and measuring.
+- Infant feeding and breastfeeding content must be age-appropriate and respectful; learners must not be asked to counsel caregivers.
+- Food allergies, medical diets and clinical nutrition require individual advice from qualified health professionals. Do not ask learners to disclose diagnoses, weight, food insecurity or household income.
+- Food preparation activities require school risk assessment, food-safety controls, allergy checks and competent supervision. Do not use spoiled food, raw animal products or unsafe equipment.
+- **Worksheet gate:** NOT YET AUTHORISED. Obtain and inspect the Ministry primary PDFs; confirm the current 2024/2018 Food and Health Guidelines edition; verify the latest School Food and Canteen Policy and toolkit status with the Ministry; cross-check current Food Safety Regulations; map concepts to approved Fiji NCF and official Ministry indicators; set levels/prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
