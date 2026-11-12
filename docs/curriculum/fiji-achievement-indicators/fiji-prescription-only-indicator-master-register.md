@@ -269,3 +269,33 @@ A third-party-hosted copy of the RSEC Years 9–10 Teacher Guide states that ach
 **PacEdu implementation separation:** Keep five linked but separate layers: (A) controlled curriculum prescription and exact indicators; (B) teaching sequence and daily activity; (C) classroom evidence/teacher assessment and moderation; (D) parent/home revision evidence, clearly labelled non-official and never overwriting teacher records; (E) national external examination result/scaling. Learner progression decisions must be another restricted workflow tied to the full authorised policy, with human review and parent/student participation as required. No automatic progression, official grade, exam scaling or assessment threshold is to be inferred from the curriculum indicator bank.
 
 **Status:** The CAS role and the Cabinet progression/scaling decisions are verified governance leads, but none supplies the missing current subject prescriptions. Accepted current prescription documents added: zero. Active prescription indicators: zero. All ECE, Years 1–8 and Forms 3–7 remain pending controlled prescription verification. Daily activity generation from the strict bank remains blocked pending actual approved indicator sources.
+
+
+## Official-source audit — 12 November 2026 (continued)
+
+### New evidence reviewed
+
+- The Fiji Government's 7 October 2025 Cabinet decisions record endorsement of a review of the 2013 Fiji National Curriculum Framework and establishment of a taskforce for initial planning. This is evidence of a framework review, not evidence that a replacement framework or any subject prescription has been formally adopted or made effective. The review must therefore not be treated as automatic withdrawal or replacement of existing subject prescriptions.
+  - Official source: https://www.fiji.gov.fj/14th-cabinet-meeting-decisions-7-october-2025/
+- The Ministry's 2020–2021 Annual Report describes changes to the Years 1–8 syllabus and identifies a package comprising the framework, scope-and-sequence overviews, year-level scope and sequence, and teacher guides. This confirms the existence of a structured primary package at that time, but does not establish the current approved edition, amendments, or effective status in November 2026.
+  - Official source: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+- The Higher Education Commission's school-education overview describes ECE, Years 1–8 and Years 9–13 and the broad FALD/KLA structure. It is useful for level coverage and inventory planning only; it does not supply the controlled subject-by-year indicator schedules required for import.
+  - Source: https://nic.hec.org.fj/school-education
+- A 2024 news report quoting the Ministry states that English and Mathematics literacy/numeracy curriculum work for Classes 1–8 had been completed and that Years 9–10 literacy/numeracy was being piloted. This is a discovery lead only, not a current Ministry-controlled approval instrument; it cannot establish which version is now authorised.
+  - Source: https://www.fbcnews.com.fj/news/curriculum-review-in-progress/
+
+### Decision and required evidence
+
+1. Keep the 2013 NCF review status separate from subject-syllabus status. Do not infer adoption, withdrawal, or replacement of any subject prescription from the Cabinet decision alone.
+2. Keep the Years 1–8 English and Mathematics packages in PENDING_CURRENT_CONTROLLED_PRESCRIPTION until CAS supplies or confirms the current approved syllabus, framework alignment, scope-and-sequence, year-level schedules, teacher guides, amendment history, and effective dates.
+3. Keep Years 9–10 literacy/numeracy pilot material out of the active bank unless CAS confirms final approval, national rollout, exact controlled edition, and effective date.
+4. Continue ECE and Years 1–13 coverage. The broad HEC level map is not a substitute for prescriptions at each year, subject, strand, and pathway.
+5. No indicators were imported or generated from these sources. Active prescription indicator count remains zero; daily activity generation and 115-day distribution remain blocked pending verified controlled prescriptions and validated scope/contact hours.
+
+### CAS document request checklist
+
+For each level and subject, obtain: (a) approved syllabus/prescription; (b) indicator/outcome schedule with exact codes and wording; (c) scope and sequence; (d) year-level teacher guide; (e) version/edition and approval/effective date; (f) amendments, supersession and withdrawal notices; (g) assessment and contact-hour requirements; and (h) copyright/reuse permissions. Record source page/section and controlled-copy provenance before importing any indicator.
+
+### Safety boundary
+
+This is a documentation-only staging update. No merge, production deployment, Firebase write, learner or payment record change, or APK replacement is authorised by this audit. CI must be checked separately and must not be described as passed unless a relevant workflow run and its result are verified.
