@@ -396,3 +396,14 @@ Four additional Fiji historical/reference sources are indexed, bringing the sour
 These records support the newly locked requirement to identify older sources for each individual concept. The source-lineage process must obtain original pages and exact wording before recording a one-to-one relationship. A thematic similarity is not proof of equivalence.
 
 Active current prescription status remains unchanged: 0 verified controlled prescription sources accepted; 0 active prescribed indicators. No worksheets generated from historical sources.
+
+## Further Fiji science and primary curriculum lineage leads (12 November 2026)
+
+Three source records were added, bringing the source-labelled concept bank to 21:
+- **Basic Science Years 7–8, 2015 trial syllabus:** historical/trial concepts include endangered/endemic species, biodiversity, habitat, conservation and human impacts such as deforestation, pollution, pesticides, overharvesting and overfishing. It uses mini learning outcomes and sequenced learning progressions. Trial status must remain explicit.
+- **Elementary Science Years 5–6, 2015 trial syllabus:** source introduction identifies science inquiry/process skills such as observing, measuring, classifying, inferring, predicting, testing, analysing, reporting, simple experiments and environmental care. These are broad aims/process statements, not individual year-level indicators.
+- **Fiji Primary Curriculum Mapping Years 1–8 (2025 third-party compilation):** crosswalk index to multiple source years and subjects. Useful to discover original codes, but never authoritative itself; every item must be checked against the cited original prescription or teacher guide.
+
+**English/Mathematics verification lead:** the Ministry's 2020–2021 Annual Report records a Years 1–8 literacy/numeracy syllabus package with the Fiji National Curriculum Framework, scope-and-sequence overviews, year-level scope and sequence, and teacher guides. This is evidence that a structured primary package existed; obtain and authenticate the actual controlled files and revision dates before accepting individual indicators.
+
+Current controlled prescription sources accepted remain 0; active prescribed indicators remain 0. No worksheet has been created from the trial syllabuses or third-party crosswalk.
