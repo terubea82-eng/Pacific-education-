@@ -476,3 +476,8 @@ The Ministry's 2020–2021 Annual Report, pp.50 and 52, is an official record of
 ## Record 33 — Policy on Free Educational Resources (2015)
 
 The Ministry-hosted policy was approved 1 December 2015. It defines Ministry free educational resources to include textbooks, teacher guides, workbooks, syllabi and examination materials (p.4); allows students to take textbooks, notes and workbooks home for revision (p.5); and requires Permanent Secretary approval for school reproduction of free resources (p.5). Appendix A lists Mathematics Year 1 and Year 2 Ministry resources (pp.7–8). This is resource-policy evidence, not a prescription or indicator source. It is not blanket PacEdu reuse permission. Source: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf.
+
+
+## Record 34 — Na Noda Mataniciva Early Mathematics outcomes
+
+The official Ministry-hosted *Na Noda Mataniciva* identifies Early Mathematics areas on printed p.37: Number; Measurement; Shape and Space; Patterns; Chance and Data. Examples include positional language, shape sorting and naming, pattern construction, shape fitting, and simple puzzles. The page distinguishes approximately age-3 examples, intermediate development, and end-of-Kindergarten expectations. Retain these developmental stages as written; do not convert them into rigid age tests or Year 1–13 prescription indicators. The guideline's stated role is outcomes/framework guidance, not detailed prescribed content. Source: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf. Eligibility: `SUPPLEMENTARY_ONLY`; verify reuse rights before adaptation.
