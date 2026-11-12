@@ -429,3 +429,14 @@ Three additional official records were indexed in the source bank (27 records to
 - **Ministry Annual Report 2020–2021:** confirms a Years 1–8 literacy/numeracy package with NCF, scope-and-sequence overviews, year-level scope and sequences and teacher guides. It also describes a Year 11 Mathematics pilot using “Life Skills Mathematics” and “Applied Mathematics”. This differs in naming from the 2022–2023 report's “Life Mathematics” and “Pure Mathematics” labels. Treat as a version-control warning: retrieve approved pathway syllabuses and establish effective dates; do not merge labels or indicator sets by assumption.
 
 Current controlled subject prescription sources accepted remain 0; active prescribed indicators remain 0. No worksheets have been created from policy documents or annual-report descriptions.
+
+
+## Primary Literacy/Numeracy revision status and Year 1 English lineage update (12 November 2026)
+
+Two additional records have been indexed in the source bank (29 records total):
+- **Ministry Annual Report 2022–2023:** official report states Years 1–4 revised literacy/numeracy curriculum implementation began in all primary schools in 2023 after a 90-school trial; 648 final syllabus/LN guide sets were supplied to schools. It says Years 5–8 were then in Phase 2 trial and syllabus documents were uploaded to FEMIS/Moodle. This means the Years 1–4 final package must be obtained and used ahead of older Year 1 English resources; Years 5–8 draft/trial material must not be mislabelled final. Exact CLOs/indicators are not in the annual report. Official source: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+- **Year 1 English: Language, Literacy and Communication (2013; revised 2019; reprinted 2020):** Ministry/Curriculum Development Unit attributed resource, currently accessible only as a third-party hosted copy. Historical lineage source; compare against the final Years 1–4 revised literacy curriculum and confirm authenticity/rights before use.
+
+**Current status distinction:** The 2025 National Pre-Primary Education Policy still names the 2013 NCF as the framework and says PPE programmes must use the approved Ministry curriculum. Cabinet endorsed review of the 2013 NCF in October 2025, but this search did not locate an officially published replacement NCF or controlled Years 5–8 final literacy/numeracy package. This is a bounded search finding, not proof that no later internal documents exist. Official references: https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf and https://www.fiji.gov.fj/14th-Cabinet-Meeting-Decisions-7-October-2025/
+
+Active individual prescribed indicator records remain 0 until actual approved syllabus pages and exact outcome wording are obtained and version-checked. No worksheets generated from annual reports or third-party book copies.
