@@ -5637,3 +5637,47 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Level mapping:** retain the guide’s Year 6/Year 8 context. Do not transfer the statements to other levels without approved progression/prerequisite mapping.
 - **Worksheet gate:** NOT YET AUTHORISED. Current curriculum alignment, column verification, rights, accessibility, age/level mapping and teacher review remain required.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+## Record 184 — Fiji disability-inclusive teaching, learning and assessment concepts
+
+- **Source:** Ministry of Education, *A Teacher’s Guide to Disability-Inclusive Education in Fiji*, cited as Sprunt et al. (2023), Ministry of Education, Suva; updated Ministry web edition published 2024.
+- **Official source:** https://www.education.gov.fj/wp-content/uploads/2024/09/SIE-guide-high-res-web-version-1.pdf
+- **Source locations:** printed pp. 10–13 (disability and inclusive education); pp. 34–41 (culturally responsive pedagogy, HITS, differentiation and tiered intervention); pp. 48–49 (modelling, cooperative learning and additional time); pp. 54–63 (inclusive assessment and reasonable accommodations).
+- **Source type:** Official Fiji Ministry teacher guidance. These sections are not a subject syllabus and do not publish subject-specific achievement indicators.
+- **Classification:** 24 entries as `PACEDU_DERIVED_CONCEPT` / Ministry pedagogical guidance. None is labelled `OFFICIAL_ACHIEVEMENT_INDICATOR`.
+- **Concept entries:**
+  1. Disability can arise through interaction between a person’s impairment and environmental, institutional, policy or attitudinal barriers.
+  2. Participation barriers can be physical, communication-related, institutional or attitudinal; identify and reduce barriers rather than assuming inability.
+  3. Inclusive learning aims to increase participation and reduce exclusion through suitable content, approaches, structures and strategies.
+  4. Learner strengths, interests and prior knowledge can inform teaching decisions.
+  5. Connect new learning with students’ cultural identities, languages, values and community experiences respectfully.
+  6. Represent classroom languages and cultures without stereotyping or assigning a learner to speak for a group.
+  7. State a clear learning intention and explain what learners should understand or be able to do.
+  8. Make success criteria explicit and connect them to the learning intention.
+  9. Model a task or process before asking learners to practise independently.
+  10. Use worked examples that show the steps in a solution or task, not only the final answer.
+  11. Break complex tasks into manageable steps and check understanding between steps.
+  12. Use questioning to uncover learner thinking and identify misunderstandings.
+  13. Give specific, constructive feedback linked to the stated learning goal.
+  14. Revisit the lesson’s main learning at the end and connect the steps or ideas.
+  15. Provide repeated opportunities to encounter and practise important concepts and skills.
+  16. Differentiate content, process, product or learning environment while keeping the intended concept clear.
+  17. Offer more than one appropriate way to demonstrate understanding where the assessment objective permits.
+  18. Use varied evidence such as teacher observation, questioning, concept maps, portfolios, conferencing, student work and self-assessment.
+  19. Use formative checks during teaching to adjust instruction and provide timely feedback.
+  20. Plan summative assessment against intended learning and curriculum outcomes before teaching the unit.
+  21. Consider additional time, breaks, accessible formats, communication supports or alternative response modes according to learner needs and assessment purpose.
+  22. For Deaf or hard-of-hearing learners, make instructions and communication accessible; consider sign-language interpretation where appropriate without changing the construct being assessed.
+  23. For blind or low-vision learners, consider Braille/tactile materials or accessible digital copies where appropriate to the task.
+  24. Consult the learner, caregiver and teacher when individualising accommodations; do not assume one adjustment works for every learner.
+- **Subject mapping:** Cross-curricular teaching and assessment practice; supports English, Mathematics, Science, Social Science, Technology, Arts and other subjects. It does not replace subject-specific Fiji curriculum outcomes.
+- **Level mapping:** ECE–Form 7 as general teaching guidance only; not a level-specific syllabus. Apply examples in age- and context-appropriate ways.
+- **Observable evidence for future activity design:** learner states or identifies the task goal; follows or explains a modelled sequence; shows understanding through an accessible response mode; uses feedback to improve work; demonstrates a concept through an approved alternative format; and reflects on progress against transparent criteria. These are PacEdu-generated evidence prompts, not official Ministry indicators.
+- **Accessibility safeguards:** offer text plus suitable accessible alternatives; do not make speech, hearing, vision, handwriting, fine-motor ability or public presentation a hidden prerequisite unless that skill is the actual learning objective. Preserve learner choice and dignity. Do not infer disability or publish sensitive learner information in activity files.
+- **Assessment safeguards:** accommodations must preserve the construct being assessed. For example, an interpreter or scribe may be appropriate for a subject-knowledge assessment but may invalidate an assessment specifically measuring independent reading or writing. Follow current Fiji Ministry examination and assessment rules for formal examinations.
+- **Rights:** the guide states that schools may reproduce parts for educational purposes only with acknowledgement to the Ministry of Education’s Curriculum Development and Advisory Unit; other uses must be referred to the Permanent Secretary. `RIGHTS_REVIEW_REQUIRED` for PacEdu commercial reproduction, adaptation or distribution. This concept bank entry does not grant a licence to reproduce worksheets, figures or text.
+- **Currentness:** guide cites 2023 authorship and is the Ministry’s updated edition; verify against current Fiji law, policy, curriculum and examination accommodation rules before operational use. `CURRENT_VERSION_CHECK_REQUIRED`.
+- **Worksheet gate:** `NOT YET AUTHORISED`. Requires approved subject-outcome mapping, learner-level/prerequisite mapping, rights clearance, accessibility review and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+- **Use restriction:** teaching and assessment design concepts only. No diagnosis, disability classification, clinical assessment, therapy or certification is authorised.
