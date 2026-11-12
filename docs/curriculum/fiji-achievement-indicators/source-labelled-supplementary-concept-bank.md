@@ -300,3 +300,34 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Lineage use:** Useful as a discovery index for locating underlying original prescriptions and year/strand codes. PacEdu must open the cited original syllabus or teacher guide and verify every code and exact statement before storing it as a source-backed indicator. Never cite this compilation as the authority for an indicator.
 - **Status and reuse:** Third-party compilation; accuracy, completeness, source-version matching and permissions are unverified. Do not copy its compiled content wholesale or use it as an active prescription.
 - **Source link:** https://sustainability-and-stories.org/wp-content/uploads/2025/09/Fiji-Primary-Curriculum-mapping-Years-1-to-8b.pdf
+
+
+## 22. Fiji Ministry of Education, Curriculum Development Unit — Mathematics Syllabi Years 11–12 (2014; trial version 2015)
+
+- **Source identity:** Document identifies Ministry of Education, Curriculum Development Unit, Fiji; title Mathematics Syllabi Years 11 & 12; 2014/2015 publication metadata and “Trial Version 2015”. The accessible copy is hosted on Scribd, not the Ministry domain.
+- **Level/subject:** Years 11–12, Mathematics.
+- **Source classification:** `HISTORICAL_OR_TRIAL_LEAD`; not accepted as current prescription.
+- **Verified structure:** Contents identify introduction, rationale, subject overview, learning progression, course-content detail, separate Year 11 and Year 12 syllabuses, and time allocation. The document states Ministry copyright and classroom-use conditions.
+- **Lineage use:** Retrieve and compare the original syllabus pages and subsequent official senior Mathematics syllabuses. Do not infer present-day Year 12 content from this trial copy, especially because later Ministry reporting records a distinct Life Mathematics pathway alongside Pure Mathematics.
+- **Status and reuse:** Trial 2015 copy; current status and subsequent replacement not authenticated. Its notice limits reproduction to school classroom purposes with acknowledgement; other use requires referral to the Permanent Secretary through the Director CAS. PacEdu adaptation/distribution requires written permission.
+- **Source link:** https://www.scribd.com/document/335518065/syllabus-11-12
+
+## 23. Fiji Ministry of Education — Annual Report 2022–2023 (official Ministry report)
+
+- **Source identity:** Ministry of Education Annual Report 2022–2023, official Ministry report hosted by the Fiji Parliament.
+- **Level/subjects:** Curriculum development and Years 11–13 Mathematics.
+- **Source classification:** `OFFICIAL_CURRICULUM_STATUS_AND_LINEAGE_EVIDENCE`; not a prescription or indicator source.
+- **Verified information:** The report describes Ministry responsibilities including review/development of ECE, primary and secondary curricula and syllabi, development of teaching resources, teacher in-service training, assessment development and monitoring. It reports that Year 12 Life Mathematics was rolled out following a pilot, and distinguishes Life Mathematics from Pure Mathematics.
+- **Lineage use:** Use as a dated authority record to identify curriculum pathways and the Ministry's formal curriculum-development role. Obtain the approved Life Mathematics and Pure Mathematics syllabuses for exact concepts, outcomes and status before creating indicators.
+- **Status and reuse:** Official annual report; narrative evidence only. It does not replace subject prescriptions or authorise copying of syllabus content.
+- **Source link:** https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
+
+## 24. Fiji Ministry of Education — Policy on Free Educational Resources (official policy)
+
+- **Source identity:** Ministry of Education, Policy on Free Educational Resources, final policy PDF hosted on the Ministry website.
+- **Level/subjects:** School-level prescribed textbook and resource inventory, including Year 10 English, Mathematics, Basic Science and Social Science.
+- **Source classification:** `OFFICIAL_RESOURCE_INVENTORY_NOT_INDICATORS`.
+- **Verified use:** The policy lists prescribed textbooks and Ministry/local-bookshop resource arrangements. It is useful for identifying subject resource titles and tracing the associated syllabus or textbook, but the inventory does not provide achievement indicators.
+- **Lineage use:** Use resource titles as search keys to locate original approved syllabuses and textbooks. Do not extract an indicator or learning requirement from a book title or supply arrangement.
+- **Status and reuse:** Official policy; check its effective date and any later amendment before using it for procurement or resource decisions. Its presence on the Ministry site does not confer permission to reproduce listed textbooks.
+- **Source link:** https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
