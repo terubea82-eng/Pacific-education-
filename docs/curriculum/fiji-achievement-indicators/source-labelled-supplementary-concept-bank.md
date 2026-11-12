@@ -212,3 +212,22 @@ Never store a third-party concept as a prescribed indicator. Never allow a works
 - **Reuse:** The guide is issued for school education purposes; the Ministry copyright and source acknowledgements apply. PacEdu's external redistribution, adaptation or commercial use requires permission.
 - **Source link:** https://fliphtml5.com/gjgbb/syau/Year_4_MCE_Teacher_s_Guide/
 
+
+## Mandatory historical-source lineage rule (locked 12 November 2026)
+
+Every indicator or concept considered for a PacEdu daily worksheet must have a traceable source record before worksheet drafting begins. Search older Fiji prescriptions, syllabuses, teacher guides, textbooks, assessment guides and curriculum materials for the origin and earlier wording of the same or related concept. Do not assume that an older source is still current.
+
+For each individual indicator/concept, store these fields:
+1. Stable PacEdu concept/indicator ID.
+2. Exact current prescription wording and code, if a verified current prescription exists; otherwise leave blank and mark pending.
+3. Subject, year/form, strand/sub-strand, and relevant term/unit where the source states them.
+4. Primary source: issuing authority, document title, version/edition/year, page/section, URL or controlled file identifier, exact wording (short quotation only where copyright permits), and source classification.
+5. Historical lineage: each older Fiji source in which the same or related concept appears, with document title, issuing body, edition/year, page/section, wording, and relationship (same wording, earlier wording, broader concept, prerequisite, or related but distinct).
+6. Status and change note: current, superseded, withdrawn, draft/trial, historical, or not yet verified; note any differences rather than silently merging versions.
+7. Authority and reuse: whether the source is a prescription, Ministry teacher guide, programme resource, textbook, policy, research or supplementary material; record copyright/reproduction terms and whether PacEdu adaptation/distribution is authorised.
+8. Teaching-use note: how the concept can support lesson planning without changing the prescribed learning expectation.
+9. Worksheet eligibility: PRESCRIPTION_VERIFIED, SUPPLEMENTARY_ONLY, PENDING_SOURCE_REVIEW, or BLOCKED_RIGHTS_REVIEW; teacher review state remains PENDING_TEACHER_REVIEW until approved.
+
+Historical sources provide provenance, progression and concept continuity. They do not automatically establish a current mandatory learning outcome. If a current prescription and older resource differ, retain both records and follow the verified current prescription. If no current prescription is verified, do not describe the concept as mandatory; a separate supplementary revision resource may be considered only after source, rights and teacher review and must be labelled supplementary.
+
+A worksheet must never be generated from an untraceable concept. The source-lineage record must be completed first, then the worksheet may be drafted from an eligible current prescription or as a clearly separate supplementary resource.
