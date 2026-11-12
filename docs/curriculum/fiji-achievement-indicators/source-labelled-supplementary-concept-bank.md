@@ -131,3 +131,31 @@ Never store a third-party concept as a prescribed indicator. Never allow a works
 - Approved daily worksheets generated from active prescriptions: **0**
 - Supplementary worksheet drafts authorised by this file: **0** (each requires separate teacher and rights review).
 
+
+
+### Fiji Financial Education (FinED) — Primary Years 1–8 learning outcomes
+
+- **Record type:** OFFICIAL_PROGRAMME_LEARNING_OUTCOMES / REFERENCE_OUTCOMES — NOT yet accepted as current subject prescription indicators.
+- **Programme attribution:** Fiji Financial Education Curriculum Development Project; NFIT states that the project integrated and strengthened financial education within Fiji primary and secondary curriculum and that it was a partnership involving the Ministry of Education, Young Enterprise Trust and Pacific Financial Inclusion Programme.
+- **Primary learning outcomes source:** FinEd Learning Outcomes for Primary Schools, Years 1–8.
+- **Source:** https://www.nfitfiji.com/wp-content/uploads/FinED-Fiji-Learning-Outcomes-Primary-School.pdf
+- **Source sections/pages:** PDF pages 1–4; strand/sub-strand table for Years 1–2, 3–4, 5–6 and 7–8.
+- **Curriculum links stated by source:** Mathematics and English; Mathematics/English/Social Studies and Social Sciences.
+- **Strands and sub-strands identified:** Managing Money (Money; Spending and budgeting; Saving; Credit); Income and wealth (Income); Planning Ahead (Financial planning; Financial risk).
+- **Age/level concepts recorded:** coin and note recognition and simple transactions; making change and reading receipts; needs and wants; prioritising needs; budgeting; saving choices and goals; banks and savings products; borrowing, credit and interest; income sources; taxes; short-, medium- and long-term financial goals; keeping money safe and managing financial risk.
+- **Exact outcome samples (brief excerpts):** Years 1–2: “use of 5c- $1 coins for simple financial transactions” (PDF p.1); Years 3–4: “use of coins and notes for financial transactions up to the value of $20” (PDF p.1); Years 5–6: “Plan a budget for a small activity” (PDF p.1); Years 7–8: “Write a personal or family budget” (PDF p.1). These are source examples, not approved current prescription imports.
+- **Status:** Strong Fiji programme source with Ministry partnership/integration attribution, but current controlled prescription status, CAS adoption, latest revisions and effective dates still require confirmation. Store as official programme learning-outcome reference; do not promote into active prescribed indicator bank without CAS confirmation.
+- **Reuse:** Obtain permission/confirm policy and copyright conditions before reproducing full outcomes or teacher manual activities.
+
+### Fiji Financial Education — Forms Five and Six / Years 11–12 teacher resource manual
+
+- **Record type:** HISTORICAL_OFFICIAL_PROGRAMME_FRAMEWORK / PRESCRIPTION_LINKAGE_LEAD / SUPPLEMENTARY_CONCEPTS.
+- **Programme/source title:** Fiji Financial Education Curriculum Development Project — Senior Secondary Levels, Forms Five and Six, Year 11 and 12 FinED Teacher Manual.
+- **Source:** https://www.nfitfiji.com/wp-content/uploads/Year-11-and-12-FinED-Teacher-Manual.pdf
+- **Source pages:** PDF pp. 11–14 (framework, competency indicators and concepts); pp. 33–45 (assessment resources and prescription placement); later topic assessments include Accounting, Economics, English and Mathematics.
+- **Source statement:** The manual says the Years 11–12 financial education learning outcomes were integrated into Accounting, Economics, English and Mathematics prescriptions, and describes selected outcomes and assessments in those subjects. It also refers to the then-current prescriptions and a new draft syllabus. This is valuable historical evidence of integration and a lead for CAS verification, not proof that the same placements remain current in 2026.
+- **Competency indicator themes (source framework):** informed financial judgments and decisions; applying financial knowledge, skills and values; understanding financial terms and consequences; recognising cultural wealth; using financial tools to achieve goals; understanding time and commitment; responding to changing personal/economic circumstances; supporting community financial wellbeing and security; setting goals aligned with personal and communal values.
+- **Concept themes:** financial knowledge and values; financial choices; income and wealth; financial goals; investment; inflation; time and deadlines; financial obligations; risk management and insurance; personal accounting; financial record keeping; credit history and records; sources of advice; legal aspects of credit; calculating credit costs; banking and financial services; personal financial planning.
+- **Status:** Historical programme manual. It explicitly names prescription placement but is not itself sufficient proof of current controlled subject prescriptions or current Year 11–12 subject status. Keep as a lead and supplementary reference pending CAS confirmation of exact current syllabuses, learning outcomes, amendments and approved edition.
+- **Reuse:** Do not copy assessment tasks or manual content wholesale; verify copyright/reuse permission.
+
