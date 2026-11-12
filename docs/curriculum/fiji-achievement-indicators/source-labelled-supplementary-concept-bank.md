@@ -1749,3 +1749,116 @@ The Number/Operations, Patterns/Algebra, Measurement/Shape, Data/Statistics/Prob
 - CAS contact remains DEFERRED_UNTIL_PILOT, as instructed.
 
 **Sources:** Ministry Y6 & Y8 Teachers Guide, Term 3 (2015), printed pp. 1–8: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf ; Ministry Year 6 Maths Activity Book (2014; revised 2020/2021), inspected text copy: https://www.scribd.com/document/986450967/y6-Mathematics-Textbook .
+
+
+## Record 127 — Continued Year 6 Mathematics extraction: fractions/decimals, algebra, measurement, geometry, chance and data
+
+**Source:** Fiji Ministry of Education, Year 6 Maths Activity Book, copyright 2014; front matter states revised versions 2020 and 2021; Curriculum Advisory Service Unit. Inspected text copy: https://www.scribd.com/document/986450967/y6-Mathematics-Textbook . The source's Ministry classroom-only reproduction condition and PacEdu rights-review restriction are recorded in Record 126 and apply to this record as well.
+
+### B2. Further Number and Numeration concepts
+
+- **Source locators:** printed pp. 18–40.
+- **Extracted concepts/achievement-indicator topics:**
+  1. Add and subtract simple fractions with same or different denominators.
+  2. Convert mixed numbers to improper fractions and convert improper fractions to mixed numbers.
+  3. Add or subtract mixed fractions with same or different denominators.
+  4. Multiply and divide fractions and mixed fractions.
+  5. Solve simple real-life problems using fractions.
+  6. Order fractions with the same or different denominators.
+  7. Express fractions as decimals, including tenths and hundredths.
+  8. Order decimals in ascending and descending order.
+  9. Add and subtract decimals.
+  10. Multiply decimals by whole numbers and multiply decimal numbers by 10, 100 and 1,000.
+  11. Divide decimal numbers by whole numbers.
+- **Concepts:** equivalent fractions; common denominators; numerator/denominator; mixed and improper fractions; fraction operations; fractions in practical contexts; decimal place value; tenths and hundredths; decimal ordering and operations; decimal shifts under multiplication by powers of ten.
+- **PacEdu observable evidence (derived):** learner selects a valid method for fraction operations, converts between mixed and improper forms, orders fractions/decimals, explains equivalent values, and calculates decimal amounts in contexts such as money and measurement.
+- **Level:** Year 6.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND.
+- **Status:** PENDING_SOURCE_REVIEW; not current-prescription verified; rights remain BLOCKED_RIGHTS_REVIEW.
+
+### B3. Algebra
+
+- **Source locators:** printed pp. 41–45.
+- **Source achievement-indicator topics:**
+  1. Identify a rule, explain and write a mathematical rule, then complete a pattern.
+  2. Solve for an unknown in an equation.
+- **Concepts:** numerical patterns; input/output relationships; identifying and testing a rule; creating a rule; algebraic expressions; pronumerals/variables; simplifying multiplication and division notation; unknown values in equations; substituting values; expressing simple real-life costs with variables.
+- **PacEdu observable evidence (derived):** learner describes a number pattern, writes a rule that maps one quantity to another, tests the rule with new values, represents an unknown with a symbol and solves a simple equation.
+- **Level:** Year 6.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND.
+- **Status:** PENDING_SOURCE_REVIEW.
+
+### B4. Measurement
+
+- **Source locators:** printed pp. 46–70.
+- **Length and area concepts / indicator topics:**
+  1. Use non-standard units and relate them to standard units.
+  2. Convert millimetres, centimetres, metres and kilometres in both directions.
+  3. Estimate and measure lengths in millimetres and centimetres.
+  4. Measure the perimeter of rectangles.
+  5. Use squared paper to find areas of shapes.
+  6. Express a percentage of a given length or distance.
+- **Volume/capacity concepts / indicator topics:**
+  7. Construct 3D objects using cubic centimetres and use estimation to determine volume.
+  8. Calculate volume using length × width × height.
+  9. Relate cubic centimetres and millilitres; use millilitres and litres.
+- **Time and speed concepts / indicator topics:**
+  10. Tell actual time using a.m./p.m., analogue and 24-hour representations.
+  11. Read a stopwatch and calculate elapsed time.
+  12. Read and interpret timetables and timelines.
+  13. Understand the importance of time in speed and calculate average speed.
+- **Temperature concepts / indicator topics:**
+  14. Estimate, measure and record temperature in degrees Celsius.
+  15. Write temperatures in numeric form and order them.
+- **Money and financial contexts:**
+  16. Discuss the need for and uses of money.
+  17. Organise simple retailing activities, total bills and round amounts to the nearest five cents in the examples.
+  18. Interpret bank-book information, including deposits, withdrawals, interest and balance.
+  19. Identify bus e-ticketing cards and understand information on receipts.
+- **PacEdu observable evidence (derived):** learner chooses a suitable unit/tool, estimates then measures, converts metric units, calculates perimeter/area/volume, reads and converts time, interprets timetables, calculates elapsed time/speed, reads a thermometer, and interprets simple transactional records and receipts.
+- **Level:** Year 6.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND for each topic; the older prescription and earlier Year 6 books must be inspected.
+- **Status:** PENDING_SOURCE_REVIEW; money/e-ticketing examples are historically dated (2014 context) and must be refreshed for current local relevance; rights remain BLOCKED_RIGHTS_REVIEW.
+
+### B5. Geometry
+
+- **Source locators:** printed pp. 71–82.
+- **Extracted concepts/achievement-indicator topics:**
+  1. Identify and describe 2D shapes and regular polygons using sides and angles.
+  2. Distinguish triangle types and describe shape properties (including equal sides/angles and right angles).
+  3. Draw polygons and classify regular/irregular examples.
+  4. Investigate circles, measure radius and diameter and compare their relationship.
+  5. Study 3D shapes and relate them to real-life objects (cone, cube, prism, cylinder, pyramid).
+  6. Identify lines of symmetry.
+  7. Distinguish lines, line segments and rays; identify the vertex where two rays meet.
+  8. Investigate acute, right, obtuse, straight, reflex and complete-revolution angles.
+  9. Investigate interior, exterior and alternating angles.
+  10. Draw exterior angles.
+  11. Perform reflections and translations of shapes on a coordinate plane.
+- **PacEdu observable evidence (derived):** learner classifies and draws shapes using properties, identifies symmetry, measures circle radius/diameter, distinguishes geometric line forms, classifies angles and demonstrates a reflection or translation while preserving the shape.
+- **Level:** Year 6.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND.
+- **Status:** PENDING_SOURCE_REVIEW.
+
+### B6. Chance and Data
+
+- **Source locators:** printed pp. 83–90.
+- **Extracted concepts/achievement-indicator topics:**
+  1. Describe chance using the terms impossible, unlikely, likely and certain.
+  2. List and count possible outcomes of a simple experiment and describe the chance of each outcome.
+  3. Order chance events from least likely to most likely using data.
+  4. Conduct repeated random draws, record results with tally marks and compare observed frequencies.
+  5. Interpret a bar graph and use its data to compare categories and totals.
+- **Concepts:** chance vocabulary; sample outcomes; probability expressed as a fraction in a simple experiment; equally/differently likely outcomes; random sampling with replacement; frequency tallies; comparing experimental results; bar-graph reading; interpreting survey counts.
+- **PacEdu observable evidence (derived):** learner identifies possible outcomes, explains why an event is impossible or certain, compares likelihoods, records repeated trial results accurately, reads a bar graph and supports a conclusion with recorded data.
+- **Level:** Year 6.
+- **Older lineage:** LINEAGE_NOT_YET_FOUND. Compare with older Fiji primary prescriptions, especially the 1994 Mathematics Prescription, and do not assume this resource's probability placement matches the older or current prescription.
+- **Status:** PENDING_SOURCE_REVIEW. The historical guide's chance/probability content is not evidence of current year-level prescription placement.
+
+### Record 127 restrictions
+
+- The entries above are extracted from the source's Year 6 activity-book sequence. They are not a substitute for the current controlled Fiji prescription or its scope-and-sequence.
+- All older-source lineage remains LINEAGE_NOT_YET_FOUND until the older original documents are inspected. No daily mandatory worksheet is authorised from these entries.
+- Retain the source's page locators and the distinction between the book's indicator labels, concept explanations and PacEdu-derived observable evidence.
+- PacEdu digital/commercial reuse or adaptation remains BLOCKED_RIGHTS_REVIEW pending Ministry permission. CAS contact remains DEFERRED_UNTIL_PILOT.
+
