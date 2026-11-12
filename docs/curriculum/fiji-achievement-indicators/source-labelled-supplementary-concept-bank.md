@@ -5414,3 +5414,63 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Level mapping:** Year 8 is the book’s stated audience. Keep prerequisite links and NCF/CAS mapping pending; do not infer age/ability group placement from the book alone.
 - **Worksheet gate:** NOT YET AUTHORISED. Official copy verification, current curriculum alignment, exact level/prerequisite mapping, rights, safety, privacy, accessibility and teacher review remain prerequisites.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 180 — Fiji Ministry of Education Year 6 and Year 8 Teacher’s Guide, Term 3: English Reading Skills
+
+**Source:** Ministry of Education, Curriculum Development Unit, *Teachers Guide for Y6 & Y8 Teachers—Term 3*, Fiji, first edition 2015, printed pp. 7–8 (PDF pages 10–11; Year 6 English Reading Skills and Year 8 English Reading Skills). Official Ministry PDF: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf . The page images were inspected to distinguish the Achievement Indicators column from the Content Learning Outcomes, lesson suggestions and scope/content columns.
+
+**Source classification:** The Year 6 and Year 8 statements below are taken from the guide’s explicitly headed “Achievement Indicators: Students will be able to” column and classified **OFFICIAL_ACHIEVEMENT_INDICATOR (historical Ministry guide; current-version check required)**. Independently written extensions are **PACEDU_DERIVED_CONCEPT**. The guide is first edition 2015 and supports Term 3 lessons after external examinations; it is not a complete English curriculum.
+
+**Rights:** The guide states that schools may reproduce it in part or in full for classroom purposes only with acknowledgement; other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services. This record uses independent paraphrases. Commercial reproduction/adaptation remains blocked pending rights review.
+
+### Year 6 English reading — 10 indicator entries
+
+1. **Recognise different text types:** identify the text type used in a passage, including narrative, descriptive, procedural/instructional, fiction and non-fiction. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, printed p. 7. Evidence: classify unfamiliar short passages and cite structural/language clues.
+2. **Identify the main ideas:** discuss and identify the main ideas in a passage. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: state the central idea and distinguish it from a supporting detail.
+3. **Skim and scan for information:** use skimming and scanning to locate main points and specified details. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: complete a timed or untimed text-location task appropriate to access needs and identify the evidence found.
+4. **Summarise a story:** summarise a story or passage by selecting its important ideas/events. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: write, dictate or arrange a concise summary retaining essential meaning.
+5. **Read fluently with understanding:** read a suitable text fluently and demonstrate comprehension. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: oral, signed, supported or silent-reading comprehension response; do not equate reading speed alone with comprehension.
+6. **Use new vocabulary correctly:** use newly learned words appropriately in a sentence. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: create an original sentence showing the word’s meaning in context.
+7. **Generate words from a root word:** make related words from a supplied root word. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: build a word family and explain meaningful changes in form.
+8. **Answer comprehension questions:** answer questions about a prepared passage accurately using relevant textual evidence. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: select or construct answers supported by the passage.
+9. **Write complete-sentence responses:** write answers to comprehension questions in complete sentences. **OFFICIAL_ACHIEVEMENT_INDICATOR**, EN 6.1, p. 7. Evidence: produce clear, grammatically complete responses that answer the question.
+10. **Combine reading and vocabulary evidence:** show understanding of new vocabulary and passage meaning together, rather than treating spelling or isolated word recall as the sole measure. **PACEDU_DERIVED_CONCEPT** from the guide’s integrated reading and vocabulary sequence, p. 7. Evidence: explain a new word using sentence context and passage meaning.
+
+### Year 8 English reading — 9 indicator entries
+
+11. **Identify characters, themes and settings:** identify the characters, themes and settings in the poems studied. **OFFICIAL_ACHIEVEMENT_INDICATOR**, Year 8 English Reading Skills, printed p. 8. Evidence: produce a text-based character/theme/setting chart with quotations or precise references.
+12. **Rank elements by importance:** list or organise identified literary elements in order of importance and explain the criteria used. **OFFICIAL_ACHIEVEMENT_INDICATOR**, p. 8. Evidence: ranked list with a reason linked to the text.
+13. **Compare and contrast literary features:** compare and contrast ideas, characters, tone, audience and special features. **OFFICIAL_ACHIEVEMENT_INDICATOR**, p. 8. Evidence: a comparison matrix supported by textual evidence.
+14. **Present literary analysis in a suitable form:** present ideas in a chart, poster, song or video format. **OFFICIAL_ACHIEVEMENT_INDICATOR**, p. 8. Evidence: accessible presentation that communicates accurate analysis; equivalent text-based alternatives must be available.
+15. **Interpret dramatic and performance choices:** discuss relevant costume and performance choices for a poem or scene and connect choices to meaning. **OFFICIAL_ACHIEVEMENT_INDICATOR**, p. 8. Evidence: explain how a selected design/performance choice communicates a character, mood or theme. Costumes and staging are optional forms, not compulsory purchases.
+16. **Dramatise a poem:** dramatise a poem through character, performance, and appropriate sound or other expressive choices. **OFFICIAL_ACHIEVEMENT_INDICATOR**, p. 8. Evidence: a performance or equivalent storyboard/script explaining how choices represent the poem; no learner must perform publicly.
+17. **Stage or adapt a literary scene:** develop a scene for presentation, maintaining connection to the original text. **OFFICIAL_ACHIEVEMENT_INDICATOR**, p. 8. Evidence: script, storyboard, recorded narration or optional group performance.
+18. **Connect a prescribed novel with another representation:** the indicator column includes watching a film about *Swiss Family Robinson*. Treat the learning target as comparing a literary text with a film adaptation, not merely viewing a film. **OFFICIAL_ACHIEVEMENT_INDICATOR as printed, p. 8; interpretation refined as a learning task.** Evidence: compare one scene’s characterisation, setting, sequence or theme in book and film.
+19. **Analyse how genre shapes reader response:** explain how stories, characters, settings and experiences are represented through literary genres and discuss the appeal of those genres. **OFFICIAL_CONTENT_LEARNING_OUTCOME (MiLO), not an achievement-indicator-column entry**, Year 8, p. 8. Preserve this separate classification. Evidence: genre comparison using textual features and reasoned reader-response explanation.
+
+### Supporting PacEdu-derived reading and analysis concepts — 7 entries
+
+20. **Distinguish theme from topic:** explain the difference between a broad topic and a text’s developed message or theme. **PACEDU_DERIVED_CONCEPT** from Year 8 literary analysis, p. 8. Evidence: identify a topic and support a proposed theme with textual details.
+21. **Distinguish tone from mood:** explain tone as the attitude conveyed by the text/voice and mood as an effect created for readers, using examples. **PACEDU_DERIVED_CONCEPT** from the guide’s comparison of tone and literary features, p. 8. Evidence: annotate word choices and justify the distinction.
+22. **Infer audience and purpose:** identify likely audience and purpose from language, structure and presentation choices. **PACEDU_DERIVED_CONCEPT** from Year 8 comparison indicator, p. 8. Evidence: match text features to an evidence-based audience/purpose explanation.
+23. **Use textual evidence:** support an interpretation with relevant words, details or events from the text rather than unsupported opinion. **PACEDU_DERIVED_CONCEPT** from the guide’s analysis and comparison tasks, pp. 7–8. Evidence: claim–evidence–explanation response.
+24. **Recognise narrative sequence and structure:** identify how events are ordered and how opening, development and ending contribute to a narrative. **PACEDU_DERIVED_CONCEPT** from Year 6 text-type and Year 8 literary study, pp. 7–8. Evidence: sequence cards or a plot-structure diagram.
+25. **Interpret vocabulary in context:** use surrounding sentences, word parts and text context to infer a word’s meaning, then verify it with a suitable dictionary or glossary. **PACEDU_DERIVED_CONCEPT** from Year 6 vocabulary activities, p. 7. Evidence: show contextual clue, proposed meaning and verification.
+26. **Compare adaptations without treating them as identical:** explain how a film, performance or other adaptation may change sequence, viewpoint, characterisation or setting while retaining selected features of a literary source. **PACEDU_DERIVED_CONCEPT** from Year 8 *Swiss Family Robinson* film reference, p. 8. Evidence: two-column comparison using specific examples.
+ 
+### Source integrity, accessibility and safeguards
+
+- **Indicator provenance:** entries 1–9 and 11–18 are paraphrases of content in the Achievement Indicators column. Entry 10 and entries 20–26 are PacEdu-derived concepts. Entry 19 is deliberately classified as OFFICIAL_CONTENT_LEARNING_OUTCOME (MiLO), not an achievement indicator, because it appears in the Content Learning Outcomes column.
+- **Column discipline:** lesson sequences, resource lists, prescribed text titles and scope/content lists are not automatically achievement indicators. The guide’s “watch the movie” bullet is retained as an indicator-column statement but interpreted as a text-to-film comparison learning task, not a passive viewing requirement.
+- **Currentness:** CURRENT_VERSION_CHECK_REQUIRED. Verify current approved Fiji NCF 2013/CAS English curriculum and subsequent Ministry updates before mapping, assessment or activity authorisation. The guide is a 2015 Term 3 support document.
+- **Prescribed texts and copyright:** the guide names poems, stories, a novel and a drama text. Their inclusion in the guide does not grant PacEdu permission to reproduce them. Use only authorised copies, public-domain works, licensed resources or original texts; do not reproduce poems, stories, scripts, film clips, illustrations or substantial excerpts without rights clearance.
+- **Accessibility:** reading evidence may be demonstrated through accessible formats and accommodations consistent with the intended skill. Provide plain text, large print, screen-reader compatible text, Braille/tactile alternatives where appropriate, audio/signed alternatives where they do not invalidate the specific reading construct being assessed, and extra time as required. Do not make public performance, costume purchase, video production or rapid reading speed a barrier to demonstrating literary understanding.
+- **Learner safety and dignity:** do not force learners to perform, dramatise personal experiences, wear costumes, disclose family/cultural/religious identity or publicly read when that is inaccessible or distressing. Offer equivalent private, written, recorded or supported responses.
+- **Assessment integrity:** distinguish decoding/fluency from comprehension, vocabulary, interpretation and written expression. Record which construct is being assessed; do not mark one skill as another.
+- **Level mapping:** Year 6 and Year 8 are explicit guide contexts. Do not transfer these indicators to other levels without approved prerequisite and progression mapping.
+- **Rights:** RIGHTS_REVIEW_REQUIRED for all source-dependent reuse beyond the Ministry’s stated school classroom reproduction permission. Independently paraphrased concepts and citations do not authorise reproduction of protected literary works.
+- **Worksheet gate:** NOT YET AUTHORISED. Current curriculum verification, exact level/prerequisite mapping, rights, accessibility and teacher review remain required.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
