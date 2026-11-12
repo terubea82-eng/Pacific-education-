@@ -270,3 +270,33 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Lineage use:** Potential historical concept source for Year 8 Mathematics. No individual concepts or indicators are extracted because the actual contents have not been verified.
 - **Status and reuse:** Historical textbook; not a prescription. Locate an authorised physical/digital copy and inspect its contents and copyright terms before extraction or reuse.
 - **Source link:** https://books.google.com/books/about/Mathematics_for_Class_8_form_II.html?id=Xp6uHAAACAAJ
+
+## 19. Fiji Ministry of Education, Curriculum Development Unit — Basic Science Syllabi Years 7–8 (2015 trial version)
+
+- **Source identity:** Ministry of Education, Heritage and Arts, Curriculum Development Unit; document labels itself TRIAL VERSION, 2015 and states that it was issued free to schools. The located copy is hosted on Scribd, not in a Ministry-controlled repository.
+- **Level/subject:** Years 7–8, Basic Science.
+- **Source classification:** `HISTORICAL_OR_TRIAL_LEAD`; explicitly trial, not an active prescription.
+- **Verified concept examples from the accessible excerpt:** human activities affecting endangered species; deforestation, land reclamation, pollution, chemical fertilisers, pesticides, overharvesting, overfishing and greenhouse effect; endangered and endemic species; habitats and conservation. The syllabus also uses mini learning outcomes (MiLOs) and sequences them to show learning progression.
+- **Lineage use:** Potential progression trail for biodiversity, ecosystems, human impacts and conservation from upper-primary Elementary Science into junior-secondary Basic Science. Each concept must be checked against the original pages and later/current syllabuses before equivalence is asserted.
+- **Status and reuse:** Trial 2015 copy; do not treat as current. Its copyright notice permits school classroom reproduction with acknowledgement; other use is referred to the Permanent Secretary through the Director CAS. PacEdu adaptation/distribution needs written Ministry permission.
+- **Source link:** https://www.scribd.com/document/1050855790/607120742-Basic-Science-Syllabi-Yr-7-8-1
+
+## 20. Fiji Ministry of Education, Curriculum Development Unit — Elementary Science Syllabi Years 5–6 (2015 trial version)
+
+- **Source identity:** Ministry of Education, Heritage and Arts, Curriculum Development Unit; located copy identifies itself as the 2015 trial version and says it was issued free to schools. The available copy is hosted on Course Hero.
+- **Level/subject:** Years 5–6, Elementary Science.
+- **Source classification:** `HISTORICAL_OR_TRIAL_LEAD`; not a current prescription.
+- **Verified concepts and science process skills from the accessible document excerpt:** living, physical and technological components of the environment; natural and man-made environments; simple experiments; observation, measurement, classification, inference, prediction, testing, analysis and reporting; handling basic scientific equipment and chemicals; making simple equipment from local materials; communicating and sharing ideas; environmental care.
+- **Lineage use:** These process skills can be compared with earlier/later science prescriptions to trace progression in scientific inquiry, practical work, safety and environmental understanding. They are syllabus-introduction statements, not individual year-level achievement indicators.
+- **Status and reuse:** Trial 2015 copy; verify whether and how it was superseded. Copyright notice allows school classroom reproduction with acknowledgement; other uses require referral to the Permanent Secretary through the Director CAS. PacEdu external/commercial adaptation requires written permission.
+- **Source link:** https://www.coursehero.com/file/82505551/ELEMENTARY-SCpdf/
+
+## 21. Fiji Primary Curriculum Mapping Years 1–8 (2025 third-party compilation)
+
+- **Source identity:** PDF titled Fiji Curriculum Mapping Years 1 to 8, hosted by Sustainability and Stories; the file cross-references multiple Fiji curriculum resources including Literacy 2022, Numeracy 2014/2016/2022, Moral Values and Civic Education 2022, Healthy Living 2015 revised 2023, Elementary Science 2015 revised 2023 and Social Studies 2016. It is not a Ministry-issued controlled prescription.
+- **Level/subjects:** Years 1–8, cross-subject mapping.
+- **Source classification:** `THIRD_PARTY_CURRICULUM_CROSSWALK`; research/indexing aid only.
+- **Verified use:** It reproduces example coded outcome statements across English/literacy, Mathematics/numeracy, MCE, Healthy Living, Elementary Science and Social Studies. Example concept families visible in the opening pages include oral directions, reading sight words, rhyming/onset/rime, writing for audience and purpose; number recognition and measurement; respect, teamwork, hygiene and safety; environmental care, resources, local foods and data representation.
+- **Lineage use:** Useful as a discovery index for locating underlying original prescriptions and year/strand codes. PacEdu must open the cited original syllabus or teacher guide and verify every code and exact statement before storing it as a source-backed indicator. Never cite this compilation as the authority for an indicator.
+- **Status and reuse:** Third-party compilation; accuracy, completeness, source-version matching and permissions are unverified. Do not copy its compiled content wholesale or use it as an active prescription.
+- **Source link:** https://sustainability-and-stories.org/wp-content/uploads/2025/09/Fiji-Primary-Curriculum-mapping-Years-1-to-8b.pdf
