@@ -427,3 +427,15 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Important access and reuse rules:** Students may take textbooks, supplementary notes and workbooks home for revision, and may download electronic copies from the Ministry website (p.5). School reproduction requires Permanent Secretary approval for teaching and learning (p.5). This policy is not blanket permission for PacEdu to copy, adapt, redistribute or commercialise Ministry resources.
 - **Mathematics discovery lead:** Appendix A's 2016 inventory lists “Mathematics Year 1” and “Mathematics Year 2” as Ministry-supplied resources (pp.7–8). These entries help locate original books but do not prove current syllabus status or expose achievement indicator wording.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; source discovery only. Obtain rights clearance before reproducing or adapting Ministry content.
+
+
+## Record 34 — Na Noda Mataniciva: Early Mathematics outcomes (official ECE framework)
+
+- **Source:** Ministry of Education, *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands*, https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf
+- **Classification:** Official ECE curriculum guideline/outcomes framework; not a detailed content prescription. Its foreword describes outcomes rather than prescribed content.
+- **Traceable location:** Printed page 37, Early Mathematics / Number, Measurement, Shape and Space, Patterns, Chance and Data.
+- **Outcome examples visible on p.37:** spatial language and positional vocabulary (under, behind, on top, next to, in front, beside); sorting and describing objects by shape; recognising/naming basic shapes such as circle, square and triangle; creating patterns using shapes; fitting shapes together in puzzles; using lines and shapes in drawing/painting; completing simple puzzles and following positional directions.
+- **Developmental staging:** the page differentiates what children might do at about age 3, “they might then”, and expectations by the end of Kindergarten. Preserve the original developmental bands; do not convert them into fixed age-based tests or Year 1 prescribed indicators.
+- **Use:** ECE planning and developmental observation crosswalk; later compare to pre-primary policy and any current approved ECE programme materials.
+- **Status / rights:** Ministry-hosted official guideline; verify permission before copying or adapting wording/artwork into PacEdu.
+- **Eligibility:** `SUPPLEMENTARY_ONLY` as ECE framework outcome reference; not a primary/secondary prescription.
