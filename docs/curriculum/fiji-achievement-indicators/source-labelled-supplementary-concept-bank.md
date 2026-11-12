@@ -5723,3 +5723,45 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Worksheet gate:** `NOT YET AUTHORISED`; requires current approved subject mapping, age/level and prerequisite mapping, rights clearance, accessibility and safety review, and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
 - **Use restriction:** This record supplies cross-curricular access and pathway concepts only. It does not certify occupational competence, authorise workplace placement or replace formal career guidance.
+
+
+## Record 186 — Fiji ECE language, literacy and communication curriculum outcomes (3–6 years)
+
+- **Source:** Fiji Ministry of Education, *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands* (2009), Part B, FALD “Language, Literacy and Communication”, printed pp. 40–45; official Ministry-hosted PDF.
+- **Official source:** https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf
+- **Source locations:** printed pp. 40–45; PDF lines 3363–3881. The source identifies a main FALD outcome and two strands: “Listening and communicating” and “Reading and writing”; the strand outcomes and sub-strand progress descriptions appear across these pages.
+- **Source type:** Official Fiji Ministry ECE curriculum guideline. This is an ECE outcome framework, not a current Class 1–Form 7 syllabus and not a list of formally numbered “achievement indicators”.
+- **Classification:** 2 `OFFICIAL_CURRICULUM_OUTCOME` (main/strand outcomes, paraphrased) and 18 `OFFICIAL_CURRICULUM_PROGRESS_EXPECTATION` (paraphrased developmental expectations in the guideline). These are not relabelled as Year 1–Form 7 achievement indicators.
+- **Official outcome structure, paraphrased:**
+  - Main outcome: children communicate effectively in their first language and develop early foundations for literacy.
+  - Listening and communicating strand: children attend to, understand and respond to verbal and non-verbal communication.
+  - Reading and writing strand: children understand that print carries meaning and begin using writing materials purposefully.
+- **Progress expectations extracted and paraphrased:**
+  1. Attend to sounds in the surrounding environment and notice similarities or differences between sounds.
+  2. Listen to short spoken messages, stories or conversations and respond in an appropriate way.
+  3. Listen to and carry out simple instructions; progressively manage instructions with several steps.
+  4. Participate in rhymes, chants, action songs and rhythm or syllable play.
+  5. Notice sound patterns in words, including words that begin with the same sound.
+  6. Experiment with sounds, rhyming words and playful language.
+  7. Ask questions and make comments during shared stories or conversations.
+  8. Respond to stories with questions, comments and predictions about what may happen next.
+  9. Use gestures, signs, facial expression, drawing, movement and spoken language to communicate ideas and needs.
+  10. Express ideas and needs in the child’s first language or dialect, with increasingly developed language as learning progresses.
+  11. Take turns in conversations and respond to other speakers.
+  12. Ask and answer questions about people, events, places, objects and reasons.
+  13. Tell and retell familiar stories or events, keeping a meaningful sequence and main ideas.
+  14. Use books for enjoyment and to gain information; participate actively in shared reading.
+  15. Recognise that environmental print, labels and signs convey meaning.
+  16. Notice that pictures and written words are different, and use illustrations to make meaning from a book.
+  17. Show growing awareness of letters and sounds, including some letter–sound connections.
+  18. Communicate through drawing, dictated stories, pretend writing and attempts to form recognisable letters or write a name.
+- **Subject mapping:** ECE language and literacy foundations; informs later English and multilingual literacy planning but does not replace the approved Year 1 English syllabus or language-specific Fiji Hindi, Vosa Vakaviti, Urdu or Rotuman curriculum.
+- **Level mapping:** ECE / Kindergarten ages approximately 3–6 as described by the source. It provides three broad developmental columns (around age 3, emerging next steps and expectations by the end of Kindergarten); do not use these as rigid age cut-offs or pass/fail benchmarks. The guide says outcomes are guidelines and children develop at different rates.
+- **Observable evidence prompts:** record how a child attends and responds to a story; follows an instruction through an accessible mode; joins sound/rhyme play; asks or answers a question; retells an event using speech, signs, pictures or other communication; recognises a familiar environmental sign; distinguishes picture from print; or communicates an idea through drawing, dictated text or emergent writing. Evidence prompts are derived from the official expectations and are not separate official indicators.
+- **Accessibility safeguards:** spoken response is not mandatory evidence where the outcome can be shown through gesture, sign, AAC, drawing, eye-gaze or other appropriate communication. Do not treat accent, dialect, multilingualism or use of a home language as an error. Do not require forced public speaking or disclosure of family language practices.
+- **Developmental safeguards:** play-based, culturally and linguistically responsive experiences; observation over time; no high-stakes testing, rigid age-based pass/fail, timed reading tests or formal handwriting grading from this ECE guideline.
+- **Rights:** the guideline states all rights reserved and prior written permission is required for reproduction except specified forms/templates (printed copyright page ii). `RIGHTS_REVIEW_REQUIRED` for PacEdu reproduction, adaptation or distribution. This bank contains paraphrases and references only; it does not authorise copying the guideline’s outcome wording, tables, forms or illustrations.
+- **Currentness:** `CURRENT_VERSION_CHECK_REQUIRED`. The Ministry continues to host this 2009 guideline, but its update status and any current ECE curriculum replacement must be checked before release. Do not assume the document is the final current policy solely because the PDF remains online.
+- **Worksheet gate:** `NOT YET AUTHORISED`; requires current ECE curriculum confirmation, rights clearance, accessible communication design, developmental mapping and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+- **Use restriction:** ECE language/literacy curriculum outcomes and progress expectations only; do not extend these directly as Class 1–Form 7 indicators.
