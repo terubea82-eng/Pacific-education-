@@ -369,3 +369,10 @@ Four additional Fiji curriculum/teacher resources have been indexed in the suppl
 **Teacher-role implementation note:** The Ministry assessment policy requires valid/reliable and equitable assessment, explicit criteria, moderation, regular reporting to parents/guardians and use of assessment evidence to improve teaching. The Ministry disability-inclusive guide further supports planning assessment before teaching and applying reasonable adjustments. These obligations should inform PacEdu teacher workflows, but PacEdu must not claim that any single guide exhaustively states all legal teacher duties.
 
 **Current prescription status remains unchanged:** current controlled Fiji prescription sources accepted = 0; active prescribed indicators = 0. The four new records are reference/teacher-guidance records only. No supplementary concept has been promoted into the active prescribed indicator bank. Daily prescription-based worksheets remain blocked pending verification of current controlled prescriptions, version/effective date, subject-level outcomes, and reuse authority.
+
+
+## Additional Fiji resource indexed (12 November 2026)
+
+- **Year 4 Moral Values and Civic Education Teacher's Guide (2022):** Ministry/CDAU-issued resource. The foreword says MCE expanded from Years 1–3 to Years 4–6. Recorded strand structure includes Character Building (Making Choices and Decisions, Good Manners, Discipline) and Relationship (Love, Respect), with broader strands for health, wellbeing and safety, and citizenship. This increases the supplementary/source-labelled record count to 14. Treat as a teacher-guide reference pending confirmation of the controlled current syllabus and version; reuse permissions must be respected.
+
+No change to active prescribed indicators: 0 current controlled prescription sources accepted; 0 active prescribed indicators. No daily prescription-based worksheet generation is authorised from these reference records.
