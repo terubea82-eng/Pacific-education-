@@ -19,7 +19,7 @@ The status below refers to the current controlled subject prescription being ret
 
 | Level | Required prescription evidence before indicator entry | Intake status |
 |---|---|---|
-| ECE / Preschool | Current approved Na Noda Mataniciva guideline or formally authorised replacement; FALD outcomes, developmental progress indicators, version/effective date and any approved amendments | `PENDING_CURRENT_CONTROLLED_PRESCRIPTION` |
+| ECE / Preschool | Current formally authorised ECE prescription or CAS confirmation that Na Noda Mataniciva remains the operative controlled outcome schedule, including any authorised amendments and reuse permission | `PENDING_CURRENT_CONTROLLED_PRESCRIPTION` |
 | Year 1 | Current Year 1 subject prescriptions and scope/sequence, especially English and Mathematics; other prescribed learning areas and language programmes | `PENDING_CURRENT_CONTROLLED_PRESCRIPTION` |
 | Year 2 | Same evidence, separately verified for Year 2 | `PENDING_CURRENT_CONTROLLED_PRESCRIPTION` |
 | Year 3 | Current Year 3 subject prescriptions, outcomes/indicators and sequence | `PENDING_CURRENT_CONTROLLED_PRESCRIPTION` |
@@ -114,3 +114,16 @@ Do not delete these audit files. Do not import their records into the live indic
 - No production deployment, Firebase write, learner record change or APK replacement is authorised by this file.
 
 **Stage 1 remains IN_PROGRESS.**
+
+
+### ECE source qualification review — 12 November 2026
+
+The Ministry-hosted 2009 *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands* has now been opened and reviewed as a primary-source document (official PDF: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf).
+
+**Finding: official Ministry publication, but not yet an accepted prescription source for PacEdu's strict prescription-only bank.** The foreword says the guidelines outline outcomes rather than prescribe the content to be learnt (PDF printed pages iii–iv; PDF text lines 73–89). The curriculum section describes six FALD and outcomes, and expressly says the outcomes are guidelines only (printed pages 16–17; PDF text lines 1119–1217). It covers Kindergarten ages 3–6 and describes the FALD as also informing Classes 1 and 2 (printed page 4; PDF text lines 477–493). The document carries a 2009 copyright notice and says reproduction requires prior written permission (copyright page ii; PDF text lines 31–36).
+
+A Ministry-hosted 2025 National PPE Policy also identifies Na Noda Mataniciva in the ECE context (https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf). This supports its official relevance, but does not by itself establish that the 2009 outcome schedule is still the current, unamended controlled prescription. The 2 September 2025 Government announcement that the ECE curriculum was being updated reinforces the need for CAS confirmation.
+
+**Decision for PacEdu:** retain the 2009 document as an official source lead and audit reference only. Do not transcribe its outcomes into the active prescription-only indicator file, generate ECE daily activities from it, or reproduce its protected wording until (a) CAS confirms the operative version and any amendments in writing and (b) the Ministry's reuse permission/licence is established. ECE remains `PENDING_CURRENT_CONTROLLED_PRESCRIPTION`. No indicator count is added.
+
+**Next controlled evidence required from CAS:** document title and control number; approved/current version; approval and effective dates; whether the 2009 guideline remains operative or has been replaced; all amendments; the exact authorised ECE outcome schedule; and written reuse permission or licence terms for PacEdu's intended internal and user-facing use.
