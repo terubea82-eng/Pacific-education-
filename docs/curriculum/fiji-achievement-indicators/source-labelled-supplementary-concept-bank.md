@@ -645,3 +645,13 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Monitoring fields:** seek taskforce terms of reference, consultation papers, draft framework, Cabinet approval of any final framework, Ministry/CAS implementation circulars, subject syllabi and transition dates. Record publication/version and effective date for every superseding instrument.
 - **Classification:** `OFFICIAL_CURRICULUM_REVIEW_DECISION`; not a prescription.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; no indicator activated.
+
+
+## Record 53 — Official parliamentary confirmation of the 2026 National Curriculum Framework review launch
+
+- **Primary source:** Parliament of the Republic of Fiji, *Daily Hansard, Monday 25 May 2026*, Ministerial Statement, PDF https://www.parliament.gov.fj/wp-content/uploads/2026/06/Daily-Hansard-Monday-25th-May-2026.pdf . The Ministry says it officially launched the comprehensive review of the 2013 National Curriculum Framework; names consultants Rokobua Naiyaga and Dr Hem Dayal; confirms an inception workshop on 13 May 2026; and says the review findings and revised NCF document would be submitted to Cabinet for endorsement in the future.
+- **Review themes reported to Parliament:** character and values education; critical thinking, creativity, problem-solving, leadership, resilience and life skills; TVET and entrepreneurship from ECE to Year 13; culture, traditional skills and indigenous languages in lower primary; foreign languages in secondary; digital/IT, AI and virtual simulations; bilingual resources; and stronger support across formal, informal and non-formal education.
+- **Status control:** this is a ministerial statement recorded in Parliament and strong primary evidence that the framework review had begun. It explicitly places Cabinet endorsement of the final revised framework in the future as at 25 May 2026. These themes are review directions, not approved current prescriptions, achievement indicators, or permission to replace existing subject syllabi.
+- **PacEdu consequence:** keep existing verified controlled prescriptions active until a formally approved replacement is published with an effective date and transition instruction. Treat these themes as `POLICY_REVIEW_PROPOSALS`; do not generate mandatory indicators or worksheets from them. Monitor for the final review report, Cabinet endorsement, published revised FNCF, Ministry/CAS circulars, subject syllabi and implementation dates.
+- **Classification:** `OFFICIAL_PARLIAMENTARY_MINISTERIAL_STATEMENT_CURRICULUM_REVIEW_IN_PROGRESS`.
+- **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; no indicator activated.
