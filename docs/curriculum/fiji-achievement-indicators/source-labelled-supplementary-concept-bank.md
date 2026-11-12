@@ -5912,3 +5912,61 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Worksheet gate:** `NOT YET AUTHORISED`. Requires current ECE framework confirmation, rights review, developmentally appropriate sequencing, accessible response options, cultural review and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
 - **Use restriction:** This record provides ECE foundation outcomes and concept prompts only. It does not establish Class 1–2 subject achievement indicators or replace the current approved primary syllabus.
+
+
+## Record 188 — Fiji FinED Fiji Class 1–2 financial competency indicators and learning outcomes
+
+- **Source:** Fiji Financial Education Curriculum Development Project, *FinED Fiji: A Manual for Teachers, Class 1/2*, published by Young Enterprise Trust and Pacific Financial Inclusion Programme (PFIP), 2012; project partnership included Fiji Ministry of Education, Young Enterprise Trust and PFIP.
+- **Official resource host:** National Financial Inclusion Taskforce / Reserve Bank of Fiji resource page: https://www.nfitfiji.com/financial-education/financial-education-for-schools/year-1-2/
+- **Manual PDF:** https://www.nfitfiji.com/wp-content/uploads/Year-1-and-2-FinED-Teacher-Manual.pdf
+- **Source locations:** printed pp. 14–16 (framework competency indicators and conceptual understandings); pp. 18–22 (strands, sub-strands and class-band learning outcomes); pp. 24–25 (Class 1–2 learning outcome overview).
+- **Source type:** Fiji FinED Fiji curriculum-development resource produced in partnership with the Ministry of Education; it is a financial education framework/manual, not a general Ministry subject syllabus.
+- **Classification:** 10 `OFFICIAL_COMPETENCY_INDICATOR` entries (framework-wide FinED indicators, not subject-specific achievement indicators); 16 `FINED_FRAMEWORK_LEARNING_OUTCOME` entries for Class 1–2; 8 `PACEDU_DERIVED_CONCEPT` entries for observable activity evidence and safe teaching design.
+- **Framework competency indicators (paraphrased; Classes 1–8 framework):**
+  1. Make informed financial judgements and decisions.
+  2. Gain and apply relevant financial knowledge, skills and values.
+  3. Use key financial terms and concepts with confidence.
+  4. Recognise possible financial consequences.
+  5. Recognise the financial value of cultural wealth.
+  6. Select and use financial tools to work towards financial goals.
+  7. Understand that achieving financial goals requires time and commitment.
+  8. Respond thoughtfully to changing personal and economic circumstances.
+  9. Contribute to community financial well-being and security.
+  10. Set and work towards financial goals that reflect personal and communal values.
+- **Class 1–2 learning outcomes (paraphrased from the framework table):**
+  1. Demonstrate understanding of using Fiji 5-cent to $1 coins in simple transactions.
+  2. Give examples of different purposes for which money is used.
+  3. Explain that money must first be saved before it can be withdrawn from a bank account.
+  4. Read and understand a simple transaction receipt, such as a bus fare receipt.
+  5. Identify goods and services that people need to spend money on.
+  6. Show understanding of using a small amount of money to meet personal needs and wants.
+  7. Give examples of things a person may choose to spend money on.
+  8. Give examples of things a person may need to save for.
+  9. Identify benefits of saving.
+  10. Show understanding that a borrowed item has value.
+  11. Show understanding that both borrower and lender have responsibilities.
+  12. Give examples of ways people earn or receive income.
+  13. Identify how having more or less money can affect choices.
+  14. Give examples of short-term personal goals.
+  15. Show understanding of ways to keep money safe.
+  16. Identify consequences of losing money or having it stolen.
+- **Framework concepts and progression:** The manual organises financial learning into Managing Money (money, spending and budgeting, saving, credit), Income and Wealth (income, wealth creation) and Planning Ahead (financial planning, financial risk). Its Classes 3–4, 5–6 and 7–8 columns show increasing complexity; these progressions must be separately checked against current approved curriculum before being assigned as outcomes for those classes.
+- **PacEdu-derived observable evidence prompts:**
+  1. Sort fictional picture cards into needs and wants and explain one choice.
+  2. Match fictional Fiji coin images to their values and use them in a simple teacher-provided transaction.
+  3. Read key information from a fictional receipt, such as item, amount and total.
+  4. Choose between fictional spending and saving options for a stated small amount.
+  5. Explain a simple short-term goal and sequence one or two steps towards it.
+  6. Identify a safe action in a fictional lost-money scenario and explain why.
+  7. Explain the responsibilities involved in borrowing and returning a classroom object.
+  8. Identify different ways fictional characters may receive income without asking learners to disclose family finances.
+- **Subject mapping:** Financial Education integrated with Mathematics, English and Social Studies, as described by the manual. Use Mathematics for coin values and simple transactions; English for financial vocabulary, oral explanation and reading receipts; Social Studies for needs, work, community and cultural value. Do not claim these are standalone outcomes for all three subjects.
+- **Level mapping:** Class 1–2 only for the learning outcomes listed above. The framework indicators span Classes 1–8. The source does not establish ECE outcomes or Form-level outcomes.
+- **Prerequisites:** Everyday counting and matching can support coin recognition; oral language, picture interpretation and simple number comparison can support early transactions. Treat these as PacEdu planning assumptions to be confirmed by learner evidence, not official prerequisites.
+- **Assessment approach:** The manual discourages prescriptive testing as the sole assessment method and describes ongoing formative assessment, observation, learner self-assessment, peer assessment and records of progress. Use short teacher observations and fictional tasks; do not rank children or make financial disclosure a condition of participation.
+- **Privacy and safeguarding:** Use fictional characters, amounts and receipts. Never request household income, family spending, bank statements, account details, remittances, debt, PINs, passwords or personal financial hardship. Do not require learners to bring real money or conduct real purchases. No visits to banks or shops are required for PacEdu activities.
+- **Currency/currentness:** The manual is dated 2012 and contains historical Fiji currency examples and financial-service assumptions. Verify current denominations, payment methods, consumer protections, bank services and tax rules before any contemporary example is used. `CURRENT_VERSION_CHECK_REQUIRED`.
+- **Rights:** The manual states copyright © United Nations Capital Development Fund 2012. No open commercial adaptation licence is stated in the accessible PDF. `RIGHTS_REVIEW_REQUIRED` for PacEdu reproduction, adaptation or distribution. Paraphrased concepts do not grant permission to reproduce manual stories, illustrations, templates, games, worksheets or assessment tools.
+- **Worksheet gate:** `NOT YET AUTHORISED`; requires current Fiji curriculum mapping, current financial facts, rights clearance, accessible design, age/level mapping and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+- **Use restriction:** Use as a supplementary financial education source only. Do not treat framework-wide competencies as Class 1–2-only indicators or as official achievement indicators for Mathematics, English or Social Studies.
