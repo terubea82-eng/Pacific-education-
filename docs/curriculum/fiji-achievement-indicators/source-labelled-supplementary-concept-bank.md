@@ -472,3 +472,13 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Interpretation limit:** The policy's stated review date was 5 March 2017. Its current legal/administrative status must be confirmed before PacEdu describes it as presently binding. It does, however, document the Ministry's prescription-first monitoring model in this historical policy.
 - **PacEdu control:** Require every mandatory indicator to carry a traceable approved prescription reference and require daily lesson/activity mapping to that indicator. Never infer an indicator from the inspection template itself.
 - **Worksheet eligibility:** SUPPLEMENTARY_ONLY as a governance/provenance reference; no indicators activated.
+
+
+### Record 28 verification addendum — exact implementation status and retrieval route
+
+- **Report location:** Ministry of Education Annual Report 2022–2023, curriculum review section, report lines 4909–4929 and 4959–5008 (PDF printed pagination should be checked against the page image before quoting page numbers).
+- **Exact status evidence:** The Ministry describes Phase 1 Years 1–4 as trialled in 90 selected schools, followed by editing draft copies after feedback, printing final copies, training, rollout and monitoring. It says Phase 2 Years 5–8 was still in trial at the report date. It records 648 final Years 1–4 Syllabus and Literacy/Numeracy Guides supplied to all primary schools, plus 250 draft copies for the 90 trial schools. It further says Years 1–4 implementation began in all primary schools in 2023.
+- **Document access:** The report states that curriculum documents such as syllabuses were uploaded to FEMIS and Moodle. This identifies the authorised retrieval route; it does not mean the files are publicly accessible or that PacEdu has retrieved them.
+- **Curriculum design metadata:** The report describes explicit Years 1–8 scope and sequence, achievement expectations, CLO elaborations, concept-based learning and formative assessment. It identifies a Numeracy Progress Tracker for diagnostic data on individual students' concept knowledge.
+- **Control:** Treat the Years 1–4 package as an officially implemented final-document lead, but do not extract or invent CLO wording from this annual report. Obtain the actual controlled syllabus/guide files and version/effective date from Ministry/FEMIS/Moodle before marking any indicator PRESCRIPTION_VERIFIED. Keep Years 5–8 as PENDING_SOURCE_REVIEW until final status and exact controlled files are confirmed.
+- **Source:** https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf
