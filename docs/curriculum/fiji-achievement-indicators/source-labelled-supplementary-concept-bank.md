@@ -2114,3 +2114,40 @@ The following preserves each source CLO code and records a concise paraphrase of
 - Store each numbered CLO/indicator mapping as an independent source-linked entry; keep CLO text, achievement-indicator action, scope examples, and PacEdu-derived observable evidence in separate fields.
 - Status for each: HISTORICAL_OFFICIAL_PRESCRIPTION_SOURCE; PRESCRIPTION_CONTENT_EXTRACTED; CURRENT_STATUS_UNCONFIRMED; LINEAGE_NOT_YET_FOUND; BLOCKED_RIGHTS_REVIEW.
 - No mandatory current daily worksheet is authorised from this record. CAS contact remains DEFERRED_UNTIL_PILOT.
+
+
+## Record 136 — Older Fiji Forms I–IV English prescription: documentary lineage lead (1980s; source text not yet acquired)
+
+### Evidence actually inspected
+
+- **Secondary research source:** Beatrice Boufoy-Bastick, “Using A Polar Grounded Composite To Describe The Socio-Cultural Determinants Of ESL Teaching In Rural Fijian Schools,” The Qualitative Report, June 2003, pp. 183–192 in the retrieved extract. Searchable full-text mirror: https://citeseerx.ist.psu.edu/document?doi=b87d58f282cee547cdb8bf9a3a8fbe68341209c6&repid=rep1&type=pdf ; ResearchGate record: https://www.researchgate.net/publication/228486830_Using_A_Polar_Grounded_Composite_To_Describe_The_Socio-Cultural_Determinants_Of_ESL_Teaching_In_Rural_Fijian_Schools
+- **What the paper explicitly reports:** the Fiji Ministry of Education Curriculum Development Unit set a Form 1–4 English prescription; the prescription was developed with assistance from overseas advisers; it described broad educational and linguistic objectives of the junior secondary English course. The paper reports that the Ministry-prescribed Link 3 and Link 4 textbooks were used for Forms III and IV, and that teachers relied heavily on selected textbook passages and Fiji Junior Certificate examination preparation.
+- **Historical resource leads identified in an external bibliographic list:** Link 3: An English Course for Secondary Schools: Pupil’s Book (Ministry of Education, Suva, 1981) and Link 4: An English Course for Secondary Schools: Pupil’s Book (Ministry of Education, Suva, 1982). A separate bibliography lists Link 1: Functional English for Secondary Schools: Pupil’s Book (Ministry of Education, 1989) and later Link 1/2 rapid-reading and pupil books. Bibliographic source: https://www.nira.or.jp/pdf/0702report.pdf (Fiji textbook bibliography, p.63).
+- **Additional documentary clue:** the 2003 paper cites the Link books as Curriculum Development Unit, 1980 and states that the Form 1–4 prescription described broad course objectives. This may refer to the original prescription or a related CDU edition; exact title, publication year and edition have not been independently verified.
+
+### Actual content extraction boundary
+
+- The research paper describes historical implementation and teaching practice, not the full prescription text. It discusses a distinction between language and literature components in the Fiji Junior Certificate course and gives examples of teachers' use of reading passages, comprehension, summaries, grammar/language exercises and literary texts. These are descriptions of practice and examination preparation, not a verified exhaustive list of official achievement indicators.
+- No full original Forms I–IV prescription was recovered in this search. No exact older indicator codes, CLOs or prescribed indicator sentences can be extracted from this evidence.
+- Do not convert teachers' reported practices, textbook chapters, examination weightings or the 2003 researcher's observations into official curriculum indicators.
+
+### Comparison with Record 135 (2014 Years 9–10 English)
+
+- **Broad historical continuity candidates only:** language/literacy objectives; reading comprehension; language/grammar study; literary texts; oral and written English; use of reading passages and summaries. These broad areas are visible in the 2003 account of the older Forms III–IV course and also occur as broad areas in the 2014 syllabus.
+- **Not established:** no exact match has been verified between any of the 22 Year 9 CLO/indicator entries in Record 135 and a specific statement in the older Forms I–IV prescription. Keep all Record 135 entry-level lineage statuses as LINEAGE_NOT_YET_FOUND.
+- The 2014 syllabus states that essential concepts, skills and attitudes were selected from older prescriptions, but neither it nor the 2003 paper identifies which exact older item maps to each 2014 indicator.
+
+### Next source retrieval targets
+
+1. Locate the original Ministry/CDU English Prescription Forms I–IV (likely 1980-era) and inspect its objectives, content, language skills, literature, grammar and assessment sections.
+2. Locate the original Link 3 (1981) and Link 4 (1982) pupil books and teacher guides. Extract their actual learning content only as textbook/resource concepts, not as a substitute for the prescription.
+3. Search for the earlier Forms I–IV prescription editions and amendments that the 2014 syllabus says informed its concepts and skills; preserve edition-specific lineage.
+4. Compare each old prescription item to each 2014 Year 9 coded CLO and achievement-indicator action using EXACT_MATCH, PARTIAL_CONCEPT_CONTINUITY, PEDAGOGICAL_CONTINUITY_ONLY, or NO_MATCH_FOUND; require a source locator for every match.
+
+### PacEdu status
+
+- Record type: HISTORICAL_PRESCRIPTION_LINEAGE_LEAD / SECONDARY_SOURCE_AUDIT.
+- Status: SOURCE_EVIDENCE_REVIEWED; ORIGINAL_PRESCRIPTION_NOT_ACQUIRED; NO_EXACT_INDICATOR_EXTRACTED.
+- Lineage: broad continuity candidates only; no item-level links verified.
+- Rights: secondary paper/bibliography used for research and source discovery; do not reproduce Link books or prescription content until rights and controlled-copy status are checked.
+- No current prescription activation; no daily worksheet authorised; CAS contact remains DEFERRED_UNTIL_PILOT.
