@@ -5810,3 +5810,62 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Currentness:** `CURRENT_VERSION_CHECK_REQUIRED`. Confirm the guide remains aligned with the currently approved Years 3–4 English curriculum and any updated reading progress standards.
 - **Worksheet gate:** `NOT YET AUTHORISED`; requires current syllabus alignment, rights clearance, accessible assessment design and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+
+
+## Record 186 — Fiji Year 7 and Year 8 Social Science syllabus achievement indicators
+
+- **Source:** Fiji Ministry of Education, Heritage and Arts, Curriculum Development Unit, *Social Science Syllabi: Years 7 & 8*, Trial Version 2015.
+- **Official source copy:** Fiji National University ePortfolio repository, Ministry syllabus PDF: https://eport.fnu.ac.fj/artefact/file/download.php?file=179595&view=65845
+- **Source locations:** printed pp. 9–17 (Year 7), pp. 18–25 (Year 8); syllabus PDF lines 282–684 and 708–842.
+- **Source type:** Ministry-issued subject syllabus with explicit Content Learning Outcomes and Achievement Indicators columns. It identifies itself as a 2015 trial version.
+- **Classification:** paraphrased entries classified as `OFFICIAL_ACHIEVEMENT_INDICATOR`, retaining source year levels and outcome codes. They are not PacEdu-created standards.
+- **Year 7 indicators:**
+  1. **SS7.1.1.1 — Personal, Social Groups and Processes:** collect and identify evidence about major Pacific peoples and their origins.
+  2. Sort and describe cultural, social and economic ways of life, including practices of spending, sharing and saving.
+  3. Describe financial risks that may affect individuals, families and communities.
+  4. Describe how different groups contribute to preparedness and responses to climate variability.
+  5. **SS7.1.2.1 — Cultural Identity, Diversity and Cohesion:** collect evidence of interaction between Pacific and other cultural groups.
+  6. Identify and sort similarities and differences among cultural practices.
+  7. Describe how culture influences activities and ways of life.
+  8. **SS7.2.1.1 — Understanding the Past:** identify and gather information about settlement and establishment of peoples in the Pacific.
+  9. Sort and describe social, cultural and economic influences of colonisation in Fiji and other Pacific countries.
+  10. Explain positive and negative effects of colonisation in different Pacific Island countries using evidence and context.
+  11. **SS7.2.2.1 — Continuity and Change:** identify different forms of leadership found in Pacific countries.
+  12. Compare leadership characteristics and approaches across Pacific countries.
+  13. Discuss how colonisation influenced leadership styles.
+  14. **SS7.3.1.1 — Features of Places:** locate Fiji and other Pacific Island countries in relation to the wider world.
+  15. Describe the strategic position, strengths and vulnerabilities of Pacific Island countries in the global community.
+  16. Describe changes caused by hazards and disasters and discuss ways communities manage resulting changes.
+  17. **SS7.3.1.2:** collect evidence of common and different characteristics of Pacific Island countries.
+  18. Identify advantages and disadvantages associated with island geography and location.
+  19. Describe citizens’ rights, roles and responsibilities.
+  20. **SS7.3.2.1 — People and Care of Places:** identify types and sources of pollution and environmental contamination.
+  21. Describe effects of pollution on people, health, environments, resources and organisms.
+  22. Report on local, regional or global strategies to reduce pollution and discuss their effectiveness.
+  23. **SS7.3.3.1 — Hazard and Disaster:** identify common hazards affecting Pacific Island countries.
+  24. Explain how people and environments may be vulnerable and describe social, economic and health impacts of hazards.
+  25. Describe traditional and contemporary seasonal preparedness approaches and the roles of women in decision-making and response.
+  26. **SS7.4.1.1 — Use and Management of Resources:** identify and classify Pacific resources and explain how they are used.
+  27. Describe links between resource use, economic development and resource sustainability; discuss consequences of credit and debt.
+  28. **SS7.4.2.1 — People and Work:** gather evidence of Pacific migration overseas, describe reasons and patterns, adaptations, effects, and ways people maintain links and contribute to their homelands.
+- **Year 8 indicators:**
+  1. **SS8.1.1.1 — Personal, Social Groups and Processes:** identify origins, roles and characteristics of selected world organisations.
+  2. Select and describe social, economic and cultural influences of world organisations on people’s lives.
+  3. Demonstrate understanding of how people and organisations respond to change and hazards.
+  4. **SS8.1.2.1 — Cultural Identity, Diversity and Cohesion:** collect evidence about origins and characteristics of groups of people in the world and describe their development and interaction.
+  5. **SS8.2.1.1 — Understanding the Past:** gather evidence about notable people, their origins, achievements and inventions, and describe their influence on world history and society.
+  6. **SS8.2.2.1 — Continuity and Change:** classify significant world events and describe their effects on people and the wider world.
+  7. **SS8.3.1.1 — Features of Places:** identify world climatic zones and their characteristics; explain factors contributing to different climates and effects on people’s lives and work.
+  8. **SS8.3.2.1 — People and Care of Places:** identify major global climate issues, organise evidence about effects on people and environments, and discuss strategies or policies to reduce impacts.
+  9. **SS8.4.1.1 — Use and Management of Resources:** collect evidence about the influence of time and money in daily life; discuss methods of managing both; prepare a budget and use financial tools or records to monitor it.
+  10. **SS8.4.2.1 — People and Work:** gather evidence about globalisation and describe its characteristics and effects from Fiji and regional perspectives.
+- **Subject mapping:** Social Science (Years 7 and 8), with carefully approved cross-links to Geography, History, Citizenship, Financial Education, Environmental Education and Disaster Risk Education. Do not automatically transfer codes or indicators to other subjects or year levels.
+- **Level mapping:** Year 7 and Year 8 only. This record does not establish Class 1–6 or Form 3–7 outcomes.
+- **Observable evidence for activity design:** source-based map annotations; evidence sorting and comparison; timeline and cause/effect explanation; structured description of cultural interaction; pollution-impact report; hazard-preparedness comparison using official information; resource-use explanation; budget and financial-record exercise using fictional values; and a short evidence-based presentation or written response.
+- **Historical and cultural safeguards:** teach colonisation and leadership with balanced evidence, context and age-appropriate language. Do not present racialised or outdated group classifications in the 2015 source as biological facts or as a hierarchy. Respect self-identification, cultural diversity and contemporary Fiji law and policy. Do not ask learners to disclose personal migration, ethnicity, religion, family finances or disaster experiences.
+- **Disaster safeguards:** use fictional case studies and official current Fiji agency information; no hazardous fieldwork, emergency simulation or learner-directed evacuation/rescue tasks.
+- **Financial safeguards:** use fictional budgets, transactions and debt examples only; do not request household income, bank details, remittance records, PINs or personal debt information.
+- **Rights:** the syllabus states that schools may reproduce it in part or full for classroom purposes only with acknowledgement to the CDU; any other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services. `RIGHTS_REVIEW_REQUIRED` for PacEdu commercial reproduction, adaptation or distribution. This record paraphrases indicators and does not grant a licence to reproduce syllabus text or figures.
+- **Currentness:** `CURRENT_VERSION_CHECK_REQUIRED`. The source is a 2015 trial syllabus; verify whether a later approved Year 7–8 Social Science syllabus or replacement curriculum is in force before operational use. Do not use an unfinished revised curriculum as if approved.
+- **Worksheet gate:** `NOT YET AUTHORISED`; requires current syllabus confirmation, outcome-code verification, progression/prerequisite mapping, rights clearance, culturally safe content review and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
