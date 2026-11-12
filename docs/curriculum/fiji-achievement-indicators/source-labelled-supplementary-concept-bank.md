@@ -1862,3 +1862,64 @@ The Number/Operations, Patterns/Algebra, Measurement/Shape, Data/Statistics/Prob
 - Retain the source's page locators and the distinction between the book's indicator labels, concept explanations and PacEdu-derived observable evidence.
 - PacEdu digital/commercial reuse or adaptation remains BLOCKED_RIGHTS_REVIEW pending Ministry permission. CAS contact remains DEFERRED_UNTIL_PILOT.
 
+
+
+## Record 128 — Historical Fiji primary English syllabus evidence and reading/language lineage lead (1968–1991)
+
+**Purpose:** Record actual English curriculum aims and content architecture reported from the earlier Fiji primary English syllabus. This helps trace the historical lineage of later reading and oral-language concepts, but it does not establish that any specific 2015 Year 6 indicator is identical to an earlier prescribed indicator.
+
+### Source identity
+
+- **Author:** Heather Lotherington-Woloszyn, University of the South Pacific.
+- **Title:** *Literacy in ESL: Pedagogical and Cultural Pathfinding in Fiji*.
+- **Date/type:** Conference paper, December 1991; ERIC document ED357627.
+- **Source:** https://files.eric.ed.gov/fulltext/ED357627.pdf
+- **Source locators:** PDF pp. 3–6; the discussion of the primary English syllabus begins on printed page 3 of the paper (PDF page 4).
+- **Source type/status:** Secondary analysis quoting/describing an earlier Fiji primary English syllabus and the SPC/Tate course. It is not the original controlled syllabus. Mark HISTORICAL_LINEAGE_REFERENCE, not PRESCRIPTION_VERIFIED.
+- **Scope:** Primary English / English as a Second Language; paper says oral work begins in Class 1 and ESL literacy in Class 2.
+- **Rights:** ERIC-hosted conference paper; do not copy substantial passages. Use short attributed quotations only where needed and otherwise paraphrase.
+
+### Extracted source evidence
+
+1. **Earlier syllabus aim:** The paper quotes the syllabus as aiming to help children “understand and use the English language with ease and accuracy” (paper p.3; it attributes the quotation to the syllabus, p.1).
+2. **Class progression reported:** oral English work starts in Class 1; literacy in English as a second language starts in Class 2 (paper p.3).
+3. **Programme content architecture:** the prescribed SPC/Tate materials are described as structurally graded oral-language drills and accompanying graded readers (paper pp.3–4).
+4. **Historical programme lineage:** the SPC/Tate course was developed for Cook Islands primary ESL in the 1960s and Fiji adopted it in 1968 (paper p.4). This is the paper's historical account, not a substitute for inspecting Fiji's original adoption circular or syllabus.
+5. **Teaching/literacy resource concepts described:** oral language; graded drills; graded readers; reading; storybooks; shared reading; children's literature; rhymes; songs; poetry; experience-based literacy resources (paper pp.4–6).
+6. **Later enrichment approach described:** the paper reports the USP Primary Reading Project / Ready to Read as an enrichment approach, with shared reading, story-based language and literacy, children's books, rhymes, songs and poetry (paper pp.5–6). These are reported enrichment approaches, not proof of mandatory Fiji syllabus indicators.
+
+### Lineage relationship to Record 126 — Year 6 English Reading Skills
+
+- **Possible broad continuity:** English language comprehension and the ability to understand/use English are broad predecessor aims relevant to later reading comprehension and vocabulary learning.
+- **Possible resource-method continuity:** graded readers and reading materials are historical precursors to later text-based reading instruction.
+- **Not established:** no evidence in this paper maps the 2015 Year 6 outcomes EN 6.1.1 or its listed indicators (text types, main ideas, skimming/scanning, summarising, fluency, vocabulary, root words and complete-sentence comprehension answers) to specific 1968/earlier syllabus codes or pages.
+- **Required next lineage source:** retrieve the original Fiji primary English syllabus and SPC/Tate implementation materials, then compare exact class-level wording and sequence. Until that is done, keep each Record 126 English indicator's lineage as LINEAGE_NOT_YET_FOUND; Record 128 is a contextual predecessor lead only.
+
+### PacEdu content handling
+
+- Preserve the earlier syllabus aim as a short attributed historical outcome statement, not a current mandatory indicator.
+- Do not convert the reported Ready to Read or shared-reading approaches into a mandatory prescription.
+- Do not infer modern literacy expectations from this 1991 paper. Use it only to locate older source documents and understand broad predecessor aims.
+- No daily worksheet authorised; CAS contact remains DEFERRED_UNTIL_PILOT.
+
+**Source:** Lotherington-Woloszyn, H. (1991), *Literacy in ESL: Pedagogical and Cultural Pathfinding in Fiji*, ERIC ED357627, pp. 3–6: https://files.eric.ed.gov/fulltext/ED357627.pdf .
+
+## Record 129 — Older Fiji Mathematics source retrieval result: Class 8/Form II textbook (1998)
+
+- **Bibliographic source located:** *Mathematics for Class 8/form II*, revised edition, Curriculum Development Unit, Fiji Ministry of Education & Technology, 1998, 130 pages.
+- **Catalogue/source:** Google Books bibliographic record: https://books.google.com/books/about/Mathematics_for_Class_8_form_II.html?id=Xp6uHAAACAAJ
+- **Verified metadata:** title, contributor (Fiji Ministry of Education, Curriculum Development Unit), revised edition, publisher and year 1998, length 130 pages.
+- **Content extraction status:** NOT EXTRACTED. The catalogue page provides bibliographic metadata only and says no eBook is available. No topic, indicator or page content is inferred from the title.
+- **Lineage relevance:** a strong older Fiji Ministry Mathematics resource lead for Class 8/Form II, but it cannot yet establish lineage for the Year 6 Mathematics Activity Book or current prescription.
+- **Next retrieval action:** locate a physical/library copy or a legitimate full-text copy; inspect its actual contents and page locators before adding concepts. Do not use unrelated third-party worksheets or textbook summaries as substitutes.
+- **Classification:** PENDING_SOURCE_REVIEW; metadata only; no indicator extracted; no worksheet authorised.
+
+## Record 130 — Older Fiji Year 13 Mathematics prescription retrieval check (1997)
+
+- **Search result located:** a third-party upload titled *Y13 MATHS PRESCRIPTION.pdf*, whose preview identifies “Ministry of Fiji Education, Seventh Form Mathematics Examination Prescription (Revised 1997)”.
+- **Third-party landing page:** https://www.collegesidekick.com/study-docs/24869410
+- **What was actually inspectable:** landing-page metadata and title/cover text only. The page lists a 16-page PDF but does not expose readable prescription pages in the opened view.
+- **Content extraction status:** NOT EXTRACTED. No Form 7 topics, indicators, objectives or assessment criteria are inferred from the title.
+- **Classification:** PENDING_SOURCE_REVIEW; third-party-hosted copy; verify the original document, complete text, approval status, page numbering and rights before extracting or using.
+- **Next retrieval action:** obtain the original/controlled 1997 Form 7 Mathematics prescription or a legitimate readable scan and extract its actual subject content. Do not treat a third-party upload title as proof of current Form 7 requirements.
+
