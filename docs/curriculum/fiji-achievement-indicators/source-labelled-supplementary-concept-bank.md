@@ -6041,7 +6041,7 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Source URL:** https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/
 - **Source locations:** printed pp. 5–20 (Units 1–4: self-introduction, friends, school, getting ready for school); pp. 25–40 (Units 5–7: rainy-day vocabulary, oral discussion, phonics and family-help vocabulary); pp. 41–54 (Unit 8 and phonics sequence); pp. 55–68 (phonics consolidation, short reading passages, family/everyday routines, colour and descriptive language).
 - **Source type and classification:** Fiji Ministry primary English resource book. The book presents lesson content and practice tasks rather than a clearly labelled achievement-indicator list. Entries below are FIJI_PRIMARY_TEXT_CONCEPT and PacEdu-derived observable-evidence prompts, not official achievement indicators. They require cross-mapping to the current approved Year 1 English syllabus before curriculum sign-off.
-- **Concepts extracted and paraphrased:
+- **Concepts extracted and paraphrased:**
   1. **Oral self-introduction:** communicate basic personal information and describe a familiar feature using a simple sentence.
   2. **Question-and-answer conversation:** listen to a familiar question and give a relevant spoken response.
   3. **Descriptive vocabulary:** use words for colours, clothing and visible features to describe familiar objects or people respectfully.
