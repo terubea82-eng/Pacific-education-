@@ -5970,3 +5970,66 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Worksheet gate:** `NOT YET AUTHORISED`; requires current Fiji curriculum mapping, current financial facts, rights clearance, accessible design, age/level mapping and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
 - **Use restriction:** Use as a supplementary financial education source only. Do not treat framework-wide competencies as Class 1–2-only indicators or as official achievement indicators for Mathematics, English or Social Studies.
+
+
+## Record 189 — Fiji FinED Fiji Classes 3–4 and 5–6 financial learning-outcome progression
+
+- **Source:** Fiji Financial Education Curriculum Development Project, *FinED Fiji: A Manual for Teachers, Class 1/2*, 2012, framework progression table for Classes 1–8.
+- **Manual PDF:** https://www.nfitfiji.com/wp-content/uploads/Year-1-and-2-FinED-Teacher-Manual.pdf
+- **Source locations:** printed pp. 18–22, financial strands, sub-strands and learning outcomes table.
+- **Source type:** Fiji FinED Fiji framework progression table reproduced in the Class 1/2 teacher manual. It is not a general Ministry subject syllabus.
+- **Classification:** 17 `FINED_FRAMEWORK_LEARNING_OUTCOME` entries for Classes 3–4 and 17 `FINED_FRAMEWORK_LEARNING_OUTCOME` entries for Classes 5–6; 8 `PACEDU_DERIVED_CONCEPT` evidence prompts. These are FinED framework outcomes, not generic Ministry achievement indicators.
+- **Classes 3–4 outcomes (paraphrased):**
+  1. Demonstrate use of Fiji coins and notes in transactions up to $20.
+  2. Give examples of payment methods, including barter, cash, layby and hire purchase.
+  3. Explain different purposes for which money is used, including paying bills and meeting obligations.
+  4. Read and understand simple transaction receipts.
+  5. Explain how money helps meet family needs.
+  6. Give examples of budgeting needs before wants.
+  7. Prepare a simple budget for a small activity or event.
+  8. Compare spending options for a given amount of money.
+  9. Compare options for saving money.
+  10. Identify benefits of short-, medium- and long-term savings goals.
+  11. Give examples of getting value for money.
+  12. Explain credit and give examples of using credit to buy goods.
+  13. Identify regular and unexpected sources of income.
+  14. Give examples of types of tax, such as income tax and VAT.
+  15. Identify a short-term personal goal and prepare a plan to achieve it through earning and saving.
+  16. Identify and compare ways to keep money safe, such as a money box and bank account.
+  17. Give examples of ways to reduce the risk of losing money or having it stolen.
+- **Classes 5–6 outcomes (paraphrased):**
+  1. Demonstrate use of Fiji coins and notes in transactions up to $50.
+  2. Give examples of the value of Fiji currency in relation to other currencies.
+  3. Explain the tangible value of goods and services, including by interpreting a transaction receipt.
+  4. Read and understand more complex transaction receipts.
+  5. Describe regular financial commitments that families may have.
+  6. Give examples of prioritising needs and wants.
+  7. Prepare a budget for an activity or event and keep records of transactions.
+  8. Identify and evaluate options for depositing savings.
+  9. Give examples of differences in saving and spending patterns among social groups, handled respectfully and without stereotyping.
+  10. Explain the role of banks in the community.
+  11. Explain how credit and interest work.
+  12. Identify differences in income associated with different types of work.
+  13. Explain taxes made on income and give examples of how government uses tax revenue.
+  14. Identify a medium-term personal goal (the manual gives an approximate 6–12 month horizon) and plan to achieve it through earning and saving.
+  15. Identify financial risks that individuals and families may face.
+  16. Give examples of ways to manage or minimise financial risks, including living within available means.
+  17. Interpret the value of goods and services using supplied transaction information.
+- **PacEdu-derived observable evidence prompts:**
+  1. Complete a fictional shopping transaction within a supplied amount and check the change using teacher-provided figures.
+  2. Compare two fictional spending plans and justify which better meets the stated needs.
+  3. Create a simple class-event budget from fictional prices and record the transactions.
+  4. Compare two fictional saving choices using only supplied, age-appropriate information.
+  5. Explain a fictional credit purchase and identify the obligation to repay.
+  6. Distinguish regular from unexpected income in a fictional scenario.
+  7. Identify a tax example in a supplied public-service scenario without assuming current rates.
+  8. Identify a money-safety risk in a fictional case and propose a safe, age-appropriate response.
+- **Subject mapping:** Financial Education integrated with Mathematics, English and Social Studies. Mathematics: currency, calculation, comparison, budgeting and records. English: vocabulary, receipt reading, explanation and justification. Social Studies: work, family needs, community services and public revenue. This is not a replacement for the approved outcomes in those subjects.
+- **Level mapping:** Classes 3–4 and Classes 5–6 are kept as separate progression bands. Do not assign these outcomes to ECE, Forms or other classes without a verified curriculum map.
+- **Prerequisite mapping:** Classes 3–4 build on basic coin recognition, counting, simple addition/subtraction and distinguishing needs from wants. Classes 5–6 extend transaction interpretation, multi-step calculations, recording and comparison. These are PacEdu planning assumptions to confirm from learner evidence, not official prerequisite statements.
+- **Assessment and activity safeguards:** use fictional prices, incomes, budgets, receipts and characters. Never ask learners to disclose household income, family financial obligations, bank details, remittances, debt or financial hardship. No real-money purchases, bank visits, loans or financial product applications.
+- **Currentness:** the manual is dated 2012. `CURRENT_VERSION_CHECK_REQUIRED` for currency denominations, exchange rates, payment methods, taxes, financial products, banking services and consumer protections.
+- **Rights:** copyright © United Nations Capital Development Fund 2012; no open commercial adaptation licence is stated in the accessible manual. `RIGHTS_REVIEW_REQUIRED` for PacEdu reproduction, adaptation or distribution. Do not copy the source’s stories, illustrations, tables, templates, games or worksheets.
+- **Worksheet gate:** `NOT YET AUTHORISED`; requires current curriculum mapping, current financial facts, rights clearance, accessible age-appropriate design, prerequisite mapping and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+- **Use restriction:** These are FinED framework outcomes only. Do not label them as general Ministry subject achievement indicators or use the Class 5–6 progression as a substitute for the separately verified Class 7–8 record.
