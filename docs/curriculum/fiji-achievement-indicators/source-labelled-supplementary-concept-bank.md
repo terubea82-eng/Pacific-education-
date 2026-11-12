@@ -1923,3 +1923,54 @@ The Number/Operations, Patterns/Algebra, Measurement/Shape, Data/Statistics/Prob
 - **Classification:** PENDING_SOURCE_REVIEW; third-party-hosted copy; verify the original document, complete text, approval status, page numbering and rights before extracting or using.
 - **Next retrieval action:** obtain the original/controlled 1997 Form 7 Mathematics prescription or a legitimate readable scan and extract its actual subject content. Do not treat a third-party upload title as proof of current Form 7 requirements.
 
+
+## Record 131 — Fiji Year 1 English Language, Literacy and Communication resource book (2013; revised 2019; reprinted 2020)
+
+**Purpose:** Extract the actual Year 1 learning content and activity concepts visible in the Ministry-issued resource. This is a resource-book extraction, not proof that each activity is a formally approved achievement indicator or that this is the current controlled Year 1 prescription.
+
+### Source identity and controls
+
+- **Title:** *Year 1 English — Language, Literacy and Communication*.
+- **Issuer shown in source:** Ministry of Education, Heritage and Arts, Curriculum Development Unit, Fiji.
+- **Edition history printed in book:** 2013; revised 2019; re-printed 2020.
+- **Source copy inspected:** public FlipHTML5 text-view copy: https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/
+- **Printed pages inspected:** 1–69 (book pp. 5–69 contain the visible teaching/learning units and phonics activity pages).
+- **Source integrity note:** the copy is hosted by a third party, not the Ministry website. Title/copyright pages identify the Ministry/Curriculum Development Unit; obtain the controlled Ministry copy before treating it as authoritative current curriculum.
+- **Copyright notice (printed p.2):** CAS owns copyright; schools may reproduce in part or full for classroom purposes only with acknowledgement; other use must be referred to the Senior Education Officer English Primary at CAS. PacEdu digital/commercial adaptation or reproduction is therefore **BLOCKED_RIGHTS_REVIEW** pending permission. CAS contact remains DEFERRED_UNTIL_PILOT.
+- **Classification:** SUPPLEMENTARY_ONLY / PENDING_SOURCE_REVIEW for PacEdu. Not PRESCRIPTION_VERIFIED. This is a resource book and activity sequence, not an independently verified current syllabus/prescription.
+- **Level:** Year 1 (explicit in title).
+
+### Extracted concepts and observable learning evidence
+
+The source presents activity prompts rather than coded achievement-indicator statements. The entries below therefore retain the distinction: **source activity/content** is what the book actually asks learners to do; **PacEdu observable evidence** is a separate derived description, not official Ministry wording.
+
+1. **Personal oral language and self-description** — Unit 1, printed p.5. Source activities ask learners to state their name, age, clothing and identity, draw themselves, and answer questions about name, age, favourite colour and clothing. Derived evidence: learner gives simple personal information orally and completes a short patterned self-description. **Concepts:** speaking/listening; personal vocabulary; question-and-answer exchange; simple sentence frames.
+2. **Letter-name and letter-form recognition** — printed pp.6–9, 11–14, 16–19, 21–24, 26–29, 32–35, 37–45. Repeated activities trace, rewrite and identify upper/lowercase forms, including single letters and selected digraphs. Derived evidence: learner recognises and forms the displayed graphemes. **Concepts:** alphabetic knowledge; upper/lowercase correspondence; letter formation; visual discrimination.
+3. **Initial-sound discrimination** — printed pp.6–9, 11–14, 16–19, 21–24, 26–29, 32–33, 37–45 and phonics activities pp.55–57. Learners circle/colour pictures whose beginning sound matches a target letter/sound. Derived evidence: learner identifies a target initial phoneme in a spoken or pictured word. **Concepts:** phonemic awareness; initial phoneme; sound-symbol association.
+4. **Medial and final sound discrimination** — printed pp.29–30, 33–35, 45–54 and phonics activities pp.58–60. Learners identify matching middle/end sounds and complete words using displayed vowel patterns. Derived evidence: learner identifies a target medial/final sound and selects or supplies the corresponding grapheme pattern. **Concepts:** phoneme position; medial/final phoneme; vowel patterns; grapheme–phoneme correspondence.
+5. **Selected consonant and vowel patterns** — printed pp.29–30, 33–35, 37–40, 45–54; phonics pp.58–60. Explicit examples include /ai/, /oa/, /ie/, /ee/, /or/, /ng/, /oo/, /ch/, /sh/, /th/, /qu/, /ou/, /oi/, /ue/, /er/ and /ar/, alongside single-letter sounds. Derived evidence: learner recognises, says, writes or locates the target pattern in a word. **Concepts:** digraphs; vowel teams; r-controlled vowel patterns; consonant clusters/digraphs as presented; spelling patterns.
+6. **Blending/segmenting and word construction** — printed pp.31–32, 35–40, 49–60, 66. Learners combine segmented sound units to read words, supply missing sound patterns, add endings such as “et” and “ay”, and say completed words aloud. Derived evidence: learner blends supplied sound units into a word and identifies component sound patterns. **Concepts:** phoneme blending; segmentation; onset/rime; word completion; decoding.
+7. **Word recognition and early reading vocabulary** — printed pp.15, 25, 30–31, 36, 41, 60–64. Word sets and short text include examples such as “my”, “can”, “find”, “the”, “rain”, “day”, “down”, “again”, “get”, “to”, “see”, “help”, “come”, “is”, “it”, “me”, “away”; later pages include short family and daily-routine sentences. Derived evidence: learner reads selected familiar words in isolation or simple sentences. **Concepts:** high-frequency/familiar words; vocabulary recognition; decoding in context.
+8. **Oral comprehension and picture discussion** — printed pp.10, 15, 25, 30, 36, 41–42. Questions invite learners to retrieve details from pictures/text, describe actions, respond to familiar experiences and express preferences. Derived evidence: learner answers literal questions and describes a pictured event using simple oral language. **Concepts:** listening comprehension; picture reading; literal response; oral vocabulary; describing actions.
+9. **Recitation, rhyme and rhythm** — printed pp.25 and 30. Learners recite short rain-themed rhymes. Derived evidence: learner joins in or recites a short rhyme with recognisable sequence and phrasing. **Concepts:** rhyme; rhythm; oral fluency; memorised language; sound pattern awareness.
+10. **Reading and drawing / text-to-image representation** — printed pp.62–65. Learners read simple family and daily-routine sentences and draw corresponding people/actions. Derived evidence: learner represents the meaning of a short sentence through a relevant drawing. **Concepts:** sentence comprehension; vocabulary in context; connecting written language to meaning.
+11. **Sentence construction and picture-based writing** — printed p.70. Learners are asked to write a sentence about a picture. Earlier patterned prompts appear on pp.5 and 20. Derived evidence: learner writes a relevant simple sentence using a model or own words. **Concepts:** sentence meaning; basic written expression; picture prompt; patterned sentence construction.
+12. **Following written instructions and sequencing** — printed pp.20 and 67. Learners complete a daily routine using a word bank and order letters alphabetically from A to Z. Derived evidence: learner selects contextually appropriate words for a simple sequence and orders alphabet letters. **Concepts:** routine vocabulary; temporal sequencing; word-bank use; alphabetic order.
+13. **Colour, size and comparative vocabulary in reading tasks** — printed pp.5, 67–68. Learners identify colours in written directions and compare longest, tallest and biggest objects. Derived evidence: learner follows a short written direction and identifies the requested colour or comparative attribute. **Concepts:** colour vocabulary; adjectives; comparative/superlative meaning; following instructions.
+14. **Everyday themes as language contexts** — Units 1–8, printed pp.5–54 and reading activities pp.62–70: self, friends, school, getting ready for school, rainy day, rainy-day activities, family feast and family routines. These are contexts for oral language, vocabulary, phonics and early reading, not separate formal achievement indicators. Derived evidence depends on the specific language task, not merely naming the theme.
+
+### Older-source lineage check
+
+- **Record 128** (Lotherington-Woloszyn, 1991, pp.3–6) reports the earlier Fiji primary English syllabus aim and describes oral work beginning in Class 1, ESL literacy beginning in Class 2, and the historical SPC/Tate oral course with graded readers. This provides broad historical context for oral language and early reading.
+- **Not established:** no exact older syllabus wording or indicator code has yet been found that matches this 2013/2019 Year 1 resource's specific phoneme targets, letter patterns, word lists, unit activities, picture-comprehension prompts or sentence-writing tasks. Do not mark these as lineage-verified.
+- **Lineage status:** LINEAGE_NOT_YET_FOUND for each detailed concept above. Record 128 is contextual only, not a verified source for the detailed Year 1 content.
+
+### PacEdu handling decision
+
+- Retain each concept above as a separately traceable source-derived concept, not an official achievement indicator.
+- Do not create mandatory daily worksheets from this record until the controlled current Year 1 English prescription/scope-and-sequence and older source lineage are checked.
+- Keep the source's printed page references, source wording/activity distinction and rights restriction attached to every derived entry.
+- **Status:** SUPPLEMENTARY_ONLY; PENDING_SOURCE_REVIEW; BLOCKED_RIGHTS_REVIEW for reproduction/adaptation; LINEAGE_NOT_YET_FOUND.
+- **No worksheet authorised. No CAS contact now.**
+
+**Source:** Ministry of Education, Heritage and Arts, Curriculum Development Unit (2013, revised 2019, reprinted 2020), *Year 1 English — Language, Literacy and Communication*, printed pp. 1–69, third-party text-view copy: https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/ .
