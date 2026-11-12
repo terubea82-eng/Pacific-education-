@@ -2892,3 +2892,109 @@ Use the current issue date and original source with every dataset; distinguish o
 - Protect customary and community knowledge. Do not collect learners' family land tenure, customary rights, private business information or sensitive community disputes.
 - **Worksheet gate:** NOT YET AUTHORISED. First verify Act commencement and current regulations, obtain current Fiji Ministry technical aquaculture materials, map each concept to approved Fiji NCF and official Ministry indicators, set year levels and prerequisites, complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 151 — Fiji water resources, water services, rural WASH and sanitation concepts
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS ONLY; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Elementary Science; Basic Science; Social Science; Healthy Living; Agriculture; Technology; Mathematics; English; Computer Studies  
+**Level:** LEVEL_NOT_SPECIFIED pending mapping to approved Fiji NCF and Ministry year-level indicators  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — Water Authority of Fiji Promulgation 2007 (Promulgation No. 25 of 2007)
+
+- **Issuer/source:** Government of Fiji; Extraordinary Government Gazette, Vol. 7, No. 62, 22 August 2007.
+- **Official PDF:** https://www.health.gov.fj/wp-content/uploads/2018/02/WAF-Promulgation-2007.pdf
+- **Inspected provisions:** ss.1–3; ss.5–8; ss.24–28; ss.30–35; s.42; ss.43–44.
+- **Exact source locations:** printed pp.1581–1583 (preliminary, definitions and functions); pp.1589–1590 (service operations and water quality); pp.1591–1593 (supply, finance, regulation and transitional provisions).
+- **Amendment/version caution:** FAOLEX identifies amendments in 2013, 2014 and 2022. The 2022 Water Authority of Fiji (Budget Amendment) Act No.46 of 2022 expressly amends a principal law described as the Water Authority of Fiji Act 2007 and adds liquid trade waste and infringement-notice provisions. This review did not obtain a current consolidated principal text or verify every amendment and commencement notice. Treat the 2007 Gazette text as a historical primary legal source, not a complete current consolidation.
+- **Commencement caution:** section 1(2) requires a ministerial Gazette notice. WAF's official history says the Authority took over operations on 1 January 2010, but that institutional history is not a substitute for the original commencement notice. Do not state a precise legal commencement date without the notice.
+- **Source classification:** FIJI_LEGAL_SOURCE_CONCEPT; CURRENT_VERSION_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source A**
+1. **Water supply as a managed system** — harvesting, treatment, reticulation and delivery are linked stages; source s.7(a), printed p.1583. Evidence: learner orders a supplied diagram of a water-supply pathway and explains each stage.
+2. **Water treatment and quality standards** — treatment and water-quality standards are distinct but connected; source ss.7(b), 28, printed pp.1583, 1589–1590. Evidence: learner distinguishes a treatment step from a quality check using a safe, teacher-provided diagram.
+3. **Wastewater collection and treatment** — collection, transport, treatment and discharge form a managed chain; source s.7(c), printed p.1583. Evidence: learner labels a wastewater pathway and identifies where treatment occurs.
+4. **Water and sewerage infrastructure** — systems require facilities, equipment, operation and maintenance; source ss.7(d), 8(a), printed p.1583. Evidence: learner identifies pipes, pumps, storage and treatment components on a non-sensitive schematic.
+5. **Water sources and resource conservation** — water-source rights, protection, management and conservation are connected to public supply; source ss.7(i), 8(b), printed p.1583. Evidence: learner sorts examples of water sources and describes one non-harmful conservation action.
+6. **Water bodies and land-use planning** — water-resource decisions connect with land-use planning and protection of water bodies; source s.7(j), printed p.1583. Evidence: learner interprets a fictional land-use map and marks possible pathways from land to water.
+7. **Water rationing and limited supply** — supply can be managed when availability is constrained; source s.8(g), printed p.1583. Evidence: learner solves a fictional allocation problem using supplied quantities, without issuing real-world restrictions.
+8. **Water service access and connection** — water and sewerage service connections are planned and controlled; source ss.26–27, printed p.1589. Evidence: learner explains why a service connection is part of an organised network, not an improvised classroom activity.
+9. **Measurement and water meters** — metering can record water supplied; source s.27(4), printed p.1589. Evidence: learner reads a fictional meter illustration and calculates a simple difference between two readings.
+10. **Public health and water-quality protection** — standards address water quality and treatment assets; source s.28, printed pp.1589–1590. Evidence: learner explains why clear-looking water cannot be assumed safe and why qualified testing is required.
+11. **Service conditions and customer communication** — water services involve conditions and communication between provider and customer; source s.30, printed p.1590. Evidence: learner identifies essential information in a fictional service notice.
+12. **Emergency supply and water scarcity** — the legal text recognises control or rationing of supply; source s.8(g), printed p.1583, read with s.31, printed p.1590. Evidence: learner analyses a fictional drought or supply-shortage scenario and identifies safe household conservation options.
+
+### Source B — Fiji Rural Water and Sanitation: Practical Guidelines for Rural Water Supply Management Plan (May 2012)
+
+- **Issuer/source:** Government of Fiji, Ministry of Works, Transport and Public Utilities, Water and Sewerage Department.
+- **Date/edition:** May 2012.
+- **Official-hosted PDF:** https://www.mims.gov.fj/wp-content/uploads/2025/08/WSD-Practical-Guidelines-for-Rural-Water-Supply-Management-Plan.pdf
+- **Inspected source locations:** pp.3–4 (policy context and purpose); pp.7–10 (community description, demand, sources, hazards, extraction and supply design); appendices 6–8, pp.31–35 (rainwater, groundwater and surface-water contamination); appendix 9, p.36 (maintenance); appendix 10, pp.37–38 (treatment concepts); appendix 11, p.39 (planning checklist).
+- **Status and limitations:** This is a 2012 implementation guide, not a current drinking-water standard or a learner syllabus. The 2026 National Water Resources Management and Sanitation Policy refers to the 2021 Rural Water Supply Policy and to these practical guidelines for rural scheme planning. Do not treat the 2012 numerical demand, dosing, testing or maintenance values as current universal household instructions. Verify all operational values against current Ministry of Health standards and qualified water-service advice before any teaching use.
+- **Source classification:** FIJI_PRIMARY_GOVERNMENT_TECHNICAL_GUIDE; HISTORICAL_TECHNICAL_CONTEXT; CURRENT_VERSION_CHECK_REQUIRED.
+
+**PacEdu-derived concepts from Source B**
+13. **Community water-demand estimation** — population and patterns of use affect estimated demand; source §3, printed pp.7–8. Evidence: learner calculates a fictional community total from supplied population and per-person figures, with units shown.
+14. **Wastewater generation and categories** — water use creates wastewater, including greywater and blackwater; source §3.4, printed p.7. Evidence: learner sorts fictional examples into greywater and blackwater categories.
+15. **Comparing water-source types** — rainwater, springs, surface water, aquifers and desalinated seawater are distinct source types; source §4.1, printed p.8. Evidence: learner classifies labelled source diagrams and states one relevant consideration for each.
+16. **Water quantity and quality evidence** — source assessments need both quantity and quality checks; source §§4.1–4.2, printed p.8. Evidence: learner reads a supplied mock data table and distinguishes quantity results from quality results.
+17. **Water-source hazards and risk reduction** — flooding, contaminated sites, animal areas and wastewater disposal can threaten sources; source §4.3, printed p.8. Evidence: learner identifies hazards on a fictional catchment diagram and matches them to prevention concepts.
+18. **Water extraction and source limits** — source, extraction type, amount and limits are separate data fields; source §5.1, printed p.8. Evidence: learner completes a fictional data table and compares extraction amounts without making real extraction decisions.
+19. **Water-supply system design** — collection, pumps, storage, treatment, filters and pipelines form connected infrastructure; source §6.1, printed p.9. Evidence: learner sequences labelled components on a simple flow diagram.
+20. **Technical data and design constraints** — plans require accurate survey and technical information and must account for local capacity and resources; source §§6.2–6.4, printed pp.9–10. Evidence: learner identifies missing information in a fictional project brief.
+21. **Rainwater contamination pathways** — roof debris, animal droppings, spray drift, tank entry points and sediment can affect stored rainwater; source appendix 6, printed pp.31–32. Evidence: learner traces a contamination pathway on a drawing and selects a safe prevention concept.
+22. **Groundwater contamination pathways** — runoff and nearby sanitation or waste sources can threaten groundwater; source appendix 7, printed pp.32–33. Evidence: learner labels a fictional cross-section showing how contaminants could reach a bore.
+23. **Surface-water contamination pathways** — land use and runoff can affect streams and other surface-water sources; source appendix 8, printed pp.34–35. Evidence: learner interprets a fictional catchment picture and identifies upstream/downstream relationships.
+24. **Water-system maintenance as prevention** — inspection and maintenance help reduce failure and contamination risks; source appendix 9, printed p.36. Evidence: learner sorts maintenance examples by component using a teacher-provided checklist.
+25. **Treatment processes have different purposes** — filtration, UV and chlorine disinfection are different processes; source appendix 10, printed pp.37–38. Evidence: learner matches each process to its general purpose and identifies that no single method removes every contaminant.
+26. **Monitoring, testing and evidence** — test results must be compared with the applicable current standard; source appendix 9, printed p.36. Evidence: learner interprets a fictional test report while clearly marking it as practice data, not a real safety determination.
+
+### Source C — National Water Resources Management and Sanitation Policy 2026
+
+- **Issuer/source:** Government of Fiji, Department of Water and Sewerage; national policy publication.
+- **Date/edition:** 2026; 55-page policy.
+- **Official document library:** https://library-fiji-dws.akvo.org/
+- **Direct policy PDF:** https://library-fiji-dws.akvo.org/documents/national-water-resources-management-and-sanitation-policy-2026.pdf
+- **Inspected source locations:** pp.3–4 (policy purpose and national context); pp.16–19 (principles, urban water services and conservation); pp.22–26 (sanitation and rural water services); pp.28–30 (water information and monitoring); pp.34–35 (catchment protection); pp.45–46 (water quality and pollution); pp.50–52 (legislative programme, implementation and source protection).
+- **Status caution:** This is a policy, not an Act or a set of student achievement standards. The policy describes future regulatory and legislative reforms, including a proposed Water and Sewerage Services Act and regulator. Such proposals must be labelled proposed policy actions, not existing legal powers or completed reforms.
+- **Source classification:** FIJI_PRIMARY_GOVERNMENT_POLICY; CURRENT_POLICY_SOURCE; NOT_LEGISLATION.
+
+**PacEdu-derived concepts from Source C**
+27. **Universal access, equity and water justice** — safe water, sanitation and hygiene are public wellbeing concerns; source pp.3–4. Evidence: learner explains, using a fictional case, why access needs can differ between communities.
+28. **Water security and sustainable management** — availability, service reliability, protection and long-term needs are linked; source pp.3–4 and 16–19. Evidence: learner distinguishes immediate water use from long-term resource security.
+29. **Water conservation and demand management** — water-saving practices and consumer awareness are policy priorities; source pp.19–20. Evidence: learner compares fictional household or school conservation options using supplied data.
+30. **Rural water-service planning and community participation** — rural schemes involve planning, design, management and community participation; source pp.22–24. Evidence: learner identifies roles in a fictional community planning scenario without assigning real obligations to their own family or village.
+31. **Sanitation and wastewater management** — safe disposal and treatment protect health and the environment; source pp.24–26. Evidence: learner distinguishes safe sanitation concepts from unsafe disposal examples in fictional illustrations.
+32. **Water-resource data and evidence quality** — surface-water, groundwater, hydrology, water-quality and pollution records support decisions; source pp.28–30. Evidence: learner identifies date, place, unit, method and source in a mock dataset.
+33. **Data validation, monitoring and trends** — regular quality checks and long-term monitoring help identify change and risk; source pp.28–30. Evidence: learner compares two fictional datasets, identifies missing values and describes a trend cautiously.
+34. **Geospatial information and mapping** — water and flood-risk information can be integrated into GIS and environmental databases; source pp.29–30. Evidence: learner reads a simple, non-sensitive map key and interprets a fictional water-resource map.
+35. **Catchment and watershed relationships** — land cover, erosion, pollution and water quality are connected across a catchment; source pp.34–35 and 45–46. Evidence: learner traces a fictional upstream-to-downstream pathway.
+36. **Point-source and diffuse pollution** — pollution can come from identifiable discharge points or dispersed land-based sources; source pp.45–46. Evidence: learner classifies fictional pollution examples and explains the difference.
+37. **Erosion, sediment and water quality** — vegetation loss and land degradation can increase sediment in water; source pp.45–46. Evidence: learner interprets a teacher-provided diagram linking exposed soil, runoff and suspended sediment.
+38. **Groundwater protection** — bore areas and recharge environments require protection from contamination; source pp.45–46 and 51–52. Evidence: learner marks protective concepts on a fictional bore-site diagram.
+39. **Climate resilience, flood and drought preparedness** — water planning connects with climate adaptation and disaster-risk reduction; source pp.16–19 and 28–30. Evidence: learner compares fictional planning choices for dry and wet conditions without making real hazard forecasts.
+40. **Integrated water, sanitation and hygiene (WASH)** — water supply, sanitation and hygiene are linked but distinct service areas; source pp.3–4 and 22–26. Evidence: learner sorts examples into water, sanitation and hygiene categories and explains one connection.
+41. **Environmental safeguards and biodiversity** — water-sector planning should consider ecosystems, biodiversity and environmental impacts; source pp.16–19 and 34–35. Evidence: learner identifies possible ecosystem effects in a fictional infrastructure case.
+42. **Community knowledge and source stewardship** — policy recognises community participation and traditional water-source protection; source pp.22–24 and 51–52. Evidence: learner explains respectful consultation and stewardship using a fictional scenario without collecting sensitive customary knowledge.
+43. **Public reporting and accountable decisions** — reliable data and transparent reporting support planning and public understanding; source pp.28–30. Evidence: learner writes a short evidence-based summary that separates observation from recommendation.
+
+### Source links and source hierarchy
+
+- The 2007 Promulgation supplies the legal framework concepts only; the 2012 guide supplies technical planning concepts; the 2026 policy supplies current policy direction. Do not merge these source types into one purported curriculum syllabus.
+- Official Water Authority water-quality information: https://waterauthority.com.fj/awareness-safety/water-safety/ . WAF describes its National Water Quality Laboratory's sampling, analysis and role in maintaining drinking-water quality against WHO guidance or Fiji National Drinking Water Quality Standards. Use the current standard itself for any numerical or parameter-specific learning task.
+- Official WAF water production and GIS information: https://waterauthority.com.fj/waf-production/ . Use current source dates and dataset metadata before adapting any figures.
+- 2022 amendment source: https://www.parliament.gov.fj/wp-content/uploads/2022/07/Act-46-Water-Authority-of-Fiji-Budget-Amendment-1.pdf . This amendment changes provisions including liquid trade waste and infringement notices; do not teach offences, penalties, notices or enforcement procedure as learner duties.
+
+### Teaching, safety, legal and curriculum safeguards
+
+- None of the three sources is a Fiji Ministry student syllabus or a list of official year-level achievement indicators. Every entry 1–43 above is a PacEdu-derived concept. The policy's strategies and the legal provisions must not be mislabelled as CLOs.
+- Do not use the 2012 guide's historic litres-per-person, chlorine dose, pH, residual chlorine, test frequency, tank dimensions or maintenance intervals as current universal advice. They are source-specific historical guidance and require verification against current Ministry of Health standards and qualified technical advice.
+- Never ask learners to taste, drink, collect, chemically treat or certify unknown water. Do not ask learners to handle chlorine, disinfectants, UV equipment, wastewater, sewage, contaminated samples, bore equipment or treatment machinery.
+- No learner should enter tanks, wells, bores, rivers, drains, treatment plants, sewerage sites, floodwater or restricted catchments for an activity. Use mock data, diagrams, photographs and supervised classroom demonstrations that involve no hazardous materials.
+- Do not ask learners to repair, connect, disconnect, ration or operate actual water infrastructure, or issue public health or water-safety notices.
+- Respect privacy and customary/community knowledge. Use fictional or anonymised locations and avoid collecting household water bills, addresses, water-source security details or sensitive customary information.
+- **Worksheet gate:** NOT YET AUTHORISED. First verify current consolidated legislation and commencement/amendment notices; obtain the current Fiji National Drinking Water Quality Standards and relevant current technical guidance; map each concept to approved Fiji NCF and official Ministry indicators; set year levels and prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
