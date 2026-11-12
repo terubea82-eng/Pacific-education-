@@ -1974,3 +1974,57 @@ The source presents activity prompts rather than coded achievement-indicator sta
 - **No worksheet authorised. No CAS contact now.**
 
 **Source:** Ministry of Education, Heritage and Arts, Curriculum Development Unit (2013, revised 2019, reprinted 2020), *Year 1 English — Language, Literacy and Communication*, printed pp. 1–69, third-party text-view copy: https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/ .
+
+## Record 132 — South Pacific Commission (SPC) Junior Series Reader Book 1 (1966): inspectable early ESL reading predecessor
+
+**Purpose:** Record actual learning-language content from an inspectable 1966 SPC reader, and test whether it provides an older-source relationship to the later Fiji Year 1 English resource (Record 131). This is a historical regional reader, not a Fiji Ministry prescription and not proof of a formal achievement indicator.
+
+### Source identity and adoption context
+
+- **Author:** G. M. Tate.
+- **Title:** *SPC Readers: Junior Series, Book 1*.
+- **Publisher/issuer:** South Pacific Commission, Nouméa; 1966.
+- **Inspected source:** SPC digital library PDF: https://spccfpstore1.blob.core.windows.net/digitallibrary-docs/files/81/81a111a457261c174bc86bc802e91ad3.pdf
+- **Source locators:** reader printed pp. 3–32 (PDF text lines 43–647); introductory notes on PDF lines 4–11.
+- **Source's own scope statement:** SPC Readers were produced for primary children learning English as a second/foreign language; they were structurally based on the Tate Oral English Course. The Junior Series contains nine books. Book 1 should not be introduced until pupils have had adequate pre-reading and reached at least the oral-English level at the beginning of Book IV of the Oral English Course (front matter, before printed p.3).
+- **Fiji connection:** Lotherington-Woloszyn (1991), Record 128, reports that Fiji adopted the SPC/Tate Oral English Course in 1968. This confirms the programme's historical use in Fiji, but the specific scanned 1966 Reader Book 1 is not itself proven to have been the exact prescribed Fiji reader or a formally adopted indicator document.
+- **Status:** HISTORICAL_LINEAGE_REFERENCE; SUPPLEMENTARY_ONLY for PacEdu content; not PRESCRIPTION_VERIFIED. Copyright © South Pacific Commission 1966. Reproduction/adaptation rights for PacEdu not established; keep source text quotations brief and seek permission before reuse.
+
+### Actual content and concepts extracted
+
+1. **Naming and identifying people/objects** — printed pp.3–10, 16–20. Short patterned statements identify family members, children, common objects and people in illustrations (for example, “This is Father”; “This is a book”). **Concepts:** naming vocabulary; nouns; demonstratives; identification; picture–word association. Derived evidence: learner identifies a pictured person/object and matches a short spoken or written label.
+2. **Personal and family vocabulary** — printed pp.3–7, 11–14, 16–20, 28–31. Vocabulary includes family roles and personal names, clothing, household objects and familiar places. **Concepts:** family relationships; people; clothing; home objects; possessive names. Derived evidence: learner recognises and uses familiar vocabulary in short statements.
+3. **Oral interaction and classroom directions** — printed pp.4–8, 11–16, 19–21, 23–28. Repeated dialogue uses requests and prompts such as calling someone, asking them to come/look, and responding. **Concepts:** listening and responding; turn-taking; requests; simple commands; conversational routines. Derived evidence: learner follows a familiar one-step oral prompt and responds appropriately.
+4. **Simple sentence patterns** — printed pp.3–20, 24–31. The reader repeatedly models “This is…”, “Here is…”, “I am…”, “I want…”, “I can…”, “I can see…”, “He/She is…”, “has/have” and “can/can’t”. **Concepts:** basic sentence structure; subject pronouns; present-tense be; simple present/progressive contrast as modelled; possession; ability/negation; question/answer patterns. These are language structures in the reader, not a verified Fiji syllabus grammar sequence.
+5. **Action words and present actions** — printed pp.7–8, 14–15, 17–19, 22–27. Actions include running, walking, laughing, crying, reading, dancing, playing, climbing, singing, drawing, standing and sitting. **Concepts:** action vocabulary; verb meaning; describing visible actions; “can” ability statements; progressive action statements. Derived evidence: learner names or describes a visible action using a modelled phrase.
+6. **Yes/no questions and short answers** — printed pp.20–23, 26–27. The reader asks whether objects/people can be seen and whether people can perform actions, with “Yes, I can” / “No, I can’t” responses. **Concepts:** question forms; yes/no comprehension; short answers; can/can’t. Derived evidence: learner answers a simple question using an appropriate short response.
+7. **Describing and comparing attributes** — printed pp.14–18, 28–30. Content includes colours, big/little, and identifying who owns an object. **Concepts:** colour words; size adjectives; basic comparison; possessive forms. Derived evidence: learner selects or states an object's colour/size or identifies its owner.
+8. **Picture-supported reading and meaning** — throughout printed pp.3–30. Short written sentences are paired with illustrations, and learners are asked to identify or answer questions about what can be seen. **Concepts:** visual context; picture-supported decoding; literal understanding; matching text to image. Derived evidence: learner selects the illustration that matches a simple sentence or answers a literal picture question.
+9. **Early word recognition and cumulative vocabulary** — printed pp.31–32 include a word list ordered by occurrence in the reader and a companion teacher-book list for flashcards. The word list includes function words, pronouns, nouns, verbs, adjectives and question words introduced in the reader. **Concepts:** cumulative sight/reading vocabulary; word recognition; oral rehearsal; flashcard practice. The source does not supply a modern phonics progression.
+10. **Pre-reading as a prerequisite** — source front matter says Book 1 should follow adequate pre-reading and a specified oral-English course level. **Concepts:** readiness sequencing; oral-language preparation before this reader; staged introduction of print. This is a source-specific prerequisite, not a modern diagnostic threshold for PacEdu learners.
+
+### Comparison with Record 131 (Year 1 English resource book)
+
+- **Broad predecessor links supported:** personal/family vocabulary; oral language and question/answer interaction; action and object vocabulary; short patterned sentences; picture-supported meaning; familiar word recognition. These are broad pedagogical/content continuities between a regional ESL reader used in the period of Fiji's SPC/Tate programme and the later Year 1 resource.
+- **Not supported by this source:** the 2013/2019 Year 1 book's letter tracing, initial/medial/final phoneme activities, explicit vowel/digraph patterns, alphabetic order, rhyme work, word-bank sequencing, and its particular unit structure. Do not assign Record 132 as lineage for those Record 131 concepts.
+- **Exact Fiji prescription lineage:** still LINEAGE_NOT_YET_FOUND. The 1991 paper's account of Fiji adoption in 1968 plus this 1966 regional reader establish historical programme context, not the exact Fiji controlled syllabus, adoption list or exact class-level sequence.
+- **Record 131 lineage update permitted:** for only the broad categories above, add a note “HISTORICAL_PREDECESSOR_SUPPORTED — broad content/method continuity only; not an exact indicator match.” Keep detailed phonics and specific unit activity lineage as LINEAGE_NOT_YET_FOUND.
+
+### PacEdu handling decision
+
+- Treat this reader as historical source evidence, not as a mandatory Fiji curriculum prescription.
+- Do not recreate its dated character names, cultural examples or dialogue as current mandatory content; use the concept categories only as historical comparison.
+- Do not use its pre-reading threshold to place or test modern learners.
+- No daily worksheet authorised from this record; no CAS contact now.
+
+**Sources:** G. M. Tate (1966), *SPC Readers: Junior Series, Book 1*, South Pacific Commission, printed pp.3–32, https://spccfpstore1.blob.core.windows.net/digitallibrary-docs/files/81/81a111a457261c174bc86bc802e91ad3.pdf ; Lotherington-Woloszyn (1991), *Literacy in ESL: Pedagogical and Cultural Pathfinding in Fiji*, ERIC ED357627, pp.3–4, https://files.eric.ed.gov/fulltext/ED357627.pdf .
+
+## Record 133 — Ministry annual-report evidence for Fiji Y1–Y8 literacy/numeracy curriculum revision (2020–2021)
+
+- **Source:** Fiji Ministry of Education, Heritage and Arts, *Annual Report 2020–2021*, Curriculum Advisory section, printed pp.49–51 (PDF pp.50–52): https://www.parliament.gov.fj/wp-content/uploads/2023/09/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
+- **Actual evidence:** the report states that the Literacy and Numeracy Curriculum at Y1–Y8 was reviewed and that the Facility, working with the Senior Curriculum Specialists for primary English and Mathematics, made changes to the Y1–Y8 syllabus. It displays a curriculum architecture including the Fiji National Curriculum Framework, syllabus, scope-and-sequence overviews, year-level scope and sequence, and teacher guides. The report also identifies the Reading and Viewing strand and a Writing/Creating and Composing Texts structure with areas including spelling, handwriting, grammar and sentence structure, punctuation, authorship, audience and purpose, ideas/devices, vocabulary, text structure/organisation and cohesion (printed pp.50–51).
+- **What this does not provide:** the report page is a high-level diagram/summary, not the complete syllabus or the exact year-level achievement indicators. Do not extract the diagram labels as individual official indicators or infer a Year 1 placement from them.
+- **Status:** SOURCE_CONTROL_CONTEXT; not PRESCRIPTION_VERIFIED; no indicator wording extracted. It confirms a revision process existed, but does not prove the exact status of the later Year 1 resource book or the present controlled syllabus edition.
+- **Next required source:** locate the actual controlled Y1–Y8 English syllabus and scope-and-sequence documents produced by this revision, then inspect the Year 1 outcomes/indicators and compare their exact wording with Records 131 and 132.
+
+**Source:** Fiji Ministry of Education, Heritage and Arts, *Annual Report 2020–2021*, pp.49–51, https://www.parliament.gov.fj/wp-content/uploads/2023/09/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf .
