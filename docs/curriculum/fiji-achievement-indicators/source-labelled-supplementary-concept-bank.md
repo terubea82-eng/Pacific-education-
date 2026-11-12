@@ -4165,3 +4165,123 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - Attribute SPC material correctly. Its stated partial educational-reuse permission does not permit copying the whole report, altering SPC artwork or separately publishing original figures. Obtain permission for substantial reproduction and review rights for all other sources.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: current Fiji freshwater species inventory and threatened-status check; final 2026 State of the Environment report when released; source rights review; approved Fiji NCF/official indicator mapping; level/prerequisite assignment; teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 162 — Fiji river monitoring, water quality evidence, water accounts and environmental data literacy
+
+- **Record status:** ADDED; source pages and dataset descriptions reviewed; source datasets themselves require download/version and metadata checks before any classroom data extraction.
+- **Record type:** FIJI_OFFICIAL_DATA_SOURCE_CONCEPT / FIJI_PRIMARY_TEXT_CONCEPT / PACEDU_DERIVED_CONCEPT / SUPPLEMENTARY_CONTEXT_ONLY.
+- **Concept count:** 34 numbered PacEdu-derived concepts.
+- **Official indicator status:** These are derived concepts, not official Fiji student achievement indicators, CLOs or achievement standards. The national/SDG indicators quoted by data portals are environmental or statistical indicators, not school curriculum indicators.
+- **Suggested subjects:** Mathematics; Elementary Science; Basic Science; Social Science; Technology; English; Healthy Living; Agriculture.
+- **Level:** LEVEL_NOT_SPECIFIED; map only after approved Fiji curriculum and age/prerequisite review.
+
+### Source A — Fiji Meteorological and Hydrological Services, River Level monitoring
+
+- **Issuer:** Fiji Meteorological and Hydrological Services (FMS).
+- **River Level page:** https://www.met.gov.fj/hydrological-services/rivel-level/
+- **Hydrological Services overview:** https://www.met.gov.fj/hydrological-services/
+- **Inspected content:** Public-facing page identifies river monitoring stations (32 shown at time of review) and provides station markers for river water-level data. The Hydrological Services page describes water-level measurements and flood alerts for river conditions and preparedness.
+- **Limitations:** The page's current station count/interface can change. Individual station readings, units, timestamps, datum, sensor status, quality-control flags and download terms must be checked before using actual values. A water-level reading is not automatically a river discharge measurement or a flood forecast.
+- **Classification:** FIJI_OFFICIAL_HYDROLOGICAL_INFORMATION; LIVE_INTERFACE; STATION_METADATA_CHECK_REQUIRED.
+
+### Source B — Fiji Bureau of Statistics, Fiji’s Experimental Environmental Account for Water – 2025
+
+- **Issuer:** Fiji Bureau of Statistics (FBoS), System of Environmental-Economic Accounting.
+- **Release date:** 16 March 2026.
+- **URL:** https://www.statsfiji.gov.fj/fijis-experimental-environmental-account-for-water-2025/
+- **Inspected content:** Summary states 2025 household, commercial and government water consumption of 70,389 ML (80.5%), 12,104 ML (13.8%) and 4,976 ML (5.7%) respectively; total water extraction 171,595 ML; 89.9% of total extraction by WAF and 10.1% by households; WAF surface-water extraction losses reported as 49.3% during distribution and 5.3% during purification.
+- **Limitations:** The account is explicitly experimental. The release says alternative sources for businesses are not yet estimated. Values are for the stated 2025 accounting scope, not a complete measurement of all water use or a current daily figure. Use the published table definitions and units; do not mix extraction, supply, consumption and losses.
+- **Classification:** FIJI_OFFICIAL_STATISTICS; EXPERIMENTAL_ENVIRONMENTAL_ACCOUNT; SCOPE_LIMITATIONS_MUST_BE_TAUGHT.
+
+### Source C — Water Authority of Fiji, Water Quality and National Water Quality Laboratory
+
+- **Issuer:** Water Authority of Fiji (WAF).
+- **URL:** https://waterauthority.com.fj/awareness-safety/water-safety/
+- **Inspected content:** WAF describes its National Water Quality Laboratory responsibilities for drinking-water quality against WHO guidance and Fiji National Drinking Water Quality Standards; sampling, analysis, interpretation/reporting and corrective-action processes; and monitoring of wastewater plant effluent.
+- **Limitations:** The public page is a service description, not a current laboratory dataset or a substitute for the full Fiji National Drinking Water Quality Standards, current regulations or site-specific test results. Learners must not use it to declare water safe or unsafe.
+- **Classification:** FIJI_OFFICIAL_UTILITY_INFORMATION; LABORATORY_ROLE_DESCRIPTION; CURRENT_STANDARD_VERSION_CHECK_REQUIRED.
+
+### Source D — Fiji Environment Data Portal
+
+- **Issuer:** Fiji Department of Environment; portal supported by SPREP Inform.
+- **Portal:** https://fiji-data.sprep.org/
+- **About page:** https://fiji-data.sprep.org/about
+- **Inspected content:** The portal describes its purpose as enabling access and reuse of national environmental datasets for monitoring, evaluation, analysis, planning, forecasting and reporting. It supports tables, documents and GIS data. The home page lists datasets and dashboards, including a Fiji National Biodiversity Strategy and Action Plan 2026–2030 record and environmental reporting resources.
+- **Limitations:** A dataset being visible on the portal does not itself establish that it is current, complete, quality-assured, open-licensed for every reuse, or suitable for a particular student task. Check each dataset's metadata, publisher, date, geography, methods, licence, units and limitations.
+- **Classification:** FIJI_OFFICIAL_DATA_CATALOGUE; DATASET_LEVEL_METADATA_AND_LICENCE_REVIEW_REQUIRED.
+
+### Source E — United Nations SDG Country Profile: Fiji
+
+- **Issuer:** United Nations Statistics Division.
+- **URL:** https://unstats.un.org/sdgs/dataportal/countryprofiles/fji
+- **Inspected content:** Fiji country profile includes SDG 6 water indicators and reports values for specific years, including 2023 ambient water-quality indicators and 2025 participation indicators for water planning. These are national SDG statistical indicators and not local site measurements.
+- **Limitations:** Always record the indicator definition, reference year, methodology, reporting agency and any metadata. A national percentage must not be interpreted as evidence that every river, well or water source is safe or has the same condition.
+- **Classification:** INTERNATIONAL_OFFICIAL_STATISTICS; SDG_INDICATOR; YEAR_AND_METHOD_REQUIRED.
+
+### Source F — Government of Fiji, public notice on sewage spillage at Nabua Stream, Suva
+
+- **Issuer:** Government of Fiji / Department of Environment.
+- **Notice date:** 1 January 2026; incident reported 30 December 2025.
+- **URL:** https://www.fiji.gov.fj/public-notice-sewage-spillage-at-nabua-stream-suva/
+- **Inspected content:** Notice describes a reported discolouration, site inspection, tracing of a discharge source, sewage overflow into the stream, dead eels observed in the affected section and investigation of pump-station failure.
+- **Limitations:** This is a dated incident notice, not a current warning about Nabua Stream. Do not infer current water quality or health risk from the historical notice. Any present-day public health advice must come from current responsible authorities.
+- **Classification:** FIJI_OFFICIAL_INCIDENT_NOTICE; HISTORICAL_CASE_STUDY; NOT_A_CURRENT_ADVISORY.
+
+### PacEdu-derived concepts
+
+1. **River water level** — define water level as the height of the water surface at a monitoring location relative to a stated reference. Evidence: learner explains what a gauge reading describes.
+2. **Water level versus discharge** — distinguish river stage/level from discharge or flow rate; explain that a rating relationship or additional measurements may be needed. Evidence: learner identifies which variable is represented in a supplied chart.
+3. **Monitoring station metadata** — identify station name, location, timestamp, unit, reference datum and instrument status as important reading fields. Evidence: learner checks a fictional station record for missing metadata.
+4. **Time-series reading** — read a sequence of dated river-level observations. Evidence: learner identifies maximum, minimum and trend over a supplied period.
+5. **Units and scales** — interpret units and axis scales before comparing readings. Evidence: learner detects a misleading graph with an inconsistent axis.
+6. **Rainfall and river response** — explain that rainfall can influence river levels, while catchment size, soil, land cover and timing also matter. Evidence: learner compares supplied rainfall and river-level plots without claiming rainfall is the only cause.
+7. **Flood alert purpose** — explain that hydrological information can support preparedness and timely warnings. Evidence: learner identifies an appropriate information source in a fictional scenario.
+8. **Observation versus forecast** — distinguish a measured or observed river level from a forecast, warning or prediction. Evidence: learner labels statements by information type.
+9. **Station coverage and gaps** — explain why monitoring at a finite number of stations cannot describe every river or every point along a catchment. Evidence: learner identifies unmonitored areas on a simplified map.
+10. **Data quality flags** — recognise missing, delayed, suspect or provisional observations and avoid treating them as confirmed values. Evidence: learner annotates a fictional time series with quality warnings.
+11. **Water extraction** — define extraction/abstraction as water taken from a source for use. Evidence: learner distinguishes extraction from consumption and wastewater discharge.
+12. **Water supply, consumption and losses** — distinguish water extracted, water supplied to users, water consumed and losses in treatment/distribution systems. Evidence: learner sorts supplied examples into the correct categories.
+13. **Water account units** — interpret megalitres (ML) and convert only when the relevant unit relationship is supplied and checked. Evidence: learner reads a table and states the unit correctly.
+14. **Sectoral water use** — compare household, commercial and government categories in a dated national account. Evidence: learner calculates a percentage or difference from supplied 2025 data.
+15. **Percentage composition** — explain that sector percentages describe shares of the account's stated total and scope. Evidence: learner checks whether a supplied set of percentages is consistent with its stated denominator.
+16. **Experimental statistics** — explain why an experimental account may have data gaps and should be interpreted with its stated limitations. Evidence: learner identifies a limitation before drawing a conclusion.
+17. **Scope and omissions** — recognise that the 2025 experimental account did not estimate alternative water sources for businesses. Evidence: learner avoids claiming the account measures all business water use.
+18. **Water loss in systems** — interpret reported distribution and purification losses as distinct categories, without assuming they have the same cause. Evidence: learner compares the two reported categories and labels the source year.
+19. **Laboratory role in water quality** — describe the roles of sampling, analysis, interpretation, reporting and corrective action in an authorised water-quality system. Evidence: learner orders the steps in a fictional laboratory workflow.
+20. **Drinking-water standards** — understand that water quality is assessed against defined standards and guidance, not by appearance alone. Evidence: learner explains why clear water is not proof of potability.
+21. **Wastewater effluent monitoring** — explain why wastewater discharges may be monitored to assess compliance and environmental effects. Evidence: learner identifies the purpose of effluent monitoring in a supplied process diagram.
+22. **Physical, chemical and biological parameters** — distinguish broad categories of water-quality measures in an authorised research dataset. Evidence: learner sorts supplied parameter names by category using a teacher-provided glossary.
+23. **Baseline data** — explain why measurements collected over a defined period and at defined sites can provide a baseline for later comparison. Evidence: learner identifies the date range, locations and conditions in a case study.
+24. **Seasonal and tidal sampling** — recognise that timing, season and tide can influence measurements in estuaries and coastal waters. Evidence: learner compares supplied sampling schedules and identifies a missing season or tide state.
+25. **Indicator organisms** — understand that organisms may provide evidence about environmental conditions, but interpretation depends on validated methods and context. Evidence: learner interprets a fictional indicator-organism result with a stated limitation.
+26. **Dataset discovery** — locate an environmental dataset using its title, publisher, date, geographic coverage and subject metadata. Evidence: learner completes a source record for a supplied portal entry.
+27. **Dataset licence literacy** — check the licence and attribution conditions before copying, adapting or redistributing a dataset. Evidence: learner identifies whether a fictional licence permits the proposed reuse.
+28. **GIS and spatial data** — recognise that environmental portals may provide map layers and spatial files as well as tables and reports. Evidence: learner identifies the difference between a map layer and a spreadsheet.
+29. **National versus local indicators** — distinguish national SDG statistics from local site observations. Evidence: learner explains why a national percentage cannot certify a specific water source.
+30. **Indicator reference year** — record the year to which a published statistic applies and avoid describing it as a live reading. Evidence: learner corrects a statement that presents a dated value as current.
+31. **Sewage pollution pathway** — use the Nabua incident notice as a dated case study to trace a wastewater infrastructure failure into a stream. Evidence: learner draws a cause-pathway-impact sequence and dates the case.
+32. **Environmental incident evidence** — distinguish an observation, inspection finding, suspected cause and investigated cause in an official notice. Evidence: learner labels each statement by evidence status.
+33. **Aquatic organism impact evidence** — recognise that dead aquatic animals reported during a pollution incident can be an environmental impact observation, but do not infer a general toxicological diagnosis. Evidence: learner separates the reported observation from unsupported explanation.
+34. **Evidence-based environmental communication** — communicate source, date, location, unit and limitation when describing water information. Evidence: learner writes a short data caption that includes all five elements.
+
+### Source-specific numerical teaching notes
+
+- If using the FBoS 2025 account values (70,389 ML household; 12,104 ML commercial; 4,976 ML government; total extraction 171,595 ML), label them **2025 experimental account values**, retain the exact categories and units, and explain the stated account scope.
+- Do not silently combine household, WAF, surface-water, alternative-source, extraction, supply, consumption or loss figures. Check each table's denominator and definition.
+- If using the UN SDG profile, record indicator name, reference year, methodology and metadata. National ambient water-quality indicator values are not drinking-water test certificates.
+- If using river station data, capture the actual station, date/time, units, datum and quality status. A page showing station pins is not enough to support a numerical classroom claim.
+
+### Safeguards, rights and curriculum mapping
+
+- All 34 entries are **PACEDU_DERIVED_CONCEPT**, not official Fiji student achievement indicators, CLOs or achievement standards.
+- No learner should collect water samples, enter rivers/streams/wetlands, handle wastewater, sewage or unknown substances, test drinking water, certify water safety, operate monitoring equipment near waterways, or investigate pollution incidents. Use published datasets, teacher-prepared extracts and fictional data.
+- No tasting or drinking water from natural sources. Do not use live contamination or sewage incident sites as field destinations.
+- River-level data must not be used by learners to make their own flood-safety decisions. Follow current official warnings and adult/school emergency procedures.
+- Dated incident notices are historical case studies, not current public health advisories.
+- Respect the rights and licences attached to each dataset. The Fiji Environment Data Portal encourages reuse, but each individual resource's licence and attribution requirements still govern.
+- The FBoS water account is experimental and has declared coverage limitations. The UN SDG profile is national statistical reporting, not site-level certification. WAF's page is an institutional description, not a lab result.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: inspect/download and record exact dataset versions; validate metadata, units, denominators and quality flags; check current drinking-water standards and rights; map concepts to approved Fiji NCF and official indicators; assign levels/prerequisites; complete teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
