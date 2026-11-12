@@ -5681,3 +5681,45 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Worksheet gate:** `NOT YET AUTHORISED`. Requires approved subject-outcome mapping, learner-level/prerequisite mapping, rights clearance, accessibility review and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
 - **Use restriction:** teaching and assessment design concepts only. No diagnosis, disability classification, clinical assessment, therapy or certification is authorised.
+
+
+## Record 185 — Fiji inclusive STEM access, career planning and vocational transition concepts
+
+- **Source:** Fiji Ministry of Education, *A Teacher’s Guide to Disability-Inclusive Education in Fiji*, Sprunt et al. (2023), updated Ministry edition published 2024.
+- **Official source:** https://www.education.gov.fj/wp-content/uploads/2024/09/SIE-guide-high-res-web-version-1.pdf
+- **Source locations:** printed pp. 50–53, sections 6.1–6.6; PDF lines 2147–2265.
+- **Source type:** Official Ministry teacher guidance for disability-inclusive education and transitions. This is not a subject syllabus and these concepts are not official subject achievement indicators.
+- **Classification:** 22 entries as `PACEDU_DERIVED_CONCEPT` / Ministry transition and access guidance.
+- **Concept entries:**
+  1. Secondary schooling can increase organisational demands because learners may move between classrooms and work with several subject teachers.
+  2. Learners may need to communicate their learning and support requirements to more than one teacher.
+  3. Changes in timetable, school location, boarding or living arrangements can form part of a school transition and may require planning.
+  4. STEM includes science, technology, engineering and mathematics as related fields of study.
+  5. Fiji secondary-school STEM examples named by the guide include Mathematics, Basic Science, Biology, Chemistry, Physics, Technical Drawing and Woodwork.
+  6. Access to STEM learning at secondary level can support later entry to tertiary STEM study and related pathways.
+  7. Consult the learner and caregivers about the learner’s abilities, interests and educational support requirements before planning adaptations.
+  8. Check that required assistive devices and accessible learning resources are available before the activity begins.
+  9. Observe how the learner responds to a teaching method and adjust it collaboratively when it is not effective.
+  10. Identify physical access barriers in laboratories and workshops before planning practical activities.
+  11. Consider occupational health and safety risks in relation to the actual task and the learner’s access requirements.
+  12. Allow additional time for experiments and projects when the task or access method requires it.
+  13. Challenge low expectations that may prevent learners with disabilities from considering academic, technical or vocational pathways.
+  14. Include people with disabilities as visible contributors and role models in STEM learning materials without tokenism or stereotyping.
+  15. Make science resources, diagrams and equipment accessible; options named by the guide include large print, digital texts, Braille, tactile drawings and speech output.
+  16. Describe important visual information aloud or in an accessible text format when the learning task relies on diagrams, equipment displays or demonstrations.
+  17. Where a peer buddy is used for a specific task, agree its role with the learner and caregiver; do not replace the learner’s independence or make a peer responsible for safety.
+  18. Begin transition conversations early enough for learners to explore possible post-school study, training and work pathways.
+  19. Develop transition plans in consultation with the learner, including goals and practical support strategies.
+  20. Consider learner strengths, interests, preferred future activities, subject choices, prerequisite subjects and locally available opportunities when discussing goals.
+  21. Career exploration can include job shadowing as observation of a workplace role and apprenticeship as more structured workplace learning; these are different forms of exposure and training.
+  22. Vocational programme choices should involve learner consultation, caregiver and institution discussion, access checks and competency-based assessment during or after training.
+- **Subject mapping:** Mathematics, Elementary Science (Class 1–6), Basic Science (Class 7–Form 4), Biology, Chemistry, Physics, Technology, Technical Drawing, Woodwork, Computer Studies, Commercial Studies and vocational learning. The guide’s named Fiji secondary STEM examples should not be automatically mapped to every year level.
+- **Level mapping:** Transition discussion and pathway exploration; the guide recommends starting goal-setting conversations at or before Year 10. STEM access examples refer to secondary schooling. Do not assign the same activity to ECE or primary learners without age-appropriate redesign and approved curriculum mapping.
+- **Observable evidence prompts (PacEdu-derived, not official indicators):** learner identifies an access barrier in a fictional classroom/laboratory plan; proposes an appropriate accessible resource; explains a safe, accessible sequence for a teacher-approved task; compares two post-school pathways using supplied fictional information; identifies a prerequisite subject from a supplied pathway description; and records a learner-chosen goal with a practical next step.
+- **Practical safety safeguards:** do not ask learners to independently audit hazardous workshops, operate machinery, handle chemicals, conduct unsupervised experiments or enter inaccessible/high-risk work areas. Any practical activity must use teacher-approved risk controls, accessible equipment and direct supervision. Peer buddies must never be assigned safety-critical or care responsibilities.
+- **Privacy and dignity safeguards:** use fictional learner profiles for activities. Do not request disclosure of a learner’s disability, diagnosis, medical history or family circumstances. Do not infer ability or career suitability from a disability label.
+- **Rights:** Ministry copyright notice permits schools to reproduce parts for educational purposes only with acknowledgement to the Curriculum Development and Advisory Unit; other uses must be referred to the Permanent Secretary. `RIGHTS_REVIEW_REQUIRED` for PacEdu commercial reproduction, adaptation or distribution. This record does not grant permission to reproduce the guide’s tables, figures or text.
+- **Currentness:** `CURRENT_VERSION_CHECK_REQUIRED` for current Fiji subject offerings, prerequisites, tertiary admissions, vocational providers, workplace requirements and assessment rules.
+- **Worksheet gate:** `NOT YET AUTHORISED`; requires current approved subject mapping, age/level and prerequisite mapping, rights clearance, accessibility and safety review, and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+- **Use restriction:** This record supplies cross-curricular access and pathway concepts only. It does not certify occupational competence, authorise workplace placement or replace formal career guidance.
