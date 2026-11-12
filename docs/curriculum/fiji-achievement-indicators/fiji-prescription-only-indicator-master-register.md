@@ -486,3 +486,10 @@ The official Ministry-hosted *Na Noda Mataniciva* identifies Early Mathematics a
 ## Record 35 — 2016 Mathematics textbook inventory (Years 1–7 and Year 9)
 
 The Ministry's *Policy on Free Educational Resources* Appendices A and B list Mathematics Year 1–7 textbooks in the 2016 primary inventory (printed pp.7–12) and a “Form 3 Mathematics Textbook” under Year 9 in the 2016 secondary inventory (p.14). This is official resource-inventory evidence only: it does not state achievement indicators or establish current syllabus status. Retrieve the actual books/guides, edition details and pages, then compare against current approved prescriptions. The policy says school reproduction requires Permanent Secretary approval for teaching and learning (p.5); this is not blanket PacEdu reuse permission. Source: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf.
+
+
+## Record 36 — Consultation paper warns of literacy/numeracy benchmark gap (May 2025)
+
+The Education Review Committee's *Policy Issues Paper for Public Consultations: Review of the Fiji Education Act 1966* (May 2025), Issues 77–79, reports that consultation participants identified an absence of clear national literacy and numeracy benchmarks across year levels and recommended year-level competencies and additional remedial support. The paper records issues and proposals; it is not enacted law, an approved curriculum or evidence that a proposed benchmark has been adopted. PacEdu must not invent national benchmarks or describe app-generated diagnostics as national standards. Source: https://www.education.gov.fj/wp-content/uploads/2025/05/174674935744705-1.pdf.
+
+Related: the 2023 Denarau Declaration / Fiji National Education Policy Framework 2024–2033 discusses reviewing LANA and considering assessment at Years 3, 5 and 7. Treat as policy strategy, not prescription, until implementation is officially confirmed. Source: https://www.education.gov.fj/wp-content/uploads/2024/02/2023-Denarau-Declration.pdf.
