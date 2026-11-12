@@ -331,3 +331,34 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Lineage use:** Use resource titles as search keys to locate original approved syllabuses and textbooks. Do not extract an indicator or learning requirement from a book title or supply arrangement.
 - **Status and reuse:** Official policy; check its effective date and any later amendment before using it for procurement or resource decisions. Its presence on the Ministry site does not confer permission to reproduce listed textbooks.
 - **Source link:** https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+
+
+## 25. Fiji Ministry of Education — National Pre-Primary Education Policy (2025)
+
+- **Source identity:** Ministry of Education, National Pre-Primary Education Policy, official Ministry PDF (2025).
+- **Level/subject:** Pre-primary year / five-year-old learners before Year 1; kindergarten/PPE centres.
+- **Source classification:** `CURRENT_OFFICIAL_POLICY_AND_CURRICULUM_CONTROL`; policy, not an achievement-indicator syllabus.
+- **Verified requirements:** The policy defines PPE as the one-year programme for five-year-old children before Year 1; states programmes covered by the policy shall be based on the approved Ministry curriculum; and identifies Na Noda Mataniciva as the national curriculum guidelines for children aged 3–6. It also identifies the 2013 NCF as the framework spanning early childhood to Year 13. The policy directs use of the Ministry's approved curriculum and inclusive/differentiated teaching guidance.
+- **Lineage/use:** PacEdu must distinguish the wider 3–6 Mataniciva ECE guidance from the policy's one-year five-year-old PPE year. Do not rename the stage or turn policy priorities into child-level indicators. Obtain the approved Ministry PPE curriculum and Mataniciva source pages to map actual outcomes.
+- **Status and reuse:** Official policy. It references the 2013 NCF and other current policies. Policy obligations may inform workflow controls, but copying curriculum text still requires rights review.
+- **Source link:** https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf
+
+## 26. Fiji Ministry of Education — 2023 Denarau Declaration / Fiji National Education Policy Framework 2024–2033
+
+- **Source identity:** Ministry of Education, 2023 Denarau Declaration, Fiji National Education Policy Framework 2024–2033, official Ministry PDF.
+- **Level/subjects:** Cross-sector national education policy, including curriculum and sustainable development, assessment, early childhood, inclusion, digital learning and governance.
+- **Source classification:** `CURRENT_OFFICIAL_POLICY_FRAMEWORK_NOT_SUBJECT_PRESCRIPTION`.
+- **Verified use:** Framework calls for review of the NCF and for curriculum/programmes to be context-based, inclusive, future-focused and responsive; it identifies curriculum infusion areas such as climate change, financial literacy and digital literacy. These are policy directions and review priorities, not automatically mandatory subject/year indicators.
+- **Lineage/use:** Use to tag policy alignment and identify themes for curriculum-review monitoring. Only translate a theme into a daily learning indicator when an approved subject prescription or formally approved curriculum document states the outcome for that year/level.
+- **Status and reuse:** Official national policy framework for 2024–2033; not a replacement subject syllabus by itself.
+- **Source link:** https://www.education.gov.fj/wp-content/uploads/2024/02/2023-Denarau-Declration.pdf
+
+## 27. Fiji Ministry of Education — Annual Report 2020–2021, primary literacy/numeracy package and senior Mathematics pilot
+
+- **Source identity:** Ministry of Education, Heritage and Arts Annual Report 2020–2021, official Ministry report.
+- **Level/subjects:** Years 1–8 English/literacy and Mathematics/numeracy; Year 11 Mathematics pilot.
+- **Source classification:** `OFFICIAL_CURRICULUM_STATUS_AND_DOCUMENT_DISCOVERY_EVIDENCE`; not a prescription text.
+- **Verified information:** Report identifies a Years 1–8 syllabus revision package comprising the Fiji NCF, scope-and-sequence overviews, year-level scope and sequences and teacher guides. It also records a Year 11 pilot under the labels “Life Skills Mathematics” and “Applied Mathematics”.
+- **Lineage/use:** This is the strongest official search lead for obtaining the original Years 1–8 English and Mathematics documents. It also shows that senior Mathematics pathway labels changed over time: do not assume the 2020–2021 “Life Skills/Applied” pilot labels are interchangeable with the later 2022–2023 “Life/Pure” labels. Verify the actual approved syllabus version and effective date before mapping indicators.
+- **Status and reuse:** Official annual report, descriptive evidence only. It does not contain the full scope-and-sequence or indicator texts.
+- **Source link:** https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf
