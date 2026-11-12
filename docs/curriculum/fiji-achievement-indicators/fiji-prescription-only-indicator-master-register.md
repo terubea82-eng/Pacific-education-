@@ -481,3 +481,8 @@ The Ministry-hosted policy was approved 1 December 2015. It defines Ministry fre
 ## Record 34 — Na Noda Mataniciva Early Mathematics outcomes
 
 The official Ministry-hosted *Na Noda Mataniciva* identifies Early Mathematics areas on printed p.37: Number; Measurement; Shape and Space; Patterns; Chance and Data. Examples include positional language, shape sorting and naming, pattern construction, shape fitting, and simple puzzles. The page distinguishes approximately age-3 examples, intermediate development, and end-of-Kindergarten expectations. Retain these developmental stages as written; do not convert them into rigid age tests or Year 1–13 prescription indicators. The guideline's stated role is outcomes/framework guidance, not detailed prescribed content. Source: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf. Eligibility: `SUPPLEMENTARY_ONLY`; verify reuse rights before adaptation.
+
+
+## Record 35 — 2016 Mathematics textbook inventory (Years 1–7 and Year 9)
+
+The Ministry's *Policy on Free Educational Resources* Appendices A and B list Mathematics Year 1–7 textbooks in the 2016 primary inventory (printed pp.7–12) and a “Form 3 Mathematics Textbook” under Year 9 in the 2016 secondary inventory (p.14). This is official resource-inventory evidence only: it does not state achievement indicators or establish current syllabus status. Retrieve the actual books/guides, edition details and pages, then compare against current approved prescriptions. The policy says school reproduction requires Permanent Secretary approval for teaching and learning (p.5); this is not blanket PacEdu reuse permission. Source: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf.
