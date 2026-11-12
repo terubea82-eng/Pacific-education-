@@ -2307,3 +2307,99 @@ The initial weekly allocation assumed seven 40-minute periods: ear/speech traini
 - Status: MINISTRY_AUTHORED_CURRICULUM_GUIDE; CURRENT_CONTROLLED_COPY_PENDING; RIGHTS_REVIEW_REQUIRED; LINEAGE_NOT_YET_FOUND at item level.
 - No PacEdu daily worksheets authorised until current prescription source control and older-source lineage review are completed, and rights are cleared.
 - CAS contact remains DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 140 — Fiji National Policy on Open Educational Resources (2016): PacEdu source-use and learning-resource concepts
+
+**Source:** Ministry of Education, Heritage and Arts, *National Policy on Open Educational Resources*, effective 4 January 2016; policy owner identified as Fiji Higher Education Commission. Ministry-hosted PDF: https://www.education.gov.fj/wp-content/uploads/2022/11/OER_National_Policy_Final.pdf. Inspected printed pp.1–6 (PDF pp.2–7).
+
+**Source classification:** Fiji national education policy; not a student subject syllabus and not a set of official learner achievement indicators. It provides a lawful policy basis and practical concepts for PacEdu resource literacy, digital literacy, research skills and learning-resource creation. Exact policy provisions are paraphrased below, not copied as official student outcomes.
+
+### Extracted source concepts for possible PacEdu daily activities
+
+1. **Open educational resource meaning:** identify learning materials in any medium that are public domain or released under an open licence allowing no-cost access, use, adaptation and redistribution (printed p.4, section 4.1).
+2. **Licence reading:** locate and interpret the conditions stated on a resource's open licence; distinguish permissions from restrictions (p.4, sections 4.6–4.7).
+3. **Reuse and adaptation:** explain the difference between reusing, revising, remixing, redistributing and retaining learning materials (p.2, section 2.3).
+4. **Attribution and acknowledgement:** identify creator/source and licence conditions when developing or sharing a learning resource (p.2, section 2.4; p.4).
+5. **Resource evaluation:** examine peer review, user ratings and quality assurance as ways of evaluating learning resources (p.2, section 2.5).
+6. **Information access and retrieval:** locate and retrieve resources using appropriate open standards and different media formats (p.2, section 2.7).
+7. **Digital and multimedia literacy:** distinguish text, graphics, images, audio, video, streaming media and podcasts (p.4, sections 4.3–4.5).
+8. **Inclusive access:** identify barriers involving access, cost, language and format, and consider how adaptable resources can reduce them (p.3, section 3.3.1).
+9. **Cultural and contextual adaptation:** adapt educational material to local curriculum requirements and Fiji's cultural diversity (pp.2–3, sections 2.2, 2.8, 3.1).
+10. **Research and evidence:** explain how research into the production, use and re-contextualisation of OER can inform quality and cost-effectiveness (p.3, section 2.11).
+11. **Digital access infrastructure:** recognise the role of mobile technology, broadband, ICT infrastructure and reliable electricity in access to learning (p.2, section 2.6).
+
+**PacEdu use:** these may be developed into PacEdu-created concepts and observable learning targets in appropriate subjects/levels after age and curriculum fit is checked. They must be labelled PACEDU_DERIVED_CONCEPT_FROM_FIJI_POLICY, not Ministry achievement indicators. No student should be taught that the policy itself is a student syllabus.
+
+**Rights note:** the policy describes open licensing and says publicly funded educational materials should generally be openly licensed subject to case-by-case restrictions. That policy does not itself grant PacEdu permission to copy every Ministry resource. Check the licence/copyright notice on each resource separately. USP copyright guidance explains that government works are not automatically public domain and that legislation is treated differently from ordinary government publications. Record status: SOURCE_INSPECTED; PACEDU_DERIVED_CONCEPTS_AVAILABLE; ITEM_LEVEL_RIGHTS_CHECK_REQUIRED.
+
+---
+
+## Record 141 — Fiji Environment Management Act 2005: Fiji-context science, geography, agriculture, health and civic concepts
+
+**Primary source:** Republic of Fiji, *Environment Management Act 2005*, Act No. 1 of 2005, assented 17 March 2005. Official Ministry of Environment and Climate Change legislation listing and description: https://mecc.gov.fj/legislation/ and https://mecc.gov.fj/environment-management-act-2005-act-no-1-of-2005-an-act-for-the-protection-of-the-natural-resources-and-for-the-control-and-management-of-developments-waste-management-and-pollution-control-and-fo/ . Full Act PDF hosted by Fiji Climate Change Portal: https://fijiclimatechangeportal.gov.fj/wp-content/uploads/2021/12/environment-management-act-2005.pdf . Inspected full 41-page Act; relevant printed sections/pages include sections 2–3 (printed pp.2–9), 7–14 (pp.10–14), and further waste/pollution provisions in Part 5.
+
+**Source classification:** Fiji primary legislation. It is a legal source for real Fiji concepts and examples, not a Ministry curriculum prescription. The Act is amended by later legislation; before using any legal duty, penalty, agency name or compliance requirement, check the latest consolidated text and amendments. Activities should teach concepts and reading of legal information, not provide individual legal advice.
+
+### Extracted concepts suitable for PacEdu-designed learning activities
+
+1. **Environment as an interacting system:** air, land, water, atmosphere, living organisms and natural/human systems interact (s.2, printed pp.4–5).
+2. **Natural-resource categories:** coastal zones, wetlands, lakes, rivers, forests/vegetation, fauna, land, seabed and marine environments (ss.2–3, pp.2–9).
+3. **Habitat carrying capacity:** explain how a habitat or land area has limits to the population of life it can support over time (s.2, p.2).
+4. **Biodiversity and habitat protection:** recognise indigenous vegetation, fauna, protected species and significant habitats as conservation concerns (ss.2–3, pp.5–9).
+5. **Coastal and freshwater protection:** identify why coastal environments, wetlands, lakes and river margins are matters of national importance (s.3(3), pp.8–9).
+6. **Human health and environmental quality:** explain links between environmental protection, human life, health and safety (ss.2–3, pp.5–9).
+7. **Pollution and pollutants:** classify examples such as sewage, garbage, agricultural/industrial waste, chemical waste, oil residues and exhaust gases (s.2, pp.5–6).
+8. **Waste categories and management:** distinguish solid, liquid, hazardous, packaging and special waste; explore reduction, separation and safe management (s.2 and s.14, pp.3–7, 13–14).
+9. **Pollution incident and environmental impact:** identify how a pollutant entering the environment can affect marine life, fishing, water, air, soil and human health (s.2, pp.5–6).
+10. **Sustainable development:** discuss meeting present needs while preserving the ability of future generations to meet their needs, within resource limits (s.2, pp.7–8).
+11. **Environmental impact assessment:** understand that proposed development may need assessment of possible environmental and resource impacts before approval (Part 4; check the current amended Act and regulations for legal process).
+12. **Resource ownership and guardianship:** recognise the Act's reference to traditional owners/guardians and the relationship of Fijian communities with ancestral lands, waters, sacred areas and other treasures (s.3(3)–(4), pp.8–9).
+13. **Environmental monitoring and evidence:** identify the roles of surveys, inspections, registers, resource inventories and environmental reports in monitoring resources and impacts (ss.11–14, pp.11–14).
+14. **Public participation and governance:** identify that environmental decision-making involves government, local authorities, resource owners, business, NGOs and other stakeholders (ss.7–8, pp.9–11).
+15. **Development and land-use change:** identify activities such as construction, dredging, reclamation, mining, sand/coral removal and vegetation removal as activities that may alter land or the environment (s.2, pp.2–3).
+16. **Finite resources and competing uses:** discuss finite natural resources and possible conflicts between different uses of a resource (ss.2–3, pp.7–9).
+
+### Suggested subject connections (PacEdu planning suggestions, not official Ministry subject placement)
+
+- Elementary/Basic Science: ecosystems, habitats, biodiversity, pollution, water/air/soil, waste and sustainability.
+- Social Science/Geography: Fiji's coastal and inland environments, land use, communities, resource ownership, public institutions and decision-making.
+- Agriculture: soil/water protection, agricultural waste, resource sustainability and effects of land-use practices.
+- Healthy Living: environmental quality, sanitation, pollution and human health.
+- Mathematics: classify and tally waste, measure and graph local observations, compare quantities and interpret environmental data.
+- English/Vosa Vakaviti/Fiji Hindi: read an age-appropriate information extract, explain cause and effect, compare viewpoints, write a report or persuasive message using evidence.
+- Technology/Computer Studies: create a labelled diagram, data table, map or multimedia explanation using cited sources.
+
+**Age and safety controls:** do not ask learners to handle hazardous waste, chemicals, sewage, sharp objects or contaminated water. Use photographs, teacher-prepared data, safe simulations and supervised observation from safe locations. Simplify legal vocabulary without changing legal meaning.
+
+**Rights and legal accuracy:** the Act is primary legislation and the USP copyright guidance notes that Acts and other specified legal instruments are treated differently from ordinary copyright works. Use the official legal text and cite Act/section; do not copy a modern publisher's commentary, annotated edition, layout or third-party teaching material without checking its rights. Verify amendments and current consolidated text before presenting a provision as current law.
+
+**PacEdu status:** FIJI_PRIMARY_LEGAL_SOURCE; SOURCE_INSPECTED; PACEDU_DERIVED_CONCEPTS_AVAILABLE; NOT_OFFICIAL_CURRICULUM_INDICATORS; CURRENT_LEGAL_VERSION_CHECK_REQUIRED for each activity; TEACHER_REVIEW_REQUIRED. Do not label these concepts as Ministry achievement indicators. They can support Fiji-context daily activities where curriculum gaps exist, subject to level suitability and review.
+
+---
+
+## Record 142 — Fiji source-use and concept-development rule (user-approved expansion)
+
+The user has approved using Fiji legal resources, primary texts and other lawful sources when a formal achievement indicator is not available, provided the concept/indicator and source are identified.
+
+**Mandatory distinction in PacEdu records:**
+- OFFICIAL_ACHIEVEMENT_INDICATOR: exact indicator from a verified current Ministry prescription.
+- OFFICIAL_CLO_OR_ACHIEVEMENT_STANDARD: exact current Ministry CLO/standard, with its own source and page.
+- FIJI_LEGAL_SOURCE_CONCEPT: concept derived from a Fiji Act, regulation, Constitution or official legal text; never represented as a Ministry syllabus indicator.
+- FIJI_PRIMARY_TEXT_CONCEPT: concept/skill derived from an inspected Fiji primary text, literary work, historical document, public report or technical text.
+- OPEN_EDUCATIONAL_RESOURCE_CONCEPT: concept derived from a source whose licence explicitly allows the intended reuse/adaptation.
+- PACEDU_DERIVED_CONCEPT: PacEdu-authored learning target built from one or more cited sources; explicitly not official wording.
+- SUPPLEMENTARY_CONTEXT_ONLY: source helps supply examples/context but does not establish a learning target.
+- PENDING_SOURCE_REVIEW / BLOCKED_RIGHTS_REVIEW / CURRENT_VERSION_CHECK_REQUIRED: use when evidence or permission is incomplete.
+
+**Required fields for every concept:** exact source title; issuing body/author; date/edition; source URL or file identifier; exact page/section/article/clause; quoted extract only when necessary and lawful; PacEdu paraphrase; subject connection; suggested level or LEVEL_NOT_SPECIFIED; prerequisite; observable learner evidence; source type/status; licence/rights check; current-version/amendment check for laws; and teacher-review status.
+
+**Daily-activity rule:** Where a formal indicator is missing, PacEdu may design a daily activity around a verified Fiji-source concept. The activity objective must be labelled as a PacEdu-derived concept, not a national achievement indicator. One source and section/page must be recorded for each concept before any worksheet is generated. Official indicators retain priority where available; supplementary/legal concepts fill gaps and add local Fiji context without displacing the prescribed curriculum.
+
+**Legal-source hierarchy:** current consolidated Acts and regulations from Parliament/Office of the Attorney-General or responsible Ministry; Fiji Constitution; official Ministry technical publications and datasets; Fiji court judgments where age-appropriate; USP and other Fiji tertiary research; openly licensed Pacific resources. Check amendments, commencement, repeals and source date. Do not rely on a search-result snippet as the extracted text.
+
+**Rights rule:** open access is not the same as open licence. Verify the specific item's licence. Government publication status alone does not establish public-domain status. For Acts, regulations and judgments, cite the official legal source and exact section; distinguish the legal text from third-party editorial material. If licence or rights are unclear, extract concepts and cite the source without copying/adapting protected expression; flag reuse for review.
+
+**Status:** USER_APPROVED_WORKFLOW; applies across ECE–Form 7 with developmental appropriateness checks. No worksheet is automatically authorised by a source's discovery alone; each concept must be extracted, sourced, classified, level-checked and teacher-reviewed. CAS contact remains DEFERRED_UNTIL_PILOT.
