@@ -4285,3 +4285,105 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - The FBoS water account is experimental and has declared coverage limitations. The UN SDG profile is national statistical reporting, not site-level certification. WAF's page is an institutional description, not a lab result.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: inspect/download and record exact dataset versions; validate metadata, units, denominators and quality flags; check current drinking-water standards and rights; map concepts to approved Fiji NCF and official indicators; assign levels/prerequisites; complete teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 163 — Fiji wetlands, Ramsar sites, groundwater and water-resource planning
+
+- **Record status:** ADDED; public source pages reviewed. Full underlying 2026 policy, implementation plan and IWRM plan require page-level extraction before using their detailed actions or numerical targets.
+- **Record type:** FIJI_OFFICIAL_POLICY_CONCEPT / FIJI_OFFICIAL_STATISTICAL_OR_TREATY_CONTEXT / PACEDU_DERIVED_CONCEPT / SUPPLEMENTARY_CONTEXT_ONLY.
+- **Concept count:** 30 numbered PacEdu-derived concepts.
+- **Official indicator status:** None of these concepts is an official student achievement indicator, CLO or achievement standard. Ramsar site data and environmental statistics are not school curriculum indicators.
+- **Suggested subjects:** Elementary Science; Basic Science; Social Science; Mathematics; Agriculture; Healthy Living; Technology; English.
+- **Level:** LEVEL_NOT_SPECIFIED; age, prerequisite and approved Fiji NCF mapping remain pending.
+
+### Source A — Fiji profile, Convention on Wetlands (Ramsar)
+
+- **Issuer:** Convention on Wetlands Secretariat.
+- **Country profile:** https://www.ramsar.org/country-profile/fiji
+- **Inspected public profile result:** Fiji's Convention entry into force is 11 August 2006; the country profile reports two Ramsar sites and a combined area of 135,515 ha.
+- **Additional site record:** Qoliqoli Cokovata, Ramsar Site No. 2331, designated 2018; Ramsar Secretariat release describes a coastal site on Vanua Levu associated with the Great Sea Reef, seagrass beds, mangroves, fisheries, threatened turtles and community custodianship: https://www.ramsar.org/news/exceptional-new-coastal-ramsar-site-fiji
+- **First site accession notice:** Upper Navua Conservation Area, 615 ha, was named Fiji's first Wetland of International Importance: https://www.ramsar.org/es/news/fiji-joins-convention-wetlands
+- **Limitations:** The Ramsar profile page was not directly retrievable in this review (403), so its current site-level details, boundaries and individual site information sheets require confirmation in the Ramsar Sites Information Service. The country-profile count is a dated profile result, not a claim that no other locally protected wetlands exist.
+- **Classification:** INTERNATIONAL_TREATY_SITE_RECORD; CURRENT_SITE_INFORMATION_SHEET_CHECK_REQUIRED.
+
+### Source B — Fiji Water Resources Document Library, Department of Water and Sanitation
+
+- **Portal:** https://library-fiji-dws.akvo.org/
+- **Issuer/context:** Official Fiji water-sector document library; documents are presented as national water policy, planning and evidence.
+- **Inspected collection:** National Water Resources Management and Sanitation Policy 2026 (55 pages); NWRMSP Implementation Plan 2026–2035 (16 pages); Fiji Integrated Water Resources Management Plan 2026 (102 pages); National Rural Water Point Mapping Survey Report (2022 survey; 70 pages); and survey summary (17 pages).
+- **Page-level descriptions:** The 2026 policy is described as a national framework for efficient, equitable and sustainable water-resource management and universal safe water, sanitation and hygiene access. The 2026–2035 implementation plan sequences reforms and agency actions. The 2026 IWRM Plan is described as a ten-year framework covering surface water, groundwater, water quality, watersheds, floods and droughts through nine priority programmes. The 2022 rural survey is described as covering 1,600 rural locations and 978 schools.
+- **Limitations:** The catalogue descriptions are not substitutes for reading the full reports. Do not invent the policy's detailed rules, targets, groundwater allocations, implementation status or survey findings from the summary descriptions alone.
+- **Classification:** FIJI_OFFICIAL_WATER_POLICY_AND_PLANNING_CATALOGUE; FULL_DOCUMENT_EXTRACTION_PENDING.
+
+### Source C — Fiji State of Environment Report 2013
+
+- **Issuers:** Fiji Department of Environment and Secretariat of the Pacific Regional Environment Programme (SPREP).
+- **Publication:** *Fiji State of Environment Report 2013*, published by SPREP in 2014.
+- **URL:** https://macbio-pacific.info/wp-content/uploads/2017/08/State-of-Environment-Report-2013.pdf
+- **Inspected sections:** Executive Summary, pp. v–vii; Inland Waters chapter, including groundwater and watershed indicators.
+- **Rights:** SPREP authorises reproduction whole or in part with appropriate acknowledgement.
+- **Historical limitations:** The report explicitly says its groundwater assessment had limited information and that some conclusions relied on available data and expert opinion. Its figures and conditions are historical, not current national groundwater status.
+- **Classification:** FIJI_OFFICIAL_HISTORICAL_ENVIRONMENT_ASSESSMENT; HISTORICAL_BASELINE_ONLY.
+
+### Source D — Fiji Parliament, Standing Committee on Natural Resources appendices, 2024
+
+- **Document:** https://www.parliament.gov.fj/wp-content/uploads/2024/06/NRC-Appendices-22.5.2024-.pdf
+- **Inspected search-extract statement:** Government evidence to the committee states that the Groundwater Resources Development and Management Policy, formulated in 2011, was endorsed by Cabinet in January 2024 and that an implementation framework and groundwater legislation were being progressed. The same evidence proposed a water-inventory stocktake.
+- **Limitations:** The large appendix PDF could not be fully opened in this review. Treat this as a search-extract lead; verify the complete hearing answer and the current policy/legislation status before making detailed legal or implementation claims.
+- **Classification:** FIJI_PARLIAMENTARY_COMMITTEE_EVIDENCE; FULL_TRANSCRIPT_AND_CURRENT_STATUS_CHECK_REQUIRED.
+
+### PacEdu-derived concepts
+
+1. **Wetland as an ecosystem** — define wetlands as ecosystems where water influences soil conditions and plant and animal communities. Evidence: learner identifies wetland features in supplied diagrams.
+2. **Wetland diversity** — distinguish riverine, lacustrine, peatland, mangrove, estuarine and other wetland settings using a teacher-provided glossary. Evidence: learner classifies illustrated examples.
+3. **Freshwater and coastal wetlands** — compare inland freshwater wetlands with coastal/marine wetland environments. Evidence: learner identifies water-source and salinity differences from supplied information.
+4. **Ramsar Convention purpose** — explain that the Convention promotes conservation and wise use of wetlands and supports international cooperation. Evidence: learner describes its purpose in their own words.
+5. **Wetland of International Importance** — explain that Ramsar designation recognises a site's international importance; it does not mean every activity at the site is automatically prohibited. Evidence: learner distinguishes designation from a blanket access rule.
+6. **Fiji's Ramsar participation** — identify 11 August 2006 as the date the Convention entered into force for Fiji. Evidence: learner reads and labels a treaty timeline.
+7. **Upper Navua Conservation Area** — locate the Upper Navua Ramsar site on a supplied map and describe it as Fiji's first Ramsar site, using the original designation record. Evidence: learner matches the site name with its source-dated record.
+8. **Qoliqoli Cokovata** — identify Qoliqoli Cokovata as Fiji's second Ramsar site in the 2018 designation account and describe its coastal/reef, seagrass and mangrove associations. Evidence: learner annotates a source-based coastal habitat diagram.
+9. **Site record versus national wetland inventory** — distinguish a Ramsar listing from a complete national inventory of all wetlands. Evidence: learner explains why unlisted wetlands may still be ecologically important.
+10. **Wetland boundaries and maps** — understand that site boundaries and mapped areas must be taken from official site information sheets or validated spatial data. Evidence: learner identifies a map's source, date, scale and legend.
+11. **Wetland ecosystem services** — identify flood storage, water purification, sediment retention, habitat, food and livelihood functions where supported by the source. Evidence: learner matches a function to an illustrated wetland process.
+12. **Wetland hydrological connectivity** — explain that rivers, groundwater, riparian forests, peat swamps, agricultural wetlands and estuaries can be connected. Evidence: learner traces a conceptual mountain-to-sea water pathway.
+13. **Wetland water balance** — introduce precipitation, inflow, groundwater exchange, evapotranspiration and outflow as components that influence wetland water levels. Evidence: learner labels a simplified water-balance diagram.
+14. **Peatland concept** — explain that peatlands contain accumulated partially decomposed organic material under waterlogged conditions. Evidence: learner identifies waterlogging and organic matter in a cross-section.
+15. **Mangrove wetland connection** — explain the role of coastal mangrove systems in supporting habitat, shoreline processes and links between land and sea. Evidence: learner annotates a supplied mangrove ecosystem diagram.
+16. **Groundwater as stored water** — describe groundwater as water held in pores and fractures below the ground surface. Evidence: learner labels soil, unsaturated zone, water table and saturated zone in a diagram.
+17. **Aquifer concept** — define an aquifer as a geological formation capable of storing and transmitting groundwater. Evidence: learner distinguishes an aquifer from a surface stream in a cross-section.
+18. **Water table** — identify the water table as the upper surface of the saturated groundwater zone. Evidence: learner labels its position in a supplied cross-section.
+19. **Recharge and discharge** — explain that groundwater may be replenished by infiltration and may discharge to springs, rivers, wetlands or the coast. Evidence: learner traces recharge and discharge arrows.
+20. **Groundwater and surface-water interaction** — describe how groundwater and rivers/wetlands may exchange water, so changes in one can affect the other. Evidence: learner interprets a simplified connected-water diagram.
+21. **Spring as groundwater discharge** — explain that a spring occurs where groundwater emerges naturally at the land surface. Evidence: learner identifies a spring in a landscape cross-section.
+22. **Borehole and well distinction** — recognise wells and boreholes as constructed access points to groundwater, distinct from natural springs. Evidence: learner classifies a supplied infrastructure diagram.
+23. **Groundwater contamination pathways** — identify that pollutants from surface activities can infiltrate soil and affect groundwater depending on local geology and protection. Evidence: learner traces a fictional contamination pathway without diagnosing a real site.
+24. **Groundwater recharge limits** — explain that extraction faster than replenishment can reduce groundwater availability. Evidence: learner compares a conceptual recharge-versus-abstraction diagram.
+25. **Groundwater quality indicators** — recognise that quality assessment can include physical, chemical and microbiological measures. Evidence: learner sorts supplied parameter cards; no student testing or safety certification.
+26. **Drought and groundwater** — explain that reduced rainfall and increased evaporation may reduce recharge and affect groundwater-dependent communities. Evidence: learner connects drought conditions to a conceptual water-resource diagram.
+27. **Integrated water resources management** — describe IWRM as coordinated planning across water uses, agencies, ecosystems and communities. Evidence: learner maps interacting water-sector roles in a fictional catchment.
+28. **Surface water and groundwater planning** — explain why water planning should consider rivers, wetlands, aquifers, water quality, watersheds, floods and droughts together. Evidence: learner annotates a systems map.
+29. **Rural water-point evidence** — understand that a national rural water-point survey can document water supply, sanitation, hygiene, school conditions and service gaps. Evidence: learner interprets a source-labelled survey summary and identifies its survey year and coverage.
+30. **Policy, plan and implementation distinction** — distinguish a policy's direction, an implementation plan's sequence of actions and evidence used to monitor progress. Evidence: learner sorts supplied document summaries into these three categories.
+
+### Historical data and interpretation safeguards
+
+- The 2013 State of Environment Report is a historical baseline. Its groundwater-quality coverage, extraction statements, watershed classifications and other numerical claims must not be presented as current.
+- The 2024 parliamentary committee extract about Cabinet endorsement of the groundwater policy is a historical procedural statement. Verify the current policy, legislation and implementation status from the responsible department before teaching current legal obligations.
+- The 2026 policy and plans are known from the official document-library descriptions. Do not invent detailed targets or rules until the full PDFs have been read and cited by page/section.
+- Ramsar country profile reports two sites and 135,515 ha in the inspected search result; confirm current individual site records, boundaries, areas and updates in the Ramsar Information Service before using detailed site statistics.
+- Qoliqoli Cokovata is a coastal/reef-associated Ramsar site; do not present it as a freshwater lake or inland wetland. Upper Navua is a riverine site. Teach the difference.
+- Ramsar designation does not, by itself, establish every access rule, customary right, land tenure rule or activity prohibition. Check site-specific management and legal sources.
+- The 2022 National Rural Water Point Mapping Survey is a dated baseline. Its 1,600 locations and 978 schools are catalogue-reported survey coverage, not a statement that every rural water point or school was assessed in later years.
+
+### Safeguards, rights and curriculum mapping
+
+- All 30 numbered entries are **PACEDU_DERIVED_CONCEPT**, not official Fiji student achievement indicators, CLOs or achievement standards.
+- No learner wetland, spring, borehole, cave, aquifer or river fieldwork; no entry into wetlands, rivers, caves or water infrastructure; no sampling, water tasting, borehole operation or groundwater testing. Use supplied diagrams and authorised datasets.
+- Do not publish sensitive wetland species locations, private water-point coordinates, customary resource information or community infrastructure vulnerabilities.
+- No claims that natural spring or groundwater is safe to drink based on appearance. Drinking-water safety requires current authoritative testing and responsible authority advice.
+- Respect customary custodianship and landowner/community permission. No site visits or mapping of culturally sensitive places without consent and risk review.
+- Use SPREP/Ramsar source records with attribution; review individual dataset and image licences before reuse. Create original PacEdu diagrams rather than copying protected maps or photographs.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: obtain and inspect full 2026 NWRMSP, implementation plan and IWRM plan; verify current Ramsar site information sheets and boundaries; verify groundwater policy and legislation status; inspect the full rural water-point survey and metadata; complete rights review; map to approved Fiji NCF/official indicators; assign levels/prerequisites; complete teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
