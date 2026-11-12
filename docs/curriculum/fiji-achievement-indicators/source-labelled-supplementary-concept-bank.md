@@ -4489,3 +4489,68 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - The official PDFs are accessible through the document library, but no blanket open licence was confirmed during this review. Review copyright and reproduction permissions before copying substantial text, tables, maps or graphics into PacEdu.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: complete approved Fiji NCF and CAS indicator mapping; assign age/level/prerequisites; verify implementation status and any later policy/legislative updates; review rights; approve teacher-facing source extracts; complete teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 165 — Fiji rural water-point mapping, school WASH evidence and WASH data literacy
+
+**Record status:** APPENDED — supplementary concept extraction  
+**Concept count:** 30  
+**Classification:** All concepts are `PACEDU_DERIVED_CONCEPT`; none is an official Fiji achievement indicator, CLO or achievement standard.  
+**Curriculum status:** `LEVEL_NOT_SPECIFIED` pending mapping to approved Fiji NCF/CAS documents.  
+**Worksheet gate:** NOT YET AUTHORISED.  
+**CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+### Sources inspected
+
+1. **National Rural Water Point Mapping Survey Report (2022 survey; national baseline publication).** Government of Fiji, Department of Water and Sewerage document library. Official catalogue record describes a 70-page national assessment covering 1,600 rural locations and 978 schools, including water supply, sanitation, hygiene, management and water quality; its stated purpose is to identify service gaps, sustainability challenges and water-quality risks. PDF: https://library-fiji-dws.akvo.org/documents/national-rural-water-point-mapping-survey-report.pdf. The full report PDF was not retrievable in this review; do not attribute detailed numerical findings to it without inspecting the report itself.
+2. **National Rural Water Point Mapping Survey Summary (2022 survey).** Government of Fiji, Department of Water and Sewerage document library. Official catalogue record describes a 17-page visual summary of rural water systems, sanitation, hygiene, water quality and WASH in schools. PDF: https://library-fiji-dws.akvo.org/documents/national-rural-water-point-mapping-survey-highlights.pdf. The summary PDF could not be downloaded in this review; only the official catalogue description was verified.
+3. **Fiji Decentralisation of Rural Water and Sanitation: PaCWaM+ / International WaterCentre report (2024).** Pacific Community Water Management-Plus programme. PDF: https://watercentre.org/wp-content/uploads/2025/03/Fiji-Decentralsiaiton-rural-wrt-IWC-FINALv2-2024.pdf. Searchable text inspected, especially the description of Fiji's 2021 National Rural Water Point Mapping Survey, its WASH-in-Schools component, the data collected, sector data custodians and reporting mechanisms. This is a 2024 secondary programme report describing the survey and broader sector data; it is not the original 2022 national survey report.
+4. **Fiji Water Resources Document Library.** Department of Water and Sewerage, Government of Fiji. https://library-fiji-dws.akvo.org/. Official publication catalogue and scope description for the national survey and its summary.
+
+### Extracted concepts for later curriculum mapping
+
+1. **Water-point mapping:** explain that mapping records the location and characteristics of water points to build an evidence base for service planning. `PACEDU_DERIVED_CONCEPT`; Social Science, Mathematics, Technology.
+2. **Water-point identity:** explain why each mapped facility needs a stable identifier so records can be matched and updated over time. `PACEDU_DERIVED_CONCEPT`; Mathematics, Technology, Computer Studies.
+3. **Geographic coordinates:** interpret the idea of latitude/longitude or GPS coordinates as a way to describe a location; use fictional or public-safe classroom examples only. `PACEDU_DERIVED_CONCEPT`; Mathematics, Geography, Technology.
+4. **Location metadata:** identify village, settlement, school or administrative-area fields as contextual information needed to interpret a mapped record. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Computer Studies.
+5. **Population served:** interpret a count of people or households associated with a service point, while distinguishing an estimate from a verified count. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science.
+6. **Water-source categories:** classify source descriptions such as surface water, groundwater, rainwater harvesting and other recorded source types when the source dataset defines them. `PACEDU_DERIVED_CONCEPT`; Elementary Science, Basic Science, Mathematics.
+7. **Water distribution:** distinguish a source from the system that conveys or distributes water to users. `PACEDU_DERIVED_CONCEPT`; Elementary Science, Basic Science, Technology.
+8. **Water storage:** identify tanks and storage facilities as parts of a water-supply system; compare recorded tank material or capacity only where reliable source data are provided. `PACEDU_DERIVED_CONCEPT`; Science, Mathematics, Technology.
+9. **Water-treatment presence:** read a dataset field that records whether treatment is present; do not infer that presence alone proves water is safe. `PACEDU_DERIVED_CONCEPT`; Science, English, Mathematics.
+10. **Treatment-type classification:** classify treatment descriptions using a teacher-provided glossary; do not teach learners to operate or improvise treatment systems. `PACEDU_DERIVED_CONCEPT`; Science, Technology.
+11. **Water-point condition:** distinguish a recorded condition/status from the operational performance or safety of a facility. `PACEDU_DERIVED_CONCEPT`; Science, English, Social Science.
+12. **Service coverage:** explain that coverage describes who has access to a service within a defined population or area, and requires a stated denominator and date. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science.
+13. **Sanitation-facility inventory:** identify the value of recording toilet and sanitation-facility types as part of WASH service information. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science, Mathematics.
+14. **Handwashing-facility availability:** interpret the presence/absence of handwashing facilities as an infrastructure indicator, distinct from observed handwashing behaviour. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Mathematics.
+15. **Soap availability:** distinguish a facility for handwashing from the availability of soap and other supplies needed to use it. `PACEDU_DERIVED_CONCEPT`; Healthy Living, English.
+16. **Menstrual hygiene facilities:** recognise menstrual hygiene facilities as part of inclusive school WASH planning, using respectful, age-appropriate and non-stigmatising language. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science.
+17. **Accessible WASH:** explain why school sanitation and hygiene services must consider the needs and dignity of learners with disabilities and diverse access requirements. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science, Technology.
+18. **School WASH as a distinct dataset:** explain why schools require specific water, sanitation and hygiene information rather than assuming household or village data fully describe school conditions. `PACEDU_DERIVED_CONCEPT`; Social Science, Mathematics, Computer Studies.
+19. **WASH data fields:** identify examples of fields in a rural WASH record: source type, tanks, standpipes, toilets, showers, treatment presence and treatment type. `PACEDU_DERIVED_CONCEPT`; Computer Studies, English, Mathematics.
+20. **Data custodian:** explain that an agency or organisation may hold and maintain a defined dataset, and that data ownership/custody should be identified before reuse. `PACEDU_DERIVED_CONCEPT`; Social Science, Computer Studies.
+21. **Multiple-source data integration:** describe how information from water agencies, statistics offices, health agencies, education authorities and disaster-management bodies may contribute different parts of a sector baseline. `PACEDU_DERIVED_CONCEPT`; Social Science, Mathematics, Computer Studies.
+22. **Baseline dataset:** explain the purpose of a baseline as a reference point for later comparison, while recording its date and scope. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science.
+23. **Survey versus administrative records:** distinguish information collected through a survey from routine administrative or programme records, and identify that the two may have different purposes. `PACEDU_DERIVED_CONCEPT`; English, Mathematics, Social Science.
+24. **Data collection and verification:** explain that collecting information and checking its accuracy are separate steps; identify why records may need follow-up or validation. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies, Social Science.
+25. **Monitoring versus compliance information:** distinguish a dataset used to monitor trends from records collected for approval, verification or compliance processes. `PACEDU_DERIVED_CONCEPT`; Social Science, English.
+26. **Data completeness:** recognise that missing fields limit what can safely be concluded; never treat blank, unknown and zero as interchangeable. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies.
+27. **Data consistency:** explain why standard definitions, units, categories and reporting practices are needed when combining records from different agencies or locations. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies.
+28. **Evidence-based service prioritisation:** interpret how mapped service gaps and risk information can help planners identify where further investigation or investment may be needed; learners do not rank real communities or make funding decisions. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science, English.
+29. **Community reporting and participation:** describe how local/community reporting can contribute to water-service information, while recognising that reporting consistency and inter-agency communication can be challenging. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Vosa Vakaviti.
+30. **Survey scope and evidence limitations:** identify the survey year, coverage, population/locations, school component, source and known limits before comparing findings or making claims. `PACEDU_DERIVED_CONCEPT`; English, Mathematics, Computer Studies, Social Science.
+
+### Evidence and interpretation controls
+
+- The Department of Water and Sewerage catalogue identifies the national survey as a 2022 survey covering 1,600 rural locations and 978 schools. These are catalogue-reported scope figures, not learner achievement indicators.
+- The PaCWaM+ report describes the associated 2021 mapping exercise as covering registered villages, settlements and rural schools, and lists collection areas including demographics, GPS coordinates, water sources, treatment, storage, sanitation, handwashing facilities and soap; it also identifies menstrual-hygiene facilities in the WASH-in-Schools component.
+- The 2024 PaCWaM+ report describes data custodians and systems across agencies, including rural water/sanitation records, water and wastewater assets, statistics, groundwater bores, health-facility WASH and school WASH. Treat its descriptions as a dated account, not a guarantee that every dataset remains complete, current or integrated.
+- No specific national survey percentages, facility-condition rates, water-quality results or school-level findings have been extracted in this record because the original 70-page report and 17-page summary were not successfully inspected. Do not invent or infer those results from catalogue summaries or secondary descriptions.
+- GPS coordinates, facility locations, school records, household details, community knowledge and infrastructure vulnerabilities must not be exposed in learner-facing examples. Use fictionalised, aggregated or explicitly public-safe data.
+- Learners must not inspect toilets, handle wastewater, collect or test water, visit infrastructure, enter restricted sites, diagnose contamination, or certify water safety. Use teacher-provided text, diagrams and fictional datasets.
+- Do not present a mapping record as proof that a water point is currently functioning, accessible, adequately supplied or safe. Status and service conditions require current verification by responsible authorities.
+- No copying of substantial report text, maps, tables, photographs or graphics until rights and permitted reuse have been checked. Summarise concepts in original wording and cite sources.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; verification against the full original survey and current datasets; rights review; teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`.
