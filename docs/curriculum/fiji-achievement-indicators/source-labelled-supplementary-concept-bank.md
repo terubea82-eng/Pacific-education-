@@ -3466,3 +3466,141 @@ Use the current issue date and original source with every dataset; distinguish o
 - Do not collect identifiable farmer, household, farm-location, animal-health or veterinary records from learners or their families.
 - **Worksheet gate:** NOT YET AUTHORISED. Retrieve current Ministry livestock production and animal-health education materials; verify current livestock policy and Biosecurity Act consolidated text/subsidiary rules; page-check the 2024–2028 Strategic Development Plan; map concepts to approved Fiji NCF and official Ministry achievement indicators; set year levels/prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 157 — Fiji fisheries, aquaculture, marine ecosystems and sustainable ocean livelihoods
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Agriculture; Elementary Science; Basic Science; Social Science; Mathematics; Commercial Studies; Technology; Healthy Living; English  
+**Level:** LEVEL_NOT_SPECIFIED pending approved Fiji NCF and Ministry year-level mapping  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — Fiji National Fisheries Policy 2024–2028
+
+- **Issuer:** Ministry of Fisheries, Republic of Fiji.
+- **Document:** *Republic of Fiji National Fisheries Policy 2024–2028*.
+- **PDF:** https://faolex.fao.org/docs/pdf/fij235926.pdf
+- **Policy endorsement:** Cabinet endorsed the policy on 23 September 2024; official Cabinet decision: https://www.fiji.gov.fj/decisions-made-at-the-16th-cabinet-meeting-held-on-23-september-2024/
+- **Inspected locations:** Minister's foreword and rationale, printed pp.1–4; policy goals, approximately pp.10–12; coastal/inshore fisheries, pp.25–35; aquaculture, pp.36–44; cross-cutting marine spatial management and climate/environmental risks, pp.45–49; implementation and monitoring/evaluation, pp.55–57.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_NATIONAL_POLICY; POLICY_PERIOD_2024_TO_2028; CURRENT_IMPLEMENTATION_AND_SUCCESSOR_POLICY_CHECK_REQUIRED.
+- **Caution:** Policy targets, proposed activities and planned regulatory reforms are not automatically completed achievements or legal rules. The policy period is 2024–2028; check subsequent decisions and implementation updates before using targets as current facts.
+
+**PacEdu-derived concepts from Source A**
+1. **Fisheries as a renewable natural resource system** — policy goal is sustainable management of fisheries resources; policy goals section. Evidence: learner explains why fish populations and habitats need management over time.
+2. **Coastal, inland and offshore fisheries** — policy distinguishes these fisheries sectors; sector approach sections. Evidence: learner classifies fictional fishing examples by coastal, inland or offshore setting.
+3. **Fish and aquatic biodiversity** — policy seeks protection of vulnerable and overfished species and healthy ecosystems; policy goals. Evidence: learner explains that aquatic biodiversity includes many species and ecological roles.
+4. **Community-based fisheries management** — policy promotes expanded community-based fishery management; policy goals and coastal fisheries section. Evidence: learner describes how community participation can support shared resource care using a fictional example.
+5. **Customary and community knowledge** — policy recognises consultation, community participation and customary rights considerations; policy development and cross-sectoral sections. Evidence: learner identifies respectful consultation and consent as important when planning resource activities.
+6. **Marine protected areas (MPAs)** — policy supports large-scale and multiple-use MPAs; policy goals and marine spatial management section. Evidence: learner interprets a simple fictional map showing a protected area and explains its conservation purpose.
+7. **Multiple-use marine planning** — policy discusses multiple-use MPAs and marine spatial management; cross-sectoral section. Evidence: learner compares fictional conservation, fishing, tourism and aquaculture uses on a map without proposing real zoning.
+8. **Protecting vulnerable and overfished species** — policy identifies protection of vulnerable and overfished species; policy goals. Evidence: learner interprets a fictional population trend and explains why a declining population may require protection.
+9. **Fisheries management plans** — policy goal is to manage fisheries under plans or other arrangements; policy goals. Evidence: learner identifies objectives, actions and review as components of a simple fictional resource plan.
+10. **Fish stock assessment as evidence** — offshore policy discusses stock assessment, logbooks, observer programmes and electronic monitoring data; offshore fisheries section. Evidence: learner reads a fictional catch/time dataset and distinguishes evidence from assumption.
+11. **Catch, effort and trends** — policy identifies fisheries-dependent data and stock assessment needs; offshore and coastal sections. Evidence: learner compares fictional catch totals across two periods and notes that catch alone does not prove population size.
+12. **Fishing gear and selective impacts** — policy addresses fisheries management and impacts on non-target species; offshore fisheries and cross-sectoral sections. Evidence: learner identifies target catch and bycatch in a teacher-approved illustration.
+13. **Bycatch and protected wildlife** — policy and official fisheries monitoring statements discuss non-target species and impacts; cross-sectoral section and 2025 Hansard. Evidence: learner explains why fishing methods should reduce harm to non-target animals; no handling of wildlife or gear.
+14. **Illegal, unreported and unregulated (IUU) fishing as a governance issue** — policy and Ministry reporting address monitoring, control and surveillance; offshore fisheries section. Evidence: learner explains the difference between a recorded activity and an unreported activity using a fictional example.
+15. **Fisheries monitoring and data quality** — policy implementation framework requires measurable indicators, reporting and review; implementation section. Evidence: learner checks a fictional fisheries table for dates, units, missing values and clear definitions.
+16. **Climate change and marine resources** — policy calls for assessment and research on climate impacts on marine resources; cross-sectoral section. Evidence: learner describes possible links between changing ocean conditions and marine habitats using an approved source.
+17. **Marine pollution and habitat damage** — policy identifies pollution, siltation, habitat damage, invasive species and disasters as risks; cross-sectoral section. Evidence: learner traces a fictional pollution pathway from land to a coastal habitat.
+18. **Coastal ecosystem health** — policy supports healthy ecosystems and coastal management; policy goals and cross-sectoral section. Evidence: learner identifies relationships among a coastal habitat, organisms and human uses from a diagram.
+19. **Alternative livelihoods and resource pressure** — policy discusses alternative livelihoods, aquaculture and eco-tourism in relation to marine protected areas; cross-sectoral section. Evidence: learner compares fictional livelihood options and identifies potential benefits and trade-offs.
+20. **Value addition in fisheries** — policy supports adding value to fisheries products; policy goals and industry-development sections. Evidence: learner maps a fictional product from landing to processing, packaging and sale.
+21. **Post-harvest handling as a food-quality topic** — policy identifies post-harvest handling as an area requiring improved coverage; legislative review section. Evidence: learner explains why time, cleanliness and suitable storage affect product quality, using a safe classroom diagram.
+22. **Fisheries food security** — policy links sustainable fisheries with food security and income generation; foreword and goals. Evidence: learner explains how sustainable local fisheries can contribute to food availability.
+23. **Fisheries livelihoods and local economies** — policy links fisheries with income, employment and alternative livelihoods; foreword and sector sections. Evidence: learner identifies different roles in a fictional fisheries value chain.
+24. **Gender and youth participation** — policy promotes inclusive participation of women and youth in offshore, coastal and aquaculture sectors; cross-sectoral section. Evidence: learner identifies fair access to training and decision-making without assigning stereotyped roles.
+25. **Policy indicators and evaluation** — policy calls for measurable performance indicators, annual reports, mid-term review and final evaluation; implementation section. Evidence: learner distinguishes an indicator, annual progress report and evaluation using a fictional example.
+
+### Source B — Aquaculture Act 2024 (Act No. 20 of 2024)
+
+- **Issuer:** Parliament of the Republic of Fiji.
+- **Assented:** 6 December 2024.
+- **Official PDF:** https://www.parliament.gov.fj/wp-content/uploads/2024/12/Act-20-Aquaculture-Act-2024.pdf
+- **Inspected sections:** ss.1–5 (purpose, definitions and principles); ss.8–10 (administration, research/training and advisory functions); ss.21–26 (Scientific Committee); ss.27–31 (designated areas, management plans and licensing); ss.38–43 (compliance, restricted products, genetically modified aquatic organisms, live imports and company arrangements); ss.44–49 (authorised officers and monitoring); s.67 (confidentiality).
+- **Classification:** FIJI_PRIMARY_LEGISLATION; COMMENCEMENT_AND_SUBSIDIARY_RULES_CHECK_REQUIRED.
+- **Legal caution:** Section 1(2) provides for commencement by Gazette notice. This research did not verify the commencement notice or all current subsidiary regulations. Do not state that the Act is in force or teach specific licensing requirements until Gazette commencement and current regulations are confirmed. This is not a consolidated Fisheries code.
+
+**PacEdu-derived concepts from Source B**
+26. **Meaning and scope of aquaculture** — s.2 defines aquaculture as cultivation, propagation or farming of aquatic organisms for trade, business or research, including freshwater, brackish and marine contexts; ss.1–2. Evidence: learner distinguishes aquaculture from harvesting wild fish in a fictional example.
+27. **Aquatic organism diversity** — s.2 includes aquatic plants and animals, molluscs, crustaceans, corals and other groups; s.2. Evidence: learner classifies illustrated aquatic organisms into broad groups.
+28. **Aquaculture production systems** — the Act recognises aquaculture premises, areas, equipment and related infrastructure; s.2 and Part 6. Evidence: learner labels a simple diagram of a fictional hatchery and grow-out system.
+29. **Scientific advice in aquaculture decisions** — ss.21–23 establish a Scientific Committee and define its advisory functions. Evidence: learner explains why scientific expertise is needed when assessing an aquaculture proposal.
+30. **Aquaculture advisory and licensing roles** — ss.9–20 establish advisory and licensing bodies and functions. Evidence: learner matches fictional policy, scientific and licensing questions to the relevant institutional role.
+31. **Site suitability and land characteristics** — s.29 requires an aquaculture management plan to describe land tenure, soil, topography and land-use patterns. Evidence: learner compares fictional site profiles and identifies why site conditions matter.
+32. **Environmental impact and risk assessment** — s.29 requires assessment of environmental impacts, risks and mitigation measures in relevant management plans. Evidence: learner identifies possible environmental risks in a fictional aquaculture diagram and suggests seeking expert assessment.
+33. **Sustainable aquaculture resource use** — ss.28–29 connect area management and plans with sustainable aquaculture. Evidence: learner explains why production planning should consider long-term resource and ecosystem effects.
+34. **Interests of artisanal and subsistence fishers** — s.29 requires management plans to protect the interests of artisanal, subsistence and small-scale fishers. Evidence: learner identifies why planning should consider different users of shared aquatic resources.
+35. **Aquaculture licensing as a public regulatory process** — ss.30–31 provide for licensing and consideration of applications. Evidence: learner explains at a general level why some commercial activities require authorisation; no learner completes or submits a real application.
+36. **Restricted aquatic products and live-organism imports** — ss.40–42 address restricted aquaculture products, genetically modified aquatic organisms and import of live aquatic organisms. Evidence: learner explains why moving live organisms across borders may require specialist biosecurity checks.
+37. **Aquaculture companies and formal arrangements** — s.43 addresses registration of aquaculture companies and formal arrangements. Evidence: learner identifies the difference between an informal activity and a formally organised business using fictional examples.
+38. **Monitoring and authorised regulatory roles** — ss.44–49 provide for authorised officers and monitoring/enforcement functions. Evidence: learner identifies the role of authorised public officers in a fictional compliance scenario; learners do not conduct inspections.
+39. **Confidentiality in regulatory information** — s.67 concerns confidentiality. Evidence: learner identifies why private business or personal information should not be shared without authority.
+
+### Source C — Fiji Aquaculture Development Plan 2024–2028
+
+- **Issuer:** Ministry of Fisheries, Republic of Fiji.
+- **Policy period:** 2024–2028.
+- **Official government launch summary:** https://www.fiji.gov.fj/launch-of-the-ministry-of-fisheries-aquaculture-development-plan-2024-2028/
+- **Launch date:** 31 October 2024.
+- **Key species named by the Government:** Black Lip Oysters, seaweed, Black Tiger Prawns, Pacific White Shrimp, Giant River Prawns, tilapia, Giant Clams, Rock Oysters and Mabe Pearls.
+- **Plan priorities in official launch summary:** research, development and extension; market access; biosecurity; environmental performance; gender equity; investment; education and training; improved product quality and food security.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_SECTOR_DEVELOPMENT_PLAN; POLICY_PERIOD_2024_TO_2028; FULL_PLAN_PAGE_LEVEL_REVIEW_PENDING.
+- **Caution:** Government launch page reports the plan's objectives and targets as planned outcomes, not verified achievements. Monetary and trade targets are dated 2024–2028 policy targets, not current results.
+
+**PacEdu-derived concepts from Source C**
+40. **Aquaculture species diversity in Fiji** — official launch summary identifies nine priority species/groups. Evidence: learner matches approved species images with their names; no live organism collection or handling.
+41. **Hatchery and grow-out stages** — the plan summary refers to aquaculture development, research and production; detailed policy supports improved hatchery and grow-out survival. Evidence: learner sequences a generic hatchery-to-grow-out diagram.
+42. **Aquaculture biosecurity** — the plan identifies strengthened biosecurity as a priority; evidence: learner explains why disease risks can be introduced when aquatic organisms are moved between sites.
+43. **Aquaculture product quality and food safety** — plan supports high-quality products and food safety training; evidence: learner identifies quality and safe handling checkpoints on a fictional product pathway.
+44. **Aquaculture market access and value chains** — plan aims to improve market access and reduce seafood import dependence; evidence: learner maps a fictional cultured product from farm to local market.
+45. **Research, extension and training** — plan supports research, development, extension, education and training; evidence: learner identifies an appropriate source of technical advice for a fictional aquaculture question.
+46. **Women and youth in aquaculture livelihoods** — plan promotes gender equity and employment for women and youth groups; evidence: learner identifies inclusive participation in a fictional aquaculture enterprise.
+47. **Aquaculture production and trade indicators** — government launch summary reports planned value, import and export targets to 2028. Evidence: learner reads a clearly dated fictional or historical target table and distinguishes target from actual result.
+
+### Source D — Fiji Fisheries (Amendment) Act 2025 (Act No. 24 of 2025)
+
+- **Issuer:** Parliament of the Republic of Fiji.
+- **Assented:** 26 November 2025.
+- **Official PDF:** https://www.parliament.gov.fj/wp-content/uploads/2025/12/Act-24-Fisheries-Act-2025.pdf
+- **Commencement:** Parliament's compiled sitting statistics records commencement on 18 February 2026 by Legal Notice No. 25 of 2026.
+- **Inspected provisions:** ss.1–6; definitions of authorised officer, fishing gear, fish, vessel and taking fish; inserted authorised-officer appointment and amended search/examination provisions.
+- **Classification:** FIJI_PRIMARY_LEGISLATION_AMENDMENT; COMMENCED_18_FEBRUARY_2026; PRINCIPAL_ACT_CONSOLIDATION_REQUIRED.
+- **Legal caution:** This is an amendment to the Fisheries Act 1941, not a consolidated current Fisheries Act. It is used only for general concepts about public regulation and definitions. Do not teach enforcement powers, penalties, inspection procedures or legal advice to learners.
+
+**PacEdu-derived concepts from Source D**
+48. **Meaning of fishing gear and fishing vessels** — s.2 as amended defines fishing gear and vessels broadly. Evidence: learner classifies safe illustrations of manually operated and powered fishing equipment without using any gear.
+49. **Breadth of aquatic resources in fisheries law** — s.2 as amended includes aquatic plants and animals, molluscs, crustaceans, corals and other organisms. Evidence: learner compares legal and biological classification examples.
+50. **Public authority and fisheries governance** — ss.4–5 insert authorised-officer appointment and amend officer powers. Evidence: learner identifies that fisheries regulation is carried out by designated public authorities, not by students or private individuals.
+51. **Fisheries law changes over time** — Act No.24 of 2025 amends the 1941 principal Act and commenced 18 February 2026. Evidence: learner creates a simple timeline distinguishing an original Act, an amendment and a commencement date.
+
+### Source E — Fiji Government fisheries statement to Parliament, 9 March 2026
+
+- **Issuer:** Government of Fiji; Minister for Fisheries and Forests.
+- **Document:** Minister's response to the President's opening address for Parliament 2026.
+- **Official URL:** https://www.fiji.gov.fj/minister-for-fisheries-forests-hon-alitia-bainivalus-response-to-his-excellency-president-of-fijis-opening-address-for-parliament-2026-2/
+- **Inspected content:** fisheries sector priorities; implementation status of Aquaculture Act 2024 and Fisheries (Amendment) Act 2025; lobster fishery management; Fisheries Surveillance and Operations Centre; vessel monitoring and satellite access; future Inshore Fisheries Management Bill and offshore fisheries law review; Aquaculture Regulations described as progressing.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_MINISTERIAL_STATEMENT; 9_MARCH_2026; STATUS_UPDATE_NOT_LEGISLATION.
+- **Caution:** The statement describes the Aquaculture Regulations as progressing and future bills as objectives. Do not describe draft or planned regulations/bills as enacted law.
+
+**PacEdu-derived concepts from Source E**
+52. **Fisheries surveillance and information systems** — statement describes a Fisheries Surveillance and Operations Centre and vessel monitoring systems. Evidence: learner explains how location data can support monitoring using a fictional map.
+53. **Satellite and vessel-tracking data** — statement describes real-time tracking of fishing vessels within Fiji's EEZ. Evidence: learner interprets a fictional vessel-position map and explains that map data needs date, source and context.
+54. **Marine data integration** — statement describes combining monitoring and satellite data for operational awareness. Evidence: learner identifies how multiple data sources can be displayed together on a map, without using live surveillance data.
+55. **Lobster life-cycle protection and sustainable harvest** — statement reports management measures intended to allow lobster populations to reach reproductive maturity and spawn before harvest. Evidence: learner sequences a simplified lobster life cycle and explains why reproduction matters to population sustainability.
+56. **Policy, legislation and implementation status** — statement distinguishes enacted laws from proposed bills and regulations still progressing. Evidence: learner sorts fictional examples into enacted, commenced, proposed and in-development categories.
+
+### Safeguards, rights and curriculum mapping
+
+- The National Fisheries Policy 2024–2028 and Aquaculture Development Plan 2024–2028 contain policy objectives, targets and proposed actions. Do not represent them as official student achievement indicators or claim that planned targets have been achieved.
+- The Aquaculture Act 2024 commencement notice and current subsidiary regulations must be verified before teaching any operative legal requirements. The Fisheries (Amendment) Act 2025 commencement date is recorded as 18 February 2026, but the consolidated Fisheries Act 1941 as amended and all applicable regulations must be checked before any legal-rule teaching.
+- Do not teach fishing, diving, spear use, net setting, boat operation, aquaculture equipment operation, specimen collection, fish disease diagnosis, veterinary treatment, chemical use, or handling of live, injured or dead aquatic animals as learner tasks.
+- No school activity should take learners onto reefs, mangroves, shorelines, rivers, boats, fish farms, hatcheries, landing sites or processing facilities without separate risk assessment, permissions, trained supervision and environmental safeguards. Use classroom diagrams, photographs and fictional datasets by default.
+- Do not encourage learners to collect coral, shells, live organisms, eggs, juveniles, marine plants or protected species. Do not disturb habitats or remove organisms.
+- Food safety and post-harvest activities must remain diagrammatic unless a separate approved food-safety assessment authorises supervised practice.
+- Respect customary fishing rights, customary marine tenure, community protocols, local knowledge, consent and privacy. Do not ask learners to disclose household fishing locations, catches, licences, income or customary access details.
+- Fisheries surveillance and enforcement data can be sensitive. Use fictional datasets only; do not reproduce vessel identities, personal data or operational enforcement details in learner activities.
+- **Worksheet gate:** NOT YET AUTHORISED. Obtain and page-check the full Aquaculture Development Plan 2024–2028; verify Aquaculture Act commencement notice and regulations; retrieve the current consolidated Fisheries Act and relevant regulations; check current National Fisheries Policy implementation/successor status; map concepts to approved Fiji NCF and official Ministry achievement indicators; assign levels/prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
