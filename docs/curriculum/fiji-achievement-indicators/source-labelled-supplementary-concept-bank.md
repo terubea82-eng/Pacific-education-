@@ -231,3 +231,42 @@ For each individual indicator/concept, store these fields:
 Historical sources provide provenance, progression and concept continuity. They do not automatically establish a current mandatory learning outcome. If a current prescription and older resource differ, retain both records and follow the verified current prescription. If no current prescription is verified, do not describe the concept as mandatory; a separate supplementary revision resource may be considered only after source, rights and teacher review and must be labelled supplementary.
 
 A worksheet must never be generated from an untraceable concept. The source-lineage record must be completed first, then the worksheet may be drafted from an eligible current prescription or as a clearly separate supplementary resource.
+
+## 15. Fiji Ministry of Education, Curriculum Development Unit — English Year 4 resource book (2013; amended by 2019 workgroups)
+
+- **Source identity:** Curriculum Development Unit, Ministry of Education, Fiji; copyright 2013; the copy's acknowledgement says Year 1–4 curriculum workgroups vetted it and 2019 Years 3–4 teacher workgroups amended/improved it. The accessible copy is hosted on Course Hero, not a Ministry-controlled repository.
+- **Level/subject:** Year 4 English.
+- **Source classification:** `HISTORICAL_OR_REFERENCE_TEACHER_RESOURCE`; source lineage and topic record only.
+- **Verified theme/unit concepts from the table of contents:** Family and Culture (holidays, weddings, shopping); Health and Safety (snakes, cyclone season); Environment (making paper from woodchip, diggings, birds); Entertainment (kite flying, fox and stock, golf); Science and Technology (computers, people and machines, space exploration); Careers (inventors, biography, tornadoes).
+- **Lineage use:** These are historical text themes and contexts, not achievement indicators. They may help trace culturally relevant reading, vocabulary and comprehension contexts across older and newer English resources. They must not be treated as current Year 4 prescribed content without current syllabus confirmation.
+- **Status and reuse:** Historical 2013 book with 2019 amendments indicated; no proof of current controlled status. Copyright notice permits school classroom reproduction with acknowledgement and directs other use to the Ministry Senior Education Officer English Primary. PacEdu reuse/adaptation or distribution needs written permission.
+- **Source link:** https://www.coursehero.com/file/226202236/ENGLISH-Year-4/
+
+## 16. Fiji Ministry of Education, Curriculum Development Unit — Years 9–10 English syllabus (historical syllabus copy; approximately 2015 hosting)
+
+- **Source identity:** TheSEEProject-hosted PDF titled Years 9 & 10 English Syllabi, attributed in the document to the Curriculum Development Unit, Ministry of Education. This is not a Ministry-controlled repository copy.
+- **Level/subject:** Years 9–10 English.
+- **Source classification:** `HISTORICAL_OR_TRIAL_LEAD`; historical prescription lineage evidence, not current active authority.
+- **Verified curriculum structure:** The syllabus states that learning outcomes identify concepts, skills and attitudes expected by the end of each year; it says essential concepts, skills and attitudes were selected from old prescriptions and incorporated into the Years 9–10 syllabi. It describes progression from Years 1–8 and strands Listening & Speaking, Reading & Viewing, and Writing & Shaping, using literature, media and everyday texts.
+- **Lineage use:** This is direct evidence that earlier prescriptions were used as a source for later English curriculum development. For each matching concept, PacEdu should capture the exact earlier prescription and the later outcome separately, then record whether the relationship is same wording, earlier wording, broader concept or progression. Do not infer one-to-one equivalence from the general statement.
+- **Status and reuse:** Historical document copy; verify edition, effective dates, supersession and rights against Ministry/CAS records. Do not reproduce extensive syllabus text.
+- **Source link:** https://theseeproject.org/wp-content/uploads/2015/05/l2_year910_english_syllabi.pdf
+
+## 17. Fiji Ministry of Education — Mathematics curriculum history and legacy concept lead
+
+- **Source identity:** Dayal, Australian Senior Mathematics Journal, vol. 27 no. 2; scholarly historical account of secondary mathematics education in Fiji. It reports that the Ministry produced a Mathematics prescription for Forms 5 and 6 in 1988 and describes historical topic groupings. This is research, not a Ministry prescription.
+- **Level/subject:** Historical primary and secondary Mathematics; Forms 5–6 prescription history.
+- **Source classification:** `HISTORICAL_RESEARCH_LEAD`; use only to locate and verify original prescriptions.
+- **Verified historical concept themes reported by the article:** arithmetic and number calculations; fractions and decimals; time and linear measure; money; ratio and proportion; averages and percentages. The article also identifies later upper-secondary topic areas including basic mathematics, algebra, functions and graphs.
+- **Lineage use:** Use these terms as search keys to locate the actual Fiji prescriptions and textbooks. Do not create active indicators from the research article or assume the historical topics are unchanged in current curriculum.
+- **Status and reuse:** Secondary historical account. The original 1988 prescription and later amendments must be located and authenticated before any individual indicator is accepted.
+- **Source link:** https://files.eric.ed.gov/fulltext/EJ1093382.pdf
+
+## 18. Fiji Ministry of Education — Mathematics for Class 8/Form II (revised edition, 1998)
+
+- **Source identity:** Bibliographic record identifies the Curriculum Development Unit, Ministry of Education & Technology, Fiji, as contributor/publisher; revised edition, 1998, 130 pages. The catalogue record is from Google Books; the actual book text was not available in the retrieved preview.
+- **Level/subject:** Class 8/Form II Mathematics.
+- **Source classification:** `HISTORICAL_TEXTBOOK_LEAD`; bibliography only until the full book and relevant pages are obtained.
+- **Lineage use:** Potential historical concept source for Year 8 Mathematics. No individual concepts or indicators are extracted because the actual contents have not been verified.
+- **Status and reuse:** Historical textbook; not a prescription. Locate an authorised physical/digital copy and inspect its contents and copyright terms before extraction or reuse.
+- **Source link:** https://books.google.com/books/about/Mathematics_for_Class_8_form_II.html?id=Xp6uHAAACAAJ
