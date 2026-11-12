@@ -440,3 +440,19 @@ Two additional records have been indexed in the source bank (29 records total):
 **Current status distinction:** The 2025 National Pre-Primary Education Policy still names the 2013 NCF as the framework and says PPE programmes must use the approved Ministry curriculum. Cabinet endorsed review of the 2013 NCF in October 2025, but this search did not locate an officially published replacement NCF or controlled Years 5–8 final literacy/numeracy package. This is a bounded search finding, not proof that no later internal documents exist. Official references: https://www.education.gov.fj/wp-content/uploads/2025/04/PPE_Policy_WEB.pdf and https://www.fiji.gov.fj/14th-Cabinet-Meeting-Decisions-7-October-2025/
 
 Active individual prescribed indicator records remain 0 until actual approved syllabus pages and exact outcome wording are obtained and version-checked. No worksheets generated from annual reports or third-party book copies.
+
+
+## Source record 30 — Years 3 & 4 Literacy Guide (Ministry-hosted teacher guidance)
+
+- **Primary source:** Fiji Ministry of Education, Heritage & Arts, *Years 3 & 4* Literacy Guide for Lower Primary, Ministry-hosted PDF: https://www.education.gov.fj/wp-content/uploads/2022/06/Literacy_Guide_-for_years_34.pdf
+- **Authority/status:** Official Ministry teacher guide. Its foreword says it is aligned to the syllabus and supplies practical classroom strategies; it is not, by itself, the controlled syllabus or proof of mandatory achievement indicators.
+- **Page evidence:** PDF pp. 3–5 daily guide; pp. 36–37 Fiji-language phonics; later pages include assessment and reading-progress checklists.
+- **Indexed concepts:** oral language, shared reading, prediction, comprehension, sight words, phonics, word analysis, sentence construction, fluency, writing, dictation, reading-progress monitoring. These remain teacher-guidance concepts pending exact syllabus crosswalk.
+- **Lineage/status:** current prescription wording and older-source lineage not yet verified. The Ministry guide is Ministry-hosted; edition date is not explicit in the retrieved front matter.
+- **Rights:** verify permission before copying or adapting guide text or activities.
+- **Worksheet eligibility:** `SUPPLEMENTARY_ONLY`; requires prescription crosswalk, rights review and `PENDING_TEACHER_REVIEW`.
+
+
+## ECE framework clarification — Na Noda Mataniciva (2009)
+
+The Ministry-hosted *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands* (copyright 2009) explicitly states that it outlines outcomes rather than prescribing learning content. It organises learning through Foundation Areas of Learning and Development (FALD), which inform Classes 1–2 and link to KLAs from Class 3. Therefore its outcomes may be indexed as ECE framework outcomes, but must not be relabelled as detailed content prescriptions. Source: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf, foreword pp. iii–iv (PDF lines 73–90).
