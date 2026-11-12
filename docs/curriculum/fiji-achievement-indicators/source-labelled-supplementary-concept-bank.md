@@ -3359,3 +3359,110 @@ Use the current issue date and original source with every dataset; distinguish o
 - Ministry policy outcome indicators are sector performance measures, not automatically student learning indicators. All entries in this record are PacEdu-derived concepts.
 - **Worksheet gate:** NOT YET AUTHORISED. Obtain current Ministry crop and farm technical guides; confirm current status of the 2025–2035 Non-Sugar Agriculture Sector Policy and its detailed indicator pages; retrieve and inspect the Fiji Land Use Capability Classification 2012 source; map concepts to approved Fiji NCF and official Ministry indicators; set year levels/prerequisites; complete rights review and teacher review.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 156 — Fiji livestock production, animal welfare, animal health and biosecurity concepts
+
+**Record status:** SOURCE-EXTRACTED; PACEDU-DERIVED CONCEPTS; NOT OFFICIAL STUDENT ACHIEVEMENT INDICATORS  
+**Subject coverage:** Agriculture; Elementary Science; Basic Science; Healthy Living; Mathematics; Commercial Studies; Technology; English  
+**Level:** LEVEL_NOT_SPECIFIED pending approved Fiji NCF and Ministry year-level mapping  
+**CAS contact:** DEFERRED_UNTIL_PILOT
+
+### Source A — Fiji Livestock Sector Strategy, Final Report (11 March 2016)
+
+- **Issuers/authors:** Fiji Livestock Sector Strategy Working Group and Ministry of Agriculture, Fiji.
+- **Date:** 11 March 2016.
+- **Document:** *Fiji Livestock Sector Strategy — Final Report*.
+- **PDF:** https://pafpnet.spc.int/attachments/article/535/Fiji%20Livestock%20Sector%20Strategy.pdf
+- **Inspected locations:** summary and logical framework, printed pp.1–2; policy and commodity scope, pp.4–5; productivity and feed resources, pp.12–13; animal welfare and quality/safety, pp.23–25 and 29–30; animal health and resilience, pp.41–45; good practices, pp.44–45; skills, pp.46–48.
+- **Classification:** FIJI_GOVERNMENT_SECTOR_STRATEGY; HISTORICAL_POLICY_AND_SECTOR_ANALYSIS; CURRENT_POLICY_AND_PROGRAMME_CHECK_REQUIRED.
+- **Version caution:** This is a 2016 strategy with historical statistics, prices, targets, institutional names and proposed activities. It is not evidence that every proposal was enacted or remains current. Do not reuse its old numerical productivity benchmarks as present-day standards.
+
+**PacEdu-derived concepts from Source A**
+1. **Livestock diversity in Fiji** — the strategy discusses cattle, dairy, sheep, goats, pigs, poultry and honey/beekeeping; printed pp.4–5 and sector chapters. Evidence: learner sorts supplied animal and product cards into livestock groups.
+2. **Livestock products and uses** — the strategy identifies milk, beef, mutton, pork, poultry meat, eggs and honey as priority commodities; p.5. Evidence: learner matches a product to its animal source using picture cards.
+3. **Animal life cycles and reproduction vocabulary** — the strategy uses production measures such as calving, lambing and piglets; p.12. Evidence: learner sequences an age-appropriate, teacher-provided animal life-cycle diagram without handling animals.
+4. **Livestock productivity as measurable output** — the strategy discusses milk production, stock off-take and growth rates; pp.12–13. Evidence: learner reads a fictional production table and identifies the unit and period.
+5. **Understanding indicators and benchmarks** — the strategy's productivity table compares average and potential values based on 2009 census and industry estimates; p.12. Evidence: learner distinguishes an observed value, an estimate and a target; historical values are explicitly dated.
+6. **Livestock feed ingredients and sources** — the strategy describes local crop by-products and imported feed ingredients; p.13. Evidence: learner classifies teacher-provided examples as locally sourced or imported feed materials without formulating a ration.
+7. **Feed quality and truthful labelling** — the strategy discusses feed composition, protein claims, testing and quality assurance; p.13 and pp.29–30. Evidence: learner identifies the purpose of a label and why a claim needs evidence.
+8. **Feed safety and contamination** — the strategy identifies contaminants and the need for competent analysis and quality controls; p.13. Evidence: learner explains why feed should come from an appropriate, quality-assured source; no sampling or testing by learners.
+9. **Animal nutrition as a specialist topic** — the strategy links appropriate rations and quality feed with livestock production; pp.13 and 24. Evidence: learner recognises that animal diets differ by species and life stage and that ration design requires competent advice.
+10. **Animal health and disease risk** — the strategy identifies animal health and disease as factors affecting livestock performance; sector situation discussion and pp.41–43. Evidence: learner distinguishes an observation (for example, an animal behaving unusually) from a veterinary diagnosis.
+11. **Veterinary and para-veterinary roles** — the strategy calls for stronger veterinary and para-veterinary services to reduce disease risks; p.42. Evidence: learner identifies a veterinarian or authorised animal-health professional as the appropriate person for assessment.
+12. **Disease prevention, monitoring and reporting** — the strategy describes reducing the introduction and spread of infectious agents through capacity to monitor, report and act; p.42. Evidence: learner explains a fictional reporting pathway to a responsible adult or authorised officer; learners do not investigate outbreaks.
+13. **Biosecurity and movement risk** — the strategy treats biosecurity as protection against animal disease threats and invasive agents; pp.23, 29 and 42. Evidence: learner explains why animal and animal-product movement may be controlled to protect animal and community health.
+14. **Animal welfare** — the strategy identifies animal welfare as a quality and safety concern and includes it in good-practice training; pp.23, 29 and 44–45. Evidence: learner identifies basic welfare needs from teacher-approved illustrations and explains that animals must be treated humanely.
+15. **Husbandry as a connected set of practices** — the strategy lists production, nutrition, husbandry, hygiene, biosecurity, health and welfare together; p.44. Evidence: learner groups husbandry examples under care, housing, feeding, hygiene and health, using safe scenario cards.
+16. **Hygiene and livestock-product safety** — the strategy connects food safety, quality standards and animal production; pp.23–25 and 37–38. Evidence: learner traces a fictional safe-product pathway and identifies points where hygiene matters.
+17. **Quality assurance and laboratory roles** — the strategy proposes analytical and laboratory capacity for animal health products, livestock products and feeds; pp.29–30. Evidence: learner describes why specialist testing supports reliable quality claims.
+18. **Livestock value chains** — the strategy maps production, processing, logistics and markets; pp.23–25 and 35–40. Evidence: learner arranges a fictional product journey from farm to processor to market.
+19. **Cold-chain and logistics concepts** — the strategy includes market infrastructure, logistics and cold-chain infrastructure; p.38. Evidence: learner explains why some animal products require controlled storage and timely transport, without handling perishable products.
+20. **Livestock and food security** — the strategy connects local livestock production with food security and domestic supply; pp.4–5 and 45. Evidence: learner explains how local production can contribute to food availability using a fictional community example.
+21. **Climate and disaster resilience in livestock systems** — the strategy identifies climate, disaster and disease threats and discusses resilient production; pp.25–26 and 42–43. Evidence: learner compares fictional preparedness choices for a farm under storm or flood risk.
+22. **Sustainable natural-resource use** — the strategy includes sustainable use of natural resources and environmental management; pp.25–26 and 43–44. Evidence: learner identifies a resource-protection practice in a fictional livestock-farm scenario.
+23. **Farm records and traceability** — the strategy includes record keeping as part of good livestock practices; p.44. Evidence: learner completes a fictional, non-personal record with date, animal group, activity and quantity.
+24. **Livestock enterprise economics** — the strategy considers production costs, feed costs, finance, market access and value chains; pp.13, 15–16 and 38–40. Evidence: learner compares two fictional enterprise budgets using clearly labelled practice data.
+25. **Agricultural skills, training and extension** — the strategy identifies skills and competencies, youth training and agricultural support services; pp.31–32 and 46–48. Evidence: learner identifies when a farmer should seek trained extension, veterinary or business advice.
+26. **Women and youth participation in agriculture** — the strategy includes participation and opportunity for women and young people; pp.27 and 45–48. Evidence: learner analyses a fictional example of fair access to agricultural training and roles without stereotyping.
+
+### Source B — Biosecurity Act 2008 (Fiji)
+
+- **Issuer:** Parliament of the Republic of Fiji.
+- **Official legal information page:** https://www.fijitradeportal.gov.fj/en-gb/site/display/2
+- **Act PDF linked from the portal:** https://www.fijitradeportal.gov.fj/en-gb/site/display/2
+- **Purpose as described by the official legal information page:** prevent entry of animal and plant pests and diseases into Fiji; control their establishment and spread; regulate movement of animals, plants and their products; and facilitate international cooperation concerning animal and plant diseases.
+- **Classification:** FIJI_LEGAL_SOURCE_CONCEPT; CURRENT_CONSOLIDATED_TEXT_AND_AMENDMENTS_CHECK_REQUIRED.
+- **Legal caution:** This record uses the official portal's summary of the Act, not a verified clause-by-clause consolidated legal text. Do not teach specific offences, penalties, permit conditions or legal duties from this summary alone.
+
+**PacEdu-derived concepts from Source B**
+27. **Purpose of biosecurity law** — preventing introduction and spread of pests and diseases; official portal summary. Evidence: learner explains the general purpose of biosecurity in a fictional island-country scenario.
+28. **Movement controls for animals and animal products** — the Act summary identifies regulation of movement; official portal summary. Evidence: learner identifies why an animal movement may require checking with an authorised agency; no legal advice or real permit application.
+29. **International cooperation in disease prevention** — the Act summary identifies cooperation on animal and plant diseases; official portal summary. Evidence: learner explains why countries share information to reduce cross-border disease risks.
+30. **Animal products include more than meat** — the portal's export health-certificate description lists products such as milk, eggs, cheese and other animal-derived materials; official portal measures table. Evidence: learner classifies examples as animal-derived products.
+31. **Regulated inspection and approved premises** — the portal describes BAF-approved premises for inspection, testing and treatment of regulated articles; official portal measures table. Evidence: learner distinguishes an approved inspection facility from an ordinary storage place, without conducting inspections.
+32. **Declaration and responsible travel awareness** — the portal says travellers and importers should declare animals and animal products, including processed products, to BAF; official portal measures table. Evidence: learner interprets a fictional arrival declaration scenario and identifies the responsible authority.
+
+### Source C — Biosecurity Authority of Fiji (BAF), Download Forms and movement/import resources
+
+- **Issuer:** Biosecurity Authority of Fiji.
+- **Official page:** https://www.baf.com.fj/download-forms/
+- **Page content inspected:** application categories for import, export, movement and conveyance clearance; application forms for importing live animals and animal products; cattle movement application; and other movement-related forms.
+- **Classification:** FIJI_PRIMARY_REGULATORY_AGENCY_RESOURCE; OPERATIONAL_FORM_INDEX; FORM_VERSION_AND_REQUIREMENTS_CHECK_REQUIRED.
+- **Use limitation:** The form index is evidence that agency processes exist, not proof of the exact current legal requirements for every animal or movement. Do not ask learners to submit applications or provide personal information.
+
+**PacEdu-derived concepts from Source C**
+33. **Regulatory agencies and public services** — BAF provides import, export and movement application pathways. Evidence: learner matches a fictional biosecurity question to the relevant public agency.
+34. **Forms as structured information tools** — application forms collect information for official processes. Evidence: learner identifies common form fields in a fictional, non-personal sample and explains why accuracy matters.
+35. **Animal movement records** — a cattle movement application exists on the BAF forms page. Evidence: learner explains why traceable movement records can support disease prevention; no real farm or owner data.
+36. **Import/export supply-chain checks** — the BAF page separates import, export and transit processes. Evidence: learner compares a fictional domestic movement with an international import/export scenario.
+
+### Source D — Ministry of Agriculture and Waterways, Strategic Development Plan 2024–2028
+
+- **Issuer:** Ministry of Agriculture and Waterways, Government of Fiji.
+- **Document:** *Ministry of Agriculture and Waterways 5 Year Strategic Development Plan 2024–2028*.
+- **Official PDF:** https://www.agriculture.gov.fj/documents/SDP%20Booklet%20Final%202024.pdf
+- **Cross-reference:** FAO/UNEP Law and Environment Assistance Platform summary: https://leap.unep.org/en/countries/fj/national-legislation/ministry-agriculture-and-waterways-5-year-strategic-development
+- **Inspected content:** official Ministry PDF search text identifies Animal Health and Production Division among the Ministry's functional divisions; the full PDF page-by-page open timed out. FAO/UNEP summary describes the 2024–2028 plan's priorities as food and nutrition security, inclusive and sustainable livelihoods, climate resilience, commercialising agriculture, and improved Ministry performance and service delivery.
+- **Classification:** FIJI_PRIMARY_GOVERNMENT_STRATEGIC_PLAN; POLICY_PERIOD_2024_TO_2028; FULL_DOCUMENT_PAGE_CROSSCHECK_PENDING.
+
+**PacEdu-derived concepts from Source D**
+37. **Animal health within national agricultural services** — the plan lists an Animal Health and Production Division among Ministry functional divisions. Evidence: learner identifies animal health as a specialised agricultural public-service area.
+38. **Food and nutrition security as an agricultural objective** — the plan's policy summary includes food and nutrition security. Evidence: learner explains a simple link between safe local food production and food availability.
+39. **Climate resilience in agricultural planning** — the plan summary identifies climate resilience as a strategic priority. Evidence: learner compares fictional livestock preparedness choices under different weather risks.
+40. **Inclusive and sustainable agricultural livelihoods** — the plan summary includes inclusive and sustainable livelihoods. Evidence: learner identifies fair participation and sustainable resource use in a fictional farm-community case.
+41. **Commercialisation and service delivery** — the plan summary includes commercialising agriculture and improving Ministry performance/service delivery. Evidence: learner maps a fictional livestock product to a market and identifies where extension or government support may be relevant.
+
+### Safeguards, legal currency and curriculum mapping
+
+- The 2016 Livestock Strategy is historical policy analysis. Its production statistics, productivity comparisons, prices, targets, institutional arrangements and proposals must not be represented as current.
+- The Biosecurity Act 2008 legal text must be checked against the latest official consolidated version, amendments and subsidiary legislation before any legal rule is taught. This record does not establish current permit rules, offences or penalties.
+- Do not teach disease diagnosis, treatment, vaccination schedules, medicine use, drug dosages, feed-ration formulation, slaughter, animal handling, specimen collection or outbreak investigation as learner tasks. These require qualified professionals and appropriate safeguards.
+- No learner should touch sick, injured, dead, stray or unfamiliar animals; handle animal waste, blood, carcasses, raw animal products or veterinary medicines; enter animal housing or farms without approved supervision and risk assessment; or transport animals or animal products for a school activity.
+- Use photographs, diagrams, fictional datasets and teacher-created scenarios. Respect animal welfare and avoid activities that frighten, restrain, injure or exploit animals.
+- Food safety activities must use age-appropriate classroom examples only. Do not prepare or consume animal products as part of an activity without a separate approved food-safety assessment.
+- Do not collect identifiable farmer, household, farm-location, animal-health or veterinary records from learners or their families.
+- **Worksheet gate:** NOT YET AUTHORISED. Retrieve current Ministry livestock production and animal-health education materials; verify current livestock policy and Biosecurity Act consolidated text/subsidiary rules; page-check the 2024–2028 Strategic Development Plan; map concepts to approved Fiji NCF and official Ministry achievement indicators; set year levels/prerequisites; complete rights review and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
