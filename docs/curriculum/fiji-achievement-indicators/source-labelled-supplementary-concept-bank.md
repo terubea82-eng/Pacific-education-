@@ -4824,3 +4824,68 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - Do not ask learners or families to disclose tobacco, alcohol, kava, sexual, mental-health, disability, diagnosis, blood pressure, blood glucose, weight or other sensitive personal information. Do not produce personal risk scores or health rankings.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; inspect the complete 2024–2029 School Health Policy; check current health guidance; copyright permission review; safeguarding/privacy review; teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+
+---
+
+## Record 170 — Fiji Primary Ear Disease and Hearing Care Guideline (2019): hearing science, communication access and inclusive learning concepts
+
+**Record status:** APPENDED — source-inspected supplementary concept extraction  
+**Concept count:** 30  
+**Classification:** All concepts are `PACEDU_DERIVED_CONCEPT`; this is a clinical practice guideline, not a Fiji curriculum syllabus or achievement-indicator document.  
+**Source edition:** 2019, Fiji Ministry of Health and Medical Services; lead author Dr Chunghyeon Oh.  
+**Currentness:** `CURRENT_VERSION_CHECK_REQUIRED`. The guideline says it should be reviewed every five years (p.4), so its scheduled review point was 2024. The Ministry's current Guidelines page still lists it, but listing does not confirm that its clinical content remains current.  
+**Worksheet gate:** NOT YET AUTHORISED.  
+**CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+### Source inspected
+
+1. **Clinical Guidelines: Primary Ear Disease and Hearing Care in Fiji.** Fiji Ministry of Health and Medical Services, 2019, 39 pages. Official Ministry PDF: https://www.health.gov.fj/wp-content/uploads/2021/01/Clinical-Guidelines-Primary-Ear-Disease-and-Hearing-Care-in-Fiji.pdf. Inspected pp.3–4 (purpose, scope, authorship and five-year review statement); pp.16–23 (hearing assessment, communication, prevention, language development and noise); Annexes and service information only where relevant to the concept boundaries.
+2. **Ministry of Health and Medical Services — Guidelines catalogue.** https://www.health.gov.fj/moh-standard-treatment-guidelines/. The catalogue currently lists “Clinical Guidelines Primary Ear Disease and Hearing Care in Fiji”; this confirms catalogue presence only, not a new edition or clinical validation.
+3. **WHO — World Report on Hearing (2021).** https://www.who.int/publications/i/item/9789240020481. General international context for hearing care and communication access; not a Fiji curriculum outcome and not used to replace Fiji-specific clinical advice.
+
+### Extracted concepts for later curriculum mapping
+
+1. **Sound as vibration:** describe sound as a physical phenomenon involving vibrations travelling through a medium and reaching the ear. `PACEDU_DERIVED_CONCEPT`; Elementary Science, Basic Science. Source context: guideline pp.16–17.
+2. **Sound frequency:** distinguish higher- and lower-frequency sounds as different properties of sound; use neutral audio examples, not assumptions about an individual's hearing. `PACEDU_DERIVED_CONCEPT`; Science, Mathematics. p.21.
+3. **Sound level and loudness:** explain that sound level can be measured and compared, while recognising that perceived loudness and hearing ability vary. `PACEDU_DERIVED_CONCEPT`; Science, Mathematics. pp.16, 23.
+4. **Decibel as a unit:** recognise decibels as a logarithmic unit used in sound measurement; any detailed calculations require a suitable approved science resource. `PACEDU_DERIVED_CONCEPT`; Mathematics, Basic Science. pp.16, 23.
+5. **Audiometer:** identify an audiometer as specialist equipment used to measure hearing thresholds. `PACEDU_DERIVED_CONCEPT`; Science, Technology. p.16.
+6. **Hearing threshold:** explain at a basic level that a hearing threshold is the quietest sound level detected under specified test conditions. `PACEDU_DERIVED_CONCEPT`; Science, Mathematics. p.16.
+7. **Audiogram and data display:** interpret a teacher-provided fictional graph of sound frequency and hearing threshold, with no real learner health data. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies, Science. pp.16–17.
+8. **Screening versus diagnosis:** distinguish a screening check that identifies a reason for further assessment from a professional diagnostic assessment. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living, Social Science. pp.16–19.
+9. **Limits of informal tests:** explain that informal listening activities cannot diagnose hearing loss and must never be used to label classmates. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living. pp.18–20.
+10. **Ear structures and function:** recognise the outer ear, ear canal, eardrum and middle-ear structures as parts involved in hearing; detailed anatomy must be mapped to approved level-specific materials. `PACEDU_DERIVED_CONCEPT`; Science. Contents and pp.6–15.
+11. **Outer-ear and middle-ear distinction:** identify that the guideline separately discusses outer-ear and middle-ear conditions; use this only as broad health-literacy vocabulary, not diagnosis. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living. Contents pp.2–15.
+12. **Hearing and communication:** explain that access to spoken information may differ between people and that communication can use more than one mode. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Healthy Living. pp.21–22.
+13. **Sign language:** recognise sign language as a valid language and communication mode, not merely a substitute gesture system. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Arts. pp.16, 19, 21.
+14. **Lip-reading and visual communication:** identify face visibility, adequate lighting and clear visual access as factors that may support some people's communication preferences. `PACEDU_DERIVED_CONCEPT`; English, Arts, Technology. p.21.
+15. **Gestures, pictures and objects:** describe how pointing, drawings, pictures and objects can supplement communication where useful and chosen by the person. `PACEDU_DERIVED_CONCEPT`; English, Arts, Technology. p.21.
+16. **Multiple communication modes:** compare spoken language, sign language, written text, captions, pictures and tactile communication as different possible access modes; select according to individual preference, not assumptions. `PACEDU_DERIVED_CONCEPT`; English, Technology, Social Science. pp.19–22.
+17. **Language development:** explain that rich access to language, stories, reading, conversation and early writing supports language learning; do not equate speech production with intelligence. `PACEDU_DERIVED_CONCEPT`; English, ECE, Social Science. pp.21–23.
+18. **Quiet learning environment:** identify how background noise and competing sound can make communication and listening more difficult for some learners. `PACEDU_DERIVED_CONCEPT`; Science, Technology, Healthy Living. p.21.
+19. **Classroom acoustics:** investigate sound reflections, background noise and room arrangement using safe, non-clinical classroom observations. `PACEDU_DERIVED_CONCEPT`; Science, Technology, Mathematics. pp.21, 23.
+20. **Accessible teacher communication:** explain why a teacher may gain attention before speaking, face the class, keep the face visible, speak clearly and provide written/visual instructions. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Technology. p.21.
+21. **Captions and written instructions:** identify captions, transcripts and written instructions as practical ways to make audio/video learning content accessible; this is a PacEdu-derived accessibility application, not a direct clinical prescription in the guideline. `PACEDU_DERIVED_CONCEPT`; English, Computer Studies, Technology.
+22. **Assistive technology:** recognise hearing aids and specialist hearing equipment as technologies that may support some users, while recognising that users choose their own communication preferences. `PACEDU_DERIVED_CONCEPT`; Science, Technology, Social Science. pp.16, 19, 21.
+23. **Environmental noise protection:** explain that prolonged or excessive noise exposure can pose a risk to hearing and that reducing exposure is a prevention concept. `PACEDU_DERIVED_CONCEPT`; Science, Healthy Living, Technology. p.23.
+24. **Noise measurement and workplace safety:** interpret a fictional noise-level chart and explain why workplace noise controls matter; do not treat the guideline's 2003 regulation quotation as confirmation of current legal limits. `PACEDU_DERIVED_CONCEPT`; Mathematics, Science, Social Science. p.23.
+25. **Health information and stigma:** identify and challenge unfair assumptions that a person who does not respond to speech is inattentive, rude, uninterested or less capable. `PACEDU_DERIVED_CONCEPT`; English, Social Science, Healthy Living. p.23.
+26. **Inclusive participation:** explain why people with hearing differences must have equal access to classroom discussion, group work, announcements, assessment instructions and school activities. `PACEDU_DERIVED_CONCEPT`; Social Science, English, Technology. pp.21–23.
+27. **Individual communication choice:** recognise that communication strategies should be developed with the person and family/support network rather than imposed based on a hearing label. `PACEDU_DERIVED_CONCEPT`; Social Science, English, Healthy Living. pp.21–22.
+28. **Referral pathways:** understand at a general health-literacy level that concerns about hearing should be discussed with a qualified health professional; school staff and learners do not diagnose or prescribe. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science. pp.18–20, 23.
+29. **Prevention and public-health education:** identify safe, general prevention messages such as avoiding insertion of objects into the ear and seeking qualified help for ear concerns; do not turn clinical procedures into student practicals. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science. pp.22–23.
+30. **Evidence currency and review cycles:** explain why health guidance needs periodic review and why a document's continued presence on a website does not prove it is the latest edition. `PACEDU_DERIVED_CONCEPT`; English, Mathematics, Computer Studies, Social Science. p.4 and current Ministry catalogue.
+
+### Evidence, safety and accessibility controls
+
+- The guideline is intended for medical officers, nursing practitioners, maternal/child health nurses and ear-screening officers (p.3). Its diagnostic pathways, clinical thresholds, treatment instructions, medicine doses, ear examination methods, ear cleaning, ear drops, ear flushing, ear mops/wicks and infant screening procedures are **not student activities** and must not be copied into learner worksheets.
+- The guideline explicitly states that it should be reviewed every five years or earlier when audiology services change (p.4). Its 2019 edition reached its review point in 2024. The Ministry's present online catalogue lists it, but no replacement edition or review outcome was located during this search. Treat all clinical advice, statistics, referral-centre lists, thresholds and legal references as historical until verified against current official guidance.
+- Historical prevalence figures in the 2019 guideline must not be represented as current Fiji prevalence. No learner or family member should be screened, tested, diagnosed, ranked or asked to disclose hearing status for a PacEdu activity.
+- The educational concepts are suitable only for later age/level mapping. They are not official Fiji achievement indicators. Map against current approved NCF/CAS outcomes before use; retain `LEVEL_NOT_SPECIFIED` until then.
+- Accessibility applications such as captions, transcripts, visual directions, sign-language access, tactile alternatives and learner-selected communication modes are PacEdu-derived applications. They must not be presented as verbatim Ministry policy requirements unless supported by a separate current authoritative source.
+- Use fictional audio graphs, invented sound-level datasets and classroom acoustics examples. Never use a learner's audiogram, hearing aid settings, health record or identifiable disability information.
+- Do not ask learners to insert objects into ears, use ear drops, inspect ears, perform hearing tests, use noisemakers to test babies, or conduct any clinical demonstration.
+- **Rights review:** `RIGHTS_REVIEW_REQUIRED`. The Ministry PDF was inspected for concepts; no permission for reproduction, adaptation, translation or commercial worksheet use has been established. Use original paraphrases only pending written rights clearance.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji curriculum mapping; level/prerequisite assignment; current clinical source check; rights review; disability/accessibility review; teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`.
