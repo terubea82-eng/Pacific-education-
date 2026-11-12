@@ -541,3 +541,22 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Status limitation:** The report does not supply the full Ministry-approved curriculum mapping, controlled package, formal school rollout directive, exact prescribed outcomes or confirmation that the planned accessible formats were completed. The Fijian Elections Office primary source and the actual materials must be retrieved.
 - **PacEdu implication:** Request the official package, Ministry/CAS approval or circular, curriculum mapping, teacher guide, student workbook, accessible-format status and reuse terms. If verified, civic/democratic literacy content may support relevant Year 9–10 Social Science, English or civic education activities; retain its source and do not mark it mandatory without the official prescription or directive.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; no indicators derived from the news report.
+
+
+## Record 44 — 2025–2026 Fiji Budget Estimates: curriculum-development activity evidence
+
+- **Source:** Parliament of Fiji, *2025–2026 Budget Estimates*, Ministry of Education, Programme 4: Curriculum Development, printed p.153. https://www.parliament.gov.fj/wp-content/uploads/2025/07/2025-2026-Budget-Estimates.pdf
+- **Classification:** Official parliamentary budget document; evidence of funded/planned curriculum-development activities, not a syllabus, approval instrument or indicator source.
+- **Traceable details:** The Ministry's Curriculum Development programme includes budget lines for the Assessment Framework for Schools, National Curriculum Framework, Literacy and Numeracy Training, Financial Literacy Training, Special and Inclusive Education, reading intervention, climate/environment awareness training, Year 9 Revised Secondary English Curriculum, Citizenship Education for Years 1–4 and Years 9–10, Year 9 Revised Secondary Mathematics Curriculum, and National Curriculum Framework review/consultation.
+- **Status limitation:** A budget allocation demonstrates planned or funded activity, not that a resource was completed, approved, distributed, compulsory or effective on a particular date. It does not contain the actual learning outcomes or syllabus content.
+- **PacEdu implication:** Use as a cross-check list for official Ministry/CAS retrieval requests. Request final controlled documents and circulars for Year 9 RSMC, Year 9 English, Citizenship Education Years 1–4 and 9–10, the Assessment Framework and NCF review outputs. Do not derive indicators from budget headings.
+- **Worksheet eligibility:** `SUPPLEMENTARY_ONLY` for implementation tracking; no indicators derived.
+
+## Record 45 — Historical Years 9–10 Mathematics Syllabi (2014/2015 edition): rights and currency lead
+
+- **Source:** Third-party hosted copy of Ministry of Education, Curriculum Development Unit, *Mathematics Syllabi Years 9 & 10*, Fiji 2014; first edition 2015. https://www.scribd.com/document/571027588/Years-9-10-Mathematics-Syllabi-231214
+- **Classification:** Historical Ministry-authored syllabus copy discovered on a third-party host; not yet verified against a Ministry-controlled original or current approval record.
+- **Traceable details:** The copy's front matter identifies the Ministry/CDU, Fiji 2014, first edition 2015. It includes a learning progression, course-content detail, time allocation, assessment and planning documents. Its Year 9 outline includes Numbers, Basic Algebra, Simple Linear Equations and Inequations, Social Mathematics, Basic Geometry and Transformations.
+- **Status limitation:** This is an older edition and may have been superseded by the later Year 9 RSMC. Third-party hosting is not authoritative proof of current status. The document's copyright notice says school reproduction is limited to classroom purposes with acknowledgement; other use must be referred to the Permanent Secretary through the Director CAS. This is not blanket permission for PacEdu to copy, adapt or redistribute.
+- **PacEdu implication:** Request the Ministry-controlled copy, supersession/withdrawal status and permission conditions. Use only as historical progression lineage after comparing it with the approved RSMC and current Years 10–13 pathways. Do not activate its learning outcomes as current mandatory indicators.
+- **Worksheet eligibility:** `BLOCKED_RIGHTS_REVIEW` for copying/adaptation; historical comparison only pending authoritative status and permission.
