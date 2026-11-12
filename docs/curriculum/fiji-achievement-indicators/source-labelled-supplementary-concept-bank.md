@@ -655,3 +655,14 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **PacEdu consequence:** keep existing verified controlled prescriptions active until a formally approved replacement is published with an effective date and transition instruction. Treat these themes as `POLICY_REVIEW_PROPOSALS`; do not generate mandatory indicators or worksheets from them. Monitor for the final review report, Cabinet endorsement, published revised FNCF, Ministry/CAS circulars, subject syllabi and implementation dates.
 - **Classification:** `OFFICIAL_PARLIAMENTARY_MINISTERIAL_STATEMENT_CURRICULUM_REVIEW_IN_PROGRESS`.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; no indicator activated.
+
+
+## Record 54 — 2026 Fiji school-term calendar and clarification of Term 2 curriculum coverage report
+
+- **Official term calendar:** Fiji Government, *School Terms*, https://www.fiji.gov.fj/school-terms/ . Published 2026 dates: Term 1 26 January–1 May; Term 2 18 May–21 August; Term 3 7 September–4 December. Use this official calendar unless a later official revision is published.
+- **Administrative circular report:** The Fiji Times, 13 June 2026 (updated 15 September 2026), reported that an internal Ministry circular dated 28 April instructed schools to complete curriculum coverage by the end of Term 2. This is secondary reporting; the circular itself has not been obtained. Do not treat the report as a subject prescription or as an instruction to cancel Term 3.
+- **Ministry clarification reported by FBC:** FBC News, 15 June 2026, *No changes to school term*, reports Permanent Secretary Navin Raj's clarification that Term 3 would proceed as scheduled, normal in-person attendance and teaching would continue, national examinations were unchanged, and Term 3 would focus on trial examinations, remedial classes, revision and preparation for Years 8, 12 and 13 external examinations. It also reports that Term 2 syllabus coverage was standard practice and teachers should continue following the Learning and Teaching Plan.
+- **PacEdu scheduling implication:** preserve the official 2026 term dates; align curriculum coverage and daily activities with each school's approved Learning and Teaching Plan; reserve Term 3 capacity for revision, remedial work, trial examinations and exam preparation as appropriate to the level. Do not interpret the reported internal circular as abolishing Term 3, suspending attendance, changing exam dates or creating new achievement indicators.
+- **Evidence limitation:** obtain the Ministry circular and any official Learning and Teaching Plan instructions before encoding school-specific mandatory schedule rules. FBC reports the Ministry clarification but is not the original circular.
+- **Classification:** `OFFICIAL_CALENDAR` plus `SECONDARY_REPORT_OF_MINISTRY_ADMINISTRATIVE_CLARIFICATION`; not a curriculum prescription.
+- **Worksheet eligibility:** schedule context only; no indicator activated.
