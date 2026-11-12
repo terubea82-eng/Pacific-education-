@@ -466,3 +466,8 @@ The Ministry-hosted *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for 
 - **Status:** Historical/guide-only pending version and prescription crosswalk. Do not activate codes as current indicators.
 - **Reuse restriction:** Ministry copyright permits reproduction for classroom purposes only with acknowledgement; other uses require referral to Permanent Secretary through Director Curriculum Advisory Services (PDF p.i). PacEdu adaptation/republication is blocked pending permission.
 - **Eligibility:** `BLOCKED_RIGHTS_REVIEW`; crosswalk and teacher review also required.
+
+
+## Record 32 — Annual Report 2020–2021: Mathematics version-control evidence
+
+The Ministry's 2020–2021 Annual Report, pp.50 and 52, is an official record of curriculum revision, not a prescription. Page 50 identifies the Years 1–8 English/Mathematics package components (NCF, scope-and-sequence overviews, year-level sequences and teacher guides). Page 52 records a Year 11 pilot called “Life Skills Mathematics” and the existing “Applied Mathematics” curriculum. These names must not be treated as interchangeable with later pathway labels without checking approved syllabus versions and effective dates. Source: https://www.education.gov.fj/wp-content/uploads/2024/06/Ministry-of-Education-Heritage-and-Arts-Annual-Report-2020%E2%80%932021.pdf. No indicator wording is activated from this report.
