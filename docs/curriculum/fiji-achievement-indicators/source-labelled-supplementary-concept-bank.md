@@ -5474,3 +5474,57 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Rights:** RIGHTS_REVIEW_REQUIRED for all source-dependent reuse beyond the Ministry’s stated school classroom reproduction permission. Independently paraphrased concepts and citations do not authorise reproduction of protected literary works.
 - **Worksheet gate:** NOT YET AUTHORISED. Current curriculum verification, exact level/prerequisite mapping, rights, accessibility and teacher review remain required.
 - **CAS contact:** DEFERRED_UNTIL_PILOT.
+
+
+## Record 181 — Fiji Ministry Year 6 and Year 8 Physical Education: fitness, training, sports skills and safe participation
+
+**Source:** Ministry of Education, Curriculum Development Unit, *Teachers Guide for Y6 & Y8 Teachers—Term 3*, Fiji, first edition 2015, printed pp. 3–5 (PDF pages 6–8). Official Ministry PDF: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf. This is a Term 3 post-examination support resource, not a complete current PE syllabus.
+
+**Classification discipline:** Content Learning Outcomes (CLOs) are kept separate from the Achievement Indicators column. CLO entries are **OFFICIAL_CLO_OR_ACHIEVEMENT_STANDARD**; indicator entries are paraphrases of the Achievement Indicators column and labelled **OFFICIAL_ACHIEVEMENT_INDICATOR (2015 guide; current-version check required)**. Independently developed concepts are **PACEDU_DERIVED_CONCEPT**. Practical safety rules are not presented as official indicators.
+
+### Year 6 — fitness, training and safe participation
+
+1. **Relate fitness to training methods:** study and demonstrate the relationship between physical fitness and methods of training. **OFFICIAL_CLO_OR_ACHIEVEMENT_STANDARD**, PE 6.1.1.1a, printed p. 3. Evidence: explain a simple relationship between a fitness component and a suitable training method using a teacher-provided example.
+2. **Demonstrate aerobic and anaerobic training types:** demonstrate examples of aerobic and anaerobic training. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 6.1.2.2a, p. 3. Evidence: classify and safely demonstrate low-risk, adapted examples under teacher supervision; no maximal exertion.
+3. **Describe and show training effects:** describe and demonstrate how training methods can affect physical fitness. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 6.1.2.2b, p. 3. Evidence: explain an expected training effect and match it to a suitable example.
+4. **Analyse fitness through different training methods:** analyse and explain fitness in relation to different types of training. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 6.1.2.2c, p. 3. Evidence: compare teacher-provided examples and justify which fitness component each is intended to develop.
+5. **Recognise basic first-aid learning in sport:** explore and perform basic first aid in relation to sports injuries. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 6.1.2.2d, p. 3. Evidence: identify when to stop an activity, alert a responsible adult and seek qualified help through a teacher-led, non-contact scenario. This does not authorise learner treatment, clinical procedures or certification.
+
+### Year 8 — sports skills and chosen activities
+
+6. **Study and demonstrate skills in different sports:** study and demonstrate skills used in different sports. **OFFICIAL_CLO_OR_ACHIEVEMENT_STANDARD**, PE 8.1.1.1a, printed p. 4. Evidence: identify a selected skill and demonstrate an adapted, low-risk version where suitable.
+7. **Investigate similarities and differences between sports skills:** investigate which skills are similar and which differ across sports. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 8.1.2.2a, p. 4. Evidence: compare two teacher-selected sports using movement purpose, control and equipment requirements.
+8. **Describe and participate in skill learning and execution:** describe and take part in learning and performing sports skills. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 8.1.2.2b, p. 4. Evidence: describe key movement cues and participate at an individually appropriate level.
+9. **Explore and design skills for a chosen activity:** explore and design the skills needed for a selected physical activity. **OFFICIAL_CLO_OR_ACHIEVEMENT_STANDARD**, PE 8.1.1.1b, p. 5. Evidence: select and explain skills relevant to a chosen activity, including safe adaptations.
+10. **Analyse and demonstrate relevant skills:** analyse and demonstrate skills relevant to the chosen sport. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 8.1.2.2c, p. 5. Evidence: explain a skill’s purpose and demonstrate an appropriate version with feedback.
+11. **Explore and perform basic skills:** explore and perform basic skills in selected sports. **OFFICIAL_ACHIEVEMENT_INDICATOR**, PE 8.1.2.2d, p. 5. Evidence: perform or communicate the steps of a basic skill in an adapted task.
+
+### Supporting concepts for teaching and assessment
+
+12. **Distinguish health-related fitness components:** identify and describe cardiorespiratory endurance, muscular strength, muscular endurance and flexibility. **PACEDU_DERIVED_CONCEPT** from the guide’s fitness and training focus, pp. 3–4. Evidence: match teacher-provided activity examples to a relevant component; do not measure or grade body composition.
+13. **Distinguish skill-related fitness:** identify balance, coordination, agility, speed, power and reaction time as movement-related concepts. **PACEDU_DERIVED_CONCEPT** supporting sports-skill analysis, pp. 3–5. Evidence: explain which component is used in a fictional sport example.
+14. **Explain aerobic activity:** describe sustained activity that can be maintained over time and distinguish it from short bursts. **PACEDU_DERIVED_CONCEPT** supporting PE 6.1.2.2a. Evidence: classify safe, familiar examples without physiological testing.
+15. **Explain anaerobic activity:** describe short-duration, higher-intensity effort and distinguish it from sustained activity. **PACEDU_DERIVED_CONCEPT** supporting PE 6.1.2.2a. Evidence: classify a fictional example; no maximal sprinting required.
+16. **Compare training methods:** compare continuous, interval, circuit and flexibility-oriented training as broad approaches, where supported by the approved teaching plan. **PACEDU_DERIVED_CONCEPT** from training-method outcomes, p. 3. Evidence: identify the structure and intended purpose of teacher-provided examples.
+17. **Explain warm-up and cool-down purposes:** describe gradual preparation for movement and a gradual return to rest. **PACEDU_DERIVED_CONCEPT** supporting safe participation. Evidence: sequence a teacher-approved plan; no forced stretching or pain.
+18. **Recognise overload and progression:** explain that training demand should be appropriate and increased gradually, with recovery. **PACEDU_DERIVED_CONCEPT** from training-effects analysis. Evidence: identify an unsafe sudden increase in a fictional plan.
+19. **Recognise recovery:** explain the role of rest and recovery between exercise sessions. **PACEDU_DERIVED_CONCEPT**. Evidence: improve a fictional weekly activity plan by including rest.
+20. **Use perceived effort cautiously:** describe effort using a simple optional perceived-effort scale, not as a medical measurement. **PACEDU_DERIVED_CONCEPT**. Evidence: interpret a fictional effort rating; learners need not disclose health conditions.
+21. **Identify skill components:** break a sports skill into preparation, action and follow-through, or other suitable movement phases. **PACEDU_DERIVED_CONCEPT** from skill learning, pp. 4–5. Evidence: sequence illustrated stages or annotate a diagram.
+22. **Use feedback to improve a skill:** identify one specific movement cue and use constructive feedback to refine a skill. **PACEDU_DERIVED_CONCEPT**. Evidence: describe a change between two low-risk attempts or simulated examples.
+23. **Compare individual and team skills:** explain how a skill may be performed individually or coordinated with others. **PACEDU_DERIVED_CONCEPT**. Evidence: classify fictional examples and explain cooperation needs.
+24. **Recognise rules and fair play:** explain how agreed rules, respect and fair play support safe participation. **PACEDU_DERIVED_CONCEPT**. Evidence: resolve a fictional rule scenario with a reasoned explanation.
+25. **Select appropriate equipment and space:** identify suitable equipment, playing area and supervision for a selected activity. **PACEDU_DERIVED_CONCEPT**. Evidence: complete a paper-based safety check using fictional scenarios.
+26. **Adapt a movement task inclusively:** identify ways to adapt space, equipment, instructions, pace or response mode so learners with different access needs can participate. **PACEDU_DERIVED_CONCEPT**. Evidence: redesign a task while retaining its learning objective.
+
+### Safety, source integrity and approval gates
+
+- **Physical safety:** no compulsory vigorous exercise, maximal-effort tests, unsupervised training, risky contact, sparring, dangerous throws, high-impact challenges or public fitness ranking. Activities require school approval, suitable space/equipment, qualified adult supervision and individual adaptations. Stop if pain, dizziness, distress or unsafe conditions arise; refer concerns to the responsible adult.
+- **First-aid boundary:** the first-aid indicator is a learning topic only. Learners must not practise treatment on real injuries, attempt diagnosis, manipulate suspected fractures/dislocations or manage concussion. Use teacher-led paper scenarios or non-contact role-play; real incidents go to trained adults and appropriate emergency/health services.
+- **Privacy and inclusion:** do not request diagnoses, medication, disability, body measurements, weight or family health information. No body-composition grading. Provide equivalent accessible evidence and reasonable adaptations; do not exclude learners because they cannot perform a particular movement.
+- **Indicator provenance:** entries 2–5, 7–8 and 10–11 paraphrase Achievement Indicators; entries 1, 6 and 9 are CLOs kept distinct. Entries 12–26 are PacEdu-derived concepts, not official Ministry indicators.
+- **Currentness:** CURRENT_VERSION_CHECK_REQUIRED. This is a first-edition 2015 Term 3 guide. Verify the current approved Fiji NCF 2013/CAS PE curriculum and later Ministry updates before curriculum mapping or assessment.
+- **Rights:** the guide states school classroom reproduction with acknowledgement; other uses are to be referred to the Permanent Secretary through the Director CAS. RIGHTS_REVIEW_REQUIRED for PacEdu commercial reproduction/adaptation.
+- **Level mapping:** retain Year 6 and Year 8 source labels. Do not transfer to other levels without approved progression/prerequisite mapping.
+- **Worksheet gate:** NOT YET AUTHORISED. Current curriculum, rights, safety, accessibility, level mapping and teacher review gates remain open.
+- **CAS contact:** DEFERRED_UNTIL_PILOT.
