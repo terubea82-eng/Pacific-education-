@@ -439,3 +439,14 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Use:** ECE planning and developmental observation crosswalk; later compare to pre-primary policy and any current approved ECE programme materials.
 - **Status / rights:** Ministry-hosted official guideline; verify permission before copying or adapting wording/artwork into PacEdu.
 - **Eligibility:** `SUPPLEMENTARY_ONLY` as ECE framework outcome reference; not a primary/secondary prescription.
+
+
+## Record 35 — 2016 Ministry prescribed textbook inventories: Mathematics Years 1–7 and Year 9
+
+- **Source:** Fiji Ministry of Education, *Policy on Free Educational Resources*, approved 1 December 2015; Appendices A and B (2016 textbook lists), Ministry-hosted PDF: https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- **Classification:** Official Ministry policy and resource inventory; not a curriculum syllabus or achievement-indicator source.
+- **Traceable entries:** Appendix A lists Mathematics Year 1 (printed p.7), Mathematics Year 2 (p.8), Mathematics Year 3 (p.9), Mathematics Year 4 (p.10), Mathematics Year 5 (p.10), Mathematics Year 6 (p.11), and Mathematics Year 7 (p.12). Appendix B, Secondary School Prescribed Textbook List 2016, lists “Form 3 Mathematics Textbook” under Year 9 (p.14).
+- **Interpretation limit:** The inventory verifies that these resources appeared in the Ministry's 2016 prescribed textbook lists. It does not establish that their syllabuses or contents remain current, nor does it provide exact learning outcomes/indicators.
+- **Retrieval targets:** obtain the original Mathematics Year 1–7 books/guides and Form 3 Mathematics Textbook, capture edition, contents, pages and rights, then crosswalk to current controlled prescriptions.
+- **Rights:** The same policy says Ministry resources remain Ministry property; school reproduction requires Permanent Secretary approval for teaching and learning (printed p.5). PacEdu adaptation or redistribution requires separate written rights clearance.
+- **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; discovery metadata only, no indicators activated.
