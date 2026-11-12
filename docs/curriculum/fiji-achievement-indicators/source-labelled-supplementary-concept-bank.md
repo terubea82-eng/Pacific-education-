@@ -450,3 +450,15 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Retrieval targets:** obtain the original Mathematics Year 1–7 books/guides and Form 3 Mathematics Textbook, capture edition, contents, pages and rights, then crosswalk to current controlled prescriptions.
 - **Rights:** The same policy says Ministry resources remain Ministry property; school reproduction requires Permanent Secretary approval for teaching and learning (printed p.5). PacEdu adaptation or redistribution requires separate written rights clearance.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; discovery metadata only, no indicators activated.
+
+
+## Record 36 — Fiji Education Act Review Policy Issues Paper (May 2025): literacy/numeracy benchmark gap
+
+- **Source:** Education Review Committee, *Policy Issues Paper for Public Consultations: Review of the Fiji Education Act 1966*, May 2025; Ministry-hosted PDF: https://www.education.gov.fj/wp-content/uploads/2025/05/174674935744705-1.pdf
+- **Classification:** Official public-consultation issues paper; not enacted law, not a curriculum prescription, and not an approved achievement-indicator framework.
+- **Traceable location:** Issue 77–79, printed pp.36–37 (PDF lines 2600 onward; verify exact printed pagination in PDF view).
+- **Key finding:** Issue 78 records consultation participants' concern about the absence of clear national literacy and numeracy benchmarks across year levels and recommends year-level competencies. Issue 79 discusses remedial support and proposed bilingual instruction. These are reported consultation issues/recommendations, not proof that benchmarks or bilingual requirements were adopted.
+- **PacEdu implication:** Do not invent national numeracy benchmarks or treat a proposed year-level competency as a mandatory indicator. Use only approved syllabus wording where available; separately label PacEdu diagnostic/progress measures as app-generated assessments, never national benchmarks.
+- **Related official policy lead:** 2023 Denarau Declaration / Fiji National Education Policy Framework 2024–2033 proposes review of LANA and consideration of LANA at Years 3, 5 and 7, and a national remedial strategy. These are policy strategies/proposals, not an enacted syllabus.
+- **Status:** Official consultation evidence; proposals require subsequent adoption/implementation verification.
+- **Worksheet eligibility:** `PENDING_SOURCE_REVIEW` for context only; no prescribed indicators may be derived from this paper.
