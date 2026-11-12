@@ -2257,3 +2257,53 @@ The initial weekly allocation assumed seven 40-minute periods: ear/speech traini
 - Status: HISTORICAL_LINEAGE_REFERENCE; WORKSHOP_DRAFT_EVIDENCE; SUPPLEMENTARY_ONLY; CURRENT_STATUS_UNCONFIRMED; BLOCKED_RIGHTS_REVIEW.
 - Do not promote any entry to current mandatory curriculum or create daily worksheets from this record alone.
 - CAS contact remains DEFERRED_UNTIL_PILOT.
+
+
+---
+
+## Record 139 — Fiji Revised Secondary English Curriculum (RSEC), Years 9–10 Teacher Guide 1 (2024): achievement standards, CLOs and KUD learning objectives
+
+**Source:** *Revised Secondary English Curriculum — Teachers Guide 1*, Ministry of Education (Curriculum Advisory Services), prepared in partnership with Fiji Program Support Facility Fiji Education Program; ©2024. Publicly readable third-party FlipHTML5 copy: https://fliphtml5.com/gjgbb/naau/RSEC_Teachers_Guide_Year_9_%26_10/. Inspected printed pp.2–30 and contents/structure. This is a Ministry-authored guide as identified by its title and copyright page, but the inspected copy is hosted by a third party; retrieve a Ministry-controlled copy for final source-control verification.
+
+**Current-status context:** The guide identifies itself as RSEC Years 9 and 10. A 2025 Fiji education programme advisor posting states that the Ministry had developed and rolled out English curriculum frameworks for Years 9 and 10; another public report states Year 9 RSEC rollout began in 2025. These are supporting rollout clues, not a substitute for a current Ministry circular confirming the precise 2026 status of every Year 9 and Year 10 strand. Record status: MINISTRY_AUTHORED_CURRICULUM_GUIDE; CONTENT_EXTRACTED; CURRENT_CONTROLLED_COPY_PENDING; RIGHTS_REVIEW_REQUIRED. Copyright page says no part may be reproduced except in accordance with Fiji Copyright Act 1999. PacEdu reuse/adaptation BLOCKED_RIGHTS_REVIEW.
+
+### Curriculum architecture extracted
+
+- Three strands: Language, Text Types, Critical Literacy (printed pp.1, 9–16). The guide numbers them Strands 4, 5 and 6 in the larger curriculum architecture.
+- Classroom learning objectives use KUD: Know, Understand and Do; each CLO is unpacked into knowledge, understanding and practical language-use objectives (printed pp.17–34).
+- Language strand sub-strands: vocabulary, sentence level, whole text (printed pp.11–14).
+- The guide integrates reading, listening, viewing, speaking, writing and multimedia text rather than treating communication modes as isolated.
+- Five model units per year level; DTE (Daily Text Engagement) includes short reading/listening/viewing and inferential comprehension discussion. The guide specifies differentiated DTE text versions, SET reading support, and guided reading for students not yet independent readers (printed pp.1–3).
+- Formative assessment is embedded in lessons; Dry Run Tasks provide feedback before Performance Tasks, which align to rubrics (printed pp.3, 45–51).
+
+### Achievement standard and KUD concepts extracted (one concept per item in the source bank)
+
+1. **Tiered vocabulary:** Year 9 develops Tier 1 and Tier 2 vocabulary; Year 10 extends to Tier 3 subject-specific vocabulary. Apply vocabulary to social, classroom and academic purposes (printed pp.11–14, 18–19, 26–27).
+2. **Vocabulary inference and word relationships:** use context clues, dictionaries, glossaries, thesauruses, word walls, roots, prefixes and suffixes; infer new meanings; select synonyms for subtle differences (pp.18–19, 26–27).
+3. **Language choice and register:** explain and justify language choices according to text type, tone, audience, purpose and context; recognise how choices affect clarity, credibility and meaning (pp.18–19, 26–27).
+4. **Sentence construction:** understand and use simple, compound and complex sentences; distinguish dependent and independent clauses; use introductory clauses, coordinating/subordinating conjunctions and relative clauses (pp.19–20, 27–28).
+5. **Grammar for meaning:** use verbs and tenses, pronouns, adverbs, adjectives, prepositional phrases and punctuation to add precision, coherence and circumstance (pp.19–20, 27–28).
+6. **Whole-text cohesion and organisation:** use reference items, connectives, topic sentences, paragraph links, consistent style/tone, text structures and layout features; use plot devices such as foreshadowing and flashbacks (pp.20–23).
+7. **Text type and genre knowledge:** understand and create varied fictional and non-fictional text types, including narrative, description, recount, argument, discussion, explanation, information report, personal response and media campaign; examine their purpose, audience and typical structure (pp.13–16, 21–24, 29–32; examples pp.69–73).
+8. **Multimodal and digital visual literacy:** interpret and create written, spoken, visual and multimedia texts; consider how images, layout, captions, sound and other modes contribute to meaning and audience impact (pp.9–16, 20–23, 33–34).
+9. **Critical literacy:** examine perspective, representation, credibility, bias, purpose and the ways texts position audiences; include digital/social media texts and diverse voices (pp.15–16, 24–25, 33–34).
+10. **Oral communication and listening:** develop conversation skills, listen for different purposes, participate in group discussion and debate, and adapt spoken language for formality, fluency and audience (pp.2–3, 52–54).
+11. **Reading comprehension and strategies:** daily inferential comprehension; prediction, connection-making, graphic organisers, readers' theatre, skimming, scanning, visualising and synthesising (pp.2, 36–37, 58–66).
+12. **Writing process and craft:** plan, draft, revise and edit; use text structure, figurative language, persuasive writing and journaling (pp.67–74).
+13. **Differentiated learning and guided reading:** use appropriately levelled texts and differentiated tasks while keeping shared learning goals; provide small-group guided reading for learners who are not yet independent readers (pp.2–3, 38–40, 43–44).
+14. **Assessment evidence:** formative checks and feedback; Dry Run Tasks; Performance Tasks assessed against five-criterion rubrics (pp.3, 45–51).
+
+### Historical lineage comparison — what can and cannot be claimed
+
+- **Record 136 / 1973 Fiji regional workshop report:** broad continuity is visible in vocabulary, grammar/structures, listening, oral language, reading comprehension and composition. The 1973 report is a workshop draft/recommendation, not a final approved syllabus. These are broad domain similarities, not exact predecessor matches.
+- **Record 135/137 / 2014 Years 9–10 syllabus:** both cover language, text forms, audience/purpose, reading, writing and communication, but the 2024 RSEC restructures the framework into Language, Text Types and Critical Literacy with explicit KUDs and achievement standards. Do not claim direct item-level descent without a source crosswalk.
+- **2006 Ministry secondary English curriculum:** a secondary academic article summarises a Ministry 2006 reorganisation around listening, speaking, reading, writing and grammar; it reports spiral grammar areas (parts of speech, phrases, clauses, sentences), integrated skills and literature genres. The original Ministry 2006 syllabus/guide has not yet been retrieved. This is secondary-source context only; not a verified original prescription and not item-level lineage.
+- All item-level lineage fields remain LINEAGE_NOT_YET_FOUND unless an original older prescription or exact text match is inspected.
+
+### PacEdu handling
+
+- Extracted content is a useful source for the RSEC Years 9–10 curriculum file; preserve source codes and KUD wording exactly when later transcribing full tables. This record summarises concept domains and does not claim to reproduce every CLO/KUD.
+- Distinguish official achievement standards, CLOs and KUDs from PacEdu-derived observable evidence and activity design.
+- Status: MINISTRY_AUTHORED_CURRICULUM_GUIDE; CURRENT_CONTROLLED_COPY_PENDING; RIGHTS_REVIEW_REQUIRED; LINEAGE_NOT_YET_FOUND at item level.
+- No PacEdu daily worksheets authorised until current prescription source control and older-source lineage review are completed, and rights are cleared.
+- CAS contact remains DEFERRED_UNTIL_PILOT.
