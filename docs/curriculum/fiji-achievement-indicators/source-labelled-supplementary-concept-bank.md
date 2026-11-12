@@ -5869,3 +5869,46 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Currentness:** `CURRENT_VERSION_CHECK_REQUIRED`. The source is a 2015 trial syllabus; verify whether a later approved Year 7–8 Social Science syllabus or replacement curriculum is in force before operational use. Do not use an unfinished revised curriculum as if approved.
 - **Worksheet gate:** `NOT YET AUTHORISED`; requires current syllabus confirmation, outcome-code verification, progression/prerequisite mapping, rights clearance, culturally safe content review and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+
+
+## Record 186 — Fiji ECE foundation outcomes: six learning and development areas
+
+- **Source:** Fiji Ministry of Education, *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands* (2009), official Ministry PDF.
+- **Official source:** https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf
+- **Source locations:** printed pp. 16–18 (framework, outcomes approach and progression); pp. 21–28 (Physical Development, Health and Well-being); pp. 29–39 (Learning to Know); pp. 40–45 (Language, Literacy and Communication); pp. 46–53 (Living and Learning Together); pp. 54–61 (Aesthetics, Creativity and the Arts); pp. 62–66 (Moral and Spiritual Development). Framework and outcomes approach also at PDF lines 1119–1249; six-area summary at lines 1250 onward.
+- **Source authority and scope:** Official Fiji Ministry ECE curriculum guidelines. The foreword states that the outcomes are intended for ECE and inform Classes 1 and 2, where they connect with the Key Learning Areas used from Class 3 onward. This record is ECE-focused; it does not claim to supply the complete Class 1 or Class 2 syllabus.
+- **Classification:** 6 entries `OFFICIAL_FALD_OUTCOME` (official Foundation Area outcomes, not subject-specific achievement indicators) plus 18 `PACEDU_DERIVED_CONCEPT` entries unpacking the outcomes. The Ministry source explicitly describes outcomes as guidelines and recommends using detailed sub-strand outcomes for planning.
+- **Official FALD outcome paraphrases:**
+  1. **Physical Development, Health and Well-being — `OFFICIAL_FALD_OUTCOME`:** Children of all abilities develop and refine physical skills and begin to use practices that support active, healthy lifestyles.
+  2. **Learning to Know — `OFFICIAL_FALD_OUTCOME`:** Children use observation, exploration, communication, questioning, problem-solving, investigation and logical thinking to deepen learning and understanding.
+  3. **Language, Literacy and Communication — `OFFICIAL_FALD_OUTCOME`:** Children become effective communicators in their first language and develop foundations for literacy.
+  4. **Living and Learning Together — `OFFICIAL_FALD_OUTCOME`:** Children develop a sense of self, relationships and ways of participating with others in their social and cultural worlds.
+  5. **Aesthetics, Creativity and the Arts — `OFFICIAL_FALD_OUTCOME`:** Children explore and express ideas through creative, artistic and aesthetic experiences.
+  6. **Moral and Spiritual Development — `OFFICIAL_FALD_OUTCOME`:** Children develop values, understandings and behaviours connected with moral and spiritual dimensions of their lives and communities.
+- **PacEdu-derived concepts unpacked from the six areas:**
+  7. Develop gross-motor control through age-appropriate movement, balance, coordination and object-control experiences.
+  8. Develop fine-motor coordination through safe, varied manipulation and construction materials.
+  9. Develop body awareness and perceptual-motor understanding through accessible sensory and movement experiences.
+  10. Practise personal routines and age-appropriate hygiene and safe practices with adult support.
+  11. Explore nutrition and healthy-living ideas using familiar, culturally appropriate examples without food shaming or assumptions about household resources.
+  12. Observe living and non-living things, describe features and ask questions about the surrounding environment.
+  13. Explore and investigate using safe materials, notice change and share simple explanations.
+  14. Represent ideas and observations through drawing, construction, movement, talk, symbols and play.
+  15. Develop early mathematical language and concepts involving number, measurement, shape, space, patterns, chance and data.
+  16. Listen, understand and respond to verbal and non-verbal communication in accessible forms.
+  17. Communicate ideas, feelings, needs and experiences using the learner’s first language and other available communication modes.
+  18. Build foundations for literacy by engaging with stories, songs, signs, symbols, print and purposeful mark-making.
+  19. Recognise that print and other symbol systems communicate meaning; explore writing materials for meaningful purposes.
+  20. Develop a positive sense of self, recognise personal strengths and interests, and practise making choices.
+  21. Build relationships, cooperate, share resources and participate in group activities with appropriate support.
+  22. Explore music, movement, drama, visual art and craft as ways to express ideas and feelings.
+  23. Explore local art forms, patterns, materials and craft knowledge respectfully, with community and cultural permissions where needed.
+  24. Discuss values, care, respect, responsibility and belonging through age-appropriate stories and everyday classroom situations.
+- **Level and progression:** ECE, with the source’s developmental continuum broadly spanning ages 3–6. Do not convert the source’s developmental examples into rigid age-based pass/fail requirements. The source recognises individual differences and says teachers should select outcomes appropriate to each child’s development and needs. Use the label ECE in PacEdu; do not rename it Kindergarten.
+- **Observable evidence prompts (PacEdu-derived, not official wording):** child communicates a choice or idea in an accessible mode; observes and describes a feature; asks a question; sorts, counts, compares or represents using suitable materials; follows a familiar personal routine with appropriate support; participates in a cooperative activity; and expresses an idea through an artistic or symbolic representation. Evidence should be gathered over time and in varied contexts.
+- **Subject mapping:** ECE integrated learning across early language/literacy, early mathematics, inquiry/science, physical development and healthy living, social learning, arts, culture and values. Do not prematurely split these integrated experiences into formal primary subject indicators.
+- **Rights:** the 2009 guideline states all rights are reserved and that, apart from forms and templates, no part may be reproduced or stored/transmitted without prior written permission. `RIGHTS_REVIEW_REQUIRED` and `BLOCKED_RIGHTS_REVIEW` for reproducing/adapting protected outcome text, tables, illustrations or activity materials in PacEdu. This record uses brief original paraphrases and source pointers; it does not grant a licence. Seek written permission before any reuse beyond permitted independent paraphrase.
+- **Currentness:** the guideline is the official source located for this ECE outcome structure, but it is dated 2009. `CURRENT_VERSION_CHECK_REQUIRED`; confirm whether any replacement or approved update changes the ECE framework before release. Do not treat a later policy announcement or update process as proof that a revised curriculum has been issued.
+- **Worksheet gate:** `NOT YET AUTHORISED`. Requires current ECE framework confirmation, rights review, developmentally appropriate sequencing, accessible response options, cultural review and teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
+- **Use restriction:** This record provides ECE foundation outcomes and concept prompts only. It does not establish Class 1–2 subject achievement indicators or replace the current approved primary syllabus.
