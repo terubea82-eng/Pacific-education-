@@ -395,3 +395,15 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Historical relationship:** complements earlier primary literacy/phonics materials; exact concept-by-concept lineage to current Years 1–4 final syllabuses remains pending.
 - **Status / reuse:** Official Ministry-hosted guide; edition/version date not explicit in retrieved front matter. Copyright and adaptation permissions must be checked before reproducing or adapting its text in PacEdu.
 - **Worksheet eligibility:** `SUPPLEMENTARY_ONLY` pending current prescription crosswalk, rights review and teacher review. Do not present the guide's activity sequence as a legal prescription.
+
+
+## Record 31 — Years 6 & 8 Term 3 Teacher Guide (CDU, 2015)
+
+- **Primary source:** Fiji Ministry of Education, Curriculum Development Unit, *Teachers Guide for Y6 & Y8 Teachers — Term 3*, first edition 2015; Ministry-hosted PDF: https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
+- **Authority / classification:** Official Ministry/CDU teacher guide, Ministry copyright. It is explicitly designed for lessons after the external examination (PDF p.1) and labels its content “suggested pointer for student achievement and content”. It is NOT accepted as the current controlled prescription.
+- **Important source status:** This guide contains outcome-like codes and achievement-indicator columns, but its stated post-examination, Term 3 purpose means these must be preserved as guide-sourced evidence, not treated as proof of current mandatory syllabus status.
+- **Traceable examples:** PDF pp. 3–5 includes PE 6.1.1.1a, PE 6.1.2.2a–d, PE 8.1.1.1a–b and PE 8.1.2.2a–d; pp. 6–8 includes Year 6 English EN 6.1.1 and Year 8 literary-text learning expectations; p.10 includes Constitutional/Citizenship content. Exact wording and page citations should be retained if these are later crosswalked.
+- **Indexed concepts (guide-only):** aerobic/anaerobic training, fitness and training methods, sports skills, first aid for sports injuries, text types, skimming/scanning, summarising, vocabulary, literary character/theme/setting analysis, Fiji as a republic, constitutional structures and citizenship.
+- **Historical lineage:** 2015 CDU guide; predecessor/successor syllabus lineage and current status not yet established.
+- **Rights:** Ministry copyright notice permits schools to reproduce in part or full for classroom purposes only with acknowledgement; any other use must be referred to the Permanent Secretary through the Director Curriculum Advisory Services (PDF p.i). PacEdu reuse/adaptation is therefore blocked pending written permission.
+- **Worksheet eligibility:** `BLOCKED_RIGHTS_REVIEW` for reproduction/adaptation; concept indexing only. Also requires current prescription crosswalk and teacher review.
