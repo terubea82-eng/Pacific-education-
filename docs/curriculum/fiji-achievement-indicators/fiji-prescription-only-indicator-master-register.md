@@ -456,3 +456,13 @@ Active individual prescribed indicator records remain 0 until actual approved sy
 ## ECE framework clarification — Na Noda Mataniciva (2009)
 
 The Ministry-hosted *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands* (copyright 2009) explicitly states that it outlines outcomes rather than prescribing learning content. It organises learning through Foundation Areas of Learning and Development (FALD), which inform Classes 1–2 and link to KLAs from Class 3. Therefore its outcomes may be indexed as ECE framework outcomes, but must not be relabelled as detailed content prescriptions. Source: https://www.education.gov.fj/wp-content/uploads/2022/06/Na-Noda-Mataniciva.pdf, foreword pp. iii–iv (PDF lines 73–90).
+
+
+## Record 31 — CDU Years 6 & 8 Term 3 Teacher Guide (2015)
+
+- **Source:** Ministry of Education, Curriculum Development Unit, *Teachers Guide for Y6 & Y8 Teachers — Term 3*, first edition 2015, https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
+- **Source classification:** Official Ministry teacher guide, not accepted as a current controlled prescription. Its introduction says it supports lessons after external examinations; its content tables describe suggested pointers for student achievement and content.
+- **Traceable guide references:** PE 6.1.1.1a and PE 6.1.2.2a–d (PDF pp. 3–4); PE 8.1.1.1a–b and PE 8.1.2.2a–d (pp. 4–5); English EN 6.1.1 (p.6); Year 8 literary-text expectations (pp.7–8); Constitutional/Citizenship material (p.10).
+- **Status:** Historical/guide-only pending version and prescription crosswalk. Do not activate codes as current indicators.
+- **Reuse restriction:** Ministry copyright permits reproduction for classroom purposes only with acknowledgement; other uses require referral to Permanent Secretary through Director Curriculum Advisory Services (PDF p.i). PacEdu adaptation/republication is blocked pending permission.
+- **Eligibility:** `BLOCKED_RIGHTS_REVIEW`; crosswalk and teacher review also required.
