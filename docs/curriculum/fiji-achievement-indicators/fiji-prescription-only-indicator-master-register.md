@@ -355,3 +355,17 @@ Two additional Fiji Financial Education programme sources have been indexed in t
 
 Source pages and links are recorded in `docs/curriculum/fiji-achievement-indicators/source-labelled-supplementary-concept-bank.md`. No source outcomes have been promoted into the active prescribed indicator bank. Current controlled Fiji prescription sources accepted remain 0; active prescribed indicators remain 0. Daily worksheets from the active prescription bank remain blocked. A separate supplementary worksheet may be developed only after teacher validation and reuse-rights review, with explicit supplementary labelling.
 
+
+
+## New source discoveries (12 November 2026)
+
+Four additional Fiji curriculum/teacher resources have been indexed in the supplementary concept bank, increasing the source-labelled record count from 9 to 13:
+
+- **Years 9–10 Revised Secondary English Teacher's Guide (2024, CAS-attributed):** records Achievement Standards, CLOs, Learning Objectives, formative Dry Run Tasks, summative Performance Tasks and rubrics; strands include Language, Text Types and Critical Literacy. Third-party-hosted copy; verify controlled Ministry version and current rollout before activation.
+- **Year 4 Elementary Science (revised edition 2023):** Ministry/CAS resource lead with strands covering Living Things and Environment, Matter, Energy, and Earth and Beyond. Its front matter identifies Ministry ownership and school classroom reproduction conditions; external PacEdu reuse needs permission.
+- **Year 1 Moral Values and Civic Education Teacher's Guide (2022):** Ministry/CDAU guide based on Years 1–3 syllabi; verified concept examples include right/wrong choices, fairness, teamwork, respect, chores/community care and hygiene. Confirm current syllabus/version.
+- **Teacher's Guide to Disability-Inclusive Education in Fiji (updated edition cited 2023):** official Ministry-hosted cross-curricular teaching/assessment guidance; includes formative and summative assessment practice, reasonable adjustments and consultation with learners/caregivers/teachers. This is teacher-practice guidance, not a subject indicator source.
+
+**Teacher-role implementation note:** The Ministry assessment policy requires valid/reliable and equitable assessment, explicit criteria, moderation, regular reporting to parents/guardians and use of assessment evidence to improve teaching. The Ministry disability-inclusive guide further supports planning assessment before teaching and applying reasonable adjustments. These obligations should inform PacEdu teacher workflows, but PacEdu must not claim that any single guide exhaustively states all legal teacher duties.
+
+**Current prescription status remains unchanged:** current controlled Fiji prescription sources accepted = 0; active prescribed indicators = 0. The four new records are reference/teacher-guidance records only. No supplementary concept has been promoted into the active prescribed indicator bank. Daily prescription-based worksheets remain blocked pending verification of current controlled prescriptions, version/effective date, subject-level outcomes, and reuse authority.
