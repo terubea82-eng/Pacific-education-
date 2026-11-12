@@ -4691,3 +4691,69 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - No blanket licence for reproducing the policy PDF or government article photographs/graphics was confirmed. Use original paraphrases and verify rights before copying substantial text, tables, photographs or artwork.
 - **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; verify current policy and operational structures; rights review; safeguarding/privacy review; teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+
+---
+
+## Record 168 — Fiji Global School-Based Student Health Survey 2016: adolescent health literacy, protective factors and survey-data concepts
+
+**Record status:** APPENDED — source-inspected supplementary concept extraction  
+**Concept count:** 30  
+**Classification:** All concepts are `PACEDU_DERIVED_CONCEPT`; none is an official Fiji achievement indicator, CLO or achievement standard.  
+**Curriculum status:** `LEVEL_NOT_SPECIFIED` pending mapping to approved Fiji NCF/CAS documents.  
+**Evidence date:** 2016 survey; metadata version February 2020. Historical baseline only; not current prevalence or a current health-status report.  
+**Worksheet gate:** NOT YET AUTHORISED.  
+**CAS contact:** `DEFERRED_UNTIL_PILOT`.
+
+### Sources inspected
+
+1. **Global School-Based Student Health Survey 2016 — Fiji metadata and public-use study catalogue.** World Health Organization (WHO) and US Centers for Disease Control and Prevention (CDC), Fiji study ID `FJI_2016_GSHS_v01`; metadata created 14 February 2020. https://extranet.who.int/ncdsmicrodata/index.php/catalog/656. Inspected identification, scope, questionnaire modules, geographic coverage, target population, two-stage cluster sample, response rates, weighting and data-access conditions.
+2. **Global School-based Student Health Survey — Fiji 2016 Fact Sheet.** WHO, Fiji Islands, 2016. https://cdn.who.int/media/docs/default-source/ncds/ncd-surveillance/data-reporting/fiji/gshs/gshs-fs-fiji-2016.pdf?download=true. Inspected the fact-sheet tables and their age bands, sex disaggregation, indicators, estimates and confidence intervals. The fact sheet provides selected estimates; the concepts below focus on interpretation rather than reproducing individual risk statistics.
+3. **Fiji Ministry of Health and Medical Services, “Health Ministry concerned with health status of school students,” July 2015.** https://www.health.gov.fj/health-ministry-concerned-with-health-status-of-school-students/. Inspected the ministry's description of the earlier GSHS, its nine health-risk areas and the stated use of survey evidence to inform school health services and curriculum delivery.
+4. **WHO, Global School-based Student Health Survey overview.** https://www.who.int/teams/noncommunicable-diseases/surveillance/systems-tools/global-school-based-student-health-survey. Inspected the general purpose, age group and surveillance approach. Used only to explain survey design, not to claim a Fiji-specific result.
+
+### Extracted concepts for later curriculum mapping
+
+1. **Health behaviour and protective factors:** distinguish behaviours that may increase health risks from protective factors that can support health and wellbeing. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science, Social Science. GSHS metadata, abstract and scope.
+2. **Population health evidence:** explain how population-level survey information can help public-health planners understand patterns without diagnosing any individual. `PACEDU_DERIVED_CONCEPT`; Mathematics, Science, Social Science. WHO GSHS overview and Fiji metadata.
+3. **Self-administered questionnaire:** describe a questionnaire completed by participants themselves and identify the kinds of information it can collect. `PACEDU_DERIVED_CONCEPT`; English, Mathematics, Social Science. Fiji 2016 metadata.
+4. **Survey topic modules:** identify the 2016 Fiji GSHS modules: alcohol use, dietary behaviours, drug use, hygiene, mental health, physical activity, protective factors, sexual behaviours, tobacco use, violence and unintentional injury. `PACEDU_DERIVED_CONCEPT`; Healthy Living, English, Social Science. Fiji 2016 metadata.
+5. **Age-defined survey population:** interpret the 2016 Fiji GSHS universe as school-going adolescents aged 13–17, not all children or all young people in Fiji. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Fiji 2016 metadata.
+6. **School-grade coverage:** understand that the 2016 sample was designed to represent students in grades 9–13, and that survey coverage is bounded by its sampling frame. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Fiji 2016 metadata.
+7. **National geographic coverage:** distinguish a national sample design from a census of every student, school or community. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Fiji 2016 metadata.
+8. **Two-stage cluster sampling:** describe the survey's two stages: selection of schools, then random selection of classes within selected schools. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Fiji 2016 metadata.
+9. **Probability proportional to size:** interpret the basic idea that schools with different enrolment sizes can have different selection probabilities in a probability-proportional-to-size design. `PACEDU_DERIVED_CONCEPT`; Mathematics. Fiji 2016 metadata.
+10. **Random class selection:** explain how randomly selecting classes can support a survey's representativeness within the defined sampling frame. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science.
+11. **Response rate:** calculate or interpret the proportion of invited/eligible participants who responded when the denominator is clearly defined. `PACEDU_DERIVED_CONCEPT`; Mathematics. Fiji 2016 metadata.
+12. **School, student and overall response:** distinguish school response, student response and overall response rates; do not treat them as the same measure. `PACEDU_DERIVED_CONCEPT`; Mathematics, English. Fiji 2016 metadata.
+13. **Survey weighting:** explain at an introductory level why weights may be used to account for selection probabilities, non-response adjustments and post-stratification. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies. Fiji 2016 metadata.
+14. **Point estimate:** identify a reported percentage as an estimate from a sample rather than an exact count of every young person in the country. `PACEDU_DERIVED_CONCEPT`; Mathematics. Fiji 2016 fact sheet.
+15. **Confidence interval:** interpret a confidence interval as expressing statistical uncertainty around an estimate; do not claim that a particular individual has a probability of falling inside it. `PACEDU_DERIVED_CONCEPT`; Mathematics.
+16. **Disaggregation:** explain why survey estimates may be shown separately by age group or sex and why comparisons require care about uncertainty and sample size. `PACEDU_DERIVED_CONCEPT`; Mathematics, Social Science. Fiji 2016 fact sheet.
+17. **Missing or unavailable estimates:** recognise that an asterisk or unavailable value is not zero and should not be replaced with an invented figure. `PACEDU_DERIVED_CONCEPT`; Mathematics, Computer Studies. Fiji 2016 fact sheet.
+18. **Time-bound survey questions:** explain that some survey questions refer to a defined recall period, such as the previous 30 days, and that this is not the same as lifetime experience. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Social Science. Fiji 2016 fact sheet.
+19. **Dietary behaviour literacy:** identify food and drink patterns as a survey topic and interpret frequency questions without judging a participant's body size or personal circumstances. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Mathematics.
+20. **Physical activity literacy:** explain physical activity as one dimension of adolescent health behaviour and distinguish survey reporting from a fitness test or diagnosis. `PACEDU_DERIVED_CONCEPT`; PE, Healthy Living.
+21. **Hygiene behaviour literacy:** recognise hygiene as a survey topic and distinguish self-reported behaviour from direct observation or proof of facility access. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science.
+22. **Mental health literacy:** recognise mental health and wellbeing as public-health topics that require respectful, non-stigmatising language and appropriate adult support. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science.
+23. **Violence and unintentional injury prevention:** identify safety, violence prevention and injury prevention as public-health learning areas; use fictional, non-graphic examples and safeguarding-sensitive discussion. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science.
+24. **Substance-use prevention literacy:** understand that public-health surveys monitor alcohol, tobacco and other drug-related behaviours; focus learning on safety, prevention, refusal skills and help-seeking rather than substance-use details. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science.
+25. **Sexual-health topic sensitivity:** recognise that sexual behaviours and HIV-related knowledge appear in adolescent health surveillance, but any teaching must follow approved age-appropriate Fiji curriculum and safeguarding requirements. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Science.
+26. **Protective factors and support networks:** identify that supportive relationships and protective environments can be relevant to adolescent wellbeing; use general, non-intrusive examples. `PACEDU_DERIVED_CONCEPT`; Healthy Living, Social Science.
+27. **Multifactorial health behaviour:** explain that health behaviours can be influenced by several interacting factors and that a single-cause explanation is often inadequate. `PACEDU_DERIVED_CONCEPT`; Science, Social Science.
+28. **Evidence-informed curriculum improvement:** explain how survey findings may help health and education authorities identify topics where health education and school support could be strengthened. `PACEDU_DERIVED_CONCEPT`; English, Social Science.
+29. **Data governance and permitted use:** recognise that access to public-use survey microdata is subject to stated acknowledgement, publication-sharing and non-commercial, not-for-profit public-health conditions. `PACEDU_DERIVED_CONCEPT`; Digital Literacy, Social Science, English. Fiji 2016 metadata.
+30. **Historical comparison and source currency:** compare survey years only after checking whether methods, target ages, questionnaires, sampling frames and indicators are sufficiently comparable; never describe 2016 values as current 2026 prevalence. `PACEDU_DERIVED_CONCEPT`; Mathematics, English, Computer Studies.
+
+### Evidence and interpretation controls
+
+- The WHO catalogue identifies the Fiji 2016 GSHS as the third Fiji GSHS, with a national school-based sample of school-going adolescents aged 13–17 and grades 9–13. The metadata reports school response of 97%, student response of 81% and overall response of 79%; these describe participation in that 2016 survey only.
+- The 2016 questionnaire included ten modules listed above. The 2015 Fiji Ministry advisory describes nine broad health-risk areas for the earlier survey communication; do not collapse the 2015 summary and 2016 module list into a single identical instrument.
+- The 2016 fact sheet includes selected estimates by age band and sex, with confidence intervals and some unavailable cells. Any future classroom graph must retain the survey year, population, denominator, age band, sex category, unit, uncertainty interval and unavailable-value notation.
+- The survey is a historical baseline. WHO's Fiji surveillance page separately lists the 2016 GSHS and 2024–2025 STEPS activity; STEPS is a different surveillance survey and must not be mistaken for a new GSHS result. Check for a newer Fiji GSHS before making claims about present adolescent behaviour.
+- The GSHS data catalogue states public-use access conditions including acknowledgement, sharing planned publications with WHO before publication, offering co-authorship to the survey coordinator for publications using the data, and non-commercial, not-for-profit public-health use. PacEdu must not use the microdata for commercial worksheet generation or commercial analysis unless explicit permission and licensing terms authorise it. This record relies on metadata and public fact-sheet descriptions, not a download or reuse of microdata.
+- Never ask PacEdu learners to disclose alcohol, drug, tobacco, sexual behaviour, violence, injury, mental-health or other sensitive personal experiences. Do not build individual risk scores, diagnostic classifications or public class comparisons from learner responses.
+- Do not reproduce sensitive survey questions in learner materials without age, safeguarding, curriculum and rights review. Use fictional, aggregate examples and focus on health literacy, prevention, critical reading of statistics and help-seeking.
+- No clinical screening, diagnosis, treatment, substance-use investigation, sexual-health disclosure or violence investigation is authorised for teachers or learners through these concepts. Refer real concerns to authorised safeguarding and health professionals.
+- **Worksheet gate:** NOT YET AUTHORISED. Required: approved Fiji NCF/CAS mapping; age/level and prerequisite assignment; check for newer Fiji GSHS and current health guidance; confirm rights and non-commercial microdata restrictions; safeguarding/privacy review; teacher review.
+- **CAS contact:** `DEFERRED_UNTIL_PILOT`.
