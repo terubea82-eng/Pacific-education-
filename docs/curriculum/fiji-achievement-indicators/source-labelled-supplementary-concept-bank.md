@@ -1584,3 +1584,41 @@ These are not subject content indicators and do not replace a prescription's own
 - Sharma's description of 1994 primary statistics emphasis is SUPPLEMENTARY_ONLY; the original 1994 prescription remains PENDING_SOURCE_REVIEW.
 - No class/year allocation, mandatory status or daily worksheet is authorised by this extraction. Do not promote any entry to PRESCRIPTION_VERIFIED until the current controlled Fiji prescription is inspected and exact wording, page, edition, approval/effective date and older-source lineage are recorded.
 - **Sources:** USP Numeracy Resource Repository: https://www.usp.ac.fj/usp-stemp/nrr/ ; Dayal, Teachers' perceptions of teaching mathematics at the senior secondary level in Fiji: https://repository.usp.ac.fj/id/eprint/7805/1/Teachers_perceptions_of_teaching_mathematics_at_the_senior_secondary_level_in_Fiji.pdf ; Sharma (2006), How Do Pasifika Students Reason About Probability? Some Findings From Fiji: https://researchcommons.waikato.ac.nz/server/api/core/bitstreams/ec27b07f-b02a-460a-b317-817cfee98f49/content .
+
+## Record 125 — Mandatory extraction standard for the PacEdu daily-activity concept bank
+
+**Requirement:** Every usable curriculum resource must be examined for its actual educational content. Source-history notes alone do not satisfy this requirement. The purpose of this register is to supply traceable content for daily teaching and learning activities.
+
+### Required extraction fields for every entry
+- Subject and curriculum area.
+- Class/year/form and learner level exactly as stated by the source; if not stated, mark LEVEL_NOT_SPECIFIED rather than guessing.
+- Strand, sub-strand, topic or unit exactly as the source names it.
+- Exact achievement indicator, learning outcome, concept, skill, knowledge item or assessment criterion, preserving the source wording where rights permit.
+- Content type: ACHIEVEMENT_INDICATOR; CONCEPT; SKILL; KNOWLEDGE; LEARNING_OUTCOME; ASSESSMENT_CRITERION; or PEDAGOGY.
+- Source title, issuing body/author, edition/year, version/status, printed page/section and stable URL or file reference.
+- Older source lineage for the same concept/indicator, with exact source and page; if not found, record LINEAGE_NOT_YET_FOUND and continue research.
+- PacEdu plain-language interpretation and observable learner evidence, clearly distinguished from source wording.
+- Candidate daily-activity link: worked example, guided practice, independent practice, application/context, assessment evidence and prerequisite knowledge. These are planning fields, not new official indicators.
+- Status: PRESCRIPTION_VERIFIED; SUPPLEMENTARY_ONLY; PENDING_SOURCE_REVIEW; or BLOCKED_RIGHTS_REVIEW. Teacher review remains PENDING_TEACHER_REVIEW where applicable.
+- Rights/reuse condition and any restriction on copying, adapting, translating or commercial use.
+
+### Extraction rules
+- Read the actual source pages, not only its title, catalogue entry, bibliography, search snippet or a secondary author's summary.
+- Extract all relevant concepts/indicators in the source section, not just a short historical description. Keep one concept/indicator per entry so it can be sequenced and used independently.
+- Preserve exact official indicator wording and source locator. Do not silently rewrite it. Put PacEdu explanation in a separate field.
+- Do not manufacture a year/class allocation from a cross-level resource. Mark it LEVEL_NOT_SPECIFIED until a Fiji scope-and-sequence or prescription provides the allocation.
+- Where two sources disagree, keep both source records and flag the discrepancy; do not merge or choose one without approval/status evidence.
+- Map each current indicator to its older lineage before daily worksheets are generated, as requested. A lineage match supports provenance but does not itself establish current mandatory status.
+- Supplementary concepts can inform separate supplementary activities after source and rights review; they must never be labelled mandatory Ministry indicators.
+- A daily activity may be generated only from an extracted, traceable concept/indicator with an identified class/year and appropriate rights status. Mandatory curriculum activities require PRESCRIPTION_VERIFIED source content.
+
+### Current extraction queue
+1. Fiji Ministry/CAS controlled prescriptions and scope-and-sequence documents, beginning with Years 1–4 English and Mathematics revised curriculum, then Years 5–8 and secondary subjects. The Ministry's 2022–23 annual report states that 648 final syllabus and Literacy/Numeracy Guide copies for Years 1–4 were supplied to primary schools, while 250 draft copies were supplied to 90 trial schools. This establishes a high-priority document set to retrieve; it does not itself disclose their indicator wording.
+2. Older Fiji prescriptions and syllabi for each subject/class to identify the source lineage for every extracted current indicator.
+3. Fiji Ministry teacher guides and textbooks: extract concepts, examples, teaching sequence and assessment support as supplementary teaching resources, not as substitutes for the prescription.
+4. Regional and international resources such as USP NRR: extract concepts and possible teaching approaches, mark level carefully, and check licence terms before PacEdu adaptation or commercial use.
+
+### Record 124 content use
+The Number/Operations, Patterns/Algebra, Measurement/Shape, Data/Statistics/Probability and mathematical-thinking entries in Record 124 are cross-level supplementary concept candidates from USP NRR and Fiji historical research. They are not yet assigned to Fiji classes or marked mandatory. The next work is to inspect source modules/pages and match each candidate to the relevant Fiji controlled prescription and older lineage before preparing class-specific daily activities.
+
+**Sources:** Fiji Ministry of Education and Heritage Arts, Annual Report 2022–2023, section “The Revised Curriculum,” reporting final Years 1–4 syllabi and Literacy/Numeracy Guides supplied to schools and draft trial copies: https://www.parliament.gov.fj/wp-content/uploads/2025/04/Ministry-of-Education-Annual-Report-2022%E2%80%932023.pdf ; USP Numeracy Resource Repository, scope, content, cognitive components, blocks and licence notice: https://www.usp.ac.fj/usp-stemp/nrr/ .
