@@ -1513,3 +1513,74 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Retrieval status:** the 1994 and 1996 originals remain uninspected. Obtain controlled copies and verify title pages, edition, class-level progression, exact wording, approval/effective dates and reuse rights before any indicator is promoted. Preserve the 1994 and 1996 records as separate documents until comparison establishes their relationship.
 - **Sources:** Sharma, S. (2006), *Waikato Journal of Education* 12, “How Do Pasifika Students Reason About Probability? Some Findings From Fiji,” especially pp. 88–89: https://researchcommons.waikato.ac.nz/server/api/core/bitstreams/ec27b07f-b02a-460a-b317-817cfee98f49/content ; Prasad, R. (2017), “Trainee Teachers’ Feedback and Reflection on Math Lesson Study,” *International Journal of Advanced Research* 5(12), 237–242, especially bibliography p. 242 and lesson-study discussion: https://www.journalijar.com/uploads/934_579_IJAR-20937.pdf .
 - **Classification:** 1994 prescription content remains PENDING_SOURCE_REVIEW pending original; secondary description of primary statistics emphasis SUPPLEMENTARY_ONLY; Form 4 probability placement historical context SUPPLEMENTARY_ONLY; 1996 Classes 1–6 prescription PENDING_SOURCE_REVIEW; 2017 lesson-study pedagogy SUPPLEMENTARY_ONLY; no indicator promoted to PRESCRIPTION_VERIFIED; no worksheet created; CAS contact DEFERRED_UNTIL_PILOT.
+
+## Record 124 — Extracted Mathematics concept entries for the teaching bank: number, operations, patterns, measurement, shape, data and statistical reasoning
+
+**Purpose:** Content extraction, not source history. Entries below are usable concept-bank candidates. They are NOT verbatim Ministry achievement indicators. Observable statements are PacEdu working indicators derived from cited concepts and remain supplementary until matched to an approved current prescription.
+
+### A. Number and operation sense — USP Numeracy Resource Repository
+**Source concepts:** counting and number systems; number line and types of numbers; relative size and multiple representations; place value; decimal notation; addition and subtraction; meanings of numerical operations; prime, even, odd, square and cube numbers; ratios, proportions and percentages; computation and estimation; relationships between numbers.
+**PacEdu working indicator candidates (derived, not verbatim):**
+- Represent a number in more than one way and explain how the representations show the same value.
+- Locate and compare numbers using a number line or another suitable representation.
+- Use place value to explain the value of digits in a numeral.
+- Select and carry out an appropriate operation for a stated problem, and explain what the operation means in that context.
+- Estimate an answer before calculating and use the estimate to check whether the result is reasonable.
+- Identify and describe number relationships, including even/odd, prime, square and cube numbers where appropriate to verified year-level scope.
+- Represent and use ratios, proportions and percentages in a context when the verified year-level scope requires them.
+**Locator:** USP Numeracy Resource Repository, Content and Blocks, lines 44–57 and 112–140. This is a developing regional resource, not a Fiji primary year-by-year prescription.
+
+### B. Patterns, relationships, functions and algebra — USP Numeracy Resource Repository
+**Source concepts:** patterns; relationships; functions; representing mathematical situations and structures with algebraic symbols; mathematical models for quantitative relationships; analysing change; introduction to algebra; algebraic operations; deriving algebraic representations; solving algebraic equations; rates and linearity; graphs and functions; linear versus non-linear relationships; intersections and simultaneous equations.
+**PacEdu working indicator candidates (derived, not verbatim):**
+- Identify, continue and describe a pattern using words, numbers, diagrams or symbols.
+- Explain a relationship between quantities using a table, diagram, graph or symbolic representation.
+- Use a symbol to represent an unknown quantity in a mathematical situation.
+- Construct or interpret a mathematical model to represent a quantitative relationship.
+- Describe how a quantity changes when another quantity changes.
+**Locator:** USP Numeracy Resource Repository, lines 52–57 and 142–173. The repository includes advanced algebra; do not assign those topics to primary classes without year-level prescription evidence.
+
+### C. Measurement and shape — USP Numeracy Resource Repository
+**Source concepts:** direct measurement with standard units; estimating length using reference points; indirect measurement; proportionality of similar figures; Pythagorean theorem and trigonometric ratios; units and measured quantities; angles and lines; parallel and perpendicular lines; vertical and complementary angles; classifying shapes by sides or angles; perimeter, area and volume and the relationship of their formulae to length, width, height and radius.
+**PacEdu working indicator candidates (derived, not verbatim):**
+- Choose an appropriate measuring tool and standard unit for a given quantity.
+- Estimate a measurement, measure it, and compare the estimate with the measured result.
+- Classify shapes by observable properties such as number of sides and angles.
+- Identify and describe lines and angle relationships when included in the verified year-level scope.
+- Explain what perimeter, area or volume measures and identify the dimensions needed to calculate it.
+- Use a scale or proportional relationship to solve a measurement problem when included in the verified year-level scope.
+**Locator:** USP Numeracy Resource Repository, lines 59–64 and 175–188. The examples include secondary-level content; do not move it into primary worksheets without year-level evidence.
+
+### D. Data, statistics and probability — USP NRR and 1994 prescription research reference
+**Source concepts explicitly listed by USP:** collecting, organising and displaying data; selecting an appropriate chart or graph for the data and intended message; analysing and interpreting data; understanding how changes in a data set affect mean and median; chance and probability from impossible (0) to certain (1).
+**Fiji-specific historical evidence:** Sharma (2006) states that Fiji's 1994 primary Mathematics prescription gave greater emphasis to statistics at primary level. The same paper describes probability as introduced at Form 4 in that historical curriculum context. This is not the original prescription's detailed wording and does not establish current placement.
+**PacEdu working indicator candidates (derived, not verbatim):**
+- Collect and record data relevant to a stated question.
+- Organise data in a suitable table or display.
+- Select a chart or graph that appropriately represents the data and explain the choice.
+- Read a data display and state what it shows using evidence from the data.
+- Compare data sets and describe how a change may affect a measure such as mean or median, only at a verified level where those measures are taught.
+- Discuss chance using appropriate language and distinguish impossible from certain events only where the current year-level prescription includes probability.
+**Locators:** USP Numeracy Resource Repository, lines 65–70; Sharma (2006), Waikato Journal of Education 12, pp. 88–89, lines 29–37. The 1994 prescription itself remains unavailable for direct extraction.
+
+### E. Historical arithmetic concept bank — Dayal, Fiji mathematics education paper
+**Source concepts reported for pre-1970 Fiji mathematics:** numbers; calculations with numbers; fractions; decimals; time; linear measure; money; ratio; proportions; averages; percentages.
+**PacEdu use:** retain as historical concept-lineage prompts and search terms for locating older prescription pages. These are not class-level indicators and must not be presented as current or mandatory.
+**Locator:** Dayal, USP paper, lines 48–56.
+
+### F. Cross-cutting mathematical thinking — USP NRR
+The repository names conceptual understanding, adaptive reasoning, strategic competence, procedural fluency and productive disposition. Use these only as supplementary planning/evidence lenses:
+- Conceptual understanding: learner explains the meaning and relationship behind an idea, not only a procedure.
+- Adaptive reasoning: learner gives a logical reason for choosing or applying a method.
+- Strategic competence: learner represents a problem and develops a way to solve it.
+- Procedural fluency: learner selects an efficient method, calculates accurately and checks reasonableness, including estimation or mental methods where suitable.
+- Productive disposition: learner shows willingness to engage, persist and make sense of mathematical tasks.
+These are not subject content indicators and do not replace a prescription's own assessment criteria. Locator: USP NRR, lines 72–89.
+
+### Extraction and status rules
+- All PacEdu working indicator candidates above are paraphrases created for the concept bank, not quotations from Fiji prescriptions.
+- USP NRR content is SUPPLEMENTARY_ONLY; it is a regional, evolving resource whose topics span multiple levels. Its page says open-access numeracy modules use a Creative Commons licence but are not for commercial use; PacEdu commercial reuse/adaptation remains BLOCKED_RIGHTS_REVIEW pending licence compatibility and permission review.
+- Dayal's pre-1970 arithmetic list is SUPPLEMENTARY_ONLY and historical.
+- Sharma's description of 1994 primary statistics emphasis is SUPPLEMENTARY_ONLY; the original 1994 prescription remains PENDING_SOURCE_REVIEW.
+- No class/year allocation, mandatory status or daily worksheet is authorised by this extraction. Do not promote any entry to PRESCRIPTION_VERIFIED until the current controlled Fiji prescription is inspected and exact wording, page, edition, approval/effective date and older-source lineage are recorded.
+- **Sources:** USP Numeracy Resource Repository: https://www.usp.ac.fj/usp-stemp/nrr/ ; Dayal, Teachers' perceptions of teaching mathematics at the senior secondary level in Fiji: https://repository.usp.ac.fj/id/eprint/7805/1/Teachers_perceptions_of_teaching_mathematics_at_the_senior_secondary_level_in_Fiji.pdf ; Sharma (2006), How Do Pasifika Students Reason About Probability? Some Findings From Fiji: https://researchcommons.waikato.ac.nz/server/api/core/bitstreams/ec27b07f-b02a-460a-b317-817cfee98f49/content .
