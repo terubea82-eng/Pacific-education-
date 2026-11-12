@@ -417,3 +417,13 @@ A worksheet must never be generated from an untraceable concept. The source-line
 - **Senior Mathematics:** p.52 reports a Year 11 pilot of “Life Skills Mathematics” in 21 schools and contrasts it with the then-current “Applied Mathematics” curriculum. Do not assume these labels are identical to later Life Mathematics and Pure Mathematics pathways; verify the approved syllabus, change history and effective date.
 - **Status:** Official historical implementation evidence; no indicator activation.
 - **Worksheet eligibility:** `PENDING_SOURCE_REVIEW` as a source-location lead only; no worksheet may be generated from this annual report.
+
+
+## Record 33 — Policy on Free Educational Resources (2015; Ministry-hosted)
+
+- **Source:** Ministry of Education, Heritage & Arts, *Policy on Free Educational Resources*, approved 1 December 2015; https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+- **Classification:** Official resource-use policy, not a curriculum prescription or achievement-indicator source.
+- **Authority and scope:** The policy defines Ministry free educational resources to include textbooks, supplementary notes, manuals, teacher guides, pupil workbooks, syllabi, examination papers and solutions (p.4). It states these resources remain Ministry property under school custody and are for learning/teaching purposes (p.4).
+- **Important access and reuse rules:** Students may take textbooks, supplementary notes and workbooks home for revision, and may download electronic copies from the Ministry website (p.5). School reproduction requires Permanent Secretary approval for teaching and learning (p.5). This policy is not blanket permission for PacEdu to copy, adapt, redistribute or commercialise Ministry resources.
+- **Mathematics discovery lead:** Appendix A's 2016 inventory lists “Mathematics Year 1” and “Mathematics Year 2” as Ministry-supplied resources (pp.7–8). These entries help locate original books but do not prove current syllabus status or expose achievement indicator wording.
+- **Worksheet eligibility:** `PENDING_SOURCE_REVIEW`; source discovery only. Obtain rights clearance before reproducing or adapting Ministry content.
