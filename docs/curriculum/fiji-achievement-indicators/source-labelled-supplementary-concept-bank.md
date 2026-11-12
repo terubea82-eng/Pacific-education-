@@ -6033,3 +6033,57 @@ These reinforcement concepts are supplementary to the 32 numbered entries and ar
 - **Worksheet gate:** `NOT YET AUTHORISED`; requires current curriculum mapping, current financial facts, rights clearance, accessible age-appropriate design, prerequisite mapping and teacher review.
 - **CAS contact:** `DEFERRED_UNTIL_PILOT`. No contact initiated.
 - **Use restriction:** These are FinED framework outcomes only. Do not label them as general Ministry subject achievement indicators or use the Class 5–6 progression as a substitute for the separately verified Class 7–8 record.
+
+
+## Record 190 — Fiji Year 1 English: Language, Literacy and Communication — oral language, phonics, early reading and functional language concepts
+
+- **Source:** Fiji Ministry of Education, Heritage and Arts, Curriculum Development Unit, *Year 1 English — Language, Literacy and Communication*, 2013; revised 2019; reprinted 2020. The accessible copy is hosted by FlipHTML5 and identifies the Ministry/Curriculum Development Unit as issuer and copyright owner.
+- **Source URL:** https://fliphtml5.com/gjgbb/miwv/Year_1_English_-_Language%2C_Literacy_and_Communication/
+- **Source locations:** printed pp. 5–20 (Units 1–4: self-introduction, friends, school, getting ready for school); pp. 25–40 (Units 5–7: rainy-day vocabulary, oral discussion, phonics and family-help vocabulary); pp. 41–54 (Unit 8 and phonics sequence); pp. 55–68 (phonics consolidation, short reading passages, family/everyday routines, colour and descriptive language).
+- **Source type and classification:** Fiji Ministry primary English resource book. The book presents lesson content and practice tasks rather than a clearly labelled achievement-indicator list. Entries below are FIJI_PRIMARY_TEXT_CONCEPT and PacEdu-derived observable-evidence prompts, not official achievement indicators. They require cross-mapping to the current approved Year 1 English syllabus before curriculum sign-off.
+- **Concepts extracted and paraphrased:
+  1. **Oral self-introduction:** communicate basic personal information and describe a familiar feature using a simple sentence.
+  2. **Question-and-answer conversation:** listen to a familiar question and give a relevant spoken response.
+  3. **Descriptive vocabulary:** use words for colours, clothing and visible features to describe familiar objects or people respectfully.
+  4. **Listening for details:** listen to a short description and identify details such as clothing or a stated feature.
+  5. **Alphabet knowledge:** recognise and form taught upper- and lower-case letter shapes.
+  6. **Letter–sound correspondence:** connect a taught letter with its associated speech sound.
+  7. **Initial phoneme awareness:** identify the beginning sound in a familiar spoken word and match it to a letter or sound card.
+  8. **Vowel and common letter-sound patterns:** notice and practise taught vowel sounds and selected common sound patterns in familiar words.
+  9. **Medial and final sound awareness:** listen for and identify a target sound in the middle or at the end of a spoken word.
+  10. **Blending:** combine taught sound units to read a short, familiar word.
+  11. **Segmenting:** separate a short spoken word into its taught sound parts with appropriate scaffolding.
+  12. **Word recognition:** read familiar, repeatedly encountered words in a short, supported text.
+  13. **Vocabulary in context:** connect a familiar spoken or written word with its meaning, picture or classroom object.
+  14. **Early sentence reading:** read a short, simple sentence and connect it with a matching picture or meaning.
+  15. **Sequencing familiar routines:** understand and use simple sequence words when describing a familiar daily routine.
+  16. **Functional school vocabulary:** recognise and use words connected with school clothing, personal preparation and familiar classroom life.
+  17. **Weather vocabulary and discussion:** describe observable rainy-day conditions and identify suitable clothing or items using familiar language.
+  18. **Picture-supported comprehension:** observe a picture, identify people or actions, and answer simple questions about what is shown.
+  19. **Reading-to-drawing response:** show understanding of a short, accessible text by drawing or selecting a representation of its meaning.
+  20. **Family and community vocabulary:** identify and describe relationships and familiar shared activities without assuming every learner has the same family structure or living arrangement.
+  21. **Everyday action vocabulary:** understand and use verbs for familiar tasks and helpful actions.
+  22. **Colour and attribute words:** follow a short written or spoken instruction using colour and object vocabulary.
+  23. **Comparative descriptive language:** understand simple attribute comparisons such as longer, taller and bigger in context.
+  24. **Alphabetic order:** recognise and sequence letters in the alphabet with support.
+  25. **Oral recitation and rhythm:** listen to, recite and discuss short age-appropriate rhythmic language, with alternative participation modes.
+- **PacEdu-derived observable evidence prompts (not official wording):**
+  1. Learner introduces themself or communicates a chosen personal fact using speech, sign, AAC, pointing or another accessible mode.
+  2. Learner responds to a simple question about a familiar picture or topic.
+  3. Learner matches a taught grapheme to its sound using an accessible response method.
+  4. Learner identifies the initial sound in a teacher-selected familiar word.
+  5. Learner blends a small set of taught sounds to read a decodable word.
+  6. Learner identifies a target sound at the beginning, middle or end of a familiar word when that pattern has been taught.
+  7. Learner recognises a familiar word in a short supported sentence.
+  8. Learner sequences two or more illustrated steps from a familiar routine and describes the order.
+  9. Learner answers a literal question about a short read-aloud or picture-supported text.
+  10. Learner follows a short instruction containing familiar vocabulary and one or more descriptive attributes.
+- **Subject mapping:** English — Language, Literacy and Communication; early oral language, listening, phonological awareness, phonics, vocabulary, emergent reading and simple comprehension. Weather, routines, family and school are contexts for language learning here, not independent Science, Health or Social Science outcomes.
+- **Level mapping:** Year 1 only, based on the title and resource sequence. Do not automatically transfer this entry to Year 2 or Classes 1–2 as a whole. Year 2 requires its own source and syllabus cross-check.
+- **Prerequisite and progression notes:** begin with listening, oral vocabulary, sound discrimination and recognition of a small taught set of letters; introduce blending and short-word reading only after the relevant letter–sound knowledge is taught and evidenced. Do not enforce the book's letter sequence as a universal sequence without checking the approved scope and sequence and learners' language backgrounds.
+- **Inclusion and assessment safeguards:** accept accessible communication and response modes; do not treat speech, handwriting, colour naming or picture recognition as the only valid evidence of understanding. Use clear uncluttered prompts, explicit repeated sound teaching and learner-paced progression. Do not diagnose dyslexia or any disability from these activities. Do not require disclosure of age, family structure, religion, ethnicity or personal circumstances; use fictional or optional examples where appropriate.
+- **Rights:** the book states copyright 2013, Curriculum Development Unit, Ministry of Education, Heritage and Arts, Fiji. It permits schools to reproduce the resource in part or full for classroom purposes with CAS copyright acknowledgement; other uses must be referred to the Senior Education Officer English Primary at CAS. PacEdu is a separate digital product and commercial/redistribution permission is not established by the school-use statement. RIGHTS_REVIEW_REQUIRED; do not copy pages, worksheets, illustrations, poems, activity layouts or extended text. This record uses brief independently paraphrased concepts and source pointers only. No CAS contact initiated.
+- **Currentness:** the accessible edition is revised 2019 and reprinted 2020. CURRENT_VERSION_CHECK_REQUIRED; verify whether a later approved Year 1 English syllabus/resource supersedes or modifies this sequence before release.
+- **Worksheet gate:** NOT YET AUTHORISED; requires current syllabus mapping, rights clearance, accessibility review, sound/letter progression validation, and teacher review.
+- **CAS contact:** DEFERRED_UNTIL_PILOT. No contact initiated.
+- **Use restriction:** supplementary Year 1 English concept bank only. It is not a substitute for the official achievement indicators/CLOs or a verified syllabus scope-and-sequence. Do not turn the source's practice pages directly into PacEdu worksheets.
