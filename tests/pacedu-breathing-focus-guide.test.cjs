@@ -1,12 +1,14 @@
 const { test, expect } = require("@playwright/test");
 
 const baseURL = process.env.PACEDU_TEST_URL || "http://127.0.0.1:4173/src/index.html";
+const registrationURL = new URL(baseURL);
+registrationURL.searchParams.set("entry", "registration");
 
 test("breathing guide activates for a sequential teacher workspace and final sign-out", async ({ page }) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded", timeout: 60000 });
+  await page.goto(registrationURL.toString(), { waitUntil: "domcontentloaded", timeout: 60000 });
   await expect.poll(() => page.evaluate(() => window.PacificEducationBreathingFocusGuide?.version), { timeout: 8000 }).toBe("1.2.0-mandatory-fields");
 
   await page.evaluate(() => {
@@ -75,7 +77,7 @@ test("breathing guide activates for a sequential teacher workspace and final sig
 
 test("mandatory fields block the green Next cue while optional fields do not", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(baseURL + "?entry=registration", { waitUntil: "domcontentloaded", timeout: 60000 });
+  await page.goto(registrationURL.toString(), { waitUntil: "domcontentloaded", timeout: 60000 });
   await expect.poll(() => page.evaluate(() => window.PacificEducationBreathingFocusGuide?.version), { timeout: 8000 }).toBe("1.2.0-mandatory-fields");
   await page.evaluate(() => {
     try {

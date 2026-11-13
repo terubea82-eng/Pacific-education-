@@ -15,6 +15,19 @@
   } catch (error) {}
 })();
 </script>
+<script>
+/* The public journey begins on the separate Page 1 business-advertising screen.
+   Explicit entry routes (welcome/registration) and deep links remain available. */
+(function(){
+  try{
+    var params=new URLSearchParams(window.location.search);
+    var entry=params.get("entry")||"";
+    if(entry!=="welcome" && entry!=="registration" && !window.location.hash){
+      window.location.replace("./business-advertising.html");
+    }
+  }catch(error){}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -43,11 +56,11 @@ html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="
   display: none !important;
   visibility: hidden !important;
 }
-html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main > :not(#pacificEducationIdentityRegistration) {
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main :not(#pacificEducationIdentityRegistration):not(:has(#pacificEducationIdentityRegistration)) {
   display: none !important;
   visibility: hidden !important;
 }
-html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main > #pacificEducationIdentityRegistration {
+html:not([data-pacedu-navigation-ready="true"])[data-pacedu-registration-entry="true"] body > main #pacificEducationIdentityRegistration {
   display: block !important;
   visibility: visible !important;
 }
@@ -755,7 +768,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       welcomeNext.addEventListener("click", function(event) {
         event.preventDefault();
         event.stopImmediatePropagation();
-        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(2);}else{openEntryPage(2);}
+        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(3);}else{openEntryPage(3);}
       }, true);
     }
     if (visionNext && visionNext.getAttribute("data-pe-early-next-bound") !== "true") {
@@ -794,7 +807,7 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
       if (node.id === "welcomeNextButton") {
         event.preventDefault();
         event.stopImmediatePropagation();
-        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(2);}else{openEntryPage(2);}
+        var navigation=window.PacificEducationSingleNavigation;if(navigation&&typeof navigation.gateway==="function"){navigation.gateway(3);}else{openEntryPage(3);}
         return;
       }
       if (node.id === "paceduVisionNext") {
@@ -888,6 +901,11 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 <p>Pacedu is designed to connect learning, daily activities, practice, assessment, progress and education support in one step-by-step platform.</p>
 <p>Its purpose is to help make meaningful education more accessible across Pacific communities, support teachers and families, and help learners continue learning even when circumstances or connectivity are difficult.</p>
 </section>
+<section id="paceduWelcomeCountryLanguage" class="pacedu-entry-card" aria-label="Choose your country and preferred language" style="margin:18px 0 0;padding:16px;border:2px solid #174f63;border-radius:14px;background:#fff;">
+<h2>🌍 Your Country and Language</h2>
+<p>Choose your country and preferred language before continuing. These choices guide registration; automatic translation is not claimed as active.</p>
+<div id="paceduWelcomeCountryLanguageChoices" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;"></div>
+</section>
 <div id="pacificEducationWelcomeVoice" aria-live="polite">
 <p><strong>Voice welcome:</strong> Hear the introduction, use AI Playback, or say <strong>Next</strong> to continue.</p>
 <button type="button" id="pacificEducationAIPlaybackButton" aria-label="Play single-narrator AI Playback about Pacific Education" style="background:#000;color:#fff;border:2px solid #000;border-radius:8px;font-weight:700;padding:12px 16px;">▶️ AI Playback — Pacific Education</button>
@@ -897,8 +915,97 @@ body.pe-pilot-all-features #pacificEducationAppMenu {
 <p><a href="./device-test.html" id="pacificEducationDeviceTestLink">📱 Test this phone or computer speaker and browser</a></p>
 </div>
 </div>
-<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="welcomeNextButton" class="pacific-mandatory-next pacedu-real-next" aria-label="Next: Pacific Education Vision, Mission and Purpose">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Say Next</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
+<div id="welcomeNextWrapper" class="pacific-flow-next"><button type="button" id="paceduWelcomeBack" class="pacedu-real-back" aria-label="Back to Business and Product Advertising">⬅️ Back to Business Page</button><button type="button" id="welcomeNextButton" class="pacific-mandatory-next pacedu-real-next" aria-label="Next: Workspaces and rules">➡️ Next</button><button type="button" class="pe-audio-command" data-audio-command-for="welcomeNextButton" aria-label="Audio command for Next">🎙️ Say Next</button><span class="pe-audio-command-status" data-audio-status-for="welcomeNextButton" role="status" aria-live="polite">Ready</span></div>
 </section>
+<script>
+/* Reuse the existing country/language controls on Page 2; do not duplicate IDs
+   or create a second registration selector. Run before navigation initializes. */
+(function(){
+  function moveChoices(){
+    var source=document.querySelector("#paceduPageVision .pacedu-entry-grid");
+    var target=document.getElementById("paceduWelcomeCountryLanguageChoices");
+    if(!source||!target||target.getAttribute("data-ready")==="true") return;
+    var sections=source.querySelectorAll(":scope > section");
+    if(sections.length<2) return;
+    target.appendChild(sections[0]);
+    target.appendChild(sections[1]);
+    target.setAttribute("data-ready","true");
+    var welcomeCountry=document.getElementById("paceduWelcomeCountry");
+    var welcomeLanguage=document.getElementById("paceduWelcomeLanguage");
+    var registrationCountry=document.getElementById("pacificEducationCountrySelect");
+    var registrationLanguage=document.getElementById("pacificEducationLanguageSelect");
+    var countryCodes={
+      "Fiji":"FJ","Papua New Guinea":"PG","Solomon Islands":"SB","Vanuatu":"VU",
+      "Samoa":"WS","Tonga":"TO","Tuvalu":"TV","Kiribati":"KI",
+      "Australia":"AU","New Zealand":"NZ","France":"OTHER",
+      "United Kingdom":"OTHER","United States":"OTHER","India":"OTHER","Other":"OTHER"
+    };
+    var languageCodes={
+      "English":"en-AU","Vosa Vakaviti / iTaukei":"fj","Hindi":"hi","Urdu":"ur",
+      "French":"fr","Fijian Hindi":"hi","Tok Pisin":"tpi","Hiri Motu":"ho",
+      "Bislama":"bi","Samoan":"sm","Tongan":"to","Tuvaluan":"tvl",
+      "Kiribati / Gilbertese":"gil","Other language":"other",
+      "Mandarin Chinese":"other","Arabic":"other","Spanish":"other"
+    };
+    function syncWelcomeCountry(){
+      if(!welcomeCountry||!welcomeCountry.value)return;
+      var countryName=welcomeCountry.value.split("|")[0];
+      var code=countryCodes[countryName]||"OTHER";
+      try{
+        localStorage.setItem("pacificEducationWelcomeCountryName",countryName);
+        localStorage.setItem("pacificEducationWelcomeCountryCode",code);
+        localStorage.setItem("pacificEducationRegistrationCountryCode",code);
+        localStorage.setItem("pacificEducationCurriculumCountryCode",code);
+        localStorage.setItem("pacificEducationRegistrationCountry",countryName);
+      }catch(e){}
+      if(registrationCountry){
+        registrationCountry.setAttribute("data-pe-welcome-sync","true");
+        registrationCountry.value=code;
+        registrationCountry.dispatchEvent(new Event("change",{bubbles:true}));
+        registrationCountry.removeAttribute("data-pe-welcome-sync");
+      }
+    }
+    function syncWelcomeLanguage(){
+      if(!welcomeLanguage||!welcomeLanguage.value)return;
+      var languageName=welcomeLanguage.options[welcomeLanguage.selectedIndex].textContent;
+      var code=languageCodes[languageName]||"other";
+      try{
+        localStorage.setItem("pacificEducationWelcomeLanguageName",languageName);
+        localStorage.setItem("pacificEducationWelcomeLanguageCode",code);
+        localStorage.setItem("pacificEducationRegistrationLanguage",code);
+      }catch(e){}
+      if(registrationLanguage){
+        registrationLanguage.setAttribute("data-pe-welcome-sync","true");
+        registrationLanguage.value=code;
+        registrationLanguage.dispatchEvent(new Event("change",{bubbles:true}));
+        registrationLanguage.removeAttribute("data-pe-welcome-sync");
+      }
+    }
+    if(welcomeCountry)welcomeCountry.addEventListener("change",syncWelcomeCountry);
+    if(welcomeLanguage)welcomeLanguage.addEventListener("change",syncWelcomeLanguage);
+    try{
+      var savedCountry=localStorage.getItem("pacificEducationWelcomeCountryName")||"";
+      if(savedCountry&&welcomeCountry){
+        Array.prototype.some.call(welcomeCountry.options,function(option){
+          if(option.value.split("|")[0]===savedCountry){welcomeCountry.value=option.value;return true;}
+          return false;
+        });
+        syncWelcomeCountry();
+      }
+      var savedLanguage=localStorage.getItem("pacificEducationWelcomeLanguageName")||"";
+      if(savedLanguage&&welcomeLanguage){
+        Array.prototype.some.call(welcomeLanguage.options,function(option){
+          if(option.textContent===savedLanguage){welcomeLanguage.value=option.value;return true;}
+          return false;
+        });
+        syncWelcomeLanguage();
+      }
+    }catch(e){}
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",moveChoices);
+  else moveChoices();
+})();
+</script>
 
 <section id="pacificEducationPilotPages" aria-label="Pacific Education pilot welcome pages" hidden>
   <article id="paceduPageVision" class="pacedu-entry-page" aria-labelledby="paceduVisionTitle">
@@ -1337,7 +1444,7 @@ git status</pre>
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRegistration);else initRegistration();
 })();
-</script><script src="./js/pacificEducationCountryConfig.js?v=20261023-ece-levels"></script><script src="./js/pacificEducationRegistrationContext.js?v=20261006-country-language"></script><script src="./js/pacificEducationTeacherClassRosterContext.js?v=20261028-class-roster-context"></script>
+</script><script src="./js/pacificEducationCountryConfig.js?v=20261023-ece-levels"></script><script src="./js/pacificEducationRegistrationContext.js?v=20261106-welcome-country-language-sync-v1"></script><script src="./js/pacificEducationTeacherClassRosterContext.js?v=20261028-class-roster-context"></script>
 <script src="./js/pacificEducationDeafLearnerRegistration.js?v=20261006-deaf"></script>
 <script src="js/pacificEducationPilotUserWorkspaces.js?v=20261005-registration-activity-repair"></script><script src="js/pacificEducationStudentCoverageContext.js?v=20261002"></script><script src="js/pacificEducationTeacherCalendar.js?v=20261002"></script><script src="js/pacificEducationLearnerActivityRuntime.js?v=20261023-verified-learner-evidence-v2"></script><script src="js/pacificEducationCameraEvidence.js?v=20261025-camera-optional-privacy-v2"></script><script src="../js/pacificEducationPilotIntegrityGuard.js?v=20261002"></script><script src="../js/pacificEducationCore.js"></script>
 <script src="../js/pacificEducationPacificGuardian.js?v=20261013-guardian-integration"></script>
@@ -1503,14 +1610,14 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 <script src="./js/pacificEducationNativeAndroidVoiceRepair.js?v=20261010-tts-ready-queue"></script>
 <script src="../js/pacificEducationExternalReviewerPortal.js?v=20261006-external-reviewer"></script>
 <script src="./js/pacificEducationFutureSafeFeatureRepair.js?v=20261026-advertising-visibility"></script>
-<script src="./js/paceduTermLearningPlan.js?v=20261031-four-ability-labels"></script><script src="./js/paceduPracticeExamPaper.js?v=20261027-practice-exam-v2"></script><script src="./js/pacificEducationSequentialRoleWorkspaces.js?v=20261025-child-workspace-simple-v5"></script><script src="./js/pacificEducationRoleActivityPacks.js?v=20261027-class-packs-linked-v4"></script><script src="./js/pacificEducationEnglishWorksheetLibrary.js?v=20261031-four-ability-labels"></script><script src="./js/paceduFijiNineSubjectMapping.js?v=20261105-curriculum-mapping-v2"></script><script src="./js/paceduFijiCurriculumWeeklyActivities.js?v=20261104-four-subject-banks"></script><script src="./js/paceduAssessmentBlueprints.js?v=20261031-four-ability-labels"></script><script src="./js/paceduDailyWorksheetContent.js?v=20261104-four-subject-banks"></script><script src="./js/paceduAbilityDifferentiation.js?v=20261031-four-ability-labels"></script><script src="./js/paceduDownloadableClassPacks.js?v=20261105-science-course-guard-v1"></script>
+<script src="./js/paceduTermLearningPlan.js?v=20261031-four-ability-labels"></script><script src="./js/paceduPracticeExamPaper.js?v=20261027-practice-exam-v2"></script><script src="./js/pacificEducationSequentialRoleWorkspaces.js?v=20261025-child-workspace-simple-v5"></script><script src="./js/pacificEducationRoleActivityPacks.js?v=20261027-class-packs-linked-v4"></script><script src="./js/pacificEducationEnglishWorksheetLibrary.js?v=20261031-four-ability-labels"></script><script src="./js/paceduFijiNineSubjectMapping.js?v=20261106-science-level-guard-v1"></script><script src="./js/paceduFijiCurriculumWeeklyActivities.js?v=20261104-four-subject-banks"></script><script src="./js/paceduAssessmentBlueprints.js?v=20261031-four-ability-labels"></script><script src="./js/paceduDailyWorksheetContent.js?v=20261104-four-subject-banks"></script><script src="./js/paceduAbilityDifferentiation.js?v=20261031-four-ability-labels"></script><script src="./js/paceduDownloadableClassPacks.js?v=20261105-science-course-guard-v1"></script>
 <script src="./js/paceduSeparateDailyResourceDownloads.js?v=20261108-selected-context-v1"></script>
 <script src="./js/paceduAbilityPackLinks.js?v=20261028-differentiated-pack-links-v2"></script><script src="./js/pacificEducationLinkedTeacherPlans.js?v=20261023-paired-activity-workplan-v1"></script>
-<script src="./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=20261107-preserve-linked-workplans-v3"></script><script src="./js/paceduTeacherTwoResourceWorkspace.js?v=20261108-selected-context-v1"></script><script src="./js/paceduCountrySchoolTeacherClassList.js?v=20261028-country-school-class-list"></script><script src="./js/pacificEducationCurriculumQualityRegister.js?v=20261021-auto-repeat-indicator-review-v1"></script>
+<script src="./js/pacificEducationTeacherDailyOnlyWorkspace.js?v=20261107-preserve-linked-workplans-v3"></script><script src="./js/paceduTeacherTwoResourceWorkspace.js?v=20261108-selected-context-v1"></script><script src="./js/paceduTeachingAidQualityGate.js?v=20261106-review-gate-v1"></script><script src="./js/paceduCountrySchoolTeacherClassList.js?v=20261028-country-school-class-list"></script><script src="./js/pacificEducationCurriculumQualityRegister.js?v=20261021-auto-repeat-indicator-review-v1"></script>
 <script src="./js/pacificEducationMandatoryBoxSequence.js?v=20261018-registration-handoff-shell-release-v1"></script>
 <script src="./js/pacificEducationBreathingFocusGuide.js?v=20261016-final-signout-scroll-stable-v8"></script>
 <script src="./js/pacificEducationConversationContract.js?v=20261009-conversation-contract-v1"></script>
-<script src="./js/pacificEducationSingleNavigationController.js?v=20261105-entry-navigation-recovery-v4"></script>
+<script src="./js/pacificEducationSingleNavigationController.js?v=20261106-five-page-entry-v1"></script>
 <script src="./js/pacificEducationAutoFeatureActivation.js?v=20261006-auto-feature-activation-v1"></script>
 <script src="./js/pacificEducationCurriculumCoverageEngine.js?v=20261006-protected-wiring"></script>
 <script src="./js/pacificEducationDailyProgressRecorder.js?v=20261006-protected-wiring"></script>
