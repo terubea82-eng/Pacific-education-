@@ -51,9 +51,9 @@ test("advanced blank-page fallback restores Registration instead of Welcome", ()
 
 test("browser-history Back resolves the active sequential workspace control", () => {
   const source = fs.readFileSync(path.join(root, "src/js/pacificEducationSequentialRoleWorkspaces.js"), "utf8");
-  const popstate = source.match(/window\\.addEventListener\\("popstate",function\\(event\\)\\{([\\s\\S]*?)\\n    \\}\\);/);
+  const popstate = source.match(/window\.addEventListener\("popstate",function\(event\)\{([\s\S]*?)\n    \}\);/);
   assert.ok(popstate, "the sequential workspace popstate handler remains connected");
-  assert.match(popstate[1], /var shell=document\\.getElementById\\("pacificEducationSequentialRoleWorkspace"\\);/);
-  assert.match(popstate[1], /var backButton=shell\\.querySelector\\("#peSequentialBack"\\);/);
-  assert.doesNotMatch(popstate[1], /document\\.getElementById\\("peSequentialBack"\\)/);
+  assert.match(popstate[1], /var shell=document\.getElementById\("pacificEducationSequentialRoleWorkspace"\);/);
+  assert.match(popstate[1], /var backButton=shell\.querySelector\("#peSequentialBack"\);/);
+  assert.doesNotMatch(popstate[1], /document\.getElementById\("peSequentialBack"\)/);
 });
