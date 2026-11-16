@@ -10,10 +10,10 @@
   for (var c = 1; c <= 8; c += 1) LEVELS.push("Class " + c);
   for (var f = 3; f <= 7; f += 1) LEVELS.push("Form " + f);
   var ABILITIES = [
-    { id: "support", label: "Foundation", rule: "Model one example, reduce reading load, use concrete/picture cues and provide a sentence frame." },
-    { id: "developing", label: "Developing", rule: "Give a short hint or word bank, then ask the learner to try independently." },
-    { id: "expected", label: "Expected", rule: "Complete the core task independently and show the evidence or working." },
-    { id: "extension", label: "Advanced", rule: "Add a new condition, compare methods, justify an answer or create a related example." }
+    { id: "support", label: "Copper", rule: "Model one example, reduce reading load, use concrete/picture cues and provide a sentence frame." },
+    { id: "developing", label: "Bronze", rule: "Give a short hint or word bank, then ask the learner to try independently." },
+    { id: "expected", label: "Silver", rule: "Complete the core task independently and show the evidence or working." },
+    { id: "extension", label: "Gold", rule: "Add a new condition, compare methods, justify an answer or create a related example." }
   ];
   var SUBJECTS = [
     "English", "Mathematics", "Science", "Social Studies", "Healthy Living",
@@ -91,10 +91,10 @@
   function abilityTasks(subject, ability, core, level) {
     var band = ABILITIES.filter(function (x) { return x.id === ability; })[0] || ABILITIES[1];
     var task = core;
-    if (ability === "support") task = "SUPPORTED: " + core + " Teacher models the first step; learner may use objects, picture cues, read-aloud, word bank or sentence frame.";
-    if (ability === "developing") task = "DEVELOPING: " + core + " Offer one prompt if needed, then ask the learner to complete a similar item independently.";
-    if (ability === "expected") task = "EXPECTED: " + core + " Learner completes independently and checks the answer or working.";
-    if (ability === "extension") task =  "ADVANCED: " + core + " Add a changed condition or new example; ask the learner to compare options and justify the best answer.";
+    if (ability === "support") task = "COPPER: " + core + " Teacher models the first step; learner may use objects, picture cues, read-aloud, word bank or sentence frame.";
+    if (ability === "developing") task = "BRONZE: " + core + " Offer one prompt if needed, then ask the learner to complete a similar item independently.";
+    if (ability === "expected") task = "SILVER: " + core + " Learner completes independently and checks the answer or working.";
+    if (ability === "extension") task =  "GOLD: " + core + " Add a changed condition or new example; ask the learner to compare options and justify the best answer.";
     return { band: band.label, adjustment: band.rule, task: task, expectation: classExpectation(level) };
   }
   function makeQuestions(subject, ability, week, level) {
@@ -171,7 +171,7 @@
         "Confirm this week's task teaches that outcome and is suitable for this class.",
         "Review language accuracy, accessibility, answer key and assessment fairness before assigning."
       ],
-      curriculumTrace:{country:"Fiji",officialSource:null,syllabusTitle:null,strand:null,indicator:null,pageOrSection:null,verificationStatus:"NOT_YET_MAPPED"},
+      curriculumTrace:{country:"Fiji",masterFile:"PacEdu Indicators Master File ECE–Form 7 v0.2",officialSource:null,syllabusTitle:null,strand:null,indicator:null,pageOrSection:null,verificationStatus:"PENDING_SUBJECT_SPECIFIC_INDICATOR",note:"NCF framework-level MLOs are not class-and-subject syllabus indicators. Do not invent a class-specific indicator or Ministry code."},
       note:"This is a differentiated draft activity, not yet a complete official curriculum-aligned activity pack. Do not publish as verified until the curriculum trace is filled and teacher review passes."
     };
   }
