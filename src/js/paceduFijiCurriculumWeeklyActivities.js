@@ -155,6 +155,7 @@
     var core = (SUBJECT_FOCUS[subject] || SUBJECT_FOCUS.English)[0];
     return {
       status:"DRAFT_NEEDS_CURRICULUM_VERIFICATION",
+      indicatorStatus:"PENDING_SUBJECT_SPECIFIC_INDICATOR",
       level:level, stage:levelStage(level), subject:subject, ability:ability,
       term:item.term, week:item.week, topic:item.title, focus:item.focus,
       learningTask:abilityTasks(subject,ability,core,level),
