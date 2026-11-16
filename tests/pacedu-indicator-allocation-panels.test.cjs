@@ -6,7 +6,8 @@ function buildPack(withAllocation) {
   const window = {
     PacEduIndicatorMasterRecords: withAllocation ? [{
       indicatorId:"TEST-INDICATOR-001",
-      officialWording:"Verified test wording — not an official Fiji indicator.",
+      paceduAdaptedWording:"Verified test wording — not an official Fiji indicator.",
+      authorityType:"PACEDU_ADAPTED_SOURCE_ALIGNED",
       sourceTitle:"Automated test source",
       sourceEdition:"Test edition",
       sourcePage:"1",
