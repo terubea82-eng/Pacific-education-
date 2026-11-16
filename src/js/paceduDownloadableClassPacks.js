@@ -78,7 +78,7 @@ function indicatorPanelHtml(alignment){
  var html="<aside class=\"indicator-panel\" aria-label=\"Curriculum indicator and teaching allocation\"><h3>Curriculum indicator</h3>";
  if(alignment.indicators&&alignment.indicators.length){
   html+=alignment.indicators.map(function(item){
-   return "<div class=\\"indicator-record\\"><p><strong>Record ID:</strong> "+esc(item.indicatorId)+"</p><p><strong>Record type:</strong> "+esc(item.authorityType)+"</p><p><strong>Indicator / planning wording:</strong> "+esc(item.wording)+"</p><p><strong>Source:</strong> "+esc(item.sourceTitle)+" · <strong>Edition:</strong> "+esc(item.sourceEdition)+" · <strong>Page:</strong> "+esc(item.sourcePage)+"</p></div>";
+   return "<div class=\"indicator-record\"><p><strong>Record ID:</strong> "+esc(item.indicatorId)+"</p><p><strong>Record type:</strong> "+esc(item.authorityType)+"</p><p><strong>Indicator / planning wording:</strong> "+esc(item.wording)+"</p><p><strong>Source:</strong> "+esc(item.sourceTitle)+" · <strong>Edition:</strong> "+esc(item.sourceEdition)+" · <strong>Page:</strong> "+esc(item.sourcePage)+"</p></div>";
   }).join("");
  }else{
   html+="<p><strong>No verified class-and-subject indicator is linked to this teaching day yet.</strong> Do not treat the learning focus or NCF framework outcomes as a verified syllabus indicator.</p>";
