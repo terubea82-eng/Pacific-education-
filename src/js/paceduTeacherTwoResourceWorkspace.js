@@ -8,10 +8,10 @@
   var PANEL_ID = "paceduTeacherTwoResourcePanel";
   var RESPONSE_KEY = "pacificEducationActivityResponses";
   var BANDS = [
-    { id: "support", label: "Foundation" },
-    { id: "developing", label: "Developing" },
-    { id: "expected", label: "Expected" },
-    { id: "extension", label: "Advanced" }
+    { id: "support", label: "Copper" },
+    { id: "developing", label: "Bronze" },
+    { id: "expected", label: "Silver" },
+    { id: "extension", label: "Gold" }
   ];
   function node(tag, value) {
     var el = document.createElement(tag);
