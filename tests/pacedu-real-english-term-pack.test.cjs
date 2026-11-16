@@ -17,7 +17,7 @@ load('src/js/paceduAbilityDifferentiation.js');
 load('src/js/paceduIndicatorAllocationRegistry.js');
 load('src/js/paceduDownloadableClassPacks.js');
 
-test('real Class 1 English T1 source generates 45 complete scheduled worksheet sections', () => {
+test('scheduled Class 1 English T1 source produces 45 draft worksheet sections without claiming official mapping', () => {
   const api = window.PacEduDailyWorksheetContent;
   assert.ok(api && typeof api.getCurriculumWorksheet === 'function');
 
@@ -54,7 +54,7 @@ test('real Class 1 English T1 source generates 45 complete scheduled worksheet s
   }
 
   assert.equal(new Set(scheduled.map((sheet) => sheet.topic)).size, 45,
-    'The scheduled Class 1 English path should produce a distinct topic/focus heading for each day.');
+    'The scheduled template should produce a distinct weekly-theme/day-focus heading for each slot; this is not proof of 45 independently authored lessons.');
 
   const pack = window.PacEduDownloadableClassPacks.build({
     level: 'Class 1', subject: 'English', term: 'T1', ability: 'support'
