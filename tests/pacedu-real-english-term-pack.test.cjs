@@ -22,6 +22,7 @@ test('real Class 1 English T1 source generates 45 complete scheduled worksheet s
   assert.ok(api && typeof api.getCurriculumWorksheet === 'function');
 
   const scheduled = [];
+  let multipleChoiceCount = 0;
   for (let week = 1; week <= 9; week += 1) {
     for (let day = 1; day <= 5; day += 1) {
       const sheet = api.getCurriculumWorksheet({
@@ -43,6 +44,7 @@ test('real Class 1 English T1 source generates 45 complete scheduled worksheet s
         `Week ${week}, Day ${day} must not claim official mapping`);
       for (const question of sheet.questions) {
         if (question.type === 'Multiple choice') {
+          multipleChoiceCount += 1;
           assert.equal(question.options.length, 4,
             `Week ${week}, Day ${day} multiple-choice item must have four choices`);
         }
@@ -64,6 +66,8 @@ test('real Class 1 English T1 source generates 45 complete scheduled worksheet s
   assert.equal(dailyHeadings.length, 45, 'Rendered HTML must contain all 45 scheduled worksheet headings.');
   assert.equal((pack.html.match(/class="indicator-panel"/g) || []).length, 45,
     'Every daily worksheet must contain its indicator panel.');
+  assert.equal((pack.html.match(/<ol type=\"A\">/g) || []).length, multipleChoiceCount,
+    'Every four-choice question must render with A, B, C and D labels.');
   assert.equal((pack.html.match(/Teacher answer \/ marking note:/g) || []).length, 180,
     'Every question must render its teacher answer/marking note.');
   assert.equal((pack.html.match(/PENDING_SUBJECT_SPECIFIC_INDICATOR/g) || []).length, 45,
