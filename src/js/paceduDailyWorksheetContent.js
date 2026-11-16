@@ -556,7 +556,10 @@
       return String(item.term).toUpperCase() === block && Number(item.week) === week;
     })[0] || null;
     var level = levels.indexOf(options.level) >= 0 ? options.level : "Class 1";
-    var subject = Object.prototype.hasOwnProperty.call(packs, options.subject) ? options.subject : "English";
+    if (!Object.prototype.hasOwnProperty.call(packs, options.subject)) {
+      return { status: "NOT_FOUND", message: "No worksheet bank exists for this exact subject yet. Do not substitute another subject." };
+    }
+    var subject = options.subject;
     var ability = ["support", "developing", "expected", "extension"].indexOf(options.ability) >= 0 ? options.ability : "developing";
     // Day 1 is reserved by the existing registration flow for baseline identification.
     // This API is for subsequent scheduled teaching worksheets, so the selected daily
