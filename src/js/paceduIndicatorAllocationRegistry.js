@@ -21,7 +21,7 @@ function resolve(options){
   return master.filter(function(item){return item&&item.indicatorId===id;})[0]||null;
  }).filter(Boolean);
  var complete=ids.length>0&&indicators.length===ids.length&&indicators.every(function(item){
-  return item.verificationStatus==="SOURCE_VERIFIED"&&String(item.officialWording||"").trim()&&
+  return item.verificationStatus==="SOURCE_VERIFIED"&&(item.authorityType==="OFFICIAL_SOURCE_WORDING"&&String(item.officialWording||"").trim()||item.authorityType==="PACEDU_ADAPTED_SOURCE_ALIGNED"&&String(item.paceduAdaptedWording||"").trim())&&
    String(item.sourceTitle||"").trim()&&String(item.sourceEdition||"").trim()&&String(item.sourcePage||"").trim();
  });
  var allocationVerified=allocation.verificationStatus==="ALLOCATION_VERIFIED";
@@ -35,7 +35,8 @@ function resolve(options){
   evidenceOfLearning:String(allocation.evidenceOfLearning||""),
   indicators:complete&&allocationVerified?indicators.map(function(item){return {
    indicatorId:String(item.indicatorId),
-   officialWording:String(item.officialWording),
+   authorityType:String(item.authorityType),
+   wording:String(item.authorityType==="OFFICIAL_SOURCE_WORDING"?item.officialWording:item.paceduAdaptedWording),
    sourceTitle:String(item.sourceTitle),
    sourceEdition:String(item.sourceEdition),
    sourcePage:String(item.sourcePage)
