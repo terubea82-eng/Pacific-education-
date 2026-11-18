@@ -273,10 +273,10 @@
       "Answer all four questions and justify at least two answers using evidence or working.",
       "Create one related question and provide a correct answer with reasoning."
     ];
-    if(ability==="support") tasks.unshift("FOUNDATION: teacher models Question 1; use read-aloud, pictures, a word bank or concrete objects, then try the next question.");
-    else if(ability==="developing") tasks.unshift("DEVELOPING: try independently first; ask for one hint only if needed.");
-    else if(ability==="expected") tasks.unshift("EXPECTED: complete independently and check each answer.");
-    else if(ability==="extension") tasks.unshift("ADVANCED: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
+    if(ability==="support") tasks.unshift("COPPER: teacher models Question 1; use read-aloud, pictures, a word bank or concrete objects, then try the next question.");
+    else if(ability==="developing") tasks.unshift("BRONZE: try independently first; ask for one hint only if needed.");
+    else if(ability==="expected") tasks.unshift("SILVER: complete independently and check each answer.");
+    else if(ability==="extension") tasks.unshift("GOLD: complete the core work, then create a new example or explain why a tempting wrong answer is incorrect.");
     var key=questions.map(function(q){return {number:q.number,answer:q.answer,explanation:q.why};});
     return {
       title:"Day "+day+" — "+subject+" Daily Worksheet — "+level+" — "+ability,
@@ -428,11 +428,11 @@
       "Write a reasoned response with claim, evidence, counterpoint and qualified conclusion."
     ];
     var bandPrefix = {
-      support: "FOUNDATION: teacher models Question 1; use read-aloud, pictures, a word bank or a sentence frame.",
-      developing: "DEVELOPING: try independently first; ask for one hint or word bank if needed.",
-      expected: "EXPECTED: complete independently where possible and check each answer against the text.",
-      extension: "ADVANCED: complete the core work, then create a related question or justify an alternative interpretation."
-    }[ability] || "DEVELOPING: try independently first.";
+      support: "COPPER: teacher models Question 1; use read-aloud, pictures, a word bank or a sentence frame.",
+      developing: "BRONZE: try independently first; ask for one hint or word bank if needed.",
+      expected: "SILVER: complete independently where possible and check each answer against the text.",
+      extension: "GOLD: complete the core work, then create a related question or justify an alternative interpretation."
+    }[ability] || "BRONZE: try independently first.";
     tasks.push("Class-level target: " + levelExpectation.target, levelExpectation.output);
     tasks.unshift(bandPrefix);
     return {
