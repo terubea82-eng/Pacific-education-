@@ -2,7 +2,7 @@
 
 **Status:** SOURCE REVIEW IN PROGRESS — NOT AN APPROVED CLASS 2 INDICATOR MAP.
 
-## Candidate Fiji source located
+## Candidate Fiji sources located
 
 - **Document title:** Ministry of Education, Heritage & Arts — 2021 Literacy Worksheet 2, Year 2.
 - **Host:** Telecom Fiji LearningHub (the PDF identifies the Ministry as its publisher; the file is hosted outside the Ministry domain).
@@ -10,9 +10,15 @@
 - **Observed content:** sight-word recognition, rhyming-word matching, a short reading passage about a fishing trip, and vocabulary selection from the passage.
 - **Use in PacEdu:** candidate evidence for age-appropriate practice examples only. Do not copy the worksheet, infer a full syllabus sequence, or assign official indicator IDs from this one worksheet.
 
+- **Ministry resource inventory:** *Policy on Free Educational Resources*, Curriculum Advisory Section, Ministry of Education, Heritage and Arts. The Ministry-hosted inventory lists *English Communication Year 2* as a Year 2 English resource supplied by the Curriculum Development Unit. This identifies a potentially relevant official resource, but the policy is an inventory, not the full guide or an indicator map. [Ministry policy PDF](https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf).
+
 ## Curriculum context
 
 The Fiji Ministry of Education's 2020–2021 Annual Report records review of the literacy and numeracy curriculum at Years 1–8 and changes to the Y1–Y8 syllabus, including work on scope-and-sequence overviews and teacher guides. This makes it important to verify the exact syllabus version adopted by the school before mapping Class 2 activities.
+
+## Additional Ministry resource inventory evidence
+
+The Ministry's **Policy on Free Educational Resources** (Curriculum Advisory Section; Ministry-hosted PDF) lists **English Communication Year 2** under English resources supplied by the Curriculum Development Unit. This is a useful official lead for the school to identify the correct teacher/student resource. The policy's inventory does not itself provide the detailed achievement indicators, scope-and-sequence or current edition/page mapping needed for PacEdu. The school should confirm that this exact Year 2 resource is the currently authorised copy before use.
 
 ## What remains required before claiming alignment
 
