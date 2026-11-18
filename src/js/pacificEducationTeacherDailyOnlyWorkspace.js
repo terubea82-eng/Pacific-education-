@@ -77,7 +77,33 @@
       packCard.appendChild(packTitle);
       packCard.appendChild(packStatus);
       packCard.appendChild(packLink);
-      list.appendChild(packCard);
+
+      var printableCard=node("section");
+      printableCard.id="paceduClass1EnglishPrintableWorksheetLink";
+      printableCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #1877b7;border-radius:9px;background:#f4faff;";
+      printableCard.appendChild(node("h4","Class 1 English — Printable Daily Worksheets (115 Days × 4 Ability Groups)"));
+      var printableStatus=node("p","Separate Copper, Bronze, Silver and Gold print versions are drafted for every learning day. PENDING_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION; not yet approved for student release.");
+      printableCard.appendChild(printableStatus);
+      var dateLine=node("p","Country: ");
+      dateLine.appendChild(node("span",""));
+      dateLine.lastChild.setAttribute("data-pacedu-country-name","");
+      dateLine.appendChild(node("span"," · Local date: "));
+      var dateValue=node("span","");
+      dateValue.setAttribute("data-pacedu-local-date","");
+      dateLine.appendChild(dateValue);
+      printableCard.appendChild(dateLine);
+      var zoneLine=node("p","");
+      zoneLine.setAttribute("data-pacedu-date-status","");
+      printableCard.appendChild(zoneLine);
+      var printLink=node("a","Open Class 1 Printable Worksheets — Days 1–115");
+      printLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-class-1-printable-worksheets-days-1-115.md";
+      printLink.setAttribute("aria-label","Open Class 1 printable English worksheets, all 115 days and four ability groups");
+      printLink.target="_blank";
+      printLink.rel="noopener noreferrer";
+      printLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
+      printableCard.appendChild(printLink);
+      list.appendChild(printableCard);
+      if(window.PacEduWorksheetLocalDate)window.PacEduWorksheetLocalDate.fill(printableCard);
 
       var starterNote=node("p","Existing Class 1 five-day diagnostic starter pack remains available for comparison; the new 115-day draft is the expanded programme.");
       packCard.appendChild(starterNote);
