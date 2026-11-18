@@ -10,6 +10,8 @@
 
 ## Common teaching and assessment rules
 
+**Daily activity implementation standard:** Apply `docs/curriculum/english-working-indicator-daily-activity-alignment-standard.md`. Each daily activity must convert its level concept into one observable PacEdu working achievement indicator, with a matching activity, worked example, four differentiated pathways, evidence and marking guidance. Do not reuse one broad weekly objective as the daily indicator for all five days.
+
 - Teach listening/speaking, reading/viewing and writing/shaping in an integrated way where suitable; do not reduce English to grammar drills.
 - Each week has one central concept and five connected daily lessons: introduce/model; guided practice; apply; communicate/create; review and check understanding.
 - Copper (Foundation), Bronze (Supported), Silver (Developing) and Gold (Extension) are flexible task-support pathways, not fixed labels for a child's overall ability. Keep the intended learning goal consistent while varying scaffolds, text complexity and independence.
