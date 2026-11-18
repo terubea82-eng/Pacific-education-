@@ -110,3 +110,25 @@ The Parliament Gazette page was checked, but the currently visible entries do no
 - Years 6 & 8 Teachers Guide: **PRIMARY MINISTRY SOURCE FOUND; GENERAL TEACHER GUIDANCE ONLY; ENGLISH INDICATORS NOT VERIFIED**.
 - Education Act 2026: **PRIMARY ACT TEXT FOUND; SECTION 1 COMMENCEMENT REQUIRES GAZETTE NOTICE; SECTION 175(6) TRANSITIONAL CONTINUITY IDENTIFIED; COMMENCEMENT NOT VERIFIED**.
 - All activity/worksheet packs remain **PENDING_OFFICIAL_INDICATOR_VERIFICATION** and **PENDING_TEACHER_REVIEW**.
+
+
+## 5. Ministry resource inventory cross-check for primary English
+
+The Ministry-hosted *Policy on Free Educational Resources* was rechecked. Its primary-school resource tables list **English Communication Year 4** and **English Communication Year 5** as resources supplied by the Curriculum Development Unit (the Year 4 and Year 5 tables are visible around page 10 of the PDF):
+https://www.education.gov.fj/wp-content/uploads/2022/11/Policy_on_Free_Educational_Resources_FINAL.pdf
+
+This strengthens the source trail for locating the actual Year 4 and Year 5 CDU English books and confirming which versions schools were issued. It does **not** disclose their full contents, indicator codes, achievement outcomes, teaching sequence or assessment criteria. The resource policy itself is not the syllabus. The school/CDU must provide the exact book/guide, edition and relevant pages before the Class 4 or Class 5 mapping can be marked source-verified.
+
+The Ministry-hosted Years 3 & 4 Literacy Guide foreword describes itself as aligned to the syllabus and a practical lower-primary literacy package, and says teachers should continually monitor reading levels. It supports the pedagogical design of differentiated literacy support, but it is still not a substitute for extracting the actual syllabus outcomes and indicators.
+
+## 6. Current source-verification boundary after this search
+
+- Primary source inventory: Years 4 and 5 CDU English Communication resources are identified; obtain and inspect the books themselves.
+- Years 3–4 literacy support: Ministry guide located; use for reading-development strategies only unless the exact authorised syllabus outcomes are separately confirmed.
+- Years 6 and 8: Ministry teacher guide located (first edition 2015); English-specific outcomes have not been extracted from it.
+- Year 7: no exact current official English syllabus/teacher guide confirmed.
+- Years 9–10: 2024 RSEC teacher guide copy and 2025 rollout circular copy remain secondary-hosted leads; confirm current school-authorised originals and the 2026 cohort's implementation.
+- Years 11–13: current official year-specific English syllabi, prescribed literature, examination specifications and project/assessment rubrics remain outstanding.
+- Education Act 2026: Act text is primary, but the commencement Gazette notice has not been verified. The Parliament Acts index lists Act 5 of 2026, but the index alone does not establish the Minister's commencement notice or its date.
+
+**No level's activity or worksheet pack is promoted to SOURCE_VERIFIED by these resource-list findings.** Keep all packs `PENDING_OFFICIAL_INDICATOR_VERIFICATION` and `PENDING_TEACHER_REVIEW`.
