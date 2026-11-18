@@ -40,10 +40,10 @@ function resolveSubject(subject,level){
 }
 var LEVELS=["ECE"];for(var c=1;c<=8;c++)LEVELS.push("Class "+c);for(var f=3;f<=7;f++)LEVELS.push("Form "+f);
 var ABILITIES=[
- {id:"support",label:"Support",guidance:"Use short instructions, concrete objects or pictures, model one step, allow oral/sign/point/draw responses and record prompts used."},
- {id:"developing",label:"Developing",guidance:"Show one model, provide limited prompts, then ask for an independent attempt."},
- {id:"expected",label:"Expected",guidance:"Complete the class-level task independently and explain or check the method."},
- {id:"extension",label:"Extension",guidance:"Add transfer to an unfamiliar example, comparison, justification or second method."}
+ {id:"support",label:"Copper",guidance:"Use short instructions, concrete objects or pictures, model one step, allow oral/sign/point/draw responses and record prompts used."},
+ {id:"developing",label:"Bronze",guidance:"Show one model, provide limited prompts, then ask for an independent attempt."},
+ {id:"expected",label:"Silver",guidance:"Complete the class-level task independently and explain or check the method."},
+ {id:"extension",label:"Gold",guidance:"Add transfer to an unfamiliar example, comparison, justification or second method."}
 ];
 var SUBJECT_CRITERIA={
  "English":[["Meaning and comprehension","Understand the text, question or spoken prompt."],["Vocabulary and language","Use suitable words, sentence structure and language features."],["Evidence and task completion","Use relevant details and complete the requested task."],["Communication","Communicate clearly in an appropriate spoken, signed, written or accessible form."]],
