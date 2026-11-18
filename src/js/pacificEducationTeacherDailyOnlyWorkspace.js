@@ -95,6 +95,35 @@
       var zoneLine=node("p","");
       zoneLine.setAttribute("data-pacedu-date-status","");
       printableCard.appendChild(zoneLine);
+      var zoneLabel=node("label","School time zone (IANA name, e.g. Pacific/Fiji)");
+      zoneLabel.style.cssText="display:block;font-weight:700;margin:8px 0;";
+      var zoneInput=node("input");
+      zoneInput.type="text";
+      zoneInput.autocomplete="off";
+      zoneInput.placeholder="e.g. Pacific/Fiji or Europe/Paris";
+      zoneInput.setAttribute("aria-label","School time zone IANA name");
+      zoneInput.style.cssText="display:block;width:100%;min-height:44px;padding:8px;box-sizing:border-box;margin-top:5px;";
+      try{zoneInput.value=window.localStorage.getItem("pacificEducationSchoolTimeZone")||"";}catch(e){}
+      zoneLabel.appendChild(zoneInput);
+      printableCard.appendChild(zoneLabel);
+      var zoneSave=makeButton("Save school time zone","date-zone","save");
+      zoneSave.style.width="100%";
+      var zoneFeedback=node("p","");
+      zoneFeedback.setAttribute("role","status");
+      zoneFeedback.setAttribute("aria-live","polite");
+      printableCard.appendChild(zoneSave);
+      printableCard.appendChild(zoneFeedback);
+      zoneSave.addEventListener("click",function(){
+        var zone=String(zoneInput.value||"").trim();
+        if(!zone){zoneFeedback.textContent="Enter the school's IANA time zone. Example: Pacific/Fiji.";return;}
+        try{
+          new Intl.DateTimeFormat("en",{timeZone:zone}).format(new Date());
+          window.localStorage.setItem("pacificEducationSchoolTimeZone",zone);
+          if(window.PacEduWorksheetLocalDate)window.PacEduWorksheetLocalDate.refresh();
+          if(window.PacEduWorksheetLocalDate)window.PacEduWorksheetLocalDate.fill(printableCard);
+          zoneFeedback.textContent="School time zone saved: "+zone+". The worksheet date will use this zone.";
+        }catch(e){zoneFeedback.textContent="That time zone was not recognised. Enter a valid IANA name, such as Pacific/Fiji or Europe/Paris.";}
+      });
       var printLink=node("a","Open Class 1 Printable Worksheets — Days 1–115");
       printLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-class-1-printable-worksheets-days-1-115.md";
       printLink.setAttribute("aria-label","Open Class 1 printable English worksheets, all 115 days and four ability groups");
