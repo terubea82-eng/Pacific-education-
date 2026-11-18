@@ -125,7 +125,7 @@
         }catch(e){zoneFeedback.textContent="That time zone was not recognised. Enter a valid IANA name, such as Pacific/Fiji or Europe/Paris.";}
       });
       var printLink=node("a","Open Class 1 Printable Worksheets — Days 1–115");
-      printLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-class-1-printable-worksheets-days-1-115.md";
+      printLink.href="https://terubea82-eng.github.io/Pacific-education-/src/pacedu-class1-english-printable-worksheets.html";
       printLink.setAttribute("aria-label","Open Class 1 printable English worksheets, all 115 days and four ability groups");
       printLink.target="_blank";
       printLink.rel="noopener noreferrer";
