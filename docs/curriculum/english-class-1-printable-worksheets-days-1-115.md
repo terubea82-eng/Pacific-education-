@@ -26,6 +26,7 @@ Official Fiji outcome/indicator + exact source edition/page: **PENDING_VERIFICAT
 # Day 1 — Term 1, Week 1, Day 1 — Copper Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -73,6 +74,7 @@ ____________________________________________________________________________
 # Day 1 — Term 1, Week 1, Day 1 — Bronze Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -120,6 +122,7 @@ ____________________________________________________________________________
 # Day 1 — Term 1, Week 1, Day 1 — Silver Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -167,6 +170,7 @@ ____________________________________________________________________________
 # Day 1 — Term 1, Week 1, Day 1 — Gold Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -214,6 +218,7 @@ ____________________________________________________________________________
 # Day 2 — Term 1, Week 1, Day 2 — Copper Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -261,6 +266,7 @@ ____________________________________________________________________________
 # Day 2 — Term 1, Week 1, Day 2 — Bronze Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -308,6 +314,7 @@ ____________________________________________________________________________
 # Day 2 — Term 1, Week 1, Day 2 — Silver Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -355,6 +362,7 @@ ____________________________________________________________________________
 # Day 2 — Term 1, Week 1, Day 2 — Gold Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -402,6 +410,7 @@ ____________________________________________________________________________
 # Day 3 — Term 1, Week 1, Day 3 — Copper Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -449,6 +458,7 @@ ____________________________________________________________________________
 # Day 3 — Term 1, Week 1, Day 3 — Bronze Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -496,6 +506,7 @@ ____________________________________________________________________________
 # Day 3 — Term 1, Week 1, Day 3 — Silver Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -543,6 +554,7 @@ ____________________________________________________________________________
 # Day 3 — Term 1, Week 1, Day 3 — Gold Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -590,6 +602,7 @@ ____________________________________________________________________________
 # Day 4 — Term 1, Week 1, Day 4 — Copper Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -637,6 +650,7 @@ ____________________________________________________________________________
 # Day 4 — Term 1, Week 1, Day 4 — Bronze Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -684,6 +698,7 @@ ____________________________________________________________________________
 # Day 4 — Term 1, Week 1, Day 4 — Silver Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -731,6 +746,7 @@ ____________________________________________________________________________
 # Day 4 — Term 1, Week 1, Day 4 — Gold Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -778,6 +794,7 @@ ____________________________________________________________________________
 # Day 5 — Term 1, Week 1, Day 5 — Copper Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -825,6 +842,7 @@ ____________________________________________________________________________
 # Day 5 — Term 1, Week 1, Day 5 — Bronze Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -872,6 +890,7 @@ ____________________________________________________________________________
 # Day 5 — Term 1, Week 1, Day 5 — Silver Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -919,6 +938,7 @@ ____________________________________________________________________________
 # Day 5 — Term 1, Week 1, Day 5 — Gold Worksheet
 **Weekly focus:** Myself, name and identity  
 **Learning intention:** Say your name; recognise your name card; identify first letter; build or write name.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -966,6 +986,7 @@ ____________________________________________________________________________
 # Day 6 — Term 1, Week 2, Day 1 — Copper Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -1013,6 +1034,7 @@ ____________________________________________________________________________
 # Day 6 — Term 1, Week 2, Day 1 — Bronze Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -1060,6 +1082,7 @@ ____________________________________________________________________________
 # Day 6 — Term 1, Week 2, Day 1 — Silver Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -1107,6 +1130,7 @@ ____________________________________________________________________________
 # Day 6 — Term 1, Week 2, Day 1 — Gold Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -1154,6 +1178,7 @@ ____________________________________________________________________________
 # Day 7 — Term 1, Week 2, Day 2 — Copper Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -1201,6 +1226,7 @@ ____________________________________________________________________________
 # Day 7 — Term 1, Week 2, Day 2 — Bronze Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -1248,6 +1274,7 @@ ____________________________________________________________________________
 # Day 7 — Term 1, Week 2, Day 2 — Silver Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -1295,6 +1322,7 @@ ____________________________________________________________________________
 # Day 7 — Term 1, Week 2, Day 2 — Gold Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -1342,6 +1370,7 @@ ____________________________________________________________________________
 # Day 8 — Term 1, Week 2, Day 3 — Copper Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -1389,6 +1418,7 @@ ____________________________________________________________________________
 # Day 8 — Term 1, Week 2, Day 3 — Bronze Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -1436,6 +1466,7 @@ ____________________________________________________________________________
 # Day 8 — Term 1, Week 2, Day 3 — Silver Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -1483,6 +1514,7 @@ ____________________________________________________________________________
 # Day 8 — Term 1, Week 2, Day 3 — Gold Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -1530,6 +1562,7 @@ ____________________________________________________________________________
 # Day 9 — Term 1, Week 2, Day 4 — Copper Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -1577,6 +1610,7 @@ ____________________________________________________________________________
 # Day 9 — Term 1, Week 2, Day 4 — Bronze Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -1624,6 +1658,7 @@ ____________________________________________________________________________
 # Day 9 — Term 1, Week 2, Day 4 — Silver Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -1671,6 +1706,7 @@ ____________________________________________________________________________
 # Day 9 — Term 1, Week 2, Day 4 — Gold Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -1718,6 +1754,7 @@ ____________________________________________________________________________
 # Day 10 — Term 1, Week 2, Day 5 — Copper Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -1765,6 +1802,7 @@ ____________________________________________________________________________
 # Day 10 — Term 1, Week 2, Day 5 — Bronze Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -1812,6 +1850,7 @@ ____________________________________________________________________________
 # Day 10 — Term 1, Week 2, Day 5 — Silver Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -1859,6 +1898,7 @@ ____________________________________________________________________________
 # Day 10 — Term 1, Week 2, Day 5 — Gold Worksheet
 **Weekly focus:** Greetings and classroom language  
 **Learning intention:** Use hello/good morning/please/thank you; respond to classroom words; practise a short exchange.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -1906,6 +1946,7 @@ ____________________________________________________________________________
 # Day 11 — Term 1, Week 3, Day 1 — Copper Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -1953,6 +1994,7 @@ ____________________________________________________________________________
 # Day 11 — Term 1, Week 3, Day 1 — Bronze Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -2000,6 +2042,7 @@ ____________________________________________________________________________
 # Day 11 — Term 1, Week 3, Day 1 — Silver Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -2047,6 +2090,7 @@ ____________________________________________________________________________
 # Day 11 — Term 1, Week 3, Day 1 — Gold Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -2094,6 +2138,7 @@ ____________________________________________________________________________
 # Day 12 — Term 1, Week 3, Day 2 — Copper Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -2141,6 +2186,7 @@ ____________________________________________________________________________
 # Day 12 — Term 1, Week 3, Day 2 — Bronze Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -2188,6 +2234,7 @@ ____________________________________________________________________________
 # Day 12 — Term 1, Week 3, Day 2 — Silver Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -2235,6 +2282,7 @@ ____________________________________________________________________________
 # Day 12 — Term 1, Week 3, Day 2 — Gold Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -2282,6 +2330,7 @@ ____________________________________________________________________________
 # Day 13 — Term 1, Week 3, Day 3 — Copper Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -2329,6 +2378,7 @@ ____________________________________________________________________________
 # Day 13 — Term 1, Week 3, Day 3 — Bronze Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -2376,6 +2426,7 @@ ____________________________________________________________________________
 # Day 13 — Term 1, Week 3, Day 3 — Silver Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -2423,6 +2474,7 @@ ____________________________________________________________________________
 # Day 13 — Term 1, Week 3, Day 3 — Gold Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -2470,6 +2522,7 @@ ____________________________________________________________________________
 # Day 14 — Term 1, Week 3, Day 4 — Copper Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -2517,6 +2570,7 @@ ____________________________________________________________________________
 # Day 14 — Term 1, Week 3, Day 4 — Bronze Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -2564,6 +2618,7 @@ ____________________________________________________________________________
 # Day 14 — Term 1, Week 3, Day 4 — Silver Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -2611,6 +2666,7 @@ ____________________________________________________________________________
 # Day 14 — Term 1, Week 3, Day 4 — Gold Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -2658,6 +2714,7 @@ ____________________________________________________________________________
 # Day 15 — Term 1, Week 3, Day 5 — Copper Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -2705,6 +2762,7 @@ ____________________________________________________________________________
 # Day 15 — Term 1, Week 3, Day 5 — Bronze Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -2752,6 +2810,7 @@ ____________________________________________________________________________
 # Day 15 — Term 1, Week 3, Day 5 — Silver Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -2799,6 +2858,7 @@ ____________________________________________________________________________
 # Day 15 — Term 1, Week 3, Day 5 — Gold Worksheet
 **Weekly focus:** Listening carefully and following directions  
 **Learning intention:** Listen for one- and two-step directions; identify action words; sequence actions.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -2846,6 +2906,7 @@ ____________________________________________________________________________
 # Day 16 — Term 1, Week 4, Day 1 — Copper Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -2893,6 +2954,7 @@ ____________________________________________________________________________
 # Day 16 — Term 1, Week 4, Day 1 — Bronze Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -2940,6 +3002,7 @@ ____________________________________________________________________________
 # Day 16 — Term 1, Week 4, Day 1 — Silver Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -2987,6 +3050,7 @@ ____________________________________________________________________________
 # Day 16 — Term 1, Week 4, Day 1 — Gold Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -3034,6 +3098,7 @@ ____________________________________________________________________________
 # Day 17 — Term 1, Week 4, Day 2 — Copper Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -3081,6 +3146,7 @@ ____________________________________________________________________________
 # Day 17 — Term 1, Week 4, Day 2 — Bronze Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -3128,6 +3194,7 @@ ____________________________________________________________________________
 # Day 17 — Term 1, Week 4, Day 2 — Silver Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -3175,6 +3242,7 @@ ____________________________________________________________________________
 # Day 17 — Term 1, Week 4, Day 2 — Gold Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -3222,6 +3290,7 @@ ____________________________________________________________________________
 # Day 18 — Term 1, Week 4, Day 3 — Copper Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -3269,6 +3338,7 @@ ____________________________________________________________________________
 # Day 18 — Term 1, Week 4, Day 3 — Bronze Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -3316,6 +3386,7 @@ ____________________________________________________________________________
 # Day 18 — Term 1, Week 4, Day 3 — Silver Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -3363,6 +3434,7 @@ ____________________________________________________________________________
 # Day 18 — Term 1, Week 4, Day 3 — Gold Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -3410,6 +3482,7 @@ ____________________________________________________________________________
 # Day 19 — Term 1, Week 4, Day 4 — Copper Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -3457,6 +3530,7 @@ ____________________________________________________________________________
 # Day 19 — Term 1, Week 4, Day 4 — Bronze Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -3504,6 +3578,7 @@ ____________________________________________________________________________
 # Day 19 — Term 1, Week 4, Day 4 — Silver Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -3551,6 +3626,7 @@ ____________________________________________________________________________
 # Day 19 — Term 1, Week 4, Day 4 — Gold Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -3598,6 +3674,7 @@ ____________________________________________________________________________
 # Day 20 — Term 1, Week 4, Day 5 — Copper Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -3645,6 +3722,7 @@ ____________________________________________________________________________
 # Day 20 — Term 1, Week 4, Day 5 — Bronze Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -3692,6 +3770,7 @@ ____________________________________________________________________________
 # Day 20 — Term 1, Week 4, Day 5 — Silver Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -3739,6 +3818,7 @@ ____________________________________________________________________________
 # Day 20 — Term 1, Week 4, Day 5 — Gold Worksheet
 **Weekly focus:** Sounds around us and rhyme  
 **Learning intention:** Hear environmental sounds; identify rhyming pairs; clap syllables; make an oral rhyme.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -3786,6 +3866,7 @@ ____________________________________________________________________________
 # Day 21 — Term 1, Week 5, Day 1 — Copper Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -3833,6 +3914,7 @@ ____________________________________________________________________________
 # Day 21 — Term 1, Week 5, Day 1 — Bronze Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -3880,6 +3962,7 @@ ____________________________________________________________________________
 # Day 21 — Term 1, Week 5, Day 1 — Silver Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -3927,6 +4010,7 @@ ____________________________________________________________________________
 # Day 21 — Term 1, Week 5, Day 1 — Gold Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -3974,6 +4058,7 @@ ____________________________________________________________________________
 # Day 22 — Term 1, Week 5, Day 2 — Copper Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -4021,6 +4106,7 @@ ____________________________________________________________________________
 # Day 22 — Term 1, Week 5, Day 2 — Bronze Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -4068,6 +4154,7 @@ ____________________________________________________________________________
 # Day 22 — Term 1, Week 5, Day 2 — Silver Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -4115,6 +4202,7 @@ ____________________________________________________________________________
 # Day 22 — Term 1, Week 5, Day 2 — Gold Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -4162,6 +4250,7 @@ ____________________________________________________________________________
 # Day 23 — Term 1, Week 5, Day 3 — Copper Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -4209,6 +4298,7 @@ ____________________________________________________________________________
 # Day 23 — Term 1, Week 5, Day 3 — Bronze Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -4256,6 +4346,7 @@ ____________________________________________________________________________
 # Day 23 — Term 1, Week 5, Day 3 — Silver Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -4303,6 +4394,7 @@ ____________________________________________________________________________
 # Day 23 — Term 1, Week 5, Day 3 — Gold Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -4350,6 +4442,7 @@ ____________________________________________________________________________
 # Day 24 — Term 1, Week 5, Day 4 — Copper Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -4397,6 +4490,7 @@ ____________________________________________________________________________
 # Day 24 — Term 1, Week 5, Day 4 — Bronze Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -4444,6 +4538,7 @@ ____________________________________________________________________________
 # Day 24 — Term 1, Week 5, Day 4 — Silver Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -4491,6 +4586,7 @@ ____________________________________________________________________________
 # Day 24 — Term 1, Week 5, Day 4 — Gold Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -4538,6 +4634,7 @@ ____________________________________________________________________________
 # Day 25 — Term 1, Week 5, Day 5 — Copper Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -4585,6 +4682,7 @@ ____________________________________________________________________________
 # Day 25 — Term 1, Week 5, Day 5 — Bronze Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -4632,6 +4730,7 @@ ____________________________________________________________________________
 # Day 25 — Term 1, Week 5, Day 5 — Silver Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -4679,6 +4778,7 @@ ____________________________________________________________________________
 # Day 25 — Term 1, Week 5, Day 5 — Gold Worksheet
 **Weekly focus:** Letter Ss and short a review  
 **Learning intention:** Recognise S/s and A/a only if already taught; match sound to picture; trace and form letters.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -4726,6 +4826,7 @@ ____________________________________________________________________________
 # Day 26 — Term 1, Week 6, Day 1 — Copper Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -4773,6 +4874,7 @@ ____________________________________________________________________________
 # Day 26 — Term 1, Week 6, Day 1 — Bronze Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -4820,6 +4922,7 @@ ____________________________________________________________________________
 # Day 26 — Term 1, Week 6, Day 1 — Silver Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -4867,6 +4970,7 @@ ____________________________________________________________________________
 # Day 26 — Term 1, Week 6, Day 1 — Gold Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -4914,6 +5018,7 @@ ____________________________________________________________________________
 # Day 27 — Term 1, Week 6, Day 2 — Copper Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -4961,6 +5066,7 @@ ____________________________________________________________________________
 # Day 27 — Term 1, Week 6, Day 2 — Bronze Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -5008,6 +5114,7 @@ ____________________________________________________________________________
 # Day 27 — Term 1, Week 6, Day 2 — Silver Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -5055,6 +5162,7 @@ ____________________________________________________________________________
 # Day 27 — Term 1, Week 6, Day 2 — Gold Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -5102,6 +5210,7 @@ ____________________________________________________________________________
 # Day 28 — Term 1, Week 6, Day 3 — Copper Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -5149,6 +5258,7 @@ ____________________________________________________________________________
 # Day 28 — Term 1, Week 6, Day 3 — Bronze Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -5196,6 +5306,7 @@ ____________________________________________________________________________
 # Day 28 — Term 1, Week 6, Day 3 — Silver Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -5243,6 +5354,7 @@ ____________________________________________________________________________
 # Day 28 — Term 1, Week 6, Day 3 — Gold Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -5290,6 +5402,7 @@ ____________________________________________________________________________
 # Day 29 — Term 1, Week 6, Day 4 — Copper Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -5337,6 +5450,7 @@ ____________________________________________________________________________
 # Day 29 — Term 1, Week 6, Day 4 — Bronze Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -5384,6 +5498,7 @@ ____________________________________________________________________________
 # Day 29 — Term 1, Week 6, Day 4 — Silver Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -5431,6 +5546,7 @@ ____________________________________________________________________________
 # Day 29 — Term 1, Week 6, Day 4 — Gold Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -5478,6 +5594,7 @@ ____________________________________________________________________________
 # Day 30 — Term 1, Week 6, Day 5 — Copper Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -5525,6 +5642,7 @@ ____________________________________________________________________________
 # Day 30 — Term 1, Week 6, Day 5 — Bronze Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -5572,6 +5690,7 @@ ____________________________________________________________________________
 # Day 30 — Term 1, Week 6, Day 5 — Silver Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -5619,6 +5738,7 @@ ____________________________________________________________________________
 # Day 30 — Term 1, Week 6, Day 5 — Gold Worksheet
 **Weekly focus:** Print concepts and alphabet knowledge  
 **Learning intention:** Identify front/back, title, direction of print, spaces, letters and words in a familiar text.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -5666,6 +5786,7 @@ ____________________________________________________________________________
 # Day 31 — Term 1, Week 7, Day 1 — Copper Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -5713,6 +5834,7 @@ ____________________________________________________________________________
 # Day 31 — Term 1, Week 7, Day 1 — Bronze Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -5760,6 +5882,7 @@ ____________________________________________________________________________
 # Day 31 — Term 1, Week 7, Day 1 — Silver Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -5807,6 +5930,7 @@ ____________________________________________________________________________
 # Day 31 — Term 1, Week 7, Day 1 — Gold Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -5854,6 +5978,7 @@ ____________________________________________________________________________
 # Day 32 — Term 1, Week 7, Day 2 — Copper Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -5901,6 +6026,7 @@ ____________________________________________________________________________
 # Day 32 — Term 1, Week 7, Day 2 — Bronze Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -5948,6 +6074,7 @@ ____________________________________________________________________________
 # Day 32 — Term 1, Week 7, Day 2 — Silver Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -5995,6 +6122,7 @@ ____________________________________________________________________________
 # Day 32 — Term 1, Week 7, Day 2 — Gold Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -6042,6 +6170,7 @@ ____________________________________________________________________________
 # Day 33 — Term 1, Week 7, Day 3 — Copper Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -6089,6 +6218,7 @@ ____________________________________________________________________________
 # Day 33 — Term 1, Week 7, Day 3 — Bronze Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -6136,6 +6266,7 @@ ____________________________________________________________________________
 # Day 33 — Term 1, Week 7, Day 3 — Silver Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -6183,6 +6314,7 @@ ____________________________________________________________________________
 # Day 33 — Term 1, Week 7, Day 3 — Gold Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -6230,6 +6362,7 @@ ____________________________________________________________________________
 # Day 34 — Term 1, Week 7, Day 4 — Copper Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -6277,6 +6410,7 @@ ____________________________________________________________________________
 # Day 34 — Term 1, Week 7, Day 4 — Bronze Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -6324,6 +6458,7 @@ ____________________________________________________________________________
 # Day 34 — Term 1, Week 7, Day 4 — Silver Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -6371,6 +6506,7 @@ ____________________________________________________________________________
 # Day 34 — Term 1, Week 7, Day 4 — Gold Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -6418,6 +6554,7 @@ ____________________________________________________________________________
 # Day 35 — Term 1, Week 7, Day 5 — Copper Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -6465,6 +6602,7 @@ ____________________________________________________________________________
 # Day 35 — Term 1, Week 7, Day 5 — Bronze Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -6512,6 +6650,7 @@ ____________________________________________________________________________
 # Day 35 — Term 1, Week 7, Day 5 — Silver Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -6559,6 +6698,7 @@ ____________________________________________________________________________
 # Day 35 — Term 1, Week 7, Day 5 — Gold Worksheet
 **Weekly focus:** Beginning sounds and oral blending  
 **Learning intention:** Hear first sounds; sort familiar pictures; orally blend only sounds already taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -6606,6 +6746,7 @@ ____________________________________________________________________________
 # Day 36 — Term 1, Week 8, Day 1 — Copper Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -6653,6 +6794,7 @@ ____________________________________________________________________________
 # Day 36 — Term 1, Week 8, Day 1 — Bronze Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -6700,6 +6842,7 @@ ____________________________________________________________________________
 # Day 36 — Term 1, Week 8, Day 1 — Silver Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -6747,6 +6890,7 @@ ____________________________________________________________________________
 # Day 36 — Term 1, Week 8, Day 1 — Gold Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -6794,6 +6938,7 @@ ____________________________________________________________________________
 # Day 37 — Term 1, Week 8, Day 2 — Copper Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -6841,6 +6986,7 @@ ____________________________________________________________________________
 # Day 37 — Term 1, Week 8, Day 2 — Bronze Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -6888,6 +7034,7 @@ ____________________________________________________________________________
 # Day 37 — Term 1, Week 8, Day 2 — Silver Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -6935,6 +7082,7 @@ ____________________________________________________________________________
 # Day 37 — Term 1, Week 8, Day 2 — Gold Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -6982,6 +7130,7 @@ ____________________________________________________________________________
 # Day 38 — Term 1, Week 8, Day 3 — Copper Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -7029,6 +7178,7 @@ ____________________________________________________________________________
 # Day 38 — Term 1, Week 8, Day 3 — Bronze Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -7076,6 +7226,7 @@ ____________________________________________________________________________
 # Day 38 — Term 1, Week 8, Day 3 — Silver Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -7123,6 +7274,7 @@ ____________________________________________________________________________
 # Day 38 — Term 1, Week 8, Day 3 — Gold Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -7170,6 +7322,7 @@ ____________________________________________________________________________
 # Day 39 — Term 1, Week 8, Day 4 — Copper Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -7217,6 +7370,7 @@ ____________________________________________________________________________
 # Day 39 — Term 1, Week 8, Day 4 — Bronze Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -7264,6 +7418,7 @@ ____________________________________________________________________________
 # Day 39 — Term 1, Week 8, Day 4 — Silver Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -7311,6 +7466,7 @@ ____________________________________________________________________________
 # Day 39 — Term 1, Week 8, Day 4 — Gold Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -7358,6 +7514,7 @@ ____________________________________________________________________________
 # Day 40 — Term 1, Week 8, Day 5 — Copper Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -7405,6 +7562,7 @@ ____________________________________________________________________________
 # Day 40 — Term 1, Week 8, Day 5 — Bronze Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -7452,6 +7610,7 @@ ____________________________________________________________________________
 # Day 40 — Term 1, Week 8, Day 5 — Silver Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -7499,6 +7658,7 @@ ____________________________________________________________________________
 # Day 40 — Term 1, Week 8, Day 5 — Gold Worksheet
 **Weekly focus:** CVC word building: taught correspondences  
 **Learning intention:** Build and read only CVC words whose letter-sound correspondences have been taught.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -7546,6 +7706,7 @@ ____________________________________________________________________________
 # Day 41 — Term 1, Week 9, Day 1 — Copper Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -7593,6 +7754,7 @@ ____________________________________________________________________________
 # Day 41 — Term 1, Week 9, Day 1 — Bronze Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -7640,6 +7802,7 @@ ____________________________________________________________________________
 # Day 41 — Term 1, Week 9, Day 1 — Silver Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -7687,6 +7850,7 @@ ____________________________________________________________________________
 # Day 41 — Term 1, Week 9, Day 1 — Gold Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -7734,6 +7898,7 @@ ____________________________________________________________________________
 # Day 42 — Term 1, Week 9, Day 2 — Copper Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -7781,6 +7946,7 @@ ____________________________________________________________________________
 # Day 42 — Term 1, Week 9, Day 2 — Bronze Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -7828,6 +7994,7 @@ ____________________________________________________________________________
 # Day 42 — Term 1, Week 9, Day 2 — Silver Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -7875,6 +8042,7 @@ ____________________________________________________________________________
 # Day 42 — Term 1, Week 9, Day 2 — Gold Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -7922,6 +8090,7 @@ ____________________________________________________________________________
 # Day 43 — Term 1, Week 9, Day 3 — Copper Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -7969,6 +8138,7 @@ ____________________________________________________________________________
 # Day 43 — Term 1, Week 9, Day 3 — Bronze Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -8016,6 +8186,7 @@ ____________________________________________________________________________
 # Day 43 — Term 1, Week 9, Day 3 — Silver Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -8063,6 +8234,7 @@ ____________________________________________________________________________
 # Day 43 — Term 1, Week 9, Day 3 — Gold Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -8110,6 +8282,7 @@ ____________________________________________________________________________
 # Day 44 — Term 1, Week 9, Day 4 — Copper Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -8157,6 +8330,7 @@ ____________________________________________________________________________
 # Day 44 — Term 1, Week 9, Day 4 — Bronze Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -8204,6 +8378,7 @@ ____________________________________________________________________________
 # Day 44 — Term 1, Week 9, Day 4 — Silver Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -8251,6 +8426,7 @@ ____________________________________________________________________________
 # Day 44 — Term 1, Week 9, Day 4 — Gold Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -8298,6 +8474,7 @@ ____________________________________________________________________________
 # Day 45 — Term 1, Week 9, Day 5 — Copper Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -8345,6 +8522,7 @@ ____________________________________________________________________________
 # Day 45 — Term 1, Week 9, Day 5 — Bronze Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -8392,6 +8570,7 @@ ____________________________________________________________________________
 # Day 45 — Term 1, Week 9, Day 5 — Silver Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -8439,6 +8618,7 @@ ____________________________________________________________________________
 # Day 45 — Term 1, Week 9, Day 5 — Gold Worksheet
 **Weekly focus:** High-frequency words in context  
 **Learning intention:** Recognise teacher-approved familiar words; use them in meaningful oral and written sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -8486,6 +8666,7 @@ ____________________________________________________________________________
 # Day 46 — Term 2, Week 1, Day 1 — Copper Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -8533,6 +8714,7 @@ ____________________________________________________________________________
 # Day 46 — Term 2, Week 1, Day 1 — Bronze Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -8580,6 +8762,7 @@ ____________________________________________________________________________
 # Day 46 — Term 2, Week 1, Day 1 — Silver Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -8627,6 +8810,7 @@ ____________________________________________________________________________
 # Day 46 — Term 2, Week 1, Day 1 — Gold Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -8674,6 +8858,7 @@ ____________________________________________________________________________
 # Day 47 — Term 2, Week 1, Day 2 — Copper Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -8721,6 +8906,7 @@ ____________________________________________________________________________
 # Day 47 — Term 2, Week 1, Day 2 — Bronze Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -8768,6 +8954,7 @@ ____________________________________________________________________________
 # Day 47 — Term 2, Week 1, Day 2 — Silver Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -8815,6 +9002,7 @@ ____________________________________________________________________________
 # Day 47 — Term 2, Week 1, Day 2 — Gold Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -8862,6 +9050,7 @@ ____________________________________________________________________________
 # Day 48 — Term 2, Week 1, Day 3 — Copper Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -8909,6 +9098,7 @@ ____________________________________________________________________________
 # Day 48 — Term 2, Week 1, Day 3 — Bronze Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -8956,6 +9146,7 @@ ____________________________________________________________________________
 # Day 48 — Term 2, Week 1, Day 3 — Silver Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -9003,6 +9194,7 @@ ____________________________________________________________________________
 # Day 48 — Term 2, Week 1, Day 3 — Gold Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -9050,6 +9242,7 @@ ____________________________________________________________________________
 # Day 49 — Term 2, Week 1, Day 4 — Copper Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -9097,6 +9290,7 @@ ____________________________________________________________________________
 # Day 49 — Term 2, Week 1, Day 4 — Bronze Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -9144,6 +9338,7 @@ ____________________________________________________________________________
 # Day 49 — Term 2, Week 1, Day 4 — Silver Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -9191,6 +9386,7 @@ ____________________________________________________________________________
 # Day 49 — Term 2, Week 1, Day 4 — Gold Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -9238,6 +9434,7 @@ ____________________________________________________________________________
 # Day 50 — Term 2, Week 1, Day 5 — Copper Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -9285,6 +9482,7 @@ ____________________________________________________________________________
 # Day 50 — Term 2, Week 1, Day 5 — Bronze Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -9332,6 +9530,7 @@ ____________________________________________________________________________
 # Day 50 — Term 2, Week 1, Day 5 — Silver Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -9379,6 +9578,7 @@ ____________________________________________________________________________
 # Day 50 — Term 2, Week 1, Day 5 — Gold Worksheet
 **Weekly focus:** Vocabulary: people and places  
 **Learning intention:** Name people and places at home, school and community; sort and describe.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -9426,6 +9626,7 @@ ____________________________________________________________________________
 # Day 51 — Term 2, Week 2, Day 1 — Copper Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -9473,6 +9674,7 @@ ____________________________________________________________________________
 # Day 51 — Term 2, Week 2, Day 1 — Bronze Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -9520,6 +9722,7 @@ ____________________________________________________________________________
 # Day 51 — Term 2, Week 2, Day 1 — Silver Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -9567,6 +9770,7 @@ ____________________________________________________________________________
 # Day 51 — Term 2, Week 2, Day 1 — Gold Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -9614,6 +9818,7 @@ ____________________________________________________________________________
 # Day 52 — Term 2, Week 2, Day 2 — Copper Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -9661,6 +9866,7 @@ ____________________________________________________________________________
 # Day 52 — Term 2, Week 2, Day 2 — Bronze Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -9708,6 +9914,7 @@ ____________________________________________________________________________
 # Day 52 — Term 2, Week 2, Day 2 — Silver Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -9755,6 +9962,7 @@ ____________________________________________________________________________
 # Day 52 — Term 2, Week 2, Day 2 — Gold Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -9802,6 +10010,7 @@ ____________________________________________________________________________
 # Day 53 — Term 2, Week 2, Day 3 — Copper Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -9849,6 +10058,7 @@ ____________________________________________________________________________
 # Day 53 — Term 2, Week 2, Day 3 — Bronze Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -9896,6 +10106,7 @@ ____________________________________________________________________________
 # Day 53 — Term 2, Week 2, Day 3 — Silver Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -9943,6 +10154,7 @@ ____________________________________________________________________________
 # Day 53 — Term 2, Week 2, Day 3 — Gold Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -9990,6 +10202,7 @@ ____________________________________________________________________________
 # Day 54 — Term 2, Week 2, Day 4 — Copper Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -10037,6 +10250,7 @@ ____________________________________________________________________________
 # Day 54 — Term 2, Week 2, Day 4 — Bronze Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -10084,6 +10298,7 @@ ____________________________________________________________________________
 # Day 54 — Term 2, Week 2, Day 4 — Silver Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -10131,6 +10346,7 @@ ____________________________________________________________________________
 # Day 54 — Term 2, Week 2, Day 4 — Gold Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -10178,6 +10394,7 @@ ____________________________________________________________________________
 # Day 55 — Term 2, Week 2, Day 5 — Copper Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -10225,6 +10442,7 @@ ____________________________________________________________________________
 # Day 55 — Term 2, Week 2, Day 5 — Bronze Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -10272,6 +10490,7 @@ ____________________________________________________________________________
 # Day 55 — Term 2, Week 2, Day 5 — Silver Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -10319,6 +10538,7 @@ ____________________________________________________________________________
 # Day 55 — Term 2, Week 2, Day 5 — Gold Worksheet
 **Weekly focus:** Vocabulary: objects and actions  
 **Learning intention:** Name familiar objects and action words; match verbs to pictures; use in sentences.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -10366,6 +10586,7 @@ ____________________________________________________________________________
 # Day 56 — Term 2, Week 3, Day 1 — Copper Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -10413,6 +10634,7 @@ ____________________________________________________________________________
 # Day 56 — Term 2, Week 3, Day 1 — Bronze Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -10460,6 +10682,7 @@ ____________________________________________________________________________
 # Day 56 — Term 2, Week 3, Day 1 — Silver Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -10507,6 +10730,7 @@ ____________________________________________________________________________
 # Day 56 — Term 2, Week 3, Day 1 — Gold Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -10554,6 +10778,7 @@ ____________________________________________________________________________
 # Day 57 — Term 2, Week 3, Day 2 — Copper Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -10601,6 +10826,7 @@ ____________________________________________________________________________
 # Day 57 — Term 2, Week 3, Day 2 — Bronze Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -10648,6 +10874,7 @@ ____________________________________________________________________________
 # Day 57 — Term 2, Week 3, Day 2 — Silver Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -10695,6 +10922,7 @@ ____________________________________________________________________________
 # Day 57 — Term 2, Week 3, Day 2 — Gold Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -10742,6 +10970,7 @@ ____________________________________________________________________________
 # Day 58 — Term 2, Week 3, Day 3 — Copper Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -10789,6 +11018,7 @@ ____________________________________________________________________________
 # Day 58 — Term 2, Week 3, Day 3 — Bronze Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -10836,6 +11066,7 @@ ____________________________________________________________________________
 # Day 58 — Term 2, Week 3, Day 3 — Silver Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -10883,6 +11114,7 @@ ____________________________________________________________________________
 # Day 58 — Term 2, Week 3, Day 3 — Gold Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -10930,6 +11162,7 @@ ____________________________________________________________________________
 # Day 59 — Term 2, Week 3, Day 4 — Copper Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -10977,6 +11210,7 @@ ____________________________________________________________________________
 # Day 59 — Term 2, Week 3, Day 4 — Bronze Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -11024,6 +11258,7 @@ ____________________________________________________________________________
 # Day 59 — Term 2, Week 3, Day 4 — Silver Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -11071,6 +11306,7 @@ ____________________________________________________________________________
 # Day 59 — Term 2, Week 3, Day 4 — Gold Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -11118,6 +11354,7 @@ ____________________________________________________________________________
 # Day 60 — Term 2, Week 3, Day 5 — Copper Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -11165,6 +11402,7 @@ ____________________________________________________________________________
 # Day 60 — Term 2, Week 3, Day 5 — Bronze Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -11212,6 +11450,7 @@ ____________________________________________________________________________
 # Day 60 — Term 2, Week 3, Day 5 — Silver Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -11259,6 +11498,7 @@ ____________________________________________________________________________
 # Day 60 — Term 2, Week 3, Day 5 — Gold Worksheet
 **Weekly focus:** Sentence meaning and punctuation  
 **Learning intention:** Distinguish a sentence; order words; use capital at start and full stop at end with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -11306,6 +11546,7 @@ ____________________________________________________________________________
 # Day 61 — Term 2, Week 4, Day 1 — Copper Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -11353,6 +11594,7 @@ ____________________________________________________________________________
 # Day 61 — Term 2, Week 4, Day 1 — Bronze Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -11400,6 +11642,7 @@ ____________________________________________________________________________
 # Day 61 — Term 2, Week 4, Day 1 — Silver Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -11447,6 +11690,7 @@ ____________________________________________________________________________
 # Day 61 — Term 2, Week 4, Day 1 — Gold Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -11494,6 +11738,7 @@ ____________________________________________________________________________
 # Day 62 — Term 2, Week 4, Day 2 — Copper Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -11541,6 +11786,7 @@ ____________________________________________________________________________
 # Day 62 — Term 2, Week 4, Day 2 — Bronze Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -11588,6 +11834,7 @@ ____________________________________________________________________________
 # Day 62 — Term 2, Week 4, Day 2 — Silver Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -11635,6 +11882,7 @@ ____________________________________________________________________________
 # Day 62 — Term 2, Week 4, Day 2 — Gold Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -11682,6 +11930,7 @@ ____________________________________________________________________________
 # Day 63 — Term 2, Week 4, Day 3 — Copper Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -11729,6 +11978,7 @@ ____________________________________________________________________________
 # Day 63 — Term 2, Week 4, Day 3 — Bronze Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -11776,6 +12026,7 @@ ____________________________________________________________________________
 # Day 63 — Term 2, Week 4, Day 3 — Silver Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -11823,6 +12074,7 @@ ____________________________________________________________________________
 # Day 63 — Term 2, Week 4, Day 3 — Gold Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -11870,6 +12122,7 @@ ____________________________________________________________________________
 # Day 64 — Term 2, Week 4, Day 4 — Copper Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -11917,6 +12170,7 @@ ____________________________________________________________________________
 # Day 64 — Term 2, Week 4, Day 4 — Bronze Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -11964,6 +12218,7 @@ ____________________________________________________________________________
 # Day 64 — Term 2, Week 4, Day 4 — Silver Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -12011,6 +12266,7 @@ ____________________________________________________________________________
 # Day 64 — Term 2, Week 4, Day 4 — Gold Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -12058,6 +12314,7 @@ ____________________________________________________________________________
 # Day 65 — Term 2, Week 4, Day 5 — Copper Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -12105,6 +12362,7 @@ ____________________________________________________________________________
 # Day 65 — Term 2, Week 4, Day 5 — Bronze Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -12152,6 +12410,7 @@ ____________________________________________________________________________
 # Day 65 — Term 2, Week 4, Day 5 — Silver Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -12199,6 +12458,7 @@ ____________________________________________________________________________
 # Day 65 — Term 2, Week 4, Day 5 — Gold Worksheet
 **Weekly focus:** Shared reading: characters and setting  
 **Learning intention:** Identify who is in a familiar teacher-read story and where it happens.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -12246,6 +12506,7 @@ ____________________________________________________________________________
 # Day 66 — Term 2, Week 5, Day 1 — Copper Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -12293,6 +12554,7 @@ ____________________________________________________________________________
 # Day 66 — Term 2, Week 5, Day 1 — Bronze Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -12340,6 +12602,7 @@ ____________________________________________________________________________
 # Day 66 — Term 2, Week 5, Day 1 — Silver Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -12387,6 +12650,7 @@ ____________________________________________________________________________
 # Day 66 — Term 2, Week 5, Day 1 — Gold Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -12434,6 +12698,7 @@ ____________________________________________________________________________
 # Day 67 — Term 2, Week 5, Day 2 — Copper Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -12481,6 +12746,7 @@ ____________________________________________________________________________
 # Day 67 — Term 2, Week 5, Day 2 — Bronze Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -12528,6 +12794,7 @@ ____________________________________________________________________________
 # Day 67 — Term 2, Week 5, Day 2 — Silver Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -12575,6 +12842,7 @@ ____________________________________________________________________________
 # Day 67 — Term 2, Week 5, Day 2 — Gold Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -12622,6 +12890,7 @@ ____________________________________________________________________________
 # Day 68 — Term 2, Week 5, Day 3 — Copper Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -12669,6 +12938,7 @@ ____________________________________________________________________________
 # Day 68 — Term 2, Week 5, Day 3 — Bronze Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -12716,6 +12986,7 @@ ____________________________________________________________________________
 # Day 68 — Term 2, Week 5, Day 3 — Silver Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -12763,6 +13034,7 @@ ____________________________________________________________________________
 # Day 68 — Term 2, Week 5, Day 3 — Gold Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -12810,6 +13082,7 @@ ____________________________________________________________________________
 # Day 69 — Term 2, Week 5, Day 4 — Copper Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -12857,6 +13130,7 @@ ____________________________________________________________________________
 # Day 69 — Term 2, Week 5, Day 4 — Bronze Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -12904,6 +13178,7 @@ ____________________________________________________________________________
 # Day 69 — Term 2, Week 5, Day 4 — Silver Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -12951,6 +13226,7 @@ ____________________________________________________________________________
 # Day 69 — Term 2, Week 5, Day 4 — Gold Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -12998,6 +13274,7 @@ ____________________________________________________________________________
 # Day 70 — Term 2, Week 5, Day 5 — Copper Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -13045,6 +13322,7 @@ ____________________________________________________________________________
 # Day 70 — Term 2, Week 5, Day 5 — Bronze Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -13092,6 +13370,7 @@ ____________________________________________________________________________
 # Day 70 — Term 2, Week 5, Day 5 — Silver Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -13139,6 +13418,7 @@ ____________________________________________________________________________
 # Day 70 — Term 2, Week 5, Day 5 — Gold Worksheet
 **Weekly focus:** Shared reading: sequence and retell  
 **Learning intention:** Order beginning, middle and end; retell with picture cues and sequence words.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -13186,6 +13466,7 @@ ____________________________________________________________________________
 # Day 71 — Term 2, Week 6, Day 1 — Copper Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -13233,6 +13514,7 @@ ____________________________________________________________________________
 # Day 71 — Term 2, Week 6, Day 1 — Bronze Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -13280,6 +13562,7 @@ ____________________________________________________________________________
 # Day 71 — Term 2, Week 6, Day 1 — Silver Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -13327,6 +13610,7 @@ ____________________________________________________________________________
 # Day 71 — Term 2, Week 6, Day 1 — Gold Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -13374,6 +13658,7 @@ ____________________________________________________________________________
 # Day 72 — Term 2, Week 6, Day 2 — Copper Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -13421,6 +13706,7 @@ ____________________________________________________________________________
 # Day 72 — Term 2, Week 6, Day 2 — Bronze Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -13468,6 +13754,7 @@ ____________________________________________________________________________
 # Day 72 — Term 2, Week 6, Day 2 — Silver Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -13515,6 +13802,7 @@ ____________________________________________________________________________
 # Day 72 — Term 2, Week 6, Day 2 — Gold Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -13562,6 +13850,7 @@ ____________________________________________________________________________
 # Day 73 — Term 2, Week 6, Day 3 — Copper Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -13609,6 +13898,7 @@ ____________________________________________________________________________
 # Day 73 — Term 2, Week 6, Day 3 — Bronze Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -13656,6 +13946,7 @@ ____________________________________________________________________________
 # Day 73 — Term 2, Week 6, Day 3 — Silver Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -13703,6 +13994,7 @@ ____________________________________________________________________________
 # Day 73 — Term 2, Week 6, Day 3 — Gold Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -13750,6 +14042,7 @@ ____________________________________________________________________________
 # Day 74 — Term 2, Week 6, Day 4 — Copper Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -13797,6 +14090,7 @@ ____________________________________________________________________________
 # Day 74 — Term 2, Week 6, Day 4 — Bronze Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -13844,6 +14138,7 @@ ____________________________________________________________________________
 # Day 74 — Term 2, Week 6, Day 4 — Silver Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -13891,6 +14186,7 @@ ____________________________________________________________________________
 # Day 74 — Term 2, Week 6, Day 4 — Gold Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -13938,6 +14234,7 @@ ____________________________________________________________________________
 # Day 75 — Term 2, Week 6, Day 5 — Copper Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -13985,6 +14282,7 @@ ____________________________________________________________________________
 # Day 75 — Term 2, Week 6, Day 5 — Bronze Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -14032,6 +14330,7 @@ ____________________________________________________________________________
 # Day 75 — Term 2, Week 6, Day 5 — Silver Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -14079,6 +14378,7 @@ ____________________________________________________________________________
 # Day 75 — Term 2, Week 6, Day 5 — Gold Worksheet
 **Weekly focus:** Comprehension: literal questions  
 **Learning intention:** Answer who, what, where questions from a short teacher-read text or picture.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -14126,6 +14426,7 @@ ____________________________________________________________________________
 # Day 76 — Term 2, Week 7, Day 1 — Copper Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -14173,6 +14474,7 @@ ____________________________________________________________________________
 # Day 76 — Term 2, Week 7, Day 1 — Bronze Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -14220,6 +14522,7 @@ ____________________________________________________________________________
 # Day 76 — Term 2, Week 7, Day 1 — Silver Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -14267,6 +14570,7 @@ ____________________________________________________________________________
 # Day 76 — Term 2, Week 7, Day 1 — Gold Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -14314,6 +14618,7 @@ ____________________________________________________________________________
 # Day 77 — Term 2, Week 7, Day 2 — Copper Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -14361,6 +14666,7 @@ ____________________________________________________________________________
 # Day 77 — Term 2, Week 7, Day 2 — Bronze Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -14408,6 +14714,7 @@ ____________________________________________________________________________
 # Day 77 — Term 2, Week 7, Day 2 — Silver Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -14455,6 +14762,7 @@ ____________________________________________________________________________
 # Day 77 — Term 2, Week 7, Day 2 — Gold Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -14502,6 +14810,7 @@ ____________________________________________________________________________
 # Day 78 — Term 2, Week 7, Day 3 — Copper Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -14549,6 +14858,7 @@ ____________________________________________________________________________
 # Day 78 — Term 2, Week 7, Day 3 — Bronze Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -14596,6 +14906,7 @@ ____________________________________________________________________________
 # Day 78 — Term 2, Week 7, Day 3 — Silver Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -14643,6 +14954,7 @@ ____________________________________________________________________________
 # Day 78 — Term 2, Week 7, Day 3 — Gold Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -14690,6 +15002,7 @@ ____________________________________________________________________________
 # Day 79 — Term 2, Week 7, Day 4 — Copper Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -14737,6 +15050,7 @@ ____________________________________________________________________________
 # Day 79 — Term 2, Week 7, Day 4 — Bronze Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -14784,6 +15098,7 @@ ____________________________________________________________________________
 # Day 79 — Term 2, Week 7, Day 4 — Silver Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -14831,6 +15146,7 @@ ____________________________________________________________________________
 # Day 79 — Term 2, Week 7, Day 4 — Gold Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -14878,6 +15194,7 @@ ____________________________________________________________________________
 # Day 80 — Term 2, Week 7, Day 5 — Copper Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -14925,6 +15242,7 @@ ____________________________________________________________________________
 # Day 80 — Term 2, Week 7, Day 5 — Bronze Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -14972,6 +15290,7 @@ ____________________________________________________________________________
 # Day 80 — Term 2, Week 7, Day 5 — Silver Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -15019,6 +15338,7 @@ ____________________________________________________________________________
 # Day 80 — Term 2, Week 7, Day 5 — Gold Worksheet
 **Weekly focus:** Comprehension: prediction and connection  
 **Learning intention:** Predict from a cover or picture; connect a story event to familiar experience.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -15066,6 +15386,7 @@ ____________________________________________________________________________
 # Day 81 — Term 2, Week 8, Day 1 — Copper Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -15113,6 +15434,7 @@ ____________________________________________________________________________
 # Day 81 — Term 2, Week 8, Day 1 — Bronze Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -15160,6 +15482,7 @@ ____________________________________________________________________________
 # Day 81 — Term 2, Week 8, Day 1 — Silver Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -15207,6 +15530,7 @@ ____________________________________________________________________________
 # Day 81 — Term 2, Week 8, Day 1 — Gold Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -15254,6 +15578,7 @@ ____________________________________________________________________________
 # Day 82 — Term 2, Week 8, Day 2 — Copper Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -15301,6 +15626,7 @@ ____________________________________________________________________________
 # Day 82 — Term 2, Week 8, Day 2 — Bronze Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -15348,6 +15674,7 @@ ____________________________________________________________________________
 # Day 82 — Term 2, Week 8, Day 2 — Silver Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -15395,6 +15722,7 @@ ____________________________________________________________________________
 # Day 82 — Term 2, Week 8, Day 2 — Gold Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -15442,6 +15770,7 @@ ____________________________________________________________________________
 # Day 83 — Term 2, Week 8, Day 3 — Copper Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -15489,6 +15818,7 @@ ____________________________________________________________________________
 # Day 83 — Term 2, Week 8, Day 3 — Bronze Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -15536,6 +15866,7 @@ ____________________________________________________________________________
 # Day 83 — Term 2, Week 8, Day 3 — Silver Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -15583,6 +15914,7 @@ ____________________________________________________________________________
 # Day 83 — Term 2, Week 8, Day 3 — Gold Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -15630,6 +15962,7 @@ ____________________________________________________________________________
 # Day 84 — Term 2, Week 8, Day 4 — Copper Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -15677,6 +16010,7 @@ ____________________________________________________________________________
 # Day 84 — Term 2, Week 8, Day 4 — Bronze Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -15724,6 +16058,7 @@ ____________________________________________________________________________
 # Day 84 — Term 2, Week 8, Day 4 — Silver Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -15771,6 +16106,7 @@ ____________________________________________________________________________
 # Day 84 — Term 2, Week 8, Day 4 — Gold Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -15818,6 +16154,7 @@ ____________________________________________________________________________
 # Day 85 — Term 2, Week 8, Day 5 — Copper Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -15865,6 +16202,7 @@ ____________________________________________________________________________
 # Day 85 — Term 2, Week 8, Day 5 — Bronze Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -15912,6 +16250,7 @@ ____________________________________________________________________________
 # Day 85 — Term 2, Week 8, Day 5 — Silver Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -15959,6 +16298,7 @@ ____________________________________________________________________________
 # Day 85 — Term 2, Week 8, Day 5 — Gold Worksheet
 **Weekly focus:** Describing words and expanded noun groups  
 **Learning intention:** Choose precise describing words for familiar people, animals, places and objects.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -16006,6 +16346,7 @@ ____________________________________________________________________________
 # Day 86 — Term 2, Week 9, Day 1 — Copper Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -16053,6 +16394,7 @@ ____________________________________________________________________________
 # Day 86 — Term 2, Week 9, Day 1 — Bronze Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -16100,6 +16442,7 @@ ____________________________________________________________________________
 # Day 86 — Term 2, Week 9, Day 1 — Silver Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -16147,6 +16490,7 @@ ____________________________________________________________________________
 # Day 86 — Term 2, Week 9, Day 1 — Gold Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -16194,6 +16538,7 @@ ____________________________________________________________________________
 # Day 87 — Term 2, Week 9, Day 2 — Copper Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -16241,6 +16586,7 @@ ____________________________________________________________________________
 # Day 87 — Term 2, Week 9, Day 2 — Bronze Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -16288,6 +16634,7 @@ ____________________________________________________________________________
 # Day 87 — Term 2, Week 9, Day 2 — Silver Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -16335,6 +16682,7 @@ ____________________________________________________________________________
 # Day 87 — Term 2, Week 9, Day 2 — Gold Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -16382,6 +16730,7 @@ ____________________________________________________________________________
 # Day 88 — Term 2, Week 9, Day 3 — Copper Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -16429,6 +16778,7 @@ ____________________________________________________________________________
 # Day 88 — Term 2, Week 9, Day 3 — Bronze Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -16476,6 +16826,7 @@ ____________________________________________________________________________
 # Day 88 — Term 2, Week 9, Day 3 — Silver Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -16523,6 +16874,7 @@ ____________________________________________________________________________
 # Day 88 — Term 2, Week 9, Day 3 — Gold Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -16570,6 +16922,7 @@ ____________________________________________________________________________
 # Day 89 — Term 2, Week 9, Day 4 — Copper Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -16617,6 +16970,7 @@ ____________________________________________________________________________
 # Day 89 — Term 2, Week 9, Day 4 — Bronze Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -16664,6 +17018,7 @@ ____________________________________________________________________________
 # Day 89 — Term 2, Week 9, Day 4 — Silver Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -16711,6 +17066,7 @@ ____________________________________________________________________________
 # Day 89 — Term 2, Week 9, Day 4 — Gold Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -16758,6 +17114,7 @@ ____________________________________________________________________________
 # Day 90 — Term 2, Week 9, Day 5 — Copper Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -16805,6 +17162,7 @@ ____________________________________________________________________________
 # Day 90 — Term 2, Week 9, Day 5 — Bronze Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -16852,6 +17210,7 @@ ____________________________________________________________________________
 # Day 90 — Term 2, Week 9, Day 5 — Silver Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -16899,6 +17258,7 @@ ____________________________________________________________________________
 # Day 90 — Term 2, Week 9, Day 5 — Gold Worksheet
 **Weekly focus:** Questions and complete responses  
 **Learning intention:** Ask and answer who, what, where and when questions using an appropriate response.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -16946,6 +17306,7 @@ ____________________________________________________________________________
 # Day 91 — Term 3, Week 1, Day 1 — Copper Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -16993,6 +17354,7 @@ ____________________________________________________________________________
 # Day 91 — Term 3, Week 1, Day 1 — Bronze Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -17040,6 +17402,7 @@ ____________________________________________________________________________
 # Day 91 — Term 3, Week 1, Day 1 — Silver Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -17087,6 +17450,7 @@ ____________________________________________________________________________
 # Day 91 — Term 3, Week 1, Day 1 — Gold Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -17134,6 +17498,7 @@ ____________________________________________________________________________
 # Day 92 — Term 3, Week 1, Day 2 — Copper Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -17181,6 +17546,7 @@ ____________________________________________________________________________
 # Day 92 — Term 3, Week 1, Day 2 — Bronze Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -17228,6 +17594,7 @@ ____________________________________________________________________________
 # Day 92 — Term 3, Week 1, Day 2 — Silver Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -17275,6 +17642,7 @@ ____________________________________________________________________________
 # Day 92 — Term 3, Week 1, Day 2 — Gold Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -17322,6 +17690,7 @@ ____________________________________________________________________________
 # Day 93 — Term 3, Week 1, Day 3 — Copper Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -17369,6 +17738,7 @@ ____________________________________________________________________________
 # Day 93 — Term 3, Week 1, Day 3 — Bronze Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -17416,6 +17786,7 @@ ____________________________________________________________________________
 # Day 93 — Term 3, Week 1, Day 3 — Silver Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -17463,6 +17834,7 @@ ____________________________________________________________________________
 # Day 93 — Term 3, Week 1, Day 3 — Gold Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -17510,6 +17882,7 @@ ____________________________________________________________________________
 # Day 94 — Term 3, Week 1, Day 4 — Copper Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -17557,6 +17930,7 @@ ____________________________________________________________________________
 # Day 94 — Term 3, Week 1, Day 4 — Bronze Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -17604,6 +17978,7 @@ ____________________________________________________________________________
 # Day 94 — Term 3, Week 1, Day 4 — Silver Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -17651,6 +18026,7 @@ ____________________________________________________________________________
 # Day 94 — Term 3, Week 1, Day 4 — Gold Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -17698,6 +18074,7 @@ ____________________________________________________________________________
 # Day 95 — Term 3, Week 1, Day 5 — Copper Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -17745,6 +18122,7 @@ ____________________________________________________________________________
 # Day 95 — Term 3, Week 1, Day 5 — Bronze Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -17792,6 +18170,7 @@ ____________________________________________________________________________
 # Day 95 — Term 3, Week 1, Day 5 — Silver Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -17839,6 +18218,7 @@ ____________________________________________________________________________
 # Day 95 — Term 3, Week 1, Day 5 — Gold Worksheet
 **Weekly focus:** Writing: plan and compose a sentence  
 **Learning intention:** Orally plan an idea; draw; label; compose one meaningful sentence with support.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -17886,6 +18266,7 @@ ____________________________________________________________________________
 # Day 96 — Term 3, Week 2, Day 1 — Copper Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -17933,6 +18314,7 @@ ____________________________________________________________________________
 # Day 96 — Term 3, Week 2, Day 1 — Bronze Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -17980,6 +18362,7 @@ ____________________________________________________________________________
 # Day 96 — Term 3, Week 2, Day 1 — Silver Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -18027,6 +18410,7 @@ ____________________________________________________________________________
 # Day 96 — Term 3, Week 2, Day 1 — Gold Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -18074,6 +18458,7 @@ ____________________________________________________________________________
 # Day 97 — Term 3, Week 2, Day 2 — Copper Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -18121,6 +18506,7 @@ ____________________________________________________________________________
 # Day 97 — Term 3, Week 2, Day 2 — Bronze Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -18168,6 +18554,7 @@ ____________________________________________________________________________
 # Day 97 — Term 3, Week 2, Day 2 — Silver Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -18215,6 +18602,7 @@ ____________________________________________________________________________
 # Day 97 — Term 3, Week 2, Day 2 — Gold Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -18262,6 +18650,7 @@ ____________________________________________________________________________
 # Day 98 — Term 3, Week 2, Day 3 — Copper Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -18309,6 +18698,7 @@ ____________________________________________________________________________
 # Day 98 — Term 3, Week 2, Day 3 — Bronze Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -18356,6 +18746,7 @@ ____________________________________________________________________________
 # Day 98 — Term 3, Week 2, Day 3 — Silver Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -18403,6 +18794,7 @@ ____________________________________________________________________________
 # Day 98 — Term 3, Week 2, Day 3 — Gold Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -18450,6 +18842,7 @@ ____________________________________________________________________________
 # Day 99 — Term 3, Week 2, Day 4 — Copper Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -18497,6 +18890,7 @@ ____________________________________________________________________________
 # Day 99 — Term 3, Week 2, Day 4 — Bronze Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -18544,6 +18938,7 @@ ____________________________________________________________________________
 # Day 99 — Term 3, Week 2, Day 4 — Silver Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -18591,6 +18986,7 @@ ____________________________________________________________________________
 # Day 99 — Term 3, Week 2, Day 4 — Gold Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -18638,6 +19034,7 @@ ____________________________________________________________________________
 # Day 100 — Term 3, Week 2, Day 5 — Copper Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -18685,6 +19082,7 @@ ____________________________________________________________________________
 # Day 100 — Term 3, Week 2, Day 5 — Bronze Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -18732,6 +19130,7 @@ ____________________________________________________________________________
 # Day 100 — Term 3, Week 2, Day 5 — Silver Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -18779,6 +19178,7 @@ ____________________________________________________________________________
 # Day 100 — Term 3, Week 2, Day 5 — Gold Worksheet
 **Weekly focus:** Writing: recount a familiar experience  
 **Learning intention:** Sequence a real familiar event and write/dictate a simple recount.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -18826,6 +19226,7 @@ ____________________________________________________________________________
 # Day 101 — Term 3, Week 3, Day 1 — Copper Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -18874,6 +19275,7 @@ ____________________________________________________________________________
 # Day 101 — Term 3, Week 3, Day 1 — Bronze Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -18922,6 +19324,7 @@ ____________________________________________________________________________
 # Day 101 — Term 3, Week 3, Day 1 — Silver Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -18970,6 +19373,7 @@ ____________________________________________________________________________
 # Day 101 — Term 3, Week 3, Day 1 — Gold Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -19018,6 +19422,7 @@ ____________________________________________________________________________
 # Day 102 — Term 3, Week 3, Day 2 — Copper Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -19066,6 +19471,7 @@ ____________________________________________________________________________
 # Day 102 — Term 3, Week 3, Day 2 — Bronze Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -19114,6 +19520,7 @@ ____________________________________________________________________________
 # Day 102 — Term 3, Week 3, Day 2 — Silver Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -19162,6 +19569,7 @@ ____________________________________________________________________________
 # Day 102 — Term 3, Week 3, Day 2 — Gold Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -19210,6 +19618,7 @@ ____________________________________________________________________________
 # Day 103 — Term 3, Week 3, Day 3 — Copper Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -19258,6 +19667,7 @@ ____________________________________________________________________________
 # Day 103 — Term 3, Week 3, Day 3 — Bronze Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -19306,6 +19716,7 @@ ____________________________________________________________________________
 # Day 103 — Term 3, Week 3, Day 3 — Silver Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -19354,6 +19765,7 @@ ____________________________________________________________________________
 # Day 103 — Term 3, Week 3, Day 3 — Gold Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -19402,6 +19814,7 @@ ____________________________________________________________________________
 # Day 104 — Term 3, Week 3, Day 4 — Copper Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -19450,6 +19863,7 @@ ____________________________________________________________________________
 # Day 104 — Term 3, Week 3, Day 4 — Bronze Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -19498,6 +19912,7 @@ ____________________________________________________________________________
 # Day 104 — Term 3, Week 3, Day 4 — Silver Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -19546,6 +19961,7 @@ ____________________________________________________________________________
 # Day 104 — Term 3, Week 3, Day 4 — Gold Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -19594,6 +20010,7 @@ ____________________________________________________________________________
 # Day 105 — Term 3, Week 3, Day 5 — Copper Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -19642,6 +20059,7 @@ ____________________________________________________________________________
 # Day 105 — Term 3, Week 3, Day 5 — Bronze Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -19690,6 +20108,7 @@ ____________________________________________________________________________
 # Day 105 — Term 3, Week 3, Day 5 — Silver Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -19738,6 +20157,7 @@ ____________________________________________________________________________
 # Day 105 — Term 3, Week 3, Day 5 — Gold Worksheet
 **Weekly focus:** Writing: instructions and procedural language  
 **Learning intention:** Order steps and communicate simple instructions using first/next/last.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -19786,6 +20206,7 @@ ____________________________________________________________________________
 # Day 106 — Term 3, Week 4, Day 1 — Copper Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -19833,6 +20254,7 @@ ____________________________________________________________________________
 # Day 106 — Term 3, Week 4, Day 1 — Bronze Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -19880,6 +20302,7 @@ ____________________________________________________________________________
 # Day 106 — Term 3, Week 4, Day 1 — Silver Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -19927,6 +20350,7 @@ ____________________________________________________________________________
 # Day 106 — Term 3, Week 4, Day 1 — Gold Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -19974,6 +20398,7 @@ ____________________________________________________________________________
 # Day 107 — Term 3, Week 4, Day 2 — Copper Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -20021,6 +20446,7 @@ ____________________________________________________________________________
 # Day 107 — Term 3, Week 4, Day 2 — Bronze Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -20068,6 +20494,7 @@ ____________________________________________________________________________
 # Day 107 — Term 3, Week 4, Day 2 — Silver Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -20115,6 +20542,7 @@ ____________________________________________________________________________
 # Day 107 — Term 3, Week 4, Day 2 — Gold Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -20162,6 +20590,7 @@ ____________________________________________________________________________
 # Day 108 — Term 3, Week 4, Day 3 — Copper Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -20209,6 +20638,7 @@ ____________________________________________________________________________
 # Day 108 — Term 3, Week 4, Day 3 — Bronze Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -20256,6 +20686,7 @@ ____________________________________________________________________________
 # Day 108 — Term 3, Week 4, Day 3 — Silver Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -20303,6 +20734,7 @@ ____________________________________________________________________________
 # Day 108 — Term 3, Week 4, Day 3 — Gold Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -20350,6 +20782,7 @@ ____________________________________________________________________________
 # Day 109 — Term 3, Week 4, Day 4 — Copper Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -20397,6 +20830,7 @@ ____________________________________________________________________________
 # Day 109 — Term 3, Week 4, Day 4 — Bronze Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -20444,6 +20878,7 @@ ____________________________________________________________________________
 # Day 109 — Term 3, Week 4, Day 4 — Silver Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -20491,6 +20926,7 @@ ____________________________________________________________________________
 # Day 109 — Term 3, Week 4, Day 4 — Gold Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -20538,6 +20974,7 @@ ____________________________________________________________________________
 # Day 110 — Term 3, Week 4, Day 5 — Copper Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -20585,6 +21022,7 @@ ____________________________________________________________________________
 # Day 110 — Term 3, Week 4, Day 5 — Bronze Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -20632,6 +21070,7 @@ ____________________________________________________________________________
 # Day 110 — Term 3, Week 4, Day 5 — Silver Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -20679,6 +21118,7 @@ ____________________________________________________________________________
 # Day 110 — Term 3, Week 4, Day 5 — Gold Worksheet
 **Weekly focus:** Writing: description and information  
 **Learning intention:** Observe a familiar subject; sort facts; draw, label and compose information.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
@@ -20726,6 +21166,7 @@ ____________________________________________________________________________
 # Day 111 — Term 3, Week 5, Day 1 — Copper Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Copper
@@ -20773,6 +21214,7 @@ ____________________________________________________________________________
 # Day 111 — Term 3, Week 5, Day 1 — Bronze Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Bronze
@@ -20820,6 +21262,7 @@ ____________________________________________________________________________
 # Day 111 — Term 3, Week 5, Day 1 — Silver Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Silver
@@ -20867,6 +21310,7 @@ ____________________________________________________________________________
 # Day 111 — Term 3, Week 5, Day 1 — Gold Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can circle, point to, match or sort the target examples.
 **Activity phase:** Listen and notice
 
 **Ability pathway:** Gold
@@ -20914,6 +21358,7 @@ ____________________________________________________________________________
 # Day 112 — Term 3, Week 5, Day 2 — Copper Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Copper
@@ -20961,6 +21406,7 @@ ____________________________________________________________________________
 # Day 112 — Term 3, Week 5, Day 2 — Bronze Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Bronze
@@ -21008,6 +21454,7 @@ ____________________________________________________________________________
 # Day 112 — Term 3, Week 5, Day 2 — Silver Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Silver
@@ -21055,6 +21502,7 @@ ____________________________________________________________________________
 # Day 112 — Term 3, Week 5, Day 2 — Gold Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a guided example using objects, picture cards, word cards or letter tiles.
 **Activity phase:** Model and explore
 
 **Ability pathway:** Gold
@@ -21102,6 +21550,7 @@ ____________________________________________________________________________
 # Day 113 — Term 3, Week 5, Day 3 — Copper Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Copper
@@ -21149,6 +21598,7 @@ ____________________________________________________________________________
 # Day 113 — Term 3, Week 5, Day 3 — Bronze Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Bronze
@@ -21196,6 +21646,7 @@ ____________________________________________________________________________
 # Day 113 — Term 3, Week 5, Day 3 — Silver Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Silver
@@ -21243,6 +21694,7 @@ ____________________________________________________________________________
 # Day 113 — Term 3, Week 5, Day 3 — Gold Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete two or three scaffolded practice items connected to the same target.
 **Activity phase:** Practise together
 
 **Ability pathway:** Gold
@@ -21290,6 +21742,7 @@ ____________________________________________________________________________
 # Day 114 — Term 3, Week 5, Day 4 — Copper Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Copper
@@ -21337,6 +21790,7 @@ ____________________________________________________________________________
 # Day 114 — Term 3, Week 5, Day 4 — Bronze Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Bronze
@@ -21384,6 +21838,7 @@ ____________________________________________________________________________
 # Day 114 — Term 3, Week 5, Day 4 — Silver Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Silver
@@ -21431,6 +21886,7 @@ ____________________________________________________________________________
 # Day 114 — Term 3, Week 5, Day 4 — Gold Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short application task with accessible response options.
 **Activity phase:** Apply independently
 
 **Ability pathway:** Gold
@@ -21478,6 +21934,7 @@ ____________________________________________________________________________
 # Day 115 — Term 3, Week 5, Day 5 — Copper Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Copper
@@ -21533,6 +21990,7 @@ ____________________________________________________________________________
 # Day 115 — Term 3, Week 5, Day 5 — Bronze Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Bronze
@@ -21588,6 +22046,7 @@ ____________________________________________________________________________
 # Day 115 — Term 3, Week 5, Day 5 — Silver Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Silver
@@ -21643,6 +22102,7 @@ ____________________________________________________________________________
 # Day 115 — Term 3, Week 5, Day 5 — Gold Worksheet
 **Weekly focus:** Review, fluency and portfolio presentation  
 **Learning intention:** Revisit taught skills; select work; read or present with an accessible response mode.  
+**PacEdu working achievement indicator:** The learner can complete a short review, then select one piece of work for the portfolio.
 **Activity phase:** Review and demonstrate
 
 **Ability pathway:** Gold
