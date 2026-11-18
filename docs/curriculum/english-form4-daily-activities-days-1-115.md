@@ -7,6 +7,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 1 — Term 1, Week 1 — Identity, voice and community — Listening and speaking
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -19,6 +20,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 2 — Term 1, Week 1 — Identity, voice and community — Vocabulary and language
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -31,6 +33,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 3 — Term 1, Week 1 — Identity, voice and community — Reading and viewing
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -43,6 +46,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 4 — Term 1, Week 1 — Identity, voice and community — Text types and critical literacy
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -55,6 +59,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 5 — Term 1, Week 1 — Identity, voice and community — Writing and sharing
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -67,6 +72,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 6 — Term 1, Week 2 — Language, culture and belonging — Listening and speaking
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -79,6 +85,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 7 — Term 1, Week 2 — Language, culture and belonging — Vocabulary and language
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -91,6 +98,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 8 — Term 1, Week 2 — Language, culture and belonging — Reading and viewing
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -103,6 +111,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 9 — Term 1, Week 2 — Language, culture and belonging — Text types and critical literacy
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -115,6 +124,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 10 — Term 1, Week 2 — Language, culture and belonging — Writing and sharing
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -127,6 +137,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 11 — Term 1, Week 3 — Environment and Pacific futures — Listening and speaking
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -139,6 +150,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 12 — Term 1, Week 3 — Environment and Pacific futures — Vocabulary and language
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -151,6 +163,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 13 — Term 1, Week 3 — Environment and Pacific futures — Reading and viewing
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -163,6 +176,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 14 — Term 1, Week 3 — Environment and Pacific futures — Text types and critical literacy
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -175,6 +189,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 15 — Term 1, Week 3 — Environment and Pacific futures — Writing and sharing
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -187,6 +202,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 16 — Term 1, Week 4 — Media, messages and influence — Listening and speaking
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -199,6 +215,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 17 — Term 1, Week 4 — Media, messages and influence — Vocabulary and language
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -211,6 +228,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 18 — Term 1, Week 4 — Media, messages and influence — Reading and viewing
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -223,6 +241,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 19 — Term 1, Week 4 — Media, messages and influence — Text types and critical literacy
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -235,6 +254,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 20 — Term 1, Week 4 — Media, messages and influence — Writing and sharing
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -247,6 +267,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 21 — Term 1, Week 5 — Health, science and public information — Listening and speaking
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -259,6 +280,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 22 — Term 1, Week 5 — Health, science and public information — Vocabulary and language
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -271,6 +293,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 23 — Term 1, Week 5 — Health, science and public information — Reading and viewing
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -283,6 +306,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 24 — Term 1, Week 5 — Health, science and public information — Text types and critical literacy
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -295,6 +319,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 25 — Term 1, Week 5 — Health, science and public information — Writing and sharing
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -307,6 +332,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 26 — Term 1, Week 6 — Stories, conflict and change — Listening and speaking
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -319,6 +345,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 27 — Term 1, Week 6 — Stories, conflict and change — Vocabulary and language
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -331,6 +358,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 28 — Term 1, Week 6 — Stories, conflict and change — Reading and viewing
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -343,6 +371,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 29 — Term 1, Week 6 — Stories, conflict and change — Text types and critical literacy
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -355,6 +384,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 30 — Term 1, Week 6 — Stories, conflict and change — Writing and sharing
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -367,6 +397,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 31 — Term 1, Week 7 — Work, enterprise and communication — Listening and speaking
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -379,6 +410,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 32 — Term 1, Week 7 — Work, enterprise and communication — Vocabulary and language
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -391,6 +423,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 33 — Term 1, Week 7 — Work, enterprise and communication — Reading and viewing
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -403,6 +436,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 34 — Term 1, Week 7 — Work, enterprise and communication — Text types and critical literacy
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -415,6 +449,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 35 — Term 1, Week 7 — Work, enterprise and communication — Writing and sharing
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -427,6 +462,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 36 — Term 1, Week 8 — Rights, responsibilities and citizenship — Listening and speaking
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -439,6 +475,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 37 — Term 1, Week 8 — Rights, responsibilities and citizenship — Vocabulary and language
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -451,6 +488,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 38 — Term 1, Week 8 — Rights, responsibilities and citizenship — Reading and viewing
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -463,6 +501,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 39 — Term 1, Week 8 — Rights, responsibilities and citizenship — Text types and critical literacy
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -475,6 +514,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 40 — Term 1, Week 8 — Rights, responsibilities and citizenship — Writing and sharing
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -487,6 +527,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 41 — Term 1, Week 9 — Innovation and ethical choices — Listening and speaking
 **Objective:** Compare perspectives; evaluate information; explain a reasoned position.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -499,6 +540,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 42 — Term 1, Week 9 — Innovation and ethical choices — Vocabulary and language
 **Objective:** Compare perspectives; evaluate information; explain a reasoned position.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -511,6 +553,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 43 — Term 1, Week 9 — Innovation and ethical choices — Reading and viewing
 **Objective:** Compare perspectives; evaluate information; explain a reasoned position.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -523,6 +566,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 44 — Term 1, Week 9 — Innovation and ethical choices — Text types and critical literacy
 **Objective:** Compare perspectives; evaluate information; explain a reasoned position.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -535,6 +579,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 45 — Term 1, Week 9 — Innovation and ethical choices — Writing and sharing
 **Objective:** Compare perspectives; evaluate information; explain a reasoned position.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -547,6 +592,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 46 — Term 2, Week 1 — Research and information literacy — Listening and speaking
 **Objective:** Form a question; take source notes; paraphrase; synthesise relevant ideas.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -559,6 +605,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 47 — Term 2, Week 1 — Research and information literacy — Vocabulary and language
 **Objective:** Form a question; take source notes; paraphrase; synthesise relevant ideas.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -571,6 +618,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 48 — Term 2, Week 1 — Research and information literacy — Reading and viewing
 **Objective:** Form a question; take source notes; paraphrase; synthesise relevant ideas.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -583,6 +631,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 49 — Term 2, Week 1 — Research and information literacy — Text types and critical literacy
 **Objective:** Form a question; take source notes; paraphrase; synthesise relevant ideas.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -595,6 +644,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 50 — Term 2, Week 1 — Research and information literacy — Writing and sharing
 **Objective:** Form a question; take source notes; paraphrase; synthesise relevant ideas.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -607,6 +657,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 51 — Term 2, Week 2 — Poetry, drama and literary craft — Listening and speaking
 **Objective:** Explore imagery, voice and structure; perform or compose a crafted response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -619,6 +670,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 52 — Term 2, Week 2 — Poetry, drama and literary craft — Vocabulary and language
 **Objective:** Explore imagery, voice and structure; perform or compose a crafted response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -631,6 +683,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 53 — Term 2, Week 2 — Poetry, drama and literary craft — Reading and viewing
 **Objective:** Explore imagery, voice and structure; perform or compose a crafted response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -643,6 +696,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 54 — Term 2, Week 2 — Poetry, drama and literary craft — Text types and critical literacy
 **Objective:** Explore imagery, voice and structure; perform or compose a crafted response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -655,6 +709,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 55 — Term 2, Week 2 — Poetry, drama and literary craft — Writing and sharing
 **Objective:** Explore imagery, voice and structure; perform or compose a crafted response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -667,6 +722,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 56 — Term 2, Week 3 — Travel, place and representation — Listening and speaking
 **Objective:** Analyse descriptive/informative texts; examine representation; write for a selected audience.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -679,6 +735,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 57 — Term 2, Week 3 — Travel, place and representation — Vocabulary and language
 **Objective:** Analyse descriptive/informative texts; examine representation; write for a selected audience.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -691,6 +748,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 58 — Term 2, Week 3 — Travel, place and representation — Reading and viewing
 **Objective:** Analyse descriptive/informative texts; examine representation; write for a selected audience.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -703,6 +761,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 59 — Term 2, Week 3 — Travel, place and representation — Text types and critical literacy
 **Objective:** Analyse descriptive/informative texts; examine representation; write for a selected audience.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -715,6 +774,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 60 — Term 2, Week 3 — Travel, place and representation — Writing and sharing
 **Objective:** Analyse descriptive/informative texts; examine representation; write for a selected audience.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -727,6 +787,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 61 — Term 2, Week 4 — Persuasion and public speaking — Listening and speaking
 **Objective:** Analyse rhetorical choices; plan a speech; support a position and address a counterargument.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -739,6 +800,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 62 — Term 2, Week 4 — Persuasion and public speaking — Vocabulary and language
 **Objective:** Analyse rhetorical choices; plan a speech; support a position and address a counterargument.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -751,6 +813,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 63 — Term 2, Week 4 — Persuasion and public speaking — Reading and viewing
 **Objective:** Analyse rhetorical choices; plan a speech; support a position and address a counterargument.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -763,6 +826,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 64 — Term 2, Week 4 — Persuasion and public speaking — Text types and critical literacy
 **Objective:** Analyse rhetorical choices; plan a speech; support a position and address a counterargument.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -775,6 +839,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 65 — Term 2, Week 4 — Persuasion and public speaking — Writing and sharing
 **Objective:** Analyse rhetorical choices; plan a speech; support a position and address a counterargument.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -787,6 +852,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 66 — Term 2, Week 5 — Digital life and information integrity — Listening and speaking
 **Objective:** Evaluate credibility and context; identify misleading framing; communicate responsibly.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -799,6 +865,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 67 — Term 2, Week 5 — Digital life and information integrity — Vocabulary and language
 **Objective:** Evaluate credibility and context; identify misleading framing; communicate responsibly.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -811,6 +878,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 68 — Term 2, Week 5 — Digital life and information integrity — Reading and viewing
 **Objective:** Evaluate credibility and context; identify misleading framing; communicate responsibly.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -823,6 +891,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 69 — Term 2, Week 5 — Digital life and information integrity — Text types and critical literacy
 **Objective:** Evaluate credibility and context; identify misleading framing; communicate responsibly.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -835,6 +904,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 70 — Term 2, Week 5 — Digital life and information integrity — Writing and sharing
 **Objective:** Evaluate credibility and context; identify misleading framing; communicate responsibly.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -847,6 +917,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 71 — Term 2, Week 6 — Portfolio, reflection and independent reading — Listening and speaking
 **Objective:** Select reading evidence; revise a response; reflect on progress and next steps.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -859,6 +930,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 72 — Term 2, Week 6 — Portfolio, reflection and independent reading — Vocabulary and language
 **Objective:** Select reading evidence; revise a response; reflect on progress and next steps.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -871,6 +943,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 73 — Term 2, Week 6 — Portfolio, reflection and independent reading — Reading and viewing
 **Objective:** Select reading evidence; revise a response; reflect on progress and next steps.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -883,6 +956,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 74 — Term 2, Week 6 — Portfolio, reflection and independent reading — Text types and critical literacy
 **Objective:** Select reading evidence; revise a response; reflect on progress and next steps.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -895,6 +969,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 75 — Term 2, Week 6 — Portfolio, reflection and independent reading — Writing and sharing
 **Objective:** Select reading evidence; revise a response; reflect on progress and next steps.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -907,6 +982,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 76 — Term 2, Week 7 — Identity, voice and community — Listening and speaking
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -919,6 +995,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 77 — Term 2, Week 7 — Identity, voice and community — Vocabulary and language
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -931,6 +1008,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 78 — Term 2, Week 7 — Identity, voice and community — Reading and viewing
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -943,6 +1021,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 79 — Term 2, Week 7 — Identity, voice and community — Text types and critical literacy
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -955,6 +1034,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 80 — Term 2, Week 7 — Identity, voice and community — Writing and sharing
 **Objective:** Explore narrative voice, audience and context; close-read a text; create coherent paragraphs.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -967,6 +1047,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 81 — Term 2, Week 8 — Language, culture and belonging — Listening and speaking
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -979,6 +1060,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 82 — Term 2, Week 8 — Language, culture and belonging — Vocabulary and language
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -991,6 +1073,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 83 — Term 2, Week 8 — Language, culture and belonging — Reading and viewing
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1003,6 +1086,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 84 — Term 2, Week 8 — Language, culture and belonging — Text types and critical literacy
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1015,6 +1099,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 85 — Term 2, Week 8 — Language, culture and belonging — Writing and sharing
 **Objective:** Conduct an interview or oral-history task; examine register and language choices; write a reflective response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1027,6 +1112,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 86 — Term 2, Week 9 — Environment and Pacific futures — Listening and speaking
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1039,6 +1125,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 87 — Term 2, Week 9 — Environment and Pacific futures — Vocabulary and language
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1051,6 +1138,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 88 — Term 2, Week 9 — Environment and Pacific futures — Reading and viewing
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1063,6 +1151,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 89 — Term 2, Week 9 — Environment and Pacific futures — Text types and critical literacy
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1075,6 +1164,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 90 — Term 2, Week 9 — Environment and Pacific futures — Writing and sharing
 **Objective:** Compare sources; distinguish evidence and inference; write an explanation or persuasive response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1087,6 +1177,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 91 — Term 3, Week 1 — Media, messages and influence — Listening and speaking
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1099,6 +1190,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 92 — Term 3, Week 1 — Media, messages and influence — Vocabulary and language
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1111,6 +1203,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 93 — Term 3, Week 1 — Media, messages and influence — Reading and viewing
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1123,6 +1216,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 94 — Term 3, Week 1 — Media, messages and influence — Text types and critical literacy
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1135,6 +1229,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 95 — Term 3, Week 1 — Media, messages and influence — Writing and sharing
 **Objective:** Analyse purpose, audience, representation and fact/opinion; write a critical response.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1147,6 +1242,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 96 — Term 3, Week 2 — Health, science and public information — Listening and speaking
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1159,6 +1255,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 97 — Term 3, Week 2 — Health, science and public information — Vocabulary and language
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1171,6 +1268,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 98 — Term 3, Week 2 — Health, science and public information — Reading and viewing
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1183,6 +1281,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 99 — Term 3, Week 2 — Health, science and public information — Text types and critical literacy
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1195,6 +1294,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 100 — Term 3, Week 2 — Health, science and public information — Writing and sharing
 **Objective:** Interpret technical vocabulary; explain a process; evaluate claims and evidence.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1207,6 +1307,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 101 — Term 3, Week 3 — Stories, conflict and change — Listening and speaking
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1219,6 +1320,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 102 — Term 3, Week 3 — Stories, conflict and change — Vocabulary and language
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1231,6 +1333,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 103 — Term 3, Week 3 — Stories, conflict and change — Reading and viewing
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1243,6 +1346,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 104 — Term 3, Week 3 — Stories, conflict and change — Text types and critical literacy
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1255,6 +1359,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 105 — Term 3, Week 3 — Stories, conflict and change — Writing and sharing
 **Objective:** Analyse character, setting, theme and point of view; write an evidence-supported paragraph.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1267,6 +1372,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 106 — Term 3, Week 4 — Work, enterprise and communication — Listening and speaking
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1279,6 +1385,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 107 — Term 3, Week 4 — Work, enterprise and communication — Vocabulary and language
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1291,6 +1398,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 108 — Term 3, Week 4 — Work, enterprise and communication — Reading and viewing
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1303,6 +1411,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 109 — Term 3, Week 4 — Work, enterprise and communication — Text types and critical literacy
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1315,6 +1424,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 110 — Term 3, Week 4 — Work, enterprise and communication — Writing and sharing
 **Objective:** Use formal register; prepare correspondence, a report or proposal; present findings.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1327,6 +1437,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 111 — Term 3, Week 5 — Rights, responsibilities and citizenship — Listening and speaking
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Listen actively, contribute to discussion and ask a purposeful follow-up question. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can listen actively, contribute to discussion and ask a purposeful follow-up question.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1339,6 +1450,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 112 — Term 3, Week 5 — Rights, responsibilities and citizenship — Vocabulary and language
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Analyse vocabulary, register and a language feature in context. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can analyse vocabulary, register and a language feature in context.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1351,6 +1463,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 113 — Term 3, Week 5 — Rights, responsibilities and citizenship — Reading and viewing
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Close-read a suitable text; identify purpose, claims, evidence and implications. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can close-read a suitable text; identify purpose, claims, evidence and implications.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1363,6 +1476,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 114 — Term 3, Week 5 — Rights, responsibilities and citizenship — Text types and critical literacy
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Examine structure, viewpoint, representation and how language shapes meaning. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can examine structure, viewpoint, representation and how language shapes meaning.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
@@ -1375,6 +1489,7 @@ Daily record: local school date ____ | term/week/day ____ | official outcome + e
 ### Day 115 — Term 3, Week 5 — Rights, responsibilities and citizenship — Writing and sharing
 **Objective:** Develop a claim and evidence; consider a counter-view; participate in respectful debate.
 **Teacher-led activity:** Create, edit and share a response appropriate to audience, purpose and form. Use an authorised level-appropriate text or prompt connected to the theme. Learners identify the task and audience, gather ideas and communicate a reasoned response.
+**PacEdu working achievement indicator:** Learner can create, edit and share a response appropriate to audience, purpose and form.
 **Worked example:** Model task interpretation → identify key idea → select text evidence → organise response → review language for audience and purpose. Teacher models with the current class text.
 **Copper:** Model each step; chunk the task; use accessible short text, visual/tactile cues, a word bank and guided choices. Accept speech, sign, AAC, pointing, gesture, dictation or writing.
 **Bronze:** Provide a worked example, planning frame, vocabulary bank and guided prompts; reduce support gradually.
