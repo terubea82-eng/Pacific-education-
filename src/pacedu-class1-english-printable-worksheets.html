@@ -87,7 +87,8 @@ function load(){
    var d=Number(m[1]),g=m[2],article=document.createElement("article");
    article.className="worksheet";
    article.dataset.day=String(d);article.dataset.ability=g;
-   article.innerHTML='<div class="meta"><strong>Country:</strong> <span data-pacedu-country-name></span> · <strong>Local date:</strong> <span data-pacedu-local-date></span> · <strong>Local time:</strong> <span data-pacedu-local-time></span><br><strong>School time zone:</strong> <span data-pacedu-time-zone></span> · <span data-pacedu-date-status></span></div>'+markdown(part.replace(/^# Day[^\n]*\n/,""));
+   var printablePart=part.replace(/^.*\{\{PACEDU_[^}]+\}\}.*(?:\r?\n|$)/gm,"");
+   article.innerHTML='<div class="meta"><strong>Country:</strong> <span data-pacedu-country-name></span> · <strong>Local date:</strong> <span data-pacedu-local-date></span> · <strong>Local time:</strong> <span data-pacedu-local-time></span><br><strong>School time zone:</strong> <span data-pacedu-time-zone></span> · <span data-pacedu-date-status></span></div>'+markdown(printablePart.replace(/^# Day[^\n]*\n/,""));
    host.appendChild(article);sheets.push({day:d,ability:g,el:article});
   });
   for(var i=1;i<=115;i++){var o=document.createElement("option");o.value=String(i);o.textContent="Day "+i;daySelect.appendChild(o);}
