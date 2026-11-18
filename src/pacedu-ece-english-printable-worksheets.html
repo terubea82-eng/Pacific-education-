@@ -39,6 +39,10 @@ button{min-height:48px;padding:10px 16px;font:inherit;font-weight:700;margin:8px
 <div id="worksheetHost" aria-live="polite"></div>
 </main>
 <script src="./js/pacificEducationCountryConfig.js"></script>
+<script>
+/* Restore the school country linked to this PacEdu account before resolving its local date. */
+(function(){try{var linkedCountry=localStorage.getItem("pacificEducationLinkedCurriculumCountry")||"";var linkedCode=localStorage.getItem("pacificEducationLinkedCurriculumCountryCode")||localStorage.getItem("pacificEducationCurriculumCountryCode")||"";if(window.PacificEducationCountryConfig&&(linkedCountry||linkedCode)){window.PacificEducationCountryConfig.load({country:linkedCountry||linkedCode});}}catch(e){}})();
+</script>
 <script src="./js/paceduWorksheetLocalDate.js?v=20261119-country-time-zones-v2"></script>
 <script>
 (function(){
