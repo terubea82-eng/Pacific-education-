@@ -66,12 +66,11 @@
       var packCard=node("section");
       packCard.id="paceduClass1EnglishWorksheetPackLink";
       packCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
-      var packTitle=node("h4","Class 1 English — Downloadable Daily Activities (Days 1–5)");
-      var packStatus=node("p","This activity pack is linked to the English subject box. TEACHER REVIEW REQUIRED — official curriculum indicators and sequence are not yet verified.");
-      var packLink=node("a","Download Class 1 English Daily Activities");
-      packLink.href="https://raw.githubusercontent.com/terubea82-eng/Pacific-education-/refs/heads/main/docs/curriculum/english-class-1-daily-worksheet-pack.md";
-      packLink.setAttribute("download","PacEdu-Class-1-English-Daily-Activities.md");
-      packLink.setAttribute("aria-label","Download Class 1 English daily activities for Days 1 to 5");
+      var packTitle=node("h4","Class 1 English — 115 Daily Activities (Copper–Gold)");
+      var packStatus=node("p","Original 23-week practice programme with four differentiated pathways. PENDING_TEACHER_REVIEW — verify exact current Fiji English outcomes and the school's approved teaching sequence before learner release.");
+      var packLink=node("a","Open Class 1 English Days 1–115");
+      packLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-class-1-daily-activities-days-1-115.md";
+      packLink.setAttribute("aria-label","Open Class 1 English daily activities from Day 1 to Day 115");
       packLink.target="_blank";
       packLink.rel="noopener noreferrer";
       packLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
@@ -79,6 +78,9 @@
       packCard.appendChild(packStatus);
       packCard.appendChild(packLink);
       list.appendChild(packCard);
+
+      var starterNote=node("p","Existing Class 1 five-day diagnostic starter pack remains available for comparison; the new 115-day draft is the expanded programme.");
+      packCard.appendChild(starterNote);
     }
     var classes=rosterClasses(),items=[];
     Object.keys(classes).forEach(function(id){
