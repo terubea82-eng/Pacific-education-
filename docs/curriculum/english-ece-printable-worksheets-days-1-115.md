@@ -26,6 +26,7 @@ Official ECE outcome/indicator and exact authorised source edition/page: **PENDI
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find my name  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -71,6 +72,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find my name  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -116,6 +118,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find my name  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -161,6 +164,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find my name  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -206,6 +210,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** My name has a sound  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -251,6 +256,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** My name has a sound  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -296,6 +302,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** My name has a sound  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -341,6 +348,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** My name has a sound  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -386,6 +394,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Things I like  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -431,6 +440,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Things I like  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -476,6 +486,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Things I like  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -521,6 +532,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Things I like  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -566,6 +578,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** A picture of me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -611,6 +624,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** A picture of me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -656,6 +670,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** A picture of me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -701,6 +716,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** A picture of me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -746,6 +762,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Share one thing about me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -791,6 +808,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Share one thing about me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -836,6 +854,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Share one thing about me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -881,6 +900,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** My name, identity and belonging  
 **Shared learning intention:** Recognise and communicate own name; listen to and respond to familiar names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Share one thing about me  
 **Materials:** Name cards, mirror, family-approved identity words  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -926,6 +946,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Puppet says hello  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -971,6 +992,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Puppet says hello  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1016,6 +1038,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Puppet says hello  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1061,6 +1084,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Puppet says hello  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1106,6 +1130,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Answer a greeting  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1151,6 +1176,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Answer a greeting  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1196,6 +1222,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Answer a greeting  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1241,6 +1268,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Answer a greeting  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1286,6 +1314,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** My turn, your turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1331,6 +1360,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** My turn, your turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1376,6 +1406,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** My turn, your turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1421,6 +1452,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** My turn, your turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1466,6 +1498,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask for a turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1511,6 +1544,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask for a turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1556,6 +1590,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask for a turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1601,6 +1636,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask for a turn  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1646,6 +1682,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Greeting circle  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1691,6 +1728,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Greeting circle  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1736,6 +1774,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Greeting circle  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1781,6 +1820,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Greetings and friendly conversations  
 **Shared learning intention:** Use greetings, names, turn-taking and simple responses in familiar interactions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Greeting circle  
 **Materials:** Puppet, greeting cards, partner talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1826,6 +1866,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Sound walk  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1871,6 +1912,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Sound walk  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1916,6 +1958,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Sound walk  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -1961,6 +2004,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Sound walk  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2006,6 +2050,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match the sound  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2051,6 +2096,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match the sound  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2096,6 +2142,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match the sound  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2141,6 +2188,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match the sound  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2186,6 +2234,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Loud and soft  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2231,6 +2280,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Loud and soft  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2276,6 +2326,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Loud and soft  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2321,6 +2372,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Loud and soft  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2366,6 +2418,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Near and far sounds  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2411,6 +2464,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Near and far sounds  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2456,6 +2510,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Near and far sounds  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2501,6 +2556,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Near and far sounds  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2546,6 +2602,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound picture  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2591,6 +2648,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound picture  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2636,6 +2694,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound picture  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2681,6 +2740,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening to familiar sounds  
 **Shared learning intention:** Attend to environmental sounds and distinguish familiar sound sources.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound picture  
 **Materials:** Sound walk, safe sound objects, quiet/loud listening  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2726,6 +2786,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** One action  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2771,6 +2832,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** One action  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2816,6 +2878,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** One action  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2861,6 +2924,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** One action  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2906,6 +2970,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find and bring  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2951,6 +3016,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find and bring  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -2996,6 +3062,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find and bring  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3041,6 +3108,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find and bring  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3086,6 +3154,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Two actions  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3131,6 +3200,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Two actions  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3176,6 +3246,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Two actions  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3221,6 +3292,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Two actions  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3266,6 +3338,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Treasure hunt  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3311,6 +3384,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Treasure hunt  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3356,6 +3430,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Treasure hunt  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3401,6 +3476,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Treasure hunt  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3446,6 +3522,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Be the instructor  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3491,6 +3568,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Be the instructor  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3536,6 +3614,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Be the instructor  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3581,6 +3660,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Following simple instructions  
 **Shared learning intention:** Respond to one- and two-step familiar oral instructions.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Be the instructor  
 **Materials:** Action cards, safe classroom objects, movement game  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3626,6 +3706,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** People who help  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3671,6 +3752,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** People who help  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3716,6 +3798,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** People who help  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3761,6 +3844,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** People who help  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3806,6 +3890,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What do they do?  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3851,6 +3936,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What do they do?  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3896,6 +3982,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What do they do?  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3941,6 +4028,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What do they do?  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -3986,6 +4074,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match the tools  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4031,6 +4120,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match the tools  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4076,6 +4166,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match the tools  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4121,6 +4212,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match the tools  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4166,6 +4258,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Role-play helping  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4211,6 +4304,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Role-play helping  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4256,6 +4350,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Role-play helping  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4301,6 +4396,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Role-play helping  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4346,6 +4442,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Say thank you  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4391,6 +4488,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Say thank you  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4436,6 +4534,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Say thank you  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4481,6 +4580,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** People who care for us  
 **Shared learning intention:** Listen to descriptions and communicate about familiar people respectfully.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Say thank you  
 **Materials:** Community helper pictures, puppets, role-play props  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4526,6 +4626,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Mystery object  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4571,6 +4672,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Mystery object  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4616,6 +4718,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Mystery object  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4661,6 +4764,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Mystery object  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4706,6 +4810,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort the objects  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4751,6 +4856,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort the objects  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4796,6 +4902,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort the objects  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4841,6 +4948,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort the objects  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4886,6 +4994,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Describe how it feels  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4931,6 +5040,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Describe how it feels  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -4976,6 +5086,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Describe how it feels  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5021,6 +5132,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Describe how it feels  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5066,6 +5178,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Big and small  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5111,6 +5224,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Big and small  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5156,6 +5270,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Big and small  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5201,6 +5316,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Big and small  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5246,6 +5362,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Describe and find  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5291,6 +5408,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Describe and find  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5336,6 +5454,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Describe and find  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5381,6 +5500,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Naming and describing familiar objects  
 **Shared learning intention:** Use familiar nouns and describing words to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Describe and find  
 **Materials:** Mystery bag, object sorting, describe-and-find  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5426,6 +5546,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Join the refrain  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5471,6 +5592,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Join the refrain  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5516,6 +5638,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Join the refrain  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5561,6 +5684,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Join the refrain  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5606,6 +5730,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Copy a beat  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5651,6 +5776,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Copy a beat  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5696,6 +5822,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Copy a beat  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5741,6 +5868,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Copy a beat  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5786,6 +5914,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Action song  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5831,6 +5960,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Action song  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5876,6 +6006,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Action song  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5921,6 +6052,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Action song  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -5966,6 +6098,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Rhyme basket  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6011,6 +6144,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Rhyme basket  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6056,6 +6190,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Rhyme basket  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6101,6 +6236,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Rhyme basket  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6146,6 +6282,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a favourite  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6191,6 +6328,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a favourite  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6236,6 +6374,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a favourite  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6281,6 +6420,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Songs, rhythm and rhyme  
 **Shared learning intention:** Enjoy repeated language, rhythm, rhyme and predictable refrains.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a favourite  
 **Materials:** Action songs, rhythm instruments, rhyme basket  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6326,6 +6466,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6371,6 +6512,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6416,6 +6558,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6461,6 +6604,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6506,6 +6650,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Character actions  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6551,6 +6696,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Character actions  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6596,6 +6742,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Character actions  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6641,6 +6788,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Character actions  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6686,6 +6834,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Puppet character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6731,6 +6880,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Puppet character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6776,6 +6926,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Puppet character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6821,6 +6972,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Puppet character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6866,6 +7018,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Same or different  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6911,6 +7064,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Same or different  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -6956,6 +7110,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Same or different  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7001,6 +7156,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Same or different  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7046,6 +7202,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My favourite character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7091,6 +7248,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My favourite character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7136,6 +7294,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My favourite character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7181,6 +7340,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: characters  
 **Shared learning intention:** Attend to a shared story and identify or show a character.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My favourite character  
 **Materials:** Big book, character puppets, picture choices  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7226,6 +7386,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** What happened first?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7271,6 +7432,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** What happened first?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7316,6 +7478,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** What happened first?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7361,6 +7524,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** What happened first?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7406,6 +7570,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What happened next?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7451,6 +7616,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What happened next?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7496,6 +7662,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What happened next?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7541,6 +7708,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What happened next?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7586,6 +7754,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** How did it end?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7631,6 +7800,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** How did it end?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7676,6 +7846,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** How did it end?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7721,6 +7892,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** How did it end?  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7766,6 +7938,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Put the story in order  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7811,6 +7984,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Put the story in order  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7856,6 +8030,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Put the story in order  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7901,6 +8076,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Put the story in order  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7946,6 +8122,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Retell through play  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -7991,6 +8168,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Retell through play  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8036,6 +8214,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Retell through play  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8081,6 +8260,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Shared stories: events and retelling  
 **Shared learning intention:** Notice what happens first, next and last; retell through accessible modes.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Retell through play  
 **Materials:** Story sequencing cards, role-play, story path  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8126,6 +8306,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find the cover  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8171,6 +8352,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find the cover  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8216,6 +8398,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find the cover  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8261,6 +8444,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find the cover  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8306,6 +8490,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Turn the pages  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8351,6 +8536,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Turn the pages  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8396,6 +8582,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Turn the pages  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8441,6 +8628,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Turn the pages  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8486,6 +8674,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Look at pictures  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8531,6 +8720,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Look at pictures  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8576,6 +8766,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Look at pictures  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8621,6 +8812,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Look at pictures  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8666,6 +8858,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Book care  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8711,6 +8904,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Book care  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8756,6 +8950,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Book care  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8801,6 +8996,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Book care  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8846,6 +9042,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a book  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8891,6 +9088,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a book  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8936,6 +9134,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a book  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -8981,6 +9180,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Books and how they work  
 **Shared learning intention:** Handle books carefully and notice cover, pages, pictures and print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Choose a book  
 **Materials:** Book browsing, book parts hunt, choose-and-talk  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9026,6 +9226,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Notice picture details  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9071,6 +9272,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Notice picture details  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9116,6 +9318,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Notice picture details  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9161,6 +9364,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Notice picture details  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9206,6 +9410,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What might happen?  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9251,6 +9456,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What might happen?  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9296,6 +9502,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What might happen?  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9341,6 +9548,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What might happen?  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9386,6 +9594,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match picture and message  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9431,6 +9640,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match picture and message  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9476,6 +9686,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match picture and message  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9521,6 +9732,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match picture and message  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9566,6 +9778,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Picture sequence  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9611,6 +9824,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Picture sequence  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9656,6 +9870,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Picture sequence  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9701,6 +9916,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Picture sequence  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9746,6 +9962,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Tell a picture story  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9791,6 +10008,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Tell a picture story  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9836,6 +10054,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Tell a picture story  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9881,6 +10100,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Pictures carry meaning  
 **Shared learning intention:** Use pictures to anticipate, describe and discuss meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Tell a picture story  
 **Materials:** Picture walk, image-to-spoken-sentence matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9926,6 +10146,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -9971,6 +10192,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10016,6 +10238,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10061,6 +10284,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10106,6 +10330,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match name and place  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10151,6 +10376,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match name and place  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10196,6 +10422,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match name and place  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10241,6 +10468,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Match name and place  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10286,6 +10514,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Notice a sign  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10331,6 +10560,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Notice a sign  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10376,6 +10606,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Notice a sign  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10421,6 +10652,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Notice a sign  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10466,6 +10698,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Print hunt  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10511,6 +10744,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Print hunt  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10556,6 +10790,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Print hunt  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10601,6 +10836,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Print hunt  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10646,6 +10882,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a class label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10691,6 +10928,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a class label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10736,6 +10974,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a class label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10781,6 +11020,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Print in our environment  
 **Shared learning intention:** Notice meaningful print such as signs, labels and names.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a class label  
 **Materials:** Environmental print hunt, classroom label matching  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10826,6 +11066,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen for rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10871,6 +11112,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen for rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10916,6 +11158,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen for rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -10961,6 +11204,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen for rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11006,6 +11250,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find a rhyme partner  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11051,6 +11296,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find a rhyme partner  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11096,6 +11342,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find a rhyme partner  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11141,6 +11388,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find a rhyme partner  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11186,6 +11434,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Odd one out  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11231,6 +11480,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Odd one out  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11276,6 +11526,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Odd one out  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11321,6 +11572,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Odd one out  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11366,6 +11618,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Finish the refrain  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11411,6 +11664,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Finish the refrain  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11456,6 +11710,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Finish the refrain  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11501,6 +11756,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Finish the refrain  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11546,6 +11802,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a playful rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11591,6 +11848,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a playful rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11636,6 +11894,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a playful rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11681,6 +11940,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Rhyme and repeated language  
 **Shared learning intention:** Hear and enjoy words that rhyme and repeated phrases in songs/stories.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Make a playful rhyme  
 **Materials:** Rhyme basket, odd-one-out listening, refrain participation  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11726,6 +11986,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Beat my name  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11771,6 +12032,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Beat my name  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11816,6 +12078,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Beat my name  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11861,6 +12124,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Beat my name  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11906,6 +12170,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Object-name beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11951,6 +12216,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Object-name beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -11996,6 +12262,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Object-name beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12041,6 +12308,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Object-name beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12086,6 +12354,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Compare word beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12131,6 +12400,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Compare word beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12176,6 +12446,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Compare word beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12221,6 +12492,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Compare word beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12266,6 +12538,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Drum the beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12311,6 +12584,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Drum the beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12356,6 +12630,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Drum the beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12401,6 +12676,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Drum the beats  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12446,6 +12722,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Beat pattern game  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12491,6 +12768,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Beat pattern game  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12536,6 +12814,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Beat pattern game  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12581,6 +12860,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Syllables and beats in words  
 **Shared learning intention:** Explore the rhythm and beats in familiar spoken words.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Beat pattern game  
 **Materials:** Name claps, object-name beats, drum-and-say  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12626,6 +12906,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen to the first sound  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12671,6 +12952,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen to the first sound  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12716,6 +12998,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen to the first sound  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12761,6 +13044,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Listen to the first sound  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12806,6 +13090,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort same first sounds  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12851,6 +13136,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort same first sounds  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12896,6 +13182,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort same first sounds  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12941,6 +13228,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Sort same first sounds  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -12986,6 +13274,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Alliteration play  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13031,6 +13320,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Alliteration play  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13076,6 +13366,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Alliteration play  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13121,6 +13412,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Alliteration play  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13166,6 +13458,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Find another  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13211,6 +13504,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Find another  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13256,6 +13550,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Find another  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13301,6 +13596,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Find another  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13346,6 +13642,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound basket  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13391,6 +13688,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound basket  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13436,6 +13734,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound basket  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13481,6 +13780,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Listening for first sounds  
 **Shared learning intention:** Notice the first sound in familiar words without forcing letter naming.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sound basket  
 **Materials:** Sound sorting, initial-sound basket, alliteration play  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13526,6 +13826,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a letter in my name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13571,6 +13872,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a letter in my name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13616,6 +13918,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a letter in my name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13661,6 +13964,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Find a letter in my name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13706,6 +14010,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Build a letter shape  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13751,6 +14056,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Build a letter shape  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13796,6 +14102,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Build a letter shape  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13841,6 +14148,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Build a letter shape  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13886,6 +14194,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Feel the letter  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13931,6 +14240,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Feel the letter  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -13976,6 +14286,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Feel the letter  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14021,6 +14332,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Feel the letter  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14066,6 +14378,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Letter hunt  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14111,6 +14424,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Letter hunt  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14156,6 +14470,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Letter hunt  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14201,6 +14516,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Letter hunt  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14246,6 +14562,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Decorate a name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14291,6 +14608,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Decorate a name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14336,6 +14654,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Decorate a name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14381,6 +14700,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Letters in meaningful contexts  
 **Shared learning intention:** Notice familiar letters in own name and environmental print.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Decorate a name  
 **Materials:** Name-letter search, letter-shape construction, tactile letters  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14426,6 +14746,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a new word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14471,6 +14792,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a new word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14516,6 +14838,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a new word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14561,6 +14884,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Meet a new word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14606,6 +14930,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Act the word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14651,6 +14976,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Act the word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14696,6 +15022,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Act the word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14741,6 +15068,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Act the word  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14786,6 +15114,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match word and picture  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14831,6 +15160,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match word and picture  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14876,6 +15206,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match word and picture  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14921,6 +15252,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Match word and picture  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -14966,6 +15298,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Use the word wall  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15011,6 +15344,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Use the word wall  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15056,6 +15390,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Use the word wall  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15101,6 +15436,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Use the word wall  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15146,6 +15482,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My own example  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15191,6 +15528,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My own example  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15236,6 +15574,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My own example  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15281,6 +15620,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Story language and new vocabulary  
 **Shared learning intention:** Explore new words from a shared story using objects, actions and pictures.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** My own example  
 **Materials:** Word acting, picture-word matching, story word wall  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15326,6 +15666,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Who?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15371,6 +15712,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Who?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15416,6 +15758,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Who?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15461,6 +15804,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Who?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15506,6 +15850,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15551,6 +15896,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15596,6 +15942,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15641,6 +15988,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** What?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15686,6 +16034,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Where?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15731,6 +16080,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Where?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15776,6 +16126,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Where?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15821,6 +16172,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Where?  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15866,6 +16218,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask the puppet  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15911,6 +16264,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask the puppet  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -15956,6 +16310,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask the puppet  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16001,6 +16356,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Ask the puppet  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16046,6 +16402,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Answer with a picture  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16091,6 +16448,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Answer with a picture  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16136,6 +16494,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Answer with a picture  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16181,6 +16540,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Questions and answering  
 **Shared learning intention:** Respond to simple who, what and where questions about shared experiences.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Answer with a picture  
 **Materials:** Question puppets, object clues, picture-question cards  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16226,6 +16586,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** I choose  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16271,6 +16632,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** I choose  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16316,6 +16678,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** I choose  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16361,6 +16724,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** I choose  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16406,6 +16770,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** I noticed  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16451,6 +16816,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** I noticed  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16496,6 +16862,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** I noticed  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16541,6 +16908,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** I noticed  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16586,6 +16954,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Share an experience  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16631,6 +17000,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Share an experience  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16676,6 +17046,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Share an experience  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16721,6 +17092,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Share an experience  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16766,6 +17138,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Partner sharing  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16811,6 +17184,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Partner sharing  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16856,6 +17230,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Partner sharing  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16901,6 +17276,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Partner sharing  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16946,6 +17322,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Show and tell  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -16991,6 +17368,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Show and tell  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17036,6 +17414,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Show and tell  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17081,6 +17460,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Speaking to share an idea  
 **Shared learning intention:** Communicate a preference, observation or experience to a familiar audience.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Show and tell  
 **Materials:** Show-and-tell, choice explanation, partner sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17126,6 +17506,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Draw a place  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17171,6 +17552,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Draw a place  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17216,6 +17598,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Draw a place  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17261,6 +17644,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Draw a place  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17306,6 +17690,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Draw a story event  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17351,6 +17736,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Draw a story event  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17396,6 +17782,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Draw a story event  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17441,6 +17828,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Draw a story event  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17486,6 +17874,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Plan a picture  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17531,6 +17920,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Plan a picture  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17576,6 +17966,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Plan a picture  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17621,6 +18012,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Plan a picture  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17666,6 +18058,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Tell about my drawing  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17711,6 +18104,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Tell about my drawing  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17756,6 +18150,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Tell about my drawing  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17801,6 +18196,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Tell about my drawing  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17846,6 +18242,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Add a caption  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17891,6 +18288,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Add a caption  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17936,6 +18334,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Add a caption  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -17981,6 +18380,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Drawing to communicate  
 **Shared learning intention:** Use drawing and marks to represent an idea, experience or story.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Add a caption  
 **Materials:** Draw-and-tell, picture planning, adult scribing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18026,6 +18426,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Make lines  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18071,6 +18472,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Make lines  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18116,6 +18518,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Make lines  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18161,6 +18564,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Make lines  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18206,6 +18610,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Make shapes  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18251,6 +18656,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Make shapes  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18296,6 +18702,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Make shapes  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18341,6 +18748,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Make shapes  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18386,6 +18794,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Repeat a pattern  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18431,6 +18840,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Repeat a pattern  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18476,6 +18886,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Repeat a pattern  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18521,6 +18932,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Repeat a pattern  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18566,6 +18978,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Marks tell a message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18611,6 +19024,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Marks tell a message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18656,6 +19070,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Marks tell a message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18701,6 +19116,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Marks tell a message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18746,6 +19162,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sand-tray message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18791,6 +19208,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sand-tray message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18836,6 +19254,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sand-tray message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18881,6 +19300,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Purposeful mark-making  
 **Shared learning intention:** Experiment with lines, shapes and marks to communicate meaning.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Sand-tray message  
 **Materials:** Sand tray, large paper, chalk, vertical-surface drawing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18926,6 +19346,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** My name mark  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -18971,6 +19392,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** My name mark  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19016,6 +19438,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** My name mark  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19061,6 +19484,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** My name mark  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19106,6 +19530,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find my name  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19151,6 +19576,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find my name  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19196,6 +19622,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find my name  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19241,6 +19668,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Find my name  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19286,6 +19714,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Make a greeting card  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19331,6 +19760,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Make a greeting card  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19376,6 +19806,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Make a greeting card  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19421,6 +19852,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Make a greeting card  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19466,6 +19898,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Dictate a caption  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19511,6 +19944,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Dictate a caption  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19556,6 +19990,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Dictate a caption  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19601,6 +20036,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Dictate a caption  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19646,6 +20082,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Send a message  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19691,6 +20128,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Send a message  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19736,6 +20174,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Send a message  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19781,6 +20220,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Becoming a writer: name and message  
 **Shared learning intention:** Explore own-name marks and create a meaningful picture/message.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Send a message  
 **Materials:** Name card comparison, greeting card, dictated caption  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19826,6 +20266,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Choose a favourite story  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19871,6 +20312,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Choose a favourite story  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19916,6 +20358,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Choose a favourite story  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -19961,6 +20404,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose or match own name/photo card; communicate one thing about self.
 **Activity:** Choose a favourite story  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20006,6 +20450,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Retell my favourite part  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20051,6 +20496,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Retell my favourite part  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20096,6 +20542,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Retell my favourite part  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20141,6 +20588,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can explore the objects/pictures; listen, point, match, move or respond to a simple prompt.
 **Activity:** Retell my favourite part  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20186,6 +20634,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Choose portfolio work  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20231,6 +20680,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Choose portfolio work  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20276,6 +20726,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Choose portfolio work  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20321,6 +20772,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can take turns in the game; repeat, sort, sequence, act or communicate a choice.
 **Activity:** Choose portfolio work  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20366,6 +20818,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Share my learning  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20411,6 +20864,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Share my learning  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20456,6 +20910,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Share my learning  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20501,6 +20956,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can make a picture/model or role-play and share meaning through speech, sign, gesture, pointing or AAC.
 **Activity:** Share my learning  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20546,6 +21002,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Reflect and celebrate  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20591,6 +21048,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Reflect and celebrate  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20636,6 +21094,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Reflect and celebrate  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
@@ -20681,6 +21140,7 @@ ____________________________________________________________________________
 
 **Weekly focus:** Celebrate and share learning  
 **Shared learning intention:** Revisit listening, speaking, book engagement and emergent writing evidence.  
+**PacEdu working achievement indicator:** The child can choose a favourite activity and show one thing learned; teacher offers a fresh, low-pressure check.
 **Activity:** Reflect and celebrate  
 **Materials:** Favourite story, learning portfolio, child-led sharing  
 **Country:** {{PACEDU_COUNTRY_NAME}} · **School time zone:** {{PACEDU_IANA_TIME_ZONE}} · **Local print date:** {{PACEDU_LOCAL_DATE}}
