@@ -16,6 +16,7 @@ Accept response modes appropriate to the skill: speech, sign, AAC, pointing, ges
 **Weekly theme:** Myself and my community  
 **Today's task:** Introduce yourself to a partner  
 **Shared learning objective:** Introduce yourself to a partner.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -47,6 +48,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Introduce yourself to a partner  
 **Shared learning objective:** Introduce yourself to a partner.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -78,6 +80,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Introduce yourself to a partner  
 **Shared learning objective:** Introduce yourself to a partner.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -109,6 +112,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Introduce yourself to a partner  
 **Shared learning objective:** Introduce yourself to a partner.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -140,6 +144,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Match names and familiar words  
 **Shared learning objective:** Match names and familiar words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -171,6 +176,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Match names and familiar words  
 **Shared learning objective:** Match names and familiar words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -202,6 +208,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Match names and familiar words  
 **Shared learning objective:** Match names and familiar words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -233,6 +240,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Match names and familiar words  
 **Shared learning objective:** Match names and familiar words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -264,6 +272,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Listen to a short introduction  
 **Shared learning objective:** Listen to a short introduction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -295,6 +304,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Listen to a short introduction  
 **Shared learning objective:** Listen to a short introduction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -326,6 +336,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Listen to a short introduction  
 **Shared learning objective:** Listen to a short introduction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -357,6 +368,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Listen to a short introduction  
 **Shared learning objective:** Listen to a short introduction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -388,6 +400,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Ask a question politely  
 **Shared learning objective:** Ask a question politely.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -419,6 +432,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Ask a question politely  
 **Shared learning objective:** Ask a question politely.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -450,6 +464,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Ask a question politely  
 **Shared learning objective:** Ask a question politely.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -481,6 +496,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Ask a question politely  
 **Shared learning objective:** Ask a question politely.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -512,6 +528,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Write a short self-introduction  
 **Shared learning objective:** Write a short self-introduction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -543,6 +560,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Write a short self-introduction  
 **Shared learning objective:** Write a short self-introduction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -574,6 +592,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Write a short self-introduction  
 **Shared learning objective:** Write a short self-introduction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -605,6 +624,7 @@ ____________________________________________________________________________
 **Weekly theme:** Myself and my community  
 **Today's task:** Write a short self-introduction  
 **Shared learning objective:** Write a short self-introduction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -636,6 +656,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Name and describe a food  
 **Shared learning objective:** Name and describe a food.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -667,6 +688,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Name and describe a food  
 **Shared learning objective:** Name and describe a food.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -698,6 +720,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Name and describe a food  
 **Shared learning objective:** Name and describe a food.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -729,6 +752,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Name and describe a food  
 **Shared learning objective:** Name and describe a food.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -760,6 +784,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Sort foods by a chosen feature  
 **Shared learning objective:** Sort foods by a chosen feature.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -791,6 +816,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Sort foods by a chosen feature  
 **Shared learning objective:** Sort foods by a chosen feature.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -822,6 +848,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Sort foods by a chosen feature  
 **Shared learning objective:** Sort foods by a chosen feature.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -853,6 +880,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Sort foods by a chosen feature  
 **Shared learning objective:** Sort foods by a chosen feature.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -884,6 +912,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Listen to a food description  
 **Shared learning objective:** Listen to a food description.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -915,6 +944,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Listen to a food description  
 **Shared learning objective:** Listen to a food description.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -946,6 +976,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Listen to a food description  
 **Shared learning objective:** Listen to a food description.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -977,6 +1008,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Listen to a food description  
 **Shared learning objective:** Listen to a food description.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1008,6 +1040,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Find describing words  
 **Shared learning objective:** Find describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1039,6 +1072,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Find describing words  
 **Shared learning objective:** Find describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1070,6 +1104,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Find describing words  
 **Shared learning objective:** Find describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1101,6 +1136,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Find describing words  
 **Shared learning objective:** Find describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1132,6 +1168,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Write a food sentence  
 **Shared learning objective:** Write a food sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1163,6 +1200,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Write a food sentence  
 **Shared learning objective:** Write a food sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1194,6 +1232,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Write a food sentence  
 **Shared learning objective:** Write a food sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1225,6 +1264,7 @@ ____________________________________________________________________________
 **Weekly theme:** Healthy food  
 **Today's task:** Write a food sentence  
 **Shared learning objective:** Write a food sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1256,6 +1296,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Role-play buyer and seller  
 **Shared learning objective:** Role-play buyer and seller.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1287,6 +1328,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Role-play buyer and seller  
 **Shared learning objective:** Role-play buyer and seller.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1318,6 +1360,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Role-play buyer and seller  
 **Shared learning objective:** Role-play buyer and seller.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1349,6 +1392,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Role-play buyer and seller  
 **Shared learning objective:** Role-play buyer and seller.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1380,6 +1424,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Read familiar labels  
 **Shared learning objective:** Read familiar labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1411,6 +1456,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Read familiar labels  
 **Shared learning objective:** Read familiar labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1442,6 +1488,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Read familiar labels  
 **Shared learning objective:** Read familiar labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1473,6 +1520,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Read familiar labels  
 **Shared learning objective:** Read familiar labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1504,6 +1552,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Listen for item and quantity  
 **Shared learning objective:** Listen for item and quantity.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1535,6 +1584,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Listen for item and quantity  
 **Shared learning objective:** Listen for item and quantity.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1566,6 +1616,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Listen for item and quantity  
 **Shared learning objective:** Listen for item and quantity.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1597,6 +1648,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Listen for item and quantity  
 **Shared learning objective:** Listen for item and quantity.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1628,6 +1680,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Use polite question words  
 **Shared learning objective:** Use polite question words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1659,6 +1712,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Use polite question words  
 **Shared learning objective:** Use polite question words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1690,6 +1744,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Use polite question words  
 **Shared learning objective:** Use polite question words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1721,6 +1776,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Use polite question words  
 **Shared learning objective:** Use polite question words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1752,6 +1808,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Write a shopping list  
 **Shared learning objective:** Write a shopping list.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1783,6 +1840,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Write a shopping list  
 **Shared learning objective:** Write a shopping list.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1814,6 +1872,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Write a shopping list  
 **Shared learning objective:** Write a shopping list.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1845,6 +1904,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the market  
 **Today's task:** Write a shopping list  
 **Shared learning objective:** Write a shopping list.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -1876,6 +1936,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Describe a family routine  
 **Shared learning objective:** Describe a family routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -1907,6 +1968,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Describe a family routine  
 **Shared learning objective:** Describe a family routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -1938,6 +2000,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Describe a family routine  
 **Shared learning objective:** Describe a family routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -1969,6 +2032,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Describe a family routine  
 **Shared learning objective:** Describe a family routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2000,6 +2064,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Match room names and uses  
 **Shared learning objective:** Match room names and uses.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2031,6 +2096,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Match room names and uses  
 **Shared learning objective:** Match room names and uses.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2062,6 +2128,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Match room names and uses  
 **Shared learning objective:** Match room names and uses.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2093,6 +2160,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Match room names and uses  
 **Shared learning objective:** Match room names and uses.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2124,6 +2192,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Listen for people and actions  
 **Shared learning objective:** Listen for people and actions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2155,6 +2224,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Listen for people and actions  
 **Shared learning objective:** Listen for people and actions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2186,6 +2256,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Listen for people and actions  
 **Shared learning objective:** Listen for people and actions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2217,6 +2288,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Listen for people and actions  
 **Shared learning objective:** Listen for people and actions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2248,6 +2320,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Use naming and action words  
 **Shared learning objective:** Use naming and action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2279,6 +2352,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Use naming and action words  
 **Shared learning objective:** Use naming and action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2310,6 +2384,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Use naming and action words  
 **Shared learning objective:** Use naming and action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2341,6 +2416,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Use naming and action words  
 **Shared learning objective:** Use naming and action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2372,6 +2448,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Write about a home activity  
 **Shared learning objective:** Write about a home activity.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2403,6 +2480,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Write about a home activity  
 **Shared learning objective:** Write about a home activity.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2434,6 +2512,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Write about a home activity  
 **Shared learning objective:** Write about a home activity.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2465,6 +2544,7 @@ ____________________________________________________________________________
 **Weekly theme:** My family and home  
 **Today's task:** Write about a home activity  
 **Shared learning objective:** Write about a home activity.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2496,6 +2576,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Explain a hygiene routine  
 **Shared learning objective:** Explain a hygiene routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2527,6 +2608,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Explain a hygiene routine  
 **Shared learning objective:** Explain a hygiene routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2558,6 +2640,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Explain a hygiene routine  
 **Shared learning objective:** Explain a hygiene routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2589,6 +2672,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Explain a hygiene routine  
 **Shared learning objective:** Explain a hygiene routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2620,6 +2704,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2651,6 +2736,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2682,6 +2768,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2713,6 +2800,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2744,6 +2832,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Follow spoken steps  
 **Shared learning objective:** Follow spoken steps.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2775,6 +2864,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Follow spoken steps  
 **Shared learning objective:** Follow spoken steps.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2806,6 +2896,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Follow spoken steps  
 **Shared learning objective:** Follow spoken steps.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2837,6 +2928,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Follow spoken steps  
 **Shared learning objective:** Follow spoken steps.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2868,6 +2960,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -2899,6 +2992,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -2930,6 +3024,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -2961,6 +3056,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -2992,6 +3088,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Write three ordered steps  
 **Shared learning objective:** Write three ordered steps.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3023,6 +3120,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Write three ordered steps  
 **Shared learning objective:** Write three ordered steps.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3054,6 +3152,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Write three ordered steps  
 **Shared learning objective:** Write three ordered steps.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3085,6 +3184,7 @@ ____________________________________________________________________________
 **Weekly theme:** Keeping clean  
 **Today's task:** Write three ordered steps  
 **Shared learning objective:** Write three ordered steps.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3116,6 +3216,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Describe a feeling or need  
 **Shared learning objective:** Describe a feeling or need.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3147,6 +3248,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Describe a feeling or need  
 **Shared learning objective:** Describe a feeling or need.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3178,6 +3280,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Describe a feeling or need  
 **Shared learning objective:** Describe a feeling or need.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3209,6 +3312,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Describe a feeling or need  
 **Shared learning objective:** Describe a feeling or need.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3240,6 +3344,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Read familiar health words  
 **Shared learning objective:** Read familiar health words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3271,6 +3376,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Read familiar health words  
 **Shared learning objective:** Read familiar health words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3302,6 +3408,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Read familiar health words  
 **Shared learning objective:** Read familiar health words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3333,6 +3440,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Read familiar health words  
 **Shared learning objective:** Read familiar health words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3364,6 +3472,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Listen to a short story  
 **Shared learning objective:** Listen to a short story.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3395,6 +3504,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Listen to a short story  
 **Shared learning objective:** Listen to a short story.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3426,6 +3536,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Listen to a short story  
 **Shared learning objective:** Listen to a short story.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3457,6 +3568,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Listen to a short story  
 **Shared learning objective:** Listen to a short story.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3488,6 +3600,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Find who/where/what details  
 **Shared learning objective:** Find who/where/what details.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3519,6 +3632,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Find who/where/what details  
 **Shared learning objective:** Find who/where/what details.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3550,6 +3664,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Find who/where/what details  
 **Shared learning objective:** Find who/where/what details.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3581,6 +3696,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Find who/where/what details  
 **Shared learning objective:** Find who/where/what details.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3612,6 +3728,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Write a helpful sentence  
 **Shared learning objective:** Write a helpful sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3643,6 +3760,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Write a helpful sentence  
 **Shared learning objective:** Write a helpful sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3674,6 +3792,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Write a helpful sentence  
 **Shared learning objective:** Write a helpful sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3705,6 +3824,7 @@ ____________________________________________________________________________
 **Weekly theme:** Visiting the dentist  
 **Today's task:** Write a helpful sentence  
 **Shared learning objective:** Write a helpful sentence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3736,6 +3856,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Talk about a school routine  
 **Shared learning objective:** Talk about a school routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3767,6 +3888,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Talk about a school routine  
 **Shared learning objective:** Talk about a school routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3798,6 +3920,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Talk about a school routine  
 **Shared learning objective:** Talk about a school routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3829,6 +3952,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Talk about a school routine  
 **Shared learning objective:** Talk about a school routine.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3860,6 +3984,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Read a simple timetable  
 **Shared learning objective:** Read a simple timetable.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -3891,6 +4016,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Read a simple timetable  
 **Shared learning objective:** Read a simple timetable.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -3922,6 +4048,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Read a simple timetable  
 **Shared learning objective:** Read a simple timetable.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -3953,6 +4080,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Read a simple timetable  
 **Shared learning objective:** Read a simple timetable.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -3984,6 +4112,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Listen for time/order  
 **Shared learning objective:** Listen for time/order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4015,6 +4144,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Listen for time/order  
 **Shared learning objective:** Listen for time/order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4046,6 +4176,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Listen for time/order  
 **Shared learning objective:** Listen for time/order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4077,6 +4208,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Listen for time/order  
 **Shared learning objective:** Listen for time/order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4108,6 +4240,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Use before/after/then  
 **Shared learning objective:** Use before/after/then.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4139,6 +4272,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Use before/after/then  
 **Shared learning objective:** Use before/after/then.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4170,6 +4304,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Use before/after/then  
 **Shared learning objective:** Use before/after/then.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4201,6 +4336,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Use before/after/then  
 **Shared learning objective:** Use before/after/then.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4232,6 +4368,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Write a school-day sequence  
 **Shared learning objective:** Write a school-day sequence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4263,6 +4400,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Write a school-day sequence  
 **Shared learning objective:** Write a school-day sequence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4294,6 +4432,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Write a school-day sequence  
 **Shared learning objective:** Write a school-day sequence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4325,6 +4464,7 @@ ____________________________________________________________________________
 **Weekly theme:** My school day  
 **Today's task:** Write a school-day sequence  
 **Shared learning objective:** Write a school-day sequence.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4356,6 +4496,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Practise a kind exchange  
 **Shared learning objective:** Practise a kind exchange.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4387,6 +4528,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Practise a kind exchange  
 **Shared learning objective:** Practise a kind exchange.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4418,6 +4560,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Practise a kind exchange  
 **Shared learning objective:** Practise a kind exchange.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4449,6 +4592,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Practise a kind exchange  
 **Shared learning objective:** Practise a kind exchange.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4480,6 +4624,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Read a short message  
 **Shared learning objective:** Read a short message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4511,6 +4656,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Read a short message  
 **Shared learning objective:** Read a short message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4542,6 +4688,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Read a short message  
 **Shared learning objective:** Read a short message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4573,6 +4720,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Read a short message  
 **Shared learning objective:** Read a short message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4604,6 +4752,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Listen to two viewpoints  
 **Shared learning objective:** Listen to two viewpoints.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4635,6 +4784,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Listen to two viewpoints  
 **Shared learning objective:** Listen to two viewpoints.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4666,6 +4816,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Listen to two viewpoints  
 **Shared learning objective:** Listen to two viewpoints.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4697,6 +4848,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Listen to two viewpoints  
 **Shared learning objective:** Listen to two viewpoints.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4728,6 +4880,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Choose respectful words  
 **Shared learning objective:** Choose respectful words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4759,6 +4912,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Choose respectful words  
 **Shared learning objective:** Choose respectful words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4790,6 +4944,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Choose respectful words  
 **Shared learning objective:** Choose respectful words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4821,6 +4976,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Choose respectful words  
 **Shared learning objective:** Choose respectful words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4852,6 +5008,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Write a kind message  
 **Shared learning objective:** Write a kind message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -4883,6 +5040,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Write a kind message  
 **Shared learning objective:** Write a kind message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -4914,6 +5072,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Write a kind message  
 **Shared learning objective:** Write a kind message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -4945,6 +5104,7 @@ ____________________________________________________________________________
 **Weekly theme:** Friends and kindness  
 **Today's task:** Write a kind message  
 **Shared learning objective:** Write a kind message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -4976,6 +5136,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Describe an animal  
 **Shared learning objective:** Describe an animal.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5007,6 +5168,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Describe an animal  
 **Shared learning objective:** Describe an animal.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5038,6 +5200,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Describe an animal  
 **Shared learning objective:** Describe an animal.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5069,6 +5232,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Describe an animal  
 **Shared learning objective:** Describe an animal.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5100,6 +5264,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Match animal and habitat words  
 **Shared learning objective:** Match animal and habitat words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5131,6 +5296,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Match animal and habitat words  
 **Shared learning objective:** Match animal and habitat words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5162,6 +5328,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Match animal and habitat words  
 **Shared learning objective:** Match animal and habitat words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5193,6 +5360,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Match animal and habitat words  
 **Shared learning objective:** Match animal and habitat words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5224,6 +5392,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Read a short fact  
 **Shared learning objective:** Read a short fact.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5255,6 +5424,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Read a short fact  
 **Shared learning objective:** Read a short fact.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5286,6 +5456,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Read a short fact  
 **Shared learning objective:** Read a short fact.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5317,6 +5488,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Read a short fact  
 **Shared learning objective:** Read a short fact.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5348,6 +5520,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Sort describing words  
 **Shared learning objective:** Sort describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5379,6 +5552,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Sort describing words  
 **Shared learning objective:** Sort describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5410,6 +5584,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Sort describing words  
 **Shared learning objective:** Sort describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5441,6 +5616,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Sort describing words  
 **Shared learning objective:** Sort describing words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5472,6 +5648,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Write two animal facts  
 **Shared learning objective:** Write two animal facts.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5503,6 +5680,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Write two animal facts  
 **Shared learning objective:** Write two animal facts.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5534,6 +5712,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Write two animal facts  
 **Shared learning objective:** Write two animal facts.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5565,6 +5744,7 @@ ____________________________________________________________________________
 **Weekly theme:** Animals around us  
 **Today's task:** Write two animal facts  
 **Shared learning objective:** Write two animal facts.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5596,6 +5776,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Describe a plant observation  
 **Shared learning objective:** Describe a plant observation.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5627,6 +5808,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Describe a plant observation  
 **Shared learning objective:** Describe a plant observation.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5658,6 +5840,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Describe a plant observation  
 **Shared learning objective:** Describe a plant observation.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5689,6 +5872,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Describe a plant observation  
 **Shared learning objective:** Describe a plant observation.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5720,6 +5904,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Read plant labels  
 **Shared learning objective:** Read plant labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5751,6 +5936,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Read plant labels  
 **Shared learning objective:** Read plant labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5782,6 +5968,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Read plant labels  
 **Shared learning objective:** Read plant labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5813,6 +6000,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Read plant labels  
 **Shared learning objective:** Read plant labels.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5844,6 +6032,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Listen for growth stages  
 **Shared learning objective:** Listen for growth stages.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5875,6 +6064,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Listen for growth stages  
 **Shared learning objective:** Listen for growth stages.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -5906,6 +6096,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Listen for growth stages  
 **Shared learning objective:** Listen for growth stages.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -5937,6 +6128,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Listen for growth stages  
 **Shared learning objective:** Listen for growth stages.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -5968,6 +6160,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Use action words  
 **Shared learning objective:** Use action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -5999,6 +6192,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Use action words  
 **Shared learning objective:** Use action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6030,6 +6224,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Use action words  
 **Shared learning objective:** Use action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6061,6 +6256,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Use action words  
 **Shared learning objective:** Use action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6092,6 +6288,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Record an observation  
 **Shared learning objective:** Record an observation.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6123,6 +6320,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Record an observation  
 **Shared learning objective:** Record an observation.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6154,6 +6352,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Record an observation  
 **Shared learning objective:** Record an observation.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6185,6 +6384,7 @@ ____________________________________________________________________________
 **Weekly theme:** Plants and gardens  
 **Today's task:** Record an observation  
 **Shared learning objective:** Record an observation.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6216,6 +6416,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Describe today's weather  
 **Shared learning objective:** Describe today's weather.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6247,6 +6448,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Describe today's weather  
 **Shared learning objective:** Describe today's weather.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6278,6 +6480,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Describe today's weather  
 **Shared learning objective:** Describe today's weather.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6309,6 +6512,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Describe today's weather  
 **Shared learning objective:** Describe today's weather.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6340,6 +6544,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Match weather words and symbols  
 **Shared learning objective:** Match weather words and symbols.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6371,6 +6576,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Match weather words and symbols  
 **Shared learning objective:** Match weather words and symbols.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6402,6 +6608,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Match weather words and symbols  
 **Shared learning objective:** Match weather words and symbols.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6433,6 +6640,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Match weather words and symbols  
 **Shared learning objective:** Match weather words and symbols.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6464,6 +6672,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Read a short weather note  
 **Shared learning objective:** Read a short weather note.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6495,6 +6704,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Read a short weather note  
 **Shared learning objective:** Read a short weather note.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6526,6 +6736,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Read a short weather note  
 **Shared learning objective:** Read a short weather note.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6557,6 +6768,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Read a short weather note  
 **Shared learning objective:** Read a short weather note.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6588,6 +6800,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Compare two conditions  
 **Shared learning objective:** Compare two conditions.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6619,6 +6832,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Compare two conditions  
 **Shared learning objective:** Compare two conditions.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6650,6 +6864,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Compare two conditions  
 **Shared learning objective:** Compare two conditions.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6681,6 +6896,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Compare two conditions  
 **Shared learning objective:** Compare two conditions.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6712,6 +6928,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Write a weather report  
 **Shared learning objective:** Write a weather report.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6743,6 +6960,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Write a weather report  
 **Shared learning objective:** Write a weather report.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6774,6 +6992,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Write a weather report  
 **Shared learning objective:** Write a weather report.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6805,6 +7024,7 @@ ____________________________________________________________________________
 **Weekly theme:** Weather and seasons  
 **Today's task:** Write a weather report  
 **Shared learning objective:** Write a weather report.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6836,6 +7056,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Ask and answer about play  
 **Shared learning objective:** Ask and answer about play.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6867,6 +7088,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Ask and answer about play  
 **Shared learning objective:** Ask and answer about play.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -6898,6 +7120,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Ask and answer about play  
 **Shared learning objective:** Ask and answer about play.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -6929,6 +7152,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Ask and answer about play  
 **Shared learning objective:** Ask and answer about play.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -6960,6 +7184,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Read a short dialogue  
 **Shared learning objective:** Read a short dialogue.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -6991,6 +7216,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Read a short dialogue  
 **Shared learning objective:** Read a short dialogue.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7022,6 +7248,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Read a short dialogue  
 **Shared learning objective:** Read a short dialogue.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7053,6 +7280,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Read a short dialogue  
 **Shared learning objective:** Read a short dialogue.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7084,6 +7312,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Listen for a choice and reason  
 **Shared learning objective:** Listen for a choice and reason.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7115,6 +7344,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Listen for a choice and reason  
 **Shared learning objective:** Listen for a choice and reason.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7146,6 +7376,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Listen for a choice and reason  
 **Shared learning objective:** Listen for a choice and reason.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7177,6 +7408,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Listen for a choice and reason  
 **Shared learning objective:** Listen for a choice and reason.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7208,6 +7440,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Identify action words  
 **Shared learning objective:** Identify action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7239,6 +7472,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Identify action words  
 **Shared learning objective:** Identify action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7270,6 +7504,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Identify action words  
 **Shared learning objective:** Identify action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7301,6 +7536,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Identify action words  
 **Shared learning objective:** Identify action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7332,6 +7568,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Write a new dialogue line  
 **Shared learning objective:** Write a new dialogue line.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7363,6 +7600,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Write a new dialogue line  
 **Shared learning objective:** Write a new dialogue line.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7394,6 +7632,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Write a new dialogue line  
 **Shared learning objective:** Write a new dialogue line.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7425,6 +7664,7 @@ ____________________________________________________________________________
 **Weekly theme:** At the playground  
 **Today's task:** Write a new dialogue line  
 **Shared learning objective:** Write a new dialogue line.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7456,6 +7696,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Explain a game rule  
 **Shared learning objective:** Explain a game rule.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7487,6 +7728,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Explain a game rule  
 **Shared learning objective:** Explain a game rule.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7518,6 +7760,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Explain a game rule  
 **Shared learning objective:** Explain a game rule.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7549,6 +7792,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Explain a game rule  
 **Shared learning objective:** Explain a game rule.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7580,6 +7824,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7611,6 +7856,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7642,6 +7888,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7673,6 +7920,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Read action words  
 **Shared learning objective:** Read action words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7704,6 +7952,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Follow an instruction  
 **Shared learning objective:** Follow an instruction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7735,6 +7984,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Follow an instruction  
 **Shared learning objective:** Follow an instruction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7766,6 +8016,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Follow an instruction  
 **Shared learning objective:** Follow an instruction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7797,6 +8048,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Follow an instruction  
 **Shared learning objective:** Follow an instruction.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7828,6 +8080,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Use verbs in sentences  
 **Shared learning objective:** Use verbs in sentences.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7859,6 +8112,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Use verbs in sentences  
 **Shared learning objective:** Use verbs in sentences.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -7890,6 +8144,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Use verbs in sentences  
 **Shared learning objective:** Use verbs in sentences.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -7921,6 +8176,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Use verbs in sentences  
 **Shared learning objective:** Use verbs in sentences.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -7952,6 +8208,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Write two safe game rules  
 **Shared learning objective:** Write two safe game rules.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -7983,6 +8240,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Write two safe game rules  
 **Shared learning objective:** Write two safe game rules.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8014,6 +8272,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Write two safe game rules  
 **Shared learning objective:** Write two safe game rules.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8045,6 +8304,7 @@ ____________________________________________________________________________
 **Weekly theme:** Sports and movement  
 **Today's task:** Write two safe game rules  
 **Shared learning objective:** Write two safe game rules.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8076,6 +8336,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Describe a water place  
 **Shared learning objective:** Describe a water place.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8107,6 +8368,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Describe a water place  
 **Shared learning objective:** Describe a water place.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8138,6 +8400,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Describe a water place  
 **Shared learning objective:** Describe a water place.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8169,6 +8432,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Describe a water place  
 **Shared learning objective:** Describe a water place.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8200,6 +8464,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Read a short factual paragraph  
 **Shared learning objective:** Read a short factual paragraph.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8231,6 +8496,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Read a short factual paragraph  
 **Shared learning objective:** Read a short factual paragraph.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8262,6 +8528,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Read a short factual paragraph  
 **Shared learning objective:** Read a short factual paragraph.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8293,6 +8560,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Read a short factual paragraph  
 **Shared learning objective:** Read a short factual paragraph.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8324,6 +8592,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Listen for two facts  
 **Shared learning objective:** Listen for two facts.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8355,6 +8624,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Listen for two facts  
 **Shared learning objective:** Listen for two facts.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8386,6 +8656,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Listen for two facts  
 **Shared learning objective:** Listen for two facts.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8417,6 +8688,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Listen for two facts  
 **Shared learning objective:** Listen for two facts.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8448,6 +8720,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Find topic words  
 **Shared learning objective:** Find topic words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8479,6 +8752,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Find topic words  
 **Shared learning objective:** Find topic words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8510,6 +8784,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Find topic words  
 **Shared learning objective:** Find topic words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8541,6 +8816,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Find topic words  
 **Shared learning objective:** Find topic words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8572,6 +8848,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Write one care message  
 **Shared learning objective:** Write one care message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8603,6 +8880,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Write one care message  
 **Shared learning objective:** Write one care message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8634,6 +8912,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Write one care message  
 **Shared learning objective:** Write one care message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8665,6 +8944,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our sea and waterways  
 **Today's task:** Write one care message  
 **Shared learning objective:** Write one care message.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8696,6 +8976,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Give a simple direction  
 **Shared learning objective:** Give a simple direction.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8727,6 +9008,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Give a simple direction  
 **Shared learning objective:** Give a simple direction.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8758,6 +9040,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Give a simple direction  
 **Shared learning objective:** Give a simple direction.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8789,6 +9072,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Give a simple direction  
 **Shared learning objective:** Give a simple direction.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8820,6 +9104,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Read a safety sign  
 **Shared learning objective:** Read a safety sign.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8851,6 +9136,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Read a safety sign  
 **Shared learning objective:** Read a safety sign.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -8882,6 +9168,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Read a safety sign  
 **Shared learning objective:** Read a safety sign.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -8913,6 +9200,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Read a safety sign  
 **Shared learning objective:** Read a safety sign.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -8944,6 +9232,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Listen and follow a route  
 **Shared learning objective:** Listen and follow a route.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -8975,6 +9264,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Listen and follow a route  
 **Shared learning objective:** Listen and follow a route.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9006,6 +9296,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Listen and follow a route  
 **Shared learning objective:** Listen and follow a route.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9037,6 +9328,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Listen and follow a route  
 **Shared learning objective:** Listen and follow a route.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9068,6 +9360,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Use direction words  
 **Shared learning objective:** Use direction words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9099,6 +9392,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Use direction words  
 **Shared learning objective:** Use direction words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9130,6 +9424,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Use direction words  
 **Shared learning objective:** Use direction words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9161,6 +9456,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Use direction words  
 **Shared learning objective:** Use direction words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9192,6 +9488,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Write a safety instruction  
 **Shared learning objective:** Write a safety instruction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9223,6 +9520,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Write a safety instruction  
 **Shared learning objective:** Write a safety instruction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9254,6 +9552,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Write a safety instruction  
 **Shared learning objective:** Write a safety instruction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9285,6 +9584,7 @@ ____________________________________________________________________________
 **Weekly theme:** Transport and safety  
 **Today's task:** Write a safety instruction  
 **Shared learning objective:** Write a safety instruction.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9316,6 +9616,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Retell a familiar story  
 **Shared learning objective:** Retell a familiar story.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9347,6 +9648,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Retell a familiar story  
 **Shared learning objective:** Retell a familiar story.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9378,6 +9680,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Retell a familiar story  
 **Shared learning objective:** Retell a familiar story.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9409,6 +9712,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Retell a familiar story  
 **Shared learning objective:** Retell a familiar story.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9440,6 +9744,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Identify characters and setting  
 **Shared learning objective:** Identify characters and setting.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9471,6 +9776,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Identify characters and setting  
 **Shared learning objective:** Identify characters and setting.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9502,6 +9808,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Identify characters and setting  
 **Shared learning objective:** Identify characters and setting.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9533,6 +9840,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Identify characters and setting  
 **Shared learning objective:** Identify characters and setting.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9564,6 +9872,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Listen for event order  
 **Shared learning objective:** Listen for event order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9595,6 +9904,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Listen for event order  
 **Shared learning objective:** Listen for event order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9626,6 +9936,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Listen for event order  
 **Shared learning objective:** Listen for event order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9657,6 +9968,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Listen for event order  
 **Shared learning objective:** Listen for event order.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9688,6 +10000,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Find a story detail  
 **Shared learning objective:** Find a story detail.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9719,6 +10032,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Find a story detail  
 **Shared learning objective:** Find a story detail.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9750,6 +10064,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Find a story detail  
 **Shared learning objective:** Find a story detail.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9781,6 +10096,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Find a story detail  
 **Shared learning objective:** Find a story detail.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9812,6 +10128,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Write a changed ending  
 **Shared learning objective:** Write a changed ending.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9843,6 +10160,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Write a changed ending  
 **Shared learning objective:** Write a changed ending.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9874,6 +10192,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Write a changed ending  
 **Shared learning objective:** Write a changed ending.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -9905,6 +10224,7 @@ ____________________________________________________________________________
 **Weekly theme:** Stories with a beginning, middle and end  
 **Today's task:** Write a changed ending  
 **Shared learning objective:** Write a changed ending.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -9936,6 +10256,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Say or sign a rhythmic line  
 **Shared learning objective:** Say or sign a rhythmic line.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -9967,6 +10288,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Say or sign a rhythmic line  
 **Shared learning objective:** Say or sign a rhythmic line.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -9998,6 +10320,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Say or sign a rhythmic line  
 **Shared learning objective:** Say or sign a rhythmic line.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10029,6 +10352,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Say or sign a rhythmic line  
 **Shared learning objective:** Say or sign a rhythmic line.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10060,6 +10384,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Find rhyming words  
 **Shared learning objective:** Find rhyming words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10091,6 +10416,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Find rhyming words  
 **Shared learning objective:** Find rhyming words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10122,6 +10448,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Find rhyming words  
 **Shared learning objective:** Find rhyming words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10153,6 +10480,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Find rhyming words  
 **Shared learning objective:** Find rhyming words.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10184,6 +10512,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Listen for repeated words  
 **Shared learning objective:** Listen for repeated words.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10215,6 +10544,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Listen for repeated words  
 **Shared learning objective:** Listen for repeated words.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10246,6 +10576,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Listen for repeated words  
 **Shared learning objective:** Listen for repeated words.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10277,6 +10608,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Listen for repeated words  
 **Shared learning objective:** Listen for repeated words.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10308,6 +10640,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Notice a pattern  
 **Shared learning objective:** Notice a pattern.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10339,6 +10672,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Notice a pattern  
 **Shared learning objective:** Notice a pattern.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10370,6 +10704,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Notice a pattern  
 **Shared learning objective:** Notice a pattern.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10401,6 +10736,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Notice a pattern  
 **Shared learning objective:** Notice a pattern.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10432,6 +10768,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Create two patterned lines  
 **Shared learning objective:** Create two patterned lines.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10463,6 +10800,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Create two patterned lines  
 **Shared learning objective:** Create two patterned lines.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10494,6 +10832,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Create two patterned lines  
 **Shared learning objective:** Create two patterned lines.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10525,6 +10864,7 @@ ____________________________________________________________________________
 **Weekly theme:** Poems, rhythm and rhyme  
 **Today's task:** Create two patterned lines  
 **Shared learning objective:** Create two patterned lines.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10556,6 +10896,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Share a greeting respectfully  
 **Shared learning objective:** Share a greeting respectfully.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10587,6 +10928,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Share a greeting respectfully  
 **Shared learning objective:** Share a greeting respectfully.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10618,6 +10960,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Share a greeting respectfully  
 **Shared learning objective:** Share a greeting respectfully.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10649,6 +10992,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Share a greeting respectfully  
 **Shared learning objective:** Share a greeting respectfully.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10680,6 +11024,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Read a short cultural caption  
 **Shared learning objective:** Read a short cultural caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10711,6 +11056,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Read a short cultural caption  
 **Shared learning objective:** Read a short cultural caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10742,6 +11088,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Read a short cultural caption  
 **Shared learning objective:** Read a short cultural caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10773,6 +11120,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Read a short cultural caption  
 **Shared learning objective:** Read a short cultural caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10804,6 +11152,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Listen for a key idea  
 **Shared learning objective:** Listen for a key idea.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10835,6 +11184,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Listen for a key idea  
 **Shared learning objective:** Listen for a key idea.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10866,6 +11216,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Listen for a key idea  
 **Shared learning objective:** Listen for a key idea.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -10897,6 +11248,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Listen for a key idea  
 **Shared learning objective:** Listen for a key idea.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -10928,6 +11280,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Compare words respectfully  
 **Shared learning objective:** Compare words respectfully.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -10959,6 +11312,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Compare words respectfully  
 **Shared learning objective:** Compare words respectfully.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -10990,6 +11344,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Compare words respectfully  
 **Shared learning objective:** Compare words respectfully.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11021,6 +11376,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Compare words respectfully  
 **Shared learning objective:** Compare words respectfully.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11052,6 +11408,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Write a caption  
 **Shared learning objective:** Write a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11083,6 +11440,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Write a caption  
 **Shared learning objective:** Write a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11114,6 +11472,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Write a caption  
 **Shared learning objective:** Write a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11145,6 +11504,7 @@ ____________________________________________________________________________
 **Weekly theme:** Fiji's languages and cultures  
 **Today's task:** Write a caption  
 **Shared learning objective:** Write a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11176,6 +11536,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Ask a community helper question  
 **Shared learning objective:** Ask a community helper question.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11207,6 +11568,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Ask a community helper question  
 **Shared learning objective:** Ask a community helper question.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11238,6 +11600,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Ask a community helper question  
 **Shared learning objective:** Ask a community helper question.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11269,6 +11632,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Ask a community helper question  
 **Shared learning objective:** Ask a community helper question.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11300,6 +11664,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Read a short role description  
 **Shared learning objective:** Read a short role description.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11331,6 +11696,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Read a short role description  
 **Shared learning objective:** Read a short role description.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11362,6 +11728,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Read a short role description  
 **Shared learning objective:** Read a short role description.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11393,6 +11760,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Read a short role description  
 **Shared learning objective:** Read a short role description.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11424,6 +11792,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Listen for a job and action  
 **Shared learning objective:** Listen for a job and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11455,6 +11824,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Listen for a job and action  
 **Shared learning objective:** Listen for a job and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11486,6 +11856,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Listen for a job and action  
 **Shared learning objective:** Listen for a job and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11517,6 +11888,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Listen for a job and action  
 **Shared learning objective:** Listen for a job and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11548,6 +11920,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Use precise action words  
 **Shared learning objective:** Use precise action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11579,6 +11952,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Use precise action words  
 **Shared learning objective:** Use precise action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11610,6 +11984,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Use precise action words  
 **Shared learning objective:** Use precise action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11641,6 +12016,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Use precise action words  
 **Shared learning objective:** Use precise action words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11672,6 +12048,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Write about a helper  
 **Shared learning objective:** Write about a helper.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11703,6 +12080,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Write about a helper  
 **Shared learning objective:** Write about a helper.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11734,6 +12112,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Write about a helper  
 **Shared learning objective:** Write about a helper.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11765,6 +12144,7 @@ ____________________________________________________________________________
 **Weekly theme:** People who help us  
 **Today's task:** Write about a helper  
 **Shared learning objective:** Write about a helper.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11796,6 +12176,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Explain how something is made  
 **Shared learning objective:** Explain how something is made.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11827,6 +12208,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Explain how something is made  
 **Shared learning objective:** Explain how something is made.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11858,6 +12240,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Explain how something is made  
 **Shared learning objective:** Explain how something is made.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -11889,6 +12272,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Explain how something is made  
 **Shared learning objective:** Explain how something is made.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -11920,6 +12304,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Read a simple procedure  
 **Shared learning objective:** Read a simple procedure.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -11951,6 +12336,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Read a simple procedure  
 **Shared learning objective:** Read a simple procedure.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -11982,6 +12368,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Read a simple procedure  
 **Shared learning objective:** Read a simple procedure.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12013,6 +12400,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Read a simple procedure  
 **Shared learning objective:** Read a simple procedure.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12044,6 +12432,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Follow ordered directions  
 **Shared learning objective:** Follow ordered directions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12075,6 +12464,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Follow ordered directions  
 **Shared learning objective:** Follow ordered directions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12106,6 +12496,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Follow ordered directions  
 **Shared learning objective:** Follow ordered directions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12137,6 +12528,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Follow ordered directions  
 **Shared learning objective:** Follow ordered directions.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12168,6 +12560,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12199,6 +12592,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12230,6 +12624,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12261,6 +12656,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Use sequence words  
 **Shared learning objective:** Use sequence words.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12292,6 +12688,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Write a short procedure  
 **Shared learning objective:** Write a short procedure.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12323,6 +12720,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Write a short procedure  
 **Shared learning objective:** Write a short procedure.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12354,6 +12752,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Write a short procedure  
 **Shared learning objective:** Write a short procedure.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12385,6 +12784,7 @@ ____________________________________________________________________________
 **Weekly theme:** Making and building  
 **Today's task:** Write a short procedure  
 **Shared learning objective:** Write a short procedure.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12416,6 +12816,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Suggest one way to care  
 **Shared learning objective:** Suggest one way to care.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12447,6 +12848,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Suggest one way to care  
 **Shared learning objective:** Suggest one way to care.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12478,6 +12880,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Suggest one way to care  
 **Shared learning objective:** Suggest one way to care.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12509,6 +12912,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Suggest one way to care  
 **Shared learning objective:** Suggest one way to care.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12540,6 +12944,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Read an environmental message  
 **Shared learning objective:** Read an environmental message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12571,6 +12976,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Read an environmental message  
 **Shared learning objective:** Read an environmental message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12602,6 +13008,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Read an environmental message  
 **Shared learning objective:** Read an environmental message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12633,6 +13040,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Read an environmental message  
 **Shared learning objective:** Read an environmental message.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12664,6 +13072,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Listen for a problem and action  
 **Shared learning objective:** Listen for a problem and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12695,6 +13104,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Listen for a problem and action  
 **Shared learning objective:** Listen for a problem and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12726,6 +13136,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Listen for a problem and action  
 **Shared learning objective:** Listen for a problem and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12757,6 +13168,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Listen for a problem and action  
 **Shared learning objective:** Listen for a problem and action.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12788,6 +13200,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Use because to give a reason  
 **Shared learning objective:** Use because to give a reason.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12819,6 +13232,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Use because to give a reason  
 **Shared learning objective:** Use because to give a reason.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12850,6 +13264,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Use because to give a reason  
 **Shared learning objective:** Use because to give a reason.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -12881,6 +13296,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Use because to give a reason  
 **Shared learning objective:** Use because to give a reason.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -12912,6 +13328,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Write a suggestion  
 **Shared learning objective:** Write a suggestion.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -12943,6 +13360,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Write a suggestion  
 **Shared learning objective:** Write a suggestion.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -12974,6 +13392,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Write a suggestion  
 **Shared learning objective:** Write a suggestion.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13005,6 +13424,7 @@ ____________________________________________________________________________
 **Weekly theme:** Our environment  
 **Today's task:** Write a suggestion  
 **Shared learning objective:** Write a suggestion.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13036,6 +13456,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Describe a notice  
 **Shared learning objective:** Describe a notice.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13067,6 +13488,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Describe a notice  
 **Shared learning objective:** Describe a notice.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13098,6 +13520,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Describe a notice  
 **Shared learning objective:** Describe a notice.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13129,6 +13552,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Describe a notice  
 **Shared learning objective:** Describe a notice.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13160,6 +13584,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Read a caption  
 **Shared learning objective:** Read a caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13191,6 +13616,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Read a caption  
 **Shared learning objective:** Read a caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13222,6 +13648,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Read a caption  
 **Shared learning objective:** Read a caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13253,6 +13680,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Read a caption  
 **Shared learning objective:** Read a caption.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13284,6 +13712,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Listen for the message purpose  
 **Shared learning objective:** Listen for the message purpose.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13315,6 +13744,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Listen for the message purpose  
 **Shared learning objective:** Listen for the message purpose.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13346,6 +13776,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Listen for the message purpose  
 **Shared learning objective:** Listen for the message purpose.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13377,6 +13808,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Listen for the message purpose  
 **Shared learning objective:** Listen for the message purpose.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13408,6 +13840,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Identify key information  
 **Shared learning objective:** Identify key information.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13439,6 +13872,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Identify key information  
 **Shared learning objective:** Identify key information.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13470,6 +13904,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Identify key information  
 **Shared learning objective:** Identify key information.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13501,6 +13936,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Identify key information  
 **Shared learning objective:** Identify key information.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13532,6 +13968,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Create a caption  
 **Shared learning objective:** Create a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13563,6 +14000,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Create a caption  
 **Shared learning objective:** Create a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13594,6 +14032,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Create a caption  
 **Shared learning objective:** Create a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13625,6 +14064,7 @@ ____________________________________________________________________________
 **Weekly theme:** Messages and media  
 **Today's task:** Create a caption  
 **Shared learning objective:** Create a caption.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13656,6 +14096,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Present a learning highlight  
 **Shared learning objective:** Present a learning highlight.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13687,6 +14128,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Present a learning highlight  
 **Shared learning objective:** Present a learning highlight.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13718,6 +14160,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Present a learning highlight  
 **Shared learning objective:** Present a learning highlight.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13749,6 +14192,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Present a learning highlight  
 **Shared learning objective:** Present a learning highlight.  
+**PacEdu working achievement indicator:** Learner can listen, take turns and respond to a question using a complete idea
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13780,6 +14224,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Reread a selected text  
 **Shared learning objective:** Reread a selected text.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13811,6 +14256,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Reread a selected text  
 **Shared learning objective:** Reread a selected text.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13842,6 +14288,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Reread a selected text  
 **Shared learning objective:** Reread a selected text.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13873,6 +14320,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Reread a selected text  
 **Shared learning objective:** Reread a selected text.  
+**PacEdu working achievement indicator:** Learner can explore 4–6 theme words.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -13904,6 +14352,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Find evidence in a text  
 **Shared learning objective:** Find evidence in a text.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -13935,6 +14384,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Find evidence in a text  
 **Shared learning objective:** Find evidence in a text.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -13966,6 +14416,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Find evidence in a text  
 **Shared learning objective:** Find evidence in a text.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -13997,6 +14448,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Find evidence in a text  
 **Shared learning objective:** Find evidence in a text.  
+**PacEdu working achievement indicator:** Learner can read or listen to a short teacher-selected text about the theme.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -14028,6 +14480,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Edit one sentence  
 **Shared learning objective:** Edit one sentence.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -14059,6 +14512,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Edit one sentence  
 **Shared learning objective:** Edit one sentence.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -14090,6 +14544,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Edit one sentence  
 **Shared learning objective:** Edit one sentence.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -14121,6 +14576,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Edit one sentence  
 **Shared learning objective:** Edit one sentence.  
+**PacEdu working achievement indicator:** Learner can notice one language feature in a model sentence or text (for example nouns, verbs, describing words, question forms, joining words, punctuation or sequence words).
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
@@ -14152,6 +14608,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Share a final piece  
 **Shared learning objective:** Share a final piece.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Copper instructions:** Adult reads and models. Use picture/tactile cues, two choices, large print and ample wait time. Learner may point, sign, gesture, use AAC, speak, draw or dictate.
 ### Try it
@@ -14183,6 +14640,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Share a final piece  
 **Shared learning objective:** Share a final piece.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Bronze instructions:** Use a visual cue, word bank and one worked example. Complete a similar item with guided prompts, then try one independently.
 ### Try it
@@ -14214,6 +14672,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Share a final piece  
 **Shared learning objective:** Share a final piece.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Silver instructions:** Complete the same objective independently using familiar taught words and patterns. Reread the response.
 ### Try it
@@ -14245,6 +14704,7 @@ ____________________________________________________________________________
 **Weekly theme:** Review and share learning  
 **Today's task:** Share a final piece  
 **Shared learning objective:** Share a final piece.  
+**PacEdu working achievement indicator:** Learner can create a short response linked to the theme: a labelled drawing, list, caption, dialogue, set of instructions, description or short paragraph.
 **Official Fiji outcome/indicator and source edition/page:** `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 **Gold instructions:** Complete the same objective and extend with a reason, comparison, extra detail or independent revision. Do not use untaught phonics patterns.
 ### Try it
