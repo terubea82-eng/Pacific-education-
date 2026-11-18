@@ -96,5 +96,5 @@ test('Form 5 to Form 7 Science requires a specific approved science subject pack
 
 test('ability group labels use the approved Copper to Gold names',()=>{
  const api=loadPack();
- assert.deepEqual(api.abilities.map(b=>b.label),['Copper','Bronze','Silver','Gold']);
+ assert.deepEqual(Array.from(api.abilities, b=>b.label),['Copper','Bronze','Silver','Gold']);
 });
