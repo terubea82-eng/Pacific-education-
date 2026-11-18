@@ -10,6 +10,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 1 · Term 1 Week 1 Day 1 · Copper
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -22,6 +23,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 1 · Term 1 Week 1 Day 1 · Bronze
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -34,6 +36,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 1 · Term 1 Week 1 Day 1 · Silver
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -46,6 +49,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 1 · Term 1 Week 1 Day 1 · Gold
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -58,6 +62,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 2 · Term 1 Week 1 Day 2 · Copper
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -70,6 +75,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 2 · Term 1 Week 1 Day 2 · Bronze
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -82,6 +88,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 2 · Term 1 Week 1 Day 2 · Silver
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -94,6 +101,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 2 · Term 1 Week 1 Day 2 · Gold
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -106,6 +114,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 3 · Term 1 Week 1 Day 3 · Copper
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -118,6 +127,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 3 · Term 1 Week 1 Day 3 · Bronze
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -130,6 +140,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 3 · Term 1 Week 1 Day 3 · Silver
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -142,6 +153,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 3 · Term 1 Week 1 Day 3 · Gold
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -154,6 +166,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 4 · Term 1 Week 1 Day 4 · Copper
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -166,6 +179,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 4 · Term 1 Week 1 Day 4 · Bronze
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -178,6 +192,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 4 · Term 1 Week 1 Day 4 · Silver
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -190,6 +205,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 4 · Term 1 Week 1 Day 4 · Gold
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -202,6 +218,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 5 · Term 1 Week 1 Day 5 · Copper
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -214,6 +231,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 5 · Term 1 Week 1 Day 5 · Bronze
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -226,6 +244,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 5 · Term 1 Week 1 Day 5 · Silver
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -238,6 +257,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 5 · Term 1 Week 1 Day 5 · Gold
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -250,6 +270,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 6 · Term 1 Week 2 Day 1 · Copper
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -262,6 +283,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 6 · Term 1 Week 2 Day 1 · Bronze
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -274,6 +296,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 6 · Term 1 Week 2 Day 1 · Silver
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -286,6 +309,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 6 · Term 1 Week 2 Day 1 · Gold
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -298,6 +322,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 7 · Term 1 Week 2 Day 2 · Copper
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -310,6 +335,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 7 · Term 1 Week 2 Day 2 · Bronze
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -322,6 +348,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 7 · Term 1 Week 2 Day 2 · Silver
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -334,6 +361,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 7 · Term 1 Week 2 Day 2 · Gold
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -346,6 +374,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 8 · Term 1 Week 2 Day 3 · Copper
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -358,6 +387,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 8 · Term 1 Week 2 Day 3 · Bronze
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -370,6 +400,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 8 · Term 1 Week 2 Day 3 · Silver
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -382,6 +413,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 8 · Term 1 Week 2 Day 3 · Gold
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -394,6 +426,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 9 · Term 1 Week 2 Day 4 · Copper
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -406,6 +439,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 9 · Term 1 Week 2 Day 4 · Bronze
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -418,6 +452,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 9 · Term 1 Week 2 Day 4 · Silver
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -430,6 +465,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 9 · Term 1 Week 2 Day 4 · Gold
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -442,6 +478,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 10 · Term 1 Week 2 Day 5 · Copper
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -454,6 +491,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 10 · Term 1 Week 2 Day 5 · Bronze
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -466,6 +504,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 10 · Term 1 Week 2 Day 5 · Silver
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -478,6 +517,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 10 · Term 1 Week 2 Day 5 · Gold
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -490,6 +530,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 11 · Term 1 Week 3 Day 1 · Copper
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -502,6 +543,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 11 · Term 1 Week 3 Day 1 · Bronze
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -514,6 +556,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 11 · Term 1 Week 3 Day 1 · Silver
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -526,6 +569,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 11 · Term 1 Week 3 Day 1 · Gold
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -538,6 +582,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 12 · Term 1 Week 3 Day 2 · Copper
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -550,6 +595,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 12 · Term 1 Week 3 Day 2 · Bronze
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -562,6 +608,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 12 · Term 1 Week 3 Day 2 · Silver
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -574,6 +621,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 12 · Term 1 Week 3 Day 2 · Gold
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -586,6 +634,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 13 · Term 1 Week 3 Day 3 · Copper
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -598,6 +647,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 13 · Term 1 Week 3 Day 3 · Bronze
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -610,6 +660,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 13 · Term 1 Week 3 Day 3 · Silver
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -622,6 +673,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 13 · Term 1 Week 3 Day 3 · Gold
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -634,6 +686,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 14 · Term 1 Week 3 Day 4 · Copper
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -646,6 +699,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 14 · Term 1 Week 3 Day 4 · Bronze
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -658,6 +712,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 14 · Term 1 Week 3 Day 4 · Silver
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -670,6 +725,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 14 · Term 1 Week 3 Day 4 · Gold
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -682,6 +738,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 15 · Term 1 Week 3 Day 5 · Copper
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -694,6 +751,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 15 · Term 1 Week 3 Day 5 · Bronze
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -706,6 +764,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 15 · Term 1 Week 3 Day 5 · Silver
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -718,6 +777,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 15 · Term 1 Week 3 Day 5 · Gold
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -730,6 +790,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 16 · Term 1 Week 4 Day 1 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -742,6 +803,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 16 · Term 1 Week 4 Day 1 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -754,6 +816,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 16 · Term 1 Week 4 Day 1 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -766,6 +829,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 16 · Term 1 Week 4 Day 1 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -778,6 +842,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 17 · Term 1 Week 4 Day 2 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -790,6 +855,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 17 · Term 1 Week 4 Day 2 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -802,6 +868,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 17 · Term 1 Week 4 Day 2 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -814,6 +881,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 17 · Term 1 Week 4 Day 2 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -826,6 +894,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 18 · Term 1 Week 4 Day 3 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -838,6 +907,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 18 · Term 1 Week 4 Day 3 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -850,6 +920,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 18 · Term 1 Week 4 Day 3 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -862,6 +933,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 18 · Term 1 Week 4 Day 3 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -874,6 +946,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 19 · Term 1 Week 4 Day 4 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -886,6 +959,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 19 · Term 1 Week 4 Day 4 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -898,6 +972,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 19 · Term 1 Week 4 Day 4 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -910,6 +985,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 19 · Term 1 Week 4 Day 4 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -922,6 +998,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 20 · Term 1 Week 4 Day 5 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -934,6 +1011,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 20 · Term 1 Week 4 Day 5 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -946,6 +1024,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 20 · Term 1 Week 4 Day 5 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -958,6 +1037,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 20 · Term 1 Week 4 Day 5 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -970,6 +1050,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 21 · Term 1 Week 5 Day 1 · Copper
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -982,6 +1063,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 21 · Term 1 Week 5 Day 1 · Bronze
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -994,6 +1076,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 21 · Term 1 Week 5 Day 1 · Silver
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1006,6 +1089,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 21 · Term 1 Week 5 Day 1 · Gold
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1018,6 +1102,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 22 · Term 1 Week 5 Day 2 · Copper
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1030,6 +1115,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 22 · Term 1 Week 5 Day 2 · Bronze
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1042,6 +1128,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 22 · Term 1 Week 5 Day 2 · Silver
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1054,6 +1141,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 22 · Term 1 Week 5 Day 2 · Gold
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1066,6 +1154,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 23 · Term 1 Week 5 Day 3 · Copper
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1078,6 +1167,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 23 · Term 1 Week 5 Day 3 · Bronze
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1090,6 +1180,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 23 · Term 1 Week 5 Day 3 · Silver
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1102,6 +1193,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 23 · Term 1 Week 5 Day 3 · Gold
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1114,6 +1206,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 24 · Term 1 Week 5 Day 4 · Copper
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1126,6 +1219,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 24 · Term 1 Week 5 Day 4 · Bronze
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1138,6 +1232,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 24 · Term 1 Week 5 Day 4 · Silver
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1150,6 +1245,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 24 · Term 1 Week 5 Day 4 · Gold
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1162,6 +1258,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 25 · Term 1 Week 5 Day 5 · Copper
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1174,6 +1271,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 25 · Term 1 Week 5 Day 5 · Bronze
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1186,6 +1284,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 25 · Term 1 Week 5 Day 5 · Silver
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1198,6 +1297,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 25 · Term 1 Week 5 Day 5 · Gold
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1210,6 +1310,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 26 · Term 1 Week 6 Day 1 · Copper
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1222,6 +1323,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 26 · Term 1 Week 6 Day 1 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1234,6 +1336,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 26 · Term 1 Week 6 Day 1 · Silver
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1246,6 +1349,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 26 · Term 1 Week 6 Day 1 · Gold
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1258,6 +1362,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 27 · Term 1 Week 6 Day 2 · Copper
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1270,6 +1375,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 27 · Term 1 Week 6 Day 2 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1282,6 +1388,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 27 · Term 1 Week 6 Day 2 · Silver
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1294,6 +1401,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 27 · Term 1 Week 6 Day 2 · Gold
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1306,6 +1414,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 28 · Term 1 Week 6 Day 3 · Copper
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1318,6 +1427,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 28 · Term 1 Week 6 Day 3 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1330,6 +1440,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 28 · Term 1 Week 6 Day 3 · Silver
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1342,6 +1453,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 28 · Term 1 Week 6 Day 3 · Gold
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1354,6 +1466,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 29 · Term 1 Week 6 Day 4 · Copper
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1366,6 +1479,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 29 · Term 1 Week 6 Day 4 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1378,6 +1492,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 29 · Term 1 Week 6 Day 4 · Silver
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1390,6 +1505,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 29 · Term 1 Week 6 Day 4 · Gold
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1402,6 +1518,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 30 · Term 1 Week 6 Day 5 · Copper
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1414,6 +1531,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 30 · Term 1 Week 6 Day 5 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1426,6 +1544,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 30 · Term 1 Week 6 Day 5 · Silver
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1438,6 +1557,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 30 · Term 1 Week 6 Day 5 · Gold
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1450,6 +1570,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 31 · Term 1 Week 7 Day 1 · Copper
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1462,6 +1583,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 31 · Term 1 Week 7 Day 1 · Bronze
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1474,6 +1596,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 31 · Term 1 Week 7 Day 1 · Silver
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1486,6 +1609,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 31 · Term 1 Week 7 Day 1 · Gold
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1498,6 +1622,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 32 · Term 1 Week 7 Day 2 · Copper
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1510,6 +1635,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 32 · Term 1 Week 7 Day 2 · Bronze
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1522,6 +1648,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 32 · Term 1 Week 7 Day 2 · Silver
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1534,6 +1661,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 32 · Term 1 Week 7 Day 2 · Gold
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1546,6 +1674,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 33 · Term 1 Week 7 Day 3 · Copper
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1558,6 +1687,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 33 · Term 1 Week 7 Day 3 · Bronze
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1570,6 +1700,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 33 · Term 1 Week 7 Day 3 · Silver
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1582,6 +1713,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 33 · Term 1 Week 7 Day 3 · Gold
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1594,6 +1726,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 34 · Term 1 Week 7 Day 4 · Copper
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1606,6 +1739,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 34 · Term 1 Week 7 Day 4 · Bronze
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1618,6 +1752,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 34 · Term 1 Week 7 Day 4 · Silver
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1630,6 +1765,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 34 · Term 1 Week 7 Day 4 · Gold
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1642,6 +1778,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 35 · Term 1 Week 7 Day 5 · Copper
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1654,6 +1791,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 35 · Term 1 Week 7 Day 5 · Bronze
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1666,6 +1804,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 35 · Term 1 Week 7 Day 5 · Silver
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1678,6 +1817,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 35 · Term 1 Week 7 Day 5 · Gold
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1690,6 +1830,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 36 · Term 1 Week 8 Day 1 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1702,6 +1843,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 36 · Term 1 Week 8 Day 1 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1714,6 +1856,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 36 · Term 1 Week 8 Day 1 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1726,6 +1869,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 36 · Term 1 Week 8 Day 1 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1738,6 +1882,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 37 · Term 1 Week 8 Day 2 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1750,6 +1895,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 37 · Term 1 Week 8 Day 2 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1762,6 +1908,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 37 · Term 1 Week 8 Day 2 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1774,6 +1921,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 37 · Term 1 Week 8 Day 2 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1786,6 +1934,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 38 · Term 1 Week 8 Day 3 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1798,6 +1947,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 38 · Term 1 Week 8 Day 3 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1810,6 +1960,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 38 · Term 1 Week 8 Day 3 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1822,6 +1973,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 38 · Term 1 Week 8 Day 3 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1834,6 +1986,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 39 · Term 1 Week 8 Day 4 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1846,6 +1999,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 39 · Term 1 Week 8 Day 4 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1858,6 +2012,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 39 · Term 1 Week 8 Day 4 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1870,6 +2025,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 39 · Term 1 Week 8 Day 4 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1882,6 +2038,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 40 · Term 1 Week 8 Day 5 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1894,6 +2051,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 40 · Term 1 Week 8 Day 5 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1906,6 +2064,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 40 · Term 1 Week 8 Day 5 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1918,6 +2077,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 40 · Term 1 Week 8 Day 5 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1930,6 +2090,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 41 · Term 1 Week 9 Day 1 · Copper
 **Theme:** Research methods and source evaluation | **Area:** Listening and speaking
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1942,6 +2103,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 41 · Term 1 Week 9 Day 1 · Bronze
 **Theme:** Research methods and source evaluation | **Area:** Listening and speaking
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1954,6 +2116,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 41 · Term 1 Week 9 Day 1 · Silver
 **Theme:** Research methods and source evaluation | **Area:** Listening and speaking
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1966,6 +2129,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 41 · Term 1 Week 9 Day 1 · Gold
 **Theme:** Research methods and source evaluation | **Area:** Listening and speaking
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1978,6 +2142,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 42 · Term 1 Week 9 Day 2 · Copper
 **Theme:** Research methods and source evaluation | **Area:** Vocabulary and language
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -1990,6 +2155,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 42 · Term 1 Week 9 Day 2 · Bronze
 **Theme:** Research methods and source evaluation | **Area:** Vocabulary and language
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2002,6 +2168,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 42 · Term 1 Week 9 Day 2 · Silver
 **Theme:** Research methods and source evaluation | **Area:** Vocabulary and language
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2014,6 +2181,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 42 · Term 1 Week 9 Day 2 · Gold
 **Theme:** Research methods and source evaluation | **Area:** Vocabulary and language
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2026,6 +2194,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 43 · Term 1 Week 9 Day 3 · Copper
 **Theme:** Research methods and source evaluation | **Area:** Reading and viewing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2038,6 +2207,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 43 · Term 1 Week 9 Day 3 · Bronze
 **Theme:** Research methods and source evaluation | **Area:** Reading and viewing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2050,6 +2220,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 43 · Term 1 Week 9 Day 3 · Silver
 **Theme:** Research methods and source evaluation | **Area:** Reading and viewing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2062,6 +2233,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 43 · Term 1 Week 9 Day 3 · Gold
 **Theme:** Research methods and source evaluation | **Area:** Reading and viewing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2074,6 +2246,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 44 · Term 1 Week 9 Day 4 · Copper
 **Theme:** Research methods and source evaluation | **Area:** Critical literacy and text craft
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2086,6 +2259,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 44 · Term 1 Week 9 Day 4 · Bronze
 **Theme:** Research methods and source evaluation | **Area:** Critical literacy and text craft
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2098,6 +2272,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 44 · Term 1 Week 9 Day 4 · Silver
 **Theme:** Research methods and source evaluation | **Area:** Critical literacy and text craft
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2110,6 +2285,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 44 · Term 1 Week 9 Day 4 · Gold
 **Theme:** Research methods and source evaluation | **Area:** Critical literacy and text craft
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2122,6 +2298,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 45 · Term 1 Week 9 Day 5 · Copper
 **Theme:** Research methods and source evaluation | **Area:** Writing and sharing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2134,6 +2311,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 45 · Term 1 Week 9 Day 5 · Bronze
 **Theme:** Research methods and source evaluation | **Area:** Writing and sharing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2146,6 +2324,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 45 · Term 1 Week 9 Day 5 · Silver
 **Theme:** Research methods and source evaluation | **Area:** Writing and sharing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2158,6 +2337,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 45 · Term 1 Week 9 Day 5 · Gold
 **Theme:** Research methods and source evaluation | **Area:** Writing and sharing
 **Objective:** Form an inquiry question; evaluate sources; take notes, paraphrase and synthesise responsibly.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2170,6 +2350,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 46 · Term 2 Week 1 Day 1 · Copper
 **Theme:** Poetry, drama and creative expression | **Area:** Listening and speaking
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2182,6 +2363,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 46 · Term 2 Week 1 Day 1 · Bronze
 **Theme:** Poetry, drama and creative expression | **Area:** Listening and speaking
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2194,6 +2376,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 46 · Term 2 Week 1 Day 1 · Silver
 **Theme:** Poetry, drama and creative expression | **Area:** Listening and speaking
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2206,6 +2389,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 46 · Term 2 Week 1 Day 1 · Gold
 **Theme:** Poetry, drama and creative expression | **Area:** Listening and speaking
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2218,6 +2402,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 47 · Term 2 Week 1 Day 2 · Copper
 **Theme:** Poetry, drama and creative expression | **Area:** Vocabulary and language
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2230,6 +2415,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 47 · Term 2 Week 1 Day 2 · Bronze
 **Theme:** Poetry, drama and creative expression | **Area:** Vocabulary and language
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2242,6 +2428,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 47 · Term 2 Week 1 Day 2 · Silver
 **Theme:** Poetry, drama and creative expression | **Area:** Vocabulary and language
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2254,6 +2441,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 47 · Term 2 Week 1 Day 2 · Gold
 **Theme:** Poetry, drama and creative expression | **Area:** Vocabulary and language
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2266,6 +2454,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 48 · Term 2 Week 1 Day 3 · Copper
 **Theme:** Poetry, drama and creative expression | **Area:** Reading and viewing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2278,6 +2467,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 48 · Term 2 Week 1 Day 3 · Bronze
 **Theme:** Poetry, drama and creative expression | **Area:** Reading and viewing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2290,6 +2480,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 48 · Term 2 Week 1 Day 3 · Silver
 **Theme:** Poetry, drama and creative expression | **Area:** Reading and viewing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2302,6 +2493,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 48 · Term 2 Week 1 Day 3 · Gold
 **Theme:** Poetry, drama and creative expression | **Area:** Reading and viewing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2314,6 +2506,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 49 · Term 2 Week 1 Day 4 · Copper
 **Theme:** Poetry, drama and creative expression | **Area:** Critical literacy and text craft
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2326,6 +2519,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 49 · Term 2 Week 1 Day 4 · Bronze
 **Theme:** Poetry, drama and creative expression | **Area:** Critical literacy and text craft
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2338,6 +2532,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 49 · Term 2 Week 1 Day 4 · Silver
 **Theme:** Poetry, drama and creative expression | **Area:** Critical literacy and text craft
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2350,6 +2545,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 49 · Term 2 Week 1 Day 4 · Gold
 **Theme:** Poetry, drama and creative expression | **Area:** Critical literacy and text craft
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2362,6 +2558,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 50 · Term 2 Week 1 Day 5 · Copper
 **Theme:** Poetry, drama and creative expression | **Area:** Writing and sharing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2374,6 +2571,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 50 · Term 2 Week 1 Day 5 · Bronze
 **Theme:** Poetry, drama and creative expression | **Area:** Writing and sharing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2386,6 +2584,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 50 · Term 2 Week 1 Day 5 · Silver
 **Theme:** Poetry, drama and creative expression | **Area:** Writing and sharing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2398,6 +2597,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 50 · Term 2 Week 1 Day 5 · Gold
 **Theme:** Poetry, drama and creative expression | **Area:** Writing and sharing
 **Objective:** Analyse form, imagery, voice and structure; craft an original response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2410,6 +2610,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 51 · Term 2 Week 2 Day 1 · Copper
 **Theme:** Critical literacy and ideology | **Area:** Listening and speaking
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2422,6 +2623,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 51 · Term 2 Week 2 Day 1 · Bronze
 **Theme:** Critical literacy and ideology | **Area:** Listening and speaking
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2434,6 +2636,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 51 · Term 2 Week 2 Day 1 · Silver
 **Theme:** Critical literacy and ideology | **Area:** Listening and speaking
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2446,6 +2649,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 51 · Term 2 Week 2 Day 1 · Gold
 **Theme:** Critical literacy and ideology | **Area:** Listening and speaking
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2458,6 +2662,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 52 · Term 2 Week 2 Day 2 · Copper
 **Theme:** Critical literacy and ideology | **Area:** Vocabulary and language
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2470,6 +2675,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 52 · Term 2 Week 2 Day 2 · Bronze
 **Theme:** Critical literacy and ideology | **Area:** Vocabulary and language
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2482,6 +2688,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 52 · Term 2 Week 2 Day 2 · Silver
 **Theme:** Critical literacy and ideology | **Area:** Vocabulary and language
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2494,6 +2701,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 52 · Term 2 Week 2 Day 2 · Gold
 **Theme:** Critical literacy and ideology | **Area:** Vocabulary and language
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2506,6 +2714,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 53 · Term 2 Week 2 Day 3 · Copper
 **Theme:** Critical literacy and ideology | **Area:** Reading and viewing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2518,6 +2727,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 53 · Term 2 Week 2 Day 3 · Bronze
 **Theme:** Critical literacy and ideology | **Area:** Reading and viewing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2530,6 +2740,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 53 · Term 2 Week 2 Day 3 · Silver
 **Theme:** Critical literacy and ideology | **Area:** Reading and viewing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2542,6 +2753,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 53 · Term 2 Week 2 Day 3 · Gold
 **Theme:** Critical literacy and ideology | **Area:** Reading and viewing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2554,6 +2766,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 54 · Term 2 Week 2 Day 4 · Copper
 **Theme:** Critical literacy and ideology | **Area:** Critical literacy and text craft
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2566,6 +2779,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 54 · Term 2 Week 2 Day 4 · Bronze
 **Theme:** Critical literacy and ideology | **Area:** Critical literacy and text craft
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2578,6 +2792,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 54 · Term 2 Week 2 Day 4 · Silver
 **Theme:** Critical literacy and ideology | **Area:** Critical literacy and text craft
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2590,6 +2805,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 54 · Term 2 Week 2 Day 4 · Gold
 **Theme:** Critical literacy and ideology | **Area:** Critical literacy and text craft
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2602,6 +2818,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 55 · Term 2 Week 2 Day 5 · Copper
 **Theme:** Critical literacy and ideology | **Area:** Writing and sharing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2614,6 +2831,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 55 · Term 2 Week 2 Day 5 · Bronze
 **Theme:** Critical literacy and ideology | **Area:** Writing and sharing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2626,6 +2844,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 55 · Term 2 Week 2 Day 5 · Silver
 **Theme:** Critical literacy and ideology | **Area:** Writing and sharing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2638,6 +2857,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 55 · Term 2 Week 2 Day 5 · Gold
 **Theme:** Critical literacy and ideology | **Area:** Writing and sharing
 **Objective:** Examine assumptions, framing, language and power; write a critical commentary.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2650,6 +2870,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 56 · Term 2 Week 3 Day 1 · Copper
 **Theme:** Comparative texts and interpretation | **Area:** Listening and speaking
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2662,6 +2883,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 56 · Term 2 Week 3 Day 1 · Bronze
 **Theme:** Comparative texts and interpretation | **Area:** Listening and speaking
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2674,6 +2896,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 56 · Term 2 Week 3 Day 1 · Silver
 **Theme:** Comparative texts and interpretation | **Area:** Listening and speaking
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2686,6 +2909,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 56 · Term 2 Week 3 Day 1 · Gold
 **Theme:** Comparative texts and interpretation | **Area:** Listening and speaking
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2698,6 +2922,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 57 · Term 2 Week 3 Day 2 · Copper
 **Theme:** Comparative texts and interpretation | **Area:** Vocabulary and language
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2710,6 +2935,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 57 · Term 2 Week 3 Day 2 · Bronze
 **Theme:** Comparative texts and interpretation | **Area:** Vocabulary and language
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2722,6 +2948,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 57 · Term 2 Week 3 Day 2 · Silver
 **Theme:** Comparative texts and interpretation | **Area:** Vocabulary and language
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2734,6 +2961,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 57 · Term 2 Week 3 Day 2 · Gold
 **Theme:** Comparative texts and interpretation | **Area:** Vocabulary and language
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2746,6 +2974,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 58 · Term 2 Week 3 Day 3 · Copper
 **Theme:** Comparative texts and interpretation | **Area:** Reading and viewing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2758,6 +2987,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 58 · Term 2 Week 3 Day 3 · Bronze
 **Theme:** Comparative texts and interpretation | **Area:** Reading and viewing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2770,6 +3000,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 58 · Term 2 Week 3 Day 3 · Silver
 **Theme:** Comparative texts and interpretation | **Area:** Reading and viewing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2782,6 +3013,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 58 · Term 2 Week 3 Day 3 · Gold
 **Theme:** Comparative texts and interpretation | **Area:** Reading and viewing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2794,6 +3026,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 59 · Term 2 Week 3 Day 4 · Copper
 **Theme:** Comparative texts and interpretation | **Area:** Critical literacy and text craft
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2806,6 +3039,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 59 · Term 2 Week 3 Day 4 · Bronze
 **Theme:** Comparative texts and interpretation | **Area:** Critical literacy and text craft
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2818,6 +3052,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 59 · Term 2 Week 3 Day 4 · Silver
 **Theme:** Comparative texts and interpretation | **Area:** Critical literacy and text craft
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2830,6 +3065,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 59 · Term 2 Week 3 Day 4 · Gold
 **Theme:** Comparative texts and interpretation | **Area:** Critical literacy and text craft
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2842,6 +3078,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 60 · Term 2 Week 3 Day 5 · Copper
 **Theme:** Comparative texts and interpretation | **Area:** Writing and sharing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2854,6 +3091,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 60 · Term 2 Week 3 Day 5 · Bronze
 **Theme:** Comparative texts and interpretation | **Area:** Writing and sharing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2866,6 +3104,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 60 · Term 2 Week 3 Day 5 · Silver
 **Theme:** Comparative texts and interpretation | **Area:** Writing and sharing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2878,6 +3117,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 60 · Term 2 Week 3 Day 5 · Gold
 **Theme:** Comparative texts and interpretation | **Area:** Writing and sharing
 **Objective:** Compare form, context and meaning across texts; support interpretations with precise evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2890,6 +3130,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 61 · Term 2 Week 4 Day 1 · Copper
 **Theme:** Formal argument and examination practice | **Area:** Listening and speaking
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2902,6 +3143,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 61 · Term 2 Week 4 Day 1 · Bronze
 **Theme:** Formal argument and examination practice | **Area:** Listening and speaking
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2914,6 +3156,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 61 · Term 2 Week 4 Day 1 · Silver
 **Theme:** Formal argument and examination practice | **Area:** Listening and speaking
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2926,6 +3169,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 61 · Term 2 Week 4 Day 1 · Gold
 **Theme:** Formal argument and examination practice | **Area:** Listening and speaking
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2938,6 +3182,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 62 · Term 2 Week 4 Day 2 · Copper
 **Theme:** Formal argument and examination practice | **Area:** Vocabulary and language
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2950,6 +3195,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 62 · Term 2 Week 4 Day 2 · Bronze
 **Theme:** Formal argument and examination practice | **Area:** Vocabulary and language
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2962,6 +3208,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 62 · Term 2 Week 4 Day 2 · Silver
 **Theme:** Formal argument and examination practice | **Area:** Vocabulary and language
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2974,6 +3221,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 62 · Term 2 Week 4 Day 2 · Gold
 **Theme:** Formal argument and examination practice | **Area:** Vocabulary and language
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2986,6 +3234,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 63 · Term 2 Week 4 Day 3 · Copper
 **Theme:** Formal argument and examination practice | **Area:** Reading and viewing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -2998,6 +3247,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 63 · Term 2 Week 4 Day 3 · Bronze
 **Theme:** Formal argument and examination practice | **Area:** Reading and viewing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3010,6 +3260,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 63 · Term 2 Week 4 Day 3 · Silver
 **Theme:** Formal argument and examination practice | **Area:** Reading and viewing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3022,6 +3273,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 63 · Term 2 Week 4 Day 3 · Gold
 **Theme:** Formal argument and examination practice | **Area:** Reading and viewing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3034,6 +3286,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 64 · Term 2 Week 4 Day 4 · Copper
 **Theme:** Formal argument and examination practice | **Area:** Critical literacy and text craft
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3046,6 +3299,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 64 · Term 2 Week 4 Day 4 · Bronze
 **Theme:** Formal argument and examination practice | **Area:** Critical literacy and text craft
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3058,6 +3312,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 64 · Term 2 Week 4 Day 4 · Silver
 **Theme:** Formal argument and examination practice | **Area:** Critical literacy and text craft
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3070,6 +3325,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 64 · Term 2 Week 4 Day 4 · Gold
 **Theme:** Formal argument and examination practice | **Area:** Critical literacy and text craft
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3082,6 +3338,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 65 · Term 2 Week 4 Day 5 · Copper
 **Theme:** Formal argument and examination practice | **Area:** Writing and sharing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3094,6 +3351,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 65 · Term 2 Week 4 Day 5 · Bronze
 **Theme:** Formal argument and examination practice | **Area:** Writing and sharing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3106,6 +3364,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 65 · Term 2 Week 4 Day 5 · Silver
 **Theme:** Formal argument and examination practice | **Area:** Writing and sharing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3118,6 +3377,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 65 · Term 2 Week 4 Day 5 · Gold
 **Theme:** Formal argument and examination practice | **Area:** Writing and sharing
 **Objective:** Plan, develop, substantiate and edit extended responses against verified assessment criteria.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3130,6 +3390,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 66 · Term 2 Week 5 Day 1 · Copper
 **Theme:** Independent inquiry and presentation | **Area:** Listening and speaking
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3142,6 +3403,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 66 · Term 2 Week 5 Day 1 · Bronze
 **Theme:** Independent inquiry and presentation | **Area:** Listening and speaking
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3154,6 +3416,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 66 · Term 2 Week 5 Day 1 · Silver
 **Theme:** Independent inquiry and presentation | **Area:** Listening and speaking
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3166,6 +3429,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 66 · Term 2 Week 5 Day 1 · Gold
 **Theme:** Independent inquiry and presentation | **Area:** Listening and speaking
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3178,6 +3442,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 67 · Term 2 Week 5 Day 2 · Copper
 **Theme:** Independent inquiry and presentation | **Area:** Vocabulary and language
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3190,6 +3455,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 67 · Term 2 Week 5 Day 2 · Bronze
 **Theme:** Independent inquiry and presentation | **Area:** Vocabulary and language
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3202,6 +3468,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 67 · Term 2 Week 5 Day 2 · Silver
 **Theme:** Independent inquiry and presentation | **Area:** Vocabulary and language
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3214,6 +3481,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 67 · Term 2 Week 5 Day 2 · Gold
 **Theme:** Independent inquiry and presentation | **Area:** Vocabulary and language
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3226,6 +3494,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 68 · Term 2 Week 5 Day 3 · Copper
 **Theme:** Independent inquiry and presentation | **Area:** Reading and viewing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3238,6 +3507,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 68 · Term 2 Week 5 Day 3 · Bronze
 **Theme:** Independent inquiry and presentation | **Area:** Reading and viewing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3250,6 +3520,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 68 · Term 2 Week 5 Day 3 · Silver
 **Theme:** Independent inquiry and presentation | **Area:** Reading and viewing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3262,6 +3533,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 68 · Term 2 Week 5 Day 3 · Gold
 **Theme:** Independent inquiry and presentation | **Area:** Reading and viewing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3274,6 +3546,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 69 · Term 2 Week 5 Day 4 · Copper
 **Theme:** Independent inquiry and presentation | **Area:** Critical literacy and text craft
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3286,6 +3559,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 69 · Term 2 Week 5 Day 4 · Bronze
 **Theme:** Independent inquiry and presentation | **Area:** Critical literacy and text craft
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3298,6 +3572,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 69 · Term 2 Week 5 Day 4 · Silver
 **Theme:** Independent inquiry and presentation | **Area:** Critical literacy and text craft
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3310,6 +3585,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 69 · Term 2 Week 5 Day 4 · Gold
 **Theme:** Independent inquiry and presentation | **Area:** Critical literacy and text craft
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3322,6 +3598,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 70 · Term 2 Week 5 Day 5 · Copper
 **Theme:** Independent inquiry and presentation | **Area:** Writing and sharing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3334,6 +3611,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 70 · Term 2 Week 5 Day 5 · Bronze
 **Theme:** Independent inquiry and presentation | **Area:** Writing and sharing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3346,6 +3624,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 70 · Term 2 Week 5 Day 5 · Silver
 **Theme:** Independent inquiry and presentation | **Area:** Writing and sharing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3358,6 +3637,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 70 · Term 2 Week 5 Day 5 · Gold
 **Theme:** Independent inquiry and presentation | **Area:** Writing and sharing
 **Objective:** Conduct sustained inquiry; annotate sources; synthesise findings; present a reasoned conclusion.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3370,6 +3650,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 71 · Term 2 Week 6 Day 1 · Copper
 **Theme:** Review, reflection and transition | **Area:** Listening and speaking
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3382,6 +3663,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 71 · Term 2 Week 6 Day 1 · Bronze
 **Theme:** Review, reflection and transition | **Area:** Listening and speaking
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3394,6 +3676,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 71 · Term 2 Week 6 Day 1 · Silver
 **Theme:** Review, reflection and transition | **Area:** Listening and speaking
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3406,6 +3689,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 71 · Term 2 Week 6 Day 1 · Gold
 **Theme:** Review, reflection and transition | **Area:** Listening and speaking
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3418,6 +3702,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 72 · Term 2 Week 6 Day 2 · Copper
 **Theme:** Review, reflection and transition | **Area:** Vocabulary and language
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3430,6 +3715,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 72 · Term 2 Week 6 Day 2 · Bronze
 **Theme:** Review, reflection and transition | **Area:** Vocabulary and language
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3442,6 +3728,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 72 · Term 2 Week 6 Day 2 · Silver
 **Theme:** Review, reflection and transition | **Area:** Vocabulary and language
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3454,6 +3741,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 72 · Term 2 Week 6 Day 2 · Gold
 **Theme:** Review, reflection and transition | **Area:** Vocabulary and language
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3466,6 +3754,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 73 · Term 2 Week 6 Day 3 · Copper
 **Theme:** Review, reflection and transition | **Area:** Reading and viewing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3478,6 +3767,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 73 · Term 2 Week 6 Day 3 · Bronze
 **Theme:** Review, reflection and transition | **Area:** Reading and viewing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3490,6 +3780,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 73 · Term 2 Week 6 Day 3 · Silver
 **Theme:** Review, reflection and transition | **Area:** Reading and viewing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3502,6 +3793,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 73 · Term 2 Week 6 Day 3 · Gold
 **Theme:** Review, reflection and transition | **Area:** Reading and viewing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3514,6 +3806,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 74 · Term 2 Week 6 Day 4 · Copper
 **Theme:** Review, reflection and transition | **Area:** Critical literacy and text craft
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3526,6 +3819,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 74 · Term 2 Week 6 Day 4 · Bronze
 **Theme:** Review, reflection and transition | **Area:** Critical literacy and text craft
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3538,6 +3832,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 74 · Term 2 Week 6 Day 4 · Silver
 **Theme:** Review, reflection and transition | **Area:** Critical literacy and text craft
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3550,6 +3845,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 74 · Term 2 Week 6 Day 4 · Gold
 **Theme:** Review, reflection and transition | **Area:** Critical literacy and text craft
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3562,6 +3858,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 75 · Term 2 Week 6 Day 5 · Copper
 **Theme:** Review, reflection and transition | **Area:** Writing and sharing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3574,6 +3871,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 75 · Term 2 Week 6 Day 5 · Bronze
 **Theme:** Review, reflection and transition | **Area:** Writing and sharing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3586,6 +3884,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 75 · Term 2 Week 6 Day 5 · Silver
 **Theme:** Review, reflection and transition | **Area:** Writing and sharing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3598,6 +3897,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 75 · Term 2 Week 6 Day 5 · Gold
 **Theme:** Review, reflection and transition | **Area:** Writing and sharing
 **Objective:** Select evidence of progress; revise work; reflect on learning and next steps.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3610,6 +3910,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 76 · Term 2 Week 7 Day 1 · Copper
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3622,6 +3923,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 76 · Term 2 Week 7 Day 1 · Bronze
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3634,6 +3936,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 76 · Term 2 Week 7 Day 1 · Silver
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3646,6 +3949,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 76 · Term 2 Week 7 Day 1 · Gold
 **Theme:** Identity, language and society | **Area:** Listening and speaking
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3658,6 +3962,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 77 · Term 2 Week 7 Day 2 · Copper
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3670,6 +3975,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 77 · Term 2 Week 7 Day 2 · Bronze
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3682,6 +3988,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 77 · Term 2 Week 7 Day 2 · Silver
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3694,6 +4001,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 77 · Term 2 Week 7 Day 2 · Gold
 **Theme:** Identity, language and society | **Area:** Vocabulary and language
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3706,6 +4014,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 78 · Term 2 Week 7 Day 3 · Copper
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3718,6 +4027,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 78 · Term 2 Week 7 Day 3 · Bronze
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3730,6 +4040,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 78 · Term 2 Week 7 Day 3 · Silver
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3742,6 +4053,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 78 · Term 2 Week 7 Day 3 · Gold
 **Theme:** Identity, language and society | **Area:** Reading and viewing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3754,6 +4066,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 79 · Term 2 Week 7 Day 4 · Copper
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3766,6 +4079,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 79 · Term 2 Week 7 Day 4 · Bronze
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3778,6 +4092,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 79 · Term 2 Week 7 Day 4 · Silver
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3790,6 +4105,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 79 · Term 2 Week 7 Day 4 · Gold
 **Theme:** Identity, language and society | **Area:** Critical literacy and text craft
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3802,6 +4118,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 80 · Term 2 Week 7 Day 5 · Copper
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3814,6 +4131,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 80 · Term 2 Week 7 Day 5 · Bronze
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3826,6 +4144,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 80 · Term 2 Week 7 Day 5 · Silver
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3838,6 +4157,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 80 · Term 2 Week 7 Day 5 · Gold
 **Theme:** Identity, language and society | **Area:** Writing and sharing
 **Objective:** Analyse how language, identity and context shape meaning; develop a close reading and analytical response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3850,6 +4170,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 81 · Term 2 Week 8 Day 1 · Copper
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3862,6 +4183,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 81 · Term 2 Week 8 Day 1 · Bronze
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3874,6 +4196,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 81 · Term 2 Week 8 Day 1 · Silver
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3886,6 +4209,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 81 · Term 2 Week 8 Day 1 · Gold
 **Theme:** Power, representation and voice | **Area:** Listening and speaking
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3898,6 +4222,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 82 · Term 2 Week 8 Day 2 · Copper
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3910,6 +4235,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 82 · Term 2 Week 8 Day 2 · Bronze
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3922,6 +4248,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 82 · Term 2 Week 8 Day 2 · Silver
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3934,6 +4261,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 82 · Term 2 Week 8 Day 2 · Gold
 **Theme:** Power, representation and voice | **Area:** Vocabulary and language
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3946,6 +4274,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 83 · Term 2 Week 8 Day 3 · Copper
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3958,6 +4287,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 83 · Term 2 Week 8 Day 3 · Bronze
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3970,6 +4300,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 83 · Term 2 Week 8 Day 3 · Silver
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3982,6 +4313,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 83 · Term 2 Week 8 Day 3 · Gold
 **Theme:** Power, representation and voice | **Area:** Reading and viewing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -3994,6 +4326,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 84 · Term 2 Week 8 Day 4 · Copper
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4006,6 +4339,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 84 · Term 2 Week 8 Day 4 · Bronze
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4018,6 +4352,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 84 · Term 2 Week 8 Day 4 · Silver
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4030,6 +4365,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 84 · Term 2 Week 8 Day 4 · Gold
 **Theme:** Power, representation and voice | **Area:** Critical literacy and text craft
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4042,6 +4378,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 85 · Term 2 Week 8 Day 5 · Copper
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4054,6 +4391,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 85 · Term 2 Week 8 Day 5 · Bronze
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4066,6 +4404,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 85 · Term 2 Week 8 Day 5 · Silver
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4078,6 +4417,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 85 · Term 2 Week 8 Day 5 · Gold
 **Theme:** Power, representation and voice | **Area:** Writing and sharing
 **Objective:** Examine representation, perspective and omission; substantiate an interpretation with textual evidence.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4090,6 +4430,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 86 · Term 2 Week 9 Day 1 · Copper
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4102,6 +4443,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 86 · Term 2 Week 9 Day 1 · Bronze
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4114,6 +4456,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 86 · Term 2 Week 9 Day 1 · Silver
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4126,6 +4469,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 86 · Term 2 Week 9 Day 1 · Gold
 **Theme:** Literature and human experience | **Area:** Listening and speaking
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4138,6 +4482,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 87 · Term 2 Week 9 Day 2 · Copper
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4150,6 +4495,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 87 · Term 2 Week 9 Day 2 · Bronze
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4162,6 +4508,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 87 · Term 2 Week 9 Day 2 · Silver
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4174,6 +4521,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 87 · Term 2 Week 9 Day 2 · Gold
 **Theme:** Literature and human experience | **Area:** Vocabulary and language
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4186,6 +4534,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 88 · Term 2 Week 9 Day 3 · Copper
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4198,6 +4547,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 88 · Term 2 Week 9 Day 3 · Bronze
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4210,6 +4560,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 88 · Term 2 Week 9 Day 3 · Silver
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4222,6 +4573,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 88 · Term 2 Week 9 Day 3 · Gold
 **Theme:** Literature and human experience | **Area:** Reading and viewing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4234,6 +4586,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 89 · Term 2 Week 9 Day 4 · Copper
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4246,6 +4599,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 89 · Term 2 Week 9 Day 4 · Bronze
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4258,6 +4612,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 89 · Term 2 Week 9 Day 4 · Silver
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4270,6 +4625,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 89 · Term 2 Week 9 Day 4 · Gold
 **Theme:** Literature and human experience | **Area:** Critical literacy and text craft
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4282,6 +4638,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 90 · Term 2 Week 9 Day 5 · Copper
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4294,6 +4651,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 90 · Term 2 Week 9 Day 5 · Bronze
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4306,6 +4664,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 90 · Term 2 Week 9 Day 5 · Silver
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4318,6 +4677,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 90 · Term 2 Week 9 Day 5 · Gold
 **Theme:** Literature and human experience | **Area:** Writing and sharing
 **Objective:** Analyse theme, form, character and symbolism; develop a comparative response.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4330,6 +4690,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 91 · Term 3 Week 1 Day 1 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4342,6 +4703,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 91 · Term 3 Week 1 Day 1 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4354,6 +4716,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 91 · Term 3 Week 1 Day 1 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4366,6 +4729,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 91 · Term 3 Week 1 Day 1 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Listening and speaking
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4378,6 +4742,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 92 · Term 3 Week 1 Day 2 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4390,6 +4755,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 92 · Term 3 Week 1 Day 2 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4402,6 +4768,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 92 · Term 3 Week 1 Day 2 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4414,6 +4781,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 92 · Term 3 Week 1 Day 2 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Vocabulary and language
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4426,6 +4794,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 93 · Term 3 Week 1 Day 3 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4438,6 +4807,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 93 · Term 3 Week 1 Day 3 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4450,6 +4820,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 93 · Term 3 Week 1 Day 3 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4462,6 +4833,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 93 · Term 3 Week 1 Day 3 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Reading and viewing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4474,6 +4846,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 94 · Term 3 Week 1 Day 4 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4486,6 +4859,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 94 · Term 3 Week 1 Day 4 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4498,6 +4872,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 94 · Term 3 Week 1 Day 4 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4510,6 +4885,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 94 · Term 3 Week 1 Day 4 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Critical literacy and text craft
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4522,6 +4898,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 95 · Term 3 Week 1 Day 5 · Copper
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4534,6 +4911,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 95 · Term 3 Week 1 Day 5 · Bronze
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4546,6 +4924,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 95 · Term 3 Week 1 Day 5 · Silver
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4558,6 +4937,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 95 · Term 3 Week 1 Day 5 · Gold
 **Theme:** Media, rhetoric and public debate | **Area:** Writing and sharing
 **Objective:** Evaluate rhetorical strategies and credibility; develop an argument with counterargument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4570,6 +4950,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 96 · Term 3 Week 2 Day 1 · Copper
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4582,6 +4963,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 96 · Term 3 Week 2 Day 1 · Bronze
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4594,6 +4976,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 96 · Term 3 Week 2 Day 1 · Silver
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4606,6 +4989,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 96 · Term 3 Week 2 Day 1 · Gold
 **Theme:** Culture, history and memory | **Area:** Listening and speaking
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4618,6 +5002,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 97 · Term 3 Week 2 Day 2 · Copper
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4630,6 +5015,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 97 · Term 3 Week 2 Day 2 · Bronze
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4642,6 +5028,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 97 · Term 3 Week 2 Day 2 · Silver
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4654,6 +5041,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 97 · Term 3 Week 2 Day 2 · Gold
 **Theme:** Culture, history and memory | **Area:** Vocabulary and language
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4666,6 +5054,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 98 · Term 3 Week 2 Day 3 · Copper
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4678,6 +5067,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 98 · Term 3 Week 2 Day 3 · Bronze
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4690,6 +5080,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 98 · Term 3 Week 2 Day 3 · Silver
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4702,6 +5093,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 98 · Term 3 Week 2 Day 3 · Gold
 **Theme:** Culture, history and memory | **Area:** Reading and viewing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4714,6 +5106,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 99 · Term 3 Week 2 Day 4 · Copper
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4726,6 +5119,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 99 · Term 3 Week 2 Day 4 · Bronze
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4738,6 +5132,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 99 · Term 3 Week 2 Day 4 · Silver
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4750,6 +5145,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 99 · Term 3 Week 2 Day 4 · Gold
 **Theme:** Culture, history and memory | **Area:** Critical literacy and text craft
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4762,6 +5158,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 100 · Term 3 Week 2 Day 5 · Copper
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4774,6 +5171,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 100 · Term 3 Week 2 Day 5 · Bronze
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4786,6 +5184,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 100 · Term 3 Week 2 Day 5 · Silver
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4798,6 +5197,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 100 · Term 3 Week 2 Day 5 · Gold
 **Theme:** Culture, history and memory | **Area:** Writing and sharing
 **Objective:** Compare narratives and sources; analyse context, voice and memory.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4810,6 +5210,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 101 · Term 3 Week 3 Day 1 · Copper
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4822,6 +5223,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 101 · Term 3 Week 3 Day 1 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4834,6 +5236,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 101 · Term 3 Week 3 Day 1 · Silver
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4846,6 +5249,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 101 · Term 3 Week 3 Day 1 · Gold
 **Theme:** Science, technology and ethics | **Area:** Listening and speaking
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4858,6 +5262,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 102 · Term 3 Week 3 Day 2 · Copper
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4870,6 +5275,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 102 · Term 3 Week 3 Day 2 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4882,6 +5288,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 102 · Term 3 Week 3 Day 2 · Silver
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4894,6 +5301,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 102 · Term 3 Week 3 Day 2 · Gold
 **Theme:** Science, technology and ethics | **Area:** Vocabulary and language
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4906,6 +5314,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 103 · Term 3 Week 3 Day 3 · Copper
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4918,6 +5327,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 103 · Term 3 Week 3 Day 3 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4930,6 +5340,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 103 · Term 3 Week 3 Day 3 · Silver
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4942,6 +5353,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 103 · Term 3 Week 3 Day 3 · Gold
 **Theme:** Science, technology and ethics | **Area:** Reading and viewing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4954,6 +5366,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 104 · Term 3 Week 3 Day 4 · Copper
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4966,6 +5379,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 104 · Term 3 Week 3 Day 4 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4978,6 +5392,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 104 · Term 3 Week 3 Day 4 · Silver
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -4990,6 +5405,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 104 · Term 3 Week 3 Day 4 · Gold
 **Theme:** Science, technology and ethics | **Area:** Critical literacy and text craft
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5002,6 +5418,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 105 · Term 3 Week 3 Day 5 · Copper
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5014,6 +5431,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 105 · Term 3 Week 3 Day 5 · Bronze
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5026,6 +5444,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 105 · Term 3 Week 3 Day 5 · Silver
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5038,6 +5457,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 105 · Term 3 Week 3 Day 5 · Gold
 **Theme:** Science, technology and ethics | **Area:** Writing and sharing
 **Objective:** Explain complex ideas; evaluate claims, evidence, uncertainty and ethical implications.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5050,6 +5470,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 106 · Term 3 Week 4 Day 1 · Copper
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5062,6 +5483,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 106 · Term 3 Week 4 Day 1 · Bronze
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5074,6 +5496,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 106 · Term 3 Week 4 Day 1 · Silver
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5086,6 +5509,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 106 · Term 3 Week 4 Day 1 · Gold
 **Theme:** Environment, development and justice | **Area:** Listening and speaking
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5098,6 +5522,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 107 · Term 3 Week 4 Day 2 · Copper
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5110,6 +5535,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 107 · Term 3 Week 4 Day 2 · Bronze
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5122,6 +5548,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 107 · Term 3 Week 4 Day 2 · Silver
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5134,6 +5561,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 107 · Term 3 Week 4 Day 2 · Gold
 **Theme:** Environment, development and justice | **Area:** Vocabulary and language
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5146,6 +5574,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 108 · Term 3 Week 4 Day 3 · Copper
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5158,6 +5587,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 108 · Term 3 Week 4 Day 3 · Bronze
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5170,6 +5600,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 108 · Term 3 Week 4 Day 3 · Silver
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5182,6 +5613,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 108 · Term 3 Week 4 Day 3 · Gold
 **Theme:** Environment, development and justice | **Area:** Reading and viewing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5194,6 +5626,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 109 · Term 3 Week 4 Day 4 · Copper
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5206,6 +5639,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 109 · Term 3 Week 4 Day 4 · Bronze
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5218,6 +5652,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 109 · Term 3 Week 4 Day 4 · Silver
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5230,6 +5665,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 109 · Term 3 Week 4 Day 4 · Gold
 **Theme:** Environment, development and justice | **Area:** Critical literacy and text craft
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5242,6 +5678,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 110 · Term 3 Week 4 Day 5 · Copper
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5254,6 +5691,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 110 · Term 3 Week 4 Day 5 · Bronze
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5266,6 +5704,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 110 · Term 3 Week 4 Day 5 · Silver
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5278,6 +5717,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 110 · Term 3 Week 4 Day 5 · Gold
 **Theme:** Environment, development and justice | **Area:** Writing and sharing
 **Objective:** Compare stakeholder perspectives; synthesise evidence; write a policy-style argument.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5290,6 +5730,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 111 · Term 3 Week 5 Day 1 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5302,6 +5743,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 111 · Term 3 Week 5 Day 1 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5314,6 +5756,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 111 · Term 3 Week 5 Day 1 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5326,6 +5769,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 111 · Term 3 Week 5 Day 1 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Listening and speaking
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can present a reasoned position and respond thoughtfully to questions.
 **Task:** Present a reasoned position and respond thoughtfully to questions. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5338,6 +5782,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 112 · Term 3 Week 5 Day 2 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5350,6 +5795,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 112 · Term 3 Week 5 Day 2 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5362,6 +5808,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 112 · Term 3 Week 5 Day 2 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5374,6 +5821,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 112 · Term 3 Week 5 Day 2 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Vocabulary and language
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can analyse register, terminology and rhetorical/language choices in context.
 **Task:** Analyse register, terminology and rhetorical/language choices in context. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5386,6 +5834,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 113 · Term 3 Week 5 Day 3 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5398,6 +5847,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 113 · Term 3 Week 5 Day 3 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5410,6 +5860,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 113 · Term 3 Week 5 Day 3 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5422,6 +5873,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 113 · Term 3 Week 5 Day 3 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Reading and viewing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can closely examine a complex text; identify claims, structure, evidence and implications.
 **Task:** Closely examine a complex text; identify claims, structure, evidence and implications. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5434,6 +5886,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 114 · Term 3 Week 5 Day 4 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5446,6 +5899,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 114 · Term 3 Week 5 Day 4 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5458,6 +5912,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 114 · Term 3 Week 5 Day 4 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5470,6 +5925,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 114 · Term 3 Week 5 Day 4 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Critical literacy and text craft
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can evaluate perspective, representation, assumptions and how form shapes meaning.
 **Task:** Evaluate perspective, representation, assumptions and how form shapes meaning. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5482,6 +5938,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 115 · Term 3 Week 5 Day 5 · Copper
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Copper:** Teacher models each stage; divide the task into short steps; provide accessible text extracts, vocabulary support and planning prompts. Accept appropriate AAC, sign, oral, dictation or written response.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5494,6 +5951,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 115 · Term 3 Week 5 Day 5 · Bronze
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Bronze:** Provide a worked model, structured planning frame, key vocabulary and guided feedback; reduce support as independence develops.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5506,6 +5964,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 115 · Term 3 Week 5 Day 5 · Silver
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Silver:** Complete the task independently; organise a coherent response, select relevant evidence and edit for clarity.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
@@ -5518,6 +5977,7 @@ Accept appropriate accessible response modes. Credit accurate synonyms, paraphra
 ## Day 115 · Term 3 Week 5 Day 5 · Gold
 **Theme:** Work, leadership and public communication | **Area:** Writing and sharing
 **Objective:** Use professional register; prepare a report, proposal or formal presentation.
+**PacEdu working achievement indicator:** Learner can create, edit and share an extended response suited to audience, purpose and form.
 **Task:** Create, edit and share an extended response suited to audience, purpose and form. Use the teacher-selected authorised text. Identify the central claim or idea, select one supporting detail, and explain one implication or question.
 **Gold:** Extend the same objective through synthesis, qualification, comparison, counterargument or independent stylistic revision.
 **Worked example:** Interpret task and audience → select relevant evidence → organise claim and explanation → draft → review accuracy, coherence and register. Teacher models with the authorised text.
