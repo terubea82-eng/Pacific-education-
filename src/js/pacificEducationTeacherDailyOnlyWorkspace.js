@@ -145,6 +145,25 @@
 
       var starterNote=node("p","Existing Class 1 five-day diagnostic starter pack remains available for comparison; the new 115-day draft is the expanded programme.");
       packCard.appendChild(starterNote);
+      var class2Card=node("section");
+      class2Card.id="paceduClass2EnglishDailyPackLink";
+      class2Card.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
+      class2Card.appendChild(node("h4","Class 2 English — 115 Daily Activities (Copper–Gold)"));
+      class2Card.appendChild(node("p","Original 23-week PacEdu planning draft. PENDING_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION; confirm the authorised current Year 2 English guide and sequence before learner release."));
+      var class2ActivityLink=node("a","Open Class 2 English Days 1–115");
+      class2ActivityLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-class-2-daily-activities-days-1-115.md";
+      class2ActivityLink.target="_blank";class2ActivityLink.rel="noopener noreferrer";
+      class2ActivityLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
+      class2Card.appendChild(class2ActivityLink);
+      var class2WorksheetStatus=node("p","460 separate daily print versions are drafted (115 days × Copper, Bronze, Silver and Gold). PENDING_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION; not approved for student release.");
+      class2Card.appendChild(class2WorksheetStatus);
+      var class2PrintLink=node("a","Open Class 2 Printable Worksheets — Days 1–115");
+      class2PrintLink.href="https://terubea82-eng.github.io/Pacific-education-/src/pacedu-class2-english-printable-worksheets.html";
+      class2PrintLink.setAttribute("aria-label","Open Class 2 printable English worksheets, all 115 days and four ability groups");
+      class2PrintLink.target="_blank";class2PrintLink.rel="noopener noreferrer";
+      class2PrintLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
+      class2Card.appendChild(class2PrintLink);
+      list.appendChild(class2Card);
     }
     var classes=rosterClasses(),items=[];
     Object.keys(classes).forEach(function(id){
