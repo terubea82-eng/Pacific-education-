@@ -22,6 +22,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -45,6 +46,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -68,6 +70,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -91,6 +94,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -114,6 +118,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -141,6 +146,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -164,6 +170,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -187,6 +194,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -210,6 +218,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -233,6 +242,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -260,6 +270,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -283,6 +294,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -306,6 +318,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -329,6 +342,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -352,6 +366,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -379,6 +394,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -402,6 +418,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -425,6 +442,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -448,6 +466,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -471,6 +490,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -498,6 +518,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -521,6 +542,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -544,6 +566,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -567,6 +590,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -590,6 +614,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -617,6 +642,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -640,6 +666,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -663,6 +690,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -686,6 +714,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -709,6 +738,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -736,6 +766,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -759,6 +790,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -782,6 +814,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -805,6 +838,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -828,6 +862,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -855,6 +890,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -878,6 +914,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -901,6 +938,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -924,6 +962,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -947,6 +986,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -974,6 +1014,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -997,6 +1038,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1020,6 +1062,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1043,6 +1086,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1066,6 +1110,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Media forms; audience and purpose; captions; digital communication and safety.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1093,6 +1138,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1116,6 +1162,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1139,6 +1186,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1162,6 +1210,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1185,6 +1234,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interviews; formal/informal register; profiles; proposals and reports.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1212,6 +1262,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1235,6 +1286,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1258,6 +1310,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1281,6 +1334,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1304,6 +1358,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Respectful comparison; oral histories; language awareness; reflective writing.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1331,6 +1386,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1354,6 +1410,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1377,6 +1434,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1400,6 +1458,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1423,6 +1482,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Literary response; character and setting; theme; evidence-supported interpretation.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1450,6 +1510,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1473,6 +1534,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1496,6 +1558,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1519,6 +1582,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1542,6 +1606,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Headline and lead; fact/opinion; source clues; concise news report.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1569,6 +1634,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1592,6 +1658,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1615,6 +1682,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1638,6 +1706,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1661,6 +1730,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Sound and imagery; figurative language; performance choices; original composition.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1688,6 +1758,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1711,6 +1782,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1734,6 +1806,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1757,6 +1830,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1780,6 +1854,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Research questions; organise notes; explain learning; reflective portfolio.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1807,6 +1882,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1830,6 +1906,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1853,6 +1930,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1876,6 +1954,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -1899,6 +1978,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Oral storytelling; sequence; personal narrative; descriptive language; paragraph structure.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -1926,6 +2006,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -1949,6 +2030,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -1972,6 +2054,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -1995,6 +2078,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2018,6 +2102,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Interview questions; biography; factual reading; note-taking; respectful descriptions.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -2045,6 +2130,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -2068,6 +2154,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -2091,6 +2178,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -2114,6 +2202,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2137,6 +2226,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Informative texts; main idea and details; vocabulary in context; explanatory paragraphs.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -2164,6 +2254,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -2187,6 +2278,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -2210,6 +2302,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -2233,6 +2326,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2256,6 +2350,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Procedural texts; instructions; cause and effect; reports and recommendations.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -2283,6 +2378,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -2306,6 +2402,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -2329,6 +2426,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -2352,6 +2450,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2375,6 +2474,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare information; interpret simple data in texts; explain and justify; report writing.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -2402,6 +2502,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -2425,6 +2526,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -2448,6 +2550,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -2471,6 +2574,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2494,6 +2598,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Compare viewpoints; oral histories; precise vocabulary; explanatory writing.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -2521,6 +2626,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -2544,6 +2650,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -2567,6 +2674,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -2590,6 +2698,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2613,6 +2722,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Persuasive language; evaluate reasons; distinguish fact/opinion; advice texts.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
@@ -2640,6 +2750,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Listen actively, take turns, ask a relevant question and give a clear response.
+**PacEdu working achievement indicator:** Learner can listen actively, take turns, ask a relevant question and give a clear response.
 
 **Teacher-led activity:** Use a short teacher-selected oral text, audio or discussion prompt linked to the weekly theme. Model active listening, a relevant response and one follow-up question.
 
@@ -2663,6 +2774,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Explore key vocabulary and a language feature in context; practise accurately.
+**PacEdu working achievement indicator:** Learner can explore key vocabulary and a language feature in context; practise accurately.
 
 **Teacher-led activity:** Select 5–8 level-appropriate theme words from the authorised class text. Explore meaning, word families or language patterns in context; learners use them in original examples.
 
@@ -2686,6 +2798,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Read or view a level-appropriate text; identify purpose, key ideas and supporting details.
+**PacEdu working achievement indicator:** Learner can read or view a level-appropriate text; identify purpose, key ideas and supporting details.
 
 **Teacher-led activity:** Read or view a teacher-selected text appropriate to the class level. Annotate or discuss the central idea, supporting details, unfamiliar vocabulary and the author's purpose.
 
@@ -2709,6 +2822,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Examine how structure, language and viewpoint shape meaning; support an observation.
+**PacEdu working achievement indicator:** Learner can examine how structure, language and viewpoint shape meaning; support an observation.
 
 **Teacher-led activity:** Study one feature in the selected text: structure, viewpoint, evidence, figurative language, grammar, cohesion or rhetorical choice. Explain its effect with an example.
 
@@ -2732,6 +2846,7 @@ The Fiji National Curriculum Framework provides a broad framework, not a substit
 **Shared objective:** Information synthesis; source awareness; summaries; persuasive messages.
 
 **Learning focus:** Plan, create, review and share a coherent response for a stated audience and purpose.
+**PacEdu working achievement indicator:** Learner can plan, create, review and share a coherent response for a stated audience and purpose.
 
 **Teacher-led activity:** Create a response suited to the weekly theme and audience: narrative, explanation, report, letter, review, argument, speech, poem or multimodal text. Plan, draft and revise one feature.
 
