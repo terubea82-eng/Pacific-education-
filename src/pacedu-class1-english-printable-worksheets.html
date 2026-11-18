@@ -93,12 +93,12 @@ function load(){
 }
 document.getElementById("saveZone").addEventListener("click",function(){
  var zone=String(zoneInput.value||"").trim();
- try{if(!zone)throw new Error("Enter an IANA time zone, for example Pacific/Fiji.");new Intl.DateTimeFormat("en",{timeZone:zone}).format(new Date());localStorage.setItem("pacificEducationSchoolTimeZone",zone);if(window.PacEduWorksheetLocalDate)window.PacEduWorksheetLocalDate.refresh();zoneStatus.textContent="School time zone saved: "+zone;updateDate();}
+ try{if(!zone)throw new Error("Enter an IANA time zone, for example Pacific/Fiji.");if(!window.PacEduWorksheetLocalDate)throw new Error("PacEdu local-date service is unavailable.");window.PacEduWorksheetLocalDate.setSchoolTimeZone(zone);window.PacEduWorksheetLocalDate.refresh();zoneStatus.textContent="School time zone saved for "+window.PacEduWorksheetLocalDate.getSnapshot().country+": "+zone;updateDate();}
  catch(e){zoneStatus.textContent=e.message||"Invalid IANA time zone. Please check the name.";}
 });
 document.getElementById("print").addEventListener("click",function(){show();window.print();});
 daySelect.addEventListener("change",show);abilitySelect.addEventListener("change",show);
-try{zoneInput.value=localStorage.getItem("pacificEducationSchoolTimeZone")||"";}catch(e){}
+try{zoneInput.value=window.PacEduWorksheetLocalDate?window.PacEduWorksheetLocalDate.getSchoolTimeZone():(localStorage.getItem("pacificEducationSchoolTimeZone")||"");}catch(e){}
 window.addEventListener("beforeprint",show);window.addEventListener("focus",updateDate);
 load();updateDate();
 })();
