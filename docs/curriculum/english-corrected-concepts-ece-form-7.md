@@ -1,10 +1,12 @@
-# PacEdu English — Corrected Level-by-Level Concept Register (ECE–Form 7)
+# PacEdu English — Working Achievement Indicator Register (ECE–Form 7)
 
-**Purpose:** This register replaces the broad English concept bands in the general subject-distribution draft with a level-by-level working progression. It is intended to sit inside the **English** subject box: English → Level → Term → Week → Concept → Daily activities → Worksheets → Revision/assessment.
+**Owner-approved planning decision (19 November 2026):** For PacEdu English activity design, the level-by-level learning concepts in this register are to be used as PacEdu working achievement indicators. Convert each concept into an observable learner outcome and assess it through daily evidence. This is the agreed PacEdu planning basis; it does not claim that the concept wording is verbatim Ministry text or an officially issued indicator. Keep the separate source/edition/page verification status visible for formal Ministry alignment.
+
+**Purpose:** This register is the working achievement-indicator source for PacEdu English activities. It replaces the broad English concept bands in the general subject-distribution draft with a level-by-level working progression. It is intended to sit inside the **English** subject box: English → Level → Term → Week → Concept → Daily activities → Worksheets → Revision/assessment.
 
 **Planning frame:** PacEdu uses Term 1 = 9 weeks, Term 2 = 9 weeks and Term 3 = 5 weeks (23 planning weeks). This is a PacEdu planning frame, not a claim about the Ministry's official school calendar or weekly syllabus sequence.
 
-**Curriculum integrity:** The concepts below are teaching-planning summaries, not copied Ministry syllabus text. A concept is not to be labelled an official achievement indicator unless the exact current Ministry source, edition, level, strand/outcome, page and reviewer have been recorded. Where the source status is partial or pending, the teacher must check the school's currently authorised syllabus and scheme of work before assigning formal curriculum alignment. Do not invent missing outcomes.
+**Curriculum integrity:** By owner decision, the concepts below function as PacEdu working achievement indicators for planning, teaching and assessment. For each indicator, teachers record observable evidence of what the learner can do. These are not represented as verbatim official Ministry indicators. Formal Ministry alignment remains a separate verification field: record the current authorised source, edition, level, strand/outcome, page and reviewer when available. Do not invent official codes, wording or missing outcomes.
 
 ## Common teaching and assessment rules
 
@@ -19,7 +21,7 @@
 
 **Curriculum reference identified:** *Na Noda Mataniciva: Kindergarten Curriculum Guidelines for the Fiji Islands* (2009), Language, Literacy and Communication. The identified structure has two strands — Listening and communicating; Reading and writing — and four sub-strands: Listening and responding; Speaking and communicating; Becoming a reader; Becoming a writer.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Listening and responding: attend to a speaker; respond to name and familiar language; listen to songs, rhymes and stories; follow simple familiar instructions; take turns.
 - Speaking and communicating: greetings; names and familiar vocabulary; express needs and ideas; describe familiar people/objects/events; participate in conversation, songs and retelling.
 - Becoming a reader: enjoy books; handle books; understand pictures carry meaning; connect pictures, spoken words and familiar print; notice rhyme, rhythm and environmental sounds.
@@ -38,7 +40,7 @@
 
 **Curriculum reference identified:** Fiji Year 1 English / Language, Literacy and Communication learning materials. The mapped skill areas include listening/communication, reading/viewing and writing/composing. Exact current syllabus edition and page-level outcome mapping still require confirmation.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Listening: follow simple oral directions; listen for key information; take turns; respond to questions; speak clearly about familiar topics.
 - Speaking: greetings and introductions; conversations; role-play; describe familiar experiences; retell a short event.
 - Phonological awareness within English: rhyme; syllables; onset and rime; hear and identify taught sounds; blend and segment simple spoken words.
@@ -56,7 +58,7 @@
 
 **Curriculum reference identified:** Fiji Ministry of Education Year 2 Language, Literacy and Communication learning/worksheet material (2020). The material supports oral language, shared reading, vocabulary, phonics, rhyme, grammar in context, sentence work, storytelling, spelling and proofreading. It is a learning resource, not by itself proof of the complete current syllabus.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Oral language: listening for detail; follow and give instructions; ask and answer questions; retell and describe; participate in shared discussion.
 - Reading: shared and guided reading; decoding taught sound patterns; fluency with familiar texts; vocabulary in context; literal comprehension; sequence and retell.
 - Language knowledge: nouns, verbs and adjectives in meaningful sentences; contractions where taught; word families; spelling patterns; punctuation and sentence structure.
@@ -73,7 +75,7 @@
 
 **Curriculum reference identified:** Fiji Years 3–4 literacy guidance and Year 3 English learning materials. Identified learning includes oral language, shared reading, vocabulary, phonics, reading comprehension and writing across text forms. Exact current syllabus mapping is still required.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Oral communication: listen actively; take turns; explain an idea; ask relevant questions; retell and report.
 - Reading: accuracy and fluency; vocabulary; literal and inferential meaning; identify main idea and supporting details; sequence and summarise short texts.
 - Language: word classes in context; sentence construction; punctuation; spelling patterns; connectives and descriptive vocabulary.
@@ -90,7 +92,7 @@
 
 **Curriculum reference identified:** Fiji Years 3–4 literacy guidance. This provides a progression across oral language, reading, comprehension, vocabulary, phonics/word knowledge and writing. Exact Year 4 syllabus outcomes and current edition require confirmation.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Oral language: structured discussion; explain and justify an idea; present information; listen and respond appropriately.
 - Reading: increasingly fluent reading; infer meaning; use evidence from a text; identify purpose, audience and key information; compare texts.
 - Language: vocabulary choice; sentence variety; paragraph organisation; grammar and punctuation in context; spelling and editing.
@@ -107,7 +109,7 @@
 
 **Curriculum reference:** A current authoritative Year 5 English syllabus/teacher guide with exact outcomes and indicators has not yet been confirmed in this register. Do not treat the following as an official Ministry sequence.
 
-**PacEdu concept progression pending source mapping**
+**PacEdu working achievement indicator progression (source mapping pending)**
 - Oral communication: purposeful discussion; active listening; explain, question and report.
 - Reading: fluency; vocabulary strategies; literal and inferential comprehension; identify main ideas, evidence, viewpoint and text purpose.
 - Language: sentence variety; paragraph cohesion; grammar and punctuation in context; spelling and word-building.
@@ -125,7 +127,7 @@
 
 **Curriculum reference identified:** Fiji Years 6–8 English/literacy teacher-guide material. Identified skills include evaluating written texts, recognising text types, skimming and scanning, summarising, vocabulary and comprehension. Confirm the current authorised Year 6 syllabus and exact edition.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Oral language: contribute to discussion; give an organised explanation; present and respond to questions.
 - Reading: skimming and scanning; locate key information; identify main idea and supporting evidence; summarise; infer; evaluate a text's purpose and viewpoint.
 - Language: vocabulary and word parts; grammar in context; sentence control; paragraph cohesion; punctuation and spelling.
@@ -143,7 +145,7 @@
 
 **Curriculum reference identified:** Fiji Year 7–8 literacy resource material, including FNU/UNESCO-supported guidance on text types, sociocultural contexts, language features, meaning-making and constructing texts. Confirm the current Ministry Year 7 syllabus and assessment requirements.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Oral communication: purposeful discussion; group interaction; structured presentation; respond with reasons.
 - Reading/viewing: analyse purpose, audience and context; identify language features; infer meaning; use evidence; interpret information and visual texts.
 - Language: vocabulary; grammar and sentence structure; cohesion; tone and register; paragraph and whole-text organisation.
@@ -161,7 +163,7 @@
 
 **Curriculum reference identified:** Fiji Year 7–8 literacy resource material. The progression below increases independence and critical interpretation; it is not an official weekly scheme.
 
-**Correct concept progression**
+**PacEdu working achievement indicator progression**
 - Oral communication: formal discussion; organise and deliver a presentation; evaluate and respond to arguments.
 - Reading/viewing: complex comprehension; inference and evidence; text purpose, audience and context; tone and viewpoint; compare and evaluate sources.
 - Language: precise vocabulary; sentence variety; grammar and punctuation in context; cohesion; register and style.
@@ -180,7 +182,7 @@
 
 **Curriculum reference identified:** Fiji Ministry 2025 RSEC English unit guidance/circular. Five unit titles were identified: Criticism; Poetry and Song; Social Media; Storytelling; World of Work. Confirm the current circular and the school's authorised RSEC implementation documents before finalising tasks.
 
-**Correct concept/unit progression**
+**PacEdu working achievement indicator progression**
 1. Criticism: respond to and evaluate texts; develop an interpretation; support judgement with evidence.
 2. Poetry and Song: explore voice, imagery, sound, structure, theme and effect; create and perform original responses.
 3. Social Media: analyse audience, purpose, platform, language, representation, reliability and responsible communication.
@@ -195,7 +197,7 @@
 
 **Curriculum reference identified:** Fiji Ministry 2025 RSEC English unit guidance/circular. Five unit titles were identified: Criticism; Novella; Drama and Theatre Production; Digital Visual Literacy; World of Work.
 
-**Correct concept/unit progression**
+**PacEdu working achievement indicator progression**
 1. Criticism: interpret, analyse and evaluate texts using evidence and reasoned judgement.
 2. Novella: plot development, character, setting, narrative perspective, theme, language and structural choices.
 3. Drama and Theatre Production: dramatic form, dialogue, characterisation, stagecraft, performance and evaluation.
@@ -210,7 +212,7 @@
 
 **Curriculum reference:** Senior English framework transition and current Year 11 course requirements need confirmation. The concepts below are a provisional planning map only; do not publish as official examinable content until the school supplies the current syllabus and course pathway.
 
-**Provisional concept progression**
+**PacEdu working achievement indicator progression (provisional level content)**
 - Literature: read and interpret prescribed texts; analyse character, setting, theme, structure, voice and language.
 - Register and language: choose language for audience, purpose and context; compare formal and informal registers.
 - Writing: plan and produce prescribed forms of formal writing; develop coherent paragraphs, argument, evidence and editing.
@@ -225,7 +227,7 @@
 
 **Curriculum reference:** Fiji Ministry senior English 2025 guidance/circular material was identified for literature, register, prescribed writing, formal writing, literature essay criteria, oral communication and a mandatory research project. Verify the current 2026 course circular and exact requirements.
 
-**Provisional concept progression**
+**PacEdu working achievement indicator progression (provisional level content)**
 - Literature: analyse prescribed texts, genres, themes, character, structure, language and context.
 - Register: analyse and use language appropriate to audience, purpose and situation.
 - Formal writing: practise the exact prescribed forms; structure, cohesion, tone, evidence and editing.
@@ -241,7 +243,7 @@
 
 **Curriculum reference:** Fiji Ministry senior English 2025 guidance/circular material was identified for literature, register, prescribed writing, formal writing, literature essay criteria, oral communication and a research project. Verify current 2026 cohort instructions and examination format.
 
-**Provisional concept progression**
+**PacEdu working achievement indicator progression (provisional level content)**
 - Literature: advanced interpretation of prescribed texts; compare themes, forms, contexts and authorial choices.
 - Register and rhetoric: analyse tone, register, audience, purpose and persuasive choices.
 - Formal writing: produce the prescribed forms with controlled structure, cohesion, evidence and style.
@@ -274,7 +276,7 @@
 | Form 6 | Senior strands/project themes identified | Partial | Confirm current cohort circular |
 | Form 7 | Senior strands/project themes identified | Partial | Confirm current cohort circular and exam notice |
 
-**Do not mark the English programme complete at this stage.** This register corrects and organises concepts. It does not yet contain the full 23-week daily lesson plans, four matched worksheets per weekly concept, teacher answer guides, revision sets or original practice examination papers. Those are subsequent build stages after source mapping and teacher review.
+**Do not mark the English programme complete at this stage.** This register now establishes the approved PacEdu working achievement indicators and organises the level progressions. It does not yet contain the full 23-week daily lesson plans, four matched worksheets per weekly concept, teacher answer guides, revision sets or original practice examination papers. Those are subsequent build stages after source mapping and teacher review.
 
 ## Source record to complete before official alignment
 
