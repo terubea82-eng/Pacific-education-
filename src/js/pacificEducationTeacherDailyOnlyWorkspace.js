@@ -61,6 +61,15 @@
       eceLink.rel="noopener noreferrer";
       eceLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
       eceCard.appendChild(eceLink);
+      var eceWorksheetStatus=node("p","Separate daily printable worksheets are prepared for all 115 learning days and four flexible ability pathways. PENDING_ECE_TEACHER_REVIEW and PENDING_OFFICIAL_INDICATOR_VERIFICATION; not approved for learner release.");
+      eceCard.appendChild(eceWorksheetStatus);
+      var eceWorksheetLink=node("a","Open ECE Printable Worksheets — Days 1–115");
+      eceWorksheetLink.href="https://terubea82-eng.github.io/Pacific-education-/src/pacedu-ece-english-printable-worksheets.html";
+      eceWorksheetLink.setAttribute("aria-label","Open ECE printable English worksheets, all 115 days and four ability groups");
+      eceWorksheetLink.target="_blank";
+      eceWorksheetLink.rel="noopener noreferrer";
+      eceWorksheetLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #1877b7;border-radius:7px;font-weight:700;";
+      eceCard.appendChild(eceWorksheetLink);
       list.appendChild(eceCard);
 
       var packCard=node("section");
