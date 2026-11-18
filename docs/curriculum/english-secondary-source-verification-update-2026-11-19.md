@@ -73,3 +73,40 @@ Until those details are captured, keep `PENDING_OFFICIAL_INDICATOR_VERIFICATION`
 ## Release and merge boundary
 
 All 14 levels' PacEdu activity and worksheet content remains a draft pending educator review, source verification, actual Android Chrome print testing and school timezone/calendar validation. Automated CI success does not replace these requirements. No production deployment, Firebase change, learner-data activation or APK replacement is included in this work.
+
+
+## 4. Additional primary-source checks — primary literacy guidance and commencement
+
+### Ministry-hosted Years 3–4 Literacy Guide
+
+A PDF titled *Years 3 & 4* is hosted directly on the Fiji Ministry of Education website:
+https://www.education.gov.fj/wp-content/uploads/2022/06/Literacy_Guide_-for_years_34.pdf
+
+The retrieved extract describes stages of reading development (pre-reader through independent reader), recommends using observed reading stage to tailor support rather than assuming all learners in a year are at the same stage, and states an expectation that children should reach the independent-reader stage by the end of Year 6. This is useful primary-source evidence for differentiated reading support and diagnostic placement.
+
+**Limit:** The retrieved evidence does not establish a complete Year 3 or Year 4 English syllabus, all three English strands, exact year-specific CLOs/indicators, or approved day/week allocations. It must not be treated as a substitute for the current authorised English syllabus and teacher guide.
+
+### Ministry-hosted Years 6 & 8 Teachers Guide
+
+The Ministry-hosted *Y6 & Y8 Teachers Guide* includes general resource and teacher-planning guidance, including use of local resources and support for struggling readers:
+https://www.education.gov.fj/wp-content/uploads/2022/07/Y6_Y8_Guideline_2-Teachers_Guide.pdf
+
+**Limit:** The retrieved page 18 material is general teacher guidance, not an extracted English-specific indicator framework. Do not mark Class 6 or Class 8 English indicators verified from this document alone.
+
+### Education Act 2026 — commencement and transition checked against the Act text
+
+The Parliament-hosted Act states in section 1(2) that it comes into force on a date or dates appointed by the Minister by notice in the Gazette. The Act's assent date is 2 June 2026; assent/publication alone does not prove commencement.
+
+Section 175(6) states that curriculum, assessment and educational standards/frameworks already approved for use and used in schools immediately before commencement continue to be used until new standards/frameworks are developed for use by the Authority. Section 23 sets curriculum compliance requirements, while section 29 assigns the Authority functions including developing, reviewing and approving national frameworks, syllabi and learning standards.
+
+Primary Act text:
+https://www.parliament.gov.fj/wp-content/uploads/2026/06/Act-5-Education-Act-2026.pdf
+
+The Parliament Gazette page was checked, but the currently visible entries do not identify an Education Act commencement notice. This is **not proof that no notice exists**: the Parliament page may not be a complete or current Gazette register. The Ministry/Attorney-General's official Gazette notice and any commencement dates must be obtained before describing the Act as operative for the curriculum approval decision. Until then, record the legal position as **ASSENTED; COMMENCEMENT NOTICE NOT VERIFIED; TRANSITIONAL RULE IDENTIFIED**.
+
+### Updated source-status decision
+
+- Years 3–4 Literacy Guide: **PRIMARY MINISTRY SOURCE FOUND; READING-DEVELOPMENT GUIDANCE ONLY; ENGLISH INDICATORS NOT VERIFIED**.
+- Years 6 & 8 Teachers Guide: **PRIMARY MINISTRY SOURCE FOUND; GENERAL TEACHER GUIDANCE ONLY; ENGLISH INDICATORS NOT VERIFIED**.
+- Education Act 2026: **PRIMARY ACT TEXT FOUND; SECTION 1 COMMENCEMENT REQUIRES GAZETTE NOTICE; SECTION 175(6) TRANSITIONAL CONTINUITY IDENTIFIED; COMMENCEMENT NOT VERIFIED**.
+- All activity/worksheet packs remain **PENDING_OFFICIAL_INDICATOR_VERIFICATION** and **PENDING_TEACHER_REVIEW**.
