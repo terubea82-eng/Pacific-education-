@@ -46,9 +46,23 @@
     var resourceGuide=node("p","Choose the matching class to open its daily activities, lesson/workplan and approved teacher resources. Worksheets and teaching aids must match the same subject, class, term and learning objective.");
     resourceGuide.setAttribute("role","note");
     list.appendChild(resourceGuide);
-    /* Show the Class 1 English starter pack as soon as English is selected,
-       within the Step 2 subject-selection area, before class selection. */
+    /* Keep English daily packs inside the English subject box. These links
+       use the current branch so the draft can be reviewed without changing main. */
     if(subject==="English"){
+      var eceCard=node("section");
+      eceCard.id="paceduECEDailyEnglishPackLink";
+      eceCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
+      eceCard.appendChild(node("h4","ECE English — 115 Daily Activities (Copper–Gold)"));
+      eceCard.appendChild(node("p","Original play-based activity draft. PENDING_TEACHER_REVIEW — exact current Fiji ECE outcomes and indicators must be verified before learner release."));
+      var eceLink=node("a","Open ECE English Days 1–115");
+      eceLink.href="https://github.com/terubea82-eng/Pacific-education-/blob/pacedu/english-ece-form7-staging-20261119/docs/curriculum/english-ece-daily-activities-days-1-115.md";
+      eceLink.setAttribute("aria-label","Open ECE English daily activities from Day 1 to Day 115");
+      eceLink.target="_blank";
+      eceLink.rel="noopener noreferrer";
+      eceLink.style.cssText="display:inline-block;min-height:44px;padding:10px 12px;border:1px solid #7b5b25;border-radius:7px;font-weight:700;";
+      eceCard.appendChild(eceLink);
+      list.appendChild(eceCard);
+
       var packCard=node("section");
       packCard.id="paceduClass1EnglishWorksheetPackLink";
       packCard.style.cssText="margin:12px 0;padding:12px;border:2px solid #b7791f;border-radius:9px;background:#fffaf0;";
