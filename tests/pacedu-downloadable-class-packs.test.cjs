@@ -93,3 +93,8 @@ test('Form 5 to Form 7 Science requires a specific approved science subject pack
    assert.equal(p.contentStatus,'CONTENT_NOT_AVAILABLE');
  }
 });
+
+test('ability group labels use the approved Copper to Gold names',()=>{
+ const api=loadPack();
+ assert.deepEqual(api.abilities.map(b=>b.label),['Copper','Bronze','Silver','Gold']);
+});
